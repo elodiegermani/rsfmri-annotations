@@ -1,0 +1,555 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">Front Neurol</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Front Neurol</journal-id>
+      <journal-id journal-id-type="publisher-id">Front. Neurol.</journal-id>
+      <journal-title-group>
+        <journal-title>Frontiers in Neurology</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1664-2295</issn>
+      <publisher>
+        <publisher-name>Frontiers Media S.A.</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">31354605</article-id>
+      <article-id pub-id-type="pmc">6636605</article-id>
+      <article-id pub-id-type="doi">10.3389/fneur.2019.00668</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Neurology</subject>
+          <subj-group>
+            <subject>Original Research</subject>
+          </subj-group>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Predicting the Post-therapy Severity Level (UPDRS-III) of Patients With Parkinson's Disease After Drug Therapy by Using the Dynamic Connectivity Efficiency of fMRI</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Li</surname>
+            <given-names>Xuesong</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <uri xlink:type="simple" xlink:href="http://loop.frontiersin.org/people/679261/overview"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Xiong</surname>
+            <given-names>Yuhui</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Liu</surname>
+            <given-names>Simin</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Zhou</surname>
+            <given-names>Rongsong</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Hu</surname>
+            <given-names>Zhangxuan</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Tong</surname>
+            <given-names>Yan</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+          <uri xlink:type="simple" xlink:href="http://loop.frontiersin.org/people/733188/overview"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>He</surname>
+            <given-names>Le</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <uri xlink:type="simple" xlink:href="http://loop.frontiersin.org/people/713409/overview"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Niu</surname>
+            <given-names>Zhendong</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <uri xlink:type="simple" xlink:href="http://loop.frontiersin.org/people/426437/overview"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Ma</surname>
+            <given-names>Yu</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+          <xref ref-type="corresp" rid="c001">
+            <sup>*</sup>
+          </xref>
+          <uri xlink:type="simple" xlink:href="http://loop.frontiersin.org/people/713715/overview"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Guo</surname>
+            <given-names>Hua</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1"><sup>1</sup><institution>School of Computer Science and Technology, Beijing Institute of Technology</institution>, <addr-line>Beijing</addr-line>, <country>China</country></aff>
+      <aff id="aff2"><sup>2</sup><institution>Department of Biomedical Engineering, Center for Biomedical Imaging Research, School of Medicine, Tsinghua University</institution>, <addr-line>Beijing</addr-line>, <country>China</country></aff>
+      <aff id="aff3"><sup>3</sup><institution>Department of Neurosurgery, Tsinghua University Yuquan Hospital</institution>, <addr-line>Beijing</addr-line>, <country>China</country></aff>
+      <aff id="aff4"><sup>4</sup><institution>Nuffield Department of Clinical Neurosciences, Wellcome Centre for Integrative Neuroimaging, FMRIB, University of Oxford</institution>, <addr-line>Oxford</addr-line>, <country>United Kingdom</country></aff>
+      <author-notes>
+        <fn fn-type="edited-by">
+          <p>Edited by: Feng Liu, Tianjin Medical University General Hospital, China</p>
+        </fn>
+        <fn fn-type="edited-by">
+          <p>Reviewed by: Bing Zhang, Nanjing Drum Tower Hospital, China; Hui-Jie Li, Chinese Academy of Sciences, China; Heng Chen, Guizhou University, China</p>
+        </fn>
+        <corresp id="c001">*Correspondence: Yu Ma <email>mayu@tsinghua.edu.cn</email></corresp>
+        <fn fn-type="other" id="fn001">
+          <p>This article was submitted to Applied Neuroimaging, a section of the journal Frontiers in Neurology</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="epub">
+        <day>02</day>
+        <month>7</month>
+        <year>2019</year>
+      </pub-date>
+      <pub-date pub-type="collection">
+        <year>2019</year>
+      </pub-date>
+      <volume>10</volume>
+      <elocation-id>668</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>01</day>
+          <month>2</month>
+          <year>2019</year>
+        </date>
+        <date date-type="accepted">
+          <day>06</day>
+          <month>6</month>
+          <year>2019</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Copyright © 2019 Li, Xiong, Liu, Zhou, Hu, Tong, He, Niu, Ma and Guo.</copyright-statement>
+        <copyright-year>2019</copyright-year>
+        <copyright-holder>Li, Xiong, Liu, Zhou, Hu, Tong, He, Niu, Ma and Guo</copyright-holder>
+        <license xlink:href="http://creativecommons.org/licenses/by/4.0/">
+          <license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY). The use, distribution or reproduction in other forums is permitted, provided the original author(s) and the copyright owner(s) are credited and that the original publication in this journal is cited, in accordance with accepted academic practice. No use, distribution or reproduction is permitted which does not comply with these terms.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>Parkinson's disease (PD) is a multi-systemic disease in the brain arising from the dysfunction of several neural networks. The diagnosis and treatment of PD have gained more attention for clinical researchers. While there have been many fMRI studies about functional topological changes of PD patients, whether the dynamic changes of functional connectivity can predict the drug therapy effect is still unclear. The primary objective of this study was to assess whether large-scale functional efficiency changes of topological network are detectable in PD patients, and to explore whether the severity level (UPDRS-III) after drug treatment can be predicted by the pre-treatment resting-state fMRI (rs-fMRI). Here, we recruited 62 Parkinson's disease patients and calculated the dynamic nodal efficiency networks based on rs-fMRI. With connectome-based predictive models using the least absolute shrinkage and selection operator, we demonstrated that the dynamic nodal efficiency properties predict drug therapy effect well. The contributed regions for the prediction include hippocampus, post-central gyrus, cingulate gyrus, and orbital gyrus. Specifically, the connections between hippocampus and cingulate gyrus, hippocampus and insular gyrus, insular gyrus, and orbital gyrus are positively related to the recovery (post-therapy severity level) after drug therapy. The analysis of these connection features may provide important information for clinical treatment of PD patients.</p>
+      </abstract>
+      <kwd-group>
+        <kwd>fMRI</kwd>
+        <kwd>dynamic nodal efficiency</kwd>
+        <kwd>Parkinson's disease</kwd>
+        <kwd>drug treatment</kwd>
+        <kwd>prediction of post-therapy severity level</kwd>
+      </kwd-group>
+      <funding-group>
+        <award-group>
+          <funding-source id="cn001">National Natural Science Foundation of China<named-content content-type="fundref-id">10.13039/501100001809</named-content></funding-source>
+        </award-group>
+      </funding-group>
+      <counts>
+        <fig-count count="4"/>
+        <table-count count="1"/>
+        <equation-count count="1"/>
+        <ref-count count="31"/>
+        <page-count count="9"/>
+        <word-count count="5279"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec sec-type="intro" id="s1">
+      <title>Introduction</title>
+      <p>Parkinson's disease (PD) is one of the most common neurodegenerative disorders. It is clinically characterized by some specific motor symptoms, including rigidity, slowness of movement, tremor at rest, bradykinesia, and postural instability and some other non-motor symptoms such as cognitive deficits, impaired olfaction, emotional problems (<xref rid="B1" ref-type="bibr">1</xref>, <xref rid="B2" ref-type="bibr">2</xref>). PD can be considered as a multi-systemic disease in the brain arising from dysfunction in several neural networks (<xref rid="B3" ref-type="bibr">3</xref>–<xref rid="B5" ref-type="bibr">5</xref>). The motor and cognitive impairments in PD have been related to abnormal functional connectivity and disrupted network integration in the brain (<xref rid="B6" ref-type="bibr">6</xref>–<xref rid="B8" ref-type="bibr">8</xref>).</p>
+      <p>Several graph theoretic studies revealed an abnormal topological organization of functional brain networks in PD patients. Specifically, Skidmore et al. combined fMRI and graph analysis to find a smaller global efficiency of brain networks in advanced PD patients (<xref rid="B9" ref-type="bibr">9</xref>). Wei et al. found that PD had significantly decreased efficiency in the cortico-basal ganglia motor pathway (<xref rid="B10" ref-type="bibr">10</xref>). In addition, Dubbelink et al. using magnetoencephalography and graph theory, reported that impaired local network efficiency and network decentralization are very early features of PD that continue to progress over time, along with reductions in global efficiency (<xref rid="B6" ref-type="bibr">6</xref>). In summary, the graph theory provides a powerful and general framework to characterize brain connectivity at global and local levels, and offers a collection of metrics that can quantify the segregation and integration of information within functional networks among the brain regions. However, most of the previous studies did not consider the important dynamic properties of FC over time, such as the dynamic nodal efficiency; instead, FC was usually assumed to be constant during the rs-fMRI experiment (<xref rid="B8" ref-type="bibr">8</xref>).</p>
+      <p>The graph theory-based approach applied to dynamic FC show that the variability in brain network may also provide important information on the underlying nature of neurodegeneration. In a study by Yu et.al., the reduced variability of local and global network efficiency was detected in a patient with schizophrenia (<xref rid="B11" ref-type="bibr">11</xref>). In a more recent PD study, dynamic topological properties of brain networks can characterize the underlying nature of Parkinson's disease and correlate with clinical features (<xref rid="B8" ref-type="bibr">8</xref>).</p>
+      <p>The dynamic property of fMRI can enrich the graph theory. We wonder if the dynamic nodal efficiency (dnE) can be used to predict the recovery effect after drug therapy (i.e., post-therapy severity level) of PD patients. If possible, it may provide useful guidance information for drug therapy. Connectome-based predictive modeling is a recently developed data-driven method for identifying the relationship between functional brain connectivity and the behavioral and cognitive variables of interest, and then predicting the behavior of patients (<xref rid="B12" ref-type="bibr">12</xref>–<xref rid="B14" ref-type="bibr">14</xref>). The predictive modeling procedure has been applied to analyze connectivity, such as attention control and temperament trait (<xref rid="B14" ref-type="bibr">14</xref>, <xref rid="B15" ref-type="bibr">15</xref>). Its core idea is the cooperative analysis of the relationship between behavior and FC, finally finding the strong functional networks that are correlated to the behavior with statistical significance. It provides an effective way to explore the correlation between altered topological properties and clinical indexes of interest.</p>
+      <p>In the present study, we used rs-fMRI and sliding-window analysis to build the individual dnE network by computing each nodal efficiency of each sliding-window and predicted the post-therapy severity level of PD patients. The global efficiency is chosen to calculate the dnE, since it may reveal more PD properties than local efficiency, as indicated by Kim et al. whose study showed a significant difference in global efficiency between PD and the healthy control, but not in local efficiency (<xref rid="B8" ref-type="bibr">8</xref>). Specifically, we proposed a rigorous cross-validated prediction framework incorporating feature selection and regression techniques, to predict the drug therapy effect of levodopa (the most commonly used drug in PD treatment), which is evaluated by Unified Parkinson Disease Rating Scale III (UPDRS-III) (<xref rid="B16" ref-type="bibr">16</xref>) scores, using the rs-fMRI data from 62 PD patients. We aim to investigate the possibility of predicting individual after-therapy UPDRS-III scores using whole-brain dnE network. The post-therapy UPDRS-III scores for certain patients was estimated, and the potentially important connections that contribute to the recovery degree were predicted by the rs-fMRI data.</p>
+    </sec>
+    <sec sec-type="materials and methods" id="s2">
+      <title>Materials and Methods</title>
+      <sec>
+        <title>Subjects</title>
+        <p>Sixty-two subjects (mean age, 58.5 ± 10.1 years; 31 females and 31 male patients) were recruited from Tsinghua University Yuquan Hospital, Beijing, China. Patients were told to stop taking drugs 12 h before the rs-fMRI scan (before therapy). Patients diagnosed with PD based on the UK Brain Bank criteria (<xref rid="B17" ref-type="bibr">17</xref>) were enrolled. Exclusion criteria includes a history of psychiatric or neurological disease other than PD, other major medical diseases, head injury, alcohol/drug dependency/abuse (<xref rid="B8" ref-type="bibr">8</xref>). Disease severity of each patient was evaluated by the UPDRS-III (<xref rid="B16" ref-type="bibr">16</xref>) scores given by an experienced specialist after taking levodopa, including the medication-on and medication-off states. These PD patients took different doses of levodopa, according to a widely used guidance (<xref rid="B18" ref-type="bibr">18</xref>) for each patient. None of them have taken other medicines. Details of the demographic information can be found in <xref rid="T1" ref-type="table">Table 1</xref>. All participants signed the informed consent form before the experiment. This research was approved by the Ethics Committee of Tsinghua University Yuquan Hospital.</p>
+        <table-wrap id="T1" position="float">
+          <label>Table 1</label>
+          <caption>
+            <p>Participant demographic and clinical characteristics.</p>
+          </caption>
+          <table frame="hsides" rules="groups">
+            <thead>
+              <tr>
+                <th rowspan="1" colspan="1"/>
+                <th valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>Mean(±SD)</bold>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Age (years)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">58.5(±10.1)</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Disease duration (years)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">10.4(±4.4)</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">MoCA</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">21.6(±5.5)</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Depression score (BDI-II)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">8.5(±10.0)</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Levodopa equivalent daily dose (mg)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">720.4(±295.7)</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Hoehn and Yahr stage</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">3.7(±0.6)</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Frame-wise displacement (mm)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.33±(0.20)</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Medication-off UPDRS-III</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">44.1(±12.0)</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Medication-on UPDRS-III</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">22.2(±11.8)</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <p><italic>Values are given as mean and SD. MoCA, Montreal Cognitive Assessment; BDI-II, Beck Depression Inventory-II; UPDRS-III, Unified Parkinson Disease Rating Scale III</italic>.</p>
+          </table-wrap-foot>
+        </table-wrap>
+      </sec>
+    </sec>
+    <sec id="s3">
+      <title>MR Image Acquisition</title>
+      <p>All data were collected on a 3T Philips Achieva MRI scanner (Philips Healthcare, Best, The Netherlands) with a 32-channel head coil. Head motion was controlled by fixing the head during scanning. Resting-state blood-oxygenation-level dependent (BOLD) signals were collected with following imaging parameters: 35 axial slices; repetition time (TR) = 2,000 ms; echo time (TE) = 30 ms; flip angle (FA) = 90°; slice thickness = 4.0 mm; slice gap = 0.8 mm; acquisition matrix = 64 × 64; field of view = 224 × 224 mm<sup>2</sup>. All the PD patients have only experienced one rs-fMRI scan, which was carried out before taking levodopa. During the scan, the participants were instructed to keep their eyes closed, relax their minds, and remain as motionless as possible but not to fall asleep. The rs-fMRI scan with 240 dynamic scans lasted for 8 min. High-resolution T1-weighted structural images in coronal view were acquired with slice thickness of 1 mm without slice gap. Other sequence parameters were: TR/TE = 7.64/3.73 ms, FOV = 256 × 256 mm<sup>2</sup> (acquisition matrix = 256 × 256 × 160).</p>
+      <sec>
+        <title>Data Processing and Network Analysis</title>
+        <p>The pre-processing of rs-fMRI data was conducted using the SPM12 (<ext-link ext-link-type="uri" xlink:href="http://www.fil.ion.ucl.ac.uk/spm">http://www.fil.ion.ucl.ac.uk/spm</ext-link>) and GRETNA (<xref rid="B19" ref-type="bibr">19</xref>) software. The first four scans were discarded to allow for magnetization equilibration. Four subjects with the mean frame-wise displacement value exceeding the maximum displacement of 1 mm were excluded from either the above demographic information or subsequent data analysis. Data were realigned to the first volume to correct for head movement. A 0.01–0.10 Hz band-pass was used to reduce the effects of low frequency drift and high-frequency physiological noises. The nuisance signal regression (24-parameter head motion profiles, global signal, CSF signal, and WM signal) was performed. Data were spatially smoothed with a 4 mm full-width at half-maximum Gaussian kernel. In order to perform group analysis, the first scan of fMRI time series was co-registered to the same participant's T1-weighted images. The transformed T1 structural images were normalized to the Montreal Neurological Institute (MNI) template space, using the voxel size of 3 × 3 × 3 mm<sup>3</sup>.</p>
+        <p>The flowchart of the subsequent data processing is shown in <xref ref-type="fig" rid="F1">Figure 1</xref>. The GRETNA software was used to construct the whole-brain networks for each sliding-window (<xref rid="B19" ref-type="bibr">19</xref>). The human Brainnetome Atlas (<ext-link ext-link-type="uri" xlink:href="http://atlas.brainnetome.org/">http://atlas.brainnetome.org/</ext-link>) was applied to obtain 246 brain regions (i.e., nodes, with 123 in each hemisphere), including 210 cortical and 36 subcortical regions (<xref rid="B20" ref-type="bibr">20</xref>). The sliding-window approach was used to explore the time-varying changes of FC. The window was slided by 2 s along the 240 dyanmic scans (480 s). We chose the window size of 50 time points for the trade-off between the accuracy of capturing state transitions accurately and the number of overall state transitions (<xref rid="B21" ref-type="bibr">21</xref>), resulting in 191 consecutive windows across the entire scan. For each sliding window for a participant, the nodal efficiency was computed, resulting in a 191 nodal efficiency curve. For each patient, the dnE matrix (246 × 246) were calculated by computing the inter-node pearson correlation of the 191-time-point dynamic efficiency curve. The value of each element in the dynamic nodeal efficiency matrix ranges between −1 and 1.</p>
+        <fig id="F1" position="float">
+          <label>Figure 1</label>
+          <caption>
+            <p>The prediction and validation flowchart incorporating feature selection and regression analysis. <bold>(A)</bold> shows the detailed steps of the data preprocessing including parcellation, efficiency network computing, feature selection, regression model, and the final feature verification. <bold>(B)</bold> is the related information from the image preprocessing to feature identified.</p>
+          </caption>
+          <graphic xlink:href="fneur-10-00668-g0001"/>
+        </fig>
+      </sec>
+      <sec>
+        <title>Prediction Model</title>
+        <p>The least absolute shrinkage and selection operator (LASSO) method (<xref rid="B14" ref-type="bibr">14</xref>) was performed to select the features and build the model.</p>
+        <p>The least absolute shrinkage and selection operator (LASSO) is a regression analysis method that performs both variable selection and regularization in order to enhance the prediction accuracy and interpretability of the statistical model it produces. The object function is as below:</p>
+        <disp-formula id="E1">
+          <mml:math id="M1">
+            <mml:mrow>
+              <mml:munder>
+                <mml:mrow>
+                  <mml:mi>min</mml:mi>
+                </mml:mrow>
+                <mml:mo>β</mml:mo>
+              </mml:munder>
+              <mml:msubsup>
+                <mml:mrow>
+                  <mml:mrow>
+                    <mml:mo>‖</mml:mo>
+                    <mml:mrow>
+                      <mml:mi mathvariant="bold">y</mml:mi>
+                      <mml:mo>−</mml:mo>
+                      <mml:mtext mathvariant="bold">x</mml:mtext>
+                      <mml:mo mathvariant="bold">β</mml:mo>
+                    </mml:mrow>
+                    <mml:mo>‖</mml:mo>
+                  </mml:mrow>
+                </mml:mrow>
+                <mml:mn>2</mml:mn>
+                <mml:mn>2</mml:mn>
+              </mml:msubsup>
+              <mml:mo>+</mml:mo>
+              <mml:mfrac>
+                <mml:mn>1</mml:mn>
+                <mml:mn>2</mml:mn>
+              </mml:mfrac>
+              <mml:mo>λ</mml:mo>
+              <mml:msub>
+                <mml:mrow>
+                  <mml:mrow>
+                    <mml:mo>‖</mml:mo>
+                    <mml:mo mathvariant="bold">β</mml:mo>
+                    <mml:mo>‖</mml:mo>
+                  </mml:mrow>
+                </mml:mrow>
+                <mml:mn>1</mml:mn>
+              </mml:msub>
+            </mml:mrow>
+          </mml:math>
+        </disp-formula>
+        <p>where <bold>x</bold> denotes the dnE matrix and <bold>y</bold> donates the actual UPDRS-III scores. The objective of the whole regression process is to solve the matrix <bold>β</bold> by minimizing the loss function. This L1-norm regularization typically sets most coefficients to zero and retains one random feature among the correlated ones, the selection of parameter λ is a trade-off between the prediction error and L1-norm regularization we used λ = 0.08 in this study.</p>
+        <p>The prediction model was chosen to depict the correlation between the connectome-based feature and the UPDRS-III score. Considering the size of the dataset, it is not convincing if we only use part of the training-validate-test dataset. Therefore, the Leave-One-Out-Cross-Validation (LOOCV) was used to maximize the loss function (<xref rid="B22" ref-type="bibr">22</xref>, <xref rid="B23" ref-type="bibr">23</xref>). In LOOCV, N-1 (N is number of subjects, <italic>N</italic> = 62) samples were used as training data and the remaining samples were used as validation data. The left subjects were used as the input to the training model which was derived with inner training data, generating the estimated UPDRS-III scores. This loop was repeated <italic>N</italic> times to test all subjects. Each time, the predicted UPDRS-III scores for the left-one-out subjects, the identified FCs, and their corresponding weights in the training model were obtained. By pulling all testing subjects across <italic>N</italic> loops together, we obtained the prediction results for all subjects. Thus, there were <italic>N</italic> regression models of the same type with the same parameters for learning and predicting different data. The prediction performance was assessed by the Pearson correlation (with Bonferroni correction) between the model predicted UPDRS-III scores and the actual scores. Permutation test (1,000 times) was carried out to access the significance (<xref rid="B24" ref-type="bibr">24</xref>). Mean Absolute Error (MAE) were used to measure the magnitude of the error between the predicted and the actual UPDRS-III scores.</p>
+      </sec>
+    </sec>
+    <sec id="s4">
+      <title>Feature Identification</title>
+      <p>Since we applied a cross-validation strategy to estimate the UPDRS-III scores, in each iteration, slightly different connections were selected. The relative weights for all selected connections were determined by averaging the regression weights of all loops. For better interpretation and visualization (<xref rid="B14" ref-type="bibr">14</xref>, <xref rid="B15" ref-type="bibr">15</xref>), we grouped the 246 FC nodes into 24 relatively large brain regions defined by the Brainnetome atlas (<xref rid="B20" ref-type="bibr">20</xref>), and estimated the inter-region contributing power by averaging the weights of all FCs connecting between two specific macroscale regions.</p>
+    </sec>
+    <sec sec-type="results" id="s5">
+      <title>Results</title>
+      <sec>
+        <title>Clinical Data</title>
+        <p>Firstly, we compared the UPDRS-III scores before and after levodopa therapy (“medication-off” and “medication-on,” respectively). The paired <italic>t</italic>-test shows significant difference (<italic>p</italic> &lt; 0.0001) of the UPDRS-III scores between medication-off (44.1 ± 12.0) and -on (22.2 ± 11.8), which demonstrates the efficacy of levodopa.</p>
+      </sec>
+      <sec>
+        <title>Feature Selection for Medication-off and Medication-on</title>
+        <p>The mean contributing weights of whole-brain dnE network are shown in <xref ref-type="fig" rid="F2">Figure 2</xref>. For the medication-off status, MedioVentral Occipital Cortex (MVOcC), are the important regions. For the medication-on status, the important regions are frontal regions including the Inferior Frontal Gyrus (IFG), Middle Frontal Gyrus (MFG), Superior Frontal Gyrus (SFG) and Orbital Gyrus (OrG).</p>
+        <fig id="F2" position="float">
+          <label>Figure 2</label>
+          <caption>
+            <p>Mean weights distribution of whole-brain dnE network for each of the two states including medication-off and medication-on. The mean contributing weights of whole-brain dnE network connections for medication-off and medication-on were calculated by computing the correlation between connections of each macro-scale with the traits of UPDRS-III. Blue represents negative correlation and red represents positive correlation. As shown in the matrix plot, the 246 FC nodes are grouped into 24 macro-scale brain regions that are anatomically defined by the Brainnetome atlas. For the matrix plots, rows and columns represent predefined macro-scale regions in the Brainnetome Atlas, and a bigger circle represents a higher predictive weight. Names of 24 macroscale regions were colored according to their lobe locations. dnE, dynamic nodal efficiency.</p>
+          </caption>
+          <graphic xlink:href="fneur-10-00668-g0002"/>
+        </fig>
+      </sec>
+      <sec>
+        <title>Prediction Performance</title>
+        <p>The dnE network based prediction models achieved significant correlation between the predicted and the true UPDRS-III scores of either medication-off or -on for the 62 PD patients (<xref ref-type="fig" rid="F3">Figure 3</xref>). Specifically, Pearson correlation of <italic>r</italic> = 0.54 (<italic>p</italic> = 4.56 × 10<sup>−6</sup>, MAE = 9.49) and <italic>r</italic> = 0.65 (<italic>p</italic> = 8.06 × 10<sup>−9</sup>, MAE = 7.52) were obtained for medication-off and –on, respectively. All the results passed Bonferroni corrections for the multiple comparisons. The <italic>p</italic>-value of the permutation test is 0.004 and 0.001 for medication-off and –on, respectively.</p>
+        <fig id="F3" position="float">
+          <label>Figure 3</label>
+          <caption>
+            <p>Scatter plot of the predicted four states of the UPDRS-III scores with respect to their true values based on the prediction framework using whole-brain dnE network. With the connectome-based prediction framework, Pearson's correlation of <italic>r</italic> = 0.54 (<italic>p</italic> = 4.56 × 10<sup>−6</sup>) and <italic>r</italic> = 0.65 (<italic>p</italic> = 8.06 × 10<sup>−9</sup>) were achieved for medication-off and medication-on, respectively, in the nested cross-validation using whole-brain dynamic nodal efficiency network. The abbreviations of the brain areas are from the Brainnetome atlas (<ext-link ext-link-type="uri" xlink:href="http://atlas.brainnetome.org/">http://atlas.brainnetome.org/</ext-link>) (<xref rid="B20" ref-type="bibr">20</xref>).</p>
+          </caption>
+          <graphic xlink:href="fneur-10-00668-g0003"/>
+        </fig>
+      </sec>
+      <sec>
+        <title>Connections Identified</title>
+        <p>The relative weights of dnE network connecting between each pair of the 24 anatomically defined macro-scale areas are displayed in <xref ref-type="fig" rid="F4">Figure 4</xref>. The identified features in the dnE network of either medication-off or -on include the negative connections (blue) and positive connections (red). The width of the inter-node lines represents the strength of the connections. For the negative connections, stronger connectivity reflects lower disease severity thus better recovery after drug therapy. The positive connection case reflects the contrary. Specifically, for medication-off, dnE network connections show more contributing power between Middle Temporal Gyrus (MTG) and STG, Postcentral Gyrus (PoG) and Superior Parietal Lobule (<xref rid="B25" ref-type="bibr">25</xref>). The stronger the connections, the better the recovery of PD. There is a negative correlation between the strength of some connections and the UPDRS-III scores, such as the connections between Precuneus (Pcun) and Orbital Gyrus (OrG), Inferior Parietal Lobule (IPL), and lateral Occipital Cortex (LOcC), IPL, and Fusiform Gyrus (FuG). The stronger the connections, the worse the recovery of PD.</p>
+        <fig id="F4" position="float">
+          <label>Figure 4</label>
+          <caption>
+            <p>The identified features in the dnE network between medication-off <bold>(A)</bold> and medication-on <bold>(B)</bold>, respectively, including the negative connections (NC) represented by blue and the positive connections (PC) represented by red, respectively. The width of the inter-node lines represents the strength of connections. For the negative connections, stronger connectivity reflects smaller disease severity and better recovery after drug therapy. The positive connection case is on the contrary. The prediction efficacy of each node for medication-on is shown in <bold>(C)</bold>. The results are from the regression model and are normalized to the range of 0 to 1. As shown in the circle plots, the 246 FC nodes (inner circle) are grouped into 24 macro-scale brain regions (outer brain representations) that are anatomically defined by the Brainnetome atlas. Specifically, nodes incorporated in each of 24 macro-scale brain areas are plotted with different colors, which delineate their corresponding anatomy locations in the outer brain representations.</p>
+          </caption>
+          <graphic xlink:href="fneur-10-00668-g0004"/>
+        </fig>
+        <p>For medication-on, in terms of the feature analysis of predicting recovery effect after the drug therapy, the contributing power is mainly concentrated on hippocampus (Hipp), PoG, Pcun, Cingulate Gyrus (CG), Insular Gyrus (INS), and OrG. Particularly, the features of the connections between Hipp and CG, INS, Pcun, OrG, respectively, have much influence on the recovery after therapy. The stronger the connections, the better the recovery. For other regions, such as MFG and MTG, the stronger the connection between MFG and Inferior Temporal Gyrus (ITG) or the connection between MTG and SPL, the worse the recovery of PD. The prediction efficacy of each region is shown in <xref ref-type="fig" rid="F4">Figure 4C</xref>. The results are from the regression model and are normalized to the range of 0 to 1.</p>
+      </sec>
+    </sec>
+    <sec sec-type="discussion" id="s6">
+      <title>Discussion</title>
+      <p>Through analyzing the efficiency of correlation networks using rs-fMRI, the present study investigated the important features of connections that are correlated to the post-therapy disease severity (UPDRS-III scores) after taking levodopa in the 62 PD patients. Studying the effect of drug therapy is an important topic in PD research. Finding what influences the effect of drug therapy is of great significance. This work predicted the correlation between the dnE network and the actual effect of drug therapy by training a regression model. The major findings of the present study are as follows: (1) The connection efficiency of networks based on rs-fMRI can effectively depict the severity of PD (UPDRS-III scores), and further predict the recovery effect after drug therapy. (2) The Hipp region is an important area that indicates drug therapy effect in the dnE network. (3) Increased cortical functional connectivity from ITG and MTG has a negative effect on the recovery. As such, these findings provide new evidence that the rs-fMRI network connectivity strengthening or weakening within key functional networks in dnE network plays an important pathophysiological role in the recovery of PD patients.</p>
+      <p>The FC analysis of the brain network has revealed that the brain is organized according to a highly efficient small-world topology, combining a high level of segregation (local efficiency) with a high level of global integration (global efficiency) (<xref rid="B26" ref-type="bibr">26</xref>). Most of the previous studies did not consider the important dynamic properties of FC, as functional connectivity was assumed to be constant during rs-fMRI scanning. However, dynamic FC may yield novel insights into brain function and dysfunction (<xref rid="B8" ref-type="bibr">8</xref>). The sliding window approach is commonly used for examining dynamics in resting-state FC, resulting in quantification of the time-varying behavior of a chosen metric. In this study, we selected the nodal global efficiency (i.e., nodal efficiency) as the metric, then obtained the time-varying behavior of each nodal global efficiency. Global efficiency is a network attribute that quantifies how easily information can be exchanged over the network. It provides information on the communication efficiency of a network as a whole, with higher values indicating more efficient information transmission through the whole brain. We further calculated the inter-node correlation of the dnE, to further reveal the synchronization of the dynamic property of FC between two regions.</p>
+      <p>The prediction model analyses demonstrated that some specific subnetworks with decreased connectivity are correlated with the recovery effect after drug therapy. The regions mainly include parietal lobe, insular lobe, limbic lobe, and Hipp. The connections between these regions are directly positively correlated to the recovery after drug therapy: the stronger the connections, the better the recovery (lower UPDRS-III scores). Nonetheless, there are several key pathways in the SPL, ITG, MFG, MTG showed negative influence on the recovery of PD.</p>
+      <p>Previous studies showed that the decreased functional connectivity of the temporal cortex is related to the disease progression of PD (<xref rid="B27" ref-type="bibr">27</xref>, <xref rid="B28" ref-type="bibr">28</xref>). We drew the similar conclusion here, especially for the connection between MTG and STG. In addition, we found that a distributed set of regions in the frontal lobe, temporal lobe, occipital lobe, and parietal lobe showed decreased inter-node correlation of dnE in these patients. The decreased correlation is related to the high post-therapy UPDRS-III scores of PD patients. It reveals that these regions are also related to the disease progression of PD. Among these important connections exist, such as the connection between the paracentral cortex and OrG. Some other studies have also reported that connections among these regions is related to cognitive decline (<xref rid="B29" ref-type="bibr">29</xref>).</p>
+      <p>This study shows that the Hipp region, which was previously reported to influence dementia (<xref rid="B30" ref-type="bibr">30</xref>), is also an important area to indicate drug therapy effect. Previous study also shows that there is a high correlation between PD and dementia, i.e., PD with dementia (<xref rid="B31" ref-type="bibr">31</xref>). This study reveals that individualized recovery effect after drug therapy can be influenced by the functional connections between Hipp and other areas, on which enough attention should be paid before therapy.</p>
+      <p>The selected features (<xref ref-type="fig" rid="F2">Figure 2</xref>) are not necessarily useful for the following prediction. For example, the frontal area appears to be important in the feature selection, but the Hipp area is the dominant feature for prediction. Therefore, how to improve feature selection needs to be further studied. Reducing feature dimension while maintaining all of the connection information might need to be carefully considered.</p>
+      <p>There are several limitations of this study. First, the number of subjects was relatively small to draw firm conclusions. Second, the dynamic property of FC we investigated in this study is only the commonly used global efficiency. It should be noted that choosing the global efficiency does not mean less importance of other network properties. Other dynamic properties, such as local efficiency, may provide additional information and are worthwhile to be further investigated in future studies. Third, the long-term follow-up study should be carried out in the future to follow the outcome of patients.</p>
+    </sec>
+    <sec sec-type="conclusions" id="s7">
+      <title>Conclusion</title>
+      <p>In this study we studied a sample of 62 PD patients and calculated the dnE based on rs-fMRI. With connectome-based predictive models using LASSO, we demonstrated that the dnE properties can successfully predict the post-therapy severity level of PD patients after taking levodopa. The contributed regions for the prediction include hippocampus, post-central gyrus, cingulate gyrus, and orbital gyrus. Specifically, the connections between hippocampus and cingulate gyrus, hippocampus and insular gyrus, insular gyrus and orbital gyrus are positively related to the recovery after drug therapy. The analysis of these connectivity features can provide guidance information for clinical therapy in PD patients.</p>
+    </sec>
+    <sec id="s8">
+      <title>Ethics Statement</title>
+      <p>This study was carried out in accordance with The Nuremberg Code, World Medical Association Declaration of Helsinki and International Ethical Guidelines for Biomedical, Ethics Committee of Tsinghua University Yuquan Hospital. Research Involving Human Subjects, and with written informed consent from all subjects. All subjects gave written informed consent in accordance with the Declaration of Helsinki. The protocol was approved by the Ethics Committee of Tsinghua University Yuquan Hospital.</p>
+    </sec>
+    <sec id="s9">
+      <title>Author Contributions</title>
+      <p>XL contributed to the experiments, data analysis, and writing of the manuscript. YX and SL contributed to performing the experiments and revising the manuscript. RZ and LH contributed to the data collection. ZH and YT revised the manuscript. ZN contributed to the manuscript revision. YM and HG are the guarantors of this study and had complete access to all data in the study. All authors are accountable for the contents of this research.</p>
+      <sec>
+        <title>Conflict of Interest Statement</title>
+        <p>The authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.</p>
+      </sec>
+    </sec>
+  </body>
+  <back>
+    <fn-group>
+      <fn fn-type="financial-disclosure">
+        <p><bold>Funding.</bold> This work was supported by the Beijing Institute of Technology Research Fund Program for Young Scholars and the National Natural Science Foundation of China (Grant No. 61801026).</p>
+      </fn>
+    </fn-group>
+    <ref-list>
+      <title>References</title>
+      <ref id="B1">
+        <label>1.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Jankovic</surname><given-names>J</given-names></name></person-group>. <article-title>Parkinson's disease: clinical features and diagnosis</article-title>. <source>J Neurol Neurosurg Psychiatry.</source> (<year>2008</year>) <volume>79</volume>:<fpage>368</fpage>–<lpage>76</lpage>. <pub-id pub-id-type="doi">10.1136/jnnp.2007.131045</pub-id><pub-id pub-id-type="pmid">18344392</pub-id></mixed-citation>
+      </ref>
+      <ref id="B2">
+        <label>2.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Khoo</surname><given-names>TK</given-names></name><name><surname>Yarnall</surname><given-names>AJ</given-names></name><name><surname>Duncan</surname><given-names>GW</given-names></name><name><surname>Coleman</surname><given-names>S</given-names></name><name><surname>O'brien</surname><given-names>JT</given-names></name><name><surname>Brooks</surname><given-names>DJ</given-names></name><etal/></person-group>. <article-title>The spectrum of nonmotor symptoms in early Parkinson disease</article-title>. <source>Neurology</source>. (<year>2013</year>) <volume>80</volume>:<fpage>276</fpage>–<lpage>81</lpage>. <pub-id pub-id-type="doi">10.1212/WNL.0b013e31827deb74</pub-id><pub-id pub-id-type="pmid">23319473</pub-id></mixed-citation>
+      </ref>
+      <ref id="B3">
+        <label>3.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Brooks</surname><given-names>DJ</given-names></name><name><surname>Pavese</surname><given-names>N</given-names></name></person-group>. <article-title>Imaging biomarkers in Parkinson's disease</article-title>. <source>Progr Neurobiol.</source> (<year>2011</year>) <volume>95</volume>:<fpage>614</fpage>–<lpage>28</lpage>. <pub-id pub-id-type="doi">10.1016/j.pneurobio.2011.08.009</pub-id><pub-id pub-id-type="pmid">21896306</pub-id></mixed-citation>
+      </ref>
+      <ref id="B4">
+        <label>4.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Luo</surname><given-names>C</given-names></name><name><surname>Song</surname><given-names>W</given-names></name><name><surname>Chen</surname><given-names>Q</given-names></name><name><surname>Zheng</surname><given-names>Z</given-names></name><name><surname>Chen</surname><given-names>K</given-names></name><name><surname>Cao</surname><given-names>B</given-names></name><etal/></person-group>. <article-title>Reduced functional connectivity in early-stage drug-naive Parkinson's disease: a resting-state fMRI study</article-title>. <source>Neurobiol Aging</source>. (<year>2014</year>) <volume>35</volume>:<fpage>431</fpage>–<lpage>41</lpage>. <pub-id pub-id-type="doi">10.1016/j.neurobiolaging.2013.08.018</pub-id><pub-id pub-id-type="pmid">24074808</pub-id></mixed-citation>
+      </ref>
+      <ref id="B5">
+        <label>5.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Ziegler</surname><given-names>E</given-names></name><name><surname>Rouillard</surname><given-names>M</given-names></name><name><surname>Andre</surname><given-names>E</given-names></name><name><surname>Coolen</surname><given-names>T</given-names></name><name><surname>Stender</surname><given-names>J</given-names></name><name><surname>Balteau</surname><given-names>E</given-names></name><etal/></person-group>. <article-title>Mapping track density changes in nigrostriatal and extranigral pathways in Parkinson's disease</article-title>. <source>Neuroimage</source>. (<year>2014</year>) <volume>99</volume>:<fpage>498</fpage>–<lpage>508</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2014.06.033</pub-id><pub-id pub-id-type="pmid">24956065</pub-id></mixed-citation>
+      </ref>
+      <ref id="B6">
+        <label>6.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Dubbelink</surname><given-names>KTEO</given-names></name><name><surname>Hillebrand</surname><given-names>A</given-names></name><name><surname>Stoffers</surname><given-names>D</given-names></name><name><surname>Deijen</surname><given-names>JB</given-names></name><name><surname>Twisk</surname><given-names>JWR</given-names></name><name><surname>Stam</surname><given-names>CJ</given-names></name><etal/></person-group>
+<article-title>Disrupted brain network topology in Parkinson's disease: a longitudinal magnetoencephalography study</article-title>. <source>Brain</source>. (<year>2014</year>) <volume>137</volume>:<fpage>197</fpage>–<lpage>207</lpage>. <pub-id pub-id-type="doi">10.1093/brain/awt316</pub-id><pub-id pub-id-type="pmid">24271324</pub-id></mixed-citation>
+      </ref>
+      <ref id="B7">
+        <label>7.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Putcha</surname><given-names>D</given-names></name><name><surname>Ross</surname><given-names>RS</given-names></name><name><surname>Cronin-Golomb</surname><given-names>A</given-names></name><name><surname>Janes</surname><given-names>AC</given-names></name><name><surname>Stern</surname><given-names>CE</given-names></name></person-group>. <article-title>Altered intrinsic functional coupling between core neurocognitive networks in Parkinson's disease</article-title>. <source>Neuroim Clin.</source> (<year>2015</year>) <volume>7</volume>:<fpage>449</fpage>–<lpage>55</lpage>. <pub-id pub-id-type="doi">10.1016/j.nicl.2015.01.012</pub-id><pub-id pub-id-type="pmid">25685711</pub-id></mixed-citation>
+      </ref>
+      <ref id="B8">
+        <label>8.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Kim</surname><given-names>J</given-names></name><name><surname>Criaud</surname><given-names>M</given-names></name><name><surname>Cho</surname><given-names>SS</given-names></name><name><surname>Diez-Cirarda</surname><given-names>M</given-names></name><name><surname>Mihaescu</surname><given-names>A</given-names></name><name><surname>Coakeley</surname><given-names>S</given-names></name><etal/></person-group>. <article-title>Abnormal intrinsic brain functional network dynamics in Parkinson's disease</article-title>. <source>Brain</source>. (<year>2017</year>) <volume>140</volume>:<fpage>2955</fpage>–<lpage>67</lpage>. <pub-id pub-id-type="doi">10.1093/brain/awx233</pub-id><pub-id pub-id-type="pmid">29053835</pub-id></mixed-citation>
+      </ref>
+      <ref id="B9">
+        <label>9.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Skidmore</surname><given-names>F</given-names></name><name><surname>Korenkevych</surname><given-names>D</given-names></name><name><surname>Liu</surname><given-names>Y</given-names></name><name><surname>He</surname><given-names>G</given-names></name><name><surname>Bullmore</surname><given-names>E</given-names></name><name><surname>Pardalos</surname><given-names>PM</given-names></name></person-group>. <article-title>Connectivity brain networks based on wavelet correlation analysis in Parkinson fMRI data</article-title>. <source>Neurosci Lett</source>. (<year>2011</year>) <volume>499</volume>:<fpage>47</fpage>–<lpage>51</lpage>. <pub-id pub-id-type="doi">10.1016/j.neulet.2011.05.030</pub-id><pub-id pub-id-type="pmid">21624430</pub-id></mixed-citation>
+      </ref>
+      <ref id="B10">
+        <label>10.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Wei</surname><given-names>L</given-names></name><name><surname>Zhang</surname><given-names>J</given-names></name><name><surname>Long</surname><given-names>Z</given-names></name><name><surname>Wu</surname><given-names>GR</given-names></name><name><surname>Hu</surname><given-names>X</given-names></name><name><surname>Zhang</surname><given-names>Y</given-names></name><etal/></person-group>. <article-title>Reduced topological efficiency in cortical-basal Ganglia motor network of Parkinson's disease: a resting state fMRI study</article-title>. <source>PLoS ONE.</source> (<year>2014</year>) <volume>9</volume>:<fpage>e108124</fpage>. <pub-id pub-id-type="doi">10.1371/journal.pone.0108124</pub-id><pub-id pub-id-type="pmid">25279557</pub-id></mixed-citation>
+      </ref>
+      <ref id="B11">
+        <label>11.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Yu</surname><given-names>QB</given-names></name><name><surname>Erhardt</surname><given-names>EB</given-names></name><name><surname>Sui</surname><given-names>J</given-names></name><name><surname>Du</surname><given-names>YH</given-names></name><name><surname>He</surname><given-names>H</given-names></name><name><surname>Hjelm</surname><given-names>D</given-names></name><etal/></person-group>. <article-title>Assessing dynamic brain graphs of time-varying connectivity in fMRI data: application to healthy controls and patients with schizophrenia</article-title>. <source>Neuroimage</source>. (<year>2015</year>) <volume>107</volume>:<fpage>345</fpage>–<lpage>55</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2014.12.020</pub-id><pub-id pub-id-type="pmid">25514514</pub-id></mixed-citation>
+      </ref>
+      <ref id="B12">
+        <label>12.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Shen</surname><given-names>X</given-names></name><name><surname>Finn</surname><given-names>ES</given-names></name><name><surname>Scheinost</surname><given-names>D</given-names></name><name><surname>Rosenberg</surname><given-names>MD</given-names></name><name><surname>Chun</surname><given-names>MM</given-names></name><name><surname>Papademetris</surname><given-names>X</given-names></name><etal/></person-group>. <article-title>Using connectome-based predictive modeling to predict individual behavior from brain connectivity</article-title>. <source>Nat Protoc</source>. (<year>2017</year>) <volume>12</volume>:<fpage>506</fpage>–<lpage>18</lpage>. <pub-id pub-id-type="doi">10.1038/nprot.2016.178</pub-id><pub-id pub-id-type="pmid">28182017</pub-id></mixed-citation>
+      </ref>
+      <ref id="B13">
+        <label>13.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Cui</surname><given-names>Z</given-names></name><name><surname>Gong</surname><given-names>G</given-names></name></person-group>. <article-title>The effect of machine learning regression algorithms and sample size on individualized behavioral prediction with functional connectivity features</article-title>. <source>Neuroimage</source>. (<year>2018</year>) <volume>178</volume>:<fpage>622</fpage>–<lpage>37</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2018.06.001</pub-id><pub-id pub-id-type="pmid">29870817</pub-id></mixed-citation>
+      </ref>
+      <ref id="B14">
+        <label>14.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Jiang</surname><given-names>R</given-names></name><name><surname>Calhoun</surname><given-names>VD</given-names></name><name><surname>Zuo</surname><given-names>N</given-names></name><name><surname>Lin</surname><given-names>D</given-names></name><name><surname>Li</surname><given-names>J</given-names></name><name><surname>Fan</surname><given-names>L</given-names></name><etal/></person-group>. <article-title>Connectome-based individualized prediction of temperament trait scores</article-title>. <source>Neuroimage</source>. (<year>2018</year>) <volume>183</volume>:<fpage>366</fpage>–<lpage>74</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2018.08.038</pub-id><pub-id pub-id-type="pmid">30125712</pub-id></mixed-citation>
+      </ref>
+      <ref id="B15">
+        <label>15.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Rosenberg</surname><given-names>MD</given-names></name><name><surname>Finn</surname><given-names>ES</given-names></name><name><surname>Scheinost</surname><given-names>D</given-names></name><name><surname>Papademetris</surname><given-names>X</given-names></name><name><surname>Shen</surname><given-names>X</given-names></name><name><surname>Constable</surname><given-names>RT</given-names></name><etal/></person-group>. <article-title>A neuromarker of sustained attention from whole-brain functional connectivity</article-title>. <source>Nat Neurosci</source>. (<year>2016</year>) <volume>19</volume>:<fpage>165</fpage>–<lpage>71</lpage>. <pub-id pub-id-type="doi">10.1038/nn.4179</pub-id><pub-id pub-id-type="pmid">26595653</pub-id></mixed-citation>
+      </ref>
+      <ref id="B16">
+        <label>16.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Goetz</surname><given-names>CG</given-names></name><name><surname>Tilley</surname><given-names>BC</given-names></name><name><surname>Shaftman</surname><given-names>SR</given-names></name><name><surname>Stebbins</surname><given-names>GT</given-names></name><name><surname>Fahn</surname><given-names>S</given-names></name><name><surname>Martinez-Martin</surname><given-names>P</given-names></name><etal/></person-group>. <article-title>Movement disorder society-sponsored revision of the unified Parkinson's disease rating scale (MDS-UPDRS): scale presentation and clinimetric testing results</article-title>. <source>Mov Disord</source>. (<year>2008</year>) <volume>23</volume>:<fpage>2129</fpage>–<lpage>70</lpage>. <pub-id pub-id-type="doi">10.1002/mds.22340</pub-id><pub-id pub-id-type="pmid">19025984</pub-id></mixed-citation>
+      </ref>
+      <ref id="B17">
+        <label>17.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Defer</surname><given-names>GL</given-names></name><name><surname>Widner</surname><given-names>H</given-names></name><name><surname>Marie</surname><given-names>RM</given-names></name><name><surname>Remy</surname><given-names>P</given-names></name><name><surname>Levivier</surname><given-names>M</given-names></name></person-group>. <article-title>Core assessment program for surgical interventional therapies in Parkinson's disease (CAPSIT-PD)</article-title>. <source>Mov Disord.</source> (<year>1999</year>) <volume>14</volume>:<fpage>572</fpage>–<lpage>84</lpage>. <pub-id pub-id-type="pmid">10435493</pub-id></mixed-citation>
+      </ref>
+      <ref id="B18">
+        <label>18.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Tomlinson</surname><given-names>CL</given-names></name><name><surname>Stowe</surname><given-names>R</given-names></name><name><surname>Patel</surname><given-names>S</given-names></name><name><surname>Rick</surname><given-names>C</given-names></name><name><surname>Gray</surname><given-names>R</given-names></name><name><surname>Clarke</surname><given-names>CE</given-names></name></person-group>. <article-title>Systematic review of levodopa dose equivalency reporting in Parkinson's disease</article-title>. <source>Mov Disord.</source> (<year>2010</year>) <volume>25</volume>:<fpage>2649</fpage>–<lpage>53</lpage>. <pub-id pub-id-type="doi">10.1002/mds.23429</pub-id><pub-id pub-id-type="pmid">21069833</pub-id></mixed-citation>
+      </ref>
+      <ref id="B19">
+        <label>19.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Wang</surname><given-names>J</given-names></name><name><surname>Wang</surname><given-names>X</given-names></name><name><surname>Xia</surname><given-names>M</given-names></name><name><surname>Liao</surname><given-names>X</given-names></name><name><surname>Evans</surname><given-names>A</given-names></name><name><surname>He</surname><given-names>Y</given-names></name></person-group>
+<article-title>GRETNA: a graph theoretical network analysis toolbox for imaging connectomics</article-title>. <source>Front Hum Neurosci.</source> (<year>2015</year>) <volume>9</volume>:<fpage>386</fpage>
+<pub-id pub-id-type="doi">10.3389/fnhum.2015.00458</pub-id><pub-id pub-id-type="pmid">26175682</pub-id></mixed-citation>
+      </ref>
+      <ref id="B20">
+        <label>20.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Fan</surname><given-names>L</given-names></name><name><surname>Li</surname><given-names>H</given-names></name><name><surname>Zhuo</surname><given-names>J</given-names></name><name><surname>Zhang</surname><given-names>Y</given-names></name><name><surname>Wang</surname><given-names>J</given-names></name><name><surname>Chen</surname><given-names>L</given-names></name><etal/></person-group>. <article-title>The human brainnetome atlas: a new brain atlas based on connectional architecture</article-title>. <source>Cereb Cortex.</source> (<year>2016</year>) <volume>26</volume>:<fpage>3508</fpage>–<lpage>26</lpage>. <pub-id pub-id-type="doi">10.1093/cercor/bhw157</pub-id><pub-id pub-id-type="pmid">27230218</pub-id></mixed-citation>
+      </ref>
+      <ref id="B21">
+        <label>21.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Shakil</surname><given-names>S</given-names></name><name><surname>Lee</surname><given-names>CH</given-names></name><name><surname>Keilholz</surname><given-names>SD</given-names></name></person-group>. <article-title>Evaluation of sliding window correlation performance for characterizing dynamic functional connectivity and brain states</article-title>. <source>Neuroimage.</source> (<year>2016</year>) <volume>133</volume>:<fpage>111</fpage>–<lpage>28</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2016.02.074</pub-id><pub-id pub-id-type="pmid">26952197</pub-id></mixed-citation>
+      </ref>
+      <ref id="B22">
+        <label>22.</label>
+        <mixed-citation publication-type="book"><person-group person-group-type="author"><name><surname>Kohavi</surname><given-names>R</given-names></name></person-group>
+<article-title>A study of cross-validation and bootstrap for accuracy estimation and model selection</article-title>. In: <source>International Joint Conference on Artificial Intelligence.</source>
+<publisher-loc>Montreal, QC</publisher-loc> (<year>1995</year>). p. <fpage>1137</fpage>–<lpage>43</lpage>.</mixed-citation>
+      </ref>
+      <ref id="B23">
+        <label>23.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Cui</surname><given-names>Z</given-names></name><name><surname>Xia</surname><given-names>Z</given-names></name><name><surname>Su</surname><given-names>M</given-names></name><name><surname>Shu</surname><given-names>H</given-names></name><name><surname>Gong</surname><given-names>G</given-names></name></person-group>. <article-title>Disrupted white matter connectivity underlying developmental dyslexia: a machine learning approach</article-title>. <source>Hum Brain Mapp</source>. (<year>2016</year>) <volume>37</volume>:<fpage>1443</fpage>–<lpage>58</lpage>. <pub-id pub-id-type="doi">10.1002/hbm.23112</pub-id><pub-id pub-id-type="pmid">26787263</pub-id></mixed-citation>
+      </ref>
+      <ref id="B24">
+        <label>24.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Cui</surname><given-names>Z</given-names></name><name><surname>Su</surname><given-names>M</given-names></name><name><surname>Li</surname><given-names>L</given-names></name><name><surname>Shu</surname><given-names>H</given-names></name><name><surname>Gong</surname><given-names>G</given-names></name></person-group>. <article-title>Individualized prediction of reading comprehension ability using gray matter volume</article-title>. <source>Cereb Cortex.</source> (<year>2018</year>) <volume>28</volume>:<fpage>1656</fpage>–<lpage>72</lpage>. <pub-id pub-id-type="doi">10.1093/cercor/bhx061</pub-id><pub-id pub-id-type="pmid">28334252</pub-id></mixed-citation>
+      </ref>
+      <ref id="B25">
+        <label>25.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Parnanzone</surname><given-names>S</given-names></name><name><surname>Serrone</surname><given-names>D</given-names></name><name><surname>Rossetti</surname><given-names>MC</given-names></name><name><surname>D'onofrio</surname><given-names>S</given-names></name><name><surname>Splendiani</surname><given-names>A</given-names></name><name><surname>Micelli</surname><given-names>V</given-names></name><etal/></person-group>. <article-title>Alterations of cerebral white matter structure in psychosis and their clinical correlations: a systematic review of Diffusion Tensor Imaging studies</article-title>. <source>Riv Psichiatr</source>. (<year>2017</year>) <volume>52</volume>, <fpage>49</fpage>–<lpage>66</lpage>. <pub-id pub-id-type="doi">10.1708/2679.27441</pub-id><pub-id pub-id-type="pmid">28492575</pub-id></mixed-citation>
+      </ref>
+      <ref id="B26">
+        <label>26.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Achard</surname><given-names>S</given-names></name><name><surname>Bullmore</surname><given-names>E</given-names></name></person-group>. <article-title>Efficiency and cost of economical brain functional networks</article-title>. <source>PLoS Comput Biol</source>. (<year>2007</year>) <volume>3</volume>:<fpage>e17</fpage>. <pub-id pub-id-type="doi">10.1371/journal.pcbi.0030017</pub-id><pub-id pub-id-type="pmid">17274684</pub-id></mixed-citation>
+      </ref>
+      <ref id="B27">
+        <label>27.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Dubbelink</surname><given-names>KTEO</given-names></name><name><surname>Stoffers</surname><given-names>D</given-names></name><name><surname>Deijen</surname><given-names>JB</given-names></name><name><surname>Twisk</surname><given-names>JWR</given-names></name><name><surname>Stam</surname><given-names>CJ</given-names></name><name><surname>Hillebrand</surname><given-names>A</given-names></name><etal/></person-group>
+<article-title>Resting-state functional connectivity as a marker of disease progression in Parkinson's disease: a longitudinal MEG study</article-title>. <source>Neuroim Clin.</source> (<year>2013</year>) <volume>2</volume>:<fpage>612</fpage>–<lpage>9</lpage>. <pub-id pub-id-type="doi">10.1016/j.nicl.2013.04.003</pub-id></mixed-citation>
+      </ref>
+      <ref id="B28">
+        <label>28.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Suo</surname><given-names>X</given-names></name><name><surname>Lei</surname><given-names>D</given-names></name><name><surname>Li</surname><given-names>N</given-names></name><name><surname>Cheng</surname><given-names>L</given-names></name><name><surname>Chen</surname><given-names>F</given-names></name><name><surname>Wang</surname><given-names>M</given-names></name><etal/></person-group>. <article-title>Functional brain connectome and its relation to hoehn and yahr stage in Parkinson disease</article-title>. <source>Radiology</source>. (<year>2017</year>) <volume>285</volume>:<fpage>904</fpage>–<lpage>13</lpage>. <pub-id pub-id-type="doi">10.1148/radiol.2017162929</pub-id><pub-id pub-id-type="pmid">28873046</pub-id></mixed-citation>
+      </ref>
+      <ref id="B29">
+        <label>29.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Eidelberg</surname><given-names>D</given-names></name><name><surname>Moeller</surname><given-names>JR</given-names></name><name><surname>Dhawan</surname><given-names>V</given-names></name><name><surname>Spetsieris</surname><given-names>P</given-names></name><name><surname>Takikawa</surname><given-names>S</given-names></name><name><surname>Ishikawa</surname><given-names>T</given-names></name><etal/></person-group>. <article-title>The metabolic topography of Parkinsonism</article-title>. <source>J Cereb Blood Flow Metab</source>. (<year>1994</year>) <volume>14</volume>:<fpage>783</fpage>–<lpage>801</lpage>. <pub-id pub-id-type="doi">10.1038/jcbfm.1994.99</pub-id><pub-id pub-id-type="pmid">8063874</pub-id></mixed-citation>
+      </ref>
+      <ref id="B30">
+        <label>30.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Aarsland</surname><given-names>D</given-names></name><name><surname>Creese</surname><given-names>B</given-names></name><name><surname>Politis</surname><given-names>M</given-names></name><name><surname>Chaudhuri</surname><given-names>KR</given-names></name><name><surname>Ffytche</surname><given-names>DH</given-names></name><name><surname>Weintraub</surname><given-names>D</given-names></name><etal/></person-group>. <article-title>Cognitive decline in Parkinson disease</article-title>. <source>Nat Rev Neurol</source>. (<year>2017</year>) <volume>13</volume>:<fpage>217</fpage>–<lpage>31</lpage>. <pub-id pub-id-type="doi">10.1038/nrneurol.2017.27</pub-id><pub-id pub-id-type="pmid">28257128</pub-id></mixed-citation>
+      </ref>
+      <ref id="B31">
+        <label>31.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Shi</surname><given-names>M</given-names></name><name><surname>Huber</surname><given-names>BR</given-names></name><name><surname>Zhang</surname><given-names>J</given-names></name></person-group>. <article-title>Biomarkers for cognitive impairment in Parkinson disease</article-title>. <source>Brain Pathol</source>. (<year>2010</year>) <volume>20</volume>:<fpage>660</fpage>–<lpage>71</lpage>. <pub-id pub-id-type="doi">10.1111/j.1750-3639.2009.00370.x</pub-id><pub-id pub-id-type="pmid">20522092</pub-id></mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

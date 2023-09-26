@@ -1,0 +1,1339 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.3" xml:lang="en" article-type="research-article">
+  <?properties open_access?>
+  <processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats">
+    <restricted-by>pmc</restricted-by>
+  </processing-meta>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">Int J Environ Res Public Health</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Int J Environ Res Public Health</journal-id>
+      <journal-id journal-id-type="publisher-id">ijerph</journal-id>
+      <journal-title-group>
+        <journal-title>International Journal of Environmental Research and Public Health</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">1661-7827</issn>
+      <issn pub-type="epub">1660-4601</issn>
+      <publisher>
+        <publisher-name>MDPI</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">35457373</article-id>
+      <article-id pub-id-type="pmc">9030143</article-id>
+      <article-id pub-id-type="doi">10.3390/ijerph19084508</article-id>
+      <article-id pub-id-type="publisher-id">ijerph-19-04508</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Temporal and Spatial Analysis of Alzheimer’s Disease Based on an Improved Convolutional Neural Network and a Resting-State FMRI Brain Functional Network</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Sun</surname>
+            <given-names>Haijing</given-names>
+          </name>
+          <xref rid="af1-ijerph-19-04508" ref-type="aff">1</xref>
+          <xref rid="af2-ijerph-19-04508" ref-type="aff">2</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Wang</surname>
+            <given-names>Anna</given-names>
+          </name>
+          <xref rid="af1-ijerph-19-04508" ref-type="aff">1</xref>
+          <xref rid="c1-ijerph-19-04508" ref-type="corresp">*</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>He</surname>
+            <given-names>Shanshan</given-names>
+          </name>
+          <xref rid="af1-ijerph-19-04508" ref-type="aff">1</xref>
+        </contrib>
+      </contrib-group>
+      <contrib-group>
+        <contrib contrib-type="editor">
+          <name>
+            <surname>Cheong</surname>
+            <given-names>Kang Hao</given-names>
+          </name>
+          <role>Academic Editor</role>
+        </contrib>
+      </contrib-group>
+      <aff id="af1-ijerph-19-04508"><label>1</label>College of Information Science and Engineering, Northeastern University, Shenyang 110819, China; <email>seamirror@126.com</email> (H.S.); <email>shanshanhe.neu@foxmail.com</email> (S.H.)</aff>
+      <aff id="af2-ijerph-19-04508"><label>2</label>College of Intelligent Science and Engineering, Shenyang University, Shenyang 110044, China</aff>
+      <author-notes>
+        <corresp id="c1-ijerph-19-04508"><label>*</label>Correspondence: <email>wanganna@mail.neu.edu.cn</email></corresp>
+      </author-notes>
+      <pub-date pub-type="epub">
+        <day>08</day>
+        <month>4</month>
+        <year>2022</year>
+      </pub-date>
+      <pub-date pub-type="collection">
+        <month>4</month>
+        <year>2022</year>
+      </pub-date>
+      <volume>19</volume>
+      <issue>8</issue>
+      <elocation-id>4508</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>28</day>
+          <month>1</month>
+          <year>2022</year>
+        </date>
+        <date date-type="accepted">
+          <day>02</day>
+          <month>4</month>
+          <year>2022</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>© 2022 by the authors.</copyright-statement>
+        <copyright-year>2022</copyright-year>
+        <license>
+          <ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref>
+          <license-p>Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license (<ext-link ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</ext-link>).</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>Most current research on Alzheimer’s disease (AD) is based on transverse measurements. Given the nature of neurodegeneration in AD progression, observing longitudinal changes in the structural features of brain networks over time may improve the accuracy of the predicted transformation and provide a good measure of the progression of AD. Currently, there is no cure for patients with existing AD dementia, but patients with mild cognitive impairment (MCI) in the prodromal stage of AD dementia may be diagnosed. The study of the early diagnosis of MCI and the prediction of MCI to AD transformation is of great significance for the monitoring of the MCI to AD transformation process. Despite the high rate of MCI conversion to AD, the neuropathological cause of MCI is heterogeneous. However, many people with MCI remain stable. Treatment options are different for patients with stable MCI and those with underlying dementia. Therefore, it is of great significance for clinical practice to predict whether patients with MCI will develop AD dementia. This paper proposes an improved algorithm that is based on a convolution neural network (CNN) with residuals combined with multi-layer long short-term memory (LSTM) to diagnose AD and predict MCI. Firstly, multi-time resting-state fMRI images were obtained from the Alzheimer’s Disease Neuroimaging Initiative (ADNI) database for preprocessing, and then an AAL brain partition template was used to construct a 90 × 90 functional connectivity (FC) network matrix of a whole-brain region of interest (ROI). Secondly, the diversity of training samples was increased by generating an adversarial network (GAN). Finally, a CNN with residuals and a multi-layer LSTM model were constructed to automatically classify and predict the functional adjacency matrix. This method can not only distinguish Alzheimer’s disease from normal health conditions at multiple time points, but can also predict progressive MCI (pMCI) and stable MCI (sMCI) at multiple time points. The classification accuracies in AD vs. NC and sMCI vs.pMCI reached 93.5% and 75.5%, respectively.</p>
+      </abstract>
+      <kwd-group>
+        <kwd>convolutional neural network</kwd>
+        <kwd>resting-state fMRI</kwd>
+        <kwd>brain functional network</kwd>
+        <kwd>AD diagnostic</kwd>
+        <kwd>MCI transformation prediction</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec sec-type="intro" id="sec1-ijerph-19-04508">
+      <title>1. Introduction</title>
+      <p>Alzheimer’s disease (AD) is a common, non-reversible, and progressive neurological disease characterized by cognitive impairment, with patients’ memory and thinking abilities gradually becoming impaired over time [<xref rid="B1-ijerph-19-04508" ref-type="bibr">1</xref>]. Mild cognitive impairment (MCI) is a transitional stage between normal aging and AD and is characterized by mild memory and intellectual impairment, with a degree of memory impairment not commensurate with age [<xref rid="B2-ijerph-19-04508" ref-type="bibr">2</xref>]. MCI is a preclinical risk factor for AD. The conversion of MCI to AD is ten times more common than in the general population. According to follow-up studies, the incidence of transition to AD in patients with MCI is 10 to 15% within 1 year, 40% within 2 years, and 20 to 53% within 3 years [<xref rid="B3-ijerph-19-04508" ref-type="bibr">3</xref>]. Therefore, MCI patients can be further divided into stable MCI (sMCI) and progressive MCI (pMCI) patients. Although there is no treatment for MCI and AD patients at present, the study on the early diagnosis of MCI and the prediction of MCI to AD transformation is of great significance for the monitoring of the MCI to AD transformation process [<xref rid="B4-ijerph-19-04508" ref-type="bibr">4</xref>].Research on the diagnosis of AD and the prediction of the MCI–AD transformation process has become a hotspot for current scholars. With the development of medical neuroimaging technology, magnetic resonance imaging (MRI) has provided more effective data support for related scholars to study AD due to its safety, non-invasiveness, high pixel resolution, and flexible imaging methods [<xref rid="B5-ijerph-19-04508" ref-type="bibr">5</xref>]. In the research on AD and the prediction of the MCI–AD transformation process based on resting-state functional MRI (rs-fMRI) data, the most common method used is to abstract the pictorial data into numerical data and construct functional brain adjacency networks. The study of the differences in functional brain adjacency networks between subjects with AD and normal subjects, as well as between subjects with sMCI and pMCI, has become a hot topic in recent years. As a potential biomarker, the functional connectivity (FC) matrix has attracted much attention in many studies [<xref rid="B6-ijerph-19-04508" ref-type="bibr">6</xref>]. In recent years, strategies for dementia diagnosis based on deep learning methods have achieved good results over traditional machine learning methods because deep learning models can extract the differential feature representation hierarchically and can naturally combine features of different levels together [<xref rid="B7-ijerph-19-04508" ref-type="bibr">7</xref>]. Most domestic and foreign research is based on deep learning for horizontal classification diagnosis, such as normal control groups (NC) and AD dichotomies or NC, MCI, and AD tri-classification studies [<xref rid="B8-ijerph-19-04508" ref-type="bibr">8</xref>]. Zhang et al. [<xref rid="B9-ijerph-19-04508" ref-type="bibr">9</xref>] studied the functional connectivity of the whole brain by calculating Pearson’s correlation coefficients based on rs-fMRI data and proposed a set of novel features by applying the two-sample <italic toggle="yes">t</italic>-test on the correlation coefficients’ matrix to identify the most discriminative correlation coefficients. Taie et al. [<xref rid="B10-ijerph-19-04508" ref-type="bibr">10</xref>] proposed a bat-based support vector machine (SVM) parameter optimization model for the diagnosis of AD in MRI bio-medical images. The model uses MRI to classify biomedical images and diagnose three kinds of biomedical images: NC, MCI, and AD. Xu et al. [<xref rid="B11-ijerph-19-04508" ref-type="bibr">11</xref>] proposed a new deep learning method called the multiple graph Gaussian embedding model (MG2G), which maps high-dimensional resting-state brain networks to low-dimensional latent spaces to learn information-rich network features. This model predicts the progression to AD in patients with MCI and identifies altered areas of the brain network associated with MCI. According to research, the essence of AD deterioration is the degeneration of brain nerve function. Therefore, by observing and recording the longitudinal changes of brain functional links over time, one can detect AD in advance and take timely intervention measures to prevent the occurrence of AD or slow down the rate of neurodegeneration. In the longitudinal study, data collected at multiple time points will be involved [<xref rid="B12-ijerph-19-04508" ref-type="bibr">12</xref>]. Longitudinal data capture the progression of disease dynamics as opposed to data at a single point in time. In this paper, convolutional neural networks (CNN) and recursive neural networks (RNN) with long short-term memory (LSTM) are introduced into the whole-brain functional networks analysis. A longitudinal joint analysis method of brain functional networks based on deep learning is proposed. In this method, rs-fMRI images of NC, sMCI, pMCI, and AD at baseline, 12 months, and 24 months were screened from the ADNI database to construct and analyze the brain functional networks [<xref rid="B13-ijerph-19-04508" ref-type="bibr">13</xref>]. During the progression from MCI to AD, the connectivity patterns between brain regions change, and the information transmission ability and efficiency of the brain’s functional networks are impaired. In this paper, the whole-brain fMRI functional network connection was selected as a marker to carry out the study [<xref rid="B14-ijerph-19-04508" ref-type="bibr">14</xref>]. The connection characteristics of the whole-brain functional networks were extracted and combined with the longitudinal characteristics to classify NC and AD and predict whether MCI patients were developing AD [<xref rid="B15-ijerph-19-04508" ref-type="bibr">15</xref>]. The proposed method was validated in ADNI data sets and compared with other classical methods. The results show that the proposed method has a higher classification and prediction accuracy and stronger robustness than traditional methods.</p>
+    </sec>
+    <sec id="sec2-ijerph-19-04508">
+      <title>2. Materials and Methods</title>
+      <sec id="sec2dot1-ijerph-19-04508">
+        <title>2.1. Data Selection</title>
+        <p>The sample data used in this study were from the Alzheimer’s Disease Neuroimaging Initiative (ADNI) (<uri xlink:href="http://adni.loni.usc.edu">http://adni.loni.usc.edu</uri>, accessed on 12 January 2022). There were 312 subjects in this study, including 100 for NC, 75 for sMCI, 72 for pMCI, and 65 for AD. fMRI images were collected at baseline (BL), 12 months, and 24 months in each group. Prior to the scan, the subjects passed cognitive and behavioral assessments [<xref rid="B16-ijerph-19-04508" ref-type="bibr">16</xref>]. Sample demographic information is shown in <xref rid="ijerph-19-04508-t001" ref-type="table">Table 1</xref>.</p>
+        <p>As can be seen from <xref rid="ijerph-19-04508-t001" ref-type="table">Table 1</xref>, with the aggravation of the disease, MMSE scores showed a downward trend, while CDR showed an upward trend. A statistical analysis of basic information was obtained by SPSS software [<xref rid="B17-ijerph-19-04508" ref-type="bibr">17</xref>]. Sample scanners selected from the ADNI are from Philips Medical Systems. The resting state fMRI scan sequence (EPI) has a total of 140 time points with 48 layers, a magnetic field intensity of 3.0 tesla, a flip angle of 80.0, a TE of 30.0 ms, a TR of 3000.0 ms, a 64 × 65 matrix, and 6720.0 images with a thickness of 3.31 mm. The resting-state fMRI image display of NC, AD, sMCI, and pMCI subjects is shown in <xref rid="ijerph-19-04508-f001" ref-type="fig">Figure 1</xref>.</p>
+      </sec>
+      <sec id="sec2dot2-ijerph-19-04508">
+        <title>2.2. Image Preprocessing</title>
+        <p>The process of fMRI data preprocessing includes data format conversion, the removal of unstable time points, time layer correction, head movement correction, spatial standardization, the removal of linear drift, filtering, regression covariates, and the removal of excessive head movement time points [<xref rid="B18-ijerph-19-04508" ref-type="bibr">18</xref>]. In this paper, the preprocessing process is basically the same as that of general MRI, but the difference is that the preprocessing in this paper does not need to be performed smoothly because network analysis requires high spatial accuracy, and smoothness will affect the activation of adjacent regions of interest (ROIs). The pretreatment process of fMRI data includes format conversion (DICOM format to NIFTI), the removal of the first ten unstable time points, time layer correction, head correction, spatial standardization, linear drift removal, filtering, regression covariates, and the removal of excessive head movement time points (in order to reduce the influence of head movements and artifacts, subjects with FD &gt; 0.5 over 2.5 min (50 frames) of data were excluded). The SPM8 toolbox and the DPARSFA (version 2.2) toolkit were used for standard preprocessing [<xref rid="B19-ijerph-19-04508" ref-type="bibr">19</xref>,<xref rid="B20-ijerph-19-04508" ref-type="bibr">20</xref>]. The pretreatment flow chart is shown in <xref rid="ijerph-19-04508-f002" ref-type="fig">Figure 2</xref>.</p>
+      </sec>
+      <sec id="sec2dot3-ijerph-19-04508">
+        <title>2.3. Whole-Brain Functional Link Matrix FC</title>
+        <p>The functional connectivity of the human brain is complex, and the connectivity of functional brain networks has been widely used in the study of AD. The construction of brain functional networks based on fMRI data was mainly divided into the following steps [<xref rid="B21-ijerph-19-04508" ref-type="bibr">21</xref>,<xref rid="B22-ijerph-19-04508" ref-type="bibr">22</xref>]:</p>
+        <p>(1) Nodes (brain regions) were obtained, and the whole brain was divided into 90 ROI brain regions using the AAL (AAL90) template. Once the partitioning method was selected, the node was identified.</p>
+        <p>(2) The whole-brain functional connectivity matrix was obtained using fMRI data and nodes. We averaged the voxels in each ROI brain region, obtained fMRI time series signals in each ROI brain region, and constructed the brain functional network of each subject by calculating the Pearson correlation coefficient between two ROIs. The Pearson correlation coefficients of the two time series are shown in Equation (1):<disp-formula id="FD1-ijerph-19-04508"><label>(1)</label><mml:math id="mm1" display="block" overflow="scroll"><mml:mrow><mml:mrow><mml:msub><mml:mi>ρ</mml:mi><mml:mrow><mml:mi>X</mml:mi><mml:mo>,</mml:mo><mml:mi>Y</mml:mi></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:mi>C</mml:mi><mml:mi>o</mml:mi><mml:mi>v</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mi>X</mml:mi><mml:mo>,</mml:mo><mml:mi>Y</mml:mi></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mrow><mml:msub><mml:mi>σ</mml:mi><mml:mi>X</mml:mi></mml:msub><mml:msub><mml:mi>σ</mml:mi><mml:mi>Y</mml:mi></mml:msub></mml:mrow></mml:mfrac><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:mi>E</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mi>X</mml:mi><mml:mo>−</mml:mo><mml:msub><mml:mi>μ</mml:mi><mml:mi>X</mml:mi></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mi>Y</mml:mi><mml:mo>−</mml:mo><mml:msub><mml:mi>μ</mml:mi><mml:mi>Y</mml:mi></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mrow><mml:msub><mml:mi>σ</mml:mi><mml:mi>X</mml:mi></mml:msub><mml:msub><mml:mi>σ</mml:mi><mml:mi>Y</mml:mi></mml:msub></mml:mrow></mml:mfrac></mml:mrow></mml:mrow></mml:math></disp-formula></p>
+        <p>This is the product of the covariance of the two time series divided by the standard deviation of the two time series. The results of the Pearson correlation coefficient <inline-formula><mml:math id="mm2" overflow="scroll"><mml:mrow><mml:mrow><mml:msub><mml:mi>ρ</mml:mi><mml:mrow><mml:mi>X</mml:mi><mml:mo>,</mml:mo><mml:mi>Y</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:mrow></mml:math></inline-formula> are in the range of <inline-formula><mml:math id="mm3" overflow="scroll"><mml:mrow><mml:mrow><mml:mo>−</mml:mo><mml:mn>1</mml:mn><mml:mo>≤</mml:mo><mml:msub><mml:mi>ρ</mml:mi><mml:mrow><mml:mi>X</mml:mi><mml:mo>,</mml:mo><mml:mi>Y</mml:mi></mml:mrow></mml:msub><mml:mo>≤</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:mrow></mml:math></inline-formula>. When <inline-formula><mml:math id="mm4" overflow="scroll"><mml:mrow><mml:mrow><mml:mn>0</mml:mn><mml:mo>≤</mml:mo><mml:msub><mml:mi>ρ</mml:mi><mml:mrow><mml:mi>X</mml:mi><mml:mo>,</mml:mo><mml:mi>Y</mml:mi></mml:mrow></mml:msub><mml:mo>≤</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:mrow></mml:math></inline-formula>, the two time series are positively correlated or they are negatively correlated. When it equals zero, it means that the two time series are independent of each other and have no correlation. From this, it can be concluded that the functions of two groups of brain areas in a certain period of time are synergistic or antagonistic. By calculating the average time series of each brain region and calculating the correlation coefficient in pairs, the correlation matrix of the whole brain during this period of time can be obtained, namely the functional connection matrix [<xref rid="B23-ijerph-19-04508" ref-type="bibr">23</xref>,<xref rid="B24-ijerph-19-04508" ref-type="bibr">24</xref>,<xref rid="B25-ijerph-19-04508" ref-type="bibr">25</xref>]. The functional connectivity matrix is displayed using the AAL90 template with a total of 90 brain regions, so the connectivity matrix is 90 × 90. Brain network visualization and the functional connection matrix are shown in <xref rid="ijerph-19-04508-f003" ref-type="fig">Figure 3</xref>.</p>
+      </sec>
+      <sec id="sec2dot4-ijerph-19-04508">
+        <title>2.4. The Improved Method Proposed in This Paper</title>
+        <p>At present, common brain image analysis methods to manually extract the specified features are mainly based on prior knowledge, which results in great limitations in the representation of image features. Most brain image analysis studies are focused on image data analysis at a single time point, which is prone to interference from different individuals. Longitudinal image data analysis at multiple time points in the time domain can obtain pathological changes in the pathogenesis process and achieve a more precise diagnosis of Alzheimer’s disease [<xref rid="B26-ijerph-19-04508" ref-type="bibr">26</xref>]. Aiming at the above problems, this paper proposes an automatic analysis and diagnosis model of the multi-temporal brain function network based on the deep learning method. The functional connectivity (FC) (90 × 90) between brain ROI regions was used as the original input feature of CNNs. As deep neural networks generally require a large amount of training data to obtain ideal results, in the case of limited data in this paper, it is necessary to build a GAN to perform data augmentation for samples [<xref rid="B27-ijerph-19-04508" ref-type="bibr">27</xref>]. Then, a 1D−CNN model was built to extract spatial features. Then, a three-layer LSTM model was built to extract and analyze FC features at multiple time points [<xref rid="B28-ijerph-19-04508" ref-type="bibr">28</xref>,<xref rid="B29-ijerph-19-04508" ref-type="bibr">29</xref>]. Finally, the validity of the model was verified against the ADNI data set.</p>
+        <list list-type="simple">
+          <list-item>
+            <label>(1)</label>
+            <p>GAN based data augmentation</p>
+          </list-item>
+        </list>
+        <p>The GAN model contains two networks: one is a generative network, and the other is an adversarial network. The role of the generative network is to generate new samples in the case of given samples, so that the adversarial network cannot distinguish between these new samples and given samples. Therefore, GAN is generally a model that can generate synthetic samples that can reflect the target distribution behind real data and achieve the purpose of data augmentation [<xref rid="B30-ijerph-19-04508" ref-type="bibr">30</xref>]. The principal diagram of data augmentation by GAN is shown in <xref rid="ijerph-19-04508-f004" ref-type="fig">Figure 4</xref>.</p>
+        <list list-type="simple">
+          <list-item>
+            <label>(2)</label>
+            <p>Spatial feature extraction based on CNNs</p>
+          </list-item>
+        </list>
+        <p>Convolutional neural networks (CNN) are very similar to common neural networks in that they are both made up of neurons with learnable weights and biases. Every neuron takes some input and generates some dot products, and the output is the fraction of each classification [<xref rid="B31-ijerph-19-04508" ref-type="bibr">31</xref>]. The function of the convolution layer is feature extraction. For the brain’s functional network at each time point, we built a 1D-CNN model with the same structure to extract spatial features at a single time point [<xref rid="B32-ijerph-19-04508" ref-type="bibr">32</xref>]. The model structure is shown in <xref rid="ijerph-19-04508-f005" ref-type="fig">Figure 5</xref>.</p>
+        <p>The model includes operations, such as convolution, max-pooling, and short connection structure. In this paper, the traditional CNN model with a single direction and vertical structure is improved. In the improved model, two short connection modules are added to fuse the features of the front and rear layers and enhance the utilization of the front layer [<xref rid="B33-ijerph-19-04508" ref-type="bibr">33</xref>].</p>
+        <list list-type="simple">
+          <list-item>
+            <label>(3)</label>
+            <p>RNN</p>
+          </list-item>
+        </list>
+        <p>Recurrent neural networks (RNNs) have achieved great success and are widely used in many natural language processing (NLP) applications. RNNs are mainly used to process sequence data. A simple RNN consists of an input layer, a hidden layer, and an output layer [<xref rid="B34-ijerph-19-04508" ref-type="bibr">34</xref>]. The RNN can be expanded using a timeline, as shown in <xref rid="ijerph-19-04508-f006" ref-type="fig">Figure 6</xref>.</p>
+        <p>In <xref rid="ijerph-19-04508-f006" ref-type="fig">Figure 6</xref>, there is a one-way flow of information from the input unit to the hidden unit, and another one-way flow of information from the hidden unit to the output unit. In some cases, the RNNs break the latter restriction, guiding information from the output unit back to the hiding element. These are called “back projections,” and the input to the hiding layer also includes the status of the upper hiding layer, where nodes can be self-connected or interconnected [<xref rid="B35-ijerph-19-04508" ref-type="bibr">35</xref>].</p>
+        <p>In <xref rid="ijerph-19-04508-f006" ref-type="fig">Figure 6</xref>, after the network receives the input <inline-formula><mml:math id="mm5" display="block" overflow="scroll"><mml:mrow><mml:mrow><mml:msub><mml:mi>x</mml:mi><mml:mi>t</mml:mi></mml:msub></mml:mrow></mml:mrow></mml:math></inline-formula> at time <italic toggle="yes">t</italic>, the value of the hidden layer is <inline-formula><mml:math id="mm6" display="block" overflow="scroll"><mml:mrow><mml:mrow><mml:msub><mml:mi>s</mml:mi><mml:mi>t</mml:mi></mml:msub></mml:mrow></mml:mrow></mml:math></inline-formula> and the output value is <inline-formula><mml:math id="mm7" display="block" overflow="scroll"><mml:mrow><mml:mrow><mml:msub><mml:mi>o</mml:mi><mml:mi>t</mml:mi></mml:msub></mml:mrow></mml:mrow></mml:math></inline-formula>. The key point is that the value of <inline-formula><mml:math id="mm8" display="block" overflow="scroll"><mml:mrow><mml:mrow><mml:msub><mml:mi>s</mml:mi><mml:mi>t</mml:mi></mml:msub></mml:mrow></mml:mrow></mml:math></inline-formula> not only depends on <inline-formula><mml:math id="mm9" display="block" overflow="scroll"><mml:mrow><mml:mrow><mml:msub><mml:mi>x</mml:mi><mml:mi>t</mml:mi></mml:msub></mml:mrow></mml:mrow></mml:math></inline-formula>, it depends on <inline-formula><mml:math id="mm10" display="block" overflow="scroll"><mml:mrow><mml:mrow><mml:msub><mml:mi>s</mml:mi><mml:mrow><mml:mi>t</mml:mi><mml:mo>−</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:msub></mml:mrow></mml:mrow></mml:math></inline-formula>. The calculation method of recurrent neural networks can be expressed as shown in Equations (2) and (3):<disp-formula id="FD2-ijerph-19-04508"><label>(2)</label><mml:math id="mm11" display="block" overflow="scroll"><mml:mrow><mml:mrow><mml:msub><mml:mi>o</mml:mi><mml:mi>t</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:mi>g</mml:mi><mml:mo stretchy="false">(</mml:mo><mml:mi>V</mml:mi><mml:msub><mml:mi>s</mml:mi><mml:mi>t</mml:mi></mml:msub><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:mrow></mml:math></disp-formula>
+<disp-formula id="FD3-ijerph-19-04508"><label>(3)</label><mml:math id="mm12" display="block" overflow="scroll"><mml:mrow><mml:mrow><mml:msub><mml:mi>s</mml:mi><mml:mi>t</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:mi>f</mml:mi><mml:mo stretchy="false">(</mml:mo><mml:mi>U</mml:mi><mml:msub><mml:mi>x</mml:mi><mml:mi>t</mml:mi></mml:msub><mml:mo>+</mml:mo><mml:mi>W</mml:mi><mml:msub><mml:mi>s</mml:mi><mml:mrow><mml:mi>t</mml:mi><mml:mo>−</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:msub><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:mrow></mml:math></disp-formula></p>
+        <p>It can be seen from Equations (2) and (3) that the difference between the cyclic layer and the fully connected layer is that the cyclic layer has a weight matrix W. If Equation (3) is repeatedly substituted into Equation (2), Equation (4) will be obtained:<disp-formula id="FD4-ijerph-19-04508"><label>(4)</label><mml:math id="mm13" display="block" overflow="scroll"><mml:mrow><mml:mtable columnalign="left"><mml:mtr><mml:mtd><mml:msub><mml:mi>o</mml:mi><mml:mi>t</mml:mi></mml:msub></mml:mtd><mml:mtd><mml:mo>=</mml:mo><mml:mi>g</mml:mi><mml:mo stretchy="false">(</mml:mo><mml:mi>V</mml:mi><mml:msub><mml:mi>s</mml:mi><mml:mi>t</mml:mi></mml:msub><mml:mo stretchy="false">)</mml:mo></mml:mtd></mml:mtr><mml:mtr><mml:mtd/><mml:mtd><mml:mo>=</mml:mo><mml:mi>g</mml:mi><mml:mo stretchy="false">(</mml:mo><mml:mi>V</mml:mi><mml:mi>f</mml:mi><mml:mo stretchy="false">(</mml:mo><mml:mi>U</mml:mi><mml:msub><mml:mi>x</mml:mi><mml:mi>t</mml:mi></mml:msub><mml:mo>+</mml:mo><mml:mi>W</mml:mi><mml:msub><mml:mi>s</mml:mi><mml:mrow><mml:mi>t</mml:mi><mml:mo>−</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:msub><mml:mo stretchy="false">)</mml:mo><mml:mo stretchy="false">)</mml:mo></mml:mtd></mml:mtr><mml:mtr><mml:mtd/><mml:mtd><mml:mo>=</mml:mo><mml:mi>g</mml:mi><mml:mo stretchy="false">(</mml:mo><mml:mi>V</mml:mi><mml:mi>f</mml:mi><mml:mo stretchy="false">(</mml:mo><mml:mi>U</mml:mi><mml:msub><mml:mi>x</mml:mi><mml:mi>t</mml:mi></mml:msub><mml:mo>+</mml:mo><mml:mi>W</mml:mi><mml:mo stretchy="false">(</mml:mo><mml:mi>f</mml:mi><mml:mo stretchy="false">(</mml:mo><mml:mi>U</mml:mi><mml:msub><mml:mi>x</mml:mi><mml:mrow><mml:mi>t</mml:mi><mml:mo>−</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:msub><mml:mo>+</mml:mo><mml:mi>W</mml:mi><mml:msub><mml:mi>s</mml:mi><mml:mrow><mml:mi>t</mml:mi><mml:mo>−</mml:mo><mml:mn>2</mml:mn></mml:mrow></mml:msub><mml:mo stretchy="false">)</mml:mo><mml:mo stretchy="false">)</mml:mo><mml:mo stretchy="false">)</mml:mo></mml:mtd></mml:mtr><mml:mtr><mml:mtd/><mml:mtd><mml:mo>=</mml:mo><mml:mi>g</mml:mi><mml:mo stretchy="false">(</mml:mo><mml:mi>V</mml:mi><mml:mi>f</mml:mi><mml:mo stretchy="false">(</mml:mo><mml:mi>U</mml:mi><mml:msub><mml:mi>x</mml:mi><mml:mi>t</mml:mi></mml:msub><mml:mo>+</mml:mo><mml:mi>W</mml:mi><mml:mo stretchy="false">(</mml:mo><mml:mi>f</mml:mi><mml:mo stretchy="false">(</mml:mo><mml:mi>U</mml:mi><mml:msub><mml:mi>x</mml:mi><mml:mrow><mml:mi>t</mml:mi><mml:mo>−</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:msub><mml:mo>+</mml:mo><mml:mi>W</mml:mi><mml:mo stretchy="false">(</mml:mo><mml:mi>f</mml:mi><mml:mo stretchy="false">(</mml:mo><mml:mi>U</mml:mi><mml:msub><mml:mi>x</mml:mi><mml:mrow><mml:mi>t</mml:mi><mml:mo>−</mml:mo><mml:mn>2</mml:mn></mml:mrow></mml:msub><mml:mo>+</mml:mo><mml:mi>W</mml:mi><mml:msub><mml:mi>s</mml:mi><mml:mrow><mml:mi>t</mml:mi><mml:mo>−</mml:mo><mml:mn>3</mml:mn></mml:mrow></mml:msub><mml:mo stretchy="false">)</mml:mo><mml:mo stretchy="false">)</mml:mo><mml:mo stretchy="false">)</mml:mo><mml:mo stretchy="false">)</mml:mo></mml:mtd></mml:mtr><mml:mtr><mml:mtd/><mml:mtd><mml:mo>=</mml:mo><mml:mi>g</mml:mi><mml:mo stretchy="false">(</mml:mo><mml:mi>V</mml:mi><mml:mi>f</mml:mi><mml:mo stretchy="false">(</mml:mo><mml:mi>U</mml:mi><mml:msub><mml:mi>x</mml:mi><mml:mi>t</mml:mi></mml:msub><mml:mo>+</mml:mo><mml:mi>W</mml:mi><mml:mo stretchy="false">(</mml:mo><mml:mi>f</mml:mi><mml:mo stretchy="false">(</mml:mo><mml:mi>U</mml:mi><mml:msub><mml:mi>x</mml:mi><mml:mrow><mml:mi>t</mml:mi><mml:mo>−</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:msub><mml:mo>+</mml:mo><mml:mi>W</mml:mi><mml:mo stretchy="false">(</mml:mo><mml:mi>f</mml:mi><mml:mo stretchy="false">(</mml:mo><mml:mi>U</mml:mi><mml:msub><mml:mi>x</mml:mi><mml:mrow><mml:mi>t</mml:mi><mml:mo>−</mml:mo><mml:mn>2</mml:mn></mml:mrow></mml:msub><mml:mo>+</mml:mo><mml:mi>W</mml:mi><mml:mo stretchy="false">(</mml:mo><mml:mi>f</mml:mi><mml:mo stretchy="false">(</mml:mo><mml:mi>U</mml:mi><mml:msub><mml:mi>x</mml:mi><mml:mrow><mml:mi>t</mml:mi><mml:mo>−</mml:mo><mml:mn>3</mml:mn></mml:mrow></mml:msub><mml:mo>+</mml:mo><mml:mo>…</mml:mo><mml:mo stretchy="false">)</mml:mo><mml:mo stretchy="false">)</mml:mo><mml:mo stretchy="false">)</mml:mo><mml:mo stretchy="false">)</mml:mo><mml:mo stretchy="false">)</mml:mo></mml:mtd></mml:mtr></mml:mtable></mml:mrow></mml:math></disp-formula></p>
+        <p>RNNs have problems with gradient disappearance and gradient explosion in the process of long sequence training, i.e., information loss caused by long-distance transmission.</p>
+        <list list-type="simple">
+          <list-item>
+            <label>(4)</label>
+            <p>LSTM</p>
+          </list-item>
+        </list>
+        <p>The long memory network (LSTM) successfully solved the defects of the original recurrent neural network and became the most popular RNN at present. It has been successfully applied in many fields, such as speech recognition, image description, and natural language processing. The hidden layer of the original RNN has only one state, H, which is very sensitive to short-term input. Thus, let us add another state C, to preserve the long-term state [<xref rid="B36-ijerph-19-04508" ref-type="bibr">36</xref>]. This is shown in <xref rid="ijerph-19-04508-f007" ref-type="fig">Figure 7</xref>:</p>
+        <p>The forgetting gate is shown in Equation (5):<disp-formula id="FD5-ijerph-19-04508"><label>(5)</label><mml:math id="mm14" display="block" overflow="scroll"><mml:mrow><mml:mrow><mml:msub><mml:mi>f</mml:mi><mml:mi>k</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:mi>σ</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>W</mml:mi><mml:mi>f</mml:mi></mml:msub><mml:mo>⋅</mml:mo><mml:mrow><mml:mo>[</mml:mo><mml:mrow><mml:msub><mml:mi>h</mml:mi><mml:mrow><mml:mi>k</mml:mi><mml:mo>−</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mi>x</mml:mi><mml:mi>k</mml:mi></mml:msub></mml:mrow><mml:mo>]</mml:mo></mml:mrow><mml:mo>+</mml:mo><mml:msub><mml:mi>b</mml:mi><mml:mi>k</mml:mi></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mo>,</mml:mo><mml:mi>k</mml:mi><mml:mo>=</mml:mo><mml:mi>t</mml:mi><mml:mo>,</mml:mo><mml:mi>t</mml:mi><mml:mo>+</mml:mo><mml:mn>1</mml:mn><mml:mo>,</mml:mo><mml:mi>t</mml:mi><mml:mo>+</mml:mo><mml:mn>2</mml:mn></mml:mrow></mml:mrow></mml:math></disp-formula></p>
+        <p><inline-formula><mml:math id="mm15" display="block" overflow="scroll"><mml:mrow><mml:mrow><mml:msub><mml:mi>W</mml:mi><mml:mi>f</mml:mi></mml:msub></mml:mrow></mml:mrow></mml:math></inline-formula> an be written as Equation (6):<disp-formula id="FD6-ijerph-19-04508"><label>(6)</label><mml:math id="mm16" display="block" overflow="scroll"><mml:mrow><mml:mtable columnalign="left"><mml:mtr><mml:mtd><mml:mrow><mml:mo>[</mml:mo><mml:mrow><mml:msub><mml:mi>W</mml:mi><mml:mi>f</mml:mi></mml:msub></mml:mrow><mml:mo>]</mml:mo></mml:mrow><mml:mrow><mml:mo>[</mml:mo><mml:mrow><mml:mtable><mml:mtr><mml:mtd><mml:mrow><mml:msub><mml:mi>h</mml:mi><mml:mrow><mml:mi>k</mml:mi><mml:mo>−</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:msub></mml:mrow></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mrow><mml:msub><mml:mi>x</mml:mi><mml:mi>k</mml:mi></mml:msub></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:mrow><mml:mo>]</mml:mo></mml:mrow></mml:mtd><mml:mtd><mml:mo>=</mml:mo><mml:mrow><mml:mo>[</mml:mo><mml:mrow><mml:msub><mml:mi>W</mml:mi><mml:mrow><mml:mi>f</mml:mi><mml:mi>h</mml:mi></mml:mrow></mml:msub></mml:mrow><mml:mrow><mml:msub><mml:mi>W</mml:mi><mml:mrow><mml:mi>f</mml:mi><mml:mi>x</mml:mi></mml:mrow></mml:msub></mml:mrow><mml:mo>]</mml:mo></mml:mrow><mml:mrow><mml:mo>[</mml:mo><mml:mrow><mml:mtable><mml:mtr><mml:mtd><mml:mrow><mml:msub><mml:mi>h</mml:mi><mml:mrow><mml:mi>k</mml:mi><mml:mo>−</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:msub></mml:mrow></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mrow><mml:msub><mml:mi>x</mml:mi><mml:mi>k</mml:mi></mml:msub></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:mrow><mml:mo>]</mml:mo></mml:mrow></mml:mtd></mml:mtr><mml:mtr><mml:mtd/><mml:mtd><mml:mo>=</mml:mo><mml:msub><mml:mi>W</mml:mi><mml:mrow><mml:mi>f</mml:mi><mml:mi>h</mml:mi></mml:mrow></mml:msub><mml:msub><mml:mi>h</mml:mi><mml:mrow><mml:mi>k</mml:mi><mml:mo>−</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:msub><mml:mo>+</mml:mo><mml:msub><mml:mi>W</mml:mi><mml:mrow><mml:mi>f</mml:mi><mml:mi>x</mml:mi></mml:mrow></mml:msub><mml:msub><mml:mi>x</mml:mi><mml:mi>k</mml:mi></mml:msub><mml:mo>,</mml:mo><mml:mi>k</mml:mi><mml:mo>=</mml:mo><mml:mi>t</mml:mi><mml:mo>,</mml:mo><mml:mi>t</mml:mi><mml:mo>+</mml:mo><mml:mn>1</mml:mn><mml:mo>,</mml:mo><mml:mi>t</mml:mi><mml:mo>+</mml:mo><mml:mn>2</mml:mn></mml:mtd></mml:mtr></mml:mtable></mml:mrow></mml:math></disp-formula></p>
+        <p>The input gate is shown in Equation (7):<disp-formula id="FD7-ijerph-19-04508"><label>(7)</label><mml:math id="mm17" display="block" overflow="scroll"><mml:mrow><mml:mrow><mml:msub><mml:mi>i</mml:mi><mml:mi>k</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:mi>σ</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>W</mml:mi><mml:mi>i</mml:mi></mml:msub><mml:mo>⋅</mml:mo><mml:mrow><mml:mo>[</mml:mo><mml:mrow><mml:msub><mml:mi>h</mml:mi><mml:mrow><mml:mi>k</mml:mi><mml:mo>−</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mi>x</mml:mi><mml:mi>k</mml:mi></mml:msub></mml:mrow><mml:mo>]</mml:mo></mml:mrow><mml:mo>+</mml:mo><mml:msub><mml:mi>b</mml:mi><mml:mi>i</mml:mi></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mo>,</mml:mo><mml:mi>k</mml:mi><mml:mo>=</mml:mo><mml:mi>t</mml:mi><mml:mo>,</mml:mo><mml:mi>t</mml:mi><mml:mo>+</mml:mo><mml:mn>1</mml:mn><mml:mo>,</mml:mo><mml:mi>t</mml:mi><mml:mo>+</mml:mo><mml:mn>2</mml:mn></mml:mrow></mml:mrow></mml:math></disp-formula></p>
+        <p>In the above formula, <inline-formula><mml:math id="mm18" display="block" overflow="scroll"><mml:mrow><mml:mrow><mml:msub><mml:mi>W</mml:mi><mml:mi>i</mml:mi></mml:msub></mml:mrow></mml:mrow></mml:math></inline-formula> is the weight matrix of the input gate, and <inline-formula><mml:math id="mm19" display="block" overflow="scroll"><mml:mrow><mml:mrow><mml:msub><mml:mi>b</mml:mi><mml:mi>i</mml:mi></mml:msub></mml:mrow></mml:mrow></mml:math></inline-formula> is the bias term of the input gate [<xref rid="B37-ijerph-19-04508" ref-type="bibr">37</xref>,<xref rid="B38-ijerph-19-04508" ref-type="bibr">38</xref>].</p>
+        <p>Next, the cell state <inline-formula><mml:math id="mm20" display="block" overflow="scroll"><mml:mrow><mml:mrow><mml:msub><mml:mover accent="true"><mml:mi>c</mml:mi><mml:mo>˜</mml:mo></mml:mover><mml:mi>k</mml:mi></mml:msub></mml:mrow></mml:mrow></mml:math></inline-formula> used to describe the current input is calculated based on the previous output, and the current input is shown in Equation (8):<disp-formula id="FD8-ijerph-19-04508"><label>(8)</label><mml:math id="mm21" display="block" overflow="scroll"><mml:mrow><mml:mrow><mml:msub><mml:mover accent="true"><mml:mi>c</mml:mi><mml:mo>˜</mml:mo></mml:mover><mml:mi>k</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:mi>tanh</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>W</mml:mi><mml:mi>c</mml:mi></mml:msub><mml:mo>⋅</mml:mo><mml:mrow><mml:mo>[</mml:mo><mml:mrow><mml:msub><mml:mi>h</mml:mi><mml:mrow><mml:mi>k</mml:mi><mml:mo>−</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mi>x</mml:mi><mml:mi>k</mml:mi></mml:msub></mml:mrow><mml:mo>]</mml:mo></mml:mrow><mml:mo>+</mml:mo><mml:msub><mml:mi>b</mml:mi><mml:mi>c</mml:mi></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mo>,</mml:mo><mml:mi>k</mml:mi><mml:mo>=</mml:mo><mml:mi>t</mml:mi><mml:mo>,</mml:mo><mml:mi>t</mml:mi><mml:mo>+</mml:mo><mml:mn>1</mml:mn><mml:mo>,</mml:mo><mml:mi>t</mml:mi><mml:mo>+</mml:mo><mml:mn>2</mml:mn></mml:mrow></mml:mrow></mml:math></disp-formula></p>
+        <p>This equation calculates the cell state <inline-formula><mml:math id="mm22" display="block" overflow="scroll"><mml:mrow><mml:mrow><mml:msub><mml:mi>c</mml:mi><mml:mi>t</mml:mi></mml:msub></mml:mrow></mml:mrow></mml:math></inline-formula> at the current time. It is produced by multiplying the element of the last cell state <inline-formula><mml:math id="mm23" display="block" overflow="scroll"><mml:mrow><mml:mrow><mml:msub><mml:mi>c</mml:mi><mml:mrow><mml:mi>t</mml:mi><mml:mo>−</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:msub></mml:mrow></mml:mrow></mml:math></inline-formula> by the forgetting gate <inline-formula><mml:math id="mm24" display="block" overflow="scroll"><mml:mrow><mml:mrow><mml:msub><mml:mi>f</mml:mi><mml:mi>t</mml:mi></mml:msub></mml:mrow></mml:mrow></mml:math></inline-formula>, and then multiplying the element of the current input cell state <inline-formula><mml:math id="mm25" display="block" overflow="scroll"><mml:mrow><mml:mrow><mml:msub><mml:mover accent="true"><mml:mi>c</mml:mi><mml:mo>˜</mml:mo></mml:mover><mml:mi>t</mml:mi></mml:msub></mml:mrow></mml:mrow></mml:math></inline-formula> by the input gate <inline-formula><mml:math id="mm26" display="block" overflow="scroll"><mml:mrow><mml:mrow><mml:msub><mml:mover accent="true"><mml:mi>c</mml:mi><mml:mo>˜</mml:mo></mml:mover><mml:mi>t</mml:mi></mml:msub></mml:mrow></mml:mrow></mml:math></inline-formula>, and then adding the two products shown in Equations (9) and (10):<disp-formula id="FD9-ijerph-19-04508"><label>(9)</label><mml:math id="mm27" display="block" overflow="scroll"><mml:mrow><mml:mrow><mml:msub><mml:mi>c</mml:mi><mml:mi>k</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:msub><mml:mi>f</mml:mi><mml:mi>k</mml:mi></mml:msub><mml:msub><mml:mi>c</mml:mi><mml:mrow><mml:mi>k</mml:mi><mml:mo>−</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:msub><mml:mo>+</mml:mo><mml:msub><mml:mi>i</mml:mi><mml:mi>k</mml:mi></mml:msub><mml:msub><mml:mover accent="true"><mml:mi>c</mml:mi><mml:mo>˜</mml:mo></mml:mover><mml:mi>k</mml:mi></mml:msub><mml:mo>,</mml:mo><mml:mi>k</mml:mi><mml:mo>=</mml:mo><mml:mi>t</mml:mi><mml:mo>,</mml:mo><mml:mi>t</mml:mi><mml:mo>+</mml:mo><mml:mn>1</mml:mn><mml:mo>,</mml:mo><mml:mi>t</mml:mi><mml:mo>+</mml:mo><mml:mn>2</mml:mn></mml:mrow></mml:mrow></mml:math></disp-formula>
+<disp-formula id="FD10-ijerph-19-04508"><label>(10)</label><mml:math id="mm28" display="block" overflow="scroll"><mml:mrow><mml:mrow><mml:msub><mml:mi>o</mml:mi><mml:mi>k</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:mi>σ</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>W</mml:mi><mml:mi>o</mml:mi></mml:msub><mml:mrow><mml:mo>[</mml:mo><mml:mrow><mml:msub><mml:mi>h</mml:mi><mml:mrow><mml:mi>k</mml:mi><mml:mo>−</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mi>x</mml:mi><mml:mi>k</mml:mi></mml:msub></mml:mrow><mml:mo>]</mml:mo></mml:mrow><mml:mo>+</mml:mo><mml:msub><mml:mi>b</mml:mi><mml:mi>o</mml:mi></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mo>,</mml:mo><mml:mi>k</mml:mi><mml:mo>=</mml:mo><mml:mi>t</mml:mi><mml:mo>,</mml:mo><mml:mi>t</mml:mi><mml:mo>+</mml:mo><mml:mn>1</mml:mn><mml:mo>,</mml:mo><mml:mi>t</mml:mi><mml:mo>+</mml:mo><mml:mn>2</mml:mn></mml:mrow></mml:mrow></mml:math></disp-formula></p>
+        <p>The final output of LSTM is determined by the output gate and cell state shown in Equation (11):<disp-formula id="FD11-ijerph-19-04508"><label>(11)</label><mml:math id="mm29" display="block" overflow="scroll"><mml:mrow><mml:mrow><mml:msub><mml:mi>h</mml:mi><mml:mi>k</mml:mi></mml:msub><mml:msub><mml:mrow><mml:mrow><mml:mo>=</mml:mo><mml:mi mathvariant="normal">o</mml:mi></mml:mrow></mml:mrow><mml:mi>k</mml:mi></mml:msub><mml:mi>tanh</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>c</mml:mi><mml:mi>k</mml:mi></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mo>,</mml:mo><mml:mi>k</mml:mi><mml:mo>=</mml:mo><mml:mi>t</mml:mi><mml:mo>,</mml:mo><mml:mi>t</mml:mi><mml:mo>+</mml:mo><mml:mn>1</mml:mn><mml:mo>,</mml:mo><mml:mi>t</mml:mi><mml:mo>+</mml:mo><mml:mn>2</mml:mn></mml:mrow></mml:mrow></mml:math></disp-formula></p>
+        <p><xref rid="ijerph-19-04508-f008" ref-type="fig">Figure 8</xref> shows the calculation of the final output of LSTM:</p>
+        <p>In this paper, we set up a three-layer LSTM model to analyze these sequences and extract the temporal variation characteristics of the spatial features at different time points, so as to make comprehensive use of single-time point and multi-time point information to diagnose and predict AD [<xref rid="B39-ijerph-19-04508" ref-type="bibr">39</xref>,<xref rid="B40-ijerph-19-04508" ref-type="bibr">40</xref>]. The design of a CNN combined with the three-layer LSTM framework is shown in <xref rid="ijerph-19-04508-f009" ref-type="fig">Figure 9</xref>.</p>
+        <p>The overall framework for AD diagnosis and MCI prediction is shown in <xref rid="ijerph-19-04508-f010" ref-type="fig">Figure 10</xref>.</p>
+        <p>The overall program flow chart of this model is shown in <xref rid="ijerph-19-04508-f011" ref-type="fig">Figure 11</xref>.</p>
+      </sec>
+    </sec>
+    <sec id="sec3-ijerph-19-04508">
+      <title>3. Experimental Result</title>
+      <p>After the format conversion and image preprocessing of the original fMRI data obtained from ADNI in the experiment, the CNN model and LSTM model in this algorithm were built in the Python environment with the help of the deep learning library Keras and TensorFlow. The hardware configuration of this experiment is as follows: 8-core, 16-thread, AMD R7-4800U CPU, 16 G memory, 512 G hard disk, and a 4.2 GHz acceleration frequency. We performed an experimental test of the proposed multi-time resting-state fMRI brain functional network study on the ADNI database. We divided the whole data set into five parts, selected four pieces at a time as the training set, with the remaining one as the test set, and randomly selected part of the training set as the verification set. We used the accuracy, precision, and recall rate to evaluate the effect of this classification. The accuracy, precision, and recall rate are shown as Equation (12), Equation (13), and Equation (14), respectively.
+<disp-formula id="FD12-ijerph-19-04508"><label>(12)</label><mml:math id="mm30" display="block" overflow="scroll"><mml:mrow><mml:mrow><mml:mi>A</mml:mi><mml:mi>c</mml:mi><mml:mi>c</mml:mi><mml:mi>u</mml:mi><mml:mi>r</mml:mi><mml:mi>a</mml:mi><mml:mi>c</mml:mi><mml:mi>y</mml:mi><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:mi>T</mml:mi><mml:mi>P</mml:mi><mml:mo>+</mml:mo><mml:mi>T</mml:mi><mml:mi>N</mml:mi></mml:mrow><mml:mrow><mml:mi>T</mml:mi><mml:mi>P</mml:mi><mml:mo>+</mml:mo><mml:mi>T</mml:mi><mml:mi>N</mml:mi><mml:mo>+</mml:mo><mml:mi>F</mml:mi><mml:mi>N</mml:mi><mml:mo>+</mml:mo><mml:mi>F</mml:mi><mml:mi>P</mml:mi></mml:mrow></mml:mfrac><mml:mn>100</mml:mn><mml:mo>%</mml:mo></mml:mrow></mml:mrow></mml:math></disp-formula>
+<disp-formula id="FD13-ijerph-19-04508"><label>(13)</label><mml:math id="mm31" display="block" overflow="scroll"><mml:mrow><mml:mrow><mml:mi>P</mml:mi><mml:mi>r</mml:mi><mml:mi>e</mml:mi><mml:mi>c</mml:mi><mml:mi>i</mml:mi><mml:mi>s</mml:mi><mml:mi>i</mml:mi><mml:mi>o</mml:mi><mml:mi>n</mml:mi><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:mi>T</mml:mi><mml:mi>P</mml:mi></mml:mrow><mml:mrow><mml:mi>T</mml:mi><mml:mi>P</mml:mi><mml:mo>+</mml:mo><mml:mi>F</mml:mi><mml:mi>P</mml:mi></mml:mrow></mml:mfrac><mml:mn>100</mml:mn><mml:mo>%</mml:mo></mml:mrow></mml:mrow></mml:math></disp-formula>
+<disp-formula id="FD14-ijerph-19-04508"><label>(14)</label><mml:math id="mm32" display="block" overflow="scroll"><mml:mrow><mml:mrow><mml:mi>Re</mml:mi><mml:mi>c</mml:mi><mml:mi>a</mml:mi><mml:mi>l</mml:mi><mml:mi>l</mml:mi><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:mi>T</mml:mi><mml:mi>P</mml:mi></mml:mrow><mml:mrow><mml:mi>T</mml:mi><mml:mi>P</mml:mi><mml:mo>+</mml:mo><mml:mi>F</mml:mi><mml:mi>N</mml:mi></mml:mrow></mml:mfrac><mml:mn>100</mml:mn><mml:mo>%</mml:mo></mml:mrow></mml:mrow></mml:math></disp-formula>
+where <italic toggle="yes">TP</italic> means the prediction is positive, and the reality is positive;</p>
+      <p><italic toggle="yes">TN</italic> means the prediction is negative, and the reality is negative;</p>
+      <p><italic toggle="yes">FP</italic> means the prediction is positive, and the reality is negative; and</p>
+      <p><italic toggle="yes">FN</italic> means the prediction is negative, and the reality is positive.</p>
+      <p>The loss curve is shown in <xref rid="ijerph-19-04508-f012" ref-type="fig">Figure 12</xref>, and the experimental results based on the convolutional neural network and resting state fMRI brain functional network are shown in <xref rid="ijerph-19-04508-t002" ref-type="table">Table 2</xref>. The blue line represents the loss curve of the training set, and the orange line represents the loss curve of the validation set.</p>
+      <p>In this study, the accuracy, precision, and recall of sMCI and pMCI as well as NC and AD groups at the baseline period (BL) and 12 months (12 m) and 24 months (24 m) after the baseline period were compared. As can be seen from the experimental results, there are significant differences between sMCI and pMCI as well as NC and AD samples over time. A comparison of the ROC curves of different algorithms is shown in <xref rid="ijerph-19-04508-f013" ref-type="fig">Figure 13</xref>.</p>
+    </sec>
+    <sec sec-type="conclusions" id="sec4-ijerph-19-04508">
+      <title>4. Conclusions</title>
+      <p>In this paper, we proposed a multi-time model for the diagnosis and prediction of Alzheimer’s disease based on a convolutional neural network and a resting-state fMRI of the brain functional network. The ADNI dataset was used to screen the original fMRI data, and the whole-brain resting-state fMRI of the brain functional network was built after format conversion and image preprocessing. GAN was used to amplify the data as the initial feature of CNN + LSTM, and the model was verified at multiple time points. Compared with other classical algorithms, the experimental results show that the algorithm is effective. AD vs. NC was superior to pMCI vs. sMCI at multiple time points. The diagnosis effect of Alzheimer’s disease using only the SVM model was the worst, and the classification effect of the CNN experiment using only CNN was better than that of SVM at multiple time points. The model based on CNN combined with LSTM proposed by us was superior to the CNN and SVM methods alone in temporal and spatial analyses. This indicates that the spatial and temporal analysis algorithm proposed by us is suitable for the diagnosis and prediction of Alzheimer’s disease.</p>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <title>Acknowledgments</title>
+      <p>Data used in preparation of this article were obtained from the Alzheimer’s Disease Neuroimaging Initiative (ADNI) database (adni.loni.usc.edu (accessed on 12 January 2022)). As such, the investigators within the ADNI contributed to the design and implementation of ADNI and/or provided data but did not participate in analysis or writing of this report. A complete listing of ADNI investigators can be found at: <uri xlink:href="http://adni.loni.usc.edu/wp-content/uploads/how_to_apply/ADNI_Acknowledgement_List.pdf">http://adni.loni.usc.edu/wp-content/uploads/how_to_apply/ADNI_Acknowledgement_List.pdf</uri> (accessed on 12 January 2022). Data collection and sharing for this project was funded by the Alzheimer’s Disease Neuroimaging Initiative (ADNI) (National Institutes of Health Grant U01 AG024904) and DOD ADNI (Department of Defense award number W81XWH-12-2-0012). ADNI is funded by the National Institute on Aging, the National Institute of Biomedical Imaging and Bioengineering, and through generous contributions from the following: AbbVie, Alzheimer’s Association; Alzheimer’s Drug Discovery Foundation; Araclon Biotech; BioClinica, Inc.; Biogen; Bristol-Myers Squibb Company; CereSpir, Inc.; Cogstate; Eisai Inc.; Elan Pharmaceuticals, Inc.; Eli Lilly and Company; EuroImmun; F. Hoffmann-La Roche Ltd. and its affiliated company Genentech, Inc.; Fujirebio; GE Healthcare; IXICO Ltd.; Janssen Alzheimer Immunotherapy Research &amp; Development, LLC.; Johnson &amp; Johnson Pharmaceutical Research &amp; Development LLC.; Lumosity; Lundbeck; Merck &amp; Co., Inc.; Meso Scale Diagnostics, LLC.; NeuroRx Research; Neurotrack Technologies; Novartis Pharmaceuticals Corporation; Pfizer Inc.; Piramal Imaging; Servier; Takeda Pharmaceutical Company; and Transition Therapeutics. The Canadian Institutes of Health Research is providing funds to support ADNI clinical sites in Canada. Private sector contributions are facilitated by the Foundation for the National Institutes of Health (<uri xlink:href="www.fnih.org">www.fnih.org</uri> (accessed on 12 January 2022)). The grantee organization is the Northern California Institute for Research and Education, and the study is coordinated by the Alzheimer’s Therapeutic Research Institute at the University of Southern California. ADNI data are disseminated by the Laboratory for Neuro Imaging at the University of Southern California.</p>
+    </ack>
+    <fn-group>
+      <fn>
+        <p><bold>Publisher’s Note:</bold> MDPI stays neutral with regard to jurisdictional claims in published maps and institutional affiliations.</p>
+      </fn>
+    </fn-group>
+    <notes>
+      <title>Author Contributions</title>
+      <p>Conceptualization, H.S., A.W. and S.H.; methodology, H.S., A.W. and S.H.; software, H.S.; data curation, H.S.; writing-original draft preparation, H.S.; writing-review and editing, H.S., A.W. and S.H.; supervision, A.W. All authors have read and agreed to the published version of the manuscript.</p>
+    </notes>
+    <notes>
+      <title>Funding</title>
+      <p>This research received no external funding.</p>
+    </notes>
+    <notes>
+      <title>Institutional Review Board Statement</title>
+      <p>The study was conducted in accordance with the guidelines of the Declaration of Helsinki. The study procedures were approved by the institutional review. boards of research centers in the ADNI.</p>
+    </notes>
+    <notes>
+      <title>Informed Consent Statement</title>
+      <p>Informed consent was obtained from all subjects involved in the study.</p>
+    </notes>
+    <notes notes-type="data-availability">
+      <title>Data Availability Statement</title>
+      <p>Data used in the preparation of this article were obtained from the Alzheimer’s Disease Neuroimaging Initiative (ADNI) database (adni.loni.usc.edu (accessed on 12 January 2022)).</p>
+    </notes>
+    <notes notes-type="COI-statement">
+      <title>Conflicts of Interest</title>
+      <p>The authors declare no conflict of interest.</p>
+    </notes>
+    <ref-list>
+      <title>References</title>
+      <ref id="B1-ijerph-19-04508">
+        <label>1.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Ouyang</surname><given-names>X.</given-names></name>
+<name><surname>Chen</surname><given-names>K.</given-names></name>
+<name><surname>Yao</surname><given-names>L.</given-names></name>
+<name><surname>Wu</surname><given-names>X.</given-names></name>
+<name><surname>Zhang</surname><given-names>J.</given-names></name>
+<name><surname>Li</surname><given-names>K.</given-names></name>
+<name><surname>Jin</surname><given-names>Z.</given-names></name>
+<name><surname>Guo</surname><given-names>X.</given-names></name>
+</person-group>
+          <article-title>Independent Component Analysis-Based Identification of Covariance Patterns of Microstructural White Matter Damage in Alzheimer’s Disease</article-title>
+          <source>PLoS ONE</source>
+          <year>2015</year>
+          <volume>10</volume>
+          <elocation-id>e0119714</elocation-id>
+          <pub-id pub-id-type="doi">10.1371/journal.pone.0119714</pub-id>
+          <pub-id pub-id-type="pmid">25775003</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B2-ijerph-19-04508">
+        <label>2.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Anderson</surname><given-names>N.D.</given-names></name>
+</person-group>
+          <article-title>State of the science on mild cognitive impairment (MCI)</article-title>
+          <source>CNS Spectr.</source>
+          <year>2019</year>
+          <volume>24</volume>
+          <fpage>78</fpage>
+          <lpage>87</lpage>
+          <pub-id pub-id-type="doi">10.1017/S1092852918001347</pub-id>
+          <pub-id pub-id-type="pmid">30651152</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B3-ijerph-19-04508">
+        <label>3.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Cheng</surname><given-names>B.</given-names></name>
+<name><surname>Zhu</surname><given-names>B.</given-names></name>
+<name><surname>Pu</surname><given-names>S.</given-names></name>
+</person-group>
+          <article-title>Multi-auxiliary domain transfer learning for diagnosis of MCI conversion</article-title>
+          <source>Neurol. Sci.</source>
+          <year>2022</year>
+          <volume>43</volume>
+          <fpage>1721</fpage>
+          <lpage>1739</lpage>
+          <pub-id pub-id-type="doi">10.1007/s10072-021-05568-6</pub-id>
+          <pub-id pub-id-type="pmid">34510292</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B4-ijerph-19-04508">
+        <label>4.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Song</surname><given-names>X.</given-names></name>
+<name><surname>Mao</surname><given-names>M.</given-names></name>
+<name><surname>Qian</surname><given-names>X.</given-names></name>
+</person-group>
+          <article-title>Auto-Metric Graph Neural Network Based on a Meta-Learning Strategy for the Diagnosis of Alzheimer’s Disease</article-title>
+          <source>IEEE J. Biomed. Health Inform.</source>
+          <year>2021</year>
+          <volume>25</volume>
+          <fpage>3141</fpage>
+          <lpage>3152</lpage>
+          <pub-id pub-id-type="doi">10.1109/JBHI.2021.3053568</pub-id>
+          <pub-id pub-id-type="pmid">33493122</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B5-ijerph-19-04508">
+        <label>5.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Li</surname><given-names>H.</given-names></name>
+<name><surname>Habes</surname><given-names>M.</given-names></name>
+<name><surname>Wolk</surname><given-names>D.A.</given-names></name>
+<name><surname>Fan</surname><given-names>Y.</given-names></name>
+</person-group>
+          <article-title>Alzheimer’s Disease Neuroimaging Initiative and the Australian Imaging Biomarkers and Lifestyle Study of Aging. A deep learning model for early prediction of Alzheimer’s disease dementia based on hippocampal magnetic resonance imaging data</article-title>
+          <source>Alzheimer’s Dement.</source>
+          <year>2019</year>
+          <volume>15</volume>
+          <fpage>1059</fpage>
+          <lpage>1070</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.jalz.2019.02.007</pub-id>
+          <pub-id pub-id-type="pmid">31201098</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B6-ijerph-19-04508">
+        <label>6.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Ibrahim</surname><given-names>B.</given-names></name>
+<name><surname>Suppiah</surname><given-names>S.</given-names></name>
+<name><surname>Ibrahim</surname><given-names>N.</given-names></name>
+<name><surname>Mohamad</surname><given-names>M.</given-names></name>
+<name><surname>Hassan</surname><given-names>H.A.</given-names></name>
+<name><surname>Nasser</surname><given-names>N.S.</given-names></name>
+<name><surname>Saripan</surname><given-names>M.I.</given-names></name>
+</person-group>
+          <article-title>Diagnostic power of resting-state fMRI for detection of network connectivity in Alzheimer’s disease and mild cognitive impairment: A systematic review</article-title>
+          <source>Hum. Brain Mapp.</source>
+          <year>2021</year>
+          <volume>42</volume>
+          <fpage>2941</fpage>
+          <lpage>2968</lpage>
+          <pub-id pub-id-type="doi">10.1002/hbm.25369</pub-id>
+          <pub-id pub-id-type="pmid">33942449</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B7-ijerph-19-04508">
+        <label>7.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Wang</surname><given-names>J.</given-names></name>
+<name><surname>Wu</surname><given-names>X.</given-names></name>
+<name><surname>Li</surname><given-names>M.</given-names></name>
+</person-group>
+          <article-title>Microcanonical and Canonical Ensembles for fMRI Brain Networks in Alzheimer’s Disease</article-title>
+          <source>Entropy</source>
+          <year>2021</year>
+          <volume>23</volume>
+          <elocation-id>216</elocation-id>
+          <pub-id pub-id-type="doi">10.3390/e23020216</pub-id>
+          <pub-id pub-id-type="pmid">33579012</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B8-ijerph-19-04508">
+        <label>8.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Luo</surname><given-names>Y.</given-names></name>
+<name><surname>Sun</surname><given-names>T.</given-names></name>
+<name><surname>Ma</surname><given-names>C.</given-names></name>
+<name><surname>Zhang</surname><given-names>X.</given-names></name>
+<name><surname>Ji</surname><given-names>Y.</given-names></name>
+<name><surname>Fu</surname><given-names>X.</given-names></name>
+<name><surname>Ni</surname><given-names>H.</given-names></name>
+</person-group>
+          <article-title>Alterations of Brain Networks in Alzheimer’s Disease and Mild Cognitive Impairment: A Resting State fMRI Study Based on a Population-specific Brain Template</article-title>
+          <source>Neuroscience</source>
+          <year>2021</year>
+          <volume>452</volume>
+          <fpage>192</fpage>
+          <lpage>207</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroscience.2020.10.023</pub-id>
+          <pub-id pub-id-type="pmid">33197505</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B9-ijerph-19-04508">
+        <label>9.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Zhang</surname><given-names>X.</given-names></name>
+<name><surname>Hu</surname><given-names>B.</given-names></name>
+<name><surname>Ma</surname><given-names>X.</given-names></name>
+<name><surname>Xu</surname><given-names>L.</given-names></name>
+</person-group>
+          <article-title>Resting-State Whole-Brain Functional Connectivity Networks for MCI Classification Using L2-Regularized Logistic Regression</article-title>
+          <source>IEEE Trans. Nanobiosci.</source>
+          <year>2015</year>
+          <volume>14</volume>
+          <fpage>237</fpage>
+          <lpage>247</lpage>
+          <pub-id pub-id-type="doi">10.1109/TNB.2015.2403274</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B10-ijerph-19-04508">
+        <label>10.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Taie</surname><given-names>S.A.</given-names></name>
+<name><surname>Ghonaim</surname><given-names>W.</given-names></name>
+</person-group>
+          <article-title>A new model for early diagnosis of Alzheimer’s disease based on BAT-SVM classifier</article-title>
+          <source>Bull. Electr. Eng. Inform.</source>
+          <year>2021</year>
+          <volume>10</volume>
+          <fpage>759</fpage>
+          <lpage>766</lpage>
+          <pub-id pub-id-type="doi">10.11591/eei.v10i2.2714</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B11-ijerph-19-04508">
+        <label>11.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Xu</surname><given-names>M.</given-names></name>
+<name><surname>Sanz</surname><given-names>D.L.</given-names></name>
+<name><surname>Garces</surname><given-names>P.</given-names></name>
+<name><surname>Maestu</surname><given-names>F.</given-names></name>
+<name><surname>Li</surname><given-names>Q.</given-names></name>
+<name><surname>Pantazis</surname><given-names>D.</given-names></name>
+</person-group>
+          <article-title>A Graph Gaussian Embedding Method for Predicting Alzheimer’s Disease Progression with MEG Brain Networks</article-title>
+          <source>IEEE Trans. Biomed. Eng.</source>
+          <year>2021</year>
+          <volume>68</volume>
+          <fpage>1579</fpage>
+          <lpage>1588</lpage>
+          <pub-id pub-id-type="doi">10.1109/TBME.2021.3049199</pub-id>
+          <pub-id pub-id-type="pmid">33400645</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B12-ijerph-19-04508">
+        <label>12.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Dennis</surname><given-names>E.L.</given-names></name>
+<name><surname>Thompson</surname><given-names>P.M.</given-names></name>
+</person-group>
+          <article-title>Functional Brain Connectivity Using fMRI in Aging and Alzheimer’s Disease</article-title>
+          <source>Neuropsychol. Rev.</source>
+          <year>2014</year>
+          <volume>24</volume>
+          <fpage>49</fpage>
+          <lpage>62</lpage>
+          <pub-id pub-id-type="doi">10.1007/s11065-014-9249-6</pub-id>
+          <pub-id pub-id-type="pmid">24562737</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B13-ijerph-19-04508">
+        <label>13.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Borchert</surname><given-names>R.</given-names></name>
+<name><surname>Azevedo</surname><given-names>T.</given-names></name>
+<name><surname>Badhwar</surname><given-names>A.</given-names></name>
+<name><surname>Bernal</surname><given-names>J.</given-names></name>
+<name><surname>Betts</surname><given-names>M.</given-names></name>
+<name><surname>Bruffaerts</surname><given-names>R.</given-names></name>
+<name><surname>Burkhart</surname><given-names>M.C.</given-names></name>
+<name><surname>Dewachter</surname><given-names>I.</given-names></name>
+<name><surname>Gellersen</surname><given-names>H.M.</given-names></name>
+<name><surname>Low</surname><given-names>A.</given-names></name>
+<etal/>
+</person-group>
+          <article-title>Artificial intelligence for diagnosis and prognosis in neuroimaging for dementia; a systematic review</article-title>
+          <source>medRxiv</source>
+          <year>2021</year>
+          <pub-id pub-id-type="doi">10.1101/2021.12.12.21267677</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B14-ijerph-19-04508">
+        <label>14.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Lim</surname><given-names>Y.Y.</given-names></name>
+<name><surname>Kong</surname><given-names>J.</given-names></name>
+<name><surname>Maruff</surname><given-names>P.</given-names></name>
+<name><surname>Jaeger</surname><given-names>J.</given-names></name>
+<name><surname>Huang</surname><given-names>E.</given-names></name>
+<name><surname>Ratti</surname><given-names>E.</given-names></name>
+</person-group>
+          <article-title>Longitudinal Cognitive Decline in Patients With Mild Cognitive Impairment or Dementia Due to Alzheimer’s Disease</article-title>
+          <source>J. Prev. Alzheimer’s Dis.</source>
+          <year>2022</year>
+          <volume>9</volume>
+          <fpage>178</fpage>
+          <lpage>183</lpage>
+          <pub-id pub-id-type="doi">10.14283/jpad.2021.64</pub-id>
+          <pub-id pub-id-type="pmid">35098989</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B15-ijerph-19-04508">
+        <label>15.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Tufail</surname><given-names>A.B.</given-names></name>
+<name><surname>Ma</surname><given-names>Y.K.</given-names></name>
+<name><surname>Zhang</surname><given-names>Q.N.</given-names></name>
+</person-group>
+          <article-title>Binary Classification of Alzheimer’s Disease Using sMRI Imaging Modality and Deep Learning</article-title>
+          <source>J. Digit. Imaging</source>
+          <year>2020</year>
+          <volume>33</volume>
+          <fpage>1073</fpage>
+          <lpage>1090</lpage>
+          <pub-id pub-id-type="doi">10.1007/s10278-019-00265-5</pub-id>
+          <pub-id pub-id-type="pmid">32728983</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B16-ijerph-19-04508">
+        <label>16.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Lin</surname><given-names>Y.</given-names></name>
+<name><surname>Huang</surname><given-names>K.</given-names></name>
+<name><surname>Xu</surname><given-names>H.</given-names></name>
+<name><surname>Qiao</surname><given-names>Z.</given-names></name>
+<name><surname>Cai</surname><given-names>S.</given-names></name>
+<name><surname>Wang</surname><given-names>Y.</given-names></name>
+<name><surname>Huang</surname><given-names>L.</given-names></name>
+</person-group>
+          <article-title>Predicting the progression of mild cognitive impairment to Alzheimer’s disease by longitudinal magnetic resonance imaging-based dictionary learning</article-title>
+          <source>Clin. Neurophysiol.</source>
+          <year>2020</year>
+          <volume>131</volume>
+          <fpage>2429</fpage>
+          <lpage>2439</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.clinph.2020.07.016</pub-id>
+          <pub-id pub-id-type="pmid">32829290</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B17-ijerph-19-04508">
+        <label>17.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Wang</surname><given-names>Z.</given-names></name>
+<name><surname>Xin</surname><given-names>J.</given-names></name>
+<name><surname>Wang</surname><given-names>Z.</given-names></name>
+<name><surname>Yao</surname><given-names>Y.</given-names></name>
+<name><surname>Zhao</surname><given-names>Y.</given-names></name>
+<name><surname>Qian</surname><given-names>W.</given-names></name>
+</person-group>
+          <article-title>Brain Functional Network Modeling and Analysis Based on FMRI: A systematic review</article-title>
+          <source>Cogn. Neurodyn.</source>
+          <year>2021</year>
+          <volume>15</volume>
+          <fpage>389</fpage>
+          <lpage>403</lpage>
+          <pub-id pub-id-type="doi">10.1007/s11571-020-09630-5</pub-id>
+          <pub-id pub-id-type="pmid">34040667</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B18-ijerph-19-04508">
+        <label>18.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Weng</surname><given-names>J.C.</given-names></name>
+<name><surname>Huang</surname><given-names>S.Y.</given-names></name>
+<name><surname>Lee</surname><given-names>M.S.</given-names></name>
+<name><surname>Ho</surname><given-names>M.C.</given-names></name>
+</person-group>
+          <article-title>Association between functional brain alterations and neuropsychological scales in male chronic smokers using resting-state fMRI</article-title>
+          <source>Psychopharmacology</source>
+          <year>2021</year>
+          <volume>238</volume>
+          <fpage>1387</fpage>
+          <lpage>1399</lpage>
+          <pub-id pub-id-type="doi">10.1007/s00213-021-05819-6</pub-id>
+          <pub-id pub-id-type="pmid">33772331</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B19-ijerph-19-04508">
+        <label>19.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Huang</surname><given-names>H.</given-names></name>
+<name><surname>Ding</surname><given-names>Z.</given-names></name>
+<name><surname>Mao</surname><given-names>D.</given-names></name>
+<name><surname>Yuan</surname><given-names>J.</given-names></name>
+<name><surname>Zhu</surname><given-names>F.</given-names></name>
+<name><surname>Chen</surname><given-names>S.</given-names></name>
+<name><surname>Xu</surname><given-names>Y.</given-names></name>
+<name><surname>Lou</surname><given-names>L.</given-names></name>
+<name><surname>Feng</surname><given-names>X.</given-names></name>
+<name><surname>Qi</surname><given-names>L.</given-names></name>
+<etal/>
+</person-group>
+          <article-title>PreSurgMapp: A MATLAB Toolbox for Presurgical Mapping of Eloquent Functional Areas Based on Task-Related and Resting-State Functional MRI</article-title>
+          <source>Neuroinformatics.</source>
+          <year>2016</year>
+          <volume>14</volume>
+          <fpage>421</fpage>
+          <lpage>438</lpage>
+          <pub-id pub-id-type="doi">10.1007/s12021-016-9304-y</pub-id>
+          <pub-id pub-id-type="pmid">27221107</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B20-ijerph-19-04508">
+        <label>20.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Zhang</surname><given-names>L.</given-names></name>
+</person-group>
+          <article-title>Bayesian nonparametric models for functional magnetic resonance imaging (fMRI) data</article-title>
+          <source>Proc. SPIE</source>
+          <year>2015</year>
+          <volume>7963</volume>
+          <fpage>843</fpage>
+          <lpage>845</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B21-ijerph-19-04508">
+        <label>21.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Waal</surname><given-names>H.D.</given-names></name>
+<name><surname>Stam</surname><given-names>C.</given-names></name>
+<name><surname>Lansbergen</surname><given-names>M.</given-names></name>
+</person-group>
+          <article-title>Functional brain network organization in Alzheimer’s disease</article-title>
+          <source>Alzheimer’s Dement.</source>
+          <year>2013</year>
+          <volume>9</volume>
+          <fpage>670</fpage>
+          <pub-id pub-id-type="doi">10.1016/j.jalz.2013.05.1383</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B22-ijerph-19-04508">
+        <label>22.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Iqbal</surname><given-names>M.S.</given-names></name>
+<name><surname>Ahmad</surname><given-names>I.</given-names></name>
+<name><surname>Bin</surname><given-names>L.</given-names></name>
+<name><surname>Khan</surname><given-names>S.</given-names></name>
+<name><surname>Rodrigues</surname><given-names>J.J.P.C.</given-names></name>
+</person-group>
+          <article-title>Deep learning recognition of diseased and normal cell representation</article-title>
+          <source>Trans. Emerg. Telecommun. Technol.</source>
+          <year>2020</year>
+          <volume>32</volume>
+          <fpage>e4017</fpage>
+          <pub-id pub-id-type="doi">10.1002/ett.4017</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B23-ijerph-19-04508">
+        <label>23.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Xia</surname><given-names>M.</given-names></name>
+<name><surname>Wang</surname><given-names>J.</given-names></name>
+<name><surname>He</surname><given-names>Y.</given-names></name>
+</person-group>
+          <article-title>BrainNet Viewer: A Network Visualization Tool for Human Brain Connectomics</article-title>
+          <source>PLoS ONE</source>
+          <year>2013</year>
+          <volume>8</volume>
+          <elocation-id>e68910</elocation-id>
+          <pub-id pub-id-type="pmid">23861951</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B24-ijerph-19-04508">
+        <label>24.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Wang</surname><given-names>J.</given-names></name>
+<name><surname>Wang</surname><given-names>X.</given-names></name>
+<name><surname>Xia</surname><given-names>M.</given-names></name>
+<name><surname>Liao</surname><given-names>X.</given-names></name>
+<name><surname>Evans</surname><given-names>A.</given-names></name>
+<name><surname>He</surname><given-names>Y.</given-names></name>
+</person-group>
+          <article-title>GRETNA: A graph theoretical network analysis toolbox for imaging connectomics</article-title>
+          <source>Front. Hum. Neurosci.</source>
+          <year>2015</year>
+          <volume>9</volume>
+          <fpage>386</fpage>
+          <pub-id pub-id-type="pmid">26175682</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B25-ijerph-19-04508">
+        <label>25.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Schumacher</surname><given-names>J.</given-names></name>
+<name><surname>Thomas</surname><given-names>A.J.</given-names></name>
+<name><surname>Peraza</surname><given-names>L.R.</given-names></name>
+<name><surname>Firbank</surname><given-names>M.</given-names></name>
+<name><surname>O’Brien</surname><given-names>J.T.</given-names></name>
+<name><surname>Taylor</surname><given-names>J.P.</given-names></name>
+</person-group>
+          <article-title>Functional connectivity of the nucleus basalis of Meynert in Lewy body dementia and Alzheimer’s disease</article-title>
+          <source>Int. Psychogeriatr.</source>
+          <year>2021</year>
+          <volume>33</volume>
+          <fpage>89</fpage>
+          <lpage>94</lpage>
+          <pub-id pub-id-type="doi">10.1017/S1041610220003944</pub-id>
+          <pub-id pub-id-type="pmid">33413710</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B26-ijerph-19-04508">
+        <label>26.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Iqbal</surname><given-names>M.S.</given-names></name>
+<name><surname>Ahmad</surname><given-names>I.</given-names></name>
+<name><surname>Khan</surname><given-names>T.</given-names></name>
+<name><surname>Khan</surname><given-names>S.</given-names></name>
+<name><surname>Ahmad</surname><given-names>M.</given-names></name>
+<name><surname>Wang</surname><given-names>L.</given-names></name>
+</person-group>
+          <article-title>Recent Advances of Deep Learning in Biology</article-title>
+          <source>Deep Learn. for Unmanned Systems</source>
+          <year>2021</year>
+          <volume>984</volume>
+          <fpage>709</fpage>
+          <lpage>732</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B27-ijerph-19-04508">
+        <label>27.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Tian</surname><given-names>H.</given-names></name>
+<name><surname>Deng</surname><given-names>S.</given-names></name>
+<name><surname>Wang</surname><given-names>C.</given-names></name>
+</person-group>
+          <article-title>A novel method for prediction of paraffin deposit in sucker rod pumping system based on CNN indicator diagram feature deep learning</article-title>
+          <source>J. Pet. Sci. Eng.</source>
+          <year>2021</year>
+          <volume>206</volume>
+          <fpage>108986</fpage>
+          <pub-id pub-id-type="doi">10.1016/j.petrol.2021.108986</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B28-ijerph-19-04508">
+        <label>28.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Wang</surname><given-names>K.</given-names></name>
+<name><surname>Chen</surname><given-names>J.</given-names></name>
+<name><surname>Song</surname><given-names>Z.</given-names></name>
+</person-group>
+          <article-title>Deep Neural Network-Embedded Stochastic Nonlinear State-Space Models and Their Applications to Process Monitoring</article-title>
+          <source>IEEE Trans. Neural Netw. Learn. Syst.</source>
+          <year>2021</year>
+          <volume>99</volume>
+          <fpage>1</fpage>
+          <lpage>13</lpage>
+          <pub-id pub-id-type="doi">10.1109/TNNLS.2021.3086323</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B29-ijerph-19-04508">
+        <label>29.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Won</surname><given-names>J.</given-names></name>
+<name><surname>Callow</surname><given-names>D.D.</given-names></name>
+<name><surname>Pena</surname><given-names>G.S.</given-names></name>
+<name><surname>Jordan</surname><given-names>L.S.</given-names></name>
+<name><surname>Arnold-Nedimala</surname><given-names>N.A.</given-names></name>
+<name><surname>Nielson</surname><given-names>K.A.</given-names></name>
+<name><surname>Smith</surname><given-names>J.C.</given-names></name>
+</person-group>
+          <article-title>Hippocampal Functional Connectivity and Memory Performance After Exercise Intervention in Older Adults with Mild Cognitive Impairment</article-title>
+          <source>J. Alzheimer’s Dis.</source>
+          <year>2021</year>
+          <volume>82</volume>
+          <fpage>1015</fpage>
+          <lpage>1031</lpage>
+          <pub-id pub-id-type="doi">10.3233/JAD-210051</pub-id>
+          <pub-id pub-id-type="pmid">34151792</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B30-ijerph-19-04508">
+        <label>30.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Lyu</surname><given-names>Q.</given-names></name>
+<name><surname>Xia</surname><given-names>D.</given-names></name>
+<name><surname>Liu</surname><given-names>Y.</given-names></name>
+<name><surname>Yang</surname><given-names>X.</given-names></name>
+<name><surname>Li</surname><given-names>R.</given-names></name>
+</person-group>
+          <article-title>Pyramidal convolution attention generative adversarial network with data augmentation for image denoising</article-title>
+          <source>Soft Comput.</source>
+          <year>2021</year>
+          <volume>25</volume>
+          <fpage>9273</fpage>
+          <lpage>9284</lpage>
+          <pub-id pub-id-type="doi">10.1007/s00500-021-05870-7</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B31-ijerph-19-04508">
+        <label>31.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Kattenborn</surname><given-names>T.</given-names></name>
+<name><surname>Leitloff</surname><given-names>J.</given-names></name>
+<name><surname>Schiefer</surname><given-names>F.</given-names></name>
+<name><surname>Hinz</surname><given-names>S.</given-names></name>
+</person-group>
+          <article-title>Review on Convolutional Neural Networks (CNN) in vegetation remote sensing</article-title>
+          <source>ISPRS</source>
+          <year>2021</year>
+          <volume>173</volume>
+          <fpage>24</fpage>
+          <lpage>49</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.isprsjprs.2020.12.010</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B32-ijerph-19-04508">
+        <label>32.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Iqbal</surname><given-names>M.S.</given-names></name>
+<name><surname>Luo</surname><given-names>B.</given-names></name>
+<name><surname>Mehmood</surname><given-names>R.</given-names></name>
+<name><surname>Alrige</surname><given-names>M.A.</given-names></name>
+<name><surname>Alharbey</surname><given-names>R.</given-names></name>
+</person-group>
+          <article-title>Mitochondrial organelle movement classification (fission and fusion) via convolutional neural network approach</article-title>
+          <source>IEEE Access</source>
+          <year>2019</year>
+          <volume>7</volume>
+          <fpage>86570</fpage>
+          <lpage>86577</lpage>
+          <pub-id pub-id-type="doi">10.1109/ACCESS.2019.2925041</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B33-ijerph-19-04508">
+        <label>33.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Iqbal</surname><given-names>M.S.</given-names></name>
+<name><surname>El-Ashram</surname><given-names>S.</given-names></name>
+<name><surname>Hussain</surname><given-names>S.</given-names></name>
+<name><surname>Khan</surname><given-names>T.</given-names></name>
+<name><surname>Huang</surname><given-names>S.</given-names></name>
+<name><surname>Mehmood</surname><given-names>R.</given-names></name>
+<name><surname>Luo</surname><given-names>B.</given-names></name>
+</person-group>
+          <article-title>Efficient cell classification of mitochondrial images by using deep learning</article-title>
+          <source>J. Opt.</source>
+          <year>2019</year>
+          <volume>48</volume>
+          <fpage>113</fpage>
+          <lpage>122</lpage>
+          <pub-id pub-id-type="doi">10.1007/s12596-018-0508-4</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B34-ijerph-19-04508">
+        <label>34.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Bai</surname><given-names>Q.</given-names></name>
+<name><surname>Zhou</surname><given-names>J.</given-names></name>
+<name><surname>He</surname><given-names>L.</given-names></name>
+</person-group>
+          <article-title>PG-RNN: Using Position-gated Recurrent Neural Networks for Aspect-based Sentiment Classification</article-title>
+          <source>J Supercomput.</source>
+          <year>2022</year>
+          <volume>78</volume>
+          <fpage>4073</fpage>
+          <lpage>4094</lpage>
+          <pub-id pub-id-type="doi">10.1007/s11227-021-04019-5</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B35-ijerph-19-04508">
+        <label>35.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Rafi</surname><given-names>S.H.</given-names></name>
+<name><surname>Masood</surname><given-names>N.A.</given-names></name>
+<name><surname>Deeba</surname><given-names>S.R.</given-names></name>
+</person-group>
+          <article-title>A Short-Term Load Forecasting Method Using Integrated CNN and LSTM Network</article-title>
+          <source>IEEE Access</source>
+          <year>2021</year>
+          <volume>9</volume>
+          <fpage>32436</fpage>
+          <lpage>32448</lpage>
+          <pub-id pub-id-type="doi">10.1109/ACCESS.2021.3060654</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B36-ijerph-19-04508">
+        <label>36.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Shao</surname><given-names>X.</given-names></name>
+<name><surname>Kim</surname><given-names>C.S.</given-names></name>
+</person-group>
+          <article-title>Multi-Step Short-Term Power Consumption Forecasting Using Multi-Channel LSTM With Time Location Considering Customer Behavior</article-title>
+          <source>IEEE Access</source>
+          <year>2020</year>
+          <volume>8</volume>
+          <fpage>125263</fpage>
+          <lpage>125273</lpage>
+          <pub-id pub-id-type="doi">10.1109/ACCESS.2020.3007163</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B37-ijerph-19-04508">
+        <label>37.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Livieris</surname><given-names>I.E.</given-names></name>
+<name><surname>Pintelas</surname><given-names>E.</given-names></name>
+<name><surname>Pintelas</surname><given-names>P.</given-names></name>
+</person-group>
+          <article-title>A CNN–LSTM model for gold price time-series forecasting</article-title>
+          <source>Neural Comput. Appl.</source>
+          <year>2020</year>
+          <volume>32</volume>
+          <fpage>17351</fpage>
+          <lpage>17360</lpage>
+          <pub-id pub-id-type="doi">10.1007/s00521-020-04867-x</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B38-ijerph-19-04508">
+        <label>38.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Lei</surname><given-names>B.</given-names></name>
+<name><surname>Yu</surname><given-names>S.</given-names></name>
+<name><surname>Zhao</surname><given-names>X.</given-names></name>
+<name><surname>Frangi</surname><given-names>A.F.</given-names></name>
+<name><surname>Tan</surname><given-names>E.-L.</given-names></name>
+<name><surname>ElAzab</surname><given-names>A.</given-names></name>
+<name><surname>Wang</surname><given-names>T.</given-names></name>
+<name><surname>Wang</surname><given-names>S.</given-names></name>
+</person-group>
+          <article-title>Diagnosis of early Alzheimer’s disease based on dynamic high order networks</article-title>
+          <source>Brain Imaging Behav.</source>
+          <year>2021</year>
+          <volume>15</volume>
+          <fpage>276</fpage>
+          <lpage>287</lpage>
+          <pub-id pub-id-type="doi">10.1007/s11682-019-00255-9</pub-id>
+          <pub-id pub-id-type="pmid">32789620</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B39-ijerph-19-04508">
+        <label>39.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Cassady</surname><given-names>K.E.</given-names></name>
+<name><surname>Adams</surname><given-names>J.N.</given-names></name>
+<name><surname>Chen</surname><given-names>X.</given-names></name>
+<name><surname>Maass</surname><given-names>A.</given-names></name>
+<name><surname>Harrison</surname><given-names>T.M.</given-names></name>
+<name><surname>Landau</surname><given-names>S.</given-names></name>
+<name><surname>Baker</surname><given-names>S.</given-names></name>
+<name><surname>Jagust</surname><given-names>W.</given-names></name>
+</person-group>
+          <article-title>Alzheimer’s Pathology Is Associated with Dedifferentiation of Intrinsic Functional Memory Networks in Aging</article-title>
+          <source>Cereb Cortex.</source>
+          <year>2021</year>
+          <volume>31</volume>
+          <fpage>4781</fpage>
+          <lpage>4793</lpage>
+          <pub-id pub-id-type="doi">10.1093/cercor/bhab122</pub-id>
+          <pub-id pub-id-type="pmid">34037210</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B40-ijerph-19-04508">
+        <label>40.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Varone</surname><given-names>G.</given-names></name>
+<name><surname>Boulila</surname><given-names>W.</given-names></name>
+<name><surname>Giudice</surname><given-names>M.L.</given-names></name>
+<name><surname>Benjdira</surname><given-names>B.</given-names></name>
+<name><surname>Mammone</surname><given-names>N.</given-names></name>
+<name><surname>Ieracitano</surname><given-names>C.</given-names></name>
+<name><surname>Dashtipour</surname><given-names>K.</given-names></name>
+<name><surname>Neri</surname><given-names>S.</given-names></name>
+<name><surname>Gasparini</surname><given-names>S.</given-names></name>
+<name><surname>Morabito</surname><given-names>F.C.</given-names></name>
+<etal/>
+</person-group>
+          <article-title>A Machine Learning Approach Involving Functional Connectivity Features to Classify Rest-EEG Psychogenic Non-Epileptic Seizures from Healthy Controls</article-title>
+          <source>Sensors</source>
+          <year>2021</year>
+          <volume>22</volume>
+          <elocation-id>129</elocation-id>
+          <pub-id pub-id-type="doi">10.3390/s22010129</pub-id>
+          <pub-id pub-id-type="pmid">35009675</pub-id>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+  <floats-group>
+    <fig position="float" id="ijerph-19-04508-f001">
+      <label>Figure 1</label>
+      <caption>
+        <p>Resting-state fMRI image display of NC, AD, sMCI, and pMCI subjects. (<bold>a</bold>) Resting-state fMRI image display of a NC subject; (<bold>b</bold>) resting-state fMRI image display of an AD subject; (<bold>c</bold>) resting-state fMRI image display of a sMCI subject; and (<bold>d</bold>) resting-state fMRI image display of a pMCI subject.</p>
+      </caption>
+      <graphic xlink:href="ijerph-19-04508-g001a" position="float"/>
+      <graphic xlink:href="ijerph-19-04508-g001b" position="float"/>
+    </fig>
+    <fig position="float" id="ijerph-19-04508-f002">
+      <label>Figure 2</label>
+      <caption>
+        <p>Pretreatment flow chart.</p>
+      </caption>
+      <graphic xlink:href="ijerph-19-04508-g002" position="float"/>
+    </fig>
+    <fig position="float" id="ijerph-19-04508-f003">
+      <label>Figure 3</label>
+      <caption>
+        <p>Brain network visualization and functional connection matrix. (<bold>a</bold>) Brain network visualization and the functional connection matrix of N; (<bold>b</bold>) brain network visualization and the functional connection matrix of AD; (<bold>c</bold>) Brain network visualization and the functional connection matrix of sMCI; and (<bold>d</bold>) Brain network visualization and the functional connection matrix of pMCI.</p>
+      </caption>
+      <graphic xlink:href="ijerph-19-04508-g003" position="float"/>
+    </fig>
+    <fig position="float" id="ijerph-19-04508-f004">
+      <label>Figure 4</label>
+      <caption>
+        <p>The principal diagram of data augmentation by GAN.</p>
+      </caption>
+      <graphic xlink:href="ijerph-19-04508-g004" position="float"/>
+    </fig>
+    <fig position="float" id="ijerph-19-04508-f005">
+      <label>Figure 5</label>
+      <caption>
+        <p>The 1D-CNN model structure.</p>
+      </caption>
+      <graphic xlink:href="ijerph-19-04508-g005" position="float"/>
+    </fig>
+    <fig position="float" id="ijerph-19-04508-f006">
+      <label>Figure 6</label>
+      <caption>
+        <p>Diagram of the expansion of a recurrent neural network.</p>
+      </caption>
+      <graphic xlink:href="ijerph-19-04508-g006" position="float"/>
+    </fig>
+    <fig position="float" id="ijerph-19-04508-f007">
+      <label>Figure 7</label>
+      <caption>
+        <p>LSTM is expanded in time dimensions.</p>
+      </caption>
+      <graphic xlink:href="ijerph-19-04508-g007" position="float"/>
+    </fig>
+    <fig position="float" id="ijerph-19-04508-f008">
+      <label>Figure 8</label>
+      <caption>
+        <p>Final calculation diagram of LSTM.</p>
+      </caption>
+      <graphic xlink:href="ijerph-19-04508-g008" position="float"/>
+    </fig>
+    <fig position="float" id="ijerph-19-04508-f009">
+      <label>Figure 9</label>
+      <caption>
+        <p>The design of a CNN combined with a three-layer LSTM framework.</p>
+      </caption>
+      <graphic xlink:href="ijerph-19-04508-g009" position="float"/>
+    </fig>
+    <fig position="float" id="ijerph-19-04508-f010">
+      <label>Figure 10</label>
+      <caption>
+        <p>The overall framework for AD diagnosis and MCI prediction.</p>
+      </caption>
+      <graphic xlink:href="ijerph-19-04508-g010" position="float"/>
+    </fig>
+    <fig position="float" id="ijerph-19-04508-f011">
+      <label>Figure 11</label>
+      <caption>
+        <p>The overall program flow chart of this model.</p>
+      </caption>
+      <graphic xlink:href="ijerph-19-04508-g011" position="float"/>
+    </fig>
+    <fig position="float" id="ijerph-19-04508-f012">
+      <label>Figure 12</label>
+      <caption>
+        <p>The loss curve.</p>
+      </caption>
+      <graphic xlink:href="ijerph-19-04508-g012" position="float"/>
+    </fig>
+    <fig position="float" id="ijerph-19-04508-f013">
+      <label>Figure 13</label>
+      <caption>
+        <p>Comparison of the ROC curves of different algorithms; (<bold>a</bold>) comparison of the ROC curves of different algorithms for NC vs. AD at BL; (<bold>b</bold>) comparison of the ROC curves of different algorithms for sMCI vs. pMCI at BL; (<bold>c</bold>) comparison of the ROC curves of different algorithms for NC vs. AD at 12 m; (<bold>d</bold>) comparison of the ROC curves of different algorithms for sMCI vs. pMCI at 12 m; (<bold>e</bold>) comparison of the ROC curves of different algorithms for NC vs. AD at 24 m; and (<bold>f</bold>) comparison of the ROC curves of different algorithms for sMCI vs. pMCI at 24 m.</p>
+      </caption>
+      <graphic xlink:href="ijerph-19-04508-g013" position="float"/>
+    </fig>
+    <table-wrap position="float" id="ijerph-19-04508-t001">
+      <object-id pub-id-type="pii">ijerph-19-04508-t001_Table 1</object-id>
+      <label>Table 1</label>
+      <caption>
+        <p>Sample demographic information.</p>
+      </caption>
+      <table frame="hsides" rules="groups">
+        <thead>
+          <tr>
+            <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">Classified </th>
+            <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">Samples</th>
+            <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">Sex (Male/Female)</th>
+            <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">Mean Age</th>
+            <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">MMSE</th>
+            <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">CDR</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">NC-bl</td>
+            <td rowspan="3" align="center" valign="middle" style="border-bottom:solid thin" colspan="1">100</td>
+            <td rowspan="3" align="center" valign="middle" style="border-bottom:solid thin" colspan="1">50/50</td>
+            <td rowspan="3" align="center" valign="middle" style="border-bottom:solid thin" colspan="1">70.80</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">29.56</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.02</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">NC-12 m</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">29.30</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.05</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">NC-24 m</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">29.62</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.08</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">sMCI-bl</td>
+            <td rowspan="3" align="center" valign="middle" style="border-bottom:solid thin" colspan="1">75</td>
+            <td rowspan="3" align="center" valign="middle" style="border-bottom:solid thin" colspan="1">37/38</td>
+            <td rowspan="3" align="center" valign="middle" style="border-bottom:solid thin" colspan="1">72.56</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">27.56</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.50</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">sMCI-12 m</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">26.96</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.52</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">sMCI-24 m</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">25.55</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.62</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">pMCI-bl</td>
+            <td rowspan="3" align="center" valign="middle" style="border-bottom:solid thin" colspan="1">72</td>
+            <td rowspan="3" align="center" valign="middle" style="border-bottom:solid thin" colspan="1">32/40</td>
+            <td rowspan="3" align="center" valign="middle" style="border-bottom:solid thin" colspan="1">75.60</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">26.52</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.85</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">pMCI-12 m</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">24.26</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">1.22</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">pMCI-24 m</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">22.98</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">2.36</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">AD-bl</td>
+            <td rowspan="3" align="center" valign="middle" style="border-bottom:solid thin" colspan="1">65</td>
+            <td rowspan="3" align="center" valign="middle" style="border-bottom:solid thin" colspan="1">30/35</td>
+            <td rowspan="3" align="center" valign="middle" style="border-bottom:solid thin" colspan="1">78.20</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">23.35</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">3.26</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">AD-12 m</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">21.26</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">3.51</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">AD-24 m</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">18.75</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">3.95</td>
+          </tr>
+        </tbody>
+      </table>
+    </table-wrap>
+    <table-wrap position="float" id="ijerph-19-04508-t002">
+      <object-id pub-id-type="pii">ijerph-19-04508-t002_Table 2</object-id>
+      <label>Table 2</label>
+      <caption>
+        <p>Based on the experimental results of longitudinal features.</p>
+      </caption>
+      <table frame="hsides" rules="groups">
+        <thead>
+          <tr>
+            <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">BL</th>
+            <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">Methods</th>
+            <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">Time</th>
+            <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">Accuracy (%)</th>
+            <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">Precision (%)</th>
+            <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">Recall (%)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="9" align="center" valign="middle" colspan="1">NC<break/>VS.<break/>AD</td>
+            <td rowspan="3" align="center" valign="middle" colspan="1">SVM</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">BL</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">86.1</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">83.9</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">80.0</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">12 m</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">87.3</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">85.5</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">81.5</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">24 m</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">88.5</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">84.4</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">83.1</td>
+          </tr>
+          <tr>
+            <td rowspan="3" align="center" valign="middle" colspan="1">CNN</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">BL</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">88.5</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">85.9</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">84.6</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">12 m</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">89.7</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">87.5</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">86.2</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">24 m</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">91.0</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">89.1</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">87.7</td>
+          </tr>
+          <tr>
+            <td rowspan="3" align="center" valign="middle" colspan="1">CNN + LSTM</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">BL</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">90.3</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">88.9</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">86.2</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">12 m</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">91.0</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">87.9</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">89.2</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">24 m</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">93.3</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">91.0</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">92.3</td>
+          </tr>
+          <tr>
+            <td rowspan="9" align="center" valign="middle" style="border-bottom:solid thin" colspan="1">sMCI VS. pMCI</td>
+            <td rowspan="3" align="center" valign="middle" colspan="1">SVM</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">BL</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">68.0</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">66.7</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">69.4</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">12 m</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">69.4</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">68.0</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">70.8</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">24 m</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">70.1</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">68.4</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">72.2</td>
+          </tr>
+          <tr>
+            <td rowspan="3" align="center" valign="middle" colspan="1">CNN</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">BL</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">71.4</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">69.7</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">73.6</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">12 m</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">72.1</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">70.1</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">75.0</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">24 m</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">73.5</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">71.4</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">76.4</td>
+          </tr>
+          <tr>
+            <td rowspan="3" align="center" valign="middle" style="border-bottom:solid thin" colspan="1">CNN + LSTM</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">BL</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">74.1</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">72.4</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">76.4</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">12 m</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">74.8</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">72.7</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">77.8</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">24 m</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">75.5</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">73.1</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">79.2</td>
+          </tr>
+        </tbody>
+      </table>
+    </table-wrap>
+  </floats-group>
+</article>

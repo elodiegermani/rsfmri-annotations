@@ -1,0 +1,1678 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">Front Psychiatry</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Front Psychiatry</journal-id>
+      <journal-id journal-id-type="publisher-id">Front. Psychiatry</journal-id>
+      <journal-title-group>
+        <journal-title>Frontiers in Psychiatry</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1664-0640</issn>
+      <publisher>
+        <publisher-name>Frontiers Media S.A.</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">31616322</article-id>
+      <article-id pub-id-type="pmc">6763745</article-id>
+      <article-id pub-id-type="doi">10.3389/fpsyt.2019.00620</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Psychiatry</subject>
+          <subj-group>
+            <subject>Original Research</subject>
+          </subj-group>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Evaluation of Altered Functional Connections in Male Children With Autism Spectrum Disorders on Multiple-Site Data Optimized With Machine Learning</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Spera</surname>
+            <given-names>Giovanna</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+<sup>1</sup>
+</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Retico</surname>
+            <given-names>Alessandra</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+<sup>1</sup>
+</xref>
+          <xref ref-type="author-notes" rid="fn001">
+<sup>*</sup>
+</xref>
+          <uri xlink:type="simple" xlink:href="https://loop.frontiersin.org/people/288532"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Bosco</surname>
+            <given-names>Paolo</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+<sup>2</sup>
+</xref>
+          <uri xlink:type="simple" xlink:href="https://loop.frontiersin.org/people/731877"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Ferrari</surname>
+            <given-names>Elisa</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+<sup>1</sup>
+</xref>
+          <xref ref-type="aff" rid="aff3">
+<sup>3</sup>
+</xref>
+          <uri xlink:type="simple" xlink:href="https://loop.frontiersin.org/people/732525"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Palumbo</surname>
+            <given-names>Letizia</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+<sup>1</sup>
+</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Oliva</surname>
+            <given-names>Piernicola</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff4">
+<sup>4</sup>
+</xref>
+          <xref ref-type="aff" rid="aff5">
+<sup>5</sup>
+</xref>
+          <uri xlink:type="simple" xlink:href="https://loop.frontiersin.org/people/797127/overview"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Muratori</surname>
+            <given-names>Filippo</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+<sup>2</sup>
+</xref>
+          <xref ref-type="aff" rid="aff6">
+<sup>6</sup>
+</xref>
+          <uri xlink:type="simple" xlink:href="https://loop.frontiersin.org/people/342066"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Calderoni</surname>
+            <given-names>Sara</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+<sup>2</sup>
+</xref>
+          <xref ref-type="aff" rid="aff6">
+<sup>6</sup>
+</xref>
+          <uri xlink:type="simple" xlink:href="https://loop.frontiersin.org/people/222656"/>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1">
+<sup>1</sup><institution>National Institute for Nuclear Physics (INFN), Pisa Division</institution>, <addr-line>Pisa</addr-line>, <country>Italy</country></aff>
+      <aff id="aff2">
+<sup>2</sup><institution>IRCCS Stella Maris Foundation</institution>, <addr-line>Pisa</addr-line>, <country>Italy</country></aff>
+      <aff id="aff3">
+<sup>3</sup><institution>Scuola Normale Superiore, Faculty of Sciences</institution>, <addr-line>Pisa</addr-line>, <country>Italy</country></aff>
+      <aff id="aff4">
+<sup>4</sup><institution>Department of Chemistry, and Pharmacy, University of Sassari</institution>, <addr-line>Sassari</addr-line>, <country>Italy</country></aff>
+      <aff id="aff5">
+<sup>5</sup><institution>National Institute for Nuclear Physics (INFN), Cagliari Division</institution>, <addr-line>Cagliari</addr-line>, <country>Italy</country></aff>
+      <aff id="aff6">
+<sup>6</sup><institution>Department of Clinical and Experimental Medicine, University of Pisa</institution>, <addr-line>Pisa</addr-line>, <country>Italy</country></aff>
+      <author-notes>
+        <fn fn-type="edited-by">
+          <p>Edited by: Yuri Bozzi, University of Trento, Italy</p>
+        </fn>
+        <fn fn-type="edited-by">
+          <p>Reviewed by: Alessandro Gozzi, Istituto Italiano di Tecnologia, Italy; Joshua H. Balsters, University of London, United Kingdom</p>
+        </fn>
+        <corresp id="fn001">*Correspondence: Alessandra Retico, <email xlink:href="mailto:alessandra.retico@pi.infn.it" xlink:type="simple">alessandra.retico@pi.infn.it</email>
+</corresp>
+        <fn fn-type="other" id="fn002">
+          <p>This article was submitted to Child and Adolescent Psychiatry, a section of the journal Frontiers in Psychiatry</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="epub">
+        <day>20</day>
+        <month>9</month>
+        <year>2019</year>
+      </pub-date>
+      <pub-date pub-type="collection">
+        <year>2019</year>
+      </pub-date>
+      <volume>10</volume>
+      <elocation-id>620</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>08</day>
+          <month>3</month>
+          <year>2019</year>
+        </date>
+        <date date-type="accepted">
+          <day>01</day>
+          <month>8</month>
+          <year>2019</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Copyright © 2019 Spera, Retico, Bosco, Ferrari, Palumbo, Oliva, Muratori and Calderoni</copyright-statement>
+        <copyright-year>2019</copyright-year>
+        <copyright-holder>Spera, Retico, Bosco, Ferrari, Palumbo, Oliva, Muratori and Calderoni</copyright-holder>
+        <license xlink:href="http://creativecommons.org/licenses/by/4.0/">
+          <license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY). The use, distribution or reproduction in other forums is permitted, provided the original author(s) and the copyright owner(s) are credited and that the original publication in this journal is cited, in accordance with accepted academic practice. No use, distribution or reproduction is permitted which does not comply with these terms.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>No univocal and reliable brain-based biomarkers have been detected to date in Autism Spectrum Disorders (ASD). Neuroimaging studies have consistently revealed alterations in brain structure and function of individuals with ASD; however, it remains difficult to ascertain the extent and localization of affected brain networks. In this context, the application of Machine Learning (ML) classification methods to neuroimaging data has the potential to contribute to a better distinction between subjects with ASD and typical development controls (TD). This study is focused on the analysis of resting-state fMRI data of individuals with ASD and matched TD, available within the ABIDE collection. To reduce the multiple sources of heterogeneity that impact on understanding the neural underpinnings of autistic condition, we selected a subgroup of 190 subjects (102 with ASD and 88 TD) according to the following criteria: male children (age range: 6.5–13 years); rs-fMRI data acquired with open eyes; data from the University sites that provided the largest number of scans (KKI, NYU, UCLA, UM). Connectivity values were evaluated as the linear correlation between pairs of time series of brain areas; then, a Linear kernel Support Vector Machine (L-SVM) classification, with an inter-site cross-validation scheme, was carried out. A permutation test was conducted to identify over-connectivity and under-connectivity alterations in the ASD group. The mean L-SVM classification performance, in terms of the area under the ROC curve (AUC), was 0.75 ± 0.05. The highest performance was obtained using data from KKI, NYU and UCLA sites in training and data from UM as testing set (AUC = 0.83). Specifically, stronger functional connectivity (FC) in ASD with respect to TD involve (p &lt; 0.001) the angular gyrus with the precuneus in the right (R) hemisphere, and the R frontal operculum cortex with the pars opercularis of the left (L) inferior frontal gyrus. Weaker connections in ASD group with respect to TD are the intra-hemispheric R temporal fusiform cortex with the R hippocampus, and the L supramarginal gyrus with L planum polare. The results indicate that both under- and over-FC occurred in a selected cohort of ASD children relative to TD controls, and that these functional alterations are spread in different brain networks.</p>
+      </abstract>
+      <kwd-group>
+        <kwd>autism spectrum disorders</kwd>
+        <kwd>children</kwd>
+        <kwd>resting-state fMRI</kwd>
+        <kwd>functional connectivity</kwd>
+        <kwd>machine learning</kwd>
+        <kwd>ABIDE</kwd>
+      </kwd-group>
+      <counts>
+        <fig-count count="4"/>
+        <table-count count="7"/>
+        <equation-count count="1"/>
+        <ref-count count="73"/>
+        <page-count count="14"/>
+        <word-count count="7510"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec sec-type="intro" id="s1">
+      <title>Introduction</title>
+      <p>According to the <italic>Diagnostic and Statistical Manual of Mental Disorders</italic>, fifth edition (DSM-5) (<xref rid="B1" ref-type="bibr">1</xref>) autism spectrum disorders (ASD) are a heterogeneous set of neurodevelopmental disorders characterized by deficits in social communication and social interaction and the presence of restricted, repetitive behaviors. Updated data on the prevalence of ASD in the United States (Centers for Disease Control and Prevention—CDC) (<xref rid="B2" ref-type="bibr">2</xref>) identified 1 in 59 children (1 in 37 boys and 1 in 151 girls) as having ASD. The exact etiopathogenesis of idiopathic ASD is not yet fully established: however, recent evidences point to an interaction between genetic liability and environmental factors in producing early alteration of brain development (<xref rid="B3" ref-type="bibr">3</xref>). In this framework, some recent studies have used pattern classification techniques to analyze structural and functional neuroimaging data, in order to highlight brain signatures able to distinguish ASD subjects from controls (<xref rid="B4" ref-type="bibr">4</xref>).</p>
+      <p>Among neuroimaging techniques, resting-state functional magnetic resonance imaging (rs-fMRI) allows to collect brain functional connectivity (FC) data from individuals not engaged in any specific task (<xref rid="B5" ref-type="bibr">5</xref>), and thus it is particularly suited to extract information on the functional brain organization of young or non-cooperative or low-functioning ASD subjects (<xref rid="B6" ref-type="bibr">6</xref>). In particular, recent rs-fMRI investigations have provided crucial evidence on the disruption of functional networks in individuals with ASD (<xref rid="B7" ref-type="bibr">7</xref>–<xref rid="B9" ref-type="bibr">9</xref>). However, rs-fMRI findings of subjects with ASD suggested conflicting patterns of FC, with the presence of over FC, under FC and a combination of both (<xref rid="B10" ref-type="bibr">10</xref>). Most studies focused on adolescents and adults, where under FC in subjects with ASD has been predominantly observed, and usually found to be related to social impairment (<xref rid="B11" ref-type="bibr">11</xref>,). The under-FC pattern involves several brain areas, including the salience network, the default mode network (DMN), and language-related regions (<xref rid="B11" ref-type="bibr">11</xref>, <xref rid="B13" ref-type="bibr">13</xref>, <xref rid="B14" ref-type="bibr">14</xref>). Conversely, studies carried out on young children have demonstrated that there is an over-FC pattern, detected at whole-brain level and in subsystems (<xref rid="B15" ref-type="bibr">15</xref>), in particular in the default mode, salience, frontotemporal, motor and visual networks (<xref rid="B16" ref-type="bibr">16</xref>).</p>
+      <p>The inconsistent results obtained on adults, adolescents and children suggest that the alteration of FC could be partly ascribed to age. Since ASD has an early developmental origin, it is necessary to focus on childhood to be sure that no age-related compensatory mechanisms have already happened (<xref rid="B15" ref-type="bibr">15</xref>). Due to the possible age dependence of FC alterations in ASD, it is important to select a specific age range for the cohort of subjects involved in research studies (<xref rid="B17" ref-type="bibr">17</xref>). Furthermore, it has been observed that sex impact on both structural (<xref rid="B18" ref-type="bibr">18</xref>–<xref rid="B20" ref-type="bibr">20</xref>) and functional (<xref rid="B21" ref-type="bibr">21</xref>) brain organization in subjects with ASD. Another factor to consider is eye status during scan, which may introduce FC alterations, in particular at local level (<xref rid="B22" ref-type="bibr">22</xref>).</p>
+      <p>Several investigations analyzed the FC with machine learning methods (<xref rid="B17" ref-type="bibr">17</xref>–<xref rid="B23" ref-type="bibr">23</xref>). These tools are able to learn relevant differences between a group of subjects affected by a specific condition and a control group of subjects with typical development from a dataset (training set) and make predictions on unknown observations (testing set). As a general rule, the greater the number of subjects used in the training phase, the higher the reliability and generalization ability of the classifier. Large data samples are difficult to acquire in a single site, thus they are often obtained by collecting data from multiple sites. In this case, a classifier is trained on a more representative cohort of subjects, therefore, in principle, it can make more general predictions. However, additional sources of variability may affect multicenter analysis, e.g. slightly different acquisition protocols or participant instructions during image acquisition (<xref rid="B23" ref-type="bibr">23</xref>), and it has been observed that classification accuracy for multi-site analysis is lower than single-site results (<xref rid="B24" ref-type="bibr">24</xref>). Moreover, the site-dependent information encoded in multi-site data may lead a classifier to learn to distinguish categories of subjects according to confounding parameters instead of relying on differences between subjects related to the diagnostic classes.</p>
+      <p>We explored in this study the FC of subjects with ASD, exploiting the potential of machine-learning approaches to highlight subtle differences between the FC profile of subjects with ASD and controls.</p>
+    </sec>
+    <sec sec-type="materials|methods" id="s2">
+      <title>Materials and Methods</title>
+      <sec id="s2_1">
+        <title>Sample Composition</title>
+        <p>We selected a sample of subjects with ASD and controls for our analysis within the publicly-available data sample collected within the Autism Brain Imaging Data Exchange (ABIDE) initiative<xref ref-type="fn" rid="fn1">
+<sup>1</sup>
+</xref> (<xref rid="B25" ref-type="bibr">25</xref>). The main selection of subjects was carried out on participants’ age: specifically, we focused our analysis on children in the age range of 6.5 to 13 years to reduce the impact of developmental changes during puberty. Several sites contributing to the ABIDE I collection recruited participants below 13 years of age, except Caltech, CMU and SBL (<xref ref-type="fig" rid="f1">
+<bold>Figure 1A</bold>
+</xref>).</p>
+        <fig id="f1" position="float">
+          <label>Figure 1</label>
+          <caption>
+            <p>Number of children per ASD and TD groups (yellow = ASD, blue = TD) before <bold>(A)</bold> and after adopting selection criteria regarding sex <bold>(B)</bold>, eye status during scan <bold>(C)</bold> and sample size at each site <bold>(D)</bold>.</p>
+          </caption>
+          <graphic xlink:href="fpsyt-10-00620-g001"/>
+        </fig>
+        <p>In addition to age, participants were chosen according to sex, eye status during the scan, and the available number of subjects with the selected characteristics at each site. Only male children were selected since the male sample size is larger than female across sites (<xref ref-type="fig" rid="f1">
+<bold>Figure 1B</bold>
+</xref>), in line with the epidemiology of ASD (<xref rid="B26" ref-type="bibr">26</xref>). Scans with open eyes were chosen because they are more numerous and with a low risk of sleep during acquisition time, that can represent an additional source of variability that is difficult either to monitor or prevent (<xref rid="B22" ref-type="bibr">22</xref>) (<xref ref-type="fig" rid="f1">
+<bold>Figure 1C</bold>
+</xref>).</p>
+        <p>After the previous selections, only the four most populated remaining sites were analyzed (n = 190; ASD = 102 and TD = 88) (<xref ref-type="fig" rid="f1">
+<bold>Figure 1D</bold>
+</xref>): Kennedy Krieger Institute (KKI), NYU Langone Medical Center (NYU), University of California, Los Angeles (UCLA), University of Michigan (UM). Furthermore, the groups of subjects from KKI (ASD = 18, TD = 24), NYU (ASD = 33, TD = 23), UCLA (ASD = 23, TD = 21), UM (ASD = 28, TD = 20) were age-matched.</p>
+        <p>More details about the impact of selection criteria on the classification performance are reported in Supplementary Materials.</p>
+        <p>The mean and standard deviation values of age, full scale intelligence quotient (FIQ), ADOS Gotham total and ADOS Gotham severity scores (<xref rid="B27" ref-type="bibr">27</xref>) are reported for each site for ASD and TD groups of subjects in <xref rid="T1" ref-type="table">
+<bold>Table 1</bold>
+</xref>. The distributions of clinical and demographic variables are reported in <xref ref-type="fig" rid="f2">
+<bold>Figure 2</bold>
+</xref>. The selected site parameters, in terms of vendor, scan duration (<xref rid="B28" ref-type="bibr">28</xref>) and diagnostic category are reported in <xref rid="T2" ref-type="table">
+<bold>Table 2</bold>
+</xref>.</p>
+        <table-wrap id="T1" position="float">
+          <label>Table 1</label>
+          <caption>
+            <p>Dataset composition and sample characteristics in KKI, NYU, UCLA and UM sites.</p>
+          </caption>
+          <table frame="hsides" rules="groups">
+            <thead>
+              <tr>
+                <th valign="top" rowspan="1" colspan="1">Sites</th>
+                <th valign="top" colspan="2" rowspan="1">Subject group, mean ± std [range]</th>
+                <th valign="top" colspan="2" rowspan="1">Statistical test</th>
+              </tr>
+              <tr>
+                <th valign="top" rowspan="1" colspan="1"/>
+                <th valign="top" rowspan="1" colspan="1">ASD</th>
+                <th valign="top" rowspan="1" colspan="1">TD</th>
+                <th valign="top" rowspan="1" colspan="1">Statistic</th>
+                <th valign="top" rowspan="1" colspan="1">p-value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td valign="top" rowspan="1" colspan="1"/>
+                <td valign="top" colspan="2" rowspan="1">
+<bold>Age (Years)</bold>
+</td>
+                <td valign="top" colspan="2" rowspan="1">
+<bold>t-Test (t)</bold>
+</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="1" colspan="1">KKI</td>
+                <td valign="top" rowspan="1" colspan="1">10.1 ± 1.4 [8.2–12.5]</td>
+                <td valign="top" rowspan="1" colspan="1">10.3 ± 1.3 [8.4–12.8]</td>
+                <td valign="top" rowspan="1" colspan="1">−0.51</td>
+                <td valign="top" rowspan="1" colspan="1">0.62</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="1" colspan="1">NYU</td>
+                <td valign="top" rowspan="1" colspan="1">10 ± 1.4 [7.1–13]</td>
+                <td valign="top" rowspan="1" colspan="1">10.2 ± 1.7 [6.5–12.7]</td>
+                <td valign="top" rowspan="1" colspan="1">−0.52</td>
+                <td valign="top" rowspan="1" colspan="1">0.61</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="1" colspan="1">UCLA</td>
+                <td valign="top" rowspan="1" colspan="1">11 ± 1.1 [8.5–13]</td>
+                <td valign="top" rowspan="1" colspan="1">11.5 ± 1 [9.2–12.9]</td>
+                <td valign="top" rowspan="1" colspan="1">−1.37</td>
+                <td valign="top" rowspan="1" colspan="1">0.18</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="1" colspan="1">UM</td>
+                <td valign="top" rowspan="1" colspan="1">11.2 ± 1.3 [8.5–12.9]</td>
+                <td valign="top" rowspan="1" colspan="1">10.9 ± 1.2 [8.2–12.8]</td>
+                <td valign="top" rowspan="1" colspan="1">0.92</td>
+                <td valign="top" rowspan="1" colspan="1">0.36</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="1" colspan="1"/>
+                <td valign="top" colspan="2" rowspan="1">
+<bold>FIQ</bold>
+</td>
+                <td valign="top" colspan="2" rowspan="1">
+<bold>Mann-Whitney Test (z)</bold>
+</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="1" colspan="1">KKI</td>
+                <td valign="top" rowspan="1" colspan="1">95 ± 17 [69–131]</td>
+                <td valign="top" rowspan="1" colspan="1">112 ± 10 [98–125]</td>
+                <td valign="top" rowspan="1" colspan="1">−3.17</td>
+                <td valign="top" rowspan="1" colspan="1">&lt;0.001*</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="1" colspan="1">NYU</td>
+                <td valign="top" rowspan="1" colspan="1">108 ± 16 [76–142]</td>
+                <td valign="top" rowspan="1" colspan="1">117 ± 11 [98–142]</td>
+                <td valign="top" rowspan="1" colspan="1">−2.58</td>
+                <td valign="top" rowspan="1" colspan="1">0.01*</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="1" colspan="1">UCLA</td>
+                <td valign="top" rowspan="1" colspan="1">100 ± 16 [73–132]</td>
+                <td valign="top" rowspan="1" colspan="1">111 ± 11 [90–128]</td>
+                <td valign="top" rowspan="1" colspan="1">−2.4</td>
+                <td valign="top" rowspan="1" colspan="1">0.02*</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="1" colspan="1">UM</td>
+                <td valign="top" rowspan="1" colspan="1">101 ± 20<sup>+</sup> [73–132]</td>
+                <td valign="top" rowspan="1" colspan="1">105 ± 9 [85–127]</td>
+                <td valign="top" rowspan="1" colspan="1">−1.49</td>
+                <td valign="top" rowspan="1" colspan="1">0.14</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="1" colspan="1"/>
+                <td valign="top" rowspan="1" colspan="1">
+<bold>ADOS Gotham total</bold>
+</td>
+                <td valign="top" rowspan="1" colspan="1"/>
+                <td valign="top" rowspan="1" colspan="1"/>
+                <td valign="top" rowspan="1" colspan="1"/>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="1" colspan="1">KKI</td>
+                <td valign="top" rowspan="1" colspan="1">15 ± 4 [6–21]</td>
+                <td valign="top" rowspan="1" colspan="1"/>
+                <td valign="top" rowspan="1" colspan="1"/>
+                <td valign="top" rowspan="1" colspan="1"/>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="1" colspan="1">NYU</td>
+                <td valign="top" rowspan="1" colspan="1">12± 5 [5–26]</td>
+                <td valign="top" rowspan="1" colspan="1"/>
+                <td valign="top" rowspan="1" colspan="1"/>
+                <td valign="top" rowspan="1" colspan="1"/>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="1" colspan="1">UCLA</td>
+                <td valign="top" rowspan="1" colspan="1">12 ± 4<sup>+</sup> [5–19]</td>
+                <td valign="top" rowspan="1" colspan="1"/>
+                <td valign="top" rowspan="1" colspan="1"/>
+                <td valign="top" rowspan="1" colspan="1"/>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="1" colspan="1">UM</td>
+                <td valign="top" rowspan="1" colspan="1">12 ± 6<sup>+</sup> [2–28]</td>
+                <td valign="top" rowspan="1" colspan="1"/>
+                <td valign="top" rowspan="1" colspan="1"/>
+                <td valign="top" rowspan="1" colspan="1"/>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="1" colspan="1"/>
+                <td valign="top" rowspan="1" colspan="1">
+<bold>ADOS Gotham severity</bold>
+</td>
+                <td valign="top" rowspan="1" colspan="1"/>
+                <td valign="top" rowspan="1" colspan="1"/>
+                <td valign="top" rowspan="1" colspan="1"/>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="1" colspan="1">KKI</td>
+                <td valign="top" rowspan="1" colspan="1">8 ± 2 [3–10]</td>
+                <td valign="top" rowspan="1" colspan="1"/>
+                <td valign="top" rowspan="1" colspan="1"/>
+                <td valign="top" rowspan="1" colspan="1"/>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="1" colspan="1">NYU</td>
+                <td valign="top" rowspan="1" colspan="1">7 ± 2 [3–10]</td>
+                <td valign="top" rowspan="1" colspan="1"/>
+                <td valign="top" rowspan="1" colspan="1"/>
+                <td valign="top" rowspan="1" colspan="1"/>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="1" colspan="1">UCLA</td>
+                <td valign="top" rowspan="1" colspan="1">7 ± 2<sup>+</sup> [3–10]</td>
+                <td valign="top" rowspan="1" colspan="1"/>
+                <td valign="top" rowspan="1" colspan="1"/>
+                <td valign="top" rowspan="1" colspan="1"/>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="1" colspan="1">UM</td>
+                <td valign="top" rowspan="1" colspan="1">7 ± 2<sup>+</sup> [1–10]</td>
+                <td valign="top" rowspan="1" colspan="1"/>
+                <td valign="top" rowspan="1" colspan="1"/>
+                <td valign="top" rowspan="1" colspan="1"/>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <p>ASD, autism spectrum disorder; TD, typical developmental control; std, standard deviation; FIQ, full scale intelligence quotient.</p>
+            <p>t, two group independent t test statistic between ASD and TD groups mean values.</p>
+            <p>z, two group independent Mann-Whitney test statistic between ASD and TD groups median values.</p>
+            <p>*Significant differences between mean (or median) ASD and TD groups.</p>
+            <p>
+<sup>+</sup>Missing values from some UCLA and UM sites ASD children were removed in calculating the mean and the standard deviation of parameters.</p>
+          </table-wrap-foot>
+        </table-wrap>
+        <fig id="f2" position="float">
+          <label>Figure 2</label>
+          <caption>
+            <p>Distributions of age, FIQ, ADOS Gotham total and ADOS Gotham severity scores across sites. Top row: age and FIQ distributions are reported for ASD, TD and all subjects together; bottom row: ADOS total (left) and ADOS Gotham severity (right) scores are shown for children with ASD. Points representing each single subject were overlaid to the box plot. A small random noise has been added on x axis label for each subject in order to make all points visible.</p>
+          </caption>
+          <graphic xlink:href="fpsyt-10-00620-g002"/>
+        </fig>
+        <table-wrap id="T2" position="float">
+          <label>Table 2</label>
+          <caption>
+            <p>KKI, NYU, UCLA and UM characteristics in terms of vendor, scan duration and the diagnostic categories.</p>
+          </caption>
+          <table frame="hsides" rules="groups">
+            <thead>
+              <tr>
+                <th valign="top" rowspan="2" colspan="1">Sites</th>
+                <th valign="top" rowspan="2" colspan="1">Scanner</th>
+                <th valign="top" rowspan="2" colspan="1">Time scan (min)</th>
+                <th valign="top" colspan="2" rowspan="1">Participants</th>
+              </tr>
+              <tr>
+                <th valign="top" rowspan="1" colspan="1">TD</th>
+                <th valign="top" rowspan="1" colspan="1">ASD</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td valign="top" rowspan="1" colspan="1">KKI</td>
+                <td valign="top" rowspan="1" colspan="1">Philips</td>
+                <td valign="top" rowspan="1" colspan="1">6.33</td>
+                <td valign="top" rowspan="1" colspan="1">24</td>
+                <td valign="top" rowspan="1" colspan="1">18</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="1" colspan="1">NYU</td>
+                <td valign="top" rowspan="1" colspan="1">Siemens Allegra</td>
+                <td valign="top" rowspan="1" colspan="1">5.9</td>
+                <td valign="top" rowspan="1" colspan="1">23</td>
+                <td valign="top" rowspan="1" colspan="1">33</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="1" colspan="1">UCLA</td>
+                <td valign="top" rowspan="1" colspan="1">Siemens Trio Tim</td>
+                <td valign="top" rowspan="1" colspan="1">5.8</td>
+                <td valign="top" rowspan="1" colspan="1">21</td>
+                <td valign="top" rowspan="1" colspan="1">23</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="1" colspan="1">UM</td>
+                <td valign="top" rowspan="1" colspan="1">GE</td>
+                <td valign="top" rowspan="1" colspan="1">9.8</td>
+                <td valign="top" rowspan="1" colspan="1">20</td>
+                <td valign="top" rowspan="1" colspan="1">28</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <p>ASD, autism spectrum disorder; TD, typical developmental control.</p>
+          </table-wrap-foot>
+        </table-wrap>
+      </sec>
+      <sec id="s2_2">
+        <title>Resting-State fMRI Data</title>
+        <p>We analyzed the preprocessed data available on the ABIDE preprocessed homepage (<xref rid="B29" ref-type="bibr">29</xref>, <xref rid="B30" ref-type="bibr">30</xref>), using the Configurable Pipeline for the Analysis of Connectomes (CPAC) (<xref rid="B31" ref-type="bibr">31</xref>), that includes slice-timing, motion correction, intensity normalization, nuisance signal removal (e.g. tissue signals, low-frequency drifts), and registrations. Band-pass filtering and global signal regression strategies were chosen as processing strategies to reduce the impact of physiological noise and global signal, that includes non-neuronal components and fluctuations in neuronal activity (<xref rid="B32" ref-type="bibr">32</xref>). Both anatomical and functional atlases were chosen to derive the FC measures; in particular, we chose Harvard-Oxford (HO) and Automatic Anatomical Labeling (AAL) as anatomical templates and Craddock-200 (CC) as functional templates to extract time series from brain regions (<xref rid="B33" ref-type="bibr">33</xref>). The timeseries and the information about labels of regions for each atlas are reported on the ABIDE preprocessed homepage in the pipeline section. Further analysis was conducted using the functional Power template obtained by brain-wide graph analysis (<xref rid="B34" ref-type="bibr">34</xref>). For this analysis, we extracted the time series from the preprocessed functional images since they are not directly available on the ABIDE preprocessed homepage.</p>
+      </sec>
+      <sec id="s2_3">
+        <title>Functional Connectivity Analysis</title>
+        <p>For each atlas, the Pearson correlation was calculated between the time series of pairs of regions to obtain a NxN correlation matrix for each subject, where N indicates the number of regions of the selected atlas.</p>
+        <p>The correlation values were normalized according to Fisher transformation (<xref rid="B35" ref-type="bibr">35</xref>), where the number of timepoints is taken into account:</p>
+        <disp-formula>
+          <mml:math id="M1">
+            <mml:mrow>
+              <mml:mi>Z</mml:mi>
+              <mml:mo>=</mml:mo>
+              <mml:mfrac>
+                <mml:mn>1</mml:mn>
+                <mml:mn>2</mml:mn>
+              </mml:mfrac>
+              <mml:msqrt>
+                <mml:mrow>
+                  <mml:mi>n</mml:mi>
+                  <mml:mo>−</mml:mo>
+                  <mml:mn>3</mml:mn>
+                </mml:mrow>
+              </mml:msqrt>
+              <mml:mi mathvariant="italic">ln</mml:mi>
+              <mml:mtext>
+</mml:mtext>
+              <mml:mrow>
+                <mml:mo>(</mml:mo>
+                <mml:mrow>
+                  <mml:mfrac>
+                    <mml:mrow>
+                      <mml:mn>1</mml:mn>
+                      <mml:mo>+</mml:mo>
+                      <mml:mi>r</mml:mi>
+                    </mml:mrow>
+                    <mml:mrow>
+                      <mml:mn>1</mml:mn>
+                      <mml:mo>−</mml:mo>
+                      <mml:mi>r</mml:mi>
+                    </mml:mrow>
+                  </mml:mfrac>
+                </mml:mrow>
+                <mml:mo>)</mml:mo>
+              </mml:mrow>
+            </mml:mrow>
+          </mml:math>
+        </disp-formula>
+        <p>where n is the number of timepoints of time series and r indicates the Pearson correlation values. From each symmetric FC matrix obtained we used <inline-formula><mml:math id="im1"><mml:mrow><mml:mfrac><mml:mrow><mml:mi>N</mml:mi><mml:mo stretchy="false">(</mml:mo><mml:mi>N</mml:mi><mml:mo>−</mml:mo><mml:mn>1</mml:mn><mml:mo stretchy="false">)</mml:mo></mml:mrow><mml:mn>2</mml:mn></mml:mfrac></mml:mrow></mml:math></inline-formula> non-redundant values as features for the machine learning classification.</p>
+      </sec>
+      <sec id="s2_4">
+        <title>Machine Learning Based Classification</title>
+        <p>Supervised binary classification of ASD and TD classes was carried out with Support Vector Machines (SVM) (<xref rid="B36" ref-type="bibr">36</xref>), which are able to handle noisy and correlated features and can provide better results with respect to other classifiers on dataset with small samples and large number of features (<xref rid="B37" ref-type="bibr">37</xref>).</p>
+        <p>SVM classifiers are able to separate distributions of data in two classes (i.e. ASD and TD) through a hypersurface, described a function according to selected kernel (<xref rid="B38" ref-type="bibr">38</xref>). This separation surface is learned from the training set and allows to make predictions on testing set, composed by unknown data. A linear-kernel support-vector-machine (L-SVM) was chosen as it has been demonstrated to provide a more robust performance with respect non-linear kernel SVM when the number of features is large with respect to the number of training cases (<xref rid="B39" ref-type="bibr">39</xref>). In addition, L-SVM provide a direct way to interpret the findings: the separating hyperplane is a linear function defined by the weight vectors and an offset. The weights associated with each feature express the direction along which the normalized pairwise correlations differ between two classes: higher weights correspond to more discriminating features; the weight signs allow to identify whether a connection is stronger or weaker in ASD than TD subjects.</p>
+        <p>Machine-learning based classifiers were implemented to optimize the evaluation of possible altered functional connections in ASD. In particular, the L-SVM classification was carried out on the FC features derived for each parcellation scheme to choose the optimal one among the AAL, HO, CC and Power atlases. In order to reduce the effect of site-specific sources of variability (<xref rid="B23" ref-type="bibr">23</xref>), a leave-site out cross-validation scheme was performed: each training set was composed by all the sites except one, that was left out for validation. The classification performance was evaluated in terms of the area under the ROC curve (AUC) (<xref rid="B40" ref-type="bibr">40</xref>).</p>
+      </sec>
+      <sec id="s2_5">
+        <title>Significant Connections</title>
+        <p>In order to identify the most significant connections able to discriminate between ASD and TD children, a permutation test was carried out on the entire dataset of children. This non-parametric technique allows to assign statistical significance to the classification.</p>
+        <p>A L-SVM classifier was trained on the data after 10,000 permutations of the class labels. The absolute values of the obtained weights were compared with the ones of the classifier trained on the correct labels (<xref rid="B38" ref-type="bibr">38</xref>, <xref rid="B39" ref-type="bibr">39</xref>). Through this procedure probability maps were generated and thresholded at three different p-values (p &lt; 0.01, p &lt; 0.005, p &lt; 0.001) in order to identify the most discriminating functional connections and to visualize them at different significance levels.</p>
+        <p>Depending on the weight signs, the alteration in FC are recognized as over FC, in correspondence to positive model weights, and under FC, in correspondence to negative model weights.</p>
+        <p>Functional alterations in terms over FC and under FC were analysed in the Mesulam subsystems (<xref rid="B25" ref-type="bibr">25</xref>, <xref rid="B41" ref-type="bibr">41</xref>), including the connections both between and within heteromodal, unimodal, paralimbic, limbic, primary, and subcortical regions.</p>
+      </sec>
+      <sec id="s2_6">
+        <title>Statistical Methods and Analysis Tools</title>
+        <p>Statistical tests were conducted on age and FIQ values to evaluate the matching between the cohorts of ASD and TD children in each site. Specifically, t-test was conducted on age values and Mann-Whitney U-test on not normal FIQ values. The normality of the distributions of age and FIQ values was evaluated by Shapiro-Wilk test.</p>
+        <p>Furthermore, statistical differences across sites were evaluated through one-way ANOVA, which was applied on the normally-distributed age values, and Kruskal-Wallis test, which was applied on nonnormally-distributed FIQ and ADOS scores, the latter standardized according to Gotham algorithms (<xref rid="B27" ref-type="bibr">27</xref>). In particular, we analyzed the ADOS Gotham total score, which is related to social affect and restricted repetitive behaviour, and the ADOS Gotham severity score, which captures the calibrated autism symptom severity. The statistical tests results were corrected using Bonferroni method for multiple comparison correction.</p>
+        <p>In order to evaluate the significant functional connections different between each site and the other sites combined together, a Mann-Whitney U-test was carried out. In particular the analysis was conducted only on the control children to avoid to include confounding effects related to the disorder. The p-values obtained were corrected using Benjamini-Hochberg false discovery rate (FDR), taking account for the number of false discovery (q ≤ 0.05) (<xref rid="B42" ref-type="bibr">42</xref>).</p>
+        <p>Possible correlations between functional connections showing the most significant group differences and autism symptom severity and overall level of functioning have been investigated according to Spearman rank correlation coefficient. Specifically, the relationships between FIQ and FC values were evaluated in ASD and TD groups separately.</p>
+        <p>Functional connectivity analysis, classifications, permutation test and cerebral maps representation, and the study of correlations between altered FC values and clinical scores were carried out with Matlab 2017a (The MathWorks, Inc.). In particular, in-house built scripts and functions were developed, and, for the SVM classifier training, the <italic>fitcsvm</italic> matlab function has been used, with the default choice of the <italic>c</italic> parameter – the parameter that regulates the trade-off between having zero training errors and allowing for misclassifications – for the linear-kernel SVM, to avoid running optimization of hyperparameters, which would have required and additional nested cross validation.</p>
+      </sec>
+      <sec id="s2_7">
+        <title>Effect of Site and Other Confounding Parameters</title>
+        <p>The impact of the site and of the other confounding parameters (e.g. sex, eye status) on the performance in the ASD vs. TD machine-learning based classification was evaluated and reported in the Supplementary Materials. A statistical comparison among the FC maps of TD children obtained at the four different sites was also carried out to highlight the impact of the acquisition site on FC information (see <xref ref-type="supplementary-material" rid="SM1">
+<bold>Supplementary Materials</bold>
+</xref>).</p>
+      </sec>
+    </sec>
+    <sec sec-type="results" id="s3">
+      <title>Results</title>
+      <sec id="s3_1">
+        <title>Sample Analysis</title>
+        <p>T-test analysis on age and Mann-Whitney analysis on FIQ values in each site showed that ASD and TD groups are only age-matched whereas no dataset is matched on FIQ, except for the UM sample (<xref rid="T1" ref-type="table">
+<bold>Table 1</bold>
+</xref>). The results of one-way ANOVA and Kruskal-Wallis analyses carried out for each participant’s parameter showed that there are significant differences between two or more sites according to age and FIQ. Multiple comparisons, using Bonferroni correction, were conducted for each parameter to identify which sites were different according those parameters. Both KKI and NYU samples showed statistically significant differences from UCLA and UM samples according to age, whereas only the NYU sample was different from the UM sample according to FIQ (<xref rid="T3" ref-type="table">
+<bold>Table 3</bold>
+</xref>).</p>
+        <table-wrap id="T3" position="float">
+          <label>Table 3</label>
+          <caption>
+            <p>One-way ANOVA/Kruskal-Wallis analysis for each participant’s parameter: age, FIQ, ADOS Gotham total, ADOS Gotham severity. The Bonferroni correction for multiple comparisons has been used. The tests on age and FIQ values have been conducted on the cohorts of subjects including both ASD and TD children of each site.</p>
+          </caption>
+          <table frame="hsides" rules="groups">
+            <thead>
+              <tr>
+                <th valign="top" rowspan="1" colspan="1">Variable</th>
+                <th valign="top" rowspan="1" colspan="1">N</th>
+                <th valign="top" colspan="2" rowspan="1">Statistical test</th>
+                <th valign="top" rowspan="1" colspan="1">Group</th>
+              </tr>
+              <tr>
+                <th valign="top" rowspan="1" colspan="1"/>
+                <th valign="top" rowspan="1" colspan="1"/>
+                <th valign="top" rowspan="1" colspan="1">Statistic</th>
+                <th valign="top" rowspan="1" colspan="1">p value</th>
+                <th valign="top" rowspan="1" colspan="1"/>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td valign="top" rowspan="3" colspan="1">Age (years)</td>
+                <td valign="top" rowspan="1" colspan="1">48</td>
+                <td valign="top" rowspan="1" colspan="1">F = 10.23</td>
+                <td valign="top" rowspan="1" colspan="1"> &lt;0.001*</td>
+                <td valign="top" rowspan="3" colspan="1">KKI-UCLA, KKI-UM, NYU-UCLA, NYU-UM</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="1" colspan="1"/>
+                <td valign="top" rowspan="1" colspan="1"/>
+                <td valign="top" rowspan="1" colspan="1"/>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="1" colspan="1"/>
+                <td valign="top" rowspan="1" colspan="1"/>
+                <td valign="top" rowspan="1" colspan="1"/>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="1" colspan="1">FIQ</td>
+                <td valign="top" rowspan="1" colspan="1">47</td>
+                <td valign="top" rowspan="1" colspan="1">χ<sup>2</sup> = 9.51</td>
+                <td valign="top" rowspan="1" colspan="1">0.02</td>
+                <td valign="top" rowspan="1" colspan="1">NYU-UM</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="1" colspan="1">ADOS Gotham total</td>
+                <td valign="top" rowspan="1" colspan="1">99</td>
+                <td valign="top" rowspan="1" colspan="1">χ<sup>2</sup> = 7.15</td>
+                <td valign="top" rowspan="1" colspan="1">0.07</td>
+                <td valign="top" rowspan="1" colspan="1"/>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="1" colspan="1">ADOS Gotham severity</td>
+                <td valign="top" rowspan="1" colspan="1">99</td>
+                <td valign="top" rowspan="1" colspan="1">χ<sup>2</sup> = 8.05</td>
+                <td valign="top" rowspan="1" colspan="1">0.05</td>
+                <td valign="top" rowspan="1" colspan="1"/>
+              </tr>
+            </tbody>
+          </table>
+        </table-wrap>
+      </sec>
+      <sec id="s3_2">
+        <title>Functional Connectivity Measures</title>
+        <p>The FC was evaluated for all children of the four sites using the AAL, HO, CC, and Power atlases (<xref ref-type="fig" rid="f3">
+<bold>Figure 3A</bold>
+</xref>). For each child we identified the possible null rows/columns in the FC matrix due to null time series. When the HO, the CC and the Power atlases were applied, null time courses were obtained in some cerebral regions (<xref ref-type="fig" rid="f3">
+<bold>Figure 3B</bold>
+</xref>). Specifically, in the temporal, frontal and parietal lobes, close to brain edges. Subjects with at least one null row/column in the FC matrix were identified in the datasets related to HO, CC, and Power atlases and the critical regions were highlighted for each parcellation scheme. These regions are shown in <xref ref-type="fig" rid="f3">
+<bold>Figure 3B</bold>
+</xref>, where they are represented as spheres positioned in the centroid of each atlas region with a radius proportional to the number of subjects (n) presenting that critical region. In order to avoid removing regions that may be potentially interesting for ASD diagnosis, we decided to remove the subjects from HO (n = 3) and CC (n = 3) dataset. Regarding Power atlas, since the number of subjects containing critical regions was too high (n = 130), we decided to remove the regions and not the subjects, leaving 230 regions for the classification analysis. Therefore, multisite analysis was conducted on 190 subjects with AAL and Power atlases and on 187 subjects with HO and CC.</p>
+        <fig id="f3" position="float">
+          <label>Figure 3</label>
+          <caption>
+            <p>Parcellation schemes used in this analysis <bold>(A)</bold>: Automated Anatomical Labeling (AAL), Harvard-Oxford (HO), Craddock (CC) and Power atlases used in functional connectivity analysis. Regions with null time series obtained in implementing the HO, CC, and Power atlases on data <bold>(B)</bold>. Critical regions are represented as spheres positioned in the centroid of each atlas region, with a radius proportional to the number of subjects presenting that critical region.</p>
+          </caption>
+          <graphic xlink:href="fpsyt-10-00620-g003"/>
+        </fig>
+        <p>The connectivity analysis was carried out on cortical and subcortical regions, excluding the cerebellum. Since Harvard-Oxford atlas does not already have cerebellum areas, we removed them in the other atlases we used. Cerebellar areas were identified through the corresponding labels for the AAL and through the label generated from the overlap between AAL and CC for CC templates; in Power atlas, the cerebellum was identified from the corresponding MNI coordinates. After the previous selections the number of regions were reduced to 90 for AAL, 110 for HO, 184 for CC and 230 for Power atlases, respectively.</p>
+      </sec>
+      <sec id="s3_3">
+        <title>Correlations Between Altered FC Values and Clinical and Cognitive Measures</title>
+        <p>We tested the possible correlations of the four functional connections showing the most significant group differences with autism symptom severity and the overall level of functioning, and we found the following significant results in terms of Spearman ρ: negative correlations of the FC between the R hippocampus and temporal fusiform cortex with The ADOS total (ρ = −0.21, p = 0.04) and ADOS severity scores (ρ = −0.24, p = 0.02); a positive correlation of the FC between L inferior frontal gyrus and R frontal operculum cortex with the FIQ (ρ = 0.196, p = 0.049).</p>
+      </sec>
+      <sec id="s3_4">
+        <title>Classification</title>
+        <p>The L-SVM classification was carried out on the FC measures of the whole dataset using four different atlases. The classification performances are compared in terms of the mean AUC obtained in the leave-one-site-out cross-validation scheme.</p>
+        <p>The best performance was obtained using the HO atlas, as shown in <xref rid="T4" ref-type="table">
+<bold>Table 4</bold>
+</xref>. The classification results obtained according to the leave-one-site-out cross-validation scheme of data derived with the HO atlas are reported in more detail in <xref rid="T5" ref-type="table">
+<bold>Table 5</bold>
+</xref>, where, in addition to the AUC, also the sensitivity, specificity and accuracy values are shown. In particular, the highest performance was obtained using FC patterns from KKI, NYU, and UCLA samples in the training phase (n = 139) and leaving out the patterns of the UM sample for the validation (n = 48), as shown in <xref rid="T5" ref-type="table">
+<bold>Table 5</bold>
+</xref>.</p>
+        <table-wrap id="T4" position="float">
+          <label>Table 4</label>
+          <caption>
+            <p>ASD vs. TD classification performance: the impact of using different parcellation schemes in the leave-one-site-out cross-validation scheme is shown in terms of mean and standard deviation of AUC. For each atlas, the number of descriptive features (m) is reported.</p>
+          </caption>
+          <table frame="hsides" rules="groups">
+            <thead>
+              <tr>
+                <th valign="top" rowspan="1" colspan="1"/>
+                <th valign="top" colspan="4" rowspan="1">Atlas, mean ± std</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td valign="top" rowspan="2" colspan="1">Classification</td>
+                <td valign="top" rowspan="1" colspan="1">
+<bold>AAL</bold>
+</td>
+                <td valign="top" rowspan="1" colspan="1">
+<bold>HO</bold>
+</td>
+                <td valign="top" rowspan="1" colspan="1">
+<bold>CC</bold>
+</td>
+                <td valign="top" rowspan="1" colspan="1">
+<bold>POWER</bold>
+</td>
+              </tr>
+              <tr style="border-bottom: 1px solid black">
+                <td valign="top" rowspan="1" colspan="1">(m = 4005)</td>
+                <td valign="top" rowspan="1" colspan="1">(m = 5995)</td>
+                <td valign="top" rowspan="1" colspan="1">(m = 16836)</td>
+                <td valign="top" rowspan="1" colspan="1">(m = 26335)</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="1" colspan="1">AUC (%)</td>
+                <td valign="top" rowspan="1" colspan="1">72 ± 3</td>
+                <td valign="top" rowspan="1" colspan="1">75 ± 5</td>
+                <td valign="top" rowspan="1" colspan="1">70 ± 10</td>
+                <td valign="top" rowspan="1" colspan="1">64 ± 6</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <p>AUC, area under the ROC curve; std, standard deviation; AAL, Automated Anatomical Labeling; HO, Harvard-Oxford; CC, Craddock.</p>
+          </table-wrap-foot>
+        </table-wrap>
+        <table-wrap id="T5" position="float">
+          <label>Table 5</label>
+          <caption>
+            <p>ASD vs. TD classification performance obtained for the Harvard-Oxford atlas. The classification performances are reported in terms of sensitivity, specificity, accuracy and AUC for each site left out as validation set in the cross-validation scheme. The mean and standard deviation of all figures of merit over the four sites are also reported (the mean AUC and its standard deviation are also shown in <xref rid="T4" ref-type="table"><bold>Table 4</bold></xref>).</p>
+          </caption>
+          <table frame="hsides" rules="groups">
+            <thead>
+              <tr>
+                <th valign="top" rowspan="2" colspan="1"/>
+                <th valign="top" colspan="5" rowspan="1">L-SVM</th>
+              </tr>
+              <tr>
+                <th valign="top" colspan="5" rowspan="1">Leave one site out</th>
+              </tr>
+              <tr>
+                <th valign="top" rowspan="1" colspan="1">Classification</th>
+                <th valign="top" rowspan="1" colspan="1">KKI</th>
+                <th valign="top" rowspan="1" colspan="1">NYU</th>
+                <th valign="top" rowspan="1" colspan="1">UCLA</th>
+                <th valign="top" rowspan="1" colspan="1">UM</th>
+                <th valign="top" rowspan="1" colspan="1">mean ± std</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td valign="top" rowspan="1" colspan="1">Sensitivity (%)</td>
+                <td valign="top" rowspan="1" colspan="1">67</td>
+                <td valign="top" rowspan="1" colspan="1">48</td>
+                <td valign="top" rowspan="1" colspan="1">83</td>
+                <td valign="top" rowspan="1" colspan="1">79</td>
+                <td valign="top" rowspan="1" colspan="1">69 ± 16</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="1" colspan="1">Specificity (%)</td>
+                <td valign="top" rowspan="1" colspan="1">75</td>
+                <td valign="top" rowspan="1" colspan="1">83</td>
+                <td valign="top" rowspan="1" colspan="1">61</td>
+                <td valign="top" rowspan="1" colspan="1">75</td>
+                <td valign="top" rowspan="1" colspan="1">74 ± 9</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="1" colspan="1">Accuracy (%)</td>
+                <td valign="top" rowspan="1" colspan="1">71</td>
+                <td valign="top" rowspan="1" colspan="1">63</td>
+                <td valign="top" rowspan="1" colspan="1">73</td>
+                <td valign="top" rowspan="1" colspan="1">77</td>
+                <td valign="top" rowspan="1" colspan="1">71 ± 6</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="1" colspan="1">AUC (%)</td>
+                <td valign="top" rowspan="1" colspan="1">71</td>
+                <td valign="top" rowspan="1" colspan="1">75</td>
+                <td valign="top" rowspan="1" colspan="1">72</td>
+                <td valign="top" rowspan="1" colspan="1">83</td>
+                <td valign="top" rowspan="1" colspan="1">75 ± 5</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <p>AUC, area under the ROC curve; std, standard deviation.</p>
+          </table-wrap-foot>
+        </table-wrap>
+      </sec>
+      <sec id="s3_5">
+        <title>Significant Connections</title>
+        <p>The functional connections that contribute the most to the discrimination between subjects with ASD and controls were obtained through a permutation test applied to the dataset of children from all sites together (KKI, NYU, UCLA, and UM), including 187 subjects. The list of relevant functional connections between brain regions are reported in <xref rid="T6" ref-type="table">
+<bold>Tables 6</bold>
+</xref> and <xref rid="T7" ref-type="table">
+<bold>7</bold>
+</xref>, and they are shown in <xref ref-type="fig" rid="f4">
+<bold>Figure 4</bold>
+</xref> where over-FC and under-FC patterns are highlighted for different thresholds on p values. The altered functional connections are represented in axial (<xref ref-type="fig" rid="f4">
+<bold>Figure 4A</bold>
+</xref>), coronal (<xref ref-type="fig" rid="f4">
+<bold>Figure 4B</bold>
+</xref>) and sagittal (<xref ref-type="fig" rid="f4">
+<bold>Figure 4C</bold>
+</xref>) views. In the top row of each panel the functional connections which are significantly stronger in ASD relative to TD are depicted, whereas in the bottom row the functional connections which are significantly weaker in ASD relative to TD are shown. Each region is represented as sphere positioned in the region centroid, with a radius proportional to the number of connections involving that region and coloured according to the membership in the six functional Mesulam divisions: heteromodal, unimodal, limbic, paralimbic, subcortical, and primary. This representation facilitates the considerations regarding altered connections in and between functional brain areas.</p>
+        <table-wrap id="T6" position="float">
+          <label>Table 6</label>
+          <caption>
+            <p>List of significantly stronger (ASD &gt; TD) functional connections in ASD children from KKI, NYU, UCLA, UM, obtained for p &lt; 0.01, p &lt; 0.005, and p &lt; 0.001. Beside the Harvard-Oxford labels of the regions defining the connections, lowercase letters are reported in reference to the visual representation of each connection shown in <xref ref-type="fig" rid="f4"><bold>Figure 4</bold></xref>.</p>
+          </caption>
+          <table frame="hsides" rules="groups">
+            <thead>
+              <tr>
+                <th valign="top" colspan="6" rowspan="1">Significant connections</th>
+              </tr>
+              <tr>
+                <th valign="top" colspan="3" rowspan="1">Harvard-Oxford regions</th>
+                <th valign="top" colspan="2" rowspan="1">Mesulam subsystems</th>
+                <th valign="top" rowspan="1" colspan="1">p-value</th>
+              </tr>
+              <tr>
+                <th valign="top" colspan="6" rowspan="1">ASD &gt; TD</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td valign="top" rowspan="1" colspan="1">R Angular Gyrus (b)</td>
+                <td valign="top" rowspan="1" colspan="1">
+<italic>–</italic>
+</td>
+                <td valign="top" rowspan="1" colspan="1">R Precuneus Cortex (p)</td>
+                <td valign="top" rowspan="1" colspan="1">Heteromodal</td>
+                <td valign="top" rowspan="1" colspan="1">Heteromodal</td>
+                <td valign="top" rowspan="1" colspan="1">&lt;0.001</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="1" colspan="1">L Inferior Frontal Gyrus (pars opercularis) (h1)</td>
+                <td valign="top" rowspan="1" colspan="1">
+<italic>–</italic>
+</td>
+                <td valign="top" rowspan="1" colspan="1">R Frontal Operculum Cortex (f)</td>
+                <td valign="top" rowspan="1" colspan="1">Heteromodal</td>
+                <td valign="top" rowspan="1" colspan="1">Unimodal</td>
+                <td valign="top" rowspan="1" colspan="1">&lt;0.001</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="1" colspan="1">R Inferior Frontal Gyrus (pars triangularis) (h2)</td>
+                <td valign="top" rowspan="1" colspan="1">
+<italic>–</italic>
+</td>
+                <td valign="top" rowspan="1" colspan="1">R Middle Temporal Gyrus (anterior division) (k1)</td>
+                <td valign="top" rowspan="1" colspan="1">Heteromodal</td>
+                <td valign="top" rowspan="1" colspan="1">Heteromodal</td>
+                <td valign="top" rowspan="1" colspan="1">&lt;0.005</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="1" colspan="1">R Precentral Gyrus (o)</td>
+                <td valign="top" rowspan="1" colspan="1">
+<italic>–</italic>
+</td>
+                <td valign="top" rowspan="1" colspan="1">L Inferior Temporal Gyrus (anterior division) (i1)</td>
+                <td valign="top" rowspan="1" colspan="1">Primary</td>
+                <td valign="top" rowspan="1" colspan="1">Unimodal</td>
+                <td valign="top" rowspan="1" colspan="1">&lt;0.005</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="1" colspan="1">R Parahippocampal Gyrus (posterior division) (l2)</td>
+                <td valign="top" rowspan="1" colspan="1">
+<italic>–</italic>
+</td>
+                <td valign="top" rowspan="1" colspan="1">R Parietal Operculum Cortex (m)</td>
+                <td valign="top" rowspan="1" colspan="1">Paralimbic</td>
+                <td valign="top" rowspan="1" colspan="1">Unimodal</td>
+                <td valign="top" rowspan="1" colspan="1">&lt;0.005</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="1" colspan="1">R Amygdala (a)</td>
+                <td valign="top" rowspan="1" colspan="1">
+<italic>–</italic>
+</td>
+                <td valign="top" rowspan="1" colspan="1">L Inferior Temporal Gyrus (temporo-occipital part) (i3)</td>
+                <td valign="top" rowspan="1" colspan="1">Limbic</td>
+                <td valign="top" rowspan="1" colspan="1">Unimodal</td>
+                <td valign="top" rowspan="1" colspan="1">&lt;0.01</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="1" colspan="1">R Inferior Frontal Gyrus (pars opercularis) (h1)</td>
+                <td valign="top" rowspan="1" colspan="1">
+<italic>–</italic>
+</td>
+                <td valign="top" rowspan="1" colspan="1">R Lateral Occipital Cortex (inferior division) (j1)</td>
+                <td valign="top" rowspan="1" colspan="1">Heteromodal</td>
+                <td valign="top" rowspan="1" colspan="1">Unimodal</td>
+                <td valign="top" rowspan="1" colspan="1">&lt;0.01</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="1" colspan="1">L Inferior Temporal Gyrus (temporo-occipital part) (i3)</td>
+                <td valign="top" rowspan="1" colspan="1">
+<italic>–</italic>
+</td>
+                <td valign="top" rowspan="1" colspan="1">R Lateral Occipital Cortex (inferior division) (j1)</td>
+                <td valign="top" rowspan="1" colspan="1">Unimodal</td>
+                <td valign="top" rowspan="1" colspan="1">Unimodal</td>
+                <td valign="top" rowspan="1" colspan="1">&lt;0.01</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="1" colspan="1">R Lateral Occipital Cortex (superior division) (j2)</td>
+                <td valign="top" rowspan="1" colspan="1">
+<italic>–</italic>
+</td>
+                <td valign="top" rowspan="1" colspan="1">L Frontal Medial Cortex (e)</td>
+                <td valign="top" rowspan="1" colspan="1">Unimodal</td>
+                <td valign="top" rowspan="1" colspan="1">Paralimbic</td>
+                <td valign="top" rowspan="1" colspan="1">&lt;0.01</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="1" colspan="1">R Inferior Temporal Gyrus (temporo-occipital part) (i3)</td>
+                <td valign="top" rowspan="1" colspan="1">
+<italic>–</italic>
+</td>
+                <td valign="top" rowspan="1" colspan="1">R Parahippocampal Gyrus (anterior division) (l1)</td>
+                <td valign="top" rowspan="1" colspan="1">Unimodal</td>
+                <td valign="top" rowspan="1" colspan="1">Paralimbic</td>
+                <td valign="top" rowspan="1" colspan="1">&lt;0.01</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="1" colspan="1">L Inferior Frontal Gyrus (pars triangularis) (h2)</td>
+                <td valign="top" rowspan="1" colspan="1">
+<italic>–</italic>
+</td>
+                <td valign="top" rowspan="1" colspan="1">R Temporal Fusiform Cortex (posterior division) (u)</td>
+                <td valign="top" rowspan="1" colspan="1">Heteromodal</td>
+                <td valign="top" rowspan="1" colspan="1">Unimodal</td>
+                <td valign="top" rowspan="1" colspan="1">&lt;0.01</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="1" colspan="1">R Precentral Gyrus (o)</td>
+                <td valign="top" rowspan="1" colspan="1">
+<italic>–</italic>
+</td>
+                <td valign="top" rowspan="1" colspan="1">R Temporal Fusiform Cortex (posterior division) (u)</td>
+                <td valign="top" rowspan="1" colspan="1">Primary</td>
+                <td valign="top" rowspan="1" colspan="1">Unimodal</td>
+                <td valign="top" rowspan="1" colspan="1">&lt;0.01</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="1" colspan="1">R Lateral Occipital Cortex (inferior division) (j1)</td>
+                <td valign="top" rowspan="1" colspan="1">
+<italic>–</italic>
+</td>
+                <td valign="top" rowspan="1" colspan="1">L Frontal Operculum Cortex (f)</td>
+                <td valign="top" rowspan="1" colspan="1">Unimodal</td>
+                <td valign="top" rowspan="1" colspan="1">Unimodal</td>
+                <td valign="top" rowspan="1" colspan="1">&lt;0.01</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="1" colspan="1">R Superior Temporal Gyrus (posterior division) (r)</td>
+                <td valign="top" rowspan="1" colspan="1">
+<italic>–</italic>
+</td>
+                <td valign="top" rowspan="1" colspan="1">L Supracalcarine Cortex (s)</td>
+                <td valign="top" rowspan="1" colspan="1">Unimodal</td>
+                <td valign="top" rowspan="1" colspan="1">Unimodal</td>
+                <td valign="top" rowspan="1" colspan="1">&lt;0.01</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="1" colspan="1">L Subcallosal Cortex (q)</td>
+                <td valign="top" rowspan="1" colspan="1">
+<italic>–</italic>
+</td>
+                <td valign="top" rowspan="1" colspan="1">L Supracalcarine Cortex (s)</td>
+                <td valign="top" rowspan="1" colspan="1">Paralimbic</td>
+                <td valign="top" rowspan="1" colspan="1">Unimodal</td>
+                <td valign="top" rowspan="1" colspan="1">&lt;0.01</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <p>R, right hemisphere; L, left hemisphere.</p>
+          </table-wrap-foot>
+        </table-wrap>
+        <table-wrap id="T7" position="float">
+          <label>Table 7</label>
+          <caption>
+            <p>List of significantly weaker (ASD &lt; TD) functional connections in ASD children from KKI, NYU, UCLA, UM, obtained for p &lt; 0.01, p &lt; 0.005, and p &lt; 0.001. Beside the Harvard-Oxford labels of the regions defining the connections, lowercase letters are reported in reference to the visual representation of each connection shown in <xref ref-type="fig" rid="f4"><bold>Figure 4</bold></xref>.</p>
+          </caption>
+          <table frame="hsides" rules="groups">
+            <thead>
+              <tr>
+                <th valign="top" colspan="6" rowspan="1">Significant connections</th>
+              </tr>
+              <tr>
+                <th valign="top" colspan="3" rowspan="1">Harvard-Oxford regions</th>
+                <th valign="top" colspan="2" rowspan="1">Mesulam subsystems</th>
+                <th valign="top" rowspan="1" colspan="1">p-value</th>
+              </tr>
+              <tr>
+                <th valign="top" colspan="6" rowspan="1">ASD &lt; TD</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td valign="top" rowspan="1" colspan="1">R Hippocampus (g)</td>
+                <td valign="top" rowspan="1" colspan="1">–</td>
+                <td valign="top" rowspan="1" colspan="1">R Temporal Fusiform Cortex (posterior division) (u)</td>
+                <td valign="top" rowspan="1" colspan="1">Limbic</td>
+                <td valign="top" rowspan="1" colspan="1">Unimodal</td>
+                <td valign="top" rowspan="1" colspan="1">&lt;0.001</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="1" colspan="1">L Supramarginal Gyrus (anterior division) (t)</td>
+                <td valign="top" rowspan="1" colspan="1">–</td>
+                <td valign="top" rowspan="1" colspan="1">L Planum Polare (n)</td>
+                <td valign="top" rowspan="1" colspan="1">Unimodal</td>
+                <td valign="top" rowspan="1" colspan="1">Unimodal</td>
+                <td valign="top" rowspan="1" colspan="1">&lt;0.001</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="1" colspan="1">L Middle Temporal Gyrus (anterior division) (k1)</td>
+                <td valign="top" rowspan="1" colspan="1">–</td>
+                <td valign="top" rowspan="1" colspan="1">R Middle Temporal Gyrus (posterior division) (k2)</td>
+                <td valign="top" rowspan="1" colspan="1">Heteromodal</td>
+                <td valign="top" rowspan="1" colspan="1">Heteromodal</td>
+                <td valign="top" rowspan="1" colspan="1">&lt;0.005</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="1" colspan="1">R Precentral Gyrus (o)</td>
+                <td valign="top" rowspan="1" colspan="1">–</td>
+                <td valign="top" rowspan="1" colspan="1">L Angular Gyrus (b)</td>
+                <td valign="top" rowspan="1" colspan="1">Primary</td>
+                <td valign="top" rowspan="1" colspan="1">Heteromodal</td>
+                <td valign="top" rowspan="1" colspan="1">&lt;0.005</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="1" colspan="1">R Inferior Temporal Gyrus (posterior division) (i2)</td>
+                <td valign="top" rowspan="1" colspan="1">–</td>
+                <td valign="top" rowspan="1" colspan="1">L Angular Gyrus (b)</td>
+                <td valign="top" rowspan="1" colspan="1">Unimodal</td>
+                <td valign="top" rowspan="1" colspan="1">Heteromodal</td>
+                <td valign="top" rowspan="1" colspan="1">&lt;0.005</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="1" colspan="1">R Precuneus Cortex (p)</td>
+                <td valign="top" rowspan="1" colspan="1">–</td>
+                <td valign="top" rowspan="1" colspan="1">R Temporal Fusiform Cortex (posterior division) (u)</td>
+                <td valign="top" rowspan="1" colspan="1">Heteromodal</td>
+                <td valign="top" rowspan="1" colspan="1">Unimodal</td>
+                <td valign="top" rowspan="1" colspan="1">&lt;0.005</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="1" colspan="1">R Cuneal Cortex (d)</td>
+                <td valign="top" rowspan="1" colspan="1">–</td>
+                <td valign="top" rowspan="1" colspan="1">L Frontal Operculum Cortex (f)</td>
+                <td valign="top" rowspan="1" colspan="1">Unimodal</td>
+                <td valign="top" rowspan="1" colspan="1">Unimodal</td>
+                <td valign="top" rowspan="1" colspan="1">&lt;0.005</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="1" colspan="1">L Cingulate Gyrus (anterior division) (c1)</td>
+                <td valign="top" rowspan="1" colspan="1">–</td>
+                <td valign="top" rowspan="1" colspan="1">L Cingulate Gyrus (posterior division) (c2)</td>
+                <td valign="top" rowspan="1" colspan="1">Paralimbic</td>
+                <td valign="top" rowspan="1" colspan="1">Paralimbic</td>
+                <td valign="top" rowspan="1" colspan="1">&lt;0.01</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="1" colspan="1">R Precuneus Cortex (p)</td>
+                <td valign="top" rowspan="1" colspan="1">–</td>
+                <td valign="top" rowspan="1" colspan="1">L Parahippocampal Gyrus (anterior division) (l1)</td>
+                <td valign="top" rowspan="1" colspan="1">Heteromodal</td>
+                <td valign="top" rowspan="1" colspan="1">Paralimbic</td>
+                <td valign="top" rowspan="1" colspan="1">&lt;0.01</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="1" colspan="1">R Cingulate Gyrus (posterior division) (c2)</td>
+                <td valign="top" rowspan="1" colspan="1">–</td>
+                <td valign="top" rowspan="1" colspan="1">R Temporal Fusiform Cortex (posterior division) (u)</td>
+                <td valign="top" rowspan="1" colspan="1">Paralimbic</td>
+                <td valign="top" rowspan="1" colspan="1">Unimodal</td>
+                <td valign="top" rowspan="1" colspan="1">&lt;0.01</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="1" colspan="1">L Cingulate Gyrus (posterior division) (c2)</td>
+                <td valign="top" rowspan="1" colspan="1">–</td>
+                <td valign="top" rowspan="1" colspan="1">R Temporal Fusiform Cortex (posterior division) (u)</td>
+                <td valign="top" rowspan="1" colspan="1">Paralimbic</td>
+                <td valign="top" rowspan="1" colspan="1">Unimodal</td>
+                <td valign="top" rowspan="1" colspan="1">&lt;0.01</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <p>R, right hemisphere; L, left hemisphere.</p>
+          </table-wrap-foot>
+        </table-wrap>
+        <fig id="f4" position="float">
+          <label>Figure 4</label>
+          <caption>
+            <p>Significant functional connections in the discrimination between subjects with ASD and typical controls obtained using the HO atlas. Altered connections are shown in axial <bold>(A)</bold>, coronal <bold>(B)</bold> and sagittal views <bold>(C)</bold>. In each view, the over-connectivity (top row) and under-connectivity (bottom row) patterns in ASD children in and between the functional Mesulam divisions are shown for different thresholds on significance levels (p &lt; 0.01, p &lt; 0.005, and p &lt; 0.001). The membership of each region to one of the Mesulam division is highlighted by color code applied to a sphere positioned in the region centroid, whose radius is proportional to the number of altered connections involving that region. Lowercase letters are reported to indicate each region, in reference to the reference to the results reported in <xref rid="T6" ref-type="table">
+<bold>Tables 6</bold>
+</xref> and <xref rid="T7" ref-type="table">
+<bold>7</bold>
+</xref>.</p>
+          </caption>
+          <graphic xlink:href="fpsyt-10-00620-g004"/>
+        </fig>
+      </sec>
+    </sec>
+    <sec sec-type="discussion" id="s4">
+      <title>Discussion</title>
+      <p>The goal of this study was to highlight through machine-learning based techniques possible alterations in the FC of children with ASD in the age range of 6.5–13 years, available within the ABIDE cohort. Several selection criteria were adopted to focus our investigation on a more homogeneous sample of subjects, and thus to reduce the possible sources of variability. Specifically, age, sex, and eye status of the participants are known factors that may introduce heterogeneity in FC. Consequently, this study was focused on male children, in a limited age range, whose rs-fMRI scans were acquired with open eyes. Furthermore, only the four most populated sites were considered. The FC analysis was carried out using different atlases, and machine-learning classifiers were implemented to select the parcellation scheme with the best discrimination performance. Notably, the choice of atlas has an impact on classification performance for two reasons: as the functional signals of the voxels are averaged within a brain parcel, both the region location and its size affect the signal information content and the noise level. The use of the anatomical HO atlas led to a better classification performance with respect to the use of AAL, CC and Power atlases (see <xref rid="T4" ref-type="table">
+<bold>Table 4</bold>
+</xref>). The use of the anatomical HO atlas led to a better classification performance with respect to the use of AAL, CC and Power atlases (see <xref rid="T4" ref-type="table">
+<bold>Table 4</bold>
+</xref>). This result can be explained in terms of a trade-off between the conflicting needs of averaging the functional signals over a non-too-large brain parcels, while keeping acceptable the number of features to classify. A parcellation scheme with a limited number of parcels would generate a manageable number of features to classify, thus avoiding the classifier overfitting problem. By contrast, averaging the functional signal over brain regions that are too large can cause the weakening or disappearance of the signal itself. This trend can be appreciated in the classification performances shown in <xref rid="T4" ref-type="table">
+<bold>Table 4</bold>
+</xref>. In particular, the FC values derived according to the HO atlas have higher discriminating power with respect to those of the AAL atlas, which is characterized by 30% fewer regions, and thus the signals are averaged over larger brain areas and have lower specificity in describing brain functioning. When the CC and Power atlases are implemented, the expected increase in the performance with the increase in the number of parcels does not hold anymore. Despite CC and Power are defined according to functional parcellation schemes and thus potentially more informative than the structural-atlas based ones, the excessive increase in the number of features makes the classifier overfit data and lose its generalization capability, causing the decrease in classification performance instead of the expected increase. For these reasons, the best compromise, at least for the data sample considered in this study, was the implementation of the HO atlas. The binary classification results between subjects with ASD and controls in a leave-one-site-out cross-validation scheme achieved an average accuracy of 0.71 ± 0.06 and an average AUC of 0.75 ± 0.05. The best performance was obtained when the training was carried out on FC patterns of children from KKI, NYU, and UCLA, and the classifier performance was evaluated on data from the UM site, reaching an AUC of 0.83. Within the cross-validation scheme, large variability in the results obtained on the different left-out samples were detected (e.g. AUC in the 0.71–0.83 range), as a result of the differences in demographic, clinical and possible data acquisition variability across sites. This variability suggests caution in interpreting the results, and requires their dedicated replication on larger homogeneous cohorts of subjects. The difference across the sites is also evident in the statistical analysis conducted on the average FC matrices between one site and the others combined together (<xref ref-type="supplementary-material" rid="SM1">
+<bold>Figure S1</bold>
+</xref>). Lot of functional connections in UM control children differ significantly from KKI, NYU and UCLA combined together, probably for different site parameters, linked to scanning protocol used. Specifically, as shown in <xref rid="T2" ref-type="table">
+<bold>Table 2</bold>
+</xref>, the scan duration of time series in UM is longer than the KKI, NYU and UCLA same parameter. Nielsen et al. (<xref rid="B24" ref-type="bibr">24</xref>) demonstrated that the scan duration is linked to the classification accuracy, since the longer the time series, the better the performance achieved. The best performance we obtained on the UM site data in the cross-validation scheme is also consistent with the following interpretation: the composition of the samples collected at each single site is not equivalent in terms of the information it provides on the ASD condition. Moreover, none of the four samples we considered is large enough to represent the entire population of children with ASD, which is intrinsically extremely heterogeneous in terms of etiopathogenesis (<xref rid="B43" ref-type="bibr">43</xref>), neuroanatomical alterations (<xref rid="B44" ref-type="bibr">44</xref>), and phenotypic expression (<xref rid="B45" ref-type="bibr">45</xref>). In addition, if the population with ASD was sufficiently represented by these data samples, we would have obtained a lower standard deviation in the leave-one-site-out cross-validation results.</p>
+      <p>Our rs-fMRI analysis identified both over- and under-FC patterns in the ASD group relative to controls. This result could be interpreted from a developmental perspective (<xref rid="B46" ref-type="bibr">46</xref>, <xref rid="B47" ref-type="bibr">47</xref>), considering that both children – in which generally over-FC prevails (<xref rid="B15" ref-type="bibr">15</xref>, <xref rid="B48" ref-type="bibr">48</xref>) – and preadolescents/early adolescents – in which under-FC is more frequently reported (<xref rid="B9" ref-type="bibr">9</xref>, <xref rid="B11" ref-type="bibr">11</xref>) – are present in our sample. However, other recent studies suggest the coexistence of over- and under-FC in the brain of subjects with ASD, independently of their age (<xref rid="B49" ref-type="bibr">49</xref>, <xref rid="B50" ref-type="bibr">50</xref>). The absence of the adult population did not allow us to verify this hypothesis in our sample.</p>
+      <p>Specifically, we detected increased FC within DMN (between the angular gyrus and the precuneus) in ASD individuals compared with controls, in line with some previous investigation (<xref rid="B16" ref-type="bibr">16</xref>, <xref rid="B48" ref-type="bibr">48</xref>). Interestingly, a study that investigated age-related changes in FC by dycothomizing their sample into younger (6- to 9-year olds) and older subjects (10- to 17-year olds) identified reduced FC between DMN nodes in the older group only, and that this FC in the DMN increased with age in the TD controls, but not in the ASD children, providing support for the “developmental disconnection model” of ASD (<xref rid="B51" ref-type="bibr">51</xref>).</p>
+      <p>A stronger connection between anterior and posterior areas of the brain (e.g. middle temporal and inferior frontal; lateral occipital, and frontal operculum) was detected in our sample. Strikingly, the opposite pattern – under-connection between anterior and posterior areas of the brain for ASD subjects – was identified in a recent investigation that has applied deep learning algorithms to the ABIDE dataset (<xref rid="B52" ref-type="bibr">52</xref>). Unlike the current study, Heinsfeld and colleagues (<xref rid="B52" ref-type="bibr">52</xref>) did not restrict the analysis to a limited age range: therefore, the opposite direction of correlation between antero-posterior regions could be partly ascribable to the different ages of the samples (adults vs. children).</p>
+      <p>Among the brain regions in which an increase in FC was detected, it is important to consider the inter-hemispheric connections between the inferior frontal gyri – IFG – (i.e. L pars opercularis with R frontal operculum), since these areas are critical for speech expression, that is frequently impaired in ASD individuals, but also for higher-level social cognitive abilities, such as theory of mind and empathy, typically compromised in ASD. Interestingly, even if all the participants of the current study fall into a near-average FSIQ, we detected a significant positive correlation between the level of cognitive functioning as measured by full-scale intelligence quotient and increased left-right IFG FC. Other studies have also found correlations between cognitive abilities and FC in ASD. For example, Reiter et al. (<xref rid="B53" ref-type="bibr">53</xref>) found significant under-FC within the DMN and the visual ventral stream in lower-functioning ASD children compared with matched higher-functioning ASD, while Linke et al. (<xref rid="B54" ref-type="bibr">54</xref>) showed that reduced interhemispheric connectivity between auditory cortical areas was correlated with lower verbal IQ. Conversely, some investigations did not report any impact of IQ levels on FC results [<xref rid="B9" ref-type="bibr">9</xref>, (i.e. Weng 2010 and Salmi 2013)].</p>
+      <p>An opposite pattern compared to what we have identified, and thus characterized by weak FC in IFG and other language-related brain regions, has been observed in toddlers with ASD, and was correlated with impairment in expressive language ability (<xref rid="B56" ref-type="bibr">56</xref>). Under-FC involving interhemispheric Broca’s area was also reported in adolescents with ASD and clear comorbid language impairment (<xref rid="B14" ref-type="bibr">14</xref>), suggesting a role of altered FC in communication deficits of subjects with ASD. Of note, in a recent whole-brain meta-analysis of rs-fMRI investigations in ASD, the IFG is one of the few brain regions in which resting-state activity was increased (<xref rid="B57" ref-type="bibr">57</xref>).</p>
+      <p>Although with a lower statistical significance (p &lt; 0.01), increased FC is also displayed within the temporal cortex of subjects with ASD -between the R inferior temporal gyrus and the R parahippocampal gyrus-. Crucially, an increased local FC in these regions was found in high-functioning adolescents with ASD and was correlated with higher core ASD symptom severity (<xref rid="B58" ref-type="bibr">58</xref>). Moreover, a similar pattern of local functional over-FC in posterior brain regions including the parahippocampal gyrus was reported in a mixed group of children and adolescents with ASD (<xref rid="B59" ref-type="bibr">59</xref>). This regional pattern of over-FC in posterior brain areas involved in visual processing is consistent with preference for local over global visual processing repeatedly observed in individuals with ASD (<xref rid="B60" ref-type="bibr">60</xref>, <xref rid="B61" ref-type="bibr">61</xref>).</p>
+      <p>Importantly, among the under-FC findings, we observed lowered FC between R hippocampus and R fusiform cortex. In line with this finding, the fusiform and the hippocampus – together with the amygdala – belong to the facial memory regions, i.e. structures that are implicated in the memory for faces, an ability particularly impaired in subjects with ASD (<xref rid="B62" ref-type="bibr">62</xref>). Alterations in the fusiform–hippocampal cortex emerged also from studies investigating the anatomy (<xref rid="B63" ref-type="bibr">63</xref>), the structural connectivity (<xref rid="B64" ref-type="bibr">64</xref>), and the FC (<xref rid="B65" ref-type="bibr">65</xref>) of individuals with ASD relative to TC. Moreover, insofar as brain–behaviour relationship is concerned, the reduced connectivity between the hippocampus and the fusiform cortex in the ASD group is related to ASD symptom severity (assessed by the Autism Diagnostic Observation Schedule, total and calibrated severity scores, with higher scores indicating greater impairment). Therefore, our results support an impaired connectivity in the brain systems underlying social cognitive skills that is more pronounced in children with more severe ASD core symptoms, suggesting a direct involvement of FC abnormalities in the ASD pathophysiology. Further, the weaker connection between supramarginal gyrus (part of the inferior parietal lobule) and planum polare (part of the superior temporal gyrus) contributed most to differentiating ASD from TD controls. Notably, these regions belong to the DMN, which has been suggested to be involved in social cognition, theory of mind (<xref rid="B66" ref-type="bibr">66</xref>, <xref rid="B67" ref-type="bibr">67</xref>), self-evaluation, and introspection, and whose disruption has been consistently reported in subjects with ASD (<xref rid="B7" ref-type="bibr">7</xref>, <xref rid="B68" ref-type="bibr">68</xref>, <xref rid="B69" ref-type="bibr">69</xref>). Therefore, reduction in resting state FC in regions of the DMN might underlie some of the core features associated with ASD. Not unexpectedly, other pivotal hub of the DMN, such as the middle temporal gyrus, the parahippocampal gyrus, the posterior cingulate gyrus, the precuneus, and the angular gyrus are part of the weaker connections we found in children with ASD.</p>
+      <p>Among the weaknesses of the present study is the limited number of subjects in the sample. We focused on children in the age range of 6.5–13 years, thus strongly reducing the number of subjects available in the ABIDE preprocessed sample. In addition, due to the possible additional heterogeneity factors related to gender and eyes status, we restricted the analysis to males whose scans were acquired with open eyes. Only the four more populated sites satisfying all these conditions were considered for the analysis. The choice of applying narrow selection criteria-thus restricting the analysis to a sample of less than 200 subjects- derives from the need of reducing the heterogeneity factors only to those intrinsically related to the ASD condition. In this framework, we could not assess the impact of sex on altered functional connections, due to the exiguous number of female children in the ABIDE cohorts, and to the unbalanced amount of subjects with ASD and controls at each site (see <xref ref-type="fig" rid="f1">
+<bold>Figure 1A</bold>
+</xref>). We provided in the Supplementary Materials a confirmation of the fact that the ASD vs. TD discrimination ability of the classifier increases when increasingly stringent selection criteria are applied. The augmented classification performance in the proposed cross-validation scheme corresponds to better generalization capability of the classifier, which is consistent with a reduced heterogeneity in the multisite cohort.</p>
+      <p>Despite the restriction criteria adopted on the whole sample, the remaining four cohorts show demographic characteristics that are significantly different across sites, as shown in the ANOVA and Kruskal-Wallis analyses carried out on ASD and TD children (<xref rid="T3" ref-type="table">
+<bold>Table 3</bold>
+</xref>). The different characteristics of the cohorts become visible in the ASD vs. TD discrimination results reported separately on each site in the leave-one-site-out cross-validation scheme (see <xref rid="T5" ref-type="table">
+<bold>Table 5</bold>
+</xref>).</p>
+      <p>In addition to the characteristics of the population analyzed at each site, other effects may have had an impact on the classification results. To demonstrate the strength of the impact of the site provenience on the classification, we reported in the Supplementary Materials the 4-class L-SVM classification performance of the FC patterns of the TD of the four sites, which reaches an accuracy of 0.94. Since site-related heterogeneity factors play an important role in classification results, it might be appropriate to restrict multisite analyses only to sites that present similar characteristics, for example in terms of scan time duration and scanner vendors. Other approaches could be to consider the site as covariate and regress out the multisite variability from the analysis, or to use advanced techniques to filter out site heterogeneity (<xref rid="B70" ref-type="bibr">70</xref>). Other multisite trials, related to other brain diseases, recommend a standardization procedure across sites, including, for example, post-acquisition corrections of image artifacts (<xref rid="B71" ref-type="bibr">71</xref>).</p>
+      <p>A possible limitation of this study, which is related to the size of the sample we considered, is the risk of overfitting during the classifier training. The number of FC features derived using a parcellation atlas with N regions scales as ∼N<sup>2</sup> thus a compromise should be achieved between the desired granularity of the signal localization and the risk of overfitting, which affects the classifier training when the number of features exceeds the number of available cases. As the latter risk affects all the classification experiments in our analyses, regardless the atlas we used, we adopted the linear-kernel SVM classifiers, which have demonstrated robust generalization performances even in case of small training sets with respect to the number of features (<xref rid="B39" ref-type="bibr">39</xref>). Feature selection criteria could also be considered to reduce the risk of overfitting; however, better results are not always guaranteed, due to global effects that may influence the FC (<xref rid="B23" ref-type="bibr">23</xref>). Whole-brain feature selection approaches based on L-SVM recursive feature elimination (SVM-RFE) may be attempted (<xref rid="B72" ref-type="bibr">72</xref>).</p>
+      <p>Provided these limitations, it is straightforward that the significant altered connections we found are specific of this data sample and therefore not generalizable to female population, to low-functioning individuals, and to subjects with a different age-range. Our analysis suggests the need to collect more populated data samples, which have to be properly stratified in order to reduce the known sources of heterogeneity that may affect the investigation.</p>
+    </sec>
+    <sec sec-type="conclusions" id="s5">
+      <title>Conclusion</title>
+      <p>In conclusion, the use of machine learning techniques has allowed the identification of few significant altered functional connections in children with ASD with respect to controls. Despite an average performance of AUC = 0.75 is achieved in ASD vs. control classification in the leave-one-site-out cross-validation scheme, the classification performances obtained on each single site are highly variable, with AUC values in the 0.71–0.83 range. In particular, for one of the samples (UM), subjects with ASD and controls can be very effectively differentiated (AUC = 0.83) by using the FC patterns learned on the other three sites.</p>
+      <p>In multisite retrospective studies, selecting sites with similar scanning protocol and restricting the FIQ and age ranges of participants is a prerequisite to limit the impact of confounding factors in the results of the analysis. Nevertheless, these restrictions do not guarantee that the populations represented at each site contribute similar information to the analysis, especially in the case of limited numerosity of the sample and highly heterogeneous conditions.</p>
+      <p>Despite these considerations, the present study highlighted a set of functional connections that are altered in children with ASD with respect to TD controls. Both over- and under-FC patterns have been detected, confirming the coexistence of mixed FC findings not only in ASD subjects in a wide age range (<xref rid="B73" ref-type="bibr">73</xref>), but also within a selected, homogeneous sample of ASD children.</p>
+    </sec>
+    <sec sec-type="data-availability" id="s6">
+      <title>Data Availability</title>
+      <p>Publicly available datasets were analyzed in this study. This data can be found here: <uri xlink:type="simple" xlink:href="http://fcon_1000.projects.nitrc.org/indi/abide/">http://fcon_1000.projects.nitrc.org/indi/abide/</uri>
+</p>
+    </sec>
+    <sec id="s7">
+      <title>Ethics Statement</title>
+      <p>The publicly available data resource ABIDE preprocessed (<uri xlink:type="simple" xlink:href="http://fcon_1000.projects.nitrc.org/indi/abide/">http://fcon_1000.projects.nitrc.org/indi/abide/</uri>) has been used in this analysis.</p>
+    </sec>
+    <sec id="s8">
+      <title>Author Contributions</title>
+      <p>SC and AR designed the study; GS, PB, EF, LP, and PO carried out data processing and analysis; FM and SC interpreted the results; GS, AR, and SC drafted the manuscript; GS edited the manuscript; all authors revised and approved the content of the manuscript.</p>
+    </sec>
+    <sec sec-type="funding-information" id="s9">
+      <title>Funding</title>
+      <p>The ABIDE preprocessed data have been used in this analysis (<xref rid="B24" ref-type="bibr">24</xref>–<xref rid="B26" ref-type="bibr">26</xref>). This work has been partially funded by the Tuscany Government (Bando FAS Salute by Sviluppo Toscana, ARIANNA Project), by the National Institute of Nuclear Physics (nextMR project), and by a grant from the IRCCS Fondazione Stella Maris (Ricerca Corrente, and the “5 × 1000” voluntary contributions, Italian Ministry of Health).</p>
+    </sec>
+    <sec id="s10">
+      <title>Conflict of Interest Statement</title>
+      <p>The authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.</p>
+    </sec>
+  </body>
+  <back>
+    <fn-group>
+      <fn id="fn1">
+        <label>1</label>
+        <p>
+          <uri xlink:type="simple" xlink:href="http://fcon_1000.projects.nitrc.org/indi/abide/">http://fcon_1000.projects.nitrc.org/indi/abide/</uri>
+        </p>
+      </fn>
+    </fn-group>
+    <sec sec-type="supplementary-material" id="s11">
+      <title>Supplementary Material</title>
+      <p>The Supplementary Material for this article can be found online at: <ext-link ext-link-type="uri" xlink:href="https://www.frontiersin.org/articles/10.3389/fpsyt.2019.00620/full#supplementary-material">https://www.frontiersin.org/articles/10.3389/fpsyt.2019.00620/full#supplementary-material</ext-link></p>
+      <supplementary-material content-type="local-data" id="SM1">
+        <media xlink:href="DataSheet_1.docx">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+    </sec>
+    <ref-list>
+      <title>References</title>
+      <ref id="B1">
+        <label>1</label>
+        <mixed-citation publication-type="book"><person-group person-group-type="author"><collab>American Psychiatric Association</collab></person-group>
+<source>Diagnostic and Statistical Manual of Mental Disorders</source>. <edition>5th</edition> Edn. <publisher-loc>Arlington, VA</publisher-loc>: <publisher-name>American Psychiatric Association</publisher-name> (<year>2013</year>).</mixed-citation>
+      </ref>
+      <ref id="B2">
+        <label>2</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Baio</surname><given-names>J</given-names></name><name><surname>Wiggins</surname><given-names>L</given-names></name><name><surname>Christensen</surname><given-names>DL</given-names></name><name><surname>Maenner</surname><given-names>MJ</given-names></name><name><surname>Daniels</surname><given-names>J</given-names></name><name><surname>Warren</surname><given-names>Z</given-names></name><etal/></person-group>
+<article-title>Prevalence of autism spectrum disorder among children aged 8 years — autism and developmental disabilities monitoring network, 11 sites, United States, 2014</article-title>. <source>MMWR Surveill Summ</source> (<year>2018</year>) <volume>67</volume>:<fpage>1</fpage>–<lpage>23</lpage>. <pub-id pub-id-type="doi">10.15585/mmwr.ss6706a1</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B3">
+        <label>3</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Sandin</surname><given-names>S</given-names></name><name><surname>Lichtenstein</surname><given-names>P</given-names></name><name><surname>Kuja-Halkola</surname><given-names>R</given-names></name><name><surname>Larsson</surname><given-names>H</given-names></name><name><surname>Hultman</surname><given-names>CM</given-names></name><name><surname>Reichenberg</surname><given-names>A</given-names></name></person-group>
+<article-title>The familial risk of autism</article-title>. <source>JAMA</source> (<year>2014</year>) <volume>311</volume>:<page-range>1770–7</page-range>. <pub-id pub-id-type="doi">10.1001/jama.2014.4144</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B4">
+        <label>4</label>
+        <mixed-citation publication-type="book">
+<person-group person-group-type="author"><name><surname>Andrews</surname><given-names>DS</given-names></name><name><surname>Marquand</surname><given-names>A</given-names></name><name><surname>Ecker</surname><given-names>C</given-names></name><name><surname>McAlonan</surname><given-names>G</given-names></name></person-group>
+<article-title>Using pattern classification to identify brain imaging markers in autism spectrum disorder</article-title>. In: <person-group person-group-type="editor"><name><surname>Pratt</surname><given-names>J</given-names></name><name><surname>Hall</surname><given-names>J</given-names></name></person-group>, editors. <source>Biomarkers in Psychiatry. Current Topics in Behavioral Neurosciences</source>. <publisher-name>Springer</publisher-name>, <publisher-loc>Cham</publisher-loc> (<year>2018</year>). <fpage>40</fpage>.</mixed-citation>
+      </ref>
+      <ref id="B5">
+        <label>5</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Biswal</surname><given-names>B</given-names></name><name><surname>Yetkin</surname><given-names>FZ</given-names></name><name><surname>Haughton</surname><given-names>VM</given-names></name><name><surname>Hyde</surname><given-names>JS</given-names></name></person-group>
+<article-title>Functional connectivity in the motor cortex of resting human brain using echo-planar MRI</article-title>. <source>Magn Reson Med</source> (<year>1995</year>) <volume>34</volume>:<page-range>537–41</page-range>. <pub-id pub-id-type="doi">10.1002/mrm.1910340409</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B6">
+        <label>6</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Yerys</surname><given-names>BE</given-names></name><name><surname>Wallace</surname><given-names>GL</given-names></name><name><surname>Harrison</surname><given-names>B</given-names></name><name><surname>Celano</surname><given-names>MJ</given-names></name><name><surname>Giedd</surname><given-names>JN</given-names></name><name><surname>Kenworthy</surname><given-names>LE</given-names></name></person-group>
+<article-title>Set-shifting in children with autism spectrum disorders: reversal shifting deficits on the Intradimensional/Extradimensional Shift Test correlate with repetitive behaviors</article-title>. <source>Autism</source> (<year>2009</year>) <volume>13</volume>:<page-range>523–38</page-range>. <pub-id pub-id-type="doi">10.1177/1362361309335716</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B7">
+        <label>7</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kennedy</surname><given-names>DP</given-names></name><name><surname>Courchesne</surname><given-names>E</given-names></name></person-group>
+<article-title>The intrinsic functional organization of the brain is altered in autism</article-title>. <source>Neuroimage</source> (<year>2008</year>) <volume>39</volume>:<page-range>1877–85</page-range>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2007.10.052</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B8">
+        <label>8</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Anderson</surname><given-names>JS</given-names></name><name><surname>Nielsen</surname><given-names>JA</given-names></name><name><surname>Froehlich</surname><given-names>AL</given-names></name><name><surname>Dubray</surname><given-names>MB</given-names></name><name><surname>Druzgal</surname><given-names>TJ</given-names></name><name><surname>Cariello</surname><given-names>AN</given-names></name><etal/></person-group> Functional connectivity magnetic resonance imaging classification of autism. Brain (<year>2011</year>) <volume>134</volume>:<page-range>3739–51</page-range>. <pub-id pub-id-type="doi">10.1093/brain/awr263</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B9">
+        <label>9</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Weng</surname><given-names>S-J</given-names></name><name><surname>Wiggins</surname><given-names>JL</given-names></name><name><surname>Peltier</surname><given-names>SJ</given-names></name><name><surname>Carrasco</surname><given-names>M</given-names></name><name><surname>Risi</surname><given-names>S</given-names></name><name><surname>Lord</surname><given-names>C</given-names></name><etal/></person-group>
+<article-title>Alterations of resting state functional connectivity in the default network in adolescents with autism spectrum disorders</article-title>. <source>Brain Res</source> (<year>2010</year>) <volume>1313</volume>:<page-range>202–14</page-range>. <pub-id pub-id-type="doi">10.3389/fpsyt.2016.00205</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B10">
+        <label>10</label>
+        <mixed-citation publication-type="other">
+<person-group person-group-type="author"><name><surname>Hull</surname><given-names>JV</given-names></name><name><surname>Dokovna</surname><given-names>LB</given-names></name><name><surname>Jacokes</surname><given-names>ZJ</given-names></name><name><surname>Torgerson</surname><given-names>CM</given-names></name><name><surname>Irimia</surname><given-names>A</given-names></name><name><surname>Van Horn</surname><given-names>JD</given-names></name></person-group>
+<article-title>Corrigendum: resting-state functional connectivity in autism spectrum disorders: a review</article-title>. <source>Front Psychiatry</source> (<year>2017</year>) <fpage>7</fpage>. <pub-id pub-id-type="doi">10.3389/fpsyt.2016.00205</pub-id>
+<pub-id pub-id-type="pmid">28210230</pub-id></mixed-citation>
+      </ref>
+      <ref id="B11">
+        <label>11</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Assaf</surname><given-names>M</given-names></name><name><surname>Jagannathan</surname><given-names>K</given-names></name><name><surname>Calhoun</surname><given-names>VD</given-names></name><name><surname>Miller</surname><given-names>L</given-names></name><name><surname>Stevens</surname><given-names>MC</given-names></name><name><surname>Sahl</surname><given-names>R</given-names></name><etal/></person-group>
+<article-title>Abnormal functional connectivity of default mode sub-networks in autism spectrum disorder patients</article-title>. <source>Neuroimage</source> (<year>2010</year>) <volume>53</volume>:<page-range>247–56</page-range>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2010.05.067</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B12">
+        <label>12</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Monk</surname><given-names>CS</given-names></name><name><surname>Peltier</surname><given-names>SJ</given-names></name><name><surname>Wiggins</surname><given-names>JL</given-names></name><name><surname>Weng</surname><given-names>S-J</given-names></name><name><surname>Carrasco</surname><given-names>M</given-names></name><name><surname>Risi</surname><given-names>S</given-names></name><etal/></person-group>
+<article-title>Abnormalities of intrinsic functional connectivity in autism spectrum disorders</article-title>. <source>Neuroimage</source> (<year>2009</year>) <volume>47</volume>:<page-range>764–72</page-range>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2009.04.069</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B13">
+        <label>13</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Ebisch</surname><given-names>SJH</given-names></name><name><surname>Gallese</surname><given-names>V</given-names></name><name><surname>Willems</surname><given-names>RM</given-names></name><name><surname>Mantini</surname><given-names>D</given-names></name><name><surname>Groen</surname><given-names>WB</given-names></name><name><surname>Romani</surname><given-names>GL</given-names></name><etal/></person-group>
+<article-title>Altered intrinsic functional connectivity of anterior and posterior insula regions in high-functioning participants with autism spectrum disorder</article-title>. <source>Hum Brain Mapp</source> (<year>2011</year>) <volume>32</volume>:<page-range>1013–28</page-range>. <pub-id pub-id-type="doi">10.1002/hbm.21085</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B14">
+        <label>14</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Verly</surname><given-names>M</given-names></name><name><surname>Verhoeven</surname><given-names>J</given-names></name><name><surname>Zink</surname><given-names>I</given-names></name><name><surname>Mantini</surname><given-names>D</given-names></name><name><surname>Peeters</surname><given-names>R</given-names></name><name><surname>Deprez</surname><given-names>S</given-names></name><etal/></person-group>
+<article-title>Altered functional connectivity of the language network in ASD: role of classical language areas and cerebellum</article-title>. <source>NeuroImage Clin</source> (<year>2014</year>) <volume>4</volume>:<page-range>374–82</page-range>. <pub-id pub-id-type="doi">10.1016/j.nicl.2014.01.008</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B15">
+        <label>15</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Supekar</surname><given-names>K</given-names></name><name><surname>Uddin</surname><given-names>LQ</given-names></name><name><surname>Khouzam</surname><given-names>A</given-names></name><name><surname>Phillips</surname><given-names>J</given-names></name><name><surname>Gaillard</surname><given-names>WD</given-names></name><name><surname>Kenworthy</surname><given-names>LE</given-names></name><etal/></person-group>
+<article-title>Brain hyperconnectivity in children with autism and its links to social deficits</article-title>. <source>Cell Rep</source> (<year>2013</year>) <volume>5</volume>:<page-range>738–47</page-range>. <pub-id pub-id-type="doi">10.1016/j.celrep.2013.10.001</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B16">
+        <label>16</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Uddin</surname><given-names>LQ</given-names></name><name><surname>Supekar</surname><given-names>K</given-names></name><name><surname>Lynch</surname><given-names>CJ</given-names></name><name><surname>Khouzam</surname><given-names>A</given-names></name><name><surname>Phillips</surname><given-names>J</given-names></name><name><surname>Feinstein</surname><given-names>C</given-names></name><etal/></person-group>
+<article-title>Salience network-based classification and prediction of symptom severity in children with autism</article-title>. <source>JAMA Psychiatry</source> (<year>2013</year>) <volume>70</volume>:<page-range>869–79</page-range>. <pub-id pub-id-type="doi">10.1001/jamapsychiatry.2013.104</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B17">
+        <label>17</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Plitt</surname><given-names>M</given-names></name><name><surname>Barnes</surname><given-names>KA</given-names></name><name><surname>Martin</surname><given-names>A</given-names></name></person-group>
+<article-title>Functional connectivity classification of autism identifies highly predictive brain features but falls short of biomarker standards</article-title>. <source>NeuroImage Clin</source> (<year>2015</year>) <volume>7</volume>:<page-range>359–66</page-range>. <pub-id pub-id-type="doi">10.1016/j.nicl.2014.12.013</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B18">
+        <label>18</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Retico</surname><given-names>A</given-names></name><name><surname>Giuliano</surname><given-names>A</given-names></name><name><surname>Tancredi</surname><given-names>R</given-names></name><name><surname>Cosenza</surname><given-names>A</given-names></name><name><surname>Apicella</surname><given-names>F</given-names></name><name><surname>Narzisi</surname><given-names>A</given-names></name><etal/></person-group>
+<article-title>The effect of gender on the neuroanatomy of children with autism spectrum disorders: a support vector machine case-control study</article-title>. <source>Mol Autism</source> (<year>2016</year>) <volume>7</volume>:<fpage>5</fpage>. <pub-id pub-id-type="doi">10.1186/s13229-015-0067-3</pub-id>
+<pub-id pub-id-type="pmid">26788282</pub-id></mixed-citation>
+      </ref>
+      <ref id="B19">
+        <label>19</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Bosco</surname><given-names>P</given-names></name><name><surname>Giuliano</surname><given-names>A</given-names></name><name><surname>Delafield-Butt</surname><given-names>J</given-names></name><name><surname>Muratori</surname><given-names>F</given-names></name><name><surname>Calderoni</surname><given-names>S</given-names></name><name><surname>Retico</surname><given-names>A</given-names></name></person-group>
+<article-title>Brainstem enlargement in preschool children with autism: results from an intermethod agreement study of segmentation algorithms</article-title>. <source>Hum Brain Mapp</source> (<year>2019</year>) <volume>40</volume>:<fpage>7</fpage>–<lpage>19</lpage>. <pub-id pub-id-type="doi">10.1002/hbm.24351</pub-id>
+<pub-id pub-id-type="pmid">30184295</pub-id></mixed-citation>
+      </ref>
+      <ref id="B20">
+        <label>20</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Ecker</surname><given-names>C</given-names></name></person-group>
+<article-title>The neuroanatomy of autism spectrum disorder: an overview of structural neuroimaging findings and their translatability to the clinical setting</article-title>. <source>Autism</source> (<year>2017</year>) <volume>21</volume>:<fpage>18</fpage>–<lpage>28</lpage>. <pub-id pub-id-type="doi">10.1177/1362361315627136</pub-id>
+<pub-id pub-id-type="pmid">26975670</pub-id></mixed-citation>
+      </ref>
+      <ref id="B21">
+        <label>21</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Alaerts</surname><given-names>K</given-names></name><name><surname>Swinnen</surname><given-names>SP</given-names></name><name><surname>Wenderoth</surname><given-names>N</given-names></name></person-group>
+<article-title>Sex differences in autism: a resting-state fMRI investigation of functional brain connectivity in males and females</article-title>. <source>Soc Cogn Affect Neurosci</source> (<year>2016</year>) <volume>11</volume>:<page-range>1002–16</page-range>. <pub-id pub-id-type="doi">10.1093/scan/nsw027</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B22">
+        <label>22</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Nair</surname><given-names>S</given-names></name><name><surname>Jao Keehn</surname><given-names>RJ</given-names></name><name><surname>Berkebile</surname><given-names>MM</given-names></name><name><surname>Maximo</surname><given-names>JO</given-names></name><name><surname>Witkowska</surname><given-names>N</given-names></name><etal/></person-group>
+<article-title>Local resting state functional connectivity in autism: site and cohort variability and the effect of eye status</article-title>. <source>Brain Imaging Behav</source> (<year>2018</year>) <volume>12</volume>:<page-range>168–79</page-range>. <pub-id pub-id-type="doi">10.1007/s11682-017-9678-y</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B23">
+        <label>23</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Abraham</surname><given-names>A</given-names></name><name><surname>Milham</surname><given-names>MP</given-names></name><name><surname>Di Martino</surname><given-names>A</given-names></name><name><surname>Craddock</surname><given-names>RC</given-names></name><name><surname>Samaras</surname><given-names>D</given-names></name><etal/></person-group>
+<article-title>Deriving reproducible biomarkers from multi-site resting-state data: an Autism-based example</article-title>. <source>Neuroimage</source> (<year>2017</year>) <volume>147</volume>:<page-range>736–45</page-range>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2016.10.045</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B24">
+        <label>24</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Nielsen</surname><given-names>JA</given-names></name><name><surname>Zielinski</surname><given-names>BA</given-names></name><name><surname>Fletcher</surname><given-names>PT</given-names></name><name><surname>Alexander</surname><given-names>AL</given-names></name><name><surname>Lange</surname><given-names>N</given-names></name><name><surname>Bigler</surname><given-names>ED</given-names></name><etal/></person-group>
+<article-title>Multisite functional connectivity MRI classification of autism: ABIDE results</article-title>. <source>Front Hum Neurosci</source> (<year>2013</year>) <volume>7</volume>:<fpage>599</fpage>. <pub-id pub-id-type="doi">10.3389/fnhum.2013.00599</pub-id>
+<pub-id pub-id-type="pmid">24093016</pub-id></mixed-citation>
+      </ref>
+      <ref id="B25">
+        <label>25</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Di Martino</surname><given-names>A</given-names></name><name><surname>Yan</surname><given-names>C-G</given-names></name><name><surname>Li</surname><given-names>Q</given-names></name><name><surname>Denio</surname><given-names>E</given-names></name><name><surname>Castellanos</surname><given-names>FX</given-names></name><etal/></person-group>
+<article-title>The autism brain imaging data exchange: towards a large-scale evaluation of the intrinsic brain architecture in autism</article-title>. <source>Mol Psychiatry</source> (<year>2014</year>) <volume>19</volume>:<page-range>659–67</page-range>. <pub-id pub-id-type="doi">10.1038/mp.2013.78</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B26">
+        <label>26</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Loomes</surname><given-names>R</given-names></name><name><surname>Hull</surname><given-names>L</given-names></name><name><surname>Mandy</surname><given-names>WPL</given-names></name></person-group>
+<article-title>What is the male-to-female ratio in autism spectrum disorder? a systematic review and meta-analysis</article-title>. <source>J Am Acad Child Adolesc Psychiatry</source> (<year>2017</year>) <volume>56</volume>:<page-range>466–74</page-range>. <pub-id pub-id-type="doi">10.1016/j.jaac.2017.03.013</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B27">
+        <label>27</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Gotham</surname><given-names>K</given-names></name><name><surname>Pickles</surname><given-names>A</given-names></name><name><surname>Lord</surname><given-names>C</given-names></name></person-group>
+<article-title>Standardizing ADOS scores for a measure of severity in autism spectrum disorders</article-title>. <source>J Autism Dev Disord</source> (<year>2009</year>) <volume>39</volume>:<fpage>693</fpage>–<lpage>705</lpage>. <pub-id pub-id-type="doi">10.1007/s10803-008-0674-3</pub-id>
+<pub-id pub-id-type="pmid">19082876</pub-id></mixed-citation>
+      </ref>
+      <ref id="B28">
+        <label>28</label>
+        <mixed-citation publication-type="webpage"><person-group person-group-type="author"><collab>ABIDE Homepage</collab></person-group> Available at: <uri xlink:type="simple" xlink:href="http://fcon_1000.projects.nitrc.org/indi/abide/">http://fcon_1000.projects.nitrc.org/indi/abide/</uri>.</mixed-citation>
+      </ref>
+      <ref id="B29">
+        <label>29</label>
+        <mixed-citation publication-type="webpage"><person-group person-group-type="author"><collab>ABIDE Preprocessed Homepage</collab></person-group> Available at: <uri xlink:type="simple" xlink:href="http://preprocessed-connectomes-project.org/abide/">http://preprocessed-connectomes-project.org/abide/</uri>.</mixed-citation>
+      </ref>
+      <ref id="B30">
+        <label>30</label>
+        <mixed-citation publication-type="other">
+<person-group person-group-type="author"><name><surname>Craddock</surname><given-names>C</given-names></name><name><surname>Benhajali</surname><given-names>Y</given-names></name><name><surname>Chu</surname><given-names>C</given-names></name><name><surname>Chouinard</surname><given-names>F</given-names></name><name><surname>Evans</surname><given-names>A</given-names></name><name><surname>Jakab</surname><given-names>A</given-names></name><etal/></person-group>
+<article-title>The Neuro Bureau Preprocessing Initiative: open sharing of preprocessed neuroimaging data and derivatives</article-title>. (<year>2013</year>). <pub-id pub-id-type="doi">10.3389/conf.fninf.2013.09.00041</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B31">
+        <label>31</label>
+        <mixed-citation publication-type="other">
+<person-group person-group-type="author"><name><surname>Craddock</surname><given-names>C</given-names></name><name><surname>Sikka</surname><given-names>S</given-names></name><name><surname>Cheung</surname><given-names>B</given-names></name><name><surname>Khanuja</surname><given-names>R</given-names></name><name><surname>Ghosh</surname><given-names>SS</given-names></name><name><surname>Yan</surname><given-names>C</given-names></name><etal/></person-group>
+<article-title>Towards automated analysis of connectomes: the configurable pipeline for the analysis of connectomes (C-PAC)</article-title>. <source>Front Neuroinform Conf Abstr Neuroinf</source> (<year>2013</year>) <pub-id pub-id-type="doi">10.3389/conf.fninf.2013.09.00042</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B32">
+        <label>32</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Murphy</surname><given-names>K</given-names></name><name><surname>Fox</surname><given-names>MD</given-names></name></person-group>
+<article-title>Towards a consensus regarding global signal regression for resting state functional connectivity MRI</article-title>. <source>Neuroimage</source> (<year>2017</year>) <volume>154</volume>:<page-range>169–73</page-range>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2016.11.052</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B33">
+        <label>33</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Craddock</surname><given-names>RC</given-names></name><name><surname>James</surname><given-names>GA</given-names></name><name><surname>Holtzheimer</surname><given-names>PE</given-names></name><name><surname>Hu</surname><given-names>XP</given-names></name><name><surname>Mayberg</surname><given-names>HS</given-names></name></person-group>
+<article-title>A whole brain fMRI atlas generated via spatially constrained spectral clustering</article-title>. <source>Hum Brain Mapp</source> (<year>2012</year>) <volume>33</volume>:<page-range>1914–28</page-range>. <pub-id pub-id-type="doi">10.1002/hbm.21333</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B34">
+        <label>34</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Power</surname><given-names>JD</given-names></name><name><surname>Cohen</surname><given-names>AL</given-names></name><name><surname>Nelson</surname><given-names>SM</given-names></name><name><surname>Wig</surname><given-names>GS</given-names></name><name><surname>Barnes</surname><given-names>KA</given-names></name><name><surname>Church</surname><given-names>JA</given-names></name><etal/></person-group>
+<article-title>Functional network organization of the human brain</article-title>. <source>Neuron</source> (<year>2011</year>) <volume>72</volume>:<page-range>665–78</page-range>. <pub-id pub-id-type="doi">10.1016/j.neuron.2011.09.006</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B35">
+        <label>35</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Chen</surname><given-names>H</given-names></name><name><surname>Nomi</surname><given-names>JS</given-names></name><name><surname>Uddin</surname><given-names>LQ</given-names></name><name><surname>Duan</surname><given-names>X</given-names></name><name><surname>Chen</surname><given-names>H</given-names></name></person-group>
+<article-title>Intrinsic functional connectivity variance and state-specific under-connectivity in autism</article-title>. <source>Hum Brain Mapp</source> (<year>2017</year>) <volume>38</volume>:<page-range>5740–55</page-range>. <pub-id pub-id-type="doi">10.1002/hbm.23764</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B36">
+        <label>36</label>
+        <mixed-citation publication-type="book"><person-group person-group-type="author"><name><surname>Vapnik</surname><given-names>VN NV</given-names></name></person-group>
+<source>The nature of statistical learning theory</source>. <publisher-loc>Berlin, Heidelberg</publisher-loc>: <publisher-name>Springer-Verlag</publisher-name> (<year>1995</year>). Available at: <uri xlink:type="simple" xlink:href="https://dl.acm.org/citation.cfm?id=211359">https://dl.acm.org/citation.cfm?id=211359</uri> [Accessed <date-in-citation>January 15, 2019</date-in-citation>].</mixed-citation>
+      </ref>
+      <ref id="B37">
+        <label>37</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kassraian-Fard</surname><given-names>P</given-names></name><name><surname>Matthis</surname><given-names>C</given-names></name><name><surname>Balsters</surname><given-names>JH</given-names></name><name><surname>Maathuis</surname><given-names>MH</given-names></name><name><surname>Wenderoth</surname><given-names>N</given-names></name></person-group>
+<article-title>Promises, pitfalls, and basic guidelines for applying machine learning classifiers to psychiatric imaging data, with autism as an example</article-title>. <source>Front Psychiatry</source> (<year>2016</year>) <volume>7</volume>:<fpage>177</fpage>. <pub-id pub-id-type="doi">10.3389/fpsyt.2016.00177</pub-id>
+<pub-id pub-id-type="pmid">27990125</pub-id></mixed-citation>
+      </ref>
+      <ref id="B38">
+        <label>38</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Mourão-Miranda</surname><given-names>J</given-names></name><name><surname>Bokde</surname><given-names>ALW</given-names></name><name><surname>Born</surname><given-names>C</given-names></name><name><surname>Hampel</surname><given-names>H</given-names></name><name><surname>Stetter</surname><given-names>M</given-names></name></person-group>
+<article-title>Classifying brain states and determining the discriminating activation patterns: support vector machine on functional MRI data</article-title>. <source>Neuroimage</source> (<year>2005</year>) <volume>28</volume>:<page-range>980–95</page-range>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2005.06.070</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B39">
+        <label>39</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Gori</surname><given-names>I</given-names></name><name><surname>Giuliano</surname><given-names>A</given-names></name><name><surname>Muratori</surname><given-names>F</given-names></name><name><surname>Saviozzi</surname><given-names>I</given-names></name><name><surname>Oliva</surname><given-names>P</given-names></name><name><surname>Tancredi</surname><given-names>R</given-names></name><etal/></person-group>
+<article-title>Gray matter alterations in young children with autism spectrum disorders: comparing morphometry at the voxel and regional level</article-title>. <source>J Neuroimaging</source> (<year>2015</year>) <volume>25</volume>:<page-range>866–74</page-range>. <pub-id pub-id-type="doi">10.1111/jon.12280</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B40">
+        <label>40</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Metz</surname><given-names>CE</given-names></name></person-group>
+<article-title>Receiver operating characteristic analysis: a tool for the quantitative evaluation of observer performance and imaging systems</article-title>. <source>J Am Coll Radiol</source> (<year>2006</year>) <volume>3</volume>:<page-range>413–22</page-range>. <pub-id pub-id-type="doi">10.1016/j.jacr.2006.02.021</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B41">
+        <label>41</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Mesulam</surname><given-names>MM</given-names></name></person-group>
+<article-title>From sensation to cognition</article-title>. <source>Brain</source> (<year>1998</year>) <volume>121</volume>(<issue>Pt 6</issue>):<page-range>1013–52</page-range>. <pub-id pub-id-type="doi">10.1093/brain/121.6.1013</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B42">
+        <label>42</label>
+        <mixed-citation publication-type="webpage">
+<person-group person-group-type="author"><name><surname>Benjamini</surname><given-names>Y</given-names></name><name><surname>Hochberg</surname><given-names>Y</given-names></name></person-group>
+<article-title>Controlling the false discovery rate: a practical and powerful approach to multiple testing</article-title>. (<year>1995</year>) Available at: <uri xlink:type="simple" xlink:href="http://engr.case.edu/ray_soumya/mlrg/controlling_fdr_benjamini95.pdf">http://engr.case.edu/ray_soumya/mlrg/controlling_fdr_benjamini95.pdf</uri> [Accessed <date-in-citation>January 15, 2019</date-in-citation>].</mixed-citation>
+      </ref>
+      <ref id="B43">
+        <label>43</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Ronemus</surname><given-names>M</given-names></name><name><surname>Iossifov</surname><given-names>I</given-names></name><name><surname>Levy</surname><given-names>D</given-names></name><name><surname>Wigler</surname><given-names>M</given-names></name></person-group>
+<article-title>The role of de novo mutations in the genetics of autism spectrum disorders</article-title>. <source>Nat Rev Genet</source> (<year>2014</year>) <volume>15</volume>:<page-range>133–41</page-range>. <pub-id pub-id-type="doi">10.1038/nrg3585</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B44">
+        <label>44</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Chen</surname><given-names>H</given-names></name><name><surname>Uddin</surname><given-names>LQ</given-names></name><name><surname>Guo</surname><given-names>X</given-names></name><name><surname>Wang</surname><given-names>J</given-names></name><name><surname>Wang</surname><given-names>R</given-names></name><name><surname>Wang</surname><given-names>X</given-names></name><etal/></person-group>
+<article-title>Parsing brain structural heterogeneity in males with autism spectrum disorder reveals distinct clinical subtypes</article-title>. <source>Hum Brain Mapp</source> (<year>2019</year>) <volume>40</volume>:<page-range>628–37</page-range>. <pub-id pub-id-type="doi">10.1002/hbm.24400</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B45">
+        <label>45</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Charman</surname><given-names>T</given-names></name><name><surname>Loth</surname><given-names>E</given-names></name><name><surname>Tillmann</surname><given-names>J</given-names></name><name><surname>Crawley</surname><given-names>D</given-names></name><name><surname>Wooldridge</surname><given-names>C</given-names></name><name><surname>Goyard</surname><given-names>D</given-names></name><etal/></person-group>
+<article-title>The EU-AIMS Longitudinal European Autism Project (LEAP): clinical characterisation</article-title>. <source>Mol Autism</source> (<year>2017</year>) <volume>8</volume>:<fpage>27</fpage>. <pub-id pub-id-type="doi">10.1186/s13229-017-0145-9</pub-id>
+<pub-id pub-id-type="pmid">28649313</pub-id></mixed-citation>
+      </ref>
+      <ref id="B46">
+        <label>46</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Nomi</surname><given-names>JS</given-names></name><name><surname>Uddin</surname><given-names>LQ</given-names></name></person-group>
+<article-title>Developmental changes in large-scale network connectivity in autism</article-title>. <source>NeuroImage Clin</source> (<year>2015</year>) <volume>7</volume>:<page-range>732–41</page-range>. <pub-id pub-id-type="doi">10.1016/j.nicl.2015.02.024</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B47">
+        <label>47</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Uddin</surname><given-names>LQ</given-names></name><name><surname>Supekar</surname><given-names>K</given-names></name><name><surname>Menon</surname><given-names>V</given-names></name></person-group>
+<article-title>Reconceptualizing functional brain connectivity in autism from a developmental perspective</article-title>. <source>Front Hum Neurosci</source> (<year>2013</year>) <volume>7</volume>:<fpage>458</fpage>. <pub-id pub-id-type="doi">10.3389/fnhum.2013.00458</pub-id>
+<pub-id pub-id-type="pmid">23966925</pub-id></mixed-citation>
+      </ref>
+      <ref id="B48">
+        <label>48</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Lynch</surname><given-names>CJ</given-names></name><name><surname>Uddin</surname><given-names>LQ</given-names></name><name><surname>Supekar</surname><given-names>K</given-names></name><name><surname>Khouzam</surname><given-names>A</given-names></name><name><surname>Phillips</surname><given-names>J</given-names></name><name><surname>Menon</surname><given-names>V</given-names></name></person-group>
+<article-title>Default mode network in childhood autism: posteromedial cortex heterogeneity and relationship with social deficits</article-title>. <source>Biol Psychiatry</source> (<year>2013</year>) <volume>74</volume>:<page-range>212–9</page-range>. <pub-id pub-id-type="doi">10.1016/j.biopsych.2012.12.013</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B49">
+        <label>49</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Hahamy</surname><given-names>A</given-names></name><name><surname>Behrmann</surname><given-names>M</given-names></name><name><surname>Malach</surname><given-names>R</given-names></name></person-group>
+<article-title>The idiosyncratic brain: distortion of spontaneous connectivity patterns in autism spectrum disorder</article-title>. <source>Nat Neurosci</source> (<year>2015</year>) <volume>18</volume>:<page-range>302–9</page-range>. <pub-id pub-id-type="doi">10.1038/nn.3919</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B50">
+        <label>50</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Yerys</surname><given-names>BE</given-names></name><name><surname>Herrington</surname><given-names>JD</given-names></name><name><surname>Satterthwaite</surname><given-names>TD</given-names></name><name><surname>Guy</surname><given-names>L</given-names></name><name><surname>Schultz</surname><given-names>RT</given-names></name><name><surname>Bassett</surname><given-names>DS</given-names></name></person-group>
+<article-title>Globally weaker and topologically different: resting-state connectivity in youth with autism</article-title>. <source>Mol Autism</source> (<year>2017</year>) <volume>8</volume>:<fpage>39</fpage>. <pub-id pub-id-type="doi">10.1186/s13229-017-0156-6</pub-id>
+<pub-id pub-id-type="pmid">28770039</pub-id></mixed-citation>
+      </ref>
+      <ref id="B51">
+        <label>51</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Washington</surname><given-names>SD</given-names></name><name><surname>Gordon</surname><given-names>EM</given-names></name><name><surname>Brar</surname><given-names>J</given-names></name><name><surname>Warburton</surname><given-names>S</given-names></name><name><surname>Sawyer</surname><given-names>AT</given-names></name><name><surname>Wolfe</surname><given-names>A</given-names></name><etal/></person-group>
+<article-title>Dysmaturation of the default mode network in autism</article-title>. <source>Hum Brain Mapp</source> (<year>2014</year>) <volume>35</volume>:<page-range>1284–96</page-range>. <pub-id pub-id-type="doi">10.1002/hbm.22252</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B52">
+        <label>52</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Heinsfeld</surname><given-names>AS</given-names></name><name><surname>Franco</surname><given-names>AR</given-names></name><name><surname>Craddock</surname><given-names>RC</given-names></name><name><surname>Buchweitz</surname><given-names>A</given-names></name><name><surname>Meneguzzi</surname><given-names>F</given-names></name></person-group>
+<article-title>Identification of autism spectrum disorder using deep learning and the ABIDE dataset</article-title>. <source>NeuroImage Clin</source> (<year>2018</year>) <volume>17</volume>:<fpage>16</fpage>–<lpage>23</lpage>. <pub-id pub-id-type="doi">10.1016/j.nicl.2017.08.017</pub-id>
+<pub-id pub-id-type="pmid">29034163</pub-id></mixed-citation>
+      </ref>
+      <ref id="B53">
+        <label>53</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Reiter</surname><given-names>MA</given-names></name><name><surname>Mash</surname><given-names>LE</given-names></name><name><surname>Linke</surname><given-names>AC</given-names></name><name><surname>Fong</surname><given-names>CH</given-names></name><name><surname>Fishman</surname><given-names>I</given-names></name><name><surname>Müller</surname><given-names>RA</given-names></name></person-group>
+<article-title>Distinct patterns of atypical functional connectivity in lower-functioning autism</article-title>. <source>Biol Psychiatry Cogn Neurosci Neuroimaging</source> (<year>2019</year>) <volume>4</volume>(<issue>3</issue>):<page-range>251–9</page-range>. <pub-id pub-id-type="doi">10.1016/j.bpsc.2018.08.009</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B54">
+        <label>54</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Linke</surname><given-names>AC</given-names></name><name><surname>Jao Keehn</surname><given-names>RJ</given-names></name><name><surname>Pueschel</surname><given-names>EB</given-names></name><name><surname>Fishman</surname><given-names>I</given-names></name><name><surname>Müller</surname><given-names>RA</given-names></name></person-group>
+<article-title>Children with ASD show links between aberrant sound processing, social symptoms, and atypical auditory interhemispheric and thalamocortical functional connectivity</article-title>. <source>Dev Cogn Neurosci</source> (<year>2018</year>) <volume>29</volume>:<page-range>117–26</page-range>. <pub-id pub-id-type="doi">10.1016/j.dcn.2017.01.007</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B55">
+        <label>55</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Salmi</surname><given-names>J</given-names></name><name><surname>Roine</surname><given-names>U</given-names></name><name><surname>Glerean</surname><given-names>E</given-names></name><name><surname>Lahnakoski</surname><given-names>J</given-names></name><name><surname>Nieminen-von</surname></name><name><surname>Wendt</surname><given-names>T</given-names></name><etal/></person-group>, <person-group person-group-type="author"><etal/></person-group>
+<article-title>The brains of high functioning autistic individuals do not synchronize with those of others</article-title>. <source>NeuroImage Clin</source> (<year>2013</year>) <volume>3</volume>:<page-range>489–97</page-range>. <pub-id pub-id-type="doi">10.1016/j.nicl.2013.10.011</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B56">
+        <label>56</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Dinstein</surname><given-names>I</given-names></name><name><surname>Pierce</surname><given-names>K</given-names></name><name><surname>Eyler</surname><given-names>L</given-names></name><name><surname>Solso</surname><given-names>S</given-names></name><name><surname>Malach</surname><given-names>R</given-names></name><name><surname>Behrmann</surname><given-names>M</given-names></name><etal/></person-group>
+<article-title>Disrupted neural synchronization in toddlers with autism</article-title>. <source>Neuron</source> (<year>2011</year>) <volume>70</volume>:<page-range>1218–25</page-range>. <pub-id pub-id-type="doi">10.1016/j.neuron.2011.04.018</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B57">
+        <label>57</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Wang</surname><given-names>W</given-names></name><name><surname>Liu</surname><given-names>J</given-names></name><name><surname>Shi</surname><given-names>S</given-names></name><name><surname>Liu</surname><given-names>T</given-names></name><name><surname>Ma</surname><given-names>L</given-names></name><name><surname>Ma</surname><given-names>X</given-names></name><etal/></person-group>
+<article-title>Altered resting-state functional activity in patients with autism spectrum disorder: a quantitative meta-analysis</article-title>. <source>Front Neurol</source> (<year>2018</year>) <volume>9</volume>:<fpage>556</fpage>. <pub-id pub-id-type="doi">10.3389/fneur.2018.00556</pub-id>
+<pub-id pub-id-type="pmid">30087648</pub-id></mixed-citation>
+      </ref>
+      <ref id="B58">
+        <label>58</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Keown</surname><given-names>CL</given-names></name><name><surname>Shih</surname><given-names>P</given-names></name><name><surname>Nair</surname><given-names>A</given-names></name><name><surname>Peterson</surname><given-names>N</given-names></name><name><surname>Mulvey</surname><given-names>ME</given-names></name><name><surname>Müller</surname><given-names>R-A</given-names></name></person-group>
+<article-title>Local functional overconnectivity in posterior brain regions is associated with symptom severity in autism spectrum disorders</article-title>. <source>Cell Rep</source> (<year>2013</year>) <volume>5</volume>:<page-range>567–72</page-range>. <pub-id pub-id-type="doi">10.1016/j.celrep.2013.10.003</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B59">
+        <label>59</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Maximo</surname><given-names>JO</given-names></name><name><surname>Keown</surname><given-names>CL</given-names></name><name><surname>Nair</surname><given-names>A</given-names></name><name><surname>Müller</surname><given-names>R-A</given-names></name></person-group>
+<article-title>Approaches to local connectivity in autism using resting state functional connectivity MRI</article-title>. <source>Front Hum Neurosci</source> (<year>2013</year>) <volume>7</volume>:<fpage>605</fpage>. <pub-id pub-id-type="doi">10.3389/fnhum.2013.00605</pub-id>
+<pub-id pub-id-type="pmid">24155702</pub-id></mixed-citation>
+      </ref>
+      <ref id="B60">
+        <label>60</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Happé</surname><given-names>F</given-names></name><name><surname>Frith</surname><given-names>U</given-names></name></person-group>
+<article-title>The weak coherence account: detail-focused cognitive style in autism spectrum disorders</article-title>. <source>J Autism Dev Disord</source> (<year>2006</year>) <volume>36</volume>:<fpage>5</fpage>–<lpage>25</lpage>. <pub-id pub-id-type="doi">10.1007/s10803-005-0039-0</pub-id>
+<pub-id pub-id-type="pmid">16450045</pub-id></mixed-citation>
+      </ref>
+      <ref id="B61">
+        <label>61</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Mottron</surname><given-names>L</given-names></name><name><surname>Dawson</surname><given-names>M</given-names></name><name><surname>Soulières</surname><given-names>I</given-names></name><name><surname>Hubert</surname><given-names>B</given-names></name><name><surname>Burack</surname><given-names>J</given-names></name></person-group>
+<article-title>Enhanced perceptual functioning in autism: an update, and eight principles of autistic perception</article-title>. <source>J Autism Dev Disord</source> (<year>2006</year>) <volume>36</volume>:<fpage>27</fpage>–<lpage>43</lpage>. <pub-id pub-id-type="doi">10.1007/s10803-005-0040-7</pub-id>
+<pub-id pub-id-type="pmid">16453071</pub-id></mixed-citation>
+      </ref>
+      <ref id="B62">
+        <label>62</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Wilkinson</surname><given-names>DA</given-names></name><name><surname>Best</surname><given-names>CA</given-names></name><name><surname>Minshew</surname><given-names>NJ</given-names></name><name><surname>Strauss</surname><given-names>MS</given-names></name></person-group>
+<article-title>Memory Awareness for Faces in Individuals with Autism</article-title>. <source>J Autism Dev Disord</source> (<year>2010</year>) <volume>40</volume>:<page-range>1371–7</page-range>. <pub-id pub-id-type="doi">10.1007/s10803-010-0995-x</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B63">
+        <label>63</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Trontel</surname><given-names>H</given-names></name><name><surname>Duffield</surname><given-names>T</given-names></name><name><surname>Bigler</surname><given-names>E</given-names></name><name><surname>Froehlich</surname><given-names>A</given-names></name><name><surname>Prigge</surname><given-names>M</given-names></name><name><surname>Nielsen</surname><given-names>J</given-names></name><etal/></person-group>
+<article-title>Fusiform correlates of facial memory in autism</article-title>. <source>Behav Sci (Basel)</source> (<year>2013</year>) <volume>3</volume>:<page-range>348–71</page-range>. <pub-id pub-id-type="doi">10.3390/bs3030348</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B64">
+        <label>64</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Conturo</surname><given-names>TE</given-names></name><name><surname>Williams</surname><given-names>DL</given-names></name><name><surname>Smith</surname><given-names>CD</given-names></name><name><surname>Gultepe</surname><given-names>E</given-names></name><name><surname>Akbudak</surname><given-names>E</given-names></name><name><surname>Minshew</surname><given-names>NJ</given-names></name></person-group>
+<article-title>Neuronal fiber pathway abnormalities in autism: an initial MRI diffusion tensor tracking study of hippocampo-fusiform and amygdalo-fusiform pathways</article-title>. <source>J Int Neuropsychol Soc</source> (<year>2008</year>) <volume>14</volume>:<page-range>933–46</page-range>. <pub-id pub-id-type="doi">10.1017/S1355617708081381</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B65">
+        <label>65</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Khan</surname><given-names>S</given-names></name><name><surname>Gramfort</surname><given-names>A</given-names></name><name><surname>Shetty</surname><given-names>NR</given-names></name><name><surname>Kitzbichler</surname><given-names>MG</given-names></name><name><surname>Ganesan</surname><given-names>S</given-names></name><name><surname>Moran</surname><given-names>JM</given-names></name><etal/></person-group>
+<article-title>Local and long-range functional connectivity is reduced in concert in autism spectrum disorders</article-title>. <source>Proc Natl Acad Sci U S A</source> (<year>2013</year>) <volume>110</volume>:<page-range>3107–12</page-range>. <pub-id pub-id-type="doi">10.1073/pnas.1214533110</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B66">
+        <label>66</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Premack</surname><given-names>D</given-names></name><name><surname>Woodruff</surname><given-names>G</given-names></name></person-group>
+<article-title>Does the chimpanzee have a theory of mind</article-title>? <source>Behav Brain Sci</source> (<year>1978</year>) <volume>1</volume>:<fpage>515</fpage>. <pub-id pub-id-type="doi">10.1017/S0140525X00076512</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B67">
+        <label>67</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Baron-Cohen</surname><given-names>S</given-names></name><name><surname>Leslie</surname><given-names>AM</given-names></name><name><surname>Frith</surname><given-names>U</given-names></name></person-group>
+<article-title>Does the autistic child have a theory of mind</article-title>? <source>Cognition</source> (<year>1985</year>) <volume>21</volume>:<fpage>37</fpage>–<lpage>46</lpage>. <pub-id pub-id-type="doi">10.1016/0010-0277(85)90022-8</pub-id>
+<pub-id pub-id-type="pmid">2934210</pub-id></mixed-citation>
+      </ref>
+      <ref id="B68">
+        <label>68</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Cherkassky</surname><given-names>VL</given-names></name><name><surname>Kana</surname><given-names>RK</given-names></name><name><surname>Keller</surname><given-names>TA</given-names></name><name><surname>Just</surname><given-names>MA</given-names></name></person-group>
+<article-title>Functional connectivity in a baseline resting-state network in autism</article-title>. <source>Neuroreport</source> (<year>2006</year>) <volume>17</volume>:<page-range>1687–90</page-range>. <pub-id pub-id-type="doi">10.1097/01.wnr.0000239956.45448.4c</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B69">
+        <label>69</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>von dem Hagen</surname><given-names>EAH</given-names></name><name><surname>Stoyanova</surname><given-names>RS</given-names></name><name><surname>Baron-Cohen</surname><given-names>S</given-names></name><name><surname>Calder</surname><given-names>AJ</given-names></name></person-group>
+<article-title>Reduced functional connectivity within and between “social” resting state networks in autism spectrum conditions</article-title>. <source>Soc Cogn Affect Neurosci</source> (<year>2013</year>) <volume>8</volume>:<fpage>694</fpage>–<lpage>701</lpage>. <pub-id pub-id-type="doi">10.1093/scan/nss053</pub-id>
+<pub-id pub-id-type="pmid">22563003</pub-id></mixed-citation>
+      </ref>
+      <ref id="B70">
+        <label>70</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Pearlson</surname><given-names>G</given-names></name></person-group>
+<article-title>Multisite collaborations and large databases in psychiatric neuroimaging: advantages, problems, and challenges</article-title>. <source>Schizophr Bull</source> (<year>2009</year>) <volume>35</volume>:<fpage>1</fpage>–<lpage>2</lpage>. <pub-id pub-id-type="doi">10.1093/schbul/sbn166</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B71">
+        <label>71</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Jack</surname><given-names>CR</given-names></name><name><surname>Bernstein</surname><given-names>MA</given-names></name><name><surname>Fox</surname><given-names>NC</given-names></name><name><surname>Thompson</surname><given-names>P</given-names></name><name><surname>Alexander</surname><given-names>G</given-names></name><name><surname>Harvey</surname><given-names>D</given-names></name><etal/></person-group>
+<article-title>The Alzheimer’s disease neuroimaging initiative (ADNI): MRI methods</article-title>. <source>J Magn Reson Imaging</source> (<year>2008</year>) <volume>27</volume>:<page-range>685–91</page-range>. <pub-id pub-id-type="doi">10.1002/jmri.21049</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B72">
+        <label>72</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Retico</surname><given-names>A</given-names></name><name><surname>Bosco</surname><given-names>P</given-names></name><name><surname>Cerello</surname><given-names>P</given-names></name><name><surname>Fiorina</surname><given-names>E</given-names></name><name><surname>Chincarini</surname><given-names>A</given-names></name><name><surname>Fantacci</surname><given-names>ME</given-names></name></person-group>
+<article-title>Predictive models based on support vector machines: whole-brain versus regional analysis of structural MRI in the Alzheimer’s disease</article-title>. <source>J Neuroimaging</source> (<year>2015</year>) <volume>25</volume>:<page-range>552–63</page-range>. <pub-id pub-id-type="doi">10.1111/jon.12163</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B73">
+        <label>73</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Oldehinkel</surname><given-names>M</given-names></name><name><surname>Mennes</surname><given-names>M</given-names></name><name><surname>Marquand</surname><given-names>A</given-names></name><name><surname>Charman</surname><given-names>T</given-names></name><name><surname>Tillmann</surname><given-names>J</given-names></name><name><surname>Ecker</surname><given-names>C</given-names></name><etal/></person-group>
+<article-title>Altered connectivity between cerebellum, visual, and sensory-motor networks in autism spectrum disorder: results from the EU-AIMS Longitudinal European Autism Project</article-title>. <source>Biol Psychiatry Cogn Neurosci Neuroimaging</source> (<year>2019</year>) <volume>4</volume>:<page-range>260–70</page-range>. <pub-id pub-id-type="doi">10.1016/j.bpsc.2018.11.010</pub-id>
+</mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

@@ -1,0 +1,1009 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.3" xml:lang="en" article-type="research-article">
+  <?properties open_access?>
+  <processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats">
+    <restricted-by>pmc</restricted-by>
+  </processing-meta>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">Front Neurosci</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Front Neurosci</journal-id>
+      <journal-id journal-id-type="publisher-id">Front. Neurosci.</journal-id>
+      <journal-title-group>
+        <journal-title>Frontiers in Neuroscience</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">1662-4548</issn>
+      <issn pub-type="epub">1662-453X</issn>
+      <publisher>
+        <publisher-name>Frontiers Media S.A.</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">36312020</article-id>
+      <article-id pub-id-type="pmc">9614436</article-id>
+      <article-id pub-id-type="doi">10.3389/fnins.2022.969510</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Neuroscience</subject>
+          <subj-group>
+            <subject>Original Research</subject>
+          </subj-group>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Interpretive JIVE: Connections with CCA and an application to brain connectivity</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" corresp="yes">
+          <name>
+            <surname>Murden</surname>
+            <given-names>Raphiel J.</given-names>
+          </name>
+          <xref rid="aff1" ref-type="aff">
+<sup>1</sup>
+</xref>
+          <xref rid="c001" ref-type="corresp">
+<sup>*</sup>
+</xref>
+          <uri xlink:href="http://loop.frontiersin.org/people/1866309/overview"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Zhang</surname>
+            <given-names>Zhengwu</given-names>
+          </name>
+          <xref rid="aff2" ref-type="aff">
+<sup>2</sup>
+</xref>
+          <uri xlink:href="http://loop.frontiersin.org/people/1453927/overview"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Guo</surname>
+            <given-names>Ying</given-names>
+          </name>
+          <xref rid="aff1" ref-type="aff">
+<sup>1</sup>
+</xref>
+          <uri xlink:href="http://loop.frontiersin.org/people/176126/overview"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Risk</surname>
+            <given-names>Benjamin B.</given-names>
+          </name>
+          <xref rid="aff1" ref-type="aff">
+<sup>1</sup>
+</xref>
+          <uri xlink:href="http://loop.frontiersin.org/people/1834973/overview"/>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1"><sup>1</sup><institution>Department of Biostatistics and Bioinformatics, Rollins School of Public Health, Emory University</institution>, <addr-line>Atlanta, GA</addr-line>, <country>United States</country></aff>
+      <aff id="aff2"><sup>2</sup><institution>Department of Statistics and Operations Research, University of North Carolina</institution>, <addr-line>Chapel Hill, NC</addr-line>, <country>United States</country></aff>
+      <author-notes>
+        <fn fn-type="edited-by">
+          <p>Edited by: Dana L. Tudorascu, University of Pittsburgh, United States</p>
+        </fn>
+        <fn fn-type="edited-by">
+          <p>Reviewed by: Brian Scott Caffo, Johns Hopkins University, United States; Jun Young Park, University of Toronto, Canada; Eardi Lila, University of Washington, United States</p>
+        </fn>
+        <corresp id="c001">*Correspondence: Raphiel J. Murden <email>rmurden@emory.edu</email></corresp>
+        <fn fn-type="other" id="fn001">
+          <p>This article was submitted to Brain Imaging Methods, a section of the journal Frontiers in Neuroscience</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="epub">
+        <day>14</day>
+        <month>10</month>
+        <year>2022</year>
+      </pub-date>
+      <pub-date pub-type="collection">
+        <year>2022</year>
+      </pub-date>
+      <volume>16</volume>
+      <elocation-id>969510</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>15</day>
+          <month>6</month>
+          <year>2022</year>
+        </date>
+        <date date-type="accepted">
+          <day>26</day>
+          <month>9</month>
+          <year>2022</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Copyright © 2022 Murden, Zhang, Guo and Risk.</copyright-statement>
+        <copyright-year>2022</copyright-year>
+        <copyright-holder>Murden, Zhang, Guo and Risk</copyright-holder>
+        <license>
+          <ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref>
+          <license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY). The use, distribution or reproduction in other forums is permitted, provided the original author(s) and the copyright owner(s) are credited and that the original publication in this journal is cited, in accordance with accepted academic practice. No use, distribution or reproduction is permitted which does not comply with these terms.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>Joint and Individual Variation Explained (JIVE) is a model that decomposes multiple datasets obtained on the same subjects into shared structure, structure unique to each dataset, and noise. JIVE is an important tool for multimodal data integration in neuroimaging. The two most common algorithms are R.JIVE, an iterative approach, and AJIVE, which uses principal angle analysis. The joint structure in JIVE is defined by shared subspaces, but interpreting these subspaces can be challenging. In this paper, we reinterpret AJIVE as a canonical correlation analysis of principal component scores. This reformulation, which we call CJIVE, (1) provides an intuitive view of AJIVE; (2) uses a permutation test for the number of joint components; (3) can be used to predict subject scores for out-of-sample observations; and (4) is computationally fast. We conduct simulation studies that show CJIVE and AJIVE are accurate when the total signal ranks are correctly specified but, generally inaccurate when the total ranks are too large. CJIVE and AJIVE can still extract joint signal even when the joint signal variance is relatively small. JIVE methods are applied to integrate functional connectivity (resting-state fMRI) and structural connectivity (diffusion MRI) from the Human Connectome Project. Surprisingly, the edges with largest loadings in the joint component in functional connectivity do not coincide with the same edges in the structural connectivity, indicating more complex patterns than assumed in spatial priors. Using these loadings, we accurately predict joint subject scores in new participants. We also find joint scores are associated with fluid intelligence, highlighting the potential for JIVE to reveal important shared structure.</p>
+      </abstract>
+      <kwd-group>
+        <kwd>canonical correlation analysis</kwd>
+        <kwd>data integration</kwd>
+        <kwd>functional connectivity</kwd>
+        <kwd>Human Connectome Project</kwd>
+        <kwd>joint and individual variance explained</kwd>
+        <kwd>principal component analysis</kwd>
+        <kwd>structural connectivity</kwd>
+      </kwd-group>
+      <funding-group>
+        <award-group>
+          <funding-source id="cn001">
+            <institution-wrap>
+              <institution>National Institutes of Health</institution>
+              <institution-id institution-id-type="doi">10.13039/100000002</institution-id>
+            </institution-wrap>
+          </funding-source>
+          <award-id award-type="contract" rid="cn001">AG066970</award-id>
+          <award-id award-type="contract" rid="cn001">MH105561</award-id>
+          <award-id award-type="contract" rid="cn001">MH129855</award-id>
+        </award-group>
+      </funding-group>
+      <counts>
+        <fig-count count="7"/>
+        <table-count count="3"/>
+        <equation-count count="6"/>
+        <ref-count count="40"/>
+        <page-count count="16"/>
+        <word-count count="9941"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec sec-type="intro" id="s1">
+      <title>1. Introduction</title>
+      <p>Modern biomedical and scientific studies often collect multiple datasets in which the number of variables may greatly exceed the number of participants. This is common in neuroimaging studies, where multiple neuroimaging data types, referred to as modalities, as well as behavioral and demographic data, are often collected (Mueller et al., <xref rid="B21" ref-type="bibr">2005</xref>; Glasser et al., <xref rid="B7" ref-type="bibr">2013</xref>). The importance of such multi-dataset studies underscores the urgent need for quantitative methods capable of simultaneous analysis of these datasets.</p>
+      <p>A fundamental goal in neuroimaging is understanding the similarities between structural connectivity (SC) and functional connectivity (FC), where FC can be quantified by cross correlations between brain region time series revealed through functional magnetic resonance imaging (fMRI) and SC by measures of anatomical connections revealed using diffusion-weighted MRI (dMRI) (Honey et al., <xref rid="B9" ref-type="bibr">2009</xref>). Studies have reported that brain regions with strong SC demonstrate more reliable functional connections (Honey et al., <xref rid="B9" ref-type="bibr">2009</xref>; Kemmer et al., <xref rid="B13" ref-type="bibr">2018</xref>), and incorporating SC information leads to more reproducible FC network estimation (Higgins et al., <xref rid="B8" ref-type="bibr">2018</xref>). However, additional research is needed to elucidate the information shared between measures of connectivity and the information unique to structural or functional connectivity.</p>
+      <p>Unsupervised methods are commonly used to reduce the dimensionality of imaging datasets, which is often a key step in the joint analysis of multi-modal imaging data. Principal Components Analysis (PCA) finds components of maximum variance. It has been used to extract eigenimages from a group of individuals (Penny et al., <xref rid="B23" ref-type="bibr">2011</xref>) and as a means of dimension reduction prior to employing a supervised learning method (López et al., <xref rid="B18" ref-type="bibr">2011</xref>). Independent Component Analysis (ICA) is used to find components that are as independent as possible. It is commonly used to estimate resting-state networks, or regions that share a high degree of functional coupling in resting-state fMRI (Biswal et al., <xref rid="B1" ref-type="bibr">2010</xref>). Non-negative matrix factorization (NNMF) constrains components to have positive entries. NNMF was used to decompose structural images from dMRI into brain regions that consistently co-varied across individuals (Sotiras et al., <xref rid="B28" ref-type="bibr">2015</xref>). Auto-encoders (AEs) use neural networks for unsupervised dimension reduction. AEs have been used to learn latent feature representations from gray matter volumes extracted from structural MRI images, intensities from 18-fluoro-deoxyglucose positron emissions tomography (FDG-PET), and cerebrospinal fluid biomarkers (Suk et al., <xref rid="B30" ref-type="bibr">2015</xref>). Recently, increasing attention has been paid to data integration and data fusion methods (Sui and Calhoun, <xref rid="B29" ref-type="bibr">2016</xref>), which may provide insight into the relationship between structural and functional MRI without imposing a priori spatial constraints.</p>
+      <p>Statistical approaches to data integration date back to the 1930s with canonical correlation analysis (CCA) (Hotelling, <xref rid="B10" ref-type="bibr">1936</xref>). Smith et al. (<xref rid="B27" ref-type="bibr">2015</xref>) used PCA and CCA to integrate fMRI and behavioral data from the Human Connectome Project (HCP). Recently, novel methods that assess the shared structure between datasets have arisen (Li et al., <xref rid="B14" ref-type="bibr">2009</xref>; Witten et al., <xref rid="B32" ref-type="bibr">2009</xref>), including several which also explore structure unique to each dataset (Lock et al., <xref rid="B16" ref-type="bibr">2013</xref>; Zhou et al., <xref rid="B40" ref-type="bibr">2016</xref>; Feng et al., <xref rid="B4" ref-type="bibr">2018</xref>; Gaynanova and Li, <xref rid="B6" ref-type="bibr">2019</xref>; Shu et al., <xref rid="B26" ref-type="bibr">2020</xref>). A recent application of CCA developed a novel approach to jointly analyze functional and structural connectomes while assessing differences between groups of participants (Zhang et al., <xref rid="B37" ref-type="bibr">2021</xref>).</p>
+      <p>Joint and Individual Variation Explained (JIVE) is an unsupervised method that has been used in neuroimaging (Yu et al., <xref rid="B34" ref-type="bibr">2017</xref>; Zhao et al., <xref rid="B39" ref-type="bibr">2019</xref>), genetic data (O'Connell and Lock, <xref rid="B22" ref-type="bibr">2016</xref>; McCabe et al., <xref rid="B20" ref-type="bibr">2020</xref>), and for other applications (Lock et al., <xref rid="B16" ref-type="bibr">2013</xref>). JIVE is similar to PCA in that subject scores are extracted, but unlike PCA, JIVE estimates scores that are shared across datasets (joint scores) and scores that are unique to each dataset (individual scores). Common and orthogonal basis extraction (COBE), which is closely related to JIVE (Zhou et al., <xref rid="B40" ref-type="bibr">2016</xref>), was applied to multi-subject resting-state correlation matrices where individual structure was used in connectome fingerprinting (Kashyap et al., <xref rid="B12" ref-type="bibr">2019</xref>). Throughout the remainder of this manuscript, we will refer to the JIVE implementation in Lock et al. (<xref rid="B16" ref-type="bibr">2013</xref>) and the follow-up paper O'Connell and Lock (<xref rid="B22" ref-type="bibr">2016</xref>) as R.JIVE. An alternative algorithm and rank-estimation routine for JIVE were recently proposed in Angle-based JIVE (AJIVE) (Feng et al., <xref rid="B4" ref-type="bibr">2018</xref>). AJIVE uses matrix perturbation theory (Wedin, <xref rid="B31" ref-type="bibr">1972</xref>) to determine when two similar directions of variation represent noisy estimates of the same direction, and it uses a non-iterative algorithm that can decrease computational costs.</p>
+      <p>Despite the advancement in JIVE, there are limitations that may hinder its widespread application. JIVE is formulated as a subspace decomposition with shared structure captured by equivalent score subspaces, and the results can be difficult to interpret. For instance, singular value decompositions (SVDs) of joint matrices (called block-specific scores) result in subject scores that differ across datasets. The relative importance of the components of the estimated joint subspace requires an alternative representation. If JIVE is used for biomarker development, as in Sandri et al. (<xref rid="B25" ref-type="bibr">2018</xref>), researchers may want to estimate a subject score for a new patient, which can then be used to classify their risk. Additionally, simulation studies examining the accuracy of the rank selection procedures and estimated components are needed to provide guidance to scientific applications.</p>
+      <p>Our contributions are the following.</p>
+      <list list-type="bullet">
+        <list-item>
+          <p>We provide an intuitive view of AJIVE as averaging the canonical variables from the canonical correlation analysis of the principal component scores. We present a permutation test for the joint structure, and we call this alternative perspective and permutation test Canonical JIVE (CJIVE). The use of the phrase “interpretive JIVE” in the title of this manuscript emphasizes how we re-interpret the JIVE framework, and it is a play on the phrase “interpretive dance” and the original meaning of the jive dance from the 1930s.</p>
+        </list-item>
+        <list-item>
+          <p>We evaluate three methods for predicting joint scores in new subjects, and demonstrate that these methods are effective at predicting joint scores in new subjects.</p>
+        </list-item>
+        <list-item>
+          <p>Simulation studies show that, in AJIVE and CJIVE, overestimating the signal ranks can generally lead to underestimation of the joint ranks. AJIVE and CJIVE tend to outperform R.JIVE when the joint signal is small.</p>
+        </list-item>
+        <list-item>
+          <p>We apply JIVE to the integration of functional and structural connectivity using a state-of-the-art pipeline applied to 998 subjects from the Human Connectome Project. JIVE reveals new insights into the shared variation, in particular revealing relationships that go beyond conventional spatial priors. We accurately predict joint subject scores in new subjects, and joint scores are related to fluid intelligence.</p>
+        </list-item>
+      </list>
+      <p>Section 2 describes the statistical methodology employed in AJIVE, R.JIVE, and sparse CCA (sCCA), and introduces CJIVE. Section 3 conducts simulation studies. Section 4 analyzes the HCP data. We discuss our findings and recommendations in Section 5.</p>
+    </sec>
+    <sec id="s2">
+      <title>2. Statistical methodology</title>
+      <p>A table of the notation we will use is given in <xref rid="T1" ref-type="table">Table 1</xref>.</p>
+      <table-wrap position="float" id="T1">
+        <label>Table 1</label>
+        <caption>
+          <p>Notation used throughout the manuscript.</p>
+        </caption>
+        <table frame="hsides" rules="groups">
+          <thead>
+            <tr>
+              <th valign="top" align="left" rowspan="1" colspan="1">
+<bold>Symbol</bold>
+</th>
+              <th valign="top" align="left" rowspan="1" colspan="1">
+<bold>Definition or use</bold>
+</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td valign="top" align="left" rowspan="1" colspan="1">
+<italic>k</italic>
+</td>
+              <td valign="top" align="left" rowspan="1" colspan="1">Used to index the data blocks</td>
+            </tr>
+            <tr>
+              <td valign="top" align="left" rowspan="1" colspan="1">
+<bold>X</bold>
+<sub>
+<italic>k</italic>
+</sub>
+</td>
+              <td valign="top" align="left" rowspan="1" colspan="1"><italic>kth</italic> data block</td>
+            </tr>
+            <tr>
+              <td valign="top" align="left" rowspan="1" colspan="1">
+<italic>n</italic>
+</td>
+              <td valign="top" align="left" rowspan="1" colspan="1">Sample size</td>
+            </tr>
+            <tr>
+              <td valign="top" align="left" rowspan="1" colspan="1">
+<italic>p</italic>
+<sub>
+<italic>k</italic>
+</sub>
+</td>
+              <td valign="top" align="left" rowspan="1" colspan="1">Number of features (i.e., columns) in data block <italic>k</italic></td>
+            </tr>
+            <tr>
+              <td valign="top" align="left" rowspan="1" colspan="1">
+<bold>J</bold>
+<sub>
+<italic>k</italic>
+</sub>
+</td>
+              <td valign="top" align="left" rowspan="1" colspan="1">Joint signal from <italic>kth</italic> data block</td>
+            </tr>
+            <tr>
+              <td valign="top" align="left" rowspan="1" colspan="1">
+<bold>A</bold>
+<sub>
+<italic>k</italic>
+</sub>
+</td>
+              <td valign="top" align="left" rowspan="1" colspan="1">Individual (block-specific) signal from <italic>kth</italic> data block</td>
+            </tr>
+            <tr>
+              <td valign="top" align="left" rowspan="1" colspan="1">
+<bold>E</bold>
+<sub>
+<italic>k</italic>
+</sub>
+</td>
+              <td valign="top" align="left" rowspan="1" colspan="1">Noise signal from <italic>kth</italic> data block</td>
+            </tr>
+            <tr>
+              <td valign="top" align="left" rowspan="1" colspan="1">
+<bold>I</bold>
+<sub>
+<italic>d</italic>
+</sub>
+</td>
+              <td valign="top" align="left" rowspan="1" colspan="1">An identity matrix of dimension <italic>d</italic></td>
+            </tr>
+            <tr>
+              <td valign="top" align="left" rowspan="1" colspan="1">
+<bold>Z</bold>
+</td>
+              <td valign="top" align="left" rowspan="1" colspan="1">Joint subject scores, which form a basis for the joint signal</td>
+            </tr>
+            <tr>
+              <td valign="top" align="left" rowspan="1" colspan="1">
+<bold>B</bold>
+<sub>
+<italic>k</italic>
+</sub>
+</td>
+              <td valign="top" align="left" rowspan="1" colspan="1">Individual subject scores from data block <italic>k</italic>, which form a basis for that block's individual signal</td>
+            </tr>
+            <tr>
+              <td valign="top" align="left" rowspan="1" colspan="1">
+<bold>W</bold>
+<sub>
+<italic>Jk</italic>
+</sub>
+</td>
+              <td valign="top" align="left" rowspan="1" colspan="1">Variable loadings onto the joint signal subspace for the <italic>kth</italic> data block</td>
+            </tr>
+            <tr>
+              <td valign="top" align="left" rowspan="1" colspan="1">
+<bold>W</bold>
+<sub>
+<italic>Ik</italic>
+</sub>
+</td>
+              <td valign="top" align="left" rowspan="1" colspan="1">Variable loadings onto the individual signal subspace for the <italic>kth</italic> data block</td>
+            </tr>
+            <tr>
+              <td valign="top" align="left" rowspan="1" colspan="1">
+<italic>r</italic>
+<sub>
+<italic>k</italic>
+</sub>
+</td>
+              <td valign="top" align="left" rowspan="1" colspan="1">Rank of the signal contained in data block <italic>k</italic></td>
+            </tr>
+            <tr>
+              <td valign="top" align="left" rowspan="1" colspan="1">
+<italic>r</italic>
+<sub>
+<italic>J</italic>
+</sub>
+</td>
+              <td valign="top" align="left" rowspan="1" colspan="1">The rank of the joint signal, i.e., the number of components comprising the joint signal</td>
+            </tr>
+            <tr>
+              <td valign="top" align="left" rowspan="1" colspan="1">
+<italic>r</italic>
+<sub>
+<italic>Ik</italic>
+</sub>
+</td>
+              <td valign="top" align="left" rowspan="1" colspan="1">The rank of the individual signal for data block <italic>k</italic></td>
+            </tr>
+            <tr>
+              <td valign="top" align="left" rowspan="1" colspan="1">
+<bold>U</bold>
+<sub>
+<italic>k</italic>
+</sub>
+</td>
+              <td valign="top" align="left" rowspan="1" colspan="1">Left singular vectors of data block <italic>k</italic></td>
+            </tr>
+            <tr>
+              <td valign="top" align="left" rowspan="1" colspan="1">
+<bold>D</bold>
+<sub>
+<italic>k</italic>
+</sub>
+</td>
+              <td valign="top" align="left" rowspan="1" colspan="1">Diagonal matrix containing the singular values of data block <italic>k</italic></td>
+            </tr>
+            <tr>
+              <td valign="top" align="left" rowspan="1" colspan="1">
+<bold>V</bold>
+<sub>
+<italic>k</italic>
+</sub>
+</td>
+              <td valign="top" align="left" rowspan="1" colspan="1">Right singular vectors of data block <italic>k</italic></td>
+            </tr>
+            <tr>
+              <td valign="top" align="left" rowspan="1" colspan="1">
+<bold>C</bold>
+</td>
+              <td valign="top" align="left" rowspan="1" colspan="1">Concatenation of left singular vectors from both data blocks</td>
+            </tr>
+            <tr>
+              <td valign="top" align="left" rowspan="1" colspan="1">
+<bold>U</bold>
+<sub>
+<italic>C</italic>
+</sub>
+</td>
+              <td valign="top" align="left" rowspan="1" colspan="1">Left singular vectors of concatenated singular vectors</td>
+            </tr>
+            <tr>
+              <td valign="top" align="left" rowspan="1" colspan="1">
+<bold>ω</bold>
+<sub>
+<italic>kj</italic>
+</sub>
+</td>
+              <td valign="top" align="left" rowspan="1" colspan="1">Canonical loadings, which maximize correlation of <italic>jth</italic> PCs</td>
+            </tr>
+            <tr>
+              <td valign="top" align="left" rowspan="1" colspan="1">
+<bold>Ω</bold>
+<sub>
+<italic>k</italic>
+</sub>
+</td>
+              <td valign="top" align="left" rowspan="1" colspan="1">Concatenation of canonical loadings</td>
+            </tr>
+            <tr>
+              <td valign="top" align="left" rowspan="1" colspan="1">σ<sub><italic>Cj</italic></sub></td>
+              <td valign="top" align="left" rowspan="1" colspan="1">Joint singular value of <bold>U</bold><sub><italic>C</italic></sub></td>
+            </tr>
+            <tr>
+              <td valign="top" align="left" rowspan="1" colspan="1">ρ<sub><italic>j</italic></sub></td>
+              <td valign="top" align="left" rowspan="1" colspan="1">Canonical correlation of the <italic>jth</italic> joint component</td>
+            </tr>
+            <tr>
+              <td valign="top" align="left" rowspan="1" colspan="1">
+<inline-formula>
+<mml:math id="M1" overflow="scroll"><mml:msub><mml:mrow><mml:mover accent="true"><mml:mrow><mml:mi>c</mml:mi></mml:mrow><mml:mo>^</mml:mo></mml:mover></mml:mrow><mml:mrow><mml:mn>1</mml:mn><mml:mi>i</mml:mi></mml:mrow></mml:msub></mml:math>
+</inline-formula>
+</td>
+              <td valign="top" align="left" rowspan="1" colspan="1">Predicted canonical variables</td>
+            </tr>
+            <tr>
+              <td valign="top" align="left" rowspan="1" colspan="1">
+<inline-formula>
+<mml:math id="M2" overflow="scroll"><mml:msubsup><mml:mrow><mml:mi>R</mml:mi></mml:mrow><mml:mrow><mml:mi>J</mml:mi><mml:mi>k</mml:mi></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msubsup></mml:math>
+</inline-formula>
+</td>
+              <td valign="top" align="left" rowspan="1" colspan="1">Proportion of total variance in data block <italic>k</italic> attributable to joint signal</td>
+            </tr>
+            <tr>
+              <td valign="top" align="left" rowspan="1" colspan="1">
+<inline-formula>
+<mml:math id="M3" overflow="scroll"><mml:msubsup><mml:mrow><mml:mi>R</mml:mi></mml:mrow><mml:mrow><mml:mi>I</mml:mi><mml:mi>k</mml:mi></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msubsup></mml:math>
+</inline-formula>
+</td>
+              <td valign="top" align="left" rowspan="1" colspan="1">Proportion of total variance in data block <italic>k</italic> attributable to individual signal</td>
+            </tr>
+          </tbody>
+        </table>
+      </table-wrap>
+      <sec>
+        <title>2.1. JIVE decomposition</title>
+        <p>Consider a collection of <italic>K</italic> data blocks/matrices, <inline-formula><mml:math id="M4" overflow="scroll"><mml:mrow><mml:mo>{</mml:mo><mml:mrow><mml:msub><mml:mrow><mml:mstyle mathvariant="bold"><mml:mtext>X</mml:mtext></mml:mstyle></mml:mrow><mml:mrow><mml:mi>k</mml:mi></mml:mrow></mml:msub><mml:mo>∈</mml:mo><mml:msup><mml:mrow><mml:mi>ℝ</mml:mi></mml:mrow><mml:mrow><mml:mi>n</mml:mi><mml:mo>×</mml:mo><mml:msub><mml:mrow><mml:mi>p</mml:mi></mml:mrow><mml:mrow><mml:mi>k</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:msup><mml:mo>:</mml:mo><mml:mi>k</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn><mml:mo>,</mml:mo><mml:mo>…</mml:mo><mml:mo>,</mml:mo><mml:mi>K</mml:mi></mml:mrow><mml:mo>}</mml:mo></mml:mrow></mml:math></inline-formula>, where <italic>n</italic> is the number of subjects and <italic>p</italic><sub><italic>k</italic></sub> the number of features or variables in the <italic>kth</italic> dataset. Each data block can be written as <bold>X</bold><sub><italic>k</italic></sub> = <bold>J</bold><sub><italic>k</italic></sub>+<bold>A</bold><sub><italic>k</italic></sub>+<bold>E</bold><sub><italic>k</italic></sub>, where <bold>J</bold><sub><italic>k</italic></sub> represents the joint signal common to both data blocks, <bold>A</bold><sub><italic>k</italic></sub> represents the block-individual signal, which is unique to the <italic>k</italic><sup><italic>th</italic></sup> data block, and <bold>E</bold><sub><italic>k</italic></sub> represents full-rank isotropic noise. The JIVE model assumes that each rank-reduced signal matrix <bold>X</bold><sub><italic>k</italic></sub>−<bold>E</bold><sub><italic>k</italic></sub> [with rank <italic>r</italic><sub><italic>k</italic></sub> &lt; min(<italic>n, p</italic><sub><italic>k</italic></sub>)] can be decomposed into a subspace of ℝ<sup><italic>n</italic></sup> that is common across <bold>X</bold><sub><italic>k</italic></sub> (the joint subspace) and a subspace that is unique to the <italic>kth</italic> dataset and orthogonal to the joint subspace (the individual subspaces) (Feng et al., <xref rid="B4" ref-type="bibr">2018</xref>). In our presentation, we expand on one of three ways to represent the joint subspace, called the “common normalized score” representation in Feng et al. (<xref rid="B4" ref-type="bibr">2018</xref>). We emphasize this representation because it results in a correspondence between the joint components of each dataset, whereas the other representations are arguably less interpretable. The common basis, <inline-formula><mml:math id="M5" overflow="scroll"><mml:mstyle mathvariant="bold"><mml:mtext>Z</mml:mtext></mml:mstyle><mml:mo>∈</mml:mo><mml:msup><mml:mrow><mml:mi>ℝ</mml:mi></mml:mrow><mml:mrow><mml:mi>n</mml:mi><mml:mo>×</mml:mo><mml:msub><mml:mrow><mml:mi>r</mml:mi></mml:mrow><mml:mrow><mml:mi>J</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:msup></mml:math></inline-formula>, is derived from joint analysis of all data blocks, and the other, <inline-formula><mml:math id="M6" overflow="scroll"><mml:msub><mml:mrow><mml:mstyle mathvariant="bold"><mml:mtext>B</mml:mtext></mml:mstyle></mml:mrow><mml:mrow><mml:mi>k</mml:mi></mml:mrow></mml:msub><mml:mo>∈</mml:mo><mml:msup><mml:mrow><mml:mi>ℝ</mml:mi></mml:mrow><mml:mrow><mml:mi>n</mml:mi><mml:mo>×</mml:mo><mml:msub><mml:mrow><mml:mi>r</mml:mi></mml:mrow><mml:mrow><mml:mi>I</mml:mi><mml:mi>k</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:msup></mml:math></inline-formula> from the part that remains after joint analysis, where <italic>r</italic><sub><italic>Ik</italic></sub> = <italic>r</italic><sub><italic>k</italic></sub>−<italic>r</italic><sub><italic>J</italic></sub>. Let <bold>I</bold><sub><italic>d</italic></sub> be the <italic>d</italic>×<italic>d</italic> identity matrix and 0 a matrix of zeros. Furthermore, let the joint and individual signal matrices of the <italic>k</italic><sup><italic>th</italic></sup> data block take the form <bold>J</bold><sub><italic>k</italic></sub> = <bold>ZW</bold><sub><italic>Jk</italic></sub> and <bold>A</bold><sub><italic>k</italic></sub> = <bold>B</bold><sub><italic>k</italic></sub><bold>W</bold><sub><italic>Ik</italic></sub>, respectively. Then the JIVE model corresponds to the matrix decomposition</p>
+        <disp-formula id="E1">
+<label>(1)</label>
+<mml:math id="M7" overflow="scroll"><mml:mrow><mml:mtable columnalign="left"><mml:mtr columnalign="left"><mml:mtd columnalign="left"><mml:mrow><mml:msub><mml:mrow><mml:mtext>                              </mml:mtext><mml:mtext mathvariant="bold">X</mml:mtext></mml:mrow><mml:mi>k</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:msub><mml:mrow><mml:mtext> </mml:mtext><mml:mtext mathvariant="bold">ZW</mml:mtext></mml:mrow><mml:mrow><mml:mi>J</mml:mi><mml:mi>k</mml:mi></mml:mrow></mml:msub><mml:mo>+</mml:mo><mml:msub><mml:mrow><mml:mtext> </mml:mtext><mml:mtext mathvariant="bold">B</mml:mtext></mml:mrow><mml:mi>k</mml:mi></mml:msub><mml:msub><mml:mtext mathvariant="bold">W</mml:mtext><mml:mrow><mml:mi>I</mml:mi><mml:mi>k</mml:mi></mml:mrow></mml:msub><mml:mo>+</mml:mo><mml:msub><mml:mtext mathvariant="bold">E</mml:mtext><mml:mi>k</mml:mi></mml:msub><mml:mo>,</mml:mo></mml:mrow></mml:mtd></mml:mtr><mml:mtr columnalign="left"><mml:mtd columnalign="left"><mml:mrow><mml:msubsup><mml:mrow><mml:mtext> subject to </mml:mtext><mml:mtext mathvariant="bold">B</mml:mtext></mml:mrow><mml:mi>k</mml:mi><mml:mo>⊤</mml:mo></mml:msubsup><mml:mtext mathvariant="bold">Z</mml:mtext><mml:mo>=</mml:mo><mml:mtext> 0</mml:mtext><mml:mo>,</mml:mo><mml:mtext> </mml:mtext><mml:msup><mml:mrow><mml:mtext> </mml:mtext><mml:mtext mathvariant="bold">Z</mml:mtext></mml:mrow><mml:mo>⊤</mml:mo></mml:msup><mml:mtext mathvariant="bold">Z</mml:mtext><mml:mo>=</mml:mo><mml:msub><mml:mrow><mml:mtext> </mml:mtext><mml:mtext mathvariant="bold">I</mml:mtext></mml:mrow><mml:mrow><mml:msub><mml:mi>r</mml:mi><mml:mi>J</mml:mi></mml:msub></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:mtext> </mml:mtext><mml:msubsup><mml:mrow><mml:mtext> </mml:mtext><mml:mtext mathvariant="bold">B</mml:mtext></mml:mrow><mml:mi>k</mml:mi><mml:mo>⊤</mml:mo></mml:msubsup><mml:msub><mml:mtext mathvariant="bold">B</mml:mtext><mml:mi>k</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:msub><mml:mrow><mml:mtext> </mml:mtext><mml:mtext mathvariant="bold">I</mml:mtext></mml:mrow><mml:mrow><mml:msub><mml:mi>r</mml:mi><mml:mrow><mml:mi>I</mml:mi><mml:mi>k</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:msub><mml:mo>.</mml:mo></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:mrow></mml:math>
+</disp-formula>
+        <p>We call <bold>Z</bold> joint subject scores and <bold>W</bold><sub><italic>Jk</italic></sub> joint variable loadings. Individual subject scores are given by <bold>B</bold><sub><italic>k</italic></sub> and individual variable loadings by <bold>W</bold><sub><italic>Ik</italic></sub>. Intuitively, this decomposition is similar to a singular value decomposition on each dataset but with part of the basis constrained to be equal in the two decompositions.</p>
+        <p>In this representation, we do not enforce orthogonality between <bold>B</bold><sub><italic>k</italic></sub> and <inline-formula><mml:math id="M8" overflow="scroll"><mml:msub><mml:mrow><mml:mstyle mathvariant="bold"><mml:mtext>B</mml:mtext></mml:mstyle></mml:mrow><mml:mrow><mml:msup><mml:mrow><mml:mi>k</mml:mi></mml:mrow><mml:mrow><mml:mi>′</mml:mi></mml:mrow></mml:msup></mml:mrow></mml:msub></mml:math></inline-formula>. Later, we propose a permutation test for the joint rank, <italic>r</italic><sub><italic>J</italic></sub>, that determines when the correlation between signal is sufficiently large to be deemed joint, but allows insignificant correlation between individual subject scores. Our proposed approach will also result in an intuitive ordering of components by the strength of evidence that they are joint. Also note that in (1), the rows of the loadings matrices <bold>W</bold><sub><italic>Jk</italic></sub> are not orthogonal.</p>
+        <p>For the HCP network data that we examine in Section 4, we can translate each row of the score (<bold>Z</bold>, <bold>B</bold><sub><italic>k</italic></sub>) matrix into a low-dimensional vector summary of a participant's <italic>kth</italic> network data (e.g., FC). The joint scores <bold>Z</bold> summarize information that is common across modalities, while <bold>B</bold><sub><italic>k</italic></sub> comprise information unique to an individual modality. For instance, Section 4.3 shows that CJIVE joint scores are more strongly associated with a measure of fluid intelligence than individual scores. The <italic>lth</italic> row of the loading matrix <bold>W</bold><sub><italic>Jk</italic></sub> exhibits the magnitude with which network edges contribute to the <italic>lth</italic> column of the summary scores in <bold>Z</bold>. In Section 4.4, we examine variable loadings to develop insight into latent structures that are common within both modalities and those which are unique to each.</p>
+        <sec>
+          <title>2.1.1. R.JIVE estimation</title>
+          <p>R.JIVE uses an iterative algorithm that simultaneously estimates joint and individual matrices. Each dataset is column-centered and scaled by its Frobenius norm. In our data application, we standardize the variance of each variable prior to scaling by the Frobenius norm. The algorithm iterates between estimating the joint subspaces and individual subspaces; details are in the Web Appendix A.1.1 (<xref rid="SM1" ref-type="supplementary-material">Supplementary material</xref>). The ranks of the joint and individual matrices are selected using permutation tests. In the default R.JIVE implementation, the individual subspaces are orthogonal (O'Connell and Lock, <xref rid="B22" ref-type="bibr">2016</xref>).</p>
+        </sec>
+        <sec>
+          <title>2.1.2. AJIVE estimation</title>
+          <p>In AJIVE, the joint rank <italic>r</italic><sub><italic>J</italic></sub> is determined using principal-angle analysis (PAA) and requires user-specified signal ranks <italic>r</italic><sub>1</sub> = <italic>r</italic><sub><italic>J</italic></sub>+<italic>r</italic><sub><italic>I</italic>1</sub> and <italic>r</italic><sub>2</sub> = <italic>r</italic><sub><italic>J</italic></sub>+<italic>r</italic><sub><italic>I</italic>2</sub>. The main idea is to investigate when basis vectors in the signal subspaces should be considered “noisy” estimates of the same direction. This problem can be translated into finding the singular values of the concatenated signal bases that exceed a given threshold.</p>
+          <p>For the remainder of this paper, we standardize the columns of <bold>X</bold><sub>1</sub> and <bold>X</bold><sub>2</sub> to have mean zero and variances equal to one, as commonly done in PCA. Note R.JIVE performs an additional normalization by the Frobenius norm.</p>
+          <p>First, the user specifies the ranks used in PCA of <bold>X</bold><sub>1</sub> and <bold>X</bold><sub>2</sub>. Let <bold>U</bold><sub>1</sub> and <bold>U</bold><sub>2</sub> denote the <italic>r</italic><sub>1</sub> and <italic>r</italic><sub>2</sub> left singular vectors of <bold>X</bold><sub>1</sub> and <bold>X</bold><sub>2</sub>. Define <bold>C</bold> = [<bold>U</bold><sub>1</sub>, <bold>U</bold><sub>2</sub>]. Let <bold>U</bold><sub><bold>C</bold></sub> denote the left singular vectors of <bold>C</bold>. Feng et al. (<xref rid="B4" ref-type="bibr">2018</xref>) develop two bounds to determine whether the <italic>j</italic>th column of <bold>U</bold><sub><bold>C</bold></sub> represents a joint direction of variance. These bounds are discussed in the Web Appendix A.1.2 (<xref rid="SM1" ref-type="supplementary-material">Supplementary material</xref>).</p>
+        </sec>
+      </sec>
+      <sec>
+        <title>2.2. Using CCA to interpret JIVE: CJIVE</title>
+        <sec>
+          <title>2.2.1. Equivalence of estimators</title>
+          <p>We review CCA and describe how it relates to the AJIVE algorithm. For data matrices <bold>X</bold><sub>1</sub> and <bold>X</bold><sub>2</sub>, CCA seeks vectors <bold>ω</bold><sub>11</sub> and <bold>ω</bold><sub>21</sub> to maximize Corr(<bold>X</bold><sub>1</sub><bold>ω</bold><sub>11</sub>, <bold>X</bold><sub>2</sub><bold>ω</bold><sub>21</sub>). Subsequent canonical vectors, <inline-formula><mml:math id="M9" overflow="scroll"><mml:msub><mml:mrow><mml:mstyle mathvariant="bold"><mml:mtext>ω</mml:mtext></mml:mstyle></mml:mrow><mml:mrow><mml:mn>1</mml:mn><mml:msup><mml:mrow><mml:mi>j</mml:mi></mml:mrow><mml:mrow><mml:mi>′</mml:mi></mml:mrow></mml:msup></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mrow><mml:mstyle mathvariant="bold"><mml:mtext>ω</mml:mtext></mml:mstyle></mml:mrow><mml:mrow><mml:mn>2</mml:mn><mml:msup><mml:mrow><mml:mi>j</mml:mi></mml:mrow><mml:mrow><mml:mi>′</mml:mi></mml:mrow></mml:msup></mml:mrow></mml:msub></mml:math></inline-formula>, arise from a similar optimization problem with the additional constraint <inline-formula><mml:math id="M10" overflow="scroll"><mml:msubsup><mml:mrow><mml:mstyle mathvariant="bold"><mml:mtext>ω</mml:mtext></mml:mstyle></mml:mrow><mml:mrow><mml:mn>1</mml:mn><mml:mi>j</mml:mi></mml:mrow><mml:mrow><mml:mo>⊤</mml:mo></mml:mrow></mml:msubsup><mml:mtext>Cov</mml:mtext><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mrow><mml:msub><mml:mrow><mml:mstyle mathvariant="bold"><mml:mtext>X</mml:mtext></mml:mstyle></mml:mrow><mml:mrow><mml:mn>1</mml:mn></mml:mrow></mml:msub></mml:mrow><mml:mo stretchy="false">)</mml:mo></mml:mrow><mml:msub><mml:mrow><mml:mstyle mathvariant="bold"><mml:mtext>ω</mml:mtext></mml:mstyle></mml:mrow><mml:mrow><mml:mn>1</mml:mn><mml:msup><mml:mrow><mml:mi>j</mml:mi></mml:mrow><mml:mrow><mml:mi>′</mml:mi></mml:mrow></mml:msup></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:msubsup><mml:mrow><mml:mstyle mathvariant="bold"><mml:mtext>ω</mml:mtext></mml:mstyle></mml:mrow><mml:mrow><mml:mn>2</mml:mn><mml:mi>j</mml:mi></mml:mrow><mml:mrow><mml:mo>⊤</mml:mo></mml:mrow></mml:msubsup><mml:mtext>Cov</mml:mtext><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mrow><mml:msub><mml:mrow><mml:mstyle mathvariant="bold"><mml:mtext>X</mml:mtext></mml:mstyle></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msub></mml:mrow><mml:mo stretchy="false">)</mml:mo></mml:mrow><mml:msub><mml:mrow><mml:mstyle mathvariant="bold"><mml:mtext>ω</mml:mtext></mml:mstyle></mml:mrow><mml:mrow><mml:mn>2</mml:mn><mml:msup><mml:mrow><mml:mi>j</mml:mi></mml:mrow><mml:mrow><mml:mi>′</mml:mi></mml:mrow></mml:msup></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:mn>0</mml:mn></mml:math></inline-formula> for all <italic>j</italic>&lt;<italic>j</italic>′. If <bold>X</bold><sub>1</sub> and <bold>X</bold><sub>2</sub> are centered and semiorthogonal matrices, then the CCA problem can be written as</p>
+          <disp-formula id="E2">
+<label>(2)</label>
+<mml:math id="M11" overflow="scroll"><mml:mtable columnalign="left"><mml:mtr><mml:mtd><mml:munder><mml:mrow><mml:mtext>argmax</mml:mtext></mml:mrow><mml:mrow><mml:msub><mml:mi>ω</mml:mi><mml:mrow><mml:mn>1</mml:mn><mml:mi>j</mml:mi></mml:mrow></mml:msub><mml:mo>∈</mml:mo><mml:msup><mml:mi>ℝ</mml:mi><mml:mrow><mml:msub><mml:mi>p</mml:mi><mml:mn>1</mml:mn></mml:msub></mml:mrow></mml:msup><mml:mo>,</mml:mo><mml:msub><mml:mi>ω</mml:mi><mml:mrow><mml:mn>2</mml:mn><mml:mi>j</mml:mi></mml:mrow></mml:msub><mml:mo>∈</mml:mo><mml:msup><mml:mi>ℝ</mml:mi><mml:mrow><mml:msub><mml:mi>p</mml:mi><mml:mn>2</mml:mn></mml:msub></mml:mrow></mml:msup></mml:mrow></mml:munder><mml:msubsup><mml:mi>ω</mml:mi><mml:mrow><mml:mn>1</mml:mn><mml:mi>j</mml:mi></mml:mrow><mml:mo>⊤</mml:mo></mml:msubsup><mml:msubsup><mml:mtext mathvariant="bold">X</mml:mtext><mml:mn>1</mml:mn><mml:mo>⊤</mml:mo></mml:msubsup><mml:msub><mml:mtext mathvariant="bold">X</mml:mtext><mml:mn>2</mml:mn></mml:msub><mml:msub><mml:mi>ω</mml:mi><mml:mrow><mml:mn>2</mml:mn><mml:mi>j</mml:mi></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:mtext> </mml:mtext><mml:mi>j</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn><mml:mo>,</mml:mo><mml:mo>…</mml:mo><mml:mo>,</mml:mo><mml:msub><mml:mi>r</mml:mi><mml:mi>J</mml:mi></mml:msub><mml:mo>,</mml:mo><mml:mtext> </mml:mtext></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mtext>subject to </mml:mtext><mml:mo>||</mml:mo><mml:msub><mml:mi>ω</mml:mi><mml:mrow><mml:mi>k</mml:mi><mml:mi>j</mml:mi></mml:mrow></mml:msub><mml:mo>||</mml:mo><mml:mtext> </mml:mtext><mml:mo>=</mml:mo><mml:mtext> </mml:mtext><mml:mn>1</mml:mn><mml:mtext> and </mml:mtext><mml:msubsup><mml:mi>ω</mml:mi><mml:mrow><mml:mi>k</mml:mi><mml:mi>j</mml:mi></mml:mrow><mml:mo>⊤</mml:mo></mml:msubsup><mml:msub><mml:mi>ω</mml:mi><mml:mrow><mml:mi>k</mml:mi><mml:msup><mml:mi>j</mml:mi><mml:mo>′</mml:mo></mml:msup></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:mn>0</mml:mn><mml:mo>,</mml:mo><mml:mtext> </mml:mtext><mml:mi>k</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn><mml:mo>,</mml:mo><mml:mn>2</mml:mn><mml:mo>,</mml:mo><mml:mtext> </mml:mtext><mml:mi>j</mml:mi><mml:mo>≠</mml:mo><mml:msup><mml:mi>j</mml:mi><mml:mo>′</mml:mo></mml:msup><mml:mo>.</mml:mo></mml:mtd></mml:mtr></mml:mtable></mml:math>
+</disp-formula>
+          <p>Then the solutions to (2), which we denote as <inline-formula><mml:math id="M12" overflow="scroll"><mml:msub><mml:mrow><mml:mover accent="true"><mml:mrow><mml:mstyle mathvariant="bold"><mml:mtext>ω</mml:mtext></mml:mstyle></mml:mrow><mml:mo>^</mml:mo></mml:mover></mml:mrow><mml:mrow><mml:mn>1</mml:mn><mml:mi>j</mml:mi></mml:mrow></mml:msub></mml:math></inline-formula> and <inline-formula><mml:math id="M13" overflow="scroll"><mml:msub><mml:mrow><mml:mover accent="true"><mml:mrow><mml:mstyle mathvariant="bold"><mml:mtext>ω</mml:mtext></mml:mstyle></mml:mrow><mml:mo>^</mml:mo></mml:mover></mml:mrow><mml:mrow><mml:mn>2</mml:mn><mml:mi>j</mml:mi></mml:mrow></mml:msub></mml:math></inline-formula>, are given by the left and right singular vectors of <inline-formula><mml:math id="M14" overflow="scroll"><mml:msubsup><mml:mrow><mml:mstyle mathvariant="bold"><mml:mtext>X</mml:mtext></mml:mstyle></mml:mrow><mml:mrow><mml:mn>1</mml:mn></mml:mrow><mml:mrow><mml:mo>⊤</mml:mo></mml:mrow></mml:msubsup><mml:msub><mml:mrow><mml:mstyle mathvariant="bold"><mml:mtext>X</mml:mtext></mml:mstyle></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msub></mml:math></inline-formula>, which are unique up to a change in sign (Mardia et al., <xref rid="B19" ref-type="bibr">1979</xref>). Additionally, <inline-formula><mml:math id="M15" overflow="scroll"><mml:msub><mml:mrow><mml:mi>ρ</mml:mi></mml:mrow><mml:mrow><mml:mi>j</mml:mi></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:mn>1</mml:mn></mml:mrow><mml:mrow><mml:mi>n</mml:mi></mml:mrow></mml:mfrac><mml:msubsup><mml:mrow><mml:mover accent="true"><mml:mrow><mml:mstyle mathvariant="bold"><mml:mtext>ω</mml:mtext></mml:mstyle></mml:mrow><mml:mo>^</mml:mo></mml:mover></mml:mrow><mml:mrow><mml:mn>1</mml:mn><mml:mi>j</mml:mi></mml:mrow><mml:mrow><mml:mo>⊤</mml:mo></mml:mrow></mml:msubsup><mml:msubsup><mml:mrow><mml:mstyle mathvariant="bold"><mml:mtext>X</mml:mtext></mml:mstyle></mml:mrow><mml:mrow><mml:mn>1</mml:mn></mml:mrow><mml:mrow><mml:mo>⊤</mml:mo></mml:mrow></mml:msubsup><mml:msub><mml:mrow><mml:mstyle mathvariant="bold"><mml:mtext>X</mml:mtext></mml:mstyle></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msub><mml:msub><mml:mrow><mml:mover accent="true"><mml:mrow><mml:mstyle mathvariant="bold"><mml:mtext>ω</mml:mtext></mml:mstyle></mml:mrow><mml:mo>^</mml:mo></mml:mover></mml:mrow><mml:mrow><mml:mn>2</mml:mn><mml:mi>j</mml:mi></mml:mrow></mml:msub></mml:math></inline-formula> is the <italic>j</italic>th canonical correlation.</p>
+          <p>Classic CCA can not be applied to <italic>p</italic><sub><italic>k</italic></sub>&gt;<italic>n</italic>. Sparse CCA is one alternative (Witten et al., <xref rid="B32" ref-type="bibr">2009</xref>), and it turns out JIVE is a reduced-rank alternative. Feng et al. (<xref rid="B4" ref-type="bibr">2018</xref>) show that the <italic>jth</italic> joint subject score from AJIVE is equivalent to the average of the <italic>jth</italic> canonical variables of the CCA of the scores from the separate PCAs, up to scaling. Our theorem, below, formalizes their finding. A proof is provided in the Web Appendix A.3 (<xref rid="SM1" ref-type="supplementary-material">Supplementary material</xref>).</p>
+          <p><sc>Theorem 2.1</sc>
+<italic>Let the columns of</italic>
+<bold>U</bold><sub>1</sub>
+<italic>and</italic>
+<bold>U</bold><sub>2</sub>
+<italic>represent orthonormal bases for the signal matrices</italic>
+<bold>X</bold><sub>1</sub>−<bold>E</bold><sub>1</sub>
+<italic>and</italic>
+<bold>X</bold><sub>2</sub>−<bold>E</bold><sub>2</sub><italic>. Let</italic>
+<inline-formula><mml:math id="M16" overflow="scroll"><mml:msub><mml:mrow><mml:mover accent="true"><mml:mrow><mml:mi>z</mml:mi></mml:mrow><mml:mo>^</mml:mo></mml:mover></mml:mrow><mml:mrow><mml:mi>j</mml:mi></mml:mrow></mml:msub></mml:math></inline-formula>
+<italic>be the</italic>
+<italic>jth</italic>
+<italic>joint subject score from AJIVE analysis. Let</italic>
+<inline-formula><mml:math id="M17" overflow="scroll"><mml:msub><mml:mrow><mml:mover accent="true"><mml:mrow><mml:mstyle mathvariant="bold"><mml:mtext>ω</mml:mtext></mml:mstyle></mml:mrow><mml:mo>^</mml:mo></mml:mover></mml:mrow><mml:mrow><mml:mn>1</mml:mn><mml:mi>j</mml:mi></mml:mrow></mml:msub><mml:mo>∈</mml:mo><mml:msup><mml:mrow><mml:mi>ℝ</mml:mi></mml:mrow><mml:mrow><mml:msub><mml:mrow><mml:mi>r</mml:mi></mml:mrow><mml:mrow><mml:mn>1</mml:mn></mml:mrow></mml:msub></mml:mrow></mml:msup></mml:math></inline-formula>
+<italic>and</italic>
+<inline-formula><mml:math id="M18" overflow="scroll"><mml:msub><mml:mrow><mml:mover accent="true"><mml:mrow><mml:mstyle mathvariant="bold"><mml:mtext>ω</mml:mtext></mml:mstyle></mml:mrow><mml:mo>^</mml:mo></mml:mover></mml:mrow><mml:mrow><mml:mn>2</mml:mn><mml:mi>j</mml:mi></mml:mrow></mml:msub><mml:mo>∈</mml:mo><mml:msup><mml:mrow><mml:mi>ℝ</mml:mi></mml:mrow><mml:mrow><mml:msub><mml:mrow><mml:mi>r</mml:mi></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msub></mml:mrow></mml:msup></mml:math></inline-formula>
+<italic>represent the canonical vectors from the CCA of</italic>
+<bold>U</bold><sub>1</sub>, <bold>U</bold><sub>2</sub><italic>. Let</italic> σ<sub><italic>Cj</italic></sub>
+<italic>denote the</italic>
+<italic>j</italic><italic>th singular value of</italic>
+<bold>C</bold> = [<bold>U</bold><sub>1</sub>, <bold>U</bold><sub>2</sub>]<italic>. Then</italic></p>
+          <disp-formula id="E3">
+<mml:math id="M19" overflow="scroll"><mml:mrow><mml:msub><mml:mrow><mml:mover accent="true"><mml:mtext>z</mml:mtext><mml:mo stretchy="true">^</mml:mo></mml:mover></mml:mrow><mml:mi>j</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:mfrac><mml:mn>1</mml:mn><mml:mrow><mml:msqrt><mml:mn>2</mml:mn></mml:msqrt><mml:msub><mml:mi>σ</mml:mi><mml:mrow><mml:mi>C</mml:mi><mml:mi>j</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:mfrac><mml:mo stretchy="false">(</mml:mo><mml:msub><mml:mtext>U</mml:mtext><mml:mn>1</mml:mn></mml:msub><mml:msub><mml:mrow><mml:mover accent="true"><mml:mi>ω</mml:mi><mml:mo stretchy="true">^</mml:mo></mml:mover></mml:mrow><mml:mrow><mml:mn>1</mml:mn><mml:mi>j</mml:mi></mml:mrow></mml:msub><mml:mo>+</mml:mo><mml:msub><mml:mrow><mml:mtext> U</mml:mtext></mml:mrow><mml:mn>2</mml:mn></mml:msub><mml:msub><mml:mrow><mml:mover accent="true"><mml:mi>ω</mml:mi><mml:mo stretchy="true">^</mml:mo></mml:mover></mml:mrow><mml:mrow><mml:mn>2</mml:mn><mml:mi>j</mml:mi></mml:mrow></mml:msub><mml:mo stretchy="false">)</mml:mo><mml:mo>.</mml:mo></mml:mrow></mml:math>
+</disp-formula>
+          <p><italic>Additionally, the canonical correlation</italic>
+<inline-formula><mml:math id="M20" overflow="scroll"><mml:msub><mml:mrow><mml:mi>ρ</mml:mi></mml:mrow><mml:mrow><mml:mi>j</mml:mi></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:msubsup><mml:mrow><mml:mi>σ</mml:mi></mml:mrow><mml:mrow><mml:mi>C</mml:mi><mml:mi>j</mml:mi></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msubsup><mml:mo>-</mml:mo><mml:mn>1</mml:mn></mml:math></inline-formula>.</p>
+          <p>In summary, the <italic>jth</italic> joint score vector from AJIVE is equivalent to a scaled average of the <italic>jth</italic> canonical variables of the principal component scores. This perspective is illustrated in <xref rid="F1" ref-type="fig">Figure 1</xref>, and we define CJIVE (CCA JIVE) in the next section.</p>
+          <fig position="float" id="F1">
+            <label>Figure 1</label>
+            <caption>
+              <p>Schematic of the CJIVE decomposition for obtaining joint subject scores and loadings. Quantities specific to <bold>X</bold><sub>1</sub> are shown in blue; those specific to <bold>X</bold><sub>2</sub>, orange. Gray boxes illustrate scores, with a green outline for joint scores. Checked and dotted boxes represent loadings. Steps are outlined in <xref rid="F8" ref-type="fig">Algorithm 1</xref>. Separately, SVD is applied to each data block (far left) to obtain low-rank PC scores (all score matrices are shown as gray boxes). Next, CCA is applied to the PC scores with the number of components chosen using a permutation test. Joint subject scores are equivalent to a weighted average of the resultant canonical variables. Joint loadings result from the matrix product between joint subject scores and data blocks, i.e., regression of the data blocks onto joint subject scores.</p>
+            </caption>
+            <graphic xlink:href="fnins-16-969510-g0001" position="float"/>
+          </fig>
+        </sec>
+        <sec>
+          <title>2.2.2. CJIVE: Ordering, permutation test, and unique components</title>
+          <p>The CCA perspective on the signal subspaces provides a useful way to interpret the joint components. We view the canonical correlations defined in Theorem 2.1 as a measure of the strength of the corresponding joint component, which provides an ordering.</p>
+          <p>This motivates the use of a permutation test of the canonical correlations of the PCs. For <italic>b</italic> = 1, …, <italic>n</italic><sub><italic>perms</italic></sub>, let <inline-formula><mml:math id="M21" overflow="scroll"><mml:msubsup><mml:mrow><mml:mstyle mathvariant="bold"><mml:mtext>U</mml:mtext></mml:mstyle></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow><mml:mrow><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mrow><mml:mi>b</mml:mi></mml:mrow><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:mrow></mml:msubsup></mml:math></inline-formula> represent a copy of <bold>U</bold><sub>2</sub> with the rows permuted so that they no longer represent the same ordering of participants as in <bold>U</bold><sub>1</sub>. We then obtain the null distribution of the canonical correlations from the max of the singular values of <inline-formula><mml:math id="M22" overflow="scroll"><mml:msubsup><mml:mrow><mml:mstyle mathvariant="bold"><mml:mtext>U</mml:mtext></mml:mstyle></mml:mrow><mml:mrow><mml:mn>1</mml:mn></mml:mrow><mml:mrow><mml:mo>⊤</mml:mo></mml:mrow></mml:msubsup><mml:msubsup><mml:mrow><mml:mstyle mathvariant="bold"><mml:mtext>U</mml:mtext></mml:mstyle></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow><mml:mrow><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mrow><mml:mi>b</mml:mi></mml:mrow><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:mrow></mml:msubsup></mml:math></inline-formula>, <italic>b</italic> = 1, …, <italic>n</italic><sub><italic>perms</italic></sub>. For each component, we calculate a <italic>p</italic>-value as the proportion of maximal null correlations which exceed that component's canonical correlation. By using the max across all singular values, the family-wise error rate is controlled at the specified α-level. Once we have estimated <italic>r</italic><sub><italic>J</italic></sub>
+<italic>via</italic> the permutation test, we calculate joint scores using the results of Theorem 2.1 and estimate the signal matrices using the same procedure in AJIVE. <xref rid="F8" ref-type="fig">Algorithm 1</xref> describes how to conduct the CJIVE procedure.</p>
+          <fig position="float" id="F8">
+            <label>Algorithm 1</label>
+            <caption>
+              <p>CJIVE Procedure.</p>
+            </caption>
+            <graphic xlink:href="fnins-16-969510-g0008" position="float"/>
+          </fig>
+          <p>Here, we summarize the CJIVE procedure depicted in <xref rid="F1" ref-type="fig">Figure 1</xref>.</p>
+          <p>CJIVE provides a unique decomposition of <inline-formula><mml:math id="M23" overflow="scroll"><mml:msub><mml:mrow><mml:mover accent="true"><mml:mrow><mml:mstyle mathvariant="bold"><mml:mtext>J</mml:mtext></mml:mstyle></mml:mrow><mml:mo>^</mml:mo></mml:mover></mml:mrow><mml:mrow><mml:mn>1</mml:mn></mml:mrow></mml:msub></mml:math></inline-formula> and <inline-formula><mml:math id="M24" overflow="scroll"><mml:msub><mml:mrow><mml:mover accent="true"><mml:mrow><mml:mstyle mathvariant="bold"><mml:mtext>J</mml:mtext></mml:mstyle></mml:mrow><mml:mo>^</mml:mo></mml:mover></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msub></mml:math></inline-formula> (up to sign) when the canonical correlations differ across components, as expected to occur in data. In the JIVE model given by (1), it is assumed that the joint subject score subspaces are equivalent. Then, the components are not unique. As in AJIVE (Feng et al., <xref rid="B4" ref-type="bibr">2018</xref>), the joint scores represent an orthogonal basis for the joint column space. Therefore, an orthogonal transformation of these scores will result in the same joint column space.</p>
+        </sec>
+        <sec>
+          <title>2.2.3. Predicting joint scores in new participants</title>
+          <p>An important problem is how to apply the results from JIVE analysis to a new participant. For example, if JIVE is used for biomarker development, we may want to estimate a subject score for a patient, which can then be used to classify their risk.</p>
+          <p>One straightforward way of using JIVE to predict new joint scores is to regress each new pair of observations onto the generalized inverse of joint loadings to obtain block-specific joint scores and then compute their average. Let <inline-formula><mml:math id="M25" overflow="scroll"><mml:msub><mml:mrow><mml:mover accent="false"><mml:mrow><mml:mstyle mathvariant="bold"><mml:mtext>W</mml:mtext></mml:mstyle></mml:mrow><mml:mo>^</mml:mo></mml:mover></mml:mrow><mml:mrow><mml:mi>J</mml:mi><mml:mi>k</mml:mi></mml:mrow></mml:msub></mml:math></inline-formula>, <italic>k</italic> = 1, 2, represent joint loadings from applying JIVE on the data blocks <bold>X</bold><sub>1</sub>and<bold>X</bold><sub>2</sub>. Let <inline-formula><mml:math id="M26" overflow="scroll"><mml:msub><mml:mrow><mml:mi>x</mml:mi></mml:mrow><mml:mrow><mml:mn>1</mml:mn><mml:mi>i</mml:mi></mml:mrow></mml:msub><mml:mo>∈</mml:mo><mml:msup><mml:mrow><mml:mi>ℝ</mml:mi></mml:mrow><mml:mrow><mml:msub><mml:mrow><mml:mi>p</mml:mi></mml:mrow><mml:mrow><mml:mn>1</mml:mn></mml:mrow></mml:msub></mml:mrow></mml:msup></mml:math></inline-formula> and <inline-formula><mml:math id="M27" overflow="scroll"><mml:msub><mml:mrow><mml:mi>x</mml:mi></mml:mrow><mml:mrow><mml:mn>2</mml:mn><mml:mi>i</mml:mi></mml:mrow></mml:msub><mml:mo>∈</mml:mo><mml:msup><mml:mrow><mml:mi>ℝ</mml:mi></mml:mrow><mml:mrow><mml:msub><mml:mrow><mml:mi>p</mml:mi></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msub></mml:mrow></mml:msup></mml:math></inline-formula> be data for a new participant. Then define predicted joint scores as</p>
+          <disp-formula id="E4">
+<mml:math id="M28" overflow="scroll"><mml:mrow><mml:msubsup><mml:mrow><mml:mover accent="true"><mml:mtext>z</mml:mtext><mml:mo stretchy="true">^</mml:mo></mml:mover></mml:mrow><mml:mi>i</mml:mi><mml:mo>⊤</mml:mo></mml:msubsup><mml:mo>=</mml:mo><mml:mo stretchy="false">(</mml:mo><mml:msubsup><mml:mtext>x</mml:mtext><mml:mrow><mml:mi>i</mml:mi><mml:mn>1</mml:mn></mml:mrow><mml:mo>⊤</mml:mo></mml:msubsup><mml:msubsup><mml:mrow><mml:mover accent="true"><mml:mtext mathvariant="bold">W</mml:mtext><mml:mo stretchy="true">^</mml:mo></mml:mover></mml:mrow><mml:mrow><mml:mi>J</mml:mi><mml:mn>1</mml:mn></mml:mrow><mml:mo>−</mml:mo></mml:msubsup><mml:mo>+</mml:mo><mml:msubsup><mml:mrow><mml:mtext> x</mml:mtext></mml:mrow><mml:mrow><mml:mi>i</mml:mi><mml:mn>2</mml:mn></mml:mrow><mml:mo>⊤</mml:mo></mml:msubsup><mml:msubsup><mml:mrow><mml:mover accent="true"><mml:mtext mathvariant="bold">W</mml:mtext><mml:mo stretchy="true">^</mml:mo></mml:mover></mml:mrow><mml:mrow><mml:mi>J</mml:mi><mml:mn>2</mml:mn></mml:mrow><mml:mo>−</mml:mo></mml:msubsup><mml:mo stretchy="false">)</mml:mo><mml:mo>/</mml:mo><mml:mo>∥</mml:mo><mml:msubsup><mml:mrow><mml:mtext> x</mml:mtext></mml:mrow><mml:mrow><mml:mi>i</mml:mi><mml:mn>1</mml:mn></mml:mrow><mml:mo>⊤</mml:mo></mml:msubsup><mml:msubsup><mml:mrow><mml:mover accent="true"><mml:mtext mathvariant="bold">W</mml:mtext><mml:mo stretchy="true">^</mml:mo></mml:mover></mml:mrow><mml:mrow><mml:mi>J</mml:mi><mml:mn>1</mml:mn></mml:mrow><mml:mo>−</mml:mo></mml:msubsup><mml:mo>+</mml:mo><mml:msubsup><mml:mrow><mml:mtext> x</mml:mtext></mml:mrow><mml:mrow><mml:mi>i</mml:mi><mml:mn>2</mml:mn></mml:mrow><mml:mo>⊤</mml:mo></mml:msubsup><mml:msubsup><mml:mrow><mml:mover accent="true"><mml:mtext mathvariant="bold">W</mml:mtext><mml:mo stretchy="true">^</mml:mo></mml:mover></mml:mrow><mml:mrow><mml:mi>J</mml:mi><mml:mn>2</mml:mn></mml:mrow><mml:mo>−</mml:mo></mml:msubsup><mml:mo>∥</mml:mo><mml:mo>,</mml:mo></mml:mrow></mml:math>
+</disp-formula>
+          <p>where <inline-formula><mml:math id="M29" overflow="scroll"><mml:msubsup><mml:mrow><mml:mover accent="false"><mml:mrow><mml:mstyle mathvariant="bold"><mml:mtext>W</mml:mtext></mml:mstyle></mml:mrow><mml:mo>^</mml:mo></mml:mover></mml:mrow><mml:mrow><mml:mi>J</mml:mi><mml:mi>k</mml:mi></mml:mrow><mml:mrow><mml:mo>-</mml:mo></mml:mrow></mml:msubsup></mml:math></inline-formula> represents the g-inverse of <inline-formula><mml:math id="M30" overflow="scroll"><mml:msub><mml:mrow><mml:mover accent="false"><mml:mrow><mml:mstyle mathvariant="bold"><mml:mtext>W</mml:mtext></mml:mstyle></mml:mrow><mml:mo>^</mml:mo></mml:mover></mml:mrow><mml:mrow><mml:mi>J</mml:mi><mml:mi>k</mml:mi></mml:mrow></mml:msub></mml:math></inline-formula>. Define this method as “G-inverse prediction.” To our knowledge, this prediction approach has not been evaluated.</p>
+          <p>R.JIVE-prediction (Kaplan and Lock, <xref rid="B11" ref-type="bibr">2017</xref>) estimates subject scores in new participants using an iterative process that aims to minimize the sum of squared errors between the new data matrices and noise-decontaminated JIVE signal by alternatively estimating new subject scores with the loadings from a previous JIVE analysis.</p>
+          <p>A third approach is based on the canonical variables given in Theorem 2.1, hereafter, CJIVE-prediction. First, we predict the PC scores for a new subject; second, we estimate the canonical variables of the PC scores from each dataset; third, we sum the canonical variables and normalize to length one. Let <inline-formula><mml:math id="M31" overflow="scroll"><mml:msub><mml:mrow><mml:mstyle mathvariant="bold"><mml:mtext>X</mml:mtext></mml:mstyle></mml:mrow><mml:mrow><mml:mi>k</mml:mi></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:msub><mml:mrow><mml:mstyle mathvariant="bold"><mml:mtext>U</mml:mtext></mml:mstyle></mml:mrow><mml:mrow><mml:mi>k</mml:mi></mml:mrow></mml:msub><mml:msub><mml:mrow><mml:mstyle mathvariant="bold"><mml:mtext>D</mml:mtext></mml:mstyle></mml:mrow><mml:mrow><mml:mi>k</mml:mi></mml:mrow></mml:msub><mml:msubsup><mml:mrow><mml:mstyle mathvariant="bold"><mml:mtext>V</mml:mtext></mml:mstyle></mml:mrow><mml:mrow><mml:mi>k</mml:mi></mml:mrow><mml:mrow><mml:mo>⊤</mml:mo></mml:mrow></mml:msubsup><mml:mo>+</mml:mo><mml:msub><mml:mrow><mml:mstyle mathvariant="bold"><mml:mtext>E</mml:mtext></mml:mstyle></mml:mrow><mml:mrow><mml:mi>k</mml:mi></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:mtext>for</mml:mtext><mml:mi>k</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn><mml:mo>,</mml:mo><mml:mn>2</mml:mn><mml:mo>,</mml:mo></mml:math></inline-formula> represent a rank <italic>r</italic><sub><italic>k</italic></sub> SVD of <bold>X</bold><sub><italic>k</italic></sub>. Using CCA on <bold>U</bold><sub>1</sub> and <bold>U</bold><sub>2</sub> yields matrices of canonical vectors: <inline-formula><mml:math id="M32" overflow="scroll"><mml:msub><mml:mrow><mml:mover accent="false"><mml:mrow><mml:mstyle mathvariant="bold"><mml:mtext>Ω</mml:mtext></mml:mstyle></mml:mrow><mml:mo>^</mml:mo></mml:mover></mml:mrow><mml:mrow><mml:mn>1</mml:mn></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:mrow><mml:mo>[</mml:mo><mml:mrow><mml:msub><mml:mrow><mml:mover accent="true"><mml:mrow><mml:mstyle mathvariant="bold"><mml:mtext>ω</mml:mtext></mml:mstyle></mml:mrow><mml:mo>^</mml:mo></mml:mover></mml:mrow><mml:mrow><mml:mn>1</mml:mn><mml:mi>j</mml:mi></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:mo>…</mml:mo><mml:mo>,</mml:mo><mml:msub><mml:mrow><mml:mover accent="true"><mml:mrow><mml:mstyle mathvariant="bold"><mml:mtext>ω</mml:mtext></mml:mstyle></mml:mrow><mml:mo>^</mml:mo></mml:mover></mml:mrow><mml:mrow><mml:mn>1</mml:mn><mml:msub><mml:mrow><mml:mi>r</mml:mi></mml:mrow><mml:mrow><mml:mi>J</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:msub></mml:mrow><mml:mo>]</mml:mo></mml:mrow></mml:math></inline-formula> and <inline-formula><mml:math id="M33" overflow="scroll"><mml:msub><mml:mrow><mml:mover accent="false"><mml:mrow><mml:mstyle mathvariant="bold"><mml:mtext>Ω</mml:mtext></mml:mstyle></mml:mrow><mml:mo>^</mml:mo></mml:mover></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:mrow><mml:mo>[</mml:mo><mml:mrow><mml:msub><mml:mrow><mml:mover accent="true"><mml:mrow><mml:mstyle mathvariant="bold"><mml:mtext>ω</mml:mtext></mml:mstyle></mml:mrow><mml:mo>^</mml:mo></mml:mover></mml:mrow><mml:mrow><mml:mn>2</mml:mn><mml:mi>j</mml:mi></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:mo>…</mml:mo><mml:mo>,</mml:mo><mml:msub><mml:mrow><mml:mover accent="true"><mml:mrow><mml:mstyle mathvariant="bold"><mml:mtext>ω</mml:mtext></mml:mstyle></mml:mrow><mml:mo>^</mml:mo></mml:mover></mml:mrow><mml:mrow><mml:mn>2</mml:mn><mml:msub><mml:mrow><mml:mi>r</mml:mi></mml:mrow><mml:mrow><mml:mi>J</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:msub></mml:mrow><mml:mo>]</mml:mo></mml:mrow></mml:math></inline-formula>. The predicted estimate for each canonical variable is given by <inline-formula><mml:math id="M34" overflow="scroll"><mml:msub><mml:mrow><mml:mover accent="true"><mml:mrow><mml:mi>c</mml:mi></mml:mrow><mml:mo>^</mml:mo></mml:mover></mml:mrow><mml:mrow><mml:mn>1</mml:mn><mml:mi>i</mml:mi></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:msubsup><mml:mrow><mml:mi>x</mml:mi></mml:mrow><mml:mrow><mml:mi>i</mml:mi><mml:mn>1</mml:mn></mml:mrow><mml:mrow><mml:mo>⊤</mml:mo></mml:mrow></mml:msubsup><mml:msub><mml:mrow><mml:mstyle mathvariant="bold"><mml:mtext>V</mml:mtext></mml:mstyle></mml:mrow><mml:mrow><mml:mn>1</mml:mn></mml:mrow></mml:msub><mml:msubsup><mml:mrow><mml:mstyle mathvariant="bold"><mml:mtext>D</mml:mtext></mml:mstyle></mml:mrow><mml:mrow><mml:mn>1</mml:mn></mml:mrow><mml:mrow><mml:mo>-</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:msubsup><mml:msub><mml:mrow><mml:mover accent="false"><mml:mrow><mml:mstyle mathvariant="bold"><mml:mtext>Ω</mml:mtext></mml:mstyle></mml:mrow><mml:mo>^</mml:mo></mml:mover></mml:mrow><mml:mrow><mml:mn>1</mml:mn></mml:mrow></mml:msub></mml:math></inline-formula> and <inline-formula><mml:math id="M35" overflow="scroll"><mml:msub><mml:mrow><mml:mover accent="true"><mml:mrow><mml:mi>c</mml:mi></mml:mrow><mml:mo>^</mml:mo></mml:mover></mml:mrow><mml:mrow><mml:mn>2</mml:mn><mml:mi>i</mml:mi></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:msubsup><mml:mrow><mml:mi>x</mml:mi></mml:mrow><mml:mrow><mml:mi>i</mml:mi><mml:mn>2</mml:mn></mml:mrow><mml:mrow><mml:mo>⊤</mml:mo></mml:mrow></mml:msubsup><mml:msub><mml:mrow><mml:mstyle mathvariant="bold"><mml:mtext>V</mml:mtext></mml:mstyle></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msub><mml:msubsup><mml:mrow><mml:mstyle mathvariant="bold"><mml:mtext>D</mml:mtext></mml:mstyle></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow><mml:mrow><mml:mo>-</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:msubsup><mml:msub><mml:mrow><mml:mover accent="false"><mml:mrow><mml:mstyle mathvariant="bold"><mml:mtext>Ω</mml:mtext></mml:mstyle></mml:mrow><mml:mo>^</mml:mo></mml:mover></mml:mrow><mml:mrow><mml:mn>2</mml:mn><mml:mi>j</mml:mi></mml:mrow></mml:msub></mml:math></inline-formula>. Then the <italic>jth</italic> joint score is</p>
+          <disp-formula id="E5">
+<mml:math id="M36" overflow="scroll"><mml:mrow><mml:msub><mml:mover accent="true"><mml:mi>z</mml:mi><mml:mo>^</mml:mo></mml:mover><mml:mrow><mml:mi>i</mml:mi><mml:mi>j</mml:mi></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:msub><mml:mover accent="true"><mml:mi>c</mml:mi><mml:mo>^</mml:mo></mml:mover><mml:mrow><mml:mn>1</mml:mn><mml:mi>i</mml:mi><mml:mi>j</mml:mi></mml:mrow></mml:msub><mml:mo>+</mml:mo><mml:msub><mml:mover accent="true"><mml:mi>c</mml:mi><mml:mo>^</mml:mo></mml:mover><mml:mrow><mml:mn>2</mml:mn><mml:mi>i</mml:mi><mml:mi>j</mml:mi></mml:mrow></mml:msub></mml:mrow><mml:mrow><mml:msqrt><mml:mrow><mml:mn>2</mml:mn><mml:mo stretchy="false">(</mml:mo><mml:mn>1</mml:mn><mml:mo>+</mml:mo><mml:msub><mml:mi>ρ</mml:mi><mml:mi>j</mml:mi></mml:msub><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msqrt></mml:mrow></mml:mfrac><mml:mo>,</mml:mo></mml:mrow></mml:math>
+</disp-formula>
+          <p>for <italic>j</italic> = 1, …, <italic>r</italic><sub><italic>J</italic></sub>.</p>
+          <p>We apply and evaluate these three prediction methods in both the simulation study of Section 3 and analysis of the HCP data (Section 4).</p>
+        </sec>
+      </sec>
+    </sec>
+    <sec id="s3">
+      <title>3. Simulation study</title>
+      <sec>
+        <title>3.1. Simulations comparing JIVE methods</title>
+        <p>We conduct simulation studies to address the following gaps in the current understanding of the performance of R.JIVE and AJIVE: (1) accuracy when the joint signal strength is low vs. high; (2) rank selection when the number of joint components is &gt;1; and (3) the impact of the initial signal rank selection on joint rank selection. We use a full factorial design with the following factors:</p>
+        <list list-type="order">
+          <list-item>
+            <p>The number of features in <bold>X</bold><sub>2</sub>: with levels (a) <italic>p</italic><sub>2</sub> = 200 and (b) <italic>p</italic><sub>2</sub> = 10000,</p>
+          </list-item>
+          <list-item>
+            <p>Joint Variation Explained in <bold>X</bold><sub>1</sub>: with levels (a) <inline-formula><mml:math id="M37" overflow="scroll"><mml:msubsup><mml:mrow><mml:mi>R</mml:mi></mml:mrow><mml:mrow><mml:mi>J</mml:mi><mml:mn>1</mml:mn></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msubsup><mml:mo>=</mml:mo><mml:mn>0</mml:mn><mml:mo>.</mml:mo><mml:mn>05</mml:mn></mml:math></inline-formula> and (b) <inline-formula><mml:math id="M38" overflow="scroll"><mml:msubsup><mml:mrow><mml:mi>R</mml:mi></mml:mrow><mml:mrow><mml:mi>J</mml:mi><mml:mn>1</mml:mn></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msubsup><mml:mo>=</mml:mo><mml:mn>0</mml:mn><mml:mo>.</mml:mo><mml:mn>5</mml:mn></mml:math></inline-formula>,</p>
+          </list-item>
+          <list-item>
+            <p>Joint Variation Explained in <bold>X</bold><sub>2</sub>: with levels (a) <inline-formula><mml:math id="M39" overflow="scroll"><mml:msubsup><mml:mrow><mml:mi>R</mml:mi></mml:mrow><mml:mrow><mml:mi>J</mml:mi><mml:mn>2</mml:mn></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msubsup><mml:mo>=</mml:mo><mml:mn>0</mml:mn><mml:mo>.</mml:mo><mml:mn>05</mml:mn></mml:math></inline-formula> and (b) <inline-formula><mml:math id="M40" overflow="scroll"><mml:msubsup><mml:mrow><mml:mi>R</mml:mi></mml:mrow><mml:mrow><mml:mi>J</mml:mi><mml:mn>2</mml:mn></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msubsup><mml:mo>=</mml:mo><mml:mn>0</mml:mn><mml:mo>.</mml:mo><mml:mn>5</mml:mn></mml:math></inline-formula>.</p>
+          </list-item>
+        </list>
+        <p>The joint rank was 3, individual ranks were 2, and <italic>n</italic> = 200 in all settings. The entries of the error matrices <bold>E</bold><sub>1</sub> and <bold>E</bold><sub>2</sub> were randomly drawn from a standard Gaussian distribution. The number of features in <bold>X</bold><sub>1</sub> and the individual variation explained for both data blocks were held constant at <italic>p</italic><sub>1</sub> = 200 and <inline-formula><mml:math id="M41" overflow="scroll"><mml:msubsup><mml:mrow><mml:mi>R</mml:mi></mml:mrow><mml:mrow><mml:mi>I</mml:mi><mml:mn>1</mml:mn></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msubsup><mml:mo>=</mml:mo><mml:msubsup><mml:mrow><mml:mi>R</mml:mi></mml:mrow><mml:mrow><mml:mi>I</mml:mi><mml:mn>2</mml:mn></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msubsup><mml:mo>=</mml:mo><mml:mn>0</mml:mn><mml:mo>.</mml:mo><mml:mn>25</mml:mn></mml:math></inline-formula>, respectively.</p>
+        <p>Experimental factor 1 (i.e., <italic>p</italic><sub>2</sub>) allows us to assess the impact of <italic>p</italic><sub><italic>k</italic></sub> on the accuracy subspace estimation and <italic>r</italic><sub><italic>J</italic></sub> estimates. Factors 2 and 3 (i.e., <inline-formula><mml:math id="M42" overflow="scroll"><mml:msubsup><mml:mrow><mml:mi>R</mml:mi></mml:mrow><mml:mrow><mml:mi>J</mml:mi><mml:mn>1</mml:mn></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msubsup></mml:math></inline-formula> and <inline-formula><mml:math id="M43" overflow="scroll"><mml:msubsup><mml:mrow><mml:mi>R</mml:mi></mml:mrow><mml:mrow><mml:mi>J</mml:mi><mml:mn>2</mml:mn></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msubsup></mml:math></inline-formula>) allow us to examine the impact of the joint signal's magnitude within each dataset.</p>
+        <p>For each simulation, the subject score matrix [<bold>Z</bold>, <bold>B</bold><sub>1</sub>, <bold>B</bold><sub>2</sub>] was drawn from a Bernoulli distribution, with probability 0.2 for <bold>Z</bold> and 0.4 for <bold>B</bold><sub><italic>k</italic></sub>. The use of two values is similar to the toy examples from Feng et al. (<xref rid="B4" ref-type="bibr">2018</xref>), which used ±1. Next, we defined loading matrices <bold>W</bold><sub><italic>Jk</italic></sub> and <bold>W</bold><sub><italic>Ik</italic></sub> with entries from independent, mean 0 multivariate Gaussian distributions with covariance matrices diag(9, 4, 1) and diag(4, 1), respectively. The values along the diagonals were chosen to ensure the strength of components within each joint/individual signal diminished from first to last. Note that this set-up results in approximately orthogonal <bold>A</bold><sub>1</sub> and <bold>A</bold><sub>2</sub>. In R.JIVE, we use the option enforcing this orthogonality. This set-up may favor the rank-selection procedure in AJIVE since principal angles between <bold>A</bold><sub>1</sub>and<bold>A</bold><sub>2</sub> are large and corresponding singular values are unlikely to exceed the Wedin and random bounds described in Section 2.1.2.</p>
+        <p>In order to achieve the desired values of <inline-formula><mml:math id="M44" overflow="scroll"><mml:msubsup><mml:mrow><mml:mi>R</mml:mi></mml:mrow><mml:mrow><mml:mi>J</mml:mi><mml:mi>k</mml:mi></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msubsup></mml:math></inline-formula> and <inline-formula><mml:math id="M45" overflow="scroll"><mml:msubsup><mml:mrow><mml:mi>R</mml:mi></mml:mrow><mml:mrow><mml:mi>I</mml:mi><mml:mi>k</mml:mi></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msubsup></mml:math></inline-formula>, we rescale the joint and individual matrices such that <bold>X</bold><sub><italic>k</italic></sub> = <italic>d</italic><sub><italic>k</italic></sub><bold>J</bold><sub><italic>K</italic></sub>+<italic>c</italic><sub><italic>k</italic></sub><bold>A</bold><sub><italic>k</italic></sub>+<bold>E</bold><sub><italic>k</italic></sub> for appropriate constants <italic>c</italic><sub><italic>k</italic></sub> and <italic>d</italic><sub><italic>k</italic></sub>, as described in Web Appendix B (<xref rid="SM1" ref-type="supplementary-material">Supplementary material</xref>).</p>
+        <p>The chordal subspace norm is a distance metric for linear subspaces that has been generalized to matrices, say, true joint scores <inline-formula><mml:math id="M46" overflow="scroll"><mml:mstyle mathvariant="bold"><mml:mtext>Z</mml:mtext></mml:mstyle><mml:mstyle class="text"><mml:mtext class="textrm" mathvariant="normal">and estimated joint scores</mml:mtext></mml:mstyle><mml:mover accent="false"><mml:mrow><mml:mstyle mathvariant="bold"><mml:mtext>Z</mml:mtext></mml:mstyle></mml:mrow><mml:mo>^</mml:mo></mml:mover></mml:math></inline-formula>, of possibly different ranks (Ye and Lim, <xref rid="B33" ref-type="bibr">2014</xref>) and can be calculated as</p>
+        <disp-formula id="E6">
+<mml:math id="M47" overflow="scroll"><mml:mrow><mml:mi>δ</mml:mi><mml:mo stretchy="false">(</mml:mo><mml:mtext mathvariant="bold">Z</mml:mtext><mml:mo>,</mml:mo><mml:mover accent="true"><mml:mtext mathvariant="bold">Z</mml:mtext><mml:mo stretchy="true">^</mml:mo></mml:mover><mml:mo stretchy="false">)</mml:mo><mml:mo>=</mml:mo><mml:msqrt><mml:mrow><mml:mstyle displaystyle="true"><mml:munderover><mml:mo>∑</mml:mo><mml:mrow><mml:mi>m</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mi>q</mml:mi></mml:munderover><mml:mrow><mml:msup><mml:mrow><mml:mi>sin</mml:mi></mml:mrow><mml:mn>2</mml:mn></mml:msup></mml:mrow></mml:mstyle><mml:msub><mml:mi>θ</mml:mi><mml:mi>m</mml:mi></mml:msub></mml:mrow></mml:msqrt><mml:mo>,</mml:mo></mml:mrow></mml:math>
+</disp-formula>
+        <p>where <inline-formula><mml:math id="M48" overflow="scroll"><mml:mi>q</mml:mi><mml:mo>=</mml:mo><mml:munder class="msub"><mml:mrow><mml:mo class="qopname">min</mml:mo></mml:mrow><mml:mrow><mml:mi>k</mml:mi></mml:mrow></mml:munder><mml:mrow><mml:mo>[</mml:mo><mml:mrow><mml:mstyle class="text"><mml:mtext class="textrm" mathvariant="normal">rank</mml:mtext></mml:mstyle><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mrow><mml:mstyle mathvariant="bold"><mml:mtext>Z</mml:mtext></mml:mstyle></mml:mrow><mml:mo stretchy="false">)</mml:mo></mml:mrow><mml:mo>,</mml:mo><mml:mstyle class="text"><mml:mtext class="textrm" mathvariant="normal">rank</mml:mtext></mml:mstyle><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mrow><mml:mover accent="false"><mml:mrow><mml:msub><mml:mrow><mml:mstyle mathvariant="bold"><mml:mtext>Z</mml:mtext></mml:mstyle></mml:mrow><mml:mrow><mml:mi>k</mml:mi></mml:mrow></mml:msub></mml:mrow><mml:mo class="qopname">^</mml:mo></mml:mover></mml:mrow><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:mrow><mml:mo>]</mml:mo></mml:mrow></mml:math></inline-formula> and θ<sub><italic>m</italic></sub> are the principal angles between the column space of <bold>Z</bold> and <inline-formula><mml:math id="M49" overflow="scroll"><mml:mover accent="false"><mml:mrow><mml:mstyle mathvariant="bold"><mml:mtext>Z</mml:mtext></mml:mstyle></mml:mrow><mml:mo>^</mml:mo></mml:mover></mml:math></inline-formula>. We use this metric in our simulation studies to describe the accuracy of JIVE estimates. Note when the column space of <bold>Z</bold> is contained in the column space of <inline-formula><mml:math id="M50" overflow="scroll"><mml:mover accent="false"><mml:mrow><mml:mstyle mathvariant="bold"><mml:mtext>Z</mml:mtext></mml:mstyle></mml:mrow><mml:mo>^</mml:mo></mml:mover></mml:math></inline-formula>, <inline-formula><mml:math id="M51" overflow="scroll"><mml:mi>δ</mml:mi><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mrow><mml:mstyle mathvariant="bold"><mml:mtext>Z</mml:mtext></mml:mstyle><mml:mo>,</mml:mo><mml:mover accent="false"><mml:mrow><mml:mstyle mathvariant="bold"><mml:mtext>Z</mml:mtext></mml:mstyle></mml:mrow><mml:mo>^</mml:mo></mml:mover></mml:mrow><mml:mo stretchy="false">)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mn>0</mml:mn></mml:math></inline-formula>. Therefore, comparing results from different methods requires examination of rank estimates and subspace estimates.</p>
+        <p>We performed 100 simulations using the following methods: (1) AJIVE-<italic>r</italic><sub><italic>k</italic></sub>, where we used the true total number of components <italic>r</italic><sub><italic>k</italic></sub> (joint rank + individual rank) as input; (2) AJIVE-Over, where the total number of components was chosen to retain 95% of the variance; (3) R.JIVE-Oracle, which uses both the true <italic>r</italic><sub><italic>k</italic></sub> and <italic>r</italic><sub><italic>J</italic></sub> as input; and (4) R.JIVE-Free, with its permutation based algorithm for choosing ranks. We also defined (5) CJIVE-<italic>r</italic><sub><italic>k</italic></sub> and (6) CJIVE-Over using the same approach for total signal ranks and selecting the joint rank using our permutation test with <italic>n</italic><sub><italic>perms</italic></sub> = 500 and α = 0.05.</p>
+        <p>To investigate the prediction methods outlined in Section 2.2.3, the subjects for each simulation were randomly divided into training and test subjects, both with sample sizes <italic>n</italic>/2 = 100. AJIVE, CJIVE, and R.JIVE, all with true signal ranks used as inputs, were applied on the training datasets. Subject scores were predicted for new subjects, represented by the test datasets. We then assessed performance by calculating the Pearson correlation coefficient between predicted joint scores for the test datasets and true joint scores for the same datasets for each of the <italic>r</italic><sub><italic>J</italic></sub> joint score components.</p>
+      </sec>
+      <sec>
+        <title>3.2. Simulation results</title>
+        <p><xref rid="F2" ref-type="fig">Figures 2A</xref>,<xref rid="F2" ref-type="fig">B</xref> show that CJIVE-<italic>r</italic><sub><italic>k</italic></sub> and AJIVE-<italic>r</italic><sub><italic>k</italic></sub> chose the correct joint rank in nearly 100% of simulations in all settings except for the low-signal lower-dimensional case. Further investigation indicated the joint rank selection in AJIVE tends to be driven by the random direction bound, rather than the Wedin bound (see Web Appendix A.1.2 in <xref rid="SM1" ref-type="supplementary-material">Supplementary material</xref>). AJIVE-Over and CJIVE-Over both routinely underestimated the number of joint components in all scenarios except lower dimensional high-signal case. When an estimate of <italic>r</italic><sub><italic>k</italic></sub> is very large, the correlation between permuted datasets can be very large, such that zero joint components are significant. The joint rank estimated in R.JIVE is equal to 2 in a majority of simulations when the joint signal in both datasets is relatively large (bottom-right panels in <xref rid="F2" ref-type="fig">Figures 2A</xref>,<xref rid="F2" ref-type="fig">B</xref>: <inline-formula><mml:math id="M52" overflow="scroll"><mml:msubsup><mml:mrow><mml:mi>R</mml:mi></mml:mrow><mml:mrow><mml:mi>J</mml:mi><mml:mn>1</mml:mn></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msubsup><mml:mo>=</mml:mo><mml:msubsup><mml:mrow><mml:mi>R</mml:mi></mml:mrow><mml:mrow><mml:mi>J</mml:mi><mml:mn>2</mml:mn></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msubsup><mml:mo>=</mml:mo><mml:mn>0</mml:mn><mml:mo>.</mml:mo><mml:mn>5</mml:mn></mml:math></inline-formula>), while it is mostly 0 or 1 in the other scenarios.</p>
+        <fig position="float" id="F2">
+          <label>Figure 2</label>
+          <caption>
+            <p>Results of simulation studies: <bold>(A)</bold>
+<italic>p</italic><sub>2</sub> = 200, <bold>(B)</bold>
+<italic>p</italic><sub>2</sub> = 10, 000. Each sub-figure shows the estimated joint signal rank for each method and combination of simulation settings. True joint rank equals 3 in all simulations. <inline-formula><mml:math id="M53" overflow="scroll"><mml:msubsup><mml:mrow><mml:mi>R</mml:mi></mml:mrow><mml:mrow><mml:mi>J</mml:mi><mml:mn>1</mml:mn></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msubsup></mml:math></inline-formula> and <inline-formula><mml:math id="M54" overflow="scroll"><mml:msubsup><mml:mrow><mml:mi>R</mml:mi></mml:mrow><mml:mrow><mml:mi>J</mml:mi><mml:mn>2</mml:mn></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msubsup></mml:math></inline-formula> represent the true joint variation controlled in simulations. We held the sample size and individual variation explained constant at <italic>n</italic> = 200 and <inline-formula><mml:math id="M55" overflow="scroll"><mml:msubsup><mml:mrow><mml:mi>R</mml:mi></mml:mrow><mml:mrow><mml:mi>I</mml:mi><mml:mn>1</mml:mn></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msubsup><mml:mo>=</mml:mo><mml:msubsup><mml:mrow><mml:mi>R</mml:mi></mml:mrow><mml:mrow><mml:mi>I</mml:mi><mml:mn>2</mml:mn></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msubsup><mml:mo>=</mml:mo><mml:mn>0</mml:mn><mml:mo>.</mml:mo><mml:mn>25</mml:mn></mml:math></inline-formula>, respectively. Importantly, AJIVE-<italic>r</italic><sub><italic>k</italic></sub> and CJIVE-<italic>r</italic><sub><italic>k</italic></sub> are not possible in practice, as the signal ranks must all be estimated.</p>
+          </caption>
+          <graphic xlink:href="fnins-16-969510-g0002" position="float"/>
+        </fig>
+        <p>CJIVE-<italic>r</italic><sub><italic>k</italic></sub> and AJIVE-<italic>r</italic><sub><italic>k</italic></sub> joint score subspace errors trended less than R.JIVE, CJIVE-Over, and AJIVE-Over in all settings, as shown in <xref rid="F3" ref-type="fig">Figure 3</xref>. Although the chordal distances for joint loading subspaces from R.JIVE trended less than those from AJIVE-<italic>r</italic><sub><italic>k</italic></sub>, the lack of accurate joint rank estimates from R.JIVE may indicate that estimated subspaces partially lie within true subspaces.</p>
+        <fig position="float" id="F3">
+          <label>Figure 3</label>
+          <caption>
+            <p>Results of simulation studies: <bold>(A,B)</bold>
+<italic>p</italic><sub>2</sub> = 200, <bold>(C,D)</bold>
+<italic>p</italic><sub>2</sub> = 10, 000. Each sub-figure exhibits boxplots of chordal norms for each of the post-JIVE measurements described in Section 2.1. Methods with chordal norms equal to 1 result when the estimated joint rank is 0 for all replicates. <inline-formula><mml:math id="M56" overflow="scroll"><mml:msubsup><mml:mrow><mml:mi>R</mml:mi></mml:mrow><mml:mrow><mml:mi>J</mml:mi><mml:mn>1</mml:mn></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msubsup></mml:math></inline-formula> and <inline-formula><mml:math id="M57" overflow="scroll"><mml:msubsup><mml:mrow><mml:mi>R</mml:mi></mml:mrow><mml:mrow><mml:mi>J</mml:mi><mml:mn>2</mml:mn></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msubsup></mml:math></inline-formula> represent the true joint variation controlled in simulations. We held the sample size, joint rank, and proportions of individual variation explained constant at <italic>n</italic> = 200, <italic>r</italic><sub><italic>J</italic></sub> = 3, and <inline-formula><mml:math id="M58" overflow="scroll"><mml:msubsup><mml:mrow><mml:mi>R</mml:mi></mml:mrow><mml:mrow><mml:mi>I</mml:mi><mml:mn>1</mml:mn></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msubsup><mml:mo>=</mml:mo><mml:msubsup><mml:mrow><mml:mi>R</mml:mi></mml:mrow><mml:mrow><mml:mi>I</mml:mi><mml:mn>2</mml:mn></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msubsup><mml:mo>=</mml:mo><mml:mn>0</mml:mn><mml:mo>.</mml:mo><mml:mn>25</mml:mn></mml:math></inline-formula>, respectively. The left column <bold>(A,C)</bold>, show chordal norms between true and estimated subject scores. The right column <bold>(B,D)</bold>, show chordal norms between true and estimated variable loadings.</p>
+          </caption>
+          <graphic xlink:href="fnins-16-969510-g0003" position="float"/>
+        </fig>
+        <p>To summarize, we find that CJIVE-<italic>r</italic><sub><italic>k</italic></sub> and AJIVE-<italic>r</italic><sub><italic>k</italic></sub> chose the joint rank correctly in most simulations. For both CJIVE-Over and AJIVE-Over, including too many initial signal components generally resulted in a noise-contaminated signal for each data matrix, which resulted in too few joint components or none at all. Moreover, CJIVE-<italic>r</italic><sub><italic>k</italic></sub> and AJIVE-<italic>r</italic><sub><italic>k</italic></sub> estimates of joint score and loading subspaces tended to be more accurate than both R.JIVE-Free and R.JIVE-Oracle. In simulations, AJIVE-<italic>r</italic><sub><italic>k</italic></sub> is equivalent to AJIVE-Scree plot because the signal rank is identified from the scree plots (Web Appendix Figure S2 in <xref rid="SM1" ref-type="supplementary-material">Supplementary material</xref>).</p>
+        <p>Out-of-sample subject score estimates were more accurate across joint components using CJIVE-prediction compared to G-inverse prediction (<xref rid="F4" ref-type="fig">Figure 4</xref>). However, R.JIVE-prediction results were most accurate when the joint signal in at least one dataset was relatively strong, i.e., <inline-formula><mml:math id="M59" overflow="scroll"><mml:msubsup><mml:mrow><mml:mi>R</mml:mi></mml:mrow><mml:mrow><mml:mi>J</mml:mi><mml:mi>k</mml:mi></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msubsup><mml:mo>=</mml:mo><mml:mn>0</mml:mn><mml:mo>.</mml:mo><mml:mn>5</mml:mn></mml:math></inline-formula> for <italic>k</italic> = 1or2. The Pearson correlation coefficients tend to be close to 1, on average, for the first joint component of subject scores across all simulation settings. The third component was predicted poorly in all methods when the joint signal is relatively weak, i.e., <inline-formula><mml:math id="M60" overflow="scroll"><mml:msubsup><mml:mrow><mml:mi>R</mml:mi></mml:mrow><mml:mrow><mml:mi>J</mml:mi><mml:mn>1</mml:mn></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msubsup><mml:mo>=</mml:mo><mml:msubsup><mml:mrow><mml:mi>R</mml:mi></mml:mrow><mml:mrow><mml:mi>J</mml:mi><mml:mn>2</mml:mn></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msubsup><mml:mo>=</mml:mo><mml:mn>0</mml:mn><mml:mo>.</mml:mo><mml:mn>05</mml:mn><mml:mo>.</mml:mo></mml:math></inline-formula> Recall data were simulated so that the proportion of variance attributable to the <italic>jth</italic> joint component in <bold>X</bold><sub><italic>k</italic></sub>, <italic>k</italic> = 1, 2, <italic>j</italic> = 1, 2, 3 is given by <inline-formula><mml:math id="M61" overflow="scroll"><mml:msubsup><mml:mrow><mml:mi>R</mml:mi></mml:mrow><mml:mrow><mml:mi>J</mml:mi><mml:mi>k</mml:mi></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msubsup><mml:mo>=</mml:mo><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mrow><mml:mfrac><mml:mrow><mml:mn>3</mml:mn><mml:mo>-</mml:mo><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mrow><mml:mi>j</mml:mi><mml:mo>-</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:mrow><mml:mrow><mml:mn>6</mml:mn></mml:mrow></mml:mfrac></mml:mrow><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:math></inline-formula>. Therefore, components are ordered (from highest to lowest) by the proportion of joint variation that they contribute, which may contribute to the trend in poorer prediction as <italic>j</italic> increased.</p>
+        <fig position="float" id="F4">
+          <label>Figure 4</label>
+          <caption>
+            <p>Results of simulation studies: <bold>(A)</bold>
+<italic>p</italic><sub>2</sub> = 200, <bold>(B)</bold>
+<italic>p</italic><sub>2</sub> = 10, 000. Boxplots of absolute Pearson correlations between predicted joint scores and true joint scores in simulation study. <inline-formula><mml:math id="M62" overflow="scroll"><mml:msubsup><mml:mrow><mml:mi>R</mml:mi></mml:mrow><mml:mrow><mml:mi>J</mml:mi><mml:mn>1</mml:mn></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msubsup></mml:math></inline-formula> and <inline-formula><mml:math id="M63" overflow="scroll"><mml:msubsup><mml:mrow><mml:mi>R</mml:mi></mml:mrow><mml:mrow><mml:mi>J</mml:mi><mml:mn>2</mml:mn></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msubsup></mml:math></inline-formula> represent the true joint variation controlled in simulations. We held the sample size and individual variation explained constant at <italic>n</italic> = 200 and <inline-formula><mml:math id="M64" overflow="scroll"><mml:msubsup><mml:mrow><mml:mi>R</mml:mi></mml:mrow><mml:mrow><mml:mi>I</mml:mi><mml:mn>1</mml:mn></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msubsup><mml:mo>=</mml:mo><mml:msubsup><mml:mrow><mml:mi>R</mml:mi></mml:mrow><mml:mrow><mml:mi>I</mml:mi><mml:mn>2</mml:mn></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msubsup><mml:mo>=</mml:mo><mml:mn>0</mml:mn><mml:mo>.</mml:mo><mml:mn>25</mml:mn></mml:math></inline-formula>, respectively. <bold>(A)</bold> shows results for <italic>p</italic><sub>1</sub> = 200, <italic>p</italic><sub>2</sub> = 200. <bold>(B)</bold> shows results for <italic>p</italic><sub>1</sub> = 200, <italic>p</italic><sub>2</sub> = 10, 000. Data were simulated so that the proportion of variance attributable to the <italic>jth</italic> joint component in <bold>X</bold><sub><italic>k</italic></sub>, (<italic>k</italic> = 1, 2;<italic>j</italic> = 1, …<italic>r</italic><sub><italic>J</italic></sub>) is given by <inline-formula><mml:math id="M65" overflow="scroll"><mml:msubsup><mml:mrow><mml:mi>R</mml:mi></mml:mrow><mml:mrow><mml:mi>J</mml:mi><mml:mi>k</mml:mi></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msubsup><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mrow><mml:mfrac><mml:mrow><mml:msub><mml:mrow><mml:mi>r</mml:mi></mml:mrow><mml:mrow><mml:mi>J</mml:mi></mml:mrow></mml:msub><mml:mo>-</mml:mo><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mrow><mml:mi>j</mml:mi><mml:mo>-</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:mrow><mml:mrow><mml:mn>1</mml:mn><mml:mo>+</mml:mo><mml:mo>⋯</mml:mo><mml:mo>+</mml:mo><mml:msub><mml:mrow><mml:mi>r</mml:mi></mml:mrow><mml:mrow><mml:mi>J</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:mfrac></mml:mrow><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:math></inline-formula>.</p>
+          </caption>
+          <graphic xlink:href="fnins-16-969510-g0004" position="float"/>
+        </fig>
+      </sec>
+    </sec>
+    <sec id="s4">
+      <title>4. Joint analysis of structural and functional connectivity in the human connectome project data</title>
+      <sec>
+        <title>4.1. Human connectome project data and processing</title>
+        <p>Our data application uses measures of FC and SC from <italic>n</italic> = 998 study participants (532 females) in the young adult Human Connectome Project (HCP). Web Appendix Table S4 in <xref rid="SM1" ref-type="supplementary-material">Supplementary material</xref> provides demographics. We applied R.JIVE, AJIVE, CJIVE, and sCCA to examine multivariate relationships across brain networks as measured by Fisher z-transformed correlations from rs-fMRI (FC) and log-transformed streamline counts from dMRI (SC).</p>
+        <p>HCP rs-fMRI data comprise two left-right phase encoded and two right-left phase encoded 15-min eyes-open rs-fMRI runs (Glasser et al., <xref rid="B7" ref-type="bibr">2013</xref>). Each run used 2-mm isotropic voxels with 0.72 s repetition time. For each run, we calculated the average time series for each of the 68 cortical regions of interest (ROIs) from Desikan et al. (<xref rid="B3" ref-type="bibr">2006</xref>) plus the 19 subcortical gray-matter ROIs from Glasser et al. (<xref rid="B7" ref-type="bibr">2013</xref>). For each participant and pair of ROIs, the Pearson correlation was calculated, Fisher z-transformed, and then averaged across the four runs. The lower diagonal of each subject's connectivity matrix was vectorized, resulting in <italic>p</italic><sub>1</sub> = 3, 741.</p>
+        <p>For each HCP participant, three left-right and three right-left phase-encoded runs of dMRI from three shells of <italic>b</italic> = 1, 000, 2, 000, and 3, 000 s/mm<sup>2</sup> with 90 directions and 6 <italic>b</italic><sub>0</sub> acquisitions interspersed throughout were acquired (Glasser et al., <xref rid="B7" ref-type="bibr">2013</xref>). Whole-brain tractography for each participant was conducted using probabilistic tractography as detailed in Zhang et al. (<xref rid="B38" ref-type="bibr">2018</xref>). On average, around 10<sup>5</sup> voxels occurring along the white matter/gray matter interface were identified as seeding regions for each participant. Sixteen streamlines were initiated for each seeding voxel, resulting in ~10<sup>6</sup> streamlines for each participant. Nodes of the SC networks were defined from the same ROIs as the rs-fMRI. Edges were represented by the number of viable streamlines between ROIs, with viability determined by three procedures: (1) each gray matter ROI is dilated to include a small portion of white matter region; (2) streamlines connecting multiple ROIs were cut into pieces such that no streamlines pass through ROIs; and (3) apparent outliers were removed. Finally, edges where at least 99% of subjects had zero streamlines were removed, and the remaining streamline counts were log transformed. There were <italic>p</italic><sub>2</sub> = 3, 330 edges in the resultant SC data matrix. Plots of the mean FC and SC appear in the Web Appendix Figure S5 (<xref rid="SM1" ref-type="supplementary-material">Supplementary material</xref>).</p>
+      </sec>
+      <sec>
+        <title>4.2. Dimension selection and joint and individual variation explained</title>
+        <p>Both AJIVE and CJIVE with the scree-plot method for choosing total ranks estimated two joint components (<xref rid="T2" ref-type="table">Table 2</xref>), which implies that results from these methods are equivalent. Similarly, both AJIVE and CJIVE estimated 0 joint components when the total ranks were chosen to result in retaining 95% of the variation. R.JIVE with its permutation tests estimated 1 joint component.</p>
+        <table-wrap position="float" id="T2">
+          <label>Table 2</label>
+          <caption>
+            <p>Estimated joint and total signal ranks and joint and individual variation explained in the functional connectivity (Pearson correlations) and the dMRI (streamline counts) HCP data.</p>
+          </caption>
+          <table frame="hsides" rules="groups">
+            <thead>
+              <tr>
+                <th valign="top" align="center" colspan="2" style="border-bottom: thin solid #000000;" rowspan="1">
+<bold>Method</bold>
+</th>
+                <th valign="top" align="center" colspan="3" style="border-bottom: thin solid #000000;" rowspan="1">
+<bold>Chosen rank</bold>
+</th>
+                <th valign="top" align="center" colspan="4" style="border-bottom: thin solid #000000;" rowspan="1">
+<bold>Variation explained</bold>
+</th>
+              </tr>
+              <tr>
+                <th valign="top" align="left" rowspan="1" colspan="1">
+<bold>Joint</bold>
+</th>
+                <th valign="top" align="center" rowspan="1" colspan="1">
+<bold>Total</bold>
+</th>
+                <th valign="top" align="center" rowspan="1" colspan="1">
+<bold>Joint</bold>
+</th>
+                <th valign="top" align="center" rowspan="1" colspan="1">
+<bold>Total FC</bold>
+</th>
+                <th valign="top" align="center" rowspan="1" colspan="1">
+<bold>Total SC</bold>
+</th>
+                <th valign="top" align="center" rowspan="1" colspan="1">
+<bold>Joint FC</bold>
+</th>
+                <th valign="top" align="center" rowspan="1" colspan="1">
+<bold>Individual FC</bold>
+</th>
+                <th valign="top" align="center" rowspan="1" colspan="1">
+<bold>Joint SC</bold>
+</th>
+                <th valign="top" align="center" rowspan="1" colspan="1">
+<bold>Individual SC</bold>
+</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">AJIVE</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Scree plot</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">2</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">7</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">10</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.113</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.499</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.032</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.216</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="center" rowspan="1" colspan="1">95% Var.</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">225</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">683</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.950</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.951</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">CJIVE</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Scree plot</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">2</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">7</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">10</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.113</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.499</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.032</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.216</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="center" rowspan="1" colspan="1">95% Var.</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">225</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">683</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.950</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.951</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">R.JIVE</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">R.JIVE</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">1</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">54</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">98</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.042</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.794</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.012</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.507</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <p>FC, functional connectivity; SC, structural connectivity.</p>
+          </table-wrap-foot>
+        </table-wrap>
+        <p>The canonical correlations were ρ<sub>1</sub> = 0.31 and ρ<sub>2</sub> = 0.21 using 1,000 permutations in CJIVE-Scree plot. n CJIVE-Scree plot, we also examined the breakdown of the joint variances by component: the proportion of variation attributable to joint component 1 was 0.094 in FC and 0.017 in SC (<xref rid="T2" ref-type="table">Table 2</xref>). For component 2, the values were 0.018 and 0.015, respectively.</p>
+        <p>In addition to the previous analysis, we performed an irregular grid search to examine the impact of the signal rank selection on the estimation of the joint rank when using CJIVE and AJIVE. Specifically, we examined {2, 5, 7, 10, 15, 20, 25, 30, 39, 40, 50, 75, 100, 200, 225, 500, 990} for FC, where 39 and 225 capture 80 and 95% of the variance, respectively, and {2, 5, 7, 10, 15, 20, 25, 30, 40, 50, 75, 100, 200, 330, 500, 683, 990} for SC, where 330 and 683 capture 80 and 95% of the variance. The proportion of variation explained by the corresponding number of PCs are given in Web Appendix Table S3 (<xref rid="SM1" ref-type="supplementary-material">Supplementary material</xref>). The joint rank estimates for each pair of signal ranks are displayed in <xref rid="F5" ref-type="fig">Figure 5</xref>. The joint rank in CJIVE and AJIVE tended to increase initially. When 80% of the variance was retained in FC and SC (<italic>r</italic><sub><italic>FC</italic></sub> = 39 and <italic>r</italic><sub><italic>SC</italic></sub> = 330), CJIVE and AJIVE estimated <italic>r</italic><sub><italic>J</italic></sub>= 3 and 4, respectively. The joint ranks were maximized at <italic>r</italic><sub><italic>FC</italic></sub> = 225 and <italic>r</italic><sub><italic>SC</italic></sub> = 75, with CJIVE selecting <italic>r</italic><sub><italic>J</italic></sub> = 11 and AJIVE <italic>r</italic><sub><italic>J</italic></sub> = 12 (<xref rid="F5" ref-type="fig">Figure 5</xref>). The joint rank estimated by AJIVE and CJIVE depends on the choice of total signal rank, but hereafter we focus on the more parsimonious representation from <xref rid="F5" ref-type="fig">Figure 5</xref>, which is easier to interpret.</p>
+        <fig position="float" id="F5">
+          <label>Figure 5</label>
+          <caption>
+            <p>Joint ranks chosen by <bold>(A)</bold> CJIVE and <bold>(B)</bold> AJIVE. Gray boxes show when a JIVE implementation produced an error.</p>
+          </caption>
+          <graphic xlink:href="fnins-16-969510-g0005" position="float"/>
+        </fig>
+      </sec>
+      <sec>
+        <title>4.3. Subject scores</title>
+        <p>Joint subject scores from CJIVE-Scree plot, R.JIVE (R.JIVE using permutation tests for both joint and individual signal ranks), and sCCA, and individual scores from CJIVE-Scree plot and R.JIVE were examined for associations with fluid intelligence (gF). In the HCP, gF was measured as the number of correct responses to the Penn Progressive Matrices Test. We selected this variable as it has previously been examined in Finn et al. (<xref rid="B5" ref-type="bibr">2015</xref>), Smith et al. (<xref rid="B27" ref-type="bibr">2015</xref>), and our prior study Risk and Gaynanova (<xref rid="B24" ref-type="bibr">2021</xref>), and no other behavioral variables were examined. Here, AJIVE-Scree plot results are equivalent to CJIVE-Scree plot, since both methods chose two joint components. We used the R-package <italic>rsq</italic> to calculate the adjusted partial R-squared from the multiple regression predicting fluid intelligence from the joint and individual scores (Zhang, <xref rid="B35" ref-type="bibr">2022</xref>), and then take the square root to obtain the partial correlation coefficients. We also estimated two pairs of canonical variables with sCCA. In order to compare results from sCCA to CJIVE, we averaged canonical variables across datasets to obtain a single subject score vector for each joint component. In sCCA, permutations tests resulted in sparsity parameters equal to 0.1 using the <italic>PMA</italic> R package (Witten et al., <xref rid="B32" ref-type="bibr">2009</xref>).</p>
+        <p>Among the joint scores, CJIVE-Scree plot resulted in the highest partial correlation coefficient (<italic>r</italic> = 0.251). Partial correlation coefficients for individual scores (<italic>r</italic> = 0.248) and the overall correlation of total scores (joint + individual, <italic>r</italic> = 0.363) were highest in R.JIVE (<xref rid="T3" ref-type="table">Table 3</xref>). R.JIVE contained a total of 151 components while CJIVE-Scree plot included 15 components.</p>
+        <table-wrap position="float" id="T3">
+          <label>Table 3</label>
+          <caption>
+            <p>Multiple regression of fluid intelligence onto joint subject scores estimated with CJIVE-Scree plot, R.JIVE, and sCCA. AJIVE and CJIVE are equivalent as both methods selected two joint components. Numbers in parentheses indicate the rank.</p>
+          </caption>
+          <table frame="hsides" rules="groups">
+            <thead>
+              <tr>
+                <th rowspan="1" colspan="1"/>
+                <th valign="top" align="center" colspan="4" rowspan="1">
+<bold>Partial Correlation Coefficients (ranks)</bold>
+</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+<bold>Joint</bold>
+</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+<bold>Indiv FC</bold>
+</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+<bold>Indiv SC</bold>
+</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+<bold>Total</bold>
+</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+<bold>signal</bold>
+</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+<bold>signal</bold>
+</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+<bold>signal</bold>
+</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+<bold>signal</bold>
+</td>
+              </tr>
+              <tr style="border-top: thin solid #000000;">
+                <td valign="top" align="left" rowspan="1" colspan="1">CJIVE-Scree plot</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.251 (2)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.091 (5)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.080 (8)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.278 (15)</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">R.JIVE</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.186 (1)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.248 (53)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.150 (97)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.363 (151)</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">sCCA</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.200 (2)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.200 (2)</td>
+              </tr>
+            </tbody>
+          </table>
+        </table-wrap>
+        <p>In all three methods, only the first joint component and no individual components were significantly associated with fluid intelligence after correction for multiple comparisons (CJIVE-Scree plot: first joint component <italic>p</italic> = 10<sup>−12</sup>, Bonferroni corrected for 15 comparisons; R.JIVE: <italic>p</italic> = 10<sup>−11</sup> for the joint component, corrected for 153 comparisons; sparse-CCA: <italic>p</italic> = 10<sup>−3</sup> for the first joint component, corrected for 2 comparisons).</p>
+      </sec>
+      <sec>
+        <title>4.4. Variable loadings</title>
+        <p>Since edges from FC and SC networks comprise the features in our input data blocks, loadings are imposed onto symmetric matrices. The sign indeterminacy of the joint loadings for each component was chosen to result in positive skewness. In <xref rid="F6" ref-type="fig">Figure 6A</xref>, we see that there were strong positive loadings throughout the FC. Overall, there was no clear spatial correspondence between FC and SC, and the correlation between loadings was −0.04. Instead, overall higher FC was associated with higher SC in many regions, particularly frontal-frontal and frontal-subcortical, with SC loadings in the opposite direction in certain connections between occipital, parietal, temporal, and subcortical. Plots of the joint loadings for the second component and individual loadings appear in Web Appendix Figures S3–S5 (<xref rid="SM1" ref-type="supplementary-material">Supplementary material</xref>).</p>
+        <fig position="float" id="F6">
+          <label>Figure 6</label>
+          <caption>
+            <p><bold>(A)</bold> Variable loadings for the first component of the joint signal space estimated by CJIVE and displayed on heatmaps. <bold>(B)</bold> Displays the top 25<italic>th</italic> percent of L1 norms of the variable loadings related to each cortical ROI for joint component 1. CMF, caudal middle frontal; FUS, fusiform; INFP, inferior parietal; IT, inferior temporal; INS, insula; LOCC, lateral occipital; LORB, lateral orbito-frontal; MT, middle temporal; PCUN, precuneus; PSTS, postcentral; PC, posterior cingulate; POPE, pars opercularis; PORB, pars orbitalis; PTRI, pars triangularis; RMF, rostral middle frontal; SF, superior frontal; SP, superior parietal.</p>
+          </caption>
+          <graphic xlink:href="fnins-16-969510-g0006" position="float"/>
+        </fig>
+        <p>Taking the L1 norm of each row within each loading matrix reduces the number of features to the number of nodes, which provides a more detailed examination of the patterns. In this analysis, we are particularly interested in L1 norms that are large in both the left and right hemispheres, which suggests the loadings are capturing meaningful biological structure. In the FC loadings, <xref rid="F6" ref-type="fig">Figure 6B</xref> shows that the most prominent cortical regions in the first joint component correspond to ROIs from the frontal, occipital, and temporal lobes, with extensive left-right hemispheric correspondence. In the SC loadings, we again see left-right hemispheric correspondence, this time in the parietal and temporal lobes, as well as regions that did not exhibit hemispheric correspondence. L1 norms of subcortical regions (not shown) were large in the left and right accumbens, left caudate, and left putamen in both modalities. Additionally, the right putamen and right caudate were prominent in FC, while both left and right hippocampus were prominent in SC. FC and SC loadings for the individual components are depicted in Web Appendix Figures S4, S5 (<xref rid="SM1" ref-type="supplementary-material">Supplementary material</xref>). FC individual component 2 has large loadings on cortical to subcortical edges, and component 5 has large subcortical to subcortical loadings. SC individual component 3 has prominent loadings in both subcortical-subcortical and cortical-subcortical edges.</p>
+      </sec>
+      <sec>
+        <title>4.5. Reproducibility and prediction of new subjects</title>
+        <p>Subjects from the HCP data were split into two sets of equal sample size (<italic>n</italic> = 499) to examine the reproducibility of our results. We will refer to the first sub-sample as “sample A” and the second as “sample B.” CJIVE-Scree plot found <italic>r</italic><sub><italic>J</italic></sub> = 1 for both samples, while AJIVE-Scree plot found <italic>r</italic><sub><italic>J</italic></sub> = 2 for sample A and <italic>r</italic><sub><italic>J</italic></sub> = 1 for sample B. The correlations between the joint loadings from sample A and B were equal to 0.61 for FC and 0.65 for SC (CJIVE-Scree plot and AJIVE-Scree plot are equivalent). When a second joint component was estimated, the correlation of the FC loadings was 0.29 and the SC loadings was 0.38.</p>
+        <p>We evaluated the three prediction methods from Section 2.2.3. We compared the predicted joint scores (using the out-of-sample loadings) to those from the scores extracted from a separate analysis of sample B (<xref rid="F7" ref-type="fig">Figure 7</xref>). Pearson correlations between the G-inverse predicted subject scores and CJIVE-Scree plot subject scores were 0.52 and 0.15 for components 1 and 2, respectively. Pearson correlations between subject scores estimated on sample B and those predicted for sample B using R.JIVE-predict were −0.02 and −0.03 for components 1 and 2, respectively. Using CJIVE-prediction, Pearson correlations were 0.67 and 0.22 for components 1 and 2, respectively. Similar results were achieved when CJIVE loadings from sample B data were used to predict subject scores for sample A. Recall that in simulations R.JIVE-prediction tended to outperform other methods when the joint signal was relatively large in at least one data set (<xref rid="F4" ref-type="fig">Figure 4</xref>). Future research should explore the conditions that may favor R.JIVE-prediction vs. CJIVE-prediction.</p>
+        <fig position="float" id="F7">
+          <label>Figure 7</label>
+          <caption>
+            <p>Joint subject scores using CJIVE-predict for sample B from sample A vs. joint subject scores estimated from the full CJIVE analysis of sample B. Gray bands are 95% prediction interval.</p>
+          </caption>
+          <graphic xlink:href="fnins-16-969510-g0007" position="float"/>
+        </fig>
+      </sec>
+      <sec>
+        <title>4.6. Computation time</title>
+        <p>The computation time of CJIVE-Scree plot including the rank permutation test was 99 s. AJIVE-Scree plot with its joint rank selection took 157 s. Using pre-specified scree plot ranks and joint rank = 2, the run time for R.JIVE was over 4 h. These computation times mirrored those in our simulation study, where, on average, CJIVE was twice as fast as AJIVE and ranged from 2 to 50 times faster than R.JIVE (Web Appendix Table S1 in <xref rid="SM1" ref-type="supplementary-material">Supplementary material</xref>).</p>
+      </sec>
+    </sec>
+    <sec sec-type="discussion" id="s5">
+      <title>5. Discussion</title>
+      <p>We propose CJIVE, an adaptation to AJIVE which improves interpretation: (1) the joint scores are an average of the canonical variables of the principal component scores of each dataset; (2) joint scores are ordered by canonical correlations; (3) <italic>p</italic>-values from permutation tests indicate the significance of each joint component; (4) the proportion of variance explained for each of the joint and individual components complements this information. The joint and individual scores estimated using the CJIVE algorithm are equivalent to those estimated using AJIVE when the ranks are specified, while the R.JIVE algorithm results in different estimates of the JIVE model. CJIVE goes beyond CCA by also estimating individual components, which in some applications provides additional biological insight. Our primary contributions are improved interpretation and a faster permutation test. This provides a data-driven method to choose the joint components when conducting PCA and CCA. Simulation study results indicate that when total signal ranks are correctly specified, AJIVE and CJIVE accurately estimated the number of joint components and provided accurate estimates of the subspaces of interest.</p>
+      <p>We applied CJIVE to obtain novel insight into the relationship between structural and functional connectivity. Interestingly, we did not find a correspondence between prominent edges in FC and those in SC. However, the biological relevance of subject scores was revealed by their association with fluid intelligence, and reproducibility was demonstrated through the data splitting and prediction of the joint scores. Similarly, a recent joint analysis of FC and SC in preterm and full-term infants identified different edges in FC vs. SC (Zhang et al., <xref rid="B37" ref-type="bibr">2021</xref>). Recent studies suggest that the correlation between the weighted edges in FC and SC is roughly 0.20 (Liégeois et al., <xref rid="B15" ref-type="bibr">2020</xref>), which is much lower than a landmark study that contained just five subjects (Honey et al., <xref rid="B9" ref-type="bibr">2009</xref>). In the current analyses, calculating the correlation between FC (averaged across subjects, as in Web Appendix Figure S3, <xref rid="SM1" ref-type="supplementary-material">Supplementary material</xref>) and SC was 0.22, and canonical correlations from CJIVE-Scree plot were 0.31 and 0.21. Note these approaches treat the edge as the unit of observation, and the correlations are not comparable to the variation explained in <xref rid="T2" ref-type="table">Table 2</xref>, in which the units of observation are the subject connectivity matrices and variance is across subjects. Some models assume that higher SC for a given edge leads to higher FC (Higgins et al., <xref rid="B8" ref-type="bibr">2018</xref>), which we refer to as spatial priors. CJIVE allows the extraction of patterns of covariation to provide novel insight not assumed by spatial priors.</p>
+      <p>We found that CJIVE joint scores were more strongly related to fluid intelligence than joint scores from R.JIVE or sCCA. The overall correlation from R.JIVE joint and individual components was higher than CJIVE (0.36 vs. 0.28). Note R.JIVE used more components (151 vs. 15). When examining fluid intelligence and all pair-wise resting-state correlations (FC only) in the Web Explorer “HCP820-MegaTrawl,” no edges survive corrections for multiple comparisons, and using the elastic net, <italic>r</italic> = 0.21. Initial studies with a subsample of the HCP rs-fMRI subjects found correlations between predicted and observed fluid intelligence ranging from <italic>r</italic> = 0.4 to <italic>r</italic> = 0.5 (Finn et al., <xref rid="B5" ref-type="bibr">2015</xref>; Smith et al., <xref rid="B27" ref-type="bibr">2015</xref>). Previous studies did not examine the relationship between fluid intelligence, FC, and SC. Interestingly, CJIVE individual scores were not related to fluid intelligence. This may suggest that FC and SC are simultaneously associated with fluid intelligence in a manner that neither is independently. This result combined with the ability to predict out-of-sample subject scores suggests that JIVE is a possible direction for extracting biomarkers from multimodal neuroimaging. JIVE decompositions may result in fewer components than ICA or related non-Gaussian approaches. Simultaneous non-Gaussian component analysis (SING) of working memory task maps and functional connectivity matrices resulted in dozens of joint components that appeared to correspond to smaller regions with greater network specificity (Risk and Gaynanova, <xref rid="B24" ref-type="bibr">2021</xref>). A possible limitation of JIVE is that the joint components may reflect brain connections involved in a variety of processes, including fluid intelligence, which may have less network specificity than ICA and non-Gaussian approaches.</p>
+      <p>In the definitions given by Chen et al. (<xref rid="B2" ref-type="bibr">2022</xref>), multiview analyses align datasets by subjects, whereas linked data analyses align datasets by features. Our application corresponds to multiview analysis. Kashyap et al. (<xref rid="B12" ref-type="bibr">2019</xref>) used Common and Orthogonal Basis Extraction (COBE), which is similar to JIVE, in a linked data application. They derived connectome fingerprints from the individual components extracted by treating each individual's FC matrix as a data block. In a single modality study from multiple groups of subjects (e.g., two sites with different subjects), one could explore common structure by applying CJIVE to the features aligned across the two sites, and then examining whether the individual components represent site-specific/batch effects. Recently, methods similar to JIVE have been proposed to conduct such analyses (Lock et al., <xref rid="B17" ref-type="bibr">2022</xref>; Zhang et al., <xref rid="B36" ref-type="bibr">2022</xref>). Instead of permuting subject scores, one could consider permutation tests in the feature signal subspace for testing joint components. Related, group ICA can be viewed as a linked data analysis version of AJIVE treating the space-by-time matrix from each subject as a block and including an additional step that rotates group components. Group ICA first conducts PCA on each subject's space-by-time matrix, concatenates the spatial eigenvectors, then conducts a second PCA to arrive at group components. This procedure is also used in the AJIVE algorithm, except that in group ICA the PC steps are performed on aligned features rather than aligned subjects. Group ICA then performs an additional step in which the group components are rotated to maximize their “independence,” which improves interpretability.</p>
+      <p>In practice, choosing the total signal rank remains a challenge. In simulations, the total signal rank chosen for a data block <italic>via</italic> R.JIVE permutation tests varied with the level of joint signal and the number of features within that block (Web Appendix Figure S1 in <xref rid="SM1" ref-type="supplementary-material">Supplementary material</xref>), and the estimated number of components was relatively large in the real data. Additionally, scree plots of simulated data provide a much clearer distinction between eigenvalues that correspond to signal and those lying outside the signal subspace when compared to scree plots of real data. Most pertinent to our analyses is the result that both the CJIVE and AJIVE methods for estimating the joint rank are sensitive to estimates of the total signal ranks. If <italic>r</italic><sub><italic>k</italic></sub> approaches <italic>n</italic>, the maximum correlation between permuted datasets is very high, which can lead to the estimation of zero joint components. In fact, when <italic>r</italic><sub><italic>k</italic></sub> = <italic>n</italic>, the correlation between permuted datasets equals one, and hence zero components are selected by CJIVE. The same issue occurs in AJIVE.</p>
+      <p>Further research is needed to explore connections between CJIVE and AJIVE estimates for more than two datasets. Multiset CCA (mCCA) (Li et al., <xref rid="B14" ref-type="bibr">2009</xref>) extends CCA to multiple datasets by maximizing the sum of pairwise correlations. A CJIVE variant on mCCA may provide novel insights into individual structure. A related issue is that for more than two datasets, joint signal may be shared by a subset of datasets (Gaynanova and Li, <xref rid="B6" ref-type="bibr">2019</xref>). When combining more than two datasets, future research should examine optimal ways of combining the canonical variables of the PC scores.</p>
+    </sec>
+    <sec sec-type="data-availability" id="s6">
+      <title>Data availability statement</title>
+      <p>Data was provided, in part by the Human Connectome Project, WU-Minn Consortium (Principal Investigators: David Van Essen and Kamil Ugurbil;1U54MH091657) funded by the 16 NIH Institutes and Centers that support the NIH Blueprint for Neuroscience Research; and by the McDonnell Center for Systems Neuroscience at Washington University. The datasets analyzed for this study can be found at: <ext-link xlink:href="https://www.humanconnectome.org/study/hcp-young-adult" ext-link-type="uri">https://www.humanconnectome.org/study/hcp-young-adult</ext-link>. Requests to access these datasets should be directed to Human Connectome Project, <ext-link xlink:href="https://www.humanconnectome.org/study/hcp-young-adult" ext-link-type="uri">https://www.humanconnectome.org/study/hcp-young-adult</ext-link>.</p>
+    </sec>
+    <sec id="s7">
+      <title>Author contributions</title>
+      <p>RM, ZZ, YG, and BR contributed to conception and design of the study. RM, ZZ, and BR processed the data. RM conducted the data analysis and simulation studies. RM and BR wrote the manuscript. All authors contributed to the article and approved the submitted version.</p>
+    </sec>
+    <sec sec-type="funding-information" id="s8">
+      <title>Funding</title>
+      <p>This work was supported by R21 AG066970 to ZZ and BR, R01 MH105561 to YG, and R01 MH129855 to BR.</p>
+    </sec>
+    <sec sec-type="COI-statement" id="conf1">
+      <title>Conflict of interest</title>
+      <p>The authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.</p>
+    </sec>
+    <sec sec-type="disclaimer" id="s9">
+      <title>Publisher's note</title>
+      <p>All claims expressed in this article are solely those of the authors and do not necessarily represent those of their affiliated organizations, or those of the publisher, the editors and the reviewers. Any product that may be evaluated in this article, or claim that may be made by its manufacturer, is not guaranteed or endorsed by the publisher.</p>
+    </sec>
+    <sec id="s10">
+      <title>Author disclaimer</title>
+      <p>The content is solely the responsibility of the authors and does not necessarily represent the official views of the National Institutes of Health.</p>
+    </sec>
+  </body>
+  <back>
+    <sec sec-type="supplementary-material" id="s11">
+      <title>Supplementary material</title>
+      <p>The Supplementary Material for this article can be found online at: <ext-link xlink:href="https://www.frontiersin.org/articles/10.3389/fnins.2022.969510/full#supplementary-material" ext-link-type="uri">https://www.frontiersin.org/articles/10.3389/fnins.2022.969510/full#supplementary-material</ext-link></p>
+      <supplementary-material id="SM1" position="float" content-type="local-data">
+        <media xlink:href="Data_Sheet_1.PDF">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+    </sec>
+    <ref-list>
+      <title>References</title>
+      <ref id="B1">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Biswal</surname><given-names>B. B.</given-names></name><name><surname>Mennes</surname><given-names>M.</given-names></name><name><surname>Zuo</surname><given-names>X.-N.</given-names></name><name><surname>Gohel</surname><given-names>S.</given-names></name><name><surname>Kelly</surname><given-names>C.</given-names></name><name><surname>Smith</surname><given-names>S. M.</given-names></name><etal/></person-group>. (<year>2010</year>). <article-title>Toward discovery science of human brain function</article-title>. <source>Proc. Natl. Acad. Sci. U.S.A</source>. <volume>107</volume>, <fpage>4734</fpage>–<lpage>4739</lpage>. <pub-id pub-id-type="doi">10.1073/pnas.0911855107</pub-id><pub-id pub-id-type="pmid">20176931</pub-id></mixed-citation>
+      </ref>
+      <ref id="B2">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Chen</surname><given-names>H.</given-names></name><name><surname>Caffo</surname><given-names>B.</given-names></name><name><surname>Stein-OŠBrien</surname><given-names>G.</given-names></name><name><surname>Liu</surname><given-names>J.</given-names></name><name><surname>Langmead</surname><given-names>B.</given-names></name><name><surname>Colantuoni</surname><given-names>C.</given-names></name><etal/></person-group>. (<year>2022</year>). <article-title>Two-stage linked component analysis for joint decomposition of multiple biologically related data sets</article-title>. <source>Biostatistics</source>. <volume>2022</volume>:<fpage>kxac005</fpage>. <pub-id pub-id-type="doi">10.1093/biostatistics/kxac005</pub-id><pub-id pub-id-type="pmid">35358296</pub-id></mixed-citation>
+      </ref>
+      <ref id="B3">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Desikan</surname><given-names>R. S.</given-names></name><name><surname>Ségonne</surname><given-names>F.</given-names></name><name><surname>Fischl</surname><given-names>B.</given-names></name><name><surname>Quinn</surname><given-names>B. T.</given-names></name><name><surname>Dickerson</surname><given-names>B. C.</given-names></name><name><surname>Blacker</surname><given-names>D.</given-names></name><etal/></person-group>. (<year>2006</year>). <article-title>An automated labeling system for subdividing the human cerebral cortex on MRI scans into gyral based regions of interest</article-title>. <source>Neuroimage</source>
+<volume>31</volume>, <fpage>968</fpage>–<lpage>980</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2006.01.021</pub-id><pub-id pub-id-type="pmid">16530430</pub-id></mixed-citation>
+      </ref>
+      <ref id="B4">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Feng</surname><given-names>Q.</given-names></name><name><surname>Jiang</surname><given-names>M.</given-names></name><name><surname>Hannig</surname><given-names>J.</given-names></name><name><surname>Marron</surname><given-names>J. S.</given-names></name></person-group> (<year>2018</year>). <article-title>Angle-based joint and individual variation explained</article-title>. <source>J. Multivar. Anal</source>. <volume>166</volume>, <fpage>241</fpage>–<lpage>265</lpage>. <pub-id pub-id-type="doi">10.1016/j.jmva.2018.03.008</pub-id></mixed-citation>
+      </ref>
+      <ref id="B5">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Finn</surname><given-names>E. S.</given-names></name><name><surname>Shen</surname><given-names>X.</given-names></name><name><surname>Scheinost</surname><given-names>D.</given-names></name><name><surname>Rosenberg</surname><given-names>M. D.</given-names></name><name><surname>Huang</surname><given-names>J.</given-names></name><name><surname>Chun</surname><given-names>M. M.</given-names></name><etal/></person-group>. (<year>2015</year>). <article-title>Functional connectome fingerprinting: identifying individuals using patterns of brain connectivity</article-title>. <source>Nat. Neurosci</source>. <volume>18</volume>, <fpage>1664</fpage>–<lpage>1671</lpage>. <pub-id pub-id-type="doi">10.1038/nn.4135</pub-id><pub-id pub-id-type="pmid">26457551</pub-id></mixed-citation>
+      </ref>
+      <ref id="B6">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Gaynanova</surname><given-names>I.</given-names></name><name><surname>Li</surname><given-names>G.</given-names></name></person-group> (<year>2019</year>). <article-title>Structural learning and integrative decomposition of multi-view data</article-title>. <source>Biometrics</source>
+<volume>75</volume>, <fpage>1121</fpage>–<lpage>1132</lpage>. <pub-id pub-id-type="doi">10.1111/biom.13108</pub-id><pub-id pub-id-type="pmid">31254385</pub-id></mixed-citation>
+      </ref>
+      <ref id="B7">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Glasser</surname><given-names>M. F.</given-names></name><name><surname>Sotiropoulos</surname><given-names>S. N.</given-names></name><name><surname>Wilson</surname><given-names>J. A.</given-names></name><name><surname>Coalson</surname><given-names>T. S.</given-names></name><name><surname>Fischl</surname><given-names>B.</given-names></name><name><surname>Andersson</surname><given-names>J. L.</given-names></name><etal/></person-group>. (<year>2013</year>). <article-title>NeuroImage the minimal preprocessing pipelines for the Human Connectome Project</article-title>. <source>NeuroImage</source>
+<volume>80</volume>, <fpage>105</fpage>–<lpage>124</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2013.04.127</pub-id><pub-id pub-id-type="pmid">23668970</pub-id></mixed-citation>
+      </ref>
+      <ref id="B8">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Higgins</surname><given-names>I. A.</given-names></name><name><surname>Kundu</surname><given-names>S.</given-names></name><name><surname>Guo</surname><given-names>Y.</given-names></name></person-group> (<year>2018</year>). <article-title>Neuroimage integrative Bayesian analysis of brain functional networks incorporating anatomical knowledge</article-title>. <source>NeuroImage</source>
+<volume>181</volume>, <fpage>263</fpage>–<lpage>278</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2018.07.015</pub-id><pub-id pub-id-type="pmid">30017786</pub-id></mixed-citation>
+      </ref>
+      <ref id="B9">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Honey</surname><given-names>C. J.</given-names></name><name><surname>Sporns</surname><given-names>O.</given-names></name><name><surname>Cammoun</surname><given-names>L.</given-names></name><name><surname>Gigandet</surname><given-names>X.</given-names></name><name><surname>Thiran</surname><given-names>J.-P.</given-names></name><name><surname>Meuli</surname><given-names>R.</given-names></name><etal/></person-group>. (<year>2009</year>). <article-title>Predicting human resting-state functional connectivity from structural connectivity</article-title>. <source>Proc. Natl. Acad. Sci. U.S.A</source>. <volume>106</volume>, <fpage>2035</fpage>–<lpage>2040</lpage>. <pub-id pub-id-type="doi">10.1073/pnas.0811168106</pub-id><pub-id pub-id-type="pmid">19188601</pub-id></mixed-citation>
+      </ref>
+      <ref id="B10">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Hotelling</surname><given-names>H.</given-names></name></person-group> (<year>1936</year>). <article-title>Relations between two sets of variates</article-title>. <source>Biometrika</source>
+<volume>28</volume>, <fpage>321</fpage>–<lpage>377</lpage>. <pub-id pub-id-type="doi">10.1093/biomet/28.3-4.321</pub-id></mixed-citation>
+      </ref>
+      <ref id="B11">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Kaplan</surname><given-names>A.</given-names></name><name><surname>Lock</surname><given-names>E. F.</given-names></name></person-group> (<year>2017</year>). <article-title>Prediction with dimension reduction of multiple molecular data sources for patient survival</article-title>. <source>Cancer Inform</source>. <volume>16</volume>:<fpage>1176935117718517</fpage>. <pub-id pub-id-type="doi">10.1177/1176935117718517</pub-id><pub-id pub-id-type="pmid">28747816</pub-id></mixed-citation>
+      </ref>
+      <ref id="B12">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Kashyap</surname><given-names>R.</given-names></name><name><surname>Kong</surname><given-names>R.</given-names></name><name><surname>Bhattacharjee</surname><given-names>S.</given-names></name><name><surname>Li</surname><given-names>J.</given-names></name><name><surname>Zhou</surname><given-names>J.</given-names></name><name><surname>Yeo</surname><given-names>B. T.</given-names></name></person-group> (<year>2019</year>). <article-title>Individual-specific fMRI-subspaces improve functional connectivity prediction of behavior</article-title>. <source>NeuroImage</source>
+<volume>189</volume>, <fpage>804</fpage>–<lpage>812</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2019.01.069</pub-id><pub-id pub-id-type="pmid">30711467</pub-id></mixed-citation>
+      </ref>
+      <ref id="B13">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Kemmer</surname><given-names>P. B.</given-names></name><name><surname>Wang</surname><given-names>Y.</given-names></name><name><surname>Bowman</surname><given-names>F. D.</given-names></name><name><surname>Mayberg</surname><given-names>H.</given-names></name><name><surname>Guo</surname><given-names>Y.</given-names></name></person-group> (<year>2018</year>). <article-title>Evaluating the strength of structural connectivity underlying brain functional networks</article-title>. <source>Brain Connect</source>. <volume>8</volume>, <fpage>579</fpage>–<lpage>594</lpage>. <pub-id pub-id-type="doi">10.1089/brain.2018.0615</pub-id></mixed-citation>
+      </ref>
+      <ref id="B14">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Li</surname><given-names>Y.-o.</given-names></name><name><surname>Adalı</surname><given-names>T.</given-names></name><name><surname>Wang</surname><given-names>W.</given-names></name><name><surname>Calhoun</surname><given-names>V. D.</given-names></name></person-group> (<year>2009</year>). <article-title>Joint blind source separation by multiset canonical</article-title>. <source>IEEE Trans. Signal Process</source>. <volume>57</volume>, <fpage>3918</fpage>–<lpage>3929</lpage>. <pub-id pub-id-type="doi">10.1109/TSP.2009.2021636</pub-id><pub-id pub-id-type="pmid">20221319</pub-id></mixed-citation>
+      </ref>
+      <ref id="B15">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Liégeois</surname><given-names>R.</given-names></name><name><surname>Santos</surname><given-names>A.</given-names></name><name><surname>Matta</surname><given-names>V.</given-names></name><name><surname>Van De Ville</surname><given-names>D.</given-names></name><name><surname>Sayed</surname><given-names>A. H.</given-names></name></person-group> (<year>2020</year>). <article-title>Revisiting correlation-based functional connectivity and its relationship with structural connectivity</article-title>. <source>Netw. Neurosci</source>. <volume>4</volume>, <fpage>1235</fpage>–<lpage>1251</lpage>. <pub-id pub-id-type="doi">10.1162/netn_a_00166</pub-id><pub-id pub-id-type="pmid">33409438</pub-id></mixed-citation>
+      </ref>
+      <ref id="B16">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Lock</surname><given-names>E. F.</given-names></name><name><surname>Hoadley</surname><given-names>K. A.</given-names></name><name><surname>Marron</surname><given-names>J. S.</given-names></name><name><surname>Nobel</surname><given-names>A. B.</given-names></name></person-group> (<year>2013</year>). <article-title>Integrated analysis of multiple data types</article-title>. <source>Ann. Appl. Stat</source>. <volume>7</volume>, <fpage>523</fpage>–<lpage>542</lpage>. <pub-id pub-id-type="doi">10.1214/12-AOAS597</pub-id><pub-id pub-id-type="pmid">23745156</pub-id></mixed-citation>
+      </ref>
+      <ref id="B17">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Lock</surname><given-names>E. F.</given-names></name><name><surname>Park</surname><given-names>J. Y.</given-names></name><name><surname>Hoadley</surname><given-names>K. A.</given-names></name></person-group> (<year>2022</year>). <article-title>Bidimensional linked matrix factorization for pan-omics pan-cancer analysis</article-title>. <source>Ann. Appl. Stat</source>. <volume>16</volume>:<fpage>193</fpage>. <pub-id pub-id-type="doi">10.1214/21-AOAS1495</pub-id><pub-id pub-id-type="pmid">35505906</pub-id></mixed-citation>
+      </ref>
+      <ref id="B18">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>López</surname><given-names>M.</given-names></name><name><surname>Ramírez</surname><given-names>J.</given-names></name><name><surname>Górriz</surname><given-names>J.</given-names></name><name><surname>Álvarez</surname><given-names>I.</given-names></name><name><surname>Salas-Gonzalez</surname><given-names>D.</given-names></name><name><surname>Segovia</surname><given-names>F.</given-names></name><etal/></person-group>. (<year>2011</year>). <article-title>Principal component analysis-based techniques and supervised classification schemes for the early detection of Alzheimer's disease</article-title>. <source>Neurocomputing</source>, <volume>74</volume>, <fpage>1260</fpage>–<lpage>1271</lpage>. <pub-id pub-id-type="doi">10.1016/j.neucom.2010.06.025</pub-id></mixed-citation>
+      </ref>
+      <ref id="B19">
+        <mixed-citation publication-type="book"><person-group person-group-type="author"><name><surname>Mardia</surname><given-names>K. V.</given-names></name></person-group> (<year>1979</year>). <source>Multivariate Analysis, 10th Edn</source>. <publisher-loc>San Diego, CA</publisher-loc>: <publisher-name>Acadmic Press, Inc</publisher-name>.</mixed-citation>
+      </ref>
+      <ref id="B20">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>McCabe</surname><given-names>S. D.</given-names></name><name><surname>Lin</surname><given-names>D.-Y.</given-names></name><name><surname>Love</surname><given-names>M. I.</given-names></name></person-group> (<year>2020</year>). <article-title>Consistency and overfitting of multi-omics methods on experimental data</article-title>. <source>Brief. Bioinformatics</source>
+<volume>21</volume>, <fpage>1277</fpage>–<lpage>1284</lpage>. <pub-id pub-id-type="doi">10.1093/bib/bbz070</pub-id><pub-id pub-id-type="pmid">31281919</pub-id></mixed-citation>
+      </ref>
+      <ref id="B21">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Mueller</surname><given-names>S. G.</given-names></name><name><surname>Weiner</surname><given-names>M. W.</given-names></name><name><surname>Thal</surname><given-names>L. J.</given-names></name><name><surname>Petersen</surname><given-names>R. C.</given-names></name><name><surname>Jack</surname><given-names>C. R.</given-names></name><name><surname>Jagust</surname><given-names>W.</given-names></name><etal/></person-group>. (<year>2005</year>). <article-title>Ways toward an early diagnosis in Alzheimer's disease: the Alzheimer's disease neuroimaging initiative (ADNI)</article-title>. <source>Alzheimer's Dement</source>. <volume>46</volume>, <fpage>55</fpage>–<lpage>66</lpage>. <pub-id pub-id-type="doi">10.1016/j.jalz.2005.06.003</pub-id><pub-id pub-id-type="pmid">17476317</pub-id></mixed-citation>
+      </ref>
+      <ref id="B22">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>O'Connell</surname><given-names>M. J.</given-names></name><name><surname>Lock</surname><given-names>E. F.</given-names></name></person-group> (<year>2016</year>). <article-title>R.JIVE for exploration of multi-source molecular data</article-title>. <source>Bioinformatics</source>
+<volume>32</volume>, <fpage>2877</fpage>–<lpage>2879</lpage>. <pub-id pub-id-type="doi">10.1093/bioinformatics/btw324</pub-id><pub-id pub-id-type="pmid">27273669</pub-id></mixed-citation>
+      </ref>
+      <ref id="B23">
+        <mixed-citation publication-type="book"><person-group person-group-type="author"><name><surname>Penny</surname><given-names>W. D.</given-names></name><name><surname>Friston</surname><given-names>K. J.</given-names></name><name><surname>Ashburner</surname><given-names>J. T.</given-names></name><name><surname>Kiebel</surname><given-names>S. J.</given-names></name><name><surname>Nichols</surname><given-names>T. E.</given-names></name></person-group> (<year>2011</year>). <source>Statistical Parametric Mapping: The Analysis of Functional Brain Images</source>. <publisher-loc>Palm Bay, FL</publisher-loc>: <publisher-name>Elsevier</publisher-name>.</mixed-citation>
+      </ref>
+      <ref id="B24">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Risk</surname><given-names>B. B.</given-names></name><name><surname>Gaynanova</surname><given-names>I.</given-names></name></person-group> (<year>2021</year>). <article-title>Simultaneous non-gaussian component analysis (sing) for data integration in neuroimaging</article-title>. <source>Ann. Appl. Stat</source>. <volume>15</volume>, <fpage>1431</fpage>–<lpage>1454</lpage>. <pub-id pub-id-type="doi">10.1214/21-AOAS1466</pub-id></mixed-citation>
+      </ref>
+      <ref id="B25">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Sandri</surname><given-names>B. J.</given-names></name><name><surname>Kaplan</surname><given-names>A.</given-names></name><name><surname>Hodgson</surname><given-names>S. W.</given-names></name><name><surname>Peterson</surname><given-names>M.</given-names></name><name><surname>Avdulov</surname><given-names>S.</given-names></name><name><surname>Higgins</surname><given-names>L.</given-names></name><etal/></person-group>. (<year>2018</year>). <article-title>Multi-omic molecular profiling of lung cancer in COPD</article-title>. <source>Eur. Respir. J</source>. <volume>52</volume>:<fpage>1702665</fpage>. <pub-id pub-id-type="doi">10.1183/13993003.02665-2017</pub-id><pub-id pub-id-type="pmid">29794131</pub-id></mixed-citation>
+      </ref>
+      <ref id="B26">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Shu</surname><given-names>H.</given-names></name><name><surname>Wang</surname><given-names>X.</given-names></name><name><surname>Zhu</surname><given-names>H.</given-names></name></person-group> (<year>2020</year>). <article-title>D-CCA: a decomposition-based canonical correlation analysis for high-dimensional datasets</article-title>. <source>J. Am. Stat. Assoc</source>. <volume>115</volume>, <fpage>1</fpage>–<lpage>32</lpage>. <pub-id pub-id-type="doi">10.1080/01621459.2018.1543599</pub-id><pub-id pub-id-type="pmid">34012183</pub-id></mixed-citation>
+      </ref>
+      <ref id="B27">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Smith</surname><given-names>S. M.</given-names></name><name><surname>Nichols</surname><given-names>T. E.</given-names></name><name><surname>Vidaurre</surname><given-names>D.</given-names></name><name><surname>Winkler</surname><given-names>A. M.</given-names></name><name><surname>Behrens</surname><given-names>T. E.</given-names></name><name><surname>Glasser</surname><given-names>M. F.</given-names></name><etal/></person-group>. (<year>2015</year>). <article-title>A positive-negative mode of population covariation links brain connectivity, demographics and behavior</article-title>. <source>Nat. Neurosci</source>. <volume>18</volume>, <fpage>1565</fpage>–<lpage>1567</lpage>. <pub-id pub-id-type="doi">10.1038/nn.4125</pub-id><pub-id pub-id-type="pmid">26414616</pub-id></mixed-citation>
+      </ref>
+      <ref id="B28">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Sotiras</surname><given-names>A.</given-names></name><name><surname>Resnick</surname><given-names>S. M.</given-names></name><name><surname>Davatzikos</surname><given-names>C.</given-names></name></person-group> (<year>2015</year>). <article-title>Finding imaging patterns of structural covariance <italic>via</italic> non-negative matrix factorization</article-title>. <source>NeuroImage</source>
+<volume>108</volume>, <fpage>1</fpage>–<lpage>16</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2014.11.045</pub-id><pub-id pub-id-type="pmid">25497684</pub-id></mixed-citation>
+      </ref>
+      <ref id="B29">
+        <mixed-citation publication-type="book"><person-group person-group-type="author"><name><surname>Sui</surname><given-names>J.</given-names></name><name><surname>Calhoun</surname><given-names>V. D.</given-names></name></person-group> (<year>2016</year>). <article-title>“Multimodal fusion of structural and functional brain imaging data,”</article-title> in <source>fMRI Techniques and Protocols</source>, ed. M. Filippi (<publisher-loc>New Yor, NY</publisher-loc>: <publisher-name>Springer</publisher-name>), <fpage>853</fpage>–<lpage>869</lpage>. <pub-id pub-id-type="doi">10.1007/978-1-4939-5611-1_28</pub-id></mixed-citation>
+      </ref>
+      <ref id="B30">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Suk</surname><given-names>H.-I.</given-names></name><name><surname>Lee</surname><given-names>S.-W.</given-names></name><name><surname>Shen</surname><given-names>D.</given-names></name></person-group> (<year>2015</year>). <article-title>Latent feature representation with stacked auto-encoder for ad/mci diagnosis</article-title>. <source>Brain Struct. Funct</source>. <volume>220</volume>, <fpage>841</fpage>–<lpage>859</lpage>. <pub-id pub-id-type="doi">10.1007/s00429-013-0687-3</pub-id><pub-id pub-id-type="pmid">24363140</pub-id></mixed-citation>
+      </ref>
+      <ref id="B31">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Wedin</surname><given-names>P. A.</given-names></name></person-group> (<year>1972</year>). <article-title>Perturbation bounds in connection with singular value decomposition</article-title>. <source>BIT Numer. Math</source>. <volume>12</volume>, <fpage>99</fpage>–<lpage>111</lpage>. <pub-id pub-id-type="doi">10.1007/BF01932678</pub-id></mixed-citation>
+      </ref>
+      <ref id="B32">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Witten</surname><given-names>D. M.</given-names></name><name><surname>Tibshirani</surname><given-names>R.</given-names></name><name><surname>Hastie</surname><given-names>T.</given-names></name></person-group> (<year>2009</year>). <article-title>A penalized matrix decomposition, with applications to sparse principal components and canonical correlation analysis</article-title>. <source>Biostatistics</source>
+<volume>10</volume>, <fpage>515</fpage>–<lpage>534</lpage>. <pub-id pub-id-type="doi">10.1093/biostatistics/kxp008</pub-id><pub-id pub-id-type="pmid">19377034</pub-id></mixed-citation>
+      </ref>
+      <ref id="B33">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Ye</surname><given-names>K.</given-names></name><name><surname>Lim</surname><given-names>L.-H.</given-names></name></person-group> (<year>2014</year>). <article-title>Schubert varieties and distances between subspaces of different dimensions</article-title>. <source>SIAM J. Matrix Anal. Appl</source>. <volume>37</volume>, <fpage>1176</fpage>–<lpage>1197</lpage>. <pub-id pub-id-type="doi">10.1137/15M1054201</pub-id></mixed-citation>
+      </ref>
+      <ref id="B34">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Yu</surname><given-names>Q.</given-names></name><name><surname>Risk</surname><given-names>B. B.</given-names></name><name><surname>Zhang</surname><given-names>K.</given-names></name><name><surname>Marron</surname><given-names>J. S.</given-names></name></person-group> (<year>2017</year>). <article-title>Jive integration of imaging and behavioral data</article-title>. <source>NeuroImage</source>
+<volume>152</volume>, <fpage>38</fpage>–<lpage>49</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2017.02.072</pub-id><pub-id pub-id-type="pmid">28246033</pub-id></mixed-citation>
+      </ref>
+      <ref id="B35">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zhang</surname><given-names>D.</given-names></name></person-group> (<year>2022</year>). <source>RSQ: R-Squared and Related Measures</source>. R Package Version 2.5.</mixed-citation>
+      </ref>
+      <ref id="B36">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zhang</surname><given-names>R.</given-names></name><name><surname>Oliver</surname><given-names>L. D.</given-names></name><name><surname>Voineskos</surname><given-names>A. N.</given-names></name><name><surname>Park</surname><given-names>J. Y.</given-names></name></person-group> (<year>2022</year>). <article-title>A structured multivariate approach for removal of latent batch effects</article-title>. <source>bioRxiv</source>. <pub-id pub-id-type="doi">10.1101/2022.08.01.502396</pub-id></mixed-citation>
+      </ref>
+      <ref id="B37">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zhang</surname><given-names>S.</given-names></name><name><surname>He</surname><given-names>Z.</given-names></name><name><surname>Du</surname><given-names>L.</given-names></name><name><surname>Zhang</surname><given-names>Y.</given-names></name><name><surname>Yu</surname><given-names>S.</given-names></name><name><surname>Wang</surname><given-names>R.</given-names></name><name><surname>Hu</surname><given-names>X.</given-names></name><name><surname>Jiang</surname><given-names>X.</given-names></name><name><surname>Zhang</surname><given-names>T.</given-names></name></person-group> (<year>2021</year>). <article-title>Joint analysis of functional and structural connectomes between preterm and term infant brains <italic>via</italic> canonical correlation analysis with locality preserving projection</article-title>. <source>Front. Neurosci</source>. <volume>15</volume>:<fpage>724391</fpage>. <pub-id pub-id-type="doi">10.3389/fnins.2021.724391</pub-id><pub-id pub-id-type="pmid">34690672</pub-id></mixed-citation>
+      </ref>
+      <ref id="B38">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zhang</surname><given-names>Z.</given-names></name><name><surname>Descoteaux</surname><given-names>M.</given-names></name><name><surname>Zhang</surname><given-names>J.</given-names></name><name><surname>Girard</surname><given-names>G.</given-names></name><name><surname>Chamberland</surname><given-names>M.</given-names></name><name><surname>Dunson</surname><given-names>D.</given-names></name><etal/></person-group>. (<year>2018</year>). <article-title>Mapping population-based structural connectomes</article-title>. <source>NeuroImage</source>
+<volume>172</volume>, <fpage>130</fpage>–<lpage>145</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2017.12.064</pub-id><pub-id pub-id-type="pmid">29355769</pub-id></mixed-citation>
+      </ref>
+      <ref id="B39">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zhao</surname><given-names>Y.</given-names></name><name><surname>Klein</surname><given-names>A.</given-names></name><name><surname>Castellanos</surname><given-names>F. X.</given-names></name><name><surname>Milham</surname><given-names>M. P.</given-names></name></person-group> (<year>2019</year>). <article-title>Brain age prediction: cortical and subcortical shape covariation in the developing human brain</article-title>. <source>NeuroImage</source>
+<volume>202</volume>:<fpage>116149</fpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2019.116149</pub-id><pub-id pub-id-type="pmid">31476430</pub-id></mixed-citation>
+      </ref>
+      <ref id="B40">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zhou</surname><given-names>G.</given-names></name><name><surname>Cichocki</surname><given-names>A.</given-names></name><name><surname>Zhang</surname><given-names>Y.</given-names></name><name><surname>Mandic</surname><given-names>D. P.</given-names></name></person-group> (<year>2016</year>). <article-title>Group component analysis for multiblock data: common and individual feature extraction</article-title>. <source>IEEE Trans. Neural Netw. Learn. Syst</source>. <volume>27</volume>, <fpage>2426</fpage>–<lpage>2439</lpage>. <pub-id pub-id-type="doi">10.1109/TNNLS.2015.2487364</pub-id><pub-id pub-id-type="pmid">26529787</pub-id></mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

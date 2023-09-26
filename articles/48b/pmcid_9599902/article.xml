@@ -1,0 +1,1960 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.3" xml:lang="en" article-type="research-article">
+  <?properties open_access?>
+  <processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats">
+    <restricted-by>pmc</restricted-by>
+  </processing-meta>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">Brain Sci</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Brain Sci</journal-id>
+      <journal-id journal-id-type="publisher-id">brainsci</journal-id>
+      <journal-title-group>
+        <journal-title>Brain Sciences</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">2076-3425</issn>
+      <publisher>
+        <publisher-name>MDPI</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">36291346</article-id>
+      <article-id pub-id-type="pmc">9599902</article-id>
+      <article-id pub-id-type="doi">10.3390/brainsci12101413</article-id>
+      <article-id pub-id-type="publisher-id">brainsci-12-01413</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Resting-State Functional MRI Adaptation with Attention Graph Convolution Network for Brain Disorder Identification</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Chu</surname>
+            <given-names>Ying</given-names>
+          </name>
+          <xref rid="af1-brainsci-12-01413" ref-type="aff">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Ren</surname>
+            <given-names>Haonan</given-names>
+          </name>
+          <xref rid="af1-brainsci-12-01413" ref-type="aff">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Qiao</surname>
+            <given-names>Lishan</given-names>
+          </name>
+          <xref rid="af1-brainsci-12-01413" ref-type="aff">1</xref>
+          <xref rid="c1-brainsci-12-01413" ref-type="corresp">*</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Liu</surname>
+            <given-names>Mingxia</given-names>
+          </name>
+          <xref rid="af2-brainsci-12-01413" ref-type="aff">2</xref>
+          <xref rid="c1-brainsci-12-01413" ref-type="corresp">*</xref>
+        </contrib>
+      </contrib-group>
+      <contrib-group>
+        <contrib contrib-type="editor">
+          <name>
+            <surname>Muthuraman</surname>
+            <given-names>Muthuraman</given-names>
+          </name>
+          <role>Academic Editor</role>
+        </contrib>
+      </contrib-group>
+      <aff id="af1-brainsci-12-01413"><label>1</label>School of Mathematics Science, Liaocheng University, Liaocheng 252000, China</aff>
+      <aff id="af2-brainsci-12-01413"><label>2</label>Department of Radiology and Biomedical Research Imaging Center, University of North Carolina at Chapel Hill, Chapel Hill, NC 27599, USA</aff>
+      <author-notes>
+        <corresp id="c1-brainsci-12-01413"><label>*</label>Correspondence: <email>qiaolishan@lcu.edu.cn</email> (L.Q.); <email>mxliu@med.unc.edu</email> (M.L.); Tel.: +86-150-0635-4718 (L.Q.); +86-182-0638-0979 (M.L.)</corresp>
+      </author-notes>
+      <pub-date pub-type="epub">
+        <day>20</day>
+        <month>10</month>
+        <year>2022</year>
+      </pub-date>
+      <pub-date pub-type="collection">
+        <month>10</month>
+        <year>2022</year>
+      </pub-date>
+      <volume>12</volume>
+      <issue>10</issue>
+      <elocation-id>1413</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>18</day>
+          <month>9</month>
+          <year>2022</year>
+        </date>
+        <date date-type="accepted">
+          <day>17</day>
+          <month>10</month>
+          <year>2022</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>© 2022 by the authors.</copyright-statement>
+        <copyright-year>2022</copyright-year>
+        <license>
+          <ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref>
+          <license-p>Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license (<ext-link ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</ext-link>).</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>Multi-site resting-state functional magnetic resonance imaging (rs-fMRI) data can facilitate learning-based approaches to train reliable models on more data. However, significant data heterogeneity between imaging sites, caused by different scanners or protocols, can negatively impact the generalization ability of learned models. In addition, previous studies have shown that graph convolution neural networks (GCNs) are effective in mining fMRI biomarkers. However, they generally ignore the potentially different contributions of brain regions- of-interest (ROIs) to automated disease diagnosis/prognosis. In this work, we propose a multi-site rs-fMRI adaptation framework with attention GCN (A<sup>2</sup>GCN) for brain disorder identification. Specifically, the proposed A<sup>2</sup>GCN consists of three major components: (1) a node representation learning module based on GCN to extract rs-fMRI features from functional connectivity networks, (2) a node attention mechanism module to capture the contributions of ROIs, and (3) a domain adaptation module to alleviate the differences in data distribution between sites through the constraint of mean absolute error and covariance. The A<sup>2</sup>GCN not only reduces data heterogeneity across sites, but also improves the interpretability of the learning algorithm by exploring important ROIs. Experimental results on the public ABIDE database demonstrate that our method achieves remarkable performance in fMRI-based recognition of autism spectrum disorders.</p>
+      </abstract>
+      <kwd-group>
+        <kwd>domain adaptation</kwd>
+        <kwd>multi-site data</kwd>
+        <kwd>graph convolutional networks</kwd>
+        <kwd>autism</kwd>
+        <kwd>resting-state functional MRI</kwd>
+      </kwd-group>
+      <funding-group>
+        <funding-statement>This research received no external funding.</funding-statement>
+      </funding-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec sec-type="intro" id="sec1-brainsci-12-01413">
+      <title>1. Introduction</title>
+      <p>Resting-state functional magnetic resonance imaging (rs-fMRI) is an imaging technique that uses blood-oxygen-level-dependent (BOLD) signals to obtain functional graphs of brain activity while subjects are at rest [<xref rid="B1-brainsci-12-01413" ref-type="bibr">1</xref>]. Compared with other fMRI techniques, rs-fMRI has advantages because it is non-invasive and has high tissue resolution, and it can skillfully detect the difference between the functional activity network of the human brain under pathological conditions and that of the normal human brain [<xref rid="B2-brainsci-12-01413" ref-type="bibr">2</xref>]. At the same time, benefiting from the progress of scanning hardware and scanning technology, as well as the rapid development of computer vision technology, rs-fMRI has gradually become one of the effective means to study the human brain in recent years. Relying on rs-fMRI technology, researchers have made remarkable achievements in the auxiliary diagnosis, pathogenesis research, objective biomarker search and other aspects of mental disorders such as Autism Spectrum Disorder (ASD) and Major Depressive Disorder [<xref rid="B3-brainsci-12-01413" ref-type="bibr">3</xref>,<xref rid="B4-brainsci-12-01413" ref-type="bibr">4</xref>].</p>
+      <p>Currently, the application of machine learning/deep learning in natural image analysis is very successful. In contrast, its use in the analysis of neuroimaging data presents some unique problems, including dimensional disaster, small sample size, and limited true labels [<xref rid="B5-brainsci-12-01413" ref-type="bibr">5</xref>,<xref rid="B6-brainsci-12-01413" ref-type="bibr">6</xref>]. With the continued efforts of researchers, public multi-site neuroimage datasets, increasing the sample size and statistical power of data, are helping to promote the adoption of data-driven machine learning/deep learning techniques. However, the study of multi-site datasets will face another important challenge. That is, the distribution of data between sites is often quite different due to external factors such as different scanners or protocols [<xref rid="B7-brainsci-12-01413" ref-type="bibr">7</xref>,<xref rid="B8-brainsci-12-01413" ref-type="bibr">8</xref>]. This will severely limit the generalization ability of machine/deep learning models, as such algorithms often start with the assumption that all data remain the same distribution [<xref rid="B9-brainsci-12-01413" ref-type="bibr">9</xref>,<xref rid="B10-brainsci-12-01413" ref-type="bibr">10</xref>,<xref rid="B11-brainsci-12-01413" ref-type="bibr">11</xref>].</p>
+      <p>Studies have shown that detection of abnormal low-frequency fluctuations in the BOLD signals caused by pathological changes in the resting state will facilitate the analysis of brain connectivity and provide scientific and reliable treatment options before and after surgery [<xref rid="B12-brainsci-12-01413" ref-type="bibr">12</xref>]. Typically in studies of neuroimaging data, brain functional connectivity networks (FCNs) attempt to establish a potential causal link between two regions-of-interest (ROIs) based on linear temporal correlations [<xref rid="B13-brainsci-12-01413" ref-type="bibr">13</xref>]. Previous studies usually use statistical measures of FCNs (including betweenness centrality, degree centrality, and other features) to construct prediction models [<xref rid="B14-brainsci-12-01413" ref-type="bibr">14</xref>,<xref rid="B15-brainsci-12-01413" ref-type="bibr">15</xref>]. These practices often rely on extensive expert knowledge and are subjective, expensive, and time-consuming. FCN is usually defined as a complex non-Euclidean space graph structure [<xref rid="B16-brainsci-12-01413" ref-type="bibr">16</xref>]. In recent years, graph neural networks, especially graph convolutional networks (GCNs), have become one of the effective tools to deal with irregular graph data. GCN is a natural extension of the convolutional neural network in a graph domain [<xref rid="B17-brainsci-12-01413" ref-type="bibr">17</xref>,<xref rid="B18-brainsci-12-01413" ref-type="bibr">18</xref>]. It can be used as a feature extractor to learn node feature information and structure information end-to-end at the same time, which is the best choice for graph data learning task at present [<xref rid="B19-brainsci-12-01413" ref-type="bibr">19</xref>,<xref rid="B20-brainsci-12-01413" ref-type="bibr">20</xref>]. When GCN is naturally used to analyze rs-fMRI data, comprehensive mapping of brain FC patterns can effectively describe the functional activity of the brain [<xref rid="B21-brainsci-12-01413" ref-type="bibr">21</xref>,<xref rid="B22-brainsci-12-01413" ref-type="bibr">22</xref>]. However, existing studies usually ignore the potential contribution of different brain functional regions to the diagnosis of brain diseases, thus affecting the interpretability of the GCN model.</p>
+      <p>As shown in <xref rid="brainsci-12-01413-f001" ref-type="fig">Figure 1</xref>, we construct a domain adaptation model with attention GCN (A<sup>2</sup>GCN) of multi-site rs-fMRI for ASD diagnosis. For the convenience of description, we set a known site as the source domain, and define the site to be predicted as the target domain. In this paper, we focus on the classification task of graphs. Therefore, we first construct the corresponding FCNs based on the rs-fMRI data of subjects from the source/target domains, and take the FCNs as the corresponding source/target graphs. Then, we use GCN as a feature extractor to capture the nodes/ROIs representations from the source/target graphs respectively through the graph convolution layers. In addition, the node attention mechanism is applied to explore the contribution weight of nodes/ROIs automatically. Finally, the objective function composed of multiple loss functions is jointly optimized, so as to establish a cross-domain classification model with a wider application range. We will use rs-fMRI data from the three sites (NYU, UM, UCLA) of the public ABIDE database [<xref rid="B23-brainsci-12-01413" ref-type="bibr">23</xref>] to identify ASD patients from healthy controls (HCs) to evaluate the performance of our approach.</p>
+      <p>The rest of this work is shown below: In <xref rid="sec2-brainsci-12-01413" ref-type="sec">Section 2</xref>, we briefly review the related research results of this work. In <xref rid="sec3-brainsci-12-01413" ref-type="sec">Section 3</xref>, we present our method and experimental setup. In <xref rid="sec4-brainsci-12-01413" ref-type="sec">Section 4</xref>, we introduce the data used in this work, the competing algorithms, and report the performance of different algorithms. At the same time, ablation experiments are added to investigate the contribution of key components in our proposed model. In <xref rid="sec5-brainsci-12-01413" ref-type="sec">Section 5</xref>, we discuss several extension studies related to this work and propose future related work. Finally, in <xref rid="sec6-brainsci-12-01413" ref-type="sec">Section 6</xref>, we summarize our proposed method.</p>
+    </sec>
+    <sec id="sec2-brainsci-12-01413">
+      <title>2. Related Work</title>
+      <sec id="sec2dot1-brainsci-12-01413">
+        <title>2.1. Graph Convolution Network for fMRI Analysis</title>
+        <p>At present, the application of deep learning framework, especially the graph convolutional networks (GCNs) model, to graph-structured data has aroused a warm response worldwide [<xref rid="B24-brainsci-12-01413" ref-type="bibr">24</xref>,<xref rid="B25-brainsci-12-01413" ref-type="bibr">25</xref>]. GCN is used to advance the feature learning of the network, which integrates the central node characteristics and graph topology information in the convolutional layer [<xref rid="B26-brainsci-12-01413" ref-type="bibr">26</xref>]. In particular, GCN has achieved impressive results in helping researchers build mathematical models for computer-assisted diagnosis of brain diseases and process and analyze neuroimaging data quickly and efficiently [<xref rid="B27-brainsci-12-01413" ref-type="bibr">27</xref>]. For example, Wang et al. [<xref rid="B28-brainsci-12-01413" ref-type="bibr">28</xref>] defined a GCN architecture based on features of fMRI for brain disorder analysis. Based on the spatiotemporal information of rs-fMRI time series, Yao et al. [<xref rid="B29-brainsci-12-01413" ref-type="bibr">29</xref>] constructed time-adaptive GCN architecture to study the periodic characteristics of the human brain. Gadgil et al. [<xref rid="B30-brainsci-12-01413" ref-type="bibr">30</xref>] focused on the short subsequence of BOLD signal, so as to construct a spatio-temporal GCN architecture and explore the non-stationary properties of FC. Traditional GCN research usually regards feature representations of each node as independently and equally. That is, they did not consider the unique contribution of each specific node/ROI to rs-fMRI analysis. In this paper, we will establish a ROI/node feature attention mechanism based on GCN to learn potential functional dependencies among brain regions, which allows us to identify those most informative brain regions for diagnosis. This will significantly improve the interpretability of GCN models for automated fMRI analysis.</p>
+      </sec>
+      <sec id="sec2dot2-brainsci-12-01413">
+        <title>2.2. Domain Adaptation for Brain Disorder Diagnosis</title>
+        <p>Data acquired from multiple imaging sites are correlated but distributed differently, which is a classic domain adaptation problem [<xref rid="B31-brainsci-12-01413" ref-type="bibr">31</xref>,<xref rid="B32-brainsci-12-01413" ref-type="bibr">32</xref>]. According to the latest research, domain adaptation related algorithms can be roughly summarized into two categories: (1) supervised domain adaptation. The target domain samples contain a large or small amount of label information; (2) unsupervised domain adaptation. There is no data label available for the target domain [<xref rid="B33-brainsci-12-01413" ref-type="bibr">33</xref>]. This work will focus on the problem of unsupervised domain adaptation, that is, samples from the source domain contain complete data labels, while samples from the target domain to be analyzed have no label information, which is more valuable and challenging for applications. In recent years, in order to achieve domain alignment, many cross-domain classification algorithms have been proposed, including adaptive methods based on discrepancy, adversarial learning and data reconstruction [<xref rid="B34-brainsci-12-01413" ref-type="bibr">34</xref>]. In recent years, domain adaptation technology has also achieved remarkable results in the field of medical imaging. Ingalhalikar et al. [<xref rid="B35-brainsci-12-01413" ref-type="bibr">35</xref>] coordinated multi-site neuroimaging data based on empirical Bayes formula to improve the accuracy of brain diagnostic classification. Guan et al. [<xref rid="B32-brainsci-12-01413" ref-type="bibr">32</xref>] defined a multi-site domain attention model based on deep learning for brain disease recognition. Zhang et al. [<xref rid="B36-brainsci-12-01413" ref-type="bibr">36</xref>] constructed an unsupervised domain adversarial network and established a brain disease prediction model with good classification performance. In this paper, we adopt the classical domain adaptation algorithm, that is, calculate the mean absolute error (MAE) and covariance of the source domain and the target domain at the same time, so as to guide the gradual alignment of node features learned from different domains and alleviate the domain offset problem.</p>
+      </sec>
+    </sec>
+    <sec sec-type="methods" id="sec3-brainsci-12-01413">
+      <title>3. Methodology</title>
+      <p>In this section, we will first describe the concepts and notation related to the unsupervised domain adaptation problem (as shown in <xref rid="brainsci-12-01413-t001" ref-type="table">Table 1</xref>), and then introduce our approach in detail.</p>
+      <sec id="sec3dot1-brainsci-12-01413">
+        <title>3.1. Notation and Problem Formulation</title>
+        <p>In general, a feature space <italic toggle="yes">X</italic> of data and its marginal probability distribution <inline-formula><mml:math id="mm5" overflow="scroll"><mml:mrow><mml:mrow><mml:mi mathvariant="script">P</mml:mi><mml:mo>(</mml:mo><mml:mi>X</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:math></inline-formula> will form a domain <inline-formula><mml:math id="mm6" overflow="scroll"><mml:mrow><mml:mi mathvariant="script">D</mml:mi></mml:mrow></mml:math></inline-formula>. In this work, the source domain data from the distribution <inline-formula><mml:math id="mm7" overflow="scroll"><mml:mrow><mml:mrow><mml:mi mathvariant="script">P</mml:mi><mml:mo>(</mml:mo><mml:msup><mml:mi>X</mml:mi><mml:mi>s</mml:mi></mml:msup><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:math></inline-formula> can be expressed as <inline-formula><mml:math id="mm8" overflow="scroll"><mml:mrow><mml:mrow><mml:msup><mml:mi>X</mml:mi><mml:mi>s</mml:mi></mml:msup><mml:mo>∈</mml:mo><mml:msup><mml:mi mathvariant="double-struck">R</mml:mi><mml:mrow><mml:msup><mml:mi>M</mml:mi><mml:mi>s</mml:mi></mml:msup><mml:mo>×</mml:mo><mml:msup><mml:mi>D</mml:mi><mml:mi>s</mml:mi></mml:msup></mml:mrow></mml:msup></mml:mrow></mml:mrow></mml:math></inline-formula>; target domain data from distribution <inline-formula><mml:math id="mm9" overflow="scroll"><mml:mrow><mml:mrow><mml:mi mathvariant="script">P</mml:mi><mml:mo>(</mml:mo><mml:msup><mml:mi>X</mml:mi><mml:mi>t</mml:mi></mml:msup><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:math></inline-formula> can be represented as <inline-formula><mml:math id="mm10" overflow="scroll"><mml:mrow><mml:mrow><mml:msup><mml:mi>X</mml:mi><mml:mi>t</mml:mi></mml:msup><mml:mo>∈</mml:mo><mml:msup><mml:mrow><mml:mi mathvariant="double-struck">R</mml:mi></mml:mrow><mml:mrow><mml:msup><mml:mi>M</mml:mi><mml:mi>t</mml:mi></mml:msup><mml:mo>×</mml:mo><mml:msup><mml:mi>D</mml:mi><mml:mi>t</mml:mi></mml:msup></mml:mrow></mml:msup></mml:mrow></mml:mrow></mml:math></inline-formula>, where <inline-formula><mml:math id="mm11" overflow="scroll"><mml:mrow><mml:msup><mml:mi>D</mml:mi><mml:mi>s</mml:mi></mml:msup></mml:mrow></mml:math></inline-formula> and <inline-formula><mml:math id="mm12" overflow="scroll"><mml:mrow><mml:msup><mml:mi>D</mml:mi><mml:mi>t</mml:mi></mml:msup></mml:mrow></mml:math></inline-formula> are the feature dimension, and <inline-formula><mml:math id="mm13" overflow="scroll"><mml:mrow><mml:msup><mml:mi>M</mml:mi><mml:mi>s</mml:mi></mml:msup></mml:mrow></mml:math></inline-formula> and <inline-formula><mml:math id="mm14" overflow="scroll"><mml:mrow><mml:msup><mml:mi>M</mml:mi><mml:mi>t</mml:mi></mml:msup></mml:mrow></mml:math></inline-formula> are defined as the sample size in the source domain and target domain, respectively. In the unsupervised domain adaptation problem, the feature space and label space of the data from the source domain and the target domain are usually consistent, but the data distribution is different, that is, <inline-formula><mml:math id="mm15" overflow="scroll"><mml:mrow><mml:mrow><mml:mrow><mml:mi mathvariant="script">P</mml:mi><mml:mo>(</mml:mo><mml:msup><mml:mi>X</mml:mi><mml:mi>s</mml:mi></mml:msup><mml:mo>)</mml:mo></mml:mrow><mml:mo>≠</mml:mo><mml:mrow><mml:mi mathvariant="script">P</mml:mi><mml:mo>(</mml:mo><mml:msup><mml:mi>X</mml:mi><mml:mi>t</mml:mi></mml:msup><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:mrow></mml:math></inline-formula>. Our goal is to use the information learned from the source domain to assist in the graph classification task of a completely unmarked target domain. Our task is to build a good graph classification model for the target domain without any label based on labeled source domain.</p>
+        <p>In this article, we focus on representation learning of nodes on a graph. Therefore, we first build a graph for each subject of the source domain and target domain. A subject from the source domain is represented as a graph <inline-formula><mml:math id="mm16" overflow="scroll"><mml:mrow><mml:mrow><mml:msup><mml:mi>G</mml:mi><mml:mi>s</mml:mi></mml:msup><mml:mo>=</mml:mo><mml:mrow><mml:mo>(</mml:mo><mml:msup><mml:mi>V</mml:mi><mml:mi>s</mml:mi></mml:msup><mml:mo>,</mml:mo><mml:msup><mml:mi>A</mml:mi><mml:mi>s</mml:mi></mml:msup><mml:mo>,</mml:mo><mml:msup><mml:mi>X</mml:mi><mml:mi>s</mml:mi></mml:msup><mml:mo>,</mml:mo><mml:msup><mml:mi>Y</mml:mi><mml:mi>s</mml:mi></mml:msup><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:mrow></mml:math></inline-formula>, where <inline-formula><mml:math id="mm17" overflow="scroll"><mml:mrow><mml:msup><mml:mi>V</mml:mi><mml:mi>s</mml:mi></mml:msup></mml:mrow></mml:math></inline-formula> represents a labeled collection of nodes in <inline-formula><mml:math id="mm18" overflow="scroll"><mml:mrow><mml:msup><mml:mi>G</mml:mi><mml:mi>s</mml:mi></mml:msup></mml:mrow></mml:math></inline-formula>, and <inline-formula><mml:math id="mm19" overflow="scroll"><mml:mrow><mml:mrow><mml:msup><mml:mi>A</mml:mi><mml:mi>s</mml:mi></mml:msup><mml:mo>∈</mml:mo><mml:msup><mml:mi mathvariant="double-struck">R</mml:mi><mml:mrow><mml:msup><mml:mi>N</mml:mi><mml:mi>s</mml:mi></mml:msup><mml:mo>×</mml:mo><mml:msup><mml:mi>N</mml:mi><mml:mi>s</mml:mi></mml:msup></mml:mrow></mml:msup></mml:mrow></mml:mrow></mml:math></inline-formula> represents the weighted adjacency matrix to quantify the connection strength between nodes. <inline-formula><mml:math id="mm20" overflow="scroll"><mml:mrow><mml:mrow><mml:msup><mml:mi>N</mml:mi><mml:mi>s</mml:mi></mml:msup><mml:mo>=</mml:mo><mml:mrow><mml:mo>|</mml:mo><mml:msup><mml:mi>V</mml:mi><mml:mi>s</mml:mi></mml:msup><mml:mo>|</mml:mo></mml:mrow></mml:mrow></mml:mrow></mml:math></inline-formula> represents the number of nodes/ROIs of <inline-formula><mml:math id="mm21" overflow="scroll"><mml:mrow><mml:msup><mml:mi>G</mml:mi><mml:mi>s</mml:mi></mml:msup></mml:mrow></mml:math></inline-formula>. <inline-formula><mml:math id="mm22" overflow="scroll"><mml:mrow><mml:mrow><mml:msup><mml:mi>X</mml:mi><mml:mi>s</mml:mi></mml:msup><mml:mo>∈</mml:mo><mml:msup><mml:mi mathvariant="double-struck">R</mml:mi><mml:mrow><mml:msup><mml:mi>N</mml:mi><mml:mi>s</mml:mi></mml:msup><mml:mo>×</mml:mo><mml:msup><mml:mi>D</mml:mi><mml:mi>s</mml:mi></mml:msup></mml:mrow></mml:msup></mml:mrow></mml:mrow></mml:math></inline-formula> is the eigenmatrix of graph <inline-formula><mml:math id="mm23" overflow="scroll"><mml:mrow><mml:msup><mml:mi>G</mml:mi><mml:mi>s</mml:mi></mml:msup></mml:mrow></mml:math></inline-formula>, and the <italic toggle="yes">i</italic>-th row of <inline-formula><mml:math id="mm24" overflow="scroll"><mml:mrow><mml:msup><mml:mi>X</mml:mi><mml:mi>s</mml:mi></mml:msup></mml:mrow></mml:math></inline-formula> is the eigenvector related to node <italic toggle="yes">i</italic>. <inline-formula><mml:math id="mm25" overflow="scroll"><mml:mrow><mml:mrow><mml:msup><mml:mi>Y</mml:mi><mml:mi>s</mml:mi></mml:msup><mml:mo>∈</mml:mo><mml:msup><mml:mi mathvariant="double-struck">R</mml:mi><mml:msup><mml:mi>M</mml:mi><mml:mi>s</mml:mi></mml:msup></mml:msup></mml:mrow></mml:mrow></mml:math></inline-formula> is the label of <inline-formula><mml:math id="mm26" overflow="scroll"><mml:mrow><mml:msup><mml:mi>G</mml:mi><mml:mi>s</mml:mi></mml:msup></mml:mrow></mml:math></inline-formula>. In this paper, the label value of normal people is 0 and the category label of patients is 1. Similarly, each subject from the target domain is also defined as a graph <inline-formula><mml:math id="mm27" overflow="scroll"><mml:mrow><mml:mrow><mml:msup><mml:mi>G</mml:mi><mml:mi>t</mml:mi></mml:msup><mml:mo>=</mml:mo><mml:mrow><mml:mo>(</mml:mo><mml:msup><mml:mi>V</mml:mi><mml:mi>t</mml:mi></mml:msup><mml:mo>,</mml:mo><mml:msup><mml:mi>A</mml:mi><mml:mi>t</mml:mi></mml:msup><mml:mo>,</mml:mo><mml:msup><mml:mi>X</mml:mi><mml:mi>t</mml:mi></mml:msup><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:mrow></mml:math></inline-formula>, which is a completely unlabeled network. <inline-formula><mml:math id="mm28" overflow="scroll"><mml:mrow><mml:msup><mml:mi>V</mml:mi><mml:mi>t</mml:mi></mml:msup></mml:mrow></mml:math></inline-formula> is the node set. <inline-formula><mml:math id="mm29" overflow="scroll"><mml:mrow><mml:mrow><mml:msup><mml:mi>N</mml:mi><mml:mi>t</mml:mi></mml:msup><mml:mo>=</mml:mo><mml:mrow><mml:mo>|</mml:mo><mml:msup><mml:mi>V</mml:mi><mml:mi>t</mml:mi></mml:msup><mml:mo>|</mml:mo></mml:mrow></mml:mrow></mml:mrow></mml:math></inline-formula> is the number of nodes/ROIs in <inline-formula><mml:math id="mm30" overflow="scroll"><mml:mrow><mml:msup><mml:mi>G</mml:mi><mml:mi>t</mml:mi></mml:msup></mml:mrow></mml:math></inline-formula>. <inline-formula><mml:math id="mm31" overflow="scroll"><mml:mrow><mml:mrow><mml:msup><mml:mi>A</mml:mi><mml:mi>t</mml:mi></mml:msup><mml:mo>∈</mml:mo><mml:msup><mml:mi mathvariant="double-struck">R</mml:mi><mml:mrow><mml:msup><mml:mi>N</mml:mi><mml:mi>t</mml:mi></mml:msup><mml:mo>×</mml:mo><mml:msup><mml:mi>N</mml:mi><mml:mi>t</mml:mi></mml:msup></mml:mrow></mml:msup></mml:mrow></mml:mrow></mml:math></inline-formula> is the weighted adjacency matrix. <inline-formula><mml:math id="mm32" overflow="scroll"><mml:mrow><mml:mrow><mml:msup><mml:mi>X</mml:mi><mml:mi>t</mml:mi></mml:msup><mml:mo>∈</mml:mo><mml:msup><mml:mi mathvariant="double-struck">R</mml:mi><mml:mrow><mml:msup><mml:mi>N</mml:mi><mml:mi>t</mml:mi></mml:msup><mml:mo>×</mml:mo><mml:msup><mml:mi>D</mml:mi><mml:mi>t</mml:mi></mml:msup></mml:mrow></mml:msup></mml:mrow></mml:mrow></mml:math></inline-formula> represents the feature matrix of <inline-formula><mml:math id="mm33" overflow="scroll"><mml:mrow><mml:msup><mml:mi>G</mml:mi><mml:mi>t</mml:mi></mml:msup></mml:mrow></mml:math></inline-formula>.</p>
+      </sec>
+      <sec id="sec3dot2-brainsci-12-01413">
+        <title>3.2. Proposed Method</title>
+        <p>The model A<sup>2</sup>GCN designed in this paper mainly includes three modules: node representation learning, node attention mechanism and domain adaptation module as shown in <xref rid="brainsci-12-01413-f002" ref-type="fig">Figure 2</xref>. In addition, our model will be described in detail below.</p>
+        <sec id="sec3dot2dot1-brainsci-12-01413">
+          <title>3.2.1. Node Representation Learning</title>
+          <p>To facilitate the classification task of downstream graphs, we use GCN to capture the node representation information on each graph.</p>
+          <p>First, we used the preprocessed BOLD signal to calculate the Pearson’s correlation coefficient (PC) between nodes on the graph, and defined it as the functional connectivity <inline-formula><mml:math id="mm35" overflow="scroll"><mml:mrow><mml:mrow><mml:msub><mml:mi>e</mml:mi><mml:mrow><mml:mi>i</mml:mi><mml:mi>j</mml:mi></mml:mrow></mml:msub><mml:mo>∈</mml:mo><mml:mrow><mml:mo>[</mml:mo><mml:mo>−</mml:mo><mml:mn>1</mml:mn><mml:mo>,</mml:mo><mml:mn>1</mml:mn><mml:mo>]</mml:mo></mml:mrow></mml:mrow></mml:mrow></mml:math></inline-formula> of the <italic toggle="yes">i</italic>-th and <italic toggle="yes">j</italic>-th brain regions, as follows:<disp-formula id="FD1-brainsci-12-01413"><label>(1)</label><mml:math id="mm36" display="block" overflow="scroll"><mml:mrow><mml:mrow><mml:msub><mml:mi>e</mml:mi><mml:mrow><mml:mi>i</mml:mi><mml:mi>j</mml:mi></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:msup><mml:mrow><mml:mo>(</mml:mo><mml:msub><mml:mi>v</mml:mi><mml:mi>i</mml:mi></mml:msub><mml:mo>−</mml:mo><mml:msub><mml:mover accent="true"><mml:mi>v</mml:mi><mml:mo>¯</mml:mo></mml:mover><mml:mi>i</mml:mi></mml:msub><mml:mo>)</mml:mo></mml:mrow><mml:mo>⊤</mml:mo></mml:msup><mml:mrow><mml:mo>(</mml:mo><mml:msub><mml:mi>v</mml:mi><mml:mi>j</mml:mi></mml:msub><mml:mo>−</mml:mo><mml:msub><mml:mover accent="true"><mml:mi>v</mml:mi><mml:mo>¯</mml:mo></mml:mover><mml:mi>j</mml:mi></mml:msub><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mrow><mml:msqrt><mml:mrow><mml:msup><mml:mrow><mml:mo>(</mml:mo><mml:msub><mml:mi>v</mml:mi><mml:mi>i</mml:mi></mml:msub><mml:mo>−</mml:mo><mml:msub><mml:mover accent="true"><mml:mi>v</mml:mi><mml:mo>¯</mml:mo></mml:mover><mml:mi>i</mml:mi></mml:msub><mml:mo>)</mml:mo></mml:mrow><mml:mo>⊤</mml:mo></mml:msup><mml:mrow><mml:mo>(</mml:mo><mml:msub><mml:mi>v</mml:mi><mml:mi>i</mml:mi></mml:msub><mml:mo>−</mml:mo><mml:msub><mml:mover accent="true"><mml:mi>v</mml:mi><mml:mo>¯</mml:mo></mml:mover><mml:mi>i</mml:mi></mml:msub><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:msqrt><mml:msqrt><mml:mrow><mml:msup><mml:mrow><mml:mo>(</mml:mo><mml:msub><mml:mi>v</mml:mi><mml:mi>j</mml:mi></mml:msub><mml:mo>−</mml:mo><mml:msub><mml:mover accent="true"><mml:mi>v</mml:mi><mml:mo>¯</mml:mo></mml:mover><mml:mi>j</mml:mi></mml:msub><mml:mo>)</mml:mo></mml:mrow><mml:mo>⊤</mml:mo></mml:msup><mml:mrow><mml:mo>(</mml:mo><mml:msub><mml:mi>v</mml:mi><mml:mi>j</mml:mi></mml:msub><mml:mo>−</mml:mo><mml:msub><mml:mover accent="true"><mml:mi>v</mml:mi><mml:mo>¯</mml:mo></mml:mover><mml:mi>j</mml:mi></mml:msub><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:msqrt></mml:mrow></mml:mfrac></mml:mrow></mml:mrow></mml:math></disp-formula>
+where <inline-formula><mml:math id="mm37" overflow="scroll"><mml:mrow><mml:mrow><mml:msub><mml:mi>v</mml:mi><mml:mi>i</mml:mi></mml:msub><mml:mo>∈</mml:mo><mml:msup><mml:mi mathvariant="double-struck">R</mml:mi><mml:mrow><mml:mi>t</mml:mi><mml:mi>s</mml:mi></mml:mrow></mml:msup></mml:mrow></mml:mrow></mml:math></inline-formula>, <inline-formula><mml:math id="mm38" overflow="scroll"><mml:mrow><mml:mrow><mml:msub><mml:mi>v</mml:mi><mml:mi>i</mml:mi></mml:msub><mml:mo>∈</mml:mo><mml:msup><mml:mrow><mml:mi>V</mml:mi></mml:mrow><mml:mi>s</mml:mi></mml:msup></mml:mrow></mml:mrow></mml:math></inline-formula> or <inline-formula><mml:math id="mm39" overflow="scroll"><mml:mrow><mml:msup><mml:mrow><mml:mi>V</mml:mi></mml:mrow><mml:mi>t</mml:mi></mml:msup></mml:mrow></mml:math></inline-formula>, and it is the average time series signal from the <italic toggle="yes">i</italic>-th ROI. <inline-formula><mml:math id="mm40" overflow="scroll"><mml:mrow><mml:mrow><mml:mi>t</mml:mi><mml:mi>s</mml:mi></mml:mrow></mml:mrow></mml:math></inline-formula> is the number of time points of the ROI. In addition, the <inline-formula><mml:math id="mm41" overflow="scroll"><mml:mrow><mml:msub><mml:mover accent="true"><mml:mi>v</mml:mi><mml:mo>¯</mml:mo></mml:mover><mml:mi>i</mml:mi></mml:msub></mml:mrow></mml:math></inline-formula> represents the mean vector corresponding to <inline-formula><mml:math id="mm42" overflow="scroll"><mml:mrow><mml:msub><mml:mi>v</mml:mi><mml:mi>i</mml:mi></mml:msub></mml:mrow></mml:math></inline-formula>.</p>
+          <p>Thus, for the graph, the adjacency matrix <inline-formula><mml:math id="mm43" overflow="scroll"><mml:mrow><mml:mrow><mml:msup><mml:mi>A</mml:mi><mml:mi>k</mml:mi></mml:msup><mml:mo>∈</mml:mo><mml:msup><mml:mi mathvariant="double-struck">R</mml:mi><mml:mrow><mml:msup><mml:mi>N</mml:mi><mml:mi>k</mml:mi></mml:msup><mml:mo>×</mml:mo><mml:msup><mml:mi>N</mml:mi><mml:mi>k</mml:mi></mml:msup></mml:mrow></mml:msup></mml:mrow></mml:mrow></mml:math></inline-formula> will be defined as:<disp-formula id="FD2-brainsci-12-01413"><label>(2)</label><mml:math id="mm44" display="block" overflow="scroll"><mml:mrow><mml:mrow><mml:msub><mml:mrow><mml:msup><mml:mi>A</mml:mi><mml:mi>k</mml:mi></mml:msup></mml:mrow><mml:mrow><mml:mi>i</mml:mi><mml:mi>j</mml:mi></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:mfenced separators="" open="{" close=""><mml:mtable><mml:mtr><mml:mtd columnalign="left"><mml:mrow><mml:mn>1</mml:mn><mml:mo>,</mml:mo><mml:mspace width="3.33333pt"/></mml:mrow></mml:mtd><mml:mtd columnalign="left"><mml:mrow><mml:mi>i</mml:mi><mml:mo>=</mml:mo><mml:mi>j</mml:mi></mml:mrow></mml:mtd></mml:mtr><mml:mtr><mml:mtd columnalign="left"><mml:mrow><mml:mfenced separators="" open="|" close="|"><mml:msub><mml:mi>e</mml:mi><mml:mrow><mml:mi>i</mml:mi><mml:mi>j</mml:mi></mml:mrow></mml:msub></mml:mfenced><mml:mo>,</mml:mo><mml:mspace width="3.33333pt"/></mml:mrow></mml:mtd><mml:mtd columnalign="left"><mml:mrow><mml:mi>o</mml:mi><mml:mi>t</mml:mi><mml:mi>h</mml:mi><mml:mi>e</mml:mi><mml:mi>r</mml:mi><mml:mi>w</mml:mi><mml:mi>i</mml:mi><mml:mi>s</mml:mi><mml:mi>e</mml:mi></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:mfenced></mml:mrow></mml:mrow></mml:math></disp-formula>
+where <italic toggle="yes">k</italic> represents source domain <italic toggle="yes">s</italic> or target domain <italic toggle="yes">t</italic>. At the same time, for simplicity and convenience, we describe the feature matrix <inline-formula><mml:math id="mm45" overflow="scroll"><mml:mrow><mml:mrow><mml:msup><mml:mi>X</mml:mi><mml:mi>k</mml:mi></mml:msup><mml:mo>∈</mml:mo><mml:msup><mml:mi mathvariant="double-struck">R</mml:mi><mml:mrow><mml:msup><mml:mi>N</mml:mi><mml:mi>k</mml:mi></mml:msup><mml:mo>×</mml:mo><mml:msup><mml:mi>N</mml:mi><mml:mi>k</mml:mi></mml:msup></mml:mrow></mml:msup></mml:mrow></mml:mrow></mml:math></inline-formula>, of each graph through the correlation coefficient (i.e., <inline-formula><mml:math id="mm46" overflow="scroll"><mml:mrow><mml:mrow><mml:msub><mml:mrow><mml:msup><mml:mi>X</mml:mi><mml:mi>k</mml:mi></mml:msup></mml:mrow><mml:mrow><mml:mi>i</mml:mi><mml:mi>j</mml:mi></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:msub><mml:mi>e</mml:mi><mml:mrow><mml:mi>i</mml:mi><mml:mi>j</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:mrow></mml:math></inline-formula>).</p>
+          <p>According to the traditional GCN model, given the input feature matrix <inline-formula><mml:math id="mm47" overflow="scroll"><mml:mrow><mml:msup><mml:mi>X</mml:mi><mml:mi>k</mml:mi></mml:msup></mml:mrow></mml:math></inline-formula> and adjacency matrix <inline-formula><mml:math id="mm48" overflow="scroll"><mml:mrow><mml:msup><mml:mi>A</mml:mi><mml:mi>k</mml:mi></mml:msup></mml:mrow></mml:math></inline-formula>, the output of the <inline-formula><mml:math id="mm49" overflow="scroll"><mml:mrow><mml:mrow><mml:mi>l</mml:mi><mml:mo>+</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:mrow></mml:math></inline-formula>-th hidden layer of the neural network <italic toggle="yes">H</italic> is:<disp-formula id="FD3-brainsci-12-01413"><label>(3)</label><mml:math id="mm50" display="block" overflow="scroll"><mml:mrow><mml:mrow><mml:msup><mml:mi>H</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mi>l</mml:mi><mml:mo>+</mml:mo><mml:mn>1</mml:mn><mml:mo>)</mml:mo></mml:mrow></mml:msup><mml:mo>=</mml:mo><mml:mi>σ</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:msup><mml:mrow><mml:mover accent="true"><mml:mi>D</mml:mi><mml:mo>˜</mml:mo></mml:mover></mml:mrow><mml:mrow><mml:mo>−</mml:mo><mml:mfrac><mml:mn>1</mml:mn><mml:mn>2</mml:mn></mml:mfrac></mml:mrow></mml:msup><mml:mrow><mml:msup><mml:mi>A</mml:mi><mml:mi>k</mml:mi></mml:msup><mml:msup><mml:mrow><mml:mover accent="true"><mml:mi>D</mml:mi><mml:mo>˜</mml:mo></mml:mover></mml:mrow><mml:mrow><mml:mo>−</mml:mo><mml:mfrac><mml:mn>1</mml:mn><mml:mn>2</mml:mn></mml:mfrac></mml:mrow></mml:msup></mml:mrow><mml:msup><mml:mi>H</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mi>l</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:msup><mml:msup><mml:mi>W</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mi>l</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:msup><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:mrow></mml:math></disp-formula>
+where <inline-formula><mml:math id="mm51" overflow="scroll"><mml:mrow><mml:mrow><mml:msup><mml:mrow><mml:mover accent="true"><mml:mi>D</mml:mi><mml:mo>˜</mml:mo></mml:mover></mml:mrow><mml:mrow><mml:mo>−</mml:mo><mml:mfrac><mml:mn>1</mml:mn><mml:mn>2</mml:mn></mml:mfrac></mml:mrow></mml:msup><mml:mrow><mml:msup><mml:mi>A</mml:mi><mml:mi>k</mml:mi></mml:msup><mml:msup><mml:mrow><mml:mover accent="true"><mml:mi>D</mml:mi><mml:mo>˜</mml:mo></mml:mover></mml:mrow><mml:mrow><mml:mo>−</mml:mo><mml:mfrac><mml:mn>1</mml:mn><mml:mn>2</mml:mn></mml:mfrac></mml:mrow></mml:msup></mml:mrow></mml:mrow></mml:mrow></mml:math></inline-formula> is the normalization of the adjacency matrix <inline-formula><mml:math id="mm52" overflow="scroll"><mml:mrow><mml:msup><mml:mi>A</mml:mi><mml:mi>k</mml:mi></mml:msup></mml:mrow></mml:math></inline-formula>, and <inline-formula><mml:math id="mm53" overflow="scroll"><mml:mrow><mml:mrow><mml:msub><mml:mover accent="true"><mml:mi>D</mml:mi><mml:mo>˜</mml:mo></mml:mover><mml:mrow><mml:mi>i</mml:mi><mml:mi>i</mml:mi></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:msub><mml:mi>Σ</mml:mi><mml:mi>j</mml:mi></mml:msub><mml:msub><mml:mrow><mml:msup><mml:mi>A</mml:mi><mml:mi>k</mml:mi></mml:msup></mml:mrow><mml:mrow><mml:mi>i</mml:mi><mml:mi>j</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:mrow></mml:math></inline-formula>. <italic toggle="yes">W</italic> is the trainable weight matrix, that is, the parameters of the network; <inline-formula><mml:math id="mm54" overflow="scroll"><mml:mrow><mml:mrow><mml:mi>σ</mml:mi><mml:mo>(</mml:mo><mml:mo>·</mml:mo><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:math></inline-formula> is the activation function, and the ReLU function is used here. <inline-formula><mml:math id="mm55" overflow="scroll"><mml:mrow><mml:msup><mml:mi>H</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mi>l</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:msup></mml:mrow></mml:math></inline-formula> represents the feature matrix of the layer <italic toggle="yes">l</italic> network. <inline-formula><mml:math id="mm56" overflow="scroll"><mml:mrow><mml:mrow><mml:mi>l</mml:mi><mml:mo>=</mml:mo><mml:mn>0</mml:mn></mml:mrow></mml:mrow></mml:math></inline-formula>, then <inline-formula><mml:math id="mm57" overflow="scroll"><mml:mrow><mml:mrow><mml:mi>H</mml:mi><mml:mo>=</mml:mo><mml:msup><mml:mi>X</mml:mi><mml:mi>k</mml:mi></mml:msup></mml:mrow></mml:mrow></mml:math></inline-formula>.</p>
+        </sec>
+        <sec id="sec3dot2dot2-brainsci-12-01413">
+          <title>3.2.2. Node Attention Mechanism</title>
+          <p>For each graph, the potential impact of nodes/ROIs features learned from the GCN module on related brain diseases is different. Therefore, this paper proposes a node attention mechanism module to automatically mine the weight of nodes on the graph. See <xref rid="brainsci-12-01413-f002" ref-type="fig">Figure 2</xref> for details. After learning the node representation module, we naturally obtain new embedded representations of the source and target domains, that is, <inline-formula><mml:math id="mm58" overflow="scroll"><mml:mrow><mml:mrow><mml:msup><mml:mi>H</mml:mi><mml:mi>s</mml:mi></mml:msup><mml:mo>∈</mml:mo><mml:msup><mml:mi mathvariant="double-struck">R</mml:mi><mml:mrow><mml:mi>N</mml:mi><mml:mo>×</mml:mo><mml:mi>D</mml:mi></mml:mrow></mml:msup></mml:mrow></mml:mrow></mml:math></inline-formula> from the source domain graph and <inline-formula><mml:math id="mm59" overflow="scroll"><mml:mrow><mml:mrow><mml:msup><mml:mi>H</mml:mi><mml:mi>t</mml:mi></mml:msup><mml:mo>∈</mml:mo><mml:msup><mml:mi mathvariant="double-struck">R</mml:mi><mml:mrow><mml:mi>N</mml:mi><mml:mo>×</mml:mo><mml:mi>D</mml:mi></mml:mrow></mml:msup></mml:mrow></mml:mrow></mml:math></inline-formula> from the target domain graph. At this point, <inline-formula><mml:math id="mm60" overflow="scroll"><mml:mrow><mml:mrow><mml:mi>N</mml:mi><mml:mo>=</mml:mo><mml:msup><mml:mi>N</mml:mi><mml:mi>s</mml:mi></mml:msup><mml:mo>=</mml:mo><mml:msup><mml:mi>N</mml:mi><mml:mi>t</mml:mi></mml:msup></mml:mrow></mml:mrow></mml:math></inline-formula>, that is, the brains of subjects from different domains will be divided into the same number of functional areas. In addition, <inline-formula><mml:math id="mm61" overflow="scroll"><mml:mrow><mml:mrow><mml:mi>D</mml:mi><mml:mo>=</mml:mo><mml:msup><mml:mi>D</mml:mi><mml:mi>s</mml:mi></mml:msup><mml:mo>=</mml:mo><mml:msup><mml:mi>D</mml:mi><mml:mi>t</mml:mi></mml:msup></mml:mrow></mml:mrow></mml:math></inline-formula>.</p>
+          <p>Then, max pooling is performed on <inline-formula><mml:math id="mm62" overflow="scroll"><mml:mrow><mml:msup><mml:mi>H</mml:mi><mml:mi>k</mml:mi></mml:msup></mml:mrow></mml:math></inline-formula> to generate the comprehensive representation of nodes, i.e., <inline-formula><mml:math id="mm63" overflow="scroll"><mml:mrow><mml:msubsup><mml:mi>H</mml:mi><mml:mrow><mml:mi>m</mml:mi><mml:mi>a</mml:mi><mml:mi>x</mml:mi></mml:mrow><mml:mi>k</mml:mi></mml:msubsup></mml:mrow></mml:math></inline-formula>. We send the composite node representations to the two fully connected layers respectively to automatically generate the node’s attention score, i.e., <inline-formula><mml:math id="mm64" overflow="scroll"><mml:mrow><mml:msubsup><mml:mi>H</mml:mi><mml:mrow><mml:mi>a</mml:mi><mml:mi>t</mml:mi><mml:mi>t</mml:mi></mml:mrow><mml:mi>k</mml:mi></mml:msubsup></mml:mrow></mml:math></inline-formula>, and it is defined as:<disp-formula id="FD4-brainsci-12-01413"><label>(4)</label><mml:math id="mm65" display="block" overflow="scroll"><mml:mrow><mml:mrow><mml:msubsup><mml:mi>H</mml:mi><mml:mrow><mml:mi>a</mml:mi><mml:mi>t</mml:mi><mml:mi>t</mml:mi></mml:mrow><mml:mi>k</mml:mi></mml:msubsup><mml:mo>=</mml:mo><mml:mi>σ</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:msup><mml:mi>W</mml:mi><mml:mi>k</mml:mi></mml:msup><mml:msubsup><mml:mi>H</mml:mi><mml:mrow><mml:mi>m</mml:mi><mml:mi>a</mml:mi><mml:mi>x</mml:mi></mml:mrow><mml:mi>k</mml:mi></mml:msubsup><mml:mo>+</mml:mo><mml:msup><mml:mi>B</mml:mi><mml:mi>k</mml:mi></mml:msup><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:mrow></mml:math></disp-formula>
+where <inline-formula><mml:math id="mm66" overflow="scroll"><mml:mrow><mml:msup><mml:mi>B</mml:mi><mml:mi>k</mml:mi></mml:msup></mml:mrow></mml:math></inline-formula> is the bias term. The dimension of hidden layer of full connection layer is <italic toggle="yes">N</italic>, and <italic toggle="yes">N</italic>. The sigmoid function as a nonlinear activation function is used to constrain each element in the range <inline-formula><mml:math id="mm67" overflow="scroll"><mml:mrow><mml:mrow><mml:mo>[</mml:mo><mml:mn>0</mml:mn><mml:mo>,</mml:mo><mml:mn>1</mml:mn><mml:mo>]</mml:mo></mml:mrow></mml:mrow></mml:math></inline-formula>. Among them, the ROIs that contribute more to the predicted results for the model will be assigned more weight, while the brain regions that contribute less will be assigned less weight.</p>
+          <p>Therefore, the final node representation is expressed as:<disp-formula id="FD5-brainsci-12-01413"><label>(5)</label><mml:math id="mm68" display="block" overflow="scroll"><mml:mrow><mml:mrow><mml:msup><mml:mi>Z</mml:mi><mml:mi>k</mml:mi></mml:msup><mml:mo>=</mml:mo><mml:msubsup><mml:mi>H</mml:mi><mml:mrow><mml:mi>a</mml:mi><mml:mi>t</mml:mi><mml:mi>t</mml:mi></mml:mrow><mml:mi>k</mml:mi></mml:msubsup><mml:mo>⊙</mml:mo><mml:msup><mml:mi>H</mml:mi><mml:mi>k</mml:mi></mml:msup><mml:mo>+</mml:mo><mml:msup><mml:mi>H</mml:mi><mml:mi>k</mml:mi></mml:msup></mml:mrow></mml:mrow></mml:math></disp-formula>
+where ⊙ represents the dot product operation, which weights the features of each extracted node.</p>
+        </sec>
+        <sec id="sec3dot2dot3-brainsci-12-01413">
+          <title>3.2.3. Domain Adaptation Module</title>
+          <p>For cross-domain classification, we propose to jointly optimize the three losses to reduce domain shift. Graph-level classification tasks typically use the readout operation to extract graph representations [<xref rid="B37-brainsci-12-01413" ref-type="bibr">37</xref>,<xref rid="B38-brainsci-12-01413" ref-type="bibr">38</xref>]. This can lead to missing important information, which can negatively affect feature alignment between domains. Therefore, we will choose to use mean absolute error (MAE) loss (<inline-formula><mml:math id="mm69" overflow="scroll"><mml:mrow><mml:msub><mml:mi mathvariant="script">L</mml:mi><mml:mi mathvariant="script">M</mml:mi></mml:msub></mml:mrow></mml:math></inline-formula>) and CORAL loss [<xref rid="B39-brainsci-12-01413" ref-type="bibr">39</xref>] (<inline-formula><mml:math id="mm70" overflow="scroll"><mml:mrow><mml:msub><mml:mi mathvariant="script">L</mml:mi><mml:mi mathvariant="script">A</mml:mi></mml:msub></mml:mrow></mml:math></inline-formula>) respectively to align features before and after the readout operation.</p>
+          <p><bold>MAE Loss <inline-formula><mml:math id="mm71" overflow="scroll"><mml:mrow><mml:msub><mml:mi mathvariant="bold-script">L</mml:mi><mml:mi mathvariant="bold-script">M</mml:mi></mml:msub></mml:mrow></mml:math></inline-formula></bold>: Considering the reality, we believe that, for the same disease and the same classification task, the node representation of the graph obtained from different domains should have a certain consistency.
+<disp-formula id="FD6-brainsci-12-01413"><label>(6)</label><mml:math id="mm72" display="block" overflow="scroll"><mml:mrow><mml:mrow><mml:msub><mml:mi mathvariant="script">L</mml:mi><mml:mi mathvariant="script">M</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:msup><mml:mi>Z</mml:mi><mml:mi>s</mml:mi></mml:msup><mml:mo>,</mml:mo><mml:msup><mml:mi>Z</mml:mi><mml:mi>t</mml:mi></mml:msup><mml:mo>)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mfrac><mml:mn>1</mml:mn><mml:mrow><mml:mi>N</mml:mi><mml:mo>×</mml:mo><mml:mi>M</mml:mi><mml:mo>×</mml:mo><mml:mi>D</mml:mi></mml:mrow></mml:mfrac><mml:munderover><mml:mo>∑</mml:mo><mml:mrow><mml:mi>i</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mi>N</mml:mi></mml:munderover><mml:mrow><mml:mo>|</mml:mo><mml:mrow><mml:msup><mml:mrow><mml:msub><mml:mi>Z</mml:mi><mml:mi>i</mml:mi></mml:msub></mml:mrow><mml:mi>s</mml:mi></mml:msup><mml:mo>−</mml:mo><mml:msup><mml:mrow><mml:msub><mml:mi>Z</mml:mi><mml:mi>i</mml:mi></mml:msub></mml:mrow><mml:mi>t</mml:mi></mml:msup></mml:mrow><mml:mo>|</mml:mo></mml:mrow></mml:mrow></mml:mrow></mml:math></disp-formula>
+where <inline-formula><mml:math id="mm73" overflow="scroll"><mml:mrow><mml:mrow><mml:mi>M</mml:mi><mml:mo>=</mml:mo><mml:msup><mml:mi>M</mml:mi><mml:mi>s</mml:mi></mml:msup><mml:mo>=</mml:mo><mml:msup><mml:mi>M</mml:mi><mml:mi>t</mml:mi></mml:msup></mml:mrow></mml:mrow></mml:math></inline-formula> is the number of samples in source or target domains.</p>
+          <p><bold>CORAL Loss <inline-formula><mml:math id="mm74" overflow="scroll"><mml:mrow><mml:msub><mml:mi mathvariant="bold-script">L</mml:mi><mml:mi mathvariant="bold-script">A</mml:mi></mml:msub></mml:mrow></mml:math></inline-formula></bold>: First, readout graph-level representations of nodes using average pooling and max pooling:<disp-formula id="FD7-brainsci-12-01413"><label>(7)</label><mml:math id="mm75" display="block" overflow="scroll"><mml:mrow><mml:mrow><mml:msup><mml:mi>G</mml:mi><mml:mi>k</mml:mi></mml:msup><mml:mo>=</mml:mo><mml:mfrac><mml:mn>1</mml:mn><mml:mi>N</mml:mi></mml:mfrac><mml:munderover><mml:mo>∑</mml:mo><mml:mrow><mml:mi>i</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mi>N</mml:mi></mml:munderover><mml:msup><mml:mrow><mml:msub><mml:mi>Z</mml:mi><mml:mi>i</mml:mi></mml:msub></mml:mrow><mml:mi>k</mml:mi></mml:msup><mml:mrow><mml:mo>∥</mml:mo></mml:mrow><mml:msup><mml:munder><mml:mrow><mml:mi>m</mml:mi><mml:mi>a</mml:mi><mml:mi>x</mml:mi></mml:mrow><mml:mrow><mml:mi>i</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:munder><mml:mi>N</mml:mi></mml:msup><mml:msup><mml:mrow><mml:msub><mml:mi>Z</mml:mi><mml:mi>i</mml:mi></mml:msub></mml:mrow><mml:mi>k</mml:mi></mml:msup></mml:mrow></mml:mrow></mml:math></disp-formula>
+where <inline-formula><mml:math id="mm77777" overflow="scroll"><mml:mrow><mml:mrow><mml:mo>∥</mml:mo></mml:mrow></mml:mrow></mml:math></inline-formula> denotes concatenation.</p>
+          <p>Meanwhile, CORAL loss is defined as the covariance distance of the features of source domain and target domain:<disp-formula id="FD8-brainsci-12-01413"><label>(8)</label><mml:math id="mm76" display="block" overflow="scroll"><mml:mrow><mml:mrow><mml:msub><mml:mi mathvariant="script">L</mml:mi><mml:mi mathvariant="script">A</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:msup><mml:mi>G</mml:mi><mml:mi>s</mml:mi></mml:msup><mml:mo>,</mml:mo><mml:msup><mml:mi>G</mml:mi><mml:mi>t</mml:mi></mml:msup><mml:mo>)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mfrac><mml:mn>1</mml:mn><mml:mrow><mml:mn>4</mml:mn><mml:msup><mml:mi>D</mml:mi><mml:mn>2</mml:mn></mml:msup></mml:mrow></mml:mfrac><mml:mrow><mml:mo>∥</mml:mo></mml:mrow><mml:mrow><mml:msub><mml:mi>C</mml:mi><mml:mi>s</mml:mi></mml:msub><mml:mo>−</mml:mo><mml:msub><mml:mi>C</mml:mi><mml:mi>t</mml:mi></mml:msub></mml:mrow><mml:msub><mml:mrow><mml:msup><mml:mrow><mml:mo>∥</mml:mo></mml:mrow><mml:mn>2</mml:mn></mml:msup></mml:mrow><mml:mi>F</mml:mi></mml:msub></mml:mrow></mml:mrow></mml:math></disp-formula>
+where <inline-formula><mml:math id="mm77" overflow="scroll"><mml:mrow><mml:mrow><mml:mo>∥</mml:mo><mml:mo>·</mml:mo><mml:mo>∥</mml:mo></mml:mrow></mml:mrow></mml:math></inline-formula> represents the Frobenius norm.</p>
+          <p>The covariance of source domain (<inline-formula><mml:math id="mm78" overflow="scroll"><mml:mrow><mml:msub><mml:mi>C</mml:mi><mml:mi>s</mml:mi></mml:msub></mml:mrow></mml:math></inline-formula>) or target domain (<inline-formula><mml:math id="mm79" overflow="scroll"><mml:mrow><mml:msub><mml:mi>C</mml:mi><mml:mi>t</mml:mi></mml:msub></mml:mrow></mml:math></inline-formula>) is:<disp-formula id="FD9-brainsci-12-01413"><label>(9)</label><mml:math id="mm80" display="block" overflow="scroll"><mml:mrow><mml:mrow><mml:msub><mml:mi>C</mml:mi><mml:mi>k</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:mfrac><mml:mn>1</mml:mn><mml:mrow><mml:mi>M</mml:mi><mml:mo>−</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:mfrac><mml:mrow><mml:mo>(</mml:mo><mml:msup><mml:mrow><mml:msup><mml:mrow><mml:msub><mml:mi>G</mml:mi><mml:mi>i</mml:mi></mml:msub></mml:mrow><mml:mi>k</mml:mi></mml:msup></mml:mrow><mml:mo>⊤</mml:mo></mml:msup><mml:msup><mml:mrow><mml:msub><mml:mi>G</mml:mi><mml:mi>i</mml:mi></mml:msub></mml:mrow><mml:mi>k</mml:mi></mml:msup><mml:mo>−</mml:mo><mml:mfrac><mml:mrow><mml:msup><mml:mrow><mml:mo>(</mml:mo><mml:msup><mml:mi>I</mml:mi><mml:mo>⊤</mml:mo></mml:msup><mml:msup><mml:mrow><mml:msub><mml:mi>G</mml:mi><mml:mi>i</mml:mi></mml:msub></mml:mrow><mml:mi>k</mml:mi></mml:msup><mml:mo>)</mml:mo></mml:mrow><mml:mo>⊤</mml:mo></mml:msup><mml:mrow><mml:mo>(</mml:mo><mml:msup><mml:mi>I</mml:mi><mml:mo>⊤</mml:mo></mml:msup><mml:msup><mml:mrow><mml:msub><mml:mi>G</mml:mi><mml:mi>i</mml:mi></mml:msub></mml:mrow><mml:mi>k</mml:mi></mml:msup><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mi>M</mml:mi></mml:mfrac><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:mrow></mml:math></disp-formula>
+where <italic toggle="yes">I</italic> is a column vector with all elements 1, and <inline-formula><mml:math id="mm81" overflow="scroll"><mml:mrow><mml:mrow><mml:mi>i</mml:mi><mml:mo>∈</mml:mo><mml:mfenced separators="" open="{" close="}"><mml:mn>1</mml:mn><mml:mo>,</mml:mo><mml:mo>⋯</mml:mo><mml:mo>,</mml:mo><mml:mi>M</mml:mi></mml:mfenced></mml:mrow></mml:mrow></mml:math></inline-formula>.</p>
+          <p><bold>Cross Entropy Loss <inline-formula><mml:math id="mm82" overflow="scroll"><mml:mrow><mml:msub><mml:mi mathvariant="bold-script">L</mml:mi><mml:mi mathvariant="bold-script">C</mml:mi></mml:msub></mml:mrow></mml:math></inline-formula></bold>. Take the cross entropy loss as the source domain classifier loss. Its objective is to minimize the classification loss of the source domain data when the data label is intact:<disp-formula id="FD10-brainsci-12-01413"><label>(10)</label><mml:math id="mm83" display="block" overflow="scroll"><mml:mrow><mml:mrow><mml:msub><mml:mi mathvariant="script">L</mml:mi><mml:mi mathvariant="script">C</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:msub><mml:mi>f</mml:mi><mml:mi>C</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:msup><mml:mi>G</mml:mi><mml:mi>s</mml:mi></mml:msup><mml:mo>)</mml:mo></mml:mrow><mml:mo>,</mml:mo><mml:msup><mml:mi>Y</mml:mi><mml:mi>s</mml:mi></mml:msup><mml:mo>)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mo>−</mml:mo><mml:mfrac><mml:mn>1</mml:mn><mml:msup><mml:mi>M</mml:mi><mml:mi>s</mml:mi></mml:msup></mml:mfrac><mml:munderover><mml:mo>∑</mml:mo><mml:mrow><mml:mi>i</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:msup><mml:mi>M</mml:mi><mml:mi>s</mml:mi></mml:msup></mml:munderover><mml:msup><mml:mrow><mml:msub><mml:mi>Y</mml:mi><mml:mi>i</mml:mi></mml:msub></mml:mrow><mml:mi>s</mml:mi></mml:msup><mml:mi>l</mml:mi><mml:mi>o</mml:mi><mml:mi>g</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:msup><mml:mover accent="true"><mml:msub><mml:mi>Y</mml:mi><mml:mi>i</mml:mi></mml:msub><mml:mo>^</mml:mo></mml:mover><mml:mi>s</mml:mi></mml:msup><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:mrow></mml:math></disp-formula>
+where <inline-formula><mml:math id="mm84" overflow="scroll"><mml:mrow><mml:msup><mml:mrow><mml:msub><mml:mi>Y</mml:mi><mml:mi>i</mml:mi></mml:msub></mml:mrow><mml:mi>s</mml:mi></mml:msup></mml:mrow></mml:math></inline-formula> represents the real category label of the <italic toggle="yes">i</italic>-th graph of source domain, and <inline-formula><mml:math id="mm85" overflow="scroll"><mml:mrow><mml:msup><mml:mover accent="true"><mml:msub><mml:mi>Y</mml:mi><mml:mi>i</mml:mi></mml:msub><mml:mo>^</mml:mo></mml:mover><mml:mi>s</mml:mi></mml:msup></mml:mrow></mml:math></inline-formula> represents the label prediction result of the <italic toggle="yes">i</italic>-th graph of source domain. We set two fully connected layers <inline-formula><mml:math id="mm86" overflow="scroll"><mml:mrow><mml:msub><mml:mi>f</mml:mi><mml:mi>C</mml:mi></mml:msub></mml:mrow></mml:math></inline-formula> as the label classifier for the source domain.</p>
+          <p>Finally, we obtain the overall objective function of model A<sup>2</sup>GCN:<disp-formula id="FD11-brainsci-12-01413"><label>(11)</label><mml:math id="mm88" display="block" overflow="scroll"><mml:mrow><mml:mrow><mml:mi mathvariant="script">L</mml:mi><mml:mo>=</mml:mo><mml:msub><mml:mi mathvariant="script">L</mml:mi><mml:mi mathvariant="script">C</mml:mi></mml:msub><mml:mo>+</mml:mo><mml:msub><mml:mi>γ</mml:mi><mml:mn>1</mml:mn></mml:msub><mml:msub><mml:mi mathvariant="script">L</mml:mi><mml:mi mathvariant="script">M</mml:mi></mml:msub><mml:mo>+</mml:mo><mml:msub><mml:mi>γ</mml:mi><mml:mn>2</mml:mn></mml:msub><mml:msub><mml:mi mathvariant="script">L</mml:mi><mml:mi mathvariant="script">A</mml:mi></mml:msub></mml:mrow></mml:mrow></mml:math></disp-formula>
+where <inline-formula><mml:math id="mm89" overflow="scroll"><mml:mrow><mml:msub><mml:mi>γ</mml:mi><mml:mn>1</mml:mn></mml:msub></mml:mrow></mml:math></inline-formula> and <inline-formula><mml:math id="mm90" overflow="scroll"><mml:mrow><mml:msub><mml:mi>γ</mml:mi><mml:mn>2</mml:mn></mml:msub></mml:mrow></mml:math></inline-formula> are hyperparameters used to balance the contribution weights of <inline-formula><mml:math id="mm91" overflow="scroll"><mml:mrow><mml:msub><mml:mi mathvariant="script">L</mml:mi><mml:mi mathvariant="script">C</mml:mi></mml:msub></mml:mrow></mml:math></inline-formula>, <inline-formula><mml:math id="mm92" overflow="scroll"><mml:mrow><mml:msub><mml:mi mathvariant="script">L</mml:mi><mml:mi mathvariant="script">M</mml:mi></mml:msub></mml:mrow></mml:math></inline-formula> and <inline-formula><mml:math id="mm93" overflow="scroll"><mml:mrow><mml:msub><mml:mi mathvariant="script">L</mml:mi><mml:mi mathvariant="script">A</mml:mi></mml:msub></mml:mrow></mml:math></inline-formula>.</p>
+        </sec>
+      </sec>
+      <sec id="sec3dot3-brainsci-12-01413">
+        <title>3.3. Implementation</title>
+        <p>The proposed A<sup>2</sup>GCN model is implemented based on PyTorch platform. For fair comparison, we will use the same epoch and learning rate for all involved domain adaptation learning tasks, that is, the epoch is set to 150, the learning rate is 0.0001, and Adam is used as the optimizer to optimize the model. This A<sup>2</sup>GCN is composed of two layers of the graph convolution layer and two layers of the fully connected layer, and the output feature dimensions are set as <inline-formula><mml:math id="mm97" overflow="scroll"><mml:mrow><mml:mrow><mml:mn>32</mml:mn><mml:mo>→</mml:mo><mml:mn>32</mml:mn><mml:mo>→</mml:mo><mml:mn>64</mml:mn><mml:mo>→</mml:mo><mml:mn>2</mml:mn></mml:mrow></mml:mrow></mml:math></inline-formula>. The convolution layer is nonlinearly activated using the ReLU function, and the dropout of the fully connected layer is 0.4. In order to extract more discriminative pathological features and establish a cross-domain classification model with good performance, we divided the model training into two stages. According to Equation (<xref rid="FD11-brainsci-12-01413" ref-type="disp-formula">11</xref>), we first pre-train the node representation learning and attention mechanism module for 50 epochs. <inline-formula><mml:math id="mm99" overflow="scroll"><mml:mrow><mml:msub><mml:mi mathvariant="script">L</mml:mi><mml:mi mathvariant="script">C</mml:mi></mml:msub></mml:mrow></mml:math></inline-formula> is set to 0. Both the hyperparameters <inline-formula><mml:math id="mm100" overflow="scroll"><mml:mrow><mml:msub><mml:mi>γ</mml:mi><mml:mn>1</mml:mn></mml:msub></mml:mrow></mml:math></inline-formula> and <inline-formula><mml:math id="mm101" overflow="scroll"><mml:mrow><mml:msub><mml:mi>γ</mml:mi><mml:mn>2</mml:mn></mml:msub></mml:mrow></mml:math></inline-formula> are set to 1. In the second stage, the above modules and category classifiers are further jointly trained for 100 epochs through Equation (<xref rid="FD11-brainsci-12-01413" ref-type="disp-formula">11</xref>), while both the balance parameters <inline-formula><mml:math id="mm102" overflow="scroll"><mml:mrow><mml:msub><mml:mi>γ</mml:mi><mml:mn>1</mml:mn></mml:msub></mml:mrow></mml:math></inline-formula> and <inline-formula><mml:math id="mm103" overflow="scroll"><mml:mrow><mml:msub><mml:mi>γ</mml:mi><mml:mn>2</mml:mn></mml:msub></mml:mrow></mml:math></inline-formula> are set to 0.5.</p>
+      </sec>
+    </sec>
+    <sec id="sec4-brainsci-12-01413">
+      <title>4. Experiments</title>
+      <sec id="sec4dot1-brainsci-12-01413">
+        <title>4.1. Data</title>
+        <p>To evaluate the effectiveness of our proposed approach, we use NYU, UM, and UCLA from the public Autism Brain Imaging Data Exchange (ABIDE) website (<uri xlink:href="http://fcon_1000.projects.nitrc.org/indi/abide/">http://fcon_1000.projects.nitrc.org/indi/abide/</uri> (accessed on 20 September 2022)) to validate our model. Meanwhile, the data from these three sites have also been used by Wang et al. [<xref rid="B40-brainsci-12-01413" ref-type="bibr">40</xref>]. Specifically, the NYU site included 164 subjects, including 71 with ASD and 93 with HC. The UM site included 113 subjects, 48 with ASD, and 65 with HC. The UCLA site included 74 subjects, 36 with ASD, and 38 with HC. We built the graph based on these three sites. The phenotypic information of the subjects involved in this study is shown in <xref rid="brainsci-12-01413-t002" ref-type="table">Table 2</xref>. The rs-fMRI data are from the Preprocessed Connectome Project initiative (<uri xlink:href="http://preprocessed-connectomes-project.org">http://preprocessed-connectomes-project.org</uri> (accessed on 20 September 2022)).</p>
+        <p>Rs-fMRI data collected at different sites will be preprocessed by a widely accepted pipeline (the Configurable Pipeline for the Analysis of Connectomes (C-PAC) [<xref rid="B41-brainsci-12-01413" ref-type="bibr">41</xref>]). The steps of preprocessing mainly include: (1) slice timing, head motion correction, (2) nuisance signal regression (ventricular, cerebrospinal fluid (CSF), white matter signal, etc.), (3) template spatial standardization of the Montreal Neurological Institute (MNI) [<xref rid="B42-brainsci-12-01413" ref-type="bibr">42</xref>], and (4) temporal filtering. Then, we use the classical AAL atlas to divide each subject’s brain into 116 functional regions and extract their average time series. Finally, each subject can generate a corresponding symmetric functional connectivity matrix based on the extracted signals, and the size of the matrix is <inline-formula><mml:math id="mm105" overflow="scroll"><mml:mrow><mml:mrow><mml:mn>116</mml:mn><mml:mo>×</mml:mo><mml:mn>116</mml:mn></mml:mrow></mml:mrow></mml:math></inline-formula> (according to Equation (<xref rid="FD2-brainsci-12-01413" ref-type="disp-formula">2</xref>)). The element of the matrix represents the PC between paired ROIs.</p>
+      </sec>
+      <sec id="sec4dot2-brainsci-12-01413">
+        <title>4.2. Experimental Settings</title>
+        <p>In this study, we will establish a classification model through four cross-site prediction tasks: NYU→UM, NYU→UCLA, UM→NYU, UM→UCLA. The dataset before the arrow is defined as the source domain, and the dataset after the arrow is set as the target domain. The source domain samples all contained complete category labels, while the target domain subjects had no label information. Considering the limited number of samples, we will use all source/target domain samples for training and testing all target domain subjects. In order to make the result more reasonable, we repeat the training process 10 times, and take the mean value and standard deviation of each algorithm as the final result.</p>
+        <p>In this study, we will set seven metrics to evaluate the performance of the model, including: Accuracy (ACC), Precision (Pre), Recall (Rec), F1-Score (F1), Balanced accuracy (BAC), Negative predictive value (NPV), and Area under curve (AUC). The greater the value of these indexes, the better the classification performance of the model. These metrics are calculated as follows: ACC = <inline-formula><mml:math id="mm106" overflow="scroll"><mml:mrow><mml:mfrac><mml:mrow><mml:mi>T</mml:mi><mml:mi>P</mml:mi><mml:mo>+</mml:mo><mml:mi>T</mml:mi><mml:mi>N</mml:mi></mml:mrow><mml:mrow><mml:mi>T</mml:mi><mml:mi>P</mml:mi><mml:mo>+</mml:mo><mml:mi>F</mml:mi><mml:mi>N</mml:mi><mml:mo>+</mml:mo><mml:mi>F</mml:mi><mml:mi>P</mml:mi><mml:mo>+</mml:mo><mml:mi>T</mml:mi><mml:mi>N</mml:mi></mml:mrow></mml:mfrac></mml:mrow></mml:math></inline-formula>, Pre = <inline-formula><mml:math id="mm107" overflow="scroll"><mml:mrow><mml:mfrac><mml:mrow><mml:mi>T</mml:mi><mml:mi>P</mml:mi></mml:mrow><mml:mrow><mml:mi>T</mml:mi><mml:mi>P</mml:mi><mml:mo>+</mml:mo><mml:mi>F</mml:mi><mml:mi>P</mml:mi></mml:mrow></mml:mfrac></mml:mrow></mml:math></inline-formula>, Rec = <inline-formula><mml:math id="mm108" overflow="scroll"><mml:mrow><mml:mfrac><mml:mrow><mml:mi>T</mml:mi><mml:mi>P</mml:mi></mml:mrow><mml:mrow><mml:mi>T</mml:mi><mml:mi>P</mml:mi><mml:mo>+</mml:mo><mml:mi>F</mml:mi><mml:mi>N</mml:mi></mml:mrow></mml:mfrac></mml:mrow></mml:math></inline-formula>, NPV = <inline-formula><mml:math id="mm109" overflow="scroll"><mml:mrow><mml:mfrac><mml:mrow><mml:mi>T</mml:mi><mml:mi>N</mml:mi></mml:mrow><mml:mrow><mml:mi>T</mml:mi><mml:mi>N</mml:mi><mml:mo>+</mml:mo><mml:mi>F</mml:mi><mml:mi>N</mml:mi></mml:mrow></mml:mfrac></mml:mrow></mml:math></inline-formula>, BAC = <inline-formula><mml:math id="mm110" overflow="scroll"><mml:mrow><mml:mfrac><mml:mrow><mml:mi>T</mml:mi><mml:mi>P</mml:mi></mml:mrow><mml:mrow><mml:mn>2</mml:mn><mml:mo>(</mml:mo><mml:mi>T</mml:mi><mml:mi>P</mml:mi><mml:mo>+</mml:mo><mml:mi>F</mml:mi><mml:mi>N</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mfrac></mml:mrow></mml:math></inline-formula>+<inline-formula><mml:math id="mm111" overflow="scroll"><mml:mrow><mml:mfrac><mml:mrow><mml:mi>T</mml:mi><mml:mi>N</mml:mi></mml:mrow><mml:mrow><mml:mn>2</mml:mn><mml:mo>(</mml:mo><mml:mi>T</mml:mi><mml:mi>N</mml:mi><mml:mo>+</mml:mo><mml:mi>F</mml:mi><mml:mi>P</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mfrac></mml:mrow></mml:math></inline-formula>, F1 = <inline-formula><mml:math id="mm112" overflow="scroll"><mml:mrow><mml:mfrac><mml:mrow><mml:mn>2</mml:mn><mml:mi>P</mml:mi><mml:mi>r</mml:mi><mml:mi>e</mml:mi><mml:mo>×</mml:mo><mml:mi>R</mml:mi><mml:mi>e</mml:mi><mml:mi>c</mml:mi></mml:mrow><mml:mrow><mml:mi>P</mml:mi><mml:mi>r</mml:mi><mml:mi>e</mml:mi><mml:mo>+</mml:mo><mml:mi>R</mml:mi><mml:mi>e</mml:mi><mml:mi>c</mml:mi></mml:mrow></mml:mfrac></mml:mrow></mml:math></inline-formula>. The <italic toggle="yes">TN</italic>, <italic toggle="yes">TP</italic>, <italic toggle="yes">FN</italic>, and <italic toggle="yes">FP</italic> represent True Negative, True Positive, False Negative, and False Positive, respectively.</p>
+      </sec>
+      <sec id="sec4dot3-brainsci-12-01413">
+        <title>4.3. Competing Methods</title>
+        <p>In this work, we compare the proposed A<sup>2</sup>GCN with five single-domain models: (1) Degree centrality (<bold>DC</bold>), (2) Feature fusion using betweenness centrality and degree centrality (<bold>BD</bold>), (3) Feature fusion using betweenness centrality, degree centrality, and closeness centrality (<bold>BDC</bold>), (4) Deep neural networks (<bold>DNN</bold>), and (5) Graph convolutional networks (<bold>GCN</bold>). At the same time, we compare A<sup>2</sup>GCN with three state-of-the-art domain adaptation methods: (1) Cross-domain model based on multi-layer perceptron (<bold>DNNC</bold>), (2) Maximum Mean Discrepancy (<bold>MMD</bold>), and (3) Domain Adversarial Neural Network (<bold>DANN</bold>). More details of these competing methods are introduced below.</p>
+        <list list-type="simple">
+          <list-item>
+            <label>(1)</label>
+            <p><bold>DC</bold>: This method measures the degree of nodes in the FCNs as the features of subjects. Specifically, according to Equation (<xref rid="FD2-brainsci-12-01413" ref-type="disp-formula">2</xref>), for each subject, we can generate FCN of the size of 116 × 116, where each element in FCN is the correlation coefficient between node pairs calculated by PC. First, the degree centrality (DC) indexes of each node in the FCN are calculated. Then, the model DC takes the 116 × 1-dimensional feature vector representation obtained by computing DC for each subject as the input of the SVM classifier.</p>
+          </list-item>
+          <list-item>
+            <label>(2)</label>
+            <p><bold>BD</bold>: This method combines the betweenness centrality (BC) and DC of nodes as the features of subjects. Based on Equation (<xref rid="FD2-brainsci-12-01413" ref-type="disp-formula">2</xref>), the FCN of each subject is obtained, and then the BC and DC of nodes are respectively calculated. The BC and DC are concatenated into 232 × 1-dimensional vectors according to rows, used as the input of SVM.</p>
+          </list-item>
+          <list-item>
+            <label>(3)</label>
+            <p><bold>BDC</bold>: To mitigate the lack of information or noise pollution caused by manually defined features, we further calculate the BC, DC, and closeness centrality (CC) of the node of each subject FCN. The model BDC is further sequentially splicing the DC, BC, and CC values of each subject to form a feature representation of 348 × 1-dimensional as the input of the SVM classifier.</p>
+          </list-item>
+          <list-item>
+            <label>(4)</label>
+            <p><bold>DNN</bold>: According to the classical practice, we take the FCN of the subject in the upper triangle and pull it into a vector. In order to prevent dimensional disaster, the principal component analysis (PCA) algorithm limits the dimension of variables to 64 dimensions. Then, the features after dimensionality reduction are used as the input of model DNN. The model DNN is composed of two fully connected layers, and the output dimension is: <inline-formula><mml:math id="mm119" overflow="scroll"><mml:mrow><mml:mrow><mml:mn>16</mml:mn><mml:mo>→</mml:mo><mml:mn>2</mml:mn></mml:mrow></mml:mrow></mml:math></inline-formula>.</p>
+          </list-item>
+          <list-item>
+            <label>(5)</label>
+            <p><bold>GCN</bold>: GCN can combine the topological structure of the graph to deeply mine the potential information of nodes. Our A<sup>2</sup>GCN is inspired by GCN. Obviously, if we set <inline-formula><mml:math id="mm121" overflow="scroll"><mml:mrow><mml:mrow><mml:msub><mml:mi>γ</mml:mi><mml:mn>1</mml:mn></mml:msub><mml:mo>=</mml:mo><mml:mn>0</mml:mn><mml:mo>,</mml:mo><mml:msub><mml:mi>γ</mml:mi><mml:mn>2</mml:mn></mml:msub><mml:mo>=</mml:mo><mml:mn>0</mml:mn></mml:mrow></mml:mrow></mml:math></inline-formula>, A<sup>2</sup>GCN will crash to GCN. Similar to our proposed A<sup>2</sup>GCN method, first, we construct the source and target graphs, respectively, based on the FCNs of the subjects. Then, based on the source graphs, the cross entropy loss is optimized to train the classification model with good performance. Finally, the GCN model is applied directly to the target graphs to make prediction. The model GCN consists of two convolutional layers and two fully connected layers, and the output dimension is: <inline-formula><mml:math id="mm124" overflow="scroll"><mml:mrow><mml:mrow><mml:mn>32</mml:mn><mml:mo>→</mml:mo><mml:mn>32</mml:mn><mml:mo>→</mml:mo><mml:mn>64</mml:mn><mml:mo>→</mml:mo><mml:mn>2</mml:mn></mml:mrow></mml:mrow></mml:math></inline-formula>.</p>
+          </list-item>
+          <list-item>
+            <label>(6)</label>
+            <p><bold>DNNC</bold>: We transform our A<sup>2</sup>GCN model feature extractor GCN into multi-layer perceptron (MLP) to construct a simple cross-domain classification model. The model inputs are the same as the settings for the DNN model above. The output dimension of the network is set to <inline-formula><mml:math id="mm126" overflow="scroll"><mml:mrow><mml:mrow><mml:mn>32</mml:mn><mml:mo>→</mml:mo><mml:mn>2</mml:mn></mml:mrow></mml:mrow></mml:math></inline-formula>. At the same time, add CORAL loss minimization domain offset. The covariance between the sample features of the source domain and the target domain is defined as CORAL loss. Meanwhile, CORAL loss can minimize the domain offset without additional parameters. This method is basic and efficient, and it is also one of the losses used in our A<sup>2</sup>GCN.</p>
+          </list-item>
+          <list-item>
+            <label>(7)</label>
+            <p><bold>MMD</bold>: The Maximum Mean Discrepancy (MMD) method aims to reduce differences of the domain distribution by MMD. This deep transfer model uses the GCN as a feature extractor. MAE loss and CORAL loss in our model are replaced by the MMD loss [<xref rid="B9-brainsci-12-01413" ref-type="bibr">9</xref>]. Then, the two-layer MLP is used as a category classifier for MMD. The number of neurons in the output layer of convolution layer and fully connected layer is consistent with our A<sup>2</sup>GCN method. The reference code (<uri xlink:href="https://github.com/jindongwang/transferlearning">https://github.com/jindongwang/transferlearning</uri> (accessed on 20 September 2022)) is publicly available.</p>
+          </list-item>
+          <list-item>
+            <label>(8)</label>
+            <p><bold>DANN</bold>: The Domain Adversarial Neural Network (DANN) [<xref rid="B43-brainsci-12-01413" ref-type="bibr">43</xref>] is a domain adaptive method based on confrontational learning. The DANN method uses a gradient inversion layer (GRL) as <inline-formula><mml:math id="mm129" overflow="scroll"><mml:mrow><mml:mrow><mml:msub><mml:mi>Q</mml:mi><mml:mi>λ</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>x</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mi>x</mml:mi></mml:mrow></mml:mrow></mml:math></inline-formula> with a reversal gradient <inline-formula><mml:math id="mm130" overflow="scroll"><mml:mrow><mml:mrow><mml:mfrac><mml:mrow><mml:mo>∂</mml:mo><mml:msub><mml:mi>Q</mml:mi><mml:mi>λ</mml:mi></mml:msub></mml:mrow><mml:mrow><mml:mo>∂</mml:mo><mml:mi>x</mml:mi></mml:mrow></mml:mfrac><mml:mo>=</mml:mo><mml:mo>−</mml:mo><mml:mi>λ</mml:mi><mml:mi>I</mml:mi></mml:mrow></mml:mrow></mml:math></inline-formula> to train a domain classifier. The adaptation parameter <inline-formula><mml:math id="mm131" overflow="scroll"><mml:mrow><mml:mi>λ</mml:mi></mml:mrow></mml:math></inline-formula> of GRL refers to [<xref rid="B43-brainsci-12-01413" ref-type="bibr">43</xref>,<xref rid="B44-brainsci-12-01413" ref-type="bibr">44</xref>]. Here, <italic toggle="yes">x</italic> represents the representation of the extracted graph. The two-layer fully connected layer is used as the domain classifier of DANN to establish the adversarial loss. The hidden layer dimension is set to <inline-formula><mml:math id="mm132" overflow="scroll"><mml:mrow><mml:mrow><mml:mn>64</mml:mn><mml:mo>→</mml:mo><mml:mn>2</mml:mn></mml:mrow></mml:mrow></mml:math></inline-formula>; the dropout is 0.4, and ReLU is responsible for nonlinear activation. Then, the two-layer MLP is used as a category classifier for DANN. Dimensions of the output layer of the convolution layer or fully connected layer are consistent with A<sup>2</sup>GCN.</p>
+          </list-item>
+        </list>
+        <p>Note that the three conventional machine learning methods (i.e., DC, BD, and BDC) and two deep learning methods (i.e., DNN and GCN) are single-domain approaches, while the three deep learning methods (i.e., DNNC, MMD, and DANN) are state-of-the-art domain adaptation methods for cross-domain classification.</p>
+      </sec>
+      <sec sec-type="results" id="sec4dot4-brainsci-12-01413">
+        <title>4.4. Results</title>
+        <p>The quantitative results of the A<sup>2</sup>GCN and several competing methods in ASD vs. HC classification will be reported in <xref rid="brainsci-12-01413-t003" ref-type="table">Table 3</xref>. We observe the following interesting findings.</p>
+        <list list-type="simple">
+          <list-item>
+            <label>(1)</label>
+            <p>The four cross-domain classification models (i.e., DNNC, MMD, DANN, and A<sup>2</sup>GCN) achieved better results in most cases compared with several single-domain classification models (i.e., DC, BDC, DNN, and GCN). This means that the introduction of domain adaptation learning module helps to enhance the classification performance of the model, which may benefit from the transferable feature representation across sites learned by the model.</p>
+          </list-item>
+          <list-item>
+            <label>(2)</label>
+            <p>Graph-based (i.e., GCN, MMD, DANN, and A<sup>2</sup>GCN)) methods usually produce better classification results than traditional classical methods based on manually defined node features (i.e., DC, BD, and BDC) and network embeddings (i.e., DNN and DNNC). Because these traditional methods only consider the characteristics of nodes, however, those methods that use GCN as feature extractors can update and aggregate the features of nodes on the graph end-to-end with the help of the underlying topology information of FCNs, in order to learn more discriminative node representation, which may be more beneficial for ASD auxiliary diagnosis.</p>
+          </list-item>
+          <list-item>
+            <label>(3)</label>
+            <p>The experimental results of the proposed A<sup>2</sup>GCN consistently outperform all competing methods. This indicates that A<sup>2</sup>GCN can achieve effective domain adaptation and reduce data distribution differences, thus improving the robustness of the model.</p>
+          </list-item>
+          <list-item>
+            <label>(4)</label>
+            <p>Compared with three advanced cross-domain methods (i.e., DNNC, MMD, and DANN), our proposed A<sup>2</sup>GCN method has a competitive advantage in various domain adaptation tasks. This may be because our method adds node attention mechanism modules, which can make intelligent use of different contributions of brain regions. Meanwhile, our method adopts MAE loss and CORAL loss to align different domains step by step. These operations can partially alleviate the negative effects of noisy areas.</p>
+          </list-item>
+        </list>
+      </sec>
+      <sec id="sec4dot5-brainsci-12-01413">
+        <title>4.5. Ablation Study</title>
+        <p>The proposed A<sup>2</sup>GCN contains two key components, namely, node attention mechanism module and domain adaptation module. To evaluate the contribution of these two parts, we compare the proposed A<sup>2</sup>GCN with its three variants:<list list-type="simple"><list-item><label>(1)</label><p><bold>A<sup>2</sup>GCN_A</bold>: Similar to the A<sup>2</sup>GCN method, firstly, the source graph and the target graph are respectively constructed based on the subject’s FCNs. Then, the node representation on the source graph is learned based on GCN. At the same time, the node attention mechanism model mentioned in <xref rid="sec3dot2dot2-brainsci-12-01413" ref-type="sec">Section 3.2.2</xref> is added to set different weight values for different nodes/brain regions of the source graph. Then, cross entropy is used to calculate the classification loss. Finally, the model trained in the source domain is applied to the prediction of the target domain graph.</p></list-item><list-item><label>(2)</label><p><bold>A<sup>2</sup>GCN_M</bold>: First, based on the subject’s FCNs, the model constructs the source graph and the target graph respectively. Then, according to the node representation learning module in <xref rid="sec3dot2dot1-brainsci-12-01413" ref-type="sec">Section 3.2.1</xref>, the node features on the source graph and the target graph are simultaneously learned based on GCN. Then, the node attention mechanism module in <xref rid="sec3dot2dot2-brainsci-12-01413" ref-type="sec">Section 3.2.2</xref> is added, and the weighted node features are used to calculate the MAE loss between domains (domain adaptation module). Finally, the cross entropy is used to calculate the classification loss.</p></list-item><list-item><label>(3)</label><p><bold>A<sup>2</sup>GCN_C</bold>: First, the model uses FCNs to construct source and target graphs. Like A<sup>2</sup>GCN, this model learns the node features of different domains based on GCN according to the node representation learning module in <xref rid="sec3dot2dot1-brainsci-12-01413" ref-type="sec">Section 3.2.1</xref>. Then, after the readout operation, the CORAL loss (domain adaptation module) between domains is calculated based on the extracted graph representation vector. The cross entropy is used to calculate the classification loss of the source domain.</p></list-item></list></p>
+        <p>In <xref rid="brainsci-12-01413-f003" ref-type="fig">Figure 3</xref>, we report the corresponding ACC and AUC values. As shown in <xref rid="brainsci-12-01413-f003" ref-type="fig">Figure 3</xref>, we can find that the performance of three variants A<sup>2</sup>GCN_A (without domain adaptation module), A<sup>2</sup>GCN_M (with attention mechanism module and part of domain adaptation module), and A<sup>2</sup>GCN_C (without domain attention mechanism module) are significantly degraded in the corresponding transfer learning task. In particular, A<sup>2</sup>GCN_A achieved the worst performance in most cases. The underlying reason could be that attention mechanisms play a role in extracting more discriminative features. In addition, it also shows that using MAE loss and CORAL loss to align the learned features step by step during training can reduce the data information loss caused by readout-related pooling operations, thus significantly improving the robustness and transmission performance of A<sup>2</sup>GCN. More results on the influence of parameters and model pre-training can be found in <xref rid="app1-brainsci-12-01413" ref-type="app">Supplementary Materials</xref>.</p>
+      </sec>
+    </sec>
+    <sec sec-type="discussion" id="sec5-brainsci-12-01413">
+      <title>5. Discussion</title>
+      <sec id="sec5dot1-brainsci-12-01413">
+        <title>5.1. Visualization of Data Distribution</title>
+        <p>To visually demonstrate the features learned through the proposed A<sup>2</sup>GCN, we use the t-SNE [<xref rid="B45-brainsci-12-01413" ref-type="bibr">45</xref>] tool to visualize the data distribution of different imaging sites before and after domain adaptation. In <xref rid="brainsci-12-01413-f004" ref-type="fig">Figure 4</xref>, the blue and red dots represent the source and target domains, respectively. To visualize the regional heterogeneity before domain adaptation, we flattened the upper triangle of the FCN matrix for each sample of each site. The vector representation is obtained, which is further reduced to 64 dimensions by the PCA method as the original representation of the sample. From <xref rid="brainsci-12-01413-f004" ref-type="fig">Figure 4</xref>a, we can observe that there is a significant domain shift between the distribution of the source domain and the target domain. We use the t-SNE algorithm to visualize feature distribution of the source and target domains after the feature extractor GCN in different cross-site classification tasks (through A<sup>2</sup>GCN), with results reported in <xref rid="brainsci-12-01413-f004" ref-type="fig">Figure 4</xref>b. In <xref rid="brainsci-12-01413-f004" ref-type="fig">Figure 4</xref>b, red and blue dots are closely clustered together. This means that the distributions of the node representations of the two domains learned by our method are close, and the domain heterogeneity has been substantially reduced. At the same time, we calculated the Frobenius norm of the covariance (CF) between samples in the source domain and the target domain, which is used to measure the difference of data distribution between different sites. It is observed that the CF between different sites is significantly reduced after domain adaptation. These results show that A<sup>2</sup>GCN can effectively extract transferable features and reduce domain shift.</p>
+      </sec>
+      <sec id="sec5dot2-brainsci-12-01413">
+        <title>5.2. Most Informative Brain Regions</title>
+        <p>One of the main focuses of this work is to use interpretable deep learning algorithms to discover the underlying differences between ASD and HC subjects. An interesting question is to identify the most informative brain regions for ASD detection. In the task of “NYU→UM”, we randomly select 10 subjects from the UM site. We then extract the features of these subjects after the attention mechanism module, select 19 brain regions with strong correlation, and visualize them using BrainNet [<xref rid="B46-brainsci-12-01413" ref-type="bibr">46</xref>] tool, with results shown in <xref rid="brainsci-12-01413-f005" ref-type="fig">Figure 5</xref>. In <xref rid="brainsci-12-01413-f005" ref-type="fig">Figure 5</xref>, the color of brain regions is randomly assigned, and the stick-like connections between brain regions indicate strong FC between them. For ASD vs. HC classification, we find that the most informative brain regions include the hippocampus, parahippocampal gyrus, putamen lentiform, and the vicinity of thalamus, which is also consistent with previous studies [<xref rid="B47-brainsci-12-01413" ref-type="bibr">47</xref>,<xref rid="B48-brainsci-12-01413" ref-type="bibr">48</xref>]. It validates the potential application value of our model in the discovery of rs-fMRI biomarkers for ASD identification, thus helping to improve the interpretability of learning algorithms in automated brain disease detection.</p>
+      </sec>
+      <sec id="sec5dot3-brainsci-12-01413">
+        <title>5.3. Limitations and Future Work</title>
+        <p>Although our proposed A<sup>2</sup>GCN method has achieved good results in the prediction of ASD, there is still challenging work to be considered in the future. <italic toggle="yes">First</italic>, in our current work, only knowledge transfer between a single source domain and a target domain is considered. It is also interesting to explore the shared features of multiple source domains to reduce the heterogeneity of data and thus improve the learning performance of the target domain. <italic toggle="yes">Second</italic>, the size of the training sample is relatively small. We hope to add unlabeled samples from other public datasets to assist in pre-training the proposed network in a semi-supervised learning manner, aiming to further improve model generalization capability [<xref rid="B49-brainsci-12-01413" ref-type="bibr">49</xref>].</p>
+      </sec>
+    </sec>
+    <sec sec-type="conclusions" id="sec6-brainsci-12-01413">
+      <title>6. Conclusions</title>
+      <p>In this paper, we construct a multi-site unsupervised rs-fMRI domain adaptation framework (A<sup>2</sup>GCN) with an attention mechanism for ASD diagnosis. The framework automatically extracts rs-fMRI features from brain FCNs with the help of the GCN model. The attention mechanism is used to explore the contribution of different brain regions to the automatic detection of brain diseases and explore the interpretable features of brain regions. In addition, our method explores mean absolute error and covariance-based constraints to alleviate data distribution differences among imaging sites. We evaluate our proposed method using rs-fMRI data from a real multi-site dataset (ABIDE). Experimental results show that the A<sup>2</sup>GCN has significant advantages over several advanced methods.</p>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <title>Acknowledgments</title>
+      <p>Y.C, H.R., and L.Q. were partly supported by the National Natural Science Foundation of China (Nos. 62176112, 61976110 and 11931008), the Taishan Scholar Program of Shandong Province, and the Natural Science Foundation of Shandong Province (No. ZR202102270451).</p>
+    </ack>
+    <fn-group>
+      <fn>
+        <p><bold>Publisher’s Note:</bold> MDPI stays neutral with regard to jurisdictional claims in published maps and institutional affiliations.</p>
+      </fn>
+    </fn-group>
+    <app-group>
+      <app id="app1-brainsci-12-01413">
+        <title>Supplementary Materials</title>
+        <p>The following supporting information can be downloaded at: <uri xlink:href="https://www.mdpi.com/article/10.3390/brainsci12101413/s1">https://www.mdpi.com/article/10.3390/brainsci12101413/s1</uri>, Figure S1: Classification performance by the proposed model based on different parametric values. The abscissa represents the ratio of MAE loss to CORAL loss (<italic toggle="yes">γ</italic><sub>1</sub>:<italic toggle="yes">γ</italic><sub>2</sub>) during model training; Figure S2: Impact of pre-training times on model classification results. The abscissa represents the epoch values set during the pre-training process.</p>
+        <supplementary-material id="brainsci-12-01413-s001" position="float" content-type="local-data">
+          <media xlink:href="brainsci-12-01413-s001.zip">
+            <caption>
+              <p>Click here for additional data file.</p>
+            </caption>
+          </media>
+        </supplementary-material>
+      </app>
+    </app-group>
+    <notes>
+      <title>Author Contributions</title>
+      <p>Conceptualization, M.L.; methodology, Y.C.; software, Y.C.; investigation, Y.C.; writing—original draft preparation, Y.C.; writing—review and editing, L.Q. and H.R.; supervision, M.L.; project administration, M.L. and L.Q. All authors have read and agreed to the published version of the manuscript.</p>
+    </notes>
+    <notes>
+      <title>Institutional Review Board Statement</title>
+      <p>Not applicable.</p>
+    </notes>
+    <notes>
+      <title>Informed Consent Statement</title>
+      <p>Not applicable.</p>
+    </notes>
+    <notes notes-type="data-availability">
+      <title>Data Availability Statement</title>
+      <p>All data used in this study are available from the corresponding author on reasonable request.</p>
+    </notes>
+    <notes notes-type="COI-statement">
+      <title>Conflicts of Interest</title>
+      <p>The authors declare no conflict of interest.</p>
+    </notes>
+    <ref-list>
+      <title>References</title>
+      <ref id="B1-brainsci-12-01413">
+        <label>1.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Buckner</surname><given-names>R.L.</given-names></name>
+<name><surname>Krienen</surname><given-names>F.M.</given-names></name>
+<name><surname>Yeo</surname><given-names>B.T.</given-names></name>
+</person-group>
+          <article-title>Opportunities and limitations of intrinsic functional connectivity MRI</article-title>
+          <source>Nat. Neurosci.</source>
+          <year>2013</year>
+          <volume>16</volume>
+          <fpage>832</fpage>
+          <lpage>837</lpage>
+          <pub-id pub-id-type="doi">10.1038/nn.3423</pub-id>
+          <pub-id pub-id-type="pmid">23799476</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B2-brainsci-12-01413">
+        <label>2.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>McCarty</surname><given-names>P.J.</given-names></name>
+<name><surname>Pines</surname><given-names>A.R.</given-names></name>
+<name><surname>Sussman</surname><given-names>B.L.</given-names></name>
+<name><surname>Wyckoff</surname><given-names>S.N.</given-names></name>
+<name><surname>Jensen</surname><given-names>A.</given-names></name>
+<name><surname>Bunch</surname><given-names>R.</given-names></name>
+<name><surname>Boerwinkle</surname><given-names>V.L.</given-names></name>
+<name><surname>Frye</surname><given-names>R.E.</given-names></name>
+</person-group>
+          <article-title>Resting State Functional Magnetic Resonance Imaging Elucidates Neurotransmitter Deficiency in Autism Spectrum Disorder</article-title>
+          <source>J. Pers. Med.</source>
+          <year>2021</year>
+          <volume>11</volume>
+          <elocation-id>969</elocation-id>
+          <pub-id pub-id-type="doi">10.3390/jpm11100969</pub-id>
+          <pub-id pub-id-type="pmid">34683111</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B3-brainsci-12-01413">
+        <label>3.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Subah</surname><given-names>F.Z.</given-names></name>
+<name><surname>Deb</surname><given-names>K.</given-names></name>
+<name><surname>Dhar</surname><given-names>P.K.</given-names></name>
+<name><surname>Koshiba</surname><given-names>T.</given-names></name>
+</person-group>
+          <article-title>A deep learning approach to predict Autism Spectrum Disorder using multisite resting-state fMRI</article-title>
+          <source>Appl. Sci.</source>
+          <year>2021</year>
+          <volume>11</volume>
+          <elocation-id>3636</elocation-id>
+          <pub-id pub-id-type="doi">10.3390/app11083636</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B4-brainsci-12-01413">
+        <label>4.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Walsh</surname><given-names>M.J.</given-names></name>
+<name><surname>Wallace</surname><given-names>G.L.</given-names></name>
+<name><surname>Gallegos</surname><given-names>S.M.</given-names></name>
+<name><surname>Braden</surname><given-names>B.B.</given-names></name>
+</person-group>
+          <article-title>Brain-based sex differences in autism spectrum disorder across the lifespan: A systematic review of structural MRI, fMRI, and DTI findings</article-title>
+          <source>NeuroImage Clin.</source>
+          <year>2021</year>
+          <volume>31</volume>
+          <fpage>102719</fpage>
+          <pub-id pub-id-type="doi">10.1016/j.nicl.2021.102719</pub-id>
+          <pub-id pub-id-type="pmid">34153690</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B5-brainsci-12-01413">
+        <label>5.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+<name><surname>Shrivastava</surname><given-names>S.</given-names></name>
+<name><surname>Mishra</surname><given-names>U.</given-names></name>
+<name><surname>Singh</surname><given-names>N.</given-names></name>
+<name><surname>Chandra</surname><given-names>A.</given-names></name>
+<name><surname>Verma</surname><given-names>S.</given-names></name>
+</person-group>
+          <article-title>Control or autism-classification using convolutional neural networks on functional MRI</article-title>
+          <source>Proceedings of the 2020 11th International Conference on Computing, Communication and Networking Technologies (ICCCNT)</source>
+          <conf-loc>Kharagpur, India</conf-loc>
+          <conf-date>1–3 July 2020</conf-date>
+          <fpage>1</fpage>
+          <lpage>6</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B6-brainsci-12-01413">
+        <label>6.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Niu</surname><given-names>K.</given-names></name>
+<name><surname>Guo</surname><given-names>J.</given-names></name>
+<name><surname>Pan</surname><given-names>Y.</given-names></name>
+<name><surname>Gao</surname><given-names>X.</given-names></name>
+<name><surname>Peng</surname><given-names>X.</given-names></name>
+<name><surname>Li</surname><given-names>N.</given-names></name>
+<name><surname>Li</surname><given-names>H.</given-names></name>
+</person-group>
+          <article-title>Multichannel deep attention neural networks for the classification of Autism Spectrum Disorder using neuroimaging and personal characteristic data</article-title>
+          <source>Complexity</source>
+          <year>2020</year>
+          <volume>2020</volume>
+          <pub-id pub-id-type="doi">10.1155/2020/1357853</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B7-brainsci-12-01413">
+        <label>7.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Yamashita</surname><given-names>A.</given-names></name>
+<name><surname>Yahata</surname><given-names>N.</given-names></name>
+<name><surname>Itahashi</surname><given-names>T.</given-names></name>
+<name><surname>Lisi</surname><given-names>G.</given-names></name>
+<name><surname>Yamada</surname><given-names>T.</given-names></name>
+<name><surname>Ichikawa</surname><given-names>N.</given-names></name>
+<name><surname>Takamura</surname><given-names>M.</given-names></name>
+<name><surname>Yoshihara</surname><given-names>Y.</given-names></name>
+<name><surname>Kunimatsu</surname><given-names>A.</given-names></name>
+<name><surname>Okada</surname><given-names>N.</given-names></name>
+<etal/>
+</person-group>
+          <article-title>Harmonization of resting-state functional MRI data across multiple imaging sites via the separation of site differences into sampling bias and measurement bias</article-title>
+          <source>PLoS Biol.</source>
+          <year>2019</year>
+          <volume>17</volume>
+          <elocation-id>e3000042</elocation-id>
+          <pub-id pub-id-type="doi">10.1371/journal.pbio.3000042</pub-id>
+          <pub-id pub-id-type="pmid">30998673</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B8-brainsci-12-01413">
+        <label>8.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+<name><surname>Lee</surname><given-names>J.</given-names></name>
+<name><surname>Kang</surname><given-names>E.</given-names></name>
+<name><surname>Jeon</surname><given-names>E.</given-names></name>
+<name><surname>Suk</surname><given-names>H.I.</given-names></name>
+</person-group>
+          <article-title>Meta-modulation Network for Domain Generalization in Multi-site fMRI Classification</article-title>
+          <source>Proceedings of the International Conference on Medical Image Computing and Computer-Assisted Intervention</source>
+          <conf-loc>Virtual Event</conf-loc>
+          <conf-date>27 September–1 October 2021</conf-date>
+          <publisher-name>Springer</publisher-name>
+          <publisher-loc>Berlin, Germany</publisher-loc>
+          <year>2021</year>
+          <fpage>500</fpage>
+          <lpage>509</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B9-brainsci-12-01413">
+        <label>9.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+<name><surname>Zhang</surname><given-names>Y.</given-names></name>
+<name><surname>Liu</surname><given-names>T.</given-names></name>
+<name><surname>Long</surname><given-names>M.</given-names></name>
+<name><surname>Jordan</surname><given-names>M.</given-names></name>
+</person-group>
+          <article-title>Bridging theory and algorithm for domain adaptation</article-title>
+          <source>Proceedings of the International Conference on Machine Learning (PMLR)</source>
+          <conf-loc>Long Beach, CA, USA</conf-loc>
+          <conf-date>9–15 June 2019</conf-date>
+          <fpage>7404</fpage>
+          <lpage>7413</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B10-brainsci-12-01413">
+        <label>10.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Farahani</surname><given-names>A.</given-names></name>
+<name><surname>Voghoei</surname><given-names>S.</given-names></name>
+<name><surname>Rasheed</surname><given-names>K.</given-names></name>
+<name><surname>Arabnia</surname><given-names>H.R.</given-names></name>
+</person-group>
+          <article-title>A brief review of domain adaptation</article-title>
+          <source>Adv. Data Sci. Inf. Eng.</source>
+          <year>2021</year>
+          <fpage>877</fpage>
+          <lpage>894</lpage>
+          <pub-id pub-id-type="doi">10.1007/978-3-030-71704-9_65</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B11-brainsci-12-01413">
+        <label>11.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+<name><surname>You</surname><given-names>K.</given-names></name>
+<name><surname>Long</surname><given-names>M.</given-names></name>
+<name><surname>Cao</surname><given-names>Z.</given-names></name>
+<name><surname>Wang</surname><given-names>J.</given-names></name>
+<name><surname>Jordan</surname><given-names>M.I.</given-names></name>
+</person-group>
+          <article-title>Universal domain adaptation</article-title>
+          <source>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition</source>
+          <conf-loc>Long Beach, CA, USA</conf-loc>
+          <conf-date>15–20 June 2019</conf-date>
+          <fpage>2720</fpage>
+          <lpage>2729</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B12-brainsci-12-01413">
+        <label>12.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Jiang</surname><given-names>X.</given-names></name>
+<name><surname>Zhang</surname><given-names>L.</given-names></name>
+<name><surname>Qiao</surname><given-names>L.</given-names></name>
+<name><surname>Shen</surname><given-names>D.</given-names></name>
+</person-group>
+          <article-title>Estimating functional connectivity networks via low-rank tensor approximation with applications to MCI identification</article-title>
+          <source>IEEE Trans. Biomed. Eng.</source>
+          <year>2019</year>
+          <volume>67</volume>
+          <fpage>1912</fpage>
+          <lpage>1920</lpage>
+          <pub-id pub-id-type="doi">10.1109/TBME.2019.2950712</pub-id>
+          <pub-id pub-id-type="pmid">31675312</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B13-brainsci-12-01413">
+        <label>13.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+<name><surname>Xing</surname><given-names>X.</given-names></name>
+<name><surname>Li</surname><given-names>Q.</given-names></name>
+<name><surname>Wei</surname><given-names>H.</given-names></name>
+<name><surname>Zhang</surname><given-names>M.</given-names></name>
+<name><surname>Zhan</surname><given-names>Y.</given-names></name>
+<name><surname>Zhou</surname><given-names>X.S.</given-names></name>
+<name><surname>Xue</surname><given-names>Z.</given-names></name>
+<name><surname>Shi</surname><given-names>F.</given-names></name>
+</person-group>
+          <article-title>Dynamic spectral graph convolution networks with assistant task training for early MCI diagnosis</article-title>
+          <source>Proceedings of the International Conference on Medical Image Computing and Computer-Assisted Intervention</source>
+          <conf-loc>Shenzhen, China</conf-loc>
+          <conf-date>13–17 October 2019</conf-date>
+          <publisher-name>Springer</publisher-name>
+          <publisher-loc>Berlin, Germany</publisher-loc>
+          <year>2019</year>
+          <fpage>639</fpage>
+          <lpage>646</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B14-brainsci-12-01413">
+        <label>14.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Jie</surname><given-names>B.</given-names></name>
+<name><surname>Wee</surname><given-names>C.Y.</given-names></name>
+<name><surname>Shen</surname><given-names>D.</given-names></name>
+<name><surname>Zhang</surname><given-names>D.</given-names></name>
+</person-group>
+          <article-title>Hyper-connectivity of functional networks for brain disease diagnosis</article-title>
+          <source>Med. Image Anal.</source>
+          <year>2016</year>
+          <volume>32</volume>
+          <fpage>84</fpage>
+          <lpage>100</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.media.2016.03.003</pub-id>
+          <pub-id pub-id-type="pmid">27060621</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B15-brainsci-12-01413">
+        <label>15.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Zhang</surname><given-names>Y.</given-names></name>
+<name><surname>Jiang</surname><given-names>X.</given-names></name>
+<name><surname>Qiao</surname><given-names>L.</given-names></name>
+<name><surname>Liu</surname><given-names>M.</given-names></name>
+</person-group>
+          <article-title>Modularity-Guided Functional Brain Network Analysis for Early-Stage Dementia Identification</article-title>
+          <source>Front. Neurosci.</source>
+          <year>2021</year>
+          <volume>15</volume>
+          <fpage>956</fpage>
+          <pub-id pub-id-type="doi">10.3389/fnins.2021.720909</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B16-brainsci-12-01413">
+        <label>16.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Zhang</surname><given-names>D.</given-names></name>
+<name><surname>Huang</surname><given-names>J.</given-names></name>
+<name><surname>Jie</surname><given-names>B.</given-names></name>
+<name><surname>Du</surname><given-names>J.</given-names></name>
+<name><surname>Tu</surname><given-names>L.</given-names></name>
+<name><surname>Liu</surname><given-names>M.</given-names></name>
+</person-group>
+          <article-title>Ordinal pattern: A new descriptor for brain connectivity networks</article-title>
+          <source>IEEE Trans. Med. Imaging</source>
+          <year>2018</year>
+          <volume>37</volume>
+          <fpage>1711</fpage>
+          <lpage>1722</lpage>
+          <pub-id pub-id-type="doi">10.1109/TMI.2018.2798500</pub-id>
+          <pub-id pub-id-type="pmid">29969421</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B17-brainsci-12-01413">
+        <label>17.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+<name><surname>Niepert</surname><given-names>M.</given-names></name>
+<name><surname>Ahmed</surname><given-names>M.</given-names></name>
+<name><surname>Kutzkov</surname><given-names>K.</given-names></name>
+</person-group>
+          <article-title>Learning convolutional neural networks for graphs</article-title>
+          <source>Proceedings of the International Conference on Machine Learning (PMLR)</source>
+          <conf-loc>New York, NY, USA</conf-loc>
+          <conf-date>20–22 June 2016</conf-date>
+          <fpage>2014</fpage>
+          <lpage>2023</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B18-brainsci-12-01413">
+        <label>18.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Kipf</surname><given-names>T.N.</given-names></name>
+<name><surname>Welling</surname><given-names>M.</given-names></name>
+</person-group>
+          <article-title>Semi-supervised classification with graph convolutional networks</article-title>
+          <source>arXiv</source>
+          <year>2016</year>
+          <pub-id pub-id-type="arxiv">1609.02907</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B19-brainsci-12-01413">
+        <label>19.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+<name><surname>Anirudh</surname><given-names>R.</given-names></name>
+<name><surname>Thiagarajan</surname><given-names>J.J.</given-names></name>
+</person-group>
+          <article-title>Bootstrapping graph convolutional neural networks for Autism spectrum disorder classification</article-title>
+          <source>Proceedings of the ICASSP 2019-2019 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)</source>
+          <conf-loc>Brighton, UK</conf-loc>
+          <conf-date>12–17 May 2019</conf-date>
+          <fpage>3197</fpage>
+          <lpage>3201</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B20-brainsci-12-01413">
+        <label>20.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Cao</surname><given-names>M.</given-names></name>
+<name><surname>Yang</surname><given-names>M.</given-names></name>
+<name><surname>Qin</surname><given-names>C.</given-names></name>
+<name><surname>Zhu</surname><given-names>X.</given-names></name>
+<name><surname>Chen</surname><given-names>Y.</given-names></name>
+<name><surname>Wang</surname><given-names>J.</given-names></name>
+<name><surname>Liu</surname><given-names>T.</given-names></name>
+</person-group>
+          <article-title>Using DeepGCN to identify the Autism spectrum disorder from multi-site resting-state data</article-title>
+          <source>Biomed. Signal Process. Control</source>
+          <year>2021</year>
+          <volume>70</volume>
+          <fpage>103015</fpage>
+          <pub-id pub-id-type="doi">10.1016/j.bspc.2021.103015</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B21-brainsci-12-01413">
+        <label>21.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+<name><surname>Yu</surname><given-names>S.</given-names></name>
+<name><surname>Wang</surname><given-names>S.</given-names></name>
+<name><surname>Xiao</surname><given-names>X.</given-names></name>
+<name><surname>Cao</surname><given-names>J.</given-names></name>
+<name><surname>Yue</surname><given-names>G.</given-names></name>
+<name><surname>Liu</surname><given-names>D.</given-names></name>
+<name><surname>Wang</surname><given-names>T.</given-names></name>
+<name><surname>Xu</surname><given-names>Y.</given-names></name>
+<name><surname>Lei</surname><given-names>B.</given-names></name>
+</person-group>
+          <article-title>Multi-scale enhanced graph convolutional network for early mild cognitive impairment detection</article-title>
+          <source>Proceedings of the International Conference on Medical Image Computing and Computer-Assisted Intervention</source>
+          <conf-loc>Lima, Peru</conf-loc>
+          <conf-date>4–8 October 2020</conf-date>
+          <publisher-name>Springer</publisher-name>
+          <publisher-loc>Berlin, Germany</publisher-loc>
+          <year>2020</year>
+          <fpage>228</fpage>
+          <lpage>237</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B22-brainsci-12-01413">
+        <label>22.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Parisot</surname><given-names>S.</given-names></name>
+<name><surname>Ktena</surname><given-names>S.I.</given-names></name>
+<name><surname>Ferrante</surname><given-names>E.</given-names></name>
+<name><surname>Lee</surname><given-names>M.</given-names></name>
+<name><surname>Guerrero</surname><given-names>R.</given-names></name>
+<name><surname>Glocker</surname><given-names>B.</given-names></name>
+<name><surname>Rueckert</surname><given-names>D.</given-names></name>
+</person-group>
+          <article-title>Disease Prediction Using Graph Convolutional Networks: Application to Autism Spectrum Disorder and Alzheimer’s Disease</article-title>
+          <source>Med. Image Anal.</source>
+          <year>2018</year>
+          <volume>48</volume>
+          <fpage>117</fpage>
+          <lpage>130</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.media.2018.06.001</pub-id>
+          <pub-id pub-id-type="pmid">29890408</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B23-brainsci-12-01413">
+        <label>23.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Di Martino</surname><given-names>A.</given-names></name>
+<name><surname>Yan</surname><given-names>C.G.</given-names></name>
+<name><surname>Li</surname><given-names>Q.</given-names></name>
+<name><surname>Denio</surname><given-names>E.</given-names></name>
+<name><surname>Castellanos</surname><given-names>F.X.</given-names></name>
+<name><surname>Alaerts</surname><given-names>K.</given-names></name>
+<name><surname>Anderson</surname><given-names>J.S.</given-names></name>
+<name><surname>Assaf</surname><given-names>M.</given-names></name>
+<name><surname>Bookheimer</surname><given-names>S.Y.</given-names></name>
+<name><surname>Dapretto</surname><given-names>M.</given-names></name>
+<etal/>
+</person-group>
+          <article-title>The Autism brain imaging data exchange: Towards a large-scale evaluation of the intrinsic brain architecture in Autism</article-title>
+          <source>Mol. Psychiatry</source>
+          <year>2014</year>
+          <volume>19</volume>
+          <fpage>659</fpage>
+          <lpage>667</lpage>
+          <pub-id pub-id-type="doi">10.1038/mp.2013.78</pub-id>
+          <pub-id pub-id-type="pmid">23774715</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B24-brainsci-12-01413">
+        <label>24.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+<name><surname>Abu-El-Haija</surname><given-names>S.</given-names></name>
+<name><surname>Kapoor</surname><given-names>A.</given-names></name>
+<name><surname>Perozzi</surname><given-names>B.</given-names></name>
+<name><surname>Lee</surname><given-names>J.</given-names></name>
+</person-group>
+          <article-title>N-GCN: Multi-scale graph convolution for semi-supervised node classification</article-title>
+          <source>Proceedings of the Uncertainty In Artificial Intelligence (PMLR)</source>
+          <conf-loc>Virtual</conf-loc>
+          <conf-date>3–6 August 2020</conf-date>
+          <fpage>841</fpage>
+          <lpage>851</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B25-brainsci-12-01413">
+        <label>25.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+<name><surname>Zhang</surname><given-names>M.</given-names></name>
+<name><surname>Cui</surname><given-names>Z.</given-names></name>
+<name><surname>Neumann</surname><given-names>M.</given-names></name>
+<name><surname>Chen</surname><given-names>Y.</given-names></name>
+</person-group>
+          <article-title>An end-to-end deep learning architecture for graph classification</article-title>
+          <source>Proceedings of the Thirty-Second AAAI Conference on Artificial Intelligence</source>
+          <conf-loc>New Orleans, LA, USA</conf-loc>
+          <conf-date>2–7 February 2018</conf-date>
+        </element-citation>
+      </ref>
+      <ref id="B26-brainsci-12-01413">
+        <label>26.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Chen</surname><given-names>Y.</given-names></name>
+<name><surname>Ma</surname><given-names>G.</given-names></name>
+<name><surname>Yuan</surname><given-names>C.</given-names></name>
+<name><surname>Li</surname><given-names>B.</given-names></name>
+<name><surname>Zhang</surname><given-names>H.</given-names></name>
+<name><surname>Wang</surname><given-names>F.</given-names></name>
+<name><surname>Hu</surname><given-names>W.</given-names></name>
+</person-group>
+          <article-title>Graph convolutional network with structure pooling and joint-wise channel attention for action recognition</article-title>
+          <source>Pattern Recognit.</source>
+          <year>2020</year>
+          <volume>103</volume>
+          <fpage>107321</fpage>
+          <pub-id pub-id-type="doi">10.1016/j.patcog.2020.107321</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B27-brainsci-12-01413">
+        <label>27.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Ktena</surname><given-names>S.I.</given-names></name>
+<name><surname>Parisot</surname><given-names>S.</given-names></name>
+<name><surname>Ferrante</surname><given-names>E.</given-names></name>
+<name><surname>Rajchl</surname><given-names>M.</given-names></name>
+<name><surname>Lee</surname><given-names>M.</given-names></name>
+<name><surname>Glocker</surname><given-names>B.</given-names></name>
+<name><surname>Rueckert</surname><given-names>D.</given-names></name>
+</person-group>
+          <article-title>Metric learning with spectral graph convolutions on brain connectivity networks</article-title>
+          <source>NeuroImage</source>
+          <year>2018</year>
+          <volume>169</volume>
+          <fpage>431</fpage>
+          <lpage>442</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2017.12.052</pub-id>
+          <pub-id pub-id-type="pmid">29278772</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B28-brainsci-12-01413">
+        <label>28.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Wang</surname><given-names>L.</given-names></name>
+<name><surname>Li</surname><given-names>K.</given-names></name>
+<name><surname>Hu</surname><given-names>X.P.</given-names></name>
+</person-group>
+          <article-title>Graph convolutional network for fMRI analysis based on connectivity neighborhood</article-title>
+          <source>Netw. Neurosci.</source>
+          <year>2021</year>
+          <volume>5</volume>
+          <fpage>83</fpage>
+          <lpage>95</lpage>
+          <pub-id pub-id-type="doi">10.1162/netn_a_00171</pub-id>
+          <pub-id pub-id-type="pmid">33688607</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B29-brainsci-12-01413">
+        <label>29.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+<name><surname>Yao</surname><given-names>D.</given-names></name>
+<name><surname>Sui</surname><given-names>J.</given-names></name>
+<name><surname>Yang</surname><given-names>E.</given-names></name>
+<name><surname>Yap</surname><given-names>P.T.</given-names></name>
+<name><surname>Shen</surname><given-names>D.</given-names></name>
+<name><surname>Liu</surname><given-names>M.</given-names></name>
+</person-group>
+          <article-title>Temporal-adaptive graph convolutional network for automated identification of major depressive disorder using resting-state fMRI</article-title>
+          <source>Proceedings of the International Workshop on Machine Learning in Medical Imaging</source>
+          <conf-loc>Lima, Peru</conf-loc>
+          <conf-date>4 October 2020</conf-date>
+          <publisher-name>Springer</publisher-name>
+          <publisher-loc>Berlin, Germany</publisher-loc>
+          <year>2020</year>
+          <fpage>1</fpage>
+          <lpage>10</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B30-brainsci-12-01413">
+        <label>30.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+<name><surname>Gadgil</surname><given-names>S.</given-names></name>
+<name><surname>Zhao</surname><given-names>Q.</given-names></name>
+<name><surname>Pfefferbaum</surname><given-names>A.</given-names></name>
+<name><surname>Sullivan</surname><given-names>E.V.</given-names></name>
+<name><surname>Adeli</surname><given-names>E.</given-names></name>
+<name><surname>Pohl</surname><given-names>K.M.</given-names></name>
+</person-group>
+          <article-title>Spatio-temporal graph convolution for resting-state fMRI analysis</article-title>
+          <source>Proceedings of the International Conference on Medical Image Computing and Computer-Assisted Intervention</source>
+          <conf-loc>Lima, Peru</conf-loc>
+          <conf-date>4–8 October 2020</conf-date>
+          <publisher-name>Springer</publisher-name>
+          <publisher-loc>Berlin, Germany</publisher-loc>
+          <year>2020</year>
+          <fpage>528</fpage>
+          <lpage>538</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B31-brainsci-12-01413">
+        <label>31.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Csurka</surname><given-names>G.</given-names></name>
+</person-group>
+          <article-title>A comprehensive survey on domain adaptation for visual applications</article-title>
+          <source>Domain Adapt. Comput. Vis. Appl.</source>
+          <year>2017</year>
+          <fpage>1</fpage>
+          <lpage>35</lpage>
+          <pub-id pub-id-type="doi">10.1007/978-3-319-58347-1_1</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B32-brainsci-12-01413">
+        <label>32.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Guan</surname><given-names>H.</given-names></name>
+<name><surname>Liu</surname><given-names>Y.</given-names></name>
+<name><surname>Yang</surname><given-names>E.</given-names></name>
+<name><surname>Yap</surname><given-names>P.T.</given-names></name>
+<name><surname>Shen</surname><given-names>D.</given-names></name>
+<name><surname>Liu</surname><given-names>M.</given-names></name>
+</person-group>
+          <article-title>Multi-site MRI harmonization via attention-guided deep domain adaptation for brain disorder identification</article-title>
+          <source>Med. Image Anal.</source>
+          <year>2021</year>
+          <volume>71</volume>
+          <fpage>102076</fpage>
+          <pub-id pub-id-type="doi">10.1016/j.media.2021.102076</pub-id>
+          <pub-id pub-id-type="pmid">33930828</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B33-brainsci-12-01413">
+        <label>33.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Guan</surname><given-names>H.</given-names></name>
+<name><surname>Liu</surname><given-names>M.</given-names></name>
+</person-group>
+          <article-title>Domain adaptation for medical image analysis: A survey</article-title>
+          <source>IEEE Trans. Biomed. Eng.</source>
+          <year>2021</year>
+          <volume>69</volume>
+          <fpage>1173</fpage>
+          <lpage>1185</lpage>
+          <pub-id pub-id-type="doi">10.1109/TBME.2021.3117407</pub-id>
+          <pub-id pub-id-type="pmid">34606445</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B34-brainsci-12-01413">
+        <label>34.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Wang</surname><given-names>M.</given-names></name>
+<name><surname>Deng</surname><given-names>W.</given-names></name>
+</person-group>
+          <article-title>Deep visual domain adaptation: A survey</article-title>
+          <source>Neurocomputing</source>
+          <year>2018</year>
+          <volume>312</volume>
+          <fpage>135</fpage>
+          <lpage>153</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neucom.2018.05.083</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B35-brainsci-12-01413">
+        <label>35.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Ingalhalikar</surname><given-names>M.</given-names></name>
+<name><surname>Shinde</surname><given-names>S.</given-names></name>
+<name><surname>Karmarkar</surname><given-names>A.</given-names></name>
+<name><surname>Rajan</surname><given-names>A.</given-names></name>
+<name><surname>Rangaprakash</surname><given-names>D.</given-names></name>
+<name><surname>Deshpande</surname><given-names>G.</given-names></name>
+</person-group>
+          <article-title>Functional connectivity-based prediction of Autism on site harmonized ABIDE dataset</article-title>
+          <source>IEEE Trans. Biomed. Eng.</source>
+          <year>2021</year>
+          <volume>68</volume>
+          <fpage>3628</fpage>
+          <lpage>3637</lpage>
+          <pub-id pub-id-type="doi">10.1109/TBME.2021.3080259</pub-id>
+          <pub-id pub-id-type="pmid">33989150</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B36-brainsci-12-01413">
+        <label>36.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+<name><surname>Zhang</surname><given-names>J.</given-names></name>
+<name><surname>Liu</surname><given-names>M.</given-names></name>
+<name><surname>Pan</surname><given-names>Y.</given-names></name>
+<name><surname>Shen</surname><given-names>D.</given-names></name>
+</person-group>
+          <article-title>Unsupervised conditional consensus adversarial network for brain disease identification with structural MRI</article-title>
+          <source>Proceedings of the International Workshop on Machine Learning in Medical Imaging</source>
+          <conf-loc>Shenzhen, China</conf-loc>
+          <conf-date>13–17 October 2019</conf-date>
+          <publisher-name>Springer</publisher-name>
+          <publisher-loc>Berlin, Germany</publisher-loc>
+          <year>2019</year>
+          <fpage>391</fpage>
+          <lpage>399</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B37-brainsci-12-01413">
+        <label>37.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Cangea</surname><given-names>C.</given-names></name>
+<name><surname>Veličković</surname><given-names>P.</given-names></name>
+<name><surname>Jovanović</surname><given-names>N.</given-names></name>
+<name><surname>Kipf</surname><given-names>T.</given-names></name>
+<name><surname>Liò</surname><given-names>P.</given-names></name>
+</person-group>
+          <article-title>Towards sparse hierarchical graph classifiers</article-title>
+          <source>arXiv</source>
+          <year>2018</year>
+          <pub-id pub-id-type="arxiv">1811.01287</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B38-brainsci-12-01413">
+        <label>38.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+<name><surname>Lee</surname><given-names>J.</given-names></name>
+<name><surname>Lee</surname><given-names>I.</given-names></name>
+<name><surname>Kang</surname><given-names>J.</given-names></name>
+</person-group>
+          <article-title>Self-attention graph pooling</article-title>
+          <source>Proceedings of the International Conference on Machine Learning (PMLR)</source>
+          <conf-loc>Long Beach, CA, USA</conf-loc>
+          <conf-date>9–15 June 2019</conf-date>
+          <fpage>3734</fpage>
+          <lpage>3743</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B39-brainsci-12-01413">
+        <label>39.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+<name><surname>Sun</surname><given-names>B.</given-names></name>
+<name><surname>Saenko</surname><given-names>K.</given-names></name>
+</person-group>
+          <article-title>Deep coral: Correlation alignment for deep domain adaptation</article-title>
+          <source>Proceedings of the European Conference on Computer Vision</source>
+          <conf-loc>Amsterdam, The Netherlands</conf-loc>
+          <conf-date>11–14 October 2016</conf-date>
+          <publisher-name>Springer</publisher-name>
+          <publisher-loc>Berlin, Germany</publisher-loc>
+          <year>2016</year>
+          <fpage>443</fpage>
+          <lpage>450</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B40-brainsci-12-01413">
+        <label>40.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Wang</surname><given-names>M.</given-names></name>
+<name><surname>Zhang</surname><given-names>D.</given-names></name>
+<name><surname>Huang</surname><given-names>J.</given-names></name>
+<name><surname>Yap</surname><given-names>P.T.</given-names></name>
+<name><surname>Shen</surname><given-names>D.</given-names></name>
+<name><surname>Liu</surname><given-names>M.</given-names></name>
+</person-group>
+          <article-title>Identifying Autism Spectrum Disorder with multi-site fMRI via low-rank domain adaptation</article-title>
+          <source>IEEE Trans. Med. Imaging</source>
+          <year>2019</year>
+          <volume>39</volume>
+          <fpage>644</fpage>
+          <lpage>655</lpage>
+          <pub-id pub-id-type="doi">10.1109/TMI.2019.2933160</pub-id>
+          <pub-id pub-id-type="pmid">31395542</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B41-brainsci-12-01413">
+        <label>41.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Craddock</surname><given-names>C.</given-names></name>
+<name><surname>Sikka</surname><given-names>S.</given-names></name>
+<name><surname>Cheung</surname><given-names>B.</given-names></name>
+<name><surname>Khanuja</surname><given-names>R.</given-names></name>
+<name><surname>Ghosh</surname><given-names>S.S.</given-names></name>
+<name><surname>Yan</surname><given-names>C.</given-names></name>
+<name><surname>Li</surname><given-names>Q.</given-names></name>
+<name><surname>Lurie</surname><given-names>D.</given-names></name>
+<name><surname>Vogelstein</surname><given-names>J.</given-names></name>
+<name><surname>Burns</surname><given-names>R.</given-names></name>
+<etal/>
+</person-group>
+          <article-title>Towards automated analysis of connectomes: The configurable pipeline for the analysis of connectomes (C-PAC)</article-title>
+          <source>Front. Neuroinform.</source>
+          <year>2013</year>
+          <volume>42</volume>
+          <fpage>10</fpage>
+          <lpage>3389</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B42-brainsci-12-01413">
+        <label>42.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Tzourio-Mazoyer</surname><given-names>N.</given-names></name>
+<name><surname>Landeau</surname><given-names>B.</given-names></name>
+<name><surname>Papathanassiou</surname><given-names>D.</given-names></name>
+<name><surname>Crivello</surname><given-names>F.</given-names></name>
+<name><surname>Etard</surname><given-names>O.</given-names></name>
+<name><surname>Delcroix</surname><given-names>N.</given-names></name>
+<name><surname>Mazoyer</surname><given-names>B.</given-names></name>
+<name><surname>Joliot</surname><given-names>M.</given-names></name>
+</person-group>
+          <article-title>Automated anatomical labeling of activations in SPM using a macroscopic anatomical parcellation of the MNI MRI single-subject brain</article-title>
+          <source>Neuroimage</source>
+          <year>2002</year>
+          <volume>15</volume>
+          <fpage>273</fpage>
+          <lpage>289</lpage>
+          <pub-id pub-id-type="doi">10.1006/nimg.2001.0978</pub-id>
+          <pub-id pub-id-type="pmid">11771995</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B43-brainsci-12-01413">
+        <label>43.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Ganin</surname><given-names>Y.</given-names></name>
+<name><surname>Ustinova</surname><given-names>E.</given-names></name>
+<name><surname>Ajakan</surname><given-names>H.</given-names></name>
+<name><surname>Germain</surname><given-names>P.</given-names></name>
+<name><surname>Larochelle</surname><given-names>H.</given-names></name>
+<name><surname>Laviolette</surname><given-names>F.</given-names></name>
+<name><surname>Marchand</surname><given-names>M.</given-names></name>
+<name><surname>Lempitsky</surname><given-names>V.</given-names></name>
+</person-group>
+          <article-title>Domain-adversarial training of neural networks</article-title>
+          <source>J. Mach. Learn. Res.</source>
+          <year>2016</year>
+          <volume>17</volume>
+          <fpage>2096-2030</fpage>
+        </element-citation>
+      </ref>
+      <ref id="B44-brainsci-12-01413">
+        <label>44.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+<name><surname>Wu</surname><given-names>M.</given-names></name>
+<name><surname>Pan</surname><given-names>S.</given-names></name>
+<name><surname>Zhou</surname><given-names>C.</given-names></name>
+<name><surname>Chang</surname><given-names>X.</given-names></name>
+<name><surname>Zhu</surname><given-names>X.</given-names></name>
+</person-group>
+          <article-title>Unsupervised domain adaptive graph convolutional networks</article-title>
+          <source>Proceedings of the Web Conference 2020</source>
+          <conf-loc>Taipei, Taiwan</conf-loc>
+          <conf-date>20–24 April 2020</conf-date>
+          <fpage>1457</fpage>
+          <lpage>1467</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B45-brainsci-12-01413">
+        <label>45.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Van der Maaten</surname><given-names>L.</given-names></name>
+<name><surname>Hinton</surname><given-names>G.</given-names></name>
+</person-group>
+          <article-title>Visualizing data using t-SNE</article-title>
+          <source>J. Mach. Learn. Res.</source>
+          <year>2008</year>
+          <volume>9</volume>
+          <fpage>2579</fpage>
+          <lpage>2605</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B46-brainsci-12-01413">
+        <label>46.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Xia</surname><given-names>M.</given-names></name>
+<name><surname>Wang</surname><given-names>J.</given-names></name>
+<name><surname>He</surname><given-names>Y.</given-names></name>
+</person-group>
+          <article-title>BrainNet Viewer: A network visualization tool for human brain connectomics</article-title>
+          <source>PLoS ONE</source>
+          <year>2013</year>
+          <volume>8</volume>
+          <elocation-id>e68910</elocation-id>
+          <pub-id pub-id-type="doi">10.1371/journal.pone.0068910</pub-id>
+          <pub-id pub-id-type="pmid">23861951</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B47-brainsci-12-01413">
+        <label>47.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Sussman</surname><given-names>D.</given-names></name>
+<name><surname>Leung</surname><given-names>R.</given-names></name>
+<name><surname>Vogan</surname><given-names>V.</given-names></name>
+<name><surname>Lee</surname><given-names>W.</given-names></name>
+<name><surname>Trelle</surname><given-names>S.</given-names></name>
+<name><surname>Lin</surname><given-names>S.</given-names></name>
+<name><surname>Cassel</surname><given-names>D.</given-names></name>
+<name><surname>Chakravarty</surname><given-names>M.</given-names></name>
+<name><surname>Lerch</surname><given-names>J.</given-names></name>
+<name><surname>Anagnostou</surname><given-names>E.</given-names></name>
+<etal/>
+</person-group>
+          <article-title>The Autism puzzle: Diffuse but not pervasive neuroanatomical abnormalities in children with ASD</article-title>
+          <source>NeuroImage Clin.</source>
+          <year>2015</year>
+          <volume>8</volume>
+          <fpage>170</fpage>
+          <lpage>179</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.nicl.2015.04.008</pub-id>
+          <pub-id pub-id-type="pmid">26106541</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B48-brainsci-12-01413">
+        <label>48.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Sun</surname><given-names>L.</given-names></name>
+<name><surname>Xue</surname><given-names>Y.</given-names></name>
+<name><surname>Zhang</surname><given-names>Y.</given-names></name>
+<name><surname>Qiao</surname><given-names>L.</given-names></name>
+<name><surname>Zhang</surname><given-names>L.</given-names></name>
+<name><surname>Liu</surname><given-names>M.</given-names></name>
+</person-group>
+          <article-title>Estimating sparse functional connectivity networks via hyperparameter-free learning model</article-title>
+          <source>Artif. Intell. Med.</source>
+          <year>2021</year>
+          <volume>111</volume>
+          <fpage>102004</fpage>
+          <pub-id pub-id-type="doi">10.1016/j.artmed.2020.102004</pub-id>
+          <pub-id pub-id-type="pmid">33461688</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B49-brainsci-12-01413">
+        <label>49.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+<name><surname>He</surname><given-names>K.</given-names></name>
+<name><surname>Fan</surname><given-names>H.</given-names></name>
+<name><surname>Wu</surname><given-names>Y.</given-names></name>
+<name><surname>Xie</surname><given-names>S.</given-names></name>
+<name><surname>Girshick</surname><given-names>R.</given-names></name>
+</person-group>
+          <article-title>Momentum contrast for unsupervised visual representation learning</article-title>
+          <source>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition</source>
+          <conf-loc>Seattle, WA, USA</conf-loc>
+          <conf-date>13–19 June 2020</conf-date>
+          <fpage>9729</fpage>
+          <lpage>9738</lpage>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+  <floats-group>
+    <fig position="float" id="brainsci-12-01413-f001">
+      <label>Figure 1</label>
+      <caption>
+        <p>Architecture of the proposed multi-site resting-state fMRI adaptation framework (A<sup>2</sup>GCN) with an attention-guided GCN for brain disorder identification. The A<sup>2</sup>GCN consists of three components: (1) With the help of GCN model, rs-fMRI features are automatically extracted from the brain graph from the source or target domains; (2) Explore the potential contribution of different brain regions to automatic detection of brain diseases by using attention mechanism; (3) Under the constraints of mean absolute error and covariance, the objective function (composed of MAE loss, CORAL loss and cross entropy loss) is established for knowledge transfer between different domains.</p>
+      </caption>
+      <graphic xlink:href="brainsci-12-01413-g001" position="float"/>
+    </fig>
+    <fig position="float" id="brainsci-12-01413-f002">
+      <label>Figure 2</label>
+      <caption>
+        <p>Structure of node attention mechanism module. <inline-formula><mml:math id="mm161" overflow="scroll"><mml:mrow><mml:mrow><mml:msub><mml:mi>X</mml:mi><mml:mi>i</mml:mi></mml:msub><mml:mo>∈</mml:mo><mml:msup><mml:mi mathvariant="double-struck">R</mml:mi><mml:mi>N</mml:mi></mml:msup></mml:mrow></mml:mrow></mml:math></inline-formula> and <inline-formula><mml:math id="mm162" overflow="scroll"><mml:mrow><mml:mrow><mml:msub><mml:mi>H</mml:mi><mml:mi>i</mml:mi></mml:msub><mml:mo>∈</mml:mo><mml:msup><mml:mi mathvariant="double-struck">R</mml:mi><mml:mi>D</mml:mi></mml:msup></mml:mrow></mml:mrow></mml:math></inline-formula> are the input and output of the convolutional layer, respectively. <inline-formula><mml:math id="mm163" overflow="scroll"><mml:mrow><mml:mrow><mml:mi>i</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn><mml:mo>,</mml:mo><mml:mo>⋯</mml:mo><mml:mo>,</mml:mo><mml:mi>N</mml:mi></mml:mrow></mml:mrow></mml:math></inline-formula>. After the two-layer graph convolution, the spatial dimension of the output layer is limited to <inline-formula><mml:math id="mm164" overflow="scroll"><mml:mrow><mml:mrow><mml:mi>N</mml:mi><mml:mo>×</mml:mo><mml:mi>D</mml:mi><mml:mo>×</mml:mo><mml:mi>M</mml:mi></mml:mrow></mml:mrow></mml:math></inline-formula>. With the help of the max pooling operation, the global feature descriptor (<inline-formula><mml:math id="mm165" overflow="scroll"><mml:mrow><mml:msub><mml:mi>H</mml:mi><mml:mrow><mml:mi>m</mml:mi><mml:mi>a</mml:mi><mml:mi>x</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:math></inline-formula>) of <inline-formula><mml:math id="mm166" overflow="scroll"><mml:mrow><mml:mrow><mml:mi>N</mml:mi><mml:mo>×</mml:mo><mml:mn>1</mml:mn><mml:mo>×</mml:mo><mml:mi>M</mml:mi></mml:mrow></mml:mrow></mml:math></inline-formula> is generated from the tensor, and then it is mapped into an attention score (<inline-formula><mml:math id="mm167" overflow="scroll"><mml:mrow><mml:msub><mml:mi>H</mml:mi><mml:mrow><mml:mi>a</mml:mi><mml:mi>t</mml:mi><mml:mi>t</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:math></inline-formula>) through the fully connected layer, and the dimension is unchanged. Dot product this attention score with the original <inline-formula><mml:math id="mm168" overflow="scroll"><mml:mrow><mml:mrow><mml:mi>N</mml:mi><mml:mo>×</mml:mo><mml:mi>D</mml:mi><mml:mo>×</mml:mo><mml:mi>M</mml:mi></mml:mrow></mml:mrow></mml:math></inline-formula> tensor (<inline-formula><mml:math id="mm169" overflow="scroll"><mml:mrow><mml:mrow><mml:mi>H</mml:mi><mml:mo>=</mml:mo><mml:mo>[</mml:mo><mml:msub><mml:mi>S</mml:mi><mml:mn>1</mml:mn></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mi>S</mml:mi><mml:mn>2</mml:mn></mml:msub><mml:mo>,</mml:mo><mml:mo>⋯</mml:mo><mml:mo>,</mml:mo><mml:msub><mml:mi>S</mml:mi><mml:mi>M</mml:mi></mml:msub><mml:mo>]</mml:mo></mml:mrow></mml:mrow></mml:math></inline-formula>). The result of the dot product is added to the original <inline-formula><mml:math id="mm170" overflow="scroll"><mml:mrow><mml:mrow><mml:mi>N</mml:mi><mml:mo>×</mml:mo><mml:mi>D</mml:mi><mml:mo>×</mml:mo><mml:mi>M</mml:mi></mml:mrow></mml:mrow></mml:math></inline-formula> tensor (<italic toggle="yes">H</italic>), and finally each node gets the feature with the attention mechanism reweighting. FC: Fully connected layers.</p>
+      </caption>
+      <graphic xlink:href="brainsci-12-01413-g002" position="float"/>
+    </fig>
+    <fig position="float" id="brainsci-12-01413-f003">
+      <label>Figure 3</label>
+      <caption>
+        <p>Ablation studies are performed to verify the effect of different components in the proposed model. A<sup>2</sup>GCN_A (without domain adaptation module), A<sup>2</sup>GCN_M (with attention mechanism module and part of domain adaptation module), and A<sup>2</sup>GCN_C (without domain attention mechanism module) are three variations of our model. ACC: Accuracy; AUC: Area under curve.</p>
+      </caption>
+      <graphic xlink:href="brainsci-12-01413-g003" position="float"/>
+    </fig>
+    <fig position="float" id="brainsci-12-01413-f004">
+      <label>Figure 4</label>
+      <caption>
+        <p>Visualization of (<bold>a</bold>) the original data distribution before domain adaptation and (<bold>b</bold>) the data distribution after adjustment through our proposed domain adaptation model for ABIDE data set. The blue dots are from the source domain and the red dots are from the target domain. CF: Frobenius norm of the covariance between the source and target domains.</p>
+      </caption>
+      <graphic xlink:href="brainsci-12-01413-g004" position="float"/>
+    </fig>
+    <fig position="float" id="brainsci-12-01413-f005">
+      <label>Figure 5</label>
+      <caption>
+        <p>Visualization of the 19 brain regions generated by 10 randomly selected subjects from the UM site (according to the results of A<sup>2</sup>GCN in the domain adaptation task of “NYU→UM”). Colors of brain regions are randomly assigned, just for better visualization. The stick-like connections between brain regions indicate strong functional connectivity between them.</p>
+      </caption>
+      <graphic xlink:href="brainsci-12-01413-g005" position="float"/>
+    </fig>
+    <table-wrap position="float" id="brainsci-12-01413-t001">
+      <object-id pub-id-type="pii">brainsci-12-01413-t001_Table 1</object-id>
+      <label>Table 1</label>
+      <caption>
+        <p>Notations and descriptions used in this paper.</p>
+      </caption>
+      <table frame="hsides" rules="groups">
+        <thead>
+          <tr>
+            <th align="left" valign="middle" style="border-bottom:solid thin;border-top:solid thin" rowspan="1" colspan="1">  Notation</th>
+            <th align="left" valign="middle" style="border-bottom:solid thin;border-top:solid thin" rowspan="1" colspan="1">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">  <inline-formula><mml:math id="mm175" overflow="scroll"><mml:mrow><mml:mrow><mml:msup><mml:mi>G</mml:mi><mml:mi>s</mml:mi></mml:msup><mml:mo>=</mml:mo><mml:mrow><mml:mo>(</mml:mo><mml:msup><mml:mi>V</mml:mi><mml:mi>s</mml:mi></mml:msup><mml:mo>,</mml:mo><mml:msup><mml:mi>A</mml:mi><mml:mi>s</mml:mi></mml:msup><mml:mo>,</mml:mo><mml:msup><mml:mi>X</mml:mi><mml:mi>s</mml:mi></mml:msup><mml:mo>,</mml:mo><mml:msup><mml:mi>Y</mml:mi><mml:mi>s</mml:mi></mml:msup><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:mrow></mml:math></inline-formula></td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Source graph</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">  <inline-formula><mml:math id="mm176" overflow="scroll"><mml:mrow><mml:mrow><mml:msup><mml:mi>G</mml:mi><mml:mi>t</mml:mi></mml:msup><mml:mo>=</mml:mo><mml:mrow><mml:mo>(</mml:mo><mml:msup><mml:mi>V</mml:mi><mml:mi>t</mml:mi></mml:msup><mml:mo>,</mml:mo><mml:msup><mml:mi>A</mml:mi><mml:mi>t</mml:mi></mml:msup><mml:mo>,</mml:mo><mml:msup><mml:mi>X</mml:mi><mml:mi>t</mml:mi></mml:msup><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:mrow></mml:math></inline-formula></td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Target graph</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">  <inline-formula><mml:math id="mm177" overflow="scroll"><mml:mrow><mml:mrow><mml:msup><mml:mi>V</mml:mi><mml:mi>s</mml:mi></mml:msup><mml:mo>,</mml:mo><mml:msup><mml:mi>V</mml:mi><mml:mi>t</mml:mi></mml:msup></mml:mrow></mml:mrow></mml:math></inline-formula></td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Set of nodes</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">  <inline-formula><mml:math id="mm178" overflow="scroll"><mml:mrow><mml:mrow><mml:msup><mml:mi>Y</mml:mi><mml:mi>s</mml:mi></mml:msup><mml:mo>∈</mml:mo><mml:msup><mml:mi mathvariant="double-struck">R</mml:mi><mml:msup><mml:mi>M</mml:mi><mml:mi>s</mml:mi></mml:msup></mml:msup></mml:mrow></mml:mrow></mml:math></inline-formula></td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Source data label</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">  <inline-formula><mml:math id="mm179" overflow="scroll"><mml:mrow><mml:mrow><mml:mi>A</mml:mi><mml:mo>,</mml:mo><mml:msup><mml:mi>A</mml:mi><mml:mi>s</mml:mi></mml:msup><mml:mo>,</mml:mo><mml:msup><mml:mi>A</mml:mi><mml:mi>t</mml:mi></mml:msup></mml:mrow></mml:mrow></mml:math></inline-formula></td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Adjacency matrix</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">  <inline-formula><mml:math id="mm180" overflow="scroll"><mml:mrow><mml:mrow><mml:msup><mml:mi>X</mml:mi><mml:mi>s</mml:mi></mml:msup><mml:mo>∈</mml:mo><mml:msup><mml:mi mathvariant="double-struck">R</mml:mi><mml:mrow><mml:msup><mml:mi>M</mml:mi><mml:mi>s</mml:mi></mml:msup><mml:mo>×</mml:mo><mml:msup><mml:mi>D</mml:mi><mml:mi>s</mml:mi></mml:msup></mml:mrow></mml:msup></mml:mrow></mml:mrow></mml:math></inline-formula></td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Source feature matrix</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">  <inline-formula><mml:math id="mm181" overflow="scroll"><mml:mrow><mml:mrow><mml:msup><mml:mi>X</mml:mi><mml:mi>t</mml:mi></mml:msup><mml:mo>∈</mml:mo><mml:msup><mml:mrow><mml:mi mathvariant="double-struck">R</mml:mi></mml:mrow><mml:mrow><mml:msup><mml:mi>M</mml:mi><mml:mi>t</mml:mi></mml:msup><mml:mo>×</mml:mo><mml:msup><mml:mi>D</mml:mi><mml:mi>t</mml:mi></mml:msup></mml:mrow></mml:msup></mml:mrow></mml:mrow></mml:math></inline-formula></td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Target feature matrix</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">  <inline-formula><mml:math id="mm182" overflow="scroll"><mml:mrow><mml:mrow><mml:msup><mml:mi>H</mml:mi><mml:mi>s</mml:mi></mml:msup><mml:mo>,</mml:mo><mml:msup><mml:mi>H</mml:mi><mml:mi>t</mml:mi></mml:msup></mml:mrow></mml:mrow></mml:math></inline-formula></td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Learned features</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">  <inline-formula><mml:math id="mm183" overflow="scroll"><mml:mrow><mml:mrow><mml:msup><mml:mi>Z</mml:mi><mml:mi>s</mml:mi></mml:msup><mml:mo>,</mml:mo><mml:msup><mml:mi>Z</mml:mi><mml:mi>t</mml:mi></mml:msup></mml:mrow></mml:mrow></mml:math></inline-formula></td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Learned features</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">  <inline-formula><mml:math id="mm184" overflow="scroll"><mml:mrow><mml:mrow><mml:mi>M</mml:mi><mml:mo>,</mml:mo><mml:msup><mml:mi>M</mml:mi><mml:mi>s</mml:mi></mml:msup><mml:mo>,</mml:mo><mml:msup><mml:mi>M</mml:mi><mml:mi>t</mml:mi></mml:msup></mml:mrow></mml:mrow></mml:math></inline-formula></td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Number of samples</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">  <inline-formula><mml:math id="mm185" overflow="scroll"><mml:mrow><mml:mrow><mml:mi>N</mml:mi><mml:mo>,</mml:mo><mml:msup><mml:mi>N</mml:mi><mml:mi>s</mml:mi></mml:msup><mml:mo>,</mml:mo><mml:msup><mml:mi>N</mml:mi><mml:mi>t</mml:mi></mml:msup></mml:mrow></mml:mrow></mml:math></inline-formula></td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Number of nodes on the graph</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">  <inline-formula><mml:math id="mm186" overflow="scroll"><mml:mrow><mml:mrow><mml:mi>D</mml:mi><mml:mo>,</mml:mo><mml:msup><mml:mi>D</mml:mi><mml:mi>s</mml:mi></mml:msup><mml:mo>,</mml:mo><mml:msup><mml:mi>D</mml:mi><mml:mi>t</mml:mi></mml:msup></mml:mrow></mml:mrow></mml:math></inline-formula></td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Feature dimension</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">  <inline-formula><mml:math id="mm187" overflow="scroll"><mml:mrow><mml:msub><mml:mi>f</mml:mi><mml:mi>C</mml:mi></mml:msub></mml:mrow></mml:math></inline-formula></td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Source domain classifier</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">  <inline-formula><mml:math id="mm188" overflow="scroll"><mml:mrow><mml:mrow><mml:msub><mml:mi mathvariant="script">L</mml:mi><mml:mi mathvariant="script">C</mml:mi></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mi mathvariant="script">L</mml:mi><mml:mi mathvariant="script">M</mml:mi></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mi mathvariant="script">L</mml:mi><mml:mi mathvariant="script">A</mml:mi></mml:msub></mml:mrow></mml:mrow></mml:math></inline-formula></td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Loss function</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">  <inline-formula><mml:math id="mm189" overflow="scroll"><mml:mrow><mml:mrow><mml:msub><mml:mi>γ</mml:mi><mml:mn>1</mml:mn></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mi>γ</mml:mi><mml:mn>2</mml:mn></mml:msub></mml:mrow></mml:mrow></mml:math></inline-formula></td>
+            <td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">The balance parameters</td>
+          </tr>
+        </tbody>
+      </table>
+    </table-wrap>
+    <table-wrap position="float" id="brainsci-12-01413-t002">
+      <object-id pub-id-type="pii">brainsci-12-01413-t002_Table 2</object-id>
+      <label>Table 2</label>
+      <caption>
+        <p>Demographic information of three sites (NYU, UM, UCLA) of the public ABIDE dataset. Values are counted as mean ± standard deviation. M/F: Male/Female; ASD: Autism Spectrum Disorder; HC: Healthy Controls.</p>
+      </caption>
+      <table frame="hsides" rules="groups">
+        <thead>
+          <tr>
+            <th align="center" valign="middle" style="border-bottom:solid thin;border-top:solid thin" rowspan="1" colspan="1">Name of the site</th>
+            <th align="center" valign="middle" style="border-bottom:solid thin;border-top:solid thin" rowspan="1" colspan="1">Category</th>
+            <th align="center" valign="middle" style="border-bottom:solid thin;border-top:solid thin" rowspan="1" colspan="1">Gender (M/F)</th>
+            <th align="center" valign="middle" style="border-bottom:solid thin;border-top:solid thin" rowspan="1" colspan="1">Age</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2" align="center" valign="middle" style="border-bottom:solid thin" colspan="1">NYU</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">ASD (N = 71)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">66/5</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">17.59 ± 7.84</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">HC (N = 93)</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">79/14</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">16.49 ± 7.68</td>
+          </tr>
+          <tr>
+            <td rowspan="2" align="center" valign="middle" style="border-bottom:solid thin" colspan="1">UM</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">ASD (N = 48)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">43/5</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">17.05 ± 8.36</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">HC (N = 65)</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">56/9</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">17.35 ± 7.12</td>
+          </tr>
+          <tr>
+            <td rowspan="2" align="center" valign="middle" style="border-bottom:solid thin" colspan="1">UCLA</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">ASD (N = 36)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">28/8</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">16.27 ± 6.48</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">HC (N = 38)</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">31/7</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">14.65 ± 4.97</td>
+          </tr>
+        </tbody>
+      </table>
+    </table-wrap>
+    <table-wrap position="float" id="brainsci-12-01413-t003">
+      <object-id pub-id-type="pii">brainsci-12-01413-t003_Table 3</object-id>
+      <label>Table 3</label>
+      <caption>
+        <p>Results of different models in ASD vs. NC classification task based on rs-fMRI data in NYU, UM, and UCLA sites. The data set preceding the arrow represents the source domain, and the arrow is followed by the target domain to predict. Values are reported as mean ± standard deviation. DC: Degree centrality; BD: Feature fusion using betweenness centrality and degree centrality; BDC: Feature fusion using betweenness centrality, degree centrality, and closeness centrality; DNN: Deep neural networks; GCN: Graph convolutional networks; DNNC: Cross-domain model based on multi-layer perceptron; MMD: Maximum Mean Discrepancy; DANN: Domain Adversarial Neural Network; ACC: Accuracy; Pre: Precision; Rec: Recall; F1: F1-Score; BAC: Balanced accuracy: NPV: Negative predictive value; AUC: Area under curve. The bold values mean to highlight the experiment results.</p>
+      </caption>
+      <table frame="hsides" rules="groups">
+        <thead>
+          <tr>
+            <th align="left" valign="middle" style="border-bottom:solid thin;border-top:solid thin" rowspan="1" colspan="1">Source→Target</th>
+            <th align="left" valign="middle" style="border-bottom:solid thin;border-top:solid thin" rowspan="1" colspan="1">Method</th>
+            <th align="left" valign="middle" style="border-bottom:solid thin;border-top:solid thin" rowspan="1" colspan="1">ACC (%)</th>
+            <th align="left" valign="middle" style="border-bottom:solid thin;border-top:solid thin" rowspan="1" colspan="1">Pre (%)</th>
+            <th align="left" valign="middle" style="border-bottom:solid thin;border-top:solid thin" rowspan="1" colspan="1">Rec (%)</th>
+            <th align="left" valign="middle" style="border-bottom:solid thin;border-top:solid thin" rowspan="1" colspan="1">F1 (%)</th>
+            <th align="left" valign="middle" style="border-bottom:solid thin;border-top:solid thin" rowspan="1" colspan="1">BAC (%)</th>
+            <th align="left" valign="middle" style="border-bottom:solid thin;border-top:solid thin" rowspan="1" colspan="1">NPV (%)</th>
+            <th align="left" valign="middle" style="border-bottom:solid thin;border-top:solid thin" rowspan="1" colspan="1">AUC (%)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">DC</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">53.54 ± 1.88</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">46.33 ± 0.25</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">54.60 ± 1.89</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">50.55 ± 9.32</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">54.17 ± 1.45</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">62.86 ± 4.04</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">54.60 ± 1.89</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">BD</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">56.64 ± 1.25</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">49.29 ± 1.01</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">58.17 ± 0.23</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">57.00 ± 0.90</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">58.09 ± 0.52</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">67.06 ± 0.54</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">58.17 ± 0.23</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">BDC</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">54.43 ± 1.87</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">47.48 ± 1.55</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">56.51 ± 2.12</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">56.17 ± 2.07</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">56.3 ± 2.02</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">65.54 ± 2.69</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">56.51 ± 2.12</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">DNN</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">58.85 ± 0.62</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">58.67 ± 1.60</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">58.78 ± 1.70</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">58.39 ± 1.17</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">58.78 ± 1.70</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">65.99 ± 2.73</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">51.72 ± 4.19</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">NYU→UM</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">GCN</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">61.07 ± 1.25</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">60.65 ± 0.95</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">60.84 ± 0.89</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">60.61 ± 1.05</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">60.84 ± 0.89</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">67.49 ± 0.35</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">59.28 ± 0.02</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">DNNC</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">61.07 ± 1.25</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">61.36 ± 3.49</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">61.11 ± 3.59</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">60.27 ± 2.35</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">61.11 ± 3.59</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">69.10 ± 6.80</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">59.89 ± 9.31</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">MMD</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">66.82 ± 0.63</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">66.20 ± 0.69</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">66.04 ± 0.46</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">66.09 ± 0.45</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">66.12 ± 0.35</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">71.32 ± 0.16</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">65.77 ± 1.32</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">DANN</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">66.82 ± 0.63</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">66.72 ± 0.20</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">67.07 ± 0.16</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">66.56 ± 0.45</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">65.19 ± 2.51</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">70.61 ± 5.57</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">64.35 ± 0.84</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+</td>
+            <td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1"><bold>A<sup>2</sup>GCN</bold> (Ours)</td>
+            <td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<bold>72.27 ± 0.51</bold>
+</td>
+            <td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<bold>71.94 ± 0.50</bold>
+</td>
+            <td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<bold>72.35 ± 0.52</bold>
+</td>
+            <td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<bold>71.97 ± 0.49</bold>
+</td>
+            <td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<bold>72.35 ± 0.52</bold>
+</td>
+            <td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<bold>78.23 ± 0.97</bold>
+</td>
+            <td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<bold>70.90 ± 1.53</bold>
+</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">DC</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">58.79 ± 2.86</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">57.51 ± 2.76</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">58.77 ± 2.88</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">57.92 ± 3.33</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">58.78 ± 2.89</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">60.03 ± 3.02</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">58.77 ± 2.88</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">BD</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">56.08 ± 2.87</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">55.04 ± 2.97</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">56.02 ± 2.89</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">53.89 ± 3.47</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">56.00 ± 2.89</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">56.99 ± 2.81</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">56.02 ± 2.89</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">BDC</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">58.79 ± 0.95</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">57.74 ± 0.84</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">58.75 ± 0.97</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">57.34 ± 1.41</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">58.74 ± 0.98</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">59.75 ± 1.10</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">60.11 ± 0.96</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">DNN</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">60.14 ± 0.95</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">60.11 ± 0.96</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">60.05 ± 0.88</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">60.03 ± 0.85</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">60.05 ± 0.88</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">60.76 ± 0.32</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">59.83 ± 1.91</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">NYU→UCLA</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">GCN</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">61.49 ± 0.95</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">61.50 ± 1.00</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">61.44 ± 1.09</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">61.40 ± 1.08</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">61.44 ± 1.09</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">62.44 ± 2.06</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">58.19 ± 1.76</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">DNNC</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">60.81 ± 3.82</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">60.88 ± 3.92</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">60.60 ± 3.83</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">60.46 ± 3.85</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">60.60 ± 3.83</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">60.47 ± 3.29</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">53.77 ± 3.98</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">MMD</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">66.89 ± 0.96</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">66.94 ± 0.85</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">66.92 ± 0.88</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">66.88 ± 0.94</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">66.92 ± 0.88</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">68.50 ± 0.11</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">64.51 ± 1.91</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">DANN</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">66.90 ± 0.95</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">67.14 ± 1.34</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">66.96 ± 1.14</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">66.82 ± 0.93</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">66.96 ± 1.14</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">69.28 ± 3.68</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">65.87 ± 0.52</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+</td>
+            <td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1"><bold>A<sup>2</sup>GCN</bold> (Ours)</td>
+            <td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<bold>69.82 ± 1.56</bold>
+</td>
+            <td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<bold>70.09 ± 1.56</bold>
+</td>
+            <td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<bold>69.83 ± 1.56</bold>
+</td>
+            <td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<bold>69.71 ± 1.56</bold>
+</td>
+            <td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<bold>69.83 ± 1.56</bold>
+</td>
+            <td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<bold>71.38 ± 1.56</bold>
+</td>
+            <td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<bold>67.03 ± 1.56</bold>
+</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">DC</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">53.66 ± 0.86</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">46.31 ± 1.41</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">52.66 ± 1.41</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">45.62 ± 3.76</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">52.65 ± 1.46</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">59.00 ± 1.41</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">52.66 ± 1.41</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">BD</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">57.02 ± 0.43</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">50.33 ± 0.46</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">56.45 ± 0.68</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">51.53 ± 1.66</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">56.52 ± 0.73</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">62.59 ± 0.89</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">56.46 ± 0.67</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">BDC</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">53.66 ± 0.86</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">47.23 ± 0.91</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">54.46 ± 1.27</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">53.06 ± 2.11</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">54.48 ± 1.24</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">61.70 ± 1.65</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">54.46 ± 1.27</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">DNN</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">59.15 ± 1.73</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">58.57 ± 1.74</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">58.65 ± 1.75</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">58.59 ± 1.75</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">58.65 ± 1.75</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">64.45 ± 1.58</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">55.49 ± 2.08</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">UM→NYU</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">GCN</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">63.11 ± 0.43</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">62.96 ± 0.03</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">63.15 ± 0.09</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">62.83 ± 0.20</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">63.15 ± 0.09</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">69.27 ± 1.03</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">64.35 ± 0.24</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">DNNC</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">60.68 ± 1.29</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">59.99 ± 1.65</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">60.00 ± 1.85</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">59.95 ± 1.73</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">60.00 ± 1.85</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">65.49 ± 2.21</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">62.68 ± 3.57</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">MMD</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">66.16 ± 1.29</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">65.44 ± 1.34</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">65.08 ± 1.26</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">65.18 ± 1.27</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">65.08 ± 1.26</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">69.04 ± 0.94</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">66.18 ± 2.17</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">DANN</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">66.16 ± 0.43</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">65.59 ± 0.67</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">65.50 ± 1.09</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">65.47 ± 0.90</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">65.50 ± 1.09</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">70.14 ± 2.05</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">65.34 ± 0.69</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+</td>
+            <td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1"><bold>A<sup>2</sup>GCN</bold> (Ours)</td>
+            <td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<bold>68.70 ± 0.70</bold>
+</td>
+            <td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<bold>68.73 ± 0.63</bold>
+</td>
+            <td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<bold>69.07 ± 0.65</bold>
+</td>
+            <td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<bold>68.56 ± 0.68</bold>
+</td>
+            <td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<bold>69.07 ± 0.65</bold>
+</td>
+            <td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<bold>75.52 ± 0.71</bold>
+</td>
+            <td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<bold>66.77 ± 0.43</bold>
+</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">DC</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">54.73 ± 0.95</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">53.81 ± 0.68</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">54.65 ± 1.00</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">51.00 ± 3.56</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">54.57 ± 1.09</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">55.48 ± 1.32</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">54.65 ± 1.00</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">BD</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">54.73 ± 0.96</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">53.28 ± 1.10</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">54.80 ± 0.86</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">55.03 ± 0.33</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">54.79 ± 0.88</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">56.32 ± 0.62</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">54.80 ± 0.86</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">BDC</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">56.08 ± 4.78</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">54.39 ± 4.40</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">56.21 ± 4.84</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">56.93 ± 5.09</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">56.18 ± 4.81</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">58.03 ± 5.28</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">56.21 ± 4.84</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">DNN</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">56.76 ± 3.83</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">56.79 ± 4.02</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">56.69 ± 4.09</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">56.47 ± 4.19</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">56.69 ± 4.09</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">58.16 ± 5.10</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">52.31 ± 1.39</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">UM→UCLA</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">GCN</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">61.49 ± 0.95</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">61.47 ± 0.93</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">61.44 ± 0.88</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">61.43 ± 0.88</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">61.44 ± 0.88</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">62.33 ± 0.24</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">58.52 ± 1.50</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">DNNC</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">60.14 ± 0.95</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">60.13 ± 0.96</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">60.05 ± 1.09</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">60.00 ± 1.14</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">60.05 ± 1.09</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">60.84 ± 1.87</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">46.50 ± 4.86</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">MMD</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">65.54 ± 0.96</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">65.54 ± 0.97</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">65.50 ± 1.03</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">65.49 ± 1.03</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">65.50 ± 1.03</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">66.29 ± 1.82</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">65.24 ± 1.60</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">DANN</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">65.54 ± 0.96</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">65.57 ± 0.93</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">65.57 ± 0.93</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">65.54 ± 0.95</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">65.57 ± 0.93</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">67.12 ± 0.64</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">61.26 ± 4.45</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+</td>
+            <td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1"><bold>A<sup>2</sup>GCN</bold> (Ours)</td>
+            <td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<bold>70.61 ± 2.56</bold>
+</td>
+            <td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<bold>71.71 ± 3.42</bold>
+</td>
+            <td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<bold>70.65 ± 2.20</bold>
+</td>
+            <td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<bold>70.22 ± 2.23</bold>
+</td>
+            <td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<bold>70.52 ± 2.29</bold>
+</td>
+            <td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<bold>70.92 ± 3.09</bold>
+</td>
+            <td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<bold>71.29 ± 1.29</bold>
+</td>
+          </tr>
+        </tbody>
+      </table>
+    </table-wrap>
+  </floats-group>
+</article>

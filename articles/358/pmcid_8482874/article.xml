@@ -1,0 +1,754 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<article dtd-version="1.3" xml:lang="en" article-type="research-article">
+  <?properties open_access?>
+  <processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats">
+    <restricted-by>pmc</restricted-by>
+  </processing-meta>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">Front Neurosci</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Front Neurosci</journal-id>
+      <journal-id journal-id-type="publisher-id">Front. Neurosci.</journal-id>
+      <journal-title-group>
+        <journal-title>Frontiers in Neuroscience</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">1662-4548</issn>
+      <issn pub-type="epub">1662-453X</issn>
+      <publisher>
+        <publisher-name>Frontiers Media S.A.</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">34602967</article-id>
+      <article-id pub-id-type="pmc">8482874</article-id>
+      <article-id pub-id-type="doi">10.3389/fnins.2021.707944</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Neuroscience</subject>
+          <subj-group>
+            <subject>Original Research</subject>
+          </subj-group>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Multi-Order Brain Functional Connectivity Network-Based Machine Learning Method for Recognition of Delayed Neurocognitive Recovery in Older Adults Undergoing Non-cardiac Surgery</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Wu</surname>
+            <given-names>Guoqing</given-names>
+          </name>
+          <xref rid="aff1" ref-type="aff">
+<sup>1</sup>
+</xref>
+          <xref rid="fn002" ref-type="author-notes">
+<sup>†</sup>
+</xref>
+          <uri xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://loop.frontiersin.org/people/1333997/overview"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Jiang</surname>
+            <given-names>Zhaoshun</given-names>
+          </name>
+          <xref rid="aff2" ref-type="aff">
+<sup>2</sup>
+</xref>
+          <xref rid="fn002" ref-type="author-notes">
+<sup>†</sup>
+</xref>
+          <uri xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://loop.frontiersin.org/people/1334689/overview"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Cai</surname>
+            <given-names>Yuxi</given-names>
+          </name>
+          <xref rid="aff2" ref-type="aff">
+<sup>2</sup>
+</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Zhang</surname>
+            <given-names>Xixue</given-names>
+          </name>
+          <xref rid="aff2" ref-type="aff">
+<sup>2</sup>
+</xref>
+          <uri xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://loop.frontiersin.org/people/717069/overview"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Lv</surname>
+            <given-names>Yating</given-names>
+          </name>
+          <xref rid="aff3" ref-type="aff">
+<sup>3</sup>
+</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Li</surname>
+            <given-names>Shihong</given-names>
+          </name>
+          <xref rid="aff4" ref-type="aff">
+<sup>4</sup>
+</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Lin</surname>
+            <given-names>Guangwu</given-names>
+          </name>
+          <xref rid="aff4" ref-type="aff">
+<sup>4</sup>
+</xref>
+          <uri xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://loop.frontiersin.org/people/367141/overview"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Bao</surname>
+            <given-names>Zhijun</given-names>
+          </name>
+          <xref rid="aff5" ref-type="aff">
+<sup>5</sup>
+</xref>
+          <uri xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://loop.frontiersin.org/people/1088590/overview"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Liu</surname>
+            <given-names>Songbin</given-names>
+          </name>
+          <xref rid="aff2" ref-type="aff">
+<sup>2</sup>
+</xref>
+          <xref rid="c001" ref-type="corresp">
+<sup>*</sup>
+</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Gu</surname>
+            <given-names>Weidong</given-names>
+          </name>
+          <xref rid="aff2" ref-type="aff">
+<sup>2</sup>
+</xref>
+          <xref rid="c002" ref-type="corresp">
+<sup>*</sup>
+</xref>
+          <uri xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://loop.frontiersin.org/people/1348108/overview"/>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1"><sup>1</sup><institution>School of Information Science and Technology, Fudan University</institution>, <addr-line>Shanghai</addr-line>, <country>China</country></aff>
+      <aff id="aff2"><sup>2</sup><institution>Department of Anesthesiology, Huadong Hospital, Fudan University</institution>, <addr-line>Shanghai</addr-line>, <country>China</country></aff>
+      <aff id="aff3"><sup>3</sup><institution>Institutes of Psychological Sciences, Hangzhou Normal University</institution>, <addr-line>Hangzhou</addr-line>, <country>China</country></aff>
+      <aff id="aff4"><sup>4</sup><institution>Department of Radiology, Huadong Hospital, Fudan University</institution>, <addr-line>Shanghai</addr-line>, <country>China</country></aff>
+      <aff id="aff5"><sup>5</sup><institution>Department of Geriatric Medicine, Huadong Hospital, Fudan University</institution>, <addr-line>Shanghai</addr-line>, <country>China</country></aff>
+      <author-notes>
+        <fn fn-type="edited-by">
+          <p>Edited by: Xin Di, New Jersey Institute of Technology, United States</p>
+        </fn>
+        <fn fn-type="edited-by">
+          <p>Reviewed by: Yuyang Luo, Icahn School of Medicine at Mount Sinai, United States; Han Zhang, University of North Carolina at Chapel Hill, United States</p>
+        </fn>
+        <corresp id="c001">*Correspondence: Songbin Liu, <email>liusongbinmh@163.com</email></corresp>
+        <corresp id="c002">Weidong Gu, <email>hdmz0800@163.com</email></corresp>
+        <fn fn-type="equal" id="fn002">
+          <p><sup>†</sup>These authors have contributed equally to this work</p>
+        </fn>
+        <fn fn-type="other" id="fn004">
+          <p>This article was submitted to Brain Imaging Methods, a section of the journal Frontiers in Neuroscience</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="epub">
+        <day>16</day>
+        <month>9</month>
+        <year>2021</year>
+      </pub-date>
+      <pub-date pub-type="collection">
+        <year>2021</year>
+      </pub-date>
+      <volume>15</volume>
+      <elocation-id>707944</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>14</day>
+          <month>5</month>
+          <year>2021</year>
+        </date>
+        <date date-type="accepted">
+          <day>13</day>
+          <month>8</month>
+          <year>2021</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Copyright © 2021 Wu, Jiang, Cai, Zhang, Lv, Li, Lin, Bao, Liu and Gu.</copyright-statement>
+        <copyright-year>2021</copyright-year>
+        <copyright-holder>Wu, Jiang, Cai, Zhang, Lv, Li, Lin, Bao, Liu and Gu</copyright-holder>
+        <license>
+          <ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref>
+          <license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY). The use, distribution or reproduction in other forums is permitted, provided the original author(s) and the copyright owner(s) are credited and that the original publication in this journal is cited, in accordance with accepted academic practice. No use, distribution or reproduction is permitted which does not comply with these terms.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p><bold>Objectives:</bold> Delayed neurocognitive recovery (DNR) seriously affects the post-operative recovery of elderly surgical patients, but there is still a lack of effective methods to recognize high-risk patients with DNR. This study proposed a machine learning method based on a multi-order brain functional connectivity (FC) network to recognize DNR.</p>
+        <p><bold>Method:</bold> Seventy-four patients who completed assessments were included in this study, in which 16/74 (21.6%) had DNR following surgery. Based on resting-state functional magnetic resonance imaging (rs-fMRI), we first constructed low-order FC networks of 90 brain regions by calculating the correlation of brain region signal changing in the time dimension. Then, we established high-order FC networks by calculating correlations among each pair of brain regions. Afterward, we built sparse representation-based machine learning model to recognize DNR on the extracted multi-order FC network features. Finally, an independent testing was conducted to validate the established recognition model.</p>
+        <p><bold>Results:</bold> Three hundred ninety features of FC networks were finally extracted to identify DNR. After performing the <italic toggle="yes">independent-sample T test</italic> between these features and the categories, 15 features showed statistical differences (<italic toggle="yes">P</italic> &lt; 0.05) and 3 features had significant statistical differences (<italic toggle="yes">P</italic> &lt; 0.01). By comparing DNR and non-DNR patients’ brain region connection matrices, it is found that there are more connections among brain regions in DNR patients than in non-DNR patients. For the machine learning recognition model based on multi-feature combination, the area under the receiver operating characteristic curve (AUC), accuracy, sensitivity, and specificity of the classifier reached 95.61, 92.00, 66.67, and 100.00%, respectively.</p>
+        <p><bold>Conclusion:</bold> This study not only reveals the significance of preoperative rs-fMRI in recognizing post-operative DNR in elderly patients but also establishes a promising machine learning method to recognize DNR.</p>
+      </abstract>
+      <kwd-group>
+        <kwd>delayed neurocognitive recovery</kwd>
+        <kwd>resting-state functional magnetic resonance imaging</kwd>
+        <kwd>functional connectivity</kwd>
+        <kwd>machine learning</kwd>
+        <kwd>sparse representation</kwd>
+      </kwd-group>
+      <counts>
+        <fig-count count="12"/>
+        <table-count count="2"/>
+        <equation-count count="6"/>
+        <ref-count count="35"/>
+        <page-count count="13"/>
+        <word-count count="7736"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec sec-type="intro" id="S1">
+      <title>Introduction</title>
+      <p>Clinically, the neurocognitive impairment including memory, information processing, and execution identified from 7 to 30 days post-operatively is defined as delayed neurocognitive recovery (DNR) (<xref rid="B1" ref-type="bibr">Berger et al., 2015</xref>; <xref rid="B10" ref-type="bibr">Evered et al., 2018</xref>). With the improvement of medical order and the development of aging society, more and more elderly patients are prone to suffering DNR (<xref rid="B9" ref-type="bibr">Evered et al., 2017</xref>) after undergoing surgery under anesthesia. The increase in DNR not only causes heavy medical and social burden but also brings troubles to families. Hence, it is crucial to understand the underlying pathological mechanisms of DNR for the prevention and treatment of it.</p>
+      <p>Recent studies have shown that preoperative cognitive function decline may be an important risk factor for cognitive impairment following surgery and anesthesia (<xref rid="B11" ref-type="bibr">Hogue et al., 2006</xref>), and some preoperative brain functional and structural features related to DNR have been identified. <xref rid="B30" ref-type="bibr">Zhang et al. (2019)</xref> found that there were differences of regional homogeneity in the right hippocampus between DNR patients and non-DNR patients. <xref rid="B13" ref-type="bibr">Jiang et al. (2020)</xref> found that the preoperative higher amplitude of low-frequency fluctuation (ALFF) in the bilateral middle cingulate cortex (MCC) and lower functional connectivity (FC) between the bilateral MCC and left calcarine were independently associated with the occurrence of DNR. Although these studies have identified possible preoperative neuroimaging risk factors for DNR, the correlation between different factors was not further considered in the research process, and a stable and reliable DNR patient recognition model based on those factors has not been established.</p>
+      <p>Resting-state functional MRI (rs-fMRI) has provided a useful tool to analyze the brain response and cognitive impairment by describing both the localized neural activity and the connection characteristics of the entire brain network (<xref rid="B20" ref-type="bibr">Rubinov and Sporns, 2010</xref>; <xref rid="B15" ref-type="bibr">Lei et al., 2020a</xref>). In most rs-fMRI-based brain function studies, brain regions are usually considered as vertices, and their functional interactions calculated by averaging correlations of blood oxygenation order–dependent (BOLD) signals across the whole scanning session are considered edges to build a brain FC network. However, since neural synchronization shifts very quickly to meet cognitive demands, this calculation method of functional interaction makes it difficult for the brain network to effectively describe the neural behavior in the temporal dimension. Recently, dynamic FC based on spatial–temporal joint analysis of BOLD time signal sequences has become a powerful and promising framework in brain network research (<xref rid="B3" ref-type="bibr">Chang and Glover, 2010</xref>; <xref rid="B14" ref-type="bibr">Kiviniemi et al., 2011</xref>; <xref rid="B12" ref-type="bibr">Hutchison et al., 2013</xref>; <xref rid="B2" ref-type="bibr">Calhoun et al., 2014</xref>). These dynamic FC methods utilize a sliding window to divide the entire time series of the BOLD signal into numerous segments of sub-series in advance and then establish a series of temporal FC networks based on each segment of the signal. Since the adjacent networks should share a similar topological pattern and connection strength, some recognized changes can be utilized as discriminative information to identify abnormal brain networks (<xref rid="B6" ref-type="bibr">Chen et al., 2017</xref>; <xref rid="B31" ref-type="bibr">Zhao et al., 2018</xref>).</p>
+      <p>The higher-order FC features that regard fixed-position brain regions as vertices and the interaction between brain regions as edges are playing an increasingly important role in brain network–based diagnostic research. <xref rid="B5" ref-type="bibr">Chen et al. (2016)</xref> combine the extracted low-order and high-order FC networks to discriminate between early mild cognitive impairment (eMCI) and healthy controls and achieve a promising classification accuracy of 88.14%. <xref rid="B31" ref-type="bibr">Zhao et al. (2018)</xref> propose to use a multi-level, high-order FC network representation for autism spectrum disorder (ASD) diagnosis. Experimental results show that the integration of both low-order and first-level high-order FC networks achieves the best ASD diagnostic accuracy (81%). Moreover, they further find that the high-order FC features can provide complementary information to the low-order FC features in the ASD diagnosis. <xref rid="B16" ref-type="bibr">Lei et al. (2020b)</xref> build a machine learning model based on the combination of high-order and low-order features to recognize global cognitive impairment in moyamoya disease (MMD). Experimental results demonstrate that high-order features play a more important role than low-order features in the classification model.</p>
+      <p>In the present study, based on the hypothesis that there are differences in preoperative brain FC between DNR and non-DNR patients, we first establish a set of multi-order brain FC network feature extraction methods to quantify both the connections between the activities of two brain regions and the connections between the activities of brain region groups. Then, we investigate the discriminative features between the patients with and without DNR by simultaneously analyzing the correlation between features and categories and the redundancy between features. Finally, we build a complete set of machine learning classification methods to identify DNR based on the mined discriminative features.</p>
+    </sec>
+    <sec sec-type="materials|methods" id="S2">
+      <title>Materials and Methods</title>
+      <sec id="S2.SS1">
+        <title>Participants</title>
+        <p>A total of 308 patients collected from September 2017 to February 2019 at the Huadong Hospital Affiliated to Fudan University were enrolled in this study. Included and excluded criteria (<xref rid="B13" ref-type="bibr">Jiang et al., 2020</xref>) are detailed as follows. The included criteria were the following: (1) patients scheduled to undergo non-cardiac surgery with an expected duration of more than 2 h, under general anesthesia; (2) age ≥ 60; and (3) American Society of Anesthesiologists classification I–III. The excluded criteria were the following: (1) education duration &lt;6 years, (2) Mini-Mental State Examination (MMSE) score prior to surgery &lt;24 points, (3) pre-existing mental and/or psychiatric disease, (4) Parkinson’s disease, (5) history of cardiac and/or central nervous system vascular disease, (6) history of cardiac and cranial surgeries, (7) taking sedatives or antidepressants during the nearest year, (8) alcohol or drug abuse, (9) severe hepatic or renal dysfunction, (10) vision and audition impairment or language troubles impeding communication, (11) situations unsuitable for an MRI scan, and (12) unwillingness to complete repeat neuropsychological tests. We use the Z-score method to determine whether DNR occurs after surgery. Specifically, we first calculate the difference between the baseline score and the post-operative score of a certain neuropsychological test. Then, we calculate the difference between the two scores of the healthy control group before and after the test. Finally, we subtract the difference of the control group from the difference of the patient group and calculate the Z-score by dividing the result by the standard deviation of the difference between the two scores of the control group. When the Z score of two or more tests was more than 1.96, the patient was judged to have DNR. Anesthesia protocols and neurocognitive assessment have also been published in our previous study (<xref rid="B13" ref-type="bibr">Jiang et al., 2020</xref>); for more details, please refer to it. After the evaluation of the included and excluded criteria, the final data of 74 cases, including 16 cases of DNR and 58 cases of non-DNR, were used for experimental model building and testing. This was a nested case–control study approved by the Ethics Committee of Huadong Hospital Affiliated to Fudan University with the approval number of 20170020.</p>
+      </sec>
+      <sec id="S2.SS2">
+        <title>Image Acquisition and Pre-processing</title>
+        <p>All MRI scan were performed at least 1 day prior to surgery on a 3.0 T MRI scanner (Skyra, Siemens, Munich, Germany). The imaging parameters of rs-fMRI data included 33 axial slices, slices of thickness = 4 mm with a 0-mm gap, <italic toggle="yes">TR</italic> = 3,000 ms, <italic toggle="yes">TE</italic> = 30 ms, voxel size = 3.4 × 3.4 × 4 mm<sup>3</sup>, and flip angle = 90°. In this scan, 120 volumes were obtained. Data preprocessing procedures were performed with Statistical Parametric Mapping (SPM12, The Wellcome Trust Centre for Human Neuroimaging, London, United Kingdom) and RESTplus version 1.22 (Institutes of Psychological Sciences, Hangzhou Normal University, Hangzhou, China) in MATLAB version R2019b (MathWorks, Inc., Natick, MA, United States) (<xref rid="B19" ref-type="bibr">Ren et al., 2016</xref>).</p>
+        <p>The first five volumes of each case were discarded to reduce the potential noise interference of the imaging instrument. The remaining volumes were subjected to slice-time correction, realignment, and spatial smoothing with a 6 × 6 × 6 mm<sup>3</sup> Gaussian kernel in turn. After the linear trend of time course removal, temporal filtering (0.01–0.08 Hz) were performed to remove the effects of low-frequency drift and high-frequency noise. The cerebrospinal fluid and white matter signal were regressed out as nuisance covariates. Finally, the volumes were spatially normalized to the Automated Anatomical Labeling (AAL-90) template and further partitioned into 90 regions of interest (ROIs) (<xref rid="B23" ref-type="bibr">Tzourio-Mazoyer et al., 2002</xref>).</p>
+      </sec>
+      <sec id="S2.SS3">
+        <title>Feature Extraction of Brain FC Network</title>
+        <p>In order to construct a brain FC network, rs-fMRI images need to be converted into brain activity signals. As shown in <xref rid="F1" ref-type="fig">Figure 1</xref>, by averaging the voxels of each brain region of each volume, we can get a time series, which reflects the change in the activity of each brain region. Then, we divide the time series into several sub-series in the time dimension through the sliding window. Denoted by t, w, and s the length of the original signal, sliding window size, and sliding step size, respectively, there will be K = ((t−w)/s)1 sub-series after the sliding window operation. Denoted by <inline-formula><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" id="INEQ3" overflow="scroll"><mml:mrow><mml:msubsup><mml:mtext>x</mml:mtext><mml:mi>i</mml:mi><mml:mi>j</mml:mi></mml:msubsup><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mi>n</mml:mi><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:mrow></mml:math></inline-formula> the <italic toggle="yes">j</italic>-th sub-series in the <italic toggle="yes">i</italic>-th ROI of case <italic toggle="yes">n</italic> and denoted by X<sup><italic toggle="yes">j</italic></sup><inline-formula><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" id="INEQ5" overflow="scroll"><mml:mrow><mml:mrow><mml:mo>(</mml:mo><mml:mi>n</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mrow><mml:mo>{</mml:mo><mml:mrow><mml:msubsup><mml:mtext>x</mml:mtext><mml:mn>1</mml:mn><mml:mi>j</mml:mi></mml:msubsup><mml:mrow><mml:mo>(</mml:mo><mml:mi>n</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mo rspace="7.5pt">,</mml:mo><mml:mrow><mml:msubsup><mml:mtext>x</mml:mtext><mml:mn>2</mml:mn><mml:mi>j</mml:mi></mml:msubsup><mml:mrow><mml:mo>(</mml:mo><mml:mi>n</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mo>,</mml:mo><mml:mrow><mml:mpadded width="+5pt"><mml:mi mathvariant="normal">…</mml:mi></mml:mpadded><mml:msubsup><mml:mtext>x</mml:mtext><mml:mn>90</mml:mn><mml:mi>j</mml:mi></mml:msubsup><mml:mrow><mml:mo>(</mml:mo><mml:mi>n</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mo>}</mml:mo></mml:mrow></mml:mrow></mml:math></inline-formula> the <italic toggle="yes">j</italic>-th sub-series in total 90 brain regions of case <italic toggle="yes">n</italic>, the brain network FC matrix A<sup><italic toggle="yes">j</italic></sup>(<italic toggle="yes">n</italic>) corresponding to the <italic toggle="yes">j</italic>-th sub-series of case <italic toggle="yes">n</italic> can be obtained by calculating the Pearson’s correlation strength between two different ROIs (<xref rid="B21" ref-type="bibr">Salvador et al., 2005</xref>):</p>
+        <disp-formula id="S2.Ex1">
+<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" id="M1" display="block" overflow="scroll"><mml:mrow><mml:mrow><mml:msubsup><mml:mtext mathvariant="bold">a</mml:mtext><mml:mrow><mml:mi mathvariant="bold">p</mml:mi><mml:mo>,</mml:mo><mml:mi mathvariant="bold">q</mml:mi></mml:mrow><mml:mi mathvariant="bold">j</mml:mi></mml:msubsup><mml:mrow><mml:mo>(</mml:mo><mml:mi mathvariant="bold">n</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mo>=</mml:mo><mml:mrow><mml:mtext mathvariant="bold">c</mml:mtext><mml:mi>o</mml:mi><mml:mi>r</mml:mi><mml:mi>r</mml:mi><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mrow><mml:msubsup><mml:mtext mathvariant="bold">x</mml:mtext><mml:mi mathvariant="bold">p</mml:mi><mml:mi mathvariant="bold">j</mml:mi></mml:msubsup><mml:mrow><mml:mo>(</mml:mo><mml:mi mathvariant="bold">n</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mo>,</mml:mo><mml:mrow><mml:msubsup><mml:mtext mathvariant="bold">x</mml:mtext><mml:mi mathvariant="bold">q</mml:mi><mml:mi mathvariant="bold">j</mml:mi></mml:msubsup><mml:mrow><mml:mo>(</mml:mo><mml:mi mathvariant="bold">n</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:mrow></mml:mrow></mml:math>
+</disp-formula>
+        <fig position="float" id="F1">
+          <label>FIGURE 1</label>
+          <caption>
+            <p>The overall framework of the proposed method. The pre-processed fMRI is registered to the ALL brain template and divided into 90 ROI regions in advance. Then calculate the average gray value of each ROI regions to get the time series of each ROI region. Convert the time series of all ROI regions into low-order FC network diagrams through sliding window operation and correlation calculations. Perform clustering and correlation analysis of the low-order FC network to obtain the high-order FC network. Finally, extract the low/high-order FC network graph features, and establish machine learning model to recognize DNR.</p>
+          </caption>
+          <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="fnins-15-707944-g001" position="float"/>
+        </fig>
+        <p>where <italic toggle="yes">p</italic> and <italic toggle="yes">q</italic> represent two ROIs. Regarding each ROI as a node and the strength of the correlation coefficient between regions as an edge, then a K dynamic brain FC network can be obtained for each case. In our experiment, we set the sliding window size and sliding step size to 90 and 1, respectively.</p>
+        <p>To describe the characteristics of the brain FC network more comprehensively, we further construct the high-order dynamic network by calculating the correlation between the elements of the low-order connection matrix. Specifically, denoted by <inline-formula><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" id="INEQ7" overflow="scroll"><mml:mrow><mml:mrow><mml:msub><mml:mi>y</mml:mi><mml:mrow><mml:mi>p</mml:mi><mml:mo>,</mml:mo><mml:mi>q</mml:mi></mml:mrow></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>n</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mo>=</mml:mo><mml:mrow><mml:mrow><mml:mo>{</mml:mo><mml:mrow><mml:msubsup><mml:mi>a</mml:mi><mml:mrow><mml:mi>p</mml:mi><mml:mo>,</mml:mo><mml:mi>q</mml:mi></mml:mrow><mml:mn>1</mml:mn></mml:msubsup><mml:mrow><mml:mo>(</mml:mo><mml:mi>n</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mo>}</mml:mo></mml:mrow><mml:mo>,</mml:mo><mml:mrow><mml:mo>{</mml:mo><mml:mrow><mml:msubsup><mml:mi>a</mml:mi><mml:mrow><mml:mi>p</mml:mi><mml:mo>,</mml:mo><mml:mi>q</mml:mi></mml:mrow><mml:mn>2</mml:mn></mml:msubsup><mml:mrow><mml:mo>(</mml:mo><mml:mi>n</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mo>}</mml:mo></mml:mrow><mml:mo>,</mml:mo><mml:mi mathvariant="normal">…</mml:mi><mml:mo>,</mml:mo><mml:mrow><mml:mo>{</mml:mo><mml:mrow><mml:msubsup><mml:mi>a</mml:mi><mml:mrow><mml:mi>p</mml:mi><mml:mo>,</mml:mo><mml:mi>q</mml:mi></mml:mrow><mml:mi>K</mml:mi></mml:msubsup><mml:mrow><mml:mo>(</mml:mo><mml:mi>n</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mo>}</mml:mo></mml:mrow></mml:mrow></mml:mrow></mml:math></inline-formula> and <inline-formula><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" id="INEQ8" overflow="scroll"><mml:mrow><mml:mrow><mml:msub><mml:mi>y</mml:mi><mml:mrow><mml:mi>u</mml:mi><mml:mo>,</mml:mo><mml:mi>v</mml:mi></mml:mrow></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>n</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mo>=</mml:mo><mml:mrow><mml:mrow><mml:mo>{</mml:mo><mml:mrow><mml:msubsup><mml:mi>a</mml:mi><mml:mrow><mml:mi>u</mml:mi><mml:mo>,</mml:mo><mml:mi>v</mml:mi></mml:mrow><mml:mn>1</mml:mn></mml:msubsup><mml:mrow><mml:mo>(</mml:mo><mml:mi>n</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mo>}</mml:mo></mml:mrow><mml:mo>,</mml:mo><mml:mrow><mml:mo>{</mml:mo><mml:mrow><mml:msubsup><mml:mi>a</mml:mi><mml:mrow><mml:mi>u</mml:mi><mml:mo>,</mml:mo><mml:mi>v</mml:mi></mml:mrow><mml:mn>2</mml:mn></mml:msubsup><mml:mrow><mml:mo>(</mml:mo><mml:mi>n</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mo>}</mml:mo></mml:mrow><mml:mo>,</mml:mo><mml:mi mathvariant="normal">…</mml:mi><mml:mo>,</mml:mo><mml:mrow><mml:mo>{</mml:mo><mml:mrow><mml:msubsup><mml:mi>a</mml:mi><mml:mrow><mml:mi>u</mml:mi><mml:mo>,</mml:mo><mml:mi>v</mml:mi></mml:mrow><mml:mi>K</mml:mi></mml:msubsup><mml:mrow><mml:mo>(</mml:mo><mml:mi>n</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mo>}</mml:mo></mml:mrow></mml:mrow></mml:mrow></mml:math></inline-formula> the element sets of the <italic toggle="yes">p</italic>−<italic toggle="yes">q</italic>-th and the <italic toggle="yes">u</italic>−<italic toggle="yes">v</italic>-th positions in the K low-order FC networks, the high-order correlation between the <italic toggle="yes">p</italic>−<italic toggle="yes">q</italic>-th element and the <italic toggle="yes">u</italic>−<italic toggle="yes">v</italic>-th element can be calculated as</p>
+        <disp-formula id="S2.Ex2">
+<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" id="M2" display="block" overflow="scroll"><mml:mrow><mml:mrow><mml:msub><mml:mtext mathvariant="bold">h</mml:mtext><mml:mrow><mml:mi mathvariant="bold">p</mml:mi><mml:mo>,</mml:mo><mml:mi mathvariant="bold">q</mml:mi><mml:mo>,</mml:mo><mml:mi mathvariant="bold">u</mml:mi><mml:mo>,</mml:mo><mml:mi mathvariant="bold">v</mml:mi></mml:mrow></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi mathvariant="bold">n</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mo>=</mml:mo><mml:mrow><mml:mtext mathvariant="bold">c</mml:mtext><mml:mi>o</mml:mi><mml:mi>r</mml:mi><mml:mi>r</mml:mi><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mrow><mml:msub><mml:mtext mathvariant="bold">y</mml:mtext><mml:mrow><mml:mi mathvariant="bold">p</mml:mi><mml:mo>,</mml:mo><mml:mi mathvariant="bold">q</mml:mi></mml:mrow></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi mathvariant="bold">n</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mo>,</mml:mo><mml:mrow><mml:msub><mml:mtext mathvariant="bold">y</mml:mtext><mml:mrow><mml:mi mathvariant="bold">u</mml:mi><mml:mo>,</mml:mo><mml:mi mathvariant="bold">v</mml:mi></mml:mrow></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi mathvariant="bold">n</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:mrow></mml:mrow></mml:math>
+</disp-formula>
+        <p>This high-order dynamic network not only describes the relevance of the activities of multiple groups of brain intervals but also integrates the entire time dimension information to achieve a higher temporal and spatial resolution of the description of brain FCs. In fact, since the range of <italic toggle="yes">p</italic>, <italic toggle="yes">q</italic>, <italic toggle="yes">u</italic>, <italic toggle="yes">v</italic> is all 1–90, the high-order brain network of one case has 90<sup>4</sup> elements, which may not only lead to time-consuming computation but also contain some redundant information. Thus, we use an element time series clustering method to convert the element–order correlation (90 × 90 vs. 90 × 90) into group correlation (300 vs. 300), where 300 is the number of clusters. When obtaining the low/high-order FC networks, we establish weighted undirected graphs for feature extraction. Note that for the K low-order networks, we perform feature extraction on the averaged network. Based on the undirected graphs, we extract local clustering coefficients to quantify the brain function network. It describes the degree to which a node in the graph and its neighbor nodes gather to form a clique (complete graph) and can be calculated as (<xref rid="B22" ref-type="bibr">Strogatz, 2001</xref>)</p>
+        <disp-formula id="S2.Ex3">
+<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" id="M3" display="block" overflow="scroll"><mml:mrow><mml:msub><mml:mtext mathvariant="bold">c</mml:mtext><mml:mi mathvariant="bold">i</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:mn mathvariant="bold">2</mml:mn><mml:mrow><mml:msub><mml:mo largeop="true" symmetric="true">∑</mml:mo><mml:mrow><mml:mi mathvariant="bold">j</mml:mi><mml:mo>∈</mml:mo><mml:msub><mml:mi mathvariant="bold">N</mml:mi><mml:mi mathvariant="bold">i</mml:mi></mml:msub></mml:mrow></mml:msub><mml:msup><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:msub><mml:mtext mathvariant="bold">w</mml:mtext><mml:mrow><mml:mi mathvariant="bold">i</mml:mi><mml:mi>j</mml:mi></mml:mrow></mml:msub><mml:mo stretchy="false">)</mml:mo></mml:mrow><mml:mrow><mml:mn mathvariant="bold">1</mml:mn><mml:mo>/</mml:mo><mml:mn mathvariant="bold">3</mml:mn></mml:mrow></mml:msup></mml:mrow></mml:mrow><mml:mrow><mml:mrow><mml:mo>|</mml:mo><mml:msub><mml:mtext mathvariant="bold">N</mml:mtext><mml:mi mathvariant="bold">i</mml:mi></mml:msub><mml:mo>|</mml:mo></mml:mrow><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mrow><mml:mrow><mml:mo>|</mml:mo><mml:msub><mml:mtext mathvariant="bold">N</mml:mtext><mml:mi mathvariant="bold">i</mml:mi></mml:msub><mml:mo>|</mml:mo></mml:mrow><mml:mo>-</mml:mo><mml:mn mathvariant="bold">1</mml:mn></mml:mrow><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:mrow></mml:mfrac></mml:mrow></mml:math>
+</disp-formula>
+        <p>where <italic toggle="yes">N<sub>i</sub></italic> denotes the number of neighbors of node <italic toggle="yes">i</italic> and <italic toggle="yes">w</italic><sub><italic toggle="yes">ij</italic></sub> is the weight between nodes <italic toggle="yes">i</italic> and <italic toggle="yes">j</italic>.</p>
+      </sec>
+      <sec id="S2.SS4">
+        <title>Machine Learning Modeling</title>
+        <p>Ninety low-order and 300 high-order FC network features were finally extracted for each subject. These features contain some redundant information, which will not only increase the computational complexity of the subsequent classification model but also increase the risk of model overfitting (<xref rid="B27" ref-type="bibr">Wu et al., 2019a</xref>). Therefore, before establishing the classification model, we first perform feature dimensionality reduction. In recent years, feature selection based on sparse representation has achieved encouraging performances in many radiomics studies (<xref rid="B26" ref-type="bibr">Wu et al., 2018</xref>, <xref rid="B28" ref-type="bibr">2019b</xref>). Compared with traditional statistical estimation-based feature selection methods, such as independent-sample t-test, sparse representation feature selection can consider both the correlation between features and labels and the redundancy between features. Therefore, we utilize sparse representation to select a few of discriminative features for subsequent classification. The model can be formulated as</p>
+        <disp-formula id="S2.Ex4">
+<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" id="M4" display="block" overflow="scroll"><mml:mrow><mml:mover accent="true"><mml:mi mathvariant="normal">φ</mml:mi><mml:mo>^</mml:mo></mml:mover><mml:mo>=</mml:mo><mml:mrow><mml:mrow><mml:munder><mml:mtext>argmin</mml:mtext><mml:mi mathvariant="normal">φ</mml:mi></mml:munder><mml:msubsup><mml:mrow><mml:mo fence="true">||</mml:mo><mml:mrow><mml:mi>l</mml:mi><mml:mo>-</mml:mo><mml:mrow><mml:mi>F</mml:mi><mml:mi mathvariant="normal">φ</mml:mi></mml:mrow></mml:mrow><mml:mo fence="true">||</mml:mo></mml:mrow><mml:mn>2</mml:mn><mml:mn>2</mml:mn></mml:msubsup></mml:mrow><mml:mo>+</mml:mo><mml:mrow><mml:mi mathvariant="normal">η</mml:mi><mml:msub><mml:mrow><mml:mo fence="true">||</mml:mo><mml:mi mathvariant="normal">φ</mml:mi><mml:mo fence="true">||</mml:mo></mml:mrow><mml:mn>0</mml:mn></mml:msub></mml:mrow></mml:mrow></mml:mrow></mml:math>
+</disp-formula>
+        <p>where <italic toggle="yes">l</italic> denotes the sample label set; <italic toggle="yes">F</italic> = [<italic toggle="yes">f</italic><sub>1</sub>;;<italic toggle="yes">f</italic><sub>2</sub>;;<italic toggle="yes">f</italic><sub><italic toggle="yes">J</italic></sub>] denotes the sample feature set, <italic toggle="yes">J</italic> is the number of samples; and <sup>η</sup> is a regularization parameter and is set to 0.1 in our experiments. The absolute value of each element in the representation coefficient <inline-formula><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" id="INEQ16" overflow="scroll"><mml:mover accent="true"><mml:mi mathvariant="normal">φ</mml:mi><mml:mo>^</mml:mo></mml:mover></mml:math></inline-formula> indicates the importance of the corresponding feature. Once the elements of <inline-formula><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" id="INEQ17" overflow="scroll"><mml:mover accent="true"><mml:mi mathvariant="normal">φ</mml:mi><mml:mo>^</mml:mo></mml:mover></mml:math></inline-formula> are calculated, we rank the features according to the values of <inline-formula><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" id="INEQ18" overflow="scroll"><mml:mover accent="true"><mml:mi mathvariant="normal">φ</mml:mi><mml:mo>^</mml:mo></mml:mover></mml:math></inline-formula> in descending order in advance. Then, we use apply a cross-validation-based sequential forward selection strategy to select the optimal feature subset (<xref rid="B34" ref-type="bibr">Zhu et al., 2016</xref>). Specifically, first, we take the top five features as the initial feature subset and evaluate the cross-validation classification effect of the training data set based on the current feature subset. Then, through the loop, we put the 6th to 100th features into the feature subset in turn and evaluate the model classification effect after each feature subset update. When the loop ends, we can find the optimal model classification result, and the feature subset corresponding to the result is the optimal feature subset.</p>
+        <p>We build a classification model on the selected features to predict DNR. In fact, our classification problem has two challenges. On the one hand, the number of experimental samples are relatively small (<italic toggle="yes">n</italic> &lt; 100). On the other hand, the ratio of positive and negative samples is quite different (16 vs. 58). The sparse representation classifier (<xref rid="B25" ref-type="bibr">Wright et al., 2009</xref>) uses a non-parametric training classification method, which reduces the model complexity and the risk of model overfitting under small samples. The model can be formulated as</p>
+        <disp-formula id="S2.Ex5">
+<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" id="M5" display="block" overflow="scroll"><mml:mrow><mml:mover accent="true"><mml:mi mathvariant="normal">β</mml:mi><mml:mo stretchy="false">^</mml:mo></mml:mover><mml:mo>=</mml:mo><mml:mrow><mml:mrow><mml:munder><mml:mtext>argmin</mml:mtext><mml:mi mathvariant="normal">β</mml:mi></mml:munder><mml:msubsup><mml:mrow><mml:mo fence="true">||</mml:mo><mml:mrow><mml:mover accent="true"><mml:mi>f</mml:mi><mml:mo>¯</mml:mo></mml:mover><mml:mo>-</mml:mo><mml:mrow><mml:mover accent="true"><mml:mi>F</mml:mi><mml:mo>¯</mml:mo></mml:mover><mml:mi mathvariant="normal">β</mml:mi></mml:mrow></mml:mrow><mml:mo fence="true">||</mml:mo></mml:mrow><mml:mn>2</mml:mn><mml:mn>2</mml:mn></mml:msubsup></mml:mrow><mml:mo>+</mml:mo><mml:mrow><mml:mi mathvariant="normal">γ</mml:mi><mml:msub><mml:mrow><mml:mo fence="true">||</mml:mo><mml:mi mathvariant="normal">β</mml:mi><mml:mo fence="true">||</mml:mo></mml:mrow><mml:mn>0</mml:mn></mml:msub></mml:mrow></mml:mrow></mml:mrow></mml:math>
+</disp-formula>
+        <p>where <inline-formula><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" id="INEQ19" overflow="scroll"><mml:mover accent="true"><mml:mi>f</mml:mi><mml:mo>¯</mml:mo></mml:mover></mml:math></inline-formula> denotes the testing sample feature after feature selection, <inline-formula><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" id="INEQ20" overflow="scroll"><mml:mrow><mml:mover accent="true"><mml:mi>F</mml:mi><mml:mo>¯</mml:mo></mml:mover><mml:mo>=</mml:mo><mml:mtext>[</mml:mtext><mml:msub><mml:mover accent="true"><mml:mi>F</mml:mi><mml:mo>¯</mml:mo></mml:mover><mml:mn>1</mml:mn></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mover accent="true"><mml:mi>F</mml:mi><mml:mo>¯</mml:mo></mml:mover><mml:mn>2</mml:mn></mml:msub><mml:msub><mml:mover accent="true"><mml:mi>F</mml:mi><mml:mo>¯</mml:mo></mml:mover><mml:mi>C</mml:mi></mml:msub><mml:mo stretchy="false">]</mml:mo></mml:mrow></mml:math></inline-formula> denotes the feature set of the training sample after feature selection, and <italic toggle="yes">C</italic> is the total number of sample categories. γ is sparse representation of control parameters, which is set to 0.05 in this study. When the sparse representation coefficient <inline-formula><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" id="INEQ21" overflow="scroll"><mml:mover accent="true"><mml:mi mathvariant="normal">β</mml:mi><mml:mo>^</mml:mo></mml:mover></mml:math></inline-formula> is obtained, calculate the residual:</p>
+        <disp-formula id="S2.Ex6">
+<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" id="M6" display="block" overflow="scroll"><mml:mrow><mml:mrow><mml:msub><mml:mi>r</mml:mi><mml:mi>c</mml:mi></mml:msub><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mover accent="true"><mml:mi>f</mml:mi><mml:mo>¯</mml:mo></mml:mover><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:mrow><mml:mo>=</mml:mo><mml:mrow><mml:mrow><mml:mover accent="true"><mml:mi>f</mml:mi><mml:mo>¯</mml:mo></mml:mover><mml:mo>-</mml:mo><mml:mrow><mml:mover accent="true"><mml:mi>F</mml:mi><mml:mo>¯</mml:mo></mml:mover><mml:msub><mml:mi mathvariant="normal">δ</mml:mi><mml:mi>c</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mover accent="true"><mml:mi mathvariant="normal">β</mml:mi><mml:mo>^</mml:mo></mml:mover><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:mrow><mml:mo>,</mml:mo><mml:mrow><mml:mpadded width="+6.6pt"><mml:mi>c</mml:mi></mml:mpadded><mml:mrow><mml:mo stretchy="false">[</mml:mo><mml:mn>1</mml:mn><mml:mo>,</mml:mo><mml:mrow><mml:mn>2</mml:mn><mml:mi mathvariant="normal">…</mml:mi><mml:mi>C</mml:mi></mml:mrow><mml:mo stretchy="false">]</mml:mo></mml:mrow></mml:mrow></mml:mrow></mml:mrow></mml:math>
+</disp-formula>
+        <p>where δ<sub><italic toggle="yes">c</italic></sub>(⋅) is used to select the coefficient corresponding to the c-th feature. The final testing sample category is finally determined by <inline-formula><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" id="INEQ23" overflow="scroll"><mml:mrow><mml:mrow><mml:mi>I</mml:mi><mml:mi>D</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mover accent="true"><mml:mi>f</mml:mi><mml:mo>¯</mml:mo></mml:mover><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mo>=</mml:mo><mml:mrow><mml:msub><mml:mrow><mml:mi>a</mml:mi><mml:mi>r</mml:mi><mml:mi>g</mml:mi><mml:mi>m</mml:mi><mml:mi>i</mml:mi><mml:mi>n</mml:mi></mml:mrow><mml:mi>c</mml:mi></mml:msub><mml:mrow><mml:msub><mml:mi>r</mml:mi><mml:mi>c</mml:mi></mml:msub><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mover accent="true"><mml:mi>f</mml:mi><mml:mo>¯</mml:mo></mml:mover><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:mrow></mml:mrow></mml:mrow></mml:math></inline-formula>. It can be seen from the working principle of the sparse representation classifier that it is a non-parametric training classifier, so there is no model training stage. Based on the idea of K proximity classification, in the testing phase, it directly compares the similarity between the test sample and the training sample between different categories to determine the category of the test sample. In particular, the similarity between samples here is measured by calculating the characteristic Euclidean distance between samples. In addition, in the classification process, thanks to the sparse constraints, the classifier can effectively grab the most essential features of the sample and suppress redundant features, thereby reducing the adverse effects of the difference in the number of positive and negative samples.</p>
+        <p>In the model validation stage, we first divide our data into a training set and an independent testing set according to a ratio of 2:1. Then, we perform feature selection and 10-fold cross-validation on the training set. Finally, we train the model on the training set and test the model on the independent testing set. Metrics including the area under the receiver operating characteristic curve (AUC), accuracy (ACC), sensitivity (SEN), and specificity (SPE) (<xref rid="B29" ref-type="bibr">Yu et al., 2020</xref>; <xref rid="B33" ref-type="bibr">Zheng et al., 2020</xref>) are calculated to evaluate the performance of our method.</p>
+      </sec>
+    </sec>
+    <sec sec-type="results" id="S3">
+      <title>Results</title>
+      <p>Seventy-four patients who completed both preoperative and post-operative MRI scans and all neuropsychological tests were used for the final experimental analysis. Among these 74 patients, 16 cases were diagnosed as DNR and 58 cases were diagnosed as non-DNR. According to statistics, the education order of DNR patients was significantly lower than that of non-DNR patients, while in terms of age, gender, height, weight, and obesity, there was no difference between the two groups of patients. <xref rid="T1" ref-type="table">Table 1</xref> reports a detailed comparison of the statistical results of the two groups of patients.</p>
+      <table-wrap position="float" id="T1">
+        <label>TABLE 1</label>
+        <caption>
+          <p>Baseline characteristics.</p>
+        </caption>
+        <table frame="hsides" rules="groups" cellspacing="5" cellpadding="5">
+          <thead>
+            <tr>
+              <td valign="top" align="left" rowspan="1" colspan="1">Variables</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">DNR (16)</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">Non-DNR (58)</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">
+<italic toggle="yes">P</italic>
+</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td valign="top" align="left" rowspan="1" colspan="1">Age (years)</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">63.5 (62.0, 67.0)</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">64.0 (61.0, 68.3)</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.598</td>
+            </tr>
+            <tr>
+              <td valign="top" align="left" rowspan="1" colspan="1">Sex (male/female)</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">12/4</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">29/29</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.075</td>
+            </tr>
+            <tr>
+              <td valign="top" align="left" rowspan="1" colspan="1">Education (year)</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">6 (6, 9)</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">9 (9, 12)</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.002</td>
+            </tr>
+            <tr>
+              <td valign="top" align="left" rowspan="1" colspan="1">Height (m)</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">1.68 (0.08)</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">1.65 (0.08)</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.185</td>
+            </tr>
+            <tr>
+              <td valign="top" align="left" rowspan="1" colspan="1">Weight (kg)</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">59.0 (50.0, 70.5)</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">60.0 (54.8, 70.0)</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.324</td>
+            </tr>
+            <tr>
+              <td valign="top" align="left" rowspan="1" colspan="1">BMI &gt; 24, n</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">3 (18.8)</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">19 (32.8)</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.437</td>
+            </tr>
+            <tr>
+              <td valign="top" align="left" rowspan="1" colspan="1">Smoking, n</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">7 (43.8)</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">15 (25.9)</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.281</td>
+            </tr>
+            <tr>
+              <td valign="top" align="left" rowspan="1" colspan="1">Surgical history, <italic toggle="yes">n</italic></td>
+              <td valign="top" align="center" rowspan="1" colspan="1">6 (37.5)</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">28 (48.3)</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.444</td>
+            </tr>
+          </tbody>
+        </table>
+        <table-wrap-foot>
+          <fn>
+            <p>
+<italic toggle="yes">In the statistical results of the age, education, and weight, the data in brackets give the minimum and maximum values of the variable.</italic>
+</p>
+          </fn>
+        </table-wrap-foot>
+      </table-wrap>
+      <p><xref rid="F2" ref-type="fig">Figure 2</xref> shows the dynamic FC network obtained after sliding window processing on the DNR patient time series signal, where each sub-figure corresponds to a set of sliding window data. It can be seen that there are certain differences in the correlation between the activities of different brain regions in the FC network constructed from the same signal with different time windows. This implies that the dynamic FC network based on the sliding window can effectively extract the time window information of the brain activity. In addition, as shown in <xref rid="F3" ref-type="fig">Figures 3A,B</xref>, we average the FC network connection matrix of all patients and all sliding windows in the DNR and non-DNR groups, respectively, to visually compare the brain network activity of the two groups. The brighter the region in the figure, the stronger the connection between the corresponding two brain regions. In addition, it is obvious that there are more connections among ROIs in the DNR group. The high-order FC network is used to measure the correlation between elements in the low-order FC network. However, the matrix generated by directly calculating the correlation between all elements in the low-order FC network not only contains a lot of redundant information but also increases the calculation amount of the subsequent analysis model. Therefore, based on the clustering method, we first cluster the elements in the low-order FC network according to the time series in all sliding windows of the elements and then calculate the correlation between the various types to build the final high-order FC network. The averaged high-order FC networks of the DNR and no-DNR patients are compared in <xref rid="F3" ref-type="fig">Figures 3C,D</xref>. Consistent with the comparison results in <xref rid="F3" ref-type="fig">Figures 3A,B</xref>, the DNR group exhibits more clusters with positive correlations. The latent and discriminative features in low/high FC networks are quantified in the following part.</p>
+      <fig position="float" id="F2">
+        <label>FIGURE 2</label>
+        <caption>
+          <p>The constructed low-order FC networks. Each sub-figure corresponds to a different dynamic sliding window. Each element in the matrix is the correlation between two brain regions through the pairwise Pearson’s correlation analysis. Element with light color indicates positive correlation, while the dark color shows a competitive or anti-correlation relationship between regions.</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="fnins-15-707944-g002" position="float"/>
+      </fig>
+      <fig position="float" id="F3">
+        <label>FIGURE 3</label>
+        <caption>
+          <p>Averaged low\high-order FC networks for all patients. Panels <bold>(A–D)</bold> are the low-order FC network of DNR, the low-order FC network of No-DNR, the high-order FC network of DNR, and the high-order FC network of No-DNR, respectively. For panels <bold>(A,B)</bold>, each element in the matrix is the correlation between two brain regions. For panels <bold>(C,D)</bold>, each element in the matrix is the correlation between two clusters. Element with light color indicates positive correlation, while the dark color shows a competitive or anti-correlation.</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="fnins-15-707944-g003" position="float"/>
+      </fig>
+      <p>A total of 390 local clustering coefficient features were finally extracted for each patient, where 90 features were extracted from the low-order FC network and 300 features were extracted from the high-order FC network. The low-order FC network features correspond to the 90 brain regions one to one. <italic toggle="yes">Independent-sample t-test</italic> results between these features and the categories show that 15 features are statistical differences in DNR identification (<italic toggle="yes">P</italic> &lt; 0.05) and 3 features are significant statistical differences (<italic toggle="yes">P</italic> &lt; 0.01). After sparse representation-based feature selection (the detailed feature selection process is provided in section “Machine Learning Modeling”), 40 features are selected for the final machine learning modeling, of which 10 features are from the low-order FC network and 30 features are from the high-order FC network. The results of the unsupervised clustering heat map (<xref rid="B17" ref-type="bibr">Liu et al., 2019</xref>) of the 40 features are shown in <xref rid="F4" ref-type="fig">Figure 4</xref>. In the first two rows, blue and yellow represent the results of automatic clustering of samples and red and green represent the true categories of samples. After automatic clustering, 56 out of 74 cases obtain the correct category label, which shows the effectiveness of these features. In addition, we choose three features that had the minimum <italic toggle="yes">p</italic>-value from both low-order and high-order sets to depict their boxplots in <xref rid="F5" ref-type="fig">Figure 5</xref>. For the selected 10 low-order FC network features, we select the 10 brain regions corresponding to them and visualized them in <xref rid="F6" ref-type="fig">Figure 6</xref>. <xref rid="F7" ref-type="fig">Figure 7</xref> shows the importance visualization of the 30 high-order FC networks obtained by feature selection. These 30 high-order FC networks actually correspond to 30 low-order FC network clusters. In the feature selection step, the feature selection model in section “Machine Learning Modeling” calculates the importance values of these high-order FC networks, which are the absolute values of <inline-formula><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" id="INEQ24" overflow="scroll"><mml:mover accent="true"><mml:mi mathvariant="normal">φ</mml:mi><mml:mo>^</mml:mo></mml:mover></mml:math></inline-formula>. We assign these 30 importance values to the corresponding 30 low-order FC network clusters to obtain the result in <xref rid="F7" ref-type="fig">Figure 7</xref>. Therefore, the brighter area corresponds to the cluster with a larger importance value obtained by feature selection; that is, the cluster is more important.</p>
+      <fig position="float" id="F4">
+        <label>FIGURE 4</label>
+        <caption>
+          <p>Unsupervised clustering heat map of the selected 40 features. Rows represent features, columns represent samples. In the first two rows, blue and yellow represent the results of automatic clustering of samples, and red and green represent the true categories of samples.</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="fnins-15-707944-g004" position="float"/>
+      </fig>
+      <fig position="float" id="F5">
+        <label>FIGURE 5</label>
+        <caption>
+          <p>Boxplot of some features from both low-order <bold>(A)</bold> and high-order <bold>(B)</bold> networks. The green color corresponds to DNR group while the blue color corresponds to no-DNR group.</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="fnins-15-707944-g005" position="float"/>
+      </fig>
+      <fig position="float" id="F6">
+        <label>FIGURE 6</label>
+        <caption>
+          <p>Visualized ROIs selected from low-order FC networks.</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="fnins-15-707944-g006" position="float"/>
+      </fig>
+      <fig position="float" id="F7">
+        <label>FIGURE 7</label>
+        <caption>
+          <p>Visualized ROIs selected from high-order FC networks, the brighter the color is, the more important a cluster is.</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="fnins-15-707944-g007" position="float"/>
+      </fig>
+      <p>After feature selection, the sparse representation-based classification model was trained on 49 training data in advance, and then the trained model was tested on the rest of 25 testing data. The final DNR recognition results are reported in <xref rid="T2" ref-type="table">Table 2</xref>, “Low-order feature,” “High-order feature,” and “Combined,” respectively, indicate that the features for model training are only low-order features, only high-order features, and a combination of the two features. The combined method achieves the best performance with AUC, ACC, SEN, and SPE of 0.9561, 0.9200, 0.6667, and 1.000%, respectively. <xref rid="F8" ref-type="fig">Figure 8</xref> shows the ROC curve comparison of the three methods.</p>
+      <table-wrap position="float" id="T2">
+        <label>TABLE 2</label>
+        <caption>
+          <p>Comparison of recognition results on the independent test set.</p>
+        </caption>
+        <table frame="hsides" rules="groups" cellspacing="5" cellpadding="5">
+          <thead>
+            <tr>
+              <td valign="top" align="left" rowspan="1" colspan="1">Method</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">AUC</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">ACC</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">SEN</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">SPE</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td valign="top" align="left" rowspan="1" colspan="1">Low-order feature</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.7368</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.7600</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.5000</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.8421</td>
+            </tr>
+            <tr>
+              <td valign="top" align="left" rowspan="1" colspan="1">High-order feature</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.8684</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.8800</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.5000</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">1.0000</td>
+            </tr>
+            <tr>
+              <td valign="top" align="left" rowspan="1" colspan="1">Combined</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.9561</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.9200</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.6667</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">1.0000</td>
+            </tr>
+          </tbody>
+        </table>
+      </table-wrap>
+      <fig position="float" id="F8">
+        <label>FIGURE 8</label>
+        <caption>
+          <p>ROC curves corresponding to the three methods.</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="fnins-15-707944-g008" position="float"/>
+      </fig>
+    </sec>
+    <sec sec-type="discussion" id="S4">
+      <title>Discussion</title>
+      <p>The results of this study show that the preoperative brain FC network features can be used to predict post-operative DNR by establishing an effective machine learning model. The key findings include the following: (1) The correlation between the activities of different brain regions in DNR patients before surgery is stronger than that in non-DNR patients. (2) The activity of 10 brain areas, namely, Frontal_Sup_L, Frontal_Inf_Oper_R, Frontal_Inf_Tri_L, Frontal_Inf_Orb_R, Rolandic_Oper_R, Calcarine_L, Calcarine_R, Occipital_Mid_R, Angular_L, and Thalamus_R, is highly correlated with whether the patient suffers from DNR after surgery. (3) Based on the multi-order brain FC network features, the established machine learning DNR recognition model in this study has achieved promising results and may provide some guidance for clinical anesthesia surgery for the elderly.</p>
+      <p>Recently, an increasing number of clinical studies have reported that whole-brain-based FC analysis plays a primary role in predicting post-operative cognitive impairment. <xref rid="B13" ref-type="bibr">Jiang et al. (2020)</xref> found that preoperative lower FC between the bilateral MCC and left calcarine was more prone to have post-operative DNR. The results of literature (<xref rid="B35" ref-type="bibr">Zhuang et al., 2019</xref>) showed that patients with cognitive impairment had abnormal regional activities and FC of calcarine. Literature (<xref rid="B18" ref-type="bibr">Moon and Jeong, 2017</xref>) further proves that lower spontaneous activities in the calcarine were independently associated with cognitive impairment. In addition, <xref rid="B32" ref-type="bibr">Zheng et al. (2017)</xref> confirmed that patients with amnestic cognitive impairment, severe cognitive deficits, and major depression disorder all exhibited abnormal FC.</p>
+      <p>Although these studies have examined the preoperative alterations in the brain FC structure with post-operative cognitive impairment and found some consistent findings, most of these studies have the following shortcomings. Firstly, as far as the research subjects are concerned, most of them only pay attention to the relationship between certain brain region activities and post-operative cognitive impairment, without considering the entire brain network activity. Since most brain activities are jointly participated by multiple brain regions, considering only one or a few functional connections of brain regions may ignore some key information that affects the judgment. Secondly, as far as the research process is concerned, they only use some simple statistical estimation methods to explore the factors that may be related to post-operative DNR, and the synergistic effects of multiple features are rarely considered. Finally, most of these methods only reveal some features related to post-operative DNR but do not establish a complete post-operative DNR prediction model, which may provide guidance for the treatment of elderly post-operative patients.</p>
+      <p>Compared with these existing studies, our study has the following advantages. First, we explored the relationship between the whole preoperative brain network activity and post-operative cognitive impairment by establishing a feature extraction method based on the combination of low-order and high-order brain networks. It can be seen from the results in <xref rid="T2" ref-type="table">Table 2</xref> that high-order FC network features are the key to the good results in the proposed method. A low-order network feature is proficient in measuring the correlation between the activities of any two brain regions in a time-varying way, but it cannot describe the correlation between multiple brain regions. Some existing studies (<xref rid="B16" ref-type="bibr">Lei et al., 2020b</xref>) have shown that the correlation of changes in multiple groups of brain regions plays a more important role in FC network-based brain disease diagnosis. Therefore, we build a clustering-based high-order FC network to quantify the correlation between different pairs of brain regions, so as to further explore deeper interaction relationships. Secondly, we utilize sparse representation-based feature selection method rather than traditional statistical estimation methods, such as independent-sample <italic toggle="yes">T</italic>-test, to mine high-resolution features related to post-operative DNR. This feature selection method considers both the correlation between features and tags and the redundancy between features during feature selection, so that it can effectively select a feature subset that best expresses the sample category. Finally, more importantly, we have built a complete DNR prediction model and obtained encouraging prediction results.</p>
+      <p>In our deep learning-based classification model, 30 high-order FC networks are selected for the final DNR recognition. Furthermore, these 30 networks correspond to 30 clusters of low-order FC networks. According to the reviewer’s suggestions, we first visualized the 30 clusters and then discussed these network connections and brain regions. <xref rid="F9" ref-type="fig">Figures 9</xref>–<xref rid="F12" ref-type="fig">12</xref> show the 30 clusters, where each brain network subgraph corresponds to a cluster of low-order FC network. From these figures, we can see that the activity of the symmetrical brain region has a high correlation. For example, in <xref rid="F9" ref-type="fig">Figures 9C,D</xref>, <xref rid="F10" ref-type="fig">10A,F</xref>, <xref rid="F11" ref-type="fig">11B,E</xref>, <xref rid="F12" ref-type="fig">12B,F</xref>, many symmetrical brain connections are grouped into the same cluster. We further count the number of occurrences of each brain region in all of these 30 clusters, among which the top 10 brain regions with the most occurrences are listed as follows in turn: Insula_R, Hippocampus_L, ParaHippocampal_L, Insula_L, Temporal_Pole_Sup_L, Temporal_Pole_Sup_R, Parietal_Inf_R, Frontal_Sup_Orb_L, and Frontal_Inf_Tri_L. According to previous reports, most of these brain regions are related to patients’ cognition, learning, and memory. For example, the human insula has been found to contribute to its crucial role in goal-directed behaviors and emotional regulation, through rapid processing of attentional, cognitive, interoceptive, emotional, and autonomic signals (<xref rid="B7" ref-type="bibr">Craig, 2009</xref>). The effective connectivity analyses studied in <xref rid="B8" ref-type="bibr">Diersch et al. (2021)</xref> revealed that the age-related learning deficits were linked to an increase in hippocampal excitability. <xref rid="B4" ref-type="bibr">Chen et al. (2013)</xref> also found that the reduction in hippocampal volume before surgery is one of the risk factors for post-operative cognitive dysfunction (POCD) in elderly patients. The experimental results in <xref rid="B24" ref-type="bibr">Velia et al. (2013)</xref> showed that the separation of cognitive and sensory nerves has plasticity in the human superior temporal gyrus cortex. As shown in <xref rid="F9" ref-type="fig">Figure 9B</xref>, the second important cluster of our model, Fusiform, is directly connected to Hippocampus and ParaHippocampal. These connections have been proved to directly affect the improvement of individual memory, so we speculate that the features corresponding to these connections may play an important role in DNR prediction. For the explanation of some other high-order FC features, since there is relatively little research in this research area, and our machine learning model integrates all selected features for classification, it is difficult for us to directly interpret the relationship between the occurrence of DNR and a certain FC feature. This is also the main work we need to complete in the future.</p>
+      <fig position="float" id="F9">
+        <label>FIGURE 9</label>
+        <caption>
+          <p>Clusters of low-order FC network (1–8). <bold>(A–H)</bold> First to eighth clusters.</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="fnins-15-707944-g009" position="float"/>
+      </fig>
+      <fig position="float" id="F10">
+        <label>FIGURE 10</label>
+        <caption>
+          <p>Clusters of low-order FC network (9–16). <bold>(A–H)</bold> Ninth to sixteenth clusters.</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="fnins-15-707944-g010" position="float"/>
+      </fig>
+      <fig position="float" id="F11">
+        <label>FIGURE 11</label>
+        <caption>
+          <p>Clusters of low-order FC network (17–24). <bold>(A–H)</bold> Seventeenth to twenty-fourth clusters.</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="fnins-15-707944-g011" position="float"/>
+      </fig>
+      <fig position="float" id="F12">
+        <label>FIGURE 12</label>
+        <caption>
+          <p>Clusters of low-order FC network (25–30). <bold>(A–F)</bold> Twenty-fifth to thirtieth cluster.</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="fnins-15-707944-g012" position="float"/>
+      </fig>
+      <p>There are three limitations in our study. First, the diagnosis results of all cases are based on the post-operative neuropsychological tests performed at 7–14 days after surgery. Due to the influence of other post-operative factors, such as pain and inflammatory activity, the diagnosis of post-operative cognitive impairment in this period of time may be too early. Although the patients enrolled in our experiment do not experience pain and other symptoms during neuropsychological testing, the possibility of these effects cannot be completely ruled out. Second, the amount of experimental data is limited. A sufficient amount of data is the guarantee for the reliability and stability of machine learning models. In our experiment, 74 cases of data were used for model training and testing. Although we conducted strict training and testing data division, the stability of the model results still needs to be verified on more data sets, especially multi-center data. Therefore, in future work, we will further collect a large amount of multi-center data to verify the proposed model. Third, we build a dynamic FC network by manually setting a fixed-scale sliding window instead of in an adaptive way. Since the signal itself has certain changing characteristics, setting an adaptive sliding window will more effectively reflect the essential characteristics of the signal. Therefore, some engineering improvements will be made in the future to address this problem.</p>
+    </sec>
+    <sec sec-type="data-availability" id="S5">
+      <title>Data Availability Statement</title>
+      <p>The raw data supporting the conclusions of this article will be made available by the authors, without undue reservation.</p>
+    </sec>
+    <sec id="S6">
+      <title>Ethics Statement</title>
+      <p>The studies involving human participants were reviewed and approved by the Chinese Clinical Trial Registry (Identification number: ChiCTR-DCD-15006096). The patients/participants provided their written informed consent to participate in this study.</p>
+    </sec>
+    <sec id="S7">
+      <title>Author Contributions</title>
+      <p>All authors listed have made a substantial, direct and intellectual contribution to the work, and approved it for publication.</p>
+    </sec>
+    <sec sec-type="COI-statement" id="conf1">
+      <title>Conflict of Interest</title>
+      <p>The authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.</p>
+    </sec>
+    <sec sec-type="disclaimer" id="S8">
+      <title>Publisher’s Note</title>
+      <p>All claims expressed in this article are solely those of the authors and do not necessarily represent those of their affiliated organizations, or those of the publisher, the editors and the reviewers. Any product that may be evaluated in this article, or claim that may be made by its manufacturer, is not guaranteed or endorsed by the publisher.</p>
+    </sec>
+  </body>
+  <back>
+    <sec sec-type="funding-information" id="S9">
+      <title>Funding</title>
+      <p>This work was supported in part by grants from the National Natural Science Foundation of China Youth Fund (62001119), the Project of Science and Technology Commission of Shanghai Municipality (20Y11900200), the Shanghai Municipal Health Commission (2020YJZX0119), the National Key R&amp;D Program of China (2018YFC2002000), and the Shanghai Municipal Key Clinical Specialty (shslczdzk02801).</p>
+    </sec>
+    <ref-list>
+      <title>References</title>
+      <ref id="B1">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Berger</surname><given-names>M.</given-names></name><name><surname>Nadler</surname><given-names>J. W.</given-names></name><name><surname>Browndyke</surname><given-names>J.</given-names></name><name><surname>Terrando</surname><given-names>N.</given-names></name><name><surname>Ponnusamy</surname><given-names>V.</given-names></name><name><surname>Cohen</surname><given-names>H. J.</given-names></name><etal/></person-group> (<year>2015</year>). <article-title>Postoperative cognitive dysfunction.</article-title>
+<source><italic toggle="yes">Anesthesiol. Clin.</italic></source>
+<volume>33</volume>
+<fpage>517</fpage>–<lpage>550</lpage>. <pub-id pub-id-type="doi">10.1007/s00101-009-1657-2</pub-id>
+<pub-id pub-id-type="pmid">26315636</pub-id></mixed-citation>
+      </ref>
+      <ref id="B2">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Calhoun</surname><given-names>V. D.</given-names></name><name><surname>Miller</surname><given-names>R.</given-names></name><name><surname>Pearlson</surname><given-names>G.</given-names></name><name><surname>Adalı</surname><given-names>T.</given-names></name></person-group> (<year>2014</year>). <article-title>The chronnectome: time-varying connectivity networks as the next frontier in fMRI data discovery.</article-title>
+<source><italic toggle="yes">Neuron</italic></source>
+<volume>84</volume>
+<fpage>262</fpage>–<lpage>274</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuron.2014.10.015</pub-id>
+<pub-id pub-id-type="pmid">25374354</pub-id></mixed-citation>
+      </ref>
+      <ref id="B3">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Chang</surname><given-names>C.</given-names></name><name><surname>Glover</surname><given-names>G. H.</given-names></name></person-group> (<year>2010</year>). <article-title>Time–frequency dynamics of resting-state brain connectivity measured with fMRI.</article-title>
+<source><italic toggle="yes">Neuroimage</italic></source>
+<volume>50</volume>
+<fpage>81</fpage>–<lpage>98</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2009.12.011</pub-id>
+<pub-id pub-id-type="pmid">20006716</pub-id></mixed-citation>
+      </ref>
+      <ref id="B4">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Chen</surname><given-names>M. H.</given-names></name><name><surname>Liao</surname><given-names>Y.</given-names></name><name><surname>Rong</surname><given-names>P. F.</given-names></name></person-group> (<year>2013</year>). <article-title>Hippocampalvolume reduction in elderly patients at risk for postoperative cognitive dysfuncation.</article-title>
+<source><italic toggle="yes">J. Anesth.</italic></source>
+<volume>27</volume>
+<fpage>487</fpage>–<lpage>492</lpage>. <pub-id pub-id-type="doi">10.1016/S0197-4580(04)81227-2</pub-id><pub-id pub-id-type="pmid">23371369</pub-id></mixed-citation>
+      </ref>
+      <ref id="B5">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Chen</surname><given-names>X.</given-names></name><name><surname>Zhang</surname><given-names>H.</given-names></name><name><surname>Gao</surname><given-names>Y.</given-names></name><name><surname>Wee</surname><given-names>C. Y.</given-names></name><name><surname>Li</surname><given-names>G.</given-names></name><name><surname>Shenn</surname><given-names>D.</given-names></name><etal/></person-group> (<year>2016</year>). <article-title>High-order resting-state functional connectivity network for MCI classification.</article-title>
+<source><italic toggle="yes">Hum. Brain Mapp.</italic></source>
+<volume>37</volume>
+<fpage>3282</fpage>–<lpage>3296</lpage>. <pub-id pub-id-type="doi">10.1002/hbm.23240</pub-id>
+<pub-id pub-id-type="pmid">27144538</pub-id></mixed-citation>
+      </ref>
+      <ref id="B6">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Chen</surname><given-names>X.</given-names></name><name><surname>Zhang</surname><given-names>H.</given-names></name><name><surname>Zhang</surname><given-names>L.</given-names></name><name><surname>Shen</surname><given-names>C.</given-names></name><name><surname>Lee</surname><given-names>S. W.</given-names></name><name><surname>Shen</surname><given-names>D.</given-names></name></person-group> (<year>2017</year>). <article-title>Extraction of dynamic functional connectivity frombrain grey matter and white matter for MCI classification.</article-title>
+<source><italic toggle="yes">Hum. Brain Mapp.</italic></source>
+<volume>38</volume>
+<fpage>5019</fpage>–<lpage>5034</lpage>. <pub-id pub-id-type="doi">10.1002/hbm.23711</pub-id>
+<pub-id pub-id-type="pmid">28665045</pub-id></mixed-citation>
+      </ref>
+      <ref id="B7">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Craig</surname><given-names>A. D.</given-names></name></person-group> (<year>2009</year>). <article-title>How do you feel–now? The anterior insula and human awareness.</article-title>
+<source><italic toggle="yes">Nat. Rev. Neurosci.</italic></source>
+<volume>10</volume>
+<fpage>59</fpage>–<lpage>70</lpage>. <pub-id pub-id-type="doi">10.1038/nrn2555</pub-id>
+<pub-id pub-id-type="pmid">19096369</pub-id></mixed-citation>
+      </ref>
+      <ref id="B8">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Diersch</surname><given-names>N.</given-names></name><name><surname>Valdes-Herrera</surname><given-names>J. P.</given-names></name><name><surname>Tempelmann</surname><given-names>C.</given-names></name><name><surname>Wolbers</surname><given-names>T.</given-names></name></person-group> (<year>2021</year>). <article-title>Increased hippocampal excitability and altered learning dynamics mediate cognitive mapping deficits in human aging.</article-title>
+<source><italic toggle="yes">J. Neurosci.</italic></source>
+<volume>41</volume>
+<fpage>3204</fpage>–<lpage>3221</lpage>. <pub-id pub-id-type="doi">10.1523/JNEUROSCI.0528-20.2021</pub-id>
+<pub-id pub-id-type="pmid">33648956</pub-id></mixed-citation>
+      </ref>
+      <ref id="B9">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Evered</surname><given-names>L.</given-names></name><name><surname>Scott</surname><given-names>D. A.</given-names></name><name><surname>Silbert</surname><given-names>B.</given-names></name></person-group> (<year>2017</year>). <article-title>Cognitive decline associated with anesthesia and surgery in the elderly: does this contribute to dementia prevalence?</article-title>
+<source><italic toggle="yes">Curr. Opin. Psychiatry</italic></source>
+<volume>30</volume>
+<fpage>220</fpage>–<lpage>226</lpage>.<pub-id pub-id-type="pmid">28212172</pub-id></mixed-citation>
+      </ref>
+      <ref id="B10">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Evered</surname><given-names>L.</given-names></name><name><surname>Silbert</surname><given-names>B.</given-names></name><name><surname>Knopman</surname><given-names>D. S.</given-names></name><name><surname>Scott</surname><given-names>D. A.</given-names></name><name><surname>DeKosky</surname><given-names>S. T.</given-names></name><name><surname>Rasmussen</surname><given-names>L. S.</given-names></name><etal/></person-group> (<year>2018</year>). <article-title>Recommendations for the nomenclature of cognitive change associated with anaesthesia and surgery-2018.</article-title>
+<source><italic toggle="yes">Anesth. Analg.</italic></source>
+<volume>127</volume>
+<fpage>1189</fpage>–<lpage>1195</lpage>.<pub-id pub-id-type="pmid">30325748</pub-id></mixed-citation>
+      </ref>
+      <ref id="B11">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Hogue</surname><given-names>C. W.</given-names></name><name><surname>Hershey</surname><given-names>T.</given-names><suffix>Jr.</suffix></name><name><surname>Dixon</surname><given-names>D.</given-names></name></person-group> (<year>2006</year>). <article-title>Preexisting cognitive impairment in women before cardiac surgery and its relationship with C-reactive protein concentrations.</article-title>
+<source><italic toggle="yes">Anesth. Analg.</italic></source>
+<volume>102</volume>
+<fpage>1602</fpage>–<lpage>1608</lpage>.<pub-id pub-id-type="pmid">16717295</pub-id></mixed-citation>
+      </ref>
+      <ref id="B12">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Hutchison</surname><given-names>R. M.</given-names></name><name><surname>Womelsdorf</surname><given-names>T.</given-names></name><name><surname>Allen</surname><given-names>E. A.</given-names></name><name><surname>Bandettini</surname><given-names>P. A.</given-names></name><name><surname>Calhoun</surname><given-names>V. D.</given-names></name><name><surname>Corbetta</surname><given-names>M.</given-names></name><etal/></person-group> (<year>2013</year>). <article-title>Dynamic functional connectivity: promise, issues, and interpretations.</article-title>
+<source><italic toggle="yes">Neuroimage</italic></source>
+<volume>80</volume>
+<fpage>360</fpage>–<lpage>378</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2013.05.079</pub-id>
+<pub-id pub-id-type="pmid">23707587</pub-id></mixed-citation>
+      </ref>
+      <ref id="B13">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Jiang</surname><given-names>Z.</given-names></name><name><surname>Zhang</surname><given-names>X.</given-names></name><name><surname>Lv</surname><given-names>Y.</given-names></name><name><surname>Zheng</surname><given-names>X.</given-names></name><name><surname>Zhang</surname><given-names>H.</given-names></name><name><surname>Zhang</surname><given-names>X.</given-names></name><etal/></person-group> (<year>2020</year>). <article-title>Preoperative altered spontaneous brain activity and functional connectivity were independent risk factors for delayed neurocognitive recovery in older adults undergoing noncardiac surgery.</article-title>
+<source><italic toggle="yes">Neural Plast.</italic></source>
+<volume>2020</volume>
+<fpage>1</fpage>–<lpage>10</lpage>. <pub-id pub-id-type="doi">10.1155/2019/3681430</pub-id>
+<pub-id pub-id-type="pmid">31428144</pub-id></mixed-citation>
+      </ref>
+      <ref id="B14">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Kiviniemi</surname><given-names>V.</given-names></name><name><surname>Vire</surname><given-names>T.</given-names></name><name><surname>Remes</surname><given-names>J.</given-names></name><name><surname>Elseoud</surname><given-names>A. A.</given-names></name><name><surname>Starck</surname><given-names>T.</given-names></name><name><surname>Tervonen</surname><given-names>O.</given-names></name><etal/></person-group> (<year>2011</year>). <article-title>A sliding time-window ICA reveals spatial variability of the default mode network in time.</article-title>
+<source><italic toggle="yes">Brain Connect.</italic></source>
+<volume>1</volume>
+<fpage>339</fpage>–<lpage>347</lpage>. <pub-id pub-id-type="doi">10.1089/brain.2011.0036</pub-id>
+<pub-id pub-id-type="pmid">22432423</pub-id></mixed-citation>
+      </ref>
+      <ref id="B15">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Lei</surname><given-names>Y.</given-names></name><name><surname>Chen</surname><given-names>X.</given-names></name><name><surname>Su</surname><given-names>J.</given-names></name><name><surname>Zhang</surname><given-names>X.</given-names></name><name><surname>Yang</surname><given-names>H.</given-names></name><name><surname>Gao</surname><given-names>X.</given-names></name></person-group> (<year>2020a</year>). <article-title>Recognition of cognitive impairment in adult moyamoya disease: a classifier based on high-order resting-state functional connectivity network.</article-title>
+<source><italic toggle="yes">Front. Neural Circuits</italic></source>
+<volume>14</volume>:<issue>603208</issue>. <pub-id pub-id-type="doi">10.3389/fncir.2020.603208</pub-id>
+<pub-id pub-id-type="pmid">33408614</pub-id></mixed-citation>
+      </ref>
+      <ref id="B16">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Lei</surname><given-names>Y.</given-names></name><name><surname>Song</surname><given-names>B.</given-names></name><name><surname>Chen</surname><given-names>L.</given-names></name><name><surname>Su</surname><given-names>J.</given-names></name><name><surname>Zhang</surname><given-names>X.</given-names></name><name><surname>Ni</surname><given-names>W.</given-names></name><etal/></person-group> (<year>2020b</year>). <article-title>Reconfigured functional network dynamics in adult moyamoya disease: a resting-state fMRI study.</article-title>
+<source><italic toggle="yes">Brain Imaging Behav.</italic></source>
+<volume>14</volume>
+<fpage>715</fpage>–<lpage>727</lpage>. <pub-id pub-id-type="doi">10.1007/s11682-018-0009-8</pub-id>
+<pub-id pub-id-type="pmid">30511114</pub-id></mixed-citation>
+      </ref>
+      <ref id="B17">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Liu</surname><given-names>T.</given-names></name><name><surname>Zhou</surname><given-names>S.</given-names></name><name><surname>Yu</surname><given-names>J.</given-names></name><name><surname>Guo</surname><given-names>Y.</given-names></name><name><surname>Wang</surname><given-names>Y.</given-names></name><name><surname>Zhou</surname><given-names>Y.</given-names></name><etal/></person-group> (<year>2019</year>). <article-title>Prediction of lymph node metastasis in patients with papillary thyroid carcinoma: a radiomics method based on preoperative ultrasound images.</article-title>
+<source><italic toggle="yes">Technol. Cancer Res. Treat</italic></source>
+<volume>18</volume>:<issue>1533033819831713</issue>. <pub-id pub-id-type="doi">10.1186/1477-7819-10-226</pub-id>
+<pub-id pub-id-type="pmid">23110552</pub-id></mixed-citation>
+      </ref>
+      <ref id="B18">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Moon</surname><given-names>C. M.</given-names></name><name><surname>Jeong</surname><given-names>G. W.</given-names></name></person-group> (<year>2017</year>). <article-title>Functional and morphological alterations associated with working memory dysfunction in patients with generalized anxiety disorder.</article-title>
+<source><italic toggle="yes">Acta Radiol.</italic></source>
+<volume>58</volume>
+<fpage>344</fpage>–<lpage>352</lpage>. <pub-id pub-id-type="doi">10.1177/0284185116649794</pub-id>
+<pub-id pub-id-type="pmid">27235455</pub-id></mixed-citation>
+      </ref>
+      <ref id="B19">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Ren</surname><given-names>P. L.</given-names></name><name><surname>Raymond</surname><given-names>Y.</given-names></name><name><surname>Chapman</surname><given-names>B. P.</given-names></name><name><surname>Mapstone</surname><given-names>M.</given-names></name><name><surname>Porsteinsson</surname><given-names>A.</given-names></name><name><surname>Feng</surname><given-names>L.</given-names></name></person-group> (<year>2016</year>). <article-title>Longitudinal alteration of intrinsic brain activity in the striatum in mild cognitive impairment.</article-title>
+<source><italic toggle="yes">J. Alzheimers Dis.</italic></source>
+<volume>54</volume>
+<fpage>69</fpage>–<lpage>78</lpage>. <pub-id pub-id-type="doi">10.3233/JAD-160368</pub-id>
+<pub-id pub-id-type="pmid">27472880</pub-id></mixed-citation>
+      </ref>
+      <ref id="B20">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Rubinov</surname><given-names>M.</given-names></name><name><surname>Sporns</surname><given-names>O.</given-names></name></person-group> (<year>2010</year>). <article-title>Complex network measures of brain connectivity: uses and interpretations.</article-title>
+<source><italic toggle="yes">Neuroimage</italic></source>
+<volume>52</volume>
+<fpage>1059</fpage>–<lpage>1069</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2009.10.003</pub-id>
+<pub-id pub-id-type="pmid">19819337</pub-id></mixed-citation>
+      </ref>
+      <ref id="B21">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Salvador</surname><given-names>R.</given-names></name><name><surname>Suckling</surname><given-names>J.</given-names></name><name><surname>Schwarzbauer</surname><given-names>C.</given-names></name><name><surname>Bullmore</surname><given-names>E.</given-names></name></person-group> (<year>2005</year>). <article-title>Undirected graphs of frequency-dependent functional connectivity in whole brain networks.</article-title>
+<source><italic toggle="yes">Philos. Trans. R. Soc. Lond. B Biol. Sci.</italic></source>
+<volume>360</volume>
+<fpage>937</fpage>–<lpage>946</lpage>. <pub-id pub-id-type="doi">10.1098/rstb.2005.1645</pub-id>
+<pub-id pub-id-type="pmid">16087438</pub-id></mixed-citation>
+      </ref>
+      <ref id="B22">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Strogatz</surname><given-names>S. H.</given-names></name></person-group> (<year>2001</year>). <article-title>Exploring complex networks.</article-title>
+<source><italic toggle="yes">Nature</italic></source>
+<volume>410</volume>
+<fpage>268</fpage>–<lpage>276</lpage>. <pub-id pub-id-type="doi">10.1038/35065725</pub-id>
+<pub-id pub-id-type="pmid">11258382</pub-id></mixed-citation>
+      </ref>
+      <ref id="B23">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Tzourio-Mazoyer</surname><given-names>N.</given-names></name><name><surname>Landeau</surname><given-names>B.</given-names></name><name><surname>Papathanassiou</surname><given-names>D.</given-names></name><name><surname>Crivello</surname><given-names>F.</given-names></name><name><surname>Etard</surname><given-names>O.</given-names></name><name><surname>Delcroix</surname><given-names>N.</given-names></name><etal/></person-group> (<year>2002</year>). <article-title>Automated anatomical labeling of activations in SPM using a macroscopic anatomical parcellation of the MNI MRI single-subject brain.</article-title>
+<source><italic toggle="yes">Neuroimage</italic></source>
+<volume>15</volume>
+<fpage>273</fpage>–<lpage>289</lpage>. <pub-id pub-id-type="doi">10.1006/nimg.2001.0978</pub-id>
+<pub-id pub-id-type="pmid">11771995</pub-id></mixed-citation>
+      </ref>
+      <ref id="B24">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Velia</surname><given-names>C.</given-names></name><name><surname>Eleni</surname><given-names>O.</given-names></name><name><surname>Jerker</surname><given-names>R.</given-names></name><name><surname>Cheryl</surname><given-names>M. C.</given-names></name><name><surname>Mary</surname><given-names>R.</given-names></name><name><surname>Bencie</surname><given-names>W.</given-names></name></person-group> (<year>2013</year>). <article-title>Dissociating cognitive and sensory neural plasticity in human superior temporal cortex.</article-title>
+<source><italic toggle="yes">Nat. Commun.</italic></source>
+<volume>4</volume>:<issue>1473</issue>. <pub-id pub-id-type="doi">10.1038/ncomms2463</pub-id>
+<pub-id pub-id-type="pmid">23403574</pub-id></mixed-citation>
+      </ref>
+      <ref id="B25">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Wright</surname><given-names>J.</given-names></name><name><surname>Yang</surname><given-names>A. Y.</given-names></name><name><surname>Ganesh</surname><given-names>A.</given-names></name><name><surname>Sastry</surname><given-names>S. S.</given-names></name><name><surname>Ma</surname><given-names>Y.</given-names></name></person-group> (<year>2009</year>). <article-title>Robust face recognition via sparse representation.</article-title>
+<source><italic toggle="yes">IEEE Trans. Pattern Anal. Mach. Intell.</italic></source>
+<volume>31</volume>
+<fpage>210</fpage>–<lpage>227</lpage>. <pub-id pub-id-type="doi">10.1109/TPAMI.2008.79</pub-id>
+<pub-id pub-id-type="pmid">19110489</pub-id></mixed-citation>
+      </ref>
+      <ref id="B26">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Wu</surname><given-names>G.</given-names></name><name><surname>Chen</surname><given-names>Y.</given-names></name><name><surname>Wang</surname><given-names>Y.</given-names></name><name><surname>Yu</surname><given-names>J.</given-names></name><name><surname>Lv</surname><given-names>X.</given-names></name><name><surname>Jue</surname><given-names>X.</given-names></name><etal/></person-group> (<year>2018</year>). <article-title>Sparse representation-based radiomics for the diagnosis of brain tumors.</article-title>
+<source><italic toggle="yes">IEEE Trans. Med. Imaging</italic></source>
+<volume>37</volume>
+<fpage>893</fpage>–<lpage>905</lpage>. <pub-id pub-id-type="doi">10.1109/TMI.2017.2776967</pub-id>
+<pub-id pub-id-type="pmid">29610069</pub-id></mixed-citation>
+      </ref>
+      <ref id="B27">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Wu</surname><given-names>G.</given-names></name><name><surname>Lin</surname><given-names>J.</given-names></name><name><surname>Wang</surname><given-names>Y.</given-names></name><name><surname>Zhao</surname><given-names>J.</given-names></name><name><surname>Yu</surname><given-names>J.</given-names></name></person-group> (<year>2019a</year>). <article-title>Early identification of ischemic stroke in noncontrast computed tomography.</article-title>
+<source><italic toggle="yes">Biomed. Signal Process. Control</italic></source>
+<volume>52</volume>
+<fpage>41</fpage>–<lpage>52</lpage>. <pub-id pub-id-type="doi">10.1016/j.bspc.2019.03.008</pub-id></mixed-citation>
+      </ref>
+      <ref id="B28">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Wu</surname><given-names>G.</given-names></name><name><surname>Wang</surname><given-names>Y.</given-names></name><name><surname>Yu</surname><given-names>J.</given-names></name></person-group> (<year>2019b</year>). <article-title>A sparse representation-based radiomics for outcome prediction of higher grade gliomas.</article-title>
+<source><italic toggle="yes">Med. Phys.</italic></source>
+<volume>46</volume>
+<fpage>250</fpage>–<lpage>261</lpage>. <pub-id pub-id-type="doi">10.1002/mp.13288</pub-id>
+<pub-id pub-id-type="pmid">30418680</pub-id></mixed-citation>
+      </ref>
+      <ref id="B29">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Yu</surname><given-names>J.</given-names></name><name><surname>Deng</surname><given-names>Y.</given-names></name><name><surname>Liu</surname><given-names>T.</given-names></name><name><surname>Zhou</surname><given-names>J.</given-names></name><name><surname>Jia</surname><given-names>X.</given-names></name><name><surname>Xiao</surname><given-names>T.</given-names></name><etal/></person-group> (<year>2020</year>). <article-title>Lymph node metastasis prediction of papillary thyroid carcinoma based on transfer learning radiomics.</article-title>
+<source><italic toggle="yes">Nat. Commun.</italic></source>
+<volume>11</volume>:<issue>4807</issue>. <pub-id pub-id-type="doi">10.1038/s41467-020-18497-3</pub-id>
+<pub-id pub-id-type="pmid">32968067</pub-id></mixed-citation>
+      </ref>
+      <ref id="B30">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zhang</surname><given-names>X.</given-names></name><name><surname>Li</surname><given-names>H.</given-names></name><name><surname>Lv</surname><given-names>Y.</given-names></name><name><surname>Zhu</surname><given-names>Z.</given-names></name><name><surname>Shen</surname><given-names>X.</given-names></name><name><surname>Lu</surname><given-names>Q.</given-names></name><etal/></person-group> (<year>2019</year>). <article-title>Premorbid alterations of spontaneous brain activity in elderly patients with early postoperative cognitive dysfunction: a pilot resting-state functional MRI study.</article-title>
+<source><italic toggle="yes">Front. Neurol.</italic></source>
+<volume>10</volume>:<issue>1062</issue>. <pub-id pub-id-type="doi">10.3389/fneur.2019.01062</pub-id>
+<pub-id pub-id-type="pmid">31649609</pub-id></mixed-citation>
+      </ref>
+      <ref id="B31">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zhao</surname><given-names>F.</given-names></name><name><surname>Zhang</surname><given-names>H.</given-names></name><name><surname>Rekik</surname><given-names>I.</given-names></name><name><surname>An</surname><given-names>Z.</given-names></name><name><surname>Shen</surname><given-names>D.</given-names></name></person-group> (<year>2018</year>). <article-title>Diagnosis of autism spectrum disorders using multi-order high-order functional networks derived from resting-state functional MRI.</article-title>
+<source><italic toggle="yes">Front. Hum. Neurosci.</italic></source>
+<volume>12</volume>:<issue>184</issue>. <pub-id pub-id-type="doi">10.3389/fnhum.2018.00184</pub-id>
+<pub-id pub-id-type="pmid">29867410</pub-id></mixed-citation>
+      </ref>
+      <ref id="B32">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zheng</surname><given-names>L. J.</given-names></name><name><surname>Yang</surname><given-names>G. F.</given-names></name><name><surname>Zhang</surname><given-names>X. Y.</given-names></name><name><surname>Wang</surname><given-names>Y. F.</given-names></name><name><surname>Liu</surname><given-names>Y.</given-names></name><name><surname>Zheng</surname><given-names>G.</given-names></name></person-group> (<year>2017</year>). <article-title>Altered amygdala and hippocampus effective connectivity in mild cognitive impairment patients with depression: a resting-state functional MR imaging study with granger causality analysis.</article-title>
+<source><italic toggle="yes">Oncotarget</italic></source>
+<volume>8</volume>
+<fpage>25021</fpage>–<lpage>25031</lpage>. <pub-id pub-id-type="doi">10.18632/oncotarget.15335</pub-id>
+<pub-id pub-id-type="pmid">28212570</pub-id></mixed-citation>
+      </ref>
+      <ref id="B33">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zheng</surname><given-names>X.</given-names></name><name><surname>Yao</surname><given-names>Z.</given-names></name><name><surname>Huang</surname><given-names>Y.</given-names></name><name><surname>Yu</surname><given-names>Y.</given-names></name><name><surname>Wang</surname><given-names>Y.</given-names></name><name><surname>Liu</surname><given-names>Y.</given-names></name><etal/></person-group> (<year>2020</year>). <article-title>Deep learning radiomics can predict axillary lymph node status in early-stage breast cancer.</article-title>
+<source><italic toggle="yes">Nat. Commun.</italic></source>
+<volume>11</volume>:<issue>1236</issue>. <pub-id pub-id-type="doi">10.1038/s41467-020-15027-z</pub-id>
+<pub-id pub-id-type="pmid">32144248</pub-id></mixed-citation>
+      </ref>
+      <ref id="B34">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zhu</surname><given-names>X.</given-names></name><name><surname>Suk</surname><given-names>H. I.</given-names></name><name><surname>Lee</surname><given-names>S. W.</given-names></name><name><surname>Shen</surname><given-names>D.</given-names></name></person-group> (<year>2016</year>). <article-title>Subspace regularized sparse multitask learning for multi-class neurodegenerative disease identification.</article-title>
+<source><italic toggle="yes">IEEE Trans. Biomed. Eng.</italic></source>
+<volume>63</volume>
+<fpage>607</fpage>–<lpage>618</lpage>. <pub-id pub-id-type="doi">10.1109/TBME.2015.2466616</pub-id>
+<pub-id pub-id-type="pmid">26276982</pub-id></mixed-citation>
+      </ref>
+      <ref id="B35">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zhuang</surname><given-names>L.</given-names></name><name><surname>Liu</surname><given-names>X.</given-names></name><name><surname>Shi</surname><given-names>Y.</given-names></name><name><surname>Liu</surname><given-names>X.</given-names></name><name><surname>Luo</surname><given-names>B.</given-names></name></person-group> (<year>2019</year>). <article-title>Genetic variants of PICALM rs541458 modulate brain spontaneous activity in older adults with amnestic mild cognitive impairment.</article-title>
+<source><italic toggle="yes">Front. Neurol.</italic></source>
+<volume>10</volume>:<issue>494</issue>. <pub-id pub-id-type="doi">10.3389/fneur.2019.00494</pub-id>
+<pub-id pub-id-type="pmid">31133980</pub-id></mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

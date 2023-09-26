@@ -1,0 +1,3624 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article" dtd-version="1.3">
+  <?properties open_access?>
+  <processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats">
+    <restricted-by>pmc</restricted-by>
+  </processing-meta>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">Curr Res Neurobiol</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Curr Res Neurobiol</journal-id>
+      <journal-title-group>
+        <journal-title>Current Research in Neurobiology</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">2665-945X</issn>
+      <publisher>
+        <publisher-name>Elsevier</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">36691404</article-id>
+      <article-id pub-id-type="pmc">9860110</article-id>
+      <article-id pub-id-type="pii">S2665-945X(22)00045-6</article-id>
+      <article-id pub-id-type="doi">10.1016/j.crneur.2022.100072</article-id>
+      <article-id pub-id-type="publisher-id">100072</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Articles from the special issue: Illuminating the Monkey Brain: Organization, Networks and Circuits, edited by Yogita Chudasama and Xiaoqin Wang</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>The use of chemogenetic actuator ligands in nonhuman primate DREADDs-fMRI</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" id="au1">
+          <name>
+            <surname>Cushnie</surname>
+            <given-names>Adriana K.</given-names>
+          </name>
+          <email>cushn003@umn.edu</email>
+          <xref rid="aff1" ref-type="aff">a</xref>
+          <xref rid="cor1" ref-type="corresp">∗</xref>
+        </contrib>
+        <contrib contrib-type="author" id="au2">
+          <name>
+            <surname>Bullock</surname>
+            <given-names>Daniel N.</given-names>
+          </name>
+          <xref rid="aff1" ref-type="aff">a</xref>
+        </contrib>
+        <contrib contrib-type="author" id="au3">
+          <name>
+            <surname>Manea</surname>
+            <given-names>Ana M.G.</given-names>
+          </name>
+          <xref rid="aff1" ref-type="aff">a</xref>
+        </contrib>
+        <contrib contrib-type="author" id="au4">
+          <name>
+            <surname>Tang</surname>
+            <given-names>Wei</given-names>
+          </name>
+          <xref rid="aff2" ref-type="aff">b</xref>
+        </contrib>
+        <contrib contrib-type="author" id="au5">
+          <name>
+            <surname>Zimmermann</surname>
+            <given-names>Jan</given-names>
+          </name>
+          <xref rid="aff1" ref-type="aff">a</xref>
+          <xref rid="aff3" ref-type="aff">c</xref>
+        </contrib>
+        <contrib contrib-type="author" id="au6">
+          <name>
+            <surname>Heilbronner</surname>
+            <given-names>Sarah R.</given-names>
+          </name>
+          <xref rid="aff1" ref-type="aff">a</xref>
+        </contrib>
+        <aff id="aff1"><label>a</label>Department of Neuroscience, University of Minnesota, Minneapolis, MN, 55455, USA</aff>
+        <aff id="aff2"><label>b</label>Department of Computer Science, Program in Neuroscience, Indiana University Bloomington, Bloomington, IN, 47408, USA</aff>
+        <aff id="aff3"><label>c</label>Center for Magnetic Resonance Research, University of Minnesota, Minneapolis, MN, 55455, USA</aff>
+      </contrib-group>
+      <author-notes>
+        <corresp id="cor1"><label>∗</label>Corresponding author. Cushnie 2-164 Jackson Hall 321, Church St SE, Minneapolis, MN, 55455, USA. <email>cushn003@umn.edu</email></corresp>
+      </author-notes>
+      <pub-date pub-type="pmc-release">
+        <day>30</day>
+        <month>12</month>
+        <year>2022</year>
+      </pub-date>
+      <!-- PMC Release delay is 0 months and 0 days and was based on <pub-date
+						pub-type="epub">.-->
+      <pub-date pub-type="collection">
+        <year>2023</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>30</day>
+        <month>12</month>
+        <year>2022</year>
+      </pub-date>
+      <volume>4</volume>
+      <elocation-id>100072</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>2</day>
+          <month>8</month>
+          <year>2022</year>
+        </date>
+        <date date-type="rev-recd">
+          <day>1</day>
+          <month>12</month>
+          <year>2022</year>
+        </date>
+        <date date-type="accepted">
+          <day>26</day>
+          <month>12</month>
+          <year>2022</year>
+        </date>
+      </history>
+      <permissions>
+        <license>
+          <ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbyncndlicense">https://creativecommons.org/licenses/by-nc-nd/4.0/</ali:license_ref>
+          <license-p>This is an open access article under the CC BY-NC-ND license (http://creativecommons.org/licenses/by-nc-nd/4.0/).</license-p>
+        </license>
+      </permissions>
+      <abstract id="abs0010">
+        <p>Designer Receptors Exclusively Activated by Designer Drugs (DREADDs) are engineered receptors that allow for genetically targeted, reversible manipulation of cellular activity via systemic drug administration. DREADD induced manipulations are initiated via the binding of an actuator ligand. Therefore, the use of DREADDs is contingent on the availability of actuator ligands. Actuator ligands low-dose clozapine (CLZ) and deschloroclozapine (DCZ) are highly selective for DREADDs, and, upon binding, induce physiological and behavioral changes in rodents and nonhuman primates (NHPs). Despite this reported specificity, both CLZ and DCZ have partial affinity for a variety of endogenous receptors and can induce dose-specific changes even in naïve animals. As such, this study aimed to examine the effects of CLZ and DCZ on resting-state functional connectivity (rs-FC) and intrinsic neural timescales (INTs) in naïve NHPs. In doing so, we evaluated whether CLZ and DCZ – in the absence of DREADDs – are inert by examining these ligands’ effects on the intrinsic functional properties of the brain. Low-dose DCZ did not induce consistent changes in rs-FC or INTs prior to the expression of DREADDs; however, a high dose resulted in subject-specific changes in rs-FC and INTs. In contrast, CLZ administration induced consistent changes in rs-FC and INTs prior to DREADD expression in our subjects. Our results caution against the use of CLZ by explicitly demonstrating the impact of off-target effects that can confound experimental results. Altogether, these data endorse the use of low dose DCZ for future DREADD-based experiments.</p>
+      </abstract>
+      <abstract abstract-type="graphical" id="abs0015">
+        <title>Graphical abstract</title>
+        <p>
+          <fig id="undfig1" position="anchor">
+            <alt-text id="alttext0010">Image 1</alt-text>
+            <graphic xlink:href="ga1"/>
+          </fig>
+        </p>
+      </abstract>
+      <abstract abstract-type="author-highlights" id="abs0020">
+        <title>Highlights</title>
+        <p>
+          <list list-type="simple" id="ulist0010">
+            <list-item id="u0010">
+              <label>•</label>
+              <p id="p0010">Designer Receptors Exclusively Activated by Designer Drugs (DREADDs) permit reversible manipulation of neuronal activity.</p>
+            </list-item>
+            <list-item id="u0015">
+              <label>•</label>
+              <p id="p0015">The effective use of DREADDs relies on actuator ligands that have minimal off-target effects.</p>
+            </list-item>
+            <list-item id="u0020">
+              <label>•</label>
+              <p id="p0020">Clozapine (CLZ) and deschlroclozapine (DCZ) have different effects on fMRI prior to DREADD expression in macaques.</p>
+            </list-item>
+            <list-item id="u0025">
+              <label>•</label>
+              <p id="p0025">Low-dose DCZ did not alter rs-FC or INTs, though CLZ administration induced consistent cross-subject changes in rs-FC and INTs.</p>
+            </list-item>
+            <list-item id="u0030">
+              <label>•</label>
+              <p id="p0030">These data affirm the use of low-dose DCZ for future studies.</p>
+            </list-item>
+          </list>
+        </p>
+      </abstract>
+      <kwd-group id="pc_D97hV7e7KiWTd84DYzG5jS00KnfcEw8A">
+        <title>Abbreviations</title>
+        <kwd>DREADDs, <bold>Designer Receptors Exclusively Activated by Designer Drugs</bold></kwd>
+        <kwd>rs-fMRI, <bold>Resting-State Functional Magnetic Resonance Imaging</bold></kwd>
+        <kwd>CLZ, Clozapine</kwd>
+        <kwd>DCZ, <bold>Deschloroclozapine</bold></kwd>
+        <kwd>rs-FC, Resting-State Functional Connectivity</kwd>
+        <kwd>INTs, <bold>Intrinsic Neural Timescales</bold></kwd>
+        <kwd>NHP, Nonhuman Primate</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="sec1">
+      <label>1</label>
+      <title>Introduction</title>
+      <p id="p0040">Designer receptors exclusively activated by designer drugs (DREADDs), a chemogenetic tool, are modified muscarinic G protein-coupled receptors that are not sensitive to endogenous ligands (<xref rid="bib2" ref-type="bibr">Armbruster et al., 2007</xref>). DREADDs can be selectively expressed in target neural circuits (<xref rid="bib90" ref-type="bibr">Whissell et al., 2016</xref>), allowing for reversible manipulation of neuronal activity via systemic drug administration (<xref rid="bib2" ref-type="bibr">Armbruster et al., 2007</xref>; <xref rid="bib84" ref-type="bibr">Urban and Roth, 2015</xref>; <xref rid="bib71" ref-type="bibr">Roth, 2016</xref>). DREADD technology has been successfully used to demonstrate the involvement of specific cell populations and circuits in diverse functions and behaviors across different species, including in nonhuman primates (NHPs) (<xref rid="bib28" ref-type="bibr">Grayson, Bliss-moreau et al., 2016</xref>; <xref rid="bib66" ref-type="bibr">Raper et al., 2019</xref>; <xref rid="bib71" ref-type="bibr">Roth, 2016</xref>; <xref rid="bib82" ref-type="bibr">Upright and Baxter, 2020</xref>; <xref rid="bib83" ref-type="bibr">Upright et al., 2018</xref>; <xref rid="bib1" ref-type="bibr">Allen et al., 2022</xref>; <xref rid="bib20" ref-type="bibr">Deffains et al., 2021</xref>; <xref rid="bib21" ref-type="bibr">Eldridge et al., 2016</xref>; <xref rid="bib35" ref-type="bibr">Hirabayashi et al., 2021</xref>; <xref rid="bib57" ref-type="bibr">Nagai et al., 2016</xref>; <xref rid="bib61" ref-type="bibr">Oguchi et al., 2021</xref>; <xref rid="bib62" ref-type="bibr">Oyama et al., 2021</xref>; <xref rid="bib70" ref-type="bibr">Roseboom et al., 2021</xref>; <xref rid="bib86" ref-type="bibr">Vancraeyenest et al., 2020</xref>).</p>
+      <p id="p0045">DREADDs have minimal constitutive activity, and once expressed, require a synthetic actuator ligand to bind to the receptor to be activated. The binding of the DREADD actuator ligand initiates an internal signaling pathway that results in a change in the cell's membrane potential (<xref rid="bib13" ref-type="bibr">Campbell et al., 2018</xref>; <xref rid="bib76" ref-type="bibr">Smith et al., 2016</xref>; <xref rid="bib90" ref-type="bibr">Whissell et al., 2016</xref>; <xref rid="bib94" ref-type="bibr">Zhu and Roth, 2015</xref>). DREADD actuator ligands ideally have a high affinity for one or more DREADDs, minimal off-target effects, and are otherwise pharmacologically inert (<xref rid="bib9" ref-type="bibr">Bonaventura et al., 2019</xref>; <xref rid="bib27" ref-type="bibr">Goutaudier et al., 2019</xref>). Clozapine- N-oxide (CNO) was initially identified as a feasible agonist for DREADDs (<xref rid="bib2" ref-type="bibr">Armbruster et al., 2007</xref>). CNO, however, demonstrates low blood-brain barrier penetrance, as it is a substrate for p-glycoprotein channels (<xref rid="bib5" ref-type="bibr">Bærentzen et al., 2019</xref>; <xref rid="bib26" ref-type="bibr">Gomez et al., 2017</xref>; <xref rid="bib47" ref-type="bibr">MacLaren et al., 2016</xref>; <xref rid="bib65" ref-type="bibr">Raper et al., 2017</xref>). Furthermore, CNO is reverse metabolized to clozapine (CLZ), an atypical antipsychotic drug with an affinity for several endogenous receptors, including muscarinic acetylcholine receptors, serotoninergic receptors, and dopaminergic receptors (<xref rid="bib12" ref-type="bibr">Brunello et al., 1995</xref>; <xref rid="bib14" ref-type="bibr">Chang et al., 1998</xref>; <xref rid="bib16" ref-type="bibr">Chris et al., 1998</xref>; <xref rid="bib17" ref-type="bibr">Ciliax et al., 2000</xref>; <xref rid="bib44" ref-type="bibr">López-Giménez et al., 2001</xref>; <xref rid="bib53" ref-type="bibr">Meltzer, 1989</xref>; <xref rid="bib73" ref-type="bibr">Schotte et al., 1993</xref>). Thus, CNO administration, and its subsequent metabolism to CLZ, allows for potential CLZ-mediated binding to endogenous receptors (<xref rid="bib51" ref-type="bibr">Manvich et al., 2018</xref>; <xref rid="bib65" ref-type="bibr">Raper et al., 2017</xref>). This can induce neural and downstream behavioral changes through circuits not directly targeted by the DREADD (<xref rid="bib26" ref-type="bibr">Gomez et al., 2017</xref>; <xref rid="bib48" ref-type="bibr">Mahler and Aston-Jones, 2018</xref>). To reiterate: CNO has been observed to induce off-target effects, and as such, CNO must be used mindfully as a DREADD ligand, as its use could result in alterations that may not be directly attributable to DREADD-specific modulations. What are alternative options for achieving DREADD-specific effects?</p>
+      <p id="p0050">Newer chemogenetic ligands have been reported to display improved selectivity for DREADDs. Two such ligands are low-dose clozapine (CLZ) and Deschloroclozapine (DCZ). Both have been tested in rodents and NHPs (<xref rid="bib26" ref-type="bibr">Gomez et al., 2017</xref>; <xref rid="bib35" ref-type="bibr">Hirabayashi et al., 2021</xref>; <xref rid="bib58" ref-type="bibr">Nagai et al., 2020</xref>; <xref rid="bib66" ref-type="bibr">Raper et al., 2019</xref>; <xref rid="bib82" ref-type="bibr">Upright and Baxter, 2020</xref>). CLZ and DCZ effectively activate DREADDs, displaying improved blood-brain barrier penetrance and a high affinity for DREADDs compared to CNO. These ligands can be administered at lower doses, while still inducing functional and behavioral changes in the presence of DREADDs (<xref rid="bib58" ref-type="bibr">Nagai et al., 2020</xref>; <xref rid="bib66" ref-type="bibr">Raper et al., 2019</xref>; <xref rid="bib93" ref-type="bibr">Yan et al., 2021</xref>). Moreover, selectivity for DREADDs is greatly improved when using DCZ compared to other actuators-including low-dose CLZ (<xref rid="bib58" ref-type="bibr">Nagai et al., 2020</xref>; <xref rid="bib70" ref-type="bibr">Roseboom et al., 2021</xref>). Nonetheless, in NHPs, a high dose of DCZ (0.3 mg/kg), as well as CLZ (0.2 mg/kg) have both been shown to alter performance, reducing accuracy, on a delayed response task prior to DREADD expression (<xref rid="bib82" ref-type="bibr">Upright and Baxter, 2020</xref>). This highlights the possibility of off-target effects of these putatively improved ligands (<xref rid="bib36" ref-type="bibr">Ilg et al., 2018</xref>; <xref rid="bib52" ref-type="bibr">Manzaneque et al., 2002</xref>; <xref rid="bib82" ref-type="bibr">Upright and Baxter, 2020</xref>)</p>
+      <p id="p0055">DREADDs have been proven to be a useful tool for exploring how specific manipulations can affect whole-brain activity (<xref rid="bib25" ref-type="bibr">Giorgi et al., 2017</xref>; <xref rid="bib28" ref-type="bibr">Grayson et al., 2016</xref>; <xref rid="bib63" ref-type="bibr">Peeters et al., 2020</xref>; <xref rid="bib68" ref-type="bibr">Rocchi et al., 2022</xref>; <xref rid="bib69" ref-type="bibr">Roelofs et al., 2017</xref>). This includes studies using magnetic resonance imaging (MRI), which thereby enables the noninvasive, <italic>in-vivo</italic> investigation of whole-brain, resting-state functional connectivity (rs-FC), providing greater insight into the network organization of the brain (<xref rid="bib19" ref-type="bibr">Damoiseaux et al., 2006</xref>; <xref rid="bib23" ref-type="bibr">Fox and Raichle, 2007</xref>; <xref rid="bib29" ref-type="bibr">Greicius et al., 2009</xref>; <xref rid="bib45" ref-type="bibr">Lv, H et al., 2018</xref>; <xref rid="bib50" ref-type="bibr">Mantini et al., 2007</xref>). Furthermore, altered brain activity and aberrant large-scale network functions (groups of brain regions that show coordinated neural activity), identifiable with rs-FC, are increasingly used to identify and characterize brain disorders (<xref rid="bib6" ref-type="bibr">Bassett and Bullmore, 2009</xref>; <xref rid="bib22" ref-type="bibr">Fornito et al., 2015</xref>; <xref rid="bib87" ref-type="bibr">Wang et al., 2016</xref>; <xref rid="bib70" ref-type="bibr">Roseboom et al., 2021</xref>; <xref rid="bib54" ref-type="bibr">Milham et al., 2021</xref>; <xref rid="bib70" ref-type="bibr">Roseboom et al., 2021</xref>; <xref rid="bib77" ref-type="bibr">Song et al., 2021</xref>; <xref rid="bib81" ref-type="bibr">Tu et al., 2021</xref>).</p>
+      <p id="p0060">An additional investigative opportunity is afforded by the study of temporal fluctuations in brain activity -- a fundamental property of the brain arising from intrinsic regional intrinsic dynamics (<xref rid="bib41" ref-type="bibr">Lerner et al., 2011</xref>; <xref rid="bib56" ref-type="bibr">Murray et al., 2014</xref>; <xref rid="bib78" ref-type="bibr">Stephens et al., 2013</xref>; <xref rid="bib89" ref-type="bibr">Wengler et al., 2020</xref>). Neural processing occurs over different timeframes, which is reflected in regional intrinsic neural timescales (INTs). These are inherent fluctuations in neural signals reflecting the length of time a brain region requires to integrate its inputs (<xref rid="bib33" ref-type="bibr">Hasson et al., 2008</xref>). Previous research has shown that there is a temporal hierarchy to INTs: sensory areas encode information at a faster temporal speed relative to high-order association regions, which require longer processing time so as to allow for the integration of varied types of inputs (<xref rid="bib49" ref-type="bibr">Manea et al., 2022</xref>; <xref rid="bib56" ref-type="bibr">Murray et al., 2014</xref>). Additionally, aberrations in INTs have also been associated with different brain disorders, including autism spectrum disorders and schizophrenia (<xref rid="bib56" ref-type="bibr">Murray et al., 2014</xref>; <xref rid="bib88" ref-type="bibr">Watanabe et al., 2019</xref>; <xref rid="bib89" ref-type="bibr">Wengler et al., 2020</xref>; <xref rid="bib95" ref-type="bibr">Zilio et al., 2021</xref>), suggesting their potential utility as clinically relevant biomarkers. Accordingly, rs-FC and INTs are fundamental properties of the brain, and by using rs-fMRI we can study these to bridge the gap between micro and macro-scale properties of the brain.</p>
+      <p id="p0065">Combining DREADD with a noninvasive neuroimaging technique like rs-fMRI allows for <italic>whole-brain, in-vivo</italic> assessment of genetically guided, causative manipulations of neural circuits (<xref rid="bib28" ref-type="bibr">Grayson et al., 2016</xref>; <xref rid="bib35" ref-type="bibr">Hirabayashi et al., 2021</xref>; <xref rid="bib68" ref-type="bibr">Rocchi et al., 2022</xref>). Crucially, an essential step toward controlled manipulation and evaluation of large-scale network dynamics using DREADD and rs-fMRI is to establish a baseline for using these chemogenetic actuator ligands in rs-FC and INTs <bold><italic>prior</italic></bold> to the expression of DREADDs. To this end, we used rs-fMRI to evaluate the impact of CLZ and DCZ on rs-FC and INTs in experimentally naïve, non-DREADD expressing NHPs. We hypothesized that CLZ administered <bold><italic>prior</italic></bold> to DREADD expression would significantly alter whole-brain rs-FC and INTs, whereas DCZ effects would be less impactful. We also anticipated regional differences in the effects of chemogenetic ligands.</p>
+    </sec>
+    <sec id="sec2">
+      <label>2</label>
+      <title>Methods</title>
+      <p id="p0070"><bold>Subjects:</bold> We obtained data from 2 female adult (age 5 years) macaque monkeys (<italic>Macaca fascicularis</italic>). Weights were 6.5 kg and 5.2 kg at the time of this study. Experimental procedures were carried out in accordance with the University of Minnesota Institutional Animal Care and Use Committee and the National Institute of Health standards for the care and use of nonhuman primates (NHPs). All subjects were fed <italic>ad libitum</italic> and pair-housed within a light and temperature-controlled colony room. Animals were not water restricted. Subjects had no prior experimental history and were fasted for 14–16 h before imaging sessions.</p>
+      <p id="p0075">On scanning days, anesthesia was first induced by intramuscular injection of atropine (0.5 mg/kg), ketamine hydrochloride (7.5 mg/kg), and dexmedetomidine (13 μg/kg). Next, subjects were transported to the scanner anteroom and intubated using an endotracheal tube. Initial anesthesia was maintained using 1.0% isoflurane mixed with oxygen (1L/min during intubation and 2L/min during scanning to compensate for the 12 m length of the tubing used). For functional imaging, the isoflurane level was lowered to 1% (<xref rid="bib46" ref-type="bibr">Lv et al., 2016</xref>). <xref rid="fig1" ref-type="fig">Fig. 1</xref> displays the experimental overview of this study.<fig id="fig1"><label>Fig. 1</label><caption><p><bold>Experimental overview.</bold> Each subject underwent a series of rs-fMRI sessions. Subjects were lightly anesthetized throughout the entirety of the session with 1% isoflurane. Immediately before the start of each rs-fMRI session subjects were given an I.M. dose of chemogenetic ligand or saline. Imaging sessions lasted ∼80 min. The data from each session was processed using a standard preprocessing pipeline. A Region-of-Interest approach was utilized after registration to the template brain NMTv.2. Subsequent analysis was undertaken for resting-state functional connectivity and intrinsic neural timescales.</p></caption><alt-text id="alttext0020">Fig. 1</alt-text><graphic xlink:href="gr1"/></fig></p>
+      <p id="p0080">Subjects were placed onto a custom-built coil bed with integrated head fixation provided by stereotactic ear bars inserted into the ear canals. Subjects were situated in the sphinx position within the bore of the MRI system. Experiments were performed with animals freely breathing. An initial bolus injection of 1.5 μg/kg fentanyl was administered intravenously (i.v), followed by a continuous administration of 3 μg/kg/hr using a syringe pump. Rectal temperature (∼99.6F), respiration (10–15 breaths/min), end-tidal CO2 (25–40), electrocardiogram (70–150 bpm), and SpO2 (&gt;90%) were monitored using an MRI compatible monitor (IRADIMED 3880 MRI Monitor, USA). The temperature was maintained using a circulating water bath, chemical heating pads, and padding for thermal insulation.</p>
+      <p id="p0085"><bold>Ligand preparation:</bold> Ligands were prepared separately for each session at the desired concentration (0.1 mg/kg or 0.2 mg/kg). Water-soluble clozapine (CLZ) (HelloBio catalog #HB6129) and water-soluble Deschloroclozapine (DCZ) (HelloBio catalog # HB9126) dissolved directly into 0.9% sterile saline to the desired concentration. Immediately before the start of a rs-fMRI session, the subjects were given an intramuscular injection of baseline (saline), CLZ (0.1 mg/kg or 0.2 mg/kg) or DCZ (0.1 mg/kg or 0.2 mg/kg). Each subject underwent at least 5 separate rs-fMRI sessions in the following order: (1) saline, (2) DCZ, (2) CLZ. Each rs-fMRI session occurred at least two weeks apart. This allowed for sufficient washout periods for each actuator ligand between sessions (the half-life for CLZ is ∼14 h) and recovery from each rs-fMRI session. Rs-fMRI sessions started within ∼15 min of the intramuscular injection irrespective of ligand to allow for transport of the actuator ligand into the brain (<xref rid="bib58" ref-type="bibr">Nagai et al., 2020</xref>; <xref rid="bib24" ref-type="bibr">Fujimoto et al., 2022</xref>). Sessions lasted approximately 80 min, allowing for sufficient time for ligands to enter the central nervous system (<xref rid="bib58" ref-type="bibr">Nagai et al., 2020</xref>; <xref rid="bib65" ref-type="bibr">Raper et al., 2017</xref>, <xref rid="bib66" ref-type="bibr">2019</xref>). We did not observe any obvious behavioral or other changes throughout the study following each ligand and rs-fMRI session.</p>
+      <p id="p0090"><bold>Data acquisition:</bold> Data acquisition protocols were similar to those detailed in <xref rid="bib92" ref-type="bibr">Yacoub et al. (2020)</xref> and <xref rid="bib49" ref-type="bibr">Manea et al. (2022)</xref>. All data were acquired on a passively shielded 10.5 T, 88 cm diameter clear bore magnet coupled to Siemens gradients (“SC72” body gradients operating at a slew rate of 200 mT/m/s, and 70 mT/m maximal strength) and electronics (Magnetom 10.5T Plus) (Siemens, Erlangen, Germany). Within the gradient set and the bore-liner, the space available for subject insertion was 60 cm in diameter.</p>
+      <p id="p0095">The 10.5T system operates on the E-line (E12U) platform, directly comparable to clinical platforms (3T Prisma/Skyra, 7T Terra). The user interface and pulse sequences were identical to those running on clinical platforms. A custom, in-house built and designed RF coil with an 8-channel transmit/receive end-loaded dipole array of 18 cm length (individually) combined with a close-fitting 16-channel loop receive array head cap, and an 8-channel loop receives an array of 50 × 100 mm under the chin (<xref rid="bib40" ref-type="bibr">Lagore et al., 2021</xref>). The size of the 14 individual receive loops of the head cap was 37 mm with 2 larger ear loops of 80 mm - all receiver loops were arranged in an overlapping configuration for nearest neighbor decoupling. The resulting 32 receive channels were used for all experiments and supported 3-fold acceleration in the phase encoding direction. The coil holder was designed to be a semi-stereotaxic instrument holding the animal's head in a centered sphinx position via customized ear bars. The receive elements were modeled to adhere as close to the surface of the animals' skulls as possible. Transmit phases for the individual transmit channels were fine-tuned for excitation uniformity for one representative mid-sized animal, and the calculated phases were then used for all subsequent acquisitions. Magnetic field homogenization (B0 shimming) was performed using a custom field of view with the Siemens internal 3D mapping routines. Multiple iterations of the shims (using the adjusted field of view (FOV) shim parameters) were performed, and further fine adjustment was performed manually on each animal. Third-order shim elements were ignored for these procedures.</p>
+      <p id="p0100">In all animals, a B1+ (transmit B1) field map was acquired using a vendor-provided flip angle mapping sequence and then power calibrated for each subject. Following B1+ transmit calibration, 3–5 averages (23 min) of a T1 weighted magnetization prepared rapid acquisition gradient-echo protocol (3D MP-RAGE) were acquired for anatomical processing (TR = 3300 ms, TE = 3.56 ms, TI = 1140 ms, flip angle = 5°, slices = 256, matrix = 320 × 260, acquisition voxel size = 0.5 × 0.5 × 0.5 mm3). Images were acquired using in-plane acceleration GRAPPA = 2. A resolution and FOV matched T2 weighted 3D turbo spin-echo sequence (variable flip angle) was run to facilitate B1 inhomogeneity correction.</p>
+      <p id="p0105">Before starting the functional data acquisition, five images were acquired in both phase-encoding directions (R/L, L/R) for offline EPI distortion correction. Six repeats of 700 continuous 2D multiband (MB) EPI (<xref rid="bib55" ref-type="bibr">Moeller et al., 2010</xref>; <xref rid="bib75" ref-type="bibr">Setsompop et al., 2012</xref>; <xref rid="bib85" ref-type="bibr">Uǧurbil et al., 2013</xref>) functional volumes (TR = 1110 ms; TE = 17.6 ms; flip angle = 60°, slices = 58, matrix = 108 × 154; FOV = 81 × 115.5 mm2; acquisition voxel size = 0.75 × 0.75 × 0.75 mm3) were acquired. Images were acquired with a left-right phase encoding direction using in-plane acceleration factor GRAPPA = 3, partial Fourier = 7/8th, and MB or simultaneous multi-slice factor = 2. Since macaques were scanned in sphinx positions, the orientations noted here are consistent with a (head-first supine) typical human brain study (in terms of gradients) but translate differently to the actual macaque orientation.</p>
+      <p id="p0110"><bold>Image Preprocessing.</bold> Preprocessing steps are described in detail in (<xref rid="bib92" ref-type="bibr">Yacoub et al., 2020</xref> and <xref rid="bib49" ref-type="bibr">Manea et al., 2022</xref>). Image processing was performed using a custom pipeline relying on FSL (<xref rid="bib37" ref-type="bibr">Jenkinson et al., 2012</xref>), ANTs (<xref rid="bib3" ref-type="bibr">Avants et al., 2014</xref>; <xref rid="bib4" ref-type="bibr">Avants et al., 2011</xref>), AFNI (<xref rid="bib18" ref-type="bibr">Cox, 1996</xref>) and a heavily modified CONN toolbox (<xref rid="bib91" ref-type="bibr">Whitfield-Gabrieli and Nieto-Castanon, 2012</xref>). Next, images were first motion-corrected using <italic>mcflirt</italic> (registration to the first image). Motion parameters never exceeded 0.5 mm or 0.4° rotation. Next, images were slice-time corrected and EPI distortion corrected using <italic>topup</italic>. Next, anatomical images were nonlinearly warped into the National Institute of Mental Health Macaque Template v2 (NMT) (<xref rid="bib74" ref-type="bibr">Seidlitz et al., 2018</xref>) template using ANTs and 3DQwarp in AFNI. Distortion correction, motion correction, and normalization were performed using a single sinc interpolation. Images were spatially smoothed (FWHM = 2 mm), linear detrended, and denoised using a linear regression approach, including heart rate and respiration, as well as a 5 component nuisance regressor of the masked white matter and cerebrospinal fluid and band-pass filtering (0.008–0.09 Hz) (<xref rid="bib30" ref-type="bibr">Hallquist et al., 2013</xref>).</p>
+      <p id="p0115"><bold>Functional Connectivity Analysis.</bold> Whole-brain functional connectivity was evaluated using a region-of-interest (ROI) based approach. Brain regions were defined based on the NIMH Macaque Template (v2), the Cortical Hierarchy Atlas of the Rhesus Macaque (CHARM) (<xref rid="bib38" ref-type="bibr">Jung et al., 2021</xref>), and the Subcortical Atlas of the Rhesus Macaque (SARM) (<xref rid="bib31" ref-type="bibr">Hartig et al., 2021</xref>). This ROI approach included: 1) calculating the average fMRI time series for all ROIs separately for each of the 6 runs within a session, which was then concatenated and normalized; 2) iteratively performed correlation analysis for each ROI pairing, with the connectivity of each region in the analysis defined by a Fisher-transformed correlation coefficient between the Bold Oxygen Level Dependent time series; 3) subsequent production of individual correlation maps (<xref rid="bib91" ref-type="bibr">Whitfield-Gabrieli and Nieto-Castanon, 2012</xref>).</p>
+      <p id="p0120">For each subject, a delta analysis was performed for each condition combination (drug_[dose] – saline) using the Fisher transformed correlation values from each ROI pair generated in the CONN toolbox. Delta was defined as a drug - saline condition. These results were correlated between subjects to evaluate the consistency of change across the two subjects in our analysis. Subsequent bootstrap resampling (n = 10000) was performed on cross run data to permit the comparison of the resulting distributions. Specifically, ROI-to-ROI correlation values within each condition were sampled, with replacement, to obtain a distribution of correlation values that could be expected from the collected data set from each condition. This was then used to compute a 95% confidence interval for each condition.</p>
+      <p id="p0125">Additionally, a within subject regression was performed for all ROI-to-ROI rs-FC measures for each ligand. These regressions were performed across repeats (n = 6 per condition) such that saline, ligand dose1, ligand dose 2 were treated as ordinal variables resulting in a regression on 18 data points (3[drug condition] x 6[repeats = 18]). Thus, for each subject, 2145 = <inline-formula><mml:math id="M1" altimg="si1.svg"><mml:mrow><mml:mo stretchy="true">(</mml:mo><mml:mfrac><mml:mi>n</mml:mi><mml:mi>k</mml:mi></mml:mfrac><mml:mo stretchy="true">)</mml:mo></mml:mrow></mml:math></inline-formula> (n = 65[ROIS], k = 2) beta values were generated. These beta values were subsequently used to assess the region-specific potency of ligands, as indicated by the magnitude (absolute value) of these values, with larger magnitudes indicating more pronounced ligand effects. Magnitude was used because the primary concern of this investigation was <italic>any</italic> shift from baseline, rather than a particular direction of shift from baseline. Additionally, these beta values were also used to assess the consistency of the actuator ligands’ effect across subjects. To this end, Monkey I beta values were regressed against Monkey D beta values and a Pearson correlation coefficient was obtained<bold>.</bold> For this analysis a Pearson correlation coefficient of r = 0 would have indicated there was no consistency of drug effect between subjects. Whereas r = 1, would have indicated exactly consistent drug effects, while r = −1 would have indicated maximally opposed drug effects.</p>
+      <p id="p0130">To investigate the time course of DCZ and CLZ impact on rs-FC, we performed an additional delta analysis, but at the level of individual runs (6) for each session and for all conditions. Subsequently, the results were correlated between subjects to evaluate the consistency of change over time for the two subjects in our analysis with respect to two phases defined as early (up to 45 min) and late (up to 80 min) following administration of the chemogenetic ligand. A standard deviation was also calculated for each condition which utilized all the data collected from each run comprising a session<bold>.</bold></p>
+      <p id="p0135"><bold>Intrinsic time Scale Analysis.</bold> INTs were calculated by estimating the magnitude of the autocorrelation of the preprocessed functional data (<xref rid="bib49" ref-type="bibr">Manea et al., 2022</xref>; <xref rid="bib88" ref-type="bibr">Watanabe et al., 2019</xref>). At the single-subject level, the INT of each voxel was quantified as follows. First, for each run, the autocorrelation function of each voxel's fMRI signal was estimated. The autocorrelation function correlates yt (time series) and yt + k (lagged time series), where k represents the time lag in steps of TR. Next, the sum of autocorrelation function values was calculated in the initial positive period. The upper limit of this period was set at the point where the autocorrelation function first becomes negative as the time lag increases. The result was used as an index of the INT of the brain region. At the single-subject level, the number of INT maps depended on the number of functional runs. See <xref rid="bib49" ref-type="bibr">Manea et al. (2022)</xref> for additional details.</p>
+    </sec>
+    <sec id="sec3">
+      <label>3</label>
+      <title>Results</title>
+      <sec id="sec3.1">
+        <label>3.1</label>
+        <title>Overview</title>
+        <p id="p0140">The goal of the present study was to examine the effects of chemogenetic ligands DCZ and CLZ on inherent functional brain properties rs-FC and INTs, and to thereby determine whether these ligands were inert in the absence of any DREADD. Across multiple measures, DCZ was not observed to have <italic>reliable</italic> effects on rs-FC. However, both doses of CLZ did induce reliable changes in rs-FC. This was also the case for INTs.</p>
+      </sec>
+      <sec id="sec3.2">
+        <label>3.2</label>
+        <title>Effects of ligands on whole-brain rs-FC</title>
+        <p id="p0145">Regions of Interest (ROIs) were predefined using the NIMH Macaque Template (v2). Preprocessed data was passed into the CONN toolbox. The average fMRI time series for each region was correlated with the rest of the brain and normalized using the Fisher-transformed correlation coefficient for each condition.</p>
+        <p id="p0150">We first asked about the <italic>consistency</italic> of ligand effects on brain-wide rs-FC. We evaluated the change (delta) in rs-FC using the z-transformed correlation coefficient values by subtracting baseline (saline) rs-FC from each ligand's rs-FC (e.g., DCZ 0.1 mg/kg - baseline) for individual ROI-to-ROI pairs (e.g., area_32 connectivity with area_8B) (<xref rid="fig2" ref-type="fig">Fig. 2</xref>A). Subsequently, we correlated these delta values across the two subjects to assess the consistency of ligand-induced changes in rs-FC (<xref rid="fig2" ref-type="fig">Fig. 2</xref>B). Both low-dose and high-dose DCZ-induced changes were uncorrelated (or negatively correlated) between subjects (0.1 mg/kg DCZ: r = 0.0255, p = 0.2372, 95% CI [−0.0159,0.0662]; 0.2 mg/kg DCZ: r = −0.1079, p = 5.535^<sup>−7</sup>, 95% CI [−0.1480, −0.0679]). In contrast, both low-dose and high-dose CLZ-induced changes were correlated between subjects (0.1 mg/kg CLZ: r = 0.3044, p &lt; 0.001 95% CI [0.2607, 0.3476]; 0.2 mg/kg CLZ: r = 0.3129 p &lt; 0.001 95% CI [0.2723, 0. 3529].<fig id="fig2"><label>Fig. 2</label><caption><p><bold>CLZ, but not DCZ, induces changes in resting state functional connectivity that are consistent across the 2 subjects. A)</bold> The change in rs-FC (delta values) was evaluated by subtracting vehicle (saline) rs-FC from ligand-induced rs-FC measures for each ROI-to-ROI pair. Left: Monkey I. Right: Monkey D <bold>B)</bold> Resulting delta values were correlated between Monkey I and Monkey D. <bold>C)</bold> For each subject, the rs-FC generated from each ROI pair was regressed onto drug condition (vehicle low dose, high dose), separately for DCZ and CLZ. The resulting beta values were correlated between Monkey I vs Monkey D.</p></caption><alt-text id="alttext0025">Fig. 2</alt-text><graphic xlink:href="gr2"/></fig></p>
+        <p id="p0155">To further probe consistency across subjects, we regressed the rs-FC generated from each ROI pair onto the independent variable (treated as ordinal) of the drug dosage (vehicle (saline), low-dose, high-dose) separately for DCZ and CLZ. We then correlated the resulting beta values onto Monkey I vs. Monkey D <xref rid="fig2" ref-type="fig">Fig. 2</xref>C. We found a significant, positive relationship between subjects for CLZ (r = 0.3173, p &lt; 0.001). However, for DCZ, we found a significant negative correlation (r = −0.1395, p &lt; 0.001). Thus, CLZ induced significant, consistent changes across subjects, whereas DCZ did not. We next sought to compare between the impact of DCZ and CLZ on rs-FC brain properties. To do this we asked whether chemogenetic ligands enhanced or reduced inter-subject variability in rs-FC, reasoning that the ligands may dampen inter-individual variability, thereby converging upon some shared connectivity motif. Indeed, when we correlated rs-FC across the two subjects by condition, all four drug conditions are associated with more similar rs-FC patterns across the two subjects as opposed to the saline condition which was observed to be the most heterogeneous between subjects: saline: r = 0.4754 p &lt; 0.001 95% CI [0.4397,0.5874]; 0.1 mg/kg DCZ: r = 0.5462 p &lt; 0.001 95% CI [0.5036, 0.5874]; 0.2 mg/kg DCZ r = 0.7130, p &lt; 0.001 95% CI [0.6863,0.7405]; 0.1 mg/kg CLZ r = 0.7327, p &lt; 0.001, p = 95% CI [0.7050,0.7572]; 0.2 mg/kg CLZ r = 0.6696 p &lt; 0.001 95% CI [0.6346,0.7012].</p>
+        <p id="p0160">To probe the effects of actuator ligands over time on rs-FC, first the standard deviation for each ROI-ROI pair rs-FC values across runs (6) for each session was determined <xref rid="fig3" ref-type="fig">Fig. 3</xref>A. The maximum standard deviation observed for any ROI-ROI pair in our analysis was 0.53. This indicates that there was limited variability within any session. Next, we calculated the delta analysis (ligand-saline) and subsequent correlation between subjects for each run within a session <xref rid="fig3" ref-type="fig">Fig. 3</xref>B. This demonstrated that changes in rs-FC were more pronounced later in the sessions (after 40 min from administration) - this is especially clear with CLZ. The effects of DCZ both during the early and late phase following ligand delivery is not distinct.<fig id="fig3"><label>Fig. 3</label><caption><p><bold>Effects of chemogenetic ligands within-session. A)</bold> Left: List of all the ROIs included in the analysis. Right: The cross-runs (each session consists of 6 runs) standard deviation for each ROI-ROI pair in each condition is represented by the pixel color in the connectivity matrix. The maximum standard deviation observed for any particular ROI-ROI pair in our analysis was 0.53. <bold>B)</bold> Correlation of the change in rs-fc. Changes in rs-FC were more pronounced later in the sessions. (For interpretation of the references to color in this figure legend, the reader is referred to the Web version of this article.)</p></caption><alt-text id="alttext0030">Fig. 3</alt-text><graphic xlink:href="gr3"/></fig></p>
+      </sec>
+      <sec id="sec3.3">
+        <label>3.3</label>
+        <title>Chemogenetic actuator ligands differential impact rs-FC across the brain</title>
+        <p id="p0165">Whole-brain analyses are crucial to understanding the impacts of chemogenetic ligands on rs-FC. However, several factors, such as regional differences in receptor expression patterns and distributed and recurrent connections, could differentially mediate alterations in rs-FC (<xref rid="bib58" ref-type="bibr">Nagai et al., 2020</xref>; <xref rid="bib8" ref-type="bibr">Blankenburg et al., 2008</xref>). Thus, there may not be uniform alterations in rs-FC following systemic ligand administration in our DREADD naïve subjects. To address this, we next asked about regional changes in rs-FC due to chemogenetic ligand administration. We asked which ROI pairs exhibited the greatest shift from baseline, as indicated by the magnitude (thus <italic>unsigned</italic> value) by considering the regression values from <xref rid="fig2" ref-type="fig">Fig. 2</xref>C in a region-specific fashion (<xref rid="fig4" ref-type="fig">Fig. 4</xref>). Magnitude was used to investigate <italic>any</italic> shift from baseline, rather than a particular direction of shift from baseline. ROI pairs were thus sorted into five broad divisions: frontal lobe, temporal lobe, parietal lobe, occipital lobe, subcortical regions. The brain regions that showed the greatest shift from baseline were not evenly distributed across the brain: Monkey I DCZ <italic><bold>X</bold></italic>2 = 121.18, p &lt; 0.001; Monkey 1 CLZ <italic><bold>X</bold></italic>2 = 111.72, p &lt; 0.001; Monkey D, DCZ <italic><bold>X</bold></italic>2 = 198.26, p &lt; 0.001 Monkey D CLZ <italic><bold>X</bold></italic>2 = 147.56, p &lt; 0.001. This suggests that ligand-induced changes are not uniform. Notably, temporal lobe regions are underrepresented in the observed impacted regions, relative to expected.<fig id="fig4"><label>Fig. 4</label><caption><p><bold>Regions impacted by chemogenetic ligands are not evenly distributed through the brain.</bold> ROIs identified as belonging to the top absolute 10%, that displayed a shift from baseline after the administration of DCZ (top) vs CLZ (bottom), compared with proportion expected by chance.</p></caption><alt-text id="alttext0035">Fig. 4</alt-text><graphic xlink:href="gr4"/></fig></p>
+      </sec>
+      <sec id="sec3.4">
+        <label>3.4</label>
+        <title>Effects of ligands on whole-brain INTs</title>
+        <p id="p0170">INTs were first estimated at the voxel level. Subsequently, all voxels within each ROI were averaged to generate an INT value for each region in the analysis (<xref rid="bib49" ref-type="bibr">Manea et al., 2022</xref>). ROIs were the same as those in the rs-FC analysis. First, we correlated the INTs between subjects for each condition. This showed that ligand administration caused INTs to become more similar across subjects; the highest correlation was observed following CLZ delivery (<xref rid="fig5" ref-type="fig">Fig. 5</xref>A; saline r = 0.1071 p = 0.3919, 0.1 mg/kg DCZ r = 0.5637 p &lt; 0.001, 0.2 mg/kg DCZ r = 0.5114 p &lt; 0.001, 0.1 mg/kg CLZ r = 0.6333, p &lt; 0.001, and 0.2 mg/kg CLZ r = 0.8033, p &lt; 0.001). Importantly, however, during the baseline (saline) condition, there were key differences between the subjects. Monkey D trended towards shorter INTs across the whole brain (closer to min in <xref rid="fig5" ref-type="fig">Fig. 5</xref>A) compared to Monkey I, where the average INTs values were more distributed (there was a larger range of INT values). These differences in subjects’ INTs are especially notable in parietal regions (postcentral gyrus, superior parietal lobule, the posterior cingulate cortex) and the occipital cortex. This suggests substantial differences in the baseline brain activity of these subjects.<fig id="fig5"><label>Fig. 5</label><caption><p><bold>Effects of DREADD ligands on INTs. A</bold> Surface model representation of INTs measures for each ROI for each condition and subject. For each condition there is a lateral view (left and right) and a medial view (left and right) for Monkey D. and Monkey I. The color bar indicates the range of INTs values. INT does not have a fixed unit. Larger values reflect longer timescales compared to smaller values representing to shorter timescales <bold>B.</bold> Surface model representation of INTs measures for each ROI for each subject and test conditions following difference analysis. (For interpretation of the references to color in this figure legend, the reader is referred to the Web version of this article.)</p></caption><alt-text id="alttext0040">Fig. 5</alt-text><graphic xlink:href="gr5"/></fig></p>
+        <p id="p0175">Next, like the delta analysis performed on the rs-FC above, we evaluated the change in INTs by subtracting baseline (saline) INTs from each ligand's INT (e.g., DCZ1 - baseline) for individual ROIs. These results were correlated between the two subjects to assess ligand-induced changes (<xref rid="fig5" ref-type="fig">Fig. 5</xref>B). These results showed no relationship in INT change between subjects following low-dose DCZ 0.1 mg/kg r = 0.0585, p = 0.64; high-dose 0.2 mg/kg DCZ induced changes were negatively correlated between subjects, r = −0.4018, p &lt; 0.001 (this negative correlation was also detected in the rs-FC results). By contrast, CLZ-induced changes in INTs were significantly correlated between subjects 0.1 mg/kg CLZ r = 0.3271, p = 0.007; 0.2 mg/kg CLZ INT r = 0.3018, p = 0.013.</p>
+      </sec>
+    </sec>
+    <sec id="sec4">
+      <label>4</label>
+      <title>Discussion</title>
+      <p id="p0180">Chemogenetic methods are predicated upon the <italic>targeted and controlled</italic> use of ligands to alter brain activity. We therefore sought to evaluate the effects of the chemogenetic ligands DCZ and CLZ on whole-brain rs-FC and INTs in naïve macaque monkeys prior to the expression of DREADDs. This was done to verify whether these ligands were inert and would therefore not alter brain activity, as measured by rs-FC and INTs, in the absence of DREADDs.</p>
+      <p id="p0185">The chemogenetic actuator ligand DCZ demonstrates increased selectivity for DREADDs, high brain permeability, and is metabolically stable compared to other ligands, including clozapine-<italic>N-</italic>oxide (CNO) and clozapine (CLZ) (<xref rid="bib15" ref-type="bibr">Chen et al., 2015</xref>; <xref rid="bib58" ref-type="bibr">Nagai et al., 2020</xref>; <xref rid="bib93" ref-type="bibr">Yan et al., 2021</xref>). Prior studies have evaluated DCZ effects on PET imaging, electrophysiology, and behavior (<xref rid="bib35" ref-type="bibr">Hirabayashi et al., 2021</xref>; <xref rid="bib59" ref-type="bibr">Nentwig et al., 2021</xref>; <xref rid="bib62" ref-type="bibr">Oyama et al., 2021</xref>; <xref rid="bib82" ref-type="bibr">Upright and Baxter, 2020</xref>; <xref rid="bib93" ref-type="bibr">Yan et al., 2021</xref>). These studies have shown that 0.1 mg/kg DCZ is an effective dose to activate the DREADD (hM<sub>4</sub>Di) once expressed in target cells. We hypothesized that, prior to DREADD expression, the low dose of DCZ would not be sufficient to alter whole-brain rs-FC, due to its limited affinity to endogenous receptors. Indeed, our results showed that a low dose of 0.1 mg/kg DCZ did not induce reliable changes across subjects in functional connectivity. In a similar study, <xref rid="bib24" ref-type="bibr">Fujimoto et al. (2022)</xref> demonstrated that this low dose of 0.1 mg/kg DCZ does not induce significant changes in whole-brain rs-FC in cortical or subcortical brain regions. Our work corroborates theirs. While our study did not evaluate the effects of DCZ in behaving animals, other research groups have tackled this issue. Specifically, Fujimoto and colleagues demonstrated that the low dose of DCZ did not alter socio-emotional functions (using a human intruder task) (<xref rid="bib24" ref-type="bibr">Fujimoto et al., 2022</xref>). Furthermore, <xref rid="bib82" ref-type="bibr">Upright and Baxter (2020)</xref> showed that this dosage did not affect performance on a working memory task in naïve, non-DREADD expressing NHPs. Collectively, these results indicate that a 0.1 mg/kg DCZ dose induces trivial changes in the brain prior to DREADD expression.</p>
+      <p id="p0190">Results from the higher dose condition of DCZ (0.2 mg/kg) were more equivocal. After drug administration, functional connectivity changes were <italic>negatively</italic> correlated between our subjects, highlighting that this intermediary dose resulted in an inconsistent effect across subjects. Thus, not only did 0.2 mg/kg of DCZ fail to shift subjects' functional connectivity networks towards a shared state, but it instead drove the subjects' rs-FC patterns <italic>further</italic> apart. One likely possibility is that individual differences, or even initial network state, may impact the effects of the drug. That is, depending on the existing functional connectivity architecture in place at the time of DCZ administration, the brain connectivity regime may shift towards distinct rather than convergent outcomes. This potentially suggests that network state is an important confound warranting independent consideration, measurement, perhaps even modulation. Importantly, though far less than its DREADD affinity, DCZ also has an affinity for endogenous muscarinic acetylcholine, dopaminergic and serotonergic receptors (<xref rid="bib15" ref-type="bibr">Chen et al., 2015</xref>; <xref rid="bib58" ref-type="bibr">Nagai et al., 2020</xref>; <xref rid="bib93" ref-type="bibr">Yan et al., 2021</xref>). Hence, it is feasible for DCZ to induce changes in neuronal activity via these interactions (and thus independent of DREADDs), especially at higher doses and in a subject-specific manner. The subjects’ variable responses to a higher dose of DCZ, as indicated here, is not unique to our study. <xref rid="bib82" ref-type="bibr">Upright and Baxter (2020)</xref>, used a high dose of 0.3 mg/kg to assess performance on a working memory task in non-DREADD transduced NHPs. Importantly, while they showed a clear impact on performance with this higher dose of DCZ compared to the vehicle, this altered performance was noted in only two of the four subjects. One possibility is that ligand doses may need to be titrated to individual subjects to account for variability in response. This will be facilitated by studies such as the one detailed here and others that set operational guidelines for using these chemogenetic ligands to further DREADD studies. Along these lines, a larger (and thus not directly comparable) dose of DCZ (0.3 mg/kg) administered prior to DREADD expression <italic>does</italic> result in significant rs-FC changes (<xref rid="bib24" ref-type="bibr">Fujimoto et al., 2022</xref>), as well as altered performance on socio-emotional (<xref rid="bib24" ref-type="bibr">Fujimoto et al., 2022</xref>) and working memory tasks (<xref rid="bib82" ref-type="bibr">Upright and Baxter, 2020</xref>). Importantly, this study, unlike our own, assessed changes in behavior, a step that will be critical for understanding brain function and treating brain disorders. Together, these results highlight that higher doses (&gt;0.1 mg/kg DCZ, - the amount recommended for chemogenetic studies (<xref rid="bib58" ref-type="bibr">Nagai et al., 2020</xref>)) may promote the unintended binding of DCZ to endogenous receptors and could be a confound in studies.</p>
+      <p id="p0195">Contrasting with the DCZ results, <italic>both</italic> low (0.1 mg/kg) and high (0.2 mg/kg) doses of CLZ resulted in significant and consistent changes in whole-brain rs-FC before the expression of DREADDs in the two subjects used in this study. Furthermore, we also demonstrated that changes in rs-FC tended to increase over the duration of the session and were more pronounced later in the session. Our study assessed relevant ligands under low anesthesia, hence we did not assess the effects of these ligands in awake behaving subjects. Fortuitously, our results and the implications for awake studies are reinforced by findings from a previous study that demonstrated that a dose of 0.2 mg/kg CLZ was sufficient to alter performance on a working memory task even before DREADDs were expressed (<xref rid="bib82" ref-type="bibr">Upright and Baxter, 2020</xref>). Additionally, in rodents, a low dose of 0.1 mg/kg CLZ is anxiogenic and alters locomotion in naïve, non-DREADD animals while simultaneously preserving social interaction and working memory (<xref rid="bib36" ref-type="bibr">Ilg et al., 2018</xref>; <xref rid="bib52" ref-type="bibr">Manzaneque et al., 2002</xref>). Like DCZ, CLZ can bind to endogenous receptors. It has a high affinity for dopamine, serotonin, and muscarinic acetylcholine receptors (<xref rid="bib64" ref-type="bibr">Phillips et al., 1994</xref>; <xref rid="bib72" ref-type="bibr">Roth et al., 2004</xref>). Promisingly, DCZ has been shown to have a significantly lower affinity for these endogenous receptors than CLZ, which at lower doses make it less likely for DCZ to mediate large scale changes in rs-FC (<xref rid="bib58" ref-type="bibr">Nagai et al., 2020</xref>; <xref rid="bib64" ref-type="bibr">Phillips et al., 1994</xref>; <xref rid="bib72" ref-type="bibr">Roth et al., 2004</xref>). Furthermore, there is differential expression of receptor subtypes in cortical and subcortical areas of the brain (<xref rid="bib7" ref-type="bibr">Beliveau et al., 2017</xref>; <xref rid="bib43" ref-type="bibr">Lidow et al., 1998</xref>; <xref rid="bib42" ref-type="bibr">Lidow and Goldman-Rakic, 1994</xref>; <xref rid="bib44" ref-type="bibr">López-Giménez et al., 2001</xref>). For example, dopamine receptor expression is highest in the prefrontal and temporal cortices, with a lower concentration in the occipital cortex (<xref rid="bib11" ref-type="bibr">Brown et al., 1979</xref>). Different regional expression patterns of receptor subtypes could likely result in distinct regional changes in rs-FC, which could explain our results that chemogenetic ligand-induced changes were not uniform across the brain.</p>
+      <p id="p0200">In addition to more traditional rs-FC measurements, we also assessed changes in INTs following chemogenetic ligand administration. Similar to rs-FC, INTs are a fundamental property that can be used to describe the organization of the brain (<xref rid="bib32" ref-type="bibr">Hasson et al., 2015</xref>; <xref rid="bib49" ref-type="bibr">Manea et al., 2022</xref>; <xref rid="bib56" ref-type="bibr">Murray et al., 2014</xref>). INTs were first described at the level of single cells (<xref rid="bib56" ref-type="bibr">Murray et al., 2014</xref>) and recently at the whole-brain level in NHPs (<xref rid="bib49" ref-type="bibr">Manea et al., 2022</xref>), revealing a timescale hierarchy. Regional timescales are thought to reflect the amount of time that a region requires to integrate inputs. Additionally, INTs are also indicative of functional specialization (<xref rid="bib10" ref-type="bibr">Breakspear et al., 2007</xref>; <xref rid="bib60" ref-type="bibr">Nougaret et al., 2021</xref>; <xref rid="bib67" ref-type="bibr">Raut et al., 2020</xref>; <xref rid="bib78" ref-type="bibr">Stephens et al., 2013</xref>). INTs analyses in our study recapitulated the whole brain rs-FC analysis results. Low-dose (0.1 mg/kg) DCZ effects on INTs were not consistent or correlated between subjects. In comparison, 0.2 mg/kg DCZ had the opposite impact on INTs in our subjects. In contrast, both doses of CLZ resulted in a significant and consistent change in INTs following systemic administration of the ligand.</p>
+      <p id="p0205">Our INTs analyses also highlighted key differences in our subjects. Our subjects were naïve animals; nevertheless, they displayed apparent differences in whole-brain INT profiles (at baseline). Specifically, Monkey D showed generally shorter INTs that were greatly modulated by the chemogenetic ligands used in this study. Monkey I's whole-brain INT profile was more stable across test conditions. Often, this resulted in Monkey D displaying longer INTs after DREADD ligand administration. In comparison, Monkey I started with broadly longer INTs, and, following DREADD ligand administration, continued to shift toward the upper bound. Nevertheless, while these cross-subject differences existed, CLZ was still capable of inducing a robust change in INTs. DCZ, irrespective of the dose administered, did not. This suggests that the limited interaction that DCZ may have with the endogenous system was insufficient at driving subjects' preexisting INT profiles towards a homogenous state. Consequently, our INTs analysis also suggests that DCZ is a feasible DREADD actuator ligand with limited off-target effects.</p>
+      <p id="p0210">CLZ is also a therapeutic agent and has been used for treatment-resistant schizophrenia (<xref rid="bib39" ref-type="bibr">Kerwin and Bolonna, 2005</xref>; <xref rid="bib79" ref-type="bibr">Tauscher et al., 2004</xref>; <xref rid="bib80" ref-type="bibr">Taylor, 2017</xref>). However, there are no published studies that we are aware of that have investigated how antipsychotic medication (i.e., CLZ) affects temporal dynamics. Our results showed that CLZ causes the whole brain INT topographies to become more similar between our subjects, in that whole brain INT profiles become more homogenous. However, the implications of such changes are unclear. The use of INTs is relatively new and future studies are needed to (1) clarify how INTs are altered in patients relative to healthy populations (<xref rid="bib89" ref-type="bibr">Wengler et al., 2020</xref>) and (2) how INTs at baseline are modulated by pharmacological agents.</p>
+      <p id="p0215">Our study has several limitations worth noting here. First, we only included two subjects, and those subjects did not undergo multiple test days for each ligand dosage. Although these experiments were designed to mitigate session to session variability (for example, the anesthetic protocol was closely monitored during each session and was kept consistent between sessions), we appreciate that even small, unintended changes (based on anesthesia efficacy, recent experiences, and so on) could have an impact. That is, any number of variables could shift the state of the animal and the configuration of the rs-FC profile the day of testing. Accordingly, a within-session design inclusive of saline and subsequent ligand administration would minimize this concern in future studies. Furthermore, individual differences in the response to ligands are an important facet to also consider, however, given the two subjects included in this study, this is beyond the scope of this work. Future research including a large cohort would be better suited to address this issue of individual differences, including detailing the pharmacokinetics of the ligands and how biological variables such as age and sex may play a role in effectiveness of these actuator ligands.</p>
+      <p id="p0220">Although NHP studies like ours are hindered by small sample sizes and limitations on testing, ideally, studies across laboratories using slightly different techniques can begin to elucidate consistent, underlying effects. Indeed, here, there is excellent convergent evidence on the effects of different doses of DCZ in NHPs prior to DREADD expression (<xref rid="bib24" ref-type="bibr">Fujimoto et al., 2022</xref>; <xref rid="bib82" ref-type="bibr">Upright and Baxter, 2020</xref>). Together, it is clear that greater consideration and within-subject comparison must be taken when using a dose greater than 0.1 mg/kg DCZ (<xref rid="bib58" ref-type="bibr">Nagai et al., 2020</xref>).</p>
+    </sec>
+    <sec id="sec5">
+      <label>5</label>
+      <title>Conclusion</title>
+      <p id="p0225">Importantly, rs-FC and INTs are essential properties of the brain that can be used to characterize healthy and disordered brains<bold>.</bold> The complementary use and advancement of these techniques--DREADDs, INTs, and rs-FC--in NHPs, a species with substantial homology to the human brain (<xref rid="bib34" ref-type="bibr">Heilbronner and Chafee, 2019</xref>) will significantly aid basic science researchers and translational applications for the characterization and development of treatments for a potentially wide range of neuropsychiatric disorders.</p>
+    </sec>
+    <sec id="sec6">
+      <title>CRediT authorship contribution statement</title>
+      <p id="p0230"><bold>Adriana K. Cushnie:</bold> Conceptualization, Methodology, Validation, Investigation, Writing – original draft, Visualization, Funding acquisition. <bold>Daniel N. Bullock:</bold> Investigation, Visualization, Methodology, Writing – original draft. <bold>Ana M.G. Manea:</bold> Methodology, Investigation, Visualization, Writing – review &amp; editing. <bold>Wei Tang:</bold> Investigation, Visualization. <bold>Jan Zimmermann:</bold> Methodology, Validation, Investigation, Writing – review &amp; editing, Supervision, Funding acquisition. <bold>Sarah R. Heilbronner:</bold> Conceptualization, Methodology, Validation, Investigation, Writing – original draft, Visualization, Supervision, Funding acquisition.</p>
+    </sec>
+    <sec sec-type="COI-statement">
+      <title>Declaration of competing interest</title>
+      <p id="p0235">The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.</p>
+    </sec>
+  </body>
+  <back>
+    <ref-list id="cebib0010">
+      <title>References</title>
+      <ref id="bib1">
+        <element-citation publication-type="journal" id="sref1">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Allen</surname>
+              <given-names>D.C.</given-names>
+            </name>
+            <name>
+              <surname>Jimenez</surname>
+              <given-names>V.A.</given-names>
+            </name>
+            <name>
+              <surname>Carlson</surname>
+              <given-names>T.L.</given-names>
+            </name>
+            <name>
+              <surname>Walter</surname>
+              <given-names>N.A.</given-names>
+            </name>
+            <name>
+              <surname>Grant</surname>
+              <given-names>K.A.</given-names>
+            </name>
+            <name>
+              <surname>Cuzon Carlson</surname>
+              <given-names>V.C.</given-names>
+            </name>
+          </person-group>
+          <article-title>Characterization of DREADD receptor expression and function in rhesus macaques trained to discriminate ethanol</article-title>
+          <source>Neuropsychopharmacology</source>
+          <volume>47</volume>
+          <year>2022</year>
+          <fpage>857</fpage>
+          <lpage>865</lpage>
+          <pub-id pub-id-type="doi">10.1038/s41386-021-01181-5</pub-id>
+          <pub-id pub-id-type="pmid">34654906</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib2">
+        <element-citation publication-type="journal" id="sref2">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Armbruster</surname>
+              <given-names>B.N.</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>X.</given-names>
+            </name>
+            <name>
+              <surname>Pausch</surname>
+              <given-names>M.H.</given-names>
+            </name>
+            <name>
+              <surname>Herlitze</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Roth</surname>
+              <given-names>B.L.</given-names>
+            </name>
+          </person-group>
+          <article-title>Evolving the lock to fit the key to create a family of G protein-coupled receptors potently activated by an inert ligand</article-title>
+          <source>Proc. Natl. Acad. Sci. U. S. A</source>
+          <volume>104</volume>
+          <issue>12</issue>
+          <year>2007</year>
+          <fpage>5163</fpage>
+          <lpage>5168</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.0700293104</pub-id>
+          <pub-id pub-id-type="pmid">17360345</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib3">
+        <element-citation publication-type="journal" id="sref3">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Avants</surname>
+              <given-names>B.B.</given-names>
+            </name>
+            <name>
+              <surname>Tustison</surname>
+              <given-names>N.J.</given-names>
+            </name>
+            <name>
+              <surname>Stauffer</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Song</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Wu</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Gee</surname>
+              <given-names>J.C.</given-names>
+            </name>
+          </person-group>
+          <article-title>The Insight ToolKit image registration framework</article-title>
+          <source>Front. Neuroinf.</source>
+          <volume>8</volume>
+          <issue>APR</issue>
+          <year>2014</year>
+          <fpage>1</fpage>
+          <lpage>13</lpage>
+          <pub-id pub-id-type="doi">10.3389/fninf.2014.00044</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib4">
+        <element-citation publication-type="journal" id="sref4">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Avants</surname>
+              <given-names>B.B.</given-names>
+            </name>
+            <name>
+              <surname>Tustison</surname>
+              <given-names>N.J.</given-names>
+            </name>
+            <name>
+              <surname>Wu</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Cook</surname>
+              <given-names>P.A.</given-names>
+            </name>
+            <name>
+              <surname>Gee</surname>
+              <given-names>J.C.</given-names>
+            </name>
+          </person-group>
+          <article-title>An open source multivariate framework for N-tissue segmentation with evaluation on public data</article-title>
+          <source>Neuroinformatics</source>
+          <volume>9</volume>
+          <issue>4</issue>
+          <year>2011</year>
+          <fpage>381</fpage>
+          <lpage>400</lpage>
+          <pub-id pub-id-type="doi">10.1007/s12021-011-9109-y</pub-id>
+          <pub-id pub-id-type="pmid">21373993</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib5">
+        <element-citation publication-type="journal" id="sref5">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bærentzen</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Casado-Sainz</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Lange</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Shalgunov</surname>
+              <given-names>V.</given-names>
+            </name>
+            <name>
+              <surname>Tejada</surname>
+              <given-names>I.M.</given-names>
+            </name>
+            <name>
+              <surname>Xiong</surname>
+              <given-names>M.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The chemogenetic receptor ligand clozapine n-oxide induces in vivo neuroreceptor occupancy and reduces striatal glutamate levels</article-title>
+          <source>Front. Neurosci.</source>
+          <volume>13</volume>
+          <issue>APR</issue>
+          <year>2019</year>
+          <fpage>1</fpage>
+          <lpage>7</lpage>
+          <pub-id pub-id-type="doi">10.3389/fnins.2019.00187</pub-id>
+          <pub-id pub-id-type="pmid">30740042</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib6">
+        <element-citation publication-type="journal" id="sref6">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bassett</surname>
+              <given-names>D.S.</given-names>
+            </name>
+            <name>
+              <surname>Bullmore</surname>
+              <given-names>E.T.</given-names>
+            </name>
+          </person-group>
+          <article-title>Human brain networks in health and disease</article-title>
+          <source>Curr. Opin. Neurol.</source>
+          <volume>22</volume>
+          <issue>4</issue>
+          <year>2009</year>
+          <fpage>340</fpage>
+          <lpage>347</lpage>
+          <pub-id pub-id-type="doi">10.1097/WCO.0b013e32832d93dd</pub-id>
+          <pub-id pub-id-type="pmid">19494774</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib7">
+        <element-citation publication-type="journal" id="sref7">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Beliveau</surname>
+              <given-names>V.</given-names>
+            </name>
+            <name>
+              <surname>Ganz</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Feng</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Ozenne</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Højgaard</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Fisher</surname>
+              <given-names>P.M.</given-names>
+            </name>
+            <name>
+              <surname>Svarer</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Greve</surname>
+              <given-names>D.N.</given-names>
+            </name>
+            <name>
+              <surname>Knudsen</surname>
+              <given-names>G.M.</given-names>
+            </name>
+          </person-group>
+          <article-title>A high-resolution in vivo atlas of the human brain's serotonin system</article-title>
+          <source>J. Neurosci.</source>
+          <volume>37</volume>
+          <year>2017</year>
+          <fpage>120</fpage>
+          <lpage>128</lpage>
+          <pub-id pub-id-type="doi">10.1523/JNEUROSCI.2830-16.2016</pub-id>
+          <pub-id pub-id-type="pmid">28053035</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib8">
+        <element-citation publication-type="journal" id="sref8">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Blankenburg</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Ruff</surname>
+              <given-names>C.C.</given-names>
+            </name>
+            <name>
+              <surname>Bestmann</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Bjoertomt</surname>
+              <given-names>O.</given-names>
+            </name>
+            <name>
+              <surname>Eshel</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Josephs</surname>
+              <given-names>O.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Interhemispheric effect of parietal TMS on somatosensory response confirmed directly with concurrent TMS-fMRI</article-title>
+          <source>J. Neurosci.</source>
+          <volume>28</volume>
+          <issue>49</issue>
+          <year>2008</year>
+          <fpage>13202</fpage>
+          <lpage>13208</lpage>
+          <pub-id pub-id-type="doi">10.1523/JNEUROSCI.3043-08.2008</pub-id>
+          <pub-id pub-id-type="pmid">19052211</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib9">
+        <element-citation publication-type="journal" id="sref9">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bonaventura</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Eldridge</surname>
+              <given-names>M.A.G.</given-names>
+            </name>
+            <name>
+              <surname>Hu</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Gomez</surname>
+              <given-names>J.L.</given-names>
+            </name>
+            <name>
+              <surname>Sanchez-Soto</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Abramyan</surname>
+              <given-names>A.M.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>High-potency ligands for DREADD imaging and activation in rodents and monkeys</article-title>
+          <source>Nat. Commun.</source>
+          <volume>10</volume>
+          <issue>1</issue>
+          <year>2019</year>
+          <pub-id pub-id-type="doi">10.1038/s41467-019-12236-z</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib10">
+        <element-citation publication-type="book" id="sref10">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Breakspear</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Sporns</surname>
+              <given-names>O.</given-names>
+            </name>
+            <name>
+              <surname>Honey</surname>
+              <given-names>C.J.</given-names>
+            </name>
+            <name>
+              <surname>Ko</surname>
+              <given-names>R.</given-names>
+            </name>
+          </person-group>
+          <part-title>Network Structure of Cerebral Cortex Shapes Functional Connectivity on Multiple Time Scales</part-title>
+          <year>2007</year>
+        </element-citation>
+      </ref>
+      <ref id="bib11">
+        <element-citation publication-type="journal" id="sref11">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Brown</surname>
+              <given-names>R.M.</given-names>
+            </name>
+            <name>
+              <surname>Crane</surname>
+              <given-names>A.M.</given-names>
+            </name>
+            <name>
+              <surname>Goldman</surname>
+              <given-names>P.S.</given-names>
+            </name>
+          </person-group>
+          <article-title>Regional distribution of monoamines in the cerebral cortex and subcortical structures of the rhesus monkey: concentrations and in vivo synthesis rates</article-title>
+          <source>Brain Res.</source>
+          <volume>168</volume>
+          <year>1979</year>
+          <fpage>133</fpage>
+          <lpage>150</lpage>
+          <pub-id pub-id-type="doi">10.1016/0006-8993(79)90132-X</pub-id>
+          <pub-id pub-id-type="pmid">36962</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib12">
+        <element-citation publication-type="journal" id="sref12">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Brunello</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Masotto</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Steardo</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Markstein</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Racagni</surname>
+              <given-names>G.</given-names>
+            </name>
+          </person-group>
+          <article-title>New insights into the biology of schizophrenia through the mechanism of action of clozapine</article-title>
+          <source>Neuropsychopharmacology</source>
+          <volume>13</volume>
+          <issue>3</issue>
+          <year>1995</year>
+          <fpage>177</fpage>
+          <lpage>213</lpage>
+          <pub-id pub-id-type="doi">10.1016/0893-133X(95)00068-O</pub-id>
+          <pub-id pub-id-type="pmid">8602893</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib13">
+        <element-citation publication-type="journal" id="sref13">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Campbell</surname>
+              <given-names>C.E.J.</given-names>
+            </name>
+            <name>
+              <surname>Marchant</surname>
+              <given-names>N.J.</given-names>
+            </name>
+            <name>
+              <surname>Florey</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Health</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Brain</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Campbell</surname>
+              <given-names>E.J.</given-names>
+            </name>
+            <name>
+              <surname>Marchant</surname>
+              <given-names>N.J.</given-names>
+            </name>
+          </person-group>
+          <article-title>The use of chemogenetics in behavioural neuroscience : receptor variants , targeting approaches and caveats</article-title>
+          <source>Br. J. Pharmacol.</source>
+          <volume>175</volume>
+          <issue>7</issue>
+          <year>2018</year>
+          <fpage>994</fpage>
+          <lpage>1003</lpage>
+          <pub-id pub-id-type="doi">10.1111/bph.14146</pub-id>
+          <pub-id pub-id-type="pmid">29338070</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib14">
+        <element-citation publication-type="journal" id="sref14">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chang</surname>
+              <given-names>W.H.</given-names>
+            </name>
+            <name>
+              <surname>Lin</surname>
+              <given-names>S.K.</given-names>
+            </name>
+            <name>
+              <surname>Lane</surname>
+              <given-names>H.Y.</given-names>
+            </name>
+            <name>
+              <surname>Wei</surname>
+              <given-names>F.C.</given-names>
+            </name>
+            <name>
+              <surname>Hu</surname>
+              <given-names>W.H.</given-names>
+            </name>
+            <name>
+              <surname>Lam</surname>
+              <given-names>Y.W.F.</given-names>
+            </name>
+            <name>
+              <surname>Jann</surname>
+              <given-names>M.W.</given-names>
+            </name>
+          </person-group>
+          <article-title>Reversible metabolism of clozapine and clozapine N-oxide in schizophrenic patients</article-title>
+          <source>Prog. Neuro Psychopharmacol. Biol. Psychiatr.</source>
+          <volume>22</volume>
+          <issue>5</issue>
+          <year>1998</year>
+          <fpage>723</fpage>
+          <lpage>739</lpage>
+          <pub-id pub-id-type="doi">10.1016/S0278-5846(98)00035-9</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib15">
+        <element-citation publication-type="journal" id="sref15">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chen</surname>
+              <given-names>X.</given-names>
+            </name>
+            <name>
+              <surname>Choo</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>Huang</surname>
+              <given-names>X.P.</given-names>
+            </name>
+            <name>
+              <surname>Yang</surname>
+              <given-names>X.</given-names>
+            </name>
+            <name>
+              <surname>Stone</surname>
+              <given-names>O.</given-names>
+            </name>
+            <name>
+              <surname>Roth</surname>
+              <given-names>B.L.</given-names>
+            </name>
+            <name>
+              <surname>Jin</surname>
+              <given-names>J.</given-names>
+            </name>
+          </person-group>
+          <article-title>The first structure-activity relationship studies for designer receptors exclusively activated by designer drugs</article-title>
+          <source>ACS Chem. Neurosci.</source>
+          <volume>6</volume>
+          <issue>3</issue>
+          <year>2015</year>
+          <fpage>476</fpage>
+          <lpage>484</lpage>
+          <pub-id pub-id-type="doi">10.1021/cn500325v</pub-id>
+          <pub-id pub-id-type="pmid">25587888</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib16">
+        <element-citation publication-type="journal" id="sref16">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chris</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Iii</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Szigeti</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Goldman-Rakic</surname>
+              <given-names>P.S.</given-names>
+            </name>
+          </person-group>
+          <article-title>D 1 receptor in interneurons of macaque prefrontal cortex: distribution and subcellular localization</article-title>
+          <source>J. Neurosci.</source>
+          <volume>17</volume>
+          <year>1998</year>
+        </element-citation>
+      </ref>
+      <ref id="bib17">
+        <element-citation publication-type="journal" id="sref17">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ciliax</surname>
+              <given-names>B.J.</given-names>
+            </name>
+            <name>
+              <surname>Nash</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Heilman</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Sunahara</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Hartney</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Tiberi</surname>
+              <given-names>M.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Dopamine D5 receptor immunolocalization in rat and monkey brain</article-title>
+          <source>Synapse</source>
+          <volume>37</volume>
+          <issue>2</issue>
+          <year>2000</year>
+          <fpage>125</fpage>
+          <lpage>145</lpage>
+          <pub-id pub-id-type="doi">10.1002/1098-2396(200008)37:2&lt;125::AID-SYN7&gt;3.0.CO;2-7</pub-id>
+          <pub-id pub-id-type="pmid">10881034</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib18">
+        <element-citation publication-type="journal" id="sref18">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cox</surname>
+              <given-names>R.W.</given-names>
+            </name>
+          </person-group>
+          <article-title>AFNI: software for analysis and visualization of functional magnetic resonance neuroimages</article-title>
+          <source>Comput. Biomed. Res.</source>
+          <volume>29</volume>
+          <issue>3</issue>
+          <year>1996</year>
+          <fpage>162</fpage>
+          <lpage>173</lpage>
+          <pub-id pub-id-type="doi">10.1006/cbmr.1996.0014</pub-id>
+          <pub-id pub-id-type="pmid">8812068</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib19">
+        <element-citation publication-type="book" id="sref19">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Damoiseaux</surname>
+              <given-names>J.S.</given-names>
+            </name>
+            <name>
+              <surname>Rombouts</surname>
+              <given-names>S.A.R.B.</given-names>
+            </name>
+            <name>
+              <surname>Barkhof</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Scheltens</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Stam</surname>
+              <given-names>C.J.</given-names>
+            </name>
+            <name>
+              <surname>Smith</surname>
+              <given-names>S.M.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <series>Consistent Resting-State Networks across Healthy Subjects</series>
+          <volume>vol. 103</volume>
+          <year>2006</year>
+          <comment>Retrieved from</comment>
+          <ext-link ext-link-type="uri" xlink:href="http://www.pnas.orgcgidoi10.1073pnas.0601417103" id="intref0015">www.pnas.orgcgidoi10.1073pnas.0601417103</ext-link>
+        </element-citation>
+      </ref>
+      <ref id="bib20">
+        <element-citation publication-type="journal" id="sref20">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Deffains</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Nguyen</surname>
+              <given-names>T.H.</given-names>
+            </name>
+            <name>
+              <surname>Orignac</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>Biendon</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Dovero</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Bezard</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Boraud</surname>
+              <given-names>T.</given-names>
+            </name>
+          </person-group>
+          <article-title>In vivo electrophysiological validation of DREADD-based modulation of pallidal neurons in the non-human primate</article-title>
+          <source>Eur. J. Neurosci.</source>
+          <volume>53</volume>
+          <year>2021</year>
+          <fpage>2192</fpage>
+          <lpage>2204</lpage>
+          <pub-id pub-id-type="doi">10.1111/ejn.14746</pub-id>
+          <pub-id pub-id-type="pmid">32306446</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib21">
+        <element-citation publication-type="journal" id="sref21">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Eldridge</surname>
+              <given-names>M.A.G.</given-names>
+            </name>
+            <name>
+              <surname>Lerchner</surname>
+              <given-names>W.</given-names>
+            </name>
+            <name>
+              <surname>Saunders</surname>
+              <given-names>R.C.</given-names>
+            </name>
+            <name>
+              <surname>Kaneko</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>Krausz</surname>
+              <given-names>K.W.</given-names>
+            </name>
+            <name>
+              <surname>Gonzalez</surname>
+              <given-names>F.J.</given-names>
+            </name>
+            <name>
+              <surname>Ji</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Higuchi</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Minamimoto</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Richmond</surname>
+              <given-names>B.J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Chemogenetic disconnection of monkey orbitofrontal and rhinal cortex reversibly disrupts reward value</article-title>
+          <source>Nat. Neurosci.</source>
+          <volume>19</volume>
+          <year>2016</year>
+          <fpage>37</fpage>
+          <lpage>39</lpage>
+          <pub-id pub-id-type="doi">10.1038/nn.4192</pub-id>
+          <pub-id pub-id-type="pmid">26656645</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib22">
+        <element-citation publication-type="journal" id="sref22">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fornito</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Zalesky</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Breakspear</surname>
+              <given-names>M.</given-names>
+            </name>
+          </person-group>
+          <article-title>The connectomics of brain disorders</article-title>
+          <source>Nat. Rev. Neurosci.</source>
+          <volume>16</volume>
+          <issue>3</issue>
+          <year>2015</year>
+          <fpage>159</fpage>
+          <lpage>172</lpage>
+          <pub-id pub-id-type="doi">10.1038/nrn3901</pub-id>
+          <pub-id pub-id-type="pmid">25697159</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib23">
+        <element-citation publication-type="journal" id="sref23">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fox</surname>
+              <given-names>M.D.</given-names>
+            </name>
+            <name>
+              <surname>Raichle</surname>
+              <given-names>M.E.</given-names>
+            </name>
+          </person-group>
+          <article-title>Spontaneous fluctuations in brain activity observed with functional magnetic resonance imaging</article-title>
+          <source>Nat. Rev. Neurosci.</source>
+          <volume>8</volume>
+          <issue>9</issue>
+          <year>2007</year>
+          <fpage>700</fpage>
+          <lpage>711</lpage>
+          <pub-id pub-id-type="doi">10.1038/nrn2201</pub-id>
+          <pub-id pub-id-type="pmid">17704812</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib24">
+        <element-citation publication-type="journal" id="sref24">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fujimoto</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Elorette</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Fredericks</surname>
+              <given-names>J.M.</given-names>
+            </name>
+            <name>
+              <surname>Fujimoto</surname>
+              <given-names>S.H.</given-names>
+            </name>
+            <name>
+              <surname>Fleysher</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Rudebeck</surname>
+              <given-names>P.H.</given-names>
+            </name>
+            <name>
+              <surname>Russ</surname>
+              <given-names>B.E.</given-names>
+            </name>
+          </person-group>
+          <article-title>Resting-state fMRI-based screening of deschloroclozapine in rhesus macaques predicts dosage-dependent behavioral effects</article-title>
+          <source>J. Neurosci.</source>
+          <volume>42</volume>
+          <year>2022</year>
+          <fpage>5705</fpage>
+          <lpage>5716</lpage>
+          <pub-id pub-id-type="doi">10.1523/JNEUROSCI.0325-22.2022</pub-id>
+          <pub-id pub-id-type="pmid">35701162</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib25">
+        <element-citation publication-type="journal" id="sref25">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Giorgi</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Migliarini</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Galbusera</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Maddaloni</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Mereu</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Margiani</surname>
+              <given-names>G.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Brain-wide mapping of endogenous serotonergic transmission via chemogenetic fMRI</article-title>
+          <source>Cell Rep.</source>
+          <volume>21</volume>
+          <issue>4</issue>
+          <year>2017</year>
+          <fpage>910</fpage>
+          <lpage>918</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.celrep.2017.09.087</pub-id>
+          <pub-id pub-id-type="pmid">29069598</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib26">
+        <element-citation publication-type="journal" id="sref26">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gomez</surname>
+              <given-names>J.L.</given-names>
+            </name>
+            <name>
+              <surname>Bonaventura</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Lesniak</surname>
+              <given-names>W.</given-names>
+            </name>
+            <name>
+              <surname>Mathews</surname>
+              <given-names>W.B.</given-names>
+            </name>
+            <name>
+              <surname>Sysa-Shah</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Rodriguez</surname>
+              <given-names>L.A.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Chemogenetics revealed: DREADD occupancy and activation via converted clozapine</article-title>
+          <source>Science</source>
+          <volume>357</volume>
+          <issue>6350</issue>
+          <year>2017</year>
+          <fpage>503</fpage>
+          <lpage>507</lpage>
+          <pub-id pub-id-type="doi">10.1126/science.aan2475</pub-id>
+          <pub-id pub-id-type="pmid">28774929</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib27">
+        <element-citation publication-type="journal" id="sref27">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Goutaudier</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Coizet</surname>
+              <given-names>V.</given-names>
+            </name>
+            <name>
+              <surname>Carcenac</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Carnicella</surname>
+              <given-names>S.</given-names>
+            </name>
+          </person-group>
+          <article-title>Dreadds: the power of the lock, the weakness of the key. favoring the pursuit of specific conditions rather than specific ligands</article-title>
+          <source>ENeuro</source>
+          <volume>6</volume>
+          <issue>5</issue>
+          <year>2019</year>
+          <pub-id pub-id-type="doi">10.1523/ENEURO.0171-19.2019</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib28">
+        <element-citation publication-type="journal" id="sref28">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Grayson</surname>
+              <given-names>D.S.</given-names>
+            </name>
+            <name>
+              <surname>Bliss-Moreau</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Machado</surname>
+              <given-names>C.J.</given-names>
+            </name>
+            <name>
+              <surname>Bennett</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Shen</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Grant</surname>
+              <given-names>K.A.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The rhesus monkey connectome predicts disrupted functional networks resulting from pharmacogenetic inactivation of the amygdala</article-title>
+          <source>Neuron</source>
+          <volume>91</volume>
+          <issue>2</issue>
+          <year>2016</year>
+          <fpage>453</fpage>
+          <lpage>466</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuron.2016.06.005</pub-id>
+          <pub-id pub-id-type="pmid">27477019</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib29">
+        <element-citation publication-type="journal" id="sref29">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Greicius</surname>
+              <given-names>M.D.</given-names>
+            </name>
+            <name>
+              <surname>Supekar</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Menon</surname>
+              <given-names>V.</given-names>
+            </name>
+            <name>
+              <surname>Dougherty</surname>
+              <given-names>R.F.</given-names>
+            </name>
+          </person-group>
+          <article-title>Resting-state functional connectivity reflects structural connectivity in the default mode network</article-title>
+          <source>Cerebr. Cortex</source>
+          <volume>19</volume>
+          <issue>1</issue>
+          <year>2009</year>
+          <fpage>72</fpage>
+          <lpage>78</lpage>
+          <pub-id pub-id-type="doi">10.1093/cercor/bhn059</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib30">
+        <element-citation publication-type="journal" id="sref30">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hallquist</surname>
+              <given-names>M.N.</given-names>
+            </name>
+            <name>
+              <surname>Hwang</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Luna</surname>
+              <given-names>B.</given-names>
+            </name>
+          </person-group>
+          <article-title>The nuisance of nuisance regression: spectral misspecification in a common approach to resting-state fMRI preprocessing reintroduces noise and obscures functional connectivity</article-title>
+          <source>Neuroimage</source>
+          <volume>82</volume>
+          <year>2013</year>
+          <fpage>208</fpage>
+          <lpage>225</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2013.05.116</pub-id>
+          <pub-id pub-id-type="pmid">23747457</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib31">
+        <element-citation publication-type="journal" id="sref31">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hartig</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Glen</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Jung</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Logothetis</surname>
+              <given-names>N.K.</given-names>
+            </name>
+            <name>
+              <surname>Paxinos</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Garza-Villarreal</surname>
+              <given-names>E.A.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The subcortical atlas of the rhesus macaque (SARM) for neuroimaging</article-title>
+          <source>Neuroimage</source>
+          <volume>235</volume>
+          <year>2021</year>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2021.117996</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib32">
+        <element-citation publication-type="journal" id="sref32">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hasson</surname>
+              <given-names>U.</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Honey</surname>
+              <given-names>C.J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Component of information processing</article-title>
+          <source>Trends Cognit. Sci.</source>
+          <volume>19</volume>
+          <issue>6</issue>
+          <year>2015</year>
+          <fpage>304</fpage>
+          <lpage>313</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.tics.2015.04.006.Hierarchical</pub-id>
+          <pub-id pub-id-type="pmid">25980649</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib33">
+        <element-citation publication-type="journal" id="sref33">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hasson</surname>
+              <given-names>U.</given-names>
+            </name>
+            <name>
+              <surname>Yang</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Vallines</surname>
+              <given-names>I.</given-names>
+            </name>
+            <name>
+              <surname>Heeger</surname>
+              <given-names>D.J.</given-names>
+            </name>
+            <name>
+              <surname>Rubin</surname>
+              <given-names>N.</given-names>
+            </name>
+          </person-group>
+          <article-title>A hierarchy of temporal receptive windows in human cortex</article-title>
+          <source>J. Neurosci.</source>
+          <volume>28</volume>
+          <issue>10</issue>
+          <year>2008</year>
+          <fpage>2539</fpage>
+          <lpage>2550</lpage>
+          <pub-id pub-id-type="doi">10.1523/JNEUROSCI.5487-07.2008</pub-id>
+          <pub-id pub-id-type="pmid">18322098</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib34">
+        <element-citation publication-type="journal" id="sref34">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Heilbronner</surname>
+              <given-names>S.R.</given-names>
+            </name>
+            <name>
+              <surname>Chafee</surname>
+              <given-names>M.V.</given-names>
+            </name>
+          </person-group>
+          <article-title>Learning how neurons fail inside of networks: nonhuman primates provide critical data for psychiatry</article-title>
+          <source>Neuron</source>
+          <volume>102</volume>
+          <year>2019</year>
+          <fpage>21</fpage>
+          <lpage>26</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuron.2019.02.030</pub-id>
+          <pub-id pub-id-type="pmid">30946820</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib35">
+        <element-citation publication-type="journal" id="sref35">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hirabayashi</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Nagai</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <name>
+              <surname>Hori</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <name>
+              <surname>Inoue</surname>
+              <given-names>K. ichi</given-names>
+            </name>
+            <name>
+              <surname>Aoki</surname>
+              <given-names>I.</given-names>
+            </name>
+            <name>
+              <surname>Takada</surname>
+              <given-names>M.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Chemogenetic sensory fMRI reveals behaviorally relevant bidirectional changes in primate somatosensory network</article-title>
+          <source>Neuron</source>
+          <volume>109</volume>
+          <issue>20</issue>
+          <year>2021</year>
+          <fpage>3312</fpage>
+          <lpage>3322</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuron.2021.08.032</pub-id>
+          <comment>e5</comment>
+          <pub-id pub-id-type="pmid">34672984</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib36">
+        <element-citation publication-type="journal" id="sref36">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ilg</surname>
+              <given-names>A.K.</given-names>
+            </name>
+            <name>
+              <surname>Enkel</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Bartsch</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Bähner</surname>
+              <given-names>F.</given-names>
+            </name>
+          </person-group>
+          <article-title>Behavioral effects of acute systemic low-dose clozapine in wild-type rats: implications for the use of DREADDs in behavioral neuroscience</article-title>
+          <source>Front. Behav. Neurosci.</source>
+          <volume>12</volume>
+          <year>2018</year>
+          <pub-id pub-id-type="doi">10.3389/fnbeh.2018.00173</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib37">
+        <element-citation publication-type="journal" id="sref37">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jenkinson</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Beckmann</surname>
+              <given-names>C.F.</given-names>
+            </name>
+            <name>
+              <surname>Behrens</surname>
+              <given-names>T.E.J.</given-names>
+            </name>
+            <name>
+              <surname>Woolrich</surname>
+              <given-names>M.W.</given-names>
+            </name>
+            <name>
+              <surname>Smith</surname>
+              <given-names>S.M.</given-names>
+            </name>
+          </person-group>
+          <source>Neuroimage</source>
+          <volume>62</volume>
+          <year>2012</year>
+          <fpage>782</fpage>
+          <lpage>790</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2011.09.015</pub-id>
+          <pub-id pub-id-type="pmid">21979382</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib38">
+        <element-citation publication-type="journal" id="sref38">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jung</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Taylor</surname>
+              <given-names>P.A.</given-names>
+            </name>
+            <name>
+              <surname>Seidlitz</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Sponheim</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Perkins</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Ungerleider</surname>
+              <given-names>L.G.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>A comprehensive macaque fMRI pipeline and hierarchical atlas</article-title>
+          <source>Neuroimage</source>
+          <volume>235</volume>
+          <issue>January</issue>
+          <year>2021</year>
+          <object-id pub-id-type="publisher-id">117997</object-id>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2021.117997</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib39">
+        <element-citation publication-type="journal" id="sref39">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kerwin</surname>
+              <given-names>R.W.</given-names>
+            </name>
+            <name>
+              <surname>Bolonna</surname>
+              <given-names>A.</given-names>
+            </name>
+          </person-group>
+          <article-title>Management of clozapine-resistant schizophrenia</article-title>
+          <source>Adv. Psychiatr. Treat.</source>
+          <volume>11</volume>
+          <issue>2</issue>
+          <year>2005</year>
+          <fpage>101</fpage>
+          <lpage>106</lpage>
+          <pub-id pub-id-type="doi">10.1192/apt.11.2.101</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib40">
+        <element-citation publication-type="journal" id="sref40">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lagore</surname>
+              <given-names>R.L.</given-names>
+            </name>
+            <name>
+              <surname>Moeller</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Zimmermann</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>DelaBarre</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Radder</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Grant</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Ugurbil</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Yacoub</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Harel</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Adriany</surname>
+              <given-names>G.</given-names>
+            </name>
+          </person-group>
+          <article-title>An 8-dipole transceive and 24-loop receive array for non-human primate head imaging at 10.5 T</article-title>
+          <source>NMR Biomed.</source>
+          <volume>34</volume>
+          <year>2021</year>
+          <fpage>1</fpage>
+          <lpage>11</lpage>
+          <pub-id pub-id-type="doi">10.1002/nbm.4472</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib41">
+        <element-citation publication-type="journal" id="sref41">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lerner</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <name>
+              <surname>Honey</surname>
+              <given-names>C.J.</given-names>
+            </name>
+            <name>
+              <surname>Silbert</surname>
+              <given-names>L.J.</given-names>
+            </name>
+            <name>
+              <surname>Hasson</surname>
+              <given-names>U.</given-names>
+            </name>
+          </person-group>
+          <article-title>Topographic mapping of a hierarchy of temporal receptive windows using a narrated story</article-title>
+          <source>J. Neurosci.</source>
+          <volume>31</volume>
+          <issue>8</issue>
+          <year>2011</year>
+          <fpage>2906</fpage>
+          <lpage>2915</lpage>
+          <pub-id pub-id-type="doi">10.1523/JNEUROSCI.3684-10.2011</pub-id>
+          <pub-id pub-id-type="pmid">21414912</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib42">
+        <element-citation publication-type="journal" id="sref42">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lidow</surname>
+              <given-names>M.S.</given-names>
+            </name>
+            <name>
+              <surname>Goldman-Rakic</surname>
+              <given-names>P.S.</given-names>
+            </name>
+          </person-group>
+          <article-title>A common action of clozapine, haloperidol, and remoxipride on D1- and D2-dopaminergic receptors in the primate cerebral cortex</article-title>
+          <source>Proc. Natl. Acad. Sci. U. S. A.</source>
+          <volume>91</volume>
+          <year>1994</year>
+          <fpage>4353</fpage>
+          <lpage>4356</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.91.10.4353</pub-id>
+          <pub-id pub-id-type="pmid">8183912</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib43">
+        <element-citation publication-type="journal" id="sref43">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lidow</surname>
+              <given-names>M.S.</given-names>
+            </name>
+            <name>
+              <surname>Williams</surname>
+              <given-names>G.V.</given-names>
+            </name>
+            <name>
+              <surname>Goldman-Rakic</surname>
+              <given-names>P.S.</given-names>
+            </name>
+          </person-group>
+          <article-title>The cerebral cortex: a case for a common site of action of antipsychotics</article-title>
+          <source>Trends Pharmacol. Sci.</source>
+          <volume>19</volume>
+          <year>1998</year>
+          <fpage>136</fpage>
+          <lpage>140</lpage>
+          <pub-id pub-id-type="doi">10.1016/S0165-6147(98)01186-9</pub-id>
+          <pub-id pub-id-type="pmid">9612088</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib44">
+        <element-citation publication-type="journal" id="sref44">
+          <person-group person-group-type="author">
+            <name>
+              <surname>López-Giménez</surname>
+              <given-names>J.F.</given-names>
+            </name>
+            <name>
+              <surname>Vilaró</surname>
+              <given-names>M.T.</given-names>
+            </name>
+            <name>
+              <surname>Palacios</surname>
+              <given-names>J.M.</given-names>
+            </name>
+            <name>
+              <surname>Mengod</surname>
+              <given-names>G.</given-names>
+            </name>
+          </person-group>
+          <article-title>Mapping of 5-HT2A receptors and their mRNA in monkey brain: [3H]MDL100,907 autoradiography and in situ hybridization studies</article-title>
+          <source>J. Comp. Neurol.</source>
+          <volume>429</volume>
+          <issue>4</issue>
+          <year>2001</year>
+          <fpage>571</fpage>
+          <lpage>589</lpage>
+          <pub-id pub-id-type="doi">10.1002/1096-9861(20010122)429:4&lt;571::AID-CNE5&gt;3.0.CO;2-X</pub-id>
+          <pub-id pub-id-type="pmid">11135236</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib45">
+        <element-citation publication-type="journal" id="sref45">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lv</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>Z.</given-names>
+            </name>
+            <name>
+              <surname>Tong</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Williams</surname>
+              <given-names>L.M.</given-names>
+            </name>
+            <name>
+              <surname>Zaharchuk</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Zeineh</surname>
+              <given-names>M.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Resting-state functional MRI: everything that nonexperts have always wanted to know</article-title>
+          <source>Am. J. Neuroradiol.</source>
+          <year>2018</year>
+          <pub-id pub-id-type="doi">10.3174/ajnr.A5527</pub-id>
+          <comment>American Society of Neuroradiology</comment>
+        </element-citation>
+      </ref>
+      <ref id="bib46">
+        <element-citation publication-type="journal" id="sref46">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lv</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Xiao</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>X.</given-names>
+            </name>
+            <name>
+              <surname>Sun</surname>
+              <given-names>H.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Dose-dependent effects of isoflurane on regional activity and neural network function: a resting-state fMRI study of 14 rhesus monkeys. An observational study</article-title>
+          <source>Neurosci. Lett.</source>
+          <volume>611</volume>
+          <year>2016</year>
+          <fpage>116</fpage>
+          <lpage>122</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neulet.2015.11.037</pub-id>
+          <pub-id pub-id-type="pmid">26633103</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib47">
+        <element-citation publication-type="journal" id="sref47">
+          <person-group person-group-type="author">
+            <name>
+              <surname>MacLaren</surname>
+              <given-names>D.A.A.</given-names>
+            </name>
+            <name>
+              <surname>Browne</surname>
+              <given-names>R.W.</given-names>
+            </name>
+            <name>
+              <surname>Shaw</surname>
+              <given-names>J.K.</given-names>
+            </name>
+            <name>
+              <surname>Radhakrishnan</surname>
+              <given-names>S.K.</given-names>
+            </name>
+            <name>
+              <surname>Khare</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>España</surname>
+              <given-names>R.A.</given-names>
+            </name>
+            <name>
+              <surname>Clark</surname>
+              <given-names>S.D.</given-names>
+            </name>
+          </person-group>
+          <article-title>Clozapine N-oxide administration produces behavioral effects in long-evans rats: implications for designing DREADD experiments</article-title>
+          <source>ENeuro</source>
+          <volume>3</volume>
+          <issue>5</issue>
+          <year>2016</year>
+          <pub-id pub-id-type="doi">10.1523/ENEURO.0219-16.2016</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib48">
+        <element-citation publication-type="journal" id="sref48">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mahler</surname>
+              <given-names>S.V.</given-names>
+            </name>
+            <name>
+              <surname>Aston-Jones</surname>
+              <given-names>G.</given-names>
+            </name>
+          </person-group>
+          <article-title>CNO evil ? considerations for the use of DREADDs in behavioral neuroscience</article-title>
+          <source>Neuropsychopharmacology</source>
+          <volume>43</volume>
+          <issue>5</issue>
+          <year>2018</year>
+          <fpage>1</fpage>
+          <lpage>3</lpage>
+          <pub-id pub-id-type="doi">10.1038/npp.2017.299</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib49">
+        <element-citation publication-type="journal" id="sref49">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Manea</surname>
+              <given-names>A.M.G.</given-names>
+            </name>
+            <name>
+              <surname>Zilverstand</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Ugurbil</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Heilbronner</surname>
+              <given-names>S.R.</given-names>
+            </name>
+            <name>
+              <surname>Zimmermann</surname>
+              <given-names>J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Intrinsic timescales as an organizational principle of neural processing across the whole rhesus macaque brain</article-title>
+          <source>Elife</source>
+          <volume>11</volume>
+          <year>2022</year>
+          <fpage>1</fpage>
+          <lpage>20</lpage>
+          <pub-id pub-id-type="doi">10.7554/eLife.75540</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib50">
+        <element-citation publication-type="book" id="sref50">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mantini</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Perrucci</surname>
+              <given-names>M.G.</given-names>
+            </name>
+            <name>
+              <surname>Del Gratta</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Romani</surname>
+              <given-names>G.L.</given-names>
+            </name>
+            <name>
+              <surname>Corbetta</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Raichle</surname>
+              <given-names>M.E.</given-names>
+            </name>
+          </person-group>
+          <series>Electrophysiological Signatures of Resting State Networks in the Human Brain</series>
+          <volume>vol. 104</volume>
+          <year>2007</year>
+        </element-citation>
+      </ref>
+      <ref id="bib51">
+        <element-citation publication-type="journal" id="sref51">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Manvich</surname>
+              <given-names>D.F.</given-names>
+            </name>
+            <name>
+              <surname>Webster</surname>
+              <given-names>K.A.</given-names>
+            </name>
+            <name>
+              <surname>Foster</surname>
+              <given-names>S.L.</given-names>
+            </name>
+            <name>
+              <surname>Farrell</surname>
+              <given-names>M.S.</given-names>
+            </name>
+            <name>
+              <surname>Ritchie</surname>
+              <given-names>J.C.</given-names>
+            </name>
+            <name>
+              <surname>Porter</surname>
+              <given-names>J.H.</given-names>
+            </name>
+            <name>
+              <surname>Weinshenker</surname>
+              <given-names>D.</given-names>
+            </name>
+          </person-group>
+          <article-title>The DREADD agonist clozapine N-oxide (CNO) is reverse-metabolized to clozapine and produces clozapine-like interoceptive stimulus effects in rats and mice</article-title>
+          <source>Sci. Rep.</source>
+          <volume>8</volume>
+          <year>2018</year>
+          <fpage>1</fpage>
+          <lpage>10</lpage>
+          <pub-id pub-id-type="doi">10.1038/s41598-018-22116-z</pub-id>
+          <pub-id pub-id-type="pmid">29311619</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib52">
+        <element-citation publication-type="journal" id="sref52">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Manzaneque</surname>
+              <given-names>J.M.</given-names>
+            </name>
+            <name>
+              <surname>Brain</surname>
+              <given-names>P.F.</given-names>
+            </name>
+            <name>
+              <surname>Navarro</surname>
+              <given-names>J.F.</given-names>
+            </name>
+          </person-group>
+          <article-title>Effect of low doses of clozapine on behaviour of isolated and group-housed male mice in the elevated plus-maze test</article-title>
+          <source>Prog. Neuro Psychopharmacol. Biol. Psychiatr.</source>
+          <volume>26</volume>
+          <issue>2</issue>
+          <year>2002</year>
+          <fpage>349</fpage>
+          <lpage>355</lpage>
+          <pub-id pub-id-type="doi">10.1016/S0278-5846(01)00280-9</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib53">
+        <element-citation publication-type="journal" id="sref53">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Meltzer</surname>
+              <given-names>H.Y.</given-names>
+            </name>
+          </person-group>
+          <article-title>Clinical studies on the mechanism of action of clozapine: the dopamine-serotonin hypothesis of schizophrenia</article-title>
+          <source>Psychopharmacology</source>
+          <volume>99</volume>
+          <issue>1 Suppl. ment</issue>
+          <year>1989</year>
+          <fpage>18</fpage>
+          <lpage>27</lpage>
+          <pub-id pub-id-type="doi">10.1007/BF00442554</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib54">
+        <element-citation publication-type="journal" id="sref54">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Milham</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Petkov</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Belin</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Ben Hamed</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Evrard</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>Fair</surname>
+              <given-names>D.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Toward next-generation primate neuroscience: a collaboration-based strategic plan for integrative neuroimaging</article-title>
+          <source>Neuron</source>
+          <year>2021</year>
+          <pub-id pub-id-type="doi">10.1016/j.neuron.2021.10.015</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib55">
+        <element-citation publication-type="journal" id="sref55">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Moeller</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Yacoub</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Olman</surname>
+              <given-names>C.A.</given-names>
+            </name>
+            <name>
+              <surname>Auerbach</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Strupp</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Harel</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Uǧurbil</surname>
+              <given-names>K.</given-names>
+            </name>
+          </person-group>
+          <article-title>Multiband multislice GE-EPI at 7 tesla, with 16-fold acceleration using partial parallel imaging with application to high spatial and temporal whole-brain FMRI</article-title>
+          <source>Magn. Reson. Med.</source>
+          <volume>63</volume>
+          <year>2010</year>
+          <fpage>1144</fpage>
+          <lpage>1153</lpage>
+          <pub-id pub-id-type="doi">10.1002/mrm.22361</pub-id>
+          <pub-id pub-id-type="pmid">20432285</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib56">
+        <element-citation publication-type="journal" id="sref56">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Murray</surname>
+              <given-names>J.D.</given-names>
+            </name>
+            <name>
+              <surname>Bernacchia</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Freedman</surname>
+              <given-names>D.J.</given-names>
+            </name>
+            <name>
+              <surname>Romo</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Wallis</surname>
+              <given-names>J.D.</given-names>
+            </name>
+            <name>
+              <surname>Cai</surname>
+              <given-names>X.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>A hierarchy of intrinsic timescales across primate cortex</article-title>
+          <source>Nat. Neurosci.</source>
+          <volume>17</volume>
+          <issue>12</issue>
+          <year>2014</year>
+          <fpage>1661</fpage>
+          <lpage>1663</lpage>
+          <pub-id pub-id-type="doi">10.1038/nn.3862</pub-id>
+          <pub-id pub-id-type="pmid">25383900</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib57">
+        <element-citation publication-type="journal" id="sref57">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Nagai</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <name>
+              <surname>Kikuchi</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Lerchner</surname>
+              <given-names>W.</given-names>
+            </name>
+            <name>
+              <surname>Inoue</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Ji</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Eldridge</surname>
+              <given-names>M.A.G.</given-names>
+            </name>
+            <name>
+              <surname>Kaneko</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>Kimura</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <name>
+              <surname>Oh-nishi</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Hori</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <name>
+              <surname>Kato</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <name>
+              <surname>Hirabayashi</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Fujimoto</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Kumata</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Aoki</surname>
+              <given-names>I.</given-names>
+            </name>
+            <name>
+              <surname>Suhara</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Higuchi</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Takada</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Richmond</surname>
+              <given-names>B.J.</given-names>
+            </name>
+            <name>
+              <surname>Minamimoto</surname>
+              <given-names>T.</given-names>
+            </name>
+          </person-group>
+          <article-title>Reward evaluation</article-title>
+          <source>Nat. Commun.</source>
+          <volume>7</volume>
+          <year>2016</year>
+          <fpage>1</fpage>
+          <lpage>8</lpage>
+          <pub-id pub-id-type="doi">10.1038/ncomms13605</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib58">
+        <element-citation publication-type="journal" id="sref58">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Nagai</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <name>
+              <surname>Miyakawa</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Takuwa</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>Hori</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <name>
+              <surname>Oyama</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Ji</surname>
+              <given-names>B.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Deschloroclozapine, a potent and selective chemogenetic actuator enables rapid neuronal and behavioral modulations in mice and monkeys</article-title>
+          <source>Nat. Neurosci.</source>
+          <year>2020</year>
+          <pub-id pub-id-type="doi">10.1038/s41593-020-0661-3</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib59">
+        <element-citation publication-type="book" id="sref59">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Nentwig</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Obray</surname>
+              <given-names>J.D.</given-names>
+            </name>
+            <name>
+              <surname>Vaughan</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Chandler</surname>
+              <given-names>L.J.</given-names>
+            </name>
+          </person-group>
+          <part-title>Behavioral and Slice Electrophysiological Assessment of DREADD Ligand, Deschloroclozapine (DCZ) in Rats</part-title>
+          <year>2021</year>
+          <pub-id pub-id-type="doi">10.21203/rs.3.rs-1028519/v1</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib60">
+        <element-citation publication-type="journal" id="sref60">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Nougaret</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Fascianelli</surname>
+              <given-names>V.</given-names>
+            </name>
+            <name>
+              <surname>Ravel</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Genovesio</surname>
+              <given-names>A.</given-names>
+            </name>
+          </person-group>
+          <article-title>Intrinsic timescales across the basal ganglia</article-title>
+          <source>Sci. Rep.</source>
+          <volume>11</volume>
+          <issue>1</issue>
+          <year>2021</year>
+          <fpage>1</fpage>
+          <lpage>8</lpage>
+          <pub-id pub-id-type="doi">10.1038/s41598-021-00512-2</pub-id>
+          <pub-id pub-id-type="pmid">33414495</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib61">
+        <element-citation publication-type="journal" id="sref61">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Oguchi</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Tanaka</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Pan</surname>
+              <given-names>X.</given-names>
+            </name>
+            <name>
+              <surname>Kikusui</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Moriya-Ito</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Kato</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Kobayashi</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Sakagami</surname>
+              <given-names>M.</given-names>
+            </name>
+          </person-group>
+          <article-title>Chemogenetic inactivation reveals the inhibitory control function of the prefronto-striatal pathway in the macaque brain</article-title>
+          <source>Commun. Biol.</source>
+          <volume>4</volume>
+          <year>2021</year>
+          <pub-id pub-id-type="doi">10.1038/s42003-021-02623-y</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib62">
+        <element-citation publication-type="journal" id="sref62">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Oyama</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Hori</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <name>
+              <surname>Nagai</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <name>
+              <surname>Miyakawa</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Mimura</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Hirabayashi</surname>
+              <given-names>T.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Chemogenetic dissection of the primate prefronto-subcortical pathways for working memory and decision-making</article-title>
+          <source>bioRxiv</source>
+          <year>2021</year>
+          <pub-id pub-id-type="doi">10.1101/2021.02.01.429248</pub-id>
+          <comment>2021.02.01.429248. Retrieved from</comment>
+        </element-citation>
+      </ref>
+      <ref id="bib63">
+        <element-citation publication-type="journal" id="sref63">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Peeters</surname>
+              <given-names>L.M.</given-names>
+            </name>
+            <name>
+              <surname>Hinz</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Detrez</surname>
+              <given-names>J.R.</given-names>
+            </name>
+            <name>
+              <surname>Missault</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>De Vos</surname>
+              <given-names>W.H.</given-names>
+            </name>
+            <name>
+              <surname>Verhoye</surname>
+              <given-names>M.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Chemogenetic silencing of neurons in the mouse anterior cingulate area modulates neuronal activity and functional connectivity</article-title>
+          <source>Neuroimage</source>
+          <volume>220</volume>
+          <year>2020</year>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2020.117088</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib64">
+        <element-citation publication-type="book" id="sref64">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Phillips</surname>
+              <given-names>S.T.</given-names>
+            </name>
+            <name>
+              <surname>Paulis</surname>
+              <given-names>T. De</given-names>
+            </name>
+            <name>
+              <surname>Baron</surname>
+              <given-names>B.M.</given-names>
+            </name>
+            <name>
+              <surname>Siegel</surname>
+              <given-names>B.W.</given-names>
+            </name>
+            <name>
+              <surname>Seeman</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Tol</surname>
+              <given-names>H.M. Van</given-names>
+            </name>
+            <name>
+              <surname>Guan</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>Smith</surname>
+              <given-names>H.E.</given-names>
+            </name>
+          </person-group>
+          <part-title>Binding of 5H-Dibenzo[b,e][1,4]diazepine and Chiral 5H-Dibenzo[a,d]cycloheptene Analogs of Clozapine to Dopamine and Serotonin Receptors 2686–2696</part-title>
+          <year>1994</year>
+        </element-citation>
+      </ref>
+      <ref id="bib65">
+        <element-citation publication-type="journal" id="sref65">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Raper</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Morrison</surname>
+              <given-names>R.D.</given-names>
+            </name>
+            <name>
+              <surname>Daniels</surname>
+              <given-names>J.S.</given-names>
+            </name>
+            <name>
+              <surname>Howell</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Bachevalier</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Wichmann</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Galvan</surname>
+              <given-names>A.</given-names>
+            </name>
+          </person-group>
+          <article-title>Metabolism and distribution of clozapine-N-oxide: implications for nonhuman primate chemogenetics</article-title>
+          <source>ACS Chem. Neurosci.</source>
+          <volume>8</volume>
+          <issue>7</issue>
+          <year>2017</year>
+          <fpage>1570</fpage>
+          <lpage>1576</lpage>
+          <pub-id pub-id-type="doi">10.1021/acschemneuro.7b00079</pub-id>
+          <pub-id pub-id-type="pmid">28324647</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib66">
+        <element-citation publication-type="book" id="sref66">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Raper</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Murphy</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Richardson</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Romm</surname>
+              <given-names>Z.</given-names>
+            </name>
+            <name>
+              <surname>Kovacs-Balint</surname>
+              <given-names>Z.</given-names>
+            </name>
+            <name>
+              <surname>Payne</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Galvan</surname>
+              <given-names>A.</given-names>
+            </name>
+          </person-group>
+          <part-title>Chemogenetic Inhibition of the Amygdala Modulates Emotional Behavior Expression in Infant Rhesus Monkeys</part-title>
+          <year>2019</year>
+          <pub-id pub-id-type="doi">10.1101/534214</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib67">
+        <element-citation publication-type="journal" id="sref67">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Raut</surname>
+              <given-names>R.V.</given-names>
+            </name>
+            <name>
+              <surname>Snyder</surname>
+              <given-names>A.Z.</given-names>
+            </name>
+            <name>
+              <surname>Raichle</surname>
+              <given-names>M.E.</given-names>
+            </name>
+          </person-group>
+          <article-title>Hierarchical dynamics as a macroscopic organizing principle of the human brain</article-title>
+          <source>Proc. Natl. Acad. Sci. U. S. A</source>
+          <volume>117</volume>
+          <issue>34</issue>
+          <year>2020</year>
+          <fpage>20890</fpage>
+          <lpage>20897</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.2003383117</pub-id>
+          <pub-id pub-id-type="pmid">32817467</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib68">
+        <element-citation publication-type="journal" id="sref68">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rocchi</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Canella</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Noei</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Gutierrez-Barragan</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Coletta</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Galbusera</surname>
+              <given-names>A.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Increased fMRI connectivity upon chemogenetic inhibition of the mouse prefrontal cortex</article-title>
+          <source>Nat. Commun.</source>
+          <volume>13</volume>
+          <issue>1</issue>
+          <year>2022</year>
+          <fpage>1</fpage>
+          <lpage>15</lpage>
+          <pub-id pub-id-type="doi">10.1038/s41467-022-28591-3</pub-id>
+          <pub-id pub-id-type="pmid">34983933</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib69">
+        <element-citation publication-type="journal" id="sref69">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Roelofs</surname>
+              <given-names>T.J.M.</given-names>
+            </name>
+            <name>
+              <surname>Verharen</surname>
+              <given-names>J.P.H.</given-names>
+            </name>
+            <name>
+              <surname>van Tilborg</surname>
+              <given-names>G.A.F.</given-names>
+            </name>
+            <name>
+              <surname>Boekhoudt</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>van der Toorn</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>de Jong</surname>
+              <given-names>J.W.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>A novel approach to map induced activation of neuronal networks using chemogenetics and functional neuroimaging in rats: a proof-of-concept study on the mesocorticolimbic system</article-title>
+          <source>Neuroimage</source>
+          <volume>156</volume>
+          <year>2017</year>
+          <fpage>109</fpage>
+          <lpage>118</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2017.05.021</pub-id>
+          <pub-id pub-id-type="pmid">28502844</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib70">
+        <element-citation publication-type="journal" id="sref70">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Roseboom</surname>
+              <given-names>P.H.</given-names>
+            </name>
+            <name>
+              <surname>Mueller</surname>
+              <given-names>S.A.L.</given-names>
+            </name>
+            <name>
+              <surname>Oler</surname>
+              <given-names>J.A.</given-names>
+            </name>
+            <name>
+              <surname>Fox</surname>
+              <given-names>A.S.</given-names>
+            </name>
+            <name>
+              <surname>Riedel</surname>
+              <given-names>M.K.</given-names>
+            </name>
+            <name>
+              <surname>Elam</surname>
+              <given-names>V.R.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Evidence in primates supporting the use of chemogenetics for the treatment of human refractory neuropsychiatric disorders</article-title>
+          <source>Mol. Ther.</source>
+          <volume>29</volume>
+          <issue>12</issue>
+          <year>2021</year>
+          <fpage>3484</fpage>
+          <lpage>3497</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.ymthe.2021.04.021</pub-id>
+          <pub-id pub-id-type="pmid">33895327</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib71">
+        <element-citation publication-type="book" id="sref71">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Roth</surname>
+              <given-names>B.L.</given-names>
+            </name>
+          </person-group>
+          <part-title>DREADDs for Neuroscientists</part-title>
+          <year>2016</year>
+          <publisher-name><italic>Neuron</italic>. Cell Press</publisher-name>
+          <pub-id pub-id-type="doi">10.1016/j.neuron.2016.01.040</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib72">
+        <element-citation publication-type="book" id="sref72">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Roth</surname>
+              <given-names>B.L.</given-names>
+            </name>
+            <name>
+              <surname>Sheffler</surname>
+              <given-names>D.J.</given-names>
+            </name>
+            <name>
+              <surname>Kroeze</surname>
+              <given-names>W.K.</given-names>
+            </name>
+          </person-group>
+          <series>Magic Shotguns versus Magic Bullets: Selectively Non-selective Drugs for Mood Disorders and Schizophrenia</series>
+          <volume>vol. 3</volume>
+          <year>2004</year>
+          <fpage>3</fpage>
+          <lpage>9</lpage>
+        </element-citation>
+      </ref>
+      <ref id="bib73">
+        <element-citation publication-type="journal" id="sref73">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Schotte</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Janssen</surname>
+              <given-names>P.F.M.</given-names>
+            </name>
+            <name>
+              <surname>Megens</surname>
+              <given-names>A.A.H.P.</given-names>
+            </name>
+            <name>
+              <surname>Leysen</surname>
+              <given-names>J.E.</given-names>
+            </name>
+          </person-group>
+          <article-title>Occupancy of central neurotransmitter receptors by risperidone, clozapine and haloperidol, measured ex vivo by quantitative autoradiography</article-title>
+          <source>Brain Res.</source>
+          <volume>631</volume>
+          <issue>2</issue>
+          <year>1993</year>
+          <fpage>191</fpage>
+          <lpage>202</lpage>
+          <pub-id pub-id-type="doi">10.1016/0006-8993(93)91535-Z</pub-id>
+          <pub-id pub-id-type="pmid">7510574</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib74">
+        <element-citation publication-type="journal" id="sref74">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Seidlitz</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Sponheim</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Glen</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Ye</surname>
+              <given-names>F.Q.</given-names>
+            </name>
+            <name>
+              <surname>Saleem</surname>
+              <given-names>K.S.</given-names>
+            </name>
+            <name>
+              <surname>Leopold</surname>
+              <given-names>D.A.</given-names>
+            </name>
+            <name>
+              <surname>Ungerleider</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Messinger</surname>
+              <given-names>A.</given-names>
+            </name>
+          </person-group>
+          <article-title>A population MRI brain template and analysis tools for the macaque</article-title>
+          <source>Neuroimage</source>
+          <volume>170</volume>
+          <year>2018</year>
+          <fpage>121</fpage>
+          <lpage>131</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2017.04.063</pub-id>
+          <pub-id pub-id-type="pmid">28461058</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib75">
+        <element-citation publication-type="journal" id="sref75">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Setsompop</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Gagoski</surname>
+              <given-names>B.A.</given-names>
+            </name>
+            <name>
+              <surname>Polimeni</surname>
+              <given-names>J.R.</given-names>
+            </name>
+            <name>
+              <surname>Witzel</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Wedeen</surname>
+              <given-names>V.J.</given-names>
+            </name>
+            <name>
+              <surname>Wald</surname>
+              <given-names>L.L.</given-names>
+            </name>
+          </person-group>
+          <article-title>Blipped-controlled aliasing in parallel imaging for simultaneous multislice echo planar imaging with reduced g-factor penalty</article-title>
+          <source>Magn. Reson. Med.</source>
+          <volume>67</volume>
+          <year>2012</year>
+          <fpage>1210</fpage>
+          <lpage>1224</lpage>
+          <pub-id pub-id-type="doi">10.1002/mrm.23097</pub-id>
+          <pub-id pub-id-type="pmid">21858868</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib76">
+        <element-citation publication-type="journal" id="sref76">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Smith</surname>
+              <given-names>K.S.</given-names>
+            </name>
+            <name>
+              <surname>Bucci</surname>
+              <given-names>D.J.</given-names>
+            </name>
+            <name>
+              <surname>Luikart</surname>
+              <given-names>B.W.</given-names>
+            </name>
+            <name>
+              <surname>Mahler</surname>
+              <given-names>S.V.</given-names>
+            </name>
+          </person-group>
+          <article-title>DREADDs: use and application in behavioral neuroscience section 1: advantages for behavioral neuroscience</article-title>
+          <source>Behav. Neurosci.</source>
+          <volume>130</volume>
+          <issue>2</issue>
+          <year>2016</year>
+          <fpage>137</fpage>
+          <lpage>155</lpage>
+          <pub-id pub-id-type="doi">10.1037/bne0000135</pub-id>
+          <pub-id pub-id-type="pmid">26913540</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib77">
+        <element-citation publication-type="book" id="sref77">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Song</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Patel</surname>
+              <given-names>R.V.</given-names>
+            </name>
+            <name>
+              <surname>Sharif</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Ashokan</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Michaelides</surname>
+              <given-names>M.</given-names>
+            </name>
+          </person-group>
+          <part-title>Chemogenetics as a Neuromodulatory Approach to Treating Neuropsychiatric Diseases and Disorders. Molecular Therapy</part-title>
+          <year>2021</year>
+          <publisher-name>Cell Press</publisher-name>
+          <pub-id pub-id-type="doi">10.1016/j.ymthe.2021.11.019</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib78">
+        <element-citation publication-type="journal" id="sref78">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Stephens</surname>
+              <given-names>G.J.</given-names>
+            </name>
+            <name>
+              <surname>Honey</surname>
+              <given-names>C.J.</given-names>
+            </name>
+            <name>
+              <surname>Hasson</surname>
+              <given-names>U.</given-names>
+            </name>
+          </person-group>
+          <article-title>A place for time: the spatiotemporal structure of neural dynamics during natural audition</article-title>
+          <source>J. Neurophysiol.</source>
+          <volume>110</volume>
+          <issue>9</issue>
+          <year>2013</year>
+          <fpage>2019</fpage>
+          <lpage>2026</lpage>
+          <pub-id pub-id-type="doi">10.1152/jn.00268.2013</pub-id>
+          <pub-id pub-id-type="pmid">23926041</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib79">
+        <element-citation publication-type="journal" id="sref79">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tauscher</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Hussain</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Agid</surname>
+              <given-names>O.</given-names>
+            </name>
+            <name>
+              <surname>Paul Verhoeff</surname>
+              <given-names>N.L.</given-names>
+            </name>
+            <name>
+              <surname>Wilson</surname>
+              <given-names>A.A.</given-names>
+            </name>
+            <name>
+              <surname>Houle</surname>
+              <given-names>S.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Article equivalent occupancy of dopamine D 1 and D 2 receptors with clozapine: differentiation from other atypical antipsychotics</article-title>
+          <source>Am. J. Psychiatr.</source>
+          <volume>161</volume>
+          <year>2004</year>
+          <comment>Retrieved from</comment>
+          <ext-link ext-link-type="uri" xlink:href="http://ajp.psychiatryonline.org" id="intref0020">http://ajp.psychiatryonline.org</ext-link>
+        </element-citation>
+      </ref>
+      <ref id="bib80">
+        <element-citation publication-type="journal" id="sref80">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Taylor</surname>
+              <given-names>D.M.</given-names>
+            </name>
+          </person-group>
+          <article-title>Clozapine for treatment-resistant schizophrenia: still the gold standard?</article-title>
+          <source>CNS Drugs</source>
+          <volume>31</volume>
+          <issue>3</issue>
+          <year>2017</year>
+          <fpage>177</fpage>
+          <lpage>180</lpage>
+          <pub-id pub-id-type="doi">10.1007/s40263-017-0411-6</pub-id>
+          <pub-id pub-id-type="pmid">28258419</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib81">
+        <element-citation publication-type="journal" id="sref81">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tu</surname>
+              <given-names>W.</given-names>
+            </name>
+            <name>
+              <surname>Ma</surname>
+              <given-names>Z.</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>N.</given-names>
+            </name>
+          </person-group>
+          <article-title>Brain network reorganization after targeted attack at a hub region</article-title>
+          <source>Neuroimage</source>
+          <volume>237</volume>
+          <year>2021</year>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2021.118219</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib82">
+        <element-citation publication-type="journal" id="sref82">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Upright</surname>
+              <given-names>N.A.</given-names>
+            </name>
+            <name>
+              <surname>Baxter</surname>
+              <given-names>M.G.</given-names>
+            </name>
+          </person-group>
+          <article-title>Effect of chemogenetic actuator drugs on prefrontal cortex-dependent working memory in nonhuman primates</article-title>
+          <source>Neuropsychopharmacology</source>
+          <year>2020</year>
+          <pub-id pub-id-type="doi">10.1038/s41386-020-0660-9</pub-id>
+          <comment>(March), 1–6</comment>
+        </element-citation>
+      </ref>
+      <ref id="bib83">
+        <element-citation publication-type="journal" id="sref83">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Upright</surname>
+              <given-names>N.A.</given-names>
+            </name>
+            <name>
+              <surname>Brookshire</surname>
+              <given-names>S.W.</given-names>
+            </name>
+            <name>
+              <surname>Schnebelen</surname>
+              <given-names>W.</given-names>
+            </name>
+            <name>
+              <surname>Damatac</surname>
+              <given-names>C.G.</given-names>
+            </name>
+            <name>
+              <surname>Hof</surname>
+              <given-names>P.R.</given-names>
+            </name>
+            <name>
+              <surname>Browning</surname>
+              <given-names>P.G.F.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Behavioral effect of chemogenetic inhibition is directly related to receptor transduction levels in rhesus monkeys</article-title>
+          <source>J. Neurosci.</source>
+          <volume>38</volume>
+          <issue>37</issue>
+          <year>2018</year>
+          <fpage>7969</fpage>
+          <lpage>7975</lpage>
+          <pub-id pub-id-type="doi">10.1523/jneurosci.1422-18.2018</pub-id>
+          <pub-id pub-id-type="pmid">30082415</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib84">
+        <element-citation publication-type="book" id="sref84">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Urban</surname>
+              <given-names>D.J.</given-names>
+            </name>
+            <name>
+              <surname>Roth</surname>
+              <given-names>B.L.</given-names>
+            </name>
+          </person-group>
+          <series>DREADDs (Designer Receptors Exclusively Activated by Designer Drugs): Chemogenetic Tools with Therapeutic Utility</series>
+          <volume>vols. 399–420</volume>
+          <year>2015</year>
+          <pub-id pub-id-type="doi">10.1146/annurev-pharmtox-010814-124803</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib85">
+        <element-citation publication-type="journal" id="sref85">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Uǧurbil</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Xu</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Auerbach</surname>
+              <given-names>E.J.</given-names>
+            </name>
+            <name>
+              <surname>Moeller</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Vu</surname>
+              <given-names>A.T.</given-names>
+            </name>
+            <name>
+              <surname>Duarte-Carvajalino</surname>
+              <given-names>J.M.</given-names>
+            </name>
+            <name>
+              <surname>Lenglet</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Wu</surname>
+              <given-names>X.</given-names>
+            </name>
+            <name>
+              <surname>Schmitter</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Van de Moortele</surname>
+              <given-names>P.F.</given-names>
+            </name>
+            <name>
+              <surname>Strupp</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Sapiro</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>De Martino</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Harel</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Garwood</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Feinberg</surname>
+              <given-names>D.A.</given-names>
+            </name>
+            <name>
+              <surname>Smith</surname>
+              <given-names>S.M.</given-names>
+            </name>
+            <name>
+              <surname>Miller</surname>
+              <given-names>K.L.</given-names>
+            </name>
+            <name>
+              <surname>Sotiropoulos</surname>
+              <given-names>S.N.</given-names>
+            </name>
+            <name>
+              <surname>Jbabdi</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Andersson</surname>
+              <given-names>J.L.R.</given-names>
+            </name>
+            <name>
+              <surname>Behrens</surname>
+              <given-names>T.E.J.</given-names>
+            </name>
+            <name>
+              <surname>Glasser</surname>
+              <given-names>M.F.</given-names>
+            </name>
+            <name>
+              <surname>Van Essen</surname>
+              <given-names>D.C.</given-names>
+            </name>
+            <name>
+              <surname>Yacoub</surname>
+              <given-names>E.</given-names>
+            </name>
+          </person-group>
+          <article-title>Pushing spatial and temporal resolution for functional and diffusion MRI in the Human Connectome Project</article-title>
+          <source>Neuroimage</source>
+          <volume>80</volume>
+          <year>2013</year>
+          <fpage>80</fpage>
+          <lpage>104</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2013.05.012</pub-id>
+          <pub-id pub-id-type="pmid">23702417</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib86">
+        <element-citation publication-type="journal" id="sref86">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Vancraeyenest</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Arsenault</surname>
+              <given-names>J.T.</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>X.</given-names>
+            </name>
+            <name>
+              <surname>Zhu</surname>
+              <given-names>Q.</given-names>
+            </name>
+            <name>
+              <surname>Kobayashi</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Isa</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Isa</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Vanduffel</surname>
+              <given-names>W.</given-names>
+            </name>
+          </person-group>
+          <article-title>Selective mesoaccumbal pathway inactivation affects motivation but not reinforcement-based learning in macaques</article-title>
+          <source>Neuron</source>
+          <volume>108</volume>
+          <year>2020</year>
+          <fpage>568</fpage>
+          <lpage>581</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuron.2020.07.013</pub-id>
+          <comment>e6</comment>
+          <pub-id pub-id-type="pmid">32758424</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib87">
+        <element-citation publication-type="journal" id="sref87">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wang</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Ji</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Hong</surname>
+              <given-names>Z.</given-names>
+            </name>
+            <name>
+              <surname>Poh</surname>
+              <given-names>J.S.</given-names>
+            </name>
+            <name>
+              <surname>Krishnan</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>J.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Disrupted salience network functional connectivity and white-matter microstructure in persons at risk for psychosis: findings from the LYRIKS study</article-title>
+          <source>Psychol. Med.</source>
+          <volume>46</volume>
+          <issue>13</issue>
+          <year>2016</year>
+          <fpage>2771</fpage>
+          <lpage>2783</lpage>
+          <pub-id pub-id-type="doi">10.1017/S0033291716001410</pub-id>
+          <pub-id pub-id-type="pmid">27396386</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib88">
+        <element-citation publication-type="journal" id="sref88">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Watanabe</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Rees</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Masuda</surname>
+              <given-names>N.</given-names>
+            </name>
+          </person-group>
+          <article-title>Atypical intrinsic neural timescale in autism</article-title>
+          <source>Elife</source>
+          <volume>8</volume>
+          <year>2019</year>
+          <pub-id pub-id-type="doi">10.7554/eLife.42256</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib89">
+        <element-citation publication-type="journal" id="sref89">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wengler</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Goldberg</surname>
+              <given-names>A.T.</given-names>
+            </name>
+            <name>
+              <surname>Chahine</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Horga</surname>
+              <given-names>G.</given-names>
+            </name>
+          </person-group>
+          <article-title>Distinct hierarchical alterations of intrinsic neural timescales account for different manifestations of psychosis</article-title>
+          <source>Elife</source>
+          <volume>9</volume>
+          <year>2020</year>
+          <fpage>1</fpage>
+          <lpage>27</lpage>
+          <pub-id pub-id-type="doi">10.7554/eLife.56151</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib90">
+        <element-citation publication-type="journal" id="sref90">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Whissell</surname>
+              <given-names>P.D.</given-names>
+            </name>
+            <name>
+              <surname>Tohyama</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Martin</surname>
+              <given-names>L.J.</given-names>
+            </name>
+          </person-group>
+          <article-title>The use of DREADDs to deconstruct behavior</article-title>
+          <source>Front. Genet.</source>
+          <volume>7</volume>
+          <issue>MAY</issue>
+          <year>2016</year>
+          <fpage>1</fpage>
+          <lpage>15</lpage>
+          <pub-id pub-id-type="doi">10.3389/fgene.2016.00070</pub-id>
+          <pub-id pub-id-type="pmid">26858746</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib91">
+        <element-citation publication-type="journal" id="sref91">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Whitfield-Gabrieli</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Nieto-Castanon</surname>
+              <given-names>A.</given-names>
+            </name>
+          </person-group>
+          <article-title>Conn: a functional connectivity toolbox for correlated and anticorrelated brain networks</article-title>
+          <source>Brain Connect.</source>
+          <volume>2</volume>
+          <issue>3</issue>
+          <year>2012</year>
+          <fpage>125</fpage>
+          <lpage>141</lpage>
+          <pub-id pub-id-type="doi">10.1089/brain.2012.0073</pub-id>
+          <pub-id pub-id-type="pmid">22642651</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib92">
+        <element-citation publication-type="journal" id="sref92">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yacoub</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Grier</surname>
+              <given-names>M.D.</given-names>
+            </name>
+            <name>
+              <surname>Auerbach</surname>
+              <given-names>E.J.</given-names>
+            </name>
+            <name>
+              <surname>Lagore</surname>
+              <given-names>R.L.</given-names>
+            </name>
+            <name>
+              <surname>Harel</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Adriany</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Zilverstand</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Hayden</surname>
+              <given-names>B.Y.</given-names>
+            </name>
+            <name>
+              <surname>Heilbronner</surname>
+              <given-names>S.R.</given-names>
+            </name>
+            <name>
+              <surname>Uğurbil</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Zimmermann</surname>
+              <given-names>J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Ultra-high field (10.5 T) resting state fMRI in the macaque</article-title>
+          <source>Neuroimage</source>
+          <volume>223</volume>
+          <year>2020</year>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2020.117349</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib93">
+        <element-citation publication-type="journal" id="sref93">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yan</surname>
+              <given-names>X.</given-names>
+            </name>
+            <name>
+              <surname>Telu</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Dick</surname>
+              <given-names>R.M.</given-names>
+            </name>
+            <name>
+              <surname>Liow</surname>
+              <given-names>J.-S.</given-names>
+            </name>
+            <name>
+              <surname>Zanotti-Fregonara</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Morse</surname>
+              <given-names>C.L.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>[ 11 C]deschloroclozapine is an improved PET radioligand for quantifying a human muscarinic DREADD expressed in monkey brain</article-title>
+          <source>J. Cerebr. Blood Flow Metabol.</source>
+          <year>2021</year>
+          <object-id pub-id-type="publisher-id">0271678X2110079</object-id>
+          <pub-id pub-id-type="doi">10.1177/0271678x211007949</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib94">
+        <element-citation publication-type="journal" id="sref94">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhu</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>Roth</surname>
+              <given-names>B.L.</given-names>
+            </name>
+          </person-group>
+          <article-title>DREADD: a chemogenetic GPCR signaling platform</article-title>
+          <source>Int. J. Neuropsychopharmacol.</source>
+          <volume>18</volume>
+          <issue>1</issue>
+          <year>2015</year>
+          <fpage>1</fpage>
+          <lpage>6</lpage>
+          <pub-id pub-id-type="doi">10.1093/ijnp/pyu007</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib95">
+        <element-citation publication-type="journal" id="sref95">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zilio</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Gomez-Pilar</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Cao</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Zang</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Qi</surname>
+              <given-names>Z.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Are intrinsic neural timescales related to sensory processing? Evidence from abnormal behavioral states</article-title>
+          <source>Neuroimage</source>
+          <volume>226</volume>
+          <year>2021</year>
+          <object-id pub-id-type="publisher-id">117579</object-id>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2020</pub-id>
+          <comment>July 2020</comment>
+        </element-citation>
+      </ref>
+    </ref-list>
+    <sec id="appsec1" sec-type="supplementary-material">
+      <label>Appendix A</label>
+      <title>Supplementary data</title>
+      <p id="p0245">The following is the Supplementary data to this article.<supplementary-material content-type="local-data" id="mmc1"><caption><title>Multimedia component 1</title></caption><media xlink:href="mmc1.pdf"><alt-text>Multimedia component 1</alt-text></media></supplementary-material></p>
+    </sec>
+    <sec sec-type="data-availability" id="da0010">
+      <title>Data availability</title>
+      <p id="p0035">Data will be made available on request.</p>
+    </sec>
+    <ack id="ack0010">
+      <title>Acknowledgments</title>
+      <p id="p0240">We acknowledge funding from <funding-source id="gs1">NIH</funding-source> grants R01MH118257 (SRH), P50MH119569 (SRH), T32DA007234 to P. Mermelstein (AKC), R36MH130105 (AKC), R01EB031765 (JZ), R56EB031765 (JZ), T32EB031512 to T. Netoff (DNB), P30DA048742 (JZ, SRH), a <funding-source id="gs3">UMN AIRP</funding-source> award (JZ, SRH), a Pilot Project Grant from the <funding-source id="gs4">UMN</funding-source> Medical Discovery Team on Addiction (SRH).</p>
+    </ack>
+    <fn-group>
+      <fn id="appsec2" fn-type="supplementary-material">
+        <label>Appendix A</label>
+        <p id="p0250">Supplementary data to this article can be found online at <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/j.crneur.2022.100072" id="intref0010">https://doi.org/10.1016/j.crneur.2022.100072</ext-link>.</p>
+      </fn>
+    </fn-group>
+  </back>
+</article>

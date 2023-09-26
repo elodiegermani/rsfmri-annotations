@@ -1,0 +1,1733 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">Front Neurosci</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Front Neurosci</journal-id>
+      <journal-id journal-id-type="publisher-id">Front. Neurosci.</journal-id>
+      <journal-title-group>
+        <journal-title>Frontiers in Neuroscience</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">1662-4548</issn>
+      <issn pub-type="epub">1662-453X</issn>
+      <publisher>
+        <publisher-name>Frontiers Media S.A.</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">32760248</article-id>
+      <article-id pub-id-type="pmc">7373781</article-id>
+      <article-id pub-id-type="doi">10.3389/fnins.2020.00751</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Neuroscience</subject>
+          <subj-group>
+            <subject>Methods</subject>
+          </subj-group>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>A Radiomics Approach to Predicting Parkinson’s Disease by Incorporating Whole-Brain Functional Activity and Gray Matter Structure</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Cao</surname>
+            <given-names>Xuan</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Wang</surname>
+            <given-names>Xiao</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Xue</surname>
+            <given-names>Chen</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Zhang</surname>
+            <given-names>Shaojun</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Huang</surname>
+            <given-names>Qingling</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="corresp" rid="c001">
+            <sup>*</sup>
+          </xref>
+          <uri xlink:type="simple" xlink:href="http://loop.frontiersin.org/people/615497/overview"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Liu</surname>
+            <given-names>Weiguo</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+          <xref ref-type="corresp" rid="c002">
+            <sup>*</sup>
+          </xref>
+          <uri xlink:type="simple" xlink:href="http://loop.frontiersin.org/people/835671/overview"/>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1"><sup>1</sup><institution>Division of Statistics and Data Science, Department of Mathematical Sciences, University of Cincinnati</institution>, <addr-line>Cincinnati, OH</addr-line>, <country>United States</country></aff>
+      <aff id="aff2"><sup>2</sup><institution>Department of Radiology, Affiliated Brain Hospital, Nanjing Medical University</institution>, <addr-line>Nanjing</addr-line>, <country>China</country></aff>
+      <aff id="aff3"><sup>3</sup><institution>Department of Statistics, University of Florida</institution>, <addr-line>Gainesville, FL</addr-line>, <country>United States</country></aff>
+      <aff id="aff4"><sup>4</sup><institution>Department of Neurology, Affiliated Brain Hospital, Nanjing Medical University</institution>, <addr-line>Nanjing</addr-line>, <country>China</country></aff>
+      <author-notes>
+        <fn fn-type="edited-by">
+          <p>Edited by: Baojuan Li, Fourth Military Medical University, China</p>
+        </fn>
+        <fn fn-type="edited-by">
+          <p>Reviewed by: Zhenyu Liu, Institute of Automation (CAS), China; Zhifeng Shi, Huashan Hospital Affiliated to Fudan University, China</p>
+        </fn>
+        <corresp id="c001">*Correspondence: Qingling Huang, <email>hql_nju@163.com</email></corresp>
+        <corresp id="c002">Weiguo Liu, <email>wgliunbh@sina.com</email></corresp>
+        <fn fn-type="other" id="fn004">
+          <p>This article was submitted to Brain Imaging Methods, a section of the journal Frontiers in Neuroscience</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="epub">
+        <day>15</day>
+        <month>7</month>
+        <year>2020</year>
+      </pub-date>
+      <pub-date pub-type="collection">
+        <year>2020</year>
+      </pub-date>
+      <volume>14</volume>
+      <elocation-id>751</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>18</day>
+          <month>2</month>
+          <year>2020</year>
+        </date>
+        <date date-type="accepted">
+          <day>25</day>
+          <month>6</month>
+          <year>2020</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Copyright © 2020 Cao, Wang, Xue, Zhang, Huang and Liu.</copyright-statement>
+        <copyright-year>2020</copyright-year>
+        <copyright-holder>Cao, Wang, Xue, Zhang, Huang and Liu</copyright-holder>
+        <license xlink:href="http://creativecommons.org/licenses/by/4.0/">
+          <license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY). The use, distribution or reproduction in other forums is permitted, provided the original author(s) and the copyright owner(s) are credited and that the original publication in this journal is cited, in accordance with accepted academic practice. No use, distribution or reproduction is permitted which does not comply with these terms.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>Parkinson’s disease (PD) is a progressive, chronic, and neurodegenerative disorder that is primarily diagnosed by clinical examinations and magnetic resonance imaging (MRI). In this study, we proposed a machine learning based radiomics method to predict PD. Fifty healthy controls (HC) along with 70 PD patients underwent resting-state magnetic resonance imaging (rs-fMRI). For all subjects, we extracted five types of 6664 features, including mean amplitude of low-frequency fluctuation (mALFF), mean regional homogeneity (mReHo), resting-state functional connectivity (RSFC), voxel-mirrored homotopic connectivity (VMHC) and gray matter (GM) volume. After conducting dimension reduction utilizing Least absolute shrinkage and selection operator (LASSO), fifty-three radiomic features including 46 RSFCs, 1 mALFF, 3 mReHos, 1 VMHC, 2 GM volumes and 1 clinical factor were retained. The selected features also indicated the most discriminative regions for PD. We further conducted model fitting procedure for classifying subjects in the training set employing random forest and support volume machine (SVM) to evaluate the performance of the two methods. After cross-validation, both methods achieved 100% accuracy and area under curve (AUC) for distinguishing between PD and HC in the training set. In the testing set, SVM performed better than random forest with the accuracy, true positive rate (TPR) and AUC being 85%, 1 and 0.97, respectively. These findings demonstrate the radiomics technique has the potential to support radiological diagnosis and to achieve high classification accuracy for clinical diagnostic systems for patients with PD.</p>
+      </abstract>
+      <kwd-group>
+        <kwd>Parkinson’s disease</kwd>
+        <kwd>radiomics</kwd>
+        <kwd>resting-state functional magnetic resonance imaging</kwd>
+        <kwd>structural magnetic resonance imaging</kwd>
+        <kwd>machine learning</kwd>
+      </kwd-group>
+      <counts>
+        <fig-count count="4"/>
+        <table-count count="4"/>
+        <equation-count count="2"/>
+        <ref-count count="52"/>
+        <page-count count="12"/>
+        <word-count count="0"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="S1">
+      <title>Introduction</title>
+      <p>Parkinson’s disease (PD) is a major neurodegenerative disease influenced by both genetic and environmental factors (<xref rid="B9" ref-type="bibr">Halliday et al., 2014</xref>). As the second most common neurodegenerative disorder, PD is characterized by the degeneration of dopamine-producing cells in the brain resulting in motor symptoms and nonmotor features (<xref rid="B25" ref-type="bibr">Mhyre et al., 2012</xref>). Available diagnostic tools are better at detecting motor symptoms than nonmotor symptoms. The neural and pathophysiologic mechanisms to predict the progression of PD remain unclear and discovering the psychobiological markers is the key research priority. Understanding the inner working mechanisms of PD is one of the most intriguing scientific questions. Studies in neuroscience strongly suggest intervention during early therapeutic windows (<xref rid="B39" ref-type="bibr">Vu et al., 2012</xref>; <xref rid="B36" ref-type="bibr">Tibar et al., 2018</xref>). Although positron emitted topography/computed tomography is accurate (<xref rid="B24" ref-type="bibr">Meles et al., 2017</xref>) the diagnosis of PD at present is mainly dependent on clinical features and scores.</p>
+      <p>In recent years, neuroimaging has been increasingly employed to aid the early diagnosis of PD. A variety of neuroimaging technologies including functional magnetic resonance imaging (fMRI), structure MRI (sMRI), positron emission tomography (PET) and electroencephalography (EEG) have been widely adopted. Among these, resting-state functional MR imaging (rs-fMRI) is regarded as a promising technique for precisely locating the abnormal spontaneous activities in neuropsychological disease (<xref rid="B41" ref-type="bibr">Wang et al., 2019</xref>). Several rs-fMRI based methods including regional homogeneity (ReHo), amplitude of low frequency fluctuations (ALFF), and functional connectivity (FC) provide a task-free approach to explore spontaneous brain activity and connectivity among networks in different brain regions of PD patients. Application of these techniques provides new insights in prediction, early diagnosis and differential diagnosis of PD. Previous rs-fMRI studies using ALFF found specific frequency band of ALFF for PD (<xref rid="B17" ref-type="bibr">Li et al., 2016</xref>) and detected significant alterations of ALFF in the prefrontal cortex and subcortical regions in PD patients (<xref rid="B44" ref-type="bibr">Xiang et al., 2016</xref>). Frequency domain analyses of ALFF revealed decreased ALFF in the putamen, parieto-temporo-occipital cortex, thalamus, cerebellum, and several occipital regions, while increased ALFF values were detected in the caudate and several temporal regions (<xref rid="B49" ref-type="bibr">Zhang et al., 2013</xref>). A large sample study of 109 PD patients found distinguishing frequency bands and neural modulations in the brainstem and striatum correlated with the dose of levodopa and bradykinesia subscale scores (<xref rid="B12" ref-type="bibr">Hou et al., 2014</xref>).</p>
+      <p>Along with these distinctive changes of ALFF, spontaneous ReHo analysis in rs-fMRI studies also achieved considerable progress in examining early onset and late-onset PD (<xref rid="B42" ref-type="bibr">Wu et al., 2009</xref>; <xref rid="B45" ref-type="bibr">Yang et al., 2013</xref>; <xref rid="B32" ref-type="bibr">Sheng et al., 2016</xref>). ReHo alteration in the early phase of PD showed a low level of local coherence in the right primary sensory and positive correlation with disease duration (<xref rid="B5" ref-type="bibr">Choe et al., 2013</xref>). A 2-year longitudinal PD study of multimodal MRI using ReHo and voxel-based-morphometry (VBM) observed a progressive decrease of ReHo values in the sensorimotor cortex, default-mode network (DMN), and the left cerebellum, but increased ReHo in the supplementary motor area (SMA), bilateral temporal gyrus, and hippocampus (<xref rid="B48" ref-type="bibr">Zeng et al., 2017</xref>). A meta-analysis using ALFF and ReHo found consistent decreased activity in the putamen for PD patients that could serve as an independent validation of rs-fMRI (<xref rid="B40" ref-type="bibr">Wang et al., 2018</xref>). Another ALFF and ReHo based study demonstrated the disturbed DMN, SMA, basal ganglia (BG), and posterior cerebellar lobule in cognitively normal PD as compared with healthy controls (<xref rid="B10" ref-type="bibr">Harrington et al., 2017</xref>). These multilevel characteristics of rs-fMRI could effectively improve the discrimination accuracy of diagnosis.</p>
+      <p>Although previous rs-fMRI studies revealed widespread abnormal intrinsic networks in line with the pathophysiology of PD, these findings and biomarkers have not been extensively used for diagnosis, prediction or prognosis of PD in daily clinical practice. In recent years, a method called radiomics that extracts large amount of features from radiographic medical images into high-dimensional mineable data using data-characterization algorithms has received considerable attention, particularly in clinical oncology diagnosis (<xref rid="B37" ref-type="bibr">Valladares et al., 2020</xref>). Radiomics analysis employs multimodality medical images and machine learning techniques to extract many quantitative characteristics as objective, sensitive biomarkers of disease stage to potentially detect treatment effects (<xref rid="B18" ref-type="bibr">Liu et al., 2019</xref>). Applications of radiomics approach in the neurodegenerative and mental disorder disclosed the heterogeneity characteristics with a high accuracy that facilitate individualized diagnosis in patients with Alzheimer’s disease, autism spectrum disorder and schizophrenia (<xref rid="B11" ref-type="bibr">Hofmann-Apitius et al., 2015</xref>; <xref rid="B29" ref-type="bibr">Salvatore et al., 2019</xref>; <xref rid="B41" ref-type="bibr">Wang et al., 2019</xref>). The radiomics technology that integrated the advantages of various models has been utilized to extract the characteristics for automated diagnosis of early PD and quantifying PD severity. These methods consist of voxel-based method (VBM), diffusion tensor imaging (DTI), functional connectome and connectivity measures among others (<xref rid="B33" ref-type="bibr">Shinde et al., 2019</xref>). A radiomics analysis of longitudinal Single-photon Emission Computed Tomography (PSECT) images demonstrated radiomic features significantly increased the prediction accuracy and were proved to be effective prognostic biomarkers of PD (<xref rid="B28" ref-type="bibr">Rahmim et al., 2017</xref>). More recently, a radiomics of deep neural nets on neuromelanin-sensitive MRI demonstrated a test accuracy of 85.7% and revealed the substantia nigra pars compacta abnormalities in PD discriminating from atypical PD (<xref rid="B33" ref-type="bibr">Shinde et al., 2019</xref>). Another radiomics study of quantitative susceptibility mapping were shown to assist the diagnosis of idiopathic PD (<xref rid="B3" ref-type="bibr">Cheng et al., 2019</xref>). A classifier for early PD with an accuracy of 86.96% was identified from SVM training by extracting characteristics including ALFF, ReHo and RSFC from the gray matter (GM), white matter (WM) and cerebrospinal fluid (CSF) (<xref rid="B19" ref-type="bibr">Long et al., 2012</xref>).</p>
+      <p>Considering the above-mentioned radiomics approaches in existing PD studies, we aimed to utilize both rs-fMRI and sMRI to extract radiomic features including whole-brain functional activity (i.e., ALFF and ReHo), connectivity (i.e., RSFC and VMHC) and gray matter (GM). Our goal was to discover more effective biomarkers and to eventually develop an automated classification framework of early diagnosis for PD patients.</p>
+    </sec>
+    <sec sec-type="materials|methods" id="S2">
+      <title>Materials and Methods</title>
+      <sec id="S2.SS1">
+        <title>Participates and Clinical Evaluation</title>
+        <p>This study was approved by the Medical Research Ethical Committee of Nanjing Brain Hospital (Nanjing, China) in accordance with the Declaration of Helsinki, and written informed consent was obtained from all subjects. Seventy PD patients and fifty healthy controls (HC) were recruited. All the demographic characteristics and clinical symptom ratings were collected before MRI scanning and all patients were in the ON state during the MRI scan.</p>
+        <p>All subjects underwent a complete neurological and psychological status assess, and a review of medical history records. Mini-mental state examination (MMSE) was used to evaluate cognition. The severity of depression was quantified using the Hamilton Depression Scale (HAMD). The neurocognitive tests were administered to each participant individually by a professional appraiser in the neuropsychological research center. All HC participants were interviewed to rule out the presence including current or past psychiatric illness, history of psychiatric illness in first-degree relatives and/or current or past significant medical or neurological illness.</p>
+        <p>The demographic and clinical data of patients with PD and HC were compared using a Fisher’s exact test (for sex), analysis of variance (ANOVA) (for age, education, MMSE and HAMD). The level of significance was set at <italic>p</italic> &lt; 0.05.</p>
+      </sec>
+      <sec id="S2.SS2">
+        <title>Image Data Acquisition</title>
+        <p>Image data were acquired using a Siemens 3.0-Tesla signal scanner (Siemens, Verio, Germany) in the department of radiology within Nanjing Brain Hospital. Functional imaging data were collected transversely by using a gradient-recalled echo-planar imaging (GRE-EPI) pulse sequence with the following configurations: TR/TE = 200 ms/30 ms, flip angle = 90°, matrix = 64 × 64, FOV = 220 × 220 mm, thickness/gap = 3.5/0.6 mm, in-plane resolution = 3.4 × 3.4 mm, slices = 31. For each subject, a total of 140 volumes were obtained, resulting in a total scan time of 280 s. High resolution anatomical images were acquired using a T1 fluid attenuated inversion recovery (FLAIR) sequence (TR/TE = 2530/3.34 ms, flip angle = 7°, matrix = 256 × 192, FOV = 256 × 256 mm, slice thickness/gap = 1.33/0.5 mm, 128 slices covered the whole brain). The subjects were instructed to keep their eyes closed, relax their minds and remain as motionless as possible during the data acquisition. Rubber earplugs were used to reduce noise, and foam cushioning was used to fix the head to reduce motion artifacts. The MR images were retrieved from the archive by two experienced neuroradiologists (QH and XW).</p>
+      </sec>
+      <sec id="S2.SS3">
+        <title>Data Preprocessing</title>
+        <p>Image preprocessing procedure was carried out Data Processing Assistant for Resting-State fMRI<sup><xref ref-type="fn" rid="footnote1">1</xref></sup> based on Statistical Parametric Mapping (SPM12<sup><xref ref-type="fn" rid="footnote2">2</xref></sup>) operated on the Matlab platform. The following steps were applied to the image data. For each subject, we first discarded the first five time points for signal equilibrium when subject was still adapting to the scanning noise. The remaining 135 images underwent slice-timing correction using the middle slice as the reference frame and head motion correction by regressing out 6 head motion signals (displacement on <italic>x</italic>, <italic>y</italic>, and <italic>z</italic> direction and 3 angular motion). Four subjects with more than 2.5 mm maximum displacement in any of the three dimensions or 2.5° of any angular motion were removed. Next, T1-weighted structural images of each subject were coregistrated to the resulting functional images followed by images being segmented into gray matter (GM), white matter, and cerebrospinal fluid using a new segment and DARTEL segmentation algorithm. The functional images were spatially normalized to the Montreal Neurological Institute (MNI) space with 3 × 3 × 3 mm cubic voxels. After normalization, images were spatially smoothed with a 4 mm full width at half maximum (FWHM) Gaussian kernel and detrended using linear, quadratic or higher order polynomial algorithms. Note that when calculating Regional Homogeneity (ReHo), the smoothing procedure was omitted for maintaining the measuring accuracy. After smoothing and detrending, we further regressed out nuisance covariates including the Friston 24 motion parameters (<xref rid="B7" ref-type="bibr">Friston et al., 1996</xref>), white matter, global signals and cerebrospinal fluid signals and applied temporal filter (0.01 Hz &lt; f &lt; 0.08 Hz) to diminish high-frequency noise.</p>
+      </sec>
+      <sec id="S2.SS4">
+        <title>Image Feature Extraction</title>
+        <sec id="S2.SS4.SSS1">
+          <title>ReHo Analysis</title>
+          <p>The method of Regional Homogeneity (ReHo) (<xref rid="B46" ref-type="bibr">Zang et al., 2004</xref>) was proposed to analyze characteristics of regional brain activity and to reflect the temporal homogeneity of neural activity. It has been pointed out that some preprocessing methods especially spatial smoothing R-fMRI time series may significantly change the ReHo magnitudes (<xref rid="B52" ref-type="bibr">Zuo et al., 2013</xref>). To get rid of this potential issue, preprocessed rs-fMRI data without the spatial smoothing step was used for calculating ReHo. All individual ReHo maps were computed and then spatially smoothed with a 4 mm FWHM Gaussian kernel. In particular, we focused on the mReHo maps obtained by dividing the mean ReHo of the whole brain within each voxel in the ReHo map. We further segmented the mReHo maps and extract all the 112 ROI signals based on the Harvard-Oxford atlas (HOA) using the Resting-State fMRI Data Analysis Toolkit, REST<sup><xref ref-type="fn" rid="footnote3">3</xref></sup>.</p>
+        </sec>
+        <sec id="S2.SS4.SSS2">
+          <title>ALFF and VHMC Extraction</title>
+          <p>Slow fluctuations in activity are fundamental features of the resting brain for determining correlated activity between brain regions and resting state networks. The relative magnitude of these fluctuations can discriminate between brain regions and subjects. Amplitude of Low Frequency Fluctuations (ALFF) (<xref rid="B47" ref-type="bibr">Zang et al., 2007</xref>) are related measures that quantify the amplitude of these low frequency oscillations. Leveraging the preprocessed data within the frequency range between 0.01 and 0.1 Hz, we calculated individual ALFF maps and the mALFF maps by dividing the mean ALFF of the whole brain within each voxel in the ALFF maps. Using the HOA, we ended up with 112 mALFF values after extracting the ROI signals based on the mALFF maps.</p>
+          <p>Voxel-Mirrored Homotopic Connectivity (VMHC) quantifies functional homotopy by providing a voxel-wise measure of connectivity between hemispheres. VMHC calculates the connectivity between each voxel in one hemisphere and its mirrored counterpart in the other (<xref rid="B51" ref-type="bibr">Zuo et al., 2010</xref>). By segmenting the VMHC maps via HOA, we also got 112 VHMC values.</p>
+        </sec>
+        <sec id="S2.SS4.SSS3">
+          <title>RSFC and GM Volume Extraction</title>
+          <p>Resting-state functional connectivity (rsFC) analysis is an effective method for estimating spontaneous functional activity and measuring the temporal correlation between spatially remote neurophysiological events. The preprocessed rs-fMRI images were segmented into 112 ROIs according to HOA. After averaging the rs-fMRI time courses of all the voxels within each ROI, the mean time series of each ROI were acquired. We performed Pearson’s correlation analysis on each pair of ROI time series (i.e., 112 × 111/2 = 6216 pairs in total). The 6216 correlation coefficients were then transformed into z-scores by Fisher’s z transformation and retained as the RSFC metrics. Based on the preprocessed structural images, we also extracted GM volumes of these 112 ROIs using the HOA as masks.</p>
+        </sec>
+      </sec>
+      <sec id="S2.SS5">
+        <title>Feature Selection and Model Validation</title>
+        <p>Our candidate features consist of all the aforementioned metrics including ReHo, mALFF, VHMC, RSFC and GM volume along with all the clinical characteristics. To build our model, we first randomly split our dataset into training set and testing set while maintaining the PD:HC ratio, where 93 subjects were used as the primary cohort for feature selection and model training. The remaining 23 subjects were treated as validation cohort for examining the selected features. All steps of feature selection and model training were only based on and performed in the training dataset.</p>
+        <p>Note that our goal was to identify the most significant variables that could discriminate PD patients from healthy controls. However, as we had a total of 6669 features and a comparably much smaller sample size, the dimension reduction was necessary to improve the accuracy in the later step of building the machine learning model for classification (<xref rid="B41" ref-type="bibr">Wang et al., 2019</xref>). Hence, we first performed the nonparametric Mann-Whitney U test on each feature between the PD patients and the healthy controls and kept the variables with <italic>P</italic>-value larger than 0.1. Since the Mann–Whitney U test does not require the data to be normally distributed, we adopted the procedure as the first step to filter the features. Next, to avoid the possible presence of Simpson’s Paradox caused by multicollinearity, where a predictor appears to be significant by itself, but this observation disappears or the direction reverses when other predictors are added. Therefore, whenever we spotted an absolute value of pairwise correlation between two features that was larger than 0.5, we removed the feature with larger average absolute correlation. Finally, to further reduce the burden of high dimensionality imposed on the model training, we used the least absolute shrinkage and selection operator (Lasso) procedure that assigns a penalty to the coefficients and eliminates variables with zero coefficient value. We used 10-fold cross validation to obtain the optimal penalty parameter for Lasso and retained the features with nonzero regression coefficients.</p>
+        <p>The methods of supper vector machine (SVM) and random forest were implemented for classifying subjects based on the selected features. Given the relatively small sample size, we used the linear kernel when fitting SVM, which was conducted by specifying the type parameter to be “linear” in the svm function. The tuning parameters for both methods were selected via 10-fold cross-validation by using the trainControl function with the method parameter being “repeatedcv” and the train function with the method parameter specified as either “cforest” or “svmLinear2” for random forest and SVM, respectively. The performance of these two different machine learning methods in the training and test sets were later compared and visualized according to different metrics including accuracy, true positive rate, false positive rate, receiver-operating characteristic (ROC) curve and area under curve (AUC). The complete statistical analysis was conducted in R 3.5.0. Specifically, packages “e1071,” “randomForest”, “glmnet,” “caret” were employed for running the SVM, random forest, Lasso and for cross validation, respectively. The flowchart of this study is presented in <xref ref-type="fig" rid="F1">Figure 1</xref>.</p>
+        <fig id="F1" position="float">
+          <label>FIGURE 1</label>
+          <caption>
+            <p>Flowchart of the study. After the rs-fMRI and sMRI images were preprocessed, we extracted the 6669 metrics. Then, Mann–Whitney U test, screening out high correlated variables and Lasso regression were implemented to reduce the number of features. Last, random forest and SVM were conducted to differentiate between PD and HC subjects.</p>
+          </caption>
+          <graphic xlink:href="fnins-14-00751-g001"/>
+        </fig>
+      </sec>
+    </sec>
+    <sec id="S3">
+      <title>Results</title>
+      <sec id="S3.SS1">
+        <title>Clinical Characteristics</title>
+        <p>In <xref rid="T1" ref-type="table">Table 1</xref>, we provided the complete demographic and clinical information for all subjects participated in this study. No significant difference was observed with respect to the gender, age, education and MMSE score between PD patients and HCs, while significant difference was detected for HAMD between these two groups. In particular, for PD patients, the HAMD scores (11.0 ± 6.9) were significantly higher than those for HCs (2.1 ± 2.3).</p>
+        <table-wrap id="T1" position="float">
+          <label>TABLE 1</label>
+          <caption>
+            <p>Clinical and demographic data evaluation of PD and HC.</p>
+          </caption>
+          <table frame="hsides" rules="groups" cellspacing="5" cellpadding="5">
+            <thead>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Characteristics</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">PD (<italic>n</italic> = 68)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">HC (<italic>n</italic> = 48)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Test statistics</td>
+                <td valign="top" align="center" rowspan="1" colspan="1"><italic>P</italic>-value</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Sex (M/F)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">35/33</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">23/25</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.409</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">&gt;0.05<sup>a</sup></td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Age (year)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">57.8 ± 7.0</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">57.8 ± 5.5</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.021</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">&gt;0.05<sup>b</sup></td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Education (year)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">11.8 ± 3.3</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">11.7 ± 4.8</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.689</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">&gt;0.05<sup>c</sup></td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">MMSE</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">28.6 ± 1.7</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">29.0 ± 2.3</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.585</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">&gt;0.05<sup>d</sup></td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">HAMD</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">11.0 ± 6.9</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">2.1 ± 2.3</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">67.58</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">&lt;0.05<sup>e</sup></td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <attrib>
+              <italic><sup><italic>a</italic></sup>The <italic>P</italic>-value for gender distribution by Fisher’s exact test; <sup><italic>b</italic>−<italic>e</italic></sup>The <italic>P</italic>-values for age, education, MMSE and HAMD, respectively, by analysis of variance (ANOVA).</italic>
+            </attrib>
+          </table-wrap-foot>
+        </table-wrap>
+      </sec>
+      <sec id="S3.SS2">
+        <title>Feature Selection</title>
+        <p>After the first step of Mann–Whitney U test, 6669 features containing metrics from rs-fMRI, sMRI and clinical information reduced to 993 features. Next, the procedure of excluding variables with absolute correlations larger than 0.5 removed 628 features with a total of 365 features remaining. Last, 54 features including (46 RSFCs, HAMD, 1 mALFF, 3 mReHos, 1 VMHC and 2 GM volumes) with nonzero coefficients obtained from the logistic regression with Lasso penalty were retained as the final metric set to be used for binary classification. In <xref rid="T2" ref-type="table">Table 2</xref>, we listed these 46 RSFCs and the respective connected brain regions indexed in the HOA template. The related brain regions of RSFCs were primarily located in the executive control network (ECN), default mode network (DMN), affective network (AN), visual network (VIN) and sensorimotor network (SMN) (<xref ref-type="fig" rid="F2">Figure 2</xref>). The seven features were mALFF of the left superior temporal gyrus, posterior division, mReHo of the left parahippocampal gyrus, posterior division, mReHo of the right thalamus and left pallidum, VMHC of the right temporal fusiform cortex, anterior division, and the GM volume of the right inferior temporal gyrus, anterior division and the right accumbens.</p>
+        <table-wrap id="T2" position="float">
+          <label>TABLE 2</label>
+          <caption>
+            <p>46 RSFC features and the related brain regions indexed in the HOA template.</p>
+          </caption>
+          <table frame="hsides" rules="groups" cellspacing="5" cellpadding="5">
+            <thead>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">ID</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">HOA number</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Brain region A</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Network</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">HOA number</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Brain region B</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Network</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">1</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">1</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Frontal Pole.L</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Other region</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">86</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Parietal Operculum Cortex.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Other region</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">2</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">2</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Frontal Pole.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Other region</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">5</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Superior Frontal Gyrus.L</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Other region</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">3</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">2</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Frontal Pole.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Other region</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">15</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Temporal Pole.L</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">AN</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">4</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">4</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Insular Cortex.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">AN</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">88</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Planum Polare.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Other region</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">5</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">6</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Superior Frontal Gyrus.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Other region</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">30</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Inferior Temporal Gyrus, posterior.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">DMN</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">6</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">6</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Superior Frontal Gyrus.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Other region</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">78</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Temporal Occipital Fusiform Cortex.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">VIN</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">7</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">7</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Middle Frontal Gyrus.L</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">DMN</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">56</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Paracingulate Gyrus.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">ECN</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">8</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">11</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Inferior Frontal Gyrus, pars opercularis.L</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Other region</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">76</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Temporal Fusiform Cortex, posterior.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">VIN</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">9</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">12</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Inferior Frontal Gyrus, pars opercularis.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Other region</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">72</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Lingual Gyrus.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Other region</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">10</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">12</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Inferior Frontal Gyrus, pars opercularis.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Other region</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">87</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Planum Polare.L</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Other region</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">11</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">14</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Precentral Gyrus.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">SMN</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">70</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Parahippocampal Gyrus, posterior.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">DMN</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">12</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">15</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Temporal Pole.Sup.L</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">AN</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">19</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Superior Temporal Gyrus, posterior.L</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">AUN</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">13</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">15</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Temporal Pole.L</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">AN</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">52</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Juxtapositional Lobule Cortex.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Other region</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">14</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">16</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Temporal Pole.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">AN</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">36</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Superior Parietal Lobule.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">VIN</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">15</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">16</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Temporal Pole.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">AN</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">51</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Juxtapositional Lobule Cortex.L</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Other region</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">16</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">16</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Temporal Pole.Mid.R.</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">AN</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">79</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Occipital Fusiform Gyrus.L</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">VIN</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">17</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">17</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Superior Temporal Gyrus, anterior.L</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">DMN</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">42</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Angular Gyrus.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">DMN</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">18</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">18</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Superior Temporal Gyrus, anterior.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">DMN</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">104</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Right Putamen</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">BGN</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">19</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">19</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Superior Temporal Gyrus, posterior.L</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">DMN</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">21</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Middle Temporal Gyrus, anterior.L</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">DMN</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">20</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">19</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Superior Temporal Gyrus, posterior.L</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">DMN</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">53</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Subcallosal Cortex.L</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Other region</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">21</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">21</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Middle Temporal Gyrus, anterior.L</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">DMN</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">33</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Postcentral Gyrus.L</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">SEN</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">22</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">22</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Middle Temporal Gyrus, anterior.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">DMN</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">65</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Frontal Orbital Cortex.L</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Other region</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">23</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">23</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Middle Temporal Gyrus, posterior.L</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">DMN</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">62</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Precuneus Cortex.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">DMN</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">24</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">24</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Middle Temporal Gyrus, posterior.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">DMN</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">30</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Inferior Temporal Gyrus, posterior.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Other region</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">25</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">27</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Inferior Temporal Gyrus, anterior.L</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">DMN</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">89</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Heschl’s Gyrus.L</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">AUN</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">26</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">28</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Inferior Temporal Gyrus, anterior.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">DMN</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">60</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Cingulate Gyrus, posterior.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">DMN</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">27</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">29</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Inferior Temporal Gyrus, posterior.L</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">DMN</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">87</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Planum Polare.L</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Other region</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">28</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">32</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Inferior Temporal Gyrus, temporooccipital.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Other region</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">72</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Lingual Gyrus.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Other region</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">29</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">34</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Postcentral Gyrus.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">SMN</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">96</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Occipital Pole.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">VIN</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">30</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">44</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Lateral Occipital Cortex, superior.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">VIN</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">111</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Left Accumbens</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Other region</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">31</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">45</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Lateral Occipital Cortex, inferior.L</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">VIN</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">111</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Left Accumbens</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Other region</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">32</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">54</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Subcallosal Cortex.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Other region</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">110</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Right Amygdala</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">DMN</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">33</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">55</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Paracingulate Gyrus.L</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">ECN</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">57</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Cingulate Gyrus, anterior.L</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">DMN</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">34</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">55</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Paracingulate Gyrus.L</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">ECN</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">100</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Right Thalamus</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">DMN</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">35</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">56</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Paracingulate Gyrus.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">ECN</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">85</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Parietal Operculum Cortex.L</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Other region</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">36</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">58</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Cingulate Gyrus, anterior.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">ECN</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">85</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Parietal Operculum Cortex.L</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Other region</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">37</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">58</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Cingulate Gyrus, anterior.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">ECN</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">90</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Heschl’s Gyrus.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">AUN</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">38</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">60</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Cingulate Gyrus, posterior.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">DMN</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">74</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Temporal Fusiform Cortex, anterior.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">VIN</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">39</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">70</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Parahippocampal Gyrus, posterior.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Other region</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">99</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Left Thalamus</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">DMN</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">40</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">75</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Temporal Fusiform Cortex, posterior.L</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">VIN</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">111</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Left Accumbens</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Other region</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">41</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">77</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Temporal Occipital Fusiform Cortex.L</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">VIN</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">86</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Parietal Operculum Cortex.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Other region</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">42</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">77</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Temporal Occipital Fusiform Cortex.L</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">VIN</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">110</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Right Amygdala</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">DMN</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">43</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">78</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Temporal Occipital Fusiform Cortex.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">VIN</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">80</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Occipital Fusiform Gyrus.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">VIN</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">44</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">88</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Planum Polare.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Other region</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">99</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Left Thalamus</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">DMN</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">45</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">92</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Planum Temporale.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Other region</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">107</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Left Hippocampus</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">DMN</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">46</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">96</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Occipital Pole.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">VIN</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">98</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Brainstem.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Other region</td>
+              </tr>
+            </tbody>
+          </table>
+        </table-wrap>
+        <fig id="F2" position="float">
+          <label>FIGURE 2</label>
+          <caption>
+            <p>The visualization plot of the selected 46 RSFCs. The color of the spot reflects the number of connections that the associated brain regions participate in. The larger corresponding value on the color bar means more connections are involved in the respective region. The brain networks were visualized with the BrainNet Viewer (<xref rid="B43" ref-type="bibr">Xia et al., 2013</xref>).</p>
+          </caption>
+          <graphic xlink:href="fnins-14-00751-g002"/>
+        </fig>
+        <p>For better illustration and clearer visualization of the difference for these selected features between PD group and HC group, in <xref rid="T3" ref-type="table">Table 3</xref> we reported the mean, standard deviation (SD) and <italic>P</italic>-value of the resulting features from the dimension reduction step for two groups. We also plotted the histograms of these features with different colors representing different groups in <xref ref-type="fig" rid="F3">Figure 3</xref>. In particular, the increasing or decreasing trends of these features between two groups can be immediately revealed by looking at the corresponding values in <xref rid="T3" ref-type="table">Table 3</xref> or locations in <xref ref-type="fig" rid="F3">Figure 3</xref>.</p>
+        <table-wrap id="T3" position="float">
+          <label>TABLE 3</label>
+          <caption>
+            <p>The mean, standard deviation (SD) and <italic>P</italic>-value for all 54 selected features in PD group and HC groups.</p>
+          </caption>
+          <table frame="hsides" rules="groups" cellspacing="5" cellpadding="5">
+            <thead>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">ID</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Feature</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">PD (mean ± SD)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">HC (mean ± SD)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1"><italic>P</italic>-value</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">1</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Frontal Pole.L-Parietal Operculum Cortex.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−0.1129 ± 0.2642</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−0.2487 ± 0.265</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.3488</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">2</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Frontal Pole.R-Superior Frontal Gyrus.L</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0478 ± 0.2354</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0408 ± 0.2536</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0815</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">3</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Frontal Pole.R-Temporal Pole.L</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.2116 ± 0.2723</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.3172 ± 0.2829</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.2758</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">4</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Insular Cortex.R-Planum Polare.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.2713 ± 0.2794</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.1674 ± 0.2358</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0104</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">5</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Superior Frontal Gyrus.R-Inferior Temporal Gyrus, posterior.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−0.0828 ± 0.3272</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0568 ± 0.3013</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0341</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">6</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Superior Frontal Gyrus.R-Temporal Occipital Fusiform Cortex.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−0.2821 ± 0.2749</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.4011 ± 0.2316</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.1139</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">7</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Middle Frontal Gyrus.L-Paracingulate Gyrus.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.5995 ± 0.2634</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.4751 ± 0.2763</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0082</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">8</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Inferior Frontal Gyrus, pars opercularis.L-Temporal Fusiform Cortex, posterior.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0897 ± 0.2763</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.2384 ± 0.2609</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.2141</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">9</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Inferior Frontal Gyrus, pars opercularis.R-Lingual Gyrus.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−0.1656 ± 0.2669</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.2521 ± 0.2320</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.1853</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">10</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Inferior Frontal Gyrus, pars opercularis.R-Planum Polare.L</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0418 ± 0.2501</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0845 ± 0.2656</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0344</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">11</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Precentral Gyrus.R-Parahippocampal Gyrus, posterior.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.1467 ± 0.2138</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0216 ± 0.2398</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0032</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">12</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Temporal Pole.L-Superior Temporal Gyrus, posterior.L</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−0.3148 ± 0.2612</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.4955 ± 0.3027</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.2183</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">13</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Temporal Pole.L-Juxtapositional Lobule Cortex.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−0.0739 ± 0.2415</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0455 ± 0.2886</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0269</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">14</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Temporal Pole.R-Superior Parietal Lobule.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.1059 ± 0.2912</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0107 ± 0.2773</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0292</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">15</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Temporal Pole.R-Juxtapositional Lobule Cortex.L</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.6623 ± 0.2743</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.7524 ± 0.2624</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.2021</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">16</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Temporal Pole.R-Occipital Fusiform Gyrus.L</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−0.1192 ± 0.2378</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0146 ± 0.2261</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0045</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">17</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Superior Temporal Gyrus, anterior.L-Angular Gyrus.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−0.0500 ± 0.2470</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0688 ± 0.2392</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0285</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">18</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Superior Temporal Gyrus, anterior.R-Right Putamen</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−0.1993 ± 0.2559</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.1071 ± 0.2856</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0207</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">19</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Superior Temporal Gyrus, posterior.L-Middle Temporal Gyrus, anterior.L</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−0.0174 ± 0.2309</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.1275 ± 0.2442</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.1225</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">20</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Superior Temporal Gyrus, posterior.L-Subcallosal Cortex.L</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0451 ± 0.2116</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.1618 ± 0.2278</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.1429</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">21</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Middle Temporal Gyrus, anterior.L-Postcentral Gyrus.L</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−0.0628 ± 0.2827</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0856 ± 0.2278</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0130</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">22</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Middle Temporal Gyrus, anterior.R-Frontal Orbital Cortex.L</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−0.0029 ± 0.2553</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.1269 ± 0.2147</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0659</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">23</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Middle Temporal Gyrus, posterior.L-Precuneus Cortex.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−0.0032 ± 0.1956</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.1271 ± 0.1759</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0238</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">24</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Middle Temporal Gyrus, posterior.R-Inferior Temporal Gyrus, posterior.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0455 ± 0.2457</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0399 ± 0.2304</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0888</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">25</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Inferior Temporal Gyrus, anterior.L-Heschl’s Gyrus.L</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.4837 ± 0.3685</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.3644 ± 0.3915</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0180</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">26</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Inferior Temporal Gyrus, anterior.R-Cingulate Gyrus, posterior.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.1240 ± 0.2235</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0302 ± 0.3139</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0049</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">27</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Inferior Temporal Gyrus, posterior.L-Planum Polare.L</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−0.0922 ± 0.2427</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0667 ± 0.2399</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0035</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">28</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Inferior Temporal Gyrus, temporooccipital.R-Lingual Gyrus.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−0.0489 ± 0.2319</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0818 ± 0.1936</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0103</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">29</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Postcentral Gyrus.R-Occipital Pole.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.2362 ± 0.2612</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.1036 ± 0.3113</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0060</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">30</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Lateral Occipital Cortex, superior.R-Left Accumbens</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−0.1134 ± 0.2020</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0016 ± 0.2128</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0043</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">31</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Lateral Occipital Cortex, inferior.L-Left Accumbens</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.7454 ± 0.2993</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.6130 ± 0.2801</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0100</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">32</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Subcallosal Cortex.R-Right Amygdala</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−0.1688 ± 0.2078</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0146 ± 0.2352</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0006</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">33</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Paracingulate Gyrus.L-Cingulate Gyrus, anterior.L</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−0.1056 ± 0.2160</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0254 ± 0.2486</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0047</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">34</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Paracingulate Gyrus.L-Right Thalamus</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−0.0849 ± 0.2356</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.1805 ± 0.2874</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.2865</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">35</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Paracingulate Gyrus.R-Parietal Operculum Cortex.L</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0737 ± 0.2734</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0281 ± 0.2416</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0475</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">36</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Cingulate Gyrus, anterior.R-Parietal Operculum Cortex.L</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.1262 ± 0.2546</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.2581 ± 0.2542</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.3158</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">37</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Cingulate Gyrus, anterior.R-Heschl’s Gyrus.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0159 ± 0.2817</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0983 ± 0.1895</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0704</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">38</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Cingulate Gyrus, posterior.R-Temporal Fusiform Cortex, anterior.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−0.1340 ± 0.2362</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0164 ± 0.2544</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0084</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">39</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Parahippocampal Gyrus, posterior.R-Left Thalamus</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.2082 ± 0.2267</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.3380 ± 0.1966</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.1968</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">40</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Temporal Fusiform Cortex, posterior.L-Left Accumbens</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.1025 ± 0.2688</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.2534 ± 0.2388</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.2285</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">41</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Temporal Occipital Fusiform Cortex.L-Parietal Operculum Cortex.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0059 ± 0.2695</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0970 ± 0.2492</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.2080</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">42</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Temporal Occipital Fusiform Cortex.L-Right Amygdala</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.1999 ± 0.2317</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0755 ± 0.2679</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0043</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">43</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Temporal Occipital Fusiform Cortex.R-Occipital Fusiform Gyrus.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0310 ± 0.2339</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.1158 ± 0.2416</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.2874</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">44</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Planum Polare.R-Left Thalamus</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−0.0057 ± 0.2023</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.1249 ± 0.2388</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0550</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">45</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Planum Temporale.R-Left Hippocampus</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−0.1296 ± 0.2257</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0337 ± 0.2826</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0017</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">46</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Occipital Pole.R-Brainstem.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0972 ± 0.2042</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0076 ± 0.2136</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0096</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">47</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">HAMD Score</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">10.1429 ± 6.3545</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">1.9730 ± 2.1793</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0000</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">48</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">mALFF of Superior Temporal Gyrus, posterior.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">1.1140 ± 0.1317</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">1.0478 ± 0.1379</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0270</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">49</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">mReHo of Parahippocampal Gyrus, posterior.L</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.8302 ± 0.0956</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.7870 ± 0.0859</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0292</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">50</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">mReHo of Right Thalamus</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.8533 ± 0.0924</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.9144 ± 0.1154</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.1034</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">51</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">mReHo of Left Pallidum</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.7300 ± 0.0772</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.7718 ± 0.1010</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0910</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">52</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">VMHC of Temporal Fusiform Cortex, anterior.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.2277 ± 0.1448</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.1818 ± 0.1395</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0159</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">53</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Gray Matter Volume of Inferior Temporal Gyrus, anterior.R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0025 ± 0.0008</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0021 ± 0.0008</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0103</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">54</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Gray Matter Volume of Right Accumbens</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0004 ± 0.0001</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0004 ± 0.0001</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.1797</td>
+              </tr>
+            </tbody>
+          </table>
+        </table-wrap>
+        <fig id="F3" position="float">
+          <label>FIGURE 3</label>
+          <caption>
+            <p>Histograms of selected features for PD and HC subjects with darker color representing overlapping values. Purple: PD; Green: HC. <bold>(A)</bold> HAMD score; <bold>(B)</bold> mReHo values of the left parahippocampal gyrus, posterior division, the right thalamus and left Pallidum; <bold>(C)</bold> mALFF values of the left superior temporal gyrus, posterior division; <bold>(D)</bold> VHMC values of the right temporal fusiform cortex, anterior division; <bold>(E)</bold> GM volumes of the right inferior temporal gyrus, anterior division and the right accumbens.</p>
+          </caption>
+          <graphic xlink:href="fnins-14-00751-g003"/>
+        </fig>
+      </sec>
+      <sec id="S3.SS3">
+        <title>Model Fitting</title>
+        <p>After the screening process, we were left with only 56 features and were no longer stuck in the ultrahigh dimensional situation. Most of the existing machine learning methods including random forest and SVM could accommodate this relatively smaller number of variables compared with previous 6669 features. Therefore, we conducted the model fitting procedure for classifying subjects in the training set utilizing random forest and SVM to evaluate the performance of these two methods. It turned out that after cross-validation, both random forest and SVM achieved the perfect accuracy and AUC for distinguishing between PD and HC subjects in the training set, which was not surprising since we only had 56 coefficients to estimate while we had a sample size of 93 subjects.</p>
+      </sec>
+      <sec id="S3.SS4">
+        <title>Model Validation</title>
+        <p>Despite the superior performance of both methods in the training set, what really matters is the predictive result in the testing set. We therefore examined the validity of random forest and SVM by evaluating their classification performance in the testing set using AUC and the following measures (<xref rid="T4" ref-type="table">Table 4</xref>),</p>
+        <table-wrap id="T4" position="float">
+          <label>TABLE 4</label>
+          <caption>
+            <p>Predictive performance table in the testing set for random forest and SVM.</p>
+          </caption>
+          <table frame="hsides" rules="groups" cellspacing="5" cellpadding="5">
+            <thead>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1"/>
+                <td valign="top" align="center" rowspan="1" colspan="1">Accuracy</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">TPR</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">FPR</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">AUC</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Random forest</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.8261</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.9167</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.2727</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.9015</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">SVM</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.8483</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">1</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.3136</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.9697</td>
+              </tr>
+            </tbody>
+          </table>
+        </table-wrap>
+        <disp-formula id="S3.Ex1">
+          <mml:math id="M1">
+            <mml:mrow>
+              <mml:mrow>
+                <mml:mi>A</mml:mi>
+                <mml:mo>⁢</mml:mo>
+                <mml:mi>c</mml:mi>
+                <mml:mo>⁢</mml:mo>
+                <mml:mi>c</mml:mi>
+                <mml:mo>⁢</mml:mo>
+                <mml:mi>u</mml:mi>
+                <mml:mo>⁢</mml:mo>
+                <mml:mi>r</mml:mi>
+                <mml:mo>⁢</mml:mo>
+                <mml:mi>a</mml:mi>
+                <mml:mo>⁢</mml:mo>
+                <mml:mi>c</mml:mi>
+                <mml:mo>⁢</mml:mo>
+                <mml:mi>y</mml:mi>
+              </mml:mrow>
+              <mml:mo>=</mml:mo>
+              <mml:mstyle displaystyle="true">
+                <mml:mfrac>
+                  <mml:mrow>
+                    <mml:mrow>
+                      <mml:mi>T</mml:mi>
+                      <mml:mo>⁢</mml:mo>
+                      <mml:mi>P</mml:mi>
+                    </mml:mrow>
+                    <mml:mo>+</mml:mo>
+                    <mml:mrow>
+                      <mml:mi>T</mml:mi>
+                      <mml:mo>⁢</mml:mo>
+                      <mml:mi>N</mml:mi>
+                    </mml:mrow>
+                  </mml:mrow>
+                  <mml:mrow>
+                    <mml:mrow>
+                      <mml:mi>T</mml:mi>
+                      <mml:mo>⁢</mml:mo>
+                      <mml:mi>P</mml:mi>
+                    </mml:mrow>
+                    <mml:mo>+</mml:mo>
+                    <mml:mrow>
+                      <mml:mi>T</mml:mi>
+                      <mml:mo>⁢</mml:mo>
+                      <mml:mi>N</mml:mi>
+                    </mml:mrow>
+                    <mml:mo>+</mml:mo>
+                    <mml:mrow>
+                      <mml:mi>F</mml:mi>
+                      <mml:mo>⁢</mml:mo>
+                      <mml:mi>P</mml:mi>
+                    </mml:mrow>
+                    <mml:mo>+</mml:mo>
+                    <mml:mrow>
+                      <mml:mi>F</mml:mi>
+                      <mml:mo>⁢</mml:mo>
+                      <mml:msup>
+                        <mml:mi>N</mml:mi>
+                        <mml:mo>′</mml:mo>
+                      </mml:msup>
+                    </mml:mrow>
+                  </mml:mrow>
+                </mml:mfrac>
+              </mml:mstyle>
+            </mml:mrow>
+          </mml:math>
+        </disp-formula>
+        <disp-formula id="S3.Ex2">
+          <mml:math id="M2">
+            <mml:mrow>
+              <mml:mrow>
+                <mml:mi>T</mml:mi>
+                <mml:mo>⁢</mml:mo>
+                <mml:mi>P</mml:mi>
+                <mml:mo>⁢</mml:mo>
+                <mml:mi>R</mml:mi>
+              </mml:mrow>
+              <mml:mo>=</mml:mo>
+              <mml:mrow>
+                <mml:mpadded width="+3.3pt">
+                  <mml:mstyle displaystyle="true">
+                    <mml:mfrac>
+                      <mml:mrow>
+                        <mml:mi>T</mml:mi>
+                        <mml:mo>⁢</mml:mo>
+                        <mml:mi>P</mml:mi>
+                      </mml:mrow>
+                      <mml:mrow>
+                        <mml:mrow>
+                          <mml:mi>T</mml:mi>
+                          <mml:mo>⁢</mml:mo>
+                          <mml:mi>P</mml:mi>
+                        </mml:mrow>
+                        <mml:mo>+</mml:mo>
+                        <mml:mrow>
+                          <mml:mi>F</mml:mi>
+                          <mml:mo>⁢</mml:mo>
+                          <mml:msup>
+                            <mml:mi>N</mml:mi>
+                            <mml:mo>′</mml:mo>
+                          </mml:msup>
+                        </mml:mrow>
+                      </mml:mrow>
+                    </mml:mfrac>
+                  </mml:mstyle>
+                </mml:mpadded>
+                <mml:mo>⁢</mml:mo>
+                <mml:mi>F</mml:mi>
+                <mml:mo>⁢</mml:mo>
+                <mml:mi>P</mml:mi>
+                <mml:mo>⁢</mml:mo>
+                <mml:mi>R</mml:mi>
+              </mml:mrow>
+              <mml:mo>=</mml:mo>
+              <mml:mstyle displaystyle="true">
+                <mml:mfrac>
+                  <mml:mrow>
+                    <mml:mi>F</mml:mi>
+                    <mml:mo>⁢</mml:mo>
+                    <mml:mi>P</mml:mi>
+                  </mml:mrow>
+                  <mml:mrow>
+                    <mml:mrow>
+                      <mml:mi>T</mml:mi>
+                      <mml:mo>⁢</mml:mo>
+                      <mml:mi>N</mml:mi>
+                    </mml:mrow>
+                    <mml:mo>+</mml:mo>
+                    <mml:mrow>
+                      <mml:mi>F</mml:mi>
+                      <mml:mo>⁢</mml:mo>
+                      <mml:msup>
+                        <mml:mi>P</mml:mi>
+                        <mml:mo>′</mml:mo>
+                      </mml:msup>
+                    </mml:mrow>
+                  </mml:mrow>
+                </mml:mfrac>
+              </mml:mstyle>
+            </mml:mrow>
+          </mml:math>
+        </disp-formula>
+        <p>where TP, TN, FP and FN correspond to true positive, true negative, false positive and false negative, respectively.</p>
+        <p>TPR measures the proportion of PD patients correctly detected by the given procedure among all the PD patients. FPR is calculated using the number of people who were falsely identified as having PD, divided by the total number of HCs. Accuracy gives the proportion of true results (both true positives and true negatives) among the total number of cases examined, i.e., the sample size of the testing set. In practice, we used the natural cutoff 0.5 to determine whether the subject should be classified as PD. To further assess the robustness of two methods, we also plotted the ROC curves in <xref ref-type="fig" rid="F4">Figure 4</xref> by varying thresholding values.</p>
+        <fig id="F4" position="float">
+          <label>FIGURE 4</label>
+          <caption>
+            <p>ROC curves evaluating the predictive performance of random forest and SVM in the testing set.</p>
+          </caption>
+          <graphic xlink:href="fnins-14-00751-g004"/>
+        </fig>
+        <p>From <xref rid="T4" ref-type="table">Table 4</xref> and <xref ref-type="fig" rid="F4">Figure 4</xref> we can tell that random forest and SVM performed comparably well in terms of the overall accuracy. Random forest performed slightly better than SVM according to FPR, while SVM outperformed random forest according to accuracy, TPR and AUC. Therefore, for a less conservative and more robust prediction, we would prefer SVM over random forest based on the performance summary in the testing set.</p>
+      </sec>
+    </sec>
+    <sec id="S4">
+      <title>Discussion</title>
+      <p>We presented a framework for uncovering predictive markers of PD based on radiomics analysis and obtained excellent accuracy in classifying PD from HCs. Our model was established based on the relevant clinical characteristics, whole-brain functional connectivity and activity along with gray matter structure. After collecting the MRI scans for one subject, it may take 2 h for obtaining clinical evaluation, 10 min for preprocessing and around 2 s for running the machine learning models. To the best of our knowledge, this is the first study to explore the whole-brain functional activity and gray matter structure in a homogeneous and relatively large sample MRI study. The distinctive whole-brain functional activity and connection were mainly located within or across the AN, DMN, ECN and SMN in PD compared with HCs.</p>
+      <p>Our results showed that both methods achieved perfect accuracy in the training set, and SVM yielded an overall better classification performance than random forest in the testing set. In particular, SVM had higher accuracy (85%), TPR (1) and AUC (0.97) than random forest, while the FPR for SVM (0.31) was higher than random forest (0.27). The radiomics-based machine learning models in present study demonstrated the validity of trained classifiers in PD, which could be helpful to support clinical decision in both radiology and neurology.</p>
+      <p>Previous studies have made great progress in identifying PD and other neurodegenerative disorders from HCs using structural and fMRI data with the assist of machine learning. These results demonstrated the ability of supervised classification methods with a relatively high accuracy. An automatic SVM based study with leap motion controller recruited 16 PD and 12 HCs, and the accuracy was 74.07% with an AUC of 0.675 (<xref rid="B1" ref-type="bibr">Butt et al., 2018</xref>). Another study of SPECT imaging using SVM and logistic regression (LR) showed that SVM method produced a higher accuracy of 85% than LR of 83%, and the authors claimed that the SVM-based model could provide better guide for PD stage classification (<xref rid="B13" ref-type="bibr">Hsu et al., 2019</xref>). A large sample based on 831 structure T1-weighted MRI achieved a very high accuracy of up to 99% for differential diagnosis of PD (<xref rid="B34" ref-type="bibr">Singh and Samavedham, 2015</xref>). A study incorporating DTI and VBM in an SVM algorithm correctly distinguished PD from progressive supranuclear palsy (PSP) when white matter atrophy was considered (<xref rid="B4" ref-type="bibr">Cherubini et al., 2014</xref>). Combined with these previous findings, big data-driven approaches were helpful to aid PD diagnosis and to reach precision medicine (<xref rid="B14" ref-type="bibr">Khoury et al., 2019</xref>; <xref rid="B38" ref-type="bibr">van den Heuvel et al., 2020</xref>).</p>
+      <p>The aforementioned methods either possessed a lower accuracy and AUC or only considered part of the complete radiomic features based on either rs-MRI or sMRI. In our study, the radiomics approach integrated both rs-MRI and sMRI by extracting features that quantify the whole-brain functional activity and connectivity along with GM volume and clinical evaluations. Forty-six RSFCs and the respective connected brain regions were selected after dimension reduction, and these disturbed brain regions related to RSFCs were primarily located in the ECN, DMN, AN, VN, and SMN. Seven more features of the HAMD, mALFF, mReHo, VMHC and the GM volume were also retained to build the classifying model. Within the model, intrinsic connectivity networks of mALFF were identified and located mainly in DMN including the left superior temporal gyrus, posterior division, the left parahippocampal gyrus, posterior division. The particular neural activities of mReHo maps were also located in DMN of the right thalamus and GN of the left pallidum. Selected VMHC quantified the functional homotopy of connectivity in VN of the right temporal fusiform cortex and anterior division. Features of the GM volume also covered the DMN in the right inferior temporal gyrus, anterior division and the right accumbens.</p>
+      <p>Some of these findings were expected and in accordance with previous studies. For example, the altered RSFCs were primarily located in the typical resting-state network (RSN). However, the prominent role of DMN, ECN, AN, VIN and sensorimotor functioning in PD revealed in our study was remarkable. The identified regions in DMN included the left superior temporal gyrus, posterior division, the left parahippocampal gyrus, the right thalamus and the right inferior temporal gyrus. We also found abnormal AN in the right insular cortex, left and right temporal pole, along with unusual VIN in lateral occipital cortex, superior, temporal fusiform cortex, the left and right temporal occipital fusiform cortex, the left occipital pole, the right superior parietal lobule. Abnormal ECN was detected in the left and right paracingulate gyrus, and the right anterior cingulate gyrus.</p>
+      <p>RSN reflects the spontaneous neural activities of the blood oxygenation level-dependent (BOLD) signals between temporally correlated brain regions. Compared with the control group, the DMN plays a crucial role in neurodegenerative disorders and normal aging. Several fMRI studies have indicated that the DMN injured before the cognitive decline in PD (<xref rid="B30" ref-type="bibr">Sandrone and Catani, 2013</xref>; <xref rid="B15" ref-type="bibr">Koshimori et al., 2016</xref>). A 2-year study using ReHo and VBM to identify differences in local spontaneous brain activity and gray matter volume found that PD patients with normal cognition showed a decreased ReHo in the DMN (<xref rid="B48" ref-type="bibr">Zeng et al., 2017</xref>). In addition, a gender-specific effect of uric acid on resting-state cortical FC found the de novo PD group had decreased FC in bilateral cingulate, postcentral and lingual gyri within DMN (<xref rid="B16" ref-type="bibr">Lee et al., 2018</xref>). Our results were consistent with these previous studies.</p>
+      <p>The basal ganglia, thalamus, and brainstem are important in the pathophysiology of PD. Studies on detecting neural activity changes in these regions have achieved more sensitive and reliable results for scientific and clinical research on PD. The basal ganglia network (BGN) has been observed in pathologies with altered neurotransmitter systems of dopaminergic processes, and also involving motor control. In the present study, we found disturbed BGN in left pallidum, the right thalamus and the right brainstem. The variability of FC in healthy older adults found strongest correlate of FC in the BGN, and potential links to dopamine-related function (<xref rid="B8" ref-type="bibr">Griffanti et al., 2018</xref>). A sex-related pattern of RSN showed an increased connectivity within the BGN in female PD patients, and FC changes in sensorimotor at baseline were considered as an independent predictor of disease severity in the early stage of PD (<xref rid="B6" ref-type="bibr">De Micco et al., 2019</xref>).</p>
+      <p>Attention networks (AN) in cortical regions are affected in early stage of PD (<xref rid="B22" ref-type="bibr">Madhyastha et al., 2015</xref>). Proteinopathy and longitudinal changes in FC networks within the SMN were confirmed, and the interaction between the dorsal attention network (DAN) the frontoparietal control network decreased significantly over time in PD while correlated with the decline in cognitive function (<xref rid="B2" ref-type="bibr">Campbell et al., 2019</xref>). Altered organization of the DAN and lack of changes in the ventral attention network (VAN) in PD patients indicated the higher risk for freezing of gait during complex walking situations, and these findings revealed that AN played an important role in freezing of gait (<xref rid="B23" ref-type="bibr">Maidan et al., 2019</xref>). Gender-specific effect of uric acid on rs-fMRI networks in de novo PD found decreased FC in bilateral insular, frontal and temporal areas within DAN and bilateral medial temporal and right insular areas within executive control network (ECN) (<xref rid="B16" ref-type="bibr">Lee et al., 2018</xref>).</p>
+      <p>Apart from these RSFC findings, structure MRI has received more research focus on better stability and repeatability compared with rs-fMRI. In our study, GM volume of the right inferior temporal gyrus, anterior division and the right accumbens demonstrated differences in PD as opposed to HC. Atrophy of the putamen and altered FC of the striatal structures in PD revealed key structure-function relationship. Caudate nucleus and putamen atrophy could serve as neuroimaging biomeasures for PD (<xref rid="B26" ref-type="bibr">Owens-Walton et al., 2018</xref>). A brain microstructual study found decreased white matter fiber features in the right arcuate fasciculus and bilateral middle cerebellar peduncles. The study also detected increased network connectivity in prodromal early PD, which might indicate the neural compensation (<xref rid="B31" ref-type="bibr">Sanjari et al., 2019</xref>). The right accumben as one of selected GM features in the model is an interesting sign. An analysis of dopamine regulation and transporter function found regional brain (the nuclei accumbens, cingulate regions and inferior frontal) were closely related with apathy rating scores and β-amyloidopathy for predicting cognitive decline in advancing PD (<xref rid="B50" ref-type="bibr">Zhou et al., 2020</xref>). An event-related fMRI study based on reward-related neural responses showed the left nucleus accumbens with lower activation indicated involvement of the ventral striatum in individuals for further development of PD (<xref rid="B35" ref-type="bibr">Thaler et al., 2019</xref>) and PD patients with persistent pain displayed an accumbens-hippocampus disconnection (<xref rid="B27" ref-type="bibr">Polli et al., 2016</xref>).</p>
+      <p>Our study certainly has several limitations. First, although we have carried out detailed clinical evaluation and stage classification for all subjects, due to our limited sample size, we could not further stratify the patients according to the disease severity. Second, RSFCs in the model may be influenced by the different clinical symptoms such as olfaction or depression. Third, cerebellum networks were left out in the model. Although the key molecular events that provoke PD have not been fully understood and the underlying mechanisms involving cerebellum were relatively less reported, considerable evidence has indicated that cerebellum plays an important role in sensorimotor dysregulation and has now received growing attention (<xref rid="B20" ref-type="bibr">Lopez et al., 2020</xref>; <xref rid="B21" ref-type="bibr">Maas et al., 2020</xref>). For future studies, we will include the cerebellum, and increase our sample size in order to obtain different subgroups based on disease stages.</p>
+      <p>In agreement with previous rs-fMRI studies, the proposed radiomics method that combined rs-fMRI spontaneous activity, connectivity and structure MRI of gray matter (GM) was proved to be scientifically sound and valid. The machine learning based radiomics approach can help the diagnosis, personalized treatment, and prognosis orientation for patient with PD at a lower cost. This type of radiomics approaches should be widely performed and considered as an automated classification framework for predicting PD in clinical management.</p>
+    </sec>
+    <sec sec-type="data-availability" id="S5">
+      <title>Data Availability Statement</title>
+      <p>The datasets generated for this study are available on request to the corresponding author.</p>
+    </sec>
+    <sec id="S6">
+      <title>Ethics Statement</title>
+      <p>The studies involving human participants were reviewed and approved by the Medical Research Ethical Committee of Nanjing Brain Hospital (Nanjing, China). The patients/participants provided their written informed consent to participate in this study.</p>
+    </sec>
+    <sec id="S7">
+      <title>Author Contributions</title>
+      <p>QH and WL conceived and designed the study. QH, XC, XW, SZ, CX, and WL performed the experiments. XC and QH wrote the manuscript. XC, QH, and SZ reviewed and edited the manuscript. All authors read and approved the manuscript.</p>
+    </sec>
+    <sec id="conf1">
+      <title>Conflict of Interest</title>
+      <p>The authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.</p>
+    </sec>
+  </body>
+  <back>
+    <fn-group>
+      <fn fn-type="financial-disclosure">
+        <p><bold>Funding.</bold> This research was supported in part by the National Natural Science Foundation of China (Nos. 61131003, 81571348 and 81701671), Simons Foundation (No. 635213), and Taft Summer Research Fellowship at University of Cincinnati.</p>
+      </fn>
+    </fn-group>
+    <fn-group>
+      <fn id="footnote1">
+        <label>1</label>
+        <p>
+          <ext-link ext-link-type="uri" xlink:href="http://rfmri.org/DPARSF">http://rfmri.org/DPARSF</ext-link>
+        </p>
+      </fn>
+      <fn id="footnote2">
+        <label>2</label>
+        <p>
+          <ext-link ext-link-type="uri" xlink:href="http://www.fil.ion.ucl.ac.uk/spm/">http://www.fil.ion.ucl.ac.uk/spm/</ext-link>
+        </p>
+      </fn>
+      <fn id="footnote3">
+        <label>3</label>
+        <p>
+          <ext-link ext-link-type="uri" xlink:href="http://restfmri.net/forum/index.php?q=rest">http://restfmri.net/forum/index.php?q=rest</ext-link>
+        </p>
+      </fn>
+    </fn-group>
+    <ref-list>
+      <title>References</title>
+      <ref id="B1">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Butt</surname><given-names>A. H.</given-names></name><name><surname>Rovini</surname><given-names>C.</given-names></name><name><surname>Dolciotti</surname><given-names>G.</given-names></name><name><surname>De Petris</surname><given-names>P.</given-names></name><name><surname>Bongioanni</surname><given-names>M. C.</given-names></name><name><surname>Carboncini</surname><given-names>R.</given-names></name><etal/></person-group> (<year>2018</year>). <article-title>Objective and automatic classification of Parkinson disease with Leap Motion controller.</article-title>
+<source><italic>Biomed. Eng. Online</italic></source>
+<volume>17</volume>:<issue>168</issue>.</mixed-citation>
+      </ref>
+      <ref id="B2">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Campbell</surname><given-names>M. C.</given-names></name><name><surname>Jackson</surname><given-names>J. M.</given-names></name><name><surname>Koller</surname><given-names>A. Z.</given-names></name><name><surname>Snyder</surname><given-names>P. T.</given-names></name><name><surname>Kotzbauer</surname><given-names>P.</given-names></name><name><surname>Perlmutter</surname><given-names>J. S.</given-names></name></person-group> (<year>2019</year>). <article-title>Proteinopathy and longitudinal changes in functional connectivity networks in Parkinson disease.</article-title>
+<source><italic>Neurology</italic></source>
+<volume>94</volume>
+<fpage>e718</fpage>–<lpage>e728</lpage>. <pub-id pub-id-type="doi">10.1212/wnl.0000000000008677</pub-id>
+<pub-id pub-id-type="pmid">31852813</pub-id></mixed-citation>
+      </ref>
+      <ref id="B3">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Cheng</surname><given-names>Z.</given-names></name><name><surname>Zhang</surname><given-names>N.</given-names></name><name><surname>He</surname><given-names>Y.</given-names></name><name><surname>Li</surname><given-names>Y.</given-names></name><name><surname>Wen</surname><given-names>H.</given-names></name><name><surname>Xu</surname><given-names>R.</given-names></name><etal/></person-group> (<year>2019</year>). <article-title>Radiomic features of the nigrosome-1 region of the substantia nigra: using quantitative susceptibility mapping to assist the diagnosis of idiopathic Parkinson’s disease.</article-title>
+<source><italic>Front. Aging Neurosci.</italic></source>
+<volume>11</volume>:<issue>167</issue>. <pub-id pub-id-type="doi">10.3389/fnagi.2019.00167</pub-id>
+<pub-id pub-id-type="pmid">31379555</pub-id></mixed-citation>
+      </ref>
+      <ref id="B4">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Cherubini</surname><given-names>A.</given-names></name><name><surname>Morelli</surname><given-names>R.</given-names></name><name><surname>Nistico</surname><given-names>M.</given-names></name><name><surname>Salsone</surname><given-names>G.</given-names></name><name><surname>Arabia</surname><given-names>R.</given-names></name><name><surname>Vasta</surname><given-names>A.</given-names></name><etal/></person-group> (<year>2014</year>). <article-title>Magnetic resonance support vector machine discriminates between Parkinson disease and progressive supranuclear palsy.</article-title>
+<source><italic>Mov. Disord.</italic></source>
+<volume>29</volume>
+<fpage>266</fpage>–<lpage>269</lpage>. <pub-id pub-id-type="doi">10.1002/mds.25737</pub-id>
+<pub-id pub-id-type="pmid">24323617</pub-id></mixed-citation>
+      </ref>
+      <ref id="B5">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Choe</surname><given-names>I. H.</given-names></name><name><surname>Yeo</surname><given-names>K. C.</given-names></name><name><surname>Chung</surname><given-names>S. H.</given-names></name><name><surname>Kim</surname><given-names>S.</given-names></name><name><surname>Lim</surname><given-names>S.</given-names></name></person-group> (<year>2013</year>). <article-title>Decreased and increased cerebral regional homogeneity in early Parkinson’s disease.</article-title>
+<source><italic>Brain Res.</italic></source>
+<volume>1527</volume>
+<fpage>230</fpage>–<lpage>237</lpage>. <pub-id pub-id-type="doi">10.1016/j.brainres.2013.06.027</pub-id>
+<pub-id pub-id-type="pmid">23816374</pub-id></mixed-citation>
+      </ref>
+      <ref id="B6">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>De Micco</surname><given-names>R.</given-names></name><name><surname>Esposito</surname><given-names>F.</given-names></name><name><surname>di Nardo</surname><given-names>G.</given-names></name><name><surname>Caiazzo</surname><given-names>M.</given-names></name><name><surname>Siciliano</surname><given-names>A.</given-names></name><name><surname>Russo</surname><given-names>M.</given-names></name><etal/></person-group> (<year>2019</year>). <article-title>Sex-related pattern of intrinsic brain connectivity in drug-naive Parkinson’s disease patients.</article-title>
+<source><italic>Mov. Disord.</italic></source>
+<volume>34</volume>
+<fpage>997</fpage>–<lpage>1005</lpage>. <pub-id pub-id-type="doi">10.1002/mds.27725</pub-id>
+<pub-id pub-id-type="pmid">31180598</pub-id></mixed-citation>
+      </ref>
+      <ref id="B7">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Friston</surname><given-names>K. J.</given-names></name><name><surname>Williams</surname><given-names>R.</given-names></name><name><surname>Howard</surname><given-names>R. S.</given-names></name><name><surname>Frackowiak</surname><given-names>S.</given-names></name><name><surname>Turner</surname><given-names>R.</given-names></name></person-group> (<year>1996</year>). <article-title>Movement-related effects in fMRI time-series.</article-title>
+<source><italic>Magn. Reson. Med.</italic></source>
+<volume>35</volume>
+<fpage>346</fpage>–<lpage>355</lpage>. <pub-id pub-id-type="doi">10.1002/mrm.1910350312</pub-id>
+<pub-id pub-id-type="pmid">8699946</pub-id></mixed-citation>
+      </ref>
+      <ref id="B8">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Griffanti</surname><given-names>L.</given-names></name><name><surname>Stratmann</surname><given-names>M.</given-names></name><name><surname>Rolinski</surname><given-names>N.</given-names></name><name><surname>Filippini</surname><given-names>E.</given-names></name><name><surname>Zsoldos</surname><given-names>A.</given-names></name><name><surname>Mahmood</surname><given-names>G.</given-names></name><etal/></person-group> (<year>2018</year>). <article-title>Exploring variability in basal ganglia connectivity with functional MRI in healthy aging.</article-title>
+<source><italic>Brain Imaging Behav.</italic></source>
+<volume>12</volume>
+<fpage>1822</fpage>–<lpage>1827</lpage>. <pub-id pub-id-type="doi">10.1007/s11682-018-9824-1</pub-id>
+<pub-id pub-id-type="pmid">29442271</pub-id></mixed-citation>
+      </ref>
+      <ref id="B9">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Halliday</surname><given-names>G. M.</given-names></name><name><surname>Leverenz</surname><given-names>J. S.</given-names></name><name><surname>Schneider</surname><given-names>R.</given-names></name><name><surname>Adler</surname><given-names>C. H.</given-names></name></person-group> (<year>2014</year>). <article-title>The neurobiological basis of cognitive impairment in Parkinson’s disease.</article-title>
+<source><italic>Mov. Disord.</italic></source>
+<volume>29</volume>
+<fpage>634</fpage>–<lpage>650</lpage>. <pub-id pub-id-type="doi">10.1002/mds.25857</pub-id>
+<pub-id pub-id-type="pmid">24757112</pub-id></mixed-citation>
+      </ref>
+      <ref id="B10">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Harrington</surname><given-names>D. L.</given-names></name><name><surname>Shen</surname><given-names>G. N.</given-names></name><name><surname>Castillo</surname><given-names>J. V.</given-names></name><name><surname>Filoteo</surname><given-names>I.</given-names></name><name><surname>Litvan</surname><given-names>C.</given-names></name><name><surname>Takahashi</surname><given-names>R.</given-names></name><etal/></person-group> (<year>2017</year>). <article-title>Aberrant intrinsic activity and connectivity in cognitively normal Parkinson’s disease.</article-title>
+<source><italic>Front. Aging Neurosci.</italic></source>
+<volume>9</volume>:<issue>197</issue>. <pub-id pub-id-type="doi">10.3389/fnagi.2017.00197</pub-id>
+<pub-id pub-id-type="pmid">28674492</pub-id></mixed-citation>
+      </ref>
+      <ref id="B11">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Hofmann-Apitius</surname><given-names>M.</given-names></name><name><surname>Ball</surname><given-names>S.</given-names></name><name><surname>Gebel</surname><given-names>S.</given-names></name><name><surname>Bagewadi</surname><given-names>B.</given-names></name><name><surname>de Bono</surname><given-names>R.</given-names></name><name><surname>Schneider</surname><given-names>M.</given-names></name><etal/></person-group> (<year>2015</year>). <article-title>Bioinformatics mining and modeling methods for the identification of disease mechanisms in neurodegenerative disorders.</article-title>
+<source><italic>Int. J. Mol. Sci.</italic></source>
+<volume>16</volume>
+<fpage>29179</fpage>–<lpage>29206</lpage>. <pub-id pub-id-type="doi">10.3390/ijms161226148</pub-id>
+<pub-id pub-id-type="pmid">26690135</pub-id></mixed-citation>
+      </ref>
+      <ref id="B12">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Hou</surname><given-names>Y.</given-names></name><name><surname>Wu</surname><given-names>M.</given-names></name><name><surname>Hallett</surname><given-names>P.</given-names></name><name><surname>Chan</surname><given-names>K.</given-names></name><name><surname>Wu</surname><given-names>T.</given-names></name></person-group> (<year>2014</year>). <article-title>Frequency-dependent neural activity in Parkinson’s disease.</article-title>
+<source><italic>Hum. Brain Mapp.</italic></source>
+<volume>35</volume>
+<fpage>5815</fpage>–<lpage>5833</lpage>. <pub-id pub-id-type="doi">10.1002/hbm.22587</pub-id>
+<pub-id pub-id-type="pmid">25045127</pub-id></mixed-citation>
+      </ref>
+      <ref id="B13">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Hsu</surname><given-names>S. Y.</given-names></name><name><surname>Lin</surname><given-names>T. B.</given-names></name><name><surname>Chen</surname><given-names>W. C.</given-names></name><name><surname>Du</surname><given-names>Y. H.</given-names></name><name><surname>Hsu</surname><given-names>Y. C.</given-names></name><name><surname>Wu</surname><given-names>P.</given-names></name><etal/></person-group> (<year>2019</year>). <article-title>Feasible classified models for parkinson disease from (99m)Tc-TRODAT-1 SPECT imaging.</article-title>
+<source><italic>Sensors</italic></source>
+<volume>19</volume>:<issue>1740</issue>. <pub-id pub-id-type="doi">10.3390/s19071740</pub-id>
+<pub-id pub-id-type="pmid">30978990</pub-id></mixed-citation>
+      </ref>
+      <ref id="B14">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Khoury</surname><given-names>N.</given-names></name><name><surname>Attal</surname><given-names>Y.</given-names></name><name><surname>Amirat</surname><given-names>L.</given-names></name><name><surname>Oukhellou</surname><given-names>R.</given-names></name><name><surname>Mohammed</surname><given-names>S.</given-names></name></person-group> (<year>2019</year>). <article-title>Data-driven based approach to aid Parkinson’s disease diagnosis.</article-title>
+<source><italic>Sensors</italic></source>
+<volume>19</volume>:<issue>242</issue>. <pub-id pub-id-type="doi">10.3390/s19020242</pub-id>
+<pub-id pub-id-type="pmid">30634600</pub-id></mixed-citation>
+      </ref>
+      <ref id="B15">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Koshimori</surname><given-names>Y.</given-names></name><name><surname>Cho</surname><given-names>M.</given-names></name><name><surname>Criaud</surname><given-names>L.</given-names></name><name><surname>Christopher</surname><given-names>M.</given-names></name><name><surname>Jacobs</surname><given-names>C.</given-names></name><name><surname>Ghadery</surname><given-names>S.</given-names></name><etal/></person-group> (<year>2016</year>). <article-title>Disrupted nodal and hub organization account for brain network abnormalities in Parkinson’s disease.</article-title>
+<source><italic>Front. Aging Neurosci.</italic></source>
+<volume>8</volume>:<issue>259</issue>. <pub-id pub-id-type="doi">10.3389/fnagi.2016.00259</pub-id>
+<pub-id pub-id-type="pmid">27891090</pub-id></mixed-citation>
+      </ref>
+      <ref id="B16">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Lee</surname><given-names>Y.</given-names></name><name><surname>Park</surname><given-names>J. J.</given-names></name><name><surname>Lee</surname><given-names>Y. H.</given-names></name><name><surname>Sohn</surname><given-names>J. M.</given-names></name><name><surname>Lee</surname><given-names>P.</given-names></name><name><surname>Lee</surname><given-names>P. H.</given-names></name></person-group> (<year>2018</year>). <article-title>Gender-specific effect of uric acid on resting-state functional networks in de novo Parkinson’s disease.</article-title>
+<source><italic>Parkinsonism. Relat. Disord.</italic></source>
+<volume>52</volume>
+<fpage>49</fpage>–<lpage>54</lpage>. <pub-id pub-id-type="doi">10.1016/j.parkreldis.2018.03.023</pub-id>
+<pub-id pub-id-type="pmid">29606606</pub-id></mixed-citation>
+      </ref>
+      <ref id="B17">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Li</surname><given-names>Y.</given-names></name><name><surname>Liang</surname><given-names>X.</given-names></name><name><surname>Jia</surname><given-names>R.</given-names></name><name><surname>Li</surname><given-names>K.</given-names></name></person-group> (<year>2016</year>). <article-title>Abnormal regional homogeneity in Parkinson’s disease: a resting state fMRI study.</article-title>
+<source><italic>Clin. Radiol.</italic></source>
+<volume>71</volume>
+<fpage>e28</fpage>–<lpage>e34</lpage>. <pub-id pub-id-type="doi">10.1016/j.crad.2015.10.006</pub-id>
+<pub-id pub-id-type="pmid">26628410</pub-id></mixed-citation>
+      </ref>
+      <ref id="B18">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Liu</surname><given-names>Z.</given-names></name><name><surname>Wang</surname><given-names>D.</given-names></name><name><surname>Dong</surname><given-names>J.</given-names></name><name><surname>Wei</surname><given-names>C.</given-names></name><name><surname>Fang</surname><given-names>X.</given-names></name><name><surname>Zhou</surname><given-names>K.</given-names></name><etal/></person-group> (<year>2019</year>). <article-title>The applications of radiomics in precision diagnosis and treatment of oncology: opportunities and challenges.</article-title>
+<source><italic>Theranostics</italic></source>
+<volume>9</volume>
+<fpage>1303</fpage>–<lpage>1322</lpage>. <pub-id pub-id-type="doi">10.7150/thno.30309</pub-id>
+<pub-id pub-id-type="pmid">30867832</pub-id></mixed-citation>
+      </ref>
+      <ref id="B19">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Long</surname><given-names>D.</given-names></name><name><surname>Wang</surname><given-names>M.</given-names></name><name><surname>Xuan</surname><given-names>Q.</given-names></name><name><surname>Gu</surname><given-names>X.</given-names></name><name><surname>Xu</surname><given-names>D.</given-names></name><name><surname>Kong</surname><given-names>D.</given-names></name><etal/></person-group> (<year>2012</year>). <article-title>Automatic classification of early Parkinson’s disease with multi-modal MR imaging.</article-title>
+<source><italic>PLoS One</italic></source>
+<volume>7</volume>:<issue>e47714</issue>. <pub-id pub-id-type="doi">10.1371/journal.pone.0047714</pub-id>
+<pub-id pub-id-type="pmid">23152757</pub-id></mixed-citation>
+      </ref>
+      <ref id="B20">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Lopez</surname><given-names>A. M.</given-names></name><name><surname>Trujillo</surname><given-names>A. B.</given-names></name><name><surname>Hernandez</surname><given-names>Y. C.</given-names></name><name><surname>Lin</surname><given-names>H.</given-names></name><name><surname>Kang</surname><given-names>B. A.</given-names></name><name><surname>Landman</surname><given-names>D. J.</given-names></name><etal/></person-group> (<year>2020</year>). <article-title>Structural correlates of the sensorimotor cerebellum in parkinson’s disease and essential tremor.</article-title>
+<source><italic>Mov. Disord.</italic></source>
+<comment>[Epub ahead of print]</comment>.</mixed-citation>
+      </ref>
+      <ref id="B21">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Maas</surname><given-names>R.</given-names></name><name><surname>Helmich</surname><given-names>R. D.</given-names></name><name><surname>van de Warrenburg</surname><given-names>B. P. C.</given-names></name></person-group> (<year>2020</year>). <article-title>The role of the cerebellum in degenerative ataxias and essential tremor: insights from noninvasive modulation of cerebellar activity.</article-title>
+<source><italic>Mov. Disord.</italic></source>
+<volume>35</volume>
+<fpage>215</fpage>–<lpage>227</lpage>. <pub-id pub-id-type="doi">10.1002/mds.27919</pub-id>
+<pub-id pub-id-type="pmid">31820832</pub-id></mixed-citation>
+      </ref>
+      <ref id="B22">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Madhyastha</surname><given-names>T. M.</given-names></name><name><surname>Askren</surname><given-names>P.</given-names></name><name><surname>Boord</surname><given-names>M.</given-names></name><name><surname>Grabowski</surname><given-names>T.</given-names></name></person-group> (<year>2015</year>). <article-title>Dynamic connectivity at rest predicts attention task performance.</article-title>
+<source><italic>Brain Connect.</italic></source>
+<volume>5</volume>
+<fpage>45</fpage>–<lpage>59</lpage>. <pub-id pub-id-type="doi">10.1089/brain.2014.0248</pub-id>
+<pub-id pub-id-type="pmid">25014419</pub-id></mixed-citation>
+      </ref>
+      <ref id="B23">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Maidan</surname><given-names>I.</given-names></name><name><surname>Jacob</surname><given-names>N.</given-names></name><name><surname>Giladi</surname><given-names>J. M.</given-names></name><name><surname>Hausdorff</surname><given-names>N.</given-names></name><name><surname>Mirelman</surname><given-names>S.</given-names></name></person-group> (<year>2019</year>). <article-title>Altered organization of the dorsal attention network is associated with freezing of gait in Parkinson’s disease.</article-title>
+<source><italic>Parkinsonism. Relat. Disord.</italic></source>
+<volume>63</volume>
+<fpage>77</fpage>–<lpage>82</lpage>. <pub-id pub-id-type="doi">10.1016/j.parkreldis.2019.02.036</pub-id>
+<pub-id pub-id-type="pmid">30827838</pub-id></mixed-citation>
+      </ref>
+      <ref id="B24">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Meles</surname><given-names>S. K.</given-names></name><name><surname>Teune</surname><given-names>B. M.</given-names></name><name><surname>de Jong</surname><given-names>R. A.</given-names></name><name><surname>Dierckx</surname><given-names>P.</given-names></name><name><surname>Leenders</surname><given-names>K. L.</given-names></name></person-group> (<year>2017</year>). <article-title>Metabolic imaging in Parkinson disease.</article-title>
+<source><italic>J. Nucl. Med.</italic></source>
+<volume>58</volume>
+<fpage>23</fpage>–<lpage>28</lpage>. <pub-id pub-id-type="doi">10.2967/jnumed.116.183152</pub-id>
+<pub-id pub-id-type="pmid">27879372</pub-id></mixed-citation>
+      </ref>
+      <ref id="B25">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Mhyre</surname><given-names>T. R.</given-names></name><name><surname>Boyd</surname><given-names>R. W.</given-names></name><name><surname>Hamill</surname><given-names>R.</given-names></name><name><surname>Maguire-Zeiss</surname><given-names>K.</given-names></name></person-group> (<year>2012</year>). <article-title>Parkinson’s disease.</article-title>
+<source><italic>Subcell. Biochem.</italic></source>
+<volume>65</volume>
+<fpage>389</fpage>–<lpage>455</lpage>.<pub-id pub-id-type="pmid">23225012</pub-id></mixed-citation>
+      </ref>
+      <ref id="B26">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Owens-Walton</surname><given-names>C.</given-names></name><name><surname>Jakabek</surname><given-names>X.</given-names></name><name><surname>Li</surname><given-names>F. A.</given-names></name><name><surname>Wilkes</surname><given-names>M.</given-names></name><name><surname>Walterfang</surname><given-names>D.</given-names></name><name><surname>Velakoulis</surname><given-names>D.</given-names></name><etal/></person-group> (<year>2018</year>). <article-title>Striatal changes in Parkinson disease: an investigation of morphology, functional connectivity and their relationship to clinical symptoms.</article-title>
+<source><italic>Psychiatry Res. Neuroimaging</italic></source>
+<volume>275</volume>
+<fpage>5</fpage>–<lpage>13</lpage>. <pub-id pub-id-type="doi">10.1016/j.pscychresns.2018.03.004</pub-id>
+<pub-id pub-id-type="pmid">29555381</pub-id></mixed-citation>
+      </ref>
+      <ref id="B27">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Polli</surname><given-names>A.</given-names></name><name><surname>Weis</surname><given-names>R.</given-names></name><name><surname>Biundo</surname><given-names>M.</given-names></name><name><surname>Thacker</surname><given-names>A.</given-names></name><name><surname>Turolla</surname><given-names>K.</given-names></name><name><surname>Koutsikos</surname><given-names>K. R.</given-names></name><etal/></person-group> (<year>2016</year>). <article-title>Anatomical and functional correlates of persistent pain in Parkinson’s disease.</article-title>
+<source><italic>Mov. Disord.</italic></source>
+<volume>31</volume>
+<fpage>1854</fpage>–<lpage>1864</lpage>. <pub-id pub-id-type="doi">10.1002/mds.26826</pub-id>
+<pub-id pub-id-type="pmid">27704616</pub-id></mixed-citation>
+      </ref>
+      <ref id="B28">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Rahmim</surname><given-names>A.</given-names></name><name><surname>Huang</surname><given-names>N.</given-names></name><name><surname>Shenkov</surname><given-names>S.</given-names></name><name><surname>Fotouhi</surname><given-names>E.</given-names></name><name><surname>Davoodi-Bojd</surname><given-names>L.</given-names></name><name><surname>Lu</surname><given-names>Z.</given-names></name><etal/></person-group> (<year>2017</year>). <article-title>Improved prediction of outcome in Parkinson’s disease using radiomics analysis of longitudinal DAT SPECT images.</article-title>
+<source><italic>Neuroimage Clin.</italic></source>
+<volume>16</volume>
+<fpage>539</fpage>–<lpage>544</lpage>. <pub-id pub-id-type="doi">10.1016/j.nicl.2017.08.021</pub-id>
+<pub-id pub-id-type="pmid">29868437</pub-id></mixed-citation>
+      </ref>
+      <ref id="B29">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Salvatore</surname><given-names>C.</given-names></name><name><surname>Castiglioni</surname><given-names>I.</given-names></name><name><surname>Cerasa</surname><given-names>A.</given-names></name></person-group> (<year>2019</year>). <article-title>Radiomics approach in the neurodegenerative brain.</article-title>
+<source><italic>Aging Clin. Exp. Res.</italic></source></mixed-citation>
+      </ref>
+      <ref id="B30">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Sandrone</surname><given-names>S.</given-names></name><name><surname>Catani</surname><given-names>M.</given-names></name></person-group> (<year>2013</year>). <article-title>Journal Club. Default-mode network connectivity in cognitively unimpaired patients with Parkinson disease.</article-title>
+<source><italic>Neurology</italic></source>
+<volume>81</volume>
+<fpage>e172</fpage>–<lpage>e175</lpage>. <pub-id pub-id-type="doi">10.1212/01.wnl.0000436943.62904.09</pub-id><pub-id pub-id-type="pmid">24297804</pub-id></mixed-citation>
+      </ref>
+      <ref id="B31">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Sanjari</surname><given-names>M. H.</given-names></name><name><surname>Dolatshahi</surname><given-names>E.</given-names></name><name><surname>Salardini</surname><given-names>M.</given-names></name><name><surname>Aarabi</surname><given-names>M. H.</given-names></name></person-group> (<year>2019</year>). <article-title>Association of olfaction dysfunction with brain microstructure in prodromal Parkinson disease.</article-title>
+<source><italic>Neurol. Sci.</italic></source>
+<volume>40</volume>
+<fpage>283</fpage>–<lpage>291</lpage>. <pub-id pub-id-type="doi">10.1007/s10072-018-3629-2</pub-id>
+<pub-id pub-id-type="pmid">30386933</pub-id></mixed-citation>
+      </ref>
+      <ref id="B32">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Sheng</surname><given-names>K.</given-names></name><name><surname>Fang</surname><given-names>Y.</given-names></name><name><surname>Zhu</surname><given-names>G.</given-names></name><name><surname>Shuai</surname><given-names>D.</given-names></name><name><surname>Zou</surname><given-names>M.</given-names></name><name><surname>Su</surname><given-names>Y.</given-names></name><etal/></person-group> (<year>2016</year>). <article-title>Different alterations of cerebral regional homogeneity in early-onset and late-onset Parkinson’s disease.</article-title>
+<source><italic>Front. Aging Neurosci.</italic></source>
+<volume>8</volume>:<issue>165</issue>. <pub-id pub-id-type="doi">10.3389/fnagi.2016.00165</pub-id>
+<pub-id pub-id-type="pmid">27462265</pub-id></mixed-citation>
+      </ref>
+      <ref id="B33">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Shinde</surname><given-names>S.</given-names></name><name><surname>Prasad</surname><given-names>Y.</given-names></name><name><surname>Saboo</surname><given-names>R.</given-names></name><name><surname>Kaushick</surname><given-names>J.</given-names></name><name><surname>Saini</surname><given-names>P. K.</given-names></name><name><surname>Pal</surname><given-names>L.</given-names></name><etal/></person-group> (<year>2019</year>). <article-title>Predictive markers for Parkinson’s disease using deep neural nets on neuromelanin sensitive MRI.</article-title>
+<source><italic>Neuroimage Clin.</italic></source>
+<volume>22</volume>:<issue>101748</issue>. <pub-id pub-id-type="doi">10.1016/j.nicl.2019.101748</pub-id>
+<pub-id pub-id-type="pmid">30870733</pub-id></mixed-citation>
+      </ref>
+      <ref id="B34">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Singh</surname><given-names>G.</given-names></name><name><surname>Samavedham</surname><given-names>L.</given-names></name></person-group> (<year>2015</year>). <article-title>Unsupervised learning based feature extraction for differential diagnosis of neurodegenerative diseases: a case study on early-stage diagnosis of Parkinson disease.</article-title>
+<source><italic>J. Neurosci. Methods</italic></source>
+<volume>256</volume>
+<fpage>30</fpage>–<lpage>40</lpage>. <pub-id pub-id-type="doi">10.1016/j.jneumeth.2015.08.011</pub-id>
+<pub-id pub-id-type="pmid">26304693</pub-id></mixed-citation>
+      </ref>
+      <ref id="B35">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Thaler</surname><given-names>A.</given-names></name><name><surname>Gonen</surname><given-names>A.</given-names></name><name><surname>Mirelman</surname><given-names>R. C.</given-names></name><name><surname>Helmich</surname><given-names>T.</given-names></name><name><surname>Gurevich</surname><given-names>A.</given-names></name><name><surname>Orr-Urtreger</surname><given-names>B. R.</given-names></name><etal/></person-group> (<year>2019</year>). <article-title>Altered reward-related neural responses in non-manifesting carriers of the Parkinson disease related LRRK2 mutation.</article-title>
+<source><italic>Brain Imaging Behav.</italic></source>
+<volume>13</volume>
+<fpage>1009</fpage>–<lpage>1020</lpage>. <pub-id pub-id-type="doi">10.1007/s11682-018-9920-2</pub-id>
+<pub-id pub-id-type="pmid">29971685</pub-id></mixed-citation>
+      </ref>
+      <ref id="B36">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Tibar</surname><given-names>H.</given-names></name><name><surname>El Bayad</surname><given-names>A.</given-names></name><name><surname>Bouhouche</surname><given-names>E. H.</given-names></name><name><surname>Ait Ben Haddou</surname><given-names>A.</given-names></name><name><surname>Benomar</surname><given-names>M.</given-names></name><name><surname>Yahyaoui</surname><given-names>A.</given-names></name><etal/></person-group> (<year>2018</year>). <article-title>Non-motor symptoms of parkinson’s disease and their impact on quality of life in a cohort of moroccan patients.</article-title>
+<source><italic>Front. Neurol.</italic></source>
+<volume>9</volume>:<issue>170</issue>. <pub-id pub-id-type="doi">10.3389/fneur.2018.00170</pub-id>
+<pub-id pub-id-type="pmid">29670566</pub-id></mixed-citation>
+      </ref>
+      <ref id="B37">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Valladares</surname><given-names>A.</given-names></name><name><surname>Beyer</surname><given-names>T.</given-names></name><name><surname>Rausch</surname><given-names>I.</given-names></name></person-group> (<year>2020</year>). <article-title>Physical imaging phantoms for simulation of tumour heterogeneity in PET, CT and MRI: an overview of existing designs.</article-title>
+<source><italic>Med. Phys.</italic></source>
+<volume>47</volume>
+<fpage>2023</fpage>–<lpage>2037</lpage>. <pub-id pub-id-type="doi">10.1002/mp.14045</pub-id>
+<pub-id pub-id-type="pmid">31981214</pub-id></mixed-citation>
+      </ref>
+      <ref id="B38">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>van den Heuvel</surname><given-names>L.</given-names></name><name><surname>Dorsey</surname><given-names>B.</given-names></name><name><surname>Prainsack</surname><given-names>B.</given-names></name><name><surname>Post</surname><given-names>A. M.</given-names></name><name><surname>Stiggelbout</surname><given-names>M. J.</given-names></name><name><surname>Meinders</surname><given-names>L.</given-names></name><etal/></person-group> (<year>2020</year>). <article-title>Quadruple decision making for Parkinson’s disease patients: combining expert opinion, patient preferences, scientific evidence, and big data approaches to reach precision medicine.</article-title>
+<source><italic>J. Parkinsons Dis.</italic></source>
+<volume>10</volume>
+<fpage>223</fpage>–<lpage>231</lpage>. <pub-id pub-id-type="doi">10.3233/jpd-191712</pub-id>
+<pub-id pub-id-type="pmid">31561387</pub-id></mixed-citation>
+      </ref>
+      <ref id="B39">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Vu</surname><given-names>T. C.</given-names></name><name><surname>Nutt</surname><given-names>J. C.</given-names></name><name><surname>Holford</surname><given-names>N. H.</given-names></name></person-group> (<year>2012</year>). <article-title>Disease progress and response to treatment as predictors of survival, disability, cognitive impairment and depression in Parkinson’s disease.</article-title>
+<source><italic>Br. J. Clin. Pharmacol.</italic></source>
+<volume>74</volume>
+<fpage>284</fpage>–<lpage>295</lpage>. <pub-id pub-id-type="doi">10.1111/j.1365-2125.2012.04208.x</pub-id>
+<pub-id pub-id-type="pmid">22300470</pub-id></mixed-citation>
+      </ref>
+      <ref id="B40">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Wang</surname><given-names>J.</given-names></name><name><surname>Zhang</surname><given-names>Y. F.</given-names></name><name><surname>Zang</surname><given-names>R.</given-names></name><name><surname>Wu</surname><given-names>T.</given-names></name></person-group> (<year>2018</year>). <article-title>Consistent decreased activity in the putamen in Parkinson’s disease: a meta-analysis and an independent validation of resting-state fMRI.</article-title>
+<source><italic>Gigascience</italic></source>
+<volume>7</volume>:<issue>giy071</issue>.</mixed-citation>
+      </ref>
+      <ref id="B41">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Wang</surname><given-names>Y.</given-names></name><name><surname>Sun</surname><given-names>Z.</given-names></name><name><surname>Liu</surname><given-names>G.</given-names></name><name><surname>Chen</surname><given-names>Y.</given-names></name><name><surname>Jia</surname><given-names>S.</given-names></name><name><surname>Zhong</surname><given-names>J.</given-names></name><etal/></person-group> (<year>2019</year>). <article-title>Classification of unmedicated bipolar disorder using whole-brain functional activity and connectivity: a radiomics analysis.</article-title>
+<source><italic>Cereb. Cortex</italic></source>
+<volume>30</volume>
+<fpage>1117</fpage>–<lpage>1128</lpage>. <pub-id pub-id-type="doi">10.1093/cercor/bhz152</pub-id>
+<pub-id pub-id-type="pmid">31408101</pub-id></mixed-citation>
+      </ref>
+      <ref id="B42">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Wu</surname><given-names>T.</given-names></name><name><surname>Long</surname><given-names>Y.</given-names></name><name><surname>Zang</surname><given-names>L.</given-names></name><name><surname>Wang</surname><given-names>M.</given-names></name><name><surname>Hallett</surname><given-names>K.</given-names></name><name><surname>Li</surname><given-names>R.</given-names></name><etal/></person-group> (<year>2009</year>). <article-title>Regional homogeneity changes in patients with Parkinson’s disease.</article-title>
+<source><italic>Hum. Brain Mapp.</italic></source>
+<volume>30</volume>
+<fpage>1502</fpage>–<lpage>1510</lpage>. <pub-id pub-id-type="doi">10.1002/hbm.20622</pub-id>
+<pub-id pub-id-type="pmid">18649351</pub-id></mixed-citation>
+      </ref>
+      <ref id="B43">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Xia</surname><given-names>M.</given-names></name><name><surname>Wang</surname><given-names>J.</given-names></name><name><surname>He</surname><given-names>Y.</given-names></name></person-group> (<year>2013</year>). <article-title>BrainNet Viewer: a network visualization tool for human brain connectomics.</article-title>
+<source><italic>PLoS One</italic></source>
+<volume>8</volume>:<issue>e68910</issue>. <pub-id pub-id-type="doi">10.1371/journal.pone.0068910</pub-id>
+<pub-id pub-id-type="pmid">23861951</pub-id></mixed-citation>
+      </ref>
+      <ref id="B44">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Xiang</surname><given-names>J.</given-names></name><name><surname>Jia</surname><given-names>H.</given-names></name><name><surname>Li</surname><given-names>J.</given-names></name><name><surname>Qin</surname><given-names>P.</given-names></name><name><surname>Liang</surname><given-names>X.</given-names></name><name><surname>Li</surname><given-names>K.</given-names></name></person-group> (<year>2016</year>). <article-title>Altered spontaneous brain activity in cortical and subcortical regions in Parkinson’s disease.</article-title>
+<source><italic>Parkinsons Dis.</italic></source>
+<volume>2016</volume>:<issue>5246021</issue>.</mixed-citation>
+      </ref>
+      <ref id="B45">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Yang</surname><given-names>H.</given-names></name><name><surname>Zhou</surname><given-names>M.</given-names></name><name><surname>Zhang</surname><given-names>X. N.</given-names></name><name><surname>Zheng</surname><given-names>Y. L.</given-names></name><name><surname>Zhao</surname><given-names>M.</given-names></name><name><surname>Wang</surname><given-names>J.</given-names></name></person-group> (<year>2013</year>). <article-title>Changes in spontaneous brain activity in early Parkinson’s disease.</article-title>
+<source><italic>Neurosci. Lett.</italic></source>
+<volume>549</volume>
+<fpage>24</fpage>–<lpage>28</lpage>. <pub-id pub-id-type="doi">10.1016/j.neulet.2013.05.080</pub-id>
+<pub-id pub-id-type="pmid">23769726</pub-id></mixed-citation>
+      </ref>
+      <ref id="B46">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zang</surname><given-names>Y.</given-names></name><name><surname>Jiang</surname><given-names>Y.</given-names></name><name><surname>Lu</surname><given-names>Y.</given-names></name><name><surname>He</surname><given-names>P.</given-names></name><name><surname>Tian</surname><given-names>L.</given-names></name></person-group> (<year>2004</year>). <article-title>Regional homogeneity approach to fMRI data analysis.</article-title>
+<source><italic>Neuroimage</italic></source>
+<volume>22</volume>
+<fpage>394</fpage>–<lpage>400</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2003.12.030</pub-id>
+<pub-id pub-id-type="pmid">15110032</pub-id></mixed-citation>
+      </ref>
+      <ref id="B47">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zang</surname><given-names>Y. F.</given-names></name><name><surname>He</surname><given-names>C. Z.</given-names></name><name><surname>Zhu</surname><given-names>Q. J.</given-names></name><name><surname>Cao</surname><given-names>M. Q.</given-names></name><name><surname>Sui</surname><given-names>M.</given-names></name><name><surname>Liang</surname><given-names>L.</given-names></name><etal/></person-group> (<year>2007</year>). <article-title>Altered baseline brain activity in children with ADHD revealed by resting-state functional MRI.</article-title>
+<source><italic>Brain Dev.</italic></source>
+<volume>29</volume>
+<fpage>83</fpage>–<lpage>91</lpage>. <pub-id pub-id-type="doi">10.1016/j.braindev.2006.07.002</pub-id>
+<pub-id pub-id-type="pmid">16919409</pub-id></mixed-citation>
+      </ref>
+      <ref id="B48">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zeng</surname><given-names>Q.</given-names></name><name><surname>Guan</surname><given-names>J. C. F.</given-names></name><name><surname>Lun</surname><given-names>Z.</given-names></name><name><surname>Shen</surname><given-names>T.</given-names></name><name><surname>Guo</surname><given-names>M.</given-names></name><name><surname>Xuan</surname><given-names>Q.</given-names></name><etal/></person-group> (<year>2017</year>). <article-title>Longitudinal alterations of local spontaneous brain activity in Parkinson’s disease.</article-title>
+<source><italic>Neurosci. Bull.</italic></source>
+<volume>33</volume>
+<fpage>501</fpage>–<lpage>509</lpage>. <pub-id pub-id-type="doi">10.1007/s12264-017-0171-9</pub-id>
+<pub-id pub-id-type="pmid">28828757</pub-id></mixed-citation>
+      </ref>
+      <ref id="B49">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zhang</surname><given-names>J.</given-names></name><name><surname>Wei</surname><given-names>X.</given-names></name><name><surname>Hu</surname><given-names>Y.</given-names></name><name><surname>Zhang</surname><given-names>D.</given-names></name><name><surname>Zhou</surname><given-names>C.</given-names></name><name><surname>Li</surname><given-names>X.</given-names></name><etal/></person-group> (<year>2013</year>). <article-title>Specific frequency band of amplitude low-frequency fl uctuation predicts Parkinson’s disease.</article-title>
+<source><italic>Behav. Brain Res.</italic></source>
+<volume>252</volume>
+<fpage>18</fpage>–<lpage>23</lpage>. <pub-id pub-id-type="doi">10.1016/j.bbr.2013.05.039</pub-id>
+<pub-id pub-id-type="pmid">23727173</pub-id></mixed-citation>
+      </ref>
+      <ref id="B50">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zhou</surname><given-names>Z.</given-names></name><name><surname>Muller</surname><given-names>P.</given-names></name><name><surname>Kanel</surname><given-names>J.</given-names></name><name><surname>Chua</surname><given-names>V.</given-names></name><name><surname>Kotagal</surname><given-names>D. I.</given-names></name><name><surname>Kaufer</surname><given-names>R. L.</given-names></name><etal/></person-group> (<year>2020</year>). <article-title>Apathy rating scores and beta-amyloidopathy in patients with Parkinson disease at risk for cognitive decline.</article-title>
+<source><italic>Neurology</italic></source>
+<volume>94</volume>
+<fpage>e376</fpage>–<lpage>e383</lpage>. <pub-id pub-id-type="doi">10.1212/wnl.0000000000008683</pub-id>
+<pub-id pub-id-type="pmid">31732566</pub-id></mixed-citation>
+      </ref>
+      <ref id="B51">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zuo</surname><given-names>X. N.</given-names></name><name><surname>Kelly</surname><given-names>A.</given-names></name><name><surname>Di Martino</surname><given-names>M.</given-names></name><name><surname>Mennes</surname><given-names>D. S.</given-names></name><name><surname>Margulies</surname><given-names>S.</given-names></name><name><surname>Bangaru</surname><given-names>R.</given-names></name><etal/></person-group> (<year>2010</year>). <article-title>Growing together and growing apart: regional and sex differences in the lifespan developmental trajectories of functional homotopy.</article-title>
+<source><italic>J. Neurosci.</italic></source>
+<volume>30</volume>
+<fpage>15034</fpage>–<lpage>15043</lpage>. <pub-id pub-id-type="doi">10.1523/jneurosci.2612-10.2010</pub-id>
+<pub-id pub-id-type="pmid">21068309</pub-id></mixed-citation>
+      </ref>
+      <ref id="B52">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zuo</surname><given-names>X. N.</given-names></name><name><surname>Xu</surname><given-names>L.</given-names></name><name><surname>Jiang</surname><given-names>Z.</given-names></name><name><surname>Yang</surname><given-names>X. Y.</given-names></name><name><surname>Cao</surname><given-names>Y.</given-names></name><name><surname>He</surname><given-names>Y. F.</given-names></name><etal/></person-group> (<year>2013</year>). <article-title>Toward reliable characterization of functional homogeneity in the human brain: preprocessing, scan duration, imaging resolution and computational space.</article-title>
+<source><italic>Neuroimage</italic></source>
+<volume>65</volume>
+<fpage>374</fpage>–<lpage>386</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2012.10.017</pub-id>
+<pub-id pub-id-type="pmid">23085497</pub-id></mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

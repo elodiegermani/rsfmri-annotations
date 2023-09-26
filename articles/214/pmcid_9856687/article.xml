@@ -1,0 +1,1455 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.3" xml:lang="en" article-type="research-article">
+  <?properties open_access?>
+  <processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats">
+    <restricted-by>pmc</restricted-by>
+  </processing-meta>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">Brain Sci</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Brain Sci</journal-id>
+      <journal-id journal-id-type="publisher-id">brainsci</journal-id>
+      <journal-title-group>
+        <journal-title>Brain Sciences</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">2076-3425</issn>
+      <publisher>
+        <publisher-name>MDPI</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">36671990</article-id>
+      <article-id pub-id-type="pmc">9856687</article-id>
+      <article-id pub-id-type="doi">10.3390/brainsci13010008</article-id>
+      <article-id pub-id-type="publisher-id">brainsci-13-00008</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Effects of Physiological Signal Removal on Resting-State Functional MRI Metrics</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Choi</surname>
+            <given-names>Uk-Su</given-names>
+          </name>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Methodology" vocab-term-identifier="https://credit.niso.org/contributor-roles/methodology/">Methodology</role>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Software" vocab-term-identifier="https://credit.niso.org/contributor-roles/software/">Software</role>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Validation" vocab-term-identifier="https://credit.niso.org/contributor-roles/validation/">Validation</role>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Formal analysis" vocab-term-identifier="https://credit.niso.org/contributor-roles/formal-analysis/">Formal analysis</role>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Investigation" vocab-term-identifier="https://credit.niso.org/contributor-roles/investigation/">Investigation</role>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing – original draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">Writing – original draft</role>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Visualization" vocab-term-identifier="https://credit.niso.org/contributor-roles/visualization/">Visualization</role>
+          <xref rid="af1-brainsci-13-00008" ref-type="aff">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <contrib-id contrib-id-type="orcid" authenticated="true">https://orcid.org/0000-0001-9381-4588</contrib-id>
+          <name>
+            <surname>Sung</surname>
+            <given-names>Yul-Wan</given-names>
+          </name>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Conceptualization" vocab-term-identifier="https://credit.niso.org/contributor-roles/conceptualization/">Conceptualization</role>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Methodology" vocab-term-identifier="https://credit.niso.org/contributor-roles/methodology/">Methodology</role>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Investigation" vocab-term-identifier="https://credit.niso.org/contributor-roles/investigation/">Investigation</role>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Data curation" vocab-term-identifier="https://credit.niso.org/contributor-roles/data-curation/">Data curation</role>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing – original draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">Writing – original draft</role>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Supervision" vocab-term-identifier="https://credit.niso.org/contributor-roles/supervision/">Supervision</role>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Project administration" vocab-term-identifier="https://credit.niso.org/contributor-roles/project-administration/">Project administration</role>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Funding acquisition" vocab-term-identifier="https://credit.niso.org/contributor-roles/funding-acquisition/">Funding acquisition</role>
+          <xref rid="af2-brainsci-13-00008" ref-type="aff">2</xref>
+          <xref rid="c1-brainsci-13-00008" ref-type="corresp">*</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Ogawa</surname>
+            <given-names>Seiji</given-names>
+          </name>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing – review &amp; editing" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-review-editing/">Writing – review &amp; editing</role>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Supervision" vocab-term-identifier="https://credit.niso.org/contributor-roles/supervision/">Supervision</role>
+          <xref rid="af2-brainsci-13-00008" ref-type="aff">2</xref>
+        </contrib>
+      </contrib-group>
+      <contrib-group>
+        <contrib contrib-type="editor">
+          <name>
+            <surname>Delon-Martin</surname>
+            <given-names>Chantal</given-names>
+          </name>
+          <role>Academic Editor</role>
+        </contrib>
+      </contrib-group>
+      <aff id="af1-brainsci-13-00008"><label>1</label>Medical Device Development Center, Daegu-Gyeongbuk Medical Innovation Foundation, Daegu 41061, Republic of Korea</aff>
+      <aff id="af2-brainsci-13-00008"><label>2</label>Kansei Fukushi Research Institute, Tohoku Fukushi University, Sendai 9893201, Japan</aff>
+      <author-notes>
+        <corresp id="c1-brainsci-13-00008"><label>*</label>Correspondence: <email>sung@tfu-mail.tfu.ac.jp</email>; Tel.: +81-22-728-7433</corresp>
+      </author-notes>
+      <pub-date pub-type="epub">
+        <day>20</day>
+        <month>12</month>
+        <year>2022</year>
+      </pub-date>
+      <pub-date pub-type="collection">
+        <month>1</month>
+        <year>2023</year>
+      </pub-date>
+      <volume>13</volume>
+      <issue>1</issue>
+      <elocation-id>8</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>21</day>
+          <month>11</month>
+          <year>2022</year>
+        </date>
+        <date date-type="rev-recd">
+          <day>02</day>
+          <month>12</month>
+          <year>2022</year>
+        </date>
+        <date date-type="accepted">
+          <day>12</day>
+          <month>12</month>
+          <year>2022</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>© 2022 by the authors.</copyright-statement>
+        <copyright-year>2022</copyright-year>
+        <license>
+          <ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref>
+          <license-p>Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license (<ext-link ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</ext-link>).</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>Resting-state fMRIs (rs-fMRIs) have been widely used for investigation of diverse brain functions, including brain cognition. The rs-fMRI has easily elucidated rs-fMRI metrics, such as the fractional amplitude of low-frequency fluctuation (fALFF), regional homogeneity (ReHo), voxel-mirrored homotopic connectivity (VMHC), and degree centrality (DC). To increase the applicability of these metrics, higher reliability is required by reducing confounders that are not related to the functional connectivity signal. Many previous studies already demonstrated the effects of physiological artifact removal from rs-fMRI data, but few have evaluated the effect on rs-fMRI metrics. In this study, we examined the effect of physiological noise correction on the most common rs-fMRI metrics. We calculated the intraclass correlation coefficient of repeated measurements on parcellated brain areas by applying physiological noise correction based on the RETROICOR method. Then, we evaluated the correction effect for five rs-fMRI metrics for the whole brain: FC, fALFF, ReHo, VMHC, and DC. The correction effect depended not only on the brain region, but also on the metric. Among the five metrics, the reliability in terms of the mean value of all ROIs was significantly improved for FC, but it deteriorated for fALFF, with no significant differences for ReHo, VMHC, and DC. Therefore, the decision on whether to perform the physiological correction should be based on the type of metric used. </p>
+      </abstract>
+      <kwd-group>
+        <kwd>functional MRI (fMRI)</kwd>
+        <kwd>resting state fMRI (rs-fMRI)</kwd>
+        <kwd>physiological signals</kwd>
+        <kwd>reliability</kwd>
+        <kwd>intra-session</kwd>
+        <kwd>intraclass correlation coefficient</kwd>
+        <kwd>functional connectivity</kwd>
+        <kwd>regional homogeneity</kwd>
+        <kwd>metric</kwd>
+      </kwd-group>
+      <funding-group>
+        <award-group>
+          <funding-source>JSPS KAKENHI</funding-source>
+          <award-id>19H00532</award-id>
+          <award-id>21H02800</award-id>
+        </award-group>
+        <award-group>
+          <funding-source>‘Creative KMEDI hub’</funding-source>
+        </award-group>
+        <funding-statement>This study was supported by JSPS KAKENHI Grant Number 19H00532 &amp; 21H02800 and a research grant from ‘Creative KMEDI hub’ in 2022.</funding-statement>
+      </funding-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec sec-type="intro" id="sec1-brainsci-13-00008">
+      <title>1. Introduction</title>
+      <p>Resting-state fMRI (rs-fMRI) signals come from intrinsic brain activities [<xref rid="B1-brainsci-13-00008" ref-type="bibr">1</xref>,<xref rid="B2-brainsci-13-00008" ref-type="bibr">2</xref>,<xref rid="B3-brainsci-13-00008" ref-type="bibr">3</xref>]. rs-fMRI has been applied to studies of brain disorders such as Alzheimer’s disease (AD), autism spectrum disorder (ASD), depression, etc., and normal sensory, higher-order cognitive, and higher-order social functions [<xref rid="B4-brainsci-13-00008" ref-type="bibr">4</xref>,<xref rid="B5-brainsci-13-00008" ref-type="bibr">5</xref>,<xref rid="B6-brainsci-13-00008" ref-type="bibr">6</xref>,<xref rid="B7-brainsci-13-00008" ref-type="bibr">7</xref>,<xref rid="B8-brainsci-13-00008" ref-type="bibr">8</xref>,<xref rid="B9-brainsci-13-00008" ref-type="bibr">9</xref>,<xref rid="B10-brainsci-13-00008" ref-type="bibr">10</xref>,<xref rid="B11-brainsci-13-00008" ref-type="bibr">11</xref>,<xref rid="B12-brainsci-13-00008" ref-type="bibr">12</xref>,<xref rid="B13-brainsci-13-00008" ref-type="bibr">13</xref>,<xref rid="B14-brainsci-13-00008" ref-type="bibr">14</xref>,<xref rid="B15-brainsci-13-00008" ref-type="bibr">15</xref>,<xref rid="B16-brainsci-13-00008" ref-type="bibr">16</xref>].</p>
+      <p>Contrary to the typical fMRI that uses tasks or stimulation, brain function studies with rs-fMRI require a metric to estimate brain activity. This requirement induced the development of metrics such as functional connectivity (FC) [<xref rid="B17-brainsci-13-00008" ref-type="bibr">17</xref>], the fractional amplitude of low-frequency fluctuation (fALFF) [<xref rid="B18-brainsci-13-00008" ref-type="bibr">18</xref>], regional homogeneity (ReHo) [<xref rid="B19-brainsci-13-00008" ref-type="bibr">19</xref>], voxel-mirrored homo-topic connectivity (VMHC) [<xref rid="B20-brainsci-13-00008" ref-type="bibr">20</xref>], degree centrality (DC) [<xref rid="B21-brainsci-13-00008" ref-type="bibr">21</xref>,<xref rid="B22-brainsci-13-00008" ref-type="bibr">22</xref>], etc. These metrics use a time series of brain rs-fMR images to evaluate different characteristics of brain activity. For example, FC reflects temporal coherence between brain areas. FC has been widely used to find intrinsic brain function such as the default mode network (DMN). This is a functional network produced from the correlation of rs-fMRI time series among the medial prefrontal cortex, posterior cingulate cortex/precuneus, and the angular gyrus known to be active during the rest condition, that is, when not executing any task [<xref rid="B1-brainsci-13-00008" ref-type="bibr">1</xref>,<xref rid="B3-brainsci-13-00008" ref-type="bibr">3</xref>]. The DMN is a crucial brain function network commonly used for identifying brain areas related to cognitive function [<xref rid="B23-brainsci-13-00008" ref-type="bibr">23</xref>], or for disorders such as AD and ASD [<xref rid="B24-brainsci-13-00008" ref-type="bibr">24</xref>,<xref rid="B25-brainsci-13-00008" ref-type="bibr">25</xref>,<xref rid="B26-brainsci-13-00008" ref-type="bibr">26</xref>]. </p>
+      <p>Although most previous brain function studies were based on a population (a group of subjects), the requirement to identify brain disorders or function at an individual level requires improvements in the rs-fMRI (rs-fMRI more reliably reflects brain activity). Several factors affect rs-fMRI reliability; one of the major factors is physiological artifacts.</p>
+      <p>The rs-fMRI time series inevitably contains unwanted information or artifacts (signals not relevant to brain function) of a physiological origin, as well as interesting functional information. Two major physiological signal sources are cardiac pulsatory and respiration; these are difficult to remove. The cardiac rhythm affects the rs-fMRI through vessel expansion and the associated movement in nearby tissue compartments rather than blood oxygenation changes; meanwhile, respiration affects the rs-fMRI through changes in blood oxygenation. These physiological noises could explain a large fraction of fMRI variance in fMRIs related to both low- and high-frequency physiological fluctuations [<xref rid="B27-brainsci-13-00008" ref-type="bibr">27</xref>]. As a consequence, they act as noise sources that affect the metrics for evaluating rs-fMRI signals, and vary from person to person or from measurement to measurement. </p>
+      <p>Previous studies claimed that removing physiological noises would be crucial to accurately quantify dynamic relationships within and across brain networks [<xref rid="B28-brainsci-13-00008" ref-type="bibr">28</xref>,<xref rid="B29-brainsci-13-00008" ref-type="bibr">29</xref>], since systemic hemodynamic fluctuations induced by heart rate changes can lead to artificial connectivity as neuronally-driven changes [<xref rid="B30-brainsci-13-00008" ref-type="bibr">30</xref>,<xref rid="B31-brainsci-13-00008" ref-type="bibr">31</xref>]. Their claim was supported by reports on the positive effects of physiological noise removal, such as improved temporal SNR (tSNR) and region specificity within the DMN which reduce apparent false positives. </p>
+      <p>Rs-fMRI data correction—physiological noise removal—is achieved by the removal of time-locked cardiac and respiratory artifacts [<xref rid="B32-brainsci-13-00008" ref-type="bibr">32</xref>]. The most typically used correction method is to regress out cardiac and respiratory signals that are independently measured by the pulse and respiratory sensor from rs-fMRI signals at each voxel of the brain image. However, there are different connections from the physiological noise source to each voxel; the regression of physiological noise, regardless of the method, works differently at imaging voxels or areas of the brain because the mechanism representing the noise on the voxels or areas varies through the different vasculatures and tissue structures that surround them. </p>
+      <p>Despite some reports on the positive effects of noise removal, others reported negative effects [<xref rid="B33-brainsci-13-00008" ref-type="bibr">33</xref>,<xref rid="B34-brainsci-13-00008" ref-type="bibr">34</xref>]; therefore, the question remains open. In addition, previous studies evaluated the effects of noise removal mostly on particular brain areas or networks [<xref rid="B35-brainsci-13-00008" ref-type="bibr">35</xref>]. Therefore, it is worthwhile to evaluate the applicability of this correction across the whole brain, especially analytically and quantitatively, with intra-session measurements. In this study, we examined the correction effect through the whole brain by evaluating the independent effect in each brain area where we applied the widely used correction method RETROICOR, present in fMRI analysis software packages such as FSL [<xref rid="B36-brainsci-13-00008" ref-type="bibr">36</xref>], SPM [<xref rid="B37-brainsci-13-00008" ref-type="bibr">37</xref>], and AFNI [<xref rid="B38-brainsci-13-00008" ref-type="bibr">38</xref>]. Particularly, we evaluated the intra-session reliability of the correction effects by repeating the measurement twice per session, with an interval of 2 or 3 days between sessions, for a total of six or eight sessions per subject for one month. The evaluation was performed for five typical rs-fMRI metrics of FC, fALFF, ReHo, VMHC, and DC that reflect different aspects of the rs-fMRI signal, and different dependences of rs-fMRI metrics on the physiological noise. For instance, fALFF is independent of characters between voxels such as correlation or coherence. ReHo is dependent on local coherence. FC is the correlation between ROIs. VMHC is the hemispheric coherence. DC represents connectivity, a second-order characteristic.</p>
+    </sec>
+    <sec id="sec2-brainsci-13-00008">
+      <title>2. Materials and Methods</title>
+      <sec id="sec2dot1-brainsci-13-00008">
+        <title>2.1. Subjects</title>
+        <p>This study involved three participants (all female, aged 20–23 years) who did not have a history of neurological disease or any other medical conditions. All participants were right-handed, and were registered in the same college. All participants provided written informed consent, and all experiments were approved by the Institutional Review Board of Tohoku Fukushi University.</p>
+      </sec>
+      <sec id="sec2dot2-brainsci-13-00008">
+        <title>2.2. MRI Acquisition</title>
+        <p>Two participants were scanned eight times and one participant six times, on different days, twice a week over one month, using a 3T investigational MRI scanner (Skyra-fit) with a default 20-channel head coil. Three-dimensional whole-brain high-resolution T1-weighted (T1w) images were acquired using a magnetization prepared rapid acquisition with gradient echo sequence, having the following parameters: repetition time = 1900 ms, echo time = 2.52 ms, flip angle = 80°, number of slices = 192, slice thickness = 1 mm, matrix = 256 × 256, and in-plane voxel resolution = 1 × 1 mm<sup>2</sup>. Rs-fMRI images were obtained using a gradient echo single-shot echo-planar image sequence with the following parameters: matrix = 64 × 64, repetition time = 1000 ms, echo time = 24 ms, in-plane resolution = 3.4 × 3.4 mm<sup>2</sup>, slice thickness = 3.4 mm, number of slices = 34 with no gap, slice orientation along AC–PC, and number of volumes = 480.</p>
+      </sec>
+      <sec id="sec2dot3-brainsci-13-00008">
+        <title>2.3. Physiological Signals Acquisition</title>
+        <p>Physiological signals were acquired during the MRI scan through a physiological signal measurement system installed in the MRI scanner, with photoplethysmography and a breathing belt.</p>
+      </sec>
+      <sec id="sec2dot4-brainsci-13-00008">
+        <title>2.4. Data Processing</title>
+        <p>The acquired data underwent the preprocessing steps of 3D motion correction and slice time correction before removal of the physiological noise. Physiological noises, including cardiac and respiration signals, were regressed from the preprocessed rs-fMRI data using the PNM algorithm based on the RETROICOR method in FSL [<xref rid="B39-brainsci-13-00008" ref-type="bibr">39</xref>]. After the removal of physiological noise, rs-fMRI data were further preprocessed by DPABI [<xref rid="B40-brainsci-13-00008" ref-type="bibr">40</xref>] with the following preprocessing steps. Head motion effects were removed with the Friston 24-parameter model and artifacts from the CSF signal. These functional images were smoothed with a 6-millimeter FWHM filter and co-registered with each corresponding structural image. Rs-fMR images were spatially normalized to a standard coordinate space and a Montreal Neurological Institute space to extract rs-fMRI time series from the predefined anatomical regions of AAL3 [<xref rid="B41-brainsci-13-00008" ref-type="bibr">41</xref>]. After normalization, the five metrics, FC (of the left postcentral gyrus as a seed because the area is the first ROI of the atlas; it is large, with its signal expected to be more stable for conceivable variations such as segmentation error, which can lead to functional connectivity with other areas affected by their variations.), fALFF (mfALFF), ReHo (mReHo), VMHC (zVMHC), and DC (zDC_PositiveWeightedSum) were calculated through DPABI processing.</p>
+        <p>The intraclass correlation coefficient (ICC) was calculated via a random sample of two raters (two scans in a session) and rating targets (18 repeated sessions without separation of subjects), in order to evaluate the reliability of repeated rs-fMRI measurements in a session [<xref rid="B42-brainsci-13-00008" ref-type="bibr">42</xref>,<xref rid="B43-brainsci-13-00008" ref-type="bibr">43</xref>]. For ICC evaluation, the values of the five repeated rs-fMRI metrics fALFF, ReHo, FC, VMHC, and DC were defined as raters, with the subjects defined as targets.</p>
+      </sec>
+    </sec>
+    <sec sec-type="results" id="sec3-brainsci-13-00008">
+      <title>3. Results</title>
+      <p>ICC values at individual ROIs (AAL3), before and after physiological signal removal, were compared to evaluate reliability. The maps show different effects of physiological signal removal. Some ROIs showed an improvement in reliability, while others did not (<xref rid="brainsci-13-00008-f001" ref-type="fig">Figure 1</xref>). The ICC values of each ROI for each metric (fALFF, ReHo, FC, VMHC, DC) are shown in <xref rid="brainsci-13-00008-f002" ref-type="fig">Figure 2</xref>.</p>
+      <p>The ratio of ROIs with increased ICC values after physiological signal removal was evaluated for each metric modality (<xref rid="brainsci-13-00008-f003" ref-type="fig">Figure 3</xref>). For FC, the ratio of ROIs with increased ICC values was within 56.67% while those with decreased ICCs were within 43.33%. The ratio of the ROIs with increased ICCs for fALFF was within 36.56%, and the ratio of the ROIs with decreased ICCs was within 63.44%. The ratio of the ROIs with increased ICCs for ReHo was within 50.00%, and the ratio of the ROIs with decreased ICCs was within 50.00%. The ratio of the ROIs with increased ICCs for VMHC was within 48.84%, and the ratio of the ROIs with decreased ICCs was within 51.16%. The ratio of the ROIs with increased ICC values for DC was within 55.00%, and the ratio of the ROIs with decreased ICC values was within 45.00%.</p>
+      <p>The mean ICC values, before and after correction, are shown in <xref rid="brainsci-13-00008-f004" ref-type="fig">Figure 4</xref>. The mean ICC difference for all ROIs between the corrected and the uncorrected was significant for FC (paired <italic toggle="yes">t</italic>-test; <italic toggle="yes">p</italic> = 0.01), with an ICC increase of 3.5% after correction. The mean ICC value difference for all ROIs between the corrected and the uncorrected was significant for fALFF (paired <italic toggle="yes">t</italic>-test; <italic toggle="yes">p</italic> = 0.01), with an ICC decrease of 4.8%. The mean ICC differences for the other metrics, ReHo, VMHC, and DC, were not significant (paired <italic toggle="yes">t</italic>-test; <italic toggle="yes">p</italic> = 0.43, 0.41, 0.22, respectively).</p>
+      <p>Based on the effect of the correction, we compared the ratio of increased and decreased ICCs for FC when the difference value between before and after the correction was &gt;0.1 (<xref rid="brainsci-13-00008-t001" ref-type="table">Table 1</xref>). ROIs of increased ICCs were 21.1%, and decreased by 7.7%. The increased ROIs included sub-regions of the thalamus, and bus regions of the striatum such as putamen, caudate nucleus, and pallidum, and the decreased ROIs mostly included sub-regions of the cerebellum and midbrain, etc.</p>
+    </sec>
+    <sec sec-type="discussion" id="sec4-brainsci-13-00008">
+      <title>4. Discussion</title>
+      <p>We examined the correction effect of rs-fMRI data by removal of physiological noise, evaluating the reliability of repeated measurements of the most-used rs-fMRI metrics. The present results demonstrate that the correction effect depended not only on the brain region, but the metric. Among the five metrics, the reliability in terms of the mean value of all ROIs significantly improved for FC, but deteriorated for fALFF; there were no significant differences for ReHo, VMHC, and DC. In addition, brain areas that showed ICC improvement or deterioration with the correction did not show any common trend in relation to their regional attributes of brain function (<xref rid="brainsci-13-00008-t001" ref-type="table">Table 1</xref>). Considering the dominance of ROIs with improved ICCs and the increase in mean ICC value, the correction was effective only for FC. </p>
+      <p>Previous studies reported positive effects of physiological noise removal [<xref rid="B26-brainsci-13-00008" ref-type="bibr">26</xref>,<xref rid="B28-brainsci-13-00008" ref-type="bibr">28</xref>,<xref rid="B44-brainsci-13-00008" ref-type="bibr">44</xref>], showing that physiological correction improved rs-fMRI data stability, and produced better functional outcomes such as more specific activation maps, better correlation maps, and functional networks. With respect to stability, for example, a study showed that physiological correction could remove spurious activations in regions outside the gray matter shown in the uncorrected data [<xref rid="B45-brainsci-13-00008" ref-type="bibr">45</xref>]; another showed that physiological correction substantially reduced physiological noise components and increased temporal SNR [<xref rid="B46-brainsci-13-00008" ref-type="bibr">46</xref>]. In terms of functional outcomes, some studies showed that physiological noise correction increased the spatial extent, reduced apparent false positives in DMN [<xref rid="B47-brainsci-13-00008" ref-type="bibr">47</xref>], and increased DMN localization estimated by seed correlation to the seed region [<xref rid="B48-brainsci-13-00008" ref-type="bibr">48</xref>], leading to improved detection of consistent group differences [<xref rid="B49-brainsci-13-00008" ref-type="bibr">49</xref>]. Our finding of improvement in FC is consistent with those of previous observations.</p>
+      <p>For regional dependency of the correction effect, a study reported that respiratory-related signal fluctuations increased in cerebellar regions, with higher variances than for the primary motor cortex region [<xref rid="B50-brainsci-13-00008" ref-type="bibr">50</xref>]. Our data do not show consistent regional characteristics related to reliability with the previous study; that is, the physiological correction did not improve reliability more in the cerebellum than in the precentral region that corresponds to the primary motor cortex. </p>
+      <p>For the dependency of the correction effect on the metrics, a previous study supports our observation that the correction effects vary depending on the metrics [<xref rid="B51-brainsci-13-00008" ref-type="bibr">51</xref>]. Our data demonstrate that whole-brain analyses can benefit from correction for FC metrics. </p>
+      <p>For analyses based on specific ROIs or networks, a previous study showed that the physiological correction depended on the functional specialization of the brain region [<xref rid="B52-brainsci-13-00008" ref-type="bibr">52</xref>,<xref rid="B53-brainsci-13-00008" ref-type="bibr">53</xref>]. Our data were evaluated on brain regions based on anatomical segmentation. When computing ICC values and localizing functional areas, a further direction for the correction may be provided by the same evaluation. There are some limitations of this study. The regression model that was applied here may not reflect the dynamics of physiological sources on each voxel. Applying modeling dynamics at each voxel may improve the correction effects [<xref rid="B54-brainsci-13-00008" ref-type="bibr">54</xref>]. Furthermore, the sample size was small because we tried to focus on the evaluation of intra-session measurements by acquiring as much repetition data from the same subject as possible in a short period. We evaluated the data on the basis of rs-fMRI metrics, rather than using tSNR which may more directly reflect noise effects; many studies of rs-fMRI have been reported using these metrics.</p>
+      <p>Our results showed that the correction effect depends on the metric and brain regions, and do not make us confident about the physiological correction. However, a lot of rs-fMRI studies use FC as the metric and, in this case, the positive correction effect could be useful. In addition, our results may be informative for researchers who have taken rs-fMRI data without recording physiological signals, or for researchers do not have a facility for these measurements should they plan to use other metrics than FC; since physiological correction is not expected to further improve their results or conclusions, they could spare their efforts.</p>
+    </sec>
+    <sec sec-type="conclusions" id="sec5-brainsci-13-00008">
+      <title>5. Conclusions</title>
+      <p>Rs-fMRI data correction by removal of cardiac and respiratory signals can improve the reliability of the FC metric during whole brain analysis; however, while some brain areas were improved, others deteriorated. The decision of whether to perform the correction should be based on the type of metric used.</p>
+    </sec>
+  </body>
+  <back>
+    <fn-group>
+      <fn>
+        <p><bold>Disclaimer/Publisher’s Note:</bold> The statements, opinions and data contained in all publications are solely those of the individual author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to people or property resulting from any ideas, methods, instructions or products referred to in the content.</p>
+      </fn>
+    </fn-group>
+    <notes>
+      <title>Author Contributions</title>
+      <p>Conceptualization and design, Y.-W.S.; experiment, Y.-W.S.; analysis and interpretation, U.-S.C. and Y.-W.S.; writing and editing, U.-S.C. and Y.-W.S.; review and editing, S.O. All authors have read and agreed to the published version of the manuscript.</p>
+    </notes>
+    <notes>
+      <title>Institutional Review Board Statement</title>
+      <p>The study was approved by the Institutional Review Board of Tohoku Fukushi University.</p>
+    </notes>
+    <notes>
+      <title>Informed Consent Statement</title>
+      <p>Informed consent was obtained from all subjects involved in the study.</p>
+    </notes>
+    <notes notes-type="data-availability">
+      <title>Data Availability Statement</title>
+      <p>Not applicable.</p>
+    </notes>
+    <notes notes-type="COI-statement">
+      <title>Conflicts of Interest</title>
+      <p>The authors declare no conflict of interest.</p>
+    </notes>
+    <ref-list>
+      <title>References</title>
+      <ref id="B1-brainsci-13-00008">
+        <label>1.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Biswal</surname><given-names>B.</given-names></name>
+<name><surname>Yetkin</surname><given-names>F.Z.</given-names></name>
+<name><surname>Haughton</surname><given-names>V.M.</given-names></name>
+<name><surname>Hyde</surname><given-names>J.S.</given-names></name>
+</person-group>
+          <article-title>Functional Connectivity in the Motor Cortex of Resting Human Brain Using Echo-Planar MRI</article-title>
+          <source>Magn. Reson. Med.</source>
+          <year>1995</year>
+          <volume>34</volume>
+          <fpage>537</fpage>
+          <lpage>541</lpage>
+          <pub-id pub-id-type="doi">10.1002/mrm.1910340409</pub-id>
+          <pub-id pub-id-type="pmid">8524021</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B2-brainsci-13-00008">
+        <label>2.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Fransson</surname><given-names>P.</given-names></name>
+</person-group>
+          <article-title>Spontaneous Low-Frequency BOLD Signal Fluctuations: An FMRI Investigation of the Resting-State Default Mode of Brain Function Hypothesis</article-title>
+          <source>Hum. Brain Mapp.</source>
+          <year>2005</year>
+          <volume>26</volume>
+          <fpage>15</fpage>
+          <lpage>29</lpage>
+          <pub-id pub-id-type="doi">10.1002/hbm.20113</pub-id>
+          <pub-id pub-id-type="pmid">15852468</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B3-brainsci-13-00008">
+        <label>3.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Fox</surname><given-names>M.D.</given-names></name>
+<name><surname>Raichle</surname><given-names>M.E.</given-names></name>
+</person-group>
+          <article-title>Spontaneous Fluctuations in Brain Activity Observed with Functional Magnetic Resonance Imaging</article-title>
+          <source>Nat. Rev. Neurosci.</source>
+          <year>2007</year>
+          <volume>8</volume>
+          <fpage>700</fpage>
+          <lpage>711</lpage>
+          <pub-id pub-id-type="doi">10.1038/nrn2201</pub-id>
+          <pub-id pub-id-type="pmid">17704812</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B4-brainsci-13-00008">
+        <label>4.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Craig</surname><given-names>M.M.</given-names></name>
+<name><surname>Manktelow</surname><given-names>A.E.</given-names></name>
+<name><surname>Sahakian</surname><given-names>B.J.</given-names></name>
+<name><surname>Menon</surname><given-names>D.K.</given-names></name>
+<name><surname>Stamatakis</surname><given-names>E.A.</given-names></name>
+</person-group>
+          <article-title>Spectral Diversity in Default Mode Network Connectivity Reflects Behavioral State</article-title>
+          <source>J. Cogn. Neurosci.</source>
+          <year>2018</year>
+          <volume>30</volume>
+          <fpage>526</fpage>
+          <lpage>539</lpage>
+          <pub-id pub-id-type="doi">10.1162/jocn_a_01213</pub-id>
+          <pub-id pub-id-type="pmid">29211655</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B5-brainsci-13-00008">
+        <label>5.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Duan</surname><given-names>X.</given-names></name>
+<name><surname>Chen</surname><given-names>H.</given-names></name>
+<name><surname>He</surname><given-names>C.</given-names></name>
+<name><surname>Long</surname><given-names>Z.</given-names></name>
+<name><surname>Guo</surname><given-names>X.</given-names></name>
+<name><surname>Zhou</surname><given-names>Y.</given-names></name>
+<name><surname>Uddin</surname><given-names>L.Q.</given-names></name>
+<name><surname>Chen</surname><given-names>H.</given-names></name>
+</person-group>
+          <article-title>Resting-State Functional under-Connectivity within and between Large-Scale Cortical Networks across Three Low-Frequency Bands in Adolescents with Autism</article-title>
+          <source>Prog. Neuro-Psychopharmacol. Biol. Psychiatry</source>
+          <year>2017</year>
+          <volume>79</volume>
+          <fpage>434</fpage>
+          <lpage>441</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.pnpbp.2017.07.027</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B6-brainsci-13-00008">
+        <label>6.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Finn</surname><given-names>E.S.</given-names></name>
+<name><surname>Shen</surname><given-names>X.</given-names></name>
+<name><surname>Scheinost</surname><given-names>D.</given-names></name>
+<name><surname>Rosenberg</surname><given-names>M.D.</given-names></name>
+<name><surname>Huang</surname><given-names>J.</given-names></name>
+<name><surname>Chun</surname><given-names>M.M.</given-names></name>
+<name><surname>Papademetris</surname><given-names>X.</given-names></name>
+<name><surname>Constable</surname><given-names>R.T.</given-names></name>
+</person-group>
+          <article-title>Functional Connectome Fingerprinting: Identifying Individuals Using Patterns of Brain Connectivity</article-title>
+          <source>Nat. Neurosci.</source>
+          <year>2015</year>
+          <volume>18</volume>
+          <fpage>1664</fpage>
+          <lpage>1671</lpage>
+          <pub-id pub-id-type="doi">10.1038/nn.4135</pub-id>
+          <pub-id pub-id-type="pmid">26457551</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B7-brainsci-13-00008">
+        <label>7.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Göttler</surname><given-names>J.</given-names></name>
+<name><surname>Preibisch</surname><given-names>C.</given-names></name>
+<name><surname>Riederer</surname><given-names>I.</given-names></name>
+<name><surname>Pasquini</surname><given-names>L.</given-names></name>
+<name><surname>Alexopoulos</surname><given-names>P.</given-names></name>
+<name><surname>Bohn</surname><given-names>K.P.</given-names></name>
+<name><surname>Yakushev</surname><given-names>I.</given-names></name>
+<name><surname>Beller</surname><given-names>E.</given-names></name>
+<name><surname>Kaczmarz</surname><given-names>S.</given-names></name>
+<name><surname>Zimmer</surname><given-names>C.</given-names></name>
+<etal/>
+</person-group>
+          <article-title>Reduced Blood Oxygenation Level Dependent Connectivity Is Related to Hypoperfusion in Alzheimer’s Disease</article-title>
+          <source>J. Cereb. Blood Flow Metab.</source>
+          <year>2019</year>
+          <volume>39</volume>
+          <fpage>1314</fpage>
+          <lpage>1325</lpage>
+          <pub-id pub-id-type="doi">10.1177/0271678X18759182</pub-id>
+          <pub-id pub-id-type="pmid">29431005</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B8-brainsci-13-00008">
+        <label>8.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Hegarty</surname><given-names>J.P.</given-names></name>
+<name><surname>Ferguson</surname><given-names>B.J.</given-names></name>
+<name><surname>Zamzow</surname><given-names>R.M.</given-names></name>
+<name><surname>Rohowetz</surname><given-names>L.J.</given-names></name>
+<name><surname>Johnson</surname><given-names>J.D.</given-names></name>
+<name><surname>Christ</surname><given-names>S.E.</given-names></name>
+<name><surname>Beversdorf</surname><given-names>D.Q.</given-names></name>
+</person-group>
+          <article-title>Beta-Adrenergic Antagonism Modulates Functional Connectivity in the Default Mode Network of Individuals with and without Autism Spectrum Disorder</article-title>
+          <source>Brain Imaging Behav.</source>
+          <year>2017</year>
+          <volume>11</volume>
+          <fpage>1278</fpage>
+          <lpage>1289</lpage>
+          <pub-id pub-id-type="doi">10.1007/s11682-016-9604-8</pub-id>
+          <pub-id pub-id-type="pmid">27714553</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B9-brainsci-13-00008">
+        <label>9.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Jack</surname><given-names>A.</given-names></name>
+</person-group>
+          <article-title>Neuroimaging in Neurodevelopmental Disorders: Focus on Resting-State FMRI Analysis of Intrinsic Functional Brain Connectivity</article-title>
+          <source>Curr. Opin. Neurol.</source>
+          <year>2018</year>
+          <volume>31</volume>
+          <fpage>140</fpage>
+          <lpage>148</lpage>
+          <pub-id pub-id-type="doi">10.1097/WCO.0000000000000536</pub-id>
+          <pub-id pub-id-type="pmid">29351108</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B10-brainsci-13-00008">
+        <label>10.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Lei</surname><given-names>X.</given-names></name>
+<name><surname>Zhong</surname><given-names>M.</given-names></name>
+<name><surname>Liu</surname><given-names>Y.</given-names></name>
+<name><surname>Jin</surname><given-names>X.</given-names></name>
+<name><surname>Zhou</surname><given-names>Q.</given-names></name>
+<name><surname>Xi</surname><given-names>C.</given-names></name>
+<name><surname>Tan</surname><given-names>C.</given-names></name>
+<name><surname>Zhu</surname><given-names>X.</given-names></name>
+<name><surname>Yao</surname><given-names>S.</given-names></name>
+<name><surname>Yi</surname><given-names>J.</given-names></name>
+</person-group>
+          <article-title>A Resting-State FMRI Study in Borderline Personality Disorder Combining Amplitude of Low Frequency Fluctuation, Regional Homogeneity and Seed Based Functional Connectivity</article-title>
+          <source>J. Affect. Disord.</source>
+          <year>2017</year>
+          <volume>218</volume>
+          <fpage>299</fpage>
+          <lpage>305</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.jad.2017.04.067</pub-id>
+          <pub-id pub-id-type="pmid">28478359</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B11-brainsci-13-00008">
+        <label>11.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Meskaldji</surname><given-names>D.-E.</given-names></name>
+<name><surname>Preti</surname><given-names>M.G.</given-names></name>
+<name><surname>Bolton</surname><given-names>T.A.</given-names></name>
+<name><surname>Montandon</surname><given-names>M.-L.</given-names></name>
+<name><surname>Rodriguez</surname><given-names>C.</given-names></name>
+<name><surname>Morgenthaler</surname><given-names>S.</given-names></name>
+<name><surname>Giannakopoulos</surname><given-names>P.</given-names></name>
+<name><surname>Haller</surname><given-names>S.</given-names></name>
+<name><surname>Van De Ville</surname><given-names>D.</given-names></name>
+</person-group>
+          <article-title>Prediction of Long-Term Memory Scores in MCI Based on Resting-State FMRI</article-title>
+          <source>NeuroImage Clin.</source>
+          <year>2016</year>
+          <volume>12</volume>
+          <fpage>785</fpage>
+          <lpage>795</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.nicl.2016.10.004</pub-id>
+          <pub-id pub-id-type="pmid">27812505</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B12-brainsci-13-00008">
+        <label>12.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Song</surname><given-names>X.</given-names></name>
+<name><surname>Qian</surname><given-names>S.</given-names></name>
+<name><surname>Liu</surname><given-names>K.</given-names></name>
+<name><surname>Zhou</surname><given-names>S.</given-names></name>
+<name><surname>Zhu</surname><given-names>H.</given-names></name>
+<name><surname>Zou</surname><given-names>Q.</given-names></name>
+<name><surname>Liu</surname><given-names>Y.</given-names></name>
+<name><surname>Sun</surname><given-names>G.</given-names></name>
+<name><surname>Gao</surname><given-names>J.-H.</given-names></name>
+</person-group>
+          <article-title>Resting-State BOLD Oscillation Frequency Predicts Vigilance Task Performance at Both Normal and High Environmental Temperatures</article-title>
+          <source>Brain Struct. Funct.</source>
+          <year>2017</year>
+          <volume>222</volume>
+          <fpage>4065</fpage>
+          <lpage>4077</lpage>
+          <pub-id pub-id-type="doi">10.1007/s00429-017-1449-4</pub-id>
+          <pub-id pub-id-type="pmid">28600679</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B13-brainsci-13-00008">
+        <label>13.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Sung</surname><given-names>Y.-W.</given-names></name>
+<name><surname>Kawachi</surname><given-names>Y.</given-names></name>
+<name><surname>Choi</surname><given-names>U.-S.</given-names></name>
+<name><surname>Kang</surname><given-names>D.</given-names></name>
+<name><surname>Abe</surname><given-names>C.</given-names></name>
+<name><surname>Otomo</surname><given-names>Y.</given-names></name>
+<name><surname>Ogawa</surname><given-names>S.</given-names></name>
+</person-group>
+          <article-title>A Set of Functional Brain Networks for the Comprehensive Evaluation of Human Characteristics</article-title>
+          <source>Front. Neurosci.</source>
+          <year>2018</year>
+          <volume>12</volume>
+          <fpage>149</fpage>
+          <pub-id pub-id-type="doi">10.3389/fnins.2018.00149</pub-id>
+          <pub-id pub-id-type="pmid">29593488</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B14-brainsci-13-00008">
+        <label>14.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Tavor</surname><given-names>I.</given-names></name>
+<name><surname>Jones</surname><given-names>O.P.</given-names></name>
+<name><surname>Mars</surname><given-names>R.B.</given-names></name>
+<name><surname>Smith</surname><given-names>S.M.</given-names></name>
+<name><surname>Behrens</surname><given-names>T.E.</given-names></name>
+<name><surname>Jbabdi</surname><given-names>S.</given-names></name>
+</person-group>
+          <article-title>Task-Free MRI Predicts Individual Differences in Brain Activity during Task Performance</article-title>
+          <source>Science</source>
+          <year>2016</year>
+          <volume>352</volume>
+          <fpage>216</fpage>
+          <lpage>220</lpage>
+          <pub-id pub-id-type="doi">10.1126/science.aad8127</pub-id>
+          <pub-id pub-id-type="pmid">27124457</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B15-brainsci-13-00008">
+        <label>15.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Wang</surname><given-names>B.</given-names></name>
+<name><surname>Niu</surname><given-names>Y.</given-names></name>
+<name><surname>Miao</surname><given-names>L.</given-names></name>
+<name><surname>Cao</surname><given-names>R.</given-names></name>
+<name><surname>Yan</surname><given-names>P.</given-names></name>
+<name><surname>Guo</surname><given-names>H.</given-names></name>
+<name><surname>Li</surname><given-names>D.</given-names></name>
+<name><surname>Guo</surname><given-names>Y.</given-names></name>
+<name><surname>Yan</surname><given-names>T.</given-names></name>
+<name><surname>Wu</surname><given-names>J.</given-names></name>
+<etal/>
+</person-group>
+          <article-title>Decreased Complexity in Alzheimer’s Disease: Resting-State FMRI Evidence of Brain Entropy Mapping</article-title>
+          <source>Front. Aging Neurosci.</source>
+          <year>2017</year>
+          <volume>9</volume>
+          <fpage>378</fpage>
+          <pub-id pub-id-type="doi">10.3389/fnagi.2017.00378</pub-id>
+          <pub-id pub-id-type="pmid">29209199</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B16-brainsci-13-00008">
+        <label>16.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Zhang</surname><given-names>J.</given-names></name>
+<name><surname>Guo</surname><given-names>Z.</given-names></name>
+<name><surname>Liu</surname><given-names>X.</given-names></name>
+<name><surname>Jia</surname><given-names>X.</given-names></name>
+<name><surname>Li</surname><given-names>J.</given-names></name>
+<name><surname>Li</surname><given-names>Y.</given-names></name>
+<name><surname>Lv</surname><given-names>D.</given-names></name>
+<name><surname>Chen</surname><given-names>W.</given-names></name>
+</person-group>
+          <article-title>Abnormal Functional Connectivity of the Posterior Cingulate Cortex Is Associated with Depressive Symptoms in Patients with Alzheimer’s Disease</article-title>
+          <source>Neuropsychiatr. Dis. Treat.</source>
+          <year>2017</year>
+          <volume>13</volume>
+          <fpage>2589</fpage>
+          <lpage>2598</lpage>
+          <pub-id pub-id-type="doi">10.2147/NDT.S146077</pub-id>
+          <pub-id pub-id-type="pmid">29066900</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B17-brainsci-13-00008">
+        <label>17.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Vincent</surname><given-names>J.L.</given-names></name>
+<name><surname>Kahn</surname><given-names>I.</given-names></name>
+<name><surname>Snyder</surname><given-names>A.Z.</given-names></name>
+<name><surname>Raichle</surname><given-names>M.E.</given-names></name>
+<name><surname>Buckner</surname><given-names>R.L.</given-names></name>
+</person-group>
+          <article-title>Evidence for a Frontoparietal Control System Revealed by Intrinsic Functional Connectivity</article-title>
+          <source>J. Neurophysiol.</source>
+          <year>2008</year>
+          <volume>100</volume>
+          <fpage>3328</fpage>
+          <lpage>3342</lpage>
+          <pub-id pub-id-type="doi">10.1152/jn.90355.2008</pub-id>
+          <pub-id pub-id-type="pmid">18799601</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B18-brainsci-13-00008">
+        <label>18.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Zou</surname><given-names>Q.-H.</given-names></name>
+<name><surname>Zhu</surname><given-names>C.-Z.</given-names></name>
+<name><surname>Yang</surname><given-names>Y.</given-names></name>
+<name><surname>Zuo</surname><given-names>X.-N.</given-names></name>
+<name><surname>Long</surname><given-names>X.-Y.</given-names></name>
+<name><surname>Cao</surname><given-names>Q.-J.</given-names></name>
+<name><surname>Wang</surname><given-names>Y.-F.</given-names></name>
+<name><surname>Zang</surname><given-names>Y.-F.</given-names></name>
+</person-group>
+          <article-title>An Improved Approach to Detection of Amplitude of Low-Frequency Fluctuation (ALFF) for Resting-State FMRI: Fractional ALFF</article-title>
+          <source>J. Neurosci. Methods</source>
+          <year>2008</year>
+          <volume>172</volume>
+          <fpage>137</fpage>
+          <lpage>141</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.jneumeth.2008.04.012</pub-id>
+          <pub-id pub-id-type="pmid">18501969</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B19-brainsci-13-00008">
+        <label>19.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Zang</surname><given-names>Y.</given-names></name>
+<name><surname>Jiang</surname><given-names>T.</given-names></name>
+<name><surname>Lu</surname><given-names>Y.</given-names></name>
+<name><surname>He</surname><given-names>Y.</given-names></name>
+<name><surname>Tian</surname><given-names>L.</given-names></name>
+</person-group>
+          <article-title>Regional Homogeneity Approach to FMRI Data Analysis</article-title>
+          <source>NeuroImage</source>
+          <year>2004</year>
+          <volume>22</volume>
+          <fpage>394</fpage>
+          <lpage>400</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2003.12.030</pub-id>
+          <pub-id pub-id-type="pmid">15110032</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B20-brainsci-13-00008">
+        <label>20.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Zuo</surname><given-names>X.-N.</given-names></name>
+<name><surname>Kelly</surname><given-names>C.</given-names></name>
+<name><surname>Martino</surname><given-names>A.D.</given-names></name>
+<name><surname>Mennes</surname><given-names>M.</given-names></name>
+<name><surname>Margulies</surname><given-names>D.S.</given-names></name>
+<name><surname>Bangaru</surname><given-names>S.</given-names></name>
+<name><surname>Grzadzinski</surname><given-names>R.</given-names></name>
+<name><surname>Evans</surname><given-names>A.C.</given-names></name>
+<name><surname>Zang</surname><given-names>Y.-F.</given-names></name>
+<name><surname>Castellanos</surname><given-names>F.X.</given-names></name>
+<etal/>
+</person-group>
+          <article-title>Growing Together and Growing Apart: Regional and Sex Differences in the Lifespan Developmental Trajectories of Functional Homotopy</article-title>
+          <source>J. Neurosci.</source>
+          <year>2010</year>
+          <volume>30</volume>
+          <fpage>15034</fpage>
+          <lpage>15043</lpage>
+          <pub-id pub-id-type="doi">10.1523/JNEUROSCI.2612-10.2010</pub-id>
+          <pub-id pub-id-type="pmid">21068309</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B21-brainsci-13-00008">
+        <label>21.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Buckner</surname><given-names>R.L.</given-names></name>
+<name><surname>Sepulcre</surname><given-names>J.</given-names></name>
+<name><surname>Talukdar</surname><given-names>T.</given-names></name>
+<name><surname>Krienen</surname><given-names>F.M.</given-names></name>
+<name><surname>Liu</surname><given-names>H.</given-names></name>
+<name><surname>Hedden</surname><given-names>T.</given-names></name>
+<name><surname>Andrews-Hanna</surname><given-names>J.R.</given-names></name>
+<name><surname>Sperling</surname><given-names>R.A.</given-names></name>
+<name><surname>Johnson</surname><given-names>K.A.</given-names></name>
+</person-group>
+          <article-title>Cortical Hubs Revealed by Intrinsic Functional Connectivity: Mapping, Assessment of Stability, and Relation to Alzheimer’s Disease</article-title>
+          <source>J. Neurosci.</source>
+          <year>2009</year>
+          <volume>29</volume>
+          <fpage>1860</fpage>
+          <lpage>1873</lpage>
+          <pub-id pub-id-type="doi">10.1523/JNEUROSCI.5062-08.2009</pub-id>
+          <pub-id pub-id-type="pmid">19211893</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B22-brainsci-13-00008">
+        <label>22.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Zuo</surname><given-names>X.-N.</given-names></name>
+<name><surname>Ehmke</surname><given-names>R.</given-names></name>
+<name><surname>Mennes</surname><given-names>M.</given-names></name>
+<name><surname>Imperati</surname><given-names>D.</given-names></name>
+<name><surname>Castellanos</surname><given-names>F.X.</given-names></name>
+<name><surname>Sporns</surname><given-names>O.</given-names></name>
+<name><surname>Milham</surname><given-names>M.P.</given-names></name>
+</person-group>
+          <article-title>Network Centrality in the Human Functional Connectome</article-title>
+          <source>Cereb. Cortex</source>
+          <year>2012</year>
+          <volume>22</volume>
+          <fpage>1862</fpage>
+          <lpage>1875</lpage>
+          <pub-id pub-id-type="doi">10.1093/cercor/bhr269</pub-id>
+          <pub-id pub-id-type="pmid">21968567</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B23-brainsci-13-00008">
+        <label>23.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Buckner</surname><given-names>R.L.</given-names></name>
+<name><surname>DiNicola</surname><given-names>L.M.</given-names></name>
+</person-group>
+          <article-title>The Brain’s Default Network: Updated Anatomy, Physiology and Evolving Insights</article-title>
+          <source>Nat. Rev. Neurosci.</source>
+          <year>2019</year>
+          <volume>20</volume>
+          <fpage>593</fpage>
+          <lpage>608</lpage>
+          <pub-id pub-id-type="doi">10.1038/s41583-019-0212-7</pub-id>
+          <pub-id pub-id-type="pmid">31492945</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B24-brainsci-13-00008">
+        <label>24.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Greicius</surname><given-names>M.D.</given-names></name>
+<name><surname>Srivastava</surname><given-names>G.</given-names></name>
+<name><surname>Reiss</surname><given-names>A.L.</given-names></name>
+<name><surname>Menon</surname><given-names>V.</given-names></name>
+</person-group>
+          <article-title>Default-Mode Network Activity Distinguishes Alzheimer’s Disease from Healthy Aging: Evidence from Functional MRI</article-title>
+          <source>Proc. Natl. Acad. Sci. USA</source>
+          <year>2004</year>
+          <volume>101</volume>
+          <fpage>4637</fpage>
+          <lpage>4642</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.0308627101</pub-id>
+          <pub-id pub-id-type="pmid">15070770</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B25-brainsci-13-00008">
+        <label>25.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Mason</surname><given-names>M.F.</given-names></name>
+<name><surname>Norton</surname><given-names>M.I.</given-names></name>
+<name><surname>Horn</surname><given-names>J.D.V.</given-names></name>
+<name><surname>Wegner</surname><given-names>D.M.</given-names></name>
+<name><surname>Grafton</surname><given-names>S.T.</given-names></name>
+<name><surname>Macrae</surname><given-names>C.N.</given-names></name>
+</person-group>
+          <article-title>Wandering Minds: The Default Network and Stimulus-Independent Thought</article-title>
+          <source>Science</source>
+          <year>2007</year>
+          <volume>315</volume>
+          <fpage>393</fpage>
+          <lpage>395</lpage>
+          <pub-id pub-id-type="doi">10.1126/science.1131295</pub-id>
+          <pub-id pub-id-type="pmid">17234951</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B26-brainsci-13-00008">
+        <label>26.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Birn</surname><given-names>R.M.</given-names></name>
+<name><surname>Cornejo</surname><given-names>M.D.</given-names></name>
+<name><surname>Molloy</surname><given-names>E.K.</given-names></name>
+<name><surname>Patriat</surname><given-names>R.</given-names></name>
+<name><surname>Meier</surname><given-names>T.B.</given-names></name>
+<name><surname>Kirk</surname><given-names>G.R.</given-names></name>
+<name><surname>Nair</surname><given-names>V.A.</given-names></name>
+<name><surname>Meyerand</surname><given-names>M.E.</given-names></name>
+<name><surname>Prabhakaran</surname><given-names>V.</given-names></name>
+</person-group>
+          <article-title>The Influence of Physiological Noise Correction on Test–Retest Reliability of Resting-State Functional Connectivity</article-title>
+          <source>Brain Connect.</source>
+          <year>2014</year>
+          <volume>4</volume>
+          <fpage>511</fpage>
+          <lpage>522</lpage>
+          <pub-id pub-id-type="doi">10.1089/brain.2014.0284</pub-id>
+          <pub-id pub-id-type="pmid">25112809</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B27-brainsci-13-00008">
+        <label>27.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Kassinopoulos</surname><given-names>M.</given-names></name>
+<name><surname>Mitsis</surname><given-names>G.D.</given-names></name>
+</person-group>
+          <article-title>Physiological Noise Modeling in FMRI Based on the Pulsatile Component of Photoplethysmograph</article-title>
+          <source>NeuroImage</source>
+          <year>2021</year>
+          <volume>242</volume>
+          <fpage>118467</fpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2021.118467</pub-id>
+          <pub-id pub-id-type="pmid">34390877</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B28-brainsci-13-00008">
+        <label>28.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Chang</surname><given-names>C.</given-names></name>
+<name><surname>Glover</surname><given-names>G.H.</given-names></name>
+</person-group>
+          <article-title>Effects of Model-Based Physiological Noise Correction on Default Mode Network Anti-Correlations and Correlations</article-title>
+          <source>NeuroImage</source>
+          <year>2009</year>
+          <volume>47</volume>
+          <fpage>1448</fpage>
+          <lpage>1459</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2009.05.012</pub-id>
+          <pub-id pub-id-type="pmid">19446646</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B29-brainsci-13-00008">
+        <label>29.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Murphy</surname><given-names>K.</given-names></name>
+<name><surname>Birn</surname><given-names>R.M.</given-names></name>
+<name><surname>Bandettini</surname><given-names>P.A.</given-names></name>
+</person-group>
+          <article-title>Resting-State FMRI Confounds and Cleanup</article-title>
+          <source>NeuroImage</source>
+          <year>2013</year>
+          <volume>80</volume>
+          <fpage>349</fpage>
+          <lpage>359</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2013.04.001</pub-id>
+          <pub-id pub-id-type="pmid">23571418</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B30-brainsci-13-00008">
+        <label>30.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Birn</surname><given-names>R.M.</given-names></name>
+<name><surname>Diamond</surname><given-names>J.B.</given-names></name>
+<name><surname>Smith</surname><given-names>M.A.</given-names></name>
+<name><surname>Bandettini</surname><given-names>P.A.</given-names></name>
+</person-group>
+          <article-title>Separating Respiratory-Variation-Related Fluctuations from Neuronal-Activity-Related Fluctuations in FMRI</article-title>
+          <source>NeuroImage</source>
+          <year>2006</year>
+          <volume>31</volume>
+          <fpage>1536</fpage>
+          <lpage>1548</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2006.02.048</pub-id>
+          <pub-id pub-id-type="pmid">16632379</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B31-brainsci-13-00008">
+        <label>31.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Glasser</surname><given-names>M.F.</given-names></name>
+<name><surname>Coalson</surname><given-names>T.S.</given-names></name>
+<name><surname>Bijsterbosch</surname><given-names>J.D.</given-names></name>
+<name><surname>Harrison</surname><given-names>S.J.</given-names></name>
+<name><surname>Harms</surname><given-names>M.P.</given-names></name>
+<name><surname>Anticevic</surname><given-names>A.</given-names></name>
+<name><surname>Van Essen</surname><given-names>D.C.</given-names></name>
+<name><surname>Smith</surname><given-names>S.M.</given-names></name>
+</person-group>
+          <article-title>Using Temporal ICA to Selectively Remove Global Noise While Preserving Global Signal in Functional MRI Data</article-title>
+          <source>NeuroImage</source>
+          <year>2018</year>
+          <volume>181</volume>
+          <fpage>692</fpage>
+          <lpage>717</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2018.04.076</pub-id>
+          <pub-id pub-id-type="pmid">29753843</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B32-brainsci-13-00008">
+        <label>32.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Shin</surname><given-names>W.</given-names></name>
+<name><surname>Koenig</surname><given-names>K.A.</given-names></name>
+<name><surname>Lowe</surname><given-names>M.J.</given-names></name>
+</person-group>
+          <article-title>A Comprehensive Investigation of Physiologic Noise Modeling in Resting State FMRI; time Shifted Cardiac Noise in EPI and Its Removal without External Physiologic Signal Measures</article-title>
+          <source>NeuroImage</source>
+          <year>2022</year>
+          <volume>254</volume>
+          <fpage>119136</fpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2022.119136</pub-id>
+          <pub-id pub-id-type="pmid">35346840</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B33-brainsci-13-00008">
+        <label>33.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Cole</surname><given-names>D.</given-names></name>
+<name><surname>Smith</surname><given-names>S.</given-names></name>
+<name><surname>Beckmann</surname><given-names>C.</given-names></name>
+</person-group>
+          <article-title>Advances and Pitfalls in the Analysis and Interpretation of Resting-State FMRI Data</article-title>
+          <source>Front. Syst. Neurosci.</source>
+          <year>2010</year>
+          <volume>4</volume>
+          <fpage>8</fpage>
+          <pub-id pub-id-type="doi">10.3389/fnsys.2010.00008</pub-id>
+          <pub-id pub-id-type="pmid">20407579</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B34-brainsci-13-00008">
+        <label>34.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Bright</surname><given-names>M.G.</given-names></name>
+<name><surname>Tench</surname><given-names>C.R.</given-names></name>
+<name><surname>Murphy</surname><given-names>K.</given-names></name>
+</person-group>
+          <article-title>Potential Pitfalls When Denoising Resting State FMRI Data Using Nuisance Regression</article-title>
+          <source>NeuroImage</source>
+          <year>2017</year>
+          <volume>154</volume>
+          <fpage>159</fpage>
+          <lpage>168</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2016.12.027</pub-id>
+          <pub-id pub-id-type="pmid">28025128</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B35-brainsci-13-00008">
+        <label>35.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+<name><surname>Jarrahi</surname><given-names>B.</given-names></name>
+<name><surname>Mackey</surname><given-names>S.</given-names></name>
+</person-group>
+          <article-title>Measuring the Influence of Physiological Noise Corrections on ICA Derived Intrinsic Connectivity Brain Networks in Rest and Task FMRI</article-title>
+          <source>Proceedings of the 2018 40th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC), IEEE</source>
+          <conf-loc>Honolulu, HI, USA</conf-loc>
+          <conf-date>18–21 July 2018</conf-date>
+          <fpage>1046</fpage>
+          <lpage>1049</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B36-brainsci-13-00008">
+        <label>36.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Jenkinson</surname><given-names>M.</given-names></name>
+<name><surname>Beckmann</surname><given-names>C.F.</given-names></name>
+<name><surname>Behrens</surname><given-names>T.E.J.</given-names></name>
+<name><surname>Woolrich</surname><given-names>M.W.</given-names></name>
+<name><surname>Smith</surname><given-names>S.M.</given-names></name>
+</person-group>
+          <article-title>FSL</article-title>
+          <source>NeuroImage</source>
+          <year>2012</year>
+          <volume>62</volume>
+          <fpage>782</fpage>
+          <lpage>790</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2011.09.015</pub-id>
+          <pub-id pub-id-type="pmid">21979382</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B37-brainsci-13-00008">
+        <label>37.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Kasper</surname><given-names>L.</given-names></name>
+<name><surname>Bollmann</surname><given-names>S.</given-names></name>
+<name><surname>Diaconescu</surname><given-names>A.O.</given-names></name>
+<name><surname>Hutton</surname><given-names>C.</given-names></name>
+<name><surname>Heinzle</surname><given-names>J.</given-names></name>
+<name><surname>Iglesias</surname><given-names>S.</given-names></name>
+<name><surname>Hauser</surname><given-names>T.U.</given-names></name>
+<name><surname>Sebold</surname><given-names>M.</given-names></name>
+<name><surname>Manjaly</surname><given-names>Z.-M.</given-names></name>
+<name><surname>Pruessmann</surname><given-names>K.P.</given-names></name>
+<etal/>
+</person-group>
+          <article-title>The PhysIO Toolbox for Modeling Physiological Noise in FMRI Data</article-title>
+          <source>J. Neurosci. Methods</source>
+          <year>2017</year>
+          <volume>276</volume>
+          <fpage>56</fpage>
+          <lpage>72</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.jneumeth.2016.10.019</pub-id>
+          <pub-id pub-id-type="pmid">27832957</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B38-brainsci-13-00008">
+        <label>38.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Cox</surname><given-names>R.W.</given-names></name>
+</person-group>
+          <article-title>AFNI: Software for Analysis and Visualization of Functional Magnetic Resonance Neuroimages</article-title>
+          <source>Comput. Biomed. Res.</source>
+          <year>1996</year>
+          <volume>29</volume>
+          <fpage>162</fpage>
+          <lpage>173</lpage>
+          <pub-id pub-id-type="doi">10.1006/cbmr.1996.0014</pub-id>
+          <pub-id pub-id-type="pmid">8812068</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B39-brainsci-13-00008">
+        <label>39.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Brooks</surname><given-names>J.C.W.</given-names></name>
+<name><surname>Beckmann</surname><given-names>C.F.</given-names></name>
+<name><surname>Miller</surname><given-names>K.L.</given-names></name>
+<name><surname>Wise</surname><given-names>R.G.</given-names></name>
+<name><surname>Porro</surname><given-names>C.A.</given-names></name>
+<name><surname>Tracey</surname><given-names>I.</given-names></name>
+<name><surname>Jenkinson</surname><given-names>M.</given-names></name>
+</person-group>
+          <article-title>Physiological Noise Modelling for Spinal Functional Magnetic Resonance Imaging Studies</article-title>
+          <source>NeuroImage</source>
+          <year>2008</year>
+          <volume>39</volume>
+          <fpage>680</fpage>
+          <lpage>692</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2007.09.018</pub-id>
+          <pub-id pub-id-type="pmid">17950627</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B40-brainsci-13-00008">
+        <label>40.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Yan</surname><given-names>C.-G.</given-names></name>
+<name><surname>Wang</surname><given-names>X.-D.</given-names></name>
+<name><surname>Zuo</surname><given-names>X.-N.</given-names></name>
+<name><surname>Zang</surname><given-names>Y.-F.</given-names></name>
+</person-group>
+          <article-title>DPABI: Data Processing &amp; Analysis for (Resting-State) Brain Imaging</article-title>
+          <source>Neuroinformatics</source>
+          <year>2016</year>
+          <volume>14</volume>
+          <fpage>339</fpage>
+          <lpage>351</lpage>
+          <pub-id pub-id-type="pmid">27075850</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B41-brainsci-13-00008">
+        <label>41.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Rolls</surname><given-names>E.T.</given-names></name>
+<name><surname>Huang</surname><given-names>C.-C.</given-names></name>
+<name><surname>Lin</surname><given-names>C.-P.</given-names></name>
+<name><surname>Feng</surname><given-names>J.</given-names></name>
+<name><surname>Joliot</surname><given-names>M.</given-names></name>
+</person-group>
+          <article-title>Automated Anatomical Labelling Atlas 3</article-title>
+          <source>NeuroImage</source>
+          <year>2020</year>
+          <volume>206</volume>
+          <fpage>116189</fpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2019.116189</pub-id>
+          <pub-id pub-id-type="pmid">31521825</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B42-brainsci-13-00008">
+        <label>42.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>McGraw</surname><given-names>K.O.</given-names></name>
+<name><surname>Wong</surname><given-names>S.P.</given-names></name>
+</person-group>
+          <article-title>Forming Inferences about Some Intraclass Correlation Coefficients</article-title>
+          <source>Psychol. Methods</source>
+          <year>1996</year>
+          <volume>1</volume>
+          <fpage>30</fpage>
+          <lpage>46</lpage>
+          <pub-id pub-id-type="doi">10.1037/1082-989X.1.1.30</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B43-brainsci-13-00008">
+        <label>43.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Liljequist</surname><given-names>D.</given-names></name>
+<name><surname>Elfving</surname><given-names>B.</given-names></name>
+<name><surname>Roaldsen</surname><given-names>K.S.</given-names></name>
+</person-group>
+          <article-title>Intraclass Correlation—A Discussion and Demonstration of Basic Features</article-title>
+          <source>PLoS ONE</source>
+          <year>2019</year>
+          <volume>14</volume>
+          <elocation-id>e0219854</elocation-id>
+          <pub-id pub-id-type="doi">10.1371/journal.pone.0219854</pub-id>
+          <pub-id pub-id-type="pmid">31329615</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B44-brainsci-13-00008">
+        <label>44.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Birn</surname><given-names>R.M.</given-names></name>
+</person-group>
+          <article-title>The Role of Physiological Noise in Resting-State Functional Connectivity</article-title>
+          <source>NeuroImage</source>
+          <year>2012</year>
+          <volume>62</volume>
+          <fpage>864</fpage>
+          <lpage>870</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2012.01.016</pub-id>
+          <pub-id pub-id-type="pmid">22245341</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B45-brainsci-13-00008">
+        <label>45.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+<name><surname>Cauzzo</surname><given-names>S.</given-names></name>
+<name><surname>Callara</surname><given-names>A.L.</given-names></name>
+<name><surname>Sole Morelli</surname><given-names>M.</given-names></name>
+<name><surname>Hartwig</surname><given-names>V.</given-names></name>
+<name><surname>Montanaro</surname><given-names>D.</given-names></name>
+<name><surname>Passino</surname><given-names>C.</given-names></name>
+<name><surname>Emdin</surname><given-names>M.</given-names></name>
+<name><surname>Giannoni</surname><given-names>A.</given-names></name>
+<name><surname>Vanello</surname><given-names>N.</given-names></name>
+</person-group>
+          <article-title>On the Use of Linear-Modelling-Based Algorithms for Physiological Noise Correction in FMRI Studies of the Central Breathing Control</article-title>
+          <source>Proceedings of the 2019 41st Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC), IEEE</source>
+          <conf-loc>Berlin, Germany</conf-loc>
+          <conf-date>23–27 July 2019</conf-date>
+          <fpage>808</fpage>
+          <lpage>811</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B46-brainsci-13-00008">
+        <label>46.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Cao</surname><given-names>A.A.</given-names></name>
+<name><surname>Noll</surname><given-names>D.C.</given-names></name>
+</person-group>
+          <article-title>A Retrospective Physiological Noise Correction Method for Oscillating Steady-State Imaging</article-title>
+          <source>Magn. Reson. Med.</source>
+          <year>2021</year>
+          <volume>85</volume>
+          <fpage>936</fpage>
+          <lpage>944</lpage>
+          <pub-id pub-id-type="doi">10.1002/mrm.28414</pub-id>
+          <pub-id pub-id-type="pmid">32851661</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B47-brainsci-13-00008">
+        <label>47.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Glover</surname><given-names>G.H.</given-names></name>
+<name><surname>Li</surname><given-names>T.Q.</given-names></name>
+<name><surname>Ress</surname><given-names>D.</given-names></name>
+</person-group>
+          <article-title>Image-Based Method for Retrospective Correction of Physiological Motion Effects in FMRI: RETROICOR</article-title>
+          <source>Magn. Reson. Med.</source>
+          <year>2000</year>
+          <volume>44</volume>
+          <fpage>162</fpage>
+          <lpage>167</lpage>
+          <pub-id pub-id-type="doi">10.1002/1522-2594(200007)44:1&lt;162::AID-MRM23&gt;3.0.CO;2-E</pub-id>
+          <pub-id pub-id-type="pmid">10893535</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B48-brainsci-13-00008">
+        <label>48.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Marchitelli</surname><given-names>R.</given-names></name>
+<name><surname>Minati</surname><given-names>L.</given-names></name>
+<name><surname>Marizzoni</surname><given-names>M.</given-names></name>
+<name><surname>Bosch</surname><given-names>B.</given-names></name>
+<name><surname>Bartrés-Faz</surname><given-names>D.</given-names></name>
+<name><surname>Müller</surname><given-names>B.W.</given-names></name>
+<name><surname>Wiltfang</surname><given-names>J.</given-names></name>
+<name><surname>Fiedler</surname><given-names>U.</given-names></name>
+<name><surname>Roccatagliata</surname><given-names>L.</given-names></name>
+<name><surname>Picco</surname><given-names>A.</given-names></name>
+<etal/>
+</person-group>
+          <article-title>Test-Retest Reliability of the Default Mode Network in a Multi-Centric FMRI Study of Healthy Elderly: Effects of Data-Driven Physiological Noise Correction Techniques</article-title>
+          <source>Hum. Brain Mapp.</source>
+          <year>2016</year>
+          <volume>37</volume>
+          <fpage>2114</fpage>
+          <lpage>2132</lpage>
+          <pub-id pub-id-type="doi">10.1002/hbm.23157</pub-id>
+          <pub-id pub-id-type="pmid">26990928</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B49-brainsci-13-00008">
+        <label>49.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Krishnamurthy</surname><given-names>V.</given-names></name>
+<name><surname>Krishnamurthy</surname><given-names>L.C.</given-names></name>
+<name><surname>Schwam</surname><given-names>D.M.</given-names></name>
+<name><surname>Ealey</surname><given-names>A.</given-names></name>
+<name><surname>Shin</surname><given-names>J.</given-names></name>
+<name><surname>Greenberg</surname><given-names>D.</given-names></name>
+<name><surname>Morris</surname><given-names>R.D.</given-names></name>
+</person-group>
+          <article-title>Retrospective Correction of Physiological Noise: Impact on Sensitivity, Specificity, and Reproducibility of Resting-State Functional Connectivity in a Reading Network Model</article-title>
+          <source>Brain Connect.</source>
+          <year>2018</year>
+          <volume>8</volume>
+          <fpage>94</fpage>
+          <lpage>105</lpage>
+          <pub-id pub-id-type="doi">10.1089/brain.2017.0513</pub-id>
+          <pub-id pub-id-type="pmid">29226700</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B50-brainsci-13-00008">
+        <label>50.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Van der Zwaag</surname><given-names>W.</given-names></name>
+<name><surname>Jorge</surname><given-names>J.</given-names></name>
+<name><surname>Butticaz</surname><given-names>D.</given-names></name>
+<name><surname>Gruetter</surname><given-names>R.</given-names></name>
+</person-group>
+          <article-title>Physiological Noise in Human Cerebellar FMRI</article-title>
+          <source>Magn. Reson. Mater. Phys. Biol. Med.</source>
+          <year>2015</year>
+          <volume>28</volume>
+          <fpage>485</fpage>
+          <lpage>492</lpage>
+          <pub-id pub-id-type="doi">10.1007/s10334-015-0483-6</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B51-brainsci-13-00008">
+        <label>51.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Golestani</surname><given-names>A.M.</given-names></name>
+<name><surname>Kwinta</surname><given-names>J.B.</given-names></name>
+<name><surname>Khatamian</surname><given-names>Y.B.</given-names></name>
+<name><surname>Chen</surname><given-names>J.J.</given-names></name>
+</person-group>
+          <article-title>The Effect of Low-Frequency Physiological Correction on the Reproducibility and Specificity of Resting-State FMRI Metrics: Functional Connectivity, ALFF, and ReHo</article-title>
+          <source>Front. Neurosci.</source>
+          <year>2017</year>
+          <volume>11</volume>
+          <fpage>546</fpage>
+          <pub-id pub-id-type="doi">10.3389/fnins.2017.00546</pub-id>
+          <pub-id pub-id-type="pmid">29051724</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B52-brainsci-13-00008">
+        <label>52.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Brooks</surname><given-names>J.C.W.</given-names></name>
+<name><surname>Faull</surname><given-names>O.K.</given-names></name>
+<name><surname>Pattinson</surname><given-names>K.T.S.</given-names></name>
+<name><surname>Jenkinson</surname><given-names>M.</given-names></name>
+</person-group>
+          <article-title>Physiological Noise in Brainstem FMRI</article-title>
+          <source>Front. Hum. Neurosci.</source>
+          <year>2013</year>
+          <volume>7</volume>
+          <fpage>623</fpage>
+          <pub-id pub-id-type="doi">10.3389/fnhum.2013.00623</pub-id>
+          <pub-id pub-id-type="pmid">24109446</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B53-brainsci-13-00008">
+        <label>53.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Yoshikawa</surname><given-names>A.</given-names></name>
+<name><surname>Masaoka</surname><given-names>Y.</given-names></name>
+<name><surname>Yoshida</surname><given-names>M.</given-names></name>
+<name><surname>Koiwa</surname><given-names>N.</given-names></name>
+<name><surname>Honma</surname><given-names>M.</given-names></name>
+<name><surname>Watanabe</surname><given-names>K.</given-names></name>
+<name><surname>Kubota</surname><given-names>S.</given-names></name>
+<name><surname>Natsuko</surname><given-names>I.</given-names></name>
+<name><surname>Ida</surname><given-names>M.</given-names></name>
+<name><surname>Izumizaki</surname><given-names>M.</given-names></name>
+</person-group>
+          <article-title>Heart Rate and Respiration Affect the Functional Connectivity of Default Mode Network in Resting-State Functional Magnetic Resonance Imaging</article-title>
+          <source>Front. Neurosci.</source>
+          <year>2020</year>
+          <volume>14</volume>
+          <fpage>631</fpage>
+          <pub-id pub-id-type="doi">10.3389/fnins.2020.00631</pub-id>
+          <pub-id pub-id-type="pmid">32694974</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B54-brainsci-13-00008">
+        <label>54.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Kamba</surname><given-names>M.</given-names></name>
+<name><surname>Sung</surname><given-names>Y.-W.</given-names></name>
+<name><surname>Ogawa</surname><given-names>S.</given-names></name>
+</person-group>
+          <article-title>A Dynamic System Model-Based Technique for Functional MRI Data Analysis</article-title>
+          <source>NeuroImage</source>
+          <year>2004</year>
+          <volume>22</volume>
+          <fpage>179</fpage>
+          <lpage>187</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2003.12.037</pub-id>
+          <pub-id pub-id-type="pmid">15110008</pub-id>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+  <floats-group>
+    <fig position="float" id="brainsci-13-00008-f001">
+      <label>Figure 1</label>
+      <caption>
+        <p>Maps of ICC values at representative ROIs based on AAL3, before and after the correction. (<bold>a</bold>) Functional connectivity (FC), (<bold>b</bold>) fractional amplitude of low-frequency fluctuation (fALFF), (<bold>c</bold>) regional homogeneity (ReHo), (<bold>d</bold>) voxel-mirrored homotopic connectivity (VMHC), and (<bold>e</bold>) degree centrality (DC).</p>
+      </caption>
+      <graphic xlink:href="brainsci-13-00008-g001" position="float"/>
+    </fig>
+    <fig position="float" id="brainsci-13-00008-f002">
+      <label>Figure 2</label>
+      <caption>
+        <p>Plot of ICC values at all ROIs, corrected and uncorrected, through physiological noise removal. (<bold>a</bold>) Functional connectivity (FC), (<bold>b</bold>) fractional amplitude of low-frequency fluctuation (fALFF), (<bold>c</bold>) regional homogeneity (ReHo), (<bold>d</bold>) voxel-mirrored homotopic connectivity (VMHC), and (<bold>e</bold>) degree centrality (DC).</p>
+      </caption>
+      <graphic xlink:href="brainsci-13-00008-g002" position="float"/>
+    </fig>
+    <fig position="float" id="brainsci-13-00008-f003">
+      <label>Figure 3</label>
+      <caption>
+        <p>Ratio of ROIs with increased ICC values and with decreased values after the correction.</p>
+      </caption>
+      <graphic xlink:href="brainsci-13-00008-g003" position="float"/>
+    </fig>
+    <fig position="float" id="brainsci-13-00008-f004">
+      <label>Figure 4</label>
+      <caption>
+        <p>Comparison of mean ICC values over all ROIs, before and after correction, for functional connectivity (FC), fractional amplitude of low-frequency fluctuation (fALFF), regional homogeneity (ReHo), voxel-mirrored homotopic connectivity (VMHC), and degree centrality (DC). ** <italic toggle="yes">p</italic> &lt; 0.01, *** <italic toggle="yes">p</italic> &lt; 0.001 (paired <italic toggle="yes">t</italic>-test).</p>
+      </caption>
+      <graphic xlink:href="brainsci-13-00008-g004" position="float"/>
+    </fig>
+    <table-wrap position="float" id="brainsci-13-00008-t001">
+      <object-id pub-id-type="pii">brainsci-13-00008-t001_Table 1</object-id>
+      <label>Table 1</label>
+      <caption>
+        <p>ROIs of increased and decreased ICCs for each metric when the difference value between before and after the correction was &gt;0.1.</p>
+      </caption>
+      <table frame="hsides" rules="groups">
+        <thead>
+          <tr>
+            <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">Measure</th>
+            <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">Effect</th>
+            <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">AAL3 Brain Region</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="26" align="center" valign="middle" style="border-bottom:solid thin" colspan="1">FC</td>
+            <td rowspan="19" align="center" valign="middle" style="border-bottom:solid thin" colspan="1">Increased</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">Precentral_R</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">Frontal_Inf_Oper_R</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">Occipital_Inf_R</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">Postcentral_R</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">Parietal_Sup_L</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">Parietal_Sup_R</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">Caudate_L</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">Caudate_R</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">Putamen_L</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">Putamen_R</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">Pallidum_L</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">Temporal_Sup_L</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">Temporal_Sup_R</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">Thal_AV_L</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">Thal_AV_R</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">Thal_LP_R</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">Thal_VPL_L</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">Thal_PuL_R</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">SN_pr_L</td>
+          </tr>
+          <tr>
+            <td rowspan="7" align="center" valign="middle" style="border-bottom:solid thin" colspan="1">Decreased</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">Parietal_Inf_R</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">Cerebellum_3_R</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">Cerebellum_7b_R</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">Red_N_L</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">Red_N_R</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">LC_L</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Raphe_D</td>
+          </tr>
+        </tbody>
+      </table>
+    </table-wrap>
+  </floats-group>
+</article>

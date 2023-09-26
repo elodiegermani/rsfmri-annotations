@@ -1,0 +1,9 @@
+1 Predict zi=Φ(mi)
+"2 Set the sign of zi so that the correlation across observations with yi is positive, i.e. if corr(z,y)<0; then zi=zi×−1"
+3 Set z=zscore(z)
+"4 Fit a path analysis model to obtain α0, β0, α, β, γ using the outcome yi, mediator zi and exposure variable xi."
+5 Create ei=yi−α−xiθ
+6 Create hi=δ+xiγ
+7 Create di=(βei+hi)(β2+1)
+8 Update Φ using di as the outcome and mi as the predictor.
+9 Repeat Steps 1 to 8

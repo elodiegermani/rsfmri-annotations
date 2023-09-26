@@ -1,0 +1,2035 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.3" xml:lang="en" article-type="research-article">
+  <?properties open_access?>
+  <processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats">
+    <restricted-by>pmc</restricted-by>
+  </processing-meta>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">Diagnostics (Basel)</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Diagnostics (Basel)</journal-id>
+      <journal-id journal-id-type="publisher-id">diagnostics</journal-id>
+      <journal-title-group>
+        <journal-title>Diagnostics</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">2075-4418</issn>
+      <publisher>
+        <publisher-name>MDPI</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">36140663</article-id>
+      <article-id pub-id-type="pmc">9497797</article-id>
+      <article-id pub-id-type="doi">10.3390/diagnostics12092263</article-id>
+      <article-id pub-id-type="publisher-id">diagnostics-12-02263</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Dynamic Brain Connectivity in Resting-State FMRI Using Spectral ICA and Graph Approach: Application to Healthy Controls and Multiple Sclerosis</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Riazi</surname>
+            <given-names>Amir Hosein</given-names>
+          </name>
+          <xref rid="af1-diagnostics-12-02263" ref-type="aff">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <contrib-id contrib-id-type="orcid" authenticated="true">https://orcid.org/0000-0002-0551-3636</contrib-id>
+          <name>
+            <surname>Rabbani</surname>
+            <given-names>Hossein</given-names>
+          </name>
+          <xref rid="af1-diagnostics-12-02263" ref-type="aff">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Kafieh</surname>
+            <given-names>Rahele</given-names>
+          </name>
+          <xref rid="af1-diagnostics-12-02263" ref-type="aff">1</xref>
+          <xref rid="af2-diagnostics-12-02263" ref-type="aff">2</xref>
+          <xref rid="c1-diagnostics-12-02263" ref-type="corresp">*</xref>
+        </contrib>
+      </contrib-group>
+      <contrib-group>
+        <contrib contrib-type="editor">
+          <name>
+            <surname>Kurkin</surname>
+            <given-names>Semen A.</given-names>
+          </name>
+          <role>Academic Editor</role>
+        </contrib>
+      </contrib-group>
+      <aff id="af1-diagnostics-12-02263"><label>1</label>Medical Image and Signal Processing Research Center, School of Advanced Technologies in Medicine, Isfahan University of Medical Sciences, Isfahan 8174673461, Iran</aff>
+      <aff id="af2-diagnostics-12-02263"><label>2</label>Department of Engineering, Durham University, South Road, Durham DH1 3LE, UK</aff>
+      <author-notes>
+        <corresp id="c1-diagnostics-12-02263"><label>*</label>Correspondence: <email>raheleh.kafieh@durham.ac.uk</email></corresp>
+      </author-notes>
+      <pub-date pub-type="epub">
+        <day>19</day>
+        <month>9</month>
+        <year>2022</year>
+      </pub-date>
+      <pub-date pub-type="collection">
+        <month>9</month>
+        <year>2022</year>
+      </pub-date>
+      <volume>12</volume>
+      <issue>9</issue>
+      <elocation-id>2263</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>17</day>
+          <month>6</month>
+          <year>2022</year>
+        </date>
+        <date date-type="accepted">
+          <day>10</day>
+          <month>9</month>
+          <year>2022</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>© 2022 by the authors.</copyright-statement>
+        <copyright-year>2022</copyright-year>
+        <license>
+          <ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref>
+          <license-p>Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license (<ext-link ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</ext-link>).</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>Multiple sclerosis (MS) is a neuroinflammatory disease that involves structural and functional damage to the brain. It changes the functional connectivity of the brain between and within networks. Resting-state functional magnetic resonance imaging (fMRI) enables us to measure functional correlation and independence between different brain regions. In recent years, statistical methods, including independent component analysis (ICA) and graph-based analysis, have been widely used in fMRI studies. Furthermore, topological properties of the brain have been appeared as significant features of neuroscience studies. Most studies are focused on graph analysis and ICA methods, rather than considering spectral approaches. Here, we developed a new framework to measure brain connectivity (in static and dynamic formats) and incorporate it to study fMRI data from MS patients and healthy controls (HCs). For this purpose, a spectral ICA method is proposed to extract the nodes of the brain graph. Spectral ICA extracts more reliable components and decreases the processing time in calculation of the static brain connectivity. Compared to Infomax ICA, dynamic range and low-frequency to high-frequency power ratio (fALFF) show better results using the proposed ICA. It is also helpful in selection of the states for dynamic connectivity. Furthermore, the dynamic connectivity-based extracted components from spectral ICA are estimated using a mutual information method and based on correlation of sliding time-windowed on selected IC time courses. First-level and second-level connectivity states are calculated using correlations of connectivity strength between graph nodes (spectral ICA components). Finally, static and dynamic connectivity are analyzed based on correlation nodes percolated by an anatomical automatic labeling (AAL) atlas. Despite static and dynamic connectivity results of AAL correlations not showing any significant changes between MS and HC, our results based on spectral ICA in static and dynamic connectivity showed significantly decreased connectivity in MS patients in the anterior cingulate cortex, whereas it was significantly weaker in the core but stronger at the periphery of the posterior cingulate cortex.</p>
+      </abstract>
+      <kwd-group>
+        <kwd>functional MRI</kwd>
+        <kwd>brain connectivity</kwd>
+        <kwd>multiple sclerosis</kwd>
+        <kwd>ICA</kwd>
+      </kwd-group>
+      <funding-group>
+        <award-group>
+          <funding-source>Vice Chancellery for Research and Technology, Isfahan University of Medical Sciences</funding-source>
+          <award-id>397566</award-id>
+        </award-group>
+        <funding-statement>This work was supported in part by the Vice Chancellery for Research and Technology, Isfahan University of Medical Sciences, under grant 397566.</funding-statement>
+      </funding-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec sec-type="intro" id="sec1-diagnostics-12-02263">
+      <title>1. Introduction</title>
+      <p>Multiple sclerosis (MS) is a central nervous system (CNS) disease that is characterized by multiple lesions occurring mostly in the white matter. As a result, structural and functional connectivity between various areas of the CNS is changed. Functional magnetic resonance imaging (fMRI) in resting state and tasks shows large functional changes in MS patients. The study of resting-state functional connectivity in MS is primarily aimed at understanding changes in the innate functional map of the brain and their role in disease progression and clinical disorders. Resting-state fMRI can be used to recognize distinct regions of the brain that configure specific resting-state networks [<xref rid="B1-diagnostics-12-02263" ref-type="bibr">1</xref>]. Unlike task fMRI, resting-state fMRI is not affected by designed task performance, which may differ from healthy individuals, especially in patients with clinical disabilities.</p>
+      <p>Axonal injury is a dangerous and critical process in many brain diseases. Understanding the processes associated with such injury is critical for resolving the causes of brain disorders. <xref rid="diagnostics-12-02263-t001" ref-type="table">Table 1</xref> summarizes studies on MS using resting-state functional MRI (rs-fMRI), task-based fMRI, and other MRI modalities. The main disadvantages of the methods listed in <xref rid="diagnostics-12-02263-t001" ref-type="table">Table 1</xref> are unidentified stage of the disease, unclassified background of MS studies, unmatched age and sex between patients and healthy controls (HCs), and dissimilar tasks among different methods, which make comparisons impossible.</p>
+      <p>Today, hidden information in structural and functional connections between different regions of the brain is reported to be important for diagnosis of mental illnesses at different stages of the disease. In this regard, MRI modalities, such as diffusion tensor imaging (DTI) and fMRI, were introduced to derive structural and functional connections. fMRI measures the response of the hemodynamic system (blood-flow change) associated with neural activity in the human brain or spinal cord. Since the magnetic resonance signal is contrasted with the blood oxygen level, the term “blood oxygenation level-dependent” (BOLD) is known in the fMRI community. Available methods for analyzing functional relationships through fMRI are generally divided into two groups: model-based and data-based. Model-based approaches, e.g., cross-correlation analysis (CCA), need prior knowledge and are easy to implement and widely used. Data-driven methods (either based on clustering or data analysis) require no prior knowledge and are thus quite useful for rs-fMRI studies.</p>
+      <p>Independent vector analysis (IVA) [<xref rid="B19-diagnostics-12-02263" ref-type="bibr">19</xref>,<xref rid="B20-diagnostics-12-02263" ref-type="bibr">20</xref>] is an approach that keeps variability with extending ICA to multiple datasets. IVA-GL algorithm [<xref rid="B21-diagnostics-12-02263" ref-type="bibr">21</xref>] is a combination of IVA using the Laplace density model (IVA-L) with IVA using the Gaussian density model (IVA-G). IVA-GL assumes super-Gaussian distribution for the sources and uses second-order and higher-order statistical dependence among multiple subjects.</p>
+      <p>In this study, rs-fMRI is used for HCs and MS with similar stage of disease. Furthermore, a multistage, data-driven method is developed to calculate more accurate functional connectivity. A modified independent component analysis (ICA) method is proposed to overcome speed concerns and local minima problems in time-series analysis. Dynamic connectivity is then extracted with the IVA-GL algorithm and more realistic independent components are selected using clustering and filtering methods.</p>
+      <p>The rest of the paper is organized as follows. In <xref rid="sec2-diagnostics-12-02263" ref-type="sec">Section 2</xref>, our methods, including the proposed ICA method and brain connectivity using graphs, are described. In <xref rid="sec3-diagnostics-12-02263" ref-type="sec">Section 3</xref>, the results are presented, showing the improvements achieved by the proposed method. Finally, in <xref rid="sec4-diagnostics-12-02263" ref-type="sec">Section 4</xref>, the conclusions are presented.</p>
+    </sec>
+    <sec id="sec2-diagnostics-12-02263">
+      <title>2. Material and Methods</title>
+      <sec id="sec2dot1-diagnostics-12-02263">
+        <title>2.1. Data Acquisition</title>
+        <p>Overall, 12 RRMS patients (7 female and 5 male) and 12 HCs (4 female and 8 male) were included in this analysis. The MRI scans were performed with a 3 T MRI scanner (Magnetom Tim Trio, Siemens Healthcare, Erlangen, Germany) with a 32-channel receive-only head coil. MRI used a gradient echo (GE)–EPI sequence with the following settings: TR = 3000 ms, TE = 30 ms, flip angle = 90°, field of view (FOV) = 192 × 192 mm<sup>²</sup>, matrix size = 64 × 64, spatial in-plane resolution 3 mm, 49 slices with a slice thickness of 2 mm and an interslice gap of 1 mm, readout bandwidth (BW) = 2232 Hz/pixel. A time series with 200 time points was acquired.</p>
+        <p>All subjects were from the Department of Neurology, University Medical Center of the Johannes Gutenberg University Mainz and the Department of Neurology, Goethe-University Frankfurt, and underwent a standardized MRI protocol in Mainz [<xref rid="B22-diagnostics-12-02263" ref-type="bibr">22</xref>]. Prior to participating in this study, informed written consent was collected from all individuals, which was approved by the Ethics Committee of the Rhineland-Palatinate State Medical Association. This study was based on the principles set out in the Helsinki Declaration. Human ethics documents were used before any data collection. Overall, 24 documents were approved by the ethics committee. Each patient with MS was evaluated by an experienced neurologist and an Expanded Disability Status Scale (EDSS) score was determined at study entry after one year. Fatigue was classified according to the Fatigue Scale for Motor and Cognitive Functions (FSMC) [<xref rid="B23-diagnostics-12-02263" ref-type="bibr">23</xref>] and was also assessed at study input after one year. All patients had recurrence at least 60 days before enrollment. To ensure a homogeneous clinical set of patients, patients with clinical recurrence during the study period were excluded [<xref rid="B22-diagnostics-12-02263" ref-type="bibr">22</xref>].</p>
+      </sec>
+      <sec id="sec2dot2-diagnostics-12-02263">
+        <title>2.2. Preprocessing</title>
+        <p>Parallel auto-preprocessing was used to realign the images. The data were then spatially normalized to the Montreal Institute of Neurological Institute (MNI) standard atlas, 3 mm × 3 mm × 3 mm voxels using nonlinear registration (affine + low-frequency direct cosine transform functions) in SPM8 toolbox (<uri xlink:href="http://www.fil.ion.ucl.ac.uk/spm">http://www.fil.ion.ucl.ac.uk/spm</uri>, accessed on 1 March 2021). A full-width Gaussian kernel at half-maximum 5 mm was used to reduce some false-positive correlations in further analysis.</p>
+      </sec>
+      <sec id="sec2dot3-diagnostics-12-02263">
+        <title>2.3. Methods</title>
+        <p>We used modified spectral ICA for calculating static and dynamic connectivity and better discrimination of MS and HC. The method block diagram is shown in <xref rid="diagnostics-12-02263-f001" ref-type="fig">Figure 1</xref> and listed below.
+<list list-type="bullet"><list-item><p>Extraction of ICs (nodes) using proposed ICA method</p></list-item><list-item><p>Calculation of connectivity map for all datasets and all ICs, as well as extracting connectivity maps for MS and HC.</p></list-item><list-item><p>Calculation of static and dynamic connectivity</p></list-item><list-item><p>Calculation of standard deviation between windows for MS and HC</p></list-item><list-item><p>Calculation of different connections between the graph nodes. Most discriminative nodes are temporal gyrus and frontal gyrus. All main nodes listed in <xref rid="diagnostics-12-02263-t002" ref-type="table">Table 2</xref>.</p></list-item></list></p>
+        <p>To prove better discrimination of the proposed ICA between MS and HC, we used dynamic range and fAlff of extracted ICs, listed in <xref rid="diagnostics-12-02263-t003" ref-type="table">Table 3</xref>. For this purpose, statistical measurements were computed for each standard deviation of functional connectivity between the groups.</p>
+        <sec id="sec2dot3dot1-diagnostics-12-02263">
+          <title>2.3.1. Conventional Independent Component Analysis (ICA)</title>
+          <p>ICA is a statistical method to decompose a set of information (observed data) such that the decomposed sources will be maximally independent. ICA is one of the famous fMRI models used to extract spatial or temporal sources of observed data (mostly the spatial components are extracted). In spatial ICA analysis, X is an observation data matrix with size of N × M, where N is the number of time points and M is the number of voxels. As such, M-dimensional random vector denoted by <inline-formula><mml:math id="mm1" overflow="scroll"><mml:mrow><mml:mrow><mml:mi>X</mml:mi><mml:mo>=</mml:mo><mml:msup><mml:mrow><mml:mfenced close="]" open="["><mml:mrow><mml:msub><mml:mi>x</mml:mi><mml:mn>1</mml:mn></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mi>x</mml:mi><mml:mn>2</mml:mn></mml:msub><mml:mo>,</mml:mo><mml:mo>…</mml:mo><mml:mo>,</mml:mo><mml:msub><mml:mi>x</mml:mi><mml:mi>M</mml:mi></mml:msub></mml:mrow></mml:mfenced></mml:mrow><mml:mi>T</mml:mi></mml:msup></mml:mrow></mml:mrow></mml:math></inline-formula> (observation matrix) should be solved by ICA matrix [<xref rid="B24-diagnostics-12-02263" ref-type="bibr">24</xref>]:<disp-formula id="FD1-diagnostics-12-02263"><label>(1)</label><mml:math id="mm2" display="block" overflow="scroll"><mml:mrow><mml:mrow><mml:mi>X</mml:mi><mml:mo>=</mml:mo><mml:mi>A</mml:mi><mml:mi>S</mml:mi></mml:mrow></mml:mrow></mml:math></disp-formula></p>
+          <p>To acquire N-dimensional source matrix <inline-formula><mml:math id="mm3" overflow="scroll"><mml:mrow><mml:mrow><mml:mi>S</mml:mi><mml:mo>=</mml:mo><mml:msup><mml:mrow><mml:mfenced close="]" open="["><mml:mrow><mml:msub><mml:mi>s</mml:mi><mml:mn>1</mml:mn></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mi>s</mml:mi><mml:mn>2</mml:mn></mml:msub><mml:mo>,</mml:mo><mml:mo>…</mml:mo><mml:mo>,</mml:mo><mml:msub><mml:mi>s</mml:mi><mml:mi>N</mml:mi></mml:msub></mml:mrow></mml:mfenced></mml:mrow><mml:mi>T</mml:mi></mml:msup></mml:mrow></mml:mrow></mml:math></inline-formula>, whose elements refer to independent sources and A as an unknown mixing matrix. Usually, the number of voxels (M) is greater than the number of time points and “A” is usually a full rank matrix. Good approximation of sources is determined using higher than second-order statistics. Most popular ICA algorithms use nonlinear methods to generate higher-order statistics based on maximum-likelihood estimation, maximization of information transfer, mutual information minimization, and maximization of non-Gaussianity.</p>
+          <p>One of the main concerns in maximization methods is the selection of a proper starting point to solve the problem of local maxima. For instance, Infomax, one of the most popular algorithms, finds the unknown mixing matrix (<italic toggle="yes">A</italic>) by maximizing the sum of the marginal entropies. Considering the orthogonality rules, joint entropy function is invariant to orthogonal transformation (<italic toggle="yes">H</italic>(<italic toggle="yes">AX</italic>) = <italic toggle="yes">H</italic>(<italic toggle="yes">X</italic>)), where entropy of sources <inline-formula><mml:math id="mm4" overflow="scroll"><mml:mrow><mml:mrow><mml:mi>H</mml:mi><mml:mfenced><mml:mi>S</mml:mi></mml:mfenced><mml:mo>=</mml:mo><mml:mo>∑</mml:mo><mml:mi>H</mml:mi><mml:mfenced><mml:mrow><mml:msub><mml:mi>s</mml:mi><mml:mi>i</mml:mi></mml:msub></mml:mrow></mml:mfenced></mml:mrow></mml:mrow></mml:math></inline-formula> is equal to sum of marginal entropies. Accordingly, Infomax finds A by maximizing <inline-formula><mml:math id="mm5" overflow="scroll"><mml:mrow><mml:mrow><mml:mi>H</mml:mi><mml:mfenced><mml:mi>S</mml:mi></mml:mfenced></mml:mrow></mml:mrow></mml:math></inline-formula>:<disp-formula id="FD2-diagnostics-12-02263"><label>(2)</label><mml:math id="mm6" display="block" overflow="scroll"><mml:mrow><mml:mrow><mml:munder><mml:mrow><mml:mi>m</mml:mi><mml:mi>a</mml:mi><mml:mi>x</mml:mi></mml:mrow><mml:mi>A</mml:mi></mml:munder><mml:mstyle mathsize="140%" displaystyle="true"><mml:munderover><mml:mo>∑</mml:mo><mml:mrow><mml:mi>i</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mi>N</mml:mi></mml:munderover></mml:mstyle><mml:mi>H</mml:mi><mml:mfenced close="]" open="["><mml:mrow><mml:msub><mml:mrow><mml:mfenced><mml:mrow><mml:msup><mml:mi>A</mml:mi><mml:mrow><mml:mo>−</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:msup><mml:mi>X</mml:mi></mml:mrow></mml:mfenced></mml:mrow><mml:mi>j</mml:mi></mml:msub></mml:mrow></mml:mfenced></mml:mrow></mml:mrow></mml:math></disp-formula></p>
+          <p>Infomax uses gradient methods for global search and optimization steps. However, Infomax (like other optimization algorithms) encounters two disadvantages: first, complicated nonlinear function in marginal entropy function; second, problem of finding local maximum (which is more prone to error in higher dimension) and cannot be solved by repetition.</p>
+        </sec>
+        <sec id="sec2dot3dot2-diagnostics-12-02263">
+          <title>2.3.2. Spectral ICA</title>
+          <p>Graph Laplacian is a known method in clustering approaches, dimension reduction, and classification. In the ICA algorithm, elements of a weighted matrix are calculated using observation matrix (<inline-formula><mml:math id="mm7" overflow="scroll"><mml:mrow><mml:mrow><mml:mi>X</mml:mi></mml:mrow></mml:mrow></mml:math></inline-formula>):<disp-formula id="FD3-diagnostics-12-02263"><label>(3)</label><mml:math id="mm8" display="block" overflow="scroll"><mml:mrow><mml:mrow><mml:msub><mml:mi>W</mml:mi><mml:mrow><mml:mi>i</mml:mi><mml:mi>j</mml:mi></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:mi>k</mml:mi><mml:mfenced><mml:mrow><mml:mo>∥</mml:mo><mml:msup><mml:mi>X</mml:mi><mml:mi>i</mml:mi></mml:msup><mml:mo>−</mml:mo><mml:msup><mml:mi>X</mml:mi><mml:mi>j</mml:mi></mml:msup><mml:mo>∥</mml:mo><mml:msup><mml:mrow/><mml:mn>2</mml:mn></mml:msup><mml:mo>/</mml:mo><mml:mn>2</mml:mn><mml:mi>ε</mml:mi></mml:mrow></mml:mfenced></mml:mrow></mml:mrow></mml:math></disp-formula>
+where ‖.‖ is the Euclidean distance, <inline-formula><mml:math id="mm9" overflow="scroll"><mml:mrow><mml:mi>k</mml:mi></mml:mrow></mml:math></inline-formula> is an exponential kernel and ε is bandwidth of the kernel (<inline-formula><mml:math id="mm10" overflow="scroll"><mml:mrow><mml:mrow><mml:mi>k</mml:mi><mml:mfenced><mml:mi>x</mml:mi></mml:mfenced><mml:mo>=</mml:mo><mml:msup><mml:mi>e</mml:mi><mml:mrow><mml:mo>−</mml:mo><mml:mi>x</mml:mi></mml:mrow></mml:msup></mml:mrow></mml:mrow></mml:math></inline-formula>). The normalization matrix (<italic toggle="yes">D</italic>) is then calculated as sum of the weighted matrix elements:<disp-formula id="FD4-diagnostics-12-02263"><label>(4)</label><mml:math id="mm11" display="block" overflow="scroll"><mml:mrow><mml:mrow><mml:msub><mml:mi>D</mml:mi><mml:mrow><mml:mi>i</mml:mi><mml:mi>i</mml:mi></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:mstyle mathsize="140%" displaystyle="true"><mml:munderover><mml:mo>∑</mml:mo><mml:mrow><mml:mi>j</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mi>N</mml:mi></mml:munderover></mml:mstyle><mml:msub><mml:mi>W</mml:mi><mml:mrow><mml:mi>i</mml:mi><mml:mi>j</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:mrow></mml:math></disp-formula></p>
+          <p>The weighted matrix is then normalized with matrix <italic toggle="yes">D</italic> and the negative definite graph Laplacian matrix (<italic toggle="yes">L</italic>) is defined by:<disp-formula id="FD5-diagnostics-12-02263"><label>(5)</label><mml:math id="mm12" display="block" overflow="scroll"><mml:mrow><mml:mrow><mml:mi>L</mml:mi><mml:mo>=</mml:mo><mml:msup><mml:mi>D</mml:mi><mml:mrow><mml:mo>−</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:msup><mml:mi>W</mml:mi><mml:mo>−</mml:mo><mml:mi>I</mml:mi></mml:mrow></mml:mrow></mml:math></disp-formula>
+where <inline-formula><mml:math id="mm13" overflow="scroll"><mml:mrow><mml:mi>I</mml:mi></mml:mrow></mml:math></inline-formula> is an N × N identity matrix. In spectral ICA, it is proven that the top few eigenvectors belonging to nondegenerative eigenvalues of L are tightly correlated with independent component of the observation matrix [<xref rid="B25-diagnostics-12-02263" ref-type="bibr">25</xref>]. It has also been shown that spectral ICA is not reliable for extracting more than one or two ICs (with more than 90% correlation to outputs of ICA); however, the correlation value for the next eigenvectors decreases to lower than 60%. Compared with ICA, spectral ICA has the advantage of exemption from wrong initial value selection and local maxima, but is more time-consuming.</p>
+        </sec>
+        <sec id="sec2dot3dot3-diagnostics-12-02263">
+          <title>2.3.3. Proposed Modified Spectral ICA Method</title>
+          <p>To implement, first the number of ICs is estimated using the minimum description length (MDL) method (<inline-formula><mml:math id="mm14" overflow="scroll"><mml:mrow><mml:mi>R</mml:mi></mml:mrow></mml:math></inline-formula> is estimated number of ICs) [<xref rid="B26-diagnostics-12-02263" ref-type="bibr">26</xref>]. Graph Laplacian matrix is then calculated according to Equation (5) and first R nondegenerative eigenvalues are selected and corresponding eigenvectors are extracted. These eigenvectors are then used as initial ICs for the Infomax algorithm. The mixing matrix of Infomax is calculated based on the observation matrix and the initial components (<inline-formula><mml:math id="mm15" overflow="scroll"><mml:mrow><mml:mrow><mml:msub><mml:mi>A</mml:mi><mml:mrow><mml:mi>i</mml:mi><mml:mi>n</mml:mi><mml:mi>i</mml:mi><mml:mi>t</mml:mi><mml:mi>i</mml:mi><mml:mi>a</mml:mi><mml:mi>l</mml:mi></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:mi>X</mml:mi><mml:mo>·</mml:mo><mml:msubsup><mml:mi>S</mml:mi><mml:mrow><mml:mi>s</mml:mi><mml:mi>p</mml:mi><mml:mi>e</mml:mi><mml:mi>c</mml:mi><mml:mi>t</mml:mi><mml:mi>r</mml:mi><mml:mi>a</mml:mi><mml:mi>l</mml:mi></mml:mrow><mml:mrow><mml:mo>−</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:msubsup></mml:mrow></mml:mrow></mml:math></inline-formula>) instead of a random mixing matrix. In our study, a new group ICA method on fMRI data is introduced by designing a modified combination of spectral ICA and Infomax algorithm and formulating a new approach in calculation of brain connectivity, elaborated in section C and D. The Infomax algorithm and some utilities like repetition of ICA with ICASSO were undertaken using the GIFT software package from MATLAB (<uri xlink:href="http://mialab.mrn.org/software/gift/">http://mialab.mrn.org/software/gift/</uri>, accessed on 15 April 2021) [<xref rid="B27-diagnostics-12-02263" ref-type="bibr">27</xref>].</p>
+        </sec>
+        <sec id="sec2dot3dot4-diagnostics-12-02263">
+          <title>2.3.4. Proposed Method for Extraction of Static and Dynamic Brain Connectivity</title>
+          <p>For each individual, an <inline-formula><mml:math id="mm16" overflow="scroll"><mml:mrow><mml:mrow><mml:mi>m</mml:mi><mml:mo>×</mml:mo><mml:mi>m</mml:mi></mml:mrow></mml:mrow></mml:math></inline-formula> (where <inline-formula><mml:math id="mm17" overflow="scroll"><mml:mrow><mml:mi>m</mml:mi></mml:mrow></mml:math></inline-formula> is number of ICNs selected as 37 in this study) weighted matrix is first constructed that represents a stationary brain connectivity (static connectivity at the time) graph using the entire data time. ICs overlay to brain atlas to know their Brodmann area. The departed ICs based on Brodmann area atlas are known as ICNs. Selected ICs are in contrast to ICs related to physiological activity, movement, or imaging artifacts (ARTs). These components are evaluated based on the expectation that ICNs should reveal peak activations in gray matter, low spatial overlap with known ARTs, and should represent time courses (TCs) that are correlated with low-frequency fluctuation. The connectivity graph approach helps us to find the relationship between the two ICNs. To build the edges in the connectivity graph, the correlation of time courses is calculated for all ICN pairs, where <italic toggle="yes">B</italic> is <italic toggle="yes">n × n</italic> degree matrix of <italic toggle="yes">K.</italic></p>
+          <p>The dynamic connectivity analysis of each individual is performed using a time-sliding window (with width of <inline-formula><mml:math id="mm18" overflow="scroll"><mml:mrow><mml:mrow><mml:mi>L</mml:mi><mml:mo>=</mml:mo><mml:mn>22</mml:mn><mml:mo>×</mml:mo><mml:mi>T</mml:mi><mml:mi>R</mml:mi></mml:mrow></mml:mrow></mml:math></inline-formula> (66 s) in steps of <inline-formula><mml:math id="mm19" overflow="scroll"><mml:mrow><mml:mrow><mml:mn>1</mml:mn><mml:mo>×</mml:mo><mml:mi>T</mml:mi><mml:mi>R</mml:mi></mml:mrow></mml:mrow></mml:math></inline-formula> sliding), according to the findings of Allen et al. (2014) [<xref rid="B28-diagnostics-12-02263" ref-type="bibr">28</xref>] for establishing a good trade-off between the ability of solving dynamicity and the quality of the connection estimation. Sliding windows are implemented to divide total time points for each subject into smaller datasets. The IVA-GL algorithm is applied on all these smaller datasets for all subjects. Back-reconstructed component maps are acquired for each subject at each time window. The <inline-formula><mml:math id="mm20" overflow="scroll"><mml:mrow><mml:mrow><mml:mi>m</mml:mi><mml:mo>=</mml:mo><mml:mn>37</mml:mn></mml:mrow></mml:mrow></mml:math></inline-formula> ICN TCs are divided into time segments by taking the time windows of width <inline-formula><mml:math id="mm21" overflow="scroll"><mml:mrow><mml:mi>L</mml:mi></mml:mrow></mml:math></inline-formula>, leading to <inline-formula><mml:math id="mm22" overflow="scroll"><mml:mrow><mml:mrow><mml:mi>F</mml:mi><mml:mo>−</mml:mo><mml:mi>L</mml:mi><mml:mo>+</mml:mo><mml:mn>1</mml:mn><mml:mo>=</mml:mo><mml:mn>179</mml:mn></mml:mrow></mml:mrow></mml:math></inline-formula> distinct matrixes (where <italic toggle="yes">F</italic> is number of time points). Then, 179 different weighted brain graphs <inline-formula><mml:math id="mm23" overflow="scroll"><mml:mrow><mml:mrow><mml:mi>m</mml:mi><mml:mo>×</mml:mo><mml:mi>m</mml:mi></mml:mrow></mml:mrow></mml:math></inline-formula> are constructed (<inline-formula><mml:math id="mm24" overflow="scroll"><mml:mrow><mml:mrow><mml:msup><mml:mi>S</mml:mi><mml:mi>w</mml:mi></mml:msup><mml:mo>,</mml:mo><mml:mi>w</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn><mml:mo>,</mml:mo><mml:mn>2</mml:mn><mml:mo>,</mml:mo><mml:mn>3</mml:mn><mml:mo>,</mml:mo><mml:mo>…</mml:mo><mml:mo>,</mml:mo><mml:mn>179</mml:mn></mml:mrow></mml:mrow></mml:math></inline-formula>) and graph measurements, including the connectivity strength, clustering coefficient, and global efficiency of <inline-formula><mml:math id="mm25" overflow="scroll"><mml:mrow><mml:mrow><mml:msup><mml:mi>S</mml:mi><mml:mi>w</mml:mi></mml:msup></mml:mrow></mml:mrow></mml:math></inline-formula>S are calculated by the Brain Connectivity Toolbox [<xref rid="B29-diagnostics-12-02263" ref-type="bibr">29</xref>].</p>
+        </sec>
+      </sec>
+    </sec>
+    <sec sec-type="results" id="sec3-diagnostics-12-02263">
+      <title>3. Results</title>
+      <p>The proposed modified spectral ICA method takes advantage of both spectral ICA and Infomax algorithms. Spectral ICA extracts independent components quickly, but not accurately; and Infomax is time-consuming and has a local maxima problem (due to random initialization). The proposed method takes mutual advantage of both methodologies: the exact optimization is borrowed from Infomax to yield accurate ICs, and good initialization is taken from spectral ICA to provide a reliable initial step and yielding to fast and trustworthy convergence.</p>
+      <sec id="sec3dot1-diagnostics-12-02263">
+        <title>3.1. Modified Spectral ICA and Stationary Connectivity</title>
+        <p>The number of ICNs was extracted using minimum description length (MDL). A spatial map of the ICNs was extracted with the proposed ICA algorithm. The ICA algorithm was repeated 10 times in the ICASSO decomposition reliability estimation and the resulting clusters compacted [<xref rid="B30-diagnostics-12-02263" ref-type="bibr">30</xref>]. Also, by calculating the power spectrum, only the components with low-frequency power spectra were selected [<xref rid="B31-diagnostics-12-02263" ref-type="bibr">31</xref>]. Finally, 37 independent components (ICs) were extracted as intrinsic connectivity networks (ICNs). Selected ICs were in contrast to ICs related to physiological activity, movement, or imaging artifacts (ARTs). These components were evaluated based on the expectation that ICNs should reveal peak activations in gray matter, low spatial overlap with known ARTs, and represent time courses (TC) correlated with low-frequency fluctuation. As demonstrated in <xref rid="diagnostics-12-02263-f002" ref-type="fig">Figure 2</xref>, ICNs were rearranged based on their regions and their dynamic range. In the power spectra, at frequency of right side of the peak, the difference between the maximum power and minimum power was calculated. In addition, to compare the proposed ICA and Infomax ICA, fALFF (low-frequency to high-frequency power ratio) and dynamic range of extracted ICs were compared (<xref rid="diagnostics-12-02263-t003" ref-type="table">Table 3</xref>). The similarity matrix between ICNs, known as stationary functional connectivity for each subject, was computed from the entire scan. Then, the final similarity matrix was computed by averaging the similarity matrix for all subjects in a group. Functional network connectivity correlations were also computed for each dataset and averaged across sessions. In addition, mutual information was computed between components spatially and averaged across the datasets. Stationary functional connectivity of the MS group and healthy group are shown in <xref rid="diagnostics-12-02263-f003" ref-type="fig">Figure 3</xref>.</p>
+      </sec>
+      <sec id="sec3dot2-diagnostics-12-02263">
+        <title>3.2. Dynamic Connectivity and Graph Properties</title>
+        <p>Stationary connectivity, as a first-level analysis, was based on 37 identified connectivity states, based on the extracted ICs. Dynamic functional connectivity with 50% sliding windows were calculated to divide total time points for each subject into smaller datasets. Mean and standard deviation of all extracted window in this dataset did not yield meaningful results.</p>
+        <p>A possible problem is the number of windowed FNC correlations used by the dynamic method for extracting state by reducing the number of FNC correlation windows to a few clusters. This process can be done with different methods, such as k-mean, ICA, and PCA. We used k-mean clustering to extract six different states from all extracted windows. Dynamic connectivity of six different states extracted with k-mean clustering is shown in <xref rid="diagnostics-12-02263-f004" ref-type="fig">Figure 4</xref>.</p>
+        <p>Mean values and standard deviation were computed across windows for all datasets and averaged across the subjects (<xref rid="diagnostics-12-02263-f005" ref-type="fig">Figure 5</xref>). To reduce the number of windowed FNC correlations, ICA analysis with Infomax was repeated on all extracted windows. We extracted six states with this method, more reliable than k-mean (<xref rid="diagnostics-12-02263-f004" ref-type="fig">Figure 4</xref>). ICA-based extracted states are shown in <xref rid="diagnostics-12-02263-f006" ref-type="fig">Figure 6</xref>.</p>
+        <p>For each group, we constructed a dynamic connectivity map. At the first step, a chart of state vs. mean dwell time was determined and is shown in <xref rid="diagnostics-12-02263-f007" ref-type="fig">Figure 7</xref>. This chart proves that the second state is more reliable than other extracted states. Then, back-reconstruction of the second state for HC and MS groups was done and two-sample <italic toggle="yes">t</italic>-test results run (<xref rid="diagnostics-12-02263-f008" ref-type="fig">Figure 8</xref>).</p>
+        <p>As another method to compare ICA-based static and dynamic connectivity, we analyzed the connectivity based on correlation of each pair of the regions in atlas of AAL. Static and dynamic functional connectivity maps of HC and MS using this correlation are shown in <xref rid="diagnostics-12-02263-f009" ref-type="fig">Figure 9</xref> and <xref rid="diagnostics-12-02263-f010" ref-type="fig">Figure 10</xref>.</p>
+      </sec>
+      <sec id="sec3dot3-diagnostics-12-02263">
+        <title>3.3. Assessing Reliability and Stability in ICA for fMRI Data</title>
+        <p>One of the most important problems in ICA in analysis of fMRI data is the stability and reliability of the extracted independent components. The first source of uncertainty in ICA algorithm is the number of components to be extracted. Minimum description length (MDL) is used for estimating the number of ICs. Another source of uncertainty is using random initialization to find local minima in most of the algorithms.</p>
+        <p>To overcome the first uncertainties (number of estimated ICs), we used the MDL algorithm in most of the proposed algorithms. However, we also used the R-index, which defines the degree of difference between two samples. <xref rid="diagnostics-12-02263-f011" ref-type="fig">Figure 11</xref> shows that the best results were achieved by ICs between 32 to 37.</p>
+        <p>Regarding the other source of uncertainty (random initialization), we had two strategies to overcome the local minimum problem. The first strategy is using spectral ICA, where the type of the optimization method with graph Laplacian is robust to change in repetitions. The proposed method uses spectral ICA as an input of the ICA algorithm, and it yielded stability of final extracted ICs. In addition, we used ICASSO, which uses repetition and bootstrap, to find the more reliable and stable ICs (<xref rid="diagnostics-12-02263-f012" ref-type="fig">Figure 12</xref>).</p>
+      </sec>
+    </sec>
+    <sec sec-type="discussion" id="sec4-diagnostics-12-02263">
+      <title>4. Discussion</title>
+      <p>In this study, the characteristics of the dynamic graph were determined by calculating different connections among different brain functions in HCs and MSs in resting-state fMRI data. Brain graph nodes are defined by ICNs detected by group spectral ICA. Dynamic weight brain graph is created using time-window sliding correlation analysis. The results indicated that the dynamic graph metrics discovers higher variance in HC than MS. Median value for connectivity measurements in MS are reduced.</p>
+      <p>We demonstrated three distinct kinds of comparisons to show the effectiveness of the proposed method. First, results of the proposed method are compared with previous publications with the most similar methods. Second, results of the proposed method are compared with conventional methods using the same dataset. Third, results of the proposed method are compared with medical achievement for MS patients.</p>
+      <p>The first declaration about validation of results is about connectivity changes. Our results show that reduction in first-level connectivity state is associated with second-level connectivity states. In first-level analysis, most of the changes are happening in third, fourth and ninth ICs, and in second-level analysis, there are a lot of changes in connections between HC and MS. For example, seventh IC connections are completely different in each group. In other word, static connectivity shows only some changes in frontal gyrus, but dynamic connectivity is able to discover the changes in frontal gyrus, cuneus, caudate and inferior parietal lobule.</p>
+      <p>In comparison with other publications with the most similar methods, dynamic connectivity has more reliable results. A second comparison is on performance of ICA vs a conventional method (correlation with AAL90 atlas). As shown in <xref rid="diagnostics-12-02263-f009" ref-type="fig">Figure 9</xref> and <xref rid="diagnostics-12-02263-f010" ref-type="fig">Figure 10</xref>, the results of correlation could not determine any changes between MS and HC; however, first-level and second-level connectivity using the proposed method is able to successfully extract obvious changes</p>
+      <p>In blind source separation methods, uncertainty and reliability must be discussed. ICASSO is well known for using bootstrap and multiple random initialization to check stability. In this paper, we apply real ICASSO and ICASSO, and as per <xref rid="diagnostics-12-02263-f012" ref-type="fig">Figure 12</xref>a, real ICASSO shows concertation and repeatability of the extracted ICs. <xref rid="diagnostics-12-02263-f012" ref-type="fig">Figure 12</xref>b presents the results of ICASSO with proposed ICA. It is clear that estimated clusters in proposed ICA are more reliable than conventional ICA. It is because of random initialization in ICA. In addition, the number of ICs, as another issue in uncertainty analysis, is addressed by calculating R-index between all ICs after applying ICA. By this method, the similarity between all clusters is checked. As shown in <xref rid="diagnostics-12-02263-f011" ref-type="fig">Figure 11</xref>, after 32 clusters, R-index is minimized. Finally, we select the number of ICs based on MDL calculation to select and the most valid number of ICs and to decrease ICA uncertainty.</p>
+      <p>Our findings showed that the characteristics of the dynamic graph change based on the functional connection of the variable brain together in MS, which is a potentially new indicator for this mental illness. This provides a new framework for evaluating dynamic brain graphs in resting-state fMRI data.</p>
+      <p>Due to the massive quantity and smallness of the neurons, it is challenging to build a complete brain network at the neural level [<xref rid="B32-diagnostics-12-02263" ref-type="bibr">32</xref>,<xref rid="B33-diagnostics-12-02263" ref-type="bibr">33</xref>]. Functional brain connection networks in fMRI data are often based on connections between large areas of the brain on a macroscopic scale. Defining brain network nodes based on parcellation approaches includes the use of predefined anatomical formats such as automatic anatomical labeling (AAL) [<xref rid="B34-diagnostics-12-02263" ref-type="bibr">34</xref>,<xref rid="B35-diagnostics-12-02263" ref-type="bibr">35</xref>,<xref rid="B36-diagnostics-12-02263" ref-type="bibr">36</xref>], randomly generated templates [<xref rid="B37-diagnostics-12-02263" ref-type="bibr">37</xref>,<xref rid="B38-diagnostics-12-02263" ref-type="bibr">38</xref>], and voxel-based divisions [<xref rid="B39-diagnostics-12-02263" ref-type="bibr">39</xref>,<xref rid="B40-diagnostics-12-02263" ref-type="bibr">40</xref>]. Few measures of the topological characteristics of the brain graph may be modified by [<xref rid="B32-diagnostics-12-02263" ref-type="bibr">32</xref>,<xref rid="B33-diagnostics-12-02263" ref-type="bibr">33</xref>]. Previous studies have estimated the network when using atlas-based areas (ROI) as damaged graph nodes [<xref rid="B41-diagnostics-12-02263" ref-type="bibr">41</xref>,<xref rid="B42-diagnostics-12-02263" ref-type="bibr">42</xref>,<xref rid="B43-diagnostics-12-02263" ref-type="bibr">43</xref>]. Furthermore, ROIs certainly do not respect the functional regions of the human brain or regions that reflect individual differences in subjects. In contrast, ICA provides a data-driven approach to build networks by defining brain components as functionally similar nodes [<xref rid="B44-diagnostics-12-02263" ref-type="bibr">44</xref>,<xref rid="B45-diagnostics-12-02263" ref-type="bibr">45</xref>,<xref rid="B46-diagnostics-12-02263" ref-type="bibr">46</xref>,<xref rid="B47-diagnostics-12-02263" ref-type="bibr">47</xref>]. In accordance with previous studies that also defined network nodes using spatial ICA [<xref rid="B28-diagnostics-12-02263" ref-type="bibr">28</xref>,<xref rid="B47-diagnostics-12-02263" ref-type="bibr">47</xref>,<xref rid="B48-diagnostics-12-02263" ref-type="bibr">48</xref>], in this study, the brain connectivity indicates a modular organization within somatomotor, visual, cognitive control, default mode, and auditory regions, as well as anticorrelation between default mode, visual, and auditory regions.</p>
+      <p>Beyond the static connectivity, we used correlation analysis based on time-sliding windows to obtain dynamic topological criteria of time-varying brain graphs. This is the most common strategy for investigating the brain connectivity dynamics in resting-state fMRI [<xref rid="B49-diagnostics-12-02263" ref-type="bibr">49</xref>,<xref rid="B50-diagnostics-12-02263" ref-type="bibr">50</xref>]. Recent studies used this approach to show dynamics of the brain connectivity. Sakoglou et al. (2010) [<xref rid="B51-diagnostics-12-02263" ref-type="bibr">51</xref>] investigated dynamics of functional network connectivity in schizophrenia. Jones et al. (2012) [<xref rid="B52-diagnostics-12-02263" ref-type="bibr">52</xref>] examined the dynamic connectivity of brain networks in Alzheimer’s disease. Wee et al. (2013) [<xref rid="B53-diagnostics-12-02263" ref-type="bibr">53</xref>] used this approach to detect early mild cognitive impairment (eMCI). However, these studies did not calculate the measurement of the dynamic graph, which numerically analyzes dynamicity function of the whole brain. There are few studies that analyze this type of dynamicity. In comparison with this study, in previous literature, Pearson correlation was used, which is the most classic approach to determine the existence of linear relationships via correlation coefficients, but we used mutual information to test network dependency. We applied a different ICA method that increased accuracy and speed of ICs. We compared both node selection method, atlas-based node selection and data-driven (ICA-based) node selection. Results showed that data-driven node selection was the most accurate method, with more differences between HC and MS. <xref rid="diagnostics-12-02263-t002" ref-type="table">Table 2</xref> shows the significant difference between two groups that was extracted from the proposed ICA. Connectivity of the medial frontal gyrus, superior frontal gyrus and anterior cingulate increased in MS, while the inferior temporal gyrus and superior parietal lobule decreased.</p>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <title>Acknowledgments</title>
+      <p>This project was based wholly on data provided by the Department of Neurology, University Medical Center of the Johannes Gutenberg University Mainz and the Department of Neurology, Goethe-University Frankfurt. The authors would like to acknowledge the access to this dataset. We would also like to acknowledge Hamid Khayyam, senior lecturer at the School of Engineering at RMIT University for his scientific comments on the paper.</p>
+    </ack>
+    <fn-group>
+      <fn>
+        <p><bold>Publisher’s Note:</bold> MDPI stays neutral with regard to jurisdictional claims in published maps and institutional affiliations.</p>
+      </fn>
+    </fn-group>
+    <notes>
+      <title>Author Contributions</title>
+      <p>Formal analysis, A.H.R.; Methodology, R.K.; Project administration, H.R.; Software, A.H.R.; Supervision, R.K.; Writing—original draft, R.K. and A.H.R. All authors have read and agreed to the published version of the manuscript.</p>
+    </notes>
+    <notes>
+      <title>Institutional Review Board Statement</title>
+      <p>Dataset were from the Department of Neurology, University Medical Center of the Johannes Gutenberg University Mainz and the Department of Neurology, Goethe-University Frankfurt, and underwent a standardized MRI protocol in Mainz. The study was approved by the ethics committee of the State Medical Board of Rhineland-Palatine (approval number 837.543.11 (8085); all patients provided written informed consent). </p>
+    </notes>
+    <notes>
+      <title>Informed Consent Statement</title>
+      <p>Prior to participating in this study, informed written consent was collected from all individuals, which was approved by the Ethics Committee of the Rhineland-Palatinate State Medical Association. This study was based on the principles set out in the Helsinki Declaration. Human ethics documents were used before any data collection. Overall, 24 documents were approved by the ethics committee. </p>
+    </notes>
+    <notes notes-type="data-availability">
+      <title>Data Availability Statement</title>
+      <p>Not applicable.</p>
+    </notes>
+    <notes notes-type="COI-statement">
+      <title>Conflicts of Interest</title>
+      <p>The authors declare no conflict of interest.</p>
+    </notes>
+    <notes>
+      <title>Code Availability</title>
+      <p>The developed software that support the findings of this study are GIFT packages from MATLAB (<uri xlink:href="http://mialab.mrn.org/software/gift/">http://mialab.mrn.org/software/gift/</uri>, accessed on 15 April 2021) and SPM8 toolbox (<uri xlink:href="http://www.fil.ion.ucl.ac.uk/spm">http://www.fil.ion.ucl.ac.uk/spm</uri>, accessed on 1 March 2021).</p>
+    </notes>
+    <ref-list>
+      <title>References</title>
+      <ref id="B1-diagnostics-12-02263">
+        <label>1.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Beckmann</surname><given-names>C.F.</given-names></name>
+<name><surname>DeLuca</surname><given-names>M.</given-names></name>
+<name><surname>Devlin</surname><given-names>J.T.</given-names></name>
+<name><surname>Smith</surname><given-names>S.M.</given-names></name>
+</person-group>
+          <article-title>Investigations into resting-state connectivity using independent component analysis</article-title>
+          <source>Philos. Trans. R. Soc. B Biol. Sci.</source>
+          <year>2005</year>
+          <volume>360</volume>
+          <fpage>1001</fpage>
+          <lpage>1013</lpage>
+          <pub-id pub-id-type="doi">10.1098/rstb.2005.1634</pub-id>
+          <pub-id pub-id-type="pmid">16087444</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B2-diagnostics-12-02263">
+        <label>2.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Pantano</surname><given-names>P.</given-names></name>
+<name><surname>Mainero</surname><given-names>C.</given-names></name>
+<name><surname>Lenzi</surname><given-names>D.</given-names></name>
+<name><surname>Caramia</surname><given-names>F.</given-names></name>
+<name><surname>Iannetti</surname><given-names>G.D.</given-names></name>
+<name><surname>Piattella</surname><given-names>M.C.</given-names></name>
+<name><surname>Pestalozza</surname><given-names>I.</given-names></name>
+<name><surname>Di Legge</surname><given-names>S.</given-names></name>
+<name><surname>Bozzao</surname><given-names>L.</given-names></name>
+<name><surname>Pozzilli</surname><given-names>C.</given-names></name>
+</person-group>
+          <article-title>A longitudinal fMRI study on motor activity in patients with multiple sclerosis</article-title>
+          <source>Brain</source>
+          <year>2005</year>
+          <volume>128</volume>
+          <fpage>2146</fpage>
+          <lpage>2153</lpage>
+          <pub-id pub-id-type="doi">10.1093/brain/awh549</pub-id>
+          <pub-id pub-id-type="pmid">15901646</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B3-diagnostics-12-02263">
+        <label>3.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Lowe</surname><given-names>M.J.</given-names></name>
+<name><surname>Beall</surname><given-names>E.B.</given-names></name>
+<name><surname>Sakaie</surname><given-names>K.E.</given-names></name>
+<name><surname>Koenig</surname><given-names>K.A.</given-names></name>
+<name><surname>Stone</surname><given-names>L.</given-names></name>
+<name><surname>Marrie</surname><given-names>R.A.</given-names></name>
+<name><surname>Phillips</surname><given-names>M.D.</given-names></name>
+</person-group>
+          <article-title>Resting state sensorimotor functional connectivity in multiple sclerosis inversely correlates with transcallosal motor pathway transverse diffusivity</article-title>
+          <source>Hum. Brain Mapp.</source>
+          <year>2008</year>
+          <volume>29</volume>
+          <fpage>818</fpage>
+          <lpage>827</lpage>
+          <pub-id pub-id-type="doi">10.1002/hbm.20576</pub-id>
+          <pub-id pub-id-type="pmid">18438889</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B4-diagnostics-12-02263">
+        <label>4.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Audoin</surname><given-names>B.</given-names></name>
+<name><surname>Reuter</surname><given-names>F.</given-names></name>
+<name><surname>Duong</surname><given-names>M.V.A.</given-names></name>
+<name><surname>Malikova</surname><given-names>I.</given-names></name>
+<name><surname>Confort-Gouny</surname><given-names>S.</given-names></name>
+<name><surname>Cherif</surname><given-names>A.A.</given-names></name>
+<name><surname>Cozzone</surname><given-names>P.K.</given-names></name>
+<name><surname>Pelletier</surname><given-names>J.</given-names></name>
+<name><surname>Ranjeva</surname><given-names>J.P.</given-names></name>
+</person-group>
+          <article-title>Efficiency of cognitive control recruitment in the very early stage of multiple sclerosis: A one-year fMRI follow-up study</article-title>
+          <source>Mult. Scler. J.</source>
+          <year>2008</year>
+          <volume>14</volume>
+          <fpage>786</fpage>
+          <lpage>792</lpage>
+          <pub-id pub-id-type="doi">10.1177/1352458508089360</pub-id>
+          <pub-id pub-id-type="pmid">18573836</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B5-diagnostics-12-02263">
+        <label>5.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Filippi</surname><given-names>M.</given-names></name>
+<name><surname>Riccitelli</surname><given-names>G.</given-names></name>
+<name><surname>Mattioli</surname><given-names>F.</given-names></name>
+<name><surname>Capra</surname><given-names>R.</given-names></name>
+<name><surname>Stampatori</surname><given-names>C.</given-names></name>
+<name><surname>Pagani</surname><given-names>E.</given-names></name>
+<name><surname>Valsasina</surname><given-names>P.</given-names></name>
+<name><surname>Copetti</surname><given-names>M.</given-names></name>
+<name><surname>Falini</surname><given-names>A.</given-names></name>
+<name><surname>Comi</surname><given-names>G.</given-names></name>
+<etal/>
+</person-group>
+          <article-title>Multiple sclerosis: Effects of cognitive rehabilitation on structural and functional MR imaging measures—An explorative study</article-title>
+          <source>Radiology</source>
+          <year>2012</year>
+          <volume>262</volume>
+          <fpage>932</fpage>
+          <lpage>940</lpage>
+          <pub-id pub-id-type="doi">10.1148/radiol.11111299</pub-id>
+          <pub-id pub-id-type="pmid">22357892</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B6-diagnostics-12-02263">
+        <label>6.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Bonavita</surname><given-names>S.</given-names></name>
+<name><surname>Gallo</surname><given-names>A.</given-names></name>
+<name><surname>Sacco</surname><given-names>R.</given-names></name>
+<name><surname>Della Corte</surname><given-names>M.</given-names></name>
+<name><surname>Bisecco</surname><given-names>A.</given-names></name>
+<name><surname>Docimo</surname><given-names>R.</given-names></name>
+<name><surname>Lavorgna</surname><given-names>L.</given-names></name>
+<name><surname>Corbo</surname><given-names>D.</given-names></name>
+<name><surname>Di Costanzo</surname><given-names>A.</given-names></name>
+<name><surname>Tortora</surname><given-names>F.</given-names></name>
+<etal/>
+</person-group>
+          <article-title>Distributed changes in default-mode resting-state connectivity in multiple sclerosis</article-title>
+          <source>Mult. Scler. J.</source>
+          <year>2011</year>
+          <volume>17</volume>
+          <fpage>411</fpage>
+          <lpage>422</lpage>
+          <pub-id pub-id-type="doi">10.1177/1352458510394609</pub-id>
+          <pub-id pub-id-type="pmid">21239414</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B7-diagnostics-12-02263">
+        <label>7.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Hawellek</surname><given-names>D.J.</given-names></name>
+<name><surname>Hipp</surname><given-names>J.F.</given-names></name>
+<name><surname>Lewis</surname><given-names>C.M.</given-names></name>
+<name><surname>Corbetta</surname><given-names>M.</given-names></name>
+<name><surname>Engel</surname><given-names>A.K.</given-names></name>
+</person-group>
+          <article-title>Increased functional connectivity indicates the severity of cognitive impairment in multiple sclerosis</article-title>
+          <source>Proc. Natl. Acad. Sci. USA</source>
+          <year>2011</year>
+          <volume>108</volume>
+          <fpage>19066</fpage>
+          <lpage>19071</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.1110024108</pub-id>
+          <pub-id pub-id-type="pmid">22065778</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B8-diagnostics-12-02263">
+        <label>8.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Loitfelder</surname><given-names>M.</given-names></name>
+<name><surname>Filippi</surname><given-names>M.</given-names></name>
+<name><surname>Rocca</surname><given-names>M.</given-names></name>
+<name><surname>Valsasina</surname><given-names>P.</given-names></name>
+<name><surname>Ropele</surname><given-names>S.</given-names></name>
+<name><surname>Jehna</surname><given-names>M.</given-names></name>
+<name><surname>Fuchs</surname><given-names>S.</given-names></name>
+<name><surname>Schmidt</surname><given-names>R.</given-names></name>
+<name><surname>Neuper</surname><given-names>C.</given-names></name>
+<name><surname>Fazekas</surname><given-names>F.</given-names></name>
+<etal/>
+</person-group>
+          <article-title>Abnormalities of resting state functional connectivity are related to sustained attention deficits in MS</article-title>
+          <source>PLoS ONE</source>
+          <year>2012</year>
+          <volume>7</volume>
+          <elocation-id>e42862</elocation-id>
+          <pub-id pub-id-type="pmid">22912754</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B9-diagnostics-12-02263">
+        <label>9.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Faivre</surname><given-names>A.</given-names></name>
+<name><surname>Rico</surname><given-names>A.</given-names></name>
+<name><surname>Zaaraoui</surname><given-names>W.</given-names></name>
+<name><surname>Crespy</surname><given-names>L.</given-names></name>
+<name><surname>Reuter</surname><given-names>F.</given-names></name>
+<name><surname>Wybrecht</surname><given-names>D.</given-names></name>
+<name><surname>Soulier</surname><given-names>E.</given-names></name>
+<name><surname>Malikova</surname><given-names>I.</given-names></name>
+<name><surname>Confort-Gouny</surname><given-names>S.</given-names></name>
+<name><surname>Cozzone</surname><given-names>P.J.</given-names></name>
+<etal/>
+</person-group>
+          <article-title>Assessing brain connectivity at rest is clinically relevant in early multiple sclerosis</article-title>
+          <source>Mult. Scler. J.</source>
+          <year>2012</year>
+          <volume>18</volume>
+          <fpage>1251</fpage>
+          <lpage>1258</lpage>
+          <pub-id pub-id-type="doi">10.1177/1352458511435930</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B10-diagnostics-12-02263">
+        <label>10.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Richiardi</surname><given-names>J.</given-names></name>
+<name><surname>Gschwind</surname><given-names>M.</given-names></name>
+<name><surname>Simioni</surname><given-names>S.</given-names></name>
+<name><surname>Annoni</surname><given-names>J.-M.</given-names></name>
+<name><surname>Greco</surname><given-names>B.</given-names></name>
+<name><surname>Hagmann</surname><given-names>P.</given-names></name>
+<name><surname>Schluep</surname><given-names>M.</given-names></name>
+<name><surname>Vuilleumier</surname><given-names>P.</given-names></name>
+<name><surname>Van De Ville</surname><given-names>D.</given-names></name>
+</person-group>
+          <article-title>Classifying minimally disabled multiple sclerosis patients from resting state functional connectivity</article-title>
+          <source>Neuroimage</source>
+          <year>2012</year>
+          <volume>62</volume>
+          <fpage>2021</fpage>
+          <lpage>2033</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2012.05.078</pub-id>
+          <pub-id pub-id-type="pmid">22677149</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B11-diagnostics-12-02263">
+        <label>11.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Rocca</surname><given-names>M.A.</given-names></name>
+<name><surname>Valsasina</surname><given-names>P.</given-names></name>
+<name><surname>Absinta</surname><given-names>M.</given-names></name>
+<name><surname>Moiola</surname><given-names>L.</given-names></name>
+<name><surname>Ghezzi</surname><given-names>A.</given-names></name>
+<name><surname>Veggiotti</surname><given-names>P.</given-names></name>
+<name><surname>Amato</surname><given-names>M.P.</given-names></name>
+<name><surname>Horsfield</surname><given-names>M.A.</given-names></name>
+<name><surname>Falini</surname><given-names>A.</given-names></name>
+<name><surname>Comi</surname><given-names>G.</given-names></name>
+<etal/>
+</person-group>
+          <article-title>Intranetwork and internetwork functional connectivity abnormalities in pediatric multiple sclerosis</article-title>
+          <source>Hum. Brain Mapp.</source>
+          <year>2014</year>
+          <volume>35</volume>
+          <fpage>4180</fpage>
+          <lpage>4192</lpage>
+          <pub-id pub-id-type="doi">10.1002/hbm.22469</pub-id>
+          <pub-id pub-id-type="pmid">24510680</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B12-diagnostics-12-02263">
+        <label>12.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Tona</surname><given-names>F.</given-names></name>
+<name><surname>Petsas</surname><given-names>N.</given-names></name>
+<name><surname>Sbardella</surname><given-names>E.</given-names></name>
+<name><surname>Prosperini</surname><given-names>L.</given-names></name>
+<name><surname>Carmellini</surname><given-names>M.</given-names></name>
+<name><surname>Pozzilli</surname><given-names>C.</given-names></name>
+<name><surname>Pantano</surname><given-names>P.</given-names></name>
+</person-group>
+          <article-title>Multiple sclerosis: Altered thalamic resting-state functional connectivity and its effect on cognitive function</article-title>
+          <source>Radiology</source>
+          <year>2014</year>
+          <volume>271</volume>
+          <fpage>814</fpage>
+          <lpage>821</lpage>
+          <pub-id pub-id-type="doi">10.1148/radiol.14131688</pub-id>
+          <pub-id pub-id-type="pmid">24484065</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B13-diagnostics-12-02263">
+        <label>13.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Eshaghi</surname><given-names>A.</given-names></name>
+<name><surname>Riyahi-Alam</surname><given-names>S.</given-names></name>
+<name><surname>Saeedi</surname><given-names>R.</given-names></name>
+<name><surname>Roostaei</surname><given-names>T.</given-names></name>
+<name><surname>Nazeri</surname><given-names>A.</given-names></name>
+<name><surname>Aghsaei</surname><given-names>A.</given-names></name>
+<name><surname>Doosti</surname><given-names>R.</given-names></name>
+<name><surname>Ganjgahi</surname><given-names>H.</given-names></name>
+<name><surname>Bodini</surname><given-names>B.</given-names></name>
+<name><surname>Shakourirad</surname><given-names>A.</given-names></name>
+<etal/>
+</person-group>
+          <article-title>Classification algorithms with multi-modal data fusion could accurately distinguish neuromyelitis optica from multiple sclerosis</article-title>
+          <source>NeuroImage Clin.</source>
+          <year>2015</year>
+          <volume>7</volume>
+          <fpage>306</fpage>
+          <lpage>314</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.nicl.2015.01.001</pub-id>
+          <pub-id pub-id-type="pmid">25610795</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B14-diagnostics-12-02263">
+        <label>14.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Zhong</surname><given-names>J.</given-names></name>
+<name><surname>Nantes</surname><given-names>J.C.</given-names></name>
+<name><surname>Holmes</surname><given-names>S.A.</given-names></name>
+<name><surname>Gallant</surname><given-names>S.</given-names></name>
+<name><surname>Narayanan</surname><given-names>S.</given-names></name>
+<name><surname>Koski</surname><given-names>L.</given-names></name>
+</person-group>
+          <article-title>Abnormal functional connectivity and cortical integrity influence dominant hand motor disability in multiple sclerosis: A multimodal analysis</article-title>
+          <source>Hum. Brain Mapp.</source>
+          <year>2016</year>
+          <volume>37</volume>
+          <fpage>4262</fpage>
+          <lpage>4275</lpage>
+          <pub-id pub-id-type="doi">10.1002/hbm.23307</pub-id>
+          <pub-id pub-id-type="pmid">27381089</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B15-diagnostics-12-02263">
+        <label>15.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Bonavita</surname><given-names>S.</given-names></name>
+<name><surname>Sacco</surname><given-names>R.</given-names></name>
+<name><surname>Della Corte</surname><given-names>M.</given-names></name>
+<name><surname>Esposito</surname><given-names>S.</given-names></name>
+<name><surname>Sparaco</surname><given-names>M.</given-names></name>
+<name><surname>D’Ambrosio</surname><given-names>A.</given-names></name>
+<name><surname>Docimo</surname><given-names>R.</given-names></name>
+<name><surname>Bisecco</surname><given-names>A.</given-names></name>
+<name><surname>Lavorgna</surname><given-names>L.</given-names></name>
+<name><surname>Corbo</surname><given-names>D.</given-names></name>
+<etal/>
+</person-group>
+          <article-title>Computer-aided cognitive rehabilitation improves cognitive performances and induces brain functional connectivity changes in relapsing remitting multiple sclerosis patients: An exploratory study</article-title>
+          <source>J. Neurol.</source>
+          <year>2015</year>
+          <volume>262</volume>
+          <fpage>91</fpage>
+          <lpage>100</lpage>
+          <pub-id pub-id-type="doi">10.1007/s00415-014-7528-z</pub-id>
+          <pub-id pub-id-type="pmid">25308631</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B16-diagnostics-12-02263">
+        <label>16.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Pfaff</surname><given-names>L.</given-names></name>
+<name><surname>Lamy</surname><given-names>J.</given-names></name>
+<name><surname>Noblet</surname><given-names>V.</given-names></name>
+<name><surname>Gounot</surname><given-names>D.</given-names></name>
+<name><surname>Chanson</surname><given-names>J.-B.</given-names></name>
+<name><surname>de Seze</surname><given-names>J.</given-names></name>
+<name><surname>Blanc</surname><given-names>F.</given-names></name>
+</person-group>
+          <article-title>Emotional disturbances in multiple sclerosis: A neuropsychological and fMRI study</article-title>
+          <source>Cortex</source>
+          <year>2019</year>
+          <volume>117</volume>
+          <fpage>205</fpage>
+          <lpage>216</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.cortex.2019.02.017</pub-id>
+          <pub-id pub-id-type="pmid">30991308</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B17-diagnostics-12-02263">
+        <label>17.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Fleischer</surname><given-names>V.</given-names></name>
+<name><surname>Muthuraman</surname><given-names>M.</given-names></name>
+<name><surname>Anwar</surname><given-names>A.R.</given-names></name>
+<name><surname>Gonzalez-Escamilla</surname><given-names>G.</given-names></name>
+<name><surname>Radetz</surname><given-names>A.</given-names></name>
+<name><surname>Gracien</surname><given-names>R.-M.</given-names></name>
+<name><surname>Bittner</surname><given-names>S.</given-names></name>
+<name><surname>Luessi</surname><given-names>F.</given-names></name>
+<name><surname>Meuth</surname><given-names>S.G.</given-names></name>
+<name><surname>Zipp</surname><given-names>F.</given-names></name>
+<etal/>
+</person-group>
+          <article-title>Continuous reorganization of cortical information flow in multiple sclerosis: A longitudinal fMRI effective connectivity study</article-title>
+          <source>Sci. Rep.</source>
+          <year>2020</year>
+          <volume>10</volume>
+          <fpage>806</fpage>
+          <pub-id pub-id-type="doi">10.1038/s41598-020-57895-x</pub-id>
+          <pub-id pub-id-type="pmid">31964982</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B18-diagnostics-12-02263">
+        <label>18.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Temniy</surname><given-names>A.</given-names></name>
+<name><surname>Markin</surname><given-names>K.</given-names></name>
+<name><surname>Poplyak</surname><given-names>M.</given-names></name>
+<name><surname>Trufanov</surname><given-names>A.</given-names></name>
+<name><surname>Tarumov</surname><given-names>D.</given-names></name>
+<name><surname>Litvinenko</surname><given-names>I.</given-names></name>
+</person-group>
+          <article-title>Depression in multiple sclerosis: RS-FMRI research</article-title>
+          <source>Eur. Psychiatry</source>
+          <year>2021</year>
+          <volume>64</volume>
+          <fpage>S90</fpage>
+          <pub-id pub-id-type="doi">10.1192/j.eurpsy.2021.265</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B19-diagnostics-12-02263">
+        <label>19.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Adalı</surname><given-names>T.</given-names></name>
+<name><surname>Anderson</surname><given-names>M.</given-names></name>
+<name><surname>Fu</surname><given-names>G.</given-names></name>
+</person-group>
+          <article-title>Diversity in independent component and vector analyses: Identifiability, algorithms, and applications in medical imaging</article-title>
+          <source>IEEE Signal Process. Mag.</source>
+          <year>2014</year>
+          <volume>31</volume>
+          <fpage>18</fpage>
+          <lpage>33</lpage>
+          <pub-id pub-id-type="doi">10.1109/MSP.2014.2300511</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B20-diagnostics-12-02263">
+        <label>20.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Lee</surname><given-names>J.-H.</given-names></name>
+<name><surname>Lee</surname><given-names>T.-W.</given-names></name>
+<name><surname>Jolesz</surname><given-names>F.A.</given-names></name>
+<name><surname>Yoo</surname><given-names>S.-S.</given-names></name>
+</person-group>
+          <article-title>Independent vector analysis (IVA): Multivariate approach for fMRI group study</article-title>
+          <source>Neuroimage</source>
+          <year>2008</year>
+          <volume>40</volume>
+          <fpage>86</fpage>
+          <lpage>109</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2007.11.019</pub-id>
+          <pub-id pub-id-type="pmid">18165105</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B21-diagnostics-12-02263">
+        <label>21.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Anderson</surname><given-names>M.</given-names></name>
+<name><surname>Li</surname><given-names>X.-L.</given-names></name>
+<name><surname>Adalı</surname><given-names>T.</given-names></name>
+</person-group>
+          <article-title>Complex-valued independent vector analysis: Application to multivariate Gaussian model</article-title>
+          <source>Signal Process.</source>
+          <year>2012</year>
+          <volume>92</volume>
+          <fpage>1821</fpage>
+          <lpage>1831</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.sigpro.2011.09.034</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B22-diagnostics-12-02263">
+        <label>22.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Droby</surname><given-names>A.</given-names></name>
+<name><surname>Lukas</surname><given-names>C.</given-names></name>
+<name><surname>Schänzer</surname><given-names>A.</given-names></name>
+<name><surname>Spiwoks-Becker</surname><given-names>I.</given-names></name>
+<name><surname>Giorgio</surname><given-names>A.</given-names></name>
+<name><surname>Gold</surname><given-names>R.</given-names></name>
+<name><surname>De Stefano</surname><given-names>N.</given-names></name>
+<name><surname>Kugel</surname><given-names>H.</given-names></name>
+<name><surname>Deppe</surname><given-names>M.</given-names></name>
+<name><surname>Wiendl</surname><given-names>H.</given-names></name>
+<etal/>
+</person-group>
+          <article-title>A human post-mortem brain model for the standardization of multi-centre MRI studies</article-title>
+          <source>Neuroimage</source>
+          <year>2015</year>
+          <volume>110</volume>
+          <fpage>11</fpage>
+          <lpage>21</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2015.01.028</pub-id>
+          <pub-id pub-id-type="pmid">25595502</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B23-diagnostics-12-02263">
+        <label>23.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Penner</surname><given-names>I.-K.</given-names></name>
+<name><surname>Raselli</surname><given-names>C.</given-names></name>
+<name><surname>Stöcklin</surname><given-names>M.</given-names></name>
+<name><surname>Opwis</surname><given-names>K.</given-names></name>
+<name><surname>Kappos</surname><given-names>L.</given-names></name>
+<name><surname>Calabrese</surname><given-names>P.</given-names></name>
+</person-group>
+          <article-title>The Fatigue Scale for Motor and Cognitive Functions (FSMC): Validation of a new instrument to assess multiple sclerosis-related fatigue</article-title>
+          <source>Mult. Scler. J.</source>
+          <year>2009</year>
+          <volume>15</volume>
+          <fpage>1509</fpage>
+          <lpage>1517</lpage>
+          <pub-id pub-id-type="doi">10.1177/1352458509348519</pub-id>
+          <pub-id pub-id-type="pmid">19995840</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B24-diagnostics-12-02263">
+        <label>24.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Comon</surname><given-names>P.</given-names></name>
+</person-group>
+          <article-title>Independent component analysis, a new concept?</article-title>
+          <source>Signal Process.</source>
+          <year>1994</year>
+          <volume>36</volume>
+          <fpage>287</fpage>
+          <lpage>314</lpage>
+          <pub-id pub-id-type="doi">10.1016/0165-1684(94)90029-9</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B25-diagnostics-12-02263">
+        <label>25.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Singer</surname><given-names>A.</given-names></name>
+</person-group>
+          <article-title>Spectral independent component analysis</article-title>
+          <source>Appl. Comput. Harmon. Anal.</source>
+          <year>2006</year>
+          <volume>21</volume>
+          <fpage>135</fpage>
+          <lpage>144</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.acha.2006.03.003</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B26-diagnostics-12-02263">
+        <label>26.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Bell</surname><given-names>A.J.</given-names></name>
+<name><surname>Sejnowski</surname><given-names>T.J.</given-names></name>
+</person-group>
+          <article-title>An information-maximization approach to blind separation and blind deconvolution</article-title>
+          <source>Neural Comput.</source>
+          <year>1995</year>
+          <volume>7</volume>
+          <fpage>1129</fpage>
+          <lpage>1159</lpage>
+          <pub-id pub-id-type="doi">10.1162/neco.1995.7.6.1129</pub-id>
+          <pub-id pub-id-type="pmid">7584893</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B27-diagnostics-12-02263">
+        <label>27.</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+<name><surname>Rachakonda</surname><given-names>S.</given-names></name>
+<name><surname>Egolf</surname><given-names>E.</given-names></name>
+<name><surname>Correa</surname><given-names>N.</given-names></name>
+<name><surname>Calhoun</surname><given-names>V.</given-names></name>
+</person-group>
+          <source>Group ICA of fMRI toolbox (GIFT) manual. Dostupnez</source>
+          <comment>[cit 2011-11-5]</comment>
+          <publisher-name>GIFTS Software, Inc.</publisher-name>
+          <publisher-loc>New York, NY, USA</publisher-loc>
+          <year>2007</year>
+        </element-citation>
+      </ref>
+      <ref id="B28-diagnostics-12-02263">
+        <label>28.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Allen</surname><given-names>E.A.</given-names></name>
+<name><surname>Damaraju</surname><given-names>E.</given-names></name>
+<name><surname>Plis</surname><given-names>S.M.</given-names></name>
+<name><surname>Erhardt</surname><given-names>E.B.</given-names></name>
+<name><surname>Eichele</surname><given-names>T.</given-names></name>
+<name><surname>Calhoun</surname><given-names>V.D.</given-names></name>
+</person-group>
+          <article-title>Tracking whole-brain connectivity dynamics in the resting state</article-title>
+          <source>Cereb. Cortex</source>
+          <year>2014</year>
+          <volume>24</volume>
+          <fpage>663</fpage>
+          <lpage>676</lpage>
+          <pub-id pub-id-type="doi">10.1093/cercor/bhs352</pub-id>
+          <pub-id pub-id-type="pmid">23146964</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B29-diagnostics-12-02263">
+        <label>29.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Rubinov</surname><given-names>M.</given-names></name>
+<name><surname>Kötter</surname><given-names>R.</given-names></name>
+<name><surname>Hagmann</surname><given-names>P.</given-names></name>
+<name><surname>Sporns</surname><given-names>O.</given-names></name>
+</person-group>
+          <article-title>Brain connectivity toolbox: A collection of complex network measurements and brain connectivity datasets</article-title>
+          <source>NeuroImage</source>
+          <year>2009</year>
+          <volume>47</volume>
+          <fpage>S169</fpage>
+          <pub-id pub-id-type="doi">10.1016/S1053-8119(09)71822-1</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B30-diagnostics-12-02263">
+        <label>30.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+<name><surname>Himberg</surname><given-names>J.</given-names></name>
+<name><surname>Hyvarinen</surname><given-names>A.</given-names></name>
+</person-group>
+          <article-title>Icasso: Software for investigating the reliability of ICA estimates by clustering and visualization</article-title>
+          <source>Proceedings of the 2003 IEEE XIII Workshop on Neural Networks for Signal Processing (IEEE Cat. No. 03TH8718)</source>
+          <conf-loc>Toulouse, France</conf-loc>
+          <conf-date>17–19 September 2003</conf-date>
+          <publisher-name>IEEE</publisher-name>
+          <publisher-loc>Pistacaway, NJ, USA</publisher-loc>
+          <year>2003</year>
+          <fpage>259</fpage>
+          <lpage>268</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B31-diagnostics-12-02263">
+        <label>31.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Yu</surname><given-names>Q.</given-names></name>
+<name><surname>Erhardt</surname><given-names>E.B.</given-names></name>
+<name><surname>Sui</surname><given-names>J.</given-names></name>
+<name><surname>Du</surname><given-names>Y.</given-names></name>
+<name><surname>He</surname><given-names>H.</given-names></name>
+<name><surname>Hjelm</surname><given-names>D.</given-names></name>
+<name><surname>Cetin</surname><given-names>M.S.</given-names></name>
+<name><surname>Rachakonda</surname><given-names>S.</given-names></name>
+<name><surname>Miller</surname><given-names>R.L.</given-names></name>
+<name><surname>Pearlson</surname><given-names>G.</given-names></name>
+<etal/>
+</person-group>
+          <article-title>Assessing dynamic brain graphs of time-varying connectivity in fMRI data: Application to healthy controls and patients with schizophrenia</article-title>
+          <source>Neuroimage</source>
+          <year>2015</year>
+          <volume>107</volume>
+          <fpage>345</fpage>
+          <lpage>355</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2014.12.020</pub-id>
+          <pub-id pub-id-type="pmid">25514514</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B32-diagnostics-12-02263">
+        <label>32.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>De Reus</surname><given-names>M.A.</given-names></name>
+<name><surname>Van den Heuvel</surname><given-names>M.P.</given-names></name>
+</person-group>
+          <article-title>The parcellation-based connectome: Limitations and extensions</article-title>
+          <source>Neuroimage</source>
+          <year>2013</year>
+          <volume>80</volume>
+          <fpage>397</fpage>
+          <lpage>404</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2013.03.053</pub-id>
+          <pub-id pub-id-type="pmid">23558097</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B33-diagnostics-12-02263">
+        <label>33.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Fornito</surname><given-names>A.</given-names></name>
+<name><surname>Zalesky</surname><given-names>A.</given-names></name>
+<name><surname>Breakspear</surname><given-names>M.</given-names></name>
+</person-group>
+          <article-title>Graph analysis of the human connectome: Promise, progress, and pitfalls</article-title>
+          <source>Neuroimage</source>
+          <year>2013</year>
+          <volume>80</volume>
+          <fpage>426</fpage>
+          <lpage>444</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2013.04.087</pub-id>
+          <pub-id pub-id-type="pmid">23643999</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B34-diagnostics-12-02263">
+        <label>34.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Liu</surname><given-names>Y.</given-names></name>
+<name><surname>Liang</surname><given-names>M.</given-names></name>
+<name><surname>Zhou</surname><given-names>Y.</given-names></name>
+<name><surname>He</surname><given-names>Y.</given-names></name>
+<name><surname>Hao</surname><given-names>Y.</given-names></name>
+<name><surname>Song</surname><given-names>M.</given-names></name>
+<name><surname>Yu</surname><given-names>C.</given-names></name>
+<name><surname>Liu</surname><given-names>H.</given-names></name>
+<name><surname>Liu</surname><given-names>Z.</given-names></name>
+<name><surname>Jiang</surname><given-names>T.</given-names></name>
+</person-group>
+          <article-title>Disrupted small-world networks in schizophrenia</article-title>
+          <source>Brain</source>
+          <year>2008</year>
+          <volume>131</volume>
+          <fpage>945</fpage>
+          <lpage>961</lpage>
+          <pub-id pub-id-type="doi">10.1093/brain/awn018</pub-id>
+          <pub-id pub-id-type="pmid">18299296</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B35-diagnostics-12-02263">
+        <label>35.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Bassett</surname><given-names>D.S.</given-names></name>
+<name><surname>Nelson</surname><given-names>B.G.</given-names></name>
+<name><surname>Mueller</surname><given-names>B.A.</given-names></name>
+<name><surname>Camchong</surname><given-names>J.</given-names></name>
+<name><surname>Lim</surname><given-names>K.O.</given-names></name>
+</person-group>
+          <article-title>Altered resting state complexity in schizophrenia</article-title>
+          <source>Neuroimage</source>
+          <year>2012</year>
+          <volume>59</volume>
+          <fpage>2196</fpage>
+          <lpage>2207</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2011.10.002</pub-id>
+          <pub-id pub-id-type="pmid">22008374</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B36-diagnostics-12-02263">
+        <label>36.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>M.-Lynall</surname><given-names>E.</given-names></name>
+<name><surname>Cammoun</surname><given-names>L.</given-names></name>
+<name><surname>Gigandet</surname><given-names>X.</given-names></name>
+<name><surname>Meuli</surname><given-names>R.</given-names></name>
+<name><surname>Honey</surname><given-names>C.</given-names></name>
+<name><surname>Wedeen</surname><given-names>V.J.</given-names></name>
+<name><surname>Sporns</surname><given-names>O.</given-names></name>
+</person-group>
+          <article-title>Functional connectivity and brain networks in schizophrenia</article-title>
+          <source>J. Neurosci.</source>
+          <year>2010</year>
+          <volume>30</volume>
+          <fpage>9477</fpage>
+          <lpage>9487</lpage>
+          <pub-id pub-id-type="doi">10.1523/JNEUROSCI.0333-10.2010</pub-id>
+          <pub-id pub-id-type="pmid">20631176</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B37-diagnostics-12-02263">
+        <label>37.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Fornito</surname><given-names>A.</given-names></name>
+<name><surname>Zalesky</surname><given-names>A.</given-names></name>
+<name><surname>Bullmore</surname><given-names>E.T.</given-names></name>
+</person-group>
+          <article-title>Network scaling effects in graph analytic studies of human resting-state FMRI data</article-title>
+          <source>Front. Syst. Neurosci.</source>
+          <year>2010</year>
+          <volume>4</volume>
+          <fpage>22</fpage>
+          <pub-id pub-id-type="doi">10.3389/fnsys.2010.00022</pub-id>
+          <pub-id pub-id-type="pmid">20592949</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B38-diagnostics-12-02263">
+        <label>38.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Hagmann</surname><given-names>P.</given-names></name>
+<name><surname>Cammoun</surname><given-names>L.</given-names></name>
+<name><surname>Gigandet</surname><given-names>X.</given-names></name>
+<name><surname>Meuli</surname><given-names>R.</given-names></name>
+<name><surname>Honey</surname><given-names>C.</given-names></name>
+<name><surname>Wedeen</surname><given-names>V.J.</given-names></name>
+<name><surname>Sporns</surname><given-names>O.</given-names></name>
+</person-group>
+          <article-title>Mapping the structural core of human cerebral cortex</article-title>
+          <source>PLoS Biol.</source>
+          <year>2008</year>
+          <volume>6</volume>
+          <elocation-id>e159</elocation-id>
+          <pub-id pub-id-type="doi">10.1371/journal.pbio.0060159</pub-id>
+          <pub-id pub-id-type="pmid">18597554</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B39-diagnostics-12-02263">
+        <label>39.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Buckner</surname><given-names>R.L.</given-names></name>
+<name><surname>Sepulcre</surname><given-names>J.</given-names></name>
+<name><surname>Talukdar</surname><given-names>T.</given-names></name>
+<name><surname>Krienen</surname><given-names>F.M.</given-names></name>
+<name><surname>Liu</surname><given-names>H.</given-names></name>
+<name><surname>Hedden</surname><given-names>T.</given-names></name>
+<name><surname>Andrews-Hanna</surname><given-names>J.R.</given-names></name>
+<name><surname>Sperling</surname><given-names>R.A.</given-names></name>
+<name><surname>Johnson</surname><given-names>K.A.</given-names></name>
+</person-group>
+          <article-title>Cortical hubs revealed by intrinsic functional connectivity: Mapping, assessment of stability, and relation to Alzheimer’s disease</article-title>
+          <source>J. Neurosci.</source>
+          <year>2009</year>
+          <volume>29</volume>
+          <fpage>1860</fpage>
+          <lpage>1873</lpage>
+          <pub-id pub-id-type="doi">10.1523/JNEUROSCI.5062-08.2009</pub-id>
+          <pub-id pub-id-type="pmid">19211893</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B40-diagnostics-12-02263">
+        <label>40.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Eguiluz</surname><given-names>V.M.</given-names></name>
+<name><surname>Chialvo</surname><given-names>D.R.</given-names></name>
+<name><surname>Cecchi</surname><given-names>G.A.</given-names></name>
+<name><surname>Baliki</surname><given-names>M.</given-names></name>
+<name><surname>Apkarian</surname><given-names>A.V.</given-names></name>
+</person-group>
+          <article-title>Scale-free brain functional networks</article-title>
+          <source>Phys. Rev. Lett.</source>
+          <year>2005</year>
+          <volume>94</volume>
+          <fpage>018102</fpage>
+          <pub-id pub-id-type="doi">10.1103/PhysRevLett.94.018102</pub-id>
+          <pub-id pub-id-type="pmid">15698136</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B41-diagnostics-12-02263">
+        <label>41.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Craddock</surname><given-names>R.C.</given-names></name>
+<name><surname>James</surname><given-names>G.A.</given-names></name>
+<name><surname>Holtzheimer</surname><given-names>P.E.</given-names><suffix>III</suffix></name>
+<name><surname>Hu</surname><given-names>X.P.</given-names></name>
+<name><surname>Mayberg</surname><given-names>H.S.</given-names></name>
+</person-group>
+          <article-title>A whole brain fMRI atlas generated via spatially constrained spectral clustering</article-title>
+          <source>Hum. Brain Mapp.</source>
+          <year>2012</year>
+          <volume>33</volume>
+          <fpage>1914</fpage>
+          <lpage>1928</lpage>
+          <pub-id pub-id-type="doi">10.1002/hbm.21333</pub-id>
+          <pub-id pub-id-type="pmid">21769991</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B42-diagnostics-12-02263">
+        <label>42.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Shirer</surname><given-names>W.R.</given-names></name>
+<name><surname>Ryali</surname><given-names>S.</given-names></name>
+<name><surname>Rykhlevskaia</surname><given-names>E.</given-names></name>
+<name><surname>Menon</surname><given-names>V.</given-names></name>
+<name><surname>Greicius</surname><given-names>M.D.</given-names></name>
+</person-group>
+          <article-title>Decoding subject-driven cognitive states with whole-brain connectivity patterns</article-title>
+          <source>Cereb. Cortex</source>
+          <year>2012</year>
+          <volume>22</volume>
+          <fpage>158</fpage>
+          <lpage>165</lpage>
+          <pub-id pub-id-type="doi">10.1093/cercor/bhr099</pub-id>
+          <pub-id pub-id-type="pmid">21616982</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B43-diagnostics-12-02263">
+        <label>43.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Smith</surname><given-names>S.M.</given-names></name>
+<name><surname>Miller</surname><given-names>K.L.</given-names></name>
+<name><surname>Salimi-Khorshidi</surname><given-names>G.</given-names></name>
+<name><surname>Webster</surname><given-names>M.</given-names></name>
+<name><surname>Beckmann</surname><given-names>C.F.</given-names></name>
+<name><surname>Nichols</surname><given-names>T.E.</given-names></name>
+<name><surname>Ramsey</surname><given-names>J.D.</given-names></name>
+<name><surname>Woolrich</surname><given-names>M.W.</given-names></name>
+</person-group>
+          <article-title>Network modelling methods for FMR</article-title>
+          <source>Neuroimage</source>
+          <year>2011</year>
+          <volume>54</volume>
+          <fpage>875</fpage>
+          <lpage>891</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2010.08.063</pub-id>
+          <pub-id pub-id-type="pmid">20817103</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B44-diagnostics-12-02263">
+        <label>44.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Sui</surname><given-names>J.</given-names></name>
+<name><surname>Huster</surname><given-names>R.</given-names></name>
+<name><surname>Yu</surname><given-names>Q.</given-names></name>
+<name><surname>Segall</surname><given-names>J.M.</given-names></name>
+<name><surname>Calhoun</surname><given-names>V.D.</given-names></name>
+</person-group>
+          <article-title>Function–structure associations of the brain: Evidence from multimodal connectivity and covariance studies</article-title>
+          <source>NeuroImage</source>
+          <year>2014</year>
+          <volume>102</volume>
+          <fpage>11</fpage>
+          <lpage>23</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2013.09.044</pub-id>
+          <pub-id pub-id-type="pmid">24084066</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B45-diagnostics-12-02263">
+        <label>45.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Calhoun</surname><given-names>V.D.</given-names></name>
+<name><surname>Eichele</surname><given-names>T.</given-names></name>
+<name><surname>Adalı</surname><given-names>T.</given-names></name>
+<name><surname>Allen</surname><given-names>E.A.</given-names></name>
+</person-group>
+          <article-title>Decomposing the brain: Components and modes, networks and nodes</article-title>
+          <source>Trends Cogn. Sci.</source>
+          <year>2012</year>
+          <volume>16</volume>
+          <fpage>255</fpage>
+          <lpage>256</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.tics.2012.03.008</pub-id>
+          <pub-id pub-id-type="pmid">22487186</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B46-diagnostics-12-02263">
+        <label>46.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Yu</surname><given-names>Q.</given-names></name>
+<name><surname>Plis</surname><given-names>S.M.</given-names></name>
+<name><surname>Erhardt</surname><given-names>E.B.</given-names></name>
+<name><surname>Allen</surname><given-names>E.A.</given-names></name>
+<name><surname>Sui</surname><given-names>J.</given-names></name>
+<name><surname>Kiehl</surname><given-names>K.A.</given-names></name>
+<name><surname>Pearlson</surname><given-names>G.</given-names></name>
+<name><surname>Calhoun</surname><given-names>V.D.</given-names></name>
+</person-group>
+          <article-title>Modular Organization of Functional Network Connectivity in Healthy Controls and Patients with Schizophrenia during the Resting State</article-title>
+          <source>Front. Syst. Neurosci. Orig. Res.</source>
+          <year>2012</year>
+          <volume>5</volume>
+          <fpage>103</fpage>
+          <pub-id pub-id-type="doi">10.3389/fnsys.2011.00103</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B47-diagnostics-12-02263">
+        <label>47.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Yu</surname><given-names>Q.</given-names></name>
+<name><surname>Sui</surname><given-names>J.</given-names></name>
+<name><surname>Rachakonda</surname><given-names>S.</given-names></name>
+<name><surname>He</surname><given-names>H.</given-names></name>
+<name><surname>Pearlson</surname><given-names>G.</given-names></name>
+<name><surname>Calhoun</surname><given-names>V.</given-names></name>
+</person-group>
+          <article-title>Altered Small-World Brain Networks in Temporal Lobe in Patients with Schizophrenia Performing an Auditory Oddball Task</article-title>
+          <source>Front. Syst. Neurosci. Orig. Res.</source>
+          <year>2011</year>
+          <volume>5</volume>
+          <fpage>7</fpage>
+          <pub-id pub-id-type="doi">10.3389/fnsys.2011.00007</pub-id>
+          <pub-id pub-id-type="pmid">21369355</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B48-diagnostics-12-02263">
+        <label>48.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Allen</surname><given-names>E.A.</given-names></name>
+<name><surname>Erhardt</surname><given-names>E.B.</given-names></name>
+<name><surname>Damaraju</surname><given-names>E.</given-names></name>
+<name><surname>Gruner</surname><given-names>W.</given-names></name>
+<name><surname>Segall</surname><given-names>J.M.</given-names></name>
+<name><surname>Silva</surname><given-names>R.F.</given-names></name>
+<name><surname>Havlicek</surname><given-names>M.</given-names></name>
+<name><surname>Rachakonda</surname><given-names>S.</given-names></name>
+<name><surname>Fries</surname><given-names>J.</given-names></name>
+<name><surname>Kalyanam</surname><given-names>R.</given-names></name>
+<etal/>
+</person-group>
+          <article-title>A Baseline for the Multivariate Comparison of Resting-State Networks</article-title>
+          <source>Front. Syst. Neurosci. Orig. Res.</source>
+          <year>2011</year>
+          <volume>5</volume>
+          <fpage>2</fpage>
+          <pub-id pub-id-type="doi">10.3389/fnsys.2011.00002</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B49-diagnostics-12-02263">
+        <label>49.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+<name><surname>Fu</surname><given-names>Z.</given-names></name>
+<name><surname>Di</surname><given-names>X.</given-names></name>
+<name><surname>Chan</surname><given-names>S.</given-names></name>
+<name><surname>Hung</surname><given-names>Y.</given-names></name>
+<name><surname>Biswal</surname><given-names>B.B.</given-names></name>
+<name><surname>Zhang</surname><given-names>Z.</given-names></name>
+</person-group>
+          <article-title>Time-varying correlation coefficients estimation and its application to dynamic connectivity analysis of fMRI</article-title>
+          <source>Proceedings of the 35th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)</source>
+          <conf-loc>Osaka, Japan</conf-loc>
+          <conf-date>3–7 July 2013</conf-date>
+          <publisher-name>IEEE</publisher-name>
+          <publisher-loc>Pistacaway, NJ, USA</publisher-loc>
+          <year>2013</year>
+          <fpage>2944</fpage>
+          <lpage>2947</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B50-diagnostics-12-02263">
+        <label>50.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Hutchison</surname><given-names>R.M.</given-names></name>
+<name><surname>Womelsdorf</surname><given-names>T.</given-names></name>
+<name><surname>Allen</surname><given-names>E.A.</given-names></name>
+<name><surname>Bandettini</surname><given-names>P.A.</given-names></name>
+<name><surname>Calhoun</surname><given-names>V.D.</given-names></name>
+<name><surname>Corbetta</surname><given-names>M.</given-names></name>
+<name><surname>Della Penna</surname><given-names>S.</given-names></name>
+<name><surname>Duyn</surname><given-names>J.H.</given-names></name>
+<name><surname>Glover</surname><given-names>G.H.</given-names></name>
+<name><surname>Gonzalez-Castillo</surname><given-names>J.</given-names></name>
+<etal/>
+</person-group>
+          <article-title>Dynamic functional connectivity: Promise, issues, and interpretations</article-title>
+          <source>NeuroImage</source>
+          <year>2013</year>
+          <volume>80</volume>
+          <fpage>360</fpage>
+          <lpage>378</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2013.05.079</pub-id>
+          <pub-id pub-id-type="pmid">23707587</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B51-diagnostics-12-02263">
+        <label>51.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Sakoğlu</surname><given-names>U.</given-names></name>
+<name><surname>Pearlson</surname><given-names>G.D.</given-names></name>
+<name><surname>Kiehl</surname><given-names>K.A.</given-names></name>
+<name><surname>Wang</surname><given-names>Y.M.</given-names></name>
+<name><surname>Michael</surname><given-names>A.M.</given-names></name>
+<name><surname>Calhoun</surname><given-names>V.D.</given-names></name>
+</person-group>
+          <article-title>A method for evaluating dynamic functional network connectivity and task-modulation: Application to schizophreni</article-title>
+          <source>Magn. Reson. Mater. Phys. Biol. Med.</source>
+          <year>2010</year>
+          <volume>23</volume>
+          <fpage>351</fpage>
+          <lpage>366</lpage>
+          <pub-id pub-id-type="doi">10.1007/s10334-010-0197-8</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B52-diagnostics-12-02263">
+        <label>52.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Jones</surname><given-names>D.T.</given-names></name>
+<name><surname>Vemuri</surname><given-names>P.</given-names></name>
+<name><surname>Murphy</surname><given-names>M.C.</given-names></name>
+<name><surname>Gunter</surname><given-names>J.L.</given-names></name>
+<name><surname>Senjem</surname><given-names>M.L.</given-names></name>
+<name><surname>Machulda</surname><given-names>M.M.</given-names></name>
+<name><surname>Przybelski</surname><given-names>S.A.</given-names></name>
+<name><surname>Gregg</surname><given-names>B.E.</given-names></name>
+<name><surname>Kantarci</surname><given-names>K.</given-names></name>
+<name><surname>Knopman</surname><given-names>D.S.</given-names></name>
+<etal/>
+</person-group>
+          <article-title>Non-Stationarity in the “Resting Brain’s” Modular Architecture</article-title>
+          <source>PLoS ONE</source>
+          <year>2012</year>
+          <volume>7</volume>
+          <elocation-id>e39731</elocation-id>
+          <pub-id pub-id-type="doi">10.1371/journal.pone.0039731</pub-id>
+          <pub-id pub-id-type="pmid">22761880</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B53-diagnostics-12-02263">
+        <label>53.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Wee</surname><given-names>C.-Y.</given-names></name>
+<name><surname>Yang</surname><given-names>S.</given-names></name>
+<name><surname>Yap</surname><given-names>P.-T.</given-names></name>
+<name><surname>Shen</surname><given-names>D.</given-names></name>
+</person-group>
+          <article-title>Sparse temporally dynamic resting-state functional connectivity networks for early MCI identification</article-title>
+          <source>Brain Imaging Behav.</source>
+          <year>2016</year>
+          <volume>10</volume>
+          <fpage>342</fpage>
+          <lpage>356</lpage>
+          <pub-id pub-id-type="doi">10.1007/s11682-015-9408-2</pub-id>
+          <pub-id pub-id-type="pmid">26123390</pub-id>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+  <floats-group>
+    <fig position="float" id="diagnostics-12-02263-f001">
+      <label>Figure 1</label>
+      <caption>
+        <p>Method block diagram.</p>
+      </caption>
+      <graphic xlink:href="diagnostics-12-02263-g001" position="float"/>
+    </fig>
+    <fig position="float" id="diagnostics-12-02263-f002">
+      <label>Figure 2</label>
+      <caption>
+        <p>Extracted ICNs with proposed ICA algorithm.</p>
+      </caption>
+      <graphic xlink:href="diagnostics-12-02263-g002" position="float"/>
+    </fig>
+    <fig position="float" id="diagnostics-12-02263-f003">
+      <label>Figure 3</label>
+      <caption>
+        <p>(<bold>a</bold>) Static functional network connectivity correlations were computed for each averaged across sessions. (<bold>b</bold>) FNC metrics of component spatial maps. Mutual information was computed between components and averaged across datasets. (<bold>c</bold>) Functional network connectivity correlations were computed for average HC dataset. (<bold>d</bold>) Mutual information was computed between components spatially for the HC dataset. (<bold>e</bold>) Functional network connectivity correlations we computed for the average MS dataset. (<bold>f</bold>) Mutual information was computed between components spatially for the MS dataset.</p>
+      </caption>
+      <graphic xlink:href="diagnostics-12-02263-g003" position="float"/>
+    </fig>
+    <fig position="float" id="diagnostics-12-02263-f004">
+      <label>Figure 4</label>
+      <caption>
+        <p>Dynamic functional connectivity of all 37 extracted ICs: six different state, selected based on k-mean clustering.</p>
+      </caption>
+      <graphic xlink:href="diagnostics-12-02263-g004" position="float"/>
+    </fig>
+    <fig position="float" id="diagnostics-12-02263-f005">
+      <label>Figure 5</label>
+      <caption>
+        <p>Dynamic functional connectivity using all extracted ICs: (<bold>a</bold>) average FNC across windows, (<bold>b</bold>) average standard deviation across windows for all datasets and averaged across subjects.</p>
+      </caption>
+      <graphic xlink:href="diagnostics-12-02263-g005" position="float"/>
+    </fig>
+    <fig position="float" id="diagnostics-12-02263-f006">
+      <label>Figure 6</label>
+      <caption>
+        <p>Dynamic functional connectivity of all 37 extracted ICs: six different states, selected based on ICA from all windows.</p>
+      </caption>
+      <graphic xlink:href="diagnostics-12-02263-g006" position="float"/>
+    </fig>
+    <fig position="float" id="diagnostics-12-02263-f007">
+      <label>Figure 7</label>
+      <caption>
+        <p>Dynamic connectivity maps: mean dwell time windows vs. cluster states.</p>
+      </caption>
+      <graphic xlink:href="diagnostics-12-02263-g007" position="float"/>
+    </fig>
+    <fig position="float" id="diagnostics-12-02263-f008">
+      <label>Figure 8</label>
+      <caption>
+        <p>Two-sample t-test for dynamic connectivity map for MS and HC group.</p>
+      </caption>
+      <graphic xlink:href="diagnostics-12-02263-g008" position="float"/>
+    </fig>
+    <fig position="float" id="diagnostics-12-02263-f009">
+      <label>Figure 9</label>
+      <caption>
+        <p>Mean static functional connectivity network for MS and HC using correlation with 90 brain regions defined by AAL atlas.</p>
+      </caption>
+      <graphic xlink:href="diagnostics-12-02263-g009" position="float"/>
+    </fig>
+    <fig position="float" id="diagnostics-12-02263-f010">
+      <label>Figure 10</label>
+      <caption>
+        <p>Mean dynamic FNC of both MS group and healthy control group using correlation with 90 brain regions defined by AAL atlas.</p>
+      </caption>
+      <graphic xlink:href="diagnostics-12-02263-g010" position="float"/>
+    </fig>
+    <fig position="float" id="diagnostics-12-02263-f011">
+      <label>Figure 11</label>
+      <caption>
+        <p>R-index computed for 2–37 cluster showing degree of difference between clusters. Most of the differences will occur for more than 32 clusters.</p>
+      </caption>
+      <graphic xlink:href="diagnostics-12-02263-g011" position="float"/>
+    </fig>
+    <fig position="float" id="diagnostics-12-02263-f012">
+      <label>Figure 12</label>
+      <caption>
+        <p>Estimated space as a 2D CCA projection for ICA repetition. Red color shown measure of correlation between clusters. (<bold>a</bold>) Measure of usual ICA based on bootstrapping dataset and repetition of ICA. (<bold>b</bold>) Proposed method of bootstrapping and repetition of ICA.</p>
+      </caption>
+      <graphic xlink:href="diagnostics-12-02263-g012" position="float"/>
+    </fig>
+    <table-wrap position="float" id="diagnostics-12-02263-t001">
+      <object-id pub-id-type="pii">diagnostics-12-02263-t001_Table 1</object-id>
+      <label>Table 1</label>
+      <caption>
+        <p>Studies on MS using fMRI and other MRI modalities.</p>
+      </caption>
+      <table frame="hsides" rules="groups">
+        <thead>
+          <tr>
+            <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">Group Study</th>
+            <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">Number of Subjects</th>
+            <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">Dataset</th>
+            <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">Method</th>
+            <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">Follow-Up</th>
+            <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">Year</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">RRMS and MS</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">16 patients with RRMS and 2 patients with possible MS<break/>9 HC</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Task fMRI<break/>T2-LL<break/>T1-LL</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Simple motor task</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">15–26 months </td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Pantano<break/>2014 [<xref rid="B2-diagnostics-12-02263" ref-type="bibr">2</xref>]</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">MS</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">MS (11 cases)<break/>HC (9 cases)</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">rs-fMRI<break/>Task fMRI<break/>DTI</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Cross-correlation<break/>Fiber tracking<break/></td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">---</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Mark J. Lowe<break/>2008 [<xref rid="B3-diagnostics-12-02263" ref-type="bibr">3</xref>]</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">RRMS</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">13 patients with early RRMS<break/>19 HC</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">rs-fMRI<break/>T1, T2</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">PASAT </td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">12 months</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">B. Audoin<break/>2008 [<xref rid="B4-diagnostics-12-02263" ref-type="bibr">4</xref>]</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">RRMS</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">20 patients with RRMS</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">rs-fMRI<break/>GM volumes and WM architecture</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Stroop task and rs-fMRI</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">12 weeks</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">M. Filippi<break/>2012 [<xref rid="B5-diagnostics-12-02263" ref-type="bibr">5</xref>]</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">RRMS</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">MS (18 cases)<break/>HC (18 cases)</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">rs-fMRI </td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">VBM<break/>SEINA <sup>1</sup></td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">---</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Bonavita<break/>2011 [<xref rid="B6-diagnostics-12-02263" ref-type="bibr">6</xref>]</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">MS</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">MS (16 cases)<break/>HC (16 cases)</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">rs-fMRI<break/>DTI</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">SIENA<break/>TBSS <sup>2</sup></td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">---</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Hawellek<break/>2011 [<xref rid="B7-diagnostics-12-02263" ref-type="bibr">7</xref>]</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">MS</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">MS (31 cases)<break/>HC (31 cases)</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">rs-fMRI </td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">FEW <sup>3</sup></td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">---</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Loitfelder<break/>2012 [<xref rid="B8-diagnostics-12-02263" ref-type="bibr">8</xref>]</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Early RRMS</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">MS (13 cases)<break/>HC (14 cases)</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">rs-fMRI </td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">ICA</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">---</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Faivre<break/>2012 [<xref rid="B9-diagnostics-12-02263" ref-type="bibr">9</xref>]</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">First-stage MS</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">MS (22 cases)<break/>HC (14 cases)</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">rs-fMRI </td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Graph connectivity</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">---</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Richiardi<break/>2012 [<xref rid="B10-diagnostics-12-02263" ref-type="bibr">10</xref>]</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Different MS</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">MS (42 cases)<break/>HC (42 cases)</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Task fMRI </td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Correlation</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">6 months</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Rocca<break/>2014 [<xref rid="B11-diagnostics-12-02263" ref-type="bibr">11</xref>]</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">RRMS</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">MS (55 cases)<break/>HC (24 cases)</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">rs-fMRI </td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Correlation</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">12 months</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Tona<break/>2014 [<xref rid="B12-diagnostics-12-02263" ref-type="bibr">12</xref>]</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">MS and NMO</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">NMO (30 cases)<break/>MS (25 cases)<break/>HC (35 cases)</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">rs-fMRI<break/>DTI<break/>T1, T2</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Cross-correlation<break/>FA analysis<break/>Cortical thickness Analysis</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">---</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Eshaghi<break/>2015 [<xref rid="B13-diagnostics-12-02263" ref-type="bibr">13</xref>]</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">MS</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">MS (43 cases)<break/>HC (20 cases)</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">rs-fMRI<break/>T1, T2</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Correlation<break/>Lesion segmentation</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">---</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Zhong<break/>2016 [<xref rid="B14-diagnostics-12-02263" ref-type="bibr">14</xref>]</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">RRMS and MS</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">18 cognitively impaired patients with RRMS<break/>Control group: 14 cognitively impaired patients with MS</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">NBV<break/>T2-LL<break/>rs-fMRI</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">FSL</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">8 weeks</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">S Bonavita<break/>2015 [<xref rid="B15-diagnostics-12-02263" ref-type="bibr">15</xref>]</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">MS</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">MS (27 cases)<break/>HC (27 cases)</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Task fMRI</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">SPM</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">---</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">L Pfaff<break/>2019 [<xref rid="B16-diagnostics-12-02263" ref-type="bibr">16</xref>]</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">RRMS</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">MS (12 cases)<break/>HC (12 cases)</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">RS fMRI</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">CONN toolbox</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">12 months</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">V Fleischer<break/>2020 [<xref rid="B17-diagnostics-12-02263" ref-type="bibr">17</xref>]</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">RRMS and SPMS</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">40 patients with RRMS and 28 patients with possible SPMS <sup>4</sup></td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">RS fMRI</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">CONN toolbox</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">---</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">A Temniy<break/>2021 [<xref rid="B18-diagnostics-12-02263" ref-type="bibr">18</xref>]</td>
+          </tr>
+        </tbody>
+      </table>
+      <table-wrap-foot>
+        <fn>
+          <p><sup>1</sup> Structural image evaluation using normalization of atrophy; <sup>2</sup> Tract-based spatial statistics; <sup>3</sup> Family-wise error; <sup>4</sup> Secondary progressive MS.</p>
+        </fn>
+      </table-wrap-foot>
+    </table-wrap>
+    <table-wrap position="float" id="diagnostics-12-02263-t002">
+      <object-id pub-id-type="pii">diagnostics-12-02263-t002_Table 2</object-id>
+      <label>Table 2</label>
+      <caption>
+        <p>MS and healthy group differences using fMRI.</p>
+      </caption>
+      <table frame="hsides" rules="groups">
+        <thead>
+          <tr>
+            <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">Brain Areas</th>
+            <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">BA</th>
+            <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">Max t-Score</th>
+            <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">(x, y, z)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">MS &lt; HCs</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Inferior Temporal Gyrus</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">20</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">4.6</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">(−57, −36, −21)</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Superior Parietal Lobule</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">7</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">3.6</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">(36, −57, 51)</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Middle Temporal Gyrus</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">21, 22</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">5.1</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">(63, −45, 3)</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Inferior Parietal Lobule</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">40</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">3.7</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">(51, −39, 60)</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Lingual Gyrus</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">18</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">3.8</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">(3, −90, −6)</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">MS &gt; HCs</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Medial Frontal Gyrus</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">10</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">17.1</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">(−6, 63, 6)</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Superior Frontal Gyrus</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">10</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">8.1</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">(−12, 69, 3)</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Anterior Cingulate</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">25</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">3.7</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">(−3, 18, −3)</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Caudate</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">-</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">10.4</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">(−6, 12, 9)</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Lateral Ventricle</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">-</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">8.6</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">(−3, 6, 9)</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Medial Frontal Gyrus</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">10, 11</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">9.8</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">(−6, 60, −12)</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Superior Temporal Gyrus</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">38</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">6.7</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">(−45, 21, −27)</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Inferior Temporal Gyrus and Fusiform Gyrus</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">37</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">4.3</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">(−54, −60, −12)</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Cuneus</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">18</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">4.7</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">(−9, −96, 15)</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Inferior Frontal Gyrus</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">10, 46</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">4.5</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">(−54, 21, 24)</td>
+          </tr>
+        </tbody>
+      </table>
+    </table-wrap>
+    <table-wrap position="float" id="diagnostics-12-02263-t003">
+      <object-id pub-id-type="pii">diagnostics-12-02263-t003_Table 3</object-id>
+      <label>Table 3</label>
+      <caption>
+        <p>Proposed ICA and Infomax ICA comparison with dynamic range and fALFF of extracted components.</p>
+      </caption>
+      <table frame="hsides" rules="groups">
+        <thead>
+          <tr>
+            <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">
+</th>
+            <th colspan="2" align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1">Proposed ICA</th>
+            <th colspan="2" align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1">Infomax ICA</th>
+          </tr>
+          <tr>
+            <th align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Component Number</th>
+            <th align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Dynamic Range</th>
+            <th align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">fALFF</th>
+            <th align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Dynamic Range</th>
+            <th align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">fALFF</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">1</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.038</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">1.642</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.040</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">2.133</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">2</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.033</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">1.226</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.040</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">1.540</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">3</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.033</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">1.166</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.038</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">1.926</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">4</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.029</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.923</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.049</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">2.541</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">5</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.040</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">1.862</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.033</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">1.235</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">6</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.033</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">1.248</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.034</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">1.241</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">7</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.034</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">1.402</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.039</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">1.857</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">8</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.034</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">1.344</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.041</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">1.953</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">9</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.038</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">1.653</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.032</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">1.166</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">10</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.035</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">1.423</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.029</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.958</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">11</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.039</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">1.951</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.037</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">1.368</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">12</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.030</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">1.098</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.032</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">1.073</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">13</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.038</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">1.523</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.031</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.993</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">14</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.039</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">1.934</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.042</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">2.033</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">15</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.036</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">1.650</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.033</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">1.247</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">16</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.040</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">1.775</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.033</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">1.251</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">17</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.039</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">2.239</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.028</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.824</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">18</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.036</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">1.314</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.036</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">1.333</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">19</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.038</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">1.473</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.037</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">1.748</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">20</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.033</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">1.113</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.039</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">1.948</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">21</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.040</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">2.305</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.033</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">1.204</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">22</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.037</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">1.507</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.039</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">1.536</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">23</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.038</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">1.788</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.034</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">1.298</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">24</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.039</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">1.821</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.041</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">2.146</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">25</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.036</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">1.497</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.042</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">2.341</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">26</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.034</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">1.346</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.040</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">1.955</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">27</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.036</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">1.524</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.037</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">1.207</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">28</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.041</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">1.792</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.039</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">1.914</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">29</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.038</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">1.607</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.043</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">2.217</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">30</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.045</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">2.056</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.029</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.869</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">31</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.039</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">1.748</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.037</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">1.632</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">32</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.036</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">1.517</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.040</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">1.726</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">33</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.039</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">1.719</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.033</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">1.265</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">34</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.041</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">2.131</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.043</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">2.347</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">35</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.043</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">2.977</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.037</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">1.738</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">36</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.042</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">2.221</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.040</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">1.972</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">37</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.038</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">1.512</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.035</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">1.536</td>
+          </tr>
+        </tbody>
+      </table>
+    </table-wrap>
+  </floats-group>
+</article>

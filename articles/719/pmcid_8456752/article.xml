@@ -1,0 +1,2900 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article" dtd-version="1.3">
+  <?properties open_access?>
+  <processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats">
+    <restricted-by>pmc</restricted-by>
+  </processing-meta>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">Neuroimage</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Neuroimage</journal-id>
+      <journal-title-group>
+        <journal-title>Neuroimage</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">1053-8119</issn>
+      <issn pub-type="epub">1095-9572</issn>
+      <publisher>
+        <publisher-name>Academic Press</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">34293465</article-id>
+      <article-id pub-id-type="pmc">8456752</article-id>
+      <article-id pub-id-type="pii">S1053-8119(21)00684-4</article-id>
+      <article-id pub-id-type="doi">10.1016/j.neuroimage.2021.118409</article-id>
+      <article-id pub-id-type="publisher-id">118409</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Deep learning for sex classification in resting-state and task functional brain networks from the UK Biobank</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" id="au0001">
+          <name>
+            <surname>Leming</surname>
+            <given-names>Matthew</given-names>
+          </name>
+          <email>mleming@mgh.harvard.edu</email>
+          <xref rid="cor0001" ref-type="corresp">⁎</xref>
+        </contrib>
+        <contrib contrib-type="author" id="au0002">
+          <name>
+            <surname>Suckling</surname>
+            <given-names>John</given-names>
+          </name>
+        </contrib>
+        <aff id="aff0001">Department of Psychiatry, University of Cambridge, Cambridge, Cambridgeshire CB2 0SZ, UK</aff>
+      </contrib-group>
+      <author-notes>
+        <corresp id="cor0001"><label>⁎</label>Corresponding author. <email>mleming@mgh.harvard.edu</email></corresp>
+      </author-notes>
+      <pub-date pub-type="pmc-release">
+        <day>01</day>
+        <month>11</month>
+        <year>2021</year>
+      </pub-date>
+      <!-- PMC Release delay is 0 months and 0 days and was based on <pub-date
+						pub-type="ppub">.-->
+      <pub-date pub-type="ppub">
+        <day>01</day>
+        <month>11</month>
+        <year>2021</year>
+      </pub-date>
+      <volume>241</volume>
+      <elocation-id>118409</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>9</day>
+          <month>10</month>
+          <year>2020</year>
+        </date>
+        <date date-type="rev-recd">
+          <day>13</day>
+          <month>7</month>
+          <year>2021</year>
+        </date>
+        <date date-type="accepted">
+          <day>18</day>
+          <month>7</month>
+          <year>2021</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>© 2021 The Authors</copyright-statement>
+        <copyright-year>2021</copyright-year>
+        <license>
+          <ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref>
+          <license-p>This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/).</license-p>
+        </license>
+      </permissions>
+      <abstract abstract-type="author-highlights" id="absh001">
+        <title>Highlights</title>
+        <p>
+          <list list-type="simple" id="lst0001">
+            <list-item id="lstitem0001">
+              <label>•</label>
+              <p id="p0001">Applied deep learning to sex classification in UK BioBank fMRI connectomes.</p>
+            </list-item>
+            <list-item id="lstitem0002">
+              <label>•</label>
+              <p id="p0002">Deep learning classifies sex better in resting-state than in task fMRI.</p>
+            </list-item>
+            <list-item id="lstitem0003">
+              <label>•</label>
+              <p id="p0003">Algorithm to balance out multiple confounds from an fMRI dataset.</p>
+            </list-item>
+            <list-item id="lstitem0004">
+              <label>•</label>
+              <p id="p0004">Adapted two deep learning visualization methods to fMRI connectome classification.</p>
+            </list-item>
+            <list-item id="lstitem0005">
+              <label>•</label>
+              <p id="p0005">Analyzed role of three brain a priori networks in sex classification.</p>
+            </list-item>
+          </list>
+        </p>
+      </abstract>
+      <abstract id="abs0001">
+        <p>Classification of whole-brain functional connectivity MRI data with convolutional neural networks (CNNs) has shown promise, but the complexity of these models impedes understanding of which aspects of brain activity contribute to classification. While visualization techniques have been developed to interpret CNNs, bias inherent in the method of encoding abstract input data, as well as the natural variance of deep learning models, detract from the accuracy of these techniques. We introduce a stochastic encoding method in an ensemble of CNNs to classify functional connectomes by sex. We applied our method to resting-state and task data from the UK BioBank, using two visualization techniques to measure the salience of three brain networks involved in task- and resting-states, and their interaction. To regress confounding factors such as head motion, age, and intracranial volume, we introduced a multivariate balancing algorithm to ensure equal distributions of such covariates between classes in our data. We achieved a final AUROC of 0.8459. We found that resting-state data classifies more accurately than task data, with the inner salience network playing the most important role of the three networks overall in classification of resting-state data and connections to the central executive network in task data.</p>
+      </abstract>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="sec0001">
+      <label>1</label>
+      <title>Introduction</title>
+      <p id="p0006">In recent years, neural networks have proven to be a powerful tool for classification of 2D and 3D images (<xref rid="bib0032" ref-type="bibr">Karpathy, Fei-Fei, 2014</xref>, <xref rid="bib0039" ref-type="bibr">Krizhevsky, Sutskever, Hinton, 2012</xref>, <xref rid="bib0047" ref-type="bibr">Maturana, Scherer, 2015</xref>). Because of their wide applicability in representing data such as proteins and social networks, much work has been done on adapting neural networks to accept graphs (i.e., networks of nodes interconnected by weighted edges) as input for tasks including whole-graph classification, clustering, and node-wise classification (<xref rid="bib0006" ref-type="bibr">Bruna, Zaremba, Szlam, LeCun, 2014</xref>, <xref rid="bib0011" ref-type="bibr">Defferrard, Bresson, Vandergheynst, 2016</xref>, <xref rid="bib0027" ref-type="bibr">Hamilton, Ying, Leskovec, 2017</xref>, <xref rid="bib0029" ref-type="bibr">Hechtlinger, Chakravarti, Qin, 2017</xref>, <xref rid="bib0035" ref-type="bibr">Kipf, Welling, 2017</xref>, <xref rid="bib0053" ref-type="bibr">Nikolentzos, Meladianos, Tixier, Skianis, Vazirgiannis, 2017</xref>).</p>
+      <p id="p0007">Convolutional neural networks (CNNs) adapted for graphs have potent applications in the classification of functional connectivity; a functional MRI reduced to a correlational matrix – effectively a graph – that measures the inter-regional relationships between the blood-oxygen-level-dependent (BOLD) signals in predefined anatomical brain areas. While there is no consensus in the neurophysiological interpretation of the resulting networks, certain features have been found to be robust markers of different mental states and disorders; for instance, the default mode network, a large-scale subnetwork within the parietal and frontal areas, has been found to be a marker of resting (task absent) functional connectivity (<xref rid="bib0058" ref-type="bibr">Raichle et al., 2001</xref>).</p>
+      <p id="p0008">While other machine learning (ML) models have been developed for analyzing graph data (<xref rid="bib0031" ref-type="bibr">Jie, Zhang, Wee, Shen, 2013</xref>, <xref rid="bib0038" ref-type="bibr">Kriege, Johansson, Morris, 2019</xref>), they have often been designed to characterize general networks (such as social networks) rather than fixed-node matrix representations, and so are not ideal for functional connectomes. Additionally, with its utilization of powerful deep learning structures (<xref rid="bib0005" ref-type="bibr">Brown, Kawahara, Hamarneh, 2018</xref>, <xref rid="bib0033" ref-type="bibr">Kawahara, Brown, Miller, Booth, Chau, Grunau, Zwicker, Hamarneh, 2017</xref>), CNNs are among the most promising ML tools for the diagnosis and prognosis of neurological and mental health disorders using graph representations of the structure and function of the brain. Recent work in this area has included innovations in deep learning models themselves: <xref rid="bib0055" ref-type="bibr">Parisot et al. (2018)</xref> and <xref rid="bib0043" ref-type="bibr">Li et al. (2019)</xref> applied graph neural networks (<xref rid="bib0035" ref-type="bibr">Kipf and Welling, 2017</xref>) to classify autism spectrum disorder in resting-state and task fMRI. <xref rid="bib0034" ref-type="bibr">Kim and Ye (2020)</xref> applied the recently-proposed graph isomorphism network (<xref rid="bib0076" ref-type="bibr">Xu et al., 2018</xref>) to classify sex in the brain, while (<xref rid="bib0019" ref-type="bibr">Gadgil et al., 2020</xref>) proposed an original spatio-temporal graph convolution to predict age and gender in rs-fMRI.</p>
+      <p id="p0009">Although they may be applied to classify such graphs, CNNs (and indeed, neural networks more generally) often face a problem with interpretability. Even if CNNs can classify data successfully, it is unknown which features of the input data make a disproportionate contribution in the process, and the model remains a “black box.” Knowledge of such features are especially necessary for biological applications in which the underlying mechanisms of the systems being classified are often of the greatest interest. To overcome the black box problem, a number of ways to visualize and quantify neural networks have been pioneered in recent years. These methods include activation maximization (<xref rid="bib0014" ref-type="bibr">Erhan et al., 2009</xref>), in which the data that maximally activates a hidden node is recorded, occlusion, in which the classification accuracy is measured when specific input data are systematically omitted from the process (<xref rid="bib0077" ref-type="bibr">Zeiler and Fergus, 2013</xref>), and saliency maps (<xref rid="bib0065" ref-type="bibr">Simonyan et al., 2014</xref>), later adapted into gradient class activation maps (<xref rid="bib0063" ref-type="bibr">Selvaraju et al., 2017</xref>), in which the derivative of the neural network with respect to input data is approximated displaying which parts of the input data effected the most change in the neural network.</p>
+      <p id="p0010">The problem of encoding graphs persists in the application of CNNs. <xref rid="bib0033" ref-type="bibr">Kawahara et al. (2017)</xref> previously employed salience maps in classifying connectivity matrices, using cross-shaped filters in convolutions, to show which connections in the brain had the greatest effect on the resultant classification (thus encoding edge-to-edge connections) instead of square-shaped filters that are more typical for 2D image classification. In our previous work, we used vertical-filters with CNNs and class activation maps to classify functional connectomes (<xref rid="bib0042" ref-type="bibr">Leming et al., 2020</xref>).</p>
+      <p id="p0011">While encoding based on the columns of a connectivity matrix is intuitively sound, given that it accounts for the edges connected to a particular node, it does in theory have three problems. First, the convolutions bias the output class activation maps; a highly salient single edge would also increase the salience of edges in its same row or column. Second, it is difficult to determine the veracity of saliency algorithms from biological data where the ground truth is unknown, and for single runs the algorithms may give spurious results (<xref rid="bib0036" ref-type="bibr">Kohavi, 1995</xref>), whereas they often indicate “visual saliency” for 2D images (i.e., areas of the image on which human subjects focus), which are straightforward to verify by a human observer. Because of the inconsistencies between ML models, the most robust solutions come from averaging salience maps found over a number of trained models (<xref rid="bib0042" ref-type="bibr">Leming, Gorríz, Suckling, 2020</xref>, <xref rid="bib0050" ref-type="bibr">Meenakshi, Jamison, Kuceyeski, Sabuncu, 2018</xref>). Third, convolving whole columns or rows with a single value (node) encodes a large amount of input data that scales with the size of the input matrix. This dilutes the relative contributions of single edges which may be essential in classification, and possibly leads to underfitting.</p>
+      <sec id="sec0002">
+        <label>1.1</label>
+        <title>Network brain function across the sexes</title>
+        <p id="p0012">Taken on their own, differences found between task-based and resting-state brain activations may be among the most robust discoveries of fMRI studies. The default mode network (DMN) has been consistently identified as a marker of resting-state (i.e. in the absence of a cognitively effortful task) connectomes since it was first described (<xref rid="bib0058" ref-type="bibr">Raichle et al., 2001</xref>). Other brain networks emblematic of particular tasks have been identified as well (<xref rid="bib0067" ref-type="bibr">Smith et al., 2009</xref>), including the dorsal and ventral attention networks (<xref rid="bib0010" ref-type="bibr">Corbetta, Shulman, 2002</xref>, <xref rid="bib0073" ref-type="bibr">Vossel, Geng, Fink, 2014</xref>), which are respectively concerned with voluntary focus on features and switches in attention or unexpected stimuli; i.e., the change between resting-state and task fMRI. As noted by <xref rid="bib0017" ref-type="bibr">Fox et al. (2005)</xref>, when performing simple memory tasks, the response commonly observed is proportionally increased activity in certain frontal and parietal cortical regions (<xref rid="bib0008" ref-type="bibr">Cabeza, Nyberg, 2000</xref>, <xref rid="bib0010" ref-type="bibr">Corbetta, Shulman, 2002</xref>) and decreased activity in the posterior cingulate, medial and lateral parietal, and medial prefrontal cortex (<xref rid="bib0025" ref-type="bibr">Gusnard, Akbudak, Shulman, Raichle, 2001</xref>, <xref rid="bib0048" ref-type="bibr">Mazoyer, Zago, Mellet, Bricogne, Etard, Houdè, Crivello, Joliot, Petit, Tzourio-Mazoyer, 2001</xref>, <xref rid="bib0049" ref-type="bibr">McKiernan, Kaufman, Kucera-Thompson, Binder, 2003</xref>, <xref rid="bib0064" ref-type="bibr">Shulman, Fiez, Corbetta, Buckner, Miezin, Raichle, Petersen, 1997</xref>, <xref rid="bib0066" ref-type="bibr">Simpson, Snyder, Gusnard, Raichle, 2001</xref>), which form the default mode network. <xref rid="bib0017" ref-type="bibr">Fox et al. (2005)</xref> identified two widely distributed, anticorrelated networks in the brain that exist in the resting state, but intensify during tasks. Additionally, switches between the resting-state and task often involve transitions from the DMN to the central executive (CEN) and salience networks (<xref rid="bib0021" ref-type="bibr">Goulden et al., 2014</xref>). The CEN is the dominant network following suppression of the DMN when a cognitively demanding task is being performed (<xref rid="bib0016" ref-type="bibr">Fox et al., 2006</xref>), while the salience network is activated in a less task-specific manner and more in response to perceived cognitive, homeostatic, or emotional salience (<xref rid="bib0062" ref-type="bibr">Seeley et al., 2007</xref>), which may be brought on by pain, uncertainty, or emotional tasks. Effective connectivity studies with granger causality (<xref rid="bib0068" ref-type="bibr">Sridharan et al., 2008</xref>) and dynamic causal modeling (<xref rid="bib0021" ref-type="bibr">Goulden et al., 2014</xref>) have indicated that the DMN to CEN transition is modulated by the salience network.</p>
+        <p id="p0013">Sex differences in brain networks, and more generally the functional processing of tasks, is an area of active scientific interest. But while functional imaging studies of the brain have often found differences between men and women, it is difficult to compare studies due to small sample sizes, differing analysis methods, different areas selected a priori for testing, and differences in particular tasks. Various task fMRI studies have found widely spread sex differences in the bilateral amygdala, hypothalamus, right cerebellum, and posterior and superior temporal sulcus in response to emotional and visuospatial processing (<xref rid="bib0026" ref-type="bibr">Hamann, Herman, Nolan, Wallen, 2004</xref>, <xref rid="bib0046" ref-type="bibr">Mackiewicz, Sarinopoulos, Cleven, Nitschke, 2006</xref>, <xref rid="bib0069" ref-type="bibr">Takahashi, Matsuura, Yahata, Koeda, Suhara, Okubo, 2006</xref>); right hemisphere activation in response to visuospatial tests (<xref rid="bib0023" ref-type="bibr">Gur et al., 2000</xref>); differing activations in the superior parietal lobule and the inferior frontal cortex in response to mental rotation tasks (<xref rid="bib0030" ref-type="bibr">Hugdahl et al., 2006</xref>); and limbic regions, prefrontal regions, visual cortex, the anterior cingulate gyrus, and the right subcallosal gyrus in response to emotional faces (<xref rid="bib0015" ref-type="bibr">Fischer, Sandblom, Herlitz, Fransson, Wright, Backman, 2004</xref>, <xref rid="bib0018" ref-type="bibr">Fusar-Poli, Placentino, Carletti, Landi, Allen, Surguladze, Benedetti, Abbamonte, Gasparotti, Barale, Perez, McGuire, Politi, 2009</xref>).</p>
+        <p id="p0014">Three large sample-size neuroimaging studies that documented functional sex differences in resting-state fMRI in both developing (<xref rid="bib0024" ref-type="bibr">Gur, Gur, 2016</xref>, <xref rid="bib0071" ref-type="bibr">Tomasi, Volkow, 2011</xref>) and adult populations (<xref rid="bib0059" ref-type="bibr">Ritchie et al., 2018</xref>) have been conducted. These studies found higher local functional connectivity in women than in men, higher connectivity in the DMN in women, and lower connectivity in the sensorimotor cortices. However, unlike the emotional stimuli studies, there were no particularly localized differences in activation between the samples. This was possibly due to the higher variation of resting-state fMRI due to its unconstrained nature (<xref rid="bib0007" ref-type="bibr">Buckner, Krienen, Yeo, 2013</xref>, <xref rid="bib0013" ref-type="bibr">Elton, Gao, 2015</xref>).</p>
+        <p id="p0015">The effects of sex on macro resting-state and task networks are still debated (<xref rid="bib0020" ref-type="bibr">Goldstone et al., 2016</xref>). Some studies (<xref rid="bib0001" ref-type="bibr">Agcaoglu, Miller, Mayer, Hugdahl, Calhoun, 2015</xref>, <xref rid="bib0044" ref-type="bibr">Liu, Stufflebeam, Sepulcre, Hedden, Buckner, 2009</xref>) have found that sex modulates the lateralization of resting-state networks, while other studies have reported only a small (<xref rid="bib0004" ref-type="bibr">Bluhm, Osuch, Lanius, Boksman, Neufeld, Théberge, Williamson, 2008</xref>, <xref rid="bib0045" ref-type="bibr">Lopez-Larson, Anderson, Ferguson, Yurgelun-Todd, 2011</xref>) or non-significant effect (<xref rid="bib0052" ref-type="bibr">Nielsen, Zielinski, Ferguson, Lainhart, Anderson, 2013</xref>, <xref rid="bib0075" ref-type="bibr">Weissman-Fogel, Moayedi, Taylor, Pope, Davis, 2010</xref>). Network-level sex differences in task fMRI indicate that men and women process tasks differently. Adolescent females have been reported as having higher functional connectivity in the DMN and fronto-parietal networks during a self-referential processing task (<xref rid="bib0002" ref-type="bibr">Alarcón et al., 2018</xref>). Analysis of canonical networks in task fMRI, although not able to draw substantial conclusions on the roles of the networks in different tasks, found that tasks involving fluid intelligence were the most discriminative for sex (<xref rid="bib0022" ref-type="bibr">Greene et al., 2018</xref>). These studies would suggest that men and women process tasks differently. However, they have not been validated on larger datasets.</p>
+      </sec>
+      <sec id="sec0003">
+        <label>1.2</label>
+        <title>Machine learning for sex classification</title>
+        <p id="p0016">When classifying between sexes, past ML studies using methods ranging from support vector machines (SVMs) to CNNs, have achieved classification accuracies between 65% and 87% (<xref rid="bib0009" ref-type="bibr">Casanova, Whitlow, Wagner, Espeland, Maldjian, 2012</xref>, <xref rid="bib0024" ref-type="bibr">Gur, Gur, 2016</xref>, <xref rid="bib0061" ref-type="bibr">Satterthwaite, Wolf, Roalf, Ruparel, Erus, Vandekar, Gennatas, Elliott, Smith, Hakonarson, Verma, Davatzikos, Gur, Gur, 2015</xref>, <xref rid="bib0078" ref-type="bibr">Zhang, Groen, Mennes, Greven, Buitelaar, Rommelse, 2018</xref>), depending on the dataset and methods used. In <xref rid="bib0042" ref-type="bibr">Leming et al. (2020)</xref>, we performed a classification by sex of functional connectomes acquired at multiple sites using a CNN with vertical filters, with a final area under the receiver operating characteristic curve (AUROC) of 0.7680, including an AUROC of 0.8295 with single-site, UK BioBank data. Recent studies in sex classification have highlighted the complexities of cross-sample classification and the need for class balancing. Using an SVM on two rs-fcMRI samples from the Human Connectome Project (HCP) and one from the 1000Brains study, <xref rid="bib0074" ref-type="bibr">Weis et al. (2020)</xref> achieved 75.1</p>
+        <p id="p0017">The objective of this article is not only to utilize CNNs to classify functional connectomes, but explain the classification performance in terms of those edges and subnetworks that are most salient. To do so, we introduce a stochastic deep learning model that allows for the consideration of each edge in a network independently without overfitting, presenting robust results by training and combining many such models in the ensemble framework first proposed in <xref rid="bib0042" ref-type="bibr">Leming et al. (2020)</xref>. Convolutions with random samples of edges allow for the consideration of each edge independently without overfitting to one particular edge (which would be the case with fully-connected neural networks). However, in training many such models and averaging their outputs, this scrambling does not suffer from the issue of spatial biases seen in class activation maps with vertical convolutions (an effect that may be observed in <xref rid="bib0042" ref-type="bibr">Leming et al. (2020)</xref>).</p>
+        <p id="p0018">In this paper, we used CNNs and utilized big data to characterize sex differences in connectomic representations of resting-state and task fMRI (in UK Biobank data, a faces/shapes “emotion” task <xref rid="bib0003" ref-type="bibr">Barch, Burgess, Harms, Petersen, Schlaggar, Corbetta, Glasser, Curtiss, Dixit, Feldt, Nolan, Bryant, Hartley, Footer, Bjork, Poldrack, Smith, Johansen-Berg, Snyder, Van Essen, Consortium., 2013</xref>, <xref rid="bib0028" ref-type="bibr">Hariri, Tessitore, Mattay, Fera, Weinberger, 2002</xref>) with a focus on the DMN, the salience network, and the CEN. We trained our CNNs to classify sex in an extremely large dataset: 16,970 fMRI acquisitions from the UK BioBank, decomposed into multi-wavelet-frequency functional connectivity matrices (<xref rid="bib0056" ref-type="bibr">Patel, Bullmore, 2016</xref>, <xref rid="bib0057" ref-type="bibr">Patel, Kundu, Rubinov, Jones, Vertes, Ersche, Suckling, Bullmore, 2014</xref>). To eliminate the effects of factors such as age, head motion, and intracranial volume, we also detail a multivariate class balancing scheme that ensured equal distributions of these factors within statistical significance. We evaluated performance with the average AUROC, a standard measure of accuracy in ML, across 300 models in an ensemble scheme. We then used guided gradient class activation mapping (Grad-CAM) (<xref rid="bib0063" ref-type="bibr">Selvaraju et al., 2017</xref>) and occlusion (<xref rid="bib0077" ref-type="bibr">Zeiler and Fergus, 2013</xref>) of individual brain networks to evaluate the salience of each edge within and connecting brain networks, comparing their relative salience within the model.</p>
+      </sec>
+    </sec>
+    <sec id="sec0004">
+      <label>2</label>
+      <title>Methods</title>
+      <sec id="sec0005">
+        <label>2.1</label>
+        <title>Pre-processing</title>
+        <sec id="sec0006">
+          <label>2.1.1</label>
+          <title>Data acquisition and pre-processing</title>
+          <p id="p0019">The dataset was fMRI data from the UK Biobank, which included both resting-state and task data from a faces/shapes “emotion” task (<xref rid="bib0003" ref-type="bibr">Barch, Burgess, Harms, Petersen, Schlaggar, Corbetta, Glasser, Curtiss, Dixit, Feldt, Nolan, Bryant, Hartley, Footer, Bjork, Poldrack, Smith, Johansen-Berg, Snyder, Van Essen, Consortium., 2013</xref>, <xref rid="bib0028" ref-type="bibr">Hariri, Tessitore, Mattay, Fera, Weinberger, 2002</xref>). Details of the acquisition parameters are given elsewhere (<xref rid="bib0059" ref-type="bibr">Ritchie et al., 2018</xref>).</p>
+          <p id="p0020">Pre-processing was completed with the fMRI Signal Processing Toolbox (SPT; <ext-link ext-link-type="uri" xlink:href="http://www.brainwavelet.org" id="intrrf0001">www.brainwavelet.org</ext-link>). Following initial identification of the brain parenchyma, and affine registration of the 4D sequence to the mean of the sequence, head motion correction was accomplished using SpeedyPP version 2.0. This process utilized AFNI tools and wavelet despiking (<xref rid="bib0056" ref-type="bibr">Patel, Bullmore, 2016</xref>, <xref rid="bib0057" ref-type="bibr">Patel, Kundu, Rubinov, Jones, Vertes, Ersche, Suckling, Bullmore, 2014</xref>), with low- and high-bandpass filters of 0.01Hz and 0.1Hz, respectively, in addition to motion and motion derivative regression. Three motion indicators measured with tools in FSL (FSL motion outliers and FAST; fsl.fmrib.ox.ac.uk/fsl) were recorded that were later applied in class balancing: framewise displacement, spike percentage values, and DVARs. Thus, even if motion correction were imperfect, each dataset would have the same distribution of motion values in either class.</p>
+          <p id="p0021">Time-series at each voxel in the brain were wavelet despiked to remove transient signals, and then functional and structural datasets were registered to Montreal Neurological Institute (MNI) space and parcellated using the 116-area automated anatomical labeling (AAL) template, including subcortical regions (<xref rid="bib0072" ref-type="bibr">Tzourio-Mazoyer et al., 2002</xref>), that defined the nodes of the graph.</p>
+          <p id="p0022">The average BOLD signal from each parcel was decomposed by wavelet transform in to three frequency bands: 0.05-0.1 Hz, 0.03-0.05 Hz, and 0.01-0.03 Hz. In each frequency band, separately for each of N datasets, the correlation of the 3 wavelet coefficients between 116 parcels estimated the edge weights, resulting in N <inline-formula><mml:math id="M1" altimg="si6.svg"><mml:mrow><mml:mi>N</mml:mi><mml:mo linebreak="goodbreak">×</mml:mo><mml:mrow/><mml:mn>3</mml:mn><mml:mo linebreak="goodbreak">×</mml:mo><mml:mrow/><mml:mn>116</mml:mn><mml:mo linebreak="goodbreak">×</mml:mo><mml:mrow/><mml:mn>116</mml:mn></mml:mrow></mml:math></inline-formula> symmetric connectivity matrices.</p>
+          <p id="p0023">Intracranial volume was estimated from structural images with FSL FAST.</p>
+          <p id="p0024">Pre-processing was accomplished on a server cluster over a period of several weeks. Due to the volume of datasets, individualized quality control was not possible. From beginning to end, 34.8% of datasets failed the parcellation/wavelet correlation stages and were rejected from further analysis.</p>
+        </sec>
+        <sec id="sec0007">
+          <label>2.1.2</label>
+          <title>Dataset balancing of confounding factors</title>
+          <p id="p0025">When viewed across the full dataset, there were clear differences in the distributions of covariates when stratifying data by both sex and resting-state/task. sex differences in intracranial volume are well-documented (<xref rid="bib0060" ref-type="bibr">Ruigrok et al., 2014</xref>), and differences in head motion in resting-state and task datasets were also observed. To address these confounding factors, we implemented an algorithm to balance the datasets such that confounding factors, if successfully measured, were not statistically different between groups. This algorithm first required continuous covariates (such as mean framewise displacement, intracranial volume, and age) to be discretized such that values within a given range are placed into “bins”, with each bin covering an equal span of values. Covariates such as collection were already discrete.</p>
+          <p id="p0026">The algorithm curated a subset of the total dataset such that a datapoint from class <inline-formula><mml:math id="M2" altimg="si7.svg"><mml:mi>A</mml:mi></mml:math></inline-formula> within bins <inline-formula><mml:math id="M3" altimg="si8.svg"><mml:mrow><mml:msub><mml:mi>b</mml:mi><mml:mn>1</mml:mn></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mi>b</mml:mi><mml:mn>2</mml:mn></mml:msub><mml:mo>,</mml:mo><mml:mo>…</mml:mo><mml:msub><mml:mi>b</mml:mi><mml:mi>n</mml:mi></mml:msub></mml:mrow></mml:math></inline-formula> had a corresponding datapoint within the same multivariate bins from class <inline-formula><mml:math id="M4" altimg="si9.svg"><mml:mi>B</mml:mi></mml:math></inline-formula> that was also within the bins <inline-formula><mml:math id="M5" altimg="si8.svg"><mml:mrow><mml:msub><mml:mi>b</mml:mi><mml:mn>1</mml:mn></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mi>b</mml:mi><mml:mn>2</mml:mn></mml:msub><mml:mo>,</mml:mo><mml:mo>…</mml:mo><mml:msub><mml:mi>b</mml:mi><mml:mi>n</mml:mi></mml:msub></mml:mrow></mml:math></inline-formula>. In effect, and bearing in mind that males have larger average intracranial volumes, females with smaller intracranial volumes and males with larger intracranial volumes were used less often in the training set, while males with smaller intracranial volumes and females with larger intracranial volumes were more likely to be included in a particular sampling. There is a trade off between the size of individual bins and the size of the dataset, since larger bins are naturally more inclusive, but allow for more variation in the distribution of covariates. Thus, the minimum number of bins was used such that it would not reject the null hypothesis with a nonparametric Mann-Whitney <inline-formula><mml:math id="M6" altimg="si4.svg"><mml:mi>U</mml:mi></mml:math></inline-formula>-test with <inline-formula><mml:math id="M7" altimg="si10.svg"><mml:mrow><mml:mi>p</mml:mi><mml:mo linebreak="goodbreak">&gt;</mml:mo><mml:mo>.</mml:mo><mml:mn>10</mml:mn></mml:mrow></mml:math></inline-formula>, with the algorithm iteratively increasing bin count on each confounding factor and applying the Mann-Whitney <inline-formula><mml:math id="M8" altimg="si4.svg"><mml:mi>U</mml:mi></mml:math></inline-formula>-test until this threshold was achieved. We balanced by age, mean framewise displacement (MFD), intracranial volume (ICV), mean DVARs, and mean spike percentage.</p>
+          <p id="p0027">This algorithm was applied twice to our data. The first balanced men and women. This scheme forced a 1:1 ratio between sexes, with distributions of respective covariates maintained. Data was then balanced by resting-state and task, though no ratios were forced. This left four divisions in the data: resting-state and task, men and women, with approximately equal distributions of confounding factors.</p>
+        </sec>
+      </sec>
+      <sec id="sec0008">
+        <label>2.2</label>
+        <title>Machine learning</title>
+        <p id="p0028">We classified functional data from the UK BioBank by sex. Because classification of UK BioBank rest/task data achieved near-perfect accuracy in <xref rid="bib0042" ref-type="bibr">Leming et al. (2020)</xref>, we chose not to repeat this analysis. Here, the focus was on the relative classification accuracy of task data and resting-state data when classifying by sex.</p>
+        <sec id="sec0009">
+          <label>2.2.1</label>
+          <title>Model structure</title>
+          <p id="p0029">The deep learning model was an ensemble of scrambled CNNs implemented in Keras with a Tensorflow backend. The architecture is shown in <xref rid="fig0001" ref-type="fig">Fig. 1</xref>. We first randomly permuted the unique values (nodes) of the connectivity matrices, preserving the permutation order across wavelet frequency bands. These matrices were then input to a CNN with 256 filters of shape <inline-formula><mml:math id="M9" altimg="si11.svg"><mml:mrow><mml:mn>1</mml:mn><mml:mo linebreak="goodbreak">×</mml:mo><mml:mn>58</mml:mn><mml:mo linebreak="goodbreak">×</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:math></inline-formula>. This convolved <inline-formula><mml:math id="M10" altimg="si12.svg"><mml:mrow><mml:mn>58</mml:mn><mml:mo linebreak="goodbreak">×</mml:mo><mml:mn>3</mml:mn></mml:mrow></mml:math></inline-formula> random values of the matrix which was then fed into three dense layers, each with 64 hidden units, with batch normalization layers, rectified linear unit (ReLU), and 0.5 dropout between them. Finally, the data was binary classified through a softmax layer.<fig id="fig0001"><label>Fig. 1</label><caption><p>In this model, matrices are encoded by random scrambling prior to being fed into a single convolutional layer, followed by three dense layers. In between each layer is a batch normalization and rectified linear unit (ReLU) layer, with 50 percent dropout in between the dense layers. Our training scheme trains 300 such models, each with its unique scrambling order, independently on a class- and covariate-balanced subset of the whole dataset, then combines votes for datapoints appearing in overlapping test sets into a final ensemble vote.</p></caption><alt-text id="at0001">Fig. 1</alt-text><graphic xlink:href="gr1"/></fig></p>
+          <p id="p0030">The scrambling procedure removes any spatial priors in the encoding of data and is implemented to remove spatial biases from the visualizations. This would seemingly take away the purpose of convolutions in the model, but we maintain it for two reasons. First, it allows for the use of the internal analysis method we previously proposed in <xref rid="bib0042" ref-type="bibr">Leming et al. (2020)</xref>, which may be applied in future studies, and generally makes it more comparable to that work. Second, because of the weight-sharing effects of convolutions, which reduce the total number of trainable parameters, it acts as a regularization method that builds on the dropout and batch normalization layers, which is appropriate for small training samples that may be prone to overfitting (<xref rid="bib0040" ref-type="bibr">Kukačka, Golkov, Cremers, 2017</xref>, <xref rid="bib0054" ref-type="bibr">Ott, Linstead, LaHaye, Baldi, 2020</xref>). To further validate the model, we additionally compare it to the performance of an ensemble of fully-connected neural networks lacking the convolutional layers.</p>
+        </sec>
+        <sec id="sec0010">
+          <label>2.2.2</label>
+          <title>Training</title>
+          <p id="p0031">The data were separated into training, validation, and test sets, with an approximate ratio of 4:1:1. We trained 300 CNN models on random class-balanced subsamples of the whole dataset, using an Adam optimizer with a categorical cross-entropy loss function; otherwise, Keras default settings were used. Each model was trained for 100 epochs (cycles through the training set), and the epoch with the highest validation accuracy was selected. CNN performance was reported on the test set. These 300 models with their respective test set classifications were then unified in an ensemble model. The output classification of a dataset appearing in <inline-formula><mml:math id="M11" altimg="si13.svg"><mml:mfrac><mml:mi>n</mml:mi><mml:mn>300</mml:mn></mml:mfrac></mml:math></inline-formula> models was averaged across <inline-formula><mml:math id="M12" altimg="si14.svg"><mml:mi>n</mml:mi></mml:math></inline-formula> models. As models were trained independently of one another and only the accuracies reported on their respective test sets were averaged, no mixing occurred between the test and training sets. Thus, datasets were not counted more than once when measuring the final accuracy of the ensemble models, reported as AUROCs. In total, 14,683 datasets were used at least once in the test sets, comprising 86.5% of the overall dataset.</p>
+        </sec>
+      </sec>
+      <sec id="sec0011">
+        <label>2.3</label>
+        <title>Visualization of machine learning results</title>
+        <p id="p0032">We used two different ML visualization methods to assess the role of three different, a priori brain networks in the sex classification of resting-state and task data.</p>
+        <sec id="sec0012">
+          <label>2.3.1</label>
+          <title>Brain network encoding</title>
+          <p id="p0033">To assess the role of the DMN, CEN, and salience network in classification, we selected representative nodes from the AAL parcellation (named in <xref rid="fig0005" ref-type="fig">Fig. 5</xref>), referring to prior network descriptions (<xref rid="bib0051" ref-type="bibr">Mulders et al., 2015</xref>). Each network comprised 10 distinct nodes. The DMN was characterized by a combination of the medial frontal gyrus, posterior cingulum, parahippocampus, precuneus, subgenual anterior cingulate cortex, and inferior parietal lobe, the CEN by the bilateral middle frontal lobe, frontal interior triangularis, frontal superior medial, and the superior and inferior parietal lobe, and the salience network by the bilateral insula, anterior cingulum, amygdala, and the middle and superior temporal pole (<xref rid="fig0002" ref-type="fig">Fig. 2</xref>).<fig id="fig0002"><label>Fig. 2</label><caption><p>A 3d display of the three networks analyzed in this paper, in the AAL parcellation. Green: default mode network; blue: salience network; red: central executive network. Each network is comprised of ten distinct brain regions. (For interpretation of the references to colour in this figure legend, the reader is referred to the web version of this article.)</p></caption><alt-text id="at0002">Fig. 2</alt-text><graphic xlink:href="gr2"/></fig></p>
+          <p id="p0034">For both of the analysis methods described below, we isolated edges making up these networks in two different ways: first, by exclusively selecting edges within the network; i.e. edges connecting two nodes of a given network (comprising <inline-formula><mml:math id="M13" altimg="si15.svg"><mml:mrow><mml:mfrac><mml:mrow><mml:mn>10</mml:mn><mml:mo>×</mml:mo><mml:mo>(</mml:mo><mml:mn>10</mml:mn><mml:mo>−</mml:mo><mml:mn>1</mml:mn><mml:mo>)</mml:mo></mml:mrow><mml:mn>2</mml:mn></mml:mfrac><mml:mo linebreak="goodbreak">=</mml:mo><mml:mn>45</mml:mn></mml:mrow></mml:math></inline-formula> unique edges); and second, all edges both within and connecting to a network, by selecting those edges that connect to at least one other node (comprising <inline-formula><mml:math id="M14" altimg="si16.svg"><mml:mrow><mml:mn>10</mml:mn><mml:mo linebreak="goodbreak">×</mml:mo><mml:mrow><mml:mo>(</mml:mo><mml:mn>116</mml:mn><mml:mo linebreak="badbreak">−</mml:mo><mml:mn>1</mml:mn><mml:mo>)</mml:mo></mml:mrow><mml:mo linebreak="goodbreak">−</mml:mo><mml:mfrac><mml:mrow><mml:mn>10</mml:mn><mml:mo>×</mml:mo><mml:mo>(</mml:mo><mml:mn>10</mml:mn><mml:mo>−</mml:mo><mml:mn>1</mml:mn><mml:mo>)</mml:mo></mml:mrow><mml:mn>2</mml:mn></mml:mfrac><mml:mo linebreak="goodbreak">=</mml:mo><mml:mn>1105</mml:mn></mml:mrow></mml:math></inline-formula> unique edges). Thus, for each analysis method, two sets of results are presented: one for the sets of edges within a network, and the other for all edges connected to a network.</p>
+        </sec>
+        <sec id="sec0013">
+          <label>2.3.2</label>
+          <title>Gradient class activation maps</title>
+          <p id="p0035">We applied the Grad-CAM algorithm (<xref rid="bib0014" ref-type="bibr">Erhan, Bengio, Courville, Vincent, 2009</xref>, <xref rid="bib0037" ref-type="bibr">Kotikalapudi, contributors</xref>, <xref rid="bib0063" ref-type="bibr">Selvaraju, Cogswell, Das, Vedantam, Parikh, Batra, 2017</xref>) to find class activation maps (CAMs) for each dataset in each CNN model. These are invaluable visualizations that may be employed to determine which areas of input data a deep learning model focuses on in making its classification decision. Grad-CAM is an extension of the general salience algorithm (<xref rid="bib0065" ref-type="bibr">Simonyan et al., 2014</xref>). In its simplest form, salience is obtained by taking the derivative (approximated as a first-order Taylor expansion) of a particular deep learning model with respect to a particular input image. In studies of 2D images, CAMs are able to distinguish between different objects within a single image belonging to different classes (<xref rid="bib0063" ref-type="bibr">Selvaraju et al., 2017</xref>); for example, in a multiclass classifier of a picture of a cat and a dog, taking an image with respect to class 0 would highlight the cat, while taking the same image with respect to class 1 would highlight the dog. Grad-CAM extends this by making CAMs applicable to a variety of CNNs, including those that use fully-connected deep layers, as used here. In recent years, they have been applied to various deep learning MRI classification tasks (<xref rid="bib0041" ref-type="bibr">Lee, Lee, Lee, Park, Yoon, 2018</xref>, <xref rid="bib0079" ref-type="bibr">Zhang, Hong, McClement, Oladosu, Pridham, Slaney, 2021</xref>).</p>
+          <p id="p0036">We derived CAMs from each independent stochastic CNN with respect to both class 0 (females) and class 1 (males) across three wavelet bands and averaged these across the 300 models, producing a single <inline-formula><mml:math id="M15" altimg="si17.svg"><mml:mrow><mml:mn>116</mml:mn><mml:mo linebreak="goodbreak">×</mml:mo><mml:mn>116</mml:mn></mml:mrow></mml:math></inline-formula> CAM for each fMRI dataset in the ensemble models. The total distribution for CAM values within and connecting to each particular brain network was then compared to every other CAM value. Due to the extremely large number of values, distributional differences were measured by Cohen’s d (effect size), rather than statistical significance.</p>
+        </sec>
+        <sec id="sec0014">
+          <label>2.3.3</label>
+          <title>Occlusion</title>
+          <p id="p0037">In separate sex classification models, we occluded half of the edges for each model in the ensemble and trained on the occluded data. This was inspired by photographic image occlusion (<xref rid="bib0077" ref-type="bibr">Zeiler and Fergus, 2013</xref>) which deliberately excludes portions of data and measures relative classification accuracy with the occluded data as a means of detecting salient areas. The importance of the three brain networks to the classification was tested by comparing the average AUROC of 300 models whose occluded edges were the edges making up the particular brain network, and 300 models for which brain networks were not occluded. We trained on each set using the same 300 model/ensemble scheme detailed above (see <xref rid="fig0006" ref-type="fig">Fig. 6</xref>, top). The relative accuracies of these independent models, both on the complete dataset and for the resting-state and task fMRI data, were compared to understand the contributions of different networks to sex classification in both resting-state and task fMRI. In particular, we applied a nonparametric statistical test on the two sets of 300 AUROCs including and excluding a particular brain network, then reported the p-value of this test, corrected for multiple comparisons.</p>
+          <p id="p0038">We trained, for each of the three networks, 300 models that included the given network and 300 excluding it, each with the two different encoding schemes (i.e. considering the edges only within a network and all edges connected to a network), for each of the three networks (DMN, CEN, and salience network). In total, we trained <inline-formula><mml:math id="M16" altimg="si18.svg"><mml:mrow><mml:mn>2</mml:mn><mml:mo linebreak="goodbreak">×</mml:mo><mml:mn>2</mml:mn><mml:mo linebreak="goodbreak">×</mml:mo><mml:mn>3</mml:mn><mml:mo linebreak="goodbreak">×</mml:mo><mml:mn>300</mml:mn><mml:mo linebreak="goodbreak">=</mml:mo><mml:mn>3600</mml:mn></mml:mrow></mml:math></inline-formula> models for these occlusion tests.</p>
+        </sec>
+      </sec>
+    </sec>
+    <sec id="sec0015">
+      <label>3</label>
+      <title>Results</title>
+      <sec id="sec0016">
+        <label>3.1</label>
+        <title>Datasets and pre-processing</title>
+        <sec id="sec0017">
+          <label>3.1.1</label>
+          <title>Dataset balancing</title>
+          <p id="p0039">The datasets displayed significant motion effects between groups, especially with regards to task- and resting-state differences, as well as significant differences in intracranial volumes between sexs (<xref rid="fig0003" ref-type="fig">Fig. 3</xref>). The class balancing scheme selectively eliminated datasets such that each class had similar distributions across each covariate, as well as a 1:1 ratio of males to females. The same balancing procedure was also performed for resting-state and task data, with the original ratios present in the dataset maintained. Class balancing disincentivized the model from classifying based on confounding factors. The balanced class distributions can be seen at the bottom of <xref rid="fig0003" ref-type="fig">Fig. 3</xref>.<fig id="fig0003"><label>Fig. 3</label><caption><p>Histograms displaying distributions of random training sets with respect to mean FD and intracranial volumes, divided both by sex and resting-state/task, before and after the class balancing scheme.</p></caption><alt-text id="at0003">Fig. 3</alt-text><graphic xlink:href="gr3"/></fig></p>
+        </sec>
+      </sec>
+      <sec id="sec0018">
+        <label>3.2</label>
+        <title>Machine learning</title>
+        <sec id="sec0019">
+          <label>3.2.1</label>
+          <title>Model accuracy</title>
+          <p id="p0040">We initially classified by sex balanced datasets with both resting-state and task fMRI. We used 300 independent CNNs that took as input randomly scrambled unique values of the input wavelet correlation matrices (<xref rid="fig0001" ref-type="fig">Fig. 1</xref>) in a stratified cross-validation (<xref rid="bib0036" ref-type="bibr">Kohavi, 1995</xref>) scheme. The final results for the 300 models are given in <xref rid="tbl0001" ref-type="table">Table 1</xref> (top row) with an average AUROC of 0.8010 when assessing the CNNs independently. However, when all 300 models were aggregated into a single classification such that predictions for a particular dataset appearing across multiple independent models were averaged into a single value (<xref rid="fig0001" ref-type="fig">Fig. 1</xref>), the AUROC was 0.8459. The same scheme was run with 300 independent fully-connected neural networks, with the same structure as described above except lacking convolutional layers; the resulting AUROC was 0.8318.<table-wrap position="float" id="tbl0001"><label>Table 1</label><caption><p>Ensemble and Mean AUROCS of all models. Distributions of each of these classification accuracies are shown in <xref rid="fig0006" ref-type="fig">Fig. 6</xref>.</p></caption><alt-text id="at0007">Table 1</alt-text><table frame="hsides" rules="groups"><thead><tr><th colspan="2" align="left"/><th colspan="2" align="left">All<hr/></th><th colspan="2" align="left">Rest<hr/></th><th colspan="2" align="left">Task<hr/></th></tr><tr><th colspan="2" align="left"/><th align="left" valign="top">Ens.</th><th align="left" valign="top">Mean <inline-formula><mml:math id="M17" altimg="si5.svg"><mml:mo>±</mml:mo></mml:math></inline-formula> Std</th><th align="left" valign="top">Ens.</th><th align="left" valign="top">Mean <inline-formula><mml:math id="M18" altimg="si5.svg"><mml:mo>±</mml:mo></mml:math></inline-formula> Std</th><th align="left" valign="top">Ens.</th><th align="left" valign="top">Mean <inline-formula><mml:math id="M19" altimg="si5.svg"><mml:mo>±</mml:mo></mml:math></inline-formula> Std</th></tr></thead><tbody><tr><td colspan="2" align="center" valign="top">Complete</td><td valign="top">0.8459</td><td valign="top">0.8010 <inline-formula><mml:math id="M20" altimg="si5.svg"><mml:mo>±</mml:mo></mml:math></inline-formula> 0.0164</td><td valign="top">0.8923</td><td valign="top">0.8504 <inline-formula><mml:math id="M21" altimg="si5.svg"><mml:mo>±</mml:mo></mml:math></inline-formula> 0.0184</td><td valign="top">0.7683</td><td valign="top">0.7207 <inline-formula><mml:math id="M22" altimg="si5.svg"><mml:mo>±</mml:mo></mml:math></inline-formula> 0.0285</td></tr><tr><td colspan="8" align="left" valign="top">Inner Edges Only</td></tr><tr><td valign="top">CEN</td><td valign="top">Incl.</td><td valign="top">0.8380</td><td valign="top">0.7805 <inline-formula><mml:math id="M23" altimg="si5.svg"><mml:mo>±</mml:mo></mml:math></inline-formula> 0.0163</td><td valign="top">0.8844</td><td valign="top">0.8343 <inline-formula><mml:math id="M24" altimg="si5.svg"><mml:mo>±</mml:mo></mml:math></inline-formula> 0.0179</td><td valign="top">0.7609</td><td valign="top">0.7027 <inline-formula><mml:math id="M25" altimg="si5.svg"><mml:mo>±</mml:mo></mml:math></inline-formula> 0.0267</td></tr><tr><td/><td valign="top">Excl.</td><td valign="top">0.8386</td><td valign="top">0.7798 <inline-formula><mml:math id="M26" altimg="si5.svg"><mml:mo>±</mml:mo></mml:math></inline-formula> 0.0165</td><td valign="top">0.8825</td><td valign="top">0.8315 <inline-formula><mml:math id="M27" altimg="si5.svg"><mml:mo>±</mml:mo></mml:math></inline-formula> 0.0193</td><td valign="top">0.7641</td><td valign="top">0.7050 <inline-formula><mml:math id="M28" altimg="si5.svg"><mml:mo>±</mml:mo></mml:math></inline-formula> 0.0278</td></tr><tr><td valign="top">DMN</td><td valign="top">Incl.</td><td valign="top">0.8407</td><td valign="top">0.7804 <inline-formula><mml:math id="M29" altimg="si5.svg"><mml:mo>±</mml:mo></mml:math></inline-formula> 0.0160</td><td valign="top">0.8868</td><td valign="top">0.8336 <inline-formula><mml:math id="M30" altimg="si5.svg"><mml:mo>±</mml:mo></mml:math></inline-formula> 0.0189</td><td valign="top">0.7643</td><td valign="top">0.7018 <inline-formula><mml:math id="M31" altimg="si5.svg"><mml:mo>±</mml:mo></mml:math></inline-formula> 0.0289</td></tr><tr><td/><td valign="top">Excl.</td><td valign="top">0.8420</td><td valign="top">0.7804 <inline-formula><mml:math id="M32" altimg="si5.svg"><mml:mo>±</mml:mo></mml:math></inline-formula> 0.0168</td><td valign="top">0.8873</td><td valign="top">0.8334 <inline-formula><mml:math id="M33" altimg="si5.svg"><mml:mo>±</mml:mo></mml:math></inline-formula> 0.0182</td><td valign="top">0.7671</td><td valign="top">0.7030 <inline-formula><mml:math id="M34" altimg="si5.svg"><mml:mo>±</mml:mo></mml:math></inline-formula> 0.0301</td></tr><tr><td valign="top">SAL</td><td valign="top">Incl.</td><td valign="top">0.8388</td><td valign="top">0.7824 <inline-formula><mml:math id="M35" altimg="si5.svg"><mml:mo>±</mml:mo></mml:math></inline-formula> 0.0165</td><td valign="top">0.8860</td><td valign="top">0.8352 <inline-formula><mml:math id="M36" altimg="si5.svg"><mml:mo>±</mml:mo></mml:math></inline-formula> 0.0173</td><td valign="top">0.7600</td><td valign="top">0.7050 <inline-formula><mml:math id="M37" altimg="si5.svg"><mml:mo>±</mml:mo></mml:math></inline-formula> 0.0294</td></tr><tr><td/><td valign="top">Excl.</td><td valign="top">0.8392</td><td valign="top">0.7782 <inline-formula><mml:math id="M38" altimg="si5.svg"><mml:mo>±</mml:mo></mml:math></inline-formula> 0.0172</td><td valign="top">0.8853</td><td valign="top">0.8308 <inline-formula><mml:math id="M39" altimg="si5.svg"><mml:mo>±</mml:mo></mml:math></inline-formula> 0.0197</td><td valign="top">0.7631</td><td valign="top">0.7021 <inline-formula><mml:math id="M40" altimg="si5.svg"><mml:mo>±</mml:mo></mml:math></inline-formula> 0.0276</td></tr><tr><td colspan="8" align="left" valign="top">Connecting Edges</td></tr><tr><td valign="top">CEN</td><td valign="top">Incl.</td><td valign="top">0.8406</td><td valign="top">0.7833 <inline-formula><mml:math id="M41" altimg="si5.svg"><mml:mo>±</mml:mo></mml:math></inline-formula> 0.0152</td><td valign="top">0.8872</td><td valign="top">0.8364 <inline-formula><mml:math id="M42" altimg="si5.svg"><mml:mo>±</mml:mo></mml:math></inline-formula> 0.0168</td><td valign="top">0.7624</td><td valign="top">0.7059 <inline-formula><mml:math id="M43" altimg="si5.svg"><mml:mo>±</mml:mo></mml:math></inline-formula> 0.0284</td></tr><tr><td/><td valign="top">Excl.</td><td valign="top">0.8287</td><td valign="top">0.7704 <inline-formula><mml:math id="M44" altimg="si5.svg"><mml:mo>±</mml:mo></mml:math></inline-formula> 0.0148</td><td valign="top">0.8738</td><td valign="top">0.8228 <inline-formula><mml:math id="M45" altimg="si5.svg"><mml:mo>±</mml:mo></mml:math></inline-formula> 0.0177</td><td valign="top">0.7544</td><td valign="top">0.6939 <inline-formula><mml:math id="M46" altimg="si5.svg"><mml:mo>±</mml:mo></mml:math></inline-formula> 0.0267</td></tr><tr><td valign="top">DMN</td><td valign="top">Incl.</td><td valign="top">0.8396</td><td valign="top">0.7801 <inline-formula><mml:math id="M47" altimg="si5.svg"><mml:mo>±</mml:mo></mml:math></inline-formula> 0.0171</td><td valign="top">0.8836</td><td valign="top">0.8337 <inline-formula><mml:math id="M48" altimg="si5.svg"><mml:mo>±</mml:mo></mml:math></inline-formula> 0.0187</td><td valign="top">0.7660</td><td valign="top">0.7020 <inline-formula><mml:math id="M49" altimg="si5.svg"><mml:mo>±</mml:mo></mml:math></inline-formula> 0.0304</td></tr><tr><td/><td valign="top">Excl.</td><td valign="top">0.8278</td><td valign="top">0.7712 <inline-formula><mml:math id="M50" altimg="si5.svg"><mml:mo>±</mml:mo></mml:math></inline-formula> 0.0162</td><td valign="top">0.8753</td><td valign="top">0.8246 <inline-formula><mml:math id="M51" altimg="si5.svg"><mml:mo>±</mml:mo></mml:math></inline-formula> 0.0196</td><td valign="top">0.7490</td><td valign="top">0.6929 <inline-formula><mml:math id="M52" altimg="si5.svg"><mml:mo>±</mml:mo></mml:math></inline-formula> 0.0273</td></tr><tr><td valign="top">SAL</td><td valign="top">Incl.</td><td valign="top">0.8397</td><td valign="top">0.7811 <inline-formula><mml:math id="M53" altimg="si5.svg"><mml:mo>±</mml:mo></mml:math></inline-formula> 0.0162</td><td valign="top">0.8875</td><td valign="top">0.8351 <inline-formula><mml:math id="M54" altimg="si5.svg"><mml:mo>±</mml:mo></mml:math></inline-formula> 0.0176</td><td valign="top">0.7619</td><td valign="top">0.7024 <inline-formula><mml:math id="M55" altimg="si5.svg"><mml:mo>±</mml:mo></mml:math></inline-formula> 0.0293</td></tr><tr><td/><td valign="top">Excl.</td><td valign="top">0.8321</td><td valign="top">0.7739 <inline-formula><mml:math id="M56" altimg="si5.svg"><mml:mo>±</mml:mo></mml:math></inline-formula> 0.0175</td><td valign="top">0.8853</td><td valign="top">0.8253 <inline-formula><mml:math id="M57" altimg="si5.svg"><mml:mo>±</mml:mo></mml:math></inline-formula> 0.0193</td><td valign="top">0.7631</td><td valign="top">0.6993 <inline-formula><mml:math id="M58" altimg="si5.svg"><mml:mo>±</mml:mo></mml:math></inline-formula> 0.0291</td></tr></tbody></table></table-wrap></p>
+          <p id="p0041">The ensemble model also classified sex in resting-state fMRI with an ensemble AUROC of 0.8923 and task fMRI with an AUROC of 0.7683, a difference of 0.1240. Full results are given in <xref rid="tbl0001" ref-type="table">Table 1</xref>.</p>
+        </sec>
+        <sec id="sec0020">
+          <label>3.2.2</label>
+          <title>Projection of ensemble upper limit</title>
+          <p id="p0042">The upper predicted limit of AUROC in the limit of a large number of datasets, based on a logarithmic model, is shown in <xref rid="fig0004" ref-type="fig">Fig. 4</xref>, and was found to be 0.8477.<fig id="fig0004"><label>Fig. 4</label><caption><p>Sex classification AUROC across 1 - 300 independent CNNs included in the ensemble model. The raw data is plotted, as well as the projection of this trend using a logistics growth model (<inline-formula><mml:math id="M59" altimg="si1.svg"><mml:mrow><mml:mi>y</mml:mi><mml:mo linebreak="goodbreak">=</mml:mo><mml:mfrac><mml:mi>a</mml:mi><mml:mrow><mml:mn>1</mml:mn><mml:mo>+</mml:mo><mml:mi>b</mml:mi><mml:msup><mml:mi>e</mml:mi><mml:mrow><mml:mo>−</mml:mo><mml:mi>k</mml:mi><mml:mi>x</mml:mi></mml:mrow></mml:msup></mml:mrow></mml:mfrac><mml:mrow><mml:mo>,</mml:mo><mml:mi>k</mml:mi><mml:mo linebreak="badbreak">&gt;</mml:mo><mml:mn>0</mml:mn><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:math></inline-formula>, which assumes a hard upper limit (<inline-formula><mml:math id="M60" altimg="si2.svg"><mml:mi>a</mml:mi></mml:math></inline-formula>) to the classification accuracy that can be achieved by simply increasing the number of models in the ensemble. The model predicts that simply adding more models to the ensemble beyond 300 achieves limited returns. The upper limit is 0.8477, with 95% confidence bounds between 0.8473 and 0.8481.</p></caption><alt-text id="at0004">Fig. 4</alt-text><graphic xlink:href="gr4"/></fig><fig id="fig0005"><label>Fig. 5</label><caption><p>(Top) The averaged class activation maps (CAMs) across all subjects for the complete graph classification, with the three studied networks highlighted. Area names in the AAL atlas are given. (Bottom) Histograms of all inner and connecting CAM values of the three networks, both in resting-state and task subjects, compared to the overall distribution of CAM values. Because the large number of samples, we display the effect size (measured by Cohen’s d) of both inner and connecting edges compared to the CAM values of the rest of the edges.</p></caption><alt-text id="at0005">Fig. 5</alt-text><graphic xlink:href="gr5"/></fig><fig id="fig0006"><label>Fig. 6</label><caption><p>The effects of selective network occlusion on model accuracy. (Top) the process by which occlusion AUROCs are estimated; either all inner edges of a given network, or all edges connecting to a network, are selected. The network edges are then scrambled (see <xref rid="fig0001" ref-type="fig">Fig. 1</xref>), and the selected edges are placed among one half of the scrambled edges, and in the other half left out. These two sets are then trained on <inline-formula><mml:math id="M61" altimg="si3.svg"><mml:mrow><mml:mn>2</mml:mn><mml:mo linebreak="goodbreak">×</mml:mo><mml:mn>300</mml:mn></mml:mrow></mml:math></inline-formula> independent neural networks, and the resulting AUROCs are compared. (Bottom) The results. Considering only inner edges, the only statistically significant effect, after Bonferroni-Holmes correction, was the salience networks on resting-state data. Considering all connecting edges, all three networks had a significant effect on the classification of sex in resting-state data, while both the default mode network and, more strongly, the central executive network, appeared to have an effect in classification of task data. The nonparametric Mann-Whitney <inline-formula><mml:math id="M62" altimg="si4.svg"><mml:mi>U</mml:mi></mml:math></inline-formula>-test was used to test for statistical significance. Final model means and ensemble results are shown in <xref rid="tbl0001" ref-type="table">Table 1</xref>.</p></caption><alt-text id="at0006">Fig. 6</alt-text><graphic xlink:href="gr6"/></fig></p>
+        </sec>
+      </sec>
+      <sec id="sec0021">
+        <label>3.3</label>
+        <title>Visualization of machine learning results</title>
+        <sec id="sec0022">
+          <label>3.3.1</label>
+          <title>Gradient class activation maps</title>
+          <p id="p0043">In total, 14,683 unique connectomes (comprised of both resting-state and task data) were classified by sex across 300 ensemble models. For each connectome, a single, <inline-formula><mml:math id="M63" altimg="si17.svg"><mml:mrow><mml:mn>116</mml:mn><mml:mo linebreak="goodbreak">×</mml:mo><mml:mn>116</mml:mn></mml:mrow></mml:math></inline-formula> gradient class activation map (with <inline-formula><mml:math id="M64" altimg="si19.svg"><mml:mrow><mml:mn>115</mml:mn><mml:mo linebreak="goodbreak">×</mml:mo><mml:mn>58</mml:mn></mml:mrow></mml:math></inline-formula> unique values) was derived that indicated the general importance each particular edge played into the classification of that participant.</p>
+          <p id="p0044">The distribution of edge values from CAMs, both from edges within, and edges connected to the respective networks, are shown for task and resting-state data in <xref rid="fig0005" ref-type="fig">Fig. 5</xref>. These distributions were compared to the relative distribution of all edges with aggregated values of <inline-formula><mml:math id="M65" altimg="si19.svg"><mml:mrow><mml:mn>115</mml:mn><mml:mo linebreak="goodbreak">×</mml:mo><mml:mn>58</mml:mn></mml:mrow></mml:math></inline-formula> CAM values inside and outside of a priori networks, across 14,683 unique subjects, totalling just under 100 million values. Effect size were reported (as Cohen’s d; see <xref rid="fig0005" ref-type="fig">Fig. 5</xref>).</p>
+          <p id="p0045">The differences in CAM values of edges inside and outside the CEN were non-significant, while some effects were observed for the inner, but not connecting edges of the DMN. The largest effect was seen in the salience network, having an effect size of <inline-formula><mml:math id="M66" altimg="si20.svg"><mml:mrow><mml:mi>d</mml:mi><mml:mo linebreak="goodbreak">&gt;</mml:mo><mml:mn>0.57</mml:mn></mml:mrow></mml:math></inline-formula> for task- and resting-state data separately. In CAMs overall, there were no significant differences between task- and resting-state edge values. This likely indicates that CAMs, while useful for showing which networks are important to the overall task of sex classification, are not useful for showing whether these networks were more or less important for resting-state or task data.</p>
+        </sec>
+        <sec id="sec0023">
+          <label>3.3.2</label>
+          <title>Occlusion</title>
+          <p id="p0046">Using the same dataset for the sex classification task, we compared the AUROCs of 300 independent models that classified a random half of the network’s edges. One set of 300 deliberately included the set of edges that constituted a network, and the other set of 300 excluded the same edges (<xref rid="fig0006" ref-type="fig">Fig. 6</xref>, top). By comparing the AUROCs and finding a statistically significant difference, we could assess the influence of a particular network on the classification.</p>
+          <p id="p0047">The relative classification AUROCs from the halves of edges that included edges both inside and connecting to the DMN, CEN, and salience networks, as well as models completely excluding them, are shown in <xref rid="tbl0001" ref-type="table">Table 1</xref>, while <xref rid="fig0006" ref-type="fig">Fig. 6</xref> shows the distribution of AUROCs on 300 models including and excluding each network, for resting-state and task data.</p>
+          <p id="p0048">When considering only the edges within a network (consisting of <inline-formula><mml:math id="M67" altimg="si21.svg"><mml:mrow><mml:mfrac><mml:mn>45</mml:mn><mml:mrow><mml:mn>58</mml:mn><mml:mo>*</mml:mo><mml:mn>115</mml:mn></mml:mrow></mml:mfrac><mml:mo linebreak="goodbreak">=</mml:mo><mml:mn>0.67</mml:mn><mml:mo>%</mml:mo></mml:mrow></mml:math></inline-formula> of total edges), modest losses in accuracy were observed (<xref rid="fig0006" ref-type="fig">Fig. 6</xref>), but the only one that achieved statistical significance in a Mann-Whitney <italic>U</italic>-test after Bonferroni correction was the salience network classification in resting-state data. However, when excluding all edges connected to a network (consisting of <inline-formula><mml:math id="M68" altimg="si22.svg"><mml:mrow><mml:mfrac><mml:mn>1105</mml:mn><mml:mrow><mml:mn>58</mml:mn><mml:mo>*</mml:mo><mml:mn>115</mml:mn></mml:mrow></mml:mfrac><mml:mo linebreak="goodbreak">=</mml:mo><mml:mn>16.57</mml:mn><mml:mo>%</mml:mo></mml:mrow></mml:math></inline-formula> of total edges), a difference between resting-state and task data was observed: exclusion of all three networks led to a statistically significant (<inline-formula><mml:math id="M69" altimg="si23.svg"><mml:mrow><mml:mi>p</mml:mi><mml:mo linebreak="goodbreak">&lt;</mml:mo><mml:mo>.</mml:mo><mml:mn>05</mml:mn></mml:mrow></mml:math></inline-formula>) decrease in AUROC for the classification of resting-state data, while the exclusion of the central executive and default mode, but not the salience networks, led to a statistically significant drop in AUROC for task, indicating less of a difference in the salience network between men and women in task fMRI, whereas such a difference was present in resting-state fMRI.</p>
+          <p id="p0049">It may be the case that the set of edges connecting to a network contain redundant information to the edges within a network, explaining the more modest losses in accuracy when only within-network edges were excluded.</p>
+        </sec>
+      </sec>
+    </sec>
+    <sec id="sec0024">
+      <label>4</label>
+      <title>Discussion</title>
+      <sec id="sec0025">
+        <label>4.1</label>
+        <title>Deep learning model</title>
+        <p id="p0050">Because it is able to capture nonlinear patterns across complex datasets, deep learning is a powerful tool for characterizing biological data. However, because of interest in identifying patterns discovered by deep learning models, the interpretability of the model is just as important as performance, though it is far more difficult to quantify or even define (<xref rid="bib0012" ref-type="bibr">Doshi-Velez and Kim, 2017</xref>). The primary methodological contribution of this study is a model that captures the contributions of individual functional connections to fMRI deep learning classification, while the results of our data show that utilization of this model in the context of network neuroscience can shed light on between-sex differences in task- and resting-state brain networks.</p>
+        <p id="p0051">Our model addresses an important problem unique to the issue of classifying graphs in CNNs, which is bias inherent in its encoding. There is no universal consensus on a method of encoding graphs for ML, though others have been proposed (<xref rid="bib0031" ref-type="bibr">Jie, Zhang, Wee, Shen, 2013</xref>, <xref rid="bib0033" ref-type="bibr">Kawahara, Brown, Miller, Booth, Chau, Grunau, Zwicker, Hamarneh, 2017</xref>, <xref rid="bib0038" ref-type="bibr">Kriege, Johansson, Morris, 2019</xref>, <xref rid="bib0042" ref-type="bibr">Leming, Gorríz, Suckling, 2020</xref>, <xref rid="bib0053" ref-type="bibr">Nikolentzos, Meladianos, Tixier, Skianis, Vazirgiannis, 2017</xref>, <xref rid="bib0070" ref-type="bibr">Tixier, Nikolentzos, Meladianos, Vazirgiannis, 2017</xref>). Whether encoding them randomly is the optimal method for classification accuracy is up for debate, though random encoding does avoid the problem of overfitting that is present in fully-connected neural networks, and it avoids bias in the output CAMs that results from using filters with a consistent shape. In other words, the use of linear filters results in whole rows or columns of a functional connectivity matrix being emphasized, rather than particular edges. Additionally, the training scheme helped to eliminate bias from the output CAMs. Simple averaging over a large number of models and stratified cross-validation (<xref rid="bib0036" ref-type="bibr">Kohavi, 1995</xref>) is just as important as the model architecture itself, because this allows for reduced bias from both confounding factors and natural variations in the output of nondeterministic deep learning models.</p>
+        <p id="p0052">Respectively, the average AUROC for sex classification across all 300 models was 0.8010. When aggregated as an ensemble, the combined AUROC was 0.8459. This represents an improvement over our previous sex classification in <xref rid="bib0042" ref-type="bibr">Leming et al. (2020)</xref> which achieved an AUROC of 0.8295 on BioBank data (0.7683 across all datasets used) with a vertical-filter CNN balancing by only age and site. Nonetheless, due to the different balancing schemes, these two studies likely used a moderately different subset of the overall data, and so a direct comparison between the present stochastic and the previous vertical filter models in terms of accuracy is not strictly valid. Comparisons to other state-of-the-art ML studies are also not possible, since there is high variation in classification accuracy depending on how data was collected and processed (<xref rid="bib0042" ref-type="bibr">Leming et al., 2020</xref>), and few imaging studies have attempted a sex ML task on a dataset of this size.</p>
+        <p id="p0053">Our training and multivariate class balancing schema, when combined, offered another uniquely important contribution. By only inputting to smaller, independent models subsets of data in which measurable confounding factors were balanced beyond any detectable statistical significance, we were able to effectively regress out any confounding factors that we were able to measure. However, by combining these subsets over a large number of independent models that were then combined in an ensemble, we were able to utilize the majority of the overall data in the end result without losing the effects of balancing. This allows us to be sure that our ML model utilized the majority of an imbalanced dataset, without achieving higher accuracy due to any confounding factors, particularly head motion and intracranial volume.</p>
+        <p id="p0054">Although the balancing techniques employed prevented our model from gaining higher accuracy due to confounding factors such as age, head size, and motion, this does not necessarily mean that such differences had no influence. Class balancing does not prevent the model from internally separating data based on such factors and considering them (wholly or partially) independently. To illustrate this issue, we briefly present an analogy: consider a ML task in which pictures of different species of cat must be separated from pictures of different species of dog; such a model would likely identify generalized differences between each (e.g., the ear shape), while also containing internal representations of each type of cat and dog contained in the training set, relying on features unique to each individual species (e.g., stripes on a tiger). For instance, black fur color may be considered salient, even though it doesn’t necessarily help to separate cats from dogs, because it helps the dataset to subclassify both black panthers and black Labrador retrievers.</p>
+        <p id="p0055">Nonetheless, we are confident that class balancing within a cross-validation scheme reduced the influence of differences in confounding factors. We emphasize the importance of each particular step in the ML classification to achieve the output CAMs. These are: (1) random encoding, rather than encoding based on rows or columns; (2) averaging the output of many ML models, as individual outputs have a stochastic element; and (3) stratified cross-validation using balanced subsets of the data across these models.</p>
+        <p id="p0056">In this study, we did not show explicit tests for differences with respect to different confounding factors beyond the visual aid in <xref rid="fig0003" ref-type="fig">Fig. 3</xref>. The proposed algorithm designed uses a balancing scheme that itself is based on iteratively testing p-values, and so testing differences with respect to these would just be a validation of the correctness of the code used. Furthermore, classification on unbalanced datasets was not undertaken in the study, since testing unbalanced datasets in a deep learning context would also have very little effect on our results: the unbalanced dataset would very likely result in higher classification accuracy because, with confounding factors to aid it, the algorithm has more information with which to train itself, though the visualization techniques, affected by these confounding factors, would add little value.</p>
+        <p id="p0057">There are several key differences between the present our previous work, <xref rid="bib0042" ref-type="bibr">Leming et al. (2020)</xref>. While <xref rid="bib0042" ref-type="bibr">Leming et al. (2020)</xref> focused on the use of deep learning on fcMRI, the focus there was on mixed-site data generally and the relative success of classification on three different tasks. In the present work, we elected to focus on sex in the UK BioBank data, rather than multiple datasets, which alleviated previous concerns about site differences from our analysis, and allowed us to focus more on the relative classification of different subgroups within the UK BioBank (i.e., rest/task). To increase the amount of datasets that successfully preprocessed, we also decreased the band count in our wavelet correlation from four to three, since this allowed us to include data in the UK BioBank previously excluded for not having a high enough TR. Differences between our previous analysis and the present analysis, especially the extra data included, may have affected the AUROC on the BioBank data.</p>
+        <p id="p0058">Because we wanted to expand our repertoire of visualization methods used to analyze deep learning models after (<xref rid="bib0042" ref-type="bibr">Leming et al., 2020</xref>), we opted to include the occlusion analysis in this paper, and the explicit focus on a-priori networks in the present study was partially motivated by the occlusion method; because of the computational load of occlusion on 300 models, it could only be used practically to test a hypothesis rather than generate those of its own, and so a great deal of time was spent in formulating which brain networks to analyze. Our results show, however, that occlusion may be applied to determine the relative importance of specific edges or networks in subgroups of the overall dataset (e.g., one element of the data may be critical for classifying resting-state data but not matter for task data), offering a significant potential advantage over Grad-CAM.</p>
+      </sec>
+      <sec id="sec0026">
+        <label>4.2</label>
+        <title>Neuroscientific interpretations</title>
+        <p id="p0059">Four main neuroscientific findings stand out in our results: (1) when classifying sex, the relative AUROC for resting-state data was consistently higher than that for task data by a margin of around 0.12 (<xref rid="tbl0001" ref-type="table">Table 1</xref>); (2) the within-network edges of the salience network were considered important for characterizing resting-state data (as indicated by both occlusion and CAM results), but not task data (as indicated by occlusion results); (3) edges connecting to all three networks were important in characterizing resting-state fMRI, and notably, even when only considering edges within the networks the p-values for differences between occlusion runs were hardly above 0.05 (<xref rid="fig0006" ref-type="fig">Fig. 6</xref>); (4) edges connected to the CEN were the only ones that proved important to the classification of both task- and resting-state data together (<xref rid="fig0006" ref-type="fig">Fig. 6</xref>), even though there was little difference in the distribution of CAM values between them (<xref rid="fig0005" ref-type="fig">Fig. 5</xref>).</p>
+        <p id="p0060">The significantly lower classification accuracy of task data overall compared to resting-state data was consistent both when using complete input data and using partial input data (<xref rid="tbl0001" ref-type="table">Table 1</xref>). The most straightforward interpretation of this result is that, in task processing, female and male brain function is more similar than it is in the resting-state. Because resting-state brain connectivity varies more than task connectivity (<xref rid="bib0013" ref-type="bibr">Elton and Gao, 2015</xref>), this disparity may also be due to a lower number of distinguishing features.</p>
+        <p id="p0061">Explaining the apparent contradiction between our two methods regarding the status of the CEN is complex. Judging from the occlusion results, the CEN is an important network when classifying resting-state data and the only network important in classifying task data, though this is not reflected in the CAMs. Given that these two methods are established visualization methods in ML and a methodical error is unlikely, the takeaway of this contradiction is that these methods are not interchangeable and must be interpreted in their own right, and that the interpretation of specifics in these results ought to be approached cautiously, given the relative novelty of these methods are in their application to neuroscience. Put informally, CAMs show which components of input data the deep learning model pays attention to, while occlusion shows how important a component is to the classification of a specific datapoint; furthermore, because connectivity data is spatially invariant, it may also be the case that our deep learning models consistently focus on the same areas of input, which is reflected in the CAMs, even though this would not be the case for spatially variant photographic data for which CAMs were originally designed (<xref rid="bib0063" ref-type="bibr">Selvaraju et al., 2017</xref>). With this in mind, the similar distribution of CAM values over spatially invariant task- and resting-state input data (see the histograms in <xref rid="fig0005" ref-type="fig">Fig. 5</xref>) is not surprising since a deep learning model may find a particular edge salient because it might help it to internally subclassify the dataset by resting-state or task. Thus, CAMs may illustrate that a particular edge is important in the overall classification of the model, though not whether it helps in classifying a specific datapoint. With that being said, however, a more thorough study in a pure ML context investigating the mathematical differences between CAM and occlusion results would be necessary.</p>
+        <p id="p0062">With regards to the salience network, however, the two methods are more in agreement, since the inner edges of the salience network were clearly the most significant, according to CAMs (<xref rid="fig0005" ref-type="fig">Fig. 5</xref>). Furthermore, it was the only network with inner edges that proved to be statistically significant to the classification of resting-state data (<xref rid="fig0006" ref-type="fig">Fig. 6</xref>). This effect may be due, in part, to the particularly salient connection between the left and right amygdala (<xref rid="fig0005" ref-type="fig">Fig. 5</xref>), which yielded the highest CAM value by far. The DMN is also engaged in sex differences. As can be seen from the middle histogram in <xref rid="fig0005" ref-type="fig">Fig. 5</xref>, many of its inner edges have a higher class activation than other edges, while excluding it and all edges connected with it had a uniquely negative effect on classification (<xref rid="fig0006" ref-type="fig">Fig. 6</xref>). What is surprising, however, is that the DMN, which is commonly cited as the marker of resting-state functional connectivity (<xref rid="bib0058" ref-type="bibr">Raichle et al., 2001</xref>) and has previously been implicated in big data sex difference studies (<xref rid="bib0059" ref-type="bibr">Ritchie et al., 2018</xref>) as an area of particular interest, does not stand out from the other two networks studied. While it is not surprising that, in our occlusion tests, the CEN had a greater effect than the DMN in task classification, both tests show that, as stated above, the salience network appears to be more important and have a greater effect on classification accuracy of the resting state. This could be due to a number of factors, such as the use of a priori tests in other studies that specifically account for the DMN, the non-inclusion of subcortical areas in other studies, the inclusion of the critical amygdala connections in the salience network, or other unknown reasons.</p>
+      </sec>
+    </sec>
+    <sec id="sec0027">
+      <label>5</label>
+      <title>Conclusion</title>
+      <p id="p0063">Our results show that the distinction of males and females in resting-state takes into account all of the major brain networks in classification, though they are utilized differently when classifying by resting-state and task. This may be a result of increased variance in resting-state networks over task-based networks, potentially offering the model a larger set of distinguishing markers. When only considering the emotional faces recognition task of the UK Biobank, areas connecting to the DMN and, more so, the CEN showed significantly altered function, while function of the salience network was not different enough to significantly aid in single-subject classification (<xref rid="fig0006" ref-type="fig">Fig. 6</xref>). Methodologically, we have demonstrated the applicability and limitations of two different deep learning visualization methods to brain network data, as well as deep learning’s applicability to big data in a scientific field.</p>
+    </sec>
+    <sec id="sec0027a">
+      <title>CRediT authorship contribution statement</title>
+      <p id="p0063a"><bold>Matthew Leming:</bold> Conceptualization, Data curation, Formal analysis, Investigation, Methodology, Project administration, Software, Visualization, Writing – original draft, Writing – review &amp; editing. <bold>John Suckling:</bold> Funding acquisition, Methodology, Project administration, Resources, Supervision, Validation, Writing – review &amp; editing.</p>
+    </sec>
+  </body>
+  <back>
+    <ref-list id="bib001">
+      <title>References</title>
+      <ref id="bib0001">
+        <element-citation publication-type="journal" id="sbref0001">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Agcaoglu</surname>
+              <given-names>O.</given-names>
+            </name>
+            <name>
+              <surname>Miller</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Mayer</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Hugdahl</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Calhoun</surname>
+              <given-names>V.</given-names>
+            </name>
+          </person-group>
+          <article-title>Lateralization of resting state networks and relationship to age and gender</article-title>
+          <source>Neuroimage</source>
+          <volume>104</volume>
+          <year>2015</year>
+          <fpage>310</fpage>
+          <lpage>325</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2014.09.001</pub-id>
+          <pub-id pub-id-type="pmid">25241084</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib0002">
+        <element-citation publication-type="journal" id="sbref0002">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Alarcón</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Pfeifer</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Fair</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Nagel</surname>
+              <given-names>B.</given-names>
+            </name>
+          </person-group>
+          <article-title>Adolescent gender differences in cognitive control performance and functional connectivity between default mode and fronto-parietal networks within a self-referential context</article-title>
+          <source>Front. Behav. Neurosci.</source>
+          <volume>12</volume>
+          <year>2018</year>
+          <fpage>17</fpage>
+          <pub-id pub-id-type="doi">10.3389/fnbeh.2018.00073</pub-id>
+          <pub-id pub-id-type="pmid">29479311</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib0003">
+        <element-citation publication-type="journal" id="sbref0003">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Barch</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Burgess</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Harms</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Petersen</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Schlaggar</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Corbetta</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Glasser</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Curtiss</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Dixit</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Feldt</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Nolan</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Bryant</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Hartley</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Footer</surname>
+              <given-names>O.</given-names>
+            </name>
+            <name>
+              <surname>Bjork</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Poldrack</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Smith</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Johansen-Berg</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>Snyder</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Van Essen</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Consortium.</surname>
+              <given-names>W.-M.H.</given-names>
+            </name>
+          </person-group>
+          <article-title>Function in the human connectome: task-fMRI and individual differences in behavior</article-title>
+          <source>Neuroimage</source>
+          <volume>80</volume>
+          <year>2013</year>
+          <fpage>169</fpage>
+          <lpage>189</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2013.05.033</pub-id>
+          <pub-id pub-id-type="pmid">23684877</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib0004">
+        <element-citation publication-type="journal" id="sbref0004">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bluhm</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Osuch</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Lanius</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Boksman</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Neufeld</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Théberge</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Williamson</surname>
+              <given-names>P.</given-names>
+            </name>
+          </person-group>
+          <article-title>Default mode network connectivity: effects of age, sex, and analytic approach</article-title>
+          <source>Neuroreport</source>
+          <volume>19</volume>
+          <year>2008</year>
+          <fpage>887</fpage>
+          <lpage>891</lpage>
+          <pub-id pub-id-type="doi">10.1097/WNR.0b013e328300ebbf</pub-id>
+          <pub-id pub-id-type="pmid">18463507</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib0005">
+        <element-citation publication-type="book" id="sbref0005">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Brown</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Kawahara</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Hamarneh</surname>
+              <given-names>G.</given-names>
+            </name>
+          </person-group>
+          <part-title>Connectome priors in deep neural networks to predict autism</part-title>
+          <source>2018 IEEE 15th International Symposium on Biomedical Imaging (ISBI 2018)</source>
+          <year>2018</year>
+          <pub-id pub-id-type="doi">10.1109/ISBI.2018.8363534</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib0006">
+        <element-citation publication-type="book" id="sbref0006">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bruna</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Zaremba</surname>
+              <given-names>W.</given-names>
+            </name>
+            <name>
+              <surname>Szlam</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>LeCun</surname>
+              <given-names>Y.</given-names>
+            </name>
+          </person-group>
+          <part-title>Spectral networks and locally connected networks on graphs</part-title>
+          <source>ICLR</source>
+          <year>2014</year>
+        </element-citation>
+      </ref>
+      <ref id="bib0007">
+        <element-citation publication-type="journal" id="sbref0007">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Buckner</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Krienen</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Yeo</surname>
+              <given-names>B.</given-names>
+            </name>
+          </person-group>
+          <article-title>Opportunities and limitations of intrinsic functional connectivity MRI</article-title>
+          <source>Nat. Neurosci.</source>
+          <volume>16</volume>
+          <year>2013</year>
+          <fpage>832</fpage>
+          <lpage>837</lpage>
+          <pub-id pub-id-type="doi">10.1038/nn.3423</pub-id>
+          <pub-id pub-id-type="pmid">23799476</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib0008">
+        <element-citation publication-type="journal" id="sbref0008">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cabeza</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Nyberg</surname>
+              <given-names>L.</given-names>
+            </name>
+          </person-group>
+          <article-title>Imaging cognition ii: an empirical review of 275 pet and fMRI studies. journal of cognitive neuroscience</article-title>
+          <source>J. Cognit. Neurosci.</source>
+          <volume>12</volume>
+          <year>2000</year>
+          <fpage>1</fpage>
+          <lpage>47</lpage>
+          <pub-id pub-id-type="doi">10.1162/08989290051137585</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib0009">
+        <element-citation publication-type="journal" id="sbref0009">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Casanova</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Whitlow</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Wagner</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Espeland</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Maldjian</surname>
+              <given-names>J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Combining graph and machine learning methods to analyze differences in functional connectivity across sex</article-title>
+          <source>Open Neuroimag. J.</source>
+          <volume>6</volume>
+          <year>2012</year>
+          <fpage>1</fpage>
+          <lpage>9</lpage>
+          <pub-id pub-id-type="doi">10.2174/1874440001206010001</pub-id>
+          <pub-id pub-id-type="pmid">22312418</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib0010">
+        <element-citation publication-type="journal" id="sbref0010">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Corbetta</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Shulman</surname>
+              <given-names>G.</given-names>
+            </name>
+          </person-group>
+          <article-title>Control of goal-directed and stimulus-driven attention in the brain</article-title>
+          <source>Nat. Rev. Neurosci.</source>
+          <volume>3</volume>
+          <year>2002</year>
+          <fpage>201</fpage>
+          <lpage>215</lpage>
+          <pub-id pub-id-type="doi">10.1038/nrn755</pub-id>
+          <pub-id pub-id-type="pmid">11994752</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib0011">
+        <element-citation publication-type="book" id="sbref0011">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Defferrard</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Bresson</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Vandergheynst</surname>
+              <given-names>X.</given-names>
+            </name>
+          </person-group>
+          <part-title>Convolutional neural networks on graphs with fast localized spectral filtering</part-title>
+          <source>NIPS</source>
+          <year>2016</year>
+          <fpage>3844</fpage>
+          <lpage>3852</lpage>
+        </element-citation>
+      </ref>
+      <ref id="bib0012">
+        <element-citation publication-type="journal" id="sbref0012">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Doshi-Velez</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Kim</surname>
+              <given-names>B.</given-names>
+            </name>
+          </person-group>
+          <article-title>Towards a rigorous science of interpretable machine learning</article-title>
+          <source>arXiv</source>
+          <year>2017</year>
+        </element-citation>
+      </ref>
+      <ref id="bib0013">
+        <element-citation publication-type="journal" id="sbref0013">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Elton</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Gao</surname>
+              <given-names>W.</given-names>
+            </name>
+          </person-group>
+          <article-title>Task-related modulation of functional connectivity variability and its behavioral correlations</article-title>
+          <source>Hum. Brain. Mapp.</source>
+          <volume>36</volume>
+          <year>2015</year>
+          <fpage>3260</fpage>
+          <lpage>3272</lpage>
+          <pub-id pub-id-type="doi">10.1002/hbm.22847</pub-id>
+          <pub-id pub-id-type="pmid">26015070</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib0014">
+        <element-citation publication-type="book" id="sbref0014">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Erhan</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Bengio</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <name>
+              <surname>Courville</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Vincent</surname>
+              <given-names>P.</given-names>
+            </name>
+          </person-group>
+          <part-title>Visualizing Higher-Layer Features of a Deep Network</part-title>
+          <source>Technical Report 1341</source>
+          <year>2009</year>
+          <publisher-name>University of Montreal</publisher-name>
+        </element-citation>
+      </ref>
+      <ref id="bib0015">
+        <element-citation publication-type="journal" id="sbref0015">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fischer</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>Sandblom</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Herlitz</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Fransson</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Wright</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Backman</surname>
+              <given-names>L.</given-names>
+            </name>
+          </person-group>
+          <article-title>Sex-differential brain activation during exposure to female and male faces</article-title>
+          <source>Neuroreport</source>
+          <volume>15</volume>
+          <year>2004</year>
+          <fpage>235</fpage>
+          <lpage>238</lpage>
+          <pub-id pub-id-type="pmid">15076743</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib0016">
+        <element-citation publication-type="journal" id="sbref0016">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fox</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Corbetta</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Snyder</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Vincent</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Raichle</surname>
+              <given-names>M.</given-names>
+            </name>
+          </person-group>
+          <article-title>Spontaneous neuronal activity distinguishes human dorsal and ventral attention systems</article-title>
+          <source>PNAS</source>
+          <volume>103</volume>
+          <year>2006</year>
+          <fpage>10046</fpage>
+          <lpage>10051</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.0604187103</pub-id>
+          <pub-id pub-id-type="pmid">16788060</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib0017">
+        <element-citation publication-type="journal" id="sbref0017">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fox</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Snyder</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Vincent</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Corbetta</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Essen</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Raichle</surname>
+              <given-names>M.</given-names>
+            </name>
+          </person-group>
+          <article-title>The human brain is intrinsically organized into dynamic anticorrelated functional networks</article-title>
+          <source>PNAS</source>
+          <volume>102</volume>
+          <year>2005</year>
+          <fpage>9673</fpage>
+          <lpage>9678</lpage>
+          <pub-id pub-id-type="pmid">15976020</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib0018">
+        <element-citation publication-type="journal" id="sbref0018">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fusar-Poli</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Placentino</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Carletti</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Landi</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Allen</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Surguladze</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Benedetti</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Abbamonte</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Gasparotti</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Barale</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Perez</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>McGuire</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Politi</surname>
+              <given-names>P.</given-names>
+            </name>
+          </person-group>
+          <article-title>Functional atlas of emotional faces processing: a voxel-based meta-analysis of 105 functional magnetic resonance imaging studies</article-title>
+          <source>J. Psychiatry Neurosci.</source>
+          <volume>34</volume>
+          <year>2009</year>
+          <fpage>418</fpage>
+          <lpage>432</lpage>
+          <pub-id pub-id-type="pmid">19949718</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib0019">
+        <element-citation publication-type="book" id="sbref0019">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gadgil</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Zhao</surname>
+              <given-names>Q.</given-names>
+            </name>
+            <name>
+              <surname>Pfefferbaum</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Sullivan</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Adeli</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Pohl</surname>
+              <given-names>K.</given-names>
+            </name>
+          </person-group>
+          <part-title>Spatio-temporal graph convolution for resting-state fMRI analysis</part-title>
+          <source>Proceedings of Medical Image Computing and Computer Assisted Intervention - MICCAI 2020, 23rd International Conference</source>
+          <volume>vol. 12267</volume>
+          <year>2020</year>
+          <fpage>528</fpage>
+          <lpage>538</lpage>
+          <pub-id pub-id-type="doi">10.1007/978-3-030-59728-3_52</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib0020">
+        <element-citation publication-type="journal" id="sbref0020">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Goldstone</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Mayhew</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Przezdzik</surname>
+              <given-names>I.</given-names>
+            </name>
+            <name>
+              <surname>Wilson</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Hale</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Bagshaw</surname>
+              <given-names>A.</given-names>
+            </name>
+          </person-group>
+          <article-title>Gender specific re-organization of resting-state networks in older age</article-title>
+          <source>Front. Aging Neurosci.</source>
+          <volume>8</volume>
+          <year>2016</year>
+          <fpage>285</fpage>
+          <pub-id pub-id-type="doi">10.3389/fnagi.2016.00285</pub-id>
+          <pub-id pub-id-type="pmid">27932978</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib0021">
+        <element-citation publication-type="journal" id="sbref0021">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Goulden</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Khusnulina</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Davis</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Bracewell</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Bokde</surname>
+              <given-names>A.L.</given-names>
+            </name>
+            <name>
+              <surname>McNulty</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Mullins</surname>
+              <given-names>P.</given-names>
+            </name>
+          </person-group>
+          <article-title>The salience network is responsible for switching between the default mode network and the central executive network: replication from dcm</article-title>
+          <source>Neuroimage</source>
+          <volume>99</volume>
+          <year>2014</year>
+          <fpage>180</fpage>
+          <lpage>190</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2014.05.052</pub-id>
+          <pub-id pub-id-type="pmid">24862074</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib0022">
+        <element-citation publication-type="journal" id="sbref0022">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Greene</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Gao</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Scheinost</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Constable</surname>
+              <given-names>R.</given-names>
+            </name>
+          </person-group>
+          <article-title>Task-induced brain state manipulation improves prediction of individual traits</article-title>
+          <source>Nat. Commun.</source>
+          <volume>9</volume>
+          <year>2018</year>
+          <pub-id pub-id-type="doi">10.1038/s41467-018-04920-3</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib0023">
+        <element-citation publication-type="journal" id="sbref0023">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gur</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Alsop</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Glahn</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Petty</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Swanson</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Maldjian</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Turetsky</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Detre</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Gee</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Gur</surname>
+              <given-names>R.</given-names>
+            </name>
+          </person-group>
+          <article-title>An fMRI study of sex differences in regional activation to a verbal and a spatial task</article-title>
+          <source>Brain Lang.</source>
+          <volume>74</volume>
+          <year>2000</year>
+          <fpage>157</fpage>
+          <lpage>170</lpage>
+          <pub-id pub-id-type="doi">10.1006/brln.2000.2325</pub-id>
+          <pub-id pub-id-type="pmid">10950912</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib0024">
+        <element-citation publication-type="journal" id="sbref0024">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gur</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Gur</surname>
+              <given-names>R.</given-names>
+            </name>
+          </person-group>
+          <article-title>Sex differences in brain and behavior in adolescence: findings from the philadelphia neurodevelopmental cohort</article-title>
+          <source>Neurosci. Biobehav. Rev.</source>
+          <volume>70</volume>
+          <year>2016</year>
+          <fpage>159</fpage>
+          <lpage>170</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neubiorev.2016.07.035</pub-id>
+          <pub-id pub-id-type="pmid">27498084</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib0025">
+        <element-citation publication-type="journal" id="sbref0025">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gusnard</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Akbudak</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Shulman</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Raichle</surname>
+              <given-names>M.</given-names>
+            </name>
+          </person-group>
+          <article-title>Medial prefrontal cortex and self-referential mental activity: relation to a default mode of brain function</article-title>
+          <source>PNAS</source>
+          <volume>98</volume>
+          <year>2001</year>
+          <fpage>4259</fpage>
+          <lpage>4264</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.071043098</pub-id>
+          <pub-id pub-id-type="pmid">11259662</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib0026">
+        <element-citation publication-type="journal" id="sbref0026">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hamann</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Herman</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Nolan</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Wallen</surname>
+              <given-names>K.</given-names>
+            </name>
+          </person-group>
+          <article-title>Men and women differ in amygdala response to visual sexual stimuli</article-title>
+          <source>Nat. Neurosci.</source>
+          <volume>7</volume>
+          <year>2004</year>
+          <fpage>411</fpage>
+          <lpage>416</lpage>
+          <pub-id pub-id-type="doi">10.1038/nn1208</pub-id>
+          <pub-id pub-id-type="pmid">15004563</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib0027">
+        <element-citation publication-type="book" id="sbref0027">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hamilton</surname>
+              <given-names>W.</given-names>
+            </name>
+            <name>
+              <surname>Ying</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Leskovec</surname>
+              <given-names>J.</given-names>
+            </name>
+          </person-group>
+          <part-title>Representation learning on graphs: methods and applications</part-title>
+          <source>Bulletin of the IEEE Computer Society Technical Committee on Data Engineering</source>
+          <year>2017</year>
+        </element-citation>
+      </ref>
+      <ref id="bib0028">
+        <element-citation publication-type="journal" id="sbref0028">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hariri</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Tessitore</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Mattay</surname>
+              <given-names>V.</given-names>
+            </name>
+            <name>
+              <surname>Fera</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Weinberger</surname>
+              <given-names>D.</given-names>
+            </name>
+          </person-group>
+          <article-title>The amygdala response to emotional stimuli: a comparison of faces and scenes.</article-title>
+          <source>Neuroimage</source>
+          <volume>17</volume>
+          <year>2002</year>
+          <fpage>317</fpage>
+          <lpage>323</lpage>
+          <pub-id pub-id-type="doi">10.1006/nimg.2002.1179</pub-id>
+          <pub-id pub-id-type="pmid">12482086</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib0029">
+        <element-citation publication-type="journal" id="sbref0029">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hechtlinger</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <name>
+              <surname>Chakravarti</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Qin</surname>
+              <given-names>J.</given-names>
+            </name>
+          </person-group>
+          <article-title>A generalization of convolutional neural networks to graph-structured data</article-title>
+          <source>arXiv</source>
+          <year>2017</year>
+        </element-citation>
+      </ref>
+      <ref id="bib0030">
+        <element-citation publication-type="journal" id="sbref0030">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hugdahl</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Thomsen</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Ersland</surname>
+              <given-names>L.</given-names>
+            </name>
+          </person-group>
+          <article-title>Sex differences in visuo-spatial processing: an fMRI study of mental rotation</article-title>
+          <source>Neuropsychologia</source>
+          <volume>44</volume>
+          <year>2006</year>
+          <fpage>1575</fpage>
+          <lpage>1583</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuropsychologia.2006.01.026</pub-id>
+          <pub-id pub-id-type="pmid">16678867</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib0031">
+        <element-citation publication-type="journal" id="sbref0031">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jie</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Wee</surname>
+              <given-names>C.-Y.</given-names>
+            </name>
+            <name>
+              <surname>Shen</surname>
+              <given-names>D.</given-names>
+            </name>
+          </person-group>
+          <article-title>Topological graph kernel on multiple thresholded functional connectivity networks for mild cognitive impairment classification</article-title>
+          <source>Hum. Brain Mapp.</source>
+          <volume>35</volume>
+          <year>2013</year>
+          <fpage>2876</fpage>
+          <lpage>2897</lpage>
+          <pub-id pub-id-type="doi">10.1002/hbm.22353</pub-id>
+          <pub-id pub-id-type="pmid">24038749</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib0032">
+        <element-citation publication-type="book" id="sbref0032">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Karpathy</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Fei-Fei</surname>
+              <given-names>L.</given-names>
+            </name>
+          </person-group>
+          <part-title>Deep visual-semantic alignments for generating image descriptions</part-title>
+          <source>CVPR 2015</source>
+          <year>2014</year>
+        </element-citation>
+      </ref>
+      <ref id="bib0033">
+        <element-citation publication-type="journal" id="sbref0033">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kawahara</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Brown</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Miller</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Booth</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Chau</surname>
+              <given-names>V.</given-names>
+            </name>
+            <name>
+              <surname>Grunau</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Zwicker</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Hamarneh</surname>
+              <given-names>G.</given-names>
+            </name>
+          </person-group>
+          <article-title>BrainNetCNN: convolutional neural networks for brain networks; towards predicting neurodevelopment</article-title>
+          <source>Neuroimage</source>
+          <volume>146</volume>
+          <year>2017</year>
+          <fpage>1038</fpage>
+          <lpage>1049</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2016.09.046</pub-id>
+          <pub-id pub-id-type="pmid">27693612</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib0034">
+        <element-citation publication-type="journal" id="sbref0034">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kim</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Ye</surname>
+              <given-names>J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Understanding graph isomorphism network for rs-fMRI functional connectivity analysis</article-title>
+          <source>Front. Neurosci.</source>
+          <year>2020</year>
+          <pub-id pub-id-type="doi">10.3389/fnins.2020.00630</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib0035">
+        <element-citation publication-type="book" id="sbref0035">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kipf</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Welling</surname>
+              <given-names>M.</given-names>
+            </name>
+          </person-group>
+          <part-title>Semi-supervised classification with graph convolutional neural networks</part-title>
+          <source>ICLR 2017</source>
+          <year>2017</year>
+        </element-citation>
+      </ref>
+      <ref id="bib0036">
+        <element-citation publication-type="book" id="sbref0036">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kohavi</surname>
+              <given-names>R.</given-names>
+            </name>
+          </person-group>
+          <part-title>A study of cross-validation and bootstrap for accuracy estimation and model selection</part-title>
+          <source>Intelligence - Volume 2, IJCAI-95</source>
+          <year>1995</year>
+          <publisher-name>Morgan Kaufmann Publishers Inc.</publisher-name>
+          <publisher-loc>San Francisco, C</publisher-loc>
+          <fpage>1137</fpage>
+          <lpage>1143</lpage>
+        </element-citation>
+      </ref>
+      <ref id="bib0037">
+        <mixed-citation publication-type="other" id="sbref0037">Kotikalapudi, R., contributors, 2017. keras-vis. <ext-link ext-link-type="uri" xlink:href="https://github.com/raghakot/keras-vis" id="intrrf0002">https://github.com/raghakot/keras-vis</ext-link>.</mixed-citation>
+      </ref>
+      <ref id="bib0038">
+        <element-citation publication-type="journal" id="sbref0038">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kriege</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Johansson</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Morris</surname>
+              <given-names>C.</given-names>
+            </name>
+          </person-group>
+          <article-title>A survey on graph kernels</article-title>
+          <source>arXiv</source>
+          <year>2019</year>
+        </element-citation>
+      </ref>
+      <ref id="bib0039">
+        <element-citation publication-type="journal" id="sbref0039">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Krizhevsky</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Sutskever</surname>
+              <given-names>I.</given-names>
+            </name>
+            <name>
+              <surname>Hinton</surname>
+              <given-names>G.</given-names>
+            </name>
+          </person-group>
+          <article-title>ImageNet classification with deep convolutional neural networks</article-title>
+          <source>Adv. Neural Inf. Process. Syst.</source>
+          <year>2012</year>
+        </element-citation>
+      </ref>
+      <ref id="bib0040">
+        <element-citation publication-type="journal" id="sbref0040">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kukačka</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Golkov</surname>
+              <given-names>V.</given-names>
+            </name>
+            <name>
+              <surname>Cremers</surname>
+              <given-names>D.</given-names>
+            </name>
+          </person-group>
+          <article-title>Regularization for deep learning: a taxonomy</article-title>
+          <source>arXiv</source>
+          <year>2017</year>
+        </element-citation>
+      </ref>
+      <ref id="bib0041">
+        <element-citation publication-type="journal" id="sbref0041">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lee</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Park</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Yoon</surname>
+              <given-names>S.</given-names>
+            </name>
+          </person-group>
+          <article-title>Robust tumor localization with pyramid grad-CAM</article-title>
+          <source>arXiv</source>
+          <year>2018</year>
+        </element-citation>
+      </ref>
+      <ref id="bib0042">
+        <element-citation publication-type="journal" id="sbref0042">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Leming</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Gorríz</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Suckling</surname>
+              <given-names>J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Ensemble deep learning on large, mixed-site fMRI datasets in autism and other tasks</article-title>
+          <source>Int. J. Neural Syst.</source>
+          <volume>30</volume>
+          <issue>7</issue>
+          <year>2020</year>
+          <object-id pub-id-type="publisher-id">2050012</object-id>
+          <pub-id pub-id-type="doi">10.1142/S0129065720500124</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib0043">
+        <element-citation publication-type="book" id="sbref0043">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Li</surname>
+              <given-names>X.</given-names>
+            </name>
+            <name>
+              <surname>Dvornek</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Zhou</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <name>
+              <surname>Zhuang</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Ventola</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Duncan</surname>
+              <given-names>J.</given-names>
+            </name>
+          </person-group>
+          <part-title>Graph neural network for interpreting task-fMRI biomarkers</part-title>
+          <source>Proceedings of Medical Image Computing and Computer Assisted Intervention – MICCAI 2019, 22nd International Conference</source>
+          <year>2019</year>
+          <fpage>485</fpage>
+          <lpage>493</lpage>
+          <pub-id pub-id-type="doi">10.1007/978-3-030-32254-0_54</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib0044">
+        <element-citation publication-type="journal" id="sbref0044">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Liu</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>Stufflebeam</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Sepulcre</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Hedden</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Buckner</surname>
+              <given-names>R.</given-names>
+            </name>
+          </person-group>
+          <article-title>Evidence from intrinsic activity that asymmetry of the human brain is controlled by multiple factors</article-title>
+          <source>PNAS</source>
+          <volume>106</volume>
+          <year>2009</year>
+          <fpage>20499</fpage>
+          <lpage>20503</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.0908073106</pub-id>
+          <pub-id pub-id-type="pmid">19918055</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib0045">
+        <element-citation publication-type="journal" id="sbref0045">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lopez-Larson</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Anderson</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Ferguson</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Yurgelun-Todd</surname>
+              <given-names>D.</given-names>
+            </name>
+          </person-group>
+          <article-title>Local brain connectivity and associations with gender and age</article-title>
+          <source>Dev. Cogn. Neurosci.</source>
+          <volume>1</volume>
+          <year>2011</year>
+          <fpage>187</fpage>
+          <lpage>197</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.dcn.2010.10.001</pub-id>
+          <pub-id pub-id-type="pmid">21516202</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib0046">
+        <element-citation publication-type="journal" id="sbref0046">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mackiewicz</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Sarinopoulos</surname>
+              <given-names>I.</given-names>
+            </name>
+            <name>
+              <surname>Cleven</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Nitschke</surname>
+              <given-names>J.</given-names>
+            </name>
+          </person-group>
+          <article-title>The effect of anticipation and the specificity of sex differences for amygdala and hippocampus function in emotional memory</article-title>
+          <source>PNAS</source>
+          <volume>103</volume>
+          <year>2006</year>
+          <fpage>14200</fpage>
+          <lpage>14205</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.0601648103</pub-id>
+          <pub-id pub-id-type="pmid">16963565</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib0047">
+        <element-citation publication-type="journal" id="sbref0047">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Maturana</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Scherer</surname>
+              <given-names>S.</given-names>
+            </name>
+          </person-group>
+          <article-title>VoxNet: a 3D convolutional neural network for real-time object recognition</article-title>
+          <source>Intell. Rob. Syst. (IROS)</source>
+          <year>2015</year>
+          <fpage>922</fpage>
+          <lpage>928</lpage>
+          <pub-id pub-id-type="doi">10.1109/IROS.2015.7353481</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib0048">
+        <element-citation publication-type="journal" id="sbref0048">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mazoyer</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Zago</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Mellet</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Bricogne</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Etard</surname>
+              <given-names>O.</given-names>
+            </name>
+            <name>
+              <surname>Houdè</surname>
+              <given-names>O.</given-names>
+            </name>
+            <name>
+              <surname>Crivello</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Joliot</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Petit</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Tzourio-Mazoyer</surname>
+              <given-names>N.</given-names>
+            </name>
+          </person-group>
+          <article-title>Cortical networks for working memory and executive functions sustain the conscious resting state in man</article-title>
+          <source>Brain Res. Bull.</source>
+          <volume>54</volume>
+          <year>2001</year>
+          <fpage>287</fpage>
+          <lpage>298</lpage>
+          <pub-id pub-id-type="doi">10.1016/s0361-9230(00)00437-8</pub-id>
+          <pub-id pub-id-type="pmid">11287133</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib0049">
+        <element-citation publication-type="journal" id="sbref0049">
+          <person-group person-group-type="author">
+            <name>
+              <surname>McKiernan</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Kaufman</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Kucera-Thompson</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Binder</surname>
+              <given-names>J.</given-names>
+            </name>
+          </person-group>
+          <article-title>A parametric manipulation of factors affecting task-induced deactivation in functional neuroimaging</article-title>
+          <source>J. Cognit. Neurosci.</source>
+          <volume>15</volume>
+          <year>2003</year>
+          <fpage>394</fpage>
+          <lpage>408</lpage>
+          <pub-id pub-id-type="doi">10.1162/089892903321593117</pub-id>
+          <pub-id pub-id-type="pmid">12729491</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib0050">
+        <element-citation publication-type="book" id="sbref0050">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Meenakshi</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Jamison</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Kuceyeski</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Sabuncu</surname>
+              <given-names>M.</given-names>
+            </name>
+          </person-group>
+          <part-title>3D convolutional neural networks for classification of functional connectomes</part-title>
+          <source>MICCAI 2018</source>
+          <year>2018</year>
+          <pub-id pub-id-type="doi">10.1007/978-3-030-00889-5_16</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib0051">
+        <element-citation publication-type="journal" id="sbref0051">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mulders</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>van Eijndhoven</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Schene</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Beckmann</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Tendolkar</surname>
+              <given-names>I.</given-names>
+            </name>
+          </person-group>
+          <article-title>Resting-state functional connectivity in major depressive disorder: a review</article-title>
+          <source>Neurosci. Biobehav. Rev.</source>
+          <volume>56</volume>
+          <year>2015</year>
+          <fpage>330</fpage>
+          <lpage>344</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neubiorev.2015.07.014</pub-id>
+          <pub-id pub-id-type="pmid">26234819</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib0052">
+        <element-citation publication-type="journal" id="sbref0052">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Nielsen</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Zielinski</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Ferguson</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Lainhart</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Anderson</surname>
+              <given-names>J.</given-names>
+            </name>
+          </person-group>
+          <article-title>An evaluation of the left-brain vs. right-brain hypothesis with resting state functional connectivity magnetic resonance imaging</article-title>
+          <source>PLoS ONE</source>
+          <volume>8</volume>
+          <year>2013</year>
+          <fpage>e71275</fpage>
+          <pub-id pub-id-type="doi">10.1371/journal.pone.0071275</pub-id>
+          <pub-id pub-id-type="pmid">23967180</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib0053">
+        <element-citation publication-type="book" id="sbref0053">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Nikolentzos</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Meladianos</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Tixier</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Skianis</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Vazirgiannis</surname>
+              <given-names>M.</given-names>
+            </name>
+          </person-group>
+          <part-title>Kernel graph convolutional neural networks</part-title>
+          <source>ICANN 2018</source>
+          <year>2017</year>
+        </element-citation>
+      </ref>
+      <ref id="bib0054">
+        <element-citation publication-type="journal" id="sbref0054">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ott</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Linstead</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>LaHaye</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Baldi</surname>
+              <given-names>P.</given-names>
+            </name>
+          </person-group>
+          <article-title>Learning in the machine: to share or not to share?</article-title>
+          <source>Neural Netw.</source>
+          <volume>126</volume>
+          <year>2020</year>
+          <fpage>235</fpage>
+          <lpage>249</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neunet.2020.03.016</pub-id>
+          <pub-id pub-id-type="pmid">32259763</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib0055">
+        <element-citation publication-type="journal" id="sbref0055">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Parisot</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Ktena</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Ferrante</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Guerrero</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Glocker</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Rueckert</surname>
+              <given-names>D.</given-names>
+            </name>
+          </person-group>
+          <article-title>Disease prediction using graph convolutional networks: application to autism spectrum disorder and Alzheimer’s disease</article-title>
+          <source>Med. Image Anal.</source>
+          <volume>48</volume>
+          <year>2018</year>
+          <fpage>117</fpage>
+          <lpage>130</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.media.2018.06.001</pub-id>
+          <pub-id pub-id-type="pmid">29890408</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib0056">
+        <element-citation publication-type="journal" id="sbref0056">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Patel</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Bullmore</surname>
+              <given-names>E.</given-names>
+            </name>
+          </person-group>
+          <article-title>A wavelet-based estimator of the degrees of freedom in denoised fMRI time series for probabilistic testing of functional connectivity and brain graphs</article-title>
+          <source>Neuroimage</source>
+          <volume>142</volume>
+          <year>2016</year>
+          <fpage>14</fpage>
+          <lpage>26</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2015.04.052</pub-id>
+          <pub-id pub-id-type="pmid">25944610</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib0057">
+        <element-citation publication-type="journal" id="sbref0057">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Patel</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Kundu</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Rubinov</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Jones</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Vertes</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Ersche</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Suckling</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Bullmore</surname>
+              <given-names>E.</given-names>
+            </name>
+          </person-group>
+          <article-title>A wavelet method for modeling and despiking motion artifacts from resting-state fMRI time series</article-title>
+          <source>Neuroimage</source>
+          <volume>95</volume>
+          <year>2014</year>
+          <fpage>287</fpage>
+          <lpage>304</lpage>
+          <pub-id pub-id-type="pmid">24657353</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib0058">
+        <element-citation publication-type="journal" id="sbref0058">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Raichle</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>MacLeod</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Snyder</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Powers</surname>
+              <given-names>W.</given-names>
+            </name>
+            <name>
+              <surname>Gusnard</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Shulman</surname>
+              <given-names>G.</given-names>
+            </name>
+          </person-group>
+          <article-title>A default mode of brain function</article-title>
+          <source>PNAS</source>
+          <volume>98</volume>
+          <year>2001</year>
+          <fpage>676</fpage>
+          <lpage>682</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.98.2.676</pub-id>
+          <pub-id pub-id-type="pmid">11209064</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib0059">
+        <element-citation publication-type="journal" id="sbref0059">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ritchie</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Cox</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Shen</surname>
+              <given-names>X.</given-names>
+            </name>
+            <name>
+              <surname>Lombardo</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Reus</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Alloza</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Harris</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Alderson</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>Hunter</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Neilson</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Liewald</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Auyeung</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Whalley</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>Lawrie</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Gale</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Bastin</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>McIntosh</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Deary</surname>
+              <given-names>I.</given-names>
+            </name>
+          </person-group>
+          <article-title>Sex differences in the adult human brain: evidence from 5216 UK biobank participants</article-title>
+          <source>Cereb. Cortex</source>
+          <volume>28</volume>
+          <year>2018</year>
+          <fpage>2959</fpage>
+          <lpage>2975</lpage>
+          <pub-id pub-id-type="doi">10.1093/cercor/bhy109</pub-id>
+          <pub-id pub-id-type="pmid">29771288</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib0060">
+        <element-citation publication-type="journal" id="sbref0060">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ruigrok</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Salimi-Khorshidi</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Lai</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Baron-Cohen</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Lombardo</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Tait</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Suckling</surname>
+              <given-names>J.</given-names>
+            </name>
+          </person-group>
+          <article-title>A meta-analysis of sex differences in human brain structure</article-title>
+          <source>Neurosci. Biobehav. Rev.</source>
+          <volume>39</volume>
+          <year>2014</year>
+          <fpage>34</fpage>
+          <lpage>50</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neubiorev.2013.12.004</pub-id>
+          <pub-id pub-id-type="pmid">24374381</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib0061">
+        <element-citation publication-type="journal" id="sbref0061">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Satterthwaite</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Wolf</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Roalf</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Ruparel</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Erus</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Vandekar</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Gennatas</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Elliott</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Smith</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Hakonarson</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>Verma</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Davatzikos</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Gur</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Gur</surname>
+              <given-names>R.</given-names>
+            </name>
+          </person-group>
+          <article-title>Linked sex differences in cognition and functional connectivity in youth</article-title>
+          <source>Cereb. Cortex</source>
+          <volume>25</volume>
+          <year>2015</year>
+          <fpage>2383</fpage>
+          <lpage>2394</lpage>
+          <pub-id pub-id-type="doi">10.1093/cercor/bhu036</pub-id>
+          <pub-id pub-id-type="pmid">24646613</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib0062">
+        <element-citation publication-type="journal" id="sbref0062">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Seeley</surname>
+              <given-names>W.</given-names>
+            </name>
+            <name>
+              <surname>Menon</surname>
+              <given-names>V.</given-names>
+            </name>
+            <name>
+              <surname>Schatzberg</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Keller</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Glover</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Kenna</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>Reiss</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Greicius</surname>
+              <given-names>M.</given-names>
+            </name>
+          </person-group>
+          <article-title>Dissociable intrinsic connectivity networks for salience processing and executive control</article-title>
+          <source>J. Neurosci.</source>
+          <volume>27</volume>
+          <year>2007</year>
+          <fpage>2349</fpage>
+          <lpage>2356</lpage>
+          <pub-id pub-id-type="doi">10.1523/JNEUROSCI.5587-06.2007</pub-id>
+          <pub-id pub-id-type="pmid">17329432</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib0063">
+        <element-citation publication-type="book" id="sbref0063">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Selvaraju</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Cogswell</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Das</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Vedantam</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Parikh</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Batra</surname>
+              <given-names>D.</given-names>
+            </name>
+          </person-group>
+          <part-title>Grad-CAM: visual explanations from deep networks via gradient-based localization</part-title>
+          <source>2017 IEEE International Conference on Computer Vision (ICCV)</source>
+          <year>2017</year>
+          <pub-id pub-id-type="doi">10.1109/ICCV.2017.74</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib0064">
+        <element-citation publication-type="journal" id="sbref0064">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Shulman</surname>
+              <given-names>G.L.</given-names>
+            </name>
+            <name>
+              <surname>Fiez</surname>
+              <given-names>J.A.</given-names>
+            </name>
+            <name>
+              <surname>Corbetta</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Buckner</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Miezin</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Raichle</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Petersen</surname>
+              <given-names>S.</given-names>
+            </name>
+          </person-group>
+          <article-title>Common blood flow changes across visual tasks: II. Decreases in cerebral cortex</article-title>
+          <source>J. Cognit. Neurosci.</source>
+          <volume>9</volume>
+          <year>1997</year>
+          <fpage>648</fpage>
+          <lpage>663</lpage>
+          <pub-id pub-id-type="doi">10.1162/jocn.1997.9.5.648</pub-id>
+          <pub-id pub-id-type="pmid">23965122</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib0065">
+        <element-citation publication-type="book" id="sbref0065">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Simonyan</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Vedaldi</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Zisserman</surname>
+              <given-names>A.</given-names>
+            </name>
+          </person-group>
+          <part-title>Deep inside convolutional networks: visualising image classification models and saliency maps</part-title>
+          <source>Workshop at International Conference on Learning Representations</source>
+          <year>2014</year>
+        </element-citation>
+      </ref>
+      <ref id="bib0066">
+        <element-citation publication-type="journal" id="sbref0066">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Simpson</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Snyder</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Gusnard</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Raichle</surname>
+              <given-names>M.</given-names>
+            </name>
+          </person-group>
+          <article-title>Emotion-induced changes in human medial prefrontal cortex: I. During cognitive task performance</article-title>
+          <source>PNAS</source>
+          <volume>98</volume>
+          <year>2001</year>
+          <fpage>683</fpage>
+          <lpage>687</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.98.2.683</pub-id>
+          <pub-id pub-id-type="pmid">11209065</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib0067">
+        <element-citation publication-type="journal" id="sbref0067">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Smith</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Fox</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Miller</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Glahn</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Fox</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Mackay</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Filippini</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Watkins</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Toro</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Laird</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Beckmann</surname>
+              <given-names>C.</given-names>
+            </name>
+          </person-group>
+          <article-title>Correspondence of the brains functional architecture during activation and rest</article-title>
+          <source>Proc. Natl. Acad. Sci.</source>
+          <volume>106</volume>
+          <year>2009</year>
+          <fpage>13040</fpage>
+          <lpage>13045</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.0905267106</pub-id>
+          <pub-id pub-id-type="pmid">19620724</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib0068">
+        <element-citation publication-type="journal" id="sbref0068">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sridharan</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Levitin</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Menon</surname>
+              <given-names>V.</given-names>
+            </name>
+          </person-group>
+          <article-title>A critical role for the right fronto-insular cortex in switching between central-executive and default-mode networks</article-title>
+          <source>PNAS</source>
+          <volume>105</volume>
+          <year>2008</year>
+          <fpage>12569</fpage>
+          <lpage>12574</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.0800005105</pub-id>
+          <pub-id pub-id-type="pmid">18723676</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib0069">
+        <element-citation publication-type="journal" id="sbref0069">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Takahashi</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>Matsuura</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Yahata</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Koeda</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Suhara</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Okubo</surname>
+              <given-names>Y.</given-names>
+            </name>
+          </person-group>
+          <article-title>Men and women show distinct brain activations during imagery of sexual and emotional infidelity</article-title>
+          <source>Neuroimage</source>
+          <volume>32</volume>
+          <year>2006</year>
+          <fpage>1299</fpage>
+          <lpage>1307</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2006.05.049</pub-id>
+          <pub-id pub-id-type="pmid">16829139</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib0070">
+        <element-citation publication-type="journal" id="sbref0070">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tixier</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Nikolentzos</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Meladianos</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Vazirgiannis</surname>
+              <given-names>M.</given-names>
+            </name>
+          </person-group>
+          <article-title>Classifying graphs as images with convolutional neural networks</article-title>
+          <source>arXiv</source>
+          <year>2017</year>
+        </element-citation>
+      </ref>
+      <ref id="bib0071">
+        <element-citation publication-type="journal" id="sbref0071">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tomasi</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Volkow</surname>
+              <given-names>N.</given-names>
+            </name>
+          </person-group>
+          <article-title>Gender differences in brain functional connectivity density</article-title>
+          <source>Hum. Brain Mapp.</source>
+          <volume>33</volume>
+          <year>2011</year>
+          <fpage>849</fpage>
+          <lpage>860</lpage>
+          <pub-id pub-id-type="doi">10.1002/hbm.21252</pub-id>
+          <pub-id pub-id-type="pmid">21425398</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib0072">
+        <element-citation publication-type="journal" id="sbref0072">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tzourio-Mazoyer</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Landeau</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Papathanassiou</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Crivello</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Etard</surname>
+              <given-names>O.</given-names>
+            </name>
+            <name>
+              <surname>Delcroix</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Mazoyer</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Joliot</surname>
+              <given-names>M.</given-names>
+            </name>
+          </person-group>
+          <article-title>Automated anatomical labeling of activations in SPM using a macroscopic anatomical parcellation of the MNI MRI single-subject brain</article-title>
+          <source>Neuroimage</source>
+          <volume>15</volume>
+          <year>2002</year>
+          <fpage>273</fpage>
+          <lpage>289</lpage>
+          <pub-id pub-id-type="doi">10.1006/nimg.2001.0978</pub-id>
+          <pub-id pub-id-type="pmid">11771995</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib0073">
+        <element-citation publication-type="journal" id="sbref0073">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Vossel</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Geng</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Fink</surname>
+              <given-names>G.</given-names>
+            </name>
+          </person-group>
+          <article-title>Dorsal and ventral attention systems: distinct neural circuits but collaborative roles</article-title>
+          <source>Neuroscientist</source>
+          <volume>20</volume>
+          <year>2014</year>
+          <fpage>150</fpage>
+          <lpage>159</lpage>
+          <pub-id pub-id-type="doi">10.1177/1073858413494269</pub-id>
+          <pub-id pub-id-type="pmid">23835449</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib0074">
+        <element-citation publication-type="journal" id="sbref0074">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Weis</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Patil</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Hoffstaedter</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Nostro</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Yeo</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Eickhoff</surname>
+              <given-names>S.</given-names>
+            </name>
+          </person-group>
+          <article-title>Sex classification by resting state brain connectivity</article-title>
+          <source>Cereb. Cortex</source>
+          <volume>30</volume>
+          <year>2020</year>
+          <fpage>824</fpage>
+          <lpage>835</lpage>
+          <pub-id pub-id-type="doi">10.1093/cercor/bhz129</pub-id>
+          <pub-id pub-id-type="pmid">31251328</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib0075">
+        <element-citation publication-type="journal" id="sbref0075">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Weissman-Fogel</surname>
+              <given-names>I.</given-names>
+            </name>
+            <name>
+              <surname>Moayedi</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Taylor</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Pope</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Davis</surname>
+              <given-names>K.</given-names>
+            </name>
+          </person-group>
+          <article-title>Cognitive and default-mode resting state networks: do male and female brains ‘rest’ differently?</article-title>
+          <source>Hum. Brain Mapp.</source>
+          <volume>31</volume>
+          <year>2010</year>
+          <fpage>1713</fpage>
+          <lpage>1726</lpage>
+          <pub-id pub-id-type="doi">10.1002/hbm.20968</pub-id>
+          <pub-id pub-id-type="pmid">20725910</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib0076">
+        <element-citation publication-type="journal" id="sbref0076">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Xu</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Hu</surname>
+              <given-names>W.</given-names>
+            </name>
+            <name>
+              <surname>Leskovec</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Jegelka</surname>
+              <given-names>S.</given-names>
+            </name>
+          </person-group>
+          <article-title>How powerful are graph neural networks?</article-title>
+          <source>arXiv</source>
+          <year>2018</year>
+        </element-citation>
+      </ref>
+      <ref id="bib0077">
+        <element-citation publication-type="book" id="sbref0077">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zeiler</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Fergus</surname>
+              <given-names>R.</given-names>
+            </name>
+          </person-group>
+          <part-title>Visualizing and understanding convolutional networks</part-title>
+          <source>Computer Vision – ECCV 2014. Lecture Notes in Computer Science</source>
+          <volume>vol. 8689</volume>
+          <year>2013</year>
+        </element-citation>
+      </ref>
+      <ref id="bib0078">
+        <element-citation publication-type="journal" id="sbref0078">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhang</surname>
+              <given-names>W.</given-names>
+            </name>
+            <name>
+              <surname>Groen</surname>
+              <given-names>W.</given-names>
+            </name>
+            <name>
+              <surname>Mennes</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Greven</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Buitelaar</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Rommelse</surname>
+              <given-names>N.</given-names>
+            </name>
+          </person-group>
+          <article-title>Revisiting subcortical brain volume correlates of autism in the abide dataset: effects of age and sex</article-title>
+          <source>Psychol. Med.</source>
+          <volume>48</volume>
+          <year>2018</year>
+          <fpage>654</fpage>
+          <lpage>668</lpage>
+          <pub-id pub-id-type="doi">10.1017/S003329171700201X</pub-id>
+          <pub-id pub-id-type="pmid">28745267</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib0079">
+        <element-citation publication-type="journal" id="sbref0079">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhang</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <name>
+              <surname>Hong</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>McClement</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Oladosu</surname>
+              <given-names>O.</given-names>
+            </name>
+            <name>
+              <surname>Pridham</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Slaney</surname>
+              <given-names>G.</given-names>
+            </name>
+          </person-group>
+          <article-title>Grad-cam helps interpret the deep learning models trained to classify multiple sclerosis types using clinical brain magnetic resonance imaging</article-title>
+          <source>J. Neurosci. Methods</source>
+          <volume>353</volume>
+          <year>2021</year>
+          <pub-id pub-id-type="doi">10.1016/j.jneumeth.2021.109098</pub-id>
+        </element-citation>
+      </ref>
+    </ref-list>
+    <ack id="ack0001">
+      <title>Acknowledgment</title>
+      <p id="p0064">This research was co-funded by the NIHR Cambridge Biomedical Research Centre and Marmaduke Sheild. Matthew Leming is supported by a Gates Cambridge Scholarship from the University of Cambridge. Lena Dorfschmidt provided advice on several aspects of sex differences in the brain for this study.</p>
+      <p id="p0065">This research has been conducted using the UK Biobank Resource [project ID 20904]. This research was co-funded by the NIHR Cambridge Biomedical Research Centre and a Marmaduke Sheild grant to Richard A.I. Bethlehem and Varun Warrier. The views expressed are those of the author(s) and not necessarily those of the NHS, the NIHR or the Department of Health and Social Care.</p>
+    </ack>
+  </back>
+</article>

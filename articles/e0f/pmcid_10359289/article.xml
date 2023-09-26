@@ -1,0 +1,2046 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ali="http://www.niso.org/schemas/ali/1.0/" article-type="research-article" dtd-version="1.3">
+  <?properties open_access?>
+  <processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats">
+    <restricted-by>pmc</restricted-by>
+  </processing-meta>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">Sci Rep</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Sci Rep</journal-id>
+      <journal-title-group>
+        <journal-title>Scientific Reports</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">2045-2322</issn>
+      <publisher>
+        <publisher-name>Nature Publishing Group UK</publisher-name>
+        <publisher-loc>London</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">37474568</article-id>
+      <article-id pub-id-type="pmc">10359289</article-id>
+      <article-id pub-id-type="publisher-id">38573</article-id>
+      <article-id pub-id-type="doi">10.1038/s41598-023-38573-0</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Molecular-enriched functional connectivity in the human brain using multiband multi-echo simultaneous ASL/BOLD fMRI</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" corresp="yes">
+          <name>
+            <surname>Dipasquale</surname>
+            <given-names>Ottavia</given-names>
+          </name>
+          <address>
+            <email>ottavia.dipasquale@kcl.ac.uk</email>
+          </address>
+          <xref ref-type="aff" rid="Aff1">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Cohen</surname>
+            <given-names>Alexander</given-names>
+          </name>
+          <xref ref-type="aff" rid="Aff2">2</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Martins</surname>
+            <given-names>Daniel</given-names>
+          </name>
+          <xref ref-type="aff" rid="Aff1">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Zelaya</surname>
+            <given-names>Fernando</given-names>
+          </name>
+          <xref ref-type="aff" rid="Aff1">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Turkheimer</surname>
+            <given-names>Federico</given-names>
+          </name>
+          <xref ref-type="aff" rid="Aff1">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Veronese</surname>
+            <given-names>Mattia</given-names>
+          </name>
+          <xref ref-type="aff" rid="Aff1">1</xref>
+          <xref ref-type="aff" rid="Aff3">3</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Mehta</surname>
+            <given-names>Mitul A.</given-names>
+          </name>
+          <xref ref-type="aff" rid="Aff1">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Williams</surname>
+            <given-names>Steven C. R.</given-names>
+          </name>
+          <xref ref-type="aff" rid="Aff1">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Yang</surname>
+            <given-names>Baolian</given-names>
+          </name>
+          <xref ref-type="aff" rid="Aff4">4</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Banerjee</surname>
+            <given-names>Suchandrima</given-names>
+          </name>
+          <xref ref-type="aff" rid="Aff5">5</xref>
+        </contrib>
+        <contrib contrib-type="author" corresp="yes">
+          <name>
+            <surname>Wang</surname>
+            <given-names>Yang</given-names>
+          </name>
+          <address>
+            <email>yangwang@mcw.edu</email>
+          </address>
+          <xref ref-type="aff" rid="Aff2">2</xref>
+        </contrib>
+        <aff id="Aff1"><label>1</label><institution-wrap><institution-id institution-id-type="GRID">grid.13097.3c</institution-id><institution-id institution-id-type="ISNI">0000 0001 2322 6764</institution-id><institution>Department of Neuroimaging, Institute of Psychiatry, Psychology and Neuroscience, </institution><institution>King’s College London, </institution></institution-wrap>De Crespigny Park, London, SE5 8AF UK </aff>
+        <aff id="Aff2"><label>2</label><institution-wrap><institution-id institution-id-type="GRID">grid.30760.32</institution-id><institution-id institution-id-type="ISNI">0000 0001 2111 8460</institution-id><institution>Department of Radiology, </institution><institution>Medical College of Wisconsin, </institution></institution-wrap>8701 Watertown Plank Road, Milwaukee, WI 53226 USA </aff>
+        <aff id="Aff3"><label>3</label><institution-wrap><institution-id institution-id-type="GRID">grid.5608.b</institution-id><institution-id institution-id-type="ISNI">0000 0004 1757 3470</institution-id><institution>Department of Information Engineering, </institution><institution>University of Padova, </institution></institution-wrap>Padua, Italy </aff>
+        <aff id="Aff4"><label>4</label><institution-wrap><institution-id institution-id-type="GRID">grid.418143.b</institution-id><institution-id institution-id-type="ISNI">0000 0001 0943 0267</institution-id><institution>GE Healthcare, </institution></institution-wrap>Waukesha, WI USA </aff>
+        <aff id="Aff5"><label>5</label><institution-wrap><institution-id institution-id-type="GRID">grid.418143.b</institution-id><institution-id institution-id-type="ISNI">0000 0001 0943 0267</institution-id><institution>GE Healthcare, </institution></institution-wrap>Menlo Park, CA USA </aff>
+      </contrib-group>
+      <pub-date pub-type="epub">
+        <day>20</day>
+        <month>7</month>
+        <year>2023</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>20</day>
+        <month>7</month>
+        <year>2023</year>
+      </pub-date>
+      <pub-date pub-type="collection">
+        <year>2023</year>
+      </pub-date>
+      <volume>13</volume>
+      <elocation-id>11751</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>9</day>
+          <month>3</month>
+          <year>2023</year>
+        </date>
+        <date date-type="accepted">
+          <day>11</day>
+          <month>7</month>
+          <year>2023</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>© The Author(s) 2023</copyright-statement>
+        <license>
+          <ali:license_ref specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref>
+          <license-p><bold>Open Access</bold> This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article's Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article's Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit <ext-link ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</ext-link>.</license-p>
+        </license>
+      </permissions>
+      <abstract id="Abs1">
+        <p id="Par1">Receptor-enriched analysis of functional connectivity by targets (REACT) is a strategy to enrich functional MRI (fMRI) data with molecular information on the neurotransmitter distribution density in the human brain, providing a biological basis to the functional connectivity (FC) analysis. Although this approach has been used in BOLD fMRI studies only so far, extending its use to ASL imaging would provide many advantages, including the more direct link of ASL with neuronal activity compared to BOLD and its suitability for pharmacological MRI studies assessing drug effects on baseline brain function. Here, we applied REACT to simultaneous ASL/BOLD resting-state fMRI data of 29 healthy subjects and estimated the ASL and BOLD FC maps related to six molecular systems. We then compared the ASL and BOLD FC maps in terms of spatial similarity, and evaluated and compared the test–retest reproducibility of each modality. We found robust spatial patterns of molecular-enriched FC for both modalities, moderate similarity between BOLD and ASL FC maps and comparable reproducibility for all but one molecular-enriched functional networks. Our findings showed that ASL is as informative as BOLD in detecting functional circuits associated with specific molecular pathways, and that the two modalities may provide complementary information related to these circuits.</p>
+      </abstract>
+      <kwd-group kwd-group-type="npg-subject">
+        <title>Subject terms</title>
+        <kwd>Neural circuits</kwd>
+        <kwd>Molecular neuroscience</kwd>
+      </kwd-group>
+      <custom-meta-group>
+        <custom-meta>
+          <meta-name>issue-copyright-statement</meta-name>
+          <meta-value>© Springer Nature Limited 2023</meta-value>
+        </custom-meta>
+      </custom-meta-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="Sec1">
+      <title>Introduction</title>
+      <p id="Par2">Understanding the relationship between the microscale molecular processes of the human brain and its macroscale functional architecture has attracted considerable attention in the neuroimaging community over the years<sup><xref ref-type="bibr" rid="CR1">1</xref>–<xref ref-type="bibr" rid="CR6">6</xref></sup>. The use of multimodal approaches integrating outputs from different techniques and acquisition sequences can enrich the information that can be derived compared to single modalities when studying brain function<sup><xref ref-type="bibr" rid="CR7">7</xref></sup>. This integration has also been fuelled by recent advances in analytical approaches<sup><xref ref-type="bibr" rid="CR2">2</xref>,<xref ref-type="bibr" rid="CR3">3</xref></sup> and global data-sharing initiatives (e.g. UK Biobank, ENIGMA Consortium, Human Connectome Project, etc.).</p>
+      <p id="Par3">One of the most recent analytical strategies to integrate functional magnetic resonance imaging (fMRI) and molecular imaging is the Receptor-Enriched Analysis of functional connectivity by targets (REACT)<sup><xref ref-type="bibr" rid="CR2">2</xref></sup>, a novel multimodal method that exploits the temporal dynamics of fMRI signal to identify functional circuits associated with specific molecular systems. By using neuroimaging templates of receptor density derived from Positron Emission Tomography (PET) or Single-Photon Emission Computerized Tomography (SPECT) imaging in healthy subjects, REACT maps fMRI data onto the space of specific molecular systems and recovers biologically informed networks of functional connectivity (FC).</p>
+      <p id="Par4">The application of REACT to clinical and pharmacological blood oxygen level-dependent (BOLD) fMRI studies has demonstrated its ability to uncover new patterns of functional alterations in neurotransmission-related circuits in patients with brain disorders and suggests potential drug-target mechanisms at the system level that could underlie the functional effects of pharmacological treatment<sup><xref ref-type="bibr" rid="CR2">2</xref>,<xref ref-type="bibr" rid="CR8">8</xref>–<xref ref-type="bibr" rid="CR12">12</xref></sup>. However, BOLD signal is an indirect measure of neuronal activity, resulting from the combination of changes in both oxygen consumption and regional cerebral blood flow (CBF), as well as changes in regional blood volume (CBV)<sup><xref ref-type="bibr" rid="CR13">13</xref></sup>. Thus, inferring neuronal dynamics directly from the BOLD signal is not straightforward.</p>
+      <p id="Par5">Arterial Spin Labelling (ASL) offers an exciting alternative to BOLD since it allows for a more specific measure of global and regional CBF changes associated with neuronal<sup><xref ref-type="bibr" rid="CR14">14</xref>–<xref ref-type="bibr" rid="CR16">16</xref></sup> and neurotransmitter activity<sup><xref ref-type="bibr" rid="CR17">17</xref>,<xref ref-type="bibr" rid="CR18">18</xref></sup>. CBF is also suitable for pharmacological MRI studies assessing drug effects on baseline brain function<sup><xref ref-type="bibr" rid="CR19">19</xref></sup>, it is acquired with pulse sequences that are resistant to magnetic field inhomogeneity effects<sup><xref ref-type="bibr" rid="CR20">20</xref></sup>, thus avoiding susceptibility artifacts and signal loss in the orbitofrontal, inferior temporal, and limbic regions that are linked to major neurotransmitter systems<sup><xref ref-type="bibr" rid="CR21">21</xref></sup>, and its signal is typically well localized to the capillary beds<sup><xref ref-type="bibr" rid="CR22">22</xref>,<xref ref-type="bibr" rid="CR23">23</xref></sup>. However, some of the classical technical limitations of the standard single-shot ASL acquisition techniques (e.g., long tagging time to label inflowing blood and post-labeling delay to allow tagged blood to flow into the brain, which inevitably result in a lower spatial and temporal resolution compared to BOLD imaging) have hampered the use of ASL as a reliable measure of brain FC.</p>
+      <p id="Par6">A novel multi-band and multi-echo (MB-ME) ASL/BOLD sequence has been recently developed to overcome some of those limitations and provide high-resolution, whole-brain simultaneous ASL/BOLD data to extend the study of functional connectivity in the human brain<sup><xref ref-type="bibr" rid="CR24">24</xref></sup>. This sequence exploits the advantages of MB and ME techniques to improve signal to noise ratio (SNR) and increase the temporal resolution of ASL data. The collection of more than two echoes also allows for the use of advanced data-driven de-noising strategies, including multi-echo independent component analysis (ME-ICA)<sup><xref ref-type="bibr" rid="CR25">25</xref>,<xref ref-type="bibr" rid="CR26">26</xref></sup>, resulting in the identification of reliable resting state networks, higher CBF/BOLD coupling, and increased signal stability and reproducibility<sup><xref ref-type="bibr" rid="CR24">24</xref>,<xref ref-type="bibr" rid="CR27">27</xref></sup>. Data obtained with this MB-ME ASL/BOLD sequence have already been used to estimate and compare ASL- and BOLD-based resting state networks, and to evaluate the coupling of CBF and BOLD signals<sup><xref ref-type="bibr" rid="CR24">24</xref>,<xref ref-type="bibr" rid="CR27">27</xref></sup>.</p>
+      <p id="Par7">The above mentioned benefits of ASL, its usage as a quantitative surrogate marker of brain function and the latest technical developments of ASL fMRI offer the opportunity to integrate ASL data and molecular imaging with REACT, to gain further insights from underlying neurotransmitter density data and evaluate brain response to pharmacological intervention. If feasible, this application could pave the way to the integration of molecular and functional imaging in pharmacological and clinical studies where resting-state BOLD data were not—or are not intended to be—acquired, providing a biologically-informed tool to complement the evaluation of global and regional changes in CBF.</p>
+      <p id="Par8">In this study, we determined the feasibility of using REACT with ASL fMRI data by estimating the ASL-based FC networks related to six molecular systems that have been used in previous BOLD-based REACT studies, and compared the resulting ASL-based molecular-enriched functional networks with those derived from BOLD fMRI data in terms of spatial configuration and test–retest reliability. By using ASL and BOLD data acquired simultaneously rather than sequentially, we were able to perform an unbiased comparison of the two modalities and identify the intrinsic differences between them, ruling out the possibility that any spatial differences in the ASL- and BOLD-derived networks might be induced by physiological confounds (e.g., different levels of alertness could potentially affect the spatial pattern of the noradrenergic network).</p>
+    </sec>
+    <sec id="Sec2">
+      <title>Methods</title>
+      <sec id="Sec3">
+        <title>Participants and MRI data acquisition</title>
+        <p id="Par9">Twenty-nine right-handed healthy volunteers (mean age = 28.0 years, age range 20–46, males/females: 9/20) were recruited for this study. Nineteen of them returned within 2 weeks to repeat the study. Subjects were instructed to refrain from caffeine and tobacco for 6 h prior to the MRI exam.</p>
+        <p id="Par10">All subjects provided written informed consent prior to participation in this study, which was approved by the Medical College of Wisconsin Institutional Review Board and conducted in accordance with the Declaration of Helsinki. All methods were carried out in accordance with the approved guidelines and regulations.</p>
+        <p id="Par11">Imaging was performed on a 3 T MR scanner (Signa Premier, GE Healthcare, Waukesha, WI, United States) with a body transmit coil and a 32-channel NOVA (Nova Medical, Wilmington, MA, United States) receive head coil. Subjects underwent a resting state fMRI scan using a MB-ME PCASL/BOLD EPI sequence<sup><xref ref-type="bibr" rid="CR24">24</xref>,<xref ref-type="bibr" rid="CR27">27</xref>,<xref ref-type="bibr" rid="CR28">28</xref></sup> with the following acquisition parameters: echo times (TEs)/repetition time (TR) = 11,30,48,67/3500 ms, FOV = 24 cm, matrix size = 80 × 80, slice thickness = 3 mm (3 × 3x3 mm voxel size), 11 excitations with multiband factor = 4 (44 slices in total), FA = 90°, partial Fourier factor = 0.85, and in-plane acceleration (R) = 2, number of time points = 96, total scan duration = 5.6 min. PCASL parameters included labelling time = 1450 ms and post labelling delay time (PLD) = 1000 ms. One full label/control pair was acquired every 7000 ms. Subjects were instructed to lie still with their eyes closed and stay awake.</p>
+        <p id="Par12">A 3D T1-weighted magnetization-prepared rapid acquisition with gradient echo (MPRAGE) anatomical image was also collected to aid with coregistration (TR/TE = 2200/2.8 ms, field of view (FOV) = 24 cm, matrix size = 512 × 512 × 256, slice thickness = 0.5 mm, voxel size = 0.47 × 0.47 × 0.5 mm, and flip angle (FA) = 8°).</p>
+      </sec>
+      <sec id="Sec4">
+        <title>Image pre-processing</title>
+        <p id="Par13">Data was analyzed using a combination of AFNI<sup><xref ref-type="bibr" rid="CR29">29</xref></sup> and FSL<sup><xref ref-type="bibr" rid="CR30">30</xref></sup>. First, the anatomical MPRAGE image was coregistered to Montreal Neurological Institute (MNI) space. Each fMRI dataset was then volume registered to the first volume using <italic>mcflirt</italic> in FSL. Importantly, only the first-echo dataset was registered, and both label and control images were included. Subsequent echoes were registered using the transformation matrices from the first echo.</p>
+        <p id="Par14">For the BOLD analysis, the four echoes were combined using the <inline-formula id="IEq1"><alternatives><tex-math id="M1">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathrm{T}}_{2}^{*}$$\end{document}</tex-math><mml:math id="M2"><mml:msubsup><mml:mi mathvariant="normal">T</mml:mi><mml:mrow><mml:mn>2</mml:mn></mml:mrow><mml:mrow><mml:mrow/><mml:mo>∗</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41598_2023_38573_Article_IEq1.gif"/></alternatives></inline-formula>-weighted approach<sup><xref ref-type="bibr" rid="CR31">31</xref></sup>. The data was then denoised using ME-ICA and the open source python script tedana.py version 0.0.10 (<ext-link ext-link-type="uri" xlink:href="https://tedana.readthedocs.io/en/latest">https://tedana.readthedocs.io/en/latest</ext-link>)<sup><xref ref-type="bibr" rid="CR25">25</xref>,<xref ref-type="bibr" rid="CR26">26</xref>,<xref ref-type="bibr" rid="CR32">32</xref></sup> to reduce mainly motion-related artefacts, but also other non-BOLD sources of noise<sup><xref ref-type="bibr" rid="CR25">25</xref>,<xref ref-type="bibr" rid="CR33">33</xref></sup>. This technique, described in detail elsewhere, classifies independent components as BOLD or non-BOLD based on whether or not their amplitudes are linearly dependent on TE, respectively<sup><xref ref-type="bibr" rid="CR25">25</xref>,<xref ref-type="bibr" rid="CR26">26</xref>,<xref ref-type="bibr" rid="CR34">34</xref></sup>, and regresses non-BOLD components out of the combined ME data, returning a denoised MBME dataset. Because both label and control volumes were included as input into tedana, in all cases a label-control oscillation noise component was identified and regressed from the BOLD data<sup><xref ref-type="bibr" rid="CR24">24</xref></sup>. The denoised dataset was then registered to the MPRAGE image using <italic>epi_reg</italic> in FSL and then to MNI space using the anatomical transformations computed previously. The data was then smoothed using a 6 mm FWHM Gaussian kernel, and high-pass filtered with f<sub>c</sub> = 0.01 Hz. Finally, to remove residual unspecific confounders (e.g., scanner instabilities, physiological drifts, cardiac fluctuations and respiration)<sup><xref ref-type="bibr" rid="CR35">35</xref>–<xref ref-type="bibr" rid="CR38">38</xref></sup>, we applied a standard denoising step for BOLD data based on the regression of the white matter (WM) and cerebrospinal fluid (CSF) signals. To perform this step, we first created group masks of the WM and CSF from the MNI152 standard template and used those masks to extract the mean WM and CSF signals from the BOLD fMRI data. WM and CSF signals were then regressed out of the BOLD data using <italic>fsl_glm</italic> in FSL.</p>
+        <p id="Par15">For the ASL data analysis, the first-echo data was registered to the MPRAGE image and then to MNI space using the anatomical transformations computed previously. The data was then smoothed using a 6 mm FWHM Gaussian kernel, and a perfusion-weighted (PW) time series was computed by surround subtracting label and control images<sup><xref ref-type="bibr" rid="CR14">14</xref></sup>. In order to improve spatial specificity and increase SNR by reducing interindividual physiological differences in ASL data<sup><xref ref-type="bibr" rid="CR39">39</xref></sup>, we regressed the global PW signal out of the ASL data. To perform this step, we estimated for each time point the mean PW value across the grey matter voxels<sup><xref ref-type="bibr" rid="CR40">40</xref>,<xref ref-type="bibr" rid="CR41">41</xref></sup> and regressed the signal out of the ASL dataset using the <italic>fsl_glm</italic> function in FSL.</p>
+      </sec>
+      <sec id="Sec5">
+        <title>Molecular-enriched functional connectivity analysis with REACT</title>
+        <p id="Par16">Six publicly available in vivo molecular templates of the major neuromodulatory systems, including the transporters of dopamine (DAT)<sup><xref ref-type="bibr" rid="CR42">42</xref></sup>, noradrenaline (NAT)<sup><xref ref-type="bibr" rid="CR43">43</xref></sup>, serotonin (SERT)<sup><xref ref-type="bibr" rid="CR44">44</xref></sup> and vesicular acetylcholine (VAChT)<sup><xref ref-type="bibr" rid="CR45">45</xref></sup>, and GABA-A and mGlu5 receptors<sup><xref ref-type="bibr" rid="CR46">46</xref>,<xref ref-type="bibr" rid="CR47">47</xref></sup> were used as spatial priors to enrich the fMRI analysis of the BOLD and ASL data and estimate the corresponding functional circuits related to each molecular system. We selected these templates to provide illustrative examples of the methodology and its general usage with ASL and BOLD data, although different types of molecular templates can be used in REACT, according to the specific hypotheses of the study and the template availability (e.g., to explore the brain mechanisms underlying a certain disorder, neurotransmitter transporters might be more suited to capture the full architecture of a certain system, while in a drug challenge targeting specific neurotransmitters, the optimal approach would be to use the maps of those specific receptors, if drug binding is known<sup><xref ref-type="bibr" rid="CR48">48</xref></sup>). Every molecular template was previously normalized by scaling its image values between 0 and 1 and masked using a standard grey matter mask. Of note, the regions used as references for quantification of the molecular data in the kinetic models for the radioligands were masked out of the corresponding template, namely the occipital areas in DAT and NAT and the cerebellum in SERT, VAChT, and mGluR5. The original templates can be found at <ext-link ext-link-type="uri" xlink:href="https://github.com/netneurolab/neuromaps">https://github.com/netneurolab/neuromaps</ext-link><sup><xref ref-type="bibr" rid="CR49">49</xref>,<xref ref-type="bibr" rid="CR50">50</xref></sup>. To examine collinearity between the receptor systems, we calculated the correlation coefficients between each pair of molecular templates as well as their Variance Inflation Factors (VIFs). Of note, VIF quantifies the severity of multicollinearity in an ordinary least squares regression analysis (VIF = <inline-formula id="IEq2"><alternatives><tex-math id="M3">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\frac{1}{1-{R}^{2}}$$\end{document}</tex-math><mml:math id="M4"><mml:mfrac><mml:mn>1</mml:mn><mml:mrow><mml:mn>1</mml:mn><mml:mo>-</mml:mo><mml:msup><mml:mrow><mml:mi>R</mml:mi></mml:mrow><mml:mn>2</mml:mn></mml:msup></mml:mrow></mml:mfrac></mml:math><inline-graphic xlink:href="41598_2023_38573_Article_IEq2.gif"/></alternatives></inline-formula>). VIFs higher than 1 and up to 5 typically suggest that there is a moderate correlation between two variables, but it is not severe enough to warrant corrective measures, while values greater than 5 represent critical levels of multicollinearity and will result in a poor estimation of the coefficients, meaning that alternative analytic approaches (e.g., dimensionality reduction) are required<sup><xref ref-type="bibr" rid="CR51">51</xref>–<xref ref-type="bibr" rid="CR53">53</xref></sup>.</p>
+        <p id="Par17">A detailed explanation of the REACT methodology and its applications can be found elsewhere<sup><xref ref-type="bibr" rid="CR2">2</xref>,<xref ref-type="bibr" rid="CR10">10</xref></sup>. In brief, the functional circuits related to the six molecular systems were estimated using a two-step multiple regression analysis. In the first step, the fMRI volumes were masked using a binarized mask derived from the molecular templates to restrict the analysis to the voxels for which the density information of the neurotransmitters was available. Then, the molecular templates were used as a set of spatial regressors to weight the fMRI images and estimate the dominant fluctuation related to each molecular system at the subject level. The resulting subject-specific time series were then used as temporal regressors in a second multiple regression analysis to estimate the subject-specific spatial map associated with each molecular template. The output consists of six maps per subject and fMRI dataset, each one reflecting the molecular-enriched FC associated with a specific neurotransmitter. This analysis was performed using the react-fmri package (<ext-link ext-link-type="uri" xlink:href="https://github.com/ottaviadipasquale/react-fmri)">https://github.com/ottaviadipasquale/react-fmri)</ext-link><sup><xref ref-type="bibr" rid="CR54">54</xref></sup>.</p>
+      </sec>
+      <sec id="Sec6">
+        <title>Comparison of BOLD and ASL-based molecular-enriched FC</title>
+        <p id="Par18">To estimate population inferences for each neuroreceptor system and fMRI dataset (BOLD and ASL), we performed voxel-wise one-sample t-tests using <italic>randomise</italic> in FSL<sup><xref ref-type="bibr" rid="CR55">55</xref></sup> (one test for positive FC and one for negative FC). Of note, t-tests in <italic>randomise</italic> are always one-tailed. To make them two-tailed, one needs to run the two contrasts separately and then correct for multiple comparisons across contrasts.</p>
+        <p id="Par19">The resulting t-stat images of positive and negative FC were compared between fMRI datasets using the Dice Similarity Index as well as the voxel-wise spatial correlation, to assess the spatial similarity between ASL- and BOLD-derived molecular-enriched FC maps.</p>
+        <sec id="Sec7">
+          <title>Dice similarity index (DSI)</title>
+          <p id="Par20">After thresholding the t-stat images at p<sub>FWE</sub> &lt; 0.05 (corrected for multiple comparisons across voxels using the threshold-free cluster enhancement (TFCE) option<sup><xref ref-type="bibr" rid="CR56">56</xref></sup>, and across contrasts using Bonferroni correction), and binarizing them, we measured the degree of overlap between the different fMRI datasets using the DSI, calculated as:<disp-formula id="Equa"><alternatives><tex-math id="M5">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\mathrm{DSI}=\frac{2|\mathrm{X}\cap \mathrm{Y}|}{\left|\mathrm{X}\right|+|\mathrm{Y}|},$$\end{document}</tex-math><mml:math id="M6" display="block"><mml:mrow><mml:mi mathvariant="normal">DSI</mml:mi><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:mn>2</mml:mn><mml:mo stretchy="false">|</mml:mo><mml:mi mathvariant="normal">X</mml:mi><mml:mo>∩</mml:mo><mml:mi mathvariant="normal">Y</mml:mi><mml:mo stretchy="false">|</mml:mo></mml:mrow><mml:mrow><mml:mfenced close="|" open="|"><mml:mi mathvariant="normal">X</mml:mi></mml:mfenced><mml:mo>+</mml:mo><mml:mrow><mml:mo stretchy="false">|</mml:mo><mml:mi mathvariant="normal">Y</mml:mi><mml:mo stretchy="false">|</mml:mo></mml:mrow></mml:mrow></mml:mfrac><mml:mo>,</mml:mo></mml:mrow></mml:math><graphic xlink:href="41598_2023_38573_Article_Equa.gif" position="anchor"/></alternatives></disp-formula>where X are all active voxels in the BOLD-derived FC maps and Y are all active voxels in the ASL-derived FC map. To measure the total DSI, we first counted the voxels with concordant FC in the two modalities (i.e., X<sup>+</sup> ∩ Y<sup>+</sup> and X<sup>−</sup> ∩ Y<sup>−</sup>), and then added them together to obtain a single |X ∩ Y| term. The DSI denominator was calculated considering the total (positive + negative) FC voxels for both modalities. The comparison between BOLD and ASL FC was also run separately for the positive and negative FC (DSI<sup>+</sup> and DSI<sup>−</sup>, respectively).</p>
+        </sec>
+        <sec id="Sec8">
+          <title>Voxel-wise spatial correlation</title>
+          <p id="Par21">To investigate the linear relationship of the within-group FC patterns between modalities, for each molecular-enriched functional network we computed the Pearson’s correlation coefficient between the unthresholded BOLD and ASL t-stat maps resulting from the one-sample t-tests. This estimation was performed using a parameterized generative method implemented in the brainSMASH platform<sup><xref ref-type="bibr" rid="CR57">57</xref></sup> to account for the inherent spatial autocorrelation of the data. Of note, the t-stat maps were down-sampled at 4 mm<sup>3</sup> to reduce the computational burden of the calculations.</p>
+        </sec>
+      </sec>
+      <sec id="Sec9">
+        <title>Test–retest analysis</title>
+        <p id="Par22">The reproducibility of BOLD and ASL response in generating consistent molecular-enriched functional networks was quantified using the regional intraclass correlation (ICC) between test and retest sessions. First, for each molecular-enriched functional network, dataset (BOLD and ASL) and subject having test and retest data (n = 19), we parcellated the FC map using the Desikan-Killiany atlas and estimated the mean FC of each region. Then, we calculated the regional ICC between the test and retest sessions for each fMRI dataset, ROI and network:<disp-formula id="Equb"><alternatives><tex-math id="M7">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\mathrm{ICC}\left(\mathrm{3,1}\right)=\frac{{MS}_{B}-{MS}_{E}}{{MS}_{B}+\left(\mathrm{K}-1\right){MS}_{E}},$$\end{document}</tex-math><mml:math id="M8" display="block"><mml:mrow><mml:mi mathvariant="normal">ICC</mml:mi><mml:mfenced close=")" open="("><mml:mrow><mml:mn>3</mml:mn><mml:mo>,</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:mfenced><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:msub><mml:mrow><mml:mi mathvariant="italic">MS</mml:mi></mml:mrow><mml:mi>B</mml:mi></mml:msub><mml:mo>-</mml:mo><mml:msub><mml:mrow><mml:mi mathvariant="italic">MS</mml:mi></mml:mrow><mml:mi>E</mml:mi></mml:msub></mml:mrow><mml:mrow><mml:msub><mml:mrow><mml:mi mathvariant="italic">MS</mml:mi></mml:mrow><mml:mi>B</mml:mi></mml:msub><mml:mo>+</mml:mo><mml:mfenced close=")" open="("><mml:mi mathvariant="normal">K</mml:mi><mml:mo>-</mml:mo><mml:mn>1</mml:mn></mml:mfenced><mml:msub><mml:mrow><mml:mi mathvariant="italic">MS</mml:mi></mml:mrow><mml:mi>E</mml:mi></mml:msub></mml:mrow></mml:mfrac><mml:mo>,</mml:mo></mml:mrow></mml:math><graphic xlink:href="41598_2023_38573_Article_Equb.gif" position="anchor"/></alternatives></disp-formula>where MS<sub>B</sub> is the mean square variance between subjects and MS<sub>E</sub> the mean square error between sessions. MS<sub>B</sub> and MS<sub>E</sub> were calculated from an n × k matrix with n = 19 observations and k = 2 measurements. This resulted in one ICC value per fMRI dataset and ROI of each network.</p>
+        <p id="Par23">In order to compare the reproducibility of the two modalities, the resulting ICC values of each network were Fisher’s z transformed and compared between BOLD and ASL datasets using non-parametric Wilcoxon signed-rank paired sample t-tests, after testing for normality.</p>
+      </sec>
+    </sec>
+    <sec id="Sec10">
+      <title>Results</title>
+      <p id="Par24">The VIF values for DAT, NAT, SERT, VAChT, GABA and mGlu5 maps were 1.8898, 1.6989, 3.3826, 3.4414, 2.5160 and 2.9742 respectively, reflecting a low to moderate level of collinearity and confirming their suitability for inclusion together within the multiple linear regression analysis of REACT.</p>
+      <p id="Par25">Figure <xref rid="Fig1" ref-type="fig">1</xref> shows the normalized molecular templates of DAT, NAT, SERT, VAChT, and GABA-A and mGlu5 receptors, and the corresponding significant t-stat BOLD- and ASL-derived FC maps resulting from the one sample t-tests, thresholded at p<sub>FWE</sub> &lt; 0.05 corrected for multiple comparisons across voxels using the TFCE option<sup><xref ref-type="bibr" rid="CR56">56</xref></sup> and contrasts (one for positive FC and one for negative FC) using Bonferroni correction.<fig id="Fig1"><label>Figure 1</label><caption><p>Molecular templates and corresponding molecular-enriched FC maps derived from BOLD and ASL datasets. The distribution density of the molecular templates was rescaled between 0 and 1 and the regions used as references in the kinetic models were set at 0. The molecular-enriched FC maps are obtained from the significant t-stat maps resulting from the one sample t-tests performed on the positive FC (in red) and negative FC (in blue) (p<sub>FWE</sub> &lt; 0.05, corrected for multiple comparisons across voxels using the TFCE option and contrasts with Bonferroni correction).</p></caption><graphic xlink:href="41598_2023_38573_Fig1_HTML" id="MO1"/></fig></p>
+      <p id="Par26">Overall, the two fMRI datasets show good consistency in terms of identification of the main hubs (i.e., regions with positive FC indicating their association with the functional network) of each molecular-enriched network, which align with the distribution of their molecular systems and related pathways. The main hub of the DAT-enriched network corresponds to the striatum (i.e., caudate and putamen), although it is also possible to identify other key cortical and subcortical regions as belonging to this network, including the thalamus, anterior cingulate gyrus, paracingulate gyrus, insula, superior frontal gyrus, opercular cortex, precentral gyrus, superior temporal gyrus and temporal pole. The key regions of the NAT-enriched network identified by both fMRI datasets are the brainstem, thalamus, pre- and postcentral gyri, supplementary motor cortex, insula and part of the anterior cingulate cortex, as previously reported in other studies<sup><xref ref-type="bibr" rid="CR8">8</xref>,<xref ref-type="bibr" rid="CR10">10</xref></sup>. The SERT-enriched network is mainly localized in the thalamus, putamen, midbrain, insula, anterior cingulate gyrus, frontal orbital cortex, paracingulate gyrus, subcallosal cortex and frontal pole. Both datasets identified the striatum, insula, anterior cingulate gyrus, paracingulate gyrus and precentral gyrus as key regions of the VAChT-enriched network. The functional networks related to GABA-A and mGlu5 receptors emerged as more widespread across cortical regions, in line with their wider expression throughout the cortex. The areas belonging to the GABA-A-enriched network identified by both datasets are the occipital pole and lateral occipital cortex, lingual gyrus, intracalcarine cortex, cuneus and precuneous, pre- and postcentral gyri, occipital fusiform gyrus and superior parietal lobule, while the mGlu5-enriched network was mainly localized in the frontal pole, frontal orbital cortex, superior and middle frontal gyri, anterior cingulate gyrus, lateral occipital cortex, occipital pole, paracingulate gyrus, insular cortex, precuneous, angular gyrus, pre- and postcentral gyri and middle temporal gyrus. The complete list of regions with significant within-group positive FC in the molecular-enriched functional maps derived from each dataset can be found in Supplementary Fig. <xref rid="MOESM1" ref-type="media">1</xref>.</p>
+      <sec id="Sec11">
+        <title>Spatial similarity between datasets</title>
+        <p id="Par27">Results from the comparison between datasets estimated using the DSI are reported in Table <xref rid="Tab1" ref-type="table">1</xref> and visually represented in Fig. <xref rid="Fig2" ref-type="fig">2</xref>. Overall, the BOLD- and ASL-derived maps showed a low to moderate similarity when considering positive and negative FC together (total DSI range: 0.32–0.54). However, a higher spatial similarity was generally observed for positive FC than for negative FC (DSI<sup>+</sup> range: 0.29–0.55; DSI<sup>−</sup> range: 0.13–0.49), with the BOLD dataset showing more widespread inter-subject consistency (i.e., significant one-sample t-test for negative FC in more areas) than the ASL dataset in the regions showing a negative coupling with the main networks.<table-wrap id="Tab1"><label>Table 1</label><caption><p>Spatial similarity of the molecular-enriched functional networks between datasets (BOLD and ASL) expressed in terms of Dice Similarity Index (DSI, range 0–1) and voxel-wise Pearson’s correlation.</p></caption><table frame="hsides" rules="groups"><thead><tr><th align="left"/><th align="left">Total DSI</th><th align="left">DSI<sup>+</sup></th><th align="left">DSI<sup>−</sup></th><th align="left">Spatial correlation</th></tr></thead><tbody><tr><td align="left">DAT</td><td char="." align="char">0.33</td><td char="." align="char">0.29</td><td char="." align="char">0.35</td><td char="." align="char">0.62</td></tr><tr><td align="left">NAT</td><td char="." align="char">0.45</td><td char="." align="char">0.48</td><td char="." align="char">0.39</td><td char="." align="char">0.57</td></tr><tr><td align="left">SERT</td><td char="." align="char">0.32</td><td char="." align="char">0.45</td><td char="." align="char">0.23</td><td char="." align="char">0.50</td></tr><tr><td align="left">VAChT</td><td char="." align="char">0.34</td><td char="." align="char">0.49</td><td char="." align="char">0.13</td><td char="." align="char">0.58</td></tr><tr><td align="left">GABA-A</td><td char="." align="char">0.49</td><td char="." align="char">0.51</td><td char="." align="char">0.37</td><td char="." align="char">0.66</td></tr><tr><td align="left">mGlu5</td><td char="." align="char">0.54</td><td char="." align="char">0.55</td><td char="." align="char">0.49</td><td char="." align="char">0.65</td></tr></tbody></table><table-wrap-foot><p>The DSI was estimated considering positive and negative FC together (Total DSI) and separately (DSI<sup>+</sup> and DSI<sup>−</sup>, respectively). In terms of voxel-wise Pearson’s correlation, all networks showed significant correlations between datasets (p<sub>corr</sub> &lt; 0.001).</p></table-wrap-foot></table-wrap><fig id="Fig2"><label>Figure 2</label><caption><p>Binary representation of the spatial distribution of the molecular-enriched functional networks derived from BOLD and ASL images and their overlap. The overlap of regions with positive FC and regions with negative FC are represented in two separate panels (on the left and right, respectively).</p></caption><graphic xlink:href="41598_2023_38573_Fig2_HTML" id="MO2"/></fig></p>
+        <p id="Par28">In terms of voxel-wise spatial correlation between datasets, we found significant positive correlations between the BOLD- and ASL-derived molecular-enriched FC maps (range of Pearson’s r: 0.50–0.66, p<sub>corr</sub> &lt; 0.001). All Pearson’s correlations are reported in Table <xref rid="Tab1" ref-type="table">1</xref> and visually represented in Fig. <xref rid="Fig3" ref-type="fig">3</xref>.<fig id="Fig3"><label>Figure 3</label><caption><p>Voxel-wise spatial correlation of the molecular-enriched FC maps derived from the BOLD and ASL datasets. The 2D histograms show the relationships between the unthresholded BOLD and ASL t-stat maps resulting from the one-sample t-tests in terms of their spatial distributions across the brain. The marginal histograms on top and on the right of each 2D histogram show the modality-specific distributions of the t-stat maps.</p></caption><graphic xlink:href="41598_2023_38573_Fig3_HTML" id="MO3"/></fig></p>
+      </sec>
+      <sec id="Sec12">
+        <title>Results of the test–retest analysis</title>
+        <p id="Par29">Overall, both BOLD and ASL datasets showed heterogeneity in the regional distribution of ICC across the whole brain, spanning from very low to moderate ICC (Fig. <xref rid="Fig4" ref-type="fig">4</xref>). As resulted from the Wilcoxon signed-rank t-tests comparing the network reliability between ASL and BOLD datasets, significant differences were found only in the regional ICCs of the GABA-A-enriched functional network (ASL &lt; BOLD, z-score = 2.121, p &lt; 0.034), while the other networks showed comparable reliability between modalities (ASL &lt; BOLD, DAT: z-score = 1.253; NAT: z-score = − 0.507; SERT: z-score = 0.222; VAChT: z-score = 1.003; mGlu5: z-score = 0.503). Of note, since the statistical tests were simply applied to help quantify the comparisons between modalities without doing any further statistical inference on the difference of ICC, the results did not need correction for multiple comparisons.<fig id="Fig4"><label>Figure 4</label><caption><p>Regional Intraclass correlations (ICCs) of the test–retest sessions for each molecular-enriched functional network derived from the BOLD and ASL datasets and corresponding histograms of their distributions.</p></caption><graphic xlink:href="41598_2023_38573_Fig4_HTML" id="MO4"/></fig></p>
+      </sec>
+    </sec>
+    <sec id="Sec13">
+      <title>Discussion</title>
+      <p id="Par30">In this study, we tested the feasibility of using ASL fMRI data to estimate molecular-enriched functional networks using REACT, a novel analytical method used to project fMRI data onto selected molecular spaces and characterize the functional coactivation of brain regions in terms of their relationship with molecular targets. Specifically, we estimated the functional networks related to six molecular systems (DAT, NAT, SERT, VAChT, GABA-A and mGlu5) using high-resolution, whole-brain resting-state ASL and BOLD fMRI data of healthy subjects acquired with a simultaneous MB-ME ASL/BOLD EPI sequence, and compared the networks resulting from the two modalities in terms of spatial similarity and test–retest reproducibility.</p>
+      <p id="Par31">Similarly to the networks derived from BOLD data, the networks resulting from the ASL dataset were able to highlight, for each molecular system, both the areas of high distribution density of the neurotransmitters and their functional links with other brain areas. For example, the main regions belonging to the DAT-enriched functional network estimated from both datasets include the striatal areas, which are the most enriched in dopaminergic innervation, but also specific cortical areas implicated in dopamine modulation of reward, learning, and motivation, such as the anterior cingulate cortex<sup><xref ref-type="bibr" rid="CR58">58</xref>,<xref ref-type="bibr" rid="CR59">59</xref></sup>, which are functionally and anatomically connected with the striatum<sup><xref ref-type="bibr" rid="CR60">60</xref>–<xref ref-type="bibr" rid="CR62">62</xref></sup>. The NAT-enriched functional network shows high positive FC partly in the brainstem, which is the major site of noradrenergic neurons (mainly the locus coeruleus), but also in the thalamus and sensorimotor regions, in line with the modulatory effect of noradrenergic pathways on processing of salient sensory information via actions on sensory, attentional and motor processes<sup><xref ref-type="bibr" rid="CR63">63</xref></sup>. Importantly, the spatial configuration of such functional networks is also comparable with the functional networks reported in previous REACT-based studies using BOLD fMRI data<sup><xref ref-type="bibr" rid="CR2">2</xref>,<xref ref-type="bibr" rid="CR8">8</xref>–<xref ref-type="bibr" rid="CR10">10</xref></sup>.</p>
+      <sec id="Sec14">
+        <title>ASL versus BOLD: same but different molecular-enriched networks</title>
+        <p id="Par32">Despite the lower SNR of ASL compared to BOLD imaging, our findings show that the spatial patterns of the molecular-enriched functional networks estimated from BOLD and ASL datasets overlap in many areas, as indicated by the moderate network similarity in terms of DSI and voxel-wise spatial correlation between them. These results confirm the feasibility of using ASL for the molecular-enriched fMRI analysis, but they also show that the networks identified with ASL data do not fully match the BOLD-derived ones. This finding suggests that the two modalities might capture slightly different characteristics of the functional interaction between brain regions within the molecular-enriched networks (e.g. biological differences in the dynamics of spontaneous fluctuations in CBF and BOLD), and could hence be complementary. However, we cannot fully exclude that these differences might also reflect, to some extent, intrinsic differences between modalities, such as SNR or others. For instance, since the BOLD signal originates primarily from the differences in intravascular deoxyhaemoglobin concentration, the spatial correlation to the actual site of neural activity is relatively poor with considerable spatial spreading onto the venous structures<sup><xref ref-type="bibr" rid="CR64">64</xref>,<xref ref-type="bibr" rid="CR65">65</xref></sup>. This phenomenon might, at least theoretically, inflate the amount of shared variance in BOLD signal fluctuations across voxels from the same venous territory. Conversely, ASL typically yields better spatial correlations with the actual site of regional involvement compared to BOLD because the signal originates from smaller calibre vessels<sup><xref ref-type="bibr" rid="CR23">23</xref></sup>. An interesting detail that emerges from the DSI<sup>-</sup> (see also the right panel of Fig. <xref rid="Fig2" ref-type="fig">2</xref>), is that the BOLD-derived maps have a more widespread inter-subject consistency (i.e., significant one-sample t-test in more brain regions) than the ASL ones in the regions with a negative coupling with the main networks. It must be noted that a larger extent of negative FC in BOLD networks as compared to the ASL ones has already been described in the literature<sup><xref ref-type="bibr" rid="CR66">66</xref></sup>. These converging findings suggest that the spatial patterns of positive connectivity are more consistent across techniques than those of negative FC, which could be more dependent on the type of data (BOLD or ASL fMRI) and de-noising steps applied, if any<sup><xref ref-type="bibr" rid="CR67">67</xref></sup>. Furthermore, it is worth noting that a widely adopted strategy to address the well-known difficulty of providing a biological meaning to negative FC, especially in graph-based studies and in works comparing BOLD- and ASL-derived FC<sup><xref ref-type="bibr" rid="CR68">68</xref>,<xref ref-type="bibr" rid="CR69">69</xref></sup>, is to set a FC threshold at 0 and focus on positive connectivity only.</p>
+        <p id="Par33">Overall, further studies will be essential to clarify these between-modality differences and provide additional information on the spatial configuration of the BOLD and ASL networks in other contexts, such as in task fMRI or drug studies.</p>
+      </sec>
+      <sec id="Sec15">
+        <title>Reproducibility</title>
+        <p id="Par34">In terms of test–retest reproducibility, both datasets showed large variability in regional ICC across brain regions, spanning from low to good ICC (i.e., around 0.75), similarly to what has been reported in other fMRI studies<sup><xref ref-type="bibr" rid="CR70">70</xref>–<xref ref-type="bibr" rid="CR72">72</xref></sup>. The ASL dataset showed a significantly lower ICC than BOLD in the GABA-A-enriched network, in line with a previous study indicating that BOLD data produce more reliable spatial network patterns than ASL data<sup><xref ref-type="bibr" rid="CR69">69</xref></sup>. On the other hand, our results showed generally lower BOLD ICC values than those reported in Ref.<sup><xref ref-type="bibr" rid="CR69">69</xref></sup>, and comparable ICCs between ASL and BOLD in the other five molecular-enriched functional networks. This finding is in line with another study reporting comparable averaged ICCs of within-network connectivity between the two fMRI modalities<sup><xref ref-type="bibr" rid="CR73">73</xref></sup> and might be explained, at least in part, by the fact that the processing pipeline of our BOLD dataset, as well as the one of the just mentioned study<sup><xref ref-type="bibr" rid="CR73">73</xref></sup>, included a step of WM and CSF signal regression to reduce the contribution of physiological noise (i.e., respiration and cardiac pulsation). This type of noise is known to generate highly reproducible, but spurious, connectivity patterns in rs-fMRI<sup><xref ref-type="bibr" rid="CR36">36</xref></sup>, which we might have reduced by regressing WM and CSF signals from our BOLD data. Further studies expanding our approach to task-based fMRI data, where specific brain regions are expected to be engaged, could offer a more comprehensive overview of the reproducibility of these modalities in different contexts.</p>
+      </sec>
+      <sec id="Sec16">
+        <title>Limitations</title>
+        <p id="Par35">Our study has some limitations worth mentioning. First, the number of subjects was relatively small. However, the purpose of this study was to determine the feasibility of using ASL data to identify molecular-enriched networks comparable to those obtained with BOLD fMRI. Hence, the sample size was appropriate to answer our research question. Second, we explored the spatial configuration of molecular-enriched functional networks of healthy subjects at rest. Although this is the first essential step to define the feasibility of this analysis and pave the way for future works integrating molecular and ASL fMRI imaging, it is important to mention that further studies are needed in order to characterize in detail the similarities and differences between BOLD- and ASL-based molecular-enriched functional networks and investigate whether these might capture distinct aspects of the biology of the brain or simply reflect methodological differences between modalities. This could be tested using pharmacological MRI data to investigate the brain response to a drug acting on selective targets<sup><xref ref-type="bibr" rid="CR74">74</xref></sup>, or fMRI data with simple tasks that trigger functional changes modulated by specific neurotransmitters (e.g., attentional tasks requiring modulation of the functional network related to the noradrenergic circuit). This would provide better opportunities to explore the specific characteristics of BOLD and ASL functional networks and how they respond to predictable interventions. Ongoing work is already validating this approach in pharmacological MRI, assessing the drug-target mechanisms behind CBF-based functional changes induced by selective serotonin reuptake inhibitors (SSRIs), and in clinical cohorts where a known deficit such as dopamine loss in Parkinson’s Disease likely affects the normal functioning of networks related to specific molecular pathways. Finally, a relatively short PLD (1.0 s) compared to the recommended PLD of 1.8 s for pCASL<sup><xref ref-type="bibr" rid="CR16">16</xref></sup> was employed for this study. Shorter PLDs can lead to intravascular artifacts if blood does not have adequate time to reach capillary-feeding small arteries. Despite this, this dataset has been used in another study to estimate and compare ASL- and BOLD-based resting state networks<sup><xref ref-type="bibr" rid="CR24">24</xref></sup>, showing that they can be consistently detected using the CBF data. Other studies have also employed short PLDs<sup><xref ref-type="bibr" rid="CR75">75</xref></sup> and analyzed FC with a 3D pCASL sequence with PLD = 1.0 s and a BOLD EPI sequence<sup><xref ref-type="bibr" rid="CR69">69</xref></sup>, finding robust ASL-based connectivity and considerable overlap between ASL and BOLD networks. However, future studies should specifically examine the effect of PLD on resting state FC.</p>
+      </sec>
+      <sec id="Sec17">
+        <title>Conclusion</title>
+        <p id="Par36">This study shows that the molecular enrichment of ASL fMRI timeseries is feasible and produces molecular-enriched FC maps that share features with those produced from BOLD fMRI, but also show particularities which origins we cannot ascertain yet but will need to be explored in future studies. Given the more direct link between ASL perfusion signal and neuronal activity, our integrative approach is likely to become a valuable asset in neuropharmacological studies investigating the effects of new or existent compounds on the brain or in clinical studies investigating functional alterations in brain disorders, particularly when the use of BOLD fMRI might fall short.</p>
+      </sec>
+    </sec>
+    <sec sec-type="supplementary-material">
+      <title>Supplementary Information</title>
+      <sec id="Sec18">
+        <p>
+<supplementary-material content-type="local-data" id="MOESM1"><media xlink:href="41598_2023_38573_MOESM1_ESM.pdf"><caption><p>Supplementary Figure 1.</p></caption></media></supplementary-material></p>
+      </sec>
+    </sec>
+  </body>
+  <back>
+    <fn-group>
+      <fn>
+        <p>
+          <bold>Publisher's note</bold>
+        </p>
+        <p>Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.</p>
+      </fn>
+    </fn-group>
+    <sec>
+      <title>Supplementary Information</title>
+      <p>The online version contains supplementary material available at 10.1038/s41598-023-38573-0.</p>
+    </sec>
+    <ack>
+      <title>Acknowledgements</title>
+      <p>OD, DM, MV, and SW are funded by the National Institute for Health Research Biomedical Research Centre and Clinical Research Facility at South London and Maudsley National Health Service Foundation Trust and King’s College London. The views expressed are those of the authors and not necessarily those of the NHS, the NIHR or the Department of Health. MV is supported by Italian National Center for HPC, BIG DATA AND QUANTUM COMPUTING (Project No. CN00000013 CN1), the Italian National Grant DIGITAL LIFELONG PREVENTION (Project No. PNC0000002_DARE), and by Wellcome Trust Digital Award (No. 215747/Z/19/Z).</p>
+    </ack>
+    <notes notes-type="author-contribution">
+      <title>Author contributions</title>
+      <p>O.D., A.C., D.M., F.Z., and Y.W. made a substantial contribution to the concept and design, acquisition of data or analysis and interpretation of data. O.D., A.C., D.M., F.Z., F.T., M.V., M.A.M., S.C.R.W., B.Y., S.B., Y.W. drafted the article or revised it critically for important intellectual content. O.D., A.C., D.M., F.Z., F.T., M.V., M.A.M., S.C.R.W., B.Y., S.B., Y.W. approved the version to be published.</p>
+    </notes>
+    <notes notes-type="data-availability">
+      <title>Data availability</title>
+      <p>Data is available at <ext-link ext-link-type="uri" xlink:href="https://openfmri.org/dataset/ds000216/">https://openfmri.org/dataset/ds000216/</ext-link>.</p>
+    </notes>
+    <notes notes-type="data-availability">
+      <title>Code availability</title>
+      <p>The react-fmri package can be found at <ext-link ext-link-type="uri" xlink:href="https://github.com/ottaviadipasquale/react-fmri">https://github.com/ottaviadipasquale/react-fmri</ext-link>.</p>
+    </notes>
+    <notes id="FPar1" notes-type="COI-statement">
+      <title>Competing interests</title>
+      <p id="Par37">The authors BY and SB are employed by GE Healthcare, while all the other authors have no conflict of interests to declare.</p>
+    </notes>
+    <ref-list id="Bib1">
+      <title>References</title>
+      <ref id="CR1">
+        <label>1.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hellyer</surname>
+              <given-names>PJ</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Protein synthesis is associated with high-speed dynamics and broad-band stability of functional hubs in the brain</article-title>
+          <source>Neuroimage</source>
+          <year>2017</year>
+          <volume>155</volume>
+          <fpage>209</fpage>
+          <lpage>216</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2017.04.062</pub-id>
+          <pub-id pub-id-type="pmid">28465163</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR2">
+        <label>2.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dipasquale</surname>
+              <given-names>O</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Receptor-enriched analysis of functional connectivity by targets (REACT): A novel, multimodal analytical approach informed by PET to study the pharmacodynamic response of the brain under MDMA</article-title>
+          <source>Neuroimage</source>
+          <year>2019</year>
+          <volume>195</volume>
+          <fpage>252</fpage>
+          <lpage>260</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2019.04.007</pub-id>
+          <pub-id pub-id-type="pmid">30953835</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR3">
+        <label>3.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Deco</surname>
+              <given-names>G</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Whole-brain multimodal neuroimaging model using serotonin receptor maps explains non-linear functional effects of LSD</article-title>
+          <source>Curr. Biol.</source>
+          <year>2018</year>
+          <volume>28</volume>
+          <fpage>3065</fpage>
+          <pub-id pub-id-type="doi">10.1016/j.cub.2018.07.083</pub-id>
+          <pub-id pub-id-type="pmid">30270185</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR4">
+        <label>4.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cole</surname>
+              <given-names>DM</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Dopamine-dependent architecture of cortico-subcortical network connectivity</article-title>
+          <source>Cereb. Cortex</source>
+          <year>2013</year>
+          <volume>23</volume>
+          <fpage>1509</fpage>
+          <lpage>1516</lpage>
+          <pub-id pub-id-type="doi">10.1093/cercor/bhs136</pub-id>
+          <pub-id pub-id-type="pmid">22645252</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR5">
+        <label>5.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rieckmann</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Karlsson</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Fischer</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Backman</surname>
+              <given-names>L</given-names>
+            </name>
+          </person-group>
+          <article-title>Caudate dopamine D1 receptor density is associated with individual differences in frontoparietal connectivity during working memory</article-title>
+          <source>J. Neurosci.</source>
+          <year>2011</year>
+          <volume>31</volume>
+          <fpage>14284</fpage>
+          <lpage>14290</lpage>
+          <pub-id pub-id-type="doi">10.1523/JNEUROSCI.3114-11.2011</pub-id>
+          <pub-id pub-id-type="pmid">21976513</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR6">
+        <label>6.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Schaefer</surname>
+              <given-names>A</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Serotonergic modulation of intrinsic functional connectivity</article-title>
+          <source>Curr. Biol.</source>
+          <year>2014</year>
+          <volume>24</volume>
+          <fpage>2314</fpage>
+          <lpage>2318</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.cub.2014.08.024</pub-id>
+          <pub-id pub-id-type="pmid">25242032</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR7">
+        <label>7.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lawn</surname>
+              <given-names>T</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>From neurotransmitters to networks: Transcending organisational hierarchies with molecular-informed functional imaging</article-title>
+          <source>Neurosci. Biobehav. Rev.</source>
+          <year>2023</year>
+          <volume>150</volume>
+          <fpage>105193</fpage>
+          <pub-id pub-id-type="doi">10.1016/j.neubiorev.2023.105193</pub-id>
+          <pub-id pub-id-type="pmid">37086932</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR8">
+        <label>8.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cercignani</surname>
+              <given-names>M</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Cognitive fatigue in multiple sclerosis is associated with alterations in the functional connectivity of monoamine circuits</article-title>
+          <source>Brain Commun.</source>
+          <year>2021</year>
+          <volume>3</volume>
+          <fpage>023</fpage>
+          <pub-id pub-id-type="doi">10.1093/braincomms/fcab023</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR9">
+        <label>9.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dipasquale</surname>
+              <given-names>O</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Unravelling the effects of methylphenidate on the dopaminergic and noradrenergic functional circuits</article-title>
+          <source>Neuropsychopharmacology</source>
+          <year>2020</year>
+          <volume>45</volume>
+          <fpage>1482</fpage>
+          <lpage>1489</lpage>
+          <pub-id pub-id-type="doi">10.1038/s41386-020-0724-x</pub-id>
+          <pub-id pub-id-type="pmid">32473593</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR10">
+        <label>10.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Martins</surname>
+              <given-names>D</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>A candidate neuroimaging biomarker for detection of neurotransmission-related functional alterations and prediction of pharmacological analgesic response in chronic pain</article-title>
+          <source>BioRxiv.</source>
+          <year>2021</year>
+          <pub-id pub-id-type="doi">10.1101/2021.02.17.431572</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR11">
+        <label>11.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wong</surname>
+              <given-names>NML</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Differences in social brain function in autism spectrum disorder are linked to the serotonin transporter</article-title>
+          <source>BioRxiv.</source>
+          <year>2021</year>
+          <pub-id pub-id-type="doi">10.1101/2021.05.28.446151</pub-id>
+          <pub-id pub-id-type="pmid">34931188</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR12">
+        <label>12.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lawn</surname>
+              <given-names>T</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The effects of propofol anaesthesia on molecular-enriched networks during resting-state and naturalistic listening</article-title>
+          <source>Neuroimage</source>
+          <year>2023</year>
+          <volume>271</volume>
+          <fpage>120018</fpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2023.120018</pub-id>
+          <pub-id pub-id-type="pmid">36935083</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR13">
+        <label>13.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Buxton</surname>
+              <given-names>RB</given-names>
+            </name>
+            <name>
+              <surname>Uludag</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Dubowitz</surname>
+              <given-names>DJ</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>TT</given-names>
+            </name>
+          </person-group>
+          <article-title>Modeling the hemodynamic response to brain activation</article-title>
+          <source>Neuroimage</source>
+          <year>2004</year>
+          <volume>23</volume>
+          <issue>Suppl 1</issue>
+          <fpage>S220</fpage>
+          <lpage>S233</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2004.07.013</pub-id>
+          <pub-id pub-id-type="pmid">15501093</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR14">
+        <label>14.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wong</surname>
+              <given-names>EC</given-names>
+            </name>
+            <name>
+              <surname>Buxton</surname>
+              <given-names>RB</given-names>
+            </name>
+            <name>
+              <surname>Frank</surname>
+              <given-names>LR</given-names>
+            </name>
+          </person-group>
+          <article-title>Implementation of quantitative perfusion imaging techniques for functional brain mapping using pulsed arterial spin labeling</article-title>
+          <source>NMR Biomed.</source>
+          <year>1997</year>
+          <volume>10</volume>
+          <fpage>237</fpage>
+          <lpage>249</lpage>
+          <pub-id pub-id-type="doi">10.1002/(sici)1099-1492(199706/08)10:4/5&lt;237::aid-nbm475&gt;3.0.co;2-x</pub-id>
+          <pub-id pub-id-type="pmid">9430354</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR15">
+        <label>15.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lauritzen</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>Relationship of spikes, synaptic activity, and local changes of cerebral blood flow</article-title>
+          <source>J. Cereb. Blood Flow Metab.</source>
+          <year>2001</year>
+          <volume>21</volume>
+          <fpage>1367</fpage>
+          <lpage>1383</lpage>
+          <pub-id pub-id-type="doi">10.1097/00004647-200112000-00001</pub-id>
+          <pub-id pub-id-type="pmid">11740198</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR16">
+        <label>16.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Alsop</surname>
+              <given-names>DC</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Recommended implementation of arterial spin-labeled perfusion MRI for clinical applications: A Consensus of the ISMRM Perfusion Study Group and the European Consortium for ASL in Dementia</article-title>
+          <source>Magn. Reson. Med.</source>
+          <year>2015</year>
+          <volume>73</volume>
+          <fpage>102</fpage>
+          <lpage>116</lpage>
+          <pub-id pub-id-type="doi">10.1002/mrm.25197</pub-id>
+          <pub-id pub-id-type="pmid">24715426</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR17">
+        <label>17.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dukart</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Cerebral blood flow predicts differential neurotransmitter activity</article-title>
+          <source>Sci. Rep.</source>
+          <year>2018</year>
+          <volume>8</volume>
+          <fpage>4074</fpage>
+          <pub-id pub-id-type="doi">10.1038/s41598-018-22444-0</pub-id>
+          <pub-id pub-id-type="pmid">29511260</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR18">
+        <label>18.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Selvaggi</surname>
+              <given-names>P</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Increased cerebral blood flow after single dose of antipsychotics in healthy volunteers depends on dopamine D2 receptor density profiles</article-title>
+          <source>Neuroimage</source>
+          <year>2019</year>
+          <volume>188</volume>
+          <fpage>774</fpage>
+          <lpage>784</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2018.12.028</pub-id>
+          <pub-id pub-id-type="pmid">30553916</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR19">
+        <label>19.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wise</surname>
+              <given-names>RG</given-names>
+            </name>
+            <name>
+              <surname>Tracey</surname>
+              <given-names>I</given-names>
+            </name>
+          </person-group>
+          <article-title>The role of fMRI in drug discovery</article-title>
+          <source>J. Magn. Reson. Imaging</source>
+          <year>2006</year>
+          <volume>23</volume>
+          <fpage>862</fpage>
+          <lpage>876</lpage>
+          <pub-id pub-id-type="doi">10.1002/jmri.20584</pub-id>
+          <pub-id pub-id-type="pmid">16649197</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR20">
+        <label>20.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wang</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Reduced susceptibility effects in perfusion fMRI with single-shot spin-echo EPI acquisitions at 1.5 Tesla</article-title>
+          <source>Magn. Reson. Imaging</source>
+          <year>2004</year>
+          <volume>22</volume>
+          <fpage>1</fpage>
+          <lpage>7</lpage>
+          <pub-id pub-id-type="doi">10.1016/S0730-725X(03)00210-8</pub-id>
+          <pub-id pub-id-type="pmid">14972387</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR21">
+        <label>21.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wang</surname>
+              <given-names>DJ</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Fernandez-Seara</surname>
+              <given-names>MA</given-names>
+            </name>
+            <name>
+              <surname>Detre</surname>
+              <given-names>JA</given-names>
+            </name>
+          </person-group>
+          <article-title>Potentials and challenges for arterial spin labeling in pharmacological magnetic resonance imaging</article-title>
+          <source>J. Pharmacol. Exp. Ther.</source>
+          <year>2011</year>
+          <volume>337</volume>
+          <fpage>359</fpage>
+          <lpage>366</lpage>
+          <pub-id pub-id-type="doi">10.1124/jpet.110.172577</pub-id>
+          <pub-id pub-id-type="pmid">21317356</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR22">
+        <label>22.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Liu</surname>
+              <given-names>TT</given-names>
+            </name>
+            <name>
+              <surname>Brown</surname>
+              <given-names>GG</given-names>
+            </name>
+          </person-group>
+          <article-title>Measurement of cerebral perfusion with arterial spin labeling: Part 1. Methods</article-title>
+          <source>J. Int. Neuropsychol. Soc.</source>
+          <year>2007</year>
+          <volume>13</volume>
+          <fpage>517</fpage>
+          <lpage>525</lpage>
+          <pub-id pub-id-type="doi">10.1017/S1355617707070646</pub-id>
+          <pub-id pub-id-type="pmid">17445301</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR23">
+        <label>23.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ugurbil</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Toth</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Kim</surname>
+              <given-names>DS</given-names>
+            </name>
+          </person-group>
+          <article-title>How accurate is magnetic resonance imaging of brain function?</article-title>
+          <source>Trends Neurosci.</source>
+          <year>2003</year>
+          <volume>26</volume>
+          <fpage>108</fpage>
+          <lpage>114</lpage>
+          <pub-id pub-id-type="doi">10.1016/S0166-2236(02)00039-5</pub-id>
+          <pub-id pub-id-type="pmid">12536134</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR24">
+        <label>24.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cohen</surname>
+              <given-names>AD</given-names>
+            </name>
+            <name>
+              <surname>Nencka</surname>
+              <given-names>AS</given-names>
+            </name>
+            <name>
+              <surname>Lebel</surname>
+              <given-names>RM</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>Y</given-names>
+            </name>
+          </person-group>
+          <article-title>Multiband multi-echo imaging of simultaneous oxygenation and flow timeseries for resting state connectivity</article-title>
+          <source>PLoS ONE</source>
+          <year>2017</year>
+          <volume>12</volume>
+          <fpage>e0169253</fpage>
+          <pub-id pub-id-type="doi">10.1371/journal.pone.0169253</pub-id>
+          <pub-id pub-id-type="pmid">28253268</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR25">
+        <label>25.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kundu</surname>
+              <given-names>P</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Integrated strategy for improving functional connectivity mapping using multiecho fMRI</article-title>
+          <source>Proc. Natl. Acad. Sci.</source>
+          <year>2013</year>
+          <volume>110</volume>
+          <fpage>16187</fpage>
+          <lpage>16192</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.1301725110</pub-id>
+          <pub-id pub-id-type="pmid">24038744</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR26">
+        <label>26.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kundu</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Inati</surname>
+              <given-names>SJ</given-names>
+            </name>
+            <name>
+              <surname>Evans</surname>
+              <given-names>JW</given-names>
+            </name>
+            <name>
+              <surname>Luh</surname>
+              <given-names>WM</given-names>
+            </name>
+            <name>
+              <surname>Bandettini</surname>
+              <given-names>PA</given-names>
+            </name>
+          </person-group>
+          <article-title>Differentiating BOLD and non-BOLD signals in fMRI time series using multi-echo EPI</article-title>
+          <source>Neuroimage</source>
+          <year>2012</year>
+          <volume>60</volume>
+          <fpage>1759</fpage>
+          <lpage>1770</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2011.12.028</pub-id>
+          <pub-id pub-id-type="pmid">22209809</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR27">
+        <label>27.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cohen</surname>
+              <given-names>AD</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>Y</given-names>
+            </name>
+          </person-group>
+          <article-title>Improving the assessment of breath-holding induced cerebral vascular reactivity using a multiband multi-echo ASL/BOLD sequence</article-title>
+          <source>Sci. Rep.</source>
+          <year>2019</year>
+          <volume>9</volume>
+          <fpage>5079</fpage>
+          <pub-id pub-id-type="doi">10.1038/s41598-019-41199-w</pub-id>
+          <pub-id pub-id-type="pmid">30911056</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR28">
+        <label>28.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cohen</surname>
+              <given-names>AD</given-names>
+            </name>
+            <name>
+              <surname>Nencka</surname>
+              <given-names>AS</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>Y</given-names>
+            </name>
+          </person-group>
+          <article-title>Multiband multi-echo simultaneous ASL/BOLD for task-induced functional MRI</article-title>
+          <source>PLoS ONE</source>
+          <year>2018</year>
+          <volume>13</volume>
+          <fpage>e0190427</fpage>
+          <pub-id pub-id-type="doi">10.1371/journal.pone.0190427</pub-id>
+          <pub-id pub-id-type="pmid">29389985</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR29">
+        <label>29.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cox</surname>
+              <given-names>RW</given-names>
+            </name>
+          </person-group>
+          <article-title>AFNI: software for analysis and visualization of functional magnetic resonance neuroimages</article-title>
+          <source>Comput. Biomed. Res.</source>
+          <year>1996</year>
+          <volume>29</volume>
+          <fpage>162</fpage>
+          <lpage>173</lpage>
+          <pub-id pub-id-type="doi">10.1006/cbmr.1996.0014</pub-id>
+          <pub-id pub-id-type="pmid">8812068</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR30">
+        <label>30.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jenkinson</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Beckmann</surname>
+              <given-names>CF</given-names>
+            </name>
+            <name>
+              <surname>Behrens</surname>
+              <given-names>TE</given-names>
+            </name>
+            <name>
+              <surname>Woolrich</surname>
+              <given-names>MW</given-names>
+            </name>
+            <name>
+              <surname>Smith</surname>
+              <given-names>SM</given-names>
+            </name>
+          </person-group>
+          <article-title>Fsl</article-title>
+          <source>Neuroimage</source>
+          <year>2012</year>
+          <volume>62</volume>
+          <fpage>782</fpage>
+          <lpage>790</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2011.09.015</pub-id>
+          <pub-id pub-id-type="pmid">21979382</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR31">
+        <label>31.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Posse</surname>
+              <given-names>S</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Enhancement of BOLD-contrast sensitivity by single-shot multi-echo functional MR imaging</article-title>
+          <source>Magn. Reson. Med.</source>
+          <year>1999</year>
+          <volume>42</volume>
+          <fpage>87</fpage>
+          <lpage>97</lpage>
+          <pub-id pub-id-type="doi">10.1002/(SICI)1522-2594(199907)42:1&lt;87::AID-MRM13&gt;3.0.CO;2-O</pub-id>
+          <pub-id pub-id-type="pmid">10398954</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR32">
+        <label>32.</label>
+        <mixed-citation publication-type="other">DuPre, E. <italic>et al. ME-ICA/tedana: 0.0.6</italic>. 10.5281/zenodo.2558498 (2019).</mixed-citation>
+      </ref>
+      <ref id="CR33">
+        <label>33.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dipasquale</surname>
+              <given-names>O</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Comparing resting state fMRI de-noising approaches using multi- and single-echo acquisitions</article-title>
+          <source>PLoS ONE</source>
+          <year>2017</year>
+          <volume>12</volume>
+          <fpage>e0173289</fpage>
+          <pub-id pub-id-type="doi">10.1371/journal.pone.0173289</pub-id>
+          <pub-id pub-id-type="pmid">28323821</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR34">
+        <label>34.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Olafsson</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Kundu</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Wong</surname>
+              <given-names>EC</given-names>
+            </name>
+            <name>
+              <surname>Bandettini</surname>
+              <given-names>PA</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>TT</given-names>
+            </name>
+          </person-group>
+          <article-title>Enhanced identification of BOLD-like components with multi-echo simultaneous multi-slice (MESMS) fMRI and multi-echo ICA</article-title>
+          <source>Neuroimage</source>
+          <year>2015</year>
+          <volume>112</volume>
+          <fpage>43</fpage>
+          <lpage>51</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2015.02.052</pub-id>
+          <pub-id pub-id-type="pmid">25743045</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR35">
+        <label>35.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Liu</surname>
+              <given-names>TT</given-names>
+            </name>
+            <name>
+              <surname>Nalci</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Falahpour</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>The global signal in fMRI: Nuisance or Information?</article-title>
+          <source>Neuroimage</source>
+          <year>2017</year>
+          <volume>150</volume>
+          <fpage>213</fpage>
+          <lpage>229</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2017.02.036</pub-id>
+          <pub-id pub-id-type="pmid">28213118</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR36">
+        <label>36.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Birn</surname>
+              <given-names>RM</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The influence of physiological noise correction on test–retest reliability of resting-state functional connectivity</article-title>
+          <source>Brain Connect</source>
+          <year>2014</year>
+          <volume>4</volume>
+          <fpage>511</fpage>
+          <lpage>522</lpage>
+          <pub-id pub-id-type="doi">10.1089/brain.2014.0284</pub-id>
+          <pub-id pub-id-type="pmid">25112809</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR37">
+        <label>37.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yan</surname>
+              <given-names>CG</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>A comprehensive assessment of regional variation in the impact of head micromovements on functional connectomics</article-title>
+          <source>Neuroimage</source>
+          <year>2013</year>
+          <volume>76</volume>
+          <fpage>183</fpage>
+          <lpage>201</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2013.03.004</pub-id>
+          <pub-id pub-id-type="pmid">23499792</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR38">
+        <label>38.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Power</surname>
+              <given-names>JD</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Methods to detect, characterize, and remove motion artifact in resting state fMRI</article-title>
+          <source>Neuroimage</source>
+          <year>2014</year>
+          <volume>84</volume>
+          <fpage>320</fpage>
+          <lpage>341</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2013.08.048</pub-id>
+          <pub-id pub-id-type="pmid">23994314</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR39">
+        <label>39.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jann</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Smith</surname>
+              <given-names>RX</given-names>
+            </name>
+            <name>
+              <surname>Rios Piedra</surname>
+              <given-names>EA</given-names>
+            </name>
+            <name>
+              <surname>Dapretto</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>DJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Noise reduction in arterial spin labeling based functional connectivity using nuisance variables</article-title>
+          <source>Front. Neurosci.</source>
+          <year>2016</year>
+          <volume>10</volume>
+          <fpage>371</fpage>
+          <pub-id pub-id-type="doi">10.3389/fnins.2016.00371</pub-id>
+          <pub-id pub-id-type="pmid">27601973</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR40">
+        <label>40.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Martins</surname>
+              <given-names>DA</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Effects of route of administration on oxytocin-induced changes in regional cerebral blood flow in humans</article-title>
+          <source>Nat. Commun.</source>
+          <year>2020</year>
+          <volume>11</volume>
+          <fpage>1160</fpage>
+          <pub-id pub-id-type="doi">10.1038/s41467-020-14845-5</pub-id>
+          <pub-id pub-id-type="pmid">32127545</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR41">
+        <label>41.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hodkinson</surname>
+              <given-names>DJ</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Circadian and homeostatic modulation of functional connectivity and regional cerebral blood flow in humans under normal entrained conditions</article-title>
+          <source>J. Cereb. Blood Flow Metab.</source>
+          <year>2014</year>
+          <volume>34</volume>
+          <fpage>1493</fpage>
+          <lpage>1499</lpage>
+          <pub-id pub-id-type="doi">10.1038/jcbfm.2014.109</pub-id>
+          <pub-id pub-id-type="pmid">24938404</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR42">
+        <label>42.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Garcia-Gomez</surname>
+              <given-names>FJ</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Elaboration of the SPM template for the standardization of SPECT images with 123I-Ioflupane</article-title>
+          <source>Rev. Esp. Med. Nucl. Imagen Mol.</source>
+          <year>2013</year>
+          <volume>32</volume>
+          <fpage>350</fpage>
+          <lpage>356</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.remn.2013.02.009</pub-id>
+          <pub-id pub-id-type="pmid">23570700</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR43">
+        <label>43.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hesse</surname>
+              <given-names>S</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Central noradrenaline transporter availability in highly obese, non-depressed individuals</article-title>
+          <source>Eur. J. Nucl. Med. Mol. Imaging</source>
+          <year>2017</year>
+          <volume>44</volume>
+          <fpage>1056</fpage>
+          <lpage>1064</lpage>
+          <pub-id pub-id-type="doi">10.1007/s00259-016-3590-3</pub-id>
+          <pub-id pub-id-type="pmid">28066877</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR44">
+        <label>44.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Beliveau</surname>
+              <given-names>V</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>A High-resolution in vivo atlas of the human brain's serotonin system</article-title>
+          <source>J. Neurosci.</source>
+          <year>2017</year>
+          <volume>37</volume>
+          <fpage>120</fpage>
+          <lpage>128</lpage>
+          <pub-id pub-id-type="doi">10.1523/JNEUROSCI.2830-16.2016</pub-id>
+          <pub-id pub-id-type="pmid">28053035</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR45">
+        <label>45.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Aghourian</surname>
+              <given-names>M</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Quantification of brain cholinergic denervation in Alzheimer's disease using PET imaging with [(18)F]-FEOBV</article-title>
+          <source>Mol. Psychiatry</source>
+          <year>2017</year>
+          <volume>22</volume>
+          <fpage>1531</fpage>
+          <lpage>1538</lpage>
+          <pub-id pub-id-type="doi">10.1038/mp.2017.183</pub-id>
+          <pub-id pub-id-type="pmid">28894304</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR46">
+        <label>46.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Norgaard</surname>
+              <given-names>M</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>A high-resolution in vivo atlas of the human brain's benzodiazepine binding site of GABAA receptors</article-title>
+          <source>Neuroimage</source>
+          <year>2021</year>
+          <volume>232</volume>
+          <fpage>117878</fpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2021.117878</pub-id>
+          <pub-id pub-id-type="pmid">33610745</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR47">
+        <label>47.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>DuBois</surname>
+              <given-names>JM</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Characterization of age/sex and the regional distribution of mGluR5 availability in the healthy human brain measured by high-resolution [(11)C]ABP688 PET</article-title>
+          <source>Eur. J. Nucl. Med. Mol. Imaging</source>
+          <year>2016</year>
+          <volume>43</volume>
+          <fpage>152</fpage>
+          <lpage>162</lpage>
+          <pub-id pub-id-type="doi">10.1007/s00259-015-3167-6</pub-id>
+          <pub-id pub-id-type="pmid">26290423</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR48">
+        <label>48.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Martins</surname>
+              <given-names>D</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>A candidate neuroimaging biomarker for detection of neurotransmission-related functional alterations and prediction of pharmacological analgesic response in chronic pain</article-title>
+          <source>Brain Commun.</source>
+          <year>2022</year>
+          <volume>4</volume>
+          <fpage>302</fpage>
+          <pub-id pub-id-type="doi">10.1093/braincomms/fcab302</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR49">
+        <label>49.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Markello</surname>
+              <given-names>R</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Neuromaps: Structural and functional interpretation of brain maps</article-title>
+          <source>Nat. Methods</source>
+          <year>2022</year>
+          <volume>19</volume>
+          <issue>11</issue>
+          <fpage>1472</fpage>
+          <pub-id pub-id-type="doi">10.1038/s41592-022-01625-w</pub-id>
+          <pub-id pub-id-type="pmid">36203018</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR50">
+        <label>50.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hansen</surname>
+              <given-names>JY</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Mapping neurotransmitter systems to the structural and functional organization of the human neocortex</article-title>
+          <source>BioRxiv.</source>
+          <year>2021</year>
+          <pub-id pub-id-type="doi">10.1101/2021.10.28.466336</pub-id>
+          <pub-id pub-id-type="pmid">34462742</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR51">
+        <label>51.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kovàcs</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Petres</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Tóth</surname>
+              <given-names>L</given-names>
+            </name>
+          </person-group>
+          <article-title>A new measure of multicollinearity in linear regression models</article-title>
+          <source>Int. Stat. Rev.</source>
+          <year>2005</year>
+          <volume>73</volume>
+          <fpage>405</fpage>
+          <lpage>412</lpage>
+          <pub-id pub-id-type="doi">10.1111/j.1751-5823.2005.tb00156.x</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR52">
+        <label>52.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>O’brien</surname>
+              <given-names>RM</given-names>
+            </name>
+          </person-group>
+          <article-title>A caution regarding rules of thumb for variance inflation factors</article-title>
+          <source>Qual. Quant.</source>
+          <year>2007</year>
+          <volume>41</volume>
+          <fpage>673</fpage>
+          <lpage>690</lpage>
+          <pub-id pub-id-type="doi">10.1007/s11135-006-9018-6</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR53">
+        <label>53.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kim</surname>
+              <given-names>JH</given-names>
+            </name>
+          </person-group>
+          <article-title>Multicollinearity and misleading statistical results</article-title>
+          <source>Korean J. Anesthesiol.</source>
+          <year>2019</year>
+          <volume>72</volume>
+          <fpage>558</fpage>
+          <lpage>569</lpage>
+          <pub-id pub-id-type="doi">10.4097/kja.19087</pub-id>
+          <pub-id pub-id-type="pmid">31304696</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR54">
+        <label>54.</label>
+        <element-citation publication-type="data">
+          <name>
+            <surname>Dipasquale</surname>
+            <given-names>O</given-names>
+          </name>
+          <name>
+            <surname>Frigo</surname>
+            <given-names>M</given-names>
+          </name>
+          <year>2021</year>
+          <data-title>REACT-fMRI Python package</data-title>
+          <source>Zenodo.</source>
+          <pub-id pub-id-type="doi">10.5281/zenodo.4730558</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR55">
+        <label>55.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Winkler</surname>
+              <given-names>AM</given-names>
+            </name>
+            <name>
+              <surname>Ridgway</surname>
+              <given-names>GR</given-names>
+            </name>
+            <name>
+              <surname>Webster</surname>
+              <given-names>MA</given-names>
+            </name>
+            <name>
+              <surname>Smith</surname>
+              <given-names>SM</given-names>
+            </name>
+            <name>
+              <surname>Nichols</surname>
+              <given-names>TE</given-names>
+            </name>
+          </person-group>
+          <article-title>Permutation inference for the general linear model</article-title>
+          <source>Neuroimage</source>
+          <year>2014</year>
+          <volume>92</volume>
+          <fpage>381</fpage>
+          <lpage>397</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2014.01.060</pub-id>
+          <pub-id pub-id-type="pmid">24530839</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR56">
+        <label>56.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Smith</surname>
+              <given-names>SM</given-names>
+            </name>
+            <name>
+              <surname>Nichols</surname>
+              <given-names>TE</given-names>
+            </name>
+          </person-group>
+          <article-title>Threshold-free cluster enhancement: Addressing problems of smoothing, threshold dependence and localisation in cluster inference</article-title>
+          <source>Neuroimage</source>
+          <year>2009</year>
+          <volume>44</volume>
+          <fpage>83</fpage>
+          <lpage>98</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2008.03.061</pub-id>
+          <pub-id pub-id-type="pmid">18501637</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR57">
+        <label>57.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Burt</surname>
+              <given-names>JB</given-names>
+            </name>
+            <name>
+              <surname>Helmer</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Shinn</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Anticevic</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Murray</surname>
+              <given-names>JD</given-names>
+            </name>
+          </person-group>
+          <article-title>Generative modeling of brain maps with spatial autocorrelation</article-title>
+          <source>Neuroimage</source>
+          <year>2020</year>
+          <volume>220</volume>
+          <fpage>117038</fpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2020.117038</pub-id>
+          <pub-id pub-id-type="pmid">32585343</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR58">
+        <label>58.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Arias-Carrion</surname>
+              <given-names>O</given-names>
+            </name>
+            <name>
+              <surname>Stamelou</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Murillo-Rodriguez</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Menendez-Gonzalez</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Poppel</surname>
+              <given-names>E</given-names>
+            </name>
+          </person-group>
+          <article-title>Dopaminergic reward system: A short integrative review</article-title>
+          <source>Int. Arch. Med.</source>
+          <year>2010</year>
+          <volume>3</volume>
+          <fpage>24</fpage>
+          <pub-id pub-id-type="doi">10.1186/1755-7682-3-24</pub-id>
+          <pub-id pub-id-type="pmid">20925949</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR59">
+        <label>59.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ranjbar-Slamloo</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Fazlali</surname>
+              <given-names>Z</given-names>
+            </name>
+          </person-group>
+          <article-title>Dopamine and noradrenaline in the brain; overlapping or dissociate functions?</article-title>
+          <source>Front. Mol. Neurosci.</source>
+          <year>2019</year>
+          <volume>12</volume>
+          <fpage>334</fpage>
+          <pub-id pub-id-type="doi">10.3389/fnmol.2019.00334</pub-id>
+          <pub-id pub-id-type="pmid">32038164</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR60">
+        <label>60.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Davey</surname>
+              <given-names>CG</given-names>
+            </name>
+            <name>
+              <surname>Harrison</surname>
+              <given-names>BJ</given-names>
+            </name>
+            <name>
+              <surname>Yucel</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Allen</surname>
+              <given-names>NB</given-names>
+            </name>
+          </person-group>
+          <article-title>Regionally specific alterations in functional connectivity of the anterior cingulate cortex in major depressive disorder</article-title>
+          <source>Psychol. Med.</source>
+          <year>2012</year>
+          <volume>42</volume>
+          <fpage>2071</fpage>
+          <lpage>2081</lpage>
+          <pub-id pub-id-type="doi">10.1017/S0033291712000323</pub-id>
+          <pub-id pub-id-type="pmid">22954259</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR61">
+        <label>61.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Di Martino</surname>
+              <given-names>A</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Functional connectivity of human striatum: A resting state FMRI study</article-title>
+          <source>Cereb. Cortex</source>
+          <year>2008</year>
+          <volume>18</volume>
+          <fpage>2735</fpage>
+          <lpage>2747</lpage>
+          <pub-id pub-id-type="doi">10.1093/cercor/bhn041</pub-id>
+          <pub-id pub-id-type="pmid">18400794</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR62">
+        <label>62.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Haber</surname>
+              <given-names>SN</given-names>
+            </name>
+          </person-group>
+          <article-title>Corticostriatal circuitry</article-title>
+          <source>Dialog. Clin. Neurosci.</source>
+          <year>2016</year>
+          <volume>18</volume>
+          <fpage>7</fpage>
+          <lpage>21</lpage>
+          <pub-id pub-id-type="doi">10.31887/DCNS.2016.18.1/shaber</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR63">
+        <label>63.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Berridge</surname>
+              <given-names>CW</given-names>
+            </name>
+            <name>
+              <surname>Waterhouse</surname>
+              <given-names>BD</given-names>
+            </name>
+          </person-group>
+          <article-title>The locus coeruleus-noradrenergic system: Modulation of behavioral state and state-dependent cognitive processes</article-title>
+          <source>Brain Res. Brain Res. Rev.</source>
+          <year>2003</year>
+          <volume>42</volume>
+          <fpage>33</fpage>
+          <lpage>84</lpage>
+          <pub-id pub-id-type="doi">10.1016/s0165-0173(03)00143-7</pub-id>
+          <pub-id pub-id-type="pmid">12668290</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR64">
+        <label>64.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lai</surname>
+              <given-names>S</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Identification of vascular structures as a major source of signal contrast in high resolution 2D and 3D functional activation imaging of the motor cortex at 1.5T: preliminary results</article-title>
+          <source>Magn. Reson. Med.</source>
+          <year>1993</year>
+          <volume>30</volume>
+          <fpage>387</fpage>
+          <lpage>392</lpage>
+          <pub-id pub-id-type="doi">10.1002/mrm.1910300318</pub-id>
+          <pub-id pub-id-type="pmid">8412613</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR65">
+        <label>65.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Boxerman</surname>
+              <given-names>JL</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The intravascular contribution to fMRI signal change: Monte Carlo modeling and diffusion-weighted studies in vivo</article-title>
+          <source>Magn. Reson. Med.</source>
+          <year>1995</year>
+          <volume>34</volume>
+          <fpage>4</fpage>
+          <lpage>10</lpage>
+          <pub-id pub-id-type="doi">10.1002/mrm.1910340103</pub-id>
+          <pub-id pub-id-type="pmid">7674897</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR66">
+        <label>66.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Viviani</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Messina</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Walter</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>Resting state functional connectivity in perfusion imaging: Correlation maps with BOLD connectivity and resting state perfusion</article-title>
+          <source>PLoS ONE</source>
+          <year>2011</year>
+          <volume>6</volume>
+          <fpage>e27050</fpage>
+          <pub-id pub-id-type="doi">10.1371/journal.pone.0027050</pub-id>
+          <pub-id pub-id-type="pmid">22073252</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR67">
+        <label>67.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chang</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Glover</surname>
+              <given-names>GH</given-names>
+            </name>
+          </person-group>
+          <article-title>Effects of model-based physiological noise correction on default mode network anti-correlations and correlations</article-title>
+          <source>Neuroimage</source>
+          <year>2009</year>
+          <volume>47</volume>
+          <fpage>1448</fpage>
+          <lpage>1459</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2009.05.012</pub-id>
+          <pub-id pub-id-type="pmid">19446646</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR68">
+        <label>68.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Storti</surname>
+              <given-names>SF</given-names>
+            </name>
+            <name>
+              <surname>Boscolo Galazzo</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Montemezzi</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Menegaz</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Pizzini</surname>
+              <given-names>FB</given-names>
+            </name>
+          </person-group>
+          <article-title>Dual-echo ASL contributes to decrypting the link between functional connectivity and cerebral blow flow</article-title>
+          <source>Hum. Brain Mapp.</source>
+          <year>2017</year>
+          <volume>38</volume>
+          <fpage>5831</fpage>
+          <lpage>5844</lpage>
+          <pub-id pub-id-type="doi">10.1002/hbm.23804</pub-id>
+          <pub-id pub-id-type="pmid">28885752</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR69">
+        <label>69.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jann</surname>
+              <given-names>K</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Functional connectivity in BOLD and CBF data: Similarity and reliability of resting brain networks</article-title>
+          <source>Neuroimage</source>
+          <year>2015</year>
+          <volume>106</volume>
+          <fpage>111</fpage>
+          <lpage>122</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2014.11.028</pub-id>
+          <pub-id pub-id-type="pmid">25463468</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR70">
+        <label>70.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Braun</surname>
+              <given-names>U</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Test-retest reliability of resting-state connectivity network characteristics using fMRI and graph theoretical measures</article-title>
+          <source>Neuroimage</source>
+          <year>2012</year>
+          <volume>59</volume>
+          <fpage>1404</fpage>
+          <lpage>1412</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2011.08.044</pub-id>
+          <pub-id pub-id-type="pmid">21888983</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR71">
+        <label>71.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wang</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Han</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Nguyen</surname>
+              <given-names>VT</given-names>
+            </name>
+            <name>
+              <surname>Guo</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Guo</surname>
+              <given-names>CC</given-names>
+            </name>
+          </person-group>
+          <article-title>Improving the test–retest reliability of resting state fMRI by removing the impact of sleep</article-title>
+          <source>Front. Neurosci.</source>
+          <year>2017</year>
+          <volume>11</volume>
+          <fpage>249</fpage>
+          <pub-id pub-id-type="doi">10.3389/fnins.2017.00249</pub-id>
+          <pub-id pub-id-type="pmid">28533739</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR72">
+        <label>72.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cao</surname>
+              <given-names>H</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Test–retest reliability of fMRI-based graph theoretical properties during working memory, emotion processing, and resting state</article-title>
+          <source>Neuroimage</source>
+          <year>2014</year>
+          <volume>84</volume>
+          <fpage>888</fpage>
+          <lpage>900</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2013.09.013</pub-id>
+          <pub-id pub-id-type="pmid">24055506</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR73">
+        <label>73.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Li</surname>
+              <given-names>Z</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Effects of resting state condition on reliability, trait specificity, and network connectivity of brain function measured with arterial spin labeled perfusion MRI</article-title>
+          <source>Neuroimage</source>
+          <year>2018</year>
+          <volume>173</volume>
+          <fpage>165</fpage>
+          <lpage>175</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2018.02.028</pub-id>
+          <pub-id pub-id-type="pmid">29454933</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR74">
+        <label>74.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Handley</surname>
+              <given-names>R</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Acute effects of single-dose aripiprazole and haloperidol on resting cerebral blood flow (rCBF) in the human brain</article-title>
+          <source>Hum. Brain Mapp.</source>
+          <year>2013</year>
+          <volume>34</volume>
+          <fpage>272</fpage>
+          <lpage>282</lpage>
+          <pub-id pub-id-type="doi">10.1002/hbm.21436</pub-id>
+          <pub-id pub-id-type="pmid">22451196</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR75">
+        <label>75.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Liang</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Connelly</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Calamante</surname>
+              <given-names>F</given-names>
+            </name>
+          </person-group>
+          <article-title>Graph analysis of resting-state ASL perfusion MRI data: Nonlinear correlations among CBF and network metrics</article-title>
+          <source>Neuroimage</source>
+          <year>2014</year>
+          <volume>87</volume>
+          <fpage>265</fpage>
+          <lpage>275</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2013.11.013</pub-id>
+          <pub-id pub-id-type="pmid">24246488</pub-id>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

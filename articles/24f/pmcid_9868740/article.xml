@@ -1,0 +1,878 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.3" xml:lang="en" article-type="methods-article">
+  <?properties open_access?>
+  <processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats">
+    <restricted-by>pmc</restricted-by>
+  </processing-meta>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">Front Neurosci</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Front Neurosci</journal-id>
+      <journal-id journal-id-type="publisher-id">Front. Neurosci.</journal-id>
+      <journal-title-group>
+        <journal-title>Frontiers in Neuroscience</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">1662-4548</issn>
+      <issn pub-type="epub">1662-453X</issn>
+      <publisher>
+        <publisher-name>Frontiers Media S.A.</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">36699518</article-id>
+      <article-id pub-id-type="pmc">9868740</article-id>
+      <article-id pub-id-type="doi">10.3389/fnins.2022.1025492</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Neuroscience</subject>
+          <subj-group>
+            <subject>Methods</subject>
+          </subj-group>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Assessing atypical brain functional connectivity development: An approach based on generative adversarial networks</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Dos Santos</surname>
+            <given-names>Pedro Machado Nery</given-names>
+          </name>
+          <xref rid="aff1" ref-type="aff">
+<sup>1</sup>
+</xref>
+          <uri xlink:href="http://loop.frontiersin.org/people/2106398/overview"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Mendes</surname>
+            <given-names>Sérgio Leonardo</given-names>
+          </name>
+          <xref rid="aff1" ref-type="aff">
+<sup>1</sup>
+</xref>
+          <uri xlink:href="http://loop.frontiersin.org/people/2057157/overview"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Biazoli</surname>
+            <given-names>Claudinei</given-names>
+          </name>
+          <xref rid="aff1" ref-type="aff">
+<sup>1</sup>
+</xref>
+          <uri xlink:href="http://loop.frontiersin.org/people/353212/overview"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Gadelha</surname>
+            <given-names>Ary</given-names>
+          </name>
+          <xref rid="aff2" ref-type="aff">
+<sup>2</sup>
+</xref>
+          <xref rid="aff3" ref-type="aff">
+<sup>3</sup>
+</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Salum</surname>
+            <given-names>Giovanni Abrahão</given-names>
+          </name>
+          <xref rid="aff3" ref-type="aff">
+<sup>3</sup>
+</xref>
+          <xref rid="aff4" ref-type="aff">
+<sup>4</sup>
+</xref>
+          <uri xlink:href="http://loop.frontiersin.org/people/1244178/overview"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Miguel</surname>
+            <given-names>Euripedes Constantino</given-names>
+          </name>
+          <xref rid="aff3" ref-type="aff">
+<sup>3</sup>
+</xref>
+          <xref rid="aff5" ref-type="aff">
+<sup>5</sup>
+</xref>
+          <uri xlink:href="http://loop.frontiersin.org/people/158268/overview"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Rohde</surname>
+            <given-names>Luis Augusto</given-names>
+          </name>
+          <xref rid="aff3" ref-type="aff">
+<sup>3</sup>
+</xref>
+          <xref rid="aff4" ref-type="aff">
+<sup>4</sup>
+</xref>
+          <xref rid="aff6" ref-type="aff">
+<sup>6</sup>
+</xref>
+          <uri xlink:href="http://loop.frontiersin.org/people/1528777/overview"/>
+        </contrib>
+        <contrib contrib-type="author" corresp="yes">
+          <name>
+            <surname>Sato</surname>
+            <given-names>João Ricardo</given-names>
+          </name>
+          <xref rid="aff1" ref-type="aff">
+<sup>1</sup>
+</xref>
+          <xref rid="aff2" ref-type="aff">
+<sup>2</sup>
+</xref>
+          <xref rid="aff3" ref-type="aff">
+<sup>3</sup>
+</xref>
+          <xref rid="aff7" ref-type="aff">
+<sup>7</sup>
+</xref>
+          <xref rid="c001" ref-type="corresp">
+<sup>*</sup>
+</xref>
+          <uri xlink:href="http://loop.frontiersin.org/people/45669/overview"/>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1"><sup>1</sup><institution>Center of Mathematics, Computing, and Cognition, Universidade Federal do ABC, São Bernardo do Campo</institution>, <addr-line>Santo André</addr-line>, <country>Brazil</country></aff>
+      <aff id="aff2"><sup>2</sup><institution>Laboratory of Integrative Neuroscience, Universidade Federal de São Paulo</institution>, <addr-line>São Paulo</addr-line>, <country>Brazil</country></aff>
+      <aff id="aff3"><sup>3</sup><institution>National Institute of Developmental Psychiatry for Children and Adolescents (CNPq)</institution>, <addr-line>São Paulo</addr-line>, <country>Brazil</country></aff>
+      <aff id="aff4"><sup>4</sup><institution>Department of Psychiatry, Hospital de Clínicas de Porto Alegre, Federal University of Rio Grande do Sul</institution>, <addr-line>Porto Alegre</addr-line>, <country>Brazil</country></aff>
+      <aff id="aff5"><sup>5</sup><institution>Department of Psychiatry, School of Medicine, University of São Paulo</institution>, <addr-line>São Paulo</addr-line>, <country>Brazil</country></aff>
+      <aff id="aff6"><sup>6</sup><institution>UniEduK</institution>, <addr-line>Jaguariúna</addr-line>, <country>Brazil</country></aff>
+      <aff id="aff7"><sup>7</sup><institution>Big Data, Hospital Israelita Albert Einstein</institution>, <addr-line>São Paulo</addr-line>, <country>Brazil</country></aff>
+      <author-notes>
+        <fn fn-type="edited-by">
+          <p>Edited by: Federico Giove, Centro Fermi–Museo storico della Fisica e Centro Studi e Ricerche Enrico Fermi, Italy</p>
+        </fn>
+        <fn fn-type="edited-by">
+          <p>Reviewed by: Colleen Mills-Finnerty, Stanford University, United States; Zhen Qiu, Michigan State University, United States; Jin Hong, Guangdong Provincial People’s Hospital, China</p>
+        </fn>
+        <corresp id="c001">*Correspondence: João Ricardo Sato, <email>joao.sato@ufabc.edu.br</email></corresp>
+        <fn fn-type="other" id="fn004">
+          <p>This article was submitted to Brain Imaging Methods, a section of the journal Frontiers in Neuroscience</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="epub">
+        <day>09</day>
+        <month>1</month>
+        <year>2023</year>
+      </pub-date>
+      <pub-date pub-type="collection">
+        <year>2022</year>
+      </pub-date>
+      <volume>16</volume>
+      <elocation-id>1025492</elocation-id>
+      <history>
+<date date-type="received"><day>23</day><month>8</month><year>2022</year></date>
+<date date-type="accepted"><day>25</day><month>11</month><year>2022</year></date>
+</history>
+      <permissions>
+        <copyright-statement>Copyright © 2023 Dos Santos, Mendes, Biazoli, Gadelha, Salum, Miguel, Rohde and Sato.</copyright-statement>
+        <copyright-year>2023</copyright-year>
+        <copyright-holder>Dos Santos, Mendes, Biazoli, Gadelha, Salum, Miguel, Rohde and Sato</copyright-holder>
+        <license>
+          <ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref>
+          <license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY). The use, distribution or reproduction in other forums is permitted, provided the original author(s) and the copyright owner(s) are credited and that the original publication in this journal is cited, in accordance with accepted academic practice. No use, distribution or reproduction is permitted which does not comply with these terms.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>Generative Adversarial Networks (GANs) are promising analytical tools in machine learning applications. Characterizing atypical neurodevelopmental processes might be useful in establishing diagnostic and prognostic biomarkers of psychiatric disorders. In this article, we investigate the potential of GANs models combined with functional connectivity (FC) measures to build a predictive neurotypicality score 3-years after scanning. We used a ROI-to-ROI analysis of resting-state functional magnetic resonance imaging (fMRI) data from a community-based cohort of children and adolescents (377 neurotypical and 126 atypical participants). Models were trained on data from neurotypical participants, capturing their sample variability of FC. The discriminator subnetwork of each GAN model discriminated between the learned neurotypical functional connectivity pattern and atypical or unrelated patterns. Discriminator models were combined in ensembles, improving discrimination performance. Explanations for the model’s predictions are provided using the LIME (Local Interpretable Model-Agnostic) algorithm and local hubs are identified in light of these explanations. Our findings suggest this approach is a promising strategy to build potential biomarkers based on functional connectivity.</p>
+      </abstract>
+      <kwd-group>
+        <kwd>machine learning (ML)</kwd>
+        <kwd>biomarker</kwd>
+        <kwd>neural networks</kwd>
+        <kwd>children</kwd>
+        <kwd>functional connectivity</kwd>
+        <kwd>GANs</kwd>
+        <kwd>neurodevelopment</kwd>
+      </kwd-group>
+      <funding-group>
+        <funding-statement>JS (grants 2021/05332-8, 2018/04654-9, and 2018/21934-5), PD (grant 2020/04119-6), and SM (grant 2022/07782-3) are grateful to FAPESP. This study was supported by the National Institute of Developmental Psychiatry for Children and Adolescent (INPD) Grants FAPESP 2014/50917-0 and CNPq 465550/2014-2.</funding-statement>
+      </funding-group>
+      <counts>
+        <fig-count count="6"/>
+        <table-count count="2"/>
+        <equation-count count="0"/>
+        <ref-count count="27"/>
+        <page-count count="12"/>
+        <word-count count="7222"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec sec-type="intro" id="S1">
+      <title>Introduction</title>
+      <p>Most common and severe mental disorders first manifest during childhood, adolescence, and early adulthood (<xref rid="B10" ref-type="bibr">Kessler et al., 2005</xref>; <xref rid="B23" ref-type="bibr">Solmi et al., 2021</xref>). Atypical or delayed neurodevelopmental trajectories due to complex interactions between genetic and environmental factors have been proposed as the underlying mechanism for some common mental disorders (<xref rid="B21" ref-type="bibr">Shaw et al., 2007</xref>; <xref rid="B3" ref-type="bibr">Di Martino et al., 2014</xref>; João Ricardo <xref rid="B20" ref-type="bibr">Sato et al., 2019</xref>). Better describing atypical neurodevelopmental trajectories might presumably improve predictions of mental health prognosis and better inform preventive interventions.</p>
+      <p>More specifically, resting-state fMRI (rs-fMRI) based functional connectivity can be used to assess brain developmental trajectories prospectively and non-invasively in children and adolescents (<xref rid="B7" ref-type="bibr">Grayson and Fair, 2017</xref>). Functional connectivity is operationally defined as a measure of statistical dependence between the recorded neural activity of spatially segregated brain regions (<xref rid="B4" ref-type="bibr">Friston, 2011</xref>). In a common approach for connectivity analysis, cortical parcellations are used to identify regions of interest (ROIs) presenting homogeneous blood oxygen level-dependent (BOLD) signals (<xref rid="B6" ref-type="bibr">Gordon et al., 2016</xref>). ROI-to-ROI pairwise correlations are then used to quantify fMRI signal temporal dependencies yielding the so-called functional connectivity matrix (<xref rid="B13" ref-type="bibr">Li et al., 2009</xref>). This data format is an appropriate raw feature set for further analysis, as it summarizes the connectivity states in a given subject and can be collected across subject groups.</p>
+      <p>Machine learning methods and strategies are increasingly used in clinical research and applications. Among machine learning approaches, artificial neural networks have been extensively adopted due to their good predictive power. In particular, Generative Adversarial Networks (GANs) have shown promising results in the context of semi-supervised learning and generative models, especially in cases in which researchers are interested not only in identifying patterns but also in reliably reproducing them.</p>
+      <p>Generative adversarial networks (GANs) consist of a double artificial network trained in a game-like environment where two subnets (i.e., generator and discriminator) compete during the optimization process. The generator yields samples from a latent space vector in an attempt to fool the discriminator so that it classifies fake data as real. More generally, the discriminator subnetwork differentiates a modeled pattern from another, helping the generator produce more realistic samples through an adversarial training process.</p>
+      <p>In this study, we built on these characteristics of GANs to develop and test a normative approach to evaluate atypical trajectories. Models were trained using only neurotypical participants’ functional connectivity matrix data, capturing the variability across participants without a psychiatric diagnosis. For the output scores of these models, neuroatypical functional connectivity patterns should appear as outliers, regardless of the diversity of neuroatypical profiles. Furthermore, this approach allowed us to explore different patterns of neurotypicality by observing the resulting generator subnetwork.</p>
+      <p>Though still scarce, previous studies have applied GANs and resting-state functional connectivity for data augmentation and illness classification in major depressive disorder (MDD), schizophrenia (SZ) (<xref rid="B27" ref-type="bibr">Zhao et al., 2020</xref>), and both attention deficit hyperactivity disorder (ADHD), and autism spectrum disorder (ASD) (<xref rid="B26" ref-type="bibr">Yao and Lu, 2019</xref>). Other studies applying GANs to MRI data have been mainly focused on image reconstruction (<xref rid="B22" ref-type="bibr">Shende et al., 2019</xref>) and generation (<xref rid="B9" ref-type="bibr">Kazuhiro et al., 2018</xref>; <xref rid="B24" ref-type="bibr">Welander and Eklund, 2018</xref>; <xref rid="B12" ref-type="bibr">Kwon et al., 2019</xref>). In contrast with these previous applications, we used GANs to construct an “atypicality detector” and as a “reproducer” of neurotypical fMRI data patterns.</p>
+      <p>In other words, it was possible to reproduce the neurotypical state in the generator, while predicting a neurotypicality score in the discriminator using the fMRI dataset collected 3 years before a mental symptoms screening. We expect to differentiate neurotypical real data from both fake generated data and real neuroatypical data. As artificial neural networks have been criticized for interpretability issues, we adopted an explainability algorithm to measure specific large-scale network feature contributions to each model. Furthermore, ensemble strategies were explored to improve classification performance.</p>
+    </sec>
+    <sec sec-type="materials|methods" id="S2">
+      <title>Materials and methods</title>
+      <sec id="S2.SS1">
+        <title>Subjects</title>
+        <p>The data sample employed by this study comprises 550 children and adolescents (53% male) recruited from two public Brazilian schools from São Paulo (site 1, <italic>N</italic> = 274) and Porto Alegre (site 2, <italic>N</italic> = 276) cities. Participants were a subset of the “High Risk Cohort Study for Psychiatric Disorders in Childhood” (HRC, <italic>N</italic> = 2,512 participants, more details in <xref rid="B19" ref-type="bibr">Salum et al., 2015</xref>). The age range was between 6 and 15 years old when the fMRI data were acquired, and the Development and Well-Being Assessment (DAWBA) was conducted approximately 3 years later. This assessment allows the classification of subjects in healthy controls and any psychiatric disorder condition, which is interesting for modeling purposes later described. Further cognitive, behavioral, and sociodemographic assessments were performed in the cohort (<xref rid="B19" ref-type="bibr">Salum et al., 2015</xref>). Most subjects with psychiatric diagnostics presented emotional disorders, such as major depression, and hyperkinetic disorders such as ADHD. Both sites’ local ethics committees approved the protocol of the study. Written and verbal consent was obtained respectively by the legal guardians and by the children involved in the study.</p>
+      </sec>
+      <sec id="S2.SS2">
+        <title>Data acquisition protocol</title>
+        <p>Resting-state fMRI time-courses were obtained with an HDX and an HD 1.5 Tesla Signa MR systems (G.E.), respectively in site 1 and site 2. Both sites acquired scans through a 180 echo-planar imaging (EPI) sequence, with the following acquisition parameters: repetition time (TR) of 2,000 msec, echo time (TE) of 30 msec, flip angle of 80°, slice thickness of 4 mm, gap of 0.5 mm, number of excitations (NEX) of 1, 26 axial slices, 80 × 80 matrix size, 128 × 128, 1.875 × 1.875 mm reconstruction matrix, performing 6 min of acquisition. Subjects remained with eyes open in the scan which contained a fixation point. High-resolution T1 images were acquired for spatial normalization with a three-dimensional fast spoiled gradient recalled echo sequence (TR of 10.91 msec, TE phase of 4.2 msec, flip angle of 15°, thickness of 1.2 mm, field of view of 24.0 × 18.0 cm, NEX of 1 and 256 × 192 matrix size with up to 160 axial slices for whole-brain coverage).</p>
+        <p>Five hundred and three (503) participants were assessed using the DAWBA 3 years after the fMRI acquisition. The assessment consisted of an interview with parents covering emotional, hyperactivity, and behavioral disorders, as well as more severe disorders (<xref rid="B5" ref-type="bibr">Goodman et al., 2000</xref>). Based on this assessment, 377 subjects were considered to be neurotypical (IQ: μ = 102.27, σ = 16.64) whereas 126 were considered neuroatypical (IQ: μ = 100.96, σ = 16.93).</p>
+      </sec>
+      <sec id="S2.SS3">
+        <title>Preprocessing</title>
+        <p>Raw fMRI data were preprocessed using the CONN toolbox v.16.b (<sup><xref rid="footnote1" ref-type="fn">1</xref></sup>
+<xref rid="B25" ref-type="bibr">Whitfield-Gabrieli and Nieto-Castanon, 2012</xref>) based on the SPM12 software.<sup><xref rid="footnote2" ref-type="fn">2</xref></sup> First, the functional images were unwarped and the head motion was corrected. Then, the brain tissues were segmented into gray and white matter and cerebrospinal fluid. Next, the resultant images were spatially normalized to the MNI ICBM152 template and then functionally normalized to the standard space. After that, data were scanned for outlier detection and scrubbing using the ART approach based on frame displacement &gt; 0.5 mm and global signal z &gt; 3.<sup><xref rid="footnote3" ref-type="fn">3</xref></sup> Finally, the functional images were spatially smoothed with a full width at a half maximum (FWHM) equal to 8 mm. Linear detrending was performed, as well as bandpass filtering (0.008–0.09 Hz). The nuisance variables (i.e., cerebrospinal fluid and white-matter signals) were regressed out using six head motion parameters (and their respective derivatives), with motion censoring and the Simult approach (<xref rid="B8" ref-type="bibr">Hallquist et al., 2013</xref>). The mean frame displacement before motion censoring was 0.23 (std. = 0.29) and post was 0.11 (std. = 0.04).</p>
+        <p>Local representatives for the 333 regions-of-interest (ROIs) as defined by <xref rid="B6" ref-type="bibr">Gordon et al. (2016)</xref> in its functional cortical parcellation were obtained by averaging the voxel’s BOLD signals. This atlas also labels each ROI as belonging to a functional network (RSBFN); Following the previous processing, pairwise temporal correlations were calculated for each pair of different ROIs, resulting in functional connectivity matrices using a Fisher transform. Vectorized upper triangular matrices were used as inputs to the neural networks summing up (333<sup>2</sup>–333)/2 = 55,278 unique features. Using all features for training would be impractical due to the effect of dimensionality on the nets’ optimization algorithm performance, so in the following section we describe a dimensionality reduction procedure.</p>
+      </sec>
+      <sec id="S2.SS4">
+        <title>Dimensionality reduction</title>
+        <p>In order to reduce the scope of this study, focusing mostly on cognitive, attentional, and emotional circuitries, which are often linked to neuroatypicality (<xref rid="B11" ref-type="bibr">Krain and Castellanos, 2006</xref>), we opted to use up to five predictors in the ensemble construction, one for each of the considered RSBFNs: <italic>Default Mode, Dorsal Attention, Ventral Attention, Fronto-parietal</italic> and <italic>CO</italic> + <italic>SN</italic> [combination of the <italic>Cingulo-opercular</italic> and <italic>Salience</italic> RSBFNs as in <xref rid="B14" ref-type="bibr">Lopez-Larson et al. (2017)</xref>] as labeled in the Gordon parcellation atlas.</p>
+        <p>After the organization of the connectivity matrices in specific functional networks (subsets of features), a cleaning process was carried out. First, a value of −2 was considered the floor and 2 the ceiling, limiting the range of variation. This procedure aims to concentrate the sensitivity of the modeling process within a given significant range of the output of the Fisher transform and facilitate the ingestion in the following steps algorithms. Next, the values were scaled to the interval [−1,1] required by the hyperbolic tangent activation function utilized in the machine learning models. Regarding quality control, an exclusion criterion was applied, and so matrices with more than 15% of modified cells were discarded. This step was conducted to reduce outlier influences.</p>
+        <p>The above-mentioned cleaning step may cause the exclusion of a subject from one functional network while it is preserved in another, as subsets were processed separately. Thus, the exclusion threshold may result in a variable number of samples for each RSBFN depending on the alterations produced by the cleaning process. In the scenario in which more data were excluded (for the Default, VentralAttn, and CO + SN RSBFNs) this resulted in the loss of 1 unlabeled, 11 neurotypical, and 2 neuroatypical subjects’ data, resulting respectively in 46, 366, and 124 matrices lasting in each group. This effect is later discussed in the ensemble strategies to ensure each predictor gets a vote on samples that were not excluded.</p>
+        <p><xref rid="F1" ref-type="fig">Figure 1</xref> summarizes the final preprocessing steps. From each set of specific functional net preprocessed matrices, only neurotypical subjects’ data are used in training. Approximately 80% of the neurotypical data were used in 5-fold cross-validation, so as to allow variability assessment for each trained model. In the case when the most amount of data exclusion was observed, the greatest multiple of 5 under the 80% limit amounted to 290 matrices. Data from the remaining 76 neurotypical subjects were reserved for the evaluation set, as well as a corresponding number of neuroatypical data samples. The remaining 48 neuroatypical samples and the fold-out data (58 neurotypical matrices, a fifth of the training data, not used in direct optimization of the models) were used respectively for ensemble and model selection, which will be further discussed afterward.</p>
+        <fig position="float" id="F1">
+          <label>FIGURE 1</label>
+          <caption>
+            <p>Preprocessing steps performed for datasets preparation. In blue, neurotypical data and processes only involving this type of data are identified. In green, the same is done for neuroatypical data, while parts of the process involving a mixture of these two types of data are identified in yellow. Note that only neurotypical subjects’ data is used for GAN training while a balanced evaluation dataset is used for the evaluation step.</p>
+          </caption>
+          <graphic xlink:href="fnins-16-1025492-g001" position="float"/>
+        </fig>
+      </sec>
+      <sec id="S2.SS5">
+        <title>Generative adversarial networks design and training</title>
+        <p>For each specific RSBFN several architectures were trained in a standardized manner and on neurotypical data only. Five-fold cross-validation to assess model stability and variability (especially of the discriminator subnetwork, in terms of the bias-variance tradeoff). Each GAN contained a feedforward structure similar to the one described in <xref rid="F2" ref-type="fig">Figure 2</xref>. A 100-length normally distributed random vector was used as input to all the generator subnetworks.</p>
+        <fig position="float" id="F2">
+          <label>FIGURE 2</label>
+          <caption>
+            <p>General structure of generative adversarial network (GAN) models. Each layer is only fed forward, represented by the color-coded rectangles. The discriminator subnetwork is fed with batches of both generated (i.e., fake) data from the generator as well as genuine training data. rely on 100-length random noise vectors.</p>
+          </caption>
+          <graphic xlink:href="fnins-16-1025492-g002" position="float"/>
+        </fig>
+        <p>The output format of the generator was equal to the input format of the discriminator and to the specific number of features for each of the five data sets according to the five RSBFNs used in training. Moreover, the output node of the discriminator is always a single node that outputs a score of neurotypicality for each sample. A variable number of nodes was used in the hidden layers of both generators and discriminators, always constrained to the input and output sizes of each subnetwork.</p>
+        <p>Due to the variable number of features for each RSBFN (from 276 to 976), we first assessed triangular and rectangular networks with different numbers of neurons at each layer to evaluate stability. GANs are known to have failure modes such as a lack of convergence and mode collapse and they also need to be balanced in terms of their subnetworks (<xref rid="B2" ref-type="bibr">Bhagyashree and Nandi, 2020</xref>). Therefore, unbalanced GANs are easy to spot, either because training neuroatypicality scores would not raise for neurotypical training data or because the evolution of these scores was rather noisy. By reducing the number of layers in the generator subnetwork and utilizing Dropout layers in the discriminator network, we were able to achieve a better neighborhood of solutions.</p>
+        <p>Dropout layers randomly assign a value of 0 to the weights of a given percentage of connections (<xref rid="B1" ref-type="bibr">Abadi et al., 2016</xref>). This procedure was applied as a regularization tool stimulating the learning process to be handled without being reliant on a small number of inputs. Also, these layers simulate a smaller number of features being inputted to the first hidden layer in the discriminator, which in the case of bigger sets of features helped to overcome dimensionality issues to some degree. Dropout rates from 40 to 70% were evaluated. Hyperbolic tangent, the Leaky version of the Rectified Linear Unit (LeakyReLU), and Sigmoid activation layers (<xref rid="B1" ref-type="bibr">Abadi et al., 2016</xref>) were used in different parts of the GAN models.</p>
+        <p>A Batch Normalization Layer (<xref rid="B1" ref-type="bibr">Abadi et al., 2016</xref>) was utilized in the generator subnetworks. This layer normalizes inputs from the previous layer, applying a transformation that approximates the mean of the output to 0 and its standard deviation to 1. It is able to encompass the learning of scaling parameters during training and acts as a moving average during evaluation/prediction using these parameters. Finally, Flatten and Reshape layers were employed to reshape inputs and outputs into usable formats respectively as tensors and functional connectivity matrices.</p>
+        <p>Each GAN was trained in the following manner: the discriminator subnetwork was trained in a standalone manner with a mini-batch of 32 real samples. Then, the whole GAN network (considering both subnetworks) was trained using the false information that the generated samples were real in an attempt to trick the frozen discriminator while the generator is optimized. Freezing the discriminator while training the generator keeps the latter from having a decrease in performance allowing an increase in the performance of the former (<xref rid="B1" ref-type="bibr">Abadi et al., 2016</xref>). Discriminator and generator losses were calculated using Binary Cross-Entropy considering the above-mentioned desired labels. An Adam optimizer with a learning rate of 0.0002 was utilized in the training process of both nets (<xref rid="B1" ref-type="bibr">Abadi et al., 2016</xref>).</p>
+        <p>Each training process was halted using a stop criterion defined by a training metric. A moving window with 15,000 training epochs was used. Once the standard deviation of the percentage of the training neurotypicality scores above 0.5 went below 0.01 within this window, the training process stopped. The percentage of training scores above 0.5 is an indicator of how sensitive the discriminator has become to the training samples, while the moving standard deviation window for this metric ensures the training will stop when there is little variability in the scores for a specific number of epochs, aiding to avoid overfitting.</p>
+      </sec>
+      <sec id="S2.SS6">
+        <title>Model and ensemble generative adversarial networks selection</title>
+        <p>Rectangular and triangular architectures were chosen for each RSBFN based on training stability and performance across training folds: 2 architectures for the Default, CO + SN, and VentralAttn RSBFNs, 3 architectures for the FrontoParietal and 4 for the DorsalAttn network. The performances on the validation and test data sets were not considered for the selection of architectures.</p>
+        <p>For each architecture, five training folds were performed and evaluated in a fold-out. The model with the best performance on the fold-out (neurotypical) data across folds was chosen to participate in the ensemble construction as the representative of the architechture. The considered performance metrics were the percentage of neurotypicality scores above 0.5 and the mean neurotypicality score for the fold-out matrices.</p>
+        <p>From individual RSBFN architectures, a combinatorial approach was used to construct ensembles containing 0 or 1 model from each RSBFN, not necessarily containing more than one RSBFN. Besides the null model, this approach generated 539 ensembles.</p>
+        <p>Ensembles are a technique usually employed with so-called weak predictors that, through bagging or boosting strategies, attempt to improve prediction performance and/or diminish prediction variability (<xref rid="B15" ref-type="bibr">Polikar, 2012</xref>). Alternatively, we explored natural divisions in the data set, defined by the five RSBFNs, so predictions are complementary to each other in a more functional perspective. The exclusion of certain RSBFNs aimed to reduce undesired information improving prediction performance and explainability.</p>
+        <p>For each ensemble, its underlying RSBFNs models were compared in terms of the subjects which were excluded in the preprocessing stage (excessive outlier corrections threshold). If subject A was excluded in the preprocessing of a RSBFN and subject B was excluded in the preprocessing of another RSBFN in the same ensemble, subjects A and B were excluded from the evaluation data. In the case with the most divergence, two matrices relative to neurotypical subjects were excluded due to the impossibility of obtaining reliable predictions for at least one of the models involved.</p>
+        <p>Two evaluation strategies were implemented. The first assesses the average atypicality score among the ensemble models. The second consisted in a majority voting strategy in which each model in the ensemble assigned one vote defining if a given matrix corresponds to a neurotypical or neuroatypical class (see <xref rid="F3" ref-type="fig">Figure 3</xref>). The mean difference between these two strategies lies in the fact that the magnitude of the neurotypicality score is important in an average score which has to be above 0.5 so that a subject is considered neurotypical. In a voting strategy, all models have an equal contribution–although the same threshold of 0.5 is used to compute the vote across the models. In cases in which an even number of RSBFNs is employed in a voting strategy, a tie will favor a neuroatypical prediction. This approach aims to increase specificity and is coherent with a normative approach, somewhat comparable to anomaly detection.</p>
+        <fig position="float" id="F3">
+          <label>FIGURE 3</label>
+          <caption>
+            <p>Schematic of the ensemble strategies employed. From a given subject regions of interest (ROI)-to-ROI preprocessed correlation matrix, specific intra-functional net correlations are extracted to reduce dimensionality. For a given number of trained models in each of these functional nets, a single model is chosen for each one of them, generating a score of neurotypicity for its specific functional net. To combinate models’ outputs, two ensemble strategies were applied: Averaging models’ scores and converting these scores to votes to calculate majority. In both cases, not necessarily all five functional nets were used to constitute an ensemble. An exhaustive strategy was used combining each trained model for each functional net with a variable number of functional nets being used. A validation dataset was used to choose the best ensembles.</p>
+          </caption>
+          <graphic xlink:href="fnins-16-1025492-g003" position="float"/>
+        </fig>
+        <p>Combining RSBFN models exhaustively can generate issues related to the randomness of this procedure. Apart from potentially being a misleading factor in the evaluation, it would not provide a single best reliable model. Ranking models based on their performance would only reflect the fact that combining diverging scores may, in some cases, lead to an increase in ensemble performance. Therefore, a validation set consisting of neuroatypical matrices was used to select the best ensembles before effective performance metric quantification was carried out on the balanced evaluation dataset. In cases where the same performance on the validation dataset was observed for two models, the mean fold-out neurotypicality score across the ensemble models was used as a tiebreaker criterion.</p>
+        <p>Accuracy, negative predictive values (NPV), positive predictive values (PPV), sensitivity, and specificity were obtained from the single best of the implemented ensembles. To evaluate how different from a null model (i.e., random choices) the predictions were, we computed the <italic>p</italic>-value of the balanced accuracy (average between sensitivity and specificity metrics) using bootstrap permutations of the labels in the evaluation dataset. Ideally, a ROC-AUC (area under the receiver operating characteristic curve) metric would be employed, but this metric would not be adequate to evaluate the variation of the threshold of votes (discrete) as well as the threshold for mean scores (continuous). A significance value of α = 0.05 was chosen to test the null hypothesis (i.e., the null model) rejection.</p>
+      </sec>
+      <sec id="S2.SS7">
+        <title>Explainability of the models</title>
+        <p>The LIME (Local Interpretable Model Agnostic) algorithm (<xref rid="B17" ref-type="bibr">Ribeiro et al., 2016</xref>) was employed to improve the explainability of the individual GAN discriminator models. This technique performs a local linear approximation for a given prediction, computing the importance of features for that sample, without necessarily including all features as important to this prediction (<xref rid="B17" ref-type="bibr">Ribeiro et al., 2016</xref>). This is useful when identifying which features in each RSBFN have the most weight to the predictions, that is, which connections are considered more important for the assessment of neurotypicality (i.e., possible local hubs with important dysconnectivity effects).</p>
+        <p>As each feature corresponds to a connectivity measure between two ROIs, it is possible to take an average of all importance values for each feature across the evaluation data to identify connections that were determinant to the model predictions. Likewise, one can average all connection importance values across a given ROI for the matrix resulting from the previous step, quantifying ROI centrality in the RSBFN based on prediction values.</p>
+        <p>Higher mean values indicate greater importance for a given functional connection to the considered class (i.e., neurotypical or neuroatypical). From that, we can infer which relations hold most of the importance for the prediction of neurotypicality. Similarly, ROI centrality as described here shows the importance of a given ROI as a local hub within the specific RSBFN in which the prediction was made.</p>
+        <p>For the above-mentioned procedure, we chose the trained models with the highest individual (considered in ensembles with only themselves) accuracy for each of the five RSBFNs used and obtained a LIME explanation for all samples in the evaluation dataset. ROI centrality was considered separately for neurotypical and neuroatypical groups.</p>
+      </sec>
+    </sec>
+    <sec sec-type="results" id="S3">
+      <title>Results</title>
+      <p>In <xref rid="F4" ref-type="fig">Figure 4</xref> it is possible to observe how each ROI connection is correlated with the neurotypicality label. Not only do several connections show little to no correlation with neurotypicality, but also intricate patterns are observed in the connections that do. In <xref rid="F4" ref-type="fig">Figure 4</xref>, features are in fact only in areas around the main diagonal (intra-RSBFN relations).</p>
+      <fig position="float" id="F4">
+        <label>FIGURE 4</label>
+        <caption>
+          <p>Regions of interest (ROI) connections’ correlation with neurotypicality label. The complex pattern observed justifies the use of a machine learning model, as no direct associations can be made directly from data.</p>
+        </caption>
+        <graphic xlink:href="fnins-16-1025492-g004" position="float"/>
+      </fig>
+      <p>An estimated 45-min time frame was observed for each training fold using a machine with an i7-9750H processor with 2,6 GHz–with Python Tensorflow module v.1.15.0, Keras module v.2.2.4 and NumPy v.1.19.2. The workload was mostly memory and CPU-bound. <xref rid="F5" ref-type="fig">Figure 5</xref> illustrates the evolution of the discriminator accuracy (genuine vs generated samples discrimination) and both discriminator and generator losses for the single Dorsal Attention model. This specific model contained 200 nodes in its generator single hidden layer, 50% of dropout rate, and sequential 75, 50, and 25 nodes in its discriminator hidden layers.</p>
+      <fig position="float" id="F5">
+        <label>FIGURE 5</label>
+        <caption>
+          <p>Evolution of the discriminator accuracy and both discriminator and generator losses for a single DorsalAttn model with a triangular architecture. Relative consistency across folds is displayed, showing model stability, especially in terms of the bias-variance tradeoff for the discriminator subnetwork. In all folds except the third, it is noticeable when the training process was halted due to the predefined stop criterion. A seed number of 0 was used for this specific training process (set for both NumPy and Tensorflow modules).</p>
+        </caption>
+        <graphic xlink:href="fnins-16-1025492-g005" position="float"/>
+      </fig>
+      <p>Mean and voting evaluation strategies are equivalent and most of the models ranked low in the validation data set performance. Accuracies varied between 0.51 and 0.59, with similar values for balanced accuracy. The best individual models in terms of accuracy were used for the computation of ROI centrality described in subsection “Model and ensemble GANs selection.” In <xref rid="F6" ref-type="fig">Figure 6</xref> it is possible to observe these results for each of the five studied RSBFNs for both neurotypical and neuroatypical subjects.</p>
+      <fig position="float" id="F6">
+        <label>FIGURE 6</label>
+        <caption>
+          <p>Regions of interest (ROI) centrality. Each ROI belonged to a Resting State Brain Functional Network (RSBFN) and only intra-RSBFN relations were considered. The referred models presented the highest accuracy among the architectures tested for their specific datasets. Centrality (color bar) was derived from the average connection importance in predictions across neurotypical and neuroatypical subjects. Positive values indicate ROIs whose connections raised the neurotypicality score while negative values indicate ROIs whose connections lowered this metric. High values (in module) indicate great importance for the neurotypicality score. Group separation aims to ensure that the group’s neurological differences are excluded as confounding factors.</p>
+        </caption>
+        <graphic xlink:href="fnins-16-1025492-g006" position="float"/>
+      </fig>
+      <p>Considering models grouped in ensembles, first we can consider the use of the highest fold-out percentage scores above 0.5 as the fold selection method. Using the average neurotypicality score across ensemble models as an evaluation metric, we obtain a summary metric. The results for the best model in this category as defined by the validation data criterion for ten seeds (random parameter initialization of GAN weights) are shown in <xref rid="T1" ref-type="table">Table 1</xref>.</p>
+      <table-wrap position="float" id="T1">
+        <label>TABLE 1</label>
+        <caption>
+          <p>Ensemble performance of models with a mean score as evaluation metric and the highest percentage of fold-out scores above 0.5 for fold selection.</p>
+        </caption>
+        <table frame="hsides" rules="groups" cellspacing="5" cellpadding="5">
+          <thead>
+            <tr>
+              <td valign="top" align="left" rowspan="1" colspan="1">Method<hr/></td>
+              <td valign="top" align="center" colspan="10" rowspan="1">Mean score<hr/></td>
+            </tr>
+            <tr>
+              <td valign="top" align="left" rowspan="1" colspan="1">Seed</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">1</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">2</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">3</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">4</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">5</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">6</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">7</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">8</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">9</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td valign="top" align="left" rowspan="1" colspan="1">Accuracy</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.54</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.53</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.51</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.54</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.59</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.55</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.55</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.59</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.57</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.57</td>
+            </tr>
+            <tr>
+              <td valign="top" align="left" rowspan="1" colspan="1">Sensitivity</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.71</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.61</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.76</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.74</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.70</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.67</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.68</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.78</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.43</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.57</td>
+            </tr>
+            <tr>
+              <td valign="top" align="left" rowspan="1" colspan="1">Specificity</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.37</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.46</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.25</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.34</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.47</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.43</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.42</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.41</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.70</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.57</td>
+            </tr>
+            <tr>
+              <td valign="top" align="left" rowspan="1" colspan="1">PPV</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.53</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.53</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.50</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.53</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.57</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.54</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.54</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.57</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.59</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.57</td>
+            </tr>
+            <tr>
+              <td valign="top" align="left" rowspan="1" colspan="1">NPV</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.56</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.54</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.51</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.57</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.61</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.57</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.57</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.65</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.55</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.57</td>
+            </tr>
+            <tr>
+              <td valign="top" align="left" rowspan="1" colspan="1">Balanced accuracy</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.54</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.53</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.51</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.54</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.59</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.55</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.55</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.59</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.57</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.57</td>
+            </tr>
+            <tr>
+              <td valign="top" align="left" rowspan="1" colspan="1"><italic>p</italic>-value</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.19</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.24</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.44</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.21</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.03</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.09</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.12</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.01</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.05</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.05</td>
+            </tr>
+          </tbody>
+        </table>
+        <table-wrap-foot>
+          <fn>
+            <p>Note that the performance variables and <italic>p</italic>-values are seed-dependent. In this case, four of the ten different seeds yielded a model providing typical/atypical diagnosis prediction better than chance (i.e., balanced accuracy &gt; 0.5).</p>
+          </fn>
+        </table-wrap-foot>
+      </table-wrap>
+      <p>Models with one and three predictors were among the highest-ranking ones for the aforementioned strategy. Although, in general, they presented high <italic>p</italic>-values for the metric of balanced accuracy which did not allow for null hypothesis rejection. The accuracy was greatly affected by the performance in the neurotypical class, which is noticeable from specificity values. This suggests that an average neurotypicality score across models may be sensitive to high individual scores (i.e., favoring the predictions of neurotypical scores–above 0.5).</p>
+      <p>Voting strategies for the same fold selection method showed improved performance when compared to the previous evaluation strategy, as shown in <xref rid="T2" ref-type="table">Table 2</xref>. The best voting strategy outcomes were seen for ensembles considering two predictors, which can be explained by the number of votes required to assign a neuroatypical prediction in these cases. If both models in an ensemble with two predictors vote for a neurotypical phenotype the final prediction does so. The divergence between models can be exploited as an anomaly detector–as the neuroatypical class was not modeled, individuals in this class should appear as outliers with low neurotypicality scores. Voting strategies also address the sensitivity of averages to outliers (faulty scores in the ensemble who weigh in strongly for a neurotypicality prediction), diminishing the negative effect that models in different training points could have when combined.</p>
+      <table-wrap position="float" id="T2">
+        <label>TABLE 2</label>
+        <caption>
+          <p>Ensemble performance, with votes as evaluation metric and the highest percentage of fold-out scores above 0.5 for fold selection.</p>
+        </caption>
+        <table frame="hsides" rules="groups" cellspacing="5" cellpadding="5">
+          <thead>
+            <tr>
+              <td valign="top" align="left" rowspan="1" colspan="1">Method<hr/></td>
+              <td valign="top" align="center" colspan="10" rowspan="1">Vote<hr/></td>
+            </tr>
+            <tr>
+              <td valign="top" align="left" rowspan="1" colspan="1">Seed</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">1</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">2</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">3</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">4</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">5</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">6</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">7</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">8</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">9</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td valign="top" align="left" rowspan="1" colspan="1">Accuracy</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.49</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.53</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.61</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.56</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.60</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.55</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.59</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.55</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.59</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.57</td>
+            </tr>
+            <tr>
+              <td valign="top" align="left" rowspan="1" colspan="1">Sensitivity</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.53</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.39</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.75</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.47</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.58</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.53</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.61</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.66</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.39</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.51</td>
+            </tr>
+            <tr>
+              <td valign="top" align="left" rowspan="1" colspan="1">Specificity</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.46</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.66</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.47</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.64</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.62</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.57</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.57</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.45</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.78</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.63</td>
+            </tr>
+            <tr>
+              <td valign="top" align="left" rowspan="1" colspan="1">PPV</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.49</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.54</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.59</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.57</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.60</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.55</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.58</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.54</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.64</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.58</td>
+            </tr>
+            <tr>
+              <td valign="top" align="left" rowspan="1" colspan="1">NPV</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.49</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.52</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.65</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.55</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.59</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.54</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.59</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.57</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.56</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.56</td>
+            </tr>
+            <tr>
+              <td valign="top" align="left" rowspan="1" colspan="1">Balanced accuracy</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.49</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.53</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.61</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.56</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.60</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.55</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.59</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.55</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.59</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.57</td>
+            </tr>
+            <tr>
+              <td valign="top" align="left" rowspan="1" colspan="1"><italic>p</italic>-value</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.70</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.27</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">&lt; 0.01</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.10</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.01</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.17</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.02</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.14</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.01</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.04</td>
+            </tr>
+          </tbody>
+        </table>
+        <table-wrap-foot>
+          <fn>
+            <p>Note that 5 of the 10 different seeds resulted in models providing typical/atypical diagnosis prediction better than chance (i.e., balanced accuracy &gt; 0.5).</p>
+          </fn>
+        </table-wrap-foot>
+      </table-wrap>
+      <p>Fold selection strategies showed little to no difference in the result of the above-mentioned evaluation strategies. The highest mean neurotypicality score from fold-out often chose the same fold of the former strategy (i.e., based on the percentage of scores above 0.5).</p>
+    </sec>
+    <sec sec-type="discussion" id="S4">
+      <title>Discussion</title>
+      <p>In this study, we employed a normative approach to model neurotypicality from functional connectivity profiles. We used a GAN model trained on functional connectivity matrices from neurotypical subjects only, having been able to replicate this pattern to new samples in its generator and providing a neurotypicality score in its discriminator. As our main result, this proposed score is promising regarding the prediction of children’s mental health 3 years in advance. Moreover, we proposed and tested some model training, selection, ensemble, and evaluation strategies.</p>
+      <p>First, we observed that model performance is dependent on parameter initialization, i.e., it depends on the seed used in the random initialization of the GAN weights. Most studies in the literature rely on the results and performance from a single trained GAN model, without assessing the impact of the seeds used for network weights initialization. Second, the vote strategy (<xref rid="T2" ref-type="table">Table 2</xref>) as an evaluation metric to build the neurotypicality scores provided slightly better performance in the test data, with balanced accuracy of almost 60%. Third, based on the LIME approach for model explanation, we explored ROI centrality to identify local hubs inside RSBFNs with potential dysconnectivity effects (<xref rid="F6" ref-type="fig">Figure 6</xref>).</p>
+      <p>In addition, we observed that single model performance varied significantly, even within each RSBFN. This may be due to the aggressive Dropout layer used to reduce the number of trainable parameters. Given the high dimensionality of functional connectivity variables (ROI-to-ROI), the aggressive dropout was relevant to eliminate irrelevant features improving the models’ robustness.</p>
+      <p>Previously in the wide literature, GANs have displayed their potential in image generation tasks (<xref rid="B16" ref-type="bibr">Radford et al., 2015</xref>; <xref rid="B18" ref-type="bibr">Salimans et al., 2016</xref>). Aside from phenotypic characterization, at least two previous studies generated connectivity matrices that have been used for data augmentation (<xref rid="B26" ref-type="bibr">Yao and Lu, 2019</xref>; <xref rid="B27" ref-type="bibr">Zhao et al., 2020</xref>) aiming to alleviate the low sample count effect and improve classification performance. Though not directly comparable to this study–due to the use of a discriminative approach and larger datasets in both cases–these attempts highlight how effective GANs can be for neurological data handling. Discrimination tasks involving ASD and ADHD achieved 90.2 and 87.9% accuracy in relation to matched healthy subjects, respectively (<xref rid="B26" ref-type="bibr">Yao and Lu, 2019</xref>). In the other study, MDD and SZ discrimination tasks (against healthy controls) achieved 70.1 and 80.7% accuracy, respectively (<xref rid="B27" ref-type="bibr">Zhao et al., 2020</xref>). Previous results suggest that generated data may hold at least part of the predictive value compared to that which would be observed with real samples–it could be further exploring characteristics of the underlying real data distribution at the cost of some redundancy.</p>
+      <p>In the last decade, connectome analysis serves as a framework upon which neurodevelopmental trajectories can be assessed <italic>in vivo</italic> (<xref rid="B3" ref-type="bibr">Di Martino et al., 2014</xref>; <xref rid="B7" ref-type="bibr">Grayson and Fair, 2017</xref>). In the scope of the current study, only intra-RSBFNs correlations were explored but further models could be trained considering all combinations of RSBFNs (visible in <xref rid="F4" ref-type="fig">Figure 4</xref>), which would characterize inter- RSBFNs interaction. Moreover, in the current study, the generation of five separate RSBFN typical patterns still does not comprehensively consider the whole brain typicality. Thus, we believe the models’ performance could be improved. Future studies could focus on further compressing features in a reversible form to address both dimensionality issues as well as the whole brain atypical connectome generation.</p>
+    </sec>
+    <sec sec-type="conclusion" id="S5">
+      <title>Conclusion</title>
+      <p>We conclude that GAN is a promising tool for anomaly detection and in the context of brain functional networks, it could be used to build a functional atypicality score. In the current study, we illustrate the proposed approach in a proof-of-concept that this score could predict psychiatric problems 3 years in advance with accuracy greater than chance. Methods for accuracy optimization are still an open question.</p>
+      <p>In the long run, methods as proposed in this study may support clinical procedures by helping both diagnosis and prognosis. Models’ specificity and sensitivity values provide a starting point on how clinicians should evaluate the neurotypical score. In addition, the model explainer can provide reason behind each of these inputs, and the evaluation can be done using the resting-state fMRI alone regardless of preexisting suspicion for neuroatypicality. For a more comprehensive and collective view of what features were considered most important for models predictions, <xref rid="F6" ref-type="fig">Figure 6</xref> characterizes relevant hubs from a functional perspective, though their centrality from other points of view is rather complex neurobiologically. We prefer not to provide a detailed explanation of the role of each region-of-interest in the psychiatric disorders, since given the dataset used, these would be mostly conjectures. It is important to mention that in this study, we focused on proposing a new approach and illustrating its value in a proof-of-concept application.</p>
+    </sec>
+    <sec sec-type="data-availability" id="S6">
+      <title>Data availability statement</title>
+      <p>The original contributions presented in the study are publicly available. This data can be found here: <ext-link xlink:href="https://osf.io/ktz5h/wiki/home/" ext-link-type="uri">https://osf.io/ktz5h/wiki/home/</ext-link>.</p>
+    </sec>
+    <sec sec-type="ethics-statement" id="S7">
+      <title>Ethics statement</title>
+      <p>The studies involving human participants were reviewed and approved by School of Medicine–University of São Paulo Federal University of São Paulo Federal University of Rio Grande do Sul. Written informed consent to participate in this study was provided by the participants’ legal guardian/next of kin.</p>
+    </sec>
+    <sec sec-type="author-contributions" id="S8">
+      <title>Author contributions</title>
+      <p>PD conducted the analyses and wrote the manuscript. SM reviewed the manuscript and provided support in the analyses. CB reviewed the manuscript and provided support in the results interpretation. AG collected the data and reviewed the manuscript. GS, EM, and LAR coordinated data collection and reviewed the manuscript. JS provided support in data analysis, wrote, and reviewed the manuscript. All authors contributed to the article and approved the submitted version.</p>
+    </sec>
+  </body>
+  <back>
+    <fn-group>
+      <fn id="footnote1">
+        <label>1</label>
+        <p>
+<ext-link xlink:href="https://www.nitrc.org/projects/conn/" ext-link-type="uri">https://www.nitrc.org/projects/conn/</ext-link>
+</p>
+      </fn>
+      <fn id="footnote2">
+        <label>2</label>
+        <p>
+<ext-link xlink:href="http://www.fil.ion.ucl.ac.uk/spm/software/spm12/" ext-link-type="uri">http://www.fil.ion.ucl.ac.uk/spm/software/spm12/</ext-link>
+</p>
+      </fn>
+      <fn id="footnote3">
+        <label>3</label>
+        <p>
+<ext-link xlink:href="https://www.nitrc.org/projects/artifact_detect/" ext-link-type="uri">https://www.nitrc.org/projects/artifact_detect/</ext-link>
+</p>
+      </fn>
+    </fn-group>
+    <sec sec-type="COI-statement" id="S10">
+      <title>Conflict of interest</title>
+      <p>LAR has received grant or research support from, served as a consultant to, and served on the speakers’ bureau of Abbott, Aché, Bial, Medice, Novartis/Sandoz, Pfizer/Upjohn, and Shire/Takeda in the last three years. The ADHD and Juvenile Bipolar Disorder Outpatient Programs chaired by LAR have received unrestricted educational and research support from the following pharmaceutical companies in the last three years: Novartis/Sandoz and Shire/Takeda. LAR has received authorship royalties from Oxford Press and ArtMed. All of these are outside of the study. The remaining authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest. The handling editor declared a past co-authorship with the author JS.</p>
+    </sec>
+    <sec sec-type="disclaimer" id="S11">
+      <title>Publisher’s note</title>
+      <p>All claims expressed in this article are solely those of the authors and do not necessarily represent those of their affiliated organizations, or those of the publisher, the editors and the reviewers. Any product that may be evaluated in this article, or claim that may be made by its manufacturer, is not guaranteed or endorsed by the publisher.</p>
+    </sec>
+    <sec sec-type="disclaimer" id="S20">
+      <title>Author disclaimer</title>
+      <p>The opinions, hypotheses, conclusions, and recommendations of this study are those of the authors and do not necessarily represent the opinions of the funding agency.</p>
+    </sec>
+    <ref-list>
+      <title>References</title>
+      <ref id="B1">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Abadi</surname><given-names>M.</given-names></name>
+<name><surname>Barham</surname><given-names>P.</given-names></name>
+<name><surname>Chen</surname><given-names>J.</given-names></name>
+<name><surname>Chen</surname><given-names>Z.</given-names></name>
+<name><surname>Davis</surname><given-names>A.</given-names></name>
+<name><surname>Dean</surname><given-names>J.</given-names></name><etal/></person-group> (<year>2016</year>). <article-title>Tensorflow: A system for large-scale machine learning. In: 12th {USENIX} symposium on operating systems design and implementation.</article-title>
+<source><italic>OSDI</italic></source>
+<volume>16</volume>
+<fpage>265</fpage>–<lpage>283</lpage>.</mixed-citation>
+      </ref>
+      <ref id="B2">
+        <mixed-citation publication-type="book"><person-group person-group-type="author"><name><surname>Bhagyashree</surname><given-names>V. K.</given-names></name>
+<name><surname>Nandi</surname><given-names>G. C.</given-names></name></person-group> (<year>2020</year>). “<article-title>Study of prevention of mode collapse in generative adversarial Network (GAN)</article-title>,” in <source><italic>Proceedings of the 2020 IEEE 4th conference on information &amp; communication technology (CICT)</italic></source> (<publisher-loc>Piscataway, NJ</publisher-loc>: <publisher-name>IEEE</publisher-name>), <fpage>1</fpage>–<lpage>6</lpage>. <pub-id pub-id-type="doi">10.1109/CICt51604.2020.9312049</pub-id></mixed-citation>
+      </ref>
+      <ref id="B3">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Di Martino</surname><given-names>A.</given-names></name>
+<name><surname>Fair</surname><given-names>D.</given-names></name>
+<name><surname>Kelly</surname><given-names>C.</given-names></name>
+<name><surname>Satterthwaite</surname><given-names>T.</given-names></name>
+<name><surname>Castellanos</surname><given-names>F.</given-names></name>
+<name><surname>Thomason</surname><given-names>M.</given-names></name><etal/></person-group> (<year>2014</year>). <article-title>Unraveling the miswired connectome: A developmental perspective.</article-title>
+<source><italic>Neuron</italic></source>
+<volume>83</volume>
+<fpage>1335</fpage>–<lpage>1353</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuron.2014.08.050</pub-id>
+<pub-id pub-id-type="pmid">25233316</pub-id></mixed-citation>
+      </ref>
+      <ref id="B4">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Friston</surname><given-names>K. J.</given-names></name></person-group> (<year>2011</year>). <article-title>Functional and effective connectivity: A review.</article-title>
+<source><italic>Brain Connect.</italic></source>
+<volume>1</volume>
+<fpage>13</fpage>–<lpage>36</lpage>.<pub-id pub-id-type="pmid">22432952</pub-id></mixed-citation>
+      </ref>
+      <ref id="B5">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Goodman</surname><given-names>R.</given-names></name>
+<name><surname>Ford</surname><given-names>T.</given-names></name>
+<name><surname>Richards</surname><given-names>H.</given-names></name>
+<name><surname>Gatward</surname><given-names>R.</given-names></name>
+<name><surname>Meltzer</surname><given-names>H.</given-names></name></person-group> (<year>2000</year>). <article-title>The development and well-being assessment: Description and initial validation of an integrated assessment of child and adolescent psychopathology.</article-title>
+<source><italic>J. Child Psychol. Psychiatry Allied Discip.</italic></source>
+<volume>41</volume>
+<fpage>645</fpage>–<lpage>655</lpage>.</mixed-citation>
+      </ref>
+      <ref id="B6">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Gordon</surname><given-names>E.</given-names></name>
+<name><surname>Laumann</surname><given-names>T.</given-names></name>
+<name><surname>Adeyemo</surname><given-names>B.</given-names></name>
+<name><surname>Huckins</surname><given-names>J.</given-names></name>
+<name><surname>Kelley</surname><given-names>W.</given-names></name>
+<name><surname>Petersen</surname><given-names>S.</given-names></name></person-group> (<year>2016</year>). <article-title>Generation and evaluation of a cortical area parcellation from resting-state correlations.</article-title>
+<source><italic>Cereb. Cortex</italic></source>
+<volume>26</volume>
+<fpage>288</fpage>–<lpage>303</lpage>. <pub-id pub-id-type="doi">10.1093/cercor/bhu239</pub-id>
+<pub-id pub-id-type="pmid">25316338</pub-id></mixed-citation>
+      </ref>
+      <ref id="B7">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Grayson</surname><given-names>D. S.</given-names></name>
+<name><surname>Fair</surname><given-names>D. A.</given-names></name></person-group> (<year>2017</year>). <article-title>Development of large-scale functional networks from birth to adulthood: A guide to the neuroimaging literature.</article-title>
+<source><italic>Neuroimage</italic></source>
+<volume>160</volume>
+<fpage>15</fpage>–<lpage>31</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2017.01.079</pub-id>
+<pub-id pub-id-type="pmid">28161313</pub-id></mixed-citation>
+      </ref>
+      <ref id="B8">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Hallquist</surname><given-names>M.</given-names></name>
+<name><surname>Hwang</surname><given-names>K.</given-names></name>
+<name><surname>Luna</surname><given-names>B.</given-names></name></person-group> (<year>2013</year>). <article-title>The nuisance of nuisance regression: Spectral misspecification in a common approach to resting-state Fmri preprocessing reintroduces noise and obscures functional connectivity.</article-title>
+<source><italic>Neuroimage</italic></source>
+<volume>82</volume>
+<fpage>208</fpage>–<lpage>225</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2013.05.116</pub-id>
+<pub-id pub-id-type="pmid">23747457</pub-id></mixed-citation>
+      </ref>
+      <ref id="B9">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Kazuhiro</surname><given-names>K.</given-names></name>
+<name><surname>Werner</surname><given-names>R.</given-names></name>
+<name><surname>Toriumi</surname><given-names>F.</given-names></name>
+<name><surname>Javadi</surname><given-names>M.</given-names></name>
+<name><surname>Pomper</surname><given-names>M.</given-names></name>
+<name><surname>Solnes</surname><given-names>L.</given-names></name><etal/></person-group> (<year>2018</year>). <article-title>Generative adversarial networks for the creation of realistic artificial brain magnetic resonance images.</article-title>
+<source><italic>Tomography</italic></source>
+<volume>4</volume>:<fpage>159</fpage>. <pub-id pub-id-type="doi">10.18383/j.tom.2018.00042</pub-id>
+<pub-id pub-id-type="pmid">30588501</pub-id></mixed-citation>
+      </ref>
+      <ref id="B10">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Kessler</surname><given-names>R.</given-names></name>
+<name><surname>Berglund</surname><given-names>P.</given-names></name>
+<name><surname>Demler</surname><given-names>O.</given-names></name>
+<name><surname>Jin</surname><given-names>R.</given-names></name>
+<name><surname>Merikangas</surname><given-names>K.</given-names></name>
+<name><surname>Walters</surname><given-names>E.</given-names></name></person-group> (<year>2005</year>). <article-title>Lifetime prevalence and age-of-onset distributions of DSM-IV disorders in the national comorbidity survey replication.</article-title>
+<source><italic>Arch. Gen. Psychiatry</italic></source>
+<volume>62</volume>
+<fpage>593</fpage>–<lpage>602</lpage>.<pub-id pub-id-type="pmid">15939837</pub-id></mixed-citation>
+      </ref>
+      <ref id="B11">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Krain</surname><given-names>A.</given-names></name>
+<name><surname>Castellanos</surname><given-names>F.</given-names></name></person-group> (<year>2006</year>). <article-title>Brain development and ADHD.</article-title>
+<source><italic>Clin. Psychol. Rev.</italic></source>
+<volume>26</volume>
+<fpage>433</fpage>–<lpage>444</lpage>.<pub-id pub-id-type="pmid">16480802</pub-id></mixed-citation>
+      </ref>
+      <ref id="B12">
+        <mixed-citation publication-type="book"><person-group person-group-type="author"><name><surname>Kwon</surname><given-names>G.</given-names></name>
+<name><surname>Han</surname><given-names>C.</given-names></name>
+<name><surname>Kim</surname><given-names>D.</given-names></name></person-group> (<year>2019</year>). “<article-title>Generation of 3D brain MRI using autoencoding generative adversarial networks</article-title>,” in <source><italic>Proceedings of the international conference on medical image computing and computer-assisted intervention</italic></source> (<publisher-loc>Cham</publisher-loc>: <publisher-name>Springer</publisher-name>), <fpage>118</fpage>–<lpage>126</lpage>.</mixed-citation>
+      </ref>
+      <ref id="B13">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Li</surname><given-names>K.</given-names></name>
+<name><surname>Guo</surname><given-names>L.</given-names></name>
+<name><surname>Nie</surname><given-names>J.</given-names></name>
+<name><surname>Li</surname><given-names>G.</given-names></name>
+<name><surname>Liu</surname><given-names>T.</given-names></name></person-group> (<year>2009</year>). <article-title>Review of methods for functional brain connectivity detection using Fmri.</article-title>
+<source><italic>Comput. Med. Imaging Graph.</italic></source>
+<volume>33</volume>
+<fpage>131</fpage>–<lpage>139</lpage>.<pub-id pub-id-type="pmid">19111443</pub-id></mixed-citation>
+      </ref>
+      <ref id="B14">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Lopez-Larson</surname><given-names>M.</given-names></name>
+<name><surname>Shah</surname><given-names>L.</given-names></name>
+<name><surname>Weeks</surname><given-names>H.</given-names></name>
+<name><surname>King</surname><given-names>J.</given-names></name>
+<name><surname>Mallik</surname><given-names>A.</given-names></name>
+<name><surname>Yurgelun-Todd</surname><given-names>D.</given-names></name><etal/></person-group> (<year>2017</year>). <article-title>Abnormal functional connectivity between default and salience networks in pediatric bipolar disorder.</article-title>
+<source><italic>Biol. Psychiatry Cogn. Neurosci. Neuroimaging</italic></source>
+<volume>2</volume>
+<fpage>85</fpage>–<lpage>93</lpage>.<pub-id pub-id-type="pmid">29560889</pub-id></mixed-citation>
+      </ref>
+      <ref id="B15">
+        <mixed-citation publication-type="book"><person-group person-group-type="author"><name><surname>Polikar</surname><given-names>R.</given-names></name></person-group> (<year>2012</year>). “<article-title>Ensemble learning</article-title>,” in <source><italic>Ensemble machine learning</italic></source>, <role>eds</role>
+<person-group person-group-type="editor"><name><surname>Zhang</surname><given-names>C.</given-names></name>
+<name><surname>Ma</surname><given-names>Y.</given-names></name></person-group> (<publisher-loc>Boston, MA</publisher-loc>: <publisher-name>Springer</publisher-name>), <fpage>1</fpage>–<lpage>34</lpage>.</mixed-citation>
+      </ref>
+      <ref id="B16">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Radford</surname><given-names>A.</given-names></name>
+<name><surname>Metz</surname><given-names>L.</given-names></name>
+<name><surname>Chintala</surname><given-names>S.</given-names></name></person-group> (<year>2015</year>). <article-title>Unsupervised representation learning with deep convolutional generative adversarial networks.</article-title>
+<source><italic>arXiv</italic></source> [<comment>Preprint</comment>]. <pub-id pub-id-type="doi">10.48550/arXiv.1511.06434</pub-id>
+<pub-id pub-id-type="pmid">35895330</pub-id></mixed-citation>
+      </ref>
+      <ref id="B17">
+        <mixed-citation publication-type="book"><person-group person-group-type="author"><name><surname>Ribeiro</surname><given-names>M. T.</given-names></name>
+<name><surname>Singh</surname><given-names>S.</given-names></name>
+<name><surname>Guestrin</surname><given-names>C.</given-names></name></person-group> (<year>2016</year>). “<article-title>Why should i trust you?” Explaining the predictions of any classifier</article-title>,” in <source><italic>Proceedings of the 22nd ACM SIGKDD international conference on knowledge discovery and data mining</italic></source> (<publisher-loc>San Francisco, CA</publisher-loc>), <fpage>1135</fpage>–<lpage>1144</lpage>.</mixed-citation>
+      </ref>
+      <ref id="B18">
+        <mixed-citation publication-type="book"><person-group person-group-type="author"><name><surname>Salimans</surname><given-names>T.</given-names></name>
+<name><surname>Goodfellow</surname><given-names>I.</given-names></name>
+<name><surname>Zaremba</surname><given-names>W.</given-names></name>
+<name><surname>Cheung</surname><given-names>V.</given-names></name>
+<name><surname>Radford</surname><given-names>A.</given-names></name>
+<name><surname>Chen</surname><given-names>X.</given-names></name><etal/></person-group> (<year>2016</year>). “<article-title>Improved techniques for training gans</article-title>,” in <source><italic>Advances in neural information processing systems</italic></source>, <role>eds</role>
+<person-group person-group-type="editor"><name><surname>Lee</surname><given-names>D. D.</given-names></name>
+<name><surname>Sugiyama</surname><given-names>M.</given-names></name>
+<name><surname>Luxburg</surname><given-names>U. V.</given-names></name>
+<name><surname>Guyon</surname><given-names>I.</given-names></name>
+<name><surname>Garnett</surname><given-names>R.</given-names></name></person-group> (<publisher-loc>Red Hook, NY</publisher-loc>: <publisher-name>Curran Associates, Inc</publisher-name>), <fpage>2234</fpage>–<lpage>2242</lpage>.</mixed-citation>
+      </ref>
+      <ref id="B19">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Salum</surname><given-names>G.</given-names></name>
+<name><surname>Gadelha</surname><given-names>A.</given-names></name>
+<name><surname>Pan</surname><given-names>P.</given-names></name>
+<name><surname>Moriyama</surname><given-names>T.</given-names></name>
+<name><surname>Graeff-Martins</surname><given-names>A.</given-names></name>
+<name><surname>Tamanaha</surname><given-names>A.</given-names></name><etal/></person-group> (<year>2015</year>). <article-title>High risk cohort study for psychiatric disorders in childhood: Rationale, design, methods and preliminary results.</article-title>
+<source><italic>Int. J. Methods Psychiatr. Res.</italic></source>
+<volume>24</volume>
+<fpage>58</fpage>–<lpage>73</lpage>. <pub-id pub-id-type="doi">10.1002/mpr.1459</pub-id>
+<pub-id pub-id-type="pmid">25469819</pub-id></mixed-citation>
+      </ref>
+      <ref id="B20">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Sato</surname><given-names>J.</given-names></name>
+<name><surname>Biazoli</surname><given-names>C.</given-names><suffix>Jr.</suffix></name>
+<name><surname>Salum</surname><given-names>G.</given-names></name>
+<name><surname>Gadelha</surname><given-names>A.</given-names></name>
+<name><surname>Crossley</surname><given-names>N.</given-names></name>
+<name><surname>Vieira</surname><given-names>G.</given-names></name><etal/></person-group> (<year>2019</year>). <article-title>Associations between children’s family environment, spontaneous brain oscillations, and emotional and behavioral problems.</article-title>
+<source><italic>Eur. Child Adolesc. Psychiatry</italic></source>
+<volume>28</volume>
+<fpage>835</fpage>–<lpage>845</lpage>. <pub-id pub-id-type="doi">10.1007/s00787-018-1240-y</pub-id>
+<pub-id pub-id-type="pmid">30392120</pub-id></mixed-citation>
+      </ref>
+      <ref id="B21">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Shaw</surname><given-names>P.</given-names></name>
+<name><surname>Eckstrand</surname><given-names>K.</given-names></name>
+<name><surname>Sharp</surname><given-names>W.</given-names></name>
+<name><surname>Blumenthal</surname><given-names>J.</given-names></name>
+<name><surname>Lerch</surname><given-names>J.</given-names></name>
+<name><surname>Greenstein</surname><given-names>D.</given-names></name><etal/></person-group> (<year>2007</year>). <article-title>Attention-deficit/hyperactivity disorder is characterized by a delay in cortical maturation.</article-title>
+<source><italic>Proc. Natl. Acad. Sci. U.S.A.</italic></source>
+<volume>104</volume>
+<fpage>19649</fpage>–<lpage>19654</lpage>.<pub-id pub-id-type="pmid">18024590</pub-id></mixed-citation>
+      </ref>
+      <ref id="B22">
+        <mixed-citation publication-type="book"><person-group person-group-type="author"><name><surname>Shende</surname><given-names>P.</given-names></name>
+<name><surname>Pawar</surname><given-names>M.</given-names></name>
+<name><surname>Kakde</surname><given-names>S.</given-names></name></person-group> (<year>2019</year>). “<article-title>A Brief Review on: MRI Images Reconstruction using GAN</article-title>,” in <source><italic>Proceedings of the 2019 international conference on communication and signal processing (ICCSP)</italic></source> (<publisher-loc>Piscataway, NJ</publisher-loc>: <publisher-name>IEEE</publisher-name>), <fpage>0139</fpage>–<lpage>0142</lpage>.</mixed-citation>
+      </ref>
+      <ref id="B23">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Solmi</surname><given-names>M.</given-names></name>
+<name><surname>Radua</surname><given-names>J.</given-names></name>
+<name><surname>Olivola</surname><given-names>M.</given-names></name>
+<name><surname>Croce</surname><given-names>E.</given-names></name>
+<name><surname>Soardo</surname><given-names>L.</given-names></name>
+<name><surname>de Pablo</surname><given-names>G. S.</given-names></name><etal/></person-group> (<year>2021</year>). <article-title>Age at onset of mental disorders worldwide: Large-scale meta-analysis of 192 epidemiological studies.</article-title>
+<source><italic>Mol. Psychiatry</italic></source>
+<volume>27</volume>
+<fpage>1</fpage>–<lpage>15</lpage>. <pub-id pub-id-type="doi">10.1038/s41380-021-01161-7</pub-id>
+<pub-id pub-id-type="pmid">33972691</pub-id></mixed-citation>
+      </ref>
+      <ref id="B24">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Welander</surname><given-names>K. S.</given-names></name>
+<name><surname>Eklund</surname><given-names>A.</given-names></name></person-group> (<year>2018</year>). <article-title>Generative adversarial networks for image-to-image translation on multi-contrast Mr images-A comparison of CycleGAN and UNIT.</article-title>
+<source><italic>arXiv</italic></source> [<comment>Preprint</comment>]. <pub-id pub-id-type="doi">10.48550/arXiv.1806.07777</pub-id>
+<pub-id pub-id-type="pmid">35895330</pub-id></mixed-citation>
+      </ref>
+      <ref id="B25">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Whitfield-Gabrieli</surname><given-names>S.</given-names></name>
+<name><surname>Nieto-Castanon</surname><given-names>A.</given-names></name></person-group> (<year>2012</year>). <article-title>Conn: A functional connectivity toolbox for correlated and anticorrelated brain networks.</article-title>
+<source><italic>Brain Connect.</italic></source>
+<volume>2</volume>
+<fpage>125</fpage>–<lpage>141</lpage>. <pub-id pub-id-type="doi">10.1089/brain.2012.0073</pub-id>
+<pub-id pub-id-type="pmid">22642651</pub-id></mixed-citation>
+      </ref>
+      <ref id="B26">
+        <mixed-citation publication-type="book"><person-group person-group-type="author"><name><surname>Yao</surname><given-names>Q.</given-names></name>
+<name><surname>Lu</surname><given-names>H.</given-names></name></person-group> (<year>2019</year>). “<article-title>Brain functional connectivity augmentation method for mental disease classification with generative adversarial network</article-title>,” in <source><italic>Proceedings of the Chinese conference on pattern recognition and computer vision (PRCV)</italic></source> (<publisher-loc>Cham</publisher-loc>: <publisher-name>Springer</publisher-name>), <fpage>444</fpage>–<lpage>455</lpage>.</mixed-citation>
+      </ref>
+      <ref id="B27">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zhao</surname><given-names>J.</given-names></name>
+<name><surname>Huang</surname><given-names>J.</given-names></name>
+<name><surname>Zhi</surname><given-names>D.</given-names></name>
+<name><surname>Yan</surname><given-names>W.</given-names></name>
+<name><surname>Ma</surname><given-names>X.</given-names></name>
+<name><surname>Yang</surname><given-names>X.</given-names></name><etal/></person-group> (<year>2020</year>). <article-title>Functional network connectivity (FNC)-based generative adversarial network (GAN) and its applications in classification of mental disorders.</article-title>
+<source><italic>J. Neurosci. Methods</italic></source>
+<volume>341</volume>:<fpage>108756</fpage>. <pub-id pub-id-type="doi">10.1016/j.jneumeth.2020.108756</pub-id>
+<pub-id pub-id-type="pmid">32380227</pub-id></mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

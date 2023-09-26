@@ -1,0 +1,11 @@
+"Input: A neighborhood decision system NS = 〈U, A, {d}, V, f, δ〉.","Input: A neighborhood decision system NS = 〈U, A, {d}, V, f, δ〉..1"
+Output: Excepted feature subset B*.,Output: Excepted feature subset B*.
+1:,Initialize B* = ∅.
+2:,Select top-l features from A to constitute the candidate feature subset A′ based on FiSc method.
+3:,do {
+4:,for ∀ aj ∈ A′
+5:,"Compute Sig(aj, B*, d) according to formula (4–5)."
+6:,end for
+7:,"Select the feature ak satisfying Sig(ak, B*, d) = max(Sig(aj, B*, d))."
+8:,"B* = B* ∪{ak}, A′ = A′ − {ak}."
+9:,"} untilSig(ak, B*, d) < e−10"

@@ -1,0 +1,672 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">Front Neurosci</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Front Neurosci</journal-id>
+      <journal-id journal-id-type="publisher-id">Front. Neurosci.</journal-id>
+      <journal-title-group>
+        <journal-title>Frontiers in Neuroscience</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">1662-4548</issn>
+      <issn pub-type="epub">1662-453X</issn>
+      <publisher>
+        <publisher-name>Frontiers Media S.A.</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">31849578</article-id>
+      <article-id pub-id-type="pmc">6902012</article-id>
+      <article-id pub-id-type="doi">10.3389/fnins.2019.01249</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Neuroscience</subject>
+          <subj-group>
+            <subject>Original Research</subject>
+          </subj-group>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>The Impact of Spatial Normalization Strategies on the Temporal Features of the Resting-State Functional MRI: Spatial Normalization Before rs-fMRI Features Calculation May Reduce the Reliability</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Qing</surname>
+            <given-names>Zhao</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <uri xlink:type="simple" xlink:href="http://loop.frontiersin.org/people/452387/overview"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Zhang</surname>
+            <given-names>Xin</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Ye</surname>
+            <given-names>Meiping</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Wu</surname>
+            <given-names>Sichu</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Wang</surname>
+            <given-names>Xin</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Nedelska</surname>
+            <given-names>Zuzana</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+          <uri xlink:type="simple" xlink:href="http://loop.frontiersin.org/people/55955/overview"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Hort</surname>
+            <given-names>Jakub</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+          <uri xlink:type="simple" xlink:href="http://loop.frontiersin.org/people/115128/overview"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Zhu</surname>
+            <given-names>Bin</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Zhang</surname>
+            <given-names>Bing</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="corresp" rid="c001">
+            <sup>*</sup>
+          </xref>
+          <uri xlink:type="simple" xlink:href="http://loop.frontiersin.org/people/445012/overview"/>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1"><sup>1</sup><institution>Department of Radiology, The Affiliated Drum Tower Hospital of Nanjing University Medical School</institution>, <addr-line>Nanjing</addr-line>, <country>China</country></aff>
+      <aff id="aff2"><sup>2</sup><institution>Institute for Brain Sciences, Nanjing University</institution>, <addr-line>Nanjing</addr-line>, <country>China</country></aff>
+      <aff id="aff3"><sup>3</sup><institution>International Clinical Research Center, St. Anne’s University Hospital Brno</institution>, <addr-line>Brno</addr-line>, <country>Czechia</country></aff>
+      <aff id="aff4"><sup>4</sup><institution>Memory Clinic, Department of Neurology, Second Faculty of Medicine Charles University and Motol University Hospital</institution>, <addr-line>Prague</addr-line>, <country>Czechia</country></aff>
+      <author-notes>
+        <fn fn-type="edited-by">
+          <p>Edited by: Ching-Po Lin, National Yang-ming University, Taiwan</p>
+        </fn>
+        <fn fn-type="edited-by">
+          <p>Reviewed by: Changwei Wesley Wu, Taipei Medical University, Taiwan; Xin Di, New Jersey Institute of Technology, United States</p>
+        </fn>
+        <corresp id="c001">*Correspondence: Bing Zhang, <email>zhangbing_nanjing@nju.edu.cn</email></corresp>
+        <fn fn-type="other" id="fn004">
+          <p>This article was submitted to Brain Imaging Methods, a section of the journal Frontiers in Neuroscience</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="epub">
+        <day>26</day>
+        <month>11</month>
+        <year>2019</year>
+      </pub-date>
+      <pub-date pub-type="collection">
+        <year>2019</year>
+      </pub-date>
+      <volume>13</volume>
+      <elocation-id>1249</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>07</day>
+          <month>5</month>
+          <year>2019</year>
+        </date>
+        <date date-type="accepted">
+          <day>05</day>
+          <month>11</month>
+          <year>2019</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Copyright © 2019 Qing, Zhang, Ye, Wu, Wang, Nedelska, Hort, Zhu and Zhang.</copyright-statement>
+        <copyright-year>2019</copyright-year>
+        <copyright-holder>Qing, Zhang, Ye, Wu, Wang, Nedelska, Hort, Zhu and Zhang</copyright-holder>
+        <license xlink:href="http://creativecommons.org/licenses/by/4.0/">
+          <license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY). The use, distribution or reproduction in other forums is permitted, provided the original author(s) and the copyright owner(s) are credited and that the original publication in this journal is cited, in accordance with accepted academic practice. No use, distribution or reproduction is permitted which does not comply with these terms.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>Previous resting-state functional magnetic resonance imaging (rs-fMRI) studies frequently applied the spatial normalization on fMRI time series before the calculation of temporal features (here referred to as “Prenorm”). We hypothesized that calculating the rs-fMRI features, for example, functional connectivity (FC), regional homogeneity (ReHo), or amplitude of low-frequency fluctuation (ALFF) in individual space, before the spatial normalization (referred to as “Postnorm”) can be an improvement to avoid artifacts and increase the results’ reliability. We utilized two datasets: (1) simulated images where temporal signal-to-noise ratio (tSNR) is kept a constant and (2) an empirical fMRI dataset with 50 healthy young subjects. For simulated images, the tSNR is constant as generated in individual space but increased after Prenorm and intersubject variability of tSNR was induced. In contrast, tSNR was kept constant after Postnorm. Consistently, for empirical images, higher tSNR, ReHo, and FC (default mode network, seed in precuneus) and lower ALFF were found after Prenorm compared to those of Postnorm. Coefficient of variability of tSNR and ALFF was higher after Prenorm compared to those of Postnorm. Moreover, the significant correlation was found between simulated tSNR after Prenorm and empirical tSNR, ALFF, and ReHo after Prenorm, indicating algorithmic variation in empirical rs-fMRI features. Furthermore, comparing to Prenorm, ALFF and ReHo showed higher intraclass correlation coefficients between two serial scans after Postnorm. Our results indicated that Prenorm may induce algorithmic intersubject variability on tSNR and reduce its reliability, which also significantly affected ALFF and ReHo. We suggest using Postnorm instead of Prenorm for future rs-fMRI studies using ALFF/ReHo.</p>
+      </abstract>
+      <kwd-group>
+        <kwd>spatial normalization</kwd>
+        <kwd>resting-state fMRI</kwd>
+        <kwd>fMRI methods</kwd>
+        <kwd>reliability</kwd>
+        <kwd>fMRI preprocessing</kwd>
+      </kwd-group>
+      <funding-group>
+        <award-group>
+          <funding-source id="cn001">National Natural Science Foundation of China<named-content content-type="fundref-id">10.13039/501100001809</named-content></funding-source>
+        </award-group>
+      </funding-group>
+      <counts>
+        <fig-count count="4"/>
+        <table-count count="0"/>
+        <equation-count count="1"/>
+        <ref-count count="45"/>
+        <page-count count="10"/>
+        <word-count count="0"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="S1">
+      <title>Introduction</title>
+      <p>Resting-state functional magnetic resonance imaging (rs-fMRI), which uses blood oxygenation level-dependent (BOLD) signal to measure spontaneous brain activity, has been developed and widely applied in neuroscience and clinical research studies (<xref rid="B28" ref-type="bibr">Raichle, 2010</xref>; <xref rid="B41" ref-type="bibr">Zhang and Raichle, 2010</xref>; <xref rid="B16" ref-type="bibr">Haak et al., 2018</xref>). However, the reliability of rs-fMRI indices was recently concerned and challenged (<xref rid="B36" ref-type="bibr">Xing, 2018</xref>; <xref rid="B43" ref-type="bibr">Zuo et al., 2019a</xref>, <xref rid="B44" ref-type="bibr">b</xref>). Low reliability led to the demands for huge sample size or large effect size to achieve enough statistical power, which were both difficult for rs-fMRI studies. Therefore, it is important to find an optimized data processing strategy that can give out higher reliability of rs-fMRI features (<xref rid="B44" ref-type="bibr">Zuo et al., 2019b</xref>).</p>
+      <p>A typical data processing step in rs-fMRI is spatial normalization, which achieves between-subject comparison in voxel level but may also induce spatial–temporal correlation and resampling errors (<xref rid="B33" ref-type="bibr">Worsley, 2005</xref>; <xref rid="B34" ref-type="bibr">Wu et al., 2011</xref>). To date, how to estimate precise spatial transformation from an individual space into standard space has been widely discussed (<xref rid="B8" ref-type="bibr">Collins et al., 1994</xref>; <xref rid="B24" ref-type="bibr">Mazziotta et al., 2001</xref>; <xref rid="B31" ref-type="bibr">Tzourio-Mazoyer et al., 2002</xref>; <xref rid="B7" ref-type="bibr">Calhoun et al., 2017</xref>). Besides, <xref rid="B34" ref-type="bibr">Wu et al. (2011)</xref> compared two normalization strategies about its order in preprocessing. One is “Prenorm,” which means performing the spatial normalization on each fMRI image of each time point into standard space. Then calculate the certain temporal feature of the time series, for example, functional connectivity (FC) (<xref rid="B5" ref-type="bibr">Biswal et al., 1995</xref>; <xref rid="B14" ref-type="bibr">Fox et al., 2005</xref>; <xref rid="B29" ref-type="bibr">Raichle, 2015</xref>), regional homogeneity (ReHo) (<xref rid="B39" ref-type="bibr">Zang et al., 2004</xref>; <xref rid="B20" ref-type="bibr">Jiang and Zuo, 2016</xref>), or amplitude of low-frequency fluctuation (ALFF) (<xref rid="B40" ref-type="bibr">Zang et al., 2007</xref>; <xref rid="B45" ref-type="bibr">Zuo et al., 2013</xref>). This Prenorm strategy has been widely used in large portion of fMRI studies from a decade ago until recently (<xref rid="B14" ref-type="bibr">Fox et al., 2005</xref>; <xref rid="B9" ref-type="bibr">Cooper et al., 2017</xref>; <xref rid="B1" ref-type="bibr">Archer et al., 2018</xref>) and was the default option in several popular pipeline tools like DPABI and GRENTA (<xref rid="B38" ref-type="bibr">Yan and Zang, 2010</xref>; <xref rid="B32" ref-type="bibr">Wang et al., 2015</xref>; <xref rid="B37" ref-type="bibr">Yan et al., 2016</xref>). The other is “Postnorm,” which is to first calculate these feature maps in individual space, and then perform the normalization. <xref rid="B34" ref-type="bibr">Wu et al. (2011)</xref> reported a slight difference of the value of FC and ALFF between such two strategies, and notably, they also found that Prenorm strategy may increase intersubject variability of ALFF in individual space, but Postnorm did not. Putatively, larger variability may lead to lower reliability and indicated that widely used Prenorm may be a worse choice than Postnorm. However, it is still unclear if this effect is an algorithmic bias and if and how it may affect the reliability of rs-fMRI features.</p>
+      <p>In the current study, we aim to systemically investigate and compare the Prenorm and Postnorm strategies: (1) To verify if it is a pure algorithmic effect, we investigate if and how normalization can induce across-subject variation on a simulated dataset, which has a constant temporal signal-to-noise ratio (tSNR) in individual space for all subjects and all voxels. (2) To investigate if and how the value and intersubject variability of tSNR as well as commonly used rs-fMIR indices including ALFF, FC, and ReHo were different under different normalizations. Additionally, if the intersubject variability in empirical images affected algorithmic effect. (3) To investigate the test–retest reliability of ALFF, ReHo, and FC in an empirical fMRI dataset.</p>
+    </sec>
+    <sec sec-type="materials|methods" id="S2">
+      <title>Materials and Methods</title>
+      <sec id="S2.SS1">
+        <title>Data Acquisition</title>
+        <sec id="S2.SS1.SSS1">
+          <title>Empirical Images</title>
+          <p>We downloaded one subset of the public database “Consortium for Reliability and Reproducibility, CORR,” which is named “BNU1” (<xref rid="B42" ref-type="bibr">Zuo et al., 2014</xref>). The downloading Web address can be found at <ext-link ext-link-type="uri" xlink:href="http://fcon_1000.projects.nitrc.org/indi/CoRR/html/_static/downloads.html">http://fcon_1000.projects.nitrc.org/indi/CoRR/html/_static/downloads.html</ext-link>. There were 57 healthy young subjects (male/female: 30/27; age: 19–30 years) in this data cohort. For each subject, there were two serial scans, which were acquired within the interval of 40.94 ± 4.51 days. These images were all scanned on a SIEMENS TRIO 3T scanner in Beijing Normal University, all subjects signed an informed consent, and the data were well-anonymized before uploading. Structural MRI data were acquired using an MPRAGE sequence: 128 sagittal slices, repetition time (TR) = 2,530 ms, echo time (TE) = 3.39 ms, inversion time (TI) = 1,100 ms, slice thickness = 1.33 mm, field of view (FOV) = 256 × 256 mm<sup>2</sup>, and voxel size = 1.33 × 1.00 × 1.00 mm<sup>3</sup>. rs-fMRI data were obtained using an echo-planar imaging (EPI) sequence: 33 axial slices, TR = 2 s, TE = 30 ms, slice thickness = 3.5 mm, gap = 0.7 mm, FOV = 200 × 200 mm<sup>2</sup>, and voxel size = 3.1 × 3.1 × 4.2 mm<sup>3</sup>, with 200 dynamics in total. The current study only used fMRI and T1 data, and seven subjects whose T1 or BOLD data are incomplete were excluded. Therefore, 50 subjects were included finally (23.05 ± 2.29 years, male/female: 30/20). In the current study, the first scan was used for all of the analyses, and the second scan was only used in the test-retest reliability analysis.</p>
+        </sec>
+        <sec id="S2.SS1.SSS2">
+          <title>Simulated Images</title>
+          <p>A simulation was performed based on the empirical rs-fMRI. The simulated images were generated from empirical rs-fMRI in individual space by the following processes: (1) For each voxel, a random white noise time course with same length (190 time points after removing the first 10) of empirical images was generated; (2) the signal intensity was normalized to maintain the mean intensity of the time course as constant value equal to 1,000, and tSNR equal to 100. These values were comparable to those in the brain regions of our empirical images. Therefore, the simulated images had constant tSNR value across different voxels, different subjects in the individual space, and in a same individual space to the corresponding empirical images.</p>
+        </sec>
+      </sec>
+      <sec id="S2.SS2">
+        <title>Data Processing</title>
+        <sec id="S2.SS2.SSS1">
+          <title>Preprocessing</title>
+          <p>The empirical fMRI images were preprocessed in DPABI (<xref rid="B37" ref-type="bibr">Yan et al., 2016</xref>). The pipeline procedure included the following steps: (1) discarding the first 10 volumes; (2) slice timing; (3) head motion correction; (4) regressing out the nuisance variables [including six head motion parameters and their derivatives, the average cerebrospinal fluid (CSF), white matter (WM) signal, and the linear term]. A band-pass filter (0.01–0.08 Hz) was additionally added for FC and ReHo but not for tSNR and ALFF.</p>
+        </sec>
+        <sec id="S2.SS2.SSS2">
+          <title>Spatial Normalization Parameters</title>
+          <p>The structural T1-weighted images were coregistered to fMRI for each subject. Based on the coregistered structural images, normalization parameters were estimated using the unified segmentation (<xref rid="B3" ref-type="bibr">Ashburner and Friston, 2005</xref>) in SPM12 for each subject and each scan. These normalization parameters were used to normalize each fMRI image in each time point in Prenorm strategy as well as normalize the ALFF, ReHo, and FC maps calculated in individual space in Postnorm strategy. When normalizing these fMRI images, the voxel size in MNI space was set as 3 × 3 × 3 mm<sup>3</sup>, and the bounding box was set as [−90, −126, −72; 90, 90, 108]. We use this default setting of DPABI whose voxel size is comparable to those in individual space to reduce the differences of the voxel number before and after normalization. The interpolation was set as “Trilinear,” which is the default option in DPABI and in SPM.</p>
+        </sec>
+        <sec id="S2.SS2.SSS3">
+          <title>tSNR, ALFF, and FC Calculations</title>
+          <p>We first calculated the tSNR, ALFF, ReHo, and FC in individual space. In each individual space, tSNR, ALFF, ReHo, and seed-based FC of default mode network (DMN) were calculated after the preprocessing. Specifically, the rs-fMRI time series in an individual space after preprocessing were translated to frequency domain by a fast Fourier transform, and the ALFF value was defined as the average square root across the low-frequency band of 0.01–0.08 Hz (<xref rid="B40" ref-type="bibr">Zang et al., 2007</xref>). The ReHo value in one voxel is defined as the Kendall coefficient of concordance among it and its 26 neighbor voxels (<xref rid="B39" ref-type="bibr">Zang et al., 2004</xref>; <xref rid="B45" ref-type="bibr">Zuo et al., 2013</xref>). For FC, the seed was defined as a 6-mm radius spherical region of interest (ROI) centered at [−5, −49, 40] in MNI space, located at precuneus (PCu), which is a classic seed ROI of DMN (<xref rid="B14" ref-type="bibr">Fox et al., 2005</xref>). To calculate in individual space, the seed ROIs were inversed normalized into each of the individual spaces, and then the FC value of each voxel was defined as the correlation between BOLD signal in this voxel and the average BOLD signal within the seed ROI.</p>
+          <p>tSNR, ALFF, ReHo, and FC in MNI space under two different strategies were then calculated. Under the Prenorm condition, the spatial normalization was applied to both simulated images and preprocessed empirical images. The tSNR, ALFF, ReHo, and FC maps were calculated for each subject in MNI space. For Postnorm, the tSNR, ALFF, ReHo, and FC in MNI space were generated by performing spatial normalization directly on tSNR, ALFF, ReHo, and FC maps in individual space.</p>
+          <p>For FC, a one-sample <italic>t</italic>-test was applied for both Prenorm and Postnorm. The regions showed significant positive results in either strategy (GRF correction by DPABI, voxel <italic>p</italic> &lt; 0.01, cluster <italic>p</italic> &lt; 0.05, compared to zero) and were defined as a DMN mask that is used to exclude the voxels with very low FC values, which is often not interested in rs-fMRI studies.</p>
+          <p>For simulated images, it was generated by replacing the time courses of the empirical fMRI. The spatial normalization of each corresponding subject can also directly be applied on the simulated images. Specifically, for Postnorm, the tSNR map was calculated in individual space and then transformed into MNI space. As expected, the tSNR value is constant among all voxels and subjects both before and after normalization. For Prenorm, the simulated images were first normalized and tSNR maps were calculated based on these normalization images. We did not calculate ALFF, FC, and ReHo for simulated images.</p>
+        </sec>
+      </sec>
+      <sec id="S2.SS3">
+        <title>Statistical Analysis</title>
+        <sec id="S2.SS3.SSS1">
+          <title>Simulated Images</title>
+          <p>The tSNR has exactly constant value and no intersubject variability in individual space. Therefore, we have “golden standard” to compare Prenorm and Postnorm for simulated images.</p>
+          <p>First, the mean tSNR value of the group for each voxel was calculated in MNI space for both Prenorm and Postnorm. A paired <italic>t</italic>-test was utilized to test the difference between these two strategies (GRF corrected, voxel level <italic>p</italic> &lt; 0.01, cluster <italic>p</italic> &lt; 0.05). However, it is worth to note that it is reasonable to expect that after Postnorm, tSNR maps would be constant maps as it is in individual space. In contrast, if Prenorm ones showed different results, it would be putatively caused by algorithmic effects.</p>
+          <p>Besides, we also focused on the intersubject variability. For each voxel within the brain mask in MNI space, coefficient of variation (CV, defined as STD divided by mean) across all subjects was used to quantify the intersubject variability of the tSNR. It can be expected that CV of Postnorm would be exactly zero, and if non-zero results were found in Prenorm condition, it may indicate that Prenorm can induce the algorithmic intersubject variability.</p>
+        </sec>
+        <sec id="S2.SS3.SSS2">
+          <title>Empirical Images</title>
+          <p>tSNR, ALFF, ReHo, and FC maps for empirical rs-fMRI data were also compared between Prenorm and Postnorm. Similar to the analysis for simulated images, the mean tSNR/ALFF/FC/ReHo maps was calculated in MNI space for both Prenorm and Postnorm. A paired <italic>t</italic>-test was utilized to test how much difference is there between these two strategies (GRF corrected, voxel level <italic>p</italic> &lt; 0.01, cluster <italic>p</italic> &lt; 0.05). CV maps of tSNR, ALFF, ReHo, and FC were also generated and compared by a difference map between Prenorm and Postnorm.</p>
+          <p>Unlike simulated images, it is hard to define a golden standard for empirical images (e.g., larger CV is better or worse). However, given that the simulated images were generated from empirical images, we used a simulation–empirical correlation to demonstrate if the possible bias that affected simulated images can also explain the variation in empirical fMRI. Specifically, a Pearson correlations analysis was applied between the tSNR values of simulated images and rs-fMRI indices including tSNR, ALFF, ReHo, and FC of empirical images in MNI space for each voxel within the brain mask (GRF corrected, voxel level <italic>p</italic> &lt; 0.01, cluster <italic>p</italic> &lt; 0.05).</p>
+        </sec>
+        <sec id="S2.SS3.SSS3">
+          <title>Test–Retest Reliability</title>
+          <p>As mentioned, the two separate scans of empirical fMRI images with the time interval 40.94 ± 4.51 days were acquired, which enabled us to investigate how normalization strategies impact the test–retest reliability. The between scans test–retest reliability of tSNR, ALFF, ReHo, and FC was investigated, and the intraclass correlation coefficients [ICC, defined as Eq. (1), where <italic>Vb</italic> and <italic>Vw</italic> are between-subject and within-subject variability, respectively] were calculated in each voxel for tSNR, ALFF, ReHo, and FC maps between two serial scans. Histogram was generated for the whole brain as well as gray matter regions (generated by segmentation and group mean gray matter probability larger than 0.4), and for FC, also in DMN mask. A paired <italic>t</italic>-test was utilized to validate if the ICC is different between the two normalization strategies for each of the rs-fMRI indices.</p>
+          <p>
+<disp-formula id="S2.E1"><label>(1)</label><mml:math id="M1"><mml:mrow><mml:mrow><mml:mtext>ICC</mml:mtext><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:mrow><mml:mi>V</mml:mi><mml:mo>⁢</mml:mo><mml:mi>b</mml:mi></mml:mrow><mml:mo>-</mml:mo><mml:mrow><mml:mi>V</mml:mi><mml:mo>⁢</mml:mo><mml:mi>w</mml:mi></mml:mrow></mml:mrow><mml:mrow><mml:mrow><mml:mi>V</mml:mi><mml:mo>⁢</mml:mo><mml:mi>b</mml:mi></mml:mrow><mml:mo>+</mml:mo><mml:mrow><mml:mi>V</mml:mi><mml:mo>⁢</mml:mo><mml:mi>w</mml:mi></mml:mrow></mml:mrow></mml:mfrac></mml:mrow><mml:mo>.</mml:mo></mml:mrow></mml:math></disp-formula></p>
+          <p>All of the statistical analyses in the current study were carried out by Matlab and AFNI (<xref rid="B10" ref-type="bibr">Cox, 1996</xref>). Results were represented by AFNI (<xref rid="B10" ref-type="bibr">Cox, 1996</xref>).</p>
+        </sec>
+      </sec>
+    </sec>
+    <sec id="S3">
+      <title>Results</title>
+      <sec id="S3.SS1">
+        <title>Simulated Images</title>
+        <p>The effects of normalization strategies on tSNR in simulated images were shown in <xref ref-type="fig" rid="F1">Figure 1</xref>. As expected, when using Postnorm strategy, the tSNR in MNI space kept exactly 100 as it is generated in individual space. In contrast, the mean tSNR values in each voxel is increased from 100 to near 200 after normalization for all voxels when Prenorm is utilized. The whole brain mean is 194.26 ± 1.17 after normalization, significantly larger than 100 according to a one-sample <italic>t</italic>-test, <italic>t</italic> = 635.90, <italic>p</italic> &lt; 10<sup>–97</sup>.</p>
+        <fig id="F1" position="float">
+          <label>FIGURE 1</label>
+          <caption>
+            <p>Effect of normalization strategies on temporal signal-to-noise ratio (tSNR) of simulated images. The group mean maps of tSNR and coefficient of variation (CV) maps of tSNR were shown for both normalization strategies. Both mean and CV maps for Postnorm are constant maps. For Prenorm, both mean and CV of tSNR were larger than Postnorm condition and are not constant but very limited spatial variation (so seem like constant maps too).</p>
+          </caption>
+          <graphic xlink:href="fnins-13-01249-g001"/>
+        </fig>
+        <p>For intersubject variability, after Prenorm, CV was consistently at a level above zero for all of the voxels (0.195 ± 0.075, lowest 1% quantile 0.135). In contrast, for Postnorm condition, CV across subject is exactly zero.</p>
+      </sec>
+      <sec id="S3.SS2">
+        <title>Empirical Images</title>
+        <p>The difference between Prenorm and Postnorm strategies on tSNR, ALFF, ReHo, and FC in empirical images was shown in <xref ref-type="fig" rid="F2">Figure 2</xref>. Compared to Postnorm, Prenorm have significantly lower ALFF but higher tSNR and ReHo values in all of the brain voxels. For FC, Prenorm have higher FC value in most of DMN regions and lower FC value in the regions of task-positive networks compared to Postnorm (paired <italic>t</italic>-test, GRF correction, voxel <italic>p</italic> &lt; 0.01, cluster <italic>p</italic> &lt; 0.05).</p>
+        <fig id="F2" position="float">
+          <label>FIGURE 2</label>
+          <caption>
+            <p>Effect of normalization strategies on temporal signal-to-noise ratio (tSNR), amplitude of low-frequency fluctuation (ALFF), regional homogeneity (ReHo), and seed-based functional connectivity (FC) of empirical images. The group mean maps of four rs-fMRI indices including tSNR, ALFF, ReHo, and seed-based FC [seed coordinate (–5, –49, 40)] were shown for both normalization strategies. A paired <italic>t</italic>-test (GRF corrected, voxel <italic>p</italic> &lt; 0.01, cluster <italic>p</italic> &lt; 0.05) was utilized to compare them between Prenorm and Postnorm. The coefficient of variation (CV) of each index under each normalization strategy was also shown and compared by the difference map. For FC, given that a lot of regions have negative or very small FC values, CV is not well defined, therefore we only show the CV within a default mode network (DMN) mask and the histogram for FC is within the DMN mask. The bottom part showed the histogram of tSNR, ALFF, ReHo, and FC as well as their CV for both normalization strategies. Again, the histograms of tSNR, ALFF, and ReHo were for whole brain, but the histogram of FC is for the DMN mask.</p>
+          </caption>
+          <graphic xlink:href="fnins-13-01249-g002"/>
+        </fig>
+        <p>For intersubject variability, after Prenorm, CVs of tSNR and ALFF were both larger compared to those of Postnorm. For ReHo, the regions in WM showed that CV after Prenorm was larger than that after Postnorm but an inverse result in gray matter and edge of the brains. For FC, given that lots of brain regions have very FC values near zero, the CV would tend to be infinite and badly defined. Therefore, we only focused on the voxel within the DMN mask. In this region, CV was low after Prenorm compared to that after Postnorm.</p>
+      </sec>
+      <sec id="S3.SS3">
+        <title>Correlation Between Simulated and Empirical Images</title>
+        <p>The increase of tSNR as well as its CV in empirical data after Prenorm compared to those after Postnorm was consistent with the simulation. Further correlation analysis investigated how and if the effect that Prenorm can induce intersubject variation found in simulation can explain the results from empirical images.</p>
+        <p>As illustrated in <xref ref-type="fig" rid="F3">Figure 3</xref>, tSNR in simulated images was significantly correlated with tSNR, ALFF, and ReHo of empirical images when Prenorm strategy is used. The empirical tSNR showed positive correlation (GRF corrected, voxel level <italic>p</italic> &lt; 0.01, cluster <italic>p</italic> &lt; 0.05) with simulated tSNR in all of the brain regions, especially in WM. The regions that showed lower correlation were on the edge regions and the base of the brain. Similar patterns were found for the correlation maps between empirical ALFF and simulated tSNR, except that the correlation is negative. For ReHo, there are large regions showing significant correlation with simulated tSNR in WM. For FC, only a small region near the seed ROI showed a significant positive correlation, and voxels around the left insula regions showed a significant negative correlation between FC and simulated tSNR (GRF corrected, voxel level <italic>p</italic> &lt; 0.01, cluster <italic>p</italic> &lt; 0.05).</p>
+        <fig id="F3" position="float">
+          <label>FIGURE 3</label>
+          <caption>
+            <p>The correlation between temporal signal-to-noise ratio (tSNR) of simulated images and fMRI indices of empirical images. The across-subject correlation between tSNR of simulated images and empirical fMRI indices, including tSNR, amplitude of low-frequency fluctuation (ALFF), regional homogeneity (ReHo), and functional connectivity (FC) (GRF corrected, voxel <italic>p</italic> &lt; 0.01, cluster <italic>p</italic> &lt; 0.05).</p>
+          </caption>
+          <graphic xlink:href="fnins-13-01249-g003"/>
+        </fig>
+      </sec>
+      <sec id="S3.SS4">
+        <title>Test–Retest Reliability</title>
+        <p>The test–retest reliability of the rs-fMRI features between the two scans was measured using ICC, and the results were illustrated in <xref ref-type="fig" rid="F4">Figure 4</xref>. Generally, tSNR, ReHo, and ALFF showed quite similar results: ICC is higher when Postnorm is utilized compared to Prenorm. Some of the WM and subcortical regions have quite poor reliability (ICC &lt; 0.2) when Prenorm was applied compared to those at least fair (ICC &gt; 0.2) when applying Postnorm. The histogram showed that the ICC distribution within the whole brain and within gray matter regions of tSNR for Postnorm is skewed to the higher end compared to those of Prenorm. Similar results were found for ALFF and ReHo. Paired <italic>t</italic>-test showed that Prenorm ICC values were significantly higher than Postnorm ICC for tSNR, ALFF, and ReHo (<italic>p</italic> &lt; 0.00001, note sample size is voxel number and therefore very huge). In contrast, the FC showed very similar ICC values and distributions between the two normalization strategies.</p>
+        <fig id="F4" position="float">
+          <label>FIGURE 4</label>
+          <caption>
+            <p>Effect of normalization strategies on intraclass correlation coefficients (ICCs) of the amplitude of low-frequency fluctuation (ALFF), regional homogeneity (ReHo), and functional connectivity (FC). <bold>(Upper)</bold> The left column showed the ICC values in each voxel after Prenorm and the right column for Postnorm. Each row for temporal signal-to-noise ratio (tSNR), ALFF, ReHo, and FC, respectively. The “fair reliability” mean means 0.2 &lt; ICC &lt; 0.4, “moderate” means 0.4 &lt; ICC &lt; 0.6, “substantial” means 0.6 &lt; ICC &lt; 0.8, and “almost perfect” means ICC &gt; 0.8. <bold>(Bottom)</bold> Histogram of ICC. For each rs-fMRI index, the histograms of ICC for both normalization strategies were shown. For tSNR, ALFF, and ReHo, histograms within whole brain and gray matter regions were illustrated. For FC, besides whole brain, we focused on default mode network (DMN) regions to exclude regions with the very small FC values, as well as the controversial negative FC regions. According to a paired <italic>t</italic>-test, ICC of tSNR, ALFF, and ReHo is significantly higher when Postnorm is used compared to those when Prenorm is used. In contrast, FC showed no significant difference.</p>
+          </caption>
+          <graphic xlink:href="fnins-13-01249-g004"/>
+        </fig>
+      </sec>
+    </sec>
+    <sec id="S4">
+      <title>Discussion</title>
+      <p>In the current study, we have demonstrated: (1) Prenorm strategy can change the tSNR values and induce intersubject variability from simulated images with constant tSNR. (2) The features of empirical fMRI including tSNR, ALFF, ReHo, and FC would be different between Prenorm and Postnorm. Furthermore, the intersubject variability of these were also different between normalization strategies. (3) Importantly, the algorithmically induced intersubject variation of tSNR under Prenorm in simulated images can explain the intersubject variation in empirical results of tSNR, ALFF, and ReHo. (4) The ICC values of tSNR, ALFF, and ReHo for Prenorm are significantly lower than those of Postnorm.</p>
+      <p>It is not a surprise that spatial normalization can increase the tSNR compared to it in individual space. A previous study indicated that resampling and interpolation in both Prenorm and Postnorm may superimpose spatial autocorrelation on fMRI data (<xref rid="B34" ref-type="bibr">Wu et al., 2011</xref>). This “additional smoothing” may suppress the noise contribution in fMRI signal (<xref rid="B21" ref-type="bibr">Krüger and Glover, 2001</xref>) and directly lead to increased tSNR. In our simulation, we use white noise with constant tSNR and found that Prenorm increased tSNR value while Postnorm did not. This result indicated that Postnorm, which does interpolation on scalar values, may have less effect than Prenorm, which interpolated the time courses. The results in empirical images were very consistent with this assumption. Prenorm has higher tSNR, therefore less total variation, which leads to smaller ALFF, but higher correlation both among local voxels (ReHo) and between distinct regions (FC), as illustrated in <xref ref-type="fig" rid="F2">Figure 2</xref>.</p>
+      <p>However, most rs-fMRI studies are interested in the intersubject difference rather than the value of rs-fMRI indices. Given that there is no individual difference and no neural signals in our simulated images, the intersubject variability after Prenorm in simulated images was putatively induced by algorithmic reasons. We suspected that it may be induced by the fact that the extent of the deformation during spatial normalization varied across subjects, which can determine the extent of resampling and interpolation. Interpolation can increase tSNR, and therefore intersubject difference of interpolation directly leads to intersubject variability of tSNR. Again, this effect in Postnorm seems weaker, which has no effect in simulation (resampling would not change constant), and smaller effect in empirical images (CV of tSNR is less in Postnorm than that in Prenorm). Consistent result was found for CV of ALFF, which is larger in Prenorm. However, ReHo and FC showed different results. This is possibly caused by increased FC and ReHo values in Prenorm compared to those in Postnorm, especially in DMN for FC and in all gray matter regions for ReHo. This effect may overwhelm the effect of increased intersubject variability of the noise level. Therefore, when in WM where there may be less neural signals, ReHo showed increased CV in Prenorm than that in Postnorm, which is consistent with tSNR. It is also worth to note that ReHo is differently defined in Prenorm and Postnorm given the range of “neighbor voxels” that are actually different; this may lead to these complex differences (<xref rid="B45" ref-type="bibr">Zuo et al., 2013</xref>).</p>
+      <p>Furthermore, Prenorm tSNR in empirical images is highly correlated across subjects with Prenorm tSNR in simulated images, indicating that the algorithmic effect in simulated images can also explain the intersubject variability of tSNR in empirical fMRI. Moreover, similar widespread significant correlation was found between simulated tSNR and empirical ALFF and ReHo. The negative correlation for ALFF is expected since higher tSNR means lower total variation, which can be reflected by ALFF (<xref rid="B15" ref-type="bibr">Garrett et al., 2013</xref>). These results further indicated that there is a significant portion (for the significant regions in <xref ref-type="fig" rid="F3">Figure 3</xref>, <italic>R</italic><sup>2</sup> &gt; 0.1) of the intersubject variability of ALFF and ReHo that can be explained by pure algorithmic effect of resampling and interpolation during normalization if Prenorm is used. Given that most rs-fMRI studies focused on between-subject differences, this indicated that for ALFF and ReHo, the Prenorm strategy may need to be avoided.</p>
+      <p>Consistent with the algorithmic induced intersubject variability, ICC between two serial scans further suggested that using Prenorm would decrease the test–retest reliability of rs-fMRI features compared to Postnorm. Less reliability may lead to less statistical power, low reproducibility, and demand of big data size (<xref rid="B6" ref-type="bibr">Button et al., 2013</xref>; <xref rid="B25" ref-type="bibr">Poldrack et al., 2017</xref>; <xref rid="B17" ref-type="bibr">Hedge et al., 2018</xref>) and has been recently highlighted as a challenge in fMRI field (<xref rid="B4" ref-type="bibr">Bennett and Miller, 2010</xref>; <xref rid="B35" ref-type="bibr">Xing and Zuo, 2018</xref>; <xref rid="B43" ref-type="bibr">Zuo et al., 2019a</xref>, <xref rid="B44" ref-type="bibr">b</xref>). Therefore, our findings strongly suggested that all of the rs-fMRI studies using ALFF and ReHo in the future use Postnorm instead of Prenorm. Although ICC of FC seems to be not sensitive to the normalization strategy compared to ALFF and ReHo, given that the Prenorm can induce variability of tSNR and the fact that noise level can affect FC values (<xref rid="B13" ref-type="bibr">Duff et al., 2018</xref>), FC studies also should choose normalization strategies with caution. Also, given that the increased variability of fMRI features may be caused by the geometrical difference during normalization, special caution should be taken with spatial normalization when investigating the functional–structural relationship (<xref rid="B12" ref-type="bibr">Di et al., 2013</xref>; <xref rid="B26" ref-type="bibr">Qing and Gong, 2016</xref>) or investigating the population that may have various degrees of brain atrophy, like dementia (<xref rid="B27" ref-type="bibr">Qing et al., 2017</xref>; <xref rid="B11" ref-type="bibr">De Vos et al., 2018</xref>). It is also worth noting that the effect of Prenorm is more severe in subcortical and WM regions. Therefore, studies that focus on WM BOLD signal and subcortical spontaneous activity should be more cautious with choice of spatial normalization strategy or just avoid spatial normalization (<xref rid="B22" ref-type="bibr">Makedonov et al., 2013</xref>, <xref rid="B23" ref-type="bibr">2016</xref>; <xref rid="B19" ref-type="bibr">Ji et al., 2017</xref>; <xref rid="B27" ref-type="bibr">Qing et al., 2017</xref>).</p>
+      <p>It is worth to note that the effect of normalization may be related to the interpolation methods. In the current study, we use the “trilinear” interpolation because it is the default setting of most fMRI data processing toolboxes, such as FSL (“fnirt”), SPM (Normalization-Write), and AFNI (“3dAllineate”), and therefore has been widely applied. We also repeated our analysis using “nearest neighbor,” fourth and seventh B-spline interpolation options, which were provided in SPM. When using “nearest neighbor,” exactly the same ALFF and tSNR would be found for Prenorm and Postnorm, but there were slight differences for ReHo and FC, which may be caused by different definitions of neighbor voxels and seed time course in different strategies (details can be found in the <xref ref-type="supplementary-material" rid="TS1">Supplementary Material</xref>). This validated that difference effects of interpolation on time course and scalar values lead to our finding of the difference between Prenorm and Postnorm. For higher order interpolation, such as fourth or seventh B-spline, most of our findings still showed similar and significant results compared to “trilinear” but with more conservative effect size (however, some results were inversed, see the <xref ref-type="supplementary-material" rid="TS1">Supplementary Material</xref>). However, using nearest neighbor may decrease smoothness of the results, and it is time-consuming to use higher order interpolation, especially when treating large data cohorts. Additionally, other type of interpolation like using sinc function instead of linear may also have an impact but was more rarely be used during spatial normalization (<xref rid="B30" ref-type="bibr">Strother et al., 2004</xref>). At last, when large kernel spatial smoothing was done, the additional interpolation among voxels would attenuate the effect of interpolation during normalization, and therefore we did not include and discuss this step for simplicity.</p>
+      <p>There are some limitations of the current study. First, we only use the unified segmentation (<xref rid="B3" ref-type="bibr">Ashburner and Friston, 2005</xref>) to perform the normalization. Although we believe that the effect of Prenorm on temporal features is independent to the different estimating methods of spatial transformation, the finding in the current study still need to be validated against other normalization algorithms, such as DARTEL in SPM (<xref rid="B2" ref-type="bibr">Ashburner, 2007</xref>), utilization of the EPI templates instead of structural templates (<xref rid="B7" ref-type="bibr">Calhoun et al., 2017</xref>), and also other toolboxes, such as FSL (<xref rid="B18" ref-type="bibr">Jenkinson et al., 2012</xref>). Moreover, our results were based on a relatively small publicly available dataset that only included 50 subjects, which all have the same scanning parameters and using the same scanner. The current findings need further validation across various types of scanners, various image resolutions, and a larger dataset in the future.</p>
+    </sec>
+    <sec id="S5">
+      <title>Conclusion</title>
+      <p>In conclusion, the current study demonstrated that the commonly used spatial normalization, Prenorm, may induce an artificial variability across subjects on tSNR of rs-fMRI and significantly contribute to the intersubject variability of ALFF and ReHo and reduce their reliability compared to Postnorm. These results suggest that future fMRI studies using ALFF and ReHo should perform spatial normalization with caution and suggest Postnorm as an improvement.</p>
+    </sec>
+    <sec sec-type="data-availability" id="S6">
+      <title>Data Availability Statement</title>
+      <p>Publicly available datasets were analyzed in this study. This data can be found here: <ext-link ext-link-type="uri" xlink:href="http://fcon_1000.projects.nitrc.org/indi/CoRR/html/">http://fcon_1000.projects.nitrc.org/indi/CoRR/html/</ext-link>.</p>
+    </sec>
+    <sec id="S7">
+      <title>Ethics Statement</title>
+      <p>All images of the human subjects used in the current study are downloaded from the public dataset “Consortium for Reliablity and Reproducibility,” published by <xref rid="B42" ref-type="bibr">Zuo et al. (2014)</xref> and all subjects are anonymous. The download website can be found at <ext-link ext-link-type="uri" xlink:href="http://fcon_1000.projects.nitrc.org/indi/CoRR/html/_static/downloads.html">http://fcon_1000.projects.nitrc.org/indi/CoRR/html/_static/downloads.html</ext-link>.</p>
+    </sec>
+    <sec id="S8">
+      <title>Author Contributions</title>
+      <p>ZQ, BZG, and BZU designed the study. ZQ wrote the manuscript. ZQ, XZ, MY, SW, and XW performed the data management, data analysis, and artworks. ZQ, BZG, ZN, and JH decided the manuscript structure and logic. ZN and JH improved the language expression.</p>
+    </sec>
+    <sec id="conf1">
+      <title>Conflict of Interest</title>
+      <p>The authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.</p>
+    </sec>
+  </body>
+  <back>
+    <fn-group>
+      <fn fn-type="financial-disclosure">
+        <p><bold>Funding.</bold> This work was supported by the National Natural Science Foundation of China (81701672, 81720108022, 91649116, and 81571040), the Fundamental Research Funds for the Central Universities (021414380274), and the Social Development Project of Science and Technology in Jiangsu Province (BE2016605 and BE201707).</p>
+      </fn>
+    </fn-group>
+    <ack>
+      <p>The authors thank Tengda Zhao from the Beijing Normal University, Robert W. Cox from the National Institute of Mental Health (NIMH), and Xiao Liu from the Pennsylvania State University for helpful comments about this study.</p>
+    </ack>
+    <sec id="S11" sec-type="supplementary material">
+      <title>Supplementary Material</title>
+      <p>The Supplementary Material for this article can be found online at: <ext-link ext-link-type="uri" xlink:href="https://www.frontiersin.org/articles/10.3389/fnins.2019.01249/full#supplementary-material">https://www.frontiersin.org/articles/10.3389/fnins.2019.01249/full#supplementary-material</ext-link></p>
+      <supplementary-material content-type="local-data" id="TS1">
+        <media xlink:href="Table_1.DOCX">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+    </sec>
+    <ref-list>
+      <title>References</title>
+      <ref id="B1">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Archer</surname><given-names>J. A.</given-names></name><name><surname>Lee</surname><given-names>A.</given-names></name><name><surname>Qiu</surname><given-names>A.</given-names></name><name><surname>Chen</surname><given-names>S. A.</given-names></name></person-group> (<year>2018</year>). <article-title>Working memory, age and education: a lifespan fMRI study.</article-title>
+<source><italic>PLoS One</italic></source>
+<volume>13</volume>:<issue>e0194878</issue>. <pub-id pub-id-type="doi">10.1371/journal.pone.0194878</pub-id>
+<pub-id pub-id-type="pmid">29584781</pub-id></mixed-citation>
+      </ref>
+      <ref id="B2">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Ashburner</surname><given-names>J.</given-names></name></person-group> (<year>2007</year>). <article-title>A fast diffeomorphic image registration algorithm.</article-title>
+<source><italic>Neuroimage</italic></source>
+<volume>38</volume>
+<fpage>95</fpage>–<lpage>113</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2007.07.007</pub-id>
+<pub-id pub-id-type="pmid">17761438</pub-id></mixed-citation>
+      </ref>
+      <ref id="B3">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Ashburner</surname><given-names>J.</given-names></name><name><surname>Friston</surname><given-names>K. J.</given-names></name></person-group> (<year>2005</year>). <article-title>Unified segmentation.</article-title>
+<source><italic>Neuroimage</italic></source>
+<volume>26</volume>
+<fpage>839</fpage>–<lpage>851</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2005.02.018</pub-id>
+<pub-id pub-id-type="pmid">15955494</pub-id></mixed-citation>
+      </ref>
+      <ref id="B4">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Bennett</surname><given-names>C. M.</given-names></name><name><surname>Miller</surname><given-names>M. B.</given-names></name></person-group> (<year>2010</year>). <article-title>How reliable are the results from functional magnetic resonance imaging?</article-title>
+<source><italic>Ann. N. Y. Acad. Sci.</italic></source>
+<volume>1191</volume>
+<fpage>133</fpage>–<lpage>155</lpage>. <pub-id pub-id-type="doi">10.1111/j.1749-6632.2010.05446.x</pub-id>
+<pub-id pub-id-type="pmid">20392279</pub-id></mixed-citation>
+      </ref>
+      <ref id="B5">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Biswal</surname><given-names>B.</given-names></name><name><surname>Yetkin</surname><given-names>F. Z.</given-names></name><name><surname>Haughton</surname><given-names>V. M.</given-names></name><name><surname>Hyde</surname><given-names>J. S.</given-names></name></person-group> (<year>1995</year>). <article-title>Functional connectivity in the motor cortex of resting human brain using echo-planar MRI.</article-title>
+<source><italic>Magn. Reson. Med.</italic></source>
+<volume>34</volume>
+<fpage>537</fpage>–<lpage>541</lpage>. <pub-id pub-id-type="doi">10.1002/mrm.1910340409</pub-id>
+<pub-id pub-id-type="pmid">8524021</pub-id></mixed-citation>
+      </ref>
+      <ref id="B6">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Button</surname><given-names>K. S.</given-names></name><name><surname>Ioannidis</surname><given-names>J. P.</given-names></name><name><surname>Mokrysz</surname><given-names>C.</given-names></name><name><surname>Nosek</surname><given-names>B. A.</given-names></name><name><surname>Flint</surname><given-names>J.</given-names></name><name><surname>Robinson</surname><given-names>E. S.</given-names></name><etal/></person-group> (<year>2013</year>). <article-title>Power failure: why small sample size undermines the reliability of neuroscience.</article-title>
+<source><italic>Nat. Rev. Neurosci.</italic></source>
+<volume>14</volume>
+<fpage>365</fpage>–<lpage>376</lpage>. <pub-id pub-id-type="doi">10.1038/nrn3475</pub-id>
+<pub-id pub-id-type="pmid">23571845</pub-id></mixed-citation>
+      </ref>
+      <ref id="B7">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Calhoun</surname><given-names>V. D.</given-names></name><name><surname>Wager</surname><given-names>T. D.</given-names></name><name><surname>Krishnan</surname><given-names>A.</given-names></name><name><surname>Rosch</surname><given-names>K. S.</given-names></name><name><surname>Seymour</surname><given-names>K. E.</given-names></name><name><surname>Nebel</surname><given-names>M. B.</given-names></name><etal/></person-group> (<year>2017</year>). <article-title>The impact of T1 versus EPI spatial normalization templates for fMRI data analyses.</article-title>
+<source><italic>Hum. Brain Mapp.</italic></source>
+<volume>38</volume>
+<fpage>5331</fpage>–<lpage>5342</lpage>. <pub-id pub-id-type="doi">10.1002/hbm.23737</pub-id>
+<pub-id pub-id-type="pmid">28745021</pub-id></mixed-citation>
+      </ref>
+      <ref id="B8">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Collins</surname><given-names>D. L.</given-names></name><name><surname>Neelin</surname><given-names>P.</given-names></name><name><surname>Peters</surname><given-names>T. M.</given-names></name><name><surname>Evans</surname><given-names>A. C.</given-names></name></person-group> (<year>1994</year>). <article-title>Automatic 3D intersubject registration of MR volumetric data in standardized Talairach space.</article-title>
+<source><italic>J. Comput. Assist. Tomogr.</italic></source>
+<volume>18</volume>
+<fpage>192</fpage>–<lpage>205</lpage>. <pub-id pub-id-type="doi">10.1097/00004728-199403000-00005</pub-id>
+<pub-id pub-id-type="pmid">8126267</pub-id></mixed-citation>
+      </ref>
+      <ref id="B9">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Cooper</surname><given-names>R. A.</given-names></name><name><surname>Richter</surname><given-names>F. R.</given-names></name><name><surname>Bays</surname><given-names>P. M.</given-names></name><name><surname>Plaisted-Grant</surname><given-names>K. C.</given-names></name><name><surname>Baron-Cohen</surname><given-names>S.</given-names></name><name><surname>Simons</surname><given-names>J. S.</given-names></name></person-group> (<year>2017</year>). <article-title>Reduced hippocampal functional connectivity during episodic memory retrieval in Autism.</article-title>
+<source><italic>Cereb. Cortex</italic></source>
+<volume>27</volume>
+<fpage>888</fpage>–<lpage>902</lpage>. <pub-id pub-id-type="doi">10.1093/cercor/bhw417</pub-id>
+<pub-id pub-id-type="pmid">28057726</pub-id></mixed-citation>
+      </ref>
+      <ref id="B10">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Cox</surname><given-names>R. W.</given-names></name></person-group> (<year>1996</year>). <article-title>AFNI: software for analysis and visualization of functional magnetic resonance neuroimages.</article-title>
+<source><italic>Comput. Biomed. Res.</italic></source>
+<volume>29</volume>
+<fpage>162</fpage>–<lpage>173</lpage>. <pub-id pub-id-type="doi">10.1006/cbmr.1996.0014</pub-id>
+<pub-id pub-id-type="pmid">8812068</pub-id></mixed-citation>
+      </ref>
+      <ref id="B11">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>De Vos</surname><given-names>F.</given-names></name><name><surname>Koini</surname><given-names>M.</given-names></name><name><surname>Schouten</surname><given-names>T. M.</given-names></name><name><surname>Seiler</surname><given-names>S.</given-names></name><name><surname>Van Der Grond</surname><given-names>J.</given-names></name><name><surname>Lechner</surname><given-names>A.</given-names></name><etal/></person-group> (<year>2018</year>). <article-title>A comprehensive analysis of resting state fMRI measures to classify individual patients with Alzheimer’s disease.</article-title>
+<source><italic>Neuroimage</italic></source>
+<volume>167</volume>
+<fpage>62</fpage>–<lpage>72</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2017.11.025</pub-id>
+<pub-id pub-id-type="pmid">29155080</pub-id></mixed-citation>
+      </ref>
+      <ref id="B12">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Di</surname><given-names>X.</given-names></name><name><surname>Kannurpatti</surname><given-names>S. S.</given-names></name><name><surname>Rypma</surname><given-names>B.</given-names></name><name><surname>Biswal</surname><given-names>B. B.</given-names></name></person-group> (<year>2013</year>). <article-title>Calibrating BOLD fMRI activations with neurovascular and anatomical constraints.</article-title>
+<source><italic>Cereb. Cortex</italic></source>
+<volume>23</volume>
+<fpage>255</fpage>–<lpage>263</lpage>. <pub-id pub-id-type="doi">10.1093/cercor/bhs001</pub-id>
+<pub-id pub-id-type="pmid">22345358</pub-id></mixed-citation>
+      </ref>
+      <ref id="B13">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Duff</surname><given-names>E. P.</given-names></name><name><surname>Makin</surname><given-names>T.</given-names></name><name><surname>Cottaar</surname><given-names>M.</given-names></name><name><surname>Smith</surname><given-names>S. M.</given-names></name><name><surname>Woolrich</surname><given-names>M. W.</given-names></name></person-group> (<year>2018</year>). <article-title>Disambiguating brain functional connectivity.</article-title>
+<source><italic>Neuroimage</italic></source>
+<volume>173</volume>
+<fpage>540</fpage>–<lpage>550</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2018.01.053</pub-id>
+<pub-id pub-id-type="pmid">29476911</pub-id></mixed-citation>
+      </ref>
+      <ref id="B14">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Fox</surname><given-names>M. D.</given-names></name><name><surname>Snyder</surname><given-names>A. Z.</given-names></name><name><surname>Vincent</surname><given-names>J. L.</given-names></name><name><surname>Corbetta</surname><given-names>M.</given-names></name><name><surname>Van Essen</surname><given-names>D. C.</given-names></name><name><surname>Raichle</surname><given-names>M. E.</given-names></name></person-group> (<year>2005</year>). <article-title>The human brain is intrinsically organized into dynamic, anticorrelated functional networks.</article-title>
+<source><italic>Proc. Natl. Acad. Sci. U.S.A.</italic></source>
+<volume>102</volume>
+<fpage>9673</fpage>–<lpage>9678</lpage>. <pub-id pub-id-type="doi">10.1073/pnas.0504136102</pub-id>
+<pub-id pub-id-type="pmid">15976020</pub-id></mixed-citation>
+      </ref>
+      <ref id="B15">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Garrett</surname><given-names>D. D.</given-names></name><name><surname>Samanez-Larkin</surname><given-names>G. R.</given-names></name><name><surname>Macdonald</surname><given-names>S. W.</given-names></name><name><surname>Lindenberger</surname><given-names>U.</given-names></name><name><surname>Mcintosh</surname><given-names>A. R.</given-names></name><name><surname>Grady</surname><given-names>C. L.</given-names></name></person-group> (<year>2013</year>). <article-title>Moment-to-moment brain signal variability: a next frontier in human brain mapping?</article-title>
+<source><italic>Neurosci. Biobehav. Rev.</italic></source>
+<volume>37</volume>
+<fpage>610</fpage>–<lpage>624</lpage>. <pub-id pub-id-type="doi">10.1016/j.neubiorev.2013.02.015</pub-id>
+<pub-id pub-id-type="pmid">23458776</pub-id></mixed-citation>
+      </ref>
+      <ref id="B16">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Haak</surname><given-names>K. V.</given-names></name><name><surname>Marquand</surname><given-names>A. F.</given-names></name><name><surname>Beckmann</surname><given-names>C. F.</given-names></name></person-group> (<year>2018</year>). <article-title>Connectopic mapping with resting-state fMRI.</article-title>
+<source><italic>Neuroimage</italic></source>
+<volume>170</volume>
+<fpage>83</fpage>–<lpage>94</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2017.06.075</pub-id>
+<pub-id pub-id-type="pmid">28666880</pub-id></mixed-citation>
+      </ref>
+      <ref id="B17">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Hedge</surname><given-names>C.</given-names></name><name><surname>Powell</surname><given-names>G.</given-names></name><name><surname>Sumner</surname><given-names>P.</given-names></name></person-group> (<year>2018</year>). <article-title>The reliability paradox: why robust cognitive tasks do not produce reliable individual differences.</article-title>
+<source><italic>Behav. Res. Methods</italic></source>
+<volume>50</volume>
+<fpage>1166</fpage>–<lpage>1186</lpage>. <pub-id pub-id-type="doi">10.3758/s13428-017-0935-1</pub-id>
+<pub-id pub-id-type="pmid">28726177</pub-id></mixed-citation>
+      </ref>
+      <ref id="B18">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Jenkinson</surname><given-names>M.</given-names></name><name><surname>Beckmann</surname><given-names>C. F.</given-names></name><name><surname>Behrens</surname><given-names>T. E.</given-names></name><name><surname>Woolrich</surname><given-names>M. W.</given-names></name><name><surname>Smith</surname><given-names>S. M.</given-names></name></person-group> (<year>2012</year>). <article-title>Fsl.</article-title>
+<source><italic>Neuroimage</italic></source>
+<volume>62</volume>
+<fpage>782</fpage>–<lpage>790</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2011.09.015</pub-id>
+<pub-id pub-id-type="pmid">21979382</pub-id></mixed-citation>
+      </ref>
+      <ref id="B19">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Ji</surname><given-names>G. J.</given-names></name><name><surname>Wei</surname><given-names>L.</given-names></name><name><surname>Chen</surname><given-names>F. F.</given-names></name><name><surname>Zhang</surname><given-names>L.</given-names></name><name><surname>Wang</surname><given-names>K.</given-names></name></person-group> (<year>2017</year>). <article-title>Low-frequency blood oxygen level-dependent fluctuations in the brain white matter:more than just noise.</article-title>
+<source><italic>Sci. Bull.</italic></source>
+<volume>62</volume>
+<fpage>656</fpage>–<lpage>657</lpage>. <pub-id pub-id-type="doi">10.1016/j.scib.2017.03.021</pub-id></mixed-citation>
+      </ref>
+      <ref id="B20">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Jiang</surname><given-names>L.</given-names></name><name><surname>Zuo</surname><given-names>X. N.</given-names></name></person-group> (<year>2016</year>). <article-title>Regional homogeneity: a multimodal, multiscale neuroimaging marker of the human connectome.</article-title>
+<source><italic>Neuroscientist</italic></source>
+<volume>22</volume>
+<fpage>486</fpage>–<lpage>505</lpage>. <pub-id pub-id-type="doi">10.1177/1073858415595004</pub-id>
+<pub-id pub-id-type="pmid">26170004</pub-id></mixed-citation>
+      </ref>
+      <ref id="B21">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Krüger</surname><given-names>G.</given-names></name><name><surname>Glover</surname><given-names>G. H.</given-names></name></person-group> (<year>2001</year>). <article-title>Physiological noise in oxygenation-sensitive magnetic resonance imaging.</article-title>
+<source><italic>Magn. Reson. Med.</italic></source>
+<volume>46</volume>:<issue>631</issue>. <pub-id pub-id-type="doi">10.1002/mrm.1240</pub-id>
+<pub-id pub-id-type="pmid">11590638</pub-id></mixed-citation>
+      </ref>
+      <ref id="B22">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Makedonov</surname><given-names>I.</given-names></name><name><surname>Black</surname><given-names>S. E.</given-names></name><name><surname>Macintosh</surname><given-names>B. J.</given-names></name></person-group> (<year>2013</year>). <article-title>BOLD fMRI in the white matter as a marker of aging and small vessel disease.</article-title>
+<source><italic>PLoS One</italic></source>
+<volume>8</volume>:<issue>e67652</issue>. <pub-id pub-id-type="doi">10.1371/journal.pone.0067652</pub-id>
+<pub-id pub-id-type="pmid">23844047</pub-id></mixed-citation>
+      </ref>
+      <ref id="B23">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Makedonov</surname><given-names>I.</given-names></name><name><surname>Chen</surname><given-names>J. J.</given-names></name><name><surname>Masellis</surname><given-names>M.</given-names></name><name><surname>Macintosh</surname><given-names>B. J.</given-names></name></person-group>
+<collab>Alzheimer’s Disease Neuroimaging Initiative.</collab> (<year>2016</year>). <article-title>Physiological fluctuations in white matter are increased in Alzheimer’s disease and correlate with neuroimaging and cognitive biomarkers.</article-title>
+<source><italic>Neurobiol. Aging</italic></source>
+<volume>37</volume>
+<fpage>12</fpage>–<lpage>18</lpage>. <pub-id pub-id-type="doi">10.1016/j.neurobiolaging.2015.09.010</pub-id>
+<pub-id pub-id-type="pmid">26476600</pub-id></mixed-citation>
+      </ref>
+      <ref id="B24">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Mazziotta</surname><given-names>J.</given-names></name><name><surname>Toga</surname><given-names>A.</given-names></name><name><surname>Evans</surname><given-names>A.</given-names></name><name><surname>Fox</surname><given-names>P.</given-names></name><name><surname>Lancaster</surname><given-names>J.</given-names></name><name><surname>Zilles</surname><given-names>K.</given-names></name><etal/></person-group> (<year>2001</year>). <article-title>A probabilistic atlas and reference system for the human brain: International Consortium for Brain Mapping (ICBM).</article-title>
+<source><italic>Philos. Trans. R. Soc. Lond. B Biol. Sci.</italic></source>
+<volume>356</volume>
+<fpage>1293</fpage>–<lpage>1322</lpage>. <pub-id pub-id-type="doi">10.1098/rstb.2001.0915</pub-id>
+<pub-id pub-id-type="pmid">11545704</pub-id></mixed-citation>
+      </ref>
+      <ref id="B25">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Poldrack</surname><given-names>R. A.</given-names></name><name><surname>Baker</surname><given-names>C. I.</given-names></name><name><surname>Durnez</surname><given-names>J.</given-names></name><name><surname>Gorgolewski</surname><given-names>K. J.</given-names></name><name><surname>Matthews</surname><given-names>P. M.</given-names></name><name><surname>Munafo</surname><given-names>M. R.</given-names></name><etal/></person-group> (<year>2017</year>). <article-title>Scanning the horizon: towards transparent and reproducible neuroimaging research.</article-title>
+<source><italic>Nat. Rev. Neurosci.</italic></source>
+<volume>18</volume>
+<fpage>115</fpage>–<lpage>126</lpage>. <pub-id pub-id-type="doi">10.1038/nrn.2016.167</pub-id>
+<pub-id pub-id-type="pmid">28053326</pub-id></mixed-citation>
+      </ref>
+      <ref id="B26">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Qing</surname><given-names>Z.</given-names></name><name><surname>Gong</surname><given-names>G.</given-names></name></person-group> (<year>2016</year>). <article-title>Size matters to function: brain volume correlates with intrinsic brain activity across healthy individuals.</article-title>
+<source><italic>Neuroimage</italic></source>
+<volume>139</volume>
+<fpage>271</fpage>–<lpage>278</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2016.06.046</pub-id>
+<pub-id pub-id-type="pmid">27355434</pub-id></mixed-citation>
+      </ref>
+      <ref id="B27">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Qing</surname><given-names>Z.</given-names></name><name><surname>Li</surname><given-names>W.</given-names></name><name><surname>Nedelska</surname><given-names>Z.</given-names></name><name><surname>Wu</surname><given-names>W.</given-names></name><name><surname>Wang</surname><given-names>F.</given-names></name><name><surname>Liu</surname><given-names>R.</given-names></name><etal/></person-group> (<year>2017</year>). <article-title>Spatial navigation impairment is associated with alterations in subcortical intrinsic activity in mild cognitive impairment: a resting-State fMRI study.</article-title>
+<source><italic>Behav. Neurol.</italic></source>
+<volume>2017</volume>:<issue>6364314</issue>. <pub-id pub-id-type="doi">10.1155/2017/6364314</pub-id>
+<pub-id pub-id-type="pmid">29085184</pub-id></mixed-citation>
+      </ref>
+      <ref id="B28">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Raichle</surname><given-names>M. E.</given-names></name></person-group> (<year>2010</year>). <article-title>The brain’s dark energy.</article-title>
+<source><italic>Sci. Am.</italic></source>
+<volume>302</volume>
+<fpage>44</fpage>–<lpage>49</lpage>.</mixed-citation>
+      </ref>
+      <ref id="B29">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Raichle</surname><given-names>M. E.</given-names></name></person-group> (<year>2015</year>). <article-title>The brain’s default mode network.</article-title>
+<source><italic>Annu. Rev. Neurosci.</italic></source>
+<volume>38</volume>
+<fpage>433</fpage>–<lpage>447</lpage>. <pub-id pub-id-type="doi">10.1146/annurev-neuro-071013-014030</pub-id>
+<pub-id pub-id-type="pmid">25938726</pub-id></mixed-citation>
+      </ref>
+      <ref id="B30">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Strother</surname><given-names>S.</given-names></name><name><surname>La Conte</surname><given-names>S.</given-names></name><name><surname>Kai Hansen</surname><given-names>L.</given-names></name><name><surname>Anderson</surname><given-names>J.</given-names></name><name><surname>Zhang</surname><given-names>J.</given-names></name><name><surname>Pulapura</surname><given-names>S.</given-names></name><etal/></person-group> (<year>2004</year>). <article-title>Optimizing the fMRI data-processing pipeline using prediction and reproducibility performance metrics: I. A preliminary group analysis.</article-title>
+<source><italic>Neuroimage</italic></source>
+<volume>23</volume>(<issue>Suppl. 1</issue>), <fpage>S196</fpage>–<lpage>S207</lpage>. <pub-id pub-id-type="pmid">15501090</pub-id></mixed-citation>
+      </ref>
+      <ref id="B31">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Tzourio-Mazoyer</surname><given-names>N.</given-names></name><name><surname>Landeau</surname><given-names>B.</given-names></name><name><surname>Papathanassiou</surname><given-names>D.</given-names></name><name><surname>Crivello</surname><given-names>F.</given-names></name><name><surname>Etard</surname><given-names>O.</given-names></name><name><surname>Delcroix</surname><given-names>N.</given-names></name><etal/></person-group> (<year>2002</year>). <article-title>Automated anatomical labeling of activations in SPM using a macroscopic anatomical parcellation of the MNI MRI single-subject brain.</article-title>
+<source><italic>Neuroimage</italic></source>
+<volume>15</volume>
+<fpage>273</fpage>–<lpage>289</lpage>. <pub-id pub-id-type="pmid">11771995</pub-id></mixed-citation>
+      </ref>
+      <ref id="B32">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Wang</surname><given-names>J.</given-names></name><name><surname>Wang</surname><given-names>X.</given-names></name><name><surname>Xia</surname><given-names>M.</given-names></name><name><surname>Liao</surname><given-names>X.</given-names></name><name><surname>Evans</surname><given-names>A.</given-names></name><name><surname>He</surname><given-names>Y.</given-names></name></person-group> (<year>2015</year>). <article-title>GRETNA: a graph theoretical network analysis toolbox for imaging connectomics.</article-title>
+<source><italic>Front. Hum. Neurosci.</italic></source>
+<volume>9</volume>:<issue>386</issue>. <pub-id pub-id-type="doi">10.3389/fnhum.2015.00386</pub-id>
+<pub-id pub-id-type="pmid">26175682</pub-id></mixed-citation>
+      </ref>
+      <ref id="B33">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Worsley</surname><given-names>K. J.</given-names></name></person-group> (<year>2005</year>). <article-title>Spatial smoothing of autocorrelations to control the degrees of freedom in fMRI analysis.</article-title>
+<source><italic>Neuroimage</italic></source>
+<volume>26</volume>
+<fpage>635</fpage>–<lpage>641</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2005.02.007</pub-id>
+<pub-id pub-id-type="pmid">15907321</pub-id></mixed-citation>
+      </ref>
+      <ref id="B34">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Wu</surname><given-names>C. W.</given-names></name><name><surname>Chen</surname><given-names>C. L.</given-names></name><name><surname>Liu</surname><given-names>P. Y.</given-names></name><name><surname>Chao</surname><given-names>Y. P.</given-names></name><name><surname>Biswal</surname><given-names>B. B.</given-names></name><name><surname>Lin</surname><given-names>C. P.</given-names></name></person-group> (<year>2011</year>). <article-title>Empirical evaluations of slice-timing, smoothing, and normalization effects in seed-based, resting-state functional magnetic resonance imaging analyses.</article-title>
+<source><italic>Brain Connect.</italic></source>
+<volume>1</volume>
+<fpage>401</fpage>–<lpage>410</lpage>. <pub-id pub-id-type="doi">10.1089/brain.2011.0018</pub-id>
+<pub-id pub-id-type="pmid">22432454</pub-id></mixed-citation>
+      </ref>
+      <ref id="B35">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Xing</surname><given-names>X. X.</given-names></name><name><surname>Zuo</surname><given-names>X. N.</given-names></name></person-group> (<year>2018</year>). <article-title>The anatomy of reliability: a must read for future human brain mapping.</article-title>
+<source><italic>Sci. Bull. Vol.</italic></source>
+<volume>63</volume>
+<fpage>1606</fpage>–<lpage>1607</lpage>. <pub-id pub-id-type="doi">10.1016/j.scib.2018.12.010</pub-id></mixed-citation>
+      </ref>
+      <ref id="B36">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Xing</surname><given-names>X. X. Z. X. N.</given-names></name></person-group> (<year>2018</year>). <article-title>The anatomy of reliability: a must read for future human brain mapping.</article-title>
+<source><italic>Sci. Bull. Vol.</italic></source>
+<volume>63</volume>
+<fpage>606</fpage>–<lpage>607</lpage>.</mixed-citation>
+      </ref>
+      <ref id="B37">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Yan</surname><given-names>C. G.</given-names></name><name><surname>Wang</surname><given-names>X. D.</given-names></name><name><surname>Zuo</surname><given-names>X. N.</given-names></name><name><surname>Zang</surname><given-names>Y. F.</given-names></name></person-group> (<year>2016</year>). <article-title>DPABI: data processing &amp; analysis for (Resting-State) brain imaging.</article-title>
+<source><italic>Neuroinformatics</italic></source>
+<volume>14</volume>
+<fpage>339</fpage>–<lpage>351</lpage>. <pub-id pub-id-type="doi">10.1007/s12021-016-9299-4</pub-id>
+<pub-id pub-id-type="pmid">27075850</pub-id></mixed-citation>
+      </ref>
+      <ref id="B38">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Yan</surname><given-names>C. G.</given-names></name><name><surname>Zang</surname><given-names>Y. F.</given-names></name></person-group> (<year>2010</year>). <article-title>DPARSF: a MATLAB toolbox for “Pipeline” data analysis of resting-state fMRI.</article-title>
+<source><italic>Front. Syst. Neurosci.</italic></source>
+<volume>4</volume>:<issue>13</issue>. <pub-id pub-id-type="doi">10.3389/fnsys.2010.00013</pub-id>
+<pub-id pub-id-type="pmid">20577591</pub-id></mixed-citation>
+      </ref>
+      <ref id="B39">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zang</surname><given-names>Y.</given-names></name><name><surname>Jiang</surname><given-names>T.</given-names></name><name><surname>Lu</surname><given-names>Y.</given-names></name><name><surname>He</surname><given-names>Y.</given-names></name><name><surname>Tian</surname><given-names>L.</given-names></name></person-group> (<year>2004</year>). <article-title>Regional homogeneity approach to fMRI data analysis.</article-title>
+<source><italic>Neuroimage</italic></source>
+<volume>22</volume>
+<fpage>394</fpage>–<lpage>400</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2003.12.030</pub-id>
+<pub-id pub-id-type="pmid">15110032</pub-id></mixed-citation>
+      </ref>
+      <ref id="B40">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zang</surname><given-names>Y. F.</given-names></name><name><surname>He</surname><given-names>Y.</given-names></name><name><surname>Zhu</surname><given-names>C. Z.</given-names></name><name><surname>Cao</surname><given-names>Q. J.</given-names></name><name><surname>Sui</surname><given-names>M. Q.</given-names></name><name><surname>Liang</surname><given-names>M.</given-names></name><etal/></person-group> (<year>2007</year>). <article-title>Altered baseline brain activity in children with ADHD revealed by resting-state functional MRI.</article-title>
+<source><italic>Brain Dev.</italic></source>
+<volume>29</volume>
+<fpage>83</fpage>–<lpage>91</lpage>. <pub-id pub-id-type="doi">10.1016/j.braindev.2006.07.002</pub-id>
+<pub-id pub-id-type="pmid">16919409</pub-id></mixed-citation>
+      </ref>
+      <ref id="B41">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zhang</surname><given-names>D.</given-names></name><name><surname>Raichle</surname><given-names>M. E.</given-names></name></person-group> (<year>2010</year>). <article-title>Disease and the brain’s dark energy.</article-title>
+<source><italic>Nat. Rev. Neurol.</italic></source>
+<volume>6</volume>
+<fpage>15</fpage>–<lpage>28</lpage>. <pub-id pub-id-type="doi">10.1038/nrneurol.2009.198</pub-id>
+<pub-id pub-id-type="pmid">20057496</pub-id></mixed-citation>
+      </ref>
+      <ref id="B42">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zuo</surname><given-names>X. N.</given-names></name><name><surname>Anderson</surname><given-names>J. S.</given-names></name><name><surname>Bellec</surname><given-names>P.</given-names></name><name><surname>Birn</surname><given-names>R. M.</given-names></name><name><surname>Biswal</surname><given-names>B. B.</given-names></name><name><surname>Blautzik</surname><given-names>J.</given-names></name><etal/></person-group> (<year>2014</year>). <article-title>An open science resource for establishing reliability and reproducibility in functional connectomics.</article-title>
+<source><italic>Sci. Data</italic></source>
+<volume>1</volume>:<issue>140049</issue>. <pub-id pub-id-type="doi">10.1038/sdata.2014.49</pub-id>
+<pub-id pub-id-type="pmid">25977800</pub-id></mixed-citation>
+      </ref>
+      <ref id="B43">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zuo</surname><given-names>X. N.</given-names></name><name><surname>Biswal</surname><given-names>B. B.</given-names></name><name><surname>Poldrack</surname><given-names>R. A.</given-names></name></person-group> (<year>2019a</year>). <article-title>Editorial: reliability and reproducibility in functional connectomics.</article-title>
+<source><italic>Front. Neurosci.</italic></source>
+<volume>13</volume>:<issue>117</issue>. <pub-id pub-id-type="doi">10.3389/fnins.2019.00117</pub-id>
+<pub-id pub-id-type="pmid">31057360</pub-id></mixed-citation>
+      </ref>
+      <ref id="B44">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zuo</surname><given-names>X. N.</given-names></name><name><surname>Xu</surname><given-names>T.</given-names></name><name><surname>Milham</surname><given-names>M. P.</given-names></name></person-group> (<year>2019b</year>). <article-title>Harnessing reliability for neuroscience research.</article-title>
+<source><italic>Nat. Hum. Behav.</italic></source>
+<volume>3</volume>
+<fpage>768</fpage>–<lpage>771</lpage>. <pub-id pub-id-type="doi">10.1038/s41562-019-0655-x</pub-id>
+<pub-id pub-id-type="pmid">31253883</pub-id></mixed-citation>
+      </ref>
+      <ref id="B45">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zuo</surname><given-names>X. N.</given-names></name><name><surname>Xu</surname><given-names>T.</given-names></name><name><surname>Jiang</surname><given-names>L.</given-names></name><name><surname>Yang</surname><given-names>Z.</given-names></name><name><surname>Cao</surname><given-names>X. Y.</given-names></name><name><surname>He</surname><given-names>Y.</given-names></name><etal/></person-group> (<year>2013</year>). <article-title>Toward reliable characterization of functional homogeneity in the human brain: preprocessing, scan duration, imaging resolution and computational space.</article-title>
+<source><italic>Neuroimage</italic></source>
+<volume>65</volume>
+<fpage>374</fpage>–<lpage>386</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2012.10.017</pub-id>
+<pub-id pub-id-type="pmid">23085497</pub-id></mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

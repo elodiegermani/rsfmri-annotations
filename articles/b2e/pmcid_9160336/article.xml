@@ -1,0 +1,933 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.3" xml:lang="en" article-type="research-article">
+  <?properties open_access?>
+  <processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats">
+    <restricted-by>pmc</restricted-by>
+  </processing-meta>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">Front Hum Neurosci</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Front Hum Neurosci</journal-id>
+      <journal-id journal-id-type="publisher-id">Front. Hum. Neurosci.</journal-id>
+      <journal-title-group>
+        <journal-title>Frontiers in Human Neuroscience</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1662-5161</issn>
+      <publisher>
+        <publisher-name>Frontiers Media S.A.</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">35664342</article-id>
+      <article-id pub-id-type="pmc">9160336</article-id>
+      <article-id pub-id-type="doi">10.3389/fnhum.2022.910669</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Human Neuroscience</subject>
+          <subj-group>
+            <subject>Original Research</subject>
+          </subj-group>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>The Predictive Values of Changes in Local and Remote Brain Functional Connectivity in Primary Angle-Closure Glaucoma Patients According to Support Vector Machine Analysis</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Fu</surname>
+            <given-names>Qiang</given-names>
+          </name>
+          <xref rid="aff1" ref-type="aff">
+<sup>1</sup>
+</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Liu</surname>
+            <given-names>Hui</given-names>
+          </name>
+          <xref rid="aff2" ref-type="aff">
+<sup>2</sup>
+</xref>
+        </contrib>
+        <contrib contrib-type="author" corresp="yes">
+          <name>
+            <surname>Zhong</surname>
+            <given-names>Yu Lin</given-names>
+          </name>
+          <xref rid="aff2" ref-type="aff">
+<sup>2</sup>
+</xref>
+          <xref rid="c001" ref-type="corresp">
+<sup>*</sup>
+</xref>
+          <uri xlink:href="http://loop.frontiersin.org/people/1511492/overview"/>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1"><sup>1</sup><institution>Department of Emergency, Jiangxi Provincial People’s Hospital, The First Affiliated Hospital of Nanchang Medical College</institution>, <addr-line>Nanchang</addr-line>, <country>China</country></aff>
+      <aff id="aff2"><sup>2</sup><institution>Department of Ophthalmology, Jiangxi Provincial People’s Hospital, The First Affiliated Hospital of Nanchang Medical College</institution>, <addr-line>Nanchang</addr-line>, <country>China</country></aff>
+      <author-notes>
+        <fn fn-type="edited-by">
+          <p>Edited by: Yan Tong, Renmin Hospital of Wuhan University, China</p>
+        </fn>
+        <fn fn-type="edited-by">
+          <p>Reviewed by: Chen-Xing Qi, Renmin Hospital of Wuhan University, China; Yu-Chen Chen, Nanjing Medical University, China; Zhi Wen, Renmin Hospital of Wuhan University, China</p>
+        </fn>
+        <corresp id="c001">*Correspondence: Yu Lin Zhong, <email>804722489@qq.com</email></corresp>
+        <fn fn-type="other" id="fn004">
+          <p>This article was submitted to Brain Imaging and Stimulation, a section of the journal Frontiers in Human Neuroscience</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="epub">
+        <day>19</day>
+        <month>5</month>
+        <year>2022</year>
+      </pub-date>
+      <pub-date pub-type="collection">
+        <year>2022</year>
+      </pub-date>
+      <volume>16</volume>
+      <elocation-id>910669</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>01</day>
+          <month>4</month>
+          <year>2022</year>
+        </date>
+        <date date-type="accepted">
+          <day>26</day>
+          <month>4</month>
+          <year>2022</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Copyright © 2022 Fu, Liu and Zhong.</copyright-statement>
+        <copyright-year>2022</copyright-year>
+        <copyright-holder>Fu, Liu and Zhong</copyright-holder>
+        <license>
+          <ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref>
+          <license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY). The use, distribution or reproduction in other forums is permitted, provided the original author(s) and the copyright owner(s) are credited and that the original publication in this journal is cited, in accordance with accepted academic practice. No use, distribution or reproduction is permitted which does not comply with these terms.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <sec>
+          <title>Purpose</title>
+          <p>The primary angle-closure glaucoma (PACG) is an irreversible blinding eye disease in the world. Previous neuroimaging studies demonstrated that PACG patients were associated with cerebral changes. However, the effect of optic atrophy on local and remote brain functional connectivity in PACG patients remains unknown.</p>
+        </sec>
+        <sec>
+          <title>Materials and Methods</title>
+          <p>In total, 23 patients with PACG and 23 well-matched Health Controls (HCs) were enrolled in our study and underwent resting-state functional magnetic resonance imaging (rs-fMRI) scanning. The regional homogeneity (ReHo) method and functional connectivity (FC) method were used to evaluate the local and remote brain functional connectivity. Moreover, support vector machine (SVM) method was applied to constructing PACG classification model.</p>
+        </sec>
+        <sec>
+          <title>Results</title>
+          <p>Compared with the HC, PACG patients showed increased ReHo values in right cerebellum (CER)_8, left CER_4-5, and right CER_8. In contrast, PACG patients showed decreased ReHo values in the bilateral lingual gyrus (LING)/calcarine (CAL)/superior occipital gyrus (SOG) and right postcentral gyrus (PostCG). The ReHo value exhibited an accuracy of 91.30% and area under curve (AUC) of 0.95 for distinguishing the PACG patients from HC.</p>
+        </sec>
+        <sec>
+          <title>Conclusion</title>
+          <p>Our study demonstrated that the PACG patients showed abnormal ReHo value in the cerebellum, visual cortex, and supplementary motor area, which might be reflect the neurological mechanisms underlying vision loss and eye pain in PACG patients. Moreover, the ReHo values can be used as a useful biomarker for distinguishing the PACG patients from HCs.</p>
+        </sec>
+      </abstract>
+      <kwd-group>
+        <kwd>primary angle-closure glaucoma</kwd>
+        <kwd>functional magnetic resonance imaging</kwd>
+        <kwd>regional homogeneity</kwd>
+        <kwd>functional connectivity</kwd>
+        <kwd>support vector machine</kwd>
+      </kwd-group>
+      <counts>
+        <fig-count count="4"/>
+        <table-count count="3"/>
+        <equation-count count="0"/>
+        <ref-count count="38"/>
+        <page-count count="9"/>
+        <word-count count="5343"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec sec-type="intro" id="S1">
+      <title>Introduction</title>
+      <p>Glaucoma is the second leading cause of blindness globally; the number of patients with glaucoma is expected to increase to 79.6 million by 2020 (<xref rid="B23" ref-type="bibr">Quigley and Broman, 2006</xref>). Patients with glaucoma exhibit high intraocular pressure and optic atrophy. Glaucoma can be stratified into open-angle and closed-angle types. The risk factors for glaucoma include genetic (<xref rid="B34" ref-type="bibr">Wiggs and Pasquale, 2017</xref>) and environmental components (<xref rid="B17" ref-type="bibr">Lowe, 1972</xref>). Although medications and surgical procedures are the primary treatments for glaucoma, there is no effective treatment for advanced glaucoma. Neuroimaging studies have increasingly shown that the glaucoma causes optic nerve atrophy and damage to the visual pathway, including the visual cortex (<xref rid="B9" ref-type="bibr">Gupta et al., 2006</xref>; <xref rid="B10" ref-type="bibr">Gupta and Yucel, 2007</xref>).</p>
+      <p>The loss of retinal ganglion cells (RGCs) is the most important pathological change in PACG. The optic atrophy leads to transsynaptic neurodegenerative changes in visual pathways (<xref rid="B22" ref-type="bibr">Nucci et al., 2015</xref>; <xref rid="B18" ref-type="bibr">Mancino et al., 2018</xref>). Functional magnetic resonance imaging (fMRI) methods have been extensively used to detect abnormalities in brain structure and function in glaucoma patients. Wang et al. demonstrated that PACG patients had significantly lower fractional amplitude of low-frequency fluctuation (fALFF) values in the left cuneus, middle temporal gyrus, and right precentral gyrus; they had higher fALFF values in the bilateral superior frontal gyrus (<xref rid="B32" ref-type="bibr">Wang Q. et al., 2021</xref>). Chen et al. reported that the PACG patients showed increased short-range functional connectivity density (FCD) in the left inferior frontal gyrus (IFG)/insula/parahippocampal gyrus and right IFG/insula; they had decreased short-range FCD in the occipital lobe/cuneus/precuneus/superior parietal lobe/postcentral lobe (<xref rid="B4" ref-type="bibr">Chen et al., 2019</xref>). In an analysis of high-tension glaucoma patients, Wang et al. found the decreased functional connectivity (FC) within the visual network (<xref rid="B30" ref-type="bibr">Wang et al., 2020a</xref>). Moreover, Wang et al. demonstrated that primary open-angle glaucoma (POAG) patients had reduced cerebral blood flow (CBF)–functional connectivity strength (FCS) coupling and an altered CBF/FCS ratio in the visual cortex, salience network, default mode network (DMN), and dorsal attention network (<xref rid="B33" ref-type="bibr">Wang R. et al., 2021</xref>). Thus, glaucoma mainly causes abnormal function in the visual cortex. Additionally, glaucoma is accompanied by changes in brain structure. Wang et al. reported that high-tension glaucoma patients showed morphological reductions in visual and non-visual areas throughout the brain (<xref rid="B31" ref-type="bibr">Wang et al., 2020b</xref>). Furlanetto et al. reported that glaucoma patients had smaller optic nerve dimensions and shorter lateral geniculate nuclei compared to healthy controls (HCs) (<xref rid="B8" ref-type="bibr">Furlanetto et al., 2018</xref>). To our knowledge, the previous neuroimaging studies demonstrated that the glaucoma patients were accompanied by vision and vision-related brain region dysfunction. There have been few studies regarding the synchrony of neural activity changes in PACG patients. Thus, we assume that the PACG patients might be associated with abnormal local and remote brain functional connectivity.</p>
+      <p>The resting human brain exhibits homogeneous neural activity, which has an important role in visual function (<xref rid="B5" ref-type="bibr">Costa et al., 2017</xref>). Recently, fMRI has been used to investigate the changes in spontaneous neural activity in the human brain. Regional homogeneity (ReHo) analysis can be used to investigate the homogeneity of neural activity by measuring the functional coherence or synchronization of a particular voxel with its nearest voxels (<xref rid="B37" ref-type="bibr">Zang et al., 2004</xref>). ReHo analysis has revealed changes in the homogeneity of neural activity in vision-related diseases such as iridocyclitis (<xref rid="B27" ref-type="bibr">Tong et al., 2021</xref>) and dysthyroid optic neuropathy (<xref rid="B14" ref-type="bibr">Jiang et al., 2021</xref>). In addition to its high spatial and temporal resolution, ReHo analysis provides robust repeatability. In contrast to other fMRI technologies, ReHo method is data-driven technology without preliminary assumption. Moreover, the ReHo method can reflect the neural activity of the whole brain. Thus, ReHo analysis is suitable for non-invasive exploration of changes in neural activity within the brain. In recent years, the combined development of MRI and machine learning technology has provided powerful diagnostic tools. MRI-related machine learning has been successfully applied for accurate clinical classification and diagnosis of many diseases (<xref rid="B11" ref-type="bibr">Han et al., 2019</xref>; <xref rid="B21" ref-type="bibr">Niu et al., 2021</xref>). Support vector machine (SVM) is a popular tool for fMRI data analysis. SVM can provide a unique solution with a good out-of-sample generalization and an implicit implementation of non-linear classification using the kernel technique. SVM has been used to perform supervised classifications of specific brain functional states/disorders in a variety of task conditions. However, to our knowledge, there have been few studies concerning MRI-related machine learning in PACG patients.</p>
+      <p>Thus, the present study was performed to investigate the changes in the homogeneity of neural activity in PACG patients. We have investigated the changes in remote FC in PACG patients by region of interest (ROI) analysis by means of the ReHo technique. Moreover, a SVM method was used to determine whether aberrant ReHo could reliably distinguish PACG patients from HCs.</p>
+    </sec>
+    <sec sec-type="materials|methods" id="S2">
+      <title>Materials and Methods</title>
+      <sec id="S2.SS1">
+        <title>Participants</title>
+        <p>In total, 23 patients with PACG (10 men and 13 women) were enrolled from the Department of Ophthalmology, Jiangxi Provincial People’s Hospital. The diagnostic criteria of PACG were: (1) the intraocular pressure is greater than 21 mmHg in both eyes; (2) optic disc/cup area &gt; 0.6; (3) typical vision field defect (paracentric obscura, arcuate obscura, nasal ladder, fan-shaped field defect, and peripheral field defect); (4) without any other ocular diseases (high myopia, optic neuritis, strabismus, amblyopia, cataracts, and retinal degeneration). The diagnosis of PACG was conducted by two experienced ophthalmologists. All glaucoma patients underwent anterior chamber angioscopy to make sure the front corner is open. The exclusion criteria of PACG were: (1) advanced PACG patients are associated with severe eye pain; (2) PACG patients with history of surgery; (3) PACG patients with glaucoma-related eye complications such as neovascular glaucoma POAG, secondary glaucoma cataracts, eye atrophy, and corneal edema.</p>
+        <p>Twenty-three patients’ healthy controls (HCs) (10 men and 13 women) were also recruited for this study. The inclusion criteria: (1) without any ocular disease with uncorrected visual acuity (VA) &gt; 1.0; (2) no cardiovascular system diseases and no psychiatric disorders.</p>
+      </sec>
+      <sec id="S2.SS2">
+        <title>Ethical Statement</title>
+        <p>All research methods were followed the Declaration of Helsinki and were approved by the Ethical Committee for Medicine of Jiangxi Provincial People’s Hospital. Participants were enrolled in the study of their own accord and were informed of the purpose, methods, as well as potential risks before signing an informed consent form.</p>
+      </sec>
+      <sec id="S2.SS3">
+        <title>Clinical Evaluation</title>
+        <p>The VA of all subjects was measured using the logMAR table and intraocular pressure was assessed by the automatic intraocular pressure measurement. The best-corrected VA and intraocular pressure of both eyes were measured in the each group.</p>
+      </sec>
+      <sec id="S2.SS4">
+        <title>Magnetic Resonance Imaging Data Acquisition</title>
+        <p>The MRI scanning was performed on a 3-Tesla MR scanner (750W GE Healthcare, Milwaukee, WI, United States) with an eight-channel head coil. All participants were required to close their eyes without falling asleep when undergoing MRI scanning. The subjects should be keep calm and not engage in specific thoughts. The T1 parameters (repetition time = 8.5 ms, echo time = 3.3 ms, thickness = 1.0 mm, gap = 0 mm, acquisition matrix = 256 × 256, field of view = 240 × 240 mm<sup>2</sup>, and flip angle = 12°) and 240 functional images parameters (repetition time = 2,000 ms, echo time = 25 ms, thickness = 3.0 mm, gap = 1.2 mm, acquisition matrix = 64 × 64, field of view = 240 × 240 mm<sup>2</sup>, flip angle = 90°, voxel size = 3.6 × 3.6 × 3.6 mm<sup>3</sup>, and 35 axial slices) covering the whole brain were obtained.</p>
+      </sec>
+      <sec id="S2.SS5">
+        <title>Data Pre-processing</title>
+        <p>All preprocessing was performed using the toolbox for Data Processing and Analysis of Brain Imaging (DPABI<sup><xref rid="footnote1" ref-type="fn">1</xref></sup>) (<xref rid="B35" ref-type="bibr">Yan et al., 2016</xref>) and briefly following the steps: (1) The first 10 volumes of each subject were removed. (2) Slice timing and head motion correction were conducted. (3) Normalized fMRI data were re-sliced with a resolution of 3 × 3 × 3 mm<sup>3</sup>. (4) Data detrends. (5) Linear regression analysis was applied to regress out several covariates (mean frame-wise displacement, global brain signal, and averaged signal from cerebrospinal fluid and white matter). (6) Temporal band-pass filtering was performed (0.01–0.08 Hz).</p>
+      </sec>
+      <sec id="S2.SS6">
+        <title>Regional Homogeneity Analysis</title>
+        <p>The ReHo index was calculated by the DPABI software. All ReHo maps of each voxel were <italic>z</italic>-transformed with Fisher’s <italic><underline>r</underline></italic>-to-<italic>z</italic> transformation to reduce the influence of individual variation for group statistical comparisons.</p>
+      </sec>
+      <sec id="S2.SS7">
+        <title>Functional Connectivity Analysis</title>
+        <p>The seed-based FC was used to investigate the remote FC ROI in different ReHo-related brain regions between two groups. Then we calculated the Pearson’s correlation coefficient between the representative time series of each seed ROI and every other voxel in the whole brain in the voxel-wise method. Finally, the generated correlations-coefficient maps were converted to <italic>Z</italic> values with Fisher’ <italic>r</italic>-to-<italic>z</italic> transformation to reduce the impacts of individual variations for group statistical comparisons.</p>
+      </sec>
+      <sec id="S2.SS8">
+        <title>Support Vector Machine Analysis</title>
+        <p>The SVM algorithm was performed using the Pattern Recognition for Neuroimaging Toolbox (PRoNTo) software Cyclotron Research Centre, University of Liège, Belgium (<xref rid="B24" ref-type="bibr">Schrouff et al., 2013</xref>). The following steps were followed: (1) dataset specification, (2) the ReHo maps served as a classification feature, (3) Then, the leave-one-out cross-validation (LOOCV) technique was applied to perform SVM classifier validation for model estimation. In each LOOCV fold, FC data from <italic>n</italic> – 1 samples were selected as the training dataset to train the classification model. (4) The total accuracy, specificity, sensitivity, and area under the receiver operating characteristic curve (AUC) were calculated.</p>
+      </sec>
+      <sec id="S2.SS9">
+        <title>Statistical Analysis</title>
+        <p>The independent sample <italic>t</italic>-test was used to investigate the clinical features between the two groups.</p>
+        <p>The one-sample <italic>t</italic>-test was conducted to assess the group mean of ReHo maps. The two-sample <italic>t</italic>-test was used to compare the two group differences in the ReHo and FC maps using the Gaussian random field (GRF) method (two-tailed, voxel-level <italic>p</italic> &lt; 0.01, GRF correction, and cluster-level <italic>p</italic> &lt; 0.05).</p>
+      </sec>
+    </sec>
+    <sec sec-type="results" id="S3">
+      <title>Results</title>
+      <sec id="S3.SS1">
+        <title>Demographics and Disease Characteristics</title>
+        <p>There were no statistically significant differences between the PACG and HC groups in gender (<italic>p</italic> &gt; 0.999), education (<italic>p</italic> = 0.506), or age (<italic>p</italic> = 0470), but significant differences in BCVA of right eye (<italic>p</italic> &lt; 0.001) and left eye (<italic>p</italic> &lt; 0.001). The results of these data were listed in <xref rid="T1" ref-type="table">Table 1</xref>.</p>
+        <table-wrap position="float" id="T1">
+          <label>TABLE 1</label>
+          <caption>
+            <p>Demographic and clinical measurements between patients with primary angle-closure glaucoma (PACG) and healthy controls (HCs).</p>
+          </caption>
+          <table frame="hsides" rules="groups" cellspacing="5" cellpadding="5">
+            <thead>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Condition</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">PACG group</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">HC group</td>
+                <td valign="top" align="center" rowspan="1" colspan="1"><italic>T</italic>-value</td>
+                <td valign="top" align="center" rowspan="1" colspan="1"><italic>P</italic>-value</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Age (years)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">50.96 ± 4.85</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">50.82 ± 6.76</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.727</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.470</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Sex (male/female)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">10/13</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">10/13</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">N/A</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">&gt;0.999</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Education (years)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">12.61 ± 5.88</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">11.46 ± 6.86</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.670</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.506</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">BCVA-OD</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.15 ± 0.10</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">1.18 ± 0.12</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.626</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">&lt;0.001</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">BCVA-OS</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.30 ± -0.12</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">1.14 ± 0.10</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.538</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">&lt;0.001</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Handedness</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">23 R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">23 R</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">N/A</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">N/A</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <fn>
+              <p>
+<italic>Chi-square test for sex. Independent t-test was used for other normally distributed continuous data. Data are displayed as mean ± standard deviation. HC, healthy control; BCVA, best-corrected visual acuity; OD, oculus dexter; OS, oculus sinister; N/A, not applicable; R, right.</italic>
+</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+      </sec>
+      <sec id="S3.SS2">
+        <title>Comparisons of Regional Homogeneity Between Patients With Primary Angle-Closure Glaucoma and Health Control</title>
+        <p>The group means of ReHo maps of the PACG and HC are shown in <xref rid="F1" ref-type="fig">Figures 1A,B</xref>. Compared with the HCs, PACG patients showed significantly increased ReHo values in the right cerebellum (CER)_8 and left CER_4-5. Meanwhile, PACG patients showed decreased ReHo values in the bilateral lingual gyrus (LING)/calcarine (CAL)/superior occipital gyrus (SOG) and right postcentral gyrus (PostCG) (<xref rid="T2" ref-type="table">Table 2</xref> and <xref rid="F2" ref-type="fig">Figure 2A</xref>). The mean values of altered ReHo values were shown with a histogram (<xref rid="F2" ref-type="fig">Figure 2B</xref>).</p>
+        <fig position="float" id="F1">
+          <label>FIGURE 1</label>
+          <caption>
+            <p>One-sample <italic>t</italic>-test results of regional homogeneity (ReHo) maps within the primary angle-closure glaucoma (PACG) <bold>(A)</bold> and One-sample <italic>t</italic>-test results of ReHo maps within the healthy control (HC) <bold>(B)</bold>. ReHo, regional homogeneity; PACG, primary angle-closure glaucoma; HC, healthy control.</p>
+          </caption>
+          <graphic xlink:href="fnhum-16-910669-g001" position="float"/>
+        </fig>
+        <table-wrap position="float" id="T2">
+          <label>TABLE 2</label>
+          <caption>
+            <p>Significant differences in the regional homogeneity (ReHo) between two groups.</p>
+          </caption>
+          <table frame="hsides" rules="groups" cellspacing="5" cellpadding="5">
+            <thead>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1"/>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="center" colspan="3" rowspan="1">MNI<hr/></td>
+                <td rowspan="1" colspan="1"/>
+                <td rowspan="1" colspan="1"/>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Condition</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Brain regions</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+<italic>x</italic>
+</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+<italic>y</italic>
+</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+<italic>z</italic>
+</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Peak <italic>T</italic>-scores</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Cluster size (voxels)</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">PACG &gt; HC</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">R_CER_8</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−12</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−60</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−63</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">6.4017</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">645</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">PACG &gt; HC</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">L_CER_4-5</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−12</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−30</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−27</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">4.5909</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">539</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">PACG &gt; HC</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">R_CER_8</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">15</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−21</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−51</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">5.6261</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">143</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">PACG &lt; HC</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">B_LING/CAL/SOG</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−9</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−102</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">18</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−4.5399</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">738</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">PACG &lt; HC</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">R_PostCG</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">39</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−36</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">66</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−4.7791</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">514</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <fn>
+              <p>
+<italic>x, y, and z are the locations of the peak voxels in standard MNI coordinates. ReHo, regional homogeneity; PACG, primary angle-closure glaucoma; HC, healthy control; MNI, Montreal Neurological Institute; CER, Cerebellum; LING, Lingual Gyrus; CAL, Calcarine; SOG, Superior Occipital Gyrus; PostCG, Postcentral Gyrus;R, right; L, left; B, bilateral.</italic>
+</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+        <fig position="float" id="F2">
+          <label>FIGURE 2</label>
+          <caption>
+            <p>Different ReHo between the PACG and HC group. The red denotes higher ReHo values, and the blue areas indicate lower ReHo values (voxel-level <italic>p</italic> &lt; 0.01, GRF correction, cluster-level <italic>p</italic> &lt; 0.05) <bold>(A)</bold>. The mean of altered ReHo values between patients with PACG and HCs <bold>(B)</bold>. ReHo, regional homogeneity; PACG, primary angle-closure glaucoma; HC, healthy control; CER, cerebellum; LING, lingual gyrus; CAL, calcarine; SOG, superior occipital gyrus; PostCG, postcentral gyrus.</p>
+          </caption>
+          <graphic xlink:href="fnhum-16-910669-g002" position="float"/>
+        </fig>
+      </sec>
+      <sec id="S3.SS3">
+        <title>Differences in Functional Connectivity</title>
+        <p>The seed-based FC was used to investigate the remote FC between two groups with ROI in the five different ReHo brain regions: (1) ROI in R_CER_8, the PACG patients showed decreased FC between the R_CER_8 and R_IPL, L_IFG, R_SFG (<xref rid="T3" ref-type="table">Table 3</xref> and <xref rid="F3" ref-type="fig">Figure 3A</xref>). (2) ROI in L_CER_4-5, the PACG patients showed decreased FC between the L_CER_4-5 and R_CER_8, R_CER_4_5, L_MFG, R_MFG, L_PreCUN (<xref rid="T3" ref-type="table">Table 3</xref> and <xref rid="F3" ref-type="fig">Figure 3B</xref>). (3) ROI in R_CER_8, the PACG patients showed decreased FC between the L_INS, and L_ACC, R_ANG, L_PreCUN (<xref rid="T3" ref-type="table">Table 3</xref> and <xref rid="F3" ref-type="fig">Figure 3C</xref>). (4) ROI in B_LING/CAL/SOG, the PACG patients showed decreased FC between the B_LING/CAL/SOG and R_CER, L_CAL, R_PostCG (<xref rid="T3" ref-type="table">Table 3</xref> and <xref rid="F3" ref-type="fig">Figure 3D</xref>). (5) ROI in R_PostCG, the PACG patients showed decreased FC between the R_PostCG and L_STG, L_INS, L_IFG, R_CAL, L_IFG (<xref rid="T3" ref-type="table">Table 3</xref> and <xref rid="F3" ref-type="fig">Figure 3E</xref>).</p>
+        <table-wrap position="float" id="T3">
+          <label>TABLE 3</label>
+          <caption>
+            <p>Significant differences in the functional connectivity (FC) between two groups.</p>
+          </caption>
+          <table frame="hsides" rules="groups" cellspacing="5" cellpadding="5">
+            <thead>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1"/>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="center" colspan="3" rowspan="1">MNI<hr/></td>
+                <td rowspan="1" colspan="1"/>
+                <td rowspan="1" colspan="1"/>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Condition</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Brain regions</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+<italic>x</italic>
+</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+<italic>y</italic>
+</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+<italic>z</italic>
+</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Peak <italic>T</italic>-scores</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Cluster size (voxels)</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td valign="top" align="left" colspan="7" rowspan="1">ROI in R_CER_8</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">PACG &lt; HC</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">R_IPL</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">45</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−54</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">42</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−5.3942</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">7070</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">PACG &lt; HC</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">L_IFG</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−51</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">39</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−9</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−3.7121</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">196</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">PACG &lt; HC</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">R_SFG</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">18</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−3</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">57</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–4.2058</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">485</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" colspan="7" rowspan="1">ROI in L_CER_4-5</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">PACG &lt; HC</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">R_CER_8</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">15</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−54</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−60</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−4.858</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">1990</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">PACG &gt; HC</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">R_CER_4_5</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">15</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–21</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−24</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">5.1884</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">653</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">PACG &lt; HC</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">L_MFG</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−39</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">60</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">12</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−4.5478</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">1076</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">PACG &lt; HC</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">R_MFG</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">39</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">45</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">15</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−3.2698</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">57</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">PACG &lt; HC</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">L_PreCUN</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−9</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−66</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">42</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−5.0912</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">4947</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" colspan="7" rowspan="1">ROI in R_CER_8</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">PACG &lt; HC</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">L_INS</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–42</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">3</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–4.4446</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">723</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">PACG &lt; HC</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">L_ACC</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">3</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">39</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">9</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–4.1039</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">652</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">PACG &lt; HC</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">R_ANG</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">21</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–60</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">45</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–4.4087</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">477</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">PACG &lt; HC</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">L_PreCUN</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–12</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–63</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">39</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–4.7861</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">988</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" colspan="7" rowspan="1">ROI in B_LING/CAL/SOG</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">PACG &lt; HC</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">R_CER</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">18</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–39</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–60</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–4.3662</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">469</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">PACG &lt; HC</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">L_CAL</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">18</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–96</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–15</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–3.3303</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">171</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">PACG &lt; HC</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">R_PostCG</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">30</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–33</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">54</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–4.4334</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">4396</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" colspan="7" rowspan="1">ROI in R_PostCG</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">PACG &lt; HC</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">L_STG</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">-30</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">15</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–36</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–3.6386</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">44</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">PACG &lt; HC</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">L_INS</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–36</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–15</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–12</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–4.5824</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">593</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">PACG &lt; HC</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">L_IFG</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–51</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">39</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–9</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–3.5894</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">73</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">PACG &lt; HC</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">R_CAL</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">18</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–78</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">9</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–5.1517</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">6779</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">PACG &lt; HC</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">L_IFG</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–33</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">33</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">3</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–3.4947</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">48</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <fn>
+              <p>
+<italic>x, y, and z are the locations of the peak voxels in standard MNI coordinates. FC, functional connectivity; PACG, primary angle-closure glaucoma; HC, healthy control; MNI, Montreal Neurological Institute; CER, Cerebellum; LING, Lingual Gyrus; CAL, Calcarine; SOG, Superior Occipital Gyrus; PostCG, Postcentral Gyrus; IPL, Inferior Parietal Lobule; IFG, Inferior Frontal Gyrus; SFG, Superior Frontal Gyrus; MFG, Middle Frontal Gyrus; PreCUN, Precuneus; INS, Insula; ACC, Anterior Cingulate Gyrus; ANG, Angular Gyrus; PostCG, Precentral Gyrus; STG, Superior Temporal Gyrus; IFG, Inferior Frontal Gyrus; R, right; L, left; B, bilateral.</italic>
+</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+        <fig position="float" id="F3">
+          <label>FIGURE 3</label>
+          <caption>
+            <p>Different FC between two groups with region of interest (ROI) in R_CER_8 <bold>(A)</bold>. Different functional connectivity (FC) between two groups with ROI in L_CER_4-5 <bold>(B)</bold>. Different FC between two groups with ROI in R_CER_8. <bold>(C)</bold> Different FC between two groups with ROI in B_LING/CAL/SOG <bold>(D)</bold>. Different FC between two groups with ROI in R_PostCG <bold>(E)</bold>. The red denotes higher FC signal values, and the blue areas indicate lower FC signal values (voxel-level <italic>p</italic> &lt; 0.01, GRF correction, cluster-level <italic>p</italic> &lt; 0.01). FC, functional connectivity; PACG, primary angle-closure glaucoma; HC, healthy control; CER, cerebellum; LING, lingual gyrus; CAL, calcarine; SOG, superior occipital gyrus; PostCG, postcentral gyrus.</p>
+          </caption>
+          <graphic xlink:href="fnhum-16-910669-g003" position="float"/>
+        </fig>
+      </sec>
+      <sec id="S3.SS4">
+        <title>Support Vector Machine Results</title>
+        <p>The SVM classification reaches a total accuracy of 91.30%. Classification results using machine learning analysis were based on the ReHo values. Three-dimensional confusion matrices from machine learning analysis (<xref rid="F4" ref-type="fig">Figure 4A</xref>). Function values of two groups (class 1: PACG group; class 2: HC group) (<xref rid="F4" ref-type="fig">Figure 4B</xref>). The ROC curve of the SVM classifier with an AUC value of 0.95 (<xref rid="F4" ref-type="fig">Figure 4C</xref>). Weight maps for SVM models. The weight in each voxel corresponding to its contribution to the model’s prediction (<xref rid="F4" ref-type="fig">Figure 4D</xref>).</p>
+        <fig position="float" id="F4">
+          <label>FIGURE 4</label>
+          <caption>
+            <p>Classification results using machine learning analysis based on ReHo values. Three-dimensional confusion matrices from machine learning analysis <bold>(A)</bold>. Function values of two groups (class 1: PACG group; class 2: HC group) <bold>(B)</bold>. The ROC curve of the SVM classifier with an AUC value of 0.95 <bold>(C)</bold>. Weight maps for SVM models. The weight in each voxel corresponding to its contribution to the model’s prediction <bold>(D)</bold>.</p>
+          </caption>
+          <graphic xlink:href="fnhum-16-910669-g004" position="float"/>
+        </fig>
+      </sec>
+    </sec>
+    <sec sec-type="discussion" id="S4">
+      <title>Discussion</title>
+      <p>In this study, compared with HCs, PACG patients had significantly greater ReHo values in the right cerebellum (CER)_8 and left CER_4-5. PACG patients also showed decreased ReHo values in the bilateral lingual gyrus (LING)/calcarine (CAL)/SOG and right PostCG. Moreover, PACG patients showed abnormal remote FC within the cerebellar network, visual network, DMN, and sensorimotor network (SMN). Notably, the SVM classifier exhibited overall accuracy of 91.30% and an AUC of 0.95 based on ReHo values.</p>
+      <p>As noted above, PACG patients had significantly greater ReHo values in the right CER_8 and left CER_4-5, compared with the values in HCs. The cerebellum has important roles in motor control and body balance (<xref rid="B7" ref-type="bibr">Doya, 2000</xref>; <xref rid="B20" ref-type="bibr">Morton and Bastian, 2004</xref>), as well as higher cognitive function (<xref rid="B19" ref-type="bibr">Middleton and Strick, 1994</xref>). The cerebellum also has important roles in visual attention and working memory (<xref rid="B6" ref-type="bibr">Dai et al., 2013</xref>; <xref rid="B3" ref-type="bibr">Brissenden et al., 2018</xref>; <xref rid="B29" ref-type="bibr">van Es et al., 2019</xref>). Thus, the cerebellum participates in visual information processing. Dai et al. demonstrated that POAG patients had increased FC between V1 and the cerebellum (<xref rid="B6" ref-type="bibr">Dai et al., 2013</xref>). Song et al. also reported that POAG patients had increased ReHo values in the cerebellum (<xref rid="B25" ref-type="bibr">Song et al., 2014</xref>). In the present study, we found that increased ReHo in the cerebellum of PACG patients, which might reflect impaired visual attention in such patients.</p>
+      <p>Importantly, PACG patients had decreased ReHo values in the bilateral LING/CAL/SOG, which is located in the primary visual cortex. Furthermore, we found that PACG patients had decreased remote FC between the visual cortex and the CER, CAL, and PostCG. High intraocular pressure in PACG patients can lead to RGC loss, which results in decreased transmission of visual signals into the visual cortex. Furthermore, the previous neuroimaging studies demonstrated the visual pathway atrophy in glaucoma patients (<xref rid="B13" ref-type="bibr">Hernowo et al., 2011</xref>; <xref rid="B12" ref-type="bibr">Haykal et al., 2021</xref>). Other studies demonstrated that PACG patients had abnormal cortical thickness in the visual cortex (<xref rid="B36" ref-type="bibr">Yu et al., 2013</xref>; <xref rid="B2" ref-type="bibr">Bogorodzki et al., 2014</xref>). Thus, we found that the ReHo was decreased in the primary visual cortex of PACG patients, which might indicate abnormal visual information processing in the visual cortex.</p>
+      <p>In this study, we found that PACG patients had decreased ReHo values in the right PostCG. The PostCG has an important role in sensorimotor function (<xref rid="B38" ref-type="bibr">Zlatkina et al., 2016</xref>). The PostCG dysfunction might induce motor control impairment (<xref rid="B15" ref-type="bibr">Kato and Izumiyama, 2015</xref>). Vivek Trivedi et al. reported that visuomotor coordination might be impaired in glaucoma patients (<xref rid="B28" ref-type="bibr">Trivedi et al., 2019</xref>). Furthermore, the visual field defect might lead to slow movement and falls in PACG patients; glaucoma patients showed impairments in both visual and somatosensory function, compared to HCs (<xref rid="B1" ref-type="bibr">Black et al., 2008</xref>; <xref rid="B16" ref-type="bibr">Kotecha et al., 2012</xref>). Consistent with these findings, our study demonstrated that the PACG patients had decreased ReHo values in the PostCG, which might reflect sensorimotor dysfunction. Additionally, the PostCG is important for pain sensory processing. In our study, PACG patients showed symptoms of acute eye pain. The PostCG is also involved in pain information processing. The previous neuroimaging studies demonstrated that the eye pain-related diseases might induce PostCG dysfunction (<xref rid="B26" ref-type="bibr">Tang et al., 2018</xref>). Thus, we speculate that the impaired visuomotor coordination and acute eye pain contribute to PostCG dysfunction in PACG patients.</p>
+      <p>Finally, a machine learning technique (i.e., an SVM classifier) was used to determine whether aberrant ReHo values could reliably distinguish PACG patients from HCs. In our study, the SVM classifier accuracy was 91.30%. The ROC curve of the SVM classifier revealed an AUC of 0.95. Our findings indicate that the ReHo values can be used to reliably distinguish PACG patients from HCs. Therefore, the combination of ReHo analysis and machine learning can be used for disease classification and diagnosis, support the use of these methods in future clinical practice. Thus, SVM model showed high sensitive classification and diagnosis ability using ReHo as a feature. In the future, SVM model could be used for early diagnosis of glaucoma.</p>
+    </sec>
+    <sec id="S5">
+      <title>Limitations</title>
+      <p>First, the sample size was small. Second, ReHo and FC values on the basis of blood oxygenation level-dependent signals would still be affected by physiological noise, such as cardiac and respiratory activity and scanning noise. Thirds, PACG patients have an inconsistent course of disease, which might be bad impact on the results of the study.</p>
+    </sec>
+    <sec sec-type="conclusion" id="S6">
+      <title>Conclusion</title>
+      <p>Our results showed that PACG patients had abnormal homogeneity of neural activities such as cerebellum, visual cortex, and sensorimotor cortex, which might indicate the neural mechanism of visual field defect in patients with PACG. Moreover, ReHo map could be sensitive biomarkers for distinguishing patients with PACG from HCs.</p>
+    </sec>
+    <sec sec-type="data-availability" id="S7">
+      <title>Data Availability Statement</title>
+      <p>The raw data supporting the conclusions of this article will be made available by the authors, without undue reservation.</p>
+    </sec>
+    <sec id="S8">
+      <title>Ethics Statement</title>
+      <p>The studies involving human participants were reviewed and approved by Ethical Committee for Medicine of Jiangxi Provincial People’s Hospital. The patients/participants provided their written informed consent to participate in this study.</p>
+    </sec>
+    <sec id="S9">
+      <title>Author Contributions</title>
+      <p>QF, HL, and YZ contributed to data collection, statistical analyses, wrote the manuscript, designed the protocol, MRI analysis, designed the study, oversaw all clinical aspects of study conduct, and manuscript preparation. All authors contributed to the article and approved the submitted version.</p>
+    </sec>
+    <sec sec-type="COI-statement" id="conf1">
+      <title>Conflict of Interest</title>
+      <p>The authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.</p>
+    </sec>
+    <sec sec-type="disclaimer" id="pudiscl1">
+      <title>Publisher’s Note</title>
+      <p>All claims expressed in this article are solely those of the authors and do not necessarily represent those of their affiliated organizations, or those of the publisher, the editors and the reviewers. Any product that may be evaluated in this article, or claim that may be made by its manufacturer, is not guaranteed or endorsed by the publisher.</p>
+    </sec>
+  </body>
+  <back>
+    <fn-group>
+      <fn id="footnote1">
+        <label>1</label>
+        <p>
+<ext-link xlink:href="http://www.rfmri.org/dpabi" ext-link-type="uri">http://www.rfmri.org/dpabi</ext-link>
+</p>
+      </fn>
+    </fn-group>
+    <ref-list>
+      <title>References</title>
+      <ref id="B1">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Black</surname><given-names>A. A.</given-names></name><name><surname>Wood</surname><given-names>J. M.</given-names></name><name><surname>Lovie-Kitchin</surname><given-names>J. E.</given-names></name><name><surname>Newman</surname><given-names>B. M.</given-names></name></person-group> (<year>2008</year>). <article-title>Visual impairment and postural sway among older adults with glaucoma.</article-title>
+<source><italic>Optom. Vis. Sci.</italic></source>
+<volume>85</volume>
+<fpage>489</fpage>–<lpage>497</lpage>. <pub-id pub-id-type="doi">10.1097/OPX.0b013e31817882db</pub-id>
+<pub-id pub-id-type="pmid">18521027</pub-id></mixed-citation>
+      </ref>
+      <ref id="B2">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Bogorodzki</surname><given-names>P.</given-names></name><name><surname>Piatkowska-Janko</surname><given-names>E.</given-names></name><name><surname>Szaflik</surname><given-names>J.</given-names></name><name><surname>Szaflik</surname><given-names>J. P.</given-names></name><name><surname>Gacek</surname><given-names>M.</given-names></name><name><surname>Grieb</surname><given-names>P.</given-names></name></person-group> (<year>2014</year>). <article-title>Mapping cortical thickness of the patients with unilateral end-stage open angle glaucoma on planar cerebral cortex maps.</article-title>
+<source><italic>PLoS One</italic></source>
+<volume>9</volume>:<fpage>e93682</fpage>. <pub-id pub-id-type="doi">10.1371/journal.pone.0093682</pub-id><pub-id pub-id-type="pmid">24709970</pub-id></mixed-citation>
+      </ref>
+      <ref id="B3">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Brissenden</surname><given-names>J. A.</given-names></name><name><surname>Tobyne</surname><given-names>S. M.</given-names></name><name><surname>Osher</surname><given-names>D. E.</given-names></name><name><surname>Levin</surname><given-names>E. J.</given-names></name><name><surname>Halko</surname><given-names>M. A.</given-names></name><name><surname>Somers</surname><given-names>D. C.</given-names></name></person-group> (<year>2018</year>). <article-title>Topographic Cortico-cerebellar Networks Revealed by Visual Attention and Working Memory.</article-title>
+<source><italic>Curr. Biol.</italic></source>
+<volume>28</volume>
+<fpage>3364</fpage>–<lpage>3372e5</lpage>. <pub-id pub-id-type="doi">10.1016/j.cub.2018.08.059</pub-id>
+<pub-id pub-id-type="pmid">30344119</pub-id></mixed-citation>
+      </ref>
+      <ref id="B4">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Chen</surname><given-names>L.</given-names></name><name><surname>Li</surname><given-names>S.</given-names></name><name><surname>Cai</surname><given-names>F.</given-names></name><name><surname>Wu</surname><given-names>L.</given-names></name><name><surname>Gong</surname><given-names>H.</given-names></name><name><surname>Pei</surname><given-names>C.</given-names></name><etal/></person-group> (<year>2019</year>). <article-title>Altered functional connectivity density in primary angle-closure glaucoma patients at resting-state.</article-title>
+<source><italic>Quant. Imaging Med. Surg.</italic></source>
+<volume>9</volume>
+<fpage>603</fpage>–<lpage>614</lpage>. <pub-id pub-id-type="doi">10.21037/qims.2019.04.13</pub-id>
+<pub-id pub-id-type="pmid">31143651</pub-id></mixed-citation>
+      </ref>
+      <ref id="B5">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Costa</surname><given-names>G. N.</given-names></name><name><surname>Duarte</surname><given-names>J. V.</given-names></name><name><surname>Martins</surname><given-names>R.</given-names></name><name><surname>Wibral</surname><given-names>M.</given-names></name><name><surname>Castelo-Branco</surname><given-names>M.</given-names></name></person-group> (<year>2017</year>). <article-title>Interhemispheric Binding of Ambiguous Visual Motion Is Associated with Changes in Beta Oscillatory Activity but Not with Gamma Range Synchrony.</article-title>
+<source><italic>J. Cogn. Neurosci.</italic></source>
+<volume>29</volume>
+<fpage>1829</fpage>–<lpage>1844</lpage>. <pub-id pub-id-type="doi">10.1162/jocn_a_01158</pub-id>
+<pub-id pub-id-type="pmid">28654360</pub-id></mixed-citation>
+      </ref>
+      <ref id="B6">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Dai</surname><given-names>H.</given-names></name><name><surname>Morelli</surname><given-names>J. N.</given-names></name><name><surname>Ai</surname><given-names>F.</given-names></name><name><surname>Yin</surname><given-names>D.</given-names></name><name><surname>Hu</surname><given-names>C.</given-names></name><name><surname>Xu</surname><given-names>D.</given-names></name><etal/></person-group> (<year>2013</year>). <article-title>Resting-state functional MRI: functional connectivity analysis of the visual cortex in primary open-angle glaucoma patients.</article-title>
+<source><italic>Hum. Brain Mapp.</italic></source>
+<volume>34</volume>
+<fpage>2455</fpage>–<lpage>2463</lpage>. <pub-id pub-id-type="doi">10.1002/hbm.22079</pub-id>
+<pub-id pub-id-type="pmid">22461380</pub-id></mixed-citation>
+      </ref>
+      <ref id="B7">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Doya</surname><given-names>K.</given-names></name></person-group> (<year>2000</year>). <article-title>Complementary roles of basal ganglia and cerebellum in learning and motor control.</article-title>
+<source><italic>Curr. Opin. Neurobiol.</italic></source>
+<volume>10</volume>
+<fpage>732</fpage>–<lpage>739</lpage>. <pub-id pub-id-type="doi">10.1016/s0959-4388(00)00153-7</pub-id>
+<pub-id pub-id-type="pmid">11240282</pub-id></mixed-citation>
+      </ref>
+      <ref id="B8">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Furlanetto</surname><given-names>R. L.</given-names></name><name><surname>Teixeira</surname><given-names>S. H.</given-names></name><name><surname>Gracitelli</surname><given-names>C. P. B.</given-names></name><name><surname>Lottenberg</surname><given-names>C. L.</given-names></name><name><surname>Emori</surname><given-names>F.</given-names></name><name><surname>Michelan</surname><given-names>M.</given-names></name></person-group> (<year>2018</year>). <article-title>Structural and functional analyses of the optic nerve and lateral geniculate nucleus in glaucoma.</article-title>
+<source><italic>PLoS One</italic></source>
+<volume>13</volume>:<fpage>e0194038</fpage>. <pub-id pub-id-type="doi">10.1371/journal.pone.0194038</pub-id><pub-id pub-id-type="pmid">29570721</pub-id></mixed-citation>
+      </ref>
+      <ref id="B9">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Gupta</surname><given-names>N.</given-names></name><name><surname>Ang</surname><given-names>L. C.</given-names></name><name><surname>de Tilly</surname><given-names>L. Noel</given-names></name><name><surname>Bidaisee</surname><given-names>L.</given-names></name><name><surname>Yucel</surname><given-names>Y. H.</given-names></name></person-group> (<year>2006</year>). <article-title>Human glaucoma and neural degeneration in intracranial optic nerve, lateral geniculate nucleus, and visual cortex.</article-title>
+<source><italic>Br. J. Ophthalmol</italic>,</source>
+<volume>90</volume>
+<fpage>674</fpage>–<lpage>678</lpage>. <pub-id pub-id-type="doi">10.1136/bjo.2005.086769</pub-id>
+<pub-id pub-id-type="pmid">16464969</pub-id></mixed-citation>
+      </ref>
+      <ref id="B10">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Gupta</surname><given-names>N.</given-names></name><name><surname>Yucel</surname><given-names>Y. H.</given-names></name></person-group> (<year>2007</year>). <article-title>What changes can we expect in the brain of glaucoma patients?</article-title>
+<source><italic>Surv. Ophthalmol.</italic></source>
+<volume>52</volume>
+<fpage>S122</fpage>–<lpage>S126</lpage>. <pub-id pub-id-type="doi">10.1016/j.survophthal.2007.08.006</pub-id>
+<pub-id pub-id-type="pmid">17998036</pub-id></mixed-citation>
+      </ref>
+      <ref id="B11">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Han</surname><given-names>K. M.</given-names></name><name><surname>De Berardis</surname><given-names>D.</given-names></name><name><surname>Fornaro</surname><given-names>M.</given-names></name><name><surname>Kim</surname><given-names>Y. K.</given-names></name></person-group> (<year>2019</year>). <article-title>Differentiating between bipolar and unipolar depression in functional and structural MRI studies.</article-title>
+<source><italic>Prog. Neuropsychopharmacol. Biol. Psychiatry</italic></source>
+<volume>91</volume>
+<fpage>20</fpage>–<lpage>27</lpage>. <pub-id pub-id-type="doi">10.1016/j.pnpbp.2018.03.022</pub-id>
+<pub-id pub-id-type="pmid">29601896</pub-id></mixed-citation>
+      </ref>
+      <ref id="B12">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Haykal</surname><given-names>S.</given-names></name><name><surname>Jansonius</surname><given-names>N. M.</given-names></name><name><surname>Cornelissen</surname><given-names>F. W.</given-names></name></person-group> (<year>2021</year>). <article-title>Progression of Visual Pathway Degeneration in Primary Open-Angle Glaucoma: a Longitudinal Study.</article-title>
+<source><italic>Front. Hum. Neurosci.</italic></source>
+<volume>15</volume>:<fpage>630898</fpage>. <pub-id pub-id-type="doi">10.3389/fnhum.2021.630898</pub-id><pub-id pub-id-type="pmid">33854423</pub-id></mixed-citation>
+      </ref>
+      <ref id="B13">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Hernowo</surname><given-names>A. T.</given-names></name><name><surname>Boucard</surname><given-names>C. C.</given-names></name><name><surname>Jansonius</surname><given-names>N. M.</given-names></name><name><surname>Hooymans</surname><given-names>J. M.</given-names></name><name><surname>Cornelissen</surname><given-names>F. W.</given-names></name></person-group> (<year>2011</year>). <article-title>Automated morphometry of the visual pathway in primary open-angle glaucoma.</article-title>
+<source><italic>Invest. Ophthalmol. Vis. Sci.</italic></source>
+<volume>52</volume>
+<fpage>2758</fpage>–<lpage>2766</lpage>. <pub-id pub-id-type="doi">10.1167/iovs.10-5682</pub-id>
+<pub-id pub-id-type="pmid">21398286</pub-id></mixed-citation>
+      </ref>
+      <ref id="B14">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Jiang</surname><given-names>Y. P.</given-names></name><name><surname>Yang</surname><given-names>Y. C.</given-names></name><name><surname>Tang</surname><given-names>L. Y.</given-names></name><name><surname>Ge</surname><given-names>Q. M.</given-names></name><name><surname>Shi</surname><given-names>W. Q.</given-names></name><name><surname>Su</surname><given-names>T.</given-names></name><etal/></person-group> (<year>2021</year>). <article-title>Altered spontaneous brain activity patterns in dysthyroid optic neuropathy: a resting-state fMRI study.</article-title>
+<source><italic>J. Integr. Neurosci.</italic></source>
+<volume>20</volume>
+<fpage>375</fpage>–<lpage>383</lpage>. <pub-id pub-id-type="doi">10.31083/j.jin2002037</pub-id>
+<pub-id pub-id-type="pmid">34258936</pub-id></mixed-citation>
+      </ref>
+      <ref id="B15">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Kato</surname><given-names>H.</given-names></name><name><surname>Izumiyama</surname><given-names>M.</given-names></name></person-group> (<year>2015</year>). <article-title>Impaired motor control due to proprioceptive sensory loss in a patient with cerebral infarction localized to the postcentral gyrus.</article-title>
+<source><italic>J. Rehabil. Med.</italic></source>
+<volume>47</volume>
+<fpage>187</fpage>–<lpage>190</lpage>. <pub-id pub-id-type="doi">10.2340/16501977-1900</pub-id>
+<pub-id pub-id-type="pmid">25268114</pub-id></mixed-citation>
+      </ref>
+      <ref id="B16">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Kotecha</surname><given-names>A.</given-names></name><name><surname>Richardson</surname><given-names>G.</given-names></name><name><surname>Chopra</surname><given-names>R.</given-names></name><name><surname>Fahy</surname><given-names>R. T.</given-names></name><name><surname>Garway-Heath</surname><given-names>D. F.</given-names></name><name><surname>Rubin</surname><given-names>G. S.</given-names></name></person-group> (<year>2012</year>). <article-title>Balance control in glaucoma.</article-title>
+<source><italic>Invest. Ophthalmol. Vis. Sci.</italic></source>
+<volume>53</volume>
+<fpage>7795</fpage>–<lpage>7801</lpage>. <pub-id pub-id-type="doi">10.1167/iovs.12-10866</pub-id>
+<pub-id pub-id-type="pmid">23060145</pub-id></mixed-citation>
+      </ref>
+      <ref id="B17">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Lowe</surname><given-names>R. F.</given-names></name></person-group> (<year>1972</year>). <article-title>Primary angle-closure glaucoma.</article-title>
+<source><italic>Br. J. Ophthalmol.</italic></source>
+<volume>56</volume>
+<fpage>13</fpage>–<lpage>20</lpage>.<pub-id pub-id-type="pmid">5058710</pub-id></mixed-citation>
+      </ref>
+      <ref id="B18">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Mancino</surname><given-names>R.</given-names></name><name><surname>Martucci</surname><given-names>A.</given-names></name><name><surname>Cesareo</surname><given-names>M.</given-names></name><name><surname>Giannini</surname><given-names>C.</given-names></name><name><surname>Corasaniti</surname><given-names>M. T.</given-names></name><name><surname>Bagetta</surname><given-names>G.</given-names></name><etal/></person-group> (<year>2018</year>). <article-title>Glaucoma and Alzheimer Disease: one Age-Related Neurodegenerative Disease of the Brain.</article-title>
+<source><italic>Curr. Neuropharmacol.</italic></source>
+<volume>16</volume>
+<fpage>971</fpage>–<lpage>977</lpage>. <pub-id pub-id-type="doi">10.2174/1570159X16666171206144045</pub-id>
+<pub-id pub-id-type="pmid">29210654</pub-id></mixed-citation>
+      </ref>
+      <ref id="B19">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Middleton</surname><given-names>F. A.</given-names></name><name><surname>Strick</surname><given-names>P. L.</given-names></name></person-group> (<year>1994</year>). <article-title>Anatomical evidence for cerebellar and basal ganglia involvement in higher cognitive function.</article-title>
+<source><italic>Science</italic></source>
+<volume>266</volume>
+<fpage>458</fpage>–<lpage>461</lpage>. <pub-id pub-id-type="doi">10.1126/science.7939688</pub-id>
+<pub-id pub-id-type="pmid">7939688</pub-id></mixed-citation>
+      </ref>
+      <ref id="B20">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Morton</surname><given-names>S. M.</given-names></name><name><surname>Bastian</surname><given-names>A. J.</given-names></name></person-group> (<year>2004</year>). <article-title>Cerebellar control of balance and locomotion.</article-title>
+<source><italic>Neuroscientist</italic></source>
+<volume>10</volume>
+<fpage>247</fpage>–<lpage>259</lpage>. <pub-id pub-id-type="doi">10.1177/1073858404263517</pub-id>
+<pub-id pub-id-type="pmid">15155063</pub-id></mixed-citation>
+      </ref>
+      <ref id="B21">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Niu</surname><given-names>C.</given-names></name><name><surname>Wang</surname><given-names>Y.</given-names></name><name><surname>Cohen</surname><given-names>A. D.</given-names></name><name><surname>Liu</surname><given-names>X.</given-names></name><name><surname>Li</surname><given-names>H.</given-names></name><name><surname>Lin</surname><given-names>P.</given-names></name><etal/></person-group> (<year>2021</year>). <article-title>Machine learning may predict individual hand motor activation from resting-state fMRI in patients with brain tumors in perirolandic cortex.</article-title>
+<source><italic>Eur. Radiol.</italic></source>
+<volume>31</volume>
+<fpage>5253</fpage>–<lpage>5262</lpage>. <pub-id pub-id-type="doi">10.1007/s00330-021-07825-w</pub-id>
+<pub-id pub-id-type="pmid">33758954</pub-id></mixed-citation>
+      </ref>
+      <ref id="B22">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Nucci</surname><given-names>C.</given-names></name><name><surname>Martucci</surname><given-names>A.</given-names></name><name><surname>Cesareo</surname><given-names>M.</given-names></name><name><surname>Garaci</surname><given-names>F.</given-names></name><name><surname>Morrone</surname><given-names>L. A.</given-names></name><name><surname>Russo</surname><given-names>R.</given-names></name><etal/></person-group> (<year>2015</year>). <article-title>Links among glaucoma, neurodegenerative, and vascular diseases of the central nervous system.</article-title>
+<source><italic>Prog. Brain Res.</italic></source>
+<volume>221</volume>
+<fpage>49</fpage>–<lpage>65</lpage>. <pub-id pub-id-type="doi">10.1016/bs.pbr.2015.04.010</pub-id>
+<pub-id pub-id-type="pmid">26518072</pub-id></mixed-citation>
+      </ref>
+      <ref id="B23">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Quigley</surname><given-names>H. A.</given-names></name><name><surname>Broman</surname><given-names>A. T.</given-names></name></person-group> (<year>2006</year>). <article-title>The number of people with glaucoma worldwide in 2010 and 2020.</article-title>
+<source><italic>Br. J. Ophthalmol.</italic></source>
+<volume>90</volume>
+<fpage>262</fpage>–<lpage>267</lpage>. <pub-id pub-id-type="doi">10.1136/bjo.2005.081224</pub-id>
+<pub-id pub-id-type="pmid">16488940</pub-id></mixed-citation>
+      </ref>
+      <ref id="B24">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Schrouff</surname><given-names>J.</given-names></name><name><surname>Rosa</surname><given-names>M. J.</given-names></name><name><surname>Rondina</surname><given-names>J. M.</given-names></name><name><surname>Marquand</surname><given-names>A. F.</given-names></name><name><surname>Chu</surname><given-names>C.</given-names></name><name><surname>Ashburner</surname><given-names>J.</given-names></name><etal/></person-group> (<year>2013</year>). <article-title>PRoNTo: pattern recognition for neuroimaging toolbox.</article-title>
+<source><italic>Neuroinformatics</italic></source>
+<volume>11</volume>
+<fpage>319</fpage>–<lpage>337</lpage>. <pub-id pub-id-type="doi">10.1007/s12021-013-9178-1</pub-id>
+<pub-id pub-id-type="pmid">23417655</pub-id></mixed-citation>
+      </ref>
+      <ref id="B25">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Song</surname><given-names>Y.</given-names></name><name><surname>Mu</surname><given-names>K.</given-names></name><name><surname>Wang</surname><given-names>J.</given-names></name><name><surname>Lin</surname><given-names>F.</given-names></name><name><surname>Chen</surname><given-names>Z.</given-names></name><name><surname>Yan</surname><given-names>X.</given-names></name><etal/></person-group> (<year>2014</year>). <article-title>Altered spontaneous brain activity in primary open angle glaucoma: a resting-state functional magnetic resonance imaging study.</article-title>
+<source><italic>PLoS One</italic></source>
+<volume>9</volume>:<fpage>e89493</fpage>. <pub-id pub-id-type="doi">10.1371/journal.pone.0089493</pub-id><pub-id pub-id-type="pmid">24586822</pub-id></mixed-citation>
+      </ref>
+      <ref id="B26">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Tang</surname><given-names>L. Y.</given-names></name><name><surname>Li</surname><given-names>H. J.</given-names></name><name><surname>Huang</surname><given-names>X.</given-names></name><name><surname>Bao</surname><given-names>J.</given-names></name><name><surname>Sethi</surname><given-names>Z.</given-names></name><name><surname>Ye</surname><given-names>L.</given-names></name><etal/></person-group> (<year>2018</year>). <article-title>Assessment of synchronous neural activities revealed by regional homogeneity in individuals with acute eye pain: a resting-state functional magnetic resonance imaging study.</article-title>
+<source><italic>J. Pain Res.</italic></source>
+<volume>11</volume>
+<fpage>843</fpage>–<lpage>850</lpage>. <pub-id pub-id-type="doi">10.2147/JPR.S156634</pub-id>
+<pub-id pub-id-type="pmid">29719418</pub-id></mixed-citation>
+      </ref>
+      <ref id="B27">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Tong</surname><given-names>Y.</given-names></name><name><surname>Huang</surname><given-names>X.</given-names></name><name><surname>Qi</surname><given-names>C. X.</given-names></name><name><surname>Shen</surname><given-names>Y.</given-names></name></person-group> (<year>2021</year>). <article-title>Disrupted Neural Activity in Individuals With Iridocyclitis Using Regional Homogeneity: a Resting-State Functional Magnetic Resonance Imaging Study.</article-title>
+<source><italic>Front. Neurol.</italic></source>
+<volume>12</volume>:<fpage>609929</fpage>. <pub-id pub-id-type="doi">10.3389/fneur.2021.609929</pub-id><pub-id pub-id-type="pmid">33643195</pub-id></mixed-citation>
+      </ref>
+      <ref id="B28">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Trivedi</surname><given-names>V.</given-names></name><name><surname>Bang</surname><given-names>J. W.</given-names></name><name><surname>Parra</surname><given-names>C.</given-names></name><name><surname>Colbert</surname><given-names>M. K.</given-names></name><name><surname>O’Connell</surname><given-names>C.</given-names></name><name><surname>Arshad</surname><given-names>A.</given-names></name></person-group> (<year>2019</year>). <article-title>Widespread brain reorganization perturbs visuomotor coordination in early glaucoma.</article-title>
+<source><italic>Sci. Rep.</italic></source>
+<volume>9</volume>:<fpage>14168</fpage>. <pub-id pub-id-type="doi">10.1038/s41598-019-50793-x</pub-id>
+<pub-id pub-id-type="pmid">31578409</pub-id></mixed-citation>
+      </ref>
+      <ref id="B29">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>van Es</surname><given-names>D. M.</given-names></name><name><surname>van der Zwaag</surname><given-names>W.</given-names></name><name><surname>Knapen</surname><given-names>T.</given-names></name></person-group> (<year>2019</year>). <article-title>Topographic Maps of Visual Space in the Human Cerebellum.</article-title>
+<source><italic>Curr. Biol.</italic></source>
+<volume>29</volume>
+<fpage>1689</fpage>–<lpage>1694e3</lpage>. <pub-id pub-id-type="doi">10.1016/j.cub.2019.04.012</pub-id>
+<pub-id pub-id-type="pmid">31080082</pub-id></mixed-citation>
+      </ref>
+      <ref id="B30">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Wang</surname><given-names>Y.</given-names></name><name><surname>Lu</surname><given-names>W.</given-names></name><name><surname>Xie</surname><given-names>Y.</given-names></name><name><surname>Zhou</surname><given-names>J.</given-names></name><name><surname>Yan</surname><given-names>T.</given-names></name><name><surname>Han</surname><given-names>W.</given-names></name><etal/></person-group> (<year>2020a</year>). <article-title>Functional Alterations in Resting-State Visual Networks in High-Tension Glaucoma: an Independent Component Analysis.</article-title>
+<source><italic>Front. Hum. Neurosci.</italic></source>
+<volume>14</volume>:<fpage>330</fpage>. <pub-id pub-id-type="doi">10.3389/fnhum.2020.00330</pub-id><pub-id pub-id-type="pmid">32903668</pub-id></mixed-citation>
+      </ref>
+      <ref id="B31">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Wang</surname><given-names>Y.</given-names></name><name><surname>Wang</surname><given-names>X.</given-names></name><name><surname>Zhou</surname><given-names>J.</given-names></name><name><surname>Qiu</surname><given-names>J.</given-names></name><name><surname>Yan</surname><given-names>T.</given-names></name><name><surname>Xie</surname><given-names>Y.</given-names></name><etal/></person-group> (<year>2020b</year>). <article-title>Brain morphological alterations of cerebral cortex and subcortical nuclei in high-tension glaucoma brain and its associations with intraocular pressure.</article-title>
+<source><italic>Neuroradiology</italic></source>
+<volume>62</volume>
+<fpage>495</fpage>–<lpage>502</lpage>. <pub-id pub-id-type="doi">10.1007/s00234-019-02347-1</pub-id>
+<pub-id pub-id-type="pmid">31872278</pub-id></mixed-citation>
+      </ref>
+      <ref id="B32">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Wang</surname><given-names>Q.</given-names></name><name><surname>Qu</surname><given-names>X.</given-names></name><name><surname>Chen</surname><given-names>W.</given-names></name><name><surname>Wang</surname><given-names>H.</given-names></name><name><surname>Huang</surname><given-names>C.</given-names></name><name><surname>Li</surname><given-names>T.</given-names></name><etal/></person-group> (<year>2021</year>). <article-title>Altered coupling of cerebral blood flow and functional connectivity strength in visual and higher order cognitive cortices in primary open angle glaucoma.</article-title>
+<source><italic>J. Cereb. Blood Flow Metab.</italic></source>
+<volume>41</volume>
+<fpage>901</fpage>–<lpage>913</lpage>. <pub-id pub-id-type="doi">10.1177/0271678X20935274</pub-id>
+<pub-id pub-id-type="pmid">32580669</pub-id></mixed-citation>
+      </ref>
+      <ref id="B33">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Wang</surname><given-names>R.</given-names></name><name><surname>Tang</surname><given-names>Z.</given-names></name><name><surname>Liu</surname><given-names>T.</given-names></name><name><surname>Sun</surname><given-names>X.</given-names></name><name><surname>Wu</surname><given-names>L.</given-names></name><name><surname>Xiao</surname><given-names>Z.</given-names></name></person-group> (<year>2021</year>). <article-title>Altered spontaneous neuronal activity and functional connectivity pattern in primary angle-closure glaucoma: a resting-state fMRI study.</article-title>
+<source><italic>Neurol. Sci.</italic></source>
+<volume>42</volume>
+<fpage>243</fpage>–<lpage>251</lpage>. <pub-id pub-id-type="doi">10.1007/s10072-020-04577-1</pub-id>
+<pub-id pub-id-type="pmid">32632634</pub-id></mixed-citation>
+      </ref>
+      <ref id="B34">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Wiggs</surname><given-names>J. L.</given-names></name><name><surname>Pasquale</surname><given-names>L. R.</given-names></name></person-group> (<year>2017</year>). <article-title>Genetics of glaucoma.</article-title>
+<source><italic>Hum. Mol. Genet.</italic></source>
+<volume>26</volume>
+<fpage>R21</fpage>–<lpage>R27</lpage>. <pub-id pub-id-type="doi">10.1001/jama.2019.16161</pub-id>
+<pub-id pub-id-type="pmid">28505344</pub-id></mixed-citation>
+      </ref>
+      <ref id="B35">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Yan</surname><given-names>C. G.</given-names></name><name><surname>Wang</surname><given-names>X. D.</given-names></name><name><surname>Zuo</surname><given-names>X. N.</given-names></name><name><surname>Zang</surname><given-names>Y. F.</given-names></name></person-group> (<year>2016</year>). <article-title>DPABI: data Processing &amp; Analysis for (Resting-State) Brain Imaging.</article-title>
+<source><italic>Neuroinformatics</italic></source>
+<volume>14</volume>
+<fpage>339</fpage>–<lpage>351</lpage>. <pub-id pub-id-type="doi">10.1007/s12021-016-9299-4</pub-id><pub-id pub-id-type="pmid">27075850</pub-id></mixed-citation>
+      </ref>
+      <ref id="B36">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Yu</surname><given-names>L.</given-names></name><name><surname>Xie</surname><given-names>B.</given-names></name><name><surname>Yin</surname><given-names>X.</given-names></name><name><surname>Liang</surname><given-names>M.</given-names></name><name><surname>Evans</surname><given-names>A. C.</given-names></name><name><surname>Wang</surname><given-names>J.</given-names></name><etal/></person-group> (<year>2013</year>). <article-title>Reduced cortical thickness in primary open-angle glaucoma and its relationship to the retinal nerve fiber layer thickness.</article-title>
+<source><italic>PLoS One</italic></source>
+<volume>8</volume>:<fpage>e73208</fpage>. <pub-id pub-id-type="doi">10.1371/journal.pone.0073208</pub-id><pub-id pub-id-type="pmid">24019910</pub-id></mixed-citation>
+      </ref>
+      <ref id="B37">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zang</surname><given-names>Y.</given-names></name><name><surname>Jiang</surname><given-names>T.</given-names></name><name><surname>Lu</surname><given-names>Y.</given-names></name><name><surname>He</surname><given-names>Y.</given-names></name><name><surname>Tian</surname><given-names>L.</given-names></name></person-group> (<year>2004</year>). <article-title>Regional homogeneity approach to fMRI data analysis.</article-title>
+<source><italic>Neuroimage</italic></source>
+<volume>22</volume>
+<fpage>394</fpage>–<lpage>400</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2003.12.030</pub-id>
+<pub-id pub-id-type="pmid">15110032</pub-id></mixed-citation>
+      </ref>
+      <ref id="B38">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zlatkina</surname><given-names>V.</given-names></name><name><surname>Amiez</surname><given-names>C.</given-names></name><name><surname>Petrides</surname><given-names>M.</given-names></name></person-group> (<year>2016</year>). <article-title>The postcentral sulcal complex and the transverse postcentral sulcus and their relation to sensorimotor functional organization.</article-title>
+<source><italic>Eur. J. Neurosci.</italic></source>
+<volume>43</volume>
+<fpage>1268</fpage>–<lpage>1283</lpage>. <pub-id pub-id-type="doi">10.1111/ejn.13049</pub-id>
+<pub-id pub-id-type="pmid">26296305</pub-id></mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

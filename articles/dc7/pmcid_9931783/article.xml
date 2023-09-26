@@ -1,0 +1,1354 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ali="http://www.niso.org/schemas/ali/1.0/" article-type="research-article" dtd-version="1.3">
+  <?properties open_access?>
+  <processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats">
+    <restricted-by>pmc</restricted-by>
+  </processing-meta>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">Neuroinformatics</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Neuroinformatics</journal-id>
+      <journal-title-group>
+        <journal-title>Neuroinformatics</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">1539-2791</issn>
+      <issn pub-type="epub">1559-0089</issn>
+      <publisher>
+        <publisher-name>Springer US</publisher-name>
+        <publisher-loc>New York</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">36018533</article-id>
+      <article-id pub-id-type="pmc">9931783</article-id>
+      <article-id pub-id-type="publisher-id">9603</article-id>
+      <article-id pub-id-type="doi">10.1007/s12021-022-09603-5</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Original Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Deep Learning Classification of Treatment Response in Diabetic Painful Neuropathy: A Combined Machine Learning and Magnetic Resonance Neuroimaging Methodological Study</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" corresp="yes">
+          <contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-2538-5157</contrib-id>
+          <name>
+            <surname>Teh</surname>
+            <given-names>Kevin</given-names>
+          </name>
+          <address>
+            <email>k.teh@sheffield.ac.uk</email>
+          </address>
+          <xref ref-type="aff" rid="Aff1">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Armitage</surname>
+            <given-names>Paul</given-names>
+          </name>
+          <xref ref-type="aff" rid="Aff1">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-1190-1472</contrib-id>
+          <name>
+            <surname>Tesfaye</surname>
+            <given-names>Solomon</given-names>
+          </name>
+          <xref ref-type="aff" rid="Aff2">2</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <contrib-id contrib-id-type="orcid">http://orcid.org/0000-0001-7426-1105</contrib-id>
+          <name>
+            <surname>Selvarajah</surname>
+            <given-names>Dinesh</given-names>
+          </name>
+          <xref ref-type="aff" rid="Aff2">2</xref>
+          <xref ref-type="aff" rid="Aff3">3</xref>
+        </contrib>
+        <aff id="Aff1"><label>1</label><institution-wrap><institution-id institution-id-type="GRID">grid.11835.3e</institution-id><institution-id institution-id-type="ISNI">0000 0004 1936 9262</institution-id><institution>Academic Unit of Radiology, Department of Infection, Immunity and Cardiovascular Disease, </institution><institution>University of Sheffield, </institution></institution-wrap>Sheffield, UK </aff>
+        <aff id="Aff2"><label>2</label><institution-wrap><institution-id institution-id-type="GRID">grid.31410.37</institution-id><institution-id institution-id-type="ISNI">0000 0000 9422 8284</institution-id><institution>Diabetes Research Department, </institution><institution>Sheffield Teaching Hospitals NHS Foundation Trust, </institution></institution-wrap>Sheffield, UK </aff>
+        <aff id="Aff3"><label>3</label><institution-wrap><institution-id institution-id-type="GRID">grid.11835.3e</institution-id><institution-id institution-id-type="ISNI">0000 0004 1936 9262</institution-id><institution>Department of Oncology and Metabolism, </institution><institution>University of Sheffield, </institution></institution-wrap>Sheffield, UK </aff>
+      </contrib-group>
+      <pub-date pub-type="epub">
+        <day>26</day>
+        <month>8</month>
+        <year>2022</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>26</day>
+        <month>8</month>
+        <year>2022</year>
+      </pub-date>
+      <pub-date pub-type="ppub">
+        <year>2023</year>
+      </pub-date>
+      <volume>21</volume>
+      <issue>1</issue>
+      <fpage>35</fpage>
+      <lpage>43</lpage>
+      <history>
+        <date date-type="accepted">
+          <day>17</day>
+          <month>8</month>
+          <year>2022</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>© The Author(s) 2022</copyright-statement>
+        <license>
+          <ali:license_ref specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref>
+          <license-p><bold>Open Access</bold>This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article's Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article's Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit <ext-link ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</ext-link>.</license-p>
+        </license>
+      </permissions>
+      <abstract id="Abs1">
+        <p id="Par1">Functional magnetic resonance imaging (fMRI) has been shown successfully to assess and stratify patients with painful diabetic peripheral neuropathy (pDPN). This supports the idea of using neuroimaging as a mechanism-based technique to individualise therapy for patients with painful DPN. The aim of this study was to use deep learning to predict treatment response in patients with pDPN using resting state functional imaging (rs-fMRI). We divided 43 painful pDPN patients into responders and non-responders to lidocaine treatment (responders n = 29 and non-responders n = 14). We used rs-fMRI to extract functional connectivity features, using group independent component analysis (gICA), and performed automated treatment response deep learning classification with three-dimensional convolutional neural networks (3D-CNN). Using gICA we achieved an area under the receiver operating characteristic curve (AUC) of 96.60% and F1-Score of 95% in a ten-fold cross validation (CV) experiment using our described 3D-CNN algorithm. To our knowledge, this is the first study utilising deep learning methods to classify treatment response in pDPN.
+</p>
+      </abstract>
+      <kwd-group xml:lang="en">
+        <title>Keywords</title>
+        <kwd>Functional magnetic resonance imaging</kwd>
+        <kwd>Resting state</kwd>
+        <kwd>Convolutional neural network</kwd>
+        <kwd>Painful diabetic peripheral neuropathy</kwd>
+        <kwd>Treatment response</kwd>
+      </kwd-group>
+      <funding-group>
+        <award-group>
+          <funding-source>
+            <institution-wrap>
+              <institution-id institution-id-type="FundRef">http://dx.doi.org/10.13039/501100001648</institution-id>
+              <institution>European Foundation for the Study of Diabetes</institution>
+            </institution-wrap>
+          </funding-source>
+        </award-group>
+      </funding-group>
+      <funding-group>
+        <award-group>
+          <funding-source>
+            <institution-wrap>
+              <institution-id institution-id-type="FundRef">http://dx.doi.org/10.13039/501100001922</institution-id>
+              <institution>Efficacy and Mechanism Evaluation Programme</institution>
+            </institution-wrap>
+          </funding-source>
+          <award-id>NIHR129921</award-id>
+          <principal-award-recipient>
+            <name>
+              <surname>Selvarajah</surname>
+              <given-names>Dinesh</given-names>
+            </name>
+          </principal-award-recipient>
+        </award-group>
+      </funding-group>
+      <custom-meta-group>
+        <custom-meta>
+          <meta-name>issue-copyright-statement</meta-name>
+          <meta-value>© Springer Science+Business Media, LLC, part of Springer Nature 2023</meta-value>
+        </custom-meta>
+      </custom-meta-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="Sec1">
+      <title>Introduction</title>
+      <p id="Par2">The application of machine learning (ML) methods to the analyses of neuroimaging datasets has led to significant advances in the field. It has enabled a shift from population/cohort-based analyses into more individualised biomarkers of disease or functional brain states. From a clinical perspective, this has fundamental importance in diagnosis, prognosis and patient stratification. One ML approach that is increasingly being used on imaging datasets to detect lesions (Zhang et al., <xref ref-type="bibr" rid="CR35">2019b</xref>), automate tissue segmentation (Liu et al., <xref ref-type="bibr" rid="CR17">2018</xref>) and classify different brain disorders (Farooq et al., <xref ref-type="bibr" rid="CR8">2017</xref>) is deep learning using convolutional neural network (CNN). One thing in common across these different applications is the identification of prominent delineated features on imaging datasets and there have been numerous studies investigating the utility of CNN in this context. However, the classification of clinical phenotypes using raw medical images in the absence of well-defined delineated features poses substantial challenges for CNN and has not been fully investigated.</p>
+      <p id="Par3">In this study, we will examine a well-characterised cohort of patients with chronic neuropathic pain secondary to diabetes. Neuropathy is one of the commonest complications of diabetes causing disabling pain in the lower and upper limbs in up to a quarter of patients. This often results in considerable disability and suffering. Pharmacotherapy is the mainstay of treatment to alleviate symptoms but it is often ineffective. Even with optimal pharmacotherapy, only a third of patients experience any meaningful pain relief (i.e. a 50% reduction in pain intensity scores) (Finnerup et al., <xref ref-type="bibr" rid="CR9">2015</xref>; Katz et al., <xref ref-type="bibr" rid="CR14">2008</xref>). We recently demonstrated that combined ML and magnetic resonance (MR) imaging could accurately predict patients into sensory phenotypes (Teh et al., <xref ref-type="bibr" rid="CR27">2021</xref>) with an accuracy of 0.92. This has the potential to serve as a biomarker for use in patient stratification, leading to a more efficient treatment approach. We used a linear, support vector machine (SVM) algorithm using features extracted from rs-fMRI and MRI volumetry.</p>
+      <p id="Par4">Independent component analysis (ICA) is an effective method to derive brain functional networks with both functional connectivity and spatial information (Nickerson et al., <xref ref-type="bibr" rid="CR19">2017</xref>; Rajapakse et al., <xref ref-type="bibr" rid="CR23">2006</xref>). Unlike commonly used seed based analysis approaches (seed to voxel and ROI to ROI), ICA is a pure data-driven method, which generates highly reproducible large-scale brain networks (Damoiseaux et al., <xref ref-type="bibr" rid="CR6">2006</xref>). A previous study using gICA analysis has shown that resting state functional connectivity can successfully predict subsequent duloxetine treatment response of major depressive disorder (Fu et al., <xref ref-type="bibr" rid="CR10">2015</xref>). To capture these elusive feature delineations, 3D group ICA features have been shown to achieve superior classification accuracy (Qureshi et al., <xref ref-type="bibr" rid="CR21">2019</xref>) when used in conjunction with CNN techniques.</p>
+      <p id="Par5">Hence, the primary aim of this ML study is to train a CNN-based classification model to differentiate responders and non-responders to neuropathic pain treatment using resting state (RS) maps as inputs to a 3D-CNN architecture. The secondary aim was to compare the classification performance of two different inputs (all group-level ICA components vs statistically significant group-level components) for the 3D-CNN architecture.</p>
+    </sec>
+    <sec id="Sec2">
+      <title>Method</title>
+      <sec id="Sec3">
+        <title>Study Design and Participants</title>
+        <p id="Par6">Forty-three consecutive patients (responders n = 29 and non-responders n = 14) with painful diabetic neuropathy were recruited for this study. We used intravenous (IV) lidocaine as a experimental model to examine treatment response in this neuroimaging study. It is a recognised treatment option in specialist centres for the management of intractable neuropathic pain i.e. when conventional treatment is ineffective (Kastrup et al., <xref ref-type="bibr" rid="CR12">1986</xref>, <xref ref-type="bibr" rid="CR13">1987</xref>; Viola et al., <xref ref-type="bibr" rid="CR29">2006</xref>) and included in clinical guidelines (Tesfaye et al., <xref ref-type="bibr" rid="CR28">2011</xref>). It is also a good experimental model for assessing neuroimaging markers of treatment response because 1) it has a central mechanisms of action (Abdi et al., <xref ref-type="bibr" rid="CR1">1998</xref>; Devor et al., <xref ref-type="bibr" rid="CR7">1992</xref>; Omana-Zapata et al., <xref ref-type="bibr" rid="CR20">1997</xref>); 2) a short half-life (40 min) – nullifying a direct treatment effect on MRI measures; and 3) up to one half of patients do not respond to treatment—enabling assessment of matched groups of responders and non-responders. Patients completed a standardised questionnaire to determine treatment response to IV lidocaine treatment. Responders were defined as patients who report at least a 30% reduction in pain intensity score (0 to 10 numeric rating scale, where 0 = no pain and 10 = worse pain imaginable) post lidocaine treatment. Study visits were conducted prior to IV lidocaine treatment. Altogether, there were two study visits: Visit 1 was for detailed clinical and neurophysiological assessments and Visit 2 for MR neuroimaging.</p>
+        <p id="Par7">Details of the clinical and neurophysiological assessment performed at Visit 1 are shown in Table <xref rid="Tab1" ref-type="table">1</xref>. There were no statistically significant differences between responders and non-responders in the assessments performed. Written informed consent for the study was obtained before subjects participated in the study, which has prior approval by the Sheffield Local Research Ethics Committee (Sheffield, U.K.).<table-wrap id="Tab1"><label>Table 1</label><caption><p>Demographic, metabolic and neurophysiological assessments of study participants</p></caption><table frame="hsides" rules="groups"><thead><tr><th align="left"/><th align="left"><bold>Responder</bold></th><th align="left"><bold>Non Responder</bold></th><th align="left"><bold>p</bold></th></tr></thead><tbody><tr><td align="left"><bold>n</bold></td><td align="left">29</td><td align="left">14</td><td char="." align="char"/></tr><tr><td align="left"><bold>Age (years)</bold></td><td align="left">57.48(8.82)</td><td align="left">57.07(11.12)</td><td char="." align="char">0.896</td></tr><tr><td align="left"><bold>Male sex (n, %)</bold></td><td align="left">19, 66</td><td align="left">5,36</td><td char="." align="char"/></tr><tr><td align="left"><bold>Type of diabetes (Type 1/2)</bold></td><td align="left">9,20</td><td align="left">3,11</td><td char="." align="char"/></tr><tr><td align="left"><bold>Duration of diabetes (years)</bold></td><td align="left">20.41(14.7)</td><td align="left">20.86(14.6)</td><td char="." align="char">0.926</td></tr><tr><td align="left"><bold>Duration of pain (years)</bold></td><td align="left">10.37(7.51)</td><td align="left">7.89(6.34)</td><td char="." align="char">0.292</td></tr><tr><td align="left"><bold>Hba1c (mmol/mol)</bold></td><td align="left">70(18.42)</td><td align="left">73(16.67)</td><td char="." align="char">0.714</td></tr><tr><td align="left"><bold>NTSS-6 score</bold></td><td align="left">16.01(3.29)</td><td align="left">14.18(4.29)</td><td char="." align="char">0.176</td></tr><tr><td align="left"><bold>TCNS</bold></td><td align="left">21.19(4.49)</td><td align="left">16(9.26)</td><td char="." align="char">0.07</td></tr><tr><td align="left"><bold>BMI</bold></td><td align="left">33.23(11.46)</td><td align="left">30(5.6)</td><td char="." align="char">0.328</td></tr><tr><td align="left"><bold>Becks</bold></td><td align="left">23.84(13.06)</td><td align="left">11.71(14.15)</td><td char="." align="char">0.051</td></tr><tr><td align="left"><bold>DN4</bold></td><td align="left">7.86(1.49)</td><td align="left">6.67(1.58)</td><td char="." align="char">0.055</td></tr><tr><td align="left"><bold>Sural</bold></td><td align="left"/><td align="left"/><td char="." align="char"/></tr><tr><td align="left">  Conduction velocity (m/s)</td><td align="left">19.12(17.03)</td><td align="left">14.98(18.73)</td><td char="." align="char">0.562</td></tr><tr><td align="left">  Amplitude (mAmp)</td><td align="left">3.98(6.18)</td><td align="left">1.9(5.7)</td><td char="." align="char">0.392</td></tr><tr><td align="left"><bold>Common Peroneal Nerve</bold></td><td align="left"/><td align="left"/><td char="." align="char"/></tr><tr><td align="left">  Conduction velocity (m/s)</td><td align="left">26.35(17.97)</td><td align="left">29.75(20.22)</td><td char="." align="char">0.646</td></tr><tr><td align="left">  Amplitude (mAmp)</td><td align="left">2.04(2.2)</td><td align="left">1.39(2.29)</td><td char="." align="char">0.467</td></tr><tr><td align="left">  Distal latency (ms)</td><td align="left">3.73(2.83)</td><td align="left">4.2(3.27)</td><td char="." align="char">0.693</td></tr><tr><td align="left"><bold>Tibial Latency</bold></td><td align="left">3.7(2.94)</td><td align="left">4.07(3.46)</td><td char="." align="char">0.829</td></tr></tbody></table><table-wrap-foot><p>Data presented as mean (standard deviation) unless otherwise stated. Groups were compared using Student’s t-tests</p><p><italic>NTSS-6</italic> Neuropathy Total Symptom Score-6 pain questionnaire, <italic>TCNS</italic> Toronto Clinical Neuropathy Score, <italic>DN4</italic> Douleur Neuropathique en 4 Questions</p></table-wrap-foot></table-wrap></p>
+      </sec>
+      <sec id="Sec4">
+        <title>MRI Acquisition</title>
+        <p id="Par8">On the second visit prior to IV lidocaine treatment subjects underwent MRI using a Phillips Achieva 3 Tesla system (Phillips Medical Systems, Holland) with a 32-channel head coil. T1-weighted magnetisation prepared rapid acquisition gradient echo sequence was used to acquire anatomical data with the following parameters: repetition time (TR) 7.2 ms, echo time (TE) 3.2 ms, flip angle 8°, and voxel size 0.9 mm3, yielding isotropic spatial resolution. Resting-state fMRI data was also acquired while subjects fixated on a cross using a T2*-weighted pulse sequence, with TE = 35 ms; TR = 2600 ms, in-plane pixel dimensions = 1.8 mm × 1.8 mm, contiguous trans-axial slices thickness of 4 mm, a slice acquisition order = ascending (bottom-up), FOV = 128 × 128 mm, pixel bandwidth of 2129, number of phase encoding steps of 94 and an echo train length of 53.</p>
+      </sec>
+      <sec id="Sec5">
+        <title>Pre-processing and Data Analysis</title>
+        <p id="Par9">Group ICA based analysis was performed using the CONN (version 18.b) (Whitfield-Gabrieli &amp; Nieto-Castanon, <xref ref-type="bibr" rid="CR30">2012</xref>): functional connectivity toolbox software which was also used to perform all pre-processing steps (using the default pre-processing pipeline), as well as subsequent statistical analyses, on all subject scans. Using the CONN toolbox pre-processing pipeline, raw functional images were slice-time corrected, realigned (motion corrected), unwarped, and co-registered to each subject's T1-weighted dataset in accordance with standard algorithms. Images were then normalised to Montreal Neurological Institute (MNI) coordinate space, spatially smoothed (5 mm full-width at half maximum), and resliced to yield 2 × 2 × 2 mm voxels and the resting state connectivity analysis was performed using CONN toolbox. Further resting state analysis using gICA in CONN toolbox was performed with variance normalisation pre-conditioning, subject or condition concatenation of BOLD signal data along temporal dimension, group level dimensionality reduction, fast ICA for estimation of independent spatial components, and GICA1 back-projection for individual subject-level spatial map estimation (Beckmann et al., <xref ref-type="bibr" rid="CR3">2009</xref>). The number of independent components to be estimated was set to 30 and dimensionality reduction was set to 64.</p>
+      </sec>
+      <sec id="Sec6">
+        <title>Proposed Framework</title>
+        <p id="Par10">Figure <xref rid="Fig1" ref-type="fig">1</xref> illustrates the procedures used for joint prediction of treatment response status in this study. Figure <xref rid="Fig1" ref-type="fig">1</xref>a shows the first step of the procedure in which the group-level 3D ICA spatial maps of all studied subjects were computed. Next, we employed an automatic clustering tool (using CONN toolbox spatial match to template) to identify the useful group-level independent components (X ICs) for further analysis; we also compared all analysed components (30 ICs). We then performed the two-stage dual regression (Fig. <xref rid="Fig1" ref-type="fig">1</xref>c) to extract: 1) subject-specific IC time courses (stage 1) and; 2) subject-specific ICA spatial maps (stage 2). Figure <xref rid="Fig1" ref-type="fig">1</xref>d presents the nested tenfold cross validation (CV) strategy used to evaluate the performance of the proposed framework. The subject-specific ICA maps were applied to a 3D Convolutional Neural Network (3D-CNN) for the classification task (Fig. <xref rid="Fig1" ref-type="fig">1</xref>e).<fig id="Fig1"><label>Fig. 1</label><caption><p>Illustration of our proposed treatment response classification framework using group ICA features extracted from rs-fMRI scans. Firstly, (<bold>A</bold>) shows the 30 group-level ICA networks from all studied subjects. Next, we used CONN toolbox spatial to match template-clustering tool to identify the useful functional group-level ICA maps. As a result, 8 IC selected spatial components (SSC) (p &lt; 0.1) were identified as statistically useful networks whereas 22 ICs were not used in the selected IC subset (<bold>B</bold>). Then these group-level components (8 and 30 IC components) were used to extract subject-specific time courses (stage 1) and subject-specific spatial ICA maps (stage 2) using dual regression method in (<bold>C</bold>). Step (<bold>D</bold>) presents the nested tenfold cross validation strategy to train the classifier and regressors, tune the hyperparameters and test their performances. Next the 4D ICA spatial component maps (concatenated multiple 3D spatial component maps) were fed into the 3D-CNN (<bold>E</bold>) for treatment response classification</p></caption><graphic xlink:href="12021_2022_9603_Fig1_HTML" id="MO1"/></fig></p>
+      </sec>
+      <sec id="Sec7">
+        <title>Deep Learning Features</title>
+        <p id="Par11">Multiple 3D spatial component maps were acquired by performing dual regression (Beckmann et al., <xref ref-type="bibr" rid="CR3">2009</xref>) on the group ICA. The 3D spatial maps of these selected functional networks were then inputted into our chosen 3D-CNN for classification of responders and non-responders to IV lidocaine treatment groups. This work examine differences in classification performance between an approach using all ICA spatial components (ASC) and another using a semi-automatically selected meaningful independent component time-series dataset (SSC). There were 8 spatial maps (SSC) identified when matched to a spatial template in CONN toolbox chosen with p &lt; 0.1. These 8 chosen maps will be shown in more detail in the results section. We also compared the classification results of the 8 selected spatial component maps with all 30 spatial component maps. Non post-processed resting state pre-processed image inputs were also used as a base comparison.</p>
+      </sec>
+      <sec id="Sec8">
+        <title>Deep Learning and 3D-CNN Framework</title>
+        <p id="Par12">We used a 3D-CNN based deep learning classification framework in this study based on a lightweight Voxnet (Maturana &amp; Scherer, <xref ref-type="bibr" rid="CR18">2015</xref>) architecture. The framework was implemented on the TensorFlow library version 2.5 with two bridged Nvidia Ge-Force GTX 2080Ti graphical processing units (GPU). For the training model, we used the Adam optimizer with a learning rate of 0.001 and setting epsilon at 0.1. Since the size of the dataset was relatively small for deep learning, to avoid model overfitting, we used ten-fold cross-validation in this study to report the mean performance of the overall model.</p>
+        <p id="Par13">A modified version of the Voxnet classification framework was used in this study. Specifically, we added batch normalization layers in the convolution layer. A dropout rate of 0.3 was used in the fully connected layers with a batch size set at 4 and using 100 epochs. The parameters including learning rate, epsilon value, dropout rate, batch size, and epoch size were optimised using the following ranges. For epsilon, we tuned it in the range of [0.1: 0.05: 1], for learning rate, we tuned it in the logarithmic range of [1, 0.1, 0.01, 0.001, 0.0001, and 0.00001], for the dropout rate, we tuned it in the range [0.1: 0.05: 1], for the batch size, we optimized it by the maximum available GPU memory, and the number of epochs were tuned in the range of [10: 1: 200]. We used a binary entropy loss function when training the deep learning network, and an early stopping criterion was used to stop the network training with respect to the leave-one-out cross-validation loss. The optimal parameter tuning was chosen to reflect the best performance metrics for the ASC and SSC dataset. The chosen parameters were similarly used on the pre-processed resting state image data (RSP).</p>
+      </sec>
+      <sec id="Sec9">
+        <title>Performance Measures</title>
+        <p id="Par14">One of the most crucial processes of defining a machine learning model is model evaluation. For this work, we will compare standard metrics such as accuracy (ACC), precision (PR) and recall (RE) with average cross-validation AUC and F1-Score. We choose to include the AUC and F1-score due to the slight imbalance in our dataset leaning towards treatment responders to lidocaine. Of all these performance metrics we regard the AUC and F1 score to be the most important metric in this work. Previous work has concluded that these measures fit best for imbalanced data problems (Jeni et al., <xref ref-type="bibr" rid="CR11">2013</xref>; Raeder et al., <xref ref-type="bibr" rid="CR22">2012</xref>). These, two performance measures are described further. Firstly, introducing some acronyms TP, TN, FP and FN are the number of true positive (responders), true negative (non-responders), false positive and false negative samples, respectively. The metrics used are shown below:<disp-formula id="Equ1"><label>1</label><alternatives><tex-math id="M1">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$ACC= \frac{TP+TN}{TP+TN+FP+FN}$$\end{document}</tex-math><mml:math id="M2" display="block"><mml:mrow><mml:mi>A</mml:mi><mml:mi>C</mml:mi><mml:mi>C</mml:mi><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:mi>T</mml:mi><mml:mi>P</mml:mi><mml:mo>+</mml:mo><mml:mi>T</mml:mi><mml:mi>N</mml:mi></mml:mrow><mml:mrow><mml:mi>T</mml:mi><mml:mi>P</mml:mi><mml:mo>+</mml:mo><mml:mi>T</mml:mi><mml:mi>N</mml:mi><mml:mo>+</mml:mo><mml:mi>F</mml:mi><mml:mi>P</mml:mi><mml:mo>+</mml:mo><mml:mi>F</mml:mi><mml:mi>N</mml:mi></mml:mrow></mml:mfrac></mml:mrow></mml:math><graphic xlink:href="12021_2022_9603_Article_Equ1.gif" position="anchor"/></alternatives></disp-formula><disp-formula id="Equ2"><label>2</label><alternatives><tex-math id="M3">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$PR= \frac{TP}{TP+FP}$$\end{document}</tex-math><mml:math id="M4" display="block"><mml:mrow><mml:mi>P</mml:mi><mml:mi>R</mml:mi><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:mi mathvariant="italic">TP</mml:mi></mml:mrow><mml:mrow><mml:mi>T</mml:mi><mml:mi>P</mml:mi><mml:mo>+</mml:mo><mml:mi>F</mml:mi><mml:mi>P</mml:mi></mml:mrow></mml:mfrac></mml:mrow></mml:math><graphic xlink:href="12021_2022_9603_Article_Equ2.gif" position="anchor"/></alternatives></disp-formula><disp-formula id="Equ3"><label>3</label><alternatives><tex-math id="M5">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$RE=\frac{TP}{TP+FN}$$\end{document}</tex-math><mml:math id="M6" display="block"><mml:mrow><mml:mi>R</mml:mi><mml:mi>E</mml:mi><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:mi mathvariant="italic">TP</mml:mi></mml:mrow><mml:mrow><mml:mi>T</mml:mi><mml:mi>P</mml:mi><mml:mo>+</mml:mo><mml:mi>F</mml:mi><mml:mi>N</mml:mi></mml:mrow></mml:mfrac></mml:mrow></mml:math><graphic xlink:href="12021_2022_9603_Article_Equ3.gif" position="anchor"/></alternatives></disp-formula>where precision measures samples correctly classified as positive, and recall describes the proportion of all positive samples classified as positive. F1 score is interpreted as a weighted average of the precision (PR) and recall (RE):<disp-formula id="Equ4"><label>4</label><alternatives><tex-math id="M7">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$F1=2\cdot \frac{PR.RE}{PR+RE}$$\end{document}</tex-math><mml:math id="M8" display="block"><mml:mrow><mml:mi>F</mml:mi><mml:mn>1</mml:mn><mml:mo>=</mml:mo><mml:mn>2</mml:mn><mml:mo>·</mml:mo><mml:mfrac><mml:mrow><mml:mi>P</mml:mi><mml:mi>R</mml:mi><mml:mo>.</mml:mo><mml:mi>R</mml:mi><mml:mi>E</mml:mi></mml:mrow><mml:mrow><mml:mi>P</mml:mi><mml:mi>R</mml:mi><mml:mo>+</mml:mo><mml:mi>R</mml:mi><mml:mi>E</mml:mi></mml:mrow></mml:mfrac></mml:mrow></mml:math><graphic xlink:href="12021_2022_9603_Article_Equ4.gif" position="anchor"/></alternatives></disp-formula></p>
+        <p id="Par15">AUC score (Area Under the receiver operating characteristic Curve) characterises the area under the curve of sensitivities plotted against corresponding false positive rates (FPR):<disp-formula id="Equ5"><label>5</label><alternatives><tex-math id="M9">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$FPR=\frac{FP}{FP+TN}$$\end{document}</tex-math><mml:math id="M10" display="block"><mml:mrow><mml:mi>F</mml:mi><mml:mi>P</mml:mi><mml:mi>R</mml:mi><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:mi mathvariant="italic">FP</mml:mi></mml:mrow><mml:mrow><mml:mi>F</mml:mi><mml:mi>P</mml:mi><mml:mo>+</mml:mo><mml:mi>T</mml:mi><mml:mi>N</mml:mi></mml:mrow></mml:mfrac></mml:mrow></mml:math><graphic xlink:href="12021_2022_9603_Article_Equ5.gif" position="anchor"/></alternatives></disp-formula></p>
+      </sec>
+    </sec>
+    <sec id="Sec10">
+      <title>Results</title>
+      <sec id="Sec11">
+        <title>Classification Results</title>
+        <p id="Par16">Our results suggest that using ICA analysis specifically spatial component maps can be used as a good discriminatory predictor of lidocaine treatment response in painful DPN patients. In our study, we compared using ASC, SSC and RSP as the input to our CNN classification workflow. Comparing the classification performances, the first thing we noticed from Table <xref rid="Tab2" ref-type="table">2</xref> is the sub optimal results obtained from the pre-processed resting state data. We achieved a F1-Score of 69% and an AUC score of 44%. On the other hand, ASC gave the best performing results achieving a F1-Score of 95% and a mean balanced AUC of 96.60% in a ten-fold CV experiment using the described 3D-CNN algorithm. As compared to SSC it also achieved good performance with F1-Score of 90% and AUC of 85%. The rest of the results for the three groups are shown in Table <xref rid="Tab2" ref-type="table">2</xref>.<table-wrap id="Tab2"><label>Table 2</label><caption><p>Described performance metrics comparing ASC and SSC results</p></caption><table frame="hsides" rules="groups"><thead><tr><th align="left"/><th align="left"><bold>ASC</bold></th><th align="left"><bold>SSC</bold></th><th align="left"><bold>RSP</bold></th></tr></thead><tbody><tr><td align="left"><bold>Accuracy</bold></td><td char="." align="char">0.9307</td><td char="." align="char">0.8529</td><td char="." align="char">0.6743</td></tr><tr><td align="left"><bold>Precision</bold></td><td char="." align="char">0.9237</td><td char="." align="char">0.8460</td><td char="." align="char">0.6744</td></tr><tr><td align="left"><bold>Recall</bold></td><td char="." align="char">0.9787</td><td char="." align="char">0.9623</td><td char="." align="char">0.7136</td></tr><tr><td align="left"><bold>F1-Score</bold></td><td char="." align="char">0.9504</td><td char="." align="char">0.9004</td><td char="." align="char">0.6934</td></tr><tr><td align="left"><bold>AUC</bold></td><td char="." align="char">0.9661</td><td char="." align="char">0.8499</td><td char="." align="char">0.4375</td></tr></tbody></table></table-wrap></p>
+        <p id="Par17">Also, when running our networks, we also calculated the timing cost comparison. Using the deep learning configuration described above with our lightweight modified Voxnet CNN pipeline took 3.4 min to train 100 epoch per fold for the SSC, 5.1 min for ASC and 29.3 min for RSP.</p>
+      </sec>
+      <sec id="Sec12">
+        <title>Network Component Analysis</title>
+        <p id="Par18">Table <xref rid="Tab3" ref-type="table">3</xref> shows the ranking of each functional network as the features of a deep learning framework. These components were chosen based on p &lt; 0.1. The uncorrected <italic>p</italic>-value revealed the component’s significance. Using this significance level we identified eight ICA spatial components from a subset of 30. The 5 resting state functional networks identified by the CONN network cortical ROIs (HCP-ICA) through the ICA analysis were the cerebellar network (CEB), default mode network (DMN), frontoparietal (FPN), sensorimotor network (SMN) and visual network (VN). They were used to perform dual regression to generate subject-specific time courses for connectivity analysis and spatial maps for classification.<table-wrap id="Tab3"><label>Table 3</label><caption><p>SSC networks selected based on comparison of network activities between responders to lidocaine and non-responders at p &lt; 0.1</p></caption><table frame="hsides" rules="groups"><thead><tr><th align="left"><bold>Component Name</bold></th><th align="left"><bold>Component Number</bold></th><th align="left"><bold>p-value</bold></th><th align="left"><bold>Pearson(r)</bold></th></tr></thead><tbody><tr><td align="left">Cerebellar</td><td align="left">ICA1</td><td char="." align="char">0.014</td><td char="." align="char">0.373</td></tr><tr><td align="left">Default Mode</td><td align="left">ICA10</td><td char="." align="char">0.003</td><td char="." align="char">0.446</td></tr><tr><td align="left">FrontoParietal</td><td align="left">ICA5</td><td char="." align="char">0.058</td><td char="." align="char">0.292</td></tr><tr><td align="left">Sensorimotor</td><td align="left">ICA9</td><td char="." align="char">0.099</td><td char="." align="char">0.254</td></tr><tr><td align="left">Sensorimotor</td><td align="left">ICA26</td><td char="." align="char">0.058</td><td char="." align="char">0.291</td></tr><tr><td align="left">Sensorimotor</td><td align="left">ICA29</td><td char="." align="char">0.026</td><td char="." align="char">0.339</td></tr><tr><td align="left">Visual</td><td align="left">ICA6</td><td char="." align="char">0.009</td><td char="." align="char">0.394</td></tr><tr><td align="left">Visual</td><td align="left">ICA11</td><td char="." align="char">0.001</td><td char="." align="char">0.579</td></tr></tbody></table></table-wrap></p>
+      </sec>
+    </sec>
+    <sec id="Sec13">
+      <title>Discussion</title>
+      <p id="Par19">To the best of our knowledge, this is the first study classifying treatment response using rs-fMRI and 3D-CNN deep learning architecture. The key findings of this work are 1) using ICA spatial component maps (ASC and SSC) performs better than only using RSP as the input to our CNN networks; 2) using all the group ICA spatial components (ASC) information performs better compared to the semi-automatic selection of the highly relevant networks (SSC) and 3) a lightweight 3D-CNN deep learning architecture for classification uses imaging data more efficiently. With these approaches, we achieved better treatment response classification results.</p>
+      <p id="Par20">Our analyses show a clear disparity between RSP and both the ICA analysed spatial component maps (ASC and SSC) giving an enhanced performance score. When comparing ASC and SSC there is an improvement for the ASC score with a 5% improvement in the F1-Score and a 11.6% improvement for the AUC. The extra 22 spatial components in the ASC which are noisier (not satisfying the p &lt; 0.1 condition of the 8 networks shown in Fig. <xref rid="Fig2" ref-type="fig">2</xref>) is shown to have contributed to the performance metric boost of the ASC method. Using deep learning we were able to automatically discover the intricate structure differences of the responders and non responders imaging features especially true when larger imaging information was used during the training step as shown by (LeCun et al., <xref ref-type="bibr" rid="CR16">2015</xref>). Hence from our results we surmise that when a dataset is closely matched (in our case painful diabetic neuropathy patients) using more ICA components provides better performance. In future we will explore SSC classification performance more using different p value network selection (i.e. p &lt; 0.2, p &lt; 0.3 etc.) to further our assertion.<fig id="Fig2"><label>Fig. 2</label><caption><p>Spatial to match template (CONN toolbox gICA) to select the best SSC based on p &lt; 0.1</p></caption><graphic xlink:href="12021_2022_9603_Fig2_HTML" id="MO2"/></fig></p>
+      <p id="Par21">We did not explicitly compare our Voxnet based lightweight model with other popular deeper learning networks such as Resnet or VGG-16 (Simonyan &amp; Zisserman, <xref ref-type="bibr" rid="CR26">2014</xref>). We calculated the trainable parameters of VGG-16 to be around 2.5 billion compared to around 1.4 million using Voxnet with identical 4D ICA spatial component input dataset. Hence due to GPU memory limitations, we did not compare our proposed CNN model with these deeper networks. When the computation time was compared between SSC and ASC there was an extra 1.7 min computation time per fold when using the ASC as the input data. We consider this a good use of extra computational time given the boost of performance when using the ASC input dataset.</p>
+      <p id="Par22">In our literature search, we did not find any treatment response classification of pDPN using machine learning. We, however, found two closest studies focusing on pain and treatment response classification using ML. The first study used a SVM classifier to differentiate lower back pain and healthy volunteers (Lamichhane et al., <xref ref-type="bibr" rid="CR15">2021</xref>). They achieved an average classification accuracy of 74.51% and an AUC = 0.787. The second study used deep learning (DL) neural networks in classifying chronic pain patients and pain-free controls (Santana et al., <xref ref-type="bibr" rid="CR25">2019</xref>). Their best model using the Ann4brain architecture and MSDL parcellation had a balanced accuracy of 86.8% and AUC of 0.918. Due to the differences in patient cohorts, we cannot directly compare these results with ours. However, with our high testing accuracy of 93% and AUC of 97%, we believe we can translate our painful DPN CNN model to other disease cohorts. For example, with other neuropathy patients (i.e. idiopathic and chemotherapy painful neuropathy).</p>
+      <p id="Par23">Another important factor in our study is that we set the number of ICA components to 30, as is conventionally used in a recent study (Qureshi et al., <xref ref-type="bibr" rid="CR21">2019</xref>). Recently, it has been shown that the detected disease-related differences in functional connectivity may alter as a function of ICA model order, specifically how many ICA components to use (Abou Elseoud et al., <xref ref-type="bibr" rid="CR2">2011</xref>). Their multi-level ICA exploration of unmedicated seasonal affective disorders functional connectivity enables optimisation of sensitivity to brain disorders and found 45 RS networks as the optimum component number to use. To further explore the effect of chosen RS ICA components, a recent study compared 2, 10 and 45 ICA chosen components. They reached an accuracy of 95% for the 2 components, 93% for the 10 components and 92% for the 45 components. In our study, the performance decreases with smaller component number, which is the opposite of the described study. We will investigate a wider number of set ICA component analysis to further affirm our findings.</p>
+      <p id="Par24">Our study also used gICA, a data driven method, to investigate the association between brain networks. Here, we decomposed the signal from whole brain voxels to spatially and temporally independent components. Future work will involve using different indices of functional brain alterations, including amplitude of low-frequency fluctuations (ALFF), regional homogeneity (ReHo), and regional functional correlation strength (RFCS) which has been successfully demonstrated in a CNN migraine study (Yang et al., <xref ref-type="bibr" rid="CR32">2018</xref>). In our gICA analysis method, we only compared the analysis of SSC and ASC. Here, we concatenated the 3D spatial components together (8 and 30), which consists of different resting state networks (RSN). However, in future to fully understand and interpret our results further we will also explore resting state networks individually between our two groups. Of particular interest to our pDPN dataset are the default mode, sensorimotor and fronto parietal networks. This will enable us to identify and rank individual networks based on the binary classification performance as shown in a recent work on Autism spectrum disorder (Yang et al., <xref ref-type="bibr" rid="CR33">2021</xref>). To further this study we will analyse the resting state data with higher regional sensitivity using a region of interest (ROI) to ROI analysis approach. The outcome of the ROI-ROI analysis will also be expanded further with the use of linear classifiers for example linear SVM instead of black box models like deep learning for better interpretability as shown recently (Teh et al., <xref ref-type="bibr" rid="CR27">2021</xref>).</p>
+      <p id="Par25">This study has some limitations. Our dataset of 43 samples is relatively small. However, in our previous study, we have shown with similar sample sizes using resting state ROI to ROI image analysis to have enough sample size power to clearly differentiate between lidocaine treatment responses (Wilkinson et al., <xref ref-type="bibr" rid="CR31">2020</xref>). Another limitation is the lack of a separate testing dataset. To address this, the results presented are the ten-fold cross-validated performance metrics of our CNN method. In future work, we intend to apply our algorithm to other treatment response datasets to externally validate our algorithm. This will include out of sample testing with within disease datasets (painful DPN) and also between disease datasets (idiopathic and chemotherapy induced neuropathy). In addition, although we have shown that a 3D-CNN model trained on rs-fMRI datasets accurately classifies patients according to their treatment response (i.e. based on analgesic response), we are unable to determine or explore the impact of neuropathy or diabetes itself on cortical changes described. To address this, future studies should consider including appropriate control subjects (e.g. participants with diabetes and no neuropathy or subjects with neuropathic pain from different aetiologies).</p>
+      <p id="Par26">In summary, in the last few years CNNs have been used very successfully with rs-fMRI to classify different disease phenotypes (Qureshi et al., <xref ref-type="bibr" rid="CR21">2019</xref>). We have demonstrated the effectiveness of using a 3D lightweight CNN method, which not only saves on computational time but also gives high prediction scores. We believe that the presented results show that rs-fMRI has great application potential as a biomarker in neuropathic pain (Cauda et al., <xref ref-type="bibr" rid="CR5">2009</xref>, <xref ref-type="bibr" rid="CR4">2010</xref>; Sağ et al., <xref ref-type="bibr" rid="CR24">2019</xref>; Zhang et al., <xref ref-type="bibr" rid="CR34">2019a</xref>). Finally, we have successfully shown that we are able to differentiate responders and non-responders to neuropathic pain treatment using 3D gICA resting state (RS) maps as inputs to a 3D-CNN architecture.</p>
+    </sec>
+    <sec id="Sec14">
+      <title>Information Sharing Statement</title>
+      <p id="Par27">The analysed RS data that supports the findings of this study can be downloaded at <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.5281/zenodo.6325587">https://doi.org/10.5281/zenodo.6325587</ext-link>. Pre-processed or raw resting state data associated with this work can be provided upon request.</p>
+    </sec>
+  </body>
+  <back>
+    <fn-group>
+      <fn>
+        <p>
+          <bold>Publisher's Note</bold>
+        </p>
+        <p>Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.</p>
+      </fn>
+    </fn-group>
+    <ack>
+      <title>Acknowledgements</title>
+      <p>The authors thank the radiographers at the University of Sheffield Academic Department of Magnetic Resonance Imaging for their hard work, skills, and contributions. The authors also thank the study volunteers who spent considerable time participating in this study.</p>
+    </ack>
+    <notes notes-type="author-contribution">
+      <title>Author Contributions</title>
+      <p>K.T ran all the MR resting state and machine learning analysis and is the guarantor of this work and, as such, had full access to all the data in the study and takes responsibility for the integrity of the data and the accuracy of the data analysis and wrote the manuscript. P.A and S.T. reviewed and revised the manuscript. D.S. is the principal investigator of the used dataset, recruited participants, undertook clinical and neurophysiological assessments, researched and analyzed clinical and MR data.</p>
+    </notes>
+    <notes notes-type="funding-information">
+      <title>Funding</title>
+      <p>This study was supported by the European Foundation for the Study of Diabetes (Microvascular Complications Project Grant), the National Institute of Health Research Efficacy and Mechanism Evaluation Programme (NIHR 129921) and University of Sheffield, Health Education England, Knowledge Exchange fund.</p>
+    </notes>
+    <notes>
+      <title>Declarations</title>
+      <notes id="FPar2" notes-type="COI-statement">
+        <title>Conflict of Interest</title>
+        <p id="Par28">No potential conflicts of interest relevant to this article were reported.</p>
+      </notes>
+    </notes>
+    <ref-list id="Bib1">
+      <title>References</title>
+      <ref id="CR1">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Abdi</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>DH</given-names>
+            </name>
+            <name>
+              <surname>Chung</surname>
+              <given-names>JM</given-names>
+            </name>
+          </person-group>
+          <article-title>The anti-allodynic effects of amitriptyline, gabapentin, and lidocaine in a rat model of neuropathic pain</article-title>
+          <source>Anesthesia &amp; Analgesia</source>
+          <year>1998</year>
+          <volume>87</volume>
+          <issue>6</issue>
+          <fpage>1360</fpage>
+          <lpage>1366</lpage>
+          <pub-id pub-id-type="doi">10.1213/00000539-199812000-00027</pub-id>
+          <pub-id pub-id-type="pmid">9842827</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR2">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Abou Elseoud</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Littow</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Remes</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Starck</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Nikkinen</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Nissilä</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Tervonen</surname>
+              <given-names>O</given-names>
+            </name>
+            <name>
+              <surname>Timonen</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Kiviniemi</surname>
+              <given-names>VJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Group-ICA model order highlights patterns of functional brain connectivity</article-title>
+          <source>Frontiers in Systems Neuroscience</source>
+          <year>2011</year>
+          <volume>5</volume>
+          <fpage>37</fpage>
+          <pub-id pub-id-type="doi">10.3389/fnsys.2011.00037</pub-id>
+          <pub-id pub-id-type="pmid">21687724</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR3">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Beckmann</surname>
+              <given-names>CF</given-names>
+            </name>
+            <name>
+              <surname>Mackay</surname>
+              <given-names>CE</given-names>
+            </name>
+            <name>
+              <surname>Filippini</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Smith</surname>
+              <given-names>SM</given-names>
+            </name>
+          </person-group>
+          <article-title>Group comparison of resting-state FMRI data using multi-subject ICA and dual regression</article-title>
+          <source>NeuroImage</source>
+          <year>2009</year>
+          <volume>47</volume>
+          <issue>Suppl 1</issue>
+          <fpage>S148</fpage>
+          <pub-id pub-id-type="doi">10.1016/S1053-8119(09)71511-3</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR4">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cauda</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>D'Agata</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Sacco</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Duca</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Cocito</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Paolasso</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Isoardo</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Geminiani</surname>
+              <given-names>G</given-names>
+            </name>
+          </person-group>
+          <article-title>Altered resting state attentional networks in diabetic neuropathic pain</article-title>
+          <source>Journal of Neurology, Neurosurgery &amp; Psychiatry</source>
+          <year>2010</year>
+          <volume>81</volume>
+          <issue>7</issue>
+          <fpage>806</fpage>
+          <lpage>811</lpage>
+          <pub-id pub-id-type="doi">10.1136/jnnp.2009.188631</pub-id>
+          <pub-id pub-id-type="pmid">19955113</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR5">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cauda</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Sacco</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>D'Agata</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Duca</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Cocito</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Geminiani</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Migliorati</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Isoardo</surname>
+              <given-names>G</given-names>
+            </name>
+          </person-group>
+          <article-title>Low-frequency BOLD fluctuations demonstrate altered thalamocortical connectivity in diabetic neuropathic pain</article-title>
+          <source>BMC Neuroscience</source>
+          <year>2009</year>
+          <volume>10</volume>
+          <issue>1</issue>
+          <fpage>1</fpage>
+          <lpage>14</lpage>
+          <pub-id pub-id-type="doi">10.1186/1471-2202-10-138</pub-id>
+          <pub-id pub-id-type="pmid">19126204</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR6">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Damoiseaux</surname>
+              <given-names>JS</given-names>
+            </name>
+            <name>
+              <surname>Rombouts</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Barkhof</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Scheltens</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Stam</surname>
+              <given-names>CJ</given-names>
+            </name>
+            <name>
+              <surname>Smith</surname>
+              <given-names>SM</given-names>
+            </name>
+            <name>
+              <surname>Beckmann</surname>
+              <given-names>CF</given-names>
+            </name>
+          </person-group>
+          <article-title>Consistent resting-state networks across healthy subjects</article-title>
+          <source>Proceedings of the National Academy of Sciences</source>
+          <year>2006</year>
+          <volume>103</volume>
+          <issue>37</issue>
+          <fpage>13848</fpage>
+          <lpage>13853</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.0601417103</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR7">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Devor</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Wall</surname>
+              <given-names>PD</given-names>
+            </name>
+            <name>
+              <surname>Catalan</surname>
+              <given-names>N</given-names>
+            </name>
+          </person-group>
+          <article-title>Systemic lidocaine silences ectopic neuroma and DRG discharge without blocking nerve conduction</article-title>
+          <source>Pain</source>
+          <year>1992</year>
+          <volume>48</volume>
+          <issue>2</issue>
+          <fpage>261</fpage>
+          <lpage>268</lpage>
+          <pub-id pub-id-type="doi">10.1016/0304-3959(92)90067-L</pub-id>
+          <pub-id pub-id-type="pmid">1589245</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR8">
+        <mixed-citation publication-type="other">Farooq, A., Anwar, S., Awais, M., &amp; Rehman, S. (2017). A deep CNN based multi-class classification of Alzheimer's disease using MRI. <italic>2017 IEEE International Conference on Imaging systems and techniques (IST)</italic>.</mixed-citation>
+      </ref>
+      <ref id="CR9">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Finnerup</surname>
+              <given-names>NB</given-names>
+            </name>
+            <name>
+              <surname>Attal</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Haroutounian</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>McNicol</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Baron</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Dworkin</surname>
+              <given-names>RH</given-names>
+            </name>
+            <name>
+              <surname>Gilron</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Haanpää</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Hansson</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Jensen</surname>
+              <given-names>TS</given-names>
+            </name>
+          </person-group>
+          <article-title>Pharmacotherapy for neuropathic pain in adults: A systematic review and meta-analysis</article-title>
+          <source>The Lancet Neurology</source>
+          <year>2015</year>
+          <volume>14</volume>
+          <issue>2</issue>
+          <fpage>162</fpage>
+          <lpage>173</lpage>
+          <pub-id pub-id-type="doi">10.1016/S1474-4422(14)70251-0</pub-id>
+          <pub-id pub-id-type="pmid">25575710</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR10">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fu</surname>
+              <given-names>CH</given-names>
+            </name>
+            <name>
+              <surname>Costafreda</surname>
+              <given-names>SG</given-names>
+            </name>
+            <name>
+              <surname>Sankar</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Adams</surname>
+              <given-names>TM</given-names>
+            </name>
+            <name>
+              <surname>Rasenick</surname>
+              <given-names>MM</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Donati</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Maglanoc</surname>
+              <given-names>LA</given-names>
+            </name>
+            <name>
+              <surname>Horton</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Marangell</surname>
+              <given-names>LB</given-names>
+            </name>
+          </person-group>
+          <article-title>Multimodal functional and structural neuroimaging investigation of major depressive disorder following treatment with duloxetine</article-title>
+          <source>BMC Psychiatry</source>
+          <year>2015</year>
+          <volume>15</volume>
+          <issue>1</issue>
+          <fpage>1</fpage>
+          <lpage>11</lpage>
+          <pub-id pub-id-type="doi">10.1186/s12888-015-0457-2</pub-id>
+          <pub-id pub-id-type="pmid">25609320</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR11">
+        <mixed-citation publication-type="other">Jeni, L. A., Cohn, J. F., &amp; De La Torre, F. (2013). Facing imbalanced data - recommendations for the use of performance metrics. <italic>2013 Humaine Association Conference on Affective Computing and Intelligent Interaction</italic>.</mixed-citation>
+      </ref>
+      <ref id="CR12">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kastrup</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Angelo</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Petersen</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Dejgård</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Hilsted</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>Treatment of chronic painful diabetic neuropathy with intravenous lidocaine infusion</article-title>
+          <source>British Medical Journal (Clinical Research Ed.)</source>
+          <year>1986</year>
+          <volume>292</volume>
+          <issue>6514</issue>
+          <fpage>173</fpage>
+          <pub-id pub-id-type="doi">10.1136/bmj.292.6514.173</pub-id>
+          <pub-id pub-id-type="pmid">3080123</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR13">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kastrup</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Petersen</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Dejgård</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Angelo</surname>
+              <given-names>HR</given-names>
+            </name>
+            <name>
+              <surname>Hilsted</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>Intravenous lidocaine infusion—a new treatment of chronic painful diabetic neuropathy?</article-title>
+          <source>Pain</source>
+          <year>1987</year>
+          <volume>28</volume>
+          <issue>1</issue>
+          <fpage>69</fpage>
+          <lpage>75</lpage>
+          <pub-id pub-id-type="doi">10.1016/0304-3959(87)91061-X</pub-id>
+          <pub-id pub-id-type="pmid">3822496</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR14">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Katz</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Finnerup</surname>
+              <given-names>NB</given-names>
+            </name>
+            <name>
+              <surname>Dworkin</surname>
+              <given-names>RH</given-names>
+            </name>
+          </person-group>
+          <article-title>Clinical trial outcome in neuropathic pain: Relationship to study characteristics</article-title>
+          <source>Neurology</source>
+          <year>2008</year>
+          <volume>70</volume>
+          <issue>4</issue>
+          <fpage>263</fpage>
+          <lpage>272</lpage>
+          <pub-id pub-id-type="doi">10.1212/01.wnl.0000275528.01263.6c</pub-id>
+          <pub-id pub-id-type="pmid">17914067</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR15">
+        <mixed-citation publication-type="other">Lamichhane, B., Jayasekera, D., Jakes, R., Glasser, M. F., Zhang, J., Yang, C., Grimes, D., Frank, T. L., Ray, W. Z., &amp; Leuthardt, E. C. (2021). Multi-modal biomarkers of low back pain: A machine learning approach. <italic>NeuroImage: Clinical</italic>, <italic>29</italic>, 102530.</mixed-citation>
+      </ref>
+      <ref id="CR16">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>LeCun</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Bengio</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Hinton</surname>
+              <given-names>G</given-names>
+            </name>
+          </person-group>
+          <article-title>Deep learning</article-title>
+          <source>Nature</source>
+          <year>2015</year>
+          <volume>521</volume>
+          <issue>7553</issue>
+          <fpage>436</fpage>
+          <lpage>444</lpage>
+          <pub-id pub-id-type="doi">10.1038/nature14539</pub-id>
+          <pub-id pub-id-type="pmid">26017442</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR17">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Liu</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Zhou</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Jang</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Samsonov</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Zhao</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Kijowski</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <article-title>Deep convolutional neural network and 3D deformable approach for tissue segmentation in musculoskeletal magnetic resonance imaging</article-title>
+          <source>Magnetic Resonance in Medicine</source>
+          <year>2018</year>
+          <volume>79</volume>
+          <issue>4</issue>
+          <fpage>2379</fpage>
+          <lpage>2391</lpage>
+          <pub-id pub-id-type="doi">10.1002/mrm.26841</pub-id>
+          <pub-id pub-id-type="pmid">28733975</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR18">
+        <mixed-citation publication-type="other">Maturana, D., &amp; Scherer, S. (2015). Voxnet: A 3d convolutional neural network for real-time object recognition. <italic>2015 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</italic>.</mixed-citation>
+      </ref>
+      <ref id="CR19">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Nickerson</surname>
+              <given-names>LD</given-names>
+            </name>
+            <name>
+              <surname>Smith</surname>
+              <given-names>SM</given-names>
+            </name>
+            <name>
+              <surname>Öngür</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Beckmann</surname>
+              <given-names>CF</given-names>
+            </name>
+          </person-group>
+          <article-title>Using dual regression to investigate network shape and amplitude in functional connectivity analyses</article-title>
+          <source>Frontiers in Neuroscience</source>
+          <year>2017</year>
+          <volume>11</volume>
+          <fpage>115</fpage>
+          <pub-id pub-id-type="doi">10.3389/fnins.2017.00115</pub-id>
+          <pub-id pub-id-type="pmid">28348512</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR20">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Omana-Zapata</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Khabbaz</surname>
+              <given-names>MA</given-names>
+            </name>
+            <name>
+              <surname>Hunter</surname>
+              <given-names>JC</given-names>
+            </name>
+            <name>
+              <surname>Bley</surname>
+              <given-names>KR</given-names>
+            </name>
+          </person-group>
+          <article-title>QX-314 inhibits ectopic nerve activity associated with neuropathic pain</article-title>
+          <source>Brain Research</source>
+          <year>1997</year>
+          <volume>771</volume>
+          <issue>2</issue>
+          <fpage>228</fpage>
+          <lpage>237</lpage>
+          <pub-id pub-id-type="doi">10.1016/S0006-8993(97)00770-1</pub-id>
+          <pub-id pub-id-type="pmid">9401743</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR21">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Qureshi</surname>
+              <given-names>MNI</given-names>
+            </name>
+            <name>
+              <surname>Oh</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>B</given-names>
+            </name>
+          </person-group>
+          <article-title>3D-CNN based discrimination of schizophrenia using resting-state fMRI</article-title>
+          <source>Artificial Intelligence in Medicine</source>
+          <year>2019</year>
+          <volume>98</volume>
+          <fpage>10</fpage>
+          <lpage>17</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.artmed.2019.06.003</pub-id>
+          <pub-id pub-id-type="pmid">31521248</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR22">
+        <mixed-citation publication-type="other">Raeder, T., Forman, G., &amp; Chawla, N. V. (2012). Learning from imbalanced data: Evaluation matters. In <italic>Data mining: Foundations and intelligent paradigms</italic> (pp. 315–331). Springer.</mixed-citation>
+      </ref>
+      <ref id="CR23">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rajapakse</surname>
+              <given-names>JC</given-names>
+            </name>
+            <name>
+              <surname>Tan</surname>
+              <given-names>CL</given-names>
+            </name>
+            <name>
+              <surname>Zheng</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Mukhopadhyay</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Yang</surname>
+              <given-names>K</given-names>
+            </name>
+          </person-group>
+          <article-title>Exploratory analysis of brain connectivity with ICA</article-title>
+          <source>IEEE Engineering in Medicine and Biology Magazine</source>
+          <year>2006</year>
+          <volume>25</volume>
+          <issue>2</issue>
+          <fpage>102</fpage>
+          <lpage>111</lpage>
+          <pub-id pub-id-type="doi">10.1109/MEMB.2006.1607674</pub-id>
+          <pub-id pub-id-type="pmid">16568942</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR24">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sağ</surname>
+              <given-names>AT</given-names>
+            </name>
+            <name>
+              <surname>Has</surname>
+              <given-names>AC</given-names>
+            </name>
+            <name>
+              <surname>Öztekin</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Temuçin</surname>
+              <given-names>ÇM</given-names>
+            </name>
+            <name>
+              <surname>Oğuz</surname>
+              <given-names>KK</given-names>
+            </name>
+          </person-group>
+          <article-title>Tracking pain in resting state networks in patients with hereditary and diabetic neuropathy</article-title>
+          <source>Archives of Neuropsychiatry</source>
+          <year>2019</year>
+          <volume>56</volume>
+          <issue>2</issue>
+          <fpage>92</fpage>
+          <pub-id pub-id-type="pmid">31223239</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR25">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Santana</surname>
+              <given-names>AN</given-names>
+            </name>
+            <name>
+              <surname>Cifre</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>De Santana</surname>
+              <given-names>CN</given-names>
+            </name>
+            <name>
+              <surname>Montoya</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <article-title>Using deep learning and resting-state fMRI to classify chronic pain conditions</article-title>
+          <source>Frontiers in Neuroscience</source>
+          <year>2019</year>
+          <volume>13</volume>
+          <fpage>1313</fpage>
+          <pub-id pub-id-type="doi">10.3389/fnins.2019.01313</pub-id>
+          <pub-id pub-id-type="pmid">31920483</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR26">
+        <mixed-citation publication-type="other">Simonyan, K., &amp; Zisserman, A. (2014). Very deep convolutional networks for large-scale image recognition. <italic>arXiv preprint </italic><ext-link ext-link-type="uri" xlink:href="http://arxiv.org/abs/1409.1556">arXiv:1409.1556</ext-link></mixed-citation>
+      </ref>
+      <ref id="CR27">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Teh</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Wilkinson</surname>
+              <given-names>ID</given-names>
+            </name>
+            <name>
+              <surname>Heiberg-Gibbons</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Awadh</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Kelsall</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Pallai</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Sloan</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Tesfaye</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Selvarajah</surname>
+              <given-names>D</given-names>
+            </name>
+          </person-group>
+          <article-title>Somatosensory network functional connectivity differentiates clinical pain phenotypes in diabetic neuropathy</article-title>
+          <source>Diabetologia</source>
+          <year>2021</year>
+          <volume>64</volume>
+          <issue>6</issue>
+          <fpage>1412</fpage>
+          <lpage>1421</lpage>
+          <pub-id pub-id-type="doi">10.1007/s00125-021-05416-4</pub-id>
+          <pub-id pub-id-type="pmid">33768284</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR28">
+        <mixed-citation publication-type="other">Tesfaye, S., Vileikyte, L., Rayman, G., Sindrup, S. H., Perkins, B., Baconja, M., Vinik, A., Boulton, A., &amp; Toronto Expert Panel on Diabetic Neuropathy. (2011). Painful diabetic peripheral neuropathy: Consensus recommendations on diagnosis, assessment and management. <italic>Diabetes/metabolism Research and Reviews,</italic><italic>27</italic>(7), 629–638.</mixed-citation>
+      </ref>
+      <ref id="CR29">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Viola</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Newnham</surname>
+              <given-names>HH</given-names>
+            </name>
+            <name>
+              <surname>Simpson</surname>
+              <given-names>RW</given-names>
+            </name>
+          </person-group>
+          <article-title>Treatment of intractable painful diabetic neuropathy with intravenous lignocaine</article-title>
+          <source>Journal of Diabetes and Its Complications</source>
+          <year>2006</year>
+          <volume>20</volume>
+          <issue>1</issue>
+          <fpage>34</fpage>
+          <lpage>39</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.jdiacomp.2005.05.007</pub-id>
+          <pub-id pub-id-type="pmid">16389165</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR30">
+        <mixed-citation publication-type="other">Whitfield-Gabrieli, S., &amp; Nieto-Castanon, A. (2012). Conn: a functional connectivity toolbox for correlated and anticorrelated brain networks. <italic>Brain Connectivity</italic>, <italic>2</italic>(3), 125–141.</mixed-citation>
+      </ref>
+      <ref id="CR31">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wilkinson</surname>
+              <given-names>ID</given-names>
+            </name>
+            <name>
+              <surname>Teh</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Heiberg-Gibbons</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Awadh</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Kelsall</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Shillo</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Sloan</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Tesfaye</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Selvarajah</surname>
+              <given-names>D</given-names>
+            </name>
+          </person-group>
+          <article-title>Determinants of treatment response in painful diabetic peripheral neuropathy: A combined deep sensory phenotyping and multimodal brain MRI study</article-title>
+          <source>Diabetes</source>
+          <year>2020</year>
+          <volume>69</volume>
+          <issue>8</issue>
+          <fpage>1804</fpage>
+          <lpage>1814</lpage>
+          <pub-id pub-id-type="doi">10.2337/db20-0029</pub-id>
+          <pub-id pub-id-type="pmid">32471808</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR32">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yang</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>Q</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>Y</given-names>
+            </name>
+          </person-group>
+          <article-title>Multimodal MRI-based classification of migraine: Using deep learning convolutional neural network</article-title>
+          <source>Biomedical Engineering Online</source>
+          <year>2018</year>
+          <volume>17</volume>
+          <issue>1</issue>
+          <fpage>1</fpage>
+          <lpage>14</lpage>
+          <pub-id pub-id-type="doi">10.1186/s12938-018-0587-0</pub-id>
+          <pub-id pub-id-type="pmid">29310661</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR33">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yang</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Cao</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Fan</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <article-title>Large-scale brain functional network integration for discrimination of autism using a 3-D deep learning model</article-title>
+          <source>Frontiers in Human Neuroscience</source>
+          <year>2021</year>
+          <volume>15</volume>
+          <fpage>277</fpage>
+          <pub-id pub-id-type="doi">10.3389/fnhum.2021.687288</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR34">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhang</surname>
+              <given-names>Q</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Yan</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Xu</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Mao</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Ma</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Ye</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Yao</surname>
+              <given-names>Z</given-names>
+            </name>
+          </person-group>
+          <article-title>A single-blinded trial using resting-state functional magnetic resonance imaging of brain activity in patients with type 2 diabetes and painful neuropathy</article-title>
+          <source>Diabetes Therapy</source>
+          <year>2019</year>
+          <volume>10</volume>
+          <issue>1</issue>
+          <fpage>135</fpage>
+          <lpage>147</lpage>
+          <pub-id pub-id-type="doi">10.1007/s13300-018-0534-x</pub-id>
+          <pub-id pub-id-type="pmid">30506341</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR35">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhang</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Han</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Liang</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Tan</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Cao</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Gao</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Pomeroy</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Ng</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Hou</surname>
+              <given-names>W</given-names>
+            </name>
+          </person-group>
+          <article-title>An investigation of CNN models for differentiating malignant from benign lesions using small pathologically proven datasets</article-title>
+          <source>Computerized Medical Imaging and Graphics</source>
+          <year>2019</year>
+          <volume>77</volume>
+          <fpage>101645</fpage>
+          <pub-id pub-id-type="doi">10.1016/j.compmedimag.2019.101645</pub-id>
+          <pub-id pub-id-type="pmid">31454710</pub-id>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

@@ -1,0 +1,1297 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.3" xml:lang="en" article-type="research-article">
+  <?properties open_access?>
+  <processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats">
+    <restricted-by>pmc</restricted-by>
+  </processing-meta>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">Front Neurosci</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Front Neurosci</journal-id>
+      <journal-id journal-id-type="publisher-id">Front. Neurosci.</journal-id>
+      <journal-title-group>
+        <journal-title>Frontiers in Neuroscience</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">1662-4548</issn>
+      <issn pub-type="epub">1662-453X</issn>
+      <publisher>
+        <publisher-name>Frontiers Media S.A.</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">36532276</article-id>
+      <article-id pub-id-type="pmc">9748090</article-id>
+      <article-id pub-id-type="doi">10.3389/fnins.2022.1036487</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Neuroscience</subject>
+          <subj-group>
+            <subject>Original Research</subject>
+          </subj-group>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Identifying the neural marker of chronic sciatica using multimodal neuroimaging and machine learning analyses</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Wei</surname>
+            <given-names>Xiaoya</given-names>
+          </name>
+          <xref rid="aff1" ref-type="aff">
+<sup>1</sup>
+</xref>
+          <uri xlink:href="http://loop.frontiersin.org/people/1662617/overview"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Wang</surname>
+            <given-names>Liqiong</given-names>
+          </name>
+          <xref rid="aff1" ref-type="aff">
+<sup>1</sup>
+</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Yu</surname>
+            <given-names>Fangting</given-names>
+          </name>
+          <xref rid="aff1" ref-type="aff">
+<sup>1</sup>
+</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Lee</surname>
+            <given-names>Chihkai</given-names>
+          </name>
+          <xref rid="aff1" ref-type="aff">
+<sup>1</sup>
+</xref>
+          <uri xlink:href="http://loop.frontiersin.org/people/1524656/overview"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Liu</surname>
+            <given-names>Ni</given-names>
+          </name>
+          <xref rid="aff2" ref-type="aff">
+<sup>2</sup>
+</xref>
+          <uri xlink:href="http://loop.frontiersin.org/people/2091399/overview"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Ren</surname>
+            <given-names>Mengmeng</given-names>
+          </name>
+          <xref rid="aff2" ref-type="aff">
+<sup>2</sup>
+</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Tu</surname>
+            <given-names>Jianfeng</given-names>
+          </name>
+          <xref rid="aff1" ref-type="aff">
+<sup>1</sup>
+</xref>
+          <uri xlink:href="http://loop.frontiersin.org/people/1292897/overview"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Zhou</surname>
+            <given-names>Hang</given-names>
+          </name>
+          <xref rid="aff1" ref-type="aff">
+<sup>1</sup>
+</xref>
+          <uri xlink:href="http://loop.frontiersin.org/people/1660142/overview"/>
+        </contrib>
+        <contrib contrib-type="author" corresp="yes">
+          <name>
+            <surname>Shi</surname>
+            <given-names>Guangxia</given-names>
+          </name>
+          <xref rid="aff1" ref-type="aff">
+<sup>1</sup>
+</xref>
+          <xref rid="c002" ref-type="corresp">
+<sup>*</sup>
+</xref>
+          <uri xlink:href="http://loop.frontiersin.org/people/1062252/overview"/>
+        </contrib>
+        <contrib contrib-type="author" corresp="yes">
+          <name>
+            <surname>Wang</surname>
+            <given-names>Xu</given-names>
+          </name>
+          <xref rid="aff3" ref-type="aff">
+<sup>3</sup>
+</xref>
+          <xref rid="c001" ref-type="corresp">
+<sup>*</sup>
+</xref>
+          <uri xlink:href="http://loop.frontiersin.org/people/456482/overview"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Liu</surname>
+            <given-names>Cun-Zhi</given-names>
+          </name>
+          <xref rid="aff1" ref-type="aff">
+<sup>1</sup>
+</xref>
+          <uri xlink:href="http://loop.frontiersin.org/people/106501/overview"/>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1"><sup>1</sup><institution>International Acupuncture and Moxibustion Innovation Institute, School of Acupuncture- Moxibustion and Tuina, Beijing University of Chinese Medicine</institution>, <addr-line>Beijing</addr-line>, <country>China</country></aff>
+      <aff id="aff2"><sup>2</sup><institution>Department of Radiology, Beijing Hospital of Traditional Chinese Medicine Affiliated to Capital Medical University</institution>, <addr-line>Beijing</addr-line>, <country>China</country></aff>
+      <aff id="aff3"><sup>3</sup><institution>School of Life Sciences, Beijing University of Chinese Medicine</institution>, <addr-line>Beijing</addr-line>, <country>China</country></aff>
+      <author-notes>
+        <fn fn-type="edited-by">
+          <p>Edited by: Yoonmi Hong, University of North Carolina at Chapel Hill, United States</p>
+        </fn>
+        <fn fn-type="edited-by">
+          <p>Reviewed by: Shana Black, The University of Utah, United States; Yanlu Wang, Karolinska Institutet (KI), Sweden; Dong-Youl Kim, Virginia Tech Carilion, United States; Yuncong Ma, University of Pennsylvania, United States; Zhen Qiu, Michigan State University, United States</p>
+        </fn>
+        <corresp id="c001">*Correspondence: Xu Wang, <email>wangx@bucm.edu.cn</email></corresp>
+        <corresp id="c002">Guangxia Shi, <email>shiguangxia2008@126.com</email></corresp>
+        <fn fn-type="other" id="fn004">
+          <p>This article was submitted to Brain Imaging Methods, a section of the journal Frontiers in Neuroscience</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="epub">
+        <day>30</day>
+        <month>11</month>
+        <year>2022</year>
+      </pub-date>
+      <pub-date pub-type="collection">
+        <year>2022</year>
+      </pub-date>
+      <volume>16</volume>
+      <elocation-id>1036487</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>04</day>
+          <month>9</month>
+          <year>2022</year>
+        </date>
+        <date date-type="accepted">
+          <day>14</day>
+          <month>11</month>
+          <year>2022</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Copyright © 2022 Wei, Wang, Yu, Lee, Liu, Ren, Tu, Zhou, Shi, Wang and Liu.</copyright-statement>
+        <copyright-year>2022</copyright-year>
+        <copyright-holder>Wei, Wang, Yu, Lee, Liu, Ren, Tu, Zhou, Shi, Wang and Liu</copyright-holder>
+        <license>
+          <ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref>
+          <license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY). The use, distribution or reproduction in other forums is permitted, provided the original author(s) and the copyright owner(s) are credited and that the original publication in this journal is cited, in accordance with accepted academic practice. No use, distribution or reproduction is permitted which does not comply with these terms.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <sec>
+          <title>Introduction</title>
+          <p>Sciatica is a pain disorder often caused by the herniated disk compressing the lumbosacral nerve roots. Neuroimaging studies have identified functional abnormalities in patients with chronic sciatica (CS). However, few studies have investigated the neural marker of CS using brain structure and the classification value of multidimensional neuroimaging features in CS patients is unclear.</p>
+        </sec>
+        <sec>
+          <title>Methods</title>
+          <p>Here, structural and resting-state functional magnetic resonance imaging (fMRI) was acquired for 34 CS patients and 36 matched healthy controls (HCs). We analyzed cortical surface area, cortical thickness, amplitude of low-frequency fluctuation (ALFF), regional homogeneity (REHO), between-regions functional connectivity (FC), and assessed the correlation between neuroimaging measures and clinical scores. Finally, the multimodal neuroimaging features were used to differentiate the CS patients and HC individuals by support vector machine (SVM) algorithm.</p>
+        </sec>
+        <sec>
+          <title>Results</title>
+          <p>Compared to HC, CS patients had a larger cortical surface area in the right banks of the superior temporal sulcus and rostral anterior cingulate; higher ALFF value in the left inferior frontal gyrus; enhanced FCs between somatomotor and ventral attention network. Three FCs values were associated with clinical pain scores. Furthermore, the three multimodal neuroimaging features with significant differences between groups and the SVM algorithm could classify CS patients and HC with an accuracy of 90.00%.</p>
+        </sec>
+        <sec>
+          <title>Discussion</title>
+          <p>Together, our findings revealed extensive reorganization of local functional properties, surface area, and network metrics in CS patients. The success of patient identification highlights the potential of using artificial intelligence and multimodal neuroimaging markers in chronic pain research.</p>
+        </sec>
+      </abstract>
+      <kwd-group>
+        <kwd>brain networks</kwd>
+        <kwd>chronic pain</kwd>
+        <kwd>fMRI</kwd>
+        <kwd>chronic sciatica</kwd>
+        <kwd>support vector machines</kwd>
+        <kwd>ALFF</kwd>
+        <kwd>cortical surface area</kwd>
+      </kwd-group>
+      <counts>
+        <fig-count count="3"/>
+        <table-count count="5"/>
+        <equation-count count="1"/>
+        <ref-count count="62"/>
+        <page-count count="13"/>
+        <word-count count="9168"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec sec-type="intro" id="S1">
+      <title>Introduction</title>
+      <p>Sciatica is a pain disorder often caused by the herniated disk compressing the lumbosacral nerve roots, usually presenting as pain radiating from the low back down to the leg below the knee (<xref rid="B49" ref-type="bibr">Porchet et al., 2002</xref>; <xref rid="B11" ref-type="bibr">Deyo and Mirza, 2016</xref>). About a quarter of adults in the USA have experienced low back pain in the past 3 months, and 30% of those accompanied sciatica (<xref rid="B27" ref-type="bibr">Jensen et al., 2019</xref>). The global prevalence of sciatica varies from 1.2 to 43% (<xref rid="B32" ref-type="bibr">Konstantinou and Dunn, 2008</xref>; <xref rid="B15" ref-type="bibr">Finley et al., 2018</xref>), reflecting its ununified diagnostic criteria and diverse clinical manifestations. Pain caused by sciatica can easily progress to a chronic stage which may be either continuous or recurrent, and severely affects the quality of life and mental health (<xref rid="B17" ref-type="bibr">Foster and Reddington, 2021</xref>). However, the pathophysiologic mechanisms of chronic sciatica (CS) are not clear, which restricts the development of therapeutic protocols.</p>
+      <p>Previous neuroimaging studies have shown greater regional homogeneity (REHO) of the posterior cingulate (<xref rid="B40" ref-type="bibr">Liu et al., 2020</xref>) and lower functional connectivity (FC) between the dorsolateral prefrontal cortex (DLPFC) and anterior cingulate cortex (ACC) (<xref rid="B36" ref-type="bibr">Li et al., 2012</xref>) in patients with CS compared with healthy controls (HCs). However, these functional abnormalities may not fully account for the pathophysiology of CS, because a large number of studies have found both functional and structural (e.g., cortical surface area) changes associated with chronic pain (<xref rid="B50" ref-type="bibr">Seminowicz et al., 2011</xref>; <xref rid="B43" ref-type="bibr">Luchtmann et al., 2014</xref>; <xref rid="B10" ref-type="bibr">De Pauw et al., 2019</xref>; <xref rid="B47" ref-type="bibr">Niddam et al., 2019</xref>). Besides, multiple studies have suggested that communication between brain networks is changed in chronic pain patients, and connections across networks may reflect the presence of chronic pain (<xref rid="B29" ref-type="bibr">Kim et al., 2013</xref>; <xref rid="B25" ref-type="bibr">Hemington et al., 2016</xref>).</p>
+      <p>Given these neuroimaging findings on chronic pain, we speculated that patients with CS may also have abnormal changes in structural properties or between-regions FC. In addition, previous studies have applied machine learning techniques to distinguish patients with post-herpetic neuralgia (PHN) and HC using the amplitude of low-frequency fluctuation (ALFF) values (<xref rid="B26" ref-type="bibr">Huang et al., 2020</xref>). However, few studies have classified neuropathic pain patients from HC by multimodal neuroimaging features. The multidimensional neuroimaging features may serve as a bridge between clinical observations and neural mechanisms that can increase the understanding of CS as a complex and multifaceted pain-related disease.</p>
+      <p>Therefore, this study aimed to investigate the underlying neurobiological mechanisms of CS using surface-based morphometry, local functional metric, and network FC analyses in patients with CS using structural and functional magnetic resonance imaging (fMRI) data. Besides, the relationships between neuroimaging measures and clinical symptom scale scores were examined. Furthermore, the diagnosability of the neuroimaging properties was evaluated utilizing a support vector machine (SVM) of machine learning techniques and neuroimaging features with significant differences between CS patients and HC.</p>
+    </sec>
+    <sec sec-type="materials|methods" id="S2">
+      <title>Materials and methods</title>
+      <sec id="S2.SS1">
+        <title>Participants</title>
+        <p>This study included 34 CS patients who meet the diagnostic criteria of sciatica (<xref rid="B27" ref-type="bibr">Jensen et al., 2019</xref>) and 38 HC participants. Patients were recruited in the Dongzhimen Hospital Affiliated to Beijing University of Chinese Medicine from December 2020 to May 2021. The study recruited participants through hospital outpatient, the WeChat official account (one of China’s popular social media platforms) of Dongzhimen Hospital, and brochures.</p>
+        <p>The key inclusion criteria of CS people were: (1) 35–65 years old; (2) having unilateral radiating leg pain below the knee for more than 3 months, accompanied by a positive straight-leg raise test or corresponding neurological deficit (paresthesia, muscle weakness, or reflex abnormalities) with magnetic resonance imaging (MRI) or computed tomography (CT) confirmed disk herniation, (3) leg pain intensity on the visual analog scale (VAS) (0–100 mm) of 40 mm or higher (<xref rid="B8" ref-type="bibr">Collins et al., 1997</xref>), (4) right-handed. The exclusion criteria were: (1) sciatica induced by other diseases than lumbar disk herniation, (2) having the severe spinal disease or severe progressive neurological symptoms, (3) having cardiovascular, liver, kidney, or hematopoietic system diseases, mental health disorders, or other severe coexisting diseases, (4) pregnant or lactating women or those planning to conceive during the trial. Additionally, 38 pain-free age- and sex-matched HCs were recruited from the same geographic area by public advertisement. All HCs also met the above exclusion criteria. In addition, HCs were asked whether had personal or family histories of pain disorders or had experienced any significant pain condition as the exclusion criteria.</p>
+        <p>This study has been approved by the Ethics Committee of Dongzhimen Hospital Affiliated to Beijing University of Chinese Medicine (No. 2020BZYLL0803), and it was part of a study registered in Chinese Clinical Trial Registry (ChiCTR2100044585). All participants provided written informed consent according to the Declaration of Helsinki after study procedures were explained to them thoroughly. We collected MRI data from all participants.</p>
+      </sec>
+      <sec id="S2.SS2">
+        <title>Clinical parameters</title>
+        <p>After recruitment, the following clinical measurements were evaluated by CS patients within the day before the MRI scanning. VAS was performed to rate the extent of pain in the leg and low back. Oswestry Disability Index (ODI) (<xref rid="B13" ref-type="bibr">Fairbank and Pynsent, 2000</xref>) was conducted to identify self-reported function levels through examining perceived disability in 10 activities of daily living. Sciatica Frequency and Bothersomeness Index (SFBI) (<xref rid="B3" ref-type="bibr">Atlas et al., 1996</xref>) was used to assess the frequency and bothersomeness of sciatica with scores ranging from 0 to 24, respectively. The 36-item Short-Form Health Survey (SF-36) (<xref rid="B34" ref-type="bibr">Lam et al., 2005</xref>) was administered to assess the quality of life in eight aspects, and the scores on the physical and mental components of the SF-36 will be summarized.</p>
+      </sec>
+      <sec id="S2.SS3">
+        <title>Magnetic resonance imaging acquisition</title>
+        <p>Magnetic resonance imaging images were obtained at a Siemens 3.0 T MRI scanner (Skyra, Siemens, Erlangen, Germany) using a standard head coil at the Department of Radiology for Beijing Hospital of Traditional Chinese Medicine Affiliated to Capital Medical University. The high-resolution T1 structural MRI (sMRI) was acquired using a gradient echo sequence with the following parameters: repetition time (TR) = 2,530 ms, echo time (TE) = 2.98 ms, flip angle (FA) = 7°, inversion time = 1,100 ms, field of view (FOV) = 240 mm × 240 mm, number of slices = 192, voxel size = 1 mm × 1 mm × 1 mm, and in-plane resolution = 256 × 256. And resting-state functional MRI (rs-fMRI) was scanned using echo-planar imaging (EPI) sequence with the following parameters: whole brain, TR = 2,000 ms, TE = 30 ms, FOV = 224 mm × 224 mm, FA = 90°, slice thickness/gap = 3.5/0.6 mm, voxel size = 3.5 mm × 3.5 mm × 3.5 mm, axial slices = 32, in-plane resolution = 64 × 64, and 240 volumes. The scan duration was 5 min for the T1-weighted image and 8 min for EPI scans for blood oxygen-level dependent (BOLD)-based functional neuroimaging. We used comfortable foam pads to minimize head motion and earplugs to reduce noise interference. Before starting scanning, we instructed participants to keep their eyes closed, stay awake, avoid engaging in any specific thoughts and keep still.</p>
+      </sec>
+      <sec id="S2.SS4">
+        <title>Quality control of magnetic resonance imaging data</title>
+        <p>Visually checking image quality by a neuroradiologist (QR) to make sure there were no apparent structural abnormalities or artifacts present, and the images with head movement greater than 2 mm in any direction or head rotation greater than 1° were excluded. Two HCs were excluded from the study on account of excessive head motion (&gt;2 mm in translation or &gt;2.0° in rotation) during the rs-fMRI scanning. The two excluded participants were female, their ages were 48 and 54 years. As a result, 34 patients with CS and 36 HCs were included in further statistical analyses. Furthermore, we also extracted the mean framewise displacement (FD) (<xref rid="B56" ref-type="bibr">Van Dijk et al., 2012</xref>) for each participant to measure the extent of head motion and compared them between the two groups. The Mann–Whitney <italic>U</italic> of non-parametric test result showed that there is no significant difference in head motion among the three groups (<italic>z</italic> = 1.575, <italic>p</italic> = 0.115).</p>
+      </sec>
+      <sec id="S2.SS5">
+        <title>Structural magnetic resonance imaging data processing</title>
+        <p>First, the ‘‘recon-all’’ command with --all --qcache options implemented in FreeSurfer (V6.0)<sup><xref rid="footnote1" ref-type="fn">1</xref></sup> was used to pre-process T1-weighted images, the key steps including motion correction, non-uniform intensity normalization, talairach transform computation, skull removal, volumetric segmentation, cortical surface reconstruction and so on. Mean cortical thickness and surface area were calculated for each of the 68 cortical regions of the Desikan-Killiany Atlas (34 per hemisphere). Cortical thickness was estimated for each participant using the distance from the white matter boundary to the corresponding pial surface (<xref rid="B16" ref-type="bibr">Fischl and Dale, 2000</xref>). The cerebral surface area was calculated by mesh generation and surface triangulation. Then mean cortical thickness and surface area were extracted for each cortical region.</p>
+      </sec>
+      <sec id="S2.SS6">
+        <title>Functional magnetic resonance imaging data processing and network analyses</title>
+        <p>The fMRI data were pre-processed using the software MATLAB 2017 and the toolbox for Data Processing and Analysis for Brain Imaging (DPABI) (version 6.1)<sup><xref rid="footnote2" ref-type="fn">2</xref></sup> (<xref rid="B59" ref-type="bibr">Yan et al., 2016</xref>). For each participant’s image data, we discarded the first 10 volumes because of signal equilibrium, a total of 230 volumes for each subject were processed with the slice timing, motion correction, spatial smoothing (8-mm FWHM), and spatial normalization to the Montreal Neurological Institute (MNI) space. Then we re-sampled the data into 3 mm × 3 mm × 3 mm. Finally, after removing the linear trend, we applied a 0.01–0.08 Hz bandpass filter.</p>
+        <p>It should be noted that ALFF was calculated without filtering during the pre-processing process, and REHO was not smoothed during the pre-processing but smoothed after it was calculated, to allow the data to be normalized, which would be conducive to statistical analysis and indicator standardization. ALFF and REHO values were calculated using the DPBAI toolbox. ALFF is used to detect the regional intensity of spontaneous fluctuations in the BOLD signal, REHO calculates the temporal homogeneity of the BOLD signal between a given voxel with neighboring voxels. These measures were selected to pinpoint the spontaneous neural activity of specific regions and physiological states of the brain. The ALFF measures the gross power of oscillations within a certain frequency range, using the DPBAI software and regions of interest (ROIs) defined by the Anatomical Automatic Labeling (AAL) ROI library. The calculation procedure: (1) Fast Fourier Transform (FFT) was used to convert all voxels from the time domain to the frequency domain; (2) the ALFF of every voxel was calculated by averaging the square root of the power spectrum across 0. REHO was computed based on Kendall’s coefficient of concordance (KCC) of the time series of the voxel with its nearest 26 neighboring voxels. The REHO was computed for all brain voxels.</p>
+        <p>We used the software MATLAB 2017 and the DPABI (version 6.1) to extract time courses of 160 ROIs in the Dosenbach 160 atlas (<xref rid="B12" ref-type="bibr">Dosenbach et al., 2010</xref>). Each ROI (i.e., node) was a 5 mm radius sphere centered on the atlas coordinates, including 19 voxels in each. To derive the connectivity matrix of the brain, we computed Pearson correlation coefficients of BOLD signals between each pair of 142 ROIs (<xref rid="B20" ref-type="bibr">Glasser et al., 2016</xref>) (Dosenbach 160 atlas exclude 18 ROIs of the cerebellum), which were then Fisher transformed to <italic>z</italic>-values. We grouped significant nodes according to a well-defined seven-network atlas derived from 1,000 healthy participants by <xref rid="B61" ref-type="bibr">Yeo et al. (2011)</xref>: sensory-motor network (SMN), ventral attention network (VAN), visual network (VN), dorsal attention network (DAN), default mode network (DMN), frontoparietal network (FPN), and subcortical network (SC). Because the limbic network nodes from the Yeo atlas were not covered by the Dosenbach 160 atlas, we defined subcortical ROIs as the SC (<xref rid="B60" ref-type="bibr">Yang et al., 2021</xref>).</p>
+      </sec>
+      <sec id="S2.SS7">
+        <title>Statistical analyses</title>
+        <sec id="S2.SS7.SSS1">
+          <title>Demographic and clinical characteristics analyses</title>
+          <p>Demographic data collected from either group includes age, gender, educational level, and occupation. Participants were asked to indicate the physical activity level of the work they do most of the time, the nature of occupation was defined as manual work and mental work. We used Statistical Package for Social Sciences (SPSS) V21 software to conduct statistical analyses. Before statistical analyses, we checked the normality of each metric. Education in each group and age of the HC group were non-normally distributed, we used Kolmogorov–Smirnov non-parametric tests. As for categorical variables (i.e., gender and occupation), we used the Chi-Square test to evaluate the differences between groups. The significance level was set at <italic>p</italic> &lt; 0.05.</p>
+        </sec>
+        <sec id="S2.SS7.SSS2">
+          <title>Surface area and thickness analyses</title>
+          <p>The cortical surface area and cortical thickness of CS patients and HC were extracted. Then, we used SPSS V21 software to conduct statistical analyses. Two-sample independent <italic>t</italic>-tests were used to compare the regional-wise differences between the two groups if the measurements were normally distributed [False discovery rate (FDR) correction, <italic>p</italic> &lt; 0.05], and if the data distribution is not normal, we used non-parametric tests of Mann–Whitney <italic>U</italic>. Effect sizes are depicted as Cohen’s d. The effect size was computed at <ext-link xlink:href="https://www.psychometrica.de/effect_size.html" ext-link-type="uri">https://www.psychometrica.de/effect_size.html</ext-link>.</p>
+        </sec>
+        <sec id="S2.SS7.SSS3">
+          <title>Amplitude of low-frequency fluctuation and regional homogeneity analyses</title>
+          <p>For ALFF and REHO maps, voxel-wise two-sample independent <italic>t</italic>-tests were performed to compare the results between the two groups, Gaussian Random Field theory (GRF) correction, voxel-level <italic>p</italic> &lt; 0.001, and cluster-level <italic>p</italic> &lt; 0.05. We extracted the values of ALFF and REHO results and calculated effect sizes using Cohen’s d.</p>
+        </sec>
+        <sec id="S2.SS7.SSS4">
+          <title>Network functional connectivity analyses</title>
+          <p>For FC analyses, we also used two-sample independent <italic>t</italic>-tests with FDR corrected (<italic>p</italic> &lt; 0.05) in DPABINet (See text footnote 2, version 1.1). The figures were distributed in DPABINet and BrainNet Viewer.<sup><xref rid="footnote3" ref-type="fn">3</xref></sup> Finally, we extracted the values and showed them in the tables. Cohen’ s d was used as the effect size measure.</p>
+        </sec>
+        <sec id="S2.SS7.SSS5">
+          <title>Brain metrics and clinical variables correlation analyses</title>
+          <p>We extracted metrics (ALFF, REHO, surface-based morphometry, and FC) with significant group differences and investigated their relationships with clinical variables. VAS score for leg pain, VAS score for back pain, ODI score, SF-36 for physical, SF-36 for mental, SFBI for frequency, and SFBI for bothersomeness were investigated. For non-normally distributed variables (VAS score for leg pain and SF-36 for mental score), we used Spearman’s correlation analyses. For the other normally distributed variables, Pearson correlation was used to analyze the correlation. The above statistical analyses were implemented using SPSS V21 (significance level is <italic>p</italic> &lt; 0.05).</p>
+        </sec>
+        <sec id="S2.SS7.SSS6">
+          <title>Group classification with support vector machine</title>
+          <p>After revealing the significant ALFF values, surface area, and FCs in the CS group, we used these three kinds of features to accurately differentiate the 34 CS individuals from the 36 HCs. Features with different scales across different modalities were normalized to a value between 0 and 1 according to their maximum and minimum values. Then, the discriminant analysis was performed by using the SVM with a nested leave-one-out cross-validation (LOOCV) framework. First, the C regularization parameter and the linear kernel function were optimized by performing 5-fold cross-validation on the n-1 (i.e., 69) training data. Once the optimal SVM model was obtained, it was applied to classify the left-out individual as CS or HC.</p>
+          <p>The performances of a classifier were quantified using accuracy, sensitivity, specificity, and the area under the receiver operating characteristic (ROC) curve (AUC). Note that the specificity represented the proportion of the HC individuals correctly predicted, while the sensitivity represented the proportion of the CS individuals correctly predicted. Specifically, accuracy is calculated as (TP + TN)/(TP + TN + FN + FP), sensitivity is defined as TP/(TP + FN) and specificity is defined as TN/(FP + TN), where TN is the number of true negatives (HC individuals correctly classified), TP is the number of true positives (CS individuals correctly classified), FN is the number of false negatives (CS individuals classified as HC individuals), and FP is the number of false positives (HC individuals classified as CS individuals). In addition, the AUC is an evaluation measure based on the ROC curve, which illustrates the performance of the classifier. The ROC curve is delineated by plotting 1-specificity and sensitivity at different thresholds, and the thresholds of each ROC curve underwent stepwise variation from 0 to 1 in each 0.1 interval. Last, the model’s performance was evaluated by computation of the Matthews Correlation Coefficient (MCC). The calculation formula (<xref rid="B1" ref-type="bibr">Ali et al., 2021</xref>) is as follows:</p>
+          <disp-formula id="S2.Ex1">
+<mml:math id="M1" overflow="scroll"><mml:mrow><mml:mi>M</mml:mi><mml:mi>C</mml:mi><mml:mi>C</mml:mi><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:mi>T</mml:mi><mml:mi>P</mml:mi><mml:mo>×</mml:mo><mml:mi>T</mml:mi><mml:mi>N</mml:mi><mml:mo>−</mml:mo><mml:mi>F</mml:mi><mml:mi>P</mml:mi><mml:mo>×</mml:mo><mml:mi>F</mml:mi><mml:mi>N</mml:mi></mml:mrow><mml:mrow><mml:mo>√</mml:mo><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mi>T</mml:mi><mml:mi>P</mml:mi><mml:mo>+</mml:mo><mml:mi>F</mml:mi><mml:mi>P</mml:mi></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mi>T</mml:mi><mml:mi>P</mml:mi><mml:mo>+</mml:mo><mml:mi>F</mml:mi><mml:mi>N</mml:mi></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mi>T</mml:mi><mml:mi>N</mml:mi><mml:mo>+</mml:mo><mml:mi>F</mml:mi><mml:mi>P</mml:mi></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mi>T</mml:mi><mml:mi>N</mml:mi><mml:mo>+</mml:mo><mml:mi>F</mml:mi><mml:mi>N</mml:mi></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:mfrac></mml:mrow></mml:math>
+</disp-formula>
+        </sec>
+      </sec>
+    </sec>
+    <sec sec-type="results" id="S3">
+      <title>Results</title>
+      <sec id="S3.SS1">
+        <title>Demographic and clinical characteristics</title>
+        <p>Thirty-four CS patients and 36 matched HCs completed the entire study. Age and years of education were not normally distributed, so the Kolmogorov–Smirnov test was used to test for group differences. No significant group differences were found in age (<italic>p</italic> = 0.449), gender (Chi-square test: <italic>p</italic> = 0.497), years of education (<italic>p</italic> = 0.381), and occupation (Chi-square test: <italic>p</italic> = 0.204) between the CS and HC groups (<xref rid="T1" ref-type="table">Table 1</xref>). And the median pain duration of CS was 8 months, the median pain score for the leg on the VAS was 55, and the mean VAS score for back pain was 57.50 (14.72) in patients. Otherwise, the mean SF-36 score for the physical duration of CS was 35.32 (10.34), and the median SF-36 score for mental was 57.31 in CS patients.</p>
+        <table-wrap position="float" id="T1">
+          <label>TABLE 1</label>
+          <caption>
+            <p>Demographic and clinical characteristics of two groups.</p>
+          </caption>
+          <table frame="hsides" rules="groups" cellspacing="5" cellpadding="5">
+            <thead>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Parameter</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">CS (<italic>n</italic> = 34)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">HC (<italic>n</italic> = 36)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Statistics</td>
+                <td valign="top" align="center" rowspan="1" colspan="1"><italic>P</italic>-value</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Age (years)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">54.29 (8.80)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">58.50 (51, 62.75)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1"><italic>Z</italic> = 0.861</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.449<sup>a</sup></td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Gender (M/F)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">14/20</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">12/24</td>
+                <td valign="top" align="center" rowspan="1" colspan="1"><italic>X</italic><sup>2</sup> = 0.461</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.497<sup>b</sup></td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Education (years)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">12.97 (3.49)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">11.50 (2.77)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1"><italic>Z</italic> = 0.909</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.381<sup>a</sup></td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Occupation (Men/Man)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">11/23</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">19/17</td>
+                <td valign="top" align="center" rowspan="1" colspan="1"><italic>X</italic><sup>2</sup> = 1.611</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.204<sup>b</sup></td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Pain duration (years)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">8.00 (3.38, 17.75)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">N/A</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">N/A</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">N/A</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">VAS score for leg pain</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">55 (50, 70)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">N/A</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">N/A</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">N/A</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">VAS score for back pain</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">57.50 (14.72)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">N/A</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">N/A</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">N/A</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">ODI score</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">26.27 (11.33)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">N/A</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">N/A</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">N/A</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">SF-36 for physical</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">35.32 (10.34)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">N/A</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">N/A</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">N/A</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">SF-36 for mental</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">57.31 (47.42, 62.71)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">N/A</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">N/A</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">N/A</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">SFBI for frequency</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">12.85 (4.84)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">N/A</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">N/A</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">N/A</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">SFBI for bothersomeness</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">11.88 (4.27)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">N/A</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">N/A</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">N/A</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <fn>
+              <p>We used mean (standard deviation) if the measurements were normally distributed, and median (Q1, Q3) if the measurements were not normally distributed. <sup>a</sup>Non-parametric test, Kolmogorov–Smirnov. <sup>b</sup>Chi-square test. CS, chronic sciatica; HC, healthy controls; M/F, male/female; Men/Man, Mental work/Manual work; N/A, not applicable; VAS, visual analog scale, 0–100 mm; ODI, Oswestry Disability Index; SF-36, the 36-item Short-Form Health Survey; SFBI, Sciatica Frequency and Bothersomeness Index.</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+      </sec>
+      <sec id="S3.SS2">
+        <title>Amplitude of low-frequency fluctuation abnormality in chronic sciatica patients</title>
+        <p>Compared with the HC group, patients with CS had higher ALFF in the left inferior frontal gyrus (IFG) (<italic>t</italic> = 4.132, ES = −1.238, CI [−1.750 to −0.727]; <xref rid="F1" ref-type="fig">Figure 1A</xref> and <xref rid="T2" ref-type="table">Table 2</xref>). However, the REHO analysis did not yield any significant results at the whole brain level.</p>
+        <fig position="float" id="F1">
+          <label>FIGURE 1</label>
+          <caption>
+            <p>Group differences in local functional metric and surface morphology. <bold>(A)</bold> Patients with CS have significantly higher ALFF value in the left inferior frontal gyrus. The red color reflects ALFF values greater in CS patients than in the HC group. Gaussian Random Field theory (GRF) correction with voxel-level <italic>p</italic> &lt; 0.001 and cluster-level <italic>p</italic> &lt; 0.05. <bold>(B)</bold> Cortical surface area differences between CS patients and HC. <italic>T</italic>-values of two altered brain regions in the surface area of the right hemisphere. Positive (red) values reflect cortical area larger in CS patients than in the HC group, FDR corrected <italic>p</italic> &lt; 0.05. CS, chronic sciatica; CS, chronic sciatica; HC, healthy controls; rh, right hemisphere; rACC, rostral anterior cingulate cortex; bankssts, banks of superior temporal sulcus.</p>
+          </caption>
+          <graphic xlink:href="fnins-16-1036487-g001" position="float"/>
+        </fig>
+        <table-wrap position="float" id="T2">
+          <label>TABLE 2</label>
+          <caption>
+            <p>Significant differences in ALFF between two groups.</p>
+          </caption>
+          <table frame="hsides" rules="groups" cellspacing="5" cellpadding="5">
+            <thead>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1"/>
+                <td valign="top" align="center" rowspan="1" colspan="1">Regions</td>
+                <td valign="top" align="center" colspan="3" rowspan="1">Peak MNI coordinates<hr/></td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Voxels size</td>
+                <td valign="top" align="center" rowspan="1" colspan="1"><italic>t</italic>-value</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">ES (95%CI)</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1"/>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+<italic>X</italic>
+</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+<italic>Y</italic>
+</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+<italic>Z</italic>
+</td>
+                <td rowspan="1" colspan="1"/>
+                <td rowspan="1" colspan="1"/>
+                <td rowspan="1" colspan="1"/>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">
+<bold>ALFF</bold>
+</td>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="left" rowspan="1" colspan="1"/>
+                <td valign="top" align="left" rowspan="1" colspan="1"/>
+                <td valign="top" align="left" rowspan="1" colspan="1"/>
+                <td rowspan="1" colspan="1"/>
+                <td rowspan="1" colspan="1"/>
+                <td rowspan="1" colspan="1"/>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">CS &gt; HC</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Inferior frontal gyrus, L</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−36</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">6</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">27</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">85</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">4.132</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−1.238 (−1.750, −0.727)</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <fn>
+              <p>Regions were identified in <xref rid="F1" ref-type="fig">Figure 1A</xref>. Peak coordinates (<italic>X</italic>, <italic>Y</italic>, <italic>Z</italic>) are displayed according to MNI standard space, and labels according to the AAL atlas. GRF corrected, voxel-level <italic>p</italic> &lt; 0.001, cluster-level <italic>p</italic> &lt; 0.05. MNI, Montreal Neurological Institute; CS, chronic sciatica; HC, healthy controls; ALFF, the amplitude of low-frequency fluctuation; L, left; ES, effect sizes, Cohen’s d; CI, confidence interval; the effect size was computed for groups with different sample size.</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+      </sec>
+      <sec id="S3.SS3">
+        <title>Abnormal surface area in chronic sciatica patients</title>
+        <p>Compared with the HC group, patients with CS had the larger surface area in the right banks of the superior temporal sulcus (bankssts) (<italic>t</italic> = 3.666, ES = −0.877, CI [−1.367 to 0.386], FDR corrected <italic>p</italic> = 0.016) and right rostral anterior cingulate (rACC) (<italic>t</italic> = 3.417, ES = −0.817, CI [−1.305 to 0.329], FDR corrected <italic>p</italic> = 0.018; <xref rid="T3" ref-type="table">Table 3</xref> and <xref rid="F1" ref-type="fig">Figure 1B</xref>). However, we did not find a significant difference in cortical thickness between the two groups.</p>
+        <table-wrap position="float" id="T3">
+          <label>TABLE 3</label>
+          <caption>
+            <p>Differences in surface area index between the two groups.</p>
+          </caption>
+          <table frame="hsides" rules="groups" cellspacing="5" cellpadding="5">
+            <thead>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1"/>
+                <td valign="top" align="center" rowspan="1" colspan="1">Region</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">CS (<italic>n</italic> = 34)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">HC (<italic>n</italic> = 36)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1"><italic>t</italic>-value</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">ES (95%CI)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1"><italic>P</italic>-value</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">CS &gt; HC</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">rh_bankssts</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">941.24 (150.03)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">834.78 (86.14)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">3.666</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−0.877 (−1.367, 0.386)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.016*</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="center" rowspan="1" colspan="1">rh_rACC</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">662.29 (170.19)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">542.17 (121.17)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">3.417</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−0.817 (−1.305, 0.329)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.018*</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <fn>
+              <p>We used mean (standard deviation) if the measurements were normally distributed. Two-sample <italic>t</italic>-test. *Survives false discovery rate (FDR) correction, <italic>p</italic> &lt; 0.05. CS, chronic sciatica; HC, healthy controls; rh, right hemisphere; rACC, rostral anterior cingulate cortex; bankssts, banks of superior temporal sulcus; ES, effect sizes, Cohen’s d; CI, confidence interval; the effect size was computed for groups with different sample size.</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+      </sec>
+      <sec id="S3.SS4">
+        <title>Functional connectivity alterations in chronic sciatica and its relationship with clinical symptoms</title>
+        <p>For FC analysis, there were 15 connections between SMN and VAN that exhibited higher connection strength in the CS group than in the HC group, with a few connections among other networks. In addition, there were 10 lower connections among six networks (<italic>p</italic> &lt; 0.05, FDR corrected, <xref rid="T4" ref-type="table">Table 4</xref> and <xref rid="F2" ref-type="fig">Figures 2A,B</xref>). In addition, the FC between right vPFC and left precentral gyrus had a negative correlation with the VAS for leg pain score (Spearman <italic>rho</italic> = −0.349, <italic>p</italic> = 0.043, CI [−0.621 to −0.002]), the FC between left basal ganglia and left precentral gyrus had a negative correlation with the VAS for leg pain score (Spearman <italic>rho</italic> = −0.393, <italic>p</italic> = 0.022, CI [−0.651 to −0.052]), and the FC between mFC and left precentral gyrus had a negative correlation with the VAS for leg pain score (Spearman <italic>rho</italic> = −0.344, <italic>p</italic> = 0.047, CI [−0.617 to 0.004]). The correlation results were shown in <xref rid="F2" ref-type="fig">Figure 2C</xref>.</p>
+        <table-wrap position="float" id="T4">
+          <label>TABLE 4</label>
+          <caption>
+            <p>The comparison of FCs between two groups.</p>
+          </caption>
+          <table frame="hsides" rules="groups" cellspacing="5" cellpadding="5">
+            <thead>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Comparisons</td>
+                <td valign="top" align="center" colspan="2" rowspan="1">Significant FC<hr/></td>
+                <td valign="top" align="center" colspan="2" rowspan="1">Group<hr/></td>
+                <td valign="top" align="center" rowspan="1" colspan="1"><italic>t</italic>-value</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">ES (95%CI)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1"><italic>P</italic>-value</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="left" rowspan="1" colspan="1">Region A</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Region B</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">CS (<italic>n</italic> = 34)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">HC (<italic>n</italic> = 36)</td>
+                <td rowspan="1" colspan="1"/>
+                <td rowspan="1" colspan="1"/>
+                <td rowspan="1" colspan="1"/>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Sciatica &gt; HC</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">vPFC</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Precentral</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.08 (0.18)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.09 (0.06)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">4.171</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.106 (−0.363, 0.575)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">&lt;0.05*</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="left" rowspan="1" colspan="1">Ant insula</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Precentral</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.13 (0.14)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−0.11 (0.18)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">4.047</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−1.409 (−1.932, −0.885)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">&lt;0.05*</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="left" rowspan="1" colspan="1">Ant insula</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Precentral</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.07 (0.18)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−0.05 (0.20)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">4.356</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−0.599 (−1.079, −0.120)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">&lt;0.05*</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="left" rowspan="1" colspan="1">Ant insula</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Precentral</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.08 (0.19)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−0.12 (0.19)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">4.848</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−1.079 (−1.580, −0.577)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">&lt;0.05*</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="left" rowspan="1" colspan="1">dACC</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Precentral</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.12 (0.25)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−0.13 (0.17)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">5.062</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−1.145 (−1.650, −0.639)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">&lt;0.05*</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="left" rowspan="1" colspan="1">dACC</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Parietal</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.08 (0.25)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−0.17 (0.23)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">4.530</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−1.064 (−1.564, −0.563)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">&lt;0.05*</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="left" rowspan="1" colspan="1">Ant insula</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Precentral</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.16 (0.19)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−0.18 (0.23)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">4.258</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−1.618 (−2.158, −1.078)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">&lt;0.05*</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="left" rowspan="1" colspan="1">Ant insula</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Precentral</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.13 (0.17)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−0.04 (0.21)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">5.014</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−0.920 (−1.413, −0.427)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">&lt;0.05*</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="left" rowspan="1" colspan="1">Basal ganglia</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Precentral</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.17 (0.21)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−0.08 (0.19)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">3.913</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−1.294 (−1.810, −0.779)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">&lt;0.05*</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="left" rowspan="1" colspan="1">Basal ganglia</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Precentral</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.16 (0.24)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−0.04 (0.25)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">4.869</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−0.827 (−1.316, −0.339)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">&lt;0.05*</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="left" rowspan="1" colspan="1">Basal ganglia</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Parietal</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.12 (0.23)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−0.11 (0.22)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">4.538</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−1.006 (−1.504, −0.509)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">&lt;0.05*</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="left" rowspan="1" colspan="1">mFC</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Precentral</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.12 (0.25)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−0.13 (0.23)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">5.142</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−1.040 (−1.540, −0.541)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">&lt;0.05*</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="left" rowspan="1" colspan="1">mFC</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Precentral</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.18 (0.23)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−0.15 (0.19)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">3.981</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−1.599 (−2.137, −1.061)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">&lt;0.05*</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="left" rowspan="1" colspan="1">vFC</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Precentral</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.17 (0.21)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−0.03 (0.21)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">4.094</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−0.958 (−1.453, −0.463)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">&lt;0.05*</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="left" rowspan="1" colspan="1">vFC</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Precentral</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.26 (0.20)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0001 (0.14)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">4.324</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−1.511 (−2.042, −0.980)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">&lt;0.05*</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <fn>
+              <p>We used mean (standard deviation) if the measurements were normally distributed. CS, chronic sciatica; HC, health control; vPFC, ventral prefrontal cortex; ant insula, anterior insula; dACC, dorsal anterior cingulate cortex; mFC, medial frontal cortex; vFC, ventral frontal cortex. *Survives false discovery rate (FDR) correction, <italic>p</italic> &lt; 0.05. ES, effect sizes, Cohen’s d; CI, confidence interval; the effect size was computed for groups with different sample size.</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+        <fig position="float" id="F2">
+          <label>FIGURE 2</label>
+          <caption>
+            <p>The altered FCs between networks and relationships with clinical symptoms. <bold>(A)</bold> The FCs significantly altered in the CS group compared with the HC group, which were mainly focused on SMN and VAN (<italic>p</italic> &lt; 0.05, FDR corrected). <bold>(B)</bold> 15 greater FCs were involved in the SMN and VAN. The red color represents greater FCs; the blue color represents lower FCs. <bold>(C)</bold> The VAS for leg pain score had a negative correlation with the FC of right vPFC and left precentral gyrus (Spearman, <italic>r</italic> = –0.349, <italic>p</italic> = 0.043, CI [–0.621 to –0.002]); the FC of left basal ganglia and left precentral gyrus (Spearman, <italic>r</italic> = –0.393, <italic>p</italic> = 0.022, CI [–0.651 to –0.052]); and the FC of mFC and left precentral gyrus (Spearman, <italic>r</italic> = –0.344, <italic>p</italic> = 0.047, CI [–0.617 to 0.004]). The blue color nodes belong to SMN, the light purple nodes belong to VAN, the red color represents greater FCs. CS, chronic sciatica; HC, health control; vPFC, ventral prefrontal cortex; mFC, medial frontal cortex; SMN, somatomotor network; VAN, ventral attention network; VN, visual network; DAN, dorsal attention network; DMN, default mode network; FPN, frontoparietal network; SC, subcortical network; VAS, visual analog scale.</p>
+          </caption>
+          <graphic xlink:href="fnins-16-1036487-g002" position="float"/>
+        </fig>
+      </sec>
+      <sec id="S3.SS5">
+        <title>Multimodal brain metrics discriminate between chronic sciatica patients and healthy control</title>
+        <p>In this study, ALFF, surface area, and FCs were utilized to classify whether a sample belonged to the CS group (<xref rid="T5" ref-type="table">Table 5</xref> and <xref rid="F3" ref-type="fig">Figure 3</xref>). For single-measurement analyses, the FCs exhibited a higher accuracy rate (accuracy = 85.71%) and MCC of 0.715 than the ALFF (accuracy = 70.00%, and MCC = 0.424) and surface area (accuracy = 68.57%, MCC = 0.398). Surface morphology achieved the lowest accuracy rate. The classification accuracy improved after combining the significant measurements of the three features, achieving an accuracy of 90.00%, an AUC of 0.96, and an MCC of 0.800.</p>
+        <table-wrap position="float" id="T5">
+          <label>TABLE 5</label>
+          <caption>
+            <p>Results of the discrimination analyses derived from the SVM between HC and CS.</p>
+          </caption>
+          <table frame="hsides" rules="groups" cellspacing="5" cellpadding="5">
+            <thead>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Feature</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Accuracy<break/> (%)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Sensitivity<break/> (%)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Specificity<break/> (%)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">AUC<break/> (%)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">MCC</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">ALFF</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">70.00</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">67.65</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">83.33</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">79.66</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.424</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Surface area</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">68.57</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">55.88</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">77.78</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">66.99</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.398</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">FCs</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">85.71</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">85.29</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">86.11</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">90.85</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.715</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Combining features</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">90.00</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">94.12</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">86.11</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">96.41</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.800</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <fn>
+              <p>For single-measurement analyses, the FCs exhibited a higher accuracy rate (85.71%) than the other two features. The surface morphology (surface area) achieved the lowest accuracy rate of 68.57%. The classification accuracy improved after combining the features of the three measurements, achieving an accuracy of up to 90.00%. CS, chronic sciatica; HC, health control; ALFF, the amplitude of low-frequency fluctuation; FC, functional connectivity, AUC, the area under the curve; MCC, Matthews Correlation Coefficient; FC, functional connectivity; SVM, support vector machine.</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+        <fig position="float" id="F3">
+          <label>FIGURE 3</label>
+          <caption>
+            <p>Receiver operating characteristic (ROC) for CS and HC SVM classification analyses. For single-measurement analyses, the functional connectivity (FC) exhibited a higher AUC of 90.85% than the other two measurements. The surface area achieved the lowest AUC of 66.99%. Critically, the AUC improved after combining all features of the three measurements, achieving an AUC up to 96.41%. ALFF, the amplitude of low-frequency fluctuation; FC, functional connectivity.</p>
+          </caption>
+          <graphic xlink:href="fnins-16-1036487-g003" position="float"/>
+        </fig>
+      </sec>
+    </sec>
+    <sec sec-type="discussion" id="S4">
+      <title>Discussion</title>
+      <p>Combining a variety of analysis methods, we demonstrated that CS patients had abnormal local neural activity, which was also reflected in the greater ALFF values of the left IFG. At a finer cortical scale, we could identify the significantly greater cortical surface area in the regions cingulate and temporal. At the resting-state functional network level, we found that CS patients showed greater FCs mainly between the SMN and VAN, especially the precentral gyrus and anterior insula. Finally, we found that multimodal combined neuroimaging features were more dominant in this disease classification performance.</p>
+      <sec id="S4.SS1">
+        <title>Greater surface area of rostral anterior cingulate and banks of the superior temporal sulcus in right hemisphere</title>
+        <p>The ACC plays a vital role in the neuropathic pain effect in animals (<xref rid="B19" ref-type="bibr">Gao et al., 2020</xref>). For instance, increased GABAergic inhibitory control in the rACC could reduce ongoing pain and pain aversiveness caused by sciatic nerve injury (<xref rid="B28" ref-type="bibr">Juarez-Salinas et al., 2019</xref>). Using fMRI and electrophysiological recording, a previous study observed plasticity changes in the cingulate cortex in rats with neuropathic pain (<xref rid="B7" ref-type="bibr">Chao et al., 2018</xref>). However, the underlying role of the ACC in CS patients is much unclear. Our study showed a larger surface area in the rACC in CS patients compared to HC, suggesting that the rACC may be related to pain-induced negative emotion in CS patients. In another neuropathic pain disease, trigeminal neuralgia patients exhibited reduced ACC surface area compared with HC (<xref rid="B45" ref-type="bibr">Mo et al., 2021</xref>). The controversy may stem from different neuropathological processes. In the future, we will further explore whether the enlarged surface area of ACC can be the biomarker to distinguish CS patients from other neuropathic pain disorders.</p>
+        <p>Furthermore, the superior temporal gyrus might be involved in pain due to mismatches between pain expectation and perception (<xref rid="B51" ref-type="bibr">Smallwood et al., 2013</xref>). Patients with chronic traumatic neck pain showed a smaller cortical volume in the right superior temporal gyrus compared to HC (<xref rid="B10" ref-type="bibr">De Pauw et al., 2019</xref>). However, our study showed that CS patients have a greater cortical surface area in the right superior temporal gyrus, which may be due to the different etiologies and neuropathological processes of diseases. A study reported that patients with bipolar disorder showed a larger surface area of left bankssts, which could help distinguish them from patients with major depression, the overall accuracy was 74.3% (<xref rid="B18" ref-type="bibr">Fung et al., 2015</xref>). The surface area of the right bankssts and rACC in this study were also effective in distinguishing CS patients from HC, the accuracy was 66.99%. These results suggested that disease-specific neuroanatomical features (e.g., cortical surface area) may help establish reliable distinctions between different populations (e.g., between different types of disease, between patients with HC).</p>
+      </sec>
+      <sec id="S4.SS2">
+        <title>Frontal cortex showed greater spontaneous neuronal activity and functional connectivity’s</title>
+        <p>In our study, we found significantly greater ALFF in the IFG in CS patients compared to HC. Consistent with previous studies involving aspects of chronic pain (<xref rid="B6" ref-type="bibr">Buckalew et al., 2010</xref>; <xref rid="B23" ref-type="bibr">Hashmi et al., 2013</xref>), we found the neural activity of the frontal lobe was significantly greater in CS patients. IFG is the important part of the prefrontal cortex (PFC), the brain region commonly associated with cognitive and emotional processing (<xref rid="B48" ref-type="bibr">Petrides, 2005</xref>; <xref rid="B24" ref-type="bibr">He et al., 2007</xref>). In CS patients, the abnormal functional activity of the two brain regions may influence pain perception through heightening emotional responses to pain (<xref rid="B21" ref-type="bibr">Gracely et al., 2004</xref>).</p>
+        <p>Consistent with a previous study, medial PFC/rACC had abnormally increased FCs with brain regions with the SMN (postcentral gyrus) in cLBP patients, and the FCs could discriminate cLBP patients from HCs with 91% accuracy (<xref rid="B54" ref-type="bibr">Tu et al., 2020a</xref>). Our study found the greater FCs between the vPFC, mFC, and the precentral gyrus (SMN), indicating that communication between the frontal cortex and sensory-related regions was altered in CS patients. In addition, the two FCs were negatively correlated with the pain intensity of the leg, suggesting that the feeling of pain caused by CS is the main symptom and significantly reduces the patient’s quality of life. However, DMN connectivities in the patients with cLBP and/or pain in a lower vs. the HC showed reductions of this network in the dorsolateral PFC, medial PFC, and ACC (<xref rid="B37" ref-type="bibr">Li et al., 2014</xref>). It may be due to its small sample size (20 patients and 10 HCs) and only focus on FCs within the DMN. Based on these results, we speculated that the persistent chronic pain and associated symptoms of CS were caused by abnormalities in frontal cortex.</p>
+      </sec>
+      <sec id="S4.SS3">
+        <title>The important functional connectivity’s were mainly between sensory-motor network and ventral attention network regions</title>
+        <p>The SMN including the primary and secondary sensorimotor cortex, which receives and processes sensory information from the periphery, is thought to be the main brain network responsible for pain perception (<xref rid="B44" ref-type="bibr">Mayer et al., 2015</xref>). Abnormalities in the VAN were also widely seen in chronic pain patients with persistent diminished attention or inattention (<xref rid="B46" ref-type="bibr">Moriarty et al., 2011</xref>; <xref rid="B58" ref-type="bibr">Wen et al., 2012</xref>). The pathological changes of basal ganglia (<xref rid="B5" ref-type="bibr">Borsook et al., 2010</xref>; <xref rid="B53" ref-type="bibr">Starr et al., 2011</xref>) and neurological dysfunction of the anterior insular cortex (<xref rid="B14" ref-type="bibr">Ferraro et al., 2022</xref>) in the VAN have also been reported to be involved in pain processing leading to altered pain perception. Patients with failed back surgery syndrome with chronic low back pain have greater FC in the precentral gyrus and putamen (extending to the insula) in the SMN compared to HC (<xref rid="B30" ref-type="bibr">Kolesar et al., 2017</xref>). Consistent with previous studies, the FC between SMN and VAN was higher in CS patients, especially between the precentral gyrus and anterior insula, compared with HC. In addition, patients with CLBP had greater gray matter volume in the SMN regions and greater FC between the bilateral sensorimotor cortex and sensory association cortex during pain (<xref rid="B39" ref-type="bibr">Li et al., 2018</xref>). These studies may imply that enhanced cortical activity in the SMN and VAN regions also underlies the clinical pain status of CS patients. Furthermore, the precentral gyrus is a sensorimotor area that receives information projected from the basal ganglia, both of which play an important role in pain processing (<xref rid="B41" ref-type="bibr">Liu et al., 2012</xref>). Compared to HC, complex regional pain syndrome patients displayed greater resting connectivity from the caudate to the primary motor cortex (<xref rid="B35" ref-type="bibr">Lee et al., 2022</xref>). Our study found a greater FC between the basal ganglia and the precentral gyrus in CS patients, indicating that pain may increase the attention of CS patients to their pain sensation, and the FC was negatively correlated with the VAS score of leg pain, we speculate that engaging the conscious attention (<xref rid="B2" ref-type="bibr">Aminabadi et al., 2022</xref>) of CS patients can reduce pain perception.</p>
+        <p>Our study also showed the abnormal FCs within FPN and with the other networks, and previous studies have shown positively associated with pain rating changes (<xref rid="B31" ref-type="bibr">Kong et al., 2013</xref>). The frontoparietal region may play a dominant role in the formation and transmission of sensations (<xref rid="B42" ref-type="bibr">Lobanov et al., 2013</xref>), and RFPN is recognized as an important network that associates with perception and pain (<xref rid="B52" ref-type="bibr">Smith et al., 2009</xref>). Neural function activity in encephalic regions of FPN showed abnormal changes (<xref rid="B9" ref-type="bibr">Cui et al., 2022</xref>), and a significantly lower FC of RFPN was observed in MWoA patients (<xref rid="B38" ref-type="bibr">Li et al., 2015</xref>). In our study, we found increased FCs between FPN and SMN, and decreased FCs within FPN and with the other networks in CS patients, suggesting that FPN also plays an important role in the processing and regulation of CS pain.</p>
+      </sec>
+      <sec id="S4.SS4">
+        <title>Multimodal metrics successfully distinguish chronic sciatica patients from healthy control</title>
+        <p>In recent years, SVM techniques combined with neuroimaging metrics have been applied to differentiate pain patients from HCs and to predict the outcome of certain interventions (<xref rid="B4" ref-type="bibr">Bagarinao et al., 2014</xref>; <xref rid="B62" ref-type="bibr">Zeng et al., 2019</xref>; <xref rid="B26" ref-type="bibr">Huang et al., 2020</xref>; <xref rid="B55" ref-type="bibr">Tu et al., 2020b</xref>; <xref rid="B22" ref-type="bibr">Gui et al., 2021</xref>; <xref rid="B57" ref-type="bibr">Wei et al., 2022</xref>). The patients with neuropathic pain and the HC were classified by the mean ALFF values of the frontal gyrus and the precuneus using the linear SVM classifier, and the classification accuracy was 86.36% between the PHN patients and HC (<xref rid="B26" ref-type="bibr">Huang et al., 2020</xref>). A study identified a neural marker with abnormal FC within the SMN and FPN that could discriminate MwoA patients from HC with a 91.4% accuracy rate (<xref rid="B55" ref-type="bibr">Tu et al., 2020b</xref>). Patients with trigeminal neuralgia exhibited reductions in cortical indices in the cingulate cortex, and these abnormal whole brain-level morphological alterations successfully enable automated trigeminal neuralgia diagnosis with high specificity (trigeminal neuralgia: 95.35%; disease controls: 46.51%) (<xref rid="B45" ref-type="bibr">Mo et al., 2021</xref>). Interestingly, these studies reported that the classification performance of FCs between networks was higher than the ALFF values and cortical indices (structural features). Despite coming from various studies about different chronic and neuropathic pain diseases, these studies showed that ALFF values, inter-network FCs, and structural measurements (e.g., cortical indices) can be used as neurological features to distinguish chronic pain patients from healthy people, respectively.</p>
+        <p>However, chronic pain could affect multiple brain systems and cause extensive reorganization of brain structure and function, and the results of these studies were often derived from a few modalities, ignoring the combination of multiple modalities, which may affect the performance of the machine learning classifiers. In our study, SVM was applied to combined MRI imaging features (ALFF, cortical surface area, FCs), which distinguished CS patients from HC with higher accuracy of 90.00%. The finding implies that multimodal data analysis gives better results and exhibits the best model’s performance (MCC = 0.800) than unimodal analysis. The multimodal analysis could combine the advantages of multiple imaging techniques to improve both spatial and temporal resolution and target disease neurobiomarkers with high specificity and sensitivity and provide many new opportunities to improve brain research. The identification of distinguishable or predictive neuroimaging biomarkers is needed as it can aid in diagnosis and prognosis, as well as be helpful in clinical decision-making. To date, one of the few factors that independently predict poor outcomes in sciatica is the duration of leg pain (<xref rid="B33" ref-type="bibr">Konstantinou et al., 2018</xref>), the application of multimodal neuroimaging biomarkers may help to assess the disease severity of patients and progression, especially during non-painful periods, assisting clinicians in early decision making, and tailor treatment plans for patients. For instance, they could be a useful diagnostic tool when patients are unable to communicate or self-reports are otherwise unreliable. Moreover, our findings may invite future studies with larger datasets to investigate the relationship between multimodal neuroimaging biomarkers and clinical measurements and develop therapeutic biomarkers to evaluate or predict the response of potential new treatments.</p>
+      </sec>
+      <sec id="S4.SS5">
+        <title>Study limitations</title>
+        <p>We acknowledge that our research has several limitations. First, the present study was based on 34 CS patients and 36 HCs, it is necessary to expand the sample size to confirm the results. Brain metrics and clinical variables correlation analysis were conducted with two-sided significance levels (alpha = 0.05) without corrections for multiple comparisons due to the small sample size and the exploratory nature of the study. Second, the study covered a range of ages from 35 to 65 years, restricting the generalization of the present results to other populations. Future studies with the younger or older age range are needed to increase external validity. Third, it might be a lack of a dataset of patients with other chronic pain disorders, we could not verify the specificity of the multimodal markers. Future studies with more datasets of pain-related disease will help clarify which specific chronic pain diseases (e.g., knee osteoarthritis, low back pain) are associated with functional impairment in different brain domains. Fourth, perhaps even more importantly, clinical measurements were evaluated at a single time point (1 day before MRI scanning) which does not necessarily reflect the long-term status of an individual, other time-dependent variables on multiple time points may provide more information on the chronic pain status. Fifth, the results of the brain’s functional network are affected by different parcelation strategies. Other brain atlases are needed to further assess the reliability of the differentiation of CS individuals. Last, we acknowledged that we only recruited sciatica patients with diagnosed disk herniated disks, and it cannot distinguish if the results are due to pain, or due to the specific nature of the origins of the pain in the patient group, so our results should not be exaggerated.</p>
+      </sec>
+    </sec>
+    <sec sec-type="conclusion" id="S5">
+      <title>Conclusion</title>
+      <p>Our findings provide new insights into the pathophysiologic mechanisms of CS and highlight the potential of multimodal features as markers in the research of neural mechanisms of chronic pain.</p>
+    </sec>
+    <sec sec-type="data-availability" id="S6">
+      <title>Data availability statement</title>
+      <p>The raw data supporting the conclusions of this article will be made available by the authors, without undue reservation.</p>
+    </sec>
+    <sec id="S7">
+      <title>Ethics statement</title>
+      <p>The studies involving human participants were reviewed and approved by Ethics Committee of Dongzhimen Hospital Affiliated to Beijing University of Chinese Medicine (No. 2020BZYLL0803). The patients/participants provided their written informed consent to participate in this study.</p>
+    </sec>
+    <sec id="S8">
+      <title>Author contributions</title>
+      <p>XYW: formal analysis, visualization, and writing – original draft and review and editing. XW: conceptualization, methodology, supervision, visualization, and writing – review and editing. GS: supervision, writing – review and editing, and investigation. LW and JT: supervision and funding acquisition. FY: data curation. CL, MR, and HZ: data curation and investigation. NL: supervision, data curation, and investigation. C-ZL: conceptualization, funding acquisition, and supervision. All authors contributed to the article and approved the submitted version.</p>
+    </sec>
+  </body>
+  <back>
+    <sec sec-type="funding-information" id="S10">
+      <title>Funding</title>
+      <p>This study was financially supported by the National Key R&amp;D Program of China (No.2019YFC1712101).</p>
+    </sec>
+    <fn-group>
+      <fn id="footnote1">
+        <label>1</label>
+        <p>
+<ext-link xlink:href="http://surfer.nmr.mgh.harvard.edu/" ext-link-type="uri">http://surfer.nmr.mgh.harvard.edu/</ext-link>
+</p>
+      </fn>
+      <fn id="footnote2">
+        <label>2</label>
+        <p>
+<ext-link xlink:href="http://rfmri.org/dpabi" ext-link-type="uri">http://rfmri.org/dpabi</ext-link>
+</p>
+      </fn>
+      <fn id="footnote3">
+        <label>3</label>
+        <p>
+<ext-link xlink:href="http://www.nitrc.org/projects/bnv" ext-link-type="uri">http://www.nitrc.org/projects/bnv</ext-link>
+</p>
+      </fn>
+    </fn-group>
+    <sec sec-type="COI-statement" id="S11">
+      <title>Conflict of interest</title>
+      <p>The authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.</p>
+    </sec>
+    <sec sec-type="disclaimer" id="S12">
+      <title>Publisher’s note</title>
+      <p>All claims expressed in this article are solely those of the authors and do not necessarily represent those of their affiliated organizations, or those of the publisher, the editors and the reviewers. Any product that may be evaluated in this article, or claim that may be made by its manufacturer, is not guaranteed or endorsed by the publisher.</p>
+    </sec>
+    <ref-list>
+      <title>References</title>
+      <ref id="B1">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Ali</surname><given-names>L.</given-names></name><name><surname>He</surname><given-names>Z.</given-names></name><name><surname>Cao</surname><given-names>W.</given-names></name><name><surname>Rauf</surname><given-names>H. T.</given-names></name><name><surname>Imrana</surname><given-names>Y.</given-names></name><name><surname>Bin Heyat</surname><given-names>M. B.</given-names></name></person-group> (<year>2021</year>). <article-title>MMDD-ensemble: A multimodal data-driven ensemble approach for Parkinson’s disease detection.</article-title>
+<source><italic>Front. Neurosci.</italic></source>
+<volume>15</volume>:<fpage>754058</fpage>. <pub-id pub-id-type="doi">10.3389/fnins.2021.754058</pub-id>
+<pub-id pub-id-type="pmid">34790091</pub-id></mixed-citation>
+      </ref>
+      <ref id="B2">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Aminabadi</surname><given-names>N. A.</given-names></name><name><surname>Golsanamlou</surname><given-names>O.</given-names></name><name><surname>Halimi</surname><given-names>Z.</given-names></name><name><surname>Jamali</surname><given-names>Z.</given-names></name></person-group> (<year>2022</year>). <article-title>Assessing the different levels of virtual reality that influence anxiety, behavior, and oral health status in preschool children: Randomized controlled clinical trial.</article-title>
+<source><italic>JMIR Perioper. Med.</italic></source>
+<volume>5</volume>:<fpage>e35415</fpage>. <pub-id pub-id-type="doi">10.2196/35415</pub-id>
+<pub-id pub-id-type="pmid">35436233</pub-id></mixed-citation>
+      </ref>
+      <ref id="B3">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Atlas</surname><given-names>S. J.</given-names></name><name><surname>Deyo</surname><given-names>R. A.</given-names></name><name><surname>Patrick</surname><given-names>D. L.</given-names></name><name><surname>Convery</surname><given-names>K.</given-names></name><name><surname>Keller</surname><given-names>R. B.</given-names></name><name><surname>Singer</surname><given-names>D. E.</given-names></name></person-group> (<year>1996</year>). <article-title>The quebec task force classification for spinal disorders and the severity, treatment, and outcomes of sciatica and lumbar spinal stenosis.</article-title>
+<source><italic>Spine</italic></source>
+<volume>21</volume>
+<fpage>2885</fpage>–<lpage>2892</lpage>. <pub-id pub-id-type="doi">10.1097/00007632-199612150-00020</pub-id>
+<pub-id pub-id-type="pmid">9112713</pub-id></mixed-citation>
+      </ref>
+      <ref id="B4">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Bagarinao</surname><given-names>E.</given-names></name><name><surname>Johnson</surname><given-names>K. A.</given-names></name><name><surname>Martucci</surname><given-names>K. T.</given-names></name><name><surname>Ichesco</surname><given-names>E.</given-names></name><name><surname>Farmer</surname><given-names>M. A.</given-names></name><name><surname>Labus</surname><given-names>J.</given-names></name><etal/></person-group> (<year>2014</year>). <article-title>Preliminary structural MRI based brain classification of chronic pelvic pain: A MAPP network study.</article-title>
+<source><italic>Pain</italic></source>
+<volume>155</volume>
+<fpage>2502</fpage>–<lpage>2509</lpage>. <pub-id pub-id-type="doi">10.1016/j.pain.2014.09.002</pub-id>
+<pub-id pub-id-type="pmid">25242566</pub-id></mixed-citation>
+      </ref>
+      <ref id="B5">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Borsook</surname><given-names>D.</given-names></name><name><surname>Upadhyay</surname><given-names>J.</given-names></name><name><surname>Chudler</surname><given-names>E. H.</given-names></name><name><surname>Becerra</surname><given-names>L.</given-names></name></person-group> (<year>2010</year>). <article-title>A key role of the basal ganglia in pain and analgesia–insights gained through human functional imaging.</article-title>
+<source><italic>Mol. Pain</italic></source>
+<volume>6</volume>:<fpage>27</fpage>. <pub-id pub-id-type="doi">10.1186/1744-8069-6-27</pub-id>
+<pub-id pub-id-type="pmid">20465845</pub-id></mixed-citation>
+      </ref>
+      <ref id="B6">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Buckalew</surname><given-names>N.</given-names></name><name><surname>Haut</surname><given-names>M. W.</given-names></name><name><surname>Aizenstein</surname><given-names>H.</given-names></name><name><surname>Morrow</surname><given-names>L.</given-names></name><name><surname>Perera</surname><given-names>S.</given-names></name><name><surname>Kuwabara</surname><given-names>H.</given-names></name><etal/></person-group> (<year>2010</year>). <article-title>Differences in brain structure and function in older adults with self-reported disabling and nondisabling chronic low back pain.</article-title>
+<source><italic>Pain Med.</italic></source>
+<volume>11</volume>
+<fpage>1183</fpage>–<lpage>1197</lpage>. <pub-id pub-id-type="doi">10.1111/j.1526-4637.2010.00899.x</pub-id>
+<pub-id pub-id-type="pmid">20609128</pub-id></mixed-citation>
+      </ref>
+      <ref id="B7">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Chao</surname><given-names>T. H.</given-names></name><name><surname>Chen</surname><given-names>J. H.</given-names></name><name><surname>Yen</surname><given-names>C. T.</given-names></name></person-group> (<year>2018</year>). <article-title>Plasticity changes in forebrain activity and functional connectivity during neuropathic pain development in rats with sciatic spared nerve injury.</article-title>
+<source><italic>Mol. Brain</italic></source>
+<volume>11</volume>:<fpage>55</fpage>. <pub-id pub-id-type="doi">10.1186/s13041-018-0398-z</pub-id>
+<pub-id pub-id-type="pmid">30285801</pub-id></mixed-citation>
+      </ref>
+      <ref id="B8">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Collins</surname><given-names>S. L.</given-names></name><name><surname>Moore</surname><given-names>R. A.</given-names></name><name><surname>McQuay</surname><given-names>H. J.</given-names></name></person-group> (<year>1997</year>). <article-title>The visual analogue pain intensity scale: What is moderate pain in millimetres?</article-title>
+<source><italic>Pain</italic></source>
+<volume>72</volume>
+<fpage>95</fpage>–<lpage>97</lpage>. <pub-id pub-id-type="doi">10.1016/s0304-3959(97)00005-5</pub-id><pub-id pub-id-type="pmid">9272792</pub-id></mixed-citation>
+      </ref>
+      <ref id="B9">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Cui</surname><given-names>W. Q.</given-names></name><name><surname>Zhang</surname><given-names>S. S.</given-names></name><name><surname>Xu</surname><given-names>F.</given-names></name><name><surname>Brickell</surname><given-names>A.</given-names></name><name><surname>Zhou</surname><given-names>Q.</given-names></name><name><surname>Yang</surname><given-names>B.</given-names></name><etal/></person-group> (<year>2022</year>). <article-title>A resting-state functional magnetic resonance imaging study of abnormal frontoparietal network function in migraine without aura.</article-title>
+<source><italic>Med. Sci. Monit.</italic></source>
+<volume>28</volume>:<fpage>e934975</fpage>. <pub-id pub-id-type="doi">10.12659/MSM.934975</pub-id>
+<pub-id pub-id-type="pmid">35058421</pub-id></mixed-citation>
+      </ref>
+      <ref id="B10">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>De Pauw</surname><given-names>R.</given-names></name><name><surname>Coppieters</surname><given-names>I.</given-names></name><name><surname>Caeyenberghs</surname><given-names>K.</given-names></name><name><surname>Kregel</surname><given-names>J.</given-names></name><name><surname>Aerts</surname><given-names>H.</given-names></name><name><surname>Lenoir</surname><given-names>D.</given-names></name><etal/></person-group> (<year>2019</year>). <article-title>Associations between brain morphology and motor performance in chronic neck pain: A whole-brain surface-based morphometry approach.</article-title>
+<source><italic>Hum. Brain Mapp.</italic></source>
+<volume>40</volume>
+<fpage>4266</fpage>–<lpage>4278</lpage>. <pub-id pub-id-type="doi">10.1002/hbm.24700</pub-id>
+<pub-id pub-id-type="pmid">31222905</pub-id></mixed-citation>
+      </ref>
+      <ref id="B11">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Deyo</surname><given-names>R. A.</given-names></name><name><surname>Mirza</surname><given-names>S. K.</given-names></name></person-group> (<year>2016</year>). <article-title>CLINICAL PRACTICE. Herniated lumbar intervertebral disk.</article-title>
+<source><italic>N. Engl. J. Med.</italic></source>
+<volume>374</volume>
+<fpage>1763</fpage>–<lpage>1772</lpage>. <pub-id pub-id-type="doi">10.1056/NEJMcp1512658</pub-id>
+<pub-id pub-id-type="pmid">27144851</pub-id></mixed-citation>
+      </ref>
+      <ref id="B12">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Dosenbach</surname><given-names>N. U.</given-names></name><name><surname>Nardos</surname><given-names>B.</given-names></name><name><surname>Cohen</surname><given-names>A. L.</given-names></name><name><surname>Fair</surname><given-names>D. A.</given-names></name><name><surname>Power</surname><given-names>J. D.</given-names></name><name><surname>Church</surname><given-names>J. A.</given-names></name><etal/></person-group> (<year>2010</year>). <article-title>Prediction of individual brain maturity using fMRI.</article-title>
+<source><italic>Science</italic></source>
+<volume>329</volume>
+<fpage>1358</fpage>–<lpage>1361</lpage>. <pub-id pub-id-type="doi">10.1126/science.1194144</pub-id>
+<pub-id pub-id-type="pmid">20829489</pub-id></mixed-citation>
+      </ref>
+      <ref id="B13">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Fairbank</surname><given-names>J. C.</given-names></name><name><surname>Pynsent</surname><given-names>P. B.</given-names></name></person-group> (<year>2000</year>). <article-title>The oswestry disability index.</article-title>
+<source><italic>Spine</italic></source>
+<volume>25</volume>
+<fpage>2940</fpage>–<lpage>2952</lpage>. <pub-id pub-id-type="doi">10.1097/00007632-200011150-00017</pub-id>
+<pub-id pub-id-type="pmid">11074683</pub-id></mixed-citation>
+      </ref>
+      <ref id="B14">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Ferraro</surname><given-names>S.</given-names></name><name><surname>Klugah-Brown</surname><given-names>B.</given-names></name><name><surname>Tench</surname><given-names>C. R.</given-names></name><name><surname>Yao</surname><given-names>S.</given-names></name><name><surname>Nigri</surname><given-names>A.</given-names></name><name><surname>Demichelis</surname><given-names>G.</given-names></name><etal/></person-group> (<year>2022</year>). <article-title>Dysregulated anterior insula reactivity as robust functional biomarker for chronic pain-Meta-analytic evidence from neuroimaging studies.</article-title>
+<source><italic>Hum. Brain Mapp.</italic></source>
+<volume>43</volume>
+<fpage>998</fpage>–<lpage>1010</lpage>. <pub-id pub-id-type="doi">10.1002/hbm.25702</pub-id>
+<pub-id pub-id-type="pmid">34734458</pub-id></mixed-citation>
+      </ref>
+      <ref id="B15">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Finley</surname><given-names>C. R.</given-names></name><name><surname>Chan</surname><given-names>D. S.</given-names></name><name><surname>Garrison</surname><given-names>S.</given-names></name><name><surname>Korownyk</surname><given-names>C.</given-names></name><name><surname>Kolber</surname><given-names>M. R.</given-names></name><name><surname>Campbell</surname><given-names>S.</given-names></name><etal/></person-group> (<year>2018</year>). <article-title>What are the most common conditions in primary care? Systematic review.</article-title>
+<source><italic>Can. Fam. Physician</italic></source>
+<volume>64</volume>
+<fpage>832</fpage>–<lpage>840</lpage>.<pub-id pub-id-type="pmid">30429181</pub-id></mixed-citation>
+      </ref>
+      <ref id="B16">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Fischl</surname><given-names>B.</given-names></name><name><surname>Dale</surname><given-names>A. M.</given-names></name></person-group> (<year>2000</year>). <article-title>Measuring the thickness of the human cerebral cortex from magnetic resonance images.</article-title>
+<source><italic>Proc. Natl. Acad. Sci. U.S.A.</italic></source>
+<volume>97</volume>
+<fpage>11050</fpage>–<lpage>11055</lpage>. <pub-id pub-id-type="doi">10.1073/pnas.200033797</pub-id>
+<pub-id pub-id-type="pmid">10984517</pub-id></mixed-citation>
+      </ref>
+      <ref id="B17">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Foster</surname><given-names>N. E.</given-names></name><name><surname>Reddington</surname><given-names>M.</given-names></name></person-group> (<year>2021</year>). <article-title>Early referral to physical therapy: A reasonable choice for primary care patients with sciatica.</article-title>
+<source><italic>Ann. Intern. Med.</italic></source>
+<volume>174</volume>
+<fpage>107</fpage>–<lpage>108</lpage>. <pub-id pub-id-type="doi">10.7326/M20-6545</pub-id>
+<pub-id pub-id-type="pmid">33017567</pub-id></mixed-citation>
+      </ref>
+      <ref id="B18">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Fung</surname><given-names>G.</given-names></name><name><surname>Deng</surname><given-names>Y.</given-names></name><name><surname>Zhao</surname><given-names>Q.</given-names></name><name><surname>Li</surname><given-names>Z.</given-names></name><name><surname>Qu</surname><given-names>M.</given-names></name><name><surname>Li</surname><given-names>K.</given-names></name><etal/></person-group> (<year>2015</year>). <article-title>Distinguishing bipolar and major depressive disorders by brain structural morphometry: A pilot study.</article-title>
+<source><italic>BMC Psychiatry</italic></source>
+<volume>15</volume>:<fpage>298</fpage>. <pub-id pub-id-type="doi">10.1186/s12888-015-0685-5</pub-id>
+<pub-id pub-id-type="pmid">26590556</pub-id></mixed-citation>
+      </ref>
+      <ref id="B19">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Gao</surname><given-names>S. H.</given-names></name><name><surname>Shen</surname><given-names>L. L.</given-names></name><name><surname>Wen</surname><given-names>H. Z.</given-names></name><name><surname>Zhao</surname><given-names>Y. D.</given-names></name><name><surname>Chen</surname><given-names>P. H.</given-names></name><name><surname>Ruan</surname><given-names>H. Z.</given-names></name></person-group> (<year>2020</year>). <article-title>The projections from the anterior cingulate cortex to the nucleus accumbens and ventral tegmental area contribute to neuropathic pain-evoked aversion in rats.</article-title>
+<source><italic>Neurobiol. Dis.</italic></source>
+<volume>140</volume>:<fpage>104862</fpage>. <pub-id pub-id-type="doi">10.1016/j.nbd.2020.104862</pub-id>
+<pub-id pub-id-type="pmid">32251841</pub-id></mixed-citation>
+      </ref>
+      <ref id="B20">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Glasser</surname><given-names>M. F.</given-names></name><name><surname>Coalson</surname><given-names>T. S.</given-names></name><name><surname>Robinson</surname><given-names>E. C.</given-names></name><name><surname>Hacker</surname><given-names>C. D.</given-names></name><name><surname>Harwell</surname><given-names>J.</given-names></name><name><surname>Yacoub</surname><given-names>E.</given-names></name><etal/></person-group> (<year>2016</year>). <article-title>A multi-modal parcellation of human cerebral cortex.</article-title>
+<source><italic>Nature</italic></source>
+<volume>536</volume>
+<fpage>171</fpage>–<lpage>178</lpage>. <pub-id pub-id-type="doi">10.1038/nature18933</pub-id>
+<pub-id pub-id-type="pmid">27437579</pub-id></mixed-citation>
+      </ref>
+      <ref id="B21">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Gracely</surname><given-names>R. H.</given-names></name><name><surname>Geisser</surname><given-names>M. E.</given-names></name><name><surname>Giesecke</surname><given-names>T.</given-names></name><name><surname>Grant</surname><given-names>M. A.</given-names></name><name><surname>Petzke</surname><given-names>F.</given-names></name><name><surname>Williams</surname><given-names>D. A.</given-names></name><etal/></person-group> (<year>2004</year>). <article-title>Pain catastrophizing and neural responses to pain among persons with fibromyalgia.</article-title>
+<source><italic>Brain</italic></source>
+<volume>127</volume>(<fpage>Pt 4</fpage>), <fpage>835</fpage>–<lpage>843</lpage>. <pub-id pub-id-type="doi">10.1093/brain/awh098</pub-id>
+<pub-id pub-id-type="pmid">14960499</pub-id></mixed-citation>
+      </ref>
+      <ref id="B22">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Gui</surname><given-names>S. G.</given-names></name><name><surname>Chen</surname><given-names>R. B.</given-names></name><name><surname>Zhong</surname><given-names>Y. L.</given-names></name><name><surname>Huang</surname><given-names>X.</given-names></name></person-group> (<year>2021</year>). <article-title>Machine learning analysis reveals abnormal static and dynamic low-frequency oscillations indicative of long-term menstrual pain in primary dysmenorrhea patients.</article-title>
+<source><italic>J. Pain Res.</italic></source>
+<volume>14</volume>
+<fpage>3377</fpage>–<lpage>3386</lpage>. <pub-id pub-id-type="doi">10.2147/JPR.S332224</pub-id>
+<pub-id pub-id-type="pmid">34737632</pub-id></mixed-citation>
+      </ref>
+      <ref id="B23">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Hashmi</surname><given-names>J. A.</given-names></name><name><surname>Baliki</surname><given-names>M. N.</given-names></name><name><surname>Huang</surname><given-names>L.</given-names></name><name><surname>Baria</surname><given-names>A. T.</given-names></name><name><surname>Torbey</surname><given-names>S.</given-names></name><name><surname>Hermann</surname><given-names>K. M.</given-names></name><etal/></person-group> (<year>2013</year>). <article-title>Shape shifting pain: Chronification of back pain shifts brain representation from nociceptive to emotional circuits.</article-title>
+<source><italic>Brain</italic></source>
+<volume>136</volume>(<fpage>Pt 9</fpage>), <fpage>2751</fpage>–<lpage>2768</lpage>. <pub-id pub-id-type="doi">10.1093/brain/awt211</pub-id>
+<pub-id pub-id-type="pmid">23983029</pub-id></mixed-citation>
+      </ref>
+      <ref id="B24">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>He</surname><given-names>B. J.</given-names></name><name><surname>Snyder</surname><given-names>A. Z.</given-names></name><name><surname>Vincent</surname><given-names>J. L.</given-names></name><name><surname>Epstein</surname><given-names>A.</given-names></name><name><surname>Shulman</surname><given-names>G. L.</given-names></name><name><surname>Corbetta</surname><given-names>M.</given-names></name></person-group> (<year>2007</year>). <article-title>Breakdown of functional connectivity in frontoparietal networks underlies behavioral deficits in spatial neglect.</article-title>
+<source><italic>Neuron</italic></source>
+<volume>53</volume>
+<fpage>905</fpage>–<lpage>918</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuron.2007.02.013</pub-id>
+<pub-id pub-id-type="pmid">17359924</pub-id></mixed-citation>
+      </ref>
+      <ref id="B25">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Hemington</surname><given-names>K. S.</given-names></name><name><surname>Wu</surname><given-names>Q.</given-names></name><name><surname>Kucyi</surname><given-names>A.</given-names></name><name><surname>Inman</surname><given-names>R. D.</given-names></name><name><surname>Davis</surname><given-names>K. D.</given-names></name></person-group> (<year>2016</year>). <article-title>Abnormal cross-network functional connectivity in chronic pain and its association with clinical symptoms.</article-title>
+<source><italic>Brain Struct. Funct.</italic></source>
+<volume>221</volume>
+<fpage>4203</fpage>–<lpage>4219</lpage>. <pub-id pub-id-type="doi">10.1007/s00429-015-1161-1</pub-id>
+<pub-id pub-id-type="pmid">26669874</pub-id></mixed-citation>
+      </ref>
+      <ref id="B26">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Huang</surname><given-names>J.</given-names></name><name><surname>Li</surname><given-names>Y.</given-names></name><name><surname>Xie</surname><given-names>H.</given-names></name><name><surname>Yang</surname><given-names>S.</given-names></name><name><surname>Jiang</surname><given-names>C.</given-names></name><name><surname>Sun</surname><given-names>W.</given-names></name><etal/></person-group> (<year>2020</year>). <article-title>Abnormal intrinsic brain activity and neuroimaging-based fMRI classification in patients with herpes zoster and postherpetic neuralgia.</article-title>
+<source><italic>Front. Neurol.</italic></source>
+<volume>11</volume>:<fpage>532110</fpage>. <pub-id pub-id-type="doi">10.3389/fneur.2020.532110</pub-id>
+<pub-id pub-id-type="pmid">33192967</pub-id></mixed-citation>
+      </ref>
+      <ref id="B27">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Jensen</surname><given-names>R. K.</given-names></name><name><surname>Kongsted</surname><given-names>A.</given-names></name><name><surname>Kjaer</surname><given-names>P.</given-names></name><name><surname>Koes</surname><given-names>B.</given-names></name></person-group> (<year>2019</year>). <article-title>Diagnosis and treatment of sciatica.</article-title>
+<source><italic>BMJ</italic></source>
+<volume>367</volume>:<fpage>L6273</fpage>. <pub-id pub-id-type="doi">10.1136/bmj.l6273</pub-id>
+<pub-id pub-id-type="pmid">31744805</pub-id></mixed-citation>
+      </ref>
+      <ref id="B28">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Juarez-Salinas</surname><given-names>D. L.</given-names></name><name><surname>Braz</surname><given-names>J. M.</given-names></name><name><surname>Etlin</surname><given-names>A.</given-names></name><name><surname>Gee</surname><given-names>S.</given-names></name><name><surname>Sohal</surname><given-names>V.</given-names></name><name><surname>Basbaum</surname><given-names>A. I.</given-names></name></person-group> (<year>2019</year>). <article-title>GABAergic cell transplants in the anterior cingulate cortex reduce neuropathic pain aversiveness.</article-title>
+<source><italic>Brain</italic></source>
+<volume>142</volume>
+<fpage>2655</fpage>–<lpage>2669</lpage>. <pub-id pub-id-type="doi">10.1093/brain/awz203</pub-id>
+<pub-id pub-id-type="pmid">31321411</pub-id></mixed-citation>
+      </ref>
+      <ref id="B29">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Kim</surname><given-names>J.</given-names></name><name><surname>Loggia</surname><given-names>M. L.</given-names></name><name><surname>Edwards</surname><given-names>R. R.</given-names></name><name><surname>Wasan</surname><given-names>A. D.</given-names></name><name><surname>Gollub</surname><given-names>R. L.</given-names></name><name><surname>Napadow</surname><given-names>V.</given-names></name></person-group> (<year>2013</year>). <article-title>Sustained deep-tissue pain alters functional brain connectivity.</article-title>
+<source><italic>Pain</italic></source>
+<volume>154</volume>
+<fpage>1343</fpage>–<lpage>1351</lpage>. <pub-id pub-id-type="doi">10.1016/j.pain.2013.04.016</pub-id>
+<pub-id pub-id-type="pmid">23718988</pub-id></mixed-citation>
+      </ref>
+      <ref id="B30">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Kolesar</surname><given-names>T. A.</given-names></name><name><surname>Bilevicius</surname><given-names>E.</given-names></name><name><surname>Kornelsen</surname><given-names>J.</given-names></name></person-group> (<year>2017</year>). <article-title>Salience, central executive, and sensorimotor network functional connectivity alterations in failed back surgery syndrome.</article-title>
+<source><italic>Scand. J. Pain</italic></source>
+<volume>16</volume>
+<fpage>10</fpage>–<lpage>14</lpage>. <pub-id pub-id-type="doi">10.1016/j.sjpain.2017.01.008</pub-id>
+<pub-id pub-id-type="pmid">28850382</pub-id></mixed-citation>
+      </ref>
+      <ref id="B31">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Kong</surname><given-names>J.</given-names></name><name><surname>Jensen</surname><given-names>K.</given-names></name><name><surname>Loiotile</surname><given-names>R.</given-names></name><name><surname>Cheetham</surname><given-names>A.</given-names></name><name><surname>Wey</surname><given-names>H. Y.</given-names></name><name><surname>Tan</surname><given-names>Y.</given-names></name><etal/></person-group> (<year>2013</year>). <article-title>Functional connectivity of the frontoparietal network predicts cognitive modulation of pain.</article-title>
+<source><italic>Pain</italic></source>
+<volume>154</volume>
+<fpage>459</fpage>–<lpage>467</lpage>. <pub-id pub-id-type="doi">10.1016/j.pain.2012.12.004</pub-id>
+<pub-id pub-id-type="pmid">23352757</pub-id></mixed-citation>
+      </ref>
+      <ref id="B32">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Konstantinou</surname><given-names>K.</given-names></name><name><surname>Dunn</surname><given-names>K. M.</given-names></name></person-group> (<year>2008</year>). <article-title>Sciatica: Review of epidemiological studies and prevalence estimates.</article-title>
+<source><italic>Spine</italic></source>
+<volume>33</volume>
+<fpage>2464</fpage>–<lpage>2472</lpage>. <pub-id pub-id-type="doi">10.1097/BRS.0b013e318183a4a2</pub-id>
+<pub-id pub-id-type="pmid">18923325</pub-id></mixed-citation>
+      </ref>
+      <ref id="B33">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Konstantinou</surname><given-names>K.</given-names></name><name><surname>Dunn</surname><given-names>K. M.</given-names></name><name><surname>Ogollah</surname><given-names>R.</given-names></name><name><surname>Lewis</surname><given-names>M.</given-names></name><name><surname>van der Windt</surname><given-names>D.</given-names></name><name><surname>Hay</surname><given-names>E. M.</given-names></name><etal/></person-group> (<year>2018</year>). <article-title>Prognosis of sciatica and back-related leg pain in primary care: The ATLAS cohort.</article-title>
+<source><italic>Spine J.</italic></source>
+<volume>18</volume>
+<fpage>1030</fpage>–<lpage>1040</lpage>. <pub-id pub-id-type="doi">10.1016/j.spinee.2017.10.071</pub-id>
+<pub-id pub-id-type="pmid">29174459</pub-id></mixed-citation>
+      </ref>
+      <ref id="B34">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Lam</surname><given-names>C. L.</given-names></name><name><surname>Tse</surname><given-names>E. Y.</given-names></name><name><surname>Gandek</surname><given-names>B.</given-names></name><name><surname>Fong</surname><given-names>D. Y.</given-names></name></person-group> (<year>2005</year>). <article-title>The SF-36 summary scales were valid, reliable, and equivalent in a Chinese population.</article-title>
+<source><italic>J. Clin. Epidemiol.</italic></source>
+<volume>58</volume>
+<fpage>815</fpage>–<lpage>822</lpage>. <pub-id pub-id-type="doi">10.1016/j.jclinepi.2004.12.008</pub-id>
+<pub-id pub-id-type="pmid">16018917</pub-id></mixed-citation>
+      </ref>
+      <ref id="B35">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Lee</surname><given-names>B.</given-names></name><name><surname>Di Pietro</surname><given-names>F.</given-names></name><name><surname>Henderson</surname><given-names>L. A.</given-names></name><name><surname>Austin</surname><given-names>P. J.</given-names></name></person-group> (<year>2022</year>). <article-title>Altered basal ganglia infraslow oscillation and resting functional connectivity in complex regional pain syndrome.</article-title>
+<source><italic>J. Neurosci. Res.</italic></source>
+<volume>100</volume>
+<fpage>1487</fpage>–<lpage>1505</lpage>. <pub-id pub-id-type="doi">10.1002/jnr.25057</pub-id>
+<pub-id pub-id-type="pmid">35441738</pub-id></mixed-citation>
+      </ref>
+      <ref id="B36">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Li</surname><given-names>J.</given-names></name><name><surname>Dong</surname><given-names>J. C.</given-names></name><name><surname>Yue</surname><given-names>J. J.</given-names></name></person-group> (<year>2012</year>). <article-title>[Effects of acupuncture on default mode network images of chronic sciatica patients in the resting network state].</article-title>
+<source><italic>Zhongguo Zhong Xi Yi Jie He Za Zhi</italic></source>
+<volume>32</volume>
+<fpage>1624</fpage>–<lpage>1627</lpage>.<pub-id pub-id-type="pmid">23469600</pub-id></mixed-citation>
+      </ref>
+      <ref id="B37">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Li</surname><given-names>J.</given-names></name><name><surname>Zhang</surname><given-names>J. H.</given-names></name><name><surname>Yi</surname><given-names>T.</given-names></name><name><surname>Tang</surname><given-names>W. J.</given-names></name><name><surname>Wang</surname><given-names>S. W.</given-names></name><name><surname>Dong</surname><given-names>J. C.</given-names></name></person-group> (<year>2014</year>). <article-title>Acupuncture treatment of chronic low back pain reverses an abnormal brain default mode network in correlation with clinical pain relief.</article-title>
+<source><italic>Acupunct. Med.</italic></source>
+<volume>32</volume>
+<fpage>102</fpage>–<lpage>108</lpage>. <pub-id pub-id-type="doi">10.1136/acupmed-2013-010423</pub-id>
+<pub-id pub-id-type="pmid">24280949</pub-id></mixed-citation>
+      </ref>
+      <ref id="B38">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Li</surname><given-names>K.</given-names></name><name><surname>Zhang</surname><given-names>Y.</given-names></name><name><surname>Ning</surname><given-names>Y.</given-names></name><name><surname>Zhang</surname><given-names>H.</given-names></name><name><surname>Liu</surname><given-names>H.</given-names></name><name><surname>Fu</surname><given-names>C.</given-names></name><etal/></person-group> (<year>2015</year>). <article-title>The effects of acupuncture treatment on the right frontoparietal network in migraine without aura patients.</article-title>
+<source><italic>J. Headache Pain</italic></source>
+<volume>16</volume>:<fpage>518</fpage>. <pub-id pub-id-type="doi">10.1186/s10194-015-0518-4</pub-id>
+<pub-id pub-id-type="pmid">25916336</pub-id></mixed-citation>
+      </ref>
+      <ref id="B39">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Li</surname><given-names>T.</given-names></name><name><surname>Zhang</surname><given-names>S.</given-names></name><name><surname>Kurata</surname><given-names>J.</given-names></name></person-group> (<year>2018</year>). <article-title>Suppressed descending pain modulatory and enhanced sensorimotor networks in patients with chronic low back pain.</article-title>
+<source><italic>J. Anesth.</italic></source>
+<volume>32</volume>
+<fpage>831</fpage>–<lpage>843</lpage>. <pub-id pub-id-type="doi">10.1007/s00540-018-2561-1</pub-id>
+<pub-id pub-id-type="pmid">30264383</pub-id></mixed-citation>
+      </ref>
+      <ref id="B40">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Liu</surname><given-names>C. H.</given-names></name><name><surname>Yeh</surname><given-names>T. C.</given-names></name><name><surname>Kung</surname><given-names>Y. Y.</given-names></name><name><surname>Tseng</surname><given-names>H. P.</given-names></name><name><surname>Yang</surname><given-names>C. J.</given-names></name><name><surname>Hong</surname><given-names>T. Y.</given-names></name><etal/></person-group> (<year>2020</year>). <article-title>Changes in resting-state functional connectivity in nonacute sciatica with acupuncture modulation: A preliminary study.</article-title>
+<source><italic>Brain Behav.</italic></source>
+<volume>10</volume>:<fpage>e01494</fpage>. <pub-id pub-id-type="doi">10.1002/brb3.1494</pub-id>
+<pub-id pub-id-type="pmid">31922698</pub-id></mixed-citation>
+      </ref>
+      <ref id="B41">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Liu</surname><given-names>J.</given-names></name><name><surname>Zhao</surname><given-names>L.</given-names></name><name><surname>Li</surname><given-names>G.</given-names></name><name><surname>Xiong</surname><given-names>S.</given-names></name><name><surname>Nan</surname><given-names>J.</given-names></name><name><surname>Li</surname><given-names>J.</given-names></name><etal/></person-group> (<year>2012</year>). <article-title>Hierarchical alteration of brain structural and functional networks in female migraine sufferers.</article-title>
+<source><italic>PLoS One</italic></source>
+<volume>7</volume>:<fpage>e51250</fpage>. <pub-id pub-id-type="doi">10.1371/journal.pone.0051250</pub-id>
+<pub-id pub-id-type="pmid">23227257</pub-id></mixed-citation>
+      </ref>
+      <ref id="B42">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Lobanov</surname><given-names>O. V.</given-names></name><name><surname>Quevedo</surname><given-names>A. S.</given-names></name><name><surname>Hadsel</surname><given-names>M. S.</given-names></name><name><surname>Kraft</surname><given-names>R. A.</given-names></name><name><surname>Coghill</surname><given-names>R. C.</given-names></name></person-group> (<year>2013</year>). <article-title>Frontoparietal mechanisms supporting attention to location and intensity of painful stimuli.</article-title>
+<source><italic>Pain</italic></source>
+<volume>154</volume>
+<fpage>1758</fpage>–<lpage>1768</lpage>. <pub-id pub-id-type="doi">10.1016/j.pain.2013.05.030</pub-id>
+<pub-id pub-id-type="pmid">23711484</pub-id></mixed-citation>
+      </ref>
+      <ref id="B43">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Luchtmann</surname><given-names>M.</given-names></name><name><surname>Steinecke</surname><given-names>Y.</given-names></name><name><surname>Baecke</surname><given-names>S.</given-names></name><name><surname>Lützkendorf</surname><given-names>R.</given-names></name><name><surname>Bernarding</surname><given-names>J.</given-names></name><name><surname>Kohl</surname><given-names>J.</given-names></name><etal/></person-group> (<year>2014</year>). <article-title>Structural brain alterations in patients with lumbar disc herniation: A preliminary study.</article-title>
+<source><italic>PLoS One</italic></source>
+<volume>9</volume>:<fpage>e90816</fpage>. <pub-id pub-id-type="doi">10.1371/journal.pone.0090816</pub-id>
+<pub-id pub-id-type="pmid">24595036</pub-id></mixed-citation>
+      </ref>
+      <ref id="B44">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Mayer</surname><given-names>E. A.</given-names></name><name><surname>Gupta</surname><given-names>A.</given-names></name><name><surname>Kilpatrick</surname><given-names>L. A.</given-names></name><name><surname>Hong</surname><given-names>J. Y.</given-names></name></person-group> (<year>2015</year>). <article-title>Imaging brain mechanisms in chronic visceral pain.</article-title>
+<source><italic>Pain</italic></source>
+<volume>156</volume> (<comment>Suppl. 1</comment>), <fpage>S50</fpage>–<lpage>S63</lpage>. <pub-id pub-id-type="doi">10.1097/j.pain.0000000000000106</pub-id>
+<pub-id pub-id-type="pmid">25789437</pub-id></mixed-citation>
+      </ref>
+      <ref id="B45">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Mo</surname><given-names>J.</given-names></name><name><surname>Zhang</surname><given-names>J.</given-names></name><name><surname>Hu</surname><given-names>W.</given-names></name><name><surname>Luo</surname><given-names>F.</given-names></name><name><surname>Zhang</surname><given-names>K.</given-names></name></person-group> (<year>2021</year>). <article-title>Whole-brain morphological alterations associated with trigeminal neuralgia.</article-title>
+<source><italic>J. Headache Pain</italic></source>
+<volume>22</volume>:<fpage>95</fpage>. <pub-id pub-id-type="doi">10.1186/s10194-021-01308-5</pub-id>
+<pub-id pub-id-type="pmid">34388960</pub-id></mixed-citation>
+      </ref>
+      <ref id="B46">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Moriarty</surname><given-names>O.</given-names></name><name><surname>McGuire</surname><given-names>B. E.</given-names></name><name><surname>Finn</surname><given-names>D. P.</given-names></name></person-group> (<year>2011</year>). <article-title>The effect of pain on cognitive function: A review of clinical and preclinical research.</article-title>
+<source><italic>Prog. Neurobiol.</italic></source>
+<volume>93</volume>
+<fpage>385</fpage>–<lpage>404</lpage>. <pub-id pub-id-type="doi">10.1016/j.pneurobio.2011.01.002</pub-id>
+<pub-id pub-id-type="pmid">21216272</pub-id></mixed-citation>
+      </ref>
+      <ref id="B47">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Niddam</surname><given-names>D. M.</given-names></name><name><surname>Lee</surname><given-names>S. H.</given-names></name><name><surname>Su</surname><given-names>Y. T.</given-names></name><name><surname>Chan</surname><given-names>R. C.</given-names></name></person-group> (<year>2019</year>). <article-title>Altered cortical morphology in patients with chronic shoulder pain.</article-title>
+<source><italic>Neurosci. Lett.</italic></source>
+<volume>712</volume>:<fpage>134515</fpage>. <pub-id pub-id-type="doi">10.1016/j.neulet.2019.134515</pub-id>
+<pub-id pub-id-type="pmid">31560996</pub-id></mixed-citation>
+      </ref>
+      <ref id="B48">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Petrides</surname><given-names>M.</given-names></name></person-group> (<year>2005</year>). <article-title>Lateral prefrontal cortex: Architectonic and functional organization.</article-title>
+<source><italic>Philos. Trans. R. Soc. Lond. B Biol. Sci.</italic></source>
+<volume>360</volume>
+<fpage>781</fpage>–<lpage>795</lpage>. <pub-id pub-id-type="doi">10.1098/rstb.2005.1631</pub-id>
+<pub-id pub-id-type="pmid">15937012</pub-id></mixed-citation>
+      </ref>
+      <ref id="B49">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Porchet</surname><given-names>F.</given-names></name><name><surname>Wietlisbach</surname><given-names>V.</given-names></name><name><surname>Burnand</surname><given-names>B.</given-names></name><name><surname>Daeppen</surname><given-names>K.</given-names></name><name><surname>Villemure</surname><given-names>J. G.</given-names></name><name><surname>Vader</surname><given-names>J. P.</given-names></name></person-group> (<year>2002</year>). <article-title>Relationship between severity of lumbar disc disease and disability scores in sciatica patients.</article-title>
+<source><italic>Neurosurgery</italic></source>
+<volume>50</volume>
+<fpage>1253</fpage>–<lpage>1260</lpage>. <pub-id pub-id-type="doi">10.1097/00006123-200206000-00014</pub-id>
+<pub-id pub-id-type="pmid">12015843</pub-id></mixed-citation>
+      </ref>
+      <ref id="B50">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Seminowicz</surname><given-names>D. A.</given-names></name><name><surname>Wideman</surname><given-names>T. H.</given-names></name><name><surname>Naso</surname><given-names>L.</given-names></name><name><surname>Hatami-Khoroushahi</surname><given-names>Z.</given-names></name><name><surname>Fallatah</surname><given-names>S.</given-names></name><name><surname>Ware</surname><given-names>M. A.</given-names></name><etal/></person-group> (<year>2011</year>). <article-title>Effective treatment of chronic low back pain in humans reverses abnormal brain anatomy and function.</article-title>
+<source><italic>J. Neurosci.</italic></source>
+<volume>31</volume>
+<fpage>7540</fpage>–<lpage>7550</lpage>. <pub-id pub-id-type="doi">10.1523/JNEUROSCI.5280-10.2011</pub-id>
+<pub-id pub-id-type="pmid">21593339</pub-id></mixed-citation>
+      </ref>
+      <ref id="B51">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Smallwood</surname><given-names>R. F.</given-names></name><name><surname>Laird</surname><given-names>A. R.</given-names></name><name><surname>Ramage</surname><given-names>A. E.</given-names></name><name><surname>Parkinson</surname><given-names>A. L.</given-names></name><name><surname>Lewis</surname><given-names>J.</given-names></name><name><surname>Clauw</surname><given-names>D. J.</given-names></name><etal/></person-group> (<year>2013</year>). <article-title>Structural brain anomalies and chronic pain: A quantitative meta-analysis of gray matter volume.</article-title>
+<source><italic>J. Pain</italic></source>
+<volume>14</volume>
+<fpage>663</fpage>–<lpage>675</lpage>. <pub-id pub-id-type="doi">10.1016/j.jpain.2013.03.001</pub-id>
+<pub-id pub-id-type="pmid">23685185</pub-id></mixed-citation>
+      </ref>
+      <ref id="B52">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Smith</surname><given-names>S. M.</given-names></name><name><surname>Fox</surname><given-names>P. T.</given-names></name><name><surname>Miller</surname><given-names>K. L.</given-names></name><name><surname>Glahn</surname><given-names>D. C.</given-names></name><name><surname>Fox</surname><given-names>P. M.</given-names></name><name><surname>Mackay</surname><given-names>C. E.</given-names></name><etal/></person-group> (<year>2009</year>). <article-title>Correspondence of the brain’s functional architecture during activation and rest.</article-title>
+<source><italic>Proc. Natl. Acad. Sci. U.S.A.</italic></source>
+<volume>106</volume>
+<fpage>13040</fpage>–<lpage>13045</lpage>. <pub-id pub-id-type="doi">10.1073/pnas.0905267106</pub-id>
+<pub-id pub-id-type="pmid">19620724</pub-id></mixed-citation>
+      </ref>
+      <ref id="B53">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Starr</surname><given-names>C. J.</given-names></name><name><surname>Sawaki</surname><given-names>L.</given-names></name><name><surname>Wittenberg</surname><given-names>G. F.</given-names></name><name><surname>Burdette</surname><given-names>J. H.</given-names></name><name><surname>Oshiro</surname><given-names>Y.</given-names></name><name><surname>Quevedo</surname><given-names>A. S.</given-names></name><etal/></person-group> (<year>2011</year>). <article-title>The contribution of the putamen to sensory aspects of pain: Insights from structural connectivity and brain lesions.</article-title>
+<source><italic>Brain</italic></source>
+<volume>134</volume>(<fpage>Pt 7</fpage>), <fpage>1987</fpage>–<lpage>2004</lpage>. <pub-id pub-id-type="doi">10.1093/brain/awr117</pub-id>
+<pub-id pub-id-type="pmid">21616963</pub-id></mixed-citation>
+      </ref>
+      <ref id="B54">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Tu</surname><given-names>Y.</given-names></name><name><surname>Jung</surname><given-names>M.</given-names></name><name><surname>Gollub</surname><given-names>R. L.</given-names></name><name><surname>Napadow</surname><given-names>V.</given-names></name><name><surname>Gerber</surname><given-names>J.</given-names></name><name><surname>Ortiz</surname><given-names>A.</given-names></name><etal/></person-group> (<year>2020a</year>). <article-title>Abnormal medial prefrontal cortex functional connectivity and its association with clinical symptoms in chronic low back pain.</article-title>
+<source><italic>Pain</italic></source>
+<volume>161</volume>
+<fpage>230</fpage>–<lpage>231</lpage>. <pub-id pub-id-type="doi">10.1097/j.pain.0000000000001507</pub-id>
+<pub-id pub-id-type="pmid">31855942</pub-id></mixed-citation>
+      </ref>
+      <ref id="B55">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Tu</surname><given-names>Y.</given-names></name><name><surname>Zeng</surname><given-names>F.</given-names></name><name><surname>Lan</surname><given-names>L.</given-names></name><name><surname>Li</surname><given-names>Z.</given-names></name><name><surname>Maleki</surname><given-names>N.</given-names></name><name><surname>Liu</surname><given-names>B.</given-names></name><etal/></person-group> (<year>2020b</year>). <article-title>An fMRI-based neural marker for migraine without aura.</article-title>
+<source><italic>Neurology</italic></source>
+<volume>94</volume>
+<fpage>e741</fpage>–<lpage>e751</lpage>. <pub-id pub-id-type="doi">10.1212/WNL.0000000000008962</pub-id>
+<pub-id pub-id-type="pmid">31964691</pub-id></mixed-citation>
+      </ref>
+      <ref id="B56">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Van Dijk</surname><given-names>K. R.</given-names></name><name><surname>Sabuncu</surname><given-names>M. R.</given-names></name><name><surname>Buckner</surname><given-names>R. L.</given-names></name></person-group> (<year>2012</year>). <article-title>The influence of head motion on intrinsic functional connectivity MRI.</article-title>
+<source><italic>Neuroimage</italic></source>
+<volume>59</volume>
+<fpage>431</fpage>–<lpage>438</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2011.07.044</pub-id>
+<pub-id pub-id-type="pmid">21810475</pub-id></mixed-citation>
+      </ref>
+      <ref id="B57">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Wei</surname><given-names>H. L.</given-names></name><name><surname>Xu</surname><given-names>C. H.</given-names></name><name><surname>Wang</surname><given-names>J. J.</given-names></name><name><surname>Feng</surname><given-names>Q. Q.</given-names></name><name><surname>Xu</surname><given-names>X. L.</given-names></name><name><surname>Li</surname><given-names>K. Y.</given-names></name></person-group> (<year>2022</year>). <article-title>Disrupted functional connectivity of the amygdala predicts the efficacy of non-steroidal anti-inflammatory drugs in migraineurs without aura.</article-title>
+<source><italic>Front. Mol. Neurosci.</italic></source>
+<volume>15</volume>:<fpage>819507</fpage>. <pub-id pub-id-type="doi">10.3389/fnmol.2022.819507</pub-id>
+<pub-id pub-id-type="pmid">35283727</pub-id></mixed-citation>
+      </ref>
+      <ref id="B58">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Wen</surname><given-names>X.</given-names></name><name><surname>Yao</surname><given-names>L.</given-names></name><name><surname>Liu</surname><given-names>Y.</given-names></name><name><surname>Ding</surname><given-names>M.</given-names></name></person-group> (<year>2012</year>). <article-title>Causal interactions in attention networks predict behavioral performance.</article-title>
+<source><italic>J. Neurosci.</italic></source>
+<volume>32</volume>
+<fpage>1284</fpage>–<lpage>1292</lpage>. <pub-id pub-id-type="doi">10.1523/JNEUROSCI.2817-11.2012</pub-id>
+<pub-id pub-id-type="pmid">22279213</pub-id></mixed-citation>
+      </ref>
+      <ref id="B59">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Yan</surname><given-names>C. G.</given-names></name><name><surname>Wang</surname><given-names>X. D.</given-names></name><name><surname>Zuo</surname><given-names>X. N.</given-names></name><name><surname>Zang</surname><given-names>Y. F.</given-names></name></person-group> (<year>2016</year>). <article-title>DPABI: Data processing &amp; analysis for (resting-state) brain imaging.</article-title>
+<source><italic>Neuroinformatics</italic></source>
+<volume>14</volume>
+<fpage>339</fpage>–<lpage>351</lpage>. <pub-id pub-id-type="doi">10.1007/s12021-016-9299-4</pub-id><pub-id pub-id-type="pmid">27075850</pub-id></mixed-citation>
+      </ref>
+      <ref id="B60">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Yang</surname><given-names>H.</given-names></name><name><surname>Chen</surname><given-names>X.</given-names></name><name><surname>Chen</surname><given-names>Z. B.</given-names></name><name><surname>Li</surname><given-names>L.</given-names></name><name><surname>Li</surname><given-names>X. Y.</given-names></name><name><surname>Castellanos</surname><given-names>F. X.</given-names></name><etal/></person-group> (<year>2021</year>). <article-title>Disrupted intrinsic functional brain topology in patients with major depressive disorder.</article-title>
+<source><italic>Mol. Psychiatry</italic></source>
+<volume>26</volume>
+<fpage>7363</fpage>–<lpage>7371</lpage>. <pub-id pub-id-type="doi">10.1038/s41380-021-01247-2</pub-id>
+<pub-id pub-id-type="pmid">34385597</pub-id></mixed-citation>
+      </ref>
+      <ref id="B61">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Yeo</surname><given-names>B. T.</given-names></name><name><surname>Krienen</surname><given-names>F. M.</given-names></name><name><surname>Sepulcre</surname><given-names>J.</given-names></name><name><surname>Sabuncu</surname><given-names>M. R.</given-names></name><name><surname>Lashkari</surname><given-names>D.</given-names></name><name><surname>Hollinshead</surname><given-names>M.</given-names></name><etal/></person-group> (<year>2011</year>). <article-title>The organization of the human cerebral cortex estimated by intrinsic functional connectivity.</article-title>
+<source><italic>J. Neurophysiol.</italic></source>
+<volume>106</volume>
+<fpage>1125</fpage>–<lpage>1165</lpage>. <pub-id pub-id-type="doi">10.1152/jn.00338.2011</pub-id>
+<pub-id pub-id-type="pmid">21653723</pub-id></mixed-citation>
+      </ref>
+      <ref id="B62">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zeng</surname><given-names>P.</given-names></name><name><surname>Huang</surname><given-names>J.</given-names></name><name><surname>Wu</surname><given-names>S.</given-names></name><name><surname>Qian</surname><given-names>C.</given-names></name><name><surname>Chen</surname><given-names>F.</given-names></name><name><surname>Sun</surname><given-names>W.</given-names></name><etal/></person-group> (<year>2019</year>). <article-title>Characterizing the structural pattern predicting medication response in herpes zoster patients using multivoxel pattern analysis.</article-title>
+<source><italic>Front. Neurosci.</italic></source>
+<volume>13</volume>:<fpage>534</fpage>. <pub-id pub-id-type="doi">10.3389/fnins.2019.00534</pub-id>
+<pub-id pub-id-type="pmid">31191228</pub-id></mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

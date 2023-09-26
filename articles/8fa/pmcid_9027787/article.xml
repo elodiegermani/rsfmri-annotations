@@ -1,0 +1,2207 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.3" xml:lang="en" article-type="research-article">
+  <?properties open_access?>
+  <processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats">
+    <restricted-by>pmc</restricted-by>
+  </processing-meta>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">J Clin Med</journal-id>
+      <journal-id journal-id-type="iso-abbrev">J Clin Med</journal-id>
+      <journal-id journal-id-type="publisher-id">jcm</journal-id>
+      <journal-title-group>
+        <journal-title>Journal of Clinical Medicine</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">2077-0383</issn>
+      <publisher>
+        <publisher-name>MDPI</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">35456359</article-id>
+      <article-id pub-id-type="pmc">9027787</article-id>
+      <article-id pub-id-type="doi">10.3390/jcm11082267</article-id>
+      <article-id pub-id-type="publisher-id">jcm-11-02267</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Classification of Chemotherapy-Related Subjective Cognitive Complaints in Breast Cancer Using Brain Functional Connectivity and Activity: A Machine Learning Analysis</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <contrib-id contrib-id-type="orcid" authenticated="true">https://orcid.org/0000-0003-1431-1523</contrib-id>
+          <name>
+            <surname>Wang</surname>
+            <given-names>Lei</given-names>
+          </name>
+          <xref rid="af1-jcm-11-02267" ref-type="aff">1</xref>
+          <xref rid="af2-jcm-11-02267" ref-type="aff">2</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Zhu</surname>
+            <given-names>Yanyan</given-names>
+          </name>
+          <xref rid="af1-jcm-11-02267" ref-type="aff">1</xref>
+          <xref rid="af2-jcm-11-02267" ref-type="aff">2</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Wu</surname>
+            <given-names>Lin</given-names>
+          </name>
+          <xref rid="af1-jcm-11-02267" ref-type="aff">1</xref>
+          <xref rid="af2-jcm-11-02267" ref-type="aff">2</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Zhuang</surname>
+            <given-names>Ying</given-names>
+          </name>
+          <xref rid="af3-jcm-11-02267" ref-type="aff">3</xref>
+          <xref rid="c1-jcm-11-02267" ref-type="corresp">*</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Zeng</surname>
+            <given-names>Jinsheng</given-names>
+          </name>
+          <xref rid="af4-jcm-11-02267" ref-type="aff">4</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <contrib-id contrib-id-type="orcid" authenticated="true">https://orcid.org/0000-0002-0890-910X</contrib-id>
+          <name>
+            <surname>Zhou</surname>
+            <given-names>Fuqing</given-names>
+          </name>
+          <xref rid="af1-jcm-11-02267" ref-type="aff">1</xref>
+          <xref rid="af2-jcm-11-02267" ref-type="aff">2</xref>
+          <xref rid="c1-jcm-11-02267" ref-type="corresp">*</xref>
+        </contrib>
+      </contrib-group>
+      <contrib-group>
+        <contrib contrib-type="editor">
+          <name>
+            <surname>Kauppinen</surname>
+            <given-names>Risto A.</given-names>
+          </name>
+          <role>Academic Editor</role>
+        </contrib>
+        <contrib contrib-type="editor">
+          <name>
+            <surname>Hutt</surname>
+            <given-names>Axel</given-names>
+          </name>
+          <role>Academic Editor</role>
+        </contrib>
+      </contrib-group>
+      <aff id="af1-jcm-11-02267"><label>1</label>Department of Radiology, The First Affiliated Hospital of Nanchang University, Yongwaizheng St. 17, Nanchang 330006, China; <email>dr_leiwang@126.com</email> (L.W.); <email>zyanyan06@126.com</email> (Y.Z.); <email>ndyfy04061@ncu.edu.cn</email> (L.W.)</aff>
+      <aff id="af2-jcm-11-02267"><label>2</label>Neuroradiology Laboratory, Jiangxi Province Medical Imaging Research Institute, Yongwaizheng St. 17, Nanchang 330006, China</aff>
+      <aff id="af3-jcm-11-02267"><label>3</label>Department of Oncology, Jiangxi Hospital of Integrated Traditional Chinese and Western Medicine, Bayi Ave. 90, Nanchang 330003, China</aff>
+      <aff id="af4-jcm-11-02267"><label>4</label>Department of General Surgery, The First Affiliated Hospital of Nanchang University, Yongwaizheng St. 17, Nanchang 330006, China; <email>zengjinsheng0606@163.com</email></aff>
+      <author-notes>
+        <corresp id="c1-jcm-11-02267"><label>*</label>Correspondence: <email>zhuangying1982@sina.cn</email> (Y.Z.); <email>fq.chou@yahoo.com</email> (F.Z.); Tel.: +86-791-886-951-32 (F.Z.)</corresp>
+      </author-notes>
+      <pub-date pub-type="epub">
+        <day>18</day>
+        <month>4</month>
+        <year>2022</year>
+      </pub-date>
+      <pub-date pub-type="collection">
+        <month>4</month>
+        <year>2022</year>
+      </pub-date>
+      <volume>11</volume>
+      <issue>8</issue>
+      <elocation-id>2267</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>16</day>
+          <month>2</month>
+          <year>2022</year>
+        </date>
+        <date date-type="accepted">
+          <day>14</day>
+          <month>4</month>
+          <year>2022</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>© 2022 by the authors.</copyright-statement>
+        <copyright-year>2022</copyright-year>
+        <license>
+          <ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref>
+          <license-p>Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license (<ext-link ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</ext-link>).</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>The aim of this study was combining multi-level resting-state functional magnetic resonance imaging (rs-fMRI) features with machine learning method to distinguish breast cancer patients with chemotherapy-related subjective cognitive complaints (SCC) from non-chemotherapy (BC) and healthy controls (HC). Forty subjects in SCC group, forty-nine in BC group and thirty-four in HC group were recruited and underwent rs-fMRI scanning. Based on the anatomical automatic labeling brain atlas, the functional metrics of all subjects included functional connectivity, amplitude of low frequency fluctuation and fractional amplitude of low frequency fluctuation, regional homogeneity, voxel-mirrored homotopic connectivity and degree centrality were calculated and extracted as features set. Then, the rs-fMRI features were selected by two-sample t-test, removing variables with a high pairwise correlation and least absolute shrinkage and selection operator regression. Finally, the support vector machine models were built for classification (SCC vs. BC, SCC vs. HC). Thirty-eight features (SCC vs. BC) and seventeen features (SCC vs. HC) were selected separately, and the accuracy of the models were 82.0% and 91.9%, respectively. These findings demonstrated a valid machine learning approach that effectively distinguished breast cancer patients with chemotherapy-related SCC from non-chemotherapy and healthy controls, providing potential neuroimaging evidence for early diagnosis and clinical intervention of chemotherapy-related SCC.</p>
+      </abstract>
+      <kwd-group>
+        <kwd>resting-state functional magnetic resonance imaging</kwd>
+        <kwd>machine learning</kwd>
+        <kwd>breast cancer</kwd>
+        <kwd>chemotherapy-related cognitive impairment</kwd>
+        <kwd>subjective cognitive complaints</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec sec-type="intro" id="sec1-jcm-11-02267">
+      <title>1. Introduction</title>
+      <p>Breast cancer is the most common malignant disease that threatens women all over the world [<xref rid="B1-jcm-11-02267" ref-type="bibr">1</xref>], and chemotherapy is one of the most important treatments. More than 50% of breast cancer patients have cognitive impairment in many aspects, including memory, execution, attention and reaction speed, during or after chemotherapy (also known as “chemo-brain”), and more than half of them are mainly manifested as subjective cognitive impairment (SCC) [<xref rid="B2-jcm-11-02267" ref-type="bibr">2</xref>,<xref rid="B3-jcm-11-02267" ref-type="bibr">3</xref>], which seriously affects the ability to work and socialize [<xref rid="B4-jcm-11-02267" ref-type="bibr">4</xref>]. With the continuous development of medical technology, the number of breast cancer survivors is increasing, and the social and economic burden brought by chemotherapy-related cognitive impairment (CRCI) is becoming heavier. Therefore, early identification of the occurrence of CRCI is crucial for early clinical intervention and prognosis of patients.</p>
+      <p>Several neuroimaging studies have shown the reduced volume and density of brain gray matter and the destroyed structural integrity of white matter in CRCI [<xref rid="B5-jcm-11-02267" ref-type="bibr">5</xref>,<xref rid="B6-jcm-11-02267" ref-type="bibr">6</xref>,<xref rid="B7-jcm-11-02267" ref-type="bibr">7</xref>]. Additionally, the resting-state functional magnetic resonance imaging (rs-fMRI) studies had also confirmed that there were extensive abnormalities of local functional activities and connections in breast cancer patients with CRCI [<xref rid="B8-jcm-11-02267" ref-type="bibr">8</xref>,<xref rid="B9-jcm-11-02267" ref-type="bibr">9</xref>,<xref rid="B10-jcm-11-02267" ref-type="bibr">10</xref>]. Dumas et al. [<xref rid="B11-jcm-11-02267" ref-type="bibr">11</xref>] reported that decreased functional connectivity (FC) one month after chemotherapy that partially recovered to baseline at one year in the dorsal attention network and decreased FC in the default mode network (DMN) at one month and one year following chemotherapy. A previous study on the hippocampus showed that this brain region in breast cancer patients after chemotherapy has higher FC than that of healthy controls and was associated with poor subjective cognitive performance [<xref rid="B12-jcm-11-02267" ref-type="bibr">12</xref>]. Chen et al. [<xref rid="B9-jcm-11-02267" ref-type="bibr">9</xref>] found older breast cancer patients have increased amplitude of low frequency fluctuation (ALFF) of bilateral subcallosal gyri and right anterior cingulate gyrus after chemotherapy, and decreased fractional ALFF (fALFF) in the left precuneus, while there was no significant difference in regional homogeneity (ReHo) analysis. However, most of these studies are carried out separately according to the brain functional connectivity or regional activity, and the result is based on the comparison of the population level. Given the multimodal characteristics of brain function, it will be a challenge to identify the distinguishing features and apply them to the individual classification of CRCI, particularly for the survivors at the period of SCC.</p>
+      <p>To solve these problems, the classification models combining rs-fMRI with machine learning has been applied to the early accurate diagnosis of CRCI. Kesler et al. [<xref rid="B13-jcm-11-02267" ref-type="bibr">13</xref>] constructed the support vector machine (SVM) with patterns of DMN connectivity, and distinguished CRCI from both survivors without chemotherapy and HCs with 90–91% accuracy, while the effect of other parameters of rs-fMRI functional connection and activity on breast cancer patients after chemotherapy was ignored. Furthermore, there were insufficient concerns for breast cancer survivors who were still experiencing chemotherapy-related SCC. Previous studies have suggested that the combination of multi-level rs-fMRI features could improve the disease diagnosis classification performance [<xref rid="B14-jcm-11-02267" ref-type="bibr">14</xref>,<xref rid="B15-jcm-11-02267" ref-type="bibr">15</xref>].</p>
+      <p>Based-on these, in this present study, we assumed that we can use the method of machine learning to construct the SVM models through a variety of rs-fMRI functional parameters, including FC, ALFF, fALFF, ReHo, voxel-mirrored homotopic connectivity (VMHC) and degree centrality (DC), which could effectively identify breast cancer patients with chemotherapy-related SCC from breast cancer patients before chemotherapy and HCs, and these might provide a valuable message for the accurate diagnosis of the occurrence of CRCI and clinical intervention in breast cancer patients.</p>
+    </sec>
+    <sec id="sec2-jcm-11-02267">
+      <title>2. Materials and Methods</title>
+      <sec sec-type="subjects" id="sec2dot1-jcm-11-02267">
+        <title>2.1. Participants</title>
+        <p>All breast cancer patients were recruited in the First Affiliated Hospital of Nanchang University from July 2018 to May 2020. Patient inclusion criteria include the following: (1) female patients with primary invasive breast cancer confirmed by postoperative pathologically, and with no brain metastasis confirmed by MRI; (2) right-handed; (3) aged 35 to 64 years old; (4) appearance of subjective cognitive complaints that are not related to the disease and corresponding treatment after chemotherapy in post-operative chemotherapy. SCC are defined as self-reports of memory, execution, attention, processing speed and other cognitive impairment. Exclusion criteria include the following: (1) non-primary invasive breast cancer; (2) any history of brain trauma, tumor, nerve demyelination, mental illness, or alcohol and drug abuse; (3) any contraindications to MRI scanning (vertigo, claustrophobia, etc.). According to the above criteria, a total of forty-six breast cancer patients with subjective cognitive complaints after postoperative chemotherapy (SCC group) who met above inclusion criteria were recruited. Additionally, fifty-one breast cancer patients before postoperative chemotherapy (BC group) who met the above first three inclusion criteria and all exclusion criteria were recruited as control group. Meanwhile, thirty-four age- and sex-matched healthy controls (HC group) were volunteered from the local community, which according with above exclusion criteria.</p>
+        <p>This study was approved by the Medical Research Ethics Committee and the Institutional Review Board of the First Affiliated Hospital of Nanchang University (Protocol number 2018039 from 1 July 2018) and was performed in accordance with the Declaration of Helsinki. Each subject signed a written informed consent before participating in this study.</p>
+      </sec>
+      <sec id="sec2dot2-jcm-11-02267">
+        <title>2.2. Cognitive Assessment</title>
+        <p>The subjective and objective cognitive performance of breast cancer patients was measured by using neuropsychological cognitive assessments, and it was completed within the same day of MRI scanning. The subjective cognitive complaints were estimated by the questionnaire of Functional Assessment of Cancer Therapy-Cognitive Function (FACT-Cog) [<xref rid="B16-jcm-11-02267" ref-type="bibr">16</xref>] version 3. There are four subdomains to evaluate the perceived cognitive impairment, impact of perceived cognitive impairments on quality of life, comments from others, and perceived cognitive abilities. Additionally, objective cognition would be measured from different cognitive subdomains by the following six neurophysiological tests: (1) Montreal Cognitive Assessment Beijing version [<xref rid="B17-jcm-11-02267" ref-type="bibr">17</xref>]; (2) Trail making test [<xref rid="B18-jcm-11-02267" ref-type="bibr">18</xref>]: it consists of parts A and B; (3) Stroop color-word test (CWT) [<xref rid="B19-jcm-11-02267" ref-type="bibr">19</xref>]: there are three parts in this test, including word test, color test and color-word test; (4) The Chinese version of auditory verbal learning test (AVLT) [<xref rid="B20-jcm-11-02267" ref-type="bibr">20</xref>]: it included immediate and delayed recall; (5) Symbol digital modalities test [<xref rid="B21-jcm-11-02267" ref-type="bibr">21</xref>]; (6) Clock drawing test [<xref rid="B22-jcm-11-02267" ref-type="bibr">22</xref>].</p>
+        <p>Moreover, the Beck Depression Inventory [<xref rid="B23-jcm-11-02267" ref-type="bibr">23</xref>] was used to assess the severity of depression in patients, the higher scores the more severe the symptoms.</p>
+      </sec>
+      <sec id="sec2dot3-jcm-11-02267">
+        <title>2.3. MRI Data Acquisition</title>
+        <p>All MRI data were collected on a 3.0-Tesla Siemens Trio TIM Scanner (Siemens Medical Solutions, Erlangen, Germany) using an eight-channel head coil at the Radiology Department of the First Affiliated Hospital of Nanchang University. To minimize head motion and discomfort, all participants laid supine with their head fixed using foam pads in the scanner. During the MRI data acquisition, the participants were required to keep their eyes closed without thinking anything specifically or falling into sleep.</p>
+        <p>The rs-fMRI gradient-echo echo-planar imaging sequences were collected as follows: repetition time = 2000 ms, echo time = 30 ms, flip angle = 90°, matrix size = 64 × 64, field of view = 220 × 220 mm<sup>2</sup>, voxel size = 3.0 × 3.0 × 4.0 mm<sup>3</sup>, inter-slice gap = 0 mm, slice thickness = 4 mm, 30 axial slices, and 240 time points with a scan time of 8 min and 40 s. The high-resolution T1-weighted images were collected using three-dimensional magnetization-prepared rapid gradient-echo sequence with the following parameters: repetition time = 1900 ms, echo time = 2.26 ms, inversion time = 900 ms, matrix size = 240 × 256, field of view = 250 × 250 mm<sup>2</sup>, voxel size = 1.0 × 1.0 × 1.0 mm<sup>3</sup>, slice thickness = 0.5 mm, and 176 sagittal slices with a scan time of 4 min and 20 s. Each participant also underwent conventional sequences including T1-weighted, T2-weighted, T2-weighted dark fluid, and diffusion-weighted imaging sequences to analyze brain structural injury and metastasis.</p>
+      </sec>
+      <sec id="sec2dot4-jcm-11-02267">
+        <title>2.4. MRI Data Preprocessing</title>
+        <p>The conventional sequence images and diffusion weighted imaging were checked by three experienced radiologists to weed out structural brain injury and metastasis before preprocessing. The rs-fMRI and high-resolution T1-weighted images were preprocessed by using a toolbox called Data Processing Assistant for Resting-State fMRI (<uri xlink:href="http://rfmri.org/DPARSF">http://rfmri.org/DPARSF</uri> (accessed on 20 November 2021)) [<xref rid="B24-jcm-11-02267" ref-type="bibr">24</xref>] based on Statistical Parametric Mapping 12 (<uri xlink:href="http://www.fil.ion.ucl.ac.uk/spm/">http://www.fil.ion.ucl.ac.uk/spm/</uri> (accessed on 20 November 2021)) running on MATLAB 8.4.0. (Mathworks Inc., Sherborn, MA, USA) through the following seven steps: (1) removing the first ten time points for magnetization stabilization and adaptation the environment; (2) slice-timing correction; (3) realignment to corrected head motion (whose maximum head motions exceed 2.0 mm of displacement in any direction or 2 degrees in any angular motion should be excluded); (4) spatial normalization: the individual registration between functional images and high-resolution T1 data, then T1 images segmentation and functional data registration to Montreal Neurological Institute space, and resampling to 3 × 3 × 3 mm<sup>3</sup> voxel; (5) smoothing by using a 6 × 6 × 6 mm<sup>3</sup> full-width at half-maximum Gaussian kernel; (6) linear de-trending to remove nuisance signals and linear regression to obtain Friston 24-head motion parameters, cerebrospinal fluid and white matter signal; and (7) band-pass filtering at 0.01–0.08 Hz to control high-frequency physiological noise and low-frequency drift.</p>
+      </sec>
+      <sec id="sec2dot5-jcm-11-02267">
+        <title>2.5. Feature Extraction</title>
+        <p>After data preprocessing, based on 90 brain regions of the automated anatomical labeling (AAL) atlas, we calculated the following six types of rs-fMRI measures, including FC, ALFF, fALFF, ReHo, VMHC and DC as the variables.</p>
+        <list list-type="simple">
+          <list-item>
+            <label>(1)</label>
+            <p>FC can reflect the temporal correlation between neurophysiological activities in different brain regions spatially. The mean time courses of each regions of interest (ROI) were attained by averaging the rs-fMRI time series of all the voxels within the ROI. Pearson’s correlation analysis was performed on all pairs of ROIs time courses, and then the correlation coefficients were transformed into z-values with Fisher’s r-to-z transformation. Total 4005 z-transformed correlation coefficients were taken as the FCs between all pairs of ROIs.</p>
+          </list-item>
+          <list-item>
+            <label>(2)</label>
+            <p>ALFF and fALFF reflect the intensity of intrinsic spontaneous brain oscillatory activity. ALFF was achieved as the averaged square root in a voxel over the preceding frequency range, while fALFF was calculated as the ratio between ALFF and the average square root of the power spectrum within the entire frequency range. We calculated individual ALFF/fALFF values within each voxel and then matched the mean to the brain maps. Fisher’s r-to-z transformation was performed to obtain zALFF/zfALFF map of the whole brain. Finally, we obtained 90 zALFF/zfALFF values using the AAL atlas.</p>
+          </list-item>
+          <list-item>
+            <label>(3)</label>
+            <p>ReHo as a local brain connectivity metric is measured to detect the regional temporal homogeneity of neural intrinsic activity. After spatial normalization, all images were then band-pass filtered as described at step 7 and smoothing would be conducted. We calculated individual ReHo values within each voxel and adjacent 26 voxels, then the mean be segmented into 90 ROIs. Fisher’s r-to-z transformation was performed to obtain zReHo map of the whole brain as well. Thus, we obtained 90 zReHo values.</p>
+          </list-item>
+          <list-item>
+            <label>(4)</label>
+            <p>VMHC can reflect the functional connectivity of mirrored voxels in two hemispheres. Individual VMHC values within each voxel were calculated, then segmented into 90 ROIs. After performing Fisher’s r-to-z transformation, we obtained 90 zVMHC values of brain map.</p>
+          </list-item>
+          <list-item>
+            <label>(5)</label>
+            <p>DC reflects the importance of this brain region by calculating the number of functional connections directly connected with this brain region in the whole brain. Each region’s DC with positive binary values of AAL atlas would be calculated and transformed to zDC values, then we obtained 90 zDC values.</p>
+          </list-item>
+        </list>
+      </sec>
+      <sec id="sec2dot6-jcm-11-02267">
+        <title>2.6. Feature Selection</title>
+        <p>First, we performed two-sample <italic toggle="yes">t</italic>-test on each feature between the SCC and BC group, and the features that were significantly different (<italic toggle="yes">p</italic> &lt; 0.01) between the two groups were retained. Then, we eliminated the features with high pairwise correlation to weaken the multi-collinearity. If there was a high Pearson’s correlation between two features (we set 0.65 as the correlation absolute threshold), we checked the mean absolute correlation of each variable and removed the variable with a larger mean absolute correlation. Lastly, we used the least absolute shrinkage and selection operator (LASSO) logistic method with 10-fold crossing validation using classification accuracy as cost function to select the most discriminative features for classification. After LASSO, the features whose coefficients were non-zero were remained to train a model for classifying the SCC and BC group. The features for classifying the SCC and HC group were selected as per the above identical procedures. The feature selection was performed in Python 3.8.8 with packages “scikit-learn”.</p>
+      </sec>
+      <sec id="sec2dot7-jcm-11-02267">
+        <title>2.7. SVM Classification</title>
+        <p>Based on the selected features, we constructed SVM models to discriminate the three groups (SCC vs. BC, SCC vs. HC). To enhance the interpretability of the models, the linear kernel function was considered in this study. The regularization parameter <italic toggle="yes">C</italic> in the linear kernel SVM models was used to find the optimal hyperplane. The hyper-parameter <italic toggle="yes">C</italic> was left at default setting, searched by ranging from 2<sup>−10</sup> to 2<sup>10</sup> with 2<sup>0.2</sup> as step sizes via five-fold cross-validation. The leave-one-out cross-validation method and permutation test (5000 times) were used to build the optimal SVM model. The accuracy, sensitivity and specificity of models were calculated, and the receiver operating characteristic (ROC) curve and the area under the curve (AUC) are used to evaluate the performance of the models. The weights of all selected rs-fMRI features were calculated to quantify the contribution to the SVM models. The procedures of building the linear kernel SVM models were performed in MATLAB 8.4.0. with the libsvm version 3.24 packages (<uri xlink:href="https://www.csie.ntu.edu.tw/~cjlin/libsvm/">https://www.csie.ntu.edu.tw/~cjlin/libsvm/</uri>) (accessed on 30 December 2021) [<xref rid="B25-jcm-11-02267" ref-type="bibr">25</xref>].</p>
+      </sec>
+      <sec id="sec2dot8-jcm-11-02267">
+        <title>2.8. Statistical Analyses</title>
+        <p>Statistical analysis was performed using SPSS 26.0 software for clinical characteristics and cognitive function assessment by independent sample <italic toggle="yes">t</italic>-test or one-way analysis of variance (ANOVA). Prior to ANOVA, clinical data were checked for normality and homogeneity of variance. If the differences were significant, they were further compared using the least significant difference test; otherwise, non-parametric tests were employed, and <italic toggle="yes">p</italic> &lt; 0.05 was considered significant.</p>
+      </sec>
+    </sec>
+    <sec sec-type="results" id="sec3-jcm-11-02267">
+      <title>3. Results</title>
+      <sec id="sec3dot1-jcm-11-02267">
+        <title>3.1. Demographics and Clinical Characteristics</title>
+        <p>Two patients (all in the SCC group) with brain metastasis and six patients (four in the SCC group and two in the BC group) with excessive head motion were ruled out, and this study were recruited 40 participants in the SCC group, 49 in the BC group and 34 in the HC group finally. All patients in the SCC group treated with standard-dosage chemotherapy regimens: (1) 24 patients with docetaxel (75 mg/m<sup>2</sup>) + cyclophosphamide (500 mg/m<sup>2</sup>) + doxorubicin (50 mg/m<sup>2</sup>) or epirubicin (100 mg/m<sup>2</sup>) by intravenous infusion every 3 weeks; (2) 16 patients with docetaxel (75 mg/m<sup>2</sup>) + cyclophosphamide (500 mg/m<sup>2</sup>) + fluorouracil (500 mg/m<sup>2</sup>) + doxorubicin (50 mg/m<sup>2</sup>) or epirubicin (100 mg/m<sup>2</sup>) by intravenous infusion every 3 weeks. Seventeen patients in the SCC group have completed the chemotherapy treatment at the time of the MRI scan, while the rest were still undergoing treatment (6 patients completed two cycles, 6 patients completed five cycles, 5 patients completed six cycles, and 6 patients completed seven cycles). Demographic and clinically relevant characteristics and cognitive function parameters are presented in <xref rid="jcm-11-02267-t001" ref-type="table">Table 1</xref>. No significant differences in age, years of education, or head motion were found among these three groups. There were no significant differences between the SCC and BC group in the Beck Depression Inventory and objective cognitive assessment scores. However, the SCC group had significantly worse subjective cognitive performance, including the FACT-Cog total scores, perceived cognitive impairment and comments from others, compared with the BC group (<xref rid="jcm-11-02267-t001" ref-type="table">Table 1</xref>).</p>
+      </sec>
+      <sec id="sec3dot2-jcm-11-02267">
+        <title>3.2. Feature Selection</title>
+        <p>Between the SCC and BC group, we finally obtained 38 rs-fMRI features, including 25 FC, 6 ALFF, 2 fALFF, 4 ReHo and 1 VMHC after the feature selection procedure (<xref rid="jcm-11-02267-f001" ref-type="fig">Figure 1</xref> and <xref rid="jcm-11-02267-f002" ref-type="fig">Figure 2</xref>, <xref rid="jcm-11-02267-t002" ref-type="table">Table 2</xref>). Between the SCC and HC group, we finally obtained 17 rs-fMRI features, including 7 FC, 2 ALFF, 4 fALFF, 3 ReHo and 1 DC after feature selection (<xref rid="jcm-11-02267-f003" ref-type="fig">Figure 3</xref> and <xref rid="jcm-11-02267-t003" ref-type="table">Table 3</xref>).</p>
+      </sec>
+      <sec id="sec3dot3-jcm-11-02267">
+        <title>3.3. SVM Classification</title>
+        <p>The regularization parameter <italic toggle="yes">C</italic> in the SVM models were determined as 2<sup>2.6</sup> (SCC vs. BC) and 2<sup>0</sup> (SCC vs. HC), respectively, by iterative attempts using the 5-fold cross-validation scheme. With the 38 rs-fMRI features having been chosen after the above three screening procedures, after the hyper-parameter optimization and leave-one-out cross-validation, we obtained the optimal SVM model with an accuracy of 82.0% and an AUC of 0.903 (95% confidence interval: 82.2–95.6%) for discriminating the SCC from BC group (sensitivity = 82.50%, specificity = 87.76%, and the <italic toggle="yes">p</italic> values was 0.0003 after 5000 times permutation test) (<xref rid="jcm-11-02267-f004" ref-type="fig">Figure 4</xref>). With the 17 rs-fMRI features, we built optimal SVM model for discriminating the SCC from HC group with an accuracy of 91.9% and an AUC of 0.943 (95% confidence interval: 86.3–98.3%) (sensitivity = 92.50%, specificity = 91.18%, and the <italic toggle="yes">p</italic> values was 0.0004 after 5000 times permutation test) (<xref rid="jcm-11-02267-f004" ref-type="fig">Figure 4</xref>).</p>
+      </sec>
+    </sec>
+    <sec sec-type="discussion" id="sec4-jcm-11-02267">
+      <title>4. Discussion</title>
+      <p>In the present study, we constructed the SVM models with excellent performance that combined a variety of rs-fMRI functional parameters, including FC, ALFF, fALFF, ReHo, VMHC and DC with machine learning method, which could effectively discriminate breast cancer patients with chemotherapy-related SCC from breast cancer patients before chemotherapy and HCs, and these suggested the remarkable potentialities of rs-fMRI to identify CRCI and could provide more evidence for early clinical intervention.</p>
+      <sec id="sec4dot1-jcm-11-02267">
+        <title>4.1. SVM Classification</title>
+        <p>Based on multi-level rs-fMRI features, this study utilized one of the most popular machine learning classifiers SVM to discriminate breast cancer patients with chemotherapy-related SCC in breast cancer survivors with excellent classification accuracy and reliability. Kesler et al. [<xref rid="B13-jcm-11-02267" ref-type="bibr">13</xref>] analyzed the DMN resting-state functional connectivity patterns, combined the SVM model, and discriminated chemotherapy-treated from non-chemotherapy-treated breast cancer survivors and healthy controls with high accuracy, suggesting DMN functional connectivity might be used as a neuroimaging marker for predicting CRCI. While the features type was limited to FC, local functional activity metrics were not considered. Similarly, Hosseini et al. [<xref rid="B26-jcm-11-02267" ref-type="bibr">26</xref>] applied the multi-variate pattern analysis method to decoding the brain functional connectivity pattern during an executive-prefrontal task fMRI and built an SVM model for distinguishing chemotherapy-treated breast cancer patients. The connectivity of frontal lobe, supplementary motor area, and inferior parietal lobule brain regions contributed significantly to the model, but the classification performance was mediocre (the accuracy was about 70%). Kesler et al. [<xref rid="B27-jcm-11-02267" ref-type="bibr">27</xref>] combined connectome-based predictive modeling [<xref rid="B28-jcm-11-02267" ref-type="bibr">28</xref>] with rs-fMRI, built a random forest classifier model for unsupervised machine learning, and obtained three different biotypes in the breast cancer group with chemotherapy treatment. There were significant differences in cognitive impairment types and brain functional network connection patterns among patients with different biotypes. It suggested that there may be various clinical types of CRCI in breast cancer, which could provide new insights into the heterogeneity of cognitive symptoms in CRCI, but a large sample longitudinal follow-up study design is needed in the future to track individual cognitive trajectories.</p>
+        <p>In addition, brain local functional variables and white matter network characteristics were also used to classify breast cancer patients after chemotherapy. Based on rs-fMRI and generalized q-sampling imaging, Chen et al. [<xref rid="B29-jcm-11-02267" ref-type="bibr">29</xref>] constructed multiple machine learning models separately for classification of post-chemotherapy breast cancer patients versus healthy controls. Among them, the following showed good performance, and the classification accuracies could reach more than 80%: the logistic regression characterized by ReHo, generalized fractional anisotropy and normalized quantitative anisotropy; the classification and regression tree characterized by generalized fractional anisotropy; the XGBoost classifier characterized by normalized quantitative anisotropy.</p>
+        <p>Furthermore, the effectiveness of these three classifiers was also verified by functional network and structural network constructed using graph theory analysis [<xref rid="B30-jcm-11-02267" ref-type="bibr">30</xref>]. Among the features of topological network, the classification and regression tree and XGBoost constructed with the functional global efficiency as feature and the classification and regression tree model constructed with the structural transitivity as feature still obtained good accuracies (classification accuracies could reach more than 80%). Graph theory analysis simplified the connectivity relationships of complex brain topological networks. The use of different network metrics to quantitatively assess alterations in brain integrative and isolated functions may also provide new directions for investigating neuroimaging diagnostic markers of cognitive changes underlying CRCI in breast cancer.</p>
+        <p>In this study, combined with the multi-level rs-fMRI features included brain functional activity (FC and VMHC), local functional activity (ALFF, fALFF and ReHo) and graph theory analysis (DC), and selected by <italic toggle="yes">t</italic>-test, removal of high pairwise correlation and LASSO regression, we finally built the linear kernel SVM models with excellent classification accuracy for distinguishing breast cancer patients with chemotherapy-related SCC from breast cancer patients before chemotherapy and healthy controls.</p>
+      </sec>
+      <sec id="sec4dot2-jcm-11-02267">
+        <title>4.2. Rs-fMRI Features</title>
+        <p>The features screened between the SCC and BC group covered a wide range of brain network areas, but they were mainly distributed in DMN and subcortical regions. DMN was a set of brain regions that included hubs around the anterior and posterior medial cortex, bilateral temporal lobes, as well as superior frontal and parietal cortices, which characterized by whose activity is high when the mind is not engaged in specific behavioral tasks and low during focused attention on the external environment. These regions played important roles in internal orientation cognition, cognitive control and self-reference cognitive processing [<xref rid="B31-jcm-11-02267" ref-type="bibr">31</xref>], which closely associated with a variety of neuropsychiatric diseases [<xref rid="B32-jcm-11-02267" ref-type="bibr">32</xref>]. For instance, Feng et al. [<xref rid="B33-jcm-11-02267" ref-type="bibr">33</xref>] reported the significant alterations of hippocampal functional connectivity with DMN mainly in the left insula, temporal lobe and the left inferior frontal gyrus in breast cancer patients underwent chemotherapy. In the previous study [<xref rid="B13-jcm-11-02267" ref-type="bibr">13</xref>], the difference of functional connectivity in DMN was used as the imaging features for identifying breast cancer patients receiving chemotherapy. These findings suggested that abnormal functional alterations in DMN may be one of the most effective biomarkers for distinguishing CRCI in breast cancer.</p>
+        <p>The subcortical regions involved hippocampus, amygdala and basal ganglia (caudate nucleus, putamen, pale balloon and claustrum) and other brain regions, which were associated with cognitive, emotional and social functioning, such as emotional regulation, long-term memory and spatial orientation [<xref rid="B34-jcm-11-02267" ref-type="bibr">34</xref>,<xref rid="B35-jcm-11-02267" ref-type="bibr">35</xref>,<xref rid="B36-jcm-11-02267" ref-type="bibr">36</xref>,<xref rid="B37-jcm-11-02267" ref-type="bibr">37</xref>]. Furthermore, the other brain networks involved in this mechanism, such as the frontal-parietal control network (FPCN), salience network (SN), cingular-opercular network (CON), auditory network (AN) and visual network (VN), suggested that cognitive impairment caused by chemotherapy may involve abnormal alterations in a wide range of functional networks in the whole brain.</p>
+        <p>The features screened between the SCC and HC group seldom overlapped with those between the SCC and BC group, but the engaged brain network areas were comparable. In addition to the highest proportion in DMN regions, the rs-fMRI features selected between the SCC and HC group were also mainly involved FPCN and CON related brain regions. The FPCN, also called central executive network, including prefrontal lobe, dorsolateral prefrontal lobe, dorsolateral superior frontal lobe/anterior cingulate gyrus, inferior parietal anterior lobule and anterior insular cortex, which mainly involved in executive, top-down cognitive control processes and externally oriented cognition [<xref rid="B38-jcm-11-02267" ref-type="bibr">38</xref>]. Miao et al. [<xref rid="B39-jcm-11-02267" ref-type="bibr">39</xref>] took anterior cingulate cortex as the seed regions, reported there were lower functional connectivity with the bilateral superior frontal gyrus and cuneus, left medial frontal gyrus and middle temporal gyrus in breast cancer patients after receiving chemotherapy, and significantly correlated with the executive function. Chen et al. [<xref rid="B40-jcm-11-02267" ref-type="bibr">40</xref>] also demonstrated that the breast cancer survivors who had undergone chemotherapy showed significantly lower regional functional activity in prefrontal cortex regions, further presented the disorder of functional activity of FPCN brain area in breast cancer survivors.</p>
+        <p>The CON involved dorsal anterior cingulate gyrus/medial superior frontal cortex, anterior insula/frontal operculum and anterior prefrontal cortex area, was generally associated with the maintenance of cognitive setting during performance of cognitive tasks of external attention [<xref rid="B41-jcm-11-02267" ref-type="bibr">41</xref>], and played a critical and causal role in switching between the FPCN and the DMN [<xref rid="B42-jcm-11-02267" ref-type="bibr">42</xref>]. In a visual episodic memory task-fMRI study, Pergolizzi et al. [<xref rid="B43-jcm-11-02267" ref-type="bibr">43</xref>] reported the increased activation of prefrontal cortex regions for the breast cancer group compared to controls for both before and after chemotherapy treatment; in addition, Chen et al. [<xref rid="B40-jcm-11-02267" ref-type="bibr">40</xref>] showed similar findings by an rs-fMRI study, remarking that the alterations of functional activity in the CON might be one of the effective biomarkers to identify breast cancer patients after chemotherapy with cognitive impairment.</p>
+      </sec>
+      <sec id="sec4dot3-jcm-11-02267">
+        <title>4.3. Comparison of Subjective and Objective Cognition between the SCC and BC Group</title>
+        <p>In this study, there was no significant difference in objective cognitive scores between the SCC and BC group, which corresponds to the results of previous studies [<xref rid="B2-jcm-11-02267" ref-type="bibr">2</xref>,<xref rid="B44-jcm-11-02267" ref-type="bibr">44</xref>]; meanwhile, in the subjective questionnaire, the total score of FACT-Cog in the SCC group was significantly lower than that in the BC group, and the perceived cognitive impairment and comments from others were significantly decreased in the SCC group, which indicated that the patients in the SCC group suffered more subjective cognitive impairment. Although there were no clear diagnostic criteria for FACT-Cog to confirm the decline of subjective cognitive function, according to a previous study [<xref rid="B45-jcm-11-02267" ref-type="bibr">45</xref>], the total score of FACT-Cog decreased by 6.9–10.6 points, which could be diagnosed as subjective cognitive impairment. It suggested that the SCC group in this study was in accordance with the diagnosis of subjective cognitive impairment than the BC group at the group level.</p>
+      </sec>
+      <sec id="sec4dot4-jcm-11-02267">
+        <title>4.4. Limitations</title>
+        <p>The current study has some limitations. First, the number of samples was still small, so increasing the sample size and verifying the model through external data sets would be our next research direction. Then, although the brain atlas used in this study is limited to the cerebrum and did not involve the cerebellum, the performance of the models were excellent, and other brain atlas and functional activity of the cerebellum could be considered in the future. Third, we only discussed the availability of functional features for rs-fMRI in this study. Given the multi-modal characteristics of MRI, a future study that combined with other MRI features such as gray and white matter volume and white matter fiber tract connectivity for the prediction of CRCI in breast cancer would be beneficial.</p>
+      </sec>
+    </sec>
+    <sec sec-type="conclusions" id="sec5-jcm-11-02267">
+      <title>5. Conclusions</title>
+      <p>In this study, our findings demonstrated a valid machine learning approach using multiple rs-fMRI features that could effectively identify breast cancer patients with chemotherapy-related SCC from breast cancer patients without chemotherapy and healthy controls, providing potential neuroimaging evidence for early diagnosis of the occurrence of CRCI and clinical intervention in breast cancer patients.</p>
+    </sec>
+  </body>
+  <back>
+    <fn-group>
+      <fn>
+        <p><bold>Publisher’s Note:</bold> MDPI stays neutral with regard to jurisdictional claims in published maps and institutional affiliations.</p>
+      </fn>
+    </fn-group>
+    <notes>
+      <title>Author Contributions</title>
+      <p>Conceptualization, L.W. (Lei Wang), Y.Z. (Yanyan Zhu), L.W. (Lin Wu), Y.Z. (Ying Zhuang), J.Z. and F.Z.; methodology, L.W. (Lei Wang), Y.Z. (Ying Zhuang) and F.Z.; validation, L.W. (Lei Wang), Y.Z. (Yanyan Zhu), L.W. (Lin Wu), Y.Z. (Ying Zhuang), J.Z. and F.Z.; formal analysis, L.W. (Lei Wang), Y.Z. (Ying Zhuang) and F.Z.; investigation, L.W. (Lei Wang) and F.Z.; resources, Y.Z. (Ying Zhuang), J.Z. and F.Z.; data curation, L.W. (Lei Wang), Y.Z. (Yanyan Zhu) and L.W. (Lin Wu); writing—original draft preparation, L.W. (Lei Wang); writing—review and editing, Y.Z. (Ying Zhuang), J.Z. and F.Z.; visualization, L.W. (Lei Wang); supervision, L.W. (Lin Wu), Y.Z. (Ying Zhuang) and F.Z.; project administration, Y.Z. (Ying Zhuang), J.Z. and F.Z.; funding acquisition, Y.Z. (Ying Zhuang) and F.Z. All authors have read and agreed to the published version of the manuscript.</p>
+    </notes>
+    <notes>
+      <title>Funding</title>
+      <p>This research was funded by the General Project of Nanchang Science and Technology Bureau (Agreement No. [2019]258), Jiangxi Province Key Research and Development Project (Agreement No. 20192BBGL70034) and National Natural Science Found (Agreement No. 81771808).</p>
+    </notes>
+    <notes>
+      <title>Institutional Review Board Statement</title>
+      <p>The study was carried out in compliance with the principles of the Declaration of Helsinki of the World Medical Association and received consent from the Medical Research Ethics Committee and the Institutional Review Board of the First Affiliated Hospital of Nanchang University (Protocol number 2018039 from 1 July 2018).</p>
+    </notes>
+    <notes>
+      <title>Informed Consent Statement</title>
+      <p>Informed consent was obtained from all subjects involved in the study.</p>
+    </notes>
+    <notes notes-type="data-availability">
+      <title>Data Availability Statement</title>
+      <p>Not applicable.</p>
+    </notes>
+    <notes notes-type="COI-statement">
+      <title>Conflicts of Interest</title>
+      <p>The authors declare no conflict of interest.</p>
+    </notes>
+    <glossary>
+      <title>Abbreviations</title>
+      <p>rs-fMRI: resting-state functional magnetic resonance imaging; SCC, breast cancer patients with chemotherapy-related subjective cognitive complaints; BC, breast cancer patients with non-chemotherapy; HC, healthy controls; CRCI, chemotherapy-related cognitive impairment; FC, functional connectivity; DMN, default mode network; ALFF, amplitude of low frequency fluctuation; fALFF, fractional ALFF; ReHo, regional homogeneity; SVM, support vector machine; VMHC, voxel-mirrored homotopic connectivity; DC, degree centrality; FACT-Cog, Functional Assessment of Cancer Therapy-Cognitive Function; CWT, Stroop color-word test; AVLT, auditory verbal learning test; AAL, automated anatomical labeling; ROI, regions of interest; LASSO, least absolute shrinkage and selection operator; ROC, receiver operating characteristic; AUC, area under the curve; ANOVA, analysis of variance; SD, standard deviation; FPCN, frontal-parietal control network; SN, salience network; CON, cingular-opercular network; AN, auditory network; VN, visual network; L, left; R, right; VAN, ventral-attention network.</p>
+    </glossary>
+    <ref-list>
+      <title>References</title>
+      <ref id="B1-jcm-11-02267">
+        <label>1.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Siegel</surname><given-names>R.L.</given-names></name>
+<name><surname>Miller</surname><given-names>K.D.</given-names></name>
+<name><surname>Jemal</surname><given-names>A.</given-names></name>
+</person-group>
+          <article-title>Cancer statistics, 2020</article-title>
+          <source>CA Cancer J. Clin.</source>
+          <year>2020</year>
+          <volume>70</volume>
+          <fpage>7</fpage>
+          <lpage>30</lpage>
+          <pub-id pub-id-type="doi">10.3322/caac.21590</pub-id>
+          <pub-id pub-id-type="pmid">31912902</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B2-jcm-11-02267">
+        <label>2.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Lange</surname><given-names>M.</given-names></name>
+<name><surname>Licaj</surname><given-names>I.</given-names></name>
+<name><surname>Clarisse</surname><given-names>B.</given-names></name>
+<name><surname>Humbert</surname><given-names>X.</given-names></name>
+<name><surname>Grellard</surname><given-names>J.M.</given-names></name>
+<name><surname>Tron</surname><given-names>L.</given-names></name>
+<name><surname>Joly</surname><given-names>F.</given-names></name>
+</person-group>
+          <article-title>Cognitive complaints in cancer survivors and expectations for support: Results from a web-based survey</article-title>
+          <source>Cancer Med.</source>
+          <year>2019</year>
+          <volume>8</volume>
+          <fpage>2654</fpage>
+          <lpage>2663</lpage>
+          <pub-id pub-id-type="doi">10.1002/cam4.2069</pub-id>
+          <pub-id pub-id-type="pmid">30884207</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B3-jcm-11-02267">
+        <label>3.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Fitzmaurice</surname><given-names>C.</given-names></name>
+<name><surname>Abate</surname><given-names>D.</given-names></name>
+<name><surname>Abbasi</surname><given-names>N.</given-names></name>
+<name><surname>Abbastabar</surname><given-names>H.</given-names></name>
+<name><surname>Abd-Allah</surname><given-names>F.</given-names></name>
+<name><surname>Abdel-Rahman</surname><given-names>O.</given-names></name>
+<name><surname>Abdelalim</surname><given-names>A.</given-names></name>
+<name><surname>Abdoli</surname><given-names>A.</given-names></name>
+<name><surname>Abdollahpour</surname><given-names>I.</given-names></name>
+<name><surname>Abdulle</surname><given-names>A.S.M.</given-names></name>
+<etal/>
+</person-group>
+          <article-title>Global, Regional, and National Cancer Incidence, Mortality, Years of Life Lost, Years Lived with Disability, and Disability-Adjusted Life-Years for 29 Cancer Groups, 1990 to 2017: A Systematic Analysis for the Global Burden of Disease Study</article-title>
+          <source>JAMA Oncol.</source>
+          <year>2019</year>
+          <volume>5</volume>
+          <fpage>1749</fpage>
+          <lpage>1768</lpage>
+          <pub-id pub-id-type="doi">10.1001/jamaoncol.2019.2996</pub-id>
+          <pub-id pub-id-type="pmid">31560378</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B4-jcm-11-02267">
+        <label>4.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Gutmann</surname><given-names>D.H.</given-names></name>
+</person-group>
+          <article-title>Clearing the Fog surrounding Chemobrain</article-title>
+          <source>Cell</source>
+          <year>2019</year>
+          <volume>176</volume>
+          <fpage>2</fpage>
+          <lpage>4</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.cell.2018.12.027</pub-id>
+          <pub-id pub-id-type="pmid">30633904</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B5-jcm-11-02267">
+        <label>5.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Lepage</surname><given-names>C.</given-names></name>
+<name><surname>Smith</surname><given-names>A.M.</given-names></name>
+<name><surname>Moreau</surname><given-names>J.</given-names></name>
+<name><surname>Barlow-Krelina</surname><given-names>E.</given-names></name>
+<name><surname>Wallis</surname><given-names>N.</given-names></name>
+<name><surname>Collins</surname><given-names>B.</given-names></name>
+<name><surname>MacKenzie</surname><given-names>J.</given-names></name>
+<name><surname>Scherling</surname><given-names>C.</given-names></name>
+</person-group>
+          <article-title>A prospective study of grey matter and cognitive function alterations in chemotherapy-treated breast cancer patients</article-title>
+          <source>Springerplus</source>
+          <year>2014</year>
+          <volume>3</volume>
+          <fpage>444</fpage>
+          <pub-id pub-id-type="doi">10.1186/2193-1801-3-444</pub-id>
+          <pub-id pub-id-type="pmid">25184110</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B6-jcm-11-02267">
+        <label>6.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Li</surname><given-names>X.</given-names></name>
+<name><surname>Chen</surname><given-names>H.</given-names></name>
+<name><surname>Lv</surname><given-names>Y.</given-names></name>
+<name><surname>Chao</surname><given-names>H.H.</given-names></name>
+<name><surname>Gong</surname><given-names>L.</given-names></name>
+<name><surname>Li</surname><given-names>C.R.</given-names></name>
+<name><surname>Cheng</surname><given-names>H.</given-names></name>
+</person-group>
+          <article-title>Diminished gray matter density mediates chemotherapy dosage-related cognitive impairment in breast cancer patients</article-title>
+          <source>Sci. Rep.</source>
+          <year>2018</year>
+          <volume>8</volume>
+          <fpage>13801</fpage>
+          <pub-id pub-id-type="doi">10.1038/s41598-018-32257-w</pub-id>
+          <pub-id pub-id-type="pmid">30218006</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B7-jcm-11-02267">
+        <label>7.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Mo</surname><given-names>C.</given-names></name>
+<name><surname>Lin</surname><given-names>H.</given-names></name>
+<name><surname>Fu</surname><given-names>F.</given-names></name>
+<name><surname>Lin</surname><given-names>L.</given-names></name>
+<name><surname>Zhang</surname><given-names>J.</given-names></name>
+<name><surname>Huang</surname><given-names>M.</given-names></name>
+<name><surname>Wang</surname><given-names>C.</given-names></name>
+<name><surname>Xue</surname><given-names>Y.</given-names></name>
+<name><surname>Duan</surname><given-names>Q.</given-names></name>
+<name><surname>Lin</surname><given-names>W.</given-names></name>
+<etal/>
+</person-group>
+          <article-title>Chemotherapy-induced changes of cerebral activity in resting-state functional magnetic resonance imaging and cerebral white matter in diffusion tensor imaging</article-title>
+          <source>Oncotarget</source>
+          <year>2017</year>
+          <volume>8</volume>
+          <fpage>81273</fpage>
+          <lpage>81284</lpage>
+          <pub-id pub-id-type="doi">10.18632/oncotarget.18111</pub-id>
+          <pub-id pub-id-type="pmid">29113386</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B8-jcm-11-02267">
+        <label>8.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Tao</surname><given-names>L.</given-names></name>
+<name><surname>Lin</surname><given-names>H.</given-names></name>
+<name><surname>Yan</surname><given-names>Y.</given-names></name>
+<name><surname>Xu</surname><given-names>X.</given-names></name>
+<name><surname>Wang</surname><given-names>L.</given-names></name>
+<name><surname>Zhang</surname><given-names>J.</given-names></name>
+<name><surname>Yu</surname><given-names>Y.</given-names></name>
+</person-group>
+          <article-title>Impairment of the executive function in breast cancer patients receiving chemotherapy treatment: A functional MRI study</article-title>
+          <source>Eur. J. Cancer Care</source>
+          <year>2017</year>
+          <volume>26</volume>
+          <fpage>e12553</fpage>
+          <pub-id pub-id-type="doi">10.1111/ecc.12553</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B9-jcm-11-02267">
+        <label>9.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Chen</surname><given-names>B.T.</given-names></name>
+<name><surname>Jin</surname><given-names>T.</given-names></name>
+<name><surname>Patel</surname><given-names>S.K.</given-names></name>
+<name><surname>Ye</surname><given-names>N.</given-names></name>
+<name><surname>Ma</surname><given-names>H.</given-names></name>
+<name><surname>Wong</surname><given-names>C.W.</given-names></name>
+<name><surname>Rockne</surname><given-names>R.C.</given-names></name>
+<name><surname>Root</surname><given-names>J.C.</given-names></name>
+<name><surname>Saykin</surname><given-names>A.J.</given-names></name>
+<name><surname>Ahles</surname><given-names>T.A.</given-names></name>
+<etal/>
+</person-group>
+          <article-title>Intrinsic brain activity changes associated with adjuvant chemotherapy in older women with breast cancer: A pilot longitudinal study</article-title>
+          <source>Breast Cancer Res. Treat.</source>
+          <year>2019</year>
+          <volume>176</volume>
+          <fpage>181</fpage>
+          <lpage>189</lpage>
+          <pub-id pub-id-type="doi">10.1007/s10549-019-05230-y</pub-id>
+          <pub-id pub-id-type="pmid">30989462</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B10-jcm-11-02267">
+        <label>10.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Miao</surname><given-names>H.</given-names></name>
+<name><surname>Chen</surname><given-names>X.</given-names></name>
+<name><surname>Yan</surname><given-names>Y.</given-names></name>
+<name><surname>He</surname><given-names>X.</given-names></name>
+<name><surname>Hu</surname><given-names>S.</given-names></name>
+<name><surname>Kong</surname><given-names>J.</given-names></name>
+<name><surname>Wu</surname><given-names>M.</given-names></name>
+<name><surname>Wei</surname><given-names>Y.</given-names></name>
+<name><surname>Zhou</surname><given-names>Y.</given-names></name>
+<name><surname>Wang</surname><given-names>L.</given-names></name>
+<etal/>
+</person-group>
+          <article-title>Functional connectivity change of brain default mode network in breast cancer patients after chemotherapy</article-title>
+          <source>Neuroradiology</source>
+          <year>2016</year>
+          <volume>58</volume>
+          <fpage>921</fpage>
+          <lpage>928</lpage>
+          <pub-id pub-id-type="doi">10.1007/s00234-016-1708-8</pub-id>
+          <pub-id pub-id-type="pmid">27278455</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B11-jcm-11-02267">
+        <label>11.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Dumas</surname><given-names>J.A.</given-names></name>
+<name><surname>Makarewicz</surname><given-names>J.</given-names></name>
+<name><surname>Schaubhut</surname><given-names>G.J.</given-names></name>
+<name><surname>Devins</surname><given-names>R.</given-names></name>
+<name><surname>Albert</surname><given-names>K.</given-names></name>
+<name><surname>Dittus</surname><given-names>K.</given-names></name>
+<name><surname>Newhouse</surname><given-names>P.A.</given-names></name>
+</person-group>
+          <article-title>Chemotherapy altered brain functional connectivity in women with breast cancer: A pilot study</article-title>
+          <source>Brain Imaging Behav.</source>
+          <year>2013</year>
+          <volume>7</volume>
+          <fpage>524</fpage>
+          <lpage>532</lpage>
+          <pub-id pub-id-type="doi">10.1007/s11682-013-9244-1</pub-id>
+          <pub-id pub-id-type="pmid">23852814</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B12-jcm-11-02267">
+        <label>12.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Apple</surname><given-names>A.C.</given-names></name>
+<name><surname>Schroeder</surname><given-names>M.P.</given-names></name>
+<name><surname>Ryals</surname><given-names>A.J.</given-names></name>
+<name><surname>Wagner</surname><given-names>L.I.</given-names></name>
+<name><surname>Cella</surname><given-names>D.</given-names></name>
+<name><surname>Shih</surname><given-names>P.A.</given-names></name>
+<name><surname>Reilly</surname><given-names>J.</given-names></name>
+<name><surname>Penedo</surname><given-names>F.J.</given-names></name>
+<name><surname>Voss</surname><given-names>J.L.</given-names></name>
+<name><surname>Wang</surname><given-names>L.</given-names></name>
+</person-group>
+          <article-title>Hippocampal functional connectivity is related to self-reported cognitive concerns in breast cancer patients undergoing adjuvant therapy</article-title>
+          <source>Neuroimage Clin.</source>
+          <year>2018</year>
+          <volume>20</volume>
+          <fpage>110</fpage>
+          <lpage>118</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.nicl.2018.07.010</pub-id>
+          <pub-id pub-id-type="pmid">30094161</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B13-jcm-11-02267">
+        <label>13.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Kesler</surname><given-names>S.R.</given-names></name>
+<name><surname>Wefel</surname><given-names>J.S.</given-names></name>
+<name><surname>Hosseini</surname><given-names>S.M.</given-names></name>
+<name><surname>Cheung</surname><given-names>M.</given-names></name>
+<name><surname>Watson</surname><given-names>C.L.</given-names></name>
+<name><surname>Hoeft</surname><given-names>F.</given-names></name>
+</person-group>
+          <article-title>Default mode network connectivity distinguishes chemotherapy-treated breast cancer survivors from controls</article-title>
+          <source>Proc. Natl. Acad. Sci. USA</source>
+          <year>2013</year>
+          <volume>110</volume>
+          <fpage>11600</fpage>
+          <lpage>11605</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.1214551110</pub-id>
+          <pub-id pub-id-type="pmid">23798392</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B14-jcm-11-02267">
+        <label>14.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Dai</surname><given-names>Z.</given-names></name>
+<name><surname>Yan</surname><given-names>C.</given-names></name>
+<name><surname>Wang</surname><given-names>Z.</given-names></name>
+<name><surname>Wang</surname><given-names>J.</given-names></name>
+<name><surname>Xia</surname><given-names>M.</given-names></name>
+<name><surname>Li</surname><given-names>K.</given-names></name>
+<name><surname>He</surname><given-names>Y.</given-names></name>
+</person-group>
+          <article-title>Discriminative analysis of early Alzheimer’s disease using multi-modal imaging and multi-level characterization with multi-classifier (M3)</article-title>
+          <source>Neuroimage</source>
+          <year>2012</year>
+          <volume>59</volume>
+          <fpage>2187</fpage>
+          <lpage>2195</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2011.10.003</pub-id>
+          <pub-id pub-id-type="pmid">22008370</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B15-jcm-11-02267">
+        <label>15.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>de Vos</surname><given-names>F.</given-names></name>
+<name><surname>Koini</surname><given-names>M.</given-names></name>
+<name><surname>Schouten</surname><given-names>T.M.</given-names></name>
+<name><surname>Seiler</surname><given-names>S.</given-names></name>
+<name><surname>van der Grond</surname><given-names>J.</given-names></name>
+<name><surname>Lechner</surname><given-names>A.</given-names></name>
+<name><surname>Schmidt</surname><given-names>R.</given-names></name>
+<name><surname>de Rooij</surname><given-names>M.</given-names></name>
+<name><surname>Rombouts</surname><given-names>S.</given-names></name>
+</person-group>
+          <article-title>A comprehensive analysis of resting state fMRI measures to classify individual patients with Alzheimer’s disease</article-title>
+          <source>Neuroimage</source>
+          <year>2018</year>
+          <volume>167</volume>
+          <fpage>62</fpage>
+          <lpage>72</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2017.11.025</pub-id>
+          <pub-id pub-id-type="pmid">29155080</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B16-jcm-11-02267">
+        <label>16.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Wagner</surname><given-names>L.I.</given-names></name>
+<name><surname>Sweet</surname><given-names>J.</given-names></name>
+<name><surname>Butt</surname><given-names>Z.</given-names></name>
+<name><surname>Lai</surname><given-names>J.S.</given-names></name>
+<name><surname>Cella</surname><given-names>D.</given-names></name>
+</person-group>
+          <article-title>Measuring patient self-reported cognitive function: Development of the Functional Assessment of Cancer Therapy–Cognitive Function Instrument</article-title>
+          <source>J. Support Oncol.</source>
+          <year>2009</year>
+          <volume>7</volume>
+          <fpage>W32</fpage>
+          <lpage>W39</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B17-jcm-11-02267">
+        <label>17.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Yu</surname><given-names>J.</given-names></name>
+<name><surname>Li</surname><given-names>J.</given-names></name>
+<name><surname>Huang</surname><given-names>X.</given-names></name>
+</person-group>
+          <article-title>The Beijing version of the Montreal Cognitive Assessment as a brief screening tool for mild cognitive impairment: A community-based study</article-title>
+          <source>BMC Psychiatry</source>
+          <year>2012</year>
+          <volume>12</volume>
+          <elocation-id>156</elocation-id>
+          <pub-id pub-id-type="doi">10.1186/1471-244X-12-156</pub-id>
+          <pub-id pub-id-type="pmid">23009126</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B18-jcm-11-02267">
+        <label>18.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Llinas-Regla</surname><given-names>J.</given-names></name>
+<name><surname>Vilalta-Franch</surname><given-names>J.</given-names></name>
+<name><surname>Lopez-Pousa</surname><given-names>S.</given-names></name>
+<name><surname>Calvo-Perxas</surname><given-names>L.</given-names></name>
+<name><surname>Torrents Rodas</surname><given-names>D.</given-names></name>
+<name><surname>Garre-Olmo</surname><given-names>J.</given-names></name>
+</person-group>
+          <article-title>The Trail Making Test: Association with other neuropsychological measures and normative values for adults aged 55 years and older from a Spanish-speaking population-based sample</article-title>
+          <source>Assessment</source>
+          <year>2017</year>
+          <volume>24</volume>
+          <fpage>183</fpage>
+          <lpage>196</lpage>
+          <pub-id pub-id-type="doi">10.1177/1073191115602552</pub-id>
+          <pub-id pub-id-type="pmid">26318386</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B19-jcm-11-02267">
+        <label>19.</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+<name><surname>Strauss</surname><given-names>E.</given-names></name>
+<name><surname>Sherman</surname><given-names>E.M.</given-names></name>
+<name><surname>Spreen</surname><given-names>O.</given-names></name>
+</person-group>
+          <source>A Compendium of Neuropsychological Tests: Administration, Norms and Commentary</source>
+          <publisher-name>American Chemical Society</publisher-name>
+          <publisher-loc>Washington, DC, USA</publisher-loc>
+          <year>2006</year>
+        </element-citation>
+      </ref>
+      <ref id="B20-jcm-11-02267">
+        <label>20.</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+<name><surname>Rey</surname><given-names>A.</given-names></name>
+</person-group>
+          <article-title>L’examen clinique en psychologie</article-title>
+          <source>The Clinical Examination in Psychology</source>
+          <publisher-name>Presses Universitaries De France</publisher-name>
+          <publisher-loc>Oxford, UK</publisher-loc>
+          <year>1958</year>
+          <fpage>222</fpage>
+        </element-citation>
+      </ref>
+      <ref id="B21-jcm-11-02267">
+        <label>21.</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+<name><surname>Smith</surname><given-names>A.</given-names></name>
+</person-group>
+          <source>Symbol Digit Modalities Test</source>
+          <publisher-name>Western Psychological Services</publisher-name>
+          <publisher-loc>Los Angeles, CA, USA</publisher-loc>
+          <year>1973</year>
+        </element-citation>
+      </ref>
+      <ref id="B22-jcm-11-02267">
+        <label>22.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Brodaty</surname><given-names>H.</given-names></name>
+<name><surname>Moore</surname><given-names>C.M.</given-names></name>
+</person-group>
+          <article-title>The Clock Drawing Test for dementia of the Alzheimer’s type: A comparison of three scoring methods in a memory disorders clinic</article-title>
+          <source>Int. J. Geriatr. Psychiatry</source>
+          <year>1997</year>
+          <volume>12</volume>
+          <fpage>619</fpage>
+          <lpage>627</lpage>
+          <pub-id pub-id-type="doi">10.1002/(SICI)1099-1166(199706)12:6&lt;619::AID-GPS554&gt;3.0.CO;2-H</pub-id>
+          <pub-id pub-id-type="pmid">9215942</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B23-jcm-11-02267">
+        <label>23.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Bosscher</surname><given-names>R.J.</given-names></name>
+<name><surname>Koning</surname><given-names>H.</given-names></name>
+<name><surname>Van Meurs</surname><given-names>R.</given-names></name>
+</person-group>
+          <article-title>Reliability and validity of the Beck Depression Inventory in a Dutch college population</article-title>
+          <source>Psychol. Rep.</source>
+          <year>1986</year>
+          <volume>58</volume>
+          <fpage>696</fpage>
+          <lpage>698</lpage>
+          <pub-id pub-id-type="doi">10.2466/pr0.1986.58.3.696</pub-id>
+          <pub-id pub-id-type="pmid">3726019</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B24-jcm-11-02267">
+        <label>24.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Yan</surname><given-names>C.-G.</given-names></name>
+<name><surname>Zang</surname><given-names>Y.</given-names></name>
+</person-group>
+          <article-title>DPARSF: A MATLAB Toolbox for “Pipeline” Data Analysis of Resting-State fMRI</article-title>
+          <source>Front. Syst. Neurosci.</source>
+          <year>2010</year>
+          <volume>4</volume>
+          <fpage>13</fpage>
+          <pub-id pub-id-type="doi">10.3389/fnsys.2010.00013</pub-id>
+          <pub-id pub-id-type="pmid">20577591</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B25-jcm-11-02267">
+        <label>25.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Chang</surname><given-names>C.-C.</given-names></name>
+<name><surname>Lin</surname><given-names>C.-J.</given-names></name>
+</person-group>
+          <article-title>LIBSVM: A library for support vector machines</article-title>
+          <source>ACM Trans. Intell. Syst. Technol.</source>
+          <year>2011</year>
+          <volume>2</volume>
+          <fpage>27</fpage>
+          <pub-id pub-id-type="doi">10.1145/1961189.1961199</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B26-jcm-11-02267">
+        <label>26.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Hosseini</surname><given-names>S.M.</given-names></name>
+<name><surname>Kesler</surname><given-names>S.R.</given-names></name>
+</person-group>
+          <article-title>Multivariate pattern analysis of FMRI in breast cancer survivors and healthy women</article-title>
+          <source>J. Int. Neuropsychol. Soc.</source>
+          <year>2014</year>
+          <volume>20</volume>
+          <fpage>391</fpage>
+          <lpage>401</lpage>
+          <pub-id pub-id-type="doi">10.1017/S1355617713001173</pub-id>
+          <pub-id pub-id-type="pmid">24135221</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B27-jcm-11-02267">
+        <label>27.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Kesler</surname><given-names>S.R.</given-names></name>
+<name><surname>Petersen</surname><given-names>M.L.</given-names></name>
+<name><surname>Rao</surname><given-names>V.</given-names></name>
+<name><surname>Harrison</surname><given-names>R.A.</given-names></name>
+<name><surname>Palesh</surname><given-names>O.</given-names></name>
+</person-group>
+          <article-title>Functional connectome biotypes of chemotherapy-related cognitive impairment</article-title>
+          <source>J. Cancer Surviv.</source>
+          <year>2020</year>
+          <volume>14</volume>
+          <fpage>483</fpage>
+          <lpage>493</lpage>
+          <pub-id pub-id-type="doi">10.1007/s11764-020-00863-1</pub-id>
+          <pub-id pub-id-type="pmid">32157609</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B28-jcm-11-02267">
+        <label>28.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Shen</surname><given-names>X.</given-names></name>
+<name><surname>Finn</surname><given-names>E.S.</given-names></name>
+<name><surname>Scheinost</surname><given-names>D.</given-names></name>
+<name><surname>Rosenberg</surname><given-names>M.D.</given-names></name>
+<name><surname>Chun</surname><given-names>M.M.</given-names></name>
+<name><surname>Papademetris</surname><given-names>X.</given-names></name>
+<name><surname>Constable</surname><given-names>R.T.</given-names></name>
+</person-group>
+          <article-title>Using connectome-based predictive modeling to predict individual behavior from brain connectivity</article-title>
+          <source>Nat. Protoc.</source>
+          <year>2017</year>
+          <volume>12</volume>
+          <fpage>506</fpage>
+          <lpage>518</lpage>
+          <pub-id pub-id-type="doi">10.1038/nprot.2016.178</pub-id>
+          <pub-id pub-id-type="pmid">28182017</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B29-jcm-11-02267">
+        <label>29.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Chen</surname><given-names>V.C.</given-names></name>
+<name><surname>Lin</surname><given-names>T.Y.</given-names></name>
+<name><surname>Yeh</surname><given-names>D.C.</given-names></name>
+<name><surname>Chai</surname><given-names>J.W.</given-names></name>
+<name><surname>Weng</surname><given-names>J.C.</given-names></name>
+</person-group>
+          <article-title>Predicting chemo-brain in breast cancer survivors using multiple MRI features and machine-learning</article-title>
+          <source>Magn. Reson. Med.</source>
+          <year>2019</year>
+          <volume>81</volume>
+          <fpage>3304</fpage>
+          <lpage>3313</lpage>
+          <pub-id pub-id-type="doi">10.1002/mrm.27607</pub-id>
+          <pub-id pub-id-type="pmid">30417933</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B30-jcm-11-02267">
+        <label>30.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Chen</surname><given-names>V.C.</given-names></name>
+<name><surname>Lin</surname><given-names>T.Y.</given-names></name>
+<name><surname>Yeh</surname><given-names>D.C.</given-names></name>
+<name><surname>Chai</surname><given-names>J.W.</given-names></name>
+<name><surname>Weng</surname><given-names>J.C.</given-names></name>
+</person-group>
+          <article-title>Functional and Structural Connectome Features for Machine Learning Chemo-Brain Prediction in Women Treated for Breast Cancer with Chemotherapy</article-title>
+          <source>Brain Sci.</source>
+          <year>2020</year>
+          <volume>10</volume>
+          <elocation-id>851</elocation-id>
+          <pub-id pub-id-type="doi">10.3390/brainsci10110851</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B31-jcm-11-02267">
+        <label>31.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Raichle</surname><given-names>M.E.</given-names></name>
+</person-group>
+          <article-title>The Brain’s Default Mode Network</article-title>
+          <source>Annu. Rev. Neurosci.</source>
+          <year>2015</year>
+          <volume>38</volume>
+          <fpage>433</fpage>
+          <lpage>447</lpage>
+          <pub-id pub-id-type="doi">10.1146/annurev-neuro-071013-014030</pub-id>
+          <pub-id pub-id-type="pmid">25938726</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B32-jcm-11-02267">
+        <label>32.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Anticevic</surname><given-names>A.</given-names></name>
+<name><surname>Cole</surname><given-names>M.W.</given-names></name>
+<name><surname>Murray</surname><given-names>J.D.</given-names></name>
+<name><surname>Corlett</surname><given-names>P.R.</given-names></name>
+<name><surname>Wang</surname><given-names>X.J.</given-names></name>
+<name><surname>Krystal</surname><given-names>J.H.</given-names></name>
+</person-group>
+          <article-title>The role of default network deactivation in cognition and disease</article-title>
+          <source>Trends Cogn. Sci.</source>
+          <year>2012</year>
+          <volume>16</volume>
+          <fpage>584</fpage>
+          <lpage>592</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.tics.2012.10.008</pub-id>
+          <pub-id pub-id-type="pmid">23142417</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B33-jcm-11-02267">
+        <label>33.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Feng</surname><given-names>Y.</given-names></name>
+<name><surname>Tuluhong</surname><given-names>D.</given-names></name>
+<name><surname>Shi</surname><given-names>Z.</given-names></name>
+<name><surname>Zheng</surname><given-names>L.J.</given-names></name>
+<name><surname>Chen</surname><given-names>T.</given-names></name>
+<name><surname>Lu</surname><given-names>G.M.</given-names></name>
+<name><surname>Wang</surname><given-names>S.</given-names></name>
+<name><surname>Zhang</surname><given-names>L.J.</given-names></name>
+</person-group>
+          <article-title>Postchemotherapy hippocampal functional connectivity patterns in patients with breast cancer: A longitudinal resting state functional MR imaging study</article-title>
+          <source>Brain Imaging Behav.</source>
+          <year>2020</year>
+          <volume>14</volume>
+          <fpage>1456</fpage>
+          <lpage>1467</lpage>
+          <pub-id pub-id-type="doi">10.1007/s11682-019-00067-x</pub-id>
+          <pub-id pub-id-type="pmid">30877468</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B34-jcm-11-02267">
+        <label>34.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Johnson</surname><given-names>M.H.</given-names></name>
+</person-group>
+          <article-title>Subcortical face processing</article-title>
+          <source>Nat. Rev. Neurosci.</source>
+          <year>2005</year>
+          <volume>6</volume>
+          <fpage>766</fpage>
+          <lpage>774</lpage>
+          <pub-id pub-id-type="doi">10.1038/nrn1766</pub-id>
+          <pub-id pub-id-type="pmid">16276354</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B35-jcm-11-02267">
+        <label>35.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Utter</surname><given-names>A.A.</given-names></name>
+<name><surname>Basso</surname><given-names>M.A.</given-names></name>
+</person-group>
+          <article-title>The basal ganglia: An overview of circuits and function</article-title>
+          <source>Neurosci. Biobehav. Rev.</source>
+          <year>2008</year>
+          <volume>32</volume>
+          <fpage>333</fpage>
+          <lpage>342</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neubiorev.2006.11.003</pub-id>
+          <pub-id pub-id-type="pmid">17202023</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B36-jcm-11-02267">
+        <label>36.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Berridge</surname><given-names>K.C.</given-names></name>
+<name><surname>Kringelbach</surname><given-names>M.L.</given-names></name>
+</person-group>
+          <article-title>Pleasure systems in the brain</article-title>
+          <source>Neuron</source>
+          <year>2015</year>
+          <volume>86</volume>
+          <fpage>646</fpage>
+          <lpage>664</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuron.2015.02.018</pub-id>
+          <pub-id pub-id-type="pmid">25950633</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B37-jcm-11-02267">
+        <label>37.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Bickart</surname><given-names>K.C.</given-names></name>
+<name><surname>Wright</surname><given-names>C.I.</given-names></name>
+<name><surname>Dautoff</surname><given-names>R.J.</given-names></name>
+<name><surname>Dickerson</surname><given-names>B.C.</given-names></name>
+<name><surname>Barrett</surname><given-names>L.F.</given-names></name>
+</person-group>
+          <article-title>Amygdala volume and social network size in humans</article-title>
+          <source>Nat. Neurosci.</source>
+          <year>2011</year>
+          <volume>14</volume>
+          <fpage>163</fpage>
+          <lpage>164</lpage>
+          <pub-id pub-id-type="doi">10.1038/nn.2724</pub-id>
+          <pub-id pub-id-type="pmid">21186358</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B38-jcm-11-02267">
+        <label>38.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Vincent</surname><given-names>J.L.</given-names></name>
+<name><surname>Kahn</surname><given-names>I.</given-names></name>
+<name><surname>Snyder</surname><given-names>A.Z.</given-names></name>
+<name><surname>Raichle</surname><given-names>M.E.</given-names></name>
+<name><surname>Buckner</surname><given-names>R.L.</given-names></name>
+</person-group>
+          <article-title>Evidence for a Frontoparietal Control System Revealed by Intrinsic Functional Connectivity</article-title>
+          <source>J. Neurophysiol.</source>
+          <year>2008</year>
+          <volume>100</volume>
+          <fpage>3328</fpage>
+          <lpage>3342</lpage>
+          <pub-id pub-id-type="doi">10.1152/jn.90355.2008</pub-id>
+          <pub-id pub-id-type="pmid">18799601</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B39-jcm-11-02267">
+        <label>39.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Miao</surname><given-names>H.</given-names></name>
+<name><surname>Li</surname><given-names>J.</given-names></name>
+<name><surname>Hu</surname><given-names>S.</given-names></name>
+<name><surname>He</surname><given-names>X.</given-names></name>
+<name><surname>Partridge</surname><given-names>S.C.</given-names></name>
+<name><surname>Ren</surname><given-names>J.</given-names></name>
+<name><surname>Bian</surname><given-names>Y.</given-names></name>
+<name><surname>Yu</surname><given-names>Y.</given-names></name>
+<name><surname>Qiu</surname><given-names>B.</given-names></name>
+</person-group>
+          <article-title>Long-term cognitive impairment of breast cancer patients after chemotherapy: A functional MRI study</article-title>
+          <source>Eur. J. Radiol.</source>
+          <year>2016</year>
+          <volume>85</volume>
+          <fpage>1053</fpage>
+          <lpage>1057</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.ejrad.2016.03.011</pub-id>
+          <pub-id pub-id-type="pmid">27161051</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B40-jcm-11-02267">
+        <label>40.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Chen</surname><given-names>V.C.</given-names></name>
+<name><surname>Lin</surname><given-names>K.Y.</given-names></name>
+<name><surname>Tsai</surname><given-names>Y.H.</given-names></name>
+<name><surname>Weng</surname><given-names>J.C.</given-names></name>
+</person-group>
+          <article-title>Connectome analysis of brain functional network alterations in breast cancer survivors with and without chemotherapy</article-title>
+          <source>PLoS ONE</source>
+          <year>2020</year>
+          <volume>15</volume>
+          <elocation-id>e0232548</elocation-id>
+          <pub-id pub-id-type="doi">10.1371/journal.pone.0232548</pub-id>
+          <pub-id pub-id-type="pmid">32365133</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B41-jcm-11-02267">
+        <label>41.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Dosenbach</surname><given-names>N.U.</given-names></name>
+<name><surname>Fair</surname><given-names>D.A.</given-names></name>
+<name><surname>Miezin</surname><given-names>F.M.</given-names></name>
+<name><surname>Cohen</surname><given-names>A.L.</given-names></name>
+<name><surname>Wenger</surname><given-names>K.K.</given-names></name>
+<name><surname>Dosenbach</surname><given-names>R.A.</given-names></name>
+<name><surname>Fox</surname><given-names>M.D.</given-names></name>
+<name><surname>Snyder</surname><given-names>A.Z.</given-names></name>
+<name><surname>Vincent</surname><given-names>J.L.</given-names></name>
+<name><surname>Raichle</surname><given-names>M.E.</given-names></name>
+<etal/>
+</person-group>
+          <article-title>Distinct brain networks for adaptive and stable task control in humans</article-title>
+          <source>Proc. Natl. Acad. Sci. USA</source>
+          <year>2007</year>
+          <volume>104</volume>
+          <fpage>11073</fpage>
+          <lpage>11078</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.0704320104</pub-id>
+          <pub-id pub-id-type="pmid">17576922</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B42-jcm-11-02267">
+        <label>42.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Sridharan</surname><given-names>D.</given-names></name>
+<name><surname>Levitin</surname><given-names>D.J.</given-names></name>
+<name><surname>Menon</surname><given-names>V.</given-names></name>
+</person-group>
+          <article-title>A critical role for the right fronto-insular cortex in switching between central-executive and default-mode networks</article-title>
+          <source>Proc. Natl. Acad. Sci. USA</source>
+          <year>2008</year>
+          <volume>105</volume>
+          <fpage>12569</fpage>
+          <lpage>12574</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.0800005105</pub-id>
+          <pub-id pub-id-type="pmid">18723676</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B43-jcm-11-02267">
+        <label>43.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Pergolizzi</surname><given-names>D.</given-names></name>
+<name><surname>Root</surname><given-names>J.C.</given-names></name>
+<name><surname>Pan</surname><given-names>H.</given-names></name>
+<name><surname>Silbersweig</surname><given-names>D.</given-names></name>
+<name><surname>Stern</surname><given-names>E.</given-names></name>
+<name><surname>Passik</surname><given-names>S.D.</given-names></name>
+<name><surname>Ahles</surname><given-names>T.A.</given-names></name>
+</person-group>
+          <article-title>Episodic memory for visual scenes suggests compensatory brain activity in breast cancer patients: A prospective longitudinal fMRI study</article-title>
+          <source>Brain Imaging Behav.</source>
+          <year>2019</year>
+          <volume>13</volume>
+          <fpage>1674</fpage>
+          <lpage>1688</lpage>
+          <pub-id pub-id-type="doi">10.1007/s11682-019-00038-2</pub-id>
+          <pub-id pub-id-type="pmid">30680610</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B44-jcm-11-02267">
+        <label>44.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Ahles</surname><given-names>T.A.</given-names></name>
+<name><surname>Root</surname><given-names>J.C.</given-names></name>
+<name><surname>Ryan</surname><given-names>E.L.</given-names></name>
+</person-group>
+          <article-title>Cancer- and cancer treatment-associated cognitive change: An update on the state of the science</article-title>
+          <source>J. Clin. Oncol.</source>
+          <year>2012</year>
+          <volume>30</volume>
+          <fpage>3675</fpage>
+          <lpage>3686</lpage>
+          <pub-id pub-id-type="doi">10.1200/JCO.2012.43.0116</pub-id>
+          <pub-id pub-id-type="pmid">23008308</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B45-jcm-11-02267">
+        <label>45.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Cheung</surname><given-names>Y.T.</given-names></name>
+<name><surname>Foo</surname><given-names>Y.L.</given-names></name>
+<name><surname>Shwe</surname><given-names>M.</given-names></name>
+<name><surname>Tan</surname><given-names>Y.P.</given-names></name>
+<name><surname>Fan</surname><given-names>G.</given-names></name>
+<name><surname>Yong</surname><given-names>W.S.</given-names></name>
+<name><surname>Madhukumar</surname><given-names>P.</given-names></name>
+<name><surname>Ooi</surname><given-names>W.S.</given-names></name>
+<name><surname>Chay</surname><given-names>W.Y.</given-names></name>
+<name><surname>Dent</surname><given-names>R.A.</given-names></name>
+<etal/>
+</person-group>
+          <article-title>Minimal clinically important difference (MCID) for the functional assessment of cancer therapy: Cognitive function (FACT-Cog) in breast cancer patients</article-title>
+          <source>J. Clin. Epidemiol.</source>
+          <year>2014</year>
+          <volume>67</volume>
+          <fpage>811</fpage>
+          <lpage>820</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.jclinepi.2013.12.011</pub-id>
+          <pub-id pub-id-type="pmid">24656406</pub-id>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+  <floats-group>
+    <fig position="float" id="jcm-11-02267-f001">
+      <label>Figure 1</label>
+      <caption>
+        <p>The selected FC features for discriminating the SCC from BC group. Part (<bold>a</bold>) showed the distribution of FC features in different brain network regions, and part (<bold>b</bold>) showed the spatial distribution of the FC features across the brain. Abbreviations: DMN, default mode network; FPCN, frontal-parietal control network; SN, salience network; CON, cingular-opercular network; AN, auditory network; VN, visual network; L, left; R, right.</p>
+      </caption>
+      <graphic xlink:href="jcm-11-02267-g001" position="float"/>
+    </fig>
+    <fig position="float" id="jcm-11-02267-f002">
+      <label>Figure 2</label>
+      <caption>
+        <p>The selected ALFF, fALFF, ReHo and VMHC features for discriminating the SCC from BC group. Abbreviations: ALFF, amplitude of low frequency fluctuation; fALFF, fractional ALFF; ReHo, regional homogeneity; VMHC, voxel-mirrored homotopic connectivity; L, left; R, right.</p>
+      </caption>
+      <graphic xlink:href="jcm-11-02267-g002" position="float"/>
+    </fig>
+    <fig position="float" id="jcm-11-02267-f003">
+      <label>Figure 3</label>
+      <caption>
+        <p>The selected rs-fMRI features set for discriminating the SCC from HC group. Part (<bold>a</bold>) showed the FC features, and part (<bold>b</bold>) showed the ALFF, fALFF, ReHo and DC features. Abbreviations: ALFF, amplitude of low frequency fluctuation; fALFF, fractional ALFF; ReHo, regional homogeneity; DC, degree centrality; L, left; R, right.</p>
+      </caption>
+      <graphic xlink:href="jcm-11-02267-g003" position="float"/>
+    </fig>
+    <fig position="float" id="jcm-11-02267-f004">
+      <label>Figure 4</label>
+      <caption>
+        <p>The ROC curves of SVM models. Part (<bold>a</bold>) showed ROC curves of SVM models for discriminating the SCC from BC group, and part (<bold>b</bold>) showed ROC curves of SVM models for discriminating the SCC from HC group. Abbreviations: ROC, receiver operating characteristic; AUC, area under the curve.</p>
+      </caption>
+      <graphic xlink:href="jcm-11-02267-g004" position="float"/>
+    </fig>
+    <table-wrap position="float" id="jcm-11-02267-t001">
+      <object-id pub-id-type="pii">jcm-11-02267-t001_Table 1</object-id>
+      <label>Table 1</label>
+      <caption>
+        <p>Comparison of clinical characteristics and cognitive function among the three groups.</p>
+      </caption>
+      <table frame="hsides" rules="groups">
+        <thead>
+          <tr>
+            <th align="center" valign="middle" style="border-top:solid thin" rowspan="1" colspan="1">
+</th>
+            <th colspan="2" align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1">SCC (N = 40)</th>
+            <th colspan="2" align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1">BC (N = 49)</th>
+            <th colspan="2" align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1">HC (N = 34)</th>
+            <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1"><italic toggle="yes">p</italic> Values</th>
+          </tr>
+          <tr>
+            <th align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+</th>
+            <th align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Mean</th>
+            <th align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">SD</th>
+            <th align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Mean</th>
+            <th align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">SD</th>
+            <th align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Mean</th>
+            <th align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">SD</th>
+            <th align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Age (years)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">47.85</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">6.87</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">46.98</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">6.64</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">46.38</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">9.88</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.712</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Education (years)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">4.60</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">3.63</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">5.58</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">3.86</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">5.74</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">3.12</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.317</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Stage of tumor (I, II, III, IV)</td>
+            <td colspan="2" align="center" valign="middle" rowspan="1">0, 24, 15, 1</td>
+            <td colspan="2" align="center" valign="middle" rowspan="1">8, 27, 11, 3</td>
+            <td colspan="2" align="center" valign="middle" rowspan="1">
+</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">
+</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">From the start of chemotherapy (days)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">205.21</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">272.17</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">
+</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Head motion (mm)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.11</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.05</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.10</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.04</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.10</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.05</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.585</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Beck Depression Inventory scores</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">14.63</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">7.91</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">12.04</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">9.50</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.173</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">FACT-Cog total scores</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">95.89</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">16.44</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">106.94</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">10.95</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">&lt;0.001</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1"> Perceived cognitive impairment</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">53.13</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">9.74</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">60.79</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">6.39</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">&lt;0.001</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1"> Quality of life</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">12.23</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">3.02</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">13.31</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">3.40</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.120</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1"> Comments from others</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">14.13</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">2.63</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">15.42</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">1.03</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.002</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1"> Perceived cognitive abilities</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">16.41</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">3.66</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">17.42</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">3.80</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.210</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Montreal Cognitive Assessment scores</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">20.83</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">4.52</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">20.51</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">4.44</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.742</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Trail making test—A (s)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">36.28</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">57.23</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">20.40</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">21.04</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.163</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Trail making test—B (s)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">198.10</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">89.21</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">186.66</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">84.47</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.638</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">CWT—word test (s)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">31.16</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">18.29</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">28.95</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">11.66</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.525</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">CWT—color test (s)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">40.22</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">9.19</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">41.09</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">14.49</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.766</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">CWT—color-word test (s)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">78.69</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">20.69</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">74.57</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">23.06</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.425</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">AVLT—immediate recall</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">40.23</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">12.37</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">40.45</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">11.14</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.944</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">AVLT—delayed recall</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">9.88</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">3.56</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">9.16</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">3.03</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.311</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Clock drawing test</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">19.08</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">6.15</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">20.72</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">7.84</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.284</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Symbol digital modalities test</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">29.79</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">14.42</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">32.79</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">14.78</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.344</td>
+          </tr>
+        </tbody>
+      </table>
+      <table-wrap-foot>
+        <fn>
+          <p>Abbreviations: SCC, breast cancer patients with postoperative chemotherapy-related subjective cognitive complaints; BC, breast cancer patients with postoperative non-chemotherapy; HC, healthy control; SD, standard deviation; FACT-Cog, Functional Assessment of Cancer Therapy-Cognitive Function; CWT, Stroop Color-Word Test; AVLT, Auditory Verbal Learning Test.</p>
+        </fn>
+      </table-wrap-foot>
+    </table-wrap>
+    <table-wrap position="float" id="jcm-11-02267-t002">
+      <object-id pub-id-type="pii">jcm-11-02267-t002_Table 2</object-id>
+      <label>Table 2</label>
+      <caption>
+        <p>The selected rs-fMRI features set for discriminating the SCC from BC group.</p>
+      </caption>
+      <table frame="hsides" rules="groups">
+        <thead>
+          <tr>
+            <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">ID</th>
+            <th align="left" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">Features</th>
+            <th align="left" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">Brain Network</th>
+            <th colspan="2" align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1">SCC (N = 40)</th>
+            <th colspan="2" align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1">BC (N = 49)</th>
+            <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1"><italic toggle="yes">p</italic> Values</th>
+            <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">Weight</th>
+          </tr>
+          <tr>
+            <th align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+</th>
+            <th align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+</th>
+            <th align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+</th>
+            <th align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Mean</th>
+            <th align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">SD</th>
+            <th align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Mean</th>
+            <th align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">SD</th>
+            <th align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+</th>
+            <th align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">1</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Pallidum_R–Angular_R</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Subcortical-DMN</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.222</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.179</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.115</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.158</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.004</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">5.629</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">2</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Temporal_Mid_R–Cingulum_Post_L</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">DMN-DMN</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.467</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.271</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.602</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.189</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.007</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">−3.573</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">3</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Insula_R–Frontal_Inf_Tri_R</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">CON-SN</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.439</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.233</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.560</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.188</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.008</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">−2.735</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">4</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Pallidum_L–Precuneus_L</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Subcortical-DMN</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.295</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.191</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.295</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.191</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.006</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">2.221</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">5</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Pallidum_L–Cingulum_Post_R</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Subcortical-DMN</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.264</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.166</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.15</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.158</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.001</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">2.159</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">6</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Cingulum_Post_L–Frontal_Inf_Tri_R</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">DMN-SN</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.154</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.227</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.023</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.228</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.008</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">2.144</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">7</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Putamen_L–Frontal_Inf_Orb_L</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Subcortical-Other regions</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.337</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.208</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.44</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.143</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.007</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">−1.888</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">8</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Parietal_Inf_L–ParaHippocampal_L</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">FPCN-Other regions</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.156</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.229</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.287</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.167</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.002</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">−1.867</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">9</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Thalamus_L–Rectus_R</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Subcortical-Other regions</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.125</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.203</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.229</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.160</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.008</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">−1.433</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">10</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Angular_L–Olfactory_L</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">DMN-Subcortical</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.145</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.210</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.281</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.224</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.004</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">−1.284</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">11</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Temporal_Inf_R–Fusiform_L</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">DMN-Other regions</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.709</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.296</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.864</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.217</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.005</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">−1.150</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">12</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Insula_R–Insula_L</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">CON-CON</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">1.134</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.215</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">1.261</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.232</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.009</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">−1.063</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">13</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">ParaHippocampal_L–Rectus_L</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Other regions-Other regions</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.401</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.264</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.543</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.197</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.005</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">−1.027</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">14</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Parietal_Inf_L–Frontal_Sup_Orb_R</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">FPCN-Other regions</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.293</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.191</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.410</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.162</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.002</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">−0.993</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">15</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Temporal_Mid_R–Precuneus_L</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">DMN-DMN</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.557</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.282</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.688</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.183</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">&lt;0.010</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">−0.918</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">16</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">SupraMarginal_R–Insula_R</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">AN-CON</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.593</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.241</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.744</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.219</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.003</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">−0.880</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">17</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Cingulum_Post_L–Frontal_Sup_L</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">DMN-DMN</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.591</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.202</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.712</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.224</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">&lt;0.010</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">−0.690</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">18</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Parietal_Inf_L–Frontal_Sup_Orb_L</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">FPCN-Other regions</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.352</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.202</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.463</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.194</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.009</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.678</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">19</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Temporal_Mid_R–Frontal_Mid_Orb_R</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">DMN-DMN</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.447</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.229</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.588</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.184</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.002</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">−0.526</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">20</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Pallidum_R–Cingulum_Post_L</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Subcortical-DMN</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.245</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.184</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.144</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.159</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.007</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.481</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">21</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">SupraMarginal_L–Insula_R</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">AN-CON</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.521</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.246</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.66</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.209</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.005</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.377</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">22</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Occipital_Mid_L–Olfactory_L</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">VN-Subcortical</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.301</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.256</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.439</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.187</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.004</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">−0.342</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">23</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Putamen_L–Frontal_Inf_Orb_R</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Subcortical-AN</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.302</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.194</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.409</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.154</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.005</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">−0.337</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">24</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Temporal_Mid_L–Frontal_Sup_L</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">DMN-DMN</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.637</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.282</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.791</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.216</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.005</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.243</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">25</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Occipital_Inf_R–Frontal_Sup_Medial_L</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">VN-DMN</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.332</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.280</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.482</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.192</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.004</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.151</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">26</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">zALFF of Frontal_Mid_R</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">FPCN</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">−0.052</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.149</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.048</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.166</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.004</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">−1.345</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">27</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">zALFF of Frontal_Mid_L</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">FPCN</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">−0.022</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.170</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.079</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.185</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.009</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">1.064</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">28</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">zALFF of Cingulum_Mid_R</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">SN</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">−0.081</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.169</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.019</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.178</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.008</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">−0.965</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">29</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">zALFF of Frontal_Inf_Oper_R</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">FPCN</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">−0.209</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.123</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">−0.116</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.132</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.001</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">−0.781</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">30</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">zALFF of Frontal_Inf_Tri_R</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">SN</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">−0.242</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.118</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">−0.156</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.115</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.001</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.265</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">31</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">zALFF of Cingulum_Post_L</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">DMN</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.406</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.369</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.664</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.461</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.005</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.260</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">32</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">zfALFF of Occipital_Mid_L</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">VN</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.894</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.371</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.69</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.316</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.006</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">3.148</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">33</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">zfALFF of Occipital_Mid_R</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">VN</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.927</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.367</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.717</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.376</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.009</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.389</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">34</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">zReHo of Occipital_Sup_R</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">VN</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.586</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.300</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.412</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.311</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.009</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">−2.314</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">35</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">zReHo of Caudate_R</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Subcortical</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">−0.307</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.239</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">−0.109</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.253</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">&lt;0.001</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">−1.966</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">36</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">zReHo of Cingulum_Mid_R</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">SN</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.227</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.150</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.342</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.156</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.001</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">−1.272</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">37</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">zReHo of Cingulum_Ant_R</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">DMN</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">−0.004</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.188</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.110</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.211</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">&lt;0.010</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">−1.158</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">38</td>
+            <td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">zVMHC of Insula_R</td>
+            <td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">CON</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.414</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.122</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.485</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.130</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">&lt;0.010</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">−0.542</td>
+          </tr>
+        </tbody>
+      </table>
+      <table-wrap-foot>
+        <fn>
+          <p>Abbreviations: SCC, breast cancer patients with postoperative chemotherapy-related subjective cognitive complaints; BC, breast cancer patients with postoperative non-chemotherapy; SD, standard deviation; DMN, default mode network; FPCN, frontal-parietal control network; SN, salience network; CON, cingular-opercular network; AN, auditory network; VN, visual network.</p>
+        </fn>
+      </table-wrap-foot>
+    </table-wrap>
+    <table-wrap position="float" id="jcm-11-02267-t003">
+      <object-id pub-id-type="pii">jcm-11-02267-t003_Table 3</object-id>
+      <label>Table 3</label>
+      <caption>
+        <p>The selected rs-fMRI features set for discriminating the SCC from HC group.</p>
+      </caption>
+      <table frame="hsides" rules="groups">
+        <thead>
+          <tr>
+            <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">ID</th>
+            <th align="left" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">Features</th>
+            <th align="left" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">Brain Network</th>
+            <th colspan="2" align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1">SCC (N = 40)</th>
+            <th colspan="2" align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1">HC (N = 34)</th>
+            <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1"><italic toggle="yes">p</italic> Values</th>
+            <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">Weight</th>
+          </tr>
+          <tr>
+            <th align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+</th>
+            <th align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+</th>
+            <th align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+</th>
+            <th align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Mean</th>
+            <th align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">SD</th>
+            <th align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Mean</th>
+            <th align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">SD</th>
+            <th align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+</th>
+            <th align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">1</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Cingulum_Ant_R–Frontal_Mid_Orb_R</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">DMN–DMN</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.607</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.260</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.783</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.263</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.005</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">−3.121</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">2</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Temporal_Sup_L–Insula_L</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">AN–CON</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.822</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.202</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.650</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.246</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.001</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">2.750</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">3</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Temporal_Pole_Sup_R–ParaHippocampal_R</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">DMN–Other regions</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.653</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.215</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.491</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.224</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.002</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">2.677</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">4</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Cingulum_Ant_R–Frontal_Sup_Medial_R</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">DMN–DMN</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.756</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.171</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.922</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.203</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">&lt;0.001</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">−2.285</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">5</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Temporal_Sup_R–Insula_L</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">VAN–CON</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.604</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.211</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.457</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.253</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.008</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">1.639</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">6</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Frontal_Mid_Orb_L–Frontal_Sup_Orb_R</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">DMN–Other regions</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.852</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.326</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.774</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.303</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.008</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">1.233</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">7</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Temporal_Pole_Sup_L–ParaHippocampal_R</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">DMN–Other regions</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.606</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.254</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.430</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.248</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.004</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.004</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">8</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">zALFF of Frontal_Inf_Oper_R</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">FPCN</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">−0.209</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.123</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.080</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.189</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.001</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">−3.947</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">9</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">zALFF of Frontal_Inf_Oper_L</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">FPCN</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">−0.162</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.129</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.010</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.223</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">&lt;0.001</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.633</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">10</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">zfALFF of Frontal_Inf_Tri_L</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">FPCN</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.166</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.223</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.327</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.241</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.004</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">−3.043</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">11</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">zfALFF of Insula_L</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">CON</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.220</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.232</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.383</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.264</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.006</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">−1.225</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">12</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">zfALFF of Temporal_Pole_Sup_R</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">DMN</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.471</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.236</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">−0.314</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.270</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.009</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">1.139</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">13</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">zfALFF of Frontal_Inf_Oper_L</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">FPCN</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.075</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.367</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.360</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.456</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.004</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">−0.546</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">14</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">zReHo of Frontal_Mid_R</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">FPCN</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">−0.446</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.250</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">−0.262</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.196</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.001</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">−3.864</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">15</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">zReHo of Insula_L</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">CON</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">−0.401</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.172</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">−0.279</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.179</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.004</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">−1.580</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">16</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">zReHo of Rolandic_Oper_L</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">AN</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.369</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.182</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.528</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.188</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">&lt;0.001</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">−0.434</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">17</td>
+            <td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">zDC of Cingulum_Ant_R</td>
+            <td align="left" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">DMN</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">−0.527</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.110</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">−0.418</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.148</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.001</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">−3.346</td>
+          </tr>
+        </tbody>
+      </table>
+      <table-wrap-foot>
+        <fn>
+          <p>Abbreviations: SCC, breast cancer patients with postoperative chemotherapy-related subjective cognitive complaints; BC, breast cancer patients with postoperative non-chemotherapy; HC, healthy control; SD, standard deviation; DMN, default mode network; AN, auditory network; CON, cingular-opercular network; VAN, ventral-attention network; FPCN, frontal-parietal control network.</p>
+        </fn>
+      </table-wrap-foot>
+    </table-wrap>
+  </floats-group>
+</article>

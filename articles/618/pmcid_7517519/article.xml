@@ -1,0 +1,1987 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">Entropy (Basel)</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Entropy (Basel)</journal-id>
+      <journal-id journal-id-type="publisher-id">entropy</journal-id>
+      <journal-title-group>
+        <journal-title>Entropy</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1099-4300</issn>
+      <publisher>
+        <publisher-name>MDPI</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">33286662</article-id>
+      <article-id pub-id-type="pmc">7517519</article-id>
+      <article-id pub-id-type="doi">10.3390/e22080893</article-id>
+      <article-id pub-id-type="publisher-id">entropy-22-00893</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Separated Channel Attention Convolutional Neural Network (SC-CNN-Attention) to Identify ADHD in Multi-Site Rs-fMRI Dataset</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Zhang</surname>
+            <given-names>Tao</given-names>
+          </name>
+          <xref ref-type="aff" rid="af1-entropy-22-00893">1</xref>
+          <xref ref-type="aff" rid="af2-entropy-22-00893">2</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Li</surname>
+            <given-names>Cunbo</given-names>
+          </name>
+          <xref ref-type="aff" rid="af2-entropy-22-00893">2</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Li</surname>
+            <given-names>Peiyang</given-names>
+          </name>
+          <xref ref-type="aff" rid="af3-entropy-22-00893">3</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Peng</surname>
+            <given-names>Yueheng</given-names>
+          </name>
+          <xref ref-type="aff" rid="af2-entropy-22-00893">2</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Kang</surname>
+            <given-names>Xiaodong</given-names>
+          </name>
+          <xref ref-type="aff" rid="af4-entropy-22-00893">4</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Jiang</surname>
+            <given-names>Chenyang</given-names>
+          </name>
+          <xref ref-type="aff" rid="af2-entropy-22-00893">2</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Li</surname>
+            <given-names>Fali</given-names>
+          </name>
+          <xref ref-type="aff" rid="af2-entropy-22-00893">2</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Zhu</surname>
+            <given-names>Xuyang</given-names>
+          </name>
+          <xref ref-type="aff" rid="af2-entropy-22-00893">2</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Yao</surname>
+            <given-names>Dezhong</given-names>
+          </name>
+          <xref ref-type="aff" rid="af2-entropy-22-00893">2</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Biswal</surname>
+            <given-names>Bharat</given-names>
+          </name>
+          <xref ref-type="aff" rid="af2-entropy-22-00893">2</xref>
+          <xref rid="c1-entropy-22-00893" ref-type="corresp">*</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Xu</surname>
+            <given-names>Peng</given-names>
+          </name>
+          <xref ref-type="aff" rid="af2-entropy-22-00893">2</xref>
+          <xref rid="c1-entropy-22-00893" ref-type="corresp">*</xref>
+        </contrib>
+      </contrib-group>
+      <aff id="af1-entropy-22-00893"><label>1</label>School of Science, Xihua University, Chengdu 610039, China; <email>zhangtao@mail.xhu.edu.cn</email></aff>
+      <aff id="af2-entropy-22-00893"><label>2</label>School of Life Science and Technology, Center for Information in BioMedicine, University of Electronic Science and Technology of China, Chengdu 611731, China; <email>cunboli@163.com</email> (C.L.); <email>yuehengp@umich.edu</email> (Y.P.); <email>201821140226@std.uestc.edu.cn</email> (C.J.); <email>lfl_uestc@163.com</email> (F.L.); <email>xuyang508@163.com</email> (X.Z.); <email>dyao@uestc.edu.cn</email> (D.Y.)</aff>
+      <aff id="af3-entropy-22-00893"><label>3</label>School of Bioinformatics, Chongqing University of Posts and Telecommunications, Chongqing 400065, China; <email>pyli@cqupt.edu.cn</email></aff>
+      <aff id="af4-entropy-22-00893"><label>4</label>Sichuan 81 Rehabilitation Centre, Chengdu University of TCM, Chengdu 611137, China; <email>kxd1120@163.com</email></aff>
+      <author-notes>
+        <corresp id="c1-entropy-22-00893"><label>*</label>Correspondence: <email>bbiswal@gmail.com</email> (B.B.); <email>xupeng@uestc.edu.cn</email> (P.X.)</corresp>
+      </author-notes>
+      <pub-date pub-type="epub">
+        <day>14</day>
+        <month>8</month>
+        <year>2020</year>
+      </pub-date>
+      <pub-date pub-type="collection">
+        <month>8</month>
+        <year>2020</year>
+      </pub-date>
+      <volume>22</volume>
+      <issue>8</issue>
+      <elocation-id>893</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>25</day>
+          <month>7</month>
+          <year>2020</year>
+        </date>
+        <date date-type="accepted">
+          <day>12</day>
+          <month>8</month>
+          <year>2020</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>© 2020 by the authors.</copyright-statement>
+        <copyright-year>2020</copyright-year>
+        <license license-type="open-access">
+          <license-p>Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license (<ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</ext-link>).</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>The accurate identification of an attention deficit hyperactivity disorder (ADHD) subject has remained a challenge for both neuroscience research and clinical diagnosis. Unfortunately, the traditional methods concerning the classification model and feature extraction usually depend on the single-channel model and static measurements (i.e., functional connectivity, FC) in the small, homogenous single-site dataset, which is limited and may cause the loss of intrinsic information in functional MRI (fMRI). In this study, we proposed a new two-stage network structure by combing a separated channel convolutional neural network (SC-CNN) with an attention-based network (SC-CNN-attention) to discriminate ADHD and healthy controls on a large-scale multi-site database (5 sites and <italic>n</italic> = 1019). To utilize both intrinsic temporal feature and the interactions of temporal dependent in whole-brain resting-state fMRI, in the first stage of our proposed network structure, a SC- CNN is used to learn the temporal feature of each brain region, and an attention network in the second stage is adopted to capture temporal dependent features among regions and extract fusion features. Using a “leave-one-site-out” cross-validation framework, our proposed method obtained a mean classification accuracy of 68.6% on five different sites, which is higher than those reported in previous studies. The classification results demonstrate that our proposed network is robust to data variants and is also replicated across sites. The combination of the SC-CNN with the attention network is powerful to capture the intrinsic fMRI information to discriminate ADHD across multi-site resting-state fMRI data. </p>
+      </abstract>
+      <kwd-group>
+        <kwd>deep learning</kwd>
+        <kwd>CNN</kwd>
+        <kwd>attention</kwd>
+        <kwd>ADHD</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec sec-type="intro" id="sec1-entropy-22-00893">
+      <title>1. Introduction</title>
+      <p>Attention Deficit Hyperactivity Disorder (ADHD) is one of the most common mental disorders among school-age children [<xref rid="B1-entropy-22-00893" ref-type="bibr">1</xref>]. About 5% of children suffer from this disease [<xref rid="B2-entropy-22-00893" ref-type="bibr">2</xref>], whose clinical symptoms are usually included distractibility, poor concentration, excessive activity, or weak self-control [<xref rid="B3-entropy-22-00893" ref-type="bibr">3</xref>]. Theses ADHD behaviors have a negative effect on the course learning and normal life order of children. Thus, there is an urgent need for quantifiable and objective tools that may aid in early recognition of ADHD. However, at present, the clinical diagnosis of ADHD is mainly based on the behavior symptoms [<xref rid="B4-entropy-22-00893" ref-type="bibr">4</xref>,<xref rid="B5-entropy-22-00893" ref-type="bibr">5</xref>] that match with the Diagnostic and Statistical Manual of Mental Disorders (DSM) criteria, which is, unfortunately, subjective. The identification of neuroimaging biomarkers (functional features) and the application of an effective classification model are two important goals to discriminate ADHD from healthy controls (HCs).</p>
+      <p>Functional magnetic resonance imaging (fMRI) and machine learning as two powerful tools have been widely used to explore neural pathways and brain changes that occur in ADHD [<xref rid="B6-entropy-22-00893" ref-type="bibr">6</xref>,<xref rid="B7-entropy-22-00893" ref-type="bibr">7</xref>], which has the great capacity of extracting replicable brain functional features to classify the ADHD and HCs [<xref rid="B8-entropy-22-00893" ref-type="bibr">8</xref>,<xref rid="B9-entropy-22-00893" ref-type="bibr">9</xref>,<xref rid="B10-entropy-22-00893" ref-type="bibr">10</xref>,<xref rid="B11-entropy-22-00893" ref-type="bibr">11</xref>]. Especially, the resting-state fMRI has provided several significant information features, such as regional features (e.g., functional connectivity (FC), etc.) and global features (e.g., network properties, etc.), for ADHD diagnosis and classification. For example, Zhu et al. [<xref rid="B12-entropy-22-00893" ref-type="bibr">12</xref>] trained a fisher-discriminant-analysis (FDA) classifier using the features of regional homogeneity (ReHo) based on resting-state fMRI to discriminate 20 subjects as ADHD or healthy and obtained an 85% leave-one-out cross-validation classification accuracy. Bernhardt et al. [<xref rid="B13-entropy-22-00893" ref-type="bibr">13</xref>] used an overall LEFMSF algorithm to fuse structural texture features and FC and achieved an accuracy of 67% on the ADHD-200 data with the support vector machines (SVM) classifier. Tang et al. [<xref rid="B14-entropy-22-00893" ref-type="bibr">14</xref>] applied a multi-affinity subspace clustering approach to FC feature for identifying ADHD and obtained the best performance of 96.2% for the single-site New York University Medical Center (NYU) dataset. </p>
+      <p>These above-mentioned ADHD classifications are mainly based on the hand-crafted functional features derived from the precomputed measurement of brain architecture, although the relatively high accuracies are reported. The hand-crafted features (e.g., FC and Reho) are estimated mainly from the temporal and spatial correlations of blood–oxygen level-dependent (BOLD) signals, which are single and static measurements but leave the intrinsic information of the BOLD signal behind. The nature of the neural activity is highly dynamic even at rest [<xref rid="B15-entropy-22-00893" ref-type="bibr">15</xref>,<xref rid="B16-entropy-22-00893" ref-type="bibr">16</xref>], and the preprocessed BOLD time-series signals are believed to carry more useful information for discrimination. Meanwhile, although relatively high accuracy could be acquired for single-site data when applied to other site datasets, the trained model usually cannot achieve an acceptable performance [<xref rid="B17-entropy-22-00893" ref-type="bibr">17</xref>,<xref rid="B18-entropy-22-00893" ref-type="bibr">18</xref>,<xref rid="B19-entropy-22-00893" ref-type="bibr">19</xref>] since the heterogeneity and variability exist in multi-site datasets [<xref rid="B20-entropy-22-00893" ref-type="bibr">20</xref>,<xref rid="B21-entropy-22-00893" ref-type="bibr">21</xref>], such as scan parameters and equipment, magnetic field strength, imaging length, age distribution, sample size, and male-to-female ratio. Indeed, it is a challenge to reliably identify the populations with brain disorders across larger and more heterogeneous datasets [<xref rid="B20-entropy-22-00893" ref-type="bibr">20</xref>,<xref rid="B21-entropy-22-00893" ref-type="bibr">21</xref>], and it is necessary to explore a reliable approach to simultaneously learn the discriminative features to achieve the multi-site classification of ADHD [<xref rid="B22-entropy-22-00893" ref-type="bibr">22</xref>].</p>
+      <p>A convolutional neural network (CNN) has been applied to identify ADHD in multi-site fMRI data [<xref rid="B23-entropy-22-00893" ref-type="bibr">23</xref>]. For instance, Riaz et al. [<xref rid="B24-entropy-22-00893" ref-type="bibr">24</xref>] proposed a CNN-based deep learning structure, FCNet, to extract FC features from raw resting-state fMRI signals, and they found that the FCNet has superior discriminative power on the ADHD-200 dataset (the highest classification of 62.7% on the Peking dataset). Thereafter, Riaz et al. [<xref rid="B25-entropy-22-00893" ref-type="bibr">25</xref>] further proposed an end-to-end deep model to learn FC features automatically and used a classification network to identify ADHD, which achieved an average accuracy of 67.9% by using three different ADHD-200 datasets. Zou [<xref rid="B26-entropy-22-00893" ref-type="bibr">26</xref>] developed a three-dimensional CNN (3D-CNN) model to learn the local spatial patterns of ADHD from multi-model MRI features, and their proposed single modality 3D CNN architecture with the fractional amplitude of low-frequency fluctuations (fALFF) feature also achieved a mean accuracy of 66.04% on the ADHD-200 dataset.</p>
+      <p>However, those reported networks mainly applied a generalized network that considers the whole brain equally while neglecting the physiological basis that the different brain areas may provide the different information for the classification, i.e., the different brain area needs to be differently emphasized to extract the corresponding information. In this study, we proposed a separated channel attention convolutional network (SC-CNN-attention) to encode the time-series of the region of interest (ROI) directly for identifying the ADHD on multi-site rs-fMRI data. SC-CNN-attention is an end-to-end trainable network that can classify the concatenated features developed by a set of encoders. Our proposed method includes two network structures: (1) using a separated channel CNN that could handle long time-series data with different time points to learn the temporal feature in overall time-series signal for each brain region; and (2) and using attention network to capture temporal dependent features among regions. We extracted the 116 time-series signals using the automated anatomical labeling (AAL) template. The leave-one-site-out cross-validation strategy is used for inter-site classification, which is much closer to the practical clinical conditions. The goal of this study is to apply a new deep learning model to identify ADHD from a large multi-site resting-state fMRI dataset based on the original BOLD time-series signals.</p>
+    </sec>
+    <sec id="sec2-entropy-22-00893">
+      <title>2. Materials and Methods</title>
+      <sec id="sec2dot1-entropy-22-00893">
+        <title>2.1. Dataset</title>
+        <p>A publicly available dataset, the ADHD-200 data (<italic>n</italic> = 1019), was used for this study. The dataset comes from five different sites, including KKI, NI, NYU, OHSU, and Peking. The preprocessed ADHD dataset was downloaded from [<xref rid="B27-entropy-22-00893" ref-type="bibr">27</xref>]. <xref rid="entropy-22-00893-t001" ref-type="table">Table 1</xref> showed the detailed information about the subjects [<xref rid="B28-entropy-22-00893" ref-type="bibr">28</xref>].</p>
+      </sec>
+      <sec id="sec2dot2-entropy-22-00893">
+        <title>2.2. Rs-fMRI Data Preprocessing</title>
+        <p>All datasets had been preprocessed by the neuroimaging analysis kit (NIAK) team using their preferred tools [<xref rid="B28-entropy-22-00893" ref-type="bibr">28</xref>]. The detailed steps included: (1) slice timing correction; (2) motion correction; (3) quality control; (4) spatial normalization; (5) coregistration; (6) concatenation; (7) extraction of mask; (8) quality control for 4 and 5; (9) high-pass filtering; (10) correction of physiological noise; (11) resampling; and (12) spatial smoothing with 6-mm half-width Gaussian kernel. Concerning more parameters, please refer to [<xref rid="B29-entropy-22-00893" ref-type="bibr">29</xref>].</p>
+      </sec>
+      <sec id="sec2dot3-entropy-22-00893">
+        <title>2.3. Extraction of Time-Series</title>
+        <p>We first extracted the whole-brain resting-state fMRI BOLD time-series of all voxels within the same region based on the AAL-116 template [<xref rid="B30-entropy-22-00893" ref-type="bibr">30</xref>], resulting in 116 time-series signals. Each region represented one single local signal channel. Then, the averaged the time-series signal across voxels in each region served as inputs to the separated single channel CNN network.</p>
+      </sec>
+      <sec id="sec2dot4-entropy-22-00893">
+        <title>2.4. Separated Channel Convolutional Neural Network with an Attention Network (SC-CNN-Attention)</title>
+        <p>In our previous work [<xref rid="B31-entropy-22-00893" ref-type="bibr">31</xref>], we proposed an end-to-end SC-CNN network framework to realize the training free motor imagery (MI) BCI system, where our model obtained a relatively high classification accuracy based on open MI EEG data. Motivated by this work, we proposed a new deep learning network model, SC-CNN-attention, to discriminate ADHD and HCs on large-scale multi-site fMRI data. The proposed framework consists of a two-stage network structure, with the first SC-CNN network to encode the fMRI time-series signal feature for each brain area (channel signal) and the second attention network to capture temporal interaction features among regions and extract fusion features. <xref ref-type="fig" rid="entropy-22-00893-f001">Figure 1</xref> showed the network framework of the SC-CNN-XX model. To evaluate the generalization power of the attention layer (SC-CNN-Attention), we also concatenate SC-CNN with a fully connected layer (SC-CNN-Dense) and a bidirectional LSTM layer (SC-CNN-LSTM), to extract and fuse feature.</p>
+        <sec id="sec2dot4dot1-entropy-22-00893">
+          <title>2.4.1. SC-CNN Network</title>
+          <p>Most of the deep learning networks share a common CNN network to encode all input information; meanwhile, we did not consider the contribution of the different input signal to the feature learning. Here, our proposed model designed a separated CNN network for each ROI to learn abstract fMRI features, which could effectively capture the specificity of different fMRI time-series signals. All SC-CNNs had the same network structure and parameters. Such parameter sharing reduced the computational complexity of the model and inhibited the overfitting of the model. The parameter update of the encoders depended on the error of the ultimate classification result. During the training stage, each encoder adaptively adjusted the channel’s importance according to the gradient of a residual function, which reflected the levels of brain activities in different regions.</p>
+          <p>The length of resting-state fMRI time series was different among ADHD sites, to effectively handle the variance of the multi-site data, we averaged the feature maps extracted by each convolution filter at the output of the feature extractor so that each ROI or channel outputted a consistent feature that had the same length.</p>
+          <p>Besides, since the sample of ADHD patients was smaller than that of healthy people, which might result in a biased training process and make the output of the model more inclined to one category. In our present study, we used a special data generator to randomly select balance samples for training, which ensured the stability of the training and increased the credibility of the network output.</p>
+        </sec>
+        <sec id="sec2dot4dot2-entropy-22-00893">
+          <title>2.4.2. Attention-Based Network</title>
+          <p>The attention-based network recently was widely applied to deep learning [<xref rid="B32-entropy-22-00893" ref-type="bibr">32</xref>,<xref rid="B33-entropy-22-00893" ref-type="bibr">33</xref>]. Attention gives the model the ability to distinguish the focus that should be focused on the numerous information, providing an important away to capture more reliable features [<xref rid="B34-entropy-22-00893" ref-type="bibr">34</xref>]. In the first-stage network, the SC-CNN encoders obtained different channel-wise features, which were then concatenated as the input of the attention network. The attention network could adaptively learn the feature weights and give larger weight to more important features.</p>
+          <p>The attention mechanism is evaluated as:<disp-formula id="FD1-entropy-22-00893"><label>(1)</label><mml:math id="mm1"><mml:mrow><mml:mrow><mml:msub><mml:mi>g</mml:mi><mml:mrow><mml:mi>n</mml:mi><mml:mo>,</mml:mo><mml:msup><mml:mi>n</mml:mi><mml:mo>′</mml:mo></mml:msup></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:mi>tanh</mml:mi><mml:mo stretchy="false">(</mml:mo><mml:msub><mml:mi>W</mml:mi><mml:mi>g</mml:mi></mml:msub><mml:msub><mml:mi>h</mml:mi><mml:mi>n</mml:mi></mml:msub><mml:mo>+</mml:mo><mml:msub><mml:mi>W</mml:mi><mml:msup><mml:mi>g</mml:mi><mml:mo>′</mml:mo></mml:msup></mml:msub><mml:msub><mml:mi>h</mml:mi><mml:msup><mml:mi>n</mml:mi><mml:mo>′</mml:mo></mml:msup></mml:msub><mml:mo>+</mml:mo><mml:msub><mml:mi>b</mml:mi><mml:mi>g</mml:mi></mml:msub><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:mrow></mml:math></disp-formula>
+<disp-formula id="FD2-entropy-22-00893"><label>(2)</label><mml:math id="mm2"><mml:mrow><mml:mrow><mml:msub><mml:mi>α</mml:mi><mml:mrow><mml:mi>t</mml:mi><mml:mo>,</mml:mo><mml:msup><mml:mi>t</mml:mi><mml:mo>′</mml:mo></mml:msup></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:mi>σ</mml:mi><mml:mo stretchy="false">(</mml:mo><mml:msub><mml:mi>W</mml:mi><mml:mi>a</mml:mi></mml:msub><mml:msub><mml:mi>g</mml:mi><mml:mrow><mml:mi>n</mml:mi><mml:mo>,</mml:mo><mml:msup><mml:mi>n</mml:mi><mml:mo>′</mml:mo></mml:msup></mml:mrow></mml:msub><mml:mo>+</mml:mo><mml:msub><mml:mi>b</mml:mi><mml:mi>a</mml:mi></mml:msub><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:mrow></mml:math></disp-formula>
+where <inline-formula><mml:math id="mm3"><mml:mrow><mml:mi>σ</mml:mi></mml:mrow></mml:math></inline-formula> is the sigmoid function, which can be regarded as a threshold. The <inline-formula><mml:math id="mm4"><mml:mrow><mml:mrow><mml:msub><mml:mi>W</mml:mi><mml:mi>g</mml:mi></mml:msub></mml:mrow></mml:mrow></mml:math></inline-formula> and <inline-formula><mml:math id="mm5"><mml:mrow><mml:mrow><mml:msub><mml:mi>W</mml:mi><mml:msup><mml:mi>g</mml:mi><mml:mo>′</mml:mo></mml:msup></mml:msub></mml:mrow></mml:mrow></mml:math></inline-formula> is the corresponding weight matrix. The <inline-formula><mml:math id="mm6"><mml:mrow><mml:mrow><mml:msub><mml:mi>W</mml:mi><mml:mi>a</mml:mi></mml:msub></mml:mrow></mml:mrow></mml:math></inline-formula> is a weight matrix of the nonlinear combination of <inline-formula><mml:math id="mm7"><mml:mrow><mml:mrow><mml:msub><mml:mi>h</mml:mi><mml:mi>n</mml:mi></mml:msub></mml:mrow></mml:mrow></mml:math></inline-formula> and <inline-formula><mml:math id="mm8"><mml:mrow><mml:mrow><mml:msub><mml:mi>h</mml:mi><mml:msup><mml:mi>n</mml:mi><mml:mo>′</mml:mo></mml:msup></mml:msub></mml:mrow></mml:mrow></mml:math></inline-formula>. <inline-formula><mml:math id="mm9"><mml:mrow><mml:mrow><mml:msub><mml:mi>b</mml:mi><mml:mi>a</mml:mi></mml:msub></mml:mrow></mml:mrow></mml:math></inline-formula> and <inline-formula><mml:math id="mm10"><mml:mrow><mml:mrow><mml:msub><mml:mi>b</mml:mi><mml:mi>g</mml:mi></mml:msub></mml:mrow></mml:mrow></mml:math></inline-formula> are the offset vectors. Based on these parameters, we can get the hidden vector of <inline-formula><mml:math id="mm11"><mml:mrow><mml:mrow><mml:msub><mml:mi>l</mml:mi><mml:mi>n</mml:mi></mml:msub></mml:mrow></mml:mrow></mml:math></inline-formula>
+<disp-formula id="FD3-entropy-22-00893"><label>(3)</label><mml:math id="mm12"><mml:mrow><mml:mrow><mml:msub><mml:mi>l</mml:mi><mml:mi>n</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:mstyle displaystyle="true"><mml:munderover><mml:mo>∑</mml:mo><mml:mrow><mml:msup><mml:mi>n</mml:mi><mml:mo>′</mml:mo></mml:msup><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mi>N</mml:mi></mml:munderover><mml:mrow><mml:msub><mml:mi>α</mml:mi><mml:mrow><mml:mi>t</mml:mi><mml:mo>,</mml:mo><mml:msup><mml:mi>t</mml:mi><mml:mo>′</mml:mo></mml:msup></mml:mrow></mml:msub><mml:mo>⋅</mml:mo><mml:msub><mml:mi>h</mml:mi><mml:msup><mml:mi>n</mml:mi><mml:mo>′</mml:mo></mml:msup></mml:msub></mml:mrow></mml:mstyle></mml:mrow></mml:mrow></mml:math></disp-formula>
+where <inline-formula><mml:math id="mm13"><mml:mrow><mml:mrow><mml:msub><mml:mi>l</mml:mi><mml:mi>n</mml:mi></mml:msub></mml:mrow></mml:mrow></mml:math></inline-formula> indicates the characteristic representation of the current brain region under the influence of other brain regions.</p>
+          <p>Several attention models have been introduced into deep learning, such as the soft attention model, the hard attention model, the global attention model, the local attention model, and the self-attention model [<xref rid="B35-entropy-22-00893" ref-type="bibr">35</xref>,<xref rid="B36-entropy-22-00893" ref-type="bibr">36</xref>]. In the current work, a novel soft attention model, called additive attention model, was selected and modified to extract weighted features.</p>
+        </sec>
+        <sec id="sec2dot4dot3-entropy-22-00893">
+          <title>2.4.3. Classification Network</title>
+          <p>The integration of local features from multiple brain regions resulted in a series of novel features, which not only represented the information from the corresponding brain region but also contained the weighted information from other regions. These weighted features represented the contribution of the tasks. Subsequently, these weighted features would be sent into a fully connected layer with the soft-max activation function to predict the sample class.</p>
+        </sec>
+      </sec>
+      <sec id="sec2dot5-entropy-22-00893">
+        <title>2.5. Model Optimization</title>
+        <p>In the current study, the adaptive moment estimation (Adam) optimizer with an adaptive learning rate was utilized to minimize the cross-entropy between the real and predicted tags. The parameters in Adam were set by default [<xref rid="B37-entropy-22-00893" ref-type="bibr">37</xref>]. Before the training stage, the Xavier initializer [<xref rid="B38-entropy-22-00893" ref-type="bibr">38</xref>] was used to initialize the trainable weights randomly. The learning rate of the network is set as 0.01. Besides, to avoid the influence of over-fitting, the L2 regularization was used to restrict the complexity of model parameters. Specifically, we set the size of each small batch to 32 and randomly selected 16 samples from all ADHD sets and healthy sample sets to overcome the issue of unbalanced samples.</p>
+      </sec>
+      <sec id="sec2dot6-entropy-22-00893">
+        <title>2.6. Leave-One-Site-Out</title>
+        <p>To measure the classification accuracy of the model, the “leave-one-site-out” cross-validation was used. Assuming there were N datasets from N sites, we used N-1 sets as the training set to construct a network model and to learn the network parameters, and the data of the remaining site was used as the test set. With a circular pattern, each single site data was used as a test set to evaluate the performance of the model separately. The framework for multi-site ADHD date classification was shown in <xref ref-type="fig" rid="entropy-22-00893-f002">Figure 2</xref>.</p>
+      </sec>
+    </sec>
+    <sec sec-type="results" id="sec3-entropy-22-00893">
+      <title>3. Results</title>
+      <p>The multi-site ADHD classification experiments were performed on five different datasets. The SC-CNN-attention networks run in Ubuntu on a Core i7 PC with 40 GB RAM. Our proposed model was trained on an NVIDIA GTX 1070 GPU and implemented by Keras.</p>
+      <sec id="sec3dot1-entropy-22-00893">
+        <title>3.1. Classification Results Based on Multi-Site Data</title>
+        <p>The accuracy and area under the curve (AUC) were used as the indexes to evaluate the performance of different deep learning network models. For comparison, SC-CNN, SC-CNN-Dense, and SC-CNN-LSTM models were also considered. As illustrated in <xref ref-type="fig" rid="entropy-22-00893-f003">Figure 3</xref>, the SC-CNN-attention deep network model achieved both higher accuracies and AUCs than the other methods on multi-site data by using the preprocessed time-series signals to learn features. We also found that the performance of the model increased along with the number of the training sample.</p>
+      </sec>
+      <sec id="sec3dot2-entropy-22-00893">
+        <title>3.2. Overall Classification Results and Comparison</title>
+        <p>The classification results with the leave-one-site-out cross-validation structure validated the efficiency of our proposed SC-CNN-attention networks on multi-site fMRI datasets. Subsequently, we further calculated the overall accuracy for all sites and compared our method with several state-of-the-art methods. As listed in <xref rid="entropy-22-00893-t002" ref-type="table">Table 2</xref>, our method outperformed the ADHD-200 competition teams [<xref rid="B39-entropy-22-00893" ref-type="bibr">39</xref>], as well as the previous state-of-the-art deep learning model including FCNet [<xref rid="B24-entropy-22-00893" ref-type="bibr">24</xref>], 3D-CNN [<xref rid="B26-entropy-22-00893" ref-type="bibr">26</xref>], and DeepFMRI [<xref rid="B25-entropy-22-00893" ref-type="bibr">25</xref>], achieving a 68.6% classification accuracy.</p>
+      </sec>
+    </sec>
+    <sec sec-type="discussion" id="sec4-entropy-22-00893">
+      <title>4. Discussion</title>
+      <p>In this study, we proposed a novel deep learning framework, SC-CNN-attention, to classify ADHD and HCs on large and multi-sites’ resting-state fMRI data, based solely on the preprocessed whole-brain time-series signals. The SC-CNN-attention architecture consists of two key components: (1) a separated channel CNN to learn different channel-wise features; (2) an attention-based network to adaptively learn channel-wise feature weights and to give more weight to important features. The results demonstrated that the SC-CNN-attention structure could successfully handle the multi-site dataset and obtain relatively high classification accuracy.</p>
+      <p>In general, aggregated heterogeneity datasets bring great challenges to develop suitable classifiers for psychiatric illnesses [<xref rid="B17-entropy-22-00893" ref-type="bibr">17</xref>]. Our current work used five different sites’ dataset (<italic>n</italic> = 1019) that were larger than previous studies [<xref rid="B25-entropy-22-00893" ref-type="bibr">25</xref>]. These datasets had no prior coordination, which was a real clinical application setting. <xref rid="entropy-22-00893-t001" ref-type="table">Table 1</xref> showed the differences between the datasets, especially in sample size, sex ratio, and time-series length. Our proposed SC-CNN-attention model did overcome the effect of the dataset heterogeneity. For each testing site, the classification accuracy and AUC indexes of our proposed model were higher than the other three models (i.e., SC-CNN, SC-CNN-dense, and SC-CNN-LSTM). In a recent autism spectrum disorder multi-site classification study, Abraham [<xref rid="B19-entropy-22-00893" ref-type="bibr">19</xref>] found the performance of the model increased along with the number of the training sample. In our study, similar results were found on different sample sizes at different sites. For example, among the five testing sites, the NYU site had the largest sample size including 262 subjects whose data size was unfortunately imbalanced between ADHD and HCs, the classification results in the NYU site seemed not very high for all models whose highest accuracy was 60.4% (<xref ref-type="fig" rid="entropy-22-00893-f003">Figure 3</xref>). These results may imply that heterogeneity of the data causes false negative errors. Furthermore, we calculated the average accuracy to evaluate the performance of the model. The highest mean leave-one-site-out accuracy achieved 68.6% by using the SC-CNN-attention model (<xref rid="entropy-22-00893-t002" ref-type="table">Table 2</xref>), which surpassed previous state-of-the-art deep learning methods [<xref rid="B24-entropy-22-00893" ref-type="bibr">24</xref>,<xref rid="B25-entropy-22-00893" ref-type="bibr">25</xref>,<xref rid="B40-entropy-22-00893" ref-type="bibr">40</xref>] using the large and multi-site sample (less five sites).</p>
+      <p>Overall, our classification results indicated that the two-stage network structure had a better implementation effect. This might be attributed to three reasons. The first reason was that we directly inputted the preprocessed time-series signals into the model to learn the discriminative features. Unlike the traditional hand-crafted features [<xref rid="B12-entropy-22-00893" ref-type="bibr">12</xref>,<xref rid="B14-entropy-22-00893" ref-type="bibr">14</xref>,<xref rid="B41-entropy-22-00893" ref-type="bibr">41</xref>], the resting-state BOLD signal reflected the special activated patterns of the brain [<xref rid="B42-entropy-22-00893" ref-type="bibr">42</xref>], which carried more information. Furthermore, the hand-crafted features mainly represented the single and static brain activity measures, while the resting-state time-series signals measured dynamic brain activity [<xref rid="B16-entropy-22-00893" ref-type="bibr">16</xref>,<xref rid="B43-entropy-22-00893" ref-type="bibr">43</xref>]. Thus, the preprocessed time-series signals are facilitated to mine the significant features for ADHD classification using a deep learning method [<xref rid="B18-entropy-22-00893" ref-type="bibr">18</xref>]. The second reason was that we proposed a novel SC-CNN model as the first-stage network. This module separately encoded the preprocessed time-series signal for each channel or each ROI and then generated channel-wise features. Such a network structure can not only reduce the complexity of the model but also retained all the channel’s learned features. Thus, the SC-CNN network could effectively capture the specificity of the different fMRI time-series signals, which facilitated the ADHD classification. The third one was that we combined the SC-CNN with the channel attention network. Recently, the attention mechanism has been widely used in deep learning tasks, such as natural language processing [<xref rid="B36-entropy-22-00893" ref-type="bibr">36</xref>,<xref rid="B44-entropy-22-00893" ref-type="bibr">44</xref>], image classification [<xref rid="B33-entropy-22-00893" ref-type="bibr">33</xref>], object recognition [<xref rid="B45-entropy-22-00893" ref-type="bibr">45</xref>], and speech recognition [<xref rid="B32-entropy-22-00893" ref-type="bibr">32</xref>]. In essence, the attention model focuses on the key information linked to the context to optimize feature-representation [<xref rid="B44-entropy-22-00893" ref-type="bibr">44</xref>]. In the current model, it returned a weighted mean of the input time-series signal, which was selected according to the relevance of each input signal. The attention mechanism highlighted the contribution of different brain regions to the classification of ADHD and took the interactions among brain regions into consideration, which was consistent with the neural mechanism of brain cognitive processes. Compared with the fully connected layer (dense) and LSTM layer, the attention mechanism layer achieved a relatively higher classification accuracy. This may be due to the fact that the fully connected network uses only one weight matrix for feature reconstruction, and its nonlinear ability is not strong. The attention mechanism in the deep learning model can learn the specificity and interaction pattern of time-series among different brain regions which have a great influence on the classification results.</p>
+      <p>Though our proposed deep learning method demonstrated good performance on multi-site data, it was still a challenge to replicate the findings across larger and more heterogeneous datasets and to generalize them to the real clinical situation. Indeed, in the current study, we only focused on the ADHD-200 dataset from five sites which included 1019 subjects. In future work, it would be essential to verify our deep network with more sample numbers and other aggregate samples (e.g., ABIDE). Another limitation was that the feature derived from the attention-based network might be too abstract to satisfy a biomarker standard; new metrics are thus necessary to not only capture the contribution of different brain regions for a classification task but increase the interpretability of the model and promote clinical applications in the future.</p>
+    </sec>
+    <sec sec-type="conclusions" id="sec5-entropy-22-00893">
+      <title>5. Conclusions</title>
+      <p>In this study, we presented an attention-based separated channel convolutional neural network for identifying ADHD and HCs on large multi-site resting-state fMRI datasets. It is a novel deep learning architecture, which directly inputs the original preprocessed BOLD time-series signals into the separated CNN model for each ROI to learn abstract features and weighs them by their contributions to the classification with the attention-based network. The results showed that the SC-CCN-attention model could handle the sizeable multi-site dataset and achieve a reliable and remarkable performance compared with the current state-of-the-art studies. These may help to better the diagnosis of ADHD and understand the neural mechanism of ADHD.</p>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <title>Acknowledgments</title>
+      <p>This research was supported by the National Key Research and Development Plan of China (#2017YFB1002501), the Key Research and Development Program of Guangdong Province, China (#2018B030339001), the Science and Technology Development Fund, Macau SAR (File no. 0045/2019/AFJ).</p>
+    </ack>
+    <notes>
+      <title>Author Contributions</title>
+      <p>Conceptualization, B.B. and P.X.; writing—original draft preparation, T.Z.; supervision, D.Y.; investigation, P.L., Y.P. and F.L.; methodology, T.Z., C.L. and X.Z.; visualization, T.Z. and C.J.; formal analysis, X.K.; writing—review and editing, B.B. and P.X. All authors have read and agreed to the published version of the manuscript.</p>
+    </notes>
+    <notes>
+      <title>Funding</title>
+      <p>This work was funded by the National Natural Science Foundation of China (#61961160705, #U19A2082, #61901077), the Sichuan Science and Technology Program, Grant/Award Number: 2018JY0526, and Young Scholars Reserve Talents program of Xihua University.</p>
+    </notes>
+    <notes notes-type="COI-statement">
+      <title>Conflicts of Interest</title>
+      <p>The authors declare no conflict of interest.</p>
+    </notes>
+    <ref-list>
+      <title>References</title>
+      <ref id="B1-entropy-22-00893">
+        <label>1.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Barkley</surname>
+              <given-names>R.A.</given-names>
+            </name>
+          </person-group>
+          <article-title>Behavioral inhibition, sustained attention, and executive functions: Constructing a unifying theory of ADHD</article-title>
+          <source>Psychol. Bull.</source>
+          <year>1997</year>
+          <volume>121</volume>
+          <fpage>65</fpage>
+          <pub-id pub-id-type="doi">10.1037/0033-2909.121.1.65</pub-id>
+          <pub-id pub-id-type="pmid">9000892</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B2-entropy-22-00893">
+        <label>2.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ribasés</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Rovira</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Soler</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Demontis</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Børglum</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Sánchez</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Ramos-Quiroga</surname>
+              <given-names>J.A.</given-names>
+            </name>
+            <name>
+              <surname>Cormand</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Casas</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Franke</surname>
+              <given-names>B.</given-names>
+            </name>
+          </person-group>
+          <article-title>Meta-Analysis of Genome-Wide Association Studies On Adult Attention-Deficit and Hyperactivity Disorder</article-title>
+          <source>Eur. Neuropsychopharmacol.</source>
+          <year>2019</year>
+          <volume>29</volume>
+          <fpage>S758</fpage>
+          <lpage>S759</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B3-entropy-22-00893">
+        <label>3.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Barkley</surname>
+              <given-names>R.A.</given-names>
+            </name>
+          </person-group>
+          <article-title>Issues in the diagnosis of attention-deficit/hyperactivity disorder in children</article-title>
+          <source>Brain Dev.</source>
+          <year>2003</year>
+          <volume>25</volume>
+          <fpage>77</fpage>
+          <lpage>83</lpage>
+          <pub-id pub-id-type="doi">10.1016/S0387-7604(02)00152-3</pub-id>
+          <pub-id pub-id-type="pmid">12581803</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B4-entropy-22-00893">
+        <label>4.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kuang</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>He</surname>
+              <given-names>L.</given-names>
+            </name>
+          </person-group>
+          <article-title>Classification on ADHD with Deep Learning</article-title>
+          <source>Proceedings of the 2014 International Conference on Cloud Computing and Big Data</source>
+          <conf-loc>Wuhan, China</conf-loc>
+          <conf-date>12–14 November 2014</conf-date>
+          <fpage>27</fpage>
+          <lpage>32</lpage>
+          <pub-id pub-id-type="doi">10.1109/ccbd.2014.42</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B5-entropy-22-00893">
+        <label>5.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bruchmüller</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Margraf</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Schneider</surname>
+              <given-names>S.</given-names>
+            </name>
+          </person-group>
+          <article-title>Is ADHD diagnosed in accord with diagnostic criteria? Overdiagnosis and influence of client gender on diagnosis</article-title>
+          <source>J. Consult. Clin. Psychol.</source>
+          <year>2012</year>
+          <volume>80</volume>
+          <fpage>128</fpage>
+          <pub-id pub-id-type="doi">10.1037/a0026582</pub-id>
+          <pub-id pub-id-type="pmid">22201328</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B6-entropy-22-00893">
+        <label>6.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tang</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Wei</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <name>
+              <surname>Zhao</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Nie</surname>
+              <given-names>J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Different Developmental Pattern of Brain Activities in ADHD: A Study of Resting-State fMRI</article-title>
+          <source>Dev. Neurosci.</source>
+          <year>2018</year>
+          <volume>40</volume>
+          <fpage>246</fpage>
+          <lpage>257</lpage>
+          <pub-id pub-id-type="doi">10.1159/000490289</pub-id>
+          <pub-id pub-id-type="pmid">30153660</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B7-entropy-22-00893">
+        <label>7.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yi</surname>
+              <given-names>W.</given-names>
+            </name>
+            <name>
+              <surname>Qiu</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Qi</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>He</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Zhou</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Ming</surname>
+              <given-names>D.</given-names>
+            </name>
+          </person-group>
+          <article-title>EEG oscillatory patterns and classification of sequential compound limb motor imagery</article-title>
+          <source>J. Neuroeng. Rehabil.</source>
+          <year>2016</year>
+          <volume>13</volume>
+          <fpage>11</fpage>
+          <pub-id pub-id-type="doi">10.1186/s12984-016-0119-8</pub-id>
+          <pub-id pub-id-type="pmid">26822435</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B8-entropy-22-00893">
+        <label>8.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Brown</surname>
+              <given-names>M.R.</given-names>
+            </name>
+            <name>
+              <surname>Sidhu</surname>
+              <given-names>G.S.</given-names>
+            </name>
+            <name>
+              <surname>Greiner</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Asgarian</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Bastani</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Silverstone</surname>
+              <given-names>P.H.</given-names>
+            </name>
+            <name>
+              <surname>Greenshaw</surname>
+              <given-names>A.J.</given-names>
+            </name>
+            <name>
+              <surname>Dursun</surname>
+              <given-names>S.M.</given-names>
+            </name>
+          </person-group>
+          <article-title>ADHD-200 Global Competition: Diagnosing ADHD using personal characteristic data can outperform resting state fMRI measurements</article-title>
+          <source>Front. Syst. Neurosci.</source>
+          <year>2012</year>
+          <volume>6</volume>
+          <fpage>69</fpage>
+          <pub-id pub-id-type="doi">10.3389/fnsys.2012.00069</pub-id>
+          <pub-id pub-id-type="pmid">23060754</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B9-entropy-22-00893">
+        <label>9.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Du</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Jie</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>D.</given-names>
+            </name>
+          </person-group>
+          <article-title>Network-based classification of ADHD patients using discriminative subnetwork selection and graph kernel PCA</article-title>
+          <source>Comput. Med Imaging Graph.</source>
+          <year>2016</year>
+          <volume>52</volume>
+          <fpage>82</fpage>
+          <lpage>88</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.compmedimag.2016.04.004</pub-id>
+          <pub-id pub-id-type="pmid">27166430</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B10-entropy-22-00893">
+        <label>10.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dai</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Hua</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>He</surname>
+              <given-names>H.</given-names>
+            </name>
+          </person-group>
+          <article-title>Classification of ADHD children through multimodal magnetic resonance imaging</article-title>
+          <source>Front. Syst. Neurosci.</source>
+          <year>2012</year>
+          <volume>6</volume>
+          <fpage>63</fpage>
+          <pub-id pub-id-type="doi">10.3389/fnsys.2012.00063</pub-id>
+          <pub-id pub-id-type="pmid">22969710</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B11-entropy-22-00893">
+        <label>11.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Litjens</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Kooi</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Bejnordi</surname>
+              <given-names>B.E.</given-names>
+            </name>
+            <name>
+              <surname>Setio</surname>
+              <given-names>A.A.A.</given-names>
+            </name>
+            <name>
+              <surname>Ciompi</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Ghafoorian</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>van der Laak</surname>
+              <given-names>J.A.W.M.</given-names>
+            </name>
+            <name>
+              <surname>van Ginneken</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Sánchez</surname>
+              <given-names>C.I.</given-names>
+            </name>
+          </person-group>
+          <article-title>A survey on deep learning in medical image analysis</article-title>
+          <source>Med. Image Anal.</source>
+          <year>2017</year>
+          <volume>42</volume>
+          <fpage>60</fpage>
+          <lpage>88</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.media.2017.07.005</pub-id>
+          <pub-id pub-id-type="pmid">28778026</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B12-entropy-22-00893">
+        <label>12.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhu</surname>
+              <given-names>C.-Z.</given-names>
+            </name>
+            <name>
+              <surname>Zang</surname>
+              <given-names>Y.-F.</given-names>
+            </name>
+            <name>
+              <surname>Cao</surname>
+              <given-names>Q.-J.</given-names>
+            </name>
+            <name>
+              <surname>Yan</surname>
+              <given-names>C.-G.</given-names>
+            </name>
+            <name>
+              <surname>He</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <name>
+              <surname>Jiang</surname>
+              <given-names>T.-Z.</given-names>
+            </name>
+            <name>
+              <surname>Sui</surname>
+              <given-names>M.-Q.</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>Y.-F.</given-names>
+            </name>
+          </person-group>
+          <article-title>Fisher discriminative analysis of resting-state brain function for attention-deficit/hyperactivity disorder</article-title>
+          <source>NeuroImage</source>
+          <year>2008</year>
+          <volume>40</volume>
+          <fpage>110</fpage>
+          <lpage>120</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2007.11.029</pub-id>
+          <pub-id pub-id-type="pmid">18191584</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B13-entropy-22-00893">
+        <label>13.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bernhardt</surname>
+              <given-names>B.C.</given-names>
+            </name>
+            <name>
+              <surname>Sen</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Borle</surname>
+              <given-names>N.C.</given-names>
+            </name>
+            <name>
+              <surname>Greiner</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Brown</surname>
+              <given-names>M.R.G.</given-names>
+            </name>
+          </person-group>
+          <article-title>A general prediction model for the detection of ADHD and Autism using structural and functional MRI</article-title>
+          <source>PLoS ONE</source>
+          <year>2018</year>
+          <volume>13</volume>
+          <elocation-id>e0194856</elocation-id>
+          <pub-id pub-id-type="doi">10.1371/journal.pone.0194856</pub-id>
+          <pub-id pub-id-type="pmid">29664902</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B14-entropy-22-00893">
+        <label>14.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tang</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <name>
+              <surname>Sun</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Jiang</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>Z.</given-names>
+            </name>
+          </person-group>
+          <article-title>Identifying ADHD Individuals From Resting-State Functional Connectivity Using Subspace Clustering and Binary Hypothesis Testing</article-title>
+          <source>J. Atten. Disord.</source>
+          <year>2019</year>
+          <pub-id pub-id-type="doi">10.1177/1087054719837749</pub-id>
+          <pub-id pub-id-type="pmid">30938224</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B15-entropy-22-00893">
+        <label>15.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhang</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Biswal</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Yao</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Xu</surname>
+              <given-names>P.</given-names>
+            </name>
+          </person-group>
+          <article-title>The Time-Varying Network Patterns in Motor Imagery Revealed by Adaptive Directed Transfer Function Analysis for fMRI</article-title>
+          <source>IEEE Access Pract. Innov. Open Solut.</source>
+          <year>2018</year>
+          <volume>6</volume>
+          <fpage>60339</fpage>
+          <lpage>60352</lpage>
+          <pub-id pub-id-type="doi">10.1109/ACCESS.2018.2875492</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B16-entropy-22-00893">
+        <label>16.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Monti</surname>
+              <given-names>R.P.</given-names>
+            </name>
+            <name>
+              <surname>Hellyer</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Sharp</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Leech</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Anagnostopoulos</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Montana</surname>
+              <given-names>G.</given-names>
+            </name>
+          </person-group>
+          <article-title>Estimating time-varying brain connectivity networks from functional MRI time series</article-title>
+          <source>NeuroImage</source>
+          <year>2014</year>
+          <volume>103</volume>
+          <fpage>427</fpage>
+          <lpage>443</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2014.07.033</pub-id>
+          <pub-id pub-id-type="pmid">25107854</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B17-entropy-22-00893">
+        <label>17.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Abraham</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Milham</surname>
+              <given-names>M.P.</given-names>
+            </name>
+            <name>
+              <surname>Di Martino</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Craddock</surname>
+              <given-names>R.C.</given-names>
+            </name>
+            <name>
+              <surname>Samaras</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Thirion</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Varoquaux</surname>
+              <given-names>G.</given-names>
+            </name>
+          </person-group>
+          <article-title>Deriving reproducible biomarkers from multi-site resting-state data: An Autism-based example</article-title>
+          <source>NeuroImage</source>
+          <year>2017</year>
+          <volume>147</volume>
+          <fpage>736</fpage>
+          <lpage>745</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2016.10.045</pub-id>
+          <pub-id pub-id-type="pmid">27865923</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B18-entropy-22-00893">
+        <label>18.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dvornek</surname>
+              <given-names>N.C.</given-names>
+            </name>
+            <name>
+              <surname>Ventola</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Pelphrey</surname>
+              <given-names>K.A.</given-names>
+            </name>
+            <name>
+              <surname>Duncan</surname>
+              <given-names>J.S.</given-names>
+            </name>
+          </person-group>
+          <article-title>Identifying autism from resting-state fMRI using long short-term memory networks</article-title>
+          <source>Proceedings of the International Workshop on Machine Learning in Medical Imaging</source>
+          <conf-loc>Quebec City, QC, Canada</conf-loc>
+          <conf-date>10 September 2017</conf-date>
+          <fpage>362</fpage>
+          <lpage>370</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B19-entropy-22-00893">
+        <label>19.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Nielsen</surname>
+              <given-names>J.A.</given-names>
+            </name>
+            <name>
+              <surname>Zielinski</surname>
+              <given-names>B.A.</given-names>
+            </name>
+            <name>
+              <surname>Fletcher</surname>
+              <given-names>P.T.</given-names>
+            </name>
+            <name>
+              <surname>Alexander</surname>
+              <given-names>A.L.</given-names>
+            </name>
+            <name>
+              <surname>Lange</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Bigler</surname>
+              <given-names>E.D.</given-names>
+            </name>
+            <name>
+              <surname>Lainhart</surname>
+              <given-names>J.E.</given-names>
+            </name>
+            <name>
+              <surname>Anderson</surname>
+              <given-names>J.S.</given-names>
+            </name>
+          </person-group>
+          <article-title>Multisite functional connectivity MRI classification of autism: ABIDE results</article-title>
+          <source>Front. Hum. Neurosci.</source>
+          <year>2013</year>
+          <volume>7</volume>
+          <fpage>599</fpage>
+          <pub-id pub-id-type="doi">10.3389/fnhum.2013.00599</pub-id>
+          <pub-id pub-id-type="pmid">24093016</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B20-entropy-22-00893">
+        <label>20.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Heinsfeld</surname>
+              <given-names>A.S.</given-names>
+            </name>
+            <name>
+              <surname>Franco</surname>
+              <given-names>A.R.</given-names>
+            </name>
+            <name>
+              <surname>Craddock</surname>
+              <given-names>R.C.</given-names>
+            </name>
+            <name>
+              <surname>Buchweitz</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Meneguzzi</surname>
+              <given-names>F.</given-names>
+            </name>
+          </person-group>
+          <article-title>Identification of autism spectrum disorder using deep learning and the ABIDE dataset</article-title>
+          <source>Neuroimage. Clin.</source>
+          <year>2018</year>
+          <volume>17</volume>
+          <fpage>16</fpage>
+          <lpage>23</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.nicl.2017.08.017</pub-id>
+          <pub-id pub-id-type="pmid">29034163</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B21-entropy-22-00893">
+        <label>21.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Button</surname>
+              <given-names>K.S.</given-names>
+            </name>
+            <name>
+              <surname>Ioannidis</surname>
+              <given-names>J.P.</given-names>
+            </name>
+            <name>
+              <surname>Mokrysz</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Nosek</surname>
+              <given-names>B.A.</given-names>
+            </name>
+            <name>
+              <surname>Flint</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Robinson</surname>
+              <given-names>E.S.</given-names>
+            </name>
+            <name>
+              <surname>Munafò</surname>
+              <given-names>M.R.</given-names>
+            </name>
+          </person-group>
+          <article-title>Power failure: Why small sample size undermines the reliability of neuroscience</article-title>
+          <source>Nat. Rev. Neurosci.</source>
+          <year>2013</year>
+          <volume>14</volume>
+          <fpage>365</fpage>
+          <pub-id pub-id-type="doi">10.1038/nrn3475</pub-id>
+          <pub-id pub-id-type="pmid">23571845</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B22-entropy-22-00893">
+        <label>22.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>LeCun</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <name>
+              <surname>Bengio</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <name>
+              <surname>Hinton</surname>
+              <given-names>G.</given-names>
+            </name>
+          </person-group>
+          <article-title>Deep learning</article-title>
+          <source>Nature</source>
+          <year>2015</year>
+          <volume>521</volume>
+          <fpage>436</fpage>
+          <pub-id pub-id-type="doi">10.1038/nature14539</pub-id>
+          <pub-id pub-id-type="pmid">26017442</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B23-entropy-22-00893">
+        <label>23.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dash</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>H.</given-names>
+            </name>
+          </person-group>
+          <article-title>Feature selection for classification</article-title>
+          <source>Intell. Data Anal.</source>
+          <year>1997</year>
+          <volume>1</volume>
+          <fpage>131</fpage>
+          <lpage>156</lpage>
+          <pub-id pub-id-type="doi">10.3233/IDA-1997-1302</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B24-entropy-22-00893">
+        <label>24.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Riaz</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Asad</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Al-Arif</surname>
+              <given-names>S.M.R.</given-names>
+            </name>
+            <name>
+              <surname>Alonso</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Dima</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Corr</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Slabaugh</surname>
+              <given-names>G.</given-names>
+            </name>
+          </person-group>
+          <article-title>Fcnet: A convolutional neural network for calculating functional connectivity from functional mri</article-title>
+          <source>Proceedings of the International Workshop on Connectomics in Neuroimaging</source>
+          <conf-loc>Quebec City, QC, Canada</conf-loc>
+          <conf-date>14 September 2017</conf-date>
+          <fpage>70</fpage>
+          <lpage>78</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B25-entropy-22-00893">
+        <label>25.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Riaz</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Asad</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Al Arif</surname>
+              <given-names>S.M.R.</given-names>
+            </name>
+            <name>
+              <surname>Alonso</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Dima</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Corr</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Slabaugh</surname>
+              <given-names>G.</given-names>
+            </name>
+          </person-group>
+          <article-title>Deep fMRI: An end-to-end deep network for classification of fMRI data</article-title>
+          <source>Proceedings of the 2018 IEEE 15th International Symposium on Biomedical Imaging (ISBI 2018)</source>
+          <conf-loc>Washington, DC, USA</conf-loc>
+          <conf-date>4–7 April 2008</conf-date>
+          <fpage>1419</fpage>
+          <lpage>1422</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B26-entropy-22-00893">
+        <label>26.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zou</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Zheng</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Miao</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Mckeown</surname>
+              <given-names>M.J.</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>Z.J.</given-names>
+            </name>
+          </person-group>
+          <article-title>3D CNN based automatic diagnosis of attention deficit hyperactivity disorder using functional and structural MRI</article-title>
+          <source>IEEE Access Pract. Innov. Open Solut.</source>
+          <year>2017</year>
+          <volume>5</volume>
+          <fpage>23626</fpage>
+          <lpage>23636</lpage>
+          <pub-id pub-id-type="doi">10.1109/ACCESS.2017.2762703</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B27-entropy-22-00893">
+        <label>27.</label>
+        <element-citation publication-type="web">
+          <article-title>ADHD-200 Preprocessed</article-title>
+          <comment>Available online: <ext-link ext-link-type="uri" xlink:href="http://preprocessed-connectomes-project.org/adhd200">http://preprocessed-connectomes-project.org/adhd200</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2020-07-20">(accessed on 20 July 2020)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B28-entropy-22-00893">
+        <label>28.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bellec</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Chu</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Chouinard-Decorte</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Benhajali</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <name>
+              <surname>Margulies</surname>
+              <given-names>D.S.</given-names>
+            </name>
+            <name>
+              <surname>Craddock</surname>
+              <given-names>R.C.</given-names>
+            </name>
+          </person-group>
+          <article-title>The Neuro Bureau ADHD-200 Preprocessed repository</article-title>
+          <source>NeuroImage</source>
+          <year>2017</year>
+          <volume>144</volume>
+          <fpage>275</fpage>
+          <lpage>286</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2016.06.034</pub-id>
+          <pub-id pub-id-type="pmid">27423255</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B29-entropy-22-00893">
+        <label>29.</label>
+        <element-citation publication-type="web">
+          <article-title>neurobureau:NIAKPipeline</article-title>
+          <comment>Available online: <ext-link ext-link-type="uri" xlink:href="https://www.nitrc.org/plugins/mwiki/index.php?title=neurobureau:NIAKPipeline#Overview_of_the_NIAK_preprocessing_release_of_ADHD200">https://www.nitrc.org/plugins/mwiki/index.php?title=neurobureau:NIAKPipeline#Overview_of_the_NIAK_preprocessing_release_of_ADHD200</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2020-07-20">(accessed on 20 July 2020)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B30-entropy-22-00893">
+        <label>30.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tzourio-Mazoyer</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Landeau</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Papathanassiou</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Crivello</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Etard</surname>
+              <given-names>O.</given-names>
+            </name>
+            <name>
+              <surname>Delcroix</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Mazoyer</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Joliot</surname>
+              <given-names>M.</given-names>
+            </name>
+          </person-group>
+          <article-title>Automated anatomical labeling of activations in SPM using a macroscopic anatomical parcellation of the MNI MRI single-subject brain</article-title>
+          <source>NeuroImage</source>
+          <year>2002</year>
+          <volume>15</volume>
+          <fpage>273</fpage>
+          <lpage>289</lpage>
+          <pub-id pub-id-type="doi">10.1006/nimg.2001.0978</pub-id>
+          <pub-id pub-id-type="pmid">11771995</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B31-entropy-22-00893">
+        <label>31.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhu</surname>
+              <given-names>X.</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Yao</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Xu</surname>
+              <given-names>P.</given-names>
+            </name>
+          </person-group>
+          <article-title>Separated channel convolutional neural network to realize the training free motor imagery BCI systems</article-title>
+          <source>Biomed. Signal Process. Control</source>
+          <year>2019</year>
+          <volume>49</volume>
+          <fpage>396</fpage>
+          <lpage>403</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.bspc.2018.12.027</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B32-entropy-22-00893">
+        <label>32.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chorowski</surname>
+              <given-names>J.K.</given-names>
+            </name>
+            <name>
+              <surname>Bahdanau</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Serdyuk</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Cho</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Bengio</surname>
+              <given-names>Y.</given-names>
+            </name>
+          </person-group>
+          <article-title>Attention-based models for speech recognition</article-title>
+          <source>Proceedings of the Advances in Neural Information Processing Systems</source>
+          <conf-loc>Montreal, QC, Canada</conf-loc>
+          <conf-date>7–12 December 2015</conf-date>
+          <fpage>577</fpage>
+          <lpage>585</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B33-entropy-22-00893">
+        <label>33.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Vaswani</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Shazeer</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Parmar</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Uszkoreit</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Jones</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Gomez</surname>
+              <given-names>A.N.</given-names>
+            </name>
+            <name>
+              <surname>Kaiser</surname>
+              <given-names>Ł.</given-names>
+            </name>
+            <name>
+              <surname>Polosukhin</surname>
+              <given-names>I.</given-names>
+            </name>
+          </person-group>
+          <article-title>Attention is all you need</article-title>
+          <source>Proceedings of the Advances in Neural Information Processing Systems</source>
+          <conf-loc>Long Beach, CA, USA</conf-loc>
+          <conf-date>4–9 December 2017</conf-date>
+          <fpage>5998</fpage>
+          <lpage>6008</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B34-entropy-22-00893">
+        <label>34.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Qin</surname>
+              <given-names>X.</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>Z.</given-names>
+            </name>
+            <name>
+              <surname>Bai</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <name>
+              <surname>Xie</surname>
+              <given-names>X.</given-names>
+            </name>
+            <name>
+              <surname>Jia</surname>
+              <given-names>H.</given-names>
+            </name>
+          </person-group>
+          <article-title>FFA-Net: Feature Fusion Attention Network for Single Image Dehazing</article-title>
+          <source>Proceedings of the Thirty-Fourth AAAI Conference</source>
+          <conf-loc>New York, NY, USA</conf-loc>
+          <conf-date>7–12 February 2020</conf-date>
+          <fpage>11908</fpage>
+          <lpage>11915</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B35-entropy-22-00893">
+        <label>35.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Luong</surname>
+              <given-names>M.-T.</given-names>
+            </name>
+            <name>
+              <surname>Pham</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>Manning</surname>
+              <given-names>C.D.</given-names>
+            </name>
+          </person-group>
+          <article-title>Effective approaches to attention-based neural machine translation</article-title>
+          <source>arXiv</source>
+          <year>2015</year>
+          <pub-id pub-id-type="arxiv">1508.04025</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B36-entropy-22-00893">
+        <label>36.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Xu</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Ba</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Kiros</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Cho</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Courville</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Salakhudinov</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Zemel</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Bengio</surname>
+              <given-names>Y.</given-names>
+            </name>
+          </person-group>
+          <article-title>Show, attend and tell: Neural image caption generation with visual attention</article-title>
+          <source>Proceedings of the International Conference on Machine Learning</source>
+          <conf-loc>Miami, FL, USA</conf-loc>
+          <conf-date>9–11 December 2015</conf-date>
+          <fpage>2048</fpage>
+          <lpage>2057</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B37-entropy-22-00893">
+        <label>37.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kingma</surname>
+              <given-names>D.P.</given-names>
+            </name>
+            <name>
+              <surname>Ba</surname>
+              <given-names>J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Adam: A method for stochastic optimization</article-title>
+          <source>arXiv</source>
+          <year>2014</year>
+          <pub-id pub-id-type="arxiv">1412.6980</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B38-entropy-22-00893">
+        <label>38.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Glorot</surname>
+              <given-names>X.</given-names>
+            </name>
+            <name>
+              <surname>Bengio</surname>
+              <given-names>Y.</given-names>
+            </name>
+          </person-group>
+          <article-title>Understanding the difficulty of training deep feedforward neural networks</article-title>
+          <source>Proceedings of the Thirteenth International Conference on Artificial Intelligence and Statistics</source>
+          <conf-loc>Sardinia, Italy</conf-loc>
+          <conf-date>13–15 May 2010</conf-date>
+          <fpage>249</fpage>
+          <lpage>256</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B39-entropy-22-00893">
+        <label>39.</label>
+        <element-citation publication-type="web">
+          <article-title>The ADHD-200 Global Competition</article-title>
+          <comment>Available online: <ext-link ext-link-type="uri" xlink:href="http://fcon_1000.projects.nitrc.org/indi/adhd200/junk/results.html">http://fcon_1000.projects.nitrc.org/indi/adhd200/junk/results.html</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2020-07-20">(accessed on 20 July 2020)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B40-entropy-22-00893">
+        <label>40.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tenev</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Markovska-Simoska</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Kocarev</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Pop-Jordanov</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Muller</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Candrian</surname>
+              <given-names>G.</given-names>
+            </name>
+          </person-group>
+          <article-title>Machine learning approach for classification of ADHD adults</article-title>
+          <source>Int. J. Psychophysiol. Off. J. Int. Organ. Psychophysiol.</source>
+          <year>2014</year>
+          <volume>93</volume>
+          <fpage>162</fpage>
+          <lpage>166</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.ijpsycho.2013.01.008</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B41-entropy-22-00893">
+        <label>41.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhang</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <name>
+              <surname>Tang</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <name>
+              <surname>Zhou</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>C.</given-names>
+            </name>
+          </person-group>
+          <article-title>ADHD classification by feature space separation with sparse representation</article-title>
+          <source>Proceedings of the 2018 IEEE 23rd International Conference on Digital Signal Processing (DSP)</source>
+          <conf-loc>Shanghai, China</conf-loc>
+          <conf-date>19–21 November 2018</conf-date>
+          <fpage>1</fpage>
+          <lpage>5</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B42-entropy-22-00893">
+        <label>42.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Deco</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Jirsa</surname>
+              <given-names>V.K.</given-names>
+            </name>
+            <name>
+              <surname>McIntosh</surname>
+              <given-names>A.R.</given-names>
+            </name>
+          </person-group>
+          <article-title>Emerging concepts for the dynamical organization of resting-state activity in the brain</article-title>
+          <source>Nat. Rev. Neurosci.</source>
+          <year>2011</year>
+          <volume>12</volume>
+          <fpage>43</fpage>
+          <lpage>56</lpage>
+          <pub-id pub-id-type="doi">10.1038/nrn2961</pub-id>
+          <pub-id pub-id-type="pmid">21170073</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B43-entropy-22-00893">
+        <label>43.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ma</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Calhoun</surname>
+              <given-names>V.D.</given-names>
+            </name>
+            <name>
+              <surname>Phlypo</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Adali</surname>
+              <given-names>T.</given-names>
+            </name>
+          </person-group>
+          <article-title>Dynamic changes of spatial functional network connectivity in individuals and schizophrenia patients using independent vector analysis</article-title>
+          <source>NeuroImage</source>
+          <year>2014</year>
+          <volume>90</volume>
+          <fpage>196</fpage>
+          <lpage>206</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2013.12.063</pub-id>
+          <pub-id pub-id-type="pmid">24418507</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B44-entropy-22-00893">
+        <label>44.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bahdanau</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Cho</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Bengio</surname>
+              <given-names>Y.</given-names>
+            </name>
+          </person-group>
+          <article-title>Neural machine translation by jointly learning to align and translate</article-title>
+          <source>arXiv</source>
+          <year>2014</year>
+          <pub-id pub-id-type="arxiv">1409.0473</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B45-entropy-22-00893">
+        <label>45.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zheng</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Mukherjee</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Dong</surname>
+              <given-names>X.L.</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>F.</given-names>
+            </name>
+          </person-group>
+          <article-title>Opentag: Open attribute value extraction from product profiles</article-title>
+          <source>Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery &amp; Data Mining</source>
+          <conf-loc>London, UK</conf-loc>
+          <conf-date>19–23 August 2018</conf-date>
+          <fpage>1049</fpage>
+          <lpage>1058</lpage>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+  <floats-group>
+    <fig id="entropy-22-00893-f001" orientation="portrait" position="float">
+      <label>Figure 1</label>
+      <caption>
+        <p>Architecture of the proposed SC-CNN-XX model for diagnosing attention deficit hyperactivity disorder (ADHD).</p>
+      </caption>
+      <graphic xlink:href="entropy-22-00893-g001"/>
+    </fig>
+    <fig id="entropy-22-00893-f002" orientation="portrait" position="float">
+      <label>Figure 2</label>
+      <caption>
+        <p>The leave-one-site-out cross-validation scheme.</p>
+      </caption>
+      <graphic xlink:href="entropy-22-00893-g002"/>
+    </fig>
+    <fig id="entropy-22-00893-f003" orientation="portrait" position="float">
+      <label>Figure 3</label>
+      <caption>
+        <p>The accuracies and areas under the curves (AUCs) for each test site based on “SC-CNN+XX” models.</p>
+      </caption>
+      <graphic xlink:href="entropy-22-00893-g003"/>
+    </fig>
+    <table-wrap id="entropy-22-00893-t001" orientation="portrait" position="float">
+      <object-id pub-id-type="pii">entropy-22-00893-t001_Table 1</object-id>
+      <label>Table 1</label>
+      <caption>
+        <p>The demographic information for different sites.</p>
+      </caption>
+      <table frame="hsides" rules="groups">
+        <thead>
+          <tr>
+            <th rowspan="2" align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" colspan="1">Site</th>
+            <th colspan="2" align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1">ADHD</th>
+            <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">
+</th>
+            <th colspan="2" align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1">HC</th>
+            <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">
+</th>
+            <th rowspan="2" align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" colspan="1">Volumes</th>
+          </tr>
+          <tr>
+            <th align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Age</th>
+            <th align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Count</th>
+            <th align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Total</th>
+            <th align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Age</th>
+            <th align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Count</th>
+            <th align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">KKI</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">8–13</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">10/15(F/M)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">35</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">8–13</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">28/41(F/M)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">69</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">152/119</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">NI</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">11–21</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">5/31(F/M)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">36</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">12–26</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">25/12(F/M)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">37</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">257</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">NYU</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">7–18</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">34/117(F/M)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">151</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">7–18</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">55/56(F/M)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">111</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">176/172</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">OHSU</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">7–12</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">13/30(F/M)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">43</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">7–12</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">40/30(F/M)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">70</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">78/50/73</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">Peking</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">8–17</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">10/92(F/M)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">102</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">8–15</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">59/84(F/M)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">143</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">236/231</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Total</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">-</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">-</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">422</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">-</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">-</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">597</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">-</td>
+          </tr>
+        </tbody>
+      </table>
+    </table-wrap>
+    <table-wrap id="entropy-22-00893-t002" orientation="portrait" position="float">
+      <object-id pub-id-type="pii">entropy-22-00893-t002_Table 2</object-id>
+      <label>Table 2</label>
+      <caption>
+        <p>Comparison of our proposed models with the average results of ADHD-200 competition teams, FCNet, 3D-CNN, and DeepFMRI in multi-site data.</p>
+      </caption>
+      <table frame="hsides" rules="groups">
+        <thead>
+          <tr>
+            <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">
+</th>
+            <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">NYU</th>
+            <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">Peking</th>
+            <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">OHSU</th>
+            <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">KKI</th>
+            <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">NI</th>
+            <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">Overall Accuracy</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">Previous methods</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">
+</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">ADHD-200 competition [<xref rid="B39-entropy-22-00893" ref-type="bibr">39</xref>]</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">35.2%</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">51.1%</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">65.4%</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">61.9%</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">57.0%</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">54.1%</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">FCNet [<xref rid="B24-entropy-22-00893" ref-type="bibr">24</xref>]</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">58.5%</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">62.7%</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">-</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">-</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">60.0%</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">60.4%</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">3D-CNN [<xref rid="B26-entropy-22-00893" ref-type="bibr">26</xref>]</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">-</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">62.9%</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">-</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">72.8%</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">-</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">67.8%</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">DeepFMRI [<xref rid="B25-entropy-22-00893" ref-type="bibr">25</xref>]</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">73.1%</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">62.7%</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">-</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">-</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">67.9%</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">67.9%</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">Our models</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">
+</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">
+</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">SC-CNN-Dense</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">55.4%</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">60.3%</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">59.8%</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">69.2%</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">63.0%</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">61.3%</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">SC-CNN</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">52.4%</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">60.2%</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">61.6%</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">68.1%</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">64.4%</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">61.5%</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">SC-CNN-LSTM</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">56.3%</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">61.5%</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">61.7%</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">75.3%</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">63.0%</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">63.6%</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">SC-CNN-Attention</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<bold><italic>60.4%</italic></bold>
+</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<bold><italic>65.2%</italic></bold>
+</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<bold><italic>64.4%</italic></bold>
+</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<bold><italic>77.7%</italic></bold>
+</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<bold><italic>75.3%</italic></bold>
+</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+<bold><italic>68.6%</italic></bold>
+</td>
+          </tr>
+        </tbody>
+      </table>
+    </table-wrap>
+  </floats-group>
+</article>

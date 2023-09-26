@@ -1,0 +1,1033 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">eNeuro</journal-id>
+      <journal-id journal-id-type="iso-abbrev">eNeuro</journal-id>
+      <journal-id journal-id-type="hwp">eneuro</journal-id>
+      <journal-id journal-id-type="pmc">eneuro</journal-id>
+      <journal-id journal-id-type="publisher-id">eNeuro</journal-id>
+      <journal-title-group>
+        <journal-title>eNeuro</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">2373-2822</issn>
+      <publisher>
+        <publisher-name>Society for Neuroscience</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">32317343</article-id>
+      <article-id pub-id-type="pmc">7221355</article-id>
+      <article-id pub-id-type="doi">10.1523/ENEURO.0543-19.2020</article-id>
+      <article-id pub-id-type="publisher-id">eN-NWR-0543-19</article-id>
+      <article-categories>
+        <subj-group subj-group-type="hwp-journal-coll">
+          <subject>3</subject>
+        </subj-group>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article: New Research</subject>
+          <subj-group>
+            <subject>Disorders of the Nervous System</subject>
+          </subj-group>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Topological Data Analysis Reveals Robust Alterations in the Whole-Brain and Frontal Lobe Functional Connectomes in Attention-Deficit/Hyperactivity Disorder</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Gracia-Tabuenca</surname>
+            <given-names>Zeus</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Díaz-Patiño</surname>
+            <given-names>Juan Carlos</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Arelio</surname>
+            <given-names>Isaac</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" corresp="yes">
+          <name>
+            <surname>Alcauter</surname>
+            <given-names>Sarael</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <aff id="aff1"><label>1</label>Instituto de Neurobiología, <institution>Universidad Nacional Autónoma de México</institution>, Querétaro 76230, <country>Mexico</country></aff>
+        <aff id="aff2"><label>2</label>Instituto de Matemáticas, <institution>Universidad Nacional Autónoma de México</institution>, Querétaro 76230, <country>Mexico</country></aff>
+      </contrib-group>
+      <author-notes>
+        <fn fn-type="other">
+          <p>The authors declare no competing financial interests.</p>
+        </fn>
+        <fn fn-type="con">
+          <p>Author contributions: Z.G.-T., J.C.D.-P., I.A., and S.A. designed research; Z.G.-T. and J.C.D.-P. performed research; Z.G.-T. and J.C.D.-P. analyzed data; Z.G.-T. and S.A. wrote the paper.</p>
+        </fn>
+        <fn fn-type="other">
+          <p>Z.G.-T. received a Fellowship (330142) from the Consejo Nacional de Ciencia y Tecnología (CONACYT).</p>
+        </fn>
+        <corresp id="cor1">Correspondence should be addressed to Sarael Alcauter at <email>alcauter@inb.unam.mx</email>.</corresp>
+      </author-notes>
+      <pub-date pub-type="epreprint">
+        <day>13</day>
+        <month>4</month>
+        <year>2020</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>12</day>
+        <month>5</month>
+        <year>2020</year>
+      </pub-date>
+      <pub-date pub-type="collection">
+        <season>May-Jun</season>
+        <year>2020</year>
+      </pub-date>
+      <volume>7</volume>
+      <issue>3</issue>
+      <elocation-id>ENEURO.0543-19.2020</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>17</day>
+          <month>12</month>
+          <year>2019</year>
+        </date>
+        <date date-type="rev-recd">
+          <day>4</day>
+          <month>3</month>
+          <year>2020</year>
+        </date>
+        <date date-type="accepted">
+          <day>2</day>
+          <month>4</month>
+          <year>2020</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Copyright © 2020 Gracia-Tabuenca et al.</copyright-statement>
+        <copyright-year>2020</copyright-year>
+        <copyright-holder>Gracia-Tabuenca et al.</copyright-holder>
+        <license license-type="open-access" xlink:href="http://creativecommons.org/licenses/by/4.0/">
+          <license-p>This is an open-access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International license</ext-link>, which permits unrestricted use, distribution and reproduction in any medium provided that the original work is properly attributed.</license-p>
+        </license>
+      </permissions>
+      <self-uri content-type="pdf" xlink:href="ENEURO.0543-19.2020.pdf"/>
+      <self-uri xlink:role="icon" xlink:href="ENEURO.0543-19.2020g1.jpg"/>
+      <abstract abstract-type="graphical">
+        <title>Visual Abstract</title>
+        <p>
+<fig id="F6" fig-type="featured" orientation="portrait" position="float"><graphic xlink:href="SN-ENUJ200097F006"/></fig>
+</p>
+      </abstract>
+      <abstract>
+        <p>Attention-deficit/hyperactivity disorder (ADHD) is a developmental disorder characterized by difficulty to control the own behavior. Neuroimaging studies have related ADHD with the interplay of fronto-parietal attention systems with the default mode network (DMN; <xref rid="B6" ref-type="bibr">Castellanos and Aoki, 2016</xref>). However, some results have been inconsistent, potentially due to methodological differences in the analytical strategies when defining the brain functional network, i.e., the functional connectivity threshold and/or the brain parcellation scheme. Here, we make use of topological data analysis (TDA) to explore the brain connectome as a function of the filtration value (i.e., the connectivity threshold), instead of using a static connectivity threshold. Specifically, we characterized the transition from all nodes being isolated to being connected into a single component as a function of the filtration value. We explored the utility of such a method to identify differences between 81 children with ADHD (45 male, age: 7.26–17.61 years old) and 96 typically developing children (TDC; 59 male, age: 7.17–17.96 years old), using a public dataset of resting state (rs)fMRI in human subjects. Results were highly congruent when using four different brain segmentations (atlases), and exhibited significant differences for the brain topology of children with ADHD, both at the whole-brain network and the functional subnetwork levels, particularly involving the frontal lobe and the DMN. Therefore, this is a solid approach that complements connectomics-related methods and may contribute to identify the neurophysio-pathology of ADHD.</p>
+      </abstract>
+      <kwd-group>
+        <kwd>attention-deficit/hyperactivity disorder</kwd>
+        <kwd>functional connectivity</kwd>
+        <kwd>persistent homology</kwd>
+        <kwd>resting-state fMRI</kwd>
+        <kwd>topological data analysis</kwd>
+      </kwd-group>
+      <counts>
+        <fig-count count="6"/>
+        <table-count count="1"/>
+        <equation-count count="0"/>
+        <ref-count count="61"/>
+        <page-count count="10"/>
+        <word-count count="00"/>
+      </counts>
+      <custom-meta-group>
+        <custom-meta>
+          <meta-name>cover-date</meta-name>
+          <meta-value>May/June 2020</meta-value>
+        </custom-meta>
+      </custom-meta-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec sec-type="intro" id="s1">
+      <title>Significance Statement</title>
+      <p>Topological data analysis (TDA) investigates the topology of interacting nodes. It may model the connectomes as a topological process instead of a static graph, exploring the transition of all nodes being isolated to binding together, as a function of the connectivity threshold. Here, we explored three parameters to characterize the algebraic topology of individual connectomes using four different brain atlases, further exploring the subnetwork levels. Our findings showed that the area under the curve (AUC) robustly differentiates children with attention-deficit/hyperactivity disorder (ADHD) and typically developing children (TDC), suggesting decreased functional segregation, with the greatest effects on the frontal lobe and the default-mode network. Overall, these results support the use of the proposed methods to robustly explore topological differences in the brain connectome.</p>
+    </sec>
+    <sec sec-type="intro" id="s2">
+      <title>Introduction</title>
+      <p>Current neuroimaging technology allows the exploration of the human brain as a network of structurally and/or functionally connected constituents, i.e., voxels or regions of interest. In particular, functional connectivity is defined as the synchrony of neuronal activity patterns of anatomically separated brain regions (<xref rid="B1" ref-type="bibr">Aertsen et al., 1989</xref>; <xref rid="B21" ref-type="bibr">Friston et al., 1993</xref>) and many studies have explored this property to provide new insights about the functional organization of the brain in health and disease (<xref rid="B53" ref-type="bibr">van den Heuvel and Pol, 2010</xref>; <xref rid="B33" ref-type="bibr">Lee et al., 2013</xref>; <xref rid="B35" ref-type="bibr">Lord et al., 2017</xref>), providing the means to study the neurofunctional alterations of neurologic and psychiatric disorders from a systems perspective.</p>
+      <p>One of the most commonly used frameworks to explore the functional brain network is graph theory, which provides a theoretical basis to describe and characterize complex networks (<xref rid="B39" ref-type="bibr">Rubinov and Sporns, 2010</xref>; <xref rid="B18" ref-type="bibr">Fornito et al., 2013</xref>). In this framework, the brain network is modeled as a graph composed of a set of nodes (mainly voxels or larger regions) and their connections (in this case, the functional connectivity between pairs of elements). In practice, this is constructed using a matrix where each entry is a measure of connectivity between two nodes and then a threshold is applied to construct an adjacency matrix which represents the non-spurious connections. However, there is no general criterion to assign an appropriate set of regions of interest (ROIs), nor a defined threshold, which may result in divergent results among studies. For instance, several studies exploring the functional connectome of children diagnosed with attention-deficit/hyperactivity disorder (ADHD), have reported different results. Specifically, some studies have found higher network segregation and lower integration in ADHD patients compared with controls (<xref rid="B56" ref-type="bibr">Wang et al., 2009b</xref>; <xref rid="B34" ref-type="bibr">Lin et al., 2014</xref>), while others found no differences when exploring the same properties (<xref rid="B9" ref-type="bibr">Cocchi et al., 2012</xref>; <xref rid="B41" ref-type="bibr">Sato et al., 2013</xref>). Such divergent results may be partially explained by the variability in methods, including threshold and ROIs selection (<xref rid="B29" ref-type="bibr">Konrad and Eickhoff, 2010</xref>; <xref rid="B6" ref-type="bibr">Castellanos and Aoki, 2016</xref>), as well as the variable robustness of some of the most used approaches (<xref rid="B46" ref-type="bibr">Somandepalli et al., 2015</xref>).</p>
+      <p>Recently, topological data analysis (TDA), has been adopted in neuroimaging as a tool to quantify and visualize the evolution of the brain network at different thresholds (<xref rid="B30" ref-type="bibr">Lee et al., 2011</xref>, <xref rid="B32" ref-type="bibr">2017</xref>; <xref rid="B48" ref-type="bibr">Stolz et al., 2018</xref>; <xref rid="B44" ref-type="bibr">Sizemore et al., 2018</xref>, <xref rid="B45" ref-type="bibr">2019</xref>; <xref rid="B15" ref-type="bibr">Expert et al., 2019</xref>; <xref rid="B40" ref-type="bibr">Santos et al., 2019</xref>). The main objective of this method is to model the network as a topological space instead of a graph (<xref rid="B13" ref-type="bibr">Edelsbrunner et al., 2000</xref>; <xref rid="B61" ref-type="bibr">Zomorodian and Carlsson, 2005</xref>), allowing the assessment of the functional connectivity matrix as a topological process instead of a static threshold-dependent representation of the network. One of the possible applications is to characterize how the isolated nodes gradually bind together into larger components (sets of connected nodes) as a function of the filtration value (connectivity threshold), until a single component is recruited. For this purpose, the number of components at a given filtration value is termed the Betti-0 (see Materials and Methods). This process is summarized in a so called Betti-0 curve (<xref ref-type="fig" rid="F1">Fig. 1</xref>), which has been shown to differentiate children with developmental disorders from controls using data from positron emission tomography (PET) and defining the brain network at the group-level (<xref rid="B30" ref-type="bibr">Lee et al., 2011</xref>, <xref rid="B31" ref-type="bibr">2012</xref>). However, it has been typically applied to brain networks defined at the group level, i.e., exploring the covariance of concatenated physiological or structural data from groups of subjects, instead of exploring the individual characteristics of the network and comparing them between groups. Furthermore, the consistency of the method across different brain segmentation schemes has not been explored.</p>
+      <fig id="F1" fig-type="figure" orientation="portrait" position="float">
+        <label>Figure 1.</label>
+        <caption>
+          <p> The Betti-0 curve. <bold><italic>A</italic></bold>, Two-dimensional toy example: a set of 15 nodes, four filtration values ε, represented as the circle diameter and their corresponding Betti-0 (B<sub>0</sub>). <bold><italic>B</italic></bold>, Betti-0 curve for a hypothetical brain network; each point in the curve represents the B<sub>0</sub> for each filtration value. In both cases, at ε = 0 the number of components is equal to the number of nodes, <italic>n</italic>. As the filtration value increases, the number of components reduces, and eventually will reach a single one containing all nodes. Brain views generated with brain-net (<xref rid="B59" ref-type="bibr">Xia et al., 2013</xref>), <italic>r</italic> stands for Pearson’s correlation.</p>
+        </caption>
+        <graphic xlink:href="SN-ENUJ200097F001"/>
+      </fig>
+      <p>In this work, TDA was applied to explore individual brain networks based on the resting state functional MRI (rsfMRI) of children diagnosed with ADHD and typically developing children (TDC), obtained from the publicly available ADHD-200 database (<xref rid="B25" ref-type="bibr">HD-200 Consortium, 2012</xref>). First, the consistency of this methodology was explored when using four different brain segmentation schemes (atlases), and then group differences were identified between ADHD and TDC groups, at the whole-brain and subnetwork levels. ADHD is a developmental disorder characterized by a lack of control of appropriate behavior and a difficulty to maintain attention (<xref rid="B58" ref-type="bibr">WHO, 1992</xref>; <xref rid="B2" ref-type="bibr">APA, 1994</xref>). Current theories propose the potential alteration of multiple functional networks and their interaction, including the default, cognitive control (fronto-parietal), dorsal and ventral attention, and salience networks (<xref rid="B47" ref-type="bibr">Sonuga-Barke and Castellanos, 2007</xref>; <xref rid="B6" ref-type="bibr">Castellanos and Aoki, 2016</xref>). Consequently, it was expected that the proposed methodology would reveal significant differences between groups among the components of these functional networks.</p>
+    </sec>
+    <sec sec-type="materials|methods" id="s3">
+      <title>Materials and Methods</title>
+      <sec id="s3A">
+        <title>Sample</title>
+        <p>Imaging and phenotypic data from 263 participants corresponding to the New York University Child Study Center dataset were obtained from the ADHD-200 database (<ext-link ext-link-type="uri" xlink:href="https://fcon_1000.projects.nitrc.org/indi/adhd200/">https://fcon_1000.projects.nitrc.org/indi/adhd200/</ext-link>). Subjects reported with a secondary diagnosis and/or not medication-naive status were discarded. Only those with good imaging quality and complete phenotypic information were used for subsequent analysis, resulting in a total of 182 children. Study protocols were approved by the New York University Institutional Review Boards, and after an explanation of study procedures a written informed consent from parents and assent from children were required.</p>
+        <p>Pediatric diagnosis was based on the Schedule of Affective Disorders and Schizophrenia for Children Present and Lifetime Version (KSADS-PL) and the Conners’ Parent Rating Scale-Revised, Long version (CPRS-LV). Moreover, IQ was measured with the Wechsler Abbreviated Scale of Intelligence (WASI). Inclusion in the ADHD group was based on the parent and child responses to KSADS-PL and obtaining a t-score greater or equal than 65 in any of the ADHD related indices of the CPRS-LV. TDC had ADHD summarized t-scores below 60, and lack of any DSM-IV axis-I disorders. Exclusion criteria were an IQ below 80 or any chronic medical conditions. However, phenotypic data of three ADHD datasets showed full intelligence scores below 80, while two TDC showed <italic>t</italic> scores &gt;60 in the ADHD summary scale. Data from those subjects were discarded for further analysis, resulting in a final sample of 81 ADHD children (average age ± SD: 10.5 ± 2.48 years old) and 96 TDC (12.26 ± 3.07 years old; <xref rid="T1" ref-type="table">Table 1</xref>).</p>
+        <table-wrap id="T1" orientation="portrait" position="float">
+          <label>Table 1</label>
+          <caption>
+            <p>Phenotypic information by diagnostic group</p>
+          </caption>
+          <table frame="hsides" rules="none">
+            <col align="left" valign="top" span="1"/>
+            <col align="left" valign="top" span="1"/>
+            <col align="left" valign="top" span="1"/>
+            <col align="left" valign="top" span="1"/>
+            <thead>
+              <tr>
+                <th align="center" rowspan="1" colspan="1"/>
+                <th align="left" rowspan="1" colspan="1">TDC</th>
+                <th align="left" rowspan="1" colspan="1">ADHD</th>
+                <th align="center" rowspan="1" colspan="1"/>
+              </tr>
+            </thead>
+            <tbody valign="top">
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Frequency</td>
+                <td rowspan="1" colspan="1">96</td>
+                <td rowspan="1" colspan="1">81</td>
+                <td align="left" rowspan="1" colspan="1">
+</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Sex (F/M)</td>
+                <td rowspan="1" colspan="1">51/45</td>
+                <td rowspan="1" colspan="1">22/59</td>
+                <td align="left" rowspan="1" colspan="1">OR = 3.019</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Age (years old)</td>
+                <td rowspan="1" colspan="1">12.26 (±3.07)</td>
+                <td rowspan="1" colspan="1">10.5 (±2.48)</td>
+                <td align="left" rowspan="1" colspan="1"><italic>d</italic> = 0.63</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">ADHD index</td>
+                <td rowspan="1" colspan="1">44.97 (±4.75)</td>
+                <td rowspan="1" colspan="1">72.78 (±8.18)</td>
+                <td align="left" rowspan="1" colspan="1"><italic>d</italic> = –4.26</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">IQ</td>
+                <td rowspan="1" colspan="1">111.27 (±13.92)</td>
+                <td rowspan="1" colspan="1">108.22 (±13.69)</td>
+                <td align="left" rowspan="1" colspan="1"><italic>d</italic> = 0.22</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Motion (mm)</td>
+                <td rowspan="1" colspan="1">0.067 (±0.054)</td>
+                <td rowspan="1" colspan="1">0.072 (±0.041)</td>
+                <td align="left" rowspan="1" colspan="1"><italic>d</italic> = –0.11</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <fn id="TF1">
+              <p>Motion stands for the average RMS of the relative head motion within the scanner (computed with FSL’s MCFLIRT). Grouped effect sizes by odds ratio (OR) and Cohen’s <italic>d</italic> (<italic>d</italic>).</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+      </sec>
+      <sec id="s3B">
+        <title>Imaging acquisition</title>
+        <p>Magnetic resonance images were acquired with a Siemens Magnetom Allegra 3T scanner (Siemens Medical Solutions). Whole-brain fMRI volume images were obtained using a T2<sup>*</sup>-weighted echo planar imaging interleaved sequence (TR/TE = 2000/15 ms, flip angle = 90, voxel size 3 × 3 × 4 mm<sup>3</sup>, FOV = 240 × 192 mm<sup>2</sup>) with a scan duration of 6 min. Participants were instructed to remain still, close their eyes, think of nothing systematically and not fall asleep. In order to obtain an anatomic reference, high-resolution structural T1-weighted magnetization prepared rapid acquisition gradient echo (MPRAGE) images were acquired (TR/TE = 2530/3.25 ms, flip angle = 7°, voxel size 1.3 × 1.0 × 1.3 mm<sup>3</sup>, FOV = 256 × 256 mm<sup>2</sup>).</p>
+      </sec>
+      <sec id="s3C">
+        <title>Preprocessing</title>
+        <p>Preprocessing was implemented using FMRIB’s Software Libraries (FSL v.5.0.6; <xref rid="B27" ref-type="bibr">Jenkinson et al., 2012</xref>). Steps included removing the first four volumes, slice timing, head motion correction, brain extraction, regression of confounding variables, bandpass temporal filtering (0.01–0.08 Hz), and spatial normalization. Given that psychiatric and pediatric populations usually show higher in scanner motion than controls and adults (<xref rid="B42" ref-type="bibr">Satterthwaite et al., 2012</xref>), a rigorous confounding regression strategy was implemented to minimize head motion artifacts. Specifically, several variables were regressed out from the functional data, including the six rigid-body motion parameters, the average signal from both white matter (WM) and CSF, the derivative of these eight parameters and the square of these sixteen variables (<xref rid="B23" ref-type="bibr">Gracia-Tabuenca et al., 2018</xref>). In addition, to minimize the impact of physiological noise, five principal components of the signal from WM and CSF were also included as confounding variables (<xref rid="B3" ref-type="bibr">Behzadi et al., 2007</xref>; <xref rid="B7" ref-type="bibr">Chai et al., 2012</xref>). Furthermore, those volumes with a root mean square (RMS) of relative head motion &gt;0.25 mm were also included as confounds (<xref rid="B43" ref-type="bibr">Satterthwaite et al., 2013</xref>). Subjects with an average RMS of relative head motion higher than 0.55 mm or &lt;4 min of non-motion-affected data, were discarded. Eventually, each fMRI volume was registered to its corresponding T1 image with a rigid-body transformation, followed by an affine and nonlinear registration to a 2 × 2 × 2 mm<sup>3</sup> children-specific template, the 4.5–18.5 years old NIHPD atlas (<xref rid="B16" ref-type="bibr">Fonov et al., 2011</xref>).</p>
+      </sec>
+      <sec id="s3D">
+        <title>Functional connectomes</title>
+        <p>For every dataset, four functional connectomes (connectivity matrices) were computed based on different brain atlases: AAL (<xref rid="B52" ref-type="bibr">Tzourio-Mazoyer et al., 2002</xref>), P264 (<xref rid="B37" ref-type="bibr">Power et al., 2011</xref>), CC200, and CC400 (<xref rid="B10" ref-type="bibr">Craddock et al., 2012</xref>). All of them include cerebrum and cerebellum. The first one consists of a segmentation of 116 anatomic regions, the second one is a set of 264 spherical ROIs with high reliability in both task and resting fMRI large datasets, while the last two are segmented based on functional connectivity homogeneity (with 190 and 351 nodes, respectively).</p>
+        <p>For each subject and atlas, the average fMRI signal of every defined region was extracted and then the functional connectome was computed as the Pearson’s cross-correlation between all possible pairs of regions. The reliability of the explored TDA variables along the atlases was assessed by the Kendall’s concordance coefficient (KCC).</p>
+      </sec>
+      <sec id="s3E">
+        <title>TDA</title>
+        <p>Typically, the brain connectome is modeled as a graph (G), which is a collection of nodes (V) and edges (E). Nodes usually represent regions of interest, while edges represent structural or functional connections between those nodes. Nevertheless, this graph can be represented as a topological space as well, in particular, the Rips complex, denoted by Rips(F,ε), where F represent the nodes (same as V) and ε, the filtration value, which is a positive number that states if two nodes in F are connected (if their distance is lower than ε). Algebraic properties extracted from this topological space are called Betti numbers, particularly, the Betti-0 number (B<sub>0</sub>) accounts for the number of components, i.e., the number of isolated nodes or sets of nodes connected by a sequence of edges; Betti-1 number refers to the number of cavities in the two-dimensional space between nodes, and so on (for extensive review on TDA, see <xref rid="B13" ref-type="bibr">Edelsbrunner et al., 2000</xref>; <xref rid="B45" ref-type="bibr">Sizemore et al., 2019</xref>). In this work, we focus exclusively on B<sub>0</sub>. If we start with a filtration value ε = 0, all nodes are disconnected, and the number of components equals the number of nodes. When ε gradually increases, some isolated nodes will connect with others and the number of components decreases. Therefore, B<sub>0</sub> will diminish as the nodes gradually connect to each other as ε increases. It is possible to identify the filtration values for which there is a change in B<sub>0</sub>, until there is only one large component containing all the nodes. This process is summarized in the so-called B<sub>0</sub> curve (<xref ref-type="fig" rid="F1">Fig. 1</xref>).</p>
+        <p>Here, the distance between nodes is defined as in <xref rid="B31" ref-type="bibr">Lee et al. (2012)</xref>, i.e., d(ξ, x<sub>j</sub>) = 1 − <italic>r</italic>(ξ, x<sub>j</sub>), where <italic>r</italic> is the Pearson’s correlation between the pair of nodes ξ and x<sub>j</sub>. The B<sub>0</sub> curves are computed with the TDA package in R (<ext-link ext-link-type="uri" xlink:href="https://cran.r-project.org/web/packages/TDA/index.html">https://cran.r-project.org/web/packages/TDA/index.html</ext-link>), and characterized in terms of the area under the curve (AUC), slope, and kurtosis. The AUC accounts for the overall transition from all nodes being isolated to being connected into a single component, with smaller areas suggesting that B<sub>0</sub> decreases with smaller filtration values. The slope accounts for the rate of change, being all negative, lower values mean a faster transition to a single component. Finally, the kurtosis accounts for how “tailed” the distribution is with respect to the average value, with higher values meaning faster transition to a single component.</p>
+      </sec>
+      <sec id="s3F">
+        <title>Null model</title>
+        <p>In order to prove that the estimated parameters of the B<sub>0</sub> curves are features of the brain topology, observed values were compared with those generated from a random distribution. A weighted null distribution was calculated based on the rewiring of the original connectivity matrices (<xref rid="B22" ref-type="bibr">Giusti et al., 2015</xref>). Specifically, 1000 permutations were run for each subject and parcellation.</p>
+      </sec>
+      <sec id="s3G">
+        <title>Diagnostic group inferences</title>
+        <p>Logistic regression was applied to identify significant associations between diagnostic group and the B<sub>0</sub> features, including sex, age, and head motion as covariates (<xref ref-type="disp-formula" rid="FD1">Eq. 1</xref>). This approach allows the calculation of the effect sizes of the orthogonal odds ratio (OR) for each term of the equation. All dimensional variables were standardized to <italic>z</italic> scores to be included in the model. This strategy was applied for each of the four brain atlases.
+<disp-formula id="FD1"><label>(1)</label><mml:math id="m1"><mml:mrow><mml:mi>g</mml:mi><mml:mi>r</mml:mi><mml:mi>o</mml:mi><mml:mi>u</mml:mi><mml:mi>p</mml:mi><mml:mo> </mml:mo><mml:mo>∼</mml:mo><mml:mo> </mml:mo><mml:mi>A</mml:mi><mml:mi>U</mml:mi><mml:mi>C</mml:mi><mml:mo> </mml:mo><mml:mo lspace="thickmathspace" rspace="thickmathspace">+</mml:mo><mml:mo> </mml:mo><mml:mi>k</mml:mi><mml:mi>u</mml:mi><mml:mi>r</mml:mi><mml:mi>t</mml:mi><mml:mi>o</mml:mi><mml:mi>s</mml:mi><mml:mi>i</mml:mi><mml:mi>s</mml:mi><mml:mo> </mml:mo><mml:mo lspace="thickmathspace" rspace="thickmathspace">+</mml:mo><mml:mo> </mml:mo><mml:mi>s</mml:mi><mml:mi>l</mml:mi><mml:mi>o</mml:mi><mml:mi>p</mml:mi><mml:mi>e</mml:mi><mml:mo> </mml:mo><mml:mo lspace="thickmathspace" rspace="thickmathspace">+</mml:mo><mml:mo> </mml:mo><mml:mi>s</mml:mi><mml:mi>e</mml:mi><mml:mi>x</mml:mi><mml:mo> </mml:mo><mml:mo lspace="thickmathspace" rspace="thickmathspace">+</mml:mo><mml:mo> </mml:mo><mml:mi>a</mml:mi><mml:mi>g</mml:mi><mml:mi>e</mml:mi><mml:mo> </mml:mo><mml:mo lspace="thickmathspace" rspace="thickmathspace">+</mml:mo><mml:mo> </mml:mo><mml:mi>m</mml:mi><mml:mi>o</mml:mi><mml:mi>t</mml:mi><mml:mi>i</mml:mi><mml:mi>o</mml:mi><mml:mi>n</mml:mi></mml:mrow></mml:math></disp-formula>
+</p>
+        <p>
+<xref ref-type="disp-formula" rid="FD1">Equation 1</xref> expresses logistic regression model according to Wilkinson-Rogers notation (<xref rid="B57" ref-type="bibr">Wilkinson and Rogers, 1973</xref>); “motion” accounts for average RMS relative head motion (mm).</p>
+        <p>In addition, the same logistic regression model (<xref ref-type="disp-formula" rid="FD1">Eq. 1</xref>) was implemented at intranetwork and internetwork levels, i.e., considering the seven lobes of the AAL atlas, and the thirteen functional networks defined in P264. For example, logistic regression was applied for the subset of 28 frontal lobe nodes (based on AAL atlas), referred to as the Frontal intranetwork. Then, it was applied for the frontal-parietal internetwork subset (28 + 14 nodes), and so on. Given the 28 and 91 possible combinations, for the AAL and P264, respectively, significance was set to <italic>p</italic> &lt; 0.05, corrected for a non-parametric family-wise error (FWE) approach based on clusters of edges (Network Based Statistics; <xref rid="B60" ref-type="bibr">Zalesky et al., 2010</xref>), in which a <italic>p</italic> &lt; 0.05 (bi-sided) was set for individual edges, and a null distribution of clusters was computed with 10,000 permutations.</p>
+      </sec>
+      <sec id="s3H">
+        <title>Code accessibility</title>
+        <p>The code/software described in the paper is freely available online at <ext-link ext-link-type="uri" xlink:href="https://github.com/BrainMapINB/TDA_ADHD">https://github.com/BrainMapINB/TDA_ADHD</ext-link>. Also, the code is available as <xref ref-type="supplementary-material" rid="ed1">Extended Data 1</xref>. Present results were computed with an Intel Core i7-4790 CPU @ 3.60 GHz × 8 with Ubuntu 18.04.3 LTS 64-bit.</p>
+        <supplementary-material content-type="local-data" id="ext1">
+          <object-id pub-id-type="doi">10.1523/ENEURO.0543-19.2020.ed1</object-id>
+          <label>Extended Data 1</label>
+          <caption>
+            <p>Code applied in the present article. Download <inline-supplementary-material id="ed1" mimetype="application" mime-subtype="zip" xlink:href="enu-eN-NWR-0543-19-s03.zip" content-type="local-data">Extended Data 1, ZIP file</inline-supplementary-material>.</p>
+          </caption>
+        </supplementary-material>
+      </sec>
+    </sec>
+    <sec sec-type="results" id="s4">
+      <title>Results</title>
+      <sec id="s4A">
+        <title>Agreement across brain atlases</title>
+        <p>The three explored properties of the B<sub>0</sub> curves showed a generalized sample agreement along the four brain parcellations. Significant agreement was found considering every atlas and each feature: area (KCC = 0.87; χ<sup>2</sup>
+<sub>176</sub> = 609; <italic>p</italic> = 4.67e-49), slope (KCC = 0.68; χ<sup>2</sup>
+<sub>176</sub> = 477; <italic>p</italic> = 1.33e-29), and kurtosis (KCC = 0.44; χ<sup>2</sup>
+<sub>176</sub> = 307; <italic>p</italic> = 3.65e-09). Moreover, pairwise concordance coefficient was significant for every pair of atlases and every TDA metric (<xref ref-type="fig" rid="F2">Fig. 2</xref>).</p>
+        <fig id="F2" fig-type="figure" orientation="portrait" position="float">
+          <label>Figure 2.</label>
+          <caption>
+            <p>KCC between brain parcellations for the explored properties of the B<sub>0</sub> curves: AUC, slope and kurtosis. KCC value is depicted in yellow-red, with <italic>p</italic>(KCC &gt; 0.59) &lt; 0.05, given two raters and 176 degrees of freedom.</p>
+          </caption>
+          <graphic xlink:href="SN-ENUJ200097F002"/>
+        </fig>
+      </sec>
+      <sec id="s4B">
+        <title>Observed versus null model</title>
+        <p>When comparing observed results against those generated from the null model, B<sub>0</sub> curves from the randomized data reached the single component faster than the original data (<xref ref-type="fig" rid="F3">Fig. 3</xref>). Regarding the explored parameters, the AUC and slope of the null model never reach the observed values, while permuted kurtosis are close to the original values in almost half of the iterations (<italic>p</italic> = 0.4098).</p>
+        <fig id="F3" fig-type="figure" orientation="portrait" position="float">
+          <label>Figure 3.</label>
+          <caption>
+            <p>B<sub>0</sub> curves for each group and brain parcellation. Group average with 95% confidence interval (CI) of the B<sub>0</sub> curves. Forest plot of OR with 95% CI for the logistic regression terms of AUC, kurtosis (<italic>K</italic>), and slope (<italic>S</italic>) are depicted for each brain atlas: AAL (top left), CC200 (top right), P264 (bottom left), and CC400 (bottom right). Gray dashed line stands for OR equal to one.</p>
+          </caption>
+          <graphic xlink:href="SN-ENUJ200097F003"/>
+        </fig>
+      </sec>
+      <sec id="s4C">
+        <title>Whole-brain topology</title>
+        <p>The area under the B<sub>0</sub> curves showed significantly lower odds for the ADHD group, no matter the brain atlas (AAL: OR = 0.622, <italic>p</italic> = 0.014; CC200: OR = 0.612, <italic>p</italic> = 0.008; P264: OR = 0.611, <italic>p</italic> = 0.013; CC400: OR = 0.572, <italic>p</italic> = 0.003), which means that the ADHD group has smaller AUC compared with the TDC group (<xref ref-type="fig" rid="F3">Fig. 3</xref>). The area under the B<sub>0</sub> curves accounts for the overall transition from all nodes being isolated to being connected into a single component, with smaller areas when B<sub>0</sub> decreases faster as the filtration value increases. In other words, less AUC implies lower number of components, i.e., less segregation, which should be mediated by increased connectivity in the edges mediating the integration of components. In order to explore such edges, the proportion of subjects showing connectivity for each edge at some filtration values was compared between groups (<xref ref-type="fig" rid="F4">Fig. 4</xref>). These tests showed widespread frontal short-range and cortical long-range edges being more frequently present in the ADHD group (<italic>p</italic> &lt; 0.01, uncorrected; <xref ref-type="fig" rid="F4">Fig. 4</xref>). No group differences were found for the slope nor the kurtosis, thus only the AUC was sensitive to differentiate both groups.</p>
+        <fig id="F4" fig-type="figure" orientation="portrait" position="float">
+          <label>Figure 4.</label>
+          <caption>
+            <p>Edges with differences in the proportion of subjects between groups at ε = 0.35 (<bold><italic>A</italic></bold>) and ε = 0.5, 0.75, and 1 (<bold><italic>B</italic></bold>). Nodes from each lobe (AAL atlas) are represented with different colors in the chord diagrams. Only edges with a proportion difference at <italic>p</italic> &lt; 0.01 (uncorrected) are depicted. For ε = 0.35 the edges are represented in the brain using brain-net (<xref rid="B59" ref-type="bibr">Xia et al., 2013</xref>). R stands for the right side of the brain.</p>
+          </caption>
+          <graphic xlink:href="SN-ENUJ200097F004"/>
+        </fig>
+      </sec>
+      <sec id="s4D">
+        <title>Intranetwork and internetwork inference</title>
+        <p>Logistic regressions were performed in subsets of nodes as well, corresponding to the nodes of a single lobe or functional network (intranetwork) or the nodes of two networks (internetwork), according to the lobular and the functional parcellation of the AAL and P264 atlases, respectively. Resulting patterns of the AUC were significant after FWE correction, <italic>p</italic><sub>FWE</sub> = 0.0026 and <italic>p</italic><sub>FWE</sub> = 0.0147, respectively. Anatomical subsets included the intranetwork and every possible internetwork subset including the frontal lobe plus the temporal-subcortical interaction, and in every case the ADHD group showed a lower area compared with the TDC (<xref ref-type="fig" rid="F5">Fig. 5</xref>). These results demonstrate a widespread decreased segregation of the brain network in the ADHD group, particularly involving the frontal lobe. When considering the functional systems in the P264 atlas, notably, all the subsets of nodes that included the default mode network (DMN) also showed smaller areas for the ADHD group, but other intranetwork and internetwork subsets showed similar patterns (<xref ref-type="fig" rid="F5">Fig. 5</xref>).</p>
+        <fig id="F5" fig-type="figure" orientation="portrait" position="float">
+          <label>Figure 5.</label>
+          <caption>
+            <p>Group differences for anatomic and functional subnetworks. Pairwise plot and chord diagrams (<xref rid="B24" ref-type="bibr">Gu et al., 2014</xref>) of significant differences for the area under the B<sub>0</sub> curves (<italic>p</italic><sub>FWE</sub> &lt; 0.05) between groups. Anatomical lobes (top) are based on AAL parcellation and functional networks (bottom) are based on P264 parcellation. AUD, auditory; CBL, cerebellar; CinOp, cingulo-opercular; DMN, default mode; DAN, dorsal attention: FPN, fronto-parietal; MEM, memory retrieval; SAL, salience; SMN.H, sensory/somatomotor hand; SMN.H, sensory/somatomotor mouth; SUB, subcortical; VAN, ventral attention; VIS, visual.</p>
+          </caption>
+          <graphic xlink:href="SN-ENUJ200097F005"/>
+        </fig>
+      </sec>
+    </sec>
+    <sec sec-type="discussion" id="s5">
+      <title>Discussion</title>
+      <p>In this work, methods from TDA were applied to explore the topology of the brain network as a function of the filtration value (i.e., the connectivity threshold). Resulting B<sub>0</sub> curves were characterized in terms of three parameters: AUC, slope, and kurtosis; and compared between ADHD and TDC. The application of this model to a pediatric sample showed that the AUC was significantly lower for the ADHD group, both at the whole-brain and at the subnetwork level. These results showed decreased functional segregation in the ADHD group, mainly involving the frontal lobe and the DMN.</p>
+      <p>The B<sub>0</sub> curves were characterized in terms of three parameters, the AUC, slope, and kurtosis. Pairwise agreement between brain parcellations was high for the AUC (KCC range: 0.84–0.97) and the slope (KCC range: 0.69–0.9), and medium to low for the kurtosis (KCC range: 0.59–0.66). These results suggest that this methodology is consistent among different parcellation schemes, especially for the area under the B<sub>0</sub> curve. In addition, considering that the B<sub>0</sub> features do not depend on a particular connectivity threshold, but instead explore all the filtration values with a change in the topology of the network, this methodology contributes to provide a complete picture of the brain network, overcoming one of the main limitations of other approaches. Taken together, these are potentially important advantages that may complement other methods applied to brain networks, such as graph theory, which has been shown to be highly dependent on the brain parcellation scheme (<xref rid="B55" ref-type="bibr">Wang et al., 2009a</xref>; <xref rid="B8" ref-type="bibr">Chen et al., 2018</xref>; <xref rid="B12" ref-type="bibr">Doucet et al., 2019</xref>), and on the selection of a connectivity threshold or connectivity cost (<xref rid="B54" ref-type="bibr">van den Heuvel et al., 2008</xref>; <xref rid="B17" ref-type="bibr">Fornito et al., 2010</xref>; <xref rid="B50" ref-type="bibr">Tomasi and Volkow, 2010</xref>; <xref rid="B49" ref-type="bibr">Termenon et al., 2016</xref>; <xref rid="B23" ref-type="bibr">Gracia-Tabuenca et al., 2018</xref>).</p>
+      <p>The area under the B<sub>0</sub> curve was significantly lower for the ADHD group, both at the whole-brain network and at the subnetwork level, being strikingly significant for the interactions involving the frontal lobe and the DMN. As mentioned above, the AUC accounts for the overall transition from all nodes being isolated to being connected into a single component, with smaller areas suggesting that B<sub>0</sub>, the number of components, decreases faster as the filtration value increases. Such differences in B<sub>0</sub> for a given filtration value are mediated by edges that bind together previously split components, which results from increased connectivity in some edges mediating the integration into larger components. Taken together, the results here presented can be interpreted as higher functional connectivity within the connectome and specific subnetworks in the ADHD group, especially those involving the frontal lobe and the DMN. Previous evidence has also suggested increased functional connectivity in a variety of regions of the frontal lobe in ADHD (<xref rid="B51" ref-type="bibr">Tomasi and Volkow, 2012</xref>; <xref rid="B26" ref-type="bibr">Hoekzema et al., 2014</xref>; <xref rid="B36" ref-type="bibr">Mostert et al., 2016</xref>), as well as fronto-occipital (<xref rid="B9" ref-type="bibr">Cocchi et al., 2012</xref>) and fronto-subcortical connections (<xref rid="B9" ref-type="bibr">Cocchi et al., 2012</xref>; <xref rid="B51" ref-type="bibr">Tomasi and Volkow, 2012</xref>), particularly those associated with reward and motivation (<xref rid="B51" ref-type="bibr">Tomasi and Volkow, 2012</xref>). Our results showed a similarly widespread pattern in several functional subnetworks, mainly the DMN, but also attention, salience, fronto-parietal, and auditory nodes, among others (<xref ref-type="fig" rid="F5">Fig. 5</xref>). These results provide the basis to infer the potential functional systems being affected in ADHD, being consistent with the current theories involving such networks (<xref rid="B6" ref-type="bibr">Castellanos and Aoki, 2016</xref>), particularly with the DMN interference hypothesis, which is based on the findings of altered interactions between the DMN and networks involved in top-down executive control (<xref rid="B20" ref-type="bibr">Fox et al., 2005</xref>; <xref rid="B19" ref-type="bibr">Fox and Raichle, 2007</xref>; <xref rid="B28" ref-type="bibr">Kelly et al., 2008</xref>; <xref rid="B14" ref-type="bibr">Elton et al., 2014</xref>; <xref rid="B26" ref-type="bibr">Hoekzema et al., 2014</xref>; <xref rid="B6" ref-type="bibr">Castellanos and Aoki, 2016</xref>; <xref rid="B5" ref-type="bibr">Bos et al., 2017</xref>; <xref rid="B38" ref-type="bibr">Qian et al., 2019</xref>).</p>
+      <p>Previous studies have reported a myriad of differences in network properties between ADHD and TDC participants. At the whole-brain level, higher functional segregation and lower functional integration in ADHD subjects compared with controls have been reported (<xref rid="B56" ref-type="bibr">Wang et al., 2009b</xref>; <xref rid="B34" ref-type="bibr">Lin et al., 2014</xref>), although other groups did not reproduce those results (<xref rid="B9" ref-type="bibr">Cocchi et al., 2012</xref>; <xref rid="B41" ref-type="bibr">Sato et al., 2013</xref>). Since the decreased area under the B<sub>0</sub> curves could be interpreted as higher integration and lower segregation of isolated components, our results seem to be contradictory to the aforementioned ones. Nevertheless, the previous studies explored connectivity costs higher than 10%, which according to <xref rid="B34" ref-type="bibr">Lin et al. (2014)</xref> would correspond to filtration values higher than ε = 0.5, when most of the subjects actually exhibit a single component (<xref ref-type="fig" rid="F3">Fig. 3</xref>). Therefore, these results are actually complementary, given that B<sub>0</sub> curves consider a wider range of connectivity thresholds, rarely explored with graph theory. Indeed, when exploring the edge-wise proportions between groups at different connectivity thresholds (<xref ref-type="fig" rid="F4">Fig. 4</xref>), the ADHD group showed consistently widespread increases compared with the TDC. However, at lower connectivity thresholds (higher filtration values), the ADHD group showed decreased proportion of edges in several interactions, mainly including the frontal, temporal, subcortical, and cerebellar regions, which seem consistent with previous reports of decreased connectivity in ADHD (<xref rid="B51" ref-type="bibr">Tomasi and Volkow, 2012</xref>; <xref rid="B11" ref-type="bibr">Di Martino et al., 2013</xref>; <xref rid="B14" ref-type="bibr">Elton et al., 2014</xref>). These results evidence that the static representation of the network changes as a function of the connectivity threshold, therefore an approach that takes into account wider threshold ranges should provide better insights into the neurophysiological substrate of ADHD.</p>
+      <p>As far as we are concerned, only two previous studies have explored B<sub>0</sub> in ADHD brain networks (<xref rid="B30" ref-type="bibr">Lee et al., 2011</xref>, <xref rid="B31" ref-type="bibr">2012</xref>), using fludeoxyglucose PET (FDG-PET) and interregion covariation at the sample level, qualitatively reporting higher number of components for the ADHD group compared with the TDC. Such findings seem to be opposite to the results here presented; however, methodological differences prevent direct comparisons between results. First, time-scales are significantly different, with the FDG-PET scans reflecting the glucose uptake occurring during several minutes; in contrast, rsfMRI reflects variations in blood oxygenation during tens of seconds. Furthermore, FDG-PET connectivity matrices reflect interregion covariation of (long-term) glucose metabolism across subjects, while rsfMRI connectivity matrices reflect interregion covariation (within seconds) within the same subject and later compared between groups. Overall, both methodologies potentially reflect complementary aspects of the functional connectomes in ADHD.</p>
+    </sec>
+    <sec id="s6">
+      <title>Conclusion</title>
+      <p>In summary, the present study showed a robust and informative implementation of TDA in functional connectomics. The results exhibited significant differences for the brain topology of children with ADHD, both at the whole-brain network and at the functional subnetwork level, particularly involving the frontal lobe and the DMN. Therefore, this approach may contribute to identifying the physio-pathology of neurodevelopmental disorders, complementing other connectomics methods by exploring a larger connectivity range and reducing the bias of selecting a fixed threshold.</p>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>Acknowledgments: We thank the ADHD-200 consortium for such an important data sharing initiative. We also thank Fernando A. Barrios for his valuable comments, Leopoldo Gonzalez-Santos for his technical support, and Michael C. Jeziorski for editing this manuscript. Zeus Gracia Tabuenca is a doctoral student at the Programa de Doctorado en Ciencias Biomédicas, Universidad Nacional Autonoma de México (UNAM).</p>
+    </ack>
+    <ref-list content-type="nameDate">
+      <title>References</title>
+      <ref id="B1">
+        <mixed-citation publication-type="journal">
+<string-name><surname>Aertsen</surname>
+<given-names>A</given-names></string-name>, <string-name><surname>Gerstein</surname>
+<given-names>G</given-names></string-name>, <string-name><surname>Habib</surname>
+<given-names>M</given-names></string-name>, <string-name><surname>Palm</surname>
+<given-names>G</given-names></string-name> (<year>1989</year>) <article-title>Dynamics of neuronal firing correlation: modulation of” effective connectivity</article-title>. <source>J Neurophysiol</source>
+<volume>61</volume>:<fpage>900</fpage>–<lpage>917</lpage>. <pub-id pub-id-type="doi">10.1152/jn.1989.61.5.900</pub-id>
+<pub-id pub-id-type="pmid">2723733</pub-id></mixed-citation>
+      </ref>
+      <ref id="B2">
+        <mixed-citation publication-type="book">
+<collab>APA</collab> (<year>1994</year>) <source>Diagnostic and statistical manual of mental diseases (DSM-IV)</source>. <publisher-loc>Washington, DC</publisher-loc>: <publisher-name>APA</publisher-name>.</mixed-citation>
+      </ref>
+      <ref id="B3">
+        <mixed-citation publication-type="journal">
+<string-name><surname>Behzadi</surname>
+<given-names>Y</given-names></string-name>, <string-name><surname>Restom</surname>
+<given-names>K</given-names></string-name>, <string-name><surname>Liau</surname>
+<given-names>J</given-names></string-name>, <string-name><surname>Liu</surname>
+<given-names>TT</given-names></string-name> (<year>2007</year>) <article-title>A component based noise correction method (compcor) for bold and perfusion based fMRI</article-title>. <source>Neuroimage</source>
+<volume>37</volume>:<fpage>90</fpage>–<lpage>101</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2007.04.042</pub-id>
+<pub-id pub-id-type="pmid">17560126</pub-id></mixed-citation>
+      </ref>
+      <ref id="B5">
+        <mixed-citation publication-type="journal">
+<string-name><surname>Bos</surname>
+<given-names>DJ</given-names></string-name>, <string-name><surname>Oranje</surname>
+<given-names>B</given-names></string-name>, <string-name><surname>Achterberg</surname>
+<given-names>M</given-names></string-name>, <string-name><surname>Vlaskamp</surname>
+<given-names>C</given-names></string-name>, <string-name><surname>Ambrosino</surname>
+<given-names>S</given-names></string-name>, <string-name><surname>de Reus</surname>
+<given-names>MA</given-names></string-name>, <string-name><surname>van den Heuvel</surname>
+<given-names>MP</given-names></string-name>, <string-name><surname>Rombouts</surname>
+<given-names>SA</given-names></string-name>, <string-name><surname>Durston</surname>
+<given-names>S</given-names></string-name> (<year>2017</year>) <article-title>Structural and functional connectivity in children and adolescents with and without attention deficit/hyperactivity disorder</article-title>. <source>J Child Psychol Psychiatry</source>
+<volume>58</volume>:<fpage>810</fpage>–<lpage>818</lpage>. <pub-id pub-id-type="doi">10.1111/jcpp.12712</pub-id>
+<pub-id pub-id-type="pmid">28295280</pub-id></mixed-citation>
+      </ref>
+      <ref id="B6">
+        <mixed-citation publication-type="journal">
+<string-name><surname>Castellanos</surname>
+<given-names>FX</given-names></string-name>, <string-name><surname>Aoki</surname>
+<given-names>Y</given-names></string-name> (<year>2016</year>) <article-title>Intrinsic functional connectivity in attention-deficit/hyperactivity disorder: a science in development</article-title>. <source>Biol Psychiatry Cogn Neurosci Neuroimaging</source>
+<volume>1</volume>:<fpage>253</fpage>–<lpage>261</lpage>. <pub-id pub-id-type="doi">10.1016/j.bpsc.2016.03.004</pub-id>
+<pub-id pub-id-type="pmid">27713929</pub-id></mixed-citation>
+      </ref>
+      <ref id="B7">
+        <mixed-citation publication-type="journal">
+<string-name><surname>Chai</surname>
+<given-names>XJ</given-names></string-name>, <string-name><surname>Castañón</surname>
+<given-names>AN</given-names></string-name>, <string-name><surname>Öngür</surname>
+<given-names>D</given-names></string-name>, <string-name><surname>Whitfield-Gabrieli</surname>
+<given-names>S</given-names></string-name> (<year>2012</year>) <article-title>Anticorrelations in resting state networks with-out global signal regression</article-title>. <source>Neuroimage</source>
+<volume>59</volume>:<fpage>1420</fpage>–<lpage>1428</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2011.08.048</pub-id>
+<pub-id pub-id-type="pmid">21889994</pub-id></mixed-citation>
+      </ref>
+      <ref id="B8">
+        <mixed-citation publication-type="journal">
+<string-name><surname>Chen</surname>
+<given-names>X</given-names></string-name>, <string-name><surname>Liao</surname>
+<given-names>X</given-names></string-name>, <string-name><surname>Dai</surname>
+<given-names>Z</given-names></string-name>, <string-name><surname>Lin</surname>
+<given-names>Q</given-names></string-name>, <string-name><surname>Wang</surname>
+<given-names>Z</given-names></string-name>, <string-name><surname>Li</surname>
+<given-names>K</given-names></string-name>, <string-name><surname>He</surname>
+<given-names>Y</given-names></string-name> (<year>2018</year>) <article-title>Topological analyses of functional connectomics: a crucial role of global signal removal, brain parcellation, and null models</article-title>. <source>Hum Brain Mapp</source>
+<volume>39</volume>:<fpage>4545</fpage>–<lpage>4564</lpage>. <pub-id pub-id-type="doi">10.1002/hbm.24305</pub-id>
+<pub-id pub-id-type="pmid">29999567</pub-id></mixed-citation>
+      </ref>
+      <ref id="B9">
+        <mixed-citation publication-type="journal">
+<string-name><surname>Cocchi</surname>
+<given-names>L</given-names></string-name>, <string-name><surname>Bramati</surname>
+<given-names>IE</given-names></string-name>, <string-name><surname>Zalesky</surname>
+<given-names>A</given-names></string-name>, <string-name><surname>Furukawa</surname>
+<given-names>E</given-names></string-name>, <string-name><surname>Fontenelle</surname>
+<given-names>LF</given-names></string-name>, <string-name><surname>Moll</surname>
+<given-names>J</given-names></string-name>, <string-name><surname>Tripp</surname>
+<given-names>G</given-names></string-name>, <string-name><surname>Mattos</surname>
+<given-names>P</given-names></string-name> (<year>2012</year>) <article-title>Altered functional brain connectivity in a non-clinical sample of young adults with attention-deficit/hyperactivity disorder</article-title>. <source>J Neurosci</source>
+<volume>32</volume>:<fpage>17753</fpage>–<lpage>17761</lpage>. <pub-id pub-id-type="doi">10.1523/JNEUROSCI.3272-12.2012</pub-id>
+<pub-id pub-id-type="pmid">23223295</pub-id></mixed-citation>
+      </ref>
+      <ref id="B10">
+        <mixed-citation publication-type="journal">
+<string-name><surname>Craddock</surname>
+<given-names>RC</given-names></string-name>, <string-name><surname>James</surname>
+<given-names>GA</given-names></string-name>, <string-name><surname>Holtzheimer</surname>
+<given-names>PE</given-names>
+<suffix>3rd</suffix></string-name>, <string-name><surname>Hu</surname>
+<given-names>XP</given-names></string-name>, <string-name><surname>Mayberg</surname>
+<given-names>HS</given-names></string-name> (<year>2012</year>) <article-title>A whole brain fMRI atlas generated via spatially constrained spectral clustering</article-title>. <source>Hum Brain Mapp</source>
+<volume>33</volume>:<fpage>1914</fpage>–<lpage>1928</lpage>. <pub-id pub-id-type="doi">10.1002/hbm.21333</pub-id>
+<pub-id pub-id-type="pmid">21769991</pub-id></mixed-citation>
+      </ref>
+      <ref id="B11">
+        <mixed-citation publication-type="journal">
+<string-name><surname>Di Martino</surname>
+<given-names>A</given-names></string-name>, <string-name><surname>Zuo</surname>
+<given-names>X-N</given-names></string-name>, <string-name><surname>Kelly</surname>
+<given-names>C</given-names></string-name>, <string-name><surname>Grzadzinski</surname>
+<given-names>R</given-names></string-name>, <string-name><surname>Mennes</surname>
+<given-names>M</given-names></string-name>, <string-name><surname>Schvarcz</surname>
+<given-names>A</given-names></string-name>, <string-name><surname>Rodman</surname>
+<given-names>J</given-names></string-name>, <string-name><surname>Lord</surname>
+<given-names>C</given-names></string-name>, <string-name><surname>Castellanos</surname>
+<given-names>FX</given-names></string-name>, <string-name><surname>Milham</surname>
+<given-names>MP</given-names></string-name> (<year>2013</year>) <article-title>Shared and distinct intrinsic functional network centrality in autism and attention-deficit/hyperactivity disorder</article-title>. <source>Biol Psychiatry</source>
+<volume>74</volume>:<fpage>623</fpage>–<lpage>632</lpage>. <pub-id pub-id-type="doi">10.1016/j.biopsych.2013.02.011</pub-id>
+<pub-id pub-id-type="pmid">23541632</pub-id></mixed-citation>
+      </ref>
+      <ref id="B12">
+        <mixed-citation publication-type="journal">
+<string-name><surname>Doucet</surname>
+<given-names>GE</given-names></string-name>, <string-name><surname>Lee</surname>
+<given-names>WH</given-names></string-name>, <string-name><surname>Frangou</surname>
+<given-names>S</given-names></string-name> (<year>2019</year>) <article-title>Evaluation of the spatial variability in the major resting-state networks across human brain functional atlases</article-title>. <source>Hum Brain Mapp</source>
+<volume>40</volume>:<fpage>4577</fpage>–<lpage>4587</lpage>. <pub-id pub-id-type="doi">10.1002/hbm.24722</pub-id>
+<pub-id pub-id-type="pmid">31322303</pub-id></mixed-citation>
+      </ref>
+      <ref id="B13">
+        <mixed-citation publication-type="book">
+<string-name><surname>Edelsbrunner</surname>
+<given-names>H</given-names></string-name>, <string-name><surname>Letscher</surname>
+<given-names>D</given-names></string-name>, <string-name><surname>Zomorodian</surname>
+<given-names>A</given-names></string-name> (<year>2000</year>) <chapter-title>Topological persistence and simplification</chapter-title> In: <source>Proceedings 41st annual symposium on foundations of computer science</source>, pp <fpage>454</fpage>–<lpage>463</lpage>. <publisher-loc>Redondo Beach, CA</publisher-loc>: <publisher-name>IEEE</publisher-name>
+<pub-id pub-id-type="doi">10.1109/SFCS.2000.892133</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B14">
+        <mixed-citation publication-type="journal">
+<string-name><surname>Elton</surname>
+<given-names>A</given-names></string-name>, <string-name><surname>Alcauter</surname>
+<given-names>S</given-names></string-name>, <string-name><surname>Gao</surname>
+<given-names>W</given-names></string-name> (<year>2014</year>) <article-title>Network connectivity abnormality profile supports a categorical-dimensional hybrid model of ADHD</article-title>. <source>Hum Brain Mapp</source>
+<volume>35</volume>:<fpage>4531</fpage>–<lpage>4543</lpage>. <pub-id pub-id-type="doi">10.1002/hbm.22492</pub-id>
+<pub-id pub-id-type="pmid">24615988</pub-id></mixed-citation>
+      </ref>
+      <ref id="B15">
+        <mixed-citation publication-type="journal">
+<string-name><surname>Expert</surname>
+<given-names>P</given-names></string-name>, <string-name><surname>Lord</surname>
+<given-names>L-D</given-names></string-name>, <string-name><surname>Kringelbach</surname>
+<given-names>ML</given-names></string-name>, <string-name><surname>Petri</surname>
+<given-names>G</given-names></string-name> (<year>2019</year>) <article-title>Editorial: topological neuroscience</article-title>. <source>Netw Neurosci</source>
+<volume>3</volume>:<fpage>653</fpage>–<lpage>655</lpage>. <pub-id pub-id-type="doi">10.1162/netn_e_00096</pub-id>
+<pub-id pub-id-type="pmid">31410371</pub-id></mixed-citation>
+      </ref>
+      <ref id="B16">
+        <mixed-citation publication-type="journal">
+<string-name><surname>Fonov</surname>
+<given-names>V</given-names></string-name>, <string-name><surname>Evans</surname>
+<given-names>AC</given-names></string-name>, <string-name><surname>Botteron</surname>
+<given-names>K</given-names></string-name>, <string-name><surname>Almli</surname>
+<given-names>CR</given-names></string-name>, <string-name><surname>McKinstry</surname>
+<given-names>RC</given-names></string-name>, <string-name><surname>Collins</surname>
+<given-names>DL</given-names></string-name>; <string-name><surname>Brain Development Cooperative Group</surname></string-name> (<year>2011</year>) <article-title>Unbiased average age-appropriate atlases for pediatric studies</article-title>. <source>Neuroimage</source>
+<volume>54</volume>:<fpage>313</fpage>–<lpage>327</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2010.07.033</pub-id>
+<pub-id pub-id-type="pmid">20656036</pub-id></mixed-citation>
+      </ref>
+      <ref id="B17">
+        <mixed-citation publication-type="journal">
+<string-name><surname>Fornito</surname>
+<given-names>A</given-names></string-name>, <string-name><surname>Zalesky</surname>
+<given-names>A</given-names></string-name>, <string-name><surname>Bullmore</surname>
+<given-names>ET</given-names></string-name> (<year>2010</year>) <article-title>Network scaling effects in graph analytic studies of human resting-state FMRI data</article-title>. <source>Front Syst Neurosci</source>
+<volume>4</volume>:<fpage>22</fpage>. <pub-id pub-id-type="doi">10.3389/fnsys.2010.00022</pub-id>
+<pub-id pub-id-type="pmid">20592949</pub-id></mixed-citation>
+      </ref>
+      <ref id="B18">
+        <mixed-citation publication-type="journal">
+<string-name><surname>Fornito</surname>
+<given-names>A</given-names></string-name>, <string-name><surname>Zalesky</surname>
+<given-names>A</given-names></string-name>, <string-name><surname>Breakspear</surname>
+<given-names>M</given-names></string-name> (<year>2013</year>) <article-title>Graph analysis of the human connectome: promise, progress, and pitfalls</article-title>. <source>Neuroimage</source>
+<volume>80</volume>:<fpage>426</fpage>–<lpage>444</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2013.04.087</pub-id>
+<pub-id pub-id-type="pmid">23643999</pub-id></mixed-citation>
+      </ref>
+      <ref id="B19">
+        <mixed-citation publication-type="journal">
+<string-name><surname>Fox</surname>
+<given-names>MD</given-names></string-name>, <string-name><surname>Raichle</surname>
+<given-names>ME</given-names></string-name> (<year>2007</year>) <article-title>Spontaneous fluctuations in brain activity observed with functional magnetic resonance imaging</article-title>. <source>Nat Rev Neurosci</source>
+<volume>8</volume>:<fpage>700</fpage>–<lpage>711</lpage>. <pub-id pub-id-type="doi">10.1038/nrn2201</pub-id>
+<pub-id pub-id-type="pmid">17704812</pub-id></mixed-citation>
+      </ref>
+      <ref id="B20">
+        <mixed-citation publication-type="journal">
+<string-name><surname>Fox</surname>
+<given-names>MD</given-names></string-name>, <string-name><surname>Snyder</surname>
+<given-names>AZ</given-names></string-name>, <string-name><surname>Vincent</surname>
+<given-names>JL</given-names></string-name>, <string-name><surname>Corbetta</surname>
+<given-names>M</given-names></string-name>, <string-name><surname>Van Essen</surname>
+<given-names>DC</given-names></string-name>, <string-name><surname>Raichle</surname>
+<given-names>ME</given-names></string-name> (<year>2005</year>) <article-title>The human brain is intrinsically organized into dynamic, anticorrelated functional networks</article-title>. <source>Proc Natl Acad Sci USA</source>
+<volume>102</volume>:<fpage>9673</fpage>–<lpage>9678</lpage>. <pub-id pub-id-type="doi">10.1073/pnas.0504136102</pub-id>
+<pub-id pub-id-type="pmid">15976020</pub-id></mixed-citation>
+      </ref>
+      <ref id="B21">
+        <mixed-citation publication-type="journal">
+<string-name><surname>Friston</surname>
+<given-names>K</given-names></string-name>, <string-name><surname>Frith</surname>
+<given-names>C</given-names></string-name>, <string-name><surname>Liddle</surname>
+<given-names>P</given-names></string-name>, <string-name><surname>Frackowiak</surname>
+<given-names>R</given-names></string-name> (<year>1993</year>) <article-title>Functional connectivity: the principal-component analysis of large (pet) data sets</article-title>. <source>J Cereb Blood Flow Metab</source>
+<volume>13</volume>:<fpage>5</fpage>–<lpage>14</lpage>. <pub-id pub-id-type="doi">10.1038/jcbfm.1993.4</pub-id>
+<pub-id pub-id-type="pmid">8417010</pub-id></mixed-citation>
+      </ref>
+      <ref id="B22">
+        <mixed-citation publication-type="journal">
+<string-name><surname>Giusti</surname>
+<given-names>C</given-names></string-name>, <string-name><surname>Pastalkova</surname>
+<given-names>E</given-names></string-name>, <string-name><surname>Curto</surname>
+<given-names>C</given-names></string-name>, <string-name><surname>Itskov</surname>
+<given-names>V</given-names></string-name> (<year>2015</year>) <article-title>Clique topology reveals intrinsic geometric structure in neural correlations</article-title>. <source>Proc Natl Acad Sci USA</source>
+<volume>112</volume>:<fpage>13455</fpage>–<lpage>13460</lpage>. <pub-id pub-id-type="doi">10.1073/pnas.1506407112</pub-id>
+<pub-id pub-id-type="pmid">26487684</pub-id></mixed-citation>
+      </ref>
+      <ref id="B23">
+        <mixed-citation publication-type="journal">
+<string-name><surname>Gracia-Tabuenca</surname>
+<given-names>Z</given-names></string-name>, <string-name><surname>Moreno</surname>
+<given-names>MB</given-names></string-name>, <string-name><surname>Barrios</surname>
+<given-names>FA</given-names></string-name>, <string-name><surname>Alcauter</surname>
+<given-names>S</given-names></string-name> (<year>2018</year>) <article-title>Hemispheric asymmetry and homotopy of resting state functional connectivity correlate with visuospatial abilities in school-age children</article-title>. <source>Neuroimage</source>
+<volume>174</volume>:<fpage>441</fpage>–<lpage>448</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2018.03.051</pub-id>
+<pub-id pub-id-type="pmid">29596979</pub-id></mixed-citation>
+      </ref>
+      <ref id="B24">
+        <mixed-citation publication-type="journal">
+<string-name><surname>Gu</surname>
+<given-names>Z</given-names></string-name>, <string-name><surname>Gu</surname>
+<given-names>L</given-names></string-name>, <string-name><surname>Eils</surname>
+<given-names>R</given-names></string-name>, <string-name><surname>Schlesner</surname>
+<given-names>M</given-names></string-name>, <string-name><surname>Brors</surname>
+<given-names>B</given-names></string-name> (<year>2014</year>) <article-title>circlize implements and enhances circular visualization in R</article-title>. <source>Bioinformatics</source>
+<volume>30</volume>:<fpage>2811</fpage>–<lpage>2812</lpage>. <pub-id pub-id-type="doi">10.1093/bioinformatics/btu393</pub-id>
+<pub-id pub-id-type="pmid">24930139</pub-id></mixed-citation>
+      </ref>
+      <ref id="B25">
+        <mixed-citation publication-type="journal">
+<string-name><surname>HD-200 Consortium</surname></string-name> (<year>2012</year>) <article-title>The ADHD-200 consortium: a model to advance the translational potential of neuroimaging in clinical neuroscience</article-title>. <source>Front Syst Neurosci</source>
+<volume>6</volume>:<fpage>62</fpage>
+<pub-id pub-id-type="doi">10.3389/fnsys.2012.00062</pub-id>
+<pub-id pub-id-type="pmid">22973200</pub-id></mixed-citation>
+      </ref>
+      <ref id="B26">
+        <mixed-citation publication-type="journal">
+<string-name><surname>Hoekzema</surname>
+<given-names>E</given-names></string-name>, <string-name><surname>Carmona</surname>
+<given-names>S</given-names></string-name>, <string-name><surname>Ramos-Quiroga</surname>
+<given-names>JA</given-names></string-name>, <string-name><surname>Richarte Fernández</surname>
+<given-names>V</given-names></string-name>, <string-name><surname>Bosch</surname>
+<given-names>R</given-names></string-name>, <string-name><surname>Soliva</surname>
+<given-names>JC</given-names></string-name>, <string-name><surname>Rovira</surname>
+<given-names>M</given-names></string-name>, <string-name><surname>Bulbena</surname>
+<given-names>A</given-names></string-name>, <string-name><surname>Tobeña</surname>
+<given-names>A</given-names></string-name>, <string-name><surname>Casas</surname>
+<given-names>M</given-names></string-name>, <string-name><surname>Vilarroya</surname>
+<given-names>O</given-names></string-name> (<year>2014</year>) <article-title>An independent components and functional connectivity analysis of resting state fmri data points to neural network dysregulation in adult ADHD</article-title>. <source>Hum Brain Mapp</source>
+<volume>35</volume>:<fpage>1261</fpage>–<lpage>1272</lpage>. <pub-id pub-id-type="doi">10.1002/hbm.22250</pub-id>
+<pub-id pub-id-type="pmid">23417778</pub-id></mixed-citation>
+      </ref>
+      <ref id="B27">
+        <mixed-citation publication-type="journal">
+<string-name><surname>Jenkinson</surname>
+<given-names>M</given-names></string-name>, <string-name><surname>Beckmann</surname>
+<given-names>CF</given-names></string-name>, <string-name><surname>Behrens</surname>
+<given-names>TE</given-names></string-name>, <string-name><surname>Woolrich</surname>
+<given-names>MW</given-names></string-name>, <string-name><surname>Smith</surname>
+<given-names>SM</given-names></string-name> (<year>2012</year>) <article-title>Fsl</article-title>. <source>Neuroimage</source>
+<volume>62</volume>:<fpage>782</fpage>–<lpage>790</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2011.09.015</pub-id>
+<pub-id pub-id-type="pmid">21979382</pub-id></mixed-citation>
+      </ref>
+      <ref id="B28">
+        <mixed-citation publication-type="journal">
+<string-name><surname>Kelly</surname>
+<given-names>AC</given-names></string-name>, <string-name><surname>Uddin</surname>
+<given-names>LQ</given-names></string-name>, <string-name><surname>Biswal</surname>
+<given-names>BB</given-names></string-name>, <string-name><surname>Castellanos</surname>
+<given-names>FX</given-names></string-name>, <string-name><surname>Milham</surname>
+<given-names>MP</given-names></string-name> (<year>2008</year>) <article-title>Competition between functional brain networks mediates behavioral variability</article-title>. <source>Neuroimage</source>
+<volume>39</volume>:<fpage>527</fpage>–<lpage>537</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2007.08.008</pub-id>
+<pub-id pub-id-type="pmid">17919929</pub-id></mixed-citation>
+      </ref>
+      <ref id="B29">
+        <mixed-citation publication-type="journal">
+<string-name><surname>Konrad</surname>
+<given-names>K</given-names></string-name>, <string-name><surname>Eickhoff</surname>
+<given-names>SB</given-names></string-name> (<year>2010</year>) <article-title>Is the ADHD brain wired differently? a review on structural and functional connectivity in attention deficit hyperactivity disorder</article-title>. <source>Hum Brain Mapp</source>
+<volume>31</volume>:<fpage>904</fpage>–<lpage>916</lpage>. <pub-id pub-id-type="doi">10.1002/hbm.21058</pub-id>
+<pub-id pub-id-type="pmid">20496381</pub-id></mixed-citation>
+      </ref>
+      <ref id="B30">
+        <mixed-citation publication-type="book">
+<string-name><surname>Lee</surname>
+<given-names>H</given-names></string-name>, <string-name><surname>Chung</surname>
+<given-names>MK</given-names></string-name>, <string-name><surname>Kang</surname>
+<given-names>H</given-names></string-name>, <string-name><surname>Kim</surname>
+<given-names>B-N</given-names></string-name>, <string-name><surname>Lee</surname>
+<given-names>DS</given-names></string-name> (<year>2011</year>) <chapter-title>Discriminative persistent homology of brain network</chapter-title> In: <source>2011 IEEE international symposium on biomedical imaging: from nano to macro</source>, pp <fpage>841</fpage>–<lpage>844</lpage>. <publisher-loc>Chicago, IL</publisher-loc>: <publisher-name>IEEE</publisher-name>
+<pub-id pub-id-type="doi">10.1109/ISBI.2011.5872535</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B31">
+        <mixed-citation publication-type="journal">
+<string-name><surname>Lee</surname>
+<given-names>H</given-names></string-name>, <string-name><surname>Kang</surname>
+<given-names>H</given-names></string-name>, <string-name><surname>Chung</surname>
+<given-names>MK</given-names></string-name>, <string-name><surname>Kim</surname>
+<given-names>BN</given-names></string-name>, <string-name><surname>Lee</surname>
+<given-names>DS</given-names></string-name> (<year>2012</year>) <article-title>Persistent brain network homology from the perspective of dendrogram</article-title>. <source>IEEE Trans Med Imaging</source>
+<volume>31</volume>:<fpage>2267</fpage>–<lpage>2277</lpage>. <pub-id pub-id-type="doi">10.1109/TMI.2012.2219590</pub-id>
+<pub-id pub-id-type="pmid">23008247</pub-id></mixed-citation>
+      </ref>
+      <ref id="B32">
+        <mixed-citation publication-type="journal">
+<string-name><surname>Lee</surname>
+<given-names>H</given-names></string-name>, <string-name><surname>Kang</surname>
+<given-names>H</given-names></string-name>, <string-name><surname>Chung</surname>
+<given-names>MK</given-names></string-name>, <string-name><surname>Lim</surname>
+<given-names>S</given-names></string-name>, <string-name><surname>Kim</surname>
+<given-names>B-N</given-names></string-name>, <string-name><surname>Lee</surname>
+<given-names>DS</given-names></string-name> (<year>2017</year>) <article-title>Integrated multimodal network approach to PET and MRI based on multidimensional persistent homology</article-title>. <source>Hum Brain Mapp</source>
+<volume>38</volume>:<fpage>1387</fpage>–<lpage>1402</lpage>. <pub-id pub-id-type="doi">10.1002/hbm.23461</pub-id>
+<pub-id pub-id-type="pmid">27859919</pub-id></mixed-citation>
+      </ref>
+      <ref id="B33">
+        <mixed-citation publication-type="journal">
+<string-name><surname>Lee</surname>
+<given-names>MH</given-names></string-name>, <string-name><surname>Smyser</surname>
+<given-names>CD</given-names></string-name>, <string-name><surname>Shimony</surname>
+<given-names>JS</given-names></string-name> (<year>2013</year>) <article-title>Resting-state fMRI: a review of methods and clinical applications</article-title>. <source>AJNR Am J Neuroradiol</source>
+<volume>34</volume>:<fpage>1866</fpage>–<lpage>1872</lpage>. <pub-id pub-id-type="doi">10.3174/ajnr.A3263</pub-id>
+<pub-id pub-id-type="pmid">22936095</pub-id></mixed-citation>
+      </ref>
+      <ref id="B34">
+        <mixed-citation publication-type="journal">
+<string-name><surname>Lin</surname>
+<given-names>P</given-names></string-name>, <string-name><surname>Sun</surname>
+<given-names>J</given-names></string-name>, <string-name><surname>Yu</surname>
+<given-names>G</given-names></string-name>, <string-name><surname>Wu</surname>
+<given-names>Y</given-names></string-name>, <string-name><surname>Yang</surname>
+<given-names>Y</given-names></string-name>, <string-name><surname>Liang</surname>
+<given-names>M</given-names></string-name>, <string-name><surname>Liu</surname>
+<given-names>X</given-names></string-name> (<year>2014</year>) <article-title>Global and local brain network reorganization in attention-deficit/hyperactivity disorder</article-title>. <source>Brain Imaging Behav</source>
+<volume>8</volume>:<fpage>558</fpage>–<lpage>569</lpage>. <pub-id pub-id-type="doi">10.1007/s11682-013-9279-3</pub-id>
+<pub-id pub-id-type="pmid">24338247</pub-id></mixed-citation>
+      </ref>
+      <ref id="B35">
+        <mixed-citation publication-type="journal">
+<string-name><surname>Lord</surname>
+<given-names>LD</given-names></string-name>, <string-name><surname>Stevner</surname>
+<given-names>AB</given-names></string-name>, <string-name><surname>Deco</surname>
+<given-names>G</given-names></string-name>, <string-name><surname>Kringelbach</surname>
+<given-names>ML</given-names></string-name> (<year>2017</year>) <article-title>Understanding principles of integration and segregation using whole-brain computational connectomics: implications for neuropsychiatric disorders</article-title>. <source>Philos Trans A Math Phys Eng Sci</source>
+<volume>375</volume>:<fpage>20160283</fpage>
+<pub-id pub-id-type="doi">10.1098/rsta.2016.0283</pub-id>
+<pub-id pub-id-type="pmid">28507228</pub-id></mixed-citation>
+      </ref>
+      <ref id="B36">
+        <mixed-citation publication-type="journal">
+<string-name><surname>Mostert</surname>
+<given-names>JC</given-names></string-name>, <string-name><surname>Shumskaya</surname>
+<given-names>E</given-names></string-name>, <string-name><surname>Mennes</surname>
+<given-names>M</given-names></string-name>, <string-name><surname>Onnink</surname>
+<given-names>AMH</given-names></string-name>, <string-name><surname>Hoogman</surname>
+<given-names>M</given-names></string-name>, <string-name><surname>Kan</surname>
+<given-names>CC</given-names></string-name>, <string-name><surname>Vasquez</surname>
+<given-names>AA</given-names></string-name>, <string-name><surname>Buitelaar</surname>
+<given-names>J</given-names></string-name>, <string-name><surname>Franke</surname>
+<given-names>B</given-names></string-name>, <string-name><surname>Norris</surname>
+<given-names>DG</given-names></string-name> (<year>2016</year>) <article-title>Characterising resting-state functional connectivity in a large sample of adults with ADHD</article-title>. <source>Prog Neuropsychopharmacol Biol Psychiatry</source>
+<volume>67</volume>:<fpage>82</fpage>–<lpage>91</lpage>. <pub-id pub-id-type="doi">10.1016/j.pnpbp.2016.01.011</pub-id>
+<pub-id pub-id-type="pmid">26825495</pub-id></mixed-citation>
+      </ref>
+      <ref id="B37">
+        <mixed-citation publication-type="journal">
+<string-name><surname>Power</surname>
+<given-names>JD</given-names></string-name>, <string-name><surname>Cohen</surname>
+<given-names>AL</given-names></string-name>, <string-name><surname>Nelson</surname>
+<given-names>SM</given-names></string-name>, <string-name><surname>Wig</surname>
+<given-names>GS</given-names></string-name>, <string-name><surname>Barnes</surname>
+<given-names>KA</given-names></string-name>, <string-name><surname>Church</surname>
+<given-names>JA</given-names></string-name>, <string-name><surname>Vogel</surname>
+<given-names>AC</given-names></string-name>, <string-name><surname>Laumann</surname>
+<given-names>TO</given-names></string-name>, <string-name><surname>Miezin</surname>
+<given-names>FM</given-names></string-name>, <string-name><surname>Schlaggar</surname>
+<given-names>BL</given-names></string-name>, <string-name><surname>Petersen</surname>
+<given-names>SE</given-names></string-name> (<year>2011</year>) <article-title>Functional network organization of the human brain</article-title>. <source>Neuron</source>
+<volume>72</volume>:<fpage>665</fpage>–<lpage>678</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuron.2011.09.006</pub-id>
+<pub-id pub-id-type="pmid">22099467</pub-id></mixed-citation>
+      </ref>
+      <ref id="B38">
+        <mixed-citation publication-type="journal">
+<string-name><surname>Qian</surname>
+<given-names>X</given-names></string-name>, <string-name><surname>Castellanos</surname>
+<given-names>FX</given-names></string-name>, <string-name><surname>Uddin</surname>
+<given-names>LQ</given-names></string-name>, <string-name><surname>Loo</surname>
+<given-names>BRY</given-names></string-name>, <string-name><surname>Liu</surname>
+<given-names>S</given-names></string-name>, <string-name><surname>Koh</surname>
+<given-names>HL</given-names></string-name>, <string-name><surname>Poh</surname>
+<given-names>XWW</given-names></string-name>, <string-name><surname>Fung</surname>
+<given-names>D</given-names></string-name>, <string-name><surname>Guan</surname>
+<given-names>C</given-names></string-name>, <string-name><surname>Lee</surname>
+<given-names>T-S</given-names></string-name>, <string-name><surname>Lim</surname>
+<given-names>CG</given-names></string-name>, <string-name><surname>Zhou</surname>
+<given-names>J</given-names></string-name> (<year>2019</year>) <article-title>Large-scale brain functional network topology disruptions underlie symptom heterogeneity in children with attention-deficit/hyperactivity disorder</article-title>. <source>Neuroimage Clin</source>
+<volume>21</volume>:<fpage>101600</fpage>. <pub-id pub-id-type="doi">10.1016/j.nicl.2018.11.010</pub-id>
+<pub-id pub-id-type="pmid">30472167</pub-id></mixed-citation>
+      </ref>
+      <ref id="B39">
+        <mixed-citation publication-type="journal">
+<string-name><surname>Rubinov</surname>
+<given-names>M</given-names></string-name>, <string-name><surname>Sporns</surname>
+<given-names>O</given-names></string-name> (<year>2010</year>) <article-title>Complex network measures of brain connectivity: uses and interpretations</article-title>. <source>Neuroimage</source>
+<volume>52</volume>:<fpage>1059</fpage>–<lpage>1069</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2009.10.003</pub-id>
+<pub-id pub-id-type="pmid">19819337</pub-id></mixed-citation>
+      </ref>
+      <ref id="B40">
+        <mixed-citation publication-type="journal">
+<string-name><surname>Santos</surname>
+<given-names>FA</given-names></string-name>, <string-name><surname>Raposo</surname>
+<given-names>EP</given-names></string-name>, <string-name><surname>Coutinho-Filho</surname>
+<given-names>MD</given-names></string-name>, <string-name><surname>Copelli</surname>
+<given-names>M</given-names></string-name>, <string-name><surname>Stam</surname>
+<given-names>CJ</given-names></string-name>, <string-name><surname>Douw</surname>
+<given-names>L</given-names></string-name> (<year>2019</year>) <article-title>Topological phase transitions in functional brain networks</article-title>. <source>Phys Rev E</source>
+<volume>100</volume>:<fpage>032414</fpage>. <pub-id pub-id-type="doi">10.1103/PhysRevE.100.032414</pub-id>
+<pub-id pub-id-type="pmid">31640025</pub-id></mixed-citation>
+      </ref>
+      <ref id="B41">
+        <mixed-citation publication-type="journal">
+<string-name><surname>Sato</surname>
+<given-names>JR</given-names></string-name>, <string-name><surname>Takahashi</surname>
+<given-names>DY</given-names></string-name>, <string-name><surname>Hoexter</surname>
+<given-names>MQ</given-names></string-name>, <string-name><surname>Massirer</surname>
+<given-names>KB</given-names></string-name>, <string-name><surname>Fujita</surname>
+<given-names>A</given-names></string-name> (<year>2013</year>) <article-title>Measuring network’s entropy in ADHD: a new approach to investigate neuropsychiatric disorders</article-title>. <source>Neuroimage</source>
+<volume>77</volume>:<fpage>44</fpage>–<lpage>51</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2013.03.035</pub-id>
+<pub-id pub-id-type="pmid">23571416</pub-id></mixed-citation>
+      </ref>
+      <ref id="B42">
+        <mixed-citation publication-type="journal">
+<string-name><surname>Satterthwaite</surname>
+<given-names>TD</given-names></string-name>, <string-name><surname>Wolf</surname>
+<given-names>DH</given-names></string-name>, <string-name><surname>Loughead</surname>
+<given-names>J</given-names></string-name>, <string-name><surname>Ruparel</surname>
+<given-names>K</given-names></string-name>, <string-name><surname>Elliott</surname>
+<given-names>MA</given-names></string-name>, <string-name><surname>Hakonarson</surname>
+<given-names>H</given-names></string-name>, <string-name><surname>Gur</surname>
+<given-names>RC</given-names></string-name>, <string-name><surname>Gur</surname>
+<given-names>RE</given-names></string-name> (<year>2012</year>) <article-title>Impact of in-scanner head motion on multiple measures of functional connectivity: relevance for studies of neurodevelopment in youth</article-title>. <source>Neuroimage</source>
+<volume>60</volume>:<fpage>623</fpage>–<lpage>632</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2011.12.063</pub-id>
+<pub-id pub-id-type="pmid">22233733</pub-id></mixed-citation>
+      </ref>
+      <ref id="B43">
+        <mixed-citation publication-type="journal">
+<string-name><surname>Satterthwaite</surname>
+<given-names>TD</given-names></string-name>, <string-name><surname>Elliott</surname>
+<given-names>MA</given-names></string-name>, <string-name><surname>Gerraty</surname>
+<given-names>RT</given-names></string-name>, <string-name><surname>Ruparel</surname>
+<given-names>K</given-names></string-name>, <string-name><surname>Loughead</surname>
+<given-names>J</given-names></string-name>, <string-name><surname>Calkins</surname>
+<given-names>ME</given-names></string-name>, <string-name><surname>Eickhoff</surname>
+<given-names>SB</given-names></string-name>, <string-name><surname>Hakonarson</surname>
+<given-names>H</given-names></string-name>, <string-name><surname>Gur</surname>
+<given-names>RC</given-names></string-name>, <string-name><surname>Gur</surname>
+<given-names>RE</given-names></string-name>, <string-name><surname>Wolf</surname>
+<given-names>DH</given-names></string-name> (<year>2013</year>) <article-title>An improved framework for confound regression and filtering for control of motion artifact in the preprocessing of resting-state functional connectivity data</article-title>. <source>Neuroimage</source>
+<volume>64</volume>:<fpage>240</fpage>–<lpage>256</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2012.08.052</pub-id>
+<pub-id pub-id-type="pmid">22926292</pub-id></mixed-citation>
+      </ref>
+      <ref id="B44">
+        <mixed-citation publication-type="journal">
+<string-name><surname>Sizemore</surname>
+<given-names>AE</given-names></string-name>, <string-name><surname>Giusti</surname>
+<given-names>C</given-names></string-name>, <string-name><surname>Kahn</surname>
+<given-names>A</given-names></string-name>, <string-name><surname>Vettel</surname>
+<given-names>JM</given-names></string-name>, <string-name><surname>Betzel</surname>
+<given-names>RF</given-names></string-name>, <string-name><surname>Bassett</surname>
+<given-names>DS</given-names></string-name> (<year>2018</year>) <article-title>Cliques and cavities in the human connectome</article-title>. <source>J Comput Neurosci</source>
+<volume>44</volume>:<fpage>115</fpage>–<lpage>145</lpage>. <pub-id pub-id-type="doi">10.1007/s10827-017-0672-6</pub-id>
+<pub-id pub-id-type="pmid">29143250</pub-id></mixed-citation>
+      </ref>
+      <ref id="B45">
+        <mixed-citation publication-type="journal">
+<string-name><surname>Sizemore</surname>
+<given-names>AE</given-names></string-name>, <string-name><surname>Phillips-Cremins</surname>
+<given-names>JE</given-names></string-name>, <string-name><surname>Ghrist</surname>
+<given-names>R</given-names></string-name>, <string-name><surname>Bassett</surname>
+<given-names>DS</given-names></string-name> (<year>2019</year>) <article-title>The importance of the whole: topological data analysis for the network neuroscientist</article-title>. <source>Netw Neurosci</source>
+<volume>3</volume>:<fpage>656</fpage>–<lpage>673</lpage>. <pub-id pub-id-type="doi">10.1162/netn_a_00073</pub-id>
+<pub-id pub-id-type="pmid">31410372</pub-id></mixed-citation>
+      </ref>
+      <ref id="B46">
+        <mixed-citation publication-type="journal">
+<string-name><surname>Somandepalli</surname>
+<given-names>K</given-names></string-name>, <string-name><surname>Kelly</surname>
+<given-names>C</given-names></string-name>, <string-name><surname>Reiss</surname>
+<given-names>PT</given-names></string-name>, <string-name><surname>Zuo</surname>
+<given-names>X-N</given-names></string-name>, <string-name><surname>Craddock</surname>
+<given-names>RC</given-names></string-name>, <string-name><surname>Yan</surname>
+<given-names>C-G</given-names></string-name>, <string-name><surname>Petkova</surname>
+<given-names>E</given-names></string-name>, <string-name><surname>Castellanos</surname>
+<given-names>FX</given-names></string-name>, <string-name><surname>Milham</surname>
+<given-names>MP</given-names></string-name>, <string-name><surname>Di Martino</surname>
+<given-names>A</given-names></string-name> (<year>2015</year>) <article-title>Short-term test–retest reliability of resting state fMRI metrics in children with and without attention-deficit/hyperactivity disorder</article-title>. <source>Dev Cogn Neurosci</source>
+<volume>15</volume>:<fpage>83</fpage>–<lpage>93</lpage>. <pub-id pub-id-type="doi">10.1016/j.dcn.2015.08.003</pub-id>
+<pub-id pub-id-type="pmid">26365788</pub-id></mixed-citation>
+      </ref>
+      <ref id="B47">
+        <mixed-citation publication-type="journal">
+<string-name><surname>Sonuga-Barke</surname>
+<given-names>EJ</given-names></string-name>, <string-name><surname>Castellanos</surname>
+<given-names>FX</given-names></string-name> (<year>2007</year>) <article-title>Spontaneous attentional fluctuations in impaired states and pathological conditions: a neurobiological hypothesis</article-title>. <source>Neurosci Biobehav Rev</source>
+<volume>31</volume>:<fpage>977</fpage>–<lpage>986</lpage>. <pub-id pub-id-type="doi">10.1016/j.neubiorev.2007.02.005</pub-id>
+<pub-id pub-id-type="pmid">17445893</pub-id></mixed-citation>
+      </ref>
+      <ref id="B48">
+        <mixed-citation publication-type="journal">
+<string-name><surname>Stolz</surname>
+<given-names>BJ</given-names></string-name>, <string-name><surname>Emerson</surname>
+<given-names>T</given-names></string-name>, <string-name><surname>Nahkuri</surname>
+<given-names>S</given-names></string-name>, <string-name><surname>Porter</surname>
+<given-names>MA</given-names></string-name>, <string-name><surname>Harrington</surname>
+<given-names>HA</given-names></string-name> (<year>2018</year>) <article-title>Topological data analysis of task-based fMRI data from experiments on Schizophrenia</article-title>. <source>arXiv</source>
+<volume>1809.08504</volume>.</mixed-citation>
+      </ref>
+      <ref id="B49">
+        <mixed-citation publication-type="journal">
+<string-name><surname>Termenon</surname>
+<given-names>M</given-names></string-name>, <string-name><surname>Jaillard</surname>
+<given-names>A</given-names></string-name>, <string-name><surname>Delon-Martin</surname>
+<given-names>C</given-names></string-name>, <string-name><surname>Achard</surname>
+<given-names>S</given-names></string-name> (<year>2016</year>) <article-title>Reliability of graph analysis of resting state fMRI using test-retest dataset from the human connectome project</article-title>. <source>Neuroimage</source>
+<volume>142</volume>:<fpage>172</fpage>–<lpage>187</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2016.05.062</pub-id>
+<pub-id pub-id-type="pmid">27282475</pub-id></mixed-citation>
+      </ref>
+      <ref id="B50">
+        <mixed-citation publication-type="journal">
+<string-name><surname>Tomasi</surname>
+<given-names>D</given-names></string-name>, <string-name><surname>Volkow</surname>
+<given-names>ND</given-names></string-name> (<year>2010</year>) <article-title>Functional connectivity density mapping</article-title>. <source>Proc Natl Acad Sci USA</source>
+<volume>107</volume>:<fpage>9885</fpage>–<lpage>9890</lpage>. <pub-id pub-id-type="doi">10.1073/pnas.1001414107</pub-id>
+<pub-id pub-id-type="pmid">20457896</pub-id></mixed-citation>
+      </ref>
+      <ref id="B51">
+        <mixed-citation publication-type="journal">
+<string-name><surname>Tomasi</surname>
+<given-names>D</given-names></string-name>, <string-name><surname>Volkow</surname>
+<given-names>ND</given-names></string-name> (<year>2012</year>) <article-title>Abnormal functional connectivity in children with attention- deficit/hyperactivity disorder</article-title>. <source>Biol Psychiatry</source>
+<volume>71</volume>:<fpage>443</fpage>–<lpage>450</lpage>. <pub-id pub-id-type="doi">10.1016/j.biopsych.2011.11.003</pub-id>
+<pub-id pub-id-type="pmid">22153589</pub-id></mixed-citation>
+      </ref>
+      <ref id="B52">
+        <mixed-citation publication-type="journal">
+<string-name><surname>Tzourio-Mazoyer</surname>
+<given-names>N</given-names></string-name>, <string-name><surname>Landeau</surname>
+<given-names>B</given-names></string-name>, <string-name><surname>Papathanassiou</surname>
+<given-names>D</given-names></string-name>, <string-name><surname>Crivello</surname>
+<given-names>F</given-names></string-name>, <string-name><surname>Etard</surname>
+<given-names>O</given-names></string-name>, <string-name><surname>Delcroix</surname>
+<given-names>N</given-names></string-name>, <string-name><surname>Mazoyer</surname>
+<given-names>B</given-names></string-name>, <string-name><surname>Joliot</surname>
+<given-names>M</given-names></string-name> (<year>2002</year>) <article-title>Automated anatomical labeling of activations in spm using a macroscopic anatomical parcellation of the mni mri single-subject brain</article-title>. <source>Neuroimage</source>
+<volume>15</volume>:<fpage>273</fpage>–<lpage>289</lpage>. <pub-id pub-id-type="doi">10.1006/nimg.2001.0978</pub-id>
+<pub-id pub-id-type="pmid">11771995</pub-id></mixed-citation>
+      </ref>
+      <ref id="B53">
+        <mixed-citation publication-type="journal">
+<string-name><surname>van den Heuvel</surname>
+<given-names>MP</given-names></string-name>, <string-name><surname>Pol</surname>
+<given-names>HEH</given-names></string-name> (<year>2010</year>) <article-title>Exploring the brain network: a review on resting-state fMRI functional connectivity</article-title>. <source>Eur Neuropsychopharmacol</source>
+<volume>20</volume>:<fpage>519</fpage>–<lpage>534</lpage>. <pub-id pub-id-type="doi">10.1016/j.euroneuro.2010.03.008</pub-id>
+<pub-id pub-id-type="pmid">20471808</pub-id></mixed-citation>
+      </ref>
+      <ref id="B54">
+        <mixed-citation publication-type="journal">
+<string-name><surname>van den Heuvel</surname>
+<given-names>MP</given-names></string-name>, <string-name><surname>Stam</surname>
+<given-names>CJ</given-names></string-name>, <string-name><surname>Boersma</surname>
+<given-names>M</given-names></string-name>, <string-name><surname>Pol</surname>
+<given-names>HH</given-names></string-name> (<year>2008</year>) <article-title>Small-world and scale-free organization of voxel-based resting-state functional connectivity in the human brain</article-title>. <source>Neuroimage</source>
+<volume>43</volume>:<fpage>528</fpage>–<lpage>539</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2008.08.010</pub-id>
+<pub-id pub-id-type="pmid">18786642</pub-id></mixed-citation>
+      </ref>
+      <ref id="B55">
+        <mixed-citation publication-type="journal">
+<string-name><surname>Wang</surname>
+<given-names>J</given-names></string-name>, <string-name><surname>Wang</surname>
+<given-names>L</given-names></string-name>, <string-name><surname>Zang</surname>
+<given-names>Y</given-names></string-name>, <string-name><surname>Yang</surname>
+<given-names>H</given-names></string-name>, <string-name><surname>Tang</surname>
+<given-names>H</given-names></string-name>, <string-name><surname>Gong</surname>
+<given-names>Q</given-names></string-name>, <string-name><surname>Chen</surname>
+<given-names>Z</given-names></string-name>, <string-name><surname>Zhu</surname>
+<given-names>C</given-names></string-name>, <string-name><surname>He</surname>
+<given-names>Y</given-names></string-name> (<year>2009a</year>) <article-title>Parcellation-dependent small-world brain functional networks: a resting-state fMRI study</article-title>. <source>Hum Brain Mapp</source>
+<volume>30</volume>:<fpage>1511</fpage>–<lpage>1523</lpage>. <pub-id pub-id-type="doi">10.1002/hbm.20623</pub-id>
+<pub-id pub-id-type="pmid">18649353</pub-id></mixed-citation>
+      </ref>
+      <ref id="B56">
+        <mixed-citation publication-type="journal">
+<string-name><surname>Wang</surname>
+<given-names>L</given-names></string-name>, <string-name><surname>Zhu</surname>
+<given-names>C</given-names></string-name>, <string-name><surname>He</surname>
+<given-names>Y</given-names></string-name>, <string-name><surname>Zang</surname>
+<given-names>Y</given-names></string-name>, <string-name><surname>Cao</surname>
+<given-names>Q</given-names></string-name>, <string-name><surname>Zhang</surname>
+<given-names>H</given-names></string-name>, <string-name><surname>Zhong</surname>
+<given-names>Q</given-names></string-name>, <string-name><surname>Wang</surname>
+<given-names>Y</given-names></string-name> (<year>2009b</year>) <article-title>Altered small-world brain functional networks in children with attention-deficit/hyperactivity disorder</article-title>. <source>Hum Brain Mapp</source>
+<volume>30</volume>:<fpage>638</fpage>–<lpage>649</lpage>. <pub-id pub-id-type="doi">10.1002/hbm.20530</pub-id>
+<pub-id pub-id-type="pmid">18219621</pub-id></mixed-citation>
+      </ref>
+      <ref id="B57">
+        <mixed-citation publication-type="journal">
+<string-name><surname>Wilkinson</surname>
+<given-names>GN</given-names></string-name>, <string-name><surname>Rogers</surname>
+<given-names>CE</given-names></string-name> (<year>1973</year>) <article-title>Symbolic description of factorial models for analysis of variance</article-title>. <source>J R Stat Soc Ser C Appl Stat</source>
+<volume>22</volume>:<fpage>392</fpage>–<lpage>399</lpage>. <pub-id pub-id-type="doi">10.2307/2346786</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B58">
+        <mixed-citation publication-type="book">
+<collab>WHO</collab> (<year>1992</year>) <source>The ICD-10 classification of mental and behavioural disorders: clinical descriptions and diagnostic guidelines</source>. <publisher-loc>Geneva</publisher-loc>: <publisher-name>World Health Organization</publisher-name>.</mixed-citation>
+      </ref>
+      <ref id="B59">
+        <mixed-citation publication-type="journal">
+<string-name><surname>Xia</surname>
+<given-names>M</given-names></string-name>, <string-name><surname>Wang</surname>
+<given-names>J</given-names></string-name>, <string-name><surname>He</surname>
+<given-names>Y</given-names></string-name> (<year>2013</year>) <article-title>Brainnet viewer: a network visualization tool for human brain connectomics</article-title>. <source>PLoS One</source>
+<volume>8</volume>:<fpage>e68910</fpage>. <pub-id pub-id-type="doi">10.1371/journal.pone.0068910</pub-id>
+<pub-id pub-id-type="pmid">23861951</pub-id></mixed-citation>
+      </ref>
+      <ref id="B60">
+        <mixed-citation publication-type="journal">
+<string-name><surname>Zalesky</surname>
+<given-names>A</given-names></string-name>, <string-name><surname>Fornito</surname>
+<given-names>A</given-names></string-name>, <string-name><surname>Bullmore</surname>
+<given-names>ET</given-names></string-name> (<year>2010</year>) <article-title>Network-based statistic: identifying differences in brain networks</article-title>. <source>Neuroimage</source>
+<volume>53</volume>:<fpage>1197</fpage>–<lpage>1207</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2010.06.041</pub-id>
+<pub-id pub-id-type="pmid">20600983</pub-id></mixed-citation>
+      </ref>
+      <ref id="B61">
+        <mixed-citation publication-type="journal">
+<string-name><surname>Zomorodian</surname>
+<given-names>A</given-names></string-name>, <string-name><surname>Carlsson</surname>
+<given-names>G</given-names></string-name> (<year>2005</year>) <article-title>Computing persistent homology</article-title>. <source>Discrete Comput Geom</source>
+<volume>33</volume>:<fpage>249</fpage>–<lpage>274</lpage>. <pub-id pub-id-type="doi">10.1007/s00454-004-1146-y</pub-id>
+</mixed-citation>
+      </ref>
+    </ref-list>
+    <sec sec-type="synthesis-author-response" id="s7">
+      <title>Synthesis</title>
+      <boxed-text position="float" orientation="portrait">
+        <p>Reviewing Editor: Julie Bakker, University of Liege</p>
+        <p>Decisions are customarily a result of the Reviewing Editor and the peer reviewers coming together and discussing their recommendations until a consensus is reached. When revisions are invited, a fact-based synthesis statement explaining their decision and outlining what is needed to prepare a revision will be listed below.</p>
+      </boxed-text>
+      <p>Synthesis: the paper has been re-reviewed by one reviewer and myself. We both feel that the authors have addressed all the previous concerns raised in a satisfactorily manner.</p>
+    </sec>
+  </back>
+</article>

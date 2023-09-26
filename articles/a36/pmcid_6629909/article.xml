@@ -1,0 +1,1215 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">Front Neurosci</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Front Neurosci</journal-id>
+      <journal-id journal-id-type="publisher-id">Front. Neurosci.</journal-id>
+      <journal-title-group>
+        <journal-title>Frontiers in Neuroscience</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">1662-4548</issn>
+      <issn pub-type="epub">1662-453X</issn>
+      <publisher>
+        <publisher-name>Frontiers Media S.A.</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">31338016</article-id>
+      <article-id pub-id-type="pmc">6629909</article-id>
+      <article-id pub-id-type="doi">10.3389/fnins.2019.00685</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Neuroscience</subject>
+          <subj-group>
+            <subject>Methods</subject>
+          </subj-group>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Tracking the Main States of Dynamic Functional Connectivity in Resting State</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Zhou</surname>
+            <given-names>Qunjie</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="author-notes" rid="fn002">
+            <sup>†</sup>
+          </xref>
+          <uri xlink:type="simple" xlink:href="http://loop.frontiersin.org/people/670428/overview"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Zhang</surname>
+            <given-names>Lu</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="author-notes" rid="fn002">
+            <sup>†</sup>
+          </xref>
+          <uri xlink:type="simple" xlink:href="http://loop.frontiersin.org/people/7218/overview"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Feng</surname>
+            <given-names>Jianfeng</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+          <xref ref-type="corresp" rid="c001">
+            <sup>*</sup>
+          </xref>
+          <uri xlink:type="simple" xlink:href="http://loop.frontiersin.org/people/660982/overview"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Lo</surname>
+            <given-names>Chun-Yi Zac</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="corresp" rid="c002">
+            <sup>*</sup>
+          </xref>
+          <uri xlink:type="simple" xlink:href="http://loop.frontiersin.org/people/377043/overview"/>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1"><sup>1</sup><institution>Shanghai Center for Mathematical Sciences, Fudan University</institution>, <addr-line>Shanghai</addr-line>, <country>China</country></aff>
+      <aff id="aff2"><sup>2</sup><institution>Institute of Science and Technology for Brain Inspired Intelligence, Fudan University</institution>, <addr-line>Shanghai</addr-line>, <country>China</country></aff>
+      <aff id="aff3"><sup>3</sup><institution>Oxford Centre for Computational Neuroscience</institution>, <addr-line>Oxford</addr-line>, <country>United Kingdom</country></aff>
+      <aff id="aff4"><sup>4</sup><institution>Department of Computer Science, University of Warwick</institution>, <addr-line>Coventry</addr-line>, <country>United Kingdom</country></aff>
+      <author-notes>
+        <fn fn-type="edited-by">
+          <p>Edited by: Xiaoping Philip Hu, University of California, Riverside, United States</p>
+        </fn>
+        <fn fn-type="edited-by">
+          <p>Reviewed by: Mingrui Xia, Beijing Normal University, China; Xiao Liu, National Institute of Neurological Disorders and Stroke (NINDS), United States; Tianming Liu, University of Georgia, United States</p>
+        </fn>
+        <corresp id="c001">*Correspondence: Jianfeng Feng, <email>jianfeng64@gmail.com</email></corresp>
+        <corresp id="c002">Chun-Yi Zac Lo, <email>zaclocy@gmail.com</email></corresp>
+        <fn fn-type="other" id="fn002">
+          <p><sup>†</sup>These authors have contributed equally to this work as co-first authors</p>
+        </fn>
+        <fn fn-type="other" id="fn003">
+          <p>This article was submitted to Brain Imaging Methods, a section of the journal Frontiers in Neuroscience</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="epub">
+        <day>09</day>
+        <month>7</month>
+        <year>2019</year>
+      </pub-date>
+      <pub-date pub-type="collection">
+        <year>2019</year>
+      </pub-date>
+      <volume>13</volume>
+      <elocation-id>685</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>14</day>
+          <month>1</month>
+          <year>2019</year>
+        </date>
+        <date date-type="accepted">
+          <day>17</day>
+          <month>6</month>
+          <year>2019</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Copyright © 2019 Zhou, Zhang, Feng and Lo.</copyright-statement>
+        <copyright-year>2019</copyright-year>
+        <copyright-holder>Zhou, Zhang, Feng and Lo</copyright-holder>
+        <license xlink:href="http://creativecommons.org/licenses/by/4.0/">
+          <license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY). The use, distribution or reproduction in other forums is permitted, provided the original author(s) and the copyright owner(s) are credited and that the original publication in this journal is cited, in accordance with accepted academic practice. No use, distribution or reproduction is permitted which does not comply with these terms.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>Dynamical changes have recently been tracked in functional connectivity (FC) calculated from resting-state functional magnetic resonance imaging (R-fMRI), when a person is conscious but not carrying out a directed task during scanning. Diverse dynamical FC states (dFC) are believed to represent different internal states of the brain, in terms of brain-regional interactions. In this paper, we propose a novel protocol, the signed community clustering with the optimized modularity by two-step procedures, to track dynamical whole brain functional connectivity (dWFC) states. This protocol is assumption free without <italic>a priori</italic> threshold for the number of clusters. By applying our method on sliding window based dWFC’s with automated anatomical labeling 2 (AAL2), three main dWFC states were extracted from R-fMRI datasets in Human Connectome Project, that are independent on window size. Through extracting the FC features of these states, we found the functional links in state 1 (WFC-C<sub>1</sub>) mainly involved visual, somatomotor, attention and cerebellar (posterior lobe) modules. State 2 (WFC-C<sub>2</sub>) was similar to WFC-C<sub>1</sub>, but more FC’s linking limbic, default mode, and frontoparietal modules and less linking the cerebellum, sensory and attention modules. State 3 had more FC’s linking default mode, limbic, and cerebellum, compared to WFC-C<sub>1</sub> and WFC-C<sub>2</sub>. With tests of robustness and stability, our work provides a solid, hypothesis-free tool to detect dWFC states for the possibility of tracking rapid dynamical change in FCs among large data sets.</p>
+      </abstract>
+      <kwd-group>
+        <kwd>community clustering</kwd>
+        <kwd>signed networks</kwd>
+        <kwd>modularity</kwd>
+        <kwd>temporal changes</kwd>
+        <kwd>resting state functional magnetic resonance image</kwd>
+      </kwd-group>
+      <counts>
+        <fig-count count="6"/>
+        <table-count count="2"/>
+        <equation-count count="0"/>
+        <ref-count count="36"/>
+        <page-count count="12"/>
+        <word-count count="0"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec>
+      <title>Introduction</title>
+      <p>Spontaneous fluctuations are a fundamental mechanism representing neural signals that has been largely explained by functional magnetic resonance imaging (fMRI) data. Resting-state functional connectivity (FC) can demonstrate the intrinsic network organizations of human brain (<xref rid="B9" ref-type="bibr">Friston, 2011</xref>). The cognitive activities of high order brain function involve the dynamic interplay of a set of brain circuits rather than a specific region, and the spontaneous activity in rest is also predictive of task and behavior performance (<xref rid="B7" ref-type="bibr">De la Iglesia-Vaya et al., 2013</xref>; <xref rid="B24" ref-type="bibr">Reineberg et al., 2015</xref>; <xref rid="B31" ref-type="bibr">Tavor et al., 2016</xref>). Accumulating studies have proposed to detect the spatiotemporal organization of dynamic functional connectivity (dFC), and of dynamic whole-brain functional connectivity (dWFC) (<xref rid="B4" ref-type="bibr">Calhoun et al., 2014</xref>; <xref rid="B16" ref-type="bibr">Kopell et al., 2014</xref>; <xref rid="B23" ref-type="bibr">Preti et al., 2017</xref>), showing how brain FC organized over time.</p>
+      <p>Clustering analysis, particularly k-means is one of the most common methods of categorizing dFC patterns (<xref rid="B4" ref-type="bibr">Calhoun et al., 2014</xref>). It partitions n samples in observation space into k clusters, where each sample belongs to the nearest cluster according to its distance from the cluster centroid. However, it requires the pre-defined number of clusters k and is sensitive to initial values that may lead to different results. Hierarchy clustering (HC) aims to building a dendrogram which represents a hierarchy of cluster, and the samples could be attributed to a sub-cluster within a main cluster. Thus, HC is a more flexible method to understand the dFC structures in different levels (<xref rid="B33" ref-type="bibr">Vidaurre et al., 2017</xref>). However, it also requires the definition of a specific threshold for cluster separation. Both k-means and HC are not assumption free and need <italic>a priori</italic> knowledge for categorization of the states of brain activity.</p>
+      <p>The selection of the number of clusters or the threshold may bias or affect the interpretation of the states while lacking comprehensive understanding of the underlying mechanism of dFC. Principal component analysis (PCA) coverts a number of possibly correlated variables into a set of linearly uncorrelated variables, called principal components. It has been used to investigate dynamic brain connectivity patterns, “eigenconnectivities,” by ranking and extracting the principal components of dWFC’s with higher variability across time and subjects (<xref rid="B19" ref-type="bibr">Leonardi et al., 2013</xref>). Though PCA is a powerful tool to detect the different features of dFC, it needs to bear a risk of information loss during the reduction of dimensionality. Other state detection models based on hidden Markov chain also require prior knowledge of the expression form and the number of states (<xref rid="B26" ref-type="bibr">Robinson et al., 2015</xref>; <xref rid="B28" ref-type="bibr">Ryali et al., 2016</xref>; <xref rid="B33" ref-type="bibr">Vidaurre et al., 2017</xref>).</p>
+      <p>These approaches are able to uncover the similar time-varying recurring connectivity patterns into states, and have revealed the characteristics of dFC linking with the human demographic characterization, cognitive behaviors and diseases (<xref rid="B2" ref-type="bibr">Baker et al., 2014</xref>; <xref rid="B4" ref-type="bibr">Calhoun et al., 2014</xref>; <xref rid="B14" ref-type="bibr">Karahanoğlu and Van De Ville, 2015</xref>; <xref rid="B36" ref-type="bibr">Zhang et al., 2016</xref>). However, heterogeneities are widely observed across studies. There is still a lack of reliable methods for the research of dFC networks. In this study, we focused on the co-variation of FCs over time by detecting the state for dWFC’s across subjects and time from Human Connectome Project (HCP) data. We proposed the modularity-optimized community clustering algorithm to categorize the dWFC’s in an unsupervised and data-driven fashion. This can provide a more appropriate clustering method while little is known in dWFC’s states. As the computation for community clustering is computationally expensive and time-consuming, we also proposed a two-steps clustering process to reduce the cost of our proposed algorithm.</p>
+    </sec>
+    <sec sec-type="materials|methods" id="s1">
+      <title>Materials and Methods</title>
+      <sec>
+        <title>Participants and Data Acquirements</title>
+        <sec>
+          <title>HCP</title>
+          <p>The dataset used for this study was collected from HCP<sup><xref ref-type="fn" rid="fn01">1</xref></sup> (WU-Minn Consortium). Our sample includes 812 subjects (ages 22–35 years-old, 450 females) scanned on a 3T Siemens connectome-Skyra scanner. For each subject, a three-dimensional T1 structural image was acquired at 0.7 mm isotropic resolution with 3D MPRAGE acquisition. The four blood-oxygen-level dependent (BOLD) resting state fMRI (R-fMRI) runs were acquired in separate sessions on two different days, each for approximately 15 min (2 mm× 2 mm× 2 mm spatial resolution, TR = 0.72 s, 1200 timepoints, multiband acceleration factor of 8, with eyes open and relaxed fixation on a projected bright cross-hair on a dark background). The WU-Minn HCP Consortium obtained full informed consent from all participants, and research procedures and ethical guidelines were followed in accordance with the Institutional Review Boards (IRB) of Washington University in St. Louis, MO, United States (IRB #20120436). To identify WFC, the whole brain was parcellated into 120 regions according to the automated anatomical labeling (AAL2) atlas (<xref rid="B27" ref-type="bibr">Rolls et al., 2015</xref>), with names and abbreviations listed in <xref rid="T1" ref-type="table">Table 1</xref>.</p>
+          <table-wrap id="T1" position="float">
+            <label>Table 1</label>
+            <caption>
+              <p>The anatomical regions defined in each hemisphere and their label in the automated anatomical labeling atlas 2 (AAL2, <xref rid="B27" ref-type="bibr">Rolls et al., 2015</xref>).</p>
+            </caption>
+            <table frame="hsides" rules="groups" cellspacing="5" cellpadding="5">
+              <thead>
+                <tr>
+                  <th valign="top" align="left" rowspan="1" colspan="1">ID</th>
+                  <th valign="top" align="left" rowspan="1" colspan="1">Region description</th>
+                  <th valign="top" align="left" rowspan="1" colspan="1">AAL2</th>
+                  <th valign="top" align="left" rowspan="1" colspan="1">Lobe</th>
+                  <th valign="top" align="left" rowspan="1" colspan="1">Abbreviation</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">1, 2</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Precentral gyrus</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Precentral</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Sensorimotor</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">PreCG</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">3, 4</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Superior frontal gyrus, dorsolateral</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Frontal_Sup</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Frontal</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">SFG</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">5, 6</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Middle frontal gyrus</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Frontal_Mid</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Frontal</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">MFG</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">7, 8</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Inferior frontal gyrus, opercular part</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Frontal_Inf_Oper</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Frontal</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">IFGoperc</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">9, 10</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Inferior frontal gyrus, triangular part</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Frontal_Inf_Tri</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Frontal</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">IFGtriang</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">11, 12</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">IFG pars orbitalis</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Frontal_Inf_Orb</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Frontal</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">IFGorb</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">13, 14</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Rolandic operculum</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Rolandic_Oper</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Frontal</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">ROL</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">15, 16</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Supplementary motor area</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Supp_Motor_Area</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Sensorimotor</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">SMA</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">17, 18</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Olfactory cortex</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Olfactory</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Frontal</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">OLF</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">19, 20</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Superior frontal gyrus, medial</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Frontal_Sup_Med</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Frontal</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">SFGmedial</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">21, 22</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Superior frontal gyrus, medial orbital</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Frontal_Med_Orb</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Frontal</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">PFCventmed</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">23, 24</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Gyrus rectus</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Rectus</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Frontal</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">REC</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">25, 26</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Medial orbital gyrus</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">OFCmed</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Frontal</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">OFCmed</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">27, 28</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Anterior orbital gyrus</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">OFCant</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Frontal</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">OFCant</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">29, 30</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Posterior orbital gyrus</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">OFCpost</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Frontal</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">OFCpost</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">31, 32</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Lateral orbital gyrus</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">OFClat</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Frontal</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">OFClat</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">33, 34</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Insula</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Insula</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Subcortical</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">INS</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">35, 36</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Anterior cingulate &amp; paracingulate gyri</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Cingulate_Ant</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Frontal</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">ACC</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">37, 38</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Middle cingulate &amp; paracingulate gyri</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Cingulate_Mid</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Frontal</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">MCC</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">39, 40</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Posterior cingulate gyrus</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Cingulate_Post</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Parietal</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">PCC</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">41, 42</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Hippocampus</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Hippocampus</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Temporal</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">HIP</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">43, 44</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Parahippocampal gyrus</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">ParaHippocampal</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Temporal</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">PHG</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">45, 46</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Amygdala</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Amygdala</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Subcortical</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">AMYG</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">47, 48</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Calcarine fissure and surrounding cortex</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Calcarine</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Occipital</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">CAL</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">49, 50</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Cuneus</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Cuneus</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Occipital</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">CUN</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">51, 52</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Lingual gyrus</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Lingual</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Occipital</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">LING</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">53, 54</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Superior occipital gyrus</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Occipital_Sup</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Occipital</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">SOG</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">55, 56</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Middle occipital gyrus</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Occipital_Mid</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Occipital</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">MOG</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">57, 58</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Inferior occipital gyrus</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Occipital_Inf</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Occipital</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">IOG</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">59, 60</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Fusiform gyrus</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Fusiform</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Temporal</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">FFG</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">61, 62</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Postcentral gyrus</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Postcentral</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Sensorimotor</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">PoCG</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">63, 64</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Superior parietal gyrus</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Parietal_Sup</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Parietal</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">SPG</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">65, 66</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Inferior parietal gyrus, excluding supramarginal and angular gyri</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Parietal_Inf</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Parietal</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">IPG</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">67, 68</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">SupraMarginal gyrus</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">SupraMarginal</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Parietal</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">SMG</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">69, 70</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Angular gyrus</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Angular</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Parietal</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">ANG</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">71, 72</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Precuneus</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Precuneus</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Parietal</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">PCUN</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">73, 74</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Paracentral lobule</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Paracentral_Lobule</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Parietal</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">PCL</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">75, 76</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Caudate nucleus</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Caudate</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Subcortical</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">CAU</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">77, 78</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Lenticular nucleus, Putamen</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Putamen</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Subcortical</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">PUT</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">79, 80</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Lenticular nucleus, Pallidum</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Pallidum</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Subcortical</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">PAL</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">81, 82</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Thalamus</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Thalamus</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Subcortical</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">THA</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">83, 84</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Heschl’s gyrus</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Heschl</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Temporal</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">HES</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">85, 86</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Superior temporal gyrus</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Temporal_Sup</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Temporal</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">STG</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">87, 88</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Temporal pole: superior temporal gyrus</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Temporal_Pole_Sup</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Temporal</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">TPOsup</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">89, 90</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Middle temporal gyrus</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Temporal_Mid</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Temporal</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">MTG</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">91, 92</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Temporal pole: middle temporal gyrus</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Temporal_Pole_Mid</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Temporal</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">TPOmid</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">93, 94</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Inferior temporal gyrus</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Temporal_Inf</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Temporal</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">ITG</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">95, 96</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Cerebellum Crus I</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Cerebelum_Crus1_L</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Cerebellum</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">CRBLCrus1</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">97, 98</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Cerebellum Crus II</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Cerebelum_Crus2_L</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Cerebellum</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">CRBLCrus2</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">99, 100</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Cerebellum lobule III, hemisphere</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Cerebelum_3_L</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Cerebellum</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">CRBL3</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">101, 102</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Cerebellum lobule IV V, hemisphere</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Cerebelum_4_5_L</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Cerebellum</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">CRBL45</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">103, 104</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Cerebellum lobule VI, hemisphere</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Cerebelum_6_L</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Cerebellum</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">CRBL6</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">105, 106</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Cerebellum lobule VII b, hemisphere</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Cerebelum_7b_L</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Cerebellum</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">CRBL7b</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">107, 108</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Cerebellum lobule VIII, hemisphere</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Cerebelum_8_L</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Cerebellum</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">CRBL8</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">109, 110</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Cerebellum lobule IX, hemisphere</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Cerebelum_9_L</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Cerebellum</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">CRBL9</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">111, 112</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Cerebellum lobule X, hemisphere</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Cerebelum_10_L</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Cerebellum</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">CRBL10</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">113</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Cerebellum lobule I II, vermis</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Vermis_1_2</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Cerebellum</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Vermis12</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">114</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Cerebellum lobule III, vermis</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Vermis_3</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Cerebellum</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Vermis3</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">115</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Cerebellum lobule IV V, vermis</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Vermis_4_5</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Cerebellum</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Vermis45</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">116</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Cerebellum lobule VI, vermis</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Vermis_6</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Cerebellum</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Vermis6</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">117</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Cerebellum lobule VII b, vermis</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Vermis_7</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Cerebellum</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Vermis7</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">118</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Cerebellum lobule VIII, vermis</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Vermis_8</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Cerebellum</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Vermis8</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">119</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Cerebellum lobule IX, vermis</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Vermis_9</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Cerebellum</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Vermis9</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">120</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Cerebellum lobule X, vermis</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Vermis_10</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Cerebellum</td>
+                  <td valign="top" align="left" rowspan="1" colspan="1">Vermis10</td>
+                </tr>
+              </tbody>
+            </table>
+            <table-wrap-foot>
+              <attrib>
+                <italic>Column five provides a set of abbreviations for the anatomical descriptions.</italic>
+              </attrib>
+            </table-wrap-foot>
+          </table-wrap>
+        </sec>
+      </sec>
+      <sec>
+        <title>Data Preprocessing</title>
+        <sec>
+          <title>HCP Data</title>
+          <p>The minimally preprocessed R-fMRI data were used, conducted by HCP Functional Pipeline v2.0 (<xref rid="B10" ref-type="bibr">Glasser et al., 2013</xref>), including gradient distortion correction, head motion correction, image distortion correction, and spatial transformation to the Montreal Neurological Institute (MNI) space, with one step spline resampling from the original functional images. The linear trend and quadratic term were removed from these functional images, and several nuisance signals were regressed from the time course of each voxel using multiple linear regression, including cerebrospinal fluid, white matter, and Friston 24 head motion parameters. Finally, temporal band-pass filtering (0.01–0.1 Hz) was performed to reduce the influence of low-frequency drift and the high-frequency physiological noise. The preprocessed time-courses were used for further functional connectivity analyses.</p>
+        </sec>
+      </sec>
+      <sec>
+        <title>Sliding Window Based Dynamic Functional Connectivity</title>
+        <p>Either voxel or regional based BOLD signals can be used to calculate FCs. Here, we considered to process the regional based BOLD signals without losing any generality. We denoted time series {<italic>x<sub>i</sub></italic>(<italic>t</italic>), <italic>t</italic> = 0, 1, ⋯, <italic>N</italic>, <italic>i</italic> = 0, 1, ⋯, <italic>M</italic>}, where <italic>t</italic> is time and <italic>i</italic> is the brain region. To characterize the dynamics of FCs, all BOLD signals were segmented into <italic>T</italic> non-overlapped sliding window with length <italic>L</italic> (<xref ref-type="fig" rid="F1">Figure 1A</xref>). Fisher-z transformed Pearson correlations between all pairs of regional BOLD signal were calculated and normalized in each window as following.</p>
+        <fig id="F1" position="float">
+          <label>FIGURE 1</label>
+          <caption>
+            <p>Sliding window based whole functional connectivity (WFC). <bold>(A)</bold> The whole brain dynamic functional connectivity matrix was computed with 14.4 s non-overlapping sliding window (length of 20 time points). The corresponding top 100 significant FCs are shown for illustration at upper right of the matrix. <bold>(B)</bold> An example of the community clustering results across time and subjects. The similar (reoccurred) network patterns were clustered into 3 modules, representing 3 states. The similarity of dynamic functional connectivity was defined as their Pearson correlation coefficient.</p>
+          </caption>
+          <graphic xlink:href="fnins-13-00685-g001"/>
+        </fig>
+        <disp-formula>
+          <mml:math id="M1">
+            <mml:mrow>
+              <mml:msub>
+                <mml:mrow>
+                  <mml:mi mathvariant="italic">FC</mml:mi>
+                </mml:mrow>
+                <mml:mrow>
+                  <mml:mi mathvariant="italic">ij</mml:mi>
+                </mml:mrow>
+              </mml:msub>
+              <mml:mo stretchy="false">(</mml:mo>
+              <mml:mi>s</mml:mi>
+              <mml:mo stretchy="false">)</mml:mo>
+              <mml:mo>≜</mml:mo>
+              <mml:mfrac>
+                <mml:mrow>
+                  <mml:mi mathvariant="italic">FZ</mml:mi>
+                  <mml:mrow>
+                    <mml:mo>(</mml:mo>
+                    <mml:mrow>
+                      <mml:msub>
+                        <mml:mi mathvariant="italic">r</mml:mi>
+                        <mml:mrow>
+                          <mml:mi mathvariant="italic">ij</mml:mi>
+                        </mml:mrow>
+                      </mml:msub>
+                      <mml:mo stretchy="false">(</mml:mo>
+                      <mml:mi>s</mml:mi>
+                      <mml:mo stretchy="false">)</mml:mo>
+                    </mml:mrow>
+                    <mml:mo>)</mml:mo>
+                  </mml:mrow>
+                  <mml:mo>−</mml:mo>
+                  <mml:mi mathvariant="italic">μ</mml:mi>
+                  <mml:mo stretchy="false">(</mml:mo>
+                  <mml:mi>s</mml:mi>
+                  <mml:mo stretchy="false">)</mml:mo>
+                </mml:mrow>
+                <mml:mrow>
+                  <mml:mi mathvariant="italic">σ</mml:mi>
+                  <mml:mo stretchy="false">(</mml:mo>
+                  <mml:mi>s</mml:mi>
+                  <mml:mo stretchy="false">)</mml:mo>
+                </mml:mrow>
+              </mml:mfrac>
+            </mml:mrow>
+          </mml:math>
+        </disp-formula>
+        <p><italic>r<sub>ij</sub></italic> (<italic>s</italic>) is the Pearson correlation between subset of signals <italic>x<sub>i</sub></italic> (<italic>t<sub>s</sub></italic>) and <italic>x<sub>j</sub></italic> (<italic>t<sub>s</sub></italic>) where <italic>t<sub>s</sub></italic> = <italic>s</italic>, <italic>s</italic> + 1, ⋯, <italic>s</italic> + <italic>L</italic> − 1, and FZ(⋅) is the Fisher r-z transform</p>
+        <disp-formula>
+          <mml:math id="M2">
+            <mml:mrow>
+              <mml:mi mathvariant="italic">FZ</mml:mi>
+              <mml:mrow>
+                <mml:mo>(</mml:mo>
+                <mml:mrow>
+                  <mml:msub>
+                    <mml:mi>r</mml:mi>
+                    <mml:mrow>
+                      <mml:mi mathvariant="italic">ij</mml:mi>
+                    </mml:mrow>
+                  </mml:msub>
+                  <mml:mo stretchy="false">(</mml:mo>
+                  <mml:mi>s</mml:mi>
+                  <mml:mo stretchy="false">)</mml:mo>
+                </mml:mrow>
+                <mml:mo>)</mml:mo>
+              </mml:mrow>
+              <mml:mo>≜</mml:mo>
+              <mml:mfrac>
+                <mml:mn>1</mml:mn>
+                <mml:mn>2</mml:mn>
+              </mml:mfrac>
+              <mml:mi>ln</mml:mi>
+              <mml:mrow>
+                <mml:mo>(</mml:mo>
+                <mml:mrow>
+                  <mml:mfrac>
+                    <mml:mrow>
+                      <mml:mn>1</mml:mn>
+                      <mml:mo>+</mml:mo>
+                      <mml:msub>
+                        <mml:mi>r</mml:mi>
+                        <mml:mrow>
+                          <mml:mi mathvariant="italic">ij</mml:mi>
+                        </mml:mrow>
+                      </mml:msub>
+                      <mml:mo stretchy="false">(</mml:mo>
+                      <mml:mi>s</mml:mi>
+                      <mml:mo stretchy="false">)</mml:mo>
+                    </mml:mrow>
+                    <mml:mrow>
+                      <mml:mn>1</mml:mn>
+                      <mml:mo>+</mml:mo>
+                      <mml:msub>
+                        <mml:mi>r</mml:mi>
+                        <mml:mrow>
+                          <mml:mi mathvariant="italic">ij</mml:mi>
+                        </mml:mrow>
+                      </mml:msub>
+                      <mml:mo stretchy="false">(</mml:mo>
+                      <mml:mi>s</mml:mi>
+                      <mml:mo stretchy="false">)</mml:mo>
+                    </mml:mrow>
+                  </mml:mfrac>
+                </mml:mrow>
+                <mml:mo>)</mml:mo>
+              </mml:mrow>
+            </mml:mrow>
+          </mml:math>
+        </disp-formula>
+        <p>μ (<italic>s</italic>) and σ (<italic>s</italic>) represent the mean and standard deviation of the total <inline-formula><mml:math id="M3"><mml:mrow><mml:mfrac><mml:mrow><mml:mi>M</mml:mi><mml:mo stretchy="false">(</mml:mo><mml:mi>M</mml:mi><mml:mo>−</mml:mo><mml:mn>1</mml:mn><mml:mo stretchy="false">)</mml:mo></mml:mrow><mml:mn>2</mml:mn></mml:mfrac></mml:mrow></mml:math></inline-formula> different pairs of FZ(<italic>r<sub>ij</sub></italic> (<italic>s</italic>)), separately. Therefore, we obtained <italic>N</italic>/<italic>L</italic> dWFC’s networks for each subject. Because of the expensive computation, we used a two-steps clustering process to reduce the cost of the clustering algorithm. The dWFC’s calculated from all the time windows of each subject are grouped into sub-datasets for community clustering. The similarity matrix was presented by the Pearson correlation coefficient between any pair of dynamic dWFC’s for further states detection.</p>
+      </sec>
+      <sec>
+        <title>Community Detection of Signed Graph</title>
+        <p>Each dWFC is considered as a vertex in graph theory. The community clustering algorithm assigns a graph with n vertices into <italic>c</italic> communities σ<sub><italic>i</italic></sub> ∈ {1, 2, …, <italic>c</italic>}; i.e., each node was assigned to a community σ<sub><italic>i</italic></sub>, where <italic>i</italic> = 1, 2, …, <italic>n</italic>. Q-modularity of a weighted graph is defined as the edge weights within the community minus the expected edge weights of them (<xref rid="B18" ref-type="bibr">Leicht and Newman, 2008</xref>); i.e., Q = <inline-formula><mml:math id="M4"><mml:mrow><mml:mfrac><mml:mn>1</mml:mn><mml:mi>m</mml:mi></mml:mfrac></mml:mrow></mml:math></inline-formula> ∑<sub><italic>i,j</italic></sub> (<italic>A<sub>i,j</sub></italic> − <italic>p<sub>i,j</sub></italic>) δ<sub><italic>i,j</italic></sub>, where δ<sub><italic>i,j</italic></sub> = 1 if σ<sub><italic>i</italic></sub> = σ<sub><italic>j</italic></sub> and 0 otherwise; <italic>p<sub>i,j</sub></italic> = <italic>k<sub>i</sub>k<sub>j</sub></italic>/<italic>m</italic> represents the expected edge weight between <italic>i</italic> and vertex <italic>j</italic>; <italic>m</italic> is total the weight of all vertexes. <italic>A</italic> is adjacent matrix, where <italic>A<sub>i,j</sub></italic> is the exact edge weight between vertex <italic>i</italic> and vertex <italic>j</italic>. By maximization of the Q-modularity, the community structure is determined with dense connections as an intra-community feature, while the sparse connections as inter-community features. As declared above, it is natural to use the similarity matrix, calculated from Pearson correlation coefficient of all pairs of dWFC’s, as the adjacent matrix in community clustering. In this study, the adjacent matrix <italic>A</italic> is a signed weighted matrix, and we employ an approach based on an extended signed Q-modularity of the graph (<xref rid="B20" ref-type="bibr">Lu et al., 2017</xref>). The graph is divided into two graphs composed by positive edges and negative edges, respectively, represent by <italic>A</italic><sup>+</sup> and <italic>A</italic><sup>−</sup>, where <inline-formula><mml:math id="M5"><mml:mrow><mml:msubsup><mml:mi>A</mml:mi><mml:mrow><mml:mi>i</mml:mi><mml:mo>,</mml:mo><mml:mi>j</mml:mi></mml:mrow><mml:mo>+</mml:mo></mml:msubsup></mml:mrow></mml:math></inline-formula> ≥ 0 and <inline-formula><mml:math id="M6"><mml:mrow><mml:msubsup><mml:mi>A</mml:mi><mml:mrow><mml:mi>i</mml:mi><mml:mo>,</mml:mo><mml:mi>j</mml:mi></mml:mrow><mml:mo>-</mml:mo></mml:msubsup></mml:mrow></mml:math></inline-formula> ≤ 0. The extended signed Q-modularity equals (<xref rid="B20" ref-type="bibr">Lu et al., 2017</xref>): (i) the fraction of edge weights, of which both head and tail nodes fall within the same community, minus (ii) the expected value of the edge weights of a random graph that follows the same positive weight degree distribution of the intrinsic graph, plus (iii) the expected value of the edge weights of a random graph that follows the same negative weight degree distribution of this intrinsic graph. This can be formulated as</p>
+        <disp-formula>
+          <mml:math id="M7">
+            <mml:mrow>
+              <mml:mtext>Q</mml:mtext>
+              <mml:mo>=</mml:mo>
+              <mml:mfrac>
+                <mml:mn>1</mml:mn>
+                <mml:mrow>
+                  <mml:mn>2</mml:mn>
+                  <mml:mi>m</mml:mi>
+                </mml:mrow>
+              </mml:mfrac>
+              <mml:mstyle displaystyle="true">
+                <mml:msub>
+                  <mml:mo>∑</mml:mo>
+                  <mml:mrow>
+                    <mml:mi>i</mml:mi>
+                    <mml:mo>,</mml:mo>
+                    <mml:mi>j</mml:mi>
+                  </mml:mrow>
+                </mml:msub>
+                <mml:mrow>
+                  <mml:mo stretchy="false">(</mml:mo>
+                  <mml:msub>
+                    <mml:mi>A</mml:mi>
+                    <mml:mrow>
+                      <mml:mi>i</mml:mi>
+                      <mml:mo>,</mml:mo>
+                      <mml:mi>j</mml:mi>
+                    </mml:mrow>
+                  </mml:msub>
+                  <mml:mo>−</mml:mo>
+                  <mml:msubsup>
+                    <mml:mi>p</mml:mi>
+                    <mml:mrow>
+                      <mml:mi>i</mml:mi>
+                      <mml:mo>,</mml:mo>
+                      <mml:mi>j</mml:mi>
+                    </mml:mrow>
+                    <mml:mo>+</mml:mo>
+                  </mml:msubsup>
+                  <mml:mo>+</mml:mo>
+                  <mml:msubsup>
+                    <mml:mi>p</mml:mi>
+                    <mml:mrow>
+                      <mml:mi>i</mml:mi>
+                      <mml:mo>.</mml:mo>
+                      <mml:mi>j</mml:mi>
+                    </mml:mrow>
+                    <mml:mo>−</mml:mo>
+                  </mml:msubsup>
+                  <mml:mo stretchy="false">)</mml:mo>
+                  <mml:msub>
+                    <mml:mrow>
+                      <mml:mtext> </mml:mtext>
+                      <mml:mi mathvariant="normal">δ</mml:mi>
+                    </mml:mrow>
+                    <mml:mrow>
+                      <mml:mi>i</mml:mi>
+                      <mml:mo>,</mml:mo>
+                      <mml:mi>j</mml:mi>
+                    </mml:mrow>
+                  </mml:msub>
+                </mml:mrow>
+              </mml:mstyle>
+            </mml:mrow>
+          </mml:math>
+        </disp-formula>
+        <p><italic>m</italic> is the sum of the absolute values of elements of the matrix <italic>A</italic>. <inline-formula><mml:math id="M8"><mml:mrow><mml:msubsup><mml:mi>p</mml:mi><mml:mrow><mml:mi>i</mml:mi><mml:mo>,</mml:mo><mml:mi>j</mml:mi></mml:mrow><mml:mo>±</mml:mo></mml:msubsup></mml:mrow></mml:math></inline-formula> stands for the expected coupling probability between vertex <italic>i</italic> and vertex <italic>j</italic> based on positive and negative coupling, respectively, represented by <italic>A</italic><sup>±</sup>. <xref ref-type="fig" rid="F2">Figure 2</xref> illustrates the examples of the community structure in the “weighted” and “signed weighted” graph. The fast community detection algorithm (CDA) is used in maximize Q-modularity (<xref rid="B17" ref-type="bibr">Le Martelot and Hankin, 2013</xref>). The code from <ext-link ext-link-type="uri" xlink:href="http://www.elemartelot.org/index.php/programming/cd-code">http://www.elemartelot.org/index.php/programming/cd-code</ext-link> was modified for handling of signed weighted edges.</p>
+        <fig id="F2" position="float">
+          <label>FIGURE 2</label>
+          <caption>
+            <p>Community in graph. Each dot represents a vertex (node), and the color of nodes represent the community. Each line represents an edge, and the width and color represent the weighting and sign, respectively. <bold>(A)</bold> The community of weighted graph. <bold>(B)</bold> The community of signed weighted graph.</p>
+          </caption>
+          <graphic xlink:href="fnins-13-00685-g002"/>
+        </fig>
+      </sec>
+      <sec>
+        <title>Two-Steps Community Clustering of dWFC’s for Large Data-Set</title>
+        <p>The correlation coefficient for each pair of dWFC’s for an individual subject was computed as the similarity index for community detection. Ideally the community detection was performed across all subjects and time. However, the computation is extremely high when the subject population is large. In consideration of reducing the memory footprint and calculation time, this stage was developed in two steps due to the large amount of dWFC’s (<xref ref-type="fig" rid="F3">Figure 3</xref>). Firstly, all the dWFC’s were separated into many sub-groups in chronological order such that each subject assigned a number of dWFC’s to each given group, denoted by S. That is, there were S dWFC’s from each subject in each group. The number of groups equals to the total number of dWFC’s of each subject divided by the amount in each group, i.e., <inline-formula><mml:math id="M9"><mml:mrow><mml:mfrac><mml:mi>N</mml:mi><mml:mrow><mml:mi mathvariant="italic">LS</mml:mi></mml:mrow></mml:mfrac></mml:mrow></mml:math></inline-formula>. The clustering algorithm was applied separately in each group, and the cluster centroids (mean of dWFC’s within a cluster) were kept. Next, all the cluster centroids extracted from different groups could be further clustered by applying the community detection on the correlation matrix of cluster centroids. We also randomly selected <inline-formula><mml:math id="M10"><mml:mrow><mml:mfrac><mml:mi>N</mml:mi><mml:mrow><mml:mi mathvariant="italic">LS</mml:mi></mml:mrow></mml:mfrac></mml:mrow></mml:math></inline-formula> samples from 194880 dWFC samples (60 windows×4 sessions×812 subjects) into a group for 100 times. To test the stability and similarity of the clustering results from each group, we compared the clustering centroids obtained in random groups with those obtained in chronological groups, regardless of its sampling method (<xref ref-type="fig" rid="F4">Figure 4A</xref>). Finally, we used the Davies–Bouldin index (DBI) (<xref rid="B6" ref-type="bibr">Davies and Bouldin, 1979</xref>), a well-known clustering quality measure by averaging the maximal similarity between each cluster and all other clusters, as a metric for evaluating the clustering performance both in step 1 (for dWFC’s in each group) and step 2 (for centroids from different groups). The smaller the index is, the better the clustering result is. Furthermore, we also used k-means algorithm to compare the rationality of the number of states with our method. For each group, we fixed the number of clusters as K from 1 to 6, and set 100 different initial values to detect the best partition with the minimal intra-class distance.</p>
+        <fig id="F3" position="float">
+          <label>FIGURE 3</label>
+          <caption>
+            <p>Flowchart of two-steps community clustering of dynamic whole brain function connectivity. (1) The extraction of dynamic whole brain functional connectivity based on sliding window; (2) Random group assignment for community clustering, where each group consists of a number of dWFC’s from all subject; (3) Community clustering results within each group, and the cluster centroids (averaged dWFC of the same state in each group) were preserved; (4) Final community clustering for the cluster centroids obtained from groups.</p>
+          </caption>
+          <graphic xlink:href="fnins-13-00685-g003"/>
+        </fig>
+        <fig id="F4" position="float">
+          <label>FIGURE 4</label>
+          <caption>
+            <p>State Detection of Dynamical WFC. <bold>(A)</bold> The scatter plot of WFC’s in principal coordinate analysis. Each point represents a cluster centroid (the averaged WFC’s of the same community) detected in step 1. (Dots represent centroids in chronological groups and circles represent random groups) Distance between WFC points is defined by 1-correlation<sub>wfc-wfc</sub><sup>2</sup>, where principal coordinate analysis projects those WFC points into 2D spaces while preserved the original distance as much as possible. <bold>(B)</bold> The boxplot of the occurrence of three detected states for all subjects and the <italic>p</italic>-value of two-sample <italic>t</italic>-test between the occurrence of different states. <bold>(C)</bold> The transition rate between three detected states. <bold>(D)</bold> The states of dynamic functional connectivity for a single subject (subject #124422 as an example) were detected based on individual community clustering and feature scores. The states show in colors according to the WFC communities in <bold>(A)</bold>.</p>
+          </caption>
+          <graphic xlink:href="fnins-13-00685-g004"/>
+        </fig>
+      </sec>
+      <sec>
+        <title>Detection of Connectivity States</title>
+        <p>After two step clustering, all of the dWFC’s were assigned to the corresponding communities, which we defined the “states” here, according to their cluster centroids. The occurrence, transition rate, and mean lifetime of these states were calculated as dynamic parameters for all WFC’s in MR sessions (<xref rid="B28" ref-type="bibr">Ryali et al., 2016</xref>). The features of corresponding WFC communities were computed by averaging all dynamic WFC’s from each community, denoted as WFC-C<italic><sub>i</sub></italic>. Here we define the “feature score” by computing the correlation coefficient between WFC-C<italic><sub>i</sub></italic> and a given WFC, and the highest feature score among the states could predict the corresponding state.</p>
+      </sec>
+    </sec>
+    <sec>
+      <title>Results</title>
+      <sec>
+        <title>The Three States of Dynamic Whole-Brain Functional Connectivity</title>
+        <p>We applied our method in R-fMRI data from 812 healthy adults released by HCP to estimate the functional network connectivity states. The AAL2 atlas was considered first so that the number of regions M was 120. The length of the time series N was 4800. We set <italic>L</italic> = 20 and the influence of window length had been illustrated in <xref ref-type="supplementary-material" rid="SM1">Supplementary Figure S1</xref>. We set <italic>S</italic> = 5 due to the large computation consumption and we finally obtained 48 groups (a larger S could help to reduce the inconsistency between groups, see <xref ref-type="supplementary-material" rid="SM1">Supplementary Figure S1</xref>). The WFC’s within a community follows a common variation trend (positive correlation, <xref ref-type="fig" rid="F1">Figure 1B</xref>) while those from different communities do not, or even follow a reversed variation trend (negative correlation). Noted that cluster centroids extracted in step 1 are distinctly divided into three communities (<xref ref-type="fig" rid="F4">Figure 4A</xref>), both for the chronological groups and random groups, which revealed high resemblance of clustering results between groups. Thus, each WFC in a given time window of a given subject could be assigned to one of the three WFC state. The feature of the corresponding WFC community (WFC-C) was calculated by averaging all dynamic WFC’s from each community; and we computed the feature score among the three WFC-C’s to represent the predicted state for the original WFC’s. The distribution of the matching rate between the clustering states and the predicted states was 93.3% on average (<xref ref-type="fig" rid="F4">Figure 4D</xref>), which may be helpful to detect the state for an unknown network without performing the clustering. For dynamic parameters, the state 3 showed the highest occurrence, whereas the state 2 showed the lowest occurrence (<xref ref-type="fig" rid="F4">Figure 4B</xref>). The transition between state 1 and state 3 showed the most frequent rate (<xref ref-type="fig" rid="F4">Figure 4C</xref>). There was no difference in mean lifetime that the three states had an averaged mean lifetime of 24.8 s for state 1, 25.1 s for state 2, and 25.9 s for state 3.</p>
+      </sec>
+      <sec>
+        <title>The Evaluation of the Number of States</title>
+        <p>The k-means algorithm was used to compare with our method (<xref ref-type="fig" rid="F5">Figure 5A</xref>). The DBI was used to evaluate the clustering results of both steps. The mean DBI of 48 groups reached to the minimum of 9.58 while <italic>K</italic> = 3 in step 1 (<xref ref-type="fig" rid="F5">Figure 5B</xref>), showing a better clustering result for small groups compared to CDA (the mean DBI = 9.74). However, the DBI of k-means centroids of <italic>K</italic> = 3 also achieved the optimal clustering performance in step 2 with the minimum of 0.54 (<xref ref-type="fig" rid="F5">Figure 5C</xref>), whereas DBI of community centroids reached a smaller value of 0.52, a better result of overall clustering across groups. Both of the results in two steps indicated that the number of 3 clusters was the best for categorization of dWFC’s states.</p>
+        <fig id="F5" position="float">
+          <label>FIGURE 5</label>
+          <caption>
+            <p>State Detection results using k-means clustering algorithm in step 1. <bold>(A)</bold> The scatter plot of k means centroids obtained in step 1 in principal coordinate analysis, K represents the number of the clusters in each group and N represents the number of communities detected by Modularity-based algorithm in step 2. <bold>(B)</bold> DB index for the clustering results for groups in step 1. Dots represent the mean value for 48 groups and error bars represent standard deviation. <bold>(C)</bold> DB index for the clustering results of k means centroids (blue polygon) and community centroids (red dash line).</p>
+          </caption>
+          <graphic xlink:href="fnins-13-00685-g005"/>
+        </fig>
+      </sec>
+      <sec>
+        <title>Features of the Whole-Brain Functional Connection States</title>
+        <p>The AAL2 regions were assigned to Yeo’s seven functional modules according to the top ratio (the percentage of voxels of specific region within each network) (<xref rid="B35" ref-type="bibr">Yeo et al., 2011</xref>). Cerebellum and subcortical regions are added as two additional modules. <xref ref-type="fig" rid="F6">Figure 6</xref> illustrates the top 200 FC’s in the three WFC-C’s with functional modules, and the transition rates among states from HCP data. For state 1 (WFC-C<sub>1</sub>), the highest FC’s mainly include functional links both within and across visual, somatomotor, attention and cerebellar (posterior lobe) modules. The highest FC’s in WFC-C<sub>2</sub> were similar with WFC-C, but FC’s linking limbic, default mode and frontoparietal modules were more involved whereas the cerebellum, sensory and attention modules were less involved. In WFC-C<sub>3</sub>, the FC’s linking default mode, limbic, and cerebellum were more involved, whereas somatomotor, dorsal, ventral attention, and visual modules were much less so, compared to WFC-C<sub>1</sub> and WFC-C<sub>2</sub>.</p>
+        <fig id="F6" position="float">
+          <label>FIGURE 6</label>
+          <caption>
+            <p>Feature of WFC states. Top 200 functional connections are illustrated in each WFC states, with the Yeo’s 7 functional modules, subcortical and cerebellar regions. The width of the connections represents the connectivity strength. The transition rates among states are indicated by the arrows. For state 1 (WFC-C1), the high FCs in mainly includes functional links both within and across visual, somatomotor, attention and cerebellar (posterior lobe) modules. WFC-C2 was similar with WFC-C1 in those high FCs, however, the FCs in WFC-C2 between cerebellum and the sensory and attention modules were decreased, and higher connections within and across limbic, default mode and frontoparietal modules, in which medial temporal gyrus (MTG), Superior temporal gyrus of temporal pole (TPOsup), inferior temporal gyrus (ITG), inferior parietal gyrus (IPG), dorsolateral superior frontal gyrus (SFG) and medial superior frontal gyrus (SFG medial) are highly involved. In WFC-C3, FCs within sensory and attention modules are still active, but FCs across those modules are decreased. Another feature of WFC-C3 high values of FCs in default network modules, as well as FCs across modules including default, limbic and cerebellum networks. MTG, precuneus (PCUN), angular gyrus (ANG), middle frontal gyrus (MFG), superior parietal gyrus (SPG), and Crus1/Crus2 in cerebellum are highly involved.</p>
+          </caption>
+          <graphic xlink:href="fnins-13-00685-g006"/>
+        </fig>
+      </sec>
+      <sec>
+        <title>Robustness of dWFC’s States Across Window Lengths</title>
+        <p>The clustering result is independent of window length (<xref ref-type="supplementary-material" rid="SM1">Supplementary Figure S2</xref>), shown by the detection of dWFC’s states with various window lengths among 10, 20, 30, 40, and 50. The averaged dWFC’s in the same community had a high level of similarity that their Pearson correlation were close to 1, seen from the diagonal elements of each 3 × 3 matrix (<xref ref-type="supplementary-material" rid="SM1">Supplementary Figure S2B</xref>). Whereas, comparing the off-diagonal elements between correlation matrices of different window size, we still observed a trend that the differences between three averaged dWFC’s would reduce as the window length increased.</p>
+      </sec>
+      <sec>
+        <title>The Influence of Parcellation Methods</title>
+        <p>We also detected three communities using dWFC’s calculated from two different additional atlases, the Shen-268 atlas (<xref rid="B30" ref-type="bibr">Shen et al., 2013</xref>) and Power 264 atlas (<xref rid="B22" ref-type="bibr">Power et al., 2011</xref>; <xref ref-type="supplementary-material" rid="SM1">Supplementary Figure S3</xref>). The results showed that the number of dynamic states was independent to the parcellation schemes. However, the detected state in each window was different across atlases. By matching the most overlapping states, the averaged matching rate of states extracted between the AAL2 Shen-268 was 82.7%, and the Power was 66.9%. Besides, we also randomly relocate the state sequence of the samples, the matching rate was significantly lower than the estimated matching rate (<italic>p</italic> &lt; 0.0001), indicating that the states obtained across the atlases were similar but not identical.</p>
+      </sec>
+    </sec>
+    <sec>
+      <title>Discussion</title>
+      <p>We proposed a new method to categorize and track time-varying networks in R-fMRI studies. It involves two-step community detection, which is computing efficient and provides robust results in large data set application. In recent years, various methods were proposed to capture time-varying networks in R-fMRI studies (<xref rid="B21" ref-type="bibr">Pinotsis et al., 2013</xref>; <xref rid="B4" ref-type="bibr">Calhoun et al., 2014</xref>; <xref rid="B5" ref-type="bibr">Cavanna et al., 2017</xref>; <xref rid="B23" ref-type="bibr">Preti et al., 2017</xref>). Essentially, it involves two main considerations.</p>
+      <p>The first consideration, what is the best feature to represent the time-varying networks. For example, ICA could be used to reveal the spatial-temporal structure of the fMRI signals in either signal subject or group of subjects (<xref rid="B3" ref-type="bibr">Calhoun et al., 2009</xref>). Time and frequency decomposition of regional coherence was also calculated through cross wavelet transform (<xref rid="B34" ref-type="bibr">Yaesoubi et al., 2015</xref>). However, most common method is sliding window based FCs (<xref rid="B13" ref-type="bibr">Hutchison et al., 2013</xref>; <xref rid="B32" ref-type="bibr">Thompson, 2018</xref>; <xref rid="B25" ref-type="bibr">Reinen et al., 2018</xref>), as brain function are accomplished by the interplay of a set of brain areas rather than a specific region (<xref rid="B7" ref-type="bibr">De la Iglesia-Vaya et al., 2013</xref>). A recent study questioned the validity, stability and statistics significance for various dFC pattern detecting method (<xref rid="B12" ref-type="bibr">Hindriks et al., 2016</xref>). The optimal window size remains unknown. To track rapid temporal changes in FC, shorter window is necessary for high temporal resolution; while FC calculation requires longer window for robustness and statistics significance. It may need further studies to address this question through our method. We calculated FC the on various window sizes to test the reliability of the results. In our application on HCP data set with high tempo-spatial solution resolution, the three whole-brain dFC states are stable and independent of sessions and window lengths. The robust results suggest that our method could be helpful to establishing the golden standard in dWFC’s tracking in R-fMRI analysis (<xref rid="B29" ref-type="bibr">Shakil et al., 2016</xref>).</p>
+      <p>The second consideration is mainly a machine learning problem or a clustering problem. Lacking prior knowledge about the categorization of dynamical brain states, an unsupervised learning method especially clustering analysis is more suitable for detecting dynamical brain states. K-means, a prototype-based clustering method, is the most widely used in clustering analysis for its convenience and computing speed. However, it needs to set the number of states and initial values in advance and requires a relatively balanced data structure for good performance. Though many different methods have been applied, the number of states in the brain still remains unknown. For example, two brain states were revealed as a within-network state and a between-network state in both healthy and Parkinson disease patients (<xref rid="B15" ref-type="bibr">Kim et al., 2017</xref>). <xref rid="B8" ref-type="bibr">Di and Biswal (2015)</xref> separated out triple brain states: salience-, default-, and motor- networks. Seven brain states have also been discovered in work by <xref rid="B1" ref-type="bibr">Allen et al. (2014)</xref> through group ICA based-FC and k-means clustering. Further, as many as 13 clusters of innovation-driven co-activation patterns were detected in work (<xref rid="B14" ref-type="bibr">Karahanoğlu and Van De Ville, 2015</xref>). Another important issue of clustering analysis is the measure of distance or similarity between samples. Euclidean distance is an intuitive and commonly used distance. However, the Euclidean distance of WFC depends largely on the overall level of the functional connectivity, which could be affected by measurements, individual difference. The Pearson correlation induces a distance that remains unchanged and is equivalent to the Euclidean distance after normalization of the data. That is, 1 − <italic>corr</italic>(<italic>x</italic>,<italic>y</italic>) = ∥ <italic>x</italic> − <italic>y</italic> ∥<sup>2</sup>/2m, where <italic>x</italic> − <italic>y</italic> represents the Euclidean distance between sample x and y and m is the dimension of data. It measures the consistency of the sequence of FCs within the network between two WFC’s that will not be influenced by the overall functional connectivity value. Therefore, we used Pearson correlation to measure the similarity but also normalized each dynamical brain network for some following analysis of the detected brain states.</p>
+      <p>Due to the large sample size, we complete the clustering in two steps that we calculate the cluster centroids in each group and combine these results by clustering all the centroids. But it brings up a problem to select an appropriate state number K for each group and deal with the differences of results caused by different initial values. Hierarchical clustering can detect the hierarchical relationship in the data and it does not need to set the initial values. But it is more impossible to afford the large computation cost, because the computational complexity of hierarchical clustering is at least O(n<sup>2</sup>), which n represents the amount of dWFC. Moreover, the two-steps clustering strategy is not suitable for hierarchical clustering for it may break or disrupted the hierarchy of data when dividing samples into several groups and leave a tricky problem of matching samples at the same level from different groups. PCA helps to discover and describe different FC patterns through an appropriate number of PCs called “eigenconnectivities,” while it is still a question how to classify dWFC’s into different states so that we can track the dynamical changes of whole brain network structure. Hidden Markov chain based methods are usually performed directly on the bold signal time series of the brain rather than functional connectivity structure, they require a pre-given form of the probability distribution of each state as well as the number of states. Lacking a comprehensive understanding of the underlying mechanism of dWFC’s states, we categorize the dWFC’s through community detection methods based on the similarity of dWFC’s pair, working in an unsupervised, data-driven fashion. Finally, by computing the feature score between networks (the similarity), we can easily estimate an unknown state of network into a specific state, without redundant clustering procedures. This is helpful for further studies of the dynamic networks.</p>
+      <p>By comparison with k-means clustering, our proposed method with two-step of CDA showed better superiority. On the one hand, the DBI showed that the best number of clustering was 3 with k-means, indicating the CDA could detect the optimal number for the states of dWFC’s. On the other hand, compared to CDA, although k-means showed a smaller mean value of DBI for all groups in the first step, the larger DBI in the second step indicated longer distances between the centroids among groups, showing the weakness for the overall detection by the two step clustering method. According to the procedure of k-means algorithm, a possible reason might be that the k-means is sensitive to outliers (<xref rid="B11" ref-type="bibr">Hautamäki et al., 2005</xref>). When an outlier is added to a given cluster, the center of the cluster will move toward to the outlier, resulting in the change of the criteria to update the members of this cluster. Finally, the members of the cluster are more likely close to the outliers. In contrast, the community clustering showed better robustness than k-means. According to the fast community detection algorithm (<xref rid="B17" ref-type="bibr">Le Martelot and Hankin, 2013</xref>), an outlier alone can little influence the update of the community structure in each iteration because of its small degree, and therefore the community among groups had more stable and similar structures, showing its advantage for subdividing a large sample size into several groups of small samples.</p>
+      <p>By taking advantage of the higher temporal resolution in HCP, we can reduce the window to less than 10 s while maintaining sufficient samples to calculate correlation coefficients. However, it still remains unclear as to what the optimal window for detecting dynamical brain states is. Although community clustering methods are robust for summarizing the generality of dFC’s independent of time and subjects; this method might not be sensitive to individual heterogeneities. Further studies are needed to address whether there might be sub states within the three dFC states, i.e., to identify the hierarchical structure of the dynamic FC’s. The self-converged community clustering method to detect the connectivity states, does not rely on the appearance of a clear gap between any two individual dFC’s from various brain states (<xref rid="B18" ref-type="bibr">Leicht and Newman, 2008</xref>). It is a more appropriate clustering method while few are known in dWFC states. Besides, the two-steps community clustering protocol for large R-fMRI data sets is robust and computing efficient. A distinct gap between community centroids of different states, regardless of which groups they come from, showing that our method performed stably in each group. These results revealed that there were three states existed for all the dWFC across subjects and time, with the robustness with various window lengths and parcellations. Of note, the states of dWFC’s were not identical across parcellations, because of the location of regions, region size, including/excluding cerebellum, and the extracted time series were different, resulting in different dWFC’s across atlases. The parcellation scheme may affect the dWFC’s with specific functions (e.g., involving cerebellum or not), and the diversity of states among atlases may be further studied.</p>
+    </sec>
+    <sec>
+      <title>Ethics Statement</title>
+      <p>The WU-Minn HCP Consortium obtained full informed consent from all participants, and research procedures and ethical guidelines were followed in accordance with the Institutional Review Boards (IRB) of Washington University in St. Louis, MO, United States (IRB #20120436).</p>
+    </sec>
+    <sec>
+      <title>Author Contributions</title>
+      <p>LZ and CYL designed the research. QZ and LZ performed the research. QZ, LZ, and CYL analyzed the data. QZ, LZ, CYL, and JF wrote the manuscript.</p>
+    </sec>
+    <sec>
+      <title>Conflict of Interest Statement</title>
+      <p>The authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.</p>
+    </sec>
+  </body>
+  <back>
+    <fn-group>
+      <fn fn-type="financial-disclosure">
+        <p><bold>Funding.</bold> LZ was supported by the China Postdoctoral Science Foundation (2016M591590). JF was a Royal Society Wolfson Research Merit Award holder. JF was partially supported by the key project of the Shanghai Science and Technology Innovation Plan (Nos. 15JC1400101 and 16JC1420402), the National Natural Science Foundation of China (Grant Nos. 71661167002 and 91630314), and the 111 Project (No. B18015). CYL was partially supported by the National Key Research and Development Program of China (No. 2018YFC0910503), the Young Scientists Fund of the National Natural Science Foundation of China (No. 81801774), and the Natural Science Foundation of Shanghai (No. 18ZR1403700). The research was also partially supported by the Shanghai AI Platform for Diagnosis and Treatment of Brain Diseases, the Projects of Zhangjiang Hi-Tech District Management Committee, Shanghai (Nos. 2016-17), the key project of Shanghai Science and Technology (No. 16JC1420402), the Base for the Introducing Talents of Discipline to Universities (No. B18015), and Shanghai Municipal Science and Technology Major Project (No. 2018SHZDZX01) and ZJLab.</p>
+      </fn>
+    </fn-group>
+    <fn-group>
+      <fn id="fn01">
+        <label>1</label>
+        <p>
+          <ext-link ext-link-type="uri" xlink:href="http://www.humanconnectomeproject.org/">http://www.humanconnectomeproject.org/</ext-link>
+        </p>
+      </fn>
+    </fn-group>
+    <sec sec-type="supplementary material">
+      <title>Supplementary Material</title>
+      <p>The Supplementary Material for this article can be found online at: <ext-link ext-link-type="uri" xlink:href="https://www.frontiersin.org/articles/10.3389/fnins.2019.00685/full#supplementary-material">https://www.frontiersin.org/articles/10.3389/fnins.2019.00685/full#supplementary-material</ext-link></p>
+      <supplementary-material content-type="local-data" id="SM1">
+        <media xlink:href="Image_1.pdf">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+    </sec>
+    <ref-list>
+      <title>References</title>
+      <ref id="B1">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Allen</surname><given-names>E. A.</given-names></name><name><surname>Damaraju</surname><given-names>E.</given-names></name><name><surname>Plis</surname><given-names>S. M.</given-names></name><name><surname>Erhardt</surname><given-names>E. B.</given-names></name><name><surname>Eichele</surname><given-names>T.</given-names></name><name><surname>Calhoun</surname><given-names>V. D.</given-names></name></person-group> (<year>2014</year>). <article-title>Tracking whole-brain connectivity dynamics in the resting state.</article-title>
+<source><italic>Cereb. Cortex</italic></source>
+<volume>24</volume>
+<fpage>663</fpage>–<lpage>676</lpage>. <pub-id pub-id-type="doi">10.1093/cercor/bhs352</pub-id>
+<pub-id pub-id-type="pmid">23146964</pub-id></mixed-citation>
+      </ref>
+      <ref id="B2">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Baker</surname><given-names>A. P.</given-names></name><name><surname>Brookes</surname><given-names>M. J.</given-names></name><name><surname>Rezek</surname><given-names>I. A.</given-names></name><name><surname>Smith</surname><given-names>S. M.</given-names></name><name><surname>Behrens</surname><given-names>T.</given-names></name><name><surname>Probert Smith</surname><given-names>P. J.</given-names></name><etal/></person-group> (<year>2014</year>). <article-title>Fast transient networks in spontaneous human brain activity.</article-title>
+<source><italic>Elife</italic></source>
+<volume>3</volume>:<issue>e01867</issue>. <pub-id pub-id-type="doi">10.7554/eLife.01867</pub-id>
+<pub-id pub-id-type="pmid">24668169</pub-id></mixed-citation>
+      </ref>
+      <ref id="B3">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Calhoun</surname><given-names>V. D.</given-names></name><name><surname>Liu</surname><given-names>J.</given-names></name><name><surname>Adali</surname><given-names>T.</given-names></name></person-group> (<year>2009</year>). <article-title>A review of group ICA for fMRI data and ICA for joint inference of imaging, genetic, and ERP data.</article-title>
+<source><italic>Neuroimage</italic></source>
+<volume>45</volume>
+<fpage>S163</fpage>–<lpage>S172</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2008.10.057</pub-id>
+<pub-id pub-id-type="pmid">19059344</pub-id></mixed-citation>
+      </ref>
+      <ref id="B4">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Calhoun</surname><given-names>V. D.</given-names></name><name><surname>Miller</surname><given-names>R.</given-names></name><name><surname>Pearlson</surname><given-names>G.</given-names></name><name><surname>Adalı</surname><given-names>T.</given-names></name></person-group> (<year>2014</year>). <article-title>The chronnectome: time-varying connectivity networks as the next frontier in fMRI data discovery.</article-title>
+<source><italic>Neuron</italic></source>
+<volume>84</volume>
+<fpage>262</fpage>–<lpage>274</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuron.2014.10.015</pub-id>
+<pub-id pub-id-type="pmid">25374354</pub-id></mixed-citation>
+      </ref>
+      <ref id="B5">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Cavanna</surname><given-names>F.</given-names></name><name><surname>Vilas</surname><given-names>M. G.</given-names></name><name><surname>Palmucci</surname><given-names>M.</given-names></name><name><surname>Tagliazucchi</surname><given-names>E.</given-names></name></person-group> (<year>2017</year>). <article-title>Dynamic functional connectivity and brain metastability during altered states of consciousness.</article-title>
+<source><italic>Neuroimage</italic></source>
+<volume>180</volume>
+<fpage>383</fpage>–<lpage>395</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2017.09.065</pub-id>
+<pub-id pub-id-type="pmid">28986208</pub-id></mixed-citation>
+      </ref>
+      <ref id="B6">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Davies</surname><given-names>D. L.</given-names></name><name><surname>Bouldin</surname><given-names>D. W.</given-names></name></person-group> (<year>1979</year>). <article-title>A cluster separation measure.</article-title>
+<source><italic>IEEE Trans Pattern Anal. Mach. Intell.</italic></source>
+<volume>1</volume>
+<fpage>224</fpage>–<lpage>227</lpage>. <pub-id pub-id-type="doi">10.1109/tpami.1979.4766909</pub-id><pub-id pub-id-type="pmid">21868852</pub-id></mixed-citation>
+      </ref>
+      <ref id="B7">
+        <mixed-citation publication-type="book"><person-group person-group-type="author"><name><surname>De la Iglesia-Vaya</surname><given-names>M.</given-names></name><name><surname>Molina-Mateo</surname><given-names>J.</given-names></name><name><surname>Escarti-Fabra</surname><given-names>J. M.</given-names></name><name><surname>Kannan</surname><given-names>S. A.</given-names></name><name><surname>Marti-Bonmati</surname><given-names>L.</given-names></name></person-group> (<year>2013</year>). “<article-title>Brain connections – resting state fmri functional connectivity</article-title>,” in <source><italic>Novel Frontiers of Advanced Neuroimaging</italic></source>, <role>ed.</role>
+<person-group person-group-type="editor"><name><surname>Fountas</surname><given-names>K. N.</given-names></name></person-group> (<publisher-loc>London</publisher-loc>: <publisher-name>InTech</publisher-name>).</mixed-citation>
+      </ref>
+      <ref id="B8">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Di</surname><given-names>X.</given-names></name><name><surname>Biswal</surname><given-names>B. B.</given-names></name></person-group> (<year>2015</year>). <article-title>Dynamic brain functional connectivity modulated by resting-state networks.</article-title>
+<source><italic>Brain Struct. Funct.</italic></source>
+<volume>220</volume>
+<fpage>37</fpage>–<lpage>46</lpage>. <pub-id pub-id-type="doi">10.1007/s00429-013-0634-633</pub-id><pub-id pub-id-type="pmid">25713839</pub-id></mixed-citation>
+      </ref>
+      <ref id="B9">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Friston</surname><given-names>K. J.</given-names></name></person-group> (<year>2011</year>). <article-title>Functional and effective connectivity: a review.</article-title>
+<source><italic>Brain Connect.</italic></source>
+<volume>1</volume>
+<fpage>13</fpage>–<lpage>36</lpage>. <pub-id pub-id-type="doi">10.1089/brain.2011.0008</pub-id>
+<pub-id pub-id-type="pmid">22432952</pub-id></mixed-citation>
+      </ref>
+      <ref id="B10">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Glasser</surname><given-names>M. F.</given-names></name><name><surname>Sotiropoulos</surname><given-names>S. N.</given-names></name><name><surname>Wilson</surname><given-names>J. A.</given-names></name><name><surname>Coalson</surname><given-names>T. S.</given-names></name><name><surname>Fischl</surname><given-names>B.</given-names></name><name><surname>Andersson</surname><given-names>J. L.</given-names></name><etal/></person-group> (<year>2013</year>). <article-title>The minimal preprocessing pipelines for the human connectome project.</article-title>
+<source><italic>Neuroimage</italic></source>
+<volume>80</volume>
+<fpage>105</fpage>–<lpage>124</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2013.04.127</pub-id>
+<pub-id pub-id-type="pmid">23668970</pub-id></mixed-citation>
+      </ref>
+      <ref id="B11">
+        <mixed-citation publication-type="book"><person-group person-group-type="author"><name><surname>Hautamäki</surname><given-names>V.</given-names></name><name><surname>Cherednichenko</surname><given-names>S.</given-names></name><name><surname>Kärkkäinen</surname><given-names>I.</given-names></name><name><surname>Kinnunen</surname><given-names>T.</given-names></name><name><surname>Fränti</surname><given-names>P.</given-names></name></person-group> (<year>2005</year>). “<article-title>Improving K-means by outlier removal</article-title>,” in <source><italic>Image Analysis Lecture Notes in Computer Science</italic></source>, <role>eds</role>
+<person-group person-group-type="editor"><name><surname>Kalviainen</surname><given-names>H.</given-names></name><name><surname>Parkkinen</surname><given-names>J.</given-names></name><name><surname>Kaarna</surname><given-names>A.</given-names></name></person-group> (<publisher-loc>Berlin</publisher-loc>: <publisher-name>Springer</publisher-name>), <fpage>978</fpage>–<lpage>987</lpage>
+<pub-id pub-id-type="doi">10.1007/11499145_99</pub-id></mixed-citation>
+      </ref>
+      <ref id="B12">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Hindriks</surname><given-names>R.</given-names></name><name><surname>Adhikari</surname><given-names>M. H.</given-names></name><name><surname>Murayama</surname><given-names>Y.</given-names></name><name><surname>Ganzetti</surname><given-names>M.</given-names></name><name><surname>Mantini</surname><given-names>D.</given-names></name><name><surname>Logothetis</surname><given-names>N. K.</given-names></name><etal/></person-group> (<year>2016</year>). <article-title>Can sliding-window correlations reveal dynamic functional connectivity in resting-state fMRI?</article-title>
+<source><italic>Neuroimage</italic></source>
+<volume>127</volume>
+<fpage>242</fpage>–<lpage>256</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2015.11.055</pub-id>
+<pub-id pub-id-type="pmid">26631813</pub-id></mixed-citation>
+      </ref>
+      <ref id="B13">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Hutchison</surname><given-names>R. M.</given-names></name><name><surname>Womelsdorf</surname><given-names>T.</given-names></name><name><surname>Allen</surname><given-names>E. A.</given-names></name><name><surname>Bandettini</surname><given-names>P. A.</given-names></name><name><surname>Calhoun</surname><given-names>V. D.</given-names></name><name><surname>Corbetta</surname><given-names>M.</given-names></name><etal/></person-group> (<year>2013</year>). <article-title>Dynamic functional connectivity: promise, issues, and interpretations.</article-title>
+<source><italic>Neuroimage</italic></source>
+<volume>80</volume>
+<fpage>360</fpage>–<lpage>378</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2013.05.079</pub-id>
+<pub-id pub-id-type="pmid">23707587</pub-id></mixed-citation>
+      </ref>
+      <ref id="B14">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Karahanoğlu</surname><given-names>F. I.</given-names></name><name><surname>Van De Ville</surname><given-names>D.</given-names></name></person-group> (<year>2015</year>). <article-title>Transient brain activity disentangles fMRI resting-state dynamics in terms of spatially and temporally overlapping networks.</article-title>
+<source><italic>Nat. Comms.</italic></source>
+<volume>6</volume>:<issue>7751</issue>. <pub-id pub-id-type="doi">10.1038/ncomms8751</pub-id>
+<pub-id pub-id-type="pmid">26178017</pub-id></mixed-citation>
+      </ref>
+      <ref id="B15">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Kim</surname><given-names>J.</given-names></name><name><surname>Criaud</surname><given-names>M.</given-names></name><name><surname>Cho</surname><given-names>S. S.</given-names></name><name><surname>Díez-Cirarda</surname><given-names>M.</given-names></name><name><surname>Mihaescu</surname><given-names>A.</given-names></name><name><surname>Coakeley</surname><given-names>S.</given-names></name><etal/></person-group> (<year>2017</year>). <article-title>Abnormal intrinsic brain functional network dynamics in Parkinson’s disease.</article-title>
+<source><italic>Brain</italic></source>
+<volume>140</volume>
+<fpage>2955</fpage>–<lpage>2967</lpage>. <pub-id pub-id-type="doi">10.1093/brain/awx233</pub-id>
+<pub-id pub-id-type="pmid">29053835</pub-id></mixed-citation>
+      </ref>
+      <ref id="B16">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Kopell</surname><given-names>N. J.</given-names></name><name><surname>Gritton</surname><given-names>H. J.</given-names></name><name><surname>Whittington</surname><given-names>M. A.</given-names></name><name><surname>Kramer</surname><given-names>M. A.</given-names></name></person-group> (<year>2014</year>). <article-title>Beyond the connectome: the dynome.</article-title>
+<source><italic>Neuron</italic></source>
+<volume>83</volume>
+<fpage>1319</fpage>–<lpage>1328</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuron.2014.08.016</pub-id>
+<pub-id pub-id-type="pmid">25233314</pub-id></mixed-citation>
+      </ref>
+      <ref id="B17">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Le Martelot</surname><given-names>E.</given-names></name><name><surname>Hankin</surname><given-names>C.</given-names></name></person-group> (<year>2013</year>). <article-title>Fast multi-scale detection of relevant communities in large-scale networks.</article-title>
+<source><italic>Comput. J.</italic></source>
+<volume>56</volume>
+<fpage>1136</fpage>–<lpage>1150</lpage>. <pub-id pub-id-type="doi">10.1093/comjnl/bxt002</pub-id></mixed-citation>
+      </ref>
+      <ref id="B18">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Leicht</surname><given-names>E. A.</given-names></name><name><surname>Newman</surname><given-names>M. E. J.</given-names></name></person-group> (<year>2008</year>). <article-title>Community structure in directed networks.</article-title>
+<source><italic>Phys. Rev. Lett.</italic></source>
+<volume>100</volume>:<issue>118703</issue>. <pub-id pub-id-type="doi">10.1103/PhysRevLett.100.118703</pub-id>
+<pub-id pub-id-type="pmid">18517839</pub-id></mixed-citation>
+      </ref>
+      <ref id="B19">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Leonardi</surname><given-names>N.</given-names></name><name><surname>Richiardi</surname><given-names>J.</given-names></name><name><surname>Gschwind</surname><given-names>M.</given-names></name><name><surname>Simioni</surname><given-names>S.</given-names></name><name><surname>Annoni</surname><given-names>J.-M.</given-names></name><name><surname>Schluep</surname><given-names>M.</given-names></name><etal/></person-group> (<year>2013</year>). <article-title>Principal components of functional connectivity: a new approach to study dynamic brain connectivity during rest.</article-title>
+<source><italic>Neuroimage</italic></source>
+<volume>83</volume>
+<fpage>937</fpage>–<lpage>950</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2013.07.019</pub-id>
+<pub-id pub-id-type="pmid">23872496</pub-id></mixed-citation>
+      </ref>
+      <ref id="B20">
+        <mixed-citation publication-type="book"><person-group person-group-type="author"><name><surname>Lu</surname><given-names>W.</given-names></name><name><surname>Chen</surname><given-names>B.</given-names></name><name><surname>Jin</surname><given-names>Z.</given-names></name><name><surname>Waxman</surname><given-names>D.</given-names></name><name><surname>Feng</surname><given-names>J.</given-names></name></person-group> (<year>2017</year>). “<article-title>Establishing the community structure of signed interconnected graph in data</article-title>,” in <source><italic>Proceedings of the 2017 36th Chinese Control Conference</italic></source>, (<publisher-loc>Dalian</publisher-loc>: <publisher-name>IEEE</publisher-name>), <fpage>11127</fpage>–<lpage>11132</lpage>.</mixed-citation>
+      </ref>
+      <ref id="B21">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Pinotsis</surname><given-names>D. A.</given-names></name><name><surname>Hansen</surname><given-names>E.</given-names></name><name><surname>Friston</surname><given-names>K. J.</given-names></name><name><surname>Jirsa</surname><given-names>V. K.</given-names></name></person-group> (<year>2013</year>). <article-title>Anatomical connectivity and the resting state activity of large cortical networks.</article-title>
+<source><italic>Neuroimage</italic></source>
+<volume>65</volume>
+<fpage>127</fpage>–<lpage>138</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2012.10.016</pub-id>
+<pub-id pub-id-type="pmid">23085498</pub-id></mixed-citation>
+      </ref>
+      <ref id="B22">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Power</surname><given-names>J. D.</given-names></name><name><surname>Cohen</surname><given-names>A. L.</given-names></name><name><surname>Nelson</surname><given-names>S. M.</given-names></name><name><surname>Wig</surname><given-names>G. S.</given-names></name><name><surname>Barnes</surname><given-names>K. A.</given-names></name><name><surname>Church</surname><given-names>J. A.</given-names></name><etal/></person-group> (<year>2011</year>). <article-title>Functional network organization of the human brain.</article-title>
+<source><italic>Neuron</italic></source>
+<volume>72</volume>
+<fpage>665</fpage>–<lpage>678</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuron.2011.09.006</pub-id>
+<pub-id pub-id-type="pmid">22099467</pub-id></mixed-citation>
+      </ref>
+      <ref id="B23">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Preti</surname><given-names>M. G.</given-names></name><name><surname>Bolton</surname><given-names>T. A.</given-names></name><name><surname>Van De Ville</surname><given-names>D.</given-names></name></person-group> (<year>2017</year>). <article-title>The dynamic functional connectome: state-of-the-art and perspectives.</article-title>
+<source><italic>Neuroimage</italic></source>
+<volume>160</volume>
+<fpage>41</fpage>–<lpage>54</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2016.12.061</pub-id>
+<pub-id pub-id-type="pmid">28034766</pub-id></mixed-citation>
+      </ref>
+      <ref id="B24">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Reineberg</surname><given-names>A. E.</given-names></name><name><surname>Andrews-Hanna</surname><given-names>J. R.</given-names></name><name><surname>Depue</surname><given-names>B. E.</given-names></name><name><surname>Friedman</surname><given-names>N. P.</given-names></name><name><surname>Banich</surname><given-names>M. T.</given-names></name></person-group> (<year>2015</year>). <article-title>Resting-state networks predict individual differences in common and specific aspects of executive function.</article-title>
+<source><italic>Neuroimage</italic></source>
+<volume>104</volume>
+<fpage>69</fpage>–<lpage>78</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2014.09.045</pub-id>
+<pub-id pub-id-type="pmid">25281800</pub-id></mixed-citation>
+      </ref>
+      <ref id="B25">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Reinen</surname><given-names>J. M.</given-names></name><name><surname>Chen</surname><given-names>O. Y.</given-names></name><name><surname>Hutchison</surname><given-names>R. M.</given-names></name><name><surname>Yeo</surname><given-names>B. T. T.</given-names></name><name><surname>Anderson</surname><given-names>K. M.</given-names></name><name><surname>Sabuncu</surname><given-names>M. R.</given-names></name><etal/></person-group> (<year>2018</year>). <article-title>The human cortex possesses a reconfigurable dynamic network architecture that is disrupted in psychosis.</article-title>
+<source><italic>Nat. Commun.</italic></source>
+<volume>9</volume>:<issue>1157</issue>. <pub-id pub-id-type="doi">10.1038/s41467-018-03462-y</pub-id>
+<pub-id pub-id-type="pmid">29559638</pub-id></mixed-citation>
+      </ref>
+      <ref id="B26">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Robinson</surname><given-names>L. F.</given-names></name><name><surname>Atlas</surname><given-names>L. Y.</given-names></name><name><surname>Wager</surname><given-names>T. D.</given-names></name></person-group> (<year>2015</year>). <article-title>Dynamic functional connectivity using state-based dynamic community structure: method and application to opioid analgesia.</article-title>
+<source><italic>Neuroimage</italic></source>
+<volume>108</volume>
+<fpage>274</fpage>–<lpage>291</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2014.12.034</pub-id>
+<pub-id pub-id-type="pmid">25534114</pub-id></mixed-citation>
+      </ref>
+      <ref id="B27">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Rolls</surname><given-names>E. T.</given-names></name><name><surname>Joliot</surname><given-names>M.</given-names></name><name><surname>Tzourio-Mazoyer</surname><given-names>N.</given-names></name></person-group> (<year>2015</year>). <article-title>Implementation of a new parcellation of the orbitofrontal cortex in the automated anatomical labeling atlas.</article-title>
+<source><italic>Neuroimage</italic></source>
+<volume>122</volume>
+<fpage>1</fpage>–<lpage>5</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2015.07.075</pub-id>
+<pub-id pub-id-type="pmid">26241684</pub-id></mixed-citation>
+      </ref>
+      <ref id="B28">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Ryali</surname><given-names>S.</given-names></name><name><surname>Supekar</surname><given-names>K.</given-names></name><name><surname>Chen</surname><given-names>T.</given-names></name><name><surname>Kochalka</surname><given-names>J.</given-names></name><name><surname>Cai</surname><given-names>W.</given-names></name><name><surname>Nicholas</surname><given-names>J.</given-names></name><etal/></person-group> (<year>2016</year>). <article-title>Temporal dynamics and developmental maturation of salience, default and central-executive network interactions revealed by variational bayes hidden markov modeling.</article-title>
+<source><italic>PLoS Comput. Biol.</italic></source>
+<volume>12</volume>:<issue>e1005138</issue>. <pub-id pub-id-type="doi">10.1371/journal.pcbi.1005138</pub-id>
+<pub-id pub-id-type="pmid">27959921</pub-id></mixed-citation>
+      </ref>
+      <ref id="B29">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Shakil</surname><given-names>S.</given-names></name><name><surname>Lee</surname><given-names>C.-H.</given-names></name><name><surname>Keilholz</surname><given-names>S. D.</given-names></name></person-group> (<year>2016</year>). <article-title>Evaluation of sliding window correlation performance for characterizing dynamic functional connectivity and brain states.</article-title>
+<source><italic>Neuroimage</italic></source>
+<volume>133</volume>
+<fpage>111</fpage>–<lpage>128</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2016.02.074</pub-id>
+<pub-id pub-id-type="pmid">26952197</pub-id></mixed-citation>
+      </ref>
+      <ref id="B30">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Shen</surname><given-names>X.</given-names></name><name><surname>Tokoglu</surname><given-names>F.</given-names></name><name><surname>Papademetris</surname><given-names>X.</given-names></name><name><surname>Constable</surname><given-names>R. T.</given-names></name></person-group> (<year>2013</year>). <article-title>Groupwise whole-brain parcellation from resting-state fMRI data for network node identification.</article-title>
+<source><italic>Neuroimage</italic></source>
+<volume>82</volume>
+<fpage>403</fpage>–<lpage>415</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2013.05.081</pub-id>
+<pub-id pub-id-type="pmid">23747961</pub-id></mixed-citation>
+      </ref>
+      <ref id="B31">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Tavor</surname><given-names>I.</given-names></name><name><surname>Parker Jones</surname><given-names>O.</given-names></name><name><surname>Mars</surname><given-names>R. B.</given-names></name><name><surname>Smith</surname><given-names>S. M.</given-names></name><name><surname>Behrens</surname><given-names>T. E.</given-names></name><name><surname>Jbabdi</surname><given-names>S.</given-names></name></person-group> (<year>2016</year>). <article-title>Task-free MRI predicts individual differences in brain activity during task performance.</article-title>
+<source><italic>Science</italic></source>
+<volume>352</volume>
+<fpage>216</fpage>–<lpage>220</lpage>. <pub-id pub-id-type="doi">10.1126/science.aad8127</pub-id>
+<pub-id pub-id-type="pmid">27124457</pub-id></mixed-citation>
+      </ref>
+      <ref id="B32">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Thompson</surname><given-names>G. J.</given-names></name></person-group> (<year>2018</year>). <article-title>Neural and metabolic basis of dynamic resting state fMRI.</article-title>
+<source><italic>Neuroimage</italic></source>
+<volume>180</volume>
+<fpage>448</fpage>–<lpage>462</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2017.09.010</pub-id>
+<pub-id pub-id-type="pmid">28899744</pub-id></mixed-citation>
+      </ref>
+      <ref id="B33">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Vidaurre</surname><given-names>D.</given-names></name><name><surname>Smith</surname><given-names>S. M.</given-names></name><name><surname>Woolrich</surname><given-names>M. W.</given-names></name></person-group> (<year>2017</year>). <article-title>Brain network dynamics are hierarchically organized in time.</article-title>
+<source><italic>Proc. Natl. Acad. Sci. U.S.A.</italic></source>
+<volume>114</volume>
+<fpage>12827</fpage>–<lpage>12832</lpage>. <pub-id pub-id-type="doi">10.1073/pnas.1705120114</pub-id>
+<pub-id pub-id-type="pmid">29087305</pub-id></mixed-citation>
+      </ref>
+      <ref id="B34">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Yaesoubi</surname><given-names>M.</given-names></name><name><surname>Allen</surname><given-names>E. A.</given-names></name><name><surname>Miller</surname><given-names>R. L.</given-names></name><name><surname>Calhoun</surname><given-names>V. D.</given-names></name></person-group> (<year>2015</year>). <article-title>Dynamic coherence analysis of resting fMRI data to jointly capture state-based phase, frequency, and time-domain information.</article-title>
+<source><italic>Neuroimage</italic></source>
+<volume>120</volume>
+<fpage>133</fpage>–<lpage>142</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2015.07.002</pub-id>
+<pub-id pub-id-type="pmid">26162552</pub-id></mixed-citation>
+      </ref>
+      <ref id="B35">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Yeo</surname><given-names>B. T. T.</given-names></name><name><surname>Krienen</surname><given-names>F. M.</given-names></name><name><surname>Sepulcre</surname><given-names>J.</given-names></name><name><surname>Sabuncu</surname><given-names>M. R.</given-names></name><name><surname>Lashkari</surname><given-names>D.</given-names></name><name><surname>Hollinshead</surname><given-names>M.</given-names></name><etal/></person-group> (<year>2011</year>). <article-title>The organization of the human cerebral cortex estimated by intrinsic functional connectivity.</article-title>
+<source><italic>J. Neurophysiol.</italic></source>
+<volume>106</volume>
+<fpage>1125</fpage>–<lpage>1165</lpage>. <pub-id pub-id-type="doi">10.1152/jn.00338.2011</pub-id>
+<pub-id pub-id-type="pmid">21653723</pub-id></mixed-citation>
+      </ref>
+      <ref id="B36">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zhang</surname><given-names>J.</given-names></name><name><surname>Cheng</surname><given-names>W.</given-names></name><name><surname>Liu</surname><given-names>Z.</given-names></name><name><surname>Zhang</surname><given-names>K.</given-names></name><name><surname>Lei</surname><given-names>X.</given-names></name><name><surname>Yao</surname><given-names>Y.</given-names></name><etal/></person-group> (<year>2016</year>). <article-title>Neural, electrophysiological and anatomical basis of brain-network variability and its characteristic changes in mental disorders.</article-title>
+<source><italic>Brain</italic></source>
+<volume>139</volume>
+<fpage>2307</fpage>–<lpage>2321</lpage>. <pub-id pub-id-type="doi">10.1093/brain/aww143</pub-id>
+<pub-id pub-id-type="pmid">27421791</pub-id></mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

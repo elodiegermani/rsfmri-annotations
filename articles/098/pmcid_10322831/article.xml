@@ -1,0 +1,2112 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ali="http://www.niso.org/schemas/ali/1.0/" article-type="research-article" dtd-version="1.3">
+  <?properties open_access?>
+  <processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats">
+    <restricted-by>pmc</restricted-by>
+  </processing-meta>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">Commun Biol</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Commun Biol</journal-id>
+      <journal-title-group>
+        <journal-title>Communications Biology</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">2399-3642</issn>
+      <publisher>
+        <publisher-name>Nature Publishing Group UK</publisher-name>
+        <publisher-loc>London</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">37407655</article-id>
+      <article-id pub-id-type="pmc">10322831</article-id>
+      <article-id pub-id-type="publisher-id">5063</article-id>
+      <article-id pub-id-type="doi">10.1038/s42003-023-05063-y</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>An implementation of integrated information theory in resting-state fMRI</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" corresp="yes">
+          <contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-3065-0760</contrib-id>
+          <name>
+            <surname>Nemirovsky</surname>
+            <given-names>Idan E.</given-names>
+          </name>
+          <address>
+            <email>inemiro@uwo.ca</email>
+          </address>
+          <xref ref-type="aff" rid="Aff1">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-5563-3476</contrib-id>
+          <name>
+            <surname>Popiel</surname>
+            <given-names>Nicholas J. M.</given-names>
+          </name>
+          <xref ref-type="aff" rid="Aff2">2</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Rudas</surname>
+            <given-names>Jorge</given-names>
+          </name>
+          <xref ref-type="aff" rid="Aff3">3</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Caius</surname>
+            <given-names>Matthew</given-names>
+          </name>
+          <xref ref-type="aff" rid="Aff1">1</xref>
+          <xref ref-type="aff" rid="Aff4">4</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <contrib-id contrib-id-type="orcid">http://orcid.org/0000-0001-9630-3978</contrib-id>
+          <name>
+            <surname>Naci</surname>
+            <given-names>Lorina</given-names>
+          </name>
+          <xref ref-type="aff" rid="Aff5">5</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Schiff</surname>
+            <given-names>Nicholas D.</given-names>
+          </name>
+          <xref ref-type="aff" rid="Aff6">6</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Owen</surname>
+            <given-names>Adrian M.</given-names>
+          </name>
+          <xref ref-type="aff" rid="Aff7">7</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Soddu</surname>
+            <given-names>Andrea</given-names>
+          </name>
+          <xref ref-type="aff" rid="Aff1">1</xref>
+        </contrib>
+        <aff id="Aff1"><label>1</label><institution-wrap><institution-id institution-id-type="GRID">grid.39381.30</institution-id><institution-id institution-id-type="ISNI">0000 0004 1936 8884</institution-id><institution>Western Institute for Neuroscience, Department of Physics and Astronomy, </institution><institution>University of Western Ontario, </institution></institution-wrap>1151 Richmond St, London, ON N6A 3K7 Canada </aff>
+        <aff id="Aff2"><label>2</label><institution-wrap><institution-id institution-id-type="GRID">grid.5335.0</institution-id><institution-id institution-id-type="ISNI">0000000121885934</institution-id><institution>Cavendish Laboratory, </institution><institution>University of Cambridge, </institution></institution-wrap>Cambridge, CB3 0HE United Kingdom </aff>
+        <aff id="Aff3"><label>3</label><institution-wrap><institution-id institution-id-type="GRID">grid.10689.36</institution-id><institution-id institution-id-type="ISNI">0000 0001 0286 3748</institution-id><institution>Institute of Biotechnology, </institution><institution>Universidad Nacional de Colombia, </institution></institution-wrap>Cra 45 Bogotá, Colombia </aff>
+        <aff id="Aff4"><label>4</label><institution-wrap><institution-id institution-id-type="GRID">grid.39381.30</institution-id><institution-id institution-id-type="ISNI">0000 0004 1936 8884</institution-id><institution>Department of Medical Biophysics, </institution><institution>University of Western Ontario, </institution></institution-wrap>1151 Richmond St, London, ON N6A 3K7 Canada </aff>
+        <aff id="Aff5"><label>5</label><institution-wrap><institution-id institution-id-type="GRID">grid.8217.c</institution-id><institution-id institution-id-type="ISNI">0000 0004 1936 9705</institution-id><institution>Trinity College Institute of Neuroscience, </institution><institution>Trinity College Dublin, </institution></institution-wrap>Dublin 2, Ireland </aff>
+        <aff id="Aff6"><label>6</label><institution-wrap><institution-id institution-id-type="GRID">grid.5386.8</institution-id><institution-id institution-id-type="ISNI">000000041936877X</institution-id><institution>Feil Family Brain Mind Research Institute, </institution><institution>Weill Cornell Medical College, </institution></institution-wrap>New York, NY 10065 USA </aff>
+        <aff id="Aff7"><label>7</label><institution-wrap><institution-id institution-id-type="GRID">grid.39381.30</institution-id><institution-id institution-id-type="ISNI">0000 0004 1936 8884</institution-id><institution>Department of Physiology and Pharmacology and Department of Psychology, </institution><institution>University of Western Ontario, </institution></institution-wrap>1151 Richmond St, London, ON N6A 3K7 Canada </aff>
+      </contrib-group>
+      <pub-date pub-type="epub">
+        <day>5</day>
+        <month>7</month>
+        <year>2023</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>5</day>
+        <month>7</month>
+        <year>2023</year>
+      </pub-date>
+      <pub-date pub-type="collection">
+        <year>2023</year>
+      </pub-date>
+      <volume>6</volume>
+      <elocation-id>692</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>22</day>
+          <month>4</month>
+          <year>2022</year>
+        </date>
+        <date date-type="accepted">
+          <day>22</day>
+          <month>6</month>
+          <year>2023</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>© The Author(s) 2023</copyright-statement>
+        <license>
+          <ali:license_ref specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref>
+          <license-p><bold>Open Access</bold> This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article’s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit <ext-link ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</ext-link>.</license-p>
+        </license>
+      </permissions>
+      <abstract id="Abs1">
+        <p id="Par1">Integrated Information Theory was developed to explain and quantify consciousness, arguing that conscious systems consist of elements that are integrated through their causal properties. This study presents an implementation of Integrated Information Theory 3.0, the latest version of this framework, to functional MRI data. Data were acquired from 17 healthy subjects who underwent sedation with propofol, a short-acting anaesthetic. Using the PyPhi software package, we systematically analyze how Φ<sup>max</sup>, a measure of integrated information, is modulated by the sedative in different resting-state networks. We compare Φ<sup>max</sup> to other proposed measures of conscious level, including the previous version of integrated information, Granger causality, and correlation-based functional connectivity. Our results indicate that Φ<sup>max</sup> presents a variety of sedative-induced behaviours for different networks. Notably, changes to Φ<sup>max</sup> closely reflect changes to subjects’ conscious level in the frontoparietal and dorsal attention networks, which are responsible for higher-order cognitive functions. In conclusion, our findings present important insight into different measures of conscious level that will be useful in future implementations to functional MRI and other forms of neuroimaging.</p>
+      </abstract>
+      <abstract id="Abs2" abstract-type="web-summary">
+        <p id="Par2">Resting-state fMRI data in conditions of wakefulness and anaesthesia was analyzed using integrated information theory and its key measure, Φmax, which presents a variety of sedative-induced behaviours across different cortical networks.</p>
+      </abstract>
+      <kwd-group kwd-group-type="npg-subject">
+        <title>Subject terms</title>
+        <kwd>Consciousness</kwd>
+        <kwd>Network models</kwd>
+      </kwd-group>
+      <funding-group>
+        <award-group>
+          <funding-source>
+            <institution-wrap>
+              <institution-id institution-id-type="FundRef">https://doi.org/10.13039/501100000038</institution-id>
+              <institution>Gouvernement du Canada | Natural Sciences and Engineering Research Council of Canada (Conseil de Recherches en Sciences Naturelles et en Génie du Canada)</institution>
+            </institution-wrap>
+          </funding-source>
+        </award-group>
+      </funding-group>
+      <custom-meta-group>
+        <custom-meta>
+          <meta-name>issue-copyright-statement</meta-name>
+          <meta-value>© Springer Nature Limited 2023</meta-value>
+        </custom-meta>
+      </custom-meta-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="Sec1" sec-type="introduction">
+      <title>Introduction</title>
+      <p id="Par3">Consciousness is a remarkably complex concept that continues to be a subject of great debate in the neuroscientific community.<sup><xref ref-type="bibr" rid="CR1">1</xref></sup> An individual would typically be described as conscious if they demonstrate wakefulness and awareness.<sup><xref ref-type="bibr" rid="CR2">2</xref></sup> However, neuroscientific literature continues to show that consciousness transcends the mere absence or presence of these behavioral traits.<sup><xref ref-type="bibr" rid="CR3">3</xref>,<xref ref-type="bibr" rid="CR4">4</xref></sup></p>
+      <p id="Par4">While many questions remain to be answered, our knowledge about conscious phenomena has been greatly improved by the use of advanced neuroimaging tools. One such tool is functional magnetic resonance imaging (fMRI), which allows for observation of cortical activity in spatial and temporal domains.<sup><xref ref-type="bibr" rid="CR5">5</xref></sup> Activity measured with fMRI represents blood flow patterns in the form of the blood-oxygen-level-dependent (BOLD) signal.<sup><xref ref-type="bibr" rid="CR6">6</xref>–<xref ref-type="bibr" rid="CR8">8</xref></sup> Although fMRI studies were initially designed to have subjects perform specific tasks, it has become increasingly common to measure spontaneous brain activity without overt stimulation. Such acquisition is called resting-state fMRI, and studies involving it have identified a series of Resting State Networks (RSNs), which are collections of cortical regions that behave in synchrony and represent the brain’s functional organization at rest.<sup><xref ref-type="bibr" rid="CR7">7</xref>,<xref ref-type="bibr" rid="CR8">8</xref></sup></p>
+      <p id="Par5">In both task-based and resting-state studies, fMRI and other neuroimaging tools have been used to establish neural correlates of consciousness, which are aspects of brain activity that correspond to conscious processes.<sup><xref ref-type="bibr" rid="CR9">9</xref></sup> While these correlates are used to explain specific conscious percepts (i.e., reaction to stimuli, emotions, thoughts), attempts have also been made to explain consciousness more generally, with the aim of accounting for a wide range of conscious phenomena.</p>
+      <p id="Par6">In keeping with these developments, the present study is focused on integrated information theory (IIT) and its principal metric, integrated information (Φ), which presents a thorough interpretation of consciousness and attempts to quantify it for physical systems consisting of interacting elements, such as the brain.<sup><xref ref-type="bibr" rid="CR10">10</xref>–<xref ref-type="bibr" rid="CR12">12</xref></sup> IIT begins by analyzing the phenomenological properties of consciousness, which are used to deduce a set of axioms about the nature of a conscious experience. The fundamental property of consciousness is intrinsic existence, meaning that a system is conscious from its own perspective, regardless of how it may be viewed externally.<sup><xref ref-type="bibr" rid="CR12">12</xref></sup> Information describes the specific features of a conscious experience, and in accordance with the first axiom, must be an intrinsic quantity.<sup><xref ref-type="bibr" rid="CR13">13</xref></sup> The distinction between intrinsic information and measures of extrinsic information (i.e., Shannon entropy) is crucial to IIT, which strictly pertains to the former type.</p>
+      <p id="Par7">These ideas build up to the principal argument of IIT, which is that consciousness arises in a system that generates more information as an integrated whole than that which is generated by the sum of its parts. In other words, the interactions between a system’s elements, which are governed by its mechanisms, yield a level of information that is higher than when the system is reduced to its individual components.<sup><xref ref-type="bibr" rid="CR12">12</xref>,<xref ref-type="bibr" rid="CR14">14</xref></sup> This property is called irreducibility and is quantified using Φ, which is computed by partitioning the system (i.e., breaking connections between its elements) and measuring the subsequent loss of information.</p>
+      <p id="Par8">So far, three versions of IIT have been introduced. The initial framework (IIT 1.0) was limited to stationary systems<sup><xref ref-type="bibr" rid="CR10">10</xref></sup>, while the second version (IIT 2.0) extended the theory to dynamic systems that evolve over time.<sup><xref ref-type="bibr" rid="CR11">11</xref>,<xref ref-type="bibr" rid="CR15">15</xref></sup> The latest version, IIT 3.0, introduced a series of theoretical advancements and formulated the most computationally intensive variant of Φ, known as the maximally integrated conceptual information (Φ<sup>max</sup>).<sup><xref ref-type="bibr" rid="CR12">12</xref></sup> Fundamentally, IIT 3.0 treats information as causation; starting with how a system’s elements interact (i.e., the system’s mechanisms), information is computed by relating the system’s present state to all of its possible causes and effects. On the other hand, IIT 2.0 computes the mutual information between the system’s past and present states, which does not involve the same level of consideration for its causal mechanisms.<sup><xref ref-type="bibr" rid="CR16">16</xref>,<xref ref-type="bibr" rid="CR17">17</xref></sup></p>
+      <p id="Par9">The theoretical and quantitative aspects proposed by IIT are promising, and some progress has been made to incorporate measures derived from IIT 2.0 to fMRI and EEG data. In a task-based fMRI study that presented subjects with a movie clip followed by visual noise as a control, Boly et al. found that Φ dropped significantly during the control paradigm, meaning it could effectively capture the integration of meaningful stimuli.<sup><xref ref-type="bibr" rid="CR18">18</xref></sup> Similar measures were applied in an fMRI study on functionally-split properties of brain activity, which shed light on the possibility of multiple streams of consciousness when individuals perform simultaneous tasks.<sup><xref ref-type="bibr" rid="CR19">19</xref></sup> Finally, IIT was also applied in a study involving high-density EEG recordings in which the authors used parameters derived from Φ to differentiate different states of consciousness.<sup><xref ref-type="bibr" rid="CR20">20</xref></sup></p>
+      <p id="Par10">Despite these developments, existing literature on IIT remains largely theoretical, and more efforts are needed to develop procedures that can be used to extract empirical measures of Φ. This is especially the case for the latest version of IIT, as there are currently no published works that attempt to quantify Φ<sup>max</sup> for neuroimaging or EEG data. While IIT 3.0 involves a considerably more rigorous mathematical formulation than previous versions, Φ<sup>max</sup> remains limited to discrete Markovian systems consisting of binary elements, which presents a limitation in its suitability to empirical imaging data. Nevertheless, we believe that a preliminary implementation is possible with the tools currently available. This work hence presents a procedure to quantify Φ<sup>max</sup> for empirical resting-state fMRI data, which we hope will serve as a foundation for further empirical applications of integrated information theory.</p>
+      <p id="Par11">Resting-state fMRI data were acquired from 17 healthy subjects who underwent sedation with propofol, a short-acting anesthetic. Images were parcellated to obtain 11 RSNs, which were processed to include five regions for reasonable computation times. Measurements of resting-state activity were obtained over four conditions of awareness: awake, mildly sedated, deeply sedated, and recovery. To obtain networks with discrete elements as required for IIT 3.0, each RSN’s time-series were standardized and converted to a binary form. In keeping with the importance of intrinsicality, each region’s threshold was acquired with respect to its own mean signal strength (see Fig. <xref rid="Fig1" ref-type="fig">1a</xref> and Methods for more details). The software used to compute Φ<sup>max</sup> was PyPhi, a Python package developed in accordance with IIT 3.0.<sup><xref ref-type="bibr" rid="CR12">12</xref>,<xref ref-type="bibr" rid="CR21">21</xref></sup> Since Φ<sup>max</sup> is a state-dependent quantity that changes over time, we computed its weighted average over the time-series of each network, which we refer to as μ[Φ<sup>max</sup>].<fig id="Fig1"><label>Fig. 1</label><caption><title>Summary of acquisition, signal processing, and metric extraction.</title><p><bold>a</bold> fMRI data were acquired from 17 healthy subjects and propofol was administered to obtain measurements for four conditions of awareness: Awake: no propofol administered, Mild: Ramsey Scale Level 3 (limited responsiveness), Deep: Ramsey Scale Level 5 (no responsiveness), Recovery: administration of anesthetic terminated (see Methods for more details). We then applied a parcellation scheme and obtained 11 RSNs consisting of five regions, each with their own time-series. The time-series of each region was binarized with respect to its own signal mean, which allowed each network to take on 32 (or 2<sup>5</sup>) possible states in any given time point. Note that we concatenated (joined) the time-series from individual subjects to obtain longer signals for each RSN and condition. <bold>b</bold> The metric derived from IIT 3.0 is μ[Φ<sup>max</sup>]: Φ<sup>max</sup> is computed for a certain state using the earth mover’s distance (<inline-formula id="IEq1"><alternatives><tex-math id="M1">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${{{{{\rm{EMD}}}}}}$$\end{document}</tex-math><mml:math id="M2"><mml:mi mathvariant="normal">EMD</mml:mi></mml:math><inline-graphic xlink:href="42003_2023_5063_Article_IEq1.gif"/></alternatives></inline-formula>) between the cause-and-effect conceptual space of the system <italic>S</italic> and its partitioned counterparts <italic>M</italic>. We computed Φ<sup>max</sup> for each state and obtained a weighted average over the time-series. The three additional metrics included in our analysis are: Φ*, integrated information from the decoding perspective, which is computed as the difference between the mutual information <italic>I</italic> of the system’s past and present states (<inline-formula id="IEq2"><alternatives><tex-math id="M3">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${S}^{t-\tau },{S}^{t}$$\end{document}</tex-math><mml:math id="M4"><mml:msup><mml:mrow><mml:mi>S</mml:mi></mml:mrow><mml:mrow><mml:mi>t</mml:mi><mml:mo>−</mml:mo><mml:mi>τ</mml:mi></mml:mrow></mml:msup><mml:mo>,</mml:mo><mml:msup><mml:mrow><mml:mi>S</mml:mi></mml:mrow><mml:mrow><mml:mi>t</mml:mi></mml:mrow></mml:msup></mml:math><inline-graphic xlink:href="42003_2023_5063_Article_IEq2.gif"/></alternatives></inline-formula>) and the sum over the mutual information of the partitioned parts (<inline-formula id="IEq3"><alternatives><tex-math id="M5">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${M}_{k}^{t-\tau },{M}_{k}^{t}$$\end{document}</tex-math><mml:math id="M6"><mml:msubsup><mml:mrow><mml:mi>M</mml:mi></mml:mrow><mml:mrow><mml:mi>k</mml:mi></mml:mrow><mml:mrow><mml:mi>t</mml:mi><mml:mo>−</mml:mo><mml:mi>τ</mml:mi></mml:mrow></mml:msubsup><mml:mo>,</mml:mo><mml:msubsup><mml:mrow><mml:mi>M</mml:mi></mml:mrow><mml:mrow><mml:mi>k</mml:mi></mml:mrow><mml:mrow><mml:mi>t</mml:mi></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="42003_2023_5063_Article_IEq3.gif"/></alternatives></inline-formula>); <inline-formula id="IEq4"><alternatives><tex-math id="M7">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${{{{{\rm{CD}}}}}}$$\end{document}</tex-math><mml:math id="M8"><mml:mi mathvariant="normal">CD</mml:mi></mml:math><inline-graphic xlink:href="42003_2023_5063_Article_IEq4.gif"/></alternatives></inline-formula>, causal density, the mean Granger causality <inline-formula id="IEq5"><alternatives><tex-math id="M9">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${{{{{\mathscr{F}}}}}}$$\end{document}</tex-math><mml:math id="M10"><mml:mi mathvariant="script">F</mml:mi></mml:math><inline-graphic xlink:href="42003_2023_5063_Article_IEq5.gif"/></alternatives></inline-formula> between every possible pair of regions in the network; and μ[ρ], the mean Pearson correlation coefficient ρ between every possible pair of regions in the network.</p></caption><graphic xlink:href="42003_2023_5063_Fig1_HTML" id="d32e639"/></fig></p>
+      <p id="Par12">Our central investigation seeks to determine whether μ[Φ<sup>max</sup>] can yield meaningful quantitative differences across conscious conditions, as well as which RSNs demonstrate these changes. If a measure of cortical activity can serve as a valid marker of consciousness, its value should gradually decrease as subjects transition from wakefulness to deep sedation and increase as the anesthetic wears off during recovery. It was previously reported that propofol-induced anesthesia predominantly suppresses RSNs with frontal and prefrontal regions, which are associated with higher-order functions; on the other hand, the effects on sensory networks are less pronounced.<sup><xref ref-type="bibr" rid="CR22">22</xref>,<xref ref-type="bibr" rid="CR23">23</xref></sup> Accordingly, we expect μ[Φ<sup>max</sup>] to present a variety of anesthetic-induced variations across the networks, and our discussion will relate these results to existing literature on propofol.</p>
+      <p id="Par13">Since this study is an experimentation with IIT 3.0, we also consider how μ[Φ<sup>max</sup>] compares with other metrics that may reflect conscious level. Therefore, we introduce three additional measures throughout our analysis, which are: 1) Φ*; integrated information from the decoding perspective, a measure derived from IIT 2.0<sup><xref ref-type="bibr" rid="CR13">13</xref>,<xref ref-type="bibr" rid="CR24">24</xref></sup>; 2) Causal Density (CD), a measure proposed by Seth et al. to quantify the average Granger causality over a collection of time-series<sup><xref ref-type="bibr" rid="CR25">25</xref>,<xref ref-type="bibr" rid="CR26">26</xref></sup>; and 3) μ[ρ], a networks’ average Pearson correlation coefficient, a statistical measure of synchrony between the time-series of a network’s regions (see Fig. <xref rid="Fig1" ref-type="fig">1b</xref>). By including these measures in our analysis, we aim to emphasize the potential advantages to using μ[Φ<sup>max</sup>].</p>
+    </sec>
+    <sec id="Sec2" sec-type="results">
+      <title>Results</title>
+      <sec id="Sec3">
+        <title>Temporal and spatial control procedures</title>
+        <p id="Par14">The two fundamental properties of each network are their spatial composition and time-dependent behavior, which depend on the cortical regions they include and the sequences of states appearing in their time-series, respectively. We hence started with a control procedure to evaluate the dependence of μ[Φ<sup>max</sup>] and the reference metrics on these properties. To test spatial dependency, we generated a series of control networks by randomly grouping five regions from different RSNs and computing μ[Φ<sup>max</sup>] for each random collection of regions. To evaluate temporal dependence, we maintained each network’s regions but permuted the sequences of states appearing in their time-series (i.e., the order of time-points was shuffled). In Fig. <xref rid="Fig2" ref-type="fig">2</xref>, we present the results of these permutations for each metric in comparison to the original networks.<fig id="Fig2"><label>Fig. 2</label><caption><title>Results from spatial and temporal control procedures.</title><p>For each of the four conditions, we generated 100 spatial control networks by randomly grouping five regions from different RSNs. Each RSN’s time-series was then randomly permuted 50 times in the temporal control procedure, leading to 550 randomized time-series for 11 RSNs in each condition. Note that these permutations and calculations were performed for time-series with all 17 subjects concatenated (see Methods for more details). We computed μ[Φ<sup>max</sup>] (<bold>a</bold>), Φ* (<bold>b</bold>), <inline-formula id="IEq6"><alternatives><tex-math id="M11">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${{{{{\rm{CD}}}}}}$$\end{document}</tex-math><mml:math id="M12"><mml:mi mathvariant="normal">CD</mml:mi></mml:math><inline-graphic xlink:href="42003_2023_5063_Article_IEq6.gif"/></alternatives></inline-formula> (<bold>c</bold>), and μ[ρ] (<bold>d</bold>) for the original RSNs (shown with the gray points) and both control permutations (shown with the violin plots). The horizontal lines corresponding to each distribution represent their mean. In the case of μ[ρ] (<bold>d</bold>), the overlapped data points indicate that the original RSNs’ values did not change when time points were permuted. For source data, see Supplementary Data <xref rid="MOESM4" ref-type="media">2</xref>. For statistical information, see Supplementary Note <xref rid="MOESM1" ref-type="media">6</xref>, Supplementary Table <xref rid="MOESM1" ref-type="media">3</xref>.</p></caption><graphic xlink:href="42003_2023_5063_Fig2_HTML" id="d32e746"/></fig></p>
+        <p id="Par15">For all conditions of awareness, almost all of the RSNs’ original μ[Φ<sup>max</sup>] values were significantly higher than those of the spatial control networks. This difference was even more drastic in the temporal control procedure. The networks behaved similarly when evaluated using CD. For both μ[Φ<sup>max</sup>] and CD, the default mode network (DMN) had the lowest values and was the only RSN not significantly different from the spatial control distributions (<italic>p</italic> &gt; 0.05 for both measures in awake and deep sedation; see Supplementary Note <xref rid="MOESM1" ref-type="media">6</xref> for statistical information). On the other hand, differences between the original networks and their permuted counterparts were insignificant for Φ*, which is clear from the large level of overlap between the plotted distributions. μ[ρ] dropped significantly for the spatial control networks, but this measure was completely unaffected by temporal permutations, which reflects the fact that ρ does not depend on the order of the sample used to compute it.</p>
+      </sec>
+      <sec id="Sec4">
+        <title>Modulation patterns of μ[Φ<sup>max</sup>] during anesthesia</title>
+        <p id="Par16">Our central analysis focused on how propofol impacts the integrated information of specific RSNs. To account for possible variations across the population, we obtained a sample of 17 time-series for each network and condition. This was achieved by concatenating all but one of the subjects and excluding a different subject for each new time-series generated. The results for μ[Φ<sup>max</sup>] are shown in Fig. <xref rid="Fig3" ref-type="fig">3</xref>, where we present each network with a subplot that includes the distribution of values obtained for each condition. The RSNs are arranged according to their association with higher order cortical functions and conscious processing. All relevant statistical details (including correction for repeated comparisons over each network) are provided in the methodology as well as Supplementary Note <xref rid="MOESM1" ref-type="media">6</xref>; Supplementary Tables <xref rid="MOESM1" ref-type="media">4</xref>–<xref rid="MOESM1" ref-type="media">7</xref>.<fig id="Fig3"><label>Fig. 3</label><caption><title>Modulation of μ[Φ<sup>max</sup>] by propofol in individual RSNs.</title><p>For each network, the mean integrated information across the subject population is compared for the four conditions of awareness. Bar heights represent the mean of the sample of μ[Φ<sup>max</sup>] values, which was obtained by concatenating 16 subjects with a different subject left out for each measurement (<italic>N</italic> = 17), with individual data points given for each measurement. Error bars represent the population standard deviation, which was obtained by multiplying the standard error of the sample by √N. All statistically significant differences found between the conditions, such as awake vs. deep sedation, are indicated by the horizontal lines above the bars (*<italic>p</italic> &lt; <inline-formula id="IEq7"><alternatives><tex-math id="M13">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\alpha }^{{BH}}$$\end{document}</tex-math><mml:math id="M14"><mml:msup><mml:mrow><mml:mi>α</mml:mi></mml:mrow><mml:mrow><mml:mi>B</mml:mi><mml:mi>H</mml:mi></mml:mrow></mml:msup></mml:math><inline-graphic xlink:href="42003_2023_5063_Article_IEq7.gif"/></alternatives></inline-formula>, where <inline-formula id="IEq8"><alternatives><tex-math id="M15">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\alpha }^{{BH}}$$\end{document}</tex-math><mml:math id="M16"><mml:msup><mml:mrow><mml:mi>α</mml:mi></mml:mrow><mml:mrow><mml:mi>B</mml:mi><mml:mi>H</mml:mi></mml:mrow></mml:msup></mml:math><inline-graphic xlink:href="42003_2023_5063_Article_IEq8.gif"/></alternatives></inline-formula> is the significance threshold obtained with the Benjamini–Hochberg correction for multiple comparison, which varies when comparing different conditions. For all values derived from significance testing, see Supplementary Note <xref rid="MOESM1" ref-type="media">6</xref>; Supplementary Tables <xref rid="MOESM1" ref-type="media">4</xref>–<xref rid="MOESM1" ref-type="media">7</xref>). For source data, see Supplementary Data <xref rid="MOESM5" ref-type="media">3</xref>.</p></caption><graphic xlink:href="42003_2023_5063_Fig3_HTML" id="d32e854"/></fig></p>
+        <p id="Par17">The networks that most clearly reflected subjects’ level of awareness were the frontoparietal (FPN) and dorsal attention networks (DAN). Both decreased gradually and reached a minimum in deep sedation with a statistically significant difference compared to the awake condition, which was followed by a significant increase in recovery. Interestingly, the FPN demonstrates an exceptionally large jump in this final transition, as its integrated information during recovery exceeds the value computed in the awake condition.</p>
+        <p id="Par18">Like the FPN and DAN, the DMN’s μ[Φ<sup>max</sup>] value was lowest in deep sedation and its rebound in recovery presented a statistically significant increase. However, its overall modulation pattern was weaker, as no drop was observed between awake and mild sedation, and the drop in deep sedation was not statistically significant compared to the awake condition. Furthermore, the DMN yielded the lowest μ[Φ<sup>max</sup>] values compared to all other networks.</p>
+        <p id="Par19">Other RSNs demonstrated minor and statistically insignificant fluctuations across the four conditions. Out of the higher-order networks, these included the retrosplenial, ventral-attention, and cingulate networks. Turning to the sensory cortices, the auditory network demonstrated a stronger degree of fluctuation with a substantial drop in mild sedation. However, this modulation pattern was inconsistent with changes to subjects’ conscious state. While the SM hand network presents a significant difference between mild and deep sedation, the SM mouth and visual networks did not demonstrate any significant variations in μ[Φ<sup>max</sup>].</p>
+      </sec>
+      <sec id="Sec5">
+        <title>Modulation patterns for the reference metrics</title>
+        <p id="Par20">To see how the networks behaved with respect to each reference metric, we repeated the previous analysis for Φ*, CD, and μ[ρ], which we present in Fig. <xref rid="Fig4" ref-type="fig">4</xref>. Since the measures varied in magnitude, we normalized the values of the four conditions with respect to each network’s awake value. For absolute values and statistical information, an equivalent version of Fig. <xref rid="Fig3" ref-type="fig">3</xref> is included for each metric in Supplementary Note <xref rid="MOESM1" ref-type="media">3</xref>; Supplementary Figs. <xref rid="MOESM1" ref-type="media">2</xref>–<xref rid="MOESM1" ref-type="media">4</xref>.<fig id="Fig4"><label>Fig. 4</label><caption><title>Modulation of reference metrics by propofol in individual RSNs.</title><p>The networks, presented across rows, are analyzed using the reference metrics Φ*, CD, μ[ρ], which were assigned to columns. As before, each network is analyzed over the four conditions of awareness. To focus on each network’s behavior under anesthesia, the values were normalized with respect to each network’s awake value (set to equal 1). Bar heights represent the normalized means of CD, Φ*, and μ[ρ] values obtained by concatenating 16 subjects with a different subject left out for each measurement (i.e., these measures were applied to the same set of time-series used to compute μ[Φ<sup>max</sup>] in Fig. <xref rid="Fig3" ref-type="fig">3</xref>). Error bars represent the population standard deviation, which was obtained by multiplying the standard error of the sample by √N. For absolute measurements and statistical tests, see Supplementary Note <xref rid="MOESM1" ref-type="media">3</xref>; Supplementary Figs. <xref rid="MOESM1" ref-type="media">2</xref>–<xref rid="MOESM1" ref-type="media">4</xref>, which includes an equivalent version of Fig. <xref rid="Fig3" ref-type="fig">3</xref> for each measure. For source data, see Supplementary Data <xref rid="MOESM5" ref-type="media">3</xref>.</p></caption><graphic xlink:href="42003_2023_5063_Fig4_HTML" id="d32e923"/></fig></p>
+        <p id="Par21">Out of all measures, Φ* presented the lowest level of variability with respect to changes in awareness level. This is clear from the first column of Fig. <xref rid="Fig4" ref-type="fig">4</xref>, where most networks demonstrate relatively minor fluctuations throughout sedation. One similarity between Φ* and μ[Φ<sup>max</sup>] was the behavior of the DMN, which also showed negligible change in mild sedation but a significant drop in deep sedation and a rebound in recovery. Whereas μ[Φ<sup>max</sup>] was strongly modulated in the FPN and DAN, Φ* closely corresponded to awareness level in the two cingulate networks.</p>
+        <p id="Par22">On the other hand, the behavior of CD was more similar to that of μ[Φ<sup>max</sup>]; not only were there heterogeneities among the networks’ modulation patterns, but there was significantly more variability in this metric’s values. As with μ[Φ<sup>max</sup>], the FPN and DAN accurately reflected changes to subjects’ level of awareness, while the sensorimotor, auditory, and visual networks presented no clear sedative-induced changes. However, CD also mirrored the conscious evolution of subjects in the DMN and retrosplenial network, which was not the case for μ[Φ<sup>max</sup>].</p>
+        <p id="Par23">Finally, μ[ρ] also showed substantial changes across different conscious states, suggesting that this measure is strongly impacted by anesthesia. However, we emphasize that with correlation, nearly all networks demonstrate a modulation pattern that corresponds to the conscious evolution of subjects. The only exception was the SM Hand network, which increased moving from awake to mild sedation. Otherwise, μ[ρ] demonstrates a more globalized effect across the networks compared to the other metrics.</p>
+      </sec>
+      <sec id="Sec6">
+        <title>Modulation and magnitude</title>
+        <p id="Par24">The results presented so far suggest two ways to interpret an RSN’s integrated information. The first, which we already discussed qualitatively, is a network’s modulation pattern and the degree to which it reflects changes in subjects’ awareness level. The second is the overall magnitude of integrated information within the network. To analyze these aspects quantitatively, each network’s four μ[Φ<sup>max</sup>] values were arranged into a four-element vector in the appropriate order (i.e. [μ[Φ<sup>max</sup>]<sub>A</sub>, μ[Φ<sup>max</sup>]<sub>M</sub>, μ[Φ<sup>max</sup>]<sub>D</sub>, μ[Φ<sup>max</sup>]<sub>R</sub>]). This vector’s magnitude was used to quantify the overall amount of integrated information generated by a certain network (M). We then obtained a measure quantifying the degree to which a network’s modulation pattern corresponds to changes in awareness level (S). This effectively represents the extent to which μ[Φ<sup>max</sup>] drops moving towards deep sedation and increases in recovery (see Methods for more details). We computed M and S values for each network in terms of μ[Φ<sup>max</sup>] and the reference metrics, which are presented in Fig. <xref rid="Fig5" ref-type="fig">5</xref>.<fig id="Fig5"><label>Fig. 5</label><caption><title>Magnitude (M) vs. degree of modulation pattern that reflects awareness level (S).</title><p>The overall magnitude (M) generated for a particular RSN is plotted against the degree to which a network reflects the four conditions of awareness (S) for each metric of interest: μ[Φ<sup>max</sup>] (<bold>a</bold>), Φ* (<bold>b</bold>), CD (<bold>c</bold>), and μ[ρ] (<bold>d</bold>). Vertical error bars represent the standard deviation of each network’s M, while horizontal error bars represent the standard error of each network’s S value. Within each subplot, the dashed vertical lines correspond to the median value of S obtained out of all networks. We use this median to separate RSNs whose modulation patterns strongly correspond to changes in awareness level. Networks are labeled as: FPN frontoparietal, DMN Default mode, RS Retrosplenial, DAN Dorsal attention, VAN Ventral attention, CO Cing. Opercular, CP Cing. Parietal, SMH Sensorimotor hand, SMM Sensorimotor mouth, VIS Visual, AUD Auditory. For source data, see Supplementary Data <xref rid="MOESM6" ref-type="media">4</xref>.</p></caption><graphic xlink:href="42003_2023_5063_Fig5_HTML" id="d32e1020"/></fig></p>
+        <p id="Par25">While these results reinforce our previous descriptions of RSNs and their modulation patterns, they also provide insight into how the networks behave with respect to one another. First, it is important to note that while some networks may accurately reflect changes to conscious level, they do not necessarily yield a high level of integrated information. In the case of μ[Φ<sup>max</sup>], the FPN and DAN had the highest values of S. However, the highest value of M was computed for the SM Mouth network, where changes to μ[Φ<sup>max</sup>] did not closely reflect the conscious evolution of subjects. The DMN also had higher S compared to most other networks, but its overall magnitude of μ[Φ<sup>max</sup>] was the lowest.</p>
+        <p id="Par26">A similar argument could be made for the reference metrics. In the case of CD, the DMN had the lowest magnitude while demonstrating the largest value of S. The same could be said for the cingulate-opercular network in terms of Φ*, while for μ[ρ], the four networks with the highest magnitudes were all below the median S value. Moreover, the networks had the greatest median value of S for μ[ρ], which reflects our previous observation of a more globalized effect through this metric.</p>
+        <p id="Par27">Finally, these results also emphasize differences in magnitude variability across the metrics. Taking all the networks’ M values into account, the metric with the highest variability (computed as the percent difference between the maximum and minimum values) was μ[Φ<sup>max</sup>] (62%), meaning there was a sizable difference between networks that generated the most integrated information (i.e., SM networks) and those that generated the least (i.e., DMN). The networks also demonstrated substantial variability through CD and μ[ρ] (53 and 58%, respectively), while Φ* had the lowest variability (15%), suggesting that it is less sensitive to inter-network differences.</p>
+      </sec>
+    </sec>
+    <sec id="Sec7" sec-type="discussion">
+      <title>Discussion</title>
+      <p id="Par28">Although much knowledge has been gained through the use of advanced neuroimaging techniques, consciousness continues to be a highly debated topic.<sup><xref ref-type="bibr" rid="CR2">2</xref>,<xref ref-type="bibr" rid="CR9">9</xref></sup> Of the many attempts made to explain conscious phenomena, Integrated Information Theory (IIT) has emerged as one of the leading perspectives. Starting with phenomenology, IIT defines the qualitative aspects of a conscious experience and introduces a measure known as integrated information (Φ) to quantify the degree to which a system is concious.<sup><xref ref-type="bibr" rid="CR10">10</xref>,<xref ref-type="bibr" rid="CR12">12</xref>,<xref ref-type="bibr" rid="CR15">15</xref></sup></p>
+      <p id="Par29">While the ideas of this framework are promising, extracting an empirical measure of Φ has proven to be challenging. Some progress has been made to implement measures of Φ to neuroimaging data<sup><xref ref-type="bibr" rid="CR18">18</xref>,<xref ref-type="bibr" rid="CR19">19</xref></sup>, though existing literature remains mostly theoretical and speculative. Furthermore, there exist no empirical applications of the latest and most advanced formulation of IIT (IIT 3.0), which introduces a thorough measure of conscious level called the maximally integrated conceptual information, or Φ<sup>max</sup>.</p>
+      <p id="Par30">While there are several limitations to extracting this measure from neuroimaging data, this paper introduced an implementation of IIT 3.0 to resting-state fMRI. Starting with data acquired from subjects who underwent propofol-induced anesthesia, we analyzed sedative-induced changes in integrated information over 11 resting-state networks (RSNs). The metric extracted using IIT 3.0 was μ[Φ<sup>max</sup>], or the weighted average of Φ<sup>max</sup> over a network’s time-series. As reference points to our results, we included three additional metrics that were previously used as potential indicators of conscious level: 1) Φ*, a measure of integrated information derived from IIT 2.0, 2) Causal Density (CD), a network’s average Granger causality, and 3) μ[ρ], a network’s average Pearson correlation coefficient.</p>
+      <p id="Par31">Our first analysis included two control procedures where we applied random permutations to the spatial and temporal arrangements of the networks. In both controls, μ[Φ<sup>max</sup>] dropped significantly, and the drop was especially drastic following temporal permutations. This is an important finding because it indicates that the RSNs of interest generate an intrinsic level of integrated information that vanishes when their spatial and temporal properties are disrupted. Similar results were obtained with CD, meaning that Granger causality could also capture the spatial and temporal characteristics of the networks in question. In Supplementary Note <xref rid="MOESM1" ref-type="media">7</xref> (Supplementary Figs. <xref rid="MOESM1" ref-type="media">6</xref>–<xref rid="MOESM1" ref-type="media">9</xref>), we present a more detailed analysis of temporal permutations and their effects on μ[Φ<sup>max</sup>] and CD, which provides important insight into the causal properties measured by both metrics.</p>
+      <p id="Par32">At the same time, Φ* did not demonstrate a strong dependence on these properties, as its values did not drop significantly in these procedures. The failure to differentiate a network’s original time-series from one that is randomized means that unlike μ[Φ<sup>max</sup>] or CD, Φ* did not effectively capture the BOLD signal’s causal relationships and is hence less robust in analyzing a network’s time-dependent behavior. These results may reflect the fact that Φ* is computed using mutual information, which is an entropic measure. Mutual information is defined by the entropy overlap of two probability mass functions, which in the case of Φ*, represent the probabilities of the system’s current and past states.<sup><xref ref-type="bibr" rid="CR13">13</xref>,<xref ref-type="bibr" rid="CR16">16</xref>,<xref ref-type="bibr" rid="CR17">17</xref></sup> Therefore, the insignificant change of this measure may indicate that permutations had limited impact on these probabilities, as they changed the order but not the overall content of states appearing in a time-series.</p>
+      <p id="Par33">When analyzed using Pearson correlations, the random grouping of cortical regions significantly decreased μ[ρ] as compared to the original RSNs. On the other hand, temporal permutations had no effect on this measure. These results are not surprising, as the networks were constructed using correlational functional connectivities in the first place, and the Pearson correlation coefficient does not depend on the order of the data used to compute it. While correlations are fundamental in fMRI analysis, their insensitivity to temporal permutations emphasize the need to implement additional metrics when analyzing the BOLD signal’s time-dependent and causal properties.<sup><xref ref-type="bibr" rid="CR27">27</xref></sup></p>
+      <p id="Par34">Our central investigation focused on changes to μ[Φ<sup>max</sup>] throughout sedation. In general, the effects of anesthesia differed among the RSNs. The modulation pattern that corresponds to the conscious evolution of subjects (i.e., a decrease moving from wakefulness to deep sedation followed by an increase in recovery) was most clearly observed in the frontoparietal and dorsal attention networks (FPN and DAN, respectively).</p>
+      <p id="Par35">The FPN, also known as the central executive network, is a crucial hub for cognitive control and goal-oriented behavior.<sup><xref ref-type="bibr" rid="CR28">28</xref>–<xref ref-type="bibr" rid="CR30">30</xref></sup> It is said to connect external stimuli with stored internal representations, and hence plays an important role in integrating inputs from several cortical regions.<sup><xref ref-type="bibr" rid="CR31">31</xref></sup> Accordingly, its drop in μ[Φ<sup>max</sup>] coincides with the loss of these functions as subjects become deeply sedated. This network’s behavior is further explained by findings that propofol inhibits functional connections between the frontal and parietal cortices, which form the basis to this RSN.<sup><xref ref-type="bibr" rid="CR23">23</xref></sup> Interestingly, the FPN’s integrated information peaked in the recovery stage, which could indicate a state of hyperexcitability that results in a broad integration of inputs during the physiological rebound of consciousness.</p>
+      <p id="Par36">The DAN demonstrated a similar behavior to the FPN, albeit without a drastic increase in recovery. This network facilitates top-down, voluntary mediation of external attention that is primarily associated with visuospatial orienting.<sup><xref ref-type="bibr" rid="CR32">32</xref>,<xref ref-type="bibr" rid="CR33">33</xref></sup> Considering the related functions and noted interactions between the FPN and DAN<sup><xref ref-type="bibr" rid="CR30">30</xref></sup>, their similar behaviors are a promising finding. On the other hand, several networks including the ventral attention, retrosplenial, and cingulate networks demonstrated minor and statistically insignificant fluctuations of μ[Φ<sup>max</sup>]. Although some significant changes were demonstrated by the sensory RSNs, we did not find any consistent relationship between their integrated information and the condition of subjects.</p>
+      <p id="Par37">Another important network to discuss is the DMN, which presented the lowest μ[Φ<sup>max</sup>] values compared to all other networks. This may indicate that despite a high metabolic activity at rest<sup><xref ref-type="bibr" rid="CR34">34</xref></sup>, the DMN’s integrated information as an isolated system is intrinsically low. Perhaps, an analysis of its interactions with other cortical regions is necessary to better understand its integrative mechanisms.<sup><xref ref-type="bibr" rid="CR35">35</xref>,<xref ref-type="bibr" rid="CR36">36</xref></sup> This would be in line with the results of the spatial control procedure, where the DMN’s μ[Φ<sup>max</sup>] values were comparable to those of the control networks (i.e., randomly grouped cortical regions), which themselves contain interactions between regions of the DMN and those of other RSNs.</p>
+      <p id="Par38">Overall, our results for μ[Φ<sup>max</sup>] support previous findings that propofol preferentially suppresses higher-order networks with regions in the frontal and prefrontal cortices, which are commonly attributed to conscious awareness.<sup><xref ref-type="bibr" rid="CR22">22</xref>,<xref ref-type="bibr" rid="CR37">37</xref>,<xref ref-type="bibr" rid="CR38">38</xref></sup> At the same time, it was also found that propofol’s effects may be weaker for sensory cortices, which may explain the lack of modulation for these RSNs.<sup><xref ref-type="bibr" rid="CR37">37</xref>,<xref ref-type="bibr" rid="CR39">39</xref></sup></p>
+      <p id="Par39">To solve the problem of high computational cost in IIT 3.0, one proposed solution is to estimate integrated information at the mechanism level.<sup><xref ref-type="bibr" rid="CR40">40</xref>,<xref ref-type="bibr" rid="CR41">41</xref></sup> While the full calculation of Φ<sup>max</sup> involves computing the integration of all mechanisms with respect to one another, this alternative approach only considers the integrated information of individual mechanisms. In Supplementary Note <xref rid="MOESM1" ref-type="media">4</xref> (Supplementary Fig. <xref rid="MOESM1" ref-type="media">5</xref>), we apply this method and compare it to our results with μ[Φ<sup>max</sup>]. In summary, several networks behave differently when evaluated with mechanism-level integrated information, suggesting that the rigorous yet complete calculation of Φ<sup>max</sup> may not always be predicted by analyzing mechanisms individually.</p>
+      <p id="Par40">While our central analysis focused on μ[Φ<sup>max</sup>], we further evaluated each network’s time-series using the reference metrics (see Table <xref rid="Tab1" ref-type="table">1</xref> for a brief summary of these results). First, CD demonstrated notable similarities to μ[Φ<sup>max</sup>]; it reflected changes to conscious level in the FPN and DAN, while its values in the sensorimotor, auditory, and visual networks demonstrated no significant modulation. On the other hand, the DMN and retrosplenial network reflected changes to awareness level more closely than they did for μ[Φ<sup>max</sup>].<table-wrap id="Tab1"><label>Table 1</label><caption><p>Summary of results comparing μ[Φ<sup>max</sup>] and the reference metrics.</p></caption><table frame="hsides" rules="groups"><thead><tr><th/><th>μ[Φ<sup>max</sup>]</th><th>CD</th><th>Φ*</th><th>μ[ρ]</th></tr></thead><tbody><tr><td>Spatial control</td><td>Significant drop</td><td>Significant drop</td><td>Change, but no significant drop</td><td>Significant drop</td></tr><tr><td>Temporal control</td><td>Significant drop: strong dependence on order of points in time-series</td><td>Significant drop: strong dependence on order of points in time-series</td><td>No significant drop: weak dependence on order of points in time-series</td><td>No change: no dependence on order of points in time-series</td></tr><tr><td>RSNs reflecting awareness level</td><td>FPN, DAN</td><td>FPN, DAN, DMN, Retrosplenial</td><td>Cingulate networks</td><td>All except SM Hand</td></tr></tbody></table><table-wrap-foot><p>The results of the control procedure and the analysis of modulation in each measure are briefly summarized above. Different aspects of our analysis are given across rows, and the four metrics are presented in the columns.</p></table-wrap-foot></table-wrap></p>
+      <p id="Par41">Turning our attention to Φ*, the cingulate networks were the only ones to demonstrate a steady decrease moving towards deep sedation and an increase in recovery, while other networks typically associated with awareness, such as the FPN and DAN, did not demonstrate a meaningful modulation pattern. The only network that behaved in similar fashion to μ[Φ<sup>max</sup>] was the DMN, which dropped during deep sedation but demonstrated a negligible difference between awake and mild sedation. Compared to other metrics, the magnitude of Φ* had much lower variability across different networks, meaning it could not distinguish RSNs with high and low integration as effectively as μ[Φ<sup>max</sup>].</p>
+      <p id="Par42">While μ[Φ<sup>max</sup>], CD, and Φ* exhibited a variety of sedative-induced changes across different networks, this was not the case for μ[ρ]. When analyzed using the Pearson correlation coefficient, nearly all networks demonstrated a modulation pattern corresponding to the conscious evolution of subjects. On the surface, this may appear to indicate that μ[ρ] is a more robust measure of conscious level. However, this would contradict the well-established principle that certain cortical regions are more important to conscious processing than others. Indeed, the global behavior of μ[ρ] would make it difficult to determine which networks are responsible for consciousness and higher order cognitive functions. Perhaps, the homogenous behavior of μ[ρ] reflects a global neurophysiological effect that is induced by the sedative.<sup><xref ref-type="bibr" rid="CR39">39</xref>,<xref ref-type="bibr" rid="CR42">42</xref></sup> Moreover, previous studies found that various physiological changes, such as eye opening or closing, heart rate, and respiration can significantly influence measures of functional connectivity,<sup><xref ref-type="bibr" rid="CR43">43</xref>,<xref ref-type="bibr" rid="CR44">44</xref></sup> but these do not necessarily correspond to increased or reduced levels of awareness.</p>
+      <p id="Par43">Taken together, the issues pointed out for μ[ρ] and Φ* suggest that μ[Φ<sup>max</sup>] and CD are better candidates for an effective measure of conscious level; both were sensitive to the BOLD signal’s time-dependent behavior, both reflected changes to awareness in networks typically associated with consciousness, and both exhibited heterogeneity in their behaviors across different cortical regions. What remains to be addressed is how the two metrics differ from one another. While the relationship between cause and effect is essential to both, CD is limited to measuring a network’s causal interactions. On the other hand, Φ<sup>max</sup> extends on causation and quantifies the extent to which this property is integrated. According to IIT, integration is essential to consciousness, and computing it makes Φ<sup>max</sup> a considerably more sophisticated measure than CD.</p>
+      <p id="Par44">Although Granger causality is a useful tool with many potential biological applications, there are theoretical problems with using a measure of conscious level that relies exclusively on causality. The nervous system contains a multitude of causal relationships that do not necessarily contribute to consciousness, such as sensory pathways and interactions within the autonomic nervous system.<sup><xref ref-type="bibr" rid="CR9">9</xref>,<xref ref-type="bibr" rid="CR12">12</xref></sup> Even within the brain, there are sophisticated structures consisting of complex neuronal interactions that are not attributed to consciousness (i.e., the cerebellum). IIT argues that these components of the nervous system lack integration, whereas highly integrated structures such as the cerebral cortex do generate consciousness.<sup><xref ref-type="bibr" rid="CR45">45</xref></sup></p>
+      <p id="Par45">Therefore, the differences in our results for μ[Φ<sup>max</sup>] and CD can be attributed to whether or not integration was computed. While the DMN and retrosplenial network showed significant changes through CD, they did not do so through μ[Φ<sup>max</sup>], meaning that only the FPN and DAN reflected changes to awareness level through both causality and integration. Even if μ[Φ<sup>max</sup>] is a more computationally intensive metric, the inclusion of integration renders it a stronger measure of properties associated with consciousness.</p>
+      <p id="Par46">In our final analysis, we considered two features derived from the four conditions of awareness, which were a network’s overall magnitude of integrated information and the degree to which its evolution reflects changes to awareness. The results indicated that while some cortical networks generate a high level of integrated information, their modulation patterns do not reflect the effects of the anesthetic. In our case, the sensorimotor networks generated the highest μ[Φ<sup>max</sup>] with relatively weak sensitivity to sedation. Although the reference metrics placed emphasis on different networks, they also demonstrated a lack of parallelism between high magnitude and reflection of awareness level.</p>
+      <p id="Par47">These results are important in the context of ongoing debate about which cortical regions possess the capacity for consciousness. Recent theories challenge the emphasis previously placed on the FPN and instead attribute consciousness to a posterior cortical hot zone, which spans occipital, temporal, and parietal regions.<sup><xref ref-type="bibr" rid="CR9">9</xref>,<xref ref-type="bibr" rid="CR46">46</xref></sup> While this idea is not supported by our results, further research is needed to determine the extent to which these regions contribute to conscious processing. Nevertheless, our findings emphasize the importance of analyzing integrated information in terms of both modulation and magnitude. The possibility of cortical regions being highly integrated but weakly modulated is an important factor to consider when implementing measures of conscious level such as Φ<sup>max</sup>.</p>
+      <p id="Par48">While our investigation yielded promising findings, it is important to discuss several limitations to our procedure and implementation. First, a disadvantage of fMRI is its low temporal resolution, which ranges between 2 to 3 s for consecutive time points.<sup><xref ref-type="bibr" rid="CR47">47</xref></sup> Computing causality for fMRI data is hence controversial, as its low sampling rate may preclude a meaningful evaluation of causal properties.<sup><xref ref-type="bibr" rid="CR25">25</xref></sup> While there is evidence to support a neuronal basis for the BOLD signal, fMRI measures a hemodynamic response rather than neuronal activity, which occurs at a much faster timescale and is absolutely crucial for understanding consciousness. Another issue of studying anesthesia with fMRI is the increased likelihood of head motion during sedation, which can significantly affect image quality.<sup><xref ref-type="bibr" rid="CR48">48</xref>,<xref ref-type="bibr" rid="CR49">49</xref></sup></p>
+      <p id="Par49">In terms of our computational scheme, the analysis of time-series was constrained by the Markovian assumptions underlying IIT 3.0.<sup><xref ref-type="bibr" rid="CR21">21</xref></sup> We tested for these requirements and found that the fMRI time-series did not satisfy the conditional independence property, meaning that some information in the original signals was lost when inputted to PyPhi (see Supplementary Note <xref rid="MOESM1" ref-type="media">5</xref>; Supplementary Tables <xref rid="MOESM1" ref-type="media">1</xref>, <xref rid="MOESM1" ref-type="media">2</xref> for results on the Markov property and conditional independence tests). Another limitation is the high computational cost of Φ<sup>max</sup> and how it scales with network size. Although an improved spatial resolution may provide a better perspective for analyzing an RSN’s causal dynamics, the computational scalability of <italic>O(n53</italic><sup><italic>n</italic></sup><italic>)</italic> means that a sixth region would increase calculation time by over sixty-fold.</p>
+      <p id="Par50">Furthermore, our procedure consisted of concatenating time-series from different subjects to obtain longer signals for each RSN and condition. While this was done to address the issues of using short time-series, inter-subject differences are inevitable, and as a result, the concatenated signals contained discontinuities that would not have existed if longer signals were obtained from individual subjects. PyPhi also requires systems whose elements take on binary states, which allows for no consideration of the BOLD signal’s continuous nature.</p>
+      <p id="Par51">Nevertheless, our approach to calculating integrated information from empirical fMRI data produced meaningful results that merit further investigation of this framework. For future implementations, we suggest a procedure that computes Φ<sup>max</sup> for the time-series of individual subjects, which will require the acquisition of signals with more time points than used in this analysis. Although our study focused on anesthesia with propofol, there are other conditions in which Φ<sup>max</sup> should be investigated. For instance, our proposed procedure could be applied in an fMRI study that compares healthy controls to patients suffering from disorders of consciousness.<sup><xref ref-type="bibr" rid="CR5">5</xref>,<xref ref-type="bibr" rid="CR50">50</xref></sup> These pathologies have become a subject of growing concern in neuroscience, and IIT may provide useful insight about them.<sup><xref ref-type="bibr" rid="CR2">2</xref>,<xref ref-type="bibr" rid="CR45">45</xref></sup></p>
+      <p id="Par52">Although our study focused on integrated information theory, further research should incorporate other theories that have been proposed to explain consciousness. IIT continues to be debated, as the validity of its axioms on conscious phenomenology has been challenged.<sup><xref ref-type="bibr" rid="CR51">51</xref>,<xref ref-type="bibr" rid="CR52">52</xref></sup> Another widely discussed framework is global workspace theory (GWT), which attributes conscious percepts to spotlights of attention that are mediated by executive control functions.<sup><xref ref-type="bibr" rid="CR53">53</xref>,<xref ref-type="bibr" rid="CR54">54</xref></sup> GWT and IIT differ in several ways; one critical distinction is that GWT attributes consciousness to whole-brain interactions between different networks, whereas IIT focuses on how consciousness can arise due to a network’s intrinsic causal properties.</p>
+      <p id="Par53">While these frameworks present competing ideas, recent efforts have been made to study them in parallel.<sup><xref ref-type="bibr" rid="CR55">55</xref>,<xref ref-type="bibr" rid="CR56">56</xref></sup> Such developments are a promising step, as certain aspects of consciousness may be better understood with one theory over another. Incorporating several perspectives on consciousness could also allow for an approach in which differing frameworks complement, rather than contradict, one another. In conclusion, the multifaceted nature of consciousness calls for a multifaceted approach to advance our understanding of this astonishingly sophisticated concept.</p>
+    </sec>
+    <sec id="Sec8">
+      <title>Methods</title>
+      <sec id="Sec9">
+        <title>Participants and ethics</title>
+        <p id="Par54">We recruited 17 healthy volunteers (4 women; mean age 24 years, SD = 5) after posting printed advertisements throughout the university and sharing the study through word of mouth. All were native English speakers, right-handed, and had no history of neurological disorders. The attending MR technician and anesthesiologist instructed volunteers to complete safety screening questionnaires for MRI and propofol, which was followed by written informed consent forms to confirm their understanding of any potential risks involved. We remunerated volunteers for their time and participation. Ethical approval was obtained from the Health Sciences Research Ethics Board and Psychology Research Ethics Board of Western University (REB #104755).<sup><xref ref-type="bibr" rid="CR57">57</xref></sup></p>
+      </sec>
+      <sec id="Sec10">
+        <title>Administration of propofol</title>
+        <p id="Par55">In preparation for sedation, a 20 G i.v. cannula was inserted into a vein in the dorsum of the non-dominant hand and a propofol infusion system was connected to it. Intravenous propofol was administered with a Baxter AS 50 syringe pump (Singapore). To deliver propofol in an incremental, stepwise fashion, an effect-site/plasma steering algorithm was used in combination with a computer-controlled infusion pump. The infusion pump was adjusted to achieve the desired level of sedation, which was guided by target propofol concentrations predicted by the TIVATrainer (the European Society for Intravenous Anesthesia, eurosiva.eu) pharmacokinetic simulation program. This model provided target-controlled infusion by adjusting propofol infusion rates, with the goal of reaching and maintaining the target blood concentrations specified by the Marsh 3 compartment algorithm for each participant (also incorporated in the TIVATrainer software).<sup><xref ref-type="bibr" rid="CR58">58</xref></sup> Subjects underwent four conditions throughout sedation and acquisition; Awake: Propofol was not yet administered. Participants were fully awake, alert, and communicative; Mild sedation: At the start of this phase, we began propofol infusion with a target effect-site concentration of 0.6 µg/ml. Oxygen was titrated to maintain SpO<sub>2</sub> above 96%. After reaching the target effect-site concentration, we assessed the participants’ level of sedation and maintained the effect-size concentration if observations were consistent with mild sedation. Initially, participants became calmer and slow in their responses to verbal communication. Once they stopped engaging in spontaneous conversation, became sluggish in speech, and only responded to loud commands, they were classified as level 3 using the Ramsay sedation scale<sup><xref ref-type="bibr" rid="CR59">59</xref></sup> and considered mildly sedated; Deep sedation: Prior to reaching the deep sedation phase, the target effect-site concentration was increased in increments of 0.3 µg/ml and responsiveness was assessed with each increase. Once participants reached level 5 on the Ramsay scale of sedation, whereby they stopped responding to verbal commands and were unable to engage in conversation, the level of propofol was maintained. Participants remained capable of spontaneous cardiovascular function and ventilation; Recovery: Propofol administration was terminated after acquisition in deep sedation. Approximately 11 min afterwards, participants reached level 2 on the Ramsey scale, which was marked by clear and quick responses to verbal commands.</p>
+        <p id="Par56">The mean estimated effect-site propofol concentration was 2.48 (1.82–3.14) µg/ml, and the mean estimated plasma propofol concentration was 2.68 (1.92–3.44) µg/ml. The mean total mass of propofol administered was 486.58 (373.30–599.86) mg. The variability of these concentrations and doses is typical for studies of the pharmacokinetics and pharmacodynamics of propofol.<sup><xref ref-type="bibr" rid="CR60">60</xref>,<xref ref-type="bibr" rid="CR61">61</xref></sup></p>
+        <p id="Par57">Prior to initiating fMRI acquisition, three independent assessors (two anesthesiologists and one anesthesia nurse) evaluated participants with the Ramsay scale. Participants were also asked to perform a basic verbal recall memory test and a computerized (4 min) auditory target detection task, which further assessed each participant’s wakefulness/sedation level independently of the anesthesia team. Scanning commenced only after agreement on the wakefulness/sedation level among the three anesthesia assessors.</p>
+      </sec>
+      <sec id="Sec11">
+        <title>Neuroimaging data preprocessing</title>
+        <p id="Par58">Echo-planar sequencing was used to acquire functional images with the following properties: 33 slices, voxel size: 3 × 3 × 3 mm<sup>3</sup>, inter-slice gap of 25%, TR = 2000 ms, TE = 30 ms, matrix size = 64 × 64, FA = 75°. Resting-state scans had 256 vol. We also obtained an anatomical scan using a T1-weighted 3D MPRAGE sequence with the following properties: 32 channel coil, voxel size: 1 × 1× 1 mm<sup>3</sup>, TE = 4.25 ms, matrix size = 240 × 256 × 192, FA = 9°.</p>
+        <p id="Par59">T1 images were preprocessed using the following toolboxes: SPM (http:<ext-link ext-link-type="uri" xlink:href="http://www.fil.ion.ucl.ac.uk/spm">www.fil.ion.ucl.ac.uk/spm</ext-link>), FSL (<ext-link ext-link-type="uri" xlink:href="https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/">https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/</ext-link>), SimpleITK (<ext-link ext-link-type="uri" xlink:href="http://www.simpleitk.org/">http://www.simpleitk.org/</ext-link>) and Dipy (<ext-link ext-link-type="uri" xlink:href="http://nipy.org/dipy/">http://nipy.org/dipy/</ext-link>).</p>
+        <p id="Par60">Preprocessing for T1-weighted imaging consisted of the following: manual removal of the neck, removal of non-brain tissue using the FMRIB Software Library (FSL), correction of non-uniformity in low frequency intensity based on the N4 bias field correction algorithm (obtained from SimpleITK), image denoising with the nonlocal means algorithm from Dipy, and spatial normalization to standard stereotactic Montreal Neurological Institute (MNI) space using the SPM12 normalization algorithm. The three initial volumes were discarded to avoid T1 saturation effects in the fMRI data. Head motion and slice timing correction were performed using the MCFLIRT algorithm from FSL. Further artifact correction was performed using RapidArt (<ext-link ext-link-type="uri" xlink:href="https://www.nitrc.org/projects/rapidart/">https://www.nitrc.org/projects/rapidart/</ext-link>), a software that employs an outlier-based algorithm to detect head motion exceeding 3 mm in the brain signal. A rigid body transformation, which was obtained from head-motion correction with FSL, yielded six motion parameters for translation and rotation in three dimensions. The time-series were further cleaned by removing spurious variance with nuisance signal regression, which was based on the average time series of external regions of noninterest (white matter and cerebrospinal fluid).<sup><xref ref-type="bibr" rid="CR62">62</xref></sup> fMRI data were subsequently co-registered onto the T1 image and spatially normalized to the MNI space with the SPM12 normalization algorithm. Finally, spatial smoothing was applied to the fMRI data using a Gaussian kernel (8 mm full width at half maximum as implemented in SPM12).</p>
+      </sec>
+      <sec id="Sec12">
+        <title>Extraction of representative regions for RSNs</title>
+        <p id="Par61">A resting-state cortical parcellation scheme (presented by Gordan et al., 2016) was applied to the images.<sup><xref ref-type="bibr" rid="CR63">63</xref></sup> The resting-state networks (RSNs) extracted were the auditory, retrosplenial, ventral, visual, cingulo-opercular, cingulo-parietal, default mode, dorsal, sensorimotor hand, and sensorimotor mouth networks. The original list of parcels and the networks they correspond to can be found on the website of the Petersen Neuroimaging Lab, Washington School of Medicine in St. Louis (<ext-link ext-link-type="uri" xlink:href="https://sites.wustl.edu/petersenschlaggarlab/parcels-19cwpgu/">https://sites.wustl.edu/petersenschlaggarlab/parcels-19cwpgu/</ext-link>). The cortical areas were grouped into representative regions of interest (ROI), which were selected from five clusters by running a k-means algorithm over the spatial centroids of each RSN. Five regions were included in each extracted network to maintain reasonable balance between spatial resolution and computational complexity. A summary of this procedure is presented in Fig. <xref rid="Fig6" ref-type="fig">6</xref>.<fig id="Fig6"><label>Fig. 6</label><caption><title>Obtaining five representative regions for an RSN.</title><p>Starting with 40 regions in the DMN, a k-means algorithm was used to obtain five clusters, each associated with a centroid. The regions originally associated with each RSN were narrowed down to five clusters, which yielded the five regions used in our analysis. For the representative regions included in each of the 11 RSNs, see Supplementary Note <xref rid="MOESM1" ref-type="media">1</xref>; Supplementary Fig. <xref rid="MOESM1" ref-type="media">1</xref>.</p></caption><graphic xlink:href="42003_2023_5063_Fig6_HTML" id="d32e1608"/></fig></p>
+      </sec>
+      <sec id="Sec13">
+        <title>Obtaining standardized and binarized time-series</title>
+        <p id="Par62">Once the five representative regions of each network were obtained, their means were obtained. The time-series were then detrended and filtered using a bandpass Butterworth filter with cut-off frequencies set at 0.01 Hz and 0.1 Hz. We then standardized each time-series with respect to its own mean and standard-deviation. Regions with a positive z-score for a particular time point were set to 1 (above-baseline activity), and those with a negative z-score were set to 0 (below-baseline activity). This allowed for an RSN to be in any one of 32 (2 <sup><italic>N=5</italic></sup>) possible states at a certain time point. For example, the state [1, 1, 1, 1, 1] represents above-mean activity in all the regions of an RSN. The time-series array for each RSN, subject, and condition had dimensions of 245 × 5 (number of time points × number of regions).</p>
+      </sec>
+      <sec id="Sec14">
+        <title>Obtaining the transition probability matrix</title>
+        <p id="Par63">The software used to implement IIT was PyPhi, a publicly available Python module recently developed in accordance with IIT 3.0 (<ext-link ext-link-type="uri" xlink:href="https://pyphi.readthedocs.io/en/latest/">https://pyphi.readthedocs.io/en/latest/</ext-link>).<sup><xref ref-type="bibr" rid="CR21">21</xref></sup> When calculating Φ<sup>max</sup>, the principal input is the Transition Probability Matrix (TPM), which describes the mechanisms governing a system’s behavior through probabilities of transitioning between states. There are two variants of the TPM in PyPhi: 1) the state-by-state TPM describes the probability that any given state of the entire RSN transitions to another state in a subsequent time point, with dimensions: <italic>N</italic><sub><italic>states</italic></sub> × <italic>N</italic><sub><italic>states</italic></sub> (32 × 32), and 2) the state-by-node TPM describes the probability of a node flipping from (0 to 1 or 1 to 0) when the system is in a certain state, with dimensions <italic>N</italic><sub><italic>states</italic></sub> × <italic>N</italic><sub><italic>nodes</italic></sub> (32 <inline-formula id="IEq9"><alternatives><tex-math id="M17">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\times$$\end{document}</tex-math><mml:math id="M18"><mml:mo>×</mml:mo></mml:math><inline-graphic xlink:href="42003_2023_5063_Article_IEq9.gif"/></alternatives></inline-formula> 5).</p>
+        <p id="Par64">First, a state-by-state transition probability matrix was generated directly from the time series. This was accomplished by counting the number of times each state transitioned to any other state. States were assigned an index following little-endian (LE) convention, and the count of transitions was used to populate a 32 × 32 square-matrix. To normalize the matrix, each row was divided by the number of times the state corresponding to its index appeared in the time series and transitioned to another state. For example, if 5 transitions occurred from the state [1, 0, 0, 0, 0] (LE index = 1) to the state [1, 1, 0, 0, 0] (LE index = 3), the entry in row 1 and column 3 was set to equal 5. If 20 transitioned occurred from the first state to any other state in the time-series, the row was then normalized to give a value of 0.25 for this entry (i.e., 25% probability for the system to transition to state 3 when in state 1).</p>
+        <p id="Par65">The time series for each subject and condition consisted of 245 time points, which was a relatively small number considering the 32 possible states for each network. This was problematic as it yielded sparse transition probability matrices with significant inter-subject variation, resulting in spurious calculations of Φ<sup>max</sup>. This problem was addressed by concatenating (linking) the time-series of several subjects. This resulted in longer time series, which we hoped would provide sufficiently populated TPMs. While there are limitations to this approach, we hoped that concatenating would produce TPMs where the predominant mechanisms contributing to Φ are those likely to be found across several subjects and are hence intrinsic to a particular network.</p>
+      </sec>
+      <sec id="Sec15">
+        <title>Calculating average integrated information μ[Φ<sup>max</sup>]</title>
+        <p id="Par66">To calculate Φ<sup>max</sup>, the TPM of the concatenated signals was converted to a state-by-node form and then inputted to PyPhi to generate a network class. Φ is calculated for a particular subsystem <italic>S</italic> of the network class, which, along with the TPM that specifies network’s mechanisms, comprises of 1) the state of the system at a given time, which sets the necessary background conditions, and 2) the subset of nodes to be included in the subsystem, which is used for irreducibility analysis.</p>
+        <p id="Par67">Typically, Φ is computed for every possible subset of a network’s regions, and the system’s Φ<sup>max</sup> (maximally integrated conceptual information) at a certain state is defined as the maximum value obtained from the values of all subsets. As the state of the networks (and hence Φ) varies throughout its time series, we calculated Φ<sup>max</sup> for every state and obtained a weighted average, which we denote as μ[Φ<sup>max</sup>]. The contribution (weight) of each state was based on the frequency of its occurrence in the time-series. We found that the subset yielding Φ<sup>max</sup> in each RSN and condition was the one including all five regions. For computational efficiency, it was therefore possible to evaluate only the full-network subset. Each step needed to obtain μ[Φ<sup>max</sup>], starting with the time-series and the subset analysis, is summarized in Fig. <xref rid="Fig7" ref-type="fig">7</xref>.<fig id="Fig7"><label>Fig. 7</label><caption><title>Summary of procedure for computing μ[Φ<sup>max</sup>].</title><p>Each binarized time-series was used to construct a transition probability matrix (TPM) with dimensions 32 × 32, which was constructed by counting the number of times any one state transitioned to any other. Calculations of Φ are performed for a subsystem, which is defined by the state of the system and a subset of two or more nodes within it. For each state appearing in the time-series, the maximally integrated conceptual information Φ<sup>max</sup> was obtained from the subset of nodes that maximizes Φ. Finally, we count the occurrences of each state and compute the weighted average of Φ<sup>max</sup> over the time-series, which we refer to as μ[Φ<sup>max</sup>].</p></caption><graphic xlink:href="42003_2023_5063_Fig7_HTML" id="d32e1734"/></fig></p>
+      </sec>
+      <sec id="Sec16">
+        <title>Calculating causal density</title>
+        <p id="Par68">To compute Causal Density (CD), we implemented the Multivariate Granger Causality Toolbox (<ext-link ext-link-type="uri" xlink:href="https://www.mathworks.com/matlabcentral/fileexchange/78727-the-multivariate-granger-causality-mvgc-toolbox">https://www.mathworks.com/matlabcentral/fileexchange/78727-the-multivariate-granger-causality-mvgc-toolbox</ext-link>).<sup><xref ref-type="bibr" rid="CR26">26</xref></sup> For time-series data, Granger causality is obtained using a vector auto-regressive (VAR) model of order <italic>p</italic>. Each time Granger causality was calculated, an appropriate value of <italic>p</italic> was determined by testing values of <italic>p</italic> between 1 and 20; a range chosen to balance quality of fit and the potential for overfitting. For each network’s binarized time-series, we computed the bidirectional Granger causality for every pair of regions and obtained CD by averaging over the values of all pairs.</p>
+      </sec>
+      <sec id="Sec17">
+        <title>Calculating Φ*</title>
+        <p id="Par69">The Practical PHI Toolbox (<ext-link ext-link-type="uri" xlink:href="https://figshare.com/articles/code/phi_toolbox_zip/3203326">https://figshare.com/articles/code/phi_toolbox_zip/3203326</ext-link>), a publicly available MATLAB software package, was used to implement measures derived from IIT 2.0.<sup><xref ref-type="bibr" rid="CR13">13</xref>,<xref ref-type="bibr" rid="CR17">17</xref>,<xref ref-type="bibr" rid="CR24">24</xref></sup> The measure presented in the main manuscript was Φ*, or integrated information from the decoding perspective. We obtained Φ* from the same set of binarized time-series used to obtain μ[Φ<sup>max</sup>]. The procedure previously applied involves computing Φ* for the minimum information partition (MIP) out of all possible symmetric bipartitions of the system.<sup><xref ref-type="bibr" rid="CR11">11</xref>,<xref ref-type="bibr" rid="CR18">18</xref></sup> In our case, the networks consisted of five elements, so we evaluated all possible bipartitions into groups of 2 and 3 and recorded the minimum value obtained as Φ*.</p>
+      </sec>
+      <sec id="Sec18">
+        <title>Calculating average correlation</title>
+        <p id="Par70">For every pair of regions in each RSN, the Pearson correlation coefficient <italic>p</italic> was computed between the two time-series using the SciPy statistics module in Python (<ext-link ext-link-type="uri" xlink:href="https://docs.scipy.org/doc/scipy/reference/stats.html">https://docs.scipy.org/doc/scipy/reference/stats.html</ext-link>). Unlike CD, one bidirectional measure was obtained for each pair. The average of all correlations, μ[<italic>p</italic>], was then obtained by adding up all the correlations and dividing by 10 (the total number of possible pairs).</p>
+      </sec>
+      <sec id="Sec19">
+        <title>Permutations in the control procedures</title>
+        <p id="Par71">In the control procedures, the time-series were generated by concatenating all 17 subjects for each network and condition. Then, individual nodes from each of the 11 RSNs we randomly distributed into 100 control networks, ensuring all nodes within a random network came from different RSNs. We then calculated μ[Φ<sup>max</sup>] and the reference metrics for each new time-series. This was repeated for every conscious condition to obtain the four control distributions shown in Fig. <xref rid="Fig2" ref-type="fig">2</xref>.</p>
+        <p id="Par72">For the temporal control procedure, we permuted each RSN’s concatenated time-series and calculated μ[Φ<sup>max</sup>] for the new signals. All time points were shuffled individually, which completely reordered each time-series’ sequences of states and introduced a high level of disorder to the signals. We generated 50 shuffled time-series for each RSN and condition.</p>
+      </sec>
+      <sec id="Sec20">
+        <title>Magnitude and reflection of awareness level</title>
+        <p id="Par73">Our final analysis introduced two additional ways to analyze an RSN’s behavior in terms of a particular metric. The values of the four conditions were arranged into a four-element vector in the appropriate order:<disp-formula id="Equ1"><label>1</label><alternatives><tex-math id="M19">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\mathop{{{{{{\rm{M}}}}}}}\limits^{ \rightharpoonup }=[{{{{\upmu }}}}[{\Phi}^{{{\max }}}]_{{{{{{\rm{A}}}}}}}\,{{{{\upmu }}}}[{\Phi }^{{{\max }}}]_{{{{{{\rm{M}}}}}}}\,{{{\upmu }}}[{\Phi }^{{{\max }}}]_{{{{{{\rm{D}}}}}}}\,{{{\upmu }}}[{\Phi }^{{{\max }}}]_{{{{{{\rm{R}}}}}}}]$$\end{document}</tex-math><mml:math id="M20"><mml:mover accent="true"><mml:mrow><mml:mi mathvariant="normal">M</mml:mi></mml:mrow><mml:mrow><mml:mo>⇀</mml:mo></mml:mrow></mml:mover><mml:mo>=</mml:mo><mml:mrow><mml:mo>[</mml:mo><mml:mrow><mml:mi mathvariant="normal">μ</mml:mi><mml:msub><mml:mrow><mml:mrow><mml:mo>[</mml:mo><mml:mrow><mml:msup><mml:mrow><mml:mi mathvariant="normal">Φ</mml:mi></mml:mrow><mml:mrow><mml:mi>max</mml:mi></mml:mrow></mml:msup></mml:mrow><mml:mo>]</mml:mo></mml:mrow></mml:mrow><mml:mrow><mml:mi mathvariant="normal">A</mml:mi></mml:mrow></mml:msub><mml:mspace width="0.25em"/><mml:mi mathvariant="normal">μ</mml:mi><mml:msub><mml:mrow><mml:mrow><mml:mo>[</mml:mo><mml:mrow><mml:msup><mml:mrow><mml:mi mathvariant="normal">Φ</mml:mi></mml:mrow><mml:mrow><mml:mi>max</mml:mi></mml:mrow></mml:msup></mml:mrow><mml:mo>]</mml:mo></mml:mrow></mml:mrow><mml:mrow><mml:mi mathvariant="normal">M</mml:mi></mml:mrow></mml:msub><mml:mspace width="0.25em"/><mml:mi mathvariant="normal">μ</mml:mi><mml:msub><mml:mrow><mml:mrow><mml:mo>[</mml:mo><mml:mrow><mml:msup><mml:mrow><mml:mi mathvariant="normal">Φ</mml:mi></mml:mrow><mml:mrow><mml:mi>max</mml:mi></mml:mrow></mml:msup></mml:mrow><mml:mo>]</mml:mo></mml:mrow></mml:mrow><mml:mrow><mml:mi mathvariant="normal">D</mml:mi></mml:mrow></mml:msub><mml:mspace width="0.25em"/><mml:mi mathvariant="normal">μ</mml:mi><mml:msub><mml:mrow><mml:mrow><mml:mo>[</mml:mo><mml:mrow><mml:msup><mml:mrow><mml:mi mathvariant="normal">Φ</mml:mi></mml:mrow><mml:mrow><mml:mi>max</mml:mi></mml:mrow></mml:msup></mml:mrow><mml:mo>]</mml:mo></mml:mrow></mml:mrow><mml:mrow><mml:mi mathvariant="normal">R</mml:mi></mml:mrow></mml:msub></mml:mrow><mml:mo>]</mml:mo></mml:mrow></mml:math><graphic xlink:href="42003_2023_5063_Article_Equ1.gif" position="anchor"/></alternatives></disp-formula></p>
+        <p id="Par74">The overall magnitude of the network with respect to the metric was then computed by taking the square-root of the sum of all elements squared:<disp-formula id="Equ2"><label>2</label><alternatives><tex-math id="M21">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${{{\rm{M}}}}=\sqrt{{\upmu }[{{\Phi }^{\max }}]_{{{\rm{A}}}}^{2}+{\upmu }[{{\Phi }^{\max }}]_{{{\rm{M}}}}^{2}+{\upmu }[{{\Phi }^{\max }}]_{{{\rm{D}}}}^{2}+{\upmu }[{{\Phi }^{\max }}]_{{{\rm{R}}}}^{2}}$$\end{document}</tex-math><mml:math id="M22"><mml:mi mathvariant="normal">M</mml:mi><mml:mo>=</mml:mo><mml:msqrt><mml:mrow><mml:mi mathvariant="normal">μ</mml:mi><mml:msubsup><mml:mrow><mml:mrow><mml:mo>[</mml:mo><mml:mrow><mml:msup><mml:mrow><mml:mi mathvariant="normal">Φ</mml:mi></mml:mrow><mml:mrow><mml:mi>max</mml:mi></mml:mrow></mml:msup></mml:mrow><mml:mo>]</mml:mo></mml:mrow></mml:mrow><mml:mrow><mml:mi mathvariant="normal">A</mml:mi></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msubsup><mml:mo>+</mml:mo><mml:mi mathvariant="normal">μ</mml:mi><mml:msubsup><mml:mrow><mml:mrow><mml:mo>[</mml:mo><mml:mrow><mml:msup><mml:mrow><mml:mi mathvariant="normal">Φ</mml:mi></mml:mrow><mml:mrow><mml:mi>max</mml:mi></mml:mrow></mml:msup></mml:mrow><mml:mo>]</mml:mo></mml:mrow></mml:mrow><mml:mrow><mml:mi mathvariant="normal">M</mml:mi></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msubsup><mml:mo>+</mml:mo><mml:mi mathvariant="normal">μ</mml:mi><mml:msubsup><mml:mrow><mml:mrow><mml:mo>[</mml:mo><mml:mrow><mml:msup><mml:mrow><mml:mi mathvariant="normal">Φ</mml:mi></mml:mrow><mml:mrow><mml:mi>max</mml:mi></mml:mrow></mml:msup></mml:mrow><mml:mo>]</mml:mo></mml:mrow></mml:mrow><mml:mrow><mml:mi mathvariant="normal">D</mml:mi></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msubsup><mml:mo>+</mml:mo><mml:mi mathvariant="normal">μ</mml:mi><mml:msubsup><mml:mrow><mml:mrow><mml:mo>[</mml:mo><mml:mrow><mml:msup><mml:mrow><mml:mi mathvariant="normal">Φ</mml:mi></mml:mrow><mml:mrow><mml:mi>max</mml:mi></mml:mrow></mml:msup></mml:mrow><mml:mo>]</mml:mo></mml:mrow></mml:mrow><mml:mrow><mml:mi mathvariant="normal">R</mml:mi></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msubsup></mml:mrow></mml:msqrt></mml:math><graphic xlink:href="42003_2023_5063_Article_Equ2.gif" position="anchor"/></alternatives></disp-formula></p>
+        <p id="Par75">We then created a simple model vector that gradually decreases moving towards deep sedation and rebounds in recovery, which represents changes to awareness level throughout anesthesia:<disp-formula id="Equ3"><label>3</label><alternatives><tex-math id="M23">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\mathop{{{{{{\rm{E}}}}}}}\limits^{ \rightharpoonup }=\left[1,0,-1,1\right]$$\end{document}</tex-math><mml:math id="M24"><mml:mover accent="true"><mml:mrow><mml:mi mathvariant="normal">E</mml:mi></mml:mrow><mml:mrow><mml:mo>⇀</mml:mo></mml:mrow></mml:mover><mml:mo>=</mml:mo><mml:mfenced close="]" open="["><mml:mrow><mml:mn>1</mml:mn><mml:mo>,</mml:mo><mml:mn>0</mml:mn><mml:mo>,</mml:mo><mml:mo>−</mml:mo><mml:mn>1</mml:mn><mml:mo>,</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:mfenced></mml:math><graphic xlink:href="42003_2023_5063_Article_Equ3.gif" position="anchor"/></alternatives></disp-formula></p>
+        <p id="Par76">To determine the extent to which a network’s modulation pattern reflects these changes, we computed the cosine similarity <inline-formula id="IEq12"><alternatives><tex-math id="M25">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${{{{{\rm{S}}}}}}$$\end{document}</tex-math><mml:math id="M26"><mml:mi mathvariant="normal">S</mml:mi></mml:math><inline-graphic xlink:href="42003_2023_5063_Article_IEq12.gif"/></alternatives></inline-formula> between each network’s respective <inline-formula id="IEq13"><alternatives><tex-math id="M27">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\mathop{{{{{{\rm{M}}}}}}}\limits^{ \rightharpoonup }$$\end{document}</tex-math><mml:math id="M28"><mml:mover accent="true"><mml:mrow><mml:mi mathvariant="normal">M</mml:mi></mml:mrow><mml:mrow><mml:mo>⇀</mml:mo></mml:mrow></mml:mover></mml:math><inline-graphic xlink:href="42003_2023_5063_Article_IEq13.gif"/></alternatives></inline-formula> vector and <inline-formula id="IEq14"><alternatives><tex-math id="M29">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\mathop{{{{{{\rm{E}}}}}}}\limits^{ \rightharpoonup }$$\end{document}</tex-math><mml:math id="M30"><mml:mover accent="true"><mml:mrow><mml:mi mathvariant="normal">E</mml:mi></mml:mrow><mml:mrow><mml:mo>⇀</mml:mo></mml:mrow></mml:mover></mml:math><inline-graphic xlink:href="42003_2023_5063_Article_IEq14.gif"/></alternatives></inline-formula>, which effectively represents the degree to which changes in <inline-formula id="IEq15"><alternatives><tex-math id="M31">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\mathop{{{{{{\rm{M}}}}}}}\limits^{ \rightharpoonup }$$\end{document}</tex-math><mml:math id="M32"><mml:mover accent="true"><mml:mrow><mml:mi mathvariant="normal">M</mml:mi></mml:mrow><mml:mrow><mml:mo>⇀</mml:mo></mml:mrow></mml:mover></mml:math><inline-graphic xlink:href="42003_2023_5063_Article_IEq15.gif"/></alternatives></inline-formula> correspond to changes in the model, or the degree to which the two vectors are parallel.<disp-formula id="Equ4"><label>4</label><alternatives><tex-math id="M33">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${{{{{\rm{S}}}}}}=\frac{\mathop{{{{{{\rm{M}}}}}}}\limits^{ \rightharpoonup }\,\cdot \, \mathop{{{{{{\rm{E}}}}}}}\limits^{ \rightharpoonup }}{\left|\mathop{{{{{{\rm{M}}}}}}}\limits^{ \rightharpoonup }\right|\left|\mathop{{{{{{\rm{E}}}}}}}\limits^{ \rightharpoonup }\right|}$$\end{document}</tex-math><mml:math id="M34"><mml:mi mathvariant="normal">S</mml:mi><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:mover accent="true"><mml:mrow><mml:mi mathvariant="normal">M</mml:mi></mml:mrow><mml:mrow><mml:mo>⇀</mml:mo></mml:mrow></mml:mover><mml:mspace width="0.25em"/><mml:mo>⋅</mml:mo><mml:mspace width="0.25em"/><mml:mover accent="true"><mml:mrow><mml:mi mathvariant="normal">E</mml:mi></mml:mrow><mml:mrow><mml:mo>⇀</mml:mo></mml:mrow></mml:mover></mml:mrow><mml:mrow><mml:mfenced close="∣" open="∣"><mml:mrow><mml:mover accent="true"><mml:mrow><mml:mi mathvariant="normal">M</mml:mi></mml:mrow><mml:mrow><mml:mo>⇀</mml:mo></mml:mrow></mml:mover></mml:mrow></mml:mfenced><mml:mfenced close="∣" open="∣"><mml:mrow><mml:mover accent="true"><mml:mrow><mml:mi mathvariant="normal">E</mml:mi></mml:mrow><mml:mrow><mml:mo>⇀</mml:mo></mml:mrow></mml:mover></mml:mrow></mml:mfenced></mml:mrow></mml:mfrac></mml:math><graphic xlink:href="42003_2023_5063_Article_Equ4.gif" position="anchor"/></alternatives></disp-formula></p>
+        <p id="Par77">Note that the dot product represents element-by-element multiplication and addition of the two vectors. The same procedure was applied to the reference metrics (i.e., <inline-formula id="IEq16"><alternatives><tex-math id="M35">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\mathop{{{{{{\rm{M}}}}}}}\limits^{ \rightharpoonup }=[{\Phi }_{{{{{{\rm{A}}}}}}}^{* },{\Phi }_{{{{{{\rm{M}}}}}}}^{* },{\Phi }_{{{{{{\rm{D}}}}}}}^{* },\,{\Phi }_{{{{{{\rm{R}}}}}}}^{* }]$$\end{document}</tex-math><mml:math id="M36"><mml:mover accent="true"><mml:mrow><mml:mi mathvariant="normal">M</mml:mi></mml:mrow><mml:mrow><mml:mo>⇀</mml:mo></mml:mrow></mml:mover><mml:mo>=</mml:mo><mml:mrow><mml:mo>[</mml:mo><mml:mrow><mml:msubsup><mml:mrow><mml:mi mathvariant="normal">Φ</mml:mi></mml:mrow><mml:mrow><mml:mi mathvariant="normal">A</mml:mi></mml:mrow><mml:mrow><mml:mo>*</mml:mo></mml:mrow></mml:msubsup><mml:mo>,</mml:mo><mml:msubsup><mml:mrow><mml:mi mathvariant="normal">Φ</mml:mi></mml:mrow><mml:mrow><mml:mi mathvariant="normal">M</mml:mi></mml:mrow><mml:mrow><mml:mo>*</mml:mo></mml:mrow></mml:msubsup><mml:mo>,</mml:mo><mml:msubsup><mml:mrow><mml:mi mathvariant="normal">Φ</mml:mi></mml:mrow><mml:mrow><mml:mi mathvariant="normal">D</mml:mi></mml:mrow><mml:mrow><mml:mo>*</mml:mo></mml:mrow></mml:msubsup><mml:mo>,</mml:mo><mml:mspace width="0.25em"/><mml:msubsup><mml:mrow><mml:mi mathvariant="normal">Φ</mml:mi></mml:mrow><mml:mrow><mml:mi mathvariant="normal">R</mml:mi></mml:mrow><mml:mrow><mml:mo>*</mml:mo></mml:mrow></mml:msubsup></mml:mrow><mml:mo>]</mml:mo></mml:mrow></mml:math><inline-graphic xlink:href="42003_2023_5063_Article_IEq16.gif"/></alternatives></inline-formula>).</p>
+      </sec>
+      <sec id="Sec21">
+        <title>Statistics and reproducibility</title>
+        <p id="Par78">For the modulation results shown in Figs. <xref rid="Fig3" ref-type="fig">3</xref> and <xref rid="Fig4" ref-type="fig">4</xref>, we created sampling distributions of μ[Φ<sup>max</sup>] for each RSN and condition. 17 time-series were generated by concatenating the time-series from 16 subjects and leaving a different subject out each time (i.e., first time-series: concatenate subjects 2, 3, 4, … 17; second time-series: concatenate subjects 1, 3, 4, … 17, etc.). For each of these time-series, μ[Φ<sup>max</sup>] and each reference metric was computed to obtain a sample of values. The mean of this sample was taken to be the mean of the population, and the standard deviation of the sample was taken to be the standard error, which was multiplied by √17 to obtain the standard deviation of the population.<sup><xref ref-type="bibr" rid="CR64">64</xref></sup> We tested for statistically significant differences between the four conditions using Welch’s t-test.<sup><xref ref-type="bibr" rid="CR65">65</xref></sup> Since t-tests between all pairs of conditions were repeated for each RSN, we used the Benjamini–Hochberg procedure to correct for multiple comparisons.<sup><xref ref-type="bibr" rid="CR66">66</xref></sup> More methodological details and exact statistical values are provided Supplementary Note <xref rid="MOESM1" ref-type="media">6</xref>.</p>
+        <p id="Par79">To ensure the reproducibility of our results, we provide the clustered time-series (i.e., those including five regions), in Supplementary Data <xref rid="MOESM3" ref-type="media">1</xref>, as well as code used to compute μ[Φ<sup>max</sup>] (see Data Availability and Code Availability statements for more information).</p>
+      </sec>
+      <sec id="Sec22">
+        <title>Statistical test for the Markov property</title>
+        <p id="Par80">IIT 3.0 and PyPhi were formulated with the assumption that time series satisfy the Markov property and conditional independence. The Markov Property pertains to a time-series where the state at a particular time <italic>t</italic> depends only on the state of the previous time point, <italic>t</italic> <italic>−</italic> 1; dependencies on <italic>t</italic> <italic>−</italic> 2, <italic>t</italic> <italic>−</italic> 3, etc. are not allowed.<sup><xref ref-type="bibr" rid="CR21">21</xref>,<xref ref-type="bibr" rid="CR67">67</xref></sup> We implemented a statistical test that analyzes the sequences of states appearing in each time-series to detect a violation of this property.<sup><xref ref-type="bibr" rid="CR68">68</xref>–<xref ref-type="bibr" rid="CR70">70</xref></sup> Starting with the most commonly occurring three-state sequence (states <italic>a, b, c; b</italic> <italic>≠</italic> <italic>c</italic>), we recorded the occurrence of this sequence and any other three-state sequences that end with the same two states but start with a different one (i.e., a three-state sequence where the second and third states are <italic>b</italic>, <italic>c</italic>). Note that these are the states of the entire system and not individual nodes, meaning a, b, etc. are state with indices between 0 and 31. A violation of the Markov property is more likely if a particular three-state sequence occurs at a greater frequency than others that start with the same two states, or if the third state in the sequence occurs more frequently when it is preceded by the first two states.</p>
+        <p id="Par81">We assigned a label <italic>h</italic> (<italic>h</italic> = <italic>1,2, 3, …, H</italic>) to the three-state sequences mentioned above, and the following quantities were obtained for each one: Sequence count, SC: The occurrence of the three-state sequence in the time-series; Non-sequence count, NSC: The count of all two-state sequences that match the first two states of the three-state sequence but are followed by a different third state from <italic>h</italic> (<italic>a, b, e, e</italic> <italic>≠</italic> <italic>c</italic>); Total sequence count, TSC: The count of all two-state sequences that correspond to the first two states of the three-state sequence, including those followed by the third state in the sequence of interest (<italic>a, b, c; a, b, e; TSC</italic> = <italic>SC</italic> + <italic>NSC)</italic>. These quantities were then organized into a contingency table, the layout of which is given in Table <xref rid="Tab2" ref-type="table">2</xref>. Each recorded count is referred to as <italic>N</italic><sub><italic>hk</italic></sub><italic>. The</italic> index <italic>h</italic> corresponds to rows, and the index <italic>k</italic> corresponds to columns (1 or 2 for <italic>SC or NSC</italic>), <italic>N</italic><sub><italic>hT</italic></sub> represents a row total, <italic>N</italic><sub><italic>Tk</italic></sub> represents a column total, and <italic>n</italic> represents the total of all entries in the table.<table-wrap id="Tab2"><label>Table 2</label><caption><p>Contingency table layout for the Markov property test.</p></caption><table frame="hsides" rules="groups"><thead><tr><th><italic>h</italic></th><th><italic>SC</italic></th><th><italic>NSC</italic></th><th><italic>TSC</italic></th></tr></thead><tbody><tr><td>1</td><td><italic>N</italic><sub><italic>11</italic></sub></td><td><italic>N</italic><sub><italic>12</italic></sub></td><td><italic>N</italic><sub><italic>1T</italic></sub></td></tr><tr><td>2</td><td><italic>N</italic><sub><italic>21</italic></sub></td><td><italic>N</italic><sub><italic>21</italic></sub></td><td><italic>N</italic><sub><italic>2T</italic></sub></td></tr><tr><td>3</td><td><italic>N</italic><sub><italic>31</italic></sub></td><td><italic>N</italic><sub><italic>32</italic></sub></td><td><italic>N</italic><sub><italic>3T</italic></sub></td></tr><tr><td>.</td><td>.</td><td>.</td><td>.</td></tr><tr><td>.</td><td>.</td><td>.</td><td>.</td></tr><tr><td>.</td><td>.</td><td>.</td><td>.</td></tr><tr><td><italic>H</italic></td><td><italic>N</italic><sub><italic>H1</italic></sub></td><td><italic>N</italic><sub><italic>H2</italic></sub></td><td><italic>N</italic><sub><italic>HT</italic></sub></td></tr><tr><td>Total</td><td><italic>N</italic><sub><italic>T1</italic></sub></td><td><italic>N</italic><sub><italic>T2</italic></sub></td><td><italic>n</italic></td></tr></tbody></table><table-wrap-foot><p>The following contingency table was constructed to compare the most common three-state sequence to other sequences that share the same states. Rows correspond to a specific three-state sequence. The columns correspond to counts of the three-state sequences and the occurrences of the first two states within them. The values in the table were used to compute a χ<sup>2</sup> statistic, which indicated the extent to which the time-series deviates from the Markov property.</p></table-wrap-foot></table-wrap></p>
+        <p id="Par82">The table was used to compute a χ<sup>2</sup> value, which indicates the extent to which the time-series deviates from the Markov property.<sup><xref ref-type="bibr" rid="CR71">71</xref></sup> This can be seen as a comparison between the sequence distribution of the time-series to that of a sequence distribution that satisfies the Markov property (i.e., the goodness of fit of a Markovian distribution to that of the time-series). The following equation was used to compute χ<sup>2</sup> from the contingency table:<disp-formula id="Equ5"><label>5</label><alternatives><tex-math id="M37">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\chi }^{2}=\mathop {\sum }\limits_{h,k}\frac{{\left[{N}_{{hk}}-n\left({N}_{{hT}}/n\right)\left({N}_{{Tk}}/n\right)\right]}^{2}}{n\left({N}_{{hT}}/n\right)\left({N}_{{Tk}}/n\right)}$$\end{document}</tex-math><mml:math id="M38"><mml:msup><mml:mrow><mml:mi>χ</mml:mi></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msup><mml:mo>=</mml:mo><mml:munder><mml:mrow><mml:mo>∑</mml:mo></mml:mrow><mml:mrow><mml:mi>h</mml:mi><mml:mo>,</mml:mo><mml:mi>k</mml:mi></mml:mrow></mml:munder><mml:mfrac><mml:mrow><mml:msup><mml:mrow><mml:mfenced close="]" open="["><mml:mrow><mml:msub><mml:mrow><mml:mi>N</mml:mi></mml:mrow><mml:mrow><mml:mi>h</mml:mi><mml:mi>k</mml:mi></mml:mrow></mml:msub><mml:mo>−</mml:mo><mml:mi>n</mml:mi><mml:mfenced close=")" open="("><mml:mrow><mml:msub><mml:mrow><mml:mi>N</mml:mi></mml:mrow><mml:mrow><mml:mi>h</mml:mi><mml:mi>T</mml:mi></mml:mrow></mml:msub><mml:mo>/</mml:mo><mml:mi>n</mml:mi></mml:mrow></mml:mfenced><mml:mfenced close=")" open="("><mml:mrow><mml:msub><mml:mrow><mml:mi>N</mml:mi></mml:mrow><mml:mrow><mml:mi>T</mml:mi><mml:mi>k</mml:mi></mml:mrow></mml:msub><mml:mo>/</mml:mo><mml:mi>n</mml:mi></mml:mrow></mml:mfenced></mml:mrow></mml:mfenced></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msup></mml:mrow><mml:mrow><mml:mi>n</mml:mi><mml:mfenced close=")" open="("><mml:mrow><mml:msub><mml:mrow><mml:mi>N</mml:mi></mml:mrow><mml:mrow><mml:mi>h</mml:mi><mml:mi>T</mml:mi></mml:mrow></mml:msub><mml:mo>/</mml:mo><mml:mi>n</mml:mi></mml:mrow></mml:mfenced><mml:mfenced close=")" open="("><mml:mrow><mml:msub><mml:mrow><mml:mi>N</mml:mi></mml:mrow><mml:mrow><mml:mi>T</mml:mi><mml:mi>k</mml:mi></mml:mrow></mml:msub><mml:mo>/</mml:mo><mml:mi>n</mml:mi></mml:mrow></mml:mfenced></mml:mrow></mml:mfrac></mml:math><graphic xlink:href="42003_2023_5063_Article_Equ5.gif" position="anchor"/></alternatives></disp-formula></p>
+        <p id="Par83">The value obtained was then used to obtain a <italic>p</italic> value with SciPy. Significance was set to 0.05 and the number of degrees of freedom was <italic>H</italic> <italic>−</italic> 1. Any significant result indicated a significant deviation from the sequence distribution of a Markov chain, and hence a violation of the Markov property. We repeated this test for the time-series obtained by concatenating all subjects. The results obtained for each RSN’s time-series (with 17 subjects concatenated) are presented in Supplementary Note <xref rid="MOESM1" ref-type="media">5</xref>; Supplementary Table <xref rid="MOESM1" ref-type="media">2</xref>.</p>
+      </sec>
+      <sec id="Sec23">
+        <title>Test for conditional independence</title>
+        <p id="Par84">For every state-by-node TPM, there is one unique state-by-state TPM that is conditionally independent, which is outputted by PyPhi when converting a TPM from state-by-node to state-by-state form. We checked the extent to which our data met this property by taking the original state-by-state TPM, converting it to state-by-node, and then back to state-by-state. The relative distance <italic>D</italic> between the original TPM (<italic>A</italic>) and the conditionally independent TPM (<italic>B</italic>) was computed by subtracting the two arrays and calculating the Frobenius norm of the residual, which was divided by the Frobenius norm of the conditionally independent variant.<disp-formula id="Equ6"><label>6</label><alternatives><tex-math id="M39">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$D=\frac{\sqrt{\mathop{\sum}\limits_{i}\mathop{\sum}\limits_{j}{\left|{A}_{i,j}-{B}_{i,j}\right|}^{2}}}{\sqrt{\mathop{\sum}\limits_{i}\mathop{\sum}\limits_{j}{\left|{B}_{i,j}\right|}^{2}}}$$\end{document}</tex-math><mml:math id="M40"><mml:mi>D</mml:mi><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:msqrt><mml:mrow><mml:munder><mml:mrow><mml:mo>∑</mml:mo></mml:mrow><mml:mrow><mml:mi>i</mml:mi></mml:mrow></mml:munder><mml:munder><mml:mrow><mml:mo>∑</mml:mo></mml:mrow><mml:mrow><mml:mi>j</mml:mi></mml:mrow></mml:munder><mml:msup><mml:mrow><mml:mfenced close="∣" open="∣"><mml:mrow><mml:msub><mml:mrow><mml:mi>A</mml:mi></mml:mrow><mml:mrow><mml:mi>i</mml:mi><mml:mo>,</mml:mo><mml:mi>j</mml:mi></mml:mrow></mml:msub><mml:mo>−</mml:mo><mml:msub><mml:mrow><mml:mi>B</mml:mi></mml:mrow><mml:mrow><mml:mi>i</mml:mi><mml:mo>,</mml:mo><mml:mi>j</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:mfenced></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msup></mml:mrow></mml:msqrt></mml:mrow><mml:mrow><mml:msqrt><mml:mrow><mml:munder><mml:mrow><mml:mo>∑</mml:mo></mml:mrow><mml:mrow><mml:mi>i</mml:mi></mml:mrow></mml:munder><mml:munder><mml:mrow><mml:mo>∑</mml:mo></mml:mrow><mml:mrow><mml:mi>j</mml:mi></mml:mrow></mml:munder><mml:msup><mml:mrow><mml:mfenced close="∣" open="∣"><mml:mrow><mml:msub><mml:mrow><mml:mi>B</mml:mi></mml:mrow><mml:mrow><mml:mi>i</mml:mi><mml:mo>,</mml:mo><mml:mi>j</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:mfenced></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msup></mml:mrow></mml:msqrt></mml:mrow></mml:mfrac></mml:math><graphic xlink:href="42003_2023_5063_Article_Equ6.gif" position="anchor"/></alternatives></disp-formula></p>
+        <p id="Par85">Results for the conditional independence test are provided in Supplementary Note <xref rid="MOESM1" ref-type="media">5</xref>; Supplementary Table <xref rid="MOESM1" ref-type="media">1</xref>.</p>
+      </sec>
+      <sec id="Sec24">
+        <title>Reporting summary</title>
+        <p id="Par86">Further information on research design is available in the <xref rid="MOESM7" ref-type="media">Nature Portfolio Reporting Summary</xref> linked to this article.</p>
+      </sec>
+    </sec>
+    <sec sec-type="supplementary-material">
+      <title>Supplementary information</title>
+      <sec id="Sec25">
+        <p>
+<supplementary-material content-type="local-data" id="MOESM1"><media xlink:href="42003_2023_5063_MOESM1_ESM.pdf"><caption><p>Supplementary Information</p></caption></media></supplementary-material>
+<supplementary-material content-type="local-data" id="MOESM2"><media xlink:href="42003_2023_5063_MOESM2_ESM.pdf"><caption><p>Description of Additional Supplementary Files</p></caption></media></supplementary-material>
+<supplementary-material content-type="local-data" id="MOESM3"><media xlink:href="42003_2023_5063_MOESM3_ESM.zip"><caption><p>Supplementary Data 1</p></caption></media></supplementary-material>
+<supplementary-material content-type="local-data" id="MOESM4"><media xlink:href="42003_2023_5063_MOESM4_ESM.xlsx"><caption><p>Supplementary Data 2</p></caption></media></supplementary-material>
+<supplementary-material content-type="local-data" id="MOESM5"><media xlink:href="42003_2023_5063_MOESM5_ESM.xlsx"><caption><p>Supplementary Data 3</p></caption></media></supplementary-material>
+<supplementary-material content-type="local-data" id="MOESM6"><media xlink:href="42003_2023_5063_MOESM6_ESM.xlsx"><caption><p>Supplementary Data 4</p></caption></media></supplementary-material>
+<supplementary-material content-type="local-data" id="MOESM7"><media xlink:href="42003_2023_5063_MOESM7_ESM.pdf"><caption><p>Reporting Summary</p></caption></media></supplementary-material>
+</p>
+      </sec>
+    </sec>
+  </body>
+  <back>
+    <fn-group>
+      <fn>
+        <p><bold>Publisher’s note</bold> Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.</p>
+      </fn>
+    </fn-group>
+    <sec>
+      <title>Supplementary information</title>
+      <p>The online version contains supplementary material available at 10.1038/s42003-023-05063-y.</p>
+    </sec>
+    <ack>
+      <title>Acknowledgements</title>
+      <p>This work was supported by the Natural Sciences and Engineering Research Council of Canada (NSERC) discovery grant to A.S. Funding was provided through the NSERC Canada Graduate Scholarship - Master’s Program (CGS-M) to I.E.N., as well as the Canada Excellence Research Chair (CERN) to A.M.O.</p>
+    </ack>
+    <notes notes-type="author-contribution">
+      <title>Author contributions</title>
+      <p>I.E.N. conducted the principal analyses in this work and wrote the paper. N.J.M.P. and J.R. developed the base code for processing fMRI data and computing integrated information from fMRI time-series, with modifications and additions made by I.E.N. and M.C. L.N. and A.M.O. initially acquired the fMRI/propofol data used for this study and shared it with us. N.D.S. aided in writing and was involved in the critical revision of the manuscript. A.S. conceptualized the work, supervised the collaboration, and provided important guidance at all steps.</p>
+    </notes>
+    <notes notes-type="peer-review">
+      <title>Peer review</title>
+      <sec id="FPar1">
+        <title>Peer review information</title>
+        <p id="Par87"><italic>Communications Biology</italic> thanks Zirui Huang, Chen Song, Pablo Barttfeld and Shuntaro Sasai for their contribution to the peer review of this work. Primary Handling Editors: Enzo Tagliazucchi and George Inglis.</p>
+      </sec>
+    </notes>
+    <notes notes-type="data-availability">
+      <title>Data availability</title>
+      <p>The raw imaging dataset used in this study is available in Openneuro.org (<ext-link ext-link-type="uri" xlink:href="https://openneuro.org/datasets/ds003171">https://openneuro.org/datasets/ds003171</ext-link>). All processed time-series, which were used as inputs for our calculations, are provided in Supplementary Data <xref rid="MOESM3" ref-type="media">1</xref>. Supplementary Data <xref rid="MOESM4" ref-type="media">2</xref> contains source data for Fig. <xref rid="Fig2" ref-type="fig">2</xref>, Supplementary Data <xref rid="MOESM5" ref-type="media">3</xref> contains the source data for Figs. <xref rid="Fig3" ref-type="fig">3</xref> and <xref rid="Fig4" ref-type="fig">4</xref>, and Supplementary Data <xref rid="MOESM6" ref-type="media">4</xref> was used to generate Fig. <xref rid="Fig5" ref-type="fig">5</xref>.</p>
+    </notes>
+    <notes notes-type="data-availability">
+      <title>Code availability</title>
+      <p>The PyPhi module was the principal tool used to compute integrated information (<ext-link ext-link-type="uri" xlink:href="https://pyphi.readthedocs.io/en/latest/">https://pyphi.readthedocs.io/en/latest/</ext-link>). The primary functions used to compute integrated information, which were developed using the PyPhi module, have been published with open access on Zenodo.org (<ext-link ext-link-type="uri" xlink:href="https://zenodo.org/record/8033892">https://zenodo.org/record/8033892</ext-link>).<sup><xref ref-type="bibr" rid="CR72">72</xref></sup> The core functions are also shown and explained in Supplementary Note <xref rid="MOESM1" ref-type="media">2</xref>.</p>
+    </notes>
+    <notes id="FPar2" notes-type="COI-statement">
+      <title>Competing interests</title>
+      <p id="Par88">The authors declare no competing interests.</p>
+    </notes>
+    <ref-list id="Bib1">
+      <title>References</title>
+      <ref id="CR1">
+        <label>1.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zeman</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <article-title>Consciousness</article-title>
+          <source>Brain</source>
+          <year>2001</year>
+          <volume>124</volume>
+          <fpage>1263</fpage>
+          <lpage>1289</lpage>
+          <pub-id pub-id-type="doi">10.1093/brain/124.7.1263</pub-id>
+          <pub-id pub-id-type="pmid">11408323</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR2">
+        <label>2.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sanders</surname>
+              <given-names>RD</given-names>
+            </name>
+            <name>
+              <surname>Tononi</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Laureys</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Sleigh</surname>
+              <given-names>JW</given-names>
+            </name>
+            <name>
+              <surname>Warner</surname>
+              <given-names>DS</given-names>
+            </name>
+          </person-group>
+          <article-title>Unresponsiveness ≠ Unconsciousness</article-title>
+          <source>Anesthesiology</source>
+          <year>2012</year>
+          <volume>116</volume>
+          <fpage>946</fpage>
+          <lpage>959</lpage>
+          <pub-id pub-id-type="doi">10.1097/ALN.0b013e318249d0a7</pub-id>
+          <pub-id pub-id-type="pmid">22314293</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR3">
+        <label>3.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Owen</surname>
+              <given-names>AM</given-names>
+            </name>
+          </person-group>
+          <article-title>The search for consciousness</article-title>
+          <source>Neuron</source>
+          <year>2019</year>
+          <volume>102</volume>
+          <fpage>526</fpage>
+          <lpage>528</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuron.2019.03.024</pub-id>
+          <pub-id pub-id-type="pmid">31071287</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR4">
+        <label>4.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bayne</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Seth</surname>
+              <given-names>AK</given-names>
+            </name>
+            <name>
+              <surname>Massimini</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>Are there islands of awareness</article-title>
+          <source>Trends Neurosci.</source>
+          <year>2020</year>
+          <volume>43</volume>
+          <fpage>6</fpage>
+          <lpage>16</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.tins.2019.11.003</pub-id>
+          <pub-id pub-id-type="pmid">31836316</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR5">
+        <label>5.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Snider</surname>
+              <given-names>SB</given-names>
+            </name>
+            <name>
+              <surname>Edlow</surname>
+              <given-names>BL</given-names>
+            </name>
+          </person-group>
+          <article-title>MRI in disorders of consciousness</article-title>
+          <source>Curr. Opin. Neurol.</source>
+          <year>2020</year>
+          <volume>33</volume>
+          <fpage>676</fpage>
+          <lpage>683</lpage>
+          <pub-id pub-id-type="doi">10.1097/WCO.0000000000000873</pub-id>
+          <pub-id pub-id-type="pmid">33044234</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR6">
+        <label>6.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Logothetis</surname>
+              <given-names>NK</given-names>
+            </name>
+          </person-group>
+          <article-title>What we can do and what we cannot do with fMRI</article-title>
+          <source>Nature</source>
+          <year>2008</year>
+          <volume>453</volume>
+          <fpage>869</fpage>
+          <lpage>878</lpage>
+          <pub-id pub-id-type="doi">10.1038/nature06976</pub-id>
+          <pub-id pub-id-type="pmid">18548064</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR7">
+        <label>7.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Smitha</surname>
+              <given-names>K</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Resting state fMRI: a review on methods in resting state connectivity analysis and resting state networks</article-title>
+          <source>Neuroradiol. J.</source>
+          <year>2017</year>
+          <volume>30</volume>
+          <fpage>305</fpage>
+          <lpage>317</lpage>
+          <pub-id pub-id-type="doi">10.1177/1971400917697342</pub-id>
+          <pub-id pub-id-type="pmid">28353416</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR8">
+        <label>8.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Damoiseaux</surname>
+              <given-names>JS</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Consistent resting-state networks across healthy subjects</article-title>
+          <source>Proc. Natl Acad. Sci.</source>
+          <year>2006</year>
+          <volume>103</volume>
+          <fpage>13848</fpage>
+          <lpage>13853</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.0601417103</pub-id>
+          <pub-id pub-id-type="pmid">16945915</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR9">
+        <label>9.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Koch</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Massimini</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Boly</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Tononi</surname>
+              <given-names>G</given-names>
+            </name>
+          </person-group>
+          <article-title>Neural correlates of consciousness: progress and problems</article-title>
+          <source>Nat. Rev. Neurosci.</source>
+          <year>2016</year>
+          <volume>17</volume>
+          <fpage>307</fpage>
+          <lpage>321</lpage>
+          <pub-id pub-id-type="doi">10.1038/nrn.2016.22</pub-id>
+          <pub-id pub-id-type="pmid">27094080</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR10">
+        <label>10.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tononi</surname>
+              <given-names>G</given-names>
+            </name>
+          </person-group>
+          <article-title>An information integration theory of consciousness</article-title>
+          <source>BMC Neurosci.</source>
+          <year>2004</year>
+          <volume>5</volume>
+          <fpage>42</fpage>
+          <pub-id pub-id-type="doi">10.1186/1471-2202-5-42</pub-id>
+          <pub-id pub-id-type="pmid">15522121</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR11">
+        <label>11.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Balduzzi</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Tononi</surname>
+              <given-names>G</given-names>
+            </name>
+          </person-group>
+          <article-title>Integrated information in discrete dynamical systems: motivation and theoretical framework</article-title>
+          <source>PLoS Comput. Biol.</source>
+          <year>2008</year>
+          <volume>4</volume>
+          <fpage>e1000091</fpage>
+          <pub-id pub-id-type="doi">10.1371/journal.pcbi.1000091</pub-id>
+          <pub-id pub-id-type="pmid">18551165</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR12">
+        <label>12.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Oizumi</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Albantakis</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Tononi</surname>
+              <given-names>G</given-names>
+            </name>
+          </person-group>
+          <article-title>From the phenomenology to the mechanisms of consciousness: integrated information theory 3.0</article-title>
+          <source>PLoS Comput. Biol.</source>
+          <year>2014</year>
+          <volume>10</volume>
+          <fpage>e1003588</fpage>
+          <pub-id pub-id-type="doi">10.1371/journal.pcbi.1003588</pub-id>
+          <pub-id pub-id-type="pmid">24811198</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR13">
+        <label>13.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Oizumi</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Amari</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Yanagawa</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Fujii</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Tsuchiya</surname>
+              <given-names>N</given-names>
+            </name>
+          </person-group>
+          <article-title>Measuring integrated information from the decoding perspective</article-title>
+          <source>PLoS Comput. Biol.</source>
+          <year>2016</year>
+          <volume>12</volume>
+          <fpage>e1004654</fpage>
+          <pub-id pub-id-type="doi">10.1371/journal.pcbi.1004654</pub-id>
+          <pub-id pub-id-type="pmid">26796119</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR14">
+        <label>14.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tononi</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Boly</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Massimini</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Koch</surname>
+              <given-names>C</given-names>
+            </name>
+          </person-group>
+          <article-title>Integrated information theory: from consciousness to its physical substrate</article-title>
+          <source>Nat. Rev. Neurosci.</source>
+          <year>2016</year>
+          <volume>17</volume>
+          <fpage>450</fpage>
+          <lpage>461</lpage>
+          <pub-id pub-id-type="doi">10.1038/nrn.2016.44</pub-id>
+          <pub-id pub-id-type="pmid">27225071</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR15">
+        <label>15.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tononi</surname>
+              <given-names>G</given-names>
+            </name>
+          </person-group>
+          <article-title>Integrated information theory of consciousness: an updated account</article-title>
+          <source>Arch. Ital. Biol.</source>
+          <year>2012</year>
+          <volume>150</volume>
+          <fpage>56</fpage>
+          <lpage>90</lpage>
+          <pub-id pub-id-type="pmid">23165867</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR16">
+        <label>16.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Barrett</surname>
+              <given-names>AB</given-names>
+            </name>
+            <name>
+              <surname>Seth</surname>
+              <given-names>AK</given-names>
+            </name>
+          </person-group>
+          <article-title>Practical measures of integrated information for time-series data</article-title>
+          <source>PLoS Comput. Biol.</source>
+          <year>2011</year>
+          <volume>7</volume>
+          <fpage>e1001052</fpage>
+          <pub-id pub-id-type="doi">10.1371/journal.pcbi.1001052</pub-id>
+          <pub-id pub-id-type="pmid">21283779</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR17">
+        <label>17.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mediano</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Seth</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Barrett</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <article-title>Measuring integrated information: comparison of candidate measures in theory and simulation</article-title>
+          <source>Entropy</source>
+          <year>2018</year>
+          <volume>21</volume>
+          <fpage>17</fpage>
+          <pub-id pub-id-type="doi">10.3390/e21010017</pub-id>
+          <pub-id pub-id-type="pmid">33266733</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR18">
+        <label>18.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Boly</surname>
+              <given-names>M</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Stimulus set meaningfulness and neurophysiological differentiation: a functional magnetic resonance imaging study</article-title>
+          <source>PLoS One</source>
+          <year>2015</year>
+          <volume>10</volume>
+          <fpage>e0125337</fpage>
+          <pub-id pub-id-type="doi">10.1371/journal.pone.0125337</pub-id>
+          <pub-id pub-id-type="pmid">25970444</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR19">
+        <label>19.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sasai</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Boly</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Mensen</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Tononi</surname>
+              <given-names>G</given-names>
+            </name>
+          </person-group>
+          <article-title>Functional split brain in a driving/listening paradigm</article-title>
+          <source>Proc. Natl Acad. Sci.</source>
+          <year>2016</year>
+          <volume>113</volume>
+          <fpage>14444</fpage>
+          <lpage>14449</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.1613200113</pub-id>
+          <pub-id pub-id-type="pmid">27911805</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR20">
+        <label>20.</label>
+        <mixed-citation publication-type="other">Kim H., Hudetz A. G., Lee J., Mashour G. A., Lee U. Estimating the integrated information measure phi from high-density electroencephalography during states of consciousness in humans. <italic>Front. Hum. Neurosci</italic>. <bold>12</bold>, 10.3389/fnhum.2018.00042 (2018).</mixed-citation>
+      </ref>
+      <ref id="CR21">
+        <label>21.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mayner</surname>
+              <given-names>WGP</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>PyPhi: a toolbox for integrated information theory</article-title>
+          <source>PLoS Comput. Biol.</source>
+          <year>2018</year>
+          <volume>14</volume>
+          <fpage>e1006343</fpage>
+          <pub-id pub-id-type="doi">10.1371/journal.pcbi.1006343</pub-id>
+          <pub-id pub-id-type="pmid">30048445</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR22">
+        <label>22.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hudetz</surname>
+              <given-names>AG</given-names>
+            </name>
+          </person-group>
+          <article-title>General anesthesia and human brain connectivity</article-title>
+          <source>Brain Connect.</source>
+          <year>2012</year>
+          <volume>2</volume>
+          <fpage>291</fpage>
+          <lpage>302</lpage>
+          <pub-id pub-id-type="doi">10.1089/brain.2012.0107</pub-id>
+          <pub-id pub-id-type="pmid">23153273</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR23">
+        <label>23.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ku</surname>
+              <given-names>SW</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>U</given-names>
+            </name>
+            <name>
+              <surname>Noh</surname>
+              <given-names>GJ</given-names>
+            </name>
+            <name>
+              <surname>Jun</surname>
+              <given-names>IG</given-names>
+            </name>
+            <name>
+              <surname>Mashour</surname>
+              <given-names>GA</given-names>
+            </name>
+          </person-group>
+          <article-title>Preferential inhibition of frontal-to-parietal feedback connectivity is a neurophysiologic correlate of general anesthesia in surgical patients</article-title>
+          <source>PLoS One</source>
+          <year>2011</year>
+          <volume>6</volume>
+          <fpage>e25155</fpage>
+          <pub-id pub-id-type="doi">10.1371/journal.pone.0025155</pub-id>
+          <pub-id pub-id-type="pmid">21998638</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR24">
+        <label>24.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hidaka</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Oizumi</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>Fast and exact search for the partition with minimal information loss</article-title>
+          <source>PLoS One</source>
+          <year>2018</year>
+          <volume>13</volume>
+          <fpage>e0201126</fpage>
+          <pub-id pub-id-type="doi">10.1371/journal.pone.0201126</pub-id>
+          <pub-id pub-id-type="pmid">30204751</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR25">
+        <label>25.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Seth</surname>
+              <given-names>AK</given-names>
+            </name>
+            <name>
+              <surname>Barrett</surname>
+              <given-names>AB</given-names>
+            </name>
+            <name>
+              <surname>Barnett</surname>
+              <given-names>L</given-names>
+            </name>
+          </person-group>
+          <article-title>Granger causality analysis in neuroscience and neuroimaging</article-title>
+          <source>J. Neurosci.</source>
+          <year>2015</year>
+          <volume>35</volume>
+          <fpage>3293</fpage>
+          <lpage>3297</lpage>
+          <pub-id pub-id-type="doi">10.1523/JNEUROSCI.4399-14.2015</pub-id>
+          <pub-id pub-id-type="pmid">25716830</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR26">
+        <label>26.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Seth</surname>
+              <given-names>AK</given-names>
+            </name>
+          </person-group>
+          <article-title>A MATLAB toolbox for Granger causal connectivity analysis</article-title>
+          <source>J. Neurosci. Methods</source>
+          <year>2010</year>
+          <volume>186</volume>
+          <fpage>262</fpage>
+          <lpage>273</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.jneumeth.2009.11.020</pub-id>
+          <pub-id pub-id-type="pmid">19961876</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR27">
+        <label>27.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mohanty</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Sethares</surname>
+              <given-names>WA</given-names>
+            </name>
+            <name>
+              <surname>Nair</surname>
+              <given-names>VA</given-names>
+            </name>
+            <name>
+              <surname>Prabhakaran</surname>
+              <given-names>V</given-names>
+            </name>
+          </person-group>
+          <article-title>Rethinking measures of functional connectivity via feature extraction</article-title>
+          <source>Sci. Rep.</source>
+          <year>2020</year>
+          <volume>10</volume>
+          <fpage>1298</fpage>
+          <pub-id pub-id-type="doi">10.1038/s41598-020-57915-w</pub-id>
+          <pub-id pub-id-type="pmid">31992762</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR28">
+        <label>28.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Miller</surname>
+              <given-names>EK</given-names>
+            </name>
+            <name>
+              <surname>Cohen</surname>
+              <given-names>JD</given-names>
+            </name>
+          </person-group>
+          <article-title>An integrative theory of prefrontal cortex function</article-title>
+          <source>Annu Rev. Neurosci.</source>
+          <year>2001</year>
+          <volume>24</volume>
+          <fpage>167</fpage>
+          <lpage>202</lpage>
+          <pub-id pub-id-type="doi">10.1146/annurev.neuro.24.1.167</pub-id>
+          <pub-id pub-id-type="pmid">11283309</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR29">
+        <label>29.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Niendam</surname>
+              <given-names>TA</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Meta-analytic evidence for a superordinate cognitive control network subserving diverse executive functions</article-title>
+          <source>Cogn. Affect Behav. Neurosci.</source>
+          <year>2012</year>
+          <volume>12</volume>
+          <fpage>241</fpage>
+          <lpage>268</lpage>
+          <pub-id pub-id-type="doi">10.3758/s13415-011-0083-5</pub-id>
+          <pub-id pub-id-type="pmid">22282036</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR30">
+        <label>30.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dixon</surname>
+              <given-names>ML</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Heterogeneity within the frontoparietal control network and its relationship to the default and dorsal attention networks</article-title>
+          <source>Proc. Natl Acad. Sci.</source>
+          <year>2018</year>
+          <volume>115</volume>
+          <fpage>E1598</fpage>
+          <lpage>E1607</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.1715766115</pub-id>
+          <pub-id pub-id-type="pmid">29382744</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR31">
+        <label>31.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Vincent</surname>
+              <given-names>JL</given-names>
+            </name>
+            <name>
+              <surname>Kahn</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Snyder</surname>
+              <given-names>AZ</given-names>
+            </name>
+            <name>
+              <surname>Raichle</surname>
+              <given-names>ME</given-names>
+            </name>
+            <name>
+              <surname>Buckner</surname>
+              <given-names>RL</given-names>
+            </name>
+          </person-group>
+          <article-title>Evidence for a frontoparietal control system revealed by intrinsic functional connectivity</article-title>
+          <source>J. Neurophysiol.</source>
+          <year>2008</year>
+          <volume>100</volume>
+          <fpage>3328</fpage>
+          <lpage>3342</lpage>
+          <pub-id pub-id-type="doi">10.1152/jn.90355.2008</pub-id>
+          <pub-id pub-id-type="pmid">18799601</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR32">
+        <label>32.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Corbetta</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Shulman</surname>
+              <given-names>GL</given-names>
+            </name>
+          </person-group>
+          <article-title>Control of goal-directed and stimulus-driven attention in the brain</article-title>
+          <source>Nat. Rev. Neurosci.</source>
+          <year>2002</year>
+          <volume>3</volume>
+          <fpage>201</fpage>
+          <lpage>215</lpage>
+          <pub-id pub-id-type="doi">10.1038/nrn755</pub-id>
+          <pub-id pub-id-type="pmid">11994752</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR33">
+        <label>33.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Vossel</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Geng</surname>
+              <given-names>JJ</given-names>
+            </name>
+            <name>
+              <surname>Fink</surname>
+              <given-names>GR</given-names>
+            </name>
+          </person-group>
+          <article-title>Dorsal and ventral attention systems</article-title>
+          <source>Neuroscientist</source>
+          <year>2014</year>
+          <volume>20</volume>
+          <fpage>150</fpage>
+          <lpage>159</lpage>
+          <pub-id pub-id-type="doi">10.1177/1073858413494269</pub-id>
+          <pub-id pub-id-type="pmid">23835449</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR34">
+        <label>34.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Raichle</surname>
+              <given-names>ME</given-names>
+            </name>
+          </person-group>
+          <article-title>The brain’s default mode network</article-title>
+          <source>Annu Rev. Neurosci.</source>
+          <year>2015</year>
+          <volume>38</volume>
+          <fpage>433</fpage>
+          <lpage>447</lpage>
+          <pub-id pub-id-type="doi">10.1146/annurev-neuro-071013-014030</pub-id>
+          <pub-id pub-id-type="pmid">25938726</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR35">
+        <label>35.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Di</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Biswal</surname>
+              <given-names>BB</given-names>
+            </name>
+          </person-group>
+          <article-title>Modulatory interactions between the default mode network and task positive networks in resting-state</article-title>
+          <source>PeerJ</source>
+          <year>2014</year>
+          <volume>2</volume>
+          <fpage>e367</fpage>
+          <pub-id pub-id-type="doi">10.7717/peerj.367</pub-id>
+          <pub-id pub-id-type="pmid">24860698</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR36">
+        <label>36.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gordon</surname>
+              <given-names>EM</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Default-mode network streams for coupling to language and control systems</article-title>
+          <source>Proc. Natl Acad. Sci.</source>
+          <year>2020</year>
+          <volume>117</volume>
+          <fpage>17308</fpage>
+          <lpage>17319</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.2005238117</pub-id>
+          <pub-id pub-id-type="pmid">32632019</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR37">
+        <label>37.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Liu</surname>
+              <given-names>X</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Propofol attenuates low-frequency fluctuations of resting-state fMRI BOLD signal in the anterior frontal cortex upon loss of consciousness</article-title>
+          <source>Neuroimage</source>
+          <year>2017</year>
+          <volume>147</volume>
+          <fpage>295</fpage>
+          <lpage>301</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2016.12.043</pub-id>
+          <pub-id pub-id-type="pmid">27993673</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR38">
+        <label>38.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>León-Domínguez</surname>
+              <given-names>U</given-names>
+            </name>
+            <name>
+              <surname>León-Carrión</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>Prefrontal neural dynamics in consciousness</article-title>
+          <source>Neuropsychologia</source>
+          <year>2019</year>
+          <volume>131</volume>
+          <fpage>25</fpage>
+          <lpage>41</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuropsychologia.2019.05.018</pub-id>
+          <pub-id pub-id-type="pmid">31132421</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR39">
+        <label>39.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Song</surname>
+              <given-names>XX</given-names>
+            </name>
+            <name>
+              <surname>Yu</surname>
+              <given-names>BW</given-names>
+            </name>
+          </person-group>
+          <article-title>Anesthetic effects of propofol in the healthy human brain: functional imaging evidence</article-title>
+          <source>J. Anesth.</source>
+          <year>2015</year>
+          <volume>29</volume>
+          <fpage>279</fpage>
+          <lpage>288</lpage>
+          <pub-id pub-id-type="doi">10.1007/s00540-014-1889-4</pub-id>
+          <pub-id pub-id-type="pmid">25056258</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR40">
+        <label>40.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Barbosa</surname>
+              <given-names>LS</given-names>
+            </name>
+            <name>
+              <surname>Marshall</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Albantakis</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Tononi</surname>
+              <given-names>G</given-names>
+            </name>
+          </person-group>
+          <article-title>Mechanism Integrated Information</article-title>
+          <source>Entropy</source>
+          <year>2021</year>
+          <volume>23</volume>
+          <fpage>362</fpage>
+          <pub-id pub-id-type="doi">10.3390/e23030362</pub-id>
+          <pub-id pub-id-type="pmid">33803765</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR41">
+        <label>41.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gomez</surname>
+              <given-names>JD</given-names>
+            </name>
+            <name>
+              <surname>Mayner</surname>
+              <given-names>WGP</given-names>
+            </name>
+            <name>
+              <surname>Beheler-Amass</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Tononi</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Albantakis</surname>
+              <given-names>L</given-names>
+            </name>
+          </person-group>
+          <article-title>Computing integrated information (Φ) in discrete dynamical systems with multi-valued elements</article-title>
+          <source>Entropy</source>
+          <year>2020</year>
+          <volume>23</volume>
+          <fpage>6</fpage>
+          <pub-id pub-id-type="doi">10.3390/e23010006</pub-id>
+          <pub-id pub-id-type="pmid">33375068</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR42">
+        <label>42.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Golkowski</surname>
+              <given-names>D</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Changes in whole brain dynamics and connectivity patterns during sevoflurane- and propofol-induced unconsciousness identified by functional magnetic resonance imaging</article-title>
+          <source>Anesthesiology</source>
+          <year>2019</year>
+          <volume>130</volume>
+          <fpage>898</fpage>
+          <lpage>911</lpage>
+          <pub-id pub-id-type="doi">10.1097/ALN.0000000000002704</pub-id>
+          <pub-id pub-id-type="pmid">31045899</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR43">
+        <label>43.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Costumero</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Bueichekú</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Adrián-Ventura</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Ávila</surname>
+              <given-names>C</given-names>
+            </name>
+          </person-group>
+          <article-title>Opening or closing eyes at rest modulates the functional connectivity of V1 with default and salience networks</article-title>
+          <source>Sci. Rep.</source>
+          <year>2020</year>
+          <volume>10</volume>
+          <fpage>9137</fpage>
+          <pub-id pub-id-type="doi">10.1038/s41598-020-66100-y</pub-id>
+          <pub-id pub-id-type="pmid">32499585</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR44">
+        <label>44.</label>
+        <mixed-citation publication-type="other">Yoshikawa, A., et al. Heart Rate and respiration affect the functional connectivity of default mode network in resting-state functional magnetic resonance imaging. <italic>Front. Neurosci</italic>. <bold>14</bold>, 10.3389/fnins.2020.00631 (2020).</mixed-citation>
+      </ref>
+      <ref id="CR45">
+        <label>45.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tononi</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Koch</surname>
+              <given-names>C</given-names>
+            </name>
+          </person-group>
+          <article-title>Consciousness: here, there and everywhere</article-title>
+          <source>Philos. Trans. R. Soc. B Biol. Sci.</source>
+          <year>2015</year>
+          <volume>370</volume>
+          <fpage>20140167</fpage>
+          <pub-id pub-id-type="doi">10.1098/rstb.2014.0167</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR46">
+        <label>46.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Boly</surname>
+              <given-names>M</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Are the neural correlates of consciousness in the front or in the back of the cerebral cortex? Clinical and neuroimaging evidence</article-title>
+          <source>J. Neurosci.</source>
+          <year>2017</year>
+          <volume>37</volume>
+          <fpage>9603</fpage>
+          <lpage>9613</lpage>
+          <pub-id pub-id-type="doi">10.1523/JNEUROSCI.3218-16.2017</pub-id>
+          <pub-id pub-id-type="pmid">28978697</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR47">
+        <label>47.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Glover</surname>
+              <given-names>GH</given-names>
+            </name>
+          </person-group>
+          <article-title>Overview of functional magnetic resonance imaging</article-title>
+          <source>Neurosurg. Clin. N. Am.</source>
+          <year>2011</year>
+          <volume>22</volume>
+          <fpage>133</fpage>
+          <lpage>139</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.nec.2010.11.001</pub-id>
+          <pub-id pub-id-type="pmid">21435566</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR48">
+        <label>48.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lu</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Dong</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Cui</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Jiao</surname>
+              <given-names>Q</given-names>
+            </name>
+            <name>
+              <surname>Qiu</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>Quality assurance of human functional magnetic resonance imaging: a literature review</article-title>
+          <source>Quant. Imaging Med Surg.</source>
+          <year>2019</year>
+          <volume>9</volume>
+          <fpage>1147</fpage>
+          <lpage>1162</lpage>
+          <pub-id pub-id-type="doi">10.21037/qims.2019.04.18</pub-id>
+          <pub-id pub-id-type="pmid">31367569</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR49">
+        <label>49.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bastian</surname>
+              <given-names>L</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Spindle–slow oscillation coupling correlates with memory performance and connectivity changes in a hippocampal network after sleep</article-title>
+          <source>Hum. Brain Mapp.</source>
+          <year>2022</year>
+          <volume>43</volume>
+          <fpage>3923</fpage>
+          <lpage>3943</lpage>
+          <pub-id pub-id-type="doi">10.1002/hbm.25893</pub-id>
+          <pub-id pub-id-type="pmid">35488512</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR50">
+        <label>50.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Giacino</surname>
+              <given-names>JT</given-names>
+            </name>
+            <name>
+              <surname>Fins</surname>
+              <given-names>JJ</given-names>
+            </name>
+            <name>
+              <surname>Laureys</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Schiff</surname>
+              <given-names>ND</given-names>
+            </name>
+          </person-group>
+          <article-title>Disorders of consciousness after acquired brain injury: the state of the science</article-title>
+          <source>Nat. Rev. Neurol.</source>
+          <year>2014</year>
+          <volume>10</volume>
+          <fpage>99</fpage>
+          <lpage>114</lpage>
+          <pub-id pub-id-type="doi">10.1038/nrneurol.2013.279</pub-id>
+          <pub-id pub-id-type="pmid">24468878</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR51">
+        <label>51.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cerullo</surname>
+              <given-names>MA</given-names>
+            </name>
+          </person-group>
+          <article-title>The problem with Phi: a critique of integrated information theory</article-title>
+          <source>PLoS Comput. Biol.</source>
+          <year>2015</year>
+          <volume>11</volume>
+          <fpage>e1004286</fpage>
+          <pub-id pub-id-type="doi">10.1371/journal.pcbi.1004286</pub-id>
+          <pub-id pub-id-type="pmid">26378789</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR52">
+        <label>52.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Doerig</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Schurger</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Hess</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Herzog</surname>
+              <given-names>MH</given-names>
+            </name>
+          </person-group>
+          <article-title>The unfolding argument: Why IIT and other causal structure theories cannot explain consciousness</article-title>
+          <source>Conscious Cogn.</source>
+          <year>2019</year>
+          <volume>72</volume>
+          <fpage>49</fpage>
+          <lpage>59</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.concog.2019.04.002</pub-id>
+          <pub-id pub-id-type="pmid">31078047</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR53">
+        <label>53.</label>
+        <mixed-citation publication-type="other">Baars, B. J. The global workspace theory of consciousness. In: <italic>The Blackwell Companion to Consciousness</italic> (Wiley, 2017) pp. 227–242.</mixed-citation>
+      </ref>
+      <ref id="CR54">
+        <label>54.</label>
+        <mixed-citation publication-type="other">Baars, B. J., Geld, N., Kozma, R. Global Workspace Theory (GWT) and prefrontal cortex: recent developments. <italic>Front. Psychol</italic>. <bold>12</bold>. 10.3389/fpsyg.2021.749868 (2021).</mixed-citation>
+      </ref>
+      <ref id="CR55">
+        <label>55.</label>
+        <mixed-citation publication-type="other">Safron A. An Integrated World Modeling Theory (IWMT) of consciousness: combining integrated information and global neuronal workspace theories with the free energy principle and active inference framework; toward solving the hard problem and characterizing agentic causation. <italic>Front. Artif. Intell</italic>. <bold>3</bold>. 10.3389/frai.2020.00030 (2020).</mixed-citation>
+      </ref>
+      <ref id="CR56">
+        <label>56.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Melloni</surname>
+              <given-names>L</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>An adversarial collaboration protocol for testing contrasting predictions of global neuronal workspace and integrated information theory</article-title>
+          <source>PLoS One</source>
+          <year>2023</year>
+          <volume>18</volume>
+          <fpage>e0268577</fpage>
+          <pub-id pub-id-type="doi">10.1371/journal.pone.0268577</pub-id>
+          <pub-id pub-id-type="pmid">36763595</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR57">
+        <label>57.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kandeepan</surname>
+              <given-names>S</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Modeling an auditory stimulated brain under altered states of consciousness using the generalized Ising model</article-title>
+          <source>Neuroimage</source>
+          <year>2020</year>
+          <volume>223</volume>
+          <fpage>117367</fpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2020.117367</pub-id>
+          <pub-id pub-id-type="pmid">32931944</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR58">
+        <label>58.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>MARSH</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>WHITE</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>MORTON</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>KENNY</surname>
+              <given-names>GNC</given-names>
+            </name>
+          </person-group>
+          <article-title>Pharmacokinetic model driven infusion of propofol in children</article-title>
+          <source>Br. J. Anaesth.</source>
+          <year>1991</year>
+          <volume>67</volume>
+          <fpage>41</fpage>
+          <lpage>48</lpage>
+          <pub-id pub-id-type="doi">10.1093/bja/67.1.41</pub-id>
+          <pub-id pub-id-type="pmid">1859758</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR59">
+        <label>59.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ramsay</surname>
+              <given-names>MAE</given-names>
+            </name>
+            <name>
+              <surname>Savege</surname>
+              <given-names>TM</given-names>
+            </name>
+            <name>
+              <surname>Simpson</surname>
+              <given-names>BRJ</given-names>
+            </name>
+            <name>
+              <surname>Goodwin</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <article-title>Controlled sedation with alphaxalone-alphadolone</article-title>
+          <source>BMJ</source>
+          <year>1974</year>
+          <volume>2</volume>
+          <fpage>656</fpage>
+          <lpage>659</lpage>
+          <pub-id pub-id-type="doi">10.1136/bmj.2.5920.656</pub-id>
+          <pub-id pub-id-type="pmid">4835444</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR60">
+        <label>60.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Nimmo</surname>
+              <given-names>AF</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Guidelines for the safe practice of total intravenous</article-title>
+          <source>Anaesthesia</source>
+          <year>2019</year>
+          <volume>74</volume>
+          <fpage>211</fpage>
+          <lpage>224</lpage>
+          <pub-id pub-id-type="doi">10.1111/anae.14428</pub-id>
+          <pub-id pub-id-type="pmid">30378102</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR61">
+        <label>61.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sukumar</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Radhakrishnan</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Keshavan</surname>
+              <given-names>V</given-names>
+            </name>
+          </person-group>
+          <article-title>Effect site concentration of propofol at induction and recovery of anaesthesia - a correlative dose-response study</article-title>
+          <source>Indian J. Anaesth.</source>
+          <year>2018</year>
+          <volume>62</volume>
+          <fpage>263</fpage>
+          <pub-id pub-id-type="doi">10.4103/ija.IJA_670_17</pub-id>
+          <pub-id pub-id-type="pmid">29720751</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR62">
+        <label>62.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fox</surname>
+              <given-names>MD</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>From the cover: the human brain is intrinsically organized into dynamic, anticorrelated functional networks</article-title>
+          <source>Proc. Natl Acad. Sci.</source>
+          <year>2005</year>
+          <volume>102</volume>
+          <fpage>9673</fpage>
+          <lpage>9678</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.0504136102</pub-id>
+          <pub-id pub-id-type="pmid">15976020</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR63">
+        <label>63.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gordon</surname>
+              <given-names>EM</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Generation and evaluation of a cortical area parcellation from resting-state correlations</article-title>
+          <source>Cereb. Cortex</source>
+          <year>2016</year>
+          <volume>26</volume>
+          <fpage>288</fpage>
+          <lpage>303</lpage>
+          <pub-id pub-id-type="doi">10.1093/cercor/bhu239</pub-id>
+          <pub-id pub-id-type="pmid">25316338</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR64">
+        <label>64.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Altman</surname>
+              <given-names>DG</given-names>
+            </name>
+            <name>
+              <surname>Bland</surname>
+              <given-names>JM</given-names>
+            </name>
+          </person-group>
+          <article-title>Standard deviations and standard errors</article-title>
+          <source>BMJ</source>
+          <year>2005</year>
+          <volume>331</volume>
+          <fpage>903</fpage>
+          <pub-id pub-id-type="doi">10.1136/bmj.331.7521.903</pub-id>
+          <pub-id pub-id-type="pmid">16223828</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR65">
+        <label>65.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ruxton</surname>
+              <given-names>GD</given-names>
+            </name>
+          </person-group>
+          <article-title>The unequal variance t-test is an underused alternative to Student’s t-test and the Mann–Whitney U test</article-title>
+          <source>Behav. Ecol.</source>
+          <year>2006</year>
+          <volume>17</volume>
+          <fpage>688</fpage>
+          <lpage>690</lpage>
+          <pub-id pub-id-type="doi">10.1093/beheco/ark016</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR66">
+        <label>66.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Benjamini</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Hochberg</surname>
+              <given-names>Y</given-names>
+            </name>
+          </person-group>
+          <article-title>Controlling the false discovery rate: a practical and powerful approach to multiple testing</article-title>
+          <source>J. R. Stat. Soc. Ser. B.</source>
+          <year>1995</year>
+          <volume>57</volume>
+          <fpage>289</fpage>
+          <lpage>300</lpage>
+        </element-citation>
+      </ref>
+      <ref id="CR67">
+        <label>67.</label>
+        <mixed-citation publication-type="other">Krohn, S., Ostwald, D. Computing integrated information. <italic>Neurosci. Conscious</italic>. 10.1093/nc/nix017 (2017).</mixed-citation>
+      </ref>
+      <ref id="CR68">
+        <label>68.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Billingsley</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <article-title>Statistical methods in Markov Chains</article-title>
+          <source>Ann. Math. Stat.</source>
+          <year>1961</year>
+          <volume>32</volume>
+          <fpage>12</fpage>
+          <lpage>40</lpage>
+          <pub-id pub-id-type="doi">10.1214/aoms/1177705136</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR69">
+        <label>69.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Anderson</surname>
+              <given-names>TW</given-names>
+            </name>
+            <name>
+              <surname>Goodman</surname>
+              <given-names>LA</given-names>
+            </name>
+          </person-group>
+          <article-title>Statistical inference about Markov Chains</article-title>
+          <source>Ann. Math. Stat.</source>
+          <year>1957</year>
+          <volume>28</volume>
+          <fpage>89</fpage>
+          <lpage>110</lpage>
+          <pub-id pub-id-type="doi">10.1214/aoms/1177707039</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR70">
+        <label>70.</label>
+        <mixed-citation publication-type="other">Skuriat-Olenchnowska, M. <italic>Statistical Inference and Hypothesis Testing for Markov Chains with Interval Censoring</italic> (Delft University of Technology, 2005).</mixed-citation>
+      </ref>
+      <ref id="CR71">
+        <label>71.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hiscott</surname>
+              <given-names>RN</given-names>
+            </name>
+          </person-group>
+          <article-title>Chi-square tests for markov chain analysis</article-title>
+          <source>J. Int. Assoc. Math. Geol.</source>
+          <year>1981</year>
+          <volume>13</volume>
+          <fpage>69</fpage>
+          <lpage>80</lpage>
+          <pub-id pub-id-type="doi">10.1007/BF01032010</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR72">
+        <label>72.</label>
+        <mixed-citation publication-type="other">Nemirovsky, I. E., et al. An implementation of integrated information theory in resting-state fMRI. <italic>Zenodo</italic>10.5281/ZENODO.8033892 (2023).</mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

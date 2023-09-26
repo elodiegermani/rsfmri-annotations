@@ -1,0 +1,2133 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ali="http://www.niso.org/schemas/ali/1.0/" article-type="research-article" dtd-version="1.3">
+  <?properties open_access?>
+  <processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats">
+    <restricted-by>pmc</restricted-by>
+  </processing-meta>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">Sci Rep</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Sci Rep</journal-id>
+      <journal-title-group>
+        <journal-title>Scientific Reports</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">2045-2322</issn>
+      <publisher>
+        <publisher-name>Nature Publishing Group UK</publisher-name>
+        <publisher-loc>London</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">36806195</article-id>
+      <article-id pub-id-type="pmc">9941507</article-id>
+      <article-id pub-id-type="publisher-id">29321</article-id>
+      <article-id pub-id-type="doi">10.1038/s41598-023-29321-5</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Frequency-specific brain network architecture in resting-state fMRI</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" corresp="yes">
+          <name>
+            <surname>Kajimura</surname>
+            <given-names>Shogo</given-names>
+          </name>
+          <address>
+            <email>kajimura.shogo.1204@gmail.com</email>
+          </address>
+          <xref ref-type="aff" rid="Aff1">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Margulies</surname>
+            <given-names>Daniel</given-names>
+          </name>
+          <xref ref-type="aff" rid="Aff2">2</xref>
+          <xref ref-type="aff" rid="Aff3">3</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Smallwood</surname>
+            <given-names>Jonathan</given-names>
+          </name>
+          <xref ref-type="aff" rid="Aff4">4</xref>
+        </contrib>
+        <aff id="Aff1"><label>1</label><institution-wrap><institution-id institution-id-type="GRID">grid.419025.b</institution-id><institution-id institution-id-type="ISNI">0000 0001 0723 4764</institution-id><institution>Faculty of Information and Brain Sciences, </institution><institution>Kyoto Institute of Technology, </institution></institution-wrap>Matsugasaki, Sakyo-ku, Kyoto, 606-8585 Japan </aff>
+        <aff id="Aff2"><label>2</label><institution-wrap><institution-id institution-id-type="GRID">grid.4444.0</institution-id><institution-id institution-id-type="ISNI">0000 0001 2112 9282</institution-id><institution>Integrative Neuroscience and Cognition Center, </institution><institution>Centre National de la Recherche Scientifique (CNRS) and Université de Paris, </institution></institution-wrap>75006 Paris, France </aff>
+        <aff id="Aff3"><label>3</label><institution-wrap><institution-id institution-id-type="GRID">grid.4991.5</institution-id><institution-id institution-id-type="ISNI">0000 0004 1936 8948</institution-id><institution>Nuffield Department of Clinical Neurosciences, Wellcome Centre for Integrative Neuroimaging, </institution><institution>University of Oxford, </institution></institution-wrap>Oxford, OX3 9DU UK </aff>
+        <aff id="Aff4"><label>4</label><institution-wrap><institution-id institution-id-type="GRID">grid.410356.5</institution-id><institution-id institution-id-type="ISNI">0000 0004 1936 8331</institution-id><institution>Department of Psychology, </institution><institution>Queen’s University, </institution></institution-wrap>Kingston, ON Canada </aff>
+      </contrib-group>
+      <pub-date pub-type="epub">
+        <day>20</day>
+        <month>2</month>
+        <year>2023</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>20</day>
+        <month>2</month>
+        <year>2023</year>
+      </pub-date>
+      <pub-date pub-type="collection">
+        <year>2023</year>
+      </pub-date>
+      <volume>13</volume>
+      <elocation-id>2964</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>20</day>
+          <month>10</month>
+          <year>2022</year>
+        </date>
+        <date date-type="accepted">
+          <day>2</day>
+          <month>2</month>
+          <year>2023</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>© The Author(s) 2023</copyright-statement>
+        <license>
+          <ali:license_ref specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref>
+          <license-p><bold>Open Access</bold> This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article's Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article's Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit <ext-link ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</ext-link>.</license-p>
+        </license>
+      </permissions>
+      <abstract id="Abs1">
+        <p id="Par1">The analysis of brain function in resting-state network (RSN) models, ascertained through the functional connectivity pattern of resting-state functional magnetic resonance imaging (rs-fMRI), is sufficiently powerful for studying large-scale functional integration of the brain. However, in RSN-based research, the network architecture has been regarded as the same through different frequency bands. Thus, here, we aimed to examined whether the network architecture changes with frequency. The blood oxygen level-dependent (BOLD) signal was decomposed into four frequency bands—ranging from 0.007 to 0.438 Hz—and the clustering algorithm was applied to each of them. The best clustering number was selected for each frequency band based on the overlap ratio with task activation maps. The results demonstrated that resting-state BOLD signals exhibited frequency-specific network architecture; that is, the networks finely subdivided in the lower frequency bands were integrated into fewer networks in higher frequency bands rather than reconfigured, and the default mode network and networks related to perception had sufficiently strong architecture to survive in an environment with a lower signal-to-noise ratio. These findings provide a novel framework to enable improved understanding of brain function through the multiband frequency analysis of ultra-slow rs-fMRI data.</p>
+      </abstract>
+      <kwd-group kwd-group-type="npg-subject">
+        <title>Subject terms</title>
+        <kwd>Cognitive neuroscience</kwd>
+        <kwd>Social neuroscience</kwd>
+      </kwd-group>
+      <custom-meta-group>
+        <custom-meta>
+          <meta-name>issue-copyright-statement</meta-name>
+          <meta-value>© The Author(s) 2023</meta-value>
+        </custom-meta>
+      </custom-meta-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="Sec1">
+      <title>Introduction</title>
+      <p id="Par2">At rest, the brain can be organized into patterns of temporally organized activity, known as resting-state networks (RSNs), which can be visualized using functional magnetic resonance imaging (fMRI). These networks show a reasonable correspondence to the activation patterns observed when participants perform a variety of different tasks during fMRI acquisition<sup><xref ref-type="bibr" rid="CR1">1</xref>–<xref ref-type="bibr" rid="CR5">5</xref></sup>. Analysis of RSNs provides a powerful method to study large-scale functional integration of the brain<sup><xref ref-type="bibr" rid="CR6">6</xref>–<xref ref-type="bibr" rid="CR12">12</xref></sup> as well as abnormalities associated with neurological and psychiatric diseases<sup><xref ref-type="bibr" rid="CR13">13</xref>–<xref ref-type="bibr" rid="CR18">18</xref></sup>.</p>
+      <p id="Par3">Most research on resting-state functional networks has focused on an ultra-low frequency spectrum (typically around 0.01–0.1 Hz) of blood oxygen level-dependent (BOLD) signals because of their neurophysiological properties<sup><xref ref-type="bibr" rid="CR19">19</xref></sup> and the slow acquisition time resolution of fMRI. However, recent studies have shown that RSNs can also be observed in the relatively higher frequency spectrum present in the BOLD signal, that is, over 0.1 Hz up to 0.75 Hz, obtained using the multiband fMRI technique<sup><xref ref-type="bibr" rid="CR20">20</xref></sup>. Baria et al.<sup><xref ref-type="bibr" rid="CR21">21</xref></sup> studied the spatial distribution of the BOLD signal as a function of four frequency bands and identified the frequency-dependent organizational patterns for both the whole brain and for specific RSNs. They found that the power spectral density distribution for the BOLD signal shifted from low to high frequencies along the visual ventral stream and suggested that this corresponds to the hypothesized increasingly abstract processes along this hierarchy. Additionally, the power spectral density shift pattern was heterogeneous across the regions within the default mode network (DMN)<sup><xref ref-type="bibr" rid="CR19">19</xref>,<xref ref-type="bibr" rid="CR22">22</xref>,<xref ref-type="bibr" rid="CR23">23</xref></sup>, which is where all the streams converge, including the visual ventral stream<sup><xref ref-type="bibr" rid="CR2">2</xref></sup>. Frequency specificity has also been reflected in the spatial distribution<sup><xref ref-type="bibr" rid="CR24">24</xref></sup>, inter-network integration<sup><xref ref-type="bibr" rid="CR25">25</xref></sup>, and task-related modulation<sup><xref ref-type="bibr" rid="CR26">26</xref></sup> of functional networks.</p>
+      <p id="Par4">In studies of the frequency-specific function of RSNs, the network architecture is often assumed to be identical across frequency bands<sup><xref ref-type="bibr" rid="CR21">21</xref>,<xref ref-type="bibr" rid="CR24">24</xref>,<xref ref-type="bibr" rid="CR26">26</xref>–<xref ref-type="bibr" rid="CR30">30</xref></sup>, although there is a difference in whether the network architecture is pre-defined<sup><xref ref-type="bibr" rid="CR24">24</xref>,<xref ref-type="bibr" rid="CR28">28</xref>,<xref ref-type="bibr" rid="CR30">30</xref>,<xref ref-type="bibr" rid="CR31">31</xref></sup> or defined in the study<sup><xref ref-type="bibr" rid="CR21">21</xref>,<xref ref-type="bibr" rid="CR26">26</xref>,<xref ref-type="bibr" rid="CR27">27</xref>,<xref ref-type="bibr" rid="CR29">29</xref></sup>. The assumption that the RSN architecture is similar among different frequency bands could lead to misinterpretation of the results and prevent an accurate understanding of the higher frequency band. Kajimura et al.<sup><xref ref-type="bibr" rid="CR30">30</xref>,<xref ref-type="bibr" rid="CR31">31</xref></sup> reported the value of the higher frequency band; only the relatively higher frequency band data contained information regarding the initial feeling of compatibility between opposite-sex individuals. They decomposed the rs-fMRI BOLD signal into four frequency bands and applied a machine learning algorithm whose features comprised a newly defined connectome similarity, which is a vector of absolute Euclidean distances between the functional connectomes of two individuals, calculated from rs-fMRI data. As a result, the prediction compatibility was significantly higher than chance level only when the connectome similarity of the relatively highest frequency band was used as a feature. They also interpreted the result from the perspective of RSN-level contribution; however, the RSNs they applied were defined through lower frequency band data<sup><xref ref-type="bibr" rid="CR5">5</xref></sup>, and multiple comparison corrections were applied. If the RSN architecture in the higher frequency band is significantly different from that in the lower frequency band, the findings should be reinterpreted in association with the appropriate definition of the RSN architecture.</p>
+      <p id="Par5">Regarding the network architecture, some previous studies have indicated that changes in the network architecture according to frequency band while others have not. Baria et al.<sup><xref ref-type="bibr" rid="CR21">21</xref></sup> analyzed BOLD oscillations in full bandwidth and revealed that the spatial structure of power spectral density is significantly different across frequency bands both in the whole brain and in the DMN, indicating that the network architecture is reconfigured in higher frequency bands. Additionally, Wu et al.<sup><xref ref-type="bibr" rid="CR32">32</xref></sup> found a distance-frequency relationship that describes the decay of functional connectivity between distant regions in the higher frequency bands. This relationship might induce the reconfiguration of networks from distributed to local architectures in higher frequency bands. In contrast, Gohel and Biswal<sup><xref ref-type="bibr" rid="CR33">33</xref></sup> assessed the presence of RSNs across multiple frequency bands by fixing the number of networks and found that commonly known RSNs, such as the default mode, frontoparietal, dorsal attention, and visual networks, were consistently observed at multiple frequency bands. This result indicates that the RSNs found in the lower frequency bands also exist in the higher frequency bands. Independent of the competing nature of the network architecture in higher frequency bands (consistency or reconfiguration), the appropriate number of networks may vary across frequency bands. Incidentally, since the application of the maximal overlap discrete wavelet transform (MODWT) in research that examined the frequency-dependence of the brain’s functional properties for the first time<sup><xref ref-type="bibr" rid="CR34">34</xref></sup>, it has become a major method for frequency decomposition in the field of neuroimaging research<sup><xref ref-type="bibr" rid="CR35">35</xref>–<xref ref-type="bibr" rid="CR40">40</xref></sup>; this is because of its suitability for the analysis of fractal signals or signals with 1/<italic>f</italic> processes, such as those associated with resting-state fMRI time-series<sup><xref ref-type="bibr" rid="CR41">41</xref></sup>.</p>
+      <p id="Par6">The current study examined whether the frequency at which RSNs are defined influences the architecture and resolution of the systems. As the signal-to-noise ratio decreases in higher frequency bands<sup><xref ref-type="bibr" rid="CR24">24</xref></sup>, we assessed the impact of frequency by comparing the architecture of high-resolution RSNs (i.e., 17 RSNs based on Yeo et al.<sup><xref ref-type="bibr" rid="CR5">5</xref></sup>) across frequency bands. If an increase in signal-to-noise ratio disturbs the detection of network architecture, the RSNs in higher frequency bands would be fragmented and would overlap less with the RSNs in lower frequency bands. Additionally, we re-analyzed the data to which the lower frequency-based RSN architecture were originally applied in order to interpret the results in relation to higher frequency data<sup><xref ref-type="bibr" rid="CR30">30</xref>,<xref ref-type="bibr" rid="CR31">31</xref></sup>. This enabled the data to be reinterpreted with an appropriate RSN architecture and potentially unveil the actual function of brain networks in higher frequency band data. For the method of frequency decomposition and the definition of functional networks, we utilized the MODWT and the clustering algorithm with a von Mises-Fisher distribution, respectively. We utilized the clustering algorithm with a von Mises-Fisher distribution, with which Yeo et al.<sup><xref ref-type="bibr" rid="CR5">5</xref></sup> provided one of the most influential definitions of the brain’s functional network organization. This method was also used to obtain the subject-specific network organization<sup><xref ref-type="bibr" rid="CR42">42</xref></sup>.</p>
+    </sec>
+    <sec id="Sec2">
+      <title>Methods</title>
+      <sec id="Sec3">
+        <title>NKI-Rockland sample data</title>
+        <p id="Par7">We used data from the publicly available NKI-Rockland Sample (http://fcon_1000.projects.nitrc.org/indi/pro/nki.html) from the Nathan Kline Institute (NKI; Orangeburg, NY, USA) consisting of <italic>N</italic> = 140 (61 men; age = 39.2 <inline-formula id="IEq1"><alternatives><tex-math id="M1">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\pm$$\end{document}</tex-math><mml:math id="M2"><mml:mo>±</mml:mo></mml:math><inline-graphic xlink:href="41598_2023_29321_Article_IEq1.gif"/></alternatives></inline-formula> 18.8 years), of whom, 120 were right-hand dominant (assessed with the Edinburgh Handedness Questionnaire<sup><xref ref-type="bibr" rid="CR43">43</xref></sup>) and 61 reported health problems. Institutional Review Board Approval was obtained for this project at the Nathan Kline Institute (Phase I #226781 and Phase II #239708) and at Montclair State University (Phase I #000983A and Phase II #000983B). All research was performed in accordance with relevant guidelines/regulations. Written informed consent was obtained for all study participants. The fMRI data were acquired using a Siemens TrioTM 3.0 Tesla MRI scanner (Siemens, Erlangen, Germany) with an echo-planar imaging (EPI) sequence and the following parameters: repetition time (TR)/echo time (TE) = 645/30 ms, flip angle (FA) = 60<inline-formula id="IEq2"><alternatives><tex-math id="M3">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$^\circ$$\end{document}</tex-math><mml:math id="M4"><mml:msup><mml:mrow/><mml:mo>∘</mml:mo></mml:msup></mml:math><inline-graphic xlink:href="41598_2023_29321_Article_IEq2.gif"/></alternatives></inline-formula>, field of view (FOV) = 222 <inline-formula id="IEq3"><alternatives><tex-math id="M5">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\times$$\end{document}</tex-math><mml:math id="M6"><mml:mo>×</mml:mo></mml:math><inline-graphic xlink:href="41598_2023_29321_Article_IEq3.gif"/></alternatives></inline-formula> 222 mm, voxel size = 3.0 <inline-formula id="IEq4"><alternatives><tex-math id="M7">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\times$$\end{document}</tex-math><mml:math id="M8"><mml:mo>×</mml:mo></mml:math><inline-graphic xlink:href="41598_2023_29321_Article_IEq4.gif"/></alternatives></inline-formula> 3.0 <inline-formula id="IEq5"><alternatives><tex-math id="M9">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\times$$\end{document}</tex-math><mml:math id="M10"><mml:mo>×</mml:mo></mml:math><inline-graphic xlink:href="41598_2023_29321_Article_IEq5.gif"/></alternatives></inline-formula> 3.0 mm, distance factor = 0%, number of slices = 40, multiband acceleration factor = 4. Each scan session was 10 min long and comprised 900 volumes. Physiological data (cardiac and respiratory recordings) were also obtained during scanning. T1-weighted images were acquired using the following magnetization-prepared rapid gradient echo (MPRAGE) sequence: TR/TE = 1900/2.52 ms, inversion time = 900 ms, FA = 9<inline-formula id="IEq6"><alternatives><tex-math id="M11">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$^\circ$$\end{document}</tex-math><mml:math id="M12"><mml:msup><mml:mrow/><mml:mo>∘</mml:mo></mml:msup></mml:math><inline-graphic xlink:href="41598_2023_29321_Article_IEq6.gif"/></alternatives></inline-formula>, FOV = 250 <inline-formula id="IEq7"><alternatives><tex-math id="M13">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\times$$\end{document}</tex-math><mml:math id="M14"><mml:mo>×</mml:mo></mml:math><inline-graphic xlink:href="41598_2023_29321_Article_IEq7.gif"/></alternatives></inline-formula> 250 mm, voxel size = 1.0 <inline-formula id="IEq8"><alternatives><tex-math id="M15">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\times$$\end{document}</tex-math><mml:math id="M16"><mml:mo>×</mml:mo></mml:math><inline-graphic xlink:href="41598_2023_29321_Article_IEq8.gif"/></alternatives></inline-formula> 1.0 <inline-formula id="IEq9"><alternatives><tex-math id="M17">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\times$$\end{document}</tex-math><mml:math id="M18"><mml:mo>×</mml:mo></mml:math><inline-graphic xlink:href="41598_2023_29321_Article_IEq9.gif"/></alternatives></inline-formula> 1.0 mm, number of slices = 176.</p>
+      </sec>
+      <sec id="Sec4">
+        <title>fMRI data preprocessing</title>
+        <p id="Par8">All preprocessing was performed using the Data Processing Assistant for Resting-State fMRI Advanced Edition (DPARSFA; <ext-link ext-link-type="uri" xlink:href="http://www.rfmri.org/DPARSF">http://www.rfmri.org/DPARSF</ext-link>)<sup><xref ref-type="bibr" rid="CR44">44</xref></sup>, which is based on the Statistical Parametric Mapping 8 software (SPM8; <ext-link ext-link-type="uri" xlink:href="http://www.fil.ion.ucl.ac.uk/spm">http://www.fil.ion.ucl.ac.uk/spm</ext-link>) and the resting-state fMRI Data Analysis Toolkit (REST; <ext-link ext-link-type="uri" xlink:href="http://www.restfmri.net">http://www.restfmri.net</ext-link>)<sup><xref ref-type="bibr" rid="CR45">45</xref></sup>. First, the image time series for each participant was realigned using a six-parameter rigid-body transformation. We then performed slice-timing correction. All volume slices were corrected for differences in the signal acquisition time by shifting the signal measured in each slice relative to the acquisition of the slice at the first point of each TR. Individual structural (T1-weighted MPRAGE) images were co-registered to the mean functional image using a rigid-body transformation. The transformed structural images were then segmented into gray matter, white matter, and cerebrospinal fluid (CSF)<sup><xref ref-type="bibr" rid="CR46">46</xref></sup>. Thereafter, we conducted nuisance covariate regression in the native space to minimize the effects of noise caused by the cardiac and respiratory cycles, scanner drifts, and motion. Nuisance regressors consisted of six motion parameters of the current volume and the preceding volume, plus each of these values squared, average white matter, CSF signals, global signal (GSR; as there is controversy about application of the GSR, we also conducted an identical analysis of the data without GSR). Furthermore, the cardiac and respiratory cycles measured by peripheral recordings were modeled with RETROICOR<sup><xref ref-type="bibr" rid="CR47">47</xref></sup> using the MATLAB PhysIO toolbox<sup><xref ref-type="bibr" rid="CR48">48</xref></sup> and included in the nuisance covariate regression model. In brief, this method assumes that the physiological processes are quasi-periodic<sup><xref ref-type="bibr" rid="CR47">47</xref></sup> and models such processes via a Fourier expansion of physiological phases<sup><xref ref-type="bibr" rid="CR48">48</xref></sup>. This procedure enabled us to reduce the physiological noises in higher than traditional frequency ranges (cardiac fluctuation spectrum: around 0.2 Hz; respiratory spectrum: 0.1–0.15 Hz)<sup><xref ref-type="bibr" rid="CR47">47</xref>,<xref ref-type="bibr" rid="CR49">49</xref></sup>. Subsequently, the functional scans were spatially normalized to the Montreal Neurological Institute (MNI) stereotactic standard space and smoothed with a 6-mm full-width at half-maximum Gaussian kernel using the Diffeomorphic Anatomical Registration Through Exponentiated Lie Algebra (DARTEL) toolbox<sup><xref ref-type="bibr" rid="CR50">50</xref></sup>.</p>
+      </sec>
+      <sec id="Sec5">
+        <title>Parcellation of the cerebral cortex</title>
+        <p id="Par9">To reduce the computational cost of the frequency decomposition and clustering analysis approaches, we divided the Yeo’s gray matter template<sup><xref ref-type="bibr" rid="CR5">5</xref></sup> into sub-regions using the Ncut random parcellation algorithm with the python package pyClusterROI<sup><xref ref-type="bibr" rid="CR51">51</xref></sup>. We set the maximum number of regions as 3000 for the algorithm and obtained 2143 cortical sub-regions. Using this definition of sub-regions, the subsequent procedures extracted the BOLD signal from these regions instead of each voxel.</p>
+      </sec>
+      <sec id="Sec6">
+        <title>Wavelet decomposition and multiband frequency definition</title>
+        <p id="Par10">We utilized the MODWT to define the multiband frequency<sup><xref ref-type="bibr" rid="CR34">34</xref></sup>. For each participant, all BOLD signals extracted from the 2143 sub-regions were decomposed by MODWT into seven levels. The Daubechies Least Asymmetric 14 was chosen for the wavelet filter and length, based on practical guidelines<sup><xref ref-type="bibr" rid="CR52">52</xref></sup>. Then, the fast Fourier transform was applied to the decomposed signals and the minimum and maximum frequency across regions were obtained for each participant. To define participant-independent multiple frequency bands, we obtained the averages of minimum and maximum frequency for each level of decomposition. Finally, four frequency bands were defined so that the current result was comparable and applicable to previous research<sup><xref ref-type="bibr" rid="CR21">21</xref>,<xref ref-type="bibr" rid="CR24">24</xref>,<xref ref-type="bibr" rid="CR26">26</xref>–<xref ref-type="bibr" rid="CR30">30</xref></sup>: 0.007–0.052 Hz (the three lower levels were out of the scope and thus integrated), 0.052–0.106 Hz, 0.106–0.206 Hz, and 0.206–0.438 Hz (the seventh level was out of measurement range and thus discarded; the same frequency bands were defined for the data analyzed without GSR). These frequency bands were denoted as F1, F2, F3, and F4, as required. Finally, the BOLD signals without MODWT decomposition were bandpass filtered for each frequency band.</p>
+      </sec>
+      <sec id="Sec7">
+        <title>Clustering</title>
+        <p id="Par11">We applied the clustering approach of Yeo et al.<sup><xref ref-type="bibr" rid="CR5">5</xref></sup> to define the boundaries of functionally distinct cortical networks as sets of cortical regions with similar profiles of corticocortical functional connectivity in each frequency band. For each participant, we computed the Pearson’s correlation coefficient between the fMRI time series of the 2143 sub-regions and the time series of 8570 voxels that, for computational efficiency, comprised approximately 4 voxels from every sub-region instead of each individual voxel. Binarization of the correlation matrix leads to significantly better clustering results, although the algorithm appears robust to the particular choice of the threshold. Thus, we binarized the 2,143 <inline-formula id="IEq10"><alternatives><tex-math id="M19">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\times$$\end{document}</tex-math><mml:math id="M20"><mml:mo>×</mml:mo></mml:math><inline-graphic xlink:href="41598_2023_29321_Article_IEq10.gif"/></alternatives></inline-formula> 8,570 matrix of correlation coefficients for each participant by keeping the top <inline-formula id="IEq11"><alternatives><tex-math id="M21">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$x$$\end{document}</tex-math><mml:math id="M22"><mml:mi>x</mml:mi></mml:math><inline-graphic xlink:href="41598_2023_29321_Article_IEq11.gif"/></alternatives></inline-formula>% (<inline-formula id="IEq12"><alternatives><tex-math id="M23">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$x=\mathrm{1,2},\dots ,10$$\end{document}</tex-math><mml:math id="M24"><mml:mrow><mml:mi>x</mml:mi><mml:mo>=</mml:mo><mml:mrow><mml:mn>1</mml:mn><mml:mo>,</mml:mo><mml:mn>2</mml:mn></mml:mrow><mml:mo>,</mml:mo><mml:mo>⋯</mml:mo><mml:mo>,</mml:mo><mml:mn>10</mml:mn></mml:mrow></mml:math><inline-graphic xlink:href="41598_2023_29321_Article_IEq12.gif"/></alternatives></inline-formula>) of the correlation coefficients, and averaged the matrices across participants for each threshold for the subsequent clustering algorithm.</p>
+        <p id="Par12">Following Yeo et al.<sup><xref ref-type="bibr" rid="CR5">5</xref></sup>, the clustering algorithm employed in this study modeled the data with a von Mises-Fisher distribution<sup><xref ref-type="bibr" rid="CR53">53</xref></sup>. The data were modeled as 8570 points on a 2143-dimensional unit hypersphere embedded in a 2143-dimensional Euclidean space, where the distances between points were measured by their geodesic distance on the hypersphere. Clustering aims to group sub-regions that are close together on a non-Euclidean canvas (i.e., those that have similar connectivity profiles) into the same cluster. Measuring distances between points using their geodesic distances is equivalent to defining the similarity between two correlation profiles as the correlation between the correlation profiles.</p>
+      </sec>
+      <sec id="Sec8">
+        <title>Determination of the appropriate number of clusters for each frequency band</title>
+        <p id="Par13">As the clustering algorithm requires the user to select the required number of clusters a priori, we applied the algorithm with 3–20 numbers of clusters and assessed the results from the perspective of overlap with task-evoked activations provided by Neurosynth<sup><xref ref-type="bibr" rid="CR54">54</xref></sup>. As reported by previous studies<sup><xref ref-type="bibr" rid="CR55">55</xref>–<xref ref-type="bibr" rid="CR57">57</xref></sup>, this approach enables the detection of functionally reasonable network architectures. The 24-task activation masks (e.g., attention, cognitive control, learning, reward, theory of mind, and working memory; detailed in the Supplementary Information) covered 68.4% of the gray matter mask used in the current study (Fig. <xref rid="MOESM1" ref-type="media">S1</xref>). In each frequency band, the overlap score for a cluster number for each threshold was calculated as shown in Eq. (<xref rid="Equ1" ref-type="disp-formula">1</xref>):<disp-formula id="Equ1"><label>1</label><alternatives><tex-math id="M25">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${RC}_{tk}=\frac{1}{N}\sum_{i=1}^{N}\underset{j}{\mathrm{max}}\left(\frac{{Ma}_{i}\cap {Mc}_{tj}}{{Ma}_{i}}\times \frac{{Ma}_{i}\cap {Mc}_{tj}}{{Mc}_{tj}}\right) (j=1,\dots ,k)$$\end{document}</tex-math><mml:math id="M26" display="block"><mml:mrow><mml:msub><mml:mrow><mml:mi mathvariant="italic">RC</mml:mi></mml:mrow><mml:mrow><mml:mi mathvariant="italic">tk</mml:mi></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:mfrac><mml:mn>1</mml:mn><mml:mi>N</mml:mi></mml:mfrac><mml:munderover><mml:mo>∑</mml:mo><mml:mrow><mml:mi>i</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mi>N</mml:mi></mml:munderover><mml:munder><mml:mi mathvariant="normal">max</mml:mi><mml:mi>j</mml:mi></mml:munder><mml:mfenced close=")" open="("><mml:mfrac><mml:mrow><mml:msub><mml:mrow><mml:mi mathvariant="italic">Ma</mml:mi></mml:mrow><mml:mi>i</mml:mi></mml:msub><mml:mo>∩</mml:mo><mml:msub><mml:mrow><mml:mi mathvariant="italic">Mc</mml:mi></mml:mrow><mml:mrow><mml:mi mathvariant="italic">tj</mml:mi></mml:mrow></mml:msub></mml:mrow><mml:msub><mml:mrow><mml:mi mathvariant="italic">Ma</mml:mi></mml:mrow><mml:mi>i</mml:mi></mml:msub></mml:mfrac><mml:mo>×</mml:mo><mml:mfrac><mml:mrow><mml:msub><mml:mrow><mml:mi mathvariant="italic">Ma</mml:mi></mml:mrow><mml:mi>i</mml:mi></mml:msub><mml:mo>∩</mml:mo><mml:msub><mml:mrow><mml:mi mathvariant="italic">Mc</mml:mi></mml:mrow><mml:mrow><mml:mi mathvariant="italic">tj</mml:mi></mml:mrow></mml:msub></mml:mrow><mml:msub><mml:mrow><mml:mi mathvariant="italic">Mc</mml:mi></mml:mrow><mml:mrow><mml:mi mathvariant="italic">tj</mml:mi></mml:mrow></mml:msub></mml:mfrac></mml:mfenced><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mi>j</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn><mml:mo>,</mml:mo><mml:mo>⋯</mml:mo><mml:mo>,</mml:mo><mml:mi>k</mml:mi><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:mrow></mml:math><graphic xlink:href="41598_2023_29321_Article_Equ1.gif" position="anchor"/></alternatives></disp-formula>
+where <italic>Ma</italic> and <italic>Mc</italic> are the task activation mask and the mask of a cluster, respectively, and <italic>t</italic>, <italic>k</italic>, and <italic>N</italic> are the threshold value, number of clusters, and number of task activation masks (i.e., 24), respectively. The cluster number that had the largest <italic>RC</italic><sub><italic>tk</italic></sub> most frequently across the thresholds was defined as the best clustering result for each frequency. The network architecture was defined by <italic>k</italic>-means cluster analysis of the average adjacency matrices for the thresholds that had the largest <italic>RC</italic><sub><italic>tk</italic></sub> for the best cluster number.</p>
+      </sec>
+      <sec id="Sec9">
+        <title>Re-analysis of the data originally interpreted based on lower frequency-based RSN architecture</title>
+        <p id="Par14">Previously, Kajimura et al.<sup><xref ref-type="bibr" rid="CR30">30</xref>,<xref ref-type="bibr" rid="CR31">31</xref></sup> decomposed the BOLD signals from rs-fMRI into four frequency bands (0.014–0.027 Hz, 0.027–0.055 Hz, 0.055–0.109 Hz, and 0.109–0.199 Hz) and applied a machine learning algorithm to predict the compatibility of opposite-sex individuals. The predictive accuracy was significantly higher than chance only when the highest frequency-based feature was used. They also analyzed the data from the perspective of RSN-level contribution using a lower frequency-based RSN architecture<sup><xref ref-type="bibr" rid="CR5">5</xref></sup>, which comprised seven networks (the visual network, somatosensory-motor network, salience network, executive control network, DMN, limbic system, and cerebellum), and found a significant overall positive and negative contribution of the cerebellum.</p>
+        <p id="Par15">We re-analyzed the data using the newly defined RSN architecture of F3 (0.106–0.206 Hz), which is the frequency band most similar to the one with significant predictive ability identified in the original data (i.e., 0.109–0.199 Hz<sup><xref ref-type="bibr" rid="CR30">30</xref>,<xref ref-type="bibr" rid="CR31">31</xref></sup>). To test the statistical significance of the network level, laterality within network-level contributions, and inter-network-level contributions, we performed exploratory analyses using permutation tests. In the permutation tests, the ROI labels were randomized, and each index was calculated 1000 times to assess whether the result was significant under the null distribution. The network-level contribution was defined as the total number of features that contributed to the prediction in which the ROIs in a given network were involved. The laterality within the network-level contribution was defined as the difference in the number of features contributing to the prediction between the right and left hemispheres in a given network. The inter-network-level contribution was defined as the total number of features contributing to the prediction in which ROIs in a given pair of networks were involved.</p>
+      </sec>
+    </sec>
+    <sec id="Sec10">
+      <title>Results</title>
+      <sec id="Sec11">
+        <title>Appropriate number of clusters for each frequency band</title>
+        <p id="Par16">Figure <xref rid="Fig1" ref-type="fig">1</xref>a–b shows the frequency of being the best overlap score for each cluster number and each frequency band, and the averages of overlap scores across thresholds, respectively (the data without GSR are shown in Fig. <xref rid="MOESM1" ref-type="media">S2</xref>a–b). The cluster numbers that most frequently exhibited the best overlap score were 16 for F1, 13 for F2, 4 for F3, and 3 for F4 (for the data without GSR, the cluster number that most frequently had the best overlap score was 17 for F1, 15 for F2, 4 for F3, and 3 for F4).<fig id="Fig1"><label>Figure 1</label><caption><p>(<bold>a</bold>) The frequency of the best overlap score for each cluster number and each frequency band. (<bold>b</bold>) Averages of overlap scores across thresholds for each cluster number and each frequency band.</p></caption><graphic xlink:href="41598_2023_29321_Fig1_HTML" id="MO1"/></fig></p>
+      </sec>
+      <sec id="Sec12">
+        <title>RSN architecture for each frequency band</title>
+        <p id="Par17">The network architectures are illustrated in Fig. <xref rid="Fig2" ref-type="fig">2</xref> (the network structures obtained from the data without GSR are displayed in Fig. <xref rid="MOESM1" ref-type="media">S3</xref>). The most subdivided networks (i.e., networks of F1) were labeled based on similarity with the network of Yeo et al.<sup><xref ref-type="bibr" rid="CR5">5</xref></sup> and visual inspection. The line width reflects the overlap ratio between the networks. Most of the networks in F1 had an architecture similar to that of Yeo’s networks, validating the current methodology. Some exceptions were found: the DAN, DMN, and auditory networks divided into subnetworks in Yeo’s networks were merged into a single network or two subnetworks, and the limbic network was divided into the orbitofrontal cortices (OFC) and anterior temporal lobules (ATL). Additionally, one of the CEN and DMN subnetworks was merged into a single network. These differences could be explained by the difference in the frequency range with or without physiological noise regression.<fig id="Fig2"><label>Figure 2</label><caption><p>Network architectures from the data of Yeo et al.<sup><xref ref-type="bibr" rid="CR5">5</xref></sup> and each frequency band. The line width and color reflect the overlap ratio between networks. This figure was created using Matlab 2017a (Mathworks, USA) with BrainNet Viewer 1.7<sup><xref ref-type="bibr" rid="CR58">58</xref></sup> and python 3.6.0 with scikit-image 0.19.3, Pillow 9.4.0, and matplotlib 3.6.3.</p></caption><graphic xlink:href="41598_2023_29321_Fig2_HTML" id="MO2"/></fig></p>
+        <p id="Par18">In F3, the subdivided networks in F1 and F2 were mainly integrated into VN<sub>F3</sub>, SMN<sub>F3</sub>, CEN<sub>F3</sub>, and DMN<sub>F3</sub> rather than reconfigured; the DAN was integrated into VN<sub>F3</sub>, Sal + VAN subnetworks were integrated into SMN<sub>F3</sub> and CEN<sub>F3</sub>, respectively, and CEN3 + DMN3 was split into VN<sub>F3</sub>, CEN<sub>F3</sub>, and DMN<sub>F3</sub>. CEN2 was mainly absorbed by DMN<sub>F3</sub> rather than CEN<sub>F3</sub>. DMN<sub>F3</sub> absorbed not only the DMN subnetworks and CEN but also a part of the VN, Sal + VAN, OFC, and ATL. In F4, VN<sub>F4</sub> and DMN<sub>F4</sub> virtually had the same architecture as the corresponding network in F3, whereas SMN<sub>F3</sub> and CEN<sub>F3</sub> were integrated into a single network (SMN + CEN<sub>F4</sub>). These results indicate that in the higher frequency bands, the roughly divided networks integrate the functions that were processed by finely specialized subnetworks in the lower frequency bands. In addition, DMN<sub>F4</sub> was the only complex network that survived without integration with primary networks. This could reflect the geometric and biophysiological distance between the DMN and primary networks<sup><xref ref-type="bibr" rid="CR2">2</xref></sup> as well as the consistent specialized function of the DMN across different frequency bands.</p>
+      </sec>
+      <sec id="Sec13">
+        <title>Comparison of the architecture of high-resolution RSNs across frequency bands</title>
+        <p id="Par19">To assess whether the remarkably smaller number of RSNs in F3 and F4 reflect the actual functional architecture or just the lower signal-to-noise ratio of the BOLD signal in higher frequency bands<sup><xref ref-type="bibr" rid="CR24">24</xref></sup>, we compared the architecture of high-resolution RSNs (i.e., 17 RSNs based on Yeo et al.<sup><xref ref-type="bibr" rid="CR5">5</xref></sup>) across frequency bands. As shown in Fig. <xref rid="Fig3" ref-type="fig">3</xref>, most of the networks detected in F1 and F2 were also detected in F3, which indicates that at least the smaller number of RSNs in F3 was not due to the lower signal-to-noise ratio but rather reflected the functional architecture. Regarding F4, central executive and attention networks were fragmented and were not consistent with the RSNs in the other frequency bands, indicating that the lower signal-to-noise ratio disturbed the detection of the central executive and attention networks in this frequency band. In addition, the DMN and networks related to perception were detected even in F4, indicating that these networks have sufficiently strong architectures and substantial functions to survive such an environment. Furthermore, combined with the result of F3, the smallest number of RSNs might actually reflect the functional architecture rather than just a failure of detection.<fig id="Fig3"><label>Figure 3</label><caption><p>Seventeen RSNs from the data of Yeo et al.<sup><xref ref-type="bibr" rid="CR5">5</xref></sup> and each frequency band. The line width and color reflect the overlap ratio between networks. This figure was created using Matlab 2017a (Mathworks, USA) with BrainNet Viewer 1.7<sup><xref ref-type="bibr" rid="CR58">58</xref></sup> and python 3.6.0 with scikit-image 0.19.3, Pillow 9.4.0, and matplotlib 3.6.3.</p></caption><graphic xlink:href="41598_2023_29321_Fig3_HTML" id="MO3"/></fig></p>
+      </sec>
+      <sec id="Sec14">
+        <title>Re-analysis of the data originally interpreted based on lower frequency-based RSN architecture</title>
+        <p id="Par20">Regarding the network-level contribution, the cerebellum showed significant overall positive (<italic>p</italic> = 0.032 after FDR correction) and negative (<italic>p</italic> = 0.005 after FDR correction) contributions, indicating the same results as in the original study. The re-analysis revealed further significant results, which were not apparent in the original analysis using the lower frequency-based RSN architecture<sup><xref ref-type="bibr" rid="CR30">30</xref>,<xref ref-type="bibr" rid="CR31">31</xref></sup>: the significant negative contribution of the cerebellum was right hemisphere-dominant (<italic>p</italic> = 0.050 after FDR correction), and the inter-network contribution of the cerebellum and limbic areas was significantly positive (<italic>p</italic> = 0.018 after FDR correction).</p>
+      </sec>
+    </sec>
+    <sec id="Sec15">
+      <title>Discussion</title>
+      <p id="Par21">The brain functional network architecture in the resting-state ultra-low BOLD signal has undoubtedly contributed to the understanding of brain function and of abnormalities associated with neurological and psychiatric diseases. Its importance is further emphasized by the fact that network architecture-based analysis is frequently used in contemporary research on the frequency-specific properties of BOLD signals. However, previous studies have been conducted on the premise that network architecture is identical across frequency bands, and the possibility that the network architecture itself is frequency-specific has never been questioned. The current research is the first to demonstrate that:<list list-type="order"><list-item><p id="Par22">The resting-state BOLD signals that split into multiple frequency bands have frequency-specific network architecture; that is, the subnetworks finely subdivided for the lower frequency bands are integrated into fewer networks for relatively higher frequency bands rather than reconfigured.</p></list-item><list-item><p id="Par23">The DMN and networks related to perception have sufficiently strong architecture to survive the increasing signal-to-noise ratio following an increase in frequency.</p></list-item><list-item><p id="Par24">The smaller number of RSNs in the higher frequency bands may reflect the functional architecture rather than the lower signal-to-noise ratio.</p></list-item><list-item><p id="Par25">The appropriate RSN architecture for higher frequency bands revealed the higher frequency-specific function that was not observed when applying the lower frequency-based RSN architecture.</p></list-item></list></p>
+      <p id="Par26">Although there has been increasing interest in the multiband information of resting-state BOLD signals<sup><xref ref-type="bibr" rid="CR21">21</xref>,<xref ref-type="bibr" rid="CR24">24</xref>,<xref ref-type="bibr" rid="CR26">26</xref>–<xref ref-type="bibr" rid="CR29">29</xref></sup>, the quality of information included in the higher frequency bands remains largely unknown. The current study is the first to reveal that there are also network architectures in the higher frequency bands, which are comparable with those in the lower frequency bands; a relatively high-frequency resting-state BOLD signal, which has been neglected in most rs-fMRI research, has sufficient function-related information to detect meaningful networks and is worth further investigation to better understand brain function and abnormalities associated with neurological and psychiatric diseases from the perspective of brain network architecture.</p>
+      <p id="Par27">The elucidation of network architecture by the current study has the potential to help improve future research on multiple frequency band analysis. The results provide a standard for the selection of networks of interest and inter-network interactions for the corresponding frequency bands. In addition, as the networks in higher frequency bands (i.e., the visual network, SMN, CEN, and DMN) have comparable or corresponding architectures with subdivided networks in lower frequency bands, it would be beneficial to define an identical network architecture through all frequency bands to compare the functional properties across frequency bands. This may improve the clarity of interpretation of the results. As the optimal number of networks was determined through fit to the activation maps of various tasks, the significant decrease in network resolution in the higher frequency bands indicates that there is insufficient task-related information to enable improvement of the fit to task activation. In such instances, applying the network architecture with appropriate resolution to higher frequency band data may reduce the likelihood of false positive results or the misinterpretation of meaningful results that may occur when a finely subdivided network architecture is applied.</p>
+      <p id="Par28">Only the DMN remained independent from the primary networks (i.e., the visual network and SMN), even in the highest frequency band. Although it is unclear to what extent the convergence of network architecture in higher frequency bands is affected by the decrement of the signal-to-noise ratio, the observed results are capable of reflecting neurophysiological constraints. The boundary between the DMN and primary networks corresponds to a geometric property<sup><xref ref-type="bibr" rid="CR2">2</xref></sup>; core regions of the DMN (e.g., the medial prefrontal cortex, posterior cingulate cortex, and angular gyrus) are equidistant from the primary regions and at the other end in the principal gradient of functional connectivity in the low-frequency band<sup><xref ref-type="bibr" rid="CR2">2</xref></sup>. Considering the consistent presence of the DMN across frequency bands, the resting-state BOLD signal might embed information processing of the DMN for various complex socio-cognitive functions across a broad range of frequencies. Future studies are required to better understand the exact DMN function from the perspective of multiband frequencies.</p>
+      <p id="Par29">The pattern of network convergence, that is, finely subdivided networks in lower frequency bands, was integrated with geometrically adjacent networks in higher frequency bands, supporting the distance-frequency relationship that describes the decay of functional connectivity between distant regions in higher frequency bands<sup><xref ref-type="bibr" rid="CR32">32</xref></sup>. Regarding the two networks associated with Sal + VAN in F2, one was composed of regions around the central sulcus and was integrated with the adjacent SMN, while the other was composed of prefrontal regions and was integrated with the adjacent CEN in F3. The DAN in F2 was also integrated with the adjacent visual network. Referring to the hypothesis advocated by Wu et al.<sup><xref ref-type="bibr" rid="CR32">32</xref></sup>, the convergence might be attributed to a larger attenuation of synchrony of brain regions separated by longer distances and/or connected with more synaptic steps. It would be beneficial to investigate the relationship between this geometric/physiological constraint and the frequency-specific function of networks in future studies.</p>
+      <p id="Par30">The current study also demonstrated that re-analyzing previous data on higher frequency functions with appropriate RSN architecture unveils the higher frequency-specific functions that were not observed when applying the lower frequency-based RSN architecture. In previous studies on the frequency-specific function of RSNs, the network architecture was regarded as identical across frequency bands<sup><xref ref-type="bibr" rid="CR21">21</xref>,<xref ref-type="bibr" rid="CR24">24</xref>,<xref ref-type="bibr" rid="CR26">26</xref>–<xref ref-type="bibr" rid="CR30">30</xref></sup>. Both previous and future research could benefit from the frequency-specific RSN architectures found in the current study, as they could reveal higher frequency-specific network functions that might be involved in important socio-cognitive functions<sup><xref ref-type="bibr" rid="CR30">30</xref>,<xref ref-type="bibr" rid="CR31">31</xref></sup>. However, to maximize the benefits, it is necessary to establish a frequency-specific RSN architecture through the conduct of replication studies in other populations.</p>
+      <p id="Par31">Although the network architecture in the higher frequency bands (F3 and F4) was almost the same between the data with and without GSR, a difference in the lower frequency bands (F1 and F2) was noticeable. Visual inspection indicated that the network architecture of F1 was more stable in the data with GSR (Fig. <xref rid="Fig2" ref-type="fig">2</xref>) than in those without GSR (Fig. <xref rid="MOESM1" ref-type="media">S3</xref>). In the architecture of F1 detected by the data excluding GSR, the networks that correspond to the DMN<sub>2</sub> and CEN<sub>2</sub> of Yeo et al.<sup><xref ref-type="bibr" rid="CR5">5</xref></sup> are partially asymmetric and, thus, appear unstable. This indicates that GSR enabled us to obtain better network architecture. The purpose of GSR is to remove the global signals that contain many confounds arising from motion, cardiac and respiratory cycles, arterial CO<sub>2</sub> concentration, blood pressure/cerebral autoregulation, and vasomotion<sup><xref ref-type="bibr" rid="CR59">59</xref>,<xref ref-type="bibr" rid="CR60">60</xref></sup>. Of note, GSR enhances the detection of system-specific (anti-)correlations<sup><xref ref-type="bibr" rid="CR61">61</xref></sup>, which might differentiate the network detection results. Although a previous study, which used the same clustering method as did the current study, did not apply GSR<sup><xref ref-type="bibr" rid="CR5">5</xref></sup>, their sample size was far larger than that of the current study (1000 vs. 140). Thus, the use of GSR may compensate for small sample sizes.</p>
+      <p id="Par32">Although the MODWT is often used for the frequency decomposition of fMRI time-series due to the compatibility between the two<sup><xref ref-type="bibr" rid="CR34">34</xref>–<xref ref-type="bibr" rid="CR40">40</xref></sup>, the selection of frequency bands is determined methodologically and not on a physiological basis. This is a limitation of our study. Indeed, the RSN architecture was similar between F1 and F2, indicating that they carry largely overlapping information. Further research on the higher frequency components of the BOLD signal could reveal more physiologically plausible frequency bands in order to maximize the obtainable physiological information.</p>
+      <p id="Par33">In conclusion, this study investigated the frequency-specific network architectures of multiband rs-fMRI data, revealing that finely divided networks in lower frequency bands were integrated into a few networks that maintained a functional structure. In particular, the DMN was independent of primary networks in the highest frequency bands, indicating that DMN information processing was associated with a wide range of functions distributed across frequency bands. These findings emphasize the importance of the appropriate incorporation of information from the higher frequency bands of ultra-slow rs-fMRI data, which has been discarded in most rs-fMRI studies. Our study also provides a novel framework for multiband frequency analysis that facilitates a better understanding of brain function.</p>
+    </sec>
+    <sec sec-type="supplementary-material">
+      <title>Supplementary Information</title>
+      <sec id="Sec16">
+        <p>
+<supplementary-material content-type="local-data" id="MOESM1"><media xlink:href="41598_2023_29321_MOESM1_ESM.docx"><caption><p>Supplementary Information.</p></caption></media></supplementary-material></p>
+      </sec>
+    </sec>
+  </body>
+  <back>
+    <fn-group>
+      <fn>
+        <p>
+          <bold>Publisher's note</bold>
+        </p>
+        <p>Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.</p>
+      </fn>
+    </fn-group>
+    <sec>
+      <title>Supplementary Information</title>
+      <p>The online version contains supplementary material available at 10.1038/s41598-023-29321-5.</p>
+    </sec>
+    <notes notes-type="author-contribution">
+      <title>Author contributions</title>
+      <p>Conceptualization: S.K. Analysis: S.K. Writing manuscript: S.K. and J.S. Revising manuscript: all authors.</p>
+    </notes>
+    <notes notes-type="data-availability">
+      <title>Data availability</title>
+      <p>The datasets (NKI-Rockland Sample) used during the current study provided by the Nathan Kline Institute (NKI, NY, USA) are available in the homepage (http://fcon_1000.projects.nitrc.org/indi/pro/nki.html).</p>
+    </notes>
+    <notes id="FPar1" notes-type="COI-statement">
+      <title>Competing interests</title>
+      <p id="Par34">The authors declare no competing interests.</p>
+    </notes>
+    <ref-list id="Bib1">
+      <title>References</title>
+      <ref id="CR1">
+        <label>1.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bertolero</surname>
+              <given-names>MA</given-names>
+            </name>
+            <name>
+              <surname>Yeo</surname>
+              <given-names>BTT</given-names>
+            </name>
+            <name>
+              <surname>D’Esposito</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>The modular and integrative functional architecture of the human brain</article-title>
+          <source>Proc. Natl. Acad. Sci. USA</source>
+          <year>2015</year>
+          <volume>112</volume>
+          <issue>49</issue>
+          <fpage>E6798</fpage>
+          <lpage>E6807</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.1510619112</pub-id>
+          <pub-id pub-id-type="pmid">26598686</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR2">
+        <label>2.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Margulies</surname>
+              <given-names>DS</given-names>
+            </name>
+            <name>
+              <surname>Ghosh</surname>
+              <given-names>SS</given-names>
+            </name>
+            <name>
+              <surname>Goulas</surname>
+              <given-names>A</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Situating the default-mode network along a principal gradient of macroscale cortical organization</article-title>
+          <source>Proc. Natl. Acad. Sci. USA</source>
+          <year>2016</year>
+          <volume>113</volume>
+          <issue>44</issue>
+          <fpage>12574</fpage>
+          <lpage>12579</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.1608282113</pub-id>
+          <pub-id pub-id-type="pmid">27791099</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR3">
+        <label>3.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Power</surname>
+              <given-names>JD</given-names>
+            </name>
+            <name>
+              <surname>Cohen</surname>
+              <given-names>AL</given-names>
+            </name>
+            <name>
+              <surname>Nelson</surname>
+              <given-names>SM</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Article functional network organization of the human brain</article-title>
+          <source>Neuron</source>
+          <year>2011</year>
+          <volume>72</volume>
+          <issue>4</issue>
+          <fpage>665</fpage>
+          <lpage>678</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuron.2011.09.006</pub-id>
+          <pub-id pub-id-type="pmid">22099467</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR4">
+        <label>4.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Smith</surname>
+              <given-names>SM</given-names>
+            </name>
+            <name>
+              <surname>Fox</surname>
+              <given-names>PT</given-names>
+            </name>
+            <name>
+              <surname>Miller</surname>
+              <given-names>KL</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Correspondence of the brain’s functional architecture during activation and rest</article-title>
+          <source>Proc. Natl. Acad. Sci. USA</source>
+          <year>2009</year>
+          <volume>106</volume>
+          <issue>31</issue>
+          <fpage>13040</fpage>
+          <lpage>13045</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.0905267106</pub-id>
+          <pub-id pub-id-type="pmid">19620724</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR5">
+        <label>5.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yeo</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Krienen</surname>
+              <given-names>FM</given-names>
+            </name>
+            <name>
+              <surname>Sepulcre</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The organization of the human cerebral cortex estimated by intrinsic functional connectivity</article-title>
+          <source>J. Neurophysiol.</source>
+          <year>2011</year>
+          <volume>106</volume>
+          <issue>3</issue>
+          <fpage>1125</fpage>
+          <lpage>1165</lpage>
+          <pub-id pub-id-type="doi">10.1152/jn.00338.2011</pub-id>
+          <pub-id pub-id-type="pmid">21653723</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR6">
+        <label>6.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cole</surname>
+              <given-names>MW</given-names>
+            </name>
+            <name>
+              <surname>Bassett</surname>
+              <given-names>DS</given-names>
+            </name>
+            <name>
+              <surname>Power</surname>
+              <given-names>JD</given-names>
+            </name>
+            <name>
+              <surname>Braver</surname>
+              <given-names>TS</given-names>
+            </name>
+            <name>
+              <surname>Petersen</surname>
+              <given-names>SE</given-names>
+            </name>
+          </person-group>
+          <article-title>Intrinsic and task-evoked network architectures of the human brain</article-title>
+          <source>Neuron</source>
+          <year>2014</year>
+          <volume>83</volume>
+          <issue>1</issue>
+          <fpage>238</fpage>
+          <lpage>251</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuron.2014.05.014</pub-id>
+          <pub-id pub-id-type="pmid">24991964</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR7">
+        <label>7.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fox</surname>
+              <given-names>MD</given-names>
+            </name>
+            <name>
+              <surname>Snyder</surname>
+              <given-names>AZ</given-names>
+            </name>
+            <name>
+              <surname>Vincent</surname>
+              <given-names>JL</given-names>
+            </name>
+            <name>
+              <surname>Corbetta</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Van Essen</surname>
+              <given-names>DC</given-names>
+            </name>
+            <name>
+              <surname>Raichle</surname>
+              <given-names>ME</given-names>
+            </name>
+          </person-group>
+          <article-title>The human brain is intrinsically organized into dynamic, anticorrelated functional networks</article-title>
+          <source>Proc. Natl. Acad. Sci.</source>
+          <year>2005</year>
+          <volume>102</volume>
+          <issue>27</issue>
+          <fpage>9673</fpage>
+          <lpage>9678</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.0504136102</pub-id>
+          <pub-id pub-id-type="pmid">15976020</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR8">
+        <label>8.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gratton</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Laumann</surname>
+              <given-names>TO</given-names>
+            </name>
+            <name>
+              <surname>Nielsen</surname>
+              <given-names>AN</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Functional brain networks are dominated by stable group and individual factors, not cognitive or daily variation</article-title>
+          <source>Neuron</source>
+          <year>2018</year>
+          <volume>98</volume>
+          <issue>2</issue>
+          <fpage>439</fpage>
+          <lpage>452.e5</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuron.2018.03.035</pub-id>
+          <pub-id pub-id-type="pmid">29673485</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR9">
+        <label>9.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mueller</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Fox</surname>
+              <given-names>MD</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Individual variability in functional connectivity architecture of the human brain</article-title>
+          <source>Neuron</source>
+          <year>2013</year>
+          <volume>77</volume>
+          <issue>3</issue>
+          <fpage>586</fpage>
+          <lpage>595</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuron.2012.12.028</pub-id>
+          <pub-id pub-id-type="pmid">23395382</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR10">
+        <label>10.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Seeley</surname>
+              <given-names>WW</given-names>
+            </name>
+            <name>
+              <surname>Menon</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Schatzberg</surname>
+              <given-names>AF</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Dissociable intrinsic connectivity networks for salience processing and executive control</article-title>
+          <source>J. Neurosci.</source>
+          <year>2007</year>
+          <volume>27</volume>
+          <issue>9</issue>
+          <fpage>2349</fpage>
+          <lpage>2356</lpage>
+          <pub-id pub-id-type="doi">10.1523/JNEUROSCI.5587-06.2007</pub-id>
+          <pub-id pub-id-type="pmid">17329432</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR11">
+        <label>11.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Shirer</surname>
+              <given-names>WR</given-names>
+            </name>
+            <name>
+              <surname>Ryali</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Rykhlevskaia</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Menon</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Greicius</surname>
+              <given-names>MD</given-names>
+            </name>
+          </person-group>
+          <article-title>Decoding subject-driven cognitive states with whole-brain connectivity patterns</article-title>
+          <source>Cereb. Cortex</source>
+          <year>2012</year>
+          <volume>22</volume>
+          <issue>1</issue>
+          <fpage>158</fpage>
+          <lpage>165</lpage>
+          <pub-id pub-id-type="doi">10.1093/cercor/bhr099</pub-id>
+          <pub-id pub-id-type="pmid">21616982</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR12">
+        <label>12.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sporns</surname>
+              <given-names>O</given-names>
+            </name>
+          </person-group>
+          <article-title>Network attributes for segregation and integration in the human brain</article-title>
+          <source>Curr. Opin. Neurobiol.</source>
+          <year>2013</year>
+          <volume>23</volume>
+          <issue>2</issue>
+          <fpage>162</fpage>
+          <lpage>171</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.conb.2012.11.015</pub-id>
+          <pub-id pub-id-type="pmid">23294553</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR13">
+        <label>13.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chen</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Duan</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>F</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Multivariate classification of autism spectrum disorder using frequency-specific resting-state functional connectivity—a multi-center study</article-title>
+          <source>Prog. Neuro-Psychopharmacol. Biol. Psychiatry</source>
+          <year>2016</year>
+          <volume>64</volume>
+          <fpage>1</fpage>
+          <lpage>9</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.pnpbp.2015.06.014</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR14">
+        <label>14.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gifford</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Crossley</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Kempton</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Resting state fMRI based multilayer network configuration in patients with schizophrenia</article-title>
+          <source>NeuroImage Clin.</source>
+          <year>2020</year>
+          <volume>2019</volume>
+          <fpage>25</fpage>
+          <pub-id pub-id-type="doi">10.1016/j.nicl.2020.102169</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR15">
+        <label>15.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kaiser</surname>
+              <given-names>RH</given-names>
+            </name>
+            <name>
+              <surname>Andrews-Hanna</surname>
+              <given-names>JR</given-names>
+            </name>
+            <name>
+              <surname>Wager</surname>
+              <given-names>TD</given-names>
+            </name>
+            <name>
+              <surname>Pizzagalli</surname>
+              <given-names>DA</given-names>
+            </name>
+          </person-group>
+          <article-title>Large-scale network dysfunction in major depressive disorder: A meta-analysis of resting-state functional connectivity</article-title>
+          <source>JAMA Psychiat.</source>
+          <year>2015</year>
+          <volume>72</volume>
+          <issue>6</issue>
+          <fpage>603</fpage>
+          <lpage>611</lpage>
+          <pub-id pub-id-type="doi">10.1001/jamapsychiatry.2015.0071</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR16">
+        <label>16.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mill</surname>
+              <given-names>RD</given-names>
+            </name>
+            <name>
+              <surname>Gordon</surname>
+              <given-names>BA</given-names>
+            </name>
+            <name>
+              <surname>Balota</surname>
+              <given-names>DA</given-names>
+            </name>
+            <name>
+              <surname>Cole</surname>
+              <given-names>MW</given-names>
+            </name>
+          </person-group>
+          <article-title>Predicting dysfunctional age-related task activations from resting-state network alterations</article-title>
+          <source>Neuroimage</source>
+          <year>2020</year>
+          <volume>221</volume>
+          <fpage>117167</fpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2020.117167</pub-id>
+          <pub-id pub-id-type="pmid">32682094</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR17">
+        <label>17.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Xia</surname>
+              <given-names>CH</given-names>
+            </name>
+            <name>
+              <surname>Ma</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Ciric</surname>
+              <given-names>R</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Linked dimensions of psychopathology and connectivity in functional brain networks</article-title>
+          <source>Nat. Commun.</source>
+          <year>2018</year>
+          <volume>9</volume>
+          <issue>1</issue>
+          <fpage>1</fpage>
+          <lpage>14</lpage>
+          <pub-id pub-id-type="doi">10.1038/s41467-018-05317-y</pub-id>
+          <pub-id pub-id-type="pmid">29317637</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR18">
+        <label>18.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dickie</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Ameis</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Shahab</surname>
+              <given-names>S</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Personalised intrinsic network topography mapping and functional connectivity deficits in Autism Spectrum Disorder Erin</article-title>
+          <source>Biol. Psychiatry.</source>
+          <year>2018</year>
+          <volume>84</volume>
+          <issue>4</issue>
+          <fpage>278</fpage>
+          <lpage>286</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.biopsych.2018.02.1174.Personalised</pub-id>
+          <pub-id pub-id-type="pmid">29703592</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR19">
+        <label>19.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Raichle</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>MacLeod</surname>
+              <given-names>AM</given-names>
+            </name>
+            <name>
+              <surname>Snyder</surname>
+              <given-names>AZ</given-names>
+            </name>
+            <name>
+              <surname>Powers</surname>
+              <given-names>WJ</given-names>
+            </name>
+            <name>
+              <surname>Gusnard</surname>
+              <given-names>DA</given-names>
+            </name>
+            <name>
+              <surname>Shulman</surname>
+              <given-names>GL</given-names>
+            </name>
+          </person-group>
+          <article-title>A default mode of brain function</article-title>
+          <source>Proc. Natl. Acad. Sci. USA</source>
+          <year>2001</year>
+          <volume>98</volume>
+          <issue>2</issue>
+          <fpage>676</fpage>
+          <lpage>682</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.98.2.676</pub-id>
+          <pub-id pub-id-type="pmid">11209064</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR20">
+        <label>20.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lewis</surname>
+              <given-names>LD</given-names>
+            </name>
+            <name>
+              <surname>Setsompop</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Rosen</surname>
+              <given-names>BR</given-names>
+            </name>
+            <name>
+              <surname>Polimeni</surname>
+              <given-names>JR</given-names>
+            </name>
+          </person-group>
+          <article-title>Fast fMRI can detect oscillatory neural activity in humans</article-title>
+          <source>Proc. Natl. Acad. Sci. USA</source>
+          <year>2016</year>
+          <volume>113</volume>
+          <issue>43</issue>
+          <fpage>E6679</fpage>
+          <lpage>E6685</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.1608117113</pub-id>
+          <pub-id pub-id-type="pmid">27729529</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR21">
+        <label>21.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Baria</surname>
+              <given-names>AT</given-names>
+            </name>
+            <name>
+              <surname>Baliki</surname>
+              <given-names>MN</given-names>
+            </name>
+            <name>
+              <surname>Parrish</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Apkarian</surname>
+              <given-names>AV</given-names>
+            </name>
+          </person-group>
+          <article-title>Anatomical and functional assemblies of brain BOLD oscillations</article-title>
+          <source>J. Neurosci.</source>
+          <year>2011</year>
+          <volume>31</volume>
+          <issue>21</issue>
+          <fpage>7910</fpage>
+          <lpage>7919</lpage>
+          <pub-id pub-id-type="doi">10.1523/JNEUROSCI.1296-11.2011</pub-id>
+          <pub-id pub-id-type="pmid">21613505</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR22">
+        <label>22.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Christoff</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Irving</surname>
+              <given-names>ZC</given-names>
+            </name>
+            <name>
+              <surname>Fox</surname>
+              <given-names>KCR</given-names>
+            </name>
+            <name>
+              <surname>Spreng</surname>
+              <given-names>RN</given-names>
+            </name>
+            <name>
+              <surname>Andrews-Hanna</surname>
+              <given-names>JR</given-names>
+            </name>
+          </person-group>
+          <article-title>Mind-wandering as spontaneous thought: A dynamic framework</article-title>
+          <source>Nat. Rev. Neurosci.</source>
+          <year>2016</year>
+          <volume>17</volume>
+          <fpage>718</fpage>
+          <lpage>731</lpage>
+          <pub-id pub-id-type="doi">10.1038/nrn.2016.113</pub-id>
+          <pub-id pub-id-type="pmid">27654862</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR23">
+        <label>23.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Raichle</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>The brain’s default mode network</article-title>
+          <source>Annu. Rev. Neurosci.</source>
+          <year>2015</year>
+          <volume>38</volume>
+          <issue>1</issue>
+          <fpage>433</fpage>
+          <lpage>447</lpage>
+          <pub-id pub-id-type="doi">10.1146/annurev-neuro-071013-014030</pub-id>
+          <pub-id pub-id-type="pmid">25938726</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR24">
+        <label>24.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chen</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Glover</surname>
+              <given-names>G</given-names>
+            </name>
+          </person-group>
+          <article-title>BOLD fractional contribution to resting-state functional connectivity above 0.1 Hz</article-title>
+          <source>Neuroimage</source>
+          <year>2015</year>
+          <volume>107</volume>
+          <fpage>207</fpage>
+          <lpage>218</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2014.12.012</pub-id>
+          <pub-id pub-id-type="pmid">25497686</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR25">
+        <label>25.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Thompson</surname>
+              <given-names>WH</given-names>
+            </name>
+            <name>
+              <surname>Fransson</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <article-title>The frequency dimension of fMRI dynamic connectivity: Network connectivity, functional hubs and integration in the resting brain</article-title>
+          <source>Neuroimage</source>
+          <year>2015</year>
+          <volume>121</volume>
+          <fpage>227</fpage>
+          <lpage>242</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2015.07.022</pub-id>
+          <pub-id pub-id-type="pmid">26169321</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR26">
+        <label>26.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sasai</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Koike</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Sugawara</surname>
+              <given-names>SK</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Frequency-specific task modulation of human brain functional networks: A fast fMRI study</article-title>
+          <source>Neuroimage</source>
+          <year>2021</year>
+          <volume>224</volume>
+          <fpage>117375</fpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2020.117375</pub-id>
+          <pub-id pub-id-type="pmid">32950690</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR27">
+        <label>27.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gohel</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Gallego</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Robinson</surname>
+              <given-names>DG</given-names>
+            </name>
+            <name>
+              <surname>DeRosse</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Biswal</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Szeszko</surname>
+              <given-names>PR</given-names>
+            </name>
+          </person-group>
+          <article-title>Frequency specific resting state functional abnormalities in psychosis</article-title>
+          <source>Hum. Brain Mapp.</source>
+          <year>2018</year>
+          <volume>39</volume>
+          <issue>11</issue>
+          <fpage>4509</fpage>
+          <lpage>4518</lpage>
+          <pub-id pub-id-type="doi">10.1002/hbm.24302</pub-id>
+          <pub-id pub-id-type="pmid">30160325</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR28">
+        <label>28.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Park</surname>
+              <given-names>YH</given-names>
+            </name>
+            <name>
+              <surname>Cha</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Bourakova</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>JM</given-names>
+            </name>
+          </person-group>
+          <article-title>Frequency specific contribution of intrinsic connectivity networks to the integration in brain networks</article-title>
+          <source>Sci. Rep.</source>
+          <year>2019</year>
+          <volume>9</volume>
+          <issue>1</issue>
+          <fpage>1</fpage>
+          <lpage>10</lpage>
+          <pub-id pub-id-type="doi">10.1038/s41598-019-40699-z</pub-id>
+          <pub-id pub-id-type="pmid">30626917</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR29">
+        <label>29.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yaesoubi</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Allen</surname>
+              <given-names>EA</given-names>
+            </name>
+            <name>
+              <surname>Miller</surname>
+              <given-names>RL</given-names>
+            </name>
+            <name>
+              <surname>Calhoun</surname>
+              <given-names>VD</given-names>
+            </name>
+          </person-group>
+          <article-title>Dynamic coherence analysis of resting fMRI data to jointly capture state-based phase, frequency, and time-domain information</article-title>
+          <source>Neuroimage</source>
+          <year>2015</year>
+          <volume>120</volume>
+          <fpage>133</fpage>
+          <lpage>142</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2015.07.002</pub-id>
+          <pub-id pub-id-type="pmid">26162552</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR30">
+        <label>30.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kajimura</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Ito</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Izuma</surname>
+              <given-names>K</given-names>
+            </name>
+          </person-group>
+          <article-title>Brain knows who is on the same wavelength: Resting-state connectivity can predict compatibility of a female-male relationship</article-title>
+          <source>Cereb. Cortex</source>
+          <year>2021</year>
+          <volume>31</volume>
+          <issue>11</issue>
+          <fpage>5077</fpage>
+          <lpage>5089</lpage>
+          <pub-id pub-id-type="doi">10.1093/cercor/bhab143</pub-id>
+          <pub-id pub-id-type="pmid">34145453</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR31">
+        <label>31.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kajimura</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Ito</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Izuma</surname>
+              <given-names>K</given-names>
+            </name>
+          </person-group>
+          <article-title>Erratum: Correction to: Brain knows who is on the same wavelength: Resting-state connectivity can predict compatibility of a female-male relationship (Cerebral cortex (New York, N.Y. : 1991)</article-title>
+          <source>Cereb. Cortex</source>
+          <year>2022</year>
+          <volume>32</volume>
+          <issue>9</issue>
+          <fpage>2057</fpage>
+          <lpage>2060</lpage>
+          <pub-id pub-id-type="doi">10.1093/cercor/bhac142</pub-id>
+          <pub-id pub-id-type="pmid">35352092</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR32">
+        <label>32.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wu</surname>
+              <given-names>CW</given-names>
+            </name>
+            <name>
+              <surname>Gu</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Lu</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Stein</surname>
+              <given-names>EA</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>JH</given-names>
+            </name>
+            <name>
+              <surname>Yang</surname>
+              <given-names>Y</given-names>
+            </name>
+          </person-group>
+          <article-title>Frequency specificity of functional connectivity in brain networks</article-title>
+          <source>Neuroimage</source>
+          <year>2008</year>
+          <volume>42</volume>
+          <issue>3</issue>
+          <fpage>1047</fpage>
+          <lpage>1055</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2008.05.035</pub-id>
+          <pub-id pub-id-type="pmid">18632288</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR33">
+        <label>33.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gohel</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Biswal</surname>
+              <given-names>B</given-names>
+            </name>
+          </person-group>
+          <article-title>Functional integration between brain regions at rest occurs in multiple-frequency bands</article-title>
+          <source>Brain Connect.</source>
+          <year>2015</year>
+          <volume>5</volume>
+          <issue>1</issue>
+          <fpage>23</fpage>
+          <lpage>34</lpage>
+          <pub-id pub-id-type="doi">10.1089/brain.2013.0210</pub-id>
+          <pub-id pub-id-type="pmid">24702246</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR34">
+        <label>34.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Achard</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Salvador</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Whitcher</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Suckling</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Bullmore</surname>
+              <given-names>E</given-names>
+            </name>
+          </person-group>
+          <article-title>A resilient, low-frequency, small-world human brain functional network with highly connected association cortical hubs</article-title>
+          <source>J. Neurosci.</source>
+          <year>2006</year>
+          <volume>26</volume>
+          <issue>1</issue>
+          <fpage>63</fpage>
+          <lpage>72</lpage>
+          <pub-id pub-id-type="doi">10.1523/JNEUROSCI.3874-05.2006</pub-id>
+          <pub-id pub-id-type="pmid">16399673</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR35">
+        <label>35.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chu</surname>
+              <given-names>SH</given-names>
+            </name>
+            <name>
+              <surname>Parhi</surname>
+              <given-names>KK</given-names>
+            </name>
+            <name>
+              <surname>Schreiner</surname>
+              <given-names>MW</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Effect of SSRIs on resting-state functional brain networks in adolescents with major depressive disorder</article-title>
+          <source>J. Clin. Med.</source>
+          <year>2021</year>
+          <volume>10</volume>
+          <fpage>19</fpage>
+          <pub-id pub-id-type="doi">10.3390/jcm10194322</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR36">
+        <label>36.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dorfschmidt</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Bethlehem</surname>
+              <given-names>RA</given-names>
+            </name>
+            <name>
+              <surname>Seidlitz</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Sexually divergent development of depression-related brain networks during healthy human adolescence</article-title>
+          <source>Sci. Adv.</source>
+          <year>2022</year>
+          <volume>8</volume>
+          <fpage>21</fpage>
+          <pub-id pub-id-type="doi">10.1126/sciadv.abm7825</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR37">
+        <label>37.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kauppi</surname>
+              <given-names>JP</given-names>
+            </name>
+            <name>
+              <surname>Jääskeläinen</surname>
+              <given-names>IP</given-names>
+            </name>
+            <name>
+              <surname>Sams</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Tohka</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>Inter-subject correlation of brain hemodynamic responses during watching a movie: Localization in space and frequency</article-title>
+          <source>Front. Neuroinform.</source>
+          <year>2010</year>
+          <volume>4</volume>
+          <fpage>1</fpage>
+          <lpage>10</lpage>
+          <pub-id pub-id-type="doi">10.3389/fninf.2010.00005</pub-id>
+          <pub-id pub-id-type="pmid">20428515</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR38">
+        <label>38.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Malagurski</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Péran</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Sarton</surname>
+              <given-names>B</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Topological disintegration of resting state functional connectomes in coma</article-title>
+          <source>Neuroimage</source>
+          <year>2019</year>
+          <volume>195</volume>
+          <issue>1</issue>
+          <fpage>354</fpage>
+          <lpage>361</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2019.03.012</pub-id>
+          <pub-id pub-id-type="pmid">30862533</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR39">
+        <label>39.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Schröter</surname>
+              <given-names>MS</given-names>
+            </name>
+            <name>
+              <surname>Spoormaker</surname>
+              <given-names>VI</given-names>
+            </name>
+            <name>
+              <surname>Schorer</surname>
+              <given-names>A</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Spatiotemporal reconfiguration of large-scale brain functional networks during propofol-induced loss of consciousness</article-title>
+          <source>J. Neurosci.</source>
+          <year>2012</year>
+          <volume>32</volume>
+          <issue>37</issue>
+          <fpage>12832</fpage>
+          <lpage>12840</lpage>
+          <pub-id pub-id-type="doi">10.1523/JNEUROSCI.6046-11.2012</pub-id>
+          <pub-id pub-id-type="pmid">22973006</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR40">
+        <label>40.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Spoormaker</surname>
+              <given-names>VI</given-names>
+            </name>
+            <name>
+              <surname>Schröter</surname>
+              <given-names>MS</given-names>
+            </name>
+            <name>
+              <surname>Gleiser</surname>
+              <given-names>PM</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Development of a large-scale functional brain network during human non-rapid eye movement sleep</article-title>
+          <source>J. Neurosci.</source>
+          <year>2010</year>
+          <volume>30</volume>
+          <issue>34</issue>
+          <fpage>11379</fpage>
+          <lpage>11387</lpage>
+          <pub-id pub-id-type="doi">10.1523/JNEUROSCI.2015-10.2010</pub-id>
+          <pub-id pub-id-type="pmid">20739559</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR41">
+        <label>41.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bullmore</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Fadili</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Maxim</surname>
+              <given-names>V</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Wavelets and functional magnetic resonance imaging of the human brain</article-title>
+          <source>Neuroimage</source>
+          <year>2004</year>
+          <volume>23</volume>
+          <issue>SUPPL. 1</issue>
+          <fpage>234</fpage>
+          <lpage>249</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2004.07.012</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR42">
+        <label>42.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kong</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Orban</surname>
+              <given-names>C</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Spatial topography of individual-specific cortical networks predicts human cognition, personality, and emotion</article-title>
+          <source>Cereb. Cortex</source>
+          <year>2019</year>
+          <volume>29</volume>
+          <issue>6</issue>
+          <fpage>2533</fpage>
+          <lpage>2551</lpage>
+          <pub-id pub-id-type="doi">10.1093/cercor/bhy123</pub-id>
+          <pub-id pub-id-type="pmid">29878084</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR43">
+        <label>43.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Oldfield</surname>
+              <given-names>RC</given-names>
+            </name>
+          </person-group>
+          <article-title>The assessment and analysis of handedness: The Edinburgh inventory</article-title>
+          <source>Neuropsychologia</source>
+          <year>1971</year>
+          <volume>9</volume>
+          <issue>1</issue>
+          <fpage>97</fpage>
+          <lpage>113</lpage>
+          <pub-id pub-id-type="doi">10.1007/978-3-319-55065-7_301010</pub-id>
+          <pub-id pub-id-type="pmid">5146491</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR44">
+        <label>44.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chao-Gan</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Yu-Feng</surname>
+              <given-names>Z</given-names>
+            </name>
+          </person-group>
+          <article-title>DPARSF: A MATLAB toolbox for “pipeline” data analysis of resting-state fMRI</article-title>
+          <source>Front. Syst. Neurosci.</source>
+          <year>2010</year>
+          <volume>4</volume>
+          <issue>13</issue>
+          <fpage>1</fpage>
+          <lpage>7</lpage>
+          <pub-id pub-id-type="doi">10.3389/fnsys.2010.00013</pub-id>
+          <pub-id pub-id-type="pmid">20204156</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR45">
+        <label>45.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Song</surname>
+              <given-names>XW</given-names>
+            </name>
+            <name>
+              <surname>Dong</surname>
+              <given-names>ZY</given-names>
+            </name>
+            <name>
+              <surname>Long</surname>
+              <given-names>XY</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>REST: A toolkit for resting-state functional magnetic resonance imaging data processing</article-title>
+          <source>PLoS ONE</source>
+          <year>2011</year>
+          <volume>6</volume>
+          <fpage>9</fpage>
+          <pub-id pub-id-type="doi">10.1371/journal.pone.0025031</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR46">
+        <label>46.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ashburner</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Friston</surname>
+              <given-names>KJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Unified segmentation</article-title>
+          <source>Neuroimage</source>
+          <year>2005</year>
+          <volume>26</volume>
+          <issue>3</issue>
+          <fpage>839</fpage>
+          <lpage>851</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2005.02.018</pub-id>
+          <pub-id pub-id-type="pmid">15955494</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR47">
+        <label>47.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Glover</surname>
+              <given-names>GH</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Ress</surname>
+              <given-names>D</given-names>
+            </name>
+          </person-group>
+          <article-title>Image-based method for retrospective correction of physiological motion effects in fMRI: RETROICOR</article-title>
+          <source>Magn.. Reson Med.</source>
+          <year>2000</year>
+          <volume>44</volume>
+          <issue>1</issue>
+          <fpage>162</fpage>
+          <lpage>167</lpage>
+          <pub-id pub-id-type="doi">10.1002/1522-2594(200007)44:1&lt;162::aid-mrm23&gt;3.3.co;2-5</pub-id>
+          <pub-id pub-id-type="pmid">10893535</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR48">
+        <label>48.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kasper</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Bollmann</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Diaconescu</surname>
+              <given-names>AO</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The PhysIO toolbox for modeling physiological noise in fMRI data</article-title>
+          <source>J. Neurosci. Methods</source>
+          <year>2017</year>
+          <volume>276</volume>
+          <fpage>56</fpage>
+          <lpage>72</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.jneumeth.2016.10.019</pub-id>
+          <pub-id pub-id-type="pmid">27832957</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR49">
+        <label>49.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cordes</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Nandy</surname>
+              <given-names>RR</given-names>
+            </name>
+            <name>
+              <surname>Schafer</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Wager</surname>
+              <given-names>TD</given-names>
+            </name>
+          </person-group>
+          <article-title>Characterization and reduction of cardiac- and respiratory-induced noise as a function of the sampling rate (TR) in fMRI</article-title>
+          <source>Neuroimage</source>
+          <year>2014</year>
+          <volume>89</volume>
+          <fpage>314</fpage>
+          <lpage>330</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2013.12.013</pub-id>
+          <pub-id pub-id-type="pmid">24355483</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR50">
+        <label>50.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ashburner</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>A fast diffeomorphic image registration algorithm</article-title>
+          <source>Neuroimage</source>
+          <year>2007</year>
+          <volume>38</volume>
+          <issue>1</issue>
+          <fpage>95</fpage>
+          <lpage>113</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2007.07.007</pub-id>
+          <pub-id pub-id-type="pmid">17761438</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR51">
+        <label>51.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Craddock</surname>
+              <given-names>RC</given-names>
+            </name>
+            <name>
+              <surname>James</surname>
+              <given-names>GA</given-names>
+            </name>
+            <name>
+              <surname>Holtzheimer</surname>
+              <given-names>PE</given-names>
+            </name>
+            <name>
+              <surname>Hu</surname>
+              <given-names>XP</given-names>
+            </name>
+            <name>
+              <surname>Mayberg</surname>
+              <given-names>HS</given-names>
+            </name>
+          </person-group>
+          <article-title>A whole brain fMRI atlas generated via spatially constrained spectral clustering</article-title>
+          <source>Hum. Brain Mapp.</source>
+          <year>2012</year>
+          <volume>33</volume>
+          <issue>8</issue>
+          <fpage>1914</fpage>
+          <lpage>1928</lpage>
+          <pub-id pub-id-type="doi">10.1002/hbm.21333</pub-id>
+          <pub-id pub-id-type="pmid">21769991</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR52">
+        <label>52.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhang</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Telesford</surname>
+              <given-names>QK</given-names>
+            </name>
+            <name>
+              <surname>Giusti</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Lim</surname>
+              <given-names>KO</given-names>
+            </name>
+            <name>
+              <surname>Bassett</surname>
+              <given-names>DS</given-names>
+            </name>
+          </person-group>
+          <article-title>Choosing wavelet methods, filters, and lengths for functional brain network construction</article-title>
+          <source>PLoS ONE</source>
+          <year>2016</year>
+          <volume>11</volume>
+          <issue>6</issue>
+          <fpage>1</fpage>
+          <lpage>24</lpage>
+          <pub-id pub-id-type="doi">10.1371/journal.pone.0157243</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR53">
+        <label>53.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lashkari</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Vul</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Kanwisher</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Golland</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <article-title>Discovering structure in the space of fMRI selectivity profiles</article-title>
+          <source>Neuroimage</source>
+          <year>2010</year>
+          <volume>50</volume>
+          <issue>3</issue>
+          <fpage>1085</fpage>
+          <lpage>1098</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2009.12.106</pub-id>
+          <pub-id pub-id-type="pmid">20053382</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR54">
+        <label>54.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yarkoni</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Poldrack</surname>
+              <given-names>RA</given-names>
+            </name>
+            <name>
+              <surname>Nichols</surname>
+              <given-names>TE</given-names>
+            </name>
+            <name>
+              <surname>Van Essen</surname>
+              <given-names>DC</given-names>
+            </name>
+            <name>
+              <surname>Wager</surname>
+              <given-names>TD</given-names>
+            </name>
+          </person-group>
+          <article-title>Large-scale automated synthesis of human functional neuroimaging data</article-title>
+          <source>Nat. Methods</source>
+          <year>2011</year>
+          <volume>8</volume>
+          <issue>8</issue>
+          <fpage>665</fpage>
+          <lpage>670</lpage>
+          <pub-id pub-id-type="doi">10.1038/nmeth.1635</pub-id>
+          <pub-id pub-id-type="pmid">21706013</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR55">
+        <label>55.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chen</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Müller</surname>
+              <given-names>VI</given-names>
+            </name>
+            <name>
+              <surname>Dukart</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Intrinsic connectivity patterns of task-defined brain networks allow individual prediction of cognitive symptom dimension of schizophrenia and are linked to molecular architecture</article-title>
+          <source>Biol. Psychiatry</source>
+          <year>2021</year>
+          <volume>89</volume>
+          <issue>3</issue>
+          <fpage>308</fpage>
+          <lpage>319</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.biopsych.2020.09.024</pub-id>
+          <pub-id pub-id-type="pmid">33357631</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR56">
+        <label>56.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cole</surname>
+              <given-names>MW</given-names>
+            </name>
+            <name>
+              <surname>Ito</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Bassett</surname>
+              <given-names>DS</given-names>
+            </name>
+            <name>
+              <surname>Schultz</surname>
+              <given-names>DH</given-names>
+            </name>
+          </person-group>
+          <article-title>Activity flow over resting-state networks shapes cognitive task activations</article-title>
+          <source>Nat. Neurosci.</source>
+          <year>2016</year>
+          <volume>19</volume>
+          <issue>12</issue>
+          <fpage>1718</fpage>
+          <lpage>1726</lpage>
+          <pub-id pub-id-type="doi">10.1038/nn.4406</pub-id>
+          <pub-id pub-id-type="pmid">27723746</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR57">
+        <label>57.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ito</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Kulkarni</surname>
+              <given-names>KR</given-names>
+            </name>
+            <name>
+              <surname>Schultz</surname>
+              <given-names>DH</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Cognitive task information is transferred between brain regions via resting-state network topology</article-title>
+          <source>Nat. Commun.</source>
+          <year>2017</year>
+          <volume>8</volume>
+          <issue>1</issue>
+          <fpage>1</fpage>
+          <lpage>13</lpage>
+          <pub-id pub-id-type="doi">10.1038/s41467-017-01000-w</pub-id>
+          <pub-id pub-id-type="pmid">28232747</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR58">
+        <label>58.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Xia</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>He</surname>
+              <given-names>Y</given-names>
+            </name>
+          </person-group>
+          <article-title>BrainNet viewer: A network visualization tool for human brain connectomics</article-title>
+          <source>PLoS ONE</source>
+          <year>2013</year>
+          <volume>8</volume>
+          <fpage>7</fpage>
+          <pub-id pub-id-type="doi">10.1371/journal.pone.0068910</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR59">
+        <label>59.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Murphy</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Birn</surname>
+              <given-names>RM</given-names>
+            </name>
+            <name>
+              <surname>Bandettini</surname>
+              <given-names>PA</given-names>
+            </name>
+          </person-group>
+          <article-title>Resting-state fMRI confounds and cleanup</article-title>
+          <source>Neuroimage</source>
+          <year>2013</year>
+          <volume>80</volume>
+          <fpage>349</fpage>
+          <lpage>359</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2013.04.001</pub-id>
+          <pub-id pub-id-type="pmid">23571418</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR60">
+        <label>60.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Murphy</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Fox</surname>
+              <given-names>MD</given-names>
+            </name>
+          </person-group>
+          <article-title>Towards a consensus regarding global signal regression for resting state functional connectivity MRI</article-title>
+          <source>Neuroimage</source>
+          <year>2016</year>
+          <volume>2017</volume>
+          <issue>154</issue>
+          <fpage>169</fpage>
+          <lpage>173</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2016.11.052</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR61">
+        <label>61.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fox</surname>
+              <given-names>MD</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Snyder</surname>
+              <given-names>AZ</given-names>
+            </name>
+            <name>
+              <surname>Raichle</surname>
+              <given-names>ME</given-names>
+            </name>
+          </person-group>
+          <article-title>The global signal and observed anticorrelated resting state brain networks</article-title>
+          <source>J. Neurophysiol.</source>
+          <year>2009</year>
+          <volume>101</volume>
+          <issue>6</issue>
+          <fpage>3270</fpage>
+          <lpage>3283</lpage>
+          <pub-id pub-id-type="doi">10.1152/jn.90777.2008</pub-id>
+          <pub-id pub-id-type="pmid">19339462</pub-id>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

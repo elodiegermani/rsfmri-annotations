@@ -1,0 +1,1699 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">Hum Brain Mapp</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Hum Brain Mapp</journal-id>
+      <journal-id journal-id-type="doi">10.1002/(ISSN)1097-0193</journal-id>
+      <journal-id journal-id-type="publisher-id">HBM</journal-id>
+      <journal-title-group>
+        <journal-title>Human Brain Mapping</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">1065-9471</issn>
+      <issn pub-type="epub">1097-0193</issn>
+      <publisher>
+        <publisher-name>John Wiley &amp; Sons, Inc.</publisher-name>
+        <publisher-loc>Hoboken, USA</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">32881215</article-id>
+      <article-id pub-id-type="pmc">7670643</article-id>
+      <article-id pub-id-type="doi">10.1002/hbm.25195</article-id>
+      <article-id pub-id-type="publisher-id">HBM25195</article-id>
+      <article-categories>
+        <subj-group subj-group-type="overline">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="heading">
+          <subject>Research Articles</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Typicality of functional connectivity robustly captures motion artifacts in <styled-content style="fixed-case" toggle="no">rs‐fMRI</styled-content> across datasets, atlases, and preprocessing pipelines</article-title>
+        <alt-title alt-title-type="left-running-head">Kopal et al.</alt-title>
+      </title-group>
+      <contrib-group>
+        <contrib id="hbm25195-cr-0001" contrib-type="author">
+          <name>
+            <surname>Kopal</surname>
+            <given-names>Jakub</given-names>
+          </name>
+          <contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0002-1201-2872</contrib-id>
+          <xref ref-type="aff" rid="hbm25195-aff-0001">
+<sup>1</sup>
+</xref>
+          <xref ref-type="aff" rid="hbm25195-aff-0002">
+<sup>2</sup>
+</xref>
+          <xref ref-type="aff" rid="hbm25195-aff-0004">
+<sup>4</sup>
+</xref>
+        </contrib>
+        <contrib id="hbm25195-cr-0002" contrib-type="author">
+          <name>
+            <surname>Pidnebesna</surname>
+            <given-names>Anna</given-names>
+          </name>
+          <contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0002-9391-8886</contrib-id>
+          <xref ref-type="aff" rid="hbm25195-aff-0001">
+<sup>1</sup>
+</xref>
+          <xref ref-type="aff" rid="hbm25195-aff-0003">
+<sup>3</sup>
+</xref>
+          <xref ref-type="aff" rid="hbm25195-aff-0005">
+<sup>5</sup>
+</xref>
+        </contrib>
+        <contrib id="hbm25195-cr-0003" contrib-type="author">
+          <name>
+            <surname>Tomeček</surname>
+            <given-names>David</given-names>
+          </name>
+          <xref ref-type="aff" rid="hbm25195-aff-0003">
+<sup>3</sup>
+</xref>
+          <xref ref-type="aff" rid="hbm25195-aff-0005">
+<sup>5</sup>
+</xref>
+        </contrib>
+        <contrib id="hbm25195-cr-0004" contrib-type="author">
+          <name>
+            <surname>Tintěra</surname>
+            <given-names>Jaroslav</given-names>
+          </name>
+          <xref ref-type="aff" rid="hbm25195-aff-0003">
+<sup>3</sup>
+</xref>
+          <xref ref-type="aff" rid="hbm25195-aff-0006">
+<sup>6</sup>
+</xref>
+        </contrib>
+        <contrib id="hbm25195-cr-0005" contrib-type="author" corresp="yes">
+          <name>
+            <surname>Hlinka</surname>
+            <given-names>Jaroslav</given-names>
+          </name>
+          <contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0003-1402-1470</contrib-id>
+          <xref ref-type="aff" rid="hbm25195-aff-0001">
+<sup>1</sup>
+</xref>
+          <xref ref-type="aff" rid="hbm25195-aff-0003">
+<sup>3</sup>
+</xref>
+          <address>
+            <email>hlinka@cs.cas.cz</email>
+          </address>
+        </contrib>
+      </contrib-group>
+      <aff id="hbm25195-aff-0001">
+<label><sup>1</sup></label>
+<institution>Institute of Computer Science of the Czech Academy of Sciences</institution>
+<city>Prague</city>
+<country country="CZ">Czech Republic</country>
+</aff>
+      <aff id="hbm25195-aff-0002">
+<label><sup>2</sup></label>
+<named-content content-type="organisation-division">Department of Computing and Control Engineering</named-content>
+<institution>University of Chemistry and Technology</institution>
+<city>Prague</city>
+<country country="CZ">Czech Republic</country>
+</aff>
+      <aff id="hbm25195-aff-0003">
+<label><sup>3</sup></label>
+<institution>National Institute of Mental Health</institution>
+<city>Klecany</city>
+<country country="CZ">Czech Republic</country>
+</aff>
+      <aff id="hbm25195-aff-0004">
+<label><sup>4</sup></label>
+<named-content content-type="organisation-division">Centre de Recherche Cerveau et Cognition</named-content>
+<institution>Universite Paul Sabatier</institution>
+<city>Toulouse</city>
+<country country="FR">France</country>
+</aff>
+      <aff id="hbm25195-aff-0005">
+<label><sup>5</sup></label>
+<named-content content-type="organisation-division">Faculty of Electrical Engineering</named-content>
+<institution>Czech Technical University</institution>
+<city>Prague</city>
+<country country="CZ">Czech Republic</country>
+</aff>
+      <aff id="hbm25195-aff-0006">
+<label><sup>6</sup></label>
+<institution>Institute for Clinical and Experimental Medicine</institution>
+<city>Prague</city>
+<country country="CZ">Czech Republic</country>
+</aff>
+      <author-notes>
+        <corresp id="correspondenceTo"><label>*</label><bold>Correspondence</bold><break/>
+Jaroslav Hlinka, Institute of Computer Science, Czech Academy of Sciences, Pod Vodarenskou vezi 2, 182 07 Prague 8, Czech Republic.<break/>
+Email: <email>hlinka@cs.cas.cz</email><break/></corresp>
+      </author-notes>
+      <pub-date pub-type="epub">
+        <day>02</day>
+        <month>9</month>
+        <year>2020</year>
+      </pub-date>
+      <pub-date pub-type="collection">
+        <day>15</day>
+        <month>12</month>
+        <year>2020</year>
+      </pub-date>
+      <volume>41</volume>
+      <issue>18</issue>
+      <issue-id pub-id-type="doi">10.1002/hbm.v41.18</issue-id>
+      <fpage>5325</fpage>
+      <lpage>5340</lpage>
+      <history>
+        <date date-type="received">
+          <day>02</day>
+          <month>3</month>
+          <year>2020</year>
+        </date>
+        <date date-type="rev-recd">
+          <day>07</day>
+          <month>8</month>
+          <year>2020</year>
+        </date>
+        <date date-type="accepted">
+          <day>09</day>
+          <month>8</month>
+          <year>2020</year>
+        </date>
+      </history>
+      <permissions>
+        <!--<copyright-statement content-type="issue-copyright"> &#x000a9; 2020 Wiley Periodicals, LLC. <copyright-statement>-->
+        <copyright-statement content-type="article-copyright">© 2020 The Authors. <italic>Human Brain Mapping</italic> published by Wiley Periodicals LLC.</copyright-statement>
+        <license license-type="creativeCommonsBy-nc-nd">
+          <license-p>This is an open access article under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by-nc/4.0/">http://creativecommons.org/licenses/by-nc/4.0/</ext-link> License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited and is not used for commercial purposes.</license-p>
+        </license>
+      </permissions>
+      <self-uri content-type="pdf" xlink:href="file:HBM-41-5325.pdf"/>
+      <abstract>
+        <title>Abstract</title>
+        <p>Functional connectivity analysis of resting‐state fMRI data has recently become one of the most common approaches to characterizing individual brain function. It has been widely suggested that the functional connectivity matrix is a useful approximate representation of the brain's connectivity, potentially providing behaviorally or clinically relevant markers. However, functional connectivity estimates are known to be detrimentally affected by various artifacts, including those due to in‐scanner head motion. Moreover, as individual functional connections generally covary only very weakly with head motion estimates, motion influence is difficult to quantify robustly, and prone to be neglected in practice. Although the use of individual estimates of head motion, or group‐level correlation of motion and functional connectivity has been suggested, a sufficiently sensitive measure of individual functional connectivity quality has not yet been established. We propose a new intuitive summary index, Typicality of Functional Connectivity, to capture deviations from standard brain functional connectivity patterns. In a resting‐state fMRI dataset of 245 healthy subjects, this measure was significantly correlated with individual head motion metrics. The results were further robustly reproduced across atlas granularity, preprocessing options, and other datasets, including 1,081 subjects from the Human Connectome Project. In principle, Typicality of Functional Connectivity should be sensitive also to other types of artifacts, processing errors, and possibly also brain pathology, allowing extensive use in data quality screening and quantification in functional connectivity studies as well as methodological investigations.</p>
+      </abstract>
+      <abstract abstract-type="graphical">
+        <p>In current resting‐state fMRI studies, there is a need for a sufficiently sensitive measure of individual functional connectivity quality. In this article, we presented a new method of functional connectivity quality evaluation for rs‐fMRI data. This measure is significantly correlated with motion metrics and the results hold across atlases, preprocessing pipelines as well as different datasets including a validation set of 1,081 subjects from the Human Connectome Project.<boxed-text position="anchor" content-type="graphic" id="hbm25195-blkfxd-0001" orientation="portrait"><graphic xlink:href="HBM-41-5325-g005.jpg" position="anchor" id="nlm-graphic-1" orientation="portrait"/></boxed-text>
+</p>
+      </abstract>
+      <kwd-group kwd-group-type="author-generated">
+        <kwd id="hbm25195-kwd-0001">atlas</kwd>
+        <kwd id="hbm25195-kwd-0002">functional connectivity</kwd>
+        <kwd id="hbm25195-kwd-0003">motion</kwd>
+        <kwd id="hbm25195-kwd-0004">quality</kwd>
+        <kwd id="hbm25195-kwd-0005">rs‐fMRI</kwd>
+      </kwd-group>
+      <funding-group>
+        <award-group id="funding-0001">
+          <funding-source>
+            <institution-wrap>
+              <institution>Grantová Agentura České Republiky </institution>
+              <institution-id institution-id-type="open-funder-registry">10.13039/501100001824</institution-id>
+            </institution-wrap>
+          </funding-source>
+          <award-id>17‐01251S</award-id>
+        </award-group>
+        <award-group id="funding-0002">
+          <funding-source>
+            <institution-wrap>
+              <institution>Ministerstvo Školství, Mládeže a Tělovýchovy </institution>
+              <institution-id institution-id-type="open-funder-registry">10.13039/501100001823</institution-id>
+            </institution-wrap>
+          </funding-source>
+          <award-id>LO1611</award-id>
+        </award-group>
+      </funding-group>
+      <counts>
+        <fig-count count="4"/>
+        <table-count count="1"/>
+        <page-count count="16"/>
+        <word-count count="12959"/>
+      </counts>
+      <custom-meta-group>
+        <custom-meta>
+          <meta-name>source-schema-version-number</meta-name>
+          <meta-value>2.0</meta-value>
+        </custom-meta>
+        <custom-meta>
+          <meta-name>cover-date</meta-name>
+          <meta-value>December 15, 2020</meta-value>
+        </custom-meta>
+        <custom-meta>
+          <meta-name>details-of-publishers-convertor</meta-name>
+          <meta-value>Converter:WILEY_ML3GV2_TO_JATSPMC version:5.9.4 mode:remove_FC converted:17.11.2020</meta-value>
+        </custom-meta>
+      </custom-meta-group>
+    </article-meta>
+    <notes>
+      <p content-type="self-citation">
+<mixed-citation publication-type="journal" id="hbm25195-cit-9001">
+<string-name>
+<surname>Kopal</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Pidnebesna</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Tomeček</surname>
+<given-names>D</given-names>
+</string-name>, <string-name>
+<surname>Tintěra</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Hlinka</surname>
+<given-names>J</given-names>
+</string-name>. <article-title>Typicality of functional connectivity robustly captures motion artifacts in <styled-content style="fixed-case" toggle="no">rs‐fMRI</styled-content> across datasets, atlases, and preprocessing pipelines</article-title>. <source xml:lang="en">Hum Brain Mapp</source>. <year>2020</year>;<volume>41</volume>:<fpage>5325</fpage>–<lpage>5340</lpage>. <pub-id pub-id-type="doi">10.1002/hbm.25195</pub-id>
+</mixed-citation>
+</p>
+      <fn-group>
+        <fn id="hbm25195-note-1002">
+          <p>
+<bold>Funding information</bold> Grantová Agentura České Republiky, Grant/Award Number: 17‐01251S; Ministerstvo Školství, Mládeže a Tělovýchovy, Grant/Award Number: LO1611</p>
+        </fn>
+      </fn-group>
+    </notes>
+  </front>
+  <body id="hbm25195-body-0001">
+    <sec id="hbm25195-sec-0001">
+      <label>1</label>
+      <title>INTRODUCTION</title>
+      <p>Imaging techniques play a pivotal role in medical research nowadays. Functional magnetic resonance imaging (fMRI) is one of the most common methods for research into brain function. Resting‐state fMRI (rs‐fMRI) is a very prolific and popular subcategory of fMRI measurements. In 1995, Biswal and colleagues found that the correlation of low‐frequency fluctuations (&lt;≈ 0.1 Hz) in blood oxygen level‐dependent (BOLD) signals is a manifestation of the functional connectivity (FC) of the brain. Later studies confirmed that fMRI fluctuations are tightly coupled with the underlying neural activity (Nir, Hasson, Levy, Yeshurun, &amp; Malach, <xref rid="hbm25195-bib-0036" ref-type="ref">2006</xref>; Schölvinck, Maier, Ye, Duyn, &amp; Leopold, <xref rid="hbm25195-bib-0053" ref-type="ref">2010</xref>). These spontaneous low‐frequency fluctuations in the BOLD signal are therefore used to investigate the functional architecture of the brain (Lee, Smyser, &amp; Shimony, <xref rid="hbm25195-bib-0031" ref-type="ref">2013</xref>).</p>
+      <p>A common approach to the analysis of rs‐fMRI data is to assess FC, defined as temporal dependence of neuronal activity patterns (Friston, Frith, Liddle, &amp; Frackowiak, <xref rid="hbm25195-bib-0022" ref-type="ref">1993</xref>), and thus determine which regions are functionally connected. Regions are defined based on a reasonable brain parcellation. Although there is no consensus on optimal parcellation (Arslan et al., <xref rid="hbm25195-bib-0001" ref-type="ref">2018</xref>; Eickhoff, Yeo, &amp; Genon, <xref rid="hbm25195-bib-0018" ref-type="ref">2018</xref>), it has been suggested that the matrix of FC among all brain regions may be a suitable representation of the brain connectivity, potentially providing behaviorally or clinically relevant markers (Biswal et al., <xref rid="hbm25195-bib-0007" ref-type="ref">2010</xref>; Buckner, Krienen, &amp; Yeo, <xref rid="hbm25195-bib-0010" ref-type="ref">2013</xref>; Van Dijk et al., <xref rid="hbm25195-bib-0064" ref-type="ref">2009</xref>).</p>
+      <p>Like any other imaging technique, fMRI is also affected by unwanted artifacts. There are many non‐neuronal sources of signal variability such as thermal noise, physiological sources (created by the cardiac and respiratory cycles), scanner and head coil heterogeneities, spiking, chemical shifts, radiofrequency interferences, or subject movement (Bianciardi et al., <xref rid="hbm25195-bib-0006" ref-type="ref">2009</xref>; Chang &amp; Glover, <xref rid="hbm25195-bib-0014" ref-type="ref">2009</xref>; Murphy, Birn, &amp; Bandettini, <xref rid="hbm25195-bib-0034" ref-type="ref">2013</xref>; Poldrack, Mumford, &amp; Nichols, <xref rid="hbm25195-bib-0039" ref-type="ref">2011</xref>). Scanner head motion has long been recognized as a source of artifacts in rs‐fMRI (Friston, Williams, Howard, Frackowiak, &amp; Turner, <xref rid="hbm25195-bib-0023" ref-type="ref">1996</xref>; Hajnal et al., <xref rid="hbm25195-bib-0026" ref-type="ref">1994</xref>). These artifacts originate in changes in head position that can yield many forms from small involuntary drifts to brief impulsive movements (Patel et al., <xref rid="hbm25195-bib-0038" ref-type="ref">2014</xref>). They induce undesirable, artificial effects that manifest in complex temporal and spatial patterns (Biswal et al., 1995; Friston et al., <xref rid="hbm25195-bib-0023" ref-type="ref">1996</xref>; Hajnal et al., <xref rid="hbm25195-bib-0026" ref-type="ref">1994</xref>; Hlinka, Alexakis, Hardman, Siddiqui, &amp; Auer, <xref rid="hbm25195-bib-0029" ref-type="ref">2010</xref>; Patel et al., <xref rid="hbm25195-bib-0038" ref-type="ref">2014</xref>; Spisák et al., <xref rid="hbm25195-bib-0059" ref-type="ref">2014</xref>). Recent studies showed that even small head movements, in the range of 0.5–1 mm, can induce systematic biases in correlation strength and thus they can profoundly influence the final estimates of FC (Hlinka et al., <xref rid="hbm25195-bib-0029" ref-type="ref">2010</xref>; Van Dijk, Sabuncu, &amp; Buckner, <xref rid="hbm25195-bib-0065" ref-type="ref">2012</xref>; Power, Barnes, Snyder, Schlaggar, &amp; Petersen, <xref rid="hbm25195-bib-0041" ref-type="ref">2012</xref>; Satterthwaite et al., <xref rid="hbm25195-bib-0052" ref-type="ref">2012</xref>; Bright &amp; Murphy, <xref rid="hbm25195-bib-0009" ref-type="ref">2013</xref>; Mowinckel, Espeseth, &amp; Westlye, <xref rid="hbm25195-bib-0033" ref-type="ref">2012</xref>; Satterthwaite et al., <xref rid="hbm25195-bib-0051" ref-type="ref">2013</xref>; Tyszka, Kennedy, Paul, &amp; Adolphs, <xref rid="hbm25195-bib-0061" ref-type="ref">2014</xref>; Yan, Cheung, et al.,<xref rid="hbm25195-bib-0070" ref-type="ref">2013</xref>). Typical motion artifact manifests as increased short‐range connectivity and reduced long‐range connectivity, although gross head motion can also increase long‐range connectivity (Power et al., <xref rid="hbm25195-bib-0041" ref-type="ref">2012</xref>, <xref rid="hbm25195-bib-0044" ref-type="ref">2014</xref>; Power, Schlaggar, &amp; Petersen, <xref rid="hbm25195-bib-0047" ref-type="ref">2015</xref>; Satterthwaite et al., <xref rid="hbm25195-bib-0052" ref-type="ref">2012</xref>, <xref rid="hbm25195-bib-0050" ref-type="ref">2019</xref>). These effects influence the correlation values as well as the derived connectivity measures characterizing the network topology (Yan, Craddock, et al., <xref rid="hbm25195-bib-0071" ref-type="ref">2013</xref>; Ciric et al., <xref rid="hbm25195-bib-0015" ref-type="ref">2017</xref>). Therefore, they have been both a point of concern and controversy for rs‐FC investigations (Bright &amp; Murphy, <xref rid="hbm25195-bib-0009" ref-type="ref">2013</xref>; Carbonell, Bellec, &amp; Shmuel, <xref rid="hbm25195-bib-0013" ref-type="ref">2011</xref>; Fair et al., <xref rid="hbm25195-bib-0021" ref-type="ref">2013</xref>; Maclaren, Herbst, Speck, &amp; Zaitsev, <xref rid="hbm25195-bib-0032" ref-type="ref">2013</xref>; Muschelli et al., <xref rid="hbm25195-bib-0035" ref-type="ref">2014</xref>; Shmueli et al., <xref rid="hbm25195-bib-0055" ref-type="ref">2007</xref>).</p>
+      <p>In common practice, fMRI data preprocessing is used to reduce the noise. Preprocessing usually includes image realignment, spatial smoothing, filtering, and confound regression (Van Dijk et al., <xref rid="hbm25195-bib-0064" ref-type="ref">2009</xref>). There is no consensus on the optimal preprocessing strategy that should be applied to rs‐fMRI data (Aurich et al., <xref rid="hbm25195-bib-0002" ref-type="ref">2015</xref>; Caballero‐Gaudes &amp; Reynolds, <xref rid="hbm25195-bib-0012" ref-type="ref">2017</xref>). Since no preprocessing is completely successful in removing the motion influence (Ciric et al., <xref rid="hbm25195-bib-0015" ref-type="ref">2017</xref>; Siegel et al., <xref rid="hbm25195-bib-0056" ref-type="ref">2017</xref>), it is vital for connectivity studies to be able to quantify the amount of motion artifacts present in FC matrices. However, a reliable measure of FC quality has not yet been established. The absence of robust FC quality measure renders the estimation of the amount of motion artifact in an FC matrix impossible. We propose a new measure—Typicality of functional connectivity (TFC), that is based on a correlation of a single FC matrix with a typical FC matrix. We analyze it across different datasets, atlases, and preprocessing pipelines.</p>
+      <p>The individual deviations from a typical FC matrix might not be entirely attributable to artifacts and could be of neural origin. Nevertheless, we suggest that the most prominent deviations are likely to be dominated by non‐neuronal related signal changes and thus could identify potentially problematic subjects. Therefore, such measure can be helpful in investigations of individuals and populations whose in‐scanner movement profiles may differ subtly, for instance when comparing controls to subjects of different ages (e.g., during development or aging) or to individuals experiencing involuntary or repetitive movements (e.g., tics or tremors) (Bright &amp; Murphy, <xref rid="hbm25195-bib-0009" ref-type="ref">2013</xref>; Muschelli et al., <xref rid="hbm25195-bib-0035" ref-type="ref">2014</xref>). By definition, it should be sensitive also to other types of artifacts, processing errors, and possibly also brain pathology, allowing extensive use in data quality screening and quantification in FC studies as well as methodological investigations, such as the evaluation of preprocessing pipeline performances and the decision on suitable brain parcellation.</p>
+    </sec>
+    <sec id="hbm25195-sec-0002">
+      <label>2</label>
+      <title>MATERIALS AND METHODS</title>
+      <sec id="hbm25195-sec-0003">
+        <label>2.1</label>
+        <title>Data acquisition</title>
+        <sec id="hbm25195-sec-0004">
+          <label>2.1.1</label>
+          <title>Main dataset</title>
+          <p>For the main study, we took a dataset with 245 healthy subjects (148 right‐handed, 132 females, mean age 29.22/standard deviation 6.99). Participants were informed about the experimental procedures and provided written informed consent. The study design was approved by the local Ethics Committee of the Institute of Clinical and Experimental Medicine and the Psychiatric Center Prague. Each volunteer underwent MRI scanning that included 10 minutes of resting‐state functional magnetic resonance imaging acquisitions with eyes closed and acquisition of a T1‐weighted and T2‐weighted anatomical scan.</p>
+          <p>Scanning was performed with a 3T MRI scanner (Siemens; Magnetom Trio) located at the Institute of Clinical and Experimental Medicine in Prague, Czech Republic. Functional images were obtained using T2‐weighted echo‐planar imaging (EPI) with BOLD contrast. GE‐EPIs (TR/TE = 2,000/30 ms) comprised 35 axial slices—acquired continuously in descending order covering the entire cerebrum (48 × 64 voxels, voxel size = 3 × 3 × 3 mm<sup>3</sup>). A three‐dimensional high‐resolution T1‐weighted image (TR/TE/TI = 2,300/4.6/900 ms), (170 slices, 162 × 210 voxels, voxel = 1 × 1 × 1 mm<sup>3</sup>) covering the entire brain was used for anatomical reference. T2‐weighted images were also acquired but not used in the current study.</p>
+        </sec>
+        <sec id="hbm25195-sec-0005">
+          <label>2.1.2</label>
+          <title>Alternative dataset</title>
+          <p>For confirmation and additional analyses, we took a different dataset of 84 healthy subjects (80 right‐handed, 48 males, mean age 30.83/standard deviation 8.48). Each volunteer underwent MRI scanning that included 10 min of resting‐state functional magnetic resonance imaging acquisitions with eyes closed and acquisition of a T1‐weighted and T2‐weighted anatomical scan. Scanning was performed with a 3T MRI scanner (Siemens; Magnetom Trio). Functional images were obtained using T2‐weighted echo‐planar imaging (EPI) with BOLD contrast. GE‐EPIs (TR/TE = 2500/30 ms) comprised 44 axial slices acquired continuously in descending order covering the entire cerebrum (64 × 64 voxels, voxel size = 2 × 2 × 2 mm<sup>3</sup>). A three‐dimensional high‐resolution T1‐weighted image (TR/TE/TI = 2,300/4.6/900 ms, 169 slices, 176 × 189 voxels, voxel = 1 × 1 × 1 mm<sup>3</sup>) covering the entire brain was used for anatomical reference (for more details see Tomeček et al., <xref rid="hbm25195-bib-0060" ref-type="ref">2020</xref>).</p>
+        </sec>
+        <sec id="hbm25195-sec-0006">
+          <label>2.1.3</label>
+          <title>Human Connectome project</title>
+          <p>To be able to repeat and generalize our results, we analyzed preprocessed rs‐fMRI of 1,081 subjects from the WU‐Minn Human Connectome Project (in this article referred to simply as “HCP”). Data were downloaded from the HCP S1200 Release Resting‐State fMRI 1 FIX‐Denoised (Extended) package. We used the first 15 min of resting‐state scans with left–right phase‐encoding directions.</p>
+          <p>Structural dataset acquisitions included high resolution T1‐weighted and T2‐weighted images (TR/TE/TI = 2400/2.14/1,000 ms, voxel = 0.7 × 0.7 × 0.7 mm<sup>3</sup>, 256 sagittal slices). Resting‐state fMRI was acquired at 2 mm isotropic resolution, TR = 720 ms, TE = 33.1 ms, slice thickness of 2.0 mm, 72 slices. (for more details see Uğurbil et al. (<xref rid="hbm25195-bib-0063" ref-type="ref">2013</xref>)).</p>
+          <p>Data were already preprocessed (including spatial distortion correction, motion correction, spatial registration, normalization to MNI coordinates) and denoised using the FIX ICA‐based automated method. Artifacts, such as head motion or cardiac pulsation, are regressed out from high‐pass filtered data, along with 12 head‐motion‐related confound regressors (more details in Van Essen et al., <xref rid="hbm25195-bib-0066" ref-type="ref">2013</xref>; Burgess et al., <xref rid="hbm25195-bib-0011" ref-type="ref">2016</xref>).</p>
+        </sec>
+      </sec>
+      <sec id="hbm25195-sec-0007">
+        <label>2.2</label>
+        <title>Preprocessing</title>
+        <sec id="hbm25195-sec-0008">
+          <label>2.2.1</label>
+          <title>Stringent</title>
+          <p>Initial data preprocessing was performed using a combination of the SPM12 software package (Wellcome Department of Cognitive Neurology, London, UK) and CONN toolbox (McGovern Institute for Brain Research, MIT, USA) running under MATLAB (The Mathworks). CONNs default preprocessing pipeline (<italic>defaultMNI</italic>) comprises of the following steps: (1) functional realignment and unwarping, (2) slice‐timing correction, (3) structural segmentation into white matter and cerebrospinal fluid &amp; structural normalization to the MNI space, (4) functional normalization to the MNI space, (5) outlier detection, and (6) smoothing with 8 mm kernel size.</p>
+          <p>The default denoising steps in the CONN toolbox included a component‐based noise correction method (CompCor) performing regression of six head‐motion parameters (acquired during the correction of head‐motion) with their first order temporal derivatives and five principal components of white‐matter and cerebrospinal fluid (Behzadi et al., 2007). This default preprocessing might be suboptimal due to not suppressing the motion artifacts sufficiently (potential remedy could be including 24 instead of 12 motion parameters, although adding quadratic expansions showed similar preprocessing efficacy, see Parkes, Fulcher, Yücel, &amp; Fornito, <xref rid="hbm25195-bib-0037" ref-type="ref">2018</xref>), or due to removing some part of the neural‐induced signals (for discussion on the use of components in preprocessing see Barton et al., <xref rid="hbm25195-bib-0003" ref-type="ref">2019</xref>). Time series from defined regions of interest were additionally linearly detrended to remove possible signal drift and finally filtered by a band‐pass filter with cutoff frequencies 0.009–0.08 Hz. This preprocessing pipeline is labeled as <italic>stringent</italic> further in the manuscript.</p>
+          <p>To form FC matrices, we cross‐correlated the ROI‐based average BOLD time series. In line with the most common practice, we use the Pearson correlation coefficient to quantify FC and form FC matrices. Note that although other nonlinear approaches for FC assessment have been proposed, the linear Pearson correlation coefficient was shown to be sufficient under standard conditions (Hartman, Hlinka, Palus, Mantini, &amp; Corbetta, <xref rid="hbm25195-bib-0028" ref-type="ref">2011</xref>; Hlinka, Palus, Vejmelka, Mantini, &amp; Corbetta, <xref rid="hbm25195-bib-0030" ref-type="ref">2011</xref>). Fisher's r‐to‐z transformation (Zar, <xref rid="hbm25195-bib-0073" ref-type="ref">1999</xref>) was applied to each correlation coefficient to increase the normality of the distribution of correlation values.</p>
+        </sec>
+        <sec id="hbm25195-sec-0009">
+          <label>2.2.2</label>
+          <title>Moderate</title>
+          <p>We additionally used two more lenient processing setups in our analyses. In comparison with the <italic>stringent</italic> pipeline, the <italic>moderate</italic> denoising steps only included regression of six head‐motion parameters and one principal component of white‐matter and cerebrospinal fluid. A band‐pass filter with broader cutoff frequencies of 0.004–0.1 Hz was applied.</p>
+        </sec>
+        <sec id="hbm25195-sec-0010">
+          <label>2.2.3</label>
+          <title>Mild</title>
+          <p>The <italic>mild</italic> preprocessing consists of only CONNs default preprocessing pipeline—<italic>defaultMNI</italic>. No further filtering or regression was done.</p>
+        </sec>
+      </sec>
+      <sec id="hbm25195-sec-0011">
+        <label>2.3</label>
+        <title>Atlas choice</title>
+        <p>We chose a parcellation based on Craddock atlas because it offers an option to select the number of ROIs that represent spatially coherent regions with homogeneous connectivity. For each subject, we calculated 23 FC matrices that differ in the number of ROIs: ranging from 10 to 840 ROIs. With the increasing number of ROIs, the size of each ROI decreases (Figure <xref rid="hbm25195-supitem-0001" ref-type="supplementary-material">S1</xref>). If not stated otherwise, the default parcellation is into 200 regions (on average comprising 91.9 ± 18.8 voxels). The regions in Craddock atlas are created using a spectral clustering algorithm with various similarity metrics and group‐level clustering schemes (for details see Craddock, James, Holtzheimer, Hu, &amp; Mayberg, <xref rid="hbm25195-bib-0016" ref-type="ref">2012</xref>).</p>
+        <p>Moreover, to assess generalization to other types of atlases, we also used AAL atlas (90 ROIs) ‐the most common anatomical atlas (Tzourio‐Mazoyer et al., <xref rid="hbm25195-bib-0062" ref-type="ref">2002</xref>).</p>
+      </sec>
+      <sec id="hbm25195-sec-0012">
+        <label>2.4</label>
+        <title>Quantifying motion</title>
+        <p>Reporting motion statistics should be fundamental for any fMRI study, but Waheed et al. (<xref rid="hbm25195-bib-0068" ref-type="ref">2016</xref>) analyzed 100 most recent fMRI studies, and only 10% provided a table of motion metrics. Two of the most used motion metrics are framewise displacement (FD) and the derivative of root mean square variance over voxels (DVARS). We used mean FD and mean DVARS to quantify the amount of motion during a given scanning session. Distribution of each metric is available in <xref rid="hbm25195-supitem-0001" ref-type="supplementary-material">Figure S2</xref>.</p>
+        <sec id="hbm25195-sec-0013">
+          <label>2.4.1</label>
+          <title>Framewise displacement</title>
+          <p>FD represents a summarizing parameter of six head motion parameters (translational displacements along <italic>X</italic>, <italic>Y</italic>, and <italic>Z</italic> axes and rotational displacements of the pitch, yaw, and roll) from one volume to the next. It is an average of the rotation and translation parameters differences (Equation <xref rid="hbm25195-disp-0001" ref-type="disp-formula">1</xref>). (Power et al., <xref rid="hbm25195-bib-0041" ref-type="ref">2012</xref>).<disp-formula id="hbm25195-disp-0001"><label>(1)</label><mml:math id="nlm-math-1"><mml:mi>F</mml:mi><mml:msub><mml:mi>D</mml:mi><mml:mi>i</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:mfenced open="|" close="|" separators=""><mml:mrow><mml:mi>∆</mml:mi><mml:msub><mml:mi>d</mml:mi><mml:mi mathvariant="italic">ix</mml:mi></mml:msub></mml:mrow></mml:mfenced><mml:mo>+</mml:mo><mml:mfenced open="|" close="|" separators=""><mml:mrow><mml:mi>∆</mml:mi><mml:msub><mml:mi>d</mml:mi><mml:mi mathvariant="italic">iy</mml:mi></mml:msub></mml:mrow></mml:mfenced><mml:mo>+</mml:mo><mml:mfenced open="|" close="|" separators=""><mml:mrow><mml:mi>∆</mml:mi><mml:msub><mml:mi>d</mml:mi><mml:mi mathvariant="italic">iz</mml:mi></mml:msub></mml:mrow></mml:mfenced><mml:mo>+</mml:mo><mml:mfenced open="|" close="|" separators=""><mml:mrow><mml:mi>∆</mml:mi><mml:msub><mml:mi>α</mml:mi><mml:mi>i</mml:mi></mml:msub></mml:mrow></mml:mfenced><mml:mo>+</mml:mo><mml:mfenced open="|" close="|" separators=""><mml:mrow><mml:mi>∆</mml:mi><mml:msub><mml:mi>β</mml:mi><mml:mi>i</mml:mi></mml:msub></mml:mrow></mml:mfenced><mml:mo>+</mml:mo><mml:mfenced open="|" close="|" separators=""><mml:mrow><mml:mi>∆</mml:mi><mml:msub><mml:mi>γ</mml:mi><mml:mi>i</mml:mi></mml:msub></mml:mrow></mml:mfenced></mml:math></disp-formula>where the displacement of <inline-formula><italic>i</italic></inline-formula>
+<italic>‐th</italic> brain volume in x‐direction is <inline-formula><italic>∆d</italic><sub><italic>ix</italic></sub> = <italic>d</italic><sub>(<italic>i</italic> − 1)<italic>x</italic></sub> − <italic>d</italic><sub><italic>ix</italic></sub></inline-formula> and similarly for the other rigid body parameters. Rotational displacements were converted from degrees to millimeters by calculating displacement on the surface of a sphere of radius 50 mm.</p>
+        </sec>
+        <sec id="hbm25195-sec-0014">
+          <label>2.4.2</label>
+          <title>Derivative of root mean square variance over voxels</title>
+          <p>The DVARS quantifies changes of intensities between two images and it is calculated as the root mean square value of the differentiated BOLD time series within a spatial mask at every time‐point (Eq. <xref rid="hbm25195-disp-0002" ref-type="disp-formula">2</xref>)(Smyser et al., <xref rid="hbm25195-bib-0058" ref-type="ref">2010</xref>). DVARS is not derived from realignment parameters, and thus it could reflect any kind of bias. Nevertheless, the head motion has been proven to be a significant contributor to fluctuations in DVARS (Fair et al., <xref rid="hbm25195-bib-0021" ref-type="ref">2013</xref>). The quantity is calculated after FC processing and it is defined as:<disp-formula id="hbm25195-disp-0002"><label>(2)</label><mml:math id="nlm-math-2"><mml:mtext mathvariant="italic">DVARS</mml:mtext><mml:msub><mml:mfenced open="(" close=")" separators=""><mml:mrow><mml:mi>∆</mml:mi><mml:mi>I</mml:mi></mml:mrow></mml:mfenced><mml:mi>i</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:msqrt><mml:mfenced open="〈" close="〉" separators=""><mml:msup><mml:mfenced open="[" close="]" separators=""><mml:mrow><mml:mi>∆</mml:mi><mml:msub><mml:mi>I</mml:mi><mml:mi>i</mml:mi></mml:msub><mml:mfenced open="(" close=")" separators=""><mml:mover accent="true"><mml:mi>x</mml:mi><mml:mo stretchy="false">→</mml:mo></mml:mover></mml:mfenced></mml:mrow></mml:mfenced><mml:mn>2</mml:mn></mml:msup></mml:mfenced></mml:msqrt><mml:mo>=</mml:mo><mml:msqrt><mml:mfenced open="〈" close="〉" separators=""><mml:msup><mml:mfenced open="[" close="]" separators=""><mml:mrow><mml:msub><mml:mi>I</mml:mi><mml:mi>i</mml:mi></mml:msub><mml:mfenced open="(" close=")" separators=""><mml:mover accent="true"><mml:mi>x</mml:mi><mml:mo stretchy="false">→</mml:mo></mml:mover></mml:mfenced><mml:mo>−</mml:mo><mml:msub><mml:mi>I</mml:mi><mml:mrow><mml:mi>i</mml:mi><mml:mo>−</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:msub><mml:mfenced open="(" close=")" separators=""><mml:mover accent="true"><mml:mi>x</mml:mi><mml:mo stretchy="false">→</mml:mo></mml:mover></mml:mfenced></mml:mrow></mml:mfenced><mml:mn>2</mml:mn></mml:msup></mml:mfenced></mml:msqrt></mml:math></disp-formula>where <mml:math id="nlm-math-3"><mml:msub><mml:mi>I</mml:mi><mml:mi>i</mml:mi></mml:msub><mml:mfenced open="(" close=")" separators=""><mml:mover accent="true"><mml:mi>x</mml:mi><mml:mo stretchy="false">→</mml:mo></mml:mover></mml:mfenced></mml:math> is image intensity at locus <mml:math id="nlm-math-4"><mml:mover accent="true"><mml:mi>x</mml:mi><mml:mo stretchy="false">→</mml:mo></mml:mover></mml:math> on frame <inline-formula><italic>i</italic></inline-formula> and angle brackets denote the spatial average over the whole brain.</p>
+        </sec>
+      </sec>
+      <sec id="hbm25195-sec-0015">
+        <label>2.5</label>
+        <title>Measuring <styled-content style="fixed-case" toggle="no">FC</styled-content> quality</title>
+        <p>Estimating connectivity quality and assessing its relationship with motion is vital for all connectivity studies. Currently, there is no measure used in literature that allows quantifying it per subject. Here we present our new metric along metrics proposed by other groups.</p>
+        <sec id="hbm25195-sec-0016">
+          <label>2.5.1</label>
+          <title>Typicality of functional connectivity</title>
+          <p>We propose the TFC as a new measure for how to estimate FC quality. It is based on a correlation between an individual subjects FC matrix and a typical FC matrix of a given cohort (Equation <xref rid="hbm25195-disp-0003" ref-type="disp-formula">3</xref>). To exclude the influence of diagonal values, we vectorized the upper triangular form of all FC matrices (ignoring the diagonal elements).<disp-formula id="hbm25195-disp-0003"><label>(3)</label><mml:math id="nlm-math-5"><mml:mi mathvariant="italic">TF</mml:mi><mml:msub><mml:mi>C</mml:mi><mml:mi>i</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mn>1</mml:mn><mml:mo>+</mml:mo><mml:msub><mml:mi>r</mml:mi><mml:mi>P</mml:mi></mml:msub><mml:mfenced open="(" close=")" separators=","><mml:mrow><mml:mi>F</mml:mi><mml:msub><mml:mi>C</mml:mi><mml:mi>i</mml:mi></mml:msub></mml:mrow><mml:mover accent="true"><mml:mi mathvariant="italic">FC</mml:mi><mml:mo stretchy="true">¯</mml:mo></mml:mover></mml:mfenced></mml:mrow><mml:mn>2</mml:mn></mml:mfrac></mml:math></disp-formula>where <inline-formula><italic>i</italic></inline-formula> is a subject's index, <inline-formula><italic>r</italic><sub><italic>P</italic></sub></inline-formula> is a Pearson correlation coefficient and <mml:math id="nlm-math-6"><mml:mover accent="true"><mml:mi mathvariant="italic">FC</mml:mi><mml:mo stretchy="true">¯</mml:mo></mml:mover></mml:math> is the typical FC matrix. Throughout the manuscript, Spearman correlation is denoted as <inline-formula><italic>r</italic><sub>S</sub></inline-formula> and Pearson correlation as <inline-formula><italic>r</italic><sub><italic>P</italic></sub></inline-formula>. TFC ranges between 0 and 1, where 0 is a complete anti‐correlation, .5 is a correlation of 0, and 1 is a maximal correlation with the typical FC matrix.</p>
+          <p>As the template, we use the mean FC matrix of 10% subjects with the lowest motion (lowest mean FD). Taking mean FC across the whole dataset instead of 10% of subjects gives similar results (<xref rid="hbm25195-supitem-0001" ref-type="supplementary-material">Figure S3</xref>). Subjects are taken from the <italic>Alternative</italic> dataset (see Section <xref rid="hbm25195-sec-0002" ref-type="sec">2</xref>). Thus no subjects need to be eliminated from further analyses. If an alternative dataset with similar preprocessing is not at disposal, low‐movement subjects from the same dataset can be used. We assume that by averaging FC matrices of low‐movement subjects, we obtain a useful estimate of awake human brain FC. While minor or moderate deviations may represent effects of interest corresponding to inter‐individual variation in brain function, larger anomalies are likely to arise due to artifactual sources of signal variation and should be subject to screening.</p>
+        </sec>
+        <sec id="hbm25195-sec-0017">
+          <label>2.5.2</label>
+          <title>Euclidean <styled-content style="fixed-case" toggle="no"><italic>L</italic><sup>2</sup></styled-content> distance</title>
+          <p>Instead of using correlation as a similarity measure with the typical matrix, we also used distance (Ponsoda et al., <xref rid="hbm25195-bib-0040" ref-type="ref">2017</xref>). More specifically, the Euclidean <italic>L</italic>
+<sup>2</sup> distance defined as the mean distance between FC values from an upper triangular form of a single FC matrix (without diagonal) and corresponding typical FC values, resulting in a nonnegative value characterizing matrix typicality (Equation <xref rid="hbm25195-disp-0004" ref-type="disp-formula">4</xref>).<disp-formula id="hbm25195-disp-0004"><label>(4)</label><mml:math id="nlm-math-7"><mml:msub><mml:mi>d</mml:mi><mml:mi>i</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:mfrac><mml:mn>1</mml:mn><mml:mi>N</mml:mi></mml:mfrac><mml:munderover><mml:mo>∑</mml:mo><mml:mrow><mml:mi>j</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mi>N</mml:mi></mml:munderover><mml:msup><mml:mfenced open="(" close=")" separators=""><mml:mrow><mml:mi>F</mml:mi><mml:msubsup><mml:mi>C</mml:mi><mml:mi>i</mml:mi><mml:mi>j</mml:mi></mml:msubsup><mml:mo>−</mml:mo><mml:mover accent="true"><mml:mrow><mml:mi>F</mml:mi><mml:msup><mml:mi>C</mml:mi><mml:mi>j</mml:mi></mml:msup></mml:mrow><mml:mo stretchy="true">¯</mml:mo></mml:mover><mml:mspace width="0.25em"/></mml:mrow></mml:mfenced><mml:mn>2</mml:mn></mml:msup></mml:math></disp-formula>where <italic>i</italic> is a subject's index, <italic>j</italic> is an FC value index, <mml:math id="nlm-math-8"><mml:mover accent="true"><mml:mi mathvariant="italic">FC</mml:mi><mml:mo stretchy="true">¯</mml:mo></mml:mover></mml:math> is the typical FC matrix, and <italic>N</italic> is the number of FC values.</p>
+        </sec>
+        <sec id="hbm25195-sec-0018">
+          <label>2.5.3</label>
+          <title>Geodesic distance</title>
+          <p>Introduced by Venkatesh, Jaja, and Pessoa (<xref rid="hbm25195-bib-0067" ref-type="ref">2020</xref>), the reasoning behind this distance metric is that the correlation matrices lie on a nonlinear space. Geodesic distance between two points on the positive semidefinite cone (e.g., two FC matrices) is the shortest path between them along the manifold. Since it is not guaranteed that the typical FC matrix would lie on the manifold, we define this quality measure as the mean geodesic distance between a full FC matrix and all other FC matrices (Equation <xref rid="hbm25195-disp-0005" ref-type="disp-formula">5</xref>).<disp-formula id="hbm25195-disp-0005"><label>(5)</label><mml:math id="nlm-math-9"><mml:msub><mml:mi>d</mml:mi><mml:mi>i</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:mfrac><mml:mn>1</mml:mn><mml:mi>N</mml:mi></mml:mfrac><mml:munderover><mml:mo>∑</mml:mo><mml:mrow><mml:mi>j</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mi>N</mml:mi></mml:munderover><mml:msqrt><mml:mrow><mml:mtext mathvariant="italic">trace</mml:mtext><mml:mo stretchy="true">(</mml:mo><mml:msup><mml:mi>log</mml:mi><mml:mn>2</mml:mn></mml:msup><mml:mfenced open="(" close=")" separators=""><mml:mrow><mml:mi>F</mml:mi><mml:msubsup><mml:mi>C</mml:mi><mml:mi>i</mml:mi><mml:mfrac><mml:mn>1</mml:mn><mml:mn>2</mml:mn></mml:mfrac></mml:msubsup><mml:mspace width="0.25em"/><mml:mi>F</mml:mi><mml:msub><mml:mi>C</mml:mi><mml:mi>j</mml:mi></mml:msub><mml:mspace width="0.25em"/><mml:mi>F</mml:mi><mml:msubsup><mml:mi>C</mml:mi><mml:mi>i</mml:mi><mml:mfrac><mml:mn>1</mml:mn><mml:mn>2</mml:mn></mml:mfrac></mml:msubsup><mml:mspace width="0.25em"/></mml:mrow></mml:mfenced></mml:mrow></mml:msqrt><mml:mo stretchy="true">)</mml:mo></mml:math></disp-formula>where <italic>i</italic>, <italic>j</italic> are subject's indices.</p>
+        </sec>
+        <sec id="hbm25195-sec-0019">
+          <label>2.5.4</label>
+          <title>Quality control‐functional connectivity</title>
+          <p>In literature, the most used way to evaluate the presence of a motion artifact are quality control‐functional connectivity (QC‐FC) values (Ciric et al., <xref rid="hbm25195-bib-0015" ref-type="ref">2017</xref>; Parkes et al., <xref rid="hbm25195-bib-0037" ref-type="ref">2018</xref>; Power et al., <xref rid="hbm25195-bib-0044" ref-type="ref">2014</xref>; Satterthwaite et al., <xref rid="hbm25195-bib-0052" ref-type="ref">2012</xref>). This group measure examines how motion affects FC values for each pair of regions across subjects. Each FC value is directly correlated with a summary motion statistic (either mean FD or mean DVARS) across subjects. The median of these values shows if motion tends to increase or decrease connectivity and a correlation of QC‐FC with distance reveals the presence of spurious distance dependence.</p>
+        </sec>
+      </sec>
+      <sec id="hbm25195-sec-0020">
+        <label>2.6</label>
+        <title>
+<styled-content style="fixed-case" toggle="no">tSNR</styled-content>
+</title>
+        <p>The temporal signal to noise ratio is a useful measure of data quality (Bodurka, Ye, Petridou, Murphy, &amp; Bandettini, <xref rid="hbm25195-bib-0008" ref-type="ref">2007</xref>). Van Dijk et al. (<xref rid="hbm25195-bib-0065" ref-type="ref">2012</xref>) have found that low values of tSNR identify subjects with high head motion or other causes of data instability. For each ROI, the mean signal is divided by the standard deviation over the BOLD run, and tSNR is calculated as the mean tSNR value across all ROIs in the brain (Equation <xref rid="hbm25195-disp-0007" ref-type="disp-formula">6</xref>). An alternative is using a voxel‐based tSNR, where the signal from each gray matter voxel with signal values &gt;150 is used instead of ROIs.<disp-formula id="hbm25195-disp-0006"><mml:math id="nlm-math-10"><mml:mi mathvariant="italic">tSN</mml:mi><mml:msub><mml:mi>R</mml:mi><mml:mi>r</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:mfrac><mml:mfrac><mml:mrow><mml:munderover><mml:mo>∑</mml:mo><mml:mrow><mml:mi>t</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mi>T</mml:mi></mml:munderover><mml:mi>S</mml:mi><mml:mfenced open="(" close=")" separators=""><mml:mrow><mml:mi>r</mml:mi><mml:mo>,</mml:mo><mml:mi>t</mml:mi></mml:mrow></mml:mfenced></mml:mrow><mml:mi>T</mml:mi></mml:mfrac><mml:msqrt><mml:mfrac><mml:mrow><mml:munderover><mml:mo>∑</mml:mo><mml:mrow><mml:mi>t</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mi>T</mml:mi></mml:munderover><mml:mo stretchy="false">(</mml:mo><mml:msup><mml:mfenced open="(" close=")" separators=""><mml:mrow><mml:mi>S</mml:mi><mml:mfenced open="(" close=")" separators=""><mml:mrow><mml:mi>r</mml:mi><mml:mo>,</mml:mo><mml:mi>t</mml:mi></mml:mrow></mml:mfenced><mml:mo>−</mml:mo><mml:mover accent="true"><mml:mrow><mml:mi>S</mml:mi><mml:mfenced open="(" close=")" separators=""><mml:mi>r</mml:mi></mml:mfenced></mml:mrow><mml:mo stretchy="true">¯</mml:mo></mml:mover></mml:mrow></mml:mfenced><mml:mn>2</mml:mn></mml:msup></mml:mrow><mml:mi>T</mml:mi></mml:mfrac></mml:msqrt></mml:mfrac></mml:math></disp-formula>
+<disp-formula id="hbm25195-disp-0007"><label>(6)</label><mml:math id="nlm-math-11"><mml:mi mathvariant="italic">tSN</mml:mi><mml:mi mathvariant="normal">R</mml:mi><mml:mo>=</mml:mo><mml:mfrac><mml:mn>1</mml:mn><mml:mi>R</mml:mi></mml:mfrac><mml:munderover><mml:mo>∑</mml:mo><mml:mrow><mml:mi>r</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mi>R</mml:mi></mml:munderover><mml:mi mathvariant="italic">tSN</mml:mi><mml:msub><mml:mi>R</mml:mi><mml:mi>r</mml:mi></mml:msub></mml:math></disp-formula> where <inline-formula><italic>S</italic>(<italic>r,t</italic>)</inline-formula> is the signal magnitude at the ROI <italic>r</italic> in the time <italic>t</italic>. <mml:math id="nlm-math-12"><mml:mover accent="true"><mml:mrow><mml:mi mathvariant="italic">S</mml:mi><mml:mfenced open="(" close=")" separators=""><mml:mi mathvariant="italic">r</mml:mi></mml:mfenced></mml:mrow><mml:mo stretchy="true">¯</mml:mo></mml:mover></mml:math> is a temporal mean. <italic>T</italic> is the number of all brain volumes and <italic>R</italic> is the number of all ROIs.</p>
+      </sec>
+    </sec>
+    <sec id="hbm25195-sec-0021">
+      <label>3</label>
+      <title>RESULTS</title>
+      <p>We used TFC to estimate per subject quality and we analyzed it with respect to motion, atlas size, and preprocessing. We used FC matrices with <italic>stringent</italic> preprocessing parcellated into 200 ROIs using Craddock atlas as a default setup. The TFC metric was based on a comparison with the mean FC matrix of 10% subjects with the lowest mean FD from the <italic>Alternative</italic> dataset. Using the Spearman correlation, we found that it is significantly correlated with motion metrics (<mml:math id="nlm-math-13"><mml:msubsup><mml:mi>r</mml:mi><mml:mi mathvariant="italic">S</mml:mi><mml:mtext mathvariant="italic">DVARS</mml:mtext></mml:msubsup><mml:mo>=</mml:mo><mml:mo>−</mml:mo><mml:mn>.37</mml:mn><mml:mo>,</mml:mo><mml:mspace width="0.25em"/><mml:mi>p</mml:mi><mml:mo>&lt;</mml:mo><mml:msup><mml:mn>10</mml:mn><mml:mrow><mml:mo>−</mml:mo><mml:mn>8</mml:mn></mml:mrow></mml:msup><mml:mo>,</mml:mo><mml:mspace width="0.25em"/><mml:msubsup><mml:mi>r</mml:mi><mml:mi>S</mml:mi><mml:mi mathvariant="italic">FD</mml:mi></mml:msubsup><mml:mo>=</mml:mo><mml:mo>−</mml:mo><mml:mn>.20</mml:mn><mml:mo>,</mml:mo><mml:mspace width="0.25em"/><mml:mi>p</mml:mi><mml:mo>=</mml:mo><mml:mn>.002</mml:mn></mml:math>; Table <xref rid="hbm25195-tbl-0001" ref-type="table">1</xref>), meaning that an FC matrix of a subject with high mean head movement is less similar to the typical FC matrix compared to low‐movement subjects (Figure <xref rid="hbm25195-fig-0001" ref-type="fig">1a</xref>, <xref rid="hbm25195-supitem-0001" ref-type="supplementary-material">Figure S4</xref>). A correlation coefficient between a motion metric and TFC demonstrates a dependence between FC quality and gross head motion. The effect is more prominent in a high‐moving subgroup of subjects (<xref rid="hbm25195-supitem-0001" ref-type="supplementary-material">Figure S5</xref>). Both FD and DVARS are significantly related to FC quality but mean DVARS shows a generally higher absolute correlation than mean FD.</p>
+      <table-wrap id="hbm25195-tbl-0001" xml:lang="en" content-type="TABLE" orientation="portrait" position="float">
+        <label>TABLE 1</label>
+        <caption>
+          <p>Correlation of different measures of FC quality with motion metrics</p>
+        </caption>
+        <table frame="hsides" rules="groups">
+          <col align="left" span="1"/>
+          <col align="char" char="(" span="1"/>
+          <col align="char" char="(" span="1"/>
+          <col align="char" char="(" span="1"/>
+          <col align="char" char="(" span="1"/>
+          <thead valign="bottom">
+            <tr style="border-bottom:solid 1px #000000">
+              <th style="border-bottom:solid 1px #000000" align="left" valign="bottom" rowspan="1" colspan="1"/>
+              <th style="border-bottom:solid 1px #000000" align="left" colspan="2" valign="bottom" rowspan="1">DVARS</th>
+              <th style="border-bottom:solid 1px #000000" align="left" colspan="2" valign="bottom" rowspan="1">FD</th>
+            </tr>
+            <tr style="border-bottom:solid 1px #000000">
+              <th align="left" valign="bottom" rowspan="1" colspan="1"/>
+              <th align="left" valign="bottom" rowspan="1" colspan="1">Spearman</th>
+              <th align="left" valign="bottom" rowspan="1" colspan="1">Pearson</th>
+              <th align="left" valign="bottom" rowspan="1" colspan="1">Spearman</th>
+              <th align="left" valign="bottom" rowspan="1" colspan="1">Pearson</th>
+            </tr>
+          </thead>
+          <tbody valign="top">
+            <tr>
+              <td align="left" valign="top" rowspan="1" colspan="1">TFC</td>
+              <td align="char" valign="top" rowspan="1" colspan="1">
+<bold>−0.37</bold> (2 × 10<sup>−9</sup>)</td>
+              <td align="char" valign="top" rowspan="1" colspan="1">
+<bold>−0.38</bold> (7.3 × 10<sup>−10</sup>)</td>
+              <td align="char" valign="top" rowspan="1" colspan="1">
+<bold>−0.20</bold> (0.002)</td>
+              <td align="char" valign="top" rowspan="1" colspan="1">
+<bold>−0.23</bold> (2.8 × 10<sup>−4</sup>)</td>
+            </tr>
+            <tr>
+              <td align="left" valign="top" rowspan="1" colspan="1">
+<italic>L</italic>
+<sup>2</sup> distance</td>
+              <td align="char" valign="top" rowspan="1" colspan="1">0.01 (0.87)</td>
+              <td align="char" valign="top" rowspan="1" colspan="1">−0.09 (0.18)</td>
+              <td align="char" valign="top" rowspan="1" colspan="1">−0.02 (0.81)</td>
+              <td align="char" valign="top" rowspan="1" colspan="1">
+<bold>0.13</bold> (0.05)</td>
+            </tr>
+            <tr>
+              <td align="left" valign="top" rowspan="1" colspan="1">Geodesic distance</td>
+              <td align="char" valign="top" rowspan="1" colspan="1">−0.10 (0.11)</td>
+              <td align="char" valign="top" rowspan="1" colspan="1">
+<bold>0.39</bold> (2 × 10<sup>−10</sup>)</td>
+              <td align="char" valign="top" rowspan="1" colspan="1">
+<bold>−0.13</bold> (0.04)</td>
+              <td align="char" valign="top" rowspan="1" colspan="1">−0.08 (0.20)</td>
+            </tr>
+          </tbody>
+        </table>
+        <table-wrap-foot id="hbm25195-ntgp-0001">
+          <fn id="hbm25195-note-0001">
+            <p>
+<italic>Note:</italic> Only TFC shows significant correlations for both motion metrics and both Pearson and Spearman correlations. The corresponding <italic>p</italic>‐values are in brackets. Statistically significant (p &lt; .05) correlation values are set in bold.</p>
+          </fn>
+        </table-wrap-foot>
+      </table-wrap>
+      <fig fig-type="FIGURE" xml:lang="en" id="hbm25195-fig-0001" orientation="portrait" position="float">
+        <label>FIGURE 1</label>
+        <caption>
+          <p>Analysis of new FC quality metric—TFC. a) The significant relationship between mean DVARS and TFC (for FD see <xref rid="hbm25195-supitem-0001" ref-type="supplementary-material">Figure S4</xref>) proves that subjects with worse FC quality (lower correlation coefficient between a single FC matrix and the typical FC matrix) exhibit higher levels of motion. Calculated for Craddock atlas with 200 ROIs. (b) The quality of functional connectivity is decreasing as the number of ROIs increases. Mean ± standard deviation of TFC across atlases is plotted. Purple mark indicates AAL atlas. (c) Spearman correlations between TFC and two summarizing motion metrics for atlases with different number of ROIs. Except for the very small atlases, the relationship between FC quality and motion is constant. A circle mark indicates AAL atlas. (d) The highest absolute correlation of the TFC‐DVARS dependence is obtained if low‐movement subjects of the same dataset are used for the calculation of the typical FC matrix. Although, it is comparable to using low‐motion subjects of a different dataset. Because the typical matrix of the <italic>Main</italic> dataset is comparable to a typical matrix of the <italic>Alternative</italic> dataset (<inline-formula><italic>r</italic><sub><italic>P</italic></sub> = .86, <italic>p</italic> &lt; 10<sup>−16</sup>)</inline-formula> and similar to the typical matrix of HCP dataset (<inline-formula><italic>r</italic><sub><italic>P</italic></sub> = .68, <italic>p</italic> &lt; 10<sup>−16</sup></inline-formula>). Using all subjects from the same dataset yields lower correlations. (e) High movement volumes were censored based on an increasingly strict threshold. No substantial changes in TFC distributions are observable. (f) Comparison of quality of FC matrices of all subjects for three different preprocessing pipelines with different levels of strictness; <italic>stringent</italic> being the strictest and <italic>mild</italic> the most lenient. FC matrices with more strict preprocessing are significantly more similar to the typical FC matrix (paired <italic>t</italic>‐tests)</p>
+        </caption>
+        <graphic id="nlm-graphic-3" xlink:href="HBM-41-5325-g001"/>
+      </fig>
+      <p>Instead of TFC, we also tried a method based on Euclidean <italic>L</italic>
+<sup>2</sup> distance from the typical FC matrix and mean geodesic distance from the cohort. Unlike TFC measure, which shows significant both Spearman and Pearson quality‐motion correlations, the correlations of <italic>L</italic>
+<sup>2</sup> distance with motion were significant only using Pearson correlation and FD (<mml:math id="nlm-math-14"><mml:msubsup><mml:mi>r</mml:mi><mml:mi mathvariant="italic">P</mml:mi><mml:mi mathvariant="italic">FD</mml:mi></mml:msubsup><mml:mo>=</mml:mo><mml:mn>.13</mml:mn><mml:mo>,</mml:mo><mml:mspace width="0.25em"/><mml:mi>p</mml:mi><mml:mo>=</mml:mo><mml:mn>.05</mml:mn></mml:math>) because this relationship was driven mainly by outliers. Correlations with geodesic distance also did not show consistent significances and yielded only two significant results (<mml:math id="nlm-math-15"><mml:msubsup><mml:mi>r</mml:mi><mml:mi mathvariant="italic">P</mml:mi><mml:mtext mathvariant="italic">DVARS</mml:mtext></mml:msubsup><mml:mo>=</mml:mo><mml:mn>.39</mml:mn><mml:mo>,</mml:mo><mml:mspace width="0.25em"/><mml:mi>p</mml:mi><mml:mo>&lt;</mml:mo><mml:msup><mml:mn>10</mml:mn><mml:mrow><mml:mo>−</mml:mo><mml:mn>9</mml:mn></mml:mrow></mml:msup><mml:mo>,</mml:mo><mml:mspace width="0.25em"/><mml:msubsup><mml:mi>r</mml:mi><mml:mi mathvariant="italic">S</mml:mi><mml:mi mathvariant="italic">FD</mml:mi></mml:msubsup><mml:mo>=</mml:mo><mml:mo>−</mml:mo><mml:mn>.13</mml:mn><mml:mo>,</mml:mo><mml:mspace width="0.25em"/><mml:mi>p</mml:mi><mml:mo>=</mml:mo><mml:mn>.04</mml:mn></mml:math>; Table <xref rid="hbm25195-tbl-0001" ref-type="table">1</xref>).</p>
+      <p>Since motion parameters may contain outliers and Spearman correlation is less sensitive to outliers compared to Pearson correlation (see de Winter, de Samuel, Gosling, &amp; Potter, <xref rid="hbm25195-bib-0017" ref-type="ref">2016</xref>), we prefer to use it throughout the manuscript when assessing the relationship with motion.</p>
+      <p>We further analyzed only TFC as a quality measure. We evaluated it for every subject across Craddock atlases with varying number and size of ROIs, from 10 to 840 regions, and for AAL atlas with 90 ROIs. From Figure <xref rid="hbm25195-fig-0001" ref-type="fig">1b</xref>, it is evident that FC quality decreases as the atlas size increases. Therefore, more detailed FC matrices are of worse quality. We investigated whether this gradual decrease is driven by the increased effect of motion on signals in small regions. We calculated correlations between motion and TFC across variously detailed atlases and found that, except for atlases with less than 100 regions, the relationship is stable (<mml:math id="nlm-math-16"><mml:msubsup><mml:mi>r</mml:mi><mml:mi mathvariant="italic">S</mml:mi><mml:mtext mathvariant="italic">DVARS</mml:mtext></mml:msubsup><mml:mo>≈</mml:mo><mml:mo>−</mml:mo><mml:mn>0.38</mml:mn><mml:mo>,</mml:mo><mml:mspace width="0.25em"/><mml:mi>p</mml:mi><mml:mo>&lt;</mml:mo><mml:msup><mml:mn>10</mml:mn><mml:mrow><mml:mo>−</mml:mo><mml:mn>9</mml:mn></mml:mrow></mml:msup><mml:mo>,</mml:mo><mml:mspace width="0.25em"/><mml:msubsup><mml:mi>r</mml:mi><mml:mi mathvariant="italic">S</mml:mi><mml:mi mathvariant="italic">FD</mml:mi></mml:msubsup><mml:mo>≈</mml:mo><mml:mo>−</mml:mo><mml:mn>0.23</mml:mn><mml:mo>,</mml:mo><mml:mspace width="0.25em"/><mml:mi>p</mml:mi><mml:mspace width="0.25em"/><mml:mo>≈</mml:mo><mml:mspace width="0.25em"/><mml:mn>.001</mml:mn></mml:math>; Figure <xref rid="hbm25195-fig-0001" ref-type="fig">1c</xref>). AAL atlas shows similar results to Craddock atlas of corresponding size (<mml:math id="nlm-math-17"><mml:msubsup><mml:mi>r</mml:mi><mml:mi mathvariant="italic">S</mml:mi><mml:mtext mathvariant="italic">DVARS</mml:mtext></mml:msubsup><mml:mo>=</mml:mo><mml:mo>−</mml:mo><mml:mn>.33</mml:mn><mml:mo>,</mml:mo><mml:mspace width="0.25em"/><mml:mi>p</mml:mi><mml:mo>&lt;</mml:mo><mml:msup><mml:mn>10</mml:mn><mml:mrow><mml:mo>−</mml:mo><mml:mn>7</mml:mn></mml:mrow></mml:msup><mml:mo>,</mml:mo><mml:mspace width="0.25em"/><mml:msubsup><mml:mi>r</mml:mi><mml:mi mathvariant="italic">S</mml:mi><mml:mi mathvariant="italic">FD</mml:mi></mml:msubsup><mml:mo>=</mml:mo><mml:mo>−</mml:mo><mml:mn>.24</mml:mn><mml:mo>,</mml:mo><mml:mspace width="0.25em"/><mml:mi>p</mml:mi><mml:mo>&lt;</mml:mo><mml:msup><mml:mn>10</mml:mn><mml:mrow><mml:mo>−</mml:mo><mml:mn>4</mml:mn></mml:mrow></mml:msup></mml:math>).</p>
+      <p>By default, the typical FC matrix is based on connectivity estimates of subjects from a different dataset (identical preprocessing pipeline). The correlation with motion would be only slightly stronger if based on low‐movement subjects from the same dataset (for the price of losing 10% subjects). If we use all subjects from the current dataset for the calculation of the typical FC matrix, the observed relationships are weaker (Figure <xref rid="hbm25195-fig-0001" ref-type="fig">1d</xref>), possibly due to the presence of various types of noises. Even using a different dataset with different preprocessing, such as HCP, still gives significant results (only for DVARS).</p>
+      <p>Censoring volumes acquired during periods of high‐motion is a widespread preprocessing step in rs‐FC studies. We varied the threshold for volume exclusion from FD &gt; 0.2 to FD &gt; 0.5 in order to analyze the effect of volume censoring on TFC (Figure <xref rid="hbm25195-fig-0001" ref-type="fig">1e</xref>). Censoring was performed only after preprocessing was complete and only for the motion corrupted volume (although we obtained similar results if two volumes before and one after were discarded as well). Only a few FC matrices seemed to degrade in quality. We did not observe a substantial change of TFC even under the strictest conditions, where more than 15% of volumes were excluded on average.</p>
+      <p>Besides the influence of ROI size and censoring on FC quality, we also analyzed the influence of data preprocessing on FC quality. We compared FC quality for three different preprocessing pipelines based on their strictness—<italic>stringent</italic>, <italic>moderate</italic>, and <italic>mild</italic>. In Figure <xref rid="hbm25195-fig-0001" ref-type="fig">1f</xref> we see that with the increasing strictness the individual FC matrices more resemble the typical FC matrix: mean (TFC<sub>stringent</sub>) = 0.80, mean (TFC<sub>moderate</sub>) = 0.77, mean (TFC<sub>mild</sub>) = 0.71. These TFC distributions are statistically different based on paired <italic>t</italic>‐test between every pair of preprocessing pipelines (all <italic>p</italic>‐values &lt;10<sup>−16</sup>). For all these cases, we used the typical FC matrix of a dataset with stringent preprocessing, but results were similar if each preprocessing stream used its own FC matrix as a golden standard (<xref rid="hbm25195-supitem-0001" ref-type="supplementary-material">Figure S6</xref>).</p>
+      <p>To compare TFC with other quality measures, we calculated QC‐FC values. We obtained a positive median of QC‐FC and significant negative correlation between QC‐FC and distance for both quality control metrics (<mml:math id="nlm-math-18"><mml:msubsup><mml:mi>r</mml:mi><mml:mi mathvariant="italic">S</mml:mi><mml:mi mathvariant="italic">FD</mml:mi></mml:msubsup><mml:mo>=</mml:mo><mml:mo>−</mml:mo><mml:mn>.13</mml:mn><mml:mo>,</mml:mo><mml:mspace width="0.25em"/><mml:mi>p</mml:mi><mml:mo>&lt;</mml:mo><mml:msup><mml:mn>10</mml:mn><mml:mrow><mml:mo>−</mml:mo><mml:mn>9</mml:mn></mml:mrow></mml:msup><mml:mo>,</mml:mo><mml:mspace width="0.25em"/><mml:msubsup><mml:mi>r</mml:mi><mml:mi mathvariant="italic">S</mml:mi><mml:mtext mathvariant="italic">DVARS</mml:mtext></mml:msubsup><mml:mo>=</mml:mo><mml:mo>−</mml:mo><mml:mn>.02</mml:mn><mml:mo>,</mml:mo><mml:mspace width="0.25em"/><mml:mi>p</mml:mi><mml:mo>=</mml:mo><mml:mn>.02</mml:mn></mml:math> (Figure <xref rid="hbm25195-fig-0002" ref-type="fig">2a,b</xref>). Nevertheless, only 21% of DVARS‐FC values (resp. 13% for FD) were significant (Figure <xref rid="hbm25195-fig-0002" ref-type="fig">2c</xref>). The relationship between QC‐FC and distance is constant across atlases of various sizes (Figure <xref rid="hbm25195-fig-0002" ref-type="fig">2d</xref>).</p>
+      <fig fig-type="FIGURE" xml:lang="en" id="hbm25195-fig-0002" orientation="portrait" position="float">
+        <label>FIGURE 2</label>
+        <caption>
+          <p>Comparison of TFC with other measures of FC and data quality. (a) The QC‐FC correlations quantify the association between inter‐individual variance in functional connectivity and gross head motion. A positive median of QC‐FC values signifies that head motion increases connectivity (for both FD and DVARS). (b) This effect is more prominent for short‐links and it is more specifically related to motion as correlations are stronger when FD models quality controls. *signifies <italic>p</italic> &lt; .05, ** <italic>p</italic> &lt; .001 (c) On the other hand, the amount of edges that are significantly affected by movements is more easily detectable with DVARS. (d) Above mentioned effects are stable across atlases with different number of ROIs. Magnitudes of TFC correlations are higher than the median of DVARS‐FC, proving its viability as an estimator. Plotted only for mean DVARS but results with FD are similar. A circle mark indicates AAL atlas. (e) tSNR measures different data aspects than TFC as the correlation is weak. Nevertheless, it is significant and positive. (f) With decreasing size of ROIs, the relationship between tSNR and mean DVARS gets stronger. This trend is not present for FD, suggesting that the phenomenon is potentially caused by other types of noise than a head movement</p>
+        </caption>
+        <graphic id="nlm-graphic-5" xlink:href="HBM-41-5325-g002"/>
+      </fig>
+      <p>So far, we focused only on the quality of connectivity matrices, but the noisiness of the underlying BOLD time series can also be estimated in the form of tSNR. It is apparent that tSNR measures different data aspects compared to TFC as they correlate only weakly (mean <inline-formula><italic>r</italic><sub>S</sub> = .26</inline-formula>, all p‐values &lt;10<sup>−6</sup>) (Figure <xref rid="hbm25195-fig-0002" ref-type="fig">2e</xref>). We obtained similar results for both voxel‐wise and ROI‐wise tSNR. To test whether there is a change in tSNR‐motion relationship across parcellations, we correlated it with FD and DVARS across differently sized atlases (Figure <xref rid="hbm25195-fig-0002" ref-type="fig">2f</xref>). DVARS displays a progressive increase of absolute correlation with tSNR, unlike FD (changes of correlations between smallest and highest atlas: <mml:math id="nlm-math-19"><mml:mi>∆</mml:mi><mml:msubsup><mml:mi>r</mml:mi><mml:mi mathvariant="italic">S</mml:mi><mml:mtext mathvariant="italic">DVARS</mml:mtext></mml:msubsup><mml:mo>=</mml:mo><mml:mn>0.13</mml:mn><mml:mo>,</mml:mo><mml:mspace width="0.25em"/><mml:mi>∆</mml:mi><mml:msubsup><mml:mi>r</mml:mi><mml:mi mathvariant="italic">S</mml:mi><mml:mi mathvariant="italic">FD</mml:mi></mml:msubsup><mml:mo>=</mml:mo><mml:mn>0</mml:mn></mml:math>, all <italic>p</italic>‐values &lt;10<sup>−11</sup>).</p>
+      <p>To demonstrate the robustness of our methods, we applied the same analysis to the HCP dataset. Even though it is a dataset with a different preprocessing pipeline, we observed only slightly higher magnitudes of TFC compared to the <italic>main</italic> dataset (Figure <xref rid="hbm25195-fig-0003" ref-type="fig">3a</xref>). Similarly, TFC magnitudes were decreasing with increasing atlas size. Again, TFC significantly correlated with both motion metrics (<mml:math id="nlm-math-20"><mml:msubsup><mml:mi>r</mml:mi><mml:mi mathvariant="italic">S</mml:mi><mml:mtext mathvariant="italic">DVARS</mml:mtext></mml:msubsup><mml:mo>=</mml:mo><mml:mo>−</mml:mo><mml:mn>.13</mml:mn><mml:mo>,</mml:mo><mml:mspace width="0.25em"/><mml:mi>p</mml:mi><mml:mo>&lt;</mml:mo><mml:msup><mml:mn>10</mml:mn><mml:mrow><mml:mo>−</mml:mo><mml:mn>5</mml:mn></mml:mrow></mml:msup><mml:mo>,</mml:mo><mml:msubsup><mml:mrow><mml:mspace width="0.25em"/><mml:mi>r</mml:mi></mml:mrow><mml:mi mathvariant="italic">S</mml:mi><mml:mi mathvariant="italic">FD</mml:mi></mml:msubsup><mml:mo>=</mml:mo><mml:mo>−</mml:mo><mml:mn>.23</mml:mn><mml:mo>,</mml:mo><mml:mspace width="0.25em"/><mml:mi>p</mml:mi><mml:mo>&lt;</mml:mo><mml:msup><mml:mn>10</mml:mn><mml:mrow><mml:mo>−</mml:mo><mml:mn>12</mml:mn></mml:mrow></mml:msup></mml:math>). Using AAL parcellation yielded FC matrices of higher quality with a lower amount of motion (weaker TFC‐motion correlation, especially for FD, <mml:math id="nlm-math-21"><mml:msubsup><mml:mi>r</mml:mi><mml:mi mathvariant="italic">S</mml:mi><mml:mi mathvariant="italic">FD</mml:mi></mml:msubsup><mml:mo>=</mml:mo><mml:mo>−</mml:mo><mml:mn>.11</mml:mn><mml:mo>,</mml:mo><mml:mspace width="0.25em"/><mml:mi>p</mml:mi><mml:mo>&lt;</mml:mo><mml:msup><mml:mn>10</mml:mn><mml:mrow><mml:mo>−</mml:mo><mml:mn>4</mml:mn></mml:mrow></mml:msup></mml:math>). We confirm that the TFC‐motion relationship is stable across various atlases (except for the smallest ones). In general, mean FD showed stronger absolute correlations with TFC (Figure <xref rid="hbm25195-fig-0003" ref-type="fig">3b</xref>). When analyzing QC‐FC values, only the median FD‐FC values showed a spurious increase in connectivity (Figure <xref rid="hbm25195-fig-0003" ref-type="fig">3c</xref>). Moreover, we did not obtain a significant correlation between QC‐FC values and distance (<inline-formula><italic>p</italic> &gt; .05</inline-formula> for both FD and DVARS), proving successful mitigation of distance dependence and other motion‐related impurities for the HCP preprocessing pipeline. On the contrary, a relatively high amount of FC values was correlated with head movements (&gt;50% for FD). Based both on QC‐FC and TFC, the head motion effect on connectivity seems to be constant and independent of ROI size (Figure <xref rid="hbm25195-fig-0003" ref-type="fig">3d</xref>).</p>
+      <fig fig-type="FIGURE" xml:lang="en" id="hbm25195-fig-0003" orientation="portrait" position="float">
+        <label>FIGURE 3</label>
+        <caption>
+          <p>HCP dataset quality assessment. (a) The HCP dataset shows higher magnitudes of TFC compared to the <italic>Main</italic> dataset. Similarly, TFC is decreasing with decreasing atlas size. A purple mark indicates AAL atlas. (b) Again, the TFC‐motion relationship is stable across various atlases (except for the smallest ones). Mean FD shows a stronger absolute correlation with TFC. A circle mark indicates AAL atlas. (c) In the analysis of QC‐FC values, only the median FD‐FC values shows a spurious increase in connectivity. Moreover, the correlation between QC‐FC values and distance was not significant, proving successful mitigation of distance dependence for the HCP preprocessing pipeline. Nevertheless, a relatively high amount of FC values is correlated with head movements (&gt;50% for FD). (d) Even in the HCP dataset, TFC significantly correlated with the motion (mean FD). Based both on FD‐FC and TFC, the head motion effect on connectivity seems to be constant and independent of ROI size</p>
+        </caption>
+        <graphic id="nlm-graphic-7" xlink:href="HBM-41-5325-g003"/>
+      </fig>
+      <p>Several times, when comparing results across differently sized atlases, we observed an effect of atlas size when up to 100 ROIs were used. This effect might be driven by two factors: by the number of regions or by the size of regions. To test the first hypothesis, we randomly selected 50, 100, 150, … , 700 ROIs out of an atlas with 950 ROIs. We calculated both TFC and ROI‐based tSNR and analyzed their relationship with head movement 1,000 times. In this scenario, the number of voxels in a region is fixed (21.9 ± 0.3) and only the number of regions varies. Neither based tSNR nor TFC depends on the number of regions. We only observed a small gradual increase in the TFC‐motion relationship when only a few regions were selected (Figure <xref rid="hbm25195-fig-0004" ref-type="fig">4a</xref>).</p>
+      <fig fig-type="FIGURE" xml:lang="en" id="hbm25195-fig-0004" orientation="portrait" position="float">
+        <label>FIGURE 4</label>
+        <caption>
+          <p>Are atlas size effects driven by the number of regions or by the number of voxels? (a) In an atlas with 950 ROIs, we randomly selected 50, 100, 150, … , 700 ROIs to get quality estimates depending only on the number of regions but independent of the number of voxels. Neither ROI‐based tSNR nor TFC changes with the number of regions. Only the relationship between TFC and motion is slightly weaker for smaller numbers of regions. (b) To create a brain parcellation with a fixed number of regions but a varying number of voxels, we built different geometrical shapes around a central voxel of a region. (c) Within an atlas of 100 ROIs, we varied the number of voxels that formed a region. Both voxel‐based tSNR and TFC depend on the number of voxels. Moreover, while the tSNR‐DVARS relationship is stronger for the smaller number of voxels, the opposite is present for the TFC‐motion relationships</p>
+        </caption>
+        <graphic id="nlm-graphic-9" xlink:href="HBM-41-5325-g004"/>
+      </fig>
+      <p>To test the second hypothesis, we took an atlas with 100 ROIs (183.8 ± 35.8 voxels per region) and we created different geometrical shapes around the central voxel that varied in the number of voxels (Figure <xref rid="hbm25195-fig-0004" ref-type="fig">4b</xref>). Un‐smoothed data were analyzed to avoid the effect of smoothing kernel size. We used FSL routines (FMRIB Software Library v5.0, Analysis Group, FMRIB, Oxford, UK) to create our parcellation schemes. Both tSNR and TFC increase with the increasing number of voxels. On the contrary, TFC‐motion dependence is weaker for the low number of voxels (Figure <xref rid="hbm25195-fig-0004" ref-type="fig">4c</xref>). These results suggest that regions with few voxels produced noisier data and FC matrices. Additionally, when choosing only a few regions (&lt;100), it is more difficult to estimate a significant relationship between quality and movement.</p>
+    </sec>
+    <sec id="hbm25195-sec-0022">
+      <label>4</label>
+      <title>DISCUSSION</title>
+      <sec id="hbm25195-sec-0023">
+        <label>4.1</label>
+        <title>Estimation of <styled-content style="fixed-case" toggle="no">FC</styled-content> quality</title>
+        <p>The lack of a gold standard for FC quality estimation has hampered direct comparison among different groups (neurodevelopmental, aging, and neuropsychiatric), preprocessing pipelines, and brain parcellations. We introduced a new measure (TFC) to describe the quality of a FC per subject. This measure is based on a correlation of a single FC matrix with the low‐motion group‐average connectivity matrix. As we showed, it provides a reliable estimate of FC quality with respect to motion and possibly other types of noise. Low‐movement subject's FC matrices are strongly correlated with the typical FC matrix compared to high‐movement subjects, despite the fact that even our high‐movement subjects were healthy controls and would meet inclusion criteria for analyses in most MRI laboratories (<xref rid="hbm25195-supitem-0001" ref-type="supplementary-material">Figure S2</xref>). Moreover, by visual inspection, it is apparent that subjects with low TFC either lost the modular structure present at the typical FC matrix or show a general artifactual increase in connectivity (<xref rid="hbm25195-supitem-0001" ref-type="supplementary-material">Figure S7</xref>).</p>
+        <p>An alternative measure to TFC could be Euclidean <italic>L</italic>
+<sup>2</sup> distance from the typical FC matrix or mean geodesic distance from the cohort, but our results suggest that these measures are less specifically related to motion. One of the reasons could be that they are more sensitive to other global artifacts.</p>
+        <p>Currently, many studies propose QC‐FC values as a measure of motion impact (Ciric et al., <xref rid="hbm25195-bib-0015" ref-type="ref">2017</xref>; Power et al., <xref rid="hbm25195-bib-0047" ref-type="ref">2015</xref>; Power, Plitt, Kundu, Bandettini, &amp; Martin, <xref rid="hbm25195-bib-0046" ref-type="ref">2017</xref>). QC‐FC values are correlations between vectors of summary quality (motion) control values (e.g., mean FD, mean DVARS) with vectors of outcome measures (FC values) across subjects. A limitation of this measure is that it is used only on a group level and it does not allow single subject descriptions. We confirmed that head movements generally increase connectivity (median QC‐FC similar to the one reported in Ciric et al. (<xref rid="hbm25195-bib-0015" ref-type="ref">2017</xref>) and Parkes et al. (<xref rid="hbm25195-bib-0037" ref-type="ref">2018</xref>) for corresponding preprocessing pipeline) and that it affects distance dependency ‐ increased short‐range connectivity and decreased long‐range connectivity (Power et al., <xref rid="hbm25195-bib-0041" ref-type="ref">2012</xref>, <xref rid="hbm25195-bib-0047" ref-type="ref">2015</xref>; Satterthwaite et al., <xref rid="hbm25195-bib-0050" ref-type="ref">2019</xref>). This spatial pattern is specifically related to motion as we found stronger dependence for FD. As reported in Ciric et al. (<xref rid="hbm25195-bib-0015" ref-type="ref">2017</xref>), the number of links related to motion varies significantly (in our results less than 25% QC‐FC values significant). Power et al. (<xref rid="hbm25195-bib-0047" ref-type="ref">2015</xref>) warned about the possible difficulty of establishing reliable QC‐FC correlation if there is little variability in the QC measure. Moreover, QC‐FC values are sensitive to outlying values and a few scans with marked abnormalities can obscure relationships present across most other datasets (Power et al., <xref rid="hbm25195-bib-0046" ref-type="ref">2017</xref>). Finally, they were criticized that they lie on a flawed assumption that “artifact‐free” rs‐FC is unrelated to motion QC measures (Williams &amp; Snellenberg, <xref rid="hbm25195-bib-0069" ref-type="ref">2019</xref>). That is why QC‐FC should be complemented with other assessments.</p>
+        <p>Several other metrics have also been adopted in prior studies, including FD‐DVARS correlations (Muschelli et al., <xref rid="hbm25195-bib-0035" ref-type="ref">2014</xref>). DVARS was used as a predictor of data quality rather than an estimate of the amount of motion. Before the preprocessing, DVARS strongly correlates with FD, and this similarity diminishes with processing (Power et al., <xref rid="hbm25195-bib-0044" ref-type="ref">2014</xref>). That is why DVARS could serve as a marker of nuisances in an FC matrix (Hallquist, Hwang, &amp; Luna, <xref rid="hbm25195-bib-0027" ref-type="ref">2013</xref>; Power et al., <xref rid="hbm25195-bib-0041" ref-type="ref">2012</xref>, <xref rid="hbm25195-bib-0044" ref-type="ref">2014</xref>). Nevertheless, DVARS changes during processing steps, even when the motion artifact is not filtered out (Spisák et al., <xref rid="hbm25195-bib-0059" ref-type="ref">2014</xref>). Therefore, it is not recommended to use the FD‐DVARS relationship as an FC quality estimate, but rather it is advised to use DVARS as a motion metric. Another metric sometimes used to assess the presence of motion and the success of denoising strategies are FD‐BOLD signal correlations. It has been suggested that the positive FD‐BOLD correlations (especially in primary and supplementary motor areas) may reflect motion‐related neural activity (Yan, Cheung, et al.,<xref rid="hbm25195-bib-0070" ref-type="ref">2013</xref>, Yan, Craddock, et al., <xref rid="hbm25195-bib-0071" ref-type="ref">2013</xref>). However, according to Power et al. (<xref rid="hbm25195-bib-0047" ref-type="ref">2015</xref>), these correlations are probably not related to neural activity. Finally, Saad et al. (<xref rid="hbm25195-bib-0049" ref-type="ref">2013</xref>) proposed a global correlation (i.e., mean across all FC values) as a quality estimator, but the reported correlation with motion was not statistically significant.</p>
+        <p>Other methods entail identification and exclusion of time points for which head movement exceeds a certain threshold (Patel et al., <xref rid="hbm25195-bib-0038" ref-type="ref">2014</xref>; Power et al., <xref rid="hbm25195-bib-0044" ref-type="ref">2014</xref>). Such threshold becomes increasingly stringent as the effects of motion have received greater recognition (Engelhardt et al., <xref rid="hbm25195-bib-0019" ref-type="ref">2017</xref>). Recently, overly aggressive censoring of volumes was reported due to motion estimates that were artifactually inflated by respiratory artifacts (Gratton et al., <xref rid="hbm25195-bib-0025" ref-type="ref">2020</xref>). We did not investigate such measures (e.g., ∆<italic>r</italic> reported in several articles (Power et al., <xref rid="hbm25195-bib-0041" ref-type="ref">2012</xref>, <xref rid="hbm25195-bib-0044" ref-type="ref">2014</xref>; Power, Barnes, Snyder, Schlaggar, &amp; Petersen, <xref rid="hbm25195-bib-0042" ref-type="ref">2013</xref>; Power, Lynch, et al., <xref rid="hbm25195-bib-0043" ref-type="ref">2019</xref>; Power, Silver, et al., <xref rid="hbm25195-bib-0048" ref-type="ref">2019</xref>) or MAC‐RSFC (Williams &amp; Snellenberg, <xref rid="hbm25195-bib-0069" ref-type="ref">2019</xref>)) because they require data scrubbing and our goal was to avoid discarding any frames/time points. Nevertheless, we investigated the influence of censoring on TFC. We did not observe substantial changes in the results of the analysis, even under the strict threshold (censoring volumes where FD &gt;0.2). Moreover, according to Muschelli et al. (<xref rid="hbm25195-bib-0035" ref-type="ref">2014</xref>), censoring seems to be unnecessary or even be detrimental when CompCor approaches are used for denoising resting‐state data.</p>
+        <p>Corrections of group‐level statistics are commonly implemented by regressing a summary motion metric for each subject (Satterthwaite et al., <xref rid="hbm25195-bib-0052" ref-type="ref">2012</xref>; Van Dijk et al., <xref rid="hbm25195-bib-0065" ref-type="ref">2012</xref>; Yan, Cheung, et al., <xref rid="hbm25195-bib-0070" ref-type="ref">2013</xref>; Power et al., <xref rid="hbm25195-bib-0044" ref-type="ref">2014</xref>). However, we propose that adding TFC measure could bring further advantages, especially in investigations of potentially problematic individuals, populations in which head‐movement profiles differ subtly (e.g., children or elderly cohorts) or individuals experiencing involuntary or repetitive movements (e.g., tics or tremors). TFC offers extensive use in data quality screening and quantification in FC studies as well as methodological investigations.</p>
+      </sec>
+      <sec id="hbm25195-sec-0024">
+        <label>4.2</label>
+        <title>Effect of <styled-content style="fixed-case" toggle="no">ROI</styled-content> size</title>
+        <p>After introducing the TFC measure, our secondary goal was to analyze it under different conditions such as different preprocessing pipelines, varying atlas sizes, or across censoring thresholds. While the censoring did not have a substantial effect, as already discussed, the increasing strictness of the preprocessing pipeline did generally increase TFC values.</p>
+        <p>For the first time, we now discuss the interesting but unexplored topic of the influence atlas size on FC quality. The impossibility of optimal brain MRI parcellation makes the definition of regions of interest arbitrary. The number of ROIs ranges from 10 to 10<sup>4</sup> in voxel‐based studies (for review, see Zalesky et al., <xref rid="hbm25195-bib-0072" ref-type="ref">2010</xref>; Shen, Tokoglu, Papademetris, &amp; Constable, <xref rid="hbm25195-bib-0054" ref-type="ref">2013</xref>). However, how ROI size affects FC is unclear. Therefore, we examined the quality of FC matrices of varying sizes with respect to motion; the size of FC matrices varied from 10 to 840 ROIs, according to Craddock atlas.</p>
+        <p>We found an effect of ROI size on the FC quality, meaning a finer parcellation yielded noisier FC matrices. According to QC‐FC values, this effect is not related to head movements as medians QC‐FC and QC‐FC correlations with distance were constant across atlases. Using TFC confirmed that the decrease in quality is specifically related to other types of noise, only large ROIs (atlas with &lt;100 ROIs) showed increasing absolute correlation between TFC and DVARS/FD with decreasing ROI size. However, large ROIs carry the risk that the mean time course may not represent any of the constituent time courses if different functional areas are included (Shen et al., <xref rid="hbm25195-bib-0054" ref-type="ref">2013</xref>). Moreover, if analyzing too few regions, it is more difficult to establish a reliable relationship with gross head motion.</p>
+        <p>Using tSNR, we analyzed if the ROI size also affects BOLD signal quality. tSNR is a well‐established estimator of data quality, considering all types of noise. Unfortunately, the tSNR value is highly dependent on recording parameters, and thus it is difficult to compare it across studies. Nevertheless, similarly to Van Dijk et al. (<xref rid="hbm25195-bib-0065" ref-type="ref">2012</xref>), who reported strong Pearson correlation between voxel‐based tSNR and RMS (<mml:math id="nlm-math-22"><mml:msubsup><mml:mi>r</mml:mi><mml:mi mathvariant="italic">P</mml:mi><mml:mi>RMS</mml:mi></mml:msubsup><mml:mo>=</mml:mo><mml:mo>−</mml:mo><mml:mn>.57</mml:mn><mml:mo>,</mml:mo><mml:mi mathvariant="italic">p</mml:mi><mml:mo>&lt;</mml:mo><mml:mn>.001</mml:mn></mml:math>), we also report significant Spearman correlation between voxel‐based tSNR and both mean FD (<mml:math id="nlm-math-23"><mml:msubsup><mml:mi>r</mml:mi><mml:mi mathvariant="italic">S</mml:mi><mml:mi mathvariant="italic">FD</mml:mi></mml:msubsup><mml:mo>=</mml:mo><mml:mo>−</mml:mo><mml:mn>.46</mml:mn><mml:mo>,</mml:mo><mml:mi>p</mml:mi><mml:mo>&lt;</mml:mo><mml:msup><mml:mn>10</mml:mn><mml:mrow><mml:mo>−</mml:mo><mml:mn>16</mml:mn></mml:mrow></mml:msup></mml:math>) and mean DVARS (<mml:math id="nlm-math-24"><mml:msubsup><mml:mi>r</mml:mi><mml:mi mathvariant="italic">S</mml:mi><mml:mtext mathvariant="italic">DVARS</mml:mtext></mml:msubsup><mml:mo>=</mml:mo><mml:mo>−</mml:mo><mml:mn>0.63</mml:mn><mml:mo>,</mml:mo><mml:mi>p</mml:mi><mml:mo>&lt;</mml:mo><mml:msup><mml:mn>10</mml:mn><mml:mrow><mml:mo>−</mml:mo><mml:mn>16</mml:mn></mml:mrow></mml:msup></mml:math>). According to Figure <xref rid="hbm25195-fig-0002" ref-type="fig">2f</xref>, there is a gradual decrease in correlation between tSNR and DVARS with increasing atlas granularity. Such results suggest that there is an increasing effect of noise on the BOLD signal. Nevertheless, it might be more specifically related to other types of noise than a head movement. We conjecture that this observation could be potentially linked to the fact that DVARS is by definition sensitive to temporal signal variations beyond those reflected in (apparent) head motion, and might thus reflect more strongly other sources of artifactual signal variation such as cardiac pulsation (Murphy et al., <xref rid="hbm25195-bib-0034" ref-type="ref">2013</xref>) or respiratory rate variability (Fair et al., <xref rid="hbm25195-bib-0020" ref-type="ref">2020</xref>). Although the motion is believed to have a dominant effect on frame‐to‐frame signal intensity changes (Fair et al., 2013; Hlinka et al., <xref rid="hbm25195-bib-0029" ref-type="ref">2010</xref>; Smyser et al., <xref rid="hbm25195-bib-0058" ref-type="ref">2010</xref>).</p>
+        <p>In conclusion, both time‐series and FC matrices based on smaller ROIs are noisier. It is the size of regions (number of voxels) and not the number of regions that plays a critical role here. Moreover, we argue that motion is not the main driving effect behind this quality decrease. In all fMRI studies, it is advised that applied atlas parcellation should be chosen carefully with respect to the application and expected outcomes. Our finding that the less detailed FC matrices are of better quality is useful for all FC studies when a detailed FC matrix is not necessary, so finer brain parcellation can be sacrificed for more robust estimates of connectivity. Our recommendation here is in line with the one of Zalesky et al. (<xref rid="hbm25195-bib-0072" ref-type="ref">2010</xref>) that if possible, less detailed atlases will produce more robust results because they are less susceptible to noise. Nevertheless, large ROIs must be created carefully, and we do not recommend using Craddock atlas with less than 100 ROIs.</p>
+      </sec>
+      <sec id="hbm25195-sec-0025">
+        <label>4.3</label>
+        <title>Limitations and future directions</title>
+        <p>To ensure the robustness of our findings, we have replicated the analysis on the HCP dataset. We replicated all our obtained results and proved TFC to be a reliable FC quality estimator. The HCP dataset was preprocessed using a severe preprocessing pipeline (including censoring time points). Therefore, it is generally of better FC quality (higher TFC) compared to our dataset. That is why the obtained correlations with head movements were generally lower, that is, the head motion is less present in the dataset. That could also be the reason why the QC‐FC correlation diminished, as reported in Ciric et al. (<xref rid="hbm25195-bib-0015" ref-type="ref">2017</xref>), where ICA‐AROMA was the only method to show virtually no QC‐FC distance‐dependence. Again, we did not find a significant change in the TFC‐motion relationship except for the very small atlases.</p>
+        <p>The question arises as to which motion metric is optimal. Currently, the most used motion parameters across studies are DVARS and FD (Waheed et al., <xref rid="hbm25195-bib-0068" ref-type="ref">2016</xref>). As Power et al. (<xref rid="hbm25195-bib-0041" ref-type="ref">2012</xref>) pointed out, it is difficult to quantify the effect of motion with only one parameter. Nevertheless, according to our dataset mean DVARS showed the strongest correlation with FC quality (<inline-formula><italic>r</italic><sub>S</sub></inline-formula> up to −.4). Contrarily, the HCP dataset exhibited the strongest correlations between FD and TFC (<inline-formula><italic>r</italic><sub>S</sub></inline-formula> up to −.25). Other summarizing parameters, such as maximum DVARS or DVARS variance, could be used as well because they capture other features of motion (big spike‐like movements, constant small drift). However, Van Dijk et al. (<xref rid="hbm25195-bib-0065" ref-type="ref">2012</xref>) showed that they are all highly correlated (the mean motion was strongly correlated with both max motion and a number of movements). Therefore, we reported only mean FD and mean DVARS.</p>
+        <p>Every quality metric employing FD or DVARS is limited by the precision of the measure itself (Power et al., <xref rid="hbm25195-bib-0047" ref-type="ref">2015</xref>). Since motion takes the form of regionally heterogeneous effects on FC estimates, better measurements of motion can yield better predictions of FC quality. For example, using slice‐derived motion metrics rather than volume‐derived estimates could be beneficial because they are only a simplification of movement over the acquisition of all slices (Beall &amp; Lowe, <xref rid="hbm25195-bib-0004" ref-type="ref">2014</xref>). Nevertheless, Satterthwaite et al. (<xref rid="hbm25195-bib-0051" ref-type="ref">2013</xref>) and Yan, Cheung, et al. (<xref rid="hbm25195-bib-0070" ref-type="ref">2013</xref>) found that motion correction with voxel‐wise motion metrics offered insufficient advantages over the more easily computed general models.</p>
+        <p>Another possible improvement is using a shorter TR. The rapid subTR displacements were thought to play a significant role in regional motion artifact interactions (Spisák et al., <xref rid="hbm25195-bib-0059" ref-type="ref">2014</xref>). Nevertheless, previous studies found that sub‐TR FD traces are noisier and less useful in identifying outlying time points (Power et al., <xref rid="hbm25195-bib-0044" ref-type="ref">2014</xref>). While it is true that the large movements are divided into several smaller movements, they get lost amidst the constant respiratory‐related motion.</p>
+        <p>Recently, Power, Lynch, et al. (<xref rid="hbm25195-bib-0043" ref-type="ref">2019</xref>); Power, Silver, et al. (<xref rid="hbm25195-bib-0048" ref-type="ref">2019</xref>) found out that there are multiple respiration‐related effects present in realignment parameters, some of them manifesting as high‐frequency fluctuations. Therefore, realignment parameters, typically considered as a direct indicator of head motion, may as well reflect other modulations such as respiratory motion effects on the magnetic field that have no association with actual head motion (Fair et al., <xref rid="hbm25195-bib-0020" ref-type="ref">2020</xref>). Although these effects are routinely filtered out from the gray matter signal, hence do not affect resulting FC values, they can negatively affect methods for motion correction (scrubbing, spike regression) or degrade the FC‐motion relationship (Williams &amp; Snellenberg, <xref rid="hbm25195-bib-0069" ref-type="ref">2019</xref>). Indeed, we observed lower correlations of TFC with motion metrics in the HCP dataset with a sub‐second sampling rate. Future studies could use dips in DVARS that still seem to reflect the true head movements or FD values that are notch filtered and a 4‐TR differential is calculated as recommended in Gratton et al. (<xref rid="hbm25195-bib-0025" ref-type="ref">2020</xref>) and Power, Lynch, et al. (<xref rid="hbm25195-bib-0043" ref-type="ref">2019</xref>); Power, Silver, et al. (<xref rid="hbm25195-bib-0048" ref-type="ref">2019</xref>).</p>
+        <p>Moreover, the respiration‐related high‐frequency fluctuations in motion in fast‐TR fMRI datasets are also reported (in an aliased form) in standard single band TR datasets. Suggested low‐pass filtering of motion metrics can increase their link with fMRI signal quality, especially in studies of older subjects or cohorts with increased body mass index (Gratton et al., <xref rid="hbm25195-bib-0025" ref-type="ref">2020</xref>). Thanks to the shorter TRs of multiband data, it is now possible to identify respiration‐related content and so the future studies could focus on its relationship with FC quality.</p>
+        <p>Unfortunately, we are not able to provide a single value that would separate bad and good FC matrices due to the complexity of all contributing factors, such as the lack of ground truth of FC. Therefore, the decision on which scanning session should be discarded is still based only on a summary motion statistic reaching some threshold (for example RMS movement over half a voxels width (Power et al., <xref rid="hbm25195-bib-0042" ref-type="ref">2013</xref>) or more than 20 volumes with RMS greater than 0.25 mm (Ciric et al., <xref rid="hbm25195-bib-0015" ref-type="ref">2017</xref>)). We only propose adding the TFC measure for group‐level corrections. Other directions for mitigating the motion artifact include using multi‐echo imaging (Power et al., <xref rid="hbm25195-bib-0045" ref-type="ref">2018</xref>) or using head molds (Power, Lynch, et al., <xref rid="hbm25195-bib-0043" ref-type="ref">2019</xref>; Power, Silver, et al., <xref rid="hbm25195-bib-0048" ref-type="ref">2019</xref>).</p>
+        <p>A possible objection is that the typical connectivity matrix is not an appropriate golden standard. While a perfect estimate of clean FC without any effect of artifacts is not achievable, we assume that by averaging FC matrices of low‐movement subjects, we obtain a useful estimate of typical awake human brain FC. Obtained results prove that the observed individual differences significantly reflect artifacts, in particular those resulting from head motion. Thus, using TFC is a useful measure identifying potentially problematic subjects. Moreover, we found that the group‐average FC matrices from different groups were very similar (correlation of the typical matrix from the <italic>Main</italic> dataset with similarly preprocessed typical FC of the <italic>Alternative</italic> dataset is <inline-formula><italic>r<sub>P</sub></italic> = .86, <italic>p</italic> &lt; 10<sup>−16</sup></inline-formula>, resp. <inline-formula><italic>r<sub>P</sub></italic> = .68, <italic>p</italic> &lt; 10<sup>−16</sup></inline-formula> between <italic>Main</italic> and HCP dataset). Therefore, we obtained similar results regardless of the applied typical FC matrix. Moreover, using the typical FC matrix from a different dataset has the advantage that no degrees of freedom are lost, that is, subjects used for the computation of the typical FC matrix do not have to be discarded from subsequent analyses.</p>
+        <p>While deviation of individual FC from the typical FC might happen not only due to artifacts but also due to meaningful interindividual variability in “true neuronal” FC, in practice, the FC deviations from the typical FC arise due to a mix of artifacts/noise and the presence of specific individual FC patterns. Our rationale here is thus not that any deviation from typical FC is only and fully due to artifacts, but instead that the most significant deviations from the typical FC are likely to be substantially affected by artifacts.</p>
+      </sec>
+    </sec>
+    <sec id="hbm25195-sec-0026">
+      <label>5</label>
+      <title>CONCLUSION</title>
+      <p>In current resting‐state fMRI studies, there is a need for a sufficiently sensitive measure of individual FC quality. In this article, we presented a new method of FC quality evaluation for rs‐fMRI data. The TFC captures deviation from the standard brain connectivity patterns. We found that this metric is significantly correlated with motion metrics across different datasets, parcellations, and preprocessing pipelines. Furthermore, we used it to demonstrate that there is a gradual decrease in the connectivity quality and the data quality in more detailed brain parcellations with ROIs composed of fewer voxels. This quality decrease is not related to head motion, but to other types of noise as the motion‐quality relationship remained constant across parcellations. In conclusion, TFC allows extensive use in screening data quality, comparing high‐movement groups or denoising strategies, and choosing optimal brain parcellation. Our findings should be considered when a robust estimate of connectivity is more important than fine brain parcellation.</p>
+    </sec>
+    <sec sec-type="data-availability" id="hbm25195-sec-0028">
+      <title>DATA AVAILABILITY STATEMENT</title>
+      <p>The data that support the findings of this study are openly available in Mendeley repository at <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.17632/crx7d22pym.1">https://doi.org/10.17632/crx7d22pym.1</ext-link>
+</p>
+    </sec>
+    <sec sec-type="supplementary-material">
+      <title>Supporting information</title>
+      <supplementary-material content-type="local-data" id="hbm25195-supitem-0001">
+        <caption>
+          <p>
+<bold>Figure S1</bold> ROI sizes for 23 atlases based on Craddock spectral clustering method and for anatomical AAL atlas (in purple). The ROI size decreases with the increasing number of ROIs. The mean size (number of voxels) with ± standard deviation is plotted.</p>
+          <p>
+<bold>Figure S2:</bold> Mean of DVARS and FD are metrics commonly used to describe the gross head movement of a given subject. Based on the motion metrics, all subjects would meet the inclusion criteria for analysis in most MRI laboratories. The distributions of tSNR and motion metrics (represented by mean FD and mean DVARS) for the 245 subjects used in this study are plotted.</p>
+          <p>
+<bold>Figure S3:</bold> Using a different number of subjects for the typical FC matrix calculation. As the template of FC, we used the mean FC matrix of 10% of subjects with the lowest motion (lowest mean FD) from the <italic>Alternative</italic> dataset. Using 10% of subjects yields the highest correlation between mean DVARS and TFC. If subjects from the same dataset are used (and further excluded), the strongest correlations are obtained when selecting only low‐movement subjects. Rows indicate what dataset was used for the typical matrix (<italic>Main</italic>, <italic>Alternative</italic>, HCP). Columns represent the correlation of TFC for the given setup with either mean DVARS or FD.</p>
+          <p>
+<bold>Figure S4:</bold> Relationship between mean FD and TFC. Although the correlation is lower compared to mean DVARS, it is still significant, meaning subjects with worse FC quality show a higher amount of motion during the scanning session.</p>
+          <p>
+<bold>Figure S5:</bold> To further investigate the effects of head movements, we split the dataset into two parts based on varying thresholds of mean FD. We further analyze the high‐movement group. Subsets containing only a small percentage of subjects (10, 15, 20%) with the highest mean FD show a stronger correlation between TFC and both (a) mean DVARS and (b) mean FD. Therefore, the effect of head movement is more pronounced in subjects with higher motion. We obtained similar results if the subsets were created based on thresholding DVARS.</p>
+          <p>
+<bold>Figure S6:</bold> Comparison of TFC based on preprocessing. Differences between TFC distributions are significant even if each preprocessing stream used its own typical FC matrix as the golden standard, that is, matrices with <italic>moderate</italic> preprocessing were compared to a typical matrix also with <italic>moderate</italic> preprocessing.</p>
+          <p>
+<bold>Figure S7:</bold> Examples of FC matrices with <italic>moderate</italic> preprocessing for different subjects based on their TFC. (a) Typical FC matrix for Craddock atlas with 100 ROIs. (b) Examples of subjects with the highest TFC. Their FC matrix accurately preserved the modular structure similar to the typical matrix. (c) Examples of subjects with the lowest TFC. Based on visual inspection, their FC matrices do not correspond to the typical matrix, even though their head movement might not be prominent.</p>
+        </caption>
+        <media xlink:href="HBM-41-5325-s001.zip">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ack id="hbm25195-sec-0027">
+      <title>ACKNOWLEDGMENT</title>
+      <p>This work has been supported by the Czech Science Foundation project No. 17‐01251S and project Nr. LO1611 with financial support from the MEYS under the NPU I program. Jaroslav Hlinka acknowledges partial support by the Czech Academy of Sciences Praemium Academiae awarded to M. Paluš.</p>
+    </ack>
+    <ref-list id="hbm25195-bibl-0001" content-type="cited-references">
+      <title>REFERENCES</title>
+      <ref id="hbm25195-bib-0001">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0001">
+<string-name>
+<surname>Arslan</surname>, <given-names>S.</given-names>
+</string-name>, <string-name>
+<surname>Ktena</surname>, <given-names>S. I.</given-names>
+</string-name>, <string-name>
+<surname>Makropoulos</surname>, <given-names>A.</given-names>
+</string-name>, <string-name>
+<surname>Robinson</surname>, <given-names>E. C.</given-names>
+</string-name>, <string-name>
+<surname>Rueckert</surname>, <given-names>D.</given-names>
+</string-name>, &amp; <string-name>
+<surname>Parisot</surname>, <given-names>S.</given-names>
+</string-name> (<year>2018</year>). <article-title>Human brain mapping: A systematic comparison of parcellation methods for the human cerebral cortex</article-title>. <source xml:lang="en">NeuroImage</source>, <volume>170</volume>, <fpage>5</fpage>–<lpage>30</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2017.04.014</pub-id>
+<pub-id pub-id-type="pmid">28412442</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0002">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0002">
+<string-name>
+<surname>Aurich</surname>, <given-names>N. K.</given-names>
+</string-name>, <string-name>
+<surname>Filho</surname>, <given-names>A.</given-names>
+</string-name>, <string-name>
+<surname>O</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>da Silva</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>M</surname>, <given-names>A.</given-names>
+</string-name>, &amp; <string-name>
+<surname>Franco</surname>, <given-names>A. R.</given-names>
+</string-name> (<year>2015</year>). <article-title>Evaluating the reliability of different preprocessing steps to estimate graph theoretical measures in resting state fMRI data</article-title>. <source xml:lang="en">Frontiers in Neuroscience</source>, <volume>9</volume>, <fpage>48</fpage>
+<pub-id pub-id-type="doi">10.3389/fnins.2015.00048</pub-id>
+<pub-id pub-id-type="pmid">25745384</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0003">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0003">
+<string-name>
+<surname>Barton</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Marecek</surname>, <given-names>R.</given-names>
+</string-name>, <string-name>
+<surname>Krajcovicova</surname>, <given-names>L.</given-names>
+</string-name>, <string-name>
+<surname>Slavicek</surname>, <given-names>T.</given-names>
+</string-name>, <string-name>
+<surname>Kasparek</surname>, <given-names>T.</given-names>
+</string-name>, <string-name>
+<surname>Zemankova</surname>, <given-names>P.</given-names>
+</string-name>, … <string-name>
+<surname>Mikl</surname>, <given-names>M.</given-names>
+</string-name> (<year>2019</year>). <article-title>Evaluation of different cerebrospinal fluid and white matter fMRI filtering strategies—Quantifying noise removal and neural signal preservation</article-title>. <source xml:lang="en">Human Brain Mapping</source>, <volume>40</volume>(<issue>4</issue>), <fpage>1114</fpage>–<lpage>1138</lpage>. <pub-id pub-id-type="doi">10.1002/hbm.24433</pub-id>
+<pub-id pub-id-type="pmid">30403309</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0004">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0004">
+<string-name>
+<surname>Beall</surname>, <given-names>E. B.</given-names>
+</string-name>, &amp; <string-name>
+<surname>Lowe</surname>, <given-names>M. J.</given-names>
+</string-name> (<year>2014</year>). <article-title>SimPACE: Generating simulated motion corrupted BOLD data with synthetic‐navigated acquisition for the development and evaluation of SLOMOCO: A new, highly effective slicewise motion correction</article-title>. <source xml:lang="en">NeuroImage</source>, <volume>101</volume>, <fpage>21</fpage>–<lpage>34</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2014.06.038</pub-id>
+<pub-id pub-id-type="pmid">24969568</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0005">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0005">
+<string-name>
+<surname>Behzadi</surname>, <given-names>Y.</given-names>
+</string-name>, <string-name>
+<surname>Restom</surname>, <given-names>K.</given-names>
+</string-name>, <string-name>
+<surname>Liau</surname>, <given-names>J.</given-names>
+</string-name>, &amp; <string-name>
+<surname>Liu</surname>, <given-names>T. T.</given-names>
+</string-name> (<year>2007</year>). <article-title>A component‐based noise correction method (CompCor) for BOLD and perfusion‐based fMRI</article-title>. <source xml:lang="en">NeuroImage</source>, <volume>37</volume>(<issue>1</issue>), <fpage>90</fpage>–<lpage>101</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2007.04.042</pub-id>
+<pub-id pub-id-type="pmid">17560126</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0006">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0006">
+<string-name>
+<surname>Bianciardi</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Fukunaga</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>van Gelderen</surname>, <given-names>P.</given-names>
+</string-name>, <string-name>
+<surname>Horovitz</surname>, <given-names>S. G.</given-names>
+</string-name>, <string-name>
+<surname>de Zwart</surname>, <given-names>J. A.</given-names>
+</string-name>, <string-name>
+<surname>Shmueli</surname>, <given-names>K.</given-names>
+</string-name>, &amp; <string-name>
+<surname>Duyn</surname>, <given-names>J. H.</given-names>
+</string-name> (<year>2009</year>). <article-title>Sources of functional magnetic resonance imaging signal fluctuations in the human brain at rest: A 7 T study</article-title>. <source xml:lang="en">Magnetic Resonance Imaging</source>, <volume>27</volume>(<issue>8</issue>), <fpage>1019</fpage>–<lpage>1029</lpage>. <pub-id pub-id-type="doi">10.1016/j.mri.2009.02.004</pub-id>
+<pub-id pub-id-type="pmid">19375260</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0007">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0007">
+<string-name>
+<surname>Biswal</surname>, <given-names>B. B.</given-names>
+</string-name>, <string-name>
+<surname>Mennes</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Zuo</surname>, <given-names>X.‐N.</given-names>
+</string-name>, <string-name>
+<surname>Gohel</surname>, <given-names>S.</given-names>
+</string-name>, <string-name>
+<surname>Kelly</surname>, <given-names>C.</given-names>
+</string-name>, <string-name>
+<surname>Smith</surname>, <given-names>S. M.</given-names>
+</string-name>, … <string-name>
+<surname>Milham</surname>, <given-names>M. P.</given-names>
+</string-name> (<year>2010</year>). <article-title>Toward discovery science of human brain function</article-title>. <source xml:lang="en">Proceedings of the National Academy of Sciences</source>, <volume>107</volume>(<issue>10</issue>), <fpage>4734</fpage>–<lpage>4739</lpage>. <pub-id pub-id-type="doi">10.1073/pnas.0911855107</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0074">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0074">
+<string-name>
+<surname>Biswal</surname>, <given-names>B.</given-names>
+</string-name>, <string-name>
+<surname>Yetkin</surname>, <given-names>F. Z.</given-names>
+</string-name>, <string-name>
+<surname>Haughton</surname>, <given-names>V. M.</given-names>
+</string-name>, &amp; <string-name>
+<surname>Hyde</surname>, <given-names>J. S.</given-names>
+</string-name> (<year>1995</year>). <article-title>Functional connectivity in the motor cortex of resting human brain using echo‐planar MRI</article-title>. <source xml:lang="en">Magnetic Resonance in Medicine</source>, <volume>34</volume>, <fpage>537</fpage>–<lpage>541</lpage>. <pub-id pub-id-type="doi">10.1002/mrm.1910340409</pub-id>.<pub-id pub-id-type="pmid">8524021</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0008">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0008">
+<string-name>
+<surname>Bodurka</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>Ye</surname>, <given-names>F.</given-names>
+</string-name>, <string-name>
+<surname>Petridou</surname>, <given-names>N.</given-names>
+</string-name>, <string-name>
+<surname>Murphy</surname>, <given-names>K.</given-names>
+</string-name>, &amp; <string-name>
+<surname>Bandettini</surname>, <given-names>P. A.</given-names>
+</string-name> (<year>2007</year>). <article-title>Mapping the MRI voxel volume in which thermal noise matches physiological noise—Implications for fMRI</article-title>. <source xml:lang="en">NeuroImage</source>, <volume>34</volume>(<issue>2</issue>), <fpage>542</fpage>–<lpage>549</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2006.09.039</pub-id>
+<pub-id pub-id-type="pmid">17101280</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0009">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0009">
+<string-name>
+<surname>Bright</surname>, <given-names>M. G.</given-names>
+</string-name>, &amp; <string-name>
+<surname>Murphy</surname>, <given-names>K.</given-names>
+</string-name> (<year>2013</year>). <article-title>Removing motion and physiological artifacts from intrinsic BOLD fluctuations using short echo data</article-title>. <source xml:lang="en">NeuroImage</source>, <volume>64</volume>, <fpage>526</fpage>–<lpage>537</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2012.09.043</pub-id>
+<pub-id pub-id-type="pmid">23006803</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0010">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0010">
+<string-name>
+<surname>Buckner</surname>, <given-names>R. L.</given-names>
+</string-name>, <string-name>
+<surname>Krienen</surname>, <given-names>F. M.</given-names>
+</string-name>, &amp; <string-name>
+<surname>Yeo</surname>, <given-names>B. T. T.</given-names>
+</string-name> (<year>2013</year>). <article-title>Opportunities and limitations of intrinsic functional connectivity MRI</article-title>. <source xml:lang="en">Nature Neuroscience</source>, <volume>16</volume>(<issue>7</issue>), <fpage>832</fpage>–<lpage>837</lpage>. <pub-id pub-id-type="doi">10.1038/nn.3423</pub-id>
+<pub-id pub-id-type="pmid">23799476</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0011">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0011">
+<string-name>
+<surname>Burgess</surname>, <given-names>G. C.</given-names>
+</string-name>, <string-name>
+<surname>Kandala</surname>, <given-names>S.</given-names>
+</string-name>, <string-name>
+<surname>Nolan</surname>, <given-names>D.</given-names>
+</string-name>, <string-name>
+<surname>Laumann</surname>, <given-names>T. O.</given-names>
+</string-name>, <string-name>
+<surname>Power</surname>, <given-names>J. D.</given-names>
+</string-name>, <string-name>
+<surname>Adeyemo</surname>, <given-names>B.</given-names>
+</string-name>, … <string-name>
+<surname>Barch</surname>, <given-names>D. M.</given-names>
+</string-name> (<year>2016</year>). <article-title>Evaluation of denoising strategies to address motion‐correlated artifacts in resting‐state functional magnetic resonance imaging data from the human Connectome project</article-title>. <source xml:lang="en">Brain Connectivity</source>, <volume>6</volume>(<issue>9</issue>), <fpage>669</fpage>–<lpage>680</lpage>. <pub-id pub-id-type="doi">10.1089/brain.2016.0435</pub-id>
+<pub-id pub-id-type="pmid">27571276</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0012">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0012">
+<string-name>
+<surname>Caballero‐Gaudes</surname>, <given-names>C.</given-names>
+</string-name>, &amp; <string-name>
+<surname>Reynolds</surname>, <given-names>R. C.</given-names>
+</string-name> (<year>2017</year>). <article-title>Methods for cleaning the BOLD fMRI signal</article-title>. <source xml:lang="en">NeuroImage</source>, <volume>154</volume>, <fpage>128</fpage>–<lpage>149</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2016.12.018</pub-id>
+<pub-id pub-id-type="pmid">27956209</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0013">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0013">
+<string-name>
+<surname>Carbonell</surname>, <given-names>F.</given-names>
+</string-name>, <string-name>
+<surname>Bellec</surname>, <given-names>P.</given-names>
+</string-name>, &amp; <string-name>
+<surname>Shmuel</surname>, <given-names>A.</given-names>
+</string-name> (<year>2011</year>). <article-title>Global and system‐specific resting‐state fMRI fluctuations are uncorrelated: Principal component analysis reveals anti‐correlated networks</article-title>. <source xml:lang="en">Brain Connectivity</source>, <volume>1</volume>(<issue>6</issue>), <fpage>496</fpage>–<lpage>510</lpage>. <pub-id pub-id-type="doi">10.1089/brain.2011.0065</pub-id>
+<pub-id pub-id-type="pmid">22444074</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0014">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0014">
+<string-name>
+<surname>Chang</surname>, <given-names>C.</given-names>
+</string-name>, &amp; <string-name>
+<surname>Glover</surname>, <given-names>G. H.</given-names>
+</string-name> (<year>2009</year>). <article-title>Relationship between respiration, end‐tidal CO2, and BOLD signals in resting‐state fMRI</article-title>. <source xml:lang="en">NeuroImage</source>, <volume>47</volume>(<issue>4</issue>), <fpage>1381</fpage>–<lpage>1393</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2009.04.048</pub-id>
+<pub-id pub-id-type="pmid">19393322</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0015">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0015">
+<string-name>
+<surname>Ciric</surname>, <given-names>R.</given-names>
+</string-name>, <string-name>
+<surname>Wolf</surname>, <given-names>D. H.</given-names>
+</string-name>, <string-name>
+<surname>Power</surname>, <given-names>J. D.</given-names>
+</string-name>, <string-name>
+<surname>Roalf</surname>, <given-names>D. R.</given-names>
+</string-name>, <string-name>
+<surname>Baum</surname>, <given-names>G. L.</given-names>
+</string-name>, <string-name>
+<surname>Ruparel</surname>, <given-names>K.</given-names>
+</string-name>, … <string-name>
+<surname>Satterthwaite</surname>, <given-names>T. D.</given-names>
+</string-name> (<year>2017</year>). <article-title>Benchmarking of participant‐level confound regression strategies for the control of motion artifact in studies of functional connectivity</article-title>. <source xml:lang="en">NeuroImage</source>, <volume>154</volume>, <fpage>174</fpage>–<lpage>187</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2017.03.020</pub-id>
+<pub-id pub-id-type="pmid">28302591</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0016">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0016">
+<string-name>
+<surname>Craddock</surname>, <given-names>R. C.</given-names>
+</string-name>, <string-name>
+<surname>James</surname>, <given-names>G. A.</given-names>
+</string-name>, <string-name>
+<surname>Holtzheimer</surname>, <given-names>P. E.</given-names>
+</string-name>, <string-name>
+<surname>Hu</surname>, <given-names>X. P.</given-names>
+</string-name>, &amp; <string-name>
+<surname>Mayberg</surname>, <given-names>H. S.</given-names>
+</string-name> (<year>2012</year>). <article-title>A whole brain fMRI atlas generated via spatially constrained spectral clustering</article-title>. <source xml:lang="en">Human Brain Mapping</source>, <volume>33</volume>(<issue>8</issue>), <fpage>1914</fpage>–<lpage>1928</lpage>. <pub-id pub-id-type="doi">10.1002/hbm.21333</pub-id>
+<pub-id pub-id-type="pmid">21769991</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0017">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0017">
+<string-name>
+<surname>de Winter</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>de Samuel</surname>, <given-names>C. F.</given-names>
+</string-name>, <string-name>
+<surname>Gosling</surname>, <given-names>D.</given-names>
+</string-name>, &amp; <string-name>
+<surname>Potter</surname>, <given-names>J.</given-names>
+</string-name> (<year>2016</year>). <article-title>Comparing the Pearson and Spearman correlation coefficients across distributions and sample sizes: A tutorial using simulations and empirical data</article-title>. <source xml:lang="en">Psychological Methods</source>, <volume>21</volume>(<issue>3</issue>), <fpage>273</fpage>–<lpage>290</lpage>. <pub-id pub-id-type="doi">10.1037/met0000079</pub-id>
+<pub-id pub-id-type="pmid">27213982</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0018">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0018">
+<string-name>
+<surname>Eickhoff</surname>, <given-names>S. B.</given-names>
+</string-name>, <string-name>
+<surname>Yeo</surname>, <given-names>B. T. T.</given-names>
+</string-name>, &amp; <string-name>
+<surname>Genon</surname>, <given-names>S.</given-names>
+</string-name> (<year>2018</year>). <article-title>Imaging‐based parcellations of the human brain</article-title>. <source xml:lang="en">Nature Reviews Neuroscience</source>, <volume>19</volume>(<issue>11</issue>), <fpage>672</fpage>–<lpage>686</lpage>. <pub-id pub-id-type="doi">10.1038/s41583-018-0071-7</pub-id>
+<pub-id pub-id-type="pmid">30305712</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0019">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0019">
+<string-name>
+<surname>Engelhardt</surname>, <given-names>L. E.</given-names>
+</string-name>, <string-name>
+<surname>Roe</surname>, <given-names>M. A.</given-names>
+</string-name>, <string-name>
+<surname>Juranek</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>DeMaster</surname>, <given-names>D.</given-names>
+</string-name>, <string-name>
+<surname>Harden</surname>, <given-names>K. P.</given-names>
+</string-name>, <string-name>
+<surname>Tucker‐Drob</surname>, <given-names>E. M.</given-names>
+</string-name>, &amp; <string-name>
+<surname>Church</surname>, <given-names>J. A.</given-names>
+</string-name> (<year>2017</year>). <article-title>Children's head motion during fMRI tasks is heritable and stable over time</article-title>. <source xml:lang="en">Developmental Cognitive Neuroscience</source>, <volume>25</volume>, <fpage>58</fpage>–<lpage>68</lpage>. <pub-id pub-id-type="doi">10.1016/j.dcn.2017.01.011</pub-id>
+<pub-id pub-id-type="pmid">28223034</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0020">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0020">
+<string-name>
+<surname>Fair</surname>, <given-names>D. A.</given-names>
+</string-name>, <string-name>
+<surname>Miranda‐Dominguez</surname>, <given-names>O.</given-names>
+</string-name>, <string-name>
+<surname>Snyder</surname>, <given-names>A. Z.</given-names>
+</string-name>, <string-name>
+<surname>Perrone</surname>, <given-names>A.</given-names>
+</string-name>, <string-name>
+<surname>Earl</surname>, <given-names>E. A.</given-names>
+</string-name>, <string-name>
+<surname>Van</surname>, <given-names>A. N.</given-names>
+</string-name>, … <string-name>
+<surname>Dosenbach</surname>, <given-names>N. U. F.</given-names>
+</string-name> (<year>2020</year>). <article-title>Correction of respiratory artifacts in MRI head motion estimates</article-title>. <source xml:lang="en">NeuroImage</source>, <volume>208</volume>, <elocation-id>116400</elocation-id>
+<pub-id pub-id-type="doi">10.1016/j.neuroimage.2019.116400</pub-id>
+<pub-id pub-id-type="pmid">31778819</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0021">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0021">
+<string-name>
+<surname>Fair</surname>, <given-names>D. A.</given-names>
+</string-name>, <string-name>
+<surname>Nigg</surname>, <given-names>J. T.</given-names>
+</string-name>, <string-name>
+<surname>Iyer</surname>, <given-names>S.</given-names>
+</string-name>, <string-name>
+<surname>Bathula</surname>, <given-names>D.</given-names>
+</string-name>, <string-name>
+<surname>Mills</surname>, <given-names>K. L.</given-names>
+</string-name>, <string-name>
+<surname>Dosenbach</surname>, <given-names>N. U. F.</given-names>
+</string-name>, … <string-name>
+<surname>Milham</surname>, <given-names>M. P.</given-names>
+</string-name> (<year>2013</year>). <article-title>Distinct neural signatures detected for ADHD subtypes after controlling for micro‐movements in resting state functional connectivity MRI data</article-title>. <source xml:lang="en">Frontiers in Systems Neuroscience</source>, <volume>6</volume>, <fpage>80</fpage>
+<pub-id pub-id-type="doi">10.3389/fnsys.2012.00080</pub-id>
+<pub-id pub-id-type="pmid">23382713</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0022">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0022">
+<string-name>
+<surname>Friston</surname>, <given-names>K. J.</given-names>
+</string-name>, <string-name>
+<surname>Frith</surname>, <given-names>C. D.</given-names>
+</string-name>, <string-name>
+<surname>Liddle</surname>, <given-names>P. F.</given-names>
+</string-name>, &amp; <string-name>
+<surname>Frackowiak</surname>, <given-names>R. S. J.</given-names>
+</string-name> (<year>1993</year>). <article-title>Functional connectivity: The principal‐component analysis of large (PET) data sets</article-title>. <source xml:lang="en">Journal of Cerebral Blood Flow &amp; Metabolism</source>, <volume>13</volume>(<issue>1</issue>), <fpage>5</fpage>–<lpage>14</lpage>. <pub-id pub-id-type="doi">10.1038/jcbfm.1993.4</pub-id>
+<pub-id pub-id-type="pmid">8417010</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0023">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0023">
+<string-name>
+<surname>Friston</surname>, <given-names>K. J.</given-names>
+</string-name>, <string-name>
+<surname>Williams</surname>, <given-names>S.</given-names>
+</string-name>, <string-name>
+<surname>Howard</surname>, <given-names>R.</given-names>
+</string-name>, <string-name>
+<surname>Frackowiak</surname>, <given-names>R. S. J.</given-names>
+</string-name>, &amp; <string-name>
+<surname>Turner</surname>, <given-names>R.</given-names>
+</string-name> (<year>1996</year>). <article-title>Movement‐related effects in fMRI time‐series</article-title>. <source xml:lang="en">Magnetic Resonance in Medicine</source>, <volume>35</volume>(<issue>3</issue>), <fpage>346</fpage>–<lpage>355</lpage>. <pub-id pub-id-type="doi">10.1002/mrm.1910350312</pub-id>
+<pub-id pub-id-type="pmid">8699946</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0025">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0025">
+<string-name>
+<surname>Gratton</surname>, <given-names>C.</given-names>
+</string-name>, <string-name>
+<surname>Dworetsky</surname>, <given-names>A.</given-names>
+</string-name>, <string-name>
+<surname>Coalson</surname>, <given-names>R. S.</given-names>
+</string-name>, <string-name>
+<surname>Adeyemo</surname>, <given-names>B.</given-names>
+</string-name>, <string-name>
+<surname>Laumann</surname>, <given-names>T. O.</given-names>
+</string-name>, <string-name>
+<surname>Wig</surname>, <given-names>G. S.</given-names>
+</string-name>, … <string-name>
+<surname>Campbell</surname>, <given-names>M. C.</given-names>
+</string-name> (<year>2020</year>). <article-title>Removal of high frequency contamination from motion estimates in single‐band fMRI saves data without biasing functional connectivity</article-title>. <source xml:lang="en">NeuroImage</source>, <volume>217</volume>, <fpage>116866</fpage>
+<pub-id pub-id-type="doi">10.1016/j.neuroimage.2020.116866</pub-id>
+<pub-id pub-id-type="pmid">32325210</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0026">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0026">
+<string-name>
+<surname>Hajnal</surname>, <given-names>J. V.</given-names>
+</string-name>, <string-name>
+<surname>Myers</surname>, <given-names>R.</given-names>
+</string-name>, <string-name>
+<surname>Oatridge</surname>, <given-names>A.</given-names>
+</string-name>, <string-name>
+<surname>Schwieso</surname>, <given-names>J. E.</given-names>
+</string-name>, <string-name>
+<surname>Young</surname>, <given-names>I. R.</given-names>
+</string-name>, &amp; <string-name>
+<surname>Bydder</surname>, <given-names>G. M.</given-names>
+</string-name> (<year>1994</year>). <article-title>Artifacts due to stimulus correlated motion in functional imaging of the brain</article-title>. <source xml:lang="en">Magnetic Resonance in Medicine</source>, <volume>31</volume>(<issue>3</issue>), <fpage>283</fpage>–<lpage>291</lpage>. <pub-id pub-id-type="doi">10.1002/mrm.1910310307</pub-id>
+<pub-id pub-id-type="pmid">8057799</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0027">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0027">
+<string-name>
+<surname>Hallquist</surname>, <given-names>M. N.</given-names>
+</string-name>, <string-name>
+<surname>Hwang</surname>, <given-names>K.</given-names>
+</string-name>, &amp; <string-name>
+<surname>Luna</surname>, <given-names>B.</given-names>
+</string-name> (<year>2013</year>). <article-title>The nuisance of nuisance regression: Spectral misspecification in a common approach to resting‐state fMRI preprocessing reintroduces noise and obscures functional connectivity</article-title>. <source xml:lang="en">NeuroImage</source>, <volume>82</volume>, <fpage>208</fpage>–<lpage>225</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2013.05.116</pub-id>
+<pub-id pub-id-type="pmid">23747457</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0028">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0028">
+<string-name>
+<surname>Hartman</surname>, <given-names>D.</given-names>
+</string-name>, <string-name>
+<surname>Hlinka</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>Palus</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Mantini</surname>, <given-names>D.</given-names>
+</string-name>, &amp; <string-name>
+<surname>Corbetta</surname>, <given-names>M.</given-names>
+</string-name> (<year>2011</year>). <article-title>The role of nonlinearity in computing graph‐theoretical properties of resting‐state functional magnetic resonance imaging brain networks</article-title>. <source xml:lang="en">Chaos</source>, <volume>21</volume>(<issue>1</issue>), <elocation-id>013119</elocation-id>
+<pub-id pub-id-type="doi">10.1063/1.3553181</pub-id>
+<pub-id pub-id-type="pmid">21456833</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0029">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0029">
+<string-name>
+<surname>Hlinka</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>Alexakis</surname>, <given-names>C.</given-names>
+</string-name>, <string-name>
+<surname>Hardman</surname>, <given-names>J. G.</given-names>
+</string-name>, <string-name>
+<surname>Siddiqui</surname>, <given-names>Q.</given-names>
+</string-name>, &amp; <string-name>
+<surname>Auer</surname>, <given-names>D. P.</given-names>
+</string-name> (<year>2010</year>). <article-title>Is sedation‐induced BOLD fMRI low‐frequency fluctuation increase mediated by increased motion?</article-title>
+<source xml:lang="en">Magnetic Resonance Materials in Physics, Biology and Medicine</source>, <volume>23</volume>(<issue>5–6</issue>), <fpage>367</fpage>–<lpage>374</lpage>. <pub-id pub-id-type="doi">10.1007/s10334-010-0199-6</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0030">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0030">
+<string-name>
+<surname>Hlinka</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>Palus</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Vejmelka</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Mantini</surname>, <given-names>D.</given-names>
+</string-name>, &amp; <string-name>
+<surname>Corbetta</surname>, <given-names>M.</given-names>
+</string-name> (<year>2011</year>). <article-title>Functional connectivity in resting‐state fMRI: Is linear correlation sufficient?</article-title>
+<source xml:lang="en">NeuroImage</source>, <volume>54</volume>(<issue>3</issue>), <fpage>2218</fpage>–<lpage>2225</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2010.08.042</pub-id>
+<pub-id pub-id-type="pmid">20800096</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0031">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0031">
+<string-name>
+<surname>Lee</surname>, <given-names>M. H.</given-names>
+</string-name>, <string-name>
+<surname>Smyser</surname>, <given-names>C. D.</given-names>
+</string-name>, &amp; <string-name>
+<surname>Shimony</surname>, <given-names>J. S.</given-names>
+</string-name> (<year>2013</year>). <article-title>Resting‐state fMRI: A review of methods and clinical applications</article-title>. <source xml:lang="en">American Journal of Neuroradiology</source>, <volume>34</volume>(<issue>10</issue>), <fpage>1866</fpage>–<lpage>1872</lpage>. <pub-id pub-id-type="doi">10.3174/ajnr.A3263</pub-id>
+<pub-id pub-id-type="pmid">22936095</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0032">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0032">
+<string-name>
+<surname>Maclaren</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>Herbst</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Speck</surname>, <given-names>O.</given-names>
+</string-name>, &amp; <string-name>
+<surname>Zaitsev</surname>, <given-names>M.</given-names>
+</string-name> (<year>2013</year>). <article-title>Prospective motion correction in brain imaging: A review</article-title>. <source xml:lang="en">Magnetic Resonance in Medicine</source>, <volume>69</volume>(<issue>3</issue>), <fpage>621</fpage>–<lpage>636</lpage>. <pub-id pub-id-type="doi">10.1002/mrm.24314</pub-id>
+<pub-id pub-id-type="pmid">22570274</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0033">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0033">
+<string-name>
+<surname>Mowinckel</surname>, <given-names>A. M.</given-names>
+</string-name>, <string-name>
+<surname>Espeseth</surname>, <given-names>T.</given-names>
+</string-name>, &amp; <string-name>
+<surname>Westlye</surname>, <given-names>L. T.</given-names>
+</string-name> (<year>2012</year>). <article-title>Network‐specific effects of age and in‐scanner subject motion: A resting‐state fMRI study of 238 healthy adults</article-title>. <source xml:lang="en">NeuroImage</source>, <volume>63</volume>(<issue>3</issue>), <fpage>1364</fpage>–<lpage>1373</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2012.08.004</pub-id>
+<pub-id pub-id-type="pmid">22992492</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0034">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0034">
+<string-name>
+<surname>Murphy</surname>, <given-names>K.</given-names>
+</string-name>, <string-name>
+<surname>Birn</surname>, <given-names>R. M.</given-names>
+</string-name>, &amp; <string-name>
+<surname>Bandettini</surname>, <given-names>P. A.</given-names>
+</string-name> (<year>2013</year>). <article-title>Resting‐state fMRI confounds and cleanup</article-title>. <source xml:lang="en">NeuroImage</source>, <volume>80</volume>, <fpage>349</fpage>–<lpage>359</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2013.04.001</pub-id>
+<pub-id pub-id-type="pmid">23571418</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0035">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0035">
+<string-name>
+<surname>Muschelli</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>Nebel</surname>, <given-names>M. B.</given-names>
+</string-name>, <string-name>
+<surname>Caffo</surname>, <given-names>B. S.</given-names>
+</string-name>, <string-name>
+<surname>Barber</surname>, <given-names>A. D.</given-names>
+</string-name>, <string-name>
+<surname>Pekar</surname>, <given-names>J. J.</given-names>
+</string-name>, &amp; <string-name>
+<surname>Mostofsky</surname>, <given-names>S. H.</given-names>
+</string-name> (<year>2014</year>). <article-title>Reduction of motion‐related artifacts in resting state fMRI using aCompCor</article-title>. <source xml:lang="en">NeuroImage</source>, <volume>96</volume>, <fpage>22</fpage>–<lpage>35</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2014.03.028</pub-id>
+<pub-id pub-id-type="pmid">24657780</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0036">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0036">
+<string-name>
+<surname>Nir</surname>, <given-names>Y.</given-names>
+</string-name>, <string-name>
+<surname>Hasson</surname>, <given-names>U.</given-names>
+</string-name>, <string-name>
+<surname>Levy</surname>, <given-names>I.</given-names>
+</string-name>, <string-name>
+<surname>Yeshurun</surname>, <given-names>Y.</given-names>
+</string-name>, &amp; <string-name>
+<surname>Malach</surname>, <given-names>R.</given-names>
+</string-name> (<year>2006</year>). <article-title>Widespread functional connectivity and fMRI fluctuations in human visual cortex in the absence of visual stimulation</article-title>. <source xml:lang="en">NeuroImage</source>, <volume>30</volume>(<issue>4</issue>), <fpage>1313</fpage>–<lpage>1324</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2005.11.018</pub-id>
+<pub-id pub-id-type="pmid">16413791</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0037">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0037">
+<string-name>
+<surname>Parkes</surname>, <given-names>L.</given-names>
+</string-name>, <string-name>
+<surname>Fulcher</surname>, <given-names>B.</given-names>
+</string-name>, <string-name>
+<surname>Yücel</surname>, <given-names>M.</given-names>
+</string-name>, &amp; <string-name>
+<surname>Fornito</surname>, <given-names>A.</given-names>
+</string-name> (<year>2018</year>). <article-title>An evaluation of the efficacy, reliability, and sensitivity of motion correction strategies for resting‐state functional MRI</article-title>. <source xml:lang="en">NeuroImage</source>, <volume>171</volume>, <fpage>415</fpage>–<lpage>436</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2017.12.073</pub-id>
+<pub-id pub-id-type="pmid">29278773</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0038">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0038">
+<string-name>
+<surname>Patel</surname>, <given-names>A. X.</given-names>
+</string-name>, <string-name>
+<surname>Kundu</surname>, <given-names>P.</given-names>
+</string-name>, <string-name>
+<surname>Rubinov</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Jones</surname>, <given-names>P. S.</given-names>
+</string-name>, <string-name>
+<surname>Vértes</surname>, <given-names>P. E.</given-names>
+</string-name>, <string-name>
+<surname>Ersche</surname>, <given-names>K. D.</given-names>
+</string-name>, … <string-name>
+<surname>Bullmore</surname>, <given-names>E. T.</given-names>
+</string-name> (<year>2014</year>). <article-title>A wavelet method for modeling and despiking motion artifacts from resting‐state fMRI time series</article-title>. <source xml:lang="en">NeuroImage</source>, <volume>95</volume>(<issue>100</issue>), <fpage>287</fpage>–<lpage>304</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2014.03.012</pub-id>
+<pub-id pub-id-type="pmid">24657353</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0039">
+        <mixed-citation publication-type="book" id="hbm25195-cit-0039">
+<string-name>
+<surname>Poldrack</surname>, <given-names>R. A.</given-names>
+</string-name>, <string-name>
+<surname>Mumford</surname>, <given-names>J. A.</given-names>
+</string-name>, &amp; <string-name>
+<surname>Nichols</surname>, <given-names>T. E.</given-names>
+</string-name> (<year>2011</year>). <source xml:lang="en">Handbook of functional MRI data analysis</source>, <publisher-loc>Cambridge, England</publisher-loc>: <publisher-name>Cambridge University Press</publisher-name>.</mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0040">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0040">
+<string-name>
+<surname>Ponsoda</surname>, <given-names>V.</given-names>
+</string-name>, <string-name>
+<surname>Martínez</surname>, <given-names>K.</given-names>
+</string-name>, <string-name>
+<surname>Pineda‐Pardo</surname>, <given-names>J. A.</given-names>
+</string-name>, <string-name>
+<surname>Abad</surname>, <given-names>F. J.</given-names>
+</string-name>, <string-name>
+<surname>Olea</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>Román</surname>, <given-names>F. J.</given-names>
+</string-name>, … <string-name>
+<surname>Colom</surname>, <given-names>R.</given-names>
+</string-name> (<year>2017</year>). <article-title>Structural brain connectivity and cognitive ability differences: A multivariate distance matrix regression analysis</article-title>. <source xml:lang="en">Human Brain Mapping</source>, <volume>38</volume>(<issue>2</issue>), <fpage>803</fpage>–<lpage>816</lpage>. <pub-id pub-id-type="doi">10.1002/hbm.23419</pub-id>
+<pub-id pub-id-type="pmid">27726264</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0041">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0041">
+<string-name>
+<surname>Power</surname>, <given-names>J. D.</given-names>
+</string-name>, <string-name>
+<surname>Barnes</surname>, <given-names>K. A.</given-names>
+</string-name>, <string-name>
+<surname>Snyder</surname>, <given-names>A. Z.</given-names>
+</string-name>, <string-name>
+<surname>Schlaggar</surname>, <given-names>B. L.</given-names>
+</string-name>, &amp; <string-name>
+<surname>Petersen</surname>, <given-names>S. E.</given-names>
+</string-name> (<year>2012</year>). <article-title>Spurious but systematic correlations in functional connectivity MRI networks arise from subject motion</article-title>. <source xml:lang="en">NeuroImage</source>, <volume>59</volume>(<issue>3</issue>), <fpage>2142</fpage>–<lpage>2154</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2011.10.018</pub-id>
+<pub-id pub-id-type="pmid">22019881</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0042">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0042">
+<string-name>
+<surname>Power</surname>, <given-names>J. D.</given-names>
+</string-name>, <string-name>
+<surname>Barnes</surname>, <given-names>K. A.</given-names>
+</string-name>, <string-name>
+<surname>Snyder</surname>, <given-names>A. Z.</given-names>
+</string-name>, <string-name>
+<surname>Schlaggar</surname>, <given-names>B. L.</given-names>
+</string-name>, &amp; <string-name>
+<surname>Petersen</surname>, <given-names>S. E.</given-names>
+</string-name> (<year>2013</year>). <article-title>Steps toward optimizing motion artifact removal in functional connectivity MRI; a reply to carp</article-title>. <source xml:lang="en">NeuroImage</source>, <volume>76</volume>, <fpage>439</fpage>–<lpage>441</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2012.03.017</pub-id>
+<pub-id pub-id-type="pmid">22440651</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0043">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0043">
+<string-name>
+<surname>Power</surname>, <given-names>J. D.</given-names>
+</string-name>, <string-name>
+<surname>Lynch</surname>, <given-names>C. J.</given-names>
+</string-name>, <string-name>
+<surname>Silver</surname>, <given-names>B. M.</given-names>
+</string-name>, <string-name>
+<surname>Dubin</surname>, <given-names>M. J.</given-names>
+</string-name>, <string-name>
+<surname>Martin</surname>, <given-names>A.</given-names>
+</string-name>, &amp; <string-name>
+<surname>Jones</surname>, <given-names>R. M.</given-names>
+</string-name> (<year>2019</year>). <article-title>Distinctions among real and apparent respiratory motions in human fMRI data</article-title>. <source xml:lang="en">NeuroImage</source>, <volume>201</volume>, <elocation-id>116041</elocation-id>
+<pub-id pub-id-type="doi">10.1016/j.neuroimage.2019.116041</pub-id>
+<pub-id pub-id-type="pmid">31344484</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0044">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0044">
+<string-name>
+<surname>Power</surname>, <given-names>J. D.</given-names>
+</string-name>, <string-name>
+<surname>Mitra</surname>, <given-names>A.</given-names>
+</string-name>, <string-name>
+<surname>Laumann</surname>, <given-names>T. O.</given-names>
+</string-name>, <string-name>
+<surname>Snyder</surname>, <given-names>A. Z.</given-names>
+</string-name>, <string-name>
+<surname>Schlaggar</surname>, <given-names>B. L.</given-names>
+</string-name>, &amp; <string-name>
+<surname>Petersen</surname>, <given-names>S. E.</given-names>
+</string-name> (<year>2014</year>). <article-title>Methods to detect, characterize, and remove motion artifact in resting state fMRI</article-title>. <source xml:lang="en">NeuroImage</source>, <volume>84</volume>, <fpage>320</fpage>–<lpage>341</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2013.08.048</pub-id>
+<pub-id pub-id-type="pmid">23994314</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0045">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0045">
+<string-name>
+<surname>Power</surname>, <given-names>J. D.</given-names>
+</string-name>, <string-name>
+<surname>Plitt</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Gotts</surname>, <given-names>S. J.</given-names>
+</string-name>, <string-name>
+<surname>Kundu</surname>, <given-names>P.</given-names>
+</string-name>, <string-name>
+<surname>Voon</surname>, <given-names>V.</given-names>
+</string-name>, <string-name>
+<surname>Bandettini</surname>, <given-names>P. A.</given-names>
+</string-name>, &amp; <string-name>
+<surname>Martin</surname>, <given-names>A.</given-names>
+</string-name> (<year>2018</year>). <article-title>Ridding fMRI data of motion‐related influences: Removal of signals with distinct spatial and physical bases in multiecho data</article-title>. <source xml:lang="en">Proceedings of the National Academy of Sciences</source>, <volume>115</volume>(<issue>9</issue>), <fpage>E2105</fpage>–<lpage>E2114</lpage>. <pub-id pub-id-type="doi">10.1073/pnas.1720985115</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0046">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0046">
+<string-name>
+<surname>Power</surname>, <given-names>J. D.</given-names>
+</string-name>, <string-name>
+<surname>Plitt</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Kundu</surname>, <given-names>P.</given-names>
+</string-name>, <string-name>
+<surname>Bandettini</surname>, <given-names>P. A.</given-names>
+</string-name>, &amp; <string-name>
+<surname>Martin</surname>, <given-names>A.</given-names>
+</string-name> (<year>2017</year>). <article-title>Temporal interpolation alters motion in fMRI scans: Magnitudes and consequences for artifact detection</article-title>. <source xml:lang="en">PLoS One</source>, <volume>12</volume>(<issue>9</issue>), <elocation-id>e0182939</elocation-id>
+<pub-id pub-id-type="doi">10.1371/journal.pone.0182939</pub-id>
+<pub-id pub-id-type="pmid">28880888</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0047">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0047">
+<string-name>
+<surname>Power</surname>, <given-names>J. D.</given-names>
+</string-name>, <string-name>
+<surname>Schlaggar</surname>, <given-names>B. L.</given-names>
+</string-name>, &amp; <string-name>
+<surname>Petersen</surname>, <given-names>S. E.</given-names>
+</string-name> (<year>2015</year>). <article-title>Recent progress and outstanding issues in motion correction in resting state fMRI</article-title>. <source xml:lang="en">NeuroImage</source>, <volume>105</volume>, <fpage>536</fpage>–<lpage>551</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2014.10.044</pub-id>
+<pub-id pub-id-type="pmid">25462692</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0048">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0048">
+<string-name>
+<surname>Power</surname>, <given-names>J. D.</given-names>
+</string-name>, <string-name>
+<surname>Silver</surname>, <given-names>B. M.</given-names>
+</string-name>, <string-name>
+<surname>Silverman</surname>, <given-names>M. R.</given-names>
+</string-name>, <string-name>
+<surname>Ajodan</surname>, <given-names>E. L.</given-names>
+</string-name>, <string-name>
+<surname>Bos</surname>, <given-names>D. J.</given-names>
+</string-name>, &amp; <string-name>
+<surname>Jones</surname>, <given-names>R. M.</given-names>
+</string-name> (<year>2019</year>). <article-title>Customized head molds reduce motion during resting state fMRI scans</article-title>. <source xml:lang="en">NeuroImage</source>, <volume>189</volume>, <fpage>141</fpage>–<lpage>149</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2019.01.016</pub-id>
+<pub-id pub-id-type="pmid">30639840</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0049">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0049">
+<string-name>
+<surname>Saad</surname>, <given-names>Z. S.</given-names>
+</string-name>, <string-name>
+<surname>Reynolds</surname>, <given-names>R. C.</given-names>
+</string-name>, <string-name>
+<surname>Jo</surname>, <given-names>H. J.</given-names>
+</string-name>, <string-name>
+<surname>Gotts</surname>, <given-names>S. J.</given-names>
+</string-name>, <string-name>
+<surname>Chen</surname>, <given-names>G.</given-names>
+</string-name>, <string-name>
+<surname>Martin</surname>, <given-names>A.</given-names>
+</string-name>, &amp; <string-name>
+<surname>Cox</surname>, <given-names>R. W.</given-names>
+</string-name> (<year>2013</year>). <article-title>Correcting brain‐wide correlation differences in resting‐state FMRI</article-title>. <source xml:lang="en">Brain Connectivity</source>, <volume>3</volume>(<issue>4</issue>), <fpage>339</fpage>–<lpage>352</lpage>. <pub-id pub-id-type="doi">10.1089/brain.2013.0156</pub-id>
+<pub-id pub-id-type="pmid">23705677</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0050">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0050">
+<string-name>
+<surname>Satterthwaite</surname>, <given-names>T. D.</given-names>
+</string-name>, <string-name>
+<surname>Ciric</surname>, <given-names>R.</given-names>
+</string-name>, <string-name>
+<surname>Roalf</surname>, <given-names>D. R.</given-names>
+</string-name>, <string-name>
+<surname>Davatzikos</surname>, <given-names>C.</given-names>
+</string-name>, <string-name>
+<surname>Bassett</surname>, <given-names>D. S.</given-names>
+</string-name>, &amp; <string-name>
+<surname>Wolf</surname>, <given-names>D. H.</given-names>
+</string-name> (<year>2019</year>). <article-title>Motion artifact in studies of functional connectivity: Characteristics and mitigation strategies</article-title>. <source xml:lang="en">Human Brain Mapping</source>, <volume>40</volume>(<issue>7</issue>), <fpage>2033</fpage>–<lpage>2051</lpage>. <pub-id pub-id-type="doi">10.1002/hbm.23665</pub-id>
+<pub-id pub-id-type="pmid">29091315</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0051">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0051">
+<string-name>
+<surname>Satterthwaite</surname>, <given-names>T. D.</given-names>
+</string-name>, <string-name>
+<surname>Elliott</surname>, <given-names>M. A.</given-names>
+</string-name>, <string-name>
+<surname>Gerraty</surname>, <given-names>R. T.</given-names>
+</string-name>, <string-name>
+<surname>Ruparel</surname>, <given-names>K.</given-names>
+</string-name>, <string-name>
+<surname>Loughead</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>Calkins</surname>, <given-names>M. E.</given-names>
+</string-name>, … <string-name>
+<surname>Wolf</surname>, <given-names>D. H.</given-names>
+</string-name> (<year>2013</year>). <article-title>An improved framework for confound regression and filtering for control of motion artifact in the preprocessing of resting‐state functional connectivity data</article-title>. <source xml:lang="en">NeuroImage</source>, <volume>64</volume>, <fpage>240</fpage>–<lpage>256</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2012.08.052</pub-id>
+<pub-id pub-id-type="pmid">22926292</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0052">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0052">
+<string-name>
+<surname>Satterthwaite</surname>, <given-names>T. D.</given-names>
+</string-name>, <string-name>
+<surname>Wolf</surname>, <given-names>D. H.</given-names>
+</string-name>, <string-name>
+<surname>Loughead</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>Ruparel</surname>, <given-names>K.</given-names>
+</string-name>, <string-name>
+<surname>Elliott</surname>, <given-names>M. A.</given-names>
+</string-name>, <string-name>
+<surname>Hakonarson</surname>, <given-names>H.</given-names>
+</string-name>, … <string-name>
+<surname>Gur</surname>, <given-names>R. E.</given-names>
+</string-name> (<year>2012</year>). <article-title>Impact of in‐scanner head motion on multiple measures of functional connectivity: Relevance for studies of neurodevelopment in youth</article-title>. <source xml:lang="en">NeuroImage</source>, <volume>60</volume>(<issue>1</issue>), <fpage>623</fpage>–<lpage>632</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2011.12.063</pub-id>
+<pub-id pub-id-type="pmid">22233733</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0053">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0053">
+<string-name>
+<surname>Schölvinck</surname>, <given-names>M. L.</given-names>
+</string-name>, <string-name>
+<surname>Maier</surname>, <given-names>A.</given-names>
+</string-name>, <string-name>
+<surname>Ye</surname>, <given-names>F. Q.</given-names>
+</string-name>, <string-name>
+<surname>Duyn</surname>, <given-names>J. H.</given-names>
+</string-name>, &amp; <string-name>
+<surname>Leopold</surname>, <given-names>D. A.</given-names>
+</string-name> (<year>2010</year>). <article-title>Neural basis of global resting‐state fMRI activity</article-title>. <source xml:lang="en">Proceedings of the National Academy of Sciences</source>, <volume>107</volume>(<issue>22</issue>), <fpage>10238</fpage>–<lpage>10243</lpage>. <pub-id pub-id-type="doi">10.1073/pnas.0913110107</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0054">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0054">
+<string-name>
+<surname>Shen</surname>, <given-names>X.</given-names>
+</string-name>, <string-name>
+<surname>Tokoglu</surname>, <given-names>F.</given-names>
+</string-name>, <string-name>
+<surname>Papademetris</surname>, <given-names>X.</given-names>
+</string-name>, &amp; <string-name>
+<surname>Constable</surname>, <given-names>R. T.</given-names>
+</string-name> (<year>2013</year>). <article-title>Groupwise whole‐brain parcellation from resting‐state fMRI data for network node identification</article-title>. <source xml:lang="en">NeuroImage</source>, <volume>82</volume>, <fpage>403</fpage>–<lpage>415</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2013.05.081</pub-id>
+<pub-id pub-id-type="pmid">23747961</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0055">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0055">
+<string-name>
+<surname>Shmueli</surname>, <given-names>K.</given-names>
+</string-name>, <string-name>
+<surname>van Gelderen</surname>, <given-names>P.</given-names>
+</string-name>, <string-name>
+<surname>de Zwart</surname>, <given-names>J. A.</given-names>
+</string-name>, <string-name>
+<surname>Horovitz</surname>, <given-names>S. G.</given-names>
+</string-name>, <string-name>
+<surname>Fukunaga</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Jansma</surname>, <given-names>J. M.</given-names>
+</string-name>, &amp; <string-name>
+<surname>Duyn</surname>, <given-names>J. H.</given-names>
+</string-name> (<year>2007</year>). <article-title>Low‐frequency fluctuations in the cardiac rate as a source of variance in the resting‐state fMRI BOLD signal</article-title>. <source xml:lang="en">NeuroImage</source>, <volume>38</volume>(<issue>2</issue>), <fpage>306</fpage>–<lpage>320</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2007.07.037</pub-id>
+<pub-id pub-id-type="pmid">17869543</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0056">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0056">
+<string-name>
+<surname>Siegel</surname>, <given-names>J. S.</given-names>
+</string-name>, <string-name>
+<surname>Mitra</surname>, <given-names>A.</given-names>
+</string-name>, <string-name>
+<surname>Laumann</surname>, <given-names>T. O.</given-names>
+</string-name>, <string-name>
+<surname>Seitzman</surname>, <given-names>B. A.</given-names>
+</string-name>, <string-name>
+<surname>Raichle</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Corbetta</surname>, <given-names>M.</given-names>
+</string-name>, &amp; <string-name>
+<surname>Snyder</surname>, <given-names>A. Z.</given-names>
+</string-name> (<year>2017</year>). <article-title>Data quality influences observed links between functional connectivity and behavior</article-title>. <source xml:lang="en">Cerebral Cortex</source>, <volume>27</volume>(<issue>9</issue>), <fpage>4492</fpage>–<lpage>4502</lpage>. <pub-id pub-id-type="doi">10.1093/cercor/bhw253</pub-id>
+<pub-id pub-id-type="pmid">27550863</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0058">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0058">
+<string-name>
+<surname>Smyser</surname>, <given-names>C. D.</given-names>
+</string-name>, <string-name>
+<surname>Inder</surname>, <given-names>T. E.</given-names>
+</string-name>, <string-name>
+<surname>Shimony</surname>, <given-names>J. S.</given-names>
+</string-name>, <string-name>
+<surname>Hill</surname>, <given-names>J. E.</given-names>
+</string-name>, <string-name>
+<surname>Degnan</surname>, <given-names>A. J.</given-names>
+</string-name>, <string-name>
+<surname>Snyder</surname>, <given-names>A. Z.</given-names>
+</string-name>, &amp; <string-name>
+<surname>Neil</surname>, <given-names>J. J.</given-names>
+</string-name> (<year>2010</year>). <article-title>Longitudinal analysis of neural network development in preterm infants</article-title>. <source xml:lang="en">Cerebral Cortex</source>, <volume>20</volume>(<issue>12</issue>), <fpage>2852</fpage>–<lpage>2862</lpage>. <pub-id pub-id-type="doi">10.1093/cercor/bhq035</pub-id>
+<pub-id pub-id-type="pmid">20237243</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0059">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0059">
+<string-name>
+<surname>Spisák</surname>, <given-names>T.</given-names>
+</string-name>, <string-name>
+<surname>Jakab</surname>, <given-names>A.</given-names>
+</string-name>, <string-name>
+<surname>Kis</surname>, <given-names>S. A.</given-names>
+</string-name>, <string-name>
+<surname>Opposits</surname>, <given-names>G.</given-names>
+</string-name>, <string-name>
+<surname>Aranyi</surname>, <given-names>C.</given-names>
+</string-name>, <string-name>
+<surname>Berényi</surname>, <given-names>E.</given-names>
+</string-name>, &amp; <string-name>
+<surname>Emri</surname>, <given-names>M.</given-names>
+</string-name> (<year>2014</year>). <article-title>Voxel‐wise motion artifacts in population‐level whole‐brain connectivity analysis of resting‐state fMRI</article-title>. <source xml:lang="en">PLoS One</source>, <volume>9</volume>(<issue>9</issue>), <elocation-id>e104947</elocation-id>
+<pub-id pub-id-type="doi">10.1371/journal.pone.0104947</pub-id>
+<pub-id pub-id-type="pmid">25188284</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0060">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0060">
+<string-name>
+<surname>Tomeček</surname>, <given-names>D.</given-names>
+</string-name>, <string-name>
+<surname>Androvičová</surname>, <given-names>R.</given-names>
+</string-name>, <string-name>
+<surname>Fajnerová</surname>, <given-names>I.</given-names>
+</string-name>, <string-name>
+<surname>Děchtěrenko</surname>, <given-names>F.</given-names>
+</string-name>, <string-name>
+<surname>Rydlo</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>Horáček</surname>, <given-names>J.</given-names>
+</string-name>, … <string-name>
+<surname>Hlinka</surname>, <given-names>J.</given-names>
+</string-name> (<year>2020</year>). <article-title>Personality reflection in the Brain's intrinsic functional architecture remains elusive</article-title>. <source xml:lang="en">PLoS One</source>, <volume>15</volume>(<issue>6</issue>), <elocation-id>e0232570</elocation-id>
+<pub-id pub-id-type="doi">10.1371/journal.pone.0232570</pub-id>
+<pub-id pub-id-type="pmid">32484832</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0061">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0061">
+<string-name>
+<surname>Tyszka</surname>, <given-names>J. M.</given-names>
+</string-name>, <string-name>
+<surname>Kennedy</surname>, <given-names>D. P.</given-names>
+</string-name>, <string-name>
+<surname>Paul</surname>, <given-names>L. K.</given-names>
+</string-name>, &amp; <string-name>
+<surname>Adolphs</surname>, <given-names>R.</given-names>
+</string-name> (<year>2014</year>). <article-title>Largely typical patterns of resting‐state functional connectivity in high‐functioning adults with autism</article-title>. <source xml:lang="en">Cerebral Cortex</source>, <volume>24</volume>(<issue>7</issue>), <fpage>1894</fpage>–<lpage>1905</lpage>. <pub-id pub-id-type="doi">10.1093/cercor/bht040</pub-id>
+<pub-id pub-id-type="pmid">23425893</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0062">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0062">
+<string-name>
+<surname>Tzourio‐Mazoyer</surname>, <given-names>N.</given-names>
+</string-name>, <string-name>
+<surname>Landeau</surname>, <given-names>B.</given-names>
+</string-name>, <string-name>
+<surname>Papathanassiou</surname>, <given-names>D.</given-names>
+</string-name>, <string-name>
+<surname>Crivello</surname>, <given-names>F.</given-names>
+</string-name>, <string-name>
+<surname>Etard</surname>, <given-names>O.</given-names>
+</string-name>, <string-name>
+<surname>Delcroix</surname>, <given-names>N.</given-names>
+</string-name>, … <string-name>
+<surname>Joliot</surname>, <given-names>M.</given-names>
+</string-name> (<year>2002</year>). <article-title>Automated anatomical labeling of activations in SPM using a macroscopic anatomical parcellation of the MNI MRI single‐subject brain</article-title>. <source xml:lang="en">NeuroImage</source>, <volume>15</volume>, <fpage>273</fpage>–<lpage>289</lpage>. <pub-id pub-id-type="doi">10.1006/nimg.2001.0978</pub-id>
+<pub-id pub-id-type="pmid">11771995</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0063">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0063">
+<string-name>
+<surname>Uğurbil</surname>, <given-names>K.</given-names>
+</string-name>, <string-name>
+<surname>Xu</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>Auerbach</surname>, <given-names>E. J.</given-names>
+</string-name>, <string-name>
+<surname>Moeller</surname>, <given-names>S.</given-names>
+</string-name>, <string-name>
+<surname>Vu</surname>, <given-names>A. T.</given-names>
+</string-name>, <string-name>
+<surname>Duarte‐Carvajalino</surname>, <given-names>J. M.</given-names>
+</string-name>, … <collab collab-type="authors">WU‐Minn HCP Consortium</collab>
+. (<year>2013</year>). <article-title>Pushing spatial and temporal resolution for functional and diffusion MRI in the human Connectome project</article-title>. <source xml:lang="en">NeuroImage</source>, <volume>80</volume>, <fpage>80</fpage>–<lpage>104</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2013.05.012</pub-id>
+<pub-id pub-id-type="pmid">23702417</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0064">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0064">
+<string-name>
+<surname>Van Dijk</surname>, <given-names>K. R. A.</given-names>
+</string-name>, <string-name>
+<surname>Hedden</surname>, <given-names>T.</given-names>
+</string-name>, <string-name>
+<surname>Venkataraman</surname>, <given-names>A.</given-names>
+</string-name>, <string-name>
+<surname>Evans</surname>, <given-names>K. C.</given-names>
+</string-name>, <string-name>
+<surname>Lazar</surname>, <given-names>S. W.</given-names>
+</string-name>, &amp; <string-name>
+<surname>Buckner</surname>, <given-names>R. L.</given-names>
+</string-name> (<year>2009</year>). <article-title>Intrinsic functional connectivity as a tool for human connectomics: Theory, properties, and optimization</article-title>. <source xml:lang="en">Journal of Neurophysiology</source>, <volume>103</volume>(<issue>1</issue>), <fpage>297</fpage>–<lpage>321</lpage>. <pub-id pub-id-type="doi">10.1152/jn.00783.2009</pub-id>
+<pub-id pub-id-type="pmid">19889849</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0065">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0065">
+<string-name>
+<surname>Van Dijk</surname>, <given-names>K. R. A.</given-names>
+</string-name>, <string-name>
+<surname>Sabuncu</surname>, <given-names>M. R.</given-names>
+</string-name>, &amp; <string-name>
+<surname>Buckner</surname>, <given-names>R. L.</given-names>
+</string-name> (<year>2012</year>). <article-title>The influence of head motion on intrinsic functional connectivity MRI</article-title>. <source xml:lang="en">NeuroImage</source>, <volume>59</volume>(<issue>1</issue>), <fpage>431</fpage>–<lpage>438</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2011.07.044</pub-id>
+<pub-id pub-id-type="pmid">21810475</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0066">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0066">
+<string-name>
+<surname>Van Essen</surname>, <given-names>D. C.</given-names>
+</string-name>, <string-name>
+<surname>Smith</surname>, <given-names>S. M.</given-names>
+</string-name>, <string-name>
+<surname>Barch</surname>, <given-names>D. M.</given-names>
+</string-name>, <string-name>
+<surname>Behrens</surname>, <given-names>T. E. J.</given-names>
+</string-name>, <string-name>
+<surname>Yacoub</surname>, <given-names>E.</given-names>
+</string-name>, <string-name>
+<surname>Ugurbil</surname>, <given-names>K.</given-names>
+</string-name>, &amp; <collab collab-type="authors">WU‐Minn HCP Consortium</collab>
+. (<year>2013</year>). <article-title>The WU‐Minn human Connectome project: An overview</article-title>. <source xml:lang="en">NeuroImage</source>, <volume>80</volume>, <fpage>62</fpage>–<lpage>79</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2013.05.041</pub-id>
+<pub-id pub-id-type="pmid">23684880</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0067">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0067">
+<string-name>
+<surname>Venkatesh</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Jaja</surname>, <given-names>J.</given-names>
+</string-name>, &amp; <string-name>
+<surname>Pessoa</surname>, <given-names>L.</given-names>
+</string-name> (<year>2020</year>). <article-title>Comparing functional connectivity matrices: A geometry‐aware approach applied to participant identification</article-title>. <source xml:lang="en">NeuroImage</source>, <volume>207</volume>, <elocation-id>116398</elocation-id>
+<pub-id pub-id-type="doi">10.1016/j.neuroimage.2019.116398</pub-id>
+<pub-id pub-id-type="pmid">31783117</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0068">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0068">
+<string-name>
+<surname>Waheed</surname>, <given-names>S. H.</given-names>
+</string-name>, <string-name>
+<surname>Mirbagheri</surname>, <given-names>S.</given-names>
+</string-name>, <string-name>
+<surname>Agarwal</surname>, <given-names>S.</given-names>
+</string-name>, <string-name>
+<surname>Kamali</surname>, <given-names>A.</given-names>
+</string-name>, <string-name>
+<surname>Yahyavi‐Firouz‐Abadi</surname>, <given-names>N.</given-names>
+</string-name>, <string-name>
+<surname>Chaudhry</surname>, <given-names>A.</given-names>
+</string-name>, … <string-name>
+<surname>Sair</surname>, <given-names>H. I.</given-names>
+</string-name> (<year>2016</year>). <article-title>Reporting of resting‐state functional magnetic resonance imaging preprocessing methodologies</article-title>. <source xml:lang="en">Brain Connectivity</source>, <volume>6</volume>(<issue>9</issue>), <fpage>663</fpage>–<lpage>668</lpage>. <pub-id pub-id-type="doi">10.1089/brain.2016.0446</pub-id>
+<pub-id pub-id-type="pmid">27507129</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0069">
+        <mixed-citation publication-type="miscellaneous" id="hbm25195-cit-0069">
+<string-name>
+<surname>Williams</surname>, <given-names>J.C.</given-names>
+</string-name>, &amp; <string-name>
+<surname>Snellenberg</surname>, <given-names>J.X.V.</given-names>
+</string-name> (<year>2019</year>). <article-title>Motion denoising of multiband resting state functional connectivity MRI data: An improved volume censoring method. <italic>bioRxiv</italic> 860635</article-title>. <pub-id pub-id-type="doi">10.1101/860635</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0070">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0070">
+<string-name>
+<surname>Yan</surname>, <given-names>C.‐G.</given-names>
+</string-name>, <string-name>
+<surname>Cheung</surname>, <given-names>B.</given-names>
+</string-name>, <string-name>
+<surname>Kelly</surname>, <given-names>C.</given-names>
+</string-name>, <string-name>
+<surname>Colcombe</surname>, <given-names>S.</given-names>
+</string-name>, <string-name>
+<surname>Craddock</surname>, <given-names>R. C.</given-names>
+</string-name>, <string-name>
+<surname>Di Martino</surname>, <given-names>A.</given-names>
+</string-name>, … <string-name>
+<surname>Milham</surname>, <given-names>M. P.</given-names>
+</string-name> (<year>2013</year>). <article-title>A comprehensive assessment of regional variation in the impact of head micromovements on functional connectomics</article-title>. <source xml:lang="en">NeuroImage</source>, <volume>76</volume>, <fpage>183</fpage>–<lpage>201</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2013.03.004</pub-id>
+<pub-id pub-id-type="pmid">23499792</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0071">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0071">
+<string-name>
+<surname>Yan</surname>, <given-names>C.‐G.</given-names>
+</string-name>, <string-name>
+<surname>Craddock</surname>, <given-names>R. C.</given-names>
+</string-name>, <string-name>
+<surname>He</surname>, <given-names>Y.</given-names>
+</string-name>, &amp; <string-name>
+<surname>Milham</surname>, <given-names>M. P.</given-names>
+</string-name> (<year>2013</year>). <article-title>Addressing head motion dependencies for small‐world topologies in functional connectomics</article-title>. <source xml:lang="en">Frontiers in Human Neuroscience</source>, <volume>7</volume>, <fpage>910</fpage>
+<pub-id pub-id-type="doi">10.3389/fnhum.2013.00910</pub-id>
+<pub-id pub-id-type="pmid">24421764</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0072">
+        <mixed-citation publication-type="journal" id="hbm25195-cit-0072">
+<string-name>
+<surname>Zalesky</surname>, <given-names>A.</given-names>
+</string-name>, <string-name>
+<surname>Fornito</surname>, <given-names>A.</given-names>
+</string-name>, <string-name>
+<surname>Harding</surname>, <given-names>I. H.</given-names>
+</string-name>, <string-name>
+<surname>Cocchi</surname>, <given-names>L.</given-names>
+</string-name>, <string-name>
+<surname>Yücel</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Pantelis</surname>, <given-names>C.</given-names>
+</string-name>, &amp; <string-name>
+<surname>Bullmore</surname>, <given-names>E. T.</given-names>
+</string-name> (<year>2010</year>). <article-title>Whole‐brain anatomical networks: Does the choice of nodes matter?</article-title>
+<source xml:lang="en">NeuroImage</source>, <volume>50</volume>(<issue>3</issue>), <fpage>970</fpage>–<lpage>983</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2009.12.027</pub-id>
+<pub-id pub-id-type="pmid">20035887</pub-id></mixed-citation>
+      </ref>
+      <ref id="hbm25195-bib-0073">
+        <mixed-citation publication-type="book" id="hbm25195-cit-0073">
+<string-name>
+<surname>Zar</surname>, <given-names>J. H.</given-names>
+</string-name> (<year>1999</year>). <source xml:lang="en">Biostatistical analysis</source>, <publisher-loc>Upper Saddle River, NJ</publisher-loc>: <publisher-name>Prentice Hall</publisher-name>.</mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

@@ -1,0 +1,965 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">PLoS One</journal-id>
+      <journal-id journal-id-type="iso-abbrev">PLoS ONE</journal-id>
+      <journal-id journal-id-type="publisher-id">plos</journal-id>
+      <journal-id journal-id-type="pmc">plosone</journal-id>
+      <journal-title-group>
+        <journal-title>PLoS ONE</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1932-6203</issn>
+      <publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, CA USA</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">30695058</article-id>
+      <article-id pub-id-type="pmc">6351056</article-id>
+      <article-id pub-id-type="doi">10.1371/journal.pone.0211465</article-id>
+      <article-id pub-id-type="publisher-id">PONE-D-18-19723</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v3">
+          <subject>Medicine and Health Sciences</subject>
+          <subj-group>
+            <subject>Health Care</subject>
+            <subj-group>
+              <subject>Patients</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v3">
+          <subject>Computer and Information Sciences</subject>
+          <subj-group>
+            <subject>Neural Networks</subject>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v3">
+          <subject>Biology and Life Sciences</subject>
+          <subj-group>
+            <subject>Neuroscience</subject>
+            <subj-group>
+              <subject>Neural Networks</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v3">
+          <subject>Biology and Life Sciences</subject>
+          <subj-group>
+            <subject>Neuroscience</subject>
+            <subj-group>
+              <subject>Brain Mapping</subject>
+              <subj-group>
+                <subject>Functional Magnetic Resonance Imaging</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v3">
+          <subject>Medicine and Health Sciences</subject>
+          <subj-group>
+            <subject>Diagnostic Medicine</subject>
+            <subj-group>
+              <subject>Diagnostic Radiology</subject>
+              <subj-group>
+                <subject>Magnetic Resonance Imaging</subject>
+                <subj-group>
+                  <subject>Functional Magnetic Resonance Imaging</subject>
+                </subj-group>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v3">
+          <subject>Research and Analysis Methods</subject>
+          <subj-group>
+            <subject>Imaging Techniques</subject>
+            <subj-group>
+              <subject>Diagnostic Radiology</subject>
+              <subj-group>
+                <subject>Magnetic Resonance Imaging</subject>
+                <subj-group>
+                  <subject>Functional Magnetic Resonance Imaging</subject>
+                </subj-group>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v3">
+          <subject>Medicine and Health Sciences</subject>
+          <subj-group>
+            <subject>Radiology and Imaging</subject>
+            <subj-group>
+              <subject>Diagnostic Radiology</subject>
+              <subj-group>
+                <subject>Magnetic Resonance Imaging</subject>
+                <subj-group>
+                  <subject>Functional Magnetic Resonance Imaging</subject>
+                </subj-group>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v3">
+          <subject>Research and Analysis Methods</subject>
+          <subj-group>
+            <subject>Imaging Techniques</subject>
+            <subj-group>
+              <subject>Neuroimaging</subject>
+              <subj-group>
+                <subject>Functional Magnetic Resonance Imaging</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v3">
+          <subject>Biology and Life Sciences</subject>
+          <subj-group>
+            <subject>Neuroscience</subject>
+            <subj-group>
+              <subject>Neuroimaging</subject>
+              <subj-group>
+                <subject>Functional Magnetic Resonance Imaging</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v3">
+          <subject>Medicine and Health Sciences</subject>
+          <subj-group>
+            <subject>Clinical Medicine</subject>
+            <subj-group>
+              <subject>Clinical Immunology</subject>
+              <subj-group>
+                <subject>Autoimmune Diseases</subject>
+                <subj-group>
+                  <subject>Multiple Sclerosis</subject>
+                </subj-group>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v3">
+          <subject>Biology and Life Sciences</subject>
+          <subj-group>
+            <subject>Immunology</subject>
+            <subj-group>
+              <subject>Clinical Immunology</subject>
+              <subj-group>
+                <subject>Autoimmune Diseases</subject>
+                <subj-group>
+                  <subject>Multiple Sclerosis</subject>
+                </subj-group>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v3">
+          <subject>Medicine and Health Sciences</subject>
+          <subj-group>
+            <subject>Immunology</subject>
+            <subj-group>
+              <subject>Clinical Immunology</subject>
+              <subj-group>
+                <subject>Autoimmune Diseases</subject>
+                <subj-group>
+                  <subject>Multiple Sclerosis</subject>
+                </subj-group>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v3">
+          <subject>Medicine and Health Sciences</subject>
+          <subj-group>
+            <subject>Neurology</subject>
+            <subj-group>
+              <subject>Demyelinating Disorders</subject>
+              <subj-group>
+                <subject>Multiple Sclerosis</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v3">
+          <subject>Medicine and Health Sciences</subject>
+          <subj-group>
+            <subject>Neurology</subject>
+            <subj-group>
+              <subject>Neurodegenerative Diseases</subject>
+              <subj-group>
+                <subject>Multiple Sclerosis</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v3">
+          <subject>Medicine and Health Sciences</subject>
+          <subj-group>
+            <subject>Public and Occupational Health</subject>
+            <subj-group>
+              <subject>Global Health</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v3">
+          <subject>Physical Sciences</subject>
+          <subj-group>
+            <subject>Mathematics</subject>
+            <subj-group>
+              <subject>Topology</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v3">
+          <subject>Biology and Life Sciences</subject>
+          <subj-group>
+            <subject>Anatomy</subject>
+            <subj-group>
+              <subject>Nervous System</subject>
+              <subj-group>
+                <subject>Central Nervous System</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v3">
+          <subject>Medicine and Health Sciences</subject>
+          <subj-group>
+            <subject>Anatomy</subject>
+            <subj-group>
+              <subject>Nervous System</subject>
+              <subj-group>
+                <subject>Central Nervous System</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v3">
+          <subject>Medicine and Health Sciences</subject>
+          <subj-group>
+            <subject>Diagnostic Medicine</subject>
+            <subj-group>
+              <subject>Diagnostic Radiology</subject>
+              <subj-group>
+                <subject>Magnetic Resonance Imaging</subject>
+                <subj-group>
+                  <subject>Echo Planar Imaging</subject>
+                </subj-group>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v3">
+          <subject>Research and Analysis Methods</subject>
+          <subj-group>
+            <subject>Imaging Techniques</subject>
+            <subj-group>
+              <subject>Diagnostic Radiology</subject>
+              <subj-group>
+                <subject>Magnetic Resonance Imaging</subject>
+                <subj-group>
+                  <subject>Echo Planar Imaging</subject>
+                </subj-group>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v3">
+          <subject>Medicine and Health Sciences</subject>
+          <subj-group>
+            <subject>Radiology and Imaging</subject>
+            <subj-group>
+              <subject>Diagnostic Radiology</subject>
+              <subj-group>
+                <subject>Magnetic Resonance Imaging</subject>
+                <subj-group>
+                  <subject>Echo Planar Imaging</subject>
+                </subj-group>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Resting-state functional MRI demonstrates brain network reorganization in neuromyelitis optica spectrum disorder (NMOSD)</article-title>
+        <alt-title alt-title-type="running-head">Resting-state fMRI and NMOSD</alt-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Bigaut</surname>
+            <given-names>Kévin</given-names>
+          </name>
+          <role content-type="http://credit.casrai.org/">Formal analysis</role>
+          <role content-type="http://credit.casrai.org/">Investigation</role>
+          <role content-type="http://credit.casrai.org/">Writing – original draft</role>
+          <xref ref-type="aff" rid="aff001">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Achard</surname>
+            <given-names>Sophie</given-names>
+          </name>
+          <role content-type="http://credit.casrai.org/">Conceptualization</role>
+          <role content-type="http://credit.casrai.org/">Formal analysis</role>
+          <role content-type="http://credit.casrai.org/">Investigation</role>
+          <role content-type="http://credit.casrai.org/">Methodology</role>
+          <role content-type="http://credit.casrai.org/">Writing – review &amp; editing</role>
+          <xref ref-type="aff" rid="aff002">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Hemmert</surname>
+            <given-names>Céline</given-names>
+          </name>
+          <role content-type="http://credit.casrai.org/">Formal analysis</role>
+          <role content-type="http://credit.casrai.org/">Investigation</role>
+          <role content-type="http://credit.casrai.org/">Writing – original draft</role>
+          <xref ref-type="aff" rid="aff003">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Baloglu</surname>
+            <given-names>Seyyid</given-names>
+          </name>
+          <role content-type="http://credit.casrai.org/">Investigation</role>
+          <xref ref-type="aff" rid="aff004">
+            <sup>4</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <contrib-id authenticated="true" contrib-id-type="orcid">http://orcid.org/0000-0002-7246-2533</contrib-id>
+          <name>
+            <surname>Kremer</surname>
+            <given-names>Laurent</given-names>
+          </name>
+          <role content-type="http://credit.casrai.org/">Investigation</role>
+          <xref ref-type="aff" rid="aff001">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Collongues</surname>
+            <given-names>Nicolas</given-names>
+          </name>
+          <role content-type="http://credit.casrai.org/">Investigation</role>
+          <xref ref-type="aff" rid="aff001">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>De Sèze</surname>
+            <given-names>Jérôme</given-names>
+          </name>
+          <role content-type="http://credit.casrai.org/">Conceptualization</role>
+          <role content-type="http://credit.casrai.org/">Investigation</role>
+          <role content-type="http://credit.casrai.org/">Supervision</role>
+          <role content-type="http://credit.casrai.org/">Writing – review &amp; editing</role>
+          <xref ref-type="aff" rid="aff001">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Kremer</surname>
+            <given-names>Stéphane</given-names>
+          </name>
+          <role content-type="http://credit.casrai.org/">Conceptualization</role>
+          <role content-type="http://credit.casrai.org/">Investigation</role>
+          <role content-type="http://credit.casrai.org/">Supervision</role>
+          <role content-type="http://credit.casrai.org/">Writing – review &amp; editing</role>
+          <xref ref-type="aff" rid="aff004">
+            <sup>4</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor001">*</xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff001"><label>1</label>
+<addr-line>Department of neurology, Hôpitaux Universitaires de Strasbourg, Strasbourg, France</addr-line></aff>
+      <aff id="aff002"><label>2</label>
+<addr-line>Centre National de la Recherche Scientifique, Grenoble Image Parole Signal Automatique, Grenoble, France</addr-line></aff>
+      <aff id="aff003"><label>3</label>
+<addr-line>Department of radiology, Groupe Hospitalier Régional Mulhouse Sud-Alsace, Mulhouse, France</addr-line></aff>
+      <aff id="aff004"><label>4</label>
+<addr-line>Department of radiology, Hôpitaux Universitaires de Strasbourg, Strasbourg, France</addr-line></aff>
+      <contrib-group>
+        <contrib contrib-type="editor">
+          <name>
+            <surname>De Vico Fallani</surname>
+            <given-names>Fabrizio</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group>
+      <aff id="edit1">
+        <addr-line>Inria - ICM, Paris, FRANCE</addr-line>
+      </aff>
+      <author-notes>
+        <fn fn-type="COI-statement" id="coi001">
+          <p><bold>Competing Interests: </bold>The authors have declared that no competing interests exist.</p>
+        </fn>
+        <corresp id="cor001">* E-mail: <email>stephane.kremer@chru-strasbourg.fr</email></corresp>
+      </author-notes>
+      <pub-date pub-type="epub">
+        <day>29</day>
+        <month>1</month>
+        <year>2019</year>
+      </pub-date>
+      <pub-date pub-type="collection">
+        <year>2019</year>
+      </pub-date>
+      <volume>14</volume>
+      <issue>1</issue>
+      <elocation-id>e0211465</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>3</day>
+          <month>7</month>
+          <year>2018</year>
+        </date>
+        <date date-type="accepted">
+          <day>15</day>
+          <month>1</month>
+          <year>2019</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>© 2019 Bigaut et al</copyright-statement>
+        <copyright-year>2019</copyright-year>
+        <copyright-holder>Bigaut et al</copyright-holder>
+        <license xlink:href="http://creativecommons.org/licenses/by/4.0/">
+          <license-p>This is an open access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+        </license>
+      </permissions>
+      <self-uri content-type="pdf" xlink:href="pone.0211465.pdf"/>
+      <abstract>
+        <sec id="sec001">
+          <title>Background</title>
+          <p>The relation between brain functional connectivity of patients with neuromyelitis optica spectrum disorder (NMOSD) and the degree of disability remains unclear.</p>
+        </sec>
+        <sec id="sec002">
+          <title>Objective</title>
+          <p>Compare brain functional connectivity of patients with NMOSD to healthy subjects in resting-state functional MRI (rs-fMRI).</p>
+        </sec>
+        <sec id="sec003">
+          <title>Methods</title>
+          <p>We compared the rs-fMRI connectivity in 12 NMOSD patients with 20 healthy subjects matched for age and sex. Graph theory analysis was used to quantify the role of each node using a set of metrics: degree, global efficiency, clustering and modularity. To summarize the abnormal connectivity profile of brain regions in patients compared to healthy subjects, we defined a hub disruption index κ.</p>
+        </sec>
+        <sec id="sec004">
+          <title>Results</title>
+          <p>Concerning the global organization of networks in NMOSD, a small-world topology was preserved without significant modification concerning all average metrics. However, visual networks and the sensorimotor network showed decreased connectivity with high interindividual variability. The hub disruption index κ was correlated to the Expanded Disability Status Scale (EDSS).</p>
+        </sec>
+        <sec id="sec005">
+          <title>Conclusion</title>
+          <p>These results demonstrate a correlation between disability according to the EDSS and neuronal reorganization using the rs-fMRI graph methodology. The conservation of a normal global topological structure despite local modifications in functional connectivity seems to show brain plasticity in response to the disability.</p>
+        </sec>
+      </abstract>
+      <funding-group>
+        <funding-statement>The authors received no specific funding for this work.</funding-statement>
+      </funding-group>
+      <counts>
+        <fig-count count="4"/>
+        <table-count count="2"/>
+        <page-count count="10"/>
+      </counts>
+      <custom-meta-group>
+        <custom-meta id="data-availability">
+          <meta-name>Data Availability</meta-name>
+          <meta-value>The data are available at: (DOI) <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.7910/DVN/YZ7TTT">https://doi.org/10.7910/DVN/YZ7TTT</ext-link>.</meta-value>
+        </custom-meta>
+      </custom-meta-group>
+    </article-meta>
+    <notes>
+      <title>Data Availability</title>
+      <p>The data are available at: (DOI) <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.7910/DVN/YZ7TTT">https://doi.org/10.7910/DVN/YZ7TTT</ext-link>.</p>
+    </notes>
+  </front>
+  <body>
+    <sec sec-type="intro" id="sec006">
+      <title>Introduction</title>
+      <p>Neuromyelitis optica spectrum disorder (NMOSD) is an inflammatory disease of the central nervous system characterized by severe relapses in regions with high aquaporin 4 (AQP4) expression such as the optic nerves, the spinal cord and specific brain areas.</p>
+      <p>In 43–70% of patients with NMOSD, brain MRI abnormalities have been reported mainly in regions with high AQP4 expression, in corticospinal tracts and also in deep white matter with nonspecific lesions [<xref rid="pone.0211465.ref001" ref-type="bibr">1</xref>]. However, using diffusion tensor imaging (DTI), normal-appearing white matter abnormalities have been described, mostly in optic radiations and corticospinal tracts [<xref rid="pone.0211465.ref002" ref-type="bibr">2</xref>]. These abnormalities in DTI are also found in the normal-appearing white-matter of multiple sclerosis (MS) patients but are not restricted to corticospinal tracts [<xref rid="pone.0211465.ref003" ref-type="bibr">3</xref>]. In NMOSD and MS, an association between white matter diffusion changes and disability (evaluated by the Expanded Disability Status Scale, EDSS) has been reported [<xref rid="pone.0211465.ref003" ref-type="bibr">3</xref>,<xref rid="pone.0211465.ref004" ref-type="bibr">4</xref>].</p>
+      <p>In rs-fMRI, previous studies for MS patients reported functional connectivity changes in a limited number of brain regions but keeping a global brain integrity [<xref rid="pone.0211465.ref005" ref-type="bibr">5</xref>,<xref rid="pone.0211465.ref006" ref-type="bibr">6</xref>]. Similar results with fMRI demonstrated a correlation between modification in the functional connectivity of brain regions and disability in MS but not yet for NMOSD [<xref rid="pone.0211465.ref007" ref-type="bibr">7</xref>–<xref rid="pone.0211465.ref010" ref-type="bibr">10</xref>].</p>
+      <p>Graph theory is a mathematical model used to describe the brain network topology as graphs of regional cortical and subcortical nodes. This approach analyzes the interactions between several regions by evaluating the functional organization of nodes, the strength of the interactions, and the efficiency of information processing [<xref rid="pone.0211465.ref011" ref-type="bibr">11</xref>,<xref rid="pone.0211465.ref012" ref-type="bibr">12</xref>]. rs-fMRI studies demonstrated that the human brain network has a small-world topology with highly connected hub nodes [<xref rid="pone.0211465.ref013" ref-type="bibr">13</xref>]. With this organization, the brain can process specialized and integrated information. A small-world topology is conserved in comatose patients and other neurological diseases [<xref rid="pone.0211465.ref011" ref-type="bibr">11</xref>,<xref rid="pone.0211465.ref014" ref-type="bibr">14</xref>].</p>
+      <p>Our hypothesis is that the functional connectivity of brain regions in patients with NMOSD are disturbed compared to healthy subjects and these modifications are correlated with the disability. The objective of this study was to compare the functional connectivity of NMOSD patients to healthy subjects in rs-fMRI using graph theory.</p>
+    </sec>
+    <sec sec-type="materials|methods" id="sec007">
+      <title>Materials and methods</title>
+      <p>Twelve patients with NMOSD defined according to the 2015 international consensus diagnostic criteria were recruited from the Strasbourg University Hospital [<xref rid="pone.0211465.ref015" ref-type="bibr">15</xref>]. Inclusion criteria were patients with defined NMOSD who were relapse-free. Healthy subjects had no personal history of neurological or psychiatric disease and had taken no medication, alcohol or drugs. The duration of the disease, the degree of the disability as assessed by the EDSS and presence of anti-AQP4 antibodies were collected.</p>
+      <p>The study protocol was approved by the local ethics review board (Comité de Protection des Personnes) and all participants gave written informed consent before participation.</p>
+      <p>MRI was performed on a 1.5T MRI (Avanto, Siemens, Erlangen, Germany). Anatomical images were acquired using a high-resolution three-dimensional (3D) T1 and for functional images (patients with open eyes) using gradient-echo echo planar imaging (EPI) with blood oxygen level-dependent (BOLD) contrast with the following parameters: TR = 3 s, TE = 50 ms, 4×4×4 mm<sup>3</sup> isotropic voxel size, 405 images and 32 axial slices on the whole cortex.</p>
+      <p>Resting-state fMRI data were corrected with anatomical images then normalized with the template Colin27 and analyzed with the SPM8 program [<xref rid="pone.0211465.ref016" ref-type="bibr">16</xref>]. This technique produces subdivided images (template automated labeling) in 90 brain regions (nodes) [<xref rid="pone.0211465.ref017" ref-type="bibr">17</xref>].</p>
+      <p>For each node, we computed topological metrics: degree (the number of connections per node), global efficiency (link to the shortest path between nodes), clustering (quantification of the connections among the neighborhoods of a node) and modularity (measurement of the possibility of dividing the network into subgroups of nodes). The overall average of these metrics was estimated in each network, but also explored at the nodal level.</p>
+      <p>To summarize the abnormal profile of nodal connectivity in patients compared to healthy subjects, we defined the hub disruption index κ [<xref rid="pone.0211465.ref014" ref-type="bibr">14</xref>]. It is computed by fitting a straight line (linear regression) to a scatterplot of the nodal property of interest, such as degree, in an individual participant minus the same nodal property on average over all of the healthy volunteers versus the mean nodal property in the healthy group and is defined by the slope of this straight line. A high κ value associated with a conservative average value is related to significant reorganization, where hubs become non-hubs and vice-versa.</p>
+      <p>For the statistical analysis, we regressed metrics with EDSS using a linear model. For each test, we performed an analysis of variance (ANOVA) with the <italic>p</italic>-value. Global and nodal statistics were compared between groups using <italic>t</italic>-tests or permutation tests. No multiple comparisons were applied, and <italic>p</italic>&lt;0.01 was considered significant for descriptive purposes.</p>
+    </sec>
+    <sec sec-type="results" id="sec008">
+      <title>Results</title>
+      <p>Twelve NMOSD patients (six males and six females) were included with a mean age of 45.6 years (range, 25–66 years), a mean disease duration of 10.5 years, a mean EDSS of 3.5, and seven patients had anti-AQP4 antibodies (<xref rid="pone.0211465.t001" ref-type="table">Table 1</xref>). Twenty healthy volunteers (11 males and nine females; range, 25–51 years) were included.</p>
+      <table-wrap id="pone.0211465.t001" orientation="portrait" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0211465.t001</object-id>
+        <label>Table 1</label>
+        <caption>
+          <title>Demographic, clinical and biological data of the patients included.</title>
+        </caption>
+        <alternatives>
+          <graphic id="pone.0211465.t001g" xlink:href="pone.0211465.t001"/>
+          <table frame="hsides" rules="groups">
+            <colgroup span="1">
+              <col align="left" valign="middle" span="1"/>
+              <col align="left" valign="middle" span="1"/>
+              <col align="left" valign="middle" span="1"/>
+              <col align="left" valign="middle" span="1"/>
+              <col align="left" valign="middle" span="1"/>
+              <col align="left" valign="middle" span="1"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <th align="left" rowspan="1" colspan="1"> </th>
+                <th align="center" rowspan="1" colspan="1">Sex</th>
+                <th align="center" rowspan="1" colspan="1">Age, year</th>
+                <th align="center" rowspan="1" colspan="1">EDSS</th>
+                <th align="center" rowspan="1" colspan="1">Duration of disease, year</th>
+                <th align="center" rowspan="1" colspan="1">anti-AQP4 antibody</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>Patient 1</bold>
+                </td>
+                <td align="right" rowspan="1" colspan="1">female</td>
+                <td align="right" rowspan="1" colspan="1">41</td>
+                <td align="right" rowspan="1" colspan="1">2</td>
+                <td align="right" rowspan="1" colspan="1">6</td>
+                <td align="right" rowspan="1" colspan="1">Yes</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>Patient 2</bold>
+                </td>
+                <td align="right" rowspan="1" colspan="1">female</td>
+                <td align="right" rowspan="1" colspan="1">66</td>
+                <td align="right" rowspan="1" colspan="1">4</td>
+                <td align="right" rowspan="1" colspan="1">12</td>
+                <td align="right" rowspan="1" colspan="1">Yes</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>Patient 3</bold>
+                </td>
+                <td align="right" rowspan="1" colspan="1">male</td>
+                <td align="right" rowspan="1" colspan="1">46</td>
+                <td align="right" rowspan="1" colspan="1">8</td>
+                <td align="right" rowspan="1" colspan="1">9</td>
+                <td align="right" rowspan="1" colspan="1">No</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>Patient 4</bold>
+                </td>
+                <td align="right" rowspan="1" colspan="1">male</td>
+                <td align="right" rowspan="1" colspan="1">49</td>
+                <td align="right" rowspan="1" colspan="1">7</td>
+                <td align="right" rowspan="1" colspan="1">5</td>
+                <td align="right" rowspan="1" colspan="1">No</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>Patient 5</bold>
+                </td>
+                <td align="right" rowspan="1" colspan="1">female</td>
+                <td align="right" rowspan="1" colspan="1">30</td>
+                <td align="right" rowspan="1" colspan="1">2</td>
+                <td align="right" rowspan="1" colspan="1">6</td>
+                <td align="right" rowspan="1" colspan="1">Yes</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>Patient 6</bold>
+                </td>
+                <td align="right" rowspan="1" colspan="1">female</td>
+                <td align="right" rowspan="1" colspan="1">49</td>
+                <td align="right" rowspan="1" colspan="1">0</td>
+                <td align="right" rowspan="1" colspan="1">34</td>
+                <td align="right" rowspan="1" colspan="1">Yes</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>Patient 7</bold>
+                </td>
+                <td align="right" rowspan="1" colspan="1">female</td>
+                <td align="right" rowspan="1" colspan="1">57</td>
+                <td align="right" rowspan="1" colspan="1">2</td>
+                <td align="right" rowspan="1" colspan="1">17</td>
+                <td align="right" rowspan="1" colspan="1">Yes</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>Patient 8</bold>
+                </td>
+                <td align="right" rowspan="1" colspan="1">male</td>
+                <td align="right" rowspan="1" colspan="1">35</td>
+                <td align="right" rowspan="1" colspan="1">3</td>
+                <td align="right" rowspan="1" colspan="1">6</td>
+                <td align="right" rowspan="1" colspan="1">No</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>Patient 9</bold>
+                </td>
+                <td align="right" rowspan="1" colspan="1">male</td>
+                <td align="right" rowspan="1" colspan="1">51</td>
+                <td align="right" rowspan="1" colspan="1">6</td>
+                <td align="right" rowspan="1" colspan="1">5</td>
+                <td align="right" rowspan="1" colspan="1">Yes</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>Patient 10</bold>
+                </td>
+                <td align="right" rowspan="1" colspan="1">female</td>
+                <td align="right" rowspan="1" colspan="1">25</td>
+                <td align="right" rowspan="1" colspan="1">3</td>
+                <td align="right" rowspan="1" colspan="1">3</td>
+                <td align="right" rowspan="1" colspan="1">No</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>Patient 11</bold>
+                </td>
+                <td align="right" rowspan="1" colspan="1">male</td>
+                <td align="right" rowspan="1" colspan="1">48</td>
+                <td align="right" rowspan="1" colspan="1">3</td>
+                <td align="right" rowspan="1" colspan="1">13</td>
+                <td align="right" rowspan="1" colspan="1">No</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>Patient 12</bold>
+                </td>
+                <td align="right" rowspan="1" colspan="1">male</td>
+                <td align="right" rowspan="1" colspan="1">51</td>
+                <td align="right" rowspan="1" colspan="1">2</td>
+                <td align="right" rowspan="1" colspan="1">10</td>
+                <td align="right" rowspan="1" colspan="1">Yes</td>
+              </tr>
+            </tbody>
+          </table>
+        </alternatives>
+        <table-wrap-foot>
+          <fn id="t001fn001">
+            <p>EDSS, Expanded Disability Status Scale; AQP4, aquaporin 4.</p>
+          </fn>
+        </table-wrap-foot>
+      </table-wrap>
+      <p>At a global level, there was no significant difference in mean values for global efficiency, clustering, modularity and degree between the NMOSD group and the control group (<xref ref-type="fig" rid="pone.0211465.g001">Fig 1</xref>). The small-world topology, as described in Watts and Strogatz and revealed in the brain graph topology of healthy subjects, was characterized by a short minimum path length producing an efficient graph in terms of transmission of information and by high clustering reflecting higher resilience to attack because neighborhoods of nodes are well connected [<xref rid="pone.0211465.ref018" ref-type="bibr">18</xref>]. Despite the pathology, the functional connectivity network of NMOSD patients maintained a small-world topology with high global efficiency and strong clustering, as in healthy subjects.</p>
+      <fig id="pone.0211465.g001" orientation="portrait" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0211465.g001</object-id>
+        <label>Fig 1</label>
+        <caption>
+          <title>Preserved small-world topological organization of NMOSD patients.</title>
+          <p>Average metrics are extracted for each brain network for healthy subjects and patients ((A) functional connectivity, gathering information on correlations; (B) global efficiency, related to the shortest path; (C) clustering, quantifying connections of the neighborhood; (D) modularity, measuring the possibility of dividing the network into subgroups of nodes); (E) degree distribution, the probability distribution of the degree of a node in the network (patients in red and healthy volunteers in black). No statistical differences were observed between NMOSD patients (grey) and healthy subjects (white) for all metrics used. This shows that the small-world topology is preserved for NMOSD patients despite the disability that is already present on clinical assessment of the patients. Abbreviations. NMOSD, neuromyelitis optica spectrum disorder.</p>
+        </caption>
+        <graphic xlink:href="pone.0211465.g001"/>
+      </fig>
+      <p>At a regional level, there were significant differences (<italic>p</italic>&lt;0.01) in the functional connectivity of some brain regions between NMOSD patients compared to healthy participants with a high interindividual variability for global efficiency, clustering and degree (<xref ref-type="fig" rid="pone.0211465.g002">Fig 2</xref>). There was no correlation between regional values and EDSS scores.</p>
+      <fig id="pone.0211465.g002" orientation="portrait" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0211465.g002</object-id>
+        <label>Fig 2</label>
+        <caption>
+          <title>Disconnected and overconnected nodes in NMOSD patients.</title>
+          <p>Cortical surface representation of the difference in mean global efficiency, clustering, and degree between patient and volunteer groups (in red significantly increased parameter in NMOSD patients compared with healthy subjects, and in blue significantly decreased parameter in NMOSD patients).</p>
+        </caption>
+        <graphic xlink:href="pone.0211465.g002"/>
+      </fig>
+      <p>The functional connectivity was modified in many brain regions in NMOSD patients compared to healthy subjects, in particular for the degree. The hub disruption index κ of each NMOSD patients was calculated from the linear regression based on the differences in the degree between each NMOSD patients and the healthy group (<xref ref-type="fig" rid="pone.0211465.g003">Fig 3A</xref> and <xref rid="pone.0211465.t002" ref-type="table">Table 2</xref>). Although differences were observed between an individual NMOSD patient and the healthy group, there was no significant difference between the averages of κ in NMOSD patients compared to healthy participants attesting a high interindividual variability (<xref ref-type="fig" rid="pone.0211465.g003">Fig 3B</xref>). However, there was a significant correlation (<italic>p</italic> = 0.006) between κ and the EDSS (<xref ref-type="fig" rid="pone.0211465.g004">Fig 4</xref>). The higher the disability evaluated by EDSS, the more κ deviates from 0.</p>
+      <fig id="pone.0211465.g003" orientation="portrait" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0211465.g003</object-id>
+        <label>Fig 3</label>
+        <caption>
+          <title>Comparison of nodal degree and hub disruption index κ between NMOSD patients and healthy subjects.</title>
+          <p>(A) Estimated linear regression for each NMOSD patients (red lines) computed from a scatterplot of the nodal degree in an individual participant minus the same nodal property on average over all of the healthy volunteers versus the mean nodal property in the healthy group. Error bars in black reflect standard deviation calculated from the nodal degree in healthy subjects. (B) Boxplots of hub disruption index κ in the control group (white) and the NMOSD group (grey). There was no difference between the two groups.</p>
+        </caption>
+        <graphic xlink:href="pone.0211465.g003"/>
+      </fig>
+      <fig id="pone.0211465.g004" orientation="portrait" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0211465.g004</object-id>
+        <label>Fig 4</label>
+        <caption>
+          <title>Brain network reorganization is greater when the disability as measured with EDSS is higher.</title>
+          <p>The hub disruption index κ and the EDSS score are presented for each NMOSD patient. The black line corresponds to the estimated regression between the global reorganization index and the EDSS score. A hub disruption index of 0 corresponds to a network similar to healthy participants. The hub disruption index κ is correlated with the EDSS score. The correlation shows that reorganization of brain networks is closely related to the increase in disability for these patients. This may reflect a compensation mechanism that is active throughout the disease. Abbreviations. EDSS, Expanded Disability Status Scale.</p>
+        </caption>
+        <graphic xlink:href="pone.0211465.g004"/>
+      </fig>
+      <table-wrap id="pone.0211465.t002" orientation="portrait" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0211465.t002</object-id>
+        <label>Table 2</label>
+        <caption>
+          <title>The hub disruption index κ and EDSS score for each NMOSD patients.</title>
+        </caption>
+        <alternatives>
+          <graphic id="pone.0211465.t002g" xlink:href="pone.0211465.t002"/>
+          <table frame="hsides" rules="groups">
+            <colgroup span="1">
+              <col align="left" valign="middle" span="1"/>
+              <col align="left" valign="middle" span="1"/>
+              <col align="left" valign="middle" span="1"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <th align="center" rowspan="1" colspan="1">NMOSD patients</th>
+                <th align="center" rowspan="1" colspan="1">Hub disruption index κ value</th>
+                <th align="center" rowspan="1" colspan="1">EDSS score</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="justify" rowspan="1" colspan="1">
+                  <bold>Patient 1</bold>
+                </td>
+                <td align="right" rowspan="1" colspan="1">0,427</td>
+                <td align="right" rowspan="1" colspan="1">2</td>
+              </tr>
+              <tr>
+                <td align="justify" rowspan="1" colspan="1">
+                  <bold>Patient 2</bold>
+                </td>
+                <td align="right" rowspan="1" colspan="1">-0,243</td>
+                <td align="right" rowspan="1" colspan="1">4</td>
+              </tr>
+              <tr>
+                <td align="justify" rowspan="1" colspan="1">
+                  <bold>Patient 3</bold>
+                </td>
+                <td align="right" rowspan="1" colspan="1">-0,563</td>
+                <td align="right" rowspan="1" colspan="1">8</td>
+              </tr>
+              <tr>
+                <td align="justify" rowspan="1" colspan="1">
+                  <bold>Patient 4</bold>
+                </td>
+                <td align="right" rowspan="1" colspan="1">-0,655</td>
+                <td align="right" rowspan="1" colspan="1">7</td>
+              </tr>
+              <tr>
+                <td align="justify" rowspan="1" colspan="1">
+                  <bold>Patient 5</bold>
+                </td>
+                <td align="right" rowspan="1" colspan="1">-0,159</td>
+                <td align="right" rowspan="1" colspan="1">2</td>
+              </tr>
+              <tr>
+                <td align="justify" rowspan="1" colspan="1">
+                  <bold>Patient 6</bold>
+                </td>
+                <td align="right" rowspan="1" colspan="1">-0,09</td>
+                <td align="right" rowspan="1" colspan="1">0</td>
+              </tr>
+              <tr>
+                <td align="justify" rowspan="1" colspan="1">
+                  <bold>Patient 7</bold>
+                </td>
+                <td align="right" rowspan="1" colspan="1">0,384</td>
+                <td align="right" rowspan="1" colspan="1">2</td>
+              </tr>
+              <tr>
+                <td align="justify" rowspan="1" colspan="1">
+                  <bold>Patient 8</bold>
+                </td>
+                <td align="right" rowspan="1" colspan="1">-0,025</td>
+                <td align="right" rowspan="1" colspan="1">3</td>
+              </tr>
+              <tr>
+                <td align="justify" rowspan="1" colspan="1">
+                  <bold>Patient 9</bold>
+                </td>
+                <td align="right" rowspan="1" colspan="1">-0,443</td>
+                <td align="right" rowspan="1" colspan="1">6</td>
+              </tr>
+              <tr>
+                <td align="justify" rowspan="1" colspan="1">
+                  <bold>Patient 10</bold>
+                </td>
+                <td align="right" rowspan="1" colspan="1">-0,671</td>
+                <td align="right" rowspan="1" colspan="1">3</td>
+              </tr>
+              <tr>
+                <td align="justify" rowspan="1" colspan="1">
+                  <bold>Patient 11</bold>
+                </td>
+                <td align="right" rowspan="1" colspan="1">0,084</td>
+                <td align="right" rowspan="1" colspan="1">3</td>
+              </tr>
+              <tr>
+                <td align="justify" rowspan="1" colspan="1">
+                  <bold>Patient 12</bold>
+                </td>
+                <td align="right" rowspan="1" colspan="1">-0,12</td>
+                <td align="right" rowspan="1" colspan="1">2</td>
+              </tr>
+            </tbody>
+          </table>
+        </alternatives>
+      </table-wrap>
+    </sec>
+    <sec sec-type="conclusions" id="sec009">
+      <title>Discussion</title>
+      <p>The application of graph theoretical analysis to fMRI provides a global view of the connectivity network for each individual and quantifies the role of each brain region within the network [<xref rid="pone.0211465.ref011" ref-type="bibr">11</xref>]. Thus, it is possible to identify decreased or increased connectivity in cortical regions in NMOSD patients.</p>
+      <p>The structural cortical networks in NMOSD demonstrated small-world organization as in MS, organized into modules with hubs (strongly connected nodes, high degree) as in healthy subjects [<xref rid="pone.0211465.ref011" ref-type="bibr">11</xref>].</p>
+      <p>The results show that there are many brain regions where regional functional connectivity is modified in NMOSD patients compared to controls with a high interindividual variability. The main regions are involved in the visual network and the sensorimotor network. Our data differ from other studies because they only show modifications for a few regions. These results are consistent with preferential involvement of the optic nerves and spinal cord in NMOSD and confirm DTI studies [<xref rid="pone.0211465.ref004" ref-type="bibr">4</xref>]. The axonal lesions could lead to a decrease in the functional connectivity of the cerebral regions related by Wallerian degeneration [<xref rid="pone.0211465.ref002" ref-type="bibr">2</xref>].</p>
+      <p>To objectify reorganization of the functional networks, we defined a hub disruption index κ, which has already been used in studies in comatose patients, patients with stroke, lateralized focal epilepsies and clinically isolated syndrome (CIS) but never in patients with NMOSD [<xref rid="pone.0211465.ref014" ref-type="bibr">14</xref>,<xref rid="pone.0211465.ref019" ref-type="bibr">19</xref>–<xref rid="pone.0211465.ref021" ref-type="bibr">21</xref>]. These studies demonstrated a reorganization of brain networks with both disconnected and overconnected nodes in patients and a reduced hub disruption index κ in comparison with healthy subjects. In patients with CIS, there was any correlation between κ and the EDSS score or the patient’s lesion load [<xref rid="pone.0211465.ref021" ref-type="bibr">21</xref>]. In our study, κ in NMOSD group was not reduced in comparison to healthy group probably because of an important variability in the symptomatology between NMOSD patients. However, κ was correlated with the EDSS score. Therefore, local modifications of connectivity could lead to increased neuronal reorganization while preserving a normal global structure, which supports the idea of cerebral plasticity in response to disability as demonstrated in patients with RRMS or CIS [<xref rid="pone.0211465.ref010" ref-type="bibr">10</xref>,<xref rid="pone.0211465.ref021" ref-type="bibr">21</xref>,<xref rid="pone.0211465.ref022" ref-type="bibr">22</xref>]. The neuronal reorganization implemented to balance local modifications probably differs from one patient to another, which could explain the high interindividual variability of the data.</p>
+      <p>The main limitation of this study is the low number of patients increasingly limiting the probability of finding a significant variation in functional connectivity. The low number of patients is explained by the low prevalence of NMOSD. Secondly, these results are heterogeneous, with considerable differences in functional connectivity between patients.</p>
+      <p>In summary, we have shown that there is a significant correlation between disability measured by EDSS and network reorganization. These results suggest that network reorganization may highlight cerebral plasticity in response to clinical disability. The analysis of brain network reorganization by rs-fMRI needs to be investigated further in longitudinal studies.</p>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>We thank Thomas Senger for his assistance collecting the clinical data.</p>
+    </ack>
+    <ref-list>
+      <title>References</title>
+      <ref id="pone.0211465.ref001">
+        <label>1</label>
+        <mixed-citation publication-type="journal"><name><surname>Kim</surname><given-names>HJ</given-names></name>, <name><surname>Paul</surname><given-names>F</given-names></name>, <name><surname>Lana-Peixoto</surname><given-names>MA</given-names></name>, <name><surname>Tenembaum</surname><given-names>S</given-names></name>, <name><surname>Asgari</surname><given-names>N</given-names></name>, <name><surname>Palace</surname><given-names>J</given-names></name>, <etal>et al</etal>
+<article-title>MRI characteristics of neuromyelitis optica spectrum disorder: an international update</article-title>. <source>Neurology</source>. <year>2015</year>;<volume>84</volume>: <fpage>1165</fpage>–<lpage>1173</lpage>. <pub-id pub-id-type="doi">10.1212/WNL.0000000000001367</pub-id>
+<pub-id pub-id-type="pmid">25695963</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0211465.ref002">
+        <label>2</label>
+        <mixed-citation publication-type="journal"><name><surname>Kremer</surname><given-names>S</given-names></name>, <name><surname>Renard</surname><given-names>F</given-names></name>, <name><surname>Achard</surname><given-names>S</given-names></name>, <name><surname>Lana-Peixoto</surname><given-names>MA</given-names></name>, <name><surname>Palace</surname><given-names>J</given-names></name>, <name><surname>Asgari</surname><given-names>N</given-names></name>, <etal>et al</etal>
+<article-title>Use of Advanced Magnetic Resonance Imaging Techniques in Neuromyelitis Optica Spectrum Disorder</article-title>. <source>JAMA Neurol</source>. <year>2015</year>;<volume>72</volume>: <fpage>815</fpage>–<lpage>822</lpage>. <pub-id pub-id-type="doi">10.1001/jamaneurol.2015.0248</pub-id>
+<pub-id pub-id-type="pmid">26010909</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0211465.ref003">
+        <label>3</label>
+        <mixed-citation publication-type="journal"><name><surname>de Kouchkovsky</surname><given-names>I</given-names></name>, <name><surname>Fieremans</surname><given-names>E</given-names></name>, <name><surname>Fleysher</surname><given-names>L</given-names></name>, <name><surname>Herbert</surname><given-names>J</given-names></name>, <name><surname>Grossman</surname><given-names>RI</given-names></name>, <name><surname>Inglese</surname><given-names>M</given-names></name>. <article-title>Quantification of normal-appearing white matter tract integrity in multiple sclerosis: a diffusion kurtosis imaging study</article-title>. <source>J Neurol</source>. <year>2016</year>;<volume>263</volume>: <fpage>1146</fpage>–<lpage>1155</lpage>. <pub-id pub-id-type="doi">10.1007/s00415-016-8118-z</pub-id>
+<pub-id pub-id-type="pmid">27094571</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0211465.ref004">
+        <label>4</label>
+        <mixed-citation publication-type="journal"><name><surname>Yu</surname><given-names>C</given-names></name>, <name><surname>Lin</surname><given-names>F</given-names></name>, <name><surname>Li</surname><given-names>K</given-names></name>, <name><surname>Jiang</surname><given-names>T</given-names></name>, <name><surname>Qin</surname><given-names>W</given-names></name>, <name><surname>Sun</surname><given-names>H</given-names></name>, <etal>et al</etal>
+<article-title>Pathogenesis of normal-appearing white matter damage in neuromyelitis optica: diffusion-tensor MR imaging</article-title>. <source>Radiology</source>. <year>2008</year>;<volume>246</volume>: <fpage>222</fpage>–<lpage>228</lpage>. <pub-id pub-id-type="doi">10.1148/radiol.2461062075</pub-id>
+<pub-id pub-id-type="pmid">18033757</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0211465.ref005">
+        <label>5</label>
+        <mixed-citation publication-type="journal"><name><surname>Liang</surname><given-names>P</given-names></name>, <name><surname>Liu</surname><given-names>Y</given-names></name>, <name><surname>Jia</surname><given-names>X</given-names></name>, <name><surname>Duan</surname><given-names>Y</given-names></name>, <name><surname>Yu</surname><given-names>C</given-names></name>, <name><surname>Qin</surname><given-names>W</given-names></name>, <etal>et al</etal>
+<article-title>Regional homogeneity changes in patients with neuromyelitis optica revealed by resting-state functional MRI</article-title>. <source>Clin Neurophysiol Off J Int Fed Clin Neurophysiol</source>. <year>2011</year>;<volume>122</volume>: <fpage>121</fpage>–<lpage>127</lpage>. <pub-id pub-id-type="doi">10.1016/j.clinph.2010.05.026</pub-id>
+<pub-id pub-id-type="pmid">20621555</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0211465.ref006">
+        <label>6</label>
+        <mixed-citation publication-type="journal"><name><surname>Liu</surname><given-names>Y</given-names></name>, <name><surname>Liang</surname><given-names>P</given-names></name>, <name><surname>Duan</surname><given-names>Y</given-names></name>, <name><surname>Jia</surname><given-names>X</given-names></name>, <name><surname>Wang</surname><given-names>F</given-names></name>, <name><surname>Yu</surname><given-names>C</given-names></name>, <etal>et al</etal>
+<article-title>Abnormal baseline brain activity in patients with neuromyelitis optica: a resting-state fMRI study</article-title>. <source>Eur J Radiol</source>. <year>2011</year>;<volume>80</volume>: <fpage>407</fpage>–<lpage>411</lpage>. <pub-id pub-id-type="doi">10.1016/j.ejrad.2010.05.002</pub-id>
+<pub-id pub-id-type="pmid">20605694</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0211465.ref007">
+        <label>7</label>
+        <mixed-citation publication-type="journal"><name><surname>Dogonowski</surname><given-names>A-M</given-names></name>, <name><surname>Siebner</surname><given-names>HR</given-names></name>, <name><surname>Soelberg Sørensen</surname><given-names>P</given-names></name>, <name><surname>Paulson</surname><given-names>OB</given-names></name>, <name><surname>Dyrby</surname><given-names>TB</given-names></name>, <name><surname>Blinkenberg</surname><given-names>M</given-names></name>, <etal>et al</etal>
+<article-title>Resting-state connectivity of pre-motor cortex reflects disability in multiple sclerosis</article-title>. <source>Acta Neurol Scand</source>. <year>2013</year>;<volume>128</volume>: <fpage>328</fpage>–<lpage>335</lpage>. <pub-id pub-id-type="doi">10.1111/ane.12121</pub-id>
+<pub-id pub-id-type="pmid">23461607</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0211465.ref008">
+        <label>8</label>
+        <mixed-citation publication-type="journal"><name><surname>Liu</surname><given-names>H</given-names></name>, <name><surname>Chen</surname><given-names>H</given-names></name>, <name><surname>Wu</surname><given-names>B</given-names></name>, <name><surname>Zhang</surname><given-names>T</given-names></name>, <name><surname>Wang</surname><given-names>J</given-names></name>, <name><surname>Huang</surname><given-names>K</given-names></name>, <etal>et al</etal>
+<article-title>Functional cortical changes in relapsing–remitting multiple sclerosis at amplitude configuration: a resting-state fMRI study</article-title>. <source>Neuropsychiatr Dis Treat</source>. <year>2016</year>;<volume>12</volume>: <fpage>3031</fpage>–<lpage>3039</lpage>. <pub-id pub-id-type="doi">10.2147/NDT.S120909</pub-id>
+<pub-id pub-id-type="pmid">27932883</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0211465.ref009">
+        <label>9</label>
+        <mixed-citation publication-type="journal"><name><surname>Fleischer</surname><given-names>V</given-names></name>, <name><surname>Gröger</surname><given-names>A</given-names></name>, <name><surname>Koirala</surname><given-names>N</given-names></name>, <name><surname>Droby</surname><given-names>A</given-names></name>, <name><surname>Muthuraman</surname><given-names>M</given-names></name>, <name><surname>Kolber</surname><given-names>P</given-names></name>, <etal>et al</etal>
+<article-title>Increased structural white and grey matter network connectivity compensates for functional decline in early multiple sclerosis</article-title>. <source>Mult Scler J</source>. <year>2017</year>;<volume>23</volume>: <fpage>432</fpage>–<lpage>441</lpage>. <pub-id pub-id-type="doi">10.1177/1352458516651503</pub-id>
+<pub-id pub-id-type="pmid">27246143</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0211465.ref010">
+        <label>10</label>
+        <mixed-citation publication-type="journal"><name><surname>Fleischer</surname><given-names>V</given-names></name>, <name><surname>Radetz</surname><given-names>A</given-names></name>, <name><surname>Ciolac</surname><given-names>D</given-names></name>, <name><surname>Muthuraman</surname><given-names>M</given-names></name>, <name><surname>Gonzalez-Escamilla</surname><given-names>G</given-names></name>, <name><surname>Zipp</surname><given-names>F</given-names></name>, <etal>et al</etal>
+<article-title>Graph Theoretical Framework of Brain Networks in Multiple Sclerosis: A Review of Concepts</article-title>. <source>Neuroscience</source>. <year>2017</year>; <pub-id pub-id-type="doi">10.1016/j.neuroscience.2017.10.033</pub-id>
+<pub-id pub-id-type="pmid">29101079</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0211465.ref011">
+        <label>11</label>
+        <mixed-citation publication-type="journal"><name><surname>Guye</surname><given-names>M</given-names></name>, <name><surname>Bettus</surname><given-names>G</given-names></name>, <name><surname>Bartolomei</surname><given-names>F</given-names></name>, <name><surname>Cozzone</surname><given-names>PJ</given-names></name>. <article-title>Graph theoretical analysis of structural and functional connectivity MRI in normal and pathological brain networks</article-title>. <source>Magma N Y N</source>. <year>2010</year>;<volume>23</volume>: <fpage>409</fpage>–<lpage>421</lpage>. <pub-id pub-id-type="doi">10.1007/s10334-010-0205-z</pub-id>
+<pub-id pub-id-type="pmid">20349109</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0211465.ref012">
+        <label>12</label>
+        <mixed-citation publication-type="journal"><name><surname>Bassett</surname><given-names>DS</given-names></name>, <name><surname>Sporns</surname><given-names>O</given-names></name>. <article-title>Network neuroscience</article-title>. <source>Nat Neurosci</source>. <year>2017</year>;<volume>20</volume>: <fpage>353</fpage>–<lpage>364</lpage>. <pub-id pub-id-type="doi">10.1038/nn.4502</pub-id>
+<pub-id pub-id-type="pmid">28230844</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0211465.ref013">
+        <label>13</label>
+        <mixed-citation publication-type="journal"><name><surname>Bullmore</surname><given-names>E</given-names></name>, <name><surname>Sporns</surname><given-names>O</given-names></name>. <article-title>Complex brain networks: graph theoretical analysis of structural and functional systems</article-title>. <source>Nat Rev Neurosci</source>. <year>2009</year>;<volume>10</volume>: <fpage>186</fpage>–<lpage>198</lpage>. <pub-id pub-id-type="doi">10.1038/nrn2575</pub-id>
+<pub-id pub-id-type="pmid">19190637</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0211465.ref014">
+        <label>14</label>
+        <mixed-citation publication-type="journal"><name><surname>Achard</surname><given-names>S</given-names></name>, <name><surname>Delon-Martin</surname><given-names>C</given-names></name>, <name><surname>Vértes</surname><given-names>PE</given-names></name>, <name><surname>Renard</surname><given-names>F</given-names></name>, <name><surname>Schenck</surname><given-names>M</given-names></name>, <name><surname>Schneider</surname><given-names>F</given-names></name>, <etal>et al</etal>
+<article-title>Hubs of brain functional networks are radically reorganized in comatose patients</article-title>. <source>Proc Natl Acad Sci U S A</source>. <year>2012</year>;<volume>109</volume>: <fpage>20608</fpage>–<lpage>20613</lpage>. <pub-id pub-id-type="doi">10.1073/pnas.1208933109</pub-id>
+<pub-id pub-id-type="pmid">23185007</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0211465.ref015">
+        <label>15</label>
+        <mixed-citation publication-type="journal"><name><surname>Wingerchuk</surname><given-names>DM</given-names></name>, <name><surname>Banwell</surname><given-names>B</given-names></name>, <name><surname>Bennett</surname><given-names>JL</given-names></name>, <name><surname>Cabre</surname><given-names>P</given-names></name>, <name><surname>Carroll</surname><given-names>W</given-names></name>, <name><surname>Chitnis</surname><given-names>T</given-names></name>, <etal>et al</etal>
+<article-title>International consensus diagnostic criteria for neuromyelitis optica spectrum disorders</article-title>. <source>Neurology</source>. <year>2015</year>;<volume>85</volume>: <fpage>177</fpage>–<lpage>189</lpage>. <pub-id pub-id-type="doi">10.1212/WNL.0000000000001729</pub-id>
+<pub-id pub-id-type="pmid">26092914</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0211465.ref016">
+        <label>16</label>
+        <mixed-citation publication-type="journal"><name><surname>Biswal</surname><given-names>B</given-names></name>, <name><surname>DeYoe</surname><given-names>EA</given-names></name>, <name><surname>Hyde</surname><given-names>JS</given-names></name>. <article-title>Reduction of physiological fluctuations in fMRI using digital filters</article-title>. <source>Magn Reson Med</source>. <year>1996</year>;<volume>35</volume>: <fpage>107</fpage>–<lpage>113</lpage>. <pub-id pub-id-type="pmid">8771028</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0211465.ref017">
+        <label>17</label>
+        <mixed-citation publication-type="journal"><name><surname>Tzourio-Mazoyer</surname><given-names>N</given-names></name>, <name><surname>Landeau</surname><given-names>B</given-names></name>, <name><surname>Papathanassiou</surname><given-names>D</given-names></name>, <name><surname>Crivello</surname><given-names>F</given-names></name>, <name><surname>Etard</surname><given-names>O</given-names></name>, <name><surname>Delcroix</surname><given-names>N</given-names></name>, <etal>et al</etal>
+<article-title>Automated anatomical labeling of activations in SPM using a macroscopic anatomical parcellation of the MNI MRI single-subject brain</article-title>. <source>NeuroImage</source>. <year>2002</year>;<volume>15</volume>: <fpage>273</fpage>–<lpage>289</lpage>. <pub-id pub-id-type="doi">10.1006/nimg.2001.0978</pub-id>
+<pub-id pub-id-type="pmid">11771995</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0211465.ref018">
+        <label>18</label>
+        <mixed-citation publication-type="journal"><name><surname>Watts</surname><given-names>DJ</given-names></name>, <name><surname>Strogatz</surname><given-names>SH</given-names></name>. <article-title>Collective dynamics of “small-world” networks</article-title>. <source>Nature</source>. <year>1998</year>;<volume>393</volume>: <fpage>440</fpage>–<lpage>442</lpage>. <pub-id pub-id-type="doi">10.1038/30918</pub-id>
+<pub-id pub-id-type="pmid">9623998</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0211465.ref019">
+        <label>19</label>
+        <mixed-citation publication-type="journal"><name><surname>Ridley</surname><given-names>BGY</given-names></name>, <name><surname>Rousseau</surname><given-names>C</given-names></name>, <name><surname>Wirsich</surname><given-names>J</given-names></name>, <name><surname>Le Troter</surname><given-names>A</given-names></name>, <name><surname>Soulier</surname><given-names>E</given-names></name>, <name><surname>Confort-Gouny</surname><given-names>S</given-names></name>, <etal>et al</etal>
+<article-title>Nodal approach reveals differential impact of lateralized focal epilepsies on hub reorganization</article-title>. <source>NeuroImage</source>. <year>2015</year>;<volume>118</volume>: <fpage>39</fpage>–<lpage>48</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2015.05.096</pub-id>
+<pub-id pub-id-type="pmid">26070261</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0211465.ref020">
+        <label>20</label>
+        <mixed-citation publication-type="journal"><name><surname>Termenon</surname><given-names>M</given-names></name>, <name><surname>Achard</surname><given-names>S</given-names></name>, <name><surname>Jaillard</surname><given-names>A</given-names></name>, <name><surname>Delon-Martin</surname><given-names>C</given-names></name>. <article-title>The “Hub Disruption Index,” a Reliable Index Sensitive to the Brain Networks Reorganization. A Study of the Contralesional Hemisphere in Stroke</article-title>. <source>Front Comput Neurosci</source>. <year>2016</year>;<volume>10</volume>: <fpage>84</fpage>
+<pub-id pub-id-type="doi">10.3389/fncom.2016.00084</pub-id>
+<pub-id pub-id-type="pmid">27582702</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0211465.ref021">
+        <label>21</label>
+        <mixed-citation publication-type="journal"><name><surname>Koubiyr</surname><given-names>I</given-names></name>, <name><surname>Deloire</surname><given-names>M</given-names></name>, <name><surname>Besson</surname><given-names>P</given-names></name>, <name><surname>Coupé</surname><given-names>P</given-names></name>, <name><surname>Dulau</surname><given-names>C</given-names></name>, <name><surname>Pelletier</surname><given-names>J</given-names></name>, <etal>et al</etal>
+<article-title>Longitudinal study of functional brain network reorganization in clinically isolated syndrome</article-title>. <source>Mult Scler Houndmills Basingstoke Engl</source>. <year>2018</year>; 1352458518813108. <pub-id pub-id-type="doi">10.1177/1352458518813108</pub-id>
+<pub-id pub-id-type="pmid">30480467</pub-id></mixed-citation>
+      </ref>
+      <ref id="pone.0211465.ref022">
+        <label>22</label>
+        <mixed-citation publication-type="journal"><name><surname>Muthuraman</surname><given-names>M</given-names></name>, <name><surname>Fleischer</surname><given-names>V</given-names></name>, <name><surname>Kolber</surname><given-names>P</given-names></name>, <name><surname>Luessi</surname><given-names>F</given-names></name>, <name><surname>Zipp</surname><given-names>F</given-names></name>, <name><surname>Groppa</surname><given-names>S</given-names></name>. <article-title>Structural Brain Network Characteristics Can Differentiate CIS from Early RRMS</article-title>. <source>Front Neurosci</source>. <year>2016</year>;<volume>10</volume>: <fpage>14</fpage>
+<pub-id pub-id-type="doi">10.3389/fnins.2016.00014</pub-id>
+<pub-id pub-id-type="pmid">26869873</pub-id></mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

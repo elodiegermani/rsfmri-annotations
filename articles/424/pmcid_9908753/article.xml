@@ -1,0 +1,1004 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.3" xml:lang="en" article-type="research-article">
+  <?properties open_access?>
+  <processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats">
+    <restricted-by>pmc</restricted-by>
+  </processing-meta>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">Front Hum Neurosci</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Front Hum Neurosci</journal-id>
+      <journal-id journal-id-type="publisher-id">Front. Hum. Neurosci.</journal-id>
+      <journal-title-group>
+        <journal-title>Frontiers in Human Neuroscience</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1662-5161</issn>
+      <publisher>
+        <publisher-name>Frontiers Media S.A.</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">36778038</article-id>
+      <article-id pub-id-type="pmc">9908753</article-id>
+      <article-id pub-id-type="doi">10.3389/fnhum.2023.1094592</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Neuroscience</subject>
+          <subj-group>
+            <subject>Original Research</subject>
+          </subj-group>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>The classification of brain network for major depressive disorder patients based on deep graph convolutional neural network</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Zhu</surname>
+            <given-names>Manyun</given-names>
+          </name>
+          <xref rid="aff1" ref-type="aff">
+<sup>1</sup>
+</xref>
+          <uri xlink:href="http://loop.frontiersin.org/people/2075505/overview"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Quan</surname>
+            <given-names>Yu</given-names>
+          </name>
+          <xref rid="aff2" ref-type="aff">
+<sup>2</sup>
+</xref>
+        </contrib>
+        <contrib contrib-type="author" corresp="yes">
+          <name>
+            <surname>He</surname>
+            <given-names>Xuan</given-names>
+          </name>
+          <xref rid="aff1" ref-type="aff">
+<sup>1</sup>
+</xref>
+          <xref rid="c001" ref-type="corresp">
+<sup>*</sup>
+</xref>
+          <uri xlink:href="http://loop.frontiersin.org/people/1846805/overview"/>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1"><sup>1</sup><institution>College of Medicine and Biological Information Engineering, Northeastern University</institution>, <addr-line>Shenyang</addr-line>, <country>China</country></aff>
+      <aff id="aff2"><sup>2</sup><institution>Information Center of Shengjing Hospital of China Medical University</institution>, <addr-line>Shenyang</addr-line>, <country>China</country></aff>
+      <author-notes>
+        <fn fn-type="edited-by">
+          <p>Edited by: Wei Wu, Alto Neuroscience, United States</p>
+        </fn>
+        <fn fn-type="edited-by">
+          <p>Reviewed by: Zhaowen Liu, Massachusetts General Hospital and Harvard Medical School, United States; Remi Patriat, University of Minnesota Twin Cities, United States</p>
+        </fn>
+        <corresp id="c001">*Correspondence: Xuan He, <email>hexuan@bmie.neu.edu.cn</email></corresp>
+        <fn fn-type="other" id="fn004">
+          <p>This article was submitted to Brain Imaging and Stimulation, a section of the journal Frontiers in Human Neuroscience</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="epub">
+        <day>26</day>
+        <month>1</month>
+        <year>2023</year>
+      </pub-date>
+      <pub-date pub-type="collection">
+        <year>2023</year>
+      </pub-date>
+      <volume>17</volume>
+      <elocation-id>1094592</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>10</day>
+          <month>11</month>
+          <year>2022</year>
+        </date>
+        <date date-type="accepted">
+          <day>12</day>
+          <month>1</month>
+          <year>2023</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Copyright © 2023 Zhu, Quan and He.</copyright-statement>
+        <copyright-year>2023</copyright-year>
+        <copyright-holder>Zhu, Quan and He</copyright-holder>
+        <license>
+          <ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref>
+          <license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY). The use, distribution or reproduction in other forums is permitted, provided the original author(s) and the copyright owner(s) are credited and that the original publication in this journal is cited, in accordance with accepted academic practice. No use, distribution or reproduction is permitted which does not comply with these terms.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <sec>
+          <title>Introduction</title>
+          <p>The early diagnosis of major depressive disorder (MDD) is very important for patients that suffer from severe and irreversible consequences of depression. It has been indicated that functional connectivity (FC) analysis based on functional magnetic resonance imaging (fMRI) data can provide valuable biomarkers for clinical diagnosis. However, previous studies mainly focus on brain disease classification in small sample sizes, which may lead to dramatic divergences in classification accuracy.</p>
+        </sec>
+        <sec>
+          <title>Methods</title>
+          <p>This paper attempts to address this limitation by applying the deep graph convolutional neural network (DGCNN) method on a large multi-site MDD dataset. The resting-state fMRI data are acquired from 830 MDD patients and 771 normal controls (NC) shared by the REST-meta-MDD consortium.</p>
+        </sec>
+        <sec>
+          <title>Results</title>
+          <p>The DGCNN model trained with the binary network after thresholding, identified MDD patients from normal controls and achieved an accuracy of 72.1% with 10-fold cross-validation, which is 12.4%, 9.8%, and 7.6% higher than SVM, RF, and GCN, respectively. Moreover, the process of dataset reading and model training is faster. Therefore, it demonstrates the advantages of the DGCNN model with low time complexity and sound classification performance.</p>
+        </sec>
+        <sec>
+          <title>Discussion</title>
+          <p>Based on a large, multi-site dataset from MDD patients, the results expressed that DGCNN is not an extremely accurate method for MDD diagnosis. However, there is an improvement over previous methods with our goal of better understanding brain function and ultimately providing a biomarker or diagnostic capability for MDD diagnosis.</p>
+        </sec>
+      </abstract>
+      <kwd-group>
+        <kwd>deep graph convolutional neural network</kwd>
+        <kwd>major depressive disorder</kwd>
+        <kwd>brain disease classification</kwd>
+        <kwd>functional connectivity</kwd>
+        <kwd>multi-site</kwd>
+      </kwd-group>
+      <funding-group>
+        <funding-statement>This work was supported by the National Natural Science Foundation of China (NSFC) under (Grant 61806048) and the Fundamental Research Funds for the Central Universities under (Grant No.2224001-10). And the REST-meta major depressive disorder data were provided by the members of the REST-meta-MDD Consortium.</funding-statement>
+      </funding-group>
+      <counts>
+        <fig-count count="4"/>
+        <table-count count="7"/>
+        <equation-count count="8"/>
+        <ref-count count="37"/>
+        <page-count count="9"/>
+        <word-count count="6609"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec sec-type="intro" id="S1">
+      <title>Introduction</title>
+      <p>Major Depressive Disorder is the second cause of disability, with point prevalence exceeding 4% (<xref rid="B11" ref-type="bibr">Ferrari et al., 2013</xref>). Currently, the primary diagnosis of MDD is mainly based on the Diagnostic and Statistical Manual of Mental Disorders (<xref rid="B7" ref-type="bibr">Cooper, 2018</xref>) or Hamilton Depression Rating Scale (<xref rid="B27" ref-type="bibr">Sharp, 2015</xref>). However, the results largely depend on the physicians’ experiences and may sometimes lead to misdiagnoses.</p>
+      <p>In this context, establishing objective and quantitative biomarkers for identifying MDD may not only provide insights into illness pathophysiology but also promote the development of biologically informed tests for clinical diagnosis and treatment planning. With the development of medical imaging technology, fMRI can be used to reveal the abnormalities of brain functional connectivity of MDD patients. By treating the human brain as a comprehensive network of functionally interacting brain regions and associating it with human behavior, we can make an understanding of how brain tissue changes in psychiatric disorders, which may effectively contribute to MDD diagnosis approaches (<xref rid="B13" ref-type="bibr">He et al., 2017</xref>).</p>
+      <p>In recent years, massive studies have discussed the pathological mechanism of psychosis and tried to search for its biomarkers. Most of them confirm the biological pathology of brain diseases is mostly related to the abnormality of brain FC. <xref rid="B5" ref-type="bibr">Cattarinussi et al. (2022)</xref> collected the resting-state fMRI of Bipolar Disorder to study the alteration of the brain functional network between cortical-limbic structures. <xref rid="B21" ref-type="bibr">Park et al. (2022)</xref> demonstrated that the severity of clinical symptoms in patients with Generalized Anxiety Disorder had a strong correlation with the strength of FC in brain regions under negative emotional conditions. <xref rid="B15" ref-type="bibr">Hirshfeld-Becker et al. (2019)</xref> conducted a pilot study of MDD prediction in Adolescence by intrinsic brain FC. <xref rid="B20" ref-type="bibr">Long et al. (2020)</xref> constructed the resting-state brain functional networks with large samples of resting-state fMRI data, indicating that the basis of the neuropathology of MDD is probably related to the abnormal brain FC. <xref rid="B28" ref-type="bibr">Shen et al. (2016)</xref> applied resting-state fMRI data to the objective diagnosis of depression patients with or without anxiety by graph theory features and illustrated the importance of resting-state fMRI data for MDD diagnostic research. The brain network FC data constructed from resting-state fMRI data is also a reliable data source for the diagnosis of MDD. As early as 2011, <xref rid="B4" ref-type="bibr">Brier et al. (2011)</xref> systematically studied Alzheimer’s disease through the blood oxygen level-dependent resting-state functional connectivity network. Then, <xref rid="B29" ref-type="bibr">Shi et al. (2021)</xref> used a progressive three-step machine learning analysis with resting-state FC data to investigate the classification performance of the Machine Learning model in the multi-center large sample dataset. In addition, they applied the Extreme Gradient Boosting model based on resting-state FC data to classify MDD patients and normal controls and evaluated the clinical application value of the data in MDD.</p>
+      <p>The brain network classification studies are mainly in two streams: traditional machine learning and deep learning. As yet, the most widely used machine learning in the field is the Support Vector Machine (SVM) (<xref rid="B24" ref-type="bibr">Rathore et al., 2017</xref>). As early as 2009, <xref rid="B8" ref-type="bibr">Craddock et al. (2009)</xref> classified the region of interest (ROI) wise FC of 20 subjects using linear SVM. Currently, the studies in this field increasingly appears. <xref rid="B16" ref-type="bibr">Ichikawa et al. (2020)</xref> classified the whole brain FC of 65 patients by logistic regression. <xref rid="B37" ref-type="bibr">Zhu et al. (2021)</xref> achieved the classification of 31 subjects by linear SVM. <xref rid="B35" ref-type="bibr">Yan et al. (2021)</xref> used SVM to classify the 32 patients’ regional homogeneity. However, there is a dramatic divergence in classification accuracies because of the demographic and clinical heterogeneity across MDD studies. <xref rid="B23" ref-type="bibr">Qin et al. (2022)</xref> noted that while there has been an increasing number of publications, the results are inconsistent with their reported classification accuracies varied from 61.7 to 98.4%. In addition, the optimization of machine learning models typically requires adequate training data to mount generalizability across different samples. A large sample size is critical to ensure population-representative model performance and provide reliable information on the biological underpinnings. Substantial previous machine learning studies were performed using single-site datasets with small sample sizes, which leads to huge variability and poor generability in model performance. To eliminate this problem brought by small datasets to the model performance, we choose the large and multi-site dataset for the following studies.</p>
+      <p>In recent years, the graph convolution network (GCN) is commonly used in classifying psychosis and other fields, such as the optimization of model parameters in the classification of solder paste defects (<xref rid="B26" ref-type="bibr">Sezer and Altan, 2021</xref>). It serves as a deep learning model, which is capable of modeling graph data structures like networks and thus fitting the classification of brain networks. <xref rid="B30" ref-type="bibr">Song et al. (2022)</xref> achieved the early diagnosis of Alzheimer’s disease on dual-modality fused brain networks by multi-center and multi-channel pooling GCN. They tested on three datasets with sample sizes of 90, 200, and 169, respectively. The results indicate that the method is effective in the early diagnosis of Alzheimer’s disease. However, there is a main drawback for GCN. <xref rid="B36" ref-type="bibr">Zhang et al. (2018)</xref> referred that the regular neural networks’ connection structure is based on layers and processing objects are generally tensors combined in a certain way. For disordered images or intricate structures, the GCN has difficulties to identify all features. They proposed a novel neural network architecture–Deep Graph Convolutional Neural Network to extract useful features characterizing the rich information encoded in a graph for classification purposes by a localized graph convolution model. Then, a novel SortPooling layer that sorts graph vertices in a consistent order is designed to train the traditional neural networks on the graphs. The results on benchmark graph classification datasets demonstrated that the proposed architecture achieves highly competitive performance compared to state-of-the-art graph kernels and other graph neural network methods. Moreover, the architecture allows end-to-end gradient-based training with original graphs without the need to firstly transform graphs into vectors. The advantages of DGCNN make it more suitable for dealing with brain networks.</p>
+      <p>In this study, we complete the classification of the multi-site and large-scale MDD brain resting-state FC networks based on DGCNN. It not only solves the limitation of small samples and the heterogeneousness of the datasets but also discovers a relatively effective classification algorithm for MDD brain networks.</p>
+    </sec>
+    <sec sec-type="materials|methods" id="S2">
+      <title>Materials and methods</title>
+      <sec id="S2.SS1">
+        <title>Dataset acquisition</title>
+        <p>Our study is performed based on 25 datasets from 17 hospitals in the REST-meta-MDD consortium comprising 1,300 MDD patients and 1,128 NCs. They agreed to share the final resting-state fMRI indices of MDD patients and matched NCs from studies approved by local Institutional Review Boards. Consortium members provide basic information, including diagnosis, disease duration, gender, age, education, HAMD-17, and HAMA. All patients are treated under the Diagnostic and Statistical Manual of Mental Disorders IV or the International Classification of Diseases-10. According to these, patients with HAMA score higher than 14 are rated as anxious, and patients with HAMD score higher than 17 are defined as depressed (<xref rid="B33" ref-type="bibr">Yan et al., 2019</xref>; <xref rid="B6" ref-type="bibr">Chen et al., 2022</xref>). In this study, we excluded data with poor quality following standard quality control procedures in the REST-meta-MDD consortium (<xref rid="DS1" ref-type="supplementary-material">Supplementary material</xref> and <xref rid="DS1" ref-type="supplementary-material">Supplementary Figure 1</xref>). Finally, 1,601 participants (830 MDD patients vs. 771 NCs) were included in our analysis. <xref rid="T1" ref-type="table">Table 1</xref> details the sample information and disease course in the dataset.</p>
+        <table-wrap position="float" id="T1">
+          <label>TABLE 1</label>
+          <caption>
+            <p>Clinical information table on subjects.</p>
+          </caption>
+          <table frame="box" rules="all" cellspacing="5" cellpadding="5">
+            <thead>
+              <tr>
+                <td valign="top" align="left" style="color:#ffffff;background-color: #7f8080;" rowspan="1" colspan="1">Type</td>
+                <td valign="top" align="center" style="color:#ffffff;background-color: #7f8080;" rowspan="1" colspan="1">Number</td>
+                <td valign="top" align="center" style="color:#ffffff;background-color: #7f8080;" rowspan="1" colspan="1">Age</td>
+                <td valign="top" align="center" style="color:#ffffff;background-color: #7f8080;" rowspan="1" colspan="1">Gender (Male/Female)</td>
+                <td valign="top" align="center" style="color:#ffffff;background-color: #7f8080;" rowspan="1" colspan="1">Illness (First/Again)</td>
+                <td valign="top" align="center" style="color:#ffffff;background-color: #7f8080;" rowspan="1" colspan="1">Medical (Yes/No)</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">MDD</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">830</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">34.1 ± 12.4</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">308/522</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">522/308</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">378/452</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">NC</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">771</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">33.1 ± 12.5</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">318/453</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–</td>
+              </tr>
+            </tbody>
+          </table>
+        </table-wrap>
+        <p>In this paper, the dataset is the FC correlation results calculated by the predefined seed points after global regression and preprocessed by DPARSF, a MATLAB-and SPM-based resting-state fMRI preprocessing pipeline for the images (<xref rid="B34" ref-type="bibr">Yan and Zang, 2010</xref>). The preprocessing operations of Neuroimaging Informatics Technology Initiative files obtained from fMRI including Slice Timing, Realign, Covariates Removed with global signal regression, Spatial Normalization, and Filtering. See <xref rid="DS1" ref-type="supplementary-material">Supplementary material</xref> for further details.</p>
+      </sec>
+      <sec id="S2.SS2">
+        <title>The construction of the brain network</title>
+        <p>The present paper uses Dosenbach’s 160 functional ROIs as a medical template to define the brain network nodes. We then construct functional brain networks using resting-state fMRI data with equal time series between each node. Functional connectivity is calculated by measuring the Pearson correlation coefficient between each of the 160 regions in MDD brain networks (<xref rid="B22" ref-type="bibr">Pearson, 1900</xref>).</p>
+        <p>For each subject, let <italic>x</italic><sub><italic>i</italic></sub>(<italic>t</italic>),<italic>y</italic><sub><italic>j</italic></sub>(<italic>t</italic>) ∈ <italic>R<sup>M</sup></italic> separately represent the average resting-state fMRI signals for the brain regions i and j at the point t(t=1,2,⋯,T). M and T denote the total number of brain regions and time points, respectively. Then, between the i -th and the j -th ROIs, the correlation γ<sub><italic>ij</italic></sub> can be defined as (1):</p>
+        <disp-formula id="S2.E1">
+<label>(1)</label>
+<mml:math id="M1" overflow="scroll"><mml:mrow><mml:mpadded width="+3.3pt"><mml:msub><mml:mi mathvariant="normal">γ</mml:mi><mml:mrow><mml:mtext>ij</mml:mtext></mml:mrow></mml:msub></mml:mpadded><mml:mo rspace="5.8pt">=</mml:mo><mml:mfrac><mml:mrow><mml:msubsup><mml:mo largeop="true" symmetric="true">∑</mml:mo><mml:mrow><mml:mrow><mml:mi mathvariant="normal">i</mml:mi><mml:mo>,</mml:mo><mml:mpadded width="+3.3pt"><mml:mi mathvariant="normal">j</mml:mi></mml:mpadded></mml:mrow><mml:mo rspace="5.8pt">=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mrow><mml:mtext>n</mml:mtext></mml:mrow></mml:msubsup><mml:mrow><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mrow><mml:msub><mml:mi mathvariant="normal">x</mml:mi><mml:mrow><mml:mtext>i</mml:mtext></mml:mrow></mml:msub><mml:mo>-</mml:mo><mml:mover accent="true"><mml:mtext>x</mml:mtext><mml:mo>¯</mml:mo></mml:mover></mml:mrow><mml:mo stretchy="false">)</mml:mo></mml:mrow><mml:mo>⁢</mml:mo><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mrow><mml:msub><mml:mi mathvariant="normal">y</mml:mi><mml:mrow><mml:mtext>j</mml:mtext></mml:mrow></mml:msub><mml:mo>-</mml:mo><mml:mover accent="true"><mml:mtext>y</mml:mtext><mml:mo>¯</mml:mo></mml:mover></mml:mrow><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:mrow></mml:mrow><mml:mrow><mml:msqrt><mml:mrow><mml:msubsup><mml:mo largeop="true" symmetric="true">∑</mml:mo><mml:mrow><mml:mpadded width="+3.3pt"><mml:mrow><mml:mtext>i</mml:mtext></mml:mrow></mml:mpadded><mml:mo rspace="5.8pt">=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mrow><mml:mtext>n</mml:mtext></mml:mrow></mml:msubsup><mml:msup><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mrow><mml:msub><mml:mi mathvariant="normal">x</mml:mi><mml:mrow><mml:mtext>i</mml:mtext></mml:mrow></mml:msub><mml:mo>-</mml:mo><mml:mover accent="true"><mml:mtext>x</mml:mtext><mml:mo>¯</mml:mo></mml:mover></mml:mrow><mml:mo stretchy="false">)</mml:mo></mml:mrow><mml:mn>2</mml:mn></mml:msup></mml:mrow></mml:msqrt><mml:mo>⁢</mml:mo><mml:msqrt><mml:mrow><mml:msubsup><mml:mo largeop="true" symmetric="true">∑</mml:mo><mml:mrow><mml:mpadded width="+3.3pt"><mml:mrow><mml:mtext>j</mml:mtext></mml:mrow></mml:mpadded><mml:mo rspace="5.8pt">=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mrow><mml:mtext>n</mml:mtext></mml:mrow></mml:msubsup><mml:msup><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mrow><mml:msub><mml:mi mathvariant="normal">y</mml:mi><mml:mrow><mml:mtext>j</mml:mtext></mml:mrow></mml:msub><mml:mo>-</mml:mo><mml:mover accent="true"><mml:mtext>y</mml:mtext><mml:mo>¯</mml:mo></mml:mover></mml:mrow><mml:mo stretchy="false">)</mml:mo></mml:mrow><mml:mn>2</mml:mn></mml:msup></mml:mrow></mml:msqrt></mml:mrow></mml:mfrac></mml:mrow></mml:math>
+</disp-formula>
+        <p>where <inline-formula><mml:math id="INEQ4" overflow="scroll"><mml:mover accent="true"><mml:mi>x</mml:mi><mml:mo>¯</mml:mo></mml:mover></mml:math></inline-formula> and <inline-formula><mml:math id="INEQ5" overflow="scroll"><mml:mrow><mml:mover accent="true"><mml:mi>y</mml:mi><mml:mo>¯</mml:mo></mml:mover><mml:mo>,</mml:mo></mml:mrow></mml:math></inline-formula> respectively denote the means of the regional resting-state fMRI signals in regions i and j. By computing the Pearson correlation between the average time series for each pair of ROIs, a correlation-based FC network is generated (<xref rid="B12" ref-type="bibr">Furman and Zitikis, 2017</xref>; <xref rid="B19" ref-type="bibr">Liang and Xu, 2022</xref>) and the symmetric correlation coefficient matrix of 160×160 is shown in <xref rid="DS1" ref-type="supplementary-material">Supplementary Figure 2</xref>.</p>
+        <p>To minimize the edge dataset of the brain network, a certain threshold is set to sparse the networks. Then, they are transformed into 0–1 binary adjacency matrices as shown in <xref rid="F1" ref-type="fig">Figure 1</xref>.</p>
+        <fig position="float" id="F1">
+          <label>FIGURE 1</label>
+          <caption>
+            <p>Adjacency matrix with a different threshold on major depressive disorders (MDDs) and normal controls (NCs). <bold>(A)</bold> Threshold = 0.4 MDD adjacency matrix; <bold>(B)</bold> threshold = 0.2 MDD adjacency matrix; <bold>(C)</bold> threshold = 0.4 NC adjacency matrix; <bold>(D)</bold> threshold = 0.2 NC adjacency matrix. The black area indicates no interconnected edges between the two functional brain networks, while the white area indicates connected edges.</p>
+          </caption>
+          <graphic xlink:href="fnhum-17-1094592-g001" position="float"/>
+        </fig>
+        <p>After that, we use the Warshall algorithm (<xref rid="B32" ref-type="bibr">Warshall, 1962</xref>) to calculate the network connectivity. The n -th order Boolean matrix R(k) (0≤k≤n) expresses whether any pair of nodes in the directed graph contain path information. The quantitative ratio curves of the brain network connectivity of subjects are shown in <xref rid="F2" ref-type="fig">Figure 2</xref>. The Boolean matrix R(k) (0≤k≤n) can be defined as follows:</p>
+        <disp-formula id="S2.E2">
+<label>(2)</label>
+<mml:math id="M2" overflow="scroll"><mml:mrow><mml:mrow><mml:mrow><mml:msup><mml:mtext>R</mml:mtext><mml:mrow><mml:mi mathvariant="normal">k</mml:mi><mml:mo>-</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:msup><mml:mo>⁢</mml:mo><mml:mrow><mml:mo stretchy="false">[</mml:mo><mml:mi mathvariant="normal">i</mml:mi><mml:mo>,</mml:mo><mml:mi mathvariant="normal">j</mml:mi><mml:mo stretchy="false">]</mml:mo></mml:mrow></mml:mrow><mml:mo>+</mml:mo><mml:mrow><mml:mrow><mml:mrow><mml:msup><mml:mtext>R</mml:mtext><mml:mrow><mml:mi mathvariant="normal">k</mml:mi><mml:mo>-</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:msup><mml:mo>⁢</mml:mo><mml:mrow><mml:mo stretchy="false">[</mml:mo><mml:mi mathvariant="normal">i</mml:mi><mml:mo>,</mml:mo><mml:mi mathvariant="normal">k</mml:mi><mml:mo rspace="5.8pt" stretchy="false">]</mml:mo></mml:mrow></mml:mrow><mml:mo rspace="5.8pt">×</mml:mo><mml:msup><mml:mtext>R</mml:mtext><mml:mrow><mml:mi mathvariant="normal">k</mml:mi><mml:mo>-</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:msup></mml:mrow><mml:mo>⁢</mml:mo><mml:mrow><mml:mo stretchy="false">[</mml:mo><mml:mi mathvariant="normal">k</mml:mi><mml:mo>,</mml:mo><mml:mi mathvariant="normal">j</mml:mi><mml:mo stretchy="false">]</mml:mo></mml:mrow></mml:mrow></mml:mrow><mml:mo>→</mml:mo><mml:mrow><mml:msup><mml:mtext>R</mml:mtext><mml:mrow><mml:mtext>k</mml:mtext></mml:mrow></mml:msup><mml:mo>⁢</mml:mo><mml:mrow><mml:mo stretchy="false">[</mml:mo><mml:mi mathvariant="normal">i</mml:mi><mml:mo>,</mml:mo><mml:mi mathvariant="normal">j</mml:mi><mml:mo stretchy="false">]</mml:mo></mml:mrow></mml:mrow></mml:mrow></mml:math>
+</disp-formula>
+        <fig position="float" id="F2">
+          <label>FIGURE 2</label>
+          <caption>
+            <p>The quantitative ratio curve of brain network connectivity of subjects. The connectivity ratio is the ratio of the number of connected brain networks to the number of unconnected ones for major depressive disorders (MDD) or normal control (NC). With the increase in the threshold, the number of connected graphs dwindled.</p>
+          </caption>
+          <graphic xlink:href="fnhum-17-1094592-g002" position="float"/>
+        </fig>
+        <p>To study the influence of brain network connectivity on the accuracy of MDD final classification prediction, thresholds of 0.2, 0.3, and 0.4 are selected to process the brain network. Connectivity data are then inputted into a deep learning framework. Eventually, we use the DGCNN on connectivity data to identify the full brain network of each subject.</p>
+      </sec>
+      <sec id="S2.SS3">
+        <title>DGCNN model training</title>
+        <p>After the brain networks are constructed, a supervised graph classification model is trained by applying the DGCNN algorithm. We aim to extract graph structures of MDD and NC brain networks and available information on nodes. Then, training the model with the presence or absence of disease as the classification label to classify all subjects. The pipeline of the DGCNN model is shown in <xref rid="F3" ref-type="fig">Figure 3</xref>. The model’s input is the graph represented by its adjacency and node features matrices. Individual whole-brain functional connectivity matrices are first represented as graph structures. Nodes are defined as the 160 atlas-based brain regions, and node features reflect the vector of nodal functional connectivity. We get the edges from the binary matrices after setting the different thresholds.</p>
+        <fig position="float" id="F3">
+          <label>FIGURE 3</label>
+          <caption>
+            <p>The overall pipeline of deep graph convolutional neural network (DGCNN) classifier distinguishing between individuals with major depressive disorders (MDD) and normal control (NC).</p>
+          </caption>
+          <graphic xlink:href="fnhum-17-1094592-g003" position="float"/>
+        </fig>
+        <p>The first four layers are graph convolutional layers. The core process is the spectral graph convolution filter, which can implement the convolution operation on irregular graph data instead of typical data in tensor forms (<xref rid="B18" ref-type="bibr">Kipf and Welling, 2016</xref>). The graph convolutional layers with the hyperbolic tangent function activations to improve the convergence speed. The graph’s unordered vertex features from the layers are the input of the next layer, SortPooling, which is a bridge between graph convolution and traditional neural network layers. The SortPooling layer can back-propagate loss gradients, integrating graph representation and learning into one end-to-end architecture. Instead of summing up these vertex features, it arranges them in a consistent order and outputs a sorted graph representation with a fixed size so that traditional convolutional neural networks can read vertices in a consistent order and be trained on this representation.</p>
+        <p>After SortPooling, a tensor with each row representing a vertex and each column representing a feature channel is generated. To train graph convolutional layers on them, a 1-D convolutional layer is added. Then, Max Pooling layers and 1-D convolutional layers are added to learn local patterns on the node sequence. Two Dense layers are used for binary classification. The convolutional and dense layers use rectified linear unit activation function to introduce non-linearity activation. Finally, the fully connected output layer is activated by a Softmax function to encode output scalars into the predictive probability of each class.</p>
+        <p>For the parameters of DGCNN, we adopt the default parameters set in the study named “An End-to-End Deep Learning Architecture for Graph Classification” (<xref rid="B36" ref-type="bibr">Zhang et al., 2018</xref>). In order to reduce the overfitting, a dropout layer with a ratio of 0.5 is applied between the two dense layers, at which rate dropout generated the most random network structure. The key idea is to drop units randomly (along with their connections) from the neural network during training, which prevents units from co-adapting too much. During the training, dropout layers take samples from the exponential number of different “thin” networks. During the test time, it would be easier to approximate the effect of averaging the predictions of all these thinned networks by simply using a single unthinned network with smaller weights. It significantly reduces overfitting and gives major improvements over other regularization methods. Dropout improves the performance of neural networks on supervised learning tasks (<xref rid="B31" ref-type="bibr">Srivastava et al., 2014</xref>). Besides, model training is conducted based on a batch of 50 samples for 100 epochs. The only hyperparameter we need to optimize is the learning rate.</p>
+      </sec>
+      <sec id="S2.SS4">
+        <title>Description of evaluation indexes for classification performance</title>
+        <p>To assess the results of each binary classification, we use the following metrics: accuracy (ACC), sensitivity (SEN), specificity (SPE), precision (PRE), F1 score (F1), the receiver operating characteristic curve (ROC), and the area under the ROC curve (AUC) of cross-validation experiment (<xref rid="B1" ref-type="bibr">Bishop and Nasrabadi, 2006</xref>). The ROC curve is the plot of the True Positive Rate against the False Positive Rate for different cut-offs of the diagnostic test. It is a measure of the trade-off between sensitivity and specificity. As our analysis has balanced classes (i.e., an equal number of examples for each cognitive state), the ROC-AUC is considered the most important metric (<xref rid="B10" ref-type="bibr">Davis and Goadrich, 2006</xref>). The calculation methods are as follows:</p>
+        <disp-formula id="S2.E3">
+<label>(3)</label>
+<mml:math id="M3" overflow="scroll"><mml:mrow><mml:mrow><mml:mtext>Accurac</mml:mtext><mml:mo>⁢</mml:mo><mml:mpadded width="+5pt"><mml:mi mathvariant="normal">y</mml:mi></mml:mpadded><mml:mo>⁢</mml:mo><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mi>ACC</mml:mi><mml:mo rspace="5.8pt" stretchy="false">)</mml:mo></mml:mrow></mml:mrow><mml:mo rspace="5.8pt">=</mml:mo><mml:mrow><mml:mpadded width="+3.3pt"><mml:mfrac><mml:mrow><mml:mi>TP</mml:mi><mml:mo>+</mml:mo><mml:mi>TN</mml:mi></mml:mrow><mml:mrow><mml:mi>TP</mml:mi><mml:mo>+</mml:mo><mml:mi>TN</mml:mi><mml:mo>+</mml:mo><mml:mi>FP</mml:mi><mml:mo>+</mml:mo><mml:mi>FN</mml:mi></mml:mrow></mml:mfrac></mml:mpadded><mml:mo rspace="5.8pt">×</mml:mo><mml:mrow><mml:mn>100</mml:mn><mml:mo>%</mml:mo></mml:mrow></mml:mrow></mml:mrow></mml:math>
+</disp-formula>
+        <disp-formula id="S2.E4">
+<label>(4)</label>
+<mml:math id="M4" overflow="scroll"><mml:mrow><mml:mrow><mml:mpadded width="+5pt"><mml:mi>Sensitivity</mml:mi></mml:mpadded><mml:mo>⁢</mml:mo><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mi>SEN</mml:mi><mml:mo rspace="5.8pt" stretchy="false">)</mml:mo></mml:mrow></mml:mrow><mml:mo rspace="5.8pt">=</mml:mo><mml:mrow><mml:mpadded width="+3.3pt"><mml:mfrac><mml:mtext>TP</mml:mtext><mml:mrow><mml:mi>TP</mml:mi><mml:mo>+</mml:mo><mml:mi>FN</mml:mi></mml:mrow></mml:mfrac></mml:mpadded><mml:mo rspace="5.8pt">×</mml:mo><mml:mrow><mml:mn>100</mml:mn><mml:mo>%</mml:mo></mml:mrow></mml:mrow></mml:mrow></mml:math>
+</disp-formula>
+        <disp-formula id="S2.E5">
+<label>(5)</label>
+<mml:math id="M5" overflow="scroll"><mml:mrow><mml:mrow><mml:mpadded width="+5pt"><mml:mi>Specificity</mml:mi></mml:mpadded><mml:mo>⁢</mml:mo><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mi>SPE</mml:mi><mml:mo rspace="5.8pt" stretchy="false">)</mml:mo></mml:mrow></mml:mrow><mml:mo rspace="5.8pt">=</mml:mo><mml:mrow><mml:mpadded width="+3.3pt"><mml:mfrac><mml:mtext>TN</mml:mtext><mml:mrow><mml:mi>TN</mml:mi><mml:mo>+</mml:mo><mml:mi>FP</mml:mi></mml:mrow></mml:mfrac></mml:mpadded><mml:mo rspace="5.8pt">×</mml:mo><mml:mrow><mml:mn>100</mml:mn><mml:mo>%</mml:mo></mml:mrow></mml:mrow></mml:mrow></mml:math>
+</disp-formula>
+        <disp-formula id="S2.E6">
+<label>(6)</label>
+<mml:math id="M6" overflow="scroll"><mml:mrow><mml:mrow><mml:mtext>P</mml:mtext><mml:mo>⁢</mml:mo><mml:mpadded width="+5pt"><mml:mi>recision</mml:mi></mml:mpadded><mml:mo>⁢</mml:mo><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mi>PRE</mml:mi><mml:mo rspace="5.8pt" stretchy="false">)</mml:mo></mml:mrow></mml:mrow><mml:mo rspace="5.8pt">=</mml:mo><mml:mrow><mml:mpadded width="+3.3pt"><mml:mfrac><mml:mtext>TP</mml:mtext><mml:mrow><mml:mi>TP</mml:mi><mml:mo>+</mml:mo><mml:mi>FP</mml:mi></mml:mrow></mml:mfrac></mml:mpadded><mml:mo rspace="5.8pt">×</mml:mo><mml:mrow><mml:mn>100</mml:mn><mml:mo>%</mml:mo></mml:mrow></mml:mrow></mml:mrow></mml:math>
+</disp-formula>
+        <disp-formula id="S2.E7">
+<label>(7)</label>
+<mml:math id="M7" overflow="scroll"><mml:mrow><mml:mrow><mml:mi>F1</mml:mi><mml:mo>-</mml:mo><mml:mpadded width="+3.3pt"><mml:mtext>score</mml:mtext></mml:mpadded></mml:mrow><mml:mo rspace="5.8pt">=</mml:mo><mml:mrow><mml:mpadded width="+3.3pt"><mml:mfrac><mml:mrow><mml:mpadded width="+3.3pt"><mml:mn>2</mml:mn></mml:mpadded><mml:mo rspace="5.8pt">×</mml:mo><mml:mpadded width="+3.3pt"><mml:mtext>PRE</mml:mtext></mml:mpadded><mml:mo rspace="5.8pt">×</mml:mo><mml:mtext>SEN</mml:mtext></mml:mrow><mml:mrow><mml:mi>PRE</mml:mi><mml:mo>+</mml:mo><mml:mi>SEN</mml:mi></mml:mrow></mml:mfrac></mml:mpadded><mml:mo rspace="5.8pt">×</mml:mo><mml:mrow><mml:mn>100</mml:mn><mml:mo rspace="5.8pt">%</mml:mo></mml:mrow></mml:mrow><mml:mo rspace="5.8pt">=</mml:mo><mml:mfrac><mml:mrow><mml:mn>2</mml:mn><mml:mo>⁢</mml:mo><mml:mi mathvariant="normal">T</mml:mi><mml:mo>⁢</mml:mo><mml:mi mathvariant="normal">P</mml:mi></mml:mrow><mml:mrow><mml:mrow><mml:mn>2</mml:mn><mml:mo>⁢</mml:mo><mml:mi mathvariant="normal">T</mml:mi><mml:mo>⁢</mml:mo><mml:mi mathvariant="normal">P</mml:mi></mml:mrow><mml:mo>+</mml:mo><mml:mi>FP</mml:mi><mml:mo>+</mml:mo><mml:mi>FN</mml:mi></mml:mrow></mml:mfrac></mml:mrow></mml:math>
+</disp-formula>
+        <p>where TP, TN, FP, and FN represent true positives, true negatives, false positives and false negatives of the prediction data.</p>
+      </sec>
+      <sec id="S2.SS5">
+        <title>DGCNN model function setting</title>
+        <p>After the dataset with the threshold value of 0.3 is inputted into the model, the loss value and accurate value are calculated. In this paper, the binary cross-entropy loss function is applied. It is commonly used for the two-class classification. The formula is shown in (8):</p>
+        <disp-formula id="S2.E8">
+<label>(8)</label>
+<mml:math id="M8" overflow="scroll"><mml:mrow><mml:mpadded width="+3.3pt"><mml:mtext>Loss</mml:mtext></mml:mpadded><mml:mo rspace="5.8pt">=</mml:mo><mml:mrow><mml:mrow><mml:mo>-</mml:mo><mml:mrow><mml:mfrac><mml:mn>1</mml:mn><mml:mtext>output</mml:mtext></mml:mfrac><mml:mo>⁢</mml:mo><mml:mrow><mml:munderover><mml:mo largeop="true" movablelimits="false" symmetric="true">∑</mml:mo><mml:mrow><mml:mpadded width="+3.3pt"><mml:mrow><mml:mtext>i</mml:mtext></mml:mrow></mml:mpadded><mml:mo rspace="5.8pt">=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mrow><mml:mtext>output</mml:mtext></mml:mrow></mml:munderover><mml:mrow><mml:mrow><mml:msub><mml:mtext>y</mml:mtext><mml:mrow><mml:mtext>i</mml:mtext></mml:mrow></mml:msub><mml:mo>⋅</mml:mo><mml:mtext>log</mml:mtext></mml:mrow><mml:mo>⁢</mml:mo><mml:mover accent="true"><mml:msub><mml:mtext>y</mml:mtext><mml:mrow><mml:mtext>i</mml:mtext></mml:mrow></mml:msub><mml:mo>^</mml:mo></mml:mover></mml:mrow></mml:mrow></mml:mrow></mml:mrow><mml:mo>+</mml:mo><mml:mrow><mml:mrow><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mrow><mml:mn>1</mml:mn><mml:mo>-</mml:mo><mml:msub><mml:mtext>y</mml:mtext><mml:mrow><mml:mtext>i</mml:mtext></mml:mrow></mml:msub></mml:mrow><mml:mo stretchy="false">)</mml:mo></mml:mrow><mml:mo>⋅</mml:mo><mml:mpadded width="+5pt"><mml:mi>log</mml:mi></mml:mpadded></mml:mrow><mml:mo>⁢</mml:mo><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mrow><mml:mn>1</mml:mn><mml:mo>-</mml:mo><mml:mover accent="true"><mml:msub><mml:mtext>y</mml:mtext><mml:mrow><mml:mtext>i</mml:mtext></mml:mrow></mml:msub><mml:mo>^</mml:mo></mml:mover></mml:mrow><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:mrow></mml:mrow></mml:mrow></mml:math>
+</disp-formula>
+        <p>where i ∈ [1,<italic>output</italic>_<italic>size</italic>], and each i is independent and non-interfering. For this reason, it is suitable for the multi-label classification task. The Adaptive Moment Estimation (Adam) is used as an optimization function, which updates all weights with a constant learning rate alpha during the process. Therefore, dual improvements in quality and speed can be achieved during model optimization (<xref rid="B25" ref-type="bibr">Razak et al., 2021</xref>).</p>
+      </sec>
+    </sec>
+    <sec sec-type="results" id="S3">
+      <title>Results</title>
+      <sec id="S3.SS1">
+        <title>DGCNN training and prediction results</title>
+        <p>The dataset is split to training and test sets, where 90% of the data is used for training and the remaining 10% for testing. The history of the loss and accuracy of training and testing data are drawn to calculate the performance of the training model based on testing data. The curve is depicted below (<xref rid="F4" ref-type="fig">Figure 4</xref>).</p>
+        <fig position="float" id="F4">
+          <label>FIGURE 4</label>
+          <caption>
+            <p>The fitting curve of accuracy and loss of the training and test dataset. The above figure is the training history curve of accuracy, and below is the loss curve. Moreover, the orange is validation, and blue is the training value.</p>
+          </caption>
+          <graphic xlink:href="fnhum-17-1094592-g004" position="float"/>
+        </fig>
+        <p>We further make comparisons between DGCNN and other commonly used classifiers, including SVM, Random Forest, and Graph Convolutional Network. For the training of the GCN model, we use the same loss function and optimizer as the DGCNN model to quantify the loss and update the model parameters, respectively. The initial learning rate for the Adam optimizer is set as 0.001. As for the other two classifiers, SVM and RF, a widely used feature reduction strategy, principal component analysis, is adopted before training to avoid over-fitting. SVM and RF are implemented in the Scikit-Learn library with the default setting. Moreover, the parameters of these are optimized using grid search. We use 10-fold cross-validation to examine their performance. The best parameter values set by all methods are shown in <xref rid="T2" ref-type="table">Table 2</xref>.</p>
+        <table-wrap position="float" id="T2">
+          <label>TABLE 2</label>
+          <caption>
+            <p>The optimal parameters of each method.</p>
+          </caption>
+          <table frame="box" rules="all" cellspacing="5" cellpadding="5">
+            <thead>
+              <tr>
+                <td valign="top" align="left" style="color:#ffffff;background-color: #7f8080;" rowspan="1" colspan="1">Method</td>
+                <td valign="top" align="left" style="color:#ffffff;background-color: #7f8080;" rowspan="1" colspan="1">Parameters<xref rid="t2fns1" ref-type="table-fn">*</xref></td>
+                <td valign="top" align="center" style="color:#ffffff;background-color: #7f8080;" rowspan="1" colspan="1">Value</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td valign="top" align="left" rowspan="4" colspan="1">GCN</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Dropout rate</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.5</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Batch_size</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">50</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Epoch</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">100</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Learning rate</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.001</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="4" colspan="1">SVM</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">C</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">100.0</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Kernel</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">rbf</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Degree</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">3</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Gamma</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.01</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="4" colspan="1">RF</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Max_features</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">2</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Max_depth</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">100</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Min_samples_split</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">200</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Min_samples_leaf</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">50</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <fn id="t2fns1">
+              <p>*Batch size, the number of data samples captured in a training session; Epoch, the process of training all training samples once; C, penalty term, constraint degree of Lagrange multiplier in SVM; kernel, the parameter for selecting the kernel function in SVM; degree, the degree of the kernel; gamma, the coefficient of kernel function; max_features, the maximum number of features to consider when dividing trees; max_depth, the maximum depth of decision tree; min_samples_split, the minimum number of samples required for internal node partitioning; min_samples_leaf, the minimum sample number of leaf nodes.</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+        <p>The classification results of different methods on this dataset are summarized in <xref rid="T3" ref-type="table">Table 3</xref>.</p>
+        <table-wrap position="float" id="T3">
+          <label>TABLE 3</label>
+          <caption>
+            <p>Comparison of classification performance indexes of different classification methods in MDD dataset.</p>
+          </caption>
+          <table frame="box" rules="all" cellspacing="5" cellpadding="5">
+            <thead>
+              <tr>
+                <td valign="top" align="left" style="color:#ffffff;background-color: #7f8080;" rowspan="1" colspan="1">Method</td>
+                <td valign="top" align="center" style="color:#ffffff;background-color: #7f8080;" rowspan="1" colspan="1">ACC<xref rid="t3fns1" ref-type="table-fn">*</xref> (%)</td>
+                <td valign="top" align="center" style="color:#ffffff;background-color: #7f8080;" rowspan="1" colspan="1">SPE<xref rid="t3fns1" ref-type="table-fn">*</xref> (%)</td>
+                <td valign="top" align="center" style="color:#ffffff;background-color: #7f8080;" rowspan="1" colspan="1">SEN<xref rid="t3fns1" ref-type="table-fn">*</xref> (%)</td>
+                <td valign="top" align="center" style="color:#ffffff;background-color: #7f8080;" rowspan="1" colspan="1">PRE<xref rid="t3fns1" ref-type="table-fn">*</xref> (%)</td>
+                <td valign="top" align="center" style="color:#ffffff;background-color: #7f8080;" rowspan="1" colspan="1">F1-score (%)</td>
+                <td valign="top" align="center" style="color:#ffffff;background-color: #7f8080;" rowspan="1" colspan="1">AUC<xref rid="t3fns1" ref-type="table-fn">*</xref></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">SVM (<xref rid="B14" ref-type="bibr">Hearst et al., 1998</xref>)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">59.7</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">58.2</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">61.1</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">61.2</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">61.2</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.622</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">RF (<xref rid="B3" ref-type="bibr">Breiman, 2001</xref>)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">62.3</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">60.7</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">63.7</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">63.3</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">63.5</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.647</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">GCN (<xref rid="B18" ref-type="bibr">Kipf and Welling, 2016</xref>)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">67.4</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">66.0</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">68.7</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">68.2</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">68.4</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.701</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">DGCNN</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">72.1</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">67.1</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">79.2</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">62.5</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">69.9</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.788</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <fn id="t3fns1">
+              <p>*ACC, accuracy; SEN, sensitivity; SPE, specificity; PRE, precision; ROC, receiver operating characteristic curve; AUC, area under ROC curve.</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+        <p>It can be seen that our study has superior results. Unsurprisingly, our results are higher than those of traditional machine learning methods. In addition, ours are also higher than the widely used GCN, which demonstrates the effectiveness of the model used in this experiment. Moreover, the fast running speed is also the model’s advantage. <xref rid="T4" ref-type="table">Table 4</xref> shows the time required for data loading and classification training at the different thresholds. It indicates that both SVM and RF have a long time running with the worse results than deep learning. The running time of the GCN model is also longer than that of DGCNN, which reflects the superiority of DGCNN on the processing speed of large datasets.</p>
+        <table-wrap position="float" id="T4">
+          <label>TABLE 4</label>
+          <caption>
+            <p>The time cost of dataset loading and training under various thresholds for deep graph convolutional neural network (DGCNN).</p>
+          </caption>
+          <table frame="box" rules="all" cellspacing="5" cellpadding="5">
+            <thead>
+              <tr>
+                <td valign="top" align="left" style="color:#ffffff;background-color: #7f8080;" rowspan="1" colspan="1">Method</td>
+                <td valign="top" align="center" style="color:#ffffff;background-color: #7f8080;" rowspan="1" colspan="1">Thresholds</td>
+                <td valign="top" align="center" style="color:#ffffff;background-color: #7f8080;" rowspan="1" colspan="1">Loading time</td>
+                <td valign="top" align="center" style="color:#ffffff;background-color: #7f8080;" rowspan="1" colspan="1">Training time (epochs = 100)</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td valign="top" align="left" rowspan="3" colspan="1">DGCNN</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.2</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">214 s</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">202 s</td>
+              </tr>
+              <tr>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.3</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">103 s</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">195 s</td>
+              </tr>
+              <tr>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.4</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">50 s</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">191 s</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="3" colspan="1">GCN</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.2</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">724 s</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">332 s</td>
+              </tr>
+              <tr>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.3</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">426 s</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">243 s</td>
+              </tr>
+              <tr>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.4</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">299 s</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">220 s</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">SVM and RF</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">all</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">9 h+</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">8 h+</td>
+              </tr>
+            </tbody>
+          </table>
+        </table-wrap>
+      </sec>
+      <sec id="S3.SS2">
+        <title>Model influencing factors</title>
+        <sec id="S3.SS2.SSS1">
+          <title>The influence of threshold setting and learning rates on the model</title>
+          <p>As the number of connected edges and dataset size increase with connectivity ratio, the influence of different thresholds on performance should be discussed. In order to study the relationship between brain network connectivity and classification accuracy, brain networks with thresholds of 0.2, 0.3, and 0.4 are selected for the classification task. Different network connectivity has an impact on classification accuracy. Therefore, we observe the relationship between the classification accuracy and the number of connected edges of the brain network (the connectivity of the brain network) by adjusting the threshold to find the optimal parameter settings and their impact on the optimal prediction result. The size of brain networks with different thresholds is shown in <xref rid="T5" ref-type="table">Table 5</xref>.</p>
+          <table-wrap position="float" id="T5">
+            <label>TABLE 5</label>
+            <caption>
+              <p>Comparison of brain network sizes with different thresholds.</p>
+            </caption>
+            <table frame="box" rules="all" cellspacing="5" cellpadding="5">
+              <thead>
+                <tr>
+                  <td valign="top" align="left" style="color:#ffffff;background-color: #7f8080;" rowspan="1" colspan="1">Thresholds</td>
+                  <td valign="top" align="center" style="color:#ffffff;background-color: #7f8080;" rowspan="1" colspan="1">Nodes</td>
+                  <td valign="top" align="center" style="color:#ffffff;background-color: #7f8080;" rowspan="1" colspan="1">Connectivity ratio</td>
+                  <td valign="top" align="center" colspan="2" style="color:#ffffff;background-color: #7f8080;" rowspan="1">Edge</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" style="color:#ffffff;background-color: #7f8080;" rowspan="1" colspan="1"/>
+                  <td valign="top" align="center" style="color:#ffffff;background-color: #7f8080;" rowspan="1" colspan="1"/>
+                  <td valign="top" align="center" style="color:#ffffff;background-color: #7f8080;" rowspan="1" colspan="1"/>
+                  <td valign="top" align="center" style="color:#ffffff;background-color: #7f8080;" rowspan="1" colspan="1">MDD</td>
+                  <td valign="top" align="center" style="color:#ffffff;background-color: #7f8080;" rowspan="1" colspan="1">NC</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">0.2</td>
+                  <td valign="top" align="center" rowspan="3" colspan="1"><break/><break/>160</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">1.7461</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">4,200</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">4,055</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">0.3</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">0.2038</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">2,196</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">2,020</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">0.4</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">0.0037</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">1,027</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">917</td>
+                </tr>
+              </tbody>
+            </table>
+            <table-wrap-foot>
+              <fn>
+                <p>Undoubtedly, the larger the thresholds, the lower the connectivity index (the number of connected graphs divided by the unconnected graphs) and the smaller the number of connected edges of the brain network.</p>
+              </fn>
+            </table-wrap-foot>
+          </table-wrap>
+          <p>The comparison of the loss and accuracy values for different thresholds and adjusted learning rate operations is shown in <xref rid="T6" ref-type="table">Table 6</xref>. It can be seen that the optimal ACC is obtained when the threshold value is 0.3 and the learning rate is 0.001.</p>
+          <table-wrap position="float" id="T6">
+            <label>TABLE 6</label>
+            <caption>
+              <p>Loss and accurate value under different thresholds and learning rates.</p>
+            </caption>
+            <table frame="box" rules="all" cellspacing="5" cellpadding="5">
+              <thead>
+                <tr>
+                  <td valign="top" align="left" style="color:#ffffff;background-color: #7f8080;" rowspan="1" colspan="1">Thresholds</td>
+                  <td valign="top" align="center" style="color:#ffffff;background-color: #7f8080;" rowspan="1" colspan="1">Learning rate</td>
+                  <td valign="top" align="center" style="color:#ffffff;background-color: #7f8080;" rowspan="1" colspan="1">Loss</td>
+                  <td valign="top" align="center" style="color:#ffffff;background-color: #7f8080;" rowspan="1" colspan="1">ACC</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td valign="top" align="left" rowspan="2" colspan="1">0.2</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">0.001</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">0.5105</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">0.6852</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="center" rowspan="1" colspan="1">0.0001</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">0.5466</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">0.6964</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="2" colspan="1">0.3</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">0.001</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">0.5292</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">0.7208</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="center" rowspan="1" colspan="1">0.0001</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">0.5367</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">0.6502</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="2" colspan="1">0.4</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">0.001</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">0.5419</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">0.6334</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="center" rowspan="1" colspan="1">0.0001</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">0.5429</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">0.6384</td>
+                </tr>
+              </tbody>
+            </table>
+            <table-wrap-foot>
+              <fn>
+                <p>The above two tables show that the relationship between the accuracy and brain network connectivity or learning rate is non-linear. It means the results will not be significantly affected by extreme connectivity or learning rates and are most optimal under these parameter settings.</p>
+              </fn>
+            </table-wrap-foot>
+          </table-wrap>
+          <p>The above two tables show that the relationship between the accuracy and brain network connectivity or learning rate is non-linear. It means the results will not be significantly affected by extreme connectivity or learning rates and are most optimal under these parameter settings.</p>
+        </sec>
+        <sec id="S3.SS2.SSS2">
+          <title>The impact of site effect</title>
+          <p>As the experimental data are obtained from 25 research groups by 17 hospitals in China, the test accuracy is heterogeneous in different research groups and regions. Therefore, the integration of the data into brain network classification for MDD would lead to a large impact on the final result due to data heterogeneity. To eliminate the site effect and the systematic differences around different sites, we conducted leave-one-site-out 10-fold cross-validation experiments on the 16 sites after selection. The classification performance results are summarized in <xref rid="T7" ref-type="table">Table 7</xref>.</p>
+          <table-wrap position="float" id="T7">
+            <label>TABLE 7</label>
+            <caption>
+              <p>Leave-one-site-out 10-fold cross-validation classification performance.</p>
+            </caption>
+            <table frame="box" rules="all" cellspacing="5" cellpadding="5">
+              <thead>
+                <tr>
+                  <td valign="top" align="left" style="color:#ffffff;background-color: #7f8080;" rowspan="1" colspan="1">Site</td>
+                  <td valign="top" align="center" style="color:#ffffff;background-color: #7f8080;" rowspan="1" colspan="1">ACC (%)</td>
+                  <td valign="top" align="center" style="color:#ffffff;background-color: #7f8080;" rowspan="1" colspan="1">SPE (%)</td>
+                  <td valign="top" align="center" style="color:#ffffff;background-color: #7f8080;" rowspan="1" colspan="1">SEN (%)</td>
+                  <td valign="top" align="center" style="color:#ffffff;background-color: #7f8080;" rowspan="1" colspan="1">PRE (%)</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">S1</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">67.4</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">68.4</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">66.6</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">74.3</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">S2</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">64.1</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">63.6</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">64.5</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">68.3</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">S7</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">75.4</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">78.8</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">73.0</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">83.3</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">S8</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">72.9</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">73.0</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">72.8</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">76.1</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">S9</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">75.1</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">79.7</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">72.1</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">84.7</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">S10</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">75.2</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">74.5</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">75.9</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">76.5</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">S11</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">84.2</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">84.4</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">84.0</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">86.0</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">S13</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">71.1</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">67.3</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">75.9</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">64.9</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">S14</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">79.7</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">73.3</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">89.1</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">69.3</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">S15</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">61.3</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">59.9</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">62.7</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">62.8</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">S17</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">56.9</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">55.0</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">58.9</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">55.9</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">S19</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">67.7</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">64.2</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">72.1</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">61.6</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">S20</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">70.7</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">69.9</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">71.5</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">72.4</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">S21</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">80.8</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">74.2</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">90.8</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">70.1</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">S22</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">70.5</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">71.3</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">69.9</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">75.7</td>
+                </tr>
+                <tr>
+                  <td valign="top" align="left" rowspan="1" colspan="1">S23</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">69.1</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">69.4</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">68.9</td>
+                  <td valign="top" align="center" rowspan="1" colspan="1">73.7</td>
+                </tr>
+              </tbody>
+            </table>
+          </table-wrap>
+          <p>These results demonstrate the reliable classification performance of the model in inter-site cross-validation and applicability of the DGCNN selected in this paper to novel sites. The results combined with cross-validation experiments indicate the advantages of the model on the large-scale multi-site dataset and potential clinical application promotion.</p>
+          <p>Given the imbalanced single-site performance and sample size across all sites, the current classification performance may be biased by the sites with the best single-site performance and the site with the largest sample size. Besides, it is found that classification accuracy in every single site varied from 56.9 to 84.2%, which confirming the variability of classification tasks with small sample sizes and the importance of using large datasets.</p>
+        </sec>
+      </sec>
+    </sec>
+    <sec sec-type="discussion" id="S4">
+      <title>Discussion</title>
+      <p>In this paper, artificial intelligence technology is applied to the diagnosis of brain diseases. We use the DGCNN to classify the brain networks of subjects. Systematic experiments are performed on a multi-site and large-scale fMRI dataset collected from the REST-meta-MDD project. Furthermore, we find that when the DGCNN is used as an input feature to the classifier it can provide the best accuracy while classifying subjects into patients and normal controls. It is evident from the experimental results in the previous section, DGCNN has achieved an accuracy of 72.1% on the MDD dataset after ten cross-validations, which is 12.4% higher than SVM, 9.8% higher than RF, and 7.6% higher than GCN. It should be noted that DGCNN also achieves the best AUC and performances in other aspects, which demonstrates the competitiveness of the DGCNN model in this study. Moreover, it requires less time to process large-scale datasets and model training than other models. The rapid classification of 1,601 brain networks can be completed in less than 5 min, which reflects the excellent performance of the DGCNN model in classification speed. Given the high collection cost and small sample size of fMRI data, it is difficult to extract high-dimensional features when training the deep learning model (<xref rid="B17" ref-type="bibr">Khosla et al., 2019</xref>). However, generating a large-scale aggregate dataset is expected to solve the problem of repeatability and statistical ability (<xref rid="B2" ref-type="bibr">Borghi and Van Gulick, 2018</xref>; <xref rid="B9" ref-type="bibr">Dadi et al., 2019</xref>). Therefore, establishing and validating classification models on a large-scale aggregated dataset may promote the development of clinically useful diagnostic methods. In this paper, the results with a large-scale fMRI dataset verify that DGCNN is not very accurate in MDD diagnosis. However, it is improved relatively compared with other machine learning and graph convolution neural networks.</p>
+      <p>The limitations and future works of this study are as follows. The first problem is that deep learning models may indeed get better results than traditional prediction models, but it is not feasible to identify the important features for prediction. It is a common limitation of the deep learning model. Moreover, only the static FC is used in the classification model, while the potential time-dynamic characteristics are neglected. Further dynamic FC analysis may provide additional useful information for diagnosing brain diseases. Therefore, robust models will be further developed in future research to classify dynamic FC patterns, and related dynamic biomarkers will be explored to diagnose brain disease. On the other hand, this paper uses the Dosenbach template to extract the ROIs in the brain. By comparing with the detailed study of the voxel-level of brain network nodes, it is not sophisticated. Therefore, in future related research, the voxel-level networks will be focal point. Besides the improvement of network construction, it is also worth studying how to enhance model accuracy and further reduce over-fitting. In addition, the impact of issues such as illness duration or the medical status of the prediction results need to be explored as well.</p>
+    </sec>
+    <sec sec-type="conclusion" id="S5">
+      <title>Conclusion</title>
+      <p>In this study, we have completed the task of classifying large-scale MDD brain networks based on DGCNN. The overall experimental process is mainly two-fold: brain network construction and classification. During the construction process, the pre-processed dataset of depression fMRI data from the REST-meta-MDD site is used, and the Pearson correlation coefficient matrix is calculated by 160 brain network nodes obtained after the Dosenbach template registration. The obtained correlation coefficient matrix is set to certain thresholds to obtain the 0–1 binary adjacency matrix. The connectivity of the matrix is calculated using the Warshell algorithm. It is concluded that the larger the set threshold, the poorer the connectivity of the brain network. The adjacency matrix is then converted as the input of the DGCNN model. In the classification process, the graph is firstly inputted, and then carry out local extraction. The vertex sorting is executed using the graph convolution layer on the structural characteristics. Then, according to a predefined order by using the SortPooling layer, the model sorts to unify the size of the input graph. Finally, the sorted graph is read with one-dimensional convolution and a dense layer to make the prediction. The model is trained by the specific loss functions and optimization algorithm. Ultimately, DGCNN achieved an accuracy of 72.1% on the large and multi-site MDD dataset after ten cross-validations. It is 12.4% higher than SVM, 9.8% higher than RF, and 7.6% higher than GCN. Moreover, it also has a low time complexity and space complexity. Based on the experimental results, it can be concluded that the DGCNN model has robust performance and fast data processing speed on large-scale datasets. It indicates the model’s effectiveness in brain disease classification and thus provides a promising solution for classification based on fMRI. It further illustrates the potential of deep learning methods in computer-aided medicine.</p>
+    </sec>
+    <sec sec-type="data-availability" id="S6">
+      <title>Data availability statement</title>
+      <p>Publicly available datasets were analyzed in this study. This data can be found here: <ext-link xlink:href="http://rfmri.org/REST-meta-MDD" ext-link-type="uri">http://rfmri.org/REST-meta-MDD</ext-link>.</p>
+    </sec>
+    <sec sec-type="author-contributions" id="S7">
+      <title>Author contributions</title>
+      <p>MZ: writing—original draft. YQ: investigation. XH: supervision. All authors contributed to the article and approved the submitted version.</p>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>We thank the data providers for the public access and download of these meta-data for further research.</p>
+    </ack>
+    <sec sec-type="COI-statement" id="S9">
+      <title>Conflict of interest</title>
+      <p>The authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.</p>
+    </sec>
+    <sec sec-type="disclaimer" id="S10">
+      <title>Publisher’s note</title>
+      <p>All claims expressed in this article are solely those of the authors and do not necessarily represent those of their affiliated organizations, or those of the publisher, the editors and the reviewers. Any product that may be evaluated in this article, or claim that may be made by its manufacturer, is not guaranteed or endorsed by the publisher.</p>
+    </sec>
+    <sec sec-type="supplementary-material" id="S11">
+      <title>Supplementary material</title>
+      <p>The Supplementary Material for this article can be found online at: <ext-link xlink:href="https://www.frontiersin.org/articles/10.3389/fnhum.2023.1094592/full#supplementary-material" ext-link-type="uri">https://www.frontiersin.org/articles/10.3389/fnhum.2023.1094592/full#supplementary-material</ext-link></p>
+      <supplementary-material id="DS1" position="float" content-type="local-data">
+        <media xlink:href="Data_Sheet_1.PDF">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+    </sec>
+    <ref-list>
+      <title>References</title>
+      <ref id="B1">
+        <mixed-citation publication-type="book"><person-group person-group-type="author"><name><surname>Bishop</surname><given-names>C. M.</given-names></name><name><surname>Nasrabadi</surname><given-names>N. M.</given-names></name></person-group> (<year>2006</year>). <source><italic>Pattern recognition and machine learning.</italic></source>
+<publisher-loc>Berlin</publisher-loc>: <publisher-name>Springer</publisher-name>.</mixed-citation>
+      </ref>
+      <ref id="B2">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Borghi</surname><given-names>J. A.</given-names></name><name><surname>Van Gulick</surname><given-names>A. E.</given-names></name></person-group> (<year>2018</year>). <article-title>Data management and sharing in neuroimaging: Practices and Perceptions of MRI Researchers.</article-title>
+<source><italic>PLoS One</italic></source>
+<volume>13</volume>:<issue>e0200562</issue>. <pub-id pub-id-type="doi">10.1371/journal.pone.0200562</pub-id>
+<pub-id pub-id-type="pmid">30011302</pub-id></mixed-citation>
+      </ref>
+      <ref id="B3">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Breiman</surname><given-names>L.</given-names></name></person-group> (<year>2001</year>). <article-title>Random forests.</article-title>
+<source><italic>Mach. Learn.</italic></source>
+<volume>45</volume>
+<fpage>5</fpage>–<lpage>32</lpage>. <pub-id pub-id-type="doi">10.1023/A:1010933404324</pub-id></mixed-citation>
+      </ref>
+      <ref id="B4">
+        <mixed-citation publication-type="book"><person-group person-group-type="author"><name><surname>Brier</surname><given-names>M.</given-names></name><name><surname>Thomas</surname><given-names>J.</given-names></name><name><surname>Snyder</surname><given-names>A.</given-names></name><name><surname>Fagan</surname><given-names>A.</given-names></name><name><surname>Grant</surname><given-names>E.</given-names></name><name><surname>Benzinger</surname><given-names>T.</given-names></name><etal/></person-group> (<year>2011</year>). <article-title>“The effects of Alzheimer’s disease (AD) on blood oxygen level dependent resting state functional connectivity (BOLD rsFC) networks,”</article-title> in <source><italic>Neurology</italic></source>, <volume>Vol. 76</volume>, (<publisher-loc>Philadelphia, PA</publisher-loc>: <publisher-name>Lippincott Williams &amp; Wilkins 530 Walnut ST</publisher-name>), <fpage>A190</fpage>–<lpage>A190</lpage>.</mixed-citation>
+      </ref>
+      <ref id="B5">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Cattarinussi</surname><given-names>G.</given-names></name><name><surname>Bellani</surname><given-names>M.</given-names></name><name><surname>Maggioni</surname><given-names>E.</given-names></name><name><surname>Sambataro</surname><given-names>F.</given-names></name><name><surname>Brambilla</surname><given-names>P.</given-names></name><name><surname>Delvecchio</surname><given-names>G.</given-names></name></person-group> (<year>2022</year>). <article-title>Resting-state functional connectivity and spontaneous brain activity in early-onset bipolar disorder: a review of functional magnetic resonance imaging studies.</article-title>
+<source><italic>J. Affect. Dis.</italic></source>
+<volume>311</volume>
+<fpage>463</fpage>–<lpage>471</lpage>. <pub-id pub-id-type="doi">10.1016/j.jad.2022.05.055</pub-id>
+<pub-id pub-id-type="pmid">35580695</pub-id></mixed-citation>
+      </ref>
+      <ref id="B6">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Chen</surname><given-names>X.</given-names></name><name><surname>Lu</surname><given-names>B.</given-names></name><name><surname>Li</surname><given-names>H. X.</given-names></name><name><surname>Li</surname><given-names>X. Y.</given-names></name><name><surname>Wang</surname><given-names>Y. W.</given-names></name><name><surname>Castellanos</surname><given-names>F. X.</given-names></name><etal/></person-group> (<year>2022</year>). <article-title>The DIRECT consortium and the REST-Meta-MDD Project: Towards neuroimaging biomarkers of major depressive disorder.</article-title>
+<source><italic>Psychoradiology</italic></source>
+<volume>2</volume>
+<fpage>32</fpage>–<lpage>42</lpage>. <pub-id pub-id-type="doi">10.1093/psyrad/kkac005</pub-id>
+<pub-id pub-id-type="pmid">35298882</pub-id></mixed-citation>
+      </ref>
+      <ref id="B7">
+        <mixed-citation publication-type="book"><person-group person-group-type="author"><name><surname>Cooper</surname><given-names>R.</given-names></name></person-group> (<year>2018</year>). <source><italic>Diagnosing the diagnostic and statistical manual of mental disorders</italic></source>, <edition>1st Edn</edition>. <publisher-loc>Milton Park</publisher-loc>: <publisher-name>Routledge</publisher-name>. <pub-id pub-id-type="doi">10.4324/9780429473678</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B8">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Craddock</surname><given-names>R. C.</given-names></name><name><surname>Holtzheimer</surname><given-names>I. P.</given-names></name><name><surname>Hu</surname><given-names>X. P.</given-names></name><name><surname>Mayberg</surname><given-names>H. S.</given-names></name></person-group> (<year>2009</year>). <article-title>Disease State prediction from resting state functional connectivity.</article-title>
+<source><italic>Magn. Reson. Med.</italic></source>
+<volume>62</volume>
+<fpage>1619</fpage>–<lpage>1628</lpage>. <pub-id pub-id-type="doi">10.1002/mrm.22159</pub-id>
+<pub-id pub-id-type="pmid">19859933</pub-id></mixed-citation>
+      </ref>
+      <ref id="B9">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Dadi</surname><given-names>K.</given-names></name><name><surname>Rahim</surname><given-names>M.</given-names></name><name><surname>Abraham</surname><given-names>A.</given-names></name><name><surname>Chyzhyk</surname><given-names>D.</given-names></name><name><surname>Milham</surname><given-names>M.</given-names></name><name><surname>Thirion</surname><given-names>B.</given-names></name><etal/></person-group> (<year>2019</year>). <article-title>Benchmarking functional connectome-based predictive models for resting-State FMRI.</article-title>
+<source><italic>Neuroimage</italic></source>
+<volume>192</volume>
+<fpage>115</fpage>–<lpage>134</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2019.02.062</pub-id>
+<pub-id pub-id-type="pmid">30836146</pub-id></mixed-citation>
+      </ref>
+      <ref id="B10">
+        <mixed-citation publication-type="book"><person-group person-group-type="author"><name><surname>Davis</surname><given-names>J.</given-names></name><name><surname>Goadrich</surname><given-names>M.</given-names></name></person-group> (<year>2006</year>). “<article-title>The relationship between precision-recall and ROC Curves</article-title>,” <source><italic>Proceedings of the 23rd international conference on Machine learning</italic></source>, <publisher-loc>New York, NY</publisher-loc>, <fpage>233</fpage>–<lpage>240</lpage>. <pub-id pub-id-type="doi">10.1145/1143844.1143874</pub-id></mixed-citation>
+      </ref>
+      <ref id="B11">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Ferrari</surname><given-names>A. J.</given-names></name><name><surname>Charlson</surname><given-names>F. J.</given-names></name><name><surname>Norman</surname><given-names>R. E.</given-names></name><name><surname>Patten</surname><given-names>S. B.</given-names></name><name><surname>Freedman</surname><given-names>G.</given-names></name><name><surname>Murray</surname><given-names>C. J. L.</given-names></name><etal/></person-group> (<year>2013</year>). <article-title>Burden of depressive disorders by country, sex, age, and year: Findings from the Global burden of disease Study 2010.</article-title>
+<source><italic>PLoS Med.</italic></source>
+<volume>10</volume>:<issue>e1001547</issue>. <pub-id pub-id-type="doi">10.1371/journal.pmed.1001547</pub-id>
+<pub-id pub-id-type="pmid">24223526</pub-id></mixed-citation>
+      </ref>
+      <ref id="B12">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Furman</surname><given-names>E.</given-names></name><name><surname>Zitikis</surname><given-names>R.</given-names></name></person-group> (<year>2017</year>). <article-title>Beyond the pearson correlation: Heavy-tailed risks, weighted gini correlations, and a gini-type weighted insurance pricing model.</article-title>
+<source><italic>ASTIN Bull.</italic></source>
+<volume>47</volume>
+<fpage>919</fpage>–<lpage>942</lpage>. <pub-id pub-id-type="doi">10.1017/asb.2017.20</pub-id></mixed-citation>
+      </ref>
+      <ref id="B13">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>He</surname><given-names>W. J.</given-names></name><name><surname>Bu</surname><given-names>H.</given-names></name><name><surname>Gao</surname><given-names>H. B.</given-names></name><name><surname>Tong</surname><given-names>L.</given-names></name><name><surname>Wang</surname><given-names>L. Y.</given-names></name><name><surname>Li</surname><given-names>Z. L.</given-names></name><etal/></person-group> (<year>2017</year>). <article-title>Altered amygdala information flow during RT-FMRI neurofeedback training of emotion regulation.</article-title>
+<source><italic>DEStech. Trans. Comput. Sci. Eng.</italic></source>
+<pub-id pub-id-type="doi">10.12783/dtcse/smce2017/12436</pub-id></mixed-citation>
+      </ref>
+      <ref id="B14">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Hearst</surname><given-names>M. A.</given-names></name><name><surname>Dumais</surname><given-names>S. T.</given-names></name><name><surname>Osuna</surname><given-names>E.</given-names></name><name><surname>Platt</surname><given-names>J.</given-names></name><name><surname>Scholkopf</surname><given-names>B.</given-names></name></person-group> (<year>1998</year>). <article-title>Support vector machines.</article-title>
+<source><italic>IEEE Intell. Syst. Appl.</italic></source>
+<volume>13</volume>
+<fpage>18</fpage>–<lpage>28</lpage>. <pub-id pub-id-type="doi">10.1109/5254.708428</pub-id></mixed-citation>
+      </ref>
+      <ref id="B15">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Hirshfeld-Becker</surname><given-names>D. R.</given-names></name><name><surname>Gabrieli</surname><given-names>J. D. E.</given-names></name><name><surname>Shapero</surname><given-names>B. G.</given-names></name><name><surname>Biederman</surname><given-names>J.</given-names></name><name><surname>Whitfield-Gabrieli</surname><given-names>S.</given-names></name><name><surname>Chai</surname><given-names>X. J.</given-names></name></person-group> (<year>2019</year>). <article-title>Intrinsic functional brain connectivity predicts onset of major depression disorder in adolescence: A pilot study.</article-title>
+<source><italic>Brain Connect.</italic></source>
+<volume>9</volume>
+<fpage>388</fpage>–<lpage>398</lpage>. <pub-id pub-id-type="doi">10.1089/brain.2018.0646</pub-id>
+<pub-id pub-id-type="pmid">30848160</pub-id></mixed-citation>
+      </ref>
+      <ref id="B16">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Ichikawa</surname><given-names>N.</given-names></name><name><surname>Lisi</surname><given-names>G.</given-names></name><name><surname>Yahata</surname><given-names>N.</given-names></name><name><surname>Okada</surname><given-names>G.</given-names></name><name><surname>Takamura</surname><given-names>M.</given-names></name><name><surname>Hashimoto</surname><given-names>R.</given-names></name><etal/></person-group> (<year>2020</year>). <article-title>Primary functional brain connections associated with melancholic major depressive disorder and modulation by antidepressants.</article-title>
+<source><italic>Sci. Rep.</italic></source>
+<volume>10</volume>:<issue>3542</issue>. <pub-id pub-id-type="doi">10.1038/s41598-020-60527-z</pub-id>
+<pub-id pub-id-type="pmid">32103088</pub-id></mixed-citation>
+      </ref>
+      <ref id="B17">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Khosla</surname><given-names>M.</given-names></name><name><surname>Jamison</surname><given-names>K.</given-names></name><name><surname>Ngo</surname><given-names>G. H.</given-names></name><name><surname>Kuceyeski</surname><given-names>A.</given-names></name><name><surname>Sabuncu</surname><given-names>M. R.</given-names></name></person-group> (<year>2019</year>). <article-title>Machine learning in resting-state FMRI Analysis.</article-title>
+<source><italic>Magn. Reson. Imaging</italic></source>
+<volume>64</volume>
+<fpage>101</fpage>–<lpage>121</lpage>. <pub-id pub-id-type="doi">10.1016/j.mri.2019.05.031</pub-id>
+<pub-id pub-id-type="pmid">31173849</pub-id></mixed-citation>
+      </ref>
+      <ref id="B18">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Kipf</surname><given-names>T. N.</given-names></name><name><surname>Welling</surname><given-names>M.</given-names></name></person-group> (<year>2016</year>). <article-title>Semi-Supervised Classification with Graph Convolutional Networks.</article-title>
+<source><italic>arXiv</italic></source> [<comment>Preprint</comment>]. <comment>arXiv:1609.02907 2016</comment>.</mixed-citation>
+      </ref>
+      <ref id="B19">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Liang</surname><given-names>Y.</given-names></name><name><surname>Xu</surname><given-names>G.</given-names></name></person-group> (<year>2022</year>). <article-title>Multi-level functional connectivity fusion classification framework for brain disease diagnosis.</article-title>
+<source><italic>IEEE J. Biomed. Health Inform.</italic></source>
+<volume>26</volume>
+<fpage>2714</fpage>–<lpage>2725</lpage>. <pub-id pub-id-type="doi">10.1109/JBHI.2022.3159031</pub-id>
+<pub-id pub-id-type="pmid">35290195</pub-id></mixed-citation>
+      </ref>
+      <ref id="B20">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Long</surname><given-names>Y.</given-names></name><name><surname>Cao</surname><given-names>H.</given-names></name><name><surname>Yan</surname><given-names>C.</given-names></name><name><surname>Chen</surname><given-names>X.</given-names></name><name><surname>Li</surname><given-names>L.</given-names></name><name><surname>Castellanos</surname><given-names>F. X.</given-names></name></person-group> (<year>2020</year>). <article-title>Altered Resting-state dynamic functional brain networks in major depressive disorder: Findings from the REST-Meta-MDD Consortium.</article-title>
+<source><italic>Neuroimage</italic></source>
+<volume>26</volume>:<issue>102163</issue>. <pub-id pub-id-type="doi">10.1016/j.nicl.2020.102163</pub-id>
+<pub-id pub-id-type="pmid">31953148</pub-id></mixed-citation>
+      </ref>
+      <ref id="B21">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Park</surname><given-names>S. E.</given-names></name><name><surname>Kim</surname><given-names>Y. H.</given-names></name><name><surname>Yang</surname><given-names>J. C.</given-names></name><name><surname>Jeong</surname><given-names>G. W.</given-names></name></person-group> (<year>2022</year>). <article-title>Comparative functional connectivity of core brain regions between implicit and explicit memory tasks underlying negative emotion in general anxiety disorder.</article-title>
+<source><italic>Clin. Psychopharmacol. Neurosci.</italic></source>
+<volume>20</volume>
+<fpage>279</fpage>–<lpage>291</lpage>. <pub-id pub-id-type="doi">10.9758/cpn.2022.20.2.279</pub-id>
+<pub-id pub-id-type="pmid">35466099</pub-id></mixed-citation>
+      </ref>
+      <ref id="B22">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Pearson</surname><given-names>K.</given-names></name></person-group> (<year>1900</year>). <article-title>Data for the Problem of Evolution in Man. III.—On the magnitude of certain coefficients of correlation in man, &amp;c.</article-title>
+<source><italic>Proc. R. Soc. London</italic></source>
+<volume>66</volume>
+<fpage>23</fpage>–<lpage>32</lpage>. <pub-id pub-id-type="doi">10.1098/rspl.1899.0068</pub-id></mixed-citation>
+      </ref>
+      <ref id="B23">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Qin</surname><given-names>K.</given-names></name><name><surname>Lei</surname><given-names>D.</given-names></name><name><surname>Pinaya</surname><given-names>W. H.</given-names></name><name><surname>Pan</surname><given-names>N.</given-names></name><name><surname>Li</surname><given-names>W.</given-names></name><name><surname>Zhu</surname><given-names>Z.</given-names></name><etal/></person-group> (<year>2022</year>). <article-title>Using graph convolutional network to characterize individuals with major depressive disorder across multiple imaging sites.</article-title>
+<source><italic>EBioMed.</italic></source>
+<volume>78</volume>:<issue>103977</issue>. <pub-id pub-id-type="doi">10.1016/j.ebiom.2022.103977</pub-id>
+<pub-id pub-id-type="pmid">35367775</pub-id></mixed-citation>
+      </ref>
+      <ref id="B24">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Rathore</surname><given-names>S.</given-names></name><name><surname>Habes</surname><given-names>M.</given-names></name><name><surname>Iftikhar</surname><given-names>M. A.</given-names></name><name><surname>Shacklett</surname><given-names>A.</given-names></name><name><surname>Davatzikos</surname><given-names>C. A.</given-names></name></person-group> (<year>2017</year>). <article-title>Review on neuroimaging-based classification studies and associated feature extraction methods for Alzheimer’s Disease and its prodromal stages.</article-title>
+<source><italic>Neuroimage</italic></source>
+<volume>155</volume>
+<fpage>530</fpage>–<lpage>548</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2017.03.057</pub-id>
+<pub-id pub-id-type="pmid">28414186</pub-id></mixed-citation>
+      </ref>
+      <ref id="B25">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Razak</surname><given-names>N. N. A.</given-names></name><name><surname>Abdulkadir</surname><given-names>S. J.</given-names></name><name><surname>Maoinser</surname><given-names>M. A.</given-names></name><name><surname>Shaffee</surname><given-names>S. N. A.</given-names></name><name><surname>Ragab</surname><given-names>M. G.</given-names></name></person-group> (<year>2021</year>). <article-title>One-dimensional convolutional neural network with adaptive moment estimation for modelling of the sand retention test.</article-title>
+<source><italic>Appl. Sci.</italic></source>
+<volume>11</volume>:<issue>3802</issue>. <pub-id pub-id-type="doi">10.3390/app11093802</pub-id></mixed-citation>
+      </ref>
+      <ref id="B26">
+        <mixed-citation publication-type="book"><person-group person-group-type="author"><name><surname>Sezer</surname><given-names>A.</given-names></name><name><surname>Altan</surname><given-names>A.</given-names></name></person-group> (<year>2021</year>). <article-title>Optimization of Deep Learning Model Parameters in Classification of Solder Paste Defects.</article-title>
+<source><italic>Proceeding of the 2021 3rd international congress on human-computer interaction, optimization and robotic applications (HORA).</italic></source>
+<publisher-loc>Manhattan, NY</publisher-loc>: <publisher-name>IEEE</publisher-name>, <fpage>1</fpage>–<lpage>6</lpage>. <pub-id pub-id-type="doi">10.1109/HORA52670.2021.9461342</pub-id></mixed-citation>
+      </ref>
+      <ref id="B27">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Sharp</surname><given-names>R.</given-names></name></person-group> (<year>2015</year>). <article-title>The hamilton rating scale for depression.</article-title>
+<source><italic>Occupat. Med.</italic></source>
+<volume>65</volume>
+<fpage>340</fpage>–<lpage>340</lpage>. <pub-id pub-id-type="doi">10.1093/occmed/kqv043</pub-id>
+<pub-id pub-id-type="pmid">25972613</pub-id></mixed-citation>
+      </ref>
+      <ref id="B28">
+        <mixed-citation publication-type="book"><person-group person-group-type="author"><name><surname>Shen</surname><given-names>X. Y.</given-names></name><name><surname>Zhu</surname><given-names>J. Y.</given-names></name><name><surname>Wei</surname><given-names>M. B.</given-names></name><name><surname>Qin</surname><given-names>J. L.</given-names></name><name><surname>Yan</surname><given-names>R.</given-names></name><name><surname>Wei</surname><given-names>Q. X.</given-names></name></person-group> (<year>2016</year>). “<article-title>Application of graph theory features for the objective diagnosis of depressive patients with or without anxiety: An Rs-Fmri Study</article-title>,” <source><italic>Proceedings of the the international conference on biological sciences and technology</italic></source>, (<publisher-loc>Amsterdam</publisher-loc>: <publisher-name>Atlantis Press</publisher-name>), <fpage>278</fpage>–<lpage>283</lpage>. <pub-id pub-id-type="doi">10.2991/bst-16.2016.41</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B29">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Shi</surname><given-names>Y.</given-names></name><name><surname>Zhang</surname><given-names>L.</given-names></name><name><surname>Wang</surname><given-names>Z.</given-names></name><name><surname>Lu</surname><given-names>X.</given-names></name><name><surname>Wang</surname><given-names>T.</given-names></name><name><surname>Zhou</surname><given-names>D.</given-names></name><etal/></person-group> (<year>2021</year>). <article-title>Multivariate machine learning analyses in identification of major depressive disorder using resting-state functional connectivity: A multicentral study.</article-title>
+<source><italic>ACS Chem. Neurosci.</italic></source>
+<volume>12</volume>
+<fpage>2878</fpage>–<lpage>2886</lpage>. <pub-id pub-id-type="doi">10.1021/acschemneuro.1c00256</pub-id>
+<pub-id pub-id-type="pmid">34282889</pub-id></mixed-citation>
+      </ref>
+      <ref id="B30">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Song</surname><given-names>X.</given-names></name><name><surname>Zhou</surname><given-names>F.</given-names></name><name><surname>Frangi</surname><given-names>A. F.</given-names></name><name><surname>Cao</surname><given-names>J.</given-names></name><name><surname>Xiao</surname><given-names>X.</given-names></name><name><surname>Lei</surname><given-names>Y.</given-names></name><etal/></person-group> (<year>2022</year>). <article-title>Multi-center and multi-channel pooling GCN for early ad diagnosis based on dual-modality fused brain network.</article-title>
+<source><italic>IEEE Trans. Med. Imaging</italic></source>
+<pub-id pub-id-type="doi">10.1109/TMI.2022.3187141</pub-id>
+<pub-id pub-id-type="pmid">35767511</pub-id></mixed-citation>
+      </ref>
+      <ref id="B31">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Srivastava</surname><given-names>N.</given-names></name><name><surname>Hinton</surname><given-names>G.</given-names></name><name><surname>Krizhevsky</surname><given-names>A.</given-names></name><name><surname>Sutskever</surname><given-names>I.</given-names></name><name><surname>Salakhutdinov</surname><given-names>R.</given-names></name></person-group> (<year>2014</year>). <article-title>Dropout: A simple way to prevent neural networks from overfitting.</article-title>
+<source><italic>J. Mach. Learn. Res.</italic></source>
+<volume>15</volume>
+<fpage>1929</fpage>–<lpage>1958</lpage>. <pub-id pub-id-type="pmid">33259321</pub-id></mixed-citation>
+      </ref>
+      <ref id="B32">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Warshall</surname><given-names>S. A.</given-names></name></person-group> (<year>1962</year>). <article-title>Theorem on boolean matrices.</article-title>
+<source><italic>J. ACM</italic></source>
+<volume>9</volume>
+<fpage>11</fpage>–<lpage>12</lpage>. <pub-id pub-id-type="doi">10.1145/321105.321107</pub-id></mixed-citation>
+      </ref>
+      <ref id="B33">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Yan</surname><given-names>C. G.</given-names></name><name><surname>Chen</surname><given-names>X.</given-names></name><name><surname>Li</surname><given-names>L.</given-names></name><name><surname>Castellanos</surname><given-names>F. X.</given-names></name><name><surname>Bai</surname><given-names>T. J.</given-names></name><name><surname>Bo</surname><given-names>Q. J.</given-names></name><etal/></person-group> (<year>2019</year>). <article-title>Reduced default mode network functional connectivity in patients with recurrent major depressive disorder.</article-title>
+<source><italic>Proc. Natl. Acad. Sci.U.S.A.</italic></source>
+<volume>116</volume>
+<fpage>9078</fpage>–<lpage>9083</lpage>. <pub-id pub-id-type="doi">10.1073/pnas.1900390116</pub-id>
+<pub-id pub-id-type="pmid">30979801</pub-id></mixed-citation>
+      </ref>
+      <ref id="B34">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Yan</surname><given-names>C.</given-names></name><name><surname>Zang</surname><given-names>Y.</given-names></name></person-group> (<year>2010</year>). <article-title>DPARSF: A MATLAB Toolbox for “Pipeline” Data Analysis of Resting-State FMRI.</article-title>
+<source><italic>Front. Syst. Neurosci.</italic></source>
+<volume>4</volume>:<issue>13</issue>. <pub-id pub-id-type="doi">10.3389/fnsys.2010.00013</pub-id>
+<pub-id pub-id-type="pmid">20577591</pub-id></mixed-citation>
+      </ref>
+      <ref id="B35">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Yan</surname><given-names>M.</given-names></name><name><surname>He</surname><given-names>Y.</given-names></name><name><surname>Cui</surname><given-names>X.</given-names></name><name><surname>Liu</surname><given-names>F.</given-names></name><name><surname>Li</surname><given-names>H.</given-names></name><name><surname>Huang</surname><given-names>R.</given-names></name><etal/></person-group> (<year>2021</year>). <article-title>Disrupted regional homogeneity in melancholic and non-melancholic major depressive disorder at rest.</article-title>
+<source><italic>Front. Psychiatry</italic></source>
+<volume>12</volume>:<issue>618805</issue>. <pub-id pub-id-type="doi">10.3389/fpsyt.2021.618805</pub-id>
+<pub-id pub-id-type="pmid">33679477</pub-id></mixed-citation>
+      </ref>
+      <ref id="B36">
+        <mixed-citation publication-type="book"><person-group person-group-type="author"><name><surname>Zhang</surname><given-names>M.</given-names></name><name><surname>Cui</surname><given-names>Z.</given-names></name><name><surname>Neumann</surname><given-names>M.</given-names></name><name><surname>Chen</surname><given-names>Y.</given-names></name></person-group> (<year>2018</year>). “<article-title>An end-to-end deep learning architecture for graph classification</article-title>,” <source><italic>Proceedings of the AAAI conference on artificial intelligence</italic></source>, <publisher-loc>California, CA</publisher-loc>. <pub-id pub-id-type="doi">10.1609/aaai.v32i1.11782</pub-id></mixed-citation>
+      </ref>
+      <ref id="B37">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zhu</surname><given-names>X.</given-names></name><name><surname>Yuan</surname><given-names>F.</given-names></name><name><surname>Zhou</surname><given-names>G.</given-names></name><name><surname>Nie</surname><given-names>J.</given-names></name><name><surname>Wang</surname><given-names>D.</given-names></name><name><surname>Hu</surname><given-names>P.</given-names></name><etal/></person-group> (<year>2021</year>). <article-title>Cross-network interaction for diagnosis of major depressive disorder based on resting state functional connectivity.</article-title>
+<source><italic>Brain Imaging Behav.</italic></source>
+<volume>15</volume>
+<fpage>1279</fpage>–<lpage>1289</lpage>. <pub-id pub-id-type="doi">10.1007/s11682-020-00326-2</pub-id>
+<pub-id pub-id-type="pmid">32734435</pub-id></mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

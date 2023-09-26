@@ -1,0 +1,1030 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.3" xml:lang="en" article-type="research-article">
+  <?properties open_access?>
+  <processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats">
+    <restricted-by>pmc</restricted-by>
+  </processing-meta>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">Front Pain Res (Lausanne)</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Front Pain Res (Lausanne)</journal-id>
+      <journal-id journal-id-type="publisher-id">Front. Pain Res.</journal-id>
+      <journal-title-group>
+        <journal-title>Frontiers in Pain Research</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">2673-561X</issn>
+      <issn pub-type="epub">2673-561X</issn>
+      <publisher>
+        <publisher-name>Frontiers Media S.A.</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">35620636</article-id>
+      <article-id pub-id-type="pmc">9127988</article-id>
+      <article-id pub-id-type="doi">10.3389/fpain.2022.871961</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Pain Research</subject>
+          <subj-group>
+            <subject>Original Research</subject>
+          </subj-group>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Understanding Pain and Trauma Symptoms in Veterans From Resting-State Connectivity: Unsupervised Modeling</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" corresp="yes">
+          <name>
+            <surname>Strigo</surname>
+            <given-names>Irina A.</given-names>
+          </name>
+          <xref rid="aff1" ref-type="aff">
+<sup>1</sup>
+</xref>
+          <xref rid="aff2" ref-type="aff">
+<sup>2</sup>
+</xref>
+          <xref rid="c001" ref-type="corresp">
+<sup>*</sup>
+</xref>
+          <uri xlink:href="http://loop.frontiersin.org/people/307982/overview"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Spadoni</surname>
+            <given-names>Andrea D.</given-names>
+          </name>
+          <xref rid="aff3" ref-type="aff">
+<sup>3</sup>
+</xref>
+          <xref rid="aff4" ref-type="aff">
+<sup>4</sup>
+</xref>
+          <xref rid="aff5" ref-type="aff">
+<sup>5</sup>
+</xref>
+          <uri xlink:href="http://loop.frontiersin.org/people/1720952/overview"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Simmons</surname>
+            <given-names>Alan N.</given-names>
+          </name>
+          <xref rid="aff3" ref-type="aff">
+<sup>3</sup>
+</xref>
+          <xref rid="aff4" ref-type="aff">
+<sup>4</sup>
+</xref>
+          <xref rid="aff5" ref-type="aff">
+<sup>5</sup>
+</xref>
+          <uri xlink:href="http://loop.frontiersin.org/people/62141/overview"/>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1"><sup>1</sup><institution>Emotion and Pain Laboratory, San Francisco Veterans Affairs Health Care Center</institution>, <addr-line>San Francisco, CA</addr-line>, <country>United States</country></aff>
+      <aff id="aff2"><sup>2</sup><institution>Department of Psychiatry, University of California, San Francisco</institution>, <addr-line>San Francisco, CA</addr-line>, <country>United States</country></aff>
+      <aff id="aff3"><sup>3</sup><institution>Stress and Neuroimaging Laboratory, San Diego Veterans Affairs Health Care Center</institution>, <addr-line>San Francisco, CA</addr-line>, <country>United States</country></aff>
+      <aff id="aff4"><sup>4</sup><institution>Center of Excellence in Stress and Mental Health, San Diego Veterans Affairs Health Care Center</institution>, <addr-line>San Diego, CA</addr-line>, <country>United States</country></aff>
+      <aff id="aff5"><sup>5</sup><institution>Department of Psychiatry, University of California, San Diego</institution>, <addr-line>San Diego, CA</addr-line>, <country>United States</country></aff>
+      <author-notes>
+        <fn fn-type="edited-by">
+          <p>Edited by: Peter Sörös, University of Oldenburg, Germany</p>
+        </fn>
+        <fn fn-type="edited-by">
+          <p>Reviewed by: Pascal Tetreault, Université de Sherbrooke, Canada; Scott Holmes, Boston Children's Hospital, United States</p>
+        </fn>
+        <corresp id="c001">*Correspondence: Irina A. Strigo <email>irina.strigo@ucsf.edu</email></corresp>
+        <fn fn-type="other" id="fn001">
+          <p>This article was submitted to Pain Research Methods, a section of the journal Frontiers in Pain Research</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="epub">
+        <day>10</day>
+        <month>5</month>
+        <year>2022</year>
+      </pub-date>
+      <pub-date pub-type="collection">
+        <year>2022</year>
+      </pub-date>
+      <volume>3</volume>
+      <elocation-id>871961</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>08</day>
+          <month>2</month>
+          <year>2022</year>
+        </date>
+        <date date-type="accepted">
+          <day>07</day>
+          <month>4</month>
+          <year>2022</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Copyright © 2022 Strigo, Spadoni and Simmons.</copyright-statement>
+        <copyright-year>2022</copyright-year>
+        <copyright-holder>Strigo, Spadoni and Simmons</copyright-holder>
+        <license>
+          <ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref>
+          <license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY). The use, distribution or reproduction in other forums is permitted, provided the original author(s) and the copyright owner(s) are credited and that the original publication in this journal is cited, in accordance with accepted academic practice. No use, distribution or reproduction is permitted which does not comply with these terms.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>Trauma and posttraumatic stress are highly comorbid with chronic pain and are often antecedents to developing chronic pain conditions. Pain and trauma are associated with greater utilization of medical services, greater use of psychiatric medication, and increased total cost of treatment. Despite the high overlap in the clinic, the neural mechanisms of pain and trauma are often studied separately. In this study, resting-state functional magnetic resonance imaging (rs-fMRI) scans were completed among a diagnostically heterogeneous sample of veterans with a range of back pain and trauma symptoms. Using Group Iterative Multiple Model Estimation (GIMME), an effective functional connectivity analysis, we explored an unsupervised model deriving subgroups based on path similarity in <italic>a priori</italic> defined regions of interest (ROIs) from brain regions implicated in the experience of pain and trauma. Three subgroups were identified by patterns in functional connection and differed significantly on several psychological measures despite similar demographic and diagnostic characteristics. The first subgroup was highly connected overall, was characterized by functional connectivity from the nucleus accumbens (NAc), the anterior cingulate cortex (ACC), and the posterior cingulate cortex (PCC) to the insula and scored low on pain and trauma symptoms. The second subgroup did not significantly differ from the first subgroup on pain and trauma measures but was characterized by functional connectivity from the ACC and NAc to the thalamus and from ACC to PCC. The third subgroup was characterized by functional connectivity from the thalamus and PCC to NAc and scored high on pain and trauma symptoms. Our results suggest that, despite demographic and diagnostic similarities, there may be neurobiologically dissociable biotypes with different mechanisms for managing pain and trauma. These findings may have implications for the determination of appropriate biotype-specific interventions that target these neurological systems.</p>
+      </abstract>
+      <kwd-group>
+        <kwd>insula</kwd>
+        <kwd>nucleus accumbens</kwd>
+        <kwd>effective connectivity</kwd>
+        <kwd>neuroimaging</kwd>
+        <kwd>veterans</kwd>
+        <kwd>catastrophizing</kwd>
+        <kwd>chronic back pain</kwd>
+        <kwd>PTSD</kwd>
+      </kwd-group>
+      <funding-group>
+        <award-group>
+          <funding-source id="cn001">
+            <institution-wrap>
+              <institution>U.S. Department of Veterans Affairs</institution>
+              <institution-id institution-id-type="doi">10.13039/100000738</institution-id>
+            </institution-wrap>
+          </funding-source>
+          <award-id award-type="contract" rid="cn001">I01-CX- 001652</award-id>
+          <award-id award-type="contract" rid="cn001">I01-CX001542,</award-id>
+          <award-id award-type="contract" rid="cn001">I01-CX-001762,</award-id>
+          <award-id award-type="contract" rid="cn001">I01-CX-000816,</award-id>
+        </award-group>
+        <award-group>
+          <funding-source id="cn002">
+            <institution-wrap>
+              <institution>National Institute of Arthritis and Musculoskeletal and Skin Diseases</institution>
+              <institution-id institution-id-type="doi">10.13039/100000069</institution-id>
+            </institution-wrap>
+          </funding-source>
+          <award-id award-type="contract" rid="cn002">U19AR076737,</award-id>
+        </award-group>
+      </funding-group>
+      <counts>
+        <fig-count count="4"/>
+        <table-count count="1"/>
+        <equation-count count="0"/>
+        <ref-count count="101"/>
+        <page-count count="13"/>
+        <word-count count="9093"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec sec-type="intro" id="s1">
+      <title>Introduction</title>
+      <p>Pain and trauma are highly comorbid conditions (<xref rid="B1" ref-type="bibr">1</xref>–<xref rid="B6" ref-type="bibr">6</xref>), especially among the military and veteran population (<xref rid="B7" ref-type="bibr">7</xref>, <xref rid="B8" ref-type="bibr">8</xref>), and both are associated with dramatic changes in the brain structure and function (<xref rid="B9" ref-type="bibr">9</xref>, <xref rid="B10" ref-type="bibr">10</xref>). Using experimental pain and task-based functional magnetic resonance imaging (fMRI), we and others have repeatedly shown that men and women with trauma demonstrate dysregulated behavioral (<xref rid="B11" ref-type="bibr">11</xref>, <xref rid="B12" ref-type="bibr">12</xref>) and brain response to pain, depicted in the increased pain avoidance and dysregulated modulatory response within interoceptive, reward, and frontal modulatory networks (<xref rid="B13" ref-type="bibr">13</xref>–<xref rid="B17" ref-type="bibr">17</xref>).</p>
+      <p>Resting-state fMRI (rs-fMRI) allows for the identification of resting-state networks, which represent spatial distributions of synchronized fluctuations in blood oxygen level-dependent (BOLD) fMRI responses over time (<xref rid="B18" ref-type="bibr">18</xref>). Several neuroimaging studies have shown that chronic low back pain is associated with alterations in resting-state brain activity and dynamics (<xref rid="B19" ref-type="bibr">19</xref>–<xref rid="B23" ref-type="bibr">23</xref>). Changes within default mode network (DMN), salience network (SN), and cortico-striatal connectivity have all been reported (<xref rid="B24" ref-type="bibr">24</xref>, <xref rid="B25" ref-type="bibr">25</xref>), and reduced resting-state insula connectivity in chronic back pain resolved following successful spinal surgery or zygapophysial (facet) joint block (<xref rid="B26" ref-type="bibr">26</xref>). Similarly, growing research demonstrates that chronic trauma is associated with alterations in resting-state connectivity such as DMN, SN, and central executive network (CEN, also referred to as the frontoparietal control network) (<xref rid="B27" ref-type="bibr">27</xref>, <xref rid="B28" ref-type="bibr">28</xref>). Substantial overlap between changes in resting-state functional connectivity in both chronic pain and trauma is consistent with clinical observations of comorbidity between these conditions, and theoretical models wasproposed to underlie pain–trauma overlap (<xref rid="B6" ref-type="bibr">6</xref>). Nevertheless, to the best of our knowledge, no study has examined resting-state networks in individuals with comorbid pain and trauma symptoms. Understanding shared vs. unique underlying neural networks related to pain and/or trauma may provide the basis for novel, targeted interventions.</p>
+      <p>To examine the degree to which pain and/or trauma symptoms alter resting-state functional connectivity, we recruited a diagnostically heterogeneous sample of veterans with varying degrees of back pain and trauma symptoms and employed a model-free analysis approach with the goal of identifying mechanistically meaningful subgroups. Such diagnosis-free approach supports the National Institute of Mental Health (NIMH) Research Domain Criteria (RDoC) goals to understand mechanisms of psychiatric disorders and their comorbidities in a transdiagnostic manner (<xref rid="B29" ref-type="bibr">29</xref>). Data-driven approaches that characterize resting-state functional connectivity patterns show great promise in elucidating neurobiological mechanisms underlying clinical conditions and heterogeneous symptoms (<xref rid="B30" ref-type="bibr">30</xref>, <xref rid="B31" ref-type="bibr">31</xref>). Especially, employing effective connectivity models, rather than Pearson's correlation and distance measures, can lead to an improved understanding of directional and causal relationships between networks rather than finding simple correlational associations (<xref rid="B32" ref-type="bibr">32</xref>, <xref rid="B33" ref-type="bibr">33</xref>). A novel data-driven strategy called group iterative multiple model estimation (GIMME) has been shown to be particularly effective in deriving directed pathways and is successful in separating clinically heterogeneous population (<xref rid="B34" ref-type="bibr">34</xref>, <xref rid="B35" ref-type="bibr">35</xref>). GIMME is a version of unified structural equation modeling (uSEM) that uses time-series analysis within an SEM framework to estimate the prediction strength of directed paths between variables controlling for lagged and contemporaneous effects of all the variables entered into the model (<xref rid="B36" ref-type="bibr">36</xref>). Simulation and experimental evidence suggest that GIMME is robust against problems associated with signal-to-noise ratio, hemodynamic response variability, and low sample sizes (<xref rid="B35" ref-type="bibr">35</xref>, <xref rid="B37" ref-type="bibr">37</xref>). A modification of GIMME, called subgrouping within GIMME (or “S-GIMME”), can identify neural subtypes in small sample sizes and outperforms other clustering methods (<xref rid="B34" ref-type="bibr">34</xref>).</p>
+      <p>The current study sought to utilize S-GIMME with resting-state functional connectivity to identify whether pain and trauma symptoms are associated with differential functional connectivity patterns at rest in a diagnostically heterogeneous sample of veterans within brain regions implicated in the experience of pain and trauma [i.e., insula, anterior cingulate cortex (ACC), thalamus, posterior cingulate cortex (PCC), and nucleus accumbens (NAc)]. We hypothesized that a model-free approach would identify specific connectivity patterns for increased pain, trauma, and their overlap.</p>
+    </sec>
+    <sec sec-type="materials and methods" id="s2">
+      <title>Materials and Methods</title>
+      <p>Fifty-seven veterans (9 women, mean ± SD age: 35.5 ± 3.75, range 28–44) gave written informed consent to participate in this study, which was approved by the University of California San Francisco Human Research Protection Program and Veterans Affairs San Francisco Healthcare System Research and Development Committee. Participants were recruited from the VA San Francisco Healthcare System (VASFHS) <italic>via</italic> advertisement materials (e.g., flyers posted in the hospital public areas) or through referrals from other ongoing research projects at this site and through mining VA electronic health records. The sample included individuals with a range of back pain and/or trauma symptoms. Study inclusions were (1) veterans between the ages of 18 and 55; (2) veterans experiencing back pain and/or history of life-threatening trauma during combat and experiencing distress, such as excessive anxiety, jumpiness, or nightmares, related to trauma; (3) veterans that were able to undergo MRI (e.g., have no contraindications for MR); and (4) veterans currently not taking narcotic medication. Subjects were excluded from the study if they: (1) had a current or lifetime history of bipolar disorder, psychosis, eating disorders, and obsessive-compulsive disorder (OCD); (2) had a history of alcohol and/or drug dependence within 3 months of study participation; (3) showed a neurological disorder that might be associated with cognitive dysfunction (including head trauma associated with fracture, pre-deployment traumatic brain injury (TBI) resulting in loss or alteration of consciousness, cerebrovascular accident, or intracranial surgery, aneurysm, and seizures); (4) had prior neurosurgery; (5) had irremovable ferromagnetic material; (6) were pregnant; (7) were claustrophobic; (8) had TBI with loss of consciousness (LOC) &gt; 10 min; and (9) had vision problems uncorrectable with lenses. Three subjects were excluded from the analyses due to extensive motion in the MRI scanner.</p>
+      <sec>
+        <title>Clinical Measures</title>
+        <p>All subjects underwent a Structural Clinical Interview administered by trained interviewers according to the Mini-International Neuropsychiatric Interview (<xref rid="B38" ref-type="bibr">38</xref>) to establish current and past psychiatric diagnoses. In addition, each subject completed a Research Electronic Data Capture (REDCap) battery of questionnaires assessing specific pain, trauma, and comorbid symptoms. The battery included pain severity and interference from the Brief Pain Inventory (BPI) (<xref rid="B39" ref-type="bibr">39</xref>) and post-traumatic stress disorder (PTSD) checklist for DSM5 (PTSD Checklist version 5, PCL-5) (<xref rid="B40" ref-type="bibr">40</xref>) to assess pain and trauma symptoms, respectively. In addition, subjects completed Beck Depression Inventory-2 (BDI-2) (<xref rid="B41" ref-type="bibr">41</xref>) to assess the severity of depressive symptoms, the Pain Catastrophizing Scale (PCS) (<xref rid="B42" ref-type="bibr">42</xref>), and a short form of the Pain Anxiety Symptoms Scale (PASS-20) (<xref rid="B43" ref-type="bibr">43</xref>) to assess pain-related cognitions, and the Combat Exposure Scale (CES) (<xref rid="B44" ref-type="bibr">44</xref>) to access wartime stressors experienced by combatants. Note that we used the symptoms spectrum approach in the current study; nevertheless, each subject was also given a tentative group assignment based on meeting/not-meeting trauma criterion A, and/or chronic pain diagnosis, as recommended (<xref rid="B45" ref-type="bibr">45</xref>, <xref rid="B46" ref-type="bibr">46</xref>).</p>
+      </sec>
+      <sec>
+        <title>MRI Acquisition and Preprocessing</title>
+        <p>Brain imaging data were acquired on 3-T Siemens Skyra MRI scanner. All subjects underwent (1) a high-resolution T1-weighted structural scan (320 slices; repetition time, TR = 2,400 ms; echo time, TE = 2.24 ms; flip angle, FA = 8°; field of view, FOV = 166.4 mm × 240 mm; matrix size = 208 × 300; voxel size = 0.8 mm × 0.8 mm × 0.8 mm); and (2) rs-fMRI scan (66 slices in interleaved ascending order; TR = 1,000 ms; TE = 35 ms; FA = 62°; FOV = 208 mm × 208 mm; matrix size = 104 × 104; voxel size = 2 mm × 2 mm × 2 mm; MB factor = 6) while laying comfortably in the MRI scanner. The rs-fMRI run was 8:22 min in length, during which 502 functional volumes were acquired. Data were preprocessed using fMRIPrep 1.5.7 (<xref rid="B47" ref-type="bibr">47</xref>), which is based on Nipype 1.4.0 (<xref rid="B48" ref-type="bibr">48</xref>, <xref rid="B49" ref-type="bibr">49</xref>) and followed the recommended pipeline. Briefly, data were (1) de-spiked by removal of regional statistical outliers with interpolated regional means, (2) temporarily corrected to slice acquisition, (3) spatially corrected for six direction motion parameters (<italic>x, y, z</italic>, roll, pitch, and yaw) and their derivatives, (4) aligned to anatomical T1 and normalized brain space, and (5) scaled for percent signal change. For more details of the pipeline, see the section corresponding to workflows in fMRIPrep's documentation (<xref rid="B47" ref-type="bibr">47</xref>). Data were smoothed with a Gaussian kernel (full-width half-maximum, FWHM = 5 mm) and band-pass filtered (range [0.008, 0.09] Hz).</p>
+      </sec>
+      <sec>
+        <title>Resting-State Networks</title>
+        <p>We extracted the mean BOLD time series from the average activity across voxels using five bilateral regions of interest (ROIs) averaged across both sites: thalamus, insula, ACC (SN and interoception), PCC (DMN), and NAc (reward/relief) using Hammers' atlas (<xref rid="B50" ref-type="bibr">50</xref>, <xref rid="B51" ref-type="bibr">51</xref>) (see inset on the right in <xref rid="F1" ref-type="fig">Figure 1</xref>). The mask was chosen based on the fact that these regions are part of the networks that are heavily implicated in both pain and trauma (<xref rid="B52" ref-type="bibr">52</xref>–<xref rid="B55" ref-type="bibr">55</xref>). Considering that our sample was heterogeneous, which is typical for the veteran population, identifying symptom-specific vs. comorbid and diagnostic vs. symptomatic changes in functional connectivity between these regions at rest can provide valuable insight into the biological underpinnings of pain and/or trauma symptoms, diagnoses, and potential treatment targets. These five ROIs were then entered into connectivity classification analyses with unsupervised S-GIMME (see below) to derive subgroups based on path similarity.</p>
+        <fig position="float" id="F1">
+          <label>Figure 1</label>
+          <caption>
+            <p>Unsupervised GIMME (USG) identified common and unique effective connectivity for the three subgroups based on effective connectivity paths. Subgroup 1 [USG1, yellow, <italic>n</italic> = 16, 7 connections] was characterized by functional connectivity to the insula from NAc, ACC, and PCC, and from the thalamus to ACC and bidirectional interconnections between the thalamus and PCC. Subgroup 2 [USG2, indigo, <italic>n</italic> = 23, 4 connections] was characterized by functional connectivity from the ACC and NAc to the thalamus and from ACC to PCC. Subgroup 3 [USG3, sky blue, <italic>n</italic> = 15, 4 connections] was characterized by functional connectivity from the thalamus and PCC to NAc. Both USG1 and USG3 had overlapping functional connections from PCC to ACC (garnet), whereas USG2 and USG3 were characterized by overlapping functional connectivity from the insula to ACC (cyan). No connections were shared between USG1 and USG2. (Right) The box on the right shows pictorial of the five regions of interest (ROIs) extents of voxels included in signal averages [Hammers_mith atlas n30r83 (<xref rid="B51" ref-type="bibr">51</xref>)]. We extracted the mean BOLD time series from the average activity across voxels using five bilateral regions averaged across both sites; only one side is displayed for clarity. IC, insular cortex; ACC, anterior cingulate cortex; Thal, thalamus; PCC, posterior cingulate cortex; NAc, nucleus accumbens; BOLD, blood oxygen level-dependent. c.f. text for details.</p>
+          </caption>
+          <graphic xlink:href="fpain-03-871961-g0001" position="float"/>
+        </fig>
+      </sec>
+      <sec>
+        <title>Unsupervised S-GIMME</title>
+        <p>An unsupervised subgroup classification was performed using unsupervised subgrouping-GIMME, or S-GIMME, in <italic>R</italic> (R Core Team) in order to identify whether clinically relevant subgroups of subjects can be derived based upon resting-state effective connectivity patterns (<xref rid="B34" ref-type="bibr">34</xref>). Unsupervised S-GIMME can be used to not only identify common pathways across all subjects but also importantly classify subjects within subgroups based upon unique connectivity profiles and estimate subject-level connectivity (<xref rid="B34" ref-type="bibr">34</xref>). First, unsupervised S-GIMME searches across individuals to derive a connectivity profile of lagged (lag = 1 TR) and contemporaneous directed pathways that are common for the majority of subjects (group-level) and prunes the remaining paths. Furthermore, unsupervised S-GIMME uses unsupervised community detection [Walktrap; (<xref rid="B56" ref-type="bibr">56</xref>, <xref rid="B57" ref-type="bibr">57</xref>)] on the similarity matrix derived from the individual-level estimates of the group-level connections to identify an optimal number of subgroups who have similar connectivity profiles. Once subgroups are identified, unsupervised S-GIMME searches for unique connectivity paths for each data-driven subgroup. Finally, unsupervised S-GIMME identifies individual-level connections using the group- and subgroup-derived temporal patterns as priority. After identification of subgroups derived from unsupervised S-GIMME, we compared subgroups on clinical measures to examine clinical relevance of the identified subgroups. Like previous reports (<xref rid="B58" ref-type="bibr">58</xref>, <xref rid="B59" ref-type="bibr">59</xref>), we only report on contemporaneous pathways.</p>
+      </sec>
+      <sec>
+        <title>Subgroup Characterization Analysis</title>
+        <p>Statistical analysis of clinical and psychological variables was conducted in R and JASP (<xref rid="B60" ref-type="bibr">60</xref>). JASP (Version 0.14.1), ANCOVAs, <italic>t</italic>-tests, and chi-square tests were used to compare S-GIMME subgroups on clinical and demographic variables (i.e., age and education). For pain and trauma symptoms, results were uncorrected for multiple comparisons due to <italic>a priori</italic> assumption. Other results were corrected for multiple comparisons using Dunn's method. <italic>Post-hoc</italic> analyses also explored associations of unique connectivity by subgroup with clinical variables using Spearman's correlations.</p>
+      </sec>
+    </sec>
+    <sec sec-type="results" id="s3">
+      <title>Results</title>
+      <sec>
+        <title>Unsupervised S-GIMME</title>
+        <p>Unsupervised S-GIMME produced a three-group solution (<xref rid="F1" ref-type="fig">Figure 1</xref>), sorting 16 subjects into subgroup 1 (USG1, yellow), 23 subjects into subgroup 2 (USG2, indigo), and 15 subjects into subgroup 3 (USG3, sky blue). The connectivity and directionality of connections between ROIs within each subgroup are illustrated in <xref rid="F1" ref-type="fig">Figure 1</xref> (left). Overall, USG1 had 7 connections between 5 ROIs, whereas USG2 and USG3 had 4 connections. USG1 was characterized by functional connectivity to the insula from NAc, ACC, and PCC and from the thalamus to ACC and bidirectional interconnections between the thalamus and PCC. USG2 was characterized by functional connectivity from the ACC and NAc to the thalamus and from ACC to PCC. USG3 was characterized by functional connectivity from thalamus and PCC to NAc. Several connections were overlapping between the subgroups. Both USG2 and USG3 were characterized by overlapping functional connectivity from the insula to ACC, whereas USG1 and USG3 had overlapping functional connections from PCC to ACC. No connections were shared between USG1 and USG2. We have displayed (<xref rid="F1" ref-type="fig">Figure 1</xref>, right) the extent of voxels included in signal averages for each of the five ROIs in <xref rid="F1" ref-type="fig">Figure 1</xref> [Hammers_mith atlas n30r83 (<xref rid="B51" ref-type="bibr">51</xref>)].</p>
+      </sec>
+      <sec>
+        <title>Demographic, Clinical, and Psychological Variables</title>
+        <p>Unsupervised S-GIMME subgroups did not differ significantly on age [<italic>F</italic><sub>(2,1.50)</sub> = 1.41, <italic>p</italic> = 0.254], sex (χ2 = 1.972, <italic>p</italic> = 0.373), race/ethnicity (χ2 = 8.295, <italic>p</italic> = 0.405), education level [<italic>F</italic><sub>(2,1.48)</sub> = 0.766, <italic>p</italic> = 0.471], marital (χ2 = 8.255, <italic>p</italic> = 0.409), or employment (χ2 = 0.609, <italic>p</italic> = 0.996) status (see <xref rid="T1" ref-type="table">Table 1</xref>). Similarly, there was no significant difference in the reported mild TBI (χ2 = 0.414, <italic>p</italic> = 0.813) or the proportion of veterans meeting/not-meeting trauma and/or chronic pain criteria (χ2 = 6.208, <italic>p</italic> = 0.400, <bold>Figure 3</bold>). Similarly, no significant differences between subgroup analyses in combat exposure were observed [see <xref rid="T1" ref-type="table">Table 1</xref>, <italic>F</italic><sub>(2,1.50)</sub> = 0.347, <italic>p</italic> = 0.708].</p>
+        <table-wrap position="float" id="T1">
+          <label>Table 1</label>
+          <caption>
+            <p>Subjects' characteristics.</p>
+          </caption>
+          <table frame="hsides" rules="groups">
+            <thead>
+              <tr>
+                <th rowspan="1" colspan="1"/>
+                <th valign="top" align="center" rowspan="1" colspan="1">
+<bold>USG1</bold>
+</th>
+                <th valign="top" align="center" rowspan="1" colspan="1">
+<bold>USG2</bold>
+</th>
+                <th valign="top" align="center" rowspan="1" colspan="1">
+<bold>USG3</bold>
+</th>
+                <th valign="top" align="center" rowspan="1" colspan="1">
+<bold>Fstat/ χ2</bold>
+</th>
+                <th valign="top" align="center" rowspan="1" colspan="1">
+<bold><italic>p</italic>-value</bold>
+</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">N</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">16</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">23</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">15</td>
+                <td rowspan="1" colspan="1"/>
+                <td rowspan="1" colspan="1"/>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">
+<italic>Age</italic>
+</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">34.44 (4.15)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">35.7 (3.43)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">36.4(3.76)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">1.41</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">n.s.</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">
+<italic>Sex, number of subjects (percent)</italic>
+</td>
+                <td rowspan="1" colspan="1"/>
+                <td rowspan="1" colspan="1"/>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="center" rowspan="1" colspan="1">1.972</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">n.s.</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">   Male</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">12(75%)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">21(91%)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">12(80%)</td>
+                <td rowspan="1" colspan="1"/>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">   Female</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">4(25%)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">2(9%)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">3(20%)</td>
+                <td rowspan="1" colspan="1"/>
+                <td rowspan="1" colspan="1"/>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">
+<italic>Ethnicity/Race</italic>
+</td>
+                <td rowspan="1" colspan="1"/>
+                <td rowspan="1" colspan="1"/>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="center" rowspan="1" colspan="1">8.295</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">n.s.</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">   Caucasian</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">6(38%)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">15(68%)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">8(57%)</td>
+                <td rowspan="1" colspan="1"/>
+                <td rowspan="1" colspan="1"/>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">   African-American</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">1(6%)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0(0%)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">1(8%)</td>
+                <td rowspan="1" colspan="1"/>
+                <td rowspan="1" colspan="1"/>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">   Asian/Pacific Islander</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">3(19%)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0(0%)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">1(7%)</td>
+                <td rowspan="1" colspan="1"/>
+                <td rowspan="1" colspan="1"/>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">   Hispanic/Latino</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">2(13%)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">4(18%)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">2(14%)</td>
+                <td rowspan="1" colspan="1"/>
+                <td rowspan="1" colspan="1"/>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">   Mixed</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">4(25%)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">3(14%)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">2(14%)</td>
+                <td rowspan="1" colspan="1"/>
+                <td rowspan="1" colspan="1"/>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">
+<italic>Education</italic>
+</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">14.5(1.16)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">14.91(1.02)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">15.143(1.70)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.766</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">n.s.</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">
+<italic>Marital Status, number of subjects (percent)</italic>
+</td>
+                <td rowspan="1" colspan="1"/>
+                <td rowspan="1" colspan="1"/>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="center" rowspan="1" colspan="1">8.255</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">n.s.</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">   Single</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">1(6%)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">6(26%)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">5(33%)</td>
+                <td rowspan="1" colspan="1"/>
+                <td rowspan="1" colspan="1"/>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">   In a relationship</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">5(31%)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">9(39%)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">5(33%)</td>
+                <td rowspan="1" colspan="1"/>
+                <td rowspan="1" colspan="1"/>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">   Married</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">8(50%)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">5(22%)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">4(27%)</td>
+                <td rowspan="1" colspan="1"/>
+                <td rowspan="1" colspan="1"/>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">   Divorced/separated</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">2(13%)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">2(9%)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0(0%)</td>
+                <td rowspan="1" colspan="1"/>
+                <td rowspan="1" colspan="1"/>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">
+<italic>Employment, number of subjects (percent)</italic>
+</td>
+                <td rowspan="1" colspan="1"/>
+                <td rowspan="1" colspan="1"/>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.609</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">n.s.</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">   Employed</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">12(75%)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">16(69%)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">10(67%)</td>
+                <td rowspan="1" colspan="1"/>
+                <td rowspan="1" colspan="1"/>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">   Out of work</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">1(6%)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">2(9%)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">2(13%)</td>
+                <td rowspan="1" colspan="1"/>
+                <td rowspan="1" colspan="1"/>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">   Student</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">2(13%)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">3(13%)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">2(13%)</td>
+                <td rowspan="1" colspan="1"/>
+                <td rowspan="1" colspan="1"/>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">   Other</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">1(6%)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">2(9%)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">1(7%)</td>
+                <td rowspan="1" colspan="1"/>
+                <td rowspan="1" colspan="1"/>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">
+<italic>Clinical and Psychological Variables</italic>
+</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">
+<italic>Mild TBI, number of subjects (percent)</italic>
+</td>
+                <td rowspan="1" colspan="1"/>
+                <td rowspan="1" colspan="1"/>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.414</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">n.s.</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">   Yes</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">9(56%)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">13(57%)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">7(47%)</td>
+                <td rowspan="1" colspan="1"/>
+                <td rowspan="1" colspan="1"/>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">   No</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">7(44%)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">10(43%)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">8(53%)</td>
+                <td rowspan="1" colspan="1"/>
+                <td rowspan="1" colspan="1"/>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">
+<italic>PTSD Checklist (PCL)</italic>
+</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">9.81(9.16)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">12.34(15.76)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">24.53(20.11)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">4.107</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">&lt;0.05</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">
+<italic>Pain Severity (BPI)</italic>
+</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">2.05(2.26)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">1.93(2.06)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">3.44(2.42)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">2.220</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">n.s.</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">
+<italic>Pain Interference (BPI)</italic>
+</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">1.59(2.31)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">1.67(2.02)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">3.02(2.24)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">2.161</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">n.s.</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">
+<italic>Beck Depression Inventory2 (BDI2)</italic>
+</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">7.31(7.31)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">12.17(11.59)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">16.13(13.18)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">2.815</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.069</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">
+<italic>Pain Catastrophizing Scale (PCS)</italic>
+</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">8.44(7.32)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">9.61(9.99)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">18.4(14.47)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">3.963</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">&lt;0.05</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">
+<italic>Pain Anxiety Symptoms Scale (PASS)</italic>
+</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">14.25(10.77)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">17.39(15.79)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">28.47(17.17)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">4.421</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">&lt;0.05</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">
+<italic>Combat Exposure Scale (CES)</italic>
+</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">12.25(10.83)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">11.13(12.14)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">13.27(12.87)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.347</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">n.s.</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <p><italic>USG [1,2,3]– unsupervised GIMME subgroups based on effective connectivity path similarities; BPI – brief pain inventory; n.s. p &gt; 0.05</italic>.</p>
+          </table-wrap-foot>
+        </table-wrap>
+        <p>Conversely, unsupervised S-GIMME subgroups differed significantly on several clinical symptoms and psychological measures (see <xref rid="T1" ref-type="table">Table 1</xref>). This is graphically demonstrated by the radial plot in <xref rid="F2" ref-type="fig">Figure 2</xref>.</p>
+        <fig position="float" id="F2">
+          <label>Figure 2</label>
+          <caption>
+            <p>Graphic representation of clinical and psychological variables among the three subgroups identified by unsupervised S-GIMME based on effective connectivity paths at rest. Subgroup 1 [USG1, yellow, <italic>n</italic> = 16], subgroup 2 [USG2, indigo, <italic>n</italic> = 23], and subgroup 3 [USG3, sky blue, <italic>n</italic> = 15]. The radar plot is bounded by the minimum and maximum scores in the current sample for each scale (these averages for each subgroup are displayed for reference). c.f. <xref rid="T1" ref-type="table">Table 1</xref> for statistical details. Severity, pain severity; Interference, pain interference; both from Brief Pain Inventory (BPI); PCS, Pain Catastrophizing Scale; PCL-5, PTSD Checklist version 5; BDI-2, Beck Depression Inventory-2; PASS-20, Pain Anxiety Symptoms Scale; c.f. text for details.</p>
+          </caption>
+          <graphic xlink:href="fpain-03-871961-g0002" position="float"/>
+        </fig>
+        <p>As can be seen in <xref rid="F2" ref-type="fig">Figure 2</xref>, USG1 was characterized by low scores of pain and psychological symptoms, USG3 was characterized by high scores of pain and psychological symptoms with USG2 being in the middle. GIMME subgroup differences for pain and trauma symptoms are shown in <xref rid="F3" ref-type="fig">Figure 3A</xref>. As determined by one-way ANCOVA with GIMME subgroup as a fixed factor and sex as a covariate, PCL-5 scores were significantly different [<italic>F</italic><sub>(2,1.50)</sub> = 4.107, <italic>p</italic> = 0.022]. Dunn's <italic>post-hoc</italic> comparisons of the GIMME subgroups indicated that the mean in the USG3 group was significantly higher than that in the USG1 and USG2 (<italic>p</italic> &lt; 0.05) groups, and there was no significant difference between USG1 and USG2 (<italic>p</italic> = 0.469). Both pain severity and pain interference showed similar differences, yet ANCOVA only showed a tendency for significant GIMME subgroup effect while co-varying for sex [pain severity: <italic>F</italic><sub>(2,1.50)</sub> = 2.220, <italic>p</italic> = 0.1; pain interference: <italic>F</italic><sub>(2,1.50)</sub> = 2.161, <italic>p</italic> = 0.1]. Since we hypothesized <italic>a priori</italic> that GIMME subgroups would differ in pain and/or trauma symptoms, we performed Dunn's <italic>post-hoc</italic> comparisons of the GIMME subgroups. <italic>Post-hoc</italic> analysis indicated that the mean in the USG3 group was significantly higher than that in the USG2 for pain intensity and pain interference (<italic>p</italic> &lt; 0.05). Relative to USG1, USG3 was significantly higher on pain interference (<italic>p</italic> &lt; 0.05) and approached significance on pain intensity (<italic>p</italic> = 0.055). There were no significant differences in either pain intensity or pain interference between USG1 and USG2 (<italic>p</italic>-values &gt;0.5). When PCS, BDI-2, and PASS-20 scores were examined, the one-way ANCOVA with GIMME subgroup as a fixed factor and sex as a covariate showed that PCS scores, as well as the PASS-20 scores [<sub>F(2, 1.50)</sub> = 4.421, <italic>p</italic> = 0.017], were significantly different [<italic>F</italic><sub>(2,1.50)</sub> = 3.963, <italic>p</italic> = 0.025], whereas BDI-2 scores approached significance [<italic>F</italic><sub>(2,1.50)</sub> = 2.815, <italic>p</italic> = 0.069] to be different between the three GIMME subgroups.</p>
+        <fig position="float" id="F3">
+          <label>Figure 3</label>
+          <caption>
+            <p>Clinical <bold>(A)</bold> and diagnostic <bold>(B)</bold> characteristics of GIMME subgroups identified by unsupervised S-GIMME based on effective connectivity paths at rest. <bold>(A)</bold> Box plots of trauma and pain symptoms (marginal mean ± SE) for each of the subgroups. (top) PCL scores were significantly different [<italic>F</italic>
+<sub>(2,1.50)</sub> = 4.107, <italic>p</italic> &lt; 0.05], ANCOVA (GIMME subgroup as a fixed factor and sex as covariate); Dunn's <italic>post-hoc</italic> comparisons indicated that the mean in the USG3 group was significantly higher than that in the USG1 and USG2 (<italic>p</italic>-values &lt; 0.05), and there was no significant difference between USG1 and USG2 (<italic>p</italic> = 0.469). (middle) Pain severity (from BPI) showed a tendency for a significant GIMME subgroup effect while covarying for sex [<italic>F</italic><sub>(2,1.50)</sub> = 2.220, <italic>p</italic> = 0.1]; Dunn's <italic>post-hoc</italic> comparisons indicated that the mean in the USG3 group was significantly higher than that in the USG2 (<italic>p</italic> &lt; 0.05) and approached significance when compared with USG1 (<italic>p</italic> = 0.055); there was no significant difference between USG1 and USG2 (<italic>p</italic>-values &gt; 0.5) (bottom) Pain interference (from BPI) showed a tendency for significant GIMME subgroup effect while covarying for sex [<italic>F</italic><sub>(2,1.50)</sub> = 2.161, <italic>p</italic> = 0.1]. Dunn's <italic>post-hoc</italic> comparisons indicated that the mean in the USG3 group was significantly higher than that in the USG2 and USG1 (<italic>p</italic> &lt; 0.05). There was no significant difference between USG1 and USG2 (<italic>p</italic>-values &gt; 0.5). <bold>(B)</bold> Treemap charts show a hierarchical view of tentative diagnostic groupings within each of the GIMME subgroups. The symptoms-based approach was utilized in the current work; nevertheless, each subject was also given a tentative group assignment based on meeting/not-meeting trauma criterion A, and/or chronic pain diagnosis, as recommended (<xref rid="B45" ref-type="bibr">45</xref>, <xref rid="B46" ref-type="bibr">46</xref>). NONE—no pain/no trauma, PAIN—pain/no trauma, TRAUMA—trauma/no pain, and BOTH—pain/trauma. The proportion of each diagnostic group within each GIMME subgroup is shown. There was no significant differences between subgroup analyses in the proportion of veterans meeting/not-meeting trauma and/or chronic pain criteria (χ2 = 6.208, <italic>p</italic> = 0.400); * &lt;0.05, c.f. <xref rid="T1" ref-type="table">Table 1</xref> and text for details.</p>
+          </caption>
+          <graphic xlink:href="fpain-03-871961-g0003" position="float"/>
+        </fig>
+      </sec>
+      <sec>
+        <title>Exploratory Correlational Analysis</title>
+        <p>To examine which connections were indicative of a vulnerability or resiliency, GIMME subgroup-specific correlations were performed between pain and trauma scores and individual path estimates for subgroup-unique connections. For the USG1, or the group with the minimal levels of psychiatric and pain symptoms, we found that the NAc connection to the insula, which was unique to this group, was inversely correlated with pain interference (ρ = -0.631, <italic>p</italic> = 0.004) and PCS (ρ = −0.722, <italic>p</italic> &lt; 0.001) scores (<xref rid="F4" ref-type="fig">Figures 4A,B</xref>). No other subgroup-specific connections showed a significant relationship with the psychological and/or pain measures.</p>
+        <fig position="float" id="F4">
+          <label>Figure 4</label>
+          <caption>
+            <p>Exploratory correlations: <bold>(A)</bold> Insula—Accumbens Connectivity and Pain Catastrophizing Association in USG1. NAc connection to the insula, which was unique to subgroup USG1, or the group with the minimal levels of psychological and pain symptoms, was inversely and significantly correlated with pain catastrophizing scores (PCS) (ρ = −0.722, <italic>p</italic> &lt; 0.001). The Scatter plot (middle) shows Pearson's correlations for a visual demonstration. Density plots for NAc to insula connectivity (left) and PCS scores (right) within USG1 are shown. <bold>(B)</bold> Insula—Accumbens and Pain Interference Association in USG1. NAc connection to the insula, which was unique to subgroup USG1, was inversely and significantly correlated with pain interference scores (ρ = -0.631, <italic>p</italic> = 0.004). The Scatter plot (middle) shows Pearson's correlations for a visual demonstration. Density plots for NAc to insula connectivity (left) and interference scores (right) are shown. No other subgroup-specific connections showed a significant relationship with the psychological and/or pain measures. ** &lt;0.01, *** &lt;0.001; PCS, Pain Catastrophizing Scale; Interference, pain interference measure from Brief Pain Inventory (BPI).</p>
+          </caption>
+          <graphic xlink:href="fpain-03-871961-g0004" position="float"/>
+        </fig>
+      </sec>
+    </sec>
+    <sec sec-type="discussion" id="s4">
+      <title>Discussion</title>
+      <p>The present study reports new findings of unique functional connectivity patterns associated with pain and trauma symptoms during rest in a sample of veterans with a spectrum of pain and trauma symptoms. Using an unsupervised modeling approach, we identified unique connectivity patterns in these veterans at rest. Specifically, we found three separate subgroups showing different functional connectivity between the chosen ROIs that play an important role in pain, reward, and trauma (<xref rid="B52" ref-type="bibr">52</xref>–<xref rid="B55" ref-type="bibr">55</xref>), despite having similar demographic and clinical diagnostic characteristics. This study suggests that even though they may have similar demographic and diagnostic characteristics, there may be neurobiologically dissociable biotypes with different mechanisms for handling pain and trauma. This may have implications for the determination of appropriate biotype-specific interventions that target these neurological systems.</p>
+      <p>We found that the subgroups, defined by unsupervised S-GIMME as showing differential functional connectivity patterns at rest, were clearly separable in their clinical symptoms of trauma and pain. Specifically, we found that the group characterized by the lowest pain and trauma scores (USG1), or the least clinically impaired subgroup was highly connected overall, i.e., compared to the other two groups, USG1 showed more subgroup-unique connections, and overlapping functional connections with the other subgroups. This so-called “low symptom group” was characterized by functional connectivity from NAc, ACC, and PCC to the insula, and also from the thalamus to ACC and bidirectional interconnections between the thalamus and PCC. The insula plays a pivotal role in emotional and interoceptive processing (<xref rid="B52" ref-type="bibr">52</xref>, <xref rid="B61" ref-type="bibr">61</xref>, <xref rid="B62" ref-type="bibr">62</xref>). Besides its proposed role as an interoceptive sensory cortex (<xref rid="B63" ref-type="bibr">63</xref>, <xref rid="B64" ref-type="bibr">64</xref>), substantial evidence supports the notion that the insula represents a hub for dynamic switching between different networks, i.e., based on the emotional and interoceptive needs of an organism, the insula helps to access attention, working memory, and other higher-order cognitive processes (<xref rid="B62" ref-type="bibr">62</xref>, <xref rid="B65" ref-type="bibr">65</xref>). Not surprisingly, many pain and psychiatric disorders are thought to be related to faulty insula connectivity (<xref rid="B66" ref-type="bibr">66</xref>–<xref rid="B71" ref-type="bibr">71</xref>). Such interpretation is consistent with our findings of the insula being a hub for connectivity at rest in the “low symptom,” i.e., the least clinically impaired, subgroup. Interestingly, this “low symptom” subgroup is the only group that showed unique connectivity from NAc to the insula, which also was inversely correlated with pain interference and PCS scores in this subgroup. In other words, those with the lowest pain catastrophizing and pain interference scores had the highest functional connectivity from NAc to the insula, potentially suggesting the protective role of such connections. The NAc is at the core of the reward system, as it integrates emotional information to modulate motivated behavior (<xref rid="B72" ref-type="bibr">72</xref>, <xref rid="B73" ref-type="bibr">73</xref>). In addition, a meta-analysis of healthy subjects has shown that spontaneous activity in the NAc predicts activity in the insula, suggesting consistent co-activation among these regions (<xref rid="B74" ref-type="bibr">74</xref>). Our study shows that co-activation of these regions plays an important role in discriminating between anticipating more painful vs. anticipating less painful experimental pain stimuli (<xref rid="B75" ref-type="bibr">75</xref>). This is consistent with the reported activation of NAc during pain predictive cues, the anticipation of pain relief, and the reported dopaminergic inputs to NAc during both reward and punishment (<xref rid="B76" ref-type="bibr">76</xref>–<xref rid="B80" ref-type="bibr">80</xref>). Furthermore, the motivation-decision model of pain states that actions are influenced by decisions about whether to approach something pleasant (a reward) or avoid something unpleasant (pain/loss) (<xref rid="B53" ref-type="bibr">53</xref>). We believe that NAc–insula connection provides a balance between pain and pain relief, and functional connection between these regions at rest thus underlies a healthy (or resilient) way to respond to stressful events such as trauma and/or pain.</p>
+      <p>With regard to the thalamus to ACC connectivity that was also unique in the “low symptom” subgroup, both the ACC and the thalamus are implicated in the affective/emotional aspects of pain and are thought to play important roles in pain modulation. More specifically, evidence suggests that, in response to pain, the ACC engages lower parts of the descending pain control system (i.e., PAG, hypothalamus, and rostral ventromedial medulla), which in turn exert an opioid-dependent inhibitory influence on spinal nociceptive processing, reducing nociceptive input to thalamic and cortical regions, and ultimately leading to a reduced pain experience (<xref rid="B81" ref-type="bibr">81</xref>). As such, it is possible that our observation of greater connectivity between the ACC and the thalamus in the “low symptom” subgroup could reflect the proper functioning of the descending analgesic pathway that is ready to engage in the setting of painful/traumatic experiences.</p>
+      <p>We found that the GIMME subgroup that demonstrated the highest pain and trauma symptoms, or the comorbid “high symptom” subgroup, reported the highest pain catastrophizing, pain anxiety, and depressive symptom severity scores and was characterized by functional connectivity from the thalamus to NAc and from PCC to NAc. Considering the above fact, the lack of insula connectivity with NAc and with other regions in this subgroup can potentially underlie the highest clinical impairment in this subgroup. The fact that NAc appears to be a hub for connectivity at rest in the “high symptom” subgroup may not be surprising, considering the role that NAc plays in chronification of pain in both human and animal models (<xref rid="B25" ref-type="bibr">25</xref>, <xref rid="B82" ref-type="bibr">82</xref>–<xref rid="B85" ref-type="bibr">85</xref>). Furthermore, chronic pain patients suffer from anhedonia, decreased motivation, and exhibit impaired value-based decision-making—all properties of the cortico-striatal system (<xref rid="B86" ref-type="bibr">86</xref>–<xref rid="B88" ref-type="bibr">88</xref>). Not surprisingly, decreased motivation and impaired valence-based processing are typical for PTSD (<xref rid="B17" ref-type="bibr">17</xref>), and NAc circuitry is implicated in post-trauma active avoidance (<xref rid="B89" ref-type="bibr">89</xref>). The thalamus is a central hub of homeostatic information (<xref rid="B90" ref-type="bibr">90</xref>), whereas the PCC is implicated in regulating the focus of attention (e.g., internal vs. external) (<xref rid="B91" ref-type="bibr">91</xref>). Greater NAc connectivity between these regions in this “high symptom” subgroup may work jointly to influence pain catastrophizing and pain anxiety <italic>via</italic> the increased projection of internal pain states and the increased demand to direct internal attention away from such states.</p>
+      <p>We also found that “low symptom” and “high symptom” subgroups had overlapping functional connections from PCC to ACC. We speculated that increased connectivity here underlies coping with stress, yet in one group, it is an adaptive flexible response, such as mind wandering and cognitive control, whereas in another, it is maladaptive, conveying learned helplessness (<xref rid="B92" ref-type="bibr">92</xref>).</p>
+      <p>Our model-free approach identified another subgroup that was characterized by low pain and trauma symptoms, similar to the “low symptom” subgroup, but was functionally separated from the “low symptom” and “high symptoms” subgroups. This, so-called, “medium symptom” subgroup showed unique connections from ACC to PCC. PCC is a key part of DMN). More DMN connectivity in this group can likely be understood in the context of DMN regulatory response to pain, depression, and trauma. Evidence within the broader chronic pain literature suggests that stronger DMN connectivity may reflect an enhanced ability to engage in mind wandering (i.e., attention fluctuating away from the present sensory environment) (<xref rid="B93" ref-type="bibr">93</xref>, <xref rid="B94" ref-type="bibr">94</xref>), thereby decreasing the salience of pain (<xref rid="B95" ref-type="bibr">95</xref>, <xref rid="B96" ref-type="bibr">96</xref>). Therefore, it is possible that our analysis revealed a subgroup that is different from the “low symptom” subgroup by being able to disengage from pain and/or trauma through avoidance and/or dissociation, a process often associated with pain, trauma, and depression (<xref rid="B13" ref-type="bibr">13</xref>, <xref rid="B15" ref-type="bibr">15</xref>, <xref rid="B16" ref-type="bibr">16</xref>, <xref rid="B97" ref-type="bibr">97</xref>). This would result in an increased ability to wander the mind away from painful and traumatic experiences and thus decrease their immediate salience. Avoidant and suppressive responses may alleviate distress in the short term but, in the long term, may become maladaptive and in fact exacerbate emotional behaviors and interfere with one's ability to extinguish fear responses (<xref rid="B98" ref-type="bibr">98</xref>), potentially creating neural vulnerability for pain and trauma chronification. Of note, it has also been suggested that within DMN and to PCC connectivity in the context of pain could reflect pain rumination (i.e., perseverative negative thinking about pain) (<xref rid="B99" ref-type="bibr">99</xref>), yet this interpretation is less likely since this group did not demonstrate heightened pain or trauma symptoms. We also found that this “medium symptom” subgroup had overlapping functional connections with the “high symptom” subgroup, i.e., the group with the highest clinical impairment. These overlapping functional connections were from insula to ACC. With regard to insula–ACC connectivity, mechanistically, increased connections between limbic sensory cortex (insula) and limbic motor cortex (cingulate) convey stronger affective experience (<xref rid="B62" ref-type="bibr">62</xref>, <xref rid="B100" ref-type="bibr">100</xref>) and increased motivation to modulate feeling of pain, and we have previously shown that weaker connections during experimental pain task are associated with increased subjective pain and avoidant brain response in those with combat trauma and PTSD (<xref rid="B16" ref-type="bibr">16</xref>). Thus, it is likely, that the increased insula–ACC connectivity in these subgroups underlies avoidant response to pain and trauma, yet in the “medium symptom” subgroup, the avoidant response is effective in reducing subjective experience.</p>
+      <p>We hypothesized that the model-free approach would identify specific connectivity patterns for increased pain, increased trauma, and their overlap. We did not, however, observe pain-specific vs. trauma-specific circuits in our heterogeneous sample, but the degree of symptoms was driving our subgroup differences. Note that the incidence of meeting the criteria for pain and/or trauma in our sample was not different among the subgroups. This supports the RDoC transdiagnostic notion (<xref rid="B29" ref-type="bibr">29</xref>). It is also of note that patients and veterans, in particular, rarely present with a single disorder but often with multiple comorbidities and that treatments tested in uncomplicated patients often fail in clinical settings. This potentially more generalizable approach may direct choices for various non-opioid interventions and need to be tested in the future.</p>
+      <p>Limitations of the current study include the use of a cross-sectional design, which restricted our ability to draw conclusions as to whether the brain findings represent a vulnerability to, or impact of, chronic pain and/or trauma. It is also important to note that our sample had relatively high levels of education, and although this demographic factor did not differ between groups, its limited range may reduce the generalizability of these findings. Similarly, the proportion of women in this study was low; thus, current findings may not generalize to the female population. In addition, our overall sample size was relatively small but is comparable with other recent studies using rs-fMRI (<xref rid="B28" ref-type="bibr">28</xref>). Furthermore, GIMME has been shown to be robust with small sample sizes, which suggests that this is an ideal method for investigations with challenging-to-recruit patient populations. Nonetheless, future work with larger samples will be required to determine if larger samples will also find similar subtypes as those observed in our study and to probe the unique within-subgroup connectivity profiles. In addition, we used S-GIMME, which is a version of uSEM that uses time-series analysis with an SEM framework (<xref rid="B36" ref-type="bibr">36</xref>). Although it offers an improvement over simple functional connectivity models (e.g., Pearson's correlation and distance measures) by providing directional and causal relationships between networks (<xref rid="B32" ref-type="bibr">32</xref>, <xref rid="B33" ref-type="bibr">33</xref>, <xref rid="B101" ref-type="bibr">101</xref>), it also has several limitations. These include statistical dependence of multiple features, reduced equivalency with other methods, and a lower maximum of allowable features in the model (due to the increased computational load &lt;20 lagged and contemporaneous features are allowed into the model). Nevertheless, this approach, when combined with the RDoC approach, provides a unique opportunity to understand unique functional brain connectivity as it maps to pain and trauma symptoms in heterogeneous samples.</p>
+    </sec>
+    <sec sec-type="conclusions" id="s5">
+      <title>Conclusions</title>
+      <p>We report novel evidence of unique functional connectivity patterns associated with pain and trauma symptoms in a sample of veterans. Using an unsupervised approach rather than predefined diagnostic grouping, we identified a unique and overlapping pattern of functional connectivity at rest that represented subjects with differential clinical symptoms subtypes. Our “low symptom” subtype that was characterized by integrated connectivity patterns between the networks, both in the hub (i.e., insula) and pain modulatory networks, may be consistent with the resilient biotype following trauma. Conversely, the “high symptom” subtype was the most interesting candidate as a risk-related biotype. We believe that specific connections or whole-brain patterns are important for determining vulnerability or resilience subtypes and may be used to classify future samples.</p>
+    </sec>
+    <sec sec-type="data-availability" id="s6">
+      <title>Data Availability Statement</title>
+      <p>The raw data supporting the conclusions of this article will be made available by the authors, without undue reservation.</p>
+    </sec>
+    <sec id="s7">
+      <title>Ethics Statement</title>
+      <p>The studies involving human participants were reviewed and approved by University of California San Francisco Human Research Protection Program and Veterans Affairs San Francisco Healthcare System Research and Development Committee. The patients/participants provided their written informed consent to participate in this study.</p>
+    </sec>
+    <sec id="s8">
+      <title>Author Contributions</title>
+      <p>IS, ADS, and ANS were all integral in the acquisition of data, provided input for the analysis and interpretation of the data, and gave final approval of the version to be published. All authors contributed to the article and approved the submitted version.</p>
+    </sec>
+    <sec sec-type="funding-information" id="s9">
+      <title>Funding</title>
+      <p>This work was supported in part by the United States Department of Veterans Affairs I01-CX-000816, I01-CX- 001652, I01-CX001542, and I01-CX-001762, the National Institute of Arthritis and Musculoskeletal and Skin Diseases of the National Institutes of Health under Award Number U19AR076737, and the Painless Research Foundation.</p>
+    </sec>
+    <sec sec-type="COI-statement" id="conf1">
+      <title>Conflict of Interest</title>
+      <p>The authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.</p>
+    </sec>
+    <sec sec-type="disclaimer" id="s10">
+      <title>Publisher's Note</title>
+      <p>All claims expressed in this article are solely those of the authors and do not necessarily represent those of their affiliated organizations, or those of the publisher, the editors and the reviewers. Any product that may be evaluated in this article, or claim that may be made by its manufacturer, is not guaranteed or endorsed by the publisher.</p>
+    </sec>
+  </body>
+  <back>
+    <ref-list>
+      <title>References</title>
+      <ref id="B1">
+        <label>1.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Lew</surname><given-names>HL</given-names></name><name><surname>Otis</surname><given-names>JD</given-names></name><name><surname>Tun</surname><given-names>C</given-names></name><name><surname>Kerns</surname><given-names>RD</given-names></name><name><surname>Clark</surname><given-names>ME</given-names></name><name><surname>Cifu</surname><given-names>DX</given-names></name></person-group>. <article-title>Prevalence of chronic pain, posttraumatic stress disorder, and persistent postconcussive symptoms in OIF/OEF veterans: polytrauma clinical triad</article-title>. <source>J Rehabil Res Dev</source>. (<year>2009</year>) <volume>46</volume>:<fpage>697</fpage>–<lpage>702</lpage>. <pub-id pub-id-type="doi">10.1682/JRRD.2009.01.0006</pub-id><pub-id pub-id-type="pmid">20104399</pub-id></mixed-citation>
+      </ref>
+      <ref id="B2">
+        <label>2.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Fishbain</surname><given-names>DA</given-names></name><name><surname>Pulikal</surname><given-names>A</given-names></name><name><surname>Lewis</surname><given-names>JE</given-names></name><name><surname>Gao</surname><given-names>J</given-names></name></person-group>. <article-title>Chronic pain types differ in their reported prevalence of Post -Traumatic Stress Disorder (PTSD) and there is consistent evidence that chronic pain is associated with ptsd: an evidence-based structured systematic review</article-title>. <source>Pain Med.</source> (<year>2017</year>) <volume>18</volume>:<fpage>711</fpage>–<lpage>35</lpage>. <pub-id pub-id-type="doi">10.1093/pm/pnw065</pub-id><pub-id pub-id-type="pmid">27188666</pub-id></mixed-citation>
+      </ref>
+      <ref id="B3">
+        <label>3.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Webb</surname><given-names>EK</given-names></name><name><surname>Huggins</surname><given-names>AA</given-names></name><name><surname>Belleau</surname><given-names>EL</given-names></name><name><surname>Taubitz</surname><given-names>LE</given-names></name><name><surname>Hanson</surname><given-names>JL</given-names></name><name><surname>deRoon-Cassini</surname><given-names>TA</given-names></name><etal/></person-group>. <article-title>Acute posttrauma resting-state functional connectivity of periaqueductal gray prospectively predicts posttraumatic stress disorder symptoms</article-title>. <source>Biol Psychiatry Cogn Neurosci Neuroimaging</source>. (<year>2020</year>) <volume>5</volume>:<fpage>891</fpage>–<lpage>900</lpage>
+<pub-id pub-id-type="doi">10.1016/j.bpsc.2020.03.004</pub-id><pub-id pub-id-type="pmid">32389746</pub-id></mixed-citation>
+      </ref>
+      <ref id="B4">
+        <label>4.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Linnemorken</surname><given-names>LTB</given-names></name><name><surname>Granan</surname><given-names>LP</given-names></name><name><surname>Reme</surname><given-names>SE</given-names></name></person-group>. <article-title>Prevalence of posttraumatic stress symptoms and associated characteristics among patients with chronic pain conditions in a Norwegian University Hospital outpatient pain clinic</article-title>. <source>Front Psychol</source>. (<year>2020</year>) <volume>11</volume>:<fpage>749</fpage>. <pub-id pub-id-type="doi">10.3389/fpsyg.2020.00749</pub-id><pub-id pub-id-type="pmid">32431641</pub-id></mixed-citation>
+      </ref>
+      <ref id="B5">
+        <label>5.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Otis</surname><given-names>JD</given-names></name><name><surname>Keane</surname><given-names>TM</given-names></name><name><surname>Kerns</surname><given-names>RD</given-names></name></person-group>. <article-title>An examination of the relationship between chronic pain and post-traumatic stress disorder</article-title>. <source>J Rehabil Res Dev</source>. (<year>2003</year>) <volume>40</volume>:<fpage>397</fpage>–<lpage>405</lpage>. <pub-id pub-id-type="doi">10.1682/JRRD.2003.09.0397</pub-id><pub-id pub-id-type="pmid">15080224</pub-id></mixed-citation>
+      </ref>
+      <ref id="B6">
+        <label>6.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Asmundson</surname><given-names>GJ</given-names></name><name><surname>Katz</surname><given-names>J</given-names></name></person-group>. <article-title>Understanding the co-occurrence of anxiety disorders and chronic pain: state-of-the-art</article-title>. <source>Depress Anxiety.</source> (<year>2009</year>) <volume>26</volume>:<fpage>888</fpage>–<lpage>901</lpage>. <pub-id pub-id-type="doi">10.1002/da.20600</pub-id><pub-id pub-id-type="pmid">19691031</pub-id></mixed-citation>
+      </ref>
+      <ref id="B7">
+        <label>7.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Higgins</surname><given-names>DM</given-names></name><name><surname>Kerns</surname><given-names>RD</given-names></name><name><surname>Brandt</surname><given-names>CA</given-names></name><name><surname>Haskell</surname><given-names>SG</given-names></name><name><surname>Bathulapalli</surname><given-names>H</given-names></name><name><surname>Gilliam</surname><given-names>W</given-names></name><etal/></person-group>. <article-title>Persistent pain and comorbidity among operation enduring freedom/operation iraqi freedom/operation new dawn veterans</article-title>. <source>Pain Med</source>. (<year>2014</year>) <volume>15</volume>:<fpage>782</fpage>-<lpage>90</lpage>. <pub-id pub-id-type="doi">10.1111/pme.12388</pub-id><pub-id pub-id-type="pmid">24548466</pub-id></mixed-citation>
+      </ref>
+      <ref id="B8">
+        <label>8.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Seal</surname><given-names>KH</given-names></name><name><surname>Shi</surname><given-names>Y</given-names></name><name><surname>Cohen</surname><given-names>G</given-names></name><name><surname>Cohen</surname><given-names>BE</given-names></name><name><surname>Maguen</surname><given-names>S</given-names></name><name><surname>Krebs</surname><given-names>EE</given-names></name><etal/></person-group>. <article-title>Association of mental health disorders with prescription opioids and high-risk opioid use in US veterans of Iraq and Afghanistan</article-title>. <source>JAMA.</source> (<year>2012</year>) <volume>307</volume>:<fpage>940</fpage>–<lpage>7</lpage>. <pub-id pub-id-type="doi">10.1001/jama.2012.234</pub-id><pub-id pub-id-type="pmid">22396516</pub-id></mixed-citation>
+      </ref>
+      <ref id="B9">
+        <label>9.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Ng</surname><given-names>SK</given-names></name><name><surname>Urquhart</surname><given-names>DM</given-names></name><name><surname>Fitzgerald</surname><given-names>PB</given-names></name><name><surname>Cicuttini</surname><given-names>FM</given-names></name><name><surname>Hussain</surname><given-names>SM</given-names></name><name><surname>Fitzgibbon</surname><given-names>BM</given-names></name></person-group>. <article-title>The relationship between structural and functional brain changes and altered emotion and cognition in chronic low back pain brain changes: a systematic review of MRI and fMRI Studies</article-title>. <source>Clin J Pain</source>. (<year>2018</year>) <volume>34</volume>:<fpage>237</fpage>–<lpage>61</lpage>. <pub-id pub-id-type="doi">10.1097/AJP.0000000000000534</pub-id><pub-id pub-id-type="pmid">28719509</pub-id></mixed-citation>
+      </ref>
+      <ref id="B10">
+        <label>10.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Nutt</surname><given-names>DJ</given-names></name><name><surname>Malizia</surname><given-names>AL</given-names></name></person-group>. <article-title>Structural and functional brain changes in posttraumatic stress disorder</article-title>. <source>J Clin Psychiatry</source>. (<year>2004</year>) <volume>65</volume>:<fpage>11</fpage>−<lpage>7</lpage>.<pub-id pub-id-type="pmid">14728092</pub-id></mixed-citation>
+      </ref>
+      <ref id="B11">
+        <label>11.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Moeller-Bertram</surname><given-names>T</given-names></name><name><surname>Strigo</surname><given-names>IA</given-names></name><name><surname>Simmons</surname><given-names>AN</given-names></name><name><surname>Schilling</surname><given-names>JM</given-names></name><name><surname>Patel</surname><given-names>P</given-names></name><name><surname>Baker</surname><given-names>DG</given-names></name></person-group>. <article-title>Evidence for acute central sensitization to prolonged experimental pain in posttraumatic stress disorder</article-title>. <source>Pain Med</source>. (<year>2014</year>) <volume>15</volume>:<fpage>762</fpage>–<lpage>71</lpage>. <pub-id pub-id-type="doi">10.1111/pme.12424</pub-id><pub-id pub-id-type="pmid">24738563</pub-id></mixed-citation>
+      </ref>
+      <ref id="B12">
+        <label>12.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Tesarz</surname><given-names>J</given-names></name><name><surname>Baumeister</surname><given-names>D</given-names></name><name><surname>Andersen</surname><given-names>TE</given-names></name><name><surname>Vaegter</surname><given-names>HB</given-names></name></person-group>. <article-title>Pain perception and processing in individuals with posttraumatic stress disorder: a systematic review with meta-analysis</article-title>. <source>Pain Rep.</source> (<year>2020</year>) <volume>5</volume>:<fpage>e849</fpage>. <pub-id pub-id-type="doi">10.1097/PR9.0000000000000849</pub-id><pub-id pub-id-type="pmid">33490843</pub-id></mixed-citation>
+      </ref>
+      <ref id="B13">
+        <label>13.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Mickleborough</surname><given-names>MJ</given-names></name><name><surname>Daniels</surname><given-names>JK</given-names></name><name><surname>Coupland</surname><given-names>NJ</given-names></name><name><surname>Kao</surname><given-names>R</given-names></name><name><surname>Williamson</surname><given-names>PC</given-names></name><name><surname>Lanius</surname><given-names>UF</given-names></name><etal/></person-group>. <article-title>Effects of trauma-related cues on pain processing in posttraumatic stress disorder: an fMRI investigation</article-title>. <source>J Psychiatry Neurosci</source>. (<year>2011</year>) <volume>36</volume>:<fpage>6</fpage>–<lpage>14</lpage>. <pub-id pub-id-type="doi">10.1503/jpn.080188</pub-id><pub-id pub-id-type="pmid">20964954</pub-id></mixed-citation>
+      </ref>
+      <ref id="B14">
+        <label>14.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Geuze</surname><given-names>E</given-names></name><name><surname>Westenberg</surname><given-names>HG</given-names></name><name><surname>Jochims</surname><given-names>A</given-names></name><name><surname>de Kloet</surname><given-names>CS</given-names></name><name><surname>Bohus</surname><given-names>M</given-names></name><name><surname>Vermetten</surname><given-names>E</given-names></name><etal/></person-group>. <article-title>Altered pain processing in veterans with posttraumatic stress disorder</article-title>. <source>Arch Gen Psychiatry</source>. (<year>2007</year>) <volume>64</volume>:<fpage>76</fpage>–<lpage>85</lpage>. <pub-id pub-id-type="doi">10.1001/archpsyc.64.1.76</pub-id><pub-id pub-id-type="pmid">17199057</pub-id></mixed-citation>
+      </ref>
+      <ref id="B15">
+        <label>15.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Strigo</surname><given-names>IA</given-names></name><name><surname>Simmons</surname><given-names>AN</given-names></name><name><surname>Matthews</surname><given-names>SC</given-names></name><name><surname>Grimes</surname><given-names>EM</given-names></name><name><surname>Allard</surname><given-names>CB</given-names></name><name><surname>Reinhardt</surname><given-names>LE</given-names></name><etal/></person-group>. <article-title>Neural correlates of altered pain response in women with posttraumatic stress disorder from intimate partner violence</article-title>. <source>Biol Psychiatry</source>. (<year>2010</year>) <volume>68</volume>:<fpage>442</fpage>–<lpage>50</lpage>. <pub-id pub-id-type="doi">10.1016/j.biopsych.2010.03.034</pub-id><pub-id pub-id-type="pmid">20553750</pub-id></mixed-citation>
+      </ref>
+      <ref id="B16">
+        <label>16.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Strigo</surname><given-names>IA</given-names></name><name><surname>Spadoni</surname><given-names>AD</given-names></name><name><surname>Inslicht</surname><given-names>SS</given-names></name><name><surname>Simmons</surname><given-names>AN</given-names></name></person-group>. <article-title>Repeated exposure to experimental pain differentiates combat traumatic brain injury with and without post-traumatic stress disorder</article-title>. <source>J Neurotrauma</source>. (<year>2018</year>) <volume>35</volume>:<fpage>297</fpage>–<lpage>307</lpage>. <pub-id pub-id-type="doi">10.1089/neu.2017.5061</pub-id><pub-id pub-id-type="pmid">28931334</pub-id></mixed-citation>
+      </ref>
+      <ref id="B17">
+        <label>17.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Elman</surname><given-names>I</given-names></name><name><surname>Upadhyay</surname><given-names>J</given-names></name><name><surname>Langleben</surname><given-names>DD</given-names></name><name><surname>Albanese</surname><given-names>M</given-names></name><name><surname>Becerra</surname><given-names>L</given-names></name><name><surname>Borsook</surname><given-names>D</given-names></name></person-group>. <article-title>Reward and aversion processing in patients with post-traumatic stress disorder: functional neuroimaging with visual and thermal stimuli</article-title>. <source>Transl Psychiatry.</source> (<year>2018</year>) <volume>8</volume>:<fpage>240</fpage>. <pub-id pub-id-type="doi">10.1038/s41398-018-0292-6</pub-id><pub-id pub-id-type="pmid">30389908</pub-id></mixed-citation>
+      </ref>
+      <ref id="B18">
+        <label>18.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Fox</surname><given-names>MD</given-names></name><name><surname>Greicius</surname><given-names>M</given-names></name></person-group>. <article-title>Clinical applications of resting state functional connectivity</article-title>. <source>Front Syst Neurosci</source>. (<year>2010</year>) <volume>4</volume>:<fpage>19</fpage>. <pub-id pub-id-type="doi">10.3389/fnsys.2010.00019</pub-id><pub-id pub-id-type="pmid">20592951</pub-id></mixed-citation>
+      </ref>
+      <ref id="B19">
+        <label>19.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Apkarian</surname><given-names>AV</given-names></name><name><surname>Baliki</surname><given-names>MN</given-names></name><name><surname>Geha</surname><given-names>PY</given-names></name></person-group>. <article-title>Towards a theory of chronic pain</article-title>. <source>Prog Neurobiol</source>. (<year>2009</year>) <volume>87</volume>:<fpage>81</fpage>–<lpage>97</lpage>. <pub-id pub-id-type="doi">10.1016/j.pneurobio.2008.09.018</pub-id><pub-id pub-id-type="pmid">18952143</pub-id></mixed-citation>
+      </ref>
+      <ref id="B20">
+        <label>20.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Baliki</surname><given-names>MN</given-names></name><name><surname>Baria</surname><given-names>AT</given-names></name><name><surname>Apkarian</surname><given-names>AV</given-names></name></person-group>. <article-title>The cortical rhythms of chronic back pain</article-title>. <source>J Neurosci.</source> (<year>2011</year>) <volume>31</volume>:<fpage>13981</fpage>–<lpage>90</lpage>. <pub-id pub-id-type="doi">10.1523/JNEUROSCI.1984-11.2011</pub-id><pub-id pub-id-type="pmid">21957259</pub-id></mixed-citation>
+      </ref>
+      <ref id="B21">
+        <label>21.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Wasan</surname><given-names>AD</given-names></name><name><surname>Loggia</surname><given-names>ML</given-names></name><name><surname>Chen</surname><given-names>LQ</given-names></name><name><surname>Napadow</surname><given-names>V</given-names></name><name><surname>Kong</surname><given-names>J</given-names></name><name><surname>Gollub</surname><given-names>RL</given-names></name></person-group>. <article-title>Neural correlates of chronic low back pain measured by arterial spin labeling</article-title>. <source>Anesthesiology</source>. (<year>2011</year>) <volume>115</volume>:<fpage>364</fpage>–<lpage>74</lpage> 10.1097/ALN.0b013e318220e880.<pub-id pub-id-type="pmid">21720241</pub-id></mixed-citation>
+      </ref>
+      <ref id="B22">
+        <label>22.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Baliki</surname><given-names>MN</given-names></name><name><surname>Chialvo</surname><given-names>DR</given-names></name><name><surname>Geha</surname><given-names>PY</given-names></name><name><surname>Levy</surname><given-names>RM</given-names></name><name><surname>Harden</surname><given-names>RN</given-names></name><name><surname>Parrish</surname><given-names>TB</given-names></name><etal/></person-group>. <article-title>Chronic pain and the emotional brain: specific brain activity associated with spontaneous fluctuations of intensity of chronic back pain</article-title>. <source>J Neurosci</source>. (<year>2006</year>) <volume>26</volume>:<fpage>12165</fpage>–<lpage>73</lpage>. <pub-id pub-id-type="doi">10.1523/JNEUROSCI.3576-06.2006</pub-id><pub-id pub-id-type="pmid">17122041</pub-id></mixed-citation>
+      </ref>
+      <ref id="B23">
+        <label>23.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Tagliazucchi</surname><given-names>E</given-names></name><name><surname>Balenzuela</surname><given-names>P</given-names></name><name><surname>Fraiman</surname><given-names>D</given-names></name><name><surname>Chialvo</surname><given-names>DR</given-names></name></person-group>. <article-title>Brain resting state is disrupted in chronic back pain patients</article-title>. <source>Neurosci Lett.</source> (<year>2010</year>) <volume>485</volume>:<fpage>26</fpage>–<lpage>31</lpage>. <pub-id pub-id-type="doi">10.1016/j.neulet.2010.08.053</pub-id><pub-id pub-id-type="pmid">20800649</pub-id></mixed-citation>
+      </ref>
+      <ref id="B24">
+        <label>24.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Hashmi</surname><given-names>JA</given-names></name><name><surname>Baliki</surname><given-names>MN</given-names></name><name><surname>Huang</surname><given-names>L</given-names></name><name><surname>Baria</surname><given-names>AT</given-names></name><name><surname>Torbey</surname><given-names>S</given-names></name><name><surname>Hermann</surname><given-names>KM</given-names></name><etal/></person-group>. <article-title>Shape shifting pain: chronification of back pain shifts brain representation from nociceptive to emotional circuits</article-title>. <source>Brain</source>. (<year>2013</year>) <volume>136</volume>:<fpage>2751</fpage>–<lpage>68</lpage>. <pub-id pub-id-type="doi">10.1093/brain/awt211</pub-id><pub-id pub-id-type="pmid">23983029</pub-id></mixed-citation>
+      </ref>
+      <ref id="B25">
+        <label>25.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Baliki</surname><given-names>MN</given-names></name><name><surname>Petre</surname><given-names>B</given-names></name><name><surname>Torbey</surname><given-names>S</given-names></name><name><surname>Herrmann</surname><given-names>KM</given-names></name><name><surname>Huang</surname><given-names>L</given-names></name><name><surname>Schnitzer</surname><given-names>TJ</given-names></name><etal/></person-group>. <article-title>Corticostriatal functional connectivity predicts transition to chronic back pain</article-title>. <source>Nat Neurosci.</source> (<year>2012</year>) <volume>15</volume>:<fpage>1117</fpage>–<lpage>9</lpage>. <pub-id pub-id-type="doi">10.1038/nn.3153</pub-id><pub-id pub-id-type="pmid">22751038</pub-id></mixed-citation>
+      </ref>
+      <ref id="B26">
+        <label>26.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Ceko</surname><given-names>M</given-names></name><name><surname>Shir</surname><given-names>Y</given-names></name><name><surname>Ouellet</surname><given-names>JA</given-names></name><name><surname>Ware</surname><given-names>MA</given-names></name><name><surname>Stone</surname><given-names>LS</given-names></name><name><surname>Seminowicz</surname><given-names>DA</given-names></name></person-group>. <article-title>Partial recovery of abnormal insula and dorsolateral prefrontal connectivity to cognitive networks in chronic low back pain after treatment</article-title>. <source>Hum Brain Mapp.</source> (<year>2015</year>) <volume>36</volume>:<fpage>2075</fpage>–<lpage>92</lpage>. <pub-id pub-id-type="doi">10.1002/hbm.22757</pub-id><pub-id pub-id-type="pmid">25648842</pub-id></mixed-citation>
+      </ref>
+      <ref id="B27">
+        <label>27.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Akiki</surname><given-names>TJ</given-names></name><name><surname>Averill</surname><given-names>CL</given-names></name><name><surname>Abdallah</surname><given-names>CG</given-names></name></person-group>. <article-title>A network-based neurobiological model of PTSD: evidence from structural and functional neuroimaging studies</article-title>. <source>Curr Psychiatry Rep</source>. (<year>2017</year>) <volume>19</volume>:<fpage>81</fpage>. <pub-id pub-id-type="doi">10.1007/s11920-017-0840-4</pub-id><pub-id pub-id-type="pmid">28924828</pub-id></mixed-citation>
+      </ref>
+      <ref id="B28">
+        <label>28.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Stout</surname><given-names>DM</given-names></name><name><surname>Harlé</surname><given-names>KM</given-names></name><name><surname>Norman</surname><given-names>SB</given-names></name><name><surname>Simmons</surname><given-names>AN</given-names></name><name><surname>Spadoni</surname><given-names>AD</given-names></name></person-group>. <article-title>Resting-state connectivity subtype of comorbid PTSD and alcohol use disorder moderates improvement from integrated prolonged exposure therapy in Veterans</article-title>. <source>Psychol Med</source>. (<year>2021</year>) <volume>30</volume>:<fpage>1</fpage>-<lpage>10</lpage>. <pub-id pub-id-type="doi">10.1017/S0033291721001513</pub-id><pub-id pub-id-type="pmid">33926595</pub-id></mixed-citation>
+      </ref>
+      <ref id="B29">
+        <label>29.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Braun</surname><given-names>U</given-names></name><name><surname>Schaefer</surname><given-names>A</given-names></name><name><surname>Betzel</surname><given-names>RF</given-names></name><name><surname>Tost</surname><given-names>H</given-names></name><name><surname>Meyer-Lindenberg</surname><given-names>A</given-names></name><name><surname>Bassett</surname><given-names>DS</given-names></name></person-group>. <article-title>A Meyer-Lindenberg, and DS Bassett From Maps to Multi-dimensional Network Mechanisms of Mental Disorders</article-title>. <source>Neuron.</source> (<year>2018</year>) <volume>97</volume>:<fpage>14</fpage>–<lpage>31</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuron.2017.11.007</pub-id><pub-id pub-id-type="pmid">29301099</pub-id></mixed-citation>
+      </ref>
+      <ref id="B30">
+        <label>30.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Drysdale</surname><given-names>AT</given-names></name><name><surname>Grosenick</surname><given-names>L</given-names></name><name><surname>Downar</surname><given-names>J</given-names></name><name><surname>Dunlop</surname><given-names>K</given-names></name><name><surname>Mansouri</surname><given-names>F</given-names></name><name><surname>Meng</surname><given-names>Y</given-names></name><etal/></person-group>. <article-title>Resting-state connectivity biomarkers define neurophysiological subtypes of depression</article-title>. <source>Nat Med.</source> (<year>2017</year>) <volume>23</volume>:<fpage>28</fpage>–<lpage>38</lpage>. <pub-id pub-id-type="doi">10.1038/nm.4246</pub-id><pub-id pub-id-type="pmid">27918562</pub-id></mixed-citation>
+      </ref>
+      <ref id="B31">
+        <label>31.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zhang</surname><given-names>X</given-names></name><name><surname>Braun</surname><given-names>U</given-names></name><name><surname>Tost</surname><given-names>H</given-names></name><name><surname>Bassett</surname><given-names>DS</given-names></name></person-group>. <article-title>Data-driven approaches to neuroimaging analysis to enhance psychiatric diagnosis and therapy</article-title>. <source>Biol Psychiatry Cogn Neurosci Neuroimaging.</source> (<year>2020</year>) <volume>5</volume>:<fpage>780</fpage>–<lpage>90</lpage>. <pub-id pub-id-type="doi">10.1016/j.bpsc.2019.12.015</pub-id><pub-id pub-id-type="pmid">32127291</pub-id></mixed-citation>
+      </ref>
+      <ref id="B32">
+        <label>32.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Friston</surname><given-names>KJ</given-names></name></person-group>. <article-title>Functional and effective connectivity: a review</article-title>. <source>Brain Connect.</source> (<year>2011</year>) <volume>1</volume>:<fpage>13</fpage>–<lpage>36</lpage>. <pub-id pub-id-type="doi">10.1089/brain.2011.0008</pub-id><pub-id pub-id-type="pmid">22432952</pub-id></mixed-citation>
+      </ref>
+      <ref id="B33">
+        <label>33.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Reid</surname><given-names>AT</given-names></name><name><surname>Headley</surname><given-names>DB</given-names></name><name><surname>Mill</surname><given-names>RD</given-names></name><name><surname>Sanchez-Romero</surname><given-names>R</given-names></name><name><surname>Uddin</surname><given-names>LQ</given-names></name><name><surname>Marinazzo</surname><given-names>D</given-names></name><etal/></person-group>. <article-title>Advancing functional connectivity research from association to causation</article-title>. <source>Nat Neurosci</source>. (<year>2019</year>) <volume>22</volume>:<fpage>1751</fpage>–<lpage>60</lpage>. <pub-id pub-id-type="doi">10.1038/s41593-019-0510-4</pub-id><pub-id pub-id-type="pmid">31611705</pub-id></mixed-citation>
+      </ref>
+      <ref id="B34">
+        <label>34.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Gates</surname><given-names>KM</given-names></name><name><surname>Lane</surname><given-names>ST</given-names></name><name><surname>Varangis</surname><given-names>E</given-names></name><name><surname>Giovanello</surname><given-names>K</given-names></name><name><surname>Guskiewicz</surname><given-names>K</given-names></name></person-group>. <article-title>Unsupervised classification during time-series model building</article-title>. <source>Multivariate Behav Res</source>. (<year>2017</year>) <volume>52</volume>:<fpage>129</fpage>–<lpage>48</lpage>. <pub-id pub-id-type="doi">10.1080/00273171.2016.1256187</pub-id><pub-id pub-id-type="pmid">27925768</pub-id></mixed-citation>
+      </ref>
+      <ref id="B35">
+        <label>35.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Gates</surname><given-names>KM</given-names></name><name><surname>Molenaar</surname><given-names>PC</given-names></name></person-group>. <article-title>Group search algorithm recovers effective connectivity maps for individuals in homogeneous and heterogeneous samples</article-title>. <source>Neuroimage</source>. (<year>2012</year>) <volume>63</volume>:<fpage>310</fpage>–<lpage>9</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2012.06.026</pub-id><pub-id pub-id-type="pmid">22732562</pub-id></mixed-citation>
+      </ref>
+      <ref id="B36">
+        <label>36.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Gates</surname><given-names>KM</given-names></name><name><surname>Molenaar</surname><given-names>PC</given-names></name><name><surname>Hillary</surname><given-names>FG</given-names></name><name><surname>Ram</surname><given-names>N</given-names></name><name><surname>Rovine</surname><given-names>MJ</given-names></name></person-group>. <article-title>Automatic search for fMRI connectivity mapping: an alternative to Granger causality testing using formal equivalences among SEM path modeling, VAR, and unified SEM</article-title>. <source>Neuroimage</source>. (<year>2010</year>) <volume>50</volume>:<fpage>1118</fpage>–<lpage>25</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2009.12.117</pub-id><pub-id pub-id-type="pmid">20060050</pub-id></mixed-citation>
+      </ref>
+      <ref id="B37">
+        <label>37.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Mumford</surname><given-names>JA</given-names></name><name><surname>Ramsey</surname><given-names>JD</given-names></name></person-group>. <article-title>Bayesian networks for fMRI: a primer</article-title>. <source>Neuroimage</source>. (<year>2014</year>) <volume>86</volume>:<fpage>573</fpage>–<lpage>82</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2013.10.020</pub-id><pub-id pub-id-type="pmid">24140939</pub-id></mixed-citation>
+      </ref>
+      <ref id="B38">
+        <label>38.</label>
+        <mixed-citation publication-type="book"><person-group person-group-type="author"><name><surname>Sheehan</surname><given-names>D</given-names></name><name><surname>Janavs</surname><given-names>J</given-names></name><name><surname>Baker</surname><given-names>R</given-names></name><name><surname>Harnett-Sheehan</surname><given-names>K</given-names></name><name><surname>Knapp</surname><given-names>E</given-names></name><name><surname>Sheehan</surname><given-names>M</given-names></name></person-group>. <source>Mini International Neuropsychiatric Interview</source>. <publisher-loc>Tampa</publisher-loc>: <publisher-name>University of South Florida</publisher-name> (<year>1994</year>).</mixed-citation>
+      </ref>
+      <ref id="B39">
+        <label>39.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Cleeland</surname><given-names>CS</given-names></name><name><surname>Ryan</surname><given-names>K</given-names></name></person-group>. <article-title>The brief pain inventory</article-title>. <source>Pain Res Group</source>. (<year>1991</year>) <volume>28</volume>:<fpage>143</fpage>–<lpage>7</lpage>.</mixed-citation>
+      </ref>
+      <ref id="B40">
+        <label>40.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Weathers</surname><given-names>F. B.</given-names></name><name><surname>Litz</surname><given-names>T.</given-names></name><name><surname>Keane</surname><given-names>P.</given-names></name><name><surname>Palmieri</surname><given-names>B.</given-names></name><name><surname>Marx</surname><given-names>P.</given-names></name><name><surname>Schnurr</surname></name></person-group>. <article-title>The PTSD Checklist for DSM-5 (PCL-5)</article-title>. <source>Scale Available National Center PTSD</source>. (<year>2013</year>) <fpage>10</fpage></mixed-citation>
+      </ref>
+      <ref id="B41">
+        <label>41.</label>
+        <mixed-citation publication-type="book"><person-group person-group-type="author"><name><surname>Beck</surname><given-names>AT</given-names></name><name><surname>Steer</surname><given-names>RA</given-names></name><name><surname>Brown</surname><given-names>GK</given-names></name></person-group>. <source>Manual for the Beck Depression Inventory-II</source>. <publisher-loc>San Antonio, TX</publisher-loc>: <publisher-name>Psychological Corporation</publisher-name> (<year>1996</year>). p. <fpage>1</fpage>–<lpage>82</lpage>.</mixed-citation>
+      </ref>
+      <ref id="B42">
+        <label>42.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Sullivan</surname><given-names>M</given-names></name><name><surname>Bishop</surname><given-names>S</given-names></name><name><surname>Pivik</surname><given-names>J</given-names></name></person-group>. <article-title>The pain catastrophizing scale: develompent and validation</article-title>. <source>Psychol Assess</source>. (<year>1995</year>) <volume>7</volume>:<fpage>524</fpage>–<lpage>32</lpage>. <pub-id pub-id-type="doi">10.1037/1040-3590.7.4.524</pub-id><pub-id pub-id-type="pmid">28616005</pub-id></mixed-citation>
+      </ref>
+      <ref id="B43">
+        <label>43.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>McCracken</surname><given-names>LM</given-names></name><name><surname>Dhingra</surname><given-names>L</given-names></name></person-group>. <article-title>A short version of the Pain Anxiety Symptoms Scale (PASS-20): preliminary development and validity</article-title>. <source>Pain Res Manag.</source> (<year>2002</year>) <volume>7</volume>:<fpage>45</fpage>–<lpage>50</lpage>. <pub-id pub-id-type="doi">10.1155/2002/517163</pub-id><pub-id pub-id-type="pmid">16231066</pub-id></mixed-citation>
+      </ref>
+      <ref id="B44">
+        <label>44.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>McCarthy</surname><given-names>DM</given-names></name><name><surname>Pedersen</surname><given-names>SL</given-names></name><name><surname>Thompsen</surname><given-names>DM</given-names></name><name><surname>Leuty</surname><given-names>ME</given-names></name></person-group>. <article-title>Clinical evaluation of a measure to assess combat exposure</article-title>. <source>Psychol Assess J Consult Clin Psychol</source>. (<year>1989</year>) <volume>1</volume>:<fpage>53</fpage>–<lpage>5</lpage>. <pub-id pub-id-type="doi">10.1037/1040-3590.1.1.53</pub-id></mixed-citation>
+      </ref>
+      <ref id="B45">
+        <label>45.</label>
+        <mixed-citation publication-type="book"><person-group person-group-type="author"><name><surname>Protocol</surname><given-names>ATI</given-names></name></person-group>. <source>Trauma-Informed Care in Behavioral Health Services</source>. <publisher-loc>Rockville, USA</publisher-loc>: <publisher-name>Substance Abuse and Mental Health Services Administration</publisher-name> (<year>2014</year>)</mixed-citation>
+      </ref>
+      <ref id="B46">
+        <label>46.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Treede</surname><given-names>RD</given-names></name><name><surname>Rief</surname><given-names>W</given-names></name><name><surname>Barke</surname><given-names>A</given-names></name><name><surname>Aziz</surname><given-names>Q</given-names></name><name><surname>Bennett</surname><given-names>MI</given-names></name><name><surname>Benoliel</surname><given-names>R</given-names></name><etal/></person-group>. <article-title>A classification of chronic pain for ICD-11</article-title>. <source>Pain.</source> (<year>2015</year>) <volume>156</volume>:<fpage>1003</fpage>–<lpage>7</lpage>. <pub-id pub-id-type="doi">10.1097/j.pain.0000000000000160</pub-id><pub-id pub-id-type="pmid">25844555</pub-id></mixed-citation>
+      </ref>
+      <ref id="B47">
+        <label>47.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Esteban</surname><given-names>O</given-names></name><name><surname>Markiewicz</surname><given-names>CJ</given-names></name><name><surname>Blair</surname><given-names>RW</given-names></name><name><surname>Moodie</surname><given-names>CA</given-names></name><name><surname>Isik</surname><given-names>AI</given-names></name><name><surname>Erramuzpe</surname><given-names>A</given-names></name><etal/></person-group>. <article-title>fMRIPrep: a robust preprocessing pipeline for functional MRI</article-title>. <source>Nat Meth</source>. (<year>2019</year>) <volume>16</volume>:<fpage>111</fpage>–<lpage>6</lpage>. <pub-id pub-id-type="doi">10.1038/s41592-018-0235-4</pub-id><pub-id pub-id-type="pmid">30532080</pub-id></mixed-citation>
+      </ref>
+      <ref id="B48">
+        <label>48.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Gorgolewski</surname><given-names>KJ</given-names></name><name><surname>Esteban</surname><given-names>O</given-names></name><name><surname>Markiewicz</surname><given-names>CJ</given-names></name><name><surname>Ziegler</surname><given-names>E</given-names></name><name><surname>Ellis</surname><given-names>DG</given-names></name><name><surname>Notter</surname><given-names>MP</given-names></name><etal/></person-group>. <source>Nipype. Software, Zenodo</source> (<year>2018</year>).</mixed-citation>
+      </ref>
+      <ref id="B49">
+        <label>49.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Gorgolewski</surname><given-names>K</given-names></name><name><surname>Burns</surname><given-names>CD</given-names></name><name><surname>Madison</surname><given-names>C</given-names></name><name><surname>Clark</surname><given-names>D</given-names></name><name><surname>Halchenko</surname><given-names>YO</given-names></name><name><surname>Waskom</surname><given-names>ML</given-names></name><etal/></person-group>. <article-title>Nipype: a flexible, lightweight and extensible neuroimaging data processing framework in python</article-title>. <source>Front Neuroinform</source>. (<year>2011</year>) <volume>5</volume>:<fpage>13</fpage>. <pub-id pub-id-type="doi">10.3389/fninf.2011.00013</pub-id><pub-id pub-id-type="pmid">21897815</pub-id></mixed-citation>
+      </ref>
+      <ref id="B50">
+        <label>50.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Faillenot</surname><given-names>I</given-names></name><name><surname>Heckemann</surname><given-names>RA</given-names></name><name><surname>Frot</surname><given-names>M</given-names></name><name><surname>Hammers</surname><given-names>A</given-names></name></person-group>. <article-title>Macroanatomy and 3D probabilistic atlas of the human insula</article-title>. <source>Neuroimage</source>. (<year>2017</year>) <volume>150</volume>:<fpage>88</fpage>–<lpage>98</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2017.01.073</pub-id><pub-id pub-id-type="pmid">28179166</pub-id></mixed-citation>
+      </ref>
+      <ref id="B51">
+        <label>51.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Hammers</surname><given-names>A</given-names></name><name><surname>Allom</surname><given-names>R</given-names></name><name><surname>Koepp</surname><given-names>MJ</given-names></name><name><surname>Free</surname><given-names>SL</given-names></name><name><surname>Myers</surname><given-names>R</given-names></name><name><surname>Lemieux</surname><given-names>L</given-names></name><etal/></person-group>. <article-title>Three-dimensional maximum probability atlas of the human brain, with particular reference to the temporal lobe</article-title>. <source>Hum Brain Mapp.</source> (<year>2003</year>) <volume>19</volume>:<fpage>224</fpage>–<lpage>47</lpage>. <pub-id pub-id-type="doi">10.1002/hbm.10123</pub-id><pub-id pub-id-type="pmid">12874777</pub-id></mixed-citation>
+      </ref>
+      <ref id="B52">
+        <label>52.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Craig</surname><given-names>AD</given-names></name></person-group>. <article-title>How do you feel? Interoception: the sense of the physiological condition of the body</article-title>. <source>NatRevNeurosci.</source> (<year>2002</year>) <volume>3</volume>:<fpage>655</fpage>–<lpage>66</lpage>. <pub-id pub-id-type="doi">10.1038/nrn894</pub-id><pub-id pub-id-type="pmid">12154366</pub-id></mixed-citation>
+      </ref>
+      <ref id="B53">
+        <label>53.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Fields</surname><given-names>HL</given-names></name></person-group>. <article-title>How expectations influence pain</article-title>. <source>Pain</source>. (<year>2018</year>) <volume>159</volume>: <fpage>S3</fpage>–<lpage>10</lpage>. <pub-id pub-id-type="doi">10.1097/j.pain.0000000000001272</pub-id><pub-id pub-id-type="pmid">30113941</pub-id></mixed-citation>
+      </ref>
+      <ref id="B54">
+        <label>54.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Baliki</surname><given-names>MN</given-names></name><name><surname>Mansour</surname><given-names>AR</given-names></name><name><surname>Baria</surname><given-names>AT</given-names></name><name><surname>Apkarian</surname><given-names>AV</given-names></name></person-group>. <article-title>Functional reorganization of the default mode network across chronic pain conditions</article-title>. <source>PLoS ONE</source>. (<year>2014</year>) <volume>9</volume>:<fpage>e106133</fpage>. <pub-id pub-id-type="doi">10.1371/journal.pone.0106133</pub-id><pub-id pub-id-type="pmid">25180885</pub-id></mixed-citation>
+      </ref>
+      <ref id="B55">
+        <label>55.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Stevens</surname><given-names>JS</given-names></name><name><surname>Harnett</surname><given-names>NG</given-names></name><name><surname>Lebois</surname><given-names>LAM</given-names></name><name><surname>van Rooij</surname><given-names>SJH</given-names></name><name><surname>Ely</surname><given-names>TD</given-names></name><name><surname>Roeckner</surname><given-names>A</given-names></name><etal/></person-group>. <article-title>Brain-based biotypes of psychiatric vulnerability in the acute aftermath of trauma</article-title>. <source>Am J Psychiatry.</source> (<year>2021</year>) <volume>178</volume>:<fpage>1037</fpage>–<lpage>49</lpage>. <pub-id pub-id-type="doi">10.1176/appi.ajp.2021.20101526</pub-id><pub-id pub-id-type="pmid">34645277</pub-id></mixed-citation>
+      </ref>
+      <ref id="B56">
+        <label>56.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Gates</surname><given-names>KM</given-names></name><name><surname>Henry</surname><given-names>T</given-names></name><name><surname>Steinley</surname><given-names>D</given-names></name><name><surname>Fair</surname><given-names>DA</given-names></name></person-group>. <article-title>A Monte Carlo evaluation of weighted community detection algorithms</article-title>. <source>Front Neuroinform</source>. (<year>2016</year>) <volume>10</volume>:<fpage>45</fpage>. <pub-id pub-id-type="doi">10.3389/fninf.2016.00045</pub-id><pub-id pub-id-type="pmid">27891087</pub-id></mixed-citation>
+      </ref>
+      <ref id="B57">
+        <label>57.</label>
+        <mixed-citation publication-type="book"><person-group person-group-type="author"><name><surname>Orman</surname><given-names>GK</given-names></name><name><surname>Labatut</surname><given-names>V</given-names></name></person-group>. <article-title>A comparison of community detection algorithms on artificial networks</article-title>. In: <source>International Conference on Discovery Science</source>. <publisher-loc>Berlin</publisher-loc>: <publisher-name>Springer</publisher-name> (<year>2009</year>).</mixed-citation>
+      </ref>
+      <ref id="B58">
+        <label>58.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Price</surname><given-names>RB</given-names></name><name><surname>Gates</surname><given-names>K</given-names></name><name><surname>Kraynak</surname><given-names>TE</given-names></name><name><surname>Thase</surname><given-names>ME</given-names></name><name><surname>Siegle</surname><given-names>GJ</given-names></name></person-group>. <article-title>Data-driven subgroups in depression derived from directed functional connectivity paths at rest</article-title>. <source>Neuropsychopharmacology.</source> (<year>2017</year>) <volume>42</volume>:<fpage>2623</fpage>–<lpage>32</lpage>. <pub-id pub-id-type="doi">10.1038/npp.2017.9</pub-id><pub-id pub-id-type="pmid">28497802</pub-id></mixed-citation>
+      </ref>
+      <ref id="B59">
+        <label>59.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Price</surname><given-names>RB</given-names></name><name><surname>Lane</surname><given-names>S</given-names></name><name><surname>Gates</surname><given-names>K</given-names></name><name><surname>Kraynak</surname><given-names>TE</given-names></name><name><surname>Horner</surname><given-names>MS</given-names></name><name><surname>Thase</surname><given-names>ME</given-names></name><etal/></person-group>. <article-title>Parsing heterogeneity in the brain connectivity of depressed and healthy adults during positive mood</article-title>. <source>Biol Psychiatry.</source> (<year>2017</year>) <volume>81</volume>:<fpage>347</fpage>–<lpage>57</lpage>. <pub-id pub-id-type="doi">10.1016/j.biopsych.2016.06.023</pub-id><pub-id pub-id-type="pmid">27712830</pub-id></mixed-citation>
+      </ref>
+      <ref id="B60">
+        <label>60.</label>
+        <mixed-citation publication-type="webpage"><person-group person-group-type="author"><name><surname>JASP</surname><given-names>Team,. JASP (Version 0.16.2).</given-names></name></person-group> (<year>2022</year>). Available online at: <ext-link xlink:href="https://jasp-stats.org/faq/how-do-i-cite-jasp/" ext-link-type="uri">https://jasp-stats.org/faq/how-do-i-cite-jasp/</ext-link></mixed-citation>
+      </ref>
+      <ref id="B61">
+        <label>61.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Craig</surname><given-names>AD</given-names></name></person-group>. <article-title>How do you feel [mdash] now? The anterior insula and human awareness</article-title>. <source>Nat Rev Neurosci.</source> (<year>2009</year>) <volume>10</volume>:<fpage>59</fpage>–<lpage>70</lpage>. <pub-id pub-id-type="doi">10.1038/nrn2555</pub-id><pub-id pub-id-type="pmid">19096369</pub-id></mixed-citation>
+      </ref>
+      <ref id="B62">
+        <label>62.</label>
+        <mixed-citation publication-type="book"><person-group person-group-type="author"><name><surname>Craig</surname><given-names>AD</given-names></name></person-group>. <source>How do You Feel?: An Interoceptive Moment With Your Neurobiological Self</source>. <publisher-loc>USA</publisher-loc>: <publisher-name>Princeton University Press</publisher-name> (<year>2015</year>). <pub-id pub-id-type="doi">10.1515/9781400852727</pub-id></mixed-citation>
+      </ref>
+      <ref id="B63">
+        <label>63.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Craig</surname><given-names>AD</given-names></name></person-group>. <article-title>Referee Report For: The dorsal posterior insula is not an island in pain but subserves a fundamental role - Response to: “Evidence against pain specificity in the dorsal posterior insula” by Davis et al</article-title>. <source>F1000Res.</source> (<year>2015</year>) <volume>4</volume>:<fpage>1207</fpage>. <pub-id pub-id-type="doi">10.12688/f1000research.7287.1</pub-id><pub-id pub-id-type="pmid">26834997</pub-id></mixed-citation>
+      </ref>
+      <ref id="B64">
+        <label>64.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Segerdahl</surname><given-names>AR</given-names></name><name><surname>Mezue</surname><given-names>M</given-names></name><name><surname>Okell</surname><given-names>TW</given-names></name><name><surname>Farrar</surname><given-names>JT</given-names></name><name><surname>Tracey</surname><given-names>I</given-names></name></person-group>. <article-title>The dorsal posterior insula subserves a fundamental role in human pain</article-title>. <source>Nat Neurosci.</source> (<year>2015</year>) <volume>18</volume>:<fpage>499</fpage>–<lpage>500</lpage>. <pub-id pub-id-type="doi">10.1038/nn.3969</pub-id><pub-id pub-id-type="pmid">25751532</pub-id></mixed-citation>
+      </ref>
+      <ref id="B65">
+        <label>65.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Menon</surname><given-names>V</given-names></name><name><surname>Uddin</surname><given-names>LQ</given-names></name></person-group>. <article-title>Saliency, switching, attention and control: a network model of insula function</article-title>. <source>Brain Struct Funct</source>. (<year>2010</year>) <volume>214</volume>:<fpage>655</fpage>–<lpage>67</lpage>. <pub-id pub-id-type="doi">10.1007/s00429-010-0262-0</pub-id><pub-id pub-id-type="pmid">20512370</pub-id></mixed-citation>
+      </ref>
+      <ref id="B66">
+        <label>66.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Simmons</surname><given-names>AN</given-names></name><name><surname>Norman</surname><given-names>SB</given-names></name><name><surname>Spadoni</surname><given-names>AD</given-names></name><name><surname>Strigo</surname><given-names>IA</given-names></name></person-group>. <article-title>Neurosubstrates of remission following prolonged exposure therapy in veterans with posttraumatic stress disorder</article-title>. <source>Psychother Psychosom</source>. (<year>2013</year>) <volume>82</volume>:<fpage>382</fpage>–<lpage>9</lpage>. <pub-id pub-id-type="doi">10.1159/000348867</pub-id><pub-id pub-id-type="pmid">24061484</pub-id></mixed-citation>
+      </ref>
+      <ref id="B67">
+        <label>67.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Strigo</surname><given-names>IA</given-names></name><name><surname>Matthews</surname><given-names>SC</given-names></name><name><surname>Simmons</surname><given-names>AN</given-names></name></person-group>. <article-title>Decreased frontal regulation during pain anticipation in unmedicated subjects with major depressive disorder</article-title>. <source>Transl Psychiatry</source>. (<year>2013</year>) <volume>3</volume>:<fpage>e239</fpage>. <pub-id pub-id-type="doi">10.1038/tp.2013.15</pub-id><pub-id pub-id-type="pmid">23481626</pub-id></mixed-citation>
+      </ref>
+      <ref id="B68">
+        <label>68.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Simmons</surname><given-names>A</given-names></name><name><surname>Strigo</surname><given-names>IA</given-names></name><name><surname>Matthews</surname><given-names>SC</given-names></name><name><surname>Paulus</surname><given-names>MP</given-names></name><name><surname>Stein</surname><given-names>MB</given-names></name></person-group>. <article-title>Initial evidence of a failure to activate right anterior insula during affective set shifting in posttraumatic stress disorder</article-title>. <source>Psychosom Med</source>. (<year>2009</year>) <volume>71</volume>:<fpage>373</fpage>–<lpage>7</lpage>. <pub-id pub-id-type="doi">10.1097/PSY.0b013e3181a56ed8</pub-id><pub-id pub-id-type="pmid">19398499</pub-id></mixed-citation>
+      </ref>
+      <ref id="B69">
+        <label>69.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Strigo</surname><given-names>IA</given-names></name><name><surname>Matthews</surname><given-names>SC</given-names></name><name><surname>Simmons</surname><given-names>AN</given-names></name><name><surname>Oberndorfer</surname><given-names>T</given-names></name><name><surname>Klabunde</surname><given-names>M</given-names></name><name><surname>Reinhardt</surname><given-names>LE</given-names></name><etal/></person-group>. <article-title>Altered insula activation during pain anticipation in individuals recovered from anorexia nervosa: Evidence of interoceptive dysregulation</article-title>. <source>Int J Eat Disord</source>. (<year>2013</year>) <volume>46</volume>:<fpage>23</fpage>–<lpage>33</lpage>. <pub-id pub-id-type="doi">10.1002/eat.22045</pub-id><pub-id pub-id-type="pmid">22836447</pub-id></mixed-citation>
+      </ref>
+      <ref id="B70">
+        <label>70.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Oberndorfer</surname><given-names>T</given-names></name><name><surname>Simmons</surname><given-names>A</given-names></name><name><surname>McCurdy</surname><given-names>D</given-names></name><name><surname>Strigo</surname><given-names>I</given-names></name><name><surname>Matthews</surname><given-names>S</given-names></name><name><surname>Yang</surname><given-names>T</given-names></name><etal/></person-group>. <article-title>Greater anterior insula activation during anticipation of food images in women recovered from anorexia nervosa versus controls</article-title>. <source>Psychiatry Res Neuroimag.</source> (<year>2013</year>) <volume>214</volume>:<fpage>132</fpage>–<lpage>41</lpage>. <pub-id pub-id-type="doi">10.1016/j.pscychresns.2013.06.010</pub-id><pub-id pub-id-type="pmid">23993362</pub-id></mixed-citation>
+      </ref>
+      <ref id="B71">
+        <label>71.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Strigo</surname><given-names>IA</given-names></name><name><surname>Matthews</surname><given-names>SC</given-names></name><name><surname>Simmons</surname><given-names>AN</given-names></name></person-group>. <article-title>Right anterior insula hypoactivity during anticipation of homeostatic shifts in major depressive disorder</article-title>. <source>Psychosom Med</source>. (<year>2010</year>) <volume>72</volume>:<fpage>316</fpage>–<lpage>23</lpage>. <pub-id pub-id-type="doi">10.1097/PSY.0b013e3181d07873</pub-id><pub-id pub-id-type="pmid">20100882</pub-id></mixed-citation>
+      </ref>
+      <ref id="B72">
+        <label>72.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Mogenson</surname><given-names>GJ</given-names></name><name><surname>Jones</surname><given-names>DL</given-names></name><name><surname>Yim</surname><given-names>CY</given-names></name></person-group>. <article-title>From motivation to action: functional interface between the limbic system and the motor system</article-title>. <source>Prog Neurobiol</source>. (<year>1980</year>) <volume>14</volume>:<fpage>69</fpage>–<lpage>97</lpage>. <pub-id pub-id-type="doi">10.1016/0301-0082(80)90018-0</pub-id><pub-id pub-id-type="pmid">6999537</pub-id></mixed-citation>
+      </ref>
+      <ref id="B73">
+        <label>73.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Roesch</surname><given-names>MR</given-names></name><name><surname>Singh</surname><given-names>T</given-names></name><name><surname>Brown</surname><given-names>PL</given-names></name><name><surname>Mullins</surname><given-names>SE</given-names></name><name><surname>Schoenbaum</surname><given-names>G</given-names></name></person-group>. <article-title>Ventral striatal neurons encode the value of the chosen action in rats deciding between differently delayed or sized rewards</article-title>. <source>J Neurosci</source>. (<year>2009</year>) <volume>29</volume>:<fpage>13365</fpage>–<lpage>76</lpage>
+<pub-id pub-id-type="doi">10.1523/JNEUROSCI.2572-09.2009</pub-id><pub-id pub-id-type="pmid">19846724</pub-id></mixed-citation>
+      </ref>
+      <ref id="B74">
+        <label>74.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Cauda</surname><given-names>F</given-names></name><name><surname>Cavanna</surname><given-names>AE</given-names></name><name><surname>D'agata</surname><given-names>F</given-names></name><name><surname>Sacco</surname><given-names>K</given-names></name><name><surname>Duca</surname><given-names>S</given-names></name><name><surname>Geminiani</surname><given-names>GC</given-names></name></person-group>. <article-title>Functional connectivity and coactivation of the nucleus accumbens: a combined functional connectivity and structure-based meta-analysis</article-title>. <source>J Cogn Neurosci</source>. (<year>2011</year>) <volume>23</volume>:<fpage>2864</fpage>–<lpage>77</lpage>. <pub-id pub-id-type="doi">10.1162/jocn.2011.21624</pub-id><pub-id pub-id-type="pmid">21265603</pub-id></mixed-citation>
+      </ref>
+      <ref id="B75">
+        <label>75.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Kadlec</surname><given-names>M</given-names></name><name><surname>Tosun</surname><given-names>D</given-names></name><name><surname>Strigo</surname><given-names>I</given-names></name></person-group>. <article-title>BOLD decoding of individual pain anticipation biases during uncertainty</article-title>. <source>bioRxiv</source>. (<year>2019</year>) <fpage>675645</fpage>. <pub-id pub-id-type="doi">10.1101/675645</pub-id></mixed-citation>
+      </ref>
+      <ref id="B76">
+        <label>76.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Baliki</surname><given-names>MN</given-names></name><name><surname>Geha</surname><given-names>PY</given-names></name><name><surname>Fields</surname><given-names>HL</given-names></name><name><surname>Apkarian</surname><given-names>AV</given-names></name></person-group>. <article-title>Predicting value of pain and analgesia: nucleus accumbens response to noxious stimuli changes in the presence of chronic pain</article-title>. <source>Neuron.</source> (<year>2010</year>) <volume>66</volume>:<fpage>149</fpage>–<lpage>60</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuron.2010.03.002</pub-id><pub-id pub-id-type="pmid">20399736</pub-id></mixed-citation>
+      </ref>
+      <ref id="B77">
+        <label>77.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Schwartz</surname><given-names>N</given-names></name><name><surname>Miller</surname><given-names>C</given-names></name><name><surname>Fields</surname><given-names>HL</given-names></name></person-group>. <article-title>Cortico-accumbens regulation of approach-avoidance behavior is modified by experience and chronic pain</article-title>. <source>Cell Rep.</source> (<year>2017</year>) <volume>19</volume>:<fpage>1522</fpage>–<lpage>31</lpage>. <pub-id pub-id-type="doi">10.1016/j.celrep.2017.04.073</pub-id><pub-id pub-id-type="pmid">28538173</pub-id></mixed-citation>
+      </ref>
+      <ref id="B78">
+        <label>78.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Ungless</surname><given-names>MA</given-names></name><name><surname>Magill</surname><given-names>PJ</given-names></name><name><surname>Bolam</surname><given-names>JP</given-names></name></person-group>. <article-title>Uniform inhibition of dopamine neurons in the ventral tegmental area by aversive stimuli</article-title>. <source>Science</source>. (<year>2004</year>) <volume>303</volume>:<fpage>2040</fpage>–<lpage>2</lpage>. <pub-id pub-id-type="doi">10.1126/science.1093360</pub-id><pub-id pub-id-type="pmid">15044807</pub-id></mixed-citation>
+      </ref>
+      <ref id="B79">
+        <label>79.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Seymour</surname><given-names>B</given-names></name><name><surname>O'Doherty</surname><given-names>JP</given-names></name><name><surname>Dayan</surname><given-names>P</given-names></name><name><surname>Koltzenburg</surname><given-names>M</given-names></name><name><surname>Jones</surname><given-names>AK</given-names></name><name><surname>Dolan</surname><given-names>RJ</given-names></name><etal/></person-group>. <article-title>Temporal difference models describe higher-order learning in humans</article-title>. <source>Nature</source>. (<year>2004</year>) <volume>429</volume>:<fpage>664</fpage>–<lpage>7</lpage>. <pub-id pub-id-type="doi">10.1038/nature02581</pub-id><pub-id pub-id-type="pmid">15190354</pub-id></mixed-citation>
+      </ref>
+      <ref id="B80">
+        <label>80.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zubieta</surname><given-names>JK</given-names></name><name><surname>Bueller</surname><given-names>JA</given-names></name><name><surname>Jackson</surname><given-names>LR</given-names></name><name><surname>Scott</surname><given-names>DJ</given-names></name><name><surname>Xu</surname><given-names>Y</given-names></name><name><surname>Koeppe</surname><given-names>RA</given-names></name><etal/></person-group>. <article-title>Placebo effects mediated by endogenous opioid activity on mu-opioid receptors</article-title>. <source>J Neurosci</source>. (<year>2005</year>) <volume>25</volume>:<fpage>7754</fpage>–<lpage>62</lpage>. <pub-id pub-id-type="doi">10.1523/JNEUROSCI.0439-05.2005</pub-id><pub-id pub-id-type="pmid">16120776</pub-id></mixed-citation>
+      </ref>
+      <ref id="B81">
+        <label>81.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Eippert</surname><given-names>F</given-names></name><name><surname>Bingel</surname><given-names>U</given-names></name><name><surname>Schoell</surname><given-names>ED</given-names></name><name><surname>Yacubian</surname><given-names>J</given-names></name><name><surname>Klinger</surname><given-names>R</given-names></name><name><surname>Lorenz</surname><given-names>J</given-names></name><etal/></person-group>. <article-title>Activation of the opioidergic descending pain control system underlies placebo analgesia</article-title>. <source>Neuron.</source> (<year>2009</year>) <volume>63</volume>:<fpage>533</fpage>–<lpage>43</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuron.2009.07.014</pub-id><pub-id pub-id-type="pmid">19709634</pub-id></mixed-citation>
+      </ref>
+      <ref id="B82">
+        <label>82.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Baliki</surname><given-names>MN</given-names></name><name><surname>Schnitzer</surname><given-names>TJ</given-names></name><name><surname>Bauer</surname><given-names>WR</given-names></name><name><surname>Apkarian</surname><given-names>AV</given-names></name></person-group>. <article-title>Brain morphological signatures for chronic pain</article-title>. <source>PLoS ONE</source>. (<year>2011</year>) <volume>6</volume>:<fpage>e26010</fpage>. <pub-id pub-id-type="doi">10.1371/journal.pone.0026010</pub-id><pub-id pub-id-type="pmid">22022493</pub-id></mixed-citation>
+      </ref>
+      <ref id="B83">
+        <label>83.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Vachon-Presseau</surname><given-names>E</given-names></name><name><surname>Tétreault</surname><given-names>P</given-names></name><name><surname>Petre</surname><given-names>B</given-names></name><name><surname>Huang</surname><given-names>L</given-names></name><name><surname>Berger</surname><given-names>SE</given-names></name><name><surname>Torbey</surname><given-names>S</given-names></name><etal/></person-group>. <article-title>Corticolimbic anatomical characteristics predetermine risk for chronic pain</article-title>. <source>Brain.</source> (<year>2016</year>) <volume>139</volume>:<fpage>1958</fpage>–<lpage>70</lpage>. <pub-id pub-id-type="doi">10.1093/brain/aww100</pub-id><pub-id pub-id-type="pmid">27190016</pub-id></mixed-citation>
+      </ref>
+      <ref id="B84">
+        <label>84.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Makary</surname><given-names>MM</given-names></name><name><surname>Polosecki</surname><given-names>P</given-names></name><name><surname>Cecchi</surname><given-names>GA</given-names></name><name><surname>DeAraujo</surname><given-names>IE</given-names></name><name><surname>Barron</surname><given-names>DS</given-names></name><name><surname>Constable</surname><given-names>TR</given-names></name><etal/></person-group>. <article-title>Loss of nucleus accumbens low-frequency fluctuations is a signature of chronic pain</article-title>. <source>Proc Natl Acad Sci USA.</source> (<year>2020</year>) <volume>117</volume>:<fpage>10015</fpage>–<lpage>23</lpage>. <pub-id pub-id-type="doi">10.1073/pnas.1918682117</pub-id><pub-id pub-id-type="pmid">32312809</pub-id></mixed-citation>
+      </ref>
+      <ref id="B85">
+        <label>85.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Benarroch</surname><given-names>EE</given-names></name></person-group>. <article-title>Involvement of the nucleus accumbens and dopamine system in chronic pain</article-title>. <source>Neurology.</source> (<year>2016</year>) <volume>87</volume>:<fpage>1720</fpage>–<lpage>6</lpage>. <pub-id pub-id-type="doi">10.1212/WNL.0000000000003243</pub-id><pub-id pub-id-type="pmid">27655737</pub-id></mixed-citation>
+      </ref>
+      <ref id="B86">
+        <label>86.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Apkarian</surname><given-names>AV</given-names></name><name><surname>Sosa</surname><given-names>Y</given-names></name><name><surname>Krauss</surname><given-names>BR</given-names></name><name><surname>Thomas</surname><given-names>PS</given-names></name><name><surname>Fredrickson</surname><given-names>BE</given-names></name><name><surname>Levy</surname><given-names>RE</given-names></name><etal/></person-group>. <article-title>Chronic pain patients are impaired on an emotional decision-making task</article-title>. <source>Pain.</source> (<year>2004</year>) <volume>108</volume>:<fpage>129</fpage>–<lpage>36</lpage>. <pub-id pub-id-type="doi">10.1016/j.pain.2003.12.015</pub-id><pub-id pub-id-type="pmid">15109516</pub-id></mixed-citation>
+      </ref>
+      <ref id="B87">
+        <label>87.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Geha</surname><given-names>P</given-names></name><name><surname>deAraujo</surname><given-names>I</given-names></name><name><surname>Green</surname><given-names>B</given-names></name><name><surname>Small</surname><given-names>DM</given-names></name></person-group>. <article-title>Decreased food pleasure and disrupted satiety signals in chronic low back pain</article-title>. <source>Pain.</source> (<year>2014</year>) <volume>155</volume>:<fpage>712</fpage>–<lpage>22</lpage>. <pub-id pub-id-type="doi">10.1016/j.pain.2013.12.027</pub-id><pub-id pub-id-type="pmid">24384160</pub-id></mixed-citation>
+      </ref>
+      <ref id="B88">
+        <label>88.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Schwartz</surname><given-names>N</given-names></name><name><surname>Temkin</surname><given-names>P</given-names></name><name><surname>Jurado</surname><given-names>S</given-names></name><name><surname>Lim</surname><given-names>BK</given-names></name><name><surname>Heifets</surname><given-names>BD</given-names></name><name><surname>Polepalli</surname><given-names>JS</given-names></name><etal/></person-group>. <article-title>Chronic pain Decreased motivation during chronic pain requires long-term depression in the nucleus accumbens</article-title>. <source>Science.</source> (<year>2014</year>) <volume>345</volume>:<fpage>535</fpage>–<lpage>42</lpage>. <pub-id pub-id-type="doi">10.1126/science.1253994</pub-id><pub-id pub-id-type="pmid">25082697</pub-id></mixed-citation>
+      </ref>
+      <ref id="B89">
+        <label>89.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Ramirez</surname><given-names>F</given-names></name><name><surname>Moscarello</surname><given-names>JM</given-names></name><name><surname>LeDoux</surname><given-names>JE</given-names></name><name><surname>Sears</surname><given-names>RM</given-names></name></person-group>. <article-title>Active avoidance requires a serial basal amygdala to nucleus accumbens shell circuit</article-title>. <source>J Neurosci</source>. (<year>2015</year>) <volume>35</volume>:<fpage>3470</fpage>–<lpage>7</lpage>. <pub-id pub-id-type="doi">10.1523/JNEUROSCI.1331-14.2015</pub-id><pub-id pub-id-type="pmid">25716846</pub-id></mixed-citation>
+      </ref>
+      <ref id="B90">
+        <label>90.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>De Groote</surname><given-names>A</given-names></name><name><surname>de Kerchove d'Exaerde</surname><given-names>A</given-names></name></person-group>. <article-title>Thalamo-Nucleus Accumbens Projections in Motivated Behaviors and Addiction</article-title>. <source>Front Syst Neurosci</source>. (<year>2021</year>) <volume>15</volume>:<fpage>711350</fpage>. <pub-id pub-id-type="doi">10.3389/fnsys.2021.711350</pub-id><pub-id pub-id-type="pmid">34335197</pub-id></mixed-citation>
+      </ref>
+      <ref id="B91">
+        <label>91.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Leech</surname><given-names>R</given-names></name><name><surname>Sharp</surname><given-names>DJ</given-names></name></person-group>. <article-title>The role of the posterior cingulate cortex in cognition and disease</article-title>. <source>Brain</source>. (<year>2014</year>) <volume>137</volume>:<fpage>12</fpage>–<lpage>32</lpage>. <pub-id pub-id-type="doi">10.1093/brain/awt162</pub-id><pub-id pub-id-type="pmid">23869106</pub-id></mixed-citation>
+      </ref>
+      <ref id="B92">
+        <label>92.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Chase</surname><given-names>HW</given-names></name><name><surname>Auerbach</surname><given-names>RP</given-names></name><name><surname>Brent</surname><given-names>DA</given-names></name><name><surname>Posner</surname><given-names>J</given-names></name><name><surname>Weissman</surname><given-names>MM</given-names></name><name><surname>Talati</surname><given-names>A</given-names></name></person-group>. <article-title>Dissociating default mode network resting state markers of suicide from familial risk factors for depression</article-title>. <source>Neuropsychopharmacology</source>. (<year>2021</year>) <volume>46</volume>:<fpage>1830</fpage>–<lpage>8</lpage>. <pub-id pub-id-type="doi">10.1038/s41386-021-01022-5</pub-id><pub-id pub-id-type="pmid">34059799</pub-id></mixed-citation>
+      </ref>
+      <ref id="B93">
+        <label>93.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Kucyi</surname><given-names>A</given-names></name><name><surname>Salomons</surname><given-names>TV</given-names></name><name><surname>Davis</surname><given-names>KD</given-names></name></person-group>. <article-title>Mind wandering away from pain dynamically engages antinociceptive and default mode brain networks</article-title>. <source>Proc Natl Acad Sci USA</source>. (<year>2013</year>) <volume>110</volume>:<fpage>18692</fpage>–<lpage>7</lpage>. <pub-id pub-id-type="doi">10.1073/pnas.1312902110</pub-id><pub-id pub-id-type="pmid">24167282</pub-id></mixed-citation>
+      </ref>
+      <ref id="B94">
+        <label>94.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Mason</surname><given-names>MF</given-names></name><name><surname>Norton</surname><given-names>MI</given-names></name><name><surname>Van Horn</surname><given-names>JD</given-names></name><name><surname>Wegner</surname><given-names>DM</given-names></name><name><surname>Grafton</surname><given-names>ST</given-names></name><name><surname>Macrae</surname><given-names>CN</given-names></name></person-group>. <article-title>Wandering minds: the default network and stimulus-independent thought</article-title>. <source>Science</source>. (<year>2007</year>) <volume>315</volume>:<fpage>393</fpage>–<lpage>5</lpage>. <pub-id pub-id-type="doi">10.1126/science.1131295</pub-id><pub-id pub-id-type="pmid">17234951</pub-id></mixed-citation>
+      </ref>
+      <ref id="B95">
+        <label>95.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Kucyi</surname><given-names>A</given-names></name><name><surname>Davis</surname><given-names>KD</given-names></name></person-group>. <article-title>The dynamic pain connectome</article-title>. <source>Trends Neurosci</source>. (<year>2015</year>) <volume>38</volume>:<fpage>86</fpage>–<lpage>95</lpage>. <pub-id pub-id-type="doi">10.1016/j.tins.2014.11.006</pub-id><pub-id pub-id-type="pmid">25541287</pub-id></mixed-citation>
+      </ref>
+      <ref id="B96">
+        <label>96.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Wiech</surname><given-names>K</given-names></name><name><surname>Ploner</surname><given-names>M</given-names></name><name><surname>Tracey</surname><given-names>I</given-names></name></person-group>. <article-title>Neurocognitive aspects of pain perception</article-title>. <source>Trends Cogn Sci.</source> (<year>2008</year>) <volume>12</volume>:<fpage>306</fpage>–<lpage>13</lpage>. <pub-id pub-id-type="doi">10.1016/j.tics.2008.05.005</pub-id><pub-id pub-id-type="pmid">18606561</pub-id></mixed-citation>
+      </ref>
+      <ref id="B97">
+        <label>97.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Defrin</surname><given-names>R</given-names></name><name><surname>Schreiber</surname><given-names>S</given-names></name><name><surname>Ginzburg</surname><given-names>K</given-names></name></person-group>. <article-title>Paradoxical pain perception in posttraumatic stress disorder: the unique role of anxiety and dissociation</article-title>. <source>J Pain.</source> (<year>2015</year>) <volume>16</volume>:<fpage>961</fpage>–<lpage>70</lpage>. <pub-id pub-id-type="doi">10.1016/j.jpain.2015.06.010</pub-id><pub-id pub-id-type="pmid">26168878</pub-id></mixed-citation>
+      </ref>
+      <ref id="B98">
+        <label>98.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Foa</surname><given-names>EB</given-names></name><name><surname>Kozak</surname><given-names>MJ</given-names></name></person-group>. <article-title>Emotional processing of fear: exposure to corrective information</article-title>. <source>Psychol Bull</source>. (<year>1986</year>) <volume>99</volume>:<fpage>20</fpage>–<lpage>35</lpage>. <pub-id pub-id-type="doi">10.1037/0033-2909.99.1.20</pub-id><pub-id pub-id-type="pmid">2871574</pub-id></mixed-citation>
+      </ref>
+      <ref id="B99">
+        <label>99.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Kucyi</surname><given-names>A</given-names></name><name><surname>Moayedi</surname><given-names>M</given-names></name><name><surname>Weissman-Fogel</surname><given-names>I</given-names></name><name><surname>Goldberg</surname><given-names>MB</given-names></name><name><surname>Freeman</surname><given-names>BV</given-names></name><name><surname>Tenenbaum</surname><given-names>HC</given-names></name><etal/></person-group>. <article-title>Enhanced medial prefrontal-default mode network functional connectivity in chronic pain and its association with pain rumination</article-title>. <source>J Neurosci.</source> (<year>2014</year>) <volume>34</volume>:<fpage>3969</fpage>–<lpage>75</lpage>. <pub-id pub-id-type="doi">10.1523/JNEUROSCI.5055-13.2014</pub-id><pub-id pub-id-type="pmid">24623774</pub-id></mixed-citation>
+      </ref>
+      <ref id="B100">
+        <label>100.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Touroutoglou</surname><given-names>A</given-names></name><name><surname>Hollenbeck</surname><given-names>M</given-names></name><name><surname>Dickerson</surname><given-names>BC</given-names></name><name><surname>Feldman Barrett</surname><given-names>L</given-names></name></person-group>. <article-title>Dissociable large-scale networks anchored in the right anterior insula subserve affective experience and attention</article-title>. <source>Neuroimage.</source> (<year>2012</year>) <volume>60</volume>:<fpage>1947</fpage>–<lpage>58</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2012.02.012</pub-id><pub-id pub-id-type="pmid">22361166</pub-id></mixed-citation>
+      </ref>
+      <ref id="B101">
+        <label>101.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Stephan</surname><given-names>KE</given-names></name><name><surname>Friston</surname><given-names>KJ</given-names></name></person-group>. <article-title>Analyzing effective connectivity with functional magnetic resonance imaging</article-title>. <source>Wiley Interdiscip Rev Cogn Sci</source>. (<year>2010</year>)<volume>1</volume>:<fpage>446</fpage>–<lpage>59</lpage>. <pub-id pub-id-type="doi">10.1002/wcs.58</pub-id><pub-id pub-id-type="pmid">21209846</pub-id></mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

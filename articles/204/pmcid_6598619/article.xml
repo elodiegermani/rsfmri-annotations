@@ -1,0 +1,930 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="methods-article">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">Front Neurosci</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Front Neurosci</journal-id>
+      <journal-id journal-id-type="publisher-id">Front. Neurosci.</journal-id>
+      <journal-title-group>
+        <journal-title>Frontiers in Neuroscience</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">1662-4548</issn>
+      <issn pub-type="epub">1662-453X</issn>
+      <publisher>
+        <publisher-name>Frontiers Media S.A.</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">31293367</article-id>
+      <article-id pub-id-type="pmc">6598619</article-id>
+      <article-id pub-id-type="doi">10.3389/fnins.2019.00583</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Neuroscience</subject>
+          <subj-group>
+            <subject>Methods</subject>
+          </subj-group>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Semiparametric Estimation of Task-Based Dynamic Functional Connectivity on the Population Level</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Kudela</surname>
+            <given-names>Maria A.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <uri xlink:type="simple" xlink:href="http://loop.frontiersin.org/people/590859/overview"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Dzemidzic</surname>
+            <given-names>Mario</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Oberlin</surname>
+            <given-names>Brandon G.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Lin</surname>
+            <given-names>Zikai</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Goñi</surname>
+            <given-names>Joaquín</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff5">
+            <sup>5</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff6">
+            <sup>6</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff7">
+            <sup>7</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Kareken</surname>
+            <given-names>David A.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Harezlak</surname>
+            <given-names>Jaroslaw</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff8">
+            <sup>8</sup>
+          </xref>
+          <xref ref-type="corresp" rid="c001">
+            <sup>*</sup>
+          </xref>
+          <uri xlink:type="simple" xlink:href="http://loop.frontiersin.org/people/675829/overview"/>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1"><sup>1</sup><institution>Safety and Observational Statistics, Takeda R&amp;D Data Science Institute, Takeda Pharmaceuticals</institution>, <addr-line>Cambridge, MA</addr-line>, <country>United States</country></aff>
+      <aff id="aff2"><sup>2</sup><institution>Department of Neurology, Indiana University School of Medicine</institution>, <addr-line>Indianapolis, IN</addr-line>, <country>United States</country></aff>
+      <aff id="aff3"><sup>3</sup><institution>Department of Radiology, Indiana University School of Medicine</institution>, <addr-line>Indianapolis, IN</addr-line>, <country>United States</country></aff>
+      <aff id="aff4"><sup>4</sup><institution>Department of Psychiatry, Indiana University School of Medicine</institution>, <addr-line>Indianapolis, IN</addr-line>, <country>United States</country></aff>
+      <aff id="aff5"><sup>5</sup><institution>School of Industrial Engineering, Purdue University</institution>, <addr-line>West Lafayette, IN</addr-line>, <country>United States</country></aff>
+      <aff id="aff6"><sup>6</sup><institution>Purdue Institute for Integrative Neuroscience, Purdue University</institution>, <addr-line>West Lafayette, IN</addr-line>, <country>United States</country></aff>
+      <aff id="aff7"><sup>7</sup><institution>Weldon School of Biomedical Engineering, Purdue University</institution>, <addr-line>West Lafayette, IN</addr-line>, <country>United States</country></aff>
+      <aff id="aff8"><sup>8</sup><institution>Department of Epidemiology and Biostatistics, School of Public Health, Indiana University</institution>, <addr-line>Bloomington, IN</addr-line>, <country>United States</country></aff>
+      <author-notes>
+        <fn fn-type="edited-by">
+          <p>Edited by: Silvina Horovitz, National Institute of Neurological Disorders and Stroke (NINDS), United States</p>
+        </fn>
+        <fn fn-type="edited-by">
+          <p>Reviewed by: Anees Abrol, Georgia State University, United States; Brian Caffo, Johns Hopkins University, United States</p>
+        </fn>
+        <corresp id="c001">*Correspondence: Jaroslaw Harezlak <email>harezlak@iu.edu</email></corresp>
+        <fn fn-type="other" id="fn001">
+          <p>This article was submitted to Brain Imaging Methods, a section of the journal Frontiers in Neuroscience</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="epub">
+        <day>21</day>
+        <month>6</month>
+        <year>2019</year>
+      </pub-date>
+      <pub-date pub-type="collection">
+        <year>2019</year>
+      </pub-date>
+      <volume>13</volume>
+      <elocation-id>583</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>17</day>
+          <month>10</month>
+          <year>2018</year>
+        </date>
+        <date date-type="accepted">
+          <day>23</day>
+          <month>5</month>
+          <year>2019</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Copyright © 2019 Kudela, Dzemidzic, Oberlin, Lin, Goñi, Kareken and Harezlak.</copyright-statement>
+        <copyright-year>2019</copyright-year>
+        <copyright-holder>Kudela, Dzemidzic, Oberlin, Lin, Goñi, Kareken and Harezlak</copyright-holder>
+        <license xlink:href="http://creativecommons.org/licenses/by/4.0/">
+          <license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY). The use, distribution or reproduction in other forums is permitted, provided the original author(s) and the copyright owner(s) are credited and that the original publication in this journal is cited, in accordance with accepted academic practice. No use, distribution or reproduction is permitted which does not comply with these terms.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>Dynamic functional connectivity (dFC) estimates time-dependent associations between pairs of brain region time series as typically acquired during functional MRI. dFC changes are most commonly quantified by pairwise correlation coefficients between the time series within a sliding window. Here, we applied a recently developed bootstrap-based technique (Kudela et al., <xref rid="B44" ref-type="bibr">2017</xref>) to robustly estimate subject-level dFC and its confidence intervals in a task-based fMRI study (24 subjects who tasted their most frequently consumed beer and Gatorade as an appetitive control). We then combined information across subjects and scans utilizing semiparametric mixed models to obtain a group-level dFC estimate for each pair of brain regions, flavor, and the difference between flavors. The proposed approach relies on the estimated group-level dFC accounting for complex correlation structures of the fMRI data, multiple repeated observations per subject, experimental design, and subject-specific variability. It also provides condition-specific dFC and confidence intervals for the whole brain at the group level. As a summary dFC metric, we used the proportion of time when the estimated associations were either significantly positive or negative. For both flavors, our fully-data driven approach yielded regional associations that reflected known, biologically meaningful brain organization as shown in prior work, as well as closely resembled resting state networks (RSNs). Specifically, beer flavor-potentiated associations were detected between several reward-related regions, including the right ventral striatum (VST), lateral orbitofrontal cortex, and ventral anterior insular cortex (vAIC). The enhancement of right VST-vAIC association by a taste of beer independently validated the main activation-based finding (Oberlin et al., <xref rid="B51" ref-type="bibr">2016</xref>). Most notably, our novel dFC methodology uncovered numerous associations undetected by the traditional static FC analysis. The data-driven, novel dFC methodology presented here can be used for a wide range of task-based fMRI designs to estimate the dFC at multiple levels—group-, individual-, and task-specific, utilizing a combination of well-established statistical methods.</p>
+      </abstract>
+      <kwd-group>
+        <kwd>dynamic functional connectivity</kwd>
+        <kwd>semiparametric mixed models</kwd>
+        <kwd>statistical methods</kwd>
+        <kwd>functional MRI</kwd>
+        <kwd>gustatory task</kwd>
+        <kwd>addiction</kwd>
+      </kwd-group>
+      <funding-group>
+        <award-group>
+          <funding-source id="cn001">National Institutes of Health<named-content content-type="fundref-id">10.13039/100000002</named-content></funding-source>
+          <award-id rid="cn001">R01MH108467</award-id>
+        </award-group>
+      </funding-group>
+      <counts>
+        <fig-count count="7"/>
+        <table-count count="2"/>
+        <equation-count count="0"/>
+        <ref-count count="75"/>
+        <page-count count="15"/>
+        <word-count count="10550"/>
+      </counts>
+    </article-meta>
+    <notes notes-type="disclaimer">
+      <p>Article content is solely the responsibility of the authors and do not necessarily represent the official views of supporting agencies and/or companies. The original data are not from Takeda Inc., Takeda is not responsible for explanation of the research results.</p>
+    </notes>
+  </front>
+  <body>
+    <sec sec-type="intro" id="s1">
+      <title>Introduction</title>
+      <p>The assessment of dynamic functional connectivity (dFC), estimated by finding the time-varying association between time series of brain region pairs, is a recent expansion of functional connectivity (FC). Traditional FC analyses, which assume constant functional associations across time (i.e., static metrics) successfully grouped brain regions into distinct functional networks (Greicius et al., <xref rid="B33" ref-type="bibr">2003</xref>; Beckmann et al., <xref rid="B6" ref-type="bibr">2005</xref>; Fox et al., <xref rid="B32" ref-type="bibr">2005</xref>; Yeo et al., <xref rid="B75" ref-type="bibr">2011</xref>). Despite its success, static functional connectivity only partially answers the question of how networks communicate (Turk-Browne, <xref rid="B70" ref-type="bibr">2013</xref>), and it may not detect important network behaviors critical for understanding the brain (Calhoun et al., <xref rid="B14" ref-type="bibr">2013</xref>). The dynamic nature of the functional connectivity in large-scale brain networks during task-free designs (Chang and Glover, <xref rid="B16" ref-type="bibr">2010</xref>) revealed that the brain is never truly at rest. Recent studies pointed out non-stationary nature of functional connectivity that was changing not only during task-related activity but also while resting (Hutchison et al., <xref rid="B39" ref-type="bibr">2012</xref>), and indicated that population-based static networks are less informative to uncover neurological illness (Hutchison et al., <xref rid="B39" ref-type="bibr">2012</xref>; Jones et al., <xref rid="B41" ref-type="bibr">2012</xref>). Similarly, cognitive control processes are transient and dynamic and may be best characterized in terms of inter-regional functional coupling dynamics (Hutchison and Morton, <xref rid="B37" ref-type="bibr">2016</xref>). Others also addressed the dynamic nature of brain activity in both task-based and task-free designs (Debener et al., <xref rid="B25" ref-type="bibr">2006</xref>; Sadaghiani et al., <xref rid="B60" ref-type="bibr">2009</xref>; Doucet et al., <xref rid="B27" ref-type="bibr">2012</xref>; Cribben et al., <xref rid="B23" ref-type="bibr">2013</xref>; Allen et al., <xref rid="B2" ref-type="bibr">2014</xref>), suggesting an important role for dFC analyses in quantifying time-varying network behavior. While dFC methodology was largely developed in healthy subject datasets, it has been employed in clinical populations as well (Filippini et al., <xref rid="B30" ref-type="bibr">2009</xref>), including Alzheimer's disease (Jones et al., <xref rid="B41" ref-type="bibr">2012</xref>), autism (Starck et al., <xref rid="B66" ref-type="bibr">2013</xref>), and schizophrenia (Sakoglu et al., <xref rid="B61" ref-type="bibr">2010</xref>). Too often, however, dFC is estimated solely in a resting state, without any emitted behavior (Turk-Browne, <xref rid="B70" ref-type="bibr">2013</xref>).</p>
+      <p>A variety of approaches have been developed to assess dynamic functional connectivity, including a sliding window approach (Sakoglu et al., <xref rid="B61" ref-type="bibr">2010</xref>; Jones et al., <xref rid="B41" ref-type="bibr">2012</xref>; Leonardi and Van de Ville, <xref rid="B45" ref-type="bibr">2013</xref>), time-frequency analysis (Chang and Glover, <xref rid="B16" ref-type="bibr">2010</xref>; Yaesoubi et al., <xref rid="B74" ref-type="bibr">2015</xref>), change-point analysis (methods used to detect the important transient point Cribben et al., <xref rid="B23" ref-type="bibr">2013</xref>), data-driven approaches from a signal processing field (Calhoun et al., <xref rid="B13" ref-type="bibr">2014</xref>; Calhoun and Adali, <xref rid="B12" ref-type="bibr">2016</xref>), and dynamic graph methods (Mucha et al., <xref rid="B50" ref-type="bibr">2010</xref>; Fornito et al., <xref rid="B31" ref-type="bibr">2016</xref>). Among the most popular is the sliding window approach due to its simplicity, easy implementation, and ability to recover salient features of dFC. This method has some limitations, such as the window size choice and the inherent variation present in the estimate. Even if there is no association between signals, one can misinterpret their associations as time-varying changes in connectivity (Lindquist et al., <xref rid="B48" ref-type="bibr">2014</xref>). The choice of the window length is an ongoing topic of interest. Previous studies indicated optimal window to be in the 30–60 s range to represent the dynamic nature of the signal (Keilholz et al., <xref rid="B42" ref-type="bibr">2013</xref>; Leonardi and Van de Ville, <xref rid="B46" ref-type="bibr">2015</xref>; Deng et al., <xref rid="B26" ref-type="bibr">2016</xref>; Liégeois et al., <xref rid="B47" ref-type="bibr">2016</xref>), but others suggest using a multilayer formalism indicating importance of both the medium time windows of size 75–100 s and shorter window lengths that reveal individual differences that were not apparent at longer time scales (Telesford et al., <xref rid="B68" ref-type="bibr">2016</xref>).</p>
+      <p>Many extensions were proposed to overcome the sliding window approach limitations, including tapered windows (Handwerker et al., <xref rid="B35" ref-type="bibr">2012</xref>; Allen et al., <xref rid="B2" ref-type="bibr">2014</xref>; Damaraju et al., <xref rid="B24" ref-type="bibr">2014</xref>) or methods based on multivariate bootstrapping (Kudela et al., <xref rid="B44" ref-type="bibr">2017</xref>). In some cases, the sliding window approach was utilized in combination with methods from the signal processing field, such as higher-order singular value decomposition (Leonardi and Van de Ville, <xref rid="B45" ref-type="bibr">2013</xref>), an independent component analysis (ICA) (Kiviniemi et al., <xref rid="B43" ref-type="bibr">2011</xref>), group ICA (Calhoun and Adali, <xref rid="B11" ref-type="bibr">2012</xref>), or an extension of ICA methods called independent vector analysis (Adali et al., <xref rid="B1" ref-type="bibr">2014</xref>; Ma et al., <xref rid="B49" ref-type="bibr">2014</xref>). Others combined ICA and sliding window methods with k-means clustering method (Allen et al., <xref rid="B2" ref-type="bibr">2014</xref>; Damaraju et al., <xref rid="B24" ref-type="bibr">2014</xref>). However, fMRI data are noisy, which limits signal processing family of methods when they attempt to combine subject-level ICA results. It is not guaranteed that for each subject, the components will be unmixed alike (Calhoun and Adali, <xref rid="B11" ref-type="bibr">2012</xref>; Preti et al., <xref rid="B58" ref-type="bibr">2017</xref>).</p>
+      <p>Yet another class of methods uses graph theory and applies network analysis to obtain time courses of graph measures, which allows an assessment of dynamically changing associations from a different perspective. The one of most popular graph theory metrics is modularity, which quantifies partition into modules containing brain regions with intra-connectivity greater than obtained by chance (Fornito et al., <xref rid="B31" ref-type="bibr">2016</xref>; Contreras et al., <xref rid="B19" ref-type="bibr">2019</xref>). Mucha et al. (<xref rid="B50" ref-type="bibr">2010</xref>) proposed an approach to examine modularity dynamically across time, which was later utilized to investigate dynamic associations during task performance (Bassett et al., <xref rid="B4" ref-type="bibr">2011</xref>, <xref rid="B5" ref-type="bibr">2015</xref>). For more detailed reviews of dFC methods please refer to Hutchison et al. (<xref rid="B38" ref-type="bibr">2013</xref>), Calhoun et al. (<xref rid="B13" ref-type="bibr">2014</xref>), Preti et al. (<xref rid="B58" ref-type="bibr">2017</xref>).</p>
+      <p>The statistical methodology described in this work was developed to uncover and characterize the dynamics of brain networks during task-based functional magnetic resonance imaging (fMRI) studies. Specifically, we wanted to establish the feasibility of estimating time-varying FC and its confidence intervals in a task-based fMRI. We implemented the method using a novel two-step estimation approach. First, we applied a bootstrap-based approach (Kudela et al., <xref rid="B44" ref-type="bibr">2017</xref>) that utilized a multivariate linear process bootstrap (Jentsch and Politis, <xref rid="B40" ref-type="bibr">2015</xref>) and a sliding window technique to obtain the time-varying functional associations among brain regions in each subject. Then, these subject-specific dFC estimates were treated as an outcome in the semiparametric additive mixed model (Ruppert et al., <xref rid="B59" ref-type="bibr">2003</xref>) to estimate stimulus-specific population-level dFC for each pair of brain regions. This approach estimates the complex correlation structure while simultaneously combining information across subjects to yield population level estimates of time-varying associations and their confidence intervals for each stimulus type and their difference. Unlike other methods, this data-driven approach models multiple repeated observations per subject, the experimental structure, subject-level variability, and importantly, provides condition-specific dFC and confidence intervals for the whole brain at the group level.</p>
+      <p>Here, we applied our novel methodology to fMRI task data in healthy drinkers. A sample of social-to-heavy alcohol drinkers completed an fMRI task that delivered beer and Gatorade® flavors to subjects' mouths. The flavor of beer is a potent conditioned reward stimulus for alcohol intoxication, provoking dopaminergic activity in the brain's reward system even without alcohol (Oberlin et al., <xref rid="B52" ref-type="bibr">2013</xref>, <xref rid="B53" ref-type="bibr">2015</xref>). Therefore, our objective was to estimate time-varying FC and its confidence intervals for each flavor and their difference, using population-level inference in the whole brain. Based on our previous findings of corticostriatal and dopaminergic responses to beer flavor (Oberlin et al., <xref rid="B51" ref-type="bibr">2016</xref>), we hypothesized that functional connectivity within visual, attentional, and somatosensory “upstream” networks would be similar for both flavors. Reasoning that a conditioned reward signal would integrate into executive and introspective monitoring systems, we hypothesized that beer flavor would enhance associations between limbic (Uddin, <xref rid="B71" ref-type="bibr">2015</xref>), frontoparietal (Etzel et al., <xref rid="B29" ref-type="bibr">2015</xref>; Cole et al., <xref rid="B18" ref-type="bibr">2016</xref>), and default mode networks (Whitfield-Gabrieli and Ford, <xref rid="B73" ref-type="bibr">2012</xref>; Bolt et al., <xref rid="B8" ref-type="bibr">2017</xref>)—systems implicated in attentional gating of executive function between resting and active time periods during salient tasks. Oberlin et al. (<xref rid="B51" ref-type="bibr">2016</xref>) demonstrated that wanting and desire to drink correlated with the right ventral striatum and medial orbitofrontal activation to beer flavor stimulation during fMRI. Therefore, we also hypothesized that beer, as compared to Gatorade, would enhance functional connectivity within the reward circuitry (striatal and orbitofrontal regions) involved in reward valuation and alcohol cue salience-gating regions of the anterior insular cortex. To validate our method and extend previous findings, we focused on <italic>a priori</italic> regions of interest (ROIs) implicated in alcohol cue responses from Oberlin et al. (<xref rid="B51" ref-type="bibr">2016</xref>). More details about selected <italic>a priori</italic> regions and networks can be found in section Brain Networks and Regions of Interest. Our proposed statistical method aimed to assess the dynamics of these alcohol cue responses in the brain's reward circuits by providing dFC metrics and associated confidence intervals not available using traditional functional connectivity approaches.</p>
+      <p>The article is organized as follows: study design, data acquisition and preprocessing steps, brain networks and regions of interest, as well as statistical framework for proposed methodology are introduced in the Methods section; results are summarized in the Results section, and the Discussion section provides conclusions and a discussion.</p>
+    </sec>
+    <sec sec-type="methods" id="s2">
+      <title>Methods</title>
+      <sec>
+        <title>Subjects</title>
+        <p>Task-based analyses of the blood oxygenation level dependent (BOLD) response to beer and Gatorade flavors for these subjects were previously reported in Oberlin et al. (<xref rid="B51" ref-type="bibr">2016</xref>). Subjects (<xref rid="T1" ref-type="table">Table 1</xref>) were recruited from the local community and prior to participation signed an informed consent approved by the Indiana University Institutional Review Board. All were male, right-handed, and in good self-reported physical and mental health, with recent drinking ranging from social-to-heavy. Each reported beer as one of their two most-often consumed alcoholic beverages (see Oberlin et al., <xref rid="B51" ref-type="bibr">2016</xref> for complete inclusion and exclusion criteria).</p>
+        <table-wrap id="T1" position="float">
+          <label>Table 1</label>
+          <caption>
+            <p>Subject characteristics.</p>
+          </caption>
+          <table frame="hsides" rules="groups">
+            <thead>
+              <tr>
+                <th rowspan="1" colspan="1"/>
+                <th valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>Mean ± (SD)</bold>
+                </th>
+                <th valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>Range</bold>
+                </th>
+                <th valign="top" align="center" rowspan="1" colspan="1">
+                  <bold><italic>N</italic> (%)</bold>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Age</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">24 (2.3)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">21–28</td>
+                <td rowspan="1" colspan="1"/>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Caucasian</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">24 (100%)</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Education</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">15.8 (1.4)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">12–19</td>
+                <td rowspan="1" colspan="1"/>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">% with at least one first degree relative w/AUD</td>
+                <td rowspan="1" colspan="1"/>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="center" rowspan="1" colspan="1">7 (29%)</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Drinks per week<xref ref-type="table-fn" rid="TN1"><sup>a</sup></xref></td>
+                <td valign="top" align="center" rowspan="1" colspan="1">14.9 (9.9)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">2–33</td>
+                <td rowspan="1" colspan="1"/>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Drinks per drinking day<xref ref-type="table-fn" rid="TN1"><sup>a</sup></xref></td>
+                <td valign="top" align="center" rowspan="1" colspan="1">4.9 (3.0)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">1–10</td>
+                <td rowspan="1" colspan="1"/>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Heavy drinking days per week<xref ref-type="table-fn" rid="TN1"><sup>a</sup></xref>, <xref ref-type="table-fn" rid="TN2"><sup>b</sup></xref></td>
+                <td valign="top" align="center" rowspan="1" colspan="1">1.6 (1.4)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0–6</td>
+                <td rowspan="1" colspan="1"/>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">AUDIT<xref ref-type="table-fn" rid="TN3"><sup>c</sup></xref></td>
+                <td valign="top" align="center" rowspan="1" colspan="1">10.2 (6.3)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">3–26</td>
+                <td rowspan="1" colspan="1"/>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <fn id="TN1">
+              <label>a</label>
+              <p><italic>Drinking data are from the Timeline Followback Interview (Sobell et al., <xref rid="B65" ref-type="bibr">1986</xref>)</italic>.</p>
+            </fn>
+            <fn id="TN2">
+              <label>b</label>
+              <p><italic>4+ or 5+ drinks per day for females and males, respectively (Gunzerath et al., <xref rid="B34" ref-type="bibr">2004</xref>)</italic>.</p>
+            </fn>
+            <fn id="TN3">
+              <label>c</label>
+              <p><italic>Alcohol Use Disorders Identification Test (Saunders et al., <xref rid="B62" ref-type="bibr">1993</xref>)</italic>.</p>
+            </fn>
+            <p><italic>SD, Standard Deviation</italic>.</p>
+          </table-wrap-foot>
+        </table-wrap>
+      </sec>
+      <sec>
+        <title>Experimental Design</title>
+        <p>Beer and Gatorade flavors (chosen for their matched flavor intensity; see Oberlin et al., <xref rid="B52" ref-type="bibr">2013</xref>, <xref rid="B53" ref-type="bibr">2015</xref>) were delivered in ~1 s sprays (trials) on subjects' tongues, and were interspersed with neutral water (flavorless sensory baseline). Subjects completed six fMRI scans, with beer and Gatorade scans alternating and flavor order counterbalanced across subjects. In each scan, 3 flavor epochs (4 trials each) were interspersed with 4 water epochs (3 trials each), resulting in 12 flavor and 12 water trials with a fixed 11 s inter-trial interval (Oberlin et al., <xref rid="B51" ref-type="bibr">2016</xref>). <xref ref-type="fig" rid="F1">Figure 1</xref> illustrates the experimental design scheme.</p>
+        <fig id="F1" position="float">
+          <label>Figure 1</label>
+          <caption>
+            <p>fMRI session outline. Each scan was 4:48 min long, and functional imaging, including subjective ratings typically lasted 35–40 min. Gustatory stimuli (beer, Gatorade©) or water were presented every 11 s during each scan; individual trials are indicated by <italic>B</italic> (beer), <italic>G</italic> (Gatorade©), and <italic>W</italic> (water). The design of separate beer and Gatorade scans was the best match to our earlier PET studies (Oberlin et al., <xref rid="B52" ref-type="bibr">2013</xref>, <xref rid="B53" ref-type="bibr">2015</xref>). SR denotes subjective ratings (pleasantness, intensity, etc., see Oberlin et al., <xref rid="B51" ref-type="bibr">2016</xref> for details). The scan order is counterbalanced across subjects (beer or Gatorade scan first).</p>
+          </caption>
+          <graphic xlink:href="fnins-13-00583-g0001"/>
+        </fig>
+      </sec>
+      <sec>
+        <title>Image Acquisition and Pre-processing</title>
+        <p>Imaging employed a Siemens 3T Magnetom Trio-Tim (Erlangen, Germany) scanner and a 12-channel head coil array. BOLD contrast sensitive functional data (echo planar imaging, gradient echo, 125 volumes, repetition/echo time 2,250/29 ms, flip angle 78°, field of view 220 ×220 mm, 39 interleaved 3-mm thick axial slices, 2.5 ×2.5 ×3.0 mm<sup>3</sup> voxels, GRAPPA acceleration factor 2) were positioned on a high resolution anatomic volume acquired with a 3D magnetization prepared rapid gradient echo (MPRAGE) sequence. Head movement and motion-related artifacts were minimized using deformable foam pads and real-time three-dimensional prospective acquisition correction (Thesen et al., <xref rid="B69" ref-type="bibr">2000</xref>). Pre-processing was performed with an FSL-based pipeline within Matlab detailed in Contreras et al. (<xref rid="B20" ref-type="bibr">2017</xref>) and Amico et al. (<xref rid="B3" ref-type="bibr">2017</xref>). Denoised (Coupe et al., <xref rid="B22" ref-type="bibr">2008</xref>; Coupé et al., <xref rid="B21" ref-type="bibr">2010</xref>) T1-weighted MPRAGE volumes were non-linearly transformed (FSL's FLIRT &amp; FNIRT) to the Montreal Neurological Institute (MNI) brain template, which also segmented brain tissues. The inverse transformation then allowed parcellation of the cortical (Shen et al., <xref rid="B63" ref-type="bibr">2013</xref>) and subcortical (Patenaude et al., <xref rid="B54" ref-type="bibr">2011</xref>) gray matter in native BOLD data space. BOLD data preprocessing included slice timing correction, motion correction, registration to T1, detrending, band pass filtering (0.009–0.08 Hz), and normalization to mode 1,000 (Smith et al., <xref rid="B64" ref-type="bibr">2013</xref>).</p>
+      </sec>
+      <sec>
+        <title>FC Data Analysis</title>
+        <p>FC correlations are especially sensitive to head motion, so we used rigid-body derived realignment parameters and additional metrics to scrub outlier BOLD volumes (Power et al., <xref rid="B55" ref-type="bibr">2012</xref>, <xref rid="B56" ref-type="bibr">2014</xref>) as described in Amico et al. (<xref rid="B3" ref-type="bibr">2017</xref>). Five of the initial 29 subjects were excluded because one or more (of the six) BOLD scans contained an excessive fraction (&gt;40%) of BOLD volume outliers, resulting in a final sample of 24 subjects. Physiologic noise and residual head motion confounds were regressed out of signals in eroded masks of the whole-brain gray matter, white matter, and cerebrospinal fluid of the third ventricle, with global signal regression also applied. We employed 3 PCA components from segmented masks to better account for noise (Chai et al., <xref rid="B15" ref-type="bibr">2012</xref>; Power et al., <xref rid="B57" ref-type="bibr">2015</xref>). For each subject, we implemented gray matter parcellation into 278 ROIs, as defined by a meta-analysis of resting state fMRI data (Shen et al., <xref rid="B63" ref-type="bibr">2013</xref>). The time series of each ROI was generated by averaging time series of all voxels within that region.</p>
+      </sec>
+      <sec>
+        <title>Brain Networks and Regions of Interest</title>
+        <p>Cortical ROIs defined based on Shen et al. (<xref rid="B63" ref-type="bibr">2013</xref>) parcellation were assigned to one of the seven resting state networks (RSNs) derived from a large study (<italic>n</italic> = 1,000) of young healthy volunteers (Yeo et al., <xref rid="B75" ref-type="bibr">2011</xref>). Thirty-two non-cortical brain regions were assigned to a subcortical network, while 30 cerebellar regions were discarded due to incomplete BOLD acquisition coverage, yielding 248 cerebral regions used in subsequent analyses.</p>
+        <p>Many of the brain networks are relevant to the task; either during the cue presentation (primary and associative visual), while following task instructions (attentional), during oral liquid flavor stimulation periods (somatosensory), or in the post-stimulation periods (limbic, frontoparietal, and default mode). The visual and attentional systems should be largely flavor agnostic, while somatosensory regions do exhibit some flavor-specific enhancements in response to Gatorade, which while matched in flavor intensity (see Oberlin et al., <xref rid="B53" ref-type="bibr">2015</xref>, <xref rid="B51" ref-type="bibr">2016</xref>), cannot be perfectly matched to beer in all possible sensory qualities. The prominence of these three “upstream” networks is a prerequisite to studying limbic, cognitive control, and default mode network region responses to alcohol-cue related gustatory stimuli.</p>
+        <p>While network approaches are commonly used in functional connectivity studies and provide extensive normative data (especially from large resting state studies), it is also of value to understand functional connectivity in the context of specific behavioral circumstances. In the present case, we focused on data derived from a subset of <italic>a priori</italic> regions of interest (ROI) from a study by Oberlin et al. (<xref rid="B51" ref-type="bibr">2016</xref>) in which subjects who varied in alcohol drinking behaviors tasted two flavors of different appetitive significance: those of beer and Gatorade. Here we identified Shen et al. regions that included peak activation coordinates of brain areas that: (1) responded to the flavors of beer and Gatorade and, (2) showed differential flavor responses to assign appropriate Shen regions. Each flavor recruited a large network of sensorimotor regions, gustatory cortex (area “G” in the insula/opercular areas), amygdala, and caudate nucleus. We hypothesized that reward regions such as ventral striatum (VST) and orbitofrontal cortex (OFC) would exhibit beer flavor-enhanced associations (<xref rid="T2" ref-type="table">Table 2</xref>, Oberlin et al., <xref rid="B51" ref-type="bibr">2016</xref>). Of note, the originally reported beer and Gatorade flavor effects (Supplementary Tables S1 and S2 in Oberlin et al., <xref rid="B51" ref-type="bibr">2016</xref>) were relative to the water baseline as is customary in activation studies, while dFC metrics incorporate water trials and are more analogous to the implicit baseline (i.e., resting brain) comparison.</p>
+        <table-wrap id="T2" position="float">
+          <label>Table 2</label>
+          <caption>
+            <p>Models estimating dFC for the two flavors and their difference.</p>
+          </caption>
+          <table frame="hsides" rules="groups">
+            <thead>
+              <tr>
+                <th rowspan="1" colspan="1"/>
+                <th valign="top" align="left" rowspan="1" colspan="1">
+                  <bold>Beer f<sub>w=B</sub>(t)</bold>
+                </th>
+                <th valign="top" align="left" rowspan="1" colspan="1">
+                  <bold>Gatorade f<sub>w=G</sub>(t)</bold>
+                </th>
+                <th valign="top" align="left" rowspan="1" colspan="1">
+                  <bold>Subject-specific g<sub>iw</sub></bold>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">dFCM</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">
+                  <inline-formula>
+                    <mml:math id="M1">
+                      <mml:msub>
+                        <mml:mi>β</mml:mi>
+                        <mml:mn>0</mml:mn>
+                      </mml:msub>
+                      <mml:mo>+</mml:mo>
+                      <mml:msub>
+                        <mml:mi>β</mml:mi>
+                        <mml:mn>1</mml:mn>
+                      </mml:msub>
+                      <mml:mi>t</mml:mi>
+                      <mml:mo>+</mml:mo>
+                      <mml:mstyle displaystyle="true">
+                        <mml:msubsup>
+                          <mml:mo>∑</mml:mo>
+                          <mml:mrow>
+                            <mml:mi>k</mml:mi>
+                            <mml:mo>=</mml:mo>
+                            <mml:mn>1</mml:mn>
+                          </mml:mrow>
+                          <mml:mi>K</mml:mi>
+                        </mml:msubsup>
+                        <mml:mrow>
+                          <mml:msub>
+                            <mml:mi>u</mml:mi>
+                            <mml:mi>k</mml:mi>
+                          </mml:msub>
+                          <mml:msub>
+                            <mml:mi>z</mml:mi>
+                            <mml:mi>k</mml:mi>
+                          </mml:msub>
+                          <mml:mo stretchy="false">(</mml:mo>
+                          <mml:mi>t</mml:mi>
+                          <mml:mo stretchy="false">)</mml:mo>
+                        </mml:mrow>
+                      </mml:mstyle>
+                    </mml:math>
+                  </inline-formula>
+                </td>
+                <td valign="top" align="left" rowspan="1" colspan="1">
+                  <inline-formula>
+                    <mml:math id="M2">
+                      <mml:msub>
+                        <mml:mi>β</mml:mi>
+                        <mml:mn>0</mml:mn>
+                      </mml:msub>
+                      <mml:mo>+</mml:mo>
+                      <mml:msub>
+                        <mml:mi>γ</mml:mi>
+                        <mml:mn>0</mml:mn>
+                      </mml:msub>
+                      <mml:mo>+</mml:mo>
+                      <mml:mo stretchy="false">(</mml:mo>
+                      <mml:msub>
+                        <mml:mi>β</mml:mi>
+                        <mml:mn>1</mml:mn>
+                      </mml:msub>
+                      <mml:mo>+</mml:mo>
+                      <mml:msub>
+                        <mml:mi>γ</mml:mi>
+                        <mml:mn>1</mml:mn>
+                      </mml:msub>
+                      <mml:mo stretchy="false">)</mml:mo>
+                      <mml:mi>t</mml:mi>
+                      <mml:mo>+</mml:mo>
+                      <mml:mstyle displaystyle="true">
+                        <mml:msubsup>
+                          <mml:mo>∑</mml:mo>
+                          <mml:mrow>
+                            <mml:mi>k</mml:mi>
+                            <mml:mo>=</mml:mo>
+                            <mml:mn>1</mml:mn>
+                          </mml:mrow>
+                          <mml:mi>K</mml:mi>
+                        </mml:msubsup>
+                        <mml:mrow>
+                          <mml:msub>
+                            <mml:mi>u</mml:mi>
+                            <mml:mi>k</mml:mi>
+                          </mml:msub>
+                          <mml:msub>
+                            <mml:mi>z</mml:mi>
+                            <mml:mi>k</mml:mi>
+                          </mml:msub>
+                          <mml:mo stretchy="false">(</mml:mo>
+                          <mml:mi>t</mml:mi>
+                          <mml:mo stretchy="false">)</mml:mo>
+                          <mml:mo>+</mml:mo>
+                        </mml:mrow>
+                      </mml:mstyle>
+                      <mml:mstyle displaystyle="true">
+                        <mml:msubsup>
+                          <mml:mo>∑</mml:mo>
+                          <mml:mrow>
+                            <mml:mi>k</mml:mi>
+                            <mml:mo>=</mml:mo>
+                            <mml:mn>1</mml:mn>
+                          </mml:mrow>
+                          <mml:mi>K</mml:mi>
+                        </mml:msubsup>
+                        <mml:mrow>
+                          <mml:msub>
+                            <mml:mi>w</mml:mi>
+                            <mml:mi>k</mml:mi>
+                          </mml:msub>
+                          <mml:msub>
+                            <mml:mi>z</mml:mi>
+                            <mml:mi>k</mml:mi>
+                          </mml:msub>
+                          <mml:mo stretchy="false">(</mml:mo>
+                          <mml:mi>t</mml:mi>
+                          <mml:mo stretchy="false">)</mml:mo>
+                        </mml:mrow>
+                      </mml:mstyle>
+                    </mml:math>
+                  </inline-formula>
+                </td>
+                <td valign="top" align="left" rowspan="1" colspan="1"><italic>b</italic><sub><italic>i</italic>0</sub>+<italic>a</italic><sub><italic>is</italic>0</sub></td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">sFCM</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">
+                  <italic>β</italic>
+                  <sub>0</sub>
+                </td>
+                <td valign="top" align="left" rowspan="1" colspan="1"><italic>β</italic><sub>0</sub>+<italic>γ</italic><sub>0</sub></td>
+                <td valign="top" align="left" rowspan="1" colspan="1"><italic>b</italic><sub><italic>i</italic>0</sub>+<italic>a</italic><sub><italic>is</italic>0</sub></td>
+              </tr>
+            </tbody>
+          </table>
+        </table-wrap>
+      </sec>
+      <sec>
+        <title>Statistical Methods</title>
+        <p>Group-level dFC estimates across time for both flavors and their difference for all pairwise ROI associations were obtained in two steps. First, we estimated pairwise ROI associations at a subject level using the method proposed by Kudela et al. (<xref rid="B44" ref-type="bibr">2017</xref>). Second, we combined the subject-specific estimates using generalized additive mixed models (Ruppert et al., <xref rid="B59" ref-type="bibr">2003</xref>; Durbán et al., <xref rid="B28" ref-type="bibr">2005</xref>) to obtain a population-level dynamically changing association for each flavor and each pair of regions. In sections Subject-Level dFC Estimation and Population-Level dFC Estimation we provide more details for both steps.</p>
+        <sec>
+          <title>Subject-Level dFC Estimation</title>
+          <p>Whole-cerebrum pairwise dFC associations for each scan were estimated at the subject level by applying a recently proposed technique (Kudela et al., <xref rid="B44" ref-type="bibr">2017</xref>) that combines the sliding time window correlation estimation with an extension of the Multivariate Linear Process Bootstrap (MLPB). The latter is a specialized bootstrap method applicable to bootstrapping time series data (Jentsch and Politis, <xref rid="B40" ref-type="bibr">2015</xref>). Specifically, for each subject and pair of regions, we divided the time-series into adjacent time blocks and used the data within each block to generate bootstrap samples of the bivariate time series via MLPB. We then combined these samples across adjacent blocks to create a bootstrap realization of the whole bivariate time series and estimated pairwise correlations via a sliding window approach with a window size equal to 20 TRs, thus reducing the number of time points from 125 to 105. The correlation coefficient values are between −1 and 1. We applied the Fisher Z-transformation to the estimated correlation coefficients to ensure that the homoskedasticity assumption would not be violated in the GAM approach. The bootstrap procedure was repeated 250 times and the median was used to estimate dFC for each pair of regions and each scan.</p>
+          <p>In a recent work by Kudela et al. (<xref rid="B44" ref-type="bibr">2017</xref>), it was shown that the described bootstrapping procedure provides not only valid model-free time-varying connectivity estimates but also their uncertainty level. In that study, the dFC estimation accuracy was assessed through a series of simulation studies and it was demonstrated that the dFC estimates obtained using the bootstrapping algorithm had a smaller mean squared error than the sliding window technique see Figures 3–7 in Kudela et al. (<xref rid="B44" ref-type="bibr">2017</xref>).</p>
+          <p>Two tuning parameters must be specified for the subject-level dFC estimation: the size of the sliding window and the width of the adjustment block used in the bootstrap procedure. Published empirical results were used as a guideline. One of the key parameters in the sliding window technique is the size of the window, with its' optimization a widely discussed research topic. Shorter windows provide more sensitivity to detect dynamic associations, while longer windows offer a better stratification into regions that provide a core structure, but not necessarily the one of importance. In the literature, suggested optimal window size for the sliding window technique are typically between 30 and 60 s (Sakoglu et al., <xref rid="B61" ref-type="bibr">2010</xref>; Leonardi and Van de Ville, <xref rid="B46" ref-type="bibr">2015</xref>; Telesford et al., <xref rid="B68" ref-type="bibr">2016</xref>). Here, due to the attentional shifts (switching between the resting and active time periods), we decided to use 20 time point window, which translates to the window size of 45 s that should better capture the dynamic nature of the signal. Similarly, the width of adjustment blocks for bootstrapping was selected to be 20 time points. In the future work, the effect of the different window sizes should be examined.</p>
+        </sec>
+        <sec>
+          <title>Population-Level dFC Estimation</title>
+          <p>Subject-specific dFC estimates were combined using the generalized additive mixed model (GAMM) framework (Ruppert et al., <xref rid="B59" ref-type="bibr">2003</xref>), which is a principled statistical approach accounting for the hierarchical structure of the data and an unspecified (smooth) form of the dFC. GAMM's flexibility permits the estimation of both overall flavor-FC and scan-by-subject-FC. <xref ref-type="fig" rid="F2">Figure 2</xref> depicts estimated dFC examples for homologous sensorimotor regions (known to activate in this task) for each subject-scan combination. Our specific estimation method relies on a penalized regression approach (see e.g., Ruppert et al., <xref rid="B59" ref-type="bibr">2003</xref>) that accounts for multiple repeated observations per subject while modeling the fixed factors in the experimental design, i.e., three alternating beer and Gatorade scans. This method is also amenable to fast computation in large datasets and facilitated by R's (<ext-link ext-link-type="uri" xlink:href="http://www.r-project.org">www.r-project.org</ext-link>) range of mixed models. In our study, we estimated dFC for 30,628 [derived from (n<sup>*</sup>(n+1)/2)-n pairs; where <italic>n</italic> = 248 regions] pairwise associations for each flavor. The details of the statistical model are presented below.</p>
+          <fig id="F2" position="float">
+            <label>Figure 2</label>
+            <caption>
+              <p>Estimated dynamic functional connectivity associations between the homologous precentral gyri ROIs 34 and 154 from Shen et al. (<xref rid="B63" ref-type="bibr">2013</xref>) for beer (blue) and Gatorade (green) scans for each of the study subjects. dFC estimates for each of three beer and Gatorade scans are illustrated by different line styles (solid, dashed, dotted).</p>
+            </caption>
+            <graphic xlink:href="fnins-13-00583-g0002"/>
+          </fig>
+          <p>We model dFC as: <italic>dFC</italic><sub><italic>ijd</italic></sub> = <italic>f</italic><sub><italic>d</italic></sub>(<italic>t</italic><sub><italic>j</italic></sub>)+<italic>g</italic><sub><italic>id</italic></sub>+ε<sub><italic>ijd</italic></sub>, where a response variable <italic>dFC</italic><sub><italic>ijd</italic></sub> is the estimated dynamic FC for each subject <italic>i</italic> (<italic>i</italic> = 1, ⋯ , 24); time point <italic>j</italic> denoted by <italic>t</italic><sub><italic>j</italic></sub> = 1, ⋯ , 105; and flavor <italic>d</italic> (<italic>d</italic> = <italic>B or G</italic>; <italic>for beer or Gatorade, respectively</italic>). We assume that the error terms, ε<sub><italic>ijd</italic></sub>, are independent and normally distributed <inline-formula><mml:math id="M3"><mml:mi>N</mml:mi><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mrow><mml:mn>0</mml:mn><mml:mo>,</mml:mo><mml:mtext> </mml:mtext><mml:msubsup><mml:mrow><mml:mi>σ</mml:mi></mml:mrow><mml:mrow><mml:mi>ε</mml:mi></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msubsup></mml:mrow><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:math></inline-formula>; <italic>f</italic><sub><italic>d</italic></sub>(<italic>t</italic><sub><italic>j</italic></sub>) is the group-average curve representing the shape of dFC for the flavor <italic>d</italic>; <italic>g</italic><sub><italic>id</italic></sub> is the subject-specific deviation from the group-average curve for flavor <italic>d</italic>. Based on the experimental design, we assumed that <italic>g</italic><sub><italic>id</italic></sub> is a sum of two mutually independent random effects: the subject-specific intercept, <italic>b</italic><sub><italic>i</italic>0</sub> and a nested within-subject random scan effect, <italic>a</italic><sub><italic>is</italic>0</sub> where <inline-formula><mml:math id="M4"><mml:msub><mml:mrow><mml:mtext> </mml:mtext><mml:mi>b</mml:mi></mml:mrow><mml:mrow><mml:mi>i</mml:mi><mml:mn>0</mml:mn></mml:mrow></mml:msub><mml:mo>~</mml:mo><mml:mtext> </mml:mtext><mml:mi>N</mml:mi><mml:mrow><mml:mo stretchy="true">(</mml:mo><mml:mrow><mml:mn>0</mml:mn><mml:mo>,</mml:mo><mml:mtext> </mml:mtext><mml:msubsup><mml:mrow><mml:mi>σ</mml:mi></mml:mrow><mml:mrow><mml:msub><mml:mrow><mml:mi>b</mml:mi></mml:mrow><mml:mrow><mml:mn>0</mml:mn></mml:mrow></mml:msub></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msubsup></mml:mrow><mml:mo stretchy="true">)</mml:mo></mml:mrow></mml:math></inline-formula>, <inline-formula><mml:math id="M5"><mml:msub><mml:mrow><mml:mtext> </mml:mtext><mml:mi>a</mml:mi></mml:mrow><mml:mrow><mml:mi>i</mml:mi><mml:mi>s</mml:mi><mml:mn>0</mml:mn></mml:mrow></mml:msub><mml:mo>~</mml:mo><mml:mtext> </mml:mtext><mml:mi>N</mml:mi><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mrow><mml:mn>0</mml:mn><mml:mo>,</mml:mo><mml:mtext> </mml:mtext><mml:msubsup><mml:mrow><mml:mi>σ</mml:mi></mml:mrow><mml:mrow><mml:msub><mml:mrow><mml:mi>a</mml:mi></mml:mrow><mml:mrow><mml:mn>0</mml:mn></mml:mrow></mml:msub></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msubsup></mml:mrow><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:math></inline-formula>, and s (= 1,2,3) denotes a scan number.</p>
+          <p>The GAMM method enables us to also study the static connectivity (sFCM in <xref rid="T2" ref-type="table">Table 2</xref>) by assuming that the flavor-specific population-level connectivity is constant, but unknown, i.e., <italic>f</italic><sub><italic>B</italic></sub>(<italic>t</italic>) = β<sub>0</sub> for beer and <italic>f</italic><sub><italic>G</italic></sub>(<italic>t</italic>) = β<sub>0</sub> + γ<sub>0</sub> for Gatorade. As a byproduct of this approach, we obtain the difference between flavors as <italic>c</italic>(<italic>t</italic>) = <italic>f</italic><sub><italic>G</italic></sub>(<italic>t</italic>) − <italic>f</italic><sub><italic>B</italic></sub>(<italic>t</italic>) = γ<sub>0</sub>.</p>
+          <p>In the dynamic connectivity model (dFCM in <xref rid="T2" ref-type="table">Table 2</xref>), we assumed that the dFC varied smoothly across time as the brain connectivity varies slowly. The explicit model specification and parameter estimation is presented below. The outcome variable, <italic>y</italic>(<italic>t</italic>), is modeled as a linear combination of basis functions <italic>z</italic><sub><italic>k</italic></sub>(<italic>t</italic>) as <inline-formula><mml:math id="M6"><mml:mi>y</mml:mi><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mrow><mml:mi>t</mml:mi></mml:mrow><mml:mo stretchy="false">)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mi>f</mml:mi><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mrow><mml:mi>t</mml:mi></mml:mrow><mml:mo stretchy="false">)</mml:mo></mml:mrow><mml:mo>+</mml:mo><mml:mi>ε</mml:mi><mml:mo>=</mml:mo><mml:mtext> </mml:mtext><mml:msub><mml:mrow><mml:mi>β</mml:mi></mml:mrow><mml:mrow><mml:mn>0</mml:mn></mml:mrow></mml:msub><mml:mo>+</mml:mo><mml:msub><mml:mrow><mml:mi>β</mml:mi></mml:mrow><mml:mrow><mml:mn>1</mml:mn></mml:mrow></mml:msub><mml:mi>t</mml:mi><mml:mo>+</mml:mo><mml:munderover accentunder="false" accent="false"><mml:mrow><mml:mo>∑</mml:mo></mml:mrow><mml:mrow><mml:mi>k</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mrow><mml:mi>K</mml:mi></mml:mrow></mml:munderover><mml:msub><mml:mrow><mml:mi>u</mml:mi></mml:mrow><mml:mrow><mml:mi>k</mml:mi></mml:mrow></mml:msub><mml:msub><mml:mrow><mml:mi>z</mml:mi></mml:mrow><mml:mrow><mml:mi>k</mml:mi></mml:mrow></mml:msub><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mrow><mml:mi>t</mml:mi></mml:mrow><mml:mo stretchy="false">)</mml:mo></mml:mrow><mml:mo>+</mml:mo><mml:mi>ε</mml:mi></mml:math></inline-formula>, where <italic>z</italic><sub><italic>k</italic></sub>(<italic>t</italic>) are the O'Sullivan spline basis functions (Wand and Ormerod, <xref rid="B72" ref-type="bibr">2008</xref>), the random effects <italic>u</italic><sub><italic>k</italic></sub> are independent and follow normal distribution <inline-formula><mml:math id="M7"><mml:mi>N</mml:mi><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mrow><mml:mn>0</mml:mn><mml:mo>,</mml:mo><mml:mtext> </mml:mtext><mml:msubsup><mml:mrow><mml:mi>σ</mml:mi></mml:mrow><mml:mrow><mml:mi>u</mml:mi></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msubsup></mml:mrow><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:math></inline-formula> and random errors ε are independent and follow a normal distribution <inline-formula><mml:math id="M8"><mml:mi>N</mml:mi><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mrow><mml:mn>0</mml:mn><mml:mo>,</mml:mo><mml:mtext> </mml:mtext><mml:msubsup><mml:mrow><mml:mi>σ</mml:mi></mml:mrow><mml:mrow><mml:mi>ε</mml:mi></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msubsup><mml:mtext> </mml:mtext></mml:mrow><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:math></inline-formula>.</p>
+          <p>The parameters are estimated by minimizing the criterion <inline-formula><mml:math id="M9"><mml:mrow><mml:mi>min</mml:mi><mml:mstyle displaystyle="true"><mml:msubsup><mml:mo>∑</mml:mo><mml:mrow><mml:mi>i</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mi>n</mml:mi></mml:msubsup><mml:mrow><mml:msup><mml:mrow><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>y</mml:mi><mml:mi>i</mml:mi></mml:msub><mml:mo>−</mml:mo><mml:mi>f</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>t</mml:mi><mml:mi>i</mml:mi></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mn>2</mml:mn></mml:msup></mml:mrow></mml:mstyle><mml:mo>+</mml:mo><mml:mi>λ</mml:mi><mml:mstyle displaystyle="true"><mml:msubsup><mml:mo>∑</mml:mo><mml:mrow><mml:mi>k</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mi>K</mml:mi></mml:msubsup><mml:mrow><mml:msubsup><mml:mi>u</mml:mi><mml:mi>k</mml:mi><mml:mn>2</mml:mn></mml:msubsup></mml:mrow></mml:mstyle></mml:mrow></mml:math></inline-formula> (Ruppert et al., <xref rid="B59" ref-type="bibr">2003</xref>). By using the equivalence between the penalized splines estimator of the model and the best linear unbiased estimator of mixed models (Brumback et al., <xref rid="B10" ref-type="bibr">1999</xref>; Durbán et al., <xref rid="B28" ref-type="bibr">2005</xref>), model regression parameters and the smoothing parameter <inline-formula><mml:math id="M10"><mml:mi>λ</mml:mi><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:msubsup><mml:mrow><mml:mi>σ</mml:mi></mml:mrow><mml:mrow><mml:mi>ε</mml:mi></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msubsup></mml:mrow><mml:mrow><mml:msubsup><mml:mrow><mml:mi>σ</mml:mi></mml:mrow><mml:mrow><mml:mi>u</mml:mi></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msubsup></mml:mrow></mml:mfrac></mml:math></inline-formula> are estimated by the restricted maximum likelihood estimation (REML) (see e.g., Ruppert et al., <xref rid="B59" ref-type="bibr">2003</xref>).</p>
+          <p>The population-level-dFC can then be expressed as: (1) <inline-formula><mml:math id="M11"><mml:msub><mml:mrow><mml:mi>f</mml:mi></mml:mrow><mml:mrow><mml:mi>B</mml:mi></mml:mrow></mml:msub><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mrow><mml:mi>t</mml:mi></mml:mrow><mml:mo stretchy="false">)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mtext> </mml:mtext><mml:msub><mml:mrow><mml:mi>β</mml:mi></mml:mrow><mml:mrow><mml:mn>0</mml:mn></mml:mrow></mml:msub><mml:mo>+</mml:mo><mml:msub><mml:mrow><mml:mi>β</mml:mi></mml:mrow><mml:mrow><mml:mn>1</mml:mn></mml:mrow></mml:msub><mml:mi>t</mml:mi><mml:mo>+</mml:mo><mml:munderover accentunder="false" accent="false"><mml:mrow><mml:mo>∑</mml:mo></mml:mrow><mml:mrow><mml:mi>k</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mrow><mml:mi>K</mml:mi></mml:mrow></mml:munderover><mml:msub><mml:mrow><mml:mi>u</mml:mi></mml:mrow><mml:mrow><mml:mi>k</mml:mi></mml:mrow></mml:msub><mml:msub><mml:mrow><mml:mi>z</mml:mi></mml:mrow><mml:mrow><mml:mi>k</mml:mi></mml:mrow></mml:msub><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mrow><mml:mi>t</mml:mi></mml:mrow><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:math></inline-formula> (for beer), (2) <inline-formula><mml:math id="M12"><mml:msub><mml:mrow><mml:mi>f</mml:mi></mml:mrow><mml:mrow><mml:mi>G</mml:mi></mml:mrow></mml:msub><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mrow><mml:mi>t</mml:mi></mml:mrow><mml:mo stretchy="false">)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:msub><mml:mrow><mml:mi>β</mml:mi></mml:mrow><mml:mrow><mml:mn>0</mml:mn></mml:mrow></mml:msub><mml:mo>+</mml:mo><mml:msub><mml:mrow><mml:mi>γ</mml:mi></mml:mrow><mml:mrow><mml:mn>0</mml:mn></mml:mrow></mml:msub><mml:mo>+</mml:mo><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mrow><mml:msub><mml:mrow><mml:mi>β</mml:mi></mml:mrow><mml:mrow><mml:mn>1</mml:mn></mml:mrow></mml:msub><mml:mo>+</mml:mo><mml:msub><mml:mrow><mml:mi>γ</mml:mi></mml:mrow><mml:mrow><mml:mn>1</mml:mn></mml:mrow></mml:msub></mml:mrow><mml:mo stretchy="false">)</mml:mo></mml:mrow><mml:mi>t</mml:mi><mml:mo>+</mml:mo><mml:munderover accentunder="false" accent="false"><mml:mrow><mml:mo>∑</mml:mo></mml:mrow><mml:mrow><mml:mi>k</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mrow><mml:mi>K</mml:mi></mml:mrow></mml:munderover><mml:msub><mml:mrow><mml:mi>u</mml:mi></mml:mrow><mml:mrow><mml:mi>k</mml:mi></mml:mrow></mml:msub><mml:msub><mml:mrow><mml:mi>z</mml:mi></mml:mrow><mml:mrow><mml:mi>k</mml:mi></mml:mrow></mml:msub><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mrow><mml:mi>t</mml:mi></mml:mrow><mml:mo stretchy="false">)</mml:mo></mml:mrow><mml:mo>+</mml:mo><mml:munderover accentunder="false" accent="false"><mml:mrow><mml:mo>∑</mml:mo></mml:mrow><mml:mrow><mml:mi>k</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mrow><mml:mi>K</mml:mi></mml:mrow></mml:munderover><mml:msub><mml:mrow><mml:mi>w</mml:mi></mml:mrow><mml:mrow><mml:mi>k</mml:mi></mml:mrow></mml:msub><mml:msub><mml:mrow><mml:mi>z</mml:mi></mml:mrow><mml:mrow><mml:mi>k</mml:mi></mml:mrow></mml:msub><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mrow><mml:mi>t</mml:mi></mml:mrow><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:math></inline-formula> for Gatorade. With this flavor-specific function representation, the difference between the flavors can be expressed as <inline-formula><mml:math id="M13"><mml:mi>c</mml:mi><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mrow><mml:mi>t</mml:mi></mml:mrow><mml:mo stretchy="false">)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:msub><mml:mrow><mml:mi>f</mml:mi></mml:mrow><mml:mrow><mml:mi>G</mml:mi></mml:mrow></mml:msub><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mrow><mml:mi>t</mml:mi></mml:mrow><mml:mo stretchy="false">)</mml:mo></mml:mrow><mml:mo>-</mml:mo><mml:msub><mml:mrow><mml:mi>f</mml:mi></mml:mrow><mml:mrow><mml:mi>B</mml:mi></mml:mrow></mml:msub><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mrow><mml:mi>t</mml:mi></mml:mrow><mml:mo stretchy="false">)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:msub><mml:mrow><mml:mi>γ</mml:mi></mml:mrow><mml:mrow><mml:mn>0</mml:mn></mml:mrow></mml:msub><mml:mo>+</mml:mo><mml:msub><mml:mrow><mml:mi>γ</mml:mi></mml:mrow><mml:mrow><mml:mn>1</mml:mn></mml:mrow></mml:msub><mml:mi>t</mml:mi><mml:mo>+</mml:mo><mml:munderover accentunder="false" accent="false"><mml:mrow><mml:mo>∑</mml:mo></mml:mrow><mml:mrow><mml:mi>k</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mrow><mml:mi>K</mml:mi></mml:mrow></mml:munderover><mml:msub><mml:mrow><mml:mi>w</mml:mi></mml:mrow><mml:mrow><mml:mi>k</mml:mi></mml:mrow></mml:msub><mml:msub><mml:mrow><mml:mi>z</mml:mi></mml:mrow><mml:mrow><mml:mi>k</mml:mi></mml:mrow></mml:msub><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mrow><mml:mi>t</mml:mi></mml:mrow><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:math></inline-formula>. Parameters <italic>β</italic><sub>0</sub>, <italic>β</italic><sub>1</sub>, <italic>γ</italic><sub>0</sub>, <italic>γ</italic><sub>1</sub> are fixed and <italic>u</italic><sub><italic>k</italic></sub>, <italic>w</italic><sub><italic>k</italic></sub> are random following the normal distributions <inline-formula><mml:math id="M14"><mml:mi>N</mml:mi><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mrow><mml:mn>0</mml:mn><mml:mo>,</mml:mo><mml:mtext> </mml:mtext><mml:msubsup><mml:mrow><mml:mi>σ</mml:mi></mml:mrow><mml:mrow><mml:mi>u</mml:mi></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msubsup></mml:mrow><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:math></inline-formula> and <inline-formula><mml:math id="M15"><mml:mi>N</mml:mi><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mrow><mml:mn>0</mml:mn><mml:mo>,</mml:mo><mml:mtext> </mml:mtext><mml:msubsup><mml:mrow><mml:mi>σ</mml:mi></mml:mrow><mml:mrow><mml:mi>w</mml:mi></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msubsup></mml:mrow><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:math></inline-formula>, respectively. In our analysis, we used O'Sullivan penalized splines (Wand and Ormerod, <xref rid="B72" ref-type="bibr">2008</xref>) due to their appealing properties including smoothness, numerical stability, natural boundary properties, and a direct generalization of smoothing splines. We define a set of knots κ<sub>1</sub>, …, κ<sub><italic>K</italic></sub> according to quantiles across the time domain and set the number of knots <italic>K</italic> to 40, to allow the dFC function to change non-linearly. The main advantage of penalized splines is that due to a penalty imposed on spline basis coefficients, it is less sensitive to the choice of location and the number of knots (Ruppert et al., <xref rid="B59" ref-type="bibr">2003</xref>; Harezlak et al., <xref rid="B36" ref-type="bibr">2018</xref>). If there are too many knots (risk of overfitting), the unnecessary coefficients will be shrunk toward zero. dFCM and sFCM models are summarized in <xref rid="T2" ref-type="table">Table 2</xref>.</p>
+          <p>The steps described in sections Subject-Level dFC Estimation and Population-Level dFC Estimation can be summarized as follows:
+<list list-type="bullet"><list-item><p>Subject-level dFC estimation:</p></list-item><list-item><p>a) For each subject and pair of regions, apply the Multivariate Linear Process Bootstrap, a specialized method for bootstrapping time series data (Jentsch and Politis, <xref rid="B40" ref-type="bibr">2015</xref>) to generate bivariate time series bootstrap samples.</p></list-item><list-item><p>b) Use obtained bootstrap realization of time series for a given pair of regions and apply a sliding window technique to get a set of time-varying estimates of association for each pair of brain regions.</p></list-item><list-item><p>c) Apply Fisher Z-transformation to the entire set of the bootstrapped dFC trajectories.</p></list-item><list-item><p>d) Estimate the subject-level dFC for each pair of regions by the median of the dFC trajectories obtained in step 1c.</p></list-item><list-item><p>Population-level dFC estimation:</p></list-item><list-item><p>a) Treat subject-specific dFC estimates obtained in Step 1 as repeated measurements within subjects.</p></list-item><list-item><p>b) Apply penalized splines within the generalized additive mixed model framework to obtain population-level estimates of dFC for both flavors, their difference, and their confidence intervals.</p></list-item></list></p>
+          <p>By applying presented algorithm to the gustatory fMRI data, we obtained 30,628 estimates and confidence intervals for flavor specific pairwise dFC curves, including dFC curves for the set of <italic>a priori</italic> defined regions. Finally, we needed to summarize the results in a meaningful and principled way. We detail the dFC summary procedure in sections dFC Summary Measure, Multiple Comparison Correction, and Significance Testing Criteria.</p>
+          <p>In addition, we performed supplementary analysis for a set of selected <italic>a priori</italic> regions. Here, instead of using bootstrap-based approach for subject-level dFC estimation (step 1 of presented algorithm), we utilized the regular sliding window approach only and compared the results with proposed bootstrap based method (see <xref ref-type="supplementary-material" rid="SM1">Supplementary Materials</xref> for details).</p>
+        </sec>
+      </sec>
+      <sec>
+        <title>dFC Summary Measure</title>
+        <p>To identify dFC associations of interest, we implemented an objective metric that quantifies the proportion of time during which the confidence intervals around the dFC curve exclude zero on either the positive or negative side. This metric gives a more comprehensive, whole-brain view of the results. For example, 0.8 non-zero coverage indicates that the full confidence interval for the dFC is either above or below zero for 80% of the scan time.</p>
+      </sec>
+      <sec>
+        <title>Multiple Comparison Correction</title>
+        <p>In our study, we calculated population-level pairwise correlations between 248 brain regions, yielding 30,628 estimates and confidence intervals for flavor specific curves and differences between flavors. To account for multiple comparisons, we applied a false discovery rate (FDR) correction (Benjamini and Yekutieli, <xref rid="B7" ref-type="bibr">2001</xref>) with a 0.05 threshold. We also compared our results with a more stringent family-wise error (FWE) rate correction (Bretz et al., <xref rid="B9" ref-type="bibr">2010</xref>) with the significance level set to 0.05 (see <xref ref-type="supplementary-material" rid="SM1">Supplementary Materials</xref>).</p>
+      </sec>
+      <sec>
+        <title>Significance Testing Criteria</title>
+        <p>Informed by the study design, where flavor and water trials in each scan are equally represented, we tested for the proportion of time that the confidence intervals around the dFC curve for beer and Gatorade excluded zero. On average, we expect the proportion of time = 0.5, and ideally, we would only test this during the flavor periods, however temporal smoothing and the sliding window approach precludes such isolated testing. The null hypothesis test for the flavor difference dFC curve was set at a less stringent proportion of time = 0.14, approximating a test for flavor differences during a single flavor block (i.e., 4 flavor trials out of 24 flavor and water trials) adjusted for the sampling limitations of the sliding window approach within the first and last 10 scan time points. In addition, we evaluated significance of flavor differences only when the same pair of regions shows a significant association during the beer scans. To better illustrate the results for a set of <italic>a priori</italic> regions of interest, we present the results using proportion testing at 0.14 and 0.1.</p>
+      </sec>
+    </sec>
+    <sec sec-type="results" id="s3">
+      <title>Results</title>
+      <p>We present the population-level dFC estimation results in the next section and compare them with the static FC estimates in the following section. The summaries are presented first as dFC curves at the pairwise correlation level, second as all brain parcel pairwise comparisons of the non-zero coverage level, and last as comparisons between the dFCM and sFCM model estimates.</p>
+      <sec>
+        <title>Dynamic Functional Connectivity Model (dFCM)</title>
+        <p>We examined a model of non-linearly changing time-dependent associations between the time series of representative pairs of brain regions (<xref ref-type="fig" rid="F3">Figure 3</xref>). Three scenarios where associations during beer scans are positive and enhanced with respect to Gatorade scans are shown in the top panels. During Gatorade scans, the time dependence of the dFC estimates is either more variable as reflected by estimated amplitude and phase of the curves (<xref ref-type="fig" rid="F3">Figures 3A,B</xref>) or almost constant and not significantly different from zero at any time point (<xref ref-type="fig" rid="F3">Figure 3C</xref>). Other time-varying scenarios for the population-level dFC curve estimates are shown in the remaining panels of <xref ref-type="fig" rid="F3">Figure 3</xref>. To validate dFC estimates, we assessed associations of the right sensorimotor cortex (SMC; precentral gyrus region) to three other somatomotor network (SMN) regions, which showed expected positive associations for both flavors and no significant differences between flavors (<xref ref-type="fig" rid="F3">Figures 3D</xref>–<xref ref-type="fig" rid="F3">F</xref>).</p>
+        <fig id="F3" position="float">
+          <label>Figure 3</label>
+          <caption>
+            <p>Examples of time dependence for six pairwise associations in the dCFM model. Blue, green and red lines and shaded areas represent estimated dFC with pointwise 95% CIs for beer, Gatorade, and Gatorade-beer difference, respectively, with the vertical yellow shading representing flavor delivery periods. Three scenarios where associations during beer scans are positive and enhanced with respect to Gatorade scans (the difference curve is negative), are shown in the top panels. In all three cases, the difference significantly differs from zero at similar scan times (peaking between time points 40 and 50). The temporal characteristics of the dFC during Gatorade scans, however, differ in amplitude and phase <bold>(A,B)</bold> or have no time points when the associations differ from zero <bold>(C)</bold>. The bottom panels illustrate expected behavior of associations of the right primary sensorimotor cortex (SMC; right precentral gyrus) and three somatomotor network (SMN) regions, indicating no differences between flavors. A homologous, left precentral gyrus area shows an expected, high, nearly constant, positive association for both flavors <bold>(D)</bold>, while a slightly lower positive association is seen to the ipsilateral Rolandic Operculum (RO)/Insula, area “G” of the primary gustatory cortex <bold>(E)</bold>. The ipsilateral Putamen (subcortical part of the SMN) associations are much lower for both flavors, but slowly increase and remain positive <bold>(F)</bold>.</p>
+          </caption>
+          <graphic xlink:href="fnins-13-00583-g0003"/>
+        </fig>
+        <p>For clarity, we present the model results in a matrix form, where rows and columns represent pairwise brain region associations. The top panels of <xref ref-type="fig" rid="F4">Figure 4</xref> illustrate significant associations (left = all, middle = negative only, right = positive only) as derived by the significance testing of the non-zero coverage across time for beer flavor and FDR-adjusted for multiple comparisons within 248 ROIs. The brain regions are organized into 7 cortical resting state networks (RSN; Yeo et al., <xref rid="B75" ref-type="bibr">2011</xref>) and a subcortical set of regions, with the upper triangular and diagonal elements showing the percentage of significant proportions between and within each network, respectively (e.g., 75% of pairwise associations between somatomotor and ventral attention networks are significant). Each colored dot in the lower triangular elements represents the value of the proportion for a specific pair of brain regions. Many of the significant positive associations are observed within the known RSNs, while negative associations tend to occur between regions from different networks (e.g., 56% of time-varying associations between limbic and dorsal attention network regions have a significant negative non-zero coverage; the DMN is more negatively related to other network regions). As anticipated, the difference between flavors summarized in the bottom panels of <xref ref-type="fig" rid="F4">Figure 4</xref> shows a less regular pattern, reflecting many associations common to both flavors. The highest percentage of significant negative associations (i.e., <italic>f</italic><sub><italic>B</italic></sub> (<italic>t</italic>) − <italic>f</italic><sub><italic>G</italic></sub> (<italic>t</italic>) &gt; 0) involves associations of the visual network regions to frontoparietal and ventral attention networks (14%; <xref ref-type="fig" rid="F4">Figure 4E</xref>), while significant positive associations (i.e., <italic>f</italic><sub><italic>B</italic></sub>(<italic>t</italic>) − <italic>f</italic><sub><italic>G</italic></sub>(<italic>t</italic>) &lt;0) are the highest within the ventral attention network (32%; <xref ref-type="fig" rid="F4">Figure 4F</xref>).</p>
+        <fig id="F4" position="float">
+          <label>Figure 4</label>
+          <caption>
+            <p>dFC model estimates of all, negative, and positive significant associations for beer (top; <bold>A–C</bold>) and flavor difference (bottom; <bold>D–F</bold>), assessed by testing the proportion of time that the confidence intervals around the dFC curve excluded zero. As the null hypothesis for beer associations, the proportion was set to 0.5 and tested against the alternative that proportion is &gt;0.5. Less stringent proportion value of 0.14 was used for flavor difference testing. All results are corrected for multiple comparisons (<italic>p</italic><sub><italic>FDR</italic></sub> &lt; 0.05). Each significant association is depicted as a dot in the lower triangular elements while the diagonal and upper triangular elements illustrate a percentage of significant dFC associations between pairs of regions within each network and between networks, respectively.</p>
+          </caption>
+          <graphic xlink:href="fnins-13-00583-g0004"/>
+        </fig>
+      </sec>
+      <sec>
+        <title>Static Functional Connectivity Model (sFCM)</title>
+        <p>The results presented in <xref ref-type="fig" rid="F5">Figure 5</xref> are in a matrix form, where each element indicates t-statistic of the model parameters. β<sub>0</sub> is an estimate of the static (i.e., constant over time) functional connectivity during the beer scans. γ<sub>0</sub> is an estimate of the static FC for difference between flavors, with negative values indicating associations enhanced by beer (with respect to Gatorade) and positive values indicating associations enhanced by Gatorade (with respect to beer).</p>
+        <fig id="F5" position="float">
+          <label>Figure 5</label>
+          <caption>
+            <p>sFCM estimates for β<sub>0</sub> coefficient representing time-constant associations during beer scans <bold>(A)</bold>. Significant pairwise correlations (pFDR &lt; 0.05; FDR-corrected for multiple comparisons) are shown below the diagonal, while the percentage of significant pairwise ROI associations within- and between- each pair of networks is displayed on and above the diagonal, respectively. None of the sFCM estimates for γ<sub>0</sub> coefficient representing beer-Gatorade (γ<sub>0</sub> &lt; 0; <bold>B</bold>) and Gatorade-beer (γ<sub>0</sub> &gt; 0; <bold>C</bold>) associations satisfy the <italic>p</italic><sub><italic>FDR</italic></sub> &lt; 0.05 criterion so these effects are presented at <italic>p</italic> &lt; 0.05 (two-tailed, uncorrected for multiple comparisons). The color bars with black horizontal lines indicate <italic>t</italic>-statistic values and appropriate display threshold.</p>
+          </caption>
+          <graphic xlink:href="fnins-13-00583-g0005"/>
+        </fig>
+        <sec>
+          <title>Beer Associations (<bold>β</bold><sub><bold>0</bold></sub>)</title>
+          <p>Task-based time-invariant positive associations mirrored established findings from task-free (resting) FC (Yeo et al., <xref rid="B75" ref-type="bibr">2011</xref>) as shown in <xref ref-type="fig" rid="F5">Figure 5A</xref> (<italic>p</italic><sub><italic>FDR</italic></sub> &lt; 0.05; FDR-corrected for multiple comparisons across all ROIs). Between network interactions were predominantly characterized by positive associations between somatomotor and attention (dorsal and ventral) networks, while frontoparietal-visual, DMN-visual, and DMN-attention (dorsal and ventral) networks showed primarily negative associations.</p>
+        </sec>
+        <sec>
+          <title>Flavor-Enhanced Associations (<bold>γ</bold><sub><bold>0</bold></sub>)</title>
+          <p>None of the model estimates for flavor-enhanced associations satisfied the significance criterion (<italic>p</italic><sub><italic>FDR</italic></sub> &lt; 0.05; FDR-corrected for multiple comparisons). For completeness, the directionality of flavor effects (beer-Gatorade; γ<sub>0</sub> &lt; 0 and Gatorade-Beer; γ<sub>0</sub> &gt; 0) is illustrated by <xref ref-type="fig" rid="F5">Figures 5B,C</xref>, respectively presented at an uncorrected significance (<italic>p</italic> &lt; 0.05, two-tailed, single test assumption).</p>
+        </sec>
+      </sec>
+      <sec>
+        <title>Model Comparisons of Associations Between <italic>a priori</italic> Regions of Interest</title>
+        <p>To compare the dFCM and sFCM models, we focused on estimated associations between <italic>a priori</italic> ROIs that responded in the general linear model (GLM) “activation” analysis when contrasting [beer &gt; Gatorade] as reported in the <xref rid="T2" ref-type="table">Table 2</xref> in (Oberlin et al., <xref rid="B51" ref-type="bibr">2016</xref>). During the beer scans (<xref ref-type="fig" rid="F6">Figure 6</xref>, below the diagonal), the dFCM model detected all associations present in the sFCM model as well as four additional associations. When testing for beer-enhanced associations (<xref ref-type="fig" rid="F6">Figure 6</xref>, above the diagonal), none were found in the sFCM model (<xref ref-type="fig" rid="F6">Figure 6C</xref>). However, the dFCM model detected three and seven significant associations for proportion testing levels of 0.14 and 0.1 (<xref ref-type="fig" rid="F6">Figures 6A,B</xref> respectively).</p>
+        <fig id="F6" position="float">
+          <label>Figure 6</label>
+          <caption>
+            <p>dFCM and sFCM estimates for significant associations between <italic>a priori</italic> regions of interest (for dFCM: <bold>A,B</bold>; for sFCM <bold>C</bold>). Lower triangular elements illustrate associations during the beer scans while upper triangular elements indicate beer-enhanced (i.e., <italic>beer</italic> − <italic>Gatorade</italic>) associations. In the dFC model, non-zero coverage metric for beer was tested for the proportion of 0.5, while the flavor difference was tested for the proportion of 0.14 and 0.1 (<bold>A,B</bold>, respectively). Similarly, <bold>(C)</bold> illustrates sFCM model estimates for β<sub>0</sub> (beer scan associations; below the diagonal) and γ<sub>0</sub> coefficient (beer-enhanced associations; above the diagonal). None of the γ<sub>0</sub> estimates reached the significance criterion <italic>p</italic><sub><italic>FDR</italic></sub> &lt; 0.05; FDR-adjusted for multiple comparisons in 248 brain regions). The <italic>t</italic>-statistic values displayed in the color bar illustrate the magnitude and direction of observed associations. Matrix elements for which associations do not reach the significance criterion are grayed out. Brain region indices from Shen et al. (<xref rid="B63" ref-type="bibr">2013</xref>) are in parentheses. L, left; R, right; md, medial; VST, Ventral Striatum; ACC, Anterior Cingulate Cortex; H &amp; B, Head and Body; vAIC, ventral Anterior Insular Cortex; FO, Frontal Operculum; IFG p.T., Inferior Frontal Gyrus (Pars Triangularis); OFC, Orbitofrontal Cortex; SFG, Superior Frontal Gyrus; MFG, Middle Frontal Gyrus; Hippo/Parahi, Hippocampus/Parahippocampal Gyrus.</p>
+          </caption>
+          <graphic xlink:href="fnins-13-00583-g0006"/>
+        </fig>
+        <p>Aside from the overall non-zero coverage metric, the dFC model proposed here can be used to further tease apart the time dependence of regional associations as illustrated by <xref ref-type="fig" rid="F7">Figure 7</xref>. For example, non-zero coverage can be broken into sub-classes, depending on whether the dFC estimates are only positive, only negative, or have both positive and negative contributions. In addition, we can select specific cases and evaluate the flavor difference dFC curve only when the beer associations are positive, and the resulting beer-enhanced associations are significant (i.e., estimated flavor difference curve is negative), as in panels A and D. In the second set of scenarios, estimated flavor difference curve is significantly positive (panels B, C), but that occurs due to a negative association during beer scans in one case (panel B), and positive association during Gatorade in another (panel C). Panels E and F still show significant flavor difference associations but in both cases associations during beer and Gatorade scans are negative.</p>
+        <fig id="F7" position="float">
+          <label>Figure 7</label>
+          <caption>
+            <p>dFCM curve estimates for six (out of seven) significant flavor-enhanced associations between <italic>a priori</italic> regions of interest from <xref ref-type="fig" rid="F6">Figure 6B</xref>. The proportion of time points with non-zero coverage (NZC) is shown in the bottom left of each panel. These results illustrate a variety of scenarios that result in a significant non-zero coverage, with the estimated flavor difference curve either positive <bold>(B,C)</bold>, negative <bold>(A,D,E)</bold>, or both positive and negative <bold>(F)</bold>. Brain region indices from Shen et al. (<xref rid="B63" ref-type="bibr">2013</xref>) are: 43 = R-vAIC/FO, 54 = R-ACC, 91 = R-dAIC/Insula, 114 = R-VST, 134 = R-rostrolateral OFC, 235 = L-Fusiform Gyrus. L, left; R, right; VST, Ventral Striatum; ACC, Anterior Cingulate Cortex; vAIC/dAIC, ventral/dorsal Anterior Insular Cortex; FO, Frontal Operculum; OFC, Orbitofrontal Cortex; Hippo/Parahi, Hippocampus/Parahippocampal Gyrus.</p>
+          </caption>
+          <graphic xlink:href="fnins-13-00583-g0007"/>
+        </fig>
+        <p>In summary, for each flavor both models yielded regional associations closely resembling resting state networks. However, only the dFC model detected beer flavor-potentiated associations between several reward-related regions, including right ventral striatum (VST), lateral orbitofrontal cortex, and ventral anterior insular cortex (vAIC).</p>
+      </sec>
+    </sec>
+    <sec sec-type="discussion" id="s4">
+      <title>Discussion</title>
+      <p>The statistical methodology developed in this work provides a novel approach for the analysis of task-based dynamic functional connectivity. Our approach examines the population–level dFC for a large number of associations between pairs of time-varying processes with a complex correlation structure. We first estimated the time-varying association among 248 functionally defined cerebral regions (Shen et al., <xref rid="B63" ref-type="bibr">2013</xref>) at a subject level using the recently developed algorithm (Kudela et al., <xref rid="B44" ref-type="bibr">2017</xref>). Kudela et al. (<xref rid="B44" ref-type="bibr">2017</xref>) showed that the proposed bootstrapping approach provided a valid model-free, time-varying connectivity estimates together with associated confidence bands. The obtained estimates had a smaller MSE compared to the regular sliding-window approach. As a result, we obtained dFC curves and theirs confidence intervals for all 30,628 pairwise time-varying associations for each subject and scan, which included a set of <italic>a priori</italic> regions of interest. Then, these subject-specific estimates were used to obtain a population-level dynamically changing association for each stimulus and their differences via the semiparametric additive mixed effects model approach. This approach allowed us to incorporate the study design by taking into account scan effects as well as subject- and task-specific variability. As a result, we combined the information across subjects and scans to obtain a population estimate of time-varying association and its confidence intervals for each flavor and the difference between flavors.</p>
+      <p>We also compared the performance of two popular procedures for multiple testing; FDR- and FWER- based correction. The FDR correction for strongly correlated fMRI data was slightly less conservative than the Bonferroni correction, but the resulting number of significant associations was very similar (see <xref ref-type="supplementary-material" rid="SM1">Supplementary Materials</xref>).</p>
+      <p>We proposed a novel metric to summarize the results from population-level pairwise associations for each flavor and difference between flavors by using a non-zero coverage of confidence bands and the magnitude/sign of dFC curves. We showed that the dynamic functional connectivity analysis of the gustatory task fMRI data yielded a pattern closely resembling the resting state networks (the networks found when subjects do not perform any task). Recent studies by Cole et al. (<xref rid="B17" ref-type="bibr">2014</xref>, <xref rid="B18" ref-type="bibr">2016</xref>) reported that the FC architectures across a variety of tasks were highly similar (80% shared variance) to the resting-state FC architecture. This correspondence also strengthens the validity of the outcome. Presented dFC approach also reproduced known static FC between homologous areas and revealed differences in dFC patterns that standard approaches would likely miss. The non-zero coverage for the difference revealed beer and Gatorade differentiation in visual, somatomotor, and attentional networks, as well as frontoparietal and default mode networks. Intercepts from the static FC model, interpreted as the mean dFC across time for each flavor individually, also yielded FC patterns similar to the RSNs. However, no associations for the difference between flavors were significant after adjusting for multiple comparisons in the static model. It should be noted that our approach is fully data-driven and uses the resting state networks only to relate the estimated task-based dFC to the known brain organization.</p>
+      <p>As a validation, we performed analysis for a set of <italic>a priori</italic> regions of interest, which were previously demonstrated to be involved in alcohol cue response (Oberlin et al., <xref rid="B51" ref-type="bibr">2016</xref>). A more targeted analysis showed that ventral striatal, lateral orbitofrontal, and insular regions had time courses that were all positively associated most during beer scans (and more than during Gatorade), confirming their specificity to the response to an alcohol paired cue. The methods used in the (Oberlin et al., <xref rid="B51" ref-type="bibr">2016</xref>) study were GLM-based and implemented in SPM (<ext-link ext-link-type="uri" xlink:href="http://www.fil.ion.ucl.ac.uk/spm/">www.fil.ion.ucl.ac.uk/spm/</ext-link>). While this co-activation approach has been in use for a long time, it is hypothesis driven and assumes identical canonical hemodynamic response (HDR) in all brain areas and subjects. The chemosensory aspect of the gustatory stimuli (taste of beer and Gatorade), however, is not optimally described using a rigid HDR framework. The possibility of sustained responses in some reward-related areas as well as different temporal dependence of BOLD responses in sensory-related and salience-assigning regions (e.g., insula) is better assessed by applying a data-driven approach such as implemented in this work. Indeed, our dFC analysis showed patterns and time dependence of associations that might not be detectable with standard approaches.</p>
+      <p>One of the limitations of the proposed approach is that temporal smoothing introduced by the sliding window application precludes a disentangling of flavor and water stimulus contributions. In other words, reported flavor results might be diminished by the presence of water trials. One solution would be a finer temporal sampling (e.g., subsecond repetition time with multiband acquisition), which would increase the number of measurements 2–3 times. Nevertheless, we were able to reproduce Beer&gt;Water and Gatorade&gt;Water contrast results from Oberlin et al. (<xref rid="B51" ref-type="bibr">2016</xref>). Another limitation is that our approach considers only associations between two brain regions at a time and further extension is needed for more than two regions. To fully benefit from the large sample of estimated dFC curves, an application of clustering algorithms would allow us to investigate different dFC curve classifications. Consequently, one could uncover and test specific time dependence scenarios not easily modeled in the standard FC or GLM-based approaches. In future studies, we plan to extend our dFC analysis to these other domains, as well as to replicate the regions showing specificity to beer flavor. The results presented here were also obtained using a modest size data sample. Hence, more detailed interpretation of presented associations should be left for the follow-up investigations, with the present manuscript speaking to the feasibility of the method.</p>
+      <p>We also compared the performance of the algorithm for a set of <italic>a priori</italic> regions of interests using the regular sliding window approach only during the subject-level estimation of dFC (step one of the proposed algorithm; please see <xref ref-type="supplementary-material" rid="SM1">Supplementary Materials</xref> for details). In general, two approaches yielded similar results. The shape and behavior of dFC trajectories were generally similar, but the bootstrap-based approach provided smoother estimates. Proposed method and the regular sliding window only approach presented similar temporal dependence between pairs of brain regions but differed in detecting the number of statistically significance associations. Nevertheless, the advantages of each approach can only be fully assessed with simulation studies using a realistic data generation mechanism. Further simulation studies with a realistic data generation mechanism would have to be undertaken to conclusively show superior performance. Similar studies have been performed in the Kudela et al. (<xref rid="B44" ref-type="bibr">2017</xref>) manuscript under numerous scenarios.</p>
+      <p>In summary, we demonstrated the importance and utility of the proposed methodology when modeling population-level dFC that can be implemented with the statistical significance criteria applicable at different spatial resolutions—from the whole-brain, to the network level, or even a subset of <italic>a priori</italic> regions. The proposed approach is data-driven and provides flexible methodology to investigate associations between brain regions' time series. More specific to the brain's reward system in those who drink alcohol, the approach showed enhancement of the right ventral striatum and ventral insular cortex association by beer, independently validating the main activation-based finding from Oberlin et al. (<xref rid="B51" ref-type="bibr">2016</xref>), and providing a novel insight into the dynamics of beer-potentiated regional associations.</p>
+    </sec>
+    <sec id="s5">
+      <title>Ethics Statement</title>
+      <p>This study was carried out in accordance with the recommendations of The Indiana University Institutional Review Board (IRB) IRB00000219 in compliance with 21 C.F.R. 56.109 (e) and 46 C.F.R. 46.109 (d) with written informed consent from all subjects. All subjects gave written informed consent in accordance with the Declaration of Helsinki. The protocol was approved by The Indiana University Institutional Review Board (IRB) IRB00000219.</p>
+    </sec>
+    <sec id="s6">
+      <title>Author Contributions</title>
+      <p>MK and JH developed and implemented the statistical models and their application to functional imaging data. DK, BGO, and MD contributed conception and design of the imaging study. MK performed data analyses and wrote the first draft of the manuscript, with feedback provided by JH and MD. ZL helped with additional computations and analysis. JH, MD, DK, BGO, and JG wrote sections of the manuscript. All authors contributed to manuscript revision, read, and approved the submitted version.</p>
+      <sec>
+        <title>Conflict of Interest Statement</title>
+        <p>MK was employed by company Takeda Pharmaceuticals. The remaining authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.</p>
+      </sec>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>We gratefully acknowledge Michele Beal, Courtney Robbins, Dr. William Eiler, Claire Carron, Stella Tran, and Traci Mitchell for technical assistance. The authors acknowledge the Indiana University Pervasive Technology Institute (Stewart et al., <xref rid="B67" ref-type="bibr">2017</xref>) for providing [HPC (Big Red II, Karst, Carbonate), visualization, database, storage, or consulting] resources that have contributed to the research results reported within this paper. <ext-link ext-link-type="uri" xlink:href="https://pti.iu.edu/">https://pti.iu.edu/</ext-link>.</p>
+    </ack>
+    <fn-group>
+      <fn fn-type="financial-disclosure">
+        <p><bold>Funding.</bold> This research was supported in part by grant R01MH108467 awarded to JH (partially supporting JH and JG), R01AA017661-01A1S1 to DK, R00AA023296 to BGO. Additionally, this research was supported by the Indiana Alcohol Research Center (P60AA07611), Indiana Clinical and Translational Sciences Institute Clinical Research Center, UL1TR001108, NIH, National Center for Advancing Translational Sciences, Clinical, and Translational Sciences Award. In addition JG acknowledges support by the NIH grant R01EB022574 and Indiana Clinical and Translational Sciences Institute (Grant UL1TR001108).</p>
+      </fn>
+    </fn-group>
+    <sec sec-type="supplementary-material" id="s7">
+      <title>Supplementary Material</title>
+      <p>The Supplementary Material for this article can be found online at: <ext-link ext-link-type="uri" xlink:href="https://www.frontiersin.org/articles/10.3389/fnins.2019.00583/full#supplementary-material">https://www.frontiersin.org/articles/10.3389/fnins.2019.00583/full#supplementary-material</ext-link></p>
+      <supplementary-material content-type="local-data" id="SM1">
+        <media xlink:href="Data_Sheet_1.docx">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+    </sec>
+    <ref-list>
+      <title>References</title>
+      <ref id="B1">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Adali</surname><given-names>T.</given-names></name><name><surname>Anderson</surname><given-names>M.</given-names></name><name><surname>Fu</surname><given-names>G. S.</given-names></name></person-group> (<year>2014</year>). <article-title>Diversity in independent component and vector analyses: identifiability, algorithms, and applications in medical imaging</article-title>. <source>IEEE Signal Process. Mag.</source>
+<volume>31</volume>, <fpage>18</fpage>–<lpage>33</lpage>. <pub-id pub-id-type="doi">10.1109/MSP.2014.2300511</pub-id></mixed-citation>
+      </ref>
+      <ref id="B2">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Allen</surname><given-names>E. A.</given-names></name><name><surname>Damaraju</surname><given-names>E.</given-names></name><name><surname>Plis</surname><given-names>S. M.</given-names></name><name><surname>Erhardt</surname><given-names>E. B.</given-names></name><name><surname>Eichele</surname><given-names>T.</given-names></name><name><surname>Calhoun</surname><given-names>V. D.</given-names></name></person-group> (<year>2014</year>). <article-title>Tracking whole-brain connectivity dynamics in the resting state</article-title>. <source>Cereb. Cortex</source>
+<volume>24</volume>, <fpage>663</fpage>–<lpage>676</lpage>. <pub-id pub-id-type="doi">10.1093/cercor/bhs352</pub-id><pub-id pub-id-type="pmid">23146964</pub-id></mixed-citation>
+      </ref>
+      <ref id="B3">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Amico</surname><given-names>E.</given-names></name><name><surname>Marinazzo</surname><given-names>D.</given-names></name><name><surname>Di Perri</surname><given-names>C.</given-names></name><name><surname>Heine</surname><given-names>L.</given-names></name><name><surname>Annen</surname><given-names>J.</given-names></name><name><surname>Martial</surname><given-names>C.</given-names></name><etal/></person-group>. (<year>2017</year>). <article-title>Mapping the functional connectome traits of levels of consciousness</article-title>. <source>NeuroImage</source>
+<volume>148</volume>, <fpage>201</fpage>–<lpage>211</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2017.01.020</pub-id><pub-id pub-id-type="pmid">28093358</pub-id></mixed-citation>
+      </ref>
+      <ref id="B4">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Bassett</surname><given-names>D. S.</given-names></name><name><surname>Wymbs</surname><given-names>N. F.</given-names></name><name><surname>Porter</surname><given-names>M. A.</given-names></name><name><surname>Mucha</surname><given-names>P. J.</given-names></name><name><surname>Carlson</surname><given-names>J. M.</given-names></name><name><surname>Grafton</surname><given-names>S. T.</given-names></name></person-group> (<year>2011</year>). <article-title>Dynamic reconfiguration of human brain networks during learning. <italic>Proc. Natl. Acad. Sci</italic></article-title>. <source>U.S.A.</source>
+<volume>108</volume>, <fpage>7641</fpage>–<lpage>7646</lpage>. <pub-id pub-id-type="doi">10.1073/pnas.1018985108</pub-id></mixed-citation>
+      </ref>
+      <ref id="B5">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Bassett</surname><given-names>D. S.</given-names></name><name><surname>Yang</surname><given-names>M.</given-names></name><name><surname>Wymbs</surname><given-names>N. F.</given-names></name><name><surname>Grafton</surname><given-names>S. T.</given-names></name></person-group> (<year>2015</year>). <article-title>Learning-induced autonomy of sensorimotor systems</article-title>. <source>Nat. Neurosci.</source>
+<volume>18</volume>, <fpage>744</fpage>–<lpage>751</lpage>. <pub-id pub-id-type="doi">10.1038/nn.3993</pub-id><pub-id pub-id-type="pmid">25849989</pub-id></mixed-citation>
+      </ref>
+      <ref id="B6">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Beckmann</surname><given-names>C. F.</given-names></name><name><surname>DeLuca</surname><given-names>M.</given-names></name><name><surname>Devlin</surname><given-names>J. T.</given-names></name><name><surname>Smith</surname><given-names>S. M.</given-names></name></person-group> (<year>2005</year>). <article-title>Investigations into resting-state connectivity using independent component analysis</article-title>. <source>Philosop. Trans. R. Soc. B. Biol. Sci.</source>
+<volume>360</volume>, <fpage>1001</fpage>–<lpage>1013</lpage>. <pub-id pub-id-type="doi">10.1098/rstb.2005.1634</pub-id><pub-id pub-id-type="pmid">16087444</pub-id></mixed-citation>
+      </ref>
+      <ref id="B7">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Benjamini</surname><given-names>Y.</given-names></name><name><surname>Yekutieli</surname><given-names>D.</given-names></name></person-group> (<year>2001</year>). <article-title>The control of the false discovery rate in multiple testing under dependency</article-title>. <source>Ann. Stat.</source>
+<volume>29</volume>, <fpage>1165</fpage>–<lpage>1188</lpage>. <pub-id pub-id-type="doi">10.1214/aos/1013699998</pub-id></mixed-citation>
+      </ref>
+      <ref id="B8">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Bolt</surname><given-names>T.</given-names></name><name><surname>Nomi</surname><given-names>J. S.</given-names></name><name><surname>Rubinov</surname><given-names>M.</given-names></name><name><surname>Uddin</surname><given-names>L. Q.</given-names></name></person-group> (<year>2017</year>). <article-title>Correspondence between evoked and intrinsic functional brain network configurations</article-title>. <source>Hum. Brain Mapp.</source>
+<volume>38</volume>, <fpage>1992</fpage>–<lpage>2007</lpage>. <pub-id pub-id-type="doi">10.1002/hbm.23500</pub-id><pub-id pub-id-type="pmid">28052450</pub-id></mixed-citation>
+      </ref>
+      <ref id="B9">
+        <mixed-citation publication-type="book"><person-group person-group-type="author"><name><surname>Bretz</surname><given-names>F.</given-names></name><name><surname>Hothorn</surname><given-names>T.</given-names></name><name><surname>Westfall</surname><given-names>P.</given-names></name></person-group> (<year>2010</year>). <source>Multiple comparisons using R.</source>
+<publisher-loc>Boca Raton, FL</publisher-loc>: <publisher-name>Chapman and Hall/CRC</publisher-name>.</mixed-citation>
+      </ref>
+      <ref id="B10">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Brumback</surname><given-names>B. A.</given-names></name><name><surname>Ruppert</surname><given-names>D.</given-names></name><name><surname>Wand</surname><given-names>M. P.</given-names></name></person-group> (<year>1999</year>). <article-title>Comment on variable selection and function estimation in additive nonparametric regression using a data-based prior</article-title>. <source>J. A. Stat. Assoc.</source>
+<volume>94</volume>, <fpage>794</fpage>–<lpage>797</lpage>. <pub-id pub-id-type="doi">10.2307/2669991</pub-id></mixed-citation>
+      </ref>
+      <ref id="B11">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Calhoun</surname><given-names>V. D.</given-names></name><name><surname>Adali</surname><given-names>T.</given-names></name></person-group> (<year>2012</year>). <article-title>Multisubject independent component analysis of fMRI: a decade of intrinsic networks, default mode, and neurodiagnostic discovery</article-title>. <source>IEEE Rev. Biomed. Eng.</source>
+<volume>5</volume>, <fpage>60</fpage>–<lpage>73</lpage>. <pub-id pub-id-type="doi">10.1109/RBME.2012.2211076</pub-id><pub-id pub-id-type="pmid">23231989</pub-id></mixed-citation>
+      </ref>
+      <ref id="B12">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Calhoun</surname><given-names>V. D.</given-names></name><name><surname>Adali</surname><given-names>T.</given-names></name></person-group> (<year>2016</year>). <article-title>Time-varying brain connectivity in fMRI data: whole-brain data-driven approaches for capturing and characterizing dynamic states</article-title>. <source>IEEE Signal Process. Mag.</source>
+<volume>33</volume>, <fpage>52</fpage>–<lpage>66</lpage>. <pub-id pub-id-type="doi">10.1109/MSP.2015.2478915</pub-id></mixed-citation>
+      </ref>
+      <ref id="B13">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Calhoun</surname><given-names>V. D.</given-names></name><name><surname>Miller</surname><given-names>R.</given-names></name><name><surname>Pearlson</surname><given-names>G.</given-names></name><name><surname>Adali</surname><given-names>T.</given-names></name></person-group> (<year>2014</year>). <article-title>The chronnectome: time-varying connectivity networks as the next frontier in fMRI data discovery</article-title>. <source>Neuron</source>
+<volume>84</volume>, <fpage>262</fpage>–<lpage>274</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuron.2014.10.015</pub-id><pub-id pub-id-type="pmid">25374354</pub-id></mixed-citation>
+      </ref>
+      <ref id="B14">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Calhoun</surname><given-names>V. D.</given-names></name><name><surname>Yaesoubi</surname><given-names>M.</given-names></name><name><surname>Rashid</surname><given-names>B.</given-names></name></person-group> (<year>2013</year>). <article-title>Characterization of connectivity dynamics in intrinsic brain networks. Global conference signal inform</article-title>. <source>Processing</source>
+<volume>2013</volume>:<fpage>6737020</fpage>
+<pub-id pub-id-type="doi">10.1109/GlobalSIP.2013.6737020</pub-id></mixed-citation>
+      </ref>
+      <ref id="B15">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Chai</surname><given-names>X. J.</given-names></name><name><surname>Castañán</surname><given-names>A. N.</given-names></name><name><surname>Öngür</surname><given-names>D.</given-names></name><name><surname>Whitfield-Gabrieli</surname><given-names>S.</given-names></name></person-group> (<year>2012</year>). <article-title>Anticorrelations in resting state networks without global signal regression</article-title>. <source>NeuroImage</source>
+<volume>59</volume>, <fpage>1420</fpage>–<lpage>1428</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2011.08.048</pub-id><pub-id pub-id-type="pmid">21889994</pub-id></mixed-citation>
+      </ref>
+      <ref id="B16">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Chang</surname><given-names>C.</given-names></name><name><surname>Glover</surname><given-names>G. H.</given-names></name></person-group> (<year>2010</year>). <article-title>Time-frequency dynamics of resting-state brain connectivity measured with fMRI</article-title>. <source>NeuroImage</source>
+<volume>50</volume>, <fpage>81</fpage>–<lpage>98</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2009.12.011</pub-id><pub-id pub-id-type="pmid">20006716</pub-id></mixed-citation>
+      </ref>
+      <ref id="B17">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Cole</surname><given-names>M. W.</given-names></name><name><surname>Bassett</surname><given-names>D. S.</given-names></name><name><surname>Power</surname><given-names>J. D.</given-names></name><name><surname>Braver</surname><given-names>T. S.</given-names></name><name><surname>Petersen</surname><given-names>S. E.</given-names></name></person-group> (<year>2014</year>). <article-title>Intrinsic and task-evoked network architectures of the human brain</article-title>. <source>Neuron</source>
+<volume>83</volume>, <fpage>238</fpage>–<lpage>251</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuron.2014.05.014</pub-id><pub-id pub-id-type="pmid">24991964</pub-id></mixed-citation>
+      </ref>
+      <ref id="B18">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Cole</surname><given-names>M. W.</given-names></name><name><surname>Ito</surname><given-names>T.</given-names></name><name><surname>Braver</surname><given-names>T. S.</given-names></name></person-group> (<year>2016</year>). <article-title>The behavioral relevance of task information in human prefrontal cortex</article-title>. <source>Cereb. Cortex</source>
+<volume>26</volume>, <fpage>2497</fpage>–<lpage>2505</lpage>. <pub-id pub-id-type="doi">10.1093/cercor/bhv072</pub-id><pub-id pub-id-type="pmid">25870233</pub-id></mixed-citation>
+      </ref>
+      <ref id="B19">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Contreras</surname><given-names>J. A.</given-names></name><name><surname>Avena-Koenigsberger</surname><given-names>A.</given-names></name><name><surname>Risacher</surname><given-names>S. L.</given-names></name><name><surname>West</surname><given-names>J. D.</given-names></name><name><surname>Tallman</surname><given-names>E.</given-names></name><name><surname>McDonald</surname><given-names>B. C.</given-names></name><etal/></person-group>. (<year>2019</year>). <article-title>Resting state network modularity along the prodromal late onset Alzheimer's disease continuum</article-title>. <source>NeuroImage Clin.</source>
+<volume>22</volume>:<fpage>101687</fpage>. <pub-id pub-id-type="doi">10.1016/j.nicl.2019.101687</pub-id><pub-id pub-id-type="pmid">30710872</pub-id></mixed-citation>
+      </ref>
+      <ref id="B20">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Contreras</surname><given-names>J. A.</given-names></name><name><surname>Goñi</surname><given-names>J.</given-names></name><name><surname>Risacher</surname><given-names>S. L.</given-names></name><name><surname>Amico</surname><given-names>E.</given-names></name><name><surname>Yoder</surname><given-names>K.</given-names></name><name><surname>Dzemidzic</surname><given-names>M.</given-names></name><etal/></person-group>. (<year>2017</year>). <article-title>Cognitive complaints in older adults at risk for Alzheimer's disease are associated with altered resting-state networks</article-title>. <source>Alzheimer's Dementia Diagn. Assess. Dis. Monitor</source>
+<volume>6</volume>, <fpage>40</fpage>–<lpage>49</lpage>. <pub-id pub-id-type="doi">10.1016/j.dadm.2016.12.004</pub-id><pub-id pub-id-type="pmid">28149942</pub-id></mixed-citation>
+      </ref>
+      <ref id="B21">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Coupé</surname><given-names>P.</given-names></name><name><surname>Manjón</surname><given-names>J. V.</given-names></name><name><surname>Gedamu</surname><given-names>E.</given-names></name><name><surname>Arnold</surname><given-names>D.</given-names></name><name><surname>Robles</surname><given-names>M.</given-names></name><name><surname>Collins</surname><given-names>D. L.</given-names></name></person-group> (<year>2010</year>). <article-title>Robust rician noise estimation for MR images</article-title>. <source>Med. Image Anal</source>. <volume>14</volume>, <fpage>483</fpage>–<lpage>493</lpage>. <pub-id pub-id-type="doi">10.1016/j.media.2010.03.001</pub-id><pub-id pub-id-type="pmid">20417148</pub-id></mixed-citation>
+      </ref>
+      <ref id="B22">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Coupe</surname><given-names>P.</given-names></name><name><surname>Yger</surname><given-names>P.</given-names></name><name><surname>Prima</surname><given-names>S.</given-names></name><name><surname>Hellier</surname><given-names>P.</given-names></name><name><surname>Kervrann</surname><given-names>C.</given-names></name><name><surname>Barillot</surname><given-names>C.</given-names></name></person-group> (<year>2008</year>). <article-title>An optimized blockwise nonlocal means denoising filter for 3-D magnetic resonance images</article-title>. <source>IEEE Trans. Med. Imag.</source>
+<volume>27</volume>, <fpage>425</fpage>–<lpage>441</lpage>. <pub-id pub-id-type="doi">10.1109/TMI.2007.906087</pub-id><pub-id pub-id-type="pmid">18390341</pub-id></mixed-citation>
+      </ref>
+      <ref id="B23">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Cribben</surname><given-names>I.</given-names></name><name><surname>Wager</surname><given-names>T. D.</given-names></name><name><surname>Lindquist</surname><given-names>M. A.</given-names></name></person-group> (<year>2013</year>). <article-title>Detecting functional connectivity change points for single-subject fMRI data</article-title>. <source>Front. Comput. Neurosci.</source>
+<volume>7</volume>:<fpage>143</fpage>. <pub-id pub-id-type="doi">10.3389/fncom.2013.00143</pub-id><pub-id pub-id-type="pmid">24198781</pub-id></mixed-citation>
+      </ref>
+      <ref id="B24">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Damaraju</surname><given-names>E.</given-names></name><name><surname>Allen</surname><given-names>E. A.</given-names></name><name><surname>Belger</surname><given-names>A.</given-names></name><name><surname>Ford</surname><given-names>J. M.</given-names></name><name><surname>McEwen</surname><given-names>S.</given-names></name><name><surname>Mathalon</surname><given-names>D. H.</given-names></name><etal/></person-group>. (<year>2014</year>). <article-title>Dynamic functional connectivity analysis reveals transient states of dysconnectivity in schizophrenia</article-title>. <source>NeuroImage. Clin.</source>
+<volume>5</volume>, <fpage>298</fpage>–<lpage>308</lpage>. <pub-id pub-id-type="doi">10.1016/j.nicl.2014.07.003</pub-id><pub-id pub-id-type="pmid">25161896</pub-id></mixed-citation>
+      </ref>
+      <ref id="B25">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Debener</surname><given-names>S.</given-names></name><name><surname>Ullsperger</surname><given-names>M.</given-names></name><name><surname>Siegel</surname><given-names>M.</given-names></name><name><surname>Engel</surname><given-names>A. K.</given-names></name></person-group> (<year>2006</year>). <article-title>Single-trial EEG-fMRI reveals the dynamics of cognitive function</article-title>. <source>Trends Cogn. Sci.</source>
+<volume>10</volume>, <fpage>558</fpage>–<lpage>563</lpage>. <pub-id pub-id-type="doi">10.1016/j.tics.2006.09.010</pub-id><pub-id pub-id-type="pmid">17074530</pub-id></mixed-citation>
+      </ref>
+      <ref id="B26">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Deng</surname><given-names>L.</given-names></name><name><surname>Sun</surname><given-names>J.</given-names></name><name><surname>Cheng</surname><given-names>L.</given-names></name><name><surname>Tong</surname><given-names>S.</given-names></name></person-group> (<year>2016</year>). <article-title>Characterizing dynamic local functional connectivity in the human brain</article-title>. <source>Sci. Rep.</source>
+<volume>6</volume>:<fpage>26976</fpage>. <pub-id pub-id-type="doi">10.1038/srep26976</pub-id><pub-id pub-id-type="pmid">27231194</pub-id></mixed-citation>
+      </ref>
+      <ref id="B27">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Doucet</surname><given-names>G.</given-names></name><name><surname>Naveau</surname><given-names>M.</given-names></name><name><surname>Petit</surname><given-names>L.</given-names></name><name><surname>Zago</surname><given-names>L.</given-names></name><name><surname>Crivello</surname><given-names>F.</given-names></name><name><surname>Jobard</surname><given-names>G.</given-names></name><etal/></person-group>. (<year>2012</year>). <article-title>Patterns of hemodynamic low-frequency oscillations in the brain are modulated by the nature of free thought during rest</article-title>. <source>NeuroImage</source>
+<volume>59</volume>, <fpage>3194</fpage>–<lpage>3200</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2011.11.059</pub-id><pub-id pub-id-type="pmid">22155378</pub-id></mixed-citation>
+      </ref>
+      <ref id="B28">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Durbán</surname><given-names>M.</given-names></name><name><surname>Harezlak</surname><given-names>J.</given-names></name><name><surname>Wand</surname><given-names>M. P.</given-names></name><name><surname>Carroll</surname><given-names>R. J.</given-names></name></person-group> (<year>2005</year>). <article-title>Simple fitting of subject-specific curves for longitudinal data</article-title>. <source>Stat. Med.</source>
+<volume>24</volume>, <fpage>1153</fpage>–<lpage>1167</lpage>. <pub-id pub-id-type="doi">10.1002/sim.1991</pub-id><pub-id pub-id-type="pmid">15568201</pub-id></mixed-citation>
+      </ref>
+      <ref id="B29">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Etzel</surname><given-names>J. A.</given-names></name><name><surname>Cole</surname><given-names>M. W.</given-names></name><name><surname>Zacks</surname><given-names>J. M.</given-names></name><name><surname>Kay</surname><given-names>K. N.</given-names></name><name><surname>Braver</surname><given-names>T. S.</given-names></name></person-group> (<year>2015</year>). <article-title>Reward motivation enhances task coding in frontoparietal cortex</article-title>. <source>Cereb. Cortex</source>
+<volume>26</volume>, <fpage>1647</fpage>–<lpage>1659</lpage>. <pub-id pub-id-type="doi">10.1093/cercor/bhu327</pub-id><pub-id pub-id-type="pmid">25601237</pub-id></mixed-citation>
+      </ref>
+      <ref id="B30">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Filippini</surname><given-names>N.</given-names></name><name><surname>MacIntosh</surname><given-names>B. J.</given-names></name><name><surname>Hough</surname><given-names>M. G.</given-names></name><name><surname>Goodwin</surname><given-names>G. M.</given-names></name><name><surname>Frisoni</surname><given-names>G. B.</given-names></name><name><surname>Smith</surname><given-names>S. M.</given-names></name><etal/></person-group>. (<year>2009</year>). <article-title>Distinct patterns of brain activity in young carriers of the APOE-ε4 allele</article-title>. <source>Proc. Natl. Acad. Sci. U.S.A.</source>
+<volume>106</volume>:<fpage>7209</fpage>–<lpage>7214</lpage>. <pub-id pub-id-type="doi">10.1073/pnas.0811879106</pub-id><pub-id pub-id-type="pmid">19357304</pub-id></mixed-citation>
+      </ref>
+      <ref id="B31">
+        <mixed-citation publication-type="book"><person-group person-group-type="author"><name><surname>Fornito</surname><given-names>A.</given-names></name><name><surname>Zalesky</surname><given-names>A.</given-names></name><name><surname>Bullmore</surname><given-names>E.</given-names></name></person-group> (<year>2016</year>). <source>Fundamentals of Brain Network Analysis</source>. <publisher-name>Academic Press; Elsevier</publisher-name>.</mixed-citation>
+      </ref>
+      <ref id="B32">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Fox</surname><given-names>M. D.</given-names></name><name><surname>Snyder</surname><given-names>A. Z.</given-names></name><name><surname>Vincent</surname><given-names>J. L.</given-names></name><name><surname>Corbetta</surname><given-names>M.</given-names></name><name><surname>Van Essen</surname><given-names>D. C.</given-names></name><name><surname>Raichle</surname><given-names>M. E.</given-names></name></person-group> (<year>2005</year>). <article-title>The human brain is intrinsically organized into dynamic, anticorrelated functional networks</article-title>. <source>Proc. Natl. Acad. Sci. U.S.A.</source>
+<volume>102</volume>, <fpage>9673</fpage>–<lpage>9678</lpage>. <pub-id pub-id-type="doi">10.1073/pnas.0504136102</pub-id><pub-id pub-id-type="pmid">15976020</pub-id></mixed-citation>
+      </ref>
+      <ref id="B33">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Greicius</surname><given-names>M. D.</given-names></name><name><surname>Krasnow</surname><given-names>B.</given-names></name><name><surname>Reiss</surname><given-names>A. L.</given-names></name><name><surname>Menon</surname><given-names>V.</given-names></name></person-group> (<year>2003</year>). <article-title>Functional connectivity in the resting brain: anetwork analysis of the default mode hypothesis</article-title>. <source>Proc. Nat. Acad. Sci. U.S.A</source>. <volume>100</volume>, <fpage>253</fpage>–<lpage>258</lpage>. <pub-id pub-id-type="doi">10.1073/pnas.0135058100</pub-id><pub-id pub-id-type="pmid">12506194</pub-id></mixed-citation>
+      </ref>
+      <ref id="B34">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Gunzerath</surname><given-names>L.</given-names></name><name><surname>Faden</surname><given-names>V.</given-names></name><name><surname>Zakhari</surname><given-names>S.</given-names></name><name><surname>Warren</surname><given-names>K</given-names></name></person-group>. (<year>2004</year>), <article-title>National institute on alcohol abuse alcoholism report on moderate drinking</article-title>. <source>Alcohol. Clin. Exp. Res.</source>
+<volume>28</volume>, <fpage>829</fpage>–<lpage>847</lpage>. <pub-id pub-id-type="doi">10.1097/01.ALC.0000128382.79375.B6g</pub-id><pub-id pub-id-type="pmid">15201626</pub-id></mixed-citation>
+      </ref>
+      <ref id="B35">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Handwerker</surname><given-names>D. A.</given-names></name><name><surname>Roopchansingh</surname><given-names>V.</given-names></name><name><surname>Gonzalez-Castillo</surname><given-names>J.</given-names></name><name><surname>Bandettini</surname><given-names>P. A.</given-names></name></person-group> (<year>2012</year>). <article-title>Periodic changes in fMRI connectivity</article-title>. <source>NeuroImage</source>
+<volume>63</volume>,<fpage>1712</fpage>–<lpage>1719</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2012.06.078</pub-id><pub-id pub-id-type="pmid">22796990</pub-id></mixed-citation>
+      </ref>
+      <ref id="B36">
+        <mixed-citation publication-type="book"><person-group person-group-type="author"><name><surname>Harezlak</surname><given-names>J.</given-names></name><name><surname>Ruppert</surname><given-names>D.</given-names></name><name><surname>Wand</surname><given-names>M. P.</given-names></name></person-group> (<year>2018</year>). <source>Semiparametric Regression with R</source>. <publisher-loc>New York, NY</publisher-loc>: <publisher-name>Springer</publisher-name>.</mixed-citation>
+      </ref>
+      <ref id="B37">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Hutchison</surname><given-names>R. M.</given-names></name><name><surname>Morton</surname><given-names>J. B.</given-names></name></person-group> (<year>2016</year>). <article-title>It's a matter of time: reframing the development of cognitive control as a modification of the brain's temporal dynamics</article-title>. <source>Dev. Cogn. Neurosci.</source>
+<volume>18</volume>, <fpage>70</fpage>–<lpage>77</lpage>. <pub-id pub-id-type="doi">10.1016/j.dcn.2015.08.006</pub-id><pub-id pub-id-type="pmid">26375924</pub-id></mixed-citation>
+      </ref>
+      <ref id="B38">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Hutchison</surname><given-names>R. M.</given-names></name><name><surname>Womelsdorf</surname><given-names>T.</given-names></name><name><surname>Allen</surname><given-names>E. A.</given-names></name><name><surname>Bandettini</surname><given-names>P. A.</given-names></name><name><surname>Calhoun</surname><given-names>V. D.</given-names></name><name><surname>Corbetta</surname><given-names>M.</given-names></name><etal/></person-group>. (<year>2013</year>). <article-title>Dynamic functional connectivity: promise, issues, and interpretations</article-title>. <source>NeuroImage</source>
+<volume>80</volume>, <fpage>360</fpage>–<lpage>378</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2013.05.079</pub-id><pub-id pub-id-type="pmid">23707587</pub-id></mixed-citation>
+      </ref>
+      <ref id="B39">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Hutchison</surname><given-names>R. M.</given-names></name><name><surname>Womelsdorf</surname><given-names>T.</given-names></name><name><surname>Gati</surname><given-names>J. S.</given-names></name><name><surname>Everling</surname><given-names>S.</given-names></name><name><surname>Menon</surname><given-names>R. S.</given-names></name></person-group> (<year>2012</year>). <article-title>Resting-state networks show dynamic functional connectivity in awake humans and anesthetized macaques</article-title>. <source>Hum. Brain Mapp.</source>
+<volume>34</volume>, <fpage>2154</fpage>–<lpage>2177</lpage>. <pub-id pub-id-type="doi">10.1002/hbm.22058</pub-id><pub-id pub-id-type="pmid">22438275</pub-id></mixed-citation>
+      </ref>
+      <ref id="B40">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Jentsch</surname><given-names>C.</given-names></name><name><surname>Politis</surname><given-names>D. N.</given-names></name></person-group> (<year>2015</year>). <article-title>Covariance matrix estimation and linear process bootstrap for multivariate time series of possibly increasing dimension</article-title>. <source>Ann. Stat.</source>
+<volume>43</volume>, <fpage>1117</fpage>–<lpage>1140</lpage>. <pub-id pub-id-type="doi">10.1214/14-AOS1301</pub-id></mixed-citation>
+      </ref>
+      <ref id="B41">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Jones</surname><given-names>D. T.</given-names></name><name><surname>Vemuri</surname><given-names>P.</given-names></name><name><surname>Murphy</surname><given-names>M. C.</given-names></name><name><surname>Gunter</surname><given-names>J. L.</given-names></name><name><surname>Senjem</surname><given-names>M. L.</given-names></name><name><surname>Machulda</surname><given-names>M. M.</given-names></name><etal/></person-group>. (<year>2012</year>). <article-title>Non-stationarity in the resting brain's modular architecture</article-title>. <source>PLoS ONE</source>
+<volume>7</volume>:<fpage>e39731</fpage>. <pub-id pub-id-type="doi">10.1371/journal.pone.0039731</pub-id><pub-id pub-id-type="pmid">22761880</pub-id></mixed-citation>
+      </ref>
+      <ref id="B42">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Keilholz</surname><given-names>S. D.</given-names></name><name><surname>Magnuson</surname><given-names>M. E.</given-names></name><name><surname>Pan</surname><given-names>W.-,J.</given-names></name><name><surname>Willis</surname><given-names>M.</given-names></name><name><surname>Thompson</surname><given-names>G. J.</given-names></name></person-group> (<year>2013</year>). <article-title>Dynamic properties of functional connectivity in the rodent</article-title>. <source>Brain Connect</source>. <volume>3</volume>, <fpage>31</fpage>–<lpage>40</lpage>. <pub-id pub-id-type="doi">10.1089/brain.2012.0115</pub-id><pub-id pub-id-type="pmid">23106103</pub-id></mixed-citation>
+      </ref>
+      <ref id="B43">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Kiviniemi</surname><given-names>V.</given-names></name><name><surname>Vire</surname><given-names>T.</given-names></name><name><surname>Remes</surname><given-names>J.</given-names></name><name><surname>Elseoud</surname><given-names>A. A.</given-names></name><name><surname>Starck</surname><given-names>T.</given-names></name><name><surname>Tervonen</surname><given-names>O.</given-names></name><etal/></person-group>. (<year>2011</year>). <article-title>A sliding time-window ICA reveals spatial variability of the default mode network in time</article-title>. <source>Brain Connect.</source>
+<volume>1</volume>, <fpage>339</fpage>–<lpage>347</lpage>. <pub-id pub-id-type="doi">10.1089/brain.2011.0036</pub-id><pub-id pub-id-type="pmid">22432423</pub-id></mixed-citation>
+      </ref>
+      <ref id="B44">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Kudela</surname><given-names>M.</given-names></name><name><surname>Harezlak</surname><given-names>J.</given-names></name><name><surname>Lindquist</surname><given-names>M. A.</given-names></name></person-group> (<year>2017</year>). <article-title>Assessing uncertainty in dynamic functional connectivity</article-title>. <source>NeuroImage</source>
+<volume>149</volume>, <fpage>165</fpage>–<lpage>177</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2017.01.056</pub-id><pub-id pub-id-type="pmid">28132931</pub-id></mixed-citation>
+      </ref>
+      <ref id="B45">
+        <mixed-citation publication-type="book"><person-group person-group-type="author"><name><surname>Leonardi</surname><given-names>N.</given-names></name><name><surname>Van de Ville</surname><given-names>D.</given-names></name></person-group> (<year>2013</year>). <article-title>Identifying network correlates of brain states using tensor decompositions of whole-brain dynamic functional connectivity</article-title>, in <source>Pattern Recognition in Neuroimaging (PRNI), 2013 International Workshop, 25th Annual Computational Neuroscience Meeting: CNS-2016</source> (<publisher-loc>Seogwipo-si:BMC Neuroscience</publisher-loc>), <fpage>74</fpage>–<lpage>77</lpage>.</mixed-citation>
+      </ref>
+      <ref id="B46">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Leonardi</surname><given-names>N.</given-names></name><name><surname>Van de Ville</surname><given-names>D.</given-names></name></person-group> (<year>2015</year>). <article-title>On spurious and real fluctuations of dynamic functional connectivity during rest</article-title>. <source>NeuroImage</source>
+<volume>104</volume>, <fpage>430</fpage>–<lpage>436</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2014.09.007</pub-id><pub-id pub-id-type="pmid">25234118</pub-id></mixed-citation>
+      </ref>
+      <ref id="B47">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Liégeois</surname><given-names>R.</given-names></name><name><surname>Ziegler</surname><given-names>E.</given-names></name><name><surname>Phillips</surname><given-names>C.</given-names></name><name><surname>Geurts</surname><given-names>P.</given-names></name><name><surname>Gómez</surname><given-names>F.</given-names></name><name><surname>Bahri</surname><given-names>M. A.</given-names></name><etal/></person-group>. (<year>2016</year>). <article-title>Cerebral functional connectivity periodically (de)synchronizes with anatomical constraints</article-title>. <source>Brain Struct. Funct</source>. <volume>221</volume>, <fpage>2985</fpage>–<lpage>2997</lpage>. <pub-id pub-id-type="doi">10.1007/s00429-015-1083-y</pub-id><pub-id pub-id-type="pmid">26197763</pub-id></mixed-citation>
+      </ref>
+      <ref id="B48">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Lindquist</surname><given-names>M. A.</given-names></name><name><surname>Xu</surname><given-names>Y.</given-names></name><name><surname>Nebel</surname><given-names>M. B.</given-names></name><name><surname>Caffo</surname><given-names>B. S.</given-names></name></person-group> (<year>2014</year>). <article-title>Evaluating dynamic bivariate correlations in resting-state fMRI: a comparison study and a new approach</article-title>. <source>NeuroImage</source>
+<volume>101</volume>, <fpage>531</fpage>–<lpage>546</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2014.06.052</pub-id><pub-id pub-id-type="pmid">24993894</pub-id></mixed-citation>
+      </ref>
+      <ref id="B49">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Ma</surname><given-names>S.</given-names></name><name><surname>Calhoun</surname><given-names>V. D.</given-names></name><name><surname>Phlypo</surname><given-names>R.</given-names></name><name><surname>Adali</surname><given-names>T.</given-names></name></person-group> (<year>2014</year>). <article-title>Dynamic changes of spatial functional network connectivity in healthy individuals and schizophrenia patients using independent vector analysis</article-title>. <source>NeuroImage</source>
+<volume>90</volume>, <fpage>196</fpage>–<lpage>206</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2013.12.063</pub-id><pub-id pub-id-type="pmid">24418507</pub-id></mixed-citation>
+      </ref>
+      <ref id="B50">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Mucha</surname><given-names>P. J.</given-names></name><name><surname>Richardson</surname><given-names>T.</given-names></name><name><surname>Macon</surname><given-names>K.</given-names></name><name><surname>Porter</surname><given-names>M. A.</given-names></name><name><surname>Onnela</surname><given-names>J.-P.</given-names></name></person-group> (<year>2010</year>). <article-title>Community structure in time-dependent, multiscale, multiplex networks</article-title>. <source>Science</source>
+<volume>328</volume>, <fpage>876</fpage>–<lpage>878</lpage>. <pub-id pub-id-type="doi">10.1126/science.1184819</pub-id><pub-id pub-id-type="pmid">20466926</pub-id></mixed-citation>
+      </ref>
+      <ref id="B51">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Oberlin</surname><given-names>B.</given-names></name><name><surname>Dzemidzic</surname><given-names>M.</given-names></name><name><surname>Harezlak</surname><given-names>J.</given-names></name><name><surname>Kudela</surname><given-names>M. A.</given-names></name><name><surname>Tran</surname><given-names>S. M.</given-names></name><name><surname>Soeurt</surname><given-names>C. M.</given-names></name><etal/></person-group> (<year>2016</year>). <article-title>Corticostriatal and dopaminergic response to beer flavor with both fMRI and raclopride PET</article-title>. <source>Alcohol. Clin. Exp. Res.</source>
+<volume>40</volume>, <fpage>1865</fpage>–<lpage>1873</lpage>. <pub-id pub-id-type="doi">10.1111/acer.13158</pub-id><pub-id pub-id-type="pmid">27459715</pub-id></mixed-citation>
+      </ref>
+      <ref id="B52">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Oberlin</surname><given-names>B. G.</given-names></name><name><surname>Dzemidzic</surname><given-names>M.</given-names></name><name><surname>Tran</surname><given-names>S. M.</given-names></name><name><surname>Soeurt</surname><given-names>C. M.</given-names></name><name><surname>Albrecht</surname><given-names>D. S.</given-names></name><name><surname>Yoder</surname><given-names>K. K.</given-names></name><etal/></person-group> (<year>2013</year>). <article-title>Striatal dopamine release in response to beer flavor: mediation by family history of alcoholism</article-title>. <source>Neuropsychopharmacology</source>
+<volume>38</volume>, <fpage>1617</fpage>–<lpage>1624</lpage>. <pub-id pub-id-type="doi">10.1038/npp.2013.91</pub-id><pub-id pub-id-type="pmid">23588036</pub-id></mixed-citation>
+      </ref>
+      <ref id="B53">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Oberlin</surname><given-names>B. G.</given-names></name><name><surname>Dzemidzic</surname><given-names>M.</given-names></name><name><surname>Tran</surname><given-names>S. M.</given-names></name><name><surname>Soeurt</surname><given-names>C. M.</given-names></name><name><surname>O'Connor</surname><given-names>S. J.</given-names></name><name><surname>Yoder</surname><given-names>K. K.</given-names></name><etal/></person-group>. (<year>2015</year>). <article-title>Beer self-administration provokes lateralized nucleus accumbens dopamine release in male heavy drinkers</article-title>. <source>Psychopharmacology</source>
+<volume>232</volume>, <fpage>861</fpage>–<lpage>870</lpage>. <pub-id pub-id-type="doi">10.1007/s00213-014-3720-1</pub-id><pub-id pub-id-type="pmid">25163422</pub-id></mixed-citation>
+      </ref>
+      <ref id="B54">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Patenaude</surname><given-names>B.</given-names></name><name><surname>Smith</surname><given-names>S. M.</given-names></name><name><surname>Kennedy</surname><given-names>D. N.</given-names></name><name><surname>Jenkinson</surname><given-names>M.</given-names></name></person-group> (<year>2011</year>). <article-title>A bayesian model of shape and appearance for subcortical brain segmentation</article-title>. <source>NeuroImage</source>
+<volume>56</volume>, <fpage>907</fpage>–<lpage>922</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2011.02.046</pub-id><pub-id pub-id-type="pmid">21352927</pub-id></mixed-citation>
+      </ref>
+      <ref id="B55">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Power</surname><given-names>J. D.</given-names></name><name><surname>Barnes</surname><given-names>K. A.</given-names></name><name><surname>Snyder</surname><given-names>A. Z.</given-names></name><name><surname>Schlaggar</surname><given-names>B. L.</given-names></name><name><surname>Petersen</surname><given-names>S. E.</given-names></name></person-group> (<year>2012</year>). <article-title>Spurious but systematic correlations in functional connectivity MRI networks arise from subject motion</article-title>. <source>NeuroImage</source>
+<volume>59</volume>, <fpage>2142</fpage>–<lpage>2154</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2011.10.018</pub-id><pub-id pub-id-type="pmid">22019881</pub-id></mixed-citation>
+      </ref>
+      <ref id="B56">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Power</surname><given-names>J. D.</given-names></name><name><surname>Mitra</surname><given-names>A.</given-names></name><name><surname>Laumann</surname><given-names>T. O.</given-names></name><name><surname>Snyder</surname><given-names>A. Z.</given-names></name><name><surname>Schlaggar</surname><given-names>B. L.</given-names></name><name><surname>Petersen</surname><given-names>S. E.</given-names></name></person-group> (<year>2014</year>). <article-title>Methods to detect, characterize, and remove motion artifact in resting state fMRI</article-title>. <source>NeuroImage</source>
+<volume>84</volume>, <fpage>320</fpage>–<lpage>341</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2013.08.048</pub-id><pub-id pub-id-type="pmid">23994314</pub-id></mixed-citation>
+      </ref>
+      <ref id="B57">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Power</surname><given-names>J. D.</given-names></name><name><surname>Schlaggar</surname><given-names>B. L.</given-names></name><name><surname>Petersen</surname><given-names>S. E.</given-names></name></person-group> (<year>2015</year>). <article-title>Recent progress and outstanding issues in motion correction in resting state fMRI</article-title>. <source>NeuroImage</source>
+<volume>105</volume>, <fpage>536</fpage>–<lpage>551</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2014.10.044</pub-id><pub-id pub-id-type="pmid">25462692</pub-id></mixed-citation>
+      </ref>
+      <ref id="B58">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Preti</surname><given-names>M. G.</given-names></name><name><surname>Bolton</surname><given-names>T. A.</given-names></name><name><surname>Van De Ville</surname><given-names>D.</given-names></name></person-group> (<year>2017</year>). <article-title>The dynamic functional connectome: state-of-the-art and perspectives</article-title>. <source>NeuroImage</source>
+<volume>160</volume>, <fpage>41</fpage>–<lpage>54</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2016.12.061</pub-id><pub-id pub-id-type="pmid">28034766</pub-id></mixed-citation>
+      </ref>
+      <ref id="B59">
+        <mixed-citation publication-type="book"><person-group person-group-type="author"><name><surname>Ruppert</surname><given-names>D.</given-names></name><name><surname>Wand</surname><given-names>M. P.</given-names></name><name><surname>Carroll</surname><given-names>R. J.</given-names></name></person-group> (<year>2003</year>). <source>Semiparametric Regression</source>. <publisher-loc>Cambridge</publisher-loc>: <publisher-name>Cambridge University Press</publisher-name>. </mixed-citation>
+      </ref>
+      <ref id="B60">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Sadaghiani</surname><given-names>S.</given-names></name><name><surname>Hesselmann</surname><given-names>G.</given-names></name><name><surname>Kleinschmidt</surname><given-names>A.</given-names></name></person-group> (<year>2009</year>). <article-title>Distributed and antagonistic contributions of ongoing activity fluctuations to auditory stimulus detection</article-title>. <source>J. Neurosci.</source>
+<volume>29</volume>, <fpage>13410</fpage>–<lpage>13417</lpage>. <pub-id pub-id-type="doi">10.1523/JNEUROSCI.2592-09.2009</pub-id><pub-id pub-id-type="pmid">19846728</pub-id></mixed-citation>
+      </ref>
+      <ref id="B61">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Sakoglu</surname><given-names>U.</given-names></name><name><surname>Pearlson</surname><given-names>G. D.</given-names></name><name><surname>Kiehl</surname><given-names>K. A.</given-names></name><name><surname>Wang</surname><given-names>Y. M.</given-names></name><name><surname>Michael</surname><given-names>A. M.</given-names></name><name><surname>Calhoun</surname><given-names>V. D.</given-names></name></person-group> (<year>2010</year>). <article-title>A method for evaluating dynamic functional network connectivity and task-modulation: application to schizophrenia</article-title>. <source>Magn. Res. Mat. Phys. Biol. Med.</source>
+<volume>23</volume>, <fpage>351</fpage>–<lpage>366</lpage>. <pub-id pub-id-type="doi">10.1007/s10334-010-0197-8</pub-id><pub-id pub-id-type="pmid">20162320</pub-id></mixed-citation>
+      </ref>
+      <ref id="B62">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Saunders</surname><given-names>J. B.</given-names></name><name><surname>Aasland</surname><given-names>O. G.</given-names></name><name><surname>Babor</surname><given-names>T. F.</given-names></name><name><surname>de la Fuente</surname><given-names>J. R.</given-names></name><name><surname>Grant</surname><given-names>M.</given-names></name></person-group> (<year>1993</year>). <article-title>Development of the Alcohol Use Disorders Identification Test (AUDIT):WHO collaborative project on early detection of persons with harmful alcohol consumption-II</article-title>. <source>Addiction</source>
+<volume>88</volume>, <fpage>791</fpage>–<lpage>804</lpage>. <pub-id pub-id-type="doi">10.1111/j.1360-0443.1993.tb02093.x</pub-id><pub-id pub-id-type="pmid">8329970</pub-id></mixed-citation>
+      </ref>
+      <ref id="B63">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Shen</surname><given-names>X.</given-names></name><name><surname>Tokoglu</surname><given-names>F.</given-names></name><name><surname>Papademetris</surname><given-names>X.</given-names></name><name><surname>Constable</surname><given-names>R. T.</given-names></name></person-group> (<year>2013</year>). <article-title>Groupwise whole-brain parcellation from resting-state fMRI data for network node identification</article-title>. <source>NeuroImage</source>
+<volume>82</volume>, <fpage>403</fpage>–<lpage>415</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2013.05.081</pub-id><pub-id pub-id-type="pmid">23747961</pub-id></mixed-citation>
+      </ref>
+      <ref id="B64">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Smith</surname><given-names>S. M.</given-names></name><name><surname>Beckmann</surname><given-names>C. F.</given-names></name><name><surname>Andersson</surname><given-names>J.</given-names></name><name><surname>Auerbach</surname><given-names>E. J.</given-names></name><name><surname>Bijsterbosch</surname><given-names>J.</given-names></name><name><surname>Douaud</surname><given-names>G.</given-names></name><etal/></person-group>. (<year>2013</year>). <article-title>Resting-state fMRI in the human connectome project</article-title>. <source>NeuroImage</source>
+<volume>80</volume>, <fpage>144</fpage>–<lpage>168</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2013.05.039</pub-id><pub-id pub-id-type="pmid">23702415</pub-id></mixed-citation>
+      </ref>
+      <ref id="B65">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Sobell</surname><given-names>M. B.</given-names></name><name><surname>Sobell</surname><given-names>L. C.</given-names></name><name><surname>Klajner</surname><given-names>F.</given-names></name><name><surname>Pavan</surname><given-names>D.</given-names></name><name><surname>Basian</surname><given-names>E.</given-names></name></person-group> (<year>1986</year>). <article-title>The reliability of a timeline method for assessing normal drinker college students' recent drinking history: utility for alcohol research</article-title>. <source>Addict. Behav.</source>
+<volume>11</volume>, <fpage>149</fpage>–<lpage>161</lpage>. <pub-id pub-id-type="doi">10.1016/0306-4603(86)90040-7</pub-id><pub-id pub-id-type="pmid">3739800</pub-id></mixed-citation>
+      </ref>
+      <ref id="B66">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Starck</surname><given-names>T.</given-names></name><name><surname>Nikkinen</surname><given-names>J.</given-names></name><name><surname>Rahko</surname><given-names>J.</given-names></name><name><surname>Remes</surname><given-names>J.</given-names></name><name><surname>Hurtig</surname><given-names>T.</given-names></name><name><surname>Haapsamo</surname><given-names>H.</given-names></name><etal/></person-group>. (<year>2013</year>). <article-title>Resting state fMRI reveals a default mode dissociation between retrosplenial and medial prefrontal subnetworks in ASD despite motion scrubbing</article-title>. <source>Front. Hum. Neurosci.</source>
+<volume>7</volume>:<fpage>802</fpage>. <pub-id pub-id-type="doi">10.3389/fnhum.2013.00802</pub-id><pub-id pub-id-type="pmid">24319422</pub-id></mixed-citation>
+      </ref>
+      <ref id="B67">
+        <mixed-citation publication-type="book"><person-group person-group-type="author"><name><surname>Stewart</surname><given-names>C. A.</given-names></name><name><surname>Welch</surname><given-names>V.</given-names></name><name><surname>Plale</surname><given-names>B.</given-names></name><name><surname>Fox</surname><given-names>G.</given-names></name><name><surname>Pierce</surname><given-names>M.</given-names></name><name><surname>Sterling</surname><given-names>T.</given-names></name></person-group> (<year>2017</year>). <source>Indiana University</source>. <publisher-loc>Bloomington</publisher-loc>: <publisher-name>Pervasive Technology Institute</publisher-name>.</mixed-citation>
+      </ref>
+      <ref id="B68">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Telesford</surname><given-names>Q. K.</given-names></name><name><surname>Lynall</surname><given-names>M. E.</given-names></name><name><surname>Vettel</surname><given-names>J.</given-names></name><name><surname>Miller</surname><given-names>M. B.</given-names></name><name><surname>Grafton</surname><given-names>S. T.</given-names></name><name><surname>Bassett</surname><given-names>D. S.</given-names></name></person-group> (<year>2016</year>). <article-title>Detection of functional brain network reconfiguration during task-driven cognitive states</article-title>. <source>NeuroImage</source>
+<volume>142</volume>, <fpage>198</fpage>–<lpage>210</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2016.05.078</pub-id><pub-id pub-id-type="pmid">27261162</pub-id></mixed-citation>
+      </ref>
+      <ref id="B69">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Thesen</surname><given-names>S.</given-names></name><name><surname>Heid</surname><given-names>O.</given-names></name><name><surname>Mueller</surname><given-names>E.</given-names></name><name><surname>Schad</surname><given-names>L. R.</given-names></name></person-group> (<year>2000</year>). <article-title>Prospective acquisition correction for head motion with image-based tracking for real-time fMRI</article-title>. <source>Magn. Res. Med.</source>
+<volume>44</volume>, <fpage>457</fpage>–<lpage>465</lpage>. <pub-id pub-id-type="doi">10.1002/1522-2594(200009)44:3&lt;457::AID-MRM17&gt;3.0.CO;2-R</pub-id><pub-id pub-id-type="pmid">10975899</pub-id></mixed-citation>
+      </ref>
+      <ref id="B70">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Turk-Browne</surname><given-names>N. B.</given-names></name></person-group> (<year>2013</year>). <article-title>Functional interactions as big data in the human brain</article-title>. <source>Science</source>
+<volume>342</volume>, <fpage>580</fpage>–<lpage>584</lpage>. <pub-id pub-id-type="doi">10.1126/science.1238409</pub-id><pub-id pub-id-type="pmid">24179218</pub-id></mixed-citation>
+      </ref>
+      <ref id="B71">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Uddin</surname><given-names>L. Q.</given-names></name></person-group> (<year>2015</year>). <article-title>Salience processing and insular cortical function and dysfunction</article-title>. <source>Nat. Rev. Neurosci.</source>
+<volume>16</volume>:<fpage>55</fpage>. <pub-id pub-id-type="doi">10.1038/nrn3857</pub-id><pub-id pub-id-type="pmid">25406711</pub-id></mixed-citation>
+      </ref>
+      <ref id="B72">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Wand</surname><given-names>M. P.</given-names></name><name><surname>Ormerod</surname><given-names>J. T.</given-names></name></person-group> (<year>2008</year>). <article-title>On semiparametric regression with o'sullivan penalized splines</article-title>. <source>A. N.Z. J. Stat.</source>
+<volume>50</volume>, <fpage>179</fpage>–<lpage>198</lpage>. <pub-id pub-id-type="doi">10.1111/j.1467-842X.2008.00507.x</pub-id></mixed-citation>
+      </ref>
+      <ref id="B73">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Whitfield-Gabrieli</surname><given-names>S.</given-names></name><name><surname>Ford</surname><given-names>J. M.</given-names></name></person-group> (<year>2012</year>). <article-title>Default mode network activity and connectivity in psychopathology</article-title>. <source>Ann. Rev. Clin. Psychol.</source>
+<volume>8</volume>, <fpage>49</fpage>–<lpage>76</lpage>. <pub-id pub-id-type="doi">10.1146/annurev-clinpsy-032511-143049</pub-id><pub-id pub-id-type="pmid">22224834</pub-id></mixed-citation>
+      </ref>
+      <ref id="B74">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Yaesoubi</surname><given-names>M.</given-names></name><name><surname>Allen</surname><given-names>E. A.</given-names></name><name><surname>Miller</surname><given-names>R. L.</given-names></name><name><surname>Calhoun</surname><given-names>V. D.</given-names></name></person-group> (<year>2015</year>). <article-title>Dynamic coherence analysis of resting fMRI data to jointly capture state-based phase, frequency, and time domain information</article-title>. <source>NeuroImage</source>
+<volume>120</volume>, <fpage>133</fpage>–<lpage>142</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2015.07.002</pub-id><pub-id pub-id-type="pmid">26162552</pub-id></mixed-citation>
+      </ref>
+      <ref id="B75">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Yeo</surname><given-names>B. T.</given-names></name><name><surname>Krienen</surname><given-names>F. M.</given-names></name><name><surname>Sepulcre</surname><given-names>J.</given-names></name><name><surname>Sabuncu</surname><given-names>M. R.</given-names></name><name><surname>Lashkari</surname><given-names>D.</given-names></name><name><surname>Hollinshead</surname><given-names>M.</given-names></name><etal/></person-group>. (<year>2011</year>). <article-title>The organization of the human cerebral cortex estimated by intrinsic functional connectivity</article-title>. <source>J. Neurophysiology</source>
+<volume>106</volume>, <fpage>1125</fpage>–<lpage>1165</lpage>. <pub-id pub-id-type="doi">10.1152/jn.00338.2011</pub-id><pub-id pub-id-type="pmid">21653723</pub-id></mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

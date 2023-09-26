@@ -1,0 +1,732 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.3" xml:lang="en" article-type="research-article">
+  <?properties open_access?>
+  <processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats">
+    <restricted-by>pmc</restricted-by>
+  </processing-meta>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">Front Neuroinform</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Front Neuroinform</journal-id>
+      <journal-id journal-id-type="publisher-id">Front. Neuroinform.</journal-id>
+      <journal-title-group>
+        <journal-title>Frontiers in Neuroinformatics</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1662-5196</issn>
+      <publisher>
+        <publisher-name>Frontiers Media S.A.</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">35273487</article-id>
+      <article-id pub-id-type="pmc">8901599</article-id>
+      <article-id pub-id-type="doi">10.3389/fninf.2022.761942</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Neuroscience</subject>
+          <subj-group>
+            <subject>Original Research</subject>
+          </subj-group>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Identifying Boys With Autism Spectrum Disorder Based on Whole-Brain Resting-State Interregional Functional Connections Using a Boruta-Based Support Vector Machine Approach</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Zhao</surname>
+            <given-names>Lei</given-names>
+          </name>
+          <xref rid="aff1" ref-type="aff">
+<sup>1</sup>
+</xref>
+          <xref rid="aff2" ref-type="aff">
+<sup>2</sup>
+</xref>
+          <xref rid="aff3" ref-type="aff">
+<sup>3</sup>
+</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Sun</surname>
+            <given-names>Yun-Kai</given-names>
+          </name>
+          <xref rid="aff4" ref-type="aff">
+<sup>4</sup>
+</xref>
+          <uri xlink:href="http://loop.frontiersin.org/people/1405709/overview"/>
+        </contrib>
+        <contrib contrib-type="author" corresp="yes">
+          <name>
+            <surname>Xue</surname>
+            <given-names>Shao-Wei</given-names>
+          </name>
+          <xref rid="aff1" ref-type="aff">
+<sup>1</sup>
+</xref>
+          <xref rid="aff2" ref-type="aff">
+<sup>2</sup>
+</xref>
+          <xref rid="aff3" ref-type="aff">
+<sup>3</sup>
+</xref>
+          <xref rid="c001" ref-type="corresp">
+<sup>*</sup>
+</xref>
+          <uri xlink:href="http://loop.frontiersin.org/people/423131/overview"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Luo</surname>
+            <given-names>Hong</given-names>
+          </name>
+          <xref rid="aff1" ref-type="aff">
+<sup>1</sup>
+</xref>
+          <xref rid="aff2" ref-type="aff">
+<sup>2</sup>
+</xref>
+          <xref rid="aff3" ref-type="aff">
+<sup>3</sup>
+</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Lu</surname>
+            <given-names>Xiao-Dong</given-names>
+          </name>
+          <xref rid="aff1" ref-type="aff">
+<sup>1</sup>
+</xref>
+          <xref rid="aff2" ref-type="aff">
+<sup>2</sup>
+</xref>
+          <xref rid="aff3" ref-type="aff">
+<sup>3</sup>
+</xref>
+        </contrib>
+        <contrib contrib-type="author" corresp="yes">
+          <name>
+            <surname>Zhang</surname>
+            <given-names>Lan-Hua</given-names>
+          </name>
+          <xref rid="aff5" ref-type="aff">
+<sup>5</sup>
+</xref>
+          <xref rid="c002" ref-type="corresp">
+<sup>*</sup>
+</xref>
+          <uri xlink:href="http://loop.frontiersin.org/people/334856/overview"/>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1"><sup>1</sup><institution>Centre for Cognition and Brain Disorders, The Affiliated Hospital of Hangzhou Normal University</institution>, <addr-line>Hangzhou</addr-line>, <country>China</country></aff>
+      <aff id="aff2"><sup>2</sup><institution>Institute of Psychological Science, Hangzhou Normal University</institution>, <addr-line>Hangzhou</addr-line>, <country>China</country></aff>
+      <aff id="aff3"><sup>3</sup><institution>Zhejiang Key Laboratory for Research in Assessment of Cognitive Impairments</institution>, <addr-line>Hangzhou</addr-line>, <country>China</country></aff>
+      <aff id="aff4"><sup>4</sup><institution>Department of Psychiatry, Sir Run Run Shaw Hospital, Zhejiang University School of Medicine</institution>, <addr-line>Hangzhou</addr-line>, <country>China</country></aff>
+      <aff id="aff5"><sup>5</sup><institution>College of Medical Information and Engineering, Shandong First Medical University and Shandong Academy of Medical Sciences</institution>, <addr-line>Tai'an</addr-line>, <country>China</country></aff>
+      <author-notes>
+        <fn fn-type="edited-by">
+          <p>Edited by: Jiaojian Wang, University of Electronic Science and Technology of China, China</p>
+        </fn>
+        <fn fn-type="edited-by">
+          <p>Reviewed by: Graham J. Galloway, Herston Imaging Research Facility (HIRF), Australia; Ana María Bernardos, Polytechnic University of Madrid, Spain</p>
+        </fn>
+        <corresp id="c001">*Correspondence: Shao-Wei Xue <email>xuedrm@126.com</email></corresp>
+        <corresp id="c002">Lan-Hua Zhang <email>acm_ict@163.com</email></corresp>
+      </author-notes>
+      <pub-date pub-type="epub">
+        <day>22</day>
+        <month>2</month>
+        <year>2022</year>
+      </pub-date>
+      <pub-date pub-type="collection">
+        <year>2022</year>
+      </pub-date>
+      <volume>16</volume>
+      <elocation-id>761942</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>20</day>
+          <month>8</month>
+          <year>2021</year>
+        </date>
+        <date date-type="accepted">
+          <day>12</day>
+          <month>1</month>
+          <year>2022</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Copyright © 2022 Zhao, Sun, Xue, Luo, Lu and Zhang.</copyright-statement>
+        <copyright-year>2022</copyright-year>
+        <copyright-holder>Zhao, Sun, Xue, Luo, Lu and Zhang</copyright-holder>
+        <license>
+          <ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref>
+          <license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY). The use, distribution or reproduction in other forums is permitted, provided the original author(s) and the copyright owner(s) are credited and that the original publication in this journal is cited, in accordance with accepted academic practice. No use, distribution or reproduction is permitted which does not comply with these terms.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>An increasing number of resting-state functional magnetic resonance neuroimaging (R-fMRI) studies have used functional connections as discriminative features for machine learning to identify patients with brain diseases. However, it remains unclear which functional connections could serve as highly discriminative features to realize the classification of autism spectrum disorder (ASD). The aim of this study was to find ASD-related functional connectivity patterns and examine whether these patterns had the potential to provide neuroimaging-based information to clinically assist with the diagnosis of ASD by means of machine learning. We investigated the whole-brain interregional functional connections derived from R-fMRI. Data were acquired from 48 boys with ASD and 50 typically developing age-matched controls at NYU Langone Medical Center from the publicly available Autism Brain Imaging Data Exchange I (ABIDE I) dataset; the ASD-related functional connections identified by the Boruta algorithm were used as the features of support vector machine (SVM) to distinguish patients with ASD from typically developing controls (TDC); a permutation test was performed to assess the classification performance. Approximately, 92.9% of participants were correctly classified by a combined SVM and leave-one-out cross-validation (LOOCV) approach, wherein 95.8% of patients with ASD were correctly identified. The default mode network (DMN) exhibited a relatively high network degree and discriminative power. Eight important brain regions showed a high discriminative power, including the posterior cingulate cortex (PCC) and the ventrolateral prefrontal cortex (vlPFC). Significant correlations were found between the classification scores of several functional connections and ASD symptoms (<italic>p</italic> &lt; 0.05). This study highlights the important role of DMN in ASD identification. Interregional functional connections might provide useful information for the clinical diagnosis of ASD.</p>
+      </abstract>
+      <kwd-group>
+        <kwd>autism spectrum disorder</kwd>
+        <kwd>support vector machine</kwd>
+        <kwd>resting-state functional magnetic resonance neuroimaging (R-fMRI)</kwd>
+        <kwd>functional connection (FC)</kwd>
+        <kwd>Boruta</kwd>
+      </kwd-group>
+      <counts>
+        <fig-count count="5"/>
+        <table-count count="2"/>
+        <equation-count count="0"/>
+        <ref-count count="37"/>
+        <page-count count="10"/>
+        <word-count count="6677"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec sec-type="intro" id="s1">
+      <title>Introduction</title>
+      <p>Autism spectrum disorder (ASD) is a neurodevelopmental disability characterized by persistent deficits in social communication associated with restricted and repetitive patterns of behavior, interests, or activities (Minshew and Williams, <xref rid="B19" ref-type="bibr">2007</xref>). Individuals with ASD have difficulty with everyday reciprocal social communication and social interactions, causing heavy burdens to individuals, families, and society (Van Loo and Martens, <xref rid="B30" ref-type="bibr">2007</xref>). However, the neural correlates underlying ASD symptoms have not been fully elucidated, and further examination is warranted to gain a more comprehensive understanding of this disorder. Resting-state functional MRI (R-fMRI), which measures the blood oxygen level-dependent (BOLD) signal recorded at rest, has emerged as a promising tool for exploring disorder-related brain function alterations (Biswal, <xref rid="B4" ref-type="bibr">2012</xref>; Lau et al., <xref rid="B15" ref-type="bibr">2019</xref>). Previous R-fMRI studies have demonstrated dispersively distributed functional disruptions in ASD, while this disorder has been increasingly characterized as the dysregulation of brain networks with altered functional connectivity (Hull et al., <xref rid="B12" ref-type="bibr">2017</xref>). Connectivity is a general description of the interactive relationship between two independent brain regions in anatomical space. Functional connectivity aims to describe this relationship from the point of functional synchronization. In the scan of R-fMRI, functional connectivity is measured by statistical dependence in BOLD fluctuations between two brain regions or brain networks. Except for anatomical morphology, the human brain regions can also be subdivided by functional characteristics. In a previous study (Dosenbach et al., <xref rid="B7" ref-type="bibr">2010</xref>), the 160 regions of interest (ROIs) covering the whole brain were labeled and grouped into six networks, namely, the default mode network (DMN), frontoparietal network (FPN), cingulo-opercular network (CON), sensorimotor network (SMN), occipital network (ON), and cerebellum network (CN). This brain atlas was defined based on activation patterns of the brain across different cognitive tasks and may support additional information for interpreting developmental changes in brain function.</p>
+      <p>According to a previous study, there was a decrease in the functional connectivity of the medial prefrontal cortex (mPFC) with left anterior insula in patients with ASD (Von dem Hagen et al., <xref rid="B31" ref-type="bibr">2013</xref>). In contrast to healthy subjects, patients with ASD exhibited decreased posterior cingulate cortex (PCC) connectivity with the superior frontal gyrus and increased connectivity of which with the parahippocampal gyrus (Monk et al., <xref rid="B20" ref-type="bibr">2009</xref>). Moreover, associations between functional connectivity and ASD symptoms have been observed. For instance, the connectivity between the left anterior insula and bilateral precuneus showed a negative correlation with autism symptom severity (Xu et al., <xref rid="B34" ref-type="bibr">2018</xref>). Atypical functional interactions between the core regions of the DMN, including the PCC and the mPFC, were correlated with impaired social function in patients with ASD (Lynch et al., <xref rid="B18" ref-type="bibr">2013</xref>; Von dem Hagen et al., <xref rid="B31" ref-type="bibr">2013</xref>). These findings indicated that the clinical characteristics of ASD might be represented in aberrant functional interactions in large-scale brain networks.</p>
+      <p>Machine learning has attracted an increasing amount of attention in R-fMRI studies as a promising technique for identifying patients with neuropsychiatric diseases at the individual level (Geng et al., <xref rid="B9" ref-type="bibr">2018</xref>; Riaz et al., <xref rid="B25" ref-type="bibr">2018</xref>). Previous studies have suggested that functional interactions in large-scale brain networks could be utilized for the classification of patients vs. healthy subjects. For example, interregional functional connections were regarded as discriminative features of support vector machine (SVM) to differentiate patients diagnosed with attention deficit hyperactivity disorder (ADHD) from healthy subjects (Sun et al., <xref rid="B29" ref-type="bibr">2020</xref>). Whole-brain functional connections were also adopted as features of SVM to identify patients with schizophrenia (Li et al., <xref rid="B16" ref-type="bibr">2019</xref>). Machine learning has been regarded as an exploratory framework to characterize the brain functional organization from interregional functional connections that may be implicated in neuropathology underlying neuropsychiatric disorders. For example, the cerebellum showed high discriminative power for identifying patients with ADHD (Sun et al., <xref rid="B29" ref-type="bibr">2020</xref>). The functional connections across the DMN and visual cortical areas showed high discriminative power when discriminating major depressive patients from healthy subjects (Zeng et al., <xref rid="B36" ref-type="bibr">2012</xref>). Despite progress in patient identification using machine learning, it is not yet clear how functional interactions in large-scale brain networks serve as highly discriminative features to realize the classification of ASD.</p>
+      <p>“Boruta” algorithm (Kursa et al., <xref rid="B14" ref-type="bibr">2010</xref>) preserves the feature set with statistically significant contributions to classification rather than highest contributions and, thus, reduces the overfitting. In this study, the Boruta algorithm was used to determine the ASD-related functional connectivity pattern. Based on this pattern, we distinguished patients with ASD from typically developing controls (TDC) using SVM and then characterized brain network and regions with high discriminative power. Considering that the DMN has been shown to be significantly involved in ASD (Padmanabhan et al., <xref rid="B23" ref-type="bibr">2017</xref>), we expected that the DMN would play an important role in ASD identification.</p>
+    </sec>
+    <sec sec-type="materials and methods" id="s2">
+      <title>Materials and Methods</title>
+      <sec>
+        <title>Participants</title>
+        <p><xref rid="T1" ref-type="table">Table 1</xref> shows the characteristics of all participants in this study. A total of 48 boys with ASD and 50 typically developing age-matched male controls were included. These participants were part of the New York University (NYU) Langone Medical Center dataset on the Autism Brain Imaging Data Exchange (ABIDE) platform (<ext-link xlink:href="http://fcon_1000.projects.nitrc.org/indi/abide/" ext-link-type="uri">http://fcon_1000.projects.nitrc.org/indi/abide/</ext-link>). The exclusion criteria were as follows: (1) female sex; (2) not between 7 and 18 years old; and (3) excessive head motions. Considering that gender imbalance might interfere with the ASD analysis, we regarded sex as a potential confounding factor and employed a relatively careful participant selection criterion by choosing only male subjects.</p>
+        <table-wrap position="float" id="T1">
+          <label>Table 1</label>
+          <caption>
+            <p>Demographic and clinical data.</p>
+          </caption>
+          <table frame="hsides" rules="groups">
+            <thead>
+              <tr>
+                <th valign="top" align="left" rowspan="1" colspan="1">
+<bold>Groups</bold>
+</th>
+                <th valign="top" align="center" rowspan="1" colspan="1">
+<bold>ASD (mean ± SD)</bold>
+</th>
+                <th valign="top" align="center" rowspan="1" colspan="1">
+<bold>TDC (mean ± SD)</bold>
+</th>
+                <th valign="top" align="center" rowspan="1" colspan="1">
+<bold><italic>p</italic>-value</bold>
+</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">No. of subjects</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">48</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">50</td>
+                <td rowspan="1" colspan="1"/>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Sex (M/F)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">48/0</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">50/0</td>
+                <td rowspan="1" colspan="1"/>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Age</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">11.02 ± 2.65</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">11.96 ± 2.87</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.090</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">FIQ</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">107.92 ± 16.66</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">111.92 ± 14.30</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.200</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">VIQ</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">104.81 ± 14.96</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">112.16 ± 12.94</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.011<xref rid="TN1" ref-type="table-fn"><sup>*</sup></xref></td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">PIQ</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">110.19 ± 18.79</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">108.90 ± 15.85</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.710</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">ADI S</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">19.85 ± 5.10</td>
+                <td rowspan="1" colspan="1"/>
+                <td rowspan="1" colspan="1"/>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">ADI C-V</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">15.34 ± 3.84</td>
+                <td rowspan="1" colspan="1"/>
+                <td rowspan="1" colspan="1"/>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">ADOS T</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">11.71 ± 4.28</td>
+                <td rowspan="1" colspan="1"/>
+                <td rowspan="1" colspan="1"/>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">ADOS C</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">3.56 ± 1.64</td>
+                <td rowspan="1" colspan="1"/>
+                <td rowspan="1" colspan="1"/>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">ADOS S</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">8.15 ± 2.97</td>
+                <td rowspan="1" colspan="1"/>
+                <td rowspan="1" colspan="1"/>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <p><italic>FIQ, full IQ; PIQ, performance IQ; VIQ, verbal IQ; ADI S, ADI-R social total; ADI C-V, ADI-R communication total for verbal children; ADOS T, ADOS total; ADOS C, ADOS communication total; ADOS S, ADOS social total</italic>.</p>
+            <fn id="TN1">
+              <label>*</label>
+              <p><italic>indicates p &lt; 0.05 after two-sample t-test</italic>.</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+        <p>The Diagnostic and Statistical Manual of Mental Disorders, Fourth Edition (DSM-IV-TR) was used to diagnose ASD. This study was carried out in accordance with the principles of the Declaration of Helsinki and was approved by the Institutional Review Board (IRB) of NYU and the NYU School of Medicine. Prior to participation, informed consent was obtained from all participants and their parents/legal guardians (for participants &lt; 18 years).</p>
+      </sec>
+      <sec>
+        <title>Image Preprocessing</title>
+        <p>All images were acquired using a Siemens MAGNETOM Allegra syngo 3.0 T MR Scanner (Siemens AG, Medical Solutions, Erlangen, Germany). A 8:07 min T1-weighted sagittal MP-RAGE structural image was obtained (flip angle = 7°, time of repetition (TR) = 2,530 ms, time of echo (TE) = 3.25 ms, number of volumes = 256, voxel size = 1.3 × 1 × 1.3 mm, FOV = 256 mm, slice thickness = 1.33 mm, and T1 = 1,100 ms). A 6-min R-fMRI scan was obtained using a T2<sup>*</sup>-weighted gradient-echo EPI pulse sequence (flip angle = 90°, number of slices = 33, TR = 2,000 ms, TE = 15 ms, number of volumes = 180, voxel size = 3 × 3 × 4 mm, FOV = 240 mm, and slice thickness = 4 mm). During the R-fMRI scan, participants were asked to relax with their eyes open, while a white cross-hair against a black background was projected on a screen.</p>
+        <p>Data processing was performed using a combination of DPABI (<ext-link xlink:href="http://www.rfmri.org/" ext-link-type="uri">http://www.rfmri.org/</ext-link>), SPM (<ext-link xlink:href="http://www.fil.ion.ucl.ac.uk/spm/" ext-link-type="uri">http://www.fil.ion.ucl.ac.uk/spm/</ext-link>), and custom code written in MATLAB. For each subject, the first 10 volumes of functional images were discarded to allow for magnetization equilibration effects and the adaptation of the participants to the scan circumstances. The remaining images were corrected for slice timing and motion. All participants in this study had a maximum displacement of &lt; 2 mm in the <italic>x</italic>-, <italic>y</italic>-, or <italic>z</italic>-axes and an angular motion of &lt;2°. The corrected images were then normalized into a standard stereotactic space as defined by the Montreal Neurological Institute (resampling voxel size = 3 × 3 × 3 mm) and smoothed using a 6-mm full-width at half-maximum Gaussian kernel. To further reduce the effects of confounding factors, we also regressed out the nuisance signals (Friston-24 motion parameters, white matter signal, and cerebrospinal fluid signal). Finally, functional images underwent temporal band-pass filtering ([0.01–0.08 Hz]).</p>
+      </sec>
+      <sec>
+        <title>Boruta Feature Selection</title>
+        <p>The Boruta algorithm was adopted based on the interregional functional connections for feature selection before ASD identifying in this study. Interregional functional connections were calculated based on the functional brain atlas (Dosenbach et al., <xref rid="B7" ref-type="bibr">2010</xref>). First, the average R-fMRI time series of 160 ROIs of the atlas (Dosenbach et al., <xref rid="B7" ref-type="bibr">2010</xref>) were extracted to calculate functional connections between all possible pairs of ROIs. Specifically, the functional connections between two ROIs were obtained by calculating the Pearson's correlation coefficient between their average R-fMRI time series. Then, correlation coefficients were subsequently converted to <italic>z</italic>-values by Fisher's <italic>r</italic>-to-<italic>z</italic> transformation to improve the normality of values. Finally, a series of 160 × 160 symmetric matrices represented the whole-brain network of participants, and the upper triangle elements of the matrix were extracted for feature selection.</p>
+        <p>As a feature selection method built based on a random forest classifier, the Boruta method selects the features that have significantly more relevance with classification than randomly permuted features (Kursa et al., <xref rid="B14" ref-type="bibr">2010</xref>). Compared with general feature selection methods that focus on the so-called “minimal-optimal” problem by obtaining the best possible classification results with possibly minimal feature sets, the Boruta method aims to identify all features that are relevant for classification. In this study, we employed the Boruta method to examine the ASD-related functional connectivity pattern (implemented in Python: <ext-link xlink:href="https://github.com/scikit-learn-contrib/boruta_py" ext-link-type="uri">https://github.com/scikit-learn-contrib/boruta_py</ext-link>). In brief, the method can be described as follows: each feature of the original feature matrix A is shuffled across subjects to generate shadow features to add randomness and remove correlations between features and class labels, and then, the shadow feature matrix B is concatenated with the original feature matrix A to form a mixture feature matrix C (C = [A, B]) in which the number of features is twice that of the original feature matrix A. A random forest classifier is performed on the mixture feature matrix C (the Gini value was utilized as the cost function; the number of the decision tree was set as 500 in this study). The Gini importance of each feature is calculated. Real features with Gini importance higher than the 95th percentile of shadow features will be assigned a hit and then a statistical test (using a binomial distribution with <italic>p</italic> = 0.05, two-step correction: FDR and Bonferroni correction) will be performed to mark features as “confirmed” or “rejected.” The features marked as “rejected” will be removed from original feature matrix A. The above steps are repeated until each feature has a mark or the number of iterations reaches the predefined criterion (the maximum of iterations was set as 250 in this study).</p>
+        <p>We applied a <italic>k</italic>-means clustering method based on functional connections to classify the aforementioned ASD-related connections into several patterns. Specifically, a matrix with the ASD-related connections as rows and the subjects as columns was constructed. The rows of this matrix were then classified into different clusters based on their distributions across subjects. The connections assigned into the same cluster constitute a unique pattern of connection that covary across subjects.</p>
+        <p>The brain functional connection network has amounts of nodes and functional interactions and can be represented as a graph. The topological complexity of a brain functional connection network that reflects the global performance of a network was generally characterized with graph theory measures (Bullmore and Sporns, <xref rid="B5" ref-type="bibr">2012</xref>). ASD-related functional connectivity pattern was a sparse presentation of the whole brain and also a specific representation for the classification of ASD. In this study, we aimed to employ the network degree (ND) to describe the topological characteristics of this pattern. The ND of a brain network was defined as the number of direct connections between a predefined brain network and other networks, representing the relative importance of a brain network in regard to the information flow in the brain (Zuo et al., <xref rid="B37" ref-type="bibr">2012</xref>).</p>
+      </sec>
+      <sec>
+        <title>SVM Classification</title>
+        <p><xref rid="F1" ref-type="fig">Figure 1</xref> shows a flowchart for SVM classification including the construction of whole-brain interregional functional connections, Boruta feature selection, and SVM classification. We defined the ASD-related functional connections after the Boruta feature selection as classification features and used SVM with the radial basis function (RBF) kernel function to distinguish patients with ASD from TDC (implemented using “libsvm”: <ext-link xlink:href="https://www.csie.ntu.edu.tw/~cjlin/libsvm/" ext-link-type="uri">https://www.csie.ntu.edu.tw/~cjlin/libsvm/</ext-link>). SVM is the most common machine learning technique for the clinical application study of R-fMRI. When the cost of sample acquisition is expensive, SVM displays a key advantage due to its algorithm principle. The hyperplane of SVM used to distinguish different categories can be determined by fewer support vectors and thus exhibit excellent performance in small samples usually. The classification weight of a functional connection was obtained by averaging weights across all trials of leave-one-out cross-validation (LOOCV). We defined the classification weight of a brain region as the sum of the classification weight of all the connections to and from that brain region. The classification weight of each brain network was evaluated by summing the classification weight of all the regions within that brain network. The brain regions whose classification weights were two SDs higher than the average classification weight of brain regions contributing to classification were defined as the important brain regions.</p>
+        <fig position="float" id="F1">
+          <label>Figure 1</label>
+          <caption>
+            <p>The Boruta-SVM process flowchart. FC, functional connection; SVM, support vector machine; DMN, default mode network; FPN, frontoparietal network; CON, cingulo-opercular network; SMN, sensorimotor network; ON, occipital network; CN, cerebellum network.</p>
+          </caption>
+          <graphic xlink:href="fninf-16-761942-g0001" position="float"/>
+        </fig>
+      </sec>
+      <sec>
+        <title>Statistical Analysis and Permutation Tests</title>
+        <p>The Pearson correlation analyses were performed between the classification scores of the functional connections and ASD symptoms including the Autism Diagnostic Observation Schedule (ADOS: ADOS_total, ADOS_communication, and ADOS_social) and Autism Diagnostic Interview-Revised (ADI_R: ADI_R_social total and ADI_R_verbal total). The <italic>p</italic> = 0.05 was set as the statistical threshold. We employed a permutation test to evaluate the statistical significance of classification accuracy (Golland and Fischl, <xref rid="B10" ref-type="bibr">2003</xref>). Specifically, after randomly permuting the labels corresponding to the training samples, we trained the classifier on the permuted training samples and then performed validation. The permutation process was conducted 10,000 times in total. It is assumed that classification performance is reliable when the generalization rate obtained by the classifier trained on the real class labels is higher than the 95% CI of the classifier trained on randomly relabeled class labels. To comprehensively evaluate the classification performance, we also assessed sensitivity and specificity. These two measures are commonly utilized together to estimate the predictive performance of a classification model. The sensitivity indicates the proportion of positive predictions in the group of patients, and the specificity indicates the proportion of negative predictions in the group of healthy controls.</p>
+      </sec>
+    </sec>
+    <sec sec-type="results" id="s3">
+      <title>Results</title>
+      <sec>
+        <title>Classification Results</title>
+        <p>The results indicated that 92.9% of subjects were correctly classified using an SVM method by LOOCV (sensitivities = 95.8% and specificities = 90.0%). The classification features were extracted using the Boruta method, and a total of 125 ASD-related functional connections were selected. The distribution of the permutation tests (10,000 times) showed that our classification accuracy (92.9%) was significantly higher than the random level (<italic>p</italic> &lt; 0.0001, <xref rid="F2" ref-type="fig">Figure 2</xref>).</p>
+        <fig position="float" id="F2">
+          <label>Figure 2</label>
+          <caption>
+            <p>Permutation distribution of the classification accuracy estimate. The permutation was repeated 10,000 times, resulting in 10,000 classification accuracies based on random labels. The classification accuracy (92.9%) based on the true labels exceeded each of the classification accuracies resulting from the permutation, indicating that our classifier can reliably learn the relationship between the features and the labels with a probability higher than the predetermined 95% criterion.</p>
+          </caption>
+          <graphic xlink:href="fninf-16-761942-g0002" position="float"/>
+        </fig>
+      </sec>
+      <sec>
+        <title>Brain Regions and Networks With High Classification Weights</title>
+        <p>The DMN exhibited the highest ND, followed by the FPN and ON (<xref rid="F3" ref-type="fig">Figure 3A</xref>). As shown in <xref rid="F3" ref-type="fig">Figure 3B</xref>, three interregional connectivity patterns were detected by <italic>k</italic>-means clustering based on the ASD-related functional connections. Specifically, the DMN and ON showed relatively higher ND in pattern 1, while relatively higher ND was found in the DMN and FPN in pattern 2. Pattern 3 showed lower ND in each network and a higher proportion of within-network connections than other patterns.</p>
+        <fig position="float" id="F3">
+          <label>Figure 3</label>
+          <caption>
+            <p>Network degree (ND) analysis of ASD-related functional connections. <bold>(A)</bold> The ND distribution of six networks. <bold>(B)</bold> The three functional connectivity patterns identified by <italic>k</italic>-means clustering. Patterns 1, 2, and 3 consist of 57, 47, and 21 functional connections, respectively. The yellow and blue lines in circles indicate between-network and within-network connections, respectively. The yellow lines in the line charts indicate the ND or the number of between-network connections for each network. The red and blue lines in the line charts indicate the number of functional connections and within-network functional connections for each network, respectively. FC, functional connection; DMN, default mode network; FPN, frontoparietal network; CON, cingulo-opercular network; SMN, sensorimotor network; ON, occipital network; CN, cerebellum network; a, anterior; d, dorsal; dl, dorsolateral; inf, inferior; Lat, lateral; med, medial; post, posterior; sup, superior; v, ventral; vm, ventromedial; vl, ventrolateral; ACC, anterior cingulate cortex; AG, angular gyrus; BG, basal ganglia; FFG, fusiform gyrus; INS, insula; IPL, inferior parietal lobe; IPS, intraparietal sulcus; mINS, middle insula; PCC, posterior cingulate cortex; PCUN, precuneus; PFC, prefrontal cortex; PrCG, precentral gyrus; SMA, supplementary motor area.</p>
+          </caption>
+          <graphic xlink:href="fninf-16-761942-g0003" position="float"/>
+        </fig>
+        <p>As shown in <xref rid="F4" ref-type="fig">Figure 4</xref>, eight important brain regions were identified and ranked by classification weights, including the PCC, ventrolateral prefrontal cortex (vlPFC), anterior prefrontal cortex, superior parietal lobe, inferior parietal lobe, posterior occipital lobe, superior temporal sulcus, and angular gyrus. Most regions were part of the DMN or FPN. Furthermore, the DMN and FPN exhibited higher classification weights.</p>
+        <fig position="float" id="F4">
+          <label>Figure 4</label>
+          <caption>
+            <p>Regional importance in the resting-state network. <bold>(A)</bold> The location of the top eight important brain regions. <bold>(B)</bold> Regional importance ranking. The important regions whose classification weights are two SDs above the mean classification weights of all the discriminative regions are presented with purple bars. The y- and x-labels represent the regional name and classification weight, respectively. a, anterior; d, dorsal; dl, dorsolateral; inf, inferior; Lat, lateral; med, medial; post, posterior; sup, superior; v, ventral; vm, ventromedial; vl, ventrolateral; ACC, anterior cingulate cortex; AG, angular gyrus; BG, basal ganglia; FFG, fusiform gyrus; INS, insula; IPL, inferior parietal lobe; IPS, intraparietal sulcus; mINS, middle insula; PCC, posterior cingulate cortex; PCUN, precuneus; PFC, prefrontal cortex; PrCG, precentral gyrus; SMA, supplementary motor area.</p>
+          </caption>
+          <graphic xlink:href="fninf-16-761942-g0004" position="float"/>
+        </fig>
+        <p>As shown in <xref rid="F5" ref-type="fig">Figure 5</xref>; <xref rid="T2" ref-type="table">Table 2</xref>, there was a significantly negative correlation (<italic>p</italic> &lt; 0.05) between the classification scores of five DMN-related functional connections and ASD symptoms measured by clinical scales (ADI_R_social total, ADI_R_verbal total, or ADOS_communication) in patients with ASD. The classification scores of fourteen functional connections were positively correlated (<italic>p</italic> &lt; 0.05) with ASD symptoms (ADI_R_social total, ADI_R_verbal total, ADOS_total, ADOS_social, or ADOS_communication) in patients with ASD.</p>
+        <fig position="float" id="F5">
+          <label>Figure 5</label>
+          <caption>
+            <p>Correlations between the functional connection classification scores and clinical scales in patients with ASD. <bold>(A)</bold> The functional connections whose classification scores were negatively correlated with at least one of the ASD measures (ADI_R_social total, ADI_R_verbal total, or ADOS_communication). <bold>(B)</bold> The functional connections whose classification scores were positively correlated with at least one of the ASD measures (ADI_R_social total, ADI_R_verbal total, ADOS_total, ADOS_social total, and ADOS_communication). The meanings of the regional colors are the same as in <xref rid="F3" ref-type="fig">Figure 3B</xref>. a, anterior; d, dorsal; inf, inferior; post, posterior; sup, superior; dl, dorsolateral; vm, ventromedial; v, ventral; vl, ventrolateral; ACC, anterior cingulate cortex; AG, angular gyrus; fusiform gyrus, FFG; IPL, inferior parietal lobe; IPS, intraparietal sulcus; ITG, inferior temporal gyrus; med, medial; mINS, middle insula; mPFC, medial prefrontal cortex; PCC, posterior cingulate cortex; PFC, prefrontal cortex; PrCG, precentral gyrus.</p>
+          </caption>
+          <graphic xlink:href="fninf-16-761942-g0005" position="float"/>
+        </fig>
+        <table-wrap position="float" id="T2">
+          <label>Table 2</label>
+          <caption>
+            <p>Correlations between classification score and clinical scales of functional connections in ASD.</p>
+          </caption>
+          <table frame="hsides" rules="groups">
+            <thead>
+              <tr>
+                <th valign="top" align="left" rowspan="1" colspan="1">
+<bold>ROI-ROI</bold>
+</th>
+                <th valign="top" align="left" rowspan="1" colspan="1">
+<bold>Network</bold>
+</th>
+                <th valign="top" align="left" rowspan="1" colspan="1">
+<bold>Scale</bold>
+</th>
+                <th valign="top" align="center" rowspan="1" colspan="1">
+<bold><italic>r</italic>-value</bold>
+</th>
+                <th valign="top" align="center" rowspan="1" colspan="1">
+<bold><italic>p</italic>-value</bold>
+</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td valign="top" align="left" colspan="5" rowspan="1">
+<bold>Positive correlations</bold>
+</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Post occipital—aPFC</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">ON—CON</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">ADI_R_V</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.369</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.011</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Occipital—vaPFC</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">ON—FPN</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">ADI_R_V</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.323</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.027</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Occipital—vlPFC</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">ON—DMN</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">ADI_R_V</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.416</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.004</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Occipital—vlPFC</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">ON—DMN</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">ADI_R_V</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.324</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.026</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Post occipital—ACC</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">ON—FPN</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">ADI_R_V</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.357</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.014</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Occipital—dlPFC</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">ON—FPN</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">ADI_R_S<break/> ADI_R_V</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.350<break/> 0.300</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.017<break/> 0.041</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">IPL—dFC</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">FPN—FPN</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">ADOS_C</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.300</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.043</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Temporal—mINS</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">SMN—CON</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">ADOS_C</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.383</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.009</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Parietal—PrCG</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">SMN—SMN</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">ADOS_S</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.318</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.028</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">AG—AG</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">DMN—DMN</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">ADOS_T<break/> ADOS_C</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.296<break/> 0.299</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.041<break/> 0.044</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">PCC—Sup parietal</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">DMN—SMN</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">ADI_R_S<break/> ADOS_T<break/> ADOS_C<break/> ADOS_S</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.302<break/> 0.336<break/> 0.300<break/> 0.301</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.042<break/> 0.020<break/> 0.043<break/> 0.038</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">ITG—Inf cerebellum</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">CN—DMN</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">ADOS_T<break/> ADOS_C<break/> ADOS_S</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.458<break/> 0.389<break/> 0.419</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.001<break/> 0.008<break/> 0.003</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">PCC—Med cerebellum</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">CN—DMN</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">ADOS_C</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.314</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.034</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Occipital—Inf cerebellum</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">CN—DMN</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">ADI_R_V</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.356</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.015</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" colspan="5" rowspan="1">
+<bold>Negative correlations</bold>
+</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">FFG—mPFC</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">DMN—DMN</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">ADI_R_S</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−0.330</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.025</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">vmPFC—Sup temporal</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">DMN—CON</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">ADOS_C</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−0.321</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.030</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Occipital—Inf temporal</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">DMN—DMN</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">ADI_R_S</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−0.312</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.035</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Occipital—AG</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">DMN—CON</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">ADI_R_V</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−0.353</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.015</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">IPS—Inf cerebellum</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">DMN—CN</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">ADI_R_V</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−0.311</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.033</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <p><italic>Positive correlations: functional connections whose classification score was positively correlated with at least one of the ADI_R_social total, ADI_R_verbal total, ADOS_total, ADOS_social, and ADOS_communication; negative correlations: functional connections whose classification score was negatively correlated with at least one of the ADI_R_social total, ADI_R_verbal total, and ADOS_communication</italic>.</p>
+            <p><italic>DMN, default mode network; FPN, frontoparietal network; CON, cingulo-opercular network; SMN, sensorimotor network; ON, occipital network; CN, cerebellum network; a, anterior; d, dorsal; inf, inferior; med, medial; post, posterior; sup, superior; v, ventral; vm, ventromedial; vl, ventrolateral; ACC, anterior cingulate cortex; AG, angular gyrus; FFG, fusiform gyrus; IPL, inferior parietal lobe; IPS, intraparietal sulcus; ITG, inferior temporal gyrus; mINS, middle insula; mPFC, medial prefrontal cortex; PCC, posterior cingulate cortex; PFC, prefrontal cortex; PrCG, precentral gyrus; ADI_R_S, ADI_R social total; ADI_R_V, ADI_R_verbal total; ADOS_T, ADOS_total; ADOS_C, ADOS_communication; and ADOS_S, ADOS_social</italic>.</p>
+          </table-wrap-foot>
+        </table-wrap>
+      </sec>
+    </sec>
+    <sec sec-type="discussion" id="s4">
+      <title>Discussion</title>
+      <p>In this study, we distinguished patients with ASD from TDC based on resting-state interregional functional connections using a Boruta-SVM approach. A high classification accuracy of 92.9% was achieved based on the classification features of ASD-related functional connections by means of the Boruta feature selection method. The DMN exhibited a high ND with a larger classification weight. The eight important brain regions with high classification weights, including the PCC, vlPFC, aPFC, superior parietal lobe, inferior parietal lobe, posterior occipital lobe, superior temporal sulcus, and angular gyrus, were primarily located in the DMN and FPN. Thereinto, the PCC and vlPFC presented relatively high discriminative power. We found statistically significant correlations between the classification scores of several ASD-related functional connections and ASD symptoms. The DMN was negatively correlated with ASD symptoms. These findings highlighted an important role of the DMN in distinguishing ASD patients from TDC.</p>
+      <p>We proposed the Boruta method to select features reflecting ASD-related functional connectivity patterns. The Boruta method recognizes features relevant to the target and was used to construct an interpretable predictive model (Kursa et al., <xref rid="B14" ref-type="bibr">2010</xref>). Most of the previous combined SVM and R-fMRI studies were mainly dedicated to identifying features that were useful for making accurate predictions, but the limitation of those studies was that the interpretability of the predictive model was seldom assessed (Wee et al., <xref rid="B32" ref-type="bibr">2012</xref>). We employed the ND to describe classification features selected using the Boruta method. The highest ND was found in the DMN and might suggest a predominance in the ASD-related functional connectivity pattern. According to the results of the weight analysis, we found that these functional connections involved in the DMN were of high discriminative power during SVM classification, highlighting the importance of the DMN. These findings were consistent with previous results showing an abnormal DMN connectivity pattern in ASD (Cheng et al., <xref rid="B6" ref-type="bibr">2015</xref>; Abbott et al., <xref rid="B1" ref-type="bibr">2016</xref>). For example, patients with ASD exhibited reduced network integration (reduced within-network connections) and increased out-of-network connections for the DMN (Abbott et al., <xref rid="B1" ref-type="bibr">2016</xref>). Furthermore, increased functional connectivity between the DMN and salience network was associated with a higher cognitive impairment in ASD (Abbott et al., <xref rid="B1" ref-type="bibr">2016</xref>). Together, these findings suggest that the DMN might be considered a relevant locus for ASD identification.</p>
+      <p>The FPN exhibited a relatively higher classification weight and ND in pattern 2, indicating a potential high contribution to the ASD-related functional connectivity pattern. The FPN is crucial for coordinating behavior in an accurate, rapid, and flexible goal-driven manner (Bareham et al., <xref rid="B3" ref-type="bibr">2018</xref>; Fiebelkorn et al., <xref rid="B8" ref-type="bibr">2018</xref>). A growing number of studies implicate the FPN as a neural substrate for impaired executive function, which is a frequently reported symptom of ASD, thus prompting researchers to further examine the potential contribution of the FPN to the underlying pathophysiology of ASD. For example, a significantly decreased FPN-insular participation coefficient was found in children with ASD during a task with executive function demand (Lynch et al., <xref rid="B17" ref-type="bibr">2017</xref>). A previous study demonstrated that patients with ASD exhibited lower levels of network integration in the FPN and that reduced FPN connectivity was related to attention deficit symptoms in the ASD group (Solomon et al., <xref rid="B26" ref-type="bibr">2009</xref>), indicating that functional connection disruptions of the FPN involved in the clinical symptoms of ASD.</p>
+      <p>This study found that the PCC and vlPFC were the two most discriminative regions. As a central region of the DMN, The PCC showed abnormalities in many neurological and psychiatric disorders including ASD (Sun et al., <xref rid="B28" ref-type="bibr">2012</xref>; Yang et al., <xref rid="B35" ref-type="bibr">2016</xref>). For example, ASD exhibited hypoconnectivity between the PCC and other regions within the DMN (Weng et al., <xref rid="B33" ref-type="bibr">2010</xref>). Moreover, the hyperconnectivity of the PCC with the parahippocampal gyrus has been shown to relate with the severity of ASD symptoms measured by the ADOS (Lynch et al., <xref rid="B18" ref-type="bibr">2013</xref>). The vlPFC is an important region in the FPN that involves goal-appropriate response selection and response inhibition (Aron et al., <xref rid="B2" ref-type="bibr">2004</xref>). Patients with ASD showed significantly decreased brain activation in the vlPFC when participating in a temporal discounting task (Murphy et al., <xref rid="B21" ref-type="bibr">2017</xref>). The functional connection of the vlPFC with the anterior cingulate cortex was associated with the performance of a cognitive control task (Solomon et al., <xref rid="B27" ref-type="bibr">2014</xref>). Compared with TDC, patients with ASD had weaker activation in the occipital area which is mostly associated with face processing (Renzi et al., <xref rid="B24" ref-type="bibr">2015</xref>). Increasing evidence suggests associations between abnormal face processing and impaired social function in ASD (Nomi and Uddin, <xref rid="B22" ref-type="bibr">2015</xref>). A study combining DTI and fMRI found that abnormal structural connectivity and functional activation of the occipital cortex were related to social communication deficits in patients with ASD (Jung et al., <xref rid="B13" ref-type="bibr">2019</xref>).</p>
+      <p>In the ASD group, several classification scores of functional connections were significantly correlated with ASD symptoms, indicating that the ASD-related functional connectivity pattern has the potential to reflect symptom severity. Notably, the functional connections whose classification scores were correlated with ASD symptoms were widely distributed throughout the whole brain, further supporting the hypothesis that the clinical characteristics of ASD were represented in aberrant functional interactions in large-scale brain networks (He et al., <xref rid="B11" ref-type="bibr">2007</xref>; Fiebelkorn et al., <xref rid="B8" ref-type="bibr">2018</xref>). Functional connections whose classification scores were negatively correlated with ASD symptoms were connected from/to the DMN, which might imply a close relationship between the DMN and ASD symptoms.</p>
+      <p>Previous studies proposed different pipelines to classify ASD from TDC, while most efforts were made to improve accuracy, and the clinical relevance was partly overlooked. This study further decodes the connectivity patterns which could be used to distinguish ASD from TDC. In addition, we not only replicated the important role of the DMN in ASD from the classification of the disease but also identified the relationships between autistic symptom severity and classification weight of the DMN. These results suggested that the clinical relevance of features served more focus in the machine learning study of R-fMRI studies.</p>
+      <p>Notably, the functional connections whose classification scores were correlated with ASD symptoms were widely distributed throughout the whole brain, further supporting the hypothesis that the clinical characteristics of ASD were represented in aberrant functional interactions in large-scale brain networks (He et al., <xref rid="B11" ref-type="bibr">2007</xref>; Fiebelkorn et al., <xref rid="B8" ref-type="bibr">2018</xref>). Functional connections whose classification scores were negatively correlated with ASD symptoms were connected from/to the DMN, which might imply a close relationship between the DMN and ASD symptoms.</p>
+      <p>Two limitations should be considered. First, only male patients were included in the present analysis because ASD is more prevalent among males than among females in the general population; however, this might limit the generalizability of our findings. Therefore, further studies should take into account the relationship between gender and ASD. Second, this study demonstrates that the DMN might play a key role in ASD; however, how the DMN specifically interacts with ASD symptoms needs more in-depth research.</p>
+    </sec>
+    <sec sec-type="conclusions" id="s5">
+      <title>Conclusion</title>
+      <p>We demonstrated that the ASD-related functional connections identified by the Boruta method could be regarded as features to differentiate patients with ASD from TDC. This finding indicated that resting-state interregional functional connections might provide neuroimaging-based information to clinically assist with the diagnosis of ASD. In particular, the DMN and its core region (the PCC) exhibited high discriminative power for identifying ASD, thereby highlighting the important role of the DMN in understanding the potential pathophysiology of ASD.</p>
+    </sec>
+    <sec sec-type="data-availability" id="s6">
+      <title>Data Availability Statement</title>
+      <p>Publicly available datasets were analyzed in this study. This data can be found here: Autism Brain Imaging Data Exchange (ABIDE), <ext-link xlink:href="http://fcon_1000.projects.nitrc.org/indi/abide/" ext-link-type="uri">http://fcon_1000.projects.nitrc.org/indi/abide/</ext-link>.</p>
+    </sec>
+    <sec id="s7">
+      <title>Ethics Statement</title>
+      <p>The studies involving human participants were reviewed and approved by Hangzhou Normal University. Written informed consent to participate in this study was provided by the participants' legal guardian/next of kin.</p>
+    </sec>
+    <sec id="s8">
+      <title>Author Contributions</title>
+      <p>LZ and Y-KS analyzed the data and summarized the results. LZ and S-WX organized the manuscript and wrote the first draft of the manuscript. X-DL and L-HZ revised the manuscript. All authors have read and approved the final manuscript.</p>
+    </sec>
+    <sec sec-type="funding-information" id="s9">
+      <title>Funding</title>
+      <p>This study was supported by the Zhejiang Medical and Health Science and Technology Project (2022KY1055), the Natural Science Foundation of Zhejiang Province (LY17H180007), the Key Medical Disciplines of Hangzhou, and The Affiliated Hospital of Hangzhou Normal University.</p>
+    </sec>
+    <sec sec-type="COI-statement" id="conf1">
+      <title>Conflict of Interest</title>
+      <p>The authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.</p>
+    </sec>
+    <sec sec-type="disclaimer" id="s10">
+      <title>Publisher's Note</title>
+      <p>All claims expressed in this article are solely those of the authors and do not necessarily represent those of their affiliated organizations, or those of the publisher, the editors and the reviewers. Any product that may be evaluated in this article, or claim that may be made by its manufacturer, is not guaranteed or endorsed by the publisher.</p>
+    </sec>
+  </body>
+  <back>
+    <ref-list>
+      <title>References</title>
+      <ref id="B1">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Abbott</surname><given-names>A. E.</given-names></name><name><surname>Nair</surname><given-names>A.</given-names></name><name><surname>Keown</surname><given-names>C. L.</given-names></name><name><surname>Datko</surname><given-names>M.</given-names></name><name><surname>Jahedi</surname><given-names>A.</given-names></name><name><surname>Fishman</surname><given-names>I.</given-names></name><etal/></person-group>. (<year>2016</year>). <article-title>Patterns of atypical functional connectivity and behavioral links in autism differ between default, salience, and executive networks</article-title>. <source>Cereb. Cortex</source>
+<volume>26</volume>, <fpage>4034</fpage>–<lpage>4045</lpage>. <pub-id pub-id-type="doi">10.1093/cercor/bhv191</pub-id><pub-id pub-id-type="pmid">26351318</pub-id></mixed-citation>
+      </ref>
+      <ref id="B2">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Aron</surname><given-names>A. R.</given-names></name><name><surname>Robbins</surname><given-names>T. W.</given-names></name><name><surname>Poldrack</surname><given-names>R. A.</given-names></name></person-group> (<year>2004</year>). <article-title>Inhibition and the right inferior frontal cortex</article-title>. <source>Trends Cogn. Sci</source>. <volume>8</volume>, <fpage>170</fpage>–<lpage>177</lpage>. <pub-id pub-id-type="doi">10.1016/j.tics.2004.02.010</pub-id><pub-id pub-id-type="pmid">15050513</pub-id></mixed-citation>
+      </ref>
+      <ref id="B3">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Bareham</surname><given-names>C. A.</given-names></name><name><surname>Georgieva</surname><given-names>S. D.</given-names></name><name><surname>Kamke</surname><given-names>M. R.</given-names></name><name><surname>Lloyd</surname><given-names>D.</given-names></name><name><surname>Bekinschtein</surname><given-names>T. A.</given-names></name><name><surname>Mattingley</surname><given-names>J. B.</given-names></name></person-group> (<year>2018</year>). <article-title>Role of the right inferior parietal cortex in auditory selective attention: an rTMS study</article-title>. <source>Cortex</source>
+<volume>99</volume>, <fpage>30</fpage>–<lpage>38</lpage>. <pub-id pub-id-type="doi">10.1016/j.cortex.2017.10.003</pub-id><pub-id pub-id-type="pmid">29127879</pub-id></mixed-citation>
+      </ref>
+      <ref id="B4">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Biswal</surname><given-names>B. B</given-names></name></person-group>. (<year>2012</year>). <article-title>Resting state fMRI: a personal history</article-title>. <source>Neuroimage</source>
+<volume>62</volume>, <fpage>938</fpage>–<lpage>944</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2012.01.090</pub-id><pub-id pub-id-type="pmid">22326802</pub-id></mixed-citation>
+      </ref>
+      <ref id="B5">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Bullmore</surname><given-names>E.</given-names></name><name><surname>Sporns</surname><given-names>O.</given-names></name></person-group> (<year>2012</year>). <article-title>The economy of brain network organization</article-title>. <source>Nat Rev Neurosci</source>
+<volume>13</volume>, <fpage>336</fpage>–<lpage>349</lpage>. <pub-id pub-id-type="doi">10.1038/nrn3214</pub-id><pub-id pub-id-type="pmid">22498897</pub-id></mixed-citation>
+      </ref>
+      <ref id="B6">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Cheng</surname><given-names>W.</given-names></name><name><surname>Rolls</surname><given-names>E. T.</given-names></name><name><surname>Gu</surname><given-names>H. G.</given-names></name><name><surname>Zhang</surname><given-names>J.</given-names></name><name><surname>Feng</surname><given-names>J. F.</given-names></name></person-group> (<year>2015</year>). <article-title>Autism: reduced connectivity between cortical areas involved in face expression, theory of mind, and the sense of self</article-title>. <source>Brain</source>
+<volume>138</volume>, <fpage>1382</fpage>–<lpage>1393</lpage>. <pub-id pub-id-type="doi">10.1093/brain/awv051</pub-id><pub-id pub-id-type="pmid">25795704</pub-id></mixed-citation>
+      </ref>
+      <ref id="B7">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Dosenbach</surname><given-names>N. U.</given-names></name><name><surname>Nardos</surname><given-names>B.</given-names></name><name><surname>Cohen</surname><given-names>A. L.</given-names></name><name><surname>Fair</surname><given-names>D. A.</given-names></name><name><surname>Power</surname><given-names>J. D.</given-names></name><name><surname>Church</surname><given-names>J. A.</given-names></name><etal/></person-group>. (<year>2010</year>). <article-title>Prediction of individual brain maturity using fMRI</article-title>. <source>Science</source>
+<volume>329</volume>, <fpage>1358</fpage>–<lpage>1361</lpage>. <pub-id pub-id-type="doi">10.1126/science.1194144</pub-id><pub-id pub-id-type="pmid">20829489</pub-id></mixed-citation>
+      </ref>
+      <ref id="B8">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Fiebelkorn</surname><given-names>I. C.</given-names></name><name><surname>Pinsk</surname><given-names>M. A.</given-names></name><name><surname>Kastner</surname><given-names>S.</given-names></name></person-group> (<year>2018</year>). <article-title>A dynamic interplay within the frontoparietal network underlies rhythmic spatial attention</article-title>. <source>Neuron</source>
+<volume>99</volume>, <fpage>842</fpage>–<lpage>853</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuron.2018.07.038</pub-id><pub-id pub-id-type="pmid">30138590</pub-id></mixed-citation>
+      </ref>
+      <ref id="B9">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Geng</surname><given-names>X. F.</given-names></name><name><surname>Xu</surname><given-names>J. H.</given-names></name><name><surname>Liu</surname><given-names>B. L.</given-names></name><name><surname>Shi</surname><given-names>Y. G.</given-names></name></person-group> (<year>2018</year>). <article-title>Multivariate classification of major depressive disorder using the effective connectivity and functional connectivity</article-title>. <source>Front. Neurosci.</source>
+<volume>12</volume>, <fpage>38</fpage>. <pub-id pub-id-type="doi">10.3389/fnins.2018.00038</pub-id><pub-id pub-id-type="pmid">29515348</pub-id></mixed-citation>
+      </ref>
+      <ref id="B10">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Golland</surname><given-names>P.</given-names></name><name><surname>Fischl</surname><given-names>B.</given-names></name></person-group> (<year>2003</year>). <article-title>Permutation tests for classification: towards statistical significance in image-based studies</article-title>. <source>Inf. Process. Med. Imaging</source>
+<volume>18</volume>, <fpage>330</fpage>–<lpage>341</lpage>. <pub-id pub-id-type="doi">10.1007/978-3-540-45087-0_28</pub-id><pub-id pub-id-type="pmid">15344469</pub-id></mixed-citation>
+      </ref>
+      <ref id="B11">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>He</surname><given-names>B. J.</given-names></name><name><surname>Snyder</surname><given-names>A. Z.</given-names></name><name><surname>Vincent</surname><given-names>J. L.</given-names></name><name><surname>Epstein</surname><given-names>A.</given-names></name><name><surname>Shulman</surname><given-names>G. L.</given-names></name><name><surname>Corbetta</surname><given-names>M.</given-names></name></person-group> (<year>2007</year>). <article-title>Breakdown of functional connectivity in frontoparietal networks underlies behavioral deficits in spatial neglect</article-title>. <source>Neuron</source>
+<volume>53</volume>, <fpage>905</fpage>–<lpage>918</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuron.2007.02.013</pub-id><pub-id pub-id-type="pmid">17359924</pub-id></mixed-citation>
+      </ref>
+      <ref id="B12">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Hull</surname><given-names>J. V.</given-names></name><name><surname>Dokovna</surname><given-names>L. B.</given-names></name><name><surname>Jacokes</surname><given-names>Z. J.</given-names></name><name><surname>Torgerson</surname><given-names>C. M.</given-names></name><name><surname>Irimia</surname><given-names>A.</given-names></name><name><surname>Van Horn</surname><given-names>J. D.</given-names></name></person-group> (<year>2017</year>). <article-title>Resting-state functional connectivity in autism spectrum disorders: a review</article-title>. <source>Front Psychiatry</source>
+<volume>7</volume>, <fpage>205</fpage>. <pub-id pub-id-type="doi">10.3389/fpsyt.2016.00205</pub-id><pub-id pub-id-type="pmid">28101064</pub-id></mixed-citation>
+      </ref>
+      <ref id="B13">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Jung</surname><given-names>M. Y.</given-names></name><name><surname>Tu</surname><given-names>Y. H.</given-names></name><name><surname>Lang</surname><given-names>C. A.</given-names></name><name><surname>Ortiz</surname><given-names>A.</given-names></name><name><surname>Park</surname><given-names>J.</given-names></name><name><surname>Jorgenson</surname><given-names>K.</given-names></name><etal/></person-group>. (<year>2019</year>). <article-title>Decreased structural connectivity and resting-state brain activity in the lateral occipital cortex is associated with social communication deficits in boys with autism spectrum disorder</article-title>. <source>Neuroimage</source>
+<volume>190</volume>, <fpage>205</fpage>–<lpage>212</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2017.09.031</pub-id><pub-id pub-id-type="pmid">28927730</pub-id></mixed-citation>
+      </ref>
+      <ref id="B14">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Kursa</surname><given-names>M. B.</given-names></name><name><surname>Jankowski</surname><given-names>A.</given-names></name><name><surname>Rudnicki</surname><given-names>W. R.</given-names></name></person-group> (<year>2010</year>). <article-title>Boruta – a system for feature selection</article-title>. <source>Fund. Inform</source>. <volume>101</volume>, <fpage>271</fpage>–<lpage>285</lpage>. <pub-id pub-id-type="doi">10.3233/FI-2010-288</pub-id></mixed-citation>
+      </ref>
+      <ref id="B15">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Lau</surname><given-names>W. K. W.</given-names></name><name><surname>Leung</surname><given-names>M. K.</given-names></name><name><surname>Lau</surname><given-names>B. W. M.</given-names></name></person-group> (<year>2019</year>). <article-title>Resting-state abnormalities in autism spectrum disorders: a meta-analysis</article-title>. <source>Sci. Rep</source>. <volume>9</volume>, <fpage>3892</fpage>
+<pub-id pub-id-type="doi">10.1038/s41598-019-40427-7</pub-id><pub-id pub-id-type="pmid">30846796</pub-id></mixed-citation>
+      </ref>
+      <ref id="B16">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Li</surname><given-names>J.</given-names></name><name><surname>Sun</surname><given-names>Y.</given-names></name><name><surname>Huang</surname><given-names>Y.</given-names></name><name><surname>Bezerianos</surname><given-names>A.</given-names></name><name><surname>Yu</surname><given-names>R.</given-names></name></person-group> (<year>2019</year>). <article-title>Machine learning technique reveals intrinsic characteristics of schizophrenia: an alternative method</article-title>. <source>Brain Imaging Behav</source>. <volume>13</volume>, <fpage>1386</fpage>–<lpage>1396</lpage>. <pub-id pub-id-type="doi">10.1007/s11682-018-9947-4</pub-id><pub-id pub-id-type="pmid">30159765</pub-id></mixed-citation>
+      </ref>
+      <ref id="B17">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Lynch</surname><given-names>C. J.</given-names></name><name><surname>Breeden</surname><given-names>A. L.</given-names></name><name><surname>You</surname><given-names>X. Z.</given-names></name><name><surname>Ludlum</surname><given-names>R.</given-names></name><name><surname>Gaillard</surname><given-names>W. D.</given-names></name><name><surname>Kenworthy</surname><given-names>L.</given-names></name><etal/></person-group>. (<year>2017</year>). <article-title>Executive dysfunction in autism spectrum disorder is associated with a failure to modulate frontoparietal-insular hub architecture</article-title>. <source>Biol. Psychiatry Cogn. N</source>
+<volume>2</volume>, <fpage>537</fpage>–<lpage>545</lpage>. <pub-id pub-id-type="doi">10.1016/j.bpsc.2017.03.008</pub-id><pub-id pub-id-type="pmid">29348041</pub-id></mixed-citation>
+      </ref>
+      <ref id="B18">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Lynch</surname><given-names>C. J.</given-names></name><name><surname>Uddin</surname><given-names>L. Q.</given-names></name><name><surname>Supekar</surname><given-names>K.</given-names></name><name><surname>Khouzam</surname><given-names>A.</given-names></name><name><surname>Phillips</surname><given-names>J.</given-names></name><name><surname>Menon</surname><given-names>V.</given-names></name></person-group> (<year>2013</year>). <article-title>Default mode network in childhood autism: posteromedial cortex heterogeneity and relationship with social deficits</article-title>. <source>Biol. Psychiatry</source>
+<volume>74</volume>, <fpage>212</fpage>–<lpage>219</lpage>. <pub-id pub-id-type="doi">10.1016/j.biopsych.2012.12.013</pub-id><pub-id pub-id-type="pmid">23375976</pub-id></mixed-citation>
+      </ref>
+      <ref id="B19">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Minshew</surname><given-names>N. J.</given-names></name><name><surname>Williams</surname><given-names>D. L.</given-names></name></person-group> (<year>2007</year>). <article-title>The new neurobiology of autism: cortex, connectivity, and neuronal organization</article-title>. <source>Arch. Neurol</source>. <volume>64</volume>, <fpage>945</fpage>–<lpage>950</lpage>. <pub-id pub-id-type="doi">10.1001/archneur.64.7.945</pub-id><pub-id pub-id-type="pmid">17620483</pub-id></mixed-citation>
+      </ref>
+      <ref id="B20">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Monk</surname><given-names>C. S.</given-names></name><name><surname>Peltier</surname><given-names>S. J.</given-names></name><name><surname>Wiggins</surname><given-names>J. L.</given-names></name><name><surname>Weng</surname><given-names>S. J.</given-names></name><name><surname>Carrasco</surname><given-names>M.</given-names></name><name><surname>Risi</surname><given-names>S.</given-names></name><etal/></person-group>. (<year>2009</year>). <article-title>Abnormalities of intrinsic functional connectivity in autism spectrum disorders</article-title>. <source>Neuroimage</source>
+<volume>47</volume>, <fpage>764</fpage>–<lpage>772</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2009.04.069</pub-id><pub-id pub-id-type="pmid">19409498</pub-id></mixed-citation>
+      </ref>
+      <ref id="B21">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Murphy</surname><given-names>C. M.</given-names></name><name><surname>Christakou</surname><given-names>A.</given-names></name><name><surname>Giampietro</surname><given-names>V.</given-names></name><name><surname>Brammer</surname><given-names>M.</given-names></name><name><surname>Daly</surname><given-names>E. M.</given-names></name><name><surname>Ecker</surname><given-names>C.</given-names></name><etal/></person-group>. (<year>2017</year>). <article-title>Abnormal functional activation and maturation of ventromedial prefrontal cortex and cerebellum during temporal discounting in autism spectrum disorder</article-title>. <source>Hum. Brain Mapp</source>. <volume>38</volume>, <fpage>5343</fpage>–<lpage>5355</lpage>. <pub-id pub-id-type="doi">10.1002/hbm.23718</pub-id><pub-id pub-id-type="pmid">28744969</pub-id></mixed-citation>
+      </ref>
+      <ref id="B22">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Nomi</surname><given-names>J. S.</given-names></name><name><surname>Uddin</surname><given-names>L. Q.</given-names></name></person-group> (<year>2015</year>). <article-title>Face processing in autism spectrum disorders: From brain regions to brain networks</article-title>. <source>Neuropsychologia</source>
+<volume>71</volume>, <fpage>201</fpage>–<lpage>216</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuropsychologia.2015.03.029</pub-id><pub-id pub-id-type="pmid">25829246</pub-id></mixed-citation>
+      </ref>
+      <ref id="B23">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Padmanabhan</surname><given-names>A.</given-names></name><name><surname>Lynch</surname><given-names>C. J.</given-names></name><name><surname>Schaer</surname><given-names>M.</given-names></name><name><surname>Menon</surname><given-names>V.</given-names></name></person-group> (<year>2017</year>). <article-title>The default mode network in autism</article-title>. <source>Biol. Psychiatry Cogn. Neurosci. Neuroimaging</source>
+<volume>2</volume>, <fpage>476</fpage>–<lpage>486</lpage>. <pub-id pub-id-type="doi">10.1016/j.bpsc.2017.04.004</pub-id><pub-id pub-id-type="pmid">29034353</pub-id></mixed-citation>
+      </ref>
+      <ref id="B24">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Renzi</surname><given-names>C.</given-names></name><name><surname>Ferrari</surname><given-names>C.</given-names></name><name><surname>Schiavi</surname><given-names>S.</given-names></name><name><surname>Pisoni</surname><given-names>A.</given-names></name><name><surname>Papagno</surname><given-names>C.</given-names></name><name><surname>Vecchi</surname><given-names>T.</given-names></name><etal/></person-group>. (<year>2015</year>). <article-title>The role of the occipital face area in holistic processing involved in face detection and discrimination: A tDCS study</article-title>. <source>Neuropsychology</source>
+<volume>29</volume>, <fpage>409</fpage>–<lpage>416</lpage>. <pub-id pub-id-type="doi">10.1037/neu0000127</pub-id><pub-id pub-id-type="pmid">25110932</pub-id></mixed-citation>
+      </ref>
+      <ref id="B25">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Riaz</surname><given-names>A.</given-names></name><name><surname>Asad</surname><given-names>M.</given-names></name><name><surname>Alonso</surname><given-names>E.</given-names></name><name><surname>Slabaugh</surname><given-names>G.</given-names></name></person-group> (<year>2018</year>). <article-title>Fusion of fMRI and non-imaging data for ADHD classification</article-title>. <source>Comput. Med. Imaging Graph</source>
+<volume>65</volume>, <fpage>115</fpage>–<lpage>128</lpage>. <pub-id pub-id-type="doi">10.1016/j.compmedimag.2017.10.002</pub-id><pub-id pub-id-type="pmid">29137838</pub-id></mixed-citation>
+      </ref>
+      <ref id="B26">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Solomon</surname><given-names>M.</given-names></name><name><surname>Ozonoff</surname><given-names>S. J.</given-names></name><name><surname>Ursu</surname><given-names>S.</given-names></name><name><surname>Ravizza</surname><given-names>S.</given-names></name><name><surname>Cummings</surname><given-names>N.</given-names></name><name><surname>Ly</surname><given-names>S.</given-names></name><etal/></person-group>. (<year>2009</year>). <article-title>The neural substrates of cognitive control deficits in autism spectrum disorders</article-title>. <source>Neuropsychologia</source>
+<volume>47</volume>, <fpage>2515</fpage>–<lpage>2526</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuropsychologia.2009.04.019</pub-id><pub-id pub-id-type="pmid">19410583</pub-id></mixed-citation>
+      </ref>
+      <ref id="B27">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Solomon</surname><given-names>M.</given-names></name><name><surname>Yoon</surname><given-names>J. H.</given-names></name><name><surname>Ragland</surname><given-names>J. D.</given-names></name><name><surname>Niendam</surname><given-names>T. A.</given-names></name><name><surname>Lesh</surname><given-names>T. A.</given-names></name><name><surname>Fairbrother</surname><given-names>W.</given-names></name><etal/></person-group>. (<year>2014</year>). <article-title>The development of the neural substrates of cognitive control in adolescents with autism spectrum disorders</article-title>. <source>Biol. Psychiatry</source>
+<volume>76</volume>, <fpage>412</fpage>–<lpage>421</lpage>. <pub-id pub-id-type="doi">10.1016/j.biopsych.2013.08.036</pub-id><pub-id pub-id-type="pmid">24209777</pub-id></mixed-citation>
+      </ref>
+      <ref id="B28">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Sun</surname><given-names>L.</given-names></name><name><surname>Cao</surname><given-names>Q. J.</given-names></name><name><surname>Long</surname><given-names>X. Y.</given-names></name><name><surname>Sui</surname><given-names>M. Q.</given-names></name><name><surname>Cao</surname><given-names>X. H.</given-names></name><name><surname>Zhu</surname><given-names>C. Z.</given-names></name><etal/></person-group>. (<year>2012</year>). <article-title>Abnormal functional connectivity between the anterior cingulate and the default mode network in drug-naive boys with attention deficit hyperactivity disorder</article-title>. <source>Psychiatry Res</source>. <volume>201</volume>, <fpage>120</fpage>–<lpage>127</lpage>. <pub-id pub-id-type="doi">10.1016/j.pscychresns.2011.07.001</pub-id><pub-id pub-id-type="pmid">22424873</pub-id></mixed-citation>
+      </ref>
+      <ref id="B29">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Sun</surname><given-names>Y.</given-names></name><name><surname>Zhao</surname><given-names>L.</given-names></name><name><surname>Lan</surname><given-names>Z.</given-names></name><name><surname>Jia</surname><given-names>X. Z.</given-names></name><name><surname>Xue</surname><given-names>S. W.</given-names></name></person-group> (<year>2020</year>). <article-title>Differentiating boys with ADHD from those with typical development based on whole-brain functional connections using a machine learning approach</article-title>. <source>Neuropsychiatry Dis. Treat</source>. <volume>16</volume>, <fpage>691</fpage>–<lpage>702</lpage>. <pub-id pub-id-type="doi">10.2147/NDT.S239013</pub-id><pub-id pub-id-type="pmid">32210565</pub-id></mixed-citation>
+      </ref>
+      <ref id="B30">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Van Loo</surname><given-names>K. M.</given-names></name><name><surname>Martens</surname><given-names>G. J.</given-names></name></person-group> (<year>2007</year>). <article-title>Genetic and environmental factors in complex neurodevelopmental disorders</article-title>. <source>Curr. Genomics</source>
+<volume>8</volume>, <fpage>429</fpage>–<lpage>444</lpage>
+<pub-id pub-id-type="doi">10.2174/138920207783591717</pub-id><pub-id pub-id-type="pmid">19412416</pub-id></mixed-citation>
+      </ref>
+      <ref id="B31">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Von dem Hagen</surname><given-names>E. A.</given-names></name><name><surname>Stoyanova</surname><given-names>R. S.</given-names></name><name><surname>Baron-Cohen</surname><given-names>S.</given-names></name><name><surname>Calder</surname><given-names>A. J.</given-names></name></person-group> (<year>2013</year>). <article-title>Reduced functional connectivity within and between 'social' resting state networks in autism spectrum conditions</article-title>. <source>Soc. Cogn. Affect Neurosci</source>. <volume>8</volume>, <fpage>694</fpage>–<lpage>701</lpage>. <pub-id pub-id-type="doi">10.1093/scan/nss053</pub-id><pub-id pub-id-type="pmid">22563003</pub-id></mixed-citation>
+      </ref>
+      <ref id="B32">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Wee</surname><given-names>C. Y.</given-names></name><name><surname>Yap</surname><given-names>P. T.</given-names></name><name><surname>Zhang</surname><given-names>D.</given-names></name><name><surname>Wang</surname><given-names>L.</given-names></name><name><surname>Shen</surname><given-names>D.</given-names></name></person-group> (<year>2012</year>). <article-title>Constrained sparse functional connectivity networks for MCI classification</article-title>. <source>Med. Image Comput. Comput. Assist. Interv</source>. <volume>15</volume>, <fpage>212</fpage>–<lpage>219</lpage>. <pub-id pub-id-type="doi">10.1007/978-3-642-33418-4_27</pub-id><pub-id pub-id-type="pmid">23286051</pub-id></mixed-citation>
+      </ref>
+      <ref id="B33">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Weng</surname><given-names>S. J.</given-names></name><name><surname>Wiggins</surname><given-names>J. L.</given-names></name><name><surname>Peltier</surname><given-names>S. J.</given-names></name><name><surname>Carrasco</surname><given-names>M.</given-names></name><name><surname>Risi</surname><given-names>S.</given-names></name><name><surname>Lord</surname><given-names>C.</given-names></name><etal/></person-group>. (<year>2010</year>). <article-title>Alterations of resting state functional connectivity in the default network in adolescents with autism spectrum disorders</article-title>. <source>Brain Res</source>. <volume>1313</volume>, <fpage>202</fpage>–<lpage>214</lpage>. <pub-id pub-id-type="doi">10.1016/j.brainres.2009.11.057</pub-id><pub-id pub-id-type="pmid">20004180</pub-id></mixed-citation>
+      </ref>
+      <ref id="B34">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Xu</surname><given-names>J.</given-names></name><name><surname>Wang</surname><given-names>H.</given-names></name><name><surname>Zhang</surname><given-names>L.</given-names></name><name><surname>Xu</surname><given-names>Z.</given-names></name><name><surname>Li</surname><given-names>T.</given-names></name><name><surname>Zhou</surname><given-names>Z.</given-names></name><etal/></person-group>. (<year>2018</year>). <article-title>Both hypo-connectivity and hyper-connectivity of the insular subregions associated with severity in children with autism spectrum disorders</article-title>. <source>Front. Neurosci</source>. <volume>12</volume>, <fpage>234</fpage>. <pub-id pub-id-type="doi">10.3389/fnins.2018.00234</pub-id><pub-id pub-id-type="pmid">29695950</pub-id></mixed-citation>
+      </ref>
+      <ref id="B35">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Yang</surname><given-names>R.</given-names></name><name><surname>Gao</surname><given-names>C.</given-names></name><name><surname>Wu</surname><given-names>X.</given-names></name><name><surname>Yang</surname><given-names>J.</given-names></name><name><surname>Li</surname><given-names>S.</given-names></name><name><surname>Cheng</surname><given-names>H.</given-names></name></person-group> (<year>2016</year>). <article-title>Decreased functional connectivity to posterior cingulate cortex in major depressive disorder</article-title>. <source>Psychiatry Res. Neuroimaging</source>
+<volume>255</volume>, <fpage>15</fpage>–<lpage>23</lpage>. <pub-id pub-id-type="doi">10.1016/j.pscychresns.2016.07.010</pub-id><pub-id pub-id-type="pmid">27500452</pub-id></mixed-citation>
+      </ref>
+      <ref id="B36">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zeng</surname><given-names>L. L.</given-names></name><name><surname>Shen</surname><given-names>H.</given-names></name><name><surname>Liu</surname><given-names>L.</given-names></name><name><surname>Wang</surname><given-names>L. B.</given-names></name><name><surname>Li</surname><given-names>B. J.</given-names></name><name><surname>Fang</surname><given-names>P.</given-names></name><etal/></person-group>. (<year>2012</year>). <article-title>Identifying major depression using whole-brain functional connectivity: a multivariate pattern analysis</article-title>. <source>Brain</source>
+<volume>135</volume>, <fpage>1498</fpage>–<lpage>1507</lpage>. <pub-id pub-id-type="doi">10.1093/brain/aws059</pub-id><pub-id pub-id-type="pmid">22418737</pub-id></mixed-citation>
+      </ref>
+      <ref id="B37">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zuo</surname><given-names>X. N.</given-names></name><name><surname>Ehmke</surname><given-names>R.</given-names></name><name><surname>Mennes</surname><given-names>M.</given-names></name><name><surname>Imperati</surname><given-names>D.</given-names></name><name><surname>Castellanos</surname><given-names>F. X.</given-names></name><name><surname>Sporns</surname><given-names>O.</given-names></name><etal/></person-group>. (<year>2012</year>). <article-title>Network centrality in the human functional connectome</article-title>. <source>Cereb. Cortex</source>
+<volume>22</volume>, <fpage>1862</fpage>–<lpage>1875</lpage>. <pub-id pub-id-type="doi">10.1093/cercor/bhr269</pub-id><pub-id pub-id-type="pmid">21968567</pub-id></mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

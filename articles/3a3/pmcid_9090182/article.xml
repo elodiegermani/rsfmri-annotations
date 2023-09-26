@@ -1,0 +1,631 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.3" xml:lang="en" article-type="research-article">
+  <?properties open_access?>
+  <?properties manuscript?>
+  <processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats">
+    <restricted-by>pmc</restricted-by>
+  </processing-meta>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-journal-id">101639462</journal-id>
+      <journal-id journal-id-type="pubmed-jr-id">43012</journal-id>
+      <journal-id journal-id-type="nlm-ta">IEEE Access</journal-id>
+      <journal-id journal-id-type="iso-abbrev">IEEE Access</journal-id>
+      <journal-title-group>
+        <journal-title>IEEE access : practical innovations, open solutions</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">2169-3536</issn>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">35548102</article-id>
+      <article-id pub-id-type="pmc">9090182</article-id>
+      <article-id pub-id-type="doi">10.1109/access.2020.3025828</article-id>
+      <article-id pub-id-type="manuscript">NIHMS1633554</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>MuscNet, a Weighted Voting Model of Multi-Source Connectivity Networks to Predict Mild Cognitive Impairment Using Resting-State Functional MRI</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>LI</surname>
+            <given-names>JIALIANG</given-names>
+          </name>
+          <contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-9032-5962</contrib-id>
+          <xref rid="A1" ref-type="aff">1</xref>
+          <xref rid="A2" ref-type="aff">2</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>YAO</surname>
+            <given-names>ZHAOMIN</given-names>
+          </name>
+          <xref rid="A2" ref-type="aff">2</xref>
+          <xref rid="A3" ref-type="aff">3</xref>
+          <xref rid="A4" ref-type="aff">4</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>DUAN</surname>
+            <given-names>MEIYU</given-names>
+          </name>
+          <contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-7171-2695</contrib-id>
+          <xref rid="A2" ref-type="aff">2</xref>
+          <xref rid="A3" ref-type="aff">3</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>LIU</surname>
+            <given-names>SHUAI</given-names>
+          </name>
+          <contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-2867-4683</contrib-id>
+          <xref rid="A2" ref-type="aff">2</xref>
+          <xref rid="A3" ref-type="aff">3</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>LI</surname>
+            <given-names>FEI</given-names>
+          </name>
+          <contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-1338-2533</contrib-id>
+          <xref rid="A1" ref-type="aff">1</xref>
+          <xref rid="A2" ref-type="aff">2</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>ZHU</surname>
+            <given-names>HAIYANG</given-names>
+          </name>
+          <contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-4803-0412</contrib-id>
+          <xref rid="A2" ref-type="aff">2</xref>
+          <xref rid="A3" ref-type="aff">3</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>XIA</surname>
+            <given-names>ZHIQIANG</given-names>
+          </name>
+          <contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-2235-5366</contrib-id>
+          <xref rid="A2" ref-type="aff">2</xref>
+          <xref rid="A3" ref-type="aff">3</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>HUANG</surname>
+            <given-names>LAN</given-names>
+          </name>
+          <contrib-id contrib-id-type="orcid">http://orcid.org/0000-0003-3233-3777</contrib-id>
+          <xref rid="A2" ref-type="aff">2</xref>
+          <xref rid="A3" ref-type="aff">3</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>ZHOU</surname>
+            <given-names>FENGFENG</given-names>
+          </name>
+          <role>(Senior Member, IEEE)</role>
+          <contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-8108-6007</contrib-id>
+          <xref rid="A1" ref-type="aff">1</xref>
+          <xref rid="A2" ref-type="aff">2</xref>
+          <xref rid="A3" ref-type="aff">3</xref>
+        </contrib>
+      </contrib-group>
+      <aff id="A1"><label>1</label>BioKnow Health Informatics Laboratory, College of Software, Jilin University, Changchun 130012, China</aff>
+      <aff id="A2"><label>2</label>Key Laboratory of Symbolic Computation and Knowledge Engineering of Ministry of Education, Jilin University, Changchun 130012, China</aff>
+      <aff id="A3"><label>3</label>BioKnow Health Informatics Laboratory, College of Computer Science and Technology, Jilin University, Changchun 130012, China</aff>
+      <aff id="A4"><label>4</label>Cancer Systems Biology Center, China-Japan Union Hospital of Jilin University, Changchun 130012, China</aff>
+      <author-notes>
+        <corresp id="CR1">Corresponding author: Fengfeng Zhou (<email>fengfengzhou@gmail.com</email>)</corresp>
+      </author-notes>
+      <pub-date pub-type="nihms-submitted">
+        <day>9</day>
+        <month>10</month>
+        <year>2021</year>
+      </pub-date>
+      <pub-date pub-type="ppub">
+        <year>2020</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>22</day>
+        <month>9</month>
+        <year>2020</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>10</day>
+        <month>5</month>
+        <year>2022</year>
+      </pub-date>
+      <volume>8</volume>
+      <fpage>174023</fpage>
+      <lpage>174031</lpage>
+      <permissions>
+        <license>
+          <ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref>
+          <license-p>This work is licensed under a Creative Commons Attribution 4.0 License. For more information, see <ext-link ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</ext-link></license-p>
+        </license>
+      </permissions>
+      <abstract id="ABS1">
+        <p id="P1">The neurological disorder mild cognitive impairment (MCI) demonstrates minor impacts on the patient’s daily activities and may be ignored as the status of normal aging. But some of the MCI patients may further develop into severe statuses like Alzheimer’s disease (AD). The brain functional connectivity network (BFCN) was usually constructed from the resting-state functional magnetic resonance imaging (rs-fMRI) data. This technology has been widely used to detect the neurodegenerative dementia and to reveal the intrinsic mechanism of neural activities. The BFCN edge was usually determined by the pairwise correlation between the brain regions. This study proposed a weighted voting model of multi-source connectivity networks (MuscNet) by integrating multiple BFCNs of different correlation coefficients. Our model was further improved by removing redundant features. The experimental data demonstrated that different BFCNs contributed complementary information to each other and MuscNet outperformed the existing models on detecting MCI patients. The previous study suggested the existence of multiple solutions with similarly good performance for a machine learning problem. The proposed model MuscNet utilized a weighted voting strategy to slightly outperform the existing studies, suggesting an effective way to fuse multiple base models. The reason may need further theoretical investigations about why different base models contribute to each other for the MCI prediction.</p>
+      </abstract>
+      <kwd-group>
+        <kwd>Mild cognitive impairment</kwd>
+        <kwd>Alzheimer’s disease</kwd>
+        <kwd>resting-state functional MRI</kwd>
+        <kwd>brain functional connectivity network</kwd>
+        <kwd>multi-source connectivity network</kwd>
+        <kwd>weighted voting model</kwd>
+        <kwd>MuscNet</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="S1">
+      <label>I.</label>
+      <title>INTRODUCTION</title>
+      <p id="P2">Alzheimer’s disease (AD) is one of the most dangerous and frequently-occurred brain diseases, and this irreversible neuro-degenerative dementia remains to have no effective treatments [<xref rid="R1" ref-type="bibr">1</xref>]. AD may develop from mild cognitive impairment (MCI), which has become the investigation focus of the AD researchers [<xref rid="R2" ref-type="bibr">2</xref>]. According to [<xref rid="R3" ref-type="bibr">3</xref>], the functionally alive brain may be modeled as a graph, with the functional brain regions (also called region of interest, or ROI) as nodes and significant correlations between nodes as edges, which are calculated using the time series data of bloodoxygenation-level-dependent (BOLD) signals of each ROI. Such a network was defined as the basal forebrain cholinergic neurons (BFCN) and was expected to reveal intrinsic mechanisms about BFCNs, etc[<xref rid="R4" ref-type="bibr">4</xref>]. The static Pearson correlation coefficient (PCC)-based BFCN has demonstrated promising predicting performances on the diagnosis of MCI, AD and a few other diseases [<xref rid="R5" ref-type="bibr">5</xref>]–[<xref rid="R7" ref-type="bibr">7</xref>]. The partial time series data of blood-oxygenation-level-dependent (BOLD) signals were used to represent the temporary graph nodes and to construct the dynamic BFCN [<xref rid="R8" ref-type="bibr">8</xref>], [<xref rid="R9" ref-type="bibr">9</xref>].</p>
+      <p id="P3">The above-mentioned network was regarded as the low-order BFCN and in [<xref rid="R5" ref-type="bibr">5</xref>], the high-order version BFCN (HON) was constructed by calculating weighted-graph local clustering coefficients as the features of brain regions. In [<xref rid="R7" ref-type="bibr">7</xref>], dynamic versions of low-order (LoM) and high-order BFCNs (HiO) were constructed simultaneously using Matrix Variate Normal Distribution (MVND), and a fusion model (FuMO) integrating both low-order and high-order BFCN was further proposed. Although the high order BFCN demonstrated better diagnosis performance on neurodegenerative dementia [<xref rid="R10" ref-type="bibr">10</xref>], researches in [<xref rid="R11" ref-type="bibr">11</xref>] indicated that the integration of both low-order and high-order BFCNs may complement each other and facilitate a better diagnosis result.</p>
+      <p id="P4">Brain is a comprehensive and dynamic network of ROIs and may be formulated by various versions of BFCNs through different definitions of the edges including HON [<xref rid="R5" ref-type="bibr">5</xref>], FuMO [<xref rid="R7" ref-type="bibr">7</xref>], sparse network [<xref rid="R12" ref-type="bibr">12</xref>], ICA [<xref rid="R13" ref-type="bibr">13</xref>], etc. Pearson correlation coefficient (PCC) was the most popular formulation of the ROI edges for its simplicity and effectiveness. Due to the PCC’s limitation on describing the non-linear correlation, various other inter-variable similarity metrics were introduced to define the edges, e.g. Kendall correlation coefficient (KCC) [<xref rid="R14" ref-type="bibr">14</xref>, <xref rid="R15" ref-type="bibr">15</xref>], Spearman correlation coefficient (SCC) [<xref rid="R16" ref-type="bibr">16</xref>], and cosine similarity (CS) [<xref rid="R17" ref-type="bibr">17</xref>], etc. The correlation metrics maximal information coefficient (MIC) has been proven to have outstanding performance in capturing both linear and nonlinear relationships between two variables [<xref rid="R18" ref-type="bibr">18</xref>] and has been successfully applied to connectivity network construction [<xref rid="R19" ref-type="bibr">19</xref>] and schizophrenia disease detection [<xref rid="R20" ref-type="bibr">20</xref>].</p>
+      <p id="P5">Considering that brain functional network cannot be modeled simply using one correlation coefficient, integrated modeling of different BFCNs may improve the disease diagnosis performances. In [<xref rid="R10" ref-type="bibr">10</xref>], the correlation’s correlation of multiple levels of high-order BFCNs were calculated and the linear fusion of those BFCNs in different levels facilitated an important improvement in the computational diagnosis of Autism Spectrum Disorders. Relevant conclusion in [<xref rid="R21" ref-type="bibr">21</xref>] showed that a multi-task intrinsic network fusing within- and between-task interactions of patients and controls extracted by general linear model (GLM) and ICA can improve the schizophrenia diagnosis. However, those works only applied the traditional tool like PCC and ICA for the base model, which may be limited.</p>
+      <p id="P6">This study hypothesized that the sensitive correlation metrics MIC may capture hidden information from the noisy brain rs-fMRI data compared to other traditional coefficients, and the combination of MIC and other coefficients may improve the diagnosis. Inspired by the above works, we presented a new data fusion method considering the BFCNs constructed by various correlation coefficients as data source. To the best of our knowledge, this is the first work of utilizing MIC as the correlation metrics in the BFCN construction for MCI diagnosis and the first work of combining BFCNs with different correlation measuring metrics. Furthermore, considering the computational challenge of the large feature number of a BFCN, we explored the effects of different feature selection methods on the MCI prediction performance. Our experimental data demonstrated that the MCI diagnosis may be improved by integrating multiple correlation metrics and selecting appropriate features.</p>
+    </sec>
+    <sec id="S2">
+      <label>II.</label>
+      <title>MATERIALS AND METHODS</title>
+      <sec id="S3">
+        <label>A.</label>
+        <title>DATASET SUMMARY</title>
+        <p id="P7">This study used the publicly available neuro-imaging dataset from the Alzheimer’s Disease Neuroimaging Initiative (ADNI) database [<xref rid="R22" ref-type="bibr">22</xref>]. ADNI is a longitudinal multi-center consortium aiming to accumulate and provide the clinical, imaging, genetics and biochemical datasets for the early detection and tracking of Alzheimer’s disease (AD). After a decade’s ongoing effort, the ADNI database released to the public researchers with the multiple types of neuro-imaging data and other clinical information. ADNI has served as a major data source for the researchers of detecting the onset and progression of mild cognitive impairment (MCI) [<xref rid="R23" ref-type="bibr">23</xref>], [<xref rid="R24" ref-type="bibr">24</xref>].</p>
+        <p id="P8">This study used the same dataset as in [<xref rid="R7" ref-type="bibr">7</xref>], including 68 mild cognitive impairment (MCI) patients and 69 Normal Controls (NC) from the ADNI database. The rs-fMRI of these participants were scanned by 3.0T Philips MRI scanner. The following scanner settings were utilized: TR/TE = 3000/30 mm, flip angle = 80<sup>◦</sup>, imaging matrix size = 64 * 64, 48 slices and 140 volumes, and slice thickness = 3.3mm. Each rs-fMRI image data was processed by the following well-accepted protocol using the software SPM8, which is available at <ext-link xlink:href="https://www.fil.ion.ucl.ac.uk/spm/software/spm8/" ext-link-type="uri">https://www.fil.ion.ucl.ac.uk/spm/software/spm8/</ext-link>. In order to make a consistent comparison, the samples were selected using the same criteria as the study [<xref rid="R7" ref-type="bibr">7</xref>].</p>
+        <p id="P9">The first three volumes of each participant were discarded to ensure the magnetization equilibrium. The rest 137 volumes of each participant were then pre-processed with correction and normalization. The rs-fMRI imaging data was regressed to reduce the effects of nuisance signals including ventricle, white matter signals and six head-motion profiles. The Automated Anatomical Labeling (AAL) template atlas [<xref rid="R25" ref-type="bibr">25</xref>] was utilized to divide the generated Blood Oxygen Level Dependent (BOLD) time series signals into 116 regions of interest (ROIs). Finally, the mean rs-fMRI time series signals of each ROI (consisting of 137 volumes) were band-pass filtered from 0.01 to 0.08 Hz to generate the data matrix of each participant for constructing BFCN. The pre-processed data was provided by [<xref rid="R7" ref-type="bibr">7</xref>].</p>
+      </sec>
+      <sec id="S4">
+        <label>B.</label>
+        <title>CONSTRUCTION OF MuscNet</title>
+        <p id="P10">This study constructed a multi-source connectivity network (MuscNet) by integrating four classic metrics for measuring linear correlation coefficients (CC), including PCC, SCC, KCC and CS, and the sensitive metrics MIC, as illustrated in <xref rid="F1" ref-type="fig">Figure 1</xref>. PCC was considered as equivalent to the decentralized CS. Both SCC and KCC were non-linear tolerant.</p>
+        <sec id="S5">
+          <label>1)</label>
+          <title>STATIC BFCN</title>
+          <p id="P11">The correlation <inline-formula><mml:math id="M1" display="inline"><mml:mrow><mml:msubsup><mml:mtext>W</mml:mtext><mml:mrow><mml:mtext>ij</mml:mtext></mml:mrow><mml:mrow><mml:mtext>corr</mml:mtext></mml:mrow></mml:msubsup></mml:mrow></mml:math></inline-formula> between ROI<sub>i</sub> and ROI<sub>j</sub> of subject n was defined as follows:
+<disp-formula id="FD1"><label>(1)</label>
+<mml:math id="M2" display="block"><mml:mrow><mml:msubsup><mml:mtext>W</mml:mtext><mml:mrow><mml:mtext>ij</mml:mtext></mml:mrow><mml:mrow><mml:mtext>corr</mml:mtext></mml:mrow></mml:msubsup><mml:mo>=</mml:mo><mml:mi>c</mml:mi><mml:mi>o</mml:mi><mml:mi>r</mml:mi><mml:mi>r</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mrow><mml:mtext>ROI</mml:mtext></mml:mrow><mml:mtext>i</mml:mtext></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mrow><mml:mtext>ROI</mml:mtext></mml:mrow><mml:mtext>j</mml:mtext></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:math>
+</disp-formula></p>
+          <p id="P12">where corr() can be replaced by one specific correlation coefficient metrics. Taking PCC and MIC as examples, respectively. <inline-formula><mml:math id="M3" display="inline"><mml:mrow><mml:msubsup><mml:mtext>W</mml:mtext><mml:mrow><mml:mtext>ij</mml:mtext></mml:mrow><mml:mrow><mml:mtext>PCC</mml:mtext></mml:mrow></mml:msubsup></mml:mrow></mml:math></inline-formula> may calculated as:
+<disp-formula id="FD2"><label>(2)</label>
+<mml:math id="M4" display="block"><mml:mrow><mml:msubsup><mml:mtext>w</mml:mtext><mml:mrow><mml:mtext>ij</mml:mtext></mml:mrow><mml:mrow><mml:mtext>PCC</mml:mtext></mml:mrow></mml:msubsup><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:msubsup><mml:mo>∑</mml:mo><mml:mrow><mml:mtext>m</mml:mtext><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mrow><mml:msub><mml:mrow><mml:mtext>num</mml:mtext></mml:mrow><mml:mrow><mml:mtext>R</mml:mtext><mml:mi>O</mml:mi><mml:mn>1</mml:mn></mml:mrow></mml:msub></mml:mrow></mml:msubsup><mml:mrow><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msubsup><mml:mtext>V</mml:mtext><mml:mtext>i</mml:mtext><mml:mtext>m</mml:mtext></mml:msubsup><mml:mo>−</mml:mo><mml:msub><mml:mover accent="true"><mml:mi>V</mml:mi><mml:mo>¯</mml:mo></mml:mover><mml:mtext>i</mml:mtext></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msubsup><mml:mtext>V</mml:mtext><mml:mtext>j</mml:mtext><mml:mtext>m</mml:mtext></mml:msubsup><mml:mo>−</mml:mo><mml:msub><mml:mover accent="true"><mml:mi>V</mml:mi><mml:mo>¯</mml:mo></mml:mover><mml:mtext>j</mml:mtext></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:mrow><mml:mrow><mml:msup><mml:mrow><mml:msqrt><mml:mrow><mml:msubsup><mml:mo>∑</mml:mo><mml:mrow><mml:mtext>m</mml:mtext><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mrow><mml:msub><mml:mrow><mml:mtext>num</mml:mtext></mml:mrow><mml:mrow><mml:mtext>RO</mml:mtext></mml:mrow></mml:msub></mml:mrow></mml:msubsup><mml:mrow><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msubsup><mml:mtext>V</mml:mtext><mml:mtext>i</mml:mtext><mml:mtext>m</mml:mtext></mml:msubsup><mml:mo>−</mml:mo><mml:msub><mml:mover accent="true"><mml:mi>V</mml:mi><mml:mo>¯</mml:mo></mml:mover><mml:mtext>i</mml:mtext></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:mrow></mml:msqrt></mml:mrow><mml:mn>2</mml:mn></mml:msup><mml:msup><mml:mrow><mml:msqrt><mml:mrow><mml:msubsup><mml:mo>∑</mml:mo><mml:mrow><mml:mtext>m</mml:mtext><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mrow><mml:msub><mml:mrow><mml:mtext>num</mml:mtext></mml:mrow><mml:mrow><mml:mtext>R</mml:mtext><mml:mi>O</mml:mi><mml:mn>1</mml:mn></mml:mrow></mml:msub></mml:mrow></mml:msubsup><mml:mrow><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msubsup><mml:mtext>V</mml:mtext><mml:mtext>j</mml:mtext><mml:mtext>m</mml:mtext></mml:msubsup><mml:mo>−</mml:mo><mml:msub><mml:mover accent="true"><mml:mi>V</mml:mi><mml:mo>¯</mml:mo></mml:mover><mml:mtext>j</mml:mtext></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:mrow></mml:msqrt></mml:mrow><mml:mn>2</mml:mn></mml:msup></mml:mrow></mml:mfrac></mml:mrow></mml:math>
+</disp-formula></p>
+          <p id="P13">where <inline-formula><mml:math id="M5" display="inline"><mml:mrow><mml:msubsup><mml:mtext>V</mml:mtext><mml:mtext>i</mml:mtext><mml:mtext>m</mml:mtext></mml:msubsup></mml:mrow></mml:math></inline-formula> was defined as the m<sub>th</sub> element in BOLD time series signal vector of ROI<sub>i</sub> of subject n. And <inline-formula><mml:math id="M6" display="inline"><mml:mrow><mml:msubsup><mml:mtext>W</mml:mtext><mml:mrow><mml:mtext>ij</mml:mtext></mml:mrow><mml:mrow><mml:mtext>MIC</mml:mtext></mml:mrow></mml:msubsup></mml:mrow></mml:math></inline-formula> may be calculated as:
+<disp-formula id="FD3"><label>(3)</label>
+<mml:math id="M7" display="block"><mml:mrow><mml:msubsup><mml:mtext>W</mml:mtext><mml:mrow><mml:mtext>ij</mml:mtext></mml:mrow><mml:mrow><mml:mtext>MIC</mml:mtext></mml:mrow></mml:msubsup><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:mtext>I</mml:mtext><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mtext>V</mml:mtext><mml:mtext>i</mml:mtext></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mtext>V</mml:mtext><mml:mtext>j</mml:mtext></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mrow><mml:mi>min</mml:mi><mml:mrow><mml:mo>{</mml:mo><mml:mrow><mml:mtext>H</mml:mtext><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mtext>V</mml:mtext><mml:mtext>i</mml:mtext></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mo>,</mml:mo><mml:mtext>H</mml:mtext><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mtext>V</mml:mtext><mml:mtext>j</mml:mtext></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mo>}</mml:mo></mml:mrow></mml:mrow></mml:mfrac></mml:mrow></mml:math>
+</disp-formula></p>
+          <p id="P14">where I(V<sub>i</sub>,V<sub>j</sub>) was the mutual information between V<sub>i</sub> and V<sub>j</sub>, and H(V<sub>i</sub>) was the Shannon information entropy of the variable V<sub>i</sub>. The calculation of the MIC and the Shannon information entropy were implemented as the function MINE() in the Python package minepy version 1.2.3 [<xref rid="R19" ref-type="bibr">19</xref>]. After pre-processing, we can obtain a data matrix with shape (num<sub>subj</sub>, num<sub>volume</sub>, num<sub>ROI</sub>), where num<sub>subj</sub> = 137, num<sub>volume</sub> = 137, num<sub>ROI</sub> = 116, meant that each subject had 137 volumes, each volume included 116 BOLD signals corresponding to each ROI. We can also transpose it into (num<sub>subj</sub>, num<sub>ROI</sub>, num<sub>volume</sub>), which meant each ROI had a BOLD signal vector with length num<sub>volume</sub>. Then the basic correlation based BFCN can be constructed as follows: 1) Calculate pairwise correlation coefficient <inline-formula><mml:math id="M8" display="inline"><mml:mrow><mml:msubsup><mml:mtext>W</mml:mtext><mml:mrow><mml:mtext>ij</mml:mtext></mml:mrow><mml:mrow><mml:mtext>corr</mml:mtext><mml:mspace width="0.25em"/></mml:mrow></mml:msubsup></mml:mrow></mml:math></inline-formula> of all subjects. 2) Concatenate all <inline-formula><mml:math id="M9" display="inline"><mml:mrow><mml:msubsup><mml:mtext>W</mml:mtext><mml:mrow><mml:mtext>ij</mml:mtext></mml:mrow><mml:mrow><mml:mtext>corr</mml:mtext><mml:mspace width="0.25em"/></mml:mrow></mml:msubsup></mml:mrow></mml:math></inline-formula> of one subject into a square matrix with shape (num<sub>ROI</sub>, num<sub>ROI</sub>), which was called BFCN correlation square. 3) Flatten the BFCN correlation square, and get the BFCN correlation feature vector F<sub>n</sub> of each subject with length (num<sub>ROI</sub> * num<sub>ROI</sub>). <xref rid="SD1" ref-type="supplementary-material">Supplementary Figure S1</xref> illustrated the BFCN correlation matrices based on PCC and MIC. As for the BFCN correlation matrices based on other correlation coefficients, corresponding illustration can be found in <xref rid="SD1" ref-type="supplementary-material">Supplementary Figure S2</xref> due to the page limit.</p>
+        </sec>
+        <sec id="S6">
+          <label>2)</label>
+          <title>DYNAMIC BFCN</title>
+          <p id="P15">This study extracted the following number of sliding-window segments from the whole time series signal:
+<disp-formula id="FD4"><label>(4)</label>
+<mml:math id="M10" display="block"><mml:mrow><mml:msub><mml:mrow><mml:mspace width="0.25em"/><mml:mtext>num</mml:mtext><mml:mspace width="0.25em"/></mml:mrow><mml:mrow><mml:mtext>window</mml:mtext><mml:mspace width="0.25em"/></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mfrac><mml:mrow><mml:msub><mml:mrow><mml:mspace width="0.25em"/><mml:mtext>num</mml:mtext><mml:mspace width="0.25em"/></mml:mrow><mml:mrow><mml:mtext>volume</mml:mtext><mml:mspace width="0.25em"/></mml:mrow></mml:msub><mml:mo>−</mml:mo><mml:msub><mml:mrow><mml:mspace width="0.25em"/><mml:mtext>window</mml:mtext><mml:mspace width="0.25em"/></mml:mrow><mml:mrow><mml:mtext>size</mml:mtext><mml:mspace width="0.25em"/></mml:mrow></mml:msub></mml:mrow><mml:mrow><mml:msub><mml:mrow><mml:mspace width="0.25em"/><mml:mtext>window</mml:mtext><mml:mspace width="0.25em"/></mml:mrow><mml:mrow><mml:mtext>step</mml:mtext><mml:mspace width="0.25em"/></mml:mrow></mml:msub></mml:mrow></mml:mfrac><mml:mo>+</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:math>
+</disp-formula></p>
+          <p id="P16">where window<sub>size</sub> is the length of each window, and window<sub>step</sub> is the distance between two successive windows. For example, if window<sub>size</sub> = 50, window<sub>step</sub> = 8, the 137 volumes may be converted to 11 segments to construct 11 temporal BFCNs. Following the same procedure as in static BFCN construction, we can produce num<sub>window</sub> temporal BFCN correlation squares. Then the average of these num<sub>window</sub> temporal correlation squares will be flattened as the dynamic BFCN correlation feature vector DF<sub>n</sub> of each subject. As similar to [<xref rid="R7" ref-type="bibr">7</xref>], window<sub>size</sub> was set to (50, 70, 90, 110), while the range of window<sub>step</sub> was (1, 2, 4, 8, 10), respectively.</p>
+        </sec>
+        <sec id="S7">
+          <label>3)</label>
+          <title>MUSCNET</title>
+          <p id="P17">Inspired by the previous works [<xref rid="R7" ref-type="bibr">7</xref>], [<xref rid="R10" ref-type="bibr">10</xref>], [<xref rid="R21" ref-type="bibr">21</xref>] using data fusion to improve the model performance, we constructed MuscNet by integrating multiple estimators trained by dynamic BFCNs based on different correlation coefficient metrics. The whole construction was as follows: 1) Divide the whole time series signals into several segments by sliding-window. 2) For each segment, get the corresponding BFCN correlation feature vector F<sub>n</sub> of each subject. 3)Train the estimator group by F<sub>n</sub>s corresponding to various correlation coefficients. 4) Fuse the estimator pairwise. Specifically, the decision scores from each pair of estimators generated from the above process were linearly fused by a weighting parameter <italic toggle="yes">α</italic>, which ranges from 0.1 to 0.9 with step 0.1. So MuscNet is a weighted voting strategy to fusing multi-source connectivity networks. For illustration purposes, each MuscNet may be described with the two correlation coefficient metrics. For example, “PCC&amp;MCC” represented the MuscNet combining the estimator using PCC with the estimator using MCC.</p>
+        </sec>
+      </sec>
+      <sec id="S8">
+        <label>C.</label>
+        <title>FEATURE SELECTION METHODS</title>
+        <p id="P18">This study utilized three popular filter algorithms to select features for the binary classification problem of MCI and NC samples. Ttest is the most popular feature selection algorithm [<xref rid="R26" ref-type="bibr">26</xref>] and has demonstrated its effectiveness on the AD diagnosis [<xref rid="R7" ref-type="bibr">7</xref>]. Wilcoxon rank-sum Test (Wtest) [<xref rid="R27" ref-type="bibr">27</xref>], also called Wilcoxon-Mann-Whitney Test, is considered as an alternative to T-test for its increased robustness [<xref rid="R28" ref-type="bibr">28</xref>]. Kolmogorov-Smirnov Test (KStest) is usually employed to estimate how much two distributions are related to each other and its promising performance for eliminating redundant features has been proved in [<xref rid="R29" ref-type="bibr">29</xref>]. Besides, we further discussed the impact of different filter thresholds for the statistical Pvalues on classification performance.</p>
+      </sec>
+      <sec id="S9">
+        <label>D.</label>
+        <title>CLASSIFICATION PERFORMANCE</title>
+        <sec id="S10">
+          <title>EVALUATION METRICS</title>
+          <p id="P19">For a fair comparison with the existing studies, we employed the leave-one-out cross validation (LOOCV) to measure the classification performances of MCI and NC samples. To compare the classification performance of different correlation coefficients combined with different feature selection methods and different parameters, we set one LOOCV for each combination. Specifically, each LOOCV trained one model on (num<sub>subj</sub>−1) subjects and predicted the class label of the rest one sample. Performance of each combination can be gained after num<sub>subj</sub> repeats of LOOCV. To further verify the performance of the best combination, we adopted the two-level LOOCV, which is also called nested-LOOCV.</p>
+          <p id="P20">This study evaluated a classification model using three popular classification performance metrics, i.e., Accuracy (Acc), Sensitivity (Sn) and Specificity (Sp). The MCI and NC participants were regarded as positive and negative samples, respectively. The total numbers of positive and correctly predicted positive samples were defined as P and TP (true positive). FN = P - TP was the number of those incorrectly predicted positive samples. The numbers of correctly and incorrectly predicted negative samples were TN (true negative) and FP (false positive), respectively. And there were N = TN + FP negative samples. The performance metrics Sn and Sp were defined as the percentages of correctly predicted positive and negative samples, respectively. That is to say, Sn = TP/(TP + FN) = TP/P and Sp = TN/(TN + FP) = TN/N. And Acc was the overall percentage of correctly predicted samples, i.e., Acc = (TP + TN)/(P + N).</p>
+          <p id="P21">For each test sample of an LOOCV, we can get a series of selected feature subsets. Further analysis on these feature subsets was expected to bring inspiration to the diagnosis of MCI.</p>
+        </sec>
+      </sec>
+    </sec>
+    <sec id="S11">
+      <label>III.</label>
+      <title>RESULTS AND DISCUSSION</title>
+      <sec id="S12">
+        <label>A.</label>
+        <title>EVALUATION OF BFCNs USING DIFFERENT CORRELATION COEFFICIENT METRICS</title>
+        <p id="P22">This study firstly evaluated how different correlation coefficient metrics impact the binary classification performances of the investigated problem, as shown in <xref rid="F2" ref-type="fig">Figure 2</xref>. The support vector machine with the linear kernel (lSVM) was used as the classifier for the evaluation [<xref rid="R30" ref-type="bibr">30</xref>]. The metrics MIC achieved the best classification accuracy (Acc) for the static BFCN-based models, as shown in <xref rid="F2" ref-type="fig">Figure 2 (a)</xref>. The MIC-based static BFCN also achieved a less-biased pair of Sn and Sp. The two metrics SCC/KCC performed better in Sn than MIC, but their Sp values were much smaller than that of MIC. But for the dynamic BFCNs, MIC performed worse than all the other four correlation coefficient metrics, as shown in <xref rid="F2" ref-type="fig">Figure 2 (b)</xref>. Further detailed comparison in Sn and Sp can be found in <xref rid="SD1" ref-type="supplementary-material">Supplementary Figure S3</xref>. The experimental data suggested that there was no single correlation coefficient metrics performing the best for both static and dynamic BFCN-based MCI classifications.</p>
+      </sec>
+      <sec id="S13">
+        <label>B.</label>
+        <title>EVALUATION OF MuscNet</title>
+        <p id="P23">We then evaluated MuscNet models with different correlation coefficient (CC) duets. As shown in <xref rid="F3" ref-type="fig">Figure 3</xref> and <xref rid="SD1" ref-type="supplementary-material">Supplementary Figure S4</xref>, MuscNet significantly outperformed dynamic BFCN based on one correlation coefficient with a maximal accuracy 0.8978. Except for the KCC-based BFCNs, all the other CC-based BFCNs may be improved by integrating one more CC metrics. MIC performed the worst if it was used alone to construct the dynamic BFCN (Acc = 0.7956) but improved both PCC- and SCC-based models if the MIC was integrated with one of these two CC metrics. And MIC didn’t decrease the classification accuracies of the other two CC-based models if being integrated with KCC- and CS-based models. So MIC may be a good complementary CC metrics to be integrated with the other CC metrics.</p>
+      </sec>
+      <sec id="S14">
+        <label>C.</label>
+        <title>EVALUATION OF FEATURE SELECTION ALGORITHMS</title>
+        <p id="P24">Different filter algorithms were evaluated for their improvements on the MuscNet models, as shown in <xref rid="F4" ref-type="fig">Figure 4</xref>. The above-discussed results were carried out using Ttest as the feature selection algorithm. Ttest may not always perform the best on different datasets [<xref rid="R31" ref-type="bibr">31</xref>], [<xref rid="R32" ref-type="bibr">32</xref>]. So we further evaluated the three filter algorithms Wtest, Ttest and KStest. Features were selected for training the classification model if their filter-based Pvalues were smaller than 0.05. Firstly, Ttest didn’t always achieve the best classification performances, as shown in <xref rid="F4" ref-type="fig">Figure 4 (a)</xref>–<xref rid="F4" ref-type="fig">(c)</xref>. Ttest and Wtest performed similarly well on the classification accuracies, and KStest achieved the best performances (Acc = 0.9124, Sn = 0.8971 and Sp = 0.9275) with two parameters window<sub>size</sub> = 90 and window<sub>step</sub> = 8 and the integration of MIC and KCC.</p>
+        <p id="P25"><xref rid="F4" ref-type="fig">Figure 4</xref> supported the above observation that MIC served as a good source of complementary information to the other CC metrics, although MIC didn’t perform well by itself. The best model with Wtest was integrated from PCC- and MIC-based dynamic BFCNs using the two parameters window<sub>size</sub> = 110 and window<sub>step</sub> = 8. The best model with Ttest was integrated from PCC- and MIC-based dynamic BFCNs with window<sub>size</sub> = 50, window<sub>step</sub> = 1 as sliding window parameters. And the best model with KStest was integrated from MIC- and KCC-based dynamic BFCNs with window<sub>size</sub> = 90, window<sub>step</sub> = 8, as shown in <xref rid="F5" ref-type="fig">Figure 5</xref>.</p>
+      </sec>
+      <sec id="S15">
+        <label>D.</label>
+        <title>PROMOTION BY PARAMETERS TUNING</title>
+        <p id="P26">We further investigated how the filter Pvalue threshold impacted the model prediction performances. <xref rid="F6" ref-type="fig">Figure 6</xref> illustrated that KStest-selected features with the Pvalue threshold 0.2 achieved the best prediction accuracy 0.9197 by integrating MIC- and KCC-based dynamic BFCNs. Results of each sliding window parameter combination can be found in <xref rid="SD1" ref-type="supplementary-material">Supplementary Figure S5</xref>. A similar pattern was also observed that MIC-based BFCN improved all the four other CC-based dynamic BFCNs.</p>
+        <p id="P27"><xref rid="F7" ref-type="fig">Figure 7</xref> suggested that Ttest didn’t perform well on the dataset and the Ttest-based dynamic BFCN model only achieved Acc = 0.8978, as shown in <xref rid="F8" ref-type="fig">Figure 8 (b)</xref>. Wtest achieved a better overall accuracy 0.9051 by integrating the MIC- and SCC-based dynamic BFCNs. And the KStest achieved an even better accuracy 0.9197 for two models MIC&amp;SCC and MIC&amp;KCC. Verification results of this best model using the two-level LOOCV also get the accuracy 0.9197, suggesting that the set of the best parameters is also effective on the cross validation strategy.</p>
+      </sec>
+      <sec id="S16">
+        <label>E.</label>
+        <title>COMPARISON BETWEEN MuscNet AND THE EXISTING STUDIES</title>
+        <p id="P28">The MuscNet models were compared with the existing studies on the predicting performances of MCI patients, as shown in <xref rid="T1" ref-type="table">Table 1</xref>. To be specific, for HON method, window<sub>size</sub> = 110, window<sub>step</sub> = 1; for LoM, HiO and FuMO methods, window<sub>size</sub> = 50, window<sub>step</sub> = 8.</p>
+        <p id="P29">It is demonstrated in [<xref rid="R5" ref-type="bibr">5</xref>] that the high-order brain functional connectivity network (HON) performed effectively on detecting the MCI patients. Due to the variations in the samples used in each study, validation work in [<xref rid="R7" ref-type="bibr">7</xref>] demonstrated that the HON model achieved the accuracy 0.8207 on their dataset, as shown in <xref rid="T1" ref-type="table">Table 1</xref>. They proposed low-order model (LoM), high-order model (HiO) and the integrated fusion of both models (FuMO) to further improve the HON model, as shown in <xref rid="T1" ref-type="table">Table 1</xref>. The experimental data suggested that LoM achieved the best accuracy 0.9051 in their study.</p>
+        <p id="P30">The MuscNet model outperformed all these four models in the prediction performance metrics Acc and Sn, and achieved the same specificity (Sp = 0.9130) as the fusion model FuMO.</p>
+      </sec>
+      <sec id="S17">
+        <label>F.</label>
+        <title>BRAIN ROIs ASSOCIATED WITH THE MCI PREDICTION</title>
+        <p id="P31">As mentioned above, the best model in this study was the MIC&amp;KCC model with window<sub>size</sub> = 110, window<sub>step</sub> = 10 and KStest Pvalue threshold 0.2. The top-10 most frequently selected ROIs of the best model were collected and analyzed for their known associations with MCI, as shown in <xref rid="F8" ref-type="fig">Figure 8</xref>. A set of ROIs was selected during each iteration of the LOOCV, and the ROIs were ranked by their frequencies of being selected by these iterations. We can see from <xref rid="F8" ref-type="fig">Figure 8</xref> that the two model had more than half features in common, which means that the two models have a certain similarity in the description of the correlation, and they can both capture the core characteristics of rs-fMRI data. As for the difference set, all top-10 features selected by MIC also had a high selected frequency in the KCC model, not vice-versa.</p>
+        <p id="P32">Seven brain ROIs were frequently selected by both MIC and KCC models. Cerebellum was a biomarker ROI that contributed to the best MCI prediction accuracy, and it has already been observed to be involved in the development of both MCI and AD [<xref rid="R33" ref-type="bibr">33</xref>], [<xref rid="R34" ref-type="bibr">34</xref>]. Insula was a crucial structure for high-level cognition and was also observed in close associations with various neurodegenerative diseases [<xref rid="R35" ref-type="bibr">35</xref>], [<xref rid="R36" ref-type="bibr">36</xref>]. Other ROIs like lingual gyrus [<xref rid="R37" ref-type="bibr">37</xref>] and postcentral cingulate cortex [<xref rid="R38" ref-type="bibr">38</xref>] demonstrated to have reduced metabolism levels and were observed in the MCI or AD patients.</p>
+        <p id="P33">The previous study suggested the existence of multiple solutions with the similarly good performance for a machine learning problem [<xref rid="R39" ref-type="bibr">39</xref>], [<xref rid="R40" ref-type="bibr">40</xref>]. Difference correlation coefficients evaluated the MCI prediction problem from different perspectives. These correlation coefficients may generate different sets of features for the prediction models. And MuscNet achieved slightly better performance using different features than the other models, as shown in <xref rid="T1" ref-type="table">Table 1</xref>.</p>
+      </sec>
+    </sec>
+    <sec id="S18">
+      <label>IV.</label>
+      <title>CONCLUSION</title>
+      <p id="P34">This study proposed the weighted voting-based fusion of a multi-source connectivity network (MuscNet) by integrating dynamic BFCNs using different correlation coefficients. This idea was inspired by the observation that the integration of low-order and high-order BFCN generated satisfying disease prediction performances.</p>
+      <p id="P35">Our experimental data demonstrated that the CC metrics MIC served as a complementary information source. Although MIC-based dynamic BFCN didn’t perform well, the integration of the MIC-based dynamic BFCN with other models usually improved these models. The proposed MuscNet model also improved the existing studies in predicting MCI. The statistical KStest performed the best on selecting features and the best model was the MIC&amp;KCC-based dynamic BFCN.</p>
+    </sec>
+    <sec sec-type="supplementary-material" id="SM1">
+      <title>Supplementary Material</title>
+      <supplementary-material id="SD1" position="float" content-type="local-data">
+        <label>supp1-3025828</label>
+        <media xlink:href="NIHMS1633554-supplement-supp1-3025828.docx" id="d64e1126" position="anchor"/>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ack id="S19">
+      <title>ACKNOWLEDGMENT</title>
+      <p id="P36">Alzheimer’s Disease Neuroimaging Initiative Data used in preparation of this article were obtained from the Alzheimer’s Disease Neuroimaging Initiative (ADNI) database ( <ext-link xlink:href="http://adni.loni.usc.edu" ext-link-type="uri">adni.loni.usc.edu</ext-link>). As such, the investigators within the ADNI contributed to the design and implementation of ADNI and/or provided data but did not participate in analysis or writing of this report. A complete listing of ADNI investigators can be found at: <ext-link xlink:href="http://adni.loni.usc.edu/wp-content/uploads/how_to_apply/ADNI_Acknowledgement_List.pdf" ext-link-type="uri">http://adni.loni.usc.edu/wp-content/uploads/how_to_apply/ADNI_Acknowledgement_List.pdf</ext-link>. Insightful comments from the anonymous reviewers were greatly appreciated. ADNI is funded by the National Institute on Aging, the National Institute of Biomedical Imaging and Bioengineering through generous contributions from the following, such as AbbVie, Alzheimer’s Association, the Alzheimer’s Drug Discovery Foundation, Araclon Biotech, BioClinica Inc., Biogen, Bristol-Myers Squibb Company, CereSpir Inc., Cogstate, Eisai Inc., Elan Pharmaceuticals Inc., Eli Lilly and Company, EuroImmun, F. Hoffmann-La Roche Ltd., and its affiliated company Genentech Inc., Fujirebio, GE Healthcare, IXICO Ltd., Janssen Alzheimer Immunotherapy Research and Development LLC., Johnson and Johnson Pharmaceutical Research and Development LLC., Lumosity, Lundbeck, Merck &amp; Co Inc., Meso Scale Diagnostics, LLC., NeuroRx Research, Neurotrack Technologies, Novartis Pharmaceuticals Corporation, Pfizer Inc., Piramal Imaging, Servier, Takeda Pharmaceutical Company, and Transition Therapeutics. The Canadian Institutes of Health Research is providing funds to support ADNI clinical sites in Canada. Private sector contributions are facilitated by the Foundation for the National Institutes of Health (<ext-link xlink:href="http://www.fnih.org/" ext-link-type="uri">www.fnih.org</ext-link>). The grantee organization is the Northern California Institute for Research and Education and the study is coordinated by the Alzheimer’s Therapeutic Research Institute at the University of Southern California. ADNI data are disseminated by the Laboratory for Neuro Imaging at the University of Southern California.</p>
+      <p id="P37">This work was supported in part by the Jilin Provincial Key Laboratory of Big Data Intelligent Computing under Grant 20180622002JC, in part by the Education Department of Jilin Province under Grant JJKH20180145KJ, in part by the Startup Grant of Jilin University, in part by the Bioknow MedAI Institute under Grant BMCPP-2018–001, in part by the High-Performance Computing Center, Jilin University, in part by the Fundamental Research Funds for the Central Universities, Jilin University, in part by the Alzheimer’s Disease Neuroimaging Initiative (ADNI), National Institutes of Health, under Grant U01 AG024904, and in part by the Department of Defense (DOD ADNI) under Award W81XWH-12–2-0012.</p>
+    </ack>
+    <fn-group>
+      <fn id="FN1">
+        <p id="P56">The associate editor coordinating the review of this manuscript and approving it for publication was Ali Salehzadeh-Yazdi. 0000–0002-1678–0051</p>
+      </fn>
+    </fn-group>
+    <bio id="d64e1143">
+      <p id="P38">
+<graphic xlink:href="nihms-1633554-b0009.gif" position="float"/>
+</p>
+      <p id="P39"><bold>JIALIANG LI</bold> is currently pursuing the M.S. degree in medical imaging analysis with the Health Informatics Laboratory (HILab). He was with the College of Software, Jilin University (JLU), Changchun, China, from 2014 to 2018. He joined HILab.</p>
+      <p id="P40">
+<graphic xlink:href="nihms-1633554-b0010.gif" position="float"/>
+</p>
+      <p id="P41"><bold>ZHAOMIN YAO</bold> received the bachelor’s and master’s degrees in biomedical engineering from Northeastern University, China, in 2016 and 2018, respectively. His main research interests include medical imaging and intelligent assistant diagnosis.</p>
+      <p id="P42">
+<graphic xlink:href="nihms-1633554-b0011.gif" position="float"/>
+</p>
+      <p id="P43"><bold>MEIYU DUAN</bold> received the B.S. degree in computer science and technology from Yanbian University, Yanji, China, in 2018. She is currently pursuing the M.S. degree in computer application technology with Jilin University. Her research interests include feature selection algorithms and biomedical big data mining.</p>
+      <p id="P44">
+<graphic xlink:href="nihms-1633554-b0012.gif" position="float"/>
+</p>
+      <p id="P45"><bold>SHUAI LIU</bold> received the bachelor’s degree in computer sciences from Jiangnan University, in 2016, and the master’s degree from Jilin University, in 2019. His research interest includes development of feature selection algorithms for biomedical big data.</p>
+      <p id="P46">
+<graphic xlink:href="nihms-1633554-b0013.gif" position="float"/>
+</p>
+      <p id="P47"><bold>FEI LI</bold> joined the Health Informatics Laboratory (HILab) from 2016 to 2019, where he currently focuses on NLP and gene networks.</p>
+      <p id="P48">
+<graphic xlink:href="nihms-1633554-b0014.gif" position="float"/>
+</p>
+      <p id="P49"><bold>HAIYANG ZHU</bold> is currently pursuing the M.S. degree in EEG-based emotion recognition with the Health Informatics Laboratory (HILab). He was with the College of Computer Science and Technology, Jilin University (JLU), Changchun, China, from 2014 to 2018. He joined HILab.</p>
+      <p id="P50">
+<graphic xlink:href="nihms-1633554-b0015.gif" position="float"/>
+</p>
+      <p id="P51"><bold>ZHIQIANG XIA</bold> is currently pursuing the M.S. degree in biological sequence analysis and medical imaging analysis with the Health Informatics Laboratory (HILab). He was with the College of Computer Science and Technology, Jilin University (JLU), Changchun, China, from 2016 to 2020. He joined HILab.</p>
+      <p id="P52">
+<graphic xlink:href="nihms-1633554-b0016.gif" position="float"/>
+</p>
+      <p id="P53"><bold>LAN HUANG</bold> received the Ph.D. degree from the College of Computer Science and Technology, Jilin University, Changchun, China, in 2003. She is currently a Professor with the College of Computer Science and Technology, Jilin University. Her research interests include data mining and business intelligence.</p>
+      <p id="P54">
+<graphic xlink:href="nihms-1633554-b0017.gif" position="float"/>
+</p>
+      <p id="P55"><bold>FENGFENG ZHOU</bold> (Senior Member, IEEE) received the bachelor’s and Ph.D. degrees in computer sciences from the University of Science and Technology of China, in 2000 and 2005, respectively. His laboratory, Jilin University, focuses on development of feature selection algorithms for biomedical big data.</p>
+    </bio>
+    <ref-list>
+      <title>REFERENCES</title>
+      <ref id="R1">
+        <label>[1]</label>
+        <mixed-citation publication-type="journal"><name><surname>Bangen</surname><given-names>KJ</given-names></name>, <name><surname>Werhane</surname><given-names>ML</given-names></name>, <name><surname>Weigand</surname><given-names>AJ</given-names></name>, <name><surname>Edmonds</surname><given-names>EC</given-names></name>, <name><surname>Delano-Wood</surname><given-names>L</given-names></name>, <name><surname>Thomas</surname><given-names>KR</given-names></name>, <name><surname>Nation</surname><given-names>DA</given-names></name>, <name><surname>Evangelista</surname><given-names>ND</given-names></name>, <name><surname>Clark</surname><given-names>AL</given-names></name>, <name><surname>Liu</surname><given-names>TT</given-names></name>, and <name><surname>Bondi</surname><given-names>MW</given-names></name>, “<article-title>Reduced regional cerebral blood flow relates to poorer cognition in older adults with type 2 diabetes</article-title>,” <source>Frontiers Aging Neurosci</source>., vol. <volume>10</volume>, p. <fpage>270</fpage>, <month>Sep</month>. <year>2018</year>, doi: <pub-id pub-id-type="doi">10.3389/fnagi.2018.00270</pub-id>.</mixed-citation>
+      </ref>
+      <ref id="R2">
+        <label>[2]</label>
+        <mixed-citation publication-type="journal"><name><surname>Vos</surname><given-names>SJB</given-names></name>, <name><surname>Verhey</surname><given-names>F</given-names></name>, <name><surname>Frölich</surname><given-names>L</given-names></name>, <name><surname>Kornhuber</surname><given-names>J</given-names></name>, <name><surname>Wiltfang</surname><given-names>J</given-names></name>, <name><surname>Maier</surname><given-names>W</given-names></name>, <name><surname>Peters</surname><given-names>O</given-names></name>, <name><surname>Rüther</surname><given-names>E</given-names></name>, <name><surname>Nobili</surname><given-names>F</given-names></name>, <name><surname>Morbelli</surname><given-names>S</given-names></name>, and <name><surname>Frisoni</surname><given-names>GB</given-names></name>, “<article-title>Prevalence and prognosis of Alzheimer’s disease at the mild cognitive impairment stage</article-title>,” <source>Brain</source>, vol. <volume>138</volume>, no. <issue>5</issue>, pp. <fpage>1327</fpage>–<lpage>1338</lpage>, <month>May</month>
+<year>2015</year>, doi: <pub-id pub-id-type="doi">10.1093/brain/awv029</pub-id>.<pub-id pub-id-type="pmid">25693589</pub-id></mixed-citation>
+      </ref>
+      <ref id="R3">
+        <label>[3]</label>
+        <mixed-citation publication-type="journal"><name><surname>Du</surname><given-names>Y</given-names></name>, <name><surname>Fu</surname><given-names>Z</given-names></name>, and <name><surname>Calhoun</surname><given-names>VD</given-names></name>, :<article-title>Classification and prediction of brain disorders using functional connectivity: Promising but challenging</article-title>,” <source>Frontiers Neurosci</source>., vol. <volume>12</volume>, p. <fpage>525</fpage>, <month>Aug</month>. <year>2018</year>, doi: <pub-id pub-id-type="doi">10.3389/fnins.2018.00525</pub-id>.</mixed-citation>
+      </ref>
+      <ref id="R4">
+        <label>[4]</label>
+        <mixed-citation publication-type="journal"><name><surname>Lee</surname><given-names>MH</given-names></name>, <name><surname>Smyser</surname><given-names>CD</given-names></name>, and <name><surname>Shimony</surname><given-names>JS</given-names></name>, “<article-title>Resting-state fMRI: A review of methods and clinical applications</article-title>,” <source>AJNR Amer. J. Neuroradiol</source>, vol. <volume>34</volume>, no. <issue>10</issue>, pp. <fpage>1866</fpage>–<lpage>1872</lpage>, <month>Oct</month>. <year>2013</year>, doi: <pub-id pub-id-type="doi">10.3174/ajnr.A3263</pub-id>.<pub-id pub-id-type="pmid">22936095</pub-id></mixed-citation>
+      </ref>
+      <ref id="R5">
+        <label>[5]</label>
+        <mixed-citation publication-type="journal"><name><surname>Chen</surname><given-names>X</given-names></name>, <name><surname>Zhang</surname><given-names>H</given-names></name>, <name><surname>Gao</surname><given-names>Y</given-names></name>, <name><surname>Wee</surname><given-names>C-Y</given-names></name>, <name><surname>Li</surname><given-names>G</given-names></name>, and <name><surname>Shen</surname><given-names>D</given-names></name>, “<article-title>High-order resting-state functional connectivity network for MCI classification</article-title>,” <source>Hum. Brain Mapping</source>, vol. <volume>37</volume>, no. <issue>9</issue>, pp. <fpage>3282</fpage>–<lpage>3296</lpage>, <month>Sep</month>. <year>2016</year>, doi: <pub-id pub-id-type="doi">10.1002/hbm.23240</pub-id>.</mixed-citation>
+      </ref>
+      <ref id="R6">
+        <label>[6]</label>
+        <mixed-citation publication-type="journal"><name><surname>Jie</surname><given-names>B</given-names></name>, <name><surname>Shen</surname><given-names>D</given-names></name>, and <name><surname>Zhang</surname><given-names>D</given-names></name>, “<article-title>Brain connectivity hyper-network for MCI classification</article-title>,” in <source>Proc. Int. Conf. Med. Image Comput. Comput.-Assist. Intervent</source>., <year>2014</year>, vol. <volume>17</volume>, no. <issue>2</issue>, pp. <fpage>724</fpage>–<lpage>732</lpage>, doi: <pub-id pub-id-type="doi">10.1007/978-3-319-10470-6_90</pub-id>.</mixed-citation>
+      </ref>
+      <ref id="R7">
+        <label>[7]</label>
+        <mixed-citation publication-type="journal"><name><surname>Zhou</surname><given-names>Y</given-names></name>, <name><surname>Qiao</surname><given-names>L</given-names></name>, <name><surname>Li</surname><given-names>W</given-names></name>, <name><surname>Zhang</surname><given-names>L</given-names></name>, and <name><surname>Shen</surname><given-names>D</given-names></name>, “<article-title>Simultaneous estimation of low- and high-order functional connectivity for identifying mild cognitive impairment</article-title>,” <source>Frontiers Neuroinform</source>., vol. <volume>12</volume>, p. <fpage>3</fpage>, <month>Feb</month>. <year>2018</year>, doi: <pub-id pub-id-type="doi">10.3389/fninf.2018.00003</pub-id>.</mixed-citation>
+      </ref>
+      <ref id="R8">
+        <label>[8]</label>
+        <mixed-citation publication-type="journal"><name><surname>Vergara</surname><given-names>VM</given-names></name>, <name><surname>Abrol</surname><given-names>A</given-names></name>, and <name><surname>Calhoun</surname><given-names>VD</given-names></name>, “<article-title>An average sliding window correlation method for dynamic functional connectivity</article-title>,” <source>Hum. Brain Mapping</source>, vol. <volume>40</volume>, no. <issue>7</issue>, pp. <fpage>2089</fpage>–<lpage>2103</lpage>, <month>May</month>
+<year>2019</year>, doi: <pub-id pub-id-type="doi">10.1002/hbm.24509</pub-id>.</mixed-citation>
+      </ref>
+      <ref id="R9">
+        <label>[9]</label>
+        <mixed-citation publication-type="journal"><name><surname>Damaraju</surname><given-names>E</given-names></name>, <name><surname>Allen</surname><given-names>EA</given-names></name>, <name><surname>Belger</surname><given-names>A</given-names></name>, <name><surname>Ford</surname><given-names>JM</given-names></name>, <name><surname>McEwen</surname><given-names>S</given-names></name>, <name><surname>Mathalon</surname><given-names>DH</given-names></name>, <name><surname>Mueller</surname><given-names>BA</given-names></name>, <name><surname>Pearlson</surname><given-names>GD</given-names></name>, <name><surname>Potkin</surname><given-names>SG</given-names></name>, <name><surname>Preda</surname><given-names>A</given-names></name>, <name><surname>Turner</surname><given-names>JA</given-names></name>, <name><surname>Vaidya</surname><given-names>JG</given-names></name>, <name><surname>van Erp</surname><given-names>TG</given-names></name>, and <name><surname>Calhoun</surname><given-names>VD</given-names></name>, “<article-title>Dynamic functional connectivity analysis reveals transient states of dysconnectivity in schizophrenia</article-title>,” <source>NeuroImage, Clin</source>., vol. <volume>5</volume>, pp. <fpage>298</fpage>–<lpage>308</lpage>, <month>Jan</month>. <year>2014</year>, doi: <pub-id pub-id-type="doi">10.1016/j.nicl.2014.07.003</pub-id>.<pub-id pub-id-type="pmid">25161896</pub-id></mixed-citation>
+      </ref>
+      <ref id="R10">
+        <label>[10]</label>
+        <mixed-citation publication-type="journal"><name><surname>Zhao</surname><given-names>F</given-names></name>, <name><surname>Zhang</surname><given-names>H</given-names></name>, <name><surname>Rekik</surname><given-names>I</given-names></name>, <name><surname>An</surname><given-names>ZY</given-names></name>, and <name><surname>Shen</surname><given-names>DG</given-names></name>, “<article-title>Diagnosis of autism spectrum disorders using multi-level high-order functional networks derived from resting-state functional MRI</article-title>,” <source>Frontiers Hum. Neurosci</source>, vol. <volume>12</volume>, nos. <fpage>1662</fpage>–<lpage>5161</lpage>, <month>May</month>
+<year>2018</year>, doi: <pub-id pub-id-type="doi">10.3389/Fnhum.2018.00184</pub-id>.</mixed-citation>
+      </ref>
+      <ref id="R11">
+        <label>[11]</label>
+        <mixed-citation publication-type="journal"><name><surname>Zhang</surname><given-names>H</given-names></name>, <name><surname>Chen</surname><given-names>X</given-names></name>, <name><surname>Shi</surname><given-names>F</given-names></name>, <name><surname>Li</surname><given-names>G</given-names></name>, <name><surname>Kim</surname><given-names>M</given-names></name>, <name><surname>Giannakopoulos</surname><given-names>P</given-names></name>, <name><surname>Haller</surname><given-names>S</given-names></name>, and <name><surname>Shen</surname><given-names>D</given-names></name>, “<article-title>Topographical information-based high-order functional connectivity and its application in abnormality detection for mild cognitive impairment</article-title>,” <source>J. Alzheimer’s Disease</source>, vol. <volume>54</volume>, no. <issue>3</issue>, pp. <fpage>1095</fpage>–<lpage>1112</lpage>, <month>Oct</month>. <year>2016</year>, doi: <pub-id pub-id-type="doi">10.3233/JAD-160092</pub-id>.<pub-id pub-id-type="pmid">27567817</pub-id></mixed-citation>
+      </ref>
+      <ref id="R12">
+        <label>[12]</label>
+        <mixed-citation publication-type="journal"><name><surname>Wee</surname><given-names>CY</given-names></name>, <name><surname>Yap</surname><given-names>PT</given-names></name>, <name><surname>Zhang</surname><given-names>D</given-names></name>, <name><surname>Wang</surname><given-names>L</given-names></name>, and <name><surname>Shen</surname><given-names>D</given-names></name>, “<article-title>Constrained sparse functional connectivity networks for MCI classification</article-title>,” in <source>Proc. Int. Conf. Med. Image Comput. Comput.-Assist. Intervent</source>., <year>2012</year>, vol. <volume>15</volume>, no. <issue>2</issue>, pp. <fpage>212</fpage>–<lpage>219</lpage>, doi: <pub-id pub-id-type="doi">10.1007/978-3-642-33418-4_27</pub-id>.</mixed-citation>
+      </ref>
+      <ref id="R13">
+        <label>[13]</label>
+        <mixed-citation publication-type="journal"><name><surname>Calhoun</surname><given-names>VD</given-names></name> and <name><surname>de Lacy</surname><given-names>N</given-names></name>, “<article-title>Ten key observations on the analysis of resting-state functional MR imaging data using independent component analysis</article-title>,” <source>Neuroimaging Clinics North Amer</source>., vol. <volume>27</volume>, no. <issue>4</issue>, pp. <fpage>561</fpage>–<lpage>579</lpage>, <month>Nov</month>. <year>2017</year>, doi: <pub-id pub-id-type="doi">10.1016/j.nic.2017.06.012</pub-id>.</mixed-citation>
+      </ref>
+      <ref id="R14">
+        <label>[14]</label>
+        <mixed-citation publication-type="journal"><name><surname>Kendall</surname><given-names>MG</given-names></name>, <article-title>Rank Correlation Methods</article-title>. <source>Oxford, U.K.: Griffin</source>, <year>1970</year>.</mixed-citation>
+      </ref>
+      <ref id="R15">
+        <label>[15]</label>
+        <mixed-citation publication-type="journal"><name><surname>Zang</surname><given-names>Y</given-names></name>, <name><surname>Jiang</surname><given-names>T</given-names></name>, <name><surname>Lu</surname><given-names>Y</given-names></name>, <name><surname>He</surname><given-names>Y</given-names></name>, and <name><surname>Tian</surname><given-names>L</given-names></name>, “<article-title>Regional homogeneity approach to fMRI data analysis</article-title>,” <source>NeuroImage</source>, vol. <volume>22</volume>, no. <issue>1</issue>, pp. <fpage>394</fpage>–<lpage>400</lpage>, <month>May</month>
+<year>2004</year>, doi: <pub-id pub-id-type="doi">10.1016/j.neuroimage.2003.12.030</pub-id>.<pub-id pub-id-type="pmid">15110032</pub-id></mixed-citation>
+      </ref>
+      <ref id="R16">
+        <label>[16]</label>
+        <mixed-citation publication-type="journal"><name><surname>Siska</surname><given-names>C</given-names></name> and <name><surname>Kechris</surname><given-names>K</given-names></name>, “<article-title>Differential correlation for sequencing data</article-title>,” <source>BMC Res. Notes</source>, vol. <volume>10</volume>, no. <issue>1</issue>, p. <fpage>54</fpage>, <month>Jan</month>. <year>2017</year>, doi: <pub-id pub-id-type="doi">10.1186/s13104-016-2331-9</pub-id>.<pub-id pub-id-type="pmid">28103954</pub-id></mixed-citation>
+      </ref>
+      <ref id="R17">
+        <label>[17]</label>
+        <mixed-citation publication-type="journal"><name><surname>Rao</surname><given-names>CS</given-names></name> and <name><surname>Raju</surname><given-names>SV</given-names></name>, “<article-title>Similarity analysis between chromosomes of Homo sapiens and monkeys with correlation coefficient, rank correlation coefficient and cosine similarity measures</article-title>,” <source>Genomics Data</source>, vol. <volume>7</volume>, pp. <fpage>202</fpage>–<lpage>209</lpage>, <month>Mar</month>. <year>2016</year>, doi: <pub-id pub-id-type="doi">10.1016/j.gdata.2016.01.001</pub-id>.<pub-id pub-id-type="pmid">26981409</pub-id></mixed-citation>
+      </ref>
+      <ref id="R18">
+        <label>[18]</label>
+        <mixed-citation publication-type="journal"><name><surname>Reshef</surname><given-names>DN</given-names></name>, <name><surname>Reshef</surname><given-names>YA</given-names></name>, <name><surname>Finucane</surname><given-names>HK</given-names></name>, <name><surname>Grossman</surname><given-names>SR</given-names></name>, <name><surname>McVean</surname><given-names>G</given-names></name>, <name><surname>Turnbaugh</surname><given-names>PJ</given-names></name>, <name><surname>Lander</surname><given-names>ES</given-names></name>, <name><surname>Mitzenmacher</surname><given-names>M</given-names></name>, and <name><surname>Sabeti</surname><given-names>PC</given-names></name>, “<article-title>Detecting novel associations in large data sets</article-title>,” <source>Science</source>, vol. <volume>334</volume>, no. <issue>6062</issue>, pp. <fpage>1518</fpage>–<lpage>1524</lpage>, <month>Dec</month>. <day>16</day>
+<year>2011</year>, doi: <pub-id pub-id-type="doi">10.1126/science.1205438.</pub-id><pub-id pub-id-type="pmid">22174245</pub-id></mixed-citation>
+      </ref>
+      <ref id="R19">
+        <label>[19]</label>
+        <mixed-citation publication-type="journal"><name><surname>Zhang</surname><given-names>ZA-O</given-names></name>, <name><surname>Sun</surname><given-names>SA-OX</given-names></name>, <name><surname>Yi</surname><given-names>M</given-names></name>, <name><surname>Wu</surname><given-names>X</given-names></name>, and <name><surname>Ding</surname><given-names>YA-O</given-names></name>, “<article-title>MIC as an appropriate method to construct the brain functional network</article-title>,” <source>BioMed. Res. Int</source>, vol. <year>2015</year>, nos. <fpage>2314</fpage>–<lpage>6141</lpage>, 2015, Art. no. 825136.</mixed-citation>
+      </ref>
+      <ref id="R20">
+        <label>[20]</label>
+        <mixed-citation publication-type="journal"><name><surname>Su</surname><given-names>L</given-names></name>, <name><surname>Wang</surname><given-names>L</given-names></name>, <name><surname>Shen</surname><given-names>H</given-names></name>, <name><surname>Feng</surname><given-names>G</given-names></name>, and <name><surname>Hu</surname><given-names>D</given-names></name>, “<article-title>Discriminative analysis of non-linear brain connectivity in schizophrenia: An fMRI study</article-title>,” <source>Frontiers Hum. Neurosci</source>, vol. <volume>7</volume>, p. <fpage>702</fpage>, <month>Oct</month>. <year>2013</year>, doi:<pub-id pub-id-type="doi">10.3389/fnhum.2013.00702.</pub-id></mixed-citation>
+      </ref>
+      <ref id="R21">
+        <label>[21]</label>
+        <mixed-citation publication-type="journal"><name><surname>Plis</surname><given-names>SM</given-names></name>, <name><surname>Sui</surname><given-names>J</given-names></name>, <name><surname>Lane</surname><given-names>T</given-names></name>, <name><surname>Roy</surname><given-names>S</given-names></name>, <name><surname>Clark</surname><given-names>VP</given-names></name>, <name><surname>Potluru</surname><given-names>VK</given-names></name>, <name><surname>Huster</surname><given-names>RJ</given-names></name>, <name><surname>Michael</surname><given-names>A</given-names></name>, <name><surname>Sponheim</surname><given-names>SR</given-names></name>, <name><surname>Weisend</surname><given-names>MP</given-names></name>, and <name><surname>Calhoun</surname><given-names>VD</given-names></name>, “<article-title>High-order interactions observed in multi-task intrinsic networks are dominant indicators of aberrant brain function in schizophrenia</article-title>,” <source>NeuroImage</source>, vol. <volume>102</volume>, pp. <fpage>35</fpage>–<lpage>48</lpage>, <month>Nov</month>. <year>2014</year>, doi: <pub-id pub-id-type="doi">10.1016/j.neuroimage.2013.07.041</pub-id>.<pub-id pub-id-type="pmid">23876245</pub-id></mixed-citation>
+      </ref>
+      <ref id="R22">
+        <label>[22]</label>
+        <mixed-citation publication-type="journal"><name><surname>Jack</surname><given-names>CR</given-names><suffix>Jr.</suffix></name>, <etal/>, “<article-title>The Alzheimer’s disease neuroimaging initiative (ADNI): MRI methods</article-title>,” <source>J. Magn. Reson. Imag</source>., vol. <volume>27</volume>, no. <issue>4</issue>, pp. <fpage>685</fpage>–<lpage>691</lpage>, <month>Apr</month>. <year>2008</year>, doi: <pub-id pub-id-type="doi">10.1002/jmri.21049</pub-id>.</mixed-citation>
+      </ref>
+      <ref id="R23">
+        <label>[23]</label>
+        <mixed-citation publication-type="journal"><name><surname>Beckett</surname><given-names>LA</given-names></name>, <name><surname>Donohue</surname><given-names>MC</given-names></name>, <name><surname>Wang</surname><given-names>C</given-names></name>, <name><surname>Aisen</surname><given-names>P</given-names></name>, <name><surname>Harvey</surname><given-names>DJ</given-names></name>, and <name><surname>Saito</surname><given-names>N</given-names></name>, “<article-title>The Alzheimer’s disease neuroimaging initiative phase 2: Increasing the length, breadth, and depth of our understanding</article-title>,” <source>Alzheimers Dement</source>, vol. <volume>11</volume>, no. <issue>7</issue>, pp. <fpage>823</fpage>–<lpage>831</lpage>, <month>Jul</month>. <year>2015</year>, doi: <pub-id pub-id-type="doi">10.1016/j.jalz.2015.05.004</pub-id>.<pub-id pub-id-type="pmid">26194315</pub-id></mixed-citation>
+      </ref>
+      <ref id="R24">
+        <label>[24]</label>
+        <mixed-citation publication-type="journal"><name><surname>Weiner</surname><given-names>MW</given-names></name>, <name><surname>Veitch</surname><given-names>DP</given-names></name>, <name><surname>Aisen</surname><given-names>PS</given-names></name>, <name><surname>Beckett</surname><given-names>LA</given-names></name>, <name><surname>Cairns</surname><given-names>NJ</given-names></name>, <name><surname>Cedarbaum</surname><given-names>J</given-names></name>, <name><surname>Green</surname><given-names>RC</given-names></name>, <name><surname>Harvey</surname><given-names>D</given-names></name>, <name><surname>Jack</surname><given-names>CR</given-names></name>, <name><surname>Jagust</surname><given-names>W</given-names></name>, <name><surname>Luthman</surname><given-names>J</given-names></name>,<name><surname>Morris</surname><given-names>JC</given-names></name>, <name><surname>Petersen</surname><given-names>RC</given-names></name>, <name><surname>Saykin</surname><given-names>AJ</given-names></name>, <name><surname>Shaw</surname><given-names>L</given-names></name>, <name><surname>Shen</surname><given-names>L</given-names></name>, <name><surname>Schwarz</surname><given-names>A</given-names></name>, <name><surname>Toga</surname><given-names>AW</given-names></name>, and <name><surname>Trojanowski</surname><given-names>JQ</given-names></name>, “<article-title>2014 update of the Alzheimer’s disease neuroimaging initiative: A review of papers published since its inception</article-title>,” <source>Alzheimer’s Dementia</source>, vol. <volume>11</volume>, no. <issue>6</issue>, pp. <fpage>e1</fpage>–<lpage>e120</lpage>, <month>Jun</month>. <year>2015</year>, doi: <pub-id pub-id-type="doi">10.1016/j.jalz.2014.11.001</pub-id>.</mixed-citation>
+      </ref>
+      <ref id="R25">
+        <label>[25]</label>
+        <mixed-citation publication-type="journal"><name><surname>Tzourio-Mazoyer</surname><given-names>N</given-names></name>, <name><surname>Landeau</surname><given-names>B</given-names></name>, <name><surname>Papathanassiou</surname><given-names>D</given-names></name>, <name><surname>Crivello</surname><given-names>F</given-names></name>, <name><surname>Etard</surname><given-names>O</given-names></name>, <name><surname>Delcroix</surname><given-names>N</given-names></name>, <name><surname>Mazoyer</surname><given-names>B</given-names></name>, and <name><surname>Joliot</surname><given-names>M</given-names></name>, “<article-title>Automated anatomical labeling of activations in SPM using a macroscopic anatomical parcellation of the MNI MRI single-subject brain</article-title>,” <source>NeuroImage</source>, vol. <volume>15</volume>, no. <issue>1</issue>, pp. <fpage>273</fpage>–<lpage>289</lpage>, <month>Jan</month>. <year>2002</year>, doi: <pub-id pub-id-type="doi">10.1006/nimg.2001.0978</pub-id>.<pub-id pub-id-type="pmid">11771995</pub-id></mixed-citation>
+      </ref>
+      <ref id="R26">
+        <label>[26]</label>
+        <mixed-citation publication-type="journal">Student, “<article-title>The probable error of a mean</article-title>,” <source>Biometrika</source>, vol. <volume>6</volume>, no. <issue>1</issue>, pp. <fpage>1</fpage>–<lpage>25</lpage>, <year>1908</year>.</mixed-citation>
+      </ref>
+      <ref id="R27">
+        <label>[27]</label>
+        <mixed-citation publication-type="journal"><name><surname>Wilcoxon</surname><given-names>F</given-names></name>, “<article-title>Individual comparisons by ranking methods</article-title>,” <source>Biometrics Bull</source>., vol. <volume>1</volume>, no. <issue>6</issue>, pp. <fpage>80</fpage>–<lpage>83</lpage>, <year>1945</year>.</mixed-citation>
+      </ref>
+      <ref id="R28">
+        <label>[28]</label>
+        <mixed-citation publication-type="journal"><name><surname>McGee</surname><given-names>M</given-names></name>, “<article-title>Case for omitting tied observations in the two-sample t-test and the Wilcoxon-Mann-Whitney test</article-title>,” <source>PLoS ONE</source>, vol. <volume>13</volume>, no. <issue>7</issue>, <month>Jul</month>. <year>2018</year>, Art. no. <comment>e0200837</comment>, doi: <pub-id pub-id-type="doi">10.1371/journal.pone.0200837</pub-id>.</mixed-citation>
+      </ref>
+      <ref id="R29">
+        <label>[29]</label>
+        <mixed-citation publication-type="journal"><name><surname>Tangaro</surname><given-names>S</given-names></name>, <name><surname>Amoroso</surname><given-names>N</given-names></name>, <name><surname>Brescia</surname><given-names>M</given-names></name>, <name><surname>Cavuoti</surname><given-names>S</given-names></name>, <name><surname>Chincarini</surname><given-names>A</given-names></name>, <name><surname>Errico</surname><given-names>R</given-names></name>, <name><surname>Inglese</surname><given-names>P</given-names></name>, <name><surname>Longo</surname><given-names>G</given-names></name>, <name><surname>Maglietta</surname><given-names>R</given-names></name>, <name><surname>Tateo</surname><given-names>A</given-names></name>, <name><surname>Riccio</surname><given-names>G</given-names></name>, and <name><surname>Bellotti</surname><given-names>R</given-names></name>, “<article-title>Feature selection based on machine learning in MRIs for hippocampal segmentation</article-title>,” <source>Comput. Math. Methods Med</source>, vol. <volume>2015</volume>, <month>May</month>
+<year>2015</year>, Art. no. <fpage>814104</fpage>, doi: <pub-id pub-id-type="doi">10.1155/2015/814104</pub-id>.<pub-id pub-id-type="pmid">26089977</pub-id></mixed-citation>
+      </ref>
+      <ref id="R30">
+        <label>[30]</label>
+        <mixed-citation publication-type="journal"><name><surname>Corres</surname><given-names>C</given-names></name>, “<article-title>Support vector networks</article-title>,” <source>Mach. Learn</source>, vol. <volume>20</volume>, no. <issue>3</issue>, pp. <fpage>273</fpage>–<lpage>297</lpage>, <year>1995</year>.</mixed-citation>
+      </ref>
+      <ref id="R31">
+        <label>[31]</label>
+        <mixed-citation publication-type="journal"><name><surname>Xu</surname><given-names>C</given-names></name>, <name><surname>Liu</surname><given-names>J</given-names></name>, <name><surname>Yang</surname><given-names>W</given-names></name>, <name><surname>Shu</surname><given-names>Y</given-names></name>, <name><surname>Wei</surname><given-names>Z</given-names></name>, <name><surname>Zheng</surname><given-names>W</given-names></name>, <name><surname>Feng</surname><given-names>X</given-names></name>, and <name><surname>Zhou</surname><given-names>F</given-names></name>, “<article-title>An OMIC biomarker detection algorithm TriVote and its application in methylomic biomarker detection</article-title>,” <source>Epigenomics</source>, vol. <volume>10</volume>, no. <issue>4</issue>, pp. <fpage>335</fpage>–<lpage>347</lpage>, <month>Apr</month>. <year>2018</year>, doi: <pub-id pub-id-type="doi">10.2217/epi-2017-0097</pub-id>.<pub-id pub-id-type="pmid">29347830</pub-id></mixed-citation>
+      </ref>
+      <ref id="R32">
+        <label>[32]</label>
+        <mixed-citation publication-type="journal"><name><surname>Ye</surname><given-names>Y</given-names></name>, <name><surname>Zhang</surname><given-names>R</given-names></name>, <name><surname>Zheng</surname><given-names>W</given-names></name>, <name><surname>Liu</surname><given-names>S</given-names></name>, and <name><surname>Zhou</surname><given-names>F</given-names></name>, “<article-title>RIFS: A randomly restarted incremental feature selection algorithm</article-title>,” <source>Sci. Rep</source>., vol. <volume>7</volume>, no. <issue>1</issue>, <month>Oct</month>. <year>2017</year>, Art. no. <fpage>13013</fpage>, doi: <pub-id pub-id-type="doi">10.1038/s41598-017-13259-6</pub-id>.<pub-id pub-id-type="pmid">29026108</pub-id></mixed-citation>
+      </ref>
+      <ref id="R33">
+        <label>[33]</label>
+        <mixed-citation publication-type="journal"><name><surname>Thomann</surname><given-names>PA</given-names></name>, <name><surname>Schläfer</surname><given-names>C</given-names></name>, <name><surname>Seidl</surname><given-names>U</given-names></name>, <name><surname>Dos Santos</surname><given-names>V</given-names></name>, <name><surname>Essig</surname><given-names>M</given-names></name>, and <name><surname>Schröder</surname><given-names>J</given-names></name>, “<article-title>The cerebellum in mild cognitive impairment and Alzheimer’sdisease—A structural MRI study</article-title>,” <source>J. Psychiatric Res</source>, vol. <volume>42</volume>, no. <issue>14</issue>, pp. <fpage>1198</fpage>–<lpage>1202</lpage>, <year>2008</year>.</mixed-citation>
+      </ref>
+      <ref id="R34">
+        <label>[34]</label>
+        <mixed-citation publication-type="journal"><name><surname>Guo</surname><given-names>CC</given-names></name>, <name><surname>Tan</surname><given-names>R</given-names></name>, <name><surname>Hodges</surname><given-names>JR</given-names></name>, <name><surname>Hu</surname><given-names>X</given-names></name>, <name><surname>Sami</surname><given-names>S</given-names></name>, and <name><surname>Hornberger</surname><given-names>M</given-names></name>, “<article-title>Network-selective vulnerability of the human cerebellum to Alzheimer’s disease and frontotemporal dementia</article-title>,” <source>Brain</source>, vol. <volume>139</volume>, nos. 1460–2156, pp. <fpage>1527</fpage>–<lpage>1538</lpage>, <year>2016</year>.<pub-id pub-id-type="pmid">26912642</pub-id></mixed-citation>
+      </ref>
+      <ref id="R35">
+        <label>[35]</label>
+        <mixed-citation publication-type="journal"><name><surname>Voss</surname><given-names>MW</given-names></name>, <name><surname>Prakash</surname><given-names>RS</given-names></name>, <name><surname>Erickson</surname><given-names>KI</given-names></name>, <name><surname>Basak</surname><given-names>C</given-names></name>, <name><surname>Chaddock</surname><given-names>L</given-names></name>, <name><surname>Kim</surname><given-names>JS</given-names></name>, <name><surname>Alves</surname><given-names>H</given-names></name>, <name><surname>Heo</surname><given-names>S</given-names></name>, <name><surname>Szabo</surname><given-names>AN</given-names></name>, <name><surname>White</surname><given-names>SM</given-names></name>, <name><surname>Wójcicki</surname><given-names>TR</given-names></name>,<name><surname>Mailey</surname><given-names>EL</given-names></name>, <name><surname>Gothe</surname><given-names>N</given-names></name>, <name><surname>Olson</surname><given-names>EA</given-names></name>, <name><surname>McAuley</surname><given-names>E</given-names></name>, and <name><surname>Kramer</surname><given-names>AF</given-names></name>, “<article-title>Plasticity of brain networks in a randomized intervention trial of exercise training in older adults</article-title>,” <source>Frontiers Aging Neurosci</source>., vol. <volume>2</volume>, p. <fpage>32</fpage>, <month>Aug</month>. <year>2010</year>.</mixed-citation>
+      </ref>
+      <ref id="R36">
+        <label>[36]</label>
+        <mixed-citation publication-type="journal"><name><surname>Uddin</surname><given-names>LQ</given-names></name>, <name><surname>Nomi</surname><given-names>JS</given-names></name>, <name><surname>Hébert-Seropian</surname><given-names>B</given-names></name>, <name><surname>Ghaziri</surname><given-names>J</given-names></name>, and <name><surname>Boucher</surname><given-names>O</given-names></name>, “<article-title>Structure and function of the human insula</article-title>,” <source>J. Clin. Neurophysiol</source>, vol. <volume>34</volume>, no. <issue>4</issue>, pp. <fpage>300</fpage>–<lpage>306</lpage>, <month>Jul</month>. <year>2017</year>, doi: <pub-id pub-id-type="doi">10.1097/WNP.0000000000000377</pub-id>.<pub-id pub-id-type="pmid">28644199</pub-id></mixed-citation>
+      </ref>
+      <ref id="R37">
+        <label>[37]</label>
+        <mixed-citation publication-type="journal"><name><surname>Liu</surname><given-names>X</given-names></name>
+<etal/>, “<article-title>Decreased functional connectivity between the dorsal anterior cingulate cortex and lingual gyrus in Alzheimer’s disease patients with depression</article-title>,” <source>Behavioural Brain Res</source>., vol. <volume>326</volume>, nos. 1872–7549, pp. <fpage>132</fpage>–<lpage>138</lpage>, <year>2017</year>.</mixed-citation>
+      </ref>
+      <ref id="R38">
+        <label>[38]</label>
+        <mixed-citation publication-type="journal"><name><surname>Leech</surname><given-names>R</given-names></name> and <name><surname>Sharp</surname><given-names>DJ</given-names></name>, “<article-title>The role of the posterior cingulate cortex in cognition and disease</article-title>,” <source>Brain</source>, vol. <volume>137</volume>, no. <issue>1</issue>, pp. <fpage>12</fpage>–<lpage>32</lpage>, <month>Jan</month>. <year>2014</year>, doi: <pub-id pub-id-type="doi">10.1093/brain/awt162</pub-id>.<pub-id pub-id-type="pmid">23869106</pub-id></mixed-citation>
+      </ref>
+      <ref id="R39">
+        <label>[39]</label>
+        <mixed-citation publication-type="journal"><name><surname>Feng</surname><given-names>X</given-names></name>, <name><surname>Wang</surname><given-names>S</given-names></name>, <name><surname>Liu</surname><given-names>Q</given-names></name>, <name><surname>Li</surname><given-names>H</given-names></name>, <name><surname>Liu</surname><given-names>J</given-names></name>, <name><surname>Xu</surname><given-names>C</given-names></name>, <name><surname>Yang</surname><given-names>W</given-names></name>, <name><surname>Shu</surname><given-names>Y</given-names></name>, <name><surname>Zheng</surname><given-names>W</given-names></name>, <name><surname>Yu</surname><given-names>B</given-names></name>, <name><surname>Qi</surname><given-names>M</given-names></name>, <name><surname>Zhou</surname><given-names>W</given-names></name>, and <name><surname>Zhou</surname><given-names>F</given-names></name>, “<article-title>Selecting multiple biomarker subsets with similarly effective binary classification performances</article-title>,” <source>J. Visualized Exp</source>, vol. <volume>140</volume>, <month>Oct</month>. <year>2018</year>, Art. no. <comment>e57738</comment>, doi: <pub-id pub-id-type="doi">10.3791/57738</pub-id>.</mixed-citation>
+      </ref>
+      <ref id="R40">
+        <label>[40]</label>
+        <mixed-citation publication-type="journal"><name><surname>Liu</surname><given-names>J</given-names></name>, <name><surname>Xu</surname><given-names>C</given-names></name>, <name><surname>Yang</surname><given-names>W</given-names></name>, <name><surname>Shu</surname><given-names>Y</given-names></name>, <name><surname>Zheng</surname><given-names>W</given-names></name>, and <name><surname>Zhou</surname><given-names>F</given-names></name>, “<article-title>Multiple similarly effective solutions exist for biomedical feature selection and classification problems</article-title>,” <source>Sci. Rep</source>., vol. <volume>7</volume>, no. <issue>1</issue>, <month>Oct</month>. <year>2017</year>, Art. no. <fpage>12830</fpage>, doi: <pub-id pub-id-type="doi">10.1038/s41598-017-13184-8</pub-id>.<pub-id pub-id-type="pmid">28993656</pub-id></mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+  <floats-group>
+    <fig position="float" id="F1">
+      <label>FIGURE 1.</label>
+      <caption>
+        <p id="P57">Multi-source dynamic BFCN structure. For each correlation coefficient, we can follow the above structure to construct the corresponding BFCN and to further integrate the pairwise estimators.</p>
+      </caption>
+      <graphic xlink:href="nihms-1633554-f0001" position="float"/>
+    </fig>
+    <fig position="float" id="F2">
+      <label>FIGURE 2.</label>
+      <caption>
+        <p id="P58">Classification performance of BFCNs based on different parameters. (a) The static BFNCs using different correlation coefficient metrics. (b) The dynamic BFCNs using different window<sub>size</sub> and window<sub>step</sub> for different correlation coefficient metrics. The horizontal axis was in the format of window<sub>size_</sub>window<sub>step</sub> and the vertical axis was the classification accuracy. Features with Ttest Pvalue &lt; 0.05 was chosen to calculate the classification performances for both sub-figures.</p>
+      </caption>
+      <graphic xlink:href="nihms-1633554-f0002" position="float"/>
+    </fig>
+    <fig position="float" id="F3">
+      <label>FIGURE 3.</label>
+      <caption>
+        <p id="P59">MuscNet classification accuracies based on dynamic BFCNs of one CC or a CC duet. The parameter “110_1” in the top left corner represented the two parameters window<sub>size</sub> = 110 and window<sub>step</sub> = 1. As correlation heatmap, this comparison heatmap was also diagonally symmetrical. The diagonal represented a dynamic BFCN based on single correlation coefficient (CC), and the grids represented the integrated dynamic BFCNs of a CC duet. The heatmap background color was lighter if the value was larger. Features with Ttest Pvalue &lt; 0.05 were chosen to calculate the classification performances.</p>
+      </caption>
+      <graphic xlink:href="nihms-1633554-f0003" position="float"/>
+    </fig>
+    <fig position="float" id="F4">
+      <label>FIGURE 4.</label>
+      <caption>
+        <p id="P60">Classification accuracy of MuscNet with different feature selection methods (p-value = 0.05). The notation “PCC&amp;MIC” represented the MuscNet model integrating the PCC- and MIC-based dynamic BFCNs. The horizontal axis was the parameter duet window<sub>size_</sub>window<sub>step</sub>. The vertical axis was the classification accuracy calculated using the features with the filter Pvalue &lt; 0.05, where the filter algorithm could be (a) Wtest, (b) Ttest and (c) KStest.</p>
+      </caption>
+      <graphic xlink:href="nihms-1633554-f0004" position="float"/>
+    </fig>
+    <fig position="float" id="F5">
+      <label>FIGURE 5.</label>
+      <caption>
+        <p id="P61">Best performance comparison among Wtest, Ttest and KStest (Pvalue &lt; 0.05). The horizontal axis was the three classification performance metrics, Acc, Sn and Sp. The horizontal axis was the three classification performance metrics of different filter algorithms, respectively. The vertical axis was the corresponding values of each metric.</p>
+      </caption>
+      <graphic xlink:href="nihms-1633554-f0005" position="float"/>
+    </fig>
+    <fig position="float" id="F6">
+      <label>FIGURE 6.</label>
+      <caption>
+        <p id="P62">The classification accuracy heatmap. This heatmap showed the comparison between dynamic BFCNs based on one CC and integrated CC duets. Features with the KStest (Pvalue &lt; 0.2) were selected for training the model. And the two parameters window<sub>size</sub> = 110, window<sub>step</sub> = 10 were set for the sliding windows. The heatmap background color was lighter if the value was larger.</p>
+      </caption>
+      <graphic xlink:href="nihms-1633554-f0006" position="float"/>
+    </fig>
+    <fig position="float" id="F7">
+      <label>FIGURE 7.</label>
+      <caption>
+        <p id="P63">Classification accuracies of MuscNet models with different Pvalue thresholds. The horizontal axis was the filter Pvalue thresholds and the vertical axis was the classification accuracies. The evaluation was carried out for (a) Wtest, (b) Ttest and (c) KStest.</p>
+      </caption>
+      <graphic xlink:href="nihms-1633554-f0007" position="float"/>
+    </fig>
+    <fig position="float" id="F8">
+      <label>FIGURE 8.</label>
+      <caption>
+        <p id="P64">Comparison between top-10 features most frequently selected by MIC and KCC models. Column in red represents the top-10 features selected by one model, column in blue represents this feature also belongs to the top-10 features selected by the other model, and column in green represents this feature doesn’t belong to the top-10 features selected by the other model. The vertical axis of each figure was the selected frequency of one feature.</p>
+      </caption>
+      <graphic xlink:href="nihms-1633554-f0008" position="float"/>
+    </fig>
+    <table-wrap position="float" id="T1">
+      <label>TABLE 1.</label>
+      <caption>
+        <p id="P65">Comparison on MCI prediction performances with the existing studies. The performance metrics were accuracy (Acc), sensitivity (Sn) and specificity (Sp). The models HON, LoM, HiO, and FuMO were from the existing studies. And the MuscNet model was proposed in this study.</p>
+      </caption>
+      <table frame="box" rules="all">
+        <colgroup span="1">
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+        </colgroup>
+        <thead>
+          <tr>
+            <th align="left" valign="top" rowspan="1" colspan="1">Method</th>
+            <th align="right" valign="top" rowspan="1" colspan="1">Acc</th>
+            <th align="right" valign="top" rowspan="1" colspan="1">Sn</th>
+            <th align="right" valign="top" rowspan="1" colspan="1">Sp</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">HON</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">0.8207</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">0.8194</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">0.8377</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">LoM</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">0.9051</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">0.9118</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">0.8986</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">HiO</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">0.8394</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">0.8235</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">0.8551</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">FuMO</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">0.8905</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">0.8676</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">0.9130</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>MuscNet</bold>
+</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">
+<bold>0.9197</bold>
+</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">
+<bold>0.9265</bold>
+</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">
+<bold>0.9130</bold>
+</td>
+          </tr>
+        </tbody>
+      </table>
+    </table-wrap>
+  </floats-group>
+</article>

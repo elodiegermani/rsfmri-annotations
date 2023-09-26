@@ -1,0 +1,660 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.3" xml:lang="en" article-type="research-article">
+  <?properties open_access?>
+  <?properties manuscript?>
+  <processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats">
+    <restricted-by>pmc</restricted-by>
+  </processing-meta>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-journal-id">9215515</journal-id>
+      <journal-id journal-id-type="pubmed-jr-id">20498</journal-id>
+      <journal-id journal-id-type="nlm-ta">Neuroimage</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Neuroimage</journal-id>
+      <journal-title-group>
+        <journal-title>NeuroImage</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">1053-8119</issn>
+      <issn pub-type="epub">1095-9572</issn>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">34492293</article-id>
+      <article-id pub-id-type="pmc">10018461</article-id>
+      <article-id pub-id-type="doi">10.1016/j.neuroimage.2021.118555</article-id>
+      <article-id pub-id-type="manuscript">NIHMS1879580</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Using multiband multi-echo imaging to improve the robustness and repeatability of co-activation pattern analysis for dynamic functional connectivity</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Cohen</surname>
+            <given-names>Alexander D.</given-names>
+          </name>
+          <xref rid="A1" ref-type="aff">a</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Chang</surname>
+            <given-names>Catie</given-names>
+          </name>
+          <xref rid="A2" ref-type="aff">b</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Wang</surname>
+            <given-names>Yang</given-names>
+          </name>
+          <xref rid="A1" ref-type="aff">a</xref>
+          <xref rid="CR1" ref-type="corresp">*</xref>
+        </contrib>
+      </contrib-group>
+      <aff id="A1"><label>a</label>Department of Radiology, Medical College of Wisconsin, 8701 Watertown Plank Road, Milwaukee, WI 53226, United States</aff>
+      <aff id="A2"><label>b</label>Department of Electrical Engineering and Computer Science, Vanderbilt University, Nashville, TN, United States</aff>
+      <author-notes>
+        <corresp id="CR1"><label>*</label>Corresponding author. <email>yangwang@mcw.edu</email> (Y. Wang).</corresp>
+      </author-notes>
+      <pub-date pub-type="nihms-submitted">
+        <day>8</day>
+        <month>3</month>
+        <year>2023</year>
+      </pub-date>
+      <pub-date pub-type="ppub">
+        <month>11</month>
+        <year>2021</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>04</day>
+        <month>9</month>
+        <year>2021</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>16</day>
+        <month>3</month>
+        <year>2023</year>
+      </pub-date>
+      <volume>243</volume>
+      <fpage>118555</fpage>
+      <lpage>118555</lpage>
+      <permissions>
+        <license>
+          <ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbyncndlicense">https://creativecommons.org/licenses/by-nc-nd/4.0/</ali:license_ref>
+          <license-p>This is an open access article under the CC BY-NC-ND license (<ext-link ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by-nc-nd/4.0/">http://creativecommons.org/licenses/by-nc-nd/4.0/</ext-link>)</license-p>
+        </license>
+      </permissions>
+      <abstract id="ABS1">
+        <p id="P1">Emerging evidence has shown that functional connectivity is dynamic and changes over the course of a scan. Furthermore, connectivity patterns can arise from short periods of co-activation on the order of seconds. Recently, a dynamic co-activation patterns (CAPs) analysis was introduced to examine the co-activation of voxels resulting from individual timepoints. The goal of this study was to apply CAPs analysis on resting state fMRI data collected using an advanced multiband multi-echo (MBME) sequence, in comparison with a multiband (MB) sequence with a single echo. Data from 28 healthy control subjects were examined. Subjects underwent two resting state scans, one MBME and one MB, and 19 subjects returned within two weeks for a repeat scan session. Data preprocessing included advanced denoising namely multi-echo independent component analysis (ME-ICA) for the MBME data and an ICA-based strategy for Automatic Removal of Motion Artifacts (ICA-AROMA) for the MB data. The CAPs analysis was conducted using the newly published TbCAPs toolbox. CAPs were extracted using both seed-based and seed-free approaches. Timepoints were clustered using k-means clustering. The following metrics were compared between MBME and MB datasets: mean activation in each CAP, the spatial correlation and mean squared error (MSE) between each timepoint and the centroid CAP it was assigned to, within-dataset variance across timepoints assigned to the same CAP, and the between-session spatial correlation of each CAP. Co-activation was heightened for MBME data for the majority of CAPs. Spatial correlation and MSE between each timepoint and its assigned centroid CAP were higher and lower respectively for MBME data. The within-dataset variance was also lower for MBME data. Finally, the between-session spatial correlation was higher for MBME data. Overall, our findings suggest that the advanced MBME sequence is a promising avenue for the measurement of dynamic co-activation patterns by increasing the robustness and reproducibility of the CAPs.</p>
+      </abstract>
+      <kwd-group>
+        <kwd>Resting-state functional MRI</kwd>
+        <kwd>Multiband</kwd>
+        <kwd>Multi-echo</kwd>
+        <kwd>Co-activation patterns</kwd>
+        <kwd>Functional connectivity</kwd>
+        <kwd>Dynamic</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="S1">
+      <label>1.</label>
+      <title>Introduction</title>
+      <p id="P2">For nearly three decades, resting-state functional MRI (rs-fMRI), where images are collected while the participant does not perform a specific task, has been used to extract distinct brain networks (<xref rid="R4" ref-type="bibr">Biswal et al., 1995</xref>; <xref rid="R23" ref-type="bibr">Fox et al., 2005</xref>). For the most part, these studies have assumed these brain networks were static over time and examined functional connectivity by identifying brain regions where the entire time series was in sync. More recent work, however, has shown this may not be the case, and functional connectivity is dynamic, even changing throughout the course of a single scan (<xref rid="R2" ref-type="bibr">Allen et al., 2014</xref>; <xref rid="R7" ref-type="bibr">Chang and Glover, 2010</xref>; <xref rid="R31" ref-type="bibr">Liu et al., 2013</xref>; <xref rid="R32" ref-type="bibr">Liu and Duyn, 2013</xref>; <xref rid="R50" ref-type="bibr">Sakoglu et al., 2010</xref>).</p>
+      <p id="P3">For example, Chang and Glover performed a time-frequency coherence analysis using wavelet transform coherence, allowing coherence and phase differences between two time series to be evaluated in time-frequency space (<xref rid="R7" ref-type="bibr">Chang and Glover, 2010</xref>). They found significant variability in both coherence and phase between the posterior cingulate cortex (PCC) and the task-positive networks. They also performed a sliding window analysis, wherein the correlation is computed between subsets, or windows, of the time series. These windows are then moved forward in time along the time series, and a correlation coefficient is obtained for each window. That analysis identified several brain regions exhibiting variable connectivity with the PCC. Another study used the sliding window approach to evaluate the correlation between 50 brain networks, identified using group independent component analysis (gICA) in a group of control subjects (<xref rid="R2" ref-type="bibr">Allen et al., 2014</xref>). Thus, a 50 × 50 correlation matrix was computed for each window. Then, a <italic toggle="yes">k</italic>-means clustering algorithm identified different correlation patterns or states, and windowed correlation matrices were each assigned to one of the states. These results identified organized connectivity patterns that varied across time in individual subjects, repeated over time, and existed across subjects. <xref rid="R15" ref-type="bibr">Damaraju et al. (2014)</xref> applied this technique in patients suffering from schizophrenia. They found that patients spent less time in states with higher, widespread connectivity and had overall reduced connectivity in these states.</p>
+      <p id="P4">Other studies have examined activation patterns related to single timepoints, based on the idea that patterns of connectivity can arise from short co-activation periods lasting mere seconds (<xref rid="R8" ref-type="bibr">Chen et al., 2015</xref>; <xref rid="R31" ref-type="bibr">Liu et al., 2013</xref>; <xref rid="R32" ref-type="bibr">Liu and Duyn, 2013</xref>). These studies showed that a particular brain region can be co-active with brain regions in different networks at different timepoints. Different co-activation patterns (CAPs) can be identified by looking at individual timepoints and identifying brain regions with concurrent high (or low) signal intensity, and then using a clustering algorithm to identify distinct CAPs. Each timepoint is then assigned to a CAP based on its spatial similarity.</p>
+      <p id="P5">In addition to advances in dynamic functional connectivity analyses, technical improvements in echo-planar imaging (EPI) image acquisition have greatly improved functional connectivity estimation. For example, multiband (MB) imaging, where multiple slices are acquired simultaneously, permits increased spatial and/or temporal resolution (<xref rid="R20" ref-type="bibr">Feinberg et al., 2010</xref>; <xref rid="R36" ref-type="bibr">Moeller et al., 2010</xref>; <xref rid="R52" ref-type="bibr">Setsompop et al., 2012</xref>). Moreover, multi-echo (ME) EPI imaging involves collecting images at several echo times (TEs) in a single shot. Multi-echo imaging provides increased fMRI sensitivity (<xref rid="R21" ref-type="bibr">Fernandez et al., 2017</xref>; <xref rid="R29" ref-type="bibr">Kundu et al., 2012</xref>; <xref rid="R41" ref-type="bibr">Poser and Norris, 2009</xref>; <xref rid="R42" ref-type="bibr">Poser et al., 2006</xref>; <xref rid="R43" ref-type="bibr">Posse et al., 1999</xref>), but it also suffers from decreased spatial and temporal resolution due to the increased echo train length required to collect additional echoes.</p>
+      <p id="P6">Recent studies have combined the MB and ME techniques in a single MBME acquisition (<xref rid="R6" ref-type="bibr">Boyacioglu et al., 2015</xref>; <xref rid="R40" ref-type="bibr">Olafsson et al., 2015</xref>). Increasing literature has begun to systematically evaluate the benefits of MBME imaging for fMRI studies (<xref rid="R9" ref-type="bibr">Cohen et al., 2021a</xref>,<xref rid="R10" ref-type="bibr">2021b</xref>,<xref rid="R12" ref-type="bibr">2021c</xref>). For the rs-fMRI application, <xref rid="R12" ref-type="bibr">Cohen et al. (2021c)</xref> directly compared an MBME sequence with an MB sequence and found higher functional connectivity strength and extent for the MBME data. They also found better reproducibility of rs-fMRI metrics in a subset of subjects with repeat imaging. To date, there remains a lack of dynamic analyses, specifically utilizing CAPs, using MBME imaging.</p>
+      <p id="P7">In this study, MBME and MB rs-fMRI scans were collected in a group of healthy volunteers, with a subset returning within two weeks for repeat imaging. A CAPs analysis was conducted and measures of activation strength, goodness of fit, and reproducibility were compared between the MBME and MB datasets.</p>
+    </sec>
+    <sec id="S2">
+      <label>2.</label>
+      <title>Methods</title>
+      <sec id="S3">
+        <label>2.1.</label>
+        <title>Subjects</title>
+        <p id="P8">All subjects provided written informed consent prior to participation in this study, which was approved by the Medical College of Wisconsin Institutional Review Board and conducted in accordance with the Declaration of Helsinki. In total, 28 healthy volunteer subjects (Mean Age = 28.0 Range 20 – 46, 9 Male, 19 Female) participated in this study. Among them, 19 subjects (Mean Age = 27.2 Range 20 – 46, 7 Male, 12 Female) returned within two weeks to repeat the study. Subjects were instructed to refrain from caffeine and tobacco for six hours prior to imaging.</p>
+      </sec>
+      <sec id="S4">
+        <label>2.2.</label>
+        <title>MR imaging</title>
+        <p id="P9">MR Imaging was performed at 3T (Signa Premier, GE Healthcare, Waukesha, WI) with a body transmit coil and a 32-channel NOVA (Nova Medical, Wilmington, MA) receive head coil. The maximum gradient strength was 70 mT/m and the maximum slew rate was 170 mT/m/ms. First, a high-resolution 3D T1-weighted magnetization-prepared rapid acquisition with gradient echo (MPRAGE) anatomical image was acquired with TR/TE = 2200/2.8 ms, FOV = 24 cm, matrix size = 512 × 512 × 256, slice thickness = 0.5 mm, voxel size = 0.47 × 0.47 × 0.5 mm, and flip angle (FA) = 8°.</p>
+        <p id="P10">Each subject then underwent two gradient-echo EPI rs-fMRI acquisitions: one MBME scan and one MB scan, as described previously (<xref rid="R12" ref-type="bibr">Cohen et al., 2021c</xref>). The MBME scan had the following parameters: TR/TE = 900/11,30,49 ms (three echoes), FOV = 24 cm, matrix size = 80 × 80 with slice thickness = 3 mm (3 × 3 × 3 mm voxel size), 11 slices with multiband factor = 4 (total slices 44), FA = 60°, and partial Fourier factor = 0.85. Both MB and MBME scans utilized in-plane acceleration (R) = 2. The MB scan had the following parameters: TR/TE = 650/30 ms, FOV = 24 cm, matrix size = 80 × 80 with slice thickness = 3 mm (3 × 3 × 3 mm voxel size), 11 slices with multiband factor = 4 (total slices 44), FA = 60°, and partial Fourier factor = 0.85. Resting state scans lasted six minutes each resulting in 400 volumes for the MBME scans and 554 volumes for the MB scans. During the resting state scans, subjects were instructed to close their eyes, but remain awake, refrain from any motion, and not think about anything in particular.</p>
+        <p id="P11">Reconstruction was performed online using a modified multiband EPI reconstruction to support the multi-echo acquisition (<xref rid="R9" ref-type="bibr">Cohen et al., 2021a</xref>,<xref rid="R10" ref-type="bibr">2021b</xref>,<xref rid="R12" ref-type="bibr">2021c</xref>). Multiband unaliasing was accomplished using Autocalibrating Reconstruction for Cartesian Imaging (ARC) reconstruction technology with a blipped-controlled CAIPI shift = 4 (<xref rid="R52" ref-type="bibr">Setsompop et al., 2012</xref>). Zero-filling was used during reconstruction for the partial Fourier data.</p>
+      </sec>
+      <sec id="S5">
+        <label>2.3.</label>
+        <title>Data preprocessing</title>
+        <p id="P12">A combination of AFNI (<xref rid="R13" ref-type="bibr">Cox, 1996</xref>, <xref rid="R14" ref-type="bibr">2012</xref>), FSL (<xref rid="R26" ref-type="bibr">Jenkinson et al., 2012</xref>), and Matlab (The Mathworks, R2018a) were used for the data analysis. Image preprocessing was conducted based on the HCP minimal preprocessing pipeline (<xref rid="R24" ref-type="bibr">Glasser et al., 2013</xref>), available at <ext-link xlink:href="https://github.com/Washington-University/HCPpipelines" ext-link-type="uri">https://github.com/Washington-University/HCPpipelines</ext-link>, modified in-house to account for multi-echo data (<xref rid="R9" ref-type="bibr">Cohen et al., 2021a</xref>,<xref rid="R10" ref-type="bibr">2021b</xref>,<xref rid="R12" ref-type="bibr">2021c</xref>).</p>
+        <sec id="S6">
+          <label>2.3.1.</label>
+          <title>Anatomical processing</title>
+          <p id="P13">Anatomical processing used the <italic toggle="yes">PreFreeSurferPipeline.sh</italic> scripts from the HCP pipeline. First, the anatomical image was aligned with line between the anterior commissure (AC) and posterior commissure (PC) using <italic toggle="yes">aff2rigid</italic> in FSL. Next, a brain mask was created using FNIRT-based brain extraction. For this process, first, the MPRAGE image was linearly registered to MNI space using <italic toggle="yes">flirt</italic> in FSL with 12° of freedom (<xref rid="R25" ref-type="bibr">Jenkinson et al., 2002</xref>). Then, <italic toggle="yes">fnirt</italic> in FSL was used to non-linearly refine the registration. A masked reference image in MNI space was inverse warped back to native space using the transformations determined above and used to mask the MPRAGE. Finally, the MPRAGE brain-only image was registered to MNI space using <italic toggle="yes">flirt</italic> with 12° of freedom followed by <italic toggle="yes">fnirt</italic>.</p>
+        </sec>
+        <sec id="S7">
+          <label>2.3.2.</label>
+          <title>Functional preprocessing</title>
+          <p id="P14">For both the MBME and MB datasets, the first 16 volumes were discarded to allow the signal to reach equilibrium. Next, both the MBME and MB datasets were volume registered to the first volume using <italic toggle="yes">mcflirt</italic> in FSL and the six rigid-body motion parameters were output. For the MBME data, only the first echo was registered. Subsequent echoes were registered using the transformation matrices from the first echo. In addition, framewise displacement (FD) was calculated using <italic toggle="yes">fsl_motion_outliers</italic> in FSL (<xref rid="R44" ref-type="bibr">Power et al., 2012</xref>).</p>
+          <sec id="S8">
+            <title>MBME preprocessing and denoising:</title>
+            <p id="P15">The MBME data was denoised using multi-echo independent component analysis (ME-ICA) (<xref rid="R28" ref-type="bibr">Kundu et al., 2013</xref>,<xref rid="R29" ref-type="bibr">2012</xref>) and the open-source python script <italic toggle="yes">tedana.py</italic> version 0.0.9 (<xref rid="R1" ref-type="bibr">Ahmed et al., 2020</xref>). The three echoes were first combined using the T2* -weighted approach (<xref rid="R43" ref-type="bibr">Posse et al., 1999</xref>). The combined-echo data was then denoised using ME-ICA. The ME-ICA technique, described in detail elsewhere (<xref rid="R1" ref-type="bibr">Ahmed et al., 2020</xref>; <xref rid="R28" ref-type="bibr">Kundu et al., 2013</xref>,<xref rid="R29" ref-type="bibr">2012</xref>), classifies independent components as BOLD or non-BOLD based on whether or not their amplitudes are linearly dependent on TE, respectively (<xref rid="R28" ref-type="bibr">Kundu et al., 2013</xref>,<xref rid="R29" ref-type="bibr">2012</xref>; <xref rid="R40" ref-type="bibr">Olafsson et al., 2015</xref>). Components classified as non-BOLD are regressed out of the combined ME data using general linear regression, resulting in a denoised dataset. The denoised MBME dataset was then registered to the ACPC-aligned MPRAGE image using <italic toggle="yes">epi_reg</italic> in FSL, and subsequently registered to MNI space using the anatomical transformations computed in <xref rid="S6" ref-type="sec">Section 2.3.1</xref>. Finally, the data was smoothed using a 4 mm full width at half maximum (FWHM) Gaussian kernel.</p>
+          </sec>
+          <sec id="S9">
+            <title>MB preprocessing and denoising:</title>
+            <p id="P16">The MB data was registered to the AC-PC aligned MPRAGE image using <italic toggle="yes">epi_reg</italic> in FSL. Then, the MB data was registered to MNI space using the anatomical transformations computed in <xref rid="S6" ref-type="sec">Section 2.3.1</xref>. The data was then smoothed using a 4 mm FWHM Gaussian kernel and denoised using an ICA-based strategy for Automatic Removal of Motion Artifacts (ICA-AROMA) with automatic dimensionality estimation and non-aggressive denoising (<xref rid="R17" ref-type="bibr">Dipasquale et al., 2017</xref>; <xref rid="R46" ref-type="bibr">Pruim et al., 2015</xref>). ICA-AROMA is a data-driven technique that removes motion-related components from the data.</p>
+          </sec>
+        </sec>
+        <sec id="S10">
+          <label>2.3.3.</label>
+          <title>CAPs analysis</title>
+          <p id="P17">The denoised and smoothed data was then used for the CAPs analysis, which was conducted using the TbCAPs toolbox (<ext-link xlink:href="https://c4science.ch/source/CAP_Toolbox.git" ext-link-type="uri">https://c4science.ch/source/CAP_Toolbox.git</ext-link>) (<xref rid="R5" ref-type="bibr">Bolton et al., 2020</xref>). Separate analyses were performed for the MB and MBME datasets. In addition, the data was split into training and test datasets. The training data set consisted of the nine subjects with only one session and five randomly selected subjects with two sessions and was used to determine the optimal cluster sizes and generate the CAPs. The remaining 14 subjects, all with two sessions, comprised the test dataset. For both the training and test datasets the data was masked using a template gray matter (GM) mask and then temporally <italic toggle="yes">z</italic>-scored so the temporal mean = 0 and temporal standard deviation = 1.</p>
+          <sec id="S11">
+            <title>Seed-based approach:</title>
+            <p id="P18">Next, the timepoints for the CAPs analysis were selected. To ensure the robustness of the results, two analyses were conducted. First, a single seed, the posterior cingulate cortex (PCC) was used. This seed was obtained from the AAL2 brain atlas, including voxel values of 39 and 40 (<xref rid="R48" ref-type="bibr">Rolls et al., 2015</xref>). The PCC was chosen because it is a hub in the extensively studied default mode network (DMN) (<xref rid="R7" ref-type="bibr">Chang and Glover, 2010</xref>). For all datasets, the mean temporally <italic toggle="yes">z</italic>-scored signal was extracted from the PCC seed. Frames with signal intensity in the top 30% were retained. In addition, frames with FD &gt; 0.5 were excluded.</p>
+            <p id="P19">The optimal number of CAPs and the CAPs themselves were determined using only the training data. As mentioned previously, CAPs were determined separately for the MB and MBME data. To generate CAPs the data from the whole gray matter volume, at the thresholded frames from the PCC seed, were clustered using <underline><italic toggle="yes">k</italic></underline>-means clustering. First, the optimal number of clusters was determined using consensus clustering (<xref rid="R37" ref-type="bibr">Monti et al., 2003</xref>) as implemented in the TbCAPs toolbox (<xref rid="R5" ref-type="bibr">Bolton et al., 2020</xref>). Briefly, <underline><italic toggle="yes">k</italic></underline>-means clustering was run across 20 folds for cluster numbers (<italic toggle="yes">K</italic>) ranging from 2 to 12, randomly selecting a 80% of the data for each fold. In the ideal case, data points should regularly be clustered together or clustered separately across folds. The optimal <underline><italic toggle="yes">K</italic></underline> is the one for which the proportion of ambiguously clustered pairs (PAC) (i.e. sometimes clustered together and sometimes separately) is minimized (<xref rid="R51" ref-type="bibr">Senbabaoglu et al., 2014</xref>). The stability was defined as 1 – PAC. Once the optimal <italic toggle="yes">K</italic> was determined, <italic toggle="yes">k</italic>-means clustering was run using the training data using that cluster number. For all datasets, each surviving frame was assigned to one of the CAPs based on their spatial similarity.</p>
+            <p id="P20">Since CAPs were computed separately for the MB and MBME datasets, the centroid CAPs were visually inspected and matched between MB and MBME datasets. CAPs that did not have a counterpart in the other dataset were not included in further comparisons between datasets. The surviving frames from the subjects in the test dataset were then assigned to one of the CAPs by spatially correlating each frame with each CAP and assigning the frame to the CAP with the highest correlation.</p>
+          </sec>
+          <sec id="S12">
+            <title>Seed-free approach:</title>
+            <p id="P21">analysis was then repeated using a seed-free approach where all frames were included in the analysis except frames with FD &gt; 0.5. Consensus clustering was once again used to determine the optimal number of clusters for the MB and MBME datasets separately using the training dataset. Resulting CAPs were visually compared between MB and MBME datasets and CAPs that did not appear for both were excluded from further analyses. Finally, in the same manner as the seed-based approach, timepoints from subjects in the test dataset were assigned to one of the CAPs.</p>
+            <p id="P22">For the seed-free method, several additional metrics were computed including the number of occurrences of and number of entries into each CAP, the probability of remaining in a CAP between timepoints (resilience), betweenness centrality, the likelihood of entering a specific CAP from any other CAP (in-degree), and the likelihood of leaving a specific CAP towards another CAP (out-degree). The number of occurrences of and number of entries into each CAP for the MB data were scaled by the ratio of timepoints in the MBME data to number of timepoints in the MB data (384 and 538, respectively).</p>
+          </sec>
+        </sec>
+        <sec id="S13">
+          <label>2.3.4.</label>
+          <title>Goodness of Fit</title>
+          <p id="P23">Goodness of fit metrics were computed for the test dataset. The goodness of fit of each of the CAPs was estimated by computing the spatial correlation and mean squared error (MSE) between each frame and the centroid CAP it was assigned to. The MSE was computed by averaging the squared difference between the volume at each frame and the centroid CAP to which it was assigned.</p>
+          <p id="P24">The within-dataset variance (V<sub>win</sub>) was extracted by computing the voxelwise variance across all frames assigned to each of the CAPs separately for each dataset (i.e. single scan). The V<sub>win</sub> was then averaged across voxels to obtain one value per dataset.</p>
+        </sec>
+        <sec id="S14">
+          <label>2.3.5.</label>
+          <title>Test-retest</title>
+          <p id="P25">Test-retest similarity was also computed for the test dataset. To estimate test-retest similarity of the CAPs, for each dataset the frames assigned to each CAP were averaged resulting in one volume for each CAP for the MB or MBME dataset. The spatial correlation was then computed between scan session 1 and scan session 2 for each subject for the MBME and MB datasets.</p>
+        </sec>
+        <sec id="S15">
+          <label>2.3.6.</label>
+          <title>Comparisons between MBME and MB sequences</title>
+          <p id="P26">The mean and maximum FD were compared between the MB and MBME datasets using a paired t-test across subjects. In addition, the mean and maximum FD were compared across CAPs using an ANOVA and between MB and MBME datasets for each CAP using a paired t-test.</p>
+          <p id="P27">For each CAP, the voxel-wise mean CAPs (averaged within each dataset) were compared between MBME and MB test datasets using the paired <italic toggle="yes">t</italic>-test option of <italic toggle="yes">3dttest</italic>++ in AFNI. Multiple comparisons correction was accomplished using the <italic toggle="yes">3dClustSim</italic> feature in <italic toggle="yes">3dttest</italic>++. Resulting <italic toggle="yes">z</italic>-score maps were thresholded at <italic toggle="yes">p</italic>&lt; 0.001 with minimum cluster sizes ranging from 80 to 90 voxels (<italic toggle="yes">α</italic>&lt; 0.05).</p>
+          <p id="P28">The following comparisons were all made on the test dataset only. For the spatial correlation and MSE metrics, timepoints were grouped by CAP and sequence (MBME or MB) across subjects and sessions. Since the number of timepoints for each CAP differed across datasets, spatial correlation and MSE were compared between MBME and MB datasets using a two-sample t-test for each CAP separately. For V<sub>win</sub>, each dataset had one value. Thus, a paired t-test was used to compare MBME and MB datasets across subjects for each CAP. Similarly, for the test-retest analysis, the spatial correlation between sessions was compared between the MBME and MB datasets using a paired <italic toggle="yes">t</italic>-test across subjects for each CAP. All results were Bonferroni corrected for multiple comparisons, and a corrected <italic toggle="yes">p</italic> &lt; 0.05 was considered significant.</p>
+        </sec>
+      </sec>
+    </sec>
+    <sec id="S16">
+      <label>3.</label>
+      <title>Results</title>
+      <sec id="S17">
+        <label>3.1.</label>
+        <title>Head motion</title>
+        <p id="P29">No significant difference was found between MB and MBME scans for mean FD (0.52 ± 0.43 vs. 0.40 ± 0.37, respectively, <italic toggle="yes">p</italic>= 0.09) or maximum FD (0.096 ± 0.042 vs. 0.101 ± 0.036 respectively, <italic toggle="yes">p</italic> = 0.24). In addition, there was no significant difference between number of scrubbed frames between MB and MBME datasets. Finally, no significant differences in FD were seen between CAPs and between MB and MBME datasets for each CAP for both the seed-based and seed-free approaches (<xref rid="SD1" ref-type="supplementary-material">Supplementary Fig. S1</xref>).</p>
+      </sec>
+      <sec id="S18">
+        <label>3.2.</label>
+        <title>Number of clusters</title>
+        <p id="P30">For the MB data the number of clusters (<italic toggle="yes">K</italic>) was chosen to be five for the seed-based and seed-free analyses as a clear local maximum in the stability metric was observed for both. The results weren’t as clear for the MBME case. For the seed-based approach a small local maximum was observed at five clusters, however, there was no local maximum for the seed-free case. As a result, different numbers of clusters were tried. It was found that for <italic toggle="yes">K</italic>&gt; 5 there were very few timepoints (&lt; 1%) from the test dataset assigned to clusters 6 and above. Thus, five clusters were chosen for all datasets. Plots of stability as a function of cluster size are shown in <xref rid="SD1" ref-type="supplementary-material">Supplementary Fig. S2</xref>.</p>
+      </sec>
+      <sec id="S19">
+        <label>3.3.</label>
+        <title>PCC seed</title>
+        <p id="P31"><xref rid="F1" ref-type="fig">Fig. 1</xref> shows the five centroid CAPs extracted using the training dataset. Each CAP in the MB dataset was matched with its corresponding CAP in the MBME dataset. In general, CAP<sub>1</sub> showed strong co-activation mainly in the visual and motor cortices. CAP<sub>2</sub> showed higher co-activation in the DMN and negative co-activation in the visual and motor cortices.. CAP<sub>3</sub> showed high co-activation globally, especially for the MBME dataset, with areas of heightened co-activation in the motor cortices, default mode network (DMN), frontoparietal network, and salience network (i.e. insula). CAP<sub>4</sub> showed higher co-activation in the DMN, some frontal and temporal regions. Finally, CAP<sub>5</sub> showed heightened co-activation in the DMN.</p>
+        <p id="P32"><xref rid="F2" ref-type="fig">Fig. 2</xref> shows mean CAPs for the test dataset for the MBME (left) and MB (middle) datasets. Overall, significantly higher co-activation was seen for the MBME data compared to the MB data for all five CAPs, as evidenced by the voxel-wise paired <italic toggle="yes">t</italic>-test results (<italic toggle="yes">p</italic>&lt; 0.001, cluster size corrected) (<xref rid="F2" ref-type="fig">Fig. 2</xref>, right). No area showed higher co-activation for any of the five CAPs for the MB data in comparison with the MBME data.</p>
+        <p id="P33"><xref rid="F3" ref-type="fig">Fig. 3</xref> shows box plots of the goodness of fit metrics and within-dataset variance compared between MBME and MB datasets for all five CAPs. Mean spatial correlation between each timepoint assigned to a CAP and the corresponding centroid CAP was significantly higher for the MBME data than the MB data for all five CAPs (<xref rid="F3" ref-type="fig">Fig. 3a</xref>, <italic toggle="yes">p</italic> &lt; 0.001, Bonferroni-corrected). The MSE between each timepoint assigned to a CAP and the corresponding centroid CAP was significantly lower for MBME vs. MB data for CAPs 1 – 3 and 5 (<xref rid="F3" ref-type="fig">Fig. 3b</xref>, <italic toggle="yes">p</italic> &lt; 0.001, Bonferroni-corrected). Similarly, the within-dataset variance across timepoints assigned to each CAP was significantly lower for MBME vs. MB data for CAPs 1 – 3 and 5 (<xref rid="F3" ref-type="fig">Fig. 3c</xref> and <xref rid="F4" ref-type="fig">4</xref>, <italic toggle="yes">p</italic>&lt; 0.001, Bonferroni-corrected).</p>
+        <p id="P34">Furthermore, the spatial correlation between sessions 1 and 2 for each CAP was compared between the MBME and MB data. Between-session spatial correlation was significantly higher for MBME data vs. MB data for CAPs 1 – 4 (CAP<sub>1</sub> : <italic toggle="yes">p</italic>= 0.003; 5CAP<sub>2</sub>: <italic toggle="yes">p</italic>= 0.013; CAP<sub>3</sub>: <italic toggle="yes">p</italic>= 0.003; CAP<sub>4</sub> : <italic toggle="yes">p</italic>= 0.003; all Bonferroni-corrected).</p>
+      </sec>
+      <sec id="S20">
+        <label>3.4.</label>
+        <title>Seed-free</title>
+        <p id="P35">A total of five centroid CAPs were extracted from the training data for the seed-free approach. Overall, four of the five CAPs matched between the MB and MBME datasets, while CAP<sub>5</sub> differed (<xref rid="F5" ref-type="fig">Fig. 5</xref>). CAP<sub>1</sub> showed areas of heightened co-activation in the visual and motor cortices. CAP<sub>2</sub> showed largely global negative co-activation for the MBME data with heightened negative co-activation mainly in the visual and motor areas. CAP<sub>3</sub> showed higher co-activation in the visual network and frontoparietal network. CAP<sub>4</sub> showed higher co-activation in the DMN.</p>
+        <p id="P36"><xref rid="F6" ref-type="fig">Fig. 6</xref> shows mean CAPs for the test dataset for the MBME and MB datasets for the four CAPs that matched between the MB and MBME datasets. In general, significantly higher co-activation, both in the positive and negative direction, was seen for the MBME data compared to the MB data for the four CAPs, as evidenced by the voxel-wise paired <italic toggle="yes">t</italic>-test results (<italic toggle="yes">p</italic>&lt; 0.001, cluster size corrected) (<xref rid="F6" ref-type="fig">Fig. 6</xref>, right). For example, for CAP<sub>2</sub>, a more negative co-activation strength was seen for the MBME data compared to the MB data throughout the brain. For CAP<sub>3</sub> there was an area of lower co-activation in the visual cortex.</p>
+        <p id="P37">The goodness of fit metrics and within-dataset variance were compared between MBME and MB datasets for the four matched CAPs (<xref rid="F7" ref-type="fig">Fig. 7</xref>). Mean spatial correlation between each timepoint assigned to a CAP and the corresponding centroid CAP was significantly higher for the MBME data compared to the MB data for all four CAPs (<xref rid="F7" ref-type="fig">Fig. 7a</xref>, <italic toggle="yes">p</italic>&lt; 0.001, Bonferroni-corrected). The MSE between each timepoint assigned to a CAP and the corresponding centroid CAP was significantly lower for MBME vs. MB data for all CAPs 1, 2, and 4 (<xref rid="F7" ref-type="fig">Fig. 7b</xref>, <italic toggle="yes">p</italic> &lt; 0.001, Bonferroni-corrected). Finally, the within-dataset variance across timepoints assigned to each CAP was significantly lower for MBME vs. MB data for all CAPs 1,3, and 4 (<xref rid="F7" ref-type="fig">Fig. 7c</xref>, CAP<sub>1</sub> : <italic toggle="yes">p</italic>&lt; 0.001; CAP<sub>3</sub> : <italic toggle="yes">p</italic> = 0.02; CAP<sub>4</sub> : <italic toggle="yes">p</italic>&lt; 0.001; all Bonferroni-corrected).</p>
+        <p id="P38">The spatial correlation between sessions 1 and 2 for each CAP for the MBME and MB data was also evaluated (<xref rid="F8" ref-type="fig">Fig. 8</xref>). Between-session spatial correlation was significantly higher for MBME data vs. MB data for CAPs 1,2, and 4 (CAP<sub>1</sub> : <italic toggle="yes">p</italic>&lt; 0.001; CAP<sub>2</sub>: <italic toggle="yes">p</italic> &lt; 0.001; CAP<sub>4</sub>: <italic toggle="yes">p</italic>= 0.009;, Bonferroni-corrected).</p>
+        <p id="P39">In addition, results of seed-free analyses for the other summary metrics, including the number of occurrences of each CAP, number of entries into each CAP, resilience, betweenness centrality, CAP in-degree, and CAP out-degree are presented as <xref rid="SD1" ref-type="supplementary-material">Supplementary Material</xref> (<xref rid="SD1" ref-type="supplementary-material">Fig. S3</xref>).</p>
+      </sec>
+    </sec>
+    <sec id="S21">
+      <label>4.</label>
+      <title>Discussion</title>
+      <p id="P40">In this study, a CAPs analysis was conducted on rs-fMRI data acquired using MBME and MB sequences. Various metrics were compared between MBME and MB datasets in a group of control subjects imaged twice over a span of two weeks. Overall, co-activation using seed-based (PCC) or seed-free approaches was higher for the MBME sequence vs. MB sequence. In addition, individual frames were more strongly spatially correlated with their assigned CAP centroid and had lower variance within datasets for the MBME data. Finally, the between-session spatial correlation was higher for MBME data for most CAPs.</p>
+      <p id="P41">A very limited number of studies have used a multi-echo sequence for dynamic analyses of rs-fMRI data. One study used a single band ME sequence to examine the variability of DMN connectivity in depression (<xref rid="R56" ref-type="bibr">Wise et al., 2017</xref>). They found higher variability in the medial prefrontal cortex and PCC in major depression subjects using a sliding window approach. Another study used an MBME sequence and a sliding window approach to examine the relationship between dynamic functional connectivity and mindfulness, assessed using the Child and Adolescent Mindfulness Measure (CAMM), in children and adolescents (<xref rid="R35" ref-type="bibr">Marusak et al., 2018</xref>). They found no significant effects between static connectivity and mindfulness, but found mindful participants changed states more throughout the scan and spent more time in a state characterized by positive default mode network connectivity with central executive networks. Although neither study compared ME to single echo approaches, they indicate the potential for using ME approaches in the clinical realm.</p>
+      <p id="P42">In this study, the CAPs method was used. In contrast to more conventional approaches focusing on correlating rs-fMRI time series across time (i.e. static or sliding window connectivity), the CAPs method focuses on single timepoints (<xref rid="R5" ref-type="bibr">Bolton et al., 2020</xref>). As described by Liu et al., time series approaches might have several disadvantages (<xref rid="R33" ref-type="bibr">Liu et al., 2018</xref>). First, brain networks comprise thousands of voxels while correlations are computed over tens or hundreds of timepoints, potentially leading to covariation across many voxels. Similarly, rs-fMRI data has orders of magnitude more voxels than timepoints leading to rank-deficient matrices. The CAPs method builds off previous work using point process analyses (PPA), with timepoints defined by the sequence of timepoints that crosses a defined threshold from below (<xref rid="R55" ref-type="bibr">Tagliazucchi et al., 2012</xref>). Tagliazucchi et al. showed averaging these high amplitude timepoints in the BOLD signal results in similar results to standard connectivity analyses using continuous data, and distinct groups of brain voxels are co-active over very short timescales (<xref rid="R55" ref-type="bibr">Tagliazucchi et al., 2012</xref>). These methods can evaluate the codependence in activity over more than two brain regions (<xref rid="R33" ref-type="bibr">Liu et al., 2018</xref>). The CAPs method expands on this by clustering high intensity voxels, extracted from the time series of a spec-fied seed region (or using all frames), based on spatial similarity. The CAPs method has shown distinct spatial patterns both within and outside of the DMN that would not be expected using static or sliding window correlation techniques (<xref rid="R31" ref-type="bibr">Liu et al., 2013</xref>).</p>
+      <p id="P43">Nevertheless, our results align with our previous studies evaluating static rs-fMRI connectivity using MBME and MB sequences (<xref rid="R11" ref-type="bibr">Cohen et al., 2017</xref>,<xref rid="R12" ref-type="bibr">2021c</xref>). For example, Cohen et al showed higher functional connectivity strength and extent for MBME vs. MB scans for seed-based and whole-brain parcellation-based methods. They also found MBME scans to be more reproducible using the Dice coefficient. <xref rid="R17" ref-type="bibr">Dipasquale et al. (2017)</xref> showed higher connectivity strength using ME approaches compared to single echo approaches especially after denoising using ME-ICA. It is important to distinguish the current study with these eariler studies evaluating static connectivity (<xref rid="R11" ref-type="bibr">Cohen et al., 2017</xref>, <xref rid="R12" ref-type="bibr">2021c</xref>). Those studies mainly evaluated correlations between time series. In contrast, the CAPs approach treats each time point separately as independent data points. Thus, it was not trivial whether the results of the static connectivity analysis would translate to the dynamic CAP analysis.</p>
+      <p id="P44">Anytime data is being clustered, the number of clusters to choose is paramount as the “correct” number of clusters is often not known <italic toggle="yes">a priori</italic>. Two common methods used in dynamic rs-fMRI studies are the elbow criterion (<xref rid="R2" ref-type="bibr">Allen et al., 2014</xref>; <xref rid="R15" ref-type="bibr">Damaraju et al., 2014</xref>; <xref rid="R19" ref-type="bibr">Espinoza et al., 2019</xref>; <xref rid="R47" ref-type="bibr">Rabany et al., 2019</xref>) and silhouette criterion (<xref rid="R22" ref-type="bibr">Fiorenzato et al., 2019</xref>; <xref rid="R27" ref-type="bibr">Kim et al., 2017</xref>; <xref rid="R53" ref-type="bibr">Shakil et al., 2016</xref>). For the elbow criterion, a cluster validity index (i.e. the ratio of within to between cluster distances) is computed for a range of cluster numbers. The cluster number at the elbow of the cluster validity index vs. cluster size graph is chosen. For the silhouette criterion (<xref rid="R49" ref-type="bibr">Rousseeuw, 1987</xref>), the similarity of a point to points in its own cluster compared to points in other clusters is computed across clusters, and the cluster size with the maximum is selected. In this study, consensus clustering was used (<xref rid="R37" ref-type="bibr">Monti et al., 2003</xref>) as implemented in the TbCAPs toolbox. It works well for datasets with large dimensionality and, as described in the TbCAPs manual, has been successfully applied to selecting cluster numbers for generating functional brain networks with large scales (<xref rid="R5" ref-type="bibr">Bolton et al., 2020</xref>; <xref rid="R57" ref-type="bibr">Zöller et al., 2018</xref>). While cluster number is important, previous work has shown that CAP patterns did not depend on the number of clusters, and the majority of clusters found for lower cluster numbers were also found for higher cluster numbers (<xref rid="R32" ref-type="bibr">Liu and Duyn, 2013</xref>).</p>
+      <p id="P45">There was an overlap in the location of CAPs found using the seed-based seed-free approaches. For example, CAP<sub>2</sub> and CAP<sub>4</sub> for the seed-free approach matched CAP<sub>4</sub> and CAP<sub>3</sub> for the seed-based approach, respectively. This was somewhat expected as the PCC frames used for the single seed analysis were a subset of the seed-free case. However, in general, the intensity of the seed-based CAPs was higher compared to the seed-free CAPs. This is also unsurprising as the seed-based case only used frames in the top 30% of intensity. Finally, there were two all-negative CAPs for the seed-free approach. The seed-free approach used all frames and, since the data was <italic toggle="yes">z</italic>-scored, this included ~~50% of voxels with intensity &lt; 0. While the implication of these negative CAPs remains to be further explored, they still have shown improved goodness of fit and reproducibility metrics for the MBME compared to MB data.</p>
+      <p id="P46">This study focuses on co-activation maps from individual timepoints and their relationship with the centroid CAPs. There are several other, more global metrics that can be assessed using the CAPs method including the number of occurrences of and the number of entries into each CAP, the probability of remaining in a CAP between timepoints (resilience), betweenness centrality, the likelihood of entering a specific CAP from any other CAP (in-degree), and the likelihood of leaving a specific CAP towards another CAP (out-degree). These metrics are presented as <xref rid="SD1" ref-type="supplementary-material">supplementary material</xref> and were not the main focus of the paper. One reason was that the brain might have been in different states during different scans, potentially biasing the results. The MB scans in this study always occurred following the MBME scans, which could have introduced bias into these metrics. For example, if the subject became fatigued throughout the course of the scan, it could have altered their brain state. For example, one study evaluated CAPs during four states of consciousness (<xref rid="R3" ref-type="bibr">Amico et al., 2014</xref>). They found, while the overall CAP patterns were maintained, some regions were no longer coactivated when consciousness was reduced. Another study evaluated patients with unresponsive wakefulness syndrome (UWS) and found reduced occurrences of CAPs associated with the DMN in UWS patients (<xref rid="R16" ref-type="bibr">Di Perri et al., 2018</xref>). In addition, these metrics are only presented for the seed-free case as timepoints were skipped in the seed-based analysis making these measures difficult to interpret.</p>
+      <p id="P47">One advantage of ME scans is that a short echo time (&lt; 15 ms) image can be acquired. Since the signal from the first echo will be weighted more heavily in the T2* -weighted echo combination scheme, BOLD contrast will be maximized in voxels with short T2*. In addition, the signal is higher at shorter echo times. Thus, the collection of short TE images reduces susceptibility-induced signal dropout (<xref rid="R9" ref-type="bibr">Cohen et al., 2021a</xref>; <xref rid="R21" ref-type="bibr">Fernandez et al., 2017</xref>). This can particularly be observed for CAP<sub>2</sub> for the seed-based analysis, which had higher co-activation in the orbitofrontal cortex for the MBME data compared to the MB data.</p>
+      <p id="P48">More subcortical co-activation was found for the MBME data, specifically in CAPs 2 and 4 for the seed-based analysis and CAP<sub>3</sub> for the seed-free analysis. This finding is in line with previous work by Cohen et al., where subcortical-cortical were higher for MBME scans vs. MB scans for both whole-brain parcellation analysis and seed-based analyses using the hippocampus as the seed for the functional connectivity analysis (<xref rid="R9" ref-type="bibr">Cohen et al., 2021a</xref>,<xref rid="R12" ref-type="bibr">2021c</xref>). <xref rid="R29" ref-type="bibr">Kundu et al. (2012)</xref> found similar results for ME compared to single-echo data by using a hippocampus seed.</p>
+      <p id="P49">Both the MB and MBME data were preprocessed using advanced ICA-based denoising techniques, namely ICA-AROMA for MB and ME-ICA for MBME. Both methods involve regressing noise ICA components from the data. A recent study by <xref rid="R17" ref-type="bibr">Dipasquale et al. (2017)</xref> compared a variety of denoising techniques for multi-echo and single echo datasets . Their results suggest that ICA-AROMA is best for single echo data and ME-ICA is best for multi-echo data (<xref rid="R17" ref-type="bibr">Dipasquale et al., 2017</xref>). It was assumed the majority of researchers would process their fMRI data with advanced denoising approaches, and our results would be more useful to readers. More importantly, ME scans also allow for the estimation of T2* and the combination of echoes prior to ME-ICA (<xref rid="R28" ref-type="bibr">Kundu et al., 2013</xref>,<xref rid="R29" ref-type="bibr">2012</xref>). ME-ICA removes the artifactual non-BOLD signal from the data including R2* effects, motion artifacts, and physiological noise (<xref rid="R28" ref-type="bibr">Kundu et al., 2013</xref>,<xref rid="R29" ref-type="bibr">2012</xref>,<xref rid="R30" ref-type="bibr">2017</xref>; <xref rid="R40" ref-type="bibr">Olafsson et al., 2015</xref>), reducing variations in these signals across scan sessions automatically and resulting in a more stable signal over time. This can account for the higher between-session spatial correlation and lower within-dataset variance for the MBME data vs. the MB data, which will have important implications for further applications (<xref rid="R18" ref-type="bibr">Elliott et al., 2021</xref>).</p>
+      <p id="P50">While a powerful denoising technique, Power et al. have pointed out that whole-brain respiratory artifacts are not adequately removed by techniques such as ME-ICA (<xref rid="R45" ref-type="bibr">Power et al., 2018</xref>). This leaves open the possibility that CAPs may be influenced by these artifacts. Techniques such as global signal regression (GSR) could be used to mitigate these effects, but the use of GSR has been hotly debated in the fMRI community and would add additional confound to the analysis (<xref rid="R34" ref-type="bibr">Marshall et al., 2020</xref>; <xref rid="R38" ref-type="bibr">Murphy et al., 2013</xref>). Moreover, the CAPs analysis tends to be less susceptible to global artifacts compared to correlation-based metrics. For example, <xref rid="R32" ref-type="bibr">Liu and Duyn (2013)</xref> found that global signal regression did not strongly impact spatial patterns derived by CAPs. Our study did find CAPs that appear more global in nature, especially for the MBME data (see CAP3 for the PCC seed). However, the majority of CAPs are specific and appear neural in nature, and the MBME data was improved in those CAPs compared to the MB data. Thus, we do not feel the primary differences between the MBME and MB sequences are due to brain-wide respiratory artifacts. Since CAPs analysis temporally decomposes the data into point-wise patterns, one would therefore expect global effects to be largely relegated to a subset of CAPs, with the others relatively unaffected (<xref rid="R39" ref-type="bibr">Nalci et al., 2017</xref>). Further, <xref rid="R39" ref-type="bibr">Nalci et al. (2017)</xref> showed that global signal regression acts largely as a temporal down-weighting process, attenuating specific timepoints with large global signal amplitudes. Therefore, we did not apply GSR in the current work following previous CAPs studies (<xref rid="R8" ref-type="bibr">Chen et al., 2015</xref>; <xref rid="R34" ref-type="bibr">Marshall et al., 2020</xref>).</p>
+      <p id="P51">Parameters were identical between the MB and MBME acquisitions except for the TR (900 ms for MBME and 650 ms for MB). This was done intentionally to evaluate each sequence as researchers were likely to use them. One advantage of the single echo approach is lower minimal TRs compared to the multi-echo approach. However, it leads to the question of whether differences in CAP characteristics could be attributed to the different sampling rate between the sequences. Previous work showed MBME data had a temporal SNR (tSNR) 1.18 times higher than the MB data for the same scan protocols used in this study ((<xref rid="R9" ref-type="bibr">Cohen et al., 2021a</xref>). One may argue that the increased tSNR from the longer TR for the MBME data is somewhat mitigated by the increase in the number of timepoints for the shorter TR MB data (<xref rid="R54" ref-type="bibr">Smith et al., 2013</xref>). Furthermore, a previous study has shown improvements in static functional connectivity for MBME compared to single-echo MB data with identical TR and other scan parameters (<xref rid="R11" ref-type="bibr">Cohen et al., 2017</xref>).</p>
+      <p id="P52">Moreover, one may speculate how our results would compare to the single-band ME acquisition. Increased TR of single-band TE would lead to fewer frames collected in the same scan time potentially leading to a lower optimal number of CAPs. On the other hand, MB acquisitions come with increased reconstruction (g-factor) artifacts potentially leading to more noise associated CAPs. In this study, no noise CAPs were detected for five CAPs.</p>
+      <p id="P53">This study had some limitations in addition to those mentioned above. First, only young healthy controls were included in this study. Comparisons should be made in patient populations. Also, as mentioned previously, the MB scans always occurred after the MBME scans, which could potentially lead to participant fatigue during the later acquisitions. These scans both occurred in the first half of the scan session so those effects should be diminished. Also, we found no significant differences in head motion, measured with framewise displacement, between the MB and MBME scans or between CAPs. It should also be noted that temporal <italic toggle="yes">z</italic>-scoring on a scan-to-scan basis was performed in the initial CAP and point-process studies (<xref rid="R32" ref-type="bibr">Liu and Duyn, 2013</xref>; <xref rid="R33" ref-type="bibr">Liu et al., 2018</xref>; <xref rid="R55" ref-type="bibr">Tagliazucchi et al., 2012</xref>). We have carried out this <italic toggle="yes">z</italic>-scoring step in our analysis to be consistent with the literature.</p>
+      <p id="P54">In conclusion, a CAPs analysis showed higher co-activation across CAPs for MBME scans compared to MB scans. MBME CAPs were more similar to the centroid CAPs and MBME CAPs were more reliable across scan sessions compared to MB scans.</p>
+      <p id="P55">Taken together, MBME is a promising avenue for CAPs analyses in future applications.</p>
+    </sec>
+    <sec sec-type="supplementary-material" id="SM1">
+      <title>Supplementary Material</title>
+      <supplementary-material id="SD1" position="float" content-type="local-data">
+        <label>Supplementary Material</label>
+        <media xlink:href="NIHMS1879580-supplement-Supplementary_Material.docx" id="d64e953" position="anchor"/>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ack id="S22">
+      <title>Acknowledgments</title>
+      <p id="P56">This work was funded by a research grant from GE Healthcare to Y.W.</p>
+    </ack>
+    <fn-group>
+      <fn id="FN1">
+        <p id="P57">Data and code availability statement</p>
+        <p id="P58">This study was funded by GE Healthcare. According to the research agreement between MCW and GE Healthcare for this study, data published in this paper will be available via a formal request to the authors and a data sharing agreement should be signed by both parties.</p>
+      </fn>
+      <fn id="FN2">
+        <p id="P59">Credit authorship contribution statement</p>
+        <p id="P60"><bold>Alexander D. Cohen:</bold> Conceptualization, Methodology, Software, Investigation, Formal analysis, Writing – original draft, Writing – review &amp; editing. <bold>Catie Chang:</bold> Conceptualization, Writing – review &amp; editing, Supervision. <bold>Yang Wang:</bold> Conceptualization, Resources, Methodology, Investigation, Formal analysis, Writing – review &amp; editing, Supervision.</p>
+      </fn>
+      <fn id="FN3">
+        <p id="P61">Supplementary materials</p>
+        <p id="P62">Supplementary material associated with this article can be found, in the online version, at doi:<ext-link xlink:href="10.1016/j.neuroimage.2021.118555" ext-link-type="doi">10.1016/j.neuroimage.2021.118555</ext-link>.</p>
+      </fn>
+    </fn-group>
+    <glossary>
+      <title>Abbreviations</title>
+      <def-list>
+        <def-item>
+          <term>rs-fMRI</term>
+          <def>
+            <p id="P63">resting-state functional magnetic resonance imaging</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>BOLD</term>
+          <def>
+            <p id="P64">blood oxygenation level dependent</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>CAPs</term>
+          <def>
+            <p id="P65">co-activation patterns</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>MB</term>
+          <def>
+            <p id="P66">multiband</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>ME</term>
+          <def>
+            <p id="P67">multi-echo</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>MBME</term>
+          <def>
+            <p id="P68">multiband multi-echo</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>EPI</term>
+          <def>
+            <p id="P69">echo planar imaging</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>ME-ICA</term>
+          <def>
+            <p id="P70">multi-echo independent component analysis</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>ICA-AROMA</term>
+          <def>
+            <p id="P71">ICA-based strategy for automatic removal of motion artifacts</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>TE</term>
+          <def>
+            <p id="P72">echo time</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>TR</term>
+          <def>
+            <p id="P73">repetition time</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>FOV</term>
+          <def>
+            <p id="P74">field of view</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>FA</term>
+          <def>
+            <p id="P75">flip angle</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>FWHM</term>
+          <def>
+            <p id="P76">full width at half maximum</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>PCC</term>
+          <def>
+            <p id="P77">posterior cingulate cortex</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>AAL2</term>
+          <def>
+            <p id="P78">anatomical atlas version 2</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>DMN</term>
+          <def>
+            <p id="P79">default mode network</p>
+          </def>
+        </def-item>
+      </def-list>
+    </glossary>
+    <ref-list>
+      <title>References</title>
+      <ref id="R1">
+        <mixed-citation publication-type="journal"><name><surname>Ahmed</surname><given-names>Z</given-names></name>, <name><surname>Bandettini</surname><given-names>PA</given-names></name>, <name><surname>Bottenhorn</surname><given-names>KL</given-names></name>, <name><surname>Caballero-Gaudes</surname><given-names>C</given-names></name>, <name><surname>Dowdle</surname><given-names>LT</given-names></name>, <name><surname>DuPre</surname><given-names>E</given-names></name>, <name><surname>Handwerker</surname><given-names>D</given-names></name>, <name><surname>Heunis</surname><given-names>S</given-names></name>, <name><surname>Kundu</surname><given-names>P</given-names></name>, <name><surname>R</surname><given-names>LA</given-names></name>, <name><surname>Markello</surname><given-names>R</given-names></name>, <name><surname>Markiewicz</surname><given-names>CJ</given-names></name>, <name><surname>Maullin-Sapey</surname><given-names>T</given-names></name>, <name><surname>Moia</surname><given-names>S</given-names></name>, <name><surname>Salo</surname><given-names>T</given-names></name>, <name><surname>Staden</surname><given-names>I</given-names></name>, <name><surname>Teves</surname><given-names>J</given-names></name>, <name><surname>Uruñuela</surname><given-names>E</given-names></name>, <name><surname>Vaziri-Pashkam</surname><given-names>M</given-names></name>, <name><surname>Whitaker</surname><given-names>K</given-names></name>, <year>2020</year>. <source>ME-ICA/tedana: 0.0.9</source>
+<comment><ext-link xlink:href="https://zenodo.org/record/4509480" ext-link-type="uri">https://zenodo.org/record/4509480</ext-link>.</comment></mixed-citation>
+      </ref>
+      <ref id="R2">
+        <mixed-citation publication-type="journal"><name><surname>Allen</surname><given-names>EA</given-names></name>, <name><surname>Damaraju</surname><given-names>E</given-names></name>, <name><surname>Plis</surname><given-names>SM</given-names></name>, <name><surname>Erhardt</surname><given-names>EB</given-names></name>, <name><surname>Eichele</surname><given-names>T</given-names></name>, <name><surname>Calhoun</surname><given-names>VD</given-names></name>, <year>2014</year>. <article-title>Tracking whole-brain connectivity dynamics in the resting state</article-title>. <source>Cereb. Cortex</source>
+<volume>24</volume>, <fpage>663</fpage>–<lpage>676</lpage>.<pub-id pub-id-type="pmid">23146964</pub-id></mixed-citation>
+      </ref>
+      <ref id="R3">
+        <mixed-citation publication-type="journal"><name><surname>Amico</surname><given-names>E</given-names></name>, <name><surname>Gomez</surname><given-names>F</given-names></name>, <name><surname>Di Perri</surname><given-names>C</given-names></name>, <name><surname>Vanhaudenhuyse</surname><given-names>A</given-names></name>, <name><surname>Lesenfants</surname><given-names>D</given-names></name>, <name><surname>Boveroux</surname><given-names>P</given-names></name>, <name><surname>Bonhomme</surname><given-names>V</given-names></name>, <name><surname>Brichant</surname><given-names>JF</given-names></name>, <name><surname>Marinazzo</surname><given-names>D</given-names></name>, <name><surname>Laureys</surname><given-names>S</given-names></name>, <year>2014</year>. <article-title>Posterior cingulate cortex-related co-activation patterns: a resting state FMRI study in propofol-induced loss of consciousness</article-title>. <source>PLoS ONE</source>
+<volume>9</volume>, <fpage>e100012</fpage>.<pub-id pub-id-type="pmid">24979748</pub-id></mixed-citation>
+      </ref>
+      <ref id="R4">
+        <mixed-citation publication-type="journal"><name><surname>Biswal</surname><given-names>B</given-names></name>, <name><surname>Yetkin</surname><given-names>FZ</given-names></name>, <name><surname>Haughton</surname><given-names>VM</given-names></name>, <name><surname>Hyde</surname><given-names>JS</given-names></name>, <year>1995</year>. <article-title>Functional connectivity in the motor cortex of resting human brain using echo-planar MRI</article-title>. <source>Magn. Reson. Med</source>
+<volume>34</volume>, <fpage>537</fpage>–<lpage>541</lpage>.<pub-id pub-id-type="pmid">8524021</pub-id></mixed-citation>
+      </ref>
+      <ref id="R5">
+        <mixed-citation publication-type="journal"><name><surname>Bolton</surname><given-names>TAW</given-names></name>, <name><surname>Tuleasca</surname><given-names>C</given-names></name>, <name><surname>Wotruba</surname><given-names>D</given-names></name>, <name><surname>Rey</surname><given-names>G</given-names></name>, <name><surname>Dhanis</surname><given-names>H</given-names></name>, <name><surname>Gauthier</surname><given-names>B</given-names></name>, <name><surname>Delavari</surname><given-names>F</given-names></name>, <name><surname>Morgenroth</surname><given-names>E</given-names></name>, <name><surname>Gaviria</surname><given-names>J</given-names></name> , <name><surname>Blondiaux</surname><given-names>E</given-names></name> , <name><surname>Smigielski</surname><given-names>L</given-names></name>, <name><surname>Van De Ville</surname><given-names>D</given-names></name>, <year>2020</year>. <article-title>Tb-CAPs: a toolbox for co-activation pattern analysis</article-title>. <source>Neuroimage</source>
+<volume>211</volume>, <fpage>116621</fpage>.<pub-id pub-id-type="pmid">32058000</pub-id></mixed-citation>
+      </ref>
+      <ref id="R6">
+        <mixed-citation publication-type="journal"><name><surname>Boyacioglu</surname><given-names>R</given-names></name>, <name><surname>Schulz</surname><given-names>J</given-names></name>, <name><surname>Koopmans</surname><given-names>PJ</given-names></name>, <name><surname>Barth</surname><given-names>M</given-names></name>, <name><surname>Norris</surname><given-names>DG</given-names></name>, <year>2015</year>. <article-title>Improved sensitivity and specificity for resting state and task fMRI with multiband multi-echo EPI compared to multi-echo EPI at 7 T</article-title>. <source>Neuroimage</source>
+<volume>119</volume>, <fpage>352</fpage>–<lpage>361</lpage>.<pub-id pub-id-type="pmid">26162554</pub-id></mixed-citation>
+      </ref>
+      <ref id="R7">
+        <mixed-citation publication-type="journal"><name><surname>Chang</surname><given-names>C</given-names></name>, <name><surname>Glover</surname><given-names>GH</given-names></name>, <year>2010</year>. <article-title>Time-frequency dynamics of resting-state brain connectivity measured with fMRI</article-title>. <source>Neuroimage</source>
+<volume>50</volume>, <fpage>81</fpage>–<lpage>98</lpage>.<pub-id pub-id-type="pmid">20006716</pub-id></mixed-citation>
+      </ref>
+      <ref id="R8">
+        <mixed-citation publication-type="journal"><name><surname>Chen</surname><given-names>JE</given-names></name>, <name><surname>Chang</surname><given-names>C</given-names></name>, <name><surname>Greicius</surname><given-names>MD</given-names></name>, <name><surname>Glover</surname><given-names>GH</given-names></name> , <year>2015</year>. <article-title>Introducing co-activation pattern metrics to quantify spontaneous brain network dynamics</article-title>. <source>Neuroimage</source>
+<volume>111</volume>, <fpage>476</fpage>–<lpage>488</lpage>.<pub-id pub-id-type="pmid">25662866</pub-id></mixed-citation>
+      </ref>
+      <ref id="R9">
+        <mixed-citation publication-type="journal"><name><surname>Cohen</surname><given-names>AD</given-names></name> , <name><surname>Jagra</surname><given-names>AS</given-names></name>, <name><surname>Visser</surname><given-names>NJ</given-names></name>, <name><surname>Yang</surname><given-names>B</given-names></name>, <name><surname>Fernandez</surname><given-names>B</given-names></name>, <name><surname>Banerjee</surname><given-names>S</given-names></name>, <name><surname>Wang</surname><given-names>Y</given-names></name>, <year>2021a</year>. <article-title>Improving the breath-holding CVR measurement using the multiband multi--echo EPI sequence</article-title>. <source>Front. Physiol</source>
+<volume>12</volume>, <fpage>619714</fpage> .<pub-id pub-id-type="pmid">33716769</pub-id></mixed-citation>
+      </ref>
+      <ref id="R10">
+        <mixed-citation publication-type="journal"><name><surname>Cohen</surname><given-names>AD</given-names></name>, <name><surname>Jagra</surname><given-names>AS</given-names></name>, <name><surname>Yang</surname><given-names>B</given-names></name> , <name><surname>Fernandez</surname><given-names>B</given-names></name>, <name><surname>Banerjee</surname><given-names>S</given-names></name>, <name><surname>Wang</surname><given-names>Y</given-names></name> , <year>2021b</year>. <article-title>Detecting task functional MRI activation using the multiband multiecho (MBME) echo-planar imaging (EPI) sequence</article-title>. <source>J. Magn. Reson. Imaging</source>
+<volume>53</volume>, <fpage>1366</fpage>–<lpage>1374</lpage>.<pub-id pub-id-type="pmid">33210793</pub-id></mixed-citation>
+      </ref>
+      <ref id="R11">
+        <mixed-citation publication-type="journal"><name><surname>Cohen</surname><given-names>AD</given-names></name>, <name><surname>Nencka</surname><given-names>AS</given-names></name>, <name><surname>Lebel</surname><given-names>RM</given-names></name> , <name><surname>Wang</surname><given-names>Y</given-names></name> , <year>2017</year>. <article-title>Multiband multi-echo imaging of simultaneous oxygenation and flow timeseries for resting state connectivity</article-title>. <source>PLoS ONE</source>
+<volume>12</volume>, <fpage>e0169253</fpage>.<pub-id pub-id-type="pmid">28253268</pub-id></mixed-citation>
+      </ref>
+      <ref id="R12">
+        <mixed-citation publication-type="journal"><name><surname>Cohen</surname><given-names>AD</given-names></name>, <name><surname>Yang</surname><given-names>B</given-names></name>, <name><surname>Fernandez</surname><given-names>B</given-names></name>, <name><surname>Banerjee</surname><given-names>S</given-names></name>, <name><surname>Wang</surname><given-names>Y</given-names></name>, <year>2021c</year>. <article-title>Improved resting state functional connectivity sensitivity and reproducibility using a multiband multi-echo acquisition</article-title>. <source>Neuroimage</source>
+<volume>225</volume>, <fpage>117461</fpage>.<pub-id pub-id-type="pmid">33069864</pub-id></mixed-citation>
+      </ref>
+      <ref id="R13">
+        <mixed-citation publication-type="journal"><name><surname>Cox</surname><given-names>RW</given-names></name>, <year>1996</year>. <article-title>AFNI: software for analysis and visualization of functional magnetic resonance neuroimages</article-title>. <source>Comput. Biomed. Res</source>
+<volume>29</volume>, <fpage>162</fpage>–<lpage>173</lpage>.<pub-id pub-id-type="pmid">8812068</pub-id></mixed-citation>
+      </ref>
+      <ref id="R14">
+        <mixed-citation publication-type="journal"><name><surname>Cox</surname><given-names>RW</given-names></name>, <year>2012</year>. <article-title>AFNI: what a long strange trip it’s been</article-title>. <source>Neuroimage</source>
+<volume>62</volume>, <fpage>743</fpage>–<lpage>747</lpage> .<pub-id pub-id-type="pmid">21889996</pub-id></mixed-citation>
+      </ref>
+      <ref id="R15">
+        <mixed-citation publication-type="journal"><name><surname>Damaraju</surname><given-names>E</given-names></name>, <name><surname>Allen</surname><given-names>EA</given-names></name>, <name><surname>Belger</surname><given-names>A</given-names></name>, <name><surname>Ford</surname><given-names>JM</given-names></name>, <name><surname>McEwen</surname><given-names>S</given-names></name>, <name><surname>Mathalon</surname><given-names>DH</given-names></name>, <name><surname>Mueller</surname><given-names>BA</given-names></name>, <name><surname>Pearlson</surname><given-names>GD</given-names></name>, <name><surname>Potkin</surname><given-names>SG</given-names></name>, <name><surname>Preda</surname><given-names>A</given-names></name>, <name><surname>Turner</surname><given-names>JA</given-names></name> , <name><surname>Vaidya</surname><given-names>JG</given-names></name>, <name><surname>van Erp</surname><given-names>TG</given-names></name>, <name><surname>Calhoun</surname><given-names>VD</given-names></name>, <year>2014</year>. <article-title>Dynamic functional connectivity analysis reveals transient states of dysconnectivity in schizophrenia</article-title>. <source>Neuroimage Clin</source>. <volume>5</volume>, <fpage>298</fpage>–<lpage>308</lpage> .<pub-id pub-id-type="pmid">25161896</pub-id></mixed-citation>
+      </ref>
+      <ref id="R16">
+        <mixed-citation publication-type="journal"><name><surname>Di Perri</surname><given-names>C</given-names></name>, <name><surname>Amico</surname><given-names>E</given-names></name>, <name><surname>Heine</surname><given-names>L</given-names></name>, <name><surname>Annen</surname><given-names>J</given-names></name>, <name><surname>Martial</surname><given-names>C</given-names></name>, <name><surname>Larroque</surname><given-names>SK</given-names></name>, <name><surname>Soddu</surname><given-names>A</given-names></name>, <name><surname>Marinazzo</surname><given-names>D</given-names></name>, <name><surname>Laureys</surname><given-names>S</given-names></name>, <year>2018</year>. <article-title>Multifaceted brain networks reconfiguration in disorders of consciousness uncovered by co-activation patterns</article-title>. <source>Hum. Brain Mapp</source>
+<volume>39</volume>, <fpage>89</fpage>–<lpage>103</lpage>.<pub-id pub-id-type="pmid">29024197</pub-id></mixed-citation>
+      </ref>
+      <ref id="R17">
+        <mixed-citation publication-type="journal"><name><surname>Dipasquale</surname><given-names>O</given-names></name>, <name><surname>Sethi</surname><given-names>A</given-names></name>, <name><surname>Lagana</surname><given-names>MM</given-names></name> , <name><surname>Baglio</surname><given-names>F</given-names></name>, <name><surname>Baselli</surname><given-names>G</given-names></name>, <name><surname>Kundu</surname><given-names>P</given-names></name>, <name><surname>Harrison</surname><given-names>NA</given-names></name>, <name><surname>Cercignani</surname><given-names>M</given-names></name>, <year>2017</year>. <article-title>Comparing resting state fMRI denoising approaches using multi- and single-echo acquisitions</article-title>. <source>PLoS ONE</source>
+<volume>12</volume>, <fpage>e0173289</fpage>.<pub-id pub-id-type="pmid">28323821</pub-id></mixed-citation>
+      </ref>
+      <ref id="R18">
+        <mixed-citation publication-type="journal"><name><surname>Elliott</surname><given-names>ML</given-names></name>, <name><surname>Knodt</surname><given-names>AR</given-names></name> , <name><surname>Hariri</surname><given-names>AR</given-names></name>, <year>2021</year>. <article-title>Striving toward translation: strategies for reliable fMRI measurement</article-title>. <source>Trends Cogn. Sci</source>
+<volume>25</volume>, <fpage>776</fpage>–<lpage>787</lpage>.<pub-id pub-id-type="pmid">34134933</pub-id></mixed-citation>
+      </ref>
+      <ref id="R19">
+        <mixed-citation publication-type="journal"><name><surname>Espinoza</surname><given-names>FA</given-names></name> , <name><surname>Liu</surname><given-names>J</given-names></name>, <name><surname>Ciarochi</surname><given-names>J</given-names></name>, <name><surname>Turner</surname><given-names>JA</given-names></name>, <name><surname>Vergara</surname><given-names>VM</given-names></name>, <name><surname>Caprihan</surname><given-names>A</given-names></name>, <name><surname>Misiura</surname><given-names>M</given-names></name>, <name><surname>Johnson</surname><given-names>HJ</given-names></name>, <name><surname>Long</surname><given-names>JD</given-names></name>, <name><surname>Bockholt</surname><given-names>JH</given-names></name>, <name><surname>Paulsen</surname><given-names>JS</given-names></name>, <name><surname>Calhoun</surname><given-names>VD</given-names></name>, <year>2019</year>. <article-title>Dynamic functional network connectivity in Huntington’s disease and its associations with motor and cognitive measures</article-title>. <source>Hum. Brain Mapp</source>
+<volume>40</volume>, <fpage>1955</fpage>–<lpage>1968</lpage>.<pub-id pub-id-type="pmid">30618191</pub-id></mixed-citation>
+      </ref>
+      <ref id="R20">
+        <mixed-citation publication-type="journal"><name><surname>Feinberg</surname><given-names>DA</given-names></name>, <name><surname>Moeller</surname><given-names>S</given-names></name>, <name><surname>Smith</surname><given-names>SM</given-names></name>, <name><surname>Auerbach</surname><given-names>E</given-names></name>, <name><surname>Ramanna</surname><given-names>S</given-names></name>, <name><surname>Gunther</surname><given-names>M</given-names></name>, <name><surname>Glasser</surname><given-names>MF</given-names></name>, <name><surname>Miller</surname><given-names>KL</given-names></name>, <name><surname>Ugurbil</surname><given-names>K</given-names></name>, <name><surname>Yacoub</surname><given-names>E</given-names></name>, <year>2010</year>. <article-title>Multiplexed echo planar imaging for sub-second whole brain FMRI and fast diffusion imaging</article-title>. <source>PLoS ONE</source>
+<volume>5</volume>, <fpage>e15710</fpage> .<pub-id pub-id-type="pmid">21187930</pub-id></mixed-citation>
+      </ref>
+      <ref id="R21">
+        <mixed-citation publication-type="journal"><name><surname>Fernandez</surname><given-names>B</given-names></name>, <name><surname>Leuchs</surname><given-names>L</given-names></name>, <name><surname>Samann</surname><given-names>PG</given-names></name>, <name><surname>Czisch</surname><given-names>M</given-names></name> , <name><surname>Spoormaker</surname><given-names>VI</given-names></name>, <year>2017</year>. <article-title>Multi-echo EPI of human fear conditioning reveals improved BOLD detection in ventromedial prefrontal cortex</article-title>. <source>Neuroimage</source>
+<volume>156</volume>, <fpage>65</fpage>–<lpage>77</lpage>.<pub-id pub-id-type="pmid">28483719</pub-id></mixed-citation>
+      </ref>
+      <ref id="R22">
+        <mixed-citation publication-type="journal"><name><surname>Fiorenzato</surname><given-names>E</given-names></name>, <name><surname>Strafella</surname><given-names>AP</given-names></name>, <name><surname>Kim</surname><given-names>J</given-names></name>, <name><surname>Schifano</surname><given-names>R</given-names></name>, <name><surname>Weis</surname><given-names>L</given-names></name> , <name><surname>Antonini</surname><given-names>A</given-names></name>, <name><surname>Biundo</surname><given-names>R</given-names></name>, <year>2019</year>. <article-title>Dynamic functional connectivity changes associated with dementia in Parkinson’s disease</article-title>. <source>Brain</source>
+<volume>142</volume>, <fpage>2860</fpage>–<lpage>2872</lpage>.<pub-id pub-id-type="pmid">31280293</pub-id></mixed-citation>
+      </ref>
+      <ref id="R23">
+        <mixed-citation publication-type="journal"><name><surname>Fox</surname><given-names>MD</given-names></name>, <name><surname>Snyder</surname><given-names>AZ</given-names></name>, <name><surname>Vincent</surname><given-names>JL</given-names></name>, <name><surname>Corbetta</surname><given-names>M</given-names></name> , <name><surname>Van Essen</surname><given-names>DC</given-names></name>, <name><surname>Raichle</surname><given-names>ME</given-names></name>, <year>2005</year>. <article-title>The human brain is intrinsically organized into dynamic, anticorrelated functional networks</article-title>. <source>Proc. Natl. Acad. Sci</source>
+<volume>102</volume>, <fpage>9673</fpage>–<lpage>9678</lpage>.<pub-id pub-id-type="pmid">15976020</pub-id></mixed-citation>
+      </ref>
+      <ref id="R24">
+        <mixed-citation publication-type="journal"><name><surname>Glasser</surname><given-names>MF</given-names></name>, <name><surname>Sotiropoulos</surname><given-names>SN</given-names></name> , <name><surname>Wilson</surname><given-names>JA</given-names></name>, <name><surname>Coalson</surname><given-names>TS</given-names></name>, <name><surname>Fischl</surname><given-names>B</given-names></name>, <name><surname>Andersson</surname><given-names>JL</given-names></name>, <name><surname>Xu</surname><given-names>J</given-names></name>, <name><surname>Jbabdi</surname><given-names>S</given-names></name>, <name><surname>Webster</surname><given-names>M</given-names></name>, <name><surname>Polimeni</surname><given-names>JR</given-names></name>, <name><surname>Van Essen</surname><given-names>DC</given-names></name>, <name><surname>Jenkinson</surname><given-names>M</given-names></name>, <collab>Consortium, W.U.M.H.</collab> , <year>2013</year>. <article-title>The minimal preprocessing pipelines for the Human Connectome Project</article-title>. <source>Neuroimage</source>
+<volume>80</volume>, <fpage>105</fpage>–<lpage>124</lpage>.<pub-id pub-id-type="pmid">23668970</pub-id></mixed-citation>
+      </ref>
+      <ref id="R25">
+        <mixed-citation publication-type="journal"><name><surname>Jenkinson</surname><given-names>M</given-names></name>, <name><surname>Bannister</surname><given-names>P</given-names></name>, <name><surname>Brady</surname><given-names>M</given-names></name> , <name><surname>Smith</surname><given-names>S</given-names></name>, <year>2002</year>. <article-title>Improved optimization for the robust and accurate linear registration and motion correction of brain images</article-title>. <source>Neuroimage</source>
+<volume>17</volume>, <fpage>825</fpage>–<lpage>841</lpage>.<pub-id pub-id-type="pmid">12377157</pub-id></mixed-citation>
+      </ref>
+      <ref id="R26">
+        <mixed-citation publication-type="journal"><name><surname>Jenkinson</surname><given-names>M</given-names></name>, <name><surname>Beckmann</surname><given-names>CF</given-names></name>, <name><surname>Behrens</surname><given-names>TE</given-names></name>, <name><surname>Woolrich</surname><given-names>MW</given-names></name>, <name><surname>Smith</surname><given-names>SM</given-names></name> , <year>2012</year>. <article-title>FSL</article-title>. <source>Neuroimage</source>
+<volume>62</volume>, <fpage>782</fpage>–<lpage>790</lpage>.<pub-id pub-id-type="pmid">21979382</pub-id></mixed-citation>
+      </ref>
+      <ref id="R27">
+        <mixed-citation publication-type="journal"><name><surname>Kim</surname><given-names>J</given-names></name>, <name><surname>Criaud</surname><given-names>M</given-names></name>, <name><surname>Cho</surname><given-names>SS</given-names></name>, <name><surname>Diez-Cirarda</surname><given-names>M</given-names></name>, <name><surname>Mihaescu</surname><given-names>A</given-names></name>, <name><surname>Coakeley</surname><given-names>S</given-names></name>, <name><surname>Ghadery</surname><given-names>C</given-names></name>, <name><surname>Valli</surname><given-names>M</given-names></name>, <name><surname>Jacobs</surname><given-names>MF</given-names></name>, <name><surname>Houle</surname><given-names>S</given-names></name> , <name><surname>Strafella</surname><given-names>AP</given-names></name>, <year>2017</year>. <article-title>Abnormal intrinsic brain functional network dynamics in Parkinson’s disease</article-title>. <source>Brain</source>
+<volume>140</volume>, <fpage>2955</fpage>–<lpage>2967</lpage> .<pub-id pub-id-type="pmid">29053835</pub-id></mixed-citation>
+      </ref>
+      <ref id="R28">
+        <mixed-citation publication-type="journal"><name><surname>Kundu</surname><given-names>P</given-names></name>, <name><surname>Brenowitz</surname><given-names>ND</given-names></name>, <name><surname>Voon</surname><given-names>V</given-names></name>, <name><surname>Worbe</surname><given-names>Y</given-names></name>, <name><surname>Vertes</surname><given-names>PE</given-names></name>, <name><surname>Inati</surname><given-names>SJ</given-names></name>, <name><surname>Saad</surname><given-names>ZS</given-names></name>, <name><surname>Bandettini</surname><given-names>PA</given-names></name>, <name><surname>Bullmore</surname><given-names>ET</given-names></name>, <year>2013</year>. <article-title>Integrated strategy for improving functional connectivity mapping using multiecho fMRI</article-title>. <source>Proc. Natl. Acad. Sci. U. S. A</source>
+<volume>110</volume>, <fpage>16187</fpage>–<lpage>16192</lpage> .<pub-id pub-id-type="pmid">24038744</pub-id></mixed-citation>
+      </ref>
+      <ref id="R29">
+        <mixed-citation publication-type="journal"><name><surname>Kundu</surname><given-names>P</given-names></name>, <name><surname>Inati</surname><given-names>SJ</given-names></name>, <name><surname>Evans</surname><given-names>JW</given-names></name>, <name><surname>Luh</surname><given-names>WM</given-names></name>, <name><surname>Bandettini</surname><given-names>PA</given-names></name>, <year>2012</year>. <article-title>Differentiating BOLD and non-BOLD signals in fMRI time series using multi-echo EPI</article-title>. <source>Neuroimage</source>
+<volume>60</volume>, <fpage>1759</fpage>–<lpage>1770</lpage>.<pub-id pub-id-type="pmid">22209809</pub-id></mixed-citation>
+      </ref>
+      <ref id="R30">
+        <mixed-citation publication-type="journal"><name><surname>Kundu</surname><given-names>P</given-names></name>, <name><surname>Voon</surname><given-names>V</given-names></name>, <name><surname>Balchandani</surname><given-names>P</given-names></name>, <name><surname>Lombardo</surname><given-names>MV</given-names></name>, <name><surname>Poser</surname><given-names>BA</given-names></name> , <name><surname>Bandettini</surname><given-names>PA</given-names></name>, <year>2017</year>. <article-title>Multi-echo fMRI: a review of applications in fMRI denoising and analysis of BOLD signals</article-title>. <source>Neuroimage</source>
+<volume>154</volume>, <fpage>59</fpage>–<lpage>80</lpage>.<pub-id pub-id-type="pmid">28363836</pub-id></mixed-citation>
+      </ref>
+      <ref id="R31">
+        <mixed-citation publication-type="journal"><name><surname>Liu</surname><given-names>X</given-names></name>, <name><surname>Chang</surname><given-names>C</given-names></name>, <name><surname>Duyn</surname><given-names>JH</given-names></name>, <year>2013</year>. <article-title>Decomposition of spontaneous brain activity into distinct fMRI co-activation patterns</article-title>. <source>Front. Syst. Neurosci</source>
+<volume>7</volume>, <fpage>101</fpage>.<pub-id pub-id-type="pmid">24550788</pub-id></mixed-citation>
+      </ref>
+      <ref id="R32">
+        <mixed-citation publication-type="journal"><name><surname>Liu</surname><given-names>X</given-names></name>, <name><surname>Duyn</surname><given-names>JH</given-names></name>, <year>2013</year>. <article-title>Time-varying functional network information extracted from brief instances of spontaneous brain activity</article-title>. <source>Proc. Natl. Acad. Sci. U. S. A</source>
+<volume>110</volume>, <fpage>4392</fpage>–<lpage>4397</lpage>.<pub-id pub-id-type="pmid">23440216</pub-id></mixed-citation>
+      </ref>
+      <ref id="R33">
+        <mixed-citation publication-type="journal"><name><surname>Liu</surname><given-names>X</given-names></name>, <name><surname>Zhang</surname><given-names>N</given-names></name>, <name><surname>Chang</surname><given-names>C</given-names></name>, <name><surname>Duyn</surname><given-names>JH</given-names></name>, <year>2018</year>. <article-title>Co-activation patterns in resting-state fMRI signals</article-title>. <source>Neuroimage</source>
+<volume>180</volume>, <fpage>485</fpage>–<lpage>494</lpage>.<pub-id pub-id-type="pmid">29355767</pub-id></mixed-citation>
+      </ref>
+      <ref id="R34">
+        <mixed-citation publication-type="journal"><name><surname>Marshall</surname><given-names>E</given-names></name>, <name><surname>Nomi</surname><given-names>JS</given-names></name>, <name><surname>Dirks</surname><given-names>B</given-names></name>, <name><surname>Romero</surname><given-names>C</given-names></name>, <name><surname>Kupis</surname><given-names>L</given-names></name>, <name><surname>Chang</surname><given-names>C</given-names></name>, <name><surname>Uddin</surname><given-names>LQ</given-names></name>, <year>2020</year>. <article-title>Coactivation pattern analysis reveals altered salience network dynamics in children with autism spectrum disorder</article-title>. <source>Netw. Neurosci</source>
+<volume>4</volume>, <fpage>1219</fpage>–<lpage>1234</lpage>.<pub-id pub-id-type="pmid">33409437</pub-id></mixed-citation>
+      </ref>
+      <ref id="R35">
+        <mixed-citation publication-type="journal"><name><surname>Marusak</surname><given-names>HA</given-names></name>, <name><surname>Elrahal</surname><given-names>F</given-names></name>, <name><surname>Peters</surname><given-names>CA</given-names></name>, <name><surname>Kundu</surname><given-names>P</given-names></name> , <name><surname>Lombardo</surname><given-names>MV</given-names></name>, <name><surname>Calhoun</surname><given-names>VD</given-names></name>, <name><surname>Goldberg</surname><given-names>EK</given-names></name>, <name><surname>Cohen</surname><given-names>C</given-names></name>, <name><surname>Taub</surname><given-names>JW</given-names></name>, <name><surname>Rabinak</surname><given-names>CA</given-names></name>, <year>2018</year>. <article-title>Mindfulness and dynamic functional neural connectivity in children and adolescents</article-title>. <source>Behav. Brain Res</source>
+<volume>336</volume>, <fpage>211</fpage>–<lpage>218</lpage>.<pub-id pub-id-type="pmid">28887198</pub-id></mixed-citation>
+      </ref>
+      <ref id="R36">
+        <mixed-citation publication-type="journal"><name><surname>Moeller</surname><given-names>S</given-names></name>, <name><surname>Yacoub</surname><given-names>E</given-names></name>, <name><surname>Olman</surname><given-names>CA</given-names></name>, <name><surname>Auerbach</surname><given-names>E</given-names></name>, <name><surname>Strupp</surname><given-names>J</given-names></name>, <name><surname>Harel</surname><given-names>N</given-names></name>, <name><surname>Ugurbil</surname><given-names>K</given-names></name>, <year>2010</year>. <article-title>Multiband multislice GE-EPI at 7 tesla, with 16-fold acceleration using partial parallel imaging with application to high spatial and temporal whole-brain fMRI</article-title>. <source>Magn. Reson. Med</source>
+<volume>63</volume>, <fpage>1144</fpage>–<lpage>1153</lpage>.<pub-id pub-id-type="pmid">20432285</pub-id></mixed-citation>
+      </ref>
+      <ref id="R37">
+        <mixed-citation publication-type="journal"><name><surname>Monti</surname><given-names>S</given-names></name>, <name><surname>Tamayo</surname><given-names>P</given-names></name>, <name><surname>Mesirov</surname><given-names>J</given-names></name>, <name><surname>Golub</surname><given-names>T</given-names></name>, <year>2003</year>. <article-title>Consensus clustering: a resampling-based method for class discovery and visualization of gene expression microarray data</article-title>. <source>Mach. Learn</source>
+<volume>52</volume>, <fpage>91</fpage>–<lpage>118</lpage>.</mixed-citation>
+      </ref>
+      <ref id="R38">
+        <mixed-citation publication-type="journal"><name><surname>Murphy</surname><given-names>K</given-names></name>, <name><surname>Birn</surname><given-names>RM</given-names></name>, <name><surname>Bandettini</surname><given-names>PA</given-names></name>, <year>2013</year>. <article-title>Resting-state fMRI confounds and cleanup</article-title>. <source>Neuroimage</source>
+<volume>80</volume>, <fpage>349</fpage>–<lpage>359</lpage>.<pub-id pub-id-type="pmid">23571418</pub-id></mixed-citation>
+      </ref>
+      <ref id="R39">
+        <mixed-citation publication-type="journal"><name><surname>Nalci</surname><given-names>A</given-names></name>, <name><surname>Rao</surname><given-names>BD</given-names></name>, <name><surname>Liu</surname><given-names>TT</given-names></name>, <year>2017</year>. <article-title>Global signal regression acts as a temporal down-weighting process in resting-state fMRI</article-title>. <source>Neuroimage</source>
+<volume>152</volume>, <fpage>602</fpage>–<lpage>618</lpage>.<pub-id pub-id-type="pmid">28089677</pub-id></mixed-citation>
+      </ref>
+      <ref id="R40">
+        <mixed-citation publication-type="journal"><name><surname>Olafsson</surname><given-names>V</given-names></name>, <name><surname>Kundu</surname><given-names>P</given-names></name>, <name><surname>Wong</surname><given-names>EC</given-names></name>, <name><surname>Bandettini</surname><given-names>PA</given-names></name>, <name><surname>Liu</surname><given-names>TT</given-names></name>, <year>2015</year>. <article-title>Enhanced identification of BOLD-like components with multi-echo simultaneous multi-slice (MESMS) fMRI and multi-echo ICA</article-title>. <source>Neuroimage</source>
+<volume>112</volume>, <fpage>43</fpage>–<lpage>51</lpage>.<pub-id pub-id-type="pmid">25743045</pub-id></mixed-citation>
+      </ref>
+      <ref id="R41">
+        <mixed-citation publication-type="journal"><name><surname>Poser</surname><given-names>BA</given-names></name>, <name><surname>Norris</surname><given-names>DG</given-names></name>, <year>2009</year>. <article-title>Investigating the benefits of multi-echo EPI for fMRI at 7 T</article-title>. <source>Neuroimage</source>
+<volume>45</volume>, <fpage>1162</fpage>–<lpage>1172</lpage>.<pub-id pub-id-type="pmid">19349231</pub-id></mixed-citation>
+      </ref>
+      <ref id="R42">
+        <mixed-citation publication-type="journal"><name><surname>Poser</surname><given-names>BA</given-names></name>, <name><surname>Versluis</surname><given-names>MJ</given-names></name>, <name><surname>Hoogduin</surname><given-names>JM</given-names></name>, <name><surname>Norris</surname><given-names>DG</given-names></name>, <year>2006</year>. <article-title>BOLD contrast sensitivity enhancement and artifact reduction with multiecho EPI: parallel-acquired inhomogeneity-desensitized fMRI</article-title>. <source>Magn. Reson. Med</source>
+<volume>55</volume>, <fpage>1227</fpage>–<lpage>1235</lpage>.<pub-id pub-id-type="pmid">16680688</pub-id></mixed-citation>
+      </ref>
+      <ref id="R43">
+        <mixed-citation publication-type="journal"><name><surname>Posse</surname><given-names>S</given-names></name>, <name><surname>Wiese</surname><given-names>S</given-names></name>, <name><surname>Gembris</surname><given-names>D</given-names></name>, <name><surname>Mathiak</surname><given-names>K</given-names></name>, <name><surname>Kessler</surname><given-names>C</given-names></name>, <name><surname>Grosse-Ruyken</surname><given-names>ML</given-names></name>, <name><surname>Elghahwagi</surname><given-names>B</given-names></name>, <name><surname>Richards</surname><given-names>T</given-names></name>, <name><surname>Dager</surname><given-names>SR</given-names></name>, <name><surname>Kiselev</surname><given-names>VG</given-names></name>, <year>1999</year>. <article-title>Enhancement of BOLD-contrast sensitivity by single-shot multi-echo functional MR imaging</article-title>. <source>Magn. Reson. Med</source>
+<volume>42</volume>, <fpage>87</fpage>–<lpage>97</lpage>.<pub-id pub-id-type="pmid">10398954</pub-id></mixed-citation>
+      </ref>
+      <ref id="R44">
+        <mixed-citation publication-type="journal"><name><surname>Power</surname><given-names>JD</given-names></name>, <name><surname>Barnes</surname><given-names>KA</given-names></name>, <name><surname>Snyder</surname><given-names>AZ</given-names></name>, <name><surname>Schlaggar</surname><given-names>BL</given-names></name>, <name><surname>Petersen</surname><given-names>SE</given-names></name>, <year>2012</year>. <article-title>Spurious but systematic correlations in functional connectivity MRI networks arise from subject motion</article-title>. <source>Neuroimage</source>
+<volume>59</volume>, <fpage>2142</fpage>–<lpage>2154</lpage>.<pub-id pub-id-type="pmid">22019881</pub-id></mixed-citation>
+      </ref>
+      <ref id="R45">
+        <mixed-citation publication-type="journal"><name><surname>Power</surname><given-names>JD</given-names></name>, <name><surname>Plitt</surname><given-names>M</given-names></name>, <name><surname>Gotts</surname><given-names>SJ</given-names></name>, <name><surname>Kundu</surname><given-names>P</given-names></name>, <name><surname>Voon</surname><given-names>V</given-names></name>, <name><surname>Bandettini</surname><given-names>PA</given-names></name>, <name><surname>Martin</surname><given-names>A</given-names></name>, <year>2018</year>. <article-title>Ridding fMRI data of motion-related influences: removal of signals with distinct spatial and physical bases in multiecho data</article-title>. <source>Proc. Natl. Acad. Sci. U. S. A</source>
+<volume>115</volume>, <fpage>2105</fpage>–<lpage>2114</lpage>.</mixed-citation>
+      </ref>
+      <ref id="R46">
+        <mixed-citation publication-type="journal"><name><surname>Pruim</surname><given-names>RHR</given-names></name>, <name><surname>Mennes</surname><given-names>M</given-names></name>, <name><surname>van Rooij</surname><given-names>D</given-names></name>, <name><surname>Llera</surname><given-names>A</given-names></name>, <name><surname>Buitelaar</surname><given-names>JK</given-names></name>, <name><surname>Beckmann</surname><given-names>CF</given-names></name>, <year>2015</year>. <article-title>ICA-AROMA: a robust ICA-based strategy for removing motion artifacts from fMRI data</article-title>. <source>Neuroimage</source>
+<volume>112</volume>, <fpage>267</fpage>–<lpage>277</lpage>.<pub-id pub-id-type="pmid">25770991</pub-id></mixed-citation>
+      </ref>
+      <ref id="R47">
+        <mixed-citation publication-type="journal"><name><surname>Rabany</surname><given-names>L</given-names></name>, <name><surname>Brocke</surname><given-names>S</given-names></name>, <name><surname>Calhoun</surname><given-names>VD</given-names></name>, <name><surname>Pittman</surname><given-names>B</given-names></name>, <name><surname>Corbera</surname><given-names>S</given-names></name>, <name><surname>Wexler</surname><given-names>BE</given-names></name>, <name><surname>Bell</surname><given-names>MD</given-names></name>, <name><surname>Pelphrey</surname><given-names>K</given-names></name>, <name><surname>Pearlson</surname><given-names>GD</given-names></name>, <name><surname>Assaf</surname><given-names>M</given-names></name>, <year>2019</year>. <article-title>Dynamic functional connectivity in schizophrenia and autism spectrum disorder: convergence, divergence and classification</article-title>. <source>NeuroImage Clin</source>. <volume>24</volume>, <fpage>101966</fpage>.<pub-id pub-id-type="pmid">31401405</pub-id></mixed-citation>
+      </ref>
+      <ref id="R48">
+        <mixed-citation publication-type="journal"><name><surname>Rolls</surname><given-names>ET</given-names></name>, <name><surname>Joliot</surname><given-names>M</given-names></name>, <name><surname>Tzourio-Mazoyer</surname><given-names>N</given-names></name>, <year>2015</year>. <article-title>Implementation of a new parcellation of the orbitofrontal cortex in the automated anatomical labeling atlas</article-title>. <source>Neuroimage</source>
+<volume>122</volume>, <fpage>1</fpage>–<lpage>5</lpage>.<pub-id pub-id-type="pmid">26241684</pub-id></mixed-citation>
+      </ref>
+      <ref id="R49">
+        <mixed-citation publication-type="journal"><name><surname>Rousseeuw</surname><given-names>PJ</given-names></name>, <year>1987</year>. <article-title>Silhouettes: a graphical aid to the interpretation and validation of cluster analysis</article-title>. <source>J. Comput. Appl. Math</source>
+<volume>20</volume>, <fpage>53</fpage>–<lpage>65</lpage>.</mixed-citation>
+      </ref>
+      <ref id="R50">
+        <mixed-citation publication-type="journal"><name><surname>Sakoglu</surname><given-names>U</given-names></name>, <name><surname>Pearlson</surname><given-names>GD</given-names></name>, <name><surname>Kiehl</surname><given-names>KA</given-names></name>, <name><surname>Wang</surname><given-names>YM</given-names></name>, <name><surname>Michael</surname><given-names>AM</given-names></name>, <name><surname>Calhoun</surname><given-names>VD</given-names></name>, <year>2010</year>. <article-title>A method for evaluating dynamic functional network connectivity and task-modulation: application to schizophrenia</article-title>. <source>MAGMA</source>
+<volume>23</volume>, <fpage>351</fpage>–<lpage>366</lpage>.<pub-id pub-id-type="pmid">20162320</pub-id></mixed-citation>
+      </ref>
+      <ref id="R51">
+        <mixed-citation publication-type="journal"><name><surname>Senbabaoglu</surname><given-names>Y</given-names></name>, <name><surname>Michailidis</surname><given-names>G</given-names></name>, <name><surname>Li</surname><given-names>JZ</given-names></name>, <year>2014</year>. <article-title>Critical limitations of consensus clustering in class discovery</article-title>. <source>Sci. Rep</source>
+<volume>4</volume>, <fpage>6207</fpage>.<pub-id pub-id-type="pmid">25158761</pub-id></mixed-citation>
+      </ref>
+      <ref id="R52">
+        <mixed-citation publication-type="journal"><name><surname>Setsompop</surname><given-names>K</given-names></name>, <name><surname>Gagoski</surname><given-names>BA</given-names></name>, <name><surname>Polimeni</surname><given-names>JR</given-names></name>, <name><surname>Witzel</surname><given-names>T</given-names></name>, <name><surname>Wedeen</surname><given-names>VJ</given-names></name>, <name><surname>Wald</surname><given-names>LL</given-names></name>, <year>2012</year>. <article-title>Blipped-controlled aliasing in parallel imaging for simultaneous multislice echo planar imaging with reduced g-factor penalty</article-title>. <source>Magn. Reson. Med</source>
+<volume>67</volume>, <fpage>1210</fpage>–<lpage>1224</lpage>.<pub-id pub-id-type="pmid">21858868</pub-id></mixed-citation>
+      </ref>
+      <ref id="R53">
+        <mixed-citation publication-type="journal"><name><surname>Shakil</surname><given-names>S</given-names></name>, <name><surname>Lee</surname><given-names>CH</given-names></name>, <name><surname>Keilholz</surname><given-names>SD</given-names></name>, <year>2016</year>. <article-title>Evaluation of sliding window correlation performance for characterizing dynamic functional connectivity and brain states</article-title>. <source>Neuroimage</source>
+<volume>133</volume>, <fpage>111</fpage>–<lpage>128</lpage>.<pub-id pub-id-type="pmid">26952197</pub-id></mixed-citation>
+      </ref>
+      <ref id="R54">
+        <mixed-citation publication-type="journal"><name><surname>Smith</surname><given-names>SM</given-names></name>, <name><surname>Beckmann</surname><given-names>CF</given-names></name>, <name><surname>Andersson</surname><given-names>J</given-names></name>, <name><surname>Auerbach</surname><given-names>EJ</given-names></name>, <name><surname>Bijsterbosch</surname><given-names>J</given-names></name>, <name><surname>Douaud</surname><given-names>G</given-names></name>, <name><surname>Duff</surname><given-names>E</given-names></name>, <name><surname>Feinberg</surname><given-names>DA</given-names></name>, <name><surname>Griffanti</surname><given-names>L</given-names></name>, <name><surname>Harms</surname><given-names>MP</given-names></name>, <name><surname>Kelly</surname><given-names>M</given-names></name>, <name><surname>Laumann</surname><given-names>T</given-names></name>, <name><surname>Miller</surname><given-names>KL</given-names></name>, <name><surname>Moeller</surname><given-names>S</given-names></name>, <name><surname>Petersen</surname><given-names>S</given-names></name>, <name><surname>Power</surname><given-names>J</given-names></name>, <name><surname>Salimi-Khorshidi</surname><given-names>G</given-names></name>, <name><surname>Snyder</surname><given-names>AZ</given-names></name>, <name><surname>Vu</surname><given-names>AT</given-names></name>, <name><surname>Woolrich</surname><given-names>MW</given-names></name>, <name><surname>Xu</surname><given-names>J</given-names></name>, <name><surname>Yacoub</surname><given-names>E</given-names></name>, <name><surname>Ugurbil</surname><given-names>K</given-names></name>, <name><surname>Van Essen</surname><given-names>DC</given-names></name>, <name><surname>Glasser</surname><given-names>MF</given-names></name>, <collab>Consortium, W.U.-M.H.</collab>, <year>2013</year>. <article-title>Resting-state fMRI in the human connectome project</article-title>. <source>Neuroimage</source>
+<volume>80</volume>, <fpage>144</fpage>–<lpage>168</lpage>.<pub-id pub-id-type="pmid">23702415</pub-id></mixed-citation>
+      </ref>
+      <ref id="R55">
+        <mixed-citation publication-type="journal"><name><surname>Tagliazucchi</surname><given-names>E</given-names></name>, <name><surname>Balenzuela</surname><given-names>P</given-names></name>, <name><surname>Fraiman</surname><given-names>D</given-names></name>, <name><surname>Chialvo</surname><given-names>DR</given-names></name>, <year>2012</year>. <article-title>Criticality in large-scale brain FMRI dynamics unveiled by a novel point process analysis</article-title>. <source>Front. Physiol</source>
+<volume>3</volume>, <fpage>15</fpage>.<pub-id pub-id-type="pmid">22347863</pub-id></mixed-citation>
+      </ref>
+      <ref id="R56">
+        <mixed-citation publication-type="journal"><name><surname>Wise</surname><given-names>T</given-names></name> , <name><surname>Marwood</surname><given-names>L</given-names></name>, <name><surname>Perkins</surname><given-names>AM</given-names></name>, <name><surname>Herane-Vives</surname><given-names>A</given-names></name> , <name><surname>Joules</surname><given-names>R</given-names></name>, <name><surname>Lythgoe</surname><given-names>DJ</given-names></name>, <name><surname>Luh</surname><given-names>WM</given-names></name>, <name><surname>Williams</surname><given-names>SCR</given-names></name>, <name><surname>Young</surname><given-names>AH</given-names></name>, <name><surname>Cleare</surname><given-names>AJ</given-names></name>, <name><surname>Arnone</surname><given-names>D</given-names></name>, <year>2017</year>. <article-title>Instability of default mode network connectivity in major depression: a two-sample confirmation study</article-title>. <source>Transl. Psychiatry</source>
+<volume>7</volume>, <fpage>e1105</fpage>.<pub-id pub-id-type="pmid">28440813</pub-id></mixed-citation>
+      </ref>
+      <ref id="R57">
+        <mixed-citation publication-type="journal"><name><surname>Zöller</surname><given-names>DM</given-names></name>, <name><surname>Bolton</surname><given-names>TA</given-names></name>, <name><surname>Karahanoğlu</surname><given-names>FI</given-names></name>, <name><surname>Eliez</surname><given-names>S</given-names></name>, <name><surname>Schaer</surname><given-names>M</given-names></name>, <name><surname>Van De Ville</surname><given-names>D</given-names></name>, <year>2018</year>. <article-title>Robust recovery of temporal overlap between network activity using transient-in-formed spatio-temporal regression</article-title>. <source>IEEE Trans. Med. Imaging</source>
+<volume>38</volume>, <fpage>291</fpage>–<lpage>302</lpage>.<pub-id pub-id-type="pmid">30188815</pub-id></mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+  <floats-group>
+    <fig position="float" id="F1">
+      <label>Fig. 1.</label>
+      <caption>
+        <p id="P80">Centroid CAPs for the MBME (left) and MB (right) data for the seed-based analysis. Centroid CAPs were generated separately for the MBME and MB data using the training dataset. Similar CAPs were matched between the MBME and MB datasets. All five CAPs had a corollary between datasets. CAP<sub>3</sub> showed the highest activity with high co-activation throughout much of the gray matter. CAP<sub>1</sub> showed higher co-activation in the motor cortex and visual cortex. CAP<sub>4</sub> showed higher co-activation in parietal, visual, frontal and subcoritical regions. Finally, CAPs 2 and 5 showed higher co-activation in the default mode network, along with some subcoritcal area.</p>
+      </caption>
+      <graphic xlink:href="nihms-1879580-f0001" position="float"/>
+    </fig>
+    <fig position="float" id="F2">
+      <label>Fig. 2.</label>
+      <caption>
+        <p id="P81">Mean CAPs evaluated for MBME (left) and MB (middle) data separately and t-test results comparing MBME and MB data (right) for the seed-based analysis. CAPs were determined using the test dataset by assigning each frame to a CAP based on spatial similarity. Thus, mean CAPs closely match the centroid CAPs determined from the training data. While the patterns of co-activation are similar for the MBME and MB datasets, significantly higher co-activation was observed for the MBME data compared to the MB data for all five CAPs (<italic toggle="yes">p</italic> &lt; 00.001, cluster-size corrected). No region showed higher co-activation in the MB data compared to the MBME data.</p>
+      </caption>
+      <graphic xlink:href="nihms-1879580-f0002" position="float"/>
+    </fig>
+    <fig position="float" id="F3">
+      <label>Fig. 3.</label>
+      <caption>
+        <p id="P82">Violin plots of the goodness of fit and CAP robustness metrics for the seed-based analysis. All plots were generated using the test dataset. Spatial correlation (a) and mean squared error (MSE) (b) between individual timepoints and their assigned centroid CAP were computed separately for MBME and MB datasets (MB: yellow color; MBME: blue color). The spatial correlation was significantly higher for MBME vs. MB datasets for all five CAPs, while MSE was significantly lower for MBME vs. MB datasets for all CAPs except CAP<sub>4</sub>. Within-dataset variance (c), calculated across timepoints assigned to the same CAP for each subject, session, and sequence, was significantly lower for MBME data compared to MB data for all CAPs except CAP<sub>4</sub>. Note: on each box, the central mark indicates the median, and the bottom and top edges of the box indicate the 25th and 75th percentiles, respectively. *** <italic toggle="yes">p</italic> &lt; 00.001, ** <italic toggle="yes">p</italic> &lt; 00.01, * <italic toggle="yes">p</italic> &lt; 00.05, Bonferroni-corrected.</p>
+      </caption>
+      <graphic xlink:href="nihms-1879580-f0003" position="float"/>
+    </fig>
+    <fig position="float" id="F4">
+      <label>Fig. 4.</label>
+      <caption>
+        <p id="P83">Violin plot of CAP reproducibility for the seed-based case. Between-session spatial correlation was calculated for the test dataset using the mean of all timepoints assigned to each CAP for each subject and sequence. CAPs 1 – 4 showed significantly higher spatial correlation for the MBME vs. MB data (MB: yellow color; MBME: blue color). Note: on each box, the central mark indicates the median, and the bottom and top edges of the box indicate the 25th and 75th percentiles, respectively. *** <italic toggle="yes">p</italic> &lt; 0.001, ** <italic toggle="yes">p</italic> &lt; 0.01, * <italic toggle="yes">p</italic> &lt; 0.05, Bonferroni-corrected.</p>
+      </caption>
+      <graphic xlink:href="nihms-1879580-f0004" position="float"/>
+    </fig>
+    <fig position="float" id="F5">
+      <label>Fig. 5.</label>
+      <caption>
+        <p id="P84">Centroid CAPs for the seed-free analysis calculated using the training dataset for the MBME (left) and MB (right) data separately. CAPs were visually matched between the MBME and MB data. CAPs 1 – 4 matched while CAP<sub>5</sub> differed. CAP<sub>1</sub> showed areas of heightened co-activation in the visual and motor cortices. CAP<sub>2</sub> showed largely global negative co-activation for the MBME data with heightened negative co-activation focused in the visual and motor cortices. CAP<sub>3</sub> showed higher co-activation in the visual network, frontoparietal network, and subcoritcal region. CAP<sub>4</sub> showed higher co-activation in the DMN and negative co-activation in the visual cortex.</p>
+      </caption>
+      <graphic xlink:href="nihms-1879580-f0005" position="float"/>
+    </fig>
+    <fig position="float" id="F6">
+      <label>Fig. 6.</label>
+      <caption>
+        <p id="P85">Mean CAPs evaluated for MBME (left) and MB (middle) data separately and t-test results comparing MBME and MB data (right) for the seed-free analysis for the four CAPs that matched between MBME and MB data. CAPs were determined using the test dataset by assigning each frame to a CAP based on spatial similarity. Thus, mean CAPs closely match the centroid CAPs determined from the training data. As with the seed-based case, the patterns of co-activation are similar for the MBME and MB datasets; however, in general, significantly higher co-activation, both in the positive and negative direction, was seen for the MBME data compared to the MB data for the four CAPs (<italic toggle="yes">p</italic> &lt; 0.001, cluster-size corrected).</p>
+      </caption>
+      <graphic xlink:href="nihms-1879580-f0006" position="float"/>
+    </fig>
+    <fig position="float" id="F7">
+      <label>Fig. 7.</label>
+      <caption>
+        <p id="P86">Violin plots of the goodness of fit and CAP robustness for the seed-free analysis for the four CAPs that matched between the MBME and MB data. Metrics were computed using the test dataset. Spatial correlation (a) was higher for MBME vs. MB datasets for all four CAPs, while MSE (b) was lower for MBME vs. MB datasets for all CAPs except CAP<sub>2</sub>. Within-dataset variance (c) was also lower for MBME data compared to MB data for all CAPs except CAP<sub>2</sub>. Note: on each box, the central mark indicates the median, and the bottom and top edges of the box indicate the 25th and 75th percentiles, respectively. *** <italic toggle="yes">p</italic> &lt; 0.001, ** <italic toggle="yes">p</italic> &lt; 0.01, * <italic toggle="yes">p</italic> &lt; 0.05, Bonferroni-corrected.</p>
+      </caption>
+      <graphic xlink:href="nihms-1879580-f0007" position="float"/>
+    </fig>
+    <fig position="float" id="F8">
+      <label>Fig. 8.</label>
+      <caption>
+        <p id="P87">Violin plot of CAP reproducibility for the seed-free analysis using the test dataset for the four CAPs that matched between MBME and MB datasets. Between-session spatial correlation was computed using the mean of all timepoints assigned to each CAP for each subject and sequence. CAPs 1, 2, and 4 showed significantly higher spatial correlation for the MBME vs. MB data. Note: on each box, the central mark indicates the median, and the bottom and top edges of the box indicate the 25th and 75th percentiles, respectively. *** <italic toggle="yes">p</italic> &lt; 0.001, ** <italic toggle="yes">p</italic> &lt; 0.01, * <italic toggle="yes">p</italic> &lt; 0.05, Bonferroni-corrected.</p>
+      </caption>
+      <graphic xlink:href="nihms-1879580-f0008" position="float"/>
+    </fig>
+  </floats-group>
+</article>

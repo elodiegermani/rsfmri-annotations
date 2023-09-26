@@ -1,0 +1,938 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">Front Neurosci</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Front Neurosci</journal-id>
+      <journal-id journal-id-type="publisher-id">Front. Neurosci.</journal-id>
+      <journal-title-group>
+        <journal-title>Frontiers in Neuroscience</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">1662-4548</issn>
+      <issn pub-type="epub">1662-453X</issn>
+      <publisher>
+        <publisher-name>Frontiers Media S.A.</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">31001071</article-id>
+      <article-id pub-id-type="pmc">6454039</article-id>
+      <article-id pub-id-type="doi">10.3389/fnins.2019.00279</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Neuroscience</subject>
+          <subj-group>
+            <subject>Original Research</subject>
+          </subj-group>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Sampling Rate Effects on Resting State fMRI Metrics</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Huotari</surname>
+            <given-names>Niko</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="corresp" rid="c001">
+            <sup>*</sup>
+          </xref>
+          <uri xlink:type="simple" xlink:href="http://loop.frontiersin.org/people/602964/overview"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Raitamaa</surname>
+            <given-names>Lauri</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <uri xlink:type="simple" xlink:href="http://loop.frontiersin.org/people/673590/overview"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Helakari</surname>
+            <given-names>Heta</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <uri xlink:type="simple" xlink:href="http://loop.frontiersin.org/people/702266/overview"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Kananen</surname>
+            <given-names>Janne</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <uri xlink:type="simple" xlink:href="http://loop.frontiersin.org/people/262501/overview"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Raatikainen</surname>
+            <given-names>Ville</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Rasila</surname>
+            <given-names>Aleksi</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Tuovinen</surname>
+            <given-names>Timo</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <uri xlink:type="simple" xlink:href="http://loop.frontiersin.org/people/210338/overview"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Kantola</surname>
+            <given-names>Jussi</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <uri xlink:type="simple" xlink:href="http://loop.frontiersin.org/people/3929/overview"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Borchardt</surname>
+            <given-names>Viola</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <uri xlink:type="simple" xlink:href="http://loop.frontiersin.org/people/324278/overview"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Kiviniemi</surname>
+            <given-names>Vesa J.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <uri xlink:type="simple" xlink:href="http://loop.frontiersin.org/people/3911/overview"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Korhonen</surname>
+            <given-names>Vesa O.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <uri xlink:type="simple" xlink:href="http://loop.frontiersin.org/people/674159/overview"/>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1"><sup>1</sup><institution>Oulu Functional NeuroImaging Group, Research Unit of Medical Imaging, Physics and Technology, University of Oulu</institution>, <addr-line>Oulu</addr-line>, <country>Finland</country></aff>
+      <aff id="aff2"><sup>2</sup><institution>Department of Diagnostic Radiology, Medical Research Center, Oulu University Hospital</institution>, <addr-line>Oulu</addr-line>, <country>Finland</country></aff>
+      <author-notes>
+        <fn fn-type="edited-by">
+          <p>Edited by: Jean Chen, University of Toronto, Canada</p>
+        </fn>
+        <fn fn-type="edited-by">
+          <p>Reviewed by: Fahmeed Hyder, Yale University, United States; Stefan Posse, University of New Mexico, United States</p>
+        </fn>
+        <corresp id="c001">*Correspondence: Niko Huotari <email>niko.huotari@oulu.fi</email></corresp>
+        <fn fn-type="other" id="fn001">
+          <p>This article was submitted to Brain Imaging Methods, a section of the journal Frontiers in Neuroscience</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="epub">
+        <day>02</day>
+        <month>4</month>
+        <year>2019</year>
+      </pub-date>
+      <pub-date pub-type="collection">
+        <year>2019</year>
+      </pub-date>
+      <volume>13</volume>
+      <elocation-id>279</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>26</day>
+          <month>10</month>
+          <year>2018</year>
+        </date>
+        <date date-type="accepted">
+          <day>08</day>
+          <month>3</month>
+          <year>2019</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Copyright © 2019 Huotari, Raitamaa, Helakari, Kananen, Raatikainen, Rasila, Tuovinen, Kantola, Borchardt, Kiviniemi and Korhonen.</copyright-statement>
+        <copyright-year>2019</copyright-year>
+        <copyright-holder>Huotari, Raitamaa, Helakari, Kananen, Raatikainen, Rasila, Tuovinen, Kantola, Borchardt, Kiviniemi and Korhonen</copyright-holder>
+        <license xlink:href="http://creativecommons.org/licenses/by/4.0/">
+          <license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY). The use, distribution or reproduction in other forums is permitted, provided the original author(s) and the copyright owner(s) are credited and that the original publication in this journal is cited, in accordance with accepted academic practice. No use, distribution or reproduction is permitted which does not comply with these terms.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>Low image sampling rates used in resting state functional magnetic resonance imaging (rs-fMRI) may cause aliasing of the cardiorespiratory pulsations over the very low frequency (VLF) BOLD signal fluctuations which reflects to functional connectivity (FC). In this study, we examine the effect of sampling rate on currently used rs-fMRI FC metrics. Ultra-fast fMRI magnetic resonance encephalography (MREG) data, sampled with TR 0.1 s, was downsampled to different subsampled repetition times (sTR, range 0.3–3 s) for comparisons. Echo planar k-space sampling (TR 2.15 s) and interleaved slice collection schemes were also compared against the 3D single shot trajectory at 2.2 s sTR. The quantified connectivity metrics included stationary spatial, time, and frequency domains, as well as dynamic analyses. Time domain methods included analyses of seed-based functional connectivity, regional homogeneity (ReHo), coefficient of variation, and spatial domain group level probabilistic independent component analysis (ICA). In frequency domain analyses, we examined fractional and amplitude of low frequency fluctuations. Aliasing effects were spatially and spectrally analyzed by comparing VLF (0.01–0.1 Hz), respiratory (0.12–0.35 Hz) and cardiac power (0.9–1.3 Hz) FFT maps at different sTRs. Quasi-periodic pattern (QPP) of VLF events were analyzed for effects on dynamic FC methods. The results in conventional time and spatial domain analyses remained virtually unchanged by the different sampling rates. In frequency domain, the aliasing occurred mainly in higher sTR (1–2 s) where cardiac power aliases over respiratory power. The VLF power maps suffered minimally from increasing sTRs. Interleaved data reconstruction induced lower ReHo compared to 3D sampling (<italic>p</italic> &lt; 0.001). Gradient recalled echo-planar imaging (EPI BOLD) data produced both better and worse metrics. In QPP analyses, the repeatability of the VLF pulse detection becomes linearly reduced with increasing sTR. In conclusion, the conventional resting state metrics (e.g., FC, ICA) were not markedly affected by different TRs (0.1–3 s). However, cardiorespiratory signals showed strongest aliasing in central brain regions in sTR 1–2 s. Pulsatile QPP and other dynamic analyses benefit linearly from short TR scanning.</p>
+      </abstract>
+      <kwd-group>
+        <kwd>resting state</kwd>
+        <kwd>magnetic resonance encephalography</kwd>
+        <kwd>aliasing</kwd>
+        <kwd>pulsations</kwd>
+        <kwd>quasi-periodic patterns</kwd>
+      </kwd-group>
+      <counts>
+        <fig-count count="9"/>
+        <table-count count="0"/>
+        <equation-count count="1"/>
+        <ref-count count="82"/>
+        <page-count count="16"/>
+        <word-count count="11681"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec sec-type="intro" id="s1">
+      <title>Introduction</title>
+      <p>In 1995 Biswal and co-workers discovered functional connectivity (FC) in resting state blood oxygen level dependent (BOLD) signal of motor cortices by their continuous very low frequency fluctuations (VLF &lt; 0.1 Hz) (Biswal et al., <xref rid="B7" ref-type="bibr">1995</xref>). Initially, the VLF phenomena were linked to existing literature on low frequency physiological phenomena like vasomotor waves (Kiviniemi et al., <xref rid="B36" ref-type="bibr">2000</xref>). The current view is that spontaneous neuronal activity avalanches synchronize brain activity in functionally connected areas and become visible in hemodynamic signals after a delay of few seconds (Liu and Duyn, <xref rid="B48" ref-type="bibr">2013</xref>; Palva et al., <xref rid="B55" ref-type="bibr">2013</xref>; Keilholz, <xref rid="B33" ref-type="bibr">2014</xref>; Ma et al., <xref rid="B49" ref-type="bibr">2016</xref>; Liu et al., <xref rid="B47" ref-type="bibr">2018</xref>). The spread of such avalanches can be depicted by novel techniques such as inverse imaging (INI) and magnetic resonance encephalography (MREG), that sample functional magnetic resonance imaging (fMRI) data with short repetition times (TR) (Lin et al., <xref rid="B45" ref-type="bibr">2012</xref>, <xref rid="B44" ref-type="bibr">2018</xref>; Assländer et al., <xref rid="B2" ref-type="bibr">2013</xref>; Rajna et al., <xref rid="B63" ref-type="bibr">2015</xref>).</p>
+      <p>In addition to neuronal activity that is coupled to hemodynamics, the BOLD signal reflects multiple other signal sources, such as motion, physiological pulsations and technical artifacts. The physiological factors like cardiorespiratory changes modulate the BOLD signal and can mask the neuronally driven VLF activity in resting state BOLD signals (Wise et al., <xref rid="B76" ref-type="bibr">2004</xref>; Birn et al., <xref rid="B5" ref-type="bibr">2006</xref>). As the BOLD signal reflects blood oxygen level, also direct effects of the cardiorespiratory pulses themselves can be detected in fMRI data (Shmueli et al., <xref rid="B64" ref-type="bibr">2007</xref>; Chang and Glover, <xref rid="B12" ref-type="bibr">2009</xref>, <xref rid="B13" ref-type="bibr">2010</xref>).</p>
+      <p>Previously, the research of cardiorespiratory brain pulsations has not gained as much interest because they have been deemed as noise. However, there is increasing evidence showing that these physiological signals or the “noise” it produces in TR BOLD data with long TR, can be used to measure disease-specific changes in patient groups (Makedonov et al., <xref rid="B51" ref-type="bibr">2013</xref>; Tuovinen et al., <xref rid="B72" ref-type="bibr">2017</xref>). This is strongly supported by the recent discovery of the glymphatic brain tissue clearance mechanism where the cardiovascular pulsations have been shown to drive the glymphatic brain clearance (Iliff et al., <xref rid="B27" ref-type="bibr">2012</xref>; Nedergaard, <xref rid="B54" ref-type="bibr">2013</xref>; Jessen et al., <xref rid="B31" ref-type="bibr">2015</xref>). The short TR in 3D MREG can critically sample the spread of cardiovascular ~1 Hz and respiratory ~0.3 Hz pulsations and separate them from VLF (&lt; 0.1 Hz) quasi-periodic patterns (QPPs) (Kiviniemi et al., <xref rid="B41" ref-type="bibr">2016</xref>).</p>
+      <p>The extent to which faster physiological pulsations alias over VLF BOLD signal, has been a prevailing uncertainty in BOLD fMRI. Since cardiac frequencies can be faster than 2 Hz, especially in animals and children, the critical sampling rate should be &gt;4 Hz according to the Nyquist theorem, i.e., TR &lt;0.25 s. However, most often the fMRI TRs are &gt;0.4 s and therefore the data cannot critically sample faster cardiac signals (Liu, <xref rid="B46" ref-type="bibr">2016</xref>). Consequently, aliasing between cardiac and the VLFs occur and may alter FC metrics. Additionally, the cardiorespiratory rhythms and their pressure modulations and physiological autonomic nervous system mediated counter-regulations, local vasomotor waves induce heart rate variability, which differ between patients and controls (van der Kooy et al., <xref rid="B73" ref-type="bibr">2006</xref>; Thayer et al., <xref rid="B69" ref-type="bibr">2010</xref>) causing yet another confounding factor in measures of FC that may require faster sampling.</p>
+      <p>Early literature on the sampling rate on FC measures usually utilizes single slice data that suffers from out of plane motion and other registration problems (Purdon and Weisskoff, <xref rid="B61" ref-type="bibr">1998</xref>; Peltier et al., <xref rid="B57" ref-type="bibr">2003</xref>; Kiviniemi et al., <xref rid="B38" ref-type="bibr">2005</xref>). Recent studies on the fMRI sampling rate effects on resting-state FC has shown surprisingly small effects (Golestani et al., <xref rid="B22" ref-type="bibr">2017</xref>; Demetriou et al., <xref rid="B20" ref-type="bibr">2018</xref>). However, that and some other recent studies have usually been limited to &lt; 4 Hz sampling rates for whole brain coverage (Cordes et al., <xref rid="B18" ref-type="bibr">2014</xref>; Liu, <xref rid="B46" ref-type="bibr">2016</xref>; Golestani et al., <xref rid="B22" ref-type="bibr">2017</xref>; Chen et al., <xref rid="B17" ref-type="bibr">2019</xref>) with different type of signal simulations extending below the critical 4 Hz limit.</p>
+      <p>However, more and more critically sampled 3D whole brain fMRI data has started to emerge, such as 0.136 sec TR VEPI (Posse et al., <xref rid="B59" ref-type="bibr">2013</xref>), 100 ms MREG (Assländer et al., <xref rid="B2" ref-type="bibr">2013</xref>; Lee et al., <xref rid="B43" ref-type="bibr">2013</xref>; Kiviniemi et al., <xref rid="B41" ref-type="bibr">2016</xref>; Raitamaa et al., <xref rid="B62" ref-type="bibr">2018</xref>), 50 ms GIN (Boyacioglu and Barth, <xref rid="B8" ref-type="bibr">2013</xref>) and currently leading 25 ms 3D whole brain scan INI (Chang et al., <xref rid="B15" ref-type="bibr">2013b</xref>). This critically sampled data shows robust novel phenomena of the human brain physiology, such as propagating cardiorespiratory pulsations that both interact and modulate each other, depending on their anatomical proximity to pulsation sources (Posse et al., <xref rid="B59" ref-type="bibr">2013</xref>; Kiviniemi et al., <xref rid="B41" ref-type="bibr">2016</xref>; Raitamaa et al., <xref rid="B62" ref-type="bibr">2018</xref>). Based on our observations, these novel signal changes cannot be comprehensively simulated due to their complex spatiotemporal pattern that is dynamically changing.</p>
+      <p>Therefore, in this study we used real critically sampled 0.1 s TR 3D single shot MREG data to explore how different sampling rates affect the results of the most commonly used resting state fMRI analysis tools. The 0.1 s TR MREG signal was downsampled to higher TRs ranging from 0.3 to 3 s. The use of subsampled TR (sTR) removes the confounding factors of imaging different TR values in separate scans and/or individuals, enabling identical physiological status and technological noise structure for comparing different sTRs. The single shot 3D data sampling scheme was further compared with interleaved slice sampling (INT) variant of the MREG data, and, with conventional interleaved gradient recalled echo-planar BOLD imaging (EPI BOLD).</p>
+      <p>The hypothesis was that the faster sTR produces both spatially more accurate brain maps and more accurate time series without aliasing of physiological pulsations. The quantified connectivity metrics included stationary spatial, time, and frequency domains, as well as dynamic analyses. In addition, the effects of aliasing were evaluated.</p>
+    </sec>
+    <sec sec-type="materials and methods" id="s2">
+      <title>Materials and Methods</title>
+      <sec>
+        <title>Participants</title>
+        <p>Ten healthy subjects (8 males, 23.8 ± 2.1 years old) were placed in the MRI scanner and asked to lay still and keep their eyes open and fixated on a cross on the screen while thinking of nothing particular (eyes open, resting state). Ear plugs were used to reduce scanner noise. Cushions were placed beside ears to restrict movement and to further reduce scanner noise. MREG (5 min) and EPI BOLD (5 min) sequences were scanned in said order. Written informed consent was obtained from each subject prior to scanning, in accordance with the Helsinki declaration. The study protocol was approved by the regional Ethical committee of Northern Ostrobothnia Hospital District in Oulu University Hospital.</p>
+      </sec>
+      <sec>
+        <title>Data Acquisition and Preprocessing</title>
+        <p>Subjects were scanned using Siemens 3T SKYRA scanner with 32-channel head coil. Additional cardiorespiratory data were collected using MRI-compatible multimodal neuroimaging system (Korhonen et al., <xref rid="B42" ref-type="bibr">2014</xref>). MREG is a 3D single shot stack of spirals (SOS) sequence that under-samples k-space to reach a sampling rate of 10 Hz allowing critical imaging of physiological pulsations (Assländer et al., <xref rid="B2" ref-type="bibr">2013</xref>). The SOS gathers k-space in 60 ms with spiral in/out repeating in every other turn continuously in positive z-direction to minimize the air-sinus off-resonance artifact (for more details, c.f. Assländer et al., <xref rid="B2" ref-type="bibr">2013</xref>). The point spread function of the SOS-sequence is 3 mm with minimized off-resonance effects compared to other k-space undersampling strategies like concentric shells and spokes (Zahneisen et al., <xref rid="B79" ref-type="bibr">2012</xref>; Assländer et al., <xref rid="B2" ref-type="bibr">2013</xref>). Scanning parameters (TR = 100 ms, TE = 36 ms, flip angle = 5°, 3D matrix = 64<sup>3</sup>, FOV = 192 mm) enabled scanning of the whole brain in 10 Hz with voxel size of 3 × 3 × 3 mm<sup>3</sup>. Conventional EPI BOLD scans were collected from the same subjects (TR = 2,150 ms, TE = 28 ms, flip angle = 15°, voxel size = 3 × 3 × 3 mm, matrix size 64<sup>*</sup>64, 45 slices = 47 ms in plane readout). In both methods, we used relatively low flip angles to minimize specific absorption rate (SAR), spin history effects, physiological pulsations and radio frequency (RF) artifacts in EEG in comparison to default flip angles (Gonzalez-Castillo et al., <xref rid="B23" ref-type="bibr">2011</xref>; Assländer et al., <xref rid="B2" ref-type="bibr">2013</xref>).</p>
+        <p>A reference image for MREG was acquired with a multi slice double gradient echo sequence with TR = 593 ms, TE = 2.46/4.92 ms, flip angle = 50°, dwell time = 4.9 us, FOV = 192 mm. The reference and raw data from the MREG sequence were transferred offline to a computing grid and reconstructed using the MATLAB tool provided with the sequence. The tool allows for a choice between several parameters for regularized reconstruction (Hugger et al., <xref rid="B25" ref-type="bibr">2011</xref>); we selected L2-norm with finite difference operator (called “Total Variation” in the tool) and the regularization parameter was reduced to lambda = 0.15 from default 0.2 in order to obtain higher signal-to-noise ratio (SNR) images. Conjugate gradient optimization was also performed for 35 iterations for more robust convergence of images, c.f. <xref ref-type="fig" rid="F1">Figure 1</xref>. Coil sensitivities were estimated from the reference image with the adaptive method, and dynamic off-resonance correction in k-space was used to minimize respiration and other motion related off-resonance artifacts from the data (Pfeuffer et al., <xref rid="B58" ref-type="bibr">2002</xref>; Zahneisen et al., <xref rid="B78" ref-type="bibr">2014</xref>). Anatomical 3D MPRAGE (TR = 1,900 ms, TE = 2.49 ms, TI = 900 ms, flip angle = 9°, FOV = 240 mm, 0.9 mm cubic voxel) images were used to register both MREG and EPI BOLD data into Montreal Neurological Institute (MNI) space.</p>
+        <fig id="F1" position="float">
+          <label>Figure 1</label>
+          <caption>
+            <p>Raw magnetic resonance encephalography (MREG) data with repetition time (TR = 0.1 s) and the subsampling scheme using an example arterial signal ([−2 30 16] mm in Montreal Neurological Institutional (MNI) space). <bold>(A)</bold> Raw spatial MREG image. <bold>(B)</bold> Raw timeseries of the arterial signal. <bold>(C)</bold> Processed and subsampled arterial signal and corresponding frequency amplitude spectra. Please note the aliased cardiac peak in the sTR 1–3 s in the amplitude spectra at ~0.2 Hz.</p>
+          </caption>
+          <graphic xlink:href="fnins-13-00279-g0001"/>
+        </fig>
+        <p>Both, EPI BOLD and MREG data were preprocessed with a typical FSL pipeline (Jenkinson et al., <xref rid="B29" ref-type="bibr">2012</xref>). The data were high-pass filtered with cut-off frequency of 0.008 Hz (125 s). T1-relaxation effects were minimized using dummy scans (8 s). Motion correction was performed using FSL MCFLIRT. FSL BET was used for brain extraction (fractional intensity = 0.25, threshold gradient = 0.22, neck and bias-field correction). Images were spatially smoothed with 5 mm FWHM Gaussian kernel using <italic>fslmaths</italic>. Three-dimensional 3DMPRAGE anatomical images were used to register both the EPI BOLD and the MREG data into 4 mm MNI space prior to group ICA using FLIRT (Jenkinson and Smith, <xref rid="B30" ref-type="bibr">2001</xref>; Jenkinson et al., <xref rid="B28" ref-type="bibr">2002</xref>). FILM pre-whitening and data smoothness estimation was produced automatically by FSL MELODIC (Woolrich et al., <xref rid="B77" ref-type="bibr">2001</xref>; Beckmann et al., <xref rid="B4" ref-type="bibr">2006</xref>). FILM implements a robust method of correcting for auto-correlation in fMRI time-series which is (theoretically) independent of TR duration (Woolrich et al., <xref rid="B77" ref-type="bibr">2001</xref>; Smith et al., <xref rid="B67" ref-type="bibr">2004</xref>; Demetriou et al., <xref rid="B20" ref-type="bibr">2018</xref>).</p>
+        <p>The MREG (TR = 0.1 s) data was downsampled to different sTR settings from TR 0.1 s to 0.3, 0.5, 1.0, 1.5, 1.8, 2.2, and 3.0 s, respectively by taking every n<sup>th</sup> [n = 3, 5, 10, 15, 18, 22, 30] sample from every voxel timeseries. In addition, an interleaved variant of the MREG data were computed by taking every 1,3,5…21; 2,4,6…22th axial slice (hence the INT sTR = 2.2 s) to emulate the interleaved EPI data gathering for comparing single shot MREG trajectory downsampled at 2.2 s sTR data and conventional gradient recalled EPI (TR = 2.15 s). MATLAB was used for MREG data downsampling and interleaving. Total of 100 datasets were obtained after processing (10 sTR settings for 10 subjects).</p>
+        <p>As one of the focuses was to assess physiological signal aliasing effects, we retained the physiological pulsations in the data as much as possible. Therefore, cerebrospinal fluid (CSF) and white matter were not regressed out from the datasets like they often are in functional connectivity analyses. Global signal was analyzed but not regressed, as the benefit of its regression is still under debate (Murphy and Fox, <xref rid="B53" ref-type="bibr">2017</xref>). Furthermore, the datasets were not de-spiked, since there is no clear consensus yet what kind of de-spiking is advisable to apply to ultra-short TR fMRI data, especially since most aggressive de-spiking (AFNI <italic>3dDespike -NEW25</italic>) removes some of the physiological pulsations from the data (Raitamaa et al., <xref rid="B62" ref-type="bibr">2018</xref>).</p>
+      </sec>
+      <sec>
+        <title>Time and Spatial Domain Analysis (ICA, CV/tSNR, DPARSF)</title>
+        <p>Group PICA was computed for all 10 sTR settings. For every group ICA run, 70 independent components were calculated using FSL MELODIC in default setting (Kiviniemi et al., <xref rid="B39" ref-type="bibr">2009</xref>). FSL function <italic>fslcc</italic> was used to calculate correlation values between different PICA components calculated for every sTR and 42 resting state network templates defined earlier (Kiviniemi et al., <xref rid="B39" ref-type="bibr">2009</xref>; Abou-Elseoud et al., <xref rid="B1" ref-type="bibr">2010</xref>). Default mode network (DMN) posterior cingulate cortex (PCC), cerebral artery, visual, auditory, motor and ventral attention network components were selected as interesting reference components that were visualized to show the effect of changing sTR (Beckmann et al., <xref rid="B3" ref-type="bibr">2005</xref>; Kiviniemi et al., <xref rid="B39" ref-type="bibr">2009</xref>; Smith et al., <xref rid="B66" ref-type="bibr">2009</xref>).</p>
+        <p>CV is a standardized measure used in e.g., engineering and physics, which describes the variability of a dataset compared to its mean. CV was used as a metric for the variation of physiological fluctuations in the signal. Recently, the CV of BOLD signal (CV<sub>BOLD</sub>) has been shown to be altered by the disease processes (Makedonov et al., <xref rid="B52" ref-type="bibr">2016</xref>; Tuovinen et al., <xref rid="B72" ref-type="bibr">2017</xref>; Kananen et al., <xref rid="B32" ref-type="bibr">2018</xref>). CV was calculated for each subject and the calculation was carried out for every voxel timeseries:</p>
+        <disp-formula id="E1">
+          <mml:math id="M1">
+            <mml:mtable columnalign="left">
+              <mml:mtr>
+                <mml:mtd>
+                  <mml:mi>C</mml:mi>
+                  <mml:mi>V</mml:mi>
+                  <mml:mo>=</mml:mo>
+                  <mml:mfrac>
+                    <mml:mrow>
+                      <mml:mi>σ</mml:mi>
+                    </mml:mrow>
+                    <mml:mrow>
+                      <mml:mi>μ</mml:mi>
+                    </mml:mrow>
+                  </mml:mfrac>
+                </mml:mtd>
+              </mml:mtr>
+            </mml:mtable>
+          </mml:math>
+        </disp-formula>
+        <p>where μ is the standard deviation, and σ is the mean of the voxel timeseries. Mean images of the resulting CV maps were computed. For statistical analyses, PCC region of interest (ROI) values were computed for every sTR individually and compared to mean reference (TR = 0.1 s) map. In addition, temporal signal-to-noise ratio (tSNR) values were computed for each sTR using white matter (WM) and gray matter (GM) ROIs. The ROI areas were obtained via FSL atlas tools using a probabilistic threshold value of 50. A mean value from both WM and GM were calculated from each subject.</p>
+      </sec>
+      <sec>
+        <title>DPARSF (FC, ReHo, ALFF/fALFF)</title>
+        <p>For each FSL pre-processed dataset, seed-based functional connectivity (FC), regional homogeneity (ReHo), and amplitude and fractional amplitude of low frequency fluctuations (ALFF/fALFF) were calculated using Data Processing Assistant for Resting-State fMRI (DPARSF) V4.3_171210 MATLAB software package (Chao-Gan and Yu-Feng, <xref rid="B16" ref-type="bibr">2010</xref>). The processing steps in DPARSF are described for each analysis method separately below. Global signal regression or white matter/CSF signal regressions were not used.</p>
+        <p>FC calculates seed-based correlation values between mean timeseries of a selected ROI area and the rest of the brain voxel timeseries. Six seed areas (5 mm spherical ROI) were selected for the analyses: DMN PCC (0 −53 26 mm in MNI), cerebral artery (0 32 16 mm in MNI), visual (2 −86 16 mm in MNI), auditory (50 −2 −8 mm in MNI), motor (2 −18 60 mm in MNI) and ventral attention network (-46 18 32 mm in MNI). Mean FC maps for each sTR and ROI were computed to see whether the changing of sTR influence the connectivity. For statistical analyses, correlation coefficient values were calculated between the mean ROIs (TR = 0.1 s) and other sTR settings individually using FSL function fslcc. Additionally, sTR 2.2 s (INT) and sTR 2.2 s were compared to test the effect of interleaving in MREG data.</p>
+        <p>ReHo measures the degree of regional synchronization of neighboring areas by calculating Kendall's coefficient of concordance (KCC) from the timeseries of every voxel and compares the neighboring voxels (Kendall and Gibbons, <xref rid="B34" ref-type="bibr">1990</xref>; Zang et al., <xref rid="B80" ref-type="bibr">2004</xref>). Cluster size of 27 voxels was used. Spatial smoothing (FWHM: kernel size [4 4 4]) was applied after ReHo calculations. After individual ReHo computations, mean spatial maps were calculated. Furthermore, ReHo KCC values were computed from the mean PCC ROI for all sTR settings.</p>
+      </sec>
+      <sec>
+        <title>Frequency Domain Analysis</title>
+        <p>Fast Fourier transformation (FFT) amplitude spectra from a single subject arterial region ([−2 30 16] mm in MNI) (<xref ref-type="fig" rid="F1">Figure 1</xref>) and global image signal, venous (high respiratory power) and arterial (high cardiac power) amplitude spectra were analyzed to observe the impact of sTR in different physiological frequency bands. Additionally, normal distributions curves (bin size 5) of histogram of demeaned global signal in every sTR were computed.</p>
+        <p>To examine, whether the change in sTR affects the VLF content, ALFF and fALFF were computed. ALFF calculates the sum of spontaneous low frequency activations of a selected frequency band (Zang et al., <xref rid="B81" ref-type="bibr">2007</xref>). FALFF was used to estimate the ratio of amplitude spectrum of VLF in comparison to the whole FFT spectrum (Zou et al., <xref rid="B82" ref-type="bibr">2008</xref>). Frequency band of 0.01–0.1 Hz was selected for the computations.</p>
+        <p>Furthermore, we studied how the mean FFT power of VLF (0.01–0.1 Hz), respiratory (0.12–0.35 Hz) and cardiac (0.9–1.3 Hz) pulsations occur in different sTR settings. The respiratory and cardiac frequency bands were chosen based on group-level minimum and maximum frequencies observed from the physiological recordings and datasets so that the band is as limited narrow as possible while still encompassing the cardiorespiratory frequencies of each subject. The same frequency bands were used for each subject. Each band was separated by a margin to minimize overlap.</p>
+        <p>Spectral maps of the frequency bands were calculated for each dataset using AFNI <italic>3dPeriodogram</italic>. The function outputs a power spectrum for each voxel timeseries. The frequency bins corresponding to VLF, respiratory and cardiac bands were collected from the periodogram datasets based on individual physiological monitoring. Furthermore, the collected bins were summed and finally mean of the sums was computed for each sTR. The cardiac bins were not calculated for sTRs &gt; 0.5 s, as the slower sampling rates cannot extract the cardiac frequencies.</p>
+        <p>The effect of signal aliasing was estimated in two ways: (i) spatially, by correlating the mean cardiac and respiratory FFT power maps to individual respiratory and VLF maps for each sTR setting, respectively, (ii) power spectrally, by calculating the FFT power change in the respiratory and VLF bands in the right medial artery ROI ([46 −2 −8] mm in MNI) with different sTRs. Mean 0.1 s TR MREG datasets were used as baseline maps and compared how much the physiological power starts to overlap per given sTR.</p>
+      </sec>
+      <sec>
+        <title>QPP Analysis</title>
+        <p>All datasets were bandpass filtered to VLF (0.01–0.1 Hz) band using AFNI <italic>3dTproject</italic>. We used a modified pattern finding algorithm to obtain quasi-periodic patterns (QPPs) and evaluated their changes in signal intensities and pulse propagations (Kiviniemi et al., <xref rid="B41" ref-type="bibr">2016</xref>; Raitamaa et al., <xref rid="B62" ref-type="bibr">2018</xref>). Estimation of timing and length of VLF pulse (length: 105–146 time points) for every subject was obtained from the VLF filtered global signal from TR 0.1 s. Length and timing were adjusted to the subsampled datasets. Subject-specific 4D QPP maps were created for every sTR. For the analyses, MATLAB <italic>circshift</italic> was used to ensure that QPP maps were in same phase.</p>
+        <p>QPP strength (i.e., how closely it resembled the template) of VLF wave for each sTR was quantified by correlation between the average QPP pulse and the VLF pulse at the last iteration of the QPP algorithm (Thompson et al., <xref rid="B70" ref-type="bibr">2014</xref>). The mean correlation coefficients of VLF pulses from the last iteration were extracted from each subject and were compared as a function of sTR.</p>
+        <p>To measure the repeatability of the detected QPP maps, the spatial correlation of subject-specific average QPP maps of sTR &gt; 0.1 s were compared to TR 0.1 s average QPP map using MATLAB <italic>corrcoef</italic>. For this, each sTR QPP map was interpolated to match the reference TR 0.1 s map.</p>
+        <p>For group mean images and videos, TR 0.1 s QPP maps were set to length of 150 time points and other sTRs lengths were adjusted accordingly. For every sTR, average group QPP maps were created.</p>
+      </sec>
+      <sec>
+        <title>Statistical Tests</title>
+        <p>Paired sample <italic>t</italic>-tests (MATLAB <italic>ttest</italic>) were used for all statistical testing to compare the reference MREG data (TR = 0.1 s) with sTR results (<xref ref-type="fig" rid="F3">Figures 3</xref>, <xref ref-type="fig" rid="F6">6</xref>, <xref ref-type="fig" rid="F7">7</xref>, <xref ref-type="fig" rid="F9">9A</xref>). Furthermore, sTR 2.2 s (INT) and sTR 2.2 s were compared to test the effect of interleaving in MREG data. In QPP repeatability analysis, linear fitting was used as a measure of statistical significance. Statistical significances are indicated as <sup>*</sup><italic>p</italic> &lt; 0.05, <sup>**</sup><italic>p</italic> &lt; 0.01, and <sup>***</sup><italic>p</italic> &lt; 0.001.</p>
+      </sec>
+    </sec>
+    <sec sec-type="results" id="s3">
+      <title>Results</title>
+      <p>As an example of the image quality of MREG 0.1 s TR data, <xref ref-type="fig" rid="F1">Figure 1A</xref> illustrates a raw spatial image of one subject in three planes. An example of cardiovascular pulse timeseries (ROI MNI: [-2 30 16] in mm) from the anterior cerebral artery are presented in <xref ref-type="fig" rid="F1">Figure 1B</xref>. Respective subsampling scheme is presented in <xref ref-type="fig" rid="F1">Figure 1C</xref>, in which six examples of the sTR time series are shown to highlight the effect of changing sTR.</p>
+      <sec>
+        <title>Commonly Used Resting State Metrics (FC, ReHo, CV/tSNR, ICA)</title>
+        <p>Seed voxel correlation of FC analysis, ReHo and CV produced nearly identical results as a function of sampling rate. Visually, only small differences could be detected in the spatial functional connectivity measures in group level maps as a function of sampling rate in <xref ref-type="fig" rid="F2">Figure 2</xref>.</p>
+        <fig id="F2" position="float">
+          <label>Figure 2</label>
+          <caption>
+            <p>Different group-level resting state metrics with changing subsampled repetition times (sTR) including functional connectivity (FC), regional homogeneity (ReHo), coefficient of variation (CV) and independent component analysis (ICA). FC and ICA analyses comprise default mode network (DMN), artery (Art), visual (Vis), auditory (Aud), motor (Mot) and ventral attention network (VAN). For comparison, echo-planar imaging (EPI) maps below tends to show spatially more widespread FC maps and relatively similar ICA maps depending in the RSN.</p>
+          </caption>
+          <graphic xlink:href="fnins-13-00279-g0002"/>
+        </fig>
+        <p>Functional connectivity maps (<xref ref-type="fig" rid="F2">Figure 2</xref>) showed nearly identical spatial results, which were also highly comparable to conventional 2.15 s TR EPI BOLD data or with interleaved MREG 2.2 s sTR data. The quantified connectivity measures presented no significant differences excluding INT (sTR = 2.2 s) which had significantly (<italic>p</italic> &lt; 0.01) lower correlation coefficients compared to TR 0.1 s and compared to sTR 2.2 s (<xref ref-type="fig" rid="F3">Figure 3A</xref> and <xref ref-type="supplementary-material" rid="SM1">Supplementary Figure 1</xref>). In addition, EPI scans had marginally elevated correlation coefficients compared to the MREG (TR = 0.1 s).</p>
+        <fig id="F3" position="float">
+          <label>Figure 3</label>
+          <caption>
+            <p>Resting state metrics in different subsampled repetition times (sTR) compared to reference maps (TR = 0.1 s). <bold>(A)</bold> Individual functional connectivity (FC) values from default mode network (DMN), posterior cingulate cortex (PCC ROI) correlated to reference FC map. <bold>(B)</bold> Regional homogeneity (ReHo) Kendall's coefficient of concordance (KCC) values from PCC ROI compared to mean reference map (TR = 0.1 s). <bold>(C)</bold> Coefficient of variation (CV) values from PCC ROI compared to mean reference map. <bold>(D)</bold> Correlation values between group probabilistic independent component analysis (PICA) components in different sTR settings and previously acquired 42 resting state network ICA templates. Significant differences between TR 0.1 and other sTR settings are marked with *<italic>p</italic> &lt; 0.05, **<italic>p</italic> &lt; 0.01, and ***<italic>p</italic> &lt; 0.001. Outliers are marked with ♦.</p>
+          </caption>
+          <graphic xlink:href="fnins-13-00279-g0003"/>
+        </fig>
+        <p>Similarly, ReHo were visually identical at different sampling rates (<xref ref-type="fig" rid="F2">Figure 2</xref>). However, with interleaved sampling of 1,3,5…,2,4,6 of axial MREG slices were collected with a final 2.2 s sampling rate, the ReHo values decreased significantly (<italic>p</italic> &lt; 0.001), when compared to both single shot k-space trajectory with TR 0.1 s and sTR 2.2 s (<xref ref-type="fig" rid="F3">Figure 3B</xref>). Furthermore, conventional EPI showed significantly (<italic>p</italic> &lt; 0.001) higher and sTR 2.2 lower (<italic>p</italic> &lt; 0.05) values.</p>
+        <p>CV of the image data were nearly identical with respect to the altering sTR (<xref ref-type="fig" rid="F2">Figure 2</xref>). The EPI BOLD data had significantly (<italic>p</italic> &lt; 0.05) lower CVs compared to MREG (TR = 0.1 s), while downsampling or interleaved data gathering had no effect on the CV values. The same effect can be seen from the mean tSNR values from WM and GM ROIs where downsampling did not show any significant change but EPI BOLD values were significantly (<italic>p</italic> &lt; 0.001) higher compared to MREG (<xref ref-type="supplementary-material" rid="SM2">Supplementary Figure 2</xref>).</p>
+        <p>ICA detected RSNs in all sTR settings, but there was some variability between the results (ICA in <xref ref-type="fig" rid="F2">Figure 2</xref>). The conventional EPI BOLD and interleaved data showed similar results as well. In spatial consistency analysis of the 42 RSN template correlations, all sTR settings produced very similar results, except for EPI, which had significantly higher correlation values (<italic>p</italic> &lt; 0.01).</p>
+      </sec>
+      <sec>
+        <title>Mean Spectral Metrics</title>
+        <p>The group mean FFT amplitude spectra of global image signal, respiratory and cardiac signals are presented in <xref ref-type="fig" rid="F4">Figure 4</xref>. In global signal spectra, the amplitude peaks were relatively higher in VLF band with increasing sTR. This might occur due to cardiorespiratory aliasing. The respiratory amplitude peaks from sagittal sinus and cardiac amplitude peaks from right middle cerebral artery presents multiple peaks in the spectra due to normal variations in respiratory and cardiac rates. Please notice, these peaks were lost as the sTR was increased &gt;0.5 s. The same effect was observed in the arterial signal on a single subject level (<xref ref-type="fig" rid="F1">Figure 1</xref>). EPI BOLD presented the lowest VLF amplitudes in all images.</p>
+        <fig id="F4" position="float">
+          <label>Figure 4</label>
+          <caption>
+            <p>Group-level fast Fourier transform (FFT) amplitude and histogram distribution analyses in different subsampled repetition times (sTRs). <bold>(A)</bold> FFT amplitude spectra of global image signal where the 0.1 TR data is cut to 2 Hz from original 5 Hz. <bold>(B)</bold> FFT amplitude spectra of respiratory region of interest (sinus sagittal, ROI, [2 −98 4] mm in Montreal Neurological Institute (MNI) space). <bold>(C)</bold> FFT amplitude spectra of cardiac ROI (right medial artery) [46 −2 −8] mm in MNI. Due to differences in individual cardiorespiratory rates, several frequency peaks can be detected at the group level. <bold>(D)</bold> Mean normal distribution curves from demeaned global signal histograms show lowering and widening of the distributions as a function of sTR.</p>
+          </caption>
+          <graphic xlink:href="fnins-13-00279-g0004"/>
+        </fig>
+        <p>The global signal distribution curves illustrated the differences in statistical power between sTR values and revealed an exponential decay in histogram counts and widening of the distributions per each sTR. Interestingly the 2.15 EPI BOLD distributions are highly similar in shape with MREG 0.1 s data but &gt;5 times smaller.</p>
+      </sec>
+      <sec>
+        <title>BOLD Signal Frequency Amplitude and Power Mapping</title>
+        <p>ALFF results indicated that the increasing sTR raised the VLF power of the images (<xref ref-type="fig" rid="F5">Figure 5</xref>). Conventional EPI data showed lower ALFF values than MREG data, but the interleaving had no effect. FALFF results were most clearly affected by the increasing sTR (<xref ref-type="fig" rid="F5">Figure 5</xref>). FALFF showed an increase over the sTR values which is due to the proportional increase of the lowest frequencies due to the reduction of the spectral coverage in higher sTR values.</p>
+        <fig id="F5" position="float">
+          <label>Figure 5</label>
+          <caption>
+            <p>Mean fast Fourier transform (FFT) amplitude (ALFF/fALFF) and power (VLF, Resp, Card) encoding maps for each subsampled repetition times (sTRs). The cardiac power can be detected until 0.3 s and respiratory until 2.2 s sTR. However, the respiratory and cardiac power images started to overlap in sTR &gt; 0.5 s, increasing to sTR 1–2 s. Very low frequency (VLF) power showed a subtle but steady increase with increasing sTR.</p>
+          </caption>
+          <graphic xlink:href="fnins-13-00279-g0005"/>
+        </fig>
+        <p>Group mean FFT amplitude and power encoding maps (<xref ref-type="fig" rid="F5">Figure 5</xref>) revealed how the cardiac, respiratory and VLF frequency intensities changed in different sTR settings. The cardiac power started to fade away in sTR &gt;0.3 s and respiratory power above 2.2 s sTR. Furthermore, the cardiac power distributions started to overlap on top of respiratory frequency maps as the sTR is increased &gt;0.5 s indicating aliasing, c.f. <xref ref-type="fig" rid="F5">Figures 5</xref>–<xref ref-type="fig" rid="F7">7</xref>. The conventional 2.15 s TR EPI measurement had notably lower power (please notice different scaling for EPI BOLD in <xref ref-type="fig" rid="F5">Figure 5</xref>). Interleaved 2.2 s sTR power was also lower compared to 2.2 s sTR single shot trajectory in VLF power images, which agrees with ReHo and mean global signal amplitude spectral changes.</p>
+        <p>The aliasing was quantified both spatially and in frequency power analyses. This was evaluated by measuring how much different frequency maps start to resemble each other spatially as a function of sTR (<xref ref-type="fig" rid="F6">Figure 6</xref>). In critically sampled 0.1 s TR MREG data the cardiac, respiratory and VLF frequencies had a low ~0.4 mean spatial correlation. For example, the major arteries seen in cardiac frequency maps were lacking from the respiratory maps, while the respiratory band dominated in posterior CSF spaces (<xref ref-type="fig" rid="F5">Figure 5</xref>). However, the spatial correlation between cardiac and respiratory power maps became increasingly more similar (<italic>p</italic> &lt; 0.001) and started to increase as a function of the sTR until 1.0 s, after which the similarity plateaus at 0.65 level until sTR 3.0 s (<xref ref-type="fig" rid="F6">Figure 6A</xref>). Furthermore, the spatial correlation between cardiac (<italic>p</italic> &lt; 0.001) and respiratory (<italic>p</italic> &lt; 0.01) vs. VLF increased steadily until sTR 1.8 s.</p>
+        <fig id="F6" position="float">
+          <label>Figure 6</label>
+          <caption>
+            <p>Spatial aliasing measure using spatial correlation values. <bold>(A)</bold> The mean MREG cardiac fast Fourier transform (FFT) power image of repetition time (TR = 0.1 s) correlated to individual respiratory power images as a function of sampled TR (sTR) and echo-planar imaging (EPI) scan. <bold>(B)</bold> Mean cardiac FFT image correlated to individual very low frequency (VLF) images. <bold>(C)</bold> Mean respiratory image correlated to individual VLF images. Significant differences between TR 0.1 s and other sTR settings are marked with **<italic>p</italic> &lt; 0.01 and ***<italic>p</italic> &lt; 0.001. Outliers are marked with ♦.</p>
+          </caption>
+          <graphic xlink:href="fnins-13-00279-g0006"/>
+        </fig>
+        <p>In frequency power analysis of a right medial artery ROI ([46 −2 −8] mm in MNI) near insula, the image signal power from the arterial ROI started to increase significantly (<italic>p</italic> &lt; 0.001) both in the respiratory and VLF power band in sTR &gt;0.3 s as a sign of aliasing (<xref ref-type="fig" rid="F7">Figure 7A</xref>). The results indicate that once the cardiac pulsation is no longer critically sampled, the power starts to become aliased as a “respiratory” and “VLF” power as a function of sTR increase. When correlating the mean respiratory maps to individual VLF maps, the aliasing effect could also be seen in VLF range as the correlation values increased significantly (<italic>p</italic> &lt; 0.01) after 0.1 s TR and almost linearly as the sTR increased. However, the influence of the sTR had a clearly less steep effect by the increasing sTR in the VLF. The conventional 2.15 s BOLD images showed low spatial correlation since the cardiac power is very low to begin with and so the spatial correlation is also low.</p>
+        <fig id="F7" position="float">
+          <label>Figure 7</label>
+          <caption>
+            <p>Cardiac aliasing measure using fast Fourier transform (FFT) power intensity values of arterial region of interest (ROI, [46 −2 −8] mm in Montreal Neurological Institute (MNI) space). <bold>(A)</bold> Intensity values of individual respiratory power images. <bold>(B)</bold> Intensity values of individual very low frequency (VLF) power images. Significant differences between repetition time (TR = 0.1 s) and other sampled TR (sTR) settings are marked with *<italic>p</italic> &lt; 0.05, **<italic>p</italic> &lt; 0.01, and ***<italic>p</italic> &lt; 0.001. Outliers are marked with ♦.</p>
+          </caption>
+          <graphic xlink:href="fnins-13-00279-g0007"/>
+        </fig>
+      </sec>
+      <sec>
+        <title>QPP Analysis of Spreading BOLD Waves</title>
+        <p>The power of cardiac pulsation could not be critically detected in sampling rates &gt;0.3 s (<xref ref-type="fig" rid="F3">Figures 3</xref>–<xref ref-type="fig" rid="F5">5</xref>) and therefore we did not quantify differences in the detection of cardiac pulse propagation like we did earlier (Raitamaa et al., <xref rid="B62" ref-type="bibr">2018</xref>). Also, the respiratory power suffered from marked aliasing in sTRs above 0.5 s (<xref ref-type="fig" rid="F5">Figures 5</xref>–<xref ref-type="fig" rid="F7">7</xref>). Therefore, we quantified the performance of different sTR in detecting VLF (0.01–0.1 Hz) propagating QPP BOLD waves.</p>
+        <p><xref ref-type="fig" rid="F8">Figure 8</xref> illustrates 15 s QPP waves captured with different sTR and how the spatiotemporal illustration of each wave changed as a function of sTR. The lowest sTR 0.1–0.5 s were down-sampled from 150, 50 and 30 to 15 images for illustration of the QPP wave spreading in axial plane. Videos of QPPs in TR of 0.1 s and 0.5, 1.0, 2.2 and 3.0 s are shown in <xref ref-type="supplementary-material" rid="SM1">Supplementary Material</xref>. As expected, much of the dynamics were lost as a function of increasing sTR.</p>
+        <fig id="F8" position="float">
+          <label>Figure 8</label>
+          <caption>
+            <p>Group mean very low frequency (VLF) waves as a function of subsampled repetition time (sTR). Please notice that the first three rows are downsampled from 150, 50, and 30 to 15 images, respectively to fit the picture.</p>
+          </caption>
+          <graphic xlink:href="fnins-13-00279-g0008"/>
+        </fig>
+        <p>We also quantified the QPP strength within each subject of the QPP VLF waves as a function of sTR (<xref ref-type="fig" rid="F9">Figure 9A</xref>). The analysis revealed that 0.1 s TR data had highest spatial correlation of the detected VLF waves on average despite the largest number of brain volumes (i.e., 150 vs. 5 volumes between highest and lowest TR). There is a linear trend where the intra-individual detection accuracy of the detected VLF QPP waves gave lower (0.01 &lt; <italic>p</italic> &lt; 0.05) values as a function in sTR &gt; 0.3 s excluding EPI.</p>
+        <fig id="F9" position="float">
+          <label>Figure 9</label>
+          <caption>
+            <p>Very low frequency (VLF) quasi-periodic pattern (QPP) stability measurements. <bold>(A)</bold> Intra-individual QPP strength as a function of subsampled repetition time (sTR). Significant differences between repetition time TR 0.1 s and other sTR settings are marked with *<italic>p</italic> &lt; 0.05 and **<italic>p</italic> &lt; 0.01. <bold>(B)</bold> Inter-individual correlation coefficients of QPP wave repeatability as a function of sTR. Correlation coefficients decreased statistically significantly (<italic>p</italic> &lt; 0.001) by decreasing slope of sTR. Outliers are marked with ♦.</p>
+          </caption>
+          <graphic xlink:href="fnins-13-00279-g0009"/>
+        </fig>
+        <p>When comparing how similar QPP waves were detected between subjects, the 0.1 s MREG data was used as a reference due to highest VLF wave detection accuracy. Each sTR QPP map was interpolated to correspond the 0.1 s MREG time points. On average, the detected QPP waves became linearly less correlated as a function of sTR (<xref ref-type="fig" rid="F9">Figure 9B</xref>). Conventional EPI had less robustly detected QPP waves. Interleaved timing of data acquisition showed no effect on the wave detection accuracy nor on repeatability of the detected QPPs.</p>
+      </sec>
+    </sec>
+    <sec sec-type="discussion" id="s4">
+      <title>Discussion</title>
+      <p>The study analyzed the effect of 3D image sampling rate on most popular fMRI metrics used. The time and spatial resting state fMRI metrics (FC, CV/tSNR, spatial ICA) were not markedly affected by sTR. In frequency domain analysis, the aliasing of the cardiorespiratory power seemed to increase signal power as a function of the sTR (sTR &gt; 0.3 s). Importantly, aliasing effects occur mostly between cardiac and respiratory power. The VLF power increased also significantly as a function of sTR due to aliasing but the power of aliasing was smaller. In dynamic QPP analyses, shorter sTRs seemed to produce more stable results.</p>
+      <p>Also, to our surprise, the effect of sampling rate on non-dynamic rs-fMRI measures was not as strong as hypothesized. Most of the measures stayed stable within the range of sTR. Golestani and co-workers found surprisingly minimal effect on sampling rate on ReHo, ALFF and FC results that are in full agreement with our results (Golestani et al., <xref rid="B22" ref-type="bibr">2017</xref>). Several researchers have found that higher sampling rate appears to be beneficial for resting state fMRI measures, especially for ICA/dual regression and our results also agree on this (Smith et al., <xref rid="B65" ref-type="bibr">2013</xref>; Preibisch et al., <xref rid="B60" ref-type="bibr">2015</xref>; Golestani et al., <xref rid="B22" ref-type="bibr">2017</xref>; Demetriou et al., <xref rid="B20" ref-type="bibr">2018</xref>.</p>
+      <p>Compared to MREG in general, the interleaved EPI BOLD had statistically significantly (<italic>p</italic> &lt; 0.001) increased ReHo and tSNR. However, the f/ALFF, global signal amplitude spectrum baseline and signal variance as measured with CV are reduced in EPI compared to MREG. Interleaved MREG variant (INT sTR 2.2 s) also induced significantly (<italic>p</italic> &lt; 0.001) lower ReHo compared to both TR 0.1 and to single shot variant (sTR 2.2 s). The conventional interleaving introduces TR/2 delay and interleaved multislab scanning introduces TR/2xN delay between subsequent scans, where N is the number of slabs. This introduces delays between neighboring voxels in longitudinal z-direction and alters regional similarity and frequency measures due to discontinuous sampling of the propagating cardiorespiratory pulses that traverse the brain repeatedly in addition to VLF pulses (Kiviniemi et al., <xref rid="B41" ref-type="bibr">2016</xref>).</p>
+      <sec>
+        <title>Aliasing in Cortical Connectivity Analysis</title>
+        <p>The current data illustrates that while the aliasing of cardiorespiratory pulsations is a significant factor in frequency domain, the currently used time and spatial domain analyses tools perform well in detecting robust resting state connectivity. In summary, the stationary spatial and temporal connectivity measures, whether local or long distance, were not significantly affected by changes in sTR. However, interleaved slice acquisition seems to affect some of these measures.</p>
+        <p>This study confirms the information from reduced data length analytics (Bright and Murphy, <xref rid="B9" ref-type="bibr">2015</xref>) and is consistent with coactivation pattern (CAP) analysis (Liu and Duyn, <xref rid="B48" ref-type="bibr">2013</xref>), where the information on spatial functional connectivity of regions can be depicted even in one single brain volume. However, the CAP analysis for instance, requires individual voxel level thresholding with the time domain signal mean/std.</p>
+        <p>ICA performs best with large data distributions and therefore conventionally spatial ICA is preferred over temporal ICA, since it offers larger distributions (Calhoun et al., <xref rid="B11" ref-type="bibr">2001</xref>; Kiviniemi et al., <xref rid="B37" ref-type="bibr">2003</xref>; Beckmann et al., <xref rid="B3" ref-type="bibr">2005</xref>). Spatial ICA also uses BOLD signal's temporal variance which induces the non-Gaussian changes in the signal distributions, by which the statistical independence is inferred (Calhoun et al., <xref rid="B11" ref-type="bibr">2001</xref>; Kiviniemi et al., <xref rid="B37" ref-type="bibr">2003</xref>; Beckmann et al., <xref rid="B3" ref-type="bibr">2005</xref>). The clear advantage of the short TR can be seen in <xref ref-type="fig" rid="F4">Figure 4</xref>, where 0.1 s TR overall signal distribution histogram has almost 5 times higher and substantially larger distribution compared to other distributions. This is the basis of the statistical power advantage already depicted by several groups for using short TR measurements (Smith et al., <xref rid="B65" ref-type="bibr">2013</xref>; Preibisch et al., <xref rid="B60" ref-type="bibr">2015</xref>; Golestani et al., <xref rid="B22" ref-type="bibr">2017</xref>; Demetriou et al., <xref rid="B20" ref-type="bibr">2018</xref>). Furthermore, in the case of combined spatiotemporal ICA or temporal ICA alone approaches, the 0.1 s data most likely outperforms the slower sTRs simply due to statistically more valid signal histograms (<xref ref-type="fig" rid="F4">Figure 4D</xref>).</p>
+        <p>The physiological pulses themselves modulate the BOLD signal (Birn et al., <xref rid="B5" ref-type="bibr">2006</xref>, <xref rid="B6" ref-type="bibr">2008</xref>; Chang and Glover, <xref rid="B13" ref-type="bibr">2010</xref>; Chang et al., <xref rid="B14" ref-type="bibr">2013a</xref>). Recently, ultra-fast MREG data was able to illustrate how the cardiac and respiratory pulsations propagate in repeated waves over the whole brain, giving rise to physiologically driven and modulated variance in the data (Kiviniemi et al., <xref rid="B41" ref-type="bibr">2016</xref>; Raitamaa et al., <xref rid="B62" ref-type="bibr">2018</xref>). However, most of the cardiorespiratory power is centered within central areas near CSF ventricles (respiratory) and major arteries and veins (cardiac). The VLF power dominance in the brain cortex seems to enable robust connectivity measurement despite imminent cardiorespiratory aliasing especially in sTRs 1–2 s.</p>
+        <p>The physiological signal sources need to be separated from the functional signals before any realistic interpretations of the neurovascular task or connectivity data can be drawn. Through the years, source separation tools such as the ICA have been developed to offer robust detection of functionally connected regions or constellations of regions, such as resting state networks (Calhoun et al., <xref rid="B11" ref-type="bibr">2001</xref>; Kiviniemi et al., <xref rid="B37" ref-type="bibr">2003</xref>; Beckmann et al., <xref rid="B3" ref-type="bibr">2005</xref>; Griffanti et al., <xref rid="B24" ref-type="bibr">2015</xref>; Vidaurre et al., <xref rid="B74" ref-type="bibr">2017</xref>). However, in this respect also other measures, such as FC and CV are highly reproducible over a range of sTRs. Therefore, even though there is significant aliasing, especially in areas near medial cerebral artery and sagittal sinus neighborhood, the dominance in VLF induces robust functional connectivity in the cortex.</p>
+        <p>BOLD signal stability is often measured as tSNR or CV which is the inverse of tSNR. In this study, we calculated both. In terms of signal observations of hemodynamically convolved neuronal activation response, in our sampling scheme the CV or tSNR do not change as we only downsample the MREG data instead of scanning using different TRs. However, compared to EPI BOLD the CV values were significantly higher (<xref ref-type="fig" rid="F2">Figures 2</xref>, <xref ref-type="fig" rid="F3">3</xref>) and tSNR values significantly lower (<xref ref-type="supplementary-material" rid="SM2">Supplementary Figure 2</xref>) which could be partially caused by higher flip angle and slightly shorter TE in EPI BOLD. In spite of all, both sequences have relatively long TEs, which makes them T2<sup>*</sup> -weighted.</p>
+        <p>Recent studies indicate how the CV reflects also physiological pulsation changes, rather than neuronally driven alterations. Furthermore, the CV has recently been shown to have high sensitivity to pathological condition even at individual level (Makedonov et al., <xref rid="B52" ref-type="bibr">2016</xref>; Tuovinen et al., <xref rid="B72" ref-type="bibr">2017</xref>, <xref rid="B71" ref-type="bibr">2018</xref>). Our preliminary experience on disease related BOLD signal noise metrics suggests that at 1.8 s TR the BOLD signal CV can also be highly sensitive to pathological conditions (Tuovinen et al., <xref rid="B71" ref-type="bibr">2018</xref>). Data from 0.1 s MREG CV measures seem to be at least as sensitive in intractable epileptic patient data (Kananen et al., <xref rid="B32" ref-type="bibr">2018</xref>). This is in line with the CV results that do not alter as a function of TR but can be sensitive to differences in sequence parameters and k-space trajectory and other technical issues, c.f. <xref ref-type="fig" rid="F2">Figure 2</xref>.</p>
+      </sec>
+      <sec>
+        <title>Aliasing of Physiological Pulsations in Central Areas</title>
+        <p>The FFT frequency power maps illustrate that the cardiac 1 Hz power is mainly detectable in sTR &lt; 0.3 s. In the most critically sampled data, the 1 Hz cardiovascular signal pulses most prominently in the paravascular space in areas near major cerebral arteries and somewhat in the major venous sinuses. From the periarterial areas the cardiovascular pulses are convected into the CSF ventricles, centerline parasagittal CSF spaces, c.f. <xref ref-type="fig" rid="F5">Figure 5</xref>. The respiratory power is nearly absent from the periarterial spaces and dominates more on the posterior and cortical perivenous structures and is relatively stronger in the posterior central CSF spaces. The VLF power tends to align mostly along the cortical gray matter without strong overlap with the midline parasagittal area.</p>
+        <p>Above 0.3 s sTR, the cardiac power became mostly aliased over respiratory power in central brain bordering CSF spaces. Thus, all critical analysis of respiratory power changes needs to be performed with data &lt; 0.5 s TR. The most prominent aliasing occurred in sTRs between 1 and 2 s, where the respiration is still sampled critically but the cardiac is aliased over it; they become strongly mixed into sTR 1–2 s signal. This type of cardiorespiratory aliasing however seems to affect the measuring of FC on cortical structures minimally (<xref ref-type="fig" rid="F2">Figures 2</xref>–<xref ref-type="fig" rid="F3">3</xref>), since the connectivity occurs dominantly in VLF frequencies (&lt; 0.1 Hz) that dominate in the cortex to begin with. Also, the effects of aliasing as a function of sTR on the VLF FFT power are less severe around sTR 1–2 s but increase further in sTRs &gt;2.0 s (<xref ref-type="fig" rid="F2">Figures 2</xref>, <xref ref-type="fig" rid="F5">5</xref>, <xref ref-type="fig" rid="F6">6</xref>).</p>
+        <p>The power of FFT amplitude spectra increased in VLF range as a function of sTR, which is a sign of cardiorespiratory aliasing (Kiviniemi et al., <xref rid="B38" ref-type="bibr">2005</xref>; De Luca et al., <xref rid="B19" ref-type="bibr">2006</xref>). The effect was highest in sTR 3.0 s. This reduces sensitivity to changes in physiological pulsations and furthermore does no longer have the capability to differentiate neither cardiorespiratory nor even different VLF fluctuation peaks as different sources. Furthermore, physiological pulsations seen in 0.1 s TR could not be detected on a group level global or individual voxel signal above 0.3 s sampling rate. Also, VLF power peak features became undetectable with vanishing power of the increased sTR.</p>
+        <p>Importantly, the f <sup>−α</sup> FFT amplitude spectrum curve became affected by the highest sTRs (<xref ref-type="fig" rid="F4">Figure 4</xref>). This has an inevitable effect on measures of signal stationary metrics like Hurst exponent (H) (Bullmore et al., <xref rid="B10" ref-type="bibr">2001</xref>; Wink et al., <xref rid="B75" ref-type="bibr">2008</xref>), fractal dimension (Df) (Kiviniemi et al., <xref rid="B38" ref-type="bibr">2005</xref>; Kiviniemi, <xref rid="B35" ref-type="bibr">2008</xref>) since the power spectral intensity f(I) = f <sup>−α</sup>, where Df = (3-α)/2 and <italic>Df</italic> = 2-<italic>H</italic>. The f/ALFF as well as f <sup>−α</sup> metrics may then also be sensitive to physiological pulsations. In other words, results based on comparing patients with controls may suffer from cardiorespiratory differences between groups. To avoid these factors, physiological signals should be measured and FFT power spectral analyses should be performed on as short TR data as possible. This is our recommendation for future studies.</p>
+      </sec>
+      <sec>
+        <title>Dynamic Connectivity and Effect of TR</title>
+        <p>The recent discoveries of dynamic functional connectivity analytics of fMRI data show that there are marked changes over time (Hutchinson et al., <xref rid="B26" ref-type="bibr">2012</xref>). Wavelet analyses and time windowed approaches have suggested that the connectivity of regions varies markedly over time (Chang and Glover, <xref rid="B13" ref-type="bibr">2010</xref>; Kiviniemi et al., <xref rid="B40" ref-type="bibr">2011</xref>; Smith et al., <xref rid="B68" ref-type="bibr">2012</xref>; Liu and Duyn, <xref rid="B48" ref-type="bibr">2013</xref>). Targeted averaging algorithms can detect quasi-periodic very low frequency BOLD signal pulses that travel over the RSN and connectivity gradient patterns (Majeed et al., <xref rid="B50" ref-type="bibr">2011</xref>; Pan et al., <xref rid="B56" ref-type="bibr">2013</xref>; Keilholz, <xref rid="B33" ref-type="bibr">2014</xref>; Thompson et al., <xref rid="B70" ref-type="bibr">2014</xref>).</p>
+        <p>In this study we evaluated the VLF QPP maps to quantify effects of sTR on dynamic BOLD connectivity metrics. First, the FFT analysis indicated that the faster cardiorespiratory pulsations could not be even evaluated as a function of sTR: the cardiac power is not visible above 0.5 s sTR and furthermore the cardiac power aliases over respiratory power. Secondly, the VLF pulse analysis indicated that compared to the most critically sampled 0.1 s TR data, both the QPP strength (i.e., spatial similarity of waves) and inter-individual repeatability of the QPPs become linearly reduced with increasing sTR. In other words, the QPP analysis significantly lost its accuracy as a function of sTR. Taken together, the analysis of dynamic and physiological pulsations benefits when performed on data with TRs &lt; 0.3 s.</p>
+        <p>As with most of the dynamic connectivity metrics, the problem has been the reducing statistical power of the analysis when shorter and shorter connectivity epochs have been attempted to be analyzed. Reducing dynamic analysis window length reduces also the number of samples and degrees of freedom for statistical inferences. Our results support the use of short TR in the evaluation of dynamic connectivity metrics as (a) for mathematical procedures, short TR gives more time points per analyzed time window, (b) it enables critical sampling and differentiation of physiological pulsations, (c) it avoids aliasing of the physiological signal over the targeted phenomena, (d) enables mapping of modulations of the pulsations, and e) it offers markedly more accurate signal distributions for statistical inferences, c.f. <xref ref-type="fig" rid="F4">Figure 4D</xref>.</p>
+      </sec>
+    </sec>
+    <sec id="s5">
+      <title>Limitations and Strengths of the Study</title>
+      <p>The results may not be directly comparable due to multiple technical differences between interleaved EPI vs. MREG. However, despite the technical differences, the results in stationary connectivity are highly similar in a wide range of frequencies and RSNs. This study aimed to minimize confounding factors like intra-subject status changes (cardiorespiratory status, vigilance, mood, etc.) as well as technical factors (SNR, sequence parameters, sampling trajectory, scanner model, field strength) issues by using data from the same subjects scanned once with fast TR that was downsampled to higher sTRs. This enables the direct comparison of the effects of sampling rate only. EPI data was scanned for comparing the results to a more conventional technique.</p>
+      <p>However, the interleaved vs. single shot k-space sampling technique is not the only difference when comparing MREG and EPI data. As mentioned accurately by Golestani and co-workers, comparisons of long vs. short TR measurements need to be taken with a grain of physics, i.e., the EPI vs. MREG also have several other technical differences. In order to be fast, TR is very short in MREG which sensitizes the signal more to T1 inflow and steady state precession effects compared to conventional EPI BOLD (Liu, <xref rid="B46" ref-type="bibr">2016</xref>). On the other hand, TE is relatively long in MREG which makes it T2<sup>*</sup> -weighted as is EPI BOLD. The low flip angles 5° vs. 15° in MREG and EPI BOLD, respectively, reduces the sensitivity to physiological pulsations on both methods as well (Gonzalez-Castillo et al., <xref rid="B23" ref-type="bibr">2011</xref>). Furthermore, the system noise changes linearly or even quadratically with the TR due to imperfections as the sequence is repeatedly run. All these effects need to be considered while discerning the differences between EPI vs. MREG results and again the direct comparison between them is rather difficult.</p>
+      <p>According to (Glover, <xref rid="B21" ref-type="bibr">2012</xref>), the spiral readout has reduced sensitivity to motion, shortened readout times, improved signal recovery in most frontal and parietal brain regions, and exhibited blurring artifacts instead of ghosts or geometric distortion. MREG combines Spiral-in/out trajectory which further has diminished susceptibility-induced signal dropout and increased BOLD signal. The EPI readout trajectory is subject to ghosts from off-resonance and gradient imperfections and is intrinsically sensitive to cardiac-induced pulsatile motion from substantial first- and higher order moments of the gradient waveform near the k-space origin (Glover, <xref rid="B21" ref-type="bibr">2012</xref>). So, the artifact and BOLD sensitivity profiles are also different between EPI and MREG. In summary, looking at the similarity of the resting state connectivity measures with different techniques, it seems that human brain connectivity is quite a stable phenomenon that can be measured robustly with technically quite different scanning approaches.</p>
+      <p>Earlier, the use of two different sampling rates scanned at subsequent scanning sessions have been used to exclude aliasing as a source of very low frequency fluctuations as a source of resting state functional connectivity (Beckmann et al., <xref rid="B3" ref-type="bibr">2005</xref>; Kiviniemi et al., <xref rid="B38" ref-type="bibr">2005</xref>). Theoretically, the previous data that used different scan sessions and so the physiological pulses were not identical between the TRs and therefore not directly comparable. However, in studies with different sampling rate in different scan, also there the results seem to be highly similar to our data (Smith et al., <xref rid="B65" ref-type="bibr">2013</xref>; Golestani et al., <xref rid="B22" ref-type="bibr">2017</xref>).</p>
+      <p>While attempting to quantify aliasing and dynamic metrics, we used the original 0.1 s TR MREG data as a reference. This may in theory involve a bias since the original MREG data can also detect modulations of cardiorespiratory pulse amplitudes and timing variations, as seen in <xref ref-type="fig" rid="F1">Figure 1</xref>. The slower sTRs have no way of depicting these modulations and therefore a comparison of spatial connectivity and signal stability may be somewhat biased toward undermining the accuracy of the fast data, since it is also sensitivity to modulation effects.</p>
+    </sec>
+    <sec sec-type="conclusions" id="s6">
+      <title>Conclusion</title>
+      <p>The overall the effect of sampling rate on most commonly used stationary rs-fMRI metrics is minimal. The dominance of the VLF power in gray matter overpowers aliasing effects and enables highly reproducible stationary connectivity results. The aliasing is most dominant between cardiac and respiratory pulsations in central structures near or within CSF spaces. Different technical imaging approaches (e.g., interleaved EPI vs. SOS MREG) yield differential connectivity metrics stemming from multiple spin acquisition differences. Despite these differences, the results from different techniques give fairly good spatial agreement of human brain connectivity. Interleaved scanning of slices seems to introduce inaccuracies in some analyses due to discontinuous sampling of physiological signals. The analysis of dynamic connectivity and frequency based physiological pulsation benefits most from faster scanning.</p>
+    </sec>
+    <sec sec-type="data-availability" id="s7">
+      <title>Data Availability</title>
+      <p>The datasets generated for this study are available on request to the corresponding author.</p>
+    </sec>
+    <sec id="s8">
+      <title>Author Contributions</title>
+      <p>VKi and VKo: designed the study; NH, VKi, VKo, and VR: collected the data; NH, LR, VKi, VKo: analyzed the data; NH, VKi, VKo, JaK, LR, HH, VB, TT, AR and JuK: wrote the manuscript.</p>
+      <sec>
+        <title>Conflict of Interest Statement</title>
+        <p>The authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.</p>
+      </sec>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>Thanks to all study subjects for participation and thanks to CSC (Tieteen Tietotekniikan Keskus) for supporting the analysis tools.</p>
+    </ack>
+    <fn-group>
+      <fn fn-type="financial-disclosure">
+        <p><bold>Funding.</bold> This work was supported by Jane and Aatos Erkko Foundation grant (VKi), Academy of Finland and Aivosäätiö TERVA grant 314497 (VKi), Academy of Finland Grants 123772 &amp; 275342 (VKi), The SalWe Research Program for Mind and Body (Tekes—the Finnish Funding Agency for Technology and Innovation, Grant No. 1104/10) (VKi), Finnish Medical Foundation (VKi, TT), Finnish Neurological Foundation, KEVO grants from Oulu University Hospital (VKi), Epilepsy Research Foundation (JaK), Finnish Cultural Foundation, North Ostrobothnia Regional Fund (JaK), Orion Research Foundation sr (JaK, TT), Tauno Tönning Foundation (JaK) and Health and Biosciences Doctoral programme -grant (HH).</p>
+      </fn>
+    </fn-group>
+    <sec sec-type="supplementary-material" id="s9">
+      <title>Supplementary Material</title>
+      <p>The Supplementary Material for this article can be found online at: <ext-link ext-link-type="uri" xlink:href="https://www.frontiersin.org/articles/10.3389/fnins.2019.00279/full#supplementary-material">https://www.frontiersin.org/articles/10.3389/fnins.2019.00279/full#supplementary-material</ext-link></p>
+      <supplementary-material content-type="local-data" id="SM1">
+        <media xlink:href="Image_1.TIF">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="SM2">
+        <media xlink:href="Image_2.TIF">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="SM3">
+        <label>Video 1</label>
+        <caption>
+          <p>Mean very low frequency quasi-periodic patterns (VLF QPPs) for repetition time (TR = 0.1 s).</p>
+        </caption>
+        <media xlink:href="Video_1.AVI">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="SM4">
+        <label>Video 2</label>
+        <caption>
+          <p>Mean very low frequency quasi-periodic patterns (VLF QPPs) for subsampled repetition time (sTR=0.3 s).</p>
+        </caption>
+        <media xlink:href="Video_2.AVI">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="SM5">
+        <label>Video 3</label>
+        <caption>
+          <p>Mean very low frequency quasi-periodic patterns (VLF QPPs) for subsampled repetition time (sTR = 0.5 s).</p>
+        </caption>
+        <media xlink:href="Video_3.AVI">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="SM6">
+        <label>Video 4</label>
+        <caption>
+          <p>Mean very low frequency quasi-periodic patterns (VLF QPPs) for subsampled repetition time (sTR=1.0 s).</p>
+        </caption>
+        <media xlink:href="Video_4.AVI">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="SM7">
+        <label>Video 5</label>
+        <caption>
+          <p>Mean very low frequency quasi-periodic patterns (VLF QPPs) for subsampled repetition time (sTR=1.5 s).</p>
+        </caption>
+        <media xlink:href="Video_5.AVI">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="SM8">
+        <label>Video 6</label>
+        <caption>
+          <p>Mean very low frequency quasi-periodic patterns (VLF QPPs) for subsampled repetition time (sTR=1.8 s).</p>
+        </caption>
+        <media xlink:href="Video_6.AVI">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="SM9">
+        <label>Video 7</label>
+        <caption>
+          <p>Mean very low frequency quasi-periodic patterns (VLF QPPs) for subsampled repetition time (sTR=2.2 s).</p>
+        </caption>
+        <media xlink:href="Video_7.AVI">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="SM10">
+        <label>Video 8</label>
+        <caption>
+          <p>Mean very low frequency quasi-periodic patterns (VLF QPPs) for subsampled repetition time (sTR=3.0 s).</p>
+        </caption>
+        <media xlink:href="Video_8.AVI">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="SM11">
+        <label>Video 9</label>
+        <caption>
+          <p>Mean very low frequency quasi-periodic patterns (VLF QPPs) for conventional echo-planar imaging (EPI) acquisition with repetition time (TR=2.15 s).</p>
+        </caption>
+        <media xlink:href="Video_9.AVI">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="SM12">
+        <label>Video 10</label>
+        <caption>
+          <p>Mean very low frequency quasi-periodic patterns (VLF QPPs) for interleaved variant with subsampled repetition time (sTR=2.2 s).</p>
+        </caption>
+        <media xlink:href="Video_10.AVI">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+    </sec>
+    <ref-list>
+      <title>References</title>
+      <ref id="B1">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Abou-Elseoud</surname><given-names>A.</given-names></name><name><surname>Starck</surname><given-names>T.</given-names></name><name><surname>Remes</surname><given-names>J.</given-names></name><name><surname>Nikkinen</surname><given-names>J.</given-names></name><name><surname>Tervonen</surname><given-names>O.</given-names></name><name><surname>Kiviniemi</surname><given-names>V.</given-names></name></person-group> (<year>2010</year>). <article-title>The effect of model order selection in group PICA</article-title>. <source>Hum. Brain Mapp.</source>
+<volume>31</volume>, <fpage>1207</fpage>–<lpage>1216</lpage>. <pub-id pub-id-type="doi">10.1002/hbm.20929</pub-id><pub-id pub-id-type="pmid">20063361</pub-id></mixed-citation>
+      </ref>
+      <ref id="B2">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Assländer</surname><given-names>J.</given-names></name><name><surname>Zahneisen</surname><given-names>B.</given-names></name><name><surname>Hugger</surname><given-names>T.</given-names></name><name><surname>Reisert</surname><given-names>M.</given-names></name><name><surname>Lee</surname><given-names>H. L.</given-names></name><name><surname>LeVan</surname><given-names>P.</given-names></name><etal/></person-group>. (<year>2013</year>). <article-title>Single shot whole brain imaging using spherical stack of spirals trajectories</article-title>. <source>Neuroimage</source>
+<volume>73</volume>, <fpage>59</fpage>–<lpage>70</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2013.01.065</pub-id><pub-id pub-id-type="pmid">23384526</pub-id></mixed-citation>
+      </ref>
+      <ref id="B3">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Beckmann</surname><given-names>C. F.</given-names></name><name><surname>DeLuca</surname><given-names>M.</given-names></name><name><surname>Devlin</surname><given-names>J. T.</given-names></name><name><surname>Smith</surname><given-names>S. M.</given-names></name></person-group> (<year>2005</year>). <article-title>Investigations into resting-state connectivity using independent component analysis</article-title>. <source>Philos. Trans. R. Soc. Lond. B Biol. Sci.</source>
+<volume>360</volume>, <fpage>1001</fpage>–<lpage>1013</lpage>. <pub-id pub-id-type="doi">10.1098/rstb.2005.1634</pub-id><pub-id pub-id-type="pmid">16087444</pub-id></mixed-citation>
+      </ref>
+      <ref id="B4">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Beckmann</surname><given-names>C. F.</given-names></name><name><surname>Jenkinson</surname><given-names>M.</given-names></name><name><surname>Woolrich</surname><given-names>M. W.</given-names></name><name><surname>Behrens</surname><given-names>T. E.</given-names></name><name><surname>Flitney</surname><given-names>D. E.</given-names></name><name><surname>Devlin</surname><given-names>J. T.</given-names></name><etal/></person-group>. (<year>2006</year>). <article-title>Applying FSL to the FIAC data: model-based and model-free analysis of voice and sentence repetition priming</article-title>. <source>Hum. Brain Mapp.</source>
+<volume>27</volume>, <fpage>380</fpage>–<lpage>391</lpage>. <pub-id pub-id-type="doi">10.1002/hbm.20246</pub-id><pub-id pub-id-type="pmid">16565953</pub-id></mixed-citation>
+      </ref>
+      <ref id="B5">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Birn</surname><given-names>R. M.</given-names></name><name><surname>Diamond</surname><given-names>J. B.</given-names></name><name><surname>Smith</surname><given-names>M. A.</given-names></name><name><surname>Bandettini</surname><given-names>P. A.</given-names></name></person-group> (<year>2006</year>). <article-title>Separating respiratory-variation-related fluctuations from neuronal-activity-related fluctuations in fMRI</article-title>. <source>Neuroimage</source>
+<volume>31</volume>, <fpage>1536</fpage>–<lpage>1548</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2006.02.048</pub-id><pub-id pub-id-type="pmid">16632379</pub-id></mixed-citation>
+      </ref>
+      <ref id="B6">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Birn</surname><given-names>R. M.</given-names></name><name><surname>Smith</surname><given-names>M. A.</given-names></name><name><surname>Jones</surname><given-names>T. B.</given-names></name><name><surname>Bandettini</surname><given-names>P. A.</given-names></name></person-group> (<year>2008</year>). <article-title>The respiration response function: the temporal dynamics of fMRI signal fluctuations related to changes in respiration</article-title>. <source>Neuroimage</source>
+<volume>40</volume>, <fpage>644</fpage>–<lpage>654</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2007.11.059</pub-id><pub-id pub-id-type="pmid">18234517</pub-id></mixed-citation>
+      </ref>
+      <ref id="B7">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Biswal</surname><given-names>B.</given-names></name><name><surname>Yetkin</surname><given-names>F. Z.</given-names></name><name><surname>Haughton</surname><given-names>V. M.</given-names></name><name><surname>Hyde</surname><given-names>J. S.</given-names></name></person-group> (<year>1995</year>). <article-title>Functional connectivity in the motor cortex of resting human brain using echo-planar MRI</article-title>. <source>Magn. Reson. Med.</source>
+<volume>34</volume>, <fpage>537</fpage>–<lpage>541</lpage>. <pub-id pub-id-type="doi">10.1002/mrm.1910340409</pub-id><pub-id pub-id-type="pmid">8524021</pub-id></mixed-citation>
+      </ref>
+      <ref id="B8">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Boyacioglu</surname><given-names>R.</given-names></name><name><surname>Barth</surname><given-names>M.</given-names></name></person-group> (<year>2013</year>). <article-title>Generalized iNverse imaging (GIN): ultrafast fMRI with physiological noise correction</article-title>. <source>Magn. Reson. Med.</source>
+<volume>70</volume>, <fpage>962</fpage>–<lpage>971</lpage>. <pub-id pub-id-type="doi">10.1002/mrm.24528</pub-id><pub-id pub-id-type="pmid">23097342</pub-id></mixed-citation>
+      </ref>
+      <ref id="B9">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Bright</surname><given-names>M. G.</given-names></name><name><surname>Murphy</surname><given-names>K.</given-names></name></person-group> (<year>2015</year>). <article-title>Is fMRI “noise” really noise? resting state nuisance regressors remove variance with network structure</article-title>. <source>Neuroimage</source>
+<volume>114</volume>, <fpage>158</fpage>–<lpage>169</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2015.03.070</pub-id><pub-id pub-id-type="pmid">25862264</pub-id></mixed-citation>
+      </ref>
+      <ref id="B10">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Bullmore</surname><given-names>E.</given-names></name><name><surname>Long</surname><given-names>C.</given-names></name><name><surname>Suckling</surname><given-names>J.</given-names></name><name><surname>Fadili</surname><given-names>J.</given-names></name><name><surname>Calvert</surname><given-names>G.</given-names></name><name><surname>Zelaya</surname><given-names>F.</given-names></name><etal/></person-group>. (<year>2001</year>). <article-title>Colored noise and computational inference in neurophysiological (fMRI) time series analysis: resampling methods in time and wavelet domains</article-title>. <source>Hum. Brain Mapp.</source>
+<volume>12</volume>, <fpage>61</fpage>–<lpage>78</lpage>. <pub-id pub-id-type="doi">10.1002/1097-0193(200102)12:2&lt;61::AID-HBM1004&gt;3.0.CO;2-W</pub-id><pub-id pub-id-type="pmid">11169871</pub-id></mixed-citation>
+      </ref>
+      <ref id="B11">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Calhoun</surname><given-names>V. D.</given-names></name><name><surname>Adali</surname><given-names>T.</given-names></name><name><surname>Pearlson</surname><given-names>G. D.</given-names></name><name><surname>Pekar</surname><given-names>J. J.</given-names></name></person-group> (<year>2001</year>). <article-title>A method for making group inferences from functional MRI data using independent component analysis</article-title>. <source>Hum. Brain Mapp.</source>
+<volume>14</volume>, <fpage>140</fpage>–<lpage>151</lpage>. <pub-id pub-id-type="doi">10.1002/hbm.1048</pub-id><pub-id pub-id-type="pmid">11559959</pub-id></mixed-citation>
+      </ref>
+      <ref id="B12">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Chang</surname><given-names>C.</given-names></name><name><surname>Glover</surname><given-names>G. H.</given-names></name></person-group> (<year>2009</year>). <article-title>Relationship between respiration, end-tidal CO2, and BOLD signals in resting-state fMRI</article-title>. <source>Neuroimage</source>
+<volume>47</volume>, <fpage>1381</fpage>–<lpage>1393</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2009.04.048</pub-id><pub-id pub-id-type="pmid">19393322</pub-id></mixed-citation>
+      </ref>
+      <ref id="B13">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Chang</surname><given-names>C.</given-names></name><name><surname>Glover</surname><given-names>G. H.</given-names></name></person-group> (<year>2010</year>). <article-title>Time–frequency dynamics of resting-state brain connectivity measured with fMRI</article-title>. <source>Neuroimage</source>
+<volume>50</volume>, <fpage>81</fpage>–<lpage>98</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2009.12.011</pub-id><pub-id pub-id-type="pmid">20006716</pub-id></mixed-citation>
+      </ref>
+      <ref id="B14">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Chang</surname><given-names>C.</given-names></name><name><surname>Metzger</surname><given-names>C. D.</given-names></name><name><surname>Glover</surname><given-names>G. H.</given-names></name><name><surname>Duyn</surname><given-names>J. H.</given-names></name><name><surname>Heinze</surname><given-names>H. J.</given-names></name><name><surname>Walter</surname><given-names>M.</given-names></name></person-group> (<year>2013a</year>). <article-title>Association between heart rate variability and fluctuations in resting-state functional connectivity</article-title>. <source>Neuroimage</source>
+<volume>68</volume>, <fpage>93</fpage>–<lpage>104</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2012.11.038</pub-id><pub-id pub-id-type="pmid">23246859</pub-id></mixed-citation>
+      </ref>
+      <ref id="B15">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Chang</surname><given-names>W. T.</given-names></name><name><surname>Nummenmaa</surname><given-names>A.</given-names></name><name><surname>Witzel</surname><given-names>T.</given-names></name><name><surname>Ahveninen</surname><given-names>J.</given-names></name><name><surname>Huang</surname><given-names>S.</given-names></name><name><surname>Tsai</surname><given-names>K. W.</given-names></name><etal/></person-group>. (<year>2013b</year>). <article-title>Whole-head rapid fMRI acquisition using echo-shifted magnetic resonance inverse imaging</article-title>. <source>Neuroimage</source>
+<volume>78</volume>, <fpage>325</fpage>–<lpage>338</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2013.03.040</pub-id><pub-id pub-id-type="pmid">23563228</pub-id></mixed-citation>
+      </ref>
+      <ref id="B16">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Chao-Gan</surname><given-names>Y.</given-names></name><name><surname>Yu-Feng</surname><given-names>Z.</given-names></name></person-group> (<year>2010</year>). <article-title>DPARSF: a MATLAB toolbox for“ pipeline” data analysis of resting-state fMRI</article-title>. <source>Front. Syst. Neurosci.</source>
+<volume>4</volume>:<fpage>13</fpage>. <pub-id pub-id-type="doi">10.3389/fnsys.2010.00013</pub-id><pub-id pub-id-type="pmid">20577591</pub-id></mixed-citation>
+      </ref>
+      <ref id="B17">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Chen</surname><given-names>J. E.</given-names></name><name><surname>Polimeni</surname><given-names>J. R.</given-names></name><name><surname>Bollmann</surname><given-names>S.</given-names></name><name><surname>Glover</surname><given-names>G. H.</given-names></name></person-group> (<year>2019</year>). <source>On the analysis of rapidly sampled fMRI data. Neuroimage</source>. <volume>188</volume>, <fpage>807</fpage>–<lpage>820</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2019.02.008</pub-id><pub-id pub-id-type="pmid">30735828</pub-id></mixed-citation>
+      </ref>
+      <ref id="B18">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Cordes</surname><given-names>D.</given-names></name><name><surname>Nandy</surname><given-names>R. R.</given-names></name><name><surname>Schafer</surname><given-names>S.</given-names></name><name><surname>Wager</surname><given-names>T. D.</given-names></name></person-group> (<year>2014</year>). <article-title>Characterization and reduction of cardiac-and respiratory-induced noise as a function of the sampling rate (TR) in fMRI</article-title>. <source>Neuroimage</source>
+<volume>89</volume>, <fpage>314</fpage>–<lpage>330</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2013.12.013</pub-id><pub-id pub-id-type="pmid">24355483</pub-id></mixed-citation>
+      </ref>
+      <ref id="B19">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>De Luca</surname><given-names>M.</given-names></name><name><surname>Beckmann</surname><given-names>C. F.</given-names></name><name><surname>De Stefano</surname><given-names>N.</given-names></name><name><surname>Matthews</surname><given-names>P. M.</given-names></name><name><surname>Smith</surname><given-names>S. M.</given-names></name></person-group> (<year>2006</year>). <article-title>fMRI resting state networks define distinct modes of long-distance interactions in the human brain</article-title>. <source>Neuroimage</source>
+<volume>29</volume>, <fpage>1359</fpage>–<lpage>1367</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2005.08.035</pub-id><pub-id pub-id-type="pmid">16260155</pub-id></mixed-citation>
+      </ref>
+      <ref id="B20">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Demetriou</surname><given-names>L.</given-names></name><name><surname>Kowalczyk</surname><given-names>O. S.</given-names></name><name><surname>Tyson</surname><given-names>G.</given-names></name><name><surname>Bello</surname><given-names>T.</given-names></name><name><surname>Newbould</surname><given-names>R. D.</given-names></name><name><surname>Wall</surname><given-names>M. B.</given-names></name></person-group> (<year>2018</year>). <article-title>A comprehensive evaluation of increasing temporal resolution with multiband-accelerated protocols and effects on statistical outcome measures in fMRI</article-title>. <source>Neuroimage</source>
+<volume>176</volume>, <fpage>404</fpage>–<lpage>416</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2018.05.011</pub-id><pub-id pub-id-type="pmid">29738911</pub-id></mixed-citation>
+      </ref>
+      <ref id="B21">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Glover</surname><given-names>G. H.</given-names></name></person-group> (<year>2012</year>). <article-title>Spiral imaging in fMRI</article-title>. <source>Neuroimage</source>
+<volume>62</volume>, <fpage>706</fpage>–<lpage>712</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2011.10.039</pub-id><pub-id pub-id-type="pmid">22036995</pub-id></mixed-citation>
+      </ref>
+      <ref id="B22">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Golestani</surname><given-names>A. M.</given-names></name><name><surname>Kwinta</surname><given-names>J. B.</given-names></name><name><surname>Khatamian</surname><given-names>Y. B.</given-names></name><name><surname>Chen</surname><given-names>J. J.</given-names></name></person-group> (<year>2017</year>). <article-title>The effect of low-frequency physiological correction on the reproducibility and specificity of resting-state fMRI metrics: functional connectivity, ALFF, and ReHo</article-title>. <source>Front. Neurosci.</source>
+<volume>11</volume>:<fpage>546</fpage>. <pub-id pub-id-type="doi">10.3389/fnins.2017.00546</pub-id><pub-id pub-id-type="pmid">29051724</pub-id></mixed-citation>
+      </ref>
+      <ref id="B23">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Gonzalez-Castillo</surname><given-names>J.</given-names></name><name><surname>Roopchansingh</surname><given-names>V.</given-names></name><name><surname>Bandettini</surname><given-names>P. A.</given-names></name><name><surname>Bodurka</surname><given-names>J.</given-names></name></person-group> (<year>2011</year>). <article-title>Physiological noise effects on the flip angle selection in BOLD fMRI</article-title>. <source>Neuroimage</source>
+<volume>54</volume>, <fpage>2764</fpage>–<lpage>2778</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2010.11.020</pub-id><pub-id pub-id-type="pmid">21073963</pub-id></mixed-citation>
+      </ref>
+      <ref id="B24">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Griffanti</surname><given-names>L.</given-names></name><name><surname>Dipasquale</surname><given-names>O.</given-names></name><name><surname>Laganà</surname><given-names>M. M.</given-names></name><name><surname>Nemni</surname><given-names>R.</given-names></name><name><surname>Clerici</surname><given-names>M.</given-names></name><name><surname>Smith</surname><given-names>S. M.</given-names></name><etal/></person-group>. (<year>2015</year>). <article-title>Effective artifact removal in resting state fMRI data improves detection of DMN functional connectivity alteration in Alzheimer's disease</article-title>. <source>Front. Hum. Neurosci.</source>
+<volume>9</volume>:<fpage>449</fpage>. <pub-id pub-id-type="doi">10.3389/fnhum.2015.00449</pub-id><pub-id pub-id-type="pmid">26321937</pub-id></mixed-citation>
+      </ref>
+      <ref id="B25">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Hugger</surname><given-names>T.</given-names></name><name><surname>Zahneisen</surname><given-names>B.</given-names></name><name><surname>LeVan</surname><given-names>P.</given-names></name><name><surname>Lee</surname><given-names>K. J.</given-names></name><name><surname>Lee</surname><given-names>H. L.</given-names></name><name><surname>Zaitsev</surname><given-names>M.</given-names></name><etal/></person-group>. (<year>2011</year>). <article-title>Fast undersampled functional magnetic resonance imaging using nonlinear regularized parallel image reconstruction</article-title>. <source>PLoS ONE</source>
+<volume>6</volume>:<fpage>e28822</fpage>. <pub-id pub-id-type="doi">10.1371/journal.pone.0028822</pub-id><pub-id pub-id-type="pmid">22194921</pub-id></mixed-citation>
+      </ref>
+      <ref id="B26">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Hutchinson</surname><given-names>J. B.</given-names></name><name><surname>Uncapher</surname><given-names>M. R.</given-names></name><name><surname>Weiner</surname><given-names>K. S.</given-names></name><name><surname>Bressler</surname><given-names>D. W.</given-names></name><name><surname>Silver</surname><given-names>M. A.</given-names></name><name><surname>Preston</surname><given-names>A. R.</given-names></name><etal/></person-group>. (<year>2012</year>). <article-title>Functional heterogeneity in posterior parietal cortex across attention and episodic memory retrieval</article-title>. <source>Cereb. Cortex</source>
+<volume>24</volume>, <fpage>49</fpage>–<lpage>66</lpage>. <pub-id pub-id-type="doi">10.1093/cercor/bhs278</pub-id><pub-id pub-id-type="pmid">23019246</pub-id></mixed-citation>
+      </ref>
+      <ref id="B27">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Iliff</surname><given-names>J. J.</given-names></name><name><surname>Wang</surname><given-names>M.</given-names></name><name><surname>Liao</surname><given-names>Y.</given-names></name><name><surname>Plogg</surname><given-names>B. A.</given-names></name><name><surname>Peng</surname><given-names>W.</given-names></name><name><surname>Gundersen</surname><given-names>G. A.</given-names></name><etal/></person-group>. (<year>2012</year>). <article-title>A paravascular pathway facilitates CSF flow through the brain parenchyma and the clearance of interstitial solutes, including amyloid β</article-title>. <source>Sci. Transl. Med.</source>
+<volume>4</volume>:<fpage>147r</fpage>a111. <pub-id pub-id-type="doi">10.1126/scitranslmed.3003748</pub-id><pub-id pub-id-type="pmid">22896675</pub-id></mixed-citation>
+      </ref>
+      <ref id="B28">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Jenkinson</surname><given-names>M.</given-names></name><name><surname>Bannister</surname><given-names>P.</given-names></name><name><surname>Brady</surname><given-names>M.</given-names></name><name><surname>Smith</surname><given-names>S.</given-names></name></person-group> (<year>2002</year>). <article-title>Improved optimization for the robust and accurate linear registration and motion correction of brain images</article-title>. <source>Neuroimage</source>
+<volume>17</volume>, <fpage>825</fpage>–<lpage>841</lpage>. <pub-id pub-id-type="doi">10.1006/nimg.2002.1132</pub-id><pub-id pub-id-type="pmid">12377157</pub-id></mixed-citation>
+      </ref>
+      <ref id="B29">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Jenkinson</surname><given-names>M.</given-names></name><name><surname>Beckmann</surname><given-names>C. F.</given-names></name><name><surname>Behrens</surname><given-names>T. E.</given-names></name><name><surname>Woolrich</surname><given-names>M. W.</given-names></name><name><surname>Smith</surname><given-names>S. M.</given-names></name></person-group> (<year>2012</year>). <article-title>Fsl</article-title>. <source>Neuroimage</source>
+<volume>62</volume>, <fpage>782</fpage>–<lpage>790</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2011.09.015</pub-id><pub-id pub-id-type="pmid">21979382</pub-id></mixed-citation>
+      </ref>
+      <ref id="B30">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Jenkinson</surname><given-names>M.</given-names></name><name><surname>Smith</surname><given-names>S.</given-names></name></person-group> (<year>2001</year>). <article-title>A global optimisation method for robust affine registration of brain images</article-title>. <source>Med. Image Anal.</source>
+<volume>5</volume>, <fpage>143</fpage>–<lpage>156</lpage>. <pub-id pub-id-type="doi">10.1016/S1361-8415(01)00036-6</pub-id><pub-id pub-id-type="pmid">11516708</pub-id></mixed-citation>
+      </ref>
+      <ref id="B31">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Jessen</surname><given-names>N. A.</given-names></name><name><surname>Munk</surname><given-names>A. S.</given-names></name><name><surname>Lundgaard</surname><given-names>I.</given-names></name><name><surname>Nedergaard</surname><given-names>M.</given-names></name></person-group> (<year>2015</year>). <article-title>The glymphatic system: a beginner's guide</article-title>. <source>Neurochem. Res.</source>
+<volume>40</volume>, <fpage>2583</fpage>–<lpage>2599</lpage>. <pub-id pub-id-type="doi">10.1007/s11064-015-1581-6</pub-id><pub-id pub-id-type="pmid">25947369</pub-id></mixed-citation>
+      </ref>
+      <ref id="B32">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Kananen</surname><given-names>J.</given-names></name><name><surname>Tuovinen</surname><given-names>T.</given-names></name><name><surname>Ansakorpi</surname><given-names>H.</given-names></name><name><surname>Rytky</surname><given-names>S.</given-names></name><name><surname>Helakari</surname><given-names>H.</given-names></name><name><surname>Huotari</surname><given-names>N.</given-names></name><etal/></person-group>. (<year>2018</year>). <article-title>Altered physiological brain variation in drug-resistant epilepsy</article-title>. <source>Brain Behav.</source>
+<volume>8</volume>:<fpage>e01090</fpage>. <pub-id pub-id-type="doi">10.1002/brb3.1090</pub-id><pub-id pub-id-type="pmid">30112813</pub-id></mixed-citation>
+      </ref>
+      <ref id="B33">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Keilholz</surname><given-names>S. D.</given-names></name></person-group> (<year>2014</year>). <article-title>The neural basis of time-varying resting-state functional connectivity</article-title>. <source>Brain Connect.</source>
+<volume>4</volume>, <fpage>769</fpage>–<lpage>779</lpage>. <pub-id pub-id-type="doi">10.1089/brain.2014.0250</pub-id><pub-id pub-id-type="pmid">24975024</pub-id></mixed-citation>
+      </ref>
+      <ref id="B34">
+        <mixed-citation publication-type="book"><person-group person-group-type="author"><name><surname>Kendall</surname><given-names>M.</given-names></name><name><surname>Gibbons</surname><given-names>J.</given-names></name></person-group> (<year>1990</year>). <source>Correlation Methods</source>. <publisher-loc>Oxford</publisher-loc>: <publisher-name>Oxford University Press.</publisher-name></mixed-citation>
+      </ref>
+      <ref id="B35">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Kiviniemi</surname><given-names>V.</given-names></name></person-group> (<year>2008</year>). <article-title>Endogenous brain fluctuations and diagnostic imaging</article-title>. <source>Hum. Brain Mapp.</source>
+<volume>29</volume>, <fpage>810</fpage>–<lpage>817</lpage>. <pub-id pub-id-type="doi">10.1002/hbm.20582</pub-id><pub-id pub-id-type="pmid">18454454</pub-id></mixed-citation>
+      </ref>
+      <ref id="B36">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Kiviniemi</surname><given-names>V.</given-names></name><name><surname>Jauhiainen</surname><given-names>J.</given-names></name><name><surname>Tervonen</surname><given-names>O.</given-names></name><name><surname>Pääkkö</surname><given-names>E.</given-names></name><name><surname>Oikarinen</surname><given-names>J.</given-names></name><name><surname>Vainionpää</surname><given-names>V.</given-names></name><etal/></person-group>. (<year>2000</year>). <article-title>Slow vasomotor fluctuation in fMRI of anesthetized child brain</article-title>. <source>Magn. Reson. Med.</source>
+<volume>44</volume>, <fpage>373</fpage>–<lpage>378</lpage>. <pub-id pub-id-type="doi">10.1002/1522-2594(200009)44:3&lt;373::AID-MRM5&gt;3.0.CO;2-P</pub-id><pub-id pub-id-type="pmid">10975887</pub-id></mixed-citation>
+      </ref>
+      <ref id="B37">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Kiviniemi</surname><given-names>V.</given-names></name><name><surname>Kantola</surname><given-names>J. H.</given-names></name><name><surname>Jauhiainen</surname><given-names>J.</given-names></name><name><surname>Hyvärinen</surname><given-names>A.</given-names></name><name><surname>Tervonen</surname><given-names>O.</given-names></name></person-group> (<year>2003</year>). <article-title>Independent component analysis of nondeterministic fMRI signal sources</article-title>. <source>Neuroimage</source>
+<volume>19</volume>, <fpage>253</fpage>–<lpage>260</lpage>. <pub-id pub-id-type="doi">10.1016/S1053-8119(03)00097-1</pub-id><pub-id pub-id-type="pmid">12814576</pub-id></mixed-citation>
+      </ref>
+      <ref id="B38">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Kiviniemi</surname><given-names>V.</given-names></name><name><surname>Ruohonen</surname><given-names>J.</given-names></name><name><surname>Tervonen</surname><given-names>O.</given-names></name></person-group> (<year>2005</year>). <article-title>Separation of physiological very low frequency fluctuation from aliasing by switched sampling interval fMRI scans</article-title>. <source>Magn. Reson. Imaging</source>
+<volume>23</volume>, <fpage>41</fpage>–<lpage>46</lpage>. <pub-id pub-id-type="doi">10.1016/j.mri.2004.09.005</pub-id><pub-id pub-id-type="pmid">15733787</pub-id></mixed-citation>
+      </ref>
+      <ref id="B39">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Kiviniemi</surname><given-names>V.</given-names></name><name><surname>Starck</surname><given-names>T.</given-names></name><name><surname>Remes</surname><given-names>J.</given-names></name><name><surname>Long</surname><given-names>X.</given-names></name><name><surname>Nikkinen</surname><given-names>J.</given-names></name><name><surname>Haapea</surname><given-names>M.</given-names></name><etal/></person-group>. (<year>2009</year>). <article-title>Functional segmentation of the brain cortex using high model order group PICA</article-title>. <source>Hum. Brain Mapp.</source>
+<volume>30</volume>, <fpage>3865</fpage>–<lpage>3886</lpage>. <pub-id pub-id-type="doi">10.1002/hbm.20813</pub-id><pub-id pub-id-type="pmid">19507160</pub-id></mixed-citation>
+      </ref>
+      <ref id="B40">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Kiviniemi</surname><given-names>V.</given-names></name><name><surname>Vire</surname><given-names>T.</given-names></name><name><surname>Remes</surname><given-names>J.</given-names></name><name><surname>Elseoud</surname><given-names>A. A.</given-names></name><name><surname>Starck</surname><given-names>T.</given-names></name><name><surname>Tervonen</surname><given-names>O.</given-names></name><etal/></person-group>. (<year>2011</year>). <article-title>A sliding time-window ICA reveals spatial variability of the default mode network in time</article-title>. <source>Brain Connect.</source>
+<volume>1</volume>, <fpage>339</fpage>–<lpage>347</lpage>. <pub-id pub-id-type="doi">10.1089/brain.2011.0036</pub-id><pub-id pub-id-type="pmid">22432423</pub-id></mixed-citation>
+      </ref>
+      <ref id="B41">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Kiviniemi</surname><given-names>V.</given-names></name><name><surname>Wang</surname><given-names>X.</given-names></name><name><surname>Korhonen</surname><given-names>V.</given-names></name><name><surname>Keinänen</surname><given-names>T.</given-names></name><name><surname>Tuovinen</surname><given-names>T.</given-names></name><name><surname>Autio</surname><given-names>J.</given-names></name><etal/></person-group>. (<year>2016</year>). <article-title>Ultra-fast magnetic resonance encephalography of physiological brain activity–Glymphatic pulsation mechanisms?</article-title>
+<source>J. Cereb. Blood Flow Metab.</source>
+<volume>36</volume>, <fpage>1033</fpage>–<lpage>1045</lpage>. <pub-id pub-id-type="doi">10.1177/0271678X15622047</pub-id><pub-id pub-id-type="pmid">26690495</pub-id></mixed-citation>
+      </ref>
+      <ref id="B42">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Korhonen</surname><given-names>V.</given-names></name><name><surname>Hiltunen</surname><given-names>T.</given-names></name><name><surname>Myllylä</surname><given-names>T.</given-names></name><name><surname>Wang</surname><given-names>X.</given-names></name><name><surname>Kantola</surname><given-names>J.</given-names></name><name><surname>Nikkinen</surname><given-names>J.</given-names></name><etal/></person-group>. (<year>2014</year>). <article-title>Synchronous multiscale neuroimaging environment for critically sampled physiological analysis of brain function: hepta-scan concept</article-title>. <source>Brain Connect.</source>
+<volume>4</volume>, <fpage>677</fpage>–<lpage>689</lpage>. <pub-id pub-id-type="doi">10.1089/brain.2014.0258</pub-id><pub-id pub-id-type="pmid">25131996</pub-id></mixed-citation>
+      </ref>
+      <ref id="B43">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Lee</surname><given-names>H. L.</given-names></name><name><surname>Zahneisen</surname><given-names>B.</given-names></name><name><surname>Hugger</surname><given-names>T.</given-names></name><name><surname>LeVan</surname><given-names>P.</given-names></name><name><surname>Hennig</surname><given-names>J.</given-names></name></person-group> (<year>2013</year>). <article-title>Tracking dynamic resting-state networks at higher frequencies using MR-encephalography</article-title>. <source>Neuroimage</source>
+<volume>65</volume>, <fpage>216</fpage>–<lpage>222</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2012.10.015</pub-id><pub-id pub-id-type="pmid">23069810</pub-id></mixed-citation>
+      </ref>
+      <ref id="B44">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Lin</surname><given-names>F. H.</given-names></name><name><surname>Polimeni</surname><given-names>J. R.</given-names></name><name><surname>Lin</surname><given-names>J. L.</given-names></name><name><surname>Tsai</surname><given-names>K. W.</given-names></name><name><surname>Chu</surname><given-names>Y. H.</given-names></name><name><surname>Wu</surname><given-names>P. Y.</given-names></name><etal/></person-group>. (<year>2018</year>). <article-title>Relative latency and temporal variability of hemodynamic responses at the human primary visual cortex</article-title>. <source>Neuroimage</source>
+<volume>164</volume>, <fpage>194</fpage>–<lpage>201</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2017.01.041</pub-id><pub-id pub-id-type="pmid">28119135</pub-id></mixed-citation>
+      </ref>
+      <ref id="B45">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Lin</surname><given-names>F. H.</given-names></name><name><surname>Tsai</surname><given-names>K. W.</given-names></name><name><surname>Chu</surname><given-names>Y. H.</given-names></name><name><surname>Witzel</surname><given-names>T.</given-names></name><name><surname>Nummenmaa</surname><given-names>A.</given-names></name><name><surname>Raij</surname><given-names>T.</given-names></name><etal/></person-group>. (<year>2012</year>). <article-title>Ultrafast inverse imaging techniques for fMRI</article-title>. <source>Neuroimage</source>
+<volume>62</volume>, <fpage>699</fpage>–<lpage>705</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2012.01.072</pub-id><pub-id pub-id-type="pmid">22285221</pub-id></mixed-citation>
+      </ref>
+      <ref id="B46">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Liu</surname><given-names>T. T.</given-names></name></person-group> (<year>2016</year>). <article-title>Noise contributions to the fMRI signal: an overview</article-title>. <source>Neuroimage</source>
+<volume>143</volume>, <fpage>141</fpage>–<lpage>151</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2016.09.008</pub-id><pub-id pub-id-type="pmid">27612646</pub-id></mixed-citation>
+      </ref>
+      <ref id="B47">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Liu</surname><given-names>X.</given-names></name><name><surname>De Zwart</surname><given-names>J. A.</given-names></name><name><surname>Schölvinck</surname><given-names>M. L.</given-names></name><name><surname>Chang</surname><given-names>C.</given-names></name><name><surname>Ye</surname><given-names>F. Q.</given-names></name><name><surname>Leopold</surname><given-names>D. A.</given-names></name><etal/></person-group>. (<year>2018</year>). <article-title>Subcortical evidence for a contribution of arousal to fMRI studies of brain activity</article-title>. <source>Nat. Commun.</source>
+<volume>9</volume>:<fpage>395</fpage>. <pub-id pub-id-type="doi">10.1038/s41467-017-02815-3</pub-id><pub-id pub-id-type="pmid">29374172</pub-id></mixed-citation>
+      </ref>
+      <ref id="B48">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Liu</surname><given-names>X.</given-names></name><name><surname>Duyn</surname><given-names>J. H.</given-names></name></person-group> (<year>2013</year>). <article-title>Time-varying functional network information extracted from brief instances of spontaneous brain activity</article-title>. <source>Proc. Natl. Acad. Sci. U.S.A.</source>
+<volume>110</volume>, <fpage>4392</fpage>–<lpage>4397</lpage>. <pub-id pub-id-type="doi">10.1073/pnas.1216856110</pub-id><pub-id pub-id-type="pmid">23440216</pub-id></mixed-citation>
+      </ref>
+      <ref id="B49">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Ma</surname><given-names>Y.</given-names></name><name><surname>Shaik</surname><given-names>M. A.</given-names></name><name><surname>Kozberg</surname><given-names>M. G.</given-names></name><name><surname>Kim</surname><given-names>S. H.</given-names></name><name><surname>Portes</surname><given-names>J. P.</given-names></name><name><surname>Timerman</surname><given-names>D.</given-names></name><etal/></person-group>. (<year>2016</year>). <article-title>Resting-state hemodynamics are spatiotemporally coupled to synchronized and symmetric neural activity in excitatory neurons</article-title>. <source>Proc. Natl. Acad. Sci. U.S.A.</source>
+<volume>113</volume>, <fpage>E8463</fpage>–<lpage>E8471</lpage>. <pub-id pub-id-type="doi">10.1073/pnas.1525369113</pub-id><pub-id pub-id-type="pmid">27974609</pub-id></mixed-citation>
+      </ref>
+      <ref id="B50">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Majeed</surname><given-names>W.</given-names></name><name><surname>Magnuson</surname><given-names>M.</given-names></name><name><surname>Hasenkamp</surname><given-names>W.</given-names></name><name><surname>Schwarb</surname><given-names>H.</given-names></name><name><surname>Schumacher</surname><given-names>E. H.</given-names></name><name><surname>Barsalou</surname><given-names>L.</given-names></name><etal/></person-group>. (<year>2011</year>). <article-title>Spatiotemporal dynamics of low frequency BOLD fluctuations in rats and humans</article-title>. <source>Neuroimage</source>
+<volume>54</volume>, <fpage>1140</fpage>–<lpage>1150</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2010.08.030</pub-id><pub-id pub-id-type="pmid">20728554</pub-id></mixed-citation>
+      </ref>
+      <ref id="B51">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Makedonov</surname><given-names>I.</given-names></name><name><surname>Black</surname><given-names>S. E.</given-names></name><name><surname>MacIntosh</surname><given-names>B. J.</given-names></name></person-group> (<year>2013</year>). <article-title>BOLD fMRI in the white matter as a marker of aging and small vessel disease</article-title>. <source>PLoS ONE</source>
+<volume>8</volume>:<fpage>e67652</fpage>. <pub-id pub-id-type="doi">10.1371/journal.pone.0067652</pub-id><pub-id pub-id-type="pmid">23844047</pub-id></mixed-citation>
+      </ref>
+      <ref id="B52">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Makedonov</surname><given-names>I.</given-names></name><name><surname>Chen</surname><given-names>J. J.</given-names></name><name><surname>Masellis</surname><given-names>M.</given-names></name><name><surname>MacIntosh</surname><given-names>B. J.</given-names></name><name><surname>Initiative</surname><given-names>A. D. N.</given-names></name></person-group> (<year>2016</year>). <article-title>Physiological fluctuations in white matter are increased in Alzheimer's disease and correlate with neuroimaging and cognitive biomarkers</article-title>. <source>Neurobiol. Aging</source>
+<volume>37</volume>, <fpage>12</fpage>–<lpage>18</lpage>. <pub-id pub-id-type="doi">10.1016/j.neurobiolaging.2015.09.010</pub-id><pub-id pub-id-type="pmid">26476600</pub-id></mixed-citation>
+      </ref>
+      <ref id="B53">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Murphy</surname><given-names>K.</given-names></name><name><surname>Fox</surname><given-names>M. D.</given-names></name></person-group> (<year>2017</year>). <article-title>Towards a consensus regarding global signal regression for resting state functional connectivity MRI</article-title>. <source>Neuroimage</source>
+<volume>154</volume>, <fpage>169</fpage>–<lpage>173</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2016.11.052</pub-id><pub-id pub-id-type="pmid">27888059</pub-id></mixed-citation>
+      </ref>
+      <ref id="B54">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Nedergaard</surname><given-names>M.</given-names></name></person-group> (<year>2013</year>). <article-title>Garbage truck of the brain</article-title>. <source>Science</source>
+<volume>340</volume>, <fpage>1529</fpage>–<lpage>1530</lpage>. <pub-id pub-id-type="doi">10.1126/science.1240514</pub-id><pub-id pub-id-type="pmid">23812703</pub-id></mixed-citation>
+      </ref>
+      <ref id="B55">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Palva</surname><given-names>J. M.</given-names></name><name><surname>Zhigalov</surname><given-names>A.</given-names></name><name><surname>Hirvonen</surname><given-names>J.</given-names></name><name><surname>Korhonen</surname><given-names>O.</given-names></name><name><surname>Linkenkaer-Hansen</surname><given-names>K.</given-names></name><name><surname>Palva</surname><given-names>S.</given-names></name></person-group> (<year>2013</year>). <article-title>Neuronal long-range temporal correlations and avalanche dynamics are correlated with behavioral scaling laws</article-title>. <source>Proc. Natl. Acad. Sci. U.S.A.</source>
+<volume>110</volume>, <fpage>3585</fpage>–<lpage>3590</lpage>. <pub-id pub-id-type="doi">10.1073/pnas.1216855110</pub-id><pub-id pub-id-type="pmid">23401536</pub-id></mixed-citation>
+      </ref>
+      <ref id="B56">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Pan</surname><given-names>W. J.</given-names></name><name><surname>Thompson</surname><given-names>G. J.</given-names></name><name><surname>Magnuson</surname><given-names>M. E.</given-names></name><name><surname>Jaeger</surname><given-names>D.</given-names></name><name><surname>Keilholz</surname><given-names>S.</given-names></name></person-group> (<year>2013</year>). <article-title>Infraslow LFP correlates to resting-state fMRI BOLD signals</article-title>. <source>Neuroimage</source>
+<volume>74</volume>, <fpage>288</fpage>–<lpage>297</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2013.02.035</pub-id><pub-id pub-id-type="pmid">23481462</pub-id></mixed-citation>
+      </ref>
+      <ref id="B57">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Peltier</surname><given-names>S. J.</given-names></name><name><surname>Polk</surname><given-names>T. A.</given-names></name><name><surname>Noll</surname><given-names>D. C.</given-names></name></person-group> (<year>2003</year>). <article-title>Detecting low-frequency functional connectivity in fMRI using a self-organizing map (SOM) algorithm</article-title>. <source>Hum. Brain Mapp.</source>
+<volume>20</volume>, <fpage>220</fpage>–<lpage>226</lpage>. <pub-id pub-id-type="doi">10.1002/hbm.10144</pub-id><pub-id pub-id-type="pmid">14673805</pub-id></mixed-citation>
+      </ref>
+      <ref id="B58">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Pfeuffer</surname><given-names>J.</given-names></name><name><surname>Van de Moortele</surname><given-names>P. F.</given-names></name><name><surname>Ugurbil</surname><given-names>K.</given-names></name><name><surname>Hu</surname><given-names>X.</given-names></name><name><surname>Glover</surname><given-names>G. H.</given-names></name></person-group> (<year>2002</year>). <article-title>Correction of physiologically induced global off-resonance effects in dynamic echo-planar and spiral functional imaging</article-title>. <source>Magn. Reson. Med.</source>
+<volume>47</volume>, <fpage>344</fpage>–<lpage>353</lpage>. <pub-id pub-id-type="doi">10.1002/mrm.10065</pub-id><pub-id pub-id-type="pmid">11810679</pub-id></mixed-citation>
+      </ref>
+      <ref id="B59">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Posse</surname><given-names>S.</given-names></name><name><surname>Ackley</surname><given-names>E.</given-names></name><name><surname>Mutihac</surname><given-names>R.</given-names></name><name><surname>Zhang</surname><given-names>T.</given-names></name><name><surname>Hummatov</surname><given-names>R.</given-names></name><name><surname>Akhtari</surname><given-names>M.</given-names></name><etal/></person-group>. (<year>2013</year>). <article-title>High-speed real-time resting-state FMRI using multi-slab echo-volumar imaging</article-title>. <source>Front. Hum. Neurosci.</source>
+<volume>7</volume>:<fpage>479</fpage>. <pub-id pub-id-type="doi">10.3389/fnhum.2013.00479</pub-id><pub-id pub-id-type="pmid">23986677</pub-id></mixed-citation>
+      </ref>
+      <ref id="B60">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Preibisch</surname><given-names>C.</given-names></name><name><surname>Castrillón G J</surname><given-names>G.</given-names></name><name><surname>Bührer</surname><given-names>M.</given-names></name><name><surname>Riedl</surname><given-names>V.</given-names></name></person-group> (<year>2015</year>). <article-title>Evaluation of multiband EPI acquisitions for resting state fMRI</article-title>. <source>PLoS ONE</source>
+<volume>10</volume>:<fpage>e0136961</fpage>. <pub-id pub-id-type="doi">10.1371/journal.pone.0136961</pub-id><pub-id pub-id-type="pmid">26375666</pub-id></mixed-citation>
+      </ref>
+      <ref id="B61">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Purdon</surname><given-names>P. L.</given-names></name><name><surname>Weisskoff</surname><given-names>R. M.</given-names></name></person-group> (<year>1998</year>). <article-title>Effect of temporal autocorrelation due to physiological noise and stimulus paradigm on voxel-level false-positive rates in fMRI</article-title>. <source>Hum. Brain Mapp.</source>
+<volume>6</volume>, <fpage>239</fpage>–<lpage>249</lpage>. <pub-id pub-id-type="doi">10.1002/(SICI)1097-0193(1998)6:4&lt;239::AID-HBM4&gt;3.0.CO;2-4</pub-id><pub-id pub-id-type="pmid">9704263</pub-id></mixed-citation>
+      </ref>
+      <ref id="B62">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Raitamaa</surname><given-names>L.</given-names></name><name><surname>Korhonen</surname><given-names>V.</given-names></name><name><surname>Huotari</surname><given-names>N.</given-names></name><name><surname>Raatikainen</surname><given-names>V.</given-names></name><name><surname>Hautaniemi</surname><given-names>T.</given-names></name><name><surname>Kananen</surname><given-names>J.</given-names></name><etal/></person-group> (<year>2018</year>). <article-title>Breath hold effect on cardiovascular brain pulsations–A multimodal magnetic resonance encephalography study</article-title>. <source>J. Cereb. Blood Flow Metab.</source>
+<volume>11</volume>:<fpage>271678X</fpage>18798441. <pub-id pub-id-type="doi">10.1177/0271678X18798441</pub-id></mixed-citation>
+      </ref>
+      <ref id="B63">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Rajna</surname><given-names>Z.</given-names></name><name><surname>Kananen</surname><given-names>J.</given-names></name><name><surname>Keskinarkaus</surname><given-names>A.</given-names></name><name><surname>Seppänen</surname><given-names>T.</given-names></name><name><surname>Kiviniemi</surname><given-names>V.</given-names></name></person-group> (<year>2015</year>). <article-title>Detection of short-term activity avalanches in human brain default mode network with ultrafast MR encephalography</article-title>. <source>Front. Hum. Neurosci.</source>
+<volume>9</volume>:<fpage>448</fpage>. <pub-id pub-id-type="doi">10.3389/fnhum.2015.00448</pub-id><pub-id pub-id-type="pmid">26321936</pub-id></mixed-citation>
+      </ref>
+      <ref id="B64">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Shmueli</surname><given-names>K.</given-names></name><name><surname>van Gelderen</surname><given-names>P.</given-names></name><name><surname>de Zwart</surname><given-names>J. A.</given-names></name><name><surname>Horovitz</surname><given-names>S. G.</given-names></name><name><surname>Fukunaga</surname><given-names>M.</given-names></name><name><surname>Jansma</surname><given-names>J. M.</given-names></name><etal/></person-group>. (<year>2007</year>). <article-title>Low-frequency fluctuations in the cardiac rate as a source of variance in the resting-state fMRI BOLD signal</article-title>. <source>Neuroimage</source>
+<volume>38</volume>, <fpage>306</fpage>–<lpage>320</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2007.07.037</pub-id><pub-id pub-id-type="pmid">17869543</pub-id></mixed-citation>
+      </ref>
+      <ref id="B65">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Smith</surname><given-names>S. M.</given-names></name><name><surname>Beckmann</surname><given-names>C. F.</given-names></name><name><surname>Andersson</surname><given-names>J.</given-names></name><name><surname>Auerbach</surname><given-names>E. J.</given-names></name><name><surname>Bijsterbosch</surname><given-names>J.</given-names></name><name><surname>Douaud</surname><given-names>G.</given-names></name><etal/></person-group>. (<year>2013</year>). <article-title>Resting-state fMRI in the human connectome project</article-title>. <source>Neuroimage</source>
+<volume>80</volume>, <fpage>144</fpage>–<lpage>168</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2013.05.039</pub-id><pub-id pub-id-type="pmid">23702415</pub-id></mixed-citation>
+      </ref>
+      <ref id="B66">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Smith</surname><given-names>S. M.</given-names></name><name><surname>Fox</surname><given-names>P. T.</given-names></name><name><surname>Miller</surname><given-names>K. L.</given-names></name><name><surname>Glahn</surname><given-names>D. C.</given-names></name><name><surname>Fox</surname><given-names>P. M.</given-names></name><name><surname>Mackay</surname><given-names>C. E.</given-names></name><etal/></person-group>. (<year>2009</year>). <article-title>Correspondence of the brain's functional architecture during activation and rest</article-title>. <source>Proc. Natl. Acad. Sci. U.S.A.</source>
+<volume>106</volume>, <fpage>13040</fpage>–<lpage>13045</lpage>. <pub-id pub-id-type="doi">10.1073/pnas.0905267106</pub-id><pub-id pub-id-type="pmid">19620724</pub-id></mixed-citation>
+      </ref>
+      <ref id="B67">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Smith</surname><given-names>S. M.</given-names></name><name><surname>Jenkinson</surname><given-names>M.</given-names></name><name><surname>Woolrich</surname><given-names>M. W.</given-names></name><name><surname>Beckmann</surname><given-names>C. F.</given-names></name><name><surname>Behrens</surname><given-names>T. E.</given-names></name><name><surname>Johansen-Berg</surname><given-names>H.</given-names></name><etal/></person-group>. (<year>2004</year>). <article-title>Advances in functional and structural MR image analysis and implementation as FSL</article-title>. <source>Neuroimage</source>
+<volume>23</volume>, <fpage>S208</fpage>–<lpage>S219</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2004.07.051</pub-id><pub-id pub-id-type="pmid">15501092</pub-id></mixed-citation>
+      </ref>
+      <ref id="B68">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Smith</surname><given-names>S. M.</given-names></name><name><surname>Miller</surname><given-names>K. L.</given-names></name><name><surname>Moeller</surname><given-names>S.</given-names></name><name><surname>Xu</surname><given-names>J.</given-names></name><name><surname>Auerbach</surname><given-names>E. J.</given-names></name><name><surname>Woolrich</surname><given-names>M. W.</given-names></name><etal/></person-group>. (<year>2012</year>). <article-title>Temporally-independent functional modes of spontaneous brain activity</article-title>. <source>Proc. Natl. Acad. Sci. U.S.A.</source>
+<volume>109</volume>, <fpage>3131</fpage>–<lpage>3136</lpage>. <pub-id pub-id-type="doi">10.1073/pnas.1121329109</pub-id><pub-id pub-id-type="pmid">22323591</pub-id></mixed-citation>
+      </ref>
+      <ref id="B69">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Thayer</surname><given-names>J. F.</given-names></name><name><surname>Yamamoto</surname><given-names>S. S.</given-names></name><name><surname>Brosschot</surname><given-names>J. F.</given-names></name></person-group> (<year>2010</year>). <article-title>The relationship of autonomic imbalance, heart rate variability and cardiovascular disease risk factors</article-title>. <source>Int. J. Cardiol.</source>
+<volume>141</volume>, <fpage>122</fpage>–<lpage>131</lpage>. <pub-id pub-id-type="doi">10.1016/j.ijcard.2009.09.543</pub-id><pub-id pub-id-type="pmid">19910061</pub-id></mixed-citation>
+      </ref>
+      <ref id="B70">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Thompson</surname><given-names>G. J.</given-names></name><name><surname>Pan</surname><given-names>W. J.</given-names></name><name><surname>Magnuson</surname><given-names>M. E.</given-names></name><name><surname>Jaeger</surname><given-names>D.</given-names></name><name><surname>Keilholz</surname><given-names>S. D.</given-names></name></person-group> (<year>2014</year>). <article-title>Quasi-periodic patterns (QPP): large-scale dynamics in resting state fMRI that correlate with local infraslow electrical activity</article-title>. <source>Neuroimage</source>
+<volume>84</volume>, <fpage>1018</fpage>–<lpage>1031</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2013.09.029</pub-id><pub-id pub-id-type="pmid">24071524</pub-id></mixed-citation>
+      </ref>
+      <ref id="B71">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Tuovinen</surname><given-names>T.</given-names></name><name><surname>Kananen</surname><given-names>J.</given-names></name><name><surname>Rytty</surname><given-names>R.</given-names></name><name><surname>Moilanen</surname><given-names>V.</given-names></name><name><surname>Elseoud</surname><given-names>A. A.</given-names></name><name><surname>Remes</surname><given-names>A. M.</given-names></name><etal/></person-group> (<year>2018</year>). <article-title>Altered BOLD signal variation in Alzheimer's disease and frontotemporal dementia</article-title>. <source>BioRxiv [preprint]</source>
+<volume>455683</volume>, <fpage>1</fpage>–<lpage>47</lpage>. <pub-id pub-id-type="doi">10.1101/455683</pub-id></mixed-citation>
+      </ref>
+      <ref id="B72">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Tuovinen</surname><given-names>T.</given-names></name><name><surname>Rytty</surname><given-names>R.</given-names></name><name><surname>Moilanen</surname><given-names>V.</given-names></name><name><surname>Abou Elseoud</surname><given-names>A.</given-names></name><name><surname>Veijola</surname><given-names>J.</given-names></name><name><surname>Remes</surname><given-names>A. M.</given-names></name><etal/></person-group>. (<year>2017</year>). <article-title>The effect of gray matter ICA and coefficient of variation mapping of BOLD data on the detection of functional connectivity changes in Alzheimer's disease and bvFTD</article-title>. <source>Front. Hum. Neurosci.</source>
+<volume>10</volume>:<fpage>680</fpage>. <pub-id pub-id-type="doi">10.3389/fnhum.2016.00680</pub-id><pub-id pub-id-type="pmid">28119587</pub-id></mixed-citation>
+      </ref>
+      <ref id="B73">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>van der Kooy</surname><given-names>K. G.</given-names></name><name><surname>van Hout</surname><given-names>H. P.</given-names></name><name><surname>van Marwijk</surname><given-names>H. W.</given-names></name><name><surname>de Haan</surname><given-names>M.</given-names></name><name><surname>Stehouwer</surname><given-names>C. D.</given-names></name><name><surname>Beekman</surname><given-names>A. T.</given-names></name></person-group> (<year>2006</year>). <article-title>Differences in heart rate variability between depressed and non-depressed elderly</article-title>. <source>Int. J. Geriatr. Psychiatry</source>
+<volume>21</volume>, <fpage>147</fpage>–<lpage>150</lpage>. <pub-id pub-id-type="doi">10.1002/gps.1439</pub-id><pub-id pub-id-type="pmid">16416460</pub-id></mixed-citation>
+      </ref>
+      <ref id="B74">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Vidaurre</surname><given-names>D.</given-names></name><name><surname>Smith</surname><given-names>S. M.</given-names></name><name><surname>Woolrich</surname><given-names>M. W.</given-names></name></person-group> (<year>2017</year>). <article-title>Brain network dynamics are hierarchically organized in time</article-title>. <source>Proc. Natl. Acad. Sci. U.S.A.</source>
+<volume>114</volume>, <fpage>12827</fpage>–<lpage>12832</lpage>. <pub-id pub-id-type="doi">10.1073/pnas.1705120114</pub-id><pub-id pub-id-type="pmid">29087305</pub-id></mixed-citation>
+      </ref>
+      <ref id="B75">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Wink</surname><given-names>A. M.</given-names></name><name><surname>Bullmore</surname><given-names>E.</given-names></name><name><surname>Barnes</surname><given-names>A.</given-names></name><name><surname>Bernard</surname><given-names>F.</given-names></name><name><surname>Suckling</surname><given-names>J.</given-names></name></person-group> (<year>2008</year>). <article-title>Monofractal and multifractal dynamics of low frequency endogenous brain oscillations in functional MRI</article-title>. <source>Hum. Brain Mapp.</source>
+<volume>29</volume>, <fpage>791</fpage>–<lpage>801</lpage>. <pub-id pub-id-type="doi">10.1002/hbm.20593</pub-id><pub-id pub-id-type="pmid">18465788</pub-id></mixed-citation>
+      </ref>
+      <ref id="B76">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Wise</surname><given-names>R. G.</given-names></name><name><surname>Ide</surname><given-names>K.</given-names></name><name><surname>Poulin</surname><given-names>M. J.</given-names></name><name><surname>Tracey</surname><given-names>I.</given-names></name></person-group> (<year>2004</year>). <article-title>Resting fluctuations in arterial carbon dioxide induce significant low frequency variations in BOLD signal</article-title>. <source>Neuroimage</source>
+<volume>21</volume>, <fpage>1652</fpage>–<lpage>1664</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2003.11.025</pub-id><pub-id pub-id-type="pmid">15050588</pub-id></mixed-citation>
+      </ref>
+      <ref id="B77">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Woolrich</surname><given-names>M. W.</given-names></name><name><surname>Ripley</surname><given-names>B. D.</given-names></name><name><surname>Brady</surname><given-names>M.</given-names></name><name><surname>Smith</surname><given-names>S. M.</given-names></name></person-group> (<year>2001</year>). <article-title>Temporal autocorrelation in univariate linear modeling of FMRI data</article-title>. <source>Neuroimage</source>
+<volume>14</volume>, <fpage>1370</fpage>–<lpage>1386</lpage>. <pub-id pub-id-type="doi">10.1006/nimg.2001.0931</pub-id><pub-id pub-id-type="pmid">11707093</pub-id></mixed-citation>
+      </ref>
+      <ref id="B78">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zahneisen</surname><given-names>B.</given-names></name><name><surname>Assländer</surname><given-names>J.</given-names></name><name><surname>LeVan</surname><given-names>P.</given-names></name><name><surname>Hugger</surname><given-names>T.</given-names></name><name><surname>Reisert</surname><given-names>M.</given-names></name><name><surname>Ernst</surname><given-names>T.</given-names></name><etal/></person-group>. (<year>2014</year>). <article-title>Quantification and correction of respiration induced dynamic field map changes in fMRI using 3D single shot techniques</article-title>. <source>Magn. Reson. Med.</source>
+<volume>71</volume>, <fpage>1093</fpage>–<lpage>1102</lpage>. <pub-id pub-id-type="doi">10.1002/mrm.24771</pub-id><pub-id pub-id-type="pmid">23716298</pub-id></mixed-citation>
+      </ref>
+      <ref id="B79">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zahneisen</surname><given-names>B.</given-names></name><name><surname>Hugger</surname><given-names>T.</given-names></name><name><surname>Lee</surname><given-names>K. J.</given-names></name><name><surname>LeVan</surname><given-names>P.</given-names></name><name><surname>Reisert</surname><given-names>M.</given-names></name><name><surname>Lee</surname><given-names>H. L.</given-names></name><etal/></person-group>. (<year>2012</year>). <article-title>Single shot concentric shells trajectories for ultra fast fMRI</article-title>. <source>Magn. Reson. Med.</source>
+<volume>68</volume>, <fpage>484</fpage>–<lpage>494</lpage>. <pub-id pub-id-type="doi">10.1002/mrm.23256</pub-id><pub-id pub-id-type="pmid">22131236</pub-id></mixed-citation>
+      </ref>
+      <ref id="B80">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zang</surname><given-names>Y.</given-names></name><name><surname>Jiang</surname><given-names>T.</given-names></name><name><surname>Lu</surname><given-names>Y.</given-names></name><name><surname>He</surname><given-names>Y.</given-names></name><name><surname>Tian</surname><given-names>L.</given-names></name></person-group> (<year>2004</year>). <article-title>Regional homogeneity approach to fMRI data analysis</article-title>. <source>Neuroimage</source>
+<volume>22</volume>, <fpage>394</fpage>–<lpage>400</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2003.12.030</pub-id><pub-id pub-id-type="pmid">15110032</pub-id></mixed-citation>
+      </ref>
+      <ref id="B81">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zang</surname><given-names>Y. F.</given-names></name><name><surname>He</surname><given-names>Y.</given-names></name><name><surname>Zhu</surname><given-names>C. Z.</given-names></name><name><surname>Cao</surname><given-names>Q. J.</given-names></name><name><surname>Sui</surname><given-names>M. Q.</given-names></name><name><surname>Liang</surname><given-names>M.</given-names></name><etal/></person-group>. (<year>2007</year>). <article-title>Altered baseline brain activity in children with ADHD revealed by resting-state functional MRI</article-title>. <source>Brain Dev.</source>
+<volume>29</volume>, <fpage>83</fpage>–<lpage>91</lpage>. <pub-id pub-id-type="doi">10.1016/j.braindev.2006.07.002</pub-id><pub-id pub-id-type="pmid">16919409</pub-id></mixed-citation>
+      </ref>
+      <ref id="B82">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zou</surname><given-names>Q. H.</given-names></name><name><surname>Zhu</surname><given-names>C. Z.</given-names></name><name><surname>Yang</surname><given-names>Y.</given-names></name><name><surname>Zuo</surname><given-names>X. N.</given-names></name><name><surname>Long</surname><given-names>X. Y.</given-names></name><name><surname>Cao</surname><given-names>Q. J.</given-names></name><etal/></person-group>. (<year>2008</year>). <article-title>An improved approach to detection of amplitude of low-frequency fluctuation (ALFF) for resting-state fMRI: fractional ALFF</article-title>. <source>J. Neurosci. Methods</source>
+<volume>172</volume>, <fpage>137</fpage>–<lpage>141</lpage>. <pub-id pub-id-type="doi">10.1016/j.jneumeth.2008.04.012</pub-id><pub-id pub-id-type="pmid">18501969</pub-id></mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

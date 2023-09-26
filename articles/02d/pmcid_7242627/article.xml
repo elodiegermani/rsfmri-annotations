@@ -1,0 +1,1304 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">Front Psychiatry</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Front Psychiatry</journal-id>
+      <journal-id journal-id-type="publisher-id">Front. Psychiatry</journal-id>
+      <journal-title-group>
+        <journal-title>Frontiers in Psychiatry</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1664-0640</issn>
+      <publisher>
+        <publisher-name>Frontiers Media S.A.</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">32477198</article-id>
+      <article-id pub-id-type="pmc">7242627</article-id>
+      <article-id pub-id-type="doi">10.3389/fpsyt.2020.00440</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Psychiatry</subject>
+          <subj-group>
+            <subject>Original Research</subject>
+          </subj-group>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Classifying Autism Spectrum Disorder Using the Temporal Statistics of Resting-State Functional MRI Data With 3D Convolutional Neural Networks</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Thomas</surname>
+            <given-names>Rajat Mani</given-names>
+          </name>
+          <xref ref-type="author-notes" rid="fn001">
+            <sup>*</sup>
+          </xref>
+          <xref ref-type="author-notes" rid="fn003">
+            <sup>†</sup>
+          </xref>
+          <uri xlink:type="simple" xlink:href="https://loop.frontiersin.org/people/226823"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Gallo</surname>
+            <given-names>Selene</given-names>
+          </name>
+          <xref ref-type="author-notes" rid="fn003">
+            <sup>†</sup>
+          </xref>
+          <uri xlink:type="simple" xlink:href="https://loop.frontiersin.org/people/948918"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Cerliani</surname>
+            <given-names>Leonardo</given-names>
+          </name>
+          <uri xlink:type="simple" xlink:href="https://loop.frontiersin.org/people/906420"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Zhutovsky</surname>
+            <given-names>Paul</given-names>
+          </name>
+          <uri xlink:type="simple" xlink:href="https://loop.frontiersin.org/people/477607"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>El-Gazzar</surname>
+            <given-names>Ahmed</given-names>
+          </name>
+          <uri xlink:type="simple" xlink:href="https://loop.frontiersin.org/people/948386"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>van Wingen</surname>
+            <given-names>Guido</given-names>
+          </name>
+          <uri xlink:type="simple" xlink:href="https://loop.frontiersin.org/people/52852"/>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1"><institution>Department of Psychiatry, Amsterdam University Medical Center</institution>, <addr-line>Amsterdam</addr-line>, <country>Netherlands</country></aff>
+      <author-notes>
+        <fn fn-type="edited-by">
+          <p>Edited by: Albert Yang, National Yang-Ming University, Taiwan</p>
+        </fn>
+        <fn fn-type="edited-by">
+          <p>Reviewed by: Kaiming Li, Sichuan University, China; Raymond Salvador, FIDMAG Hermanas Hospitalarias Research Foundation, Spain</p>
+        </fn>
+        <corresp id="fn001">*Correspondence: Rajat Mani Thomas, <email xlink:href="mailto:r.m.thomas@amsterdamumc.nl" xlink:type="simple">r.m.thomas@amsterdamumc.nl</email></corresp>
+        <fn fn-type="other" id="fn002">
+          <p>This article was submitted to Neuroimaging and Stimulation, a section of the journal Frontiers in Psychiatry</p>
+        </fn>
+        <fn fn-type="equal" id="fn003">
+          <p>†These authors share first authorship</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="epub">
+        <day>15</day>
+        <month>5</month>
+        <year>2020</year>
+      </pub-date>
+      <pub-date pub-type="collection">
+        <year>2020</year>
+      </pub-date>
+      <volume>11</volume>
+      <elocation-id>440</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>10</day>
+          <month>2</month>
+          <year>2020</year>
+        </date>
+        <date date-type="accepted">
+          <day>28</day>
+          <month>4</month>
+          <year>2020</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Copyright © 2020 Thomas, Gallo, Cerliani, Zhutovsky, El-Gazzar and van Wingen</copyright-statement>
+        <copyright-year>2020</copyright-year>
+        <copyright-holder>Thomas, Gallo, Cerliani, Zhutovsky, El-Gazzar and van Wingen</copyright-holder>
+        <license xlink:href="http://creativecommons.org/licenses/by/4.0/">
+          <license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY). The use, distribution or reproduction in other forums is permitted, provided the original author(s) and the copyright owner(s) are credited and that the original publication in this journal is cited, in accordance with accepted academic practice. No use, distribution or reproduction is permitted which does not comply with these terms.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>Resting-state functional magnetic resonance imaging (rs-fMRI) data are 4-dimensional volumes (3-space + 1-time) that have been posited to reflect the underlying mechanisms of information exchange between brain regions, thus making it an attractive modality to develop diagnostic biomarkers of brain dysfunction. The enormous success of deep learning in computer vision has sparked recent interest in applying deep learning in neuroimaging. But the dimensionality of rs-fMRI data is too high (~20 M), making it difficult to meaningfully process the data in its raw form for deep learning experiments. It is currently not clear how the data should be engineered to optimally extract the time information, and whether combining different representations of time could provide better results. In this paper, we explored various transformations that retain the full spatial resolution by summarizing the temporal dimension of the rs-fMRI data, therefore making it possible to train a full three-dimensional convolutional neural network (3D-CNN) even on a moderately sized [~2,000 from Autism Brain Imaging Data Exchange (ABIDE)-I and II] data set. These transformations summarize the activity in each voxel of the rs-fMRI or that of the voxel and its neighbors to a single number. For each brain volume, we calculated regional homogeneity, the amplitude of low-frequency fluctuations, the fractional amplitude of low-frequency fluctuations, degree centrality, eigenvector centrality, local functional connectivity density, entropy, voxel-mirrored homotopic connectivity, and auto-correlation lag. We trained the 3D-CNN on a publically available autism dataset to classify the rs-fMRI images as being from individuals with autism spectrum disorder (ASD) or from healthy controls (CON) at an individual level. We attained results competitive on this task for a combined ABIDE-I and II datasets of ~66%. When all summary measures were combined the result was still only as good as that of the best single measure which was regional homogeneity (ReHo). In addition, we also applied the support vector machine (SVM) algorithm on the same dataset and achieved comparable results, suggesting that 3D-CNNs could not learn additional information from these temporal transformations that were more useful to differentiate ASD from CON.</p>
+      </abstract>
+      <kwd-group>
+        <kwd>neuroimaging</kwd>
+        <kwd>3D convolutional neural network</kwd>
+        <kwd>classification</kwd>
+        <kwd>autism</kwd>
+        <kwd>Autism Brain Imaging Data Exchange</kwd>
+        <kwd>deep learning</kwd>
+      </kwd-group>
+      <funding-group>
+        <award-group>
+          <funding-source id="cn001">Nederlandse Organisatie voor Wetenschappelijk Onderzoek<named-content content-type="fundref-id">10.13039/501100003246</named-content></funding-source>
+          <award-id rid="cn001">Vidi 016.156.318</award-id>
+        </award-group>
+      </funding-group>
+      <counts>
+        <fig-count count="6"/>
+        <table-count count="3"/>
+        <equation-count count="0"/>
+        <ref-count count="37"/>
+        <page-count count="12"/>
+        <word-count count="7665"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec sec-type="intro" id="s1">
+      <title>Introduction</title>
+      <p>Neuroimaging holds the promise of objective diagnosis and prognosis in psychiatry. But unlike neurological disorders, psychiatric disorders do not show obvious structural brain abnormalities. Researchers have long posited that brain abnormalities of psychiatric patients are particularly reflected in functional scans such as resting-state functional magnetic resonance imaging (rs-fMRI) (<xref rid="B1" ref-type="bibr">1</xref>). These scans involve mapping the blood oxygenation level (a proxy for brain activity) throughout the brain every 1 or 2 s—resulting in a 4-D data product, 3-D of the brain, and 1-D in time. Typically, at a scanning resolution of 4 mm and 300 temporal sampling points, this results in a 20 million dimensional feature vector. Hidden somewhere in this high-dimensional spatio-temporal signal are the biomarkers that could distinguish between healthy and psychiatric subjects. Mining these rs-fMRI images for such patterns is the challenge we are facing.</p>
+      <p>Machine learning (ML) approaches in recent years have demonstrated enormous potential in processing images and videos. Deep learning, in particular, has been extremely successful in myriad different fields (<xref rid="B2" ref-type="bibr">2</xref>). Apart from algorithmic improvements, deep learning has been successful largely due to the massive datasets available in the image processing fields. Unfortunately, this is not the case in neuroimaging. Large datasets are scarce or non-existent. But some initiatives like the Autism Brain Imaging Data Exchange (ABIDE) have tried to aggregate brain imaging datasets of individuals with autism spectrum disorder (ASD) and healthy controls (CON) from various sites around the world to build up a reasonably sized dataset. The complete dataset including the first and second wave of the data aggregation (ABIDE-I/ABIDE-II) comprises around 2,100 subjects including ASD and CON. Albeit the availability of such a database, the dimensionality of the input data is still too large to be used without any preprocessing or feature engineering.</p>
+      <p>Since rs-fMRI data contains a spatio-temporal signal, different approaches have been tried to reduce its dimensionality. Primarily, this can be categorized as approaches that try to reduce dimensionality in space or in time. One approach for spatial down-scaling is the use of brain atlases. In this approach, about one million voxels in space are locally averaged in about 100 to 400 different brain regions depending on the atlas, thus considerably reducing the dimension of the input data. These 100 to 400 averaged time courses are then either used in a 1-D convolutional network (<xref rid="B3" ref-type="bibr">3</xref>) or are first used to calculate a cross-correlation matrix which subsequently is used as a feature in various machine learning methods (<xref rid="B4" ref-type="bibr">4</xref>, <xref rid="B5" ref-type="bibr">5</xref>). For example, (<xref rid="B4" ref-type="bibr">4</xref>) reached an accuracy of 70% on ABIDE-I using the cross-correlation matrix on time courses extracted using the CC400 atlas.</p>
+      <p>In the neuroimaging literature, there are many examples of reducing the dimensionality of brain volumes by summarizing the time domain, while maintaining intact the 3D spatial dimensions of the data. These different methods extract different aspects of the time series. For example, the amplitude of low-frequency fluctuation (ALFF) is a measure that is posited to reveal differences in the underlying processing of the brain, and is calculated as the ratio of spectral power in two distinct frequency ranges and has been linked to atypical development in previous studies (<xref rid="B6" ref-type="bibr">6</xref>, <xref rid="B7" ref-type="bibr">7</xref>). This measure is calculated independently for each voxel. Other measures instead are calculated for each voxel but carry information about distant or neighboring connectivity. This is the case for regional homogeneity (ReHo), which is the temporal coherence or synchronization of the BOLD time series within a set of a given voxel's nearest neighbors, and of voxel-mirrored homotopic connectivity (VMHC), which is the synchrony in patterns of spontaneous activity between homotopic (geometrically corresponding) regions in each hemisphere. The complete list of summary measures considered in this work is described in <italic>Resting-State Functional MRI Summary Measures</italic>.</p>
+      <p>We aimed to retain the full spatial resolution as input by summarizing the temporal dimension per voxel as a single number. Most of the summary measures we employed were informed by the neuroimaging literature. To the best of our knowledge, no previous study attempted an extensive use of such measures using deep learning algorithms. Moreover, since each summary measure extracts different aspects of the temporal dimension of the rs-fMRI data, we further aimed to combine the different inputs for classification.</p>
+      <p>First, we used each of the nine single summary measures (single-measure model or SM-models) independently as input to a 3-D convolutional neural network (3D-CNN). Then, inspired by the concept of the <italic>wisdom of the crowd</italic> and <italic>weak learners</italic>, which refers to the fact that single models that perform weakly individually could perform better when combined, we tested this by combining the nine summary measures. To do so, we explored two different strategies: the multi-measure ensemble (MM-ensemble), and the creation of a single model, called multi-measure-model (MM-model). In the MM-ensemble approach, we independently trained models on each of the summary measures and allowed each model to <italic>vote</italic> toward the final classification outcome of the test sample. The class with the majority vote was then used as the predicted outcome. In the MM-model, we combined the 3D summary measure volumes for each subject and input them as channels to a single 3D-CNN model. Since there is a debate whether a deep learning model can perform better than a linear or other conventional machine-learning models in neuroimaging (<xref rid="B8" ref-type="bibr">8</xref>, <xref rid="B9" ref-type="bibr">9</xref>), and in order to form a robust baseline, we also performed the classification using a linear-SVM. To gain insight into the information the models are using for the classification task, we performed an <italic>occlusion experiment</italic>. This type of analysis describes which regions of the brain contribute maximally to the output of the most successful neural networks. The code used of all the experiments performed is available on GitHub<xref ref-type="fn" rid="fn1"><sup>1</sup></xref>.</p>
+    </sec>
+    <sec sec-type="materials|methods" id="s2">
+      <title>Materials and Methods</title>
+      <sec id="s2_1">
+        <title>Autism Brain Imaging Data Exchange Dataset</title>
+        <p>We used the ABIDE dataset for all of our experiments. The ABIDE I+II datasets is a collection of structural (T1w) and functional (rs-fMRI) brain images aggregated across 29 institutions (<xref rid="B10" ref-type="bibr">10</xref>), available for download<xref ref-type="fn" rid="fn2"><sup>2</sup></xref>. It includes 1,028 participants with a diagnosis of autism, Asperger or pervasive developmental disorder-not otherwise specified (called ASD from now on), and 1,141 typically developing participants (CON). Virtually all the ASD participants were high functioning (99.95% with IQ &gt; 70), most of the included participants were adolescents (median age 13 years, range between 5 and 64 years of age), 1/3 of whom were diagnosed as ASD, and 20% of the total participants were female, which represents an important addition with respect to most previous autism studies which focused on males exclusively. The rs-fMRI image acquisition time ranges from 2 to 10 min, with 85% of the datasets meeting the suggested duration (~ 4–5 min) for obtaining robust rsfMRI estimates (<xref rid="B11" ref-type="bibr">11</xref>). We chose to cut off the minimum scan duration to 100-time points, which led us to include 96% of the whole ABIDE I+II dataset (N=2,085, N(ASD)=993), the vast majority of which (95%) with a minimum acquisition time of 4 min.</p>
+      </sec>
+      <sec id="s2_2">
+        <title>Resting-State Functional MRI Preprocessing</title>
+        <p>The preprocessing was done using the Configurable Pipeline for the Analysis of Connectomes (C-PAC, (<xref rid="B12" ref-type="bibr">12</xref>). We followed a preprocessing strategy adopted by the Preprocessed Connectome Project initiative<xref ref-type="fn" rid="fn3"><sup>3</sup></xref>. This will allow others to replicate and extend the findings in this paper. Our preprocessing pipeline, consisted of i) motion correction, ii) nuisance regression which included head motion modeled as 24-regressors (<xref rid="B13" ref-type="bibr">13</xref>), scanner drift modeled using a quadratic and linear term, and physiological noise modeled using the five principal components from a decomposition of white matter and cerebrospinal fluid voxel time series (CompCor) (<xref rid="B14" ref-type="bibr">14</xref>), iii) coregistration of the resulting rs-fMRI image to the subject's anatomical image using FMRIB Software library (FSL) Boundary-Based (BB) register. Finally, iv) the images were normalized onto the standard Montreal Neurological Institute (MNI) space (4 mm) with the non-linear registration algorithm from Ants (<xref rid="B15" ref-type="bibr">15</xref>). All the above steps were configured using C-PAC's singularity image<xref ref-type="fn" rid="fn4"><sup>4</sup></xref>.</p>
+      </sec>
+      <sec id="s2_3">
+        <title>Quality Check and Subject Selection</title>
+        <p>After preprocessing, we selected subjects from the ABIDE I+II data-sets following the list provided in (<xref rid="B16" ref-type="bibr">16</xref>); the authors performed an automatic quality control (QC) by selecting those subjects that retained at least 100 frames or 4 min of fMRI scans after motion scrubbing based on framewise displacement. Then subjects were visually inspected by the authors (<xref rid="B16" ref-type="bibr">16</xref>). Only subjects that passed the entire QC process are included in this study. The procedure yielded a total of 1,162 subjects, 620 of which were classified as ASD (773 from ABIDE-I and 389 from ABIDE-II). Please refer to the original article for an extensive description of the procedure. See <xref rid="T1" ref-type="table"><bold>Table 1</bold></xref> for more details on the sample composition.</p>
+        <table-wrap id="T1" position="float">
+          <label>Table 1</label>
+          <caption>
+            <p>Sample composition.</p>
+          </caption>
+          <table frame="hsides" rules="groups">
+            <thead>
+              <tr>
+                <th valign="top" align="left" rowspan="1" colspan="1"/>
+                <th valign="top" align="center" rowspan="1" colspan="1">Site</th>
+                <th valign="top" align="center" rowspan="1" colspan="1">Group</th>
+                <th valign="top" align="center" rowspan="1" colspan="1">Group # (females #)</th>
+                <th valign="top" align="center" rowspan="1" colspan="1">Mean age</th>
+                <th valign="top" align="center" rowspan="1" colspan="1">s.d. age</th>
+                <th valign="top" align="center" rowspan="1" colspan="1">Selected for leave-site-out CV</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td valign="top" rowspan="2" align="left" colspan="1">Abide II</td>
+                <td valign="top" rowspan="2" align="left" colspan="1">ABIDEII-KKI_1</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">CON</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">26 (6)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">10.49</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">1.51</td>
+                <td valign="top" rowspan="2" align="center" colspan="1">Yes</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">ASD</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">88 (34)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">10.36</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">1.20</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="2" align="left" colspan="1">Abide II</td>
+                <td valign="top" rowspan="2" align="left" colspan="1">ABIDEII-NYU_1</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">CON</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">45 (4)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">10.25</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">5.87</td>
+                <td valign="top" rowspan="2" align="center" colspan="1">No</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">ASD</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">29 (2)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">9.52</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">3.38</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="2" align="left" colspan="1">Abide II</td>
+                <td valign="top" rowspan="2" align="left" colspan="1">ABIDEII-OHSU_1</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">CON</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">22 (3)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">11.55</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">2.22</td>
+                <td valign="top" rowspan="2" align="center" colspan="1">Yes</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">ASD</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">42 (21)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">10.45</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">1.68</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="2" align="left" colspan="1">Abide II</td>
+                <td valign="top" rowspan="2" align="left" colspan="1">ABIDEII-SDSU_1</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">CON</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">32 (7)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">13.06</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">3.19</td>
+                <td valign="top" rowspan="2" align="center" colspan="1">No</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">ASD</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">24(2)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">13.07</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">2.96</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="2" align="left" colspan="1">Abide II</td>
+                <td valign="top" rowspan="2" align="left" colspan="1">ABIDEII-TCD_1</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">CON</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">14 (0)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">15.29</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">3.54</td>
+                <td valign="top" rowspan="2" align="center" colspan="1">No</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">ASD</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">18 (0)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">16.31</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">2.76</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="2" align="left" colspan="1">Abide II</td>
+                <td valign="top" rowspan="2" align="left" colspan="1">ABIDEII-UCLA_1</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">CON</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">9 (0)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">11.99</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">1.76</td>
+                <td valign="top" rowspan="2" align="center" colspan="1">No</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">ASD</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">9 (4)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">9.88</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">2.12</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="2" align="left" colspan="1">Abide II</td>
+                <td valign="top" rowspan="2" align="left" colspan="1">ABIDEII-USM_1</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">CON</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">15 (2)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">19.16</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">6.94</td>
+                <td valign="top" rowspan="2" align="center" colspan="1">No</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">ASD</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">16 (3)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">23.98</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">7.80</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="2" align="left" colspan="1">Abide I</td>
+                <td valign="top" rowspan="2" align="left" colspan="1">CALTECH</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">CON</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">1 (0)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">20.20</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–</td>
+                <td valign="top" rowspan="2" align="center" colspan="1">No</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">ASD</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">2 (1)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">38.50</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">25.03</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="2" align="left" colspan="1">Abide I</td>
+                <td valign="top" rowspan="2" align="left" colspan="1">CMU</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">CON</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">1 (0)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">33.00</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–</td>
+                <td valign="top" rowspan="2" align="center" colspan="1">No</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">ASD</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">2 (0)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">27.00</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">8.49</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="2" align="left" colspan="1">Abide I</td>
+                <td valign="top" rowspan="2" align="left" colspan="1">KKI</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">CON</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">20 (4)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">10.02</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">1.45</td>
+                <td valign="top" rowspan="2" align="center" colspan="1">No</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">ASD</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">28 (8)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">10.01</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">1.16</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="2" align="left" colspan="1">Abide I</td>
+                <td valign="top" rowspan="2" align="left" colspan="1">LEUVEN_1</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">CON</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">14 (0)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">21.86</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">4.11</td>
+                <td valign="top" rowspan="2" align="center" colspan="1">No</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">ASD</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">14 (0)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">23.00</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">2.83</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Abide I</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">LEUVEN_2</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">ASD</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">6 (3)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">14.82</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">1.25</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">No</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="2" align="left" colspan="1">Abide I</td>
+                <td valign="top" rowspan="2" align="left" colspan="1">MAX_MUN</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">CON</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">7 (0)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">12.86</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">7.31</td>
+                <td valign="top" rowspan="2" align="center" colspan="1">No</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">ASD</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">4 (0)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">14.00</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">6.16</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="2" align="left" colspan="1">Abide I</td>
+                <td valign="top" rowspan="2" align="left" colspan="1">NYU</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">CON</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">69 (10)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">14.86</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">7.28</td>
+                <td valign="top" rowspan="2" align="center" colspan="1">Yes</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">ASD</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">90 (26)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">15.32</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">6.04</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="2" align="left" colspan="1">Abide I</td>
+                <td valign="top" rowspan="2" align="left" colspan="1">OHSU</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">CON</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">12 (0)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">11.43</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">2.18</td>
+                <td valign="top" rowspan="2" align="center" colspan="1">No</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">ASD</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">13 (0)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">10.24</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">1.02</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="2" align="left" colspan="1">Abide I</td>
+                <td valign="top" rowspan="2" align="left" colspan="1">OLIN</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">CON</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">18 (3)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">16.39</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">3.47</td>
+                <td valign="top" rowspan="2" align="center" colspan="1">No</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">ASD</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">13 (2)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">16.85</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">3.85</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="2" align="left" colspan="1">Abide I</td>
+                <td valign="top" rowspan="2" align="left" colspan="1">PITT</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">CON</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">9 (0)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">18.70</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">7.11</td>
+                <td valign="top" rowspan="2" align="center" colspan="1">No</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">ASD</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">4 (2)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">24.91</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">8.11</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Abide I</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">SBL</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">CON</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">1 (0)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">35.00</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">No</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="2" align="left" colspan="1">Abide I</td>
+                <td valign="top" rowspan="2" align="left" colspan="1">SDSU</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">CON</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">12 (1)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">14.79</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">1.82</td>
+                <td valign="top" rowspan="2" align="center" colspan="1">No</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">ASD</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">21 (6)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">14.11</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">1.87</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="2" align="left" colspan="1">Abide I</td>
+                <td valign="top" rowspan="2" align="left" colspan="1">STANFORD</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">CON</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">14 (3)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">9.61</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">1.48</td>
+                <td valign="top" rowspan="2" align="center" colspan="1">No</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">ASD</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">19 (4)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">9.99</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">1.64</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="2" align="left" colspan="1">Abide I</td>
+                <td valign="top" rowspan="2" align="left" colspan="1">TRINITY</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">CON</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">21 (0)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">16.51</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">2.92</td>
+                <td valign="top" rowspan="2" align="center" colspan="1">No</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">ASD</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">25 (0)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">17.08</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">3.77</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="2" align="left" colspan="1">Abide I</td>
+                <td valign="top" rowspan="2" align="left" colspan="1">UCLA_1</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">CON</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">41 (6)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">13.10</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">2.62</td>
+                <td valign="top" rowspan="2" align="center" colspan="1">Yes</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">ASD</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">28 (4)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">13.23</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">2.03</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="2" align="left" colspan="1">Abide I</td>
+                <td valign="top" rowspan="2" align="left" colspan="1">UCLA_2</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">CON</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">9 (0)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">12.67</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">1.56</td>
+                <td valign="top" rowspan="2" align="center" colspan="1">No</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">ASD</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">4 (2)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">12.73</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.62</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="2" align="left" colspan="1">Abide I</td>
+                <td valign="top" rowspan="2" align="left" colspan="1">UM_1</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">CON</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">46 (8)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">12.80</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">2.37</td>
+                <td valign="top" rowspan="2" align="center" colspan="1">Yes</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">ASD</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">50 (17)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">13.95</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">3.14</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="2" align="left" colspan="1">Abide I</td>
+                <td valign="top" rowspan="2" align="left" colspan="1">UM_2</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">CON</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">13 (1)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">14.88</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">1.55</td>
+                <td valign="top" rowspan="2" align="center" colspan="1">No</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">ASD</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">21 (1)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">16.72</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">3.97</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="2" align="left" colspan="1">Abide I</td>
+                <td valign="top" rowspan="2" align="left" colspan="1">USM</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">CON</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">43 (0)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">23.84</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">8.47</td>
+                <td valign="top" rowspan="2" align="center" colspan="1">No</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">ASD</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">23 (0)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">20.55</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">8.29</td>
+              </tr>
+              <tr>
+                <td valign="top" rowspan="2" align="left" colspan="1">Abide I</td>
+                <td valign="top" rowspan="2" align="left" colspan="1">YALE</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">CON</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">28 (8)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">12.75</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">3.05</td>
+                <td valign="top" rowspan="2" align="center" colspan="1">No</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">ASD</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">27 (0)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">12.83</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">2.69</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <p>The table illustrates the sample composition: the site of data collection in alphabetical order (SITE_ID), the number of subjects categorized as ASD or CON (group #) and the number of female individuals in each group (females #), mean, and standard deviation of age per group (in years, respectively mean, age, and s.d. age). The last column describes if data contained in the specific site was used as test-data in the leave-site-out procedure.</p>
+          </table-wrap-foot>
+        </table-wrap>
+      </sec>
+      <sec id="s2_4">
+        <title>Resting-State Functional MRI Summary Measures</title>
+        <p>The preprocessed rs-fMRI images were transformed into nine <italic>summary measures</italic> that reduced the temporal dimension of the data to a single number per voxel by highlighting different statistical features of the time series. The summary measures chosen were:</p>
+        <list list-type="roman-upper">
+          <list-item>
+            <p><bold>Regional homogeneity (ReHo)</bold>, a voxel-based measure of brain activity which evaluates the similarity or synchronization between the time series of a given voxel and its nearest neighbors (<xref rid="B17" ref-type="bibr">17</xref>).</p>
+          </list-item>
+          <list-item>
+            <p><bold>Amplitude of low frequency fluctuations (ALFF)</bold>, defined as the total power within the frequency range between 0.01 and 0.1 Hz, and thus indexes the strength or intensity of low frequency oscillations (<xref rid="B18" ref-type="bibr">18</xref>, <xref rid="B19" ref-type="bibr">19</xref>).</p>
+          </list-item>
+          <list-item>
+            <p><bold>Fractional amplitude of low frequency fluctuations (fALFF)</bold>, defined as the power within the low-frequency range (0.01–0.1 Hz) divided by the total power in the entire detectable frequency range, representing the relative contribution of specific low frequency oscillations to the whole frequency range (<xref rid="B20" ref-type="bibr">20</xref>).</p>
+          </list-item>
+          <list-item>
+            <p><bold>Degree centrality (DC, weighted)</bold>, is a measure of local network connectivity and identifies the most connected nodes by counting the number of direct connections (edges) to all other nodes. As such, a node with high DC will have direct connections to many other nodes in the network. Degree centrality analysis tends to emphasize higher order cortical association areas while showing reduced sensitivity for paralimbic and subcortical regions (<xref rid="B20" ref-type="bibr">20</xref>, <xref rid="B21" ref-type="bibr">21</xref>).</p>
+          </list-item>
+          <list-item>
+            <p><bold>Eigenvector centrality (EC, weighted)</bold> is a measure of global network connectivity. The EC of a given node reflects the number of direct connections it has with other nodes that have high centrality (<xref rid="B21" ref-type="bibr">21</xref>).</p>
+          </list-item>
+          <list-item>
+            <p><bold>Local functional connectivity density (LFCD, weighted)</bold>, a quantification of the number of local and global functional connections for each voxel in the brain (<xref rid="B22" ref-type="bibr">22</xref>, <xref rid="B23" ref-type="bibr">23</xref>)</p>
+          </list-item>
+          <list-item>
+            <p><bold>Entropy</bold>, a measure of organization and predictability of a system (<xref rid="B17" ref-type="bibr">17</xref>).</p>
+          </list-item>
+          <list-item>
+            <p><bold>Voxel-mirrored homotopic connectivity (VMHC)</bold>, a quantification of functional homotopy by providing a voxel-wise measure of connectivity between hemispheres. This is done by computing the connectivity between each voxel in one hemisphere and its mirrored counterpart in the other (<xref rid="B20" ref-type="bibr">20</xref>, <xref rid="B21" ref-type="bibr">21</xref>).</p>
+          </list-item>
+          <list-item>
+            <p><bold>Auto-correlation lag</bold>, the correlation between its past and present states; thus, a high correlation indicates that the series state does not change over time (<xref rid="B24" ref-type="bibr">24</xref>).</p>
+          </list-item>
+        </list>
+        <p>The mean and standard deviation of the summary measures were calculated within voxels across brain volumes belonging to the training sample, and these values were used to normalize the entire dataset. This procedure, referred to as feature scaling, speeds up the convergence of the model during training. Moreover, in the particular context of the ABIDE dataset, in which imaging data are known to vary in quality and have been collected using different scanner hardware and sequence, the procedure might help to mitigate the heterogeneity of the data.</p>
+      </sec>
+      <sec id="s2_5">
+        <title>Network Architecture</title>
+        <p>In this work, we utilized a 3D CNN architecture to classify ASD from CON subjects. The architecture is inspired by (<xref rid="B16" ref-type="bibr">16</xref>). We reduce the number of layers and filters per layer to reduce the number of parameters to around 257 k, therefore reducing computational complexity and cost. Therefore, starting from Khosla et al.'s model, we performed a non-systematic parameter and hyper-parameter search, and carried out the full experiments on the best configuration. Before honing in on the above architecture we also experimented with 3D versions of the popular computer-vision architectures like ResNet-50 (<xref rid="B25" ref-type="bibr">25</xref>), Visual Geometry Group (VGG)-net (<xref rid="B26" ref-type="bibr">26</xref>), and it's variants without much success.</p>
+        <p>Our model (<xref ref-type="fig" rid="f1"><bold>Figure 1</bold></xref>) consisted in a first layer of average pooling of size 2 and stride 2, which functioned as a sort of down-sampling function. Two convolutional layers with a exponential linear unit (ELU) activation followed. The first convolutional layer had 64 filters of size 3 and the second convolutional layer had 16 filters of size 3. The convolutional layers were followed by a max-pooling layer of kernel dimension of 2. The output was flattened and fed to a first fully connected layer with 16 nodes and again ELU activation. The last layer was a fully connected layer with one node for final labels classification.</p>
+        <fig id="f1" position="float">
+          <label>Figure 1</label>
+          <caption>
+            <p>Schematic representation of our approach. First, the resting-state functional MRI (fMRI) data are summarized on the time domain while keeping the spatial resolution intact. The resulting 3D volume is then input to the 3D-convolutional neural network (CNN) models for the classification task. The 3D-CNN model used across experiments is schematically illustrated. Abbreviation: <bold>“</bold>Conv<bold>”</bold> stands for convolutional layer, and the n associated to each layer indicates the number of kernels. <bold>“</bold>Linear<bold>”</bold> stands for linear fully connected layer.</p>
+          </caption>
+          <graphic xlink:href="fpsyt-11-00440-g001"/>
+        </fig>
+        <p>In the SM-model approach, we used the architecture described above on each of the nine rs-fMRI summary measures, resulting in nine independent models. In the MM-ensemble approach, the classification problem is first independently solved for each summary measure as for the SM-model, but the final prediction is computed as the majority <italic>vote</italic> of the individual binary class predictions. In the MM-model approach, the input of the 3D-CNN is formed by concatenating the summary measures. Each channel is a summary measure, therefore the input is now represented as nine-channel 3D volumes. The other architectural parameters are kept the same.</p>
+        <p>We used the linear-SVM as a baseline to compare our 3D-CNN models against. For this purpose, the volumes of each participant were first flattened into a 1D array and voxels that were part of a brain mask were used as features for the SVM. The masks were created independently for each summary measure and contained only voxels that appeared as non-zero in at least 90% of the subjects. In the SM-model approach, we trained the linear-SVM on each of the nine summary measures. In the MM-ensemble approach, the outcome of the model was defined as the class with the majority SM-models votes. To perform the MM-model, for each subject, the nine volumes representing each of the nine summary measures were flattened and concatenated in a single 1D array. The linear-SVM was then trained on the 1D arrays. In all the linear-SVM experiments we used the default parameter options in the machine learning python package Scikit-learn<xref ref-type="fn" rid="fn5"><sup>5</sup></xref> (<xref rid="B27" ref-type="bibr">27</xref>, <xref rid="B28" ref-type="bibr">28</xref>).</p>
+      </sec>
+      <sec id="s2_6">
+        <title>Cross-Validation Procedure</title>
+        <p>Cross-validation is a resampling procedure used to evaluate machine learning models on independent data for a limited data sample. For each experiment, we implemented two cross-validation schemes: i) five-fold cross-validation (CV) and ii) a leave-site-out CV procedure.</p>
+        <p>Before implementing the five-fold cross-validation schemes, the data were split into training/validation-data, consisting of the 90% of the total dataset, and test-data, consisting of the remaining 10%. The five-fold cross-validation involved randomly dividing the set of observations into groups, or folds, of approximately equal size. The first fold is treated as validation set, and the model is fit on the remaining four folds, called the training set (<xref rid="B29" ref-type="bibr">29</xref>). In our application, the validation set was used to select the best trained model for each fold. To do so, during training we evaluated the performance on the validation set after each epoch. The model with the best accuracy on the validation set between epochs was used for testing. The test-data are therefore invariant across CV folds. Although this is not the most common application of K-fold CV, this procedure is often used in competitions [e.g., predictive analytic challenge—PAC, 2019, see (<xref rid="B30" ref-type="bibr">30</xref>)], it guarantees no contamination between training/validation-data and test-data, and, importantly the test-data can be easily interpreted as a common benchmark to compare models.</p>
+        <p>For the leave-site-out CV procedure, we selected five sites with the highest number of total subjects (ASD/total), namely New York University (NYU) (90/159), Kennedy Krieger Institute - 1 (KKI-I) (88/114), University of Miami - 1 (UM-I) (50/96), University of California, Los Angeles (UCLA)-I (28/69), Oregon Health &amp; Science University (OHSU)-I (42/64). In this method, each site was held out as the test set in turn. The rest of the data were randomly split into 90% of the set used for training and 10% used for validation. The validation set was used to select the best performing model between epochs, which was then applied to the test-site. In this way, for the leave-site-out CV we had as many test sets as sites (i.e., five).</p>
+      </sec>
+      <sec id="s2_7">
+        <title>Occlusion of Brain Regions</title>
+        <p>We performed an occlusion experiment to assess which regions of the brain maximally determined model performance. We iterated over all the regions of the Harvard-Oxford atlas (thresholded at 25 and downsampled at 4 mm to match our data resolution) systematically by occluding that part of the cortex with a mask set to be zero and monitoring the probability of the classifier. We reran the five fold CV procedure on the test dataset for each occluded region of interest (ROI) and calculated average balanced accuracy and F1 score between folds. The drop in performance when the ROI is removed from the data compared to the original data is a suggestion of how much the voxels contained in the ROI contributed to the original results. The 10 ROIs that contributed the most, hence that showed the most substantial drops, are reported.</p>
+      </sec>
+    </sec>
+    <sec sec-type="results" id="s3">
+      <title>Results</title>
+      <p>In our experiments we pursued the goal of classifying the rs-fMRI brain images of ASD subjects from healthy controls by means of their temporal summary measures. We assessed the potential of achieving this goal of each of our nine summary measures in independent models, the advantage of employing all the measures together in an ensemble model approach, and the use of the measures in a single model with as many channels as the summary measures as input. In the next sections, we illustrate the results obtained by the 3D-CNN models and by the linear-SVM.</p>
+      <sec id="s3_1">
+        <title>3D-Convolutional Neural Network Results</title>
+        <p>For our 3D-CNN architecture we used an architecture very similar to that of Khosla et al. (<xref rid="B16" ref-type="bibr">16</xref>). Other architectures like ResNet and VGG-net did not perform very well at all and therefore we only present results from the architecture described in the <italic>Network Architecture</italic>. The models were trained with a mini-batch of 32, for a maximum of 50 epochs. The loss of the validation set had converged by then. The neural network weights were optimized by the binary-cross entropy loss and Stochastic gradient descendent (SGD) with learning rate of 0.001 and momentum of 0.9. The same model and parameters were used across all experiments.</p>
+        <p>Regarding the variability in classification performance between models, we observed a difference between the two CV procedures. When assessed by five-fold CV procedure, all tested models performed at around 60% accuracy for the classification task (<xref ref-type="fig" rid="f2"><bold>Figure 2</bold></xref> and <xref rid="T2" ref-type="table"><bold>Table 2</bold></xref>), with little variation between models' performances. On the contrary, the leave-site-out CV procedure shows high variability in terms of model performances with relatively good performance for the NYU site and poor performance for the other sites (<xref ref-type="fig" rid="f3"><bold>Figure 3</bold></xref>, <xref rid="T3" ref-type="table"><bold>Table 3</bold></xref>, and <xref ref-type="supplementary-material" rid="ST1"><bold>Supplementary Table S1</bold></xref>).</p>
+        <fig id="f2" position="float">
+          <label>Figure 2</label>
+          <caption>
+            <p>Balanced accuracy and F1-score for the nine single measure (SM)-models trained on the summary measures, and for the MM-ensemble and multi-measure (MM)-model.</p>
+          </caption>
+          <graphic xlink:href="fpsyt-11-00440-g002"/>
+        </fig>
+        <table-wrap id="T2" position="float">
+          <label>Table 2</label>
+          <caption>
+            <p>Mean performance evaluated as balanced accuracy (accuracy) and F1-score obtained for 3D convolutional neural network (CNN) and linear support vector machine (SVM) with five-fold cross-validation (CV).</p>
+          </caption>
+          <table frame="hsides" rules="groups">
+            <thead>
+              <tr>
+                <th valign="top" align="left" rowspan="1" colspan="1"/>
+                <th valign="top" colspan="2" align="center" rowspan="1">3D-CNN</th>
+                <th valign="top" colspan="2" align="center" rowspan="1">SVM</th>
+              </tr>
+              <tr>
+                <th valign="top" align="left" rowspan="1" colspan="1"/>
+                <th valign="top" align="center" rowspan="1" colspan="1">Accuracy</th>
+                <th valign="top" align="center" rowspan="1" colspan="1">F1-score</th>
+                <th valign="top" align="center" rowspan="1" colspan="1">Accuracy</th>
+                <th valign="top" align="center" rowspan="1" colspan="1">F1-score</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">ReHo</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>0.64</bold>
+                </td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.65</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.66</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.66</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">fALFF</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.62</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.63</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.57</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.58</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Degree centrality</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.61</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.62</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.63</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.64</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">VMHC</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.61</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.62</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.62</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.62</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Eigenvector centrality</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.60</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.61</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.61</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.63</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Autocorr lag</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.59</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.61</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.57</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.59</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">LFCD</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.59</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.60</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.63</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.65</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">ALFF</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.59</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.60</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.57</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.58</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Entropy</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.54</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.49</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.56</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.57</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">MM ensemble</td>
+                <td valign="top" align="center" rowspan="1" colspan="1"><bold>0.6</bold>4</td>
+                <td valign="top" align="center" rowspan="1" colspan="1"><bold>0.6</bold>6</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>0.66</bold>
+                </td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>0.67</bold>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">MM model</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.59</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.60</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.61</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.62</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <p>In bold = Highest score in that column.</p>
+          </table-wrap-foot>
+        </table-wrap>
+        <fig id="f3" position="float">
+          <label>Figure 3</label>
+          <caption>
+            <p>Leave-site-out balanced accuracy and F1-score for the nine single measure (SM)-models trained on the summary measures mentioned on the y axis, and for the multi-measure (MM)-ensemble and MM-model for each test-site indicated in the legend.</p>
+          </caption>
+          <graphic xlink:href="fpsyt-11-00440-g003"/>
+        </fig>
+        <table-wrap id="T3" position="float">
+          <label>Table 3</label>
+          <caption>
+            <p>Mean performance evaluated as balanced accuracy (accuracy) and F1-score obtained for 3D convolutional neural network (CNN) and linear support vector machine (SVM) as SM-models, MM ensemble, and MM model with leave site out cross-validation (CV).</p>
+          </caption>
+          <table frame="hsides" rules="groups">
+            <thead>
+              <tr>
+                <th valign="top" align="left" rowspan="1" colspan="1"/>
+                <th valign="top" colspan="2" align="center" rowspan="1">3D-CNN</th>
+                <th valign="top" colspan="2" align="center" rowspan="1">SVM</th>
+              </tr>
+              <tr>
+                <th valign="top" align="left" rowspan="1" colspan="1"/>
+                <th valign="top" align="center" rowspan="1" colspan="1">Accuracy</th>
+                <th valign="top" align="center" rowspan="1" colspan="1">F1-score</th>
+                <th valign="top" align="center" rowspan="1" colspan="1">Accuracy</th>
+                <th valign="top" align="center" rowspan="1" colspan="1">F1-score</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">ReHo</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>0.62</bold>
+                </td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>0.64</bold>
+                </td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>0.63</bold>
+                </td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>0.62</bold>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">fALFF</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.59</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.63</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.61</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.61</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">VMHC</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.56</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.57</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.62</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.59</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Degree centrality</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.56</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.56</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.60</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.59</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">fALFF</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.54</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.56</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.57</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.54</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">LFCD</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.53</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.56</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.63</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.61</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Eigenvector centrality</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.51</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.49</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.59</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.57</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Entropy</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.51</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.49</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.53</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.52</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Autocorr</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.51</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.42</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.54</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.55</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">MM ensemble</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.56</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.59</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.53</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.56</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">MM model</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.56</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.58</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.61</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.62</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <p>See <xref ref-type="fig" rid="f3"><bold>Figure 3</bold></xref> and <xref ref-type="supplementary-material" rid="ST1"><bold>Supplementary Tables S1</bold></xref> and <xref ref-type="supplementary-material" rid="ST2"><bold>S2</bold></xref> for details on how each test site performed.</p>
+            <p>In bold = Highest score in that column.</p>
+          </table-wrap-foot>
+        </table-wrap>
+        <p>The overall best performing model was the MM-ensemble, which achieved balanced accuracy of 64% and F1 score of 66%, averaged over the five-folds of the CV procedure. With the leave-site-out CV procedure the performance of the MM-ensemble dropped to an average balanced accuracy of mean 56% and F1 score of 59%, suggesting that this model does not do well in generalizing to new sites. The overall lowest performance was obtained by the entropy SM-model.</p>
+        <p>Among the SM-models, the ReHo SM-model is the best performing and its classification accuracy is similar to the MM-ensemble when evaluated with five-fold CV (balanced accuracy mean: 64%, F1-score mean: 66%). Its performance remained comparable when tested using the leave-site-out CV procedure (balanced accuracy mean: 62%, F1-score mean: 64%).</p>
+        <p>The idea of the ensemble strategy is to learn several different weak learners and combine them to output predictions based on the multiple predictions returned by these weak models. Therefore the success of the MM-ensemble strategy should be due to the independent contribution of the information gathered from the nine summary measures. To assess that the SM-models are processing independent information to classify the subjects, we estimated Kendall-correlations between predictions of each SM-model, separately for each fold. If the correlation matrix shows a cluster of SM-models whose predictions are highly correlated, this would suggest that the SM-models are picking up on similar patterns to classify ASD from CON and therefore they share information. To assess the contribution of each measurement to the MM-ensemble output, we estimated Kendall-correlations between each SM-model and the MM-ensemble prediction, again separately for each fold. If any of the SM-models has a large influence on the MM-ensemble, this would appear as a stronger Kendall-correlation between their predictions. The correlation results, averaged between folds, are reported in <xref ref-type="fig" rid="f4"><bold>Figure 4</bold></xref>. There were no discernable clusters of SM-models whose predictions aligned, and all the correlations between SM-models ranged between 0.77 and 0.90. In the same fashion, none of the predictions of the SM-models stood out for correlating with the prediction of the MM-ensemble, and all the correlations ranged between 0.77 and 0.83. The analysis illustrates that variation in the degree of correlation between predictions of SM-models is more than variation between the correlation of each SM-model and the MM-ensemble prediction. Interestingly, while the ReHo SM-model and the MM-ensemble reached a similar performance accuracy, this cannot be explained as a more substantial contribution of ReHo to the MM-ensemble, since the correlation between the two is not stronger than between MM-ensemble and other SM-models predictions. These observations indicate that the MM-ensemble benefits from independent contributions from each of the SM-model outputs.</p>
+        <fig id="f4" position="float">
+          <label>Figure 4</label>
+          <caption>
+            <p>Kendall-correlations between classification predictions between models trained and tested with different summary measures (SM-models) and between each SM-models and the MM-ensemble. The last column and the last row show the correlation between the predictions of each SM-model and the MM-ensemble. The correlation is made on the common test-dataset, calculated for each K-fold separately and then averaged for visualization purposes. The color coding is the Kendall-correlation averaged between K-folds.</p>
+          </caption>
+          <graphic xlink:href="fpsyt-11-00440-g004"/>
+        </fig>
+      </sec>
+      <sec id="s3_2">
+        <title>Linear-Support Vector Machine Results</title>
+        <p>In order to establish a baseline for the performance of the 3D-CNN models, we performed the classification task following the same procedures but now using a linear SVM. As for the 3D-CNN experiments, we implemented the two evaluation schemes: 1) five-fold cross-validation (CV) and 2) a leave-site-out CV procedure. Linear-SVM does not require a validation procedure to select the algorithm, but to be able to compare the results to the one obtained by 3D-CNN experiments, we applied exactly the same procedure described above and limited the data used to train the linear-SVM to the 90% of the training/validation dataset. The averaged balanced accuracy and F1-score for each experiment evaluated <italic>via</italic> five-fold and leave-site-out CV are reported in <xref rid="T2" ref-type="table"><bold>Tables 2</bold></xref> and <xref rid="T3" ref-type="table"><bold>3</bold></xref> respectively (see also <xref ref-type="supplementary-material" rid="ST2"><bold>Supplementary Table S2</bold></xref> for results of single site in the leave-site-out CV).</p>
+        <p>The results of the linear-SVM confirmed the patterns identified by the 3D-CNN experiments with the linear-SVM performing the classification task at around the 60% accuracy level. The highest balanced accuracy and F1 scores were achieved by the MM-ensemble (66 and 67% respectively, five-fold CV), but it suffered when tested on new sites (balanced accuracy mean: 53%, F1-score mean: 56%). While the accuracy of the linear-SVM MM-ensemble evaluated by five-fold CV is in line with the one of the 3D-CNN counterpart, its decrease in performance when evaluated by leave-site-out CV was steeper than what was observed for the 3D-CNN MM-ensemble.</p>
+        <p>Again, the ReHo SM-model was the best performing model in comparison to other SM-models and performed comparable to the MM-ensemble when the outcome was evaluated with five-fold CV (balanced accuracy mean: 66%, F1-score mean: 66%). Interestingly, its performance remained comparable when evaluated using the leave-site-out procedure (balanced accuracy mean: 63%, F1-score mean: 62%). The lowest performance was again observed for the entropy SM-model.</p>
+      </sec>
+      <sec id="s3_3">
+        <title>Occlusion of Brain Regions Results</title>
+        <p>To explore which brain regions were maximally contributing to the classification results, we performed an occlusion experiment on the most successful summary measure: the ReHo, both as input to the SM-model and the SVM. Mean and standard deviation across folds of the 10 regions which occlusion drove the steeper drop in performance are reported in <xref ref-type="fig" rid="f5"><bold>Figures 5</bold></xref> (SM-model) and <xref ref-type="fig" rid="f6"><bold>Figure 6</bold></xref> (SVM). Interestingly, the occlusion experiments highlighted many common areas which masking caused a sensible corruption of classification performance. The precuneus was the region maximally driving the results in all the experiments.</p>
+        <fig id="f5" position="float">
+          <label>Figure 5</label>
+          <caption>
+            <p>Results of the occlusion experiment for the regional homogeneity (ReHo) SM-model, balanced accuracy, and f1 are reported as mean and standard deviation across five folds. “all brain” indicates the results obtained by the original model, when all the ROIs are included. Region of interests (ROIs) have been identified using the Harvard-Oxford atlas (threshold at 25 and downsampled at 4 mm). The ROI names indicate the results when the named ROI is masked from the brain volume, therefore the drop from the “all brain” result is a suggestion of how much the voxels contained in the ROI contributed to the original results. Only the 10 ROIs that contributed the most are reported. Sup., superior portion; Inf., inferior portion; Lat., lateral portion; Post., posterior; Temp., temporal.</p>
+          </caption>
+          <graphic xlink:href="fpsyt-11-00440-g005"/>
+        </fig>
+        <fig id="f6" position="float">
+          <label>Figure 6</label>
+          <caption>
+            <p>Results of the occlusion experiment for the regional homogeneity (ReHo) linear-support vector machine (SVM), balanced accuracy, and f1 are reported as mean and standard deviation across five folds. “All brain” indicates the results obtained by the original model, when all the region of interests (ROIs) are included. ROIs have been identified using the Harvard-Oxford atlas (threshold at 25 and downsampled at 4 mm). The ROI names indicate the results when the named ROI is masked from the brain volume, therefore the drop from the “all brain” result is a suggestion of how much the voxels contained in the ROI contributed to the original results. Only the 10 ROIs that contributed the most are reported. Abbreviations are as in <xref ref-type="fig" rid="f5"><bold>Figure 5</bold></xref>.</p>
+          </caption>
+          <graphic xlink:href="fpsyt-11-00440-g006"/>
+        </fig>
+      </sec>
+    </sec>
+    <sec sec-type="discussion" id="s4">
+      <title>Discussion</title>
+      <p>We have proposed a machine learning solution for using rs-fMRI that does not compromise its spatial properties. And we presented an empirical analysis of how the choice of summary of the temporal dimension <italic>via</italic> various statistical measures can impact the performance of a 3D convolutional neural network in classifying ASD subjects from the control subjects. We considered nine different measures and used them as inputs in a 3D-CNN model either as i) independent inputs to different 3D-CNNs (SM-models), ii) an ensemble of results from the nine independent 3D-CNN models to one output (MM-ensemble), or iii) a combined nine channel 3D-CNN model that used each measure as a channel.</p>
+      <p>Our analyses suggest that using a single summary measure is often suboptimal for training 3D-CNNs, and more accurate predictions can be achieved with an ensemble approach, even in a heterogeneous dataset such as ABIDE I+II. Each single summary measure extracts specific information from the rs-fMRI data, capturing local or global aspects of the connectivity of the voxels in the volumes. Even though different modalities may result in similar accuracy performance, the trained models may contain distinct information. This is confirmed by the correlation matrix of predictions (<xref ref-type="fig" rid="f4"><bold>Figure 4</bold></xref>). We calculated the agreement between all the SM-models and each SM-model with the MM-ensemble. Combining models from different modalities enhances the performance and creating an ensemble of these measures at the last stage of outcome prediction, as done by the MM-ensemble model, seems to take advantage of the multiple representation of the data without being affected by the increased noise.</p>
+      <p>Our MM-model's average performance was below 60%, which is 4% less than the MM-ensemble and less than many of the SM models. Here, summary measures that are not conveying information about the classification task but who were pooled together with informative summary measures potentially increased the noise of the input data and therefore complicated the classification task for the model.</p>
+      <p>The concept of transforming weak learning algorithms into stronger learners by ensembling them has been proven successful in a number of computer vision tasks (<xref rid="B31" ref-type="bibr">31</xref>, <xref rid="B32" ref-type="bibr">32</xref>). In the study of Khosla and colleagues, (<xref rid="B16" ref-type="bibr">16</xref>), the authors affirmed to have overcome the limitation of traditional machine learning models for connectomes that rely on region-based summary statistics by ensembling the different atlases into a single model, with a small gain in accuracy, for a final performance of 72.3%.</p>
+      <p>Even though the MM-ensemble approach resulted in the best performance on the ASD classification, also some of the summary measures reached a good classification performance. In particular ReHo resulted in the best accuracy performance across the SM-models. However, this knowledge is only available after performing the experiments and thus difficult to anticipate when choosing a particular summary measure. The MM-ensemble approach seems to benefit from the performance of ReHo without the need to select this measure <italic>a priori</italic>. Differences in ReHo between ASD and CON have indeed been reported in the literature. For example, the pericalcarine visual cortex was found to be locally hyperconnected in the ASD compared to CON (<xref rid="B33" ref-type="bibr">33</xref>), and subjects with ASD have right dominant ReHo alterations of resting-state brain activity, i.e., areas known to exhibit abnormal stimulus or task related functionality (<xref rid="B34" ref-type="bibr">34</xref>). Decreased ReHo in the ASD group compared to the CON group was found in bilateral middle and superior frontal gyri, left superior parietal lobule, and right precuneus. Increased ReHo in the ASD group compared to the CON group was found in bilateral middle temporal and right parahippocampal gyri. The authors also report that the ReHo in the precuneus correlated with the autistic trait score. Jiang and colleagues found enhanced local connectivity in the middle frontal cortex, left precuneus, and right superior temporal sulcus, and reduced local connectivity in the right insular cortex using ReHo (<xref rid="B35" ref-type="bibr">35</xref>).</p>
+      <p>These results are consistent with our occlusion experiments, which identified the precuneus and occipital cortex as the regions of the brain that had the most influence on the ReHo-SM-model and the ReHo-SVM outputs. The occlusion procedure used here has the advantage to be easily interpretable and to open a window to the information used by the models to perform the given task, but it is merely descriptive and no strong conclusions can be drawn from its results. The drop in performance after occluding the precuneus is of only ~3 percentage points, suggesting that the algorithms are more likely identifying patterns spanning more than one single brain region.</p>
+      <p>The studies mentioned used small groups to detect differences in ReHo between groups, and our findings on the large ABIDE I+II dataset suggest that ReHo is indeed a sensitive measure for detecting cortical abnormalities in autism.</p>
+      <p>The field of neuroimaging is benefiting from the development of deep learning techniques and a growing number of studies have applied deep learning for classification of ASD using the ABIDE dataset. Unfortunately, comparison between results is made hard by the heterogeneity of data preprocessing, data selection, and model selection procedures. We followed the data selection procedure described in (<xref rid="B16" ref-type="bibr">16</xref>). They obtained a top accuracy of 72.3% by summarizing the temporal dimension of the data in connectome matrices calculated averaging stochastically determined regions of interest. Their model therefore outperformed our best model, the MM-ensemble, which reached an average balanced accuracy of 64 and 66% F1-score in the K-fold CV procedure (but reduced performance in leave-site-out procedure, see <xref rid="T3" ref-type="table"><bold>Table 3</bold></xref>). While they used data from ABIDE-I for training and test on ABIDE-II, we trained all our models on a mix of data from both ABIDE-I+II. Since the increased heterogeneity of our training dataset could possibly explain the decrease in performance, we repeated the analyses of the 3D-CNN models, training the models on the data from ABIDE-I and testing the performance on ABIDE-II (the results are reported in <xref ref-type="supplementary-material" rid="ST3"><bold>Supplementary Table S3</bold></xref>). Our approach of summarizing the rs-fMRI data on the temporal domain still showed lower performances compared with (<xref rid="B16" ref-type="bibr">16</xref>). These differences might be because Khosla et al., used the connectivity between ROIs and not the statistics from individual voxels to perform the classification, thus hinting at the possibility that connectivity patterns across the brain contain crucial information for the classification between ASD and CON.</p>
+      <p>The 3D CNN model we employed in our series of experiments was inspired by the one described in Khosla and colleagues but we decrease the number of CNN layers from four to two. The reason behind this choice lies in the fact that, contrary to the original model, we do not apply regularization techniques to our 3D-CNN. Our model has a total of 257,585 trainable parameters. This number of free parameters is “small” if compared to some state of art networks for computer vision. As comparison, the ResNet 50 has over 23 millions trainable parameters, but the number of brain volumes available for training is also critically smaller than the number of images a ResNet50 was trained on (e.g., ImageNet has &gt; 14 millions of images). The number of trainable parameters in our model is suitable for the number of training examples, and a larger network will be more prone to overfitting. Indeed, when our 3D-CNN model is left training for enough time (approximately 50 epochs), it is able to reach 100% accuracy on the training set at the expense of generalizability to new data: a clear indication of overfitting. For these reasons described, it is unlikely that the 3D-CNN model was too shallow or not trained enough.</p>
+      <p>We built our model on the example of another model in the literature, which has proven successful on the same task of classifying ASD from CON. The original model was trained on different features then ours. The relatively low classification accuracy that even our best model obtained might be a consequence of this choice: the parameters that made the original model successful did not generalize to our input data. Indeed we performed a non-systematic parameter and hyper-parameter search and carried out the full experiments on the best configuration. Unfortunately, the numbers of adjustable parameters in CNN models are extremely high, and it would be computationally prohibitive to carry out a full systematic search.</p>
+      <p>The ABIDE dataset is composed of distinct datasets collected by different institutions. The data collected vary in terms of demographics of the participants, scanning hardware, and sequences for data collection, therefore the images vary in image quality and resolution. Differences in resolution do not present a concern, because all the images were resampled to the same 4x4x4 mm3 voxel size in MNI space. Differences in sample composition and data acquisition contribute considerably to the heterogeneity of the data, which has been identified as one of the most important limitations of the ABIDE dataset, and therefore might explain the low accuracy achieved (<xref rid="B36" ref-type="bibr">36</xref>).</p>
+      <p>In general, heterogeneity of the dataset has been pointed out by many as a limitation in performing ML on neuroimaging data (<xref rid="B37" ref-type="bibr">37</xref>). Classification accuracy drops significantly in larger population samples and especially when the data are aggregated from different sites (<xref rid="B36" ref-type="bibr">36</xref>).</p>
+      <p>Another possibility is that the time domain of rs-fMRI data contains properties that get lost when the summarizing procedures are applied. Correlation and its derivative (like our summary measures) are first-order transformation, which does not account for higher-order interactions between time courses. In previous work of our group, we maintained the time dimension while summarizing the spatial dimension using ROIs (Harvard Oxford atlas). This approach obtained an accuracy of 68% using a simple 1D-CNN model on the ABIDE I+II dataset (<xref rid="B3" ref-type="bibr">3</xref>).</p>
+      <p>Another interesting finding is that the linear-SVM performed as well, and in certain instances better, than the 3D-CNN models. He et al., (<xref rid="B8" ref-type="bibr">8</xref>), have found that SVM do as well as 3D-CNNs in other tasks as well. We hypothesize that in our task, there was no apparent underlying structure in these 3D summary measures that could be exploited. A linear-SVM can be thought of as a fully connected neural network with non-linear activation function (sign function). Our 3D-CNN included also a fully connected last layer that can again be thought of as an SVM on the representations learnt by preceding convolutional layers. The fact that the 3D-CNN architecture could not outperform the linear-SVM suggests that either there were no low-dimensional patterns that capture the essence of the disorder in these summary measures, or that the amount of data is insufficient for the 3D-CNN to learn interesting structures. The amount of data available might not be sufficient to leverage the ability of CNNs to detect patterns. CNNs are highly flexible models that have been developed in the context of “big data” settings. The sample size in our experiments is large but probably not large enough to take full advantage of CNN models. This could explain accuracies similar to those of much less flexible linear-SVM models.</p>
+      <p>We have shown that simple temporal transformation can lead to accuracies comparable to state-of-the-art for a complex task like classifying ASD from control subjects. But we also found that there is not much advantage in using a 3D-CNN architecture for this task. We have, including in our previous studies and this, shown various ways of reducing the dimension of the rs-fMRI signal before feeding it into a machine learning algorithm. In the future, we plan to utilize the full 4D structure of the rs-fMRI without compromising the resolution in either time or space. This can be achieved for example by exploiting larger datasets like the UK Biobank<xref ref-type="fn" rid="fn6"><sup>6</sup></xref> to learn representations for rs-fMRI signals which can then be used in small-sample psychiatric datasets like ABIDE.</p>
+    </sec>
+    <sec sec-type="data-availability" id="s5">
+      <title>Data Availability Statement</title>
+      <p>The datasets generated and the 3D convolutional models used for this study are available on request to the corresponding author.</p>
+    </sec>
+    <sec id="s6">
+      <title>Author Contributions</title>
+      <p>SG and RT contributed equally to the paper and are co-first authors. SG performed the experiments and drafted the first version of the manuscript. RT designed the architecture of the models and contributed to the manuscript. RT and GW conceived the problem. LC, AA-G, and PZ contributed to designing the experiments and preprocessing of neuroimaging data. All authors contributed to the final manuscript.</p>
+    </sec>
+    <sec sec-type="funding-information" id="s7">
+      <title>Funding</title>
+      <p>This work was supported by the Netherlands Organization for Scientific research (NWO/ZonMw Vidi 016.156.318).</p>
+    </sec>
+    <sec id="s8">
+      <title>Conflict of Interest</title>
+      <p>GW received funding from Philips Research for another research project.</p>
+      <p>The remaining authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.</p>
+    </sec>
+  </body>
+  <back>
+    <fn-group>
+      <fn id="fn1">
+        <label>1</label>
+        <p>
+          <uri xlink:type="simple" xlink:href="https://github.com/galloselene/TempStats_3D-CNN.git">https://github.com/galloselene/TempStats_3D-CNN.git</uri>
+        </p>
+      </fn>
+      <fn id="fn2">
+        <label>2</label>
+        <p>
+          <uri xlink:type="simple" xlink:href="http://fcon_1000.projects.nitrc.org/indi/abide/">http://fcon_1000.projects.nitrc.org/indi/abide/</uri>
+        </p>
+      </fn>
+      <fn id="fn3">
+        <label>3</label>
+        <p>
+          <uri xlink:type="simple" xlink:href="http://preprocessed-connectomes-project.org/abide/">http://preprocessed-connectomes-project.org/abide/</uri>
+        </p>
+      </fn>
+      <fn id="fn4">
+        <label>4</label>
+        <p>
+          <uri xlink:type="simple" xlink:href="https://fcp-indi.github.io/docs/user/quick.html">https://fcp-indi.github.io/docs/user/quick.html</uri>
+        </p>
+      </fn>
+      <fn id="fn5">
+        <label>5</label>
+        <p>
+          <uri xlink:type="simple" xlink:href="https://scikit-learn.org/">https://scikit-learn.org/</uri>
+        </p>
+      </fn>
+      <fn id="fn6">
+        <label>6</label>
+        <p>
+          <uri xlink:type="simple" xlink:href="https://www.ukbiobank.ac.uk/">https://www.ukbiobank.ac.uk/</uri>
+        </p>
+      </fn>
+    </fn-group>
+    <sec sec-type="supplementary-material" id="s9">
+      <title>Supplementary Material</title>
+      <p>The Supplementary Material for this article can be found online at: <ext-link ext-link-type="uri" xlink:href="https://www.frontiersin.org/articles/10.3389/fpsyt.2020.00440/full#supplementary-material">https://www.frontiersin.org/articles/10.3389/fpsyt.2020.00440/full#supplementary-material</ext-link></p>
+      <supplementary-material content-type="local-data" id="ST1">
+        <media xlink:href="Table_1.docx">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="ST2">
+        <media xlink:href="Table_2.docx">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="ST3">
+        <media xlink:href="Table_3.docx">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+    </sec>
+    <ref-list>
+      <title>References</title>
+      <ref id="B1">
+        <label>1</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Woodward</surname><given-names>ND</given-names></name><name><surname>Cascio</surname><given-names>CJ</given-names></name></person-group>
+<article-title>Resting-State Functional Connectivity in Psychiatric Disorders</article-title>. <source>JAMA Psychiatry</source> (<year>2015</year>) <volume>72</volume>:<fpage>743</fpage>.  <pub-id pub-id-type="doi">10.1001/jamapsychiatry.2015.0484</pub-id>
+<pub-id pub-id-type="pmid">26061674</pub-id></mixed-citation>
+      </ref>
+      <ref id="B2">
+        <label>2</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>LeCun</surname><given-names>Y</given-names></name><name><surname>Bengio</surname><given-names>Y</given-names></name><name><surname>Hinton</surname><given-names>G</given-names></name></person-group>
+<article-title>Deep learning</article-title>. <source>Nature</source> (<year>2015</year>) <volume>521</volume>:<page-range>436–44</page-range>.  <pub-id pub-id-type="doi">10.1038/nature14539</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B3">
+        <label>3</label>
+        <mixed-citation publication-type="other">
+<person-group person-group-type="author"><name><surname>Gazzar</surname><given-names>AE</given-names></name><name><surname>El Gazzar</surname><given-names>A</given-names></name><name><surname>Cerliani</surname><given-names>L</given-names></name><name><surname>van Wingen</surname><given-names>G</given-names></name><name><surname>Thomas</surname><given-names>RM</given-names></name></person-group>
+<article-title>Simple 1-D Convolutional Networks for Resting-State fMRI Based Classification in Autism</article-title>. <source>2019 Int Joint Conf Neural Networks (IJCNN)</source> (<year>2019</year>) <fpage>1</fpage>–<lpage>6</lpage>.  <pub-id pub-id-type="doi">10.1109/ijcnn.2019.8852002</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B4">
+        <label>4</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Sherkatghanad</surname><given-names>Z</given-names></name><name><surname>Akhondzadeh</surname><given-names>M</given-names></name><name><surname>Salari</surname><given-names>S</given-names></name><name><surname>Zomorodi-Moghadam</surname><given-names>M</given-names></name><name><surname>Abdar</surname><given-names>M</given-names></name><name><surname>Acharya</surname><given-names>UR</given-names></name><etal/></person-group>
+<article-title>Automated Detection of Autism Spectrum Disorder Using a Convolutional Neural Network</article-title>. <source>Front Neurosci</source> (<year>2020</year>) <volume>13</volume>:<elocation-id>736</elocation-id>. <pub-id pub-id-type="doi">10.3389/fnins.2019.01325</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B5">
+        <label>5</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Heinsfeld</surname><given-names>AS</given-names></name><name><surname>Franco</surname><given-names>AR</given-names></name><name><surname>Craddock</surname><given-names>RC</given-names></name><name><surname>Buchweitz</surname><given-names>A</given-names></name><name><surname>Meneguzzi</surname><given-names>F</given-names></name></person-group>
+<article-title>Identification of autism spectrum disorder using deep learning and the ABIDE dataset</article-title>. <source>NeuroImage Clin</source> (<year>2018</year>) <volume>17</volume>:<fpage>16</fpage>–<lpage>23</lpage>. <pub-id pub-id-type="doi">10.1016/j.nicl.2017.08.017</pub-id>
+<pub-id pub-id-type="pmid">29034163</pub-id></mixed-citation>
+      </ref>
+      <ref id="B6">
+        <label>6</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Guo</surname><given-names>X</given-names></name><name><surname>Chen</surname><given-names>H</given-names></name><name><surname>Long</surname><given-names>Z</given-names></name><name><surname>Duan</surname><given-names>X</given-names></name><name><surname>Zhang</surname><given-names>Y</given-names></name><name><surname>Chen</surname><given-names>H</given-names></name></person-group>
+<article-title>Atypical developmental trajectory of local spontaneous brain activity in autism spectrum disorder</article-title>. <source>Sci Rep</source> (<year>2017</year>) <volume>7</volume>:<elocation-id>39822</elocation-id>. <pub-id pub-id-type="doi">10.1038/srep39822</pub-id>
+<pub-id pub-id-type="pmid">28057930</pub-id></mixed-citation>
+      </ref>
+      <ref id="B7">
+        <label>7</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Li</surname><given-names>G</given-names></name><name><surname>Rossbach</surname><given-names>K</given-names></name><name><surname>Jiang</surname><given-names>W</given-names></name><name><surname>Du</surname><given-names>Y</given-names></name></person-group>
+<article-title>Resting-state brain activity in Chinese boys with low functioning autism spectrum disorder</article-title>. <source>Ann Gen Psychiatry</source> (<year>2018</year>) <volume>17</volume>:<fpage>47</fpage>. <pub-id pub-id-type="doi">10.1186/s12991-018-0217-z</pub-id>
+<pub-id pub-id-type="pmid">30473720</pub-id></mixed-citation>
+      </ref>
+      <ref id="B8">
+        <label>8</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>He</surname><given-names>T</given-names></name><name><surname>Kong</surname><given-names>R</given-names></name><name><surname>Holmes</surname><given-names>AJ</given-names></name><name><surname>Nguyen</surname><given-names>M</given-names></name><name><surname>Sabuncu</surname><given-names>MR</given-names></name><name><surname>Eickhoff</surname><given-names>SB</given-names></name><etal/></person-group>
+<article-title>Deep Neural Networks and Kernel Regression Achieve Comparable Accuracies for Functional Connectivity Prediction of Behavior and Demographics</article-title>. <source>Neuroimage.</source> (<year>2020</year>) <volume>206</volume>:<fpage>116276</fpage>.  <pub-id pub-id-type="doi">10.1101/473603</pub-id>
+<pub-id pub-id-type="pmid">31610298</pub-id></mixed-citation>
+      </ref>
+      <ref id="B9">
+        <label>9</label>
+        <mixed-citation publication-type="other">
+<person-group person-group-type="author"><name><surname>Schulz</surname><given-names>M-A</given-names></name><name><surname>Thomas Yeo</surname><given-names>BT</given-names></name><name><surname>Vogelstein</surname><given-names>JT</given-names></name><name><surname>Mourao-Miranada</surname><given-names>J</given-names></name><name><surname>Kather</surname><given-names>JN</given-names></name><name><surname>Kording</surname><given-names>K</given-names></name><etal/></person-group>
+<article-title>Deep learning for brains?: Different linear and nonlinear scaling in UK Biobank brain images vs. machine-learning datasets</article-title>. <source>BioRxiv</source> (<year>2020</year>).  <pub-id pub-id-type="doi">10.1101/757054</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B10">
+        <label>10</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Di Martino</surname><given-names>A</given-names></name><name><surname>Yan</surname><given-names>C-G</given-names></name><name><surname>Li</surname><given-names>Q</given-names></name><name><surname>Denio</surname><given-names>E</given-names></name><name><surname>Castellanos</surname><given-names>FX</given-names></name><name><surname>Alaerts</surname><given-names>K</given-names></name><etal/></person-group>
+<article-title>The autism brain imaging data exchange: towards a large-scale evaluation of the intrinsic brain architecture in autism</article-title>. <source>Mol Psychiatry</source> (<year>2014</year>) <volume>19</volume>:<page-range>659–67</page-range>. <pub-id pub-id-type="doi">10.1038/mp.2013.78</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B11">
+        <label>11</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Van Dijk</surname><given-names>KRA</given-names></name><name><surname>Hedden</surname><given-names>T</given-names></name><name><surname>Venkataraman</surname><given-names>A</given-names></name><name><surname>Evans</surname><given-names>KC</given-names></name><name><surname>Lazar</surname><given-names>SW</given-names></name><name><surname>Buckner</surname><given-names>RL</given-names></name></person-group>
+<article-title>Intrinsic functional connectivity as a tool for human connectomics: theory, properties, and optimization</article-title>. <source>J Neurophysiol</source> (<year>2010</year>) <volume>103</volume>:<fpage>297</fpage>–<lpage>321</lpage>. <pub-id pub-id-type="doi">10.1152/jn.00783.2009</pub-id>
+<pub-id pub-id-type="pmid">19889849</pub-id></mixed-citation>
+      </ref>
+      <ref id="B12">
+        <label>12</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Cameron</surname><given-names>C</given-names></name><name><surname>Sharad</surname><given-names>S</given-names></name><name><surname>Brian</surname><given-names>C</given-names></name><name><surname>Ranjeet</surname><given-names>K</given-names></name><name><surname>Satrajit</surname><given-names>G</given-names></name><name><surname>Chaogan</surname><given-names>Y</given-names></name><etal/></person-group>
+<article-title>Towards Automated Analysis of Connectomes: The Configurable Pipeline for the Analysis of Connectomes (C-PAC)</article-title>. <source>Front Neuroinform</source> (<year>2013</year>) <volume>7</volume>.  <pub-id pub-id-type="doi">10.3389/conf.fninf.2013.09.00042</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B13">
+        <label>13</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Friston</surname><given-names>KJ</given-names></name><name><surname>Holmes</surname><given-names>AP</given-names></name><name><surname>Worsley</surname><given-names>KJ</given-names></name><name><surname>Poline J</surname><given-names>-P.</given-names></name><name><surname>Frith</surname><given-names>CD</given-names></name><name><surname>Frackowiak</surname><given-names>RSJ</given-names></name></person-group>
+<article-title>Statistical parametric maps in functional imaging: A general linear approach</article-title>. <source>Hum Brain Mapp</source> (<year>1994</year>) <volume>2</volume>:<fpage>189</fpage>–<lpage>210</lpage>. <pub-id pub-id-type="doi">10.1002/hbm.460020402</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B14">
+        <label>14</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Behzadi</surname><given-names>Y</given-names></name><name><surname>Restom</surname><given-names>K</given-names></name><name><surname>Liau</surname><given-names>J</given-names></name><name><surname>Liu</surname><given-names>TT</given-names></name></person-group>
+<article-title>A component based noise correction method (CompCor) for BOLD and perfusion based fMRI</article-title>. <source>Neuroimage</source> (<year>2007</year>) <volume>37</volume>:<fpage>90</fpage>–<lpage>101</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2007.04.042</pub-id>
+<pub-id pub-id-type="pmid">17560126</pub-id></mixed-citation>
+      </ref>
+      <ref id="B15">
+        <label>15</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Avants</surname><given-names>BB</given-names></name><name><surname>Tustison</surname><given-names>N</given-names></name><name><surname>Song</surname><given-names>G</given-names></name></person-group>
+<article-title>Advanced normalization tools (ANTS)</article-title>. <source>Insight J</source> (<year>2009</year>) <volume>2</volume>:<fpage>1</fpage>–<lpage>35</lpage>.
+</mixed-citation>
+      </ref>
+      <ref id="B16">
+        <label>16</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Khosla</surname><given-names>M</given-names></name><name><surname>Jamison</surname><given-names>K</given-names></name><name><surname>Kuceyeski</surname><given-names>A</given-names></name><name><surname>Sabuncu</surname><given-names>MR</given-names></name></person-group>
+<article-title>Ensemble learning with 3D convolutional neural networks for functional connectome-based prediction</article-title>. <source>NeuroImage</source> (<year>2019</year>) <volume>199</volume>:<page-range>651–62</page-range>.  <pub-id pub-id-type="doi">10.1016/j.neuroimage.2019.06.012</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B17">
+        <label>17</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Zang</surname><given-names>Y</given-names></name><name><surname>Jiang</surname><given-names>T</given-names></name><name><surname>Lu</surname><given-names>Y</given-names></name><name><surname>He</surname><given-names>Y</given-names></name><name><surname>Tian</surname><given-names>L</given-names></name></person-group>
+<article-title>Regional homogeneity approach to fMRI data analysis</article-title>. <source>NeuroImage</source> (<year>2004</year>) <volume>22</volume>:<fpage>394</fpage>–<lpage>400</lpage>.  <pub-id pub-id-type="doi">10.1016/j.neuroimage.2003.12.030</pub-id>
+<pub-id pub-id-type="pmid">15110032</pub-id></mixed-citation>
+      </ref>
+      <ref id="B18">
+        <label>18</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Zang</surname><given-names>Y-F</given-names></name><name><surname>He</surname><given-names>Y</given-names></name><name><surname>Zhu</surname><given-names>C-Z</given-names></name><name><surname>Cao</surname><given-names>Q-J</given-names></name><name><surname>Sui</surname><given-names>M-Q</given-names></name><name><surname>Liang</surname><given-names>M</given-names></name><etal/></person-group>
+<article-title>Altered baseline brain activity in children with ADHD revealed by resting-state functional MRI</article-title>. <source>Brain Dev</source> (<year>2007</year>) <volume>29</volume>:<fpage>83</fpage>–<lpage>91</lpage>. <pub-id pub-id-type="doi">10.1016/j.braindev.2006.07.002</pub-id>
+<pub-id pub-id-type="pmid">16919409</pub-id></mixed-citation>
+      </ref>
+      <ref id="B19">
+        <label>19</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Zou</surname><given-names>Q-H</given-names></name><name><surname>Zhu</surname><given-names>C-Z</given-names></name><name><surname>Yang</surname><given-names>Y</given-names></name><name><surname>Zuo</surname><given-names>X-N</given-names></name><name><surname>Long</surname><given-names>X-Y</given-names></name><name><surname>Cao</surname><given-names>Q-J</given-names></name><etal/></person-group>
+<article-title>An improved approach to detection of amplitude of low-frequency fluctuation (ALFF) for resting-state fMRI: Fractional ALFF</article-title>. <source>J Neurosci Methods</source> (<year>2008</year>) <volume>172</volume>:<page-range>137–41</page-range>.  <pub-id pub-id-type="doi">10.1016/j.jneumeth.2008.04.012</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B20">
+        <label>20</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Zuo</surname><given-names>X-N</given-names></name><name><surname>Di Martino</surname><given-names>A</given-names></name><name><surname>Kelly</surname><given-names>C</given-names></name><name><surname>Shehzad</surname><given-names>ZE</given-names></name><name><surname>Gee</surname><given-names>DG</given-names></name><name><surname>Klein</surname><given-names>DF</given-names></name><etal/></person-group>
+<article-title>The oscillating brain: complex and reliable</article-title>. <source>Neuroimage</source> (<year>2010</year>) <volume>49</volume>:<page-range>1432–45</page-range>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2009.09.037</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B21">
+        <label>21</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Zuo</surname><given-names>X-N</given-names></name><name><surname>Ehmke</surname><given-names>R</given-names></name><name><surname>Mennes</surname><given-names>M</given-names></name><name><surname>Imperati</surname><given-names>D</given-names></name><name><surname>Xavier Castellanos</surname><given-names>F</given-names></name><name><surname>Sporns</surname><given-names>O</given-names></name><etal/></person-group>
+<article-title>Network Centrality in the Human Functional Connectome</article-title>. <source>Cereb Cortex</source> (<year>2012</year>) <volume>22</volume>:<page-range>1862–75</page-range>.  <pub-id pub-id-type="doi">10.1093/cercor/bhr269</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B22">
+        <label>22</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Wang</surname><given-names>Z</given-names></name><name><surname>Li</surname><given-names>Y</given-names></name><name><surname>Childress</surname><given-names>AR</given-names></name><name><surname>Detre</surname><given-names>JA</given-names></name></person-group>
+<article-title>Brain entropy mapping using fMRI</article-title>. <source>PloS One</source> (<year>2014</year>) <volume>9</volume>:<elocation-id>e89948</elocation-id>. <pub-id pub-id-type="doi">10.1371/journal.pone.0089948</pub-id>
+<pub-id pub-id-type="pmid">24657999</pub-id></mixed-citation>
+      </ref>
+      <ref id="B23">
+        <label>23</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Tomasi</surname><given-names>D</given-names></name><name><surname>Volkow</surname><given-names>ND</given-names></name></person-group>
+<article-title>Association between functional connectivity hubs and brain networks</article-title>. <source>Cereb Cortex</source> (<year>2011</year>) <volume>21</volume>:<page-range>2003–13</page-range>. <pub-id pub-id-type="doi">10.1093/cercor/bhq268</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B24">
+        <label>24</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kaneoke</surname><given-names>Y</given-names></name><name><surname>Donishi</surname><given-names>T</given-names></name><name><surname>Iwatani</surname><given-names>J</given-names></name><name><surname>Ukai</surname><given-names>S</given-names></name><name><surname>Shinosaki</surname><given-names>K</given-names></name><name><surname>Terada</surname><given-names>M</given-names></name></person-group>
+<article-title>Variance and autocorrelation of the spontaneous slow brain activity</article-title>. <source>PloS One</source> (<year>2012</year>) <volume>7</volume>:<elocation-id>e38131</elocation-id>. <pub-id pub-id-type="doi">10.1371/journal.pone.0038131</pub-id>
+<pub-id pub-id-type="pmid">22666461</pub-id></mixed-citation>
+      </ref>
+      <ref id="B25">
+        <label>25</label>
+        <mixed-citation publication-type="book">
+<person-group person-group-type="author"><name><surname>He</surname><given-names>K</given-names></name><name><surname>Zhang</surname><given-names>X</given-names></name><name><surname>Ren</surname><given-names>S</given-names></name><name><surname>Sun</surname><given-names>J</given-names></name></person-group>
+<article-title>Deep residual learning for image recognition</article-title>. In: <source>Proceedings of the IEEE conference on computer vision and pattern recognition.</source> (<year>2016</year>). p. <page-range>770–8</page-range>.
+</mixed-citation>
+      </ref>
+      <ref id="B26">
+        <label>26</label>
+        <mixed-citation publication-type="webpage">
+<person-group person-group-type="author"><name><surname>Simonyan</surname><given-names>K</given-names></name><name><surname>Zisserman</surname><given-names>A</given-names></name></person-group>
+<article-title>Very Deep Convolutional Networks for Large-Scale Image Recognition</article-title>. <source>arXiv [csCV]</source> (<year>2014</year>). <uri xlink:type="simple" xlink:href="http://arxiv.org/abs/1409.1556">http://arxiv.org/abs/1409.1556</uri>
+</mixed-citation>
+      </ref>
+      <ref id="B27">
+        <label>27</label>
+        <mixed-citation publication-type="book">
+<person-group person-group-type="author"><name><surname>Avila</surname><given-names>J</given-names></name><name><surname>Hauck</surname><given-names>T</given-names></name></person-group>
+<source>scikit-learn Cookbook: Over 80 recipes for machine learning in Python with scikit-learn.</source>
+<publisher-name>Packt Publishing</publisher-name> (<year>2017</year>).
+</mixed-citation>
+      </ref>
+      <ref id="B28">
+        <label>28</label>
+        <mixed-citation publication-type="book">
+<person-group person-group-type="author"><name><surname>Garreta</surname><given-names>R</given-names></name><name><surname>Moncecchi</surname><given-names>G</given-names></name></person-group>
+<source>Learning scikit-learn: Machine Learning in Python.</source>
+<publisher-name>Packt Publishing</publisher-name> (<year>2013</year>).
+</mixed-citation>
+      </ref>
+      <ref id="B29">
+        <label>29</label>
+        <mixed-citation publication-type="book">
+<person-group person-group-type="author"><name><surname>James</surname><given-names>G</given-names></name><name><surname>Witten</surname><given-names>D</given-names></name><name><surname>Hastie</surname><given-names>T</given-names></name><name><surname>Tibshirani</surname><given-names>R</given-names></name></person-group>
+<source>An Introduction to Statistical Learning: with Applications in R.</source>
+<publisher-name>Springer</publisher-name> (<year>2013</year>).
+</mixed-citation>
+      </ref>
+      <ref id="B30">
+        <label>30</label>
+        <mixed-citation publication-type="other">
+<person-group person-group-type="author"><name><surname>Peng</surname><given-names>H</given-names></name><name><surname>Gong</surname><given-names>W</given-names></name><name><surname>Beckmann</surname><given-names>CF</given-names></name><name><surname>Vedaldi</surname><given-names>A</given-names></name><name><surname>Smith</surname><given-names>SM</given-names></name></person-group>
+<article-title>Accurate brain age prediction with lightweight deep neural networks</article-title>. <source>BioRxiv</source>  <pub-id pub-id-type="doi">10.1101/2019.12.17.879346</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B31">
+        <label>31</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Opelt</surname><given-names>A</given-names></name><name><surname>Fussenegger</surname><given-names>M</given-names></name><name><surname>Pinz</surname><given-names>A</given-names></name><name><surname>Auer</surname><given-names>P</given-names></name></person-group>
+<article-title>Weak Hypotheses and Boosting for Generic Object Detection and Recognition</article-title>. <source>Lecture Notes Comput Sci</source> (<year>2004</year>) <volume>3022</volume>:<fpage>71</fpage>–<lpage>84</lpage>.  <pub-id pub-id-type="doi">10.1007/978-3-540-24671-8_6</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B32">
+        <label>32</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Opelt</surname><given-names>A</given-names></name><name><surname>Pinz</surname><given-names>A</given-names></name><name><surname>Fussenegger</surname><given-names>M</given-names></name><name><surname>Auer</surname><given-names>P</given-names></name></person-group>
+<article-title>Generic object recognition with boosting</article-title>. <source>IEEE Trans Pattern Anal Mach Intell</source> (<year>2006</year>) <volume>28</volume>:<page-range>416–31</page-range>.  <pub-id pub-id-type="doi">10.1109/tpami.2006.54</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B33">
+        <label>33</label>
+        <mixed-citation publication-type="other">
+<person-group person-group-type="author"><name><surname>Jao Keehn</surname><given-names>RJ</given-names></name><name><surname>Nair</surname><given-names>S</given-names></name><name><surname>Pueschel</surname><given-names>EB</given-names></name><name><surname>Linke</surname><given-names>AC</given-names></name><name><surname>Fishman</surname><given-names>I</given-names></name><name><surname>Müller</surname><given-names>R-A</given-names></name></person-group>
+<article-title>Atypical Local and Distal Patterns of Occipito-frontal Functional Connectivity are Related to Symptom Severity in Autism</article-title>. <source>Cereb Cortex</source> (<year>2018</year>).  <pub-id pub-id-type="doi">10.1093/cercor/bhy201</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B34">
+        <label>34</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Paakki</surname><given-names>J-J</given-names></name><name><surname>Rahko</surname><given-names>J</given-names></name><name><surname>Long</surname><given-names>X</given-names></name><name><surname>Moilanen</surname><given-names>I</given-names></name><name><surname>Tervonen</surname><given-names>O</given-names></name><name><surname>Nikkinen</surname><given-names>J</given-names></name><etal/></person-group>
+<article-title>Alterations in regional homogeneity of resting-state brain activity in autism spectrum disorders</article-title>. <source>Brain Res</source> (<year>2010</year>) <volume>1321</volume>:<page-range>169–79</page-range>. <pub-id pub-id-type="doi">10.1016/j.brainres.2009.12.081</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B35">
+        <label>35</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Jiang</surname><given-names>L</given-names></name><name><surname>Hou</surname><given-names>X-H</given-names></name><name><surname>Yang</surname><given-names>N</given-names></name><name><surname>Yang</surname><given-names>Z</given-names></name><name><surname>Zuo</surname><given-names>X-N</given-names></name></person-group>
+<article-title>Examination of Local Functional Homogeneity in Autism</article-title>. <source>BioMed Res Int</source> (<year>2015</year>) <volume>2015</volume>:<elocation-id>174371</elocation-id>. <pub-id pub-id-type="doi">10.1155/2015/174371</pub-id>
+<pub-id pub-id-type="pmid">26180782</pub-id></mixed-citation>
+      </ref>
+      <ref id="B36">
+        <label>36</label>
+        <mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Nielsen</surname><given-names>JA</given-names></name><name><surname>Zielinski</surname><given-names>BA</given-names></name><name><surname>Fletcher</surname><given-names>PT</given-names></name><name><surname>Alexander</surname><given-names>AL</given-names></name><name><surname>Lange</surname><given-names>N</given-names></name><name><surname>Bigler</surname><given-names>ED</given-names></name><etal/></person-group>
+<article-title>Multisite functional connectivity MRI classification of autism: ABIDE results</article-title>. <source>Front Hum Neurosci</source> (<year>2013</year>) <volume>7</volume>:<elocation-id>599</elocation-id>. <pub-id pub-id-type="doi">10.3389/fnhum.2013.00599</pub-id>
+<pub-id pub-id-type="pmid">24093016</pub-id></mixed-citation>
+      </ref>
+      <ref id="B37">
+        <label>37</label>
+        <mixed-citation publication-type="other">
+<person-group person-group-type="author"><name><surname>Thomas</surname><given-names>RM</given-names></name><name><surname>Bruin</surname><given-names>W</given-names></name><name><surname>Zhutovsky</surname><given-names>P</given-names></name><name><surname>van Wingen</surname><given-names>G</given-names></name></person-group>
+<article-title>Dealing with missing data, small sample sizes, and heterogeneity in machine learning studies of brain disorders</article-title>. <source>Mach Learn</source> (<year>2020</year>), <page-range>249–66</page-range>.  <pub-id pub-id-type="doi">10.1016/b978-0-12-815739-8.00014-6</pub-id>
+</mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

@@ -1,0 +1,29 @@
+Model summary,Model summary.1
+Populations,254 populations: 32 areas (???) with eight populations each (area TH: six)
+Topology,—
+Connectivity,area- and population-specific but otherwise random
+Neuron model,"leaky integrate-and-fire (LIF), fixed absolute refractory period (voltage clamp)"
+Synapse model,exponential postsynaptic currents
+Plasticity,—
+Input,independent homogeneous Poisson spike trains
+Measurements,spiking activity
+Populations,Populations
+Type,Cortex
+Elements,LIF neurons
+Number of populations,"32 areas with eight populations each (area TH: six), two per layer"
+Population size,N (area- and population-specific)
+Connectivity,Connectivity
+Type,source and target neurons drawn randomly with replacement (allowing autapses and multapses) with area- and population-specific connection probabilities
+Weights,"fixed, drawn from normal distribution with mean J such that postsynaptic potentials have a mean amplitude of 0.15 mV and standard deviation δJ = 0.1J; 4E to 2/3E increased by factor 2 [???]; weights of inhibitory connections increased by factor g; excitatory weights <0 and inhibitory weights >0 are redrawn; cortico-cortical weights onto excitatory and inhibitory populations increased by factor χ and χIχ, respectively"
+Delays,"fixed, drawn from Gaussian distribution with mean d and standard deviation δd = 0.5d; delays of inhibitory connections factor 2 smaller; delays rounded to the nearest multiple of the simulation step size h = 0.1 ms, inter-area delays drawn from a Gaussian distribution with mean d = s/vt, with distance s and transmission speed vt = 3.5 m/s [???]; and standard deviation δd = d/2, distances determined as the median of the distances between all vertex pairs of the two areas in their surface representation in F99 space, a standard macaque cortical surface included with Caret [???], where the vertex-to-vertex distance is the length of the shortest possible path without crossing the cortical surface [???] (see [???]), delays < 0.1 ms before rounding are redrawn"
+Neuron and synapse model,Neuron and synapse model
+Name,LIF neuron
+Type,"leaky integrate-and-fire, exponential synaptic current inputs"
+Subthreshold dynamics,"dVdt=-V-ELτm+Is(t)Cm if (t > t* + τr)V(t) = Vr elseIs(t)=∑i,kJke-(t-tik)/τsΘ(t-tik)k: neuron index, i: spike index"
+Spiking,"If V(t−) < θ ∧ V(t+) ≥ θ1. set t* = t, 2. emit spike with time stamp t*"
+Input,Input
+Type,Background
+Target,LIF neurons
+Description,"independent Poisson spikes (for each neuron, fixed rate νext = νbgkext with average external spike rate νbg = 10 spikes/s and number of external inputs per population kext, weight J)"
+Measurements,Measurements
+Spiking activity,Spiking activity

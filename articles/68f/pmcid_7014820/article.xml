@@ -1,0 +1,1807 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">Neuroimage</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Neuroimage</journal-id>
+      <journal-title-group>
+        <journal-title>Neuroimage</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">1053-8119</issn>
+      <issn pub-type="epub">1095-9572</issn>
+      <publisher>
+        <publisher-name>Academic Press</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">31816423</article-id>
+      <article-id pub-id-type="pmc">7014820</article-id>
+      <article-id pub-id-type="publisher-id">S1053-8119(19)31026-2</article-id>
+      <article-id pub-id-type="doi">10.1016/j.neuroimage.2019.116435</article-id>
+      <article-id pub-id-type="publisher-id">116435</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>The effect of global signal regression on DCM estimates of noise and effective connectivity from resting state fMRI</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" id="au1">
+          <name>
+            <surname>Almgren</surname>
+            <given-names>Hannes</given-names>
+          </name>
+          <email>Hannes.Almgren@ugent.be</email>
+          <xref rid="aff1" ref-type="aff">a</xref>
+          <xref rid="cor1" ref-type="corresp">∗</xref>
+        </contrib>
+        <contrib contrib-type="author" id="au2">
+          <name>
+            <surname>Van de Steen</surname>
+            <given-names>Frederik</given-names>
+          </name>
+          <email>Frederik.VandeSteen@UGent.be</email>
+          <xref rid="aff1" ref-type="aff">a</xref>
+        </contrib>
+        <contrib contrib-type="author" id="au3">
+          <name>
+            <surname>Razi</surname>
+            <given-names>Adeel</given-names>
+          </name>
+          <email>Adeel.Razi@monash.edu</email>
+          <xref rid="aff2" ref-type="aff">b</xref>
+          <xref rid="aff3" ref-type="aff">c</xref>
+          <xref rid="aff4" ref-type="aff">d</xref>
+        </contrib>
+        <contrib contrib-type="author" id="au4">
+          <name>
+            <surname>Friston</surname>
+            <given-names>Karl</given-names>
+          </name>
+          <email>k.friston@ucl.ac.uk</email>
+          <xref rid="aff3" ref-type="aff">c</xref>
+        </contrib>
+        <contrib contrib-type="author" id="au5">
+          <name>
+            <surname>Marinazzo</surname>
+            <given-names>Daniele</given-names>
+          </name>
+          <email>daniele.marinazzo@gmail.com</email>
+          <xref rid="aff1" ref-type="aff">a</xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1"><label>a</label>Department of Data Analysis, Faculty of Psychology and Educational Sciences, Ghent University, Henri Dunantlaan 2, 9000, Gent, Belgium</aff>
+      <aff id="aff2"><label>b</label>Turner Institute for Brain and Mental Health, Monash University, 770 Blackburn Road, Building 220, Monash University, Clayton, VIC, 3800, Australia</aff>
+      <aff id="aff3"><label>c</label>The Wellcome Trust Centre for Neuroimaging, University College London, 12 Queen Square, London, WC1N 3AR, United Kingdom</aff>
+      <aff id="aff4"><label>d</label>Department of Electronic Engineering, NED University of Engineering and Technology, Karachi, University Road, Karachi, 75270, Pakistan</aff>
+      <author-notes>
+        <corresp id="cor1"><label>∗</label>Corresponding author. <email>Hannes.Almgren@ugent.be</email></corresp>
+      </author-notes>
+      <pub-date pub-type="pmc-release">
+        <day>1</day>
+        <month>3</month>
+        <year>2020</year>
+      </pub-date>
+      <!-- PMC Release delay is 0 months and 0 days and was based on <pub-date
+						pub-type="ppub">.-->
+      <pub-date pub-type="ppub">
+        <month>3</month>
+        <year>2020</year>
+      </pub-date>
+      <volume>208</volume>
+      <elocation-id>116435</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>27</day>
+          <month>5</month>
+          <year>2019</year>
+        </date>
+        <date date-type="rev-recd">
+          <day>30</day>
+          <month>9</month>
+          <year>2019</year>
+        </date>
+        <date date-type="accepted">
+          <day>2</day>
+          <month>12</month>
+          <year>2019</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>© 2019 The Authors</copyright-statement>
+        <copyright-year>2019</copyright-year>
+        <license license-type="CC BY" xlink:href="http://creativecommons.org/licenses/by/4.0/">
+          <license-p>This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/).</license-p>
+        </license>
+      </permissions>
+      <abstract id="abs0010">
+        <p>The influence of global BOLD fluctuations on resting state functional connectivity in fMRI data remains a topic of debate, with little consensus. In this study, we assessed the effects of global signal regression (GSR) on effective connectivity within and between resting state networks (RSNs) - as estimated with dynamic causal modelling (DCM) for resting state fMRI (rsfMRI). DCM incorporates a forward (generative) model that quantifies the contribution of different types of noise (including global measurement noise), effective connectivity, and (neuro)vascular processes to functional connectivity measurements. DCM analyses were applied to two different designs; namely, longitudinal and cross-sectional designs. In the modelling of longitudinal designs, we considered four extensive longitudinal resting state fMRI datasets with a total number of 20 subjects. In the analysis of cross-sectional designs, we used rsfMRI data from 361 subjects from the Human Connectome Project. We hypothesized that (1) GSR would have no discernible impact on effective connectivity estimated with DCM, and (2) GSR would be reflected in the parameters representing global measurement noise. Additionally, we performed comparative analyses of information gain with and without GSR. Our results showed negligible to small effects of GSR on effective connectivity within small (separately estimated) RSNs. However, although the effect sizes were small, there was substantial to conclusive evidence for an effect of GSR on connectivity parameters. For between-network connectivity, we found two important effects: the effect of GSR on between-network effective connectivity (averaged over all connections) was negligible to small, while the effect of GSR on individual connections was non-negligible. In the cross-sectional (but not in the longitudinal) data, some connections showed substantial to conclusive evidence for an effect of GSR. Contrary to our expectations, we found either no effect (in the longitudinal designs) or a non-specific (cross-sectional design) effect of GSR on parameters characterising (global) measurement noise. Data without GSR were found to be more informative than data with GSR; however, in small resting state networks the precision of posterior estimates was greater after GSR. In conclusion, GSR is a minor concern in DCM studies; however, quantitative interpretation of between-network connections (as opposed to average between-network connectivity) and noise parameters should be treated with some caution. The Kullback-Leibler divergence of the posterior from the prior (i.e., information gain) - together with the precision of posterior estimates - might offer a useful measure to assess the appropriateness of GSR in resting state fMRI.</p>
+      </abstract>
+      <abstract abstract-type="author-highlights" id="abs0015">
+        <title>Highlights</title>
+        <p>
+          <list list-type="simple" id="ulist0010">
+            <list-item id="u0010">
+              <label>•</label>
+              <p id="p0010">We investigated the effect of GSR on parameters estimated with DCM.</p>
+            </list-item>
+            <list-item id="u0015">
+              <label>•</label>
+              <p id="p0015">We found negligible to small effects of GSR in small-scale resting state networks.</p>
+            </list-item>
+            <list-item id="u0020">
+              <label>•</label>
+              <p id="p0020">Small effects of GSR on the net influence between networks were observed.</p>
+            </list-item>
+            <list-item id="u0025">
+              <label>•</label>
+              <p id="p0025">Results showed non-negligible effects of GSR on individual between-network connections.</p>
+            </list-item>
+            <list-item id="u0030">
+              <label>•</label>
+              <p id="p0030">The effect of GSR on noise parameters was either absent or unspecific, depending on design.</p>
+            </list-item>
+          </list>
+        </p>
+      </abstract>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="sec1">
+      <label>1</label>
+      <title>Introduction</title>
+      <p id="p0035">The fMRI signal is corrupted by noise from several sources; for example, motion-induced noise, background (thermal) noise, and non-neural physiological noise that arises from cardiac and respiratory processes (<xref rid="bib21" ref-type="bibr">Liu, 2016</xref>). This is a particular problem in resting state fMRI research, which usually aims to quantify low-frequency fluctuations in the absence of explicit perturbations. Extensive research has focused on developing and applying methods to de-noise the (resting-state) fMRI signal (e.g., <xref rid="bib5" ref-type="bibr">Erdoğan et al., 2016</xref>; <xref rid="bib18" ref-type="bibr">Kasper et al., 2017</xref>; <xref rid="bib32" ref-type="bibr">Rummel et al., 2013</xref>). Some studies focus on modelling explicit (external) sources of noise (e.g., by including motion and cardiac signal as regressors in a GLM; see, e.g., <xref rid="bib18" ref-type="bibr">Kasper et al., 2017</xref>), others focus on identifying signal and noise directly from fMRI signals (e.g., using ICA; see, e.g., <xref rid="bib32" ref-type="bibr">Rummel et al., 2013</xref>). A widely applied (group of) method(s) – used to de-noise fMRI signals – is to correct resting-state fMRI time-series for fluctuations in the global signal (GS), which is the average signal across all voxels of the entire MRI volume. Different types of corrections for GS fluctuations have been developed and applied, including GS regression (GSR), GS normalization, and GS subtraction (<xref rid="bib22" ref-type="bibr">Liu et al., 2017</xref>).</p>
+      <p id="p0040">The use (or omission) of GSR in fMRI connectivity studies has been a hot topic of debate (<xref rid="bib24" ref-type="bibr">Murphy and Fox, 2016</xref>). GSR is usually applied to account for multiple non-neural sources of noise (e.g., motion and cardiac-induced signal). Some studies have shown that GSR increases the efficiency of detecting significant functional connectivity (<xref rid="bib22" ref-type="bibr">Liu et al., 2017</xref>). <xref rid="bib7" ref-type="bibr">Fox et al. (2009)</xref>, for example, showed that global signal regression (GSR) enhanced both the spatial specificity of positive correlations and detection of anti-correlation between networks (e.g., between default mode and dorsal attention networks). Similarly, <xref rid="bib41" ref-type="bibr">Yan et al. (2013)</xref> showed that GSR decreased the correlation between motion and functional connectivity. On the other hand, other studies have shown that global signal regression introduces spurious connectivity, and leads to complex region-dependent biases (<xref rid="bib2" ref-type="bibr">Anderson et al., 2011</xref>; <xref rid="bib25" ref-type="bibr">Murphy et al., 2009</xref>; <xref rid="bib33" ref-type="bibr">Saad et al., 2012</xref>). <xref rid="bib25" ref-type="bibr">Murphy et al. (2009)</xref>, for example, showed both analytically and through simulations that global signal regression causes spurious negative connectivity. <xref rid="bib33" ref-type="bibr">Saad et al. (2012)</xref> and <xref rid="bib15" ref-type="bibr">Gotts et al. (2013)</xref> showed that group differences can become biased after GSR. With this background, some authors have argued for new perspectives on how to study GSR (see, e.g., <xref rid="bib29" ref-type="bibr">Power et al., 2017</xref>; <xref rid="bib37" ref-type="bibr">Uddin, 2017</xref>).</p>
+      <p id="p0045">Typically, studies investigating the impact of global signal corrections have focused on measures of connectivity that do not include a biologically plausible (forward) model; for example, correlation and independent component analysis (ICA). Therefore, connectivity estimates in these studies are not separated from estimates of hemodynamic processes or measurement noise. Dynamic causal modelling (DCM; <xref rid="bib8" ref-type="bibr">Friston et al., 2003</xref>) is a method that allows such separation, by explicitly incorporating parameters representing state and measurement noise, effective connectivity and (neuro)vascular processes. Parameters representing noise are separated into three components: neural fluctuations that drive the system (i.e., state noise), observation or measurement noise (both local and global; e.g., caused by changes in scanner temperature), and sampling error (caused by imperfect sampling). Parameters representing (neuro)vascular processes include parameters modelling vasodilatory signal decay (related to neurovascular coupling), mean blood transit time (the average time it takes for blood to pass the veins), and the ratio of intravascular to extravascular contributions to the measured fMRI signal (<xref rid="bib36" ref-type="bibr">Stephan et al., 2007</xref>).</p>
+      <p id="p0050">In the present study, we assessed the effects of global signal regression on effective connectivity and noise parameters as estimated by (spectral) DCM for resting state fMRI (<xref rid="bib10" ref-type="bibr">Friston et al., 2014</xref>; <xref rid="bib30" ref-type="bibr">Razi et al., 2015</xref>). We expected that (1) global signal regression would not have a substantial impact on effective connectivity, and (2) its main effect would be reflected in the parameters representing global observation noise. In addition, we investigated whether data with GSR affords a greater information gain compared to data without GSR – as well as increasing the precision of posterior connectivity estimates. To address these questions, we decomposed (negative) free energy – a lower bound on the log model evidence – into an accuracy and a complexity term. The latter reflects the information gain afforded by the data.</p>
+      <p id="p0055">Four resting state networks were analysed: three small-scale resting state networks (RSNs; namely somatomotor, saliency, and default mode network) and an additional larger network comprising all three networks. The smaller networks allowed us to assess the effect of GSR on within-network connectivity, while the combined network allowed us to assess its effects on between-network connectivity. To ensure generalizability – and a comprehensive examination of how GSR affects connectivity – we performed analyses using two different designs; namely, longitudinal and cross-sectional designs. For the former, we used four longitudinal datasets (see, <xref rid="bib1" ref-type="bibr">Almgren et al., 2018</xref>), to which a hierarchical approach was applied (i.e., from sessions to subjects, and from subjects to group). The benefits of such a hierarchical analysis are that: (a) the total variance is captured by multiple variance components (e.g., between-session variance, between-subject variance), hence rendering parameter estimates potentially more precise, (b) within-subject effects (e.g., fluctuations in the amount of noise) are mitigated, and (c) our conclusions are not limited to one acquisition protocol or dataset. The second design was cross-sectional, for which we used the human connectome project’s dataset. The benefits of this dataset are that (a) data are preprocessed by a standardized HCP pipeline, (b) the sample size is large (361 unrelated subjects), hence mitigating subject-specific effects.</p>
+    </sec>
+    <sec id="sec2">
+      <label>2</label>
+      <title>Methods</title>
+      <sec id="sec2.1">
+        <label>2.1</label>
+        <title>Datasets and subjects</title>
+        <p id="p0060">The longitudinal datasets were acquired by four different research institutions (see, <xref rid="bib4" ref-type="bibr">Choe et al., 2015</xref>; <xref rid="bib6" ref-type="bibr">Filevich et al., 2017</xref>; <xref rid="bib14" ref-type="bibr">Gordon et al., 2017</xref>; <xref rid="bib20" ref-type="bibr">Laumann et al., 2015</xref>). Together they comprised 20 subjects (11 females, mean and standard deviation of age at onset study: 30.1 ​± ​5.2) and contained a total of 653 rsfMRI sessions (at the least 10 for each subject). For a further description of the longitudinal datasets, see <xref rid="bib1" ref-type="bibr">Almgren et al. (2018)</xref>.</p>
+        <p id="p0065">In addition, the Human Connectome Project’s 900 subject release (HCP; <xref rid="bib39" ref-type="bibr">Van Essen et al., 2012</xref>) was analysed as cross-sectional dataset. To avoid issues arising with data from related subjects, we only modelled data from 361 unrelated subjects (194 females; mean and standard deviation age: 28.7 ​± ​3.7; see link in the ‘software availability’ note). Only the first session of all subjects in the HCP dataset was analysed.</p>
+      </sec>
+      <sec id="sec2.2">
+        <label>2.2</label>
+        <title>Data analyses</title>
+        <p id="p0070">All analyses were performed using the SPM12 software package (revision 6906; Wellcome Centre for Human Neuroimaging; <ext-link ext-link-type="uri" xlink:href="http://www.fil.ion.ucl.ac.uk/spm/software/spm12" id="intref0010">www.fil.ion.ucl.ac.uk/spm/software/spm12</ext-link>), including DCM for resting state fMRI (DCM12; revision 6801), and parametric empirical Bayes (PEB; revision 6778). For details concerning data analysis we refer the reader to the link in ‘software availability’.</p>
+        <sec id="sec2.2.1">
+          <label>2.2.1</label>
+          <title>Preprocessing</title>
+          <p id="p0075">Concerning the longitudinal datasets, the same preprocessing and time series extraction steps were used as in <xref rid="bib1" ref-type="bibr">Almgren et al. (2018)</xref>. In short, the initial five images for each resting state fMRI session were discarded, then rsfMRI data were corrected for differences in slice time (using the central slice as a reference), realigned to the first volume of each session, coregistered to an anatomical image (anatomical image prior to first functional scan session), normalized to MNI space and smoothed using a Gaussian kernel (FWHM ​= ​6 ​mm). Three sessions (across all subjects and datasets) were discarded because of insufficient quality. Concerning the cross sectional data from HCP dataset, the minimally preprocessed rsfMRI data of the first scanning session of each subject were used (see, <xref rid="bib13" ref-type="bibr">Glasser et al., 2013</xref>). These data were additionally smoothed using a Gaussian kernel of 6 ​mm FWHM.</p>
+        </sec>
+        <sec id="sec2.2.2">
+          <label>2.2.2</label>
+          <title>Time-series extraction</title>
+          <p id="p0080">Extraction of regional time-series was the same for both types of datasets – and closely resembles the time-series extraction described in detail in <xref rid="bib1" ref-type="bibr">Almgren et al. (2018)</xref>. In short, voxels showing low frequency fluctuations were identified using a GLM with a discrete cosine basis set as regressor of interest (0.0078–0.1Hz; where the number of components was a function of the number of scans and TR), 24 motion regressors (6 regressors representing instantaneous motion, 6 regressors representing motion on the previous timepoint, and the squares of both; this motion set is commonly referred to as Friston-24; <xref rid="bib11" ref-type="bibr">Friston et al., 1996</xref>), and two nuisance regressors (CSF signal from 5 ​mm ROI in circulatory system, WM signal from 7 ​mm ROI in brainstem). For the analyses with GSR the average time-series across the whole brain (using spm_global.m) were included as a nuisance regressor (see paragraph 2.2.5). SPMs including these regressors were subsequently evaluated (creating separate SPMs for regression with and without GSR). The results of an F-contrast (here, an identity matrix) across all DCT components were masked with spherical ROIs (10 ​mm radius), centred on coordinates extracted from template ICA maps (<xref rid="bib34" ref-type="bibr">Smith et al., 2009</xref>). <xref rid="tbl1" ref-type="table">Table 1</xref> reports the exact centre coordinates for each region and <xref rid="fig1" ref-type="fig">Fig. 1</xref> shows the regions superimposed on a template brain. Time-series were summarised as the principal eigenvariate of voxels (with a corresponding F-value exceeding an alpha-threshold of 0.05) centred on the peak voxel (within the aforementioned spherical ROIs) of the SPM (sphere radius ​= ​8 ​mm). This procedure allowed for subject-specific peak locations of low-frequency fluctuations within the boundaries of the (subject-independent) template ROIs. In summary, the final ROIs were the result of a conjunction of general spherical ROIs (centred on coordinates extracted from ICA maps produced by <xref rid="bib34" ref-type="bibr">Smith et al., 2009</xref>) and ROIs centred on the voxel with the highest resulting F-values within the aforementioned ROIs. Within this conjunction, voxels were only included if they exceeded an (uncorrected) F-value threshold (alpha ​= ​0.05). The somatomotor network (SMR), salience network (SAL), and default mode network (DMN), comprised respectively three, five, and four regions. The same time-series were also included in the combined network (excluding mPFC because of its proximity to ACC).<table-wrap position="float" id="tbl1"><label>Table 1</label><caption><p>ROI regions and coordinates. Coordinates were adopted from template ICA images (<xref rid="bib34" ref-type="bibr">Smith et al., 2009</xref>).</p></caption><alt-text id="alttext0050">Table 1</alt-text><table frame="hsides" rules="groups"><thead><tr><th>Network</th><th>Region</th><th>Coordinates</th></tr></thead><tbody><tr><td align="left" rowspan="3"><bold>Somatomotor</bold></td><td align="left">Supplementary motor area</td><td align="left">0 -12 50</td></tr><tr><td align="left">Right precentral gyrus</td><td align="left">44 -16 48</td></tr><tr><td align="left">Left postcentral gyrus</td><td align="left">−38 -26 56</td></tr><tr><td align="left" rowspan="5"><bold>Salience</bold></td><td align="left">Anterior cingulate cortex</td><td align="left">0 36 22</td></tr><tr><td align="left">Left middle frontal gyrus</td><td align="left">−28 54 14</td></tr><tr><td align="left">Right middle frontal gyrus</td><td align="left">30 52 14</td></tr><tr><td align="left">Left insula</td><td align="left">−36 12 -2</td></tr><tr><td align="left">Right insula</td><td align="left">32 20 4</td></tr><tr><td align="left" rowspan="4"><bold>Default mode</bold></td><td align="left">Precuneus</td><td align="left">2 -58 30</td></tr><tr><td align="left">Medial prefrontal cortex<xref rid="tbl1fna" ref-type="table-fn">a</xref></td><td align="left">2 56 -4</td></tr><tr><td align="left">Left inferior parietal cortex</td><td align="left">−44 -60 24</td></tr><tr><td align="left">Right inferior parietal cortex</td><td align="left">54 -62 28</td></tr></tbody></table><table-wrap-foot><fn id="tbl1fna"><label>a</label><p id="ntpara0010">Not included in combined network.</p></fn></table-wrap-foot></table-wrap><fig id="fig1"><label>Fig. 1</label><caption><p>Location of regions included in the present study. Colors of spheres represent the network from which they were taken (blue represents salience network, red represents default mode network, and green represents somatomotor network). Anatomical labels: PRC ​= ​precuneus; l/rIPC ​= ​left/right inferior parietal cortex; mPFC ​= ​medial prefrontal cortex; SMA ​= ​supplementary motor area; l/rSMR ​= ​left/right somatomotor region; l/rINS ​= ​left/right insula; ACC ​= ​anterior cingulate cortex; l/rMFG ​= ​left/right middle frontal gyrus.</p></caption><alt-text id="alttext0015">Fig. 1</alt-text><graphic xlink:href="gr1"/></fig></p>
+        </sec>
+        <sec id="sec2.2.3">
+          <label>2.2.3</label>
+          <title>Dynamic causal modelling for resting state fMRI</title>
+          <p id="p0085">Fully-connected DCMs without exogenous inputs were created and inverted for each session and subject separately (DCM12; DCM for resting state fMRI revision 6801). Four DCMs were estimated for each session: a DCM for each network separately and a DCM for the combined network. Default shrinkage priors – not informed by functional connectivity – were used for all networks. For each network (both separate and combined) sessions were excluded from further analyses if they did not meet all acceptance criteria (see also, <xref rid="bib1" ref-type="bibr">Almgren et al., 2018</xref>) for both analysis types (i.e., with <italic>and</italic> without GSR). The acceptance criteria were as follows: explained variance above 60%; at least one (extrinsic) connection strength greater than 1/8Hz; at least one effectively estimated parameter, and a maximum alpha-threshold of 5% (i.e., type-I error rate; uncorrected for multiple comparisons) for which significant voxels were found in <italic>all</italic> regions of the specific network. In addition, the stringent motion exclusion criteria described in <xref rid="bib27" ref-type="bibr">Parkes et al. (2018)</xref> were used: sessions were excluded if their mean framewise displacement (FD; as described in <xref rid="bib16" ref-type="bibr">Jenkinson et al., 2002</xref>) was above 0.25 ​mm, if any FD in that session exceeded 5 ​mm, and if more than 20 percentage of that session’s FDs exceeded 0.2 ​mm. For the longitudinal datasets; subjects were rejected if they had less than 8 sessions after diagnostic checks. This criterion excluded three subjects (i.e., S13, S18, S20) for all networks, S14 was excluded for SAL and the combined network, S19 was excluded for SAL and the combined network, and S4 was excluded for SMR, DMN, and the combined network. Additionally, 149, 108, 80, and 115 sessions were excluded (across subjects and datasets) for the SMR, SAL, DMN, and combined networks, respectively. For the HCP dataset, a total of 51, 42, 41, and 36 subjects were excluded because of failure to reach acceptance criteria for the SMR, SAL, DMN, and combined networks, respectively. <xref rid="tbl2" ref-type="table">Table 2</xref> gives an overview of the sessions and subjects that were included for each dataset type.<table-wrap position="float" id="tbl2"><label>Table 2</label><caption><p>Number of included sessions and subjects for each network and dataset type.</p></caption><alt-text id="alttext0055">Table 2</alt-text><table frame="hsides" rules="groups"><thead><tr><th rowspan="2">Dataset Type</th><th colspan="5">Number sessions and/or subjects<hr/></th></tr><tr><th>Total sample</th><th>SMR</th><th>SAL</th><th>DMN</th><th>Combined</th></tr></thead><tbody><tr><td align="left">Longitudinal</td><td align="left">653 sessions (20 subj)</td><td align="left">460 sessions (70%; 16 subj)</td><td align="left">492 sessions (75%; 15 subj)</td><td align="left">529 sessions (81%; 16 subj)</td><td align="left">474 sessions (73%; 14 subj)</td></tr><tr><td align="left">HCP</td><td align="left">361 subj</td><td align="left">310 subj (86%)</td><td align="left">319 subj (88%)</td><td align="left">320 subj (89%)</td><td align="left">325 subj (90%)</td></tr></tbody></table><table-wrap-foot><fn><p>Abbreviations: HCP = Human Connectome Project, SMR ​= ​somatomotor network, SAL ​= ​salience network, DMN ​= ​default mode network; combined ​= ​combined network, subj ​= ​subjects.</p></fn></table-wrap-foot></table-wrap></p>
+        </sec>
+        <sec id="sec2.2.4">
+          <label>2.2.4</label>
+          <title>Parametric empirical bayes (PEB)</title>
+          <p id="p0090">Connectivity at the subject or group level was modelled using a Parametric Empirical Bayesian (PEB; <xref rid="bib45" ref-type="bibr">Friston et al., 2016</xref>) model, with a single regressor to model average connectivity across sessions or subjects. For the longitudinal datasets, two-level hierarchical PEB models were constructed. First, connectivity over sessions was estimated at the subject-level (i.e., average connectivity over sessions was computed for each subject separately). Then, subject-level PEB models were subsequently included in a group-level model; modelling average connectivity across subjects. Default PEB settings were used for estimation at the subject and group level (see, <xref rid="bib1" ref-type="bibr">Almgren et al., 2018</xref>). In the cross-sectional HCP dataset, connectivity was only estimated at the group level (i.e., across subjects), since only a single session was considered for each subject. For both datasets, PEB models – equipped with a single between-session (or between-subject) precision component – were specified and estimated separately for connectivity and (spectral) noise. Spectral noise parameters represented three types of noise: global state noise (i.e., across-region neural fluctuations), global observation noise, and local (i.e., region-specific) observation noise.</p>
+        </sec>
+        <sec id="sec2.2.5">
+          <label>2.2.5</label>
+          <title>Global signal regression (GSR)</title>
+          <p id="p0095">Dynamic causal modelling was performed with and without GSR. GSR was performed by adding a regressor representing the average signal intensity across the whole brain to the GLM model used to extract time-series (in addition to regressors representing motion, low-frequency fluctuations, white matter, and CSF signals). Time-series were extracted from preprocessed images and were corrected for the effect of all regressors except the effect of low-frequency fluctuations. Analyses without global signal regression were performed in the same way, but excluding the regressor representing the average global signal.</p>
+        </sec>
+        <sec id="sec2.2.6">
+          <label>2.2.6</label>
+          <title>Statistical tests</title>
+          <p id="p0100">To compare results with and without GSR we performed a paired-sample Bayesian <italic>t</italic>-test on the session and subject-specific estimates of the cross-sectional and longitudinal designs, respectively. This Bayesian <italic>t</italic>-test has been extensively described in <xref rid="bib31" ref-type="bibr">Rouder et al. (2009)</xref>. In short, we contrasted the null-hypothesis of no effect of GSR on average connectivity with the alternative hypothesis that there is an effect of GSR on average connectivity. The null-hypothesis was represented by a standardized effect size equal to zero, while the alternative hypothesis was represented by a standardized effect size following a Cauchy distribution with the scale parameter set to <inline-formula><mml:math id="M1" altimg="si1.svg"><mml:mrow><mml:mfrac><mml:mrow><mml:msqrt><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msqrt></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:mfrac></mml:mrow></mml:math></inline-formula>. The latter distribution represents medium (standardized) effect sizes. The strength of the evidence in the Bayes factor was interpreted according to the suggestions of <xref rid="bib19" ref-type="bibr">Kass and Raftery (1995)</xref>. Practically this means we label Bayes factors ranging from 1 to 3.2 (log-scale: 0 to 1.16) as ‘negligible’ (in the words of <xref rid="bib19" ref-type="bibr">Kass and Raftery, 1995</xref>: ‘not worth more than a bare mention’), 3.2 to 10 (log-scale: 1.16 to 2.3) as ‘substantial’, 10 to 100 (log-scale: 2.3 to 4.6) as ‘strong’, and above 100 (log-scale: more than 4.6) as ‘decisive’. Note that these Bayesian <italic>t</italic>-tests were performed using subject and session-specific estimates, and not directly on the first- and second-level PEB results for the cross-sectional and longitudinal data, respectively.</p>
+        </sec>
+        <sec id="sec2.2.7">
+          <label>2.2.7</label>
+          <title>Assessing the quality of data features</title>
+          <p id="p0105">In this work we wanted to compare the quality of <italic>different data features</italic> (i.e., time-series extracted with or without GSR), under the <italic>same</italic> model. For this, we adopted the Bayesian data comparison (BDC) approach described in <xref rid="bib42" ref-type="bibr">Zeidman et al. (2019)</xref>. This assesses the relative usefulness of data features (e.g., multiband factor of an fMRI acquisition scheme) in terms of making inferences about parameters and models. The approach can be summarised as follows: usually, the approximate log model evidence (i.e., variational free energy), is used to assess the evidence for <italic>different models</italic> of the <italic>same data</italic>. The log model evidence can always be decomposed into <italic>accuracy</italic> minus <italic>complexity</italic> (<xref rid="bib28" ref-type="bibr">Penny et al., 2004</xref>). The complexity term represents the Kullback-Leibler divergence of the posterior density from the prior density. In other words, it scores the relative entropy or information gain afforded by the data. This is usually construed in terms of the number of degrees of freedom or parameters used to explain the data. However, it also reflects the reduction in uncertainty about model parameters after having seen the data. We therefore can use the decomposition of (negative) free energy into accuracy and complexity to ask whether different data features are more or less salient. In other words, we can quantify the reduction in uncertainty about model parameters afforded by one sort of data feature, relative to another – by simply looking at the differences in complexity. Generally speaking, we would consider data that were more informative (i.e., have a greater complexity) to be better than uninformative data. We therefore evaluated the complexity with and without GSR at the first level (i.e. after estimating DCMs at the session-level). To pool evidence across subjects, we assumed that the relative informative value of the data would be similar for all sessions and subjects. Therefor a fixed-effects approach was conducted to pool evidence across sessions (for the longitudinal datasets) and subjects (for the human connectome data). Practically, we computed the sum of the complexities over sessions for both models for each subject separately. The difference between the present analyses and the empirical part of <xref rid="bib42" ref-type="bibr">Zeidman et al. (2019)</xref> are the data features (i.e., data with or without GSR) and the level at which usefulness of data was assessed (1st level DCM vs group-level). Additionally, we also compared the certainty of posterior estimates for both analysis types.</p>
+        </sec>
+      </sec>
+    </sec>
+    <sec id="sec3">
+      <label>3</label>
+      <title>Results</title>
+      <p id="p0110">Detailed results for the longitudinal and cross-sectional datasets are outlined (separately) in <xref rid="sec3.1" ref-type="sec">3.1</xref>, <xref rid="sec3.2" ref-type="sec">3.2</xref>, respectively. <xref rid="tbl3" ref-type="table">Table 3</xref> gives a summary of the main results. Results for simulations with and without GSR are shown in <xref rid="appsec1" ref-type="sec">Supplementary Fig. 1</xref>.<table-wrap position="float" id="tbl3"><label>Table 3</label><caption><p>Summary of the results.</p></caption><alt-text id="alttext0060">Table 3</alt-text><table frame="hsides" rules="groups"><thead><tr><th>Influence of GSR on:</th><th>Longitudinal analysis</th><th>Cross-sectional analysis (HCP dataset)</th></tr></thead><tbody><tr><td align="left"><bold>Within-network connectivity</bold> (small RSNs)</td><td align="left"><list list-type="simple" id="ulist0015"><list-item id="u0035"><label>-</label><p id="p0310"><bold>Network</bold><bold>-level:</bold><list list-type="simple" id="ulist0020"><list-item id="u0040"><label>→</label><p id="p0315">RMSD<sup>1</sup>: small (≤0.1Hz)</p></list-item><list-item id="u0045"><label>→</label><p id="p0320">HA<sup>2</sup>: no difference in hemispheric dominance</p></list-item></list></p></list-item><list-item id="u0050"><label>-</label><p id="p0325"><bold>Connection-level:</bold><list list-type="simple" id="ulist0015a"><list-item id="u0055"><label>→</label><p id="p0330">Most connections showed negligible effects of GSR</p></list-item><list-item id="u0060"><label>→</label><p id="p0335">Minority of connections small effects of GSR</p></list-item></list></p></list-item></list></td><td align="left"><list list-type="simple" id="ulist0025"><list-item id="u0065"><label>-</label><p id="p0340"><bold>Network-level:</bold><list list-type="simple" id="ulist0080"><list-item id="u0070"><label>→</label><p id="p0345">RMSD<sup>1</sup>: small (≤0.1Hz), except SMR (0.17Hz)</p></list-item><list-item id="u0075"><label>→</label><p id="p0350">HA<sup>2</sup>: no difference in hemispheric dominance</p></list-item></list></p></list-item><list-item id="u0080"><label>-</label><p id="p0355"><bold>Connection-level:</bold><list list-type="simple" id="ulist0085"><list-item id="u0085"><label>→</label><p id="p0360">Some extrinsic connections showed decisive evidence for change in connectivity after GSR; however, most effect sizes were small (&lt;0.1Hz)</p></list-item></list></p></list-item></list></td></tr><tr><td align="left"><bold>Between-network (BN) connectivity</bold></td><td align="left"><list list-type="simple" id="ulist0030"><list-item id="u0090"><label>-</label><p id="p0365"><bold>Network-</bold><bold>level</bold>:<list list-type="simple" id="olist0015"><list-item id="u0095"><label>→</label><p id="p0370">RMSD<sup>1</sup>: small (0.04Hz)</p></list-item><list-item id="u0100"><label>→</label><p id="p0375">Negligible effect size concerning influence on BN<sup>3</sup> connectivity (maximum difference 0.04Hz)</p></list-item><list-item id="u0105"><label>→</label><p id="p0380">Substantial to strong evidence for a very small decrease (0.02Hz and 0.04Hz) in average influence of DMN<sup>5</sup> on SAL<sup>6</sup> and SMR<sup>4</sup></p></list-item></list></p></list-item><list-item id="u0110"><label>-</label><p id="p0385"><bold>Connection-level:</bold><list list-type="simple" id="ulist0035"><list-item id="u0115"><label>→</label><p id="p0390">Small decreases in connectivity were found after GSR</p></list-item></list></p></list-item></list></td><td align="left"><list list-type="simple" id="ulist0040"><list-item id="u0120"><label>-</label><p id="p0395"><bold>N</bold><bold><bold>e</bold>twork-level:</bold><list list-type="simple" id="ulist0045"><list-item id="u0125"><label>→</label><p id="p0400">RMSD<sup>1</sup>: small (0.09Hz)</p></list-item><list-item id="u0130"><label>→</label><p id="p0405">Decisive evidence for influence of GSR on average BN<sup>3</sup> connectivity, but effects were small (average 0.05Hz)</p></list-item></list></p></list-item><list-item id="u0135"><label>-</label><p id="p0410"><bold>Connection</bold><bold>-level:</bold><list list-type="simple" id="ulist0050"><list-item id="u0140"><label>→</label><p id="p0415">Excitatory influences became inhibitory after GSR (from SMR<sup>4</sup> and DMN<sup>5</sup> on SAL<sup>6</sup>)</p></list-item><list-item id="u0145"><label>→</label><p id="p0420">Additional inhibitory influences after GSR (from SAL<sup>6</sup> and SMR<sup>4</sup> on DMN<sup>5</sup>)</p></list-item><list-item id="u0150"><label>→</label><p id="p0425">Inhibitory effect SMA (part of SMR) on all connections in SAL disappeared after GSR</p></list-item></list></p></list-item></list></td></tr><tr><td align="left"><bold>Global observation noise parameters</bold></td><td align="left"><list list-type="simple" id="ulist0090"><list-item id="u0175"><label>-</label><p id="p0450">No influence</p></list-item></list></td><td align="left"><list list-type="simple" id="ulist0095"><list-item id="u0180"><label>-</label><p id="p0455">Non-negligible influences, but not specific to observation noise parameters</p></list-item></list></td></tr><tr><td align="left"><bold>Optimal data features</bold></td><td align="left"><list list-type="simple" id="ulist0055"><list-item id="u0155"><label>-</label><p id="p0430">Small networks, separate estimates: Data <italic>without</italic> GSR more informative, but less precise estimates</p></list-item></list><list list-type="simple" id="ulist0060"><list-item id="u0160"><label>-</label><p id="p0435">Combined network: Data <italic>without</italic> GSR more informative, and more precise estimates</p></list-item></list></td><td align="left"><list list-type="simple" id="ulist0065"><list-item id="u0165"><label>-</label><p id="p0440">Small networks, separate estimates: Data <italic>without</italic> GSR more informative, but less precise estimates</p></list-item></list><list list-type="simple" id="ulist0070"><list-item id="u0170"><label>-</label><p id="p0445">Combined network: Data <italic>without</italic> GSR more informative, and more precise estimates</p></list-item></list></td></tr></tbody></table><table-wrap-foot><fn><p>Abbreviations: <sup>1</sup>Root mean squared error, <sup>2</sup>Hemispheric Asymmetry, <sup>3</sup>Between-network, <sup>4</sup>somatomotor network, <sup>5</sup>default mode network, <sup>6</sup>salience network.</p></fn></table-wrap-foot></table-wrap></p>
+      <sec id="sec3.1">
+        <label>3.1</label>
+        <title>Longitudinal datasets</title>
+        <p id="p0115">This section describes the results concerning the analysis using longitudinal datasets.</p>
+        <sec id="sec3.1.1">
+          <label>3.1.1</label>
+          <title>The influence of GSR on within-network connectivity</title>
+          <p id="p0120"><xref rid="fig2" ref-type="fig">Fig. 2</xref> shows the effect of global signal regression on effective connectivity within the three networks separately (i.e., DMN, SMR, and SAL). The differences between connectivity for analyses using data with and without GSR (middle and left panel, respectively) were remarkably small. <italic>Across connections</italic>, the average root mean squared difference (RMSD) between connectivity with and without GSR (self-connections converted to Hz) was 0.10, 0.06, and 0.05Hz for SMR, SAL, and DMN networks, respectively, which is smaller than or equal to the heuristic threshold of 0.1Hz usually used in DCM studies (see, e.g., <xref rid="bib30" ref-type="bibr">Razi et al., 2015</xref>). On average, connectivity was slightly closer to the prior mean after GSR, however the effect was small (average difference in deviation from the prior mean was 0.07, 0.02, and 0.03Hz for SMR, SAL, and DMN, respectively).<fig id="fig2"><label>Fig. 2</label><caption><p>First and second column represent effective connectivity without and with GSR – using the longitudinal datasets – within three resting state networks: (A) DMN, (B) SMR, and (C) SAL. The color of the squares indicates the MAP connection strength for the respective connection (all in linear scale). Thresholding for inference used a posterior probability of 90%. Values in smaller fonts represent connections with a posterior probability smaller than 90%. Right columns show the (natural) log Bayes factors of the alternative hypothesis of an effect of GSR versus the null hypothesis of no effect (see methods for a more detailed description). Anatomical Abbreviations: SMA ​= ​supplementary motor area, l/r SMR ​= ​left/right somatomotor region, ACC ​= ​anterior cingulate gyrus, l/r INS: left/right insula, l/r MFG: left/right middle frontal gyrus, PRC ​= ​precuneus, l/r IPC ​= ​inferior parietal cortex, mPFC ​= ​medial prefrontal cortex. *In this and the next figure, the Bayes factors are based on the first level (subject-specific) PEB estimates of connectivity – not on the second level (between subject) PEB estimates of group means.</p></caption><alt-text id="alttext0020">Fig. 2</alt-text><graphic xlink:href="gr2"/></fig></p>
+          <p id="p0125">Global signal regression also had little effect on patterns of hemispheric asymmetry: the salience network showed higher outgoing influence from regions located in the right compared to the left hemisphere (without GSR: asymmetry ​= ​−0.20Hz, SD ​= ​0.03Hz, posterior probability (PP) ​&lt; ​0.01 and with GSR: asymmetry ​= ​−0.11Hz, SD ​= ​0.03Hz, PP ​&lt; ​0.01), while no hemispheric asymmetry concerning outgoing connectivity was found within the SMR in both cases (without GSR: asymmetry ​= ​−0.04Hz, SD ​= ​0.06Hz, PP ​= ​0.26; with GSR: asymmetry ​= ​0.01Hz, SD ​= ​0.04Hz, PP ​= ​0.60), and higher outgoing influence from the left compared to the right hemisphere was found both without and with GSR (without GSR: asymmetry ​= ​0.11Hz, SD ​= ​0.05, PP ​= ​0.99; with GSR: asymmetry ​= ​0.15Hz, SD ​= ​0.05Hz, PP ​&gt; 0.99).</p>
+          <p id="p0130"><italic>At the connection-level,</italic> seven extrinsic connections (18% of a total of 38 extrinsic connections) showed a practically relevant change after GSR (i.e., difference ​&gt; ​0.1Hz; see also, <xref rid="bib30" ref-type="bibr">Razi et al., 2015</xref>), which were all either part of SMR or SAL. Additionally, in the salience network two excitatory connections disappeared, and two inhibitory plus an excitatory connection emerged after GSR (using a threshold of PP ​= ​0.90).</p>
+          <p id="p0135">To statistically test the difference between connectivity using data with versus without GSR we performed a Bayesian <italic>t</italic>-test on each connection (see paragraph 2.2.6 in methods-section). The resulting Bayes factors (alternative over null hypothesis) are shown in the right column of <xref rid="fig2" ref-type="fig">Fig. 2</xref>. Focusing on extrinsic (i.e., between-network) connections, results showed that 11% showed substantial to decisive evidence (i.e., log Bayes factor greater than 1.16) for the alternative hypothesis modelling a medium effect size. Focusing on intrinsic connectivity (i.e., estimates of self-inhibition) we found that about 25% of connections showed such evidence for the alternative hypothesis.</p>
+        </sec>
+        <sec id="sec3.1.2">
+          <label>3.1.2</label>
+          <title>The influence of GSR on between-network connectivity</title>
+          <p id="p0140"><xref rid="fig3" ref-type="fig">Fig. 3</xref> shows the effect of GSR on connectivity in the large combined network, which includes within- and between-network connectivity. Row A shows the connection-specific estimates, Row B shows the average connectivity between networks. Note the high similarity in within-network connectivity for DMN and SAL in the combined network compared to networks that were estimated separately (see, <xref rid="fig2" ref-type="fig">Fig. 2</xref>). Subject-specific connectivity patterns are shown in <xref rid="appsec1" ref-type="sec">Supplementary Fig. 2</xref>.<fig id="fig3"><label>Fig. 3</label><caption><p>Group-level between-network connectivity without GSR (left column), with GSR (middle column), and (natural) log Bayes factors (right column) testing for a difference in connectivity after GSR versus the null hypothesis of no difference in connectivity after GSR. Row A shows estimates for individual connections. Red, green, and blue empty squares indicate connectivity within SAL, SMR, and DMN, respectively. Values in smaller fonts represent connections with a posterior probability smaller than 90%. Row B shows average connectivity between networks (across connections). Dimmed arrows and values depict connections with a posterior probability &lt;90%.</p></caption><alt-text id="alttext0025">Fig. 3</alt-text><graphic xlink:href="gr3"/></fig></p>
+          <p id="p0145"><italic>Across between-network connections,</italic> the effect of GSR was small: The root mean squared difference between connectivity with and without GSR was 0.04Hz across all between-network connections. The mean influence networks had on each other (panel B) was negligible (&lt;0.05Hz) both with and without GSR. Results from statistical testing showed that two cases of average between-network connectivity showed substantial to strong evidence for a medium effect of GSR (here: decrease in connectivity after GSR). However, changes in connectivity were only 0.02 and 0.04Hz.</p>
+          <p id="p0150">For <italic>individual connections,</italic> without GSR we found small excitatory reciprocal connectivity between all three networks, with weak inhibitory connectivity from rINS to PRC. After GSR outgoing connectivity from lSMC (SMR network) disappeared (using a threshold of PP ​= ​0.90), and weak inhibitory influence was found from rINS (salience network) on bilateral IPC (regions in DMN). The ACC had an excitatory influence on the DMN both with and without GSR. Statistical tests showed that only one <italic>between-network</italic> connection showed substantial evidence for a change in connectivity (i.e., a decrease in connectivity from ACC to lIPC).</p>
+        </sec>
+        <sec id="sec3.1.3">
+          <label>3.1.3</label>
+          <title>The influence of GSR on noise parameters</title>
+          <p id="p0155">To have sufficient spatially distributed information to allow robust estimates of (global) spectral noise components – and their average across sessions or subjects – we restricted our analysis to the combined network. In DCM, the spectral density of noise is modelled with a power law distribution having two parameters; namely, its amplitude and an exponent. <xref rid="fig4" ref-type="fig">Fig. 4</xref> shows the effect of GSR on parameters representing (spectral) noise, which include endogenous fluctuations that drive the system (i.e., state-noise) and global measurement (or observation) noise. The first parameter of each noise-component represents the amplitude of fluctuations, while the second parameter represents the shape (exponent) of the noise spectrum. It is evident that, GSR did not have an effect on any of the (global) noise components.<fig id="fig4"><label>Fig. 4</label><caption><p>The effect of GSR on (spectral) noise parameters within the combined network. Bar heights depict the group-level maximum <italic>a posteriori</italic> (MAP) estimates for the respective parameter, small circles depict subject-specific estimates (not empirically optimized). The color of the bars depict the parameter type (i.e., amplitude and frequency). Lightness of the bars and markers depicts connectivity without or with GSR (darker and lighter, respectively). Red lines depict 90% credibility intervals for the posterior estimates (PEB.Cp). Parameters are shown in log-scale and are relative to the prior mean.</p></caption><alt-text id="alttext0030">Fig. 4</alt-text><graphic xlink:href="gr4"/></fig></p>
+        </sec>
+        <sec id="sec3.1.4">
+          <label>3.1.4</label>
+          <title>Identifying data features</title>
+          <p id="p0160">To identify the most informative data features, we decomposed (negative) free energy into accuracy and complexity, where accuracy is the expected likelihood of the data under posterior beliefs and complexity is the Kullback-Leibler divergence between the posterior and prior densities. Complexity can thus be considered as a measure of the informative value of the data (<xref rid="bib42" ref-type="bibr">Zeidman et al., 2019</xref>). We compared the estimated complexity with and without GSR at the session-level, which is directly dependent on the data. We used a fixed-effect approach to pool complexity over sessions for each subject separately (see, e.g., <xref rid="bib35" ref-type="bibr">Stephan et al., 2009</xref>). DCM estimation <italic>without</italic> GSR was found to have the highest complexity in 87.5% of subjects for the SMR network, in 100% of subjects for the SAL network, 75% of participants for the DMN, and for 100% of subjects in the combined network, with strong evidence in all subjects. However, the certainty of posterior estimates (computed as the negative entropy of the posterior distribution) was greater for the data with GSR in 81.25%, 86.7%, and 87.5% of subjects for SMR, SAL, and DMN, respectively. For the combined network, the opposite pattern was observed: 100% of subjects showed more precise estimates without GSR.</p>
+        </sec>
+      </sec>
+      <sec id="sec3.2">
+        <label>3.2</label>
+        <title>Cross-sectional dataset</title>
+        <p id="p0165">This section outlines the results concerning the HCP dataset.</p>
+        <sec id="sec3.2.1">
+          <label>3.2.1</label>
+          <title>The influence of GSR on within-network connectivity</title>
+          <p id="p0170"><xref rid="fig5" ref-type="fig">Fig. 5</xref> shows the effect of GSR in the three resting-state networks, both with and without GSR. <italic>Across all connections,</italic> the average root mean squared difference (RMSD) between connectivity with and without GSR was 0.17, 0.10, and 0.07Hz for SMR, SAL, and DMN networks, respectively. The average decrease in deviation from the prior mean with GSR (compared to without GSR) was 0.09, 0.04, 0.04Hz for SMR, SAL, and DMN, respectively. Global signal regression had little effect on patterns of hemispheric asymmetry: the salience network showed higher outgoing connectivity from regions located in the left compared to the right hemisphere (without GSR: asymmetry ​= ​0.10Hz, SD ​= ​0.02Hz, PP ​&gt; ​0.99; with GSR: asymmetry ​= ​0.05Hz, SD ​= ​0.01Hz, PP ​&gt; ​0.99), right hemispheric dominance was found within the SMR for both cases (without GSR: asymmetry ​= ​−0.46Hz, SD ​= ​0.04, PP ​&lt; ​0.01; with GSR: asymmetry ​= ​−0.22Hz, SD ​= ​0.03Hz, PP ​&lt; ​0.01), and left dominance was found for the DMN with and without GSR (without GSR: asymmetry ​= ​0.14Hz, SD ​= ​0.03Hz, PP ​&gt; ​0.99; with GSR: asymmetry ​= ​0.08Hz, SD ​= ​0.02Hz, PP ​&gt; ​0.99). Interestingly, asymmetry decreased for all networks after GSR.<fig id="fig5"><label>Fig. 5</label><caption><p>First and second column represent effective connectivity without and with GSR – using the HCP dataset – within three resting state networks: (A) DMN, (B) SMR, and (C) SAL. The color of the squares indicates the MAP connection strength for the respective connection (all in linear scale). Thresholding for inference was done using a posterior probability of 90%. Values in smaller fonts represent connections with a posterior probability smaller than 90%. Right columns show the (natural) log Bayes factors of the alternative hypothesis of an effect of GSR versus the null hypothesis of no effect (see methods for a more detailed description). Anatomical Abbreviations: SMA ​= ​supplementary motor area, l/r SMR ​= ​left/right somatomotor region, ACC ​= ​anterior cingulate gyrus, l/r INS: left/right insula, l/r MFG: left/right middle frontal gyrus, PRC ​= ​precuneus, l/r IPC ​= ​inferior parietal cortex, mPFC ​= ​medial prefrontal cortex. *In this and the next figure, the Bayes factors are based on the (subject-specific) DCM estimates of connectivity – not on the (between subject) PEB estimates of group means.</p></caption><alt-text id="alttext0035">Fig. 5</alt-text><graphic xlink:href="gr5"/></fig></p>
+          <p id="p0175"><italic>At the connection-level,</italic> nine extrinsic connections (24% of extrinsic connections) showed a practically significant change after GSR (i.e., difference ​&gt; ​0.1Hz): two connections in SMR, four connections in SAL, and three connections in DMN. With the exception of two connections, these were efferent connections from the (network-specific) dominant region. Five extrinsic connections (13% of total number of extrinsic connections) emerged or disappeared (threshold PP ​= ​0.90) after GSR (although they were all small in magnitude). Additionally, one extrinsic connection changed sign (from excitatory to inhibitory) after GSR (i.e., connections from left INS to right MFG in the salience network). Statistical tests showed that around 39% of extrinsic connections showed substantial to conclusive evidence in favour of the alternative hypothesis of a difference in connectivity after GSR. Concerning intrinsic connections (i.e., inhibitory self-connections) 83% showed substantial to conclusive evidence in favour of the alternative hypothesis.</p>
+        </sec>
+        <sec id="sec3.2.2">
+          <label>3.2.2</label>
+          <title>The influence of GSR on between-network connectivity</title>
+          <p id="p0180"><xref rid="fig6" ref-type="fig">Fig. 6</xref> shows the between- and within network connectivity for the combined network. Row A shows the separate connectivity estimates, Row B shows the average connectivity between networks.<fig id="fig6"><label>Fig. 6</label><caption><p>Group-level (HCP dataset) between-network connectivity without GSR (left column), with GSR (middle column), and (natural) log Bayes factors (right column) of the alternative of a difference in connectivity after GSR versus the null hypothesis of no difference in connectivity after GSR. Row A shows estimates for each connection separately. Red, green, and blue empty squares indicate connectivity within SAL, SMR, and DMN, respectively. Values in smaller fonts represent connections with a posterior probability smaller than 90%. Row B shows average connectivity between networks. Dimmed arrows and values depict connections with a posterior probability &lt;90%.</p></caption><alt-text id="alttext0040">Fig. 6</alt-text><graphic xlink:href="gr6"/></fig></p>
+          <p id="p0185"><italic>Across connections,</italic> the root mean squared difference between connectivity with and without GSR was 0.09Hz across all between-network connections. Note again the similarity in connectivity compared to the separately estimated networks (see, <xref rid="fig5" ref-type="fig">Fig. 5</xref>). The average influence networks had on each other (<xref rid="fig6" ref-type="fig">Fig. 6</xref>; Row B) was negligible irrespective of processing method, except for a small positive influence from DMN on SAL which became negligible after GSR. Statistical tests showed that all connections had conclusive evidence (log Bayes factor above 4.6) for a change in connectivity after GSR, which is probably related to low levels of between-subject variability in <italic>averaged</italic> between-network connectivity.</p>
+          <p id="p0190"><italic>At the level of individual connections,</italic> we mainly observe excitatory influence from SMR and DMN on SAL using data without GSR, which becomes mainly inhibitory after GSR. Additionally, after GSR we observe inhibitory connectivity from SAL and SMR on DMN, and from rSMC on all DMN regions, which was not found without GSR. Statistical tests showed that 49% of between-network connections showed substantial to conclusive evidence in favour of the alternative that GSR had an effect on effective connectivity.</p>
+        </sec>
+        <sec id="sec3.2.3">
+          <label>3.2.3</label>
+          <title>The influence of GSR on noise parameters</title>
+          <p id="p0195"><xref rid="fig7" ref-type="fig">Fig. 7</xref> shows the effect of GSR on parameters representing (spectral) noise, which include endogenous fluctuations that drive the system (i.e., state-noise) and global measurement (or observation) noise. Clearly, GSR had an effect on both estimated endogenous fluctuations and global measurement (observation) noise, except for the exponent of endogenous fluctuations, showing that the effect of GSR is not specific to the parameter representing global measurement noise. Note that the exponent components (i.e., parameters that model the shape of the spectrum) of group-effects yielded in some cases unintuitive results (i.e., group estimates at lower end of subject-specific estimates), which most likely arise from complex covariance structures between these components (see, <xref rid="bib17" ref-type="bibr">Kasess et al., 2010</xref> for similar unintuitive results using Bayesian parameter averaging in DCM).<fig id="fig7"><label>Fig. 7</label><caption><p>The effect of GSR on (spectral) noise parameters within the combined network. Bar heights depict the group-level maximum <italic>a posteriori</italic> estimates for the respective parameter, small circles depict subject-specific estimates. The color of the bars depict the parameter type (i.e., amplitude and exponent). Lightness of the bars and markers depicts connectivity without or with GSR (darker and lighter, respectively). Red lines depict 90% credible intervals for the posterior estimates (PEB.Cp). Parameters are shown in log-scale and are relative to the prior mean.</p></caption><alt-text id="alttext0045">Fig. 7</alt-text><graphic xlink:href="gr7"/></fig></p>
+        </sec>
+        <sec id="sec3.2.4">
+          <label>3.2.4</label>
+          <title>Identifying data features</title>
+          <p id="p0200">A fixed-effect approach was used to pool complexity over subjects (see, e.g., <xref rid="bib35" ref-type="bibr">Stephan et al., 2009</xref>). For all networks, DCM estimation without GSR was found to have greater complexity – or information gain – compared to estimation with GSR, with strong evidence in all cases. However, again the certainty of the estimates (i.e., negative entropy) was greater for the data with GSR for SMR, DMN, SAL, respectively, but the opposite pattern was found for the combined network.</p>
+        </sec>
+      </sec>
+    </sec>
+    <sec id="sec4">
+      <label>4</label>
+      <title>Discussion</title>
+      <p id="p0205">In this study we investigated the effect of GSR on effective connectivity and parameters representing global observation noise, estimated with spectral DCM. Additionally, we investigated which data (i.e., data extraction with or without GSR) were most informative (i.e., have the largest complexity) for estimation of DCM parameters. We focused on both within- and between-network connectivity in two different designs (longitudinal and cross-sectional). The use of different designs allowed us to investigate the generalizability of our conclusions, and to discover divergent effects of GSR in different designs.</p>
+      <p id="p0210">In general, we found negligible to small effects of GSR on connectivity within small (separately estimated) RSNs, with little evidence for a change in effective connectivity after GSR. At the network-level the effect sizes attributable to GSR were very small, both in terms of root-mean-squared deviation as well as hemispheric asymmetry. Additionally, the majority of individual connections did not change sign. These results show that GSR in small RSNs should not constitute a major concern in future research using resting state DCM. Our results agree with studies of functional connectivity, showing that connections with <italic>functionally related</italic> areas mostly remain significantly positive after GSR (e.g., <xref rid="bib3" ref-type="bibr">Chang &amp; Glover, 2009</xref>; <xref rid="bib40" ref-type="bibr">Weissenbacher et al., 2009</xref>).</p>
+      <p id="p0215">Concerning between-network connectivity, we found two important effects: the effect of GSR on the between-network connectivity <italic>across</italic> connections (i.e., net influence between networks and root-mean-squared difference) was negligible to small, while the effect of GSR on <italic>individual</italic> connections was non-negligible. Results of (Bayesian) statistical tests showed that most of the latter connections showed evidence for the null-hypothesis in the longitudinal dataset, while many effective connections showed substantial to conclusive evidence for a change after GSR in the cross-sectional dataset. At the level of individual connections many connections between DMN and SAL were excitatory when GSR was not applied, most prominently for the HCP dataset (unidirectional influence from DMN in case of HCP), while many connections were inhibitory (and slightly more bidirectional) <italic>after GSR</italic>. Furthermore, we found both excitatory and inhibitory influence from SMR on SAL, which became inhibitory or non-existent after GSR. The general decrease in excitatory (and increase in inhibitory) between-network connectivity after GSR has also been found in studies focusing on functional connectivity (see, <xref rid="bib26" ref-type="bibr">Murphy and Fox, 2017</xref>). In conclusion, the robustness of network-level effects, in contrast to connection-level effects, with respect to GSR shows that DCM connections are best interpreted jointly (which has been argued in other studies, e.g., <xref rid="bib1" ref-type="bibr">Almgren et al., 2018</xref>).</p>
+      <p id="p0220">The between-network results are somewhat in contrast to the DCM study of <xref rid="bib43" ref-type="bibr">Zhou et al. (2018)</xref>, which found inhibitory influence from the salience network on the core DMN, but not <italic>vice versa</italic>, <italic>without</italic> GSR (which we found in the opposite direction after GSR in the HCP dataset). There are two important differences in results between <xref rid="bib43" ref-type="bibr">Zhou et al. (2018)</xref> and the result we obtained in the present study that should be explained. First, in the HCP data we found mainly inhibitory connectivity (after GSR) from DMN to SAL, while <xref rid="bib43" ref-type="bibr">Zhou et al. (2018)</xref> found inhibitory connectivity in the opposite direction. This might be explained by a difference in subject characteristics: Subjects in our study were mainly young adults (mean age was 30.1 and 28.7 years respectively, for longitudinal and cross-sectional design), while the age-group included in <xref rid="bib43" ref-type="bibr">Zhou et al. (2018)</xref> was on average younger (mean age ​= ​17.4 years). Indeed, some studies suggest that functional connectivity between DMN and higher-order cognitive networks are affected by age (e.g., <xref rid="bib44" ref-type="bibr">Zonneveld et al., 2019</xref>). Second, <xref rid="bib43" ref-type="bibr">Zhou et al. (2018)</xref> found important between-network connectivity when averaged across connections, while we only found effects at the connection-level (see, e.g., <xref rid="fig6" ref-type="fig">Fig. 6</xref>). This might be explained by their use of functional connectivity to inform priors: between-network effects might be more coherent when connectivity parameters are informed by FC, hence increasing detection of between-network effects. In our study we did not use FC-informed priors for two reasons: (1) Bayesian model comparison showed strong evidence in favour of the use of standard (i.e., shrinkage) priors, (2) the use of group-specific (across-subject) FC-priors at higher levels in our hierarchical design might have obscured results. Additionally, the difference in sample size and specific ROI specification method might also have had an effect on the divergent results.</p>
+      <p id="p0225">On average, connectivity was closer to the prior mean after GSR. Moreover, hemispheric asymmetry (difference between left and right outgoing connectivity) also decreased after GSR. For extrinsic connectivity, this is in line with multiple studies showing that the connectivity decreases after GSR (e.g., <xref rid="bib3" ref-type="bibr">Chang &amp; Glover, 2009</xref>; <xref rid="bib7" ref-type="bibr">Fox et al., 2009</xref>; <xref rid="bib40" ref-type="bibr">Weissenbacher et al., 2009</xref>). The deviation from the prior mean also has an influence on the informative value of the data, which is discussed further below. Notably, hemispheric asymmetry also decreased after GSR. Hemispheric asymmetry was here defined as the (network-specific) efferent connectivity from regions in one hemisphere relative to the outgoing connectivity from regions in the other hemisphere. Hence, a change in hemispheric asymmetry would mean that the magnitude of the decrease in connectivity is different for regions in both hemispheres. Possibly the extent to which certain regions contribute to the global signal differed between hemispheres. This explanation is in line with <xref rid="bib23" ref-type="bibr">McAvoy et al. (2016)</xref> who found an asymmetric contribution of regions to the global signal. However, a direct comparison with the functional connectivity literature concerning the size of the effect of GSR is difficult given the differences in models, difference in statistical framework (Bayesian vs frequentist), and specific networks under investigation. It is also important to note that our conceptualization of hemispheric asymmetry differs from that in functional connectivity studies, since DCM estimates directed influences.</p>
+      <p id="p0230">Remarkably, the <italic>within-network</italic> connectivity was often very similar when networks were estimated separately compared to networks as a whole (compare e.g., <xref rid="fig5" ref-type="fig">Fig. 5</xref>, <xref rid="fig6" ref-type="fig">Fig. 6</xref>). This was also found by <xref rid="bib38" ref-type="bibr">Ushakov et al. (2016)</xref>, who showed that connectivity within the core DMN was very similar when either left or right hippocampus was included in the network. This shows that group-level resting-state DCM results are quite robust against addition of extra networks and regions.</p>
+      <p id="p0235">Contrary to our expectations, we either found no effect (longitudinal designs) or an unspecific effect (cross sectional design) on measurement noise parameters. Several explanations can be put forward to account for these counter-intuitive results, and the explanations might be different for both designs. Concerning the absence of effect in the longitudinal designs, it might be that the effect of GSR was captured by the between-subject components of the hierarchical Bayesian model. This is possible, since the datasets differed in terms of scanner type, pulse sequence parameters, and subject characteristics, which might cause divergent effects on noise parameters. Therefore, it is possible that the effect of GSR was cancelled out at the group-level, while captured by parameters representing between-subject variance. Indeed, we found an important effect (i.e., increase vs decrease in parameters) of GSR on noise parameters for some individual subjects, but not for others. Concerning the cross-sectional HCP dataset, the effect was captured by multiple noise parameters. This unspecific effect is possible, since resting state fMRI has no explicit exogenous input (e.g., an experimental design) that could inform more precise estimation. Noise parameters that are shared across regions (e.g., global state and measurement noise) might therefore be all sensitive to the global signal. Note that we did not model the sources of global signal regression, but its effects on the parameter representing global signal noise.</p>
+      <p id="p0240">Additionally, we asked whether data was more informative for 1st level parameter estimation (i.e., had the highest complexity) with or without GSR. Connectivity estimation using data without GSR was found to yield the greatest complexity for all datasets and networks. The complexity term is the Kullback-Leibler divergence between the prior and posterior density, which can be interpreted as the increase in information after updating the prior with the data. Complexity essentially depends on (1) divergence of the mean of the posterior from the mean of the prior density, (2) precision of the posterior density compared to the precision of the prior, and (3) change in covariance patterns between posterior and prior densities of parameters. The observations of higher complexity without GSR in most cases probably is for a part attributable to a greater divergence from the posterior mean. The few (subject-specific) observations of higher complexity with GSR are at odds with this explanation, since after GSR a smaller deviation from the prior mean was observed. In general, data without GSR provide more information to estimate effective connectivity compared to data after GSR, which might slightly encourage the use of data without GSR in DCM studies (however, more measures are needed to fully licence this conclusion). However, the precision of the parameter estimates also has an influence on the KL-divergence. Therefore, we compared the precision of estimations (computed as the negative entropy) for data with versus without GSR. Here we found that for <italic>small networks</italic>, data with GSR was found to yield greatest precision. However, for the combined network, data <italic>without</italic> GSR was found to yield most precise estimates. This might be associated with the (potentially spurious) inhibitory connectivity that was found for estimation with GSR in the combined network.</p>
+      <p id="p0245">In general, we can thus conclude that data without GSR are more informative for estimation of effective connectivity. One should note that this complexity was computed at the session-level, and that this level is directly dependent on the data. For the other levels (i.e., subject- and group-level), the complexity term includes the Kullback-Leibler divergence of second-level parameters (e.g., between-session variance; group-level effective connectivity) from their prior density, which depends on the estimated parameters at lower levels, and not directly on the data. Possibly, between-session (between-subject) differences and subject (group) level estimates are less informed by the estimates based on data without GSR.</p>
+      <p id="p0250">In this work we assessed the (practical) effects of GSR on parameters estimated with DCM for resting state fMRI. However, multiple alternative methods exist to eliminate (global) noise from fMRI data, including temporal ICA (<xref rid="bib12" ref-type="bibr">Glasser et al., 2018</xref>), dynamic global signal regression based on blood arrival time (dGSR; <xref rid="bib5" ref-type="bibr">Erdoğan, Tong, Hocke, Lindsey, &amp; deB Frederick, 2016</xref>), and corrections for respiratory and cardiac signals (<xref rid="bib3" ref-type="bibr">Chang et al., 2009</xref>). Although these alternatives are less extensively studied in fMRI research compared to ‘canonical’ GSR, they have certain features that <italic>might</italic> make them superior to GSR. These methods are outside of the scope of the present study, which was to assess the effect of the (widely studied) ‘canonical’ GSR on DCM parameters. However, we also checked the consistency of our results compared to the effects of global signal <italic>normalization</italic> (dividing timeseries by the global signal instead of regressing out), and we found quite similar results. We would also like to stress that it is important to not generalize the present results – which concern effective connectivity estimated with DCM – to studies of functional connectivity (statistical dependencies among brain signals; <xref rid="bib9" ref-type="bibr">Friston, 2011</xref>). Effective connectivity with DCM includes a biophysically plausible forward model, is embedded in a Bayesian framework, and estimates directed, causal influences among neural populations. In contrast, most studies on functional connectivity describe undirected statistical relations between brain regions, seldom include a biophysical forward model, and are mostly embedded in a frequentist framework. Effects of GSR on effective and functional connectivity can therefore diverge.</p>
+      <p id="p0255">In conclusion, GSR is a minor concern in DCM studies. However, individual between-network connections (as opposed to average between-network connectivity) should be interpreted with some caution. Additionally, we suggest the use of the complexity term – in combination with the certainty of estimation - to assess the relative informative value of the data with versus without GSR.</p>
+    </sec>
+    <sec id="sec5">
+      <title>Data and code availability statement</title>
+      <sec id="sec5.1">
+        <title>Software availability</title>
+        <p id="p0260">Code to reproduce analyses, results and figures is available at: <ext-link ext-link-type="uri" xlink:href="https://github.com/halmgren/Pipeline_effect_GSR_effective_connectivity_rsfMRI" id="intref0015">https://github.com/halmgren/Pipeline_effect_GSR_effective_connectivity_rsfMRI</ext-link>.</p>
+      </sec>
+    </sec>
+    <sec sec-type="data-availability" id="sec6">
+      <title>Data availability</title>
+      <p id="p0265">The following longitudinal datasets were used (and are accessible through):<list list-type="simple" id="olist0010"><list-item id="o0010"><label>(1)</label><p id="p0270">‘Myconnectome’: Downloaded from <ext-link ext-link-type="uri" xlink:href="https://openneuro.org/" id="intref0055">https://openneuro.org/</ext-link> (ds000031)</p></list-item><list-item id="o0015"><label>(2)</label><p id="p0275">‘The Midnight Scan Club’: Downloaded from <ext-link ext-link-type="uri" xlink:href="https://openneuro.org/" id="PC_link3dxg1nwjsD">https://openneuro.org/</ext-link> (ds000224)</p></list-item><list-item id="o0020"><label>(3)</label><p id="p0280">‘Kirby Weekly’: Downloaded from <ext-link ext-link-type="uri" xlink:href="https://www.nitrc.org/projects/kirbyweekly" id="intref0030">https://www.nitrc.org/projects/kirbyweekly</ext-link></p></list-item><list-item id="o0025"><label>(4)</label><p id="p0285">‘Day2day’: For availability, see <xref rid="bib6" ref-type="bibr">Filevich et al. (2017)</xref>; section ‘Availability of data and materials’ (available upon request).</p></list-item></list></p>
+      <p id="p0290">The 900 subjects release of the Human Connectome Project was used for the cross-sectional dataset. They are downloadable from <ext-link ext-link-type="uri" xlink:href="https://www.humanconnectome.org" id="intref0035">https://www.humanconnectome.org</ext-link>. For more information on the specific release, see <ext-link ext-link-type="uri" xlink:href="https://www.humanconnectome.org/study/hcp-young-adult/document/900-subjects-data-release" id="intref0040">https://www.humanconnectome.org/study/hcp-young-adult/document/900-subjects-data-release</ext-link>.</p>
+    </sec>
+  </body>
+  <back>
+    <ref-list id="cebib0010">
+      <title>References</title>
+      <ref id="bib1">
+        <element-citation publication-type="journal" id="sref1">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Almgren</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>Van de Steen</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Kühn</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Razi</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Friston</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Marinazzo</surname>
+              <given-names>D.</given-names>
+            </name>
+          </person-group>
+          <article-title>Variability and reliability of effective connectivity within the core default mode network: a multi-site longitudinal spectral DCM study</article-title>
+          <source>Neuroimage</source>
+          <volume>183</volume>
+          <year>2018</year>
+          <fpage>757</fpage>
+          <lpage>768</lpage>
+          <pub-id pub-id-type="pmid">30165254</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib2">
+        <element-citation publication-type="journal" id="sref2">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Anderson</surname>
+              <given-names>J.S.</given-names>
+            </name>
+            <name>
+              <surname>Druzgal</surname>
+              <given-names>T.J.</given-names>
+            </name>
+            <name>
+              <surname>Lopez-Larson</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Jeong</surname>
+              <given-names>E.-K.</given-names>
+            </name>
+            <name>
+              <surname>Desai</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Yurgelun-Todd</surname>
+              <given-names>D.</given-names>
+            </name>
+          </person-group>
+          <article-title>Network anticorrelations, global regression, and phase-shifted soft tissue correction</article-title>
+          <source>Hum. Brain Mapp.</source>
+          <volume>32</volume>
+          <issue>6</issue>
+          <year>2011</year>
+          <fpage>919</fpage>
+          <lpage>934</lpage>
+          <pub-id pub-id-type="pmid">20533557</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib3">
+        <element-citation publication-type="journal" id="sref3">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chang</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Cunningham</surname>
+              <given-names>J.P.</given-names>
+            </name>
+            <name>
+              <surname>Glover</surname>
+              <given-names>G.H.</given-names>
+            </name>
+          </person-group>
+          <article-title>Influence of heart rate on the BOLD signal: the cardiac response function</article-title>
+          <source>Neuroimage</source>
+          <volume>44</volume>
+          <issue>3</issue>
+          <year>2009</year>
+          <fpage>857</fpage>
+          <lpage>869</lpage>
+          <pub-id pub-id-type="pmid">18951982</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib4">
+        <element-citation publication-type="journal" id="sref4">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Choe</surname>
+              <given-names>A.S.</given-names>
+            </name>
+            <name>
+              <surname>Jones</surname>
+              <given-names>C.K.</given-names>
+            </name>
+            <name>
+              <surname>Joel</surname>
+              <given-names>S.E.</given-names>
+            </name>
+            <name>
+              <surname>Muschelli</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Belegu</surname>
+              <given-names>V.</given-names>
+            </name>
+            <name>
+              <surname>Caffo</surname>
+              <given-names>B.S.</given-names>
+            </name>
+          </person-group>
+          <article-title>Reproducibility and temporal structure in weekly resting-state fMRI over a period of 3.5 years</article-title>
+          <source>PLoS One</source>
+          <volume>10</volume>
+          <issue>10</issue>
+          <year>2015</year>
+          <fpage>1</fpage>
+          <lpage>29</lpage>
+        </element-citation>
+      </ref>
+      <ref id="bib5">
+        <element-citation publication-type="journal" id="sref5">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Erdoğan</surname>
+              <given-names>S.B.</given-names>
+            </name>
+            <name>
+              <surname>Tong</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <name>
+              <surname>Hocke</surname>
+              <given-names>L.M.</given-names>
+            </name>
+            <name>
+              <surname>Lindsey</surname>
+              <given-names>K.P.</given-names>
+            </name>
+            <name>
+              <surname>deB Frederick</surname>
+              <given-names>B.</given-names>
+            </name>
+          </person-group>
+          <article-title>Correcting for blood arrival time in global mean regression enhances functional connectivity analysis of resting state fMRI-BOLD signals</article-title>
+          <source>Front. Hum. Neurosci.</source>
+          <volume>10</volume>
+          <issue>June</issue>
+          <year>2016</year>
+          <fpage>1</fpage>
+          <lpage>22</lpage>
+          <pub-id pub-id-type="pmid">26858619</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib6">
+        <element-citation publication-type="journal" id="sref6">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Filevich</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Lisofsky</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Becker</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Butler</surname>
+              <given-names>O.</given-names>
+            </name>
+            <name>
+              <surname>Lochstet</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Martensson</surname>
+              <given-names>J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Day2day: investigating daily variability of magnetic resonance imaging measures over half a year</article-title>
+          <source>BMC Neurosci.</source>
+          <volume>18</volume>
+          <issue>1</issue>
+          <year>2017</year>
+          <fpage>1</fpage>
+          <lpage>8</lpage>
+          <pub-id pub-id-type="pmid">28049513</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib7">
+        <element-citation publication-type="journal" id="sref7">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fox</surname>
+              <given-names>M.D.</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Snyder</surname>
+              <given-names>A.Z.</given-names>
+            </name>
+            <name>
+              <surname>Raichle</surname>
+              <given-names>M.E.</given-names>
+            </name>
+          </person-group>
+          <article-title>The global signal and observed anticorrelated resting state brain networks</article-title>
+          <source>J. Neurophysiol.</source>
+          <volume>101</volume>
+          <issue>6</issue>
+          <year>2009</year>
+          <fpage>3270</fpage>
+          <lpage>3283</lpage>
+          <pub-id pub-id-type="pmid">19339462</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib8">
+        <element-citation publication-type="journal" id="sref8">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Friston</surname>
+              <given-names>K.J.</given-names>
+            </name>
+            <name>
+              <surname>Harrison</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Penny</surname>
+              <given-names>W.</given-names>
+            </name>
+          </person-group>
+          <article-title>Dynamic causal modelling</article-title>
+          <source>Neuroimage</source>
+          <volume>19</volume>
+          <issue>4</issue>
+          <year>2003</year>
+          <fpage>1273</fpage>
+          <lpage>1302</lpage>
+          <pub-id pub-id-type="pmid">12948688</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib9">
+        <element-citation publication-type="journal" id="sref9">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Friston</surname>
+              <given-names>Karl J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Functional and effective connectivity: a review</article-title>
+          <source>Brain Connect.</source>
+          <volume>1</volume>
+          <issue>1</issue>
+          <year>2011</year>
+          <fpage>13</fpage>
+          <lpage>36</lpage>
+          <pub-id pub-id-type="pmid">22432952</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib10">
+        <element-citation publication-type="journal" id="sref10">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Friston</surname>
+              <given-names>Karl J.</given-names>
+            </name>
+            <name>
+              <surname>Kahan</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Biswal</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Razi</surname>
+              <given-names>A.</given-names>
+            </name>
+          </person-group>
+          <article-title>A DCM for resting state fMRI</article-title>
+          <source>Neuroimage</source>
+          <volume>94</volume>
+          <year>2014</year>
+          <fpage>396</fpage>
+          <lpage>407</lpage>
+          <pub-id pub-id-type="pmid">24345387</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib45">
+        <element-citation publication-type="journal" id="optg6WulQ0Y9U">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Friston</surname>
+              <given-names>K.J.</given-names>
+            </name>
+            <name>
+              <surname>Litvak</surname>
+              <given-names>V.</given-names>
+            </name>
+            <name>
+              <surname>Oswal</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Razi</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Stephan</surname>
+              <given-names>K.E.</given-names>
+            </name>
+            <name>
+              <surname>van Wijk</surname>
+              <given-names>B.C.M.</given-names>
+            </name>
+            <name>
+              <surname>Ziegler</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Zeidman</surname>
+              <given-names>P.</given-names>
+            </name>
+          </person-group>
+          <article-title>Bayesian model reduction and empirical Bayes for group (DCM) studies</article-title>
+          <source>NeuroImage</source>
+          <volume>128</volume>
+          <year>2016</year>
+          <fpage>413</fpage>
+          <lpage>431</lpage>
+          <pub-id pub-id-type="pmid">26569570</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib11">
+        <element-citation publication-type="journal" id="sref11">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Friston</surname>
+              <given-names>Karl J.</given-names>
+            </name>
+            <name>
+              <surname>Williams</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Howard</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Frackowiak</surname>
+              <given-names>R.S.J.</given-names>
+            </name>
+            <name>
+              <surname>Turner</surname>
+              <given-names>R.</given-names>
+            </name>
+          </person-group>
+          <article-title>Movement-Related effects in fMRI time-series</article-title>
+          <source>Magn. Reson. Med.</source>
+          <volume>35</volume>
+          <issue>3</issue>
+          <year>1996</year>
+          <fpage>346</fpage>
+          <lpage>355</lpage>
+          <pub-id pub-id-type="pmid">8699946</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib12">
+        <element-citation publication-type="journal" id="sref12">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Glasser</surname>
+              <given-names>M.F.</given-names>
+            </name>
+            <name>
+              <surname>Coalson</surname>
+              <given-names>T.S.</given-names>
+            </name>
+            <name>
+              <surname>Bijsterbosch</surname>
+              <given-names>J.D.</given-names>
+            </name>
+            <name>
+              <surname>Harrison</surname>
+              <given-names>S.J.</given-names>
+            </name>
+            <name>
+              <surname>Harms</surname>
+              <given-names>M.P.</given-names>
+            </name>
+            <name>
+              <surname>Anticevic</surname>
+              <given-names>A.</given-names>
+            </name>
+          </person-group>
+          <article-title>Using temporal ICA to selectively remove global noise while preserving global signal in functional MRI data</article-title>
+          <source>Neuroimage</source>
+          <volume>181</volume>
+          <year>2018</year>
+          <fpage>692</fpage>
+          <lpage>717</lpage>
+          <pub-id pub-id-type="pmid">29753843</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib13">
+        <element-citation publication-type="journal" id="sref13">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Glasser</surname>
+              <given-names>M.F.</given-names>
+            </name>
+            <name>
+              <surname>Sotiropoulos</surname>
+              <given-names>S.N.</given-names>
+            </name>
+            <name>
+              <surname>Wilson</surname>
+              <given-names>J.A.</given-names>
+            </name>
+            <name>
+              <surname>Coalson</surname>
+              <given-names>T.S.</given-names>
+            </name>
+            <name>
+              <surname>Fischl</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Andersson</surname>
+              <given-names>J.L.</given-names>
+            </name>
+          </person-group>
+          <article-title>The minimal preprocessing pipelines for the Human Connectome Project</article-title>
+          <source>Neuroimage</source>
+          <volume>80</volume>
+          <year>2013</year>
+          <fpage>105</fpage>
+          <lpage>124</lpage>
+          <pub-id pub-id-type="pmid">23668970</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib14">
+        <element-citation publication-type="journal" id="sref14">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gordon</surname>
+              <given-names>E.M.</given-names>
+            </name>
+            <name>
+              <surname>Laumann</surname>
+              <given-names>T.O.</given-names>
+            </name>
+            <name>
+              <surname>Gilmore</surname>
+              <given-names>A.W.</given-names>
+            </name>
+            <name>
+              <surname>Newbold</surname>
+              <given-names>D.J.</given-names>
+            </name>
+            <name>
+              <surname>Greene</surname>
+              <given-names>D.J.</given-names>
+            </name>
+            <name>
+              <surname>Berg</surname>
+              <given-names>J.J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Precision functional mapping of individual human brains</article-title>
+          <source>Neuron</source>
+          <volume>95</volume>
+          <issue>4</issue>
+          <year>2017</year>
+          <fpage>791</fpage>
+          <lpage>807</lpage>
+          <comment>e7</comment>
+          <pub-id pub-id-type="pmid">28757305</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib15">
+        <element-citation publication-type="journal" id="sref15">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gotts</surname>
+              <given-names>S.J.</given-names>
+            </name>
+            <name>
+              <surname>Saad</surname>
+              <given-names>Z.S.</given-names>
+            </name>
+            <name>
+              <surname>Jo</surname>
+              <given-names>H.J.</given-names>
+            </name>
+            <name>
+              <surname>Wallace</surname>
+              <given-names>G.L.</given-names>
+            </name>
+            <name>
+              <surname>Cox</surname>
+              <given-names>R.W.</given-names>
+            </name>
+            <name>
+              <surname>Martin</surname>
+              <given-names>A.</given-names>
+            </name>
+          </person-group>
+          <article-title>The perils of global signal regression for group comparisons: a case study of Autism Spectrum Disorders</article-title>
+          <source>Front. Hum. Neurosci.</source>
+          <volume>7</volume>
+          <year>2013</year>
+          <fpage>356</fpage>
+          <pub-id pub-id-type="pmid">23874279</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib16">
+        <element-citation publication-type="journal" id="sref16">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jenkinson</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Bannister</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Brady</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Smith</surname>
+              <given-names>S.</given-names>
+            </name>
+          </person-group>
+          <article-title>Improved optimization for the robust and accurate linear registration and motion correction of brain images</article-title>
+          <source>Neuroimage</source>
+          <volume>17</volume>
+          <issue>2</issue>
+          <year>2002</year>
+          <fpage>825</fpage>
+          <lpage>841</lpage>
+          <pub-id pub-id-type="pmid">12377157</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib17">
+        <element-citation publication-type="journal" id="sref17">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kasess</surname>
+              <given-names>C.H.</given-names>
+            </name>
+            <name>
+              <surname>Stephan</surname>
+              <given-names>K.E.</given-names>
+            </name>
+            <name>
+              <surname>Weissenbacher</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Pezawas</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Moser</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Windischberger</surname>
+              <given-names>C.</given-names>
+            </name>
+          </person-group>
+          <article-title>Multi-subject analyses with dynamic causal modeling</article-title>
+          <source>Neuroimage</source>
+          <volume>49</volume>
+          <issue>4</issue>
+          <year>2010</year>
+          <fpage>3065</fpage>
+          <lpage>3074</lpage>
+          <pub-id pub-id-type="pmid">19941963</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib18">
+        <element-citation publication-type="journal" id="sref18">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kasper</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Bollmann</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Diaconescu</surname>
+              <given-names>A.O.</given-names>
+            </name>
+            <name>
+              <surname>Hutton</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Heinzle</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Iglesias</surname>
+              <given-names>S.</given-names>
+            </name>
+          </person-group>
+          <article-title>The PhysIO toolbox for modeling physiological noise in fMRI data</article-title>
+          <source>J. Neurosci. Methods</source>
+          <volume>276</volume>
+          <year>2017</year>
+          <fpage>56</fpage>
+          <lpage>72</lpage>
+          <pub-id pub-id-type="pmid">27832957</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib19">
+        <element-citation publication-type="journal" id="sref19">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kass</surname>
+              <given-names>R.E.</given-names>
+            </name>
+            <name>
+              <surname>Raftery</surname>
+              <given-names>A.E.</given-names>
+            </name>
+          </person-group>
+          <article-title>Bayes factors</article-title>
+          <source>J. Am. Stat. Assoc.</source>
+          <volume>90</volume>
+          <issue>430</issue>
+          <year>1995</year>
+          <fpage>773</fpage>
+          <lpage>795</lpage>
+        </element-citation>
+      </ref>
+      <ref id="bib20">
+        <element-citation publication-type="journal" id="sref20">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Laumann</surname>
+              <given-names>T.O.</given-names>
+            </name>
+            <name>
+              <surname>Gordon</surname>
+              <given-names>E.M.</given-names>
+            </name>
+            <name>
+              <surname>Adeyemo</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Snyder</surname>
+              <given-names>A.Z.</given-names>
+            </name>
+            <name>
+              <surname>Joo</surname>
+              <given-names>S. J. un</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>M.Y.</given-names>
+            </name>
+          </person-group>
+          <article-title>Functional system and areal organization of a highly sampled individual human brain</article-title>
+          <source>Neuron</source>
+          <volume>87</volume>
+          <issue>3</issue>
+          <year>2015</year>
+          <fpage>657</fpage>
+          <lpage>670</lpage>
+          <pub-id pub-id-type="pmid">26212711</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib21">
+        <element-citation publication-type="journal" id="sref21">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Liu</surname>
+              <given-names>T.T.</given-names>
+            </name>
+          </person-group>
+          <article-title>Noise contributions to the fMRI signal: an overview</article-title>
+          <source>Neuroimage</source>
+          <volume>143</volume>
+          <year>2016</year>
+          <fpage>141</fpage>
+          <lpage>151</lpage>
+          <pub-id pub-id-type="pmid">27612646</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib22">
+        <element-citation publication-type="journal" id="sref22">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Liu</surname>
+              <given-names>T.T.</given-names>
+            </name>
+            <name>
+              <surname>Nalci</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Falahpour</surname>
+              <given-names>M.</given-names>
+            </name>
+          </person-group>
+          <article-title>The global signal in fMRI: nuisance or Information?</article-title>
+          <source>Neuroimage</source>
+          <volume>150</volume>
+          <year>2017</year>
+          <fpage>213</fpage>
+          <lpage>229</lpage>
+          <pub-id pub-id-type="pmid">28213118</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib23">
+        <element-citation publication-type="journal" id="sref23">
+          <person-group person-group-type="author">
+            <name>
+              <surname>McAvoy</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Mitra</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Coalson</surname>
+              <given-names>R.S.</given-names>
+            </name>
+            <name>
+              <surname>d’Avossa</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Keidel</surname>
+              <given-names>J.L.</given-names>
+            </name>
+            <name>
+              <surname>Petersen</surname>
+              <given-names>S.E.</given-names>
+            </name>
+            <name>
+              <surname>Raichle</surname>
+              <given-names>M.E.</given-names>
+            </name>
+          </person-group>
+          <article-title>Unmasking language lateralization in human brain intrinsic activity</article-title>
+          <source>Cerebr. Cortex</source>
+          <volume>26</volume>
+          <issue>4</issue>
+          <year>2016</year>
+          <fpage>1733</fpage>
+          <lpage>1746</lpage>
+        </element-citation>
+      </ref>
+      <ref id="bib24">
+        <element-citation publication-type="journal" id="sref24">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Murphy</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Fox</surname>
+              <given-names>M.D.</given-names>
+            </name>
+          </person-group>
+          <article-title>Towards a consensus regarding global signal regression for resting state functional connectivity MRI</article-title>
+          <source>Neuroimage</source>
+          <issue>November</issue>
+          <year>2016</year>
+          <comment>0–1</comment>
+        </element-citation>
+      </ref>
+      <ref id="bib25">
+        <element-citation publication-type="journal" id="sref25">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Murphy</surname>
+              <given-names>Kevin</given-names>
+            </name>
+            <name>
+              <surname>Birn</surname>
+              <given-names>R.M.</given-names>
+            </name>
+            <name>
+              <surname>Handwerker</surname>
+              <given-names>D.A.</given-names>
+            </name>
+            <name>
+              <surname>Jones</surname>
+              <given-names>T.B.</given-names>
+            </name>
+            <name>
+              <surname>Bandettini</surname>
+              <given-names>P.A.</given-names>
+            </name>
+          </person-group>
+          <article-title>The impact of global signal regression on resting state correlations: are anti-correlated networks introduced?</article-title>
+          <source>Neuroimage</source>
+          <volume>44</volume>
+          <issue>3</issue>
+          <year>2009</year>
+          <fpage>893</fpage>
+          <lpage>905</lpage>
+          <pub-id pub-id-type="pmid">18976716</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib26">
+        <element-citation publication-type="journal" id="sref26">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Murphy</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Fox</surname>
+              <given-names>M.D.</given-names>
+            </name>
+          </person-group>
+          <article-title>Towards a consensus regarding global signal regression for resting state functional connectivity MRI</article-title>
+          <source>Neuroimage</source>
+          <volume>154</volume>
+          <year>2017</year>
+          <fpage>169</fpage>
+          <lpage>173</lpage>
+          <pub-id pub-id-type="pmid">27888059</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib27">
+        <element-citation publication-type="journal" id="sref27">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Parkes</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Fulcher</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Yücel</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Fornito</surname>
+              <given-names>A.</given-names>
+            </name>
+          </person-group>
+          <article-title>An evaluation of the efficacy, reliability, and sensitivity of motion correction strategies for resting-state functional MRI</article-title>
+          <source>Neuroimage</source>
+          <volume>171</volume>
+          <year>2018</year>
+          <fpage>415</fpage>
+          <lpage>436</lpage>
+          <pub-id pub-id-type="pmid">29278773</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib28">
+        <element-citation publication-type="journal" id="sref28">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Penny</surname>
+              <given-names>W.D.</given-names>
+            </name>
+            <name>
+              <surname>Stephan</surname>
+              <given-names>K.E.</given-names>
+            </name>
+            <name>
+              <surname>Mechelli</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Friston</surname>
+              <given-names>K.J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Comparing dynamic causal models</article-title>
+          <source>Neuroimage</source>
+          <volume>22</volume>
+          <issue>3</issue>
+          <year>2004</year>
+          <fpage>1157</fpage>
+          <lpage>1172</lpage>
+          <pub-id pub-id-type="pmid">15219588</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib29">
+        <element-citation publication-type="journal" id="sref29">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Power</surname>
+              <given-names>J.D.</given-names>
+            </name>
+            <name>
+              <surname>Laumann</surname>
+              <given-names>T.O.</given-names>
+            </name>
+            <name>
+              <surname>Plitt</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Martin</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Petersen</surname>
+              <given-names>S.E.</given-names>
+            </name>
+          </person-group>
+          <article-title>On global fMRI signals and simulations</article-title>
+          <source>Trends Cogn. Sci.</source>
+          <volume>21</volume>
+          <issue>12</issue>
+          <year>2017</year>
+          <fpage>911</fpage>
+          <lpage>913</lpage>
+          <pub-id pub-id-type="pmid">28939332</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib30">
+        <element-citation publication-type="journal" id="sref30">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Razi</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Kahan</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Rees</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Friston</surname>
+              <given-names>K.J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Construct validation of a DCM for resting state fMRI</article-title>
+          <source>Neuroimage</source>
+          <volume>106</volume>
+          <year>2015</year>
+          <fpage>1</fpage>
+          <lpage>14</lpage>
+          <pub-id pub-id-type="pmid">25463471</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib31">
+        <element-citation publication-type="journal" id="sref31">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rouder</surname>
+              <given-names>J.N.</given-names>
+            </name>
+            <name>
+              <surname>Speckman</surname>
+              <given-names>P.L.</given-names>
+            </name>
+            <name>
+              <surname>Sun</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Morey</surname>
+              <given-names>R.D.</given-names>
+            </name>
+            <name>
+              <surname>Iverson</surname>
+              <given-names>G.</given-names>
+            </name>
+          </person-group>
+          <article-title>Bayesian t tests for accepting and rejecting the null hypothesis</article-title>
+          <source>Psychon. Bull. Rev.</source>
+          <volume>16</volume>
+          <issue>2</issue>
+          <year>2009</year>
+          <fpage>225</fpage>
+          <lpage>237</lpage>
+          <pub-id pub-id-type="pmid">19293088</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib32">
+        <element-citation publication-type="journal" id="sref32">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rummel</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Verma</surname>
+              <given-names>R.K.</given-names>
+            </name>
+            <name>
+              <surname>Schöpf</surname>
+              <given-names>V.</given-names>
+            </name>
+            <name>
+              <surname>Abela</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Hauf</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Berruecos</surname>
+              <given-names>J.F.Z.</given-names>
+            </name>
+            <name>
+              <surname>Wiest</surname>
+              <given-names>R.</given-names>
+            </name>
+          </person-group>
+          <article-title>Time course based artifact identification for independent components of resting-state FMRI</article-title>
+          <source>Front. Hum. Neurosci.</source>
+          <volume>7</volume>
+          <year>2013</year>
+          <fpage>214</fpage>
+          <pub-id pub-id-type="pmid">23734119</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib33">
+        <element-citation publication-type="journal" id="sref33">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Saad</surname>
+              <given-names>Z.S.</given-names>
+            </name>
+            <name>
+              <surname>Gotts</surname>
+              <given-names>S.J.</given-names>
+            </name>
+            <name>
+              <surname>Murphy</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Jo</surname>
+              <given-names>H.J.</given-names>
+            </name>
+            <name>
+              <surname>Martin</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Cox</surname>
+              <given-names>R.W.</given-names>
+            </name>
+          </person-group>
+          <article-title>Trouble at rest: how correlation patterns and group differences become distorted after global signal regression</article-title>
+          <source>Brain Connect.</source>
+          <volume>2</volume>
+          <issue>1</issue>
+          <year>2012</year>
+          <fpage>25</fpage>
+          <lpage>32</lpage>
+          <pub-id pub-id-type="pmid">22432927</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib34">
+        <element-citation publication-type="journal" id="sref34">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Smith</surname>
+              <given-names>S.M.</given-names>
+            </name>
+            <name>
+              <surname>Fox</surname>
+              <given-names>P.T.</given-names>
+            </name>
+            <name>
+              <surname>Miller</surname>
+              <given-names>K.L.</given-names>
+            </name>
+            <name>
+              <surname>Glahn</surname>
+              <given-names>D.C.</given-names>
+            </name>
+            <name>
+              <surname>Fox</surname>
+              <given-names>P.M.</given-names>
+            </name>
+            <name>
+              <surname>Mackay</surname>
+              <given-names>C.E.</given-names>
+            </name>
+          </person-group>
+          <article-title>Correspondence of the brain’s functional architecture during activation and rest</article-title>
+          <source>Proc. Natl. Acad. Sci. U.S.A.</source>
+          <volume>106</volume>
+          <issue>31</issue>
+          <year>2009</year>
+          <fpage>13040</fpage>
+          <lpage>13045</lpage>
+          <pub-id pub-id-type="pmid">19620724</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib35">
+        <element-citation publication-type="journal" id="sref35">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Stephan</surname>
+              <given-names>K.E.</given-names>
+            </name>
+            <name>
+              <surname>Penny</surname>
+              <given-names>W.D.</given-names>
+            </name>
+            <name>
+              <surname>Daunizeau</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Moran</surname>
+              <given-names>R.J.</given-names>
+            </name>
+            <name>
+              <surname>Friston</surname>
+              <given-names>K.J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Bayesian model selection for group studies</article-title>
+          <source>Neuroimage</source>
+          <volume>46</volume>
+          <issue>4</issue>
+          <year>2009</year>
+          <fpage>1004</fpage>
+          <lpage>1017</lpage>
+          <pub-id pub-id-type="pmid">19306932</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib36">
+        <element-citation publication-type="journal" id="sref36">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Stephan</surname>
+              <given-names>K.E.</given-names>
+            </name>
+            <name>
+              <surname>Weiskopf</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Drysdale</surname>
+              <given-names>P.M.</given-names>
+            </name>
+            <name>
+              <surname>Robinson</surname>
+              <given-names>P.A.</given-names>
+            </name>
+            <name>
+              <surname>Friston</surname>
+              <given-names>K.J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Comparing hemodynamic models with DCM</article-title>
+          <source>Neuroimage</source>
+          <volume>38</volume>
+          <issue>3</issue>
+          <year>2007</year>
+          <fpage>387</fpage>
+          <lpage>401</lpage>
+          <pub-id pub-id-type="pmid">17884583</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib37">
+        <element-citation publication-type="journal" id="sref37">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Uddin</surname>
+              <given-names>L.Q.</given-names>
+            </name>
+          </person-group>
+          <article-title>Mixed signals: on separating brain signal from noise</article-title>
+          <source>Trends Cogn. Sci.</source>
+          <volume>21</volume>
+          <issue>6</issue>
+          <year>2017</year>
+          <fpage>405</fpage>
+          <lpage>406</lpage>
+          <pub-id pub-id-type="pmid">28461113</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib38">
+        <element-citation publication-type="journal" id="sref38">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ushakov</surname>
+              <given-names>V.</given-names>
+            </name>
+            <name>
+              <surname>Sharaev</surname>
+              <given-names>M.G.</given-names>
+            </name>
+            <name>
+              <surname>Kartashov</surname>
+              <given-names>S.I.</given-names>
+            </name>
+            <name>
+              <surname>Zavyalova</surname>
+              <given-names>V.V.</given-names>
+            </name>
+            <name>
+              <surname>Verkhlyutov</surname>
+              <given-names>V.M.</given-names>
+            </name>
+            <name>
+              <surname>Velichkovsky</surname>
+              <given-names>B.M.</given-names>
+            </name>
+          </person-group>
+          <article-title>Dynamic causal modeling of hippocampal links within the human default mode network: lateralization and computational stability of effective connections</article-title>
+          <source>Front. Hum. Neurosci.</source>
+          <volume>10</volume>
+          <issue>October</issue>
+          <year>2016</year>
+          <fpage>1</fpage>
+          <lpage>14</lpage>
+          <pub-id pub-id-type="pmid">26858619</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib39">
+        <element-citation publication-type="journal" id="sref39">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Van Essen</surname>
+              <given-names>D.C.</given-names>
+            </name>
+            <name>
+              <surname>Ugurbil</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Auerbach</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Barch</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Behrens</surname>
+              <given-names>T.E.J.</given-names>
+            </name>
+            <name>
+              <surname>Bucholz</surname>
+              <given-names>R.</given-names>
+            </name>
+          </person-group>
+          <article-title>The Human Connectome Project: a data acquisition perspective</article-title>
+          <source>Neuroimage</source>
+          <volume>62</volume>
+          <issue>4</issue>
+          <year>2012</year>
+          <fpage>2222</fpage>
+          <lpage>2231</lpage>
+          <pub-id pub-id-type="pmid">22366334</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib40">
+        <element-citation publication-type="journal" id="sref40">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Weissenbacher</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Kasess</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Gerstl</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Lanzenberger</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Moser</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Windischberger</surname>
+              <given-names>C.</given-names>
+            </name>
+          </person-group>
+          <article-title>Correlations and anticorrelations in resting-state functional connectivity MRI: a quantitative comparison of preprocessing strategies</article-title>
+          <source>Neuroimage</source>
+          <volume>47</volume>
+          <issue>4</issue>
+          <year>2009</year>
+          <fpage>1408</fpage>
+          <lpage>1416</lpage>
+          <pub-id pub-id-type="pmid">19442749</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib41">
+        <element-citation publication-type="journal" id="sref41">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yan</surname>
+              <given-names>C.-G.</given-names>
+            </name>
+            <name>
+              <surname>Cheung</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Kelly</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Colcombe</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Craddock</surname>
+              <given-names>R.C.</given-names>
+            </name>
+            <name>
+              <surname>Di Martino</surname>
+              <given-names>A.</given-names>
+            </name>
+          </person-group>
+          <article-title>A comprehensive assessment of regional variation in the impact of head micromovements on functional connectomics</article-title>
+          <source>Neuroimage</source>
+          <volume>76</volume>
+          <year>2013</year>
+          <fpage>183</fpage>
+          <lpage>201</lpage>
+          <pub-id pub-id-type="pmid">23499792</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib42">
+        <element-citation publication-type="journal" id="sref42">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zeidman</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Kazan</surname>
+              <given-names>S.M.</given-names>
+            </name>
+            <name>
+              <surname>Todd</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Weiskopf</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Friston</surname>
+              <given-names>K.J.</given-names>
+            </name>
+            <name>
+              <surname>Callaghan</surname>
+              <given-names>M.F.</given-names>
+            </name>
+          </person-group>
+          <article-title>Optimizing data for modeling neuronal responses</article-title>
+          <source>Front. Neurosci.</source>
+          <volume>12</volume>
+          <year>2019</year>
+          <fpage>986</fpage>
+          <pub-id pub-id-type="pmid">30686967</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib43">
+        <element-citation publication-type="journal" id="sref43">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhou</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <name>
+              <surname>Friston</surname>
+              <given-names>K.J.</given-names>
+            </name>
+            <name>
+              <surname>Zeidman</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Razi</surname>
+              <given-names>A.</given-names>
+            </name>
+          </person-group>
+          <article-title>The hierarchical organization of the default, dorsal attention and salience networks in adolescents and young adults</article-title>
+          <source>Cerebr. Cortex</source>
+          <volume>28</volume>
+          <year>2018</year>
+          <fpage>726</fpage>
+          <lpage>737</lpage>
+        </element-citation>
+      </ref>
+      <ref id="bib44">
+        <element-citation publication-type="journal" id="sref44">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zonneveld</surname>
+              <given-names>H.I.</given-names>
+            </name>
+            <name>
+              <surname>Pruim</surname>
+              <given-names>R.H.</given-names>
+            </name>
+            <name>
+              <surname>Bos</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Vrooman</surname>
+              <given-names>H.A.</given-names>
+            </name>
+            <name>
+              <surname>Muetzel</surname>
+              <given-names>R.L.</given-names>
+            </name>
+            <name>
+              <surname>Hofman</surname>
+              <given-names>A.</given-names>
+            </name>
+          </person-group>
+          <article-title>Patterns of functional connectivity in an aging population: the Rotterdam Study</article-title>
+          <source>Neuroimage</source>
+          <volume>189</volume>
+          <year>2019</year>
+          <fpage>432</fpage>
+          <lpage>444</lpage>
+          <pub-id pub-id-type="pmid">30659958</pub-id>
+        </element-citation>
+      </ref>
+    </ref-list>
+    <sec id="appsec1" sec-type="supplementary-material">
+      <label>Appendix A</label>
+      <title>Supplementary data</title>
+      <p id="p0300">The following is the Supplementary data to this article:<supplementary-material content-type="local-data" id="mmc1"><caption><title>Multimedia component 1</title></caption><media xlink:href="mmc1.docx"><alt-text>Multimedia component 1</alt-text></media></supplementary-material></p>
+    </sec>
+    <ack id="ack0010">
+      <title>Acknowledgements</title>
+      <p>This work has been funded by the Special Research Fund of <funding-source id="gs1">Ghent University</funding-source> (awarded to HA; grant No. BOF16/DOC/282; <ext-link ext-link-type="uri" xlink:href="https://www.ugent.be/" id="intref0355">https://www.ugent.be/</ext-link>), a grant for long stay abroad from the Fund for Scientific Research-Flanders (FWO–V; awarded to HA; <ext-link ext-link-type="uri" xlink:href="http://www.fwo.be" id="intref0065">http://www.fwo.be</ext-link>), the <funding-source id="gs3">Fund for Scientific Research-Flanders</funding-source> (FWO–V; grant No. FWO14/ASP/255 awarded to FvdS; <ext-link ext-link-type="uri" xlink:href="http://www.fwo.be" id="intref0765">http://www.fwo.be</ext-link>), the <funding-source id="gs2">Australian Research Council DECRA</funding-source> Fellowship (awarded to AR; Ref: DE170100128), and funding from the Wellcome Trust (KF: 088130/Z/09/Z; AR). The authors would like to thank the reviewers for their help in reporting this work.</p>
+    </ack>
+    <fn-group>
+      <fn id="appsec2" fn-type="supplementary-material">
+        <label>Appendix A</label>
+        <p id="p0305">Supplementary data to this article can be found online at <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/j.neuroimage.2019.116435" id="intref0045">https://doi.org/10.1016/j.neuroimage.2019.116435</ext-link>.</p>
+      </fn>
+    </fn-group>
+  </back>
+</article>

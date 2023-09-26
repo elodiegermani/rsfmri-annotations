@@ -1,0 +1,1296 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">Front Comput Neurosci</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Front Comput Neurosci</journal-id>
+      <journal-id journal-id-type="publisher-id">Front. Comput. Neurosci.</journal-id>
+      <journal-title-group>
+        <journal-title>Frontiers in Computational Neuroscience</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1662-5188</issn>
+      <publisher>
+        <publisher-name>Frontiers Media S.A.</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">32038211</article-id>
+      <article-id pub-id-type="pmc">6984040</article-id>
+      <article-id pub-id-type="doi">10.3389/fncom.2019.00094</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Neuroscience</subject>
+          <subj-group>
+            <subject>Original Research</subject>
+          </subj-group>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Comparing Cyclicity Analysis With Pre-established Functional Connectivity Methods to Identify Individuals and Subject Groups Using Resting State fMRI</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Shahsavarani</surname>
+            <given-names>Somayeh</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+          <xref ref-type="author-notes" rid="fn001">
+            <sup>†</sup>
+          </xref>
+          <uri xlink:type="simple" xlink:href="http://loop.frontiersin.org/people/678462/overview"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Abraham</surname>
+            <given-names>Ivan T.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+          <xref ref-type="author-notes" rid="fn001">
+            <sup>†</sup>
+          </xref>
+          <uri xlink:type="simple" xlink:href="http://loop.frontiersin.org/people/655656/overview"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Zimmerman</surname>
+            <given-names>Benjamin J.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+          <uri xlink:type="simple" xlink:href="http://loop.frontiersin.org/people/138551/overview"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Baryshnikov</surname>
+            <given-names>Yuliy M.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff5">
+            <sup>5</sup>
+          </xref>
+          <uri xlink:type="simple" xlink:href="http://loop.frontiersin.org/people/875532/overview"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Husain</surname>
+            <given-names>Fatima T.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+          <xref ref-type="corresp" rid="c001">
+            <sup>*</sup>
+          </xref>
+          <uri xlink:type="simple" xlink:href="http://loop.frontiersin.org/people/29632/overview"/>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1"><sup>1</sup><institution>Beckman Institute for Advanced Science and Technology, University of Illinois at Urbana-Champaign</institution>, <addr-line>Champaign, IL</addr-line>, <country>United States</country></aff>
+      <aff id="aff2"><sup>2</sup><institution>Department of Speech and Hearing Science, University of Illinois at Urbana-Champaign</institution>, <addr-line>Champaign, IL</addr-line>, <country>United States</country></aff>
+      <aff id="aff3"><sup>3</sup><institution>Neuroscience Program, University of Illinois at Urbana-Champaign</institution>, <addr-line>Champaign, IL</addr-line>, <country>United States</country></aff>
+      <aff id="aff4"><sup>4</sup><institution>Department of Electrical &amp; Computer Engineering, University of Illinois at Urbana-Champaign</institution>, <addr-line>Champaign, IL</addr-line>, <country>United States</country></aff>
+      <aff id="aff5"><sup>5</sup><institution>Department of Mathematics, University of Illinois at Urbana-Champaign</institution>, <addr-line>Champaign, IL</addr-line>, <country>United States</country></aff>
+      <author-notes>
+        <fn fn-type="edited-by">
+          <p>Edited by: Konstantinos Michmizos, Rutgers, The State University of New Jersey, United States</p>
+        </fn>
+        <fn fn-type="edited-by">
+          <p>Reviewed by: Isil Uluc, Harvard Medical School, United States; Polytimi Frangou, University of Cambridge, United Kingdom</p>
+        </fn>
+        <corresp id="c001">*Correspondence: Fatima T. Husain <email>husainf@illinois.edu</email></corresp>
+        <fn fn-type="other" id="fn001">
+          <p>†These authors have contributed equally to this work</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="epub">
+        <day>20</day>
+        <month>1</month>
+        <year>2020</year>
+      </pub-date>
+      <pub-date pub-type="collection">
+        <year>2019</year>
+      </pub-date>
+      <volume>13</volume>
+      <elocation-id>94</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>31</day>
+          <month>5</month>
+          <year>2019</year>
+        </date>
+        <date date-type="accepted">
+          <day>23</day>
+          <month>12</month>
+          <year>2019</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Copyright © 2020 Shahsavarani, Abraham, Zimmerman, Baryshnikov and Husain.</copyright-statement>
+        <copyright-year>2020</copyright-year>
+        <copyright-holder>Shahsavarani, Abraham, Zimmerman, Baryshnikov and Husain</copyright-holder>
+        <license xlink:href="http://creativecommons.org/licenses/by/4.0/">
+          <license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY). The use, distribution or reproduction in other forums is permitted, provided the original author(s) and the copyright owner(s) are credited and that the original publication in this journal is cited, in accordance with accepted academic practice. No use, distribution or reproduction is permitted which does not comply with these terms.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>The resting state fMRI time series appears to have cyclic patterns, which indicates presence of cyclic interactions between different brain regions. Such interactions are not easily captured by pre-established resting state functional connectivity methods including zero-lag correlation, lagged correlation, and dynamic time warping distance. These methods formulate the functional interaction between different brain regions as similar temporal patterns within the time series. To use information related to temporal ordering, cyclicity analysis has been introduced to capture pairwise interactions between multiple time series. In this study, we compared the efficacy of cyclicity analysis with aforementioned similarity-based techniques in representing individual-level and group-level information. Additionally, we investigated how filtering and global signal regression interacted with these techniques. We obtained and analyzed fMRI data from patients with tinnitus and neurotypical controls at two different days, a week apart. For both patient and control groups, we found that the features generated by cyclicity and correlation (zero-lag and lagged) analyses were more reliable than the features generated by dynamic time warping distance in identifying individuals across visits. The reliability of all features, except those generated by dynamic time warping, improved as the global signal was regressed. Nevertheless, removing fluctuations &gt;0.1 Hz deteriorated the reliability of all features. These observations underscore the importance of choosing appropriate preprocessing steps while evaluating different analytical methods in describing resting state functional interactivity. Further, using different machine learning techniques including support vector machines, discriminant analyses, and convolutional neural networks, our results revealed that the manifestation of the group-level information within all features was not sufficient enough to dissociate tinnitus patients from controls with high sensitivity and specificity. This necessitates further investigation regarding the representation of group-level information within different features to better identify tinnitus-related alternation in the functional organization of the brain. Our study adds to the growing body of research on developing diagnostic tools to identify neurological disorders, such as tinnitus, using resting state fMRI data.</p>
+      </abstract>
+      <kwd-group>
+        <kwd>resting state fMRI</kwd>
+        <kwd>cyclicity analysis</kwd>
+        <kwd>functional interactivity</kwd>
+        <kwd>tinnitus</kwd>
+        <kwd>classification</kwd>
+        <kwd>fingerprinting</kwd>
+        <kwd>latent space</kwd>
+        <kwd>data augmentation</kwd>
+      </kwd-group>
+      <funding-group>
+        <award-group>
+          <funding-source id="cn001">U.S. Department of Defense<named-content content-type="fundref-id">10.13039/100000005</named-content></funding-source>
+        </award-group>
+      </funding-group>
+      <counts>
+        <fig-count count="10"/>
+        <table-count count="3"/>
+        <equation-count count="3"/>
+        <ref-count count="81"/>
+        <page-count count="20"/>
+        <word-count count="12936"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec sec-type="intro" id="s1">
+      <title>1. Introduction</title>
+      <p>In this paper, we further evaluate the efficacy of cyclicity analysis (Baryshnikov and Schlafly, <xref rid="B5" ref-type="bibr">2016</xref>) that we have previously used to characterize the interaction between brain regions (Zimmerman et al., <xref rid="B81" ref-type="bibr">2018</xref>). We compare this novel technique with pre-established functional connectivity techniques including zero-lag correlation, lagged correlation, and dynamic time warping distance using resting state functional magnetic resonance imaging (fMRI) data.</p>
+      <p>The human brain generates spontaneous neuronal activity even at rest–in the absence of any stimulus, motor behavior, or cognitive task. Such brain activity can be measured by blood oxygenation level dependent (BOLD) signals using fMRI. Previous studies have showed that these spontaneous activities are not just random, but that they form spatial patterns of coherent networks, indicating an interaction between neuronal ensembles. (Biswal et al., <xref rid="B7" ref-type="bibr">1995</xref>; Xiong et al., <xref rid="B78" ref-type="bibr">1999</xref>; Greicius et al., <xref rid="B33" ref-type="bibr">2003</xref>; Horwitz, <xref rid="B38" ref-type="bibr">2003</xref>; Fox et al., <xref rid="B27" ref-type="bibr">2005</xref>; Fransson, <xref rid="B29" ref-type="bibr">2005</xref>; Vincent et al., <xref rid="B77" ref-type="bibr">2006</xref>).</p>
+      <p>Resting state functional connectivity (rsFC) is one of the most widely used analysis methods to specify intrinsic neural interactivity. Functional connectivity is defined as simultaneous or similar activity in discrete brain regions, which are not necessarily adjacent to one another (Rubinov and Sporns, <xref rid="B66" ref-type="bibr">2010</xref>). The most popular rsFC technique measures temporal correlation of the BOLD time series of the regions of interest (ROIs), assuming static zero-lag synchrony (Hampson et al., <xref rid="B36" ref-type="bibr">2002</xref>). Despite being a core subroutine of rsFC, the correlation analysis has two main drawbacks. First, it assumes the time series are not auto-correlated (Dean and Dunsmuir, <xref rid="B21" ref-type="bibr">2016</xref>), but this assumption may not hold for resting state BOLD signals (Arbabshirani et al., <xref rid="B4" ref-type="bibr">2014</xref>). Second, the correlation analysis fails to capture the information expressed in lag structure (Jafri et al., <xref rid="B42" ref-type="bibr">2008</xref>; Mitra et al., <xref rid="B58" ref-type="bibr">2014</xref>). Lagged correlation (Mitra et al., <xref rid="B58" ref-type="bibr">2014</xref>) and dynamic time warping (DTW) distance (Sakoe and Chiba, <xref rid="B67" ref-type="bibr">1978</xref>; Meszlényi et al., <xref rid="B55" ref-type="bibr">2017b</xref>) are two alternative techniques to address the latter drawback. Although these techniques take the phase shift between the time series into account, they have yet to fully benefit from the information manifested within lag structure. One such piece of information (manifested in lag structure but not utilized by these techniques) is collective temporal ordering of time series. The resting state fMRI time series demonstrate cyclic patterns, which indicates an underlying self-sustained cycling among processes in different ROIs. As explained by Baryshnikov and Schlafly (<xref rid="B5" ref-type="bibr">2016</xref>), there is a distinction between cyclic and periodic phenomena. Similar to periodic signals, cyclic signals demonstrate repetitive patterns, albeit not in a periodic fashion. That is, the cyclic patterns are not invariant for any time interval, e.g., <italic>T</italic>. It is worth mentioning that periodic phenomena are necessarily cyclic, but cyclic phenomena are not periodic. For more details, see Baryshnikov and Schlafly (<xref rid="B5" ref-type="bibr">2016</xref>).</p>
+      <p>The cyclic relationships between brain regions remain indiscernible to correlation-based and DTW distance measures. Based on the notion of cyclic signals (Baryshnikov and Schlafly, <xref rid="B5" ref-type="bibr">2016</xref>), cyclicity analysis technique has been used (Zimmerman et al., <xref rid="B81" ref-type="bibr">2018</xref>) to assess resting state functional connectivity by examining the temporal ordering, i.e., leader-follower relationship, between neural activity of different ROIs, providing information germane to the cyclic ordering among the time series. Unlike effective connectivity techniques, such as Granger causality (Hamilton et al., <xref rid="B35" ref-type="bibr">2011</xref>; Yu et al., <xref rid="B79" ref-type="bibr">2016</xref>), cyclicity analysis does not reveal causal influence between brain regions although it provides us with information flow. Granger causality analysis is a linear multivariate autoregressive model that assumes resting state fMRI time series are stationary, which may not be an accurate assumption (Chang and Glover, <xref rid="B15" ref-type="bibr">2010</xref>). In contrast, cyclicity analysis is a non-linear technique, invariant to re-parameterization and does not require the stationary assumption. In correlation-based and DTW distance measures, the correlation and distance values determine the extent of neural connectivity. In cyclicity analysis, however, the sign and magnitude of the values indicate an average directed leader-follower relationship and its reverse; while a zero value implies zero average interaction. We group all these techniques together in a term broader than functional connectivity: “resting state functional interactivity” (rsFI), encompassing all manner of direct and indirect interactions among brain regions.</p>
+      <p>The lag differences between resting state time series may carry information pertinent to intrinsic neuronal fluctuations (Mitra and Raichle, <xref rid="B56" ref-type="bibr">2016</xref>). As alluded earlier, lagged correlation analysis has been employed to mitigate the impact of phase shifts on rsFI (Jafri et al., <xref rid="B42" ref-type="bibr">2008</xref>; Mitra et al., <xref rid="B57" ref-type="bibr">2015</xref>). Although lagged correlation provides information useful to understanding the temporal organization of resting state BOLD signals, the general low temporal resolution of fMRI still poses practical hindrances to this technique. That is, the time lag between time series may be on the order of less than the temporal sampling, necessitating the use of interpolation methods. This leaves open the exact interpolation method used as a hyper-parameter to be chosen, which introduces some degree of uncertainty. In Mitra et al. (<xref rid="B58" ref-type="bibr">2014</xref>, <xref rid="B57" ref-type="bibr">2015</xref>), the authors used lagged cross-correlation to study spatiotemporal resting state BOLD fluctuations assuming that cross-correlation curves exhibit only a single peak at a certain time delay. However, this assumption depends on the preprocessing steps applied to the time series.</p>
+      <p>Unlike correlation, the DTW distance takes into account non-stationary phase lags between ROIs, capturing functional interactivity with greater sensitivity. The DTW distance measures the similarity between two time series by finding their optimal alignment under non-linear but monotonic warping of the time axis (Ding et al., <xref rid="B22" ref-type="bibr">2008</xref>). Over the past decade, this measure has attracted attention in neuroscientific applications. Silbert et al. (<xref rid="B73" ref-type="bibr">2014</xref>) used DTW to align fMRI time series with speech signals and in a multi-modal study, Dinov et al. (<xref rid="B23" ref-type="bibr">2016</xref>) applied DTW on an EEG-fMRI data to study brain dynamics, assessing oscillatory patterns. Recently, Meszlényi et al. (<xref rid="B55" ref-type="bibr">2017b</xref>) used DTW to measure rsFC and classify subject groups based on gender while examining different machine learning techniques including support vector machines and convolutional neural networks. Their results showed that DTW was more robust and had higher sensitivity to group differences compared with zero-lag correlation and lagged correlation. Despite this noted advantage of the DTW distance measure over correlation-based analyses, its efficacy in rsFI analysis has yet to be well-explored.</p>
+      <p>Unlike zero-lag and lagged correlation analyses (both of which aim to find similarity between signals) and DTW distance measures (which aim to find similarities between signals while accounting for non-linear warping), the cyclicity analysis determines pairwise influences between time series. Cyclicity analysis (Baryshnikov and Schlafly, <xref rid="B5" ref-type="bibr">2016</xref>) is a new technique for extracting features invariant to time re-parameterizations and translations of signals. In Baryshnikov and Schlafly (<xref rid="B5" ref-type="bibr">2016</xref>), the authors introduced simple modifications to the analysis accounting for noisy data and discussed its applicability to signals with aperiodic but repetitive patterns, which are properties abundant in physiological data. Cyclicity analysis uses so-called iterated path integrals, which are also systematically exploited in the “signature method” (Chevyrev and Kormilitzin, <xref rid="B16" ref-type="bibr">2016</xref>). Whereas the general idea of replacing the time series by their signatures faces the challenge of exponential increase in the dimensionality of features, moving from all pairs, to all triplets, to quadruplets, and so on, cyclicity analysis restricts itself to pairwise influences so that the generated features are one, amenable to matrix analysis methods, and two, maintain a balance between the number of independent samples and dimensionality of features. This allows it to remain interpretable and suitable to machine learning techniques when there is a dearth of data as in the case of fMRI studies. In our previous study (Zimmerman et al., <xref rid="B81" ref-type="bibr">2018</xref>), we applied the cyclicity analysis to resting state fMRI data and showed that the features extracted from this technique are relatively stable apropos of time and subjects.</p>
+      <p>To use rsFI measures as an objective biomarker aiming to develop diagnostic tools, it is necessary to prove the stability of such markers across time. Using zero-lag correlation analysis and data from the Human Connectome Project, Finn et al. (<xref rid="B25" ref-type="bibr">2015</xref>) and Amico and Goñi (<xref rid="B3" ref-type="bibr">2018</xref>) showed the stability and reliability of the fMRI functional interactivity profile as a “fingerprint” to identify individuals from a healthy population, for both resting state and task-based paradigms. Using cyclicity analysis, Zimmerman et al. (<xref rid="B81" ref-type="bibr">2018</xref>) also showed that individuals from both patient and healthy control populations can be reliably identified based on the resting state fMRI data collected across a week's span. To the best of our knowledge, similar evaluation has not yet been conducted to examine the stability of lagged correlation and DTW distance as compared with cyclicity and zero-lag correlation analyses. Additionally, assessing the effect of different preprocessing steps, especially the effect of the controversial ones, on rsFI measures is of great importance as it provides insights about both the information embedded in each rsFI measure and various preprocessing steps. One such preprocessing step is global signal regression (GSR) (Murphy and Fox, <xref rid="B61" ref-type="bibr">2017</xref>). Global signal is referred to as spontaneous BOLD fluctuations that are common throughout the brain and defined as the average of BOLD signals over all voxels in the brain (Fox et al., <xref rid="B28" ref-type="bibr">2009</xref>; Murphy et al., <xref rid="B60" ref-type="bibr">2009</xref>). The fluctuations in the global signal have been attributed to non-neuronal origins, especially physiologically induced fluctuations, such as changes in the level of arterial carbon dioxide or changes in cardiac rhythm. In the literature, it has been argued that the variances associated with global signal should be removed from the resting state data because it may inflate the connectivity measures, specifically the results from the correlation metric (Fox et al., <xref rid="B28" ref-type="bibr">2009</xref>). Murphy et al. (<xref rid="B60" ref-type="bibr">2009</xref>), however, showed that regressing out the fluctuations related to global signal introduces spurious negative correlations as well as reducing correlation in some areas. In contrast, Fox et al. (<xref rid="B28" ref-type="bibr">2009</xref>) argue that using GSR indeed enhances and improves results from correlation analysis. This lack of consensus across studies necessitates the assessment of functional interactivity techniques with and without GSR by each study (Caballero-Gaudes and Reynolds, <xref rid="B13" ref-type="bibr">2017</xref>). In a recent study, for instance, Meszlényi et al. (<xref rid="B55" ref-type="bibr">2017b</xref>) evaluated the efficacy of DTW distance as a rsFC measure by comparing it with correlation (both zero-lagged and lagged) while considering both conditions of with and without GSR. Their results demonstrated that the DTW distance is more robust to employing GSR than the correlation analyses.</p>
+      <p>Neurological disorders, such as Alzheimer's disease (Greicius et al., <xref rid="B34" ref-type="bibr">2004</xref>), depression (Greicius et al., <xref rid="B32" ref-type="bibr">2007</xref>), and schizophrenia (Zhou et al., <xref rid="B80" ref-type="bibr">2007</xref>) disturb resting state coherence patterns and reorganize the interaction between different parts of the brain. Likewise, such disturbances have been reported in patients with tinnitus (Schmidt et al., <xref rid="B69" ref-type="bibr">2017</xref>). Tinnitus or “ringing in the ears” refers to phantom auditory perception when there is no external physical source; a condition affecting more than 50 million adults in the United States (Shargorodsky et al., <xref rid="B72" ref-type="bibr">2010</xref>). The handicap resulting from tinnitus varies from mild to severe. Depending on the level of severity, tinnitus can become bothersome, leading to distress, frustration, annoyance, disrupted sleep, depression, and/or anxiety, having a major impact on the patients' personal and professional life (Møller, <xref rid="B59" ref-type="bibr">2007</xref>). Tinnitus is often subjectively diagnosed by self-report. That is, there are no standard objective criteria to corroborate the patients' anecdotal report of tinnitus presence, and there is no cure for this condition. Previous studies have shown that pathological disturbances in the coherence of spontaneous BOLD fluctuations hold valuable diagnostic information to discriminate between subject groups. Our previous study (Zimmerman et al., <xref rid="B81" ref-type="bibr">2018</xref>), using cyclicity analysis, showed promising results in finding group level differences between patients with tinnitus and healthy controls, suggesting value in using resting state BOLD signals as a diagnostic tool to objectively dissociate tinnitus from the norm.</p>
+      <sec>
+        <title>1.1. Goal of Study</title>
+        <p>The goal of the current study was to compare cyclicity analysis with pre-established rsFI techniques including zero-lag correlation, lagged correlation, and DTW distance. To demonstrate the practical and clinical relevance of this comparison, differences between tinnitus patients and controls were assessed with respect to rsFI. Further, we examined the stability of the features extracted by these four measures across two fMRI scans, conducted 1 week apart. We evaluated the effect of preprocessing steps on these measures; specifically, we investigated the effect of GSR and filtering on resting state fMRI data. We compared the classification accuracy using these features under traditional and modern machine learning techniques including support vector machines, discriminant analysis, and convolutional neural networks.</p>
+      </sec>
+    </sec>
+    <sec id="s2">
+      <title>2. Functional Interactivity Measures</title>
+      <p>In this section, we briefly introduce the technical definition of cyclicity analysis, lagged correlation analysis, and dynamic time warping distance measure.</p>
+      <sec>
+        <title>2.1. Cyclicity Analysis</title>
+        <p>Tools from Fourier analysis can be employed to investigate the properties of periodic signals. Precisely, a signal, <italic>r</italic>(<italic>t</italic>), is considered periodic if its patterns repeat regularly. In other words, there is a time interval <italic>T</italic> such that <italic>r</italic>(<italic>t</italic> + <italic>T</italic>) = <italic>r</italic>(<italic>t</italic>). However, many physiological signals, such as cardiac rhythm, electroencephalogram recordings, and fMRI BOLD signals are aperiodic, which are not truly periodic yet have repetitive patterns across time. Therefore, Fourier analysis cannot be applied to investigate the properties of cyclic signals where the patterns repeat irregularly. Instead, cyclicity analysis assumes the existence of an appropriate re-parameterization of time under which unobserved periodic signals generate the observed aperiodic ones. It does this by interpreting the observed time series as paths in path spaces. Consequently, they can be analyzed using re-parameterization invariant features of paths and path spaces, where the cyclic signals are considered as paths. In fact, a signal, <italic>g</italic>(<italic>t</italic>), is considered cyclic if there is a monotonically increasing bounded function, ϕ(<italic>t</italic>), so that <italic>g</italic>(ϕ(<italic>t</italic>)) is periodic. For more details, see our online tutorial: <ext-link ext-link-type="uri" xlink:href="http://acnlab.beckman.illinois.edu/">http://acnlab.beckman.illinois.edu/</ext-link>.</p>
+        <p>Cyclicity analysis aims to infer the temporal ordering structure in such cases by analyzing all pairs of signals in the <italic>N</italic> dimensional multivariate time series. For given two scalar valued signals <italic>f</italic>(<italic>t</italic>) and <italic>g</italic>(<italic>t</italic>) observed over an interval [0, <italic>T</italic>], equivalued at 0 and <italic>T</italic>, one can assign a signed algebraic area as</p>
+        <disp-formula id="E1">
+          <label>(1)</label>
+          <mml:math id="M1">
+            <mml:mtable class="eqnarray" columnalign="right center left">
+              <mml:mtr>
+                <mml:mtd>
+                  <mml:msub>
+                    <mml:mrow>
+                      <mml:mi>A</mml:mi>
+                    </mml:mrow>
+                    <mml:mrow>
+                      <mml:mi>f</mml:mi>
+                      <mml:mi>g</mml:mi>
+                    </mml:mrow>
+                  </mml:msub>
+                  <mml:mo>:</mml:mo>
+                  <mml:mo>=</mml:mo>
+                  <mml:mfrac>
+                    <mml:mrow>
+                      <mml:mn>1</mml:mn>
+                    </mml:mrow>
+                    <mml:mrow>
+                      <mml:mn>2</mml:mn>
+                    </mml:mrow>
+                  </mml:mfrac>
+                  <mml:mstyle displaystyle="true">
+                    <mml:munderover accentunder="false" accent="false">
+                      <mml:mrow>
+                        <mml:mo>∫</mml:mo>
+                      </mml:mrow>
+                      <mml:mrow>
+                        <mml:mn>0</mml:mn>
+                      </mml:mrow>
+                      <mml:mrow>
+                        <mml:mi>T</mml:mi>
+                      </mml:mrow>
+                    </mml:munderover>
+                  </mml:mstyle>
+                  <mml:mi>g</mml:mi>
+                  <mml:mrow>
+                    <mml:mo stretchy="false">(</mml:mo>
+                    <mml:mrow>
+                      <mml:mi>t</mml:mi>
+                    </mml:mrow>
+                    <mml:mo stretchy="false">)</mml:mo>
+                  </mml:mrow>
+                  <mml:mi>d</mml:mi>
+                  <mml:mi>f</mml:mi>
+                  <mml:mrow>
+                    <mml:mo stretchy="false">(</mml:mo>
+                    <mml:mrow>
+                      <mml:mi>t</mml:mi>
+                    </mml:mrow>
+                    <mml:mo stretchy="false">)</mml:mo>
+                  </mml:mrow>
+                  <mml:mo>-</mml:mo>
+                  <mml:mi>f</mml:mi>
+                  <mml:mrow>
+                    <mml:mo stretchy="false">(</mml:mo>
+                    <mml:mrow>
+                      <mml:mi>t</mml:mi>
+                    </mml:mrow>
+                    <mml:mo stretchy="false">)</mml:mo>
+                  </mml:mrow>
+                  <mml:mi>d</mml:mi>
+                  <mml:mi>g</mml:mi>
+                  <mml:mrow>
+                    <mml:mo stretchy="false">(</mml:mo>
+                    <mml:mrow>
+                      <mml:mi>t</mml:mi>
+                    </mml:mrow>
+                    <mml:mo stretchy="false">)</mml:mo>
+                  </mml:mrow>
+                  <mml:mi>d</mml:mi>
+                  <mml:mi>t</mml:mi>
+                  <mml:mo>,</mml:mo>
+                </mml:mtd>
+              </mml:mtr>
+            </mml:mtable>
+          </mml:math>
+        </disp-formula>
+        <p>to the pair over the interval of observation. The magnitude of this quantity is determined by the area enclosed by projection of the trajectory (<italic>f</italic>(<italic>t</italic>), <italic>g</italic>(<italic>t</italic>))<sup><italic>T</italic></sup> onto the <italic>f</italic>−<italic>g</italic> coordinate planes with the sign positive if <italic>g</italic>(<italic>t</italic>) follows <italic>f</italic>(<italic>t</italic>).</p>
+        <p>For any given <italic>N</italic> dimensional times series, this leads to the creation of a skew-symmetric lead matrix <italic>A</italic> with <inline-formula><mml:math id="M2"><mml:mfrac><mml:mrow><mml:mi>N</mml:mi><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mrow><mml:mi>N</mml:mi><mml:mo>-</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:mfrac></mml:math></inline-formula> independent entries. Each element <italic>A</italic><sub><italic>kl</italic></sub> of such a matrix corresponds to the average leader follower relationship (implied by the sign and magnitude of the calculated area) between two pairs or ROI time series: <italic>X</italic><sub><italic>k</italic></sub> and <italic>X</italic><sub><italic>l</italic></sub> over the interval of observation. The spectral analysis of the lead matrix provides information pertinent to collective temporal ordering of the signals even in the presence of noise. That is, the temporal ordering is associated with the phase angles of the complex valued elements in the eigenvector corresponding to the largest eigenvalue. For more details, see Baryshnikov and Schlafly (<xref rid="B5" ref-type="bibr">2016</xref>); Zimmerman et al. (<xref rid="B81" ref-type="bibr">2018</xref>).</p>
+      </sec>
+      <sec>
+        <title>2.2. Lagged Correlation Analysis</title>
+        <p>Zero-lag correlation analysis assumes synchronous activity between different ROIs and fails to extract information from the latency structure (Majeed et al., <xref rid="B51" ref-type="bibr">2011</xref>; Mitra et al., <xref rid="B58" ref-type="bibr">2014</xref>). Lagged correlation analysis has been suggested to take latency into account while measuring the correlation between time series. Lagged correlation analysis leads to two matrices from the underlying time-series data: (1) lagged correlation matrix (LCM), and (2) time delay matrix (TDM). For every pair of time series, <italic>x</italic>(<italic>t</italic>) and <italic>y</italic>(<italic>t</italic>), the correlation between <italic>x</italic>(<italic>t</italic> ± τ) and <italic>y</italic>(<italic>t</italic>) is computed. The value of τ at which the correlation function has extremum is stored in the TDM and the corresponding correlation value is stored in the LCM.</p>
+      </sec>
+      <sec>
+        <title>2.3. Dynamic Time Warping</title>
+        <p>The dynamic time warping (DTW) algorithm quantifies the distance between two time series, namely their overall similarities in shape (e.g., peaks and troughs) by taking temporal dynamics, such as speed or phase shift into account. The DTW algorithm was first introduced by Sakoe and Chiba (<xref rid="B67" ref-type="bibr">1978</xref>) in the realm of automatic speech recognition. The key idea is that some non-linear variations of speech signals, such as temporal compression, local delays, etc., can and sometimes must be ignored. For example, the frequency and the rate at which a sentence is uttered is immaterial and needs to be ignored while the sentence is being semantically decoded. The DTW algorithm computes the distance between two given time series of not necessarily equal length, <italic>X</italic> = (<italic>x</italic><sub>1</sub>, <italic>x</italic><sub>2</sub>, …, <italic>x</italic><sub><italic>k</italic></sub>, …, <italic>x</italic><sub><italic>M</italic></sub>) and <italic>Y</italic> = (<italic>y</italic><sub>1</sub>, <italic>y</italic><sub>2</sub>, …, <italic>y</italic><sub><italic>j</italic></sub>, …, <italic>y</italic><sub><italic>N</italic></sub>), by finding the optimal alignment between the series. In doing so, it constructs an <italic>M</italic> by <italic>N</italic> matrix, <italic>C</italic>. Each element of the matrix <italic>C</italic><sub><italic>kj</italic></sub> corresponds to the optimal cost of the alignment between <italic>X</italic><sub><italic>k</italic></sub> = (<italic>x</italic><sub>1</sub>, <italic>x</italic><sub>2</sub>, …, <italic>x</italic><sub><italic>k</italic></sub>) and <italic>Y</italic><sub><italic>j</italic></sub> = (<italic>y</italic><sub>1</sub>, <italic>y</italic><sub>2</sub>, …, <italic>y</italic><sub><italic>j</italic></sub>), i.e., the first <italic>k</italic> points of <italic>X</italic> and the first <italic>j</italic> points of <italic>Y</italic>. This optimal cost is obtained as</p>
+        <disp-formula id="E2">
+          <label>(2)</label>
+          <mml:math id="M3">
+            <mml:mtable class="eqnarray" columnalign="right center left">
+              <mml:mtr>
+                <mml:mtd>
+                  <mml:msub>
+                    <mml:mrow>
+                      <mml:mi>C</mml:mi>
+                    </mml:mrow>
+                    <mml:mrow>
+                      <mml:mi>k</mml:mi>
+                      <mml:mi>j</mml:mi>
+                    </mml:mrow>
+                  </mml:msub>
+                  <mml:mo>=</mml:mo>
+                  <mml:msub>
+                    <mml:mrow>
+                      <mml:mi>d</mml:mi>
+                    </mml:mrow>
+                    <mml:mrow>
+                      <mml:mi>k</mml:mi>
+                      <mml:mi>j</mml:mi>
+                    </mml:mrow>
+                  </mml:msub>
+                  <mml:mo>+</mml:mo>
+                  <mml:mo class="qopname">min</mml:mo>
+                  <mml:mrow>
+                    <mml:mo stretchy="false">(</mml:mo>
+                    <mml:mrow>
+                      <mml:msub>
+                        <mml:mrow>
+                          <mml:mi>C</mml:mi>
+                        </mml:mrow>
+                        <mml:mrow>
+                          <mml:mrow>
+                            <mml:mo stretchy="false">(</mml:mo>
+                            <mml:mrow>
+                              <mml:mi>k</mml:mi>
+                              <mml:mo>-</mml:mo>
+                              <mml:mn>1</mml:mn>
+                            </mml:mrow>
+                            <mml:mo stretchy="false">)</mml:mo>
+                          </mml:mrow>
+                          <mml:mi>j</mml:mi>
+                        </mml:mrow>
+                      </mml:msub>
+                      <mml:mo>,</mml:mo>
+                      <mml:msub>
+                        <mml:mrow>
+                          <mml:mi>C</mml:mi>
+                        </mml:mrow>
+                        <mml:mrow>
+                          <mml:mrow>
+                            <mml:mo stretchy="false">(</mml:mo>
+                            <mml:mrow>
+                              <mml:mi>k</mml:mi>
+                              <mml:mo>-</mml:mo>
+                              <mml:mn>1</mml:mn>
+                            </mml:mrow>
+                            <mml:mo stretchy="false">)</mml:mo>
+                          </mml:mrow>
+                          <mml:mrow>
+                            <mml:mo stretchy="false">(</mml:mo>
+                            <mml:mrow>
+                              <mml:mi>j</mml:mi>
+                              <mml:mo>-</mml:mo>
+                              <mml:mn>1</mml:mn>
+                            </mml:mrow>
+                            <mml:mo stretchy="false">)</mml:mo>
+                          </mml:mrow>
+                        </mml:mrow>
+                      </mml:msub>
+                      <mml:mo>,</mml:mo>
+                      <mml:msub>
+                        <mml:mrow>
+                          <mml:mi>C</mml:mi>
+                        </mml:mrow>
+                        <mml:mrow>
+                          <mml:mi>k</mml:mi>
+                          <mml:mrow>
+                            <mml:mo stretchy="false">(</mml:mo>
+                            <mml:mrow>
+                              <mml:mi>j</mml:mi>
+                              <mml:mo>-</mml:mo>
+                              <mml:mn>1</mml:mn>
+                            </mml:mrow>
+                            <mml:mo stretchy="false">)</mml:mo>
+                          </mml:mrow>
+                        </mml:mrow>
+                      </mml:msub>
+                    </mml:mrow>
+                    <mml:mo stretchy="false">)</mml:mo>
+                  </mml:mrow>
+                  <mml:mo>,</mml:mo>
+                </mml:mtd>
+              </mml:mtr>
+            </mml:mtable>
+          </mml:math>
+        </disp-formula>
+        <p>where <italic>d</italic><sub><italic>kj</italic></sub> is a distance metric, such as the Euclidean distance. One, of course, has a choice of a distance function. The DTW algorithm, in fact, calculates the “optimal global match” between the index sets {<italic>k</italic>} and {<italic>j</italic>} while satisfying the constraints, such as monotonicity and continuity. See Meszlényi et al. (<xref rid="B53" ref-type="bibr">2016</xref>, <xref rid="B55" ref-type="bibr">2017b</xref>) for more details. To avoid the brute-force search of all possible alignments for the optimal match, dynamic programming-based approach has been used to implement the DTW with asymptotic running time of <italic>O</italic>(<italic>MN</italic>). The optimal alignment is defined as a warping path, which is the sequence of indices <inline-formula><mml:math id="M4"><mml:mrow><mml:mo>{</mml:mo><mml:mrow><mml:mover accent="true"><mml:mrow><mml:mi>k</mml:mi></mml:mrow><mml:mo>~</mml:mo></mml:mover></mml:mrow><mml:mo>}</mml:mo></mml:mrow></mml:math></inline-formula> on <italic>X</italic> and <inline-formula><mml:math id="M5"><mml:mrow><mml:mo>{</mml:mo><mml:mrow><mml:mover accent="true"><mml:mrow><mml:mi>j</mml:mi></mml:mrow><mml:mo>~</mml:mo></mml:mover></mml:mrow><mml:mo>}</mml:mo></mml:mrow></mml:math></inline-formula> on <italic>Y</italic> such that <inline-formula><mml:math id="M6"><mml:msub><mml:mrow><mml:mi>C</mml:mi></mml:mrow><mml:mrow><mml:mover accent="true"><mml:mrow><mml:mi>k</mml:mi></mml:mrow><mml:mo>~</mml:mo></mml:mover><mml:mover accent="true"><mml:mrow><mml:mi>j</mml:mi></mml:mrow><mml:mo>~</mml:mo></mml:mover></mml:mrow></mml:msub></mml:math></inline-formula> is minimal for each corresponding pair. The warping path of two identical series is defined by the diagonal indices. As the distance between the two series increases, the warping path deviates from the diagonal. High computational complexity is the main hurdle that limits the applicability of this technique.</p>
+      </sec>
+    </sec>
+    <sec sec-type="materials and methods" id="s3">
+      <title>3. Materials and Methods</title>
+      <sec>
+        <title>3.1. Participants and Data Acquisition</title>
+        <p>Two groups of participants were included in this study: those with tinnitus as a patient group and those without tinnitus as a control group. The tinnitus group included 50 patients (mean age ± standard deviation: 52.96 ± 10.29 years; 38 with hearing loss; 21 women; mean tinnitus duration: 15.5 ± 14.02 years) and the control group 29 participants (mean age: 47.75 ± 11.06 years; 12 with hearing loss; 15 women). Resting state BOLD data were obtained using a 3T Siemens Magnetom Prisma MRI scanner in two visits, 1 week apart. To do so, a gradient echo-planar EPI sequence with transversal orientation was used (repetition time [TR] = 2000 ms, echo time [TE] = 25 ms, flip angle = 90°, 38 slices, voxel size = 2.5 × 2.5 × 3 mm<sup>3</sup>). In addition to functional images, structural images including a high-resolution, T1-weighted sagittal MPRAGE image (TR = 2,300 ms, TE = 2.32 ms, flip angle = 8°, 192 slices, voxel size = 0.9 × 0.9 × 0.9 mm<sup>3</sup>), and a lower-resolution, T2-weighted transversal image (TR = 3,400 ms, TE = 65 ms, flip angle = 120°, 38 slices, voxel size = 1.2 × 1.2 × 3 mm<sup>3</sup>), were collected and further used in preprocessing. At each visit, two ~10-min resting state data were acquired while participants were lying supine inside the scanner with eyes open looking at a white fixed point (+) on the center of a black screen. Further, earplugs were used to reduce the scanner noise. Data collection was conducted with the approval of the University of Illinois at Urbana-Champaign Institutional Review Board (#15955) and each participant provided informed consent prior to image acquisition in the first visit.</p>
+      </sec>
+      <sec>
+        <title>3.2. Preprocessing</title>
+        <p>Data were preprocessed using Statistical Parametric Mapping software (SPM12) (<ext-link ext-link-type="uri" xlink:href="http://www.fil.ion.ucl.ac.uk/spm/software/spm12">http://www.fil.ion.ucl.ac.uk/spm/software/spm12</ext-link>). The first four volumes of resting state data were excluded to allow for magnet stabilization, leaving 300 resting state volumes for preprocessing at each run.</p>
+        <p>Similar to our previous work (Schmidt et al., <xref rid="B69" ref-type="bibr">2017</xref>; Zimmerman et al., <xref rid="B81" ref-type="bibr">2018</xref>), data were first corrected for slice timing, and then realigned to the mean fMRI image to correct for head motion using a 6-parameter rigid body transformation. The data with motion greater than a 2-mm translation or 2° rotation were removed from resting state analysis. Subsequently, two co-registration steps were carried out using a 12-parameter affine transformation: (1) aligning the T-2 weighted image to the mean fMRI image, and (2) aligning the T-1 weighted image to the co-registered T-2 weighted image. Next, the co-registered T-1 weighted was normalized to a stereotactic space, i.e., MNI space, using a non-linear warp transformation. This image was used to realign and normalize the functional data. Further, the normalized images were spatially smoothed using a Gaussian kernel (8×8×8 mm<sup>3</sup>). The segmentation step was not performed. MarsBaR (Brett et al., <xref rid="B9" ref-type="bibr">2002</xref>), a toolbox for SPM12, was used to extract the time series with 300 time points from ROIs. The 33 ROIs were chosen based on our previous studies of tinnitus (Zimmerman et al., <xref rid="B81" ref-type="bibr">2018</xref>), and are given in <xref rid="T1" ref-type="table">Table 1</xref>. The time series of each ROI was obtained by averaging the time courses across all voxels within the ROI. After generation of said BOLD fMRI time series, GSR was presented as an optional prepossessing step.</p>
+        <table-wrap id="T1" position="float">
+          <label>Table 1</label>
+          <caption>
+            <p>The regions of interest in the study and their corresponding functional networks.</p>
+          </caption>
+          <table frame="hsides" rules="groups">
+            <thead>
+              <tr>
+                <th valign="top" align="left" style="border-bottom: thin solid #000000;" rowspan="1" colspan="1">
+                  <bold>#</bold>
+                </th>
+                <th valign="top" align="left" style="border-bottom: thin solid #000000;" rowspan="1" colspan="1">
+                  <bold>Region of interest</bold>
+                </th>
+                <th valign="top" align="left" style="border-bottom: thin solid #000000;" rowspan="1" colspan="1">
+                  <bold>Functional network</bold>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">1</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Left amygdala</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Limbic</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">2</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Left anterior insula</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Limbic</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">3</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Left cuneus</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Visual</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">4</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Left frontal eye field</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Dorsal attention</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">5</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Left inferior frontal lobe</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Dorsal Attention</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">6</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Left inferior parietal lobe</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Default mode</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">7</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Left mid frontal gyrus</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Dorsal Attention</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">8</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Left parahippocampus</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Limbic</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">9</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Left posterior intraparietal sulcus</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Dorsal attention</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">10</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Left primary auditory cortex</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Auditory</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">11</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Left primary visual cortex</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Visual</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">12</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Left superior occipital lobe</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Visual</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">13</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Left superior temporal junction</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Auditory/Limbic/Visual</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">14</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Left superior temporal sulcus</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Auditory</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">15</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Left ventral intraparietal sulcus</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Dorsal attention</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">16</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Medial prefrontal cortex</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Default mode</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">17</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Posterior cingulate cortex</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Default mode</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">18</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Precuneus</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Default mode</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">19</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Right amygdala</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Limbic</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">20</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Right anterior insula</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Limbic</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">21</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Right cuneus</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Visual</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">22</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Right frontal eye field</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Dorsal attention</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">23</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Right inferior frontal lobe</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Dorsal Attention</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">24</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Right inferior parietal lobe</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Default mode</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">25</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Right mid frontal gyrus</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Dorsal Attention</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">26</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Right parahippocampus</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Limbic</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">27</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Right posterior intraparietal sulcus</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Dorsal attention</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">28</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Right primary auditory cortex</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Auditory</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">29</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Right primary visual cortex</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Visual</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">30</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Right superior occipital lobe</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Visual</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">31</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Right superior temporal junction</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Auditory/Limbic/Visual</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">32</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Right superior temporal sulcus</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Auditory</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">33</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Right ventral intraparietal sulcus</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Dorsal attention</td>
+              </tr>
+            </tbody>
+          </table>
+        </table-wrap>
+        <p>It has been argued that frequencies higher than 0.1 Hz do not contribute to resting state regional coherency as they are often related to physiological noise including cardiac and respiratory cycles (Cordes et al., <xref rid="B18" ref-type="bibr">2001</xref>). As a result, the time series data were band-pass filtered, using a Bessel filter with low and high cutoff frequencies of 0.008 and 0.08 Hz as a baseline. Before filtering, the time series were mean centered, de-trended, and scaled. Three scaling methods were considered, scaling relative to: the quadratic variation, the norm, and the standard deviation of the time series. In the cyclicity analysis, the signals were also end-matched before scaling.</p>
+      </sec>
+      <sec>
+        <title>3.3. Features</title>
+        <p>After preprocessing, by employing seed-based connectivity approach, the fMRI time series of the 33 ROIs were analyzed using four rsFI techniques to generate 33 × 33 feature matrices. This resulted in:
+<list list-type="order"><list-item><p>Skew-symmetric lead matrices (LM), using cyclicity analysis,</p></list-item><list-item><p>Symmetric zero-lag correlation matrices (CM), using correlation analysis,</p></list-item><list-item><p>Symmetric lagged correlation matrices (LCM), using correlation analysis,</p></list-item><list-item><p>Symmetric dynamic time warping matrices (DM), using dynamic time warping algorithm.</p></list-item></list></p>
+      </sec>
+      <sec>
+        <title>3.4. Stability and Robustness</title>
+        <p>Similar to our previous work (Zimmerman et al., <xref rid="B81" ref-type="bibr">2018</xref>), we evaluated the stability and reliability of rsFI features in identifying individuals by assessing the degree to which each rsFI feature remained invariant across the two visits. To do so, we trained 1-nearest neighbor classifiers (with cosine similarity) on scans from one of the two visits and tested on scans from the other visit and vice versa, resulting in running two classifiers. The accuracy was measured using the <italic>R</italic><sub><italic>K</italic></sub> correlation coefficient, which is a multi-class extension of the Mathews correlation coefficient for two class confusion matrices (Gorodkin, <xref rid="B31" ref-type="bibr">2004</xref>). Further, to examine the robustness of each feature to GSR and filtering cutoff frequencies, the effect of these choices on the stability of each matrix was assessed. Additionally, for each subject and for each feature, we measured the cosine differences between features with and without GSR.</p>
+      </sec>
+      <sec>
+        <title>3.5. Classification</title>
+        <p>To evaluate the efficacy of each rsFI feature in identifying the neural correlates of tinnitus, we investigated the separability of tinnitus from controls by assessing the accuracy of three classifiers: (1) discriminant analysis, (2) support vector machines, and (3) convolutional neural networks. Discriminant analysis and support vector machine are classical methods in machine learning and we refer the reader to Theodoridis and Koutroumbas (<xref rid="B76" ref-type="bibr">2009</xref>) for the mathematical details and implementation. Convolutional neural network is a modern machine learning technique widely used to analyze visual patterns; for more details, see Krizhevsky et al. (<xref rid="B46" ref-type="bibr">2012</xref>). In the following subsections, we briefly introduce these classifiers and list the preprocessing steps specific to the classifier at hand. Monte Carlo cross validation with 100 times repetition was used to train and test all the classifiers. Seventy percent of the data were randomly extracted to train and the remainder of the dataset was used to test the classifiers. Discriminant analysis and support vector machine implementations found in Pedregosa et al. (<xref rid="B63" ref-type="bibr">2011</xref>) and neural network package described in Abadi et al. (<xref rid="B1" ref-type="bibr">2015</xref>) were used toward this purpose.</p>
+        <sec>
+          <title>3.5.1. Discriminant Analysis</title>
+          <p>Linear discriminant analysis (LDA) and quadratic discriminant analysis (QDA) are two widely-used classification techniques, which are based on Bayes classifier approximation. Both LDA and QDA assume that the probability density function of the input data (features, independent variables, predictors, etc.) for each class are drawn from a Gaussian distribution (James et al., <xref rid="B43" ref-type="bibr">2013</xref>). LDA assumes that all Gaussian distributions have equal variance (in the case of univariate distributions) or covariance matrices (in the case of multivariate distributions) whereas QDA assumes each distribution has a distinctive variance or covariance matrix. The LDA decision boundary is a linear function of the inputs whereas QDA decision boundary is a quadratic function of the inputs, both estimating the Bayes decision boundary (James et al., <xref rid="B43" ref-type="bibr">2013</xref>). In the case of multivariate distributions with a large number of dimensions, dimension reduction techniques are required to prevent numerical instability while calculating the inverse of the covariance matrices, especially, when the number of training samples is relatively small.</p>
+          <p>In our experimental setup, given that the feature matrices are either symmetric or skewed-symmetric, we only considered the upper triangular part of each feature matrix as the input data. Before dividing the data into the training and test sets, the data were vectorized and normalized. Due to the low number of training observations (i.e., number of unique subjects in the smallest group) relative to the input dimension (i.e., 528), principal component analysis (PCA) was applied to project the input data onto a 10-dimensional space before feeding the training data into the LDA or the QDA classifier and performing discriminant analyses.</p>
+        </sec>
+        <sec>
+          <title>3.5.2. Support Vector Machine</title>
+          <p>In the past three decades, support vector machine (SVM) has emerged as one of the most popular classification techniques. Traditional SVM is a maximum margin classifier developed based on the linear classification problem, involving the construction of a separating hyperplane that breaks up training observations based on the corresponding class labels. The margin being defined as a distance between any two hyperplanes that obtain separation in the linearly separable case, SVMs solve an optimization problem with some specific constraints on finding an optimal hyperplane that maximizes the margin (James et al., <xref rid="B43" ref-type="bibr">2013</xref>). The name SVM comes from the definition of the vectors that lie on the maximal margin as “support vectors.” With the introduction of the kernel trick (Boser et al., <xref rid="B8" ref-type="bibr">1992</xref>), the constructed hyperplane can be linear or non-linear depending on the kernel used to transform the representation of the input data. In our experimental setup, the SVM with linear, quadratic, and Gaussian kernels were examined. To reduce over-fitting, slack variable and tuning parameter were used to allow misclassification of some training data close to margin.</p>
+          <p>Similar to DA, the upper triangular part of the feature matrices was vectorized. Following this, the data were standardized by removing the mean and scaling to unit variance (<inline-formula><mml:math id="M7"><mml:mi>Z</mml:mi><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:mi>X</mml:mi><mml:mo>-</mml:mo><mml:mi>μ</mml:mi></mml:mrow><mml:mrow><mml:mi>σ</mml:mi></mml:mrow></mml:mfrac></mml:math></inline-formula>, where μ and σ are empirical mean and standard deviation). Further, PCA was used to reduce the dimension of the input space from 528 to 20. Finally, the data were divided into training and test sets and fed into the SVM classifier.</p>
+        </sec>
+        <sec>
+          <title>3.5.3. Convolutional Neural Networks</title>
+          <p>Using convolutional neural network (CNN), we examined the efficacy of rsFI features in distinguishing patients with tinnitus from those without tinnitus based on the visual interactivity patterns manifested in the feature matrices. CNN is a class of artificial neural networks that uses convolution operation inspired by visual neuroscience (Goodfellow et al., <xref rid="B30" ref-type="bibr">2016</xref>). Contrary to the conventional neural networks, CNN introduces sparse connectivity by sharing parameters leading to fewer number of parameters. Similar to conventional neural networks, CNN can use gradient-descent based algorithms to classify training observations according to their class labels. Considering the small sample size in our experimental setting, CNN with simple architectures was assessed to reduce overfitting. A CNN was trained and tested on each feature matrix. The CNN architecture proposed by Meszlényi et al. (<xref rid="B54" ref-type="bibr">2017a</xref>) was adopted wherein they showed that CNN can differentiate between subject groups using rsFC data. The reader is referred to <xref ref-type="supplementary-material" rid="SM1">Figure S1</xref> for a detailed explanation of the CNN architecture.</p>
+          <p>The actual power of the CNN classifier is manifested when trained with large datasets. Considering the small size of our database, in order to increase the efficacy of the CNN classifier, we used a generative model to generate synthetic samples, augmenting our training data. Particularly, variational auto-encoders (VAE) were implemented with two fully connected layers for both the encoder and decoder, and a two-dimensional latent space using mean-squared error loss as the construction loss and Kullback-Leibler divergence as the latent space loss. The key idea behind the VAE is to approximate the probability distribution of the input data in a latent space from which synthetic samples can be later drawn. For further details, see Kingma and Welling (<xref rid="B44" ref-type="bibr">2013</xref>) and <xref ref-type="supplementary-material" rid="SM1">Figure S2</xref>.</p>
+          <p>In our experimental setup, we used the data from both subject groups to train VAE. After training, no distinct separation between the patient and control distributions was found in the latent space. To overcome this, we trained VAE separately for each class. In doing so, the data were normalized and subsequently divided into the test and training sets. The data for each class were further normalized before training the VAE and later mean adjusted and re-scaled after training. Finally, we re-assessed the CNN performance using the augmented data. <xref ref-type="fig" rid="F1">Figures 1</xref>, <xref ref-type="fig" rid="F2">2</xref> demonstrate the synthetic LM, DM, CM, and LCM along with an example from their corresponding actual data. Note that for purposes of training the machine-learning models in this study (except for the CNN), the feature matrices were always vectorized and had redundant information (i.e., the diagonal values and the lower or upper half) removed from them. Therefore, the generated augmented samples were actually vectors, which were later matricized for visualization purposes or training the CNN; consequently the diagonal values in <xref ref-type="fig" rid="F1">Figures 1</xref>, <xref ref-type="fig" rid="F2">2</xref> hold no meaning.</p>
+          <fig id="F1" position="float">
+            <label>Figure 1</label>
+            <caption>
+              <p>Generating synthetic data using variational auto-encoders. LM, lead matrix; DM, dynamic time warping distance matrix. Since the VAE trains to encode and decode on vectorized versions of the feature matrices (with redundant information removed), the visualization above is generated by vectors recast into matrix form. Therefore, the diagonal entries (which, indeed, are either zero or one) are irrelevant.</p>
+            </caption>
+            <graphic xlink:href="fncom-13-00094-g0001"/>
+          </fig>
+          <fig id="F2" position="float">
+            <label>Figure 2</label>
+            <caption>
+              <p>Generating synthetic data using variational auto-encoders. CM, zero-lag correlation matrix; LCM, lagged correlation matrix. Since the VAE trains to encode and decode on vectorized versions of the feature matrices (with redundant information removed), the visualization above is generated by vectors recast into matrix form. Therefore, the diagonal entries (which, indeed, are either zero or one) are irrelevant.</p>
+            </caption>
+            <graphic xlink:href="fncom-13-00094-g0002"/>
+          </fig>
+        </sec>
+      </sec>
+    </sec>
+    <sec sec-type="results" id="s4">
+      <title>4. Results</title>
+      <sec>
+        <title>4.1. Stability and Robustness</title>
+        <p><xref rid="T2" ref-type="table">Tables 2</xref>, <xref rid="T3" ref-type="table">3</xref> summarize the accuracy of 1-nearest neighbor classifiers in identifying individuals, using feature matrices (LM, CM, LCM, and DM) with different filter settings and with &amp; without GSR. The results showed that the extent to which feature matrices remained stable across the visits varied depending on the employment of GSR and the filters. In general, GSR improved the stability of all feature matrices except those generated by the DTW distance measure (i.e., DM). However, the effect of band-pass filtering was dependent on the feature matrices. Particularly, applying band-pass filters reduced the stability of LM regardless of employing GSR, whereas it increased the stability of other matrices, especially when combined with GSR. For all feature matrices, as the upper cutoff frequency of the band-pass filter increased from 0.08 to 0.2 Hz, stability was enhanced. The scaling method did not affect the general trend of stability except for DM, i.e., scaling the time series using either the norms or standard deviation adversely affected the stability of DM. For simplicity, only the results using quadratic scaling are presented here and those related to other scaling methods are given in <xref ref-type="supplementary-material" rid="SM1">Tables S1, S2</xref>.</p>
+        <table-wrap id="T2" position="float">
+          <label>Table 2</label>
+          <caption>
+            <p>The accuracy rate of 1-nearest neighbor classifier to identify individuals across two scan sessions held 1 week apart with different filter specifications and no GSR.</p>
+          </caption>
+          <table frame="hsides" rules="groups">
+            <thead>
+              <tr>
+                <th rowspan="1" colspan="1"/>
+                <th valign="top" align="center" colspan="3" style="border-bottom: thin solid #000000;" rowspan="1">
+                  <bold>No GSR</bold>
+                </th>
+              </tr>
+              <tr>
+                <th valign="top" align="left" rowspan="1" colspan="1">
+                  <bold>Feature</bold>
+                </th>
+                <th valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>No filter</bold>
+                </th>
+                <th valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>BPF (<bold>0.008 ≤ <italic>f</italic><sub><italic>pass</italic></sub> ≤ 0.08</bold> Hz)</bold>
+                </th>
+                <th valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>BPF (<bold>0.008 ≤ <italic>f</italic><sub><italic>pass</italic></sub> ≤ 0.2</bold> Hz)</bold>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">LM</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.68</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.45</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.67</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">CM</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.53</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.53</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.69</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">LCM</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.48</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.45</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.64</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">DM</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.32</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.47</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.56</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <p><italic>The time series were normalized using their quadratic variation. LM, Lead Matrices; CM, Zero-lag Correlation Matrices; LCM, Lagged Correlation Matrices; DM, Dynamic Time Warping Matrices; BPF, Band-Pass Filter; GSR, Global Signal Regression</italic>.</p>
+          </table-wrap-foot>
+        </table-wrap>
+        <table-wrap id="T3" position="float">
+          <label>Table 3</label>
+          <caption>
+            <p>The accuracy rate of 1-nearest neighbor classifier to identify individuals across two scan sessions held 1 week apart with different filter specifications and GSR.</p>
+          </caption>
+          <table frame="hsides" rules="groups">
+            <thead>
+              <tr>
+                <th rowspan="1" colspan="1"/>
+                <th valign="top" align="center" colspan="3" style="border-bottom: thin solid #000000;" rowspan="1">
+                  <bold>With GSR</bold>
+                </th>
+              </tr>
+              <tr>
+                <th valign="top" align="left" rowspan="1" colspan="1">
+                  <bold>Feature</bold>
+                </th>
+                <th valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>No filter</bold>
+                </th>
+                <th valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>BPF (<bold>0.008 ≤ <italic>f</italic><sub><italic>pass</italic></sub> ≤ 0.08</bold> Hz)</bold>
+                </th>
+                <th valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>BPF (<bold>0.008 ≤ <italic>f</italic><sub><italic>pass</italic></sub> ≤ 0.2</bold> Hz)</bold>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">LM</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.83</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.56</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.79</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">CM</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.78</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.82</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.92</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">LCM</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.76</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.80</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.90</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">DM</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.28</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.42</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.53</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <p><italic>The time series were normalized using their quadratic variation. LM, Lead Matrices; CM, Zero-lag Correlation Matrices; LCM, Lagged Correlation Matrices; DM, Dynamic Time Warping Matrices; BPF, Band-Pass Filter; GSR, Global Signal Regression</italic>.</p>
+          </table-wrap-foot>
+        </table-wrap>
+        <p>As shown in <xref rid="T2" ref-type="table">Tables 2</xref>, <xref rid="T3" ref-type="table">3</xref>, CM had the highest stability, and DM had the lowest stability across the visits. Specifically, both CM and LCM had the highest stability (92 and 90%, respectively) when GSR was applied with band-pass filtering (upper cutoff frequency of 0.2 Hz). LM also showed the highest stability (83%) when the global signal was regressed, but with no filtering. Like CM and LCM, applying band-pass filters, specifically with the upper cutoff frequency of 0.2 Hz, increased the stability of DM. However, unlike the other feature matrices, DM demonstrated the highest stability (0.56%) when the global signal was not regressed. <xref ref-type="fig" rid="F3">Figure 3</xref> depicts the confusion matrices of 1-nearest neighbor classifiers for the conditions in which each feature matrix exhibited the highest reliability.</p>
+        <fig id="F3" position="float">
+          <label>Figure 3</label>
+          <caption>
+            <p>Confusion matrices of 1-nearest neighbor classifiers with the highest accuracy for each interactivity feature set used to identify individuals across two visits, held 1 week apart. DTW stands for dynamic time warping.</p>
+          </caption>
+          <graphic xlink:href="fncom-13-00094-g0003"/>
+        </fig>
+        <p>We further examined the robustness to GSR, by measuring the cosine distance between the feature matrix with GSR and the feature matrix without GSR for each individual subject. <xref ref-type="fig" rid="F4">Figure 4</xref> shows the distribution of these distances measured for LM, CM, LCM, and DM, under three filtering conditions. A non-parametric Kruskal-Wallis test (followed by a Mann-Whitney U <italic>post-hoc</italic> test with Bonferroni correction) revealed that DM was the feature matrix most robust to GSR, whereas CM and LCM were the feature matrices least robust to GSR. The statistical test also showed that band-pass filtering significantly reduced the robustness to GSR, for all feature matrices.</p>
+        <fig id="F4" position="float">
+          <label>Figure 4</label>
+          <caption>
+            <p>Robustness to global signal regression. The distribution of the cosine distances between with and without global signal regression across all subjects for each feature under three conditions: (1) No filtering, (2) Band-pass filtering (0.008 ≤ <italic>f</italic><sub><italic>pass</italic></sub> ≤ 0.08 Hz), and (3) Band-pass filtering (0.008 ≤ <italic>f</italic><sub><italic>pass</italic></sub> ≤ 0.2 Hz). LM, CM, LCM, and DM stand for lead matrix, zero-lag correlation matrix, lagged correlation matrix, and dynamic time warping matrix, respectively.</p>
+          </caption>
+          <graphic xlink:href="fncom-13-00094-g0004"/>
+        </fig>
+      </sec>
+      <sec>
+        <title>4.2. Classification</title>
+        <p>Overall, the performance of all classifiers was close to or slightly better than chance, indicating a poor dissociation between tinnitus patients and healthy controls. Nevertheless, there were some differences across classifiers and input feature matrices. That is, the performance of SVM on LCM (sensitivity of 64% and specificity of 54%) surpassed the performance of all other classifiers. Also, incorporating augmented data improved the sensitivity of the CNN on all feature matrices, but deteriorated the specificity, except for DM. Specifically, using the condition in which DM had the worst reliability in identifying individuals (i.e., with GSR and no filtering), the CNN had the best sensitivity (58%) and specificity (58%) in separating subject groups. This points to a trade-off between identifying at the individual level and generalizing to the group (Finn et al., <xref rid="B24" ref-type="bibr">2017</xref>).</p>
+        <sec>
+          <title>4.2.1. Sparse SVM</title>
+          <p>Sparse linear SVM (Bi et al., <xref rid="B6" ref-type="bibr">2003</xref>) was used to identify inter-regional functional interactions that played a dominant role in correctly separating tinnitus patients from controls. Subsequently, the classification accuracy of QDA, SVM, and CNN was re-evaluated using such selected variables. The standard risk function minimized by SVM includes two terms: the hinge loss function and squared ℓ<sub>2</sub>-norm of the weight vector. In sparse linear SVM, the ℓ<sub>1</sub>-norm is used as the regularization term in lieu of ℓ<sub>2</sub>-norm allowing for a sparser solution of the weight vector. The non-zero elements of the weight vector then inherently correspond to variables that play more dominant roles in building the optimal separating hyperplane.</p>
+          <p>The graphs shown in <xref ref-type="fig" rid="F5">Figures 5</xref>–<xref ref-type="fig" rid="F8">8</xref> depict the salient inter-regional interactions as quantified by cyclicity analysis, zero-lag correlation, lagged correlation, and DTW distance measure, respectively. Each ROI is represented by a node and the interaction between ROIs is depicted as an edge. The width of each edge signifies the magnitude of the interaction, which corresponds to the absolute values of the weight vector obtained in the SVM solution. Using these dominant interactions, the dimension of each feature matrix was reduced and used to re-evaluate the classifiers. The results showed that dimensionality reduction based on sparse SVM improved the classification. Again, SVM (here, on CM instead of LCM) outperformed other classifiers, with sensitivity and specificity of 62%.</p>
+          <fig id="F5" position="float">
+            <label>Figure 5</label>
+            <caption>
+              <p>Cyclicity analysis—the salient interactions in separating patients and control groups, selected by sparse SVM. The nodes correspond to the ROIs listed on the left side of the figure. The edges represents the interaction between ROIs corresponding to SVM solution of the weight vector. The width of the weights relates to the magnitude of interactions. GSR stands for global signal regression and <italic>f</italic> denotes the passed frequencies of band-pass filters.</p>
+            </caption>
+            <graphic xlink:href="fncom-13-00094-g0005"/>
+          </fig>
+          <fig id="F6" position="float">
+            <label>Figure 6</label>
+            <caption>
+              <p>Zero-lag correlation analysis—the salient interactions in separating patients and control groups, selected by sparse SVM. The nodes correspond to the ROIs listed on the left side of the figure. The edges represents the interaction between ROIs corresponding to SVM solution of the weight vector. The width of the weights relates to the magnitude of interactions. GSR stands for global signal regression and <italic>f</italic> denotes the passed frequencies of band-pass filters.</p>
+            </caption>
+            <graphic xlink:href="fncom-13-00094-g0006"/>
+          </fig>
+          <fig id="F7" position="float">
+            <label>Figure 7</label>
+            <caption>
+              <p>Lagged correlation analysis—the salient interactions in separating patients and control groups, selected by sparse SVM using lagged matrices. The nodes correspond to the ROIs listed on the left side of the figure. The edges represents the interaction between ROIs corresponding to SVM solution of the weight vector. The width of the weights relates to the magnitude of interactions. GSR stands for global signal regression and <italic>f</italic> denotes the passed frequencies of band-pass filters.</p>
+            </caption>
+            <graphic xlink:href="fncom-13-00094-g0007"/>
+          </fig>
+          <fig id="F8" position="float">
+            <label>Figure 8</label>
+            <caption>
+              <p>Dynamic time warping distance—the salient interactions in separating patients and control groups, selected by sparse SVM using dynamic time warping matrices. The nodes correspond to the ROIs listed on the left side of the figure. The edges represents the interaction between ROIs corresponding to SVM solution of the weight vector. The width of the weights relates to the magnitude of interactions. GSR stands for global signal regression and <italic>f</italic> denotes the passed frequencies of band-pass filters.</p>
+            </caption>
+            <graphic xlink:href="fncom-13-00094-g0008"/>
+          </fig>
+          <p>As illustrated in <xref ref-type="fig" rid="F5">Figures 5</xref>–<xref ref-type="fig" rid="F8">8</xref>, sparse SVMs found different salient interactions between ROIs depending on the rsFI feature matrix, filtering setting, and GSR. For example, using LM without filtering and without GSR, the sparse SVM found an interaction between precuneus and the right cuneus as a dominant interaction in separating tinnitus from controls. In addition to the aforementioned interactivity, using LM with filtering (upper cutoff frequency of 0.2 Hz) and with GSR, the sparse SVM found the interactivity between the left primary visual cortex and the left primary auditory to be useful in separating subject groups. For all matrices except DM, using GSR decreased the degree of sparsity obtained in the solution, leading to the hyperplanes defined by more non-zero elements when differentiating subject groups. Here, the robustness of DM to GSR is consistent with the results observed in the stability analysis, where DM was the feature matrix most robust to GSR. In sum, the importance of interactions between different ROIs in building the optimal separating hyperplane was found to depend on the particular feature matrix and chosen preprocessing steps.</p>
+        </sec>
+        <sec>
+          <title>4.2.2. Non-linear Dimensionality Reduction</title>
+          <p>To further investigate the poor performance in group separability, we visualized each feature matrix across all participants using t-distributed stochastic neighbor embedding (t-SNE), which is a non-linear dimensionality reduction method (Maaten and Hinton, <xref rid="B50" ref-type="bibr">2008</xref>). Using t-SNE with perplexity (a hyper parameter in the algorithm) of 50, CM, LCM, and DM were divided into two distinct clusters after mapping into a 2-dimensional space. Such clear separation was less pronounced in the case of LM, regardless of GSR. GSR, no matter the filter setting, changed both CM and LCM into a continuum and obscured the boundary between the two clusters. This was not the case with DM, which remained as two clusters. This is an observation consistent with previous stability and classification results, which underscores the robustness of DM to GSR. <xref ref-type="fig" rid="F9">Figure 9</xref> depicts CM and DM of both tinnitus and control populations after applying t-SNE, using band-pass filtering (0.008 ≤ <italic>f</italic><sub><italic>pass</italic></sub> ≤ 0.2) and with &amp; without GSR. Each observation is shown with its corresponding feature matrix. Further investigation revealed that this observed clustering was not correlated with the subject group labels or any other metadata, such as hearing status, age, or gender. Nevertheless, as demonstrated in the upper left panel of <xref ref-type="fig" rid="F9">Figure 9</xref>, it appears that the samples in one cluster have higher correlation values (illustrated by lighter colors) than the samples in another cluster. Using another popular non-linear dimensionality reduction method, Isomap (Tenenbaum et al., <xref rid="B75" ref-type="bibr">2000</xref>), a trend similar to tSNE was observed. As illustrated in the upper left panel of <xref ref-type="fig" rid="F10">Figure 10</xref>, the samples with greater values of Dimension 1, depicted by darker colors in the right, can be distinguished from those with smaller values in the left. Like tSNE, using GSR eliminated this differentiation in zero-lag correlation analysis, whereas it did not change such differentiation in DTW distance measures. The results of these visualization methods may help partially explain the low sensitivity and specificity observed in the classification results. Though both stochastic and deterministic unsupervised clustering methods found a natural separation into low and high values in some two-dimensional latent space, the obtained separation was not materially related to the group labels at hand. Examples of the algorithms applied to other feature matrices can be found in <xref ref-type="supplementary-material" rid="SM1">Figures S3, S4</xref>.</p>
+          <fig id="F9" position="float">
+            <label>Figure 9</label>
+            <caption>
+              <p>T-distributed Stochastic Neighbor Embedding (t-SNE)—Non-linear dimensionality reduction to two dimensions of the zero-lag correlation and dynamic time warping (DTW) matrices without and with global signal regression (GSR). The resting state fMRI data were band-pass filtered (0.008 ≤ <italic>f</italic><sub><italic>pass</italic></sub> ≤ 0.2) before extracting the features. Each observation is depicted with its corresponding feature matrix.</p>
+            </caption>
+            <graphic xlink:href="fncom-13-00094-g0009"/>
+          </fig>
+          <fig id="F10" position="float">
+            <label>Figure 10</label>
+            <caption>
+              <p>Isomap—Non-linear dimensionality reduction to two dimensions of the zero-lag correlation and dynamic time warping (DTW) matrices without and with global signal regression (GSR). The resting state fMRI data were band-pass filtered (0.008 ≤ <italic>f</italic><sub><italic>pass</italic></sub> ≤ 0.2) before extracting the features. Each observation is depicted with its corresponding feature matrix.</p>
+            </caption>
+            <graphic xlink:href="fncom-13-00094-g0010"/>
+          </fig>
+        </sec>
+      </sec>
+    </sec>
+    <sec sec-type="discussion" id="s5">
+      <title>5. Discussion</title>
+      <p>Altogether, the results of this study indicate that the surveyed fMRI rsFI methods, including cyclicity analysis and pre-established functional connectivity methods, generate features that convey sufficient information for identifying individuals across visits on different days. However, these methods may poorly manifest the group-level information essential to reliably identify tinnitus population investigated in our study.</p>
+      <sec>
+        <title>5.1. Identifying Subject Groups</title>
+        <p>As an example patient group, in this study we focused on tinnitus. In clinical settings, tinnitus is commonly diagnosed by self-report because there are no diagnostic tools available to objectively identify this condition. Using brain imaging, specifically fMRI, previous studies including our own work have reported intrinsic large-scale neural networks implicated in tinnitus (Burton et al., <xref rid="B12" ref-type="bibr">2012</xref>; Maudoux et al., <xref rid="B52" ref-type="bibr">2012</xref>; Schmidt et al., <xref rid="B68" ref-type="bibr">2013</xref>, <xref rid="B69" ref-type="bibr">2017</xref>; Davies et al., <xref rid="B20" ref-type="bibr">2014</xref>). Default mode (Raichle et al., <xref rid="B64" ref-type="bibr">2001</xref>), dorsal attention (Fox et al., <xref rid="B26" ref-type="bibr">2006</xref>), and auditory networks are examples of such neural ensembles. For a review, refer to Shahsavarani et al. (<xref rid="B71" ref-type="bibr">2019</xref>).</p>
+        <p>Identifying invariant neural correlates of tinnitus as objective neuroimaging measures can potentially advance the development of diagnostic and treatment tools for this disorder. Thus, it is imperative to evaluate the efficacy of the rsFI measures in dissociating patient groups from neurotypical controls. In the current study, we evaluated the effectiveness of machine-learning techniques (including DA, SVM, and CNN) in separating tinnitus from healthy groups using features extracted by cyclicity analysis, zero-lag correlation analysis, lagged correlation analysis, and dynamic time warping distance measure. Our experiments revealed a poor performance for the classifiers in identifying the two subject groups. Although reducing the number of dimensions (using sparse SVM) or augmenting the training data (for the CNN classifier) improved the performance of the classifiers, the classification problem still needs further enhancements to be competitive with results in similar approaches, for example, to cancer detection, susceptibility &amp; prognosis studies etc. (Tan and Gilbert, <xref rid="B74" ref-type="bibr">2003</xref>; Cruz and Wishart, <xref rid="B19" ref-type="bibr">2007</xref>; Kourou et al., <xref rid="B45" ref-type="bibr">2015</xref>).</p>
+        <p>Exploring the separability of subject groups, sparse SVM found different salient interactions between regions and networks in building a separating hyperplane to dissociate tinnitus from control, depending on the rsFI analysis. Recall that in the hinge loss:</p>
+        <disp-formula id="E3">
+          <label>(3)</label>
+          <mml:math id="M8">
+            <mml:mtable class="eqnarray" columnalign="right center left">
+              <mml:mtr>
+                <mml:mtd>
+                  <mml:mi>l</mml:mi>
+                  <mml:mrow>
+                    <mml:mo stretchy="false">(</mml:mo>
+                    <mml:mrow>
+                      <mml:mi>y</mml:mi>
+                    </mml:mrow>
+                    <mml:mo stretchy="false">)</mml:mo>
+                  </mml:mrow>
+                  <mml:mo>=</mml:mo>
+                  <mml:mo class="qopname">max</mml:mo>
+                  <mml:mrow>
+                    <mml:mo stretchy="false">(</mml:mo>
+                    <mml:mrow>
+                      <mml:mn>0</mml:mn>
+                      <mml:mo>,</mml:mo>
+                      <mml:mn>1</mml:mn>
+                      <mml:mo>-</mml:mo>
+                      <mml:mi>t</mml:mi>
+                      <mml:mi>y</mml:mi>
+                    </mml:mrow>
+                    <mml:mo stretchy="false">)</mml:mo>
+                  </mml:mrow>
+                  <mml:mo>=</mml:mo>
+                  <mml:mo class="qopname">max</mml:mo>
+                  <mml:mrow>
+                    <mml:mo stretchy="false">(</mml:mo>
+                    <mml:mrow>
+                      <mml:mn>0</mml:mn>
+                      <mml:mo>,</mml:mo>
+                      <mml:mn>1</mml:mn>
+                      <mml:mo>-</mml:mo>
+                      <mml:mi>t</mml:mi>
+                      <mml:mrow>
+                        <mml:mo stretchy="false">(</mml:mo>
+                        <mml:mrow>
+                          <mml:mi>w</mml:mi>
+                          <mml:mo>·</mml:mo>
+                          <mml:mi>x</mml:mi>
+                          <mml:mo>+</mml:mo>
+                          <mml:mi>b</mml:mi>
+                        </mml:mrow>
+                        <mml:mo stretchy="false">)</mml:mo>
+                      </mml:mrow>
+                    </mml:mrow>
+                    <mml:mo stretchy="false">)</mml:mo>
+                  </mml:mrow>
+                  <mml:mo>,</mml:mo>
+                </mml:mtd>
+              </mml:mtr>
+            </mml:mtable>
+          </mml:math>
+        </disp-formula>
+        <p>where <italic>t</italic> is the true label and <italic>y</italic> is the prediction, the elements of the vector <italic>w</italic> determine the optimal separating hyperplane (which maximizes the margin). In other words, the hinge-loss will choose a combination of the ROI interactions that form a maximum margin separating hyperplane between the two sets of labels because each element of our vector corresponds to the interaction between a pair of ROIs. However, in the sparse SVM formulation, the hinge loss is used in conjunction with a ℓ<sub>1</sub> norm on <italic>w</italic>. This causes the optimization to have a trade-off between maximizing margin while maintaining classification accuracy and sparsifying <italic>w</italic>. Thus, it selects those ROI interaction pairs that determine the cardinal orientation of the hyperplane (to maximize accuracy) while reducing the number of components (by sacrificing on the margin), and thereby gives us interaction pairs that play a dominant role in differentiating the two classes. In our study, we found that different rsFI analyses resulted in different dominant ROI pair interactions in creating a separating hyperplane for the point cloud. For simplicity, here, we just discuss the condition in which the resting state fMRI time series were band-passed using the conventional upper cutoff frequency of 0.08 Hz, and without removing the global signal, as depicted in the left middle panels in <xref ref-type="fig" rid="F5">Figures 5</xref>–<xref ref-type="fig" rid="F8">8</xref>.</p>
+        <p>For cyclicity analysis, the interaction between precuneus and visual cortex as well as the interaction between the left parahippocampus and the left frontal eye field was found to contribute to the separation of tinnitus and control groups. Precuneus is a major hub in the default mode network and its interaction with other networks indicates that the coherency of the default mode network is disrupted in tinnitus. In fact, several studies have reported tinnitus-related decrease in the coherency of the default mode network (Schmidt et al., <xref rid="B68" ref-type="bibr">2013</xref>; Carpenter-Thompson et al., <xref rid="B14" ref-type="bibr">2015</xref>; Lanting et al., <xref rid="B47" ref-type="bibr">2016</xref>; Leaver et al., <xref rid="B49" ref-type="bibr">2016b</xref>). Given that the participants had their eyes open during the scan, the interaction between the default mode network and visual network is expected. The interesting point is that this interaction was different between the tinnitus and control groups. Parahippocampus is a part of the limbic system and the frontal eye field is a major node in the dorsal attention network. In a tinnitus model based on cognitive control of emotion (Husain, <xref rid="B39" ref-type="bibr">2016</xref>), we suggest that the constant percept of tinnitus may correlate with changes in the interaction between the dorsal attention network and the limbic system, regulating the emotional response to tinnitus. The interaction between the parahippocampus and the frontal eye field found by sparse SVM is in support of this model.</p>
+        <p>For both zero-lag correlation and lagged correlation analyses, the interaction between the auditory network and the limbic system was predominant in separating subject groups. The central auditory regions are neuroanatomically connected to the limbic system, which evokes emotional responses to auditory stimuli. In turn, the limbic system interacts with the auditory system, which regulates sound perception based on emotional processing. Previous studies have reported on tinnitus-related alternations in the interaction between the auditory network and the limbic system (Rauschecker et al., <xref rid="B65" ref-type="bibr">2010</xref>; Maudoux et al., <xref rid="B52" ref-type="bibr">2012</xref>; Schmidt et al., <xref rid="B68" ref-type="bibr">2013</xref>, <xref rid="B69" ref-type="bibr">2017</xref>; Leaver et al., <xref rid="B48" ref-type="bibr">2016a</xref>), which endorses the importance of this interaction found by sparse SVM.</p>
+        <p>For dynamic time warping distance measure, similar to cyclicity analysis, the interaction between the limbic system and the dorsal attention network was found to be different between the tinnitus and healthy control groups. In addition, the interaction between the left frontal eye field and the medial prefrontal cortex, part of the default mode network, was useful in differentiating tinnitus patients from healthy controls. Previous research from our lab (Schmidt et al., <xref rid="B69" ref-type="bibr">2017</xref>) has shown that tinnitus is correlated with increased functional interactivity between the default mode network and the dorsal attention network, supporting the interaction between medial prefrontal cortex and the frontal eye field.</p>
+        <p>Although, the results from sparse SVM are consistent with the findings from previous studies, it is worth noting that the ROIs used in this study were chosen based on seminal work on tinnitus. Therefore, finding an interaction implicated in tinnitus is not surprising. In addition, the importance of the interactions in separating subject groups highly depended on the rsFI analysis method and the choice of preprocessing. This sensitivity to different methodologies and data analyses may help partly explain the inconsistent evidence provided by previous rsFC studies on tinnitus (Schmidt et al., <xref rid="B69" ref-type="bibr">2017</xref>; Shahsavarani et al., <xref rid="B71" ref-type="bibr">2019</xref>).</p>
+      </sec>
+      <sec>
+        <title>5.2. Identifying Individuals</title>
+        <p>The rsFI analyses explored in this study (i.e., cyclicity analysis, zero-lag correlation analysis, lagged correlation analysis, and dynamic time warping distance measure) extract distinctive or overlapping information from resting state fMRI data. Using data from patients with tinnitus and healthy controls, we found that the features generated by correlation-based methods and cyclicity analyses were highly reliable and reproducible across two visits (being 1 week apart). Our results also showed that employing GSR boosted the reliability of these features to identify individuals. This suggests that applying GSR may augment the representation of information at the level of individual participants.</p>
+        <p>Contrary to cyclicity and correlation-based analyses, the features generated by the DTW distance measures demonstrated poor reliability across visits, indicating that these features represent less participant-specific information compared with other techniques. This is in accordance with the observation in our study that using GSR did not alter the reliability of these features, implying the high robustness of the DTW distance measures to GSR. This finding is also consistent with the results presented by Meszlényi et al. (<xref rid="B55" ref-type="bibr">2017b</xref>) where they showed that both zero-lag and lagged correlation were less robust to GSR compared with DTW distance. Meszlényi et al. (<xref rid="B55" ref-type="bibr">2017b</xref>) also showed that using resting state features extracted by measuring the DTW distance between fMRI time series improved the accuracy of identifying subject groups using machine-learning techniques. As mentioned earlier, our results showed that the DTW distance was the least stable feature in identifying specific individuals across visits. Although we did not observe any advantage in using the DTW distance measures to classify our particular subject groups (except for CNN with augmented data), the findings across our study and Meszlényi et al. (<xref rid="B55" ref-type="bibr">2017b</xref>)'s study suggest that this measure may represent group-level information to a greater extent than the participant-specific information compared with other measures; a hypothesis that can be further investigated in future studies.</p>
+        <p>In general, band-pass filtering of the resting state fMRI time series deteriorated the reliability of cyclicity analysis, but either did not change or even improved the reliability of the features extracted by other methods. Especially, using the upper cutoff frequency of 0.2 Hz increased the accuracy of individual identification across visits. It should be noted that this upper cutoff frequency is greater than what has been suggested for resting state fMRI analyses. In the literature, using band-pass filters with the lower cutoff frequency of 0.005–0.008 Hz and the upper cutoff frequency of 0.08–0.1 Hz has been recommended (Biswal et al., <xref rid="B7" ref-type="bibr">1995</xref>; Obrig et al., <xref rid="B62" ref-type="bibr">2000</xref>; Cordes et al., <xref rid="B18" ref-type="bibr">2001</xref>; Hampson et al., <xref rid="B36" ref-type="bibr">2002</xref>) although there are studies showing higher frequencies may correspond to neuronal activity related to rsFC (Caballero-Gaudes and Reynolds, <xref rid="B13" ref-type="bibr">2017</xref>). The results of our study showed that removing frequency fluctuations &gt;0.1 Hz adversely affected the reliability of functional interactivity features in identifying individuals. In contrast, removing the global signal had a positive impact on the reliability of the analysis methods except for the DTW distance. This finding implies that the global signal may carry information that is detrimental to representing subject-level information, whereas short time scale fluctuations between 5 and 10 s may beneficial for improving subject-level information. Furthermore, these observations suggest that the relative importance of frequency components in rsFI analyses may vary according to the analysis being conducted. The noted interaction between preprocessing steps and different analysis methods remains to be investigated using other patient populations or subject groups.</p>
+      </sec>
+      <sec>
+        <title>5.3. Cyclicity and Similarity</title>
+        <p>Inherently, cyclicity analysis and the other methods analyze different temporal patterns. Cyclicity analysis gauges the temporal ordering of time series, capturing the cyclic interactions amongst time series whereas zero-lag correlation, lagged correlation, and DTW distance measure the similarity between time series. The fMRI time series has serial dependency due to the slow nature of hemodynamic response (Christova et al., <xref rid="B17" ref-type="bibr">2011</xref>; Bright et al., <xref rid="B10" ref-type="bibr">2017</xref>). Although preprocessing procedures, such as de-trending and filtering whiten the time series to some extent and reduce their auto-correlation (Arbabshirani et al., <xref rid="B4" ref-type="bibr">2014</xref>), the serial correlation still remains an issue, suggesting spurious results in correlation-based analyses. In addition, zero-lag correlation does not consider phase shift between time series, and thereby ignores the interactivity information manifested in lag structure.</p>
+        <p>As mentioned in section 1, lagged correlation has been used to circumvent the phase problem in zero-lag correlation (Mitra et al., <xref rid="B58" ref-type="bibr">2014</xref>, <xref rid="B57" ref-type="bibr">2015</xref>). However, due to the low temporal resolution of fMRI data, the need for applying interpolation techniques, e.g., parabolic (Mitra et al., <xref rid="B58" ref-type="bibr">2014</xref>), bi-cubic (Shah et al., <xref rid="B70" ref-type="bibr">2018</xref>), complicates the estimation of the optimal time delay and its corresponding correlation. In previous studies (Mitra et al., <xref rid="B58" ref-type="bibr">2014</xref>, <xref rid="B57" ref-type="bibr">2015</xref>), it was assumed that lagged correlation curves exhibit a single peak. Much as this assumption simplifies the estimation of the optimal time delay, the extent of its validity depends on preprocessing steps. Particularly, removing the DC component from time-series (e.g., by band-pass filtering) can introduce multiple peaks in the lagged correlation curves. On the other hand, if low-pass filtering is used as in Mitra et al. (<xref rid="B57" ref-type="bibr">2015</xref>), the single-peak observation holds. This is mostly because the resting state fMRI data has small fluctuations and keeping the DC component will dominate the lagged correlation results, leading to single peak curves. Our results showed that zero-lag correlation was slightly more reliable in identifying individual across visits than lagged correlation. The DTW distance, on the other hand, does not assume serial independency in time series, and further takes the phase information into consideration (Meszlényi et al., <xref rid="B55" ref-type="bibr">2017b</xref>). Nevertheless, our results showed that DTW distance was the least reliable measure in identifying individuals.</p>
+        <p>Cyclicity analysis uses information embedded in lag structure beyond only considering the phase differences between time series. That is, it approximately reconstructs a global temporal ordering of the signals in a multidimensional time series, by capturing and analyzing all pairs of cyclic interactions among its constituent elements. Cyclicity analysis does not assume serial independency in time series and yields features that are invariant to re-parameterizations and translations of signals. This feature may be important in analyzing biophysical signals. Consider the cardiac rhythm: while over a shorter time span one may attribute a “period,” over longer time spans it may vary said period—for example resting heart rate vs. active heart rate. Such variations can be considered as re-parameterizations of the time axis and cyclicity analysis produces features that are invariant under such transformations. Similar to correlation-based analyses, cyclicity analysis was shown to be stable and reliable in identifying individuals across visits.</p>
+        <p>Each feature examined here has several applications and may perform at some applications better than others. This study reiterates that care must be taken in designing preprocessing pipelines for time series because it highly affects the information embedded in the features. This might be relevant for the studies that aim to use pre-cleaned and/or de-noised versions of BOLD time series from various sources.</p>
+      </sec>
+      <sec>
+        <title>5.4. Future Work</title>
+        <p>The cyclicity analysis investigated in this study used pairwaise interactions, but the general machinery of the “signature method” can employ triplets and quadruplets and so on, in the context of path signature. Much as this can investigate intricate relationship between time series, the number of features exponentially grows as the order of the interaction increases. Future work will investigate taming this imposed computational complexity, which will allow for generating and studying features that assess the interactivity in a larger scale than pairs.</p>
+        <p>The coherency of the spontaneous neural fluctuations changes within time scales of seconds or minutes, denoting an underlying non-stationary process (Chang and Glover, <xref rid="B15" ref-type="bibr">2010</xref>; Christova et al., <xref rid="B17" ref-type="bibr">2011</xref>; Hutchison et al., <xref rid="B41" ref-type="bibr">2013b</xref>; Allen et al., <xref rid="B2" ref-type="bibr">2014</xref>). We are planning to adapt various methods, such as sliding window (Handwerker et al., <xref rid="B37" ref-type="bibr">2012</xref>; Hutchison et al., <xref rid="B40" ref-type="bibr">2013a</xref>; Allen et al., <xref rid="B2" ref-type="bibr">2014</xref>) or dynamic mode decomposition (Brunton et al., <xref rid="B11" ref-type="bibr">2016</xref>) to explore dynamic rsFI. Moreover, we plan to take advantage of both static and dynamic analyses to further evaluate and investigate the enhancement of the group-level information within the rsFI features to facilitate identifying subject groups. Additionally, to improve the group signatures in rsFI fMRI data, we will evaluate the techniques similar to ones assessed by Amico and Goñi (<xref rid="B3" ref-type="bibr">2018</xref>) in which they identified group-level, subject-level, and noise-level information, and improved the individual fingerprint in functional connectomes.</p>
+        <p>Finally, due to the fact that different analysis techniques capture different aspects of rsFI, future efforts will be targeted toward developing methods that combine the merits of different analyses. Furthermore, as suggested by Finn et al. (<xref rid="B24" ref-type="bibr">2017</xref>), we will leverage the techniques and results of the current study to investigate whether other brain states, rather than resting state (e.g., passively watching video or listening to music), can better manifest group-level information.</p>
+      </sec>
+    </sec>
+    <sec sec-type="data-availability" id="s6">
+      <title>Data Availability Statement</title>
+      <p>The datasets generated for this study are available on request to the corresponding author.</p>
+    </sec>
+    <sec id="s7">
+      <title>Ethics Statement</title>
+      <p>The studies involving human participants were reviewed and approved by Office of the Protection of Human Subjects, University of Illinois at Urbana-Champaign. The patients/participants provided their written informed consent to participate in this study.</p>
+    </sec>
+    <sec id="s8">
+      <title>Author Contributions</title>
+      <p>FH obtained the funding and supervised this study. SS and BZ analyzed the resting state fMRI data. SS and IA conceptualized the study, conducted all data analyses, and wrote the manuscript under the supervision of FH and YB. BZ assisted in interpreting the results and writing the manuscript. YB supervised the research and advised on the mathematical and theoretical framework of the study. All authors contributed to manuscript revision, read, and approved the submitted version.</p>
+    </sec>
+    <sec>
+      <title>Conflict of Interest</title>
+      <p>The authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.</p>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>The resting state fMRI data used in this work was collected at the Biomedical Imaging Center of the Beckman Institute for Advanced Science and Technology at the University of Illinois at Urbana-Champaign (UIUC-BI-BIC).</p>
+    </ack>
+    <fn-group>
+      <fn fn-type="financial-disclosure">
+        <p><bold>Funding.</bold> This work was supported by DoD/CDMRP grant W81XWH-15-2-0032 to FH (PI).</p>
+      </fn>
+    </fn-group>
+    <sec sec-type="supplementary-material" id="s9">
+      <title>Supplementary Material</title>
+      <p>The Supplementary Material for this article can be found online at: <ext-link ext-link-type="uri" xlink:href="https://www.frontiersin.org/articles/10.3389/fncom.2019.00094/full#supplementary-material">https://www.frontiersin.org/articles/10.3389/fncom.2019.00094/full#supplementary-material</ext-link></p>
+      <supplementary-material content-type="local-data" id="SM1">
+        <media xlink:href="Data_Sheet_1.pdf">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+    </sec>
+    <ref-list>
+      <title>References</title>
+      <ref id="B1">
+        <mixed-citation publication-type="webpage"><person-group person-group-type="author"><name><surname>Abadi</surname><given-names>M.</given-names></name><name><surname>Agarwal</surname><given-names>A.</given-names></name><name><surname>Barham</surname><given-names>P.</given-names></name><name><surname>Brevdo</surname><given-names>E.</given-names></name><name><surname>Chen</surname><given-names>Z.</given-names></name><name><surname>Citro</surname><given-names>C.</given-names></name><etal/></person-group> (<year>2015</year>). <source>TensorFlow: Large-Scale Machine Learning on Heterogeneous Systems</source>. Software available online at: <ext-link ext-link-type="uri" xlink:href="https://www.tensorflow.org/">https://www.tensorflow.org/</ext-link></mixed-citation>
+      </ref>
+      <ref id="B2">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Allen</surname><given-names>E. A.</given-names></name><name><surname>Damaraju</surname><given-names>E.</given-names></name><name><surname>Plis</surname><given-names>S. M.</given-names></name><name><surname>Erhardt</surname><given-names>E. B.</given-names></name><name><surname>Eichele</surname><given-names>T.</given-names></name><name><surname>Calhoun</surname><given-names>V. D.</given-names></name></person-group> (<year>2014</year>). <article-title>Tracking whole-brain connectivity dynamics in the resting state</article-title>. <source>Cereb. Cortex</source>
+<volume>24</volume>, <fpage>663</fpage>–<lpage>676</lpage>. <pub-id pub-id-type="doi">10.1093/cercor/bhs352</pub-id><pub-id pub-id-type="pmid">23146964</pub-id></mixed-citation>
+      </ref>
+      <ref id="B3">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Amico</surname><given-names>E.</given-names></name><name><surname>Goñi</surname><given-names>J.</given-names></name></person-group> (<year>2018</year>). <article-title>The quest for identifiability in human functional connectomes</article-title>. <source>Sci. Rep.</source>
+<volume>8</volume>:<fpage>8254</fpage>. <pub-id pub-id-type="doi">10.1038/s41598-018-25089-1</pub-id><pub-id pub-id-type="pmid">29844466</pub-id></mixed-citation>
+      </ref>
+      <ref id="B4">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Arbabshirani</surname><given-names>M. R.</given-names></name><name><surname>Damaraju</surname><given-names>E.</given-names></name><name><surname>Phlypo</surname><given-names>R.</given-names></name><name><surname>Plis</surname><given-names>S.</given-names></name><name><surname>Allen</surname><given-names>E.</given-names></name><name><surname>Ma</surname><given-names>S.</given-names></name><etal/></person-group>. (<year>2014</year>). <article-title>Impact of autocorrelation on functional connectivity</article-title>. <source>Neuroimage</source>
+<volume>102</volume>, <fpage>294</fpage>–<lpage>308</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2014.07.045</pub-id><pub-id pub-id-type="pmid">25072392</pub-id></mixed-citation>
+      </ref>
+      <ref id="B5">
+        <mixed-citation publication-type="book"><person-group person-group-type="author"><name><surname>Baryshnikov</surname><given-names>Y.</given-names></name><name><surname>Schlafly</surname><given-names>E.</given-names></name></person-group> (<year>2016</year>). <article-title>Cyclicity in multivariate time series and applications to functional MRI data</article-title>, in <source>2016 IEEE 55th Conference on Decision and Control (CDC)</source> (<publisher-loc>Las Vegas, NV</publisher-loc>: <publisher-name>IEEE</publisher-name>), <fpage>1625</fpage>–<lpage>1630</lpage>.</mixed-citation>
+      </ref>
+      <ref id="B6">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Bi</surname><given-names>J.</given-names></name><name><surname>Bennett</surname><given-names>K. P.</given-names></name><name><surname>Breneman</surname><given-names>C. M.</given-names></name></person-group> (<year>2003</year>). <article-title>Dimensionality reduction via sparse support vector machines</article-title>. <source>J. Mach. Learn. Res.</source>
+<volume>3</volume>, <fpage>1229</fpage>–<lpage>1243</lpage>.</mixed-citation>
+      </ref>
+      <ref id="B7">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Biswal</surname><given-names>B.</given-names></name><name><surname>Zerrin Yetkin</surname><given-names>F.</given-names></name><name><surname>Haughton</surname><given-names>V. M.</given-names></name><name><surname>Hyde</surname><given-names>J. S.</given-names></name></person-group> (<year>1995</year>). <article-title>Functional connectivity in the motor cortex of resting human brain using echo-planar mri</article-title>. <source>Magn. Reson. Med.</source>
+<volume>34</volume>, <fpage>537</fpage>–<lpage>541</lpage>. <pub-id pub-id-type="pmid">8524021</pub-id></mixed-citation>
+      </ref>
+      <ref id="B8">
+        <mixed-citation publication-type="book"><person-group person-group-type="author"><name><surname>Boser</surname><given-names>B. E.</given-names></name><name><surname>Guyon</surname><given-names>I. M.</given-names></name><name><surname>Vapnik</surname><given-names>V. N.</given-names></name></person-group> (<year>1992</year>). <article-title>A training algorithm for optimal margin classifiers</article-title>, in <source>Proceedings of the Fifth Annual Workshop on Computational Learning Theory–COLT '92</source> (<publisher-loc>New York, NY</publisher-loc>: <publisher-name>ACM</publisher-name>), <fpage>144</fpage>–<lpage>152</lpage>.</mixed-citation>
+      </ref>
+      <ref id="B9">
+        <mixed-citation publication-type="book"><person-group person-group-type="author"><name><surname>Brett</surname><given-names>M.</given-names></name><name><surname>Anton</surname><given-names>J.</given-names></name><name><surname>Valabrgue</surname><given-names>R.</given-names></name><name><surname>Poline</surname><given-names>J.-B.</given-names></name></person-group> (<year>2002</year>). <article-title>Region of interest analysis using an SPM toolbox</article-title>, in <source>8th International Conference on Functional Mapping of the Human Brain</source> (<publisher-loc>Sendai</publisher-loc>), <fpage>497</fpage>.</mixed-citation>
+      </ref>
+      <ref id="B10">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Bright</surname><given-names>M. G.</given-names></name><name><surname>Tench</surname><given-names>C. R.</given-names></name><name><surname>Murphy</surname><given-names>K.</given-names></name></person-group> (<year>2017</year>). <article-title>Potential pitfalls when denoising resting state fMRI data using nuisance regression</article-title>. <source>Neuroimage</source>
+<volume>154</volume>, <fpage>159</fpage>–<lpage>168</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2016.12.027</pub-id><pub-id pub-id-type="pmid">28025128</pub-id></mixed-citation>
+      </ref>
+      <ref id="B11">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Brunton</surname><given-names>B. W.</given-names></name><name><surname>Johnson</surname><given-names>L. A.</given-names></name><name><surname>Ojemann</surname><given-names>J. G.</given-names></name><name><surname>Kutz</surname><given-names>J. N.</given-names></name></person-group> (<year>2016</year>). <article-title>Extracting spatial-temporal coherent patterns in large-scale neural recordings using dynamic mode decomposition</article-title>. <source>J. Neurosci. Methods</source>
+<volume>258</volume>, <fpage>1</fpage>–<lpage>15</lpage>. <pub-id pub-id-type="doi">10.1016/j.jneumeth.2015.10.010</pub-id><pub-id pub-id-type="pmid">26529367</pub-id></mixed-citation>
+      </ref>
+      <ref id="B12">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Burton</surname><given-names>H.</given-names></name><name><surname>Wineland</surname><given-names>A.</given-names></name><name><surname>Bhattacharya</surname><given-names>M.</given-names></name><name><surname>Nicklaus</surname><given-names>J.</given-names></name><name><surname>Garcia</surname><given-names>K. S.</given-names></name><name><surname>Piccirillo</surname><given-names>J. F.</given-names></name></person-group> (<year>2012</year>). <article-title>Altered networks in bothersome tinnitus: a functional connectivity study</article-title>. <source>BMC Neurosci.</source>
+<volume>13</volume>:<fpage>3</fpage>. <pub-id pub-id-type="doi">10.1186/1471-2202-13-3</pub-id><pub-id pub-id-type="pmid">22217183</pub-id></mixed-citation>
+      </ref>
+      <ref id="B13">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Caballero-Gaudes</surname><given-names>C.</given-names></name><name><surname>Reynolds</surname><given-names>R. C.</given-names></name></person-group> (<year>2017</year>). <article-title>Methods for cleaning the BOLD fMRI signal</article-title>. <source>Neuroimage</source>
+<volume>154</volume>, <fpage>128</fpage>–<lpage>149</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2016.12.018</pub-id><pub-id pub-id-type="pmid">27956209</pub-id></mixed-citation>
+      </ref>
+      <ref id="B14">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Carpenter-Thompson</surname><given-names>J. R.</given-names></name><name><surname>Schmidt</surname><given-names>S. A.</given-names></name><name><surname>Husain</surname><given-names>F. T.</given-names></name></person-group> (<year>2015</year>). <article-title>Neural plasticity of mild tinnitus: an fMRI investigation comparing those recently diagnosed with tinnitus to those that had tinnitus for a long period of time</article-title>. <source>Neural Plast.</source>
+<volume>2015</volume>:<fpage>161478</fpage>. <pub-id pub-id-type="doi">10.1155/2015/161478</pub-id><pub-id pub-id-type="pmid">26246914</pub-id></mixed-citation>
+      </ref>
+      <ref id="B15">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Chang</surname><given-names>C.</given-names></name><name><surname>Glover</surname><given-names>G. H.</given-names></name></person-group> (<year>2010</year>). <article-title>Time-frequency dynamics of resting-state brain connectivity measured with fMRI</article-title>. <source>Neuroimage</source>
+<volume>50</volume>, <fpage>81</fpage>–<lpage>98</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2009.12.011</pub-id><pub-id pub-id-type="pmid">20006716</pub-id></mixed-citation>
+      </ref>
+      <ref id="B16">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Chevyrev</surname><given-names>I.</given-names></name><name><surname>Kormilitzin</surname><given-names>A.</given-names></name></person-group> (<year>2016</year>). <article-title>A primer on the signature method in machine learning</article-title>. <source>arXiv: 1312.6114</source>.</mixed-citation>
+      </ref>
+      <ref id="B17">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Christova</surname><given-names>P.</given-names></name><name><surname>Lewis</surname><given-names>S. M.</given-names></name><name><surname>Jerde</surname><given-names>T. A.</given-names></name><name><surname>Lynch</surname><given-names>J. K.</given-names></name><name><surname>Georgopoulos</surname><given-names>A. P.</given-names></name></person-group> (<year>2011</year>). <article-title>True associations between resting fMRI time series based on innovations</article-title>. <source>J. Neural Eng.</source>
+<volume>8</volume>:<fpage>046025</fpage>. <pub-id pub-id-type="doi">10.1088/1741-2560/8/4/046025</pub-id><pub-id pub-id-type="pmid">21712571</pub-id></mixed-citation>
+      </ref>
+      <ref id="B18">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Cordes</surname><given-names>D.</given-names></name><name><surname>Haughton</surname><given-names>V. M.</given-names></name><name><surname>Arfanakis</surname><given-names>K.</given-names></name><name><surname>Carew</surname><given-names>J. D.</given-names></name><name><surname>Turski</surname><given-names>P. A.</given-names></name><name><surname>Moritz</surname><given-names>C. H.</given-names></name><etal/></person-group>. (<year>2001</year>). <article-title>Frequencies contributing to functional connectivity in the cerebral cortex in “resting state” data</article-title>. <source>Am. J. Neuroradiol.</source>
+<volume>22</volume>, <fpage>1326</fpage>–<lpage>1333</lpage>. <pub-id pub-id-type="pmid">11498421</pub-id></mixed-citation>
+      </ref>
+      <ref id="B19">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Cruz</surname><given-names>J. A.</given-names></name><name><surname>Wishart</surname><given-names>D. S.</given-names></name></person-group> (<year>2007</year>). <article-title>Applications of machine learning in cancer prediction and prognosis</article-title>. <source>Cancer Inform.</source>
+<volume>2</volume>, <fpage>59</fpage>–<lpage>77</lpage>. <pub-id pub-id-type="doi">10.1177/117693510600200030</pub-id><pub-id pub-id-type="pmid">19458758</pub-id></mixed-citation>
+      </ref>
+      <ref id="B20">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Davies</surname><given-names>J.</given-names></name><name><surname>Gander</surname><given-names>P. E.</given-names></name><name><surname>Andrews</surname><given-names>M.</given-names></name><name><surname>Hall</surname><given-names>D. A.</given-names></name></person-group> (<year>2014</year>). <article-title>Auditory network connectivity in tinnitus patients: a resting-state fMRI study</article-title>. <source>Int. J. Audiol.</source>
+<volume>53</volume>, <fpage>192</fpage>–<lpage>198</lpage>. <pub-id pub-id-type="doi">10.3109/14992027.2013.846482</pub-id><pub-id pub-id-type="pmid">24200464</pub-id></mixed-citation>
+      </ref>
+      <ref id="B21">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Dean</surname><given-names>R. T.</given-names></name><name><surname>Dunsmuir</surname><given-names>W. T. M.</given-names></name></person-group> (<year>2016</year>). <article-title>Dangers and uses of cross-correlation in analyzing time series in perception, performance, movement, and neuroscience: the importance of constructing transfer function autoregressive models</article-title>. <source>Behav. Res. Methods</source>
+<volume>48</volume>, <fpage>783</fpage>–<lpage>802</lpage>. <pub-id pub-id-type="doi">10.3758/s13428-015-0611-2</pub-id><pub-id pub-id-type="pmid">26100765</pub-id></mixed-citation>
+      </ref>
+      <ref id="B22">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Ding</surname><given-names>H.</given-names></name><name><surname>Trajcevski</surname><given-names>G.</given-names></name><name><surname>Scheuermann</surname><given-names>P.</given-names></name><name><surname>Wang</surname><given-names>X.</given-names></name><name><surname>Keogh</surname><given-names>E.</given-names></name></person-group> (<year>2008</year>). <article-title>Querying and mining of time series data: experimental comparison of representations and distance measures</article-title>. <source>Proc. VLDB Endow.</source>
+<volume>1</volume>, <fpage>1542</fpage>–<lpage>1552</lpage>. <pub-id pub-id-type="doi">10.14778/1454159.1454226</pub-id></mixed-citation>
+      </ref>
+      <ref id="B23">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Dinov</surname><given-names>M.</given-names></name><name><surname>Lorenz</surname><given-names>R.</given-names></name><name><surname>Scott</surname><given-names>G.</given-names></name><name><surname>Sharp</surname><given-names>D. J.</given-names></name><name><surname>Fagerholm</surname><given-names>E. D.</given-names></name><name><surname>Leech</surname><given-names>R.</given-names></name></person-group> (<year>2016</year>). <article-title>Novel modeling of task vs. rest brain state predictability using a dynamic time warping spectrum: comparisons and contrasts with other standard measures of brain dynamics</article-title>. <source>Front. Comput. Neurosci.</source>
+<volume>10</volume>, <fpage>1</fpage>–<lpage>13</lpage>. <pub-id pub-id-type="doi">10.3389/fncom.2016.00046</pub-id><pub-id pub-id-type="pmid">26834616</pub-id></mixed-citation>
+      </ref>
+      <ref id="B24">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Finn</surname><given-names>E. S.</given-names></name><name><surname>Scheinost</surname><given-names>D.</given-names></name><name><surname>Finn</surname><given-names>D. M.</given-names></name><name><surname>Shen</surname><given-names>X.</given-names></name><name><surname>Papademetris</surname><given-names>X.</given-names></name><name><surname>Constable</surname><given-names>R. T.</given-names></name></person-group> (<year>2017</year>). <article-title>Can brain state be manipulated to emphasize individual differences in functional connectivity?</article-title>
+<source>Neuroimage</source>
+<volume>160</volume>, <fpage>140</fpage>–<lpage>151</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2017.03.064</pub-id><pub-id pub-id-type="pmid">28373122</pub-id></mixed-citation>
+      </ref>
+      <ref id="B25">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Finn</surname><given-names>E. S.</given-names></name><name><surname>Shen</surname><given-names>X.</given-names></name><name><surname>Scheinost</surname><given-names>D.</given-names></name><name><surname>Rosenberg</surname><given-names>M. D.</given-names></name><name><surname>Huang</surname><given-names>J.</given-names></name><name><surname>Chun</surname><given-names>M. M.</given-names></name><etal/></person-group>. (<year>2015</year>). <article-title>Functional connectome fingerprinting: identifying individuals using patterns of brain connectivity</article-title>. <source>Nat. Neurosci.</source>
+<volume>18</volume>, <fpage>1664</fpage>–<lpage>1671</lpage>. <pub-id pub-id-type="doi">10.1038/nn.4135</pub-id><pub-id pub-id-type="pmid">26457551</pub-id></mixed-citation>
+      </ref>
+      <ref id="B26">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Fox</surname><given-names>M. D.</given-names></name><name><surname>Corbetta</surname><given-names>M.</given-names></name><name><surname>Snyder</surname><given-names>A. Z.</given-names></name><name><surname>Vincent</surname><given-names>J. L.</given-names></name><name><surname>Raichle</surname><given-names>M. E.</given-names></name></person-group> (<year>2006</year>). <article-title>Spontaneous neuronal activity distinguishes human dorsal and ventral attention systems</article-title>. <source>Proc. Natl. Acad. Sci. U.S.A.</source>
+<volume>103</volume>, <fpage>10046</fpage>–<lpage>10051</lpage>. <pub-id pub-id-type="doi">10.1073/pnas.0604187103</pub-id><pub-id pub-id-type="pmid">16788060</pub-id></mixed-citation>
+      </ref>
+      <ref id="B27">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Fox</surname><given-names>M. D.</given-names></name><name><surname>Snyder</surname><given-names>A. Z.</given-names></name><name><surname>Vincent</surname><given-names>J. L.</given-names></name><name><surname>Corbetta</surname><given-names>M.</given-names></name><name><surname>Van Essen</surname><given-names>D. C.</given-names></name><name><surname>Raichle</surname><given-names>M. E.</given-names></name></person-group> (<year>2005</year>). <article-title>The human brain is intrinsically organized into dynamic, anticorrelated functional networks</article-title>. <source>Proc. Natl. Acad. Sci. U.S.A.</source>
+<volume>102</volume>, <fpage>9673</fpage>–<lpage>9678</lpage>. <pub-id pub-id-type="doi">10.1073/pnas.0504136102</pub-id><pub-id pub-id-type="pmid">15976020</pub-id></mixed-citation>
+      </ref>
+      <ref id="B28">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Fox</surname><given-names>M. D.</given-names></name><name><surname>Zhang</surname><given-names>D.</given-names></name><name><surname>Snyder</surname><given-names>A. Z.</given-names></name><name><surname>Raichle</surname><given-names>M. E.</given-names></name></person-group> (<year>2009</year>). <article-title>The global signal and observed anticorrelated resting state brain networks</article-title>. <source>J. Neurophysiol.</source>
+<volume>101</volume>, <fpage>3270</fpage>–<lpage>3283</lpage>. <pub-id pub-id-type="doi">10.1152/jn.90777.2008</pub-id><pub-id pub-id-type="pmid">19339462</pub-id></mixed-citation>
+      </ref>
+      <ref id="B29">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Fransson</surname><given-names>P.</given-names></name></person-group> (<year>2005</year>). <article-title>Spontaneous low-frequency BOLD signal fluctuations: an fMRI investigation of the resting-state default mode of brain function hypothesis</article-title>. <source>Hum. Brain Mapp.</source>
+<volume>26</volume>, <fpage>15</fpage>–<lpage>29</lpage>. <pub-id pub-id-type="doi">10.1002/hbm.20113</pub-id><pub-id pub-id-type="pmid">15852468</pub-id></mixed-citation>
+      </ref>
+      <ref id="B30">
+        <mixed-citation publication-type="book"><person-group person-group-type="author"><name><surname>Goodfellow</surname><given-names>I.</given-names></name><name><surname>Bengio</surname><given-names>Y.</given-names></name><name><surname>Courville</surname><given-names>A.</given-names></name></person-group> (<year>2016</year>). <source>Deep Learning</source>. <publisher-loc>Cambridge, MA</publisher-loc>: <publisher-name>MIT Press</publisher-name>.</mixed-citation>
+      </ref>
+      <ref id="B31">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Gorodkin</surname><given-names>J.</given-names></name></person-group> (<year>2004</year>). <article-title>Comparing two K-category assignments by a K-category correlation coefficient</article-title>. <source>Comput. Biol. Chem.</source>
+<volume>28</volume>, <fpage>367</fpage>–<lpage>374</lpage>. <pub-id pub-id-type="doi">10.1016/j.compbiolchem.2004.09.006</pub-id><pub-id pub-id-type="pmid">15556477</pub-id></mixed-citation>
+      </ref>
+      <ref id="B32">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Greicius</surname><given-names>M. D.</given-names></name><name><surname>Flores</surname><given-names>B. H.</given-names></name><name><surname>Menon</surname><given-names>V.</given-names></name><name><surname>Glover</surname><given-names>G. H.</given-names></name><name><surname>Solvason</surname><given-names>H. B.</given-names></name><name><surname>Kenna</surname><given-names>H.</given-names></name><etal/></person-group>. (<year>2007</year>). <article-title>Resting-state functional connectivity in major depression: abnormally increased contributions from subgenual cingulate cortex and thalamus</article-title>. <source>Biol. Psychiatry</source>
+<volume>62</volume>, <fpage>429</fpage>–<lpage>437</lpage>. <pub-id pub-id-type="doi">10.1016/j.biopsych.2006.09.020</pub-id><pub-id pub-id-type="pmid">17210143</pub-id></mixed-citation>
+      </ref>
+      <ref id="B33">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Greicius</surname><given-names>M. D.</given-names></name><name><surname>Krasnow</surname><given-names>B.</given-names></name><name><surname>Reiss</surname><given-names>A. L.</given-names></name><name><surname>Menon</surname><given-names>V.</given-names></name></person-group> (<year>2003</year>). <article-title>Functional connectivity in the resting brain: a network analysis of the default mode hypothesis</article-title>. <source>Proc. Natl. Acad. Sci. U.S.A.</source>
+<volume>100</volume>, <fpage>253</fpage>–<lpage>258</lpage>. <pub-id pub-id-type="doi">10.1073/pnas.0135058100</pub-id><pub-id pub-id-type="pmid">12506194</pub-id></mixed-citation>
+      </ref>
+      <ref id="B34">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Greicius</surname><given-names>M. D.</given-names></name><name><surname>Srivastava</surname><given-names>G.</given-names></name><name><surname>Reiss</surname><given-names>A. L.</given-names></name><name><surname>Menon</surname><given-names>V.</given-names></name></person-group> (<year>2004</year>). <article-title>Default-mode network activity distinguishes Alzheimer's disease from healthy aging: evidence from functional MRI</article-title>. <source>Proc. Natl. Acad. Sci. U.S.A.</source>
+<volume>101</volume>, <fpage>4637</fpage>–<lpage>4642</lpage>. <pub-id pub-id-type="doi">10.1073/pnas.0308627101</pub-id><pub-id pub-id-type="pmid">15070770</pub-id></mixed-citation>
+      </ref>
+      <ref id="B35">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Hamilton</surname><given-names>J. P.</given-names></name><name><surname>Chen</surname><given-names>G.</given-names></name><name><surname>Thomason</surname><given-names>M. E.</given-names></name><name><surname>Schwartz</surname><given-names>M. E.</given-names></name><name><surname>Gotlib</surname><given-names>I. H.</given-names></name></person-group> (<year>2011</year>). <article-title>Investigating neural primacy in major depressive disorder: multivariate Granger causality analysis of resting-state fMRI time-series data</article-title>. <source>Mol. Psychiatry</source>
+<volume>16</volume>, <fpage>763</fpage>–<lpage>772</lpage>. <pub-id pub-id-type="doi">10.1038/mp.2010.46</pub-id><pub-id pub-id-type="pmid">20479758</pub-id></mixed-citation>
+      </ref>
+      <ref id="B36">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Hampson</surname><given-names>M.</given-names></name><name><surname>Peterson</surname><given-names>B. S.</given-names></name><name><surname>Skudlarski</surname><given-names>P.</given-names></name><name><surname>Gatenby</surname><given-names>J. C.</given-names></name><name><surname>Gore</surname><given-names>J. C.</given-names></name></person-group> (<year>2002</year>). <article-title>Detection of functional connectivity using temporal correlations in MR images</article-title>. <source>Hum. Brain Mapp.</source>
+<volume>15</volume>, <fpage>247</fpage>–<lpage>262</lpage>. <pub-id pub-id-type="doi">10.1002/hbm.10022</pub-id><pub-id pub-id-type="pmid">11835612</pub-id></mixed-citation>
+      </ref>
+      <ref id="B37">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Handwerker</surname><given-names>D. A.</given-names></name><name><surname>Roopchansingh</surname><given-names>V.</given-names></name><name><surname>Gonzalez-Castillo</surname><given-names>J.</given-names></name><name><surname>Bandettini</surname><given-names>P. A.</given-names></name></person-group> (<year>2012</year>). <article-title>Periodic changes in fMRI connectivity</article-title>. <source>Neuroimage</source>
+<volume>63</volume>, <fpage>1712</fpage>–<lpage>1719</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2012.06.078</pub-id><pub-id pub-id-type="pmid">22796990</pub-id></mixed-citation>
+      </ref>
+      <ref id="B38">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Horwitz</surname><given-names>B.</given-names></name></person-group> (<year>2003</year>). <article-title>The elusive concept of brain connectivity</article-title>. <source>Neuroimage</source>
+<volume>19</volume>, <fpage>466</fpage>–<lpage>470</lpage>. <pub-id pub-id-type="doi">10.1016/S1053-8119(03)00112-5</pub-id><pub-id pub-id-type="pmid">12814595</pub-id></mixed-citation>
+      </ref>
+      <ref id="B39">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Husain</surname><given-names>F. T.</given-names></name></person-group> (<year>2016</year>). <article-title>Neural networks of tinnitus in humans: elucidating severity and habituation</article-title>. <source>Hear. Res.</source>
+<volume>334</volume>, <fpage>37</fpage>–<lpage>48</lpage>. <pub-id pub-id-type="doi">10.1016/j.heares.2015.09.010</pub-id><pub-id pub-id-type="pmid">26415997</pub-id></mixed-citation>
+      </ref>
+      <ref id="B40">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Hutchison</surname><given-names>R. M.</given-names></name><name><surname>Womelsdorf</surname><given-names>T.</given-names></name><name><surname>Allen</surname><given-names>E. A.</given-names></name><name><surname>Bandettini</surname><given-names>P. A.</given-names></name><name><surname>Calhoun</surname><given-names>V. D.</given-names></name><name><surname>Corbetta</surname><given-names>M.</given-names></name><etal/></person-group>. (<year>2013a</year>). <article-title>Dynamic functional connectivity: promise, issues, and interpretations</article-title>. <source>Neuroimage</source>
+<volume>80</volume>, <fpage>360</fpage>–<lpage>378</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2013.05.079</pub-id><pub-id pub-id-type="pmid">23707587</pub-id></mixed-citation>
+      </ref>
+      <ref id="B41">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Hutchison</surname><given-names>R. M.</given-names></name><name><surname>Womelsdorf</surname><given-names>T.</given-names></name><name><surname>Gati</surname><given-names>J. S.</given-names></name><name><surname>Everling</surname><given-names>S.</given-names></name><name><surname>Menon</surname><given-names>R. S.</given-names></name></person-group> (<year>2013b</year>). <article-title>Resting-state networks show dynamic functional connectivity in awake humans and anesthetized macaques</article-title>. <source>Hum. Brain Mapp.</source>
+<volume>34</volume>, <fpage>2154</fpage>–<lpage>2177</lpage>. <pub-id pub-id-type="doi">10.1002/hbm.22058</pub-id><pub-id pub-id-type="pmid">22438275</pub-id></mixed-citation>
+      </ref>
+      <ref id="B42">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Jafri</surname><given-names>M. J.</given-names></name><name><surname>Pearlson</surname><given-names>G. D.</given-names></name><name><surname>Stevens</surname><given-names>M.</given-names></name><name><surname>Calhoun</surname><given-names>V. D.</given-names></name></person-group> (<year>2008</year>). <article-title>A method for functional network connectivity among spatially independent resting-state components in schizophrenia</article-title>. <source>Neuroimage</source>
+<volume>39</volume>, <fpage>1666</fpage>–<lpage>1681</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2007.11.001</pub-id><pub-id pub-id-type="pmid">18082428</pub-id></mixed-citation>
+      </ref>
+      <ref id="B43">
+        <mixed-citation publication-type="book"><person-group person-group-type="author"><name><surname>James</surname><given-names>G.</given-names></name><name><surname>Witten</surname><given-names>D.</given-names></name><name><surname>Hastie</surname><given-names>T.</given-names></name><name><surname>Tibshirani</surname><given-names>R.</given-names></name></person-group> (<year>2013</year>). <source>An Introduction to Statistical Learning, Volume 103 of Springer Texts in Statistics</source>. <publisher-loc>New York, NY</publisher-loc>: <publisher-name>Springer New York</publisher-name>.</mixed-citation>
+      </ref>
+      <ref id="B44">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Kingma</surname><given-names>D. P.</given-names></name><name><surname>Welling</surname><given-names>M.</given-names></name></person-group> (<year>2013</year>). <article-title>Auto-encoding variational bayes</article-title>. <source>arXiv: 1312.6114</source>.</mixed-citation>
+      </ref>
+      <ref id="B45">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Kourou</surname><given-names>K.</given-names></name><name><surname>Exarchos</surname><given-names>T. P.</given-names></name><name><surname>Exarchos</surname><given-names>K. P.</given-names></name><name><surname>Karamouzis</surname><given-names>M. V.</given-names></name><name><surname>Fotiadis</surname><given-names>D. I.</given-names></name></person-group> (<year>2015</year>). <article-title>Machine learning applications in cancer prognosis and prediction</article-title>. <source>Comput. Struct. Biotechnol. J.</source>
+<volume>13</volume>, <fpage>8</fpage>–<lpage>17</lpage>. <pub-id pub-id-type="doi">10.1016/j.csbj.2014.11.005</pub-id><pub-id pub-id-type="pmid">25750696</pub-id></mixed-citation>
+      </ref>
+      <ref id="B46">
+        <mixed-citation publication-type="book"><person-group person-group-type="author"><name><surname>Krizhevsky</surname><given-names>A.</given-names></name><name><surname>Sutskever</surname><given-names>I.</given-names></name><name><surname>Hinton</surname><given-names>G. E.</given-names></name></person-group> (<year>2012</year>). <article-title>ImageNet classification with deep convolutional neural networks</article-title>, in <source>Neural Information Processing Systems</source> (<publisher-loc>Lake Tahoe</publisher-loc>), <fpage>1097</fpage>–<lpage>1105</lpage>.</mixed-citation>
+      </ref>
+      <ref id="B47">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Lanting</surname><given-names>C.</given-names></name><name><surname>Woźniak</surname><given-names>A.</given-names></name><name><surname>van Dijk</surname><given-names>P.</given-names></name><name><surname>Langers</surname><given-names>D. R.</given-names></name></person-group> (<year>2016</year>). <article-title>Tinnitus- and task-related differences in resting-state networks</article-title>. <source>Adv. Exp. Med. Biol.</source>
+<volume>894</volume>, <fpage>175</fpage>–<lpage>187</lpage>. <pub-id pub-id-type="doi">10.1007/978-3-319-25474-6_19</pub-id><pub-id pub-id-type="pmid">27080658</pub-id></mixed-citation>
+      </ref>
+      <ref id="B48">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Leaver</surname><given-names>A. M.</given-names></name><name><surname>Seydell-Greenwald</surname><given-names>A.</given-names></name><name><surname>Rauschecker</surname><given-names>J. P.</given-names></name></person-group> (<year>2016a</year>). <article-title>Auditory-limbic interactions in chronic tinnitus: challenges for neuroimaging research</article-title>. <source>Hear. Res.</source>
+<volume>334</volume>, <fpage>49</fpage>–<lpage>57</lpage>. <pub-id pub-id-type="doi">10.1016/j.heares.2015.08.005</pub-id><pub-id pub-id-type="pmid">26299843</pub-id></mixed-citation>
+      </ref>
+      <ref id="B49">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Leaver</surname><given-names>A. M.</given-names></name><name><surname>Turesky</surname><given-names>T. K.</given-names></name><name><surname>Seydell-Greenwald</surname><given-names>A.</given-names></name><name><surname>Morgan</surname><given-names>S.</given-names></name><name><surname>Kim</surname><given-names>H. J.</given-names></name><name><surname>Rauschecker</surname><given-names>J. P.</given-names></name></person-group> (<year>2016b</year>). <article-title>Intrinsic network activity in tinnitus investigated using functional MRI</article-title>. <source>Hum. Brain Mapp.</source>
+<volume>37</volume>, <fpage>2717</fpage>–<lpage>2735</lpage>. <pub-id pub-id-type="doi">10.1002/hbm.23204</pub-id><pub-id pub-id-type="pmid">27091485</pub-id></mixed-citation>
+      </ref>
+      <ref id="B50">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Maaten</surname><given-names>L. V. D.</given-names></name><name><surname>Hinton</surname><given-names>G.</given-names></name></person-group> (<year>2008</year>). <article-title>Visualizing data using t-SNE</article-title>. <source>J. Mach. Learn. Res.</source>
+<volume>9</volume>, <fpage>2579</fpage>–<lpage>2605</lpage>.</mixed-citation>
+      </ref>
+      <ref id="B51">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Majeed</surname><given-names>W.</given-names></name><name><surname>Magnuson</surname><given-names>M.</given-names></name><name><surname>Hasenkamp</surname><given-names>W.</given-names></name><name><surname>Schwarb</surname><given-names>H.</given-names></name><name><surname>Schumacher</surname><given-names>E. H.</given-names></name><name><surname>Barsalou</surname><given-names>L.</given-names></name><etal/></person-group>. (<year>2011</year>). <article-title>Spatiotemporal dynamics of low frequency BOLD fluctuations in rats and humans</article-title>. <source>Neuroimage</source>
+<volume>54</volume>, <fpage>1140</fpage>–<lpage>1150</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2010.08.030</pub-id><pub-id pub-id-type="pmid">20728554</pub-id></mixed-citation>
+      </ref>
+      <ref id="B52">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Maudoux</surname><given-names>A.</given-names></name><name><surname>Lefebvre</surname><given-names>P.</given-names></name><name><surname>Cabay</surname><given-names>J. E.</given-names></name><name><surname>Demertzi</surname><given-names>A.</given-names></name><name><surname>Vanhaudenhuyse</surname><given-names>A.</given-names></name><name><surname>Laureys</surname><given-names>S.</given-names></name><etal/></person-group>. (<year>2012</year>). <article-title>Connectivity graph analysis of the auditory resting state network in tinnitus</article-title>. <source>Brain Res.</source>
+<volume>1485</volume>, <fpage>10</fpage>–<lpage>21</lpage>. <pub-id pub-id-type="doi">10.1016/j.brainres.2012.05.006</pub-id><pub-id pub-id-type="pmid">22579727</pub-id></mixed-citation>
+      </ref>
+      <ref id="B53">
+        <mixed-citation publication-type="book"><person-group person-group-type="author"><name><surname>Meszlényi</surname><given-names>R.</given-names></name><name><surname>Peska</surname><given-names>L.</given-names></name><name><surname>Gál</surname><given-names>V.</given-names></name><name><surname>Vidnyánszky</surname><given-names>Z.</given-names></name><name><surname>Buza</surname><given-names>K.</given-names></name></person-group> (<year>2016</year>). <article-title>Classification of fMRI data using dynamic time warping based functional connectivity analysis</article-title>, in <source>European Signal Processing Conference</source> (<publisher-loc>Budapest</publisher-loc>), <fpage>245</fpage>–<lpage>249</lpage>.</mixed-citation>
+      </ref>
+      <ref id="B54">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Meszlényi</surname><given-names>R. J.</given-names></name><name><surname>Buza</surname><given-names>K.</given-names></name><name><surname>Vidnyánszky</surname><given-names>Z.</given-names></name></person-group> (<year>2017a</year>). <article-title>Resting state fMRI functional connectivity-based classification using a convolutional neural network architecture</article-title>. <source>Front. Neuroinform.</source>
+<volume>11</volume>:<fpage>61</fpage>. <pub-id pub-id-type="doi">10.3389/fninf.2017.00061</pub-id><pub-id pub-id-type="pmid">29089883</pub-id></mixed-citation>
+      </ref>
+      <ref id="B55">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Meszlényi</surname><given-names>R. J.</given-names></name><name><surname>Hermann</surname><given-names>P.</given-names></name><name><surname>Buza</surname><given-names>K.</given-names></name><name><surname>Gál</surname><given-names>V.</given-names></name><name><surname>Vidnyánszky</surname><given-names>Z.</given-names></name></person-group> (<year>2017b</year>). <article-title>Resting state fMRI functional connectivity analysis using dynamic time warping</article-title>. <source>Front. Neurosci.</source>
+<volume>11</volume>:<fpage>75</fpage>. <pub-id pub-id-type="doi">10.3389/fnins.2017.00075</pub-id><pub-id pub-id-type="pmid">28261052</pub-id></mixed-citation>
+      </ref>
+      <ref id="B56">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Mitra</surname><given-names>A.</given-names></name><name><surname>Raichle</surname><given-names>M. E.</given-names></name></person-group> (<year>2016</year>). <article-title>How networks communicate: propagation patterns in spontaneous brain activity</article-title>. <source>Philos. Trans. R. Soc. Lond. B Biol. Sci.</source>
+<volume>371</volume>:<fpage>20150546</fpage>. <pub-id pub-id-type="doi">10.1098/rstb.2015.0546</pub-id><pub-id pub-id-type="pmid">27574315</pub-id></mixed-citation>
+      </ref>
+      <ref id="B57">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Mitra</surname><given-names>A.</given-names></name><name><surname>Snyder</surname><given-names>A. Z.</given-names></name><name><surname>Blazey</surname><given-names>T.</given-names></name><name><surname>Raichle</surname><given-names>M. E.</given-names></name></person-group> (<year>2015</year>). <article-title>Lag threads organize the brain's intrinsic activity</article-title>. <source>Proc. Natl. Acad. Sci. U.S.A.</source>
+<volume>112</volume>, <fpage>E2235</fpage>–<lpage>E2244</lpage>. <pub-id pub-id-type="doi">10.1073/pnas.1503960112</pub-id><pub-id pub-id-type="pmid">25825720</pub-id></mixed-citation>
+      </ref>
+      <ref id="B58">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Mitra</surname><given-names>A.</given-names></name><name><surname>Snyder</surname><given-names>A. Z.</given-names></name><name><surname>Hacker</surname><given-names>C. D.</given-names></name><name><surname>Raichle</surname><given-names>M. E.</given-names></name></person-group> (<year>2014</year>). <article-title>Lag structure in resting-state fMRI</article-title>. <source>J. Neurophysiol.</source>
+<volume>111</volume>, <fpage>2374</fpage>–<lpage>2391</lpage>. <pub-id pub-id-type="doi">10.1152/jn.00804.2013</pub-id><pub-id pub-id-type="pmid">24598530</pub-id></mixed-citation>
+      </ref>
+      <ref id="B59">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Møller</surname><given-names>A. R.</given-names></name></person-group> (<year>2007</year>). <article-title>Tinnitus: presence and future</article-title>. <source>Prog. Brain Res.</source>
+<volume>166</volume>, <fpage>3</fpage>–<lpage>16</lpage>. <pub-id pub-id-type="doi">10.1016/S0079-6123(07)66001-4</pub-id><pub-id pub-id-type="pmid">17956767</pub-id></mixed-citation>
+      </ref>
+      <ref id="B60">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Murphy</surname><given-names>K.</given-names></name><name><surname>Birn</surname><given-names>R. M.</given-names></name><name><surname>Handwerker</surname><given-names>D. A.</given-names></name><name><surname>Jones</surname><given-names>T. B.</given-names></name><name><surname>Bandettini</surname><given-names>P. A.</given-names></name></person-group> (<year>2009</year>). <article-title>The impact of global signal regression on resting state correlations: are anti-correlated networks introduced?</article-title>
+<source>Neuroimage</source>
+<volume>44</volume>, <fpage>893</fpage>–<lpage>905</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2008.09.036</pub-id><pub-id pub-id-type="pmid">18976716</pub-id></mixed-citation>
+      </ref>
+      <ref id="B61">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Murphy</surname><given-names>K.</given-names></name><name><surname>Fox</surname><given-names>M. D.</given-names></name></person-group> (<year>2017</year>). <article-title>Towards a consensus regarding global signal regression for resting state functional connectivity MRI</article-title>. <source>Neuroimage</source>
+<volume>154</volume>, <fpage>169</fpage>–<lpage>173</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2016.11.052</pub-id><pub-id pub-id-type="pmid">27888059</pub-id></mixed-citation>
+      </ref>
+      <ref id="B62">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Obrig</surname><given-names>H.</given-names></name><name><surname>Neufang</surname><given-names>M.</given-names></name><name><surname>Wenzel</surname><given-names>R.</given-names></name><name><surname>Kohl</surname><given-names>M.</given-names></name><name><surname>Steinbrink</surname><given-names>J.</given-names></name><name><surname>Einhäupl</surname><given-names>K.</given-names></name><etal/></person-group>. (<year>2000</year>). <article-title>Spontaneous low frequency oscillations of cerebral hemodynamics and metabolism in human adults</article-title>. <source>Neuroimage</source>
+<volume>12</volume>, <fpage>623</fpage>–<lpage>639</lpage>. <pub-id pub-id-type="doi">10.1006/nimg.2000.0657</pub-id><pub-id pub-id-type="pmid">11112395</pub-id></mixed-citation>
+      </ref>
+      <ref id="B63">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Pedregosa</surname><given-names>F.</given-names></name><name><surname>Varoquaux</surname><given-names>G.</given-names></name><name><surname>Gramfort</surname><given-names>A.</given-names></name><name><surname>Michel</surname><given-names>V.</given-names></name><name><surname>Thirion</surname><given-names>B.</given-names></name><name><surname>Grisel</surname><given-names>O.</given-names></name><etal/></person-group> (<year>2011</year>). <article-title>Scikit-learn: machine learning in Python</article-title>. <source>J. Mach. Learn. Res.</source>
+<volume>12</volume>, <fpage>2825</fpage>–<lpage>2830</lpage>.</mixed-citation>
+      </ref>
+      <ref id="B64">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Raichle</surname><given-names>M. E.</given-names></name><name><surname>MacLeod</surname><given-names>A. M.</given-names></name><name><surname>Snyder</surname><given-names>A. Z.</given-names></name><name><surname>Powers</surname><given-names>W. J.</given-names></name><name><surname>Gusnard</surname><given-names>D. A.</given-names></name><name><surname>Shulman</surname><given-names>G. L.</given-names></name></person-group> (<year>2001</year>). <article-title>A default mode of brain function</article-title>. <source>Proc. Natl. Acad. Sci. U.S.A.</source>
+<volume>98</volume>, <fpage>676</fpage>–<lpage>682</lpage>. <pub-id pub-id-type="doi">10.1073/pnas.98.2.676</pub-id><pub-id pub-id-type="pmid">11209064</pub-id></mixed-citation>
+      </ref>
+      <ref id="B65">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Rauschecker</surname><given-names>J. P.</given-names></name><name><surname>Leaver</surname><given-names>A. M.</given-names></name><name><surname>Mühlau</surname><given-names>M.</given-names></name></person-group> (<year>2010</year>). <article-title>Tuning out the noise: limbic-auditory interactions in tinnitus</article-title>. <source>Neuron</source>
+<volume>66</volume>, <fpage>819</fpage>–<lpage>826</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuron.2010.04.032</pub-id><pub-id pub-id-type="pmid">20620868</pub-id></mixed-citation>
+      </ref>
+      <ref id="B66">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Rubinov</surname><given-names>M.</given-names></name><name><surname>Sporns</surname><given-names>O.</given-names></name></person-group> (<year>2010</year>). <article-title>Complex network measures of brain connectivity: uses and interpretations</article-title>. <source>Neuroimage</source>
+<volume>52</volume>, <fpage>1059</fpage>–<lpage>1069</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2009.10.003</pub-id><pub-id pub-id-type="pmid">19819337</pub-id></mixed-citation>
+      </ref>
+      <ref id="B67">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Sakoe</surname><given-names>H.</given-names></name><name><surname>Chiba</surname><given-names>S.</given-names></name></person-group> (<year>1978</year>). <article-title>Dynamic programming algorithm optimization for spoken word recognition</article-title>. <source>IEEE Trans. Acoust. Speech Signal Process.</source>
+<volume>26</volume>, <fpage>43</fpage>–<lpage>49</lpage>. <pub-id pub-id-type="doi">10.1109/TASSP.1978.1163055</pub-id></mixed-citation>
+      </ref>
+      <ref id="B68">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Schmidt</surname><given-names>S. A.</given-names></name><name><surname>Akrofi</surname><given-names>K.</given-names></name><name><surname>Carpenter-Thompson</surname><given-names>J. R.</given-names></name><name><surname>Husain</surname><given-names>F. T.</given-names></name></person-group> (<year>2013</year>). <article-title>Default mode, dorsal attention and auditory resting state networks exhibit differential functional connectivity in tinnitus and hearing loss</article-title>. <source>PLoS ONE</source>
+<volume>8</volume>:<fpage>e0076488</fpage>. <pub-id pub-id-type="doi">10.1371/journal.pone.0076488</pub-id><pub-id pub-id-type="pmid">24098513</pub-id></mixed-citation>
+      </ref>
+      <ref id="B69">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Schmidt</surname><given-names>S. A.</given-names></name><name><surname>Carpenter-Thompson</surname><given-names>J.</given-names></name><name><surname>Husain</surname><given-names>F. T.</given-names></name></person-group> (<year>2017</year>). <article-title>Connectivity of precuneus to the default mode and dorsal attention networks: a possible invariant marker of long-term tinnitus</article-title>. <source>Neuroimage Clin.</source>
+<volume>16</volume>, <fpage>196</fpage>–<lpage>204</lpage>. <pub-id pub-id-type="doi">10.1016/j.nicl.2017.07.015</pub-id><pub-id pub-id-type="pmid">28794980</pub-id></mixed-citation>
+      </ref>
+      <ref id="B70">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Shah</surname><given-names>M. N.</given-names></name><name><surname>Mitra</surname><given-names>A.</given-names></name><name><surname>Goyal</surname><given-names>M. S.</given-names></name><name><surname>Snyder</surname><given-names>A. Z.</given-names></name><name><surname>Zhang</surname><given-names>J.</given-names></name><name><surname>Shimony</surname><given-names>J. S.</given-names></name><etal/></person-group>. (<year>2018</year>). <article-title>Resting state signal latency predicts laterality in pediatric medically refractory temporal lobe epilepsy</article-title>. <source>Childs Nervous Syst.</source>
+<volume>34</volume>, <fpage>901</fpage>–<lpage>910</lpage>. <pub-id pub-id-type="doi">10.1007/s00381-018-3770-5</pub-id><pub-id pub-id-type="pmid">29511809</pub-id></mixed-citation>
+      </ref>
+      <ref id="B71">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Shahsavarani</surname><given-names>S.</given-names></name><name><surname>Khan</surname><given-names>R. A.</given-names></name><name><surname>Husain</surname><given-names>F. T.</given-names></name></person-group> (<year>2019</year>). <article-title>Tinnitus and the brain: a review of functional and anatomical magnetic resonance imaging studies</article-title>. <source>Perspect. ASHA Spec. Interest Groups</source>
+<volume>4</volume>, <fpage>896</fpage>–<lpage>909</lpage>. <pub-id pub-id-type="doi">10.1044/2019_PERS-SIG6-2019-0001</pub-id></mixed-citation>
+      </ref>
+      <ref id="B72">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Shargorodsky</surname><given-names>J.</given-names></name><name><surname>Curhan</surname><given-names>G. C.</given-names></name><name><surname>Farwell</surname><given-names>W. R.</given-names></name></person-group> (<year>2010</year>). <article-title>Prevalence and characteristics of tinnitus among US adults</article-title>. <source>Am. J. Med.</source>
+<volume>123</volume>, <fpage>711</fpage>–<lpage>718</lpage>. <pub-id pub-id-type="doi">10.1016/j.amjmed.2010.02.015</pub-id><pub-id pub-id-type="pmid">20670725</pub-id></mixed-citation>
+      </ref>
+      <ref id="B73">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Silbert</surname><given-names>L. J.</given-names></name><name><surname>Honey</surname><given-names>C. J.</given-names></name><name><surname>Simony</surname><given-names>E.</given-names></name><name><surname>Poeppel</surname><given-names>D.</given-names></name><name><surname>Hasson</surname><given-names>U.</given-names></name></person-group> (<year>2014</year>). <article-title>Coupled neural systems underlie the production and comprehension of naturalistic narrative speech</article-title>. <source>Proc. Natl. Acad. Sci. U.S.A.</source>
+<volume>111</volume>, <fpage>E4687</fpage>–<lpage>E4696</lpage>. <pub-id pub-id-type="doi">10.1073/pnas.1323812111</pub-id><pub-id pub-id-type="pmid">25267658</pub-id></mixed-citation>
+      </ref>
+      <ref id="B74">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Tan</surname><given-names>A. C.</given-names></name><name><surname>Gilbert</surname><given-names>D.</given-names></name></person-group> (<year>2003</year>). <article-title>Ensemble machine learning on gene expression data for cancer classification</article-title>. <source>Appl. Bioinform.</source>
+<volume>2</volume>, <fpage>S75</fpage>–<lpage>S83</lpage>. <pub-id pub-id-type="pmid">15130820</pub-id></mixed-citation>
+      </ref>
+      <ref id="B75">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Tenenbaum</surname><given-names>J. B.</given-names></name><name><surname>de Silva</surname><given-names>V.</given-names></name><name><surname>Langford</surname><given-names>J. C.</given-names></name></person-group> (<year>2000</year>). <article-title>A global geometric framework for nonlinear dimensionality reduction</article-title>. <source>Science</source>
+<volume>290</volume>, <fpage>2319</fpage>–<lpage>2323</lpage>. <pub-id pub-id-type="doi">10.1126/science.290.5500.2319</pub-id><pub-id pub-id-type="pmid">11125149</pub-id></mixed-citation>
+      </ref>
+      <ref id="B76">
+        <mixed-citation publication-type="book"><person-group person-group-type="author"><name><surname>Theodoridis</surname><given-names>S.</given-names></name><name><surname>Koutroumbas</surname><given-names>K.</given-names></name></person-group> (<year>2009</year>). <source>Pattern Recognition</source>. <publisher-loc>Oxford, UK</publisher-loc>: <publisher-name>Elsevier</publisher-name>.</mixed-citation>
+      </ref>
+      <ref id="B77">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Vincent</surname><given-names>J. L.</given-names></name><name><surname>Snyder</surname><given-names>A. Z.</given-names></name><name><surname>Fox</surname><given-names>M. D.</given-names></name><name><surname>Shannon</surname><given-names>B. J.</given-names></name><name><surname>Andrews</surname><given-names>J. R.</given-names></name><name><surname>Raichle</surname><given-names>M. E.</given-names></name><etal/></person-group>. (<year>2006</year>). <article-title>Coherent spontaneous activity identifies a hippocampal-parietal memory network</article-title>. <source>J. Neurophysiol.</source>
+<volume>96</volume>, <fpage>3517</fpage>–<lpage>3531</lpage>. <pub-id pub-id-type="doi">10.1152/jn.00048.2006</pub-id><pub-id pub-id-type="pmid">16899645</pub-id></mixed-citation>
+      </ref>
+      <ref id="B78">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Xiong</surname><given-names>J.</given-names></name><name><surname>Parsons</surname><given-names>L. M.</given-names></name><name><surname>Gao</surname><given-names>J. H.</given-names></name><name><surname>Fox</surname><given-names>P. T.</given-names></name></person-group> (<year>1999</year>). <article-title>Interregional connectivity to primary motor cortex revealed using MRI resting state images</article-title>. <source>Hum. Brain Mapp.</source>
+<volume>8</volume>, <fpage>151</fpage>–<lpage>156</lpage>. <pub-id pub-id-type="pmid">10524607</pub-id></mixed-citation>
+      </ref>
+      <ref id="B79">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Yu</surname><given-names>L.</given-names></name><name><surname>De Mazancourt</surname><given-names>M.</given-names></name><name><surname>Hess</surname><given-names>A.</given-names></name><name><surname>Ashadi</surname><given-names>F. R.</given-names></name><name><surname>Klein</surname><given-names>I.</given-names></name><name><surname>Mal</surname><given-names>H.</given-names></name><etal/></person-group>. (<year>2016</year>). <article-title>Functional connectivity and information flow of the respiratory neural network in chronic obstructive pulmonary disease</article-title>. <source>Hum. Brain Mapp.</source>
+<volume>37</volume>, <fpage>2736</fpage>–<lpage>2754</lpage>. <pub-id pub-id-type="doi">10.1002/hbm.23205</pub-id><pub-id pub-id-type="pmid">27059277</pub-id></mixed-citation>
+      </ref>
+      <ref id="B80">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zhou</surname><given-names>Y.</given-names></name><name><surname>Liang</surname><given-names>M.</given-names></name><name><surname>Jiang</surname><given-names>T.</given-names></name><name><surname>Tian</surname><given-names>L.</given-names></name><name><surname>Liu</surname><given-names>Y.</given-names></name><name><surname>Liu</surname><given-names>Z.</given-names></name><etal/></person-group>. (<year>2007</year>). <article-title>Functional dysconnectivity of the dorsolateral prefrontal cortex in first-episode schizophrenia using resting-state fMRI</article-title>. <source>Neurosci. Lett.</source>
+<volume>417</volume>, <fpage>297</fpage>–<lpage>302</lpage>. <pub-id pub-id-type="doi">10.1016/j.neulet.2007.02.081</pub-id><pub-id pub-id-type="pmid">17399900</pub-id></mixed-citation>
+      </ref>
+      <ref id="B81">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zimmerman</surname><given-names>B. J.</given-names></name><name><surname>Abraham</surname><given-names>I.</given-names></name><name><surname>Schmidt</surname><given-names>S. A.</given-names></name><name><surname>Baryshnikov</surname><given-names>Y.</given-names></name><name><surname>Husain</surname><given-names>F. T.</given-names></name></person-group> (<year>2018</year>). <article-title>Dissociating tinnitus patients from healthy controls using resting-state cyclicity analysis and clustering</article-title>. <source>Network Neurosci.</source>
+<volume>3</volume>, <fpage>67</fpage>–<lpage>89</lpage>. <pub-id pub-id-type="doi">10.1162/netn_a_00053</pub-id><pub-id pub-id-type="pmid">30793074</pub-id></mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

@@ -1,0 +1,879 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.3" xml:lang="en" article-type="research-article">
+  <?properties open_access?>
+  <processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats">
+    <restricted-by>pmc</restricted-by>
+  </processing-meta>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">Front Integr Neurosci</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Front Integr Neurosci</journal-id>
+      <journal-id journal-id-type="publisher-id">Front. Integr. Neurosci.</journal-id>
+      <journal-title-group>
+        <journal-title>Frontiers in Integrative Neuroscience</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1662-5145</issn>
+      <publisher>
+        <publisher-name>Frontiers Media S.A.</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">36743477</article-id>
+      <article-id pub-id-type="pmc">9892631</article-id>
+      <article-id pub-id-type="doi">10.3389/fnint.2022.922577</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Neuroscience</subject>
+          <subj-group>
+            <subject>Original Research</subject>
+          </subj-group>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Alteration of resting-state network dynamics in autism spectrum disorder based on leading eigenvector dynamics analysis</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Wang</surname>
+            <given-names>Chaoyan</given-names>
+          </name>
+          <xref rid="aff1" ref-type="aff">
+<sup>1</sup>
+</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Yang</surname>
+            <given-names>Lu</given-names>
+          </name>
+          <xref rid="aff1" ref-type="aff">
+<sup>1</sup>
+</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Lin</surname>
+            <given-names>Yanan</given-names>
+          </name>
+          <xref rid="aff1" ref-type="aff">
+<sup>1</sup>
+</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Wang</surname>
+            <given-names>Caihong</given-names>
+          </name>
+          <xref rid="aff1" ref-type="aff">
+<sup>1</sup>
+</xref>
+          <uri xlink:href="http://loop.frontiersin.org/people/1445880/overview"/>
+        </contrib>
+        <contrib contrib-type="author" corresp="yes">
+          <name>
+            <surname>Tian</surname>
+            <given-names>Peichao</given-names>
+          </name>
+          <xref rid="aff2" ref-type="aff">
+<sup>2</sup>
+</xref>
+          <xref rid="c001" ref-type="corresp">
+<sup>*</sup>
+</xref>
+          <uri xlink:href="http://loop.frontiersin.org/people/1770926/overview"/>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1"><sup>1</sup><institution>Department of Interventional Radiology, The First Affiliated Hospital of Zhengzhou University</institution>, <addr-line>Zhengzhou</addr-line>, <country>China</country></aff>
+      <aff id="aff2"><sup>2</sup><institution>Department of Pediatrics, The First Affiliated Hospital of Zhengzhou University</institution>, <addr-line>Zhengzhou</addr-line>, <country>China</country></aff>
+      <author-notes>
+        <fn fn-type="edited-by">
+          <p>Edited by: Amir Shmuel, McGill University, Canada</p>
+        </fn>
+        <fn fn-type="edited-by">
+          <p>Reviewed by: Joana Cabral, University of Minho, Portugal; Hongwei Wen, Southwest University, China</p>
+        </fn>
+        <corresp id="c001">*Correspondence: Peichao Tian, <email>Tpc116677@126.com</email></corresp>
+      </author-notes>
+      <pub-date pub-type="epub">
+        <day>19</day>
+        <month>1</month>
+        <year>2023</year>
+      </pub-date>
+      <pub-date pub-type="collection">
+        <year>2022</year>
+      </pub-date>
+      <volume>16</volume>
+      <elocation-id>922577</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>18</day>
+          <month>4</month>
+          <year>2022</year>
+        </date>
+        <date date-type="accepted">
+          <day>23</day>
+          <month>12</month>
+          <year>2022</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Copyright © 2023 Wang, Yang, Lin, Wang and Tian.</copyright-statement>
+        <copyright-year>2023</copyright-year>
+        <copyright-holder>Wang, Yang, Lin, Wang and Tian</copyright-holder>
+        <license>
+          <ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref>
+          <license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY). The use, distribution or reproduction in other forums is permitted, provided the original author(s) and the copyright owner(s) are credited and that the original publication in this journal is cited, in accordance with accepted academic practice. No use, distribution or reproduction is permitted which does not comply with these terms.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <sec>
+          <title>Background</title>
+          <p>Neurobiological models to explain the vulnerability of autism spectrum disorders (ASDs) are scarce, and previous resting-state functional magnetic resonance imaging (rs-fMRI) studies mostly examined static functional connectivity (FC). Given that FC constantly evolves, it is critical to probe FC dynamic differences in ASD patients.</p>
+        </sec>
+        <sec>
+          <title>Methods</title>
+          <p>We characterized recurring phase-locking (PL) states during rest in 45 ASD patients and 47 age- and sex-matched healthy controls (HCs) using Leading Eigenvector Dynamics Analysis (LEiDA) and probed the organization of PL states across different fine grain sizes.</p>
+        </sec>
+        <sec>
+          <title>Results</title>
+          <p>Our results identified five different groups of discrete resting-state functional networks, which can be defined as recurrent PL state overtimes. Specifically, ASD patients showed an increased probability of three PL states, consisting of the visual network (VIS), frontoparietal control network (FPN), default mode network (DMN), and ventral attention network (VAN). Correspondingly, ASD patients also showed a decreased probability of two PL states, consisting of the subcortical network (SUB), somatomotor network (SMN), FPN, and VAN.</p>
+        </sec>
+        <sec>
+          <title>Conclusion</title>
+          <p>Our findings suggested that the temporal reorganization of brain discrete networks was closely linked to sensory to cognitive systems of the brain. Our study provides new insights into the dynamics of brain networks and contributes to a deeper understanding of the neurological mechanisms of ASD.</p>
+        </sec>
+      </abstract>
+      <kwd-group>
+        <kwd>autism spectrum disorder (ASD)</kwd>
+        <kwd>leading eigenvector dynamics analysis (LEiDA)</kwd>
+        <kwd>phase-locking (PL) states</kwd>
+        <kwd>frontoparietal control network</kwd>
+        <kwd>occurring probability</kwd>
+      </kwd-group>
+      <funding-group>
+        <funding-statement>This study was supported in part by the Henan Province Medical Science and Technology Co-construction Project under Grant 2018020117.</funding-statement>
+      </funding-group>
+      <counts>
+        <fig-count count="5"/>
+        <table-count count="1"/>
+        <equation-count count="1"/>
+        <ref-count count="69"/>
+        <page-count count="11"/>
+        <word-count count="7599"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec sec-type="intro" id="S1">
+      <title>1. Introduction</title>
+      <p>Autism spectrum disorder (ASD) is a collection of neurodevelopmental disorders marked by a lack of social communication, repetitive behaviors, or interests (<xref rid="B3" ref-type="bibr">American Psychiatric Association, 2013</xref>; <xref rid="B55" ref-type="bibr">Saqr et al., 2017</xref>; <xref rid="B36" ref-type="bibr">Li et al., 2020</xref>). In recent decades, the global prevalence of ASD in children and adolescents has climbed to 0.7–1.5% (<xref rid="B43" ref-type="bibr">Morales-Hidalgo et al., 2018</xref>). As a result, a better understanding of the biological origins of many illnesses is a top research focus. Studies of brain network connectivity in ASDs have received much attention in the last decade due to a growing recognition that symptomatology cannot be described just by isolated brain defects (<xref rid="B18" ref-type="bibr">Dinstein et al., 2011</xref>; <xref rid="B17" ref-type="bibr">Di Martino et al., 2013</xref>, <xref rid="B16" ref-type="bibr">2017</xref>; <xref rid="B44" ref-type="bibr">Müller and Fishman, 2018</xref>). Benefiting from the advancement of neuroimaging, extensive evidence has suggested that ASD is linked to abnormal responses in specific brain areas, significant alterations in functional brain networks, and disruptions in neural synchronization among brain areas (<xref rid="B6" ref-type="bibr">Belmonte, 2004</xref>; <xref rid="B69" ref-type="bibr">Zhan et al., 2014</xref>; <xref rid="B9" ref-type="bibr">Cerliani et al., 2015</xref>; <xref rid="B24" ref-type="bibr">Guo et al., 2020</xref>). In particular, the underconnectivity hypothesis based on many studies of resting-state functional magnetic resonance imaging (rs-fMRI) proposed that intraregional functional connectivities (FCs) are reduced between the default mode network (DMN) and sensory processing network (<xref rid="B30" ref-type="bibr">Just, 2004</xref>; <xref rid="B11" ref-type="bibr">Damarla et al., 2010</xref>; <xref rid="B10" ref-type="bibr">Chen et al., 2017</xref>; <xref rid="B20" ref-type="bibr">Duan et al., 2017</xref>). For example, FCs between the DMN [including the medial prefrontal cortex (mPFC), posterior cingulate cortex (PCC), and precuneus] and the temporal lobe or pallidum gyrus were significantly reduced (<xref rid="B68" ref-type="bibr">Yerys et al., 2015</xref>). Other studies of rs-fMRI also showed similar results of reduced FCs between the mPFC and primary motor and sensory cortices (<xref rid="B29" ref-type="bibr">Jung et al., 2019</xref>), even the insula temporoparietal junction, and amygdala (<xref rid="B60" ref-type="bibr">von dem Hagen et al., 2012</xref>). However, other studies found overconnectivity between brain regions and even a mixture of underconnectivity and overconnectivity in ASD (<xref rid="B33" ref-type="bibr">Keown et al., 2013</xref>, <xref rid="B32" ref-type="bibr">2017</xref>; <xref rid="B57" ref-type="bibr">Supekar et al., 2013</xref>; <xref rid="B9" ref-type="bibr">Cerliani et al., 2015</xref>). Although the underconnectivity or overconnectivity patterns are debatable, FC provides potential new insights to explore the underlying neurological mechanisms for ASD.</p>
+      <p>The majority of earlier research relied on static functional connectivity (FC) approaches, which assume that FC patterns are consistent across time (<xref rid="B1" ref-type="bibr">Allen et al., 2012</xref>; <xref rid="B61" ref-type="bibr">Wang et al., 2020</xref>). Theoretical models and empirical evidence, however, show that the dynamic changes in the human brain connectome are linked to continuing rhythmic activity. Recently, researchers have shown more interest in dynamic FC studies and have developed many methods to obtain the profound indicators of dynamic FC (<xref rid="B49" ref-type="bibr">Preti et al., 2017</xref>; <xref rid="B19" ref-type="bibr">Du et al., 2018</xref>; <xref rid="B61" ref-type="bibr">Wang et al., 2020</xref>). Dynamic FC is defined as the time-dependent correlation among brain regions, which has been applied to explore the dynamics of the brain network. Compared to static FC, dynamical FC achieved a better prediction of behavior for the typically developing population (<xref rid="B10" ref-type="bibr">Chen et al., 2017</xref>; <xref rid="B36" ref-type="bibr">Li et al., 2020</xref>). A recent study also showed that classification based on dynamic connectivity features has significantly higher predictive accuracy in schizophrenia and bipolar disorder (<xref rid="B51" ref-type="bibr">Rashid et al., 2016</xref>). Therefore, dynamic FC can capture the underlying dynamic nature of FC alterations and has become a frontier for the exploration of neurological mechanisms in psychiatric disorders. A previous study of dynamic FC found that the mean dwell time of states was significantly different between ASD and developing population groups (<xref rid="B67" ref-type="bibr">Yao et al., 2016</xref>). A previous study on the diagnosis prediction of ASD also confirmed that dynamic features, as well as spatiotemporal coherence, can provide more useful information for ASD diagnosis (<xref rid="B63" ref-type="bibr">Wee et al., 2016</xref>). In addition, the latest study found that increased variance in dynamic FC was related to ASD symptom severity and suggested that the use of traditional static FC may contribute to the inconsistency of ASD reports (<xref rid="B10" ref-type="bibr">Chen et al., 2017</xref>). Nevertheless, it is unclear how dynamics help explain these inconsistent findings.</p>
+      <p>Although analysis based on the sliding-window approach is most commonly used to probe the alteration of dynamical FC in psychiatric disorders (<xref rid="B54" ref-type="bibr">Sakoğlu et al., 2010</xref>), the window size challenges its validity and determines the temporal resolution of dynamic FC patterns (<xref rid="B56" ref-type="bibr">Shine et al., 2015</xref>; <xref rid="B28" ref-type="bibr">Hindriks et al., 2016</xref>; <xref rid="B12" ref-type="bibr">Deco et al., 2017</xref>). Recently, many methodological approaches have been developed to analyze blood oxygenation level-dependent (BOLD) connectivity dynamics of brain activity at a high temporal resolution, such as coactivation patterns (<xref rid="B58" ref-type="bibr">Tagliazucchi et al., 2012</xref>; <xref rid="B38" ref-type="bibr">Liu and Duyn, 2013</xref>; <xref rid="B31" ref-type="bibr">Karahanoğlu and van de Ville, 2015</xref>) or phase coherence patterns (<xref rid="B23" ref-type="bibr">Glerean et al., 2012</xref>; <xref rid="B27" ref-type="bibr">Hellyer et al., 2015</xref>; <xref rid="B7" ref-type="bibr">Cabral et al., 2017</xref>). In particular, the coactivation approaches or their variant forms are only sensitive to simultaneity in the data. Phase coherence techniques can capture temporally delayed relationships and are more sensitive to capturing the ultraslow oscillatory processes governing the formation of resting-state networks (RSNs), which has been confirmed in recent experimental and computational studies (<xref rid="B14" ref-type="bibr">Deco et al., 2009</xref>; <xref rid="B47" ref-type="bibr">Ponce-Alvarez et al., 2015</xref>; <xref rid="B15" ref-type="bibr">Deco and Kringelbach, 2016</xref>; <xref rid="B53" ref-type="bibr">Roberts et al., 2019</xref>). Therefore, the best way to characterize dynamic FC remains under debate (<xref rid="B40" ref-type="bibr">Lord et al., 2019</xref>). In our study, we used a recently developed data-driven approach named Leading Eigenvector Dynamics Analysis (LEiDA). LEiDA can reduce dimensionality by considering only the relative phase of BOLD signals and capturing the instantaneous phase-locking (PL) patterns (<xref rid="B7" ref-type="bibr">Cabral et al., 2017</xref>; <xref rid="B22" ref-type="bibr">Figueroa et al., 2019</xref>). The recurrent FC states, also called PL states, can be identified from resting-state time series by operating the LEiDA approach in the temporal domain. The PL states can be characterized by global dynamical statistics (i.e., probabilities of occurrence and duration) and transition profiles on a subject-by-subject level. A previous study indicated that the dynamic properties of recurrent FC states are related to cognitive performance in healthy participants (<xref rid="B7" ref-type="bibr">Cabral et al., 2017</xref>). Meanwhile, the PL patterns obtained from the LEiDA approach have shown particular sensitivity to alterations in psychiatric symptoms, such as schizophrenia (<xref rid="B21" ref-type="bibr">Farinha et al., 2022</xref>) and major depressive disorders (<xref rid="B22" ref-type="bibr">Figueroa et al., 2019</xref>; <xref rid="B2" ref-type="bibr">Alonso Martínez et al., 2020</xref>; <xref rid="B62" ref-type="bibr">Wang et al., 2022</xref>). However, the recurrent PL patterns identified by LEiDA in ASD have not yet been qualitatively probed. In the current work, we used the LEiDA method to identify recurrent BOLD PL states and even to investigate whether there are specific configurations of PL states that differentiate between ASD and controls.</p>
+    </sec>
+    <sec sec-type="materials|methods" id="S2">
+      <title>2. Materials and methods</title>
+      <sec id="S2.SS1">
+        <title>2.1. Participants</title>
+        <p>Resting-state fMRI data in our study were obtained from the NYU Langone Medical Center, which was included in the Autism Brain Imaging Data Exchange (ABIDE) database.<sup><xref rid="footnote1" ref-type="fn">1</xref></sup> NYU is the largest sample size of individuals who fulfilled the following inclusion criteria: (1) age up to 18 years; (2) predominantly right-handed (Edinburgh Handedness Inventory score &gt;0); (3) estimated full-scale intelligence quotient (IQ) score &gt;80 per the four-subtest Wechsler Abbreviated Scale of Intelligence (WASI), and (4) mean framewise displacement (FD) &lt;0.2 mm. Therefore, a total of 45 individuals with high-functioning ASD and 47 healthy controls (HCs) met the inclusion criteria. The demographic and clinical characteristics of all subjects are shown in <xref rid="T1" ref-type="table">Table 1</xref>.</p>
+        <table-wrap position="float" id="T1">
+          <label>TABLE 1</label>
+          <caption>
+            <p>Demographics of participants.</p>
+          </caption>
+          <table frame="box" rules="all" cellspacing="5" cellpadding="5">
+            <thead>
+              <tr>
+                <td valign="top" align="left" style="color:#ffffff;background-color: #7f8080;" rowspan="1" colspan="1"/>
+                <td valign="top" align="center" style="color:#ffffff;background-color: #7f8080;" rowspan="1" colspan="1">ASD (<italic>n</italic> = 47)</td>
+                <td valign="top" align="center" style="color:#ffffff;background-color: #7f8080;" rowspan="1" colspan="1">HC (<italic>n</italic> = 45)</td>
+                <td valign="top" align="center" style="color:#ffffff;background-color: #7f8080;" rowspan="1" colspan="1">Group comparisons (<italic>p</italic>-value)</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">
+<bold>Sex (M/F)</bold>
+</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">40/7</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">36/9</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.300<xref rid="t1fna" ref-type="table-fn"><sup>a</sup></xref></td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">
+<bold>Age</bold>
+</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">11.02 ± 2.28</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">11.02 ± 2.27</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.987<xref rid="t1fnb" ref-type="table-fn"><sup>b</sup></xref></td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">
+<bold>Full scale IQ</bold>
+</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">107.17 ± 17.34</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">113.32 ± 14.11</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.072<xref rid="t1fnb" ref-type="table-fn"><sup>b</sup></xref></td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" colspan="4" style="background-color: #dcdcdc;" rowspan="1">
+<bold>ADI-R</bold>
+</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Social score</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">18 ± 7.25</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Communication score</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">15.09 ± 5.16</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">RRB score</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">5.74 ± 3.10</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" colspan="4" style="background-color: #dcdcdc;" rowspan="1">
+<bold>ADOS</bold>
+</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Total score</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">11.25 ± 4.22</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Social score</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">9.25 ± 4.13</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Communication score</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">3.54 ± 1.54</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">RRB score</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">3.25 ± 1.54</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <fn>
+              <p>ADI-R, autism diagnostic interview-revised; ADOS, autism diagnostic observation schedule; RRB, restricted and repetitive behaviors.</p>
+            </fn>
+            <fn id="t1fna">
+              <p><sup>a</sup>Chi-square test.</p>
+            </fn>
+            <fn id="t1fnb">
+              <p><sup>b</sup>Two-sample <italic>t</italic>-test.</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+      </sec>
+      <sec id="S2.SS2">
+        <title>2.2. Image acquisition and pre-processing</title>
+        <p>Magnetic resonance imaging data of all subjects were acquired using a 3 Tesla Siemens Allegra scanner. Details regarding acquisition parameters are provided on the ABIDE website.<sup><xref rid="footnote2" ref-type="fn">2</xref></sup> In brief, rs-fMRI data were acquired using an echo planner imaging (EPI) sequence sensitive to BOLD contrast with the scan parameters repetition time (TR) = 2000 ms, echo time (TE) = 33 ms, flip angle (FA) = 90°, matrix = 30 × 80 × 80, and voxel size = 3 mm × 3 mm × 4 mm, and each scanning session lasted for 6 min. In addition, a high-resolution three-dimensional T1-weighted image was also scanned for anatomic reference.</p>
+        <p>We adopted the standard pipeline for pre-processing of fMRI data using the Data Processing and Analysis for Brain Imaging toolbox (DPABI)<sup><xref rid="footnote3" ref-type="fn">3</xref></sup> (<xref rid="B65" ref-type="bibr">Yan et al., 2016</xref>). The pre-processing steps were performed as described in a previous study (<xref rid="B10" ref-type="bibr">Chen et al., 2017</xref>). In brief, the main steps included the following: (1) removing the first 10 time points; (2) slice timing correction; (3) head motion correction, importantly, subjects with high levels of head motion were excluded (maximum motion &gt;2 mm or 2° rotation or mean FD &gt;0.2 mm) (<xref rid="B48" ref-type="bibr">Power et al., 2012</xref>; <xref rid="B66" ref-type="bibr">Yang et al., 2014</xref>); (4) regressing out nuisance covariates, which included signals from white matter (WM) and cerebrospinal fluid (CSF), as well as 24 rigid body motion parameters; (5) normalization to Montreal Neurological Institute (MNI) standard space at 3-mm isotropic voxel resolution by diffeomorphic Anatomical Registration Through Exponentiated Lie Algebra (DARTEL); (6) spatial smoothing with a Gaussian kernel (full width at half maximum (FWHM) = 6 mm); (7) bandpass filtering (0.01–0.08 Hz); and (8) extracting the averaged rs-fMRI time courses in 90 brain regions based on the automated anatomical labeling (AAL) template.</p>
+      </sec>
+      <sec id="S2.SS3">
+        <title>2.3. Leading eigenvector dynamics analysis (LEiDA)</title>
+        <p>In our study, a novel framework called LEiDA was adopted to identify the BOLD PL states as a stochastic subdivision of regular and persistent brain states (<xref rid="B7" ref-type="bibr">Cabral et al., 2017</xref>). LEiDA could calculate the leading eigenvector of the BOLD phase-coherence matrices over time to capture the connectivity patterns, which is a data-driven method. Previous evidence has suggested that the LEiDA framework is highly flexible, robust, and precise (<xref rid="B23" ref-type="bibr">Glerean et al., 2012</xref>; <xref rid="B47" ref-type="bibr">Ponce-Alvarez et al., 2015</xref>; <xref rid="B7" ref-type="bibr">Cabral et al., 2017</xref>), allowing for recurrent states that were detected and characterized in resting state and task conditions in the healthy brain. It can also distinguish the abnormal brain states in psychiatric diseases, such as schizophrenia (<xref rid="B21" ref-type="bibr">Farinha et al., 2022</xref>), major depressive disorders (<xref rid="B22" ref-type="bibr">Figueroa et al., 2019</xref>; <xref rid="B2" ref-type="bibr">Alonso Martínez et al., 2020</xref>; <xref rid="B62" ref-type="bibr">Wang et al., 2022</xref>), and trait self-reflectiveness (<xref rid="B34" ref-type="bibr">Larabi et al., 2020</xref>), and the alteration of brain states in psilocybin (<xref rid="B40" ref-type="bibr">Lord et al., 2019</xref>) and sleep (<xref rid="B13" ref-type="bibr">Deco et al., 2019</xref>). The fundamental framework of LEiDA is shown in <xref rid="F1" ref-type="fig">Figure 1</xref>, and the detailed steps are mentioned later.</p>
+        <fig position="float" id="F1">
+          <label>FIGURE 1</label>
+          <caption>
+            <p>Schematic illustration of LEiDA. <bold>(A)</bold> BOLD signals based on the AAL template. <bold>(B)</bold> The phase coherence of BOLD signals and the corresponding leading eigenvector at <italic>t</italic> = 40 and 120 (TR). <bold>(C)</bold> A network in cortical space for each PL state.</p>
+          </caption>
+          <graphic xlink:href="fnint-16-922577-g001" position="float"/>
+        </fig>
+        <p>First, the PL matrix at each time point was calculated to capture the amount of interregional BOLD signal synchrony at any given time point for each subject (including 45 ASD and 47 HCs). Specifically, the BOLD time series of each brain region was subsequently Hilbert-transformed to yield the phase evolution of the BOLD time course of this brain region. The phase coherence between each pair of brain regions at a given time was then estimated through the cosine of the phase difference using Equation (1):</p>
+        <disp-formula id="S2.E1">
+<label>(1)</label>
+<mml:math id="M1" overflow="scroll"><mml:mrow><mml:mi>d</mml:mi><mml:mi>P</mml:mi><mml:mi>L</mml:mi><mml:mo stretchy="false">(</mml:mo><mml:mi>i</mml:mi><mml:mo>,</mml:mo><mml:mi>j</mml:mi><mml:mo>,</mml:mo><mml:mi>t</mml:mi><mml:mo stretchy="false">)</mml:mo><mml:mo>=</mml:mo><mml:mi>cos</mml:mi><mml:mo stretchy="false">(</mml:mo><mml:mo>θ</mml:mo><mml:mo stretchy="false">(</mml:mo><mml:mi>i</mml:mi><mml:mo>,</mml:mo><mml:mi>t</mml:mi><mml:mo stretchy="false">)</mml:mo><mml:mo>−</mml:mo><mml:mo>θ</mml:mo><mml:mo stretchy="false">(</mml:mo><mml:mi>j</mml:mi><mml:mo>,</mml:mo><mml:mi>t</mml:mi><mml:mo stretchy="false">)</mml:mo><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:math>
+</disp-formula>
+        <p>where θ(<italic>i</italic>,<italic>t</italic>) and θ(<italic>j</italic>,<italic>t</italic>) are the time-varying phases of the BOLD signal in the <italic>i</italic> region and <italic>j</italic>region at a given time <italic>t</italic> and are computed using the Hibert transform of the BOLD regional timecourse. Based on the cosine of the phase difference, two brain regions with temporarily aligned BOLD signals (i.e., with a similar phase) at a given time point will have a PL value close to 1, two regions with orthogonally developing BOLD signals will have zero PL values, and two regions with 180° phase differences will have PL values equal to −1. The PL matrix at each time point is undirected and symmetric, with values ranging between −1 and 1. Then, the leading eigenvector of the PL matrix at each time point was calculated to reduce the dimensionality of the PL matrix. The leading eigenvector captures the main orientation of BOLD phases over all brain regions, and each value of the leading eigenvector represents the projection of the BOLD phase in each brain region into the leading eigenvector. The sign of elements can be used to divide the brain area into two communities, and the magnitude of elements indicates the contribution of their communities. Upon computing the leading eigenvector of the PL matrix for each time point of each subject, we used the k-means clustering algorithm to identify the recurrent PL patterns for ASD and HCs. Notably, we aimed to explore whether there are specific and robust PL states with abnormal dynamical characteristics for ASD. The number of clusters (k) is a free parameter, and a higher k reveals a rare and more fine-grained network configuration. The optimal number of PL states is not a consensus. Therefore, to verify the robustness of the abnormal PL state configuration in our study, the number of clusters varies over a wide range from 3 to 20. For each k, how each PL state was significantly altered between ASDs and HCs was examined.</p>
+      </sec>
+      <sec id="S2.SS4">
+        <title>2.4. Statistical analysis</title>
+        <p>Based on the PL states identified by LEiDA, the probability of occurrence of each PL state for each subject and each k was assessed. In particular, the probability of occurrence, also called fractional occupancy, is the ratio of the number of epochs assigned to a given PL state divided by the total number of epochs (TRs). Then, the occurrence probability of each PL state was compared between the subjects with ASD and HCs using non-parametric permutation-based <italic>t</italic>-tests with 5000 permutations and Bonferroni’s correction. Finally, to evaluate the consistency of PL states with significantly alternated fractional occupancy, we calculated Pearson’s correlation between centroid vectors of PL states.</p>
+      </sec>
+    </sec>
+    <sec sec-type="results" id="S3">
+      <title>3. Results</title>
+      <sec id="S3.SS1">
+        <title>3.1. Significant alteration of PL states identified in ASD</title>
+        <p>The repertoire of the PL state identified from the BOLD that time series depends on the number of clusters. In general, a higher number of clusters can result in more fine-grained and less frequent brain networks. Importantly, the main purpose of our study was not to determine the optimal number of FC states but instead to probe the robust FC configurations that significantly and consistently differentiate ASD from HCs. Therefore, we calculated and compared the occurrence probability of each FC state for each clustering model in patients with ASD and HCs. As shown in <xref rid="F2" ref-type="fig">Figure 2</xref>, we found that of the 18-partition model considered (with k ranging from 3 to 20), 16 solutions revealed the identified PL states that occurred during the temporal organization in subjects with ASD (<xref rid="F2" ref-type="fig">Figure 2</xref>). Specifically, compared to controls, the occurrence probabilities of the PL state Sk (<italic>k</italic> = 3 to 18) were significantly decreased in subjects with ASD from <italic>k</italic> = 3 (S2: <italic>p</italic> = 0.007), 5 (S4: <italic>p</italic> = 0.001), 11 (S8: <italic>p</italic> = 4.27 × 10<sup>–3</sup>), 14 (S1: <italic>p</italic> = 3.57 × 10<sup>–3</sup>; S2: <italic>p</italic> = 3.35 × 10<sup>–3</sup>), 19 (S17: <italic>p</italic> = 2.63 × 10<sup>–4</sup>), and 20 (S18: <italic>p</italic> = 5.51 × 10<sup>–4</sup>). Correspondingly, our study also identified PL states with increased occurrence probabilities for <italic>k</italic> = 6 (S5: <italic>p</italic> = 3.3 × 10<sup>–3</sup>), 7 (S7: <italic>p</italic> = 4.57 × 10<sup>–3</sup>), 8 (S5: <italic>p</italic> = 6.25 × 10<sup>–3</sup>), 10 (S2: <italic>p</italic> = 1.5 × 10<sup>–3</sup>; S4: <italic>p</italic> = 6.01 × 10<sup>–4</sup>), 11 (S3: <italic>p</italic> = 8.18 × 10<sup>–4</sup>; S4: <italic>p</italic> = 1.45 × 10<sup>–3</sup>), 12 (S1: <italic>p</italic> = 3.25 × 10<sup>–3</sup>; S2: <italic>p</italic> = 3.92 × 10<sup>–3</sup>; S1: <italic>p</italic> = 1.92 × 10<sup>–3</sup>), 13 (S2: <italic>p</italic> = 3.08 × 10<sup>–4</sup>), 14 (S4: <italic>p</italic> = 5.11 × 10<sup>–4</sup>), 15 (S5: <italic>p</italic> = 8.64 × 10<sup>–4</sup>, 16 (S6: <italic>p</italic> = 3.13 × 10<sup>–3</sup>; S6: <italic>p</italic> = 6.25 × 10<sup>–4</sup>), 17 (S9: <italic>p</italic> = 5.71 × 10<sup>–3</sup>), 18 (S12: <italic>p</italic> = 4.44 × 10<sup>–3</sup>), 19 (S1: <italic>p</italic> = 2.11 × 10<sup>–4</sup>; S1: <italic>p</italic> = 1.26 × 10<sup>–3</sup>), and 20 (S4: <italic>p</italic> = 1.23 × 10<sup>–3</sup>; S4: <italic>p</italic> = 2.15). All between-group comparisons were performed using a non-parametric permutation <italic>t</italic>-test and Bonferroni’s correction.</p>
+        <fig position="float" id="F2">
+          <label>FIGURE 2</label>
+          <caption>
+            <p>The probabilities of PL states across <italic>k</italic> = 3–20. *Represented the significant difference between ASD and HC.</p>
+          </caption>
+          <graphic xlink:href="fnint-16-922577-g002" position="float"/>
+        </fig>
+      </sec>
+      <sec id="S3.SS2">
+        <title>3.2. Spatial activation map of the alteration states</title>
+        <p>To further probe the spatial activation map of the significantly altered PL states in ASD, we calculated the Pearson’s correlation coefficient between each pair of characterizations (vector of clustering centers) of the significantly altered PL states across <italic>k</italic> = 3–20. In our study, we found that the PL states could be divided into five groups of states and that PL states in the same group had higher similarity (Pearson’s <italic>r</italic> &gt; 0.9 for all paired FC states in one group). In particular, as shown in <xref rid="F3" ref-type="fig">Figure 3</xref>, the PL states whose occurrence probabilities were significantly increased in ASD were organized into three groups. The PL states in group I were identified from k ranging from 10 to 20, which indicated that these states referred to variant forms of the same underlying PL states in more detailed partitions (<italic>K</italic> &gt; 10). The spatial activation map of the PL state in group I was characterized by the insula, caudate, angular gyrus, frontal gyrus, anterior and middle cingulate cortex (ACC and MCC), and inferior parietal gyrus (<xref rid="F3" ref-type="fig">Figure 3A</xref>). The PL states from <italic>k</italic> = 8 (S5), 12 (S2), and 16 (S6) were divided into group II and from <italic>K</italic> = 10 (S2), 19 (S1), and 20 (S4) into group III. The PL states from group II were characterized by the angular, precuneus, cuneus, occipital gyrus, superior parietal gyrus, and fusiform gyrus (<xref rid="F3" ref-type="fig">Figure 3B</xref>), and those from group III were characterized by the middle frontal gyrus, the middle and post cingulate cortex (MCC and PCC), the occipital gyrus, the central lobe, the angular, inferior, and superior parietal gyrus, and the precuneus and cuneus (<xref rid="F3" ref-type="fig">Figure 3C</xref>). Correspondingly, as shown in <xref rid="F4" ref-type="fig">Figure 4</xref>, the PL states with significantly decreased occurrence probabilities in ASD were organized into two groups of states. One (group IV) consisted of the PL states identified from <italic>K</italic> = 3 (S2), 5 (S4), 11 (S8), and 14 (S1), and another (group V) consisted of the PL states from 14 (S2), 19 (S17), and 20 (S18). PL states in the former group were characterized by the subcortical cortex (including insula, caudate, putamen, and thalamus), the middle inferior frontal gyrus and orbitofrontal, the central gyrus, the supplementary motor area, the paracentral lobule, the parietal gyrus, the superior temporal gyrus, the temporal pole, and the MCC (<xref rid="F4" ref-type="fig">Figure 4A</xref>). PL states in the latter group were characterized by the subcortical cortex (insula, amygdala, putamen, hippocampus and parahippocampus, and pallidum gyrus), the middle and superior temporal gyrus, the temporal pole, and the central gyrus (<xref rid="F4" ref-type="fig">Figure 4B</xref>).</p>
+        <fig position="float" id="F3">
+          <label>FIGURE 3</label>
+          <caption>
+            <p>Three groups of PL states with significantly increasing probabilities in ASD. <bold>(A)</bold> The PL states in group I at <italic>k</italic> = 10–20. <bold>(B)</bold> The PL states in group II at <italic>k</italic> = 8, 12, and 16; and <bold>(C)</bold> the PL states in group III at <italic>k</italic> = 10, 19, and 20.</p>
+          </caption>
+          <graphic xlink:href="fnint-16-922577-g003" position="float"/>
+        </fig>
+        <fig position="float" id="F4">
+          <label>FIGURE 4</label>
+          <caption>
+            <p>Two groups of PL states with significantly increasing probabilities in ASD. <bold>(A)</bold> The PL states in group IV at <italic>k</italic> = 3, 5, 11, and 14; and <bold>(B)</bold> the PL states in group V at <italic>k</italic> = 2, 17, and 18.</p>
+          </caption>
+          <graphic xlink:href="fnint-16-922577-g004" position="float"/>
+        </fig>
+      </sec>
+      <sec id="S3.SS3">
+        <title>3.3. Comparison between PL states and resting-state networks</title>
+        <p>Finally, we computed the spatial Pearson correlation between the canonical resting-state networks (RSNs) and each PL state. In particular, consistent with previous studies (<xref rid="B59" ref-type="bibr">Thomas Yeo et al., 2011</xref>; <xref rid="B40" ref-type="bibr">Lord et al., 2019</xref>), we first obtained the contribution of each AAL brain area to 7 RSNs by calculating the number of voxels of each brain area in each RSN. The contribution of each AAL brain area to 7 RSNs was show in <xref rid="TS1" ref-type="supplementary-material">Supplementary Table 1</xref>. Then, we computed the bivariate correlation between centroid vectors of each PL state and the contribution of each AAL brain area to 7 RSNs. Our results showed striking spatial similarities between 7 RSNs with PL states with a significantly altered occurrence probability in ASD. Specifically, as shown in <xref rid="F5" ref-type="fig">Figure 5</xref>, PL states from group I were called the “VAN-FPN-DMN state,” including the ventral attention network (VAN: insula, MCC, and supramarginal gyrus, <italic>r</italic> = 0.37, <italic>p</italic> = 1.08 × 10<sup>–4</sup>), frontoparietal control network (FPN: the middle and orbital frontal gyrus, the opercular and triangular part of the inferior frontal gyrus and the inferior parietal gyrus, <italic>r</italic> = 0.643, <italic>p</italic> = 8.21 × 10<sup>–12</sup>), and (DMN: superior frontal gyrus, the orbital and inferior frontal gyrus, the superior and medial frontal gyrus, ACC, and angular gyrus, <italic>r</italic> = 0.36, <italic>p</italic> = 5.09 × 10<sup>–4</sup>). PL states from group II were called “VIS states,” including the visual network (VIS: occipital gyrus, fusiform gyrus, lingual gyrus, calcarine area, and cuneus, <italic>r</italic> = 0.72, <italic>p</italic> = 2.05 × 10<sup>–15</sup>). PL states from group III were indicated as the “VIS-SMN-DMN state,” including VIS (the superior and middle occipital gyrus, calcarine area, and cuneus, <italic>r</italic> = 0.50, <italic>p</italic> = 4.95 × 10<sup>–7</sup>), somatomotor network (SMN: postcentral gyrus and paracentral lobule, <italic>r</italic> = 0.38, <italic>p</italic> = 8.45 × 10<sup>–6</sup>), and DMN (precuneus, angular, superior frontal gyrus, and PCC, <italic>r</italic> = 0.38, <italic>p</italic> = 8.45 × 10<sup>–6</sup>). PL states from group IV consisted of an extensive network and were called the “SUB-SMN-FPN state,” including the subcortical network (SUB: caudate, putamen, and pallidum), SMN (precentral gyrus, postcentral gyrus, Rolandic operculum, paracentral lobule, Heschl’s gyrus, and superior temporal gyrus <italic>r</italic> = 0.55, <italic>p</italic> = 1.16 × 10<sup>–18</sup>), and FPN (inferior and middle frontal gyrus and inferior parietal gyrus, <italic>r</italic> = 0.58, <italic>p</italic> = 1.73 × 10<sup>–9</sup>). PL states from group V were indicated as the “SUB-SMN-VAN state,” which consists of SUB (hippocampus, amygdala, putamen, thalamus, and pallidum), SMN (precentral gyrus, postcentral gyrus, Rolandic operculum, paracentral lobule, Heschl’s gyrus, and superior temporal gyrus, <italic>r</italic> = 0.36, <italic>p</italic> = 4.71 × 10<sup>–4</sup>), and VAN (VAN: insula and supramarginal gyrus, <italic>r</italic> = 0.58, <italic>p</italic> = 2.96 × 10<sup>–9</sup>).</p>
+        <fig position="float" id="F5">
+          <label>FIGURE 5</label>
+          <caption>
+            <p>The corresponding RSNs of the PL states. The red nodes represent that the corresponding elements of centroid vectors are positive and the blue nodes represent that the corresponding elements are negative. The details are shown in <xref rid="TS2" ref-type="supplementary-material">Supplementary Table 2</xref>.</p>
+          </caption>
+          <graphic xlink:href="fnint-16-922577-g005" position="float"/>
+        </fig>
+      </sec>
+    </sec>
+    <sec sec-type="discussion" id="S4">
+      <title>4. Discussion</title>
+      <p>Our study probed the dynamics of brain networks reoccurring over time during the resting state for ASD. Specifically, we identified five different groups of discrete resting-state functional networks, which can be defined as recurrent BOLD PL patterns over time (PL states). Meanwhile, we also found that these PL states were characterized by significantly increased or decreased occurrence probability for ASD and were closely linked to sensory-to-cognitive systems of the brain. Our study provides new insights into the dynamics of brain networks and contributes to a deeper understanding of the neurological mechanisms of ASD.</p>
+      <p>Most previous studies of FC in ASD relied on the assumption that connectivity patterns remain constant over time (<xref rid="B9" ref-type="bibr">Cerliani et al., 2015</xref>; <xref rid="B10" ref-type="bibr">Chen et al., 2017</xref>; <xref rid="B16" ref-type="bibr">Di Martino et al., 2017</xref>). However, the whole-brain functional network changes dynamically with ongoing rhythmic activity (<xref rid="B1" ref-type="bibr">Allen et al., 2012</xref>; <xref rid="B8" ref-type="bibr">Cavanna et al., 2018</xref>; <xref rid="B25" ref-type="bibr">Harlalka et al., 2019</xref>). This variability in the whole-brain functional network can be tracked in different brain states by using dynamic FC. Knowledge of the dynamic patterns across brain regions may allow for a better understanding of resting-state functional organization and processing. Numerous studies have indicated that dynamic FC analytical techniques are a promising avenue of research in ASD and can broaden our understanding of changes in functional brain organization among individuals with the disorder (<xref rid="B26" ref-type="bibr">He et al., 2018</xref>; <xref rid="B52" ref-type="bibr">Rashid et al., 2018</xref>; <xref rid="B25" ref-type="bibr">Harlalka et al., 2019</xref>; <xref rid="B42" ref-type="bibr">Mash et al., 2019</xref>; <xref rid="B36" ref-type="bibr">Li et al., 2020</xref>). However, the best way to characterize dynamic FC remains under debate. In our study, we adopted the LEiDA method to characterize FC at the instantaneous level and found a special and robust PL state configuration. Examining partition modes from <italic>k</italic> = 3 to 20 clusters, our results found special and robust PL states, whose occurrence probabilities were significantly altered in patients with ASD compared to HCs. Specifically, there are three types of PL states that occurred more in ASD, and the other two types of PL states that occurred less in ASD across models with k ranging from 3 to 20. Our results are consistent with previous findings that patients with ASD have special patterns of brain PL state organization that are significantly different from those of HCs. Previous studies found that there were significantly different occurrences in multiple functional states between patients with ASD and HCs. For example, subjects with ASD spent more time in a state characterized by weak dynamic FC patterns and less negative dynamic FC between the DMN and other sensory networks, while healthy individuals spent more time in a state with both positive and negative dynamic FC patterns (<xref rid="B50" ref-type="bibr">Rabany et al., 2019</xref>). In addition, recent work based on the hidden Markov Model (HMM) found that of the 19 HMM states, four HMM states have significantly higher fractional occupancies and the other four states have fewer fractional occupancies in ASD (<xref rid="B37" ref-type="bibr">Lin et al., 2022</xref>). Therefore, our results indicated the altered pattern of brain connectivity recurrently and consistently in ASD, which is robust across a range of partition models.</p>
+      <p>In our study, the identified PL states across k ranging from 3 to 20 could be divided into five groups of states, and PL states in the same group had higher similarity (Pearson’s <italic>r</italic> &gt; 0.9 for all paired FC states in one group). Five types of PL states were closely linked to sensory-to-cognitive systems in the brain. The occurrence probabilities of three of five groups of PL states were significantly increased in ASD. Three PL states were defined as the “VAN-FPN-DMN state,” “VIS state,” and “VIS-SMN-DMN state.” In particular, abnormal dynamics of the “VAN-FPN-DMN state” were robustly identified across a large range of k-means solutions. This state consists of an extensive network connecting frontal areas—important for cognitive control—with the DMN (superior and medial frontal gyrus, ACC, and angular) and VAN (including insula and MCC). Our results are consistent with previous studies reporting overconnectivity between these RSNs.</p>
+      <p>For example, a recent study used sliding window analysis to probe the alteration in transient connectivity in ASD and found that an overall trend toward overconnectivity is largely driven by the network-level trend toward overconnectivity among DMN, FPN, and VAN. The significantly altered overconnectivity between the DMN and FPN regions was robust across the different numbers of clusters (<xref rid="B42" ref-type="bibr">Mash et al., 2019</xref>). Moreover, other PL states found to be more idiosyncratic in ASD were the “VIS state” and “VIS-SMN-DMN state,” which are mainly characterized by the VIS (including occipital gyrus, fusiform gyrus, lingual gyrus, calcarine area, and cuneus) with DMN (including the precuneus, angular, superior frontal gyrus, and PCC). A recent study found that aberrant FC between DMN and primary visual cortex (PVC) as well as visual association circuitry in occipitotemporal cortex social is closely related to visual engagement difficulties, which are central early developmental features of ASD (<xref rid="B39" ref-type="bibr">Lombardo et al., 2019</xref>). Together with our results, these findings consistently highlight the potential role of the neural circuits associated with the sensory and cognitive networks (including VIS, DMN, FPN, and VAN) in the pathological mechanisms of ASD.</p>
+      <p>Furthermore, we also found that the occurrence probabilities of the other two PL states were significantly decreased in ASD. These two states were mainly characterized by SUBs (including the hippocampus, amygdala, caudate, thalamus, putamen, and pallidum), SMN (including the pre- and postcentral gyrus, paracentral lobule, and superior temporal gyrus), FPN, and VAN. The common features of ASD are abnormal sensory and motor behaviors, such as clumsiness, hyper and hypo-sensitivities, and motor coordination impairments (<xref rid="B64" ref-type="bibr">Whyatt and Craig, 2013</xref>). Previous static FC studies in ASD have demonstrated impaired functional synchronization between visual networks and sensory-motor networks (<xref rid="B45" ref-type="bibr">Nebel et al., 2016</xref>; <xref rid="B46" ref-type="bibr">Oldehinkel et al., 2019</xref>). Interhemispheric FC was significantly decreased in the sensorimotor cortex in individuals with ASD (<xref rid="B4" ref-type="bibr">Anderson et al., 2011</xref>). In addition, a recent study based on static functional hub distribution showed significantly reduced FC in the pre- and postcentral gyrus in ASD (<xref rid="B35" ref-type="bibr">Lee et al., 2016</xref>). Meanwhile, an increasing number of clinical and experimental studies have reported atypical sensory processing in ASD, which is qualified as hypo-reactivity or hyperreactivity to sensory stimuli and could enhance sensory-perceptual processing and discrimination (<xref rid="B5" ref-type="bibr">Baron-Cohen et al., 2009</xref>; <xref rid="B41" ref-type="bibr">Marco et al., 2011</xref>; <xref rid="B9" ref-type="bibr">Cerliani et al., 2015</xref>). Consistent with these findings, the configuration reduction of brain states with SMN and SUBs over time observed in the current study further emphasized abnormal dynamic functional coordination of the sensorimotor network in the autistic brain and may contribute to the aberrant sensory and motor processing in ASD.</p>
+      <p>In summary, the present study used a novel and data-driven LEiDA approach to examine the instantaneous dynamics of brain activities and found five different and robust groups of discrete resting-state functional networks, and their occurrence probabilities were significantly altered in ASD. Our findings provide new insights into aberrations in dynamic brain network connectivity in ASD and contribute to a deeper understanding of the neurological mechanisms of ASD.</p>
+    </sec>
+    <sec sec-type="data-availability" id="S5">
+      <title>Data availability statement</title>
+      <p>Publicly available datasets were analyzed in this study. This data can be found here: Autism Brain Imaging Data Exchange (ABIDE), <ext-link xlink:href="http://fcon_1000.projects.nitrc.org/indi/abide/" ext-link-type="uri">http://fcon_1000.projects.nitrc.org/indi/abide/</ext-link>.</p>
+    </sec>
+    <sec sec-type="ethics-statement" id="S6">
+      <title>Ethics statement</title>
+      <p>The studies involving human participants were reviewed and approved by the Ethics Committee of Zhengzhou University. Written informed consent to participate in this study was provided by the participants’ legal guardian/next of kin.</p>
+    </sec>
+    <sec sec-type="author-contributions" id="S7">
+      <title>Author contributions</title>
+      <p>ChW and PT contributed to the design of the study. LY, YL, and CaW performed the statistical analysis and wrote the first draft of the manuscript. All authors contributed to manuscript revision and read and approved the submitted version.</p>
+    </sec>
+  </body>
+  <back>
+    <fn-group>
+      <fn id="footnote1">
+        <label>1</label>
+        <p>
+<ext-link xlink:href="http://fcon_1000.projects.nitrc.org/indi/abide/" ext-link-type="uri">http://fcon_1000.projects.nitrc.org/indi/abide/</ext-link>
+</p>
+      </fn>
+      <fn id="footnote2">
+        <label>2</label>
+        <p>
+<ext-link xlink:href="http://fcon_1000.projects.nitrc.org/indi/abide/scan_params/NYU/" ext-link-type="uri">http://fcon_1000.projects.nitrc.org/indi/abide/scan_params/NYU/</ext-link>
+</p>
+      </fn>
+      <fn id="footnote3">
+        <label>3</label>
+        <p>
+<ext-link xlink:href="http://rfmri.org/dpabi" ext-link-type="uri">http://rfmri.org/dpabi</ext-link>
+</p>
+      </fn>
+    </fn-group>
+    <sec sec-type="COI-statement" id="S9">
+      <title>Conflict of interest</title>
+      <p>The authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.</p>
+    </sec>
+    <sec sec-type="disclaimer" id="S10">
+      <title>Publisher’s note</title>
+      <p>All claims expressed in this article are solely those of the authors and do not necessarily represent those of their affiliated organizations, or those of the publisher, the editors and the reviewers. Any product that may be evaluated in this article, or claim that may be made by its manufacturer, is not guaranteed or endorsed by the publisher.</p>
+    </sec>
+    <sec sec-type="supplementary-material" id="S11">
+      <title>Supplementary material</title>
+      <p>The Supplementary Material for this article can be found online at: <ext-link xlink:href="https://www.frontiersin.org/articles/10.3389/fnint.2022.922577/full#supplementary-material" ext-link-type="uri">https://www.frontiersin.org/articles/10.3389/fnint.2022.922577/full#supplementary-material</ext-link></p>
+      <supplementary-material id="TS1" position="float" content-type="local-data">
+        <media xlink:href="Table_1.docx">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <supplementary-material id="TS2" position="float" content-type="local-data">
+        <media xlink:href="Table_2.docx">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+    </sec>
+    <ref-list>
+      <title>References</title>
+      <ref id="B1">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Allen</surname><given-names>E. A.</given-names></name><name><surname>Damaraju</surname><given-names>E.</given-names></name><name><surname>Plis</surname><given-names>S. M.</given-names></name><name><surname>Erhardt</surname><given-names>E. B.</given-names></name><name><surname>Eichele</surname><given-names>T.</given-names></name><name><surname>Calhoun</surname><given-names>V. D.</given-names></name></person-group> (<year>2012</year>). <article-title>Tracking whole-brain connectivity dynamics in the resting state.</article-title>
+<source><italic>Cereb. Cortex</italic></source>
+<volume>24</volume>
+<fpage>663</fpage>–<lpage>676</lpage>. <pub-id pub-id-type="doi">10.1093/cercor/bhs352</pub-id>
+<pub-id pub-id-type="pmid">23146964</pub-id></mixed-citation>
+      </ref>
+      <ref id="B2">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Alonso Martínez</surname><given-names>S.</given-names></name><name><surname>Deco</surname><given-names>G.</given-names></name><name><surname>Ter Horst</surname><given-names>G. J.</given-names></name><name><surname>Cabral</surname><given-names>J.</given-names></name></person-group> (<year>2020</year>). <article-title>The dynamics of functional brain networks associated with depressive symptoms in a nonclinical sample.</article-title>
+<source><italic>Front. Neural Circuits</italic></source>
+<volume>14</volume>:<issue>570583</issue>. <pub-id pub-id-type="doi">10.3389/fncir.2020.570583</pub-id>
+<pub-id pub-id-type="pmid">33071760</pub-id></mixed-citation>
+      </ref>
+      <ref id="B3">
+        <mixed-citation publication-type="book"><collab>American Psychiatric Association</collab> (<year>2013</year>). <source><italic>Diagnostic and Statistical Manual of Mental Disorders.</italic></source>
+<publisher-loc>Washington, DC</publisher-loc>: <publisher-name>American Psychiatric Association</publisher-name>.</mixed-citation>
+      </ref>
+      <ref id="B4">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Anderson</surname><given-names>J. S.</given-names></name><name><surname>Druzgal</surname><given-names>T. J.</given-names></name><name><surname>Froehlich</surname><given-names>A.</given-names></name><name><surname>DuBray</surname><given-names>M. B.</given-names></name><name><surname>Lange</surname><given-names>N.</given-names></name><name><surname>Alexander</surname><given-names>A. L.</given-names></name><etal/></person-group> (<year>2011</year>). <article-title>Decreased interhemispheric functional connectivity in autism</article-title>. <source><italic>Cereb. Cortex</italic></source>
+<volume>21</volume>, <fpage>1134</fpage>–<lpage>1146</lpage>. <pub-id pub-id-type="doi">10.1093/cercor/bhq190</pub-id>
+<pub-id pub-id-type="pmid">20943668</pub-id></mixed-citation>
+      </ref>
+      <ref id="B5">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Baron-Cohen</surname><given-names>S.</given-names></name><name><surname>Ashwin</surname><given-names>E.</given-names></name><name><surname>Ashwin</surname><given-names>C.</given-names></name><name><surname>Tavassoli</surname><given-names>T.</given-names></name><name><surname>Chakrabarti</surname><given-names>B.</given-names></name></person-group> (<year>2009</year>). <article-title>Talent in autism: hyper-systemizing, hyper-attention to detail and sensory hypersensitivity.</article-title>
+<source><italic>Philos. Trans. R. Soc. B Bio. Sci.</italic></source>
+<volume>364</volume>
+<fpage>1377</fpage>–<lpage>1383</lpage>. <pub-id pub-id-type="doi">10.1098/rstb.2008.0337</pub-id>
+<pub-id pub-id-type="pmid">19528020</pub-id></mixed-citation>
+      </ref>
+      <ref id="B6">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Belmonte</surname><given-names>M. K.</given-names></name></person-group> (<year>2004</year>). <article-title>Autism and abnormal development of brain connectivity.</article-title>
+<source><italic>J. Neurosci.</italic></source>
+<volume>24</volume>
+<fpage>9228</fpage>–<lpage>9231</lpage>. <pub-id pub-id-type="doi">10.1523/jneurosci.3340-04.2004</pub-id>
+<pub-id pub-id-type="pmid">15496656</pub-id></mixed-citation>
+      </ref>
+      <ref id="B7">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Cabral</surname><given-names>J.</given-names></name><name><surname>Vidaurre</surname><given-names>D.</given-names></name><name><surname>Marques</surname><given-names>P.</given-names></name><name><surname>Magalhães</surname><given-names>R.</given-names></name><name><surname>Silva Moreira</surname><given-names>P.</given-names></name><name><surname>Miguel Soares</surname><given-names>J.</given-names></name><etal/></person-group> (<year>2017</year>). <article-title>Cognitive performance in healthy older adults relates to spontaneous switching between states of functional connectivity during rest.</article-title>
+<source><italic>Sci. Rep.</italic></source>
+<volume>7</volume>:<issue>5135</issue>. <pub-id pub-id-type="doi">10.1038/s41598-017-05425-7</pub-id>
+<pub-id pub-id-type="pmid">28698644</pub-id></mixed-citation>
+      </ref>
+      <ref id="B8">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Cavanna</surname><given-names>F.</given-names></name><name><surname>Vilas</surname><given-names>M. G.</given-names></name><name><surname>Palmucci</surname><given-names>M.</given-names></name><name><surname>Tagliazucchi</surname><given-names>E.</given-names></name></person-group> (<year>2018</year>). <article-title>Dynamic functional connectivity and brain metastability during altered states of consciousness.</article-title>
+<source><italic>NeuroImage</italic></source>
+<volume>180</volume>
+<fpage>383</fpage>–<lpage>395</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2017.09.065</pub-id>
+<pub-id pub-id-type="pmid">28986208</pub-id></mixed-citation>
+      </ref>
+      <ref id="B9">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Cerliani</surname><given-names>L.</given-names></name><name><surname>Mennes</surname><given-names>M.</given-names></name><name><surname>Thomas</surname><given-names>R. M.</given-names></name><name><surname>Di Martino</surname><given-names>A.</given-names></name><name><surname>Thioux</surname><given-names>M.</given-names></name><name><surname>Keysers</surname><given-names>C.</given-names></name></person-group> (<year>2015</year>). <article-title>Increased functional connectivity between subcortical and cortical resting-state networks in autism spectrum disorder.</article-title>
+<source><italic>JAMA Psychiatry</italic></source>
+<volume>72</volume>
+<fpage>767</fpage>–<lpage>777</lpage>. <pub-id pub-id-type="doi">10.1001/jamapsychiatry.2015.0101</pub-id>
+<pub-id pub-id-type="pmid">26061743</pub-id></mixed-citation>
+      </ref>
+      <ref id="B10">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Chen</surname><given-names>H.</given-names></name><name><surname>Nomi</surname><given-names>J. S.</given-names></name><name><surname>Uddin</surname><given-names>L. Q.</given-names></name><name><surname>Duan</surname><given-names>X.</given-names></name><name><surname>Chen</surname><given-names>H.</given-names></name></person-group> (<year>2017</year>). <article-title>Intrinsic functional connectivity variance and state-specific under-connectivity in autism.</article-title>
+<source><italic>Hum. Brain Mapp.</italic></source>
+<volume>38</volume>
+<fpage>5740</fpage>–<lpage>5755</lpage>. <pub-id pub-id-type="doi">10.1002/hbm.23764</pub-id>
+<pub-id pub-id-type="pmid">28792117</pub-id></mixed-citation>
+      </ref>
+      <ref id="B11">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Damarla</surname><given-names>S. R.</given-names></name><name><surname>Keller</surname><given-names>T. A.</given-names></name><name><surname>Kana</surname><given-names>R. K.</given-names></name><name><surname>Cherkassky</surname><given-names>V. L.</given-names></name><name><surname>Williams</surname><given-names>D. L.</given-names></name><name><surname>Minshew</surname><given-names>N. J.</given-names></name><etal/></person-group> (<year>2010</year>). <article-title>Cortical underconnectivity coupled with preserved visuospatial cognition in autism: evidence from an fMRI study of an embedded figures task.</article-title>
+<source><italic>Autism Res.</italic></source>
+<volume>3</volume>
+<fpage>273</fpage>–<lpage>279</lpage>. <pub-id pub-id-type="doi">10.1002/aur.153</pub-id>
+<pub-id pub-id-type="pmid">20740492</pub-id></mixed-citation>
+      </ref>
+      <ref id="B12">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Deco</surname><given-names>G.</given-names></name><name><surname>Cabral</surname><given-names>J.</given-names></name><name><surname>Woolrich</surname><given-names>M. W.</given-names></name><name><surname>Stevner</surname><given-names>A. B. A.</given-names></name><name><surname>van Hartevelt</surname><given-names>T. J.</given-names></name><name><surname>Kringelbach</surname><given-names>M. L.</given-names></name></person-group> (<year>2017</year>). <article-title>Single or multiple frequency generators in on-going brain activity: a mechanistic whole-brain model of empirical MEG data.</article-title>
+<source><italic>NeuroImage</italic></source>
+<volume>152</volume>
+<fpage>538</fpage>–<lpage>550</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2017.03.023</pub-id>
+<pub-id pub-id-type="pmid">28315461</pub-id></mixed-citation>
+      </ref>
+      <ref id="B13">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Deco</surname><given-names>G.</given-names></name><name><surname>Cruzat</surname><given-names>J.</given-names></name><name><surname>Cabral</surname><given-names>J.</given-names></name><name><surname>Tagliazucchi</surname><given-names>E.</given-names></name><name><surname>Laufs</surname><given-names>H.</given-names></name><name><surname>Logothetis</surname><given-names>N. K.</given-names></name><etal/></person-group> (<year>2019</year>). <article-title>Awakening: predicting external stimulation to force transitions between different brain states.</article-title>
+<source><italic>Proc. Natl. Acad. Sci. U.S.A.</italic></source>
+<volume>116</volume>
+<fpage>18088</fpage>–<lpage>18097</lpage>. <pub-id pub-id-type="doi">10.1073/pnas.1905534116</pub-id>
+<pub-id pub-id-type="pmid">31427539</pub-id></mixed-citation>
+      </ref>
+      <ref id="B14">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Deco</surname><given-names>G.</given-names></name><name><surname>Jirsa</surname><given-names>V.</given-names></name><name><surname>McIntosh</surname><given-names>A. R.</given-names></name><name><surname>Sporns</surname><given-names>O.</given-names></name><name><surname>Kötter</surname><given-names>R.</given-names></name></person-group> (<year>2009</year>). <article-title>Key role of coupling, delay, and noise in resting brain fluctuations.</article-title>
+<source><italic>Proc. Natl. Acad. Sci. U.S.A.</italic></source>
+<volume>106</volume>
+<fpage>10302</fpage>–<lpage>10307</lpage>. <pub-id pub-id-type="doi">10.1073/pnas.0901831106</pub-id>
+<pub-id pub-id-type="pmid">19497858</pub-id></mixed-citation>
+      </ref>
+      <ref id="B15">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Deco</surname><given-names>G.</given-names></name><name><surname>Kringelbach</surname><given-names>M.</given-names></name></person-group> (<year>2016</year>). <article-title>Metastability and coherence: extending the communication through coherence hypothesis using a whole-brain computational perspective.</article-title>
+<source><italic>Trends Neurosci.</italic></source>
+<volume>39</volume>:<issue>432</issue>. <pub-id pub-id-type="doi">10.1016/j.tins.2016.04.006</pub-id>
+<pub-id pub-id-type="pmid">27131472</pub-id></mixed-citation>
+      </ref>
+      <ref id="B16">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Di Martino</surname><given-names>A.</given-names></name><name><surname>O’Connor</surname><given-names>D.</given-names></name><name><surname>Chen</surname><given-names>B.</given-names></name><name><surname>Alaerts</surname><given-names>K.</given-names></name><name><surname>Anderson</surname><given-names>J. S.</given-names></name><name><surname>Assaf</surname><given-names>M.</given-names></name><etal/></person-group> (<year>2017</year>). <article-title>Enhancing studies of the connectome in autism using the autism brain imaging data exchange II.</article-title>
+<source><italic>Sci. Data</italic></source>
+<volume>4</volume>:<issue>170010</issue>. <pub-id pub-id-type="doi">10.1038/sdata.2017.10</pub-id>
+<pub-id pub-id-type="pmid">28291247</pub-id></mixed-citation>
+      </ref>
+      <ref id="B17">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Di Martino</surname><given-names>A.</given-names></name><name><surname>Zuo</surname><given-names>X.-N.</given-names></name><name><surname>Kelly</surname><given-names>C.</given-names></name><name><surname>Grzadzinski</surname><given-names>R.</given-names></name><name><surname>Mennes</surname><given-names>M.</given-names></name><name><surname>Schvarcz</surname><given-names>A.</given-names></name><etal/></person-group> (<year>2013</year>). <article-title>Shared and distinct intrinsic functional network centrality in autism and attention-deficit/hyperactivity disorder.</article-title>
+<source><italic>Biol. Psychiatry</italic></source>
+<volume>74</volume>
+<fpage>623</fpage>–<lpage>632</lpage>. <pub-id pub-id-type="doi">10.1016/j.biopsych.2013.02.011</pub-id>
+<pub-id pub-id-type="pmid">23541632</pub-id></mixed-citation>
+      </ref>
+      <ref id="B18">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Dinstein</surname><given-names>I.</given-names></name><name><surname>Pierce</surname><given-names>K.</given-names></name><name><surname>Eyler</surname><given-names>L.</given-names></name><name><surname>Solso</surname><given-names>S.</given-names></name><name><surname>Malach</surname><given-names>R.</given-names></name><name><surname>Behrmann</surname><given-names>M.</given-names></name><etal/></person-group> (<year>2011</year>). <article-title>Disrupted neural synchronization in toddlers with autism.</article-title>
+<source><italic>Neuron</italic></source>
+<volume>70</volume>
+<fpage>1218</fpage>–<lpage>1225</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuron.2011.04.018</pub-id>
+<pub-id pub-id-type="pmid">21689606</pub-id></mixed-citation>
+      </ref>
+      <ref id="B19">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Du</surname><given-names>Y.</given-names></name><name><surname>Fu</surname><given-names>Z.</given-names></name><name><surname>Calhoun</surname><given-names>V. D.</given-names></name></person-group> (<year>2018</year>). <article-title>Classification and prediction of brain disorders using functional connectivity: promising but challenging.</article-title>
+<source><italic>Fron. Neurosci.</italic></source>
+<volume>12</volume>:<issue>525</issue>. <pub-id pub-id-type="doi">10.3389/fnins.2018.00525</pub-id>
+<pub-id pub-id-type="pmid">30127711</pub-id></mixed-citation>
+      </ref>
+      <ref id="B20">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Duan</surname><given-names>X.</given-names></name><name><surname>Chen</surname><given-names>H.</given-names></name><name><surname>He</surname><given-names>C.</given-names></name><name><surname>Long</surname><given-names>Z.</given-names></name><name><surname>Guo</surname><given-names>X.</given-names></name><name><surname>Zhou</surname><given-names>Y.</given-names></name><etal/></person-group> (<year>2017</year>). <article-title>Resting-state functional under-connectivity within and between large-scale cortical networks across three low-frequency bands in adolescents with autism.</article-title>
+<source><italic>Prog. Neuro Psychopharmacol. Biol. Psychiatry</italic></source>
+<volume>79</volume>
+<fpage>434</fpage>–<lpage>441</lpage>. <pub-id pub-id-type="doi">10.1016/j.pnpbp.2017.07.027</pub-id>
+<pub-id pub-id-type="pmid">28779909</pub-id></mixed-citation>
+      </ref>
+      <ref id="B21">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Farinha</surname><given-names>M.</given-names></name><name><surname>Amado</surname><given-names>C.</given-names></name><name><surname>Morgado</surname><given-names>P.</given-names></name><name><surname>Cabral</surname><given-names>J.</given-names></name></person-group> (<year>2022</year>). <article-title>Increased excursions to functional networks in schizophrenia in the absence of task.</article-title>
+<source><italic>Front. Neurosci.</italic></source>
+<volume>16</volume>:<issue>821179</issue>. <pub-id pub-id-type="doi">10.3389/fnins.2022.821179</pub-id>
+<pub-id pub-id-type="pmid">35360175</pub-id></mixed-citation>
+      </ref>
+      <ref id="B22">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Figueroa</surname><given-names>C. A.</given-names></name><name><surname>Cabral</surname><given-names>J.</given-names></name><name><surname>Mocking</surname><given-names>R. J. T.</given-names></name><name><surname>Rapuano</surname><given-names>K. M.</given-names></name><name><surname>van Hartevelt</surname><given-names>T. J.</given-names></name><name><surname>Deco</surname><given-names>G.</given-names></name><etal/></person-group> (<year>2019</year>). <article-title>Altered ability to access a clinically relevant control network in patients remitted from major depressive disorder.</article-title>
+<source><italic>Hum. Brain Mapp.</italic></source>
+<volume>40</volume>
+<fpage>2771</fpage>–<lpage>2786</lpage>. <pub-id pub-id-type="doi">10.1002/hbm.24559</pub-id>
+<pub-id pub-id-type="pmid">30864248</pub-id></mixed-citation>
+      </ref>
+      <ref id="B23">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Glerean</surname><given-names>E.</given-names></name><name><surname>Salmi</surname><given-names>J.</given-names></name><name><surname>Lahnakoski</surname><given-names>J. M.</given-names></name><name><surname>Jääskeläinen</surname><given-names>I. P.</given-names></name><name><surname>Sams</surname><given-names>M.</given-names></name></person-group> (<year>2012</year>). <article-title>Functional magnetic resonance imaging phase synchronization as a measure of dynamic functional connectivity.</article-title>
+<source><italic>Brain Connect.</italic></source>
+<volume>2</volume>
+<fpage>91</fpage>–<lpage>101</lpage>. <pub-id pub-id-type="doi">10.1089/brain.2011.0068</pub-id>
+<pub-id pub-id-type="pmid">22559794</pub-id></mixed-citation>
+      </ref>
+      <ref id="B24">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Guo</surname><given-names>X.</given-names></name><name><surname>Duan</surname><given-names>X.</given-names></name><name><surname>Chen</surname><given-names>H.</given-names></name><name><surname>He</surname><given-names>C.</given-names></name><name><surname>Xiao</surname><given-names>J.</given-names></name><name><surname>Han</surname><given-names>S.</given-names></name><etal/></person-group> (<year>2020</year>). <article-title>Altered inter- and intrahemispheric functional connectivity dynamics in autistic children.</article-title>
+<source><italic>Hum. Brain Mapp.</italic></source>
+<volume>41</volume>
+<fpage>419</fpage>–<lpage>428</lpage>. <pub-id pub-id-type="doi">10.1002/hbm.24812</pub-id>
+<pub-id pub-id-type="pmid">31600014</pub-id></mixed-citation>
+      </ref>
+      <ref id="B25">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Harlalka</surname><given-names>V.</given-names></name><name><surname>Bapi</surname><given-names>R. S.</given-names></name><name><surname>Vinod</surname><given-names>P. K.</given-names></name><name><surname>Roy</surname><given-names>D.</given-names></name></person-group> (<year>2019</year>). <article-title>Atypical flexibility in dynamic functional connectivity quantifies the severity in autism spectrum disorder.</article-title>
+<source><italic>Front. Hum. Neurosci.</italic></source>
+<volume>13</volume>:<issue>6</issue>. <pub-id pub-id-type="doi">10.3389/fnhum.2019.00006</pub-id>
+<pub-id pub-id-type="pmid">30774589</pub-id></mixed-citation>
+      </ref>
+      <ref id="B26">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>He</surname><given-names>C.</given-names></name><name><surname>Chen</surname><given-names>Y.</given-names></name><name><surname>Jian</surname><given-names>T.</given-names></name><name><surname>Chen</surname><given-names>H.</given-names></name><name><surname>Guo</surname><given-names>X.</given-names></name><name><surname>Wang</surname><given-names>J.</given-names></name><etal/></person-group> (<year>2018</year>). <article-title>Dynamic functional connectivity analysis reveals decreased variability of the default-mode network in developing autistic brain.</article-title>
+<source><italic>Autism Res.</italic></source>
+<volume>11</volume>
+<fpage>1479</fpage>–<lpage>1493</lpage>. <pub-id pub-id-type="doi">10.1002/aur.2020</pub-id>
+<pub-id pub-id-type="pmid">30270547</pub-id></mixed-citation>
+      </ref>
+      <ref id="B27">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Hellyer</surname><given-names>P. J.</given-names></name><name><surname>Scott</surname><given-names>G.</given-names></name><name><surname>Shanahan</surname><given-names>M.</given-names></name><name><surname>Sharp</surname><given-names>D. J.</given-names></name><name><surname>Leech</surname><given-names>R.</given-names></name></person-group> (<year>2015</year>). <article-title>Cognitive flexibility through metastable neural dynamics is disrupted by damage to the structural connectome.</article-title>
+<source><italic>J. Neurosci.</italic></source>
+<volume>35</volume>
+<fpage>9050</fpage>–<lpage>9063</lpage>. <pub-id pub-id-type="doi">10.1523/jneurosci.4648-14.2015</pub-id>
+<pub-id pub-id-type="pmid">26085630</pub-id></mixed-citation>
+      </ref>
+      <ref id="B28">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Hindriks</surname><given-names>R.</given-names></name><name><surname>Adhikari</surname><given-names>M. H.</given-names></name><name><surname>Murayama</surname><given-names>Y.</given-names></name><name><surname>Ganzetti</surname><given-names>M.</given-names></name><name><surname>Mantini</surname><given-names>D.</given-names></name><name><surname>Logothetis</surname><given-names>N. K.</given-names></name><etal/></person-group> (<year>2016</year>). <article-title>Can sliding-window correlations reveal dynamic functional connectivity in resting-state fMRI?</article-title>
+<source><italic>NeuroImage</italic></source>
+<volume>127</volume>
+<fpage>242</fpage>–<lpage>256</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2015.11.055</pub-id>
+<pub-id pub-id-type="pmid">26631813</pub-id></mixed-citation>
+      </ref>
+      <ref id="B29">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Jung</surname><given-names>M.</given-names></name><name><surname>Tu</surname><given-names>Y.</given-names></name><name><surname>Lang</surname><given-names>C. A.</given-names></name><name><surname>Ortiz</surname><given-names>A.</given-names></name><name><surname>Park</surname><given-names>J.</given-names></name><name><surname>Jorgenson</surname><given-names>K.</given-names></name><etal/></person-group> (<year>2019</year>). <article-title>Decreased structural connectivity and resting-state brain activity in the lateral occipital cortex is associated with social communication deficits in boys with autism spectrum disorder.</article-title>
+<source><italic>NeuroImage</italic></source>
+<volume>190</volume>
+<fpage>205</fpage>–<lpage>212</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2017.09.031</pub-id>
+<pub-id pub-id-type="pmid">28927730</pub-id></mixed-citation>
+      </ref>
+      <ref id="B30">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Just</surname><given-names>M. A.</given-names></name></person-group> (<year>2004</year>). <article-title>Cortical activation and synchronization during sentence comprehension in high-functioning autism: evidence of underconnectivity.</article-title>
+<source><italic>Brain</italic></source>
+<volume>127</volume>
+<fpage>1811</fpage>–<lpage>1821</lpage>. <pub-id pub-id-type="doi">10.1093/brain/awh199</pub-id>
+<pub-id pub-id-type="pmid">15215213</pub-id></mixed-citation>
+      </ref>
+      <ref id="B31">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Karahanoğlu</surname><given-names>F. I.</given-names></name><name><surname>van de Ville</surname><given-names>D.</given-names></name></person-group> (<year>2015</year>). <article-title>Transient brain activity disentangles fMRI resting-state dynamics in terms of spatially and temporally overlapping networks.</article-title>
+<source><italic>Nat. Commun.</italic></source>
+<volume>6</volume>:<issue>7751</issue>. <pub-id pub-id-type="doi">10.1038/ncomms8751</pub-id>
+<pub-id pub-id-type="pmid">26178017</pub-id></mixed-citation>
+      </ref>
+      <ref id="B32">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Keown</surname><given-names>C. L.</given-names></name><name><surname>Datko</surname><given-names>M. C.</given-names></name><name><surname>Chen</surname><given-names>C. P.</given-names></name><name><surname>Maximo</surname><given-names>J. O.</given-names></name><name><surname>Jahedi</surname><given-names>A.</given-names></name><name><surname>Müller</surname><given-names>R.-A.</given-names></name></person-group> (<year>2017</year>). <article-title>Network organization is globally atypical in autism: a graph theory study of intrinsic functional connectivity.</article-title>
+<source><italic>Biol. Psychiatry Cogn. Neurosci. Neuroimaging</italic></source>
+<volume>2</volume>
+<fpage>66</fpage>–<lpage>75</lpage>. <pub-id pub-id-type="doi">10.1016/j.bpsc.2016.07.008</pub-id>
+<pub-id pub-id-type="pmid">28944305</pub-id></mixed-citation>
+      </ref>
+      <ref id="B33">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Keown</surname><given-names>C. L.</given-names></name><name><surname>Shih</surname><given-names>P.</given-names></name><name><surname>Nair</surname><given-names>A.</given-names></name><name><surname>Peterson</surname><given-names>N.</given-names></name><name><surname>Mulvey</surname><given-names>M. E.</given-names></name><name><surname>Müller</surname><given-names>R.-A.</given-names></name></person-group> (<year>2013</year>). <article-title>local functional overconnectivity in posterior brain regions is associated with symptom severity in autism spectrum disorders.</article-title>
+<source><italic>Cell Rep.</italic></source>
+<volume>5</volume>
+<fpage>567</fpage>–<lpage>572</lpage>. <pub-id pub-id-type="doi">10.1016/j.celrep.2013.10.003</pub-id>
+<pub-id pub-id-type="pmid">24210815</pub-id></mixed-citation>
+      </ref>
+      <ref id="B34">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Larabi</surname><given-names>D. I.</given-names></name><name><surname>Renken</surname><given-names>R. J.</given-names></name><name><surname>Cabral</surname><given-names>J.</given-names></name><name><surname>Marsman</surname><given-names>J.-B. C.</given-names></name><name><surname>Aleman</surname><given-names>A.</given-names></name><name><surname>Ćurčić-Blake</surname><given-names>B.</given-names></name></person-group> (<year>2020</year>). <article-title>Trait self-reflectiveness relates to time-varying dynamics of resting state functional connectivity and underlying structural connectomes: role of the default mode network.</article-title>
+<source><italic>NeuroImage</italic></source>
+<volume>219</volume>:<issue>116896</issue>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2020.116896</pub-id>
+<pub-id pub-id-type="pmid">32470573</pub-id></mixed-citation>
+      </ref>
+      <ref id="B35">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Lee</surname><given-names>J. M.</given-names></name><name><surname>Kyeong</surname><given-names>S.</given-names></name><name><surname>Kim</surname><given-names>E.</given-names></name><name><surname>Cheon</surname><given-names>K. A.</given-names></name></person-group> (<year>2016</year>). <article-title>Abnormalities of inter-and intra-hemispheric functional connectivity in autism spectrum disorders: a study using the autism brain imaging data exchange database</article-title>. <source><italic>Front. Neurosci.</italic></source>
+<volume>10</volume>:<issue>191</issue>. <pub-id pub-id-type="doi">10.3389/fnins.2016.00191</pub-id>
+<pub-id pub-id-type="pmid">27199653</pub-id></mixed-citation>
+      </ref>
+      <ref id="B36">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Li</surname><given-names>Y.</given-names></name><name><surname>Zhu</surname><given-names>Y.</given-names></name><name><surname>Nguchu</surname><given-names>B. A.</given-names></name><name><surname>Wang</surname><given-names>Y.</given-names></name><name><surname>Wang</surname><given-names>H.</given-names></name><name><surname>Qiu</surname><given-names>B.</given-names></name><etal/></person-group> (<year>2020</year>). <article-title>Dynamic functional connectivity reveals abnormal variability and hyper-connected pattern in autism spectrum disorder.</article-title>
+<source><italic>Autism Res.</italic></source>
+<volume>13</volume>
+<fpage>230</fpage>–<lpage>243</lpage>. <pub-id pub-id-type="doi">10.1002/aur.2212</pub-id>
+<pub-id pub-id-type="pmid">31614075</pub-id></mixed-citation>
+      </ref>
+      <ref id="B37">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Lin</surname><given-names>P.</given-names></name><name><surname>Zang</surname><given-names>S.</given-names></name><name><surname>Bai</surname><given-names>Y.</given-names></name><name><surname>Wang</surname><given-names>H.</given-names></name></person-group> (<year>2022</year>). <article-title>Reconfiguration of brain network dynamics in autism spectrum disorder based on hidden markov model.</article-title>
+<source><italic>Front. Hum. Neurosci.</italic></source>
+<volume>6</volume>:<issue>774921</issue>. <pub-id pub-id-type="doi">10.3389/fnhum.2022.774921</pub-id>
+<pub-id pub-id-type="pmid">35211000</pub-id></mixed-citation>
+      </ref>
+      <ref id="B38">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Liu</surname><given-names>X.</given-names></name><name><surname>Duyn</surname><given-names>J. H.</given-names></name></person-group> (<year>2013</year>). <article-title>Time-varying functional network information extracted from brief instances of spontaneous brain activity.</article-title>
+<source><italic>Proc. Natl. Acad. Sci. U.S.A.</italic></source>
+<volume>110</volume>
+<fpage>4392</fpage>–<lpage>4397</lpage>. <pub-id pub-id-type="doi">10.1073/pnas.1216856110</pub-id>
+<pub-id pub-id-type="pmid">23440216</pub-id></mixed-citation>
+      </ref>
+      <ref id="B39">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Lombardo</surname><given-names>M. V.</given-names></name><name><surname>Eyler</surname><given-names>L.</given-names></name><name><surname>Moore</surname><given-names>A.</given-names></name><name><surname>Datko</surname><given-names>M.</given-names></name><name><surname>Carter Barnes</surname><given-names>C.</given-names></name><name><surname>Cha</surname><given-names>D.</given-names></name><etal/></person-group> (<year>2019</year>). <article-title>Default mode-visual network hypoconnectivity in an autism subtype with pronounced social visual engagement difficulties</article-title>. <source><italic>eLife</italic></source>
+<volume>8</volume>:<issue>e47427</issue>. <pub-id pub-id-type="doi">10.7554/eLife.47427</pub-id>
+<pub-id pub-id-type="pmid">31843053</pub-id></mixed-citation>
+      </ref>
+      <ref id="B40">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Lord</surname><given-names>L.-D.</given-names></name><name><surname>Expert</surname><given-names>P.</given-names></name><name><surname>Atasoy</surname><given-names>S.</given-names></name><name><surname>Roseman</surname><given-names>L.</given-names></name><name><surname>Rapuano</surname><given-names>K.</given-names></name><name><surname>Lambiotte</surname><given-names>R.</given-names></name><etal/></person-group> (<year>2019</year>). <article-title>Dynamical exploration of the repertoire of brain networks at rest is modulated by psilocybin.</article-title>
+<source><italic>NeuroImage</italic></source>
+<volume>199</volume>
+<fpage>127</fpage>–<lpage>142</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2019.05.060</pub-id>
+<pub-id pub-id-type="pmid">31132450</pub-id></mixed-citation>
+      </ref>
+      <ref id="B41">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Marco</surname><given-names>E. J.</given-names></name><name><surname>Hinkley</surname><given-names>L. B. N.</given-names></name><name><surname>Hill</surname><given-names>S. S.</given-names></name><name><surname>Nagarajan</surname><given-names>S. S.</given-names></name></person-group> (<year>2011</year>). <article-title>Sensory processing in autism: a review of neurophysiologic findings.</article-title>
+<source><italic>Pediatric Res.</italic></source>
+<volume>69</volume>
+<fpage>48R</fpage>–<lpage>54R</lpage>. <pub-id pub-id-type="doi">10.1203/pdr.0b013e3182130c54</pub-id>
+<pub-id pub-id-type="pmid">21289533</pub-id></mixed-citation>
+      </ref>
+      <ref id="B42">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Mash</surname><given-names>L. E.</given-names></name><name><surname>Linke</surname><given-names>A. C.</given-names></name><name><surname>Olson</surname><given-names>L. A.</given-names></name><name><surname>Fishman</surname><given-names>I.</given-names></name><name><surname>Liu</surname><given-names>T. T.</given-names></name><name><surname>Müller</surname><given-names>R. -A.</given-names></name></person-group> (<year>2019</year>). <article-title>Transient states of network connectivity are atypical in autism: a dynamic functional connectivity study.</article-title>
+<source><italic>Hum. Brain Mapp.</italic></source>
+<volume>40</volume>
+<fpage>2377</fpage>–<lpage>2389</lpage>. <pub-id pub-id-type="doi">10.1002/hbm.24529</pub-id>
+<pub-id pub-id-type="pmid">30681228</pub-id></mixed-citation>
+      </ref>
+      <ref id="B43">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Morales-Hidalgo</surname><given-names>P.</given-names></name><name><surname>Roigé-Castellví</surname><given-names>J.</given-names></name><name><surname>Hernández-Martínez</surname><given-names>C.</given-names></name><name><surname>Voltas</surname><given-names>N.</given-names></name><name><surname>Canals</surname><given-names>J.</given-names></name></person-group> (<year>2018</year>). <article-title>Prevalence and characteristics of autism spectrum disorder among spanish school-age children.</article-title>
+<source><italic>J. Autism Dev. Disord.</italic></source>
+<volume>48</volume>
+<fpage>3176</fpage>–<lpage>3190</lpage>. <pub-id pub-id-type="doi">10.1007/s10803-018-3581-2</pub-id>
+<pub-id pub-id-type="pmid">29696527</pub-id></mixed-citation>
+      </ref>
+      <ref id="B44">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Müller</surname><given-names>R.-A.</given-names></name><name><surname>Fishman</surname><given-names>I.</given-names></name></person-group> (<year>2018</year>). <article-title>Brain connectivity and neuroimaging of social networks in autism.</article-title>
+<source><italic>Trends Cogn. Sci.</italic></source>
+<volume>22</volume>
+<fpage>1103</fpage>–<lpage>1116</lpage>. <pub-id pub-id-type="doi">10.1016/j.tics.2018.09.008</pub-id>
+<pub-id pub-id-type="pmid">30391214</pub-id></mixed-citation>
+      </ref>
+      <ref id="B45">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Nebel</surname><given-names>M. B.</given-names></name><name><surname>Eloyan</surname><given-names>A.</given-names></name><name><surname>Nettles</surname><given-names>C. A.</given-names></name><name><surname>Sweeney</surname><given-names>K. L.</given-names></name><name><surname>Ament</surname><given-names>K.</given-names></name><name><surname>Ward</surname><given-names>R. E.</given-names></name><etal/></person-group> (<year>2016</year>). <article-title>Intrinsic visual-motor synchrony correlates with social deficits in autism</article-title>. <source><italic>Biol. Psychiatry</italic></source>
+<volume>79</volume>, <fpage>633</fpage>–<lpage>641</lpage>. <pub-id pub-id-type="doi">10.1016/j.biopsych.2015.08.029</pub-id>
+<pub-id pub-id-type="pmid">26543004</pub-id></mixed-citation>
+      </ref>
+      <ref id="B46">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Oldehinkel</surname><given-names>M.</given-names></name><name><surname>Mennes</surname><given-names>M.</given-names></name><name><surname>Marquand</surname><given-names>A.</given-names></name><name><surname>Charman</surname><given-names>T.</given-names></name><name><surname>Tillmann</surname><given-names>J.</given-names></name><name><surname>Ecker</surname><given-names>C.</given-names></name><etal/></person-group> (<year>2019</year>). <article-title>Altered connectivity between cerebellum, visual, and sensory-motor networks in autism spectrum disorder: results from the EU-AIMS longitudinal European autism project</article-title>. <source><italic>Biol. Psychiatry Cogn. Neurosci. Neuroimaging</italic></source>
+<volume>4</volume>, <fpage>260</fpage>–<lpage>270</lpage>. <pub-id pub-id-type="doi">10.1016/j.bpsc.2018.11.010</pub-id>
+<pub-id pub-id-type="pmid">30711508</pub-id></mixed-citation>
+      </ref>
+      <ref id="B47">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Ponce-Alvarez</surname><given-names>A.</given-names></name><name><surname>Deco</surname><given-names>G.</given-names></name><name><surname>Hagmann</surname><given-names>P.</given-names></name><name><surname>Romani</surname><given-names>G. L.</given-names></name><name><surname>Mantini</surname><given-names>D.</given-names></name><name><surname>Corbetta</surname><given-names>M.</given-names></name></person-group> (<year>2015</year>). <article-title>Resting-state temporal synchronization networks emerge from connectivity topology and heterogeneity.</article-title>
+<source><italic>PLoS Comput. Biol.</italic></source>
+<volume>11</volume>:<issue>e1004100</issue>. <pub-id pub-id-type="doi">10.1371/journal.pcbi.1004100</pub-id>
+<pub-id pub-id-type="pmid">25692996</pub-id></mixed-citation>
+      </ref>
+      <ref id="B48">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Power</surname><given-names>J. D.</given-names></name><name><surname>Barnes</surname><given-names>K. A.</given-names></name><name><surname>Snyder</surname><given-names>A. Z.</given-names></name><name><surname>Schlaggar</surname><given-names>B. L.</given-names></name><name><surname>Petersen</surname><given-names>S. E.</given-names></name></person-group> (<year>2012</year>). <article-title>Spurious but systematic correlations in functional connectivity MRI networks arise from subject motion.</article-title>
+<source><italic>NeuroImage</italic></source>
+<volume>59</volume>
+<fpage>2142</fpage>–<lpage>2154</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2011.10.018</pub-id>
+<pub-id pub-id-type="pmid">22019881</pub-id></mixed-citation>
+      </ref>
+      <ref id="B49">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Preti</surname><given-names>M. G.</given-names></name><name><surname>Bolton</surname><given-names>T. A. W.</given-names></name><name><surname>van de Ville</surname><given-names>D.</given-names></name></person-group> (<year>2017</year>). <article-title>The dynamic functional connectome: state-of-the-art and perspectives.</article-title>
+<source><italic>NeuroImage</italic></source>
+<volume>160</volume>
+<fpage>41</fpage>–<lpage>54</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2016.12.061</pub-id>
+<pub-id pub-id-type="pmid">28034766</pub-id></mixed-citation>
+      </ref>
+      <ref id="B50">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Rabany</surname><given-names>L.</given-names></name><name><surname>Brocke</surname><given-names>S.</given-names></name><name><surname>Calhoun</surname><given-names>V. D.</given-names></name><name><surname>Pittman</surname><given-names>B.</given-names></name><name><surname>Corbera</surname><given-names>S.</given-names></name><name><surname>Wexler</surname><given-names>B. E.</given-names></name><etal/></person-group> (<year>2019</year>). <article-title>Dynamic functional connectivity in schizophrenia and autism spectrum disorder: convergence, divergence and classification.</article-title>
+<source><italic>NeuroImage Clin.</italic></source>
+<volume>24</volume>:<issue>101966</issue>. <pub-id pub-id-type="doi">10.1016/j.nicl.2019.101966</pub-id>
+<pub-id pub-id-type="pmid">31401405</pub-id></mixed-citation>
+      </ref>
+      <ref id="B51">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Rashid</surname><given-names>B.</given-names></name><name><surname>Arbabshirani</surname><given-names>M. R.</given-names></name><name><surname>Damaraju</surname><given-names>E.</given-names></name><name><surname>Cetin</surname><given-names>M. S.</given-names></name><name><surname>Miller</surname><given-names>R.</given-names></name><name><surname>Pearlson</surname><given-names>G. D.</given-names></name><etal/></person-group> (<year>2016</year>). <article-title>Classification of schizophrenia and bipolar patients using static and dynamic resting-state fMRI brain connectivity.</article-title>
+<source><italic>NeuroImage</italic></source>
+<volume>134</volume>
+<fpage>645</fpage>–<lpage>657</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2016.04.051</pub-id>
+<pub-id pub-id-type="pmid">27118088</pub-id></mixed-citation>
+      </ref>
+      <ref id="B52">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Rashid</surname><given-names>B.</given-names></name><name><surname>Blanken</surname><given-names>L. M. E.</given-names></name><name><surname>Muetzel</surname><given-names>R. L.</given-names></name><name><surname>Miller</surname><given-names>R.</given-names></name><name><surname>Damaraju</surname><given-names>E.</given-names></name><name><surname>Arbabshirani</surname><given-names>M. R.</given-names></name><etal/></person-group> (<year>2018</year>). <article-title>Connectivity dynamics in typical development and its relationship to autistic traits and autism spectrum disorder.</article-title>
+<source><italic>Hum. Brain Mapp.</italic></source>
+<volume>39</volume>
+<fpage>3127</fpage>–<lpage>3142</lpage>. <pub-id pub-id-type="doi">10.1002/hbm.24064</pub-id>
+<pub-id pub-id-type="pmid">29602272</pub-id></mixed-citation>
+      </ref>
+      <ref id="B53">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Roberts</surname><given-names>J. A.</given-names></name><name><surname>Gollo</surname><given-names>L. L.</given-names></name><name><surname>Abeysuriya</surname><given-names>R. G.</given-names></name><name><surname>Roberts</surname><given-names>G.</given-names></name><name><surname>Mitchell</surname><given-names>P. B.</given-names></name><name><surname>Woolrich</surname><given-names>M. W.</given-names></name><etal/></person-group> (<year>2019</year>). <article-title>Metastable brain waves.</article-title>
+<source><italic>Nat. Commun.</italic></source>
+<volume>10</volume>:<issue>1056</issue>. <pub-id pub-id-type="doi">10.1038/s41467-019-08999-0</pub-id>
+<pub-id pub-id-type="pmid">30837462</pub-id></mixed-citation>
+      </ref>
+      <ref id="B54">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Sakoğlu</surname><given-names>Ü</given-names></name><name><surname>Pearlson</surname><given-names>G. D.</given-names></name><name><surname>Kiehl</surname><given-names>K. A.</given-names></name><name><surname>Wang</surname><given-names>Y. M.</given-names></name><name><surname>Michael</surname><given-names>A. M.</given-names></name><name><surname>Calhoun</surname><given-names>V. D.</given-names></name></person-group> (<year>2010</year>). <article-title>A method for evaluating dynamic functional network connectivity and task-modulation: application to schizophrenia.</article-title>
+<source><italic>Magn. Reson. Mater. Phys. Biol. Med.</italic></source>
+<volume>23</volume>
+<fpage>351</fpage>–<lpage>366</lpage>. <pub-id pub-id-type="doi">10.1007/s10334-010-0197-8</pub-id>
+<pub-id pub-id-type="pmid">20162320</pub-id></mixed-citation>
+      </ref>
+      <ref id="B55">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Saqr</surname><given-names>Y.</given-names></name><name><surname>Braun</surname><given-names>E.</given-names></name><name><surname>Porter</surname><given-names>K.</given-names></name><name><surname>Barnette</surname><given-names>D.</given-names></name><name><surname>Hanks</surname><given-names>C.</given-names></name></person-group> (<year>2017</year>). <article-title>Addressing medical needs of adolescents and adults with autism spectrum disorders in a primary care setting.</article-title>
+<source><italic>Autism</italic></source>
+<volume>22</volume>
+<fpage>51</fpage>–<lpage>61</lpage>. <pub-id pub-id-type="doi">10.1177/1362361317709970</pub-id>
+<pub-id pub-id-type="pmid">28750547</pub-id></mixed-citation>
+      </ref>
+      <ref id="B56">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Shine</surname><given-names>J. M.</given-names></name><name><surname>Koyejo</surname><given-names>O.</given-names></name><name><surname>Bell</surname><given-names>P. T.</given-names></name><name><surname>Gorgolewski</surname><given-names>K. J.</given-names></name><name><surname>Gilat</surname><given-names>M.</given-names></name><name><surname>Poldrack</surname><given-names>R. A.</given-names></name></person-group> (<year>2015</year>). <article-title>Estimation of dynamic functional connectivity using multiplication of temporal derivatives.</article-title>
+<source><italic>NeuroImage</italic></source>
+<volume>122</volume>
+<fpage>399</fpage>–<lpage>407</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2015.07.064</pub-id>
+<pub-id pub-id-type="pmid">26231247</pub-id></mixed-citation>
+      </ref>
+      <ref id="B57">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Supekar</surname><given-names>K.</given-names></name><name><surname>Uddin</surname><given-names>L. Q.</given-names></name><name><surname>Khouzam</surname><given-names>A.</given-names></name><name><surname>Phillips</surname><given-names>J.</given-names></name><name><surname>Gaillard</surname><given-names>W. D.</given-names></name><name><surname>Kenworthy</surname><given-names>L. E.</given-names></name><etal/></person-group> (<year>2013</year>). <article-title>Brain hyperconnectivity in children with autism and its links to social deficits.</article-title>
+<source><italic>Cell Rep.</italic></source>
+<volume>5</volume>
+<fpage>738</fpage>–<lpage>747</lpage>. <pub-id pub-id-type="doi">10.1016/j.celrep.2013.10.001</pub-id>
+<pub-id pub-id-type="pmid">24210821</pub-id></mixed-citation>
+      </ref>
+      <ref id="B58">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Tagliazucchi</surname><given-names>E.</given-names></name><name><surname>Balenzuela</surname><given-names>P.</given-names></name><name><surname>Fraiman</surname><given-names>D.</given-names></name><name><surname>Chialvo</surname><given-names>D. R.</given-names></name></person-group> (<year>2012</year>). <article-title>Criticality in large-scale brain fMRI dynamics unveiled by a novel point process analysis.</article-title>
+<source><italic>Front. Physiol.</italic></source>
+<volume>3</volume>:<issue>15</issue>. <pub-id pub-id-type="doi">10.3389/fphys.2012.00015</pub-id>
+<pub-id pub-id-type="pmid">22347863</pub-id></mixed-citation>
+      </ref>
+      <ref id="B59">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Thomas Yeo</surname><given-names>B. T.</given-names></name><name><surname>Krienen</surname><given-names>F. M.</given-names></name><name><surname>Sepulcre</surname><given-names>J.</given-names></name><name><surname>Sabuncu</surname><given-names>M. R.</given-names></name><name><surname>Lashkari</surname><given-names>D.</given-names></name><name><surname>Hollinshead</surname><given-names>M.</given-names></name><etal/></person-group> (<year>2011</year>). <article-title>The organization of the human cerebral cortex estimated by intrinsic functional connectivity</article-title>. <source><italic>J. Neurophysiol.</italic></source>
+<volume>106</volume>, <fpage>1125</fpage>–<lpage>1165</lpage>. <pub-id pub-id-type="doi">10.1152/jn.00338.2011</pub-id>
+<pub-id pub-id-type="pmid">21653723</pub-id></mixed-citation>
+      </ref>
+      <ref id="B60">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>von dem Hagen</surname><given-names>E. A. H.</given-names></name><name><surname>Stoyanova</surname><given-names>R. S.</given-names></name><name><surname>Baron-Cohen</surname><given-names>S.</given-names></name><name><surname>Calder</surname><given-names>A. J.</given-names></name></person-group> (<year>2012</year>). <article-title>Reduced functional connectivity within and between ‘social’ resting state networks in autism spectrum conditions.</article-title>
+<source><italic>Soc. Cogn. Affect. Neurosci.</italic></source>
+<volume>8</volume>
+<fpage>694</fpage>–<lpage>701</lpage>. <pub-id pub-id-type="doi">10.1093/scan/nss053</pub-id>
+<pub-id pub-id-type="pmid">22563003</pub-id></mixed-citation>
+      </ref>
+      <ref id="B61">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Wang</surname><given-names>S.</given-names></name><name><surname>Wen</surname><given-names>H.</given-names></name><name><surname>Hu</surname><given-names>X.</given-names></name><name><surname>Xie</surname><given-names>P.</given-names></name><name><surname>Qiu</surname><given-names>S.</given-names></name><name><surname>Qian</surname><given-names>Y.</given-names></name><etal/></person-group> (<year>2020</year>). <article-title>Transition and dynamic reconfiguration of whole-brain network in major depressive disorder.</article-title>
+<source><italic>Mo.l Neurobiol.</italic></source>
+<volume>57</volume>
+<fpage>4031</fpage>–<lpage>4044</lpage>. <pub-id pub-id-type="doi">10.1007/s12035-020-01995-2</pub-id>
+<pub-id pub-id-type="pmid">32651757</pub-id></mixed-citation>
+      </ref>
+      <ref id="B62">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Wang</surname><given-names>S.</given-names></name><name><surname>Wen</surname><given-names>H.</given-names></name><name><surname>Qiu</surname><given-names>S.</given-names></name><name><surname>Xie</surname><given-names>P.</given-names></name><name><surname>Qiu</surname><given-names>J.</given-names></name><name><surname>He</surname><given-names>H.</given-names></name></person-group> (<year>2022</year>). <article-title>Driving brain state transitions in major depressive disorder through external stimulation.</article-title>
+<source><italic>Hum. Brain Mapp.</italic></source>
+<volume>43</volume>
+<fpage>5326</fpage>–<lpage>5339</lpage>. <pub-id pub-id-type="doi">10.1002/hbm.26006</pub-id>
+<pub-id pub-id-type="pmid">35808927</pub-id></mixed-citation>
+      </ref>
+      <ref id="B63">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Wee</surname><given-names>C.-Y.</given-names></name><name><surname>Yap</surname><given-names>P.-T.</given-names></name><name><surname>Shen</surname><given-names>D.</given-names></name></person-group> (<year>2016</year>). <article-title>Diagnosis of autism spectrum disorders using temporally distinct resting-state functional connectivity networks.</article-title>
+<source><italic>CNS Neurosci. Ther.</italic></source>
+<volume>22</volume>
+<fpage>212</fpage>–<lpage>219</lpage>. <pub-id pub-id-type="doi">10.1111/cns.12499</pub-id>
+<pub-id pub-id-type="pmid">26821773</pub-id></mixed-citation>
+      </ref>
+      <ref id="B64">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Whyatt</surname><given-names>C. P.</given-names></name><name><surname>Craig</surname><given-names>C. M.</given-names></name></person-group> (<year>2013</year>). <article-title>Sensory-motor problems in autism</article-title>. <source><italic>Front. Integr. Neurosci.</italic></source>
+<volume>7</volume>, <fpage>1</fpage>–<lpage>12</lpage>. <pub-id pub-id-type="doi">10.3389/fnint.2013.00051</pub-id>
+<pub-id pub-id-type="pmid">23355815</pub-id></mixed-citation>
+      </ref>
+      <ref id="B65">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Yan</surname><given-names>C.-G.</given-names></name><name><surname>Wang</surname><given-names>X.-D.</given-names></name><name><surname>Zuo</surname><given-names>X.-N.</given-names></name><name><surname>Zang</surname><given-names>Y.-F.</given-names></name></person-group> (<year>2016</year>). <article-title>DPABI: data processing &amp; analysis for (resting-state) brain imaging.</article-title>
+<source><italic>Neuroinformatics</italic></source>
+<volume>14</volume>
+<fpage>339</fpage>–<lpage>351</lpage>. <pub-id pub-id-type="doi">10.1007/s12021-016-9299-4</pub-id>
+<pub-id pub-id-type="pmid">27075850</pub-id></mixed-citation>
+      </ref>
+      <ref id="B66">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Yang</surname><given-names>Z.</given-names></name><name><surname>Craddock</surname><given-names>R. C.</given-names></name><name><surname>Margulies</surname><given-names>D.</given-names></name><name><surname>Yan</surname><given-names>C.-G.</given-names></name><name><surname>Milham</surname><given-names>M. P.</given-names></name></person-group> (<year>2014</year>). <article-title>Common intrinsic connectivity states among posteromedial cortex subdivisions: insights from analysis of temporal dynamics.</article-title>
+<source><italic>NeuroImage</italic></source>
+<volume>93</volume>
+<fpage>124</fpage>–<lpage>137</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2014.02.014</pub-id>
+<pub-id pub-id-type="pmid">24560717</pub-id></mixed-citation>
+      </ref>
+      <ref id="B67">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Yao</surname><given-names>Z.</given-names></name><name><surname>Hu</surname><given-names>B.</given-names></name><name><surname>Xie</surname><given-names>Y.</given-names></name><name><surname>Zheng</surname><given-names>F.</given-names></name><name><surname>Liu</surname><given-names>G.</given-names></name><name><surname>Chen</surname><given-names>X.</given-names></name><etal/></person-group> (<year>2016</year>). <article-title>Resting-state time-varying analysis reveals aberrant variations of functional connectivity in autism.</article-title>
+<source><italic>Front. Hum. Neurosci.</italic></source>
+<volume>10</volume>:<issue>463</issue>. <pub-id pub-id-type="doi">10.3389/fnhum.2016.00463</pub-id>
+<pub-id pub-id-type="pmid">27695408</pub-id></mixed-citation>
+      </ref>
+      <ref id="B68">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Yerys</surname><given-names>B. E.</given-names></name><name><surname>Gordon</surname><given-names>E. M.</given-names></name><name><surname>Abrams</surname><given-names>D. N.</given-names></name><name><surname>Satterthwaite</surname><given-names>T. D.</given-names></name><name><surname>Weinblatt</surname><given-names>R.</given-names></name><name><surname>Jankowski</surname><given-names>K. F.</given-names></name><etal/></person-group> (<year>2015</year>). <article-title>Default mode network segregation and social deficits in autism spectrum disorder: evidence from non-medicated children.</article-title>
+<source><italic>NeuroImag: Clin.</italic></source>
+<volume>9</volume>
+<fpage>223</fpage>–<lpage>232</lpage>. <pub-id pub-id-type="doi">10.1016/j.nicl.2015.07.018</pub-id>
+<pub-id pub-id-type="pmid">26484047</pub-id></mixed-citation>
+      </ref>
+      <ref id="B69">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zhan</surname><given-names>Y.</given-names></name><name><surname>Paolicelli</surname><given-names>R. C.</given-names></name><name><surname>Sforazzini</surname><given-names>F.</given-names></name><name><surname>Weinhard</surname><given-names>L.</given-names></name><name><surname>Bolasco</surname><given-names>G.</given-names></name><name><surname>Pagani</surname><given-names>F.</given-names></name><etal/></person-group> (<year>2014</year>). <article-title>Deficient neuron-microglia signaling results in impaired functional brain connectivity and social behavior.</article-title>
+<source><italic>Nat. Neurosci.</italic></source>
+<volume>17</volume>
+<fpage>400</fpage>–<lpage>406</lpage>. <pub-id pub-id-type="doi">10.1038/nn.3641</pub-id>
+<pub-id pub-id-type="pmid">24487234</pub-id></mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

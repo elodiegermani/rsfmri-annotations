@@ -1,0 +1,1779 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">Diagnostics (Basel)</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Diagnostics (Basel)</journal-id>
+      <journal-id journal-id-type="publisher-id">diagnostics</journal-id>
+      <journal-title-group>
+        <journal-title>Diagnostics</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">2075-4418</issn>
+      <publisher>
+        <publisher-name>MDPI</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">30901848</article-id>
+      <article-id pub-id-type="pmc">6468479</article-id>
+      <article-id pub-id-type="doi">10.3390/diagnostics9010032</article-id>
+      <article-id pub-id-type="publisher-id">diagnostics-09-00032</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Link-Level Functional Connectivity Neuroalterations in Autism Spectrum Disorder: A Developmental Resting-State fMRI Study</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Borràs-Ferrís</surname>
+            <given-names>Lluis</given-names>
+          </name>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Pérez-Ramírez</surname>
+            <given-names>Úrsula</given-names>
+          </name>
+        </contrib>
+        <contrib contrib-type="author">
+          <contrib-id contrib-id-type="orcid" authenticated="true">https://orcid.org/0000-0002-2825-3646</contrib-id>
+          <name>
+            <surname>Moratal</surname>
+            <given-names>David</given-names>
+          </name>
+          <xref rid="c1-diagnostics-09-00032" ref-type="corresp">*</xref>
+        </contrib>
+      </contrib-group>
+      <aff id="af1-diagnostics-09-00032">Center for Biomaterials and Tissue Engineering, Universitat Politècnica de València, 46022 Valencia, Spain; <email>lluisb3@gmail.com</email> (L.B.-F.); <email>ursulaperezr@gmail.com</email> (Ú.P.-R.)</aff>
+      <author-notes>
+        <corresp id="c1-diagnostics-09-00032"><label>*</label>Correspondence: <email>dmoratal@eln.upv.es</email></corresp>
+      </author-notes>
+      <pub-date pub-type="epub">
+        <day>21</day>
+        <month>3</month>
+        <year>2019</year>
+      </pub-date>
+      <pub-date pub-type="collection">
+        <month>3</month>
+        <year>2019</year>
+      </pub-date>
+      <volume>9</volume>
+      <issue>1</issue>
+      <elocation-id>32</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>23</day>
+          <month>1</month>
+          <year>2019</year>
+        </date>
+        <date date-type="accepted">
+          <day>08</day>
+          <month>3</month>
+          <year>2019</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>© 2019 by the authors.</copyright-statement>
+        <copyright-year>2019</copyright-year>
+        <license license-type="open-access">
+          <license-p>Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license (<ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</ext-link>).</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>Autism spectrum disorder (ASD) is a neurological and developmental disorder whose late diagnosis is based on subjective tests. In seeking for earlier diagnosis, we aimed to find objective biomarkers via analysis of resting-state functional MRI (rs-fMRI) images obtained from the Autism Brain Image Data Exchange (ABIDE) database. Thus, we estimated brain functional connectivity (FC) between pairs of regions as the statistical dependence between their neural-related blood-oxygen-level-dependent (BOLD) signals. We compared FC of individuals with ASD and healthy controls, matched by age and intelligence quotient (IQ), and split into three age groups (50 children, 98 adolescents, and 32 adults), from a developmental perspective. After estimating the correlation, we observed hypoconnectivities in children and adolescents with ASD between regions belonging to the default mode network (DMN). Concretely, in children, FC decreased between the left middle temporal gyrus and right frontal pole (<italic>p</italic> = 0.0080), and between the left orbitofrontal cortex and right superior frontal gyrus (<italic>p</italic> = 0.0144). In adolescents, this decrease was observed between bilateral postcentral gyri (<italic>p</italic> = 0.0012), and between the right precuneus and right middle temporal gyrus (<italic>p</italic> = 0.0236). These results help to gain a better understanding of the involved regions on autism and its connection with the affected superior cognitive brain functions.</p>
+      </abstract>
+      <kwd-group>
+        <kwd>autism</kwd>
+        <kwd>brain functional connectivity</kwd>
+        <kwd>default mode network</kwd>
+        <kwd>full correlation analysis</kwd>
+        <kwd>partial correlation analysis</kwd>
+        <kwd>region of interest analysis</kwd>
+        <kwd>resting-state functional MRI</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec sec-type="intro" id="sec1-diagnostics-09-00032">
+      <title>1. Introduction</title>
+      <p>Autism spectrum disorder (ASD) is a neurodevelopmental condition that starts in childhood and lasts a lifetime. ASD introduces three fundamental characteristics: qualitative disruption of relationships, alterations in the communication and speaking skills, and a lack of mental and behavioral flexibilities. This suggests that these deficits observed in patients with ASD are the result of a deficient executive function that includes problems in working memory, inhibition, mental flexibility, and planning [<xref rid="B1-diagnostics-09-00032" ref-type="bibr">1</xref>]. Worldwide, the prevalence of ASD is 1 in 100 children [<xref rid="B2-diagnostics-09-00032" ref-type="bibr">2</xref>]. Unfortunately, no treatment can cure this disorder and, due to the heterogeneity in phenotype, personalized therapy is necessary.</p>
+      <p>Nowadays, the diagnosis of ASD consists of a combination of clinical and psychological tests that aim to detect the associated symptoms of this disorder using the Diagnostic and Statistical Manual of Mental Disorders (DSM) [<xref rid="B3-diagnostics-09-00032" ref-type="bibr">3</xref>]. Consequently, the diagnosis is focused on observable symptoms and not on early signs. For this reason, it is subjective and late, since the symptoms usually appear from the age of three years old. Therefore, it is of utmost importance to provide biomarkers to characterize the brain’s functional alterations using functional magnetic resonance imaging (fMRI) images of the brain [<xref rid="B4-diagnostics-09-00032" ref-type="bibr">4</xref>]. Commonly, MRI images are being used in this field because they are a powerful non-invasive tool for studying the developmental trajectory of the brain. Quantitative MRI biomarkers promise to achieve early diagnosis of this disorder which would increase the effectiveness of therapies to improve the behavior and communication of autistic people [<xref rid="B5-diagnostics-09-00032" ref-type="bibr">5</xref>].</p>
+      <p>The analysis of low-frequency oscillations in the blood-oxygen-level-dependent (BOLD) signal, extracted from fMRI images, indirectly allows calculating neuronal activity. Functional connectivity (FC) is defined as the statistical dependence between BOLD signals. FC shows how the regions are organized and interrelated, and reveals which regions communicate with other regions to serve specific functions [<xref rid="B6-diagnostics-09-00032" ref-type="bibr">6</xref>]. To diagnose ASD, it is important to acquire fMRI images in resting state (rs-fMRI) because one of the most important brain networks with anomalies in FC due to ASD—the default mode network (DMN)—it is activated in rest [<xref rid="B7-diagnostics-09-00032" ref-type="bibr">7</xref>].</p>
+      <p>Several research studies show discrepancies in brain FC in the DMN when individuals with ASD are being compared with control subjects: hyperconnectivity (children [<xref rid="B8-diagnostics-09-00032" ref-type="bibr">8</xref>,<xref rid="B9-diagnostics-09-00032" ref-type="bibr">9</xref>] and children together with adolescents [<xref rid="B10-diagnostics-09-00032" ref-type="bibr">10</xref>,<xref rid="B11-diagnostics-09-00032" ref-type="bibr">11</xref>]) or hypoconnectivity (children and adolescents [<xref rid="B12-diagnostics-09-00032" ref-type="bibr">12</xref>]; children, adolescents, and adults [<xref rid="B13-diagnostics-09-00032" ref-type="bibr">13</xref>], adolescents [<xref rid="B14-diagnostics-09-00032" ref-type="bibr">14</xref>]; adolescents and adults [<xref rid="B15-diagnostics-09-00032" ref-type="bibr">15</xref>]; and adults [<xref rid="B16-diagnostics-09-00032" ref-type="bibr">16</xref>,<xref rid="B17-diagnostics-09-00032" ref-type="bibr">17</xref>]). The theories of hypoconnectivity explain a reduction in the interregional neuronal connections, whereas the hyperconnectivity studies an increment of neuronal connections between some brain regions [<xref rid="B1-diagnostics-09-00032" ref-type="bibr">1</xref>]. Among the possible causes of these contradictory results are (1) changes in brain development because of a wide age range [<xref rid="B18-diagnostics-09-00032" ref-type="bibr">18</xref>], (2) a different methodology of analysis and different fMRI acquisition parameters [<xref rid="B19-diagnostics-09-00032" ref-type="bibr">19</xref>], and (3) ASD heterogeneity [<xref rid="B1-diagnostics-09-00032" ref-type="bibr">1</xref>].</p>
+      <p>Our purpose was the statistical analysis of the alterations in brain FC inside the DMN and other brain regions directly implicated between autists and healthy controls. The subjects were divided into different age ranges (children, adolescents, and adults), to study autism from a developmental point of view, performing a correlation analysis between brain regions from rs-fMRI images. With the separation in age ranges we aim to give a response to the controversy of hyper- and hypoconnectivities between the same brain networks in previous studies where subjects were not divided into age groups, despite ASD being a neurodevelopmental condition. In contrast to seed-based correlation analyses (SCA) [<xref rid="B20-diagnostics-09-00032" ref-type="bibr">20</xref>] and independent component analysis (ICA) [<xref rid="B21-diagnostics-09-00032" ref-type="bibr">21</xref>] that are focused on functionally connected networks with connectivity weights, ROI-based analyses [<xref rid="B22-diagnostics-09-00032" ref-type="bibr">22</xref>] facilitate the biological interpretation of the results because the ROIs are anatomical brain regions with a known function.</p>
+    </sec>
+    <sec id="sec2-diagnostics-09-00032">
+      <title>2. Materials and Methods</title>
+      <sec id="sec2dot1-diagnostics-09-00032">
+        <title>2.1. Subjects and Image Acquisition</title>
+        <p>The rs-fMRI images of ASD and control subjects were obtained from the public and multicenter Autism Brain Image Data Exchange (ABIDE) [<xref rid="B23-diagnostics-09-00032" ref-type="bibr">23</xref>] database. This database offers preprocessed rs-fMRI images and demographical information of 1112 subjects from 16 universities (539 ASD individuals and 573 typical controls) [<xref rid="B24-diagnostics-09-00032" ref-type="bibr">24</xref>]. In this study, only right-handed men were included because they are the majority gender in the database (&gt;75%), and from ASD individuals only the autists. Three age ranges were established: children (&lt;12 years old), adolescents (12–18 years old), and adults (&gt;18 years old), to take into account the development, matching in each age range the controls and the autists by age (±2 years old in children and adolescents, and ±5 years old in adults) and intelligence quotient (IQ) (±10 points). The characteristics of the subjects that belonged to this study are shown in <xref rid="diagnostics-09-00032-t001" ref-type="table">Table 1</xref>. Regarding the children, two groups were considered: (1) children whose images were acquired in different universities and (2) children solely scanned in the New York Langone Medical Center (NYU), to study the importance of the homogeneity in rs-fMRI acquisition. We selected the the NYU dataset rather than the University of California, Los Angeles (UCLA) or the University of Michigan (UM) datasets because it contained more subjects.</p>
+      </sec>
+      <sec id="sec2dot2-diagnostics-09-00032">
+        <title>2.2. Preprocessing</title>
+        <p>The ABIDE team preprocessed the rs-fMRI images with Connectome Computation System (CCS) [<xref rid="B25-diagnostics-09-00032" ref-type="bibr">25</xref>]. The main steps (<xref ref-type="fig" rid="diagnostics-09-00032-f001">Figure 1</xref>a) were (1) discarding of the first four brain volumes; (2) noise removal—brain volumes with extreme intensity, slice timing, and motion correction; (3) brain extraction; (4) 4D global mean normalization of image intensity with a value of 10,000; (5) nuisance signal regression (Friston’s 24-parameter motion curves, mean time series of white matter and cerebrospinal fluid, then linear and quadratic trends); (6) high pass filtering (0.01 Hz) to remove the continuous component and (7) nonlinear registration to MNI152 (Montreal Neurological Institute, McGill University, Montreal, Canada) template.</p>
+      </sec>
+      <sec id="sec2dot3-diagnostics-09-00032">
+        <title>2.3. rs-fMRI Time Series Extraction</title>
+        <p>First, 38 anatomical regions of interest (ROIs) were selected (19 ROIs in each brain hemisphere, <xref rid="diagnostics-09-00032-t002" ref-type="table">Table 2</xref>) belonging to the core DMN or with a high probability to be affected in autism [<xref rid="B18-diagnostics-09-00032" ref-type="bibr">18</xref>]. All the ROIs are included in the Harvard–Oxford brain atlas [<xref rid="B26-diagnostics-09-00032" ref-type="bibr">26</xref>]. The ABIDE team publicly shared the mean temporal signals from each ROI; concretely, for each voxel of the ROI, the time series is extracted and then the mean of all these signals is computed.</p>
+      </sec>
+      <sec id="sec2dot4-diagnostics-09-00032">
+        <title>2.4. Full and Partial Correlation Analyses</title>
+        <p>A correlation shows the power and the direction in which two or more variables are linearly associated. In this study, the amount of FC present between two brain regions is shown. Full correlation measures the amount of FC between two signals directly connected with each other or indirectly through other regions, and it is calculated by Equation (1):<disp-formula id="FD1-diagnostics-09-00032"><label>(1)</label><mml:math id="mm1"><mml:mrow><mml:mrow><mml:mi>c</mml:mi><mml:mi>o</mml:mi><mml:mi>r</mml:mi><mml:msub><mml:mi>r</mml:mi><mml:mrow><mml:mi>X</mml:mi><mml:mi>Y</mml:mi></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:mi>c</mml:mi><mml:mi>o</mml:mi><mml:msub><mml:mi>v</mml:mi><mml:mrow><mml:mi>X</mml:mi><mml:mi>Y</mml:mi></mml:mrow></mml:msub></mml:mrow><mml:mrow><mml:msub><mml:mi>S</mml:mi><mml:mi>X</mml:mi></mml:msub><mml:msub><mml:mi>S</mml:mi><mml:mi>Y</mml:mi></mml:msub></mml:mrow></mml:mfrac><mml:mo>,</mml:mo></mml:mrow></mml:mrow></mml:math></disp-formula>
+where <italic>X</italic> and <italic>Y</italic> are BOLD temporal signals, <inline-formula><mml:math id="mm2"><mml:mrow><mml:mrow><mml:mi>c</mml:mi><mml:mi>o</mml:mi><mml:msub><mml:mi>v</mml:mi><mml:mrow><mml:mi>X</mml:mi><mml:mi>Y</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:mrow></mml:math></inline-formula> is the covariance between <italic>X</italic> and <italic>Y</italic>, and <italic>S</italic> is the standard deviation of the temporal signals. The main unit of full correlation is the <italic>ρ</italic> of Pearson with values in the range of [−1, 1], which is recommended to transform to Fisher’s <italic>Z</italic> [<xref rid="B27-diagnostics-09-00032" ref-type="bibr">27</xref>].</p>
+        <p>Partial correlation is calculated similarly as full correlation, but the inverse covariance matrix is used. This correlation has the objective of estimating only the direct functional connections between pairs of regions, meaning between regions anatomically connected to each other. Pursuing this aim, the correlations between the pair of signals under study are calculated once the variance of the rest of the signals is linearly removed [<xref rid="B27-diagnostics-09-00032" ref-type="bibr">27</xref>]. In this study, L2-regularized partial correlation was used with Tikhonov regularization. This regularization helps to get a stable approximation of the exact solution in the case of a wrong approach of the equations due to noise [<xref rid="B28-diagnostics-09-00032" ref-type="bibr">28</xref>]. The correlation value between each pair of regions is shown in a matrix of correlation with size N × N, with N being the number of regions under study (<xref ref-type="fig" rid="diagnostics-09-00032-f001">Figure 1</xref>b).</p>
+        <p>The statistical correlation analysis was performed with FSLNets v0.6, part of the neuroimaging tool FSL (FMRIB Software Library, Oxford Centre for Functional MRI of the Brain, Oxford, UK) [<xref rid="B29-diagnostics-09-00032" ref-type="bibr">29</xref>,<xref rid="B30-diagnostics-09-00032" ref-type="bibr">30</xref>] and additional scripts in MATLAB R2016a (The MathWorks, Inc., Natick, MA, USA).</p>
+      </sec>
+      <sec id="sec2dot5-diagnostics-09-00032">
+        <title>2.5. Statistical Analysis</title>
+        <p>The characteristics of the study were modeled using the general linear model (GLM) [<xref rid="B31-diagnostics-09-00032" ref-type="bibr">31</xref>] written in Equation (2):<disp-formula id="FD2-diagnostics-09-00032"><label>(2)</label><mml:math id="mm3"><mml:mrow><mml:mrow><mml:mi>Y</mml:mi><mml:mo>=</mml:mo><mml:mi>X</mml:mi><mml:mo>·</mml:mo><mml:mi>B</mml:mi><mml:mo>+</mml:mo><mml:mi>ε</mml:mi><mml:mo>,</mml:mo></mml:mrow></mml:mrow></mml:math></disp-formula>
+where <italic>Y</italic> is the correlation matrix obtained from the rs-fMRI signals, <italic>X</italic> is the design matrix that classifies controls or autists, and models the age and the IQ (both in relation to the mean of all the individuals), and the acquisition center, <italic>B</italic>, is the matrix with the regression parameters to get, and <italic>ε</italic> is the noise, with mean zero and standard deviation of 1.</p>
+        <p>The null hypothesis covered the fact that the full or partial correlation between two regions did not differ between controls and autists. Two alternative hypotheses or contrasts were defined (<xref ref-type="fig" rid="diagnostics-09-00032-f001">Figure 1</xref>c): (c1) FC in controls was greater than in autists and (c2) FC in autistic individuals was greater than in controls. The values of <italic>p</italic> were corrected with family-wise error rate (FWER) by 5000 permutations [<xref rid="B32-diagnostics-09-00032" ref-type="bibr">32</xref>]. The threshold for statistical significance was fixed as 0.025 because there were two contrasts.</p>
+      </sec>
+    </sec>
+    <sec sec-type="results" id="sec3-diagnostics-09-00032">
+      <title>3. Results</title>
+      <p>The results were grouped by age range: children, adolescents, and adults. As the significant results were only found in full correlation, and not in partial correlation, it seems that there were indirect connections between regions.</p>
+      <sec id="sec3dot1-diagnostics-09-00032">
+        <title>3.1. Functional Connectivity in Children</title>
+        <p>In the analysis, taking into account only the subjects from NYU, two pairs of regions showed significant results in full correlation (<xref ref-type="fig" rid="diagnostics-09-00032-f002">Figure 2</xref>). Concretely, there was hypoconnectivity in the autistic children with respect to the controls in the following pairs of regions: anterior middle temporal gyrus (aMTG) in the left hemisphere and the right frontal pole (FP) (<xref ref-type="fig" rid="diagnostics-09-00032-f002">Figure 2</xref>a); and between the orbitofrontal cortex (OFC) in the left hemisphere and the right superior frontal gyrus (SFG) (<xref ref-type="fig" rid="diagnostics-09-00032-f002">Figure 2</xref>b).</p>
+      </sec>
+      <sec id="sec3dot2-diagnostics-09-00032">
+        <title>3.2. Functional Connectivity in Adolescents</title>
+        <p><xref ref-type="fig" rid="diagnostics-09-00032-f003">Figure 3</xref> shows the significant differences in full correlation in adolescents. There was hypoconnectivity in autists with respect to controls between these brain regions: postcentral gyrus (POG) in both hemispheres (<xref ref-type="fig" rid="diagnostics-09-00032-f003">Figure 3</xref>a) and between the precuneus (PRE) of the right hemisphere and the anterior MTG of the right hemisphere (<xref ref-type="fig" rid="diagnostics-09-00032-f003">Figure 3</xref>b).</p>
+      </sec>
+      <sec id="sec3dot3-diagnostics-09-00032">
+        <title>3.3. Functional Connectivity in Adults</title>
+        <p>In adults, no significant statistical differences in FC were found in the multicenter analysis.</p>
+      </sec>
+    </sec>
+    <sec sec-type="discussion" id="sec4-diagnostics-09-00032">
+      <title>4. Discussion</title>
+      <p>By means of the estimation of full correlation, significant hypoconnectivities in autistic children from the NYU center have been found in relation to children without autism from the same center (&lt;12 years old) in regions of the DMN, specifically between the anterior left MTG and the right FP, and between the left OFC and the right SFG. Moreover, several decrements of FC in the autistic adolescents (12–18 years old) from the multicenter analysis were also present in the DMN, concretely between both hemispheres of the POG and between PRE in the right hemisphere and the right anterior MTG. On the contrary, there were no significant changes in FC in adults (&gt;18 years old). These six regions with a hypoconnectivity in autists relative to controls are directly associated with superior cognitive brain functions, including language, integration of sensorial information, deductive reasoning, and processing functions of memory as a working memory. In addition, some of these regions are involved in functions directly connected with the behavior and the learning of individuals [<xref rid="B33-diagnostics-09-00032" ref-type="bibr">33</xref>,<xref rid="B34-diagnostics-09-00032" ref-type="bibr">34</xref>,<xref rid="B35-diagnostics-09-00032" ref-type="bibr">35</xref>,<xref rid="B36-diagnostics-09-00032" ref-type="bibr">36</xref>,<xref rid="B37-diagnostics-09-00032" ref-type="bibr">37</xref>,<xref rid="B38-diagnostics-09-00032" ref-type="bibr">38</xref>]. Therefore, hypoconnectivity in these brain areas might be an indicator of a deficit of the corresponding brain functions [<xref rid="B1-diagnostics-09-00032" ref-type="bibr">1</xref>].</p>
+      <p>With respect to the studies only centered on children, there is controversy because the studies of Lynch et al. [<xref rid="B8-diagnostics-09-00032" ref-type="bibr">8</xref>] and Uddin et al. [<xref rid="B9-diagnostics-09-00032" ref-type="bibr">9</xref>], both with an age range of 7 to 12 years old, observed hyperconnectivity of the autism patients’ in relation to the controls inside the DMN. However, the results of the study of Weng et al. (13–18 years old) [<xref rid="B14-diagnostics-09-00032" ref-type="bibr">14</xref>], focused only on adolescents, are consistent with the results of this study, showing a hypoconnectivity inside the DMN. The studies focused only on children and adolescents have led to controversies as well. On the one hand, the studies of Rudie et al. (13 years on average) [<xref rid="B12-diagnostics-09-00032" ref-type="bibr">12</xref>] and Assaf et al. (10–23 years old) [<xref rid="B13-diagnostics-09-00032" ref-type="bibr">13</xref>] are consistent with this study: hypoconnectivity in autists inside the DMN. On the other hand, the studies of Di Martino et al. (7–13 years old) [<xref rid="B10-diagnostics-09-00032" ref-type="bibr">10</xref>] and Washington et al. (6–17 years old), using independent component analysis (ICA) [<xref rid="B11-diagnostics-09-00032" ref-type="bibr">11</xref>], obtained a hyperconnectivity inside the DMN of the autists. We did not get statistical significance in the study focused on adults, but in the studies of Kennedy et al. (15–52 years old) [<xref rid="B15-diagnostics-09-00032" ref-type="bibr">15</xref>], Mueller et al. (33 years old) [<xref rid="B16-diagnostics-09-00032" ref-type="bibr">16</xref>], and von dem Hagen et al. (19–40 years old) [<xref rid="B17-diagnostics-09-00032" ref-type="bibr">17</xref>] they found a hypoconnectivity inside the DMN.</p>
+      <p>It is important to highlight that only the children from NYU center and the adolescents provided significant results, but not the adults and children from the multicenter study. On the one hand, comparing the multi- and unicenter study in children, it seems that the homogeneity in the acquisition was more important than having more heterogeneity in the individuals from other centers. On the other hand, the group of adolescents came from different centers, but the number of individuals was double that in the children group, showing that a high number of individuals is crucial to overcoming the heterogeneity limitations of a multicenter study, despite a good design. In the multicenter analysis of adults, the total number of individuals was the least of all the studies.</p>
+      <p>In the present study, the individuals have been divided into three age ranges, due to the importance of studying autism from a developmental point of view to account for anatomical and functional characteristics of each period [<xref rid="B18-diagnostics-09-00032" ref-type="bibr">18</xref>]. Due to brain plasticity, connectivity differs in children, adolescents, and adults [<xref rid="B1-diagnostics-09-00032" ref-type="bibr">1</xref>]. IQ was also considered to match the subjects.</p>
+      <p>One of the limitations of this study is a small sample size because the individuals were grouped by age ranges, a problem that the ABIDE II initiative is tackling [<xref rid="B39-diagnostics-09-00032" ref-type="bibr">39</xref>]. In addition, the fact that a medium group from one center obtained significant results confirms the importance of data homogenization or good controls in the design matrix. The models used in this study are a key factor to influence the results. To create the statistical model, the principal methods of analysis are ICA, a method that expects to find a linear combination of non-Gaussian data [<xref rid="B20-diagnostics-09-00032" ref-type="bibr">20</xref>]; SCA, to measure the FC maps from the correlation of the seed signal with all the brain signals [<xref rid="B21-diagnostics-09-00032" ref-type="bibr">21</xref>]; and ROI analysis, a method to measure FC between all pairs of ROIs [<xref rid="B22-diagnostics-09-00032" ref-type="bibr">22</xref>]. Compared to ICA and SCA, anatomical ROI analysis has been chosen for simple biological interpretation, because each ROI belongs to a specific and localized area of a brain atlas.</p>
+    </sec>
+    <sec sec-type="conclusions" id="sec5-diagnostics-09-00032">
+      <title>5. Conclusions</title>
+      <p>Changes in brain FC were studied between control and autists individuals, divided into three age ranges (children, adolescents, and adults), taking into account the importance of studying autism from a developmental point of view, and matching also by IQ, to minimize the heterogeneity of autism. The study of brain FC between pairs of ROIs was performed by a statistical analysis of full and partial correlation. The results show hypoconnectivities in the autistic individuals relative to matched controls, between two pairs of regions in the children group and another two pairs of regions in the group of adolescents, all of them inside the DMN. These regions are directly involved in cognitive, behavioral, and learning functions. These results were obtained only in the full correlation analysis, showing that these regions are connected through other regions, meaning that they are not directly connected. In the adult group, no significant differences were found.</p>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <title>Acknowledgments</title>
+      <p>We are thankful to the initiative ABIDE to provide the huge public release and open sharing autism database what has made possible to carry out this study in better conditions and improve the results obtained significantly.</p>
+    </ack>
+    <notes>
+      <title>Author Contributions</title>
+      <p>Conceptualization, Ú.P.-R. and D.M.; Data curation, L.B.-F. and D.M.; Formal analysis, L.B.-F. and Ú.P.-R.; Funding acquisition, D.M.; Investigation, L.B.-F., Ú.P.-R. and D.M.; Methodology, Ú.P.-R. and D.M.; Project administration, D.M.; Resources, L.B.-F. and Ú.P.-R.; Software, L.B.-F. and Ú.P.-R.; Supervision, D.M.; Validation, L.B.-F. and Ú.P.-R.; Visualization, L.B.-F. and Ú.P.-R.; Writing—original draft, L.B.-F. and Ú.P.-R.; Writing—review &amp; editing, D.M.</p>
+    </notes>
+    <notes>
+      <title>Funding</title>
+      <p>This research was partially funded by the Ministerio de Economía y Competitividad (MINECO), through the project BFU2015-64380-C2-2-R. Ú.P.-R. is funded by the Spanish Ministerio de Educación, Cultura y Deporte (MECD) under grant FPU13/03537.</p>
+    </notes>
+    <notes notes-type="COI-statement">
+      <title>Conflicts of Interest</title>
+      <p>The authors declare no conflict of interest.</p>
+    </notes>
+    <ref-list>
+      <title>References</title>
+      <ref id="B1-diagnostics-09-00032">
+        <label>1.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hull</surname>
+              <given-names>J.V.</given-names>
+            </name>
+            <name>
+              <surname>Jacokes</surname>
+              <given-names>Z.J.</given-names>
+            </name>
+            <name>
+              <surname>Torgerson</surname>
+              <given-names>C.M.</given-names>
+            </name>
+            <name>
+              <surname>Irimia</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Van Horn</surname>
+              <given-names>J.D.</given-names>
+            </name>
+          </person-group>
+          <article-title>Resting-state functional connectivity in autism spectrum disorders: A review</article-title>
+          <source>Front. Psychiatry</source>
+          <year>2017</year>
+          <volume>7</volume>
+          <fpage>205</fpage>
+          <pub-id pub-id-type="doi">10.3389/fpsyt.2016.00205</pub-id>
+          <pub-id pub-id-type="pmid">28101064</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B2-diagnostics-09-00032">
+        <label>2.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mertz</surname>
+              <given-names>L.</given-names>
+            </name>
+          </person-group>
+          <article-title>Sharing data to solve the autism riddle: An interview with Adriana Di Martino and Michael Milham of ABIDE</article-title>
+          <source>IEEE Pulse</source>
+          <year>2017</year>
+          <volume>8</volume>
+          <fpage>6</fpage>
+          <lpage>9</lpage>
+          <pub-id pub-id-type="doi">10.1109/MPUL.2017.2750819</pub-id>
+          <pub-id pub-id-type="pmid">29155370</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B3-diagnostics-09-00032">
+        <label>3.</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <collab>American Psychiatric Association</collab>
+          </person-group>
+          <source>Diagnostic and Statistical Manual of Mental Disorders (DSM-5)</source>
+          <edition>5th ed.</edition>
+          <publisher-name>American Psychiatric Publishing</publisher-name>
+          <publisher-loc>Arlington, VA, USA</publisher-loc>
+          <year>2013</year>
+          <isbn>978-0-89042-554-1</isbn>
+        </element-citation>
+      </ref>
+      <ref id="B4-diagnostics-09-00032">
+        <label>4.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cociu</surname>
+              <given-names>B.A.</given-names>
+            </name>
+            <name>
+              <surname>Das</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Billeci</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Jamal</surname>
+              <given-names>W.</given-names>
+            </name>
+            <name>
+              <surname>Maharatna</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Calderoni</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Narzisi</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Muratori</surname>
+              <given-names>F.</given-names>
+            </name>
+          </person-group>
+          <article-title>Multimodal functional and structural brain connectivity analysis in autism: A preliminary integrated approach with EEG, fMRI and DTI</article-title>
+          <source>IEEE Trans. Cognit. Dev. Syst.</source>
+          <year>2018</year>
+          <volume>10</volume>
+          <fpage>213</fpage>
+          <lpage>226</lpage>
+          <pub-id pub-id-type="doi">10.1109/TCDS.2017.2680408</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B5-diagnostics-09-00032">
+        <label>5.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dekhil</surname>
+              <given-names>O.</given-names>
+            </name>
+            <name>
+              <surname>Hajjdiab</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>Shalaby</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Ali</surname>
+              <given-names>M.T.</given-names>
+            </name>
+            <name>
+              <surname>Ayinde</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Switala</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Elshamekh</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Ghazal</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Keynton</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Barnes</surname>
+              <given-names>G.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Using resting state functional MRI to build a personalized autism diagnosis system</article-title>
+          <source>PLoS ONE</source>
+          <year>2018</year>
+          <volume>13</volume>
+          <fpage>1381</fpage>
+          <lpage>1385</lpage>
+          <pub-id pub-id-type="doi">10.1371/journal.pone.0206351</pub-id>
+          <pub-id pub-id-type="pmid">30379950</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B6-diagnostics-09-00032">
+        <label>6.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rogers</surname>
+              <given-names>B.P.</given-names>
+            </name>
+            <name>
+              <surname>Morgan</surname>
+              <given-names>V.L.</given-names>
+            </name>
+            <name>
+              <surname>Newton</surname>
+              <given-names>A.T.</given-names>
+            </name>
+            <name>
+              <surname>Gore</surname>
+              <given-names>J.C.</given-names>
+            </name>
+          </person-group>
+          <article-title>Assessing functional connectivity in the human brain by fMRI</article-title>
+          <source>Magn. Reson. Imaging</source>
+          <year>2007</year>
+          <volume>25</volume>
+          <fpage>1347</fpage>
+          <lpage>1357</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.mri.2007.03.007</pub-id>
+          <pub-id pub-id-type="pmid">17499467</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B7-diagnostics-09-00032">
+        <label>7.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cheng</surname>
+              <given-names>W.</given-names>
+            </name>
+            <name>
+              <surname>Rolls</surname>
+              <given-names>E.T.</given-names>
+            </name>
+            <name>
+              <surname>Gu</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Feng</surname>
+              <given-names>J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Autism: Reduced connectivity between cortical areas involved in face expression, theory of mind, and the sense of self</article-title>
+          <source>Brain</source>
+          <year>2015</year>
+          <volume>138</volume>
+          <fpage>1382</fpage>
+          <lpage>1393</lpage>
+          <pub-id pub-id-type="doi">10.1093/brain/awv051</pub-id>
+          <pub-id pub-id-type="pmid">25795704</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B8-diagnostics-09-00032">
+        <label>8.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lynch</surname>
+              <given-names>C.J.</given-names>
+            </name>
+            <name>
+              <surname>Uddin</surname>
+              <given-names>L.Q.</given-names>
+            </name>
+            <name>
+              <surname>Supekar</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Khouzam</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Phillips</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Menon</surname>
+              <given-names>V.</given-names>
+            </name>
+          </person-group>
+          <article-title>Default mode network in childhood autism: Posteromedial cortex heterogeneity and relationship with social deficits</article-title>
+          <source>Biol. Psychiatry</source>
+          <year>2013</year>
+          <volume>74</volume>
+          <fpage>212</fpage>
+          <lpage>219</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.biopsych.2012.12.013</pub-id>
+          <pub-id pub-id-type="pmid">23375976</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B9-diagnostics-09-00032">
+        <label>9.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Uddin</surname>
+              <given-names>L.Q.</given-names>
+            </name>
+            <name>
+              <surname>Supekar</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Lynch</surname>
+              <given-names>C.J.</given-names>
+            </name>
+            <name>
+              <surname>Khouzam</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Phillips</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Feinstein</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Ryali</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Menon</surname>
+              <given-names>V.</given-names>
+            </name>
+          </person-group>
+          <article-title>Salience network-based classification and prediction of symptom severity in children with autism</article-title>
+          <source>JAMA Psychiatry</source>
+          <year>2013</year>
+          <volume>70</volume>
+          <fpage>869</fpage>
+          <lpage>879</lpage>
+          <pub-id pub-id-type="doi">10.1001/jamapsychiatry.2013.104</pub-id>
+          <pub-id pub-id-type="pmid">23803651</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B10-diagnostics-09-00032">
+        <label>10.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Di Martino</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Kelly</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Grzadzinski</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Zuo</surname>
+              <given-names>X.-N.</given-names>
+            </name>
+            <name>
+              <surname>Mennes</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Mairena</surname>
+              <given-names>M.A.</given-names>
+            </name>
+            <name>
+              <surname>Lord</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Castellanos</surname>
+              <given-names>F.X.</given-names>
+            </name>
+            <name>
+              <surname>Milham</surname>
+              <given-names>M.P.</given-names>
+            </name>
+          </person-group>
+          <article-title>Aberrant striatal functional connectivity in children with autism</article-title>
+          <source>Biol. Psychiatry</source>
+          <year>2011</year>
+          <volume>69</volume>
+          <fpage>847</fpage>
+          <lpage>856</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.biopsych.2010.10.029</pub-id>
+          <pub-id pub-id-type="pmid">21195388</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B11-diagnostics-09-00032">
+        <label>11.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Washington</surname>
+              <given-names>S.D.</given-names>
+            </name>
+            <name>
+              <surname>Gordon</surname>
+              <given-names>E.M.</given-names>
+            </name>
+            <name>
+              <surname>Brar</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Warburton</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Sawyer</surname>
+              <given-names>A.T.</given-names>
+            </name>
+            <name>
+              <surname>Wolfe</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Mease-Ference</surname>
+              <given-names>E.R.</given-names>
+            </name>
+            <name>
+              <surname>Girton</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Hailu</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Mbwana</surname>
+              <given-names>J.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Dysmaturation of the default mode network in autism</article-title>
+          <source>Hum. Brain Mapp.</source>
+          <year>2014</year>
+          <volume>35</volume>
+          <fpage>1284</fpage>
+          <lpage>1296</lpage>
+          <pub-id pub-id-type="doi">10.1002/hbm.22252</pub-id>
+          <pub-id pub-id-type="pmid">23334984</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B12-diagnostics-09-00032">
+        <label>12.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rudie</surname>
+              <given-names>J.D.</given-names>
+            </name>
+            <name>
+              <surname>Hernandez</surname>
+              <given-names>L.M.</given-names>
+            </name>
+            <name>
+              <surname>Brown</surname>
+              <given-names>J.A.</given-names>
+            </name>
+            <name>
+              <surname>Beck-Pancer</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Colich</surname>
+              <given-names>N.L.</given-names>
+            </name>
+            <name>
+              <surname>Gorrindo</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Thompson</surname>
+              <given-names>P.M.</given-names>
+            </name>
+            <name>
+              <surname>Geschwind</surname>
+              <given-names>D.H.</given-names>
+            </name>
+            <name>
+              <surname>Bookheimer</surname>
+              <given-names>S.Y.</given-names>
+            </name>
+            <name>
+              <surname>Levitt</surname>
+              <given-names>P.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Autism-associated promoter variant in MET impacts functional and structural brain networks</article-title>
+          <source>Neuron</source>
+          <year>2012</year>
+          <volume>75</volume>
+          <fpage>904</fpage>
+          <lpage>915</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuron.2012.07.010</pub-id>
+          <pub-id pub-id-type="pmid">22958829</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B13-diagnostics-09-00032">
+        <label>13.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Assaf</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Jagannathan</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Calhoun</surname>
+              <given-names>V.D.</given-names>
+            </name>
+            <name>
+              <surname>Miller</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Stevens</surname>
+              <given-names>M.C.</given-names>
+            </name>
+            <name>
+              <surname>Sahl</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Boyle</surname>
+              <given-names>J.G.O.</given-names>
+            </name>
+            <name>
+              <surname>Schultz</surname>
+              <given-names>R.T.</given-names>
+            </name>
+            <name>
+              <surname>Pearlson</surname>
+              <given-names>G.D.</given-names>
+            </name>
+          </person-group>
+          <article-title>Abnormal functional connectivity of default mode sub-networks in autism spectrum disorder patients</article-title>
+          <source>Neuroimage</source>
+          <year>2010</year>
+          <volume>53</volume>
+          <fpage>247</fpage>
+          <lpage>256</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2010.05.067</pub-id>
+          <pub-id pub-id-type="pmid">20621638</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B14-diagnostics-09-00032">
+        <label>14.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Weng</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Wiggins</surname>
+              <given-names>J.L.</given-names>
+            </name>
+            <name>
+              <surname>Peltier</surname>
+              <given-names>S.J.</given-names>
+            </name>
+            <name>
+              <surname>Carrasco</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Risi</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Lord</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Monk</surname>
+              <given-names>C.S.</given-names>
+            </name>
+          </person-group>
+          <article-title>Alterations of resting state functional connectivity in the default network in adolescents with autism spectrum disorders</article-title>
+          <source>Brain Res.</source>
+          <year>2010</year>
+          <volume>1313</volume>
+          <fpage>202</fpage>
+          <lpage>214</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.brainres.2009.11.057</pub-id>
+          <pub-id pub-id-type="pmid">20004180</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B15-diagnostics-09-00032">
+        <label>15.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kennedy</surname>
+              <given-names>D.P.</given-names>
+            </name>
+            <name>
+              <surname>Courchesne</surname>
+              <given-names>E.</given-names>
+            </name>
+          </person-group>
+          <article-title>The intrinsic functional organization of the brain is altered in autism</article-title>
+          <source>Neuroimage</source>
+          <year>2008</year>
+          <volume>39</volume>
+          <fpage>1877</fpage>
+          <lpage>1885</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2007.10.052</pub-id>
+          <pub-id pub-id-type="pmid">18083565</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B16-diagnostics-09-00032">
+        <label>16.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mueller</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Keeser</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Samson</surname>
+              <given-names>A.C.</given-names>
+            </name>
+            <name>
+              <surname>Kirsch</surname>
+              <given-names>V.</given-names>
+            </name>
+            <name>
+              <surname>Blautzik</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Grothe</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Erat</surname>
+              <given-names>O.</given-names>
+            </name>
+            <name>
+              <surname>Hegenloh</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Coates</surname>
+              <given-names>U.</given-names>
+            </name>
+            <name>
+              <surname>Reiser</surname>
+              <given-names>M.F.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Convergent findings of altered functional and structural brain connectivity in individuals with high functioning autism: A multimodal MRI study</article-title>
+          <source>PLoS ONE</source>
+          <year>2013</year>
+          <volume>8</volume>
+          <elocation-id>e67329</elocation-id>
+          <pub-id pub-id-type="doi">10.1371/journal.pone.0067329</pub-id>
+          <pub-id pub-id-type="pmid">23825652</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B17-diagnostics-09-00032">
+        <label>17.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Von dem Hagen</surname>
+              <given-names>E.A.H.</given-names>
+            </name>
+            <name>
+              <surname>Stoyanova</surname>
+              <given-names>R.S.</given-names>
+            </name>
+            <name>
+              <surname>Baron-Cohen</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Calder</surname>
+              <given-names>A.J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Reduced functional connectivity within and between ‘social’ resting state networks in autism spectrum conditions</article-title>
+          <source>Soc. Cognit. Affect. Neurosci.</source>
+          <year>2013</year>
+          <volume>8</volume>
+          <fpage>694</fpage>
+          <lpage>701</lpage>
+          <pub-id pub-id-type="doi">10.1093/scan/nss053</pub-id>
+          <pub-id pub-id-type="pmid">22563003</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B18-diagnostics-09-00032">
+        <label>18.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Uddin</surname>
+              <given-names>L.Q.</given-names>
+            </name>
+            <name>
+              <surname>Supekar</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Menon</surname>
+              <given-names>V.</given-names>
+            </name>
+          </person-group>
+          <article-title>Reconceptualizing functional brain connectivity in autism from a developmental perspective</article-title>
+          <source>Front. Hum. Neurosci.</source>
+          <year>2013</year>
+          <volume>7</volume>
+          <fpage>458</fpage>
+          <pub-id pub-id-type="doi">10.3389/fnhum.2013.00458</pub-id>
+          <pub-id pub-id-type="pmid">23966925</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B19-diagnostics-09-00032">
+        <label>19.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kana</surname>
+              <given-names>R.K.</given-names>
+            </name>
+            <name>
+              <surname>Uddin</surname>
+              <given-names>L.Q.</given-names>
+            </name>
+            <name>
+              <surname>Kenet</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Chugani</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Müller</surname>
+              <given-names>R.-A.</given-names>
+            </name>
+          </person-group>
+          <article-title>Brain connectivity in autism</article-title>
+          <source>Front. Hum. Neurosci.</source>
+          <year>2014</year>
+          <volume>8</volume>
+          <fpage>349</fpage>
+          <pub-id pub-id-type="doi">10.3389/fnhum.2014.00349</pub-id>
+          <pub-id pub-id-type="pmid">24917800</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B20-diagnostics-09-00032">
+        <label>20.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Beckmann</surname>
+              <given-names>C.F.</given-names>
+            </name>
+            <name>
+              <surname>Smith</surname>
+              <given-names>S.M.</given-names>
+            </name>
+          </person-group>
+          <article-title>Probabilistic independent component analysis for functional magnetic resonance imaging</article-title>
+          <source>IEEE Trans. Med. Imaging</source>
+          <year>2004</year>
+          <volume>23</volume>
+          <fpage>137</fpage>
+          <lpage>152</lpage>
+          <pub-id pub-id-type="doi">10.1109/TMI.2003.822821</pub-id>
+          <pub-id pub-id-type="pmid">14964560</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B21-diagnostics-09-00032">
+        <label>21.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cole</surname>
+              <given-names>D.M.</given-names>
+            </name>
+            <name>
+              <surname>Smith</surname>
+              <given-names>S.M.</given-names>
+            </name>
+            <name>
+              <surname>Beckmann</surname>
+              <given-names>C.F.</given-names>
+            </name>
+          </person-group>
+          <article-title>Advances and pitfalls in the analysis and interpretation of resting-state FMRI data</article-title>
+          <source>Front. Syst. Neurosci.</source>
+          <year>2010</year>
+          <volume>4</volume>
+          <fpage>8</fpage>
+          <pub-id pub-id-type="doi">10.3389/fnsys.2010.00008</pub-id>
+          <pub-id pub-id-type="pmid">20407579</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B22-diagnostics-09-00032">
+        <label>22.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Etzel</surname>
+              <given-names>J.A.</given-names>
+            </name>
+            <name>
+              <surname>Gazzola</surname>
+              <given-names>V.</given-names>
+            </name>
+            <name>
+              <surname>Keysers</surname>
+              <given-names>C.</given-names>
+            </name>
+          </person-group>
+          <article-title>An introduction to anatomical ROI-based fMRI classification analysis</article-title>
+          <source>Brain Res.</source>
+          <year>2009</year>
+          <volume>1282</volume>
+          <fpage>114</fpage>
+          <lpage>125</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.brainres.2009.05.090</pub-id>
+          <pub-id pub-id-type="pmid">19505449</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B23-diagnostics-09-00032">
+        <label>23.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Di Martino</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Yan</surname>
+              <given-names>C.-G.</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>Q.</given-names>
+            </name>
+            <name>
+              <surname>Denio</surname>
+              <given-names>E.</given-names>
+            </name>
+            <name>
+              <surname>Castellanos</surname>
+              <given-names>F.X.</given-names>
+            </name>
+            <name>
+              <surname>Alaerts</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Anderson</surname>
+              <given-names>J.S.</given-names>
+            </name>
+            <name>
+              <surname>Assaf</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Bookheimer</surname>
+              <given-names>S.Y.</given-names>
+            </name>
+            <name>
+              <surname>Dapretto</surname>
+              <given-names>M.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The autism brain imaging data exchange: Towards a large-scale evaluation of the intrinsic brain architecture in autism</article-title>
+          <source>Mol. Psychiatry</source>
+          <year>2014</year>
+          <volume>19</volume>
+          <fpage>659</fpage>
+          <lpage>667</lpage>
+          <pub-id pub-id-type="doi">10.1038/mp.2013.78</pub-id>
+          <pub-id pub-id-type="pmid">23774715</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B24-diagnostics-09-00032">
+        <label>24.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Craddock</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Benhajali</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <name>
+              <surname>Chu</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Chouinard</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Evans</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Jakab</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Khundrakpam</surname>
+              <given-names>B.S.</given-names>
+            </name>
+            <name>
+              <surname>Lewis</surname>
+              <given-names>J.D.</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>Q.</given-names>
+            </name>
+            <name>
+              <surname>Milham</surname>
+              <given-names>M.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The neuro bureau preprocessing initiative: Open sharing of preprocessed neuroimaging data and derivatives</article-title>
+          <source>Front. Neuroinform.</source>
+          <year>2013</year>
+          <volume>41</volume>
+          <fpage>1662</fpage>
+          <lpage>5196</lpage>
+          <pub-id pub-id-type="doi">10.3389/conf.fninf.2013.09.00041</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B25-diagnostics-09-00032">
+        <label>25.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Xu</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Yang</surname>
+              <given-names>Z.</given-names>
+            </name>
+            <name>
+              <surname>Jiang</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Xing</surname>
+              <given-names>X.X.</given-names>
+            </name>
+            <name>
+              <surname>Zuo</surname>
+              <given-names>X.N.</given-names>
+            </name>
+          </person-group>
+          <article-title>A connectome computation system for discovery science of brain</article-title>
+          <source>Sci. Bull.</source>
+          <year>2015</year>
+          <volume>60</volume>
+          <fpage>86</fpage>
+          <lpage>95</lpage>
+          <pub-id pub-id-type="doi">10.1007/s11434-014-0698-3</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B26-diagnostics-09-00032">
+        <label>26.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Desikan</surname>
+              <given-names>R.S.</given-names>
+            </name>
+            <name>
+              <surname>Segonne</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Fischl</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Quinn</surname>
+              <given-names>B.T.</given-names>
+            </name>
+            <name>
+              <surname>Dickerson</surname>
+              <given-names>B.C.</given-names>
+            </name>
+            <name>
+              <surname>Blacker</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Buckner</surname>
+              <given-names>R.L.</given-names>
+            </name>
+            <name>
+              <surname>Dale</surname>
+              <given-names>A.M.</given-names>
+            </name>
+            <name>
+              <surname>Maguire</surname>
+              <given-names>R.P.</given-names>
+            </name>
+            <name>
+              <surname>Hyman</surname>
+              <given-names>B.T.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>An automated labeling system for subdividing the human cerebral cortex on MRI scans into gyral based regions of interest</article-title>
+          <source>Neuroimage</source>
+          <year>2006</year>
+          <volume>31</volume>
+          <fpage>968</fpage>
+          <lpage>980</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2006.01.021</pub-id>
+          <pub-id pub-id-type="pmid">16530430</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B27-diagnostics-09-00032">
+        <label>27.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cole</surname>
+              <given-names>M.W.</given-names>
+            </name>
+            <name>
+              <surname>Yang</surname>
+              <given-names>G.J.</given-names>
+            </name>
+            <name>
+              <surname>Murray</surname>
+              <given-names>J.D.</given-names>
+            </name>
+            <name>
+              <surname>Repovs</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Anticevic</surname>
+              <given-names>A.</given-names>
+            </name>
+          </person-group>
+          <article-title>Functional connectivity change as shared signal dynamics</article-title>
+          <source>J. Neurosci. Methods</source>
+          <year>2016</year>
+          <volume>259</volume>
+          <fpage>22</fpage>
+          <lpage>39</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.jneumeth.2015.11.011</pub-id>
+          <pub-id pub-id-type="pmid">26642966</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B28-diagnostics-09-00032">
+        <label>28.</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Flemming</surname>
+              <given-names>J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Generalized Tikhonov Regularization. Basic Theory and Comprehensive Results on Convergence Rates</article-title>
+          <source>Ph.D. Thesis</source>
+          <publisher-name>Chemnitz University of Technology</publisher-name>
+          <publisher-loc>Chemnitz, Germany</publisher-loc>
+          <month>10</month>
+          <year>2011</year>
+        </element-citation>
+      </ref>
+      <ref id="B29-diagnostics-09-00032">
+        <label>29.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Smith</surname>
+              <given-names>S.M.</given-names>
+            </name>
+            <name>
+              <surname>Jenkinson</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Woolrich</surname>
+              <given-names>M.W.</given-names>
+            </name>
+            <name>
+              <surname>Beckmann</surname>
+              <given-names>C.F.</given-names>
+            </name>
+            <name>
+              <surname>Behrens</surname>
+              <given-names>T.E.J.</given-names>
+            </name>
+            <name>
+              <surname>Johansen-Berg</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>Bannister</surname>
+              <given-names>P.R.</given-names>
+            </name>
+            <name>
+              <surname>De Luca</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Drobnjak</surname>
+              <given-names>I.</given-names>
+            </name>
+            <name>
+              <surname>Flitney</surname>
+              <given-names>D.E.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Advances in functional and structural MR image analysis and implementation as FSL</article-title>
+          <source>Neuroimage</source>
+          <year>2004</year>
+          <volume>23</volume>
+          <fpage>S208</fpage>
+          <lpage>S219</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2004.07.051</pub-id>
+          <pub-id pub-id-type="pmid">15501092</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B30-diagnostics-09-00032">
+        <label>30.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jenkinson</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Beckmann</surname>
+              <given-names>C.F.</given-names>
+            </name>
+            <name>
+              <surname>Behrens</surname>
+              <given-names>T.E.J.</given-names>
+            </name>
+            <name>
+              <surname>Woolrich</surname>
+              <given-names>M.W.</given-names>
+            </name>
+            <name>
+              <surname>Smith</surname>
+              <given-names>S.M.</given-names>
+            </name>
+          </person-group>
+          <article-title>FSL</article-title>
+          <source>Neuroimage</source>
+          <year>2012</year>
+          <volume>62</volume>
+          <fpage>782</fpage>
+          <lpage>790</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2011.09.015</pub-id>
+          <pub-id pub-id-type="pmid">21979382</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B31-diagnostics-09-00032">
+        <label>31.</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kutner</surname>
+              <given-names>M.H.</given-names>
+            </name>
+            <name>
+              <surname>Nachtsheim</surname>
+              <given-names>C.J.</given-names>
+            </name>
+            <name>
+              <surname>Neter</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>W.</given-names>
+            </name>
+          </person-group>
+          <source>Applied Linear Statistical Models</source>
+          <edition>5th ed.</edition>
+          <publisher-name>McGraw-Hill Irwin</publisher-name>
+          <publisher-loc>Boston, MA, USA</publisher-loc>
+          <year>2005</year>
+          <fpage>623</fpage>
+          <lpage>640</lpage>
+          <isbn>0-07-238688-6</isbn>
+        </element-citation>
+      </ref>
+      <ref id="B32-diagnostics-09-00032">
+        <label>32.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Winkler</surname>
+              <given-names>A.M.</given-names>
+            </name>
+            <name>
+              <surname>Ridgway</surname>
+              <given-names>G.R.</given-names>
+            </name>
+            <name>
+              <surname>Webster</surname>
+              <given-names>M.A.</given-names>
+            </name>
+            <name>
+              <surname>Smith</surname>
+              <given-names>S.M.</given-names>
+            </name>
+            <name>
+              <surname>Nichols</surname>
+              <given-names>T.E.</given-names>
+            </name>
+          </person-group>
+          <article-title>Permutation inference for the general linear model</article-title>
+          <source>Neuroimage</source>
+          <year>2014</year>
+          <volume>92</volume>
+          <fpage>381</fpage>
+          <lpage>397</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2014.01.060</pub-id>
+          <pub-id pub-id-type="pmid">24530839</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B33-diagnostics-09-00032">
+        <label>33.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bhaumik</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Pradhan</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Das</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Bhaumik</surname>
+              <given-names>D.K.</given-names>
+            </name>
+          </person-group>
+          <article-title>Predicting autism spectrum disorder using domain-adaptive cross-site evaluation</article-title>
+          <source>Neuroinformatics</source>
+          <year>2018</year>
+          <volume>2</volume>
+          <fpage>1539</fpage>
+          <lpage>2791</lpage>
+          <pub-id pub-id-type="doi">10.1007/s12021-018-9366-0</pub-id>
+          <pub-id pub-id-type="pmid">29455363</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B34-diagnostics-09-00032">
+        <label>34.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cavanna</surname>
+              <given-names>A.E.</given-names>
+            </name>
+            <name>
+              <surname>Trimble</surname>
+              <given-names>M.R.</given-names>
+            </name>
+          </person-group>
+          <article-title>The precuneus: A review of its functional anatomy and behavioural correlates</article-title>
+          <source>Brain</source>
+          <year>2006</year>
+          <volume>129</volume>
+          <fpage>564</fpage>
+          <lpage>583</lpage>
+          <pub-id pub-id-type="doi">10.1093/brain/awl004</pub-id>
+          <pub-id pub-id-type="pmid">16399806</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B35-diagnostics-09-00032">
+        <label>35.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rolls</surname>
+              <given-names>E.T.</given-names>
+            </name>
+          </person-group>
+          <article-title>The functions of the orbitofrontal cortex</article-title>
+          <source>Brain Cognit.</source>
+          <year>2004</year>
+          <volume>55</volume>
+          <fpage>11</fpage>
+          <lpage>29</lpage>
+          <pub-id pub-id-type="doi">10.1016/S0278-2626(03)00277-X</pub-id>
+          <pub-id pub-id-type="pmid">15134840</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B36-diagnostics-09-00032">
+        <label>36.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Beer</surname>
+              <given-names>J.S.</given-names>
+            </name>
+            <name>
+              <surname>John</surname>
+              <given-names>O.P.</given-names>
+            </name>
+            <name>
+              <surname>Scabini</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Knight</surname>
+              <given-names>R.T.</given-names>
+            </name>
+          </person-group>
+          <article-title>Orbitofrontal cortex and social behavior: Integrating self-monitoring and emotion-cognition interactions</article-title>
+          <source>J. Cognit. Neurosci.</source>
+          <year>2006</year>
+          <volume>18</volume>
+          <fpage>871</fpage>
+          <lpage>879</lpage>
+          <pub-id pub-id-type="doi">10.1162/jocn.2006.18.6.871</pub-id>
+          <pub-id pub-id-type="pmid">16839295</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B37-diagnostics-09-00032">
+        <label>37.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Li</surname>
+              <given-names>W.</given-names>
+            </name>
+            <name>
+              <surname>Qin</surname>
+              <given-names>W.</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>Fan</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Jiang</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Yu</surname>
+              <given-names>C.</given-names>
+            </name>
+          </person-group>
+          <article-title>Subregions of the human superior frontal gyrus and their connections</article-title>
+          <source>Neuroimage</source>
+          <year>2013</year>
+          <volume>78</volume>
+          <fpage>46</fpage>
+          <lpage>58</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2013.04.011</pub-id>
+          <pub-id pub-id-type="pmid">23587692</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B38-diagnostics-09-00032">
+        <label>38.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wei</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Liang</surname>
+              <given-names>X.</given-names>
+            </name>
+            <name>
+              <surname>He</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <name>
+              <surname>Zang</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <name>
+              <surname>Han</surname>
+              <given-names>Z.</given-names>
+            </name>
+            <name>
+              <surname>Caramazza</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Bi</surname>
+              <given-names>Y.</given-names>
+            </name>
+          </person-group>
+          <article-title>Predicting conceptual processing capacity from spontaneous neuronal activity of the left middle temporal gyrus</article-title>
+          <source>J. Neurosci.</source>
+          <year>2012</year>
+          <volume>32</volume>
+          <fpage>481</fpage>
+          <lpage>489</lpage>
+          <pub-id pub-id-type="doi">10.1523/JNEUROSCI.1953-11.2012</pub-id>
+          <pub-id pub-id-type="pmid">22238084</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B39-diagnostics-09-00032">
+        <label>39.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Di Martino</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>O’Connor</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Alaerts</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Anderson</surname>
+              <given-names>J.S.</given-names>
+            </name>
+            <name>
+              <surname>Assaf</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Balsters</surname>
+              <given-names>J.H.</given-names>
+            </name>
+            <name>
+              <surname>Baxter</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Beggiato</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Bernaerts</surname>
+              <given-names>S.</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Enhancing studies of the connectome in autism using the autism brain imaging data exchange II</article-title>
+          <source>Sci. Data</source>
+          <year>2017</year>
+          <volume>4</volume>
+          <fpage>170010</fpage>
+          <pub-id pub-id-type="doi">10.1038/sdata.2017.10</pub-id>
+          <pub-id pub-id-type="pmid">28291247</pub-id>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+  <floats-group>
+    <fig id="diagnostics-09-00032-f001" orientation="portrait" position="float">
+      <label>Figure 1</label>
+      <caption>
+        <p>Flowchart of the methodology to compare functional connectivity in controls and autists. (<bold>a</bold>) Preprocessing steps for the rs-fMRI images. (<bold>b</bold>) Full and partial correlation analyses. Correlation indicates the amount of statistical dependence between two anatomical regions. Full correlation measures the amount of FC—statistical dependence—between two directly or indirectly connected regions, whereas the partial correlation focuses on direct connections. (<bold>c</bold>) Statistical analysis with two contrasts: (1) FC between two regions is higher in controls than in autists, (2) FC between a pair of regions is greater in autists than in controls. FC: functional connectivity; ROIs: regions of interest; rs-fMRI: resting-state functional magnetic resonance imaging.</p>
+      </caption>
+      <graphic xlink:href="diagnostics-09-00032-g001"/>
+    </fig>
+    <fig id="diagnostics-09-00032-f002" orientation="portrait" position="float">
+      <label>Figure 2</label>
+      <caption>
+        <p>Hypoconnectivities in children (&lt;12 years old) with autism compared to controls, from the NYU center. (<bold>a</bold>) Boxplot showing full correlation values between anterior left MTG and right FP in controls and autists; (<bold>b</bold>) Boxplot showing the full correlation values present in controls and autists between the regions left OFC and right SFG. FP: frontal pole; MTG: middle temporal gyrus; NYU: New York Langone Medical Center; OFC: orbitofrontal cortex; SFG: superior frontal gyrus.</p>
+      </caption>
+      <graphic xlink:href="diagnostics-09-00032-g002"/>
+    </fig>
+    <fig id="diagnostics-09-00032-f003" orientation="portrait" position="float">
+      <label>Figure 3</label>
+      <caption>
+        <p>Hypoconnectivities in adolescents (12–18 years old) with autism relative to controls in a multicenter study. (<bold>a</bold>) Boxplot showing full correlation Fisher’s z values between left and right POG in controls and autists; (<bold>b</bold>) Boxplot showing the full correlation Fisher’s z values between the right PRE and anterior right MTG present in controls and autists. MTG: middle temporal gyrus; POG: postcentral gyrus; PRE: precuneus.</p>
+      </caption>
+      <graphic xlink:href="diagnostics-09-00032-g003"/>
+    </fig>
+    <table-wrap id="diagnostics-09-00032-t001" orientation="portrait" position="float">
+      <object-id pub-id-type="pii">diagnostics-09-00032-t001_Table 1</object-id>
+      <label>Table 1</label>
+      <caption>
+        <p>Individuals from the public database ABIDE (Autism Brain Image Data Exchange) used in this study. CMU: Carnegie Mellon University; KKI: Kennedy Krieger Institute; Leuven: University of Leuven; NYU: New York Langone Medical Center; Pitt: University of Pittsburgh School of Medicine; Trinity: Trinity Center for Health Sciences; UCLA: University of California, Los Angeles; UM: University of Michigan.</p>
+      </caption>
+      <table frame="hsides" rules="groups">
+        <thead>
+          <tr>
+            <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">Age Range</th>
+            <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">Number of Individuals (Controls/Autists)</th>
+            <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">Average Age ± Standard Deviation</th>
+            <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">Universities or <break/>Research Centers</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Children <break/>(&lt;12 years old)</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">25/25 <break/>11/11</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">10.63 ± 0.86 <break/>10.47 ± 0.86</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">NYU, UCLA, <break/>UM, NYU</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Adolescents <break/>(12–18 years old)</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">49/49</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">14.35 ± 1.77</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Leuven, NYU, Pitt, Trinity, UCLA, UM</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Adults <break/>(&gt;18 years old)</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">16/16</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">23.41 ± 3.76</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">CMU, Leuven, NYU, Pitt</td>
+          </tr>
+        </tbody>
+      </table>
+    </table-wrap>
+    <table-wrap id="diagnostics-09-00032-t002" orientation="portrait" position="float">
+      <object-id pub-id-type="pii">diagnostics-09-00032-t002_Table 2</object-id>
+      <label>Table 2</label>
+      <caption>
+        <p>Thirty-eight anatomical regions selected for the study (19 regions in each brain hemisphere), part of the default mode network (DMN) and included in the Harvard–Oxford brain atlas.</p>
+      </caption>
+      <table frame="hsides" rules="groups">
+        <thead>
+          <tr>
+            <th colspan="3" align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1">19 Anatomical ROIs in Each Cerebral Hemisphere</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">Amygdala (AMG)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">Inferior frontal gyrus “pars triangularis” (IFGpt)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">Hippocampus (HIP)</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">Insular cortex (INC)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">Middle frontal gyrus (MFG)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">Frontal pole (FP)</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">Orbitofrontal cortex (OFC)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">Superior frontal gyrus (SFG)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">Caudate nucleus (CAN)</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">Precuneus (PRE)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">Postcentral gyrus (POG)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">Putamen (PUT)</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">Anterior cingulate gyrus (aCG)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">Precentral gyrus (PRG)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">Thalamus (THL)</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="1" colspan="1">Posterior cingulate gyrus (pCG)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">Anterior middle temporal gyrus (aMTG)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">
+</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Inferior frontal gyrus “pars opercularis” (IFGpo)</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">Posterior middle temporal gyrus (pMTG)</td>
+            <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">
+</td>
+          </tr>
+        </tbody>
+      </table>
+    </table-wrap>
+  </floats-group>
+</article>

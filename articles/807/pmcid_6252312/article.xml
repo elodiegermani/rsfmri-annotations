@@ -1,0 +1,1134 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="methods-article">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">Front Hum Neurosci</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Front Hum Neurosci</journal-id>
+      <journal-id journal-id-type="publisher-id">Front. Hum. Neurosci.</journal-id>
+      <journal-title-group>
+        <journal-title>Frontiers in Human Neuroscience</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1662-5161</issn>
+      <publisher>
+        <publisher-name>Frontiers Media S.A.</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">30510506</article-id>
+      <article-id pub-id-type="pmc">6252312</article-id>
+      <article-id pub-id-type="doi">10.3389/fnhum.2018.00451</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Neuroscience</subject>
+          <subj-group>
+            <subject>Methods</subject>
+          </subj-group>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Dimensional Complexity of the Resting Brain in Healthy Aging, Using a Normalized MPSE</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Scheel</surname>
+            <given-names>Norman</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+          <xref ref-type="corresp" rid="c001">
+            <sup>*</sup>
+          </xref>
+          <uri xlink:type="simple" xlink:href="http://loop.frontiersin.org/people/584521/overview"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Franke</surname>
+            <given-names>Eric</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <uri xlink:type="simple" xlink:href="http://loop.frontiersin.org/people/636545/overview"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Münte</surname>
+            <given-names>Thomas F.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <uri xlink:type="simple" xlink:href="http://loop.frontiersin.org/people/776/overview"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Madany Mamlouk</surname>
+            <given-names>Amir</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <uri xlink:type="simple" xlink:href="http://loop.frontiersin.org/people/41935/overview"/>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1"><sup>1</sup><institution>Institute for Neuro- and Bioinformatics, Universität zu Lübeck</institution>, <addr-line>Lübeck</addr-line>, <country>Germany</country></aff>
+      <aff id="aff2"><sup>2</sup><institution>Department of Neurology, Universität zu Lübeck</institution>, <addr-line>Lübeck</addr-line>, <country>Germany</country></aff>
+      <aff id="aff3"><sup>3</sup><institution>Department of Radiology, Cognitive Imaging Research Center, Michigan State University</institution>, <addr-line>East Lansing, MI</addr-line>, <country>United States</country></aff>
+      <author-notes>
+        <fn fn-type="edited-by">
+          <p>Edited by: Camillo Porcaro, Istituto di Scienze e Tecnologie della Cognizione (ISTC), Italy</p>
+        </fn>
+        <fn fn-type="edited-by">
+          <p>Reviewed by: Quanying Liu, California Institute of Technology, United States; Rui Li, Institute of Psychology (CAS), China</p>
+        </fn>
+        <corresp id="c001">*Correspondence: Norman Scheel <email>scheelno@msu.edu</email></corresp>
+      </author-notes>
+      <pub-date pub-type="epub">
+        <day>19</day>
+        <month>11</month>
+        <year>2018</year>
+      </pub-date>
+      <pub-date pub-type="collection">
+        <year>2018</year>
+      </pub-date>
+      <volume>12</volume>
+      <elocation-id>451</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>05</day>
+          <month>7</month>
+          <year>2018</year>
+        </date>
+        <date date-type="accepted">
+          <day>23</day>
+          <month>10</month>
+          <year>2018</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Copyright © 2018 Scheel, Franke, Münte and Madany Mamlouk.</copyright-statement>
+        <copyright-year>2018</copyright-year>
+        <copyright-holder>Scheel, Franke, Münte and Madany Mamlouk</copyright-holder>
+        <license xlink:href="http://creativecommons.org/licenses/by/4.0/">
+          <license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY). The use, distribution or reproduction in other forums is permitted, provided the original author(s) and the copyright owner(s) are credited and that the original publication in this journal is cited, in accordance with accepted academic practice. No use, distribution or reproduction is permitted which does not comply with these terms.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>Spontaneous fluctuations of resting-state functional connectivity have been studied in many ways, but grasping the complexity of brain activity has been difficult. Dimensional complexity measures, which are based on Eigenvalue (EV) spectrum analyses (e.g., Ω entropy) have been successfully applied to EEG data, but have not been fully evaluated on functional MRI recordings, because only through the recent introduction of fast multiband fMRI sequences, feasable temporal resolutions are reached. Combining the Eigenspectrum normalization of Ω entropy and the scalable architecture of the so called Multivariate Principal Subspace Entropy (MPSE) leads to a new complexity measure, namely normalized MPSE (nMPSE). It allows functional brain complexity analyses at varying levels of EV energy, independent from global shifts in data variance. Especially the restriction of the EV spectrum to the first dimensions, carrying the most prominent data variance, can act as a filter to reveal the most discriminant factors of dependent variables. Here we look at the effects of healthy aging on the dimensional complexity of brain activity. We employ a large open access dataset, providing a great number of high quality fast multiband recordings. Using nMPSE on whole brain, regional, network and searchlight approaches, we were able to find many age related changes, i.e., in sensorimotoric and right inferior frontal brain regions. Our results implicate that research on dimensional complexity of functional MRI recordings promises to be a unique resource for understanding brain function and for the extraction of biomarkers.</p>
+      </abstract>
+      <kwd-group>
+        <kwd>functional magnetic resonance imaging (fMRI)</kwd>
+        <kwd>resting-state fMRI</kwd>
+        <kwd>Rockland sample</kwd>
+        <kwd>healthy aging</kwd>
+        <kwd>complexity</kwd>
+        <kwd>dimensional complexity</kwd>
+        <kwd>entropy</kwd>
+        <kwd>principal subspace analysis (PSA)</kwd>
+      </kwd-group>
+      <counts>
+        <fig-count count="8"/>
+        <table-count count="2"/>
+        <equation-count count="5"/>
+        <ref-count count="39"/>
+        <page-count count="11"/>
+        <word-count count="6727"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>1. Introduction</title>
+      <p>Resting-state functional magnetic resonance imaging (rs-fMRI) has become one of the main staples for understanding the functioning human brain (Biswal, <xref rid="B4" ref-type="bibr">2012</xref>). When it comes to basic principles of brain function, the brain at rest, meaning in the absence of a dedicated task, seems to be a fruitful resource for brain state interpretations (Zhang and Raichle, <xref rid="B37" ref-type="bibr">2010</xref>). Several studies demonstrated that, the resting brain is organized into independently acting, as well as interacting networks (Fox et al., <xref rid="B10" ref-type="bibr">2005</xref>; Damoiseaux et al., <xref rid="B8" ref-type="bibr">2006</xref>; Fox and Raichle, <xref rid="B9" ref-type="bibr">2007</xref>; Smith et al., <xref rid="B29" ref-type="bibr">2009</xref>; Binder, <xref rid="B3" ref-type="bibr">2011</xref>; Shirer et al., <xref rid="B25" ref-type="bibr">2012</xref>). Undoubtedly, the human brain is one of natures most complex information processing systems, but finding a measure to describe this complexity has been difficult (Sokunbi, <xref rid="B31" ref-type="bibr">2016</xref>). Analyzing age-related changes in brain function is a nonetheless complex endeavor (Brodoehl et al., <xref rid="B6" ref-type="bibr">2013</xref>).</p>
+      <p>Methods for studying the dimensional complexity of brain activity were already introduced for EEG-Data in the nineties, e.g., Ω-Entropy (Wackermann, <xref rid="B36" ref-type="bibr">1996</xref>). As fMRI data quality and temporal resolution has increased significantly through multiband MRI sequences (temporal resolutions of whole brain recordings at a TR of ≈1s are easily achievable), these measures might now be of great value to understand the complex organization of brain function. Also with the help of online data sharing initiatives, like the 1,000 functional connectomes project<xref ref-type="fn" rid="fn0001"><sup>1</sup></xref>, access to vast amounts of high quality resting-state fMRI datasets has never been easier.</p>
+      <p>Predominantly, temporal patterns in rs-fMRI recordings are analyzed using linear correlation methods, averaging multiple voxel time courses to generate so called functional connectomes, neglecting non-linear temporal relations. This restriction to linearity might not be advised, as demonstrated by Pritchard et al. (<xref rid="B20" ref-type="bibr">2014</xref>). Using a non-linear information theory approach (cross-sample entropy) Pritchard et al. found the brain to be organized in “mega-hubs” with a scale-free degree distribution. In a review manuscript Sokunbi (<xref rid="B31" ref-type="bibr">2016</xref>) provides an overview on non-linear information theory based techniques, analyzing complexity of fMRI data in healthy aging, cognitive performance, Alzheimer's disease, attention deficit hyperactivity disorder (ADHD), schizophrenia and multiple sclerosis. Nevertheless, these approaches, based on Shannon entropy, operate on singular voxel (or averaged) time courses, some information theory approaches have extensions to two or multiple time courses but the immense computational demands to these measures make it almost impossible to get a holistic overview of brain states and brain complexity.</p>
+      <p>Here we want to introduce a new, whole brain complexity measure, analog to Ω-Entropy (Wackermann, <xref rid="B36" ref-type="bibr">1996</xref>) but with adaptations to fit the needs of rs-fMRI. Like Ω, the normalized Multivariate Principal Subspace Entropy (nMPSE) uses the Eigenvalue spectrum of a subjects time and space data matrix. Contrary to Ω, nMPSE can be restricted in the amount of used EV energy, so that only the <italic>k</italic> dimensions with the highest variances are taken into consideration. Thus it is possible to reduce the state space to the most important dimensions. MPSE (not normalized), was shown to be efficient in differentiating between task and non-task periods in a task based fMRI study (Schütze et al., <xref rid="B24" ref-type="bibr">2012</xref>). However, in a resting state scenario, due to the lack of normalization, MPSE is not independent of global data variance changes. Supplementary Figure <xref ref-type="supplementary-material" rid="SM1">9</xref> illustrates this effect on simulated data: While global data variance increases, MPSE also increases, nMPSE on the contrary, is not susceptible to this effect and stays constant even in the advent of global changes in data variance. Global variance is strongly influenced by multi-variate noise, at the foremost, subject motion. Even advanced artifact reduction methods like ICA-AROMA (Pruim et al., <xref rid="B21" ref-type="bibr">2015</xref>) and multiband adapted physiological noise regression (Scheel et al., <xref rid="B22" ref-type="bibr">2014a</xref>) are not able to fully eliminate this effect (Scheel et al., <xref rid="B23" ref-type="bibr">2014b</xref>). In addition to physiological noise, global data variance is even more likely to modulate MPSE on real data, which would make any systemic interpretation very difficult. Thus, in this manuscript we will focus on normalized complexity measures, i.e., nMPSE and Ω, which are not predisposed to this effect.</p>
+      <p>With direct relation to independent component analysis (ICA) of spatial Resting-State-Networks (RSNs) and corresponding Temporal-Functional-Modes (TFMs) (Damoiseaux et al., <xref rid="B8" ref-type="bibr">2006</xref>; Smith et al., <xref rid="B30" ref-type="bibr">2012</xref>), dimensional complexity measures, such as nMPSE and Ω, aim to quantify the dynamics that drive functional brain networks: Assuming all networks are operating in approximately the same dynamic states, i.e., if energy is evenly distributed over all brain activity patterns, overall entropy is expected to be high. If there is a clear focus on one (or a few) networks, overall entropy of the system will be small. With measures as such, it would thus be possible to characterize the organization of temporal processes in the human brain.</p>
+      <p>Changes in brain organization due to healthy aging have been reported in several studies (e.g., Brodoehl et al., <xref rid="B6" ref-type="bibr">2013</xref>; Beason-Held et al., <xref rid="B2" ref-type="bibr">2016</xref>; Goldstone et al., <xref rid="B11" ref-type="bibr">2016</xref>; La Corte et al., <xref rid="B16" ref-type="bibr">2016</xref>; He et al., <xref rid="B12" ref-type="bibr">2017</xref>; Peterson et al., <xref rid="B19" ref-type="bibr">2017</xref>; Siman-Tov et al., <xref rid="B26" ref-type="bibr">2017</xref>; Tremblay et al., <xref rid="B34" ref-type="bibr">2017</xref>; Zhuang et al., <xref rid="B39" ref-type="bibr">2017</xref>; Zhu et al., <xref rid="B38" ref-type="bibr">2017</xref>). In accordance to Liu et al. (<xref rid="B17" ref-type="bibr">2013</xref>), Toussaint et al. (<xref rid="B33" ref-type="bibr">2014</xref>), and Sokunbi et al. (<xref rid="B32" ref-type="bibr">2015</xref>) non-linear brain complexity measures, derived from information theory, find changes in brain complexity as a result of healthy aging as well. This makes aging a perfect example to study holistic changes in brain complexity, as we expect dimensional complexity also to be affected by aging. With nMPSE applied to healthy aging, as a proof of concept, we want to demonstrate that dimensional complexity measures can be used to describe changes in brain organization, due to external factors. We want to advocate this unique way of looking at brain function, as a method that might give rise to biomarkers of neurodegenerative diseases, as well as a tool to describe basic brain function.</p>
+    </sec>
+    <sec id="s2">
+      <title>2. Material and methods</title>
+      <sec>
+        <title>2.1. Nathan kline institute rockland sample</title>
+        <p>We used the so called Rockland sample (Nooner et al., <xref rid="B18" ref-type="bibr">2012</xref>), a public dataset from the Nathan Kline Institute, that provides a community sample of a great number of subjects that underwent a multitude of scanning protocols. In the scope of this study we employed the multiband session with a spatial resolution of 2 × 2 × 2 mm, a TR of 1,400 ms and 404 volumes. All Rockland sample subjects from releases 1–4 (of now 10 releases), who were at least 18 years of age and had a maximum movement displacement of 3 mm were included. This lead to 186 viable subjects with a mean age of 46.6 (standard deviation = 18) years. The dataset also provides physiological recordings (heart rate and breathing), which were removed from the fMRI data using the multiband adapted version of RETROICOR-RVHR (Scheel et al., <xref rid="B22" ref-type="bibr">2014a</xref>). Further preprocessing steps included head motion realignment (McFlirt, Jenkinson et al., <xref rid="B13" ref-type="bibr">2002</xref>), brain extraction (BET, Smith, <xref rid="B27" ref-type="bibr">2002</xref>) and 4mm isotropic smoothing (SUSAN, Smith and Brady, <xref rid="B28" ref-type="bibr">1997</xref>), all from the FMRIB Software Library - FSL (Jenkinson et al., <xref rid="B14" ref-type="bibr">2012</xref>). Remaining head motion induced artifacts were further reduced using ICA-AROMA (Pruim et al., <xref rid="B21" ref-type="bibr">2015</xref>). All subsequent preprocessing steps were carried out using the Data Processing Assistant for Resting-State fMRI (DPARSFA) V4.3 (Chao-Gan and Yu-Feng, <xref rid="B7" ref-type="bibr">2010</xref>). These steps consisted of cropping and reorienting the T1 anatomical volumes, co-registration of functional and anatomical volumes, functional volume normalization to MNI space using DARTEL (Ashburner, <xref rid="B1" ref-type="bibr">2007</xref>), regression of nuisance covariates (linear trends, cerebro-spinal fluid and white matter signals) as well as temporal bandpass filtering from 0.01 to 0.08 Hz.</p>
+      </sec>
+      <sec>
+        <title>2.2. Dimensional complexity measures</title>
+        <p>A series of rs-fMRI volumes can be seen as an abstract geometrical representation of neurological states at discrete moments in time. This representation is known as the state space (Wackermann, <xref rid="B36" ref-type="bibr">1996</xref>). It can be described by a matrix <inline-formula><mml:math id="M1"><mml:mi>X</mml:mi><mml:mtext> </mml:mtext><mml:mo>=</mml:mo><mml:mtext> </mml:mtext><mml:mrow><mml:mo>[</mml:mo><mml:mrow><mml:msub><mml:mrow><mml:mover accent="true"><mml:mrow><mml:mi>x</mml:mi></mml:mrow><mml:mo>→</mml:mo></mml:mover></mml:mrow><mml:mrow><mml:mn>1</mml:mn></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:mo>…</mml:mo><mml:mo>,</mml:mo><mml:msub><mml:mrow><mml:mover accent="true"><mml:mrow><mml:mi>x</mml:mi></mml:mrow><mml:mo>→</mml:mo></mml:mover></mml:mrow><mml:mrow><mml:mi>n</mml:mi></mml:mrow></mml:msub></mml:mrow><mml:mo>]</mml:mo></mml:mrow><mml:mo>∈</mml:mo><mml:msup><mml:mrow><mml:mi>ℝ</mml:mi></mml:mrow><mml:mrow><mml:mi>d</mml:mi><mml:mstyle class="text"><mml:mtext class="textrm" mathvariant="normal">x</mml:mtext></mml:mstyle><mml:mi>n</mml:mi></mml:mrow></mml:msup></mml:math></inline-formula>, where <italic>d</italic> equals the amount of data points for each discrete moment in time <italic>n</italic> of all <italic>N</italic> time points. Principal Component Analysis - PCA (Jolliffe, <xref rid="B15" ref-type="bibr">2002</xref>) can be used to find an orthonormal system of base vectors, so that any data vector <inline-formula><mml:math id="M2"><mml:msub><mml:mrow><mml:mover accent="true"><mml:mrow><mml:mi>x</mml:mi></mml:mrow><mml:mo>→</mml:mo></mml:mover></mml:mrow><mml:mrow><mml:mi>n</mml:mi></mml:mrow></mml:msub><mml:mo>∈</mml:mo><mml:mi>X</mml:mi></mml:math></inline-formula> can be expressed as a linear combination of orthonormal base vectors. For this, PCA calculates the Eigenvectors <inline-formula><mml:math id="M3"><mml:msub><mml:mrow><mml:mover accent="true"><mml:mrow><mml:mi>v</mml:mi></mml:mrow><mml:mo>→</mml:mo></mml:mover></mml:mrow><mml:mrow><mml:mn>1</mml:mn></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:mo>…</mml:mo><mml:mo>,</mml:mo><mml:msub><mml:mrow><mml:mover accent="true"><mml:mrow><mml:mi>v</mml:mi></mml:mrow><mml:mo>→</mml:mo></mml:mover></mml:mrow><mml:mrow><mml:mi>d</mml:mi><mml:mo>-</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:msub></mml:math></inline-formula> of the covariance matrix <italic>C</italic>, which is defined by</p>
+        <disp-formula id="E1">
+          <mml:math id="M4">
+            <mml:mrow>
+              <mml:msub>
+                <mml:mrow>
+                  <mml:mi>c</mml:mi>
+                </mml:mrow>
+                <mml:mrow>
+                  <mml:mi>i</mml:mi>
+                  <mml:mi>j</mml:mi>
+                </mml:mrow>
+              </mml:msub>
+              <mml:mo>=</mml:mo>
+              <mml:mfrac>
+                <mml:mrow>
+                  <mml:mn>1</mml:mn>
+                </mml:mrow>
+                <mml:mrow>
+                  <mml:mi>N</mml:mi>
+                </mml:mrow>
+              </mml:mfrac>
+              <mml:mstyle displaystyle="true">
+                <mml:munderover accentunder="false" accent="false">
+                  <mml:mrow>
+                    <mml:mo>∑</mml:mo>
+                  </mml:mrow>
+                  <mml:mrow>
+                    <mml:mi>n</mml:mi>
+                    <mml:mo>=</mml:mo>
+                    <mml:mn>1</mml:mn>
+                  </mml:mrow>
+                  <mml:mrow>
+                    <mml:mi>N</mml:mi>
+                  </mml:mrow>
+                </mml:munderover>
+              </mml:mstyle>
+              <mml:mrow>
+                <mml:mo stretchy="false">(</mml:mo>
+                <mml:mrow>
+                  <mml:msub>
+                    <mml:mrow>
+                      <mml:mover accent="true">
+                        <mml:mrow>
+                          <mml:mi>x</mml:mi>
+                        </mml:mrow>
+                        <mml:mo>→</mml:mo>
+                      </mml:mover>
+                    </mml:mrow>
+                    <mml:mrow>
+                      <mml:mi>i</mml:mi>
+                      <mml:mi>n</mml:mi>
+                    </mml:mrow>
+                  </mml:msub>
+                  <mml:mo>-</mml:mo>
+                  <mml:mover accent="true">
+                    <mml:mrow>
+                      <mml:mi>X</mml:mi>
+                    </mml:mrow>
+                    <mml:mo>¯</mml:mo>
+                  </mml:mover>
+                </mml:mrow>
+                <mml:mo stretchy="false">)</mml:mo>
+              </mml:mrow>
+              <mml:mrow>
+                <mml:mo stretchy="false">(</mml:mo>
+                <mml:mrow>
+                  <mml:msub>
+                    <mml:mrow>
+                      <mml:mover accent="true">
+                        <mml:mrow>
+                          <mml:mi>x</mml:mi>
+                        </mml:mrow>
+                        <mml:mo>→</mml:mo>
+                      </mml:mover>
+                    </mml:mrow>
+                    <mml:mrow>
+                      <mml:mi>j</mml:mi>
+                      <mml:mi>n</mml:mi>
+                    </mml:mrow>
+                  </mml:msub>
+                  <mml:mo>-</mml:mo>
+                  <mml:mover accent="true">
+                    <mml:mrow>
+                      <mml:mi>X</mml:mi>
+                    </mml:mrow>
+                    <mml:mo>¯</mml:mo>
+                  </mml:mover>
+                </mml:mrow>
+                <mml:mo stretchy="false">)</mml:mo>
+              </mml:mrow>
+              <mml:mo>,</mml:mo>
+            </mml:mrow>
+          </mml:math>
+        </disp-formula>
+        <p>where <inline-formula><mml:math id="M5"><mml:mover accent="true"><mml:mrow><mml:mi>X</mml:mi></mml:mrow><mml:mo>¯</mml:mo></mml:mover></mml:math></inline-formula> is the mean of <italic>X</italic>. The magnitude of an Eigenvalue (EV) λ<sub><italic>i</italic></sub> of the corresponding Eigenvector <inline-formula><mml:math id="M6"><mml:msub><mml:mrow><mml:mover accent="true"><mml:mrow><mml:mi>v</mml:mi></mml:mrow><mml:mo>→</mml:mo></mml:mover></mml:mrow><mml:mrow><mml:mi>i</mml:mi></mml:mrow></mml:msub></mml:math></inline-formula>, correlates with the variance of the data in direction of <inline-formula><mml:math id="M7"><mml:msub><mml:mrow><mml:mover accent="true"><mml:mrow><mml:mi>v</mml:mi></mml:mrow><mml:mo>→</mml:mo></mml:mover></mml:mrow><mml:mrow><mml:mi>i</mml:mi></mml:mrow></mml:msub></mml:math></inline-formula> (Jolliffe, <xref rid="B15" ref-type="bibr">2002</xref>). This leads to multiple boundaries: firstly the trivial (<italic>n</italic>−1) boundary, where all EVs greater than <italic>n</italic> = <italic>min</italic>[<italic>dim</italic>(<italic>x</italic>), <italic>dim</italic>(<italic>y</italic>)] are zero. By removing all <inline-formula><mml:math id="M8"><mml:mover accent="true"><mml:mrow><mml:mi>v</mml:mi></mml:mrow><mml:mo>→</mml:mo></mml:mover></mml:math></inline-formula> where the EVs are zero, a loss-less reduction and optimal projection of the original data, into a space of lower dimension can be achieved. The second threshold lies below the (<italic>n</italic>−1) boundary: here we define it at the point, where the summed energy of the EV spectrum reaches 99%. Depending on the EV distribution, it might be the case, that 99% of EV energy is reached with a fraction of all possible (<italic>n</italic>−1) EVs. The remaining dimensions, above this boundary, are usually interpreted as additive noise and discarded. Boundaries, set at even lower percentages of EV energy are probably the most interesting ones: they only use the first dimensions, carrying the most prominent data variance. While the 99% boundary can be seen as a noise filter, lower boundaries might give an interesting insight into the most discriminating dimensions.</p>
+        <p>The first measure of dimensional complexity we use, is Ω-Entropy (Wackermann, <xref rid="B36" ref-type="bibr">1996</xref>):</p>
+        <disp-formula id="E2">
+          <mml:math id="M9">
+            <mml:mrow>
+              <mml:mi>Ω</mml:mi>
+              <mml:mrow>
+                <mml:mo stretchy="false">(</mml:mo>
+                <mml:mrow>
+                  <mml:mi>X</mml:mi>
+                </mml:mrow>
+                <mml:mo stretchy="false">)</mml:mo>
+              </mml:mrow>
+              <mml:mo>=</mml:mo>
+              <mml:msup>
+                <mml:mrow>
+                  <mml:mn>2</mml:mn>
+                </mml:mrow>
+                <mml:mrow>
+                  <mml:mo>-</mml:mo>
+                  <mml:mstyle displaystyle="true">
+                    <mml:munderover accentunder="false" accent="false">
+                      <mml:mrow>
+                        <mml:mo>∑</mml:mo>
+                      </mml:mrow>
+                      <mml:mrow>
+                        <mml:mi>i</mml:mi>
+                        <mml:mo>=</mml:mo>
+                        <mml:mn>1</mml:mn>
+                      </mml:mrow>
+                      <mml:mrow>
+                        <mml:mi>d</mml:mi>
+                      </mml:mrow>
+                    </mml:munderover>
+                  </mml:mstyle>
+                  <mml:msubsup>
+                    <mml:mrow>
+                      <mml:mi>λ</mml:mi>
+                    </mml:mrow>
+                    <mml:mrow>
+                      <mml:mi>i</mml:mi>
+                    </mml:mrow>
+                    <mml:mrow>
+                      <mml:mi>′</mml:mi>
+                    </mml:mrow>
+                  </mml:msubsup>
+                  <mml:mo>·</mml:mo>
+                  <mml:msub>
+                    <mml:mrow>
+                      <mml:mtext class="textrm" mathvariant="normal">log</mml:mtext>
+                    </mml:mrow>
+                    <mml:mrow>
+                      <mml:mn>2</mml:mn>
+                    </mml:mrow>
+                  </mml:msub>
+                  <mml:mrow>
+                    <mml:mo stretchy="false">(</mml:mo>
+                    <mml:mrow>
+                      <mml:msubsup>
+                        <mml:mrow>
+                          <mml:mi>λ</mml:mi>
+                        </mml:mrow>
+                        <mml:mrow>
+                          <mml:mi>i</mml:mi>
+                        </mml:mrow>
+                        <mml:mrow>
+                          <mml:mi>′</mml:mi>
+                        </mml:mrow>
+                      </mml:msubsup>
+                    </mml:mrow>
+                    <mml:mo stretchy="false">)</mml:mo>
+                  </mml:mrow>
+                </mml:mrow>
+              </mml:msup>
+              <mml:mo>.</mml:mo>
+            </mml:mrow>
+          </mml:math>
+        </disp-formula>
+        <p>It uses the information of the proportions between <bold>all</bold> EVs (normalized to a unit sum):</p>
+        <disp-formula id="E3">
+          <mml:math id="M10">
+            <mml:mrow>
+              <mml:msubsup>
+                <mml:mrow>
+                  <mml:mi>λ</mml:mi>
+                </mml:mrow>
+                <mml:mrow>
+                  <mml:mi>i</mml:mi>
+                </mml:mrow>
+                <mml:mrow>
+                  <mml:mi>′</mml:mi>
+                </mml:mrow>
+              </mml:msubsup>
+              <mml:mo>=</mml:mo>
+              <mml:mfrac>
+                <mml:mrow>
+                  <mml:msub>
+                    <mml:mrow>
+                      <mml:mi>λ</mml:mi>
+                    </mml:mrow>
+                    <mml:mrow>
+                      <mml:mi>i</mml:mi>
+                    </mml:mrow>
+                  </mml:msub>
+                </mml:mrow>
+                <mml:mrow>
+                  <mml:mi>s</mml:mi>
+                </mml:mrow>
+              </mml:mfrac>
+              <mml:mo>,</mml:mo>
+              <mml:mi>s</mml:mi>
+              <mml:mo>=</mml:mo>
+              <mml:mstyle displaystyle="true">
+                <mml:munderover accentunder="false" accent="false">
+                  <mml:mrow>
+                    <mml:mo>∑</mml:mo>
+                  </mml:mrow>
+                  <mml:mrow>
+                    <mml:mi>i</mml:mi>
+                    <mml:mo>=</mml:mo>
+                    <mml:mn>1</mml:mn>
+                  </mml:mrow>
+                  <mml:mrow>
+                    <mml:mi>d</mml:mi>
+                  </mml:mrow>
+                </mml:munderover>
+              </mml:mstyle>
+              <mml:msub>
+                <mml:mrow>
+                  <mml:mi>λ</mml:mi>
+                </mml:mrow>
+                <mml:mrow>
+                  <mml:mi>i</mml:mi>
+                </mml:mrow>
+              </mml:msub>
+              <mml:mo>.</mml:mo>
+            </mml:mrow>
+          </mml:math>
+        </disp-formula>
+        <p>A dimensional complexity measure, that allows scalable levels of EV-energy is called Multivariate Principal Subspace Entropy (MPSE) and was introduced by Schütze et al. (<xref rid="B24" ref-type="bibr">2012</xref>). With MPSE, it is possible to restrict the number of EVs, using a parameter <italic>k</italic>:</p>
+        <disp-formula id="E4">
+          <mml:math id="M11">
+            <mml:mrow>
+              <mml:msub>
+                <mml:mrow>
+                  <mml:mtext class="textrm" mathvariant="normal">MPSE</mml:mtext>
+                </mml:mrow>
+                <mml:mrow>
+                  <mml:mi>k</mml:mi>
+                </mml:mrow>
+              </mml:msub>
+              <mml:mrow>
+                <mml:mo stretchy="false">(</mml:mo>
+                <mml:mrow>
+                  <mml:mi>X</mml:mi>
+                </mml:mrow>
+                <mml:mo stretchy="false">)</mml:mo>
+              </mml:mrow>
+              <mml:mo>=</mml:mo>
+              <mml:mfrac>
+                <mml:mrow>
+                  <mml:mn>1</mml:mn>
+                </mml:mrow>
+                <mml:mrow>
+                  <mml:mn>2</mml:mn>
+                </mml:mrow>
+              </mml:mfrac>
+              <mml:mstyle displaystyle="true">
+                <mml:munderover accentunder="false" accent="false">
+                  <mml:mrow>
+                    <mml:mo>∑</mml:mo>
+                  </mml:mrow>
+                  <mml:mrow>
+                    <mml:mi>i</mml:mi>
+                    <mml:mo>=</mml:mo>
+                    <mml:mn>1</mml:mn>
+                  </mml:mrow>
+                  <mml:mrow>
+                    <mml:mi>k</mml:mi>
+                  </mml:mrow>
+                </mml:munderover>
+              </mml:mstyle>
+              <mml:mtext class="textrm" mathvariant="normal">ln</mml:mtext>
+              <mml:mrow>
+                <mml:mo stretchy="false">(</mml:mo>
+                <mml:mrow>
+                  <mml:msub>
+                    <mml:mrow>
+                      <mml:mi>λ</mml:mi>
+                    </mml:mrow>
+                    <mml:mrow>
+                      <mml:mi>i</mml:mi>
+                    </mml:mrow>
+                  </mml:msub>
+                </mml:mrow>
+                <mml:mo stretchy="false">)</mml:mo>
+              </mml:mrow>
+              <mml:mo>+</mml:mo>
+              <mml:mfrac>
+                <mml:mrow>
+                  <mml:mi>k</mml:mi>
+                </mml:mrow>
+                <mml:mrow>
+                  <mml:mn>2</mml:mn>
+                </mml:mrow>
+              </mml:mfrac>
+              <mml:mrow>
+                <mml:mo stretchy="false">(</mml:mo>
+                <mml:mrow>
+                  <mml:mn>1</mml:mn>
+                  <mml:mo>+</mml:mo>
+                  <mml:mtext class="textrm" mathvariant="normal">ln</mml:mtext>
+                  <mml:mrow>
+                    <mml:mo stretchy="false">(</mml:mo>
+                    <mml:mrow>
+                      <mml:mn>2</mml:mn>
+                      <mml:mi>π</mml:mi>
+                    </mml:mrow>
+                    <mml:mo stretchy="false">)</mml:mo>
+                  </mml:mrow>
+                </mml:mrow>
+                <mml:mo stretchy="false">)</mml:mo>
+              </mml:mrow>
+              <mml:mo>,</mml:mo>
+            </mml:mrow>
+          </mml:math>
+        </disp-formula>
+        <p>Using normalized Eigenvalues λ′ (as used with Ω) instead of λ adds a normalization step to the <italic>k</italic>-scalable MPSE and leads to the normalized Multivariate Principal Subspace Entropy (nMPSE):</p>
+        <disp-formula id="E5">
+          <mml:math id="M12">
+            <mml:mtable columnalign="left">
+              <mml:mtr>
+                <mml:mtd>
+                  <mml:msub>
+                    <mml:mrow>
+                      <mml:mtext class="textrm" mathvariant="normal">nMPSE</mml:mtext>
+                    </mml:mrow>
+                    <mml:mrow>
+                      <mml:mi>k</mml:mi>
+                    </mml:mrow>
+                  </mml:msub>
+                  <mml:mrow>
+                    <mml:mo stretchy="false">(</mml:mo>
+                    <mml:mrow>
+                      <mml:mi>X</mml:mi>
+                    </mml:mrow>
+                    <mml:mo stretchy="false">)</mml:mo>
+                  </mml:mrow>
+                </mml:mtd>
+                <mml:mtd>
+                  <mml:mo>=</mml:mo>
+                </mml:mtd>
+                <mml:mtd>
+                  <mml:mfrac>
+                    <mml:mrow>
+                      <mml:mn>1</mml:mn>
+                    </mml:mrow>
+                    <mml:mrow>
+                      <mml:mn>2</mml:mn>
+                    </mml:mrow>
+                  </mml:mfrac>
+                  <mml:mstyle displaystyle="true">
+                    <mml:munderover accentunder="false" accent="false">
+                      <mml:mrow>
+                        <mml:mo>∑</mml:mo>
+                      </mml:mrow>
+                      <mml:mrow>
+                        <mml:mi>i</mml:mi>
+                        <mml:mo>=</mml:mo>
+                        <mml:mn>1</mml:mn>
+                      </mml:mrow>
+                      <mml:mrow>
+                        <mml:mi>k</mml:mi>
+                      </mml:mrow>
+                    </mml:munderover>
+                  </mml:mstyle>
+                  <mml:mtext class="textrm" mathvariant="normal">ln</mml:mtext>
+                  <mml:mrow>
+                    <mml:mo stretchy="false">(</mml:mo>
+                    <mml:mrow>
+                      <mml:msubsup>
+                        <mml:mrow>
+                          <mml:mi>λ</mml:mi>
+                        </mml:mrow>
+                        <mml:mrow>
+                          <mml:mi>i</mml:mi>
+                        </mml:mrow>
+                        <mml:mrow>
+                          <mml:mi>′</mml:mi>
+                        </mml:mrow>
+                      </mml:msubsup>
+                    </mml:mrow>
+                    <mml:mo stretchy="false">)</mml:mo>
+                  </mml:mrow>
+                  <mml:mo>+</mml:mo>
+                  <mml:mfrac>
+                    <mml:mrow>
+                      <mml:mi>k</mml:mi>
+                    </mml:mrow>
+                    <mml:mrow>
+                      <mml:mn>2</mml:mn>
+                    </mml:mrow>
+                  </mml:mfrac>
+                  <mml:mrow>
+                    <mml:mo stretchy="false">(</mml:mo>
+                    <mml:mrow>
+                      <mml:mn>1</mml:mn>
+                      <mml:mo>+</mml:mo>
+                      <mml:mtext class="textrm" mathvariant="normal">ln</mml:mtext>
+                      <mml:mrow>
+                        <mml:mo stretchy="false">(</mml:mo>
+                        <mml:mrow>
+                          <mml:mn>2</mml:mn>
+                          <mml:mi>π</mml:mi>
+                        </mml:mrow>
+                        <mml:mo stretchy="false">)</mml:mo>
+                      </mml:mrow>
+                    </mml:mrow>
+                    <mml:mo stretchy="false">)</mml:mo>
+                  </mml:mrow>
+                  <mml:mo>,</mml:mo>
+                </mml:mtd>
+              </mml:mtr>
+              <mml:mtr>
+                <mml:mtd>
+                  <mml:mtext class="textrm" mathvariant="normal">where</mml:mtext>
+                  <mml:msubsup>
+                    <mml:mrow>
+                      <mml:mi>λ</mml:mi>
+                    </mml:mrow>
+                    <mml:mrow>
+                      <mml:mi>i</mml:mi>
+                    </mml:mrow>
+                    <mml:mrow>
+                      <mml:mi>′</mml:mi>
+                    </mml:mrow>
+                  </mml:msubsup>
+                  <mml:mo>=</mml:mo>
+                  <mml:mfrac>
+                    <mml:mrow>
+                      <mml:msub>
+                        <mml:mrow>
+                          <mml:mi>λ</mml:mi>
+                        </mml:mrow>
+                        <mml:mrow>
+                          <mml:mi>i</mml:mi>
+                        </mml:mrow>
+                      </mml:msub>
+                    </mml:mrow>
+                    <mml:mrow>
+                      <mml:mi>s</mml:mi>
+                    </mml:mrow>
+                  </mml:mfrac>
+                  <mml:mo>,</mml:mo>
+                  <mml:mtext> </mml:mtext>
+                  <mml:mi>s</mml:mi>
+                  <mml:mo>=</mml:mo>
+                  <mml:mstyle displaystyle="true">
+                    <mml:munderover accentunder="false" accent="false">
+                      <mml:mrow>
+                        <mml:mo>∑</mml:mo>
+                      </mml:mrow>
+                      <mml:mrow>
+                        <mml:mi>i</mml:mi>
+                        <mml:mo>=</mml:mo>
+                        <mml:mn>1</mml:mn>
+                      </mml:mrow>
+                      <mml:mrow>
+                        <mml:mi>k</mml:mi>
+                      </mml:mrow>
+                    </mml:munderover>
+                  </mml:mstyle>
+                  <mml:msub>
+                    <mml:mrow>
+                      <mml:mi>λ</mml:mi>
+                    </mml:mrow>
+                    <mml:mrow>
+                      <mml:mi>i</mml:mi>
+                    </mml:mrow>
+                  </mml:msub>
+                  <mml:mo>.</mml:mo>
+                </mml:mtd>
+              </mml:mtr>
+            </mml:mtable>
+          </mml:math>
+        </disp-formula>
+        <p>Here only the <italic>k</italic> largest EV dimensions (normalized to a unit sum) are taken into consideration. Supplementary Figure <xref ref-type="supplementary-material" rid="SM1">9</xref> shows a simulation of Ω, MPSE and nMPSE, displaying the invariance of nMPSE and Ω to global shifts in data variance. A Matlab implementation of nMPSE can be found in the <xref ref-type="supplementary-material" rid="SM1">Supplementary Material</xref>.</p>
+      </sec>
+      <sec>
+        <title>2.3. Brain parcellation, complexity and aging</title>
+        <p>In order to examine and study complexity of the aging brain, we used different brain parcellation approaches. The Automated Anatomical Labeling (AAL) atlas (Tzourio-Mazoyer et al., <xref rid="B35" ref-type="bibr">2002</xref>) consists of 90 anatomical brain regions. Merging all 90 regions results in a full brain mask, subsuming all cortical brain regions. This mask served for whole brain analyses. The next approach examined complexity on each anatomical region separately. Here brain complexity was computed within each single AAL region. As a counterpart to anatomical parcellation, we also calculated complexity on functional network level by using the resting-state network atlas by Shirer et al. (<xref rid="B25" ref-type="bibr">2012</xref>). Here, we retrieved a complexity measure for each of the 14 resting-state networks. An even more fine-grained picture was achieved by employing a computationally demanding search light approach. For every voxel (search light) a sphere with a radius of 10 mm was created. This way we were able to calculate complexity within each of these spheres and assign a complexity value to every single voxel of the brain. Finally, to find a connection between brain complexity and biological age, we calculated the corresponding Pearson correlation of complexity and age for each parcellation approach. To evaluate statistical significance we used permutation tests and corrected for multiple testing using the Bonferroni method (Bonferroni, <xref rid="B5" ref-type="bibr">1936</xref>). Figure <xref ref-type="fig" rid="F1">1</xref> provides an overview of all different steps carried out.</p>
+        <fig id="F1" position="float">
+          <label>Figure 1</label>
+          <caption>
+            <p>Workflow: after preprocessing, parcellation I was used for whole brain, II for anatomical regions, III for functional networks and IV for searchlight analyses. Each analysis consisted of calculating Ω (using all EVs) and nMPSE (using EVs that range from 1 to 99.99% of the summed EV-energy), followed by a correlation with corresponding subject ages and tests for significance.</p>
+          </caption>
+          <graphic xlink:href="fnhum-12-00451-g0001"/>
+        </fig>
+      </sec>
+    </sec>
+    <sec id="s3">
+      <title>3. Results</title>
+      <p>Dimensional complexity measures, Ω and nMPSE alike, are based on a subjects Eigenvalue (EV) spectrum. Figure <xref ref-type="fig" rid="F2">2</xref> displays the cumulated, whole brain, EV spectrum, normalized to a unit sum, showing the mean of all subjects with the corresponding standard deviation. As expected, 99% of Eigenenergy are reached using just a fraction of all possible non zero EV dimensions, namely 70 of 403. Already the first 6 dimensions make up for 50% of data variance, while 75% of Eigenenergy is represented in the first 20. This is in line with the expectation, that most of the data variance is dominated by resting-state network activity, as previous studies reported approximately 20 non-noise components, subsumming the activity of 14 resting-state networks (Shirer et al., <xref rid="B25" ref-type="bibr">2012</xref>).</p>
+      <fig id="F2" position="float">
+        <label>Figure 2</label>
+        <caption>
+          <p>Cumulated EV spectrum, normalized to a unit sum, of all subjects (mean and standard deviation), showing multiple boundaries of the cumulated EV energy for 1–90 of 403 (<italic>min</italic>(160990 voxel, 404 time steps)-1) possible non-zero EVs resp. principal components - PCs.</p>
+        </caption>
+        <graphic xlink:href="fnhum-12-00451-g0002"/>
+      </fig>
+      <p>The next steps consist of analyzing the correlation of functional brain complexity and the subjects actual ages. Here, complexity is measured by either Ω (using the complete EV spectrum of each subject) or nMPSE (using <italic>k</italic>-thresholded EV spectra of each subject). In line with Figure <xref ref-type="fig" rid="F1">1</xref>, the following results are sectioned into the four different parcellation strategies: the analysis of whole brain functional complexity, followed by (hypothesis driven) anatomical regions, as well as functional resting-state networks, culminating in hypothesis free, whole-brain - small neighborhood search lights.</p>
+      <p>We can report a strong significant correlation for whole-brain Ω entropy and age (<italic>p</italic> ≤ 10<sup>−3</sup>, incl. Bonferroni correction), see Figure <xref ref-type="fig" rid="F3">3</xref>. Note that Ω uses all dimensions, meaning the complete EV spectrum to calculate the complexity. On the contrary, whole-brain nMPSE results show that 50% of EV energy (meaning using only the first six dimensions) already yield a significant, yet not strong correlation of nMPSE and age (<italic>p</italic> ≤ 0.05). Adding dimensions causes nMPSE-age correlation to increase. At roughly 91% of EV energy (45 components), nMPSE is on par with Ω, even surpassing it with more added EV energy. Using these observations, we can now try to identify EV energy bands, prone to age related changes and it turns out that the age effect is not restricted to some, or only the first few dimensions, as one would expect with 14 dominant resting-state networks. Apparently all meaningful whole brain components are affected by age related changes.</p>
+      <fig id="F3" position="float">
+        <label>Figure 3</label>
+        <caption>
+          <p>Whole-Brain complexity vs. age correlation for Ω and nMPSE (nMPSE labels show <italic>k</italic>-value and the corresponding percentage of the cumulated EV energy). Stars denote corrected significance levels with *<italic>p</italic> ≤ 0.05, **<italic>p</italic> ≤ 10<sup>−2</sup>, and ***<italic>p</italic> ≤ 10<sup>−3</sup>.</p>
+        </caption>
+        <graphic xlink:href="fnhum-12-00451-g0003"/>
+      </fig>
+      <p>As global, whole brain, age effects are quite distributed over the EV spectrum, the question arises, if there is a spatial effect of different separate substructures of the brain. Looking at complexity within single anatomical regions, essentially replicates the finding of whole-brain effects (Figure <xref ref-type="fig" rid="F4">4</xref>). On average, Ω vs. age correlation is strongly significant (using the complete EV spectrum), while nMPSE vs. age correlation depends on the amount of EV energy used. The mean characteristic curve of nMPSE, subject to <italic>k</italic>, reaches Ω level at the intersection point of 81% of EV energy. Also, nMPSE significantly surpasses Ω, reaching <italic>r</italic> = 0.4 using 99% of EV energy. Again, we need a <italic>k</italic> higher than we would expect from Figure <xref ref-type="fig" rid="F2">2</xref>, to obtain an nMPSE-age correlation in the range of Ω vs. age.</p>
+      <fig id="F4" position="float">
+        <label>Figure 4</label>
+        <caption>
+          <p>Mean age vs. complexity correlation for all anatomical regions. Using the first 50% of EV energy (the first 6 dimensions), nMPSE reaches significance. At this point the correlation for nMPSE is lower than for Ω. Adding dimensions, nMPSE surpasses Ω at 28 dimensions (81% of EV engery), the so called Ω-nMPSE intersection point. A dent at 82 dimensions represents the 99.99% EV energy boundary.</p>
+        </caption>
+        <graphic xlink:href="fnhum-12-00451-g0004"/>
+      </fig>
+      <p>Additionally, even though the whole-brain effect is replicated on average with AAL regions, age-complexity correlations are regionally very diverse. Some regions show a strong significant complexity-age correlation, others do not. All in all, 81 (of 90) reach a significant complexity-age correlation using nMPSE, 71 using Ω. All 9 regions, not reaching significance with nMPSE, are a subset of the 19 regions not reaching significance with Ω. Furthermore, for regional nMPSE, very different amounts of EV energy are needed, see Figure <xref ref-type="fig" rid="F5">5</xref>. Some regions only demand very few dimensions, whereas others take up almost all of the EV energy to reach significance: e.g., the right insula or the right lingual AAL region only need the first two dimensions, corresponding to 29% of EV energy, in contrast, the right angular gyrus needs 74 components at 99% of EV energy. Most of the regions using less than the first 50% of EV energy, reach significance with only 2 or 3 dimensions. Supplementary Table <xref ref-type="supplementary-material" rid="SM1">3</xref> provides a lookup table for the results of each anatomical brain region.</p>
+      <fig id="F5" position="float">
+        <label>Figure 5</label>
+        <caption>
+          <p>AAL regions, reaching a significant age/complexity correlation (<italic>r</italic> = 0.2, approximately) at diverse levels of EV energy. Some regions need extremely few dimensions, others need almost all EV energy available to reach significance. See Supplementary Table <xref ref-type="supplementary-material" rid="SM1">3</xref> for a listing of AAL regions with corresponding dimensionality results.</p>
+        </caption>
+        <graphic xlink:href="fnhum-12-00451-g0005"/>
+      </fig>
+      <p>An alternative to anatomical brain parcellation is a functional approach, dividing the brain into functional rather than anatomical units, namely resting-state networks. Analyzing the age-effect from this point of view (Figure <xref ref-type="fig" rid="F6">6</xref>), we found that, as for anatomical regions, some networks are significantly correlated even for small <italic>k</italic>, others are more demanding. The Sensorimotor network needs the smallest number of dimensions to decode the age difference, whereas the left executive control network needs most of the EV energy to reach significance. Again, keep in mind that Ω uses the whole EV spectrum and reaches strong age correlations in all resting-state networks but one: Remarkably, corresponding to the AAL regions, the higher visual network did not show a significant correlation for Ω or nMPSE at any <italic>k</italic>.</p>
+      <fig id="F6" position="float">
+        <label>Figure 6</label>
+        <caption>
+          <p>Resting-state networks, reaching a significant age/complexity correlation (<italic>r</italic> = 0.2 approximately) at diverse levels of EV energy. Some networks need extremely few dimensions (below the 50% threshold), others need quite a lot of EV energy. L/RECN marks the left/right executive control network, d/vDMN the dorsal/ventral Default Mode Network.</p>
+        </caption>
+        <graphic xlink:href="fnhum-12-00451-g0006"/>
+      </fig>
+      <p>Finally, in order to have an hypothesis free grasp of brain regions, displaying complexity changes due to healthy aging, we look at whole brain, local neighborhood searchlights: Figure <xref ref-type="fig" rid="F7">7</xref> shows the voxel populations yielding the highest age-complexity correlations, subject to the different levels of used EV energy. Figures <xref ref-type="fig" rid="F7">7A–D</xref> show, that using 99% of EV energy leads to wide spread, strong positive correlations between age and nMPSE. Table <xref rid="T1" ref-type="table">1</xref> lists the top ten voxel coordinates with corresponding locations and <italic>r</italic> values. On the contrary Figures <xref ref-type="fig" rid="F7">7E–H</xref>, using only 50% of EV energy, show a more concise view of aging effects, as only the first six dimensions were taken into consideration. Table <xref rid="T2" ref-type="table">2</xref> gives the corresponding list of top ten voxel coordinates. Results for Ω and intermediate nMPSE results (at different <italic>k</italic> levels) can be found in the <xref ref-type="supplementary-material" rid="SM1">Supplementary Material</xref>. Essentially, regional and network results are replicated by the searchlight approach. It seems like there is a filter-like transition from small <italic>k</italic> to big <italic>k</italic>: small regions grow naturally, while <italic>k</italic> increases. Small <italic>k</italic> regions appear to be seeds for larger <italic>k</italic> regions. Additionally some regions only appear when using higher <italic>k</italic> values (see frontal regions of left hemisphere).</p>
+      <fig id="F7" position="float">
+        <label>Figure 7</label>
+        <caption>
+          <p>Searchlights for nMPSE <italic>k</italic> = 76 (99% of EV energy) and <italic>k</italic> = 6 (50% of EV energy). <bold>(A)</bold> Right hemisphere, 99% EV energy, <italic>r</italic> &gt; 0.45. <bold>(B)</bold> Left hemisphere, 99% EV energy, <italic>r</italic> &gt; 0.45. <bold>(C)</bold> Right hemisphere, 99% EV energy, <italic>r</italic> &gt; 0.45. <bold>(D)</bold> left hemisphere, 99% EV energy, <italic>r</italic> &gt; 0.45. <bold>(E)</bold> Right hemisphere, 50% EV energy, <italic>r</italic> &gt; 0.35. <bold>(F)</bold> Left hemisphere, 50% EV energy, <italic>r</italic> &gt; 0.35. <bold>(G)</bold> Right hemisphere, 50% EV energy, <italic>r</italic> &gt; 0.35. <bold>(H)</bold> Left hemisphere, 50% EV energy, <italic>r</italic> &gt; 0.35.</p>
+        </caption>
+        <graphic xlink:href="fnhum-12-00451-g0007"/>
+      </fig>
+      <table-wrap id="T1" position="float">
+        <label>Table 1</label>
+        <caption>
+          <p>Top 10 significant voxels for nMPSE (<italic>k</italic> = 76, 99% of EV energy) searchlights.</p>
+        </caption>
+        <table frame="hsides" rules="groups">
+          <thead>
+            <tr>
+              <th valign="top" align="center" rowspan="1" colspan="1">
+                <bold>
+                  <italic>X</italic>
+                </bold>
+              </th>
+              <th valign="top" align="center" rowspan="1" colspan="1">
+                <bold>
+                  <italic>Y</italic>
+                </bold>
+              </th>
+              <th valign="top" align="center" rowspan="1" colspan="1">
+                <bold>
+                  <italic>Z</italic>
+                </bold>
+              </th>
+              <th valign="top" align="center" rowspan="1" colspan="1">
+                <bold>
+                  <italic>r</italic>
+                </bold>
+              </th>
+              <th valign="top" align="left" rowspan="1" colspan="1">
+                <bold>AAL Region</bold>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td valign="top" align="center" rowspan="1" colspan="1">48</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">18</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">18</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.6664</td>
+              <td valign="top" align="left" rowspan="1" colspan="1">Frontal Inf Tri R</td>
+            </tr>
+            <tr>
+              <td valign="top" align="center" rowspan="1" colspan="1">6</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">8</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">50</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.6272</td>
+              <td valign="top" align="left" rowspan="1" colspan="1">Supp Motor Area R</td>
+            </tr>
+            <tr>
+              <td valign="top" align="center" rowspan="1" colspan="1">−58</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">−32</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">48</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.619</td>
+              <td valign="top" align="left" rowspan="1" colspan="1">Parietal Inf L</td>
+            </tr>
+            <tr>
+              <td valign="top" align="center" rowspan="1" colspan="1">28</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">6</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">56</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.6179</td>
+              <td valign="top" align="left" rowspan="1" colspan="1">Frontal Mid R</td>
+            </tr>
+            <tr>
+              <td valign="top" align="center" rowspan="1" colspan="1">−58</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">12</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">18</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.6119</td>
+              <td valign="top" align="left" rowspan="1" colspan="1">Frontal Inf Oper L</td>
+            </tr>
+            <tr>
+              <td valign="top" align="center" rowspan="1" colspan="1">46</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">−36</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">58</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.601</td>
+              <td valign="top" align="left" rowspan="1" colspan="1">Postcentral R</td>
+            </tr>
+            <tr>
+              <td valign="top" align="center" rowspan="1" colspan="1">62</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">−24</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">42</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.5983</td>
+              <td valign="top" align="left" rowspan="1" colspan="1">SupraMarginal R</td>
+            </tr>
+            <tr>
+              <td valign="top" align="center" rowspan="1" colspan="1">−20</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">8</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">58</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.5766</td>
+              <td valign="top" align="left" rowspan="1" colspan="1">Frontal Sup L</td>
+            </tr>
+            <tr>
+              <td valign="top" align="center" rowspan="1" colspan="1">−8</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">−38</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">28</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.5663</td>
+              <td valign="top" align="left" rowspan="1" colspan="1">Cingulum Post L</td>
+            </tr>
+            <tr>
+              <td valign="top" align="center" rowspan="1" colspan="1">−30</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">32</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">20</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.5662</td>
+              <td valign="top" align="left" rowspan="1" colspan="1">Frontal Mid L</td>
+            </tr>
+          </tbody>
+        </table>
+      </table-wrap>
+      <table-wrap id="T2" position="float">
+        <label>Table 2</label>
+        <caption>
+          <p>Top 10 significant voxels for nMPSE (<italic>k</italic> = 6, 50% of EV energy) searchlights.</p>
+        </caption>
+        <table frame="hsides" rules="groups">
+          <thead>
+            <tr>
+              <th valign="top" align="center" rowspan="1" colspan="1">
+                <bold>
+                  <italic>X</italic>
+                </bold>
+              </th>
+              <th valign="top" align="center" rowspan="1" colspan="1">
+                <bold>
+                  <italic>Y</italic>
+                </bold>
+              </th>
+              <th valign="top" align="center" rowspan="1" colspan="1">
+                <bold>
+                  <italic>Z</italic>
+                </bold>
+              </th>
+              <th valign="top" align="center" rowspan="1" colspan="1">
+                <bold>
+                  <italic>r</italic>
+                </bold>
+              </th>
+              <th valign="top" align="left" rowspan="1" colspan="1">
+                <bold>AAL Region</bold>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td valign="top" align="center" rowspan="1" colspan="1">10</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">8</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">56</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.5352</td>
+              <td valign="top" align="left" rowspan="1" colspan="1">Supp Motor Area R</td>
+            </tr>
+            <tr>
+              <td valign="top" align="center" rowspan="1" colspan="1">32</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">24</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">−12</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.5165</td>
+              <td valign="top" align="left" rowspan="1" colspan="1">Frontal Inf Orb R</td>
+            </tr>
+            <tr>
+              <td valign="top" align="center" rowspan="1" colspan="1">46</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">16</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">16</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.4924</td>
+              <td valign="top" align="left" rowspan="1" colspan="1">Frontal Inf Oper R</td>
+            </tr>
+            <tr>
+              <td valign="top" align="center" rowspan="1" colspan="1">−62</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">10</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">16</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.4852</td>
+              <td valign="top" align="left" rowspan="1" colspan="1">Frontal Inf Oper L</td>
+            </tr>
+            <tr>
+              <td valign="top" align="center" rowspan="1" colspan="1">−24</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">−40</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">−12</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.4814</td>
+              <td valign="top" align="left" rowspan="1" colspan="1">Fusiform L</td>
+            </tr>
+            <tr>
+              <td valign="top" align="center" rowspan="1" colspan="1">−6</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">8</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.4803</td>
+              <td valign="top" align="left" rowspan="1" colspan="1">Caudate L</td>
+            </tr>
+            <tr>
+              <td valign="top" align="center" rowspan="1" colspan="1">24</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">−40</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">64</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.4784</td>
+              <td valign="top" align="left" rowspan="1" colspan="1">Postcentral R</td>
+            </tr>
+            <tr>
+              <td valign="top" align="center" rowspan="1" colspan="1">−6</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">4</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">50</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.4732</td>
+              <td valign="top" align="left" rowspan="1" colspan="1">Supp Motor Area L</td>
+            </tr>
+            <tr>
+              <td valign="top" align="center" rowspan="1" colspan="1">18</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">−26</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">66</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.4718</td>
+              <td valign="top" align="left" rowspan="1" colspan="1">Precentral R</td>
+            </tr>
+            <tr>
+              <td valign="top" align="center" rowspan="1" colspan="1">−18</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">−24</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">64</td>
+              <td valign="top" align="center" rowspan="1" colspan="1">0.4718</td>
+              <td valign="top" align="left" rowspan="1" colspan="1">Paracentral Lobule L</td>
+            </tr>
+          </tbody>
+        </table>
+      </table-wrap>
+    </sec>
+    <sec id="s4">
+      <title>4. Discussion</title>
+      <p>Looking at the results, we can see that dimensional complexity measures, describing the entropy of (sub-)spaces of a subjects Eigenvalue (EV) spectrum, can be successfully deployed on resting-state fMRI data, in order to find subtle differences in the organization and complexity of brain function. In addition to Ω for fMRI (initially introduced by Wackermann in 1996 for EEG analysis) we introduced and evaluated the normalized Multivariate Principal Subspace Entropy (nMPSE) for resting-state fMRI data. One of the main differences between Ω and nMPSE is the fact that, with nMPSE we can analyze entropy at different levels of <italic>k</italic>, i.e., for subsets of Eigenvectors (subspaces). This becomes especially interesting in the scope of resting-state networks, because we expect them to be related to the most variant principal components (PCs). Resting-state networks have been studied in many ways and have proven to be consistent across multiple data sets, as 10–20 components are reliably identified as parts of the 14 resting-state networks (Damoiseaux et al., <xref rid="B8" ref-type="bibr">2006</xref>; Shirer et al., <xref rid="B25" ref-type="bibr">2012</xref>). Looking at the averaged Eigenspectrum in Figure <xref ref-type="fig" rid="F2">2</xref> we see a close resemblance to these findings: 20 components make up for 75% of cumulated EV energy, thus most of the data variance can be attributed to a comparable number of components.</p>
+      <p>As a proof of concept, we looked at the effects of healthy aging on dimensional complexity measures. In the following, we discuss the results of the whole brain functional complexity analysis. To further discern the contribution of substructures of the brain to the aging effect, we then discuss the results for functional networks as well as anatomical regions. The results of the regional hypothesis free, local neighborhood, whole brain searchlights will be discussed thereafter.</p>
+      <p>Whole brain functional complexity analysis (Figure <xref ref-type="fig" rid="F3">3</xref>) illustrates that, the first 10 dimensions, accounting for more than 50% of information, already include major age-related changes. The remaining dimensions cover the other half of the age-related effects. Routinely the analysis would be limited to 30 dimensions (approx. 85% of data variance) for comparable component based analyses. Doing so, barely leads to a stronger correlation. We found that nMPSE becomes more and more discriminative for a growing <italic>k</italic> at values even larger than 30. This indicates that <italic>all</italic> dimensions are changed by age-related processes, and not only the principal components with the largest Eigenvalues. Obviously there is a lot of discriminative information in higher dimensions with lower variance. In other words, the age-related correlation is not depending on just some prominent factors (e.g., single resting-state networks) but it seems like a globally distributed effect, that is independent of global variance (ruled out through normalization in Ω and nMPSE).</p>
+      <p>Not surprisingly, therefore all networks (except the higher visual network) showed a significant correlation between Ω and age. Using nMPSE, we could further examine the amount of EV energy needed to reach this significance. Here the higher visual network also never shows a significant correlation to age, which goes along with the observations using AAL regions. A closer look at Figure <xref ref-type="fig" rid="F6">6</xref> reveals, that basic networks (i.e., sensorimotor, basal ganglia, and auditory), only need a small number of dimensions. Higher-order networks (i.e., executive control or language) need a lot more EV energy. One possible interpretation would be, that age-related changes for basic networks occur already in the first PCs of those networks, while higher order network changes along age, are wide-spread over many components. The dissent between the language network results here and respective areas from the AAL or search light based approach, can be explained by the fact, that the language network map is comprised of multiple language processing areas, while for the AAL and search light approach specific language related regions are tested separately.</p>
+      <p>We were able to replicate these findings quantitatively for all tested parcellation approaches. Specifically, using the AAL atlas demonstrated that, on average, we also need most of the components to retrieve a strong significant complexity-age correlation. Looking at AAL regions separately, we see that some yield significant correlations, using only the most dominant PCs (<italic>k</italic> ≤ 6). It seems, that areas naturally attributed to aging are also needing the least amount of EV energy to yield a significant result. Most interestingly areas responsible for motion control and motor processes, cognitive processing and decision making, memory encoding and retrieval, decision-making, emotions, language processing, inhibitory control and regulation of sleep as well as alertness (namely putamen, orbifrontal cortex, parahippocampal gyrus, amygdala, caudate nucleus and thalamus) are displaying the strongest correlations and are in line with other publications reporting aging effects in the brain (e.g., Brodoehl et al., <xref rid="B6" ref-type="bibr">2013</xref>; Zhuang et al., <xref rid="B39" ref-type="bibr">2017</xref>; Zhu et al., <xref rid="B38" ref-type="bibr">2017</xref>). On the contrary, areas for processing visual information like calcarine, cuneus, angular gyrus among other occipital regions need almost all EV energy if they reach significance at all, hinting at an age independence, see Supplementary Table <xref ref-type="supplementary-material" rid="SM1">3</xref>.</p>
+      <p>Employing the searchlight approach, we tried to understand how the spatial distribution of the complexity-related age-correlation looks like, without prior parcellation into regions or networks. Figure <xref ref-type="fig" rid="F7">7</xref> shows that the positively correlated regions are not randomly spread over the whole brain. When visualizing the searchlight results for 99% EV energy, clusters in large frontal inferior and sensorimotor areas become apparent. These regions seem to shrink when we remove more and more Eigenvectors from nMPSE, leaving only some small, concise areas, congruent to previous results (compare Table <xref rid="T1" ref-type="table">1</xref> and Table <xref rid="T2" ref-type="table">2</xref>). Also, for only 50% of EV energy, the significant regions are not randomly scattered within the regions reaching significance with 99% of EV energy, but seem to be seed regions to those.</p>
+      <p>Finally, the question might arise, why brain entropy is positively correlated with age. Is brain activity in older brains really more complex? Here, we have to take a closer look on the exact meaning of complexity. A signal is less complex (or has a lower entropy) if the signal is dominated by only a few strong components, e.g., sensory networks for younger subjects. If then in older brains other (possibly compensatory) tasks become more demanding, the EV energy would be more equally leveled and thus lead to a higher entropy. From this perspective the signal is more complex. Mathematically spoken, this effect can be explained by a more equally distributed EV spectrum for the elderly subjects, and thus leading to a higher entropy for an increasing <italic>k</italic> in respect to younger subjects (see Figure <xref ref-type="fig" rid="F8">8</xref>). Another scenario that might have been possible is, that using only the first dimensions leads to high age-complexity correlations and adding more and more dimensions diminishes correlation strength. This would mean that most of the information, relevant for aging, would be encoded in the first dimensions. So, in a way, the characteristic curve of nMPSE describes the distribution of the investigated problem on dimensional subspaces. Especially the intersection point of Ω and nMPSE might be of great value, as it could be used as a biomarker, for instance comparing early and later stages of neurodegenerative diseases.</p>
+      <fig id="F8" position="float">
+        <label>Figure 8</label>
+        <caption>
+          <p>The Eigenvalue spectrum in younger subjects is comprised of few components with high and many components with low Eigenvalues, resp. variances in the direction of the corresponding Eigenvectors. On the contrary, the spectrum for elderly subjects is more leveled and not so much dominated by single components. This leads to younger subjects having a lower Eigenvalue spectrum entropy than older subjects, resulting in a positive significant age - nMPSE correlation (for demonstration purposes EV spectra are displayed in an exaggerated manner, as true differences in EV distributions are subtle).</p>
+        </caption>
+        <graphic xlink:href="fnhum-12-00451-g0008"/>
+      </fig>
+      <p>In summary, the analysis of dimensional complexity of resting-state functional connectivity promises to be a fruitful resource for finding biomarkers. Here, healthy aging served as a proof of concept to provide a method to further study human brain complexity. The intersection point of Ω and nMPSE might be a way to compare the complexity of different problems, e.g., Parkinson's disease progression vs. healthy controls or earlier vs. later stages of Alzheimers disease. Another interesting research question might be the performance of a modified, <italic>k</italic> restricted Ω, compared to nMPSE, as well as a detailed analysis of the properties of dimensions with close to zero Eigenvalues, which are discarded in nMPSE. A windowed approach, looking at temporal dynamics, might reveal different complexity states and help understanding temporal processes in the brain (especially for task experiments). Answering these questions are computationally very demanding and out of the scope of this first publication, but might be very insightful in the future.</p>
+    </sec>
+    <sec id="s5">
+      <title>Ethics statement</title>
+      <p>This study used human subject recordings from an open access data set. The dataset was published with a positive ethics statement. Thus, this article is exempt from an additional ethics committee approval.</p>
+    </sec>
+    <sec id="s6">
+      <title>Author contributions</title>
+      <p>Main and corresponding author is NS. NS performed the analysis and designed the figures. AM was involved in planning and supervised the work. NS and AM drafted the manuscript. EF administered the data preprocessing and principal subspace computations. TM aided in interpreting the results. All authors discussed the results and commented on the manuscript.</p>
+      <sec>
+        <title>Conflict of interest statement</title>
+        <p>The authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.</p>
+      </sec>
+    </sec>
+  </body>
+  <back>
+    <fn-group>
+      <fn id="fn0001">
+        <p><sup>1</sup>1000 Functional Connectomes Project datasets are freely accessible at <ext-link ext-link-type="uri" xlink:href="http://www.nitrc.org/projects/fcon_1000/">www.nitrc.org/projects/fcon_1000/</ext-link>.</p>
+      </fn>
+    </fn-group>
+    <sec sec-type="supplementary-material" id="s7">
+      <title>Supplementary material</title>
+      <p>The Supplementary Material for this article can be found online at: <ext-link ext-link-type="uri" xlink:href="https://www.frontiersin.org/articles/10.3389/fnhum.2018.00451/full#supplementary-material">https://www.frontiersin.org/articles/10.3389/fnhum.2018.00451/full#supplementary-material</ext-link></p>
+      <supplementary-material content-type="local-data" id="SM1">
+        <media xlink:href="Data_Sheet_1.ZIP">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+      <p>The supplementary material provides further figures and tables for intermediate nMPSE results at different levels of k. Also a Matlab implementation for nMPSE is provided.</p>
+    </sec>
+    <ref-list>
+      <title>References</title>
+      <ref id="B1">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Ashburner</surname><given-names>J.</given-names></name></person-group> (<year>2007</year>). <article-title>A fast diffeomorphic image registration algorithm</article-title>. <source>NeuroImage</source>
+<volume>38</volume>, <fpage>95</fpage>–<lpage>113</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2007.07.007</pub-id><pub-id pub-id-type="pmid">17761438</pub-id></mixed-citation>
+      </ref>
+      <ref id="B2">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Beason-Held</surname><given-names>L. L.</given-names></name><name><surname>Hohman</surname><given-names>T. J.</given-names></name><name><surname>Venkatraman</surname><given-names>V.</given-names></name><name><surname>An</surname><given-names>Y.</given-names></name><name><surname>Resnick</surname><given-names>S. M.</given-names></name></person-group> (<year>2016</year>). <article-title>Brain network changes and memory decline in aging</article-title>. <source>Brain Imaging Behav.</source>
+<volume>11</volume>, <fpage>859</fpage>–<lpage>873</lpage>. <pub-id pub-id-type="doi">10.1007/s11682-016-9560-3</pub-id><pub-id pub-id-type="pmid">27319002</pub-id></mixed-citation>
+      </ref>
+      <ref id="B3">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Binder</surname><given-names>J. R.</given-names></name></person-group> (<year>2011</year>). <article-title>Task-induced deactivation and the “resting” state</article-title>. <source>NeuroImage</source>
+<volume>62</volume>, <fpage>1086</fpage>–<lpage>1091</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2011.09.026</pub-id><pub-id pub-id-type="pmid">21979380</pub-id></mixed-citation>
+      </ref>
+      <ref id="B4">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Biswal</surname><given-names>B. B.</given-names></name></person-group> (<year>2012</year>). <article-title>Resting state fMRI: a personal history</article-title>. <source>NeuroImage</source>
+<volume>62</volume>, <fpage>938</fpage>–<lpage>944</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2012.01.090</pub-id><pub-id pub-id-type="pmid">22326802</pub-id></mixed-citation>
+      </ref>
+      <ref id="B5">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Bonferroni</surname><given-names>C. E.</given-names></name></person-group> (<year>1936</year>). <article-title>Teoria statistica delle classi e calcolo delle probabilità</article-title>. <source>Pubblicazioni del R Istituto Superiore di Scienze Economiche e Commerciali di Firenze</source>
+<volume>8</volume>, <fpage>3</fpage>–<lpage>62</lpage>.</mixed-citation>
+      </ref>
+      <ref id="B6">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Brodoehl</surname><given-names>S.</given-names></name><name><surname>Klingner</surname><given-names>C.</given-names></name><name><surname>Stieglitz</surname><given-names>K.</given-names></name><name><surname>Witte</surname><given-names>O. W.</given-names></name></person-group> (<year>2013</year>). <article-title>Age-related changes in the somatosensory processing of tactile stimulation-An fMRI study</article-title>. <source>Behav. Brain Res.</source>
+<volume>238</volume>, <fpage>259</fpage>–<lpage>264</lpage>. <pub-id pub-id-type="doi">10.1016/j.bbr.2012.10.038</pub-id><pub-id pub-id-type="pmid">23123141</pub-id></mixed-citation>
+      </ref>
+      <ref id="B7">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Chao-Gan</surname><given-names>Y.</given-names></name><name><surname>Yu-Feng</surname><given-names>Z.</given-names></name></person-group> (<year>2010</year>). <article-title>DPARSF: a MATLAB toolbox for pipeline data analysis of resting-state fMRI</article-title>. <source>Front. Syst. Neurosci.</source>
+<volume>4</volume>:<fpage>13</fpage>. <pub-id pub-id-type="doi">10.3389/fnsys.2010.00013</pub-id><pub-id pub-id-type="pmid">20577591</pub-id></mixed-citation>
+      </ref>
+      <ref id="B8">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Damoiseaux</surname><given-names>J. S.</given-names></name><name><surname>Rombouts</surname><given-names>S. A.</given-names></name><name><surname>Barkhof</surname><given-names>F.</given-names></name><name><surname>Scheltens</surname><given-names>P.</given-names></name><name><surname>Stam</surname><given-names>C. J.</given-names></name><name><surname>Smith</surname><given-names>S. M.</given-names></name></person-group> (<year>2006</year>). <article-title>Consistent resting-state networks across healthy subjects</article-title>. <source>Proc. Natl. Acad. Sci. U.S.A.</source>
+<volume>103</volume>, <fpage>13848</fpage>–<lpage>13853</lpage>. <pub-id pub-id-type="doi">10.1073/pnas.0601417103</pub-id><pub-id pub-id-type="pmid">16945915</pub-id></mixed-citation>
+      </ref>
+      <ref id="B9">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Fox</surname><given-names>M. D.</given-names></name><name><surname>Raichle</surname><given-names>M. E.</given-names></name></person-group> (<year>2007</year>). <article-title>Spontaneous fluctuations in brain activity observed with functional magnetic resonance imaging</article-title>. <source>Nat. Rev. Neurosci.</source>
+<volume>8</volume>, <fpage>700</fpage>–<lpage>711</lpage>. <pub-id pub-id-type="doi">10.1038/nrn2201</pub-id><pub-id pub-id-type="pmid">17704812</pub-id></mixed-citation>
+      </ref>
+      <ref id="B10">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Fox</surname><given-names>M. D.</given-names></name><name><surname>Snyder</surname><given-names>A. Z.</given-names></name><name><surname>Vincent</surname><given-names>J. L.</given-names></name><name><surname>Corbetta</surname><given-names>M.</given-names></name><name><surname>Van Essen</surname><given-names>D. C.</given-names></name><name><surname>Raichle</surname><given-names>M. E.</given-names></name></person-group> (<year>2005</year>). <article-title>The human brain is intrinsically organized into dynamic, anticorrelated functional networks</article-title>. <source>Proc. Natl. Acad. Sci. U.S.A.</source>
+<volume>102</volume>, <fpage>9673</fpage>–<lpage>9678</lpage>. <pub-id pub-id-type="doi">10.1073/pnas.0504136102</pub-id><pub-id pub-id-type="pmid">15976020</pub-id></mixed-citation>
+      </ref>
+      <ref id="B11">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Goldstone</surname><given-names>A.</given-names></name><name><surname>Mayhew</surname><given-names>S. D.</given-names></name><name><surname>Przezdzik</surname><given-names>I.</given-names></name><name><surname>Wilson</surname><given-names>R. S.</given-names></name><name><surname>Hale</surname><given-names>J. R.</given-names></name><name><surname>Bagshaw</surname><given-names>A. P.</given-names></name></person-group> (<year>2016</year>). <article-title>Gender specific re-organisation of resting-state networks in older age</article-title>. <source>Front. Aging Neurosci.</source>
+<volume>8</volume>:<fpage>285</fpage>
+<pub-id pub-id-type="doi">10.3389/fnagi.2016.00285</pub-id><pub-id pub-id-type="pmid">27932978</pub-id></mixed-citation>
+      </ref>
+      <ref id="B12">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>He</surname><given-names>H.</given-names></name><name><surname>Luo</surname><given-names>C.</given-names></name><name><surname>Chang</surname><given-names>X.</given-names></name><name><surname>Shan</surname><given-names>Y.</given-names></name><name><surname>Cao</surname><given-names>W.</given-names></name><name><surname>Gong</surname><given-names>J.</given-names></name><etal/></person-group>. (<year>2017</year>). <article-title>The functional integration in the sensory-motor system predicts aging in healthy older adults</article-title>. <source>Front. Aging Neurosci.</source>
+<volume>8</volume>:<fpage>306</fpage>. <pub-id pub-id-type="doi">10.3389/fnagi.2016.00306</pub-id><pub-id pub-id-type="pmid">28111548</pub-id></mixed-citation>
+      </ref>
+      <ref id="B13">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Jenkinson</surname><given-names>M.</given-names></name><name><surname>Bannister</surname><given-names>P.</given-names></name><name><surname>Brady</surname><given-names>M.</given-names></name><name><surname>Smith</surname><given-names>S.</given-names></name></person-group> (<year>2002</year>). <article-title>Improved optimization for the robust and accurate linear registration and motion correction of brain images</article-title>. <source>NeuroImage</source>
+<volume>17</volume>, <fpage>825</fpage>–<lpage>841</lpage>. <pub-id pub-id-type="doi">10.1006/nimg.2002.1132</pub-id><pub-id pub-id-type="pmid">12377157</pub-id></mixed-citation>
+      </ref>
+      <ref id="B14">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Jenkinson</surname><given-names>M.</given-names></name><name><surname>Beckmann</surname><given-names>C. F.</given-names></name><name><surname>Behrens</surname><given-names>T. E.</given-names></name><name><surname>Woolrich</surname><given-names>M. W.</given-names></name><name><surname>Smith</surname><given-names>S. M.</given-names></name></person-group> (<year>2012</year>). <article-title>FSL</article-title>. <source>NeuroImage</source>
+<volume>62</volume>, <fpage>782</fpage>–<lpage>790</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2011.09.015</pub-id><pub-id pub-id-type="pmid">21979382</pub-id></mixed-citation>
+      </ref>
+      <ref id="B15">
+        <mixed-citation publication-type="book"><person-group person-group-type="author"><name><surname>Jolliffe</surname><given-names>I. T.</given-names></name></person-group> (<year>2002</year>). <source>Principal Component Analysis</source>. <publisher-name>Springer</publisher-name> Series in Statistics. <publisher-loc>New York, NY</publisher-loc>: <publisher-name>Springer</publisher-name>.</mixed-citation>
+      </ref>
+      <ref id="B16">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>La Corte</surname><given-names>V.</given-names></name><name><surname>Sperduti</surname><given-names>M.</given-names></name><name><surname>Malherbe</surname><given-names>C.</given-names></name><name><surname>Vialatte</surname><given-names>F.</given-names></name><name><surname>Lion</surname><given-names>S.</given-names></name><name><surname>Gallarda</surname><given-names>T.</given-names></name><etal/></person-group>. (<year>2016</year>). <article-title>Cognitive decline and reorganization of functional connectivity in healthy aging: the pivotal role of the salience network in the prediction of age and cognitive performances</article-title>. <source>Front. Aging Neurosci.</source>
+<volume>8</volume>:<fpage>204</fpage>. <pub-id pub-id-type="doi">10.3389/fnagi.2016.00204</pub-id><pub-id pub-id-type="pmid">27616991</pub-id></mixed-citation>
+      </ref>
+      <ref id="B17">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Liu</surname><given-names>C. Y.</given-names></name><name><surname>Krishnan</surname><given-names>A. P.</given-names></name><name><surname>Yan</surname><given-names>L.</given-names></name><name><surname>Smith</surname><given-names>R. X.</given-names></name><name><surname>Kilroy</surname><given-names>E.</given-names></name><name><surname>Alger</surname><given-names>J. R.</given-names></name><etal/></person-group>. (<year>2013</year>). <article-title>Complexity and synchronicity of resting state blood oxygenation level-dependent (BOLD) functional MRI in normal aging and cognitive decline</article-title>. <source>J. Magn. Reson. Imaging</source>
+<volume>38</volume>, <fpage>36</fpage>–<lpage>45</lpage>. <pub-id pub-id-type="doi">10.1002/jmri.23961</pub-id><pub-id pub-id-type="pmid">23225622</pub-id></mixed-citation>
+      </ref>
+      <ref id="B18">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Nooner</surname><given-names>K. B.</given-names></name><name><surname>Colcombe</surname><given-names>S. J.</given-names></name><name><surname>Tobe</surname><given-names>R. H.</given-names></name><name><surname>Mennes</surname><given-names>M.</given-names></name><name><surname>Benedict</surname><given-names>M. M.</given-names></name><name><surname>Moreno</surname><given-names>A. L.</given-names></name><etal/></person-group>. (<year>2012</year>). <article-title>The NKI-rockland sample: a model for accelerating the pace of discovery science in psychiatry</article-title>. <source>Front. Neurosci.</source>
+<volume>6</volume>:<fpage>152</fpage>. <pub-id pub-id-type="doi">10.3389/fnins.2012.00152</pub-id><pub-id pub-id-type="pmid">23087608</pub-id></mixed-citation>
+      </ref>
+      <ref id="B19">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Peterson</surname><given-names>A. C.</given-names></name><name><surname>Zhang</surname><given-names>S.</given-names></name><name><surname>Hu</surname><given-names>S.</given-names></name><name><surname>Chao</surname><given-names>H. H.</given-names></name><name><surname>Li</surname><given-names>C. R.</given-names></name></person-group> (<year>2017</year>). <article-title>The effects of age, from young to middle adulthood, and gender on resting state functional connectivity of the dopaminergic midbrain</article-title>. <source>Front. Hum. Neurosci.</source>
+<volume>11</volume>:<fpage>52</fpage>
+<pub-id pub-id-type="doi">10.3389/fnhum.2017.00052</pub-id><pub-id pub-id-type="pmid">28223929</pub-id></mixed-citation>
+      </ref>
+      <ref id="B20">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Pritchard</surname><given-names>W. S.</given-names></name><name><surname>Laurienti</surname><given-names>P. J.</given-names></name><name><surname>Burdette</surname><given-names>J. H.</given-names></name><name><surname>Hayasaka</surname><given-names>S.</given-names></name></person-group> (<year>2014</year>). <article-title>Functional brain networks formed using cross-sample entropy are scale free</article-title>. <source>Brain Connect.</source>
+<volume>4</volume>, <fpage>454</fpage>–<lpage>464</lpage>. <pub-id pub-id-type="doi">10.1089/brain.2013.0217</pub-id><pub-id pub-id-type="pmid">24946057</pub-id></mixed-citation>
+      </ref>
+      <ref id="B21">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Pruim</surname><given-names>R. H.</given-names></name><name><surname>Mennes</surname><given-names>M.</given-names></name><name><surname>van Rooij</surname><given-names>D.</given-names></name><name><surname>Llera Arenas</surname><given-names>A.</given-names></name><name><surname>Buitelaar</surname><given-names>J. K.</given-names></name><name><surname>Beckmann</surname><given-names>C. F.</given-names></name></person-group> (<year>2015</year>). <article-title>ICA-AROMA: a robust ICA-based strategy for removing motion artifact from fMRI data</article-title>. <source>NeuroImage</source>
+<volume>112</volume>, <fpage>267</fpage>–<lpage>277</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2015.02.064</pub-id><pub-id pub-id-type="pmid">25770991</pub-id></mixed-citation>
+      </ref>
+      <ref id="B22">
+        <mixed-citation publication-type="book"><person-group person-group-type="author"><name><surname>Scheel</surname><given-names>N.</given-names></name><name><surname>Chang</surname><given-names>C.</given-names></name><name><surname>Madany Mamlouk</surname><given-names>A.</given-names></name></person-group> (<year>2014a</year>). <article-title>Physiological noise regression for multiband fMRI. Residual correlations emphasize the importance!</article-title>, in <source>20th Annual Meeting of the Organization for Human Brain Mapping (OHBM) 2014</source> (<publisher-loc>Hamburg</publisher-loc>).</mixed-citation>
+      </ref>
+      <ref id="B23">
+        <mixed-citation publication-type="book"><person-group person-group-type="author"><name><surname>Scheel</surname><given-names>N.</given-names></name><name><surname>Chang</surname><given-names>C.</given-names></name><name><surname>Madany Mamlouk</surname><given-names>A.</given-names></name></person-group> (<year>2014b</year>). <article-title>The importance of physiological noise regression in high temporal resolution fMRI</article-title>, in <source>Artificial Neural Networks and Machine Learning–ICANN 2014</source>, Vol. <volume>8681</volume> (<publisher-loc>Hamburg</publisher-loc>: <publisher-name>Springer International Publishing</publisher-name>), <fpage>829</fpage>–<lpage>836</lpage>.</mixed-citation>
+      </ref>
+      <ref id="B24">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Schütze</surname><given-names>H.</given-names></name><name><surname>Martinetz</surname><given-names>T.</given-names></name><name><surname>Anders</surname><given-names>S.</given-names></name><name><surname>Madany Mamlouk</surname><given-names>A.</given-names></name></person-group> (<year>2012</year>). <article-title>A multivariate approach to estimate complexity of FMRI time series</article-title>. <source>Lect Notes Comput Sci. (LNCS)</source>
+<volume>7553</volume>, <fpage>540</fpage>–<lpage>547</lpage>. <pub-id pub-id-type="doi">10.1007/978-3-642-33266-1_67</pub-id></mixed-citation>
+      </ref>
+      <ref id="B25">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Shirer</surname><given-names>W. R.</given-names></name><name><surname>Ryali</surname><given-names>S.</given-names></name><name><surname>Rykhlevskaia</surname><given-names>E.</given-names></name><name><surname>Menon</surname><given-names>V.</given-names></name><name><surname>Greicius</surname><given-names>M. D.</given-names></name></person-group> (<year>2012</year>). <article-title>Decoding subject-driven cognitive states with whole-brain connectivity patterns</article-title>. <source>Cereb. Cortex</source>
+<volume>22</volume>, <fpage>158</fpage>–<lpage>165</lpage>. <pub-id pub-id-type="doi">10.1093/cercor/bhr099</pub-id><pub-id pub-id-type="pmid">21616982</pub-id></mixed-citation>
+      </ref>
+      <ref id="B26">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Siman-Tov</surname><given-names>T.</given-names></name><name><surname>Bosak</surname><given-names>N.</given-names></name><name><surname>Sprecher</surname><given-names>E.</given-names></name><name><surname>Paz</surname><given-names>R.</given-names></name><name><surname>Eran</surname><given-names>A.</given-names></name><name><surname>Aharon-Peretz</surname><given-names>J.</given-names></name><name><surname>Kahn</surname><given-names>I.</given-names></name></person-group> (<year>2017</year>). <article-title>Early age-related functional connectivity decline in high-order cognitive networks</article-title>. <source>Front. Aging Neurosci.</source>
+<volume>8</volume>:<fpage>330</fpage>. <pub-id pub-id-type="doi">10.3389/fnagi.2016.00330</pub-id><pub-id pub-id-type="pmid">28119599</pub-id></mixed-citation>
+      </ref>
+      <ref id="B27">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Smith</surname><given-names>S. M.</given-names></name></person-group> (<year>2002</year>). <article-title>Fast robust automated brain extraction</article-title>. <source>Hum. Brain Mapp.</source>
+<volume>17</volume>, <fpage>143</fpage>–<lpage>155</lpage>. <pub-id pub-id-type="doi">10.1002/hbm.10062</pub-id><pub-id pub-id-type="pmid">12391568</pub-id></mixed-citation>
+      </ref>
+      <ref id="B28">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Smith</surname><given-names>S. M.</given-names></name><name><surname>Brady</surname><given-names>J. M.</given-names></name></person-group> (<year>1997</year>). <article-title>SUSAN—a new approach to low level image processing</article-title>. <source>Int. J. Comput. Vis.</source>
+<volume>23</volume>, <fpage>45</fpage>–<lpage>78</lpage>. <pub-id pub-id-type="doi">10.1023/A:1007963824710</pub-id></mixed-citation>
+      </ref>
+      <ref id="B29">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Smith</surname><given-names>S. M.</given-names></name><name><surname>Fox</surname><given-names>P. T.</given-names></name><name><surname>Miller</surname><given-names>K. L.</given-names></name><name><surname>Glahn</surname><given-names>D. C.</given-names></name><name><surname>Fox</surname><given-names>P. M.</given-names></name><name><surname>Mackay</surname><given-names>C. E.</given-names></name><etal/></person-group>. (<year>2009</year>). <article-title>Correspondence of the brain's functional architecture during activation and rest</article-title>. <source>Proc. Natl. Acad. Sci. U.S.A.</source>
+<volume>106</volume>, <fpage>13040</fpage>–<lpage>13045</lpage>. <pub-id pub-id-type="doi">10.1073/pnas.0905267106</pub-id><pub-id pub-id-type="pmid">19620724</pub-id></mixed-citation>
+      </ref>
+      <ref id="B30">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Smith</surname><given-names>S. M.</given-names></name><name><surname>Miller</surname><given-names>K. L.</given-names></name><name><surname>Moeller</surname><given-names>S.</given-names></name><name><surname>Xu</surname><given-names>J.</given-names></name><name><surname>Auerbach</surname><given-names>E. J.</given-names></name><name><surname>Woolrich</surname><given-names>M. W.</given-names></name><etal/></person-group>. (<year>2012</year>). <article-title>Temporally-independent functional modes of spontaneous brain activity</article-title>. <source>Proc. Natl. Acad. Sci. U.S.A.</source>
+<volume>109</volume>, <fpage>3131</fpage>–<lpage>3136</lpage>. <pub-id pub-id-type="doi">10.1073/pnas.1121329109</pub-id><pub-id pub-id-type="pmid">22323591</pub-id></mixed-citation>
+      </ref>
+      <ref id="B31">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Sokunbi</surname><given-names>M. O.</given-names></name></person-group> (<year>2016</year>). <article-title>BOLD fMRI complexity predicts changes in brain processes, interactions and patterns, in health and disease</article-title>. <source>J. Neurol. Sci.</source>
+<volume>367</volume>, <fpage>347</fpage>–<lpage>348</lpage>. <pub-id pub-id-type="doi">10.1016/j.jns.2016.06.040</pub-id><pub-id pub-id-type="pmid">27423617</pub-id></mixed-citation>
+      </ref>
+      <ref id="B32">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Sokunbi</surname><given-names>M. O.</given-names></name><name><surname>Cameron</surname><given-names>G. G.</given-names></name><name><surname>Ahearn</surname><given-names>T. S.</given-names></name><name><surname>Murray</surname><given-names>A. D.</given-names></name><name><surname>Staff</surname><given-names>R. T.</given-names></name></person-group> (<year>2015</year>). <article-title>Fuzzy approximate entropy analysis of resting state fMRI signal complexity across the adult life span</article-title>. <source>Med. Eng. Phys.</source>
+<volume>37</volume>, <fpage>1082</fpage>–<lpage>1090</lpage>. <pub-id pub-id-type="doi">10.1016/j.medengphy.2015.09.001</pub-id><pub-id pub-id-type="pmid">26475494</pub-id></mixed-citation>
+      </ref>
+      <ref id="B33">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Toussaint</surname><given-names>P. J.</given-names></name><name><surname>Maiz</surname><given-names>S.</given-names></name><name><surname>Coynel</surname><given-names>D.</given-names></name><name><surname>Doyon</surname><given-names>J.</given-names></name><name><surname>Messé</surname><given-names>A.</given-names></name><name><surname>de Souza</surname><given-names>L. C.</given-names></name><etal/></person-group>. (<year>2014</year>). <article-title>Characteristics of the default mode functional connectivity in normal ageing and Alzheimer's disease using resting state fMRI with a combined approach of entropy-based and graph theoretical measurements</article-title>. <source>NeuroImage</source>
+<volume>101</volume>, <fpage>778</fpage>–<lpage>786</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2014.08.003</pub-id><pub-id pub-id-type="pmid">25111470</pub-id></mixed-citation>
+      </ref>
+      <ref id="B34">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Tremblay</surname><given-names>P.</given-names></name><name><surname>Sato</surname><given-names>M.</given-names></name><name><surname>Deschamps</surname><given-names>I.</given-names></name></person-group> (<year>2017</year>). <article-title>Age differences in the motor control of speech: an fMRI study of healthy aging</article-title>. <source>Hum. Brain Mapp.</source>
+<volume>38</volume>, <fpage>2751</fpage>–<lpage>2771</lpage>. <pub-id pub-id-type="doi">10.1002/hbm.23558</pub-id><pub-id pub-id-type="pmid">28263012</pub-id></mixed-citation>
+      </ref>
+      <ref id="B35">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Tzourio-Mazoyer</surname><given-names>N.</given-names></name><name><surname>Landeau</surname><given-names>B.</given-names></name><name><surname>Papathanassiou</surname><given-names>D.</given-names></name><name><surname>Crivello</surname><given-names>F.</given-names></name><name><surname>Etard</surname><given-names>O.</given-names></name><name><surname>Delcroix</surname><given-names>N.</given-names></name><etal/></person-group>. (<year>2002</year>). <article-title>Automated anatomical labeling of activations in SPM using a macroscopic anatomical parcellation of the MNI MRI single-subject brain</article-title>. <source>NeuroImage</source>
+<volume>15</volume>, <fpage>273</fpage>–<lpage>289</lpage>. <pub-id pub-id-type="doi">10.1006/nimg.2001.0978</pub-id><pub-id pub-id-type="pmid">11771995</pub-id></mixed-citation>
+      </ref>
+      <ref id="B36">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Wackermann</surname><given-names>J.</given-names></name></person-group> (<year>1996</year>). <article-title>Beyond mapping: estimating complexity of multichannel EEG recordings</article-title>. <source>Acta Neurobiol. Exp.</source>
+<volume>56</volume>, <fpage>197</fpage>–<lpage>208</lpage>. <pub-id pub-id-type="pmid">8787174</pub-id></mixed-citation>
+      </ref>
+      <ref id="B37">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zhang</surname><given-names>D.</given-names></name><name><surname>Raichle</surname><given-names>M. E.</given-names></name></person-group> (<year>2010</year>). <article-title>Disease and the brain's dark energy</article-title>. <source>Nat. Rev. Neurol.</source>
+<volume>6</volume>, <fpage>15</fpage>–<lpage>28</lpage>. <pub-id pub-id-type="doi">10.1038/nrneurol.2009.198</pub-id><pub-id pub-id-type="pmid">20057496</pub-id></mixed-citation>
+      </ref>
+      <ref id="B38">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zhu</surname><given-names>Z.</given-names></name><name><surname>Yang</surname><given-names>F.</given-names></name><name><surname>Li</surname><given-names>D.</given-names></name><name><surname>Zhou</surname><given-names>L.</given-names></name><name><surname>Liu</surname><given-names>Y.</given-names></name><name><surname>Zhang</surname><given-names>Y.</given-names></name><etal/></person-group>. (<year>2017</year>). <article-title>Age-related reduction of adaptive brain response during semantic integration is associated with gray matter reduction</article-title>. <source>PLoS ONE</source> 12:e0189462. <pub-id pub-id-type="doi">10.1371/journal.pone.0189462</pub-id><pub-id pub-id-type="pmid">29236772</pub-id></mixed-citation>
+      </ref>
+      <ref id="B39">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zhuang</surname><given-names>J.</given-names></name><name><surname>Madden</surname><given-names>D. J.</given-names></name><name><surname>Duong-Fernandez</surname><given-names>X.</given-names></name><name><surname>Chen</surname><given-names>N. K.</given-names></name><name><surname>Cousins</surname><given-names>S. W.</given-names></name><name><surname>Potter</surname><given-names>G. G.</given-names></name><etal/></person-group>. (<year>2017</year>). <article-title>Language processing in age-related macular degeneration associated with unique functional connectivity signatures in the right hemisphere</article-title>. <source>Neurobiol. Aging</source>
+<volume>63</volume>, <fpage>65</fpage>–<lpage>74</lpage>. <pub-id pub-id-type="doi">10.1016/j.neurobiolaging.2017.11.003</pub-id><pub-id pub-id-type="pmid">29223681</pub-id></mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

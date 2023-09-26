@@ -1,0 +1,18 @@
+Modality,Disorder,Dataset,Feature Measures,Classifier,Accuracy (%),Reference
+rs-fMRI,AD,"AD: 77, CN: 173","Seed-based FC, ALFF, ICA, concatenation",AUC,85,"De Vos et al., 2018 [???]"
+rs-fMRI,AD,"AD: 12, CN: 12",ROI-based difference between DMN and SN map,LDA,92,"Zhou et al., 2010 [???]"
+rs-fMRI,AD,"AD: 34, CN: 45",Graph measures,naïve Bayes,93.3,"Khazaee et al., 2017 [???]"
+rs-fMRI,AD,"AD: 15, CN: 16",Averaged voxel intensities of selected resting-state network,Multivariate ROC,95,"Wu et al., 2013 [???]"
+rs-fMRI,AD,"AD: 20, CN: 20",Graph measure based on FC analysis among ROIs,SVM,97,"Khazaee et al., 2015 [???]"
+rs-fMRI,AD,"AD: 27, CN: 39",FC among selected AAL regions,Bayesian Gaussian process logistic regression,97,"Challis et al., 2015 [???]"
+rs-fMRI,AD,"AD: 33, CN: 31 (ADNI2) / AD: 81, CN: 152 (in-house)",Proposed methods,ELM,98.86 (ADNI2) / 98.70 (in-house),
+,,,,,,
+rs-fMRI,MCI,"???MCI: 31, CN: 31",HMM+SDL,SVM,62.90,"Eavani et al., 2013 [???, ???]"
+rs-fMRI,MCI,"???MCI: 31, CN: 31",gSR,SVM,66.13,"Wee et al., 2014 [???,???]"
+rs-fMRI,MCI,"???MCI: 31, CN: 31",sDFN,SVM,70.97,"Leonardi et al., 2013 [???, ???]"
+rs-fMRI,MCI,"???MCI: 31, CN: 31",DAE+HMM,SVM,72.58,"Suk et al., 2016 [???]"
+rs-fMRI,MCI,"MCI: 50, CN: 39",FC among selected AAL regions,Bayesian Gaussian process logistic regression,81,"Challis et al., 2015 [???]"
+rs-fMRI,MCI,"MCI: 12, CN: 25",Local connectivity and global topological properties,Multiple kernel learning,91.9,"Jie et al., 2014 [???]"
+rs-fMRI,MCI,"MCI: 89, CN: 45",Graph measures,naïve Bayes,93.3,"Khazaee et al., 2017 [???]"
+rs-fMRI,MCI,"MCI: 29, CN: 21",,,95.6,"Beltrachini et al., 2015 [???]"
+rs-fMRI,MCI,"???MCI: 31, CN: 31 (ADNI2) / MCI: 132, CN: 152 (in-house)",Proposed methods,ELM,98.57 (ADNI2) / 94.16 (in-house),

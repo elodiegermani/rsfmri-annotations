@@ -1,0 +1,1524 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">BMC Bioinformatics</journal-id>
+      <journal-id journal-id-type="iso-abbrev">BMC Bioinformatics</journal-id>
+      <journal-title-group>
+        <journal-title>BMC Bioinformatics</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1471-2105</issn>
+      <publisher>
+        <publisher-name>BioMed Central</publisher-name>
+        <publisher-loc>London</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">33371873</article-id>
+      <article-id pub-id-type="pmc">7768655</article-id>
+      <article-id pub-id-type="publisher-id">3877</article-id>
+      <article-id pub-id-type="doi">10.1186/s12859-020-03877-9</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Effect of APOE ε4 on multimodal brain connectomic traits: a persistent homology study</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Li</surname>
+            <given-names>Jin</given-names>
+          </name>
+          <xref ref-type="aff" rid="Aff1">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Bian</surname>
+            <given-names>Chenyuan</given-names>
+          </name>
+          <xref ref-type="aff" rid="Aff1">1</xref>
+          <xref ref-type="aff" rid="Aff3">3</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Chen</surname>
+            <given-names>Dandan</given-names>
+          </name>
+          <xref ref-type="aff" rid="Aff1">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Meng</surname>
+            <given-names>Xianglian</given-names>
+          </name>
+          <xref ref-type="aff" rid="Aff2">2</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Luo</surname>
+            <given-names>Haoran</given-names>
+          </name>
+          <xref ref-type="aff" rid="Aff1">1</xref>
+        </contrib>
+        <contrib contrib-type="author" corresp="yes">
+          <name>
+            <surname>Liang</surname>
+            <given-names>Hong</given-names>
+          </name>
+          <address>
+            <email>lh@hrbeu.edu.cn</email>
+          </address>
+          <xref ref-type="aff" rid="Aff1">1</xref>
+        </contrib>
+        <contrib contrib-type="author" corresp="yes">
+          <contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-5443-0503</contrib-id>
+          <name>
+            <surname>Shen</surname>
+            <given-names>Li</given-names>
+          </name>
+          <address>
+            <email>li.shen@pennmedicine.upenn.edu</email>
+          </address>
+          <xref ref-type="contrib" rid="IA1"/>
+          <xref ref-type="aff" rid="Aff3">3</xref>
+        </contrib>
+        <contrib contrib-type="author" id="IA1">
+          <collab>for the Alzheimer’s Disease Neuroimaging Initiative</collab>
+        </contrib>
+        <aff id="Aff1"><label>1</label><institution-wrap><institution-id institution-id-type="GRID">grid.33764.35</institution-id><institution-id institution-id-type="ISNI">0000 0001 0476 2430</institution-id><institution>College of Automation, </institution><institution>Harbin Engineering University, </institution></institution-wrap>145 Nantong Street, Harbin, 150001 Heilongjiang China </aff>
+        <aff id="Aff2"><label>2</label><institution-wrap><institution-id institution-id-type="GRID">grid.443328.a</institution-id><institution-id institution-id-type="ISNI">0000 0004 1762 4370</institution-id><institution>School of Computer Information and Engineering, </institution><institution>Changzhou Institute of Technology, </institution></institution-wrap>Changzhou, 213032 China </aff>
+        <aff id="Aff3"><label>3</label><institution-wrap><institution-id institution-id-type="GRID">grid.25879.31</institution-id><institution-id institution-id-type="ISNI">0000 0004 1936 8972</institution-id><institution>Department of Biostatistics, Epidemiology and Informatics, Perelman School of Medicine, </institution><institution>University of Pennsylvania, </institution></institution-wrap>B306 Richards Building, 3700 Hamilton Walk, Philadelphia, PA 19104 USA </aff>
+      </contrib-group>
+      <pub-date pub-type="epub">
+        <day>28</day>
+        <month>12</month>
+        <year>2020</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>28</day>
+        <month>12</month>
+        <year>2020</year>
+      </pub-date>
+      <pub-date pub-type="collection">
+        <year>2020</year>
+      </pub-date>
+      <volume>21</volume>
+      <issue>Suppl 21</issue>
+      <issue-sponsor>Publication of this supplement has not been supported by sponsorship. Information about the source of funding for publication charges can be found in the individual articles. The articles have undergone the journal's standard peer review process for supplements. Supplement Editors did not handle peer review on any articles that they have co-authored. The Supplement Editors declare that they have no other competing interests.</issue-sponsor>
+      <elocation-id>535</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>10</day>
+          <month>11</month>
+          <year>2020</year>
+        </date>
+        <date date-type="accepted">
+          <day>13</day>
+          <month>11</month>
+          <year>2020</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>© The Author(s) 2020</copyright-statement>
+        <license license-type="OpenAccess">
+          <license-p><bold>Open Access</bold>This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article's Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article's Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</ext-link>. The Creative Commons Public Domain Dedication waiver (<ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/publicdomain/zero/1.0/">http://creativecommons.org/publicdomain/zero/1.0/</ext-link>) applies to the data made available in this article, unless otherwise stated in a credit line to the data.</license-p>
+        </license>
+      </permissions>
+      <abstract id="Abs1">
+        <sec>
+          <title>Background</title>
+          <p id="Par1">Although genetic risk factors and network-level neuroimaging abnormalities have shown effects on cognitive performance and brain atrophy in Alzheimer’s disease (AD), little is understood about how apolipoprotein E (APOE) ε4 allele, the best-known genetic risk for AD, affect brain connectivity before the onset of symptomatic AD. This study aims to investigate APOE ε4 effects on brain connectivity from the perspective of multimodal connectome.</p>
+        </sec>
+        <sec>
+          <title>Results</title>
+          <p id="Par2">Here, we propose a novel multimodal brain network modeling framework and a network quantification method based on persistent homology for identifying APOE ε4-related network differences. Specifically, we employ sparse representation to integrate multimodal brain network information derived from both the resting state functional magnetic resonance imaging (rs-fMRI) data and the diffusion-weighted magnetic resonance imaging (dw-MRI) data. Moreover, persistent homology is proposed to avoid the ad hoc selection of a specific regularization parameter and to capture valuable brain connectivity patterns from the topological perspective. The experimental results demonstrate that our method outperforms the competing methods, and reasonably yields connectomic patterns specific to APOE ε4 carriers and non-carriers.</p>
+        </sec>
+        <sec>
+          <title>Conclusions</title>
+          <p id="Par3">We have proposed a multimodal framework that integrates structural and functional connectivity information for constructing a fused brain network with greater discriminative power. Using persistent homology to extract topological features from the fused brain network, our method can effectively identify APOE ε4-related brain connectomic biomarkers.</p>
+        </sec>
+      </abstract>
+      <kwd-group xml:lang="en">
+        <title>Keywords</title>
+        <kwd>APOE ε4</kwd>
+        <kwd>Brain network</kwd>
+        <kwd>Persistent homology</kwd>
+        <kwd>Alzheimer’s disease</kwd>
+      </kwd-group>
+      <funding-group>
+        <award-group>
+          <funding-source>
+            <institution-wrap>
+              <institution-id institution-id-type="FundRef">http://dx.doi.org/10.13039/100000070</institution-id>
+              <institution>National Institute of Biomedical Imaging and Bioengineering</institution>
+            </institution-wrap>
+          </funding-source>
+          <award-id>R01 EB022574</award-id>
+          <principal-award-recipient>
+            <name>
+              <surname>Shen</surname>
+              <given-names>Li</given-names>
+            </name>
+          </principal-award-recipient>
+        </award-group>
+      </funding-group>
+      <funding-group>
+        <award-group>
+          <funding-source>
+            <institution-wrap>
+              <institution-id institution-id-type="FundRef">http://dx.doi.org/10.13039/100000049</institution-id>
+              <institution>National Institute on Aging</institution>
+            </institution-wrap>
+          </funding-source>
+          <award-id>U01 AG024904</award-id>
+        </award-group>
+      </funding-group>
+      <funding-group>
+        <award-group>
+          <funding-source>
+            <institution-wrap>
+              <institution-id institution-id-type="FundRef">http://dx.doi.org/10.13039/501100001809</institution-id>
+              <institution>National Natural Science Foundation of China</institution>
+            </institution-wrap>
+          </funding-source>
+          <award-id>61773134</award-id>
+          <award-id>61803117</award-id>
+          <principal-award-recipient>
+            <name>
+              <surname>Li</surname>
+              <given-names>Jin</given-names>
+            </name>
+            <name>
+              <surname>Liang</surname>
+              <given-names>Hong</given-names>
+            </name>
+          </principal-award-recipient>
+        </award-group>
+      </funding-group>
+      <funding-group>
+        <award-group>
+          <funding-source>
+            <institution>Natural Science Foundation of Heilongjiang Province of China</institution>
+          </funding-source>
+          <award-id>YQ2019F003</award-id>
+          <principal-award-recipient>
+            <name>
+              <surname>Liang</surname>
+              <given-names>Hong</given-names>
+            </name>
+          </principal-award-recipient>
+        </award-group>
+      </funding-group>
+      <funding-group>
+        <award-group>
+          <funding-source>
+            <institution-wrap>
+              <institution-id institution-id-type="FundRef">http://dx.doi.org/10.13039/501100012226</institution-id>
+              <institution>Fundamental Research Funds for the Central Universities</institution>
+            </institution-wrap>
+          </funding-source>
+          <award-id>3072020CF0402</award-id>
+          <principal-award-recipient>
+            <name>
+              <surname>Liang</surname>
+              <given-names>Hong</given-names>
+            </name>
+          </principal-award-recipient>
+        </award-group>
+      </funding-group>
+      <conference xlink:href="https://icibm2020.iaibm.org/">
+        <conf-name>The International Conference on Intelligent Biology and Medicine (ICIBM) 2020</conf-name>
+        <conf-acronym>ICIBM 2020</conf-acronym>
+        <conf-loc>Virtual</conf-loc>
+        <conf-date>9-10 August 2020</conf-date>
+      </conference>
+      <custom-meta-group>
+        <custom-meta>
+          <meta-name>issue-copyright-statement</meta-name>
+          <meta-value>© The Author(s) 2020</meta-value>
+        </custom-meta>
+      </custom-meta-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="Sec1">
+      <title>Background</title>
+      <p id="Par24">Alzheimer’s disease (AD) is a chronic neurodegenerative brain disease that gradually causes cognitive deterioration [<xref ref-type="bibr" rid="CR1">1</xref>, <xref ref-type="bibr" rid="CR2">2</xref>]. Although studies on the specificity of disease stage is underway to identify potential biomarkers, early diagnosis of vulnerability to AD—prior to the onset of clear cognitive symptoms—is still challenging [<xref ref-type="bibr" rid="CR3">3</xref>, <xref ref-type="bibr" rid="CR4">4</xref>]. In past years, neuroimaging-based techniques have been used to reveal the neuronal interaction patterns of anatomically segregated brain regions in AD via constructing brain connectome [<xref ref-type="bibr" rid="CR1">1</xref>, <xref ref-type="bibr" rid="CR5">5</xref>]. However, traditional network-level neuroimaging approaches have limited ability to discriminating normal aging from early AD [<xref ref-type="bibr" rid="CR6">6</xref>]. Neuroimaging genetics offers a promising strategy for detecting potential early biomarkers of AD and improving the understanding of neurobiological features associated with genetic polymorphisms at risk for AD [<xref ref-type="bibr" rid="CR7">7</xref>]. In particular, apolipoprotein E (APOE) ε4 allele is the uppermost genetic risk factor for developing sporadic AD, which is observed in up to 50% of all AD cases [<xref ref-type="bibr" rid="CR8">8</xref>]. We propose here a brain imaging genetics study to examine the effect of the APOE ε4 genotype on brain connectomic traits. Our goal is to quantify the functional and structural brain differences from the perspective of genetics in patients, who may be undergoing early neuropathological changes in the pathological cascade leading to disease. Currently, an ample number of studies [<xref ref-type="bibr" rid="CR9">9</xref>, <xref ref-type="bibr" rid="CR10">10</xref>] have investigated the brain connectivity features of APOE ε4 carriers. These existing studies found specific and consistent alterations in brain network, especially involving decreased functional connectivity within default mode network (DMN). Particularly, most of these approaches for characterizing APOE-related network differences are based on pairwise correlation such as Pearson’s correlation. Nevertheless, some studies [<xref ref-type="bibr" rid="CR11">11</xref>, <xref ref-type="bibr" rid="CR12">12</xref>] have demonstrated that the neurological processes involve the interactions of many co-activated brain regions (i.e., more than two brain regions) rather than just the pairwise variant-trait associations.</p>
+      <p id="Par25">To address this problem, the least absolute shrinkage and selection operator (Lasso) and sparse representation have been applied to construct a sparse brain network by considering more complex interactions among multiple co-activated brain regions [<xref ref-type="bibr" rid="CR13">13</xref>]. However, the Lasso approaches have their own limitations. For example, most of them use a fixed regularization parameter <italic>λ</italic> that may not be optimal to control the model sparsity, which can lead to an uncertainty to quantify the sparse brain networks [<xref ref-type="bibr" rid="CR14">14</xref>]. Moreover, another problem with Lasso is, feature extraction of sparse network needs a constructed network with precise connection strengths [<xref ref-type="bibr" rid="CR15">15</xref>]. However, traditional Lasso method has been shown biased, and may not provide reliable estimation for building brain networks. Therefore, a subsequent connectivity strength estimation process should be performed to eliminate the shrinking effect, which naturally adds the complexity of modeling. In order to address the above limitations, a persistent homology (PH) [<xref ref-type="bibr" rid="CR16">16</xref>–<xref ref-type="bibr" rid="CR19">19</xref>] method is newly proposed in this work. Our novel method constructs the brain network over multiscale regularization parameter space and only focuses on the network structure (binary network) rather than connection strength (weight network) between regions. Hence, we hypothesize that the combination of PH and SR may yield a potential path to identify more sensitive brain network-level biomarkers.</p>
+      <p id="Par26">Currently, a lot of brain network modeling methods only consider the neurological processes from a single modality [<xref ref-type="bibr" rid="CR20">20</xref>], while compelling evidences have demonstrated the benefit of acquiring and fusing complementary information via different neuroimaging modalities for accurate classification [<xref ref-type="bibr" rid="CR21">21</xref>, <xref ref-type="bibr" rid="CR22">22</xref>]. Specifically, diffusion-weighted MRI (dw-MRI) has been applied to map white matter tractography that outputs structural connectivity (SC). On the other hand, resting state functional MRI (rs-fMRI) measures intrinsic functional connectivity (FC) through spontaneous fluctuations of brain activity. Joint investigation of dw-MRI and rs-fMRI data can offer a complete characterization of the brain network incorporating both structural and functional connectivity. For example, Qi et al. [<xref ref-type="bibr" rid="CR23">23</xref>] proposed a framework for integrating the multimodal imaging data of diffusion-MRI and fMRI. Their results suggested that the multimodal fusion can effectively detect potential imaging biomarkers of working memory deficits in schizophrenia. Korthauer et al. [<xref ref-type="bibr" rid="CR6">6</xref>] integrated rs-fMRI and dw-MRI data in a single network for investigating a functional-structural network difference in apolipoprotein E (APOE) <italic>ε</italic>4 carriers and non-carriers. In their study, integrating multiple neuroimaging modalities was demonstrated to be a more effective method to detect network-level biomarkers compared to conventional single modality method. Based on these findings, we hypothesize that a multimodal fusion method may further improves the statistical performance between APOE ε4 carriers and non-carriers.</p>
+      <p id="Par27">In this paper, we focus on identifying APOE ε4 related differences from the perspective of brain connectome. The main methodological contributions are threefold. First, we propose a novel multimodal brain network modeling method for detecting the differences of APOE ε4-associated brain connectivity. Our method integrates the multimodal information from both rs-fMRI and dw-MRI. Specifically, a generalized fused Lasso method is applied to linearly regress rs-fMRI signals (BOLD time series), and is guided by SC prior information. Second, we develop a multiscale network quantification method using PH for the proposed model. We show that after integrating the brain network information with different sparsity for each subject, PH can effectively characterize the multiscale networks via graph filtration, which overcomes the uncertainty of optimal parameter selection. To the best of our knowledge, no previous methods ever fused both multimodal brain modeling and PH into a sparse representation, upon which our novel framework is built. Third, we design a connectivity pattern identification method based on PH features. Different from the existing methods, our method can characterize the APOE ε4-related specific loop structures in the brain network, which can reflect meaningful biological communication patterns. Finally, we perform our experimental study using rs-fMRI and dw-MRI data from the publicly available Alzheimer's Disease Neuroimaging Initiative (ADNI) database. We demonstrate the promise of our method over the competing methods on both statistical performance and connectivity pattern identification.</p>
+    </sec>
+    <sec id="Sec2">
+      <title>Methods</title>
+      <sec id="Sec3">
+        <title>Participants</title>
+        <p id="Par28">Data used in the preparation of this article were obtained from the ADNI database (adni.loni.usc.edu). In this study, APOE genotype, rs-fMRI, dw-MRI, and T1 imaging data were collected from 63 subjects, and divided into two groups: APOE ε4 carriers (N = 27, 17 males and 10 females, age 63–89) and APOE ε4 non-carriers (N = 36, 20 males and 16 females, age 61–87).</p>
+      </sec>
+      <sec id="Sec4">
+        <title>Genotype and neuroimaging data</title>
+        <p id="Par29">For genotyping, subjects carrying at least one APOE ε4 allele were defined as APOE ε4 carriers (genotype ε4/ε4 and ε4/ε3), while subjects with the genotype ε3/ε3 were classified as APOE ε4 non-carriers. Subjects with the ε2 allele (including genotypes ε2/ε2, ε2/ε3, and ε2/ε4) were excluded in this study. For neuroimaging data, all MRI data were acquired with a Siemens 3 T scanner with the following parameters: (1) rs-fMRI data involved that TE (echo time) = 30 ms, TR (repetition time) = 3000 s, FA (filp angle) = 90 degree, slice thickness = 3.4 mm, the number of slices = 197; (2) dw-MRI data were acquired with gradient directions = 54, TE = 56 ms, TR = 7200 ms, voxel size = 2 × 2 × 2mm<sup>3</sup>, FA = 90 degree; (3) T1 image data were acquired with FA = 9 degree, acquisition plane = SAGITTAL, slice thickness = 1.2 mm, TE = 2.95 ms, T1 = 900 ms, TR = 2300 ms.</p>
+      </sec>
+      <sec id="Sec5">
+        <title>Data preprocessing</title>
+        <p id="Par30">T1 is a structural MRI (sMRI) modality capturing brain morphometry. T1 is often used as a reference image to which dw-MRI and rs-fMRI data can be registered. After that, all three modalities are aligned to the same reference so that multimodal data analysis can be facilitated.</p>
+        <p id="Par31">For rs-fMRI data, we used SPM8 (<ext-link ext-link-type="uri" xlink:href="https://www.fil.ion.ucl.ac.uk/spm/software/spm8/">https://www.fil.ion.ucl.ac.uk/spm/software/spm8/</ext-link>) and DPABI [<xref ref-type="bibr" rid="CR24">24</xref>] for preprocessing as follows: removing the first 10 time points; slice timing correction; spatial correction for head motion; co-registering the individual T1 image to the mean functional image after realignment by using DARTEL (a fast diffeomorphic anatomical registration algorithm to calculate the transformations from individual native space to MNI space); smoothing using Gaussian kernel with FWHM (full-width-athalf-maximum) of 4 × 4 × 4mm<sup>3</sup>; standardization to reduce the impact of nuisance covariates including head motion parameters, white matter signal and cerebrospinal fluid signal. For quality control, the rs-fMRI data with greater 2.5 mm and 2.5 degree in max head motion are excluded.</p>
+        <p id="Par32">For dw-MRI data, we used a package called pipeline toolbox for analyzing brain diffusion images (PANDA) [<xref ref-type="bibr" rid="CR25">25</xref>] developed based on the FMRIB Software Library (FSL, <ext-link ext-link-type="uri" xlink:href="https://fsl.fmrib.ox.ac.uk/fsl/">https://fsl.fmrib.ox.ac.uk/fsl/</ext-link>). Specifically, it includes estimating a brain mask using <italic>bet</italic> command of FSL based on b<sub>0</sub> image without diffusion weighting; removing the non-brain spaces by <italic>fslroi</italic> command; eddy-current correction; calculation for diffusion tensor metrics by <italic>dtifit</italic> command; deterministic white matter tractography within brain using <italic>dti_recon</italic> and <italic>dti_tracker</italic> commands of the Diffusion Toolkit (<ext-link ext-link-type="uri" xlink:href="http://trackvis.org/dtk/">http://trackvis.org/dtk/</ext-link>). We found that the <italic>bet</italic> command of FSL shows better results for brain tissue extraction than PANDA, so T1 image without skull is achieved using this approach. Each subject’s FA image is co-registered to its corresponding T1 image based on <italic>flflirt</italic> in FSL for defining network nodes. For quality control, the dw-MRI data with significant distortion in co-registration with FA and T1 image or with T1 image and MNI template were excluded from the study. Of note, since T1 scans were used for jointly guiding both dw-MRI and rs-fMRI registrations, the multimodal images were registered onto a same reference template.</p>
+      </sec>
+      <sec id="Sec6">
+        <title>Multimodal brain network</title>
+        <p id="Par33">The framework of multimodal brain network modeling is shown in Fig. <xref rid="Fig1" ref-type="fig">1</xref>a. Let us assume that we have <bold>N</bold> subjects and <bold>M</bold> regions of interest (ROIs). For each ROI, a regional mean fMRI BOLD time series is available. We suppose that the BOLD time series with respect to the <italic>i-</italic>th ROI can be denoted as <inline-formula id="IEq1"><alternatives><tex-math id="M1">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$x_{i} = \{ x_{1i} ,x_{2i} ,\ldots,x_{Ti} \} \in R^{T}$$\end{document}</tex-math><mml:math id="M2"><mml:mrow><mml:msub><mml:mi>x</mml:mi><mml:mi>i</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:mrow><mml:mo stretchy="false">{</mml:mo><mml:msub><mml:mi>x</mml:mi><mml:mrow><mml:mn>1</mml:mn><mml:mi>i</mml:mi></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mi>x</mml:mi><mml:mrow><mml:mn>2</mml:mn><mml:mi>i</mml:mi></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:mo>…</mml:mo><mml:mo>,</mml:mo><mml:msub><mml:mi>x</mml:mi><mml:mrow><mml:mi mathvariant="italic">Ti</mml:mi></mml:mrow></mml:msub><mml:mo stretchy="false">}</mml:mo></mml:mrow><mml:mo>∈</mml:mo><mml:msup><mml:mi>R</mml:mi><mml:mi>T</mml:mi></mml:msup></mml:mrow></mml:math><inline-graphic xlink:href="12859_2020_3877_Article_IEq1.gif"/></alternatives></inline-formula>, where <bold>T</bold> is the number of time points (we have 280 time points). <inline-formula id="IEq2"><alternatives><tex-math id="M3">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\beta_{i} = \{ \beta_{1i} ,\beta_{2i} ,\ldots,\beta_{Mi} \} \in R^{M}$$\end{document}</tex-math><mml:math id="M4"><mml:mrow><mml:msub><mml:mi>β</mml:mi><mml:mi>i</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:mrow><mml:mo stretchy="false">{</mml:mo><mml:msub><mml:mi>β</mml:mi><mml:mrow><mml:mn>1</mml:mn><mml:mi>i</mml:mi></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mi>β</mml:mi><mml:mrow><mml:mn>2</mml:mn><mml:mi>i</mml:mi></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:mo>…</mml:mo><mml:mo>,</mml:mo><mml:msub><mml:mi>β</mml:mi><mml:mrow><mml:mi mathvariant="italic">Mi</mml:mi></mml:mrow></mml:msub><mml:mo stretchy="false">}</mml:mo></mml:mrow><mml:mo>∈</mml:mo><mml:msup><mml:mi>R</mml:mi><mml:mi>M</mml:mi></mml:msup></mml:mrow></mml:math><inline-graphic xlink:href="12859_2020_3877_Article_IEq2.gif"/></alternatives></inline-formula> is the coefficient vector that represents the indices of other co-activated ROIs associated with the <italic>i-</italic>th ROI. We can estimate the whole-brain network <inline-formula id="IEq3"><alternatives><tex-math id="M5">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\varvec{B}} = \{ {\varvec{\beta}}_{1} ,{\varvec{\beta}}_{2} ,\ldots,{\varvec{\beta}}_{M} \} \in R^{M \times M}$$\end{document}</tex-math><mml:math id="M6"><mml:mrow><mml:mrow><mml:mi mathvariant="bold-italic">B</mml:mi></mml:mrow><mml:mo>=</mml:mo><mml:mrow><mml:mo stretchy="false">{</mml:mo><mml:msub><mml:mrow><mml:mi mathvariant="bold-italic">β</mml:mi></mml:mrow><mml:mn>1</mml:mn></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mrow><mml:mi mathvariant="bold-italic">β</mml:mi></mml:mrow><mml:mn>2</mml:mn></mml:msub><mml:mo>,</mml:mo><mml:mo>…</mml:mo><mml:mo>,</mml:mo><mml:msub><mml:mrow><mml:mi mathvariant="bold-italic">β</mml:mi></mml:mrow><mml:mi>M</mml:mi></mml:msub><mml:mo stretchy="false">}</mml:mo></mml:mrow><mml:mo>∈</mml:mo><mml:msup><mml:mi>R</mml:mi><mml:mrow><mml:mi>M</mml:mi><mml:mo>×</mml:mo><mml:mi>M</mml:mi></mml:mrow></mml:msup></mml:mrow></mml:math><inline-graphic xlink:href="12859_2020_3877_Article_IEq3.gif"/></alternatives></inline-formula> by solving the following <italic>l</italic><sub>1</sub>-norm regularization problem:<disp-formula id="Equ1"><label>1</label><alternatives><tex-math id="M7">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\mathop {\min }\limits_{\beta } \frac{1}{2}\left\| {x_{i} - \sum\limits_{j \ne i}^{M} {x_{j} \, \beta_{ji} \, } } \right\|_{2}^{2} + \, \lambda_{1} \, \sum\limits_{j \ne i}^{M} {\left| {\beta_{ji} } \right|}$$\end{document}</tex-math><mml:math id="M8" display="block"><mml:mrow><mml:munder><mml:mo movablelimits="false">min</mml:mo><mml:mi>β</mml:mi></mml:munder><mml:mfrac><mml:mn>1</mml:mn><mml:mn>2</mml:mn></mml:mfrac><mml:msubsup><mml:mfenced close="∥" open="∥"><mml:mrow><mml:msub><mml:mi>x</mml:mi><mml:mi>i</mml:mi></mml:msub><mml:mo>-</mml:mo><mml:munderover><mml:mo movablelimits="false">∑</mml:mo><mml:mrow><mml:mi>j</mml:mi><mml:mo>≠</mml:mo><mml:mi>i</mml:mi></mml:mrow><mml:mi>M</mml:mi></mml:munderover><mml:mrow><mml:msub><mml:mi>x</mml:mi><mml:mi>j</mml:mi></mml:msub><mml:mspace width="0.166667em"/><mml:msub><mml:mi>β</mml:mi><mml:mrow><mml:mi mathvariant="italic">ji</mml:mi></mml:mrow></mml:msub><mml:mspace width="0.166667em"/></mml:mrow></mml:mrow></mml:mfenced><mml:mrow><mml:mn>2</mml:mn></mml:mrow><mml:mn>2</mml:mn></mml:msubsup><mml:mo>+</mml:mo><mml:mspace width="0.166667em"/><mml:msub><mml:mi>λ</mml:mi><mml:mn>1</mml:mn></mml:msub><mml:mspace width="0.166667em"/><mml:munderover><mml:mo movablelimits="false">∑</mml:mo><mml:mrow><mml:mi>j</mml:mi><mml:mo>≠</mml:mo><mml:mi>i</mml:mi></mml:mrow><mml:mi>M</mml:mi></mml:munderover><mml:mfenced close="|" open="|"><mml:msub><mml:mi>β</mml:mi><mml:mrow><mml:mi mathvariant="italic">ji</mml:mi></mml:mrow></mml:msub></mml:mfenced></mml:mrow></mml:math><graphic xlink:href="12859_2020_3877_Article_Equ1.gif" position="anchor"/></alternatives></disp-formula>where <italic>λ</italic><sub>1</sub> is a non-negative regularization parameter controlling the sparsity of the brain network. A larger <italic>λ</italic><sub>1</sub> forces more coefficients to be zeros, i.e., more values in coefficient vector <inline-formula id="IEq4"><alternatives><tex-math id="M9">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\{ {\varvec{\beta}}_{i} \}_{i = 1}^{M}$$\end{document}</tex-math><mml:math id="M10"><mml:msubsup><mml:mrow><mml:mo stretchy="false">{</mml:mo><mml:msub><mml:mrow><mml:mi mathvariant="bold-italic">β</mml:mi></mml:mrow><mml:mi>i</mml:mi></mml:msub><mml:mo stretchy="false">}</mml:mo></mml:mrow><mml:mrow><mml:mi>i</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mi>M</mml:mi></mml:msubsup></mml:math><inline-graphic xlink:href="12859_2020_3877_Article_IEq4.gif"/></alternatives></inline-formula> equal to zero, which is able to select the strongly co-activated ROIs from the <italic>i-</italic>th ROI to the other ROIs. In general, functional network estimated by rs-fMRI can measure the temporal correlation of anatomically segregated brain regions, while a structural network based on dw-MRI is formed by characterizing the white matter fiber tracts. In order to integrate these two sources of complementary information, we propose to incorporate the structural network into Eq. (<xref rid="Equ1" ref-type="">1</xref>) to guide modeling of the functional brain network. Thus, a multimodal network construction can be formulated as:<disp-formula id="Equ2"><label>2</label><alternatives><tex-math id="M11">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\mathop {\min }\limits_{\beta } \frac{1}{2}\left\| {x_{i} - \sum\limits_{j \ne i}^{M} {x_{j} \, \beta_{ji} \, } } \right\|_{2}^{2} + \, \lambda_{1} \, \sum\limits_{j \ne i}^{M} {D_{ji} \left| {\beta_{ji} } \right|}$$\end{document}</tex-math><mml:math id="M12" display="block"><mml:mrow><mml:munder><mml:mo movablelimits="false">min</mml:mo><mml:mi>β</mml:mi></mml:munder><mml:mfrac><mml:mn>1</mml:mn><mml:mn>2</mml:mn></mml:mfrac><mml:msubsup><mml:mfenced close="∥" open="∥"><mml:mrow><mml:msub><mml:mi>x</mml:mi><mml:mi>i</mml:mi></mml:msub><mml:mo>-</mml:mo><mml:munderover><mml:mo movablelimits="false">∑</mml:mo><mml:mrow><mml:mi>j</mml:mi><mml:mo>≠</mml:mo><mml:mi>i</mml:mi></mml:mrow><mml:mi>M</mml:mi></mml:munderover><mml:mrow><mml:msub><mml:mi>x</mml:mi><mml:mi>j</mml:mi></mml:msub><mml:mspace width="0.166667em"/><mml:msub><mml:mi>β</mml:mi><mml:mrow><mml:mi mathvariant="italic">ji</mml:mi></mml:mrow></mml:msub><mml:mspace width="0.166667em"/></mml:mrow></mml:mrow></mml:mfenced><mml:mrow><mml:mn>2</mml:mn></mml:mrow><mml:mn>2</mml:mn></mml:msubsup><mml:mo>+</mml:mo><mml:mspace width="0.166667em"/><mml:msub><mml:mi>λ</mml:mi><mml:mn>1</mml:mn></mml:msub><mml:mspace width="0.166667em"/><mml:munderover><mml:mo movablelimits="false">∑</mml:mo><mml:mrow><mml:mi>j</mml:mi><mml:mo>≠</mml:mo><mml:mi>i</mml:mi></mml:mrow><mml:mi>M</mml:mi></mml:munderover><mml:mrow><mml:msub><mml:mi>D</mml:mi><mml:mrow><mml:mi mathvariant="italic">ji</mml:mi></mml:mrow></mml:msub><mml:mfenced close="|" open="|"><mml:msub><mml:mi>β</mml:mi><mml:mrow><mml:mi mathvariant="italic">ji</mml:mi></mml:mrow></mml:msub></mml:mfenced></mml:mrow></mml:mrow></mml:math><graphic xlink:href="12859_2020_3877_Article_Equ2.gif" position="anchor"/></alternatives></disp-formula>where <italic>D</italic><sub><italic>ji</italic></sub> represents the structural connectivity information computed from the dw-MRI data. The neurological basis of <italic>D</italic><sub><italic>ji</italic></sub> is that the coupling of functional and structural connectivity can be regarded as significantly correlated with brain development. A stronger FC is likely to be attributed to a larger SC, and in turn a lower penalty to <inline-formula id="IEq5"><alternatives><tex-math id="M13">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\{ {\varvec{\beta}}_{i} \}_{i = 1}^{M}$$\end{document}</tex-math><mml:math id="M14"><mml:msubsup><mml:mrow><mml:mo stretchy="false">{</mml:mo><mml:msub><mml:mrow><mml:mi mathvariant="bold-italic">β</mml:mi></mml:mrow><mml:mi>i</mml:mi></mml:msub><mml:mo stretchy="false">}</mml:mo></mml:mrow><mml:mrow><mml:mi>i</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mi>M</mml:mi></mml:msubsup></mml:math><inline-graphic xlink:href="12859_2020_3877_Article_IEq5.gif"/></alternatives></inline-formula>. Therefore, we define the <italic>D</italic><sub><italic>ji</italic></sub> as an inverse proportion function of SC. In particular, we set <inline-formula id="IEq6"><alternatives><tex-math id="M15">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$D_{ji} = \exp ( - \rho_{ji}^{2} /\sigma )$$\end{document}</tex-math><mml:math id="M16"><mml:mrow><mml:msub><mml:mi>D</mml:mi><mml:mrow><mml:mi mathvariant="italic">ji</mml:mi></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:mo>exp</mml:mo><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mo>-</mml:mo><mml:msubsup><mml:mi>ρ</mml:mi><mml:mrow><mml:mi mathvariant="italic">ji</mml:mi></mml:mrow><mml:mn>2</mml:mn></mml:msubsup><mml:mo stretchy="false">/</mml:mo><mml:mi>σ</mml:mi><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:mrow></mml:math><inline-graphic xlink:href="12859_2020_3877_Article_IEq6.gif"/></alternatives></inline-formula> to penalize the estimated connection between the <italic>j-</italic>th and <italic>i-</italic>th ROIs, where <italic>ρ</italic><sub><italic>ji</italic></sub> denotes elements in the structural brain network, and <italic>σ</italic> is the average of standard variances of all subjects’ structural network elements (i.e., <italic>ρ</italic><sub><italic>ji</italic></sub>).<fig id="Fig1"><label>Fig. 1</label><caption><p><bold>a</bold> The proposed multimodal framework, where dw-MRI network as a constraint is used to guide the regression of rs-fMRI BOLD time series to create fused brain connectivity network; <bold>b</bold> a sequence of brain networks with different sparsity are constructed to form integrated networks, which are prepared for subsequent graph filtration analysis to extract persistent homology measures; <bold>c</bold> each integrated network is converted to distance network, and persistent homology is applied to quantify the distance network by evaluating the persistence of connected components (PH-0) and cycles (PH-1); <bold>d</bold> statistical analysis is performed to capture the difference between APOE ε4 carriers and non-carriers. Also, we extract specific loop structures by identifying connectivity patterns using PH-1</p></caption><graphic xlink:href="12859_2020_3877_Fig1_HTML" id="MO1"/></fig></p>
+        <p id="Par34">Note that the aforementioned model only characterizes the extent of the influence from the <italic>i-</italic>th ROI to other ROIs, ignoring the temporal dependency among the other ROIs. Thus, we further introduce an additional source of guidance, named generalized fused Lasso, to pursue smoothness between the pairwise ROIs as follows:<disp-formula id="Equ3"><label>3</label><alternatives><tex-math id="M17">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\mathop {\min }\limits_{\beta } \frac{1}{2}\left\| {x_{i} - \sum\limits_{j \ne i}^{M} {x_{j} \, \beta_{ji} \, } } \right\|_{2}^{2} + \, \lambda_{1} \, \sum\limits_{j \ne i}^{M} {D_{ji} \left| {\beta_{ji} } \right|} + \frac{{\lambda_{2} }}{2} \, \sum\limits_{(u,v)}^{M} {\left| {\beta_{(u, \cdot )} - \beta_{(v, \cdot )} } \right|}$$\end{document}</tex-math><mml:math id="M18" display="block"><mml:mrow><mml:munder><mml:mo movablelimits="false">min</mml:mo><mml:mi>β</mml:mi></mml:munder><mml:mfrac><mml:mn>1</mml:mn><mml:mn>2</mml:mn></mml:mfrac><mml:msubsup><mml:mfenced close="∥" open="∥"><mml:mrow><mml:msub><mml:mi>x</mml:mi><mml:mi>i</mml:mi></mml:msub><mml:mo>-</mml:mo><mml:munderover><mml:mo movablelimits="false">∑</mml:mo><mml:mrow><mml:mi>j</mml:mi><mml:mo>≠</mml:mo><mml:mi>i</mml:mi></mml:mrow><mml:mi>M</mml:mi></mml:munderover><mml:mrow><mml:msub><mml:mi>x</mml:mi><mml:mi>j</mml:mi></mml:msub><mml:mspace width="0.166667em"/><mml:msub><mml:mi>β</mml:mi><mml:mrow><mml:mi mathvariant="italic">ji</mml:mi></mml:mrow></mml:msub><mml:mspace width="0.166667em"/></mml:mrow></mml:mrow></mml:mfenced><mml:mrow><mml:mn>2</mml:mn></mml:mrow><mml:mn>2</mml:mn></mml:msubsup><mml:mo>+</mml:mo><mml:mspace width="0.166667em"/><mml:msub><mml:mi>λ</mml:mi><mml:mn>1</mml:mn></mml:msub><mml:mspace width="0.166667em"/><mml:munderover><mml:mo movablelimits="false">∑</mml:mo><mml:mrow><mml:mi>j</mml:mi><mml:mo>≠</mml:mo><mml:mi>i</mml:mi></mml:mrow><mml:mi>M</mml:mi></mml:munderover><mml:mrow><mml:msub><mml:mi>D</mml:mi><mml:mrow><mml:mi mathvariant="italic">ji</mml:mi></mml:mrow></mml:msub><mml:mfenced close="|" open="|"><mml:msub><mml:mi>β</mml:mi><mml:mrow><mml:mi mathvariant="italic">ji</mml:mi></mml:mrow></mml:msub></mml:mfenced></mml:mrow><mml:mo>+</mml:mo><mml:mfrac><mml:msub><mml:mi>λ</mml:mi><mml:mn>2</mml:mn></mml:msub><mml:mn>2</mml:mn></mml:mfrac><mml:mspace width="0.166667em"/><mml:munderover><mml:mo movablelimits="false">∑</mml:mo><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mi>u</mml:mi><mml:mo>,</mml:mo><mml:mi>v</mml:mi><mml:mo stretchy="false">)</mml:mo></mml:mrow><mml:mi>M</mml:mi></mml:munderover><mml:mfenced close="|" open="|"><mml:mrow><mml:msub><mml:mi>β</mml:mi><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mi>u</mml:mi><mml:mo>,</mml:mo><mml:mo>·</mml:mo><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msub><mml:mo>-</mml:mo><mml:msub><mml:mi>β</mml:mi><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mi>v</mml:mi><mml:mo>,</mml:mo><mml:mo>·</mml:mo><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msub></mml:mrow></mml:mfenced></mml:mrow></mml:math><graphic xlink:href="12859_2020_3877_Article_Equ3.gif" position="anchor"/></alternatives></disp-formula>where <inline-formula id="IEq7"><alternatives><tex-math id="M19">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\frac{{\lambda_{2} }}{2} \, \sum\nolimits_{(u,v)}^{M} {\left| {\beta_{(u, \cdot )} - \beta_{(v, \cdot )} } \right|}$$\end{document}</tex-math><mml:math id="M20"><mml:mrow><mml:mfrac><mml:msub><mml:mi>λ</mml:mi><mml:mn>2</mml:mn></mml:msub><mml:mn>2</mml:mn></mml:mfrac><mml:mspace width="0.166667em"/><mml:msubsup><mml:mo>∑</mml:mo><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mi>u</mml:mi><mml:mo>,</mml:mo><mml:mi>v</mml:mi><mml:mo stretchy="false">)</mml:mo></mml:mrow><mml:mi>M</mml:mi></mml:msubsup><mml:mfenced close="|" open="|"><mml:mrow><mml:msub><mml:mi>β</mml:mi><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mi>u</mml:mi><mml:mo>,</mml:mo><mml:mo>·</mml:mo><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msub><mml:mo>-</mml:mo><mml:msub><mml:mi>β</mml:mi><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mi>v</mml:mi><mml:mo>,</mml:mo><mml:mo>·</mml:mo><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msub></mml:mrow></mml:mfenced></mml:mrow></mml:math><inline-graphic xlink:href="12859_2020_3877_Article_IEq7.gif"/></alternatives></inline-formula> is the generalized fused Lasso term, which is used to adaptively control the similarity by shrinking the difference between ROIs toward zero. Moreover, <italic>l</italic><sub>1</sub>-norm regularization is used to penalize the fusion term, which results in a sparse pattern.</p>
+      </sec>
+      <sec id="Sec7">
+        <title>Persistent homology quantification</title>
+        <p id="Par35"><italic>Persistent homology</italic> (PH)—a mathematical formalism from computational topology [<xref ref-type="bibr" rid="CR26">26</xref>]—can explore the persistence of topological invariants in a network, including connected components, cycles, voids, etc. More specifically, a process called <italic>graph filtration</italic> generates a series of nested simplicial complexes by varying the value of a filtration parameter [<xref ref-type="bibr" rid="CR27">27</xref>]. Furthermore, we can track the persistence over the graph filtration from the formation (birth) of a topological feature until it disappears (death) by being connected to a neighboring network (Fig. <xref rid="Fig2" ref-type="fig">2</xref>a). In general, we define <italic>0-dimensional features</italic> (PH-0) as the persistence of connected components, <italic>1-dimensional features</italic> (PH-1) as the persistence of cycle structures. When thinking of these persistent intervals as bars, we can construct a <italic>barcode</italic> using the finite multi-set of bars to record the PH features, where PH-0 is represented using <italic>β</italic><sub>0</sub> barcode (Fig. <xref rid="Fig2" ref-type="fig">2</xref>b), PH-1 is using <italic>β</italic><sub>1</sub> barcode (Fig. <xref rid="Fig2" ref-type="fig">2</xref>c). Particularly, we can record the cycle structures over the graph filtration, and then integrate them to a <italic>frequency network</italic> which contains the specific connectivity information of the network.<fig id="Fig2"><label>Fig. 2</label><caption><p><bold>a</bold> The flowchart of constructing graph filtration, and persistent features in graph filtration can be visualized using barcode. For <italic>β</italic><sub>0</sub> barcode, there are 6 connected components in filtration distance 0, which are corresponding to 6 bars. After integrating two connected components into one unit, one of the bars that represents the original components disappears; the other as the new connected component extends to next step. Therefore, the bars in step 1 become 3 that are corresponding to 3 connected components in G<sub>1.</sub> For an example of <italic>β</italic><sub>1</sub> barcode, we observe that the cycle with yellow is born in filtration step 2, and continues to step 4 before it is completely covered in filtration step 5. Subsequently, frequency network can be obtained by integrating all cycle structures into a network, where <italic>P</italic> is the persistent interval, the values in frequency network represent probability-of-appearance of an edge. <bold>b</bold> We use functional data analysis (FDA) to fit <italic>β</italic><sub>0</sub> barcode to <italic>β</italic><sub>0</sub> curve, and further calculate the corresponding derivative curve. <bold>c</bold> Persistence landscapes is applied to convert <italic>β</italic><sub>1</sub> barcode to landscape layers; furthermore, we can compute the unique average for a collection of persistent landscapes</p></caption><graphic xlink:href="12859_2020_3877_Fig2_HTML" id="MO2"/></fig></p>
+        <p id="Par36">Because there is no definite rule to determinate the proper <italic>λ</italic><sub>1</sub> and <italic>λ</italic><sub>2</sub> for the proposed model in Eqs. (<xref rid="Equ2" ref-type="">2</xref>, <xref rid="Equ3" ref-type="">3</xref>), it will lead to inconsistency of network structure and uncertainty of results that follow. The problem can be remedied by using PH to perform statistical inference over every possible <italic>λ</italic>. More specifically, suppose that a group of brain networks <italic>N</italic><sub>G</sub> = (<italic>N</italic><sub><italic>λ</italic>1</sub>, <italic>N</italic><sub><italic>λ</italic>2</sub>, …, <italic>N</italic><sub><italic>λn</italic></sub>) corresponding to different regularization parameters (<italic>λ</italic><sub>1</sub> &lt; <italic>λ</italic><sub>2</sub> &lt; , …, &lt; <italic>λ</italic><sub><italic>n</italic></sub>) rather than a fixed parameter, we can integrate the network group into an integrated network <italic>N</italic><sub><italic>int</italic></sub> (see Fig. <xref rid="Fig1" ref-type="fig">1</xref>b). The elements in <italic>N</italic><sub><italic>int</italic></sub> can be defined as probability-of-appearance of an edge in the network group <italic>N</italic><sub><italic>G</italic></sub>. Assuming <italic>γ</italic> = 1 or 0 represents an edge exists or not, <italic>n</italic> is the number of networks in <italic>N</italic><sub>G</sub>, we use distance network <italic>N</italic><sub><italic>d</italic></sub> to convert the elements of <italic>N</italic><sub><italic>int</italic></sub> by <inline-formula id="IEq8"><alternatives><tex-math id="M21">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$d_{ij} = \sqrt {1 - \left( {\sum\nolimits_{l}^{n} {\gamma_{ij}^{l} } /n} \right)^{2} } \in N_{d}$$\end{document}</tex-math><mml:math id="M22"><mml:mrow><mml:msub><mml:mi>d</mml:mi><mml:mrow><mml:mi mathvariant="italic">ij</mml:mi></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:msqrt><mml:mrow><mml:mn>1</mml:mn><mml:mo>-</mml:mo><mml:msup><mml:mfenced close=")" open="("><mml:mrow><mml:msubsup><mml:mo>∑</mml:mo><mml:mrow><mml:mi>l</mml:mi></mml:mrow><mml:mi>n</mml:mi></mml:msubsup><mml:msubsup><mml:mi>γ</mml:mi><mml:mrow><mml:mi mathvariant="italic">ij</mml:mi></mml:mrow><mml:mi>l</mml:mi></mml:msubsup><mml:mo stretchy="false">/</mml:mo><mml:mi>n</mml:mi></mml:mrow></mml:mfenced><mml:mn>2</mml:mn></mml:msup></mml:mrow></mml:msqrt><mml:mo>∈</mml:mo><mml:msub><mml:mi>N</mml:mi><mml:mi>d</mml:mi></mml:msub></mml:mrow></mml:math><inline-graphic xlink:href="12859_2020_3877_Article_IEq8.gif"/></alternatives></inline-formula> (see Fig. <xref rid="Fig1" ref-type="fig">1</xref>c). Then, a graph filtration for <italic>N</italic><sub><italic>d</italic></sub> can be constructed as follows: (1) Initial step is corresponding to the set of all brain regions; (2) Linearly increase the filtration distance <italic>ε</italic> (i.e., threshold) within the interval [0, 1], where the maximum number of generated networks is set as 1000; (3) For each <italic>ε</italic>, threshold the weighted distance network <italic>N</italic><sub><italic>d</italic></sub> using <italic>d</italic><sub><italic>ij</italic></sub> &lt; <italic>ε</italic> to construct a binary network; (4) In the end, all brain nodes will be connected to one large unit. PH can be used to encode the graph filtration using the PH-0 and PH-1<bold><italic>.</italic></bold></p>
+        <p id="Par37"><italic>0-dimensional features</italic> (PH-0) We can obtain a <italic>β</italic><sub>0</sub> curve by fitting the <italic>β</italic><sub>0</sub> barcode using a <italic>functional data analysis</italic> (FDA) which can track the <italic>β</italic><sub>0</sub> curve features by combining <italic>b</italic>-spline basis functions with proper choice of roughness penalties [<xref ref-type="bibr" rid="CR28">28</xref>, <xref ref-type="bibr" rid="CR29">29</xref>] (see Fig. <xref rid="Fig2" ref-type="fig">2</xref>b). Mathematically, the <italic>β</italic><sub>0</sub> curve function <inline-formula id="IEq9"><alternatives><tex-math id="M23">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$y_{{\beta_{0} }}$$\end{document}</tex-math><mml:math id="M24"><mml:msub><mml:mi>y</mml:mi><mml:msub><mml:mi>β</mml:mi><mml:mn>0</mml:mn></mml:msub></mml:msub></mml:math><inline-graphic xlink:href="12859_2020_3877_Article_IEq9.gif"/></alternatives></inline-formula> can be defined as:<disp-formula id="Equ4"><label>4</label><alternatives><tex-math id="M25">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$y_{{\beta_{0} }} = \sum\nolimits_{k = 1}^{j} {c_{k} \varphi_{k} (t) + \varepsilon_{j} = {\varvec{c}}^{T} \user2{\varphi }(t) + } \varepsilon_{j}$$\end{document}</tex-math><mml:math id="M26" display="block"><mml:mrow><mml:msub><mml:mi>y</mml:mi><mml:msub><mml:mi>β</mml:mi><mml:mn>0</mml:mn></mml:msub></mml:msub><mml:mo>=</mml:mo><mml:msubsup><mml:mo>∑</mml:mo><mml:mrow><mml:mi>k</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mi>j</mml:mi></mml:msubsup><mml:mrow><mml:msub><mml:mi>c</mml:mi><mml:mi>k</mml:mi></mml:msub><mml:msub><mml:mi>φ</mml:mi><mml:mi>k</mml:mi></mml:msub><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mi>t</mml:mi><mml:mo stretchy="false">)</mml:mo></mml:mrow><mml:mo>+</mml:mo><mml:msub><mml:mi>ε</mml:mi><mml:mi>j</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:msup><mml:mrow><mml:mrow><mml:mi mathvariant="bold-italic">c</mml:mi></mml:mrow></mml:mrow><mml:mi>T</mml:mi></mml:msup><mml:mrow><mml:mi mathvariant="bold-italic">φ</mml:mi></mml:mrow><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mi>t</mml:mi><mml:mo stretchy="false">)</mml:mo></mml:mrow><mml:mo>+</mml:mo></mml:mrow><mml:msub><mml:mi>ε</mml:mi><mml:mi>j</mml:mi></mml:msub></mml:mrow></mml:math><graphic xlink:href="12859_2020_3877_Article_Equ4.gif" position="anchor"/></alternatives></disp-formula>where <inline-formula id="IEq10"><alternatives><tex-math id="M27">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\phi$$\end{document}</tex-math><mml:math id="M28"><mml:mi>ϕ</mml:mi></mml:math><inline-graphic xlink:href="12859_2020_3877_Article_IEq10.gif"/></alternatives></inline-formula> is an order four <italic>b</italic>-spline basis, and <bold><italic>c</italic></bold> contains the penalty coefficients, the residuals <inline-formula id="IEq11"><alternatives><tex-math id="M29">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\varepsilon_{j}$$\end{document}</tex-math><mml:math id="M30"><mml:msub><mml:mi>ε</mml:mi><mml:mi>j</mml:mi></mml:msub></mml:math><inline-graphic xlink:href="12859_2020_3877_Article_IEq11.gif"/></alternatives></inline-formula> is statistically independent. However, the fitting curves are not smooth because the process simply interpolates these points with lines. The problem can be addressed by minimizing the Eq. (<xref rid="Equ5" ref-type="">5</xref>), which provides a compatible between capturing important curve features and reduce computations.<disp-formula id="Equ5"><label>5</label><alternatives><tex-math id="M31">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\min F(c) = \sum\nolimits_{j} {[y_{j} - c^{T} \varphi_{j} ]^{2} + \lambda \int {(c^{T} \varphi_{j} )^{2} dt} }$$\end{document}</tex-math><mml:math id="M32" display="block"><mml:mrow><mml:mo movablelimits="true">min</mml:mo><mml:mi>F</mml:mi><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mi>c</mml:mi><mml:mo stretchy="false">)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:msub><mml:mo>∑</mml:mo><mml:mi>j</mml:mi></mml:msub><mml:mrow><mml:msup><mml:mrow><mml:mo stretchy="false">[</mml:mo><mml:msub><mml:mi>y</mml:mi><mml:mi>j</mml:mi></mml:msub><mml:mo>-</mml:mo><mml:msup><mml:mi>c</mml:mi><mml:mi>T</mml:mi></mml:msup><mml:msub><mml:mi>φ</mml:mi><mml:mi>j</mml:mi></mml:msub><mml:mo stretchy="false">]</mml:mo></mml:mrow><mml:mn>2</mml:mn></mml:msup><mml:mo>+</mml:mo><mml:mi>λ</mml:mi><mml:mo>∫</mml:mo><mml:mrow><mml:msup><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:msup><mml:mi>c</mml:mi><mml:mi>T</mml:mi></mml:msup><mml:msub><mml:mi>φ</mml:mi><mml:mi>j</mml:mi></mml:msub><mml:mo stretchy="false">)</mml:mo></mml:mrow><mml:mn>2</mml:mn></mml:msup><mml:mi>d</mml:mi><mml:mi>t</mml:mi></mml:mrow></mml:mrow></mml:mrow></mml:math><graphic xlink:href="12859_2020_3877_Article_Equ5.gif" position="anchor"/></alternatives></disp-formula>where the first term on the right side is the ordinary sum of squared errors of residuals, and the second term is the measure of roughness. The smoothing parameter <italic>λ</italic> specifies the emphasis on the integration relative to the goodness of fit in the SSE. As <italic>λ</italic> approaches positive infinity, curves become less rough and converge to a straight line. A theme in functional data analysis is the possibility of also using information on the rates of change or derivatives of the curves [<xref ref-type="bibr" rid="CR30">30</xref>], because these curves are intrinsically smooth. The derivative curve of <italic>β</italic><sub>0</sub> fitting can magnify the curve’s features, thereby measuring the network difference through the curve distance measures like Cityblock and standardized Euclidean (Seuclidean) distance.</p>
+        <p id="Par38">1<italic>-dimensional features</italic> (PH-1): A <italic>persistence landscapes</italic> method can convert the nonstandard and nonlinear 1-dimensional features to a sequence of piecewise-linear functions in Banach space, so we can use the linear vector space structures [<xref ref-type="bibr" rid="CR31">31</xref>]. Their calculation is much faster than the corresponding barcode calculation. Given a <bold><italic>β</italic></bold><sub><bold>1</bold></sub> barcode interval (<italic>b</italic>, <italic>d</italic>) with <italic>b</italic> &lt; <italic>d</italic>, the piecewise linear function is defined as:<disp-formula id="Equ6"><label>6</label><alternatives><tex-math id="M33">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$f_{(b,d)} (x) = \left\{ \begin{array}{ll} \, 0 &amp;\quad if \, x \notin (b,d) \hfill \\ \, x - b &amp;\quad if \, x \notin (b,\frac{b + d}{2}) \hfill \\ \, - x + b &amp;\quad if \, x \notin (\frac{b + d}{2}{,}d) \hfill \\ \end{array} \right.$$\end{document}</tex-math><mml:math id="M34" display="block"><mml:mrow><mml:msub><mml:mi>f</mml:mi><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mi>b</mml:mi><mml:mo>,</mml:mo><mml:mi>d</mml:mi><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msub><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mi>x</mml:mi><mml:mo stretchy="false">)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mfenced open="{"><mml:mrow><mml:mtable><mml:mtr><mml:mtd columnalign="left"><mml:mrow><mml:mspace width="0.166667em"/><mml:mn>0</mml:mn></mml:mrow></mml:mtd><mml:mtd columnalign="left"><mml:mrow><mml:mspace width="1em"/><mml:mi>i</mml:mi><mml:mi>f</mml:mi><mml:mspace width="0.166667em"/><mml:mi>x</mml:mi><mml:mo>∉</mml:mo><mml:mo stretchy="false">(</mml:mo><mml:mi>b</mml:mi><mml:mo>,</mml:mo><mml:mi>d</mml:mi><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:mtd></mml:mtr><mml:mtr><mml:mtd columnalign="left"><mml:mrow><mml:mrow/><mml:mspace width="0.166667em"/><mml:mi>x</mml:mi><mml:mo>-</mml:mo><mml:mi>b</mml:mi></mml:mrow></mml:mtd><mml:mtd columnalign="left"><mml:mrow><mml:mspace width="1em"/><mml:mi>i</mml:mi><mml:mi>f</mml:mi><mml:mspace width="0.166667em"/><mml:mi>x</mml:mi><mml:mo>∉</mml:mo><mml:mo stretchy="false">(</mml:mo><mml:mi>b</mml:mi><mml:mo>,</mml:mo><mml:mfrac><mml:mrow><mml:mi>b</mml:mi><mml:mo>+</mml:mo><mml:mi>d</mml:mi></mml:mrow><mml:mn>2</mml:mn></mml:mfrac><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:mtd></mml:mtr><mml:mtr><mml:mtd columnalign="left"><mml:mrow><mml:mrow/><mml:mspace width="0.166667em"/><mml:mo>-</mml:mo><mml:mi>x</mml:mi><mml:mo>+</mml:mo><mml:mi>b</mml:mi></mml:mrow></mml:mtd><mml:mtd columnalign="left"><mml:mrow><mml:mspace width="1em"/><mml:mi>i</mml:mi><mml:mi>f</mml:mi><mml:mspace width="0.166667em"/><mml:mi>x</mml:mi><mml:mo>∉</mml:mo><mml:mo stretchy="false">(</mml:mo><mml:mfrac><mml:mrow><mml:mi>b</mml:mi><mml:mo>+</mml:mo><mml:mi>d</mml:mi></mml:mrow><mml:mn>2</mml:mn></mml:mfrac><mml:mo>,</mml:mo><mml:mi>d</mml:mi><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:mrow></mml:mfenced></mml:mrow></mml:math><graphic xlink:href="12859_2020_3877_Article_Equ6.gif" position="anchor"/></alternatives></disp-formula></p>
+        <p id="Par39">The persistence landscapes of a <italic>β</italic><sub><bold>1</bold></sub> barcodes <inline-formula id="IEq12"><alternatives><tex-math id="M35">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\left\{ {\left( {b_{i} ,d_{i} } \right)} \right\}_{i = 1}^{n}$$\end{document}</tex-math><mml:math id="M36"><mml:msubsup><mml:mfenced close="}" open="{"><mml:mfenced close=")" open="("><mml:mrow><mml:msub><mml:mi>b</mml:mi><mml:mi>i</mml:mi></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mi>d</mml:mi><mml:mi>i</mml:mi></mml:msub></mml:mrow></mml:mfenced></mml:mfenced><mml:mrow><mml:mi>i</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mi>n</mml:mi></mml:msubsup></mml:math><inline-graphic xlink:href="12859_2020_3877_Article_IEq12.gif"/></alternatives></inline-formula> is a sequence of function <italic>λ</italic><sub><italic>k</italic></sub> so that <italic>λ</italic><sub><italic>k</italic></sub> is equals to the <italic>k</italic>-<italic>th</italic> largest value of <inline-formula id="IEq13"><alternatives><tex-math id="M37">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\left\{ {f_{{\left( {b_{i} ,d_{i} } \right)}} \left( x \right)} \right\}_{i = 1}^{n}$$\end{document}</tex-math><mml:math id="M38"><mml:msubsup><mml:mfenced close="}" open="{"><mml:mrow><mml:msub><mml:mi>f</mml:mi><mml:mfenced close=")" open="("><mml:mrow><mml:msub><mml:mi>b</mml:mi><mml:mi>i</mml:mi></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mi>d</mml:mi><mml:mi>i</mml:mi></mml:msub></mml:mrow></mml:mfenced></mml:msub><mml:mfenced close=")" open="("><mml:mi>x</mml:mi></mml:mfenced></mml:mrow></mml:mfenced><mml:mrow><mml:mi>i</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mi>n</mml:mi></mml:msubsup></mml:math><inline-graphic xlink:href="12859_2020_3877_Article_IEq13.gif"/></alternatives></inline-formula>. More specifically, for every fixed <italic>k</italic>, <italic>λ</italic><sub><italic>k</italic></sub> can be regarded as exterior contours of a group of pairwise linear functions. Statistically, the great advantage of persistence landscapes is that, it is possible to compute the unique mean landscapes for a collection of persistent landscapes by taking the average for every landscape layer [<xref ref-type="bibr" rid="CR32">32</xref>] (see Fig. <xref rid="Fig2" ref-type="fig">2</xref>c). This is not possible for barcodes, as they are not elements of a Banach space. The <italic>L</italic><sub><bold><italic>p</italic></bold></sub> distances can be used to quantify the difference between <inline-formula id="IEq14"><alternatives><tex-math id="M39">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\lambda_{k} (t)$$\end{document}</tex-math><mml:math id="M40"><mml:mrow><mml:msub><mml:mi>λ</mml:mi><mml:mi>k</mml:mi></mml:msub><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mi>t</mml:mi><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:mrow></mml:math><inline-graphic xlink:href="12859_2020_3877_Article_IEq14.gif"/></alternatives></inline-formula> and <inline-formula id="IEq15"><alternatives><tex-math id="M41">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\lambda^{\prime}_{k} (t)$$\end{document}</tex-math><mml:math id="M42"><mml:mrow><mml:msubsup><mml:mi>λ</mml:mi><mml:mi>k</mml:mi><mml:mo>′</mml:mo></mml:msubsup><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mi>t</mml:mi><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:mrow></mml:math><inline-graphic xlink:href="12859_2020_3877_Article_IEq15.gif"/></alternatives></inline-formula> corresponding to two persistent landscapes. In addition, we can not only calculate the <italic>L</italic><sub><bold><italic>p</italic></bold></sub> distance for <inline-formula id="IEq16"><alternatives><tex-math id="M43">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$1 \le p \le \infty$$\end{document}</tex-math><mml:math id="M44"><mml:mrow><mml:mn>1</mml:mn><mml:mo>≤</mml:mo><mml:mi>p</mml:mi><mml:mo>≤</mml:mo><mml:mi>∞</mml:mi></mml:mrow></mml:math><inline-graphic xlink:href="12859_2020_3877_Article_IEq16.gif"/></alternatives></inline-formula> between the pairwise landscapes, but also between the average landscapes for two groups of persistence barcodes when analyze statistically. That allows one to compare multiple groups of <italic>β</italic><sub><bold>1</bold></sub> barcodes by calculating the pairwise similarity between them.</p>
+      </sec>
+      <sec id="Sec8">
+        <title>Parameter selection</title>
+        <p id="Par40">In the proposed multimodal modeling framework, there are two free parameters: <italic>l</italic><sub>1</sub>-regularization parameter <italic>λ</italic><sub>1</sub>, and fused Lasso parameter <italic>λ</italic><sub>2</sub>, which control the performance of evaluation. A grid search is applied to search the optimal parameter combination. Of note, for obtaining the sequence of networks with different sparsity, a group of regularization parameter <italic>λ</italic><sub>1</sub> are selected in the range of [0, 0.9] with a uniform step size. Hence, we set the total sampling number of <italic>λ</italic><sub>1</sub> as a free parameter <italic>N</italic><sub><italic>λ</italic>1</sub>, and its candidate values for grid search are [100, 200, …, 500]. The candidate values for the fused Lasso parameter <italic>λ</italic><sub>2</sub> are [0.1, 0.2, …, 0.8]. In a word, our method involves the two parameters {<italic>N</italic><sub><italic>λ</italic>1</sub>, <italic>λ</italic><sub>2</sub>} which should be optimized for receiving the most specific difference in APOE ε4-related group analysis.</p>
+      </sec>
+      <sec id="Sec9">
+        <title>Statistical analysis and comparison</title>
+        <p id="Par41">For the functional network, the structural network, and the proposed multimodal network, group-level significant differences between APOE ε4 carriers and non-carriers are computed (Fig. <xref rid="Fig1" ref-type="fig">1</xref>d). A non-parametric permutation test (see Additional file <xref rid="MOESM1" ref-type="media">1</xref>: Appendix S1) is used to assess the statistical difference for PH measurements (i.e., PH-0 and PH-1), while the graph theory measurements [<xref ref-type="bibr" rid="CR33">33</xref>] such as local efficiency (LE), betweenness (BET), global efficiency (GE), and clustering coefficient (CCO) are evaluated using a two-sample t-tests. Significance is determined using a level of 0.05. For subject-level network differences, we denote <italic>distances within group</italic> (DWG) as the distances between all pairs of subjects within a group. For example, DWG of the APOE <italic>ε</italic>4 carriers with 27 subjects can be a vector composed of 351 pairwise distances. Similarly, the <italic>distances between groups</italic> (DBG) indicate the distances between all pairs of subjects from different groups. For instance, the DBG between APOE ε4 carriers (27 subjects) and non-carriers (36 subjects) could consist of 972 pairwise distances. In this study, Euclidean distance is used to measure the distances in DWG and DBG. Furthermore, we compared the PH metrics and the competing graph theory metrics.</p>
+      </sec>
+      <sec id="Sec10">
+        <title>Connectivity pattern identification</title>
+        <p id="Par42">We develop a connectivity pattern identification method for exploring the specific connectivity structures for APOE ε4 carriers and non-carriers, respectively. First, during the graph filtration, the brain regions synchronizing in a cycle structure could reflect a more meaningful neurobiological communication pattern in high dimensional space. Second, topological features with longer persistence could be assumed to convey important information about the brain network, while short ones are associated with noise. Hence, a <italic>frequency network</italic> which integrates the highest persistent cycles can encode the important brain connectomic information, and be used to identify the specific connectivity pattern for different APOE ε4 groups.</p>
+        <p id="Par43">Suppose we have <italic>n</italic> frequency networks <bold>Θ</bold> for <italic>n</italic> APOE ε4 carriers, and <italic>m</italic> frequency networks <bold>Φ</bold> for <italic>m</italic> APOE ε4 non-carriers in Eq. (<xref rid="Equ7" ref-type="">7</xref>). After adding the weights of every corresponding edges together for each frequency network group, we can achieve the network <inline-formula id="IEq17"><alternatives><tex-math id="M45">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\tilde{\mathbf{\Theta }}}$$\end{document}</tex-math><mml:math id="M46"><mml:mover accent="true"><mml:mi mathvariant="normal">Θ</mml:mi><mml:mo stretchy="false">~</mml:mo></mml:mover></mml:math><inline-graphic xlink:href="12859_2020_3877_Article_IEq17.gif"/></alternatives></inline-formula> or <inline-formula id="IEq18"><alternatives><tex-math id="M47">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\tilde{\mathbf{\Theta }}}$$\end{document}</tex-math><mml:math id="M48"><mml:mover accent="true"><mml:mi mathvariant="normal">Θ</mml:mi><mml:mo stretchy="false">~</mml:mo></mml:mover></mml:math><inline-graphic xlink:href="12859_2020_3877_Article_IEq18.gif"/></alternatives></inline-formula> in Eq. (<xref rid="Equ8" ref-type="">8</xref>). A difference analysis is performed for each specific connectivity. Subsequently, we select a threshold (<italic>ε</italic><sub><italic>t</italic></sub> = 2) to filter the difference results and to obtain the ensuing <italic>difference network</italic> (binary network) <bold><italic>Δ</italic></bold><sub>ε4</sub> or <bold><italic>Δ</italic></bold><sub><italic>non-</italic>ε4</sub> in Eq. <xref rid="Equ9" ref-type="">9</xref>. That is to say, the specific edges in network <bold><italic>Δ</italic></bold><sub>ε4</sub> could appear more often in the APOE ε4 carriers than non-carriers. Furthermore, compared to the edge measurement in <bold><italic>Δ</italic></bold><sub>ε4</sub> or <bold><italic>Δ</italic></bold><sub><italic>non-</italic>ε4</sub>, the specific loops could reflect the potential biological communication pattern. In this study, we further extract the loop structures from <bold><italic>Δ</italic></bold><sub>ε4</sub> or <bold><italic>Δ</italic></bold><sub><italic>non-</italic>ε4</sub> to quantify the APOE ε4-associated connectivity.<disp-formula id="Equ7"><label>7</label><alternatives><tex-math id="M49">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${{\varvec{\Theta}}} = \{ \Theta_{1} ,\Theta_{2} , \ldots ,\Theta_{n} \} ,\quad {{\varvec{\Phi}}} = \{ \Phi_{1} ,\Phi_{2} , \ldots ,\Phi_{m} \}$$\end{document}</tex-math><mml:math id="M50" display="block"><mml:mrow><mml:mrow><mml:mi mathvariant="bold">Θ</mml:mi></mml:mrow><mml:mo>=</mml:mo><mml:mrow><mml:mo stretchy="false">{</mml:mo><mml:msub><mml:mi mathvariant="normal">Θ</mml:mi><mml:mn>1</mml:mn></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mi mathvariant="normal">Θ</mml:mi><mml:mn>2</mml:mn></mml:msub><mml:mo>,</mml:mo><mml:mo>…</mml:mo><mml:mo>,</mml:mo><mml:msub><mml:mi mathvariant="normal">Θ</mml:mi><mml:mi>n</mml:mi></mml:msub><mml:mo stretchy="false">}</mml:mo></mml:mrow><mml:mo>,</mml:mo><mml:mspace width="1em"/><mml:mrow><mml:mi mathvariant="bold">Φ</mml:mi></mml:mrow><mml:mo>=</mml:mo><mml:mrow><mml:mo stretchy="false">{</mml:mo><mml:msub><mml:mi mathvariant="normal">Φ</mml:mi><mml:mn>1</mml:mn></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mi mathvariant="normal">Φ</mml:mi><mml:mn>2</mml:mn></mml:msub><mml:mo>,</mml:mo><mml:mo>…</mml:mo><mml:mo>,</mml:mo><mml:msub><mml:mi mathvariant="normal">Φ</mml:mi><mml:mi>m</mml:mi></mml:msub><mml:mo stretchy="false">}</mml:mo></mml:mrow></mml:mrow></mml:math><graphic xlink:href="12859_2020_3877_Article_Equ7.gif" position="anchor"/></alternatives></disp-formula><disp-formula id="Equ8"><label>8</label><alternatives><tex-math id="M51">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\tilde{\mathbf{\Theta }}} = \sum\nolimits_{i = 1}^{n} {\Theta_{i} } ,\quad {\tilde{\mathbf{\Phi }}} = \sum\nolimits_{j = 1}^{m} {\Phi_{j} }$$\end{document}</tex-math><mml:math id="M52" display="block"><mml:mrow><mml:mover accent="true"><mml:mi mathvariant="normal">Θ</mml:mi><mml:mo stretchy="false">~</mml:mo></mml:mover><mml:mo>=</mml:mo><mml:msubsup><mml:mo>∑</mml:mo><mml:mrow><mml:mi>i</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mi>n</mml:mi></mml:msubsup><mml:msub><mml:mi mathvariant="normal">Θ</mml:mi><mml:mi>i</mml:mi></mml:msub><mml:mo>,</mml:mo><mml:mspace width="1em"/><mml:mover accent="true"><mml:mi mathvariant="normal">Φ</mml:mi><mml:mo stretchy="false">~</mml:mo></mml:mover><mml:mo>=</mml:mo><mml:msubsup><mml:mo>∑</mml:mo><mml:mrow><mml:mi>j</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mi>m</mml:mi></mml:msubsup><mml:msub><mml:mi mathvariant="normal">Φ</mml:mi><mml:mi>j</mml:mi></mml:msub></mml:mrow></mml:math><graphic xlink:href="12859_2020_3877_Article_Equ8.gif" position="anchor"/></alternatives></disp-formula><disp-formula id="Equ9"><label>9</label><alternatives><tex-math id="M53">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\Delta_{\varepsilon 4} = {\tilde{\mathbf{\Theta }}} - {\tilde{\mathbf{\Phi }}} &lt; \varepsilon_{t} ,\quad \Delta_{non - \varepsilon 4} = {\tilde{\mathbf{\Phi }}} - {\tilde{\mathbf{\Theta }}} &lt; \varepsilon_{t} .$$\end{document}</tex-math><mml:math id="M54" display="block"><mml:mrow><mml:msub><mml:mi mathvariant="normal">Δ</mml:mi><mml:mrow><mml:mi>ε</mml:mi><mml:mn>4</mml:mn></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:mover accent="true"><mml:mi mathvariant="normal">Θ</mml:mi><mml:mo stretchy="false">~</mml:mo></mml:mover><mml:mo>-</mml:mo><mml:mover accent="true"><mml:mi mathvariant="normal">Φ</mml:mi><mml:mo stretchy="false">~</mml:mo></mml:mover><mml:mo>&lt;</mml:mo><mml:msub><mml:mi>ε</mml:mi><mml:mi>t</mml:mi></mml:msub><mml:mo>,</mml:mo><mml:mspace width="1em"/><mml:msub><mml:mi mathvariant="normal">Δ</mml:mi><mml:mrow><mml:mi>n</mml:mi><mml:mi>o</mml:mi><mml:mi>n</mml:mi><mml:mo>-</mml:mo><mml:mi>ε</mml:mi><mml:mn>4</mml:mn></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:mover accent="true"><mml:mi mathvariant="normal">Φ</mml:mi><mml:mo stretchy="false">~</mml:mo></mml:mover><mml:mo>-</mml:mo><mml:mover accent="true"><mml:mi mathvariant="normal">Θ</mml:mi><mml:mo stretchy="false">~</mml:mo></mml:mover><mml:mo>&lt;</mml:mo><mml:msub><mml:mi>ε</mml:mi><mml:mi>t</mml:mi></mml:msub><mml:mo>.</mml:mo></mml:mrow></mml:math><graphic xlink:href="12859_2020_3877_Article_Equ9.gif" position="anchor"/></alternatives></disp-formula></p>
+      </sec>
+    </sec>
+    <sec id="Sec11">
+      <title>Results</title>
+      <sec id="Sec12">
+        <title>Performance comparison</title>
+        <p id="Par44">Table <xref rid="Tab1" ref-type="table">1</xref> shows the significance (<italic>p</italic>-value of two-sample t-test) of group comparison results (APOE ε4 carriers vs non-carriers) using six network measures from three types of brain networks. From Table <xref rid="Tab1" ref-type="table">1</xref>, no statistically significant differences (<italic>p</italic> &gt; 0.05) were found in terms of LE, BET, GE, CCO, and PH-1, of the whole brain FC. But a significant difference in PH-0 were observed, <italic>p</italic> = 0.0244 &lt; 0.05, between APOE ε4 carriers and non-carriers. For the whole brain SC, one significant difference in PH-0 was found, <italic>p</italic> = 0.0081 &lt; 0.05, and the groups do not differ significantly in other measurements, which is similar to FC. Of note, for the SC, <italic>p</italic> values is lower than that in FC, which represents a more significant difference shown in SC. Especially, PH-1 shows a significant improvement relative to that in FC, and the result is marginally significant with <italic>p</italic> = 0.056. For the proposed multimodal brain network, our method outperforms the competing FC and SC. The statistically significant differences were found in LE (<italic>p</italic> = 0.0196), CCO (<italic>p</italic> = 0.0178), PH-0 (<italic>p</italic> = 0.0001), and PH-1 (<italic>p</italic> = 0.0321) between groups. We further quantified the subject-wise network differences using DWG and DBG for the FC, the SC, and the multimodal network (see Fig. <xref rid="Fig3" ref-type="fig">3</xref>) and performed a paired t-test between neighbor columns in each boxplot. We found that the PH metrics reflect the difference of networks better than graph metrics like LE, BET, GE, and CCO. That is to say, the DBG (green) between APOE ε4 carriers and non-carriers should be higher than the DWG within carriers (red) or DWG within non-carriers (blue).<table-wrap id="Tab1"><label>Table 1</label><caption><p>The significance (<italic>p</italic>-value of a two-sample t-test) of group comparison results (APOE ε4 carriers vs non-carriers) using six network measures from three types of brain networks</p></caption><table frame="hsides" rules="groups"><thead><tr><th align="left"/><th align="left">LE</th><th align="left">BET</th><th align="left">GE</th><th align="left">CCO</th><th align="left">PH-0</th><th align="left">PH-1</th></tr></thead><tbody><tr><td align="left">FC</td><td char="." align="char">0.4388</td><td char="." align="char">0.6570</td><td char="." align="char">0.9791</td><td char="." align="char">0.5022</td><td char="." align="char">0.0244</td><td char="." align="char">0.1562</td></tr><tr><td align="left">SC</td><td char="." align="char">0.0947</td><td char="." align="char">0.4632</td><td char="." align="char">0.1927</td><td char="." align="char">0.0526</td><td char="." align="char">0.0081</td><td char="." align="char">0.0560</td></tr><tr><td align="left">Proposed</td><td char="." align="char">0.0196</td><td char="." align="char">0.1469</td><td char="." align="char">0.2756</td><td char="." align="char">0.0178</td><td char="." align="char">0.0001</td><td char="." align="char">0.0321</td></tr></tbody></table><table-wrap-foot><p>The three types of brain networks include functional connectivity networks (FC), structural connectivity networks (SC), and the networks constructed using our proposed method (Proposed). The six network measures include local efficiency (LE), betweenness (BET), global efficiency (GE), clustering coefficient (CCO), and two PH measurements (PH-0 and PH-1)</p></table-wrap-foot></table-wrap><fig id="Fig3"><label>Fig. 3</label><caption><p>For <bold>a</bold> the functional connectivity, <bold>b</bold> the structural connectivity, and <bold>c</bold> the proposed multimodal brain connectivity, the distance between groups (DBG, in green) and the distance within group (DWG, ε4 group in red and non-ε4 group in blue) are given. We compared the persistent homology features and some graph theory metrics. A discriminative feature corresponds to a large DBG (green) against two small DWGs (red and blue). In addition, p<sub>L</sub> and p<sub>R</sub> represent the statistical significance using t-test between any columns, i.e. DWG (ε4) and DBG, DWG (non-ε4) and DBG, respectively</p></caption><graphic xlink:href="12859_2020_3877_Fig3_HTML" id="MO3"/></fig></p>
+      </sec>
+      <sec id="Sec13">
+        <title>The influence of regularizations</title>
+        <p id="Par45">We applied grid search to explore the influence of regularizations for statistical group analysis. From Fig. <xref rid="Fig4" ref-type="fig">4</xref>, the performances in LE, BET, GE, and CCO are irregular, which is because graph theory measurements have a strong parametric sensitivity for network structures. In addition, we found that when <italic>N</italic><sub><italic>λ</italic></sub> is small (<italic>N</italic><sub><italic>λ</italic></sub> = 100, 150, and 200), <italic>p</italic> values in PH-0 remain a relatively high level (lower significance level). With an increasing value of <italic>N</italic><sub><italic>λ</italic></sub>, <italic>p</italic> value achieves the best performance (<italic>p</italic> = 0.001) at <italic>N</italic><sub><italic>λ</italic></sub> = 350, and then shows a suboptimal performance again at <italic>N</italic><sub><italic>λ</italic></sub> = 400. For PH-1, the trend is almost similar to PH-1 that the best performance is received (<italic>p</italic> = 0.0321) at <italic>N</italic><sub><italic>λ</italic></sub> = 350. For <italic>λ</italic><sub>2</sub>, we found <italic>p</italic> value shows a growth trend firstly, and after achieving the optimization <italic>λ</italic><sub>2</sub> (0.5 and 0.7 for PH-0 and PH-1), the performance tends to decrease.<fig id="Fig4"><label>Fig. 4</label><caption><p>The statistical performance of different regularization parameters. For 0-dimensional features and 1-dimensional features, the candidate parameters for grid search are sampling number <italic>N</italic><sub><italic>λ</italic>1</sub> and regularization parameter <italic>λ</italic><sub>2</sub>. For other graph theory measurements, the candidate parameters are regularization parameter <italic>λ</italic><sub>1</sub> and <italic>λ</italic><sub>2</sub></p></caption><graphic xlink:href="12859_2020_3877_Fig4_HTML" id="MO4"/></fig></p>
+      </sec>
+      <sec id="Sec14">
+        <title>Connectivity pattern identification</title>
+        <p id="Par46">After obtaining the frequency network for every subject, we constructed the difference network between groups by the proposed connectivity pattern identification framework. Furthermore, we extracted the loops from each difference network corresponding to APOE ε4 group or non-ε4 group, where it totally has 40 loops for <bold><italic>Δ</italic></bold><sub>ε4</sub> and 35 loops for <bold><italic>Δ</italic></bold><sub><italic>non-</italic>ε4</sub>. In particular, we defined the number of edges forming the loops as a weight, and then selected the top 8 loops with the largest weights (see Additional file <xref rid="MOESM1" ref-type="media">1</xref>: Appendix S2). It is worth mentioning that the loop structures might not entirely appear in the brain network of each subject, but in just parts of them. Figure <xref rid="Fig5" ref-type="fig">5</xref> graphically illustrates that the extracted 8 loops for APOE ε4 carriers and non-carriers, respectively, where the red arcs represent the connections associated with the default mode network (DMN) that has been commonly regarded as AD-pathology related. The black arcs in Fig. <xref rid="Fig5" ref-type="fig">5</xref> denote the connections outside the DMN, which extends the previous studies of DMN to the whole brain level.<fig id="Fig5"><label>Fig. 5</label><caption><p>The specific connectivity for <bold>a</bold> APOE ε4 carriers, <bold>b</bold> APOE ε4 non-carriers, where red arcs represent the DMN-associated connections and black arcs extend the connections to whole brain</p></caption><graphic xlink:href="12859_2020_3877_Fig5_HTML" id="MO5"/></fig></p>
+      </sec>
+    </sec>
+    <sec id="Sec15">
+      <title>Discussion</title>
+      <sec id="Sec16">
+        <title>Efficacy of the multimodal modelling</title>
+        <p id="Par47">In this paper, we compared the rs-fMRI networks, the dw-MRI networks, and the multimodal networks. We found that there were no significant differences between APOE ε4 carriers and non-carriers in the graph measurements of the rs-fMRI and dw-MRI networks. But compared with the rs-fMRI networks, a relatively big difference was observed in the dw-MRI networks. This finding is consistent with prior studies [<xref ref-type="bibr" rid="CR6">6</xref>, <xref ref-type="bibr" rid="CR9">9</xref>, <xref ref-type="bibr" rid="CR34">34</xref>], which found that APOE <italic>ε</italic>4 carriers show relatively poorer SC than FC, involving disrupted white matter microstructural organization, smaller brain volumes, and lower regional SC in DMN. Furthermore, when integrating multimodal information from the rs-fMRI and dw-MRI data using our proposed framework, we observed a significant group difference in LE, CCO, PH-0, and PH-1. Although the same significant difference is observed in PH-0 for the FC, the SC, and the multimodal network, the proposed multimodal network showed the best performance (<italic>p</italic> = 0.0001). Our observation indicates that the multimodal network is more sensitive than either rs-fMRI or dw-MRI alone in exploring specific connectivity properties related to risk of Alzheimer's disease. This result demonstrates the advantage of multimodal integration using the dw-MRI connectivity to guide the fMRI-based network construction.</p>
+      </sec>
+      <sec id="Sec17">
+        <title>Efficacy of persistent homology</title>
+        <p id="Par48">We proposed a novel framework for quantifying network features using PH. The proposed framework integrates a group of brain networks with different sparsity levels, which avoids the uncertainty of regularization parameter selection. Moreover, instead of trying to obtain an unbiased estimate of connectivity strength, our method focused on the binary network structure rather than the weight-based connectivity network. Statistically, we found persistent homology features show more significant difference than other graph theory measurements at the group level. Especially, the PH-0 outperforms the PH-1 in statistical performance, which represents the connected components is more sensitive in encoding graph filtration than the topological cycle structures. After evaluating the subject-level difference using DWG and DBG, persistent homology features showed a better discriminating power than others. It is also worth noting that the DWG of APOE ε4 non-carriers should be larger than the DWG of the APOE ε4 carriers, i.e., the blue boxplot in Fig. <xref rid="Fig3" ref-type="fig">3</xref> is typically higher than the red one. This indicates that the carrier group appears more homogeneous than non-carrier group. Furthermore, the above patterns were detected only by the multimodal network with PH quantification, but not by any other studied methods. A similar approach fusing persistent homology and sparse representation has been used by [<xref ref-type="bibr" rid="CR14">14</xref>] for characterizing the abnormality of white matter network, but they investigated a sparse version of pair-wise ROI correlation, rather than multiple co-activated ROIs, and explore the single modality rather than multiple modalities.</p>
+      </sec>
+      <sec id="Sec18">
+        <title>Efficacy of regularizations</title>
+        <p id="Par49">Brain networks corresponding to various combinations of <italic>l</italic><sub>1</sub>-regularization parameter <italic>λ</italic><sub>1</sub> and fused Lasso parameter <italic>λ</italic><sub>2</sub> have different sparsity levels, leading to a variety of different results. The bigger the <italic>l</italic><sub>1</sub>-norm regularization parameter, the lower nonzero ratio will be obtained for brain network. Different from <italic>l</italic><sub>1</sub>-norm regularization parameter, the fused Lasso parameter handles the feature collinearity for improved stability. By grid search to adjust the two parameters, the best combination of parameters can improve the results of statistical analysis. This demonstrates the effectiveness of searching the parameters to characterize the APOE ε4-related network difference.</p>
+      </sec>
+      <sec id="Sec19">
+        <title>The evaluation of specific connectivity</title>
+        <p id="Par50">The significant decrease in brain connectivity caused by AD could modularize regional brain atrophy. On the other hand, brain regions involved in a topological cycle with long persistence are potentially located in relatively independent modules in the brain network. The <bold><italic>frequency network</italic></bold> aims to record the frequent edges in a group of cycles, because the frequent edges could connect to the atrophied brain regions in APOE <italic>ε</italic>4 carriers with a higher probability. The <bold><italic>difference network</italic></bold> specializes these frequent edges. We further extracted the specific loops structures from the difference network as the results of connectivity pattern identification. After evaluating these loop structures, we found brain regions in APOE <italic>ε</italic>4 carriers mostly refer to the interconnection within the DMN than non-carriers. Especially, we found that compared with non-carriers, APOE <italic>ε</italic>4 carriers exhibit one cluster involving the connections between left temporal gyrus and right temporal gyrus, mainly focusing on left middle temporal gyrus, left superior temporal gyrus, right superior temporal gyrus, right middle temporal gyrus, right inferior temporal gyrus. Moreover, APOE <italic>ε</italic>4 carriers show the specific connectivity within a sub-network centering on the left hippocampus, extending into left/right cuneus, left/right superior occipital gyrus, right precuneus, left Inferior parietal lobule, left middle temporal gyrus, right temporal pole middle gyrus, right superior temporal gyrus, right thalamus, and left superior frontal gyrus (medial orbital). These results were founded to be associated with brain network of APOE <italic>ε</italic>4 carriers in previous researches [<xref ref-type="bibr" rid="CR6">6</xref>, <xref ref-type="bibr" rid="CR8">8</xref>, <xref ref-type="bibr" rid="CR35">35</xref>], and further indicate the effectiveness of the proposed connectivity pattern identification method.</p>
+      </sec>
+      <sec id="Sec20">
+        <title>Limitation and future directions</title>
+        <p id="Par51">Of note, in this study, there are two limitations needing to be improved next for the proposed method. First, our method could identify cycles consisting of the greatly changed brain regions, rather than mildly changed regions. Because significant edges between regions as the modulator have a longer persistent interval in graph filtration, which can be easy to observe using PH. This limitation may potentially influence the result of connectivity pattern identification. Second, a relatively small number of subjects remains a problem for statistical analysis. In the future, we will improve the performance of structure identification using a more specific brain partition and validate our framework on a larger dataset.</p>
+      </sec>
+    </sec>
+    <sec id="Sec21">
+      <title>Conclusions</title>
+      <p id="Par52">In this study, we have proposed a novel multimodal brain network modeling framework for identifying the APOE ε4-related differences in the brain connectome. To integrate brain network information of different sparsity levels as well as avoid extra connectivity strength estimation, we have introduced persistent homology (PH) to quantify the individual network. Experimental results on the ADNI database demonstrated that the proposed framework could generate multimodal brain networks with great discriminative power. Moreover, the persistent homology features outperformed other measurements when quantifying APOE ε4-related network differences. In addition, the specific connectivity pattern could be obtained by encoding the 1-dimensional features of PH. These specific structures were consistent with previous results in DMN and expanded DMN to whole brain connectivity. These findings suggest that the proposed method not only improves the statistical performance between APOE ε4 carriers and non-carriers, but also characterizes the interaction effects between brain connectivity and APOE ε4.</p>
+    </sec>
+    <sec sec-type="supplementary-material">
+      <title>Supplementary information</title>
+      <sec id="Sec22">
+        <p>
+<supplementary-material content-type="local-data" id="MOESM1"><media xlink:href="12859_2020_3877_MOESM1_ESM.pdf"><caption><p><bold>Additional file 1.</bold> The permutation test workflow and the identified disease-specific connectivity pattern.</p></caption></media></supplementary-material></p>
+      </sec>
+    </sec>
+  </body>
+  <back>
+    <glossary>
+      <title>Abbreviations</title>
+      <def-list>
+        <def-item>
+          <term>AD</term>
+          <def>
+            <p id="Par4">Alzheimer’s disease</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>APOE</term>
+          <def>
+            <p id="Par5">Apolipoprotein E</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>rs-fMRI</term>
+          <def>
+            <p id="Par6">Resting state functional magnetic resonance imaging</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>dw-MRI</term>
+          <def>
+            <p id="Par7">Diffusion-weighted magnetic resonance imaging</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>DMN</term>
+          <def>
+            <p id="Par8">Default mode network</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>Lasso</term>
+          <def>
+            <p id="Par9">Least absolute shrinkage and selection operator</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>PH</term>
+          <def>
+            <p id="Par10">Persistent homology</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>SC</term>
+          <def>
+            <p id="Par11">Structural connectivity</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>FC</term>
+          <def>
+            <p id="Par12">Functional connectivity</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>TE</term>
+          <def>
+            <p id="Par13">Echo time</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>TR</term>
+          <def>
+            <p id="Par14">Repetition time</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>FA</term>
+          <def>
+            <p id="Par15">Filp angle</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>PH-0</term>
+          <def>
+            <p id="Par16">0-Dimensional features of persistent homology</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>PH-1</term>
+          <def>
+            <p id="Par17">1-Dimensional features of persistent homology</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>LE</term>
+          <def>
+            <p id="Par18">Local efficiency</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>BET</term>
+          <def>
+            <p id="Par19">Betweenness</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>GE</term>
+          <def>
+            <p id="Par20">Global efficiency</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>CCO</term>
+          <def>
+            <p id="Par21">Clustering coefficiency</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>DWG</term>
+          <def>
+            <p id="Par22">Distances within group</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>DBG</term>
+          <def>
+            <p id="Par23">Distances between groups</p>
+          </def>
+        </def-item>
+      </def-list>
+    </glossary>
+    <fn-group>
+      <fn>
+        <p>
+          <bold>Publisher's Note</bold>
+        </p>
+        <p>Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.</p>
+      </fn>
+    </fn-group>
+    <sec>
+      <title>Supplementary information</title>
+      <p><bold>Supplementary information</bold> accompanies this paper at 10.1186/s12859-020-03877-9.</p>
+    </sec>
+    <ack>
+      <title>Acknowledgements</title>
+      <p>Data collection and sharing for this project was funded by the Alzheimer's Disease Neuroimaging Initiative (ADNI) (National Institutes of Health Grant U01 AG024904) and DOD ADNI (Department of Defense Award No. W81XWH-12-2-0012). ADNI is funded by the National Institute on Aging, the National Institute of Biomedical Imaging and Bioengineering, and through generous contributions from the following: AbbVie, Alzheimer's Association; Alzheimer's Drug Discovery Foundation; Araclon Biotech; BioClinica, Inc.; Biogen; Bristol-Myers Squibb Company; CereSpir, Inc.; Eisai Inc.; Elan Pharmaceuticals, Inc.; Eli Lilly and Company; EuroImmun; F. Hoffmann-La Roche Ltd and its affiliated company Genentech, Inc.; Fujirebio; GE Healthcare; IXICO Ltd.; Janssen Alzheimer Immunotherapy Research &amp; Development, LLC.; Johnson &amp; Johnson Pharmaceutical Research &amp; Development LLC.; Lumosity; Lundbeck; Merck &amp; Co., Inc.; Meso Scale Diagnostics, LLC.; NeuroRx Research; Neurotrack Technologies; Novartis Pharmaceuticals Corporation; Pfizer Inc.; Piramal Imaging; Servier; Takeda Pharmaceutical Company; and Transition Therapeutics. The Canadian Institutes of Health Research is providing funds to support ADNI clinical sites in Canada. Private sector contributions are facilitated by the Foundation for the National Institutes of Health (<ext-link ext-link-type="uri" xlink:href="http://www.fnih.org">www.fnih.org</ext-link>). The grantee organization is the Northern California Institute for Research and Education, and the study is coordinated by the Alzheimer's Disease Cooperative Study at the University of California, San Diego. ADNI data are disseminated by the Laboratory for Neuro Imaging at the University of Southern California.</p>
+      <p>Data used in preparation of this article were obtained from the Alzheimer’s Disease Neuroimaging Initiative (ADNI) database (<ext-link ext-link-type="uri" xlink:href="https://www.adni.loni.usc.edu">adni.loni.usc.edu</ext-link>). As such, the investigators within the ADNI contributed to the design and implementation of ADNI and/or provided data but did not participate in analysis or writing of this report. A complete listing of ADNI investigators can be found at: <ext-link ext-link-type="uri" xlink:href="http://adni.loni.usc.edu/wp-content/uploads/how_to_apply/ADNI_Acknowledgement_List.pdf">http://adni.loni.usc.edu/wp-content/uploads/how_to_apply/ADNI_Acknowledgement_List.pdf</ext-link>.</p>
+      <sec id="d30e3283">
+        <title>About this supplement</title>
+        <p id="Par53">This article has been published as part of BMC Bioinformatics Volume 21 Supplement 21 2020: Accelerating Bioinformatics Research with ICIBM 2020. The full contents of the supplement are available at <ext-link ext-link-type="uri" xlink:href="https://bmcbioinformatics.biomedcentral.com/articles/supplements/volume21-supplement-21">https://bmcbioinformatics.biomedcentral.com/articles/supplements/volume21-supplement-21</ext-link>.</p>
+      </sec>
+    </ack>
+    <notes notes-type="author-contribution">
+      <title>Authors’ contributions</title>
+      <p>JL, LS, and CB proposed the frame and designed the analysis procedures. CB and LS implemented methods and wrote an initial draft. XM and HL(1) did the literature survey and contributed to the data preparation. CB and HL(2) conducted the experiments. LS, CB, and DC commented the draft and revised the manuscript. All the authors read and approved the final manuscript. Data used in preparation of this article were obtained from the Alzheimer’s Disease Neuroimaging Initiative (ADNI) database (adni.loni.usc.edu). As such, the investigators within the ADNI contributed to the design and implementation of ADNI and/or provided data but did not participate in analysis or writing of this report. All authors read and approved the final manuscript.</p>
+    </notes>
+    <notes notes-type="funding-information">
+      <title>Funding</title>
+      <p>Publication costs are funded by the National Natural Science Foundation of China (61773134 and 61803117), the Natural Science Foundation of Heilongjiang Province of China (YQ2019F003), the Fundamental Research Funds for the Central Universities (3072020CF0402) at Harbin Engineering University. This work was also supported in part by the National Institutes of Health (R01 EB022574) at University of Pennsylvania.</p>
+    </notes>
+    <notes notes-type="data-availability">
+      <title>Availability of data and materials</title>
+      <p>Data used in the preparation of this article were obtained from the ADNI database (adni.loni.usc.edu). The ADNI was launched in 2003 as a public–private partnership, led by Principal Investigator Michael W. Weiner, MD. The primary goal of ADNI has been to test whether serial magnetic resonance imaging (MRI), positron emission tomography (PET), other biological markers, and clinical and neuropsychological assessment can be combined to measure the progression of MCI and early AD.</p>
+    </notes>
+    <notes id="FPar1">
+      <title>Ethics approval and consent to participate</title>
+      <p id="Par54">The study procedures were approved by the institutional review boards of all participating centers (<ext-link ext-link-type="uri" xlink:href="https://adni.loni.usc.edu/wp-content/uploads/how_to_apply/ADNI_Acknowledgement_List.pdf">https://adni.loni.usc.edu/wp-content/uploads/how_to_apply/ADNI_Acknowledgement_List.pdf</ext-link>), and written informed consent was obtained from all participants or their authorized representatives. Ethics approval was obtained from the institutional review boards of each institution involved: Oregon Health and Science University; University of Southern California; University of California—San Diego; University of Michigan; Mayo Clinic, Rochester; Baylor College of Medicine; Columbia University Medical Center; Washington University, St. Louis; University of Alabama at Birmingham; Mount Sinai School of Medicine; Rush University Medical Center; Wien Center; Johns Hopkins University; New York University; Duke University Medical Center; University of Pennsylvania; University of Kentucky; University of Pittsburgh; University of Rochester Medical Center; University of California, Irvine; University of Texas Southwestern Medical School; Emory University; University of Kansas, Medical Center; University of California, Los Angeles; Mayo Clinic, Jacksonville; Indiana University; Yale University School of Medicine; McGill University, Montreal-Jewish General Hospital; Sunnybrook Health Sciences, Ontario; U.B.C. Clinic for AD &amp; Related Disorders; Cognitive Neurology—St. Joseph’s, Ontario; Cleveland Clinic Lou Ruvo Center for Brain Health; Northwestern University; Premiere Research Inst (Palm Beach Neurology); Georgetown University Medical Center; Brigham and Women’s Hospital; Stanford University; Banner Sun Health Research Institute; Boston University; Howard University; Case Western Reserve University; University of California, Davis—Sacramento; Neurological Care of CNY; Parkwood Hospital; University of Wisconsin; University of California, Irvine—BIC; Banner Alzheimer’s Institute; Dent Neurologic Institute; Ohio State University; Albany Medical College; Hartford Hospital, Olin Neuropsychiatry Research Center; Dartmouth-Hitchcock Medical Center; Wake Forest University Health Sciences; Rhode Island Hospital; Butler Hospital; UC San Francisco; Medical University South Carolina; St. Joseph’s Health Care Nathan Kline Institute; University of Iowa College of Medicine; Cornell University; and University of South Florida: USF Health Byrd Alzheimer’s Institute.</p>
+    </notes>
+    <notes id="FPar2">
+      <title>Consent for publication</title>
+      <p id="Par55">Not applicable.</p>
+    </notes>
+    <notes id="FPar3" notes-type="COI-statement">
+      <title>Competing interests</title>
+      <p id="Par56">The authors declare that they have no competing interests.</p>
+    </notes>
+    <ref-list id="Bib1">
+      <title>References</title>
+      <ref id="CR1">
+        <label>1.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Klaassens</surname>
+              <given-names>BL</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Cholinergic and serotonergic modulation of resting state functional brain connectivity in Alzheimer's disease</article-title>
+          <source>Neuroimage</source>
+          <year>2019</year>
+          <volume>199</volume>
+          <fpage>143</fpage>
+          <lpage>152</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2019.05.044</pub-id>
+          <pub-id pub-id-type="pmid">31112788</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR2">
+        <label>2.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Agosta</surname>
+              <given-names>F</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Resting state fMRI in Alzheimer's disease: beyond the default mode network</article-title>
+          <source>Neurobiol Aging</source>
+          <year>2012</year>
+          <volume>33</volume>
+          <issue>8</issue>
+          <fpage>1564</fpage>
+          <lpage>1578</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neurobiolaging.2011.06.007</pub-id>
+          <pub-id pub-id-type="pmid">21813210</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR3">
+        <label>3.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chang</surname>
+              <given-names>YT</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>APOE-MS4A genetic interactions are associated with executive dysfunction and network abnormality in clinically mild Alzheimer's disease</article-title>
+          <source>NeuroImage Clin</source>
+          <year>2019</year>
+          <volume>21</volume>
+          <fpage>1</fpage>
+        </element-citation>
+      </ref>
+      <ref id="CR4">
+        <label>4.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bussy</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Snider</surname>
+              <given-names>BJ</given-names>
+            </name>
+            <name>
+              <surname>Coble</surname>
+              <given-names>D</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Effect of Apolipoprotein E4 on clinical, neuroimaging and biomarker measures in non-carrier participants in the Dominantly Inherited Alzheimer Network</article-title>
+          <source>Neurobiol Aging</source>
+          <year>2019</year>
+          <volume>75</volume>
+          <fpage>42</fpage>
+          <lpage>50</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neurobiolaging.2018.10.011</pub-id>
+          <pub-id pub-id-type="pmid">30530186</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR5">
+        <label>5.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Andrews</surname>
+              <given-names>JR</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Functional-anatomic fractionation of the Brain's default network</article-title>
+          <source>Neuron</source>
+          <year>2010</year>
+          <volume>65</volume>
+          <issue>4</issue>
+          <fpage>550</fpage>
+          <lpage>562</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuron.2010.02.005</pub-id>
+          <pub-id pub-id-type="pmid">20188659</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR6">
+        <label>6.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Korthauer</surname>
+              <given-names>LE</given-names>
+            </name>
+            <name>
+              <surname>Zhan</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Ajilore</surname>
+              <given-names>O</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Disrupted topology of the resting state structural connectome in middle-aged, APOE, ε4 carriers</article-title>
+          <source>Neuroimage</source>
+          <year>2018</year>
+          <volume>178</volume>
+          <fpage>295</fpage>
+          <lpage>305</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2018.05.052</pub-id>
+          <pub-id pub-id-type="pmid">29803958</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR7">
+        <label>7.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Shen</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Thompson</surname>
+              <given-names>PM</given-names>
+            </name>
+          </person-group>
+          <article-title>Brain imaging genomics: integrated analysis and machine learning</article-title>
+          <source>Proc IEEE.</source>
+          <year>2020</year>
+          <volume>108</volume>
+          <fpage>125</fpage>
+          <lpage>162</lpage>
+          <pub-id pub-id-type="doi">10.1109/JPROC.2019.2947272</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR8">
+        <label>8.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Patrizia</surname>
+              <given-names>AC</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Differential default mode network trajectories in asymptomatic individuals at risk for Alzheimer's disease</article-title>
+          <source>Alzheimer’s Dement</source>
+          <year>2019</year>
+          <volume>15</volume>
+          <fpage>940</fpage>
+          <lpage>950</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.jalz.2019.03.006</pub-id>
+          <pub-id pub-id-type="pmid">31113760</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR9">
+        <label>9.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Pietzuch</surname>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The influence of genetic factors and cognitive reserve on structural and functional resting-state brain networks in aging and Alzheimer's disease</article-title>
+          <source>Front Aging Neurosci</source>
+          <year>2019</year>
+          <volume>11</volume>
+          <fpage>1</fpage>
+          <pub-id pub-id-type="doi">10.3389/fnagi.2019.00030</pub-id>
+          <pub-id pub-id-type="pmid">30740048</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR10">
+        <label>10.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dawei</surname>
+              <given-names>W</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>KIBRA and APOE gene variants affect brain functional network connectivity in healthy older people</article-title>
+          <source>J Gerontolo Ser A</source>
+          <year>2020</year>
+          <volume>11</volume>
+          <fpage>11</fpage>
+        </element-citation>
+      </ref>
+      <ref id="CR11">
+        <label>11.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cai</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Zille</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Stephen</surname>
+              <given-names>JM</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Estimation of dynamic sparse connectivity patterns from resting state fMRI</article-title>
+          <source>IEEE Trans Med Imaging</source>
+          <year>2018</year>
+          <volume>37</volume>
+          <issue>5</issue>
+          <fpage>1224</fpage>
+          <lpage>1234</lpage>
+          <pub-id pub-id-type="doi">10.1109/TMI.2017.2786553</pub-id>
+          <pub-id pub-id-type="pmid">29727285</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR12">
+        <label>12.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yu</surname>
+              <given-names>RP</given-names>
+            </name>
+            <name>
+              <surname>Qiao</surname>
+              <given-names>LS</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Weighted graph regularized sparse brain network construction for MCI identification</article-title>
+          <source>Pattern Recogn</source>
+          <year>2019</year>
+          <volume>90</volume>
+          <fpage>220</fpage>
+          <lpage>231</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.patcog.2019.01.015</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR13">
+        <label>13.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Peng</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Xiaoli</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Hezi</surname>
+              <given-names>L</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Generalized fused group Lasso regularized multi-task feature learning for predicting cognitive outcomes in Alzheimers disease</article-title>
+          <source>Comput Methods Programs Biomed</source>
+          <year>2018</year>
+          <volume>162</volume>
+          <fpage>19</fpage>
+          <lpage>45</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.cmpb.2018.04.028</pub-id>
+          <pub-id pub-id-type="pmid">29903486</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR14">
+        <label>14.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chung</surname>
+              <given-names>MK</given-names>
+            </name>
+            <name>
+              <surname>Hanson</surname>
+              <given-names>JL</given-names>
+            </name>
+            <name>
+              <surname>Ye</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Davidson</surname>
+              <given-names>RJ</given-names>
+            </name>
+            <name>
+              <surname>Pollak</surname>
+              <given-names>SD</given-names>
+            </name>
+          </person-group>
+          <article-title>Persistent homology in sparse regression and its application to brain morphometry</article-title>
+          <source>IEEE Trans Med Imag</source>
+          <year>2015</year>
+          <volume>34</volume>
+          <issue>9</issue>
+          <fpage>1928</fpage>
+          <lpage>1939</lpage>
+          <pub-id pub-id-type="doi">10.1109/TMI.2015.2416271</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR15">
+        <label>15.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Li</surname>
+              <given-names>Y</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Novel effective connectivity inference using ultra-group constrained orthogonal forward regression and elastic multilayer perceptron classifier for MCI identification</article-title>
+          <source>IEEE Trans Med Imaging</source>
+          <year>2019</year>
+          <volume>38</volume>
+          <issue>5</issue>
+          <fpage>1227</fpage>
+          <lpage>1239</lpage>
+          <pub-id pub-id-type="doi">10.1109/TMI.2018.2882189</pub-id>
+          <pub-id pub-id-type="pmid">30475714</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR16">
+        <label>16.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bubenik</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Kim</surname>
+              <given-names>PT</given-names>
+            </name>
+          </person-group>
+          <article-title>A statistical approach to persistent homology</article-title>
+          <source>Homology Homotopy and Applications</source>
+          <year>2007</year>
+          <volume>9</volume>
+          <issue>2</issue>
+          <fpage>337</fpage>
+          <lpage>362</lpage>
+          <pub-id pub-id-type="doi">10.4310/HHA.2007.v9.n2.a12</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR17">
+        <label>17.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Stolz</surname>
+              <given-names>BJ</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Persistent homology of time-dependent functional networks constructed from coupled time series</article-title>
+          <source>Chaos</source>
+          <year>2017</year>
+          <volume>27</volume>
+          <issue>4</issue>
+          <fpage>047410</fpage>
+          <pub-id pub-id-type="doi">10.1063/1.4978997</pub-id>
+          <pub-id pub-id-type="pmid">28456167</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR18">
+        <label>18.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kuang</surname>
+              <given-names>LQ</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>A concise and persistent feature to study brain resting-state network dynamics: Findings from the Alzheimer's Disease Neuroimaging Initiative</article-title>
+          <source>Hum Brain Mapp</source>
+          <year>2019</year>
+          <volume>40</volume>
+          <issue>4</issue>
+          <fpage>1062</fpage>
+          <lpage>1081</lpage>
+          <pub-id pub-id-type="doi">10.1002/hbm.24383</pub-id>
+          <pub-id pub-id-type="pmid">30569583</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR19">
+        <label>19.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lee</surname>
+              <given-names>H</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Persistent brain network homology from the perspective of dendrogram</article-title>
+          <source>IEEE Trans Med Imaging</source>
+          <year>2012</year>
+          <volume>31</volume>
+          <issue>12</issue>
+          <fpage>2267</fpage>
+          <lpage>2277</lpage>
+          <pub-id pub-id-type="doi">10.1109/TMI.2012.2219590</pub-id>
+          <pub-id pub-id-type="pmid">23008247</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR20">
+        <label>20.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhang</surname>
+              <given-names>Y</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Strength and similarity guided group-level brain functional network construction for MCI diagnosis</article-title>
+          <source>Pattern Recogn</source>
+          <year>2019</year>
+          <volume>88</volume>
+          <fpage>421</fpage>
+          <lpage>430</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.patcog.2018.12.001</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR21">
+        <label>21.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Li</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Multimodal hyper-connectivity of functional networks using functionally-weighted LASSO for MCI classification</article-title>
+          <source>Med Image Anal</source>
+          <year>2019</year>
+          <volume>52</volume>
+          <fpage>80</fpage>
+          <lpage>96</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.media.2018.11.006</pub-id>
+          <pub-id pub-id-type="pmid">30472348</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR22">
+        <label>22.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Pinedapardo</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Bruña</surname>
+              <given-names>R</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Guiding functional connectivity estimation by structural connectivity in MEG: an application to discrimination of conditions of mild cognitive impairment</article-title>
+          <source>Neuroimage</source>
+          <year>2014</year>
+          <volume>101</volume>
+          <fpage>765</fpage>
+          <lpage>777</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2014.08.002</pub-id>
+          <pub-id pub-id-type="pmid">25111472</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR23">
+        <label>23.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Qi</surname>
+              <given-names>S</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Multimodal fusion with reference: searching for joint neuromarkers of working memory deficits in schizophrenia</article-title>
+          <source>IEEE Trans Med Imaging</source>
+          <year>2018</year>
+          <volume>37</volume>
+          <issue>1</issue>
+          <fpage>93</fpage>
+          <lpage>105</lpage>
+          <pub-id pub-id-type="doi">10.1109/TMI.2017.2725306</pub-id>
+          <pub-id pub-id-type="pmid">28708547</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR24">
+        <label>24.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yan</surname>
+              <given-names>CG</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>DPABI: data processing and analysis for (resting-state) brain imaging</article-title>
+          <source>Neuroinformatics</source>
+          <year>2016</year>
+          <volume>14</volume>
+          <issue>3</issue>
+          <fpage>339</fpage>
+          <lpage>351</lpage>
+          <pub-id pub-id-type="doi">10.1007/s12021-016-9299-4</pub-id>
+          <pub-id pub-id-type="pmid">27075850</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR25">
+        <label>25.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cui</surname>
+              <given-names>ZX</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>PANDA: a pipeline toolbox for analyzing brain diffusion images</article-title>
+          <source>Front Hum Neurosci</source>
+          <year>2013</year>
+          <volume>7</volume>
+          <fpage>42</fpage>
+          <lpage>52</lpage>
+          <pub-id pub-id-type="pmid">23439846</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR26">
+        <label>26.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zomorodian</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Carlsson</surname>
+              <given-names>G</given-names>
+            </name>
+          </person-group>
+          <article-title>Computing persistent homology</article-title>
+          <source>Discrete Comput Geom</source>
+          <year>2005</year>
+          <volume>33</volume>
+          <fpage>249</fpage>
+          <lpage>274</lpage>
+          <pub-id pub-id-type="doi">10.1007/s00454-004-1146-y</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR27">
+        <label>27.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Xia</surname>
+              <given-names>KL</given-names>
+            </name>
+          </person-group>
+          <article-title>Persistent homology analysis of ion aggregations and hydrogen-bonding networks</article-title>
+          <source>Phys Chem Chem Phys</source>
+          <year>2018</year>
+          <volume>20</volume>
+          <issue>19</issue>
+          <fpage>13448</fpage>
+          <lpage>13460</lpage>
+          <pub-id pub-id-type="doi">10.1039/C8CP01552J</pub-id>
+          <pub-id pub-id-type="pmid">29722784</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR28">
+        <label>28.</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <collab>Ramsay and Silverman</collab>
+          </person-group>
+          <source>Functional data analysis</source>
+          <year>2005</year>
+          <publisher-loc>New York</publisher-loc>
+          <publisher-name>Springer</publisher-name>
+        </element-citation>
+      </ref>
+      <ref id="CR29">
+        <label>29.</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Graves</surname>
+              <given-names>S</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <source>Functional data analysis</source>
+          <year>2009</year>
+          <publisher-loc>New York</publisher-loc>
+          <publisher-name>Springer</publisher-name>
+        </element-citation>
+      </ref>
+      <ref id="CR30">
+        <label>30.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cassidy</surname>
+              <given-names>B</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>On the reliability of individual brain activity networks</article-title>
+          <source>IEEE Trans Med Imaging</source>
+          <year>2018</year>
+          <volume>37</volume>
+          <issue>2</issue>
+          <fpage>649</fpage>
+          <lpage>662</lpage>
+          <pub-id pub-id-type="doi">10.1109/TMI.2017.2774364</pub-id>
+          <pub-id pub-id-type="pmid">29408792</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR31">
+        <label>31.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bubenik</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <article-title>Statistical topological data analysis using persistence landscapes</article-title>
+          <source>J Mach Learn Res</source>
+          <year>2015</year>
+          <volume>16</volume>
+          <fpage>77</fpage>
+          <lpage>102</lpage>
+        </element-citation>
+      </ref>
+      <ref id="CR32">
+        <label>32.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bubenik</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Dlotko</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <article-title>A persistence landscapes toolbox for topological statistics</article-title>
+          <source>J Symb Comput</source>
+          <year>2017</year>
+          <volume>78</volume>
+          <fpage>91</fpage>
+          <lpage>114</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.jsc.2016.03.009</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR33">
+        <label>33.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bullmore</surname>
+              <given-names>ET</given-names>
+            </name>
+            <name>
+              <surname>Sporns</surname>
+              <given-names>O</given-names>
+            </name>
+          </person-group>
+          <article-title>Complex brain networks: graph theoretical analysis of structural and functional systems</article-title>
+          <source>Nat Rev Neurosci</source>
+          <year>2009</year>
+          <volume>10</volume>
+          <issue>3</issue>
+          <fpage>186</fpage>
+          <lpage>198</lpage>
+          <pub-id pub-id-type="doi">10.1038/nrn2575</pub-id>
+          <pub-id pub-id-type="pmid">19190637</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR34">
+        <label>34.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhangjia</surname>
+              <given-names>D</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Disrupted structural and functional brain networks in Alzheimer’s disease</article-title>
+          <source>Neurobiol Aging</source>
+          <year>2019</year>
+          <volume>75</volume>
+          <fpage>71</fpage>
+          <lpage>82</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neurobiolaging.2018.11.005</pub-id>
+          <pub-id pub-id-type="pmid">30553155</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR35">
+        <label>35.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Luo</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>K</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Altered effective connectivity anchored in the posterior cingulate cortex and the medial prefrontal cortex in cognitively intact elderly APOE ε4 carriers: a preliminary study</article-title>
+          <source>Brain Imaging Behav</source>
+          <year>2018</year>
+          <volume>13</volume>
+          <fpage>270</fpage>
+          <lpage>282</lpage>
+          <pub-id pub-id-type="doi">10.1007/s11682-018-9857-5</pub-id>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

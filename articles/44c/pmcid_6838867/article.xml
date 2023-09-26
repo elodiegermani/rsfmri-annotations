@@ -1,0 +1,1505 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="methods-article">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">Front Neurol</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Front Neurol</journal-id>
+      <journal-id journal-id-type="publisher-id">Front. Neurol.</journal-id>
+      <journal-title-group>
+        <journal-title>Frontiers in Neurology</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1664-2295</issn>
+      <publisher>
+        <publisher-name>Frontiers Media S.A.</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">31736850</article-id>
+      <article-id pub-id-type="pmc">6838867</article-id>
+      <article-id pub-id-type="doi">10.3389/fneur.2019.01105</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Neurology</subject>
+          <subj-group>
+            <subject>Methods</subject>
+          </subj-group>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>A Distance-Based Neurorehabilitation Evaluation Method Using Linear SVM and Resting-State fMRI</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Ge</surname>
+            <given-names>Yunxiang</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <uri xlink:type="simple" xlink:href="http://loop.frontiersin.org/people/724907/overview"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Pan</surname>
+            <given-names>Yu</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+          <xref ref-type="corresp" rid="c002">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Wu</surname>
+            <given-names>Qiong</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+          <uri xlink:type="simple" xlink:href="http://loop.frontiersin.org/people/624873/overview"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Dou</surname>
+            <given-names>Weibei</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="corresp" rid="c001">
+            <sup>*</sup>
+          </xref>
+          <uri xlink:type="simple" xlink:href="http://loop.frontiersin.org/people/767443/overview"/>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1"><sup>1</sup><institution>Department of Electronic Engineering, Tsinghua University</institution>, <addr-line>Beijing</addr-line>, <country>China</country></aff>
+      <aff id="aff2"><sup>2</sup><institution>Beijing National Research Center for Information Science and Technology (BNRist)</institution>, <addr-line>Beijing</addr-line>, <country>China</country></aff>
+      <aff id="aff3"><sup>3</sup><institution>School of Clinical Medicine, Tsinghua University</institution>, <addr-line>Beijing</addr-line>, <country>China</country></aff>
+      <aff id="aff4"><sup>4</sup><institution>Department of Rehabilitation, Beijing Tsinghua Changgung Hospital</institution>, <addr-line>Beijing</addr-line>, <country>China</country></aff>
+      <author-notes>
+        <fn fn-type="edited-by">
+          <p>Edited by: Carol Di Perri, University of Edinburgh, United Kingdom</p>
+        </fn>
+        <fn fn-type="edited-by">
+          <p>Reviewed by: Carlo Cavaliere, Institute of Research and Medical Care (IRCCS) SDN, Italy; Ling-Li Zeng, National University of Defense Technology, China</p>
+        </fn>
+        <corresp id="c001">*Correspondence: Weibei Dou <email>douwb@tsinghua.edu.cn</email></corresp>
+        <corresp id="c002">Yu Pan <email>py10335@163.com</email></corresp>
+        <fn fn-type="other" id="fn001">
+          <p>This article was submitted to Neurorehabilitation, a section of the journal Frontiers in Neurology</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="epub">
+        <day>01</day>
+        <month>11</month>
+        <year>2019</year>
+      </pub-date>
+      <pub-date pub-type="collection">
+        <year>2019</year>
+      </pub-date>
+      <volume>10</volume>
+      <elocation-id>1105</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>12</day>
+          <month>7</month>
+          <year>2019</year>
+        </date>
+        <date date-type="accepted">
+          <day>02</day>
+          <month>10</month>
+          <year>2019</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Copyright © 2019 Ge, Pan, Wu and Dou.</copyright-statement>
+        <copyright-year>2019</copyright-year>
+        <copyright-holder>Ge, Pan, Wu and Dou</copyright-holder>
+        <license xlink:href="http://creativecommons.org/licenses/by/4.0/">
+          <license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY). The use, distribution or reproduction in other forums is permitted, provided the original author(s) and the copyright owner(s) are credited and that the original publication in this journal is cited, in accordance with accepted academic practice. No use, distribution or reproduction is permitted which does not comply with these terms.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>During neurorehabilitation, clinical measurements are widely adopted to evaluate behavioral improvements after treatment. However, it is not able to identify or monitor the change of central nervous system (CNS) of each individual patient. Resting-state functional magnetic resonance imaging (rs-fMRI) has been widely used to investigate brain functions in healthy controls (HCs) and patients with neurological diseases, which could find functional changes following neurorehabilitation. In this paper, a distance-based rehabilitation evaluation method based on rs-fMRI was proposed. Specifically, we posit that in the functional connectivity (FC) space, patients and HCs distribute separately. Linear support vector machines (SVM) were trained on the brain networks to firstly separate patients from HCs. Second, the FC similarity between patients and HCs was measured by the L2 distance of each subject's feature vector to the separating hyperplane. Finally, statistical analysis of the distance revealed rehabilitation program induced improvements in patients and predicted rehabilitation outcomes. An rs-fMRI dataset with 22 HCs and 18 spinal cord injury (SCI) patients was utilized to validate our method. We built whole-brain networks using five atlases to test the robustness of the method and search for features under different node resolutions. The classifier successfully separated patients and HCs. Significant improvements in FC after treatment were found for the patients for all five atlases using the proposed method, which was consistent with clinical measurements. Furthermore, distance obtained from individual patient's longitudinal data showed a similar trend with each one's clinical scores, implying the possibility of individual rehabilitation outcome tracking and prediction. Our method not only provides a novel perspective of applying rs-fMRI to neurorehabilitation monitoring but also proves the potential in individualized rehabilitation prediction.</p>
+      </abstract>
+      <kwd-group>
+        <kwd>resting-state fMRI</kwd>
+        <kwd>functional connectivity</kwd>
+        <kwd>neurorehabilitation</kwd>
+        <kwd>support vector machine</kwd>
+        <kwd>spinal cord injury</kwd>
+      </kwd-group>
+      <funding-group>
+        <award-group>
+          <funding-source id="cn001">National Natural Science Foundation of China<named-content content-type="fundref-id">10.13039/501100001809</named-content></funding-source>
+          <award-id rid="cn001">NSFC-60372023</award-id>
+          <award-id rid="cn001">NSFC-61171002</award-id>
+        </award-group>
+        <award-group>
+          <funding-source id="cn002">Tsinghua University<named-content content-type="fundref-id">10.13039/501100004147</named-content></funding-source>
+          <award-id rid="cn002">2014081266</award-id>
+        </award-group>
+      </funding-group>
+      <counts>
+        <fig-count count="4"/>
+        <table-count count="5"/>
+        <equation-count count="5"/>
+        <ref-count count="55"/>
+        <page-count count="13"/>
+        <word-count count="7934"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec sec-type="intro" id="s1">
+      <title>Introduction</title>
+      <p>Neurorehabilitation aims to help patients with central nervous system (CNS) disease regain certain lost abilities and finally return to home and society. Spinal cord injury (SCI) is a common CNS illness that highly influences patients' daily life and brings heavy burden to the patient's family (<xref rid="B1" ref-type="bibr">1</xref>–<xref rid="B6" ref-type="bibr">6</xref>). Typically, a rehabilitation program lasts for weeks or months. One crucial problem is how to monitor the rehabilitation progress of each patient. Currently, most clinics use clinical measurements such as the International Standards for the Neurological Classification of Spinal Cord Injury (<xref rid="B7" ref-type="bibr">7</xref>, <xref rid="B8" ref-type="bibr">8</xref>), Fugl–Meyer Assessment, Wolf Motor Function Test, and Action Research Arm Test (<xref rid="B5" ref-type="bibr">5</xref>, <xref rid="B9" ref-type="bibr">9</xref>) to evaluate how patients perform in several function-related tasks. The score rating, however, reflects the behavioral improvements of patients. We wonder if there is another way to monitor the changes in CNS induced by treatment, specifically functional changes in the brain. Since clinical scores can be viewed as a distance measuring how similar patients perform as healthy subjects, is it possible to calculate a distance between patients and healthy subjects from neuroimaging data?</p>
+      <p>Resting-state functional magnetic resonance imaging (rs-fMRI) is a potential tool for clinical applications (<xref rid="B10" ref-type="bibr">10</xref>). Functional connectivity (FC), defined as temporal correlations between spatially distinct brain regions (<xref rid="B11" ref-type="bibr">11</xref>), has been used to analyze blood-oxygen level-dependent functional magnetic resonance imaging (BOLD fMRI). Based on fMRI of healthy subjects, several resting-state networks (RSNs), and intrinsic connectivity networks (ICNs) have been identified (<xref rid="B12" ref-type="bibr">12</xref>–<xref rid="B16" ref-type="bibr">16</xref>).</p>
+      <p>Apart from researches on healthy brain functions, rs-fMRI has also been applied to study diseases related to functional changes, including Alzheimer's disease, dementia, schizophrenia, and depression [see (<xref rid="B10" ref-type="bibr">10</xref>) for a review]. Researchers found diseases related to FC changes and brain abnormalities (<xref rid="B17" ref-type="bibr">17</xref>–<xref rid="B19" ref-type="bibr">19</xref>), which may lead to the discovery of disease-specific biomarkers. Zeng et al. (<xref rid="B20" ref-type="bibr">20</xref>) applied a multivariate pattern analysis on the whole-brain resting-state FC patterns to identify major depressive individuals from healthy controls (HCs). Previously, brain connectivity changes in SCI patients were evaluated focusing on the sensorimotor network using rs-fMRI (<xref rid="B21" ref-type="bibr">21</xref>–<xref rid="B24" ref-type="bibr">24</xref>). FC analyses were also performed using network-based statistic (NBS) (<xref rid="B25" ref-type="bibr">25</xref>), RSNs (<xref rid="B26" ref-type="bibr">26</xref>), and graph theory (<xref rid="B27" ref-type="bibr">27</xref>), as well as combining with structural reorganizations (<xref rid="B28" ref-type="bibr">28</xref>). However, from these findings of alterations in functional features, we can hardly tell whether patients became healthier after treatment or predict how well patients would recover.</p>
+      <p>In order to answer the above questions, we propose a distance-based rehabilitation evaluation method. The distance is calculated in a classification framework. One of the most prevailing classifiers is the support vector machine (SVM). It tries to find an optimal separating hyperplane that achieves maximal margin between the two classes (<xref rid="B29" ref-type="bibr">29</xref>). Using fMRI data, studies have demonstrated that SVM can successfully classify cognitive states (<xref rid="B30" ref-type="bibr">30</xref>–<xref rid="B32" ref-type="bibr">32</xref>) and patients with depression (<xref rid="B33" ref-type="bibr">33</xref>, <xref rid="B34" ref-type="bibr">34</xref>). In these studies, features used to train the SVM include FC and graph theory properties. Apart from non-linear kernel SVM, the original linear SVM works well when using correlation coefficients as features (<xref rid="B33" ref-type="bibr">33</xref>). Moreover, the SVM provides an ideal framework to quantify the difference between samples of the two classes, since the geometry interpretation of linear SVM is simple and clear. However, the performance of linear SVM on SCI patients is not fully investigated before.</p>
+      <p>Here, we used multi-session resting-state fMRI data of 18 SCI patients and 22 HCs to validate our method. The rest of this article is organized as follows: we elaborate our method in the second section, describe the materials and data processing details in the third section, and present the experiment results in the fourth section, followed by discussion and conclusion in fifth and sixth sections.</p>
+    </sec>
+    <sec id="s2">
+      <title>Method</title>
+      <p>The proposed method is summarized in <xref ref-type="fig" rid="F1">Figure 1</xref>. Concretely, the raw features, defined as FC between brain regions, are obtained by building brain networks with brain atlas on the first scanning sessions. A feature selection procedure eliminates insignificant features and generates a set of indices of significant features. Each subject is represented by a vector of these significant features in the feature space. Linear SVMs were trained to separate patients and HCs. The longitudinal fMRI data go through the same network construction procedure, and features identified as significant are taken out, forming the vector representation of this session.</p>
+      <fig id="F1" position="float">
+        <label>Figure 1</label>
+        <caption>
+          <p>Overview of the framework. Sig-Index, significant index; Sig-conns, significant connections.</p>
+        </caption>
+        <graphic xlink:href="fneur-10-01105-g0001"/>
+      </fig>
+      <p>In order to evaluate treatment-related functional changes, we posit that the feature vectors of HCs and patients are distributed separately in the feature space. If patients were getting better, they would become more and more similar to healthy subjects, and the feature vector representing patients would move toward HCs. Thus, it is possible to measure how well the patient has become using the distance of feature vectors. If this distance had a consistent trend, it would imply that the patient had recovered after treatment.</p>
+      <sec>
+        <title>Network Construction</title>
+        <p>The FC network, <italic>N</italic>, is built for each scan of each subjects using brain atlas. After preprocessing, averaged time course is extracted in each region and pairwise Pearson correlation coefficients, <italic>n</italic><sub><italic>ij</italic></sub>, are calculated as the FC between two regions. Since the method applies to tracking longitudinal changes of patients, the parcellation of connectivity networks should not vary across multiple sessions. Regions defined by atlas are stable compared to data-driven approaches. In addition, different atlases could provide a range of node definition resolution, as well as covering whole brain or local regions of interests according to the patient disease.</p>
+      </sec>
+      <sec>
+        <title>SVM Training</title>
+        <p>To select features for classification, we utilized a <italic>t</italic>-test filter on the brain networks of patients and HCs. Formally, let <italic>C</italic> = {<italic>c</italic><sub>1</sub>, <italic>c</italic><sub>2</sub>, …, <italic>c</italic><sub><italic>n</italic></sub>} denote the set of HCs. Let <italic>P</italic> = {<italic>p</italic><sub>1</sub>, <italic>p</italic><sub>2</sub>, …, <italic>p</italic><sub><italic>m</italic></sub>} denote the set of patients. A brain network is denoted by <italic>N</italic><sub><italic>s</italic>, 1</sub> = {<italic>n</italic><sub><italic>ij</italic></sub>}<sub><italic>k</italic> × <italic>k</italic></sub>, where <italic>s</italic> ∈ <italic>C</italic> or <italic>s</italic> ∈ <italic>P</italic> denotes the subject and the latter one means the first scanning session. Patients might have multiple scanning sessions, whereas HCs only have one. We chose the first sessions, {<italic>N</italic><sub><italic>p</italic><sub>1</sub>, 1</sub>, <italic>N</italic><sub><italic>p</italic><sub>2</sub>, 1</sub>, …, <italic>N</italic><sub><italic>p</italic><sub><italic>m</italic></sub>, 1</sub>} and {<italic>N</italic><sub><italic>c</italic><sub>1</sub>, 1</sub>, <italic>N</italic><sub><italic>c</italic><sub>2</sub>, 1</sub>, …, <italic>N</italic><sub><italic>c</italic><sub><italic>n</italic></sub>, 1</sub>}, to train the SVM. The correlation coefficient <italic>n</italic><sub><italic>ij</italic></sub> was extracted from each network of HCs and patients, forming two groups. Two-tailed two-sample <italic>t</italic>-test (<italic>P</italic> &lt; 0.05, uncorrected) was performed on the two groups to decide whether this connection, <italic>n</italic><sub><italic>ij</italic></sub>, is significant. This procedure was performed for every connection in the network. All significant connections were extracted as features and the index tuple (<italic>i, j</italic>) is put into the significant set <italic>Sig</italic>_<italic>set</italic> = {…, (<italic>i, j</italic>), …}. As a result, each subject was represented as a feature vector <italic>v</italic> containing significant connections of this subject.</p>
+        <p>Linear SVM classifiers were trained on the selected significant connections to classify the patient group (labeled as +1) and the healthy group (labeled as −1). Linear SVM tries to find an optimal separating hyperplane that achieves the largest margin of separation (<xref rid="B29" ref-type="bibr">29</xref>). The problem is defined as</p>
+        <disp-formula id="E1">
+          <mml:math id="M1">
+            <mml:mtable columnalign="left">
+              <mml:mtr>
+                <mml:mtd>
+                  <mml:mstyle displaystyle="true">
+                    <mml:munder>
+                      <mml:mrow>
+                        <mml:mo class="qopname">min</mml:mo>
+                      </mml:mrow>
+                      <mml:mrow>
+                        <mml:mi>w</mml:mi>
+                      </mml:mrow>
+                    </mml:munder>
+                  </mml:mstyle>
+                  <mml:mfrac>
+                    <mml:mrow>
+                      <mml:mn>1</mml:mn>
+                    </mml:mrow>
+                    <mml:mrow>
+                      <mml:mn>2</mml:mn>
+                    </mml:mrow>
+                  </mml:mfrac>
+                  <mml:mo stretchy="false">‖</mml:mo>
+                  <mml:mi>w</mml:mi>
+                  <mml:msup>
+                    <mml:mo>‖</mml:mo>
+                    <mml:mrow>
+                      <mml:mn>2</mml:mn>
+                    </mml:mrow>
+                  </mml:msup>
+                  <mml:mo>+</mml:mo>
+                  <mml:mi>C</mml:mi>
+                  <mml:mstyle displaystyle="true">
+                    <mml:munder class="msub">
+                      <mml:mrow>
+                        <mml:mo>∑</mml:mo>
+                      </mml:mrow>
+                      <mml:mrow>
+                        <mml:mi>i</mml:mi>
+                      </mml:mrow>
+                    </mml:munder>
+                  </mml:mstyle>
+                  <mml:msub>
+                    <mml:mrow>
+                      <mml:mi>ξ</mml:mi>
+                    </mml:mrow>
+                    <mml:mrow>
+                      <mml:mi>i</mml:mi>
+                    </mml:mrow>
+                  </mml:msub>
+                </mml:mtd>
+              </mml:mtr>
+            </mml:mtable>
+          </mml:math>
+        </disp-formula>
+        <p>Subject to <inline-formula><mml:math id="M2"><mml:msub><mml:mrow><mml:mi>y</mml:mi></mml:mrow><mml:mrow><mml:mi>i</mml:mi></mml:mrow></mml:msub><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mrow><mml:msup><mml:mrow><mml:mi>w</mml:mi></mml:mrow><mml:mrow><mml:mi>T</mml:mi></mml:mrow></mml:msup><mml:msub><mml:mrow><mml:mi>v</mml:mi></mml:mrow><mml:mrow><mml:mi>i</mml:mi></mml:mrow></mml:msub><mml:mo>+</mml:mo><mml:mi>b</mml:mi></mml:mrow><mml:mo stretchy="false">)</mml:mo></mml:mrow><mml:mo>≥</mml:mo><mml:mn>1</mml:mn><mml:mo>-</mml:mo><mml:msub><mml:mrow><mml:mi>ξ</mml:mi></mml:mrow><mml:mrow><mml:mi>i</mml:mi></mml:mrow></mml:msub></mml:math></inline-formula> and ξ<sub><italic>i</italic></sub> ≥ 0</p>
+        <p>where <italic>w</italic> is the weight vector, ξ<sub><italic>i</italic></sub> is the slack variable for sample <italic>i</italic>, <italic>y</italic><sub><italic>i</italic></sub> is the label of sample <italic>i</italic> (1 for patients, −1 for controls), <italic>v</italic><sub><italic>i</italic></sub> is the feature vector, and <italic>b</italic> is a bias constant.</p>
+      </sec>
+      <sec>
+        <title>Rehabilitation Evaluation</title>
+        <p>The SVM classifier trained on the first scanning session was used on the follow-up data. The same features are extracted from longitudinal sessions for patients, forming feature vectors. For each patient, the feature vector <inline-formula><mml:math id="M3"><mml:mi>v</mml:mi><mml:mo>=</mml:mo><mml:msup><mml:mrow><mml:mrow><mml:mo>[</mml:mo><mml:mrow><mml:mo>…</mml:mo><mml:mo>,</mml:mo><mml:mtext> </mml:mtext><mml:msub><mml:mrow><mml:mi>n</mml:mi></mml:mrow><mml:mrow><mml:mi>i</mml:mi><mml:mi>j</mml:mi></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:mtext> </mml:mtext><mml:mo>…</mml:mo></mml:mrow><mml:mo>]</mml:mo></mml:mrow></mml:mrow><mml:mrow><mml:mi>T</mml:mi></mml:mrow></mml:msup></mml:math></inline-formula> where (<italic>i, j</italic>) ∈ <italic>Sig</italic>_<italic>set</italic>. We calculated the distance of feature vectors to the separating hyperplane as a measurement of outcome evaluation. Formally, the separating hyperplane of linear SVM is determined by</p>
+        <disp-formula id="E2">
+          <mml:math id="M4">
+            <mml:mtable columnalign="left">
+              <mml:mtr>
+                <mml:mtd>
+                  <mml:mi>h</mml:mi>
+                  <mml:mrow>
+                    <mml:mo stretchy="false">(</mml:mo>
+                    <mml:mrow>
+                      <mml:mi>v</mml:mi>
+                    </mml:mrow>
+                    <mml:mo stretchy="false">)</mml:mo>
+                  </mml:mrow>
+                  <mml:mo>=</mml:mo>
+                  <mml:msup>
+                    <mml:mrow>
+                      <mml:mi>w</mml:mi>
+                    </mml:mrow>
+                    <mml:mrow>
+                      <mml:mi>T</mml:mi>
+                    </mml:mrow>
+                  </mml:msup>
+                  <mml:mi>v</mml:mi>
+                  <mml:mo>+</mml:mo>
+                  <mml:mi>b</mml:mi>
+                </mml:mtd>
+              </mml:mtr>
+            </mml:mtable>
+          </mml:math>
+        </disp-formula>
+        <p>Note that the predicted label is <italic>y</italic> = <italic>sgn</italic>(<italic>w</italic><sup><italic>T</italic></sup><italic>v</italic> + <italic>b</italic>). The distance of a feature vector to the separating hyperplane can be calculated as</p>
+        <disp-formula id="E3">
+          <mml:math id="M5">
+            <mml:mtable columnalign="left">
+              <mml:mtr>
+                <mml:mtd>
+                  <mml:mi>d</mml:mi>
+                  <mml:mo>=</mml:mo>
+                  <mml:mfrac>
+                    <mml:mrow>
+                      <mml:mi>h</mml:mi>
+                      <mml:mrow>
+                        <mml:mo stretchy="false">(</mml:mo>
+                        <mml:mrow>
+                          <mml:mi>v</mml:mi>
+                        </mml:mrow>
+                        <mml:mo stretchy="false">)</mml:mo>
+                      </mml:mrow>
+                    </mml:mrow>
+                    <mml:mrow>
+                      <mml:mo>‖</mml:mo>
+                      <mml:mi>w</mml:mi>
+                      <mml:mo>‖</mml:mo>
+                    </mml:mrow>
+                  </mml:mfrac>
+                </mml:mtd>
+              </mml:mtr>
+            </mml:mtable>
+          </mml:math>
+        </disp-formula>
+        <p>Since patients are positive samples (labeled as +1), the above formula gives a “signed distance.” Positive distance value indicates that the sample point lies on the same side with patients and vice versa. As a result, if the distance decreases, the sample point would move toward HCs, indicating improvements of the subject.</p>
+      </sec>
+    </sec>
+    <sec id="s3">
+      <title>Experiment</title>
+      <sec>
+        <title>Subjects</title>
+        <p>Forty subjects were engaged in this study, including 18 incomplete SCI patients and 22 HCs. The healthy subjects had no history of neurological disorder. Patients presenting with all of the following criteria were considered for study inclusion: age 18–70, normal cognitive function, without brain lesions or implantable devices, incomplete injury [C1-T12, ASIA C, or D (<xref rid="B7" ref-type="bibr">7</xref>)], subacute SCI and chronic SCI (time since injury &gt;1 month and &lt;12 months), and neurologic level above T<sub>12</sub>. Patients with one or more of the following conditions were excluded from this study: SCI relapse due to any reason, mental illness, seizures, and having other severe cardiovascular or neurologic disease (<xref rid="T1" ref-type="table">Table 1</xref>). All subjects provided their written informed consent to participate according to the Declaration of Helsinki. The study protocol was approved by the Ethics Committee of Beijing Tsinghua Changgung Hospital of China (IRB No. 2015-002).</p>
+        <table-wrap id="T1" position="float">
+          <label>Table 1</label>
+          <caption>
+            <p>Subject demographics.</p>
+          </caption>
+          <table frame="hsides" rules="groups">
+            <thead>
+              <tr>
+                <th rowspan="1" colspan="1"/>
+                <th valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>SCI patients (<italic>n</italic> = 18) Mean ± SD</bold>
+                </th>
+                <th valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>Healthy controls (<italic>n</italic> = 22) Mean ± SD</bold>
+                </th>
+                <th valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>Statistic value</bold>
+                </th>
+                <th valign="top" align="center" rowspan="1" colspan="1">
+                  <bold><italic>P</italic>-value</bold>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Gender(male/female)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">7/11</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">8/14</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">χ<sup>2</sup> = 0.027</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.870</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Age (years)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">42.33 ± <sc>16.65</sc></td>
+                <td valign="top" align="center" rowspan="1" colspan="1">37.18 ± <sc>12.24</sc></td>
+                <td valign="top" align="center" rowspan="1" colspan="1"><italic>t</italic> = 1.097</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.279</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Illness duration (months)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">2.39 ± <sc>1.53</sc></td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">AISA level</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">C(4), D(14)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Mean motion (first session, mm)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.058± <sc>0.038</sc></td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.038 ±<sc>0.033</sc></td>
+                <td valign="top" align="center" rowspan="1" colspan="1"><italic>t</italic> = 1.699</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.098</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Mean motion (second session, mm)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.050 ± <sc>0.032</sc></td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–</td>
+                <td valign="top" align="center" rowspan="1" colspan="1"><italic>t</italic> = 1.006</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.330<xref ref-type="table-fn" rid="TN1"><sup>*</sup></xref></td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Lower limb movement (before)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">32.56 ± <sc>8.36</sc></td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–</td>
+                <td valign="top" align="center" rowspan="1" colspan="1"><italic>t</italic> = 6.253</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>&lt;0.001</bold>
+                  <xref ref-type="table-fn" rid="TN1">
+                    <sup>*</sup>
+                  </xref>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Lower limb movement (after)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">37.06 ± <sc>7.74</sc></td>
+                <td valign="top" align="center" rowspan="1" colspan="1">-</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Wilcoxon stat = 0</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>&lt;0.001</bold>
+                  <xref ref-type="table-fn" rid="TN1">
+                    <sup>*</sup>
+                  </xref>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Sensory (before)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">161.44 ± <sc>32.45</sc></td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–</td>
+                <td valign="top" align="center" rowspan="1" colspan="1"><italic>t</italic> = 1.982</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.064<xref ref-type="table-fn" rid="TN1"><sup>*</sup></xref></td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Sensory (after)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">163.00 ± <sc>32.81</sc></td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Wilcoxon stat = 0</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>0.042</bold>
+                  <xref ref-type="table-fn" rid="TN1">
+                    <sup>*</sup>
+                  </xref>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">SCIM (before)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">52.72 ± <sc>15.77</sc></td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–</td>
+                <td valign="top" align="center" rowspan="1" colspan="1"><italic>t</italic> = 3.884</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>0.001</bold>
+                  <xref ref-type="table-fn" rid="TN1">
+                    <sup>*</sup>
+                  </xref>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">SCIM (after)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">59.00 ± <sc>16.71</sc></td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Wilcoxon stat = 0</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>&lt;0.001</bold>
+                  <xref ref-type="table-fn" rid="TN1">
+                    <sup>*</sup>
+                  </xref>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <p><italic>For clinical measurements, lower limb movement and sensory and SCIM scores before and after treatment were shown. Significant results were shown in bold (P &lt; 0.05)</italic>.</p>
+            <fn id="TN1">
+              <label>*</label>
+              <p><italic>Paired tests were performed on the first (before) and second (after) session (treatment) data</italic>.</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+        <p>The SCI patients received standard care for SCI rehabilitation at our institution. The rehabilitation protocol comprises 5 h of therapy a day, 5 days per week, lasting for 2 weeks. The therapy includes training in physical therapy for the lower extremities for SCI patients, activity of daily living, and fitness training. The rehabilitation outcomes, including motor function, sensory function, and daily life ability, were evaluated by American Spinal Injury Association (ASIA) criteria (<xref rid="B7" ref-type="bibr">7</xref>) and the Spinal Cord Independence Measure (<xref rid="B35" ref-type="bibr">35</xref>). Clinical measurements used in this study include lower limb movement score, sensory score, and SCIM (<xref rid="T1" ref-type="table">Table 1</xref>).</p>
+      </sec>
+      <sec>
+        <title>Scanning</title>
+        <p>All SCI patients went through two MRI sessions, with an interval of 2 weeks. In order to investigate the longitudinal rehabilitation outcome, five patients received two more scanning (four sessions in total). Healthy subjects were scanned only once. The time of scanning (number of weeks passed) since the first session is shown in <xref rid="T2" ref-type="table">Table 2</xref>.</p>
+        <table-wrap id="T2" position="float">
+          <label>Table 2</label>
+          <caption>
+            <p>Longitudinal scanning time since inclusion.</p>
+          </caption>
+          <table frame="hsides" rules="groups">
+            <thead>
+              <tr>
+                <th valign="top" align="left" rowspan="1" colspan="1">
+                  <bold>Subjects</bold>
+                </th>
+                <th valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>1st session (weeks)</bold>
+                </th>
+                <th valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>2nd session (weeks)</bold>
+                </th>
+                <th valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>3rd session (weeks)</bold>
+                </th>
+                <th valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>4th session (weeks)</bold>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">HCs</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">SCI 1-13</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">2</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">SCI 14</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">2</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">6</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">25</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">SCI 15</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">2</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">6</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">14</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">SCI 16</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">2</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">4</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">6</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">SCI 17</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">2</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">15</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">17</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">SCI 18</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">2</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">7</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">49</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <p><italic>Numbers are weeks passed since the first scanning session. Healthy controls were only scanned once. SCI subjects 1–13 have two sessions. Subjects 14–18 have four sessions. HC, healthy control; SCI, spinal cord injury</italic>.</p>
+          </table-wrap-foot>
+        </table-wrap>
+        <p>The MRI scanning was performed at the Department of Radiology, Beijing Tsinghua Changgung Hospital. A GE 3.0T MR scanner (DISCOVERY MR750 model; General Electric American, Waukesha, WI, USA) was used to acquire MRI data. Participants were positioned supine and scanned using a standard 32-channel head-coil. fMRI data of resting-state blood oxygen level-dependent images are scanned using “Ax-BOLD-rest” series with a gradient echo-planar imaging (EPI) sequence [repetition time [TR] = 2000 ms, echo time [TE] = 30 ms, flip angle [FA] = 90°, pixel space = 3.5 mm<sup>2</sup>, slice thickness = 3.5 mm, spacing between slices = 4 mm, acquisition matrix = [64, 0, 0, 64], equivalent to in-plane resolution = 64 × 64, reconstruction diameter = 224 mm, 34 axial slices, and 240 temporal positions]. T1-weighted images (T1) are scanned using “Sag 3D T1BRAVO” series [TR = 8.21 ms, TE = 3.18 ms, FA = 8, voxel space = 1 mm<sup>3</sup>, spacing between slices = 1 mm, acquisition matrix = [0, 256, 256, 0], equivalent to 256 axial slices and 256 coronal slices]. The sagittal slice number depended on the head size of each subject, ranging from 156 to 174 mm, corresponding to the 36 subjects in this study. The reconstruction diameter was 256 mm. In this study, only the fMRI data were used.</p>
+      </sec>
+      <sec>
+        <title>Processing</title>
+        <p>We used DPARSFA (<xref rid="B36" ref-type="bibr">36</xref>) toolbox to preprocess fMRI data. The first 10 time points were excluded to account for magnetization saturation effect and let the subjects be familiar with the environment. Head motion was corrected before normalizing the image to a 2-mm-isotropic BOLD EPI template in the Montreal Neurological Institute (MNI) 152 standard space. Motion parameters were inspected and compared to investigate for any inter-group differences. Similar to the criteria in (<xref rid="B20" ref-type="bibr">20</xref>) and (<xref rid="B37" ref-type="bibr">37</xref>), no subject exhibited excessive head motion during scan acquisition (&gt;2.5 mm translation and/or &gt; 2 rotation). Following the method used in (<xref rid="B38" ref-type="bibr">38</xref>), the mean motion between patient and HC group showed no significant difference (<xref rid="T1" ref-type="table">Table 1</xref>). The image was resampled to 3-mm isotropic voxels and spatially smoothed by a Gaussian kernel with 6-mm full width at half maximum (FWHM), followed by the removal of the linear trend and nuisance covariates, including head motions, cerebral fluid, and the global signal. Finally, the time course was filtered to keep signals in 0.01–0.08 Hz.</p>
+        <p>The data analysis procedure, including network construction, feature selection and SVM training and testing, was carried out using an in-house python-based software. We adopted five brain atlases to define nodes of networks. Firstly, the Brodmann atlas (<xref rid="B39" ref-type="bibr">39</xref>) with 82 brain regions was used. Since the original Brodmann atlas does not contain mapping for the cerebellum, which is related to functional changes after SCI (<xref rid="B25" ref-type="bibr">25</xref>), we also combined the cerebellum in the Automated Anatomical Labeling (AAL) atlas (<xref rid="B40" ref-type="bibr">40</xref>) (26 areas) into the Brodmann atlas, creating a 108-area parcellation (Brodmann_ce). The original AAL atlas was also used. Two recently proposed atlases were included as well. The AICHA atlas contains 384 brain regions in both hemispheres that highlight homotopy and maximal intrinsic connectivity between regions (<xref rid="B41" ref-type="bibr">41</xref>). The Brainnetome atlas was built using rs-fMRI and diffusion MRI of the Human Connectome Project, including 246 regions (<xref rid="B42" ref-type="bibr">42</xref>). All experiments were repeated for the five atlases and results were analyzed separately.</p>
+        <p>During SVM training, the parameter <italic>C</italic> controls the trade-off of misclassification and accuracy. We adjusted <italic>C</italic> and repeated the SVM training to investigate its influence on our method. The value of <italic>C</italic> was selected from [0.1, 0.5, 1, 5, 10, 50, 100, 500, 1000, 5000, 10,000].</p>
+        <p>Leave-one-out cross-validation (LOOCV) was applied to estimate the training accuracy (<xref ref-type="fig" rid="F2">Figure 2</xref>). In the training process, one sample was left out as the test sample and the remaining data were used for training. The trained classifier was then used to classify the left-out sample. The accuracy was estimated by calculating the ratio of correctly classified samples against total sample amount. All SCI patients were used to test SVM performances. Precision, sensitivity, and specificity were also calculated. The definitions were as follows.</p>
+        <disp-formula id="E4">
+          <mml:math id="M6">
+            <mml:mtable columnalign="left" columnspacing="0.3em">
+              <mml:mtr>
+                <mml:mtd columnalign="right">
+                  <mml:mi>P</mml:mi>
+                  <mml:mi>r</mml:mi>
+                  <mml:mi>e</mml:mi>
+                  <mml:mi>c</mml:mi>
+                  <mml:mi>i</mml:mi>
+                  <mml:mi>s</mml:mi>
+                  <mml:mi>i</mml:mi>
+                  <mml:mi>o</mml:mi>
+                  <mml:mi>n</mml:mi>
+                </mml:mtd>
+                <mml:mtd>
+                  <mml:mo>=</mml:mo>
+                </mml:mtd>
+                <mml:mtd>
+                  <mml:mfrac>
+                    <mml:mrow>
+                      <mml:mi>T</mml:mi>
+                      <mml:mi>P</mml:mi>
+                    </mml:mrow>
+                    <mml:mrow>
+                      <mml:mi>T</mml:mi>
+                      <mml:mi>P</mml:mi>
+                      <mml:mo>+</mml:mo>
+                      <mml:mi>F</mml:mi>
+                      <mml:mi>P</mml:mi>
+                    </mml:mrow>
+                  </mml:mfrac>
+                </mml:mtd>
+              </mml:mtr>
+              <mml:mtr>
+                <mml:mtd columnalign="right">
+                  <mml:mi>S</mml:mi>
+                  <mml:mi>e</mml:mi>
+                  <mml:mi>n</mml:mi>
+                  <mml:mi>s</mml:mi>
+                  <mml:mi>i</mml:mi>
+                  <mml:mi>t</mml:mi>
+                  <mml:mi>i</mml:mi>
+                  <mml:mi>v</mml:mi>
+                  <mml:mi>i</mml:mi>
+                  <mml:mi>t</mml:mi>
+                  <mml:mi>y</mml:mi>
+                </mml:mtd>
+                <mml:mtd>
+                  <mml:mo>=</mml:mo>
+                </mml:mtd>
+                <mml:mtd>
+                  <mml:mfrac>
+                    <mml:mrow>
+                      <mml:mi>T</mml:mi>
+                      <mml:mi>P</mml:mi>
+                    </mml:mrow>
+                    <mml:mrow>
+                      <mml:mi>T</mml:mi>
+                      <mml:mi>P</mml:mi>
+                      <mml:mo>+</mml:mo>
+                      <mml:mi>F</mml:mi>
+                      <mml:mi>N</mml:mi>
+                    </mml:mrow>
+                  </mml:mfrac>
+                </mml:mtd>
+              </mml:mtr>
+              <mml:mtr>
+                <mml:mtd columnalign="right">
+                  <mml:mi>S</mml:mi>
+                  <mml:mi>p</mml:mi>
+                  <mml:mi>e</mml:mi>
+                  <mml:mi>c</mml:mi>
+                  <mml:mi>i</mml:mi>
+                  <mml:mi>f</mml:mi>
+                  <mml:mi>i</mml:mi>
+                  <mml:mi>c</mml:mi>
+                  <mml:mi>i</mml:mi>
+                  <mml:mi>t</mml:mi>
+                  <mml:mi>y</mml:mi>
+                </mml:mtd>
+                <mml:mtd>
+                  <mml:mo>=</mml:mo>
+                </mml:mtd>
+                <mml:mtd>
+                  <mml:mfrac>
+                    <mml:mrow>
+                      <mml:mi>T</mml:mi>
+                      <mml:mi>N</mml:mi>
+                    </mml:mrow>
+                    <mml:mrow>
+                      <mml:mi>T</mml:mi>
+                      <mml:mi>N</mml:mi>
+                      <mml:mo>+</mml:mo>
+                      <mml:mi>F</mml:mi>
+                      <mml:mi>P</mml:mi>
+                    </mml:mrow>
+                  </mml:mfrac>
+                </mml:mtd>
+              </mml:mtr>
+            </mml:mtable>
+          </mml:math>
+        </disp-formula>
+        <p>where TP stands for true positive (number of patients correctly classified as patient), FP stands for false positive (number of HCs incorrectly classified as patient), FN stands for false negative (number of patients incorrectly classified as HCs), and TN stands for true negative (number of HCs correctly classified as HCs). In order to test the significance of LOOCV accuracy, a permutation test was performed. The sample labels were randomly permuted 1,000 times to obtain an empirical <italic>P</italic>-value for the LOOCV accuracy.</p>
+        <fig id="F2" position="float">
+          <label>Figure 2</label>
+          <caption>
+            <p>LOOCV training diagram. Sig-conns, significant connections; LOOCV, leave-one-out cross-validation.</p>
+          </caption>
+          <graphic xlink:href="fneur-10-01105-g0002"/>
+        </fig>
+        <p>For distance calculation in rehabilitation evaluation, we adopted the same LOOCV framework as described in the SVM training section. Specifically, during SVM training, one subject was selected as the evaluation subject. SVM was trained using the remaining subjects and the separating hyperplane was identified. Then, the distance of all sessions of the left-out evaluation subject was calculated as described in the Method section. This procedure was repeated for all subjects in order to obtain distance for each session of each subject. Besides, the five subjects with four MRI sessions were used to validate the proposed method in longitudinal recovery prediction. The distance of all four sessions was calculated and compared with clinical measurements. In order to compare distance and clinical scores, the two values were normalized to zero mean and unit variance according to the following formula.</p>
+        <disp-formula id="E5">
+          <mml:math id="M7">
+            <mml:mtable columnalign="left" columnspacing="0.3em">
+              <mml:mtr>
+                <mml:mtd>
+                  <mml:msup>
+                    <mml:mrow>
+                      <mml:mi>d</mml:mi>
+                    </mml:mrow>
+                    <mml:mrow>
+                      <mml:mo>*</mml:mo>
+                    </mml:mrow>
+                  </mml:msup>
+                  <mml:mrow>
+                    <mml:mo stretchy="false">(</mml:mo>
+                    <mml:mrow>
+                      <mml:mi>i</mml:mi>
+                    </mml:mrow>
+                    <mml:mo stretchy="false">)</mml:mo>
+                  </mml:mrow>
+                </mml:mtd>
+                <mml:mtd>
+                  <mml:mo>=</mml:mo>
+                </mml:mtd>
+                <mml:mtd>
+                  <mml:mo>-</mml:mo>
+                  <mml:mn>1</mml:mn>
+                  <mml:mo>×</mml:mo>
+                  <mml:mfrac>
+                    <mml:mrow>
+                      <mml:mi>d</mml:mi>
+                      <mml:mrow>
+                        <mml:mo stretchy="false">(</mml:mo>
+                        <mml:mrow>
+                          <mml:mi>i</mml:mi>
+                        </mml:mrow>
+                        <mml:mo stretchy="false">)</mml:mo>
+                      </mml:mrow>
+                      <mml:mo>-</mml:mo>
+                      <mml:mi>m</mml:mi>
+                      <mml:mi>e</mml:mi>
+                      <mml:mi>a</mml:mi>
+                      <mml:mi>n</mml:mi>
+                      <mml:mrow>
+                        <mml:mo stretchy="false">(</mml:mo>
+                        <mml:mrow>
+                          <mml:mi>d</mml:mi>
+                        </mml:mrow>
+                        <mml:mo stretchy="false">)</mml:mo>
+                      </mml:mrow>
+                    </mml:mrow>
+                    <mml:mrow>
+                      <mml:mi>s</mml:mi>
+                      <mml:mi>t</mml:mi>
+                      <mml:mi>d</mml:mi>
+                      <mml:mrow>
+                        <mml:mo stretchy="false">(</mml:mo>
+                        <mml:mrow>
+                          <mml:mi>d</mml:mi>
+                        </mml:mrow>
+                        <mml:mo stretchy="false">)</mml:mo>
+                      </mml:mrow>
+                    </mml:mrow>
+                  </mml:mfrac>
+                  <mml:mo>,</mml:mo>
+                  <mml:mtext> </mml:mtext>
+                  <mml:mi>i</mml:mi>
+                  <mml:mo>=</mml:mo>
+                  <mml:mn>1</mml:mn>
+                  <mml:mo>,</mml:mo>
+                  <mml:mtext> </mml:mtext>
+                  <mml:mn>2</mml:mn>
+                  <mml:mo>,</mml:mo>
+                  <mml:mtext> </mml:mtext>
+                  <mml:mn>3</mml:mn>
+                  <mml:mo>,</mml:mo>
+                  <mml:mtext> </mml:mtext>
+                  <mml:mn>4</mml:mn>
+                </mml:mtd>
+              </mml:mtr>
+              <mml:mtr>
+                <mml:mtd>
+                  <mml:msup>
+                    <mml:mrow>
+                      <mml:mi>s</mml:mi>
+                    </mml:mrow>
+                    <mml:mrow>
+                      <mml:mo>*</mml:mo>
+                    </mml:mrow>
+                  </mml:msup>
+                  <mml:mrow>
+                    <mml:mo stretchy="false">(</mml:mo>
+                    <mml:mrow>
+                      <mml:mi>i</mml:mi>
+                    </mml:mrow>
+                    <mml:mo stretchy="false">)</mml:mo>
+                  </mml:mrow>
+                </mml:mtd>
+                <mml:mtd>
+                  <mml:mo>=</mml:mo>
+                </mml:mtd>
+                <mml:mtd>
+                  <mml:mfrac>
+                    <mml:mrow>
+                      <mml:mi>s</mml:mi>
+                      <mml:mrow>
+                        <mml:mo stretchy="false">(</mml:mo>
+                        <mml:mrow>
+                          <mml:mi>i</mml:mi>
+                        </mml:mrow>
+                        <mml:mo stretchy="false">)</mml:mo>
+                      </mml:mrow>
+                      <mml:mo>-</mml:mo>
+                      <mml:mi>m</mml:mi>
+                      <mml:mi>e</mml:mi>
+                      <mml:mi>a</mml:mi>
+                      <mml:mi>n</mml:mi>
+                      <mml:mrow>
+                        <mml:mo stretchy="false">(</mml:mo>
+                        <mml:mrow>
+                          <mml:mi>s</mml:mi>
+                        </mml:mrow>
+                        <mml:mo stretchy="false">)</mml:mo>
+                      </mml:mrow>
+                    </mml:mrow>
+                    <mml:mrow>
+                      <mml:mi>s</mml:mi>
+                      <mml:mi>t</mml:mi>
+                      <mml:mi>d</mml:mi>
+                      <mml:mrow>
+                        <mml:mo stretchy="false">(</mml:mo>
+                        <mml:mrow>
+                          <mml:mi>s</mml:mi>
+                        </mml:mrow>
+                        <mml:mo stretchy="false">)</mml:mo>
+                      </mml:mrow>
+                    </mml:mrow>
+                  </mml:mfrac>
+                  <mml:mo>,</mml:mo>
+                  <mml:mtext> </mml:mtext>
+                  <mml:mi>i</mml:mi>
+                  <mml:mo>=</mml:mo>
+                  <mml:mn>1</mml:mn>
+                  <mml:mo>,</mml:mo>
+                  <mml:mtext> </mml:mtext>
+                  <mml:mn>2</mml:mn>
+                  <mml:mo>,</mml:mo>
+                  <mml:mtext> </mml:mtext>
+                  <mml:mn>3</mml:mn>
+                  <mml:mo>,</mml:mo>
+                  <mml:mtext> </mml:mtext>
+                  <mml:mn>4</mml:mn>
+                </mml:mtd>
+              </mml:mtr>
+            </mml:mtable>
+          </mml:math>
+        </disp-formula>
+        <p>where <italic>d</italic>* is normalized distance, <italic>s</italic>* is normalized scores, <italic>mean</italic>(·) stands for averaging, <italic>std</italic>(·) stands for standard deviation, and <italic>i</italic> represents session.</p>
+      </sec>
+      <sec>
+        <title>Statistical Analysis</title>
+        <p>We performed intra-group analysis on distance and clinical measurements for each atlas and each SVM training parameter <italic>C</italic> separately. The statistical analysis was implemented using the SciPy python package. Specifically, paired <italic>t</italic>-test was performed on distance and clinical scores between the first and the second session scanning in the patient group to check for rehabilitation program induced improvements. Since the sample size is limited, we performed Shapiro Normality test on distance values and scores of both the first and the second session. Besides, we repeated the above-described analysis using non-parametric Wilcoxon signed-rank tests.</p>
+      </sec>
+    </sec>
+    <sec sec-type="results" id="s4">
+      <title>Results</title>
+      <sec>
+        <title>SVM Training and Testing</title>
+        <p>We trained an SVM classifier for each of the five atlases and each selection of the parameter <italic>C</italic>, using <italic>t</italic>-test filters and the LOOCV strategy. From our experiment, the training results were similar for all selections of <italic>C</italic>, and the mean LOOCV results for <italic>C</italic> = 1 are summarized in <xref rid="T3" ref-type="table">Table 3</xref>. All later reported results were based on this parameter setting. After <italic>t</italic>-test filtering, the percentage of significant connections for the SCI group was around 0.07. For illustration purposes, we plotted the significant connections using Circos<xref ref-type="fn" rid="fn0001"><sup>1</sup></xref> (<xref rid="B43" ref-type="bibr">43</xref>). The graphs are shown in the Appendix (<xref ref-type="fig" rid="F4">Figure A1</xref>).</p>
+        <table-wrap id="T3" position="float">
+          <label>Table 3</label>
+          <caption>
+            <p>Training results.</p>
+          </caption>
+          <table frame="hsides" rules="groups">
+            <thead>
+              <tr>
+                <th rowspan="1" colspan="1"/>
+                <th valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>Atlas</bold>
+                </th>
+                <th valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>Discover</bold>
+                </th>
+                <th valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>Accuracy</bold>
+                </th>
+                <th valign="top" align="center" rowspan="1" colspan="1">
+                  <bold><italic>P</italic> value</bold>
+                </th>
+                <th valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>Precision</bold>
+                </th>
+                <th valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>Sensitivity</bold>
+                </th>
+                <th valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>Specificity</bold>
+                </th>
+                <th valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>2nd test</bold>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Feature selection</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Brod.</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0711</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.900</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>&lt;0.001</bold>
+                </td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.8889</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.8889</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.9091</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.6667</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="center" rowspan="1" colspan="1">Brod.ce</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0739</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.900</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>&lt;0.001</bold>
+                </td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.8889</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.8889</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.9091</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.5556</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="center" rowspan="1" colspan="1">AAL</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0699</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.925</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>&lt;0.001</bold>
+                </td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.9412</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.8889</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.9545</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.7222</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="center" rowspan="1" colspan="1">AICHA</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0669</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">1.000</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>&lt;0.001</bold>
+                </td>
+                <td valign="top" align="center" rowspan="1" colspan="1">1.000</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">1.000</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">1.000</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.8333</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="center" rowspan="1" colspan="1">BN</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.0765</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">1.000</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>&lt;0.001</bold>
+                </td>
+                <td valign="top" align="center" rowspan="1" colspan="1">1.000</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">1.000</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">1.000</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.8333</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Whole brain</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Brod.</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.5250</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.3816</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.4667</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.3889</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.6364</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="center" rowspan="1" colspan="1">Brod.ce</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.5000</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.4645</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.4375</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.3889</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.5909</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="center" rowspan="1" colspan="1">AAL</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.4750</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.5455</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.4211</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.4444</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.5000</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="center" rowspan="1" colspan="1">AICHA</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.6000</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.1269</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.5833</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.3889</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.7727</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="center" rowspan="1" colspan="1">BN</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.5750</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.1888</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.5385</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.3889</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.7273</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">–</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <p><italic>The training results were divided into with or without feature selection. The Discover column shows the ratio of significant connections to all possible connections. The last column shows the test accuracy when using the second session data as test data. This testing was only performed for the training with feature selection. Brod, Brodmann atlas; Brod.ce, Brodmann atlas with cerebellum; BN, Brainnetome atlas. Significant results were shown in bold</italic>.</p>
+          </table-wrap-foot>
+        </table-wrap>
+        <p>The LOOCV accuracies were above 0.9 for all atlases and empirically significant when tested with a 1,000 times permutation test (<italic>P</italic> &lt; 0.001). Besides accuracy, the precision, sensitivity, and specificity were also reported in the table. The second session data were fed into the classifier as testing samples. The accuracy, which is the same as sensitivity, was reported in the last column in <xref rid="T3" ref-type="table">Table 3</xref>. In order to evaluate the influence of feature selection, we also tried to train the classifier without feature selection. That is, all whole-brain connections were used as features. Results for the whole-brain experiments are also presented in <xref rid="T3" ref-type="table">Table 3</xref>. The whole-brain results degraded drastically, with a non-significant (<italic>P</italic> &gt; 0.05) accuracy around 0.5, which is similar to random guesses. This implies that the classification algorithm fails to classify samples without feature selection. Compared with the whole-brain result, the classifier can still segregate the second session data with relatively good accuracy (last column in <xref rid="T3" ref-type="table">Table 3</xref>).</p>
+        <p>We also used k-means algorithm on the selected significant connections to cluster samples without labels. The number of clusters was set to two and starting centroids were initialized randomly for 50 times in order to avoid local maxima (<xref rid="T4" ref-type="table">Table 4</xref>). The clustering accuracy was around 0.9 except for the Brodmann atlas, which achieved a 0.75 accuracy. We also reported the number of misclassified samples in <xref rid="T4" ref-type="table">Table 4</xref>. This result indicates that the selected feature vectors are indeed distributed differently in the feature space.</p>
+        <table-wrap id="T4" position="float">
+          <label>Table 4</label>
+          <caption>
+            <p>Clustering results.</p>
+          </caption>
+          <table frame="hsides" rules="groups">
+            <thead>
+              <tr>
+                <th valign="top" align="left" rowspan="1" colspan="1">
+                  <bold>Atlas</bold>
+                </th>
+                <th valign="top" align="center" rowspan="1" colspan="1"><bold>Brod</bold>.</th>
+                <th valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>Brod.ce</bold>
+                </th>
+                <th valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>AAL</bold>
+                </th>
+                <th valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>AICHA</bold>
+                </th>
+                <th valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>BN</bold>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Accuracy</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.75</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.89</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.94</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.94</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.86</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Num. error</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">9</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">4</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">2</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">2</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">5</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <p><italic>K-means clustering results. Num. error represents the number of misclassified samples. Abbreviations are the same as in <xref rid="T3" ref-type="table">Table 3</xref></italic>.</p>
+          </table-wrap-foot>
+        </table-wrap>
+      </sec>
+      <sec>
+        <title>Distance Changes During Rehabilitation</title>
+        <p>We calculated distance for all scans of the patient group and performed intra-group analysis on distance and clinical scores. The Shapiro test was used to check the normality of distance value distribution of the first and the second session. Most tests showed no significant results. This indicated that distance values are mostly normally distributed. The paired <italic>t</italic>-tests and Wilcoxon signed-rank test results for intra-group tests (first minus second), based on SVM parameter <italic>C</italic> = 1, are shown in <xref rid="T5" ref-type="table">Table 5</xref>. Results of the parametric and non-parametric tests were the same. The distance of patient group was significantly decreased for all atlases (<italic>P</italic> &lt; 0.05).</p>
+        <table-wrap id="T5" position="float">
+          <label>Table 5</label>
+          <caption>
+            <p>Intra-group distance <italic>t</italic>-test results.</p>
+          </caption>
+          <table frame="hsides" rules="groups">
+            <thead>
+              <tr>
+                <th valign="top" align="left" rowspan="1" colspan="1">
+                  <bold>Distance/Atlas</bold>
+                </th>
+                <th valign="top" align="center" rowspan="1" colspan="1"><bold>Brod</bold>.</th>
+                <th valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>Brod.ce</bold>
+                </th>
+                <th valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>AAL</bold>
+                </th>
+                <th valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>AICHA</bold>
+                </th>
+                <th valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>BN</bold>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">HC</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−0.527 ± <sc>0.424</sc></td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−0.855 ± <sc>0.597</sc></td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−1.057 ± <sc>0.708</sc></td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−3.524 ± <sc>1.308</sc></td>
+                <td valign="top" align="center" rowspan="1" colspan="1">−2.222 ± <sc>1.145</sc></td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Patients before</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.565 ± <sc>0.473</sc></td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.820 ± <sc>0.630</sc></td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.843 ± <sc>0.605</sc></td>
+                <td valign="top" align="center" rowspan="1" colspan="1">3.540 ± <sc>1.899</sc></td>
+                <td valign="top" align="center" rowspan="1" colspan="1">2.044 ± <sc>1.273</sc></td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Patients after</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.123 ± <sc>0.426</sc></td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.085 ± <sc>0.577</sc></td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.126 ± <sc>0.604</sc></td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.877 ± <sc>1.015</sc></td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.462 ± <sc>0.773</sc></td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1"><italic>t</italic>-test <italic>t</italic></td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>3.461</bold>
+                </td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>4.656</bold>
+                </td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>4.397</bold>
+                </td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>5.488</bold>
+                </td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>4.518</bold>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1"><italic>t</italic>-test <italic>p</italic></td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>0.003</bold>
+                </td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>&lt;0.001</bold>
+                </td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>&lt;0.001</bold>
+                </td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>&lt;0.001</bold>
+                </td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>&lt;0.001</bold>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Wilcoxon stat</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>15</bold>
+                </td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>5</bold>
+                </td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>9</bold>
+                </td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>2</bold>
+                </td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>10</bold>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Wilcoxon p</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>0.002</bold>
+                </td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>&lt;0.001</bold>
+                </td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>&lt;0.001</bold>
+                </td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>&lt;0.001</bold>
+                </td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>0.001</bold>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <p><italic>Significant results were shown in bold. t-tests and Wilcoxon tests were performed within the patient group. t-test t: the t value for the t-test result. t-test p: the p value for the t-test result. Same for the Wilcoxon test. Abbreviations are the same as in <xref rid="T3" ref-type="table">Table 3</xref></italic>.</p>
+          </table-wrap-foot>
+        </table-wrap>
+        <p>The statistical tests were also repeated on clinical scores. Shapiro tests on sensory scores of the first and the second session rejected the null hypothesis. The intra-group paired <italic>t</italic>-tests, combined with the Wilcoxon test results, indicated that lower limb movement score and SCIM increased significantly (<italic>P</italic> &lt; 0.05) after treatment (<xref rid="T1" ref-type="table">Table 1</xref>).</p>
+        <p>We also calculated distance for the five subjects with four session data and plotted the distance with each clinical measurement. The results are shown in <xref ref-type="fig" rid="F3">Figure 3</xref>. The score and distance values were normalized to have zero mean and unit variance and the distance values were reversed (that is, multiplied by −1) so that an increase in distance also means an increase in scores. It can be seen from the graph that all patients' scores show similar trend with distance, indicating the potential of using distance to predict rehabilitation outcomes.</p>
+        <fig id="F3" position="float">
+          <label>Figure 3</label>
+          <caption>
+            <p>Longitudinal results. The bold brown line stands for clinical scores whereas thinner lines with five different colors represent the distance calculated from five different atlases.</p>
+          </caption>
+          <graphic xlink:href="fneur-10-01105-g0003"/>
+        </fig>
+      </sec>
+    </sec>
+    <sec sec-type="discussion" id="s5">
+      <title>Discussion</title>
+      <p>We proposed a novel distance-based neurorehabilitation evaluation method and applied it to a dataset of SCI patients and HCs, utilizing five whole-brain atlases to validate our method. The testing results showed that the proposed method can reflect rehabilitation-induced functional changes. The changes found by distance in the multi-level brain networks built from five atlases are consistent with clinical measurements. Moreover, all of the rehabilitation outcome predictions for individual patients had a consistent trend with clinical scores. To our knowledge, this is the first time that rs-fMRI and linear SVM are applied to evaluate the rehabilitation progress and predict outcomes of SCI patients.</p>
+      <p>The prognostic value of resting-state FC was previously assessed by correlating FC with clinical scores and behavioral performance for groups of patients with stroke (<xref rid="B44" ref-type="bibr">44</xref>–<xref rid="B47" ref-type="bibr">47</xref>). Qin et al. (<xref rid="B48" ref-type="bibr">48</xref>) utilized support vector classifier and principal component analysis on resting-state FC to estimate the medication status of major depression patients after antidepressant treatment using a regression model. However, only a part of patients received second session MRI scanning and no longitudinal data (&gt;2 sessions) were collected. Besides, few studies investigated outcome prediction of SCI patients after rehabilitation.</p>
+      <p>In our work, all patients received at least two sessions of MRI scanning and five patients were scanned two more times. The HCs, on the other hand, were only scanned once. In literature, measures of FC were suggested to vary during aging (<xref rid="B49" ref-type="bibr">49</xref>, <xref rid="B50" ref-type="bibr">50</xref>) but were relative stable across time spans of 1–2 years (<xref rid="B51" ref-type="bibr">51</xref>). In our work, longitudinal scanning was mostly collected within 6 months and the FC was assumed to be stable. The healthy subject data were used to train a classifier and build up a healthy baseline, in order to measure how different the patients were from this baseline.</p>
+      <p>When building FC networks, we utilized brain atlas to define nodes, since it provides an objective node definition and is stable over different datasets. Unlike data-driven approaches, such as group independent component analysis (ICA), nodes defined by atlases do not change, which is preferable in rehabilitation evaluation. The node definition can not only alter the topological structure of the graph (network) but also influence the functional relationships between nodes. Some previous researches have noted the potential pitfalls of using atlases to define nodes in brain networks (<xref rid="B34" ref-type="bibr">34</xref>, <xref rid="B52" ref-type="bibr">52</xref>). In addition, several studies found atlas-related differences in graph metrics of resting-state networks (<xref rid="B53" ref-type="bibr">53</xref>), ROI homogeneity (<xref rid="B54" ref-type="bibr">54</xref>), and structural networks (<xref rid="B55" ref-type="bibr">55</xref>). In this study, we obtained similar results in most experiments for all five atlases, indicating that our proposed method is not sensitive to the choice of node definition. However, we note that whether a certain atlas is suitable for whole-brain functional network classification or analyzing a specific disease is unclear. Future studies focusing on the choice of brain atlases could possibly facilitate the construction of multi-level FC networks.</p>
+      <p>During classifier training, we used LOOCV to estimate the accuracy and reported precision, sensitivity, and specificity along with accuracy. The parameter <italic>C</italic> in SVM training could affect the separating hyperplane. We repeated our experiments on a range of <italic>C</italic> values and the results were consistent. Also, the distance for each patient was calculated in a LOOCV framework. The use of LOOCV could alleviate the problem of overfitting and skewed dataset to some extent. The normality of distance values and scores was checked by the Shapiro test. Most tests did not reject the null hypothesis of normal distribution. Besides, we repeated the statistical analysis using non-parametric tests, which are supposed to work well for small sample sizes and not normally distributed data. Results obtained by the non-parametric tests corroborated with <italic>t</italic>-tests.</p>
+      <p>In order to evaluate the classifier performance, the second session data were used for testing. We observed a decreased accuracy for all atlases. Unlike a diagnosis problem where classification accuracy is critical, in our method, SVM is used to locate the separating hyperplane and calculate distance. As hypothesized, patients would become more similar to HCs after treatment, resulting in a shifted feature vector toward negative examples (HCs). This could be the cause of the decrease in accuracy. Besides, the training results of whole-brain features were not satisfying, indicating that feature selection is necessary when applying machine learning method to fMRI data.</p>
+      <p>We calculated distance of HCs at baseline and patient at two sessions. The distance of patients was found to decrease after treatment. According to our assumption, a decreased distance represents a closer position of feature vector to the negative samples, implying that the FC of the subject is becoming similar to HCs. The significant distance decline in the patient group indicated that the FC of the patient group recovered after treatment. On the other hand, the lower limb movement score and SCIM of patients also improved significantly, corroborating findings given by distance.</p>
+      <p>Unlike disease diagnosis, rehabilitation evaluation requires not only identifying the difference between groups of subjects but also reflecting the trend of multi-session data. The longitudinal data of five subjects were utilized to investigate the rehabilitation outcome prediction of our proposed method. All reversed distance has a consistent increasing trend as clinical scores from the first session to the fourth, indicating the improved function in patients after treatment. However, individual discrepancies exist. Among the five subjects, subject 16, whose last two scanning times were not far from treatment (4 and 6 weeks after inclusion), showed the most aligned variance in distance and scores. The scanning time gaps for subjects 14, 15, and 17 were similar, and fluctuations and inconsistencies were observed in the variation of distance. The scanning time of the last session of subject 18 was far away from the first session, which may influence the distance calculated from fMRI data. In fact, after 2 weeks' treatment, subjects returned home and stopped rehabilitation programs. Different self-exercising in these periods may be the cause of fluctuations in distance. Nevertheless, all subjects showed improved clinical scores in the fourth session compared with the first session, which can also be identified using distance. This proved that our method can reflect general trends of functional changes after rehabilitation treatment, but giving more precise prediction is still difficult. Future studies are needed to recruit more subjects as well as unify the follow-up revisit time gap.</p>
+      <p>There are several drawbacks in this study. Firstly, the number of samples and scanning sessions is limited. The correlation of longitudinal distance and scores only contained four sessions. As a result, no meaningful statistical correlation coefficient could be used to assess the consistency of distance and scores. It is also intriguing to investigate how the distance of longitudinal data of HCs would change in our method. At the time, we are recruiting more subjects to expand the dataset. More data collected during rehabilitation could further validate our findings.</p>
+      <p>Second, the accuracy might be over-optimized, since labels of samples were considered during feature selection. All data from the first scanning session were fed into the <italic>t</italic>-test filter, which may cause the classification algorithm to overfit the training dataset. Also, the significant threshold was set to 0.05 without multiple comparison correction. We chose to use a linear SVM instead of kernel SVM to alleviate the overfitting problem. Besides, we want to find a set of rich and consistent features that separates patients from HCs, instead of modifying the feature set whenever new data arrives. The original uncorrected threshold could reveal as many potential significant connections as possible. As reported in the Results section, the empirical discovery rate was higher than the significant level and were consistent across brain atlases for each disease. Yet, the uncorrected significant level indeed resulted in high dimensionality of the feature space, introducing redundant features, and causing possible pitfalls in the classifier training. On the other hand, the <italic>t</italic>-test filter is a very simple feature selection method that could be replaced by more sophisticated and robust method in the future.</p>
+      <p>Third, we used SCI patients to validate our method, but how it performs on patients with brain lesions remains unknown. The traumatic, ischemic, or hemorrhagic lesions due to traumatic brain injury, stroke, or other diseases could impact and alter FC. The lesion location and type should be considered when building brain networks and extracting features in such circumstances. In addition to the whole-brain network, a local network built at the lesion location and surrounding area could possibly capture disease-specific features.</p>
+    </sec>
+    <sec sec-type="conclusions" id="s6">
+      <title>Conclusion</title>
+      <p>In this paper, we proposed a distance-based neurorehabilitation evaluation method, using rs-fMRI and linear SVM classifier, to investigate brain function changes following rehabilitation program. We proved that the distance results were consistent with clinical scores, indicating potential value in neurorehabilitation evaluation and outcome prediction. However, more robust feature extraction and selection techniques are needed before the method could be used in clinical practice. We hope that this paper would give rise to more innovations to tackle the problem of neurorehabilitation evaluation and outcome prediction.</p>
+    </sec>
+    <sec sec-type="data-availability" id="s7">
+      <title>Data Availability Statement</title>
+      <p>The whole-brain functional connectivity matrices used in this study are available on request to the corresponding author.</p>
+    </sec>
+    <sec id="s8">
+      <title>Ethics Statement</title>
+      <p>The studies involving human participants were reviewed and approved by the Ethics Committee of Beijing Tsinghua Changgung Hospital of China (IRB No. 2015-002). The patients/participants provided their written informed consent to participate in this study.</p>
+    </sec>
+    <sec id="s9">
+      <title>Author Contributions</title>
+      <p>YG is responsible for conducting experiments and writing the manuscript. WD designed and conducted experiments. YP and QW recruited subjects and collected data.</p>
+      <sec>
+        <title>Conflict of Interest</title>
+        <p>The authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.</p>
+      </sec>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>We would like to thank Zhuozheng Zhao from the Department of Radiology, Beijing Tsinghua Changgung Hospital, for fMRI technical guidance and support, and all the subjects for participating in this study. We also thank two of our reviewers for helpful comments during the development of this manuscript.</p>
+    </ack>
+    <fn-group>
+      <fn id="fn0001">
+        <p>
+          <sup>1</sup>
+          <ext-link ext-link-type="uri" xlink:href="http://circos.ca">http://circos.ca</ext-link>
+        </p>
+      </fn>
+    </fn-group>
+    <fn-group>
+      <fn fn-type="financial-disclosure">
+        <p><bold>Funding.</bold> This work was supported by a grant from Tsinghua University Initiative Scientific Research Program, Nos. 2014081266 and 20131089382, Beijing Municipal Science and Technology Commission: Research on Rehabilitation Robot for Winter Olympic Ice and Snow Sports Injury (Z181100003118004), Beijing Municipal Natural Science Foundation: Key Technology Research on Ankle Rehabilitation Robot for Motor Nerve Pathways Reconstruction based on Multimodality Information Feedback (L182028), and the Natural Science Foundation of China (NSFC-61171002 and NSFC-60372023).</p>
+      </fn>
+    </fn-group>
+    <ref-list>
+      <title>References</title>
+      <ref id="B1">
+        <label>1.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Fouad</surname><given-names>K</given-names></name><name><surname>Tse</surname><given-names>A</given-names></name></person-group>. <article-title>Adaptive changes in the injured spinal cord and their role in promoting functional recovery</article-title>. <source>Neurol Res.</source> (<year>2008</year>) <volume>30</volume>:<fpage>17</fpage>–<lpage>27</lpage>. <pub-id pub-id-type="doi">10.1179/016164107X251781</pub-id><pub-id pub-id-type="pmid">18387259</pub-id></mixed-citation>
+      </ref>
+      <ref id="B2">
+        <label>2.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>García-Alías</surname><given-names>G</given-names></name><name><surname>Edgerton</surname><given-names>VR</given-names></name></person-group>. <article-title>Who is who after spinal cord injury and repair? Can the brain stem descending motor pathways take control of skilled hand motor function?</article-title>
+<source>Neural Regen Res.</source> (<year>2015</year>) <volume>10</volume>:<fpage>1735</fpage>–<lpage>6</lpage>. <pub-id pub-id-type="doi">10.4103/1673-5374.165318</pub-id><pub-id pub-id-type="pmid">26807096</pub-id></mixed-citation>
+      </ref>
+      <ref id="B3">
+        <label>3.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Fink</surname><given-names>KL</given-names></name><name><surname>Cafferty</surname><given-names>WBJ</given-names></name></person-group>. <article-title>Reorganization of intact descending motor circuits to replace lost connections after injury</article-title>. <source>Neurotherapeutics.</source> (<year>2016</year>) <volume>13</volume>:<fpage>370</fpage>–<lpage>81</lpage>. <pub-id pub-id-type="doi">10.1007/s13311-016-0422-x</pub-id><pub-id pub-id-type="pmid">26846379</pub-id></mixed-citation>
+      </ref>
+      <ref id="B4">
+        <label>4.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Hamilton</surname><given-names>RH</given-names></name><name><surname>Chrysikou</surname><given-names>EG</given-names></name><name><surname>Coslett</surname><given-names>B</given-names></name></person-group>. <article-title>Mechanisms of aphasia recovery after stroke and the role of noninvasive brain stimulation</article-title>. <source>Brain Language.</source> (<year>2011</year>) <volume>118</volume>:<fpage>40</fpage>–<lpage>50</lpage>. <pub-id pub-id-type="doi">10.1016/j.bandl.2011.02.005</pub-id><pub-id pub-id-type="pmid">21459427</pub-id></mixed-citation>
+      </ref>
+      <ref id="B5">
+        <label>5.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Kim</surname><given-names>B</given-names></name><name><surname>Winstein</surname><given-names>C</given-names></name></person-group>. <article-title>Can neurological biomarkers of brain impairment be used to predict poststroke motor recovery? a systematic review</article-title>. <source>Neurorehabilitation Neural Rep.</source> (<year>2017</year>) <volume>31</volume>:<fpage>3</fpage>–<lpage>24</lpage>. <pub-id pub-id-type="doi">10.1177/1545968316662708</pub-id><pub-id pub-id-type="pmid">27503908</pub-id></mixed-citation>
+      </ref>
+      <ref id="B6">
+        <label>6.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Thiel</surname><given-names>A1</given-names></name><name><surname>Vahdat</surname><given-names>S</given-names></name></person-group>. <article-title>Structural, and resting-state brain connectivity of motor networks after stroke</article-title>. <source>Stroke.</source> (<year>2015</year>) <volume>46</volume>:<fpage>296</fpage>–<lpage>301</lpage>. <pub-id pub-id-type="doi">10.1161/STROKEAHA.114.006307</pub-id><pub-id pub-id-type="pmid">25477218</pub-id></mixed-citation>
+      </ref>
+      <ref id="B7">
+        <label>7.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Marino</surname><given-names>RJ</given-names></name><name><surname>Barros</surname><given-names>T</given-names></name><name><surname>Biering-Sorensen</surname><given-names>F</given-names></name><name><surname>Burns</surname><given-names>SP</given-names></name><name><surname>Donovan</surname><given-names>WH</given-names></name><name><surname>Graves</surname><given-names>DE</given-names></name><etal/></person-group>. <article-title>International standards for neurological classification of spinal cord injury</article-title>. <source>J Spinal Cord Med.</source> (<year>2003</year>) <volume>26</volume>:<fpage>S50</fpage>–<lpage>6</lpage>. <pub-id pub-id-type="doi">10.1080/10790268.2003.11754575</pub-id><pub-id pub-id-type="pmid">16296564</pub-id></mixed-citation>
+      </ref>
+      <ref id="B8">
+        <label>8.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Steeves</surname><given-names>JD</given-names></name><name><surname>Lammertse</surname><given-names>DP</given-names></name><name><surname>Kramer</surname><given-names>JL</given-names></name><name><surname>Kleitman</surname><given-names>N</given-names></name><name><surname>Kalsi-Ryan</surname><given-names>S</given-names></name><name><surname>Jones</surname><given-names>L</given-names></name><etal/></person-group>. <article-title>Outcome measures for acute/subacute cervical sensorimotor complete (AIS-A) spinal cord injury during a phase 2 clinical trial</article-title>. <source>Topics Spinal Cord Injury Rehabilitation.</source> (<year>2012</year>) <volume>18</volume>:<fpage>1</fpage>–<lpage>14</lpage>. <pub-id pub-id-type="doi">10.1310/sci1801-1</pub-id><pub-id pub-id-type="pmid">23239927</pub-id></mixed-citation>
+      </ref>
+      <ref id="B9">
+        <label>9.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Chen</surname><given-names>SY</given-names></name><name><surname>Winstein</surname><given-names>CJ</given-names></name></person-group>. <article-title>A systematic review of voluntary arm recovery in hemiparetic stroke: critical predictors for meaningful outcomes using the international classification of functioning, disability, and health</article-title>. <source>J Neurol Phys Ther.</source> (<year>2009</year>) <volume>33</volume>:<fpage>2</fpage>–<lpage>13</lpage>. <pub-id pub-id-type="doi">10.1097/NPT.0b013e318198a010</pub-id><pub-id pub-id-type="pmid">19265766</pub-id></mixed-citation>
+      </ref>
+      <ref id="B10">
+        <label>10.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Fox</surname><given-names>MD</given-names></name><name><surname>Greicius</surname><given-names>M</given-names></name></person-group>
+<article-title>Clinical applications of resting state functional connectivity. (in English)</article-title>, <source>Front Syst Neurosci Rev</source>. (<year>2010</year>) <volume>4</volume>:<fpage>19</fpage>
+<pub-id pub-id-type="doi">10.3389/fnsys.2010.00019</pub-id></mixed-citation>
+      </ref>
+      <ref id="B11">
+        <label>11.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Biswal</surname><given-names>B</given-names></name><name><surname>Yetkin</surname><given-names>FZ</given-names></name><name><surname>Haughton</surname><given-names>VM</given-names></name><name><surname>Hyde</surname><given-names>JS</given-names></name></person-group>. <article-title>Functional connectivity in the motor cortex of resting human brain using echo-planar mri</article-title>. <source>Magn Reson Med.</source> (<year>1995</year>) <volume>34</volume>:<fpage>537</fpage>–<lpage>541</lpage>. <pub-id pub-id-type="doi">10.1002/mrm.1910340409</pub-id><pub-id pub-id-type="pmid">8524021</pub-id></mixed-citation>
+      </ref>
+      <ref id="B12">
+        <label>12.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Greicius</surname><given-names>MD</given-names></name><name><surname>Krasnow</surname><given-names>B</given-names></name><name><surname>Reiss</surname><given-names>AL</given-names></name><name><surname>Menon</surname><given-names>V</given-names></name></person-group>. <article-title>Functional connectivity in the resting brain: a network analysis of the default mode hypothesis</article-title>. <source>Proc Natl Acad Sci USA.</source> (<year>2003</year>) <volume>100</volume>:<fpage>253</fpage>–<lpage>8</lpage>. <pub-id pub-id-type="doi">10.1073/pnas.0135058100</pub-id><pub-id pub-id-type="pmid">12506194</pub-id></mixed-citation>
+      </ref>
+      <ref id="B13">
+        <label>13.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Fox</surname><given-names>MD</given-names></name><name><surname>Snyder</surname><given-names>AZ</given-names></name><name><surname>Vincent</surname><given-names>JL</given-names></name><name><surname>Corbetta</surname><given-names>M</given-names></name><name><surname>Van Essen</surname><given-names>DC</given-names></name><name><surname>Raichle</surname><given-names>ME</given-names></name></person-group>. <article-title>The human brain is intrinsically organized into dynamic, anticorrelated functional networks</article-title>. <source>Proc Natl Acad Sci USA.</source> (<year>2005</year>) <volume>102</volume>:<fpage>9673</fpage>–<lpage>8</lpage>. <pub-id pub-id-type="doi">10.1073/pnas.0504136102</pub-id><pub-id pub-id-type="pmid">15976020</pub-id></mixed-citation>
+      </ref>
+      <ref id="B14">
+        <label>14.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Fox</surname><given-names>MD</given-names></name><name><surname>Corbetta</surname><given-names>M</given-names></name><name><surname>Snyder</surname><given-names>AZ</given-names></name><name><surname>Vincent</surname><given-names>JL</given-names></name><name><surname>Raichle</surname><given-names>ME</given-names></name></person-group>. <article-title>Spontaneous neuronal activity distinguishes human dorsal and ventral attention systems</article-title>. <source>Proc Natl Acad Sci USA.</source> (<year>2006</year>) <volume>103</volume>:<fpage>10046</fpage>–<lpage>51</lpage>. <pub-id pub-id-type="doi">10.1073/pnas.0604187103</pub-id><pub-id pub-id-type="pmid">16788060</pub-id></mixed-citation>
+      </ref>
+      <ref id="B15">
+        <label>15.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Seeley</surname><given-names>WW</given-names></name><name><surname>Menon</surname><given-names>V</given-names></name><name><surname>Schatzberg</surname><given-names>AF</given-names></name><name><surname>Keller</surname><given-names>J</given-names></name><name><surname>Glover</surname><given-names>GH</given-names></name><name><surname>Kenna</surname><given-names>H</given-names></name><etal/></person-group>. <article-title>Dissociable intrinsic connectivity networks for salience processing and executive control</article-title>. <source>J Neurosci.</source> (<year>2007</year>) <volume>27</volume>:<fpage>2349</fpage>–<lpage>56</lpage>. <pub-id pub-id-type="doi">10.1523/JNEUROSCI.5587-06.2007</pub-id><pub-id pub-id-type="pmid">17329432</pub-id></mixed-citation>
+      </ref>
+      <ref id="B16">
+        <label>16.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Damoiseaux</surname><given-names>JS</given-names></name><name><surname>Rombouts</surname><given-names>SA</given-names></name><name><surname>Barkhof</surname><given-names>F</given-names></name><name><surname>Scheltens</surname><given-names>P</given-names></name><name><surname>Stam</surname><given-names>CJ</given-names></name><name><surname>Smith</surname><given-names>SM</given-names></name><etal/></person-group>. <article-title>Consistent resting-state networks across healthy subjects</article-title>. <source>Proc Natl Acad Sci USA.</source> (<year>2006</year>) <volume>103</volume>:<fpage>13848</fpage>–<lpage>53</lpage>. <pub-id pub-id-type="doi">10.1073/pnas.0601417103</pub-id><pub-id pub-id-type="pmid">16945915</pub-id></mixed-citation>
+      </ref>
+      <ref id="B17">
+        <label>17.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Fan</surname><given-names>Y</given-names></name><name><surname>Rao</surname><given-names>H</given-names></name><name><surname>Hurt</surname><given-names>H</given-names></name><name><surname>Giannetta</surname><given-names>J</given-names></name><name><surname>Korczykowski</surname><given-names>M</given-names></name><name><surname>Shera</surname><given-names>D</given-names></name><etal/></person-group>. <article-title>Multivariate examination of brain abnormality using both structural and functional MRI</article-title>. <source>Neuroimage.</source> (<year>2007</year>) <volume>36</volume>:<fpage>1189</fpage>–<lpage>99</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2007.04.009</pub-id><pub-id pub-id-type="pmid">17512218</pub-id></mixed-citation>
+      </ref>
+      <ref id="B18">
+        <label>18.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Supekar</surname><given-names>K</given-names></name><name><surname>Menon</surname><given-names>V</given-names></name><name><surname>Rubin</surname><given-names>D</given-names></name><name><surname>Musen</surname><given-names>M</given-names></name><name><surname>Greicius</surname><given-names>MD</given-names></name></person-group>. <article-title>Network analysis of intrinsic functional brain connectivity in Alzheimer's disease</article-title>. <source>PLOS Comput Biol.</source> (<year>2008</year>) <volume>4</volume>:<fpage>e1000100</fpage>. <pub-id pub-id-type="doi">10.1371/journal.pcbi.1000100</pub-id><pub-id pub-id-type="pmid">18584043</pub-id></mixed-citation>
+      </ref>
+      <ref id="B19">
+        <label>19.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zhou</surname><given-names>J</given-names></name><name><surname>Greicius</surname><given-names>MD</given-names></name><name><surname>Gennatas</surname><given-names>ED</given-names></name><name><surname>Growdon</surname><given-names>ME</given-names></name><name><surname>Jang</surname><given-names>JY</given-names></name><name><surname>Rabinovici</surname><given-names>GD</given-names></name><etal/></person-group>
+<article-title>Divergent network connectivity changes in behavioural variant frontotemporal dementia and Alzheimer's disease</article-title>. <source>Brain.</source> (<year>2010</year>) <volume>133</volume>:<fpage>1352</fpage>–<lpage>67</lpage>. <pub-id pub-id-type="doi">10.1093/brain/awq075</pub-id><pub-id pub-id-type="pmid">20410145</pub-id></mixed-citation>
+      </ref>
+      <ref id="B20">
+        <label>20.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zeng</surname><given-names>LL</given-names></name><name><surname>Shen</surname><given-names>H</given-names></name><name><surname>Liu</surname><given-names>L</given-names></name><name><surname>Wang</surname><given-names>L</given-names></name><name><surname>Li</surname><given-names>B</given-names></name><name><surname>Fang</surname><given-names>P</given-names></name><etal/></person-group>. <article-title>Identifying major depression using whole-brain functional connectivity: a multivariate pattern analysis</article-title>. <source>Brain.</source> (<year>2012</year>) <volume>135</volume>:<fpage>1498</fpage>–<lpage>507</lpage>. <pub-id pub-id-type="doi">10.1093/brain/aws059</pub-id><pub-id pub-id-type="pmid">22418737</pub-id></mixed-citation>
+      </ref>
+      <ref id="B21">
+        <label>21.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Min</surname><given-names>YS</given-names></name><name><surname>Park</surname><given-names>JW</given-names></name><name><surname>Jin</surname><given-names>SU</given-names></name><name><surname>Jang</surname><given-names>KE</given-names></name><name><surname>Nam</surname><given-names>HU</given-names></name><name><surname>Lee</surname><given-names>YS</given-names></name><etal/></person-group>. <article-title>Alteration of resting-state brain sensorimotor connectivity following spinal cord injury: a resting-state functional magnetic resonance imaging study</article-title>. <source>J Neurotrauma.</source> (<year>2015</year>) <volume>32</volume>:<fpage>1422</fpage>–<lpage>7</lpage>. <pub-id pub-id-type="doi">10.1089/neu.2014.3661</pub-id><pub-id pub-id-type="pmid">25945389</pub-id></mixed-citation>
+      </ref>
+      <ref id="B22">
+        <label>22.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Oni-Orisan</surname><given-names>A</given-names></name><name><surname>Kaushal</surname><given-names>M</given-names></name><name><surname>Li</surname><given-names>W</given-names></name><name><surname>Leschke</surname><given-names>J</given-names></name><name><surname>Ward</surname><given-names>BD</given-names></name><name><surname>Vedantam</surname><given-names>A</given-names></name><etal/></person-group>. <article-title>Alterations in cortical sensorimotor connectivity following complete cervical spinal cord injury: a prospective resting-state fMRI study</article-title>. <source>PLOS ONE.</source> (<year>2016</year>) <volume>11</volume>:<fpage>e0150351</fpage>. <pub-id pub-id-type="doi">10.1371/journal.pone.0150351</pub-id><pub-id pub-id-type="pmid">26954693</pub-id></mixed-citation>
+      </ref>
+      <ref id="B23">
+        <label>23.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Sharp</surname><given-names>KG</given-names></name><name><surname>Gramer</surname><given-names>R</given-names></name><name><surname>Page</surname><given-names>SJ</given-names></name><name><surname>Cramer</surname><given-names>SC</given-names></name></person-group>. <article-title>Increased brain sensorimotor network activation after incomplete spinal cord injury</article-title>. <source>J Neurotrauma.</source> (<year>2017</year>) <volume>34</volume>:<fpage>623</fpage>–<lpage>31</lpage>. <pub-id pub-id-type="doi">10.1089/neu.2016.4503</pub-id><pub-id pub-id-type="pmid">27528274</pub-id></mixed-citation>
+      </ref>
+      <ref id="B24">
+        <label>24.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Pan</surname><given-names>Y</given-names></name><name><surname>Dou</surname><given-names>WB</given-names></name><name><surname>Wang</surname><given-names>YH</given-names></name><name><surname>Luo</surname><given-names>HW</given-names></name><name><surname>Ge</surname><given-names>YX</given-names></name><name><surname>Yan</surname><given-names>SY</given-names></name><etal/></person-group>. <article-title>Non-concomitant cortical structural and functional alterations in sensorimotor areas following incomplete spinal cord injury</article-title>. <source>Neural Regen Res.</source> (<year>2017</year>) <volume>12</volume>:<fpage>2059</fpage>–<lpage>66</lpage>. <pub-id pub-id-type="doi">10.4103/1673-5374.221165</pub-id><pub-id pub-id-type="pmid">29323046</pub-id></mixed-citation>
+      </ref>
+      <ref id="B25">
+        <label>25.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Kaushal</surname><given-names>M</given-names></name><name><surname>Oni-Orisan</surname><given-names>A</given-names></name><name><surname>Chen</surname><given-names>G</given-names></name><name><surname>Li</surname><given-names>W</given-names></name><name><surname>Leschke</surname><given-names>J</given-names></name><name><surname>Ward</surname><given-names>BD</given-names></name><etal/></person-group>. <article-title>Evaluation of whole-brain resting-state functional connectivity in spinal cord injury: a large-scale network analysis using network-based statistic</article-title>. <source>J Neurotrauma.</source> (<year>2017</year>) <volume>34</volume>:<fpage>1278</fpage>–<lpage>82</lpage>. <pub-id pub-id-type="doi">10.1089/neu.2016.4649</pub-id><pub-id pub-id-type="pmid">27937140</pub-id></mixed-citation>
+      </ref>
+      <ref id="B26">
+        <label>26.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Hawasli</surname><given-names>AH</given-names></name><name><surname>Rutlin</surname><given-names>J</given-names></name><name><surname>Roland</surname><given-names>JL</given-names></name><name><surname>Murphy</surname><given-names>RKJ</given-names></name><name><surname>Song</surname><given-names>SK</given-names></name><name><surname>Leuthardt</surname><given-names>EC</given-names></name><etal/></person-group>. <article-title>Spinal cord injury disrupts resting-state networks in the human brain</article-title>. <source>J Neurotrauma.</source> (<year>2018</year>) <volume>35</volume>:<fpage>864</fpage>–<lpage>73</lpage>. <pub-id pub-id-type="doi">10.1089/neu.2017.5212</pub-id><pub-id pub-id-type="pmid">29179629</pub-id></mixed-citation>
+      </ref>
+      <ref id="B27">
+        <label>27.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Min</surname><given-names>YS</given-names></name><name><surname>Chang</surname><given-names>Y</given-names></name><name><surname>Park</surname><given-names>JW</given-names></name><name><surname>Lee</surname><given-names>JM</given-names></name><name><surname>Cha</surname><given-names>J</given-names></name><name><surname>Yang</surname><given-names>JJ</given-names></name><etal/></person-group>. <article-title>Change of brain functional connectivity in patients with spinal cord injury: graph theory based approach</article-title>. <source>Ann Rehabil Med.</source> (<year>2015</year>) <volume>39</volume>:<fpage>374</fpage>–<lpage>83</lpage>. <pub-id pub-id-type="doi">10.5535/arm.2015.39.3.374</pub-id><pub-id pub-id-type="pmid">26161343</pub-id></mixed-citation>
+      </ref>
+      <ref id="B28">
+        <label>28.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Hou</surname><given-names>J</given-names></name><name><surname>Xiang</surname><given-names>Z</given-names></name><name><surname>Yan</surname><given-names>R</given-names></name><name><surname>Zhao</surname><given-names>M</given-names></name><name><surname>Wu</surname><given-names>Y</given-names></name><name><surname>Zhong</surname><given-names>J</given-names></name><etal/></person-group>. <article-title>Motor recovery at 6 months after admission is related to structural and functional reorganization of the spine and brain in patients with spinal cord injury</article-title>. <source>Hum Brain Mapping.</source> (<year>2016</year>) <volume>37</volume>:<fpage>2195</fpage>–<lpage>209</lpage>. <pub-id pub-id-type="doi">10.1002/hbm.23163</pub-id><pub-id pub-id-type="pmid">26936834</pub-id></mixed-citation>
+      </ref>
+      <ref id="B29">
+        <label>29.</label>
+        <mixed-citation publication-type="book"><person-group person-group-type="author"><name><surname>Vapnik</surname><given-names>V</given-names></name></person-group>
+<source>The Nature of Statistical Learning Theory</source>. <publisher-loc>Heidelberg</publisher-loc>: <publisher-name>Springer-Verlag</publisher-name> (<year>1995</year>). <pub-id pub-id-type="doi">10.1007/978-1-4757-2440-0</pub-id></mixed-citation>
+      </ref>
+      <ref id="B30">
+        <label>30.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>LaConte</surname><given-names>S</given-names></name><name><surname>Strother</surname><given-names>S</given-names></name><name><surname>Cherkassky</surname><given-names>V</given-names></name><name><surname>Anderson</surname><given-names>J</given-names></name><name><surname>Hu</surname><given-names>X</given-names></name></person-group>. <article-title>Support vector machines for temporal classification of block design fMRI data</article-title>. <source>Neuroimage.</source> (<year>2005</year>) <volume>26</volume>:<fpage>317</fpage>–<lpage>29</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2005.01.048</pub-id><pub-id pub-id-type="pmid">15907293</pub-id></mixed-citation>
+      </ref>
+      <ref id="B31">
+        <label>31.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Song</surname><given-names>S</given-names></name><name><surname>Zhan</surname><given-names>Z</given-names></name><name><surname>Long</surname><given-names>Z</given-names></name><name><surname>Zhang</surname><given-names>J</given-names></name><name><surname>Yao</surname><given-names>L</given-names></name></person-group>. <article-title>Comparative study of SVM methods combined with voxel selection for object category classification on fMRI data</article-title>. <source>PLoS ONE.</source> (<year>2011</year>) <volume>6</volume>:<fpage>e17191</fpage>. <pub-id pub-id-type="doi">10.1371/journal.pone.0017191</pub-id><pub-id pub-id-type="pmid">21359184</pub-id></mixed-citation>
+      </ref>
+      <ref id="B32">
+        <label>32.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Mourão-Miranda</surname><given-names>J</given-names></name><name><surname>Bokde</surname><given-names>AL</given-names></name><name><surname>Born</surname><given-names>C</given-names></name><name><surname>Hampel</surname><given-names>H</given-names></name><name><surname>Stetter</surname><given-names>M</given-names></name></person-group>. <article-title>Classifying brain states and determining the discriminating activation patterns: support vector machine on functional MRI data</article-title>. <source>Neuroimage.</source> (<year>2005</year>) <volume>28</volume>:<fpage>980</fpage>–<lpage>95</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2005.06.070</pub-id><pub-id pub-id-type="pmid">16275139</pub-id></mixed-citation>
+      </ref>
+      <ref id="B33">
+        <label>33.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Craddock</surname><given-names>RC</given-names></name><name><surname>Holtzheimer</surname><given-names>PE</given-names></name><name><surname>Hu</surname><given-names>XP</given-names></name><name><surname>Mayberg</surname><given-names>HS</given-names></name></person-group>. <article-title>Disease state prediction from resting state functional connectivity</article-title>. <source>Magn Reson Med.</source> (<year>2009</year>) <volume>62</volume>:<fpage>1619</fpage>–<lpage>28</lpage>. <pub-id pub-id-type="doi">10.1002/mrm.22159</pub-id><pub-id pub-id-type="pmid">19859933</pub-id></mixed-citation>
+      </ref>
+      <ref id="B34">
+        <label>34.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Rosa</surname><given-names>MJ</given-names></name><name><surname>Portugal</surname><given-names>L</given-names></name><name><surname>Hahn</surname><given-names>T</given-names></name><name><surname>Fallgatter</surname><given-names>AJ</given-names></name><name><surname>Garrido</surname><given-names>MI</given-names></name><name><surname>Shawe-Taylor</surname><given-names>J</given-names></name><etal/></person-group>. <article-title>Sparse network-based models for patient classification using fMRI</article-title>. <source>Neuroimage.</source> (<year>2015</year>) <volume>105</volume>:<fpage>493</fpage>–<lpage>506</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2014.11.021</pub-id><pub-id pub-id-type="pmid">25463459</pub-id></mixed-citation>
+      </ref>
+      <ref id="B35">
+        <label>35.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Catz</surname><given-names>A</given-names></name><name><surname>Itzkovich</surname><given-names>M</given-names></name><name><surname>Steinberg</surname><given-names>F</given-names></name><name><surname>Philo</surname><given-names>O</given-names></name><name><surname>Ring</surname><given-names>H</given-names></name><name><surname>Ronen</surname><given-names>J</given-names></name><etal/></person-group>. <article-title>The catz-itzkovich SCIM: a revised version of the spinal cord independence measure</article-title>. <source>Disabil Rehabilitation.</source> (<year>2001</year>) <volume>23</volume>:<fpage>263</fpage>–<lpage>8</lpage>. <pub-id pub-id-type="doi">10.1080/096382801750110919</pub-id><pub-id pub-id-type="pmid">11336099</pub-id></mixed-citation>
+      </ref>
+      <ref id="B36">
+        <label>36.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Chao-Gan</surname><given-names>Y</given-names></name><name><surname>Yu-Feng</surname><given-names>Z</given-names></name></person-group>
+<article-title>DPARSF: a MATLAB toolbox for “pipeline” data analysis of resting-state fMRI. (in English)</article-title>. <source>Front Syst Neurosci</source>. (<year>2010</year>) <volume>4</volume>:<fpage>13</fpage>
+<pub-id pub-id-type="doi">10.3389/fnsys.2010.00013</pub-id><pub-id pub-id-type="pmid">20577591</pub-id></mixed-citation>
+      </ref>
+      <ref id="B37">
+        <label>37.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zeng</surname><given-names>LL</given-names></name><name><surname>Wang</surname><given-names>D</given-names></name><name><surname>Fox</surname><given-names>MD</given-names></name><name><surname>Sabuncu</surname><given-names>M</given-names></name><name><surname>Hu</surname><given-names>D</given-names></name><name><surname>Ge</surname><given-names>M</given-names></name><etal/></person-group>. <article-title>Neurobiological basis of head motion in brain imaging</article-title>. <source>Proc Natl Academy of Sciences.</source> (<year>2014</year>) <volume>111</volume>:<fpage>6058</fpage>–<lpage>6062</lpage>. <pub-id pub-id-type="doi">10.1073/pnas.1317424111</pub-id><pub-id pub-id-type="pmid">24711399</pub-id></mixed-citation>
+      </ref>
+      <ref id="B38">
+        <label>38.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Van Dijk</surname><given-names>KR</given-names></name><name><surname>Sabuncu</surname><given-names>MR</given-names></name><name><surname>Buckner</surname><given-names>RL</given-names></name></person-group>. <article-title>The influence of head motion on intrinsic functional connectivity MRI</article-title>. <source>Neuroimage</source>. (<year>2012</year>) <volume>59</volume>:<fpage>431</fpage>–<lpage>8</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2011.07.044</pub-id><pub-id pub-id-type="pmid">21810475</pub-id></mixed-citation>
+      </ref>
+      <ref id="B39">
+        <label>39.</label>
+        <mixed-citation publication-type="book"><person-group person-group-type="author"><name><surname>Brodmann</surname><given-names>K</given-names></name></person-group>
+<source>Vergleichende Lokalisationslehre der Grosshirnrinde in ihren Prinzipien dargestellt auf Grund des Zellenbaues</source>. <publisher-loc>Leipzig</publisher-loc>: <publisher-name>Johann Ambrosius Barth</publisher-name> (<year>1909</year>).</mixed-citation>
+      </ref>
+      <ref id="B40">
+        <label>40.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Tzourio-Mazoyer</surname><given-names>N</given-names></name><name><surname>Landeau</surname><given-names>B</given-names></name><name><surname>Papathanassiou</surname><given-names>D</given-names></name><name><surname>Crivello</surname><given-names>F</given-names></name><name><surname>Etard</surname><given-names>O</given-names></name><name><surname>Delcroix</surname><given-names>N</given-names></name><etal/></person-group>. <article-title>Automated anatomical labeling of activations in SPM using a macroscopic anatomical parcellation of the MNI MRI single-subject brain</article-title>. <source>Neuroimage.</source> (<year>2002</year>) <volume>15</volume>:<fpage>273</fpage>–<lpage>89</lpage>. <pub-id pub-id-type="doi">10.1006/nimg.2001.0978</pub-id><pub-id pub-id-type="pmid">11771995</pub-id></mixed-citation>
+      </ref>
+      <ref id="B41">
+        <label>41.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Joliot</surname><given-names>M</given-names></name><name><surname>Jobard</surname><given-names>G</given-names></name><name><surname>Naveau</surname><given-names>M</given-names></name><name><surname>Delcroix</surname><given-names>N</given-names></name><name><surname>Petit</surname><given-names>L</given-names></name><name><surname>Zago</surname><given-names>L</given-names></name><etal/></person-group>. <article-title>AICHA: An atlas of intrinsic connectivity of homotopic areas</article-title>. <source>J Neurosci Methods.</source> (<year>2015</year>) <volume>254</volume>:<fpage>46</fpage>–<lpage>59</lpage>. <pub-id pub-id-type="doi">10.1016/j.jneumeth.2015.07.013</pub-id><pub-id pub-id-type="pmid">26213217</pub-id></mixed-citation>
+      </ref>
+      <ref id="B42">
+        <label>42.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Fan</surname><given-names>L</given-names></name><name><surname>Li</surname><given-names>H</given-names></name><name><surname>Zhuo</surname><given-names>J</given-names></name><name><surname>Zhang</surname><given-names>Y</given-names></name><name><surname>Wang</surname><given-names>J</given-names></name><name><surname>Chen</surname><given-names>L</given-names></name><etal/></person-group>. <article-title>The human brainnetome atlas: a new brain atlas based on connectional architecture</article-title>. <source>Cerebral Cortex.</source> (<year>2016</year>) <volume>26</volume>:<fpage>3508</fpage>–<lpage>26</lpage>. <pub-id pub-id-type="doi">10.1093/cercor/bhw157</pub-id><pub-id pub-id-type="pmid">27230218</pub-id></mixed-citation>
+      </ref>
+      <ref id="B43">
+        <label>43.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Irimia</surname><given-names>A</given-names></name><name><surname>Chambers</surname><given-names>MC</given-names></name><name><surname>Torgerson</surname><given-names>CM</given-names></name><name><surname>Van Horn</surname><given-names>JD</given-names></name></person-group>. <article-title>Circular representation of human cortical networks for subject and population-level connectomic visualization</article-title>. <source>Neuroimage.</source>
+<volume>60</volume>:<fpage>1340</fpage>–<lpage>51</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2012.01.107</pub-id><pub-id pub-id-type="pmid">22305988</pub-id></mixed-citation>
+      </ref>
+      <ref id="B44">
+        <label>44.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Park</surname><given-names>H</given-names></name><name><surname>Chang</surname><given-names>WH</given-names></name><name><surname>Ohn</surname><given-names>SH</given-names></name><name><surname>Kim</surname><given-names>ST</given-names></name><name><surname>Bang</surname><given-names>OY</given-names></name><name><surname>Pascual-Leone</surname><given-names>A</given-names></name><etal/></person-group>. <article-title>Longitudinal changes of resting-state functional connectivity during motor recovery after stroke</article-title>. <source>Stroke.</source>
+<volume>42</volume>:<fpage>1357</fpage>–<lpage>62</lpage>. <pub-id pub-id-type="doi">10.1161/STROKEAHA.110.596155</pub-id><pub-id pub-id-type="pmid">21441147</pub-id></mixed-citation>
+      </ref>
+      <ref id="B45">
+        <label>45.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Carter</surname><given-names>AR</given-names></name><name><surname>Astafiev</surname><given-names>SV</given-names></name><name><surname>Lang</surname><given-names>CE</given-names></name><name><surname>Connor</surname><given-names>LT</given-names></name><name><surname>Rengachary</surname><given-names>J</given-names></name><name><surname>Strube</surname><given-names>MJ</given-names></name><etal/></person-group>. <article-title>Resting interhemispheric functional magnetic resonance imaging connectivity predicts performance after stroke</article-title>. <source>Ann Neurol.</source> (<year>2010</year>) <volume>67</volume>:<fpage>365</fpage>–<lpage>75</lpage>. <pub-id pub-id-type="pmid">20373348</pub-id></mixed-citation>
+      </ref>
+      <ref id="B46">
+        <label>46.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Fan</surname><given-names>YT</given-names></name><name><surname>Wu</surname><given-names>CY</given-names></name><name><surname>Liu</surname><given-names>HL</given-names></name><name><surname>Lin</surname><given-names>KC</given-names></name><name><surname>Wai</surname><given-names>YY</given-names></name><name><surname>Chen</surname><given-names>YL</given-names></name></person-group>. <article-title>Neuroplastic changes in resting-state functional connectivity after stroke rehabilitation</article-title>. <source>Front Hum Neurosci.</source> (<year>2015</year>) <volume>9</volume>:<fpage>546</fpage>. <pub-id pub-id-type="doi">10.3389/fnhum.2015.00546</pub-id><pub-id pub-id-type="pmid">26557065</pub-id></mixed-citation>
+      </ref>
+      <ref id="B47">
+        <label>47.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Hu</surname><given-names>J</given-names></name><name><surname>Du</surname><given-names>J</given-names></name><name><surname>Xu</surname><given-names>Q</given-names></name><name><surname>Yang</surname><given-names>F</given-names></name><name><surname>Zeng</surname><given-names>F</given-names></name><name><surname>Weng</surname><given-names>Y</given-names></name><etal/></person-group>
+<article-title>Dynamic network analysis reveals altered temporal variability in brain regions after stroke: a longitudinal resting-state fMRI study</article-title>. <source>Neural Plasticity.</source> (<year>2018</year>) <volume>10</volume>:<fpage>2018</fpage>
+<pub-id pub-id-type="doi">10.1155/2018/9394156</pub-id></mixed-citation>
+      </ref>
+      <ref id="B48">
+        <label>48.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Qin</surname><given-names>J</given-names></name><name><surname>Shen</surname><given-names>H</given-names></name><name><surname>Zeng</surname><given-names>L. L</given-names></name><name><surname>Jiang</surname><given-names>W</given-names></name><name><surname>Liu</surname><given-names>L</given-names></name><name><surname>Hu</surname><given-names>D</given-names></name></person-group>. <article-title>Predicting clinical responses in major depression using intrinsic functional connectivity</article-title>. <source>Neuro Rep.</source> (<year>2015</year>) <volume>26</volume>:<fpage>675</fpage>–<lpage>80</lpage>. <pub-id pub-id-type="doi">10.1097/WNR.0000000000000407</pub-id><pub-id pub-id-type="pmid">26164454</pub-id></mixed-citation>
+      </ref>
+      <ref id="B49">
+        <label>49.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Nobukawa</surname><given-names>S</given-names></name><name><surname>Kikuchi</surname><given-names>M</given-names></name><name><surname>Takahashi</surname><given-names>T</given-names></name></person-group>. <article-title>Changes in functional connectivity dynamics with aging: a dynamical phase synchronization approach</article-title>. <source>Neuroimage.</source> (<year>2019</year>) <volume>188</volume>:<fpage>357</fpage>–<lpage>68</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2018.12.008</pub-id><pub-id pub-id-type="pmid">30529509</pub-id></mixed-citation>
+      </ref>
+      <ref id="B50">
+        <label>50.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Xia</surname><given-names>Y</given-names></name><name><surname>Chen</surname><given-names>Q</given-names></name><name><surname>Shi</surname><given-names>L</given-names></name><name><surname>Li</surname><given-names>M</given-names></name><name><surname>Gong</surname><given-names>W</given-names></name><name><surname>Chen</surname><given-names>H</given-names></name><etal/></person-group>. <article-title>Tracking the dynamic functional connectivity structure of the human brain across the adult lifespan</article-title>. <source>Hum Brain Mapp.</source> (<year>2019</year>) <volume>40</volume>:<fpage>717</fpage>–<lpage>28</lpage>. <pub-id pub-id-type="doi">10.1002/hbm.24385</pub-id><pub-id pub-id-type="pmid">30515914</pub-id></mixed-citation>
+      </ref>
+      <ref id="B51">
+        <label>51.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Horien</surname><given-names>C</given-names></name><name><surname>Shen</surname><given-names>X</given-names></name><name><surname>Scheinost</surname><given-names>D</given-names></name><name><surname>Constable</surname><given-names>RT</given-names></name></person-group>. <article-title>The individual functional connectome is unique and stable over months to years</article-title>. <source>Neuroimage.</source> (<year>2019</year>) <volume>189</volume>:<fpage>676</fpage>–<lpage>87</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2019.02.002</pub-id><pub-id pub-id-type="pmid">30721751</pub-id></mixed-citation>
+      </ref>
+      <ref id="B52">
+        <label>52.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Dai</surname><given-names>Z</given-names></name><name><surname>Yan</surname><given-names>C</given-names></name><name><surname>Wang</surname><given-names>Z</given-names></name><name><surname>Wang</surname><given-names>J</given-names></name><name><surname>Xia</surname><given-names>M</given-names></name><name><surname>Li</surname><given-names>K</given-names></name><etal/></person-group>. <article-title>Discriminative analysis of early Alzheimer's disease using multi-modal imaging and multi-level characterization with multi-classifier (M3)</article-title>. <source>Neuroimage.</source> (<year>2012</year>) <volume>59</volume>:<fpage>2187</fpage>–<lpage>95</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2011.10.003</pub-id><pub-id pub-id-type="pmid">22008370</pub-id></mixed-citation>
+      </ref>
+      <ref id="B53">
+        <label>53.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Wang</surname><given-names>J</given-names></name><name><surname>Wang</surname><given-names>L</given-names></name><name><surname>Zang</surname><given-names>Y</given-names></name><name><surname>Yang</surname><given-names>H</given-names></name><name><surname>Tang</surname><given-names>H</given-names></name><name><surname>Gong</surname><given-names>Q</given-names></name><etal/></person-group>. <article-title>Parcellation-dependent small-world brain functional networks: A resting-state fMRI study</article-title>. <source>Hum Brain Mapp.</source> (<year>2009</year>) <volume>30</volume>:<fpage>1511</fpage>–<lpage>23</lpage>. <pub-id pub-id-type="doi">10.1002/hbm.20623</pub-id><pub-id pub-id-type="pmid">18649353</pub-id></mixed-citation>
+      </ref>
+      <ref id="B54">
+        <label>54.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Craddock</surname><given-names>RC</given-names></name><name><surname>James</surname><given-names>GA</given-names></name><name><surname>Holtzheimer</surname><given-names>PE</given-names><suffix>III</suffix></name><name><surname>Hu</surname><given-names>XP</given-names></name><name><surname>Mayberg</surname><given-names>HS</given-names></name></person-group>. <article-title>A whole brain fMRI atlas generated via spatially constrained spectral clustering</article-title>. <source>Hum Brain Mapp.</source> (<year>2012</year>) <volume>33</volume>:<fpage>1914</fpage>–<lpage>28</lpage>. <pub-id pub-id-type="doi">10.1002/hbm.21333</pub-id><pub-id pub-id-type="pmid">21769991</pub-id></mixed-citation>
+      </ref>
+      <ref id="B55">
+        <label>55.</label>
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zalesky</surname><given-names>A</given-names></name><name><surname>Fornito</surname><given-names>A</given-names></name><name><surname>Harding</surname><given-names>IH</given-names></name><name><surname>Cocchi</surname><given-names>L</given-names></name><name><surname>Yücel</surname><given-names>M</given-names></name><name><surname>Pantelis</surname><given-names>C</given-names></name><etal/></person-group>. <article-title>Whole-brain anatomical networks: does the choice of nodes matter?</article-title>
+<source>NeuroImage.</source> (<year>2010</year>) <volume>50</volume>:<fpage>970</fpage>–<lpage>83</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2009.12.027</pub-id><pub-id pub-id-type="pmid">20035887</pub-id></mixed-citation>
+      </ref>
+    </ref-list>
+    <app-group>
+      <app id="A1">
+        <title>Appendix</title>
+        <fig id="F4" position="anchor">
+          <label>Figure A1</label>
+          <caption>
+            <p>Circos plot. The whole brain was separated into frontal, parietal, temporal and occipital lobe, with or without cerebellum. Each brain region was arranged so that frontal regions appeared on the top of the graph. Only the most different 100 connections between the healthy control group and patient group (connections with highest absolute <italic>t</italic>-values during <italic>t</italic>-test) were shown. <bold>(A)</bold> Brodmann atlas; <bold>(B)</bold> Brodmann_ce atlas; <bold>(C)</bold> AAL atlas; <bold>(D)</bold> AICHA atlas; <bold>(E)</bold> Brainnetome atlas.</p>
+          </caption>
+          <graphic xlink:href="fneur-10-01105-a0001"/>
+        </fig>
+        <p>For illustration purposes, we plotted the significant connections using Circos. The outer ring in the Circos plot represents brain regions and is separated into frontal, parietal, temporal, and occipital lobes, with or without cerebellum. Each tick in the ring stands for a brain region. The ticks are arranged so that frontal regions appear on the top of the graph. The lines inside Circos plots represent connections between two regions.</p>
+        <p>In our study, during <italic>t</italic>-test filtering, each connection was tested for significant difference between all patients and HCs at baseline. Connections were sorted by absolute <italic>t</italic> value and the top 100 connections were plotted in the graph. A red line means that for this connection, patients were significantly higher than HCs and a blue line means the opposite. The same procedure was repeated for all five atlases.</p>
+      </app>
+    </app-group>
+  </back>
+</article>

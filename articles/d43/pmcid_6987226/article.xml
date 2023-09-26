@@ -1,0 +1,1839 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">Sci Rep</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Sci Rep</journal-id>
+      <journal-title-group>
+        <journal-title>Scientific Reports</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">2045-2322</issn>
+      <publisher>
+        <publisher-name>Nature Publishing Group UK</publisher-name>
+        <publisher-loc>London</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">31992762</article-id>
+      <article-id pub-id-type="pmc">6987226</article-id>
+      <article-id pub-id-type="publisher-id">57915</article-id>
+      <article-id pub-id-type="doi">10.1038/s41598-020-57915-w</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Rethinking Measures of Functional Connectivity via Feature Extraction</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" corresp="yes">
+          <name>
+            <surname>Mohanty</surname>
+            <given-names>Rosaleena</given-names>
+          </name>
+          <address>
+            <email>rosaleena.mohanty@ki.se</email>
+          </address>
+          <xref ref-type="aff" rid="Aff1">1</xref>
+          <xref ref-type="aff" rid="Aff2">2</xref>
+          <xref ref-type="aff" rid="Aff5">5</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Sethares</surname>
+            <given-names>William A.</given-names>
+          </name>
+          <xref ref-type="aff" rid="Aff2">2</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-5666-3239</contrib-id>
+          <name>
+            <surname>Nair</surname>
+            <given-names>Veena A.</given-names>
+          </name>
+          <xref ref-type="aff" rid="Aff1">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Prabhakaran</surname>
+            <given-names>Vivek</given-names>
+          </name>
+          <xref ref-type="aff" rid="Aff1">1</xref>
+          <xref ref-type="aff" rid="Aff3">3</xref>
+          <xref ref-type="aff" rid="Aff4">4</xref>
+        </contrib>
+        <aff id="Aff1"><label>1</label><institution-wrap><institution-id institution-id-type="ISNI">0000 0001 2167 3675</institution-id><institution-id institution-id-type="GRID">grid.14003.36</institution-id><institution>Department of Radiology, </institution><institution>University of Wisconsin–Madison, </institution></institution-wrap>Madison, WI USA </aff>
+        <aff id="Aff2"><label>2</label><institution-wrap><institution-id institution-id-type="ISNI">0000 0001 2167 3675</institution-id><institution-id institution-id-type="GRID">grid.14003.36</institution-id><institution>Electrical Engineering, </institution><institution>University of Wisconsin-Madison, </institution></institution-wrap>Madison, WI USA </aff>
+        <aff id="Aff3"><label>3</label><institution-wrap><institution-id institution-id-type="ISNI">0000 0001 2167 3675</institution-id><institution-id institution-id-type="GRID">grid.14003.36</institution-id><institution>Department of Psychiatry, </institution><institution>University of Wisconsin-Madison, </institution></institution-wrap>Madison, USA </aff>
+        <aff id="Aff4"><label>4</label><institution-wrap><institution-id institution-id-type="ISNI">0000 0001 2167 3675</institution-id><institution-id institution-id-type="GRID">grid.14003.36</institution-id><institution>Department of Medical Physics, </institution><institution>University of Wisconsin–Madison, </institution></institution-wrap>Madison, WI USA </aff>
+        <aff id="Aff5"><label>5</label><institution-wrap><institution-id institution-id-type="ISNI">0000 0004 1937 0626</institution-id><institution-id institution-id-type="GRID">grid.4714.6</institution-id><institution>Karolinska Institutet, </institution></institution-wrap>Huddinge, Sweden </aff>
+      </contrib-group>
+      <pub-date pub-type="epub">
+        <day>28</day>
+        <month>1</month>
+        <year>2020</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>28</day>
+        <month>1</month>
+        <year>2020</year>
+      </pub-date>
+      <pub-date pub-type="collection">
+        <year>2020</year>
+      </pub-date>
+      <volume>10</volume>
+      <elocation-id>1298</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>18</day>
+          <month>7</month>
+          <year>2019</year>
+        </date>
+        <date date-type="accepted">
+          <day>8</day>
+          <month>1</month>
+          <year>2020</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>© The Author(s) 2020</copyright-statement>
+        <license license-type="OpenAccess">
+          <license-p><bold>Open Access</bold> This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons license, and indicate if changes were made. The images or other third party material in this article are included in the article’s Creative Commons license, unless indicated otherwise in a credit line to the material. If material is not included in the article’s Creative Commons license and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this license, visit <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</ext-link>.</license-p>
+        </license>
+      </permissions>
+      <abstract id="Abs1">
+        <p id="Par1">Functional magnetic resonance imaging (fMRI)-based functional connectivity (FC) commonly characterizes the functional connections in the brain. Conventional quantification of FC by Pearson's correlation captures linear, time-domain dependencies among blood-oxygen-level-dependent (BOLD) signals. We examined measures to quantify FC by investigating: (i) Is Pearson's correlation sufficient to characterize FC? (ii) Can alternative measures better quantify FC? (iii) What are the implications of using alternative FC measures? FMRI analysis in healthy adult population suggested that: (i) Pearson's correlation cannot comprehensively capture BOLD inter-dependencies. (ii) Eight alternative FC measures were similarly consistent between task and resting-state fMRI, improved age-based classification and provided better association with behavioral outcomes. (iii) Formulated hypotheses were: first, in lieu of Pearson’s correlation, an augmented, composite and multi-metric definition of FC is more appropriate; second, canonical large-scale brain networks may depend on the chosen FC measure. A thorough notion of FC promises better understanding of variations within a given population.</p>
+      </abstract>
+      <kwd-group kwd-group-type="npg-subject">
+        <title>Subject terms</title>
+        <kwd>Network models</kwd>
+        <kwd>Diagnostic markers</kwd>
+      </kwd-group>
+      <funding-group>
+        <award-group>
+          <funding-source>
+            <institution-wrap>
+              <institution-id institution-id-type="FundRef">https://doi.org/10.13039/100000185</institution-id>
+              <institution>United States Department of Defense | Defense Advanced Research Projects Agency (DARPA)</institution>
+            </institution-wrap>
+          </funding-source>
+          <award-id>RCI Program MTO, N66001-12-C-4025, HIST Program MTO, N66001-11-1-4013;</award-id>
+          <principal-award-recipient>
+            <name>
+              <surname>Mohanty</surname>
+              <given-names>Rosaleena</given-names>
+            </name>
+          </principal-award-recipient>
+        </award-group>
+      </funding-group>
+      <funding-group>
+        <award-group>
+          <funding-source>
+            <institution-wrap>
+              <institution-id institution-id-type="FundRef">https://doi.org/10.13039/100000968</institution-id>
+              <institution>American Heart Association (American Heart Association, Inc.)</institution>
+            </institution-wrap>
+          </funding-source>
+          <award-id>1T32EB011434-01A1</award-id>
+          <principal-award-recipient>
+            <name>
+              <surname>Mohanty</surname>
+              <given-names>Rosaleena</given-names>
+            </name>
+          </principal-award-recipient>
+        </award-group>
+      </funding-group>
+      <custom-meta-group>
+        <custom-meta>
+          <meta-name>issue-copyright-statement</meta-name>
+          <meta-value>© The Author(s) 2020</meta-value>
+        </custom-meta>
+      </custom-meta-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="Sec1" sec-type="introduction">
+      <title>Introduction</title>
+      <p id="Par2">Characterization of the brain connectome has been highlighted by numerous human and animal studies<sup><xref ref-type="bibr" rid="CR1">1</xref>–<xref ref-type="bibr" rid="CR3">3</xref></sup> which have provided useful and meaningful information to explain a wide range of pathological conditions and behavioral traits in various population groups. The brain connectome can be understood using many measures of connectivity of distinct nature: structural (using imaging techniques such as T1 and diffusion magnetic resonance imaging (MRI)), functional (using functional imaging such as positron emission tomography and functional MRI) as well as neuronal (using scalp recordings such as in magnetoencephalogram (MEG) and electroencephalogram (EEG)).</p>
+      <p id="Par3">Functional connectivity (FC), originally defined as the statistical dependencies among neurophysiological events of anatomically distinct brain regions in positron emission imaging<sup><xref ref-type="bibr" rid="CR4">4</xref></sup>, was subsequently applied to functional MRI (fMRI) data<sup><xref ref-type="bibr" rid="CR5">5</xref></sup>. Most conventionally, FC is defined by measuring similarity between brain signals arising from two regions. Under a traditional notion of similarity such as Pearson’s correlation, signals from two anatomically separated brain regions may appear correlated and hence indicate that the regions are functionally connected in the brain<sup><xref ref-type="bibr" rid="CR6">6</xref>–<xref ref-type="bibr" rid="CR9">9</xref></sup>. It must be noted, however, that a strong correlation between two regions may not guarantee a functional connection of the underlying neurons. For instance, there may exist a reasonable correlation of neuronal activity of two regions under the influence of external or common inputs. Although the concepts of similarity and dissimilarity appear simple, mathematical formulations reveal otherwise. Statistical dependencies between two signals can arise in a number of different ways. Two distinct similarity measures may not measure similarity in the same way. Likewise, a similarity measure may not bear a direct and simple inverse relationship to a dissimilarity measure.</p>
+      <p id="Par4">The implication that functional connectivity is dependent upon the measure used to quantify it remains relatively unexplored. Brain regions may appear connected functionally under one definition but disconnected under another<sup><xref ref-type="bibr" rid="CR10">10</xref>–<xref ref-type="bibr" rid="CR16">16</xref></sup> irrespective of structural connectivity. The notion of functional connectivity has driven characterization of neural bases not only in the typical healthy population but also various pathological groups demonstrating aberrant patterns, including but not limited to neurological (e.g. stroke, epilepsy)<sup><xref ref-type="bibr" rid="CR15">15</xref>,<xref ref-type="bibr" rid="CR16">16</xref></sup>, neurodegenerative (e.g. Alzheimer’s disease, dementia)<sup><xref ref-type="bibr" rid="CR11">11</xref>,<xref ref-type="bibr" rid="CR14">14</xref></sup> and psychiatric (e.g. depression, schizophrenia)<sup><xref ref-type="bibr" rid="CR12">12</xref>,<xref ref-type="bibr" rid="CR13">13</xref></sup> brain diseases. Thus, it would be key to understand the various definitions of connectivity relative to each other in order to sensibly choose a measure to be used, which could, in turn, be utilized to update and/or improve the current knowledge of the brain connectome. A particular definition of connectivity may also convey distinct types of information about the neural bases.</p>
+      <p id="Par5">In brief, the goal of this study was to identify multiple alternative measures that could be used to quantify FC. These measures may be complementary to one another and the goal is to assess them by formulating research questions specific and relevant to the study of connectivity in neuroscience. In particular, the following three research questions were formulated: (i) Does Pearson’s correlation, which is the conventional way of defining FC, provide a sufficient characterization of it? (ii) Are there alternative measures that could be used to better quantify FC? (iii) How do the measures of FC compare relatively for population-based classification and prediction of behavioral data? (iv) What are the implications of using varying measures of FC? (v) What could be done to choose the best notion(s) of FC?</p>
+      <p id="Par6">In this exploratory study, functional MRI data-based experimentation was adopted in healthy human population to answer these questions. The preliminary results indicated that: (i) the conventional measure of Pearson’s correlation alone may provide an incomplete characterization of FC; (ii) there exist several alternative measures that can capture interactions between brain signals in different ways; (iii) no single measure of FC stands out in the context of classification or prediction; (iv) the idea of large-scale brain connectivity or functional configuration of the brain, largely identified on the basis of Pearson’s correlation, may look different under the chosen definition of FC; and (v) rather than relying on one single measure of FC, a wiser option may be to combine multiple complementary measures of FC, choose a subset of them on the basis of feature selection to avoid overfitting and use the more comprehensive multi-metric definition.</p>
+    </sec>
+    <sec id="Sec2" sec-type="results">
+      <title>Results</title>
+      <sec id="Sec3">
+        <title>Incomplete characterization of functional connectivity</title>
+        <p id="Par7">Cases of the like presented in Fig. <xref rid="Fig1" ref-type="fig">1</xref> were found not to be limited to the default mode network (DMN) alone in healthy participants. Such cases are evidence in support for the claim that FC cannot always be completely quantified by Pearson’s correlation, and especially misses out on individual-level variations. This can also be mathematically substantiated by considering the extreme case of zero Pearson’s correlation between two signals. If two signals are uncorrelated, independence is not necessarily implied. More generally, in cases where a low value of Pearson’s correlation is observed, it may be incorrect to assume that there is no dependence between them. It simply means that there is no linear dependence between them.<fig id="Fig1"><label>Figure 1</label><caption><p>A contrary case. <bold>Note:</bold> An example of FC within the standard DMN in a young healthy adult: (<bold>a</bold>) left hippocampus (denoted by A) and left angular gyrus (denoted by B) within the DMN are considered based on the Willard functional atlas; (<bold>b</bold>) the BOLD time series signals from preprocessed resting-state functional MRI were extracted from each region; (<bold>c</bold>) a scatter plot comparing the two BOLD time series shows the temporal linear correlation between them; (<bold>d</bold>) three distinct similarity measures of FC between the signals are compared; FC = functional connectivity; DMN = default mode network; BOLD = blood-oxygen-level-dependent;.</p></caption><graphic xlink:href="41598_2020_57915_Fig1_HTML" id="d29e364"/></fig></p>
+      </sec>
+      <sec id="Sec4">
+        <title>Alternative characterizations of functional connectivity</title>
+        <p id="Par8">This study was aimed at investigating alternative ways of characterizing FC that could augment and be complementary to Pearson’s correlation. FC was evaluated with eight alternative measures namely: cross-correlation, coherence, wavelet coherence, mutual information, Euclidean distance, cityblock distance, dynamic time warping and earth mover’s distance. These measures were included as they capture different aspects of statistical dependence between BOLD signals (such as time-, frequency- and wavelet-domain information, similarity and dissimilarity measures, linear and non-linear dependencies). These different measures were compared and contrasted with three experiments which assessed the consistency of information provided by the FC measures, utility of the FC measures in population-based discrimination and the biological plausibility of using these FC measures.</p>
+      </sec>
+      <sec id="Sec5">
+        <title>Experiment 1 (E1)</title>
+        <p id="Par9">The goal of the first experiment was to understand the relative consistency of the different FC measures when evaluated in young and healthy individuals. Within-individual consistency was first established by comparing the overlap (Sørensen-Dice similarity coefficient) of the FC pattern observed in task (motor and verbal) and resting-state functional MRI and then averaging across individuals for each FC measure.</p>
+      </sec>
+      <sec id="Sec6">
+        <title>Findings from E1: Consistency of functional connectivity</title>
+        <p id="Par10">Consistency of all of the identified FC measures was evaluated by comparing task functional MRI and resting-state functional MRI in young healthy adults (demographics in Table <xref rid="Tab1" ref-type="table">1</xref>). Since the connectivity pattern may be different for each FC measure, the task functional MRI data offer a form of ground truth as they activate specific regions in the brain which can bear correspondence with those in resting condition. Thresholded FC maps (threshold = one standard deviation above grand mean) between task and resting-state conditions are illustrated for Pearson’s correlation in Fig. <xref rid="Fig2" ref-type="fig">2</xref> (subfigure A) and remaining FC measures in Supplementary Fig. <xref rid="MOESM1" ref-type="media">1</xref>.<table-wrap id="Tab1"><label>Table 1</label><caption><p>Characteristics of young healthy participants included in <bold>E1</bold>.</p></caption><table frame="hsides" rules="groups"><thead><tr><th>Characteristic</th><th>Value</th></tr></thead><tbody><tr><td>N</td><td>19</td></tr><tr><td>Age (M ± SD in years)</td><td>21.89 ± 2.42</td></tr><tr><td>Gender</td><td>9 females</td></tr><tr><td>Education (M ± SD in years)</td><td>16.21 ± 2.32</td></tr><tr><td>Handedness</td><td>19 right-handed</td></tr></tbody></table><table-wrap-foot><p>Note: M = mean; SD = standard deviation;</p></table-wrap-foot></table-wrap><fig id="Fig2"><label>Figure 2</label><caption><p>FC in 19 young healthy adults. <bold>(A)</bold> Comparison of FC based on Pearson’s correlation in between task and resting-state conditions for <bold>E1</bold> in: (a) left motor (b) right motor and (c) language networks. <bold>(B</bold>) Whole brain resting-state FC defined based on Pearson’s correlation in 13 distinct brain networks given by Power functional atlas in <bold>E1</bold>. <bold>Note: (A)</bold> defined based on Power functional atlas. In each sub-image, the first row represents the FC matrix averaged across all 19 participants (i.e. each cell was the average of individual FC values in the cell) and the second row represents the thresholded FC matrix averaged across all participants. The red lines in (a) and (b) show the separation between hand-motor and mouth-motor brain regions. Similar matrices for the alternative measures of FC can be found in Supplementary Fig. <xref rid="MOESM1" ref-type="media">2</xref>. <bold>(B)</bold> (a) FC matrix averaged across all 19 participants (i.e. each cell was the average of individual FC values in the cell); (b) thresholded FC matrix averaged across all participants; (c) simulated idealized FC matrix. The red lines represent the separation between brain regions belonging to a specific network. The regions are grouped in the following order: audio, visual, motor, default mode, cingulo-opercular task, fronto-parietal task, memory, salience, dorsal attention, ventral attention, subcortical, cerebellar, uncertain networks. Similar matrices for the alternative measures of FC can be found in Supplementary Fig. <xref rid="MOESM1" ref-type="media">3</xref>.</p></caption><graphic xlink:href="41598_2020_57915_Fig2_HTML" id="d29e482"/></fig></p>
+        <p id="Par11">Consistency of resting-state FC, quantified by Sørensen-Dice similarity coefficient, is tabulated in Table <xref rid="Tab2" ref-type="table">2</xref> for the motor and language networks. While mostly comparable across many FC measures, the overlap coefficients for Pearson’s correlation are not necessarily the best in any of these tested networks. It was possible to validate the consistency for motor and language networks based on task functional MRI whereas the same could not be performed for other networks due to lack of corresponding task functional MRI in this cohort.<table-wrap id="Tab2"><label>Table 2</label><caption><p>Consistency of each measure of FC as measured by Sørensen-Dice similarity coefficient between task and resting-state conditions in three networks used in <bold>E1</bold>.</p></caption><table frame="hsides" rules="groups"><thead><tr><th>FC Measure</th><th>L-Motor vs Rest</th><th>R-Motor vs Rest</th><th>Language vs Rest</th></tr></thead><tbody><tr><td>Correlation</td><td>0.502</td><td>0.466</td><td>0.508</td></tr><tr><td>Cross-correlation</td><td><bold>0.506</bold></td><td>0.496</td><td>0.492</td></tr><tr><td>Coherence</td><td>0.450</td><td>0.440</td><td>0.473</td></tr><tr><td>Wavelet coherence</td><td>0.500</td><td><bold>0.537</bold></td><td>0.525</td></tr><tr><td>Mutual information</td><td>0.3438</td><td>0.386</td><td>0.460</td></tr><tr><td>Euclidean distance</td><td>0.455</td><td>0.438</td><td>0.592</td></tr><tr><td>Cityblock distance</td><td>0.448</td><td>0.432</td><td>0.604</td></tr><tr><td>Dynamic time warping</td><td>0.444</td><td>0.446</td><td>0.584</td></tr><tr><td>Earth mover’s distance</td><td>0.497</td><td>0.514</td><td><bold>0.618</bold></td></tr></tbody></table><table-wrap-foot><p><bold>Note:</bold> Functional networks defined based on Power atlas in <bold>E1</bold>. The highest overlap in each network is represented in bold.</p></table-wrap-foot></table-wrap></p>
+        <p id="Par12">An alternate procedure to evaluate the consistency of the resting-state FC at the whole-brain level was conducted by, first, simulating an <italic>idealized</italic> FC structure with a block structure along the diagonal as shown in Fig. <xref rid="Fig2" ref-type="fig">2</xref> (subfigure B: c) and second, comparing the observed resting-state FC to it with Sørensen-Dice similarity coefficient between them. We refer to it as an idealized FC structure as it reflects maximum connectivity within any given network (block) and minimum connectivity between distinct networks (blocks) and allows us to compare the different FC measures. This is visually represented for Pearson’s correlation in Fig. <xref rid="Fig2" ref-type="fig">2</xref> (subfigure B) (and for all other measures in Supplementary Fig. <xref rid="MOESM1" ref-type="media">2</xref>) and quantified for all FC measures in Table <xref rid="Tab3" ref-type="table">3</xref>. Most of the FC measures showed comparable overlap between the idealized and observed FC pattern with Pearson’s correlation showing the highest overlap. This would then raise the following question: is it possible to do better than the current observed overlap? This is evaluated in the following experiments.<table-wrap id="Tab3"><label>Table 3</label><caption><p>Consistency of each measure of FC as measured by Sørensen-Dice similarity coefficient between the observed thresholded FC matrix (Fig. <xref rid="Fig2" ref-type="fig">2</xref> (subfigure B: b)) and idealized thresholded FC matrix (Fig. <xref rid="Fig2" ref-type="fig">2</xref> (subfigure B: c)) based on Power atlas in <bold>E1</bold>.</p></caption><table frame="hsides" rules="groups"><thead><tr><th>FC Measure</th><th>Observed vs Ideal FC</th></tr></thead><tbody><tr><td>Correlation</td><td><bold>0.256</bold></td></tr><tr><td>Cross-correlation</td><td>0.252</td></tr><tr><td>Coherence</td><td>0.224</td></tr><tr><td>Wavelet coherence</td><td>0.239</td></tr><tr><td>Mutual information</td><td>0.180</td></tr><tr><td>Euclidean distance</td><td>0.225</td></tr><tr><td>Cityblock distance</td><td>0.225</td></tr><tr><td>Dynamic time warping</td><td>0.213</td></tr><tr><td>Earth mover’s distance</td><td>0.188</td></tr></tbody></table><table-wrap-foot><p><bold>Note:</bold> The highest overlap is represented in bold.</p></table-wrap-foot></table-wrap></p>
+      </sec>
+      <sec id="Sec7">
+        <title>Experiment 2 (E2)</title>
+        <p id="Par13">A typical application of FC has been in understanding the differences between population groups. The goal of this second experiment was to evaluate how well each FC measure performed in differentiating between younger and older healthy individuals across standard large-scale brain networks with a binary machine learning classifier. Additionally, the discriminatory power of a composite metric, obtained by combining all the FC measures, was tested.</p>
+      </sec>
+      <sec id="Sec8">
+        <title>Findings from E2: Population-based classification using functional connectivity</title>
+        <p id="Par14">The younger and older groups had a significant difference in age based on a two sample t-test but not in terms of gender, education, handedness and head motion as reported in Table <xref rid="Tab4" ref-type="table">4</xref>. The goal, here, was to determine if this age-difference could be detected on the basis of resting-state FC of various brain networks. The support vector machine classifier models, implemented using neighborhood component analysis (NCA) feature selection and leave-one-out testing, were evaluated by the peak accuracy and area under the curve achieved. The accuracy levels are tabulated in Table <xref rid="Tab5" ref-type="table">5</xref> and area under the curve along with number of features used by each classifier are listed in the Supplementary Table <xref rid="MOESM1" ref-type="media">1</xref>. As seen in Table <xref rid="Tab5" ref-type="table">5</xref>, Pearson’s correlation does not always stand out while differentiating the young from the old. Comparing performances of alternative FC, no one single FC measure particularly performed consistently better than the rest. Importantly, when we concatenate all these measures of FC, the composite measure almost always performs better or comparable to Pearson’s correlation. This could be due to the contribution of alternative FC measures which potentially augment the discriminatory power of Pearson’s correlation. The lack of consistency of the composite measure across all networks could be because the size of the training data could not be scaled up with increased number of features used for classification or that the definition of standard networks is not well-suited for the measure. While the former could not be tested due to availability of limited data, the latter was further tested in the final experiment.<table-wrap id="Tab4"><label>Table 4</label><caption><p>Characteristics of younger and older healthy participants included for <bold>E2</bold>.</p></caption><table frame="hsides" rules="groups"><thead><tr><th>Characteristic</th><th>Younger Healthy</th><th>Older Healthy</th><th>Group difference (<italic>p</italic>-value)</th></tr></thead><tbody><tr><td>N</td><td>29</td><td>24</td><td>—</td></tr><tr><td>Age (M ± SD in years)</td><td>25.8 ± 7.880</td><td>58 ± 7.587</td><td><bold>&lt;0.001*</bold></td></tr><tr><td>Gender</td><td>16 females, 13 males</td><td>16 females, 8 males</td><td>0.416</td></tr><tr><td>Education (M ± SD in years)</td><td>16.4 ± 2.244</td><td>16.9 ± 2.857</td><td>0.476</td></tr><tr><td>Handedness</td><td>29 right</td><td>24 right</td><td>1</td></tr><tr><td>Translation in x (M ± SD in mm)</td><td>0.038 ± 0.120</td><td>−0.022 ± 0.122</td><td>0.073</td></tr><tr><td>Translation in y (M ± SD in mm)</td><td>0.001 ± 0.330</td><td>−0.075 ± 0.290</td><td>0.373</td></tr><tr><td>Translation in z (M ± SD in mm)</td><td>0.003 ± 0.123</td><td>−0.009 ± 0.255</td><td>0.821</td></tr><tr><td>Rotation in x (M ± SD in degrees)</td><td>−0.014 ± 0.185</td><td>0.090 ± 0.304</td><td>0.128</td></tr><tr><td>Rotation in y (M ± SD in degrees)</td><td>−0.007 ± 0.089</td><td>-0.045 ± 0.153</td><td>0.270</td></tr><tr><td>Rotation in z (M ± SD in degrees)</td><td>−0.022 ± 0.067</td><td>−0.023 ± 0.071</td><td>0.951</td></tr><tr><td>Euclidean norm of motion</td><td>0.053 ± 0.021</td><td>0.067 ± 0.029</td><td>0.054</td></tr><tr><td>DVARS</td><td>26.224 ± 4.294</td><td>27.123 ± 5.974</td><td>0.527</td></tr><tr><td>FWD</td><td>3.001 ± 1.473</td><td>3.928 ± 1.929</td><td>0.052</td></tr></tbody></table><table-wrap-foot><p><bold>Note:</bold> M = mean; SD = standard deviation; DVARS = spatial root mean square after temporal differencing; FWD = framewise displacement; <bold>*</bold>significantly different with <italic>p</italic>-value &lt; 0.05.</p></table-wrap-foot></table-wrap><table-wrap id="Tab5"><label>Table 5</label><caption><p>Age-based classification between younger and older healthy adults in nine major brain networks for <bold>E2</bold>.</p></caption><table frame="hsides" rules="groups"><thead><tr><th>FC Measure</th><th>D. DMN</th><th>V. DMN</th><th>L. ECN</th><th>R. ECN</th><th>A. Salience</th><th>P. Salience</th><th>Auditory</th><th>Language</th><th>Motor</th></tr></thead><tbody><tr><td>Pearson’s Correlation</td><td>45.28%</td><td>56.60%</td><td>52.83%</td><td><bold>66.03%</bold></td><td>75.47%</td><td>62.26%</td><td>58.49%</td><td>58.49%</td><td>56.60%</td></tr><tr><td>Cross-correlation</td><td>54.72%</td><td>52.83%</td><td>54.72%</td><td>60.37%</td><td>79.24%</td><td>58.49%</td><td>58.49%</td><td>54.72%</td><td>54.71%</td></tr><tr><td>Coherence</td><td>54.71%</td><td>50.94%</td><td>50.94%</td><td>54.71%</td><td>60.37%</td><td>50.94%</td><td>58.49%</td><td>56.60%</td><td><bold>69.81%</bold></td></tr><tr><td>Wavelet coherence</td><td>49.06%</td><td>52.83%</td><td>52.83%</td><td>54.71%</td><td>67.92%</td><td>50.94%</td><td>62.26%</td><td>54.71%</td><td>52.83%</td></tr><tr><td>Mutual Information</td><td>62.26%</td><td><bold>75.47%</bold></td><td>62.26%</td><td>52.83%</td><td>77.35%</td><td>58.49%</td><td>52.83%</td><td>54.71%</td><td>54.71%</td></tr><tr><td>Euclidean distance</td><td>64.15%</td><td>69.81%</td><td>62.26%</td><td><bold>66.03%</bold></td><td>71.69%</td><td>50.94%</td><td>54.72%</td><td>54.71%</td><td>52.83%</td></tr><tr><td>Cityblock distance</td><td><bold>71.69%</bold></td><td>71.69%</td><td>64.15%</td><td>64.15%</td><td>83.01%</td><td>50.94%</td><td>52.83%</td><td><bold>64.15%</bold></td><td>54.72%</td></tr><tr><td>DTW</td><td>69.81%</td><td>73.58%</td><td><bold>69.81%</bold></td><td>62.26%</td><td>79.24%</td><td>56.60%</td><td>52.83%</td><td>60.37%</td><td>50.94%</td></tr><tr><td>EMD</td><td>52.83%</td><td>62.26%</td><td>64.15%</td><td>52.83%</td><td>66.03%</td><td>52.83%</td><td>52.83%</td><td>50.94%</td><td>66.03%</td></tr><tr><td>Composite</td><td>66.04%</td><td>69.82%</td><td><bold>69.81%</bold></td><td>54.72%</td><td><bold>84.91%</bold></td><td><bold>73.58%</bold></td><td><bold>69.81%</bold></td><td>58.49%</td><td>62.26%</td></tr></tbody></table><table-wrap-foot><p><bold>Note:</bold> Brain networks are defined by the Willard functional atlas with a support vector machine classifier. Performance represents accuracy levels (%) with a leave-one out testing. The highest performing FC measure is represented in bold for each network. Additional performance measures are included in Supplementary Table <xref rid="MOESM1" ref-type="media">2</xref>; D.DMN = dorsal default mode network; V.DMN = ventral default mode network; L.ECN = left executive control network; R.ECN = right executive control network; A.Salience = anterior salience; P.Salience = posterior salience; DTW = dynamic time warping; EMD = earth mover’s distance.</p></table-wrap-foot></table-wrap></p>
+      </sec>
+      <sec id="Sec9">
+        <title>Experiment 3 (E3)</title>
+        <p id="Par15">Classification between younger and older individuals in <bold>E2</bold> was performed on standard brain networks. However, the configuration of these standard brain networks are typically derived on the basis of Pearson’s correlation. In this final experiment, the aim was to test the potential dependence of the configuration of standard brain networks on FC measure. For this, a whole-brain (comprised of 10 standard networks) analysis was performed. Alternative brain configurations were obtained by applying unsupervised clustering for each FC measure. The biological plausibility of these alternative brain configurations was tested by investigating the association between FC and behavioral performance (verbal fluency) and compared with the standard brain configurations.</p>
+      </sec>
+      <sec id="Sec10">
+        <title>Findings from E3: Large-scale brain configurations based on functional connectivity</title>
+        <p id="Par16">The goal of this experiment was to inspect the assumption that resting-state FC may be organized in the form of a fixed number of networks, each involving a specific number of brain regions. While this may be the case for Pearson’s correlation, it may not necessarily be true for the alternative measures. Based on <bold>E3</bold>, the findings are:<list list-type="simple"><list-item><label>(i)</label><p id="Par17">For every FC measure, the group mean whole-brain FC matrix representing the <italic>original brain configuration</italic> could be clustered into 10 major large-scale brain networks resulting in <italic>alternative brain reconfigurations</italic> for each FC measure. The <italic>alternative brain reconfigurations</italic> varied, with some better than the <italic>original brain reconfiguration</italic> and others worse based on the comparison of Sørensen-Dice similarity coefficient as can be observed in Supplementary Fig. <xref rid="MOESM1" ref-type="media">3</xref>.</p></list-item><list-item><label>(ii)</label><p id="Par18">A number of <italic>alternative brain reconfigurations</italic> demonstrated an improved Sørensen-Dice similarity coefficient (between each observed configuration and the corresponding expected idealized configuration) relative to the <italic>original brain configuration</italic> for each FC measure as reported in Table <xref rid="Tab6" ref-type="table">6</xref>. The best possible <italic>alternative brain reconfiguration</italic> based on each FC measure demonstrated a greater dice overlap than the <italic>original brain configuration</italic>. Dynamic time warping distance had the greatest improvement (155.77%) while cross-correlation had the smallest improvement (13.15%). These two cases are visualized and compared in Supplementary Fig. <xref rid="MOESM1" ref-type="media">5</xref>. This pattern might suggest that the current predefined configuration may be optimal for correlation-based FC measure, however, the overall functional configuration of the brain may vary if the nature of the information captured by the FC measure deviates from correlation-based ones. Overall, reconfigurations based on mutual information, dynamic time warping distance and Earth mover’s distance did consistently better than the <italic>original brain configuration</italic> as seen from the distribution of the reconfigurations in Supplementary Fig. <xref rid="MOESM1" ref-type="media">3</xref>.<table-wrap id="Tab6"><label>Table 6</label><caption><p>Comparison of Sørensen-Dice similarity coefficient between the original configuration and the best possible reconfiguration of the brain via clustering (10 clusters) for E3.</p></caption><table frame="hsides" rules="groups"><thead><tr><th>FC Measure</th><th>Original Brain Configuration</th><th>Alternative Brain Reconfiguration</th></tr></thead><tbody><tr><td>Pearson’s Correlation</td><td>0.460</td><td>0.528</td></tr><tr><td>Cross-correlation</td><td><bold>0.464</bold></td><td>0.525</td></tr><tr><td>Coherence</td><td>0.405</td><td>0.467</td></tr><tr><td>Wavelet Coherence</td><td>0.416</td><td>0.472</td></tr><tr><td>Mutual Information</td><td>0.212</td><td>0.337</td></tr><tr><td>Euclidean</td><td>0.316</td><td>0.361</td></tr><tr><td>Cityblock</td><td>0.311</td><td>0.441</td></tr><tr><td>Dynamic Time Warping</td><td>0.235</td><td><bold>0.601</bold></td></tr><tr><td>Earth Mover's Distance</td><td>0.259</td><td>0.433</td></tr></tbody></table><table-wrap-foot><p><bold>Note:</bold> Cross-correlation and dynamic time warping exhibited the best overlap in the <italic>original brain configuration</italic> and best <italic>alternative brain reconfiguration</italic> respectively. A distribution of 1000 reconfigurations is visualized in Supplementary Fig. <xref rid="MOESM1" ref-type="media">4</xref> by comparing the overlap with the original one. The FC measure showing the highest overlap in each case is indicated in bold text.</p></table-wrap-foot></table-wrap></p></list-item><list-item><label>(iii)</label><p id="Par19">The plausibility of the best <italic>alternative brain reconfiguration</italic> was validated with the help of a data-inspired regression model in which the mean FC within each cluster/network for all participants was associated with the verbal fluency as a behavioral outcome. The goodness-of-fit (R<sup>2</sup>) was compared with that of the <italic>original brain configuration</italic> (Table <xref rid="Tab7" ref-type="table">7</xref>) and can be found in Table <xref rid="Tab8" ref-type="table">8</xref>. The best <italic>alternative brain reconfiguration</italic> associated with the verbal fluency scores was significant in some measures including Pearson’s correlation, wavelet coherence, and cross-correlation and marginally significant in some others such as Earth mover’s distance. This could imply, that subject to a larger sample size, there may exist an alternative functional rearrangement of the brain regions which may be indicative of behavioral outcomes.<table-wrap id="Tab7"><label>Table 7</label><caption><p>Brain-behavior relationship: Association (R<sup>2</sup>) between the mean FC within each of the 10 networks and the verbal fluency scores in 29 young healthy adults using the predefined original brain configuration as found with a stepwise regression model for <bold>E3</bold>.</p></caption><table frame="hsides" rules="groups"><thead><tr><th>Original Brain Configuration</th><th>D.DMN</th><th>V.DMN</th><th>L.ECN</th><th>R.ECN</th><th>A.Sal.</th><th>P.Sal.</th><th>Aud.</th><th>Lang.</th><th>Motor</th><th>Visual</th></tr><tr><th>Measure Showing Highest Association</th><th>Pearson’s correlation</th><th>Cross-correlation</th><th>Mutual information</th><th>EMD</th><th>Mutual information</th><th>Wavelet coherence</th><th>Cross-correlation</th><th>Cross-correlation</th><th>Pearson’s correlation</th><th>Cross-correlation</th></tr></thead><tbody><tr><td><bold>R</bold><sup><bold>2</bold></sup></td><td><bold>0.188</bold></td><td><bold>0.208</bold></td><td>0.027</td><td>0.047</td><td>0.015</td><td>0.107</td><td>0.098</td><td>0.022</td><td><bold>0.310</bold></td><td>0.106</td></tr><tr><td><bold><italic>p</italic></bold><bold>-value</bold></td><td><bold>0.019*</bold></td><td><bold>0.013*</bold></td><td>0.393</td><td>0.258</td><td>0.533</td><td>0.084<sup><bold>†</bold></sup></td><td>0.099<sup><bold>†</bold></sup></td><td>0.446</td><td><bold>0.002*</bold></td><td>0.085<sup><bold>†</bold></sup></td></tr></tbody></table><table-wrap-foot><p><bold>Note:</bold> Only the FC measure showing greatest associations with the outcome have been reported. Significant associations are represented in bold; D.DMN = dorsal default mode network; V.DMN = ventral default mode network; L.ECN = left executive control network; R.ECN = right executive control network; A.Sal. = anterior salience; P.Sal. = posterior salience; Aud. = auditory; Lang. = language; DTW = dynamic time warping; EMD = earth mover’s distance; R<sup>2</sup>: coefficient of determination; *association is significant with <italic>p</italic>-value &lt; 0.05; <sup><bold>†</bold></sup>association is marginally significant with <italic>p</italic>-value &lt; 0.1.</p></table-wrap-foot></table-wrap><table-wrap id="Tab8"><label>Table 8</label><caption><p>Brain-behavior relationship: Association (R<sup>2</sup>) between each cluster (C1 through C9) of the best <bold>alternative brain reconfiguration</bold> found by clustering and the verbal fluency score for each FC measure with a stepwise regression model for <bold>E3</bold>.</p></caption><table frame="hsides" rules="groups"><thead><tr><th>FC Measure</th><th>C 1</th><th>C 2</th><th>C 3</th><th>C 4</th><th>C 5</th><th>C 6</th><th>C 7</th><th>C 8</th><th>C 9</th><th>C 10</th></tr></thead><tbody><tr><td>Pearson’s Correlation</td><td>0.013</td><td>0.031</td><td><bold>0.197*</bold></td><td>0.042</td><td>0.051</td><td>0.001</td><td>0.036</td><td><bold>0.233*</bold></td><td>0.091</td><td><bold>0.109</bold><sup><bold>†</bold></sup></td></tr><tr><td>Cross-correlation</td><td>0.024</td><td>0.027</td><td>0.072</td><td>0.073</td><td><bold>0.103</bold><sup><bold>†</bold></sup></td><td>0.081</td><td>0.043</td><td>0.011</td><td><bold>0.106</bold><sup><bold>†</bold></sup></td><td><bold>0.208*</bold></td></tr><tr><td>Coherence</td><td>0.001</td><td>0.002</td><td>0.002</td><td>0.001</td><td>0.000</td><td>0.000</td><td>0.025</td><td>0.001</td><td>0.074</td><td>0.002</td></tr><tr><td>Wavelet coherence</td><td>0.069</td><td>0.000</td><td>0.021</td><td>0.009</td><td>0.060</td><td>0.026</td><td><bold>0.145*</bold></td><td>0.017</td><td>0.006</td><td>0.022</td></tr><tr><td>Mutual information</td><td>0.023</td><td>0.020</td><td>0.001</td><td>0.016</td><td>0.019</td><td>0.014</td><td>0.015</td><td>0.051</td><td>0.018</td><td>0.006</td></tr><tr><td>Euclidean</td><td>0.023</td><td>0.068</td><td>0.009</td><td>0.059</td><td>0.019</td><td>0.023</td><td>0.072</td><td>0.011</td><td>0.012</td><td>0.055</td></tr><tr><td>Cityblock</td><td>0.031</td><td>0.014</td><td>0.013</td><td>0.027</td><td>0.007</td><td>0.022</td><td>0.031</td><td>0.001</td><td>0.024</td><td>0.055</td></tr><tr><td>DTW</td><td>0.012</td><td>0.009</td><td>0.005</td><td>0.005</td><td>0.007</td><td>0.031</td><td>0.023</td><td>0.014</td><td>0.032</td><td>0.012</td></tr><tr><td>EMD</td><td>0.002</td><td>0.006</td><td>0.022</td><td>0.004</td><td>0.015</td><td>0.000</td><td>0.004</td><td>0.001</td><td><bold>0.110</bold><sup><bold>†</bold></sup></td><td>0.045</td></tr></tbody></table><table-wrap-foot><p><bold>Note:</bold> C1 through C9 represent clusters obtained by k-means; DTW = dynamic time warping; EMD = Earth mover’s distance; *represent association is significant with <italic>p</italic>-value &lt; 0.05; <sup><bold>†</bold></sup>represent association is marginally significant with <italic>p</italic>-value &lt; 0.1.</p></table-wrap-foot></table-wrap></p></list-item><list-item><label>(iv)</label><p id="Par20">Parallel to the multi-metric approach described in <bold>E2</bold> for the purpose of population-based classification, the same approach was extended for the prediction of behavioral outcomes. The results are tabulated in Table <xref rid="Tab9" ref-type="table">9</xref>. Similar to results of classification, the combined FC measure was more consistent than individual measures in correlating with the behavioral outcome. The composite multi-metric representation of FC from the <italic>alternative brain reconfiguration</italic> performed better than that from the <italic>original brain configuration</italic> which may suggest that there is room for a better design of the functional configuration of the brain on the basis of measures adopted to quantify FC relative to the conventional correlation-based large-scale brain configuration.<table-wrap id="Tab9"><label>Table 9</label><caption><p>Brain-behavior relationship: Comparison between brain-behavior relationship of the <bold>original brain configuration</bold> and the best <bold>alternative brain reconfiguration</bold> using the composite multi-metric definition of FC as found with a stepwise regression model for <bold>E3</bold>.</p></caption><table frame="hsides" rules="groups"><thead><tr><th/><th><italic>Original Brain Configuration</italic> Composite FC ~ Verbal Fluency</th><th><italic>Alternative Brain Reconfiguration</italic> Composite FC ~ Verbal Fluency</th></tr></thead><tbody><tr><td>R<sup>2</sup></td><td><bold>0.495</bold></td><td><bold>0.606</bold></td></tr><tr><td><italic>p</italic>-value</td><td><bold>0.026*</bold></td><td><bold>0.0014*</bold></td></tr><tr><td rowspan="7">Measures Selected</td><td>Coherence: Wavelet Coherence*</td><td>Dynamic Time Warping*</td></tr><tr><td>Mutual Information*</td><td>Euclidean*</td></tr><tr><td>Dynamic Time Warping*</td><td>Pearson’s Correlation: Earth mover’s distance</td></tr><tr><td>Euclidean*</td><td>Cityblock</td></tr><tr><td>Cross-correlation</td><td>Pearson’s Correlation</td></tr><tr><td>Wavelet Coherence</td><td>Earth mover’s distance</td></tr><tr><td>Coherence</td><td/></tr></tbody></table><table-wrap-foot><p><bold>Note:</bold> R<sup>2</sup> = coefficient of determination;:interaction term; <bold>*</bold>associated <italic>p</italic>-value &lt; 0.05.</p></table-wrap-foot></table-wrap></p></list-item><list-item><label>(v)</label><p id="Par21">A comparison of brain regions involved in the composite multi-metric FC in the <italic>original brain configuration</italic> and the <italic>alternative brain reconfiguration</italic> are presented in Table <xref rid="Tab10" ref-type="table">10</xref>. Specifically, in the <italic>original brain configuration</italic>, the specific network, whose FC demonstrated the strongest association with the verbal fluency behavioral outcome varied by measures used by the stepwise regression model. A dominance of DMN (dorsal and ventral) was observed which is presumably the most robust network in resting-state functional MRI. In the <italic>alternative brain reconfiguration</italic>, however, the cluster whose FC demonstrated the highest association with verbal fluency was comprised of brain regions from various standard networks. As an example, for dynamic time warping (used by the stepwise regression model), the cluster that showed peak association with verbal fluency consisted of two regions of the standard language network and one region of the dorsal DMN. This could imply that the arrangement of brain regions that are most indicative of behavior may be variable by FC measure in question.<table-wrap id="Tab10"><label>Table 10</label><caption><p>Brain-behavior relationship: Distribution of brain regions involved in the networks/clusters of the <bold>original brain configuration</bold> and the best <bold>alternative brain reconfiguration</bold> for <bold>E3</bold>.</p></caption><table frame="hsides" rules="groups"><thead><tr><th colspan="2"><italic>Original Brain Configuration</italic>: Composite FC ~ Verbal Fluency</th><th colspan="2"><italic>Alternative Brain Reconfiguration</italic>: Composite FC ~ Verbal Fluency</th></tr><tr><th>FC Measures Involved</th><th>Brain Regions Involved</th><th>FC Measures Involved</th><th>Brain Regions Involved</th></tr></thead><tbody><tr><td>Coherence: Wavelet Coherence*</td><td>D.DMN: V.DMN</td><td>Dynamic Time Warping*</td><td>Language<sub>2</sub> + D.DMN<sub>1</sub></td></tr><tr><td>Mutual Information*</td><td>V.DMN</td><td>Euclidean*</td><td>Auditory<sub>1</sub> + Language<sub>1</sub> + D.DMN<sub>2</sub> + P.Sal<sub>3</sub></td></tr><tr><td>Dynamic Time Warping*</td><td>Motor</td><td>Pearson’s Correlation: Earth mover’s distance</td><td>Language<sub>3</sub>: Motor<sub>3</sub> + RECN<sub>1</sub> + V.DMN<sub>3</sub></td></tr><tr><td>Euclidean*</td><td>D.DMN</td><td>Cityblock</td><td>LECN<sub>1</sub> + Language<sub>1</sub> + Motor<sub>1</sub> + A.Sal<sub>1</sub> + P.Sal<sub>1</sub> + D.DMN<sub>1 + </sub>V.DMN<sub>1</sub></td></tr><tr><td>Cross-correlation</td><td>Auditory</td><td>Pearson’s Correlation</td><td>Language<sub>3</sub></td></tr><tr><td>Wavelet Coherence</td><td>V.DMN</td><td>Earth mover’s distance</td><td>Motor<sub>3</sub> + RECN<sub>1</sub> + V.DMN<sub>3</sub></td></tr><tr><td>Coherence</td><td>D.DMN</td><td/><td/></tr></tbody></table><table-wrap-foot><p><bold>Note:</bold> interaction term; *indicate that the associated <italic>p</italic>-value &lt; 0.05; D.DMN = dorsal default mode network; V.DMN = ventral default mode network; L.ECN = left executive control network; R.ECN = right executive control network; A.Sal. = anterior salience; P.Sal. = posterior salience; subscripts in the last column indicate the number of regions drawn from a standard brain network in the cluster whose mean FC was best associated with verbal fluency outcome.</p></table-wrap-foot></table-wrap></p></list-item></list></p>
+      </sec>
+    </sec>
+    <sec id="Sec11" sec-type="discussion">
+      <title>Discussion</title>
+      <p id="Par22">In light of preliminary evidence based on the resting-state functional MRI data used in this study, two major hypotheses were formulated:</p>
+      <sec id="Sec12">
+        <title>Hypothesis 1: Functional connectivity could be better characterized with a multi-metric representation</title>
+        <p id="Par23">Using FC derived from resting-state functional MRI, it was possible to not only perform population-based classification in <bold>E2</bold> but also regression to study the relationship between FC and behavioral outcome in <bold>E3</bold>. A comparison of contribution of all FC measures in these experiments showed that there was not necessarily one single FC measure that consistently outperformed others. However, combination of multiple measures by concatenation followed by a feature selection procedure was relatively more consistent and, in most cases, performed better than Pearson’s correlation. Thus, the first hypothesis suggests that a more complete measure of FC could be developed by combining information from multiple measures. This would be advantageous as it would augment the correlation-based FC with complementary measures which capture linear, non-linear, similarity, dissimilarity, time-, frequency- and wavelet-domain properties and interactions between the signals.</p>
+      </sec>
+      <sec id="Sec13">
+        <title>Hypothesis 2: Canonical brain network configurations are metric-dependent</title>
+        <p id="Par24">Decomposition of the whole brain into component networks is a way to understand interacting regions functioning in synchronization which may be responsible for specific traits and/or behavior. However, these networks/clusters are most conventionally based on a correlation-based measure. <bold>E3</bold> suggested that the same set of regions in the brain may be rearranged and clustered into alternative brain configurations with networks/clusters distinct from those defined for Pearson’s correlation. The variation in <italic>alternative brain reconfigurations</italic> by FC measure may signal that the large-scale brain networks are a function of the measure that quantifies synchronization among the regions. Since the alternative measures explored in this study elicit information complementary to that by Pearson’s correlation, it is likely that the functional connectomic view of the brain would be variable.</p>
+      </sec>
+      <sec id="Sec14">
+        <title>The big picture</title>
+        <p id="Par25">Ideas of segregation and integration in the brain are well established<sup><xref ref-type="bibr" rid="CR17">17</xref>,<xref ref-type="bibr" rid="CR18">18</xref></sup>. It is, however, important to acknowledge that there are individual variations of a specific integrated component which may be lost during group-level analyses. Additionally, connectivity typically associated with a particular entity is not necessarily always unique. For instance, the sites of the brain included within the default mode network are not always connected with the same strength across individuals or even within individuals<sup><xref ref-type="bibr" rid="CR19">19</xref></sup>, which was confirmed in this work by means of a contrary case presented in Fig. <xref rid="Fig1" ref-type="fig">1</xref>.</p>
+        <p id="Par26">A growing number of prior studies have indicated the need for characterizing FC using alternative measures. The advantages of harnessing both temporal and spectral information has been illustrated with the use of wavelet coherence to capture non-stationarity in BOLD signals in resting-state functional MRI<sup><xref ref-type="bibr" rid="CR20">20</xref>,<xref ref-type="bibr" rid="CR21">21</xref></sup> and for population-based classification<sup><xref ref-type="bibr" rid="CR22">22</xref></sup>. Mutual information, which could be interpreted as the amount of information flowing between the given regions, has been shown to perform better in the context of task functional MRI<sup><xref ref-type="bibr" rid="CR23">23</xref></sup> as well as resting-state functional MRI<sup><xref ref-type="bibr" rid="CR24">24</xref>,<xref ref-type="bibr" rid="CR25">25</xref></sup>. Dynamic time warping has been demonstrated to capture the non-stationarity in simulated functional MRI data<sup><xref ref-type="bibr" rid="CR26">26</xref>,<xref ref-type="bibr" rid="CR27">27</xref></sup>. The importance of non-linear and directional dependencies among BOLD signals is highlighted by means of mutual connectivity<sup><xref ref-type="bibr" rid="CR28">28</xref></sup>.</p>
+        <p id="Par27">The present study adds to these works by comparing and contrasting multiple alternative FC measures and investigating not only the neural interactions differing between subgroups in a given population but also brain-behavior relationships arising from these measures. The goal of this work is to encourage development of a more holistic view of functional connectivity rather than reliance on a single measure.</p>
+      </sec>
+      <sec id="Sec15">
+        <title>Methodological considerations</title>
+        <p id="Par28">While this study outlines a number of ways of quantifying FC, it is important to recognize the assumptions and choices made in the experiments which may have bearing on the current findings. First, the number of samples used to investigate effects varied from 19 in <bold>E1</bold>, to 53 in <bold>E2</bold>, to 29 in <bold>E3</bold>. Evaluation of research questions in these relatively different but overlapping datasets offers confidence in the findings to some degree. However, it is important to acknowledge that these are modest sample sizes. This study should be considered as a proof-of-concept and the generalizability of the effects found here would need to be substantiated in much larger samples in healthy as well as pathological population groups.</p>
+        <p id="Par29">Second, in weighing out the contribution of the various FC measures in <bold>E2</bold> and <bold>E3</bold>, 10 major large-scale networks were considered. These tests assume a priori that the FC in the whole brain can largely be divided into 10 groupings. While this may be the optimal number for Pearson’s correlation, it may not be appropriate for the alternative FC measures. In <bold>E3</bold>, we attempted to decompose the brain into 10 distinct brain networks via clustering based on the a priori knowledge that the whole brain FC matrix (e.g. in Supplementary Fig. <xref rid="MOESM1" ref-type="media">4</xref>) is comprised of roughly 10 major networks. However, results specified in Table <xref rid="Tab6" ref-type="table">6</xref>, when visualized (Supplementary Fig. <xref rid="MOESM1" ref-type="media">5</xref>), point toward the possibility that the number of decomposable networks might also vary by FC measure, in addition to the structure of each network. In Supplementary Fig. <xref rid="MOESM1" ref-type="media">5</xref> (subfigure a: i), the FC matrix of the <italic>original brain configuration</italic> for cross-correlation (which showed the best overlap across all measures) shows a block-like diagonal structure corresponding to 10 networks. However, in Supplementary Fig. <xref rid="MOESM1" ref-type="media">5</xref> (subfigure b: iii) the FC matrix of the <italic>alternative brain reconfiguration</italic> for dynamic time warping (which showed the best overlap across all measures) shows a block-like diagonal structure corresponding to about 4 potential networks. A possible approach to examining this could involve application of spatio-temporal independent component analysis<sup><xref ref-type="bibr" rid="CR21">21</xref></sup> to each measure. Additionally, it must be noted that in deriving the <italic>alternative brain reconfigurations</italic>, the size of the clusters determined by k-means clustering was not controlled for. Considering the likelihood that changing the definition of FC the brain connectome could lead to variation in not only the pattern of brain connectome, but also the number and size of decomposable brain networks, further examination is warranted.</p>
+        <p id="Par30">Thirdly, included within this investigation were FC measures which capture undirected interactions between BOLD signals under the supposition that the dependency between BOLD signals arising from two brain regions is symmetric. However, BOLD signals need not necessarily adhere to this. Multi-metric approach presented here could be supplemented and informed better by incorporating directional influences capturing causality such as effective connectivity<sup><xref ref-type="bibr" rid="CR17">17</xref></sup>, interactions between two regions in presence of signals arising from other regions with measures such as partial correlation<sup><xref ref-type="bibr" rid="CR29">29</xref></sup> or generalized coherence<sup><xref ref-type="bibr" rid="CR30">30</xref></sup> and reducing the effects of unobserved or latent sources such as differential covariance<sup><xref ref-type="bibr" rid="CR31">31</xref></sup>.</p>
+        <p id="Par31">Fourth, the premise behind organized networks in the brain was based upon achieving an idealized brain configuration with a tight block-like structure along the diagonal of a symmetric FC matrix (such as the one in Supplementary Fig. <xref rid="MOESM1" ref-type="media">4</xref>) which represents a structure that is strongly connected within a given network (shown in beige color; value = 1) and weakly connected between networks (shown in black color; value = 0). Whether this is a desirable idealized brain configuration needs further investigation. In other words, a question to explore would be: should distinct brain networks be treated as independent groupings of brain areas operating in synchrony or should there be a certain level of dependence between networks?</p>
+        <p id="Par32">Finally, to enable a fair comparison across FC measures, only the absolute magnitude of each was utilized. Some measures, however, have additional properties that may be useful in understanding BOLD interactions better. For instance, coherence offers the specific frequency and wavelet coherence offers both temporal and spectral instances at which maximum similarity is observed. These additional details could enhance the characterization of FC and should be considered in subsequent studies.</p>
+      </sec>
+      <sec id="Sec16">
+        <title>Future directions</title>
+        <p id="Par33">As a pilot study pointing towards a comprehensive multi-metric notion of FC, this study holds promise for further exploration in several directions, some of which are outlined as follows:<list list-type="simple"><list-item><label>(i)</label><p id="Par34">Only a small number of alternative FC measures were studied here. Although these covered a wide range of properties by encompassing measures of similarity, dissimilarity, from time-, frequency- and wavelet-domains, captured linear and non-linear relationships among BOLD signals, there may be other measures to better capture FC.</p></list-item><list-item><label>(ii)</label><p id="Par35">The idea of a composite definition was realized and executed by a straightforward concatenation of the distinct FC measures. Forming a multi-metric representation could be approached by alternate means such as identification of a linear, quadratic or higher order, log transformation, weighting, or convolutional method, of combining the FC measures<sup><xref ref-type="bibr" rid="CR19">19</xref></sup>.</p></list-item><list-item><label>(iii)</label><p id="Par36">A majority of the studies in the neuroimaging literature have relied upon an elementary design of FC by considering pairwise BOLD interactions of nodes. Future studies should move from pairwise FC towards generalized FC to gain a clearer picture of the brain connectome by considering multi-nodal models and analyzing BOLD interactions among a group of nodes (more than a pair) simultaneously (similar to interpretations given by network-based statistic toolbox<sup><xref ref-type="bibr" rid="CR12">12</xref></sup>).</p></list-item><list-item><label>(iv)</label><p id="Par37">The introduction of multiple measures requires a deeper understanding of their properties, especially if they are likely to capture complementary information of the same signal. This could entail studying of statistical properties, dependence on noise in the signal, and the sensitivity to outliers of each FC measure.</p></list-item></list></p>
+      </sec>
+    </sec>
+    <sec id="Sec17">
+      <title>Methods</title>
+      <sec id="Sec18">
+        <title>Conventional characterization of functional connectivity</title>
+        <p id="Par38">One approach to characterize integration is in terms of FC, which is usually inferred on the basis of correlations among measurements of neuronal activity of anatomically separated regions. FC, originally defined as the statistical dependencies among remote neurophysiological events in positron emission imaging<sup><xref ref-type="bibr" rid="CR4">4</xref></sup>, was subsequently applied to functional MRI data<sup><xref ref-type="bibr" rid="CR5">5</xref></sup>. In most applications, the convention has been to use Pearson’s correlation as it is simple to quantify and has an intuitive interpretation. However, statistical dependence between signals can arise in a variety of ways.</p>
+        <p id="Par39">This has been depicted in Fig. <xref rid="Fig1" ref-type="fig">1</xref> within the context of FC. Essentially, a fail/contrary case is presented by considering two functionally connected brain regions, assumed to be part of the standard DMN in the healthy brain. At a single-subject level, examination of the neurophysiological events (BOLD signals) associated with these regions appear to have a low level of correlation as captured by the time-domain similarity of Pearson’s correlation, on a scale of 0 to 1. However, similarity between signals arising from the same regions in the frequency-domain (quantified by magnitude-squared coherence) and wavelet-domain (quantified by wavelet coherence) are comparatively higher (these are also presented on the scale of 0 to 1). This case illustrates that a low correlation in time-domain must not be mistaken for no correlation and can also be supported mathematically. Rather, it should be treated as lack of linear time-dependence only. This could imply that there may still be dependencies between these BOLD signals, that are not captured well by Pearson’s correlation. Capturing the true underlying dependencies is an essential task in the full understanding of brain connectivity.</p>
+      </sec>
+      <sec id="Sec19">
+        <title>Are there alternative measures to quantify functional connectivity?</title>
+        <p id="Par40">Based on a literature review within the neuroimaging and signal processing disciplines, a number of measures were identified that capture statistical dependence between two signals. For all subsequent experiments, suppose the following. Based on the preprocessed functional MRI data for any subject, BOLD time-series signal can be extracted from any region in the brain which lasts for <italic>t</italic>− timepoints. Assuming that a network of interest in the brain is comprised of <italic>n</italic>− regions, we would have a <italic>t</italic> × <italic>n</italic> matrix, where each column vector would represent the BOLD time-series for a given region, each with <italic>t</italic>− timepoints. Variables <italic>x</italic> and <italic>y</italic> would represent time series from any pairs of distinct regions with each <inline-formula id="IEq1"><alternatives><tex-math id="M1">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$x,y\in {{\mathbb{R}}}^{t}$$\end{document}</tex-math><mml:math id="M2"><mml:mi>x</mml:mi><mml:mo>,</mml:mo><mml:mi>y</mml:mi><mml:mo>∈</mml:mo><mml:msup><mml:mrow><mml:mi>ℝ</mml:mi></mml:mrow><mml:mi>t</mml:mi></mml:msup></mml:math><inline-graphic xlink:href="41598_2020_57915_Article_IEq1.gif"/></alternatives></inline-formula>. Pairwise FC, measuring the statistical dependence between all possible pairs in a given network would yield a matrix of size <italic>n</italic> × <italic>n</italic>. This would generate a symmetric matrix and can be reduced to <inline-formula id="IEq2"><alternatives><tex-math id="M3">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\frac{n(n-1)}{2}$$\end{document}</tex-math><mml:math id="M4"><mml:mfrac><mml:mrow><mml:mi>n</mml:mi><mml:mrow><mml:mo stretchy="true">(</mml:mo><mml:mrow><mml:mi>n</mml:mi><mml:mo>−</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mo stretchy="true">)</mml:mo></mml:mrow></mml:mrow><mml:mn>2</mml:mn></mml:mfrac></mml:math><inline-graphic xlink:href="41598_2020_57915_Article_IEq2.gif"/></alternatives></inline-formula> unique coefficients (from either the upper or lower triangle of the matrix). The following defines and characterizes each identified measure quantifying FC, a summary of which is presented in Supplementary Table <xref rid="MOESM1" ref-type="media">2</xref>.</p>
+        <sec id="Sec20">
+          <title>Pearson’s correlation</title>
+          <p id="Par41">Pearson’s Correlation is a similarity measure and provides a relative measure of association between two signals<sup><xref ref-type="bibr" rid="CR32">32</xref></sup> and is given by:<disp-formula id="Equ1"><label>1</label><alternatives><tex-math id="M5">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\rho }_{corr}(x,y)=\frac{cov(x,y)}{\sqrt{var(x)var(y)}}=\frac{(x-\overline{x}){(y-\overline{y})}^{T}}{(\sqrt{(x-\overline{x}){(x-\overline{x})}^{T}})\{\sqrt{((y-\overline{y}){(y-\overline{y})}^{T})}\}}$$\end{document}</tex-math><mml:math id="M6" display="block"><mml:msub><mml:mrow><mml:mi>ρ</mml:mi></mml:mrow><mml:mrow><mml:mi>c</mml:mi><mml:mi>o</mml:mi><mml:mi>r</mml:mi><mml:mi>r</mml:mi></mml:mrow></mml:msub><mml:mrow><mml:mo stretchy="true">(</mml:mo><mml:mrow><mml:mi>x</mml:mi><mml:mo>,</mml:mo><mml:mi>y</mml:mi></mml:mrow><mml:mo stretchy="true">)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:mi>c</mml:mi><mml:mi>o</mml:mi><mml:mi>v</mml:mi><mml:mrow><mml:mo stretchy="true">(</mml:mo><mml:mrow><mml:mi>x</mml:mi><mml:mo>,</mml:mo><mml:mi>y</mml:mi></mml:mrow><mml:mo stretchy="true">)</mml:mo></mml:mrow></mml:mrow><mml:mrow><mml:msqrt><mml:mrow><mml:mi>v</mml:mi><mml:mi>a</mml:mi><mml:mi>r</mml:mi><mml:mrow><mml:mo stretchy="true">(</mml:mo><mml:mi>x</mml:mi><mml:mo stretchy="true">)</mml:mo></mml:mrow><mml:mi>v</mml:mi><mml:mi>a</mml:mi><mml:mi>r</mml:mi><mml:mrow><mml:mo stretchy="true">(</mml:mo><mml:mi>y</mml:mi><mml:mo stretchy="true">)</mml:mo></mml:mrow></mml:mrow></mml:msqrt></mml:mrow></mml:mfrac><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:mrow><mml:mo stretchy="true">(</mml:mo><mml:mrow><mml:mi>x</mml:mi><mml:mo>−</mml:mo><mml:mover accent="true"><mml:mi>x</mml:mi><mml:mrow><mml:mo stretchy="true">¯</mml:mo></mml:mrow></mml:mover></mml:mrow><mml:mo stretchy="true">)</mml:mo></mml:mrow><mml:msup><mml:mrow><mml:mo stretchy="true">(</mml:mo><mml:mrow><mml:mi>y</mml:mi><mml:mo>−</mml:mo><mml:mover accent="true"><mml:mi>y</mml:mi><mml:mrow><mml:mo stretchy="true">¯</mml:mo></mml:mrow></mml:mover></mml:mrow><mml:mo stretchy="true">)</mml:mo></mml:mrow><mml:mi>T</mml:mi></mml:msup></mml:mrow><mml:mrow><mml:mrow><mml:mo stretchy="true">(</mml:mo><mml:mrow><mml:msqrt><mml:mrow><mml:mrow><mml:mo stretchy="true">(</mml:mo><mml:mrow><mml:mi>x</mml:mi><mml:mo>−</mml:mo><mml:mover accent="true"><mml:mi>x</mml:mi><mml:mrow><mml:mo stretchy="true">¯</mml:mo></mml:mrow></mml:mover></mml:mrow><mml:mo stretchy="true">)</mml:mo></mml:mrow><mml:msup><mml:mrow><mml:mo stretchy="true">(</mml:mo><mml:mrow><mml:mi>x</mml:mi><mml:mo>−</mml:mo><mml:mover accent="true"><mml:mi>x</mml:mi><mml:mrow><mml:mo stretchy="true">¯</mml:mo></mml:mrow></mml:mover></mml:mrow><mml:mo stretchy="true">)</mml:mo></mml:mrow><mml:mi>T</mml:mi></mml:msup></mml:mrow></mml:msqrt></mml:mrow><mml:mo stretchy="true">)</mml:mo></mml:mrow><mml:mrow><mml:mo stretchy="true">{</mml:mo><mml:mrow><mml:msqrt><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mi>y</mml:mi><mml:mo>−</mml:mo><mml:mover accent="true"><mml:mi>y</mml:mi><mml:mrow><mml:mo stretchy="true">¯</mml:mo></mml:mrow></mml:mover><mml:mo stretchy="false">)</mml:mo><mml:msup><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mi>y</mml:mi><mml:mo>−</mml:mo><mml:mover accent="true"><mml:mi>y</mml:mi><mml:mrow><mml:mo stretchy="true">¯</mml:mo></mml:mrow></mml:mover><mml:mo stretchy="false">)</mml:mo></mml:mrow><mml:mi>T</mml:mi></mml:msup></mml:mrow><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msqrt></mml:mrow><mml:mo stretchy="true">}</mml:mo></mml:mrow></mml:mrow></mml:mfrac></mml:math><graphic xlink:href="41598_2020_57915_Article_Equ1.gif" position="anchor"/></alternatives></disp-formula>where <italic>cov</italic>(<italic>x</italic>, <italic>y</italic>) is the covariance between signals, <inline-formula id="IEq3"><alternatives><tex-math id="M7">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\overline{x}$$\end{document}</tex-math><mml:math id="M8"><mml:mover accent="true"><mml:mi>x</mml:mi><mml:mrow><mml:mo stretchy="true">¯</mml:mo></mml:mrow></mml:mover></mml:math><inline-graphic xlink:href="41598_2020_57915_Article_IEq3.gif"/></alternatives></inline-formula> and <inline-formula id="IEq4"><alternatives><tex-math id="M9">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\overline{y}$$\end{document}</tex-math><mml:math id="M10"><mml:mover accent="true"><mml:mi>y</mml:mi><mml:mrow><mml:mo stretchy="true">¯</mml:mo></mml:mrow></mml:mover></mml:math><inline-graphic xlink:href="41598_2020_57915_Article_IEq4.gif"/></alternatives></inline-formula> are the mean values of the respective signals, <italic>var</italic> (<italic>x</italic>) <italic>and var</italic> (<italic>y</italic>) represent the variance of each signal respectively.</p>
+          <p id="Par42">The quantity ρ<sub><italic>corr</italic></sub> captures the linear relationship between the signals, is bounded above by 1 in absolute value and is scale-invariant in magnitude. A positive value indicates that the time series signals tend to be simultaneously greater than their respective means. And a negative value implies that the signals tend to fall on opposite sides of their respective means. The absolute value reflects the strength of the tendency to be above or below their means. A value closer to 0 suggests that the signals are uncorrelated in terms of a linear correlation. This implies that a linear relationship is not enough to capture the true relationship between them; it should not be treated as evidence for an absence of a relationship.</p>
+        </sec>
+        <sec id="Sec21">
+          <title>Cross-correlation</title>
+          <p id="Par43">Cross-correlation<sup><xref ref-type="bibr" rid="CR33">33</xref></sup>, a similarity measure, could simply be considered as the extended version of Pearson’s correlation as it calculates the linear correlation between all possible shifted versions of a signal relative to the other signal as follows:<disp-formula id="Equ2"><label>2</label><alternatives><tex-math id="M11">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\rho }_{cross-corr}(x,y)={\rho }_{xy}(m)=\left\{\begin{array}{cc}{\sum }_{i=0}^{t-m-1}{x}_{i+m}{y}_{i}^{\ast } &amp; if\,m\,\ge \,0\\ {\rho }_{yx}(\,-\,m) &amp; if\,m\, &lt; \,0\end{array}\right.$$\end{document}</tex-math><mml:math id="M12" display="block"><mml:msub><mml:mrow><mml:mi>ρ</mml:mi></mml:mrow><mml:mrow><mml:mi>c</mml:mi><mml:mi>r</mml:mi><mml:mi>o</mml:mi><mml:mi>s</mml:mi><mml:mi>s</mml:mi><mml:mo>−</mml:mo><mml:mi>c</mml:mi><mml:mi>o</mml:mi><mml:mi>r</mml:mi><mml:mi>r</mml:mi></mml:mrow></mml:msub><mml:mo stretchy="false">(</mml:mo><mml:mi>x</mml:mi><mml:mo>,</mml:mo><mml:mi>y</mml:mi><mml:mo stretchy="false">)</mml:mo><mml:mo>=</mml:mo><mml:msub><mml:mrow><mml:mi>ρ</mml:mi></mml:mrow><mml:mrow><mml:mi>x</mml:mi><mml:mi>y</mml:mi></mml:mrow></mml:msub><mml:mo stretchy="false">(</mml:mo><mml:mi>m</mml:mi><mml:mo stretchy="false">)</mml:mo><mml:mo>=</mml:mo><mml:mfenced close="" open="{"><mml:mtable columnalign="left left" columnspacing="1em" displaystyle="false" rowspacing=".2em"><mml:mtr><mml:mtd><mml:msubsup><mml:mrow><mml:mo>∑</mml:mo></mml:mrow><mml:mrow><mml:mi>i</mml:mi><mml:mo>=</mml:mo><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mi>t</mml:mi><mml:mo>−</mml:mo><mml:mi>m</mml:mi><mml:mo>−</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:msubsup><mml:msub><mml:mrow><mml:mi>x</mml:mi></mml:mrow><mml:mrow><mml:mi>i</mml:mi><mml:mo>+</mml:mo><mml:mi>m</mml:mi></mml:mrow></mml:msub><mml:msubsup><mml:mrow><mml:mi>y</mml:mi></mml:mrow><mml:mrow><mml:mi>i</mml:mi></mml:mrow><mml:mrow><mml:mo>∗</mml:mo></mml:mrow></mml:msubsup></mml:mtd><mml:mtd><mml:mi>i</mml:mi><mml:mi>f</mml:mi><mml:mspace width="thinmathspace"/><mml:mi>m</mml:mi><mml:mspace width="thinmathspace"/><mml:mo>≥</mml:mo><mml:mspace width="thinmathspace"/><mml:mn>0</mml:mn></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:msub><mml:mrow><mml:mi>ρ</mml:mi></mml:mrow><mml:mrow><mml:mi>y</mml:mi><mml:mi>x</mml:mi></mml:mrow></mml:msub><mml:mo stretchy="false">(</mml:mo><mml:mspace width="-.25em"/><mml:mo>−</mml:mo><mml:mspace width="-.25em"/><mml:mi>m</mml:mi><mml:mo stretchy="false">)</mml:mo></mml:mtd><mml:mtd><mml:mi>i</mml:mi><mml:mi>f</mml:mi><mml:mspace width="thinmathspace"/><mml:mi>m</mml:mi><mml:mspace width="thinmathspace"/><mml:mo>&lt;</mml:mo><mml:mspace width="thinmathspace"/><mml:mn>0</mml:mn></mml:mtd></mml:mtr></mml:mtable></mml:mfenced></mml:math><graphic xlink:href="41598_2020_57915_Article_Equ2.gif" position="anchor"/></alternatives></disp-formula>where <inline-formula id="IEq5"><alternatives><tex-math id="M13">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${y}_{i}^{\ast }$$\end{document}</tex-math><mml:math id="M14"><mml:msubsup><mml:mrow><mml:mi>y</mml:mi></mml:mrow><mml:mrow><mml:mi>i</mml:mi></mml:mrow><mml:mrow><mml:mo>⁎</mml:mo></mml:mrow></mml:msubsup></mml:math><inline-graphic xlink:href="41598_2020_57915_Article_IEq5.gif"/></alternatives></inline-formula> represents the complex conjugate of <italic>y</italic><sub><italic>i</italic></sub>. Index <italic>m</italic> is the displacement between the two signals and is called a lag or lead depending on whether it assumes a positive or negative value.</p>
+          <p id="Par44">Since it computes the correlation between displaced versions of two signals, <italic>ρ</italic><sub><italic>cross-corr</italic></sub> ranges from -1 to 1 and must be interpreted just like linear correlation. While correlation between two signals generates a single similarity measure, cross-correlation generates a vector of similarity measures corresponding to each value of <italic>m</italic>. The maximum value of this vector for a particular <italic>m</italic> can be used as a feature for further analysis. This could be useful in identifying regions of the brain that might not be functionally connected at the same time but be functionally connected after a lag period.</p>
+        </sec>
+        <sec id="Sec22">
+          <title>Coherence</title>
+          <p id="Par45">The spectral coherence<sup><xref ref-type="bibr" rid="CR34">34</xref></sup> allows assessment of the correlation or similarity between two signals in the frequency-domain. Also known as the magnitude-squared coherence, its value indicates how similar <italic>x</italic> and <italic>y</italic> are at each frequency. Coherence can be expressed as:<disp-formula id="Equ3"><label>3</label><alternatives><tex-math id="M15">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\rho }_{coherence}(x,y)=\frac{| {P}_{xy}(f){| }^{2}}{{P}_{xx}(f){P}_{yy}(f)}$$\end{document}</tex-math><mml:math id="M16" display="block"><mml:msub><mml:mrow><mml:mi>ρ</mml:mi></mml:mrow><mml:mrow><mml:mi>c</mml:mi><mml:mi>o</mml:mi><mml:mi>h</mml:mi><mml:mi>e</mml:mi><mml:mi>r</mml:mi><mml:mi>e</mml:mi><mml:mi>n</mml:mi><mml:mi>c</mml:mi><mml:mi>e</mml:mi></mml:mrow></mml:msub><mml:mrow><mml:mo stretchy="true">(</mml:mo><mml:mrow><mml:mi>x</mml:mi><mml:mo>,</mml:mo><mml:mi>y</mml:mi></mml:mrow><mml:mo stretchy="true">)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:mo>∣</mml:mo><mml:msub><mml:mrow><mml:mi>P</mml:mi></mml:mrow><mml:mrow><mml:mi>x</mml:mi><mml:mi>y</mml:mi></mml:mrow></mml:msub><mml:mrow><mml:mo stretchy="true">(</mml:mo><mml:mi>f</mml:mi><mml:mo stretchy="true">)</mml:mo></mml:mrow><mml:msup><mml:mrow><mml:mo>∣</mml:mo></mml:mrow><mml:mn>2</mml:mn></mml:msup></mml:mrow><mml:mrow><mml:msub><mml:mrow><mml:mi>P</mml:mi></mml:mrow><mml:mrow><mml:mi>x</mml:mi><mml:mi>x</mml:mi></mml:mrow></mml:msub><mml:mrow><mml:mo stretchy="true">(</mml:mo><mml:mi>f</mml:mi><mml:mo stretchy="true">)</mml:mo></mml:mrow><mml:msub><mml:mrow><mml:mi>P</mml:mi></mml:mrow><mml:mrow><mml:mi>y</mml:mi><mml:mi>y</mml:mi></mml:mrow></mml:msub><mml:mrow><mml:mo stretchy="true">(</mml:mo><mml:mi>f</mml:mi><mml:mo stretchy="true">)</mml:mo></mml:mrow></mml:mrow></mml:mfrac></mml:math><graphic xlink:href="41598_2020_57915_Article_Equ3.gif" position="anchor"/></alternatives></disp-formula>where <italic>P</italic><sub><italic>xx</italic></sub> (<italic>f</italic>) and <italic>P</italic><sub><italic>yy</italic></sub>(<italic>f</italic>) are the power spectral densities of <italic>x</italic> and <italic>y</italic> respectively and <italic>P</italic><sub><italic>xy</italic></sub> (<italic>f</italic>) is the cross-power spectral density of <italic>x</italic> and <italic>y</italic>.</p>
+          <p id="Par46">The value of coherence lies between 0 and 1, with 0 indicating no coherence between the signals and 1 indicating strong coherence between the signals. It can be considered to reflect the phase consistency between two signals at a given frequency. On one hand, a weaker coherence is the case when the signals share a random phase relationship and on the other hand, stronger coherence results when the phase relationship is almost constant between the signals. Since a coherence value is obtained for each frequency component present in the signals, the peak similarity achieved could be utilized for further analysis.</p>
+        </sec>
+        <sec id="Sec23">
+          <title>Wavelet coherence</title>
+          <p id="Par47">Wavelet coherence<sup><xref ref-type="bibr" rid="CR35">35</xref></sup> captures similarity and quantifies how time signals from two sources are related in the time-frequency-domain. It is based on computing the cross-wavelet power which reveals the parts of the signals that share high common power. Wavelet coherence measures the coherence of the cross wavelet transform in time-frequency-domain and is given by:<disp-formula id="Equ4"><label>4</label><alternatives><tex-math id="M17">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\rho }_{wcoherence}(x,y)=\frac{{|S({C}_{x}(a,b){C}_{y}(a,b))|}^{2}}{S({|{C}_{x}(a,b)|}^{2})S({|{C}_{x}(a,b)|}^{2})}$$\end{document}</tex-math><mml:math id="M18" display="block"><mml:msub><mml:mrow><mml:mi>ρ</mml:mi></mml:mrow><mml:mrow><mml:mi>w</mml:mi><mml:mi>c</mml:mi><mml:mi>o</mml:mi><mml:mi>h</mml:mi><mml:mi>e</mml:mi><mml:mi>r</mml:mi><mml:mi>e</mml:mi><mml:mi>n</mml:mi><mml:mi>c</mml:mi><mml:mi>e</mml:mi></mml:mrow></mml:msub><mml:mrow><mml:mo stretchy="true">(</mml:mo><mml:mrow><mml:mi>x</mml:mi><mml:mo>,</mml:mo><mml:mi>y</mml:mi></mml:mrow><mml:mo stretchy="true">)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:msup><mml:mrow><mml:mo stretchy="true">|</mml:mo><mml:mrow><mml:mi>S</mml:mi><mml:mrow><mml:mo stretchy="true">(</mml:mo><mml:mrow><mml:msub><mml:mrow><mml:mi>C</mml:mi></mml:mrow><mml:mrow><mml:mi>x</mml:mi></mml:mrow></mml:msub><mml:mrow><mml:mo stretchy="true">(</mml:mo><mml:mrow><mml:mi>a</mml:mi><mml:mo>,</mml:mo><mml:mi>b</mml:mi></mml:mrow><mml:mo stretchy="true">)</mml:mo></mml:mrow><mml:msub><mml:mrow><mml:mi>C</mml:mi></mml:mrow><mml:mrow><mml:mi>y</mml:mi></mml:mrow></mml:msub><mml:mrow><mml:mo stretchy="true">(</mml:mo><mml:mrow><mml:mi>a</mml:mi><mml:mo>,</mml:mo><mml:mi>b</mml:mi></mml:mrow><mml:mo stretchy="true">)</mml:mo></mml:mrow></mml:mrow><mml:mo stretchy="true">)</mml:mo></mml:mrow></mml:mrow><mml:mo stretchy="true">|</mml:mo></mml:mrow><mml:mn>2</mml:mn></mml:msup></mml:mrow><mml:mrow><mml:mi>S</mml:mi><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mrow><mml:msup><mml:mrow><mml:mo stretchy="true">|</mml:mo><mml:mrow><mml:msub><mml:mrow><mml:mi>C</mml:mi></mml:mrow><mml:mrow><mml:mi>x</mml:mi></mml:mrow></mml:msub><mml:mo stretchy="false">(</mml:mo><mml:mi>a</mml:mi><mml:mo>,</mml:mo><mml:mi>b</mml:mi><mml:mo stretchy="false">)</mml:mo></mml:mrow><mml:mo stretchy="true">|</mml:mo></mml:mrow><mml:mn>2</mml:mn></mml:msup><mml:mo stretchy="false">)</mml:mo><mml:mi>S</mml:mi><mml:mo stretchy="false">(</mml:mo><mml:msup><mml:mrow><mml:mo stretchy="true">|</mml:mo><mml:mrow><mml:msub><mml:mrow><mml:mi>C</mml:mi></mml:mrow><mml:mrow><mml:mi>x</mml:mi></mml:mrow></mml:msub><mml:mo stretchy="false">(</mml:mo><mml:mi>a</mml:mi><mml:mo>,</mml:mo><mml:mi>b</mml:mi><mml:mo stretchy="false">)</mml:mo></mml:mrow><mml:mo stretchy="true">|</mml:mo></mml:mrow><mml:mn>2</mml:mn></mml:msup></mml:mrow><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:mrow></mml:mfrac></mml:math><graphic xlink:href="41598_2020_57915_Article_Equ4.gif" position="anchor"/></alternatives></disp-formula>where <italic>S</italic> is the smoothing operator in time and scale, <italic>C</italic><sub><italic>x</italic></sub>(<italic>a</italic>, <italic>b</italic>) <italic>and</italic> (<italic>C</italic><sub><italic>y</italic></sub> (<italic>a</italic>,<italic>b</italic>)) represent the continuous wavelet transform of <italic>x</italic> and <italic>y</italic> at scales <italic>a</italic> and positions <italic>b</italic> respectively. For real-valued signals, <italic>ρ</italic><sub><italic>wcoherence</italic></sub> (<italic>x</italic>, <italic>y</italic>) would be real-valued by choosing real-valued wavelets. Comparing the forms presented in Eq. (<xref rid="Equ4" ref-type="">4</xref>) and Eq. (<xref rid="Equ1" ref-type="">1</xref>) suggests that <italic>ρ</italic><sub><italic>wcoherence</italic></sub> could be considered as the equivalent of <italic>ρ</italic><sub><italic>corr</italic></sub> in the time-frequency domain. The magnitude of <italic>ρ</italic><sub><italic>wcoherence</italic></sub> can vary between 0 (no similarity) and 1 (identically similar). Unlike in <italic>ρ</italic><sub><italic>cross-corr</italic></sub> or <italic>ρ</italic><sub><italic>coherence</italic></sub>, <italic>ρ</italic><sub><italic>wcoherence</italic></sub>, requires computation of a similarity measure at each point on the two-dimensional time-frequency plane. Subsequent analysis could be carried out by choosing the greatest similarity value corresponding to a particular time and frequency.</p>
+        </sec>
+        <sec id="Sec24">
+          <title>Mutual information</title>
+          <p id="Par48">Inspired by information theory, if <italic>x</italic> and <italic>y</italic> were to be treated as discrete random variables over the space <inline-formula id="IEq6"><alternatives><tex-math id="M19">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\mathscr{X}}\times {\mathscr{Y}}$$\end{document}</tex-math><mml:math id="M20"><mml:mi mathvariant="script">X</mml:mi><mml:mo>×</mml:mo><mml:mi mathvariant="script">Y</mml:mi></mml:math><inline-graphic xlink:href="41598_2020_57915_Article_IEq6.gif"/></alternatives></inline-formula>, then the similarity in the form of mutual information<sup><xref ref-type="bibr" rid="CR36">36</xref></sup> between them can be defined as:<disp-formula id="Equ5"><label>5</label><alternatives><tex-math id="M21">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\rho }_{mutual{\rm{\_}}info}(x,y)=I(x;y)=\sum _{y\in {\mathscr{Y}}}\sum _{x\in {\mathscr{X}}}p(x,y)log\frac{p(x,y)}{p(x)p(y)}$$\end{document}</tex-math><mml:math id="M22" display="block"><mml:msub><mml:mrow><mml:mi>ρ</mml:mi></mml:mrow><mml:mrow><mml:mi>m</mml:mi><mml:mi>u</mml:mi><mml:mi>t</mml:mi><mml:mi>u</mml:mi><mml:mi>a</mml:mi><mml:mi>l</mml:mi><mml:mi mathvariant="normal">_</mml:mi><mml:mi>i</mml:mi><mml:mi>n</mml:mi><mml:mi>f</mml:mi><mml:mi>o</mml:mi></mml:mrow></mml:msub><mml:mo stretchy="false">(</mml:mo><mml:mi>x</mml:mi><mml:mo>,</mml:mo><mml:mi>y</mml:mi><mml:mo stretchy="false">)</mml:mo><mml:mo>=</mml:mo><mml:mi>I</mml:mi><mml:mo stretchy="false">(</mml:mo><mml:mi>x</mml:mi><mml:mo>;</mml:mo><mml:mi>y</mml:mi><mml:mo stretchy="false">)</mml:mo><mml:mo>=</mml:mo><mml:munder><mml:mo>∑</mml:mo><mml:mrow><mml:mi>y</mml:mi><mml:mo>∈</mml:mo><mml:mrow><mml:mrow><mml:mi mathvariant="script">Y</mml:mi></mml:mrow></mml:mrow></mml:mrow></mml:munder><mml:munder><mml:mo>∑</mml:mo><mml:mrow><mml:mi>x</mml:mi><mml:mo>∈</mml:mo><mml:mrow><mml:mrow><mml:mi mathvariant="script">X</mml:mi></mml:mrow></mml:mrow></mml:mrow></mml:munder><mml:mi>p</mml:mi><mml:mo stretchy="false">(</mml:mo><mml:mi>x</mml:mi><mml:mo>,</mml:mo><mml:mi>y</mml:mi><mml:mo stretchy="false">)</mml:mo><mml:mi>l</mml:mi><mml:mi>o</mml:mi><mml:mi>g</mml:mi><mml:mfrac><mml:mrow><mml:mi>p</mml:mi><mml:mo stretchy="false">(</mml:mo><mml:mi>x</mml:mi><mml:mo>,</mml:mo><mml:mi>y</mml:mi><mml:mo stretchy="false">)</mml:mo></mml:mrow><mml:mrow><mml:mi>p</mml:mi><mml:mo stretchy="false">(</mml:mo><mml:mi>x</mml:mi><mml:mo stretchy="false">)</mml:mo><mml:mi>p</mml:mi><mml:mo stretchy="false">(</mml:mo><mml:mi>y</mml:mi><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:mfrac></mml:math><graphic xlink:href="41598_2020_57915_Article_Equ5.gif" position="anchor"/></alternatives></disp-formula>where <italic>p</italic>(<italic>x</italic>,<italic>y</italic>) is the joint probability mass function of <italic>x</italic> and <italic>y</italic>, <italic>p</italic>(<italic>x</italic>) <italic>and p</italic>(<italic>y</italic>) are the marginal probability mass functions of <italic>x</italic> and <italic>y</italic> respectively.</p>
+          <p id="Par49">Essentially, <italic>ρ</italic><sub><italic>mutual_info</italic></sub> captures the information that is shared between <italic>x</italic> and <italic>y</italic>, i.e., it measures how much knowing one of them reduces uncertainty about the other. <italic>ρ</italic><sub><italic>mutual_info</italic></sub> can assume non-negative values only. On one hand, if <italic>ρ</italic><sub><italic>mutual_info</italic></sub> = 0, then knowledge of <italic>x</italic> does not offer any knowledge of <italic>y</italic> and vice-versa. On the other hand, if there exists a deterministic relationship between <italic>x</italic> and <italic>y</italic>, then knowledge of <italic>x</italic> is also shared with <italic>y</italic> and vice-versa. In this case, <italic>ρ</italic><sub><italic>mutual_info</italic></sub> is equivalent to the entropy of each <italic>x</italic> as well as <italic>y</italic> which represents the expected information stored by each random variable.</p>
+        </sec>
+        <sec id="Sec25">
+          <title>Euclidean distance</title>
+          <p id="Par50">Euclidean distance is a dissimilarity measure and one of the more commonly used metrics due to the well-studied background of Euclidean spaces. It is easy to conceptualize and intuitive as it measures the geometric distance between two points. In case of vectors, this can be computed by the following:<disp-formula id="Equ6"><label>6</label><alternatives><tex-math id="M23">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\rho }_{euclidean}(x,y)={\Vert x-y\Vert }_{2}=\sqrt{(x-y){(x-y)}^{T}}$$\end{document}</tex-math><mml:math id="M24" display="block"><mml:msub><mml:mrow><mml:mi>ρ</mml:mi></mml:mrow><mml:mrow><mml:mi>e</mml:mi><mml:mi>u</mml:mi><mml:mi>c</mml:mi><mml:mi>l</mml:mi><mml:mi>i</mml:mi><mml:mi>d</mml:mi><mml:mi>e</mml:mi><mml:mi>a</mml:mi><mml:mi>n</mml:mi></mml:mrow></mml:msub><mml:mrow><mml:mo stretchy="true">(</mml:mo><mml:mrow><mml:mi>x</mml:mi><mml:mo>,</mml:mo><mml:mi>y</mml:mi></mml:mrow><mml:mo stretchy="true">)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:msub><mml:mrow><mml:mo>‖</mml:mo><mml:mrow><mml:mrow><mml:mi>x</mml:mi><mml:mo>−</mml:mo><mml:mi>y</mml:mi></mml:mrow><mml:mo>‖</mml:mo></mml:mrow></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:msqrt><mml:mrow><mml:mrow><mml:mo stretchy="true">(</mml:mo><mml:mrow><mml:mi>x</mml:mi><mml:mo>−</mml:mo><mml:mi>y</mml:mi></mml:mrow><mml:mo stretchy="true">)</mml:mo></mml:mrow><mml:msup><mml:mrow><mml:mo stretchy="true">(</mml:mo><mml:mrow><mml:mi>x</mml:mi><mml:mo>−</mml:mo><mml:mi>y</mml:mi></mml:mrow><mml:mo stretchy="true">)</mml:mo></mml:mrow><mml:mi>T</mml:mi></mml:msup></mml:mrow></mml:msqrt></mml:math><graphic xlink:href="41598_2020_57915_Article_Equ6.gif" position="anchor"/></alternatives></disp-formula></p>
+          <p id="Par51">The difference terms serve as the measure of similarity. <italic>ρ</italic><sub><italic>euclidean</italic></sub> is dependent on the magnitude of individual points of the vectors. While it is bounded below by 0 indicating low dissimilarity, there is no upper bound. However, it can be rescaled to range between 0 and 1 for interpretability. Euclidean distance is not invariant to the scale of the data. It must be applied once the data has been appropriately scaled.</p>
+        </sec>
+        <sec id="Sec26">
+          <title>Cityblock distance</title>
+          <p id="Par52">Cityblock distance is derived by looking at the difference in absolute values in each dimension of the signals and represents dissimilarity between them. It is given by:<disp-formula id="Equ7"><label>7</label><alternatives><tex-math id="M25">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\rho }_{cityblock}(x,y)=\Vert {x-y\Vert }_{1}={\sum }_{{\rm{i}}=1}^{t}|{{\rm{x}}}_{{\rm{i}}}-{{\rm{y}}}_{{\rm{i}}}|$$\end{document}</tex-math><mml:math id="M26" display="block"><mml:msub><mml:mrow><mml:mi>ρ</mml:mi></mml:mrow><mml:mrow><mml:mi>c</mml:mi><mml:mi>i</mml:mi><mml:mi>t</mml:mi><mml:mi>y</mml:mi><mml:mi>b</mml:mi><mml:mi>l</mml:mi><mml:mi>o</mml:mi><mml:mi>c</mml:mi><mml:mi>k</mml:mi></mml:mrow></mml:msub><mml:mrow><mml:mo stretchy="true">(</mml:mo><mml:mrow><mml:mi>x</mml:mi><mml:mo>,</mml:mo><mml:mi>y</mml:mi></mml:mrow><mml:mo stretchy="true">)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mrow><mml:mo>‖</mml:mo><mml:mrow><mml:msub><mml:mrow><mml:mrow><mml:mi>x</mml:mi><mml:mo>−</mml:mo><mml:mi>y</mml:mi></mml:mrow><mml:mo>‖</mml:mo></mml:mrow><mml:mrow><mml:mn>1</mml:mn></mml:mrow></mml:msub></mml:mrow></mml:mrow><mml:mo>=</mml:mo><mml:msubsup><mml:mo>∑</mml:mo><mml:mrow><mml:mi mathvariant="normal">i</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mi>t</mml:mi></mml:msubsup><mml:mrow><mml:mo stretchy="true">|</mml:mo><mml:mrow><mml:msub><mml:mrow><mml:mi mathvariant="normal">x</mml:mi></mml:mrow><mml:mrow><mml:mi mathvariant="normal">i</mml:mi></mml:mrow></mml:msub><mml:mo>−</mml:mo><mml:msub><mml:mrow><mml:mi mathvariant="normal">y</mml:mi></mml:mrow><mml:mrow><mml:mi mathvariant="normal">i</mml:mi></mml:mrow></mml:msub></mml:mrow><mml:mo stretchy="true">|</mml:mo></mml:mrow></mml:math><graphic xlink:href="41598_2020_57915_Article_Equ7.gif" position="anchor"/></alternatives></disp-formula><italic>ρ</italic><sub><italic>cityblock</italic></sub> can decompose the contributions made by each variable of the signal in terms of the difference in their absolute values. As with <italic>ρ</italic><sub><italic>euclidean</italic></sub>, the measure <italic>ρ</italic><sub><italic>cityblock</italic></sub> is bounded below by 0, is not bounded above and scale-variant. Values closer to 0 are more desirable to claim lower dissimilarity between vectors. Unlike <italic>ρ</italic><sub><italic>euclidean</italic></sub>, which squares the difference in amplitudes and amplifies the deviation, the larger differences in <italic>ρ</italic><sub><italic>cityblock</italic></sub> are not amplified.</p>
+        </sec>
+        <sec id="Sec27">
+          <title>Dynamic time warping</title>
+          <p id="Par53">Dynamic time warping<sup><xref ref-type="bibr" rid="CR37">37</xref></sup> measures dissimilarity and provides an alignment between the signals by means of non-linear warping of the time axis. This metric is based on evaluating a local cost of similarity between all possible pairs of dimensions between two signals and creating a lattice. Based on this lattice, the signals are aligned so as to have the maximum overall overlap (or minimum cost in the optimization framework). The steps involved are as follows:</p>
+          <p id="Par54">For two signals, <italic>x</italic> and <italic>y</italic>, let <italic>ρ</italic><sub><italic>ij</italic></sub> be the Euclidean distance between <italic>i</italic><sup><italic>th</italic></sup>-dimension of <italic>x</italic> and <italic>j</italic><sup><italic>th</italic></sup>-dimension of <italic>y</italic>. All pairwise distances <italic>ρ</italic><sub><italic>ij</italic></sub> are arranged into a lattice C<sub>i,j</sub>(<italic>x</italic>, <italic>y</italic>) of size <italic>t</italic> × <italic>t</italic>. Then <italic>ρ</italic><sub><italic>dtw</italic></sub> searches through the lattice for a path parameterized by two sequences of the same length such that<disp-formula id="Equ8"><label>8</label><alternatives><tex-math id="M27">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\sum }^{}{{\rm{C}}}_{{\rm{i}},{\rm{j}}}(x,y)$$\end{document}</tex-math><mml:math id="M28" display="block"><mml:msup><mml:mo>∑</mml:mo><mml:mspace width="-.25em"/></mml:msup><mml:msub><mml:mrow><mml:mi mathvariant="normal">C</mml:mi></mml:mrow><mml:mrow><mml:mi mathvariant="normal">i</mml:mi><mml:mo>,</mml:mo><mml:mi mathvariant="normal">j</mml:mi></mml:mrow></mml:msub><mml:mrow><mml:mo stretchy="true">(</mml:mo><mml:mrow><mml:mi>x</mml:mi><mml:mo>,</mml:mo><mml:mi>y</mml:mi></mml:mrow><mml:mo stretchy="true">)</mml:mo></mml:mrow></mml:math><graphic xlink:href="41598_2020_57915_Article_Equ8.gif" position="anchor"/></alternatives></disp-formula>is minimum. The chosen path is such that both signals are aligned, without skipping dimensions and without repetition of signal dimensions. Any non-linear variation in the time-domain are taken into account here. Being a dissimilarity measure, dynamic time warping is bounded below by 0 and unbounded above. It is also scale-variant and is applicable to the general case where signals are of varying lengths in time although in case of BOLD signals, the length of the signals are the same.</p>
+        </sec>
+        <sec id="Sec28">
+          <title>Earth mover’s distance</title>
+          <p id="Par55">Earth mover’s distance, also known as Wasserstein metric<sup><xref ref-type="bibr" rid="CR38">38</xref></sup>, is a dissimilarity measure which assumes each signal to be a probability distribution and represents the minimum cost of converting one distribution into the other. Treating <italic>x</italic> and <italic>y</italic> as probability distributions with:<disp-formula id="Equa"><alternatives><tex-math id="M29">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$x=\{({t}_{{x}_{1}},{x}_{1}),({t}_{{x}_{2}},{x}_{2}),\ldots ({t}_{{x}_{m}},{x}_{m})\}$$\end{document}</tex-math><mml:math id="M30" display="block"><mml:mi>x</mml:mi><mml:mo>=</mml:mo><mml:mrow><mml:mo stretchy="true">{</mml:mo><mml:mrow><mml:mrow><mml:mo stretchy="true">(</mml:mo><mml:mrow><mml:msub><mml:mrow><mml:mi>t</mml:mi></mml:mrow><mml:mrow><mml:msub><mml:mrow><mml:mi>x</mml:mi></mml:mrow><mml:mrow><mml:mn>1</mml:mn></mml:mrow></mml:msub></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mrow><mml:mi>x</mml:mi></mml:mrow><mml:mrow><mml:mn>1</mml:mn></mml:mrow></mml:msub></mml:mrow><mml:mo stretchy="true">)</mml:mo></mml:mrow><mml:mo>,</mml:mo><mml:mrow><mml:mo stretchy="true">(</mml:mo><mml:mrow><mml:msub><mml:mrow><mml:mi>t</mml:mi></mml:mrow><mml:mrow><mml:msub><mml:mrow><mml:mi>x</mml:mi></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msub></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mrow><mml:mi>x</mml:mi></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msub></mml:mrow><mml:mo stretchy="true">)</mml:mo></mml:mrow><mml:mo>,</mml:mo><mml:mi>…</mml:mi><mml:mrow><mml:mo stretchy="true">(</mml:mo><mml:mrow><mml:msub><mml:mrow><mml:mi>t</mml:mi></mml:mrow><mml:mrow><mml:msub><mml:mrow><mml:mi>x</mml:mi></mml:mrow><mml:mrow><mml:mi>m</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mrow><mml:mi>x</mml:mi></mml:mrow><mml:mrow><mml:mi>m</mml:mi></mml:mrow></mml:msub></mml:mrow><mml:mo stretchy="true">)</mml:mo></mml:mrow></mml:mrow><mml:mo stretchy="true">}</mml:mo></mml:mrow></mml:math><graphic xlink:href="41598_2020_57915_Article_Equa.gif" position="anchor"/></alternatives></disp-formula>and<disp-formula id="Equ9"><label>9</label><alternatives><tex-math id="M31">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$y=\{({t}_{{y}_{1}},{y}_{1}),({t}_{{y}_{2}},{y}_{2}),\ldots ({t}_{{y}_{n}},{y}_{n})\}$$\end{document}</tex-math><mml:math id="M32" display="block"><mml:mi>y</mml:mi><mml:mo>=</mml:mo><mml:mrow><mml:mo stretchy="true">{</mml:mo><mml:mrow><mml:mrow><mml:mo stretchy="true">(</mml:mo><mml:mrow><mml:msub><mml:mrow><mml:mi>t</mml:mi></mml:mrow><mml:mrow><mml:msub><mml:mrow><mml:mi>y</mml:mi></mml:mrow><mml:mrow><mml:mn>1</mml:mn></mml:mrow></mml:msub></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mrow><mml:mi>y</mml:mi></mml:mrow><mml:mrow><mml:mn>1</mml:mn></mml:mrow></mml:msub></mml:mrow><mml:mo stretchy="true">)</mml:mo></mml:mrow><mml:mo>,</mml:mo><mml:mrow><mml:mo stretchy="true">(</mml:mo><mml:mrow><mml:msub><mml:mrow><mml:mi>t</mml:mi></mml:mrow><mml:mrow><mml:msub><mml:mrow><mml:mi>y</mml:mi></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msub></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mrow><mml:mi>y</mml:mi></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msub></mml:mrow><mml:mo stretchy="true">)</mml:mo></mml:mrow><mml:mo>,</mml:mo><mml:mi>…</mml:mi><mml:mrow><mml:mo stretchy="true">(</mml:mo><mml:mrow><mml:msub><mml:mrow><mml:mi>t</mml:mi></mml:mrow><mml:mrow><mml:msub><mml:mrow><mml:mi>y</mml:mi></mml:mrow><mml:mrow><mml:mi>n</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mrow><mml:mi>y</mml:mi></mml:mrow><mml:mrow><mml:mi>n</mml:mi></mml:mrow></mml:msub></mml:mrow><mml:mo stretchy="true">)</mml:mo></mml:mrow></mml:mrow><mml:mo stretchy="true">}</mml:mo></mml:mrow></mml:math><graphic xlink:href="41598_2020_57915_Article_Equ9.gif" position="anchor"/></alternatives></disp-formula>where each <italic>x</italic><sub><italic>i</italic></sub> is a cluster (=amplitude) of the signal <italic>x</italic> at time-point <inline-formula id="IEq10"><alternatives><tex-math id="M33">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${t}_{{x}_{i}}$$\end{document}</tex-math><mml:math id="M34"><mml:msub><mml:mrow><mml:mi>t</mml:mi></mml:mrow><mml:mrow><mml:msub><mml:mrow><mml:mi>x</mml:mi></mml:mrow><mml:mrow><mml:mi>i</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:msub></mml:math><inline-graphic xlink:href="41598_2020_57915_Article_IEq10.gif"/></alternatives></inline-formula> and each <italic>y</italic><sub><italic>j</italic></sub> is a cluster (=amplitude) of signal <italic>y</italic> at time-point <inline-formula id="IEq11"><alternatives><tex-math id="M35">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${t}_{{y}_{j}}$$\end{document}</tex-math><mml:math id="M36"><mml:msub><mml:mrow><mml:mi>t</mml:mi></mml:mrow><mml:mrow><mml:msub><mml:mrow><mml:mi>y</mml:mi></mml:mrow><mml:mrow><mml:mi>j</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:msub></mml:math><inline-graphic xlink:href="41598_2020_57915_Article_IEq11.gif"/></alternatives></inline-formula>. While <italic>m</italic> and <italic>n</italic> do not have to be necessarily equal in general, i.e., Earth mover’s distance can be computed for signals of differing lengths, in case of BOLD signals, they can be considered to be the same for a given individual and determined by the scan length. Then the ground distance between clusters at <italic>p</italic><sub><italic>i</italic></sub>
+<italic>and q</italic><sub><italic>j</italic></sub> can be encoded in the matrix<disp-formula id="Equ10"><label>10</label><alternatives><tex-math id="M37">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$D=[{d}_{i,j}]$$\end{document}</tex-math><mml:math id="M38" display="block"><mml:mi>D</mml:mi><mml:mo>=</mml:mo><mml:mrow><mml:mo stretchy="true">[</mml:mo><mml:mrow><mml:msub><mml:mrow><mml:mi>d</mml:mi></mml:mrow><mml:mrow><mml:mi>i</mml:mi><mml:mo>,</mml:mo><mml:mi>j</mml:mi></mml:mrow></mml:msub></mml:mrow><mml:mo stretchy="true">]</mml:mo></mml:mrow></mml:math><graphic xlink:href="41598_2020_57915_Article_Equ10.gif" position="anchor"/></alternatives></disp-formula>with a flow between clusters at <italic>p</italic><sub><italic>i</italic></sub>
+<italic>and q</italic><sub><italic>j</italic></sub> represented by the matrix<disp-formula id="Equ11"><label>11</label><alternatives><tex-math id="M39">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$F=[{f}_{i,j}]$$\end{document}</tex-math><mml:math id="M40" display="block"><mml:mi>F</mml:mi><mml:mo>=</mml:mo><mml:mrow><mml:mo stretchy="true">[</mml:mo><mml:mrow><mml:msub><mml:mrow><mml:mi>f</mml:mi></mml:mrow><mml:mrow><mml:mi>i</mml:mi><mml:mo>,</mml:mo><mml:mi>j</mml:mi></mml:mrow></mml:msub></mml:mrow><mml:mo stretchy="true">]</mml:mo></mml:mrow></mml:math><graphic xlink:href="41598_2020_57915_Article_Equ11.gif" position="anchor"/></alternatives></disp-formula></p>
+          <p id="Par56">The objective is to minimize the overall cost<disp-formula id="Equ12"><label>12</label><alternatives><tex-math id="M41">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\min }\,{\sum }_{i=1}^{m}{\sum }_{j=1}^{n}{f}_{i,j}{d}_{i,j}$$\end{document}</tex-math><mml:math id="M42" display="block"><mml:mi mathvariant="italic">min</mml:mi><mml:mspace width=".10em"/><mml:msubsup><mml:mo>∑</mml:mo><mml:mrow><mml:mi>i</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mi>m</mml:mi></mml:msubsup><mml:mrow><mml:msubsup><mml:mo>∑</mml:mo><mml:mrow><mml:mi>j</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mi>n</mml:mi></mml:msubsup><mml:mrow><mml:msub><mml:mrow><mml:mspace width=".3em"/><mml:mi>f</mml:mi></mml:mrow><mml:mrow><mml:mi>i</mml:mi><mml:mo>,</mml:mo><mml:mi>j</mml:mi></mml:mrow></mml:msub><mml:msub><mml:mrow><mml:mi>d</mml:mi></mml:mrow><mml:mrow><mml:mi>i</mml:mi><mml:mo>,</mml:mo><mml:mi>j</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:mrow></mml:math><graphic xlink:href="41598_2020_57915_Article_Equ12.gif" position="anchor"/></alternatives></disp-formula></p>
+          <p id="Par57">while satisfying the following constraints:<disp-formula id="Equ13"><label>13</label><alternatives><tex-math id="M43">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${f}_{i,j}\ge 0\,for\,1\le i\le m,\,1\le j\le n$$\end{document}</tex-math><mml:math id="M44" display="block"><mml:msub><mml:mrow><mml:mi>f</mml:mi></mml:mrow><mml:mrow><mml:mi>i</mml:mi><mml:mo>,</mml:mo><mml:mi>j</mml:mi></mml:mrow></mml:msub><mml:mo>≥</mml:mo><mml:mn>0</mml:mn><mml:mspace width=".25em"/><mml:mi>f</mml:mi><mml:mi>o</mml:mi><mml:mi>r</mml:mi><mml:mspace width=".25em"/><mml:mn>1</mml:mn><mml:mo>≤</mml:mo><mml:mi>i</mml:mi><mml:mo>≤</mml:mo><mml:mi>m</mml:mi><mml:mo>,</mml:mo><mml:mspace width=".25em"/><mml:mn>1</mml:mn><mml:mo>≤</mml:mo><mml:mi>j</mml:mi><mml:mo>≤</mml:mo><mml:mi>n</mml:mi></mml:math><graphic xlink:href="41598_2020_57915_Article_Equ13.gif" position="anchor"/></alternatives></disp-formula><disp-formula id="Equ14"><label>14</label><alternatives><tex-math id="M45">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\sum }_{j=1}^{n}{f}_{i,j}\le {t}_{{x}_{i}}\,for\,1\le i\le m$$\end{document}</tex-math><mml:math id="M46" display="block"><mml:msubsup><mml:mo>∑</mml:mo><mml:mrow><mml:mi>j</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mi>n</mml:mi></mml:msubsup><mml:mrow><mml:msub><mml:mrow><mml:mspace width=".3em"/><mml:mi>f</mml:mi></mml:mrow><mml:mrow><mml:mi>i</mml:mi><mml:mo>,</mml:mo><mml:mi>j</mml:mi></mml:mrow></mml:msub><mml:mo>≤</mml:mo><mml:msub><mml:mrow><mml:mi>t</mml:mi></mml:mrow><mml:mrow><mml:msub><mml:mrow><mml:mi>x</mml:mi></mml:mrow><mml:mrow><mml:mi>i</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:msub><mml:mspace width=".25em"/><mml:mi>f</mml:mi><mml:mi>o</mml:mi><mml:mi>r</mml:mi><mml:mspace width=".25em"/><mml:mn>1</mml:mn><mml:mo>≤</mml:mo><mml:mi>i</mml:mi><mml:mo>≤</mml:mo><mml:mi>m</mml:mi></mml:mrow></mml:math><graphic xlink:href="41598_2020_57915_Article_Equ14.gif" position="anchor"/></alternatives></disp-formula><disp-formula id="Equ15"><label>15</label><alternatives><tex-math id="M47">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\sum }_{i=1}^{m}{f}_{i,j}\le {t}_{{y}_{j}}\,for\,1\le j\le n$$\end{document}</tex-math><mml:math id="M48" display="block"><mml:msubsup><mml:mo>∑</mml:mo><mml:mrow><mml:mi>i</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mi>m</mml:mi></mml:msubsup><mml:mrow><mml:msub><mml:mrow><mml:mspace width=".3em"/><mml:mi>f</mml:mi></mml:mrow><mml:mrow><mml:mi>i</mml:mi><mml:mo>,</mml:mo><mml:mi>j</mml:mi></mml:mrow></mml:msub><mml:mo>≤</mml:mo><mml:msub><mml:mrow><mml:mi>t</mml:mi></mml:mrow><mml:mrow><mml:msub><mml:mrow><mml:mi>y</mml:mi></mml:mrow><mml:mrow><mml:mi>j</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:msub><mml:mspace width=".25em"/><mml:mi>f</mml:mi><mml:mi>o</mml:mi><mml:mi>r</mml:mi><mml:mspace width=".25em"/><mml:mn>1</mml:mn><mml:mo>≤</mml:mo><mml:mi>j</mml:mi><mml:mo>≤</mml:mo><mml:mi>n</mml:mi></mml:mrow></mml:math><graphic xlink:href="41598_2020_57915_Article_Equ15.gif" position="anchor"/></alternatives></disp-formula><disp-formula id="Equ16"><label>16</label><alternatives><tex-math id="M49">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\sum }_{i=1}^{m}{\sum }_{j=1}^{n}{f}_{i,j}=\,{\min }\left\{{\sum }_{i=1}^{m}{t}_{{x}_{i}},{\sum }_{j=1}^{n}{t}_{{y}_{j}}\right\}.$$\end{document}</tex-math><mml:math id="M50" display="block"><mml:msubsup><mml:mo>∑</mml:mo><mml:mrow><mml:mi>i</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mi>m</mml:mi></mml:msubsup><mml:mrow><mml:msubsup><mml:mo>∑</mml:mo><mml:mrow><mml:mi>j</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mi>n</mml:mi></mml:msubsup><mml:mrow><mml:msub><mml:mrow><mml:mspace width=".3em"/><mml:mi>f</mml:mi></mml:mrow><mml:mrow><mml:mi>i</mml:mi><mml:mo>,</mml:mo><mml:mi>j</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:mrow><mml:mo>=</mml:mo><mml:mspace width=".25em"/><mml:mi mathvariant="italic">min</mml:mi><mml:mrow><mml:mfenced close="}" open="{"><mml:mrow><mml:msubsup><mml:mo>∑</mml:mo><mml:mrow><mml:mi>i</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mi>m</mml:mi></mml:msubsup><mml:mrow><mml:msub><mml:mrow><mml:mi>t</mml:mi></mml:mrow><mml:mrow><mml:msub><mml:mrow><mml:mi>x</mml:mi></mml:mrow><mml:mrow><mml:mi>i</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:msub></mml:mrow><mml:mo>,</mml:mo><mml:msubsup><mml:mo>∑</mml:mo><mml:mrow><mml:mi>j</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mi>n</mml:mi></mml:msubsup><mml:mrow><mml:msub><mml:mrow><mml:mi>t</mml:mi></mml:mrow><mml:mrow><mml:msub><mml:mrow><mml:mi>y</mml:mi></mml:mrow><mml:mrow><mml:mi>j</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:msub></mml:mrow></mml:mrow></mml:mfenced></mml:mrow><mml:mo>.</mml:mo></mml:math><graphic xlink:href="41598_2020_57915_Article_Equ16.gif" position="anchor"/></alternatives></disp-formula></p>
+          <p id="Par58">Earth mover’s distance can then be defined as the amount of work needed to transform distribution <italic>x</italic> to distribution <italic>y</italic>, normalized by the total flow<disp-formula id="Equ17"><label>17</label><alternatives><tex-math id="M51">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\rho }_{emd}(x,y)=\frac{{\sum }_{i=1}^{m}{\sum }_{j=1}^{n}{f}_{i,j}{d}_{i,j}}{{\sum }_{i=1}^{m}{\sum }_{j=1}^{n}{f}_{i,j}}$$\end{document}</tex-math><mml:math id="M52" display="block"><mml:msub><mml:mrow><mml:mi>ρ</mml:mi></mml:mrow><mml:mrow><mml:mi>e</mml:mi><mml:mi>m</mml:mi><mml:mi>d</mml:mi></mml:mrow></mml:msub><mml:mrow><mml:mo stretchy="true">(</mml:mo><mml:mrow><mml:mi>x</mml:mi><mml:mo>,</mml:mo><mml:mi>y</mml:mi></mml:mrow><mml:mo stretchy="true">)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:msubsup><mml:mo>∑</mml:mo><mml:mrow><mml:mi>i</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mi>m</mml:mi></mml:msubsup><mml:msubsup><mml:mo>∑</mml:mo><mml:mrow><mml:mi>j</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mi>n</mml:mi></mml:msubsup><mml:msub><mml:mrow><mml:mspace width=".3em"/><mml:mi>f</mml:mi></mml:mrow><mml:mrow><mml:mi>i</mml:mi><mml:mo>,</mml:mo><mml:mi>j</mml:mi></mml:mrow></mml:msub><mml:msub><mml:mrow><mml:mi>d</mml:mi></mml:mrow><mml:mrow><mml:mi>i</mml:mi><mml:mo>,</mml:mo><mml:mi>j</mml:mi></mml:mrow></mml:msub></mml:mrow><mml:mrow><mml:msubsup><mml:mo>∑</mml:mo><mml:mrow><mml:mi>i</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mi>m</mml:mi></mml:msubsup><mml:msubsup><mml:mo>∑</mml:mo><mml:mrow><mml:mi>j</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mi>n</mml:mi></mml:msubsup><mml:msub><mml:mrow><mml:mspace width=".3em"/><mml:mi>f</mml:mi></mml:mrow><mml:mrow><mml:mi>i</mml:mi><mml:mo>,</mml:mo><mml:mi>j</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:mfrac></mml:math><graphic xlink:href="41598_2020_57915_Article_Equ17.gif" position="anchor"/></alternatives></disp-formula></p>
+          <p id="Par59">Similar to <italic>ρ</italic><sub><italic>dtw</italic></sub>, <italic>ρ</italic><sub><italic>emd</italic></sub> considers non-linear interactions between signals, is scale-variant, and applicable to general signals of unequal length. This measure is scale-bounded below by the distance between the centroids of the distributions or signals and values closest to it represent greater similarity.</p>
+        </sec>
+        <sec id="Sec29">
+          <title>Implementational details</title>
+          <p id="Par60">These measures were computed in a pairwise fashion, i.e. a FC value was obtained for each pair of regions included in each experiment. The specifications of implementation (in MATLAB R2018a) are provided in Supplementary Table <xref rid="MOESM1" ref-type="media">2</xref>.</p>
+        </sec>
+      </sec>
+      <sec id="Sec30">
+        <title>Experiments</title>
+        <p id="Par61">Three experiments were designed to closely assess each of the alternative measures relative to Pearson’s correlation as well as to compare them to each other:</p>
+        <sec id="Sec31">
+          <title>Experiment 1 (E1)</title>
+          <p id="Par62">The consistency of each FC measure was evaluated by comparing task and resting-state functional MRI in specific brain networks.</p>
+        </sec>
+        <sec id="Sec32">
+          <title>Experiment 2 (E2)</title>
+          <p id="Par63">The contribution of each FC measure was studied in an age-based classification problem in several standard large-scale brain networks.</p>
+        </sec>
+        <sec id="Sec33">
+          <title>Experiment 3 (E3)</title>
+          <p id="Par64">The potential dependence of brain organization into large-scale networks was tested for each FC measure.</p>
+          <p id="Par65">For all the experiments in this section, imaging data (i.e., task and resting-state functional MRI) were acquired and preprocessed similarly. The commonalities across the experiments are described as follows:</p>
+        </sec>
+      </sec>
+      <sec id="Sec34">
+        <title>Participants</title>
+        <p id="Par66">All healthy adults who participated in this study provided written and informed consent. The data collection protocol was approved by the University of Wisconsin-Madison Health Science Institutional Review Board and the study was carried out in accordance with the relevant guidelines and regulations.</p>
+      </sec>
+      <sec id="Sec35">
+        <title>Data acquisition</title>
+        <p id="Par67">Neuroimaging data were acquired from recruited participants on 3T GE 750 scanners (GE Healthcare, Waukesha, WI, USA) with an 8-channel head coil. An axial localizer scan was obtained to verify subject positioning and plan slice acquisition.</p>
+        <sec id="Sec36">
+          <title>Structural MRI</title>
+          <p id="Par68">Five-minute T1-weighted axial structural images were acquired at the beginning of each session using FSPGR BRAVO sequence (TR = 8.132 ms, TE = 3.18 ms, TI = 450 ms, 256 × 256 matrix, 156 slices, flip angle = 12°, FOV = 25.6 cm, slice thickness = 1 mm).</p>
+        </sec>
+        <sec id="Sec37">
+          <title>Task functional MRI</title>
+          <p id="Par69">Each task functional MRI followed a block design consisting of four 20-s task blocks alternating with five 20-s blocks of rest, for a total scan time of 3 minutes. The first followed a finger tapping task paradigm targeted at capturing motor network activation in which participants alternated between tapping fingers on a button box sequentially and continuously and resting, based on visual cues. The second used a verbal fluency task functional MRI paradigm aimed at capturing language network activation in which participants alternated between covertly verbalizing words starting with a given letter (“F”, “A”, “S”, “T”) and resting based on visual cues. Participants used earplugs to attenuate scanner noise, were padded with foam pads around their head and were instructed to hold their heads still during the scan in order to minimize movement.</p>
+        </sec>
+        <sec id="Sec38">
+          <title>Resting-state functional MRI</title>
+          <p id="Par70">Ten-minute resting-state functional MRI were obtained using single-shot echo-planar T2*-weighted imaging with the following acquisition parameters: TR = 2.6 s, 231 time-points, TE = 22 ms, FOV = 22.4 cm, flip angle = 60°, voxel dimensions 3.5 mm × 3.5 mm, 3.5 mm slice thickness, 40 slices, with eyes closed. Two types of task functional MRI were collected via echo-planar T2*-weighted imaging either with the same parameters as the resting-state scan or with parameters: TR = 2.0 s, 90 time-points, TE = 22 ms, FOV = 22.4 cm, flip angle = 60°, voxel dimensions 3.75 mm × 3.75 mm, 4.0 mm slice thickness, 40 slices.</p>
+        </sec>
+      </sec>
+      <sec id="Sec39">
+        <title>Data preprocessing</title>
+        <p id="Par71">All imaging data were preprocessed on AFNI<sup><xref ref-type="bibr" rid="CR39">39</xref></sup> using standard steps as described below.</p>
+        <sec id="Sec40">
+          <title>Task functional MRI</title>
+          <p id="Par72">For each of the task functional MRI (left motor, right motor, language), data were first aligned to the anatomical and normalized to standard Montreal Neurological Institute (MNI) space. The first four volumes were discarded to allow for steady-state imaging. Images were then resampled to 3.0 mm isotropic, de-spiked, volume registered, and spatially smoothed using a 4 mm full-width at half-maximum Gaussian kernel. Time course at each voxel was scaled to percent signal with a mean value of 100. The standard activation maps were computed using a general linear model (GLM) with a canonical gamma variate hemodynamic response function convolved with a boxcar reference waveform and six rigid-body motion parameters and their derivatives regressed. Motion censoring (per TR motion &gt; 0.25 mm) was included in the general linear model. Standard activation maps were also derived using AFNI’s 3dClustSim (<italic>p</italic> &lt; 0.05, ≥20 voxels).</p>
+        </sec>
+        <sec id="Sec41">
+          <title>Resting-state functional MRI</title>
+          <p id="Par73">Data were de-spiked, slice time corrected, motion corrected, aligned with the structural MRI, normalized to MNI space, resampled to 3.5 mm<sup>3</sup>, and spatially smoothed with a 4-mm FWHM Gaussian kernel. Motion censoring (per TR motion &gt; 1 mm or 1°), nuisance regression, and bandpass filtering (0.01–0.1 Hz) were performed simultaneously in one regression model. Nuisance signals regressed out included six motion estimates and their temporal derivatives, and the voxel-wise locally averaged white matter signal. Global signal regression was not performed.</p>
+        </sec>
+      </sec>
+      <sec id="Sec42">
+        <title>Data analysis</title>
+        <p id="Par74">All data analyses to follow were carried out with the Statistics and Machine Learning Toolbox in MATLAB R2018a (The MathWorks, Inc., Natick, Massachusetts, United States).</p>
+      </sec>
+      <sec id="Sec43">
+        <title>E1: Consistency of functional connectivity</title>
+        <sec id="Sec44">
+          <title>Objective</title>
+          <p id="Par75">In order to understand whether the alternative measures capture FC based on resting-state data, it is important establish the ground truth FC for each. Given that the spatial FC patterns derived from resting-state BOLD signals have been reported to overlap with those derived from task-based data across brain networks and individuals, task-functional MRI was used to represent ground truth<sup><xref ref-type="bibr" rid="CR5">5</xref>,<xref ref-type="bibr" rid="CR40">40</xref>–<xref ref-type="bibr" rid="CR42">42</xref></sup>. Thus, the FC derived from resting-state data was compared with the FC derived from task-functional MRI data to evaluate the consistency of each measure.</p>
+        </sec>
+        <sec id="Sec45">
+          <title>Participants</title>
+          <p id="Par76">Neuroimaging data were acquired from 22 young healthy right-handed participants (age = 18–28 years). Of the 22 participants, 3 were excluded due to excessive head movement as a result of motion censoring leading to too few degrees of freedom, leaving data from 19 participants for subsequent analyses. Detailed demographic information for included participants can be found in Table <xref rid="Tab1" ref-type="table">1</xref>.</p>
+        </sec>
+        <sec id="Sec46">
+          <title>Data analysis</title>
+          <p id="Par77">BOLD time courses were extracted from preprocessed task functional MRI and resting-state functional MRI data in the motor and language networks based on standard functional (Power) atlas<sup><xref ref-type="bibr" rid="CR43">43</xref></sup>. For the left and right finger-tapping task functional MRI, the motor network, comprised of 35 regions, was used. For the verbal fluency task functional MRI, the working memory and fronto-parietal sub-networks were combined to include 30 regions. All these networks were also evaluated for resting-state functional MRI. Within each network, pairwise FC was evaluated, generating a 35 × 35 and 30 × 30 matrix for motor and language (working memory and fronto-parietal areas) functions respectively for each individual.</p>
+          <p id="Par78">FC matrices for all individuals were averaged to generate a group-level mean FC matrix for each network. This meant that each element in the average FC matrix was obtained by computing the mean of FC values in the cell of each of the 19 individual matrices. Then the mean group-level FC matrix was thresholded to reveal a binarized FC pattern within a given network. The threshold was empirically determined to be one standard deviation higher than the mean overall (all values pooled across subjects) FC value so as to have stronger within-network and weaker between-network connectivity. Binarized FC patterns were compared between task functional MRI and resting-state functional MRI by computing a Sørensen-Dice similarity coefficient<sup><xref ref-type="bibr" rid="CR44">44</xref>,<xref ref-type="bibr" rid="CR45">45</xref></sup> which measures the consistency of each of the alternative FC measures.</p>
+        </sec>
+      </sec>
+      <sec id="Sec47">
+        <title>E2: Population-based classification using functional connectivity</title>
+        <sec id="Sec48">
+          <title>Objective</title>
+          <p id="Par79">After examining the consistency of the various measures of FC, a data-driven comparative analysis was performed to further evaluate the alternative measures. This consisted of population-based, specifically age-based, classification in the healthy population. The goal was to compare and contrast the different FC measures at the brain network-level in differentiating between younger brains from older ones.</p>
+        </sec>
+        <sec id="Sec49">
+          <title>Participants</title>
+          <p id="Par80">Neuroimaging data were acquired from 64 healthy right-handed participants, subdivided into 32 older (age = 46–74 years) and 32 younger (age = 18–45 years) participants. The two groups differed significantly by age but were matched in terms of gender distribution, education, verbal fluency and head motion to avoid these possible confounds. These criteria led to the exclusion of 8 older and 3 younger adults, leaving 24 older and 29 younger participants for further analysis (<italic>n</italic> = 53). Greater head movement in older adults may be a potential reason for exclusion of a greater number<sup><xref ref-type="bibr" rid="CR46">46</xref></sup>. Group-wise characteristics are provided in Table <xref rid="Tab4" ref-type="table">4</xref>.</p>
+        </sec>
+        <sec id="Sec50">
+          <title>Data analysis</title>
+          <p id="Par81">BOLD time courses were extracted from preprocessed resting-state functional MRI in 9 major brain networks based on a second standard functional (Willard) atlas<sup><xref ref-type="bibr" rid="CR8">8</xref></sup> as it has a specific language network defined (used in subsequent analysis). The networks included dorsal and ventral default mode networks (D. DMN, V. DMN), left and right executive control networks (L. ECN and R. ECN), anterior and posterior salience networks (A. Salience and P. Salience), auditory, language and motor networks. Within each network, pairwise FC was evaluated, generating a symmetric square matrix for each individual.</p>
+          <p id="Par82">Each network-based FC matrix was vectorized to extract only the unique pairwise FC coefficients (<inline-formula id="IEq7"><alternatives><tex-math id="M53">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\frac{n(n-1)}{2}$$\end{document}</tex-math><mml:math id="M54"><mml:mfrac><mml:mrow><mml:mi>n</mml:mi><mml:mrow><mml:mo stretchy="true">(</mml:mo><mml:mrow><mml:mi>n</mml:mi><mml:mo>−</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mo stretchy="true">)</mml:mo></mml:mrow></mml:mrow><mml:mn>2</mml:mn></mml:mfrac></mml:math><inline-graphic xlink:href="41598_2020_57915_Article_IEq7.gif"/></alternatives></inline-formula>, where <italic>n</italic> = number of regions of interest in the network) for each participant (from either the upper or lower triangular matrix). Then these vectors were compiled across subjects (feature size = <inline-formula id="IEq8"><alternatives><tex-math id="M55">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$53\times \frac{n(n-1)}{2}$$\end{document}</tex-math><mml:math id="M56"><mml:mn>53</mml:mn><mml:mo>×</mml:mo><mml:mfrac><mml:mrow><mml:mi>n</mml:mi><mml:mo stretchy="false">(</mml:mo><mml:mi>n</mml:mi><mml:mo>−</mml:mo><mml:mn>1</mml:mn><mml:mo stretchy="false">)</mml:mo></mml:mrow><mml:mn>2</mml:mn></mml:mfrac></mml:math><inline-graphic xlink:href="41598_2020_57915_Article_IEq8.gif"/></alternatives></inline-formula>) and fed into a binary support vector machine classifier. A nested cross-validation approach, comprised of two loops, with leave-one-out strategy was adopted to maximize the training dataset. The inner loop determined an optimal number of discriminatory FC features with NCA (neighborhood component analysis) which is a non-parametric and embedded feature selection approach<sup><xref ref-type="bibr" rid="CR47">47</xref></sup>. It selects features (a subset of <inline-formula id="IEq9"><alternatives><tex-math id="M57">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\frac{n(n-1)}{2}$$\end{document}</tex-math><mml:math id="M58"><mml:mfrac><mml:mrow><mml:mi>n</mml:mi><mml:mrow><mml:mo stretchy="true">(</mml:mo><mml:mrow><mml:mi>n</mml:mi><mml:mo>−</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mo stretchy="true">)</mml:mo></mml:mrow></mml:mrow><mml:mn>2</mml:mn></mml:mfrac></mml:math><inline-graphic xlink:href="41598_2020_57915_Article_IEq9.gif"/></alternatives></inline-formula> features) by learning a linear transformation which maximize the leave-one-out classification performance. The outer loop was used to perform model selection by classifying an independent left-out subject with the NCA-chosen features. The classification label (i.e. group membership) across all the left-out subjects was considered to compute the average accuracy and the classification probabilities of the left-out-samples were used to compute the area under the curve. These steps were repeated for each of the FC measures and results were compared. In addition to examining the discriminatory power of each FC measure separately, the above steps were also repeated by combining (concatenating) FC measures from all identified metrics, forming a composite multi-metric FC measure, i.e.,<disp-formula id="Equ18"><label>18</label><alternatives><tex-math id="M59">\documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym} 
+				\usepackage{amsfonts} 
+				\usepackage{amssymb} 
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\rho }_{composite}=({\rho }_{corr}|{\rho }_{xcorr}|{\rho }_{coh}|{\rho }_{wcoh}|{\rho }_{mutual\_info}|{\rho }_{euclidean}|{\rho }_{cityblock}|{\rho }_{dtw}|{\rho }_{emd})$$\end{document}</tex-math><mml:math id="M60" display="block"><mml:msub><mml:mrow><mml:mi>ρ</mml:mi></mml:mrow><mml:mrow><mml:mi>c</mml:mi><mml:mi>o</mml:mi><mml:mi>m</mml:mi><mml:mi>p</mml:mi><mml:mi>o</mml:mi><mml:mi>s</mml:mi><mml:mi>i</mml:mi><mml:mi>t</mml:mi><mml:mi>e</mml:mi></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mrow><mml:mrow><mml:mrow><mml:msub><mml:mrow><mml:mi>ρ</mml:mi></mml:mrow><mml:mrow><mml:mi>c</mml:mi><mml:mi>o</mml:mi><mml:mi>r</mml:mi><mml:mi>r</mml:mi></mml:mrow></mml:msub></mml:mrow><mml:mo stretchy="false">|</mml:mo></mml:mrow><mml:mrow><mml:mrow><mml:msub><mml:mrow><mml:mi>ρ</mml:mi></mml:mrow><mml:mrow><mml:mi>x</mml:mi><mml:mi>c</mml:mi><mml:mi>o</mml:mi><mml:mi>r</mml:mi><mml:mi>r</mml:mi></mml:mrow></mml:msub></mml:mrow><mml:mo stretchy="false">|</mml:mo></mml:mrow><mml:mrow><mml:mrow><mml:msub><mml:mrow><mml:mi>ρ</mml:mi></mml:mrow><mml:mrow><mml:mi>c</mml:mi><mml:mi>o</mml:mi><mml:mi>h</mml:mi></mml:mrow></mml:msub></mml:mrow><mml:mo stretchy="false">|</mml:mo></mml:mrow><mml:mrow><mml:mrow><mml:msub><mml:mrow><mml:mi>ρ</mml:mi></mml:mrow><mml:mrow><mml:mi>w</mml:mi><mml:mi>c</mml:mi><mml:mi>o</mml:mi><mml:mi>h</mml:mi></mml:mrow></mml:msub></mml:mrow><mml:mo stretchy="false">|</mml:mo></mml:mrow><mml:mrow><mml:mrow><mml:msub><mml:mrow><mml:mi>ρ</mml:mi></mml:mrow><mml:mrow><mml:mi>m</mml:mi><mml:mi>u</mml:mi><mml:mi>t</mml:mi><mml:mi>u</mml:mi><mml:mi>a</mml:mi><mml:mi>l</mml:mi><mml:mo>_</mml:mo><mml:mi>i</mml:mi><mml:mi>n</mml:mi><mml:mi>f</mml:mi><mml:mi>o</mml:mi></mml:mrow></mml:msub></mml:mrow><mml:mo stretchy="false">|</mml:mo></mml:mrow><mml:mrow><mml:mrow><mml:msub><mml:mrow><mml:mi>ρ</mml:mi></mml:mrow><mml:mrow><mml:mi>e</mml:mi><mml:mi>u</mml:mi><mml:mi>c</mml:mi><mml:mi>l</mml:mi><mml:mi>i</mml:mi><mml:mi>d</mml:mi><mml:mi>e</mml:mi><mml:mi>a</mml:mi><mml:mi>n</mml:mi></mml:mrow></mml:msub></mml:mrow><mml:mo stretchy="false">|</mml:mo></mml:mrow><mml:mrow><mml:mrow><mml:msub><mml:mrow><mml:mi>ρ</mml:mi></mml:mrow><mml:mrow><mml:mi>c</mml:mi><mml:mi>i</mml:mi><mml:mi>t</mml:mi><mml:mi>y</mml:mi><mml:mi>b</mml:mi><mml:mi>l</mml:mi><mml:mi>o</mml:mi><mml:mi>c</mml:mi><mml:mi>k</mml:mi></mml:mrow></mml:msub></mml:mrow><mml:mo stretchy="false">|</mml:mo></mml:mrow><mml:mrow><mml:mrow><mml:msub><mml:mrow><mml:mi>ρ</mml:mi></mml:mrow><mml:mrow><mml:mi>d</mml:mi><mml:mi>t</mml:mi><mml:mi>w</mml:mi></mml:mrow></mml:msub></mml:mrow><mml:mo stretchy="false">|</mml:mo></mml:mrow><mml:msub><mml:mrow><mml:mi>ρ</mml:mi></mml:mrow><mml:mrow><mml:mi>e</mml:mi><mml:mi>m</mml:mi><mml:mi>d</mml:mi></mml:mrow></mml:msub></mml:mrow><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:math><graphic xlink:href="41598_2020_57915_Article_Equ18.gif" position="anchor"/></alternatives></disp-formula></p>
+        </sec>
+      </sec>
+      <sec id="Sec51">
+        <title>E3: Large-scale brain configurations based on functional connectivity</title>
+        <sec id="Sec52">
+          <title>Objective</title>
+          <p id="Par83">The large-scale brain networks, such as the DMN, ECN, language, etc., are typically derived from activation patterns from task functional MRI<sup><xref ref-type="bibr" rid="CR6">6</xref>,<xref ref-type="bibr" rid="CR8">8</xref>,<xref ref-type="bibr" rid="CR43">43</xref>,<xref ref-type="bibr" rid="CR48">48</xref></sup>. In experiments so far, these networks were assumed to be pre-defined and used to compare all FC measures. The goal of this experiment was to further characterize each FC measure by testing whether this assumption holds true across the alternative FC measures. In other words, the aim was to understand if FC patterns are dependent on the measure used to define it.</p>
+        </sec>
+        <sec id="Sec53">
+          <title>Participants</title>
+          <p id="Par84">Data from only the young healthy group of 29 participants included in <bold>E2</bold> were considered here since these effects would first need to be tested and validated in a typical brain.</p>
+        </sec>
+        <sec id="Sec54">
+          <title>Behavioral data</title>
+          <p id="Par85">In addition to neuroimaging, behavioral data were collected from these participants. Specifically, behavioral verbal fluency was measured by completing the following examination outside the scanner. Forms of the Controlled Oral Word Association Test (COWAT)<sup><xref ref-type="bibr" rid="CR49">49</xref></sup>, were administered which requires participants to produce words beginning with the letters, “F,” “A,” “S” in three respective 1-min trials. Responses to each letter were recorded and verbal fluency scores were based on the total number of correct responses (after excluding perseverative and rule-breaking errors) produced by the participants across the three letter conditions. Since verbal fluency can be impacted by age and education, the raw scores were adjusted for each individual. The normalized verbal fluency score served as a behavioral outcome, most likely reflective of the language, working memory or executive control functions in the brain.</p>
+        </sec>
+        <sec id="Sec55">
+          <title>Data analysis</title>
+          <p id="Par86">The analysis followed five main steps which are pictured in Supplementary Fig. <xref rid="MOESM1" ref-type="media">4</xref>. For each of the 9 FC measures:<list list-type="simple"><list-item><label>(i)</label><p id="Par87">Ten large-scale brain networks consisting of 68 regions based on the atlas defined by Shirer <italic>et al</italic>.<sup><xref ref-type="bibr" rid="CR8">8</xref></sup>, were included to generate a whole-brain symmetric FC matrix of size 68 × 68 for each individual. A mean FC matrix across all participants was used as a representative of group-level FC in subsequent steps. The idealized block structure along the diagonal of the FC matrix with 10 networks was defined as depicted in Supplementary Fig. <xref rid="MOESM1" ref-type="media">4</xref>. These matrices represent the <italic>original brain configuration</italic>.</p></list-item><list-item><label>(ii)</label><p id="Par88">The group mean FC matrix was shuffled by randomly permuting rows (and corresponding columns) so as to maintain the symmetry in FC matrix as an initialization step to remove potential bias of initial distribution on clustering result<sup><xref ref-type="bibr" rid="CR50">50</xref></sup>. In the <italic>original brain configuration</italic>, the regions were arranged by network along the rows and columns symmetrically (i.e. regions in the same network appear in consecutive rows and columns). The shuffling process removes this network structure by randomly assigning each region to a different location while preserving the value of FC of each region to all others (i.e. symmetry).</p></list-item><list-item><label>(iii)</label><p id="Par89">A standard unsupervised <italic>k</italic>-means clustering algorithm was applied to this initialized, shuffled FC matrix with <italic>k</italic> = 10 (corresponding to the ten major brain networks that were part of the <italic>original brain configuration</italic>) and a sparsity (L1) distance function. Since the clustering by <italic>k</italic>-means algorithm is not unique, it was applied for 1000 iterations, each iteration initialized with a randomly shuffled FC matrix. An idealized block structure along the diagonal of the FC matrix with 10 clusters was defined for the clustered FC matrix as depicted in Supplementary Fig. <xref rid="MOESM1" ref-type="media">4</xref>. Clustered FC matrix and corresponding idealized FC matrix from each iteration represent an <italic>alternative brain reconfiguration</italic>.</p></list-item><list-item><label>(iv)</label><p id="Par90">Sørensen-Dice similarity coefficient was computed for the <italic>original brain configuration</italic> and each of the alternative <italic>brain reconfigurations</italic> by comparing the idealized FC structure and the thresholded FC matrix in each case. The two overlap coefficients were compared to determine the best possible functional configuration. The <italic>ρ</italic><sub><italic>composite</italic></sub> was also fed to the regression model for both configurations and compared.</p></list-item></list></p>
+          <p id="Par91">To validate the plausibility of an <italic>alternative brain reconfiguration</italic>, brain-behavior associations were examined. A data-inspired linear regression was applied to study the association between the mean FC within a network (or cluster) of individual participants and their verbal fluency scores. In the <italic>original brain configuration</italic>, for each standard brain network, this procedure was performed to identify the specific FC measure that showed the best association with verbal fluency scores. In the best <italic>alternative brain reconfiguration</italic>, this was performed for each identified cluster. The strengths of this brain-behavior association were compared between the <italic>original brain configuration</italic> and the best observed <italic>alternative brain reconfiguration</italic>. Finally, a multi-metric approach was adopted similar to that in <bold>E2</bold>. For each FC measure, the mean FC within the one network was evaluated which exhibited the highest association with behavior, concatenated to form a composite multi-metric representation and then associated with the verbal fluency scores for the <italic>original brain configuration</italic>. Similarly, in the best <italic>alternative brain reconfiguration</italic>, the mean FC from the single cluster demonstrating the greatest association with behavior was computed for each FC measure, concatenated and associated with verbal fluency score. A stepwise regression model was employed which was initialized by including all linear terms of features (i.e., FC measures part of the composite multi-metric definition) and added/removed features with the criterion of maximizing the coefficient of determination (R<sup>2</sup>).</p>
+        </sec>
+      </sec>
+    </sec>
+    <sec sec-type="supplementary-material">
+      <title>Supplementary information</title>
+      <sec id="Sec56">
+        <p>
+<supplementary-material content-type="local-data" id="MOESM1"><media xlink:href="41598_2020_57915_MOESM1_ESM.docx"><caption><p>Supplementary Information.</p></caption></media></supplementary-material>
+</p>
+      </sec>
+    </sec>
+  </body>
+  <back>
+    <fn-group>
+      <fn>
+        <p><bold>Publisher’s note</bold> Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.</p>
+      </fn>
+    </fn-group>
+    <sec>
+      <title>Supplementary information</title>
+      <p>is available for this paper at 10.1038/s41598-020-57915-w.</p>
+    </sec>
+    <ack>
+      <title>Acknowledgements</title>
+      <p>The authors would like to thank the research subjects and their families for their participation, and the MRI technologists who assisted with data collection. This work was supported by NIH: RC1MH090912–01, T32GM008692, UL1TR000427, K23NS086852, T32EB011434, R01EB000856-06, R01EB009103-01; DARPA: RCI Program MTO, N66001-12-C-4025, HIST Program MTO, N66001-11-1-4013; AHA: 1T32EB011434-01A1; Innovative Research Award – National Marcus Foundation, 15IRG22760009, Midwest Grant in Aid Award 15GRNT25780033, Foundation of ASNR, UW Milwaukee-Madison Intercampus Grants, Shapiro Foundation Grants and UW-Madison Graduate School.</p>
+    </ack>
+    <notes notes-type="author-contribution">
+      <title>Author contributions</title>
+      <p>R.M. designed the experiments, analyzed data, drafted and revised the manuscript. W.A.S. helped design the experiments, provided intellectual input and edited the manuscript. V.A.N. collected the data, provided intellectual input and edited the manuscript. V.P. supervised all aspects of the study, provided intellectual input and edited the manuscript.</p>
+    </notes>
+    <notes notes-type="COI-statement">
+      <title>Competing interests</title>
+      <p id="Par92">The authors declare no competing interests.</p>
+    </notes>
+    <ref-list id="Bib1">
+      <title>References</title>
+      <ref id="CR1">
+        <label>1.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bullmore</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Sporns</surname>
+              <given-names>O</given-names>
+            </name>
+          </person-group>
+          <article-title>Complex brain networks: graph theoretical analysis of structural and functional systems</article-title>
+          <source>Nature reviews neuroscience</source>
+          <year>2009</year>
+          <volume>10</volume>
+          <fpage>186</fpage>
+          <pub-id pub-id-type="doi">10.1038/nrn2575</pub-id>
+          <pub-id pub-id-type="pmid">19190637</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR2">
+        <label>2.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Van Den Heuvel</surname>
+              <given-names>MP</given-names>
+            </name>
+            <name>
+              <surname>Mandl</surname>
+              <given-names>RC</given-names>
+            </name>
+            <name>
+              <surname>Kahn</surname>
+              <given-names>RS</given-names>
+            </name>
+            <name>
+              <surname>Hulshoff Pol</surname>
+              <given-names>HE</given-names>
+            </name>
+          </person-group>
+          <article-title>Functionally linked resting-state networks reflect the underlying structural connectivity architecture of the human brain</article-title>
+          <source>Human brain mapping</source>
+          <year>2009</year>
+          <volume>30</volume>
+          <fpage>3127</fpage>
+          <lpage>3141</lpage>
+          <pub-id pub-id-type="doi">10.1002/hbm.20737</pub-id>
+          <pub-id pub-id-type="pmid">19235882</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR3">
+        <label>3.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sporns</surname>
+              <given-names>O</given-names>
+            </name>
+            <name>
+              <surname>Tononi</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Kötter</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <article-title>The human connectome: a structural description of the human brain</article-title>
+          <source>PLoS computational biology</source>
+          <year>2005</year>
+          <volume>1</volume>
+          <fpage>e42</fpage>
+          <pub-id pub-id-type="doi">10.1371/journal.pcbi.0010042</pub-id>
+          <pub-id pub-id-type="pmid">16201007</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR4">
+        <label>4.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Friston</surname>
+              <given-names>KJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Functional and effective connectivity in neuroimaging: a synthesis</article-title>
+          <source>Human brain mapping</source>
+          <year>1994</year>
+          <volume>2</volume>
+          <fpage>56</fpage>
+          <lpage>78</lpage>
+          <pub-id pub-id-type="doi">10.1002/hbm.460020107</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR5">
+        <label>5.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Biswal</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Zerrin Yetkin</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Haughton</surname>
+              <given-names>VM</given-names>
+            </name>
+            <name>
+              <surname>Hyde</surname>
+              <given-names>JS</given-names>
+            </name>
+          </person-group>
+          <article-title>Functional connectivity in the motor cortex of resting human brain using echo-planar mri</article-title>
+          <source>Magnetic resonance in medicine</source>
+          <year>1995</year>
+          <volume>34</volume>
+          <fpage>537</fpage>
+          <lpage>541</lpage>
+          <pub-id pub-id-type="doi">10.1002/mrm.1910340409</pub-id>
+          <pub-id pub-id-type="pmid">8524021</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR6">
+        <label>6.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Damoiseaux</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Consistent resting-state networks across healthy subjects</article-title>
+          <source>Proceedings of the national academy of sciences</source>
+          <year>2006</year>
+          <volume>103</volume>
+          <fpage>13848</fpage>
+          <lpage>13853</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.0601417103</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR7">
+        <label>7.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Greicius</surname>
+              <given-names>MD</given-names>
+            </name>
+            <name>
+              <surname>Krasnow</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Reiss</surname>
+              <given-names>AL</given-names>
+            </name>
+            <name>
+              <surname>Menon</surname>
+              <given-names>V</given-names>
+            </name>
+          </person-group>
+          <article-title>Functional connectivity in the resting brain: a network analysis of the default mode hypothesis</article-title>
+          <source>Proceedings of the National Academy of Sciences</source>
+          <year>2003</year>
+          <volume>100</volume>
+          <fpage>253</fpage>
+          <lpage>258</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.0135058100</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR8">
+        <label>8.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Shirer</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Ryali</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Rykhlevskaia</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Menon</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Greicius</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>Decoding subject-driven cognitive states with whole-brain connectivity patterns</article-title>
+          <source>Cerebral cortex</source>
+          <year>2012</year>
+          <volume>22</volume>
+          <fpage>158</fpage>
+          <lpage>165</lpage>
+          <pub-id pub-id-type="doi">10.1093/cercor/bhr099</pub-id>
+          <pub-id pub-id-type="pmid">21616982</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR9">
+        <label>9.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Salvador</surname>
+              <given-names>R</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Neurophysiological architecture of functional magnetic resonance images of human brain</article-title>
+          <source>Cerebral cortex</source>
+          <year>2005</year>
+          <volume>15</volume>
+          <fpage>1332</fpage>
+          <lpage>1342</lpage>
+          <pub-id pub-id-type="doi">10.1093/cercor/bhi016</pub-id>
+          <pub-id pub-id-type="pmid">15635061</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR10">
+        <label>10.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Horwitz</surname>
+              <given-names>B</given-names>
+            </name>
+          </person-group>
+          <article-title>The elusive concept of brain connectivity</article-title>
+          <source>Neuroimage</source>
+          <year>2003</year>
+          <volume>19</volume>
+          <fpage>466</fpage>
+          <lpage>470</lpage>
+          <pub-id pub-id-type="doi">10.1016/S1053-8119(03)00112-5</pub-id>
+          <pub-id pub-id-type="pmid">12814595</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR11">
+        <label>11.</label>
+        <mixed-citation publication-type="other">Greicius, M. D., Srivastava, G., Reiss, A. L. &amp; Menon, V. Default-mode network activity distinguishes Alzheimer's disease from healthy aging: evidence from functional MRI. <italic>Proceedings of the National Academy of Sciences</italic><bold>101</bold>, 4637-4642 (2004).</mixed-citation>
+      </ref>
+      <ref id="CR12">
+        <label>12.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Anand</surname>
+              <given-names>A</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Activity and connectivity of brain mood regulating circuit in depression: a functional magnetic resonance study</article-title>
+          <source>Biological psychiatry</source>
+          <year>2005</year>
+          <volume>57</volume>
+          <fpage>1079</fpage>
+          <lpage>1088</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.biopsych.2005.02.021</pub-id>
+          <pub-id pub-id-type="pmid">15866546</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR13">
+        <label>13.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Liu</surname>
+              <given-names>Y</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Disrupted small-world networks in schizophrenia</article-title>
+          <source>Brain</source>
+          <year>2008</year>
+          <volume>131</volume>
+          <fpage>945</fpage>
+          <lpage>961</lpage>
+          <pub-id pub-id-type="doi">10.1093/brain/awn018</pub-id>
+          <pub-id pub-id-type="pmid">18299296</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR14">
+        <label>14.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rombouts</surname>
+              <given-names>SA</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Model-free group analysis shows altered BOLD FMRI networks in dementia</article-title>
+          <source>Human brain mapping</source>
+          <year>2009</year>
+          <volume>30</volume>
+          <fpage>256</fpage>
+          <lpage>266</lpage>
+          <pub-id pub-id-type="doi">10.1002/hbm.20505</pub-id>
+          <pub-id pub-id-type="pmid">18041738</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR15">
+        <label>15.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Grefkes</surname>
+              <given-names>C</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Cortical connectivity after subcortical stroke assessed with functional magnetic resonance imaging</article-title>
+          <source>Annals of neurology</source>
+          <year>2008</year>
+          <volume>63</volume>
+          <fpage>236</fpage>
+          <lpage>246</lpage>
+          <pub-id pub-id-type="doi">10.1002/ana.21228</pub-id>
+          <pub-id pub-id-type="pmid">17896791</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR16">
+        <label>16.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Liao</surname>
+              <given-names>W</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Altered functional connectivity and small-world in mesial temporal lobe epilepsy</article-title>
+          <source>PloS one</source>
+          <year>2010</year>
+          <volume>5</volume>
+          <fpage>e8525</fpage>
+          <pub-id pub-id-type="doi">10.1371/journal.pone.0008525</pub-id>
+          <pub-id pub-id-type="pmid">20072616</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR17">
+        <label>17.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tononi</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Sporns</surname>
+              <given-names>O</given-names>
+            </name>
+            <name>
+              <surname>Edelman</surname>
+              <given-names>GM</given-names>
+            </name>
+          </person-group>
+          <article-title>A measure for brain complexity: relating functional segregation and integration in the nervous system</article-title>
+          <source>Proceedings of the National Academy of Sciences</source>
+          <year>1994</year>
+          <volume>91</volume>
+          <fpage>5033</fpage>
+          <lpage>5037</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.91.11.5033</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR18">
+        <label>18.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zalesky</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Fornito</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Bullmore</surname>
+              <given-names>ET</given-names>
+            </name>
+          </person-group>
+          <article-title>Network-based statistic: identifying differences in brain networks</article-title>
+          <source>Neuroimage</source>
+          <year>2010</year>
+          <volume>53</volume>
+          <fpage>1197</fpage>
+          <lpage>1207</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2010.06.041</pub-id>
+          <pub-id pub-id-type="pmid">20600983</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR19">
+        <label>19.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bassett</surname>
+              <given-names>D. S.</given-names>
+            </name>
+            <name>
+              <surname>Wymbs</surname>
+              <given-names>N. F.</given-names>
+            </name>
+            <name>
+              <surname>Porter</surname>
+              <given-names>M. A.</given-names>
+            </name>
+            <name>
+              <surname>Mucha</surname>
+              <given-names>P. J.</given-names>
+            </name>
+            <name>
+              <surname>Carlson</surname>
+              <given-names>J. M.</given-names>
+            </name>
+            <name>
+              <surname>Grafton</surname>
+              <given-names>S. T.</given-names>
+            </name>
+          </person-group>
+          <article-title>Dynamic reconfiguration of human brain networks during learning</article-title>
+          <source>Proceedings of the National Academy of Sciences</source>
+          <year>2011</year>
+          <volume>108</volume>
+          <issue>18</issue>
+          <fpage>7641</fpage>
+          <lpage>7646</lpage>
+          <pub-id pub-id-type="doi">10.1073/pnas.1018985108</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR20">
+        <label>20.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Müller</surname>
+              <given-names>K</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Investigating the wavelet coherence phase of the BOLD signal</article-title>
+          <source>Journal of Magnetic Resonance Imaging: An Official Journal of the International Society for Magnetic Resonance in Medicine</source>
+          <year>2004</year>
+          <volume>20</volume>
+          <fpage>145</fpage>
+          <lpage>152</lpage>
+          <pub-id pub-id-type="doi">10.1002/jmri.20064</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR21">
+        <label>21.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Beckmann</surname>
+              <given-names>CF</given-names>
+            </name>
+            <name>
+              <surname>Smith</surname>
+              <given-names>SM</given-names>
+            </name>
+          </person-group>
+          <article-title>Probabilistic independent component analysis for functional magnetic resonance imaging</article-title>
+          <source>IEEE transactions on medical imaging</source>
+          <year>2004</year>
+          <volume>23</volume>
+          <fpage>137</fpage>
+          <lpage>152</lpage>
+          <pub-id pub-id-type="doi">10.1109/TMI.2003.822821</pub-id>
+          <pub-id pub-id-type="pmid">14964560</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR22">
+        <label>22.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bernas</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Aldenkamp</surname>
+              <given-names>AP</given-names>
+            </name>
+            <name>
+              <surname>Zinger</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <article-title>Wavelet coherence-based classifier: A resting-state functional MRI study on neurodynamics in adolescents with high-functioning autism</article-title>
+          <source>Computer methods and programs in biomedicine</source>
+          <year>2018</year>
+          <volume>154</volume>
+          <fpage>143</fpage>
+          <lpage>151</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.cmpb.2017.11.017</pub-id>
+          <pub-id pub-id-type="pmid">29249338</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR23">
+        <label>23.</label>
+        <mixed-citation publication-type="other">Chai, B., Walther, D., Beck, D. &amp; Fei-Fei, L. In <italic>Advances in neural information processing systems</italic>. 270–278.</mixed-citation>
+      </ref>
+      <ref id="CR24">
+        <label>24.</label>
+        <mixed-citation publication-type="other">Wang, Z., Alahmadi, A., Zhu, D. &amp; Li, T. in 2<italic>015 IEEE Global</italic> Co<italic>nference on S</italic>i<italic>gn</italic>al and <italic>Information Processing (GlobalSIP)</italic>. 542–546 (IEEE).</mixed-citation>
+      </ref>
+      <ref id="CR25">
+        <label>25.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Friston</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Frith</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Frackowiak</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <article-title>Time-dependent changes in effective connectivity measured with PET</article-title>
+          <source>Human Brain Mapping</source>
+          <year>1993</year>
+          <volume>1</volume>
+          <fpage>69</fpage>
+          <lpage>79</lpage>
+          <pub-id pub-id-type="doi">10.1002/hbm.460010108</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR26">
+        <label>26.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Meszlényi</surname>
+              <given-names>RJ</given-names>
+            </name>
+            <name>
+              <surname>Hermann</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Buza</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Gál</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Vidnyánszky</surname>
+              <given-names>Z</given-names>
+            </name>
+          </person-group>
+          <article-title>Resting state fMRI functional connectivity analysis using dynamic time warping</article-title>
+          <source>Frontiers in neuroscience</source>
+          <year>2017</year>
+          <volume>11</volume>
+          <fpage>75</fpage>
+          <pub-id pub-id-type="doi">10.3389/fnins.2017.00075</pub-id>
+          <pub-id pub-id-type="pmid">28261052</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR27">
+        <label>27.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Song</surname>
+              <given-names>M-K</given-names>
+            </name>
+            <name>
+              <surname>Lin</surname>
+              <given-names>F-C</given-names>
+            </name>
+            <name>
+              <surname>Ward</surname>
+              <given-names>SE</given-names>
+            </name>
+            <name>
+              <surname>Fine</surname>
+              <given-names>JP</given-names>
+            </name>
+          </person-group>
+          <article-title>Composite variables: when and how</article-title>
+          <source>Nursing research</source>
+          <year>2013</year>
+          <volume>62</volume>
+          <fpage>45</fpage>
+          <pub-id pub-id-type="doi">10.1097/NNR.0b013e3182741948</pub-id>
+          <pub-id pub-id-type="pmid">23114795</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR28">
+        <label>28.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>DSouza</surname>
+              <given-names>AM</given-names>
+            </name>
+            <name>
+              <surname>Abidin</surname>
+              <given-names>AZ</given-names>
+            </name>
+            <name>
+              <surname>Chockanathan</surname>
+              <given-names>U</given-names>
+            </name>
+            <name>
+              <surname>Schifitto</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Wismüller</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <article-title>Mutual connectivity analysis of resting-state functional MRI data with local models</article-title>
+          <source>NeuroImage</source>
+          <year>2018</year>
+          <volume>178</volume>
+          <fpage>210</fpage>
+          <lpage>223</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2018.05.038</pub-id>
+          <pub-id pub-id-type="pmid">29777828</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR29">
+        <label>29.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sun</surname>
+              <given-names>FT</given-names>
+            </name>
+            <name>
+              <surname>Miller</surname>
+              <given-names>LM</given-names>
+            </name>
+            <name>
+              <surname>D'Esposito</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>Measuring interregional functional connectivity using coherence and partial coherence analyses of fMRI data</article-title>
+          <source>Neuroimage</source>
+          <year>2004</year>
+          <volume>21</volume>
+          <fpage>647</fpage>
+          <lpage>658</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2003.09.056</pub-id>
+          <pub-id pub-id-type="pmid">14980567</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR30">
+        <label>30.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Malekpour</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Gubner</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Sethares</surname>
+              <given-names>WA</given-names>
+            </name>
+          </person-group>
+          <article-title>Measures of generalized magnitude-squared coherence: Differences and similarities</article-title>
+          <source>Journal of the Franklin Institute</source>
+          <year>2018</year>
+          <volume>355</volume>
+          <fpage>2932</fpage>
+          <lpage>2950</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.jfranklin.2018.01.014</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR31">
+        <label>31.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lin</surname>
+              <given-names>TW</given-names>
+            </name>
+            <name>
+              <surname>Das</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Krishnan</surname>
+              <given-names>GP</given-names>
+            </name>
+            <name>
+              <surname>Bazhenov</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Sejnowski</surname>
+              <given-names>TJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Differential covariance: A new class of methods to estimate sparse connectivity from neural recordings</article-title>
+          <source>Neural computation</source>
+          <year>2017</year>
+          <volume>29</volume>
+          <fpage>2581</fpage>
+          <lpage>2632</lpage>
+          <pub-id pub-id-type="doi">10.1162/neco_a_01008</pub-id>
+          <pub-id pub-id-type="pmid">28777719</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR32">
+        <label>32.</label>
+        <mixed-citation publication-type="other">Gibbons, J. D. &amp; Chakraborti, S. <italic>Nonparametric statistical inference</italic>. (Springer, 2011).</mixed-citation>
+      </ref>
+      <ref id="CR33">
+        <label>33.</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Buck</surname>
+              <given-names>JR</given-names>
+            </name>
+            <name>
+              <surname>Daniel</surname>
+              <given-names>MM</given-names>
+            </name>
+            <name>
+              <surname>Singer</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <source>Computer explorations in signals and systems using MATLAB</source>
+          <year>2002</year>
+          <publisher-loc>NJ, USA</publisher-loc>
+          <publisher-name>Prentice Hall Upper Saddle River</publisher-name>
+        </element-citation>
+      </ref>
+      <ref id="CR34">
+        <label>34.</label>
+        <mixed-citation publication-type="other">González, A. G., Rodrıguez, J., Sagartzazu, X., Schumacher, A. &amp; Isasa, I. Multiple coherence method in time domain for the analysis of the transmission paths of noise and vibrations with non stationary signals. <italic>Proceedings of ISMA 2010</italic> (2010).</mixed-citation>
+      </ref>
+      <ref id="CR35">
+        <label>35.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Grinsted</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Moore</surname>
+              <given-names>JC</given-names>
+            </name>
+            <name>
+              <surname>Jevrejeva</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <article-title>Application of the cross wavelet transform and wavelet coherence to geophysical time series</article-title>
+          <source>Nonlinear processes in geophysics</source>
+          <year>2004</year>
+          <volume>11</volume>
+          <fpage>561</fpage>
+          <lpage>566</lpage>
+          <pub-id pub-id-type="doi">10.5194/npg-11-561-2004</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR36">
+        <label>36.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Shannon</surname>
+              <given-names>CE</given-names>
+            </name>
+          </person-group>
+          <article-title>A mathematical theory of communication</article-title>
+          <source>Bell system technical journal</source>
+          <year>1948</year>
+          <volume>27</volume>
+          <fpage>379</fpage>
+          <lpage>423</lpage>
+          <pub-id pub-id-type="doi">10.1002/j.1538-7305.1948.tb01338.x</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR37">
+        <label>37.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Paliwal</surname>
+              <given-names>KK</given-names>
+            </name>
+            <name>
+              <surname>Agarwal</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Sinha</surname>
+              <given-names>SS</given-names>
+            </name>
+          </person-group>
+          <article-title>A modification over Sakoe and Chiba's dynamic time warping algorithm for isolated word recognition</article-title>
+          <source>Signal Processing</source>
+          <year>1982</year>
+          <volume>4</volume>
+          <fpage>329</fpage>
+          <lpage>333</lpage>
+          <pub-id pub-id-type="doi">10.1016/0165-1684(82)90009-3</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR38">
+        <label>38.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rubner</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Tomasi</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Guibas</surname>
+              <given-names>LJ</given-names>
+            </name>
+          </person-group>
+          <article-title>The earth mover's distance as a metric for image retrieval</article-title>
+          <source>International journal of computer vision</source>
+          <year>2000</year>
+          <volume>40</volume>
+          <fpage>99</fpage>
+          <lpage>121</lpage>
+          <pub-id pub-id-type="doi">10.1023/A:1026543900054</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR39">
+        <label>39.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cox</surname>
+              <given-names>RW</given-names>
+            </name>
+          </person-group>
+          <article-title>AFNI: software for analysis and visualization of functional magnetic resonance neuroimages</article-title>
+          <source>Computers and Biomedical research</source>
+          <year>1996</year>
+          <volume>29</volume>
+          <fpage>162</fpage>
+          <lpage>173</lpage>
+          <pub-id pub-id-type="doi">10.1006/cbmr.1996.0014</pub-id>
+          <pub-id pub-id-type="pmid">8812068</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR40">
+        <label>40.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cordes</surname>
+              <given-names>D</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Frequencies contributing to functional connectivity in the cerebral cortex in “resting-state” data</article-title>
+          <source>American Journal of Neuroradiology</source>
+          <year>2001</year>
+          <volume>22</volume>
+          <fpage>1326</fpage>
+          <lpage>1333</lpage>
+          <pub-id pub-id-type="pmid">11498421</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR41">
+        <label>41.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lowe</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name>
+              <surname>Dzemidzic</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Lurito</surname>
+              <given-names>JT</given-names>
+            </name>
+            <name>
+              <surname>Mathews</surname>
+              <given-names>VP</given-names>
+            </name>
+            <name>
+              <surname>Phillips</surname>
+              <given-names>MD</given-names>
+            </name>
+          </person-group>
+          <article-title>Correlations in low-frequency BOLD fluctuations reflect cortico-cortical connections</article-title>
+          <source>Neuroimage</source>
+          <year>2000</year>
+          <volume>12</volume>
+          <fpage>582</fpage>
+          <lpage>587</lpage>
+          <pub-id pub-id-type="doi">10.1006/nimg.2000.0654</pub-id>
+          <pub-id pub-id-type="pmid">11034865</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR42">
+        <label>42.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wager</surname>
+              <given-names>TD</given-names>
+            </name>
+            <name>
+              <surname>Lindquist</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Kaplan</surname>
+              <given-names>L</given-names>
+            </name>
+          </person-group>
+          <article-title>Meta-analysis of functional neuroimaging data: current and future directions</article-title>
+          <source>Social cognitive and affective neuroscience</source>
+          <year>2007</year>
+          <volume>2</volume>
+          <fpage>150</fpage>
+          <lpage>158</lpage>
+          <pub-id pub-id-type="doi">10.1093/scan/nsm015</pub-id>
+          <pub-id pub-id-type="pmid">18985131</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR43">
+        <label>43.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Power</surname>
+              <given-names>JD</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Functional network organization of the human brain</article-title>
+          <source>Neuron</source>
+          <year>2011</year>
+          <volume>72</volume>
+          <fpage>665</fpage>
+          <lpage>678</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuron.2011.09.006</pub-id>
+          <pub-id pub-id-type="pmid">22099467</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR44">
+        <label>44.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sørensen</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <article-title>A method of establishing groups of equal amplitude in plant sociology based on similarity of species and its application to analyses of the vegetation on Danish commons</article-title>
+          <source>Biol. Skr.</source>
+          <year>1948</year>
+          <volume>5</volume>
+          <fpage>1</fpage>
+          <lpage>34</lpage>
+        </element-citation>
+      </ref>
+      <ref id="CR45">
+        <label>45.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dice</surname>
+              <given-names>LR</given-names>
+            </name>
+          </person-group>
+          <article-title>Measures of the amount of ecologic association between species</article-title>
+          <source>Ecology</source>
+          <year>1945</year>
+          <volume>26</volume>
+          <fpage>297</fpage>
+          <lpage>302</lpage>
+          <pub-id pub-id-type="doi">10.2307/1932409</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR46">
+        <label>46.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Andrews-Hanna</surname>
+              <given-names>JR</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Disruption of large-scale brain systems in advanced aging</article-title>
+          <source>Neuron</source>
+          <year>2007</year>
+          <volume>56</volume>
+          <fpage>924</fpage>
+          <lpage>935</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuron.2007.10.038</pub-id>
+          <pub-id pub-id-type="pmid">18054866</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR47">
+        <label>47.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yang</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Zuo</surname>
+              <given-names>W</given-names>
+            </name>
+          </person-group>
+          <article-title>Neighborhood Component Feature Selection for High-Dimensional Data</article-title>
+          <source>JCP</source>
+          <year>2012</year>
+          <volume>7</volume>
+          <fpage>161</fpage>
+          <lpage>168</lpage>
+        </element-citation>
+      </ref>
+      <ref id="CR48">
+        <label>48.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dosenbach</surname>
+              <given-names>NU</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Prediction of individual brain maturity using fMRI</article-title>
+          <source>Science</source>
+          <year>2010</year>
+          <volume>329</volume>
+          <fpage>1358</fpage>
+          <lpage>1361</lpage>
+          <pub-id pub-id-type="doi">10.1126/science.1194144</pub-id>
+          <pub-id pub-id-type="pmid">20829489</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR49">
+        <label>49.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tombaugh</surname>
+              <given-names>TN</given-names>
+            </name>
+            <name>
+              <surname>Kozak</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Rees</surname>
+              <given-names>L</given-names>
+            </name>
+          </person-group>
+          <article-title>Normative data stratified by age and education for two measures of verbal fluency: FAS and animal naming</article-title>
+          <source>Archives of clinical neuropsychology</source>
+          <year>1999</year>
+          <volume>14</volume>
+          <fpage>167</fpage>
+          <lpage>177</lpage>
+          <pub-id pub-id-type="pmid">14590600</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="CR50">
+        <label>50.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Duda</surname>
+              <given-names>RO</given-names>
+            </name>
+            <name>
+              <surname>Hart</surname>
+              <given-names>PE</given-names>
+            </name>
+            <name>
+              <surname>Stork</surname>
+              <given-names>DG</given-names>
+            </name>
+          </person-group>
+          <article-title>Pattern classification and scene analysis 2nd ed</article-title>
+          <source>ed: Wiley Interscience</source>
+          <year>1995</year>
+          <volume>13</volume>
+          <fpage>14</fpage>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

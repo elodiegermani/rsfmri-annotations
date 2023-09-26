@@ -1,0 +1,25 @@
+Reference,Modality,DatasetAD/MCI/CN,Feature Measures,Classifier,Feature selection,Accuracy (%),Accuracy (%)
+Reference,Modality,DatasetAD/MCI/CN,Feature Measures,Classifier,Feature selection,AD vs. CN,MCI vs. CN
+"Salvatore et al., 2015 [???]",sMRI,137/76/162,sMRI: WM and GM density maps,SVM,PCA,76,72
+"Chu et al., 2011 [???]",sMRI,131/261/188,sMRI: voxel-wise GM,SVM,t-test,82.0,66.0
+"Chu et al., 2011 [???]",sMRI,131/261/188,sMRI: voxel-wise GM,SVM,t-test+ROI,85.0,68.0
+"Chu et al., 2011 [???]",sMRI,131/261/188,sMRI: voxel-wise GM,SVM,SVM-RFE,84.0,67.0
+"Chu et al., 2011 [???]",sMRI,131/261/188,sMRI: voxel-wise GM,SVM,t-test+SVM-RFE,85.0,67.0
+"Casanova et al., 2011 [???]",sMRI,49/-/49,sMRI: voxel-wise GM and WM volume maps,,LASSO,85.7,-
+"Retico et al., 2015 [???]",sMRI,200/400/200,sMRI: voxel-wise GM maps,SVM,whole-brain;t-test;t-test+SVM-RFE,88.9 (AUC),70.7 (AUC)
+"Dai et al., 2012 [???]",sMRI(OASIS data),39/-/44,sMRI: cortical thickness,SVM,t-test+LLB;Corr+LLB;BSSWSS+LLB;t-test+RFE;Corr+RFE;BSSWSS+RFE,90.4,-
+"Wee et al., 2013 [???]",sMRI,198/200/200,sMRI: correlation of regional mean cortical thickness,SVM,t-test+mRMR +SVM-RFE,92.35,83.75
+"Zhang et al., 2011 [???]",sMRI+PET-CSF,51/99/52,sMRI: Volumetric features from sMRI and PET,SVM,t-test,93.2,76.4
+"Hidalgo-Muñoz et al., 2014 [???]",sMRI,185/-/185,sMRI: voxel-based GM and WM,SVM,t-test,93.2,-
+"Hidalgo-Muñoz et al., 2014 [???]",sMRI,185/-/185,sMRI: voxel-based GM and WM,SVM,SVM-RFE,99.7,-
+"Wee et al., 2013 [???]",rs-fMRI,-/25/25,rs-fMRI: Pearson correlation-based FC,SVM,t-test+mRMR +SVM-RFE,-,84.0
+"Jie et al., 2014 [???]",fMRI(non ADNI),-/12/25,fMRI: topological similarity between connectivity networks,SVM,t-test+RFE,-,91.9
+"Kim et al., 2018 [???]",sMRI+FDG-PET,51/99/52,sMRI: 93 ROI GM volumeFDG-PET: 93 ROI mean intensity,ELM,t-test,96.11,86.15
+"Kim et al., 2018 [???]",sMRI+FDG-PET,51/99/52,sMRI: 93 ROI GM volumeFDG-PET: 93 ROI mean intensity,ELM,LASSO,96.03,86.17
+"Beheshti et al., 2016 [???, ???]",sMRI,160/-/162,sMRI: voxel-wise GM,SVM,LASSO,88.70,-
+"Beheshti et al., 2016 [???, ???]",sMRI,160/-/162,sMRI: voxel-wise GM,SVM,t-test+Fisher criterion,93.01,-
+"Lopez et al., 2010 [???]",PET,53/114/52,Voxel-wise intensity,SVMANN,PCA+LDA;PCA+FDR,96.7,82.19
+"Lopez et al., 2010 [???]",SPECT(non ADNI),50/-/41,Voxel-wise intensity,SVMANN,PCA+LDA;PCA+FDR,89.5,-
+"Khazaee et al., 2015 [???]",rs-fMRI,20/-/20,Graph measure based on FC analysis among ROIs,SVM,Fisher score,97,-
+Proposed method,fMRI,34/31/31,fMRI: voxel-wise regional spontaneous and functional connectivity measures,ELMSVM,t-test+ SVM-RFE,98.86,98.57
+Proposed method,fMRI,81/132/152(non ADNI),fMRI: voxel-wise regional spontaneous and functional connectivity measures,ELMSVM,t-test+LASSO,98.70,94.16

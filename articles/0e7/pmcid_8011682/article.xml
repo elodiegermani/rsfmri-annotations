@@ -1,0 +1,1574 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties open_access?>
+  <?properties manuscript?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-journal-id">9215515</journal-id>
+      <journal-id journal-id-type="pubmed-jr-id">20498</journal-id>
+      <journal-id journal-id-type="nlm-ta">Neuroimage</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Neuroimage</journal-id>
+      <journal-title-group>
+        <journal-title>NeuroImage</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">1053-8119</issn>
+      <issn pub-type="epub">1095-9572</issn>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">33385554</article-id>
+      <article-id pub-id-type="pmc">8011682</article-id>
+      <article-id pub-id-type="doi">10.1016/j.neuroimage.2020.117704</article-id>
+      <article-id pub-id-type="manuscript">NIHMS1677103</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Evaluating phase synchronization methods in fMRI: A comparison study
+and new approaches</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Honari</surname>
+            <given-names>Hamed</given-names>
+          </name>
+          <xref ref-type="aff" rid="A1">a</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Choe</surname>
+            <given-names>Ann S.</given-names>
+          </name>
+          <xref ref-type="aff" rid="A2">b</xref>
+          <xref ref-type="aff" rid="A3">c</xref>
+          <xref ref-type="aff" rid="A4">d</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Lindquist</surname>
+            <given-names>Martin A.</given-names>
+          </name>
+          <xref ref-type="aff" rid="A5">e</xref>
+          <xref rid="CR1" ref-type="corresp">*</xref>
+        </contrib>
+      </contrib-group>
+      <aff id="A1"><label>a</label>Department of Electrical and Computer Engineering, Johns
+Hopkins University, USA</aff>
+      <aff id="A2"><label>b</label>F. M. Kirby Research Center for Functional Brain Imaging
+Kennedy Krieger Institute, US</aff>
+      <aff id="A3"><label>c</label>International Center for Spinal Cord Injury, Kennedy
+Krieger Institute, USA</aff>
+      <aff id="A4"><label>d</label>Russell H. Morgan Department of Radiology and Radiological
+Science, Johns Hopkins School of Medicine, USA</aff>
+      <aff id="A5"><label>e</label>Department of Biostatistics, Johns Hopkins University,
+USA</aff>
+      <author-notes>
+        <fn fn-type="con" id="FN1">
+          <p id="P1">Credit authorship contribution statement</p>
+          <p id="P2"><bold>Hamed Honari:</bold> Conceptualization, Methodology, Software,
+Formal analysis, Writing - original draft. <bold>Ann S. Choe:</bold> Formal
+analysis, Data curation, Writing - review &amp; editing. <bold>Martin A.
+Lindquist:</bold> Conceptualization, Methodology, Writing - review &amp;
+editing, Supervision, Funding acquisition.</p>
+        </fn>
+        <corresp id="CR1"><label>*</label>Corresponding author:
+<email>mlindqui@jhsph.edu</email> (M.A. Lindquist).</corresp>
+      </author-notes>
+      <pub-date pub-type="nihms-submitted">
+        <day>5</day>
+        <month>3</month>
+        <year>2021</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>30</day>
+        <month>12</month>
+        <year>2020</year>
+      </pub-date>
+      <pub-date pub-type="ppub">
+        <month>3</month>
+        <year>2021</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>31</day>
+        <month>3</month>
+        <year>2021</year>
+      </pub-date>
+      <volume>228</volume>
+      <fpage>117704</fpage>
+      <lpage>117704</lpage>
+      <!--elocation-id from pubmed: 10.1016/j.neuroimage.2020.117704-->
+      <permissions>
+        <license license-type="open-access">
+          <license-p>This is an open access article under the CC BY license (<ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</ext-link>)</license-p>
+        </license>
+      </permissions>
+      <abstract id="ABS1">
+        <p id="P3">In recent years there has been growing interest in measuring time-varying
+functional connectivity between different brain regions using resting-state
+functional magnetic resonance imaging (rs-fMRI) data. One way to assess the
+relationship between signals from different brain regions is to measure their
+phase synchronization (PS) across time. There are several ways to perform such
+analyses, and we compare methods that utilize a PS metric together with a
+sliding window, referred to here as windowed phase synchronization (WPS), with
+those that directly measure the instantaneous phase synchronization (IPS). In
+particular, IPS has recently gained popularity as it offers single time-point
+resolution of time-resolved fMRI connectivity. In this paper, we discuss the
+underlying assumptions required for performing PS analyses and emphasize the
+importance of band-pass filtering the data to obtain valid results. Further, we
+contrast this approach with the use of Empirical Mode Decomposition (EMD) to
+achieve similar goals. We review various methods for evaluating PS and introduce
+a new approach within the IPS framework denoted the cosine of the relative phase
+(CRP). We contrast methods through a series of simulations and application to
+rs-fMRI data. Our results indicate that CRP outperforms other tested methods and
+overcomes issues related to undetected temporal transitions from positive to
+negative associations common in IPS analysis. Further, in contrast to phase
+coherence, CRP unfolds the distribution of PS measures, which benefits
+subsequent clustering of PS matrices into recurring brain states.</p>
+      </abstract>
+      <kwd-group>
+        <kwd>Instantaneous phase synchronization</kwd>
+        <kwd>Functional connectivity</kwd>
+        <kwd>Resting-state fMRI</kwd>
+        <kwd>Circular statistics</kwd>
+        <kwd>Phase synchronization detection</kwd>
+        <kwd>Time-varying phase synchronization</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="S1">
+      <label>1.</label>
+      <title>Introduction</title>
+      <p id="P4">It was previously assumed that functional connectivity (FC) in the brain was
+static during the course of a single resting-state functional magnetic resonance
+imaging (rs-fMRI) run. Recently, however, several studies (<xref rid="R1" ref-type="bibr">Allen et al., 2014</xref>; <xref rid="R10" ref-type="bibr">Chang
+and Glover, 2010</xref>; Hutchison et al., 2013a; <xref rid="R36" ref-type="bibr">Lurie et al., 2019</xref>; <xref rid="R42" ref-type="bibr">Preti
+et al., 2016</xref>; <xref rid="R51" ref-type="bibr">Tagliazucchi et al.,
+2012</xref>; <xref rid="R52" ref-type="bibr">Thompson et al., 2013</xref>) have
+pointed to dynamic changes in FC taking place in a considerably shorter time window
+than previously thought (i.e., on the order of seconds and minutes). Several methods
+have been proposed to investigate such time-varying connectivity (TVC). These
+include the widely-used sliding-window approach (<xref rid="R10" ref-type="bibr">Chang and Glover, 2010</xref>; Hutchison et al., 2013a; 2013b; <xref rid="R51" ref-type="bibr">Tagliazucchi et al., 2012</xref>), change point analysis (<xref rid="R12" ref-type="bibr">Cribben et al., 2012</xref>; <xref rid="R13" ref-type="bibr">2013</xref>; <xref rid="R56" ref-type="bibr">Xu and Lindquist,
+2015</xref>), point process analysis (<xref rid="R50" ref-type="bibr">Tagliazucchi et al., 2011</xref>), co-activation patterns (CAPs) (<xref rid="R34" ref-type="bibr">Liu and Duyn, 2013</xref>), transient-based CAPs
+(<xref rid="R26" ref-type="bibr">Karahanoğlu and Van De Ville,
+2015</xref>), time series models (<xref rid="R33" ref-type="bibr">Lindquist et
+al., 2014</xref>), time-frequency analysis (<xref rid="R10" ref-type="bibr">Chang and Glover, 2010</xref>), and variants of hidden Markov models (HMMs)
+(<xref rid="R8" ref-type="bibr">Bolton et al., 2018</xref>; <xref rid="R15" ref-type="bibr">Eavani et al., 2013</xref>; <xref rid="R47" ref-type="bibr">Shappell et al., 2019</xref>; <xref rid="R54" ref-type="bibr">Vidaurre et al.,
+2017</xref>). Despite development of these promising approaches, estimation of
+TVC remains a challenging endeavor due to the low signal-to-noise ratio (SNR) of the
+blood oxygen level dependent (BOLD) signal and the presence of image artifacts and
+nuisance confounds (Hutchison et al., 2013a; <xref rid="R31" ref-type="bibr">Laumann
+et al., 2016</xref>; <xref rid="R33" ref-type="bibr">Lindquist et al.,
+2014</xref>).</p>
+      <p id="P5">The term <italic>synchronization</italic> refers to the coordination in the
+state of two or more systems that can be attributed to their interaction (or
+coupling) (<xref rid="R46" ref-type="bibr">Rosenblum et al., 1996</xref>). Recently,
+phase synchronization (PS) methods were proposed as a means of measuring the level
+of synchrony between time series from different regions of interest (ROIs) in the
+brain (<xref rid="R17" ref-type="bibr">Glerean et al., 2012</xref>; <xref rid="R39" ref-type="bibr">Pedersen et al., 2017</xref>; <xref rid="R40" ref-type="bibr">2018</xref>). Typically, the phase of a particular time series is computed at
+each time point through the application of the Hilbert transform, and used to
+evaluate the phase difference between various time series. Two time series in
+synchronization will maintain a constant phase difference. In this study, we
+differentiate between methods that combine a PS metric with a sliding window
+approach, referred to as windowed phase synchronization (WPS), with those that
+directly measure PS at each time point, referred to as instantaneous phase
+synchronization (IPS).</p>
+      <p id="P6">The first class of methods (WPS methods) uses metrics that provide a single
+omnibus measure of the phase synchronization between two time series obtained using
+the Hilbert transform. This approach is similar to how correlations provide an
+omnibus measure of the linear relationship between time series (analogous to the
+static correlation used in FC). In this approach, a sliding window technique is used
+to compute the metric locally within a specific time window. As the window is
+shifted across time, one can obtain a time-varying value of the measure of interest
+(i.e., the dynamic synchronization between two time series). The use of Phase
+Locking Value (PLV) (<xref rid="R7" ref-type="bibr">Boccaletti et al., 2018</xref>;
+<xref rid="R17" ref-type="bibr">Glerean et al., 2012</xref>; <xref rid="R38" ref-type="bibr">Pauen and Ivanova, 2013</xref>) to capture time-varying
+relationship between a pair of signals has recently been used in this context (<xref rid="R44" ref-type="bibr">Rebollo et al., 2018</xref>). In this paper, we
+propose two other measures that can capture the time-varying relationship between a
+pair of signals: circular-circular correlation (<xref rid="R25" ref-type="bibr">Jammalamadaka and Sengupta, 2001</xref>; <xref rid="R38" ref-type="bibr">Pauen
+and Ivanova, 2013</xref>), and toroidal-circular correlation (<xref rid="R58" ref-type="bibr">Zhan et al., 2017</xref>). Importantly, this class of methods
+suffers from similar issues as sliding-window correlations, such as the need to
+select an <italic>a priori</italic> window length for analysis.</p>
+      <p id="P7">The second class of methods (IPS methods) directly analyzes the instantaneous
+phases extracted using the Hilbert transform. In recent years there has been growing
+interest in using IPS methods in neuroimaging, with the bulk of the work applied to
+MEG and EEG data. However, several studies have also applied IPS methods to fMRI
+data. For instance, <xref rid="R28" ref-type="bibr">Laird et al. (2002)</xref> used
+IPS methods to analyze task-activated fMRI data. However, the lack of narrow
+band-pass filtering in the study’s analysis pipeline brings into question the
+validity of the results. <xref rid="R37" ref-type="bibr">Niazy et al. (2011)</xref>
+studied the spectral characteristics of resting state network (RSN) and suggested
+that it is important to consider the IPS between various RSNs at different
+frequencies. <xref rid="R17" ref-type="bibr">Glerean et al. (2012)</xref> proposed
+using IPS as a measure of TVC. Finally, <xref rid="R40" ref-type="bibr">Pedersen et
+al. (2018)</xref> examined the relationship between IPS and Correlation-based
+Sliding Window (CSW) techniques and observed a strong association between the two
+methods when using absolute values of CSW. Benefits of using an IPS approach is that
+it offers single time-point resolution of time-resolved fMRI connectivity, and does
+not require choosing an arbitrary window length.</p>
+      <p id="P8">In this paper, we discuss the concept of phase synchronization in the context
+of fMRI, with a particular focus on TVC. We begin by reviewing the framework for
+computing the phase from time series data using the Hilbert transform, and discuss
+the importance of band-pass filtering the data to accurately estimate the
+instantaneous phases. In the EEG literature, an alternative to band-pass filtering
+is to use empirical mode decomposition (EMD) (<xref rid="R20" ref-type="bibr">Huang,
+2014</xref>) as a preprocessing step. Here we contrast the two approaches in the
+context of analyzing PS in the fMRI setting. We continue by introducing a number of
+different methods for evaluating phase synchronization. We focus both on methods
+already in common use, such as the phase locking value and phase coherence, as well
+as methods new to the fMRI literature, such as circular-circular correlation and
+toroidal-circular correlation (<xref rid="R58" ref-type="bibr">Zhan et al.,
+2017</xref>). Finally, we propose a new variant of phase coherence, denoted the
+Cosine of the Relative Phase (CRP), that can be used to compute IPS. We contrast
+these methods through a series of simulations and application to two rs-fMRI data
+sets. The first consists of test-retest data with a temporal resolution of 2
+<italic>s</italic>, while the second is data from the Human Connectome Project
+with a temporal resolution of 0.72 <italic>s</italic>.</p>
+    </sec>
+    <sec id="S2">
+      <label>2.</label>
+      <title>Methods</title>
+      <sec id="S3">
+        <label>2.1.</label>
+        <title>A framework for computing instantaneous phase</title>
+        <p id="P9">To obtain the instantaneous phase (<xref rid="R7" ref-type="bibr">Boccaletti et al., 2018</xref>) of an arbitrary real signal
+<italic>x</italic>(<italic>t</italic>) one must first construct an analytic
+signal: <disp-formula id="FD1"><label>(1)</label><mml:math display="block" id="M1"><mml:mrow><mml:mi>z</mml:mi><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mi>t</mml:mi><mml:mo stretchy="false">)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mi>x</mml:mi><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mi>t</mml:mi><mml:mo stretchy="false">)</mml:mo></mml:mrow><mml:mo>+</mml:mo><mml:mi>j</mml:mi><mml:mi mathvariant="script">H</mml:mi><mml:mrow><mml:mo stretchy="false">{</mml:mo><mml:mrow><mml:mi>x</mml:mi><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mi>t</mml:mi><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:mrow><mml:mo stretchy="false">}</mml:mo></mml:mrow></mml:mrow></mml:math></disp-formula> where <inline-formula><mml:math display="inline" id="M2"><mml:mrow><mml:mi>j</mml:mi><mml:mo>=</mml:mo><mml:msqrt><mml:mrow><mml:mo>−</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:msqrt></mml:mrow></mml:math></inline-formula> and <inline-formula><mml:math display="inline" id="M3"><mml:mrow><mml:mi mathvariant="script">H</mml:mi></mml:mrow></mml:math></inline-formula> represents the Hilbert transform. This signal
+can in turn be re-expressed as follows: <disp-formula id="FD2"><label>(2)</label><mml:math display="block" id="M4"><mml:mrow><mml:mi>z</mml:mi><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mi>t</mml:mi><mml:mo stretchy="false">)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mi mathvariant="fraktur">A</mml:mi><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mi>t</mml:mi><mml:mo stretchy="false">)</mml:mo></mml:mrow><mml:mspace width="thickmathspace"/><mml:mi>exp</mml:mi><mml:mspace width="thickmathspace"/><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mrow><mml:mi>j</mml:mi><mml:mo>ϕ</mml:mo><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mi>t</mml:mi><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:mrow><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:mrow></mml:math></disp-formula> where <inline-formula><mml:math display="inline" id="M5"><mml:mrow><mml:mi mathvariant="fraktur">A</mml:mi><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mi>t</mml:mi><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:mrow></mml:math></inline-formula> represents the envelope and
+<inline-formula><mml:math display="inline" id="M6"><mml:mrow><mml:mo>ϕ</mml:mo><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mi>t</mml:mi><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:mrow></mml:math></inline-formula> the instantaneous phase.</p>
+        <p id="P10">Here <italic>x</italic>(<italic>t</italic>) is assumed to satisfy
+Bedrosian’s Product Theorem, which states that a band-limited signal can
+be decomposed into the product of envelope and phase when their spectra are
+disjoint. This holds if the signal of interest is first narrow-banded by
+applying a band-pass filter.</p>
+        <p id="P11">There are two important considerations when choosing the appropriate
+filter to apply. First, it should not corrupt the phase information in the
+signal. Thus, it is important to use a filter that does not shift the phase. One
+class of filters that accomplishes this goal are zero-phase filters. Second, the
+width of the frequency band must be sufficiently narrow. The narrower the band,
+the closer the signal will be to a mono-component signal and the Hilbert
+transform will produce an analytic signal with meaningful envelope and phase.
+The choice of appropriate band widths in this context have been investigated in
+previous studies of fMRI data. For example, <xref rid="R41" ref-type="bibr">Ponce-Alvarez et al. (2015)</xref> examined band-pass filtering of fMRI
+data using various frequency bands in the range of 0.01 – 0.13
+<italic><bold>H</bold> z</italic> and reported consistent results for
+phase statistics at each frequency band. <xref rid="R40" ref-type="bibr">Pedersen et al. (2018)</xref> compared using a narrow band-pass filter
+(0.03 – 0.07 <italic><bold>H</bold> z</italic>) with a wider band-pass
+filter (0.01 – 0.1 <italic><bold>H</bold> z</italic>), and found that the
+narrow-band data yielded stronger associations between the results of CSW and
+IPS analyses.</p>
+        <p id="P12">A schematic framework for obtaining the instantaneous phase
+synchronization is shown in <xref rid="F1" ref-type="fig">Fig. 1</xref>.</p>
+        <p id="P13">Consider that a pair of time series
+<italic>x</italic>(<italic>t</italic>) and <inline-formula><mml:math display="inline" id="M7"><mml:mrow><mml:mi>y</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>,</mml:mo><mml:mi>t</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn><mml:mo>,</mml:mo><mml:mo>…</mml:mo><mml:mi>T</mml:mi></mml:mrow></mml:math></inline-formula>, from two different ROIs are filtered using a
+narrow band-pass zero-phase filter, <inline-formula><mml:math display="inline" id="M8"><mml:mrow><mml:msub><mml:mi>h</mml:mi><mml:mrow><mml:mi>b</mml:mi><mml:mi>p</mml:mi></mml:mrow></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:math></inline-formula>. and denote the filtered data by
+<inline-formula><mml:math display="inline" id="M9"><mml:mrow><mml:msub><mml:mi>x</mml:mi><mml:mi>n</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:math></inline-formula> and <inline-formula><mml:math display="inline" id="M10"><mml:mrow><mml:msub><mml:mi>y</mml:mi><mml:mi>n</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:math></inline-formula> respectively, i.e., <disp-formula id="FD3"><label>(3)</label><mml:math display="block" id="M11"><mml:mrow><mml:msub><mml:mi>x</mml:mi><mml:mi>n</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mi>x</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>*</mml:mo><mml:msub><mml:mi>h</mml:mi><mml:mrow><mml:mi>b</mml:mi><mml:mi>p</mml:mi></mml:mrow></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:math></disp-formula>
+<disp-formula id="FD4"><label>(4)</label><mml:math display="block" id="M12"><mml:mrow><mml:msub><mml:mi>y</mml:mi><mml:mi>n</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mi>y</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>*</mml:mo><mml:msub><mml:mi>h</mml:mi><mml:mrow><mml:mi>b</mml:mi><mml:mi>p</mml:mi></mml:mrow></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo><mml:mo>.</mml:mo></mml:mrow></mml:mrow></mml:math></disp-formula> Here * represents the convolution operator.</p>
+        <p id="P14">If Bedrosian’s theorem holds, the analytical signals of the
+narrow-banded time series can be expressed as the product of instantaneous
+envelope and instantaneous phase: <disp-formula id="FD5"><label>(5)</label><mml:math display="block" id="M13"><mml:mrow><mml:msub><mml:mi>x</mml:mi><mml:mi>a</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:msub><mml:mi>x</mml:mi><mml:mi>n</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>+</mml:mo><mml:mi>j</mml:mi><mml:mi mathvariant="script">H</mml:mi><mml:mrow><mml:mo>{</mml:mo><mml:mrow><mml:msub><mml:mi>x</mml:mi><mml:mi>n</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mo>}</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:msub><mml:mi mathvariant="fraktur">A</mml:mi><mml:mrow><mml:msub><mml:mi>x</mml:mi><mml:mi>n</mml:mi></mml:msub></mml:mrow></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mspace width="thickmathspace"/><mml:mi>exp</mml:mi><mml:mspace width="thickmathspace"/><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mi>j</mml:mi><mml:msub><mml:mo>ϕ</mml:mo><mml:mi>x</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:math></disp-formula>
+<disp-formula id="FD6"><label>(6)</label><mml:math display="block" id="M14"><mml:mrow><mml:msub><mml:mi>y</mml:mi><mml:mi>a</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:msub><mml:mi>y</mml:mi><mml:mi>n</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>+</mml:mo><mml:mi>j</mml:mi><mml:mi mathvariant="script">H</mml:mi><mml:mrow><mml:mo>{</mml:mo><mml:mrow><mml:msub><mml:mi>y</mml:mi><mml:mi>n</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mo>}</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:msub><mml:mi mathvariant="fraktur">A</mml:mi><mml:mrow><mml:msub><mml:mi>y</mml:mi><mml:mi>n</mml:mi></mml:msub></mml:mrow></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mspace width="thickmathspace"/><mml:mi>exp</mml:mi><mml:mspace width="thickmathspace"/><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mi>j</mml:mi><mml:msub><mml:mo>ϕ</mml:mo><mml:mi>y</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mo>)</mml:mo><mml:mo>.</mml:mo></mml:mrow></mml:mrow></mml:math></disp-formula> Here the subscript <italic>a</italic> refers to analytical
+signal. Throughout, we assume that <inline-formula><mml:math display="inline" id="M15"><mml:mrow><mml:msub><mml:mi>ϕ</mml:mi><mml:mi>x</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:math></inline-formula> and <inline-formula><mml:math display="inline" id="M16"><mml:mrow><mml:msub><mml:mi>ϕ</mml:mi><mml:mi>y</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:math></inline-formula> are the phase time series extracted from a pair
+of time series <italic>x</italic>(<italic>t</italic>), and
+<italic>y</italic>(<italic>t</italic>). Using the instantaneous phases,
+synchronization can be assessed by studying their differences.</p>
+        <p id="P15">An alternative to band-pass filtering is to use EMD. Here one decomposes
+the time series into a sum of oscillatory modes referred to as intrinsic mode
+functions (IMF) that correspond to different frequency contents in the time
+series. EMD provides a data-driven signal decomposition and does not require an
+<italic>a priori</italic> defined basis system. The first IMF consists of
+the largest frequency oscillation present in the signal, and each subsequent IMF
+consists of increasingly smaller frequency oscillations than the those
+previously extracted. A more detailed description of bivariate EMD (BEMD), which
+is used in this paper, can be found in the <xref rid="SD1" ref-type="supplementary-material">Supplementary Materials</xref>. In the
+continuation, we refer to this as the BEMD-based PS framework to differentiate
+it from the framework described above.</p>
+      </sec>
+      <sec id="S4">
+        <label>2.2.</label>
+        <title>Methods for assessing phase synchronization</title>
+        <p id="P16">Next, we describe how to measure PS based on the extracted phase time
+series. We discriminate between methods that utilize a PS metric together with a
+sliding window approach (WPS) from those that directly measure IPS.</p>
+        <sec id="S5">
+          <label>2.2.1.</label>
+          <title>Windowed phase synchronization</title>
+          <p id="P17">The first class of methods, place a measure of PS across two time
+series within a sliding window framework. Here we describe this approach
+using PLV, circular-circular correlation, and toroidal-circular
+correlation.</p>
+          <sec id="S6">
+            <title>Phase Locking Value</title>
+            <p id="P18">The PLV is a classic metric for assessing phase synchronization
+based on quantifying to what extent the two signals are phase locked.
+PLV has found widespread use in the analysis of MEG/EEG data (<xref rid="R18" ref-type="bibr">Halliday et al., 1998</xref>; <xref rid="R45" ref-type="bibr">Rosenblum et al., 2000</xref>). This
+notion of synchronization can be expressed as follows: <disp-formula id="FD7"><label>(7)</label><mml:math display="block" id="M17"><mml:mrow><mml:mrow><mml:mo>|</mml:mo><mml:mrow><mml:mi>Δ</mml:mi><mml:msub><mml:mi>Φ</mml:mi><mml:mrow><mml:mi>m</mml:mi><mml:mo>,</mml:mo><mml:mi>n</mml:mi></mml:mrow></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mo>|</mml:mo></mml:mrow><mml:mo>&lt;</mml:mo><mml:mi>c</mml:mi><mml:mi>o</mml:mi><mml:mi>n</mml:mi><mml:mi>s</mml:mi><mml:mi>t</mml:mi><mml:mo>,</mml:mo><mml:mspace width="thickmathspace"/><mml:mtext>where</mml:mtext><mml:mspace width="thickmathspace"/><mml:mi>Δ</mml:mi><mml:msub><mml:mi>Φ</mml:mi><mml:mrow><mml:mi>m</mml:mi><mml:mo>,</mml:mo><mml:mi>n</mml:mi></mml:mrow></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mi>n</mml:mi><mml:msub><mml:mi>ϕ</mml:mi><mml:mi>x</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>−</mml:mo><mml:mi>m</mml:mi><mml:msub><mml:mi>ϕ</mml:mi><mml:mi>y</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo><mml:mo>.</mml:mo></mml:mrow></mml:mrow></mml:math></disp-formula> Here the integers <italic>m</italic> and
+<italic>n</italic> are the synchronization indices and
+<inline-formula><mml:math display="inline" id="M18"><mml:mrow><mml:mi>Δ</mml:mi><mml:msub><mml:mi>Φ</mml:mi><mml:mrow><mml:mi>m</mml:mi><mml:mo>,</mml:mo><mml:mi>n</mml:mi></mml:mrow></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:math></inline-formula> the generalized phase difference time
+series. In this paper, we assume <italic>m</italic> = <italic>n</italic>
+= 1 and drop the indices and let <inline-formula><mml:math display="inline" id="M19"><mml:mrow><mml:mi>Δ</mml:mi><mml:msub><mml:mi>Φ</mml:mi><mml:mrow><mml:mi>m</mml:mi><mml:mo>,</mml:mo><mml:mi>n</mml:mi></mml:mrow></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mi>Δ</mml:mi><mml:mi>Φ</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:math></inline-formula>.</p>
+            <p id="P19">Using the instantaneous phase difference of the signals at each
+time point, the PLV can be computed as follows: <disp-formula id="FD8"><label>(8)</label><mml:math display="block" id="M20"><mml:mrow><mml:mi mathvariant="bold-italic">PLV</mml:mi><mml:mo>=</mml:mo><mml:mrow><mml:mo>|</mml:mo><mml:mrow><mml:msub><mml:mrow><mml:mrow><mml:mo>〈</mml:mo><mml:mrow><mml:msup><mml:mi>e</mml:mi><mml:mrow><mml:mi>j</mml:mi><mml:mi mathvariant="bold">Δ</mml:mi><mml:mi mathvariant="bold">ϕ</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mi mathvariant="bold">t</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:msup></mml:mrow><mml:mo>〉</mml:mo></mml:mrow></mml:mrow><mml:mi>t</mml:mi></mml:msub></mml:mrow><mml:mo>|</mml:mo></mml:mrow></mml:mrow></mml:math></disp-formula> where the operator <inline-formula><mml:math display="inline" id="M21"><mml:mrow><mml:msub><mml:mrow><mml:mrow><mml:mo>〈</mml:mo><mml:mo>⋅</mml:mo><mml:mo>〉</mml:mo></mml:mrow></mml:mrow><mml:mi>t</mml:mi></mml:msub></mml:mrow></mml:math></inline-formula> denotes averaging over time. If the
+pair of signals are unsynchronized, then <inline-formula><mml:math display="inline" id="M22"><mml:mrow><mml:mi mathvariant="bold-italic">PLV</mml:mi><mml:mo>=</mml:mo><mml:mn>0</mml:mn></mml:mrow></mml:math></inline-formula> and <inline-formula><mml:math display="inline" id="M23"><mml:mrow><mml:mi mathvariant="bold">Δ</mml:mi><mml:mi mathvariant="bold">ϕ</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mi mathvariant="bold">t</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:math></inline-formula> follows a uniform distribution;
+otherwise, if the pair are synchronized,
+<bold><italic>PLV</italic></bold> is constant and equal to 1 (<xref rid="R27" ref-type="bibr">Lachaux et al., 1999</xref>).</p>
+            <p id="P20">To compute PLV within a sliding window framework, for each time
+window of length <italic>ℓ</italic>, the PLV between the pair of
+the signals can be obtained using <xref rid="FD8" ref-type="disp-formula">Eq. (8)</xref>. This approach has been
+previously used for assessing the episodes of elevated gastric-BOLD
+synchronization by <xref rid="R44" ref-type="bibr">Rebollo et al.
+(2018)</xref> in the study of stomach-brain synchrony.</p>
+            <p id="P21">Next, we introduce two other measures in WPS approach that to
+our best of knowledge have not been used to assessing the time varying
+phase synchornization in a sliding window fashion.</p>
+          </sec>
+          <sec id="S7">
+            <title>Circular-Circular Correlation</title>
+            <p id="P22">The instantaneous phase obtained from each time series are
+directional data and follow a circular distribution. In this context,
+the use of the standard Pearson correlation coefficient is no longer
+appropriate. Instead, a more suitable measure is circular-circular
+correlation (<xref rid="R24" ref-type="bibr">Jammalamadaka and Sarma,
+1988</xref>; <xref rid="R25" ref-type="bibr">Jammalamadaka and
+Sengupta, 2001</xref>), defined as follows: <disp-formula id="FD9"><label>(9)</label><mml:math display="block" id="M24"><mml:mrow><mml:msub><mml:mi>ρ</mml:mi><mml:mrow><mml:mi>c</mml:mi><mml:mi>i</mml:mi><mml:mi>r</mml:mi><mml:mi>c</mml:mi></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:mi mathvariant="double-struck">E</mml:mi><mml:mrow><mml:mo>[</mml:mo><mml:mrow><mml:mi mathvariant="italic">sin</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi mathvariant="bold">Φ</mml:mi><mml:mi>x</mml:mi></mml:msub><mml:mo>−</mml:mo><mml:mi>μ</mml:mi></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mi mathvariant="italic">sin</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi mathvariant="bold">Φ</mml:mi><mml:mi>y</mml:mi></mml:msub><mml:mo>−</mml:mo><mml:mi>ν</mml:mi></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mo>]</mml:mo></mml:mrow></mml:mrow><mml:mrow><mml:msqrt><mml:mrow><mml:mi mathvariant="double-struck">E</mml:mi><mml:mrow><mml:mo>[</mml:mo><mml:mrow><mml:msup><mml:mrow><mml:mi mathvariant="italic">sin</mml:mi></mml:mrow><mml:mn>2</mml:mn></mml:msup><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi mathvariant="bold">Φ</mml:mi><mml:mi>x</mml:mi></mml:msub><mml:mo>−</mml:mo><mml:mi>μ</mml:mi></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mo>]</mml:mo></mml:mrow><mml:mi mathvariant="double-struck">E</mml:mi><mml:mrow><mml:mo>[</mml:mo><mml:mrow><mml:msup><mml:mrow><mml:mi mathvariant="italic">sin</mml:mi></mml:mrow><mml:mn>2</mml:mn></mml:msup><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi mathvariant="bold">Φ</mml:mi><mml:mi>y</mml:mi></mml:msub><mml:mo>−</mml:mo><mml:mi>ν</mml:mi></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mo>]</mml:mo></mml:mrow></mml:mrow></mml:msqrt></mml:mrow></mml:mfrac></mml:mrow></mml:math></disp-formula></p>
+            <p id="P23">In the equation above, <inline-formula><mml:math display="inline" id="M25"><mml:mrow><mml:msub><mml:mi mathvariant="bold">Φ</mml:mi><mml:mi>x</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>ϕ</mml:mi><mml:mi>x</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mn>1</mml:mn><mml:mo>)</mml:mo></mml:mrow><mml:mo>,</mml:mo><mml:mo>…</mml:mo><mml:msub><mml:mi>ϕ</mml:mi><mml:mi>x</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi mathvariant="bold-italic">T</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:math></inline-formula> and <inline-formula><mml:math display="inline" id="M26"><mml:mrow><mml:msub><mml:mi mathvariant="bold">Φ</mml:mi><mml:mi>y</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>ϕ</mml:mi><mml:mi>y</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mn>1</mml:mn><mml:mo>)</mml:mo></mml:mrow><mml:mo>,</mml:mo><mml:mo>…</mml:mo><mml:msub><mml:mi>ϕ</mml:mi><mml:mi>y</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi mathvariant="bold-italic">T</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:math></inline-formula>, while <italic>μ</italic> and
+<italic>ν</italic> represent the mean directions of
+<inline-formula><mml:math display="inline" id="M27"><mml:mrow><mml:msub><mml:mi mathvariant="bold">Φ</mml:mi><mml:mi>x</mml:mi></mml:msub></mml:mrow></mml:math></inline-formula> and <inline-formula><mml:math display="inline" id="M28"><mml:mrow><mml:msub><mml:mi mathvariant="bold">Φ</mml:mi><mml:mi>y</mml:mi></mml:msub></mml:mrow></mml:math></inline-formula>, respectively. Thus, the terms
+<inline-formula><mml:math display="inline" id="M29"><mml:mrow><mml:mi mathvariant="italic">sin</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi mathvariant="bold">Φ</mml:mi><mml:mi>x</mml:mi></mml:msub><mml:mo>−</mml:mo><mml:mi>μ</mml:mi></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:math></inline-formula> and <inline-formula><mml:math display="inline" id="M30"><mml:mrow><mml:mi mathvariant="italic">sin</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi mathvariant="bold">Φ</mml:mi><mml:mi>y</mml:mi></mml:msub><mml:mo>−</mml:mo><mml:mi>ν</mml:mi></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:math></inline-formula> can be interpreted as the deviations of
+<inline-formula><mml:math display="inline" id="M31"><mml:mrow><mml:msub><mml:mi mathvariant="bold">Φ</mml:mi><mml:mi>x</mml:mi></mml:msub></mml:mrow></mml:math></inline-formula> and <inline-formula><mml:math display="inline" id="M32"><mml:mrow><mml:msub><mml:mi mathvariant="bold">Φ</mml:mi><mml:mi>y</mml:mi></mml:msub></mml:mrow></mml:math></inline-formula> from their corresponding mean
+directions.</p>
+            <p id="P24">The circular-circular correlation provides a measure of the
+static interdependence between the two phase time series. It can also be
+used within the sliding windows framework to investigate the
+time-varying PS. This can be expressed as: <disp-formula id="FD10"><label>(10)</label><mml:math display="block" id="M33"><mml:mrow><mml:msub><mml:mrow><mml:mover accent="true"><mml:mi>ρ</mml:mi><mml:mo stretchy="true">^</mml:mo></mml:mover></mml:mrow><mml:mrow><mml:mi>c</mml:mi><mml:mi>i</mml:mi><mml:mi>r</mml:mi><mml:mi>c</mml:mi><mml:mo>,</mml:mo><mml:mi>t</mml:mi></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:mstyle stretchy="false"><mml:msubsup><mml:mo>∑</mml:mo><mml:mrow><mml:mi>s</mml:mi><mml:mo>=</mml:mo><mml:mi>t</mml:mi><mml:mo>−</mml:mo><mml:mi>ℓ</mml:mi><mml:mo>−</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mrow><mml:mi>t</mml:mi><mml:mo>−</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:msubsup><mml:mrow><mml:mrow><mml:mo>[</mml:mo><mml:mrow><mml:mi mathvariant="italic">sin</mml:mi><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mrow><mml:msub><mml:mi>ϕ</mml:mi><mml:mi>x</mml:mi></mml:msub><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mi>s</mml:mi><mml:mo stretchy="false">)</mml:mo></mml:mrow><mml:mo>−</mml:mo><mml:msub><mml:mrow><mml:mover accent="true"><mml:mi>μ</mml:mi><mml:mo stretchy="true">^</mml:mo></mml:mover></mml:mrow><mml:mi>t</mml:mi></mml:msub></mml:mrow><mml:mo stretchy="false">)</mml:mo></mml:mrow><mml:mi mathvariant="italic">sin</mml:mi><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mrow><mml:msub><mml:mi>ϕ</mml:mi><mml:mi>y</mml:mi></mml:msub><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mi>s</mml:mi><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:mrow></mml:mrow><mml:mo>−</mml:mo><mml:msub><mml:mrow><mml:mover accent="true"><mml:mi>ν</mml:mi><mml:mo stretchy="true">^</mml:mo></mml:mover></mml:mrow><mml:mi>t</mml:mi></mml:msub><mml:mo stretchy="false">)</mml:mo></mml:mrow><mml:mo>]</mml:mo></mml:mrow></mml:mrow></mml:mstyle></mml:mrow><mml:mrow><mml:msqrt><mml:mrow><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mstyle stretchy="false"><mml:msubsup><mml:mo>∑</mml:mo><mml:mrow><mml:mi>s</mml:mi><mml:mo>=</mml:mo><mml:mi>t</mml:mi><mml:mo>−</mml:mo><mml:mi>ℓ</mml:mi><mml:mo>−</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mrow><mml:mi>t</mml:mi><mml:mo>−</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:msubsup><mml:mrow><mml:mrow><mml:mo>[</mml:mo><mml:mrow><mml:msup><mml:mrow><mml:mi mathvariant="italic">sin</mml:mi></mml:mrow><mml:mn>2</mml:mn></mml:msup><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mrow><mml:msub><mml:mi>ϕ</mml:mi><mml:mi>x</mml:mi></mml:msub><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mi>s</mml:mi><mml:mo stretchy="false">)</mml:mo></mml:mrow><mml:mo>−</mml:mo><mml:msub><mml:mrow><mml:mover accent="true"><mml:mi>μ</mml:mi><mml:mo stretchy="true">^</mml:mo></mml:mover></mml:mrow><mml:mi>t</mml:mi></mml:msub></mml:mrow><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:mrow><mml:mo>]</mml:mo></mml:mrow></mml:mrow></mml:mstyle></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mstyle stretchy="false"><mml:msubsup><mml:mo>∑</mml:mo><mml:mrow><mml:mi>s</mml:mi><mml:mo>=</mml:mo><mml:mi>t</mml:mi><mml:mo>−</mml:mo><mml:mi>ℓ</mml:mi><mml:mo>−</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mrow><mml:mi>t</mml:mi><mml:mo>−</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:msubsup><mml:mrow><mml:mrow><mml:mo>[</mml:mo><mml:mrow><mml:msup><mml:mrow><mml:mi mathvariant="italic">sin</mml:mi></mml:mrow><mml:mn>2</mml:mn></mml:msup><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mrow><mml:msub><mml:mi>ϕ</mml:mi><mml:mi>y</mml:mi></mml:msub><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mi>s</mml:mi><mml:mo stretchy="false">)</mml:mo></mml:mrow><mml:mo>−</mml:mo><mml:msub><mml:mrow><mml:mover accent="true"><mml:mi>ν</mml:mi><mml:mo stretchy="true">^</mml:mo></mml:mover></mml:mrow><mml:mi>t</mml:mi></mml:msub></mml:mrow><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:mrow><mml:mo>]</mml:mo></mml:mrow></mml:mrow></mml:mstyle></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:msqrt></mml:mrow></mml:mfrac><mml:mo>,</mml:mo></mml:mrow></mml:math></disp-formula> where <inline-formula><mml:math display="inline" id="M34"><mml:mrow><mml:msub><mml:mrow><mml:mover accent="true"><mml:mi>μ</mml:mi><mml:mo stretchy="true">^</mml:mo></mml:mover></mml:mrow><mml:mi>t</mml:mi></mml:msub></mml:mrow></mml:math></inline-formula> and <inline-formula><mml:math display="inline" id="M35"><mml:mrow><mml:msub><mml:mrow><mml:mover accent="true"><mml:mi>ν</mml:mi><mml:mo stretchy="true">^</mml:mo></mml:mover></mml:mrow><mml:mi>t</mml:mi></mml:msub></mml:mrow></mml:math></inline-formula> represent the estimated time-varying
+mean of the two phase time series over the sliding window. It is
+important to note in the context of directional statistics,
+<inline-formula><mml:math display="inline" id="M36"><mml:mrow><mml:msub><mml:mrow><mml:mover accent="true"><mml:mi>μ</mml:mi><mml:mo stretchy="true">^</mml:mo></mml:mover></mml:mrow><mml:mi>t</mml:mi></mml:msub></mml:mrow></mml:math></inline-formula> is computed as follows (<xref rid="R6" ref-type="bibr">Bishop, 2006</xref>; <xref rid="R25" ref-type="bibr">Jammalamadaka and Sengupta, 2001</xref>): <disp-formula id="FD11"><label>(11)</label><mml:math display="block" id="M37"><mml:mrow><mml:msub><mml:mrow><mml:mover accent="true"><mml:mi>μ</mml:mi><mml:mo stretchy="true">^</mml:mo></mml:mover></mml:mrow><mml:mi>t</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:msup><mml:mrow><mml:mi>tan</mml:mi></mml:mrow><mml:mrow><mml:mo>−</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:msup><mml:mspace width="thickmathspace"/><mml:mrow><mml:mo>{</mml:mo><mml:mrow><mml:mfrac><mml:mrow><mml:mstyle stretchy="false"><mml:msubsup><mml:mo>∑</mml:mo><mml:mrow><mml:mi>s</mml:mi><mml:mo>=</mml:mo><mml:mi>t</mml:mi><mml:mo>−</mml:mo><mml:mi>ℓ</mml:mi><mml:mo>−</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mrow><mml:mi>t</mml:mi><mml:mo>−</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:msubsup><mml:mrow><mml:mi>sin</mml:mi><mml:mspace width="thickmathspace"/><mml:msub><mml:mi>ϕ</mml:mi><mml:mi>x</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>s</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:mstyle></mml:mrow><mml:mrow><mml:mstyle stretchy="false"><mml:munderover><mml:mo>∑</mml:mo><mml:mrow><mml:mi>s</mml:mi><mml:mo>=</mml:mo><mml:mi>t</mml:mi><mml:mo>−</mml:mo><mml:mi>ℓ</mml:mi><mml:mo>−</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mrow><mml:mi>t</mml:mi><mml:mo>−</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:munderover><mml:mrow><mml:mi>cos</mml:mi><mml:mspace width="thickmathspace"/><mml:msub><mml:mi>ϕ</mml:mi><mml:mi>x</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>s</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:mstyle></mml:mrow></mml:mfrac></mml:mrow><mml:mo>}</mml:mo></mml:mrow></mml:mrow></mml:math></disp-formula></p>
+            <p id="P25">This formulation can be understood by representing each
+directional variable on a unit circle (r = 1) in the polar coordinate
+system (r, <italic>ϕ</italic>). Re-expressing to the Cartesian
+coordinate system (x, y), we can write <inline-formula><mml:math display="inline" id="M38"><mml:mrow><mml:mi>cos</mml:mi><mml:mspace width="thickmathspace"/><mml:msub><mml:mi>ϕ</mml:mi><mml:mi>x</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>i</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:msub><mml:mtext>x</mml:mtext><mml:mi>i</mml:mi></mml:msub></mml:mrow></mml:math></inline-formula> and <inline-formula><mml:math display="inline" id="M39"><mml:mrow><mml:mi>sin</mml:mi><mml:mspace width="thickmathspace"/><mml:msub><mml:mi>ϕ</mml:mi><mml:mi>y</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>i</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:msub><mml:mtext>y</mml:mtext><mml:mi>i</mml:mi></mml:msub></mml:mrow></mml:math></inline-formula>, for <inline-formula><mml:math display="inline" id="M40"><mml:mrow><mml:mi>i</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn><mml:mo>,</mml:mo><mml:mo>…</mml:mo><mml:mo>,</mml:mo><mml:mi>n</mml:mi></mml:mrow></mml:math></inline-formula>. Thus, <inline-formula><mml:math display="inline" id="M41"><mml:mrow><mml:mover accent="true"><mml:mtext>x</mml:mtext><mml:mo stretchy="true">¯</mml:mo></mml:mover><mml:mo>=</mml:mo><mml:msup><mml:mi>n</mml:mi><mml:mrow><mml:mo>−</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:msup><mml:mstyle stretchy="true"><mml:mo>∑</mml:mo><mml:mrow><mml:mi>cos</mml:mi><mml:mspace width="thickmathspace"/><mml:msub><mml:mi>ϕ</mml:mi><mml:mi>x</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>i</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:mstyle></mml:mrow></mml:math></inline-formula>, <inline-formula><mml:math display="inline" id="M42"><mml:mrow><mml:mover accent="true"><mml:mtext>y</mml:mtext><mml:mo stretchy="true">¯</mml:mo></mml:mover><mml:mo>=</mml:mo><mml:msup><mml:mi>n</mml:mi><mml:mrow><mml:mo>−</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:msup><mml:mstyle stretchy="true"><mml:mo>∑</mml:mo><mml:mrow><mml:mi>sin</mml:mi><mml:mspace width="thickmathspace"/><mml:msub><mml:mi>ϕ</mml:mi><mml:mi>y</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>i</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:mstyle></mml:mrow></mml:math></inline-formula>, and the mean direction thus can be
+written as expressed in <xref rid="FD11" ref-type="disp-formula">Eq.
+(11)</xref>. Here <inline-formula><mml:math display="inline" id="M43"><mml:mrow><mml:msub><mml:mrow><mml:mover accent="true"><mml:mi>ν</mml:mi><mml:mo stretchy="true">^</mml:mo></mml:mover></mml:mrow><mml:mi>t</mml:mi></mml:msub></mml:mrow></mml:math></inline-formula> is computed analogously.</p>
+          </sec>
+          <sec id="S8">
+            <title>Toroidal-Circular Correlation</title>
+            <p id="P26">In a critique of circular-circular correlation, <xref rid="R58" ref-type="bibr">Zhan et al. (2017)</xref> argued that the sine of an
+angle contains less information than the angle itself, as multiple
+angles can take the same sine value. Furthermore, since the sine
+function is not monotone within an interval of
+<italic>π</italic>, this may lead to unreasonable results. To
+circumvent these issues, they introduced a circular correlation
+coefficient for bivariate directional data on a torus, which is the
+equivalent to the product of two circles (<xref rid="R48" ref-type="bibr">Sojakova, 2016</xref>; <xref rid="R58" ref-type="bibr">Zhan et al., 2017</xref>).</p>
+            <p id="P27">To elaborate, let <inline-formula><mml:math display="inline" id="M44"><mml:mrow><mml:msub><mml:mi>ϕ</mml:mi><mml:mi>x</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>t</mml:mi><mml:mn>1</mml:mn></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:math></inline-formula> (or similarly <inline-formula><mml:math display="inline" id="M45"><mml:mrow><mml:msub><mml:mi>ϕ</mml:mi><mml:mi>y</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>t</mml:mi><mml:mn>1</mml:mn></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:math></inline-formula>) and <inline-formula><mml:math display="inline" id="M46"><mml:mrow><mml:msub><mml:mi>ϕ</mml:mi><mml:mi>x</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>t</mml:mi><mml:mn>2</mml:mn></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:math></inline-formula> (or <inline-formula><mml:math display="inline" id="M47"><mml:mrow><mml:msub><mml:mi>ϕ</mml:mi><mml:mi>y</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>t</mml:mi><mml:mn>2</mml:mn></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:math></inline-formula>) be two circular data points and set
+<inline-formula><mml:math display="inline" id="M48"><mml:mrow><mml:mn>0</mml:mn><mml:mo>≤</mml:mo><mml:msub><mml:mi>ϕ</mml:mi><mml:mi>x</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>t</mml:mi><mml:mn>1</mml:mn></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:math></inline-formula>, <inline-formula><mml:math display="inline" id="M49"><mml:mrow><mml:msub><mml:mi>ϕ</mml:mi><mml:mi>x</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>t</mml:mi><mml:mn>2</mml:mn></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mo>&lt;</mml:mo><mml:mn>2</mml:mn><mml:mi>π</mml:mi></mml:mrow></mml:math></inline-formula>, so <inline-formula><mml:math display="inline" id="M50"><mml:mrow><mml:mrow><mml:mo>|</mml:mo><mml:mrow><mml:msub><mml:mi>ϕ</mml:mi><mml:mi>x</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>t</mml:mi><mml:mn>1</mml:mn></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mo>−</mml:mo><mml:msub><mml:mi>ϕ</mml:mi><mml:mi>x</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>t</mml:mi><mml:mn>2</mml:mn></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mo>|</mml:mo></mml:mrow><mml:mo>&lt;</mml:mo><mml:mn>2</mml:mn><mml:mi>π</mml:mi></mml:mrow></mml:math></inline-formula>. When <inline-formula><mml:math display="inline" id="M51"><mml:mrow><mml:mo>−</mml:mo><mml:mi>π</mml:mi><mml:mo>&lt;</mml:mo><mml:msub><mml:mi>ϕ</mml:mi><mml:mi>x</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>t</mml:mi><mml:mn>1</mml:mn></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mo>−</mml:mo><mml:msub><mml:mi>ϕ</mml:mi><mml:mi>x</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>t</mml:mi><mml:mn>2</mml:mn></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mo>≤</mml:mo><mml:mn>0</mml:mn></mml:mrow></mml:math></inline-formula> OR <inline-formula><mml:math display="inline" id="M52"><mml:mrow><mml:msub><mml:mi>ϕ</mml:mi><mml:mi>x</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>t</mml:mi><mml:mn>1</mml:mn></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mo>−</mml:mo><mml:msub><mml:mi>ϕ</mml:mi><mml:mi>x</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>t</mml:mi><mml:mn>2</mml:mn></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mo>&gt;</mml:mo><mml:mi>π</mml:mi></mml:mrow></mml:math></inline-formula>, by convention the direction from
+<inline-formula><mml:math display="inline" id="M53"><mml:mrow><mml:msub><mml:mi>ϕ</mml:mi><mml:mi>x</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>t</mml:mi><mml:mn>1</mml:mn></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:math></inline-formula> to <inline-formula><mml:math display="inline" id="M54"><mml:mrow><mml:msub><mml:mi>ϕ</mml:mi><mml:mi>x</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>t</mml:mi><mml:mn>2</mml:mn></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:math></inline-formula> is considered to be clockwise. When
+<inline-formula><mml:math display="inline" id="M55"><mml:mrow><mml:msub><mml:mi>ϕ</mml:mi><mml:mi>x</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>t</mml:mi><mml:mn>1</mml:mn></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mo>−</mml:mo><mml:msub><mml:mi>ϕ</mml:mi><mml:mi>x</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>t</mml:mi><mml:mn>2</mml:mn></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mo>≤</mml:mo><mml:mo>−</mml:mo><mml:mi>π</mml:mi></mml:mrow></mml:math></inline-formula> OR <inline-formula><mml:math display="inline" id="M56"><mml:mrow><mml:mn>0</mml:mn><mml:mo>&lt;</mml:mo><mml:msub><mml:mi>ϕ</mml:mi><mml:mi>x</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>t</mml:mi><mml:mn>1</mml:mn></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mo>−</mml:mo><mml:msub><mml:mi>ϕ</mml:mi><mml:mi>x</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>t</mml:mi><mml:mn>2</mml:mn></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mo>≤</mml:mo><mml:mi>π</mml:mi></mml:mrow></mml:math></inline-formula>, the direction is considered
+counter-clockwise. The same definition holds for
+<inline-formula><mml:math display="inline" id="M57"><mml:mrow><mml:msub><mml:mi>ϕ</mml:mi><mml:mi>y</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>t</mml:mi><mml:mn>1</mml:mn></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:math></inline-formula> and <inline-formula><mml:math display="inline" id="M58"><mml:mrow><mml:msub><mml:mi>ϕ</mml:mi><mml:mi>y</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>t</mml:mi><mml:mn>2</mml:mn></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:math></inline-formula>.</p>
+            <p id="P28">Let <inline-formula><mml:math display="inline" id="M59"><mml:mrow><mml:mi>δ</mml:mi><mml:mo>=</mml:mo><mml:msub><mml:mi>ϕ</mml:mi><mml:mi>x</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>t</mml:mi><mml:mn>1</mml:mn></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mo>−</mml:mo><mml:msub><mml:mi>ϕ</mml:mi><mml:mi>x</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>t</mml:mi><mml:mn>2</mml:mn></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:math></inline-formula>, then the order function can be
+expressed as follows: <disp-formula id="FD12"><label>(12)</label><mml:math display="block" id="M60"><mml:mrow><mml:mi>h</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mi>δ</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mrow><mml:mo>[</mml:mo><mml:mrow><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mi>δ</mml:mi><mml:mo>+</mml:mo><mml:mn>2</mml:mn><mml:mi>π</mml:mi></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mspace width="1em"/><mml:mi mathvariant="italic">mod</mml:mi><mml:mspace width="thickmathspace"/><mml:mn>2</mml:mn><mml:mi>π</mml:mi></mml:mrow><mml:mo>]</mml:mo></mml:mrow><mml:mo>−</mml:mo><mml:mi>π</mml:mi><mml:mo>=</mml:mo><mml:mrow><mml:mo>{</mml:mo><mml:mrow><mml:mtable><mml:mtr><mml:mtd><mml:mspace width="1em"/><mml:mrow><mml:mi>δ</mml:mi><mml:mo>+</mml:mo><mml:mi>π</mml:mi><mml:mo>,</mml:mo></mml:mrow></mml:mtd><mml:mtd><mml:mrow><mml:mo>−</mml:mo><mml:mn>2</mml:mn><mml:mi>π</mml:mi><mml:mo>&lt;</mml:mo><mml:mi>δ</mml:mi><mml:mo>&lt;</mml:mo><mml:mn>0</mml:mn><mml:mo>,</mml:mo></mml:mrow></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mspace width="1em"/><mml:mrow><mml:mi>δ</mml:mi><mml:mo>−</mml:mo><mml:mi>π</mml:mi><mml:mo>,</mml:mo></mml:mrow></mml:mtd><mml:mtd><mml:mrow><mml:mn>0</mml:mn><mml:mo>≤</mml:mo><mml:mi>δ</mml:mi><mml:mo>&lt;</mml:mo><mml:mn>2</mml:mn><mml:mi>π</mml:mi><mml:mo>.</mml:mo></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:mrow></mml:mrow></mml:mrow></mml:math></disp-formula></p>
+            <p id="P29">Now, let us assume that <inline-formula><mml:math display="inline" id="M61"><mml:mrow><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>ϕ</mml:mi><mml:mi>x</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>t</mml:mi><mml:mn>1</mml:mn></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mo>,</mml:mo><mml:msub><mml:mi>ϕ</mml:mi><mml:mi>y</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>t</mml:mi><mml:mn>1</mml:mn></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:math></inline-formula> and <inline-formula><mml:math display="inline" id="M62"><mml:mrow><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>ϕ</mml:mi><mml:mi>x</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>t</mml:mi><mml:mn>2</mml:mn></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mo>,</mml:mo><mml:msub><mml:mi>ϕ</mml:mi><mml:mi>y</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>t</mml:mi><mml:mn>2</mml:mn></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:math></inline-formula> are independent. The toroidal-circular
+correlation is then defined as follows: <disp-formula id="FD13"><label>(13)</label><mml:math display="block" id="M63"><mml:mrow><mml:msub><mml:mi>ρ</mml:mi><mml:mrow><mml:mi>t</mml:mi><mml:mi>o</mml:mi><mml:mi>r</mml:mi></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:mi mathvariant="double-struck">E</mml:mi><mml:mspace width="thickmathspace"/><mml:mrow><mml:mo>[</mml:mo><mml:mrow><mml:mi>h</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>ϕ</mml:mi><mml:mi>x</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>t</mml:mi><mml:mn>1</mml:mn></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mo>,</mml:mo><mml:msub><mml:mi>ϕ</mml:mi><mml:mi>x</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>t</mml:mi><mml:mn>2</mml:mn></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mi>h</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>ϕ</mml:mi><mml:mi>y</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>t</mml:mi><mml:mn>1</mml:mn></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mo>,</mml:mo><mml:msub><mml:mi>ϕ</mml:mi><mml:mi>y</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>t</mml:mi><mml:mn>2</mml:mn></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mo>]</mml:mo></mml:mrow></mml:mrow><mml:mrow><mml:msqrt><mml:mrow><mml:mi mathvariant="double-struck">E</mml:mi><mml:mspace width="thickmathspace"/><mml:mrow><mml:mo>[</mml:mo><mml:mrow><mml:mi>h</mml:mi><mml:msup><mml:mrow><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>ϕ</mml:mi><mml:mi>x</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>t</mml:mi><mml:mn>1</mml:mn></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mo>,</mml:mo><mml:msub><mml:mi>ϕ</mml:mi><mml:mi>x</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>t</mml:mi><mml:mn>2</mml:mn></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mn>2</mml:mn></mml:msup></mml:mrow><mml:mo>]</mml:mo></mml:mrow><mml:mspace width="thickmathspace"/><mml:mi mathvariant="double-struck">E</mml:mi><mml:mspace width="thickmathspace"/><mml:mrow><mml:mo>[</mml:mo><mml:mrow><mml:mi>h</mml:mi><mml:msup><mml:mrow><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>ϕ</mml:mi><mml:mi>y</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>t</mml:mi><mml:mn>1</mml:mn></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mo>,</mml:mo><mml:msub><mml:mi>ϕ</mml:mi><mml:mi>y</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>t</mml:mi><mml:mn>2</mml:mn></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mn>2</mml:mn></mml:msup></mml:mrow><mml:mo>]</mml:mo></mml:mrow></mml:mrow></mml:msqrt></mml:mrow></mml:mfrac></mml:mrow></mml:math></disp-formula></p>
+            <p id="P30">Note that <inline-formula><mml:math display="inline" id="M64"><mml:mrow><mml:msub><mml:mi>ρ</mml:mi><mml:mrow><mml:mi>t</mml:mi><mml:mi>o</mml:mi><mml:mi>r</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:math></inline-formula> can take values between −1 to
++1. Based on this definition, the two variables
+<italic>ϕ<sub>x</sub></italic> and
+<italic>ϕ<sub>y</sub></italic> move on the circumference
+of the torus in the same direction if <inline-formula><mml:math display="inline" id="M65"><mml:mrow><mml:mi>h</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>ϕ</mml:mi><mml:mi>x</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>t</mml:mi><mml:mn>1</mml:mn></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mo>,</mml:mo><mml:msub><mml:mi>ϕ</mml:mi><mml:mi>x</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>t</mml:mi><mml:mn>2</mml:mn></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mi>h</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>ϕ</mml:mi><mml:mi>y</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>t</mml:mi><mml:mn>1</mml:mn></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mo>,</mml:mo><mml:msub><mml:mi>ϕ</mml:mi><mml:mi>y</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>t</mml:mi><mml:mn>2</mml:mn></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mo>&gt;</mml:mo><mml:mn>0</mml:mn></mml:mrow></mml:math></inline-formula>, making <inline-formula><mml:math display="inline" id="M66"><mml:mrow><mml:msub><mml:mi>ρ</mml:mi><mml:mrow><mml:mi>t</mml:mi><mml:mi>o</mml:mi><mml:mi>r</mml:mi></mml:mrow></mml:msub><mml:mo>&gt;</mml:mo><mml:mn>0</mml:mn></mml:mrow></mml:math></inline-formula>. Similarly, <inline-formula><mml:math display="inline" id="M67"><mml:mrow><mml:msub><mml:mi>ρ</mml:mi><mml:mrow><mml:mi>t</mml:mi><mml:mi>o</mml:mi><mml:mi>r</mml:mi></mml:mrow></mml:msub><mml:mo>&lt;</mml:mo><mml:mn>0</mml:mn></mml:mrow></mml:math></inline-formula> indicates that the two variables are
+moving in opposite directions.</p>
+            <p id="P31">An estimator can be obtained as follows: <disp-formula id="FD14"><label>(14)</label><mml:math display="block" id="M68"><mml:mrow><mml:msub><mml:mrow><mml:mover accent="true"><mml:mi>ρ</mml:mi><mml:mo stretchy="true">^</mml:mo></mml:mover></mml:mrow><mml:mrow><mml:mi>t</mml:mi><mml:mi>o</mml:mi><mml:mi>r</mml:mi></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:mstyle stretchy="true"><mml:msub><mml:mo>∑</mml:mo><mml:mrow><mml:mn>1</mml:mn><mml:mo>≤</mml:mo><mml:msub><mml:mi>t</mml:mi><mml:mi>i</mml:mi></mml:msub><mml:mo>≤</mml:mo><mml:msub><mml:mi>t</mml:mi><mml:mi>j</mml:mi></mml:msub><mml:mo>≤</mml:mo><mml:mi>n</mml:mi></mml:mrow></mml:msub><mml:mspace width="thickmathspace"/><mml:mrow><mml:mrow><mml:mo>[</mml:mo><mml:mrow><mml:mi>h</mml:mi><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mrow><mml:msub><mml:mi>ϕ</mml:mi><mml:mi>x</mml:mi></mml:msub><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mrow><mml:msub><mml:mi>t</mml:mi><mml:mi>i</mml:mi></mml:msub></mml:mrow><mml:mo stretchy="false">)</mml:mo></mml:mrow><mml:mo>,</mml:mo><mml:msub><mml:mi>ϕ</mml:mi><mml:mi>x</mml:mi></mml:msub><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mrow><mml:msub><mml:mi>t</mml:mi><mml:mi>j</mml:mi></mml:msub></mml:mrow><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:mrow><mml:mo stretchy="false">)</mml:mo></mml:mrow><mml:mi>h</mml:mi><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mrow><mml:msub><mml:mi>ϕ</mml:mi><mml:mi>y</mml:mi></mml:msub><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mrow><mml:msub><mml:mi>t</mml:mi><mml:mi>i</mml:mi></mml:msub></mml:mrow><mml:mo stretchy="false">)</mml:mo></mml:mrow><mml:mo>,</mml:mo><mml:msub><mml:mi>ϕ</mml:mi><mml:mi>y</mml:mi></mml:msub><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mrow><mml:msub><mml:mi>t</mml:mi><mml:mi>j</mml:mi></mml:msub></mml:mrow><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:mrow><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:mrow><mml:mo>]</mml:mo></mml:mrow></mml:mrow></mml:mstyle></mml:mrow><mml:mrow><mml:msqrt><mml:mrow><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mstyle stretchy="true"><mml:msub><mml:mo>∑</mml:mo><mml:mrow><mml:mn>1</mml:mn><mml:mo>≤</mml:mo><mml:msub><mml:mi>t</mml:mi><mml:mi>i</mml:mi></mml:msub><mml:mo>≤</mml:mo><mml:msub><mml:mi>t</mml:mi><mml:mi>j</mml:mi></mml:msub><mml:mo>≤</mml:mo><mml:mi>n</mml:mi></mml:mrow></mml:msub><mml:mrow><mml:mi>h</mml:mi><mml:msup><mml:mrow><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mrow><mml:msub><mml:mi>ϕ</mml:mi><mml:mi>x</mml:mi></mml:msub><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mrow><mml:msub><mml:mi>t</mml:mi><mml:mi>i</mml:mi></mml:msub></mml:mrow><mml:mo stretchy="false">)</mml:mo></mml:mrow><mml:mo>,</mml:mo><mml:msub><mml:mi>ϕ</mml:mi><mml:mi>x</mml:mi></mml:msub><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mrow><mml:msub><mml:mi>t</mml:mi><mml:mi>j</mml:mi></mml:msub></mml:mrow><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:mrow><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:mrow><mml:mn>2</mml:mn></mml:msup></mml:mrow></mml:mstyle></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mspace width="thickmathspace"/><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mstyle stretchy="true"><mml:msub><mml:mo>∑</mml:mo><mml:mrow><mml:mn>1</mml:mn><mml:mo>≤</mml:mo><mml:msub><mml:mi>t</mml:mi><mml:mi>i</mml:mi></mml:msub><mml:mo>≤</mml:mo><mml:msub><mml:mi>t</mml:mi><mml:mi>j</mml:mi></mml:msub><mml:mo>≤</mml:mo><mml:mi>n</mml:mi></mml:mrow></mml:msub><mml:mrow><mml:mi>h</mml:mi><mml:msup><mml:mrow><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mrow><mml:msub><mml:mi>ϕ</mml:mi><mml:mi>y</mml:mi></mml:msub><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mrow><mml:msub><mml:mi>t</mml:mi><mml:mi>i</mml:mi></mml:msub></mml:mrow><mml:mo stretchy="false">)</mml:mo></mml:mrow><mml:mo>,</mml:mo><mml:msub><mml:mi>ϕ</mml:mi><mml:mi>y</mml:mi></mml:msub><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mrow><mml:msub><mml:mi>t</mml:mi><mml:mi>j</mml:mi></mml:msub></mml:mrow><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:mrow><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:mrow><mml:mn>2</mml:mn></mml:msup></mml:mrow></mml:mstyle></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:msqrt></mml:mrow></mml:mfrac></mml:mrow></mml:math></disp-formula></p>
+            <p id="P32">The main advantage of using toroidal-circular correlation is
+that no information about the angles are lost. Thus, the estimator
+circumvents problems due to the non-monotonicity of the sine function
+that could result in irregular estimation when using the
+circular-circular correlation. It can be calculated within a sliding
+window framework similar to the previous sections.</p>
+          </sec>
+        </sec>
+        <sec id="S9">
+          <label>2.2.2.</label>
+          <title>Instantaneous phase synchronization</title>
+          <p id="P33">The second class of methods are based on directly working with the
+instantaneous phases of two time series. Here we focus on phase coherence
+(<xref rid="R39" ref-type="bibr">Pedersen et al., 2017</xref>; <xref rid="R40" ref-type="bibr">2018</xref>), which has already found wide
+usage in the field, and the cosine of the relative phase, introduced for the
+first time in this work.</p>
+          <sec id="S10">
+            <title>Phase Coherence</title>
+            <p id="P34">The phase coherence at each time point is defined as follows:
+<disp-formula id="FD15"><label>(15)</label><mml:math display="block" id="M69"><mml:mrow><mml:mi mathvariant="bold">Ψ</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mn>1</mml:mn><mml:mo>−</mml:mo><mml:mrow><mml:mo>|</mml:mo><mml:mrow><mml:mi>sin</mml:mi><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mrow><mml:mi>Δ</mml:mi><mml:mi mathvariant="bold">Φ</mml:mi><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mi>t</mml:mi><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:mrow><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:mrow><mml:mo>|</mml:mo></mml:mrow></mml:mrow></mml:math></disp-formula> Here the absolute value of the sine of the relative
+phase differences is included to account for phase wrapping and resolve
+issues with phase ambiguity over time. Note that the range of the values
+obtained using this metric will take values between 0 and 1, where 0
+implies no phase coherence and 1 corresponds to maximal phase
+coherence.</p>
+            <p id="P35">A shortcoming of this approach is that it discards information
+about the direction of the relationship as <inline-formula><mml:math display="inline" id="M70"><mml:mrow><mml:mrow><mml:mo>|</mml:mo><mml:mrow><mml:mi>sin</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mo>−</mml:mo><mml:mi>Δ</mml:mi><mml:mi mathvariant="bold">Φ</mml:mi></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mo>|</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mrow><mml:mo>|</mml:mo><mml:mrow><mml:mi>sin</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mi>Δ</mml:mi><mml:mi mathvariant="bold">Φ</mml:mi></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mo>|</mml:mo></mml:mrow></mml:mrow></mml:math></inline-formula>. As these values vary between 0 and 1,
+<bold>Ψ</bold>(<italic>t</italic>) as defined in <xref rid="FD15" ref-type="disp-formula">Eq. (15)</xref> does not capture
+negative association (i.e., when signals are in anti-phase). This may
+help explain why <xref rid="R40" ref-type="bibr">Pedersen et al.
+(2018)</xref> found that the association between IPS and CSW
+analysis was strongly dependent on negative correlations obtained from
+the CSW analysis, and that the association increased when comparing the
+absolute values of the correlations. In addition, it explains why their
+analysis was unable to capture temporal transitions from positive to
+negative associations, and vice versa, that appeared in the CSW
+analysis.</p>
+          </sec>
+          <sec id="S11">
+            <title>Cosine of the Relative Phase</title>
+            <p id="P36">To circumvent the issues outlined above, we propose a
+modification of phase coherence that takes temporal transitions into
+account and preserves the correlational structure in the data. This can
+be achieved by not taking the absolute value of the phase difference and
+using a cosine function instead of a sine function. We refer to this
+measure as the cosine of the relative phase (CRP), defined as follows:
+<disp-formula id="FD16"><label>(16)</label><mml:math display="block" id="M71"><mml:mrow><mml:mi>ϑ</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mi>cos</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mi>Δ</mml:mi><mml:mi mathvariant="bold">Φ</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:math></disp-formula> Notably, the range of the values obtained using this
+metric take values between −1 and 1, and is therefore directly
+comparable to standard correlation values.</p>
+            <p id="P37">The CRP approach avoids phase unwrapping and takes phase
+ambiguity into consideration. When the instantaneous phase of two
+signals are similar to one another (i.e., <inline-formula><mml:math display="inline" id="M72"><mml:mrow><mml:mrow><mml:mo>|</mml:mo><mml:mrow><mml:mi>Δ</mml:mi><mml:mi mathvariant="bold">Φ</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mo>|</mml:mo></mml:mrow><mml:mo>≈</mml:mo><mml:mn>0</mml:mn></mml:mrow></mml:math></inline-formula>), CRP yields a value close to 1. When
+the phases are dissimilar but in the same direction, their relative
+phase difference is bounded between <inline-formula><mml:math display="inline" id="M73"><mml:mrow><mml:mrow><mml:mo>[</mml:mo><mml:mrow><mml:mo>−</mml:mo><mml:mi>π</mml:mi><mml:mo>/</mml:mo><mml:mn>2</mml:mn><mml:mo>,</mml:mo><mml:mi>π</mml:mi><mml:mo>/</mml:mo><mml:mn>2</mml:mn></mml:mrow><mml:mo>]</mml:mo></mml:mrow></mml:mrow></mml:math></inline-formula>, which is the range where the cosine
+function is positive. As the phases become orthogonal to one another,
+CRP approaches 0 indicating a lack of coherence. Similarly, the CRP
+captures negative associations between phases. If the phase difference
+is greater than ±<italic>π</italic>/2, this results in
+negative values of the cosine function. Thus, using CRP as a measure of
+phase synchrony helps overcome the issue of detecting temporal
+transitions from positive to negative associations (or vice-versa), and
+preserves the positive and negative dependence in the data.</p>
+          </sec>
+        </sec>
+      </sec>
+      <sec id="S12">
+        <label>2.3.</label>
+        <title>Simulations</title>
+        <p id="P38">In this section we introduce three simulations designed to compare the
+methods presented in <xref rid="S4" ref-type="sec">Section 2.2</xref> for the
+two different classes of PS analysis. The first investigates their performance
+in a null setting, while the second and third investigate PS measures when two
+sinusoidal signals have the same frequency but differing phase shifts. For all
+three simulations data was generated with a sampling frequency of 1/<italic>T
+R</italic>, where <italic>T R</italic> represents the repetition time of an
+fMRI experiment. To be comparable with the main rs-fMRI data set used in this
+paper we chose <italic>T R</italic> = 2 seconds.</p>
+        <p id="P39">For each simulation we computed WPS values using the PLV,
+circular-circular correlation, and toroidal-circular correlation, and IPS values
+using phase coherence and the CRP method. All simulations were repeated 1000
+times, and the mean and variance of the PS measured at each time point was used
+to construct a 95% confidence interval. Furthermore, the effect of different
+window lengths in the WPS analysis was evaluated using three different window
+lengths (30, 60, and 120 TRs).</p>
+        <p id="P40">To illustrate the necessity of band-pass filtering the data, PS analysis
+was performed on the simulated data both before and after band-pass filtering it
+in the range [0.03, 0.07] <italic><bold>H</bold> z</italic>. Throughout we used
+a 5th order Butterworth filter. The zero-phase version of this filter is
+implemented in MATLAB by filtering backward in time using MATLAB’s
+filtfilt function to cancel out the phase delay introduced by this filter.</p>
+        <p id="P41">For comparison purposes we repeated the simulations using BEMD,
+described in <xref rid="SD1" ref-type="supplementary-material">Section
+S1.1</xref>, in place of the band-pass filtering. Using the BEMD-based PS
+framework, the pairwise intrinsic mode functions (IMF)s are obtained and PS
+measures are computed on the IMF pair whose frequency is closest to central
+frequency of 0.05 Hz which corresponds to the peak of the power spectrum.</p>
+        <sec id="S13">
+          <title>Simulation 1:</title>
+          <p id="P42">To simulate time series with independent phase dynamics, we
+generated two independent random signals from a Gaussian distribution with
+mean 0 and standard deviation 1. Using the logic of surrogate data testing,
+we generated surrogate data under the assumption of no relationship between
+the phase from the two signals. To achieve this goal we used cyclic phase
+permutation (CPP) surrogates (<xref rid="R29" ref-type="bibr">Lancaster et
+al., 2018</xref>), constructed by reorganizing the cycles within the
+extracted phase of the signals. This destroys any phase dependence between
+the pair, whilst preserving the general form of the phase dynamics of each
+time series. For this simulation, the 1000 realizations of signal pairs were
+generated using CPP surrogates.</p>
+        </sec>
+        <sec id="S14">
+          <title>Simulation 2:</title>
+          <p id="P43">Here we generated two sinusoidal signals with the same frequency,
+but with a time-varying phase shift corresponding to a ramp function. To
+elaborate, consider two sinusoidal signals
+<italic>x</italic>(<italic>t</italic>) and
+<italic>y</italic>(<italic>t</italic>). Let
+<italic>x</italic>(<italic>t</italic>) be the reference signal with an
+angular frequency of <italic>ω</italic><sub>0</sub> and phase
+<italic>φ<sub>x</sub></italic>(<italic>t</italic>). Further,
+let <italic>y</italic>(<italic>t</italic>) have the same angular frequency
+but with phase <italic>φ<sub>y</sub></italic>(<italic>t</italic>).
+The signals can be expressed as follows: <disp-formula id="FD17"><label>(17)</label><mml:math display="block" id="M74"><mml:mi>x</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:msub><mml:mi>A</mml:mi><mml:mi>x</mml:mi></mml:msub><mml:mi mathvariant="italic">cos</mml:mi><mml:mspace width="thickmathspace"/><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>ω</mml:mi><mml:mn>0</mml:mn></mml:msub><mml:mi>t</mml:mi><mml:mo>+</mml:mo><mml:msub><mml:mi>φ</mml:mi><mml:mi>x</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mo>+</mml:mo><mml:msub><mml:mi>ε</mml:mi><mml:mi>x</mml:mi></mml:msub><mml:mspace linebreak="newline"/><mml:mi>y</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:msub><mml:mi>A</mml:mi><mml:mi>y</mml:mi></mml:msub><mml:mi mathvariant="italic">cos</mml:mi><mml:mspace width="thickmathspace"/><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>ω</mml:mi><mml:mn>0</mml:mn></mml:msub><mml:mi>t</mml:mi><mml:mo>+</mml:mo><mml:msub><mml:mi>φ</mml:mi><mml:mi>y</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mo>+</mml:mo><mml:msub><mml:mi>ε</mml:mi><mml:mi>y</mml:mi></mml:msub></mml:math></disp-formula></p>
+          <p id="P44">Without loss of generality, let <inline-formula><mml:math display="inline" id="M75"><mml:mrow><mml:msub><mml:mi>φ</mml:mi><mml:mi>x</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mn>0</mml:mn></mml:mrow></mml:math></inline-formula> and <inline-formula><mml:math display="inline" id="M76"><mml:mrow><mml:msub><mml:mi>φ</mml:mi><mml:mi>y</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:math></inline-formula> be a ramp function, <disp-formula id="FD18"><label>(18)</label><mml:math display="block" id="M77"><mml:mrow><mml:mi>r</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mi>t</mml:mi><mml:mo>−</mml:mo><mml:msub><mml:mi>t</mml:mi><mml:mn>0</mml:mn></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mrow><mml:mo>{</mml:mo><mml:mrow><mml:mtable columnalign="left"><mml:mtr><mml:mtd><mml:mspace width="1em"/><mml:mn>0</mml:mn></mml:mtd><mml:mtd><mml:mi>t</mml:mi></mml:mtd><mml:mtd><mml:mrow><mml:mo>⩽</mml:mo><mml:msub><mml:mi>t</mml:mi><mml:mn>0</mml:mn></mml:msub></mml:mrow></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:mspace width="1em"/><mml:mrow><mml:mi>t</mml:mi><mml:mo>−</mml:mo><mml:msub><mml:mi>t</mml:mi><mml:mn>0</mml:mn></mml:msub></mml:mrow></mml:mtd><mml:mtd><mml:mi>t</mml:mi></mml:mtd><mml:mtd><mml:mrow><mml:mo>&gt;</mml:mo><mml:msub><mml:mi>t</mml:mi><mml:mn>0</mml:mn></mml:msub></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:mrow></mml:mrow></mml:mrow></mml:math></disp-formula> The time series can then be expressed as follows:
+<disp-formula id="FD19"><label>(19)</label><mml:math display="block" id="M78"><mml:mi>x</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:msub><mml:mi>A</mml:mi><mml:mi>x</mml:mi></mml:msub><mml:mi mathvariant="italic">cos</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>ω</mml:mi><mml:mn>0</mml:mn></mml:msub><mml:mi>t</mml:mi></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mo>+</mml:mo><mml:msub><mml:mi>ε</mml:mi><mml:mi>x</mml:mi></mml:msub><mml:mspace linebreak="newline"/><mml:mi>y</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:msub><mml:mi>A</mml:mi><mml:mi>y</mml:mi></mml:msub><mml:mi mathvariant="italic">cos</mml:mi><mml:mo stretchy="true">(</mml:mo><mml:mrow><mml:msub><mml:mi>ω</mml:mi><mml:mn>0</mml:mn></mml:msub><mml:mi>t</mml:mi><mml:mo>+</mml:mo><mml:mn>4</mml:mn><mml:mi>π</mml:mi><mml:mi>r</mml:mi><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mrow><mml:mi>t</mml:mi><mml:mo>−</mml:mo><mml:msub><mml:mi>t</mml:mi><mml:mn>0</mml:mn></mml:msub></mml:mrow><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:mrow><mml:mo stretchy="true">)</mml:mo><mml:mo>+</mml:mo><mml:msub><mml:mi>ε</mml:mi><mml:mi>y</mml:mi></mml:msub></mml:math></disp-formula> Throughout, <inline-formula><mml:math display="inline" id="M79"><mml:mrow><mml:msub><mml:mi>ω</mml:mi><mml:mn>0</mml:mn></mml:msub><mml:mo>=</mml:mo><mml:mn>2</mml:mn><mml:mi>π</mml:mi><mml:mi>f</mml:mi></mml:mrow></mml:math></inline-formula>
+<italic>rad / s</italic> with <italic>f</italic> = 0.05
+<italic><bold>H</bold> z</italic>, and the transition is set to
+occur at <italic>t</italic><sub>0</sub> = 170 <italic>s</italic>. The noise
+terms <italic>ε<sub>x</sub></italic> and
+<italic>ε<sub>y</sub></italic> are Gaussian white noise with mean
+0 and standard deviation 1.</p>
+          <p id="P45">To summarize, the two signals start out phase synchronized and
+remain in this state up to <italic>t</italic><sub>0</sub> = 170
+<italic>s</italic>. After which the phase difference starts linearly
+increasing and transition into a non-synchronized state.</p>
+        </sec>
+        <sec id="S15">
+          <title>Simulation 3:</title>
+          <p id="P46">Here we generated two sinusoidal signals with the same frequency,
+but with a time-varying phase shift corresponding to a sigmoid function. As
+in the previous simulation, data was generated according to <xref rid="FD17" ref-type="disp-formula">Eq. (17)</xref>. Here we let
+<italic>φ<sub>x</sub></italic>(<italic>t</italic>) = 0 and
+<italic>φ<sub>y</sub></italic>(<italic>t</italic>) be a
+sigmoid function, i.e. <disp-formula id="FD20"><label>(20)</label><mml:math display="block" id="M80"><mml:mrow><mml:mi>s</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mi>t</mml:mi><mml:mo>−</mml:mo><mml:msub><mml:mi>t</mml:mi><mml:mn>0</mml:mn></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mfrac><mml:mi>a</mml:mi><mml:mrow><mml:mn>1</mml:mn><mml:mo>+</mml:mo><mml:mi>exp</mml:mi><mml:mspace width="thickmathspace"/><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mi>b</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mi>t</mml:mi><mml:mo>−</mml:mo><mml:msub><mml:mi>t</mml:mi><mml:mn>0</mml:mn></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:mfrac></mml:mrow></mml:math></disp-formula> Hence, the time series can be expressed as follows:
+<disp-formula id="FD21"><label>(21)</label><mml:math display="block" id="M81"><mml:mi>x</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:msub><mml:mi>A</mml:mi><mml:mi>x</mml:mi></mml:msub><mml:mspace width="thickmathspace"/><mml:mi mathvariant="italic">cos</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>ω</mml:mi><mml:mn>0</mml:mn></mml:msub><mml:mi>t</mml:mi></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mo>+</mml:mo><mml:msub><mml:mi>ε</mml:mi><mml:mi>x</mml:mi></mml:msub><mml:mspace linebreak="newline"/><mml:mi>y</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:msub><mml:mi>A</mml:mi><mml:mi>y</mml:mi></mml:msub><mml:mspace width="thickmathspace"/><mml:mi mathvariant="italic">cos</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>ω</mml:mi><mml:mn>0</mml:mn></mml:msub><mml:mi>t</mml:mi><mml:mo>+</mml:mo><mml:mfrac><mml:mi>a</mml:mi><mml:mrow><mml:mn>1</mml:mn><mml:mo>+</mml:mo><mml:mi>exp</mml:mi><mml:mspace width="thickmathspace"/><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mi>b</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mi>t</mml:mi><mml:mo>−</mml:mo><mml:msub><mml:mi>t</mml:mi><mml:mn>0</mml:mn></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:mfrac></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mo>+</mml:mo><mml:msub><mml:mi>ε</mml:mi><mml:mi>y</mml:mi></mml:msub></mml:math></disp-formula> Throughout, we set <italic>a</italic> =
+2<italic>π</italic>, <italic>b</italic> = −0.01.
+<italic>t</italic><sub>0</sub> = 170, and <inline-formula><mml:math display="inline" id="M82"><mml:mrow><mml:msub><mml:mi>ω</mml:mi><mml:mn>0</mml:mn></mml:msub><mml:mo>=</mml:mo><mml:mn>2</mml:mn><mml:mi>π</mml:mi><mml:mi>f</mml:mi></mml:mrow></mml:math></inline-formula>
+<italic>rad / s</italic> with <italic>f</italic> = 0.05
+<italic><bold>H</bold> z</italic>. The noise terms
+<italic>ε<sub>x</sub></italic> and
+<italic>ε<sub>y</sub></italic> are Gaussian white noise with
+mean 0 and standard deviation 1.</p>
+          <p id="P47">To summarize, the signals are initially in phase, after which the
+amount of phase shift gradually increases. This continues until
+<italic>t</italic> = 170 when the pairs are in anti-phase
+synchronization. Thereafter, the signals gradually return to being in phase.
+The transition between the phase of the signals from 0 to
+2<italic>π</italic> occurs smoothly and monotonically
+increasing.</p>
+        </sec>
+      </sec>
+      <sec id="S16">
+        <label>2.4.</label>
+        <title>Application to Kirby21 dataset</title>
+        <sec id="S17">
+          <label>2.4.1.</label>
+          <title>Image acquisition</title>
+          <p id="P48">We used the Multi-Modal MRI Reproducibility Resource from the F.M.
+Kirby Research Center, commonly referred to as Kirby21. It includes data
+from 21 healthy adults scanned on a 3T Philips Achieva scanner designed to
+achieve 80 mT/m maximum gradient strength with body coil excitation and an
+eight channel phased array SENSitivity Encoding (SENSE) (<xref rid="R43" ref-type="bibr">Pruessmann et al., 1999</xref>) head-coil for reception.
+All subjects completed two scanning sessions on the same day, between which
+they briefly exited the scan room. A T1-weighted (T1w)
+Magnetization-Prepared Rapid Acquisition Gradient Echo (MPRAGE) structural
+run was acquired during both sessions (acquisition time = 6
+<italic>min</italic>, TR/TE/TI = 6.7/3.1/842 <italic>ms</italic>,
+resolution = 1 × 1 × 1.2 <italic>mm</italic><sup>3</sup>,
+SENSE factor = 2, flip angle = 8° ). A multi-slice SENSE-EPI pulse
+sequence (<xref rid="R43" ref-type="bibr">Pruessmann et al., 1999</xref>;
+<xref rid="R49" ref-type="bibr">Stehling et al., 1991</xref>) was used
+to acquire two rs-fMRI runs during each session. Each run consisted of 215
+volumes sampled every 2 s at 3 <italic>mm</italic> isotropic spatial
+resolution (acquisition time: 7 min. TE = 30 ms, SENSE acceleration factor =
+2. flip angle = 75°, 37 axial slices collected sequentially with a 1
+<italic>mm</italic> gap). Subjects were instructed to rest comfortably
+while remaining still. One subject was excluded from further analyses due to
+excessive head motion. For a more detailed description of the acquisition
+protocol see <xref rid="R30" ref-type="bibr">Landman et al.
+(2011)</xref>.</p>
+        </sec>
+        <sec id="S18">
+          <label>2.4.2.</label>
+          <title>Image processing</title>
+          <p id="P49">The data was preprocessed using SPM8 (Wellcome Trust Centre for
+Neuroimaging, London, United Kingdom) (<xref rid="R16" ref-type="bibr">Friston et al., 1994</xref>) and custom MATLAB (The Mathworks, Inc.,
+Natick, MA) scripts. Five initial volumes were discarded to allow for the
+stabilization of magnetization. Slice-time correction was performed using as
+a reference the slice acquired at the middle of the TR. Rigid body
+realignment transformation was performed to adjust for head motion.
+Structural runs were registered to the first functional frame and normalized
+to Montreal Neurological Institute (MNI) space using SPM8’s unified
+segmentation-normalization algorithm (<xref rid="R4" ref-type="bibr">Ashburner and Friston, 2005</xref>). The estimated nonlinear spatial
+transformations were applied to the rs-fMRI data, which were high-pass
+filtered using a cutoff frequency of 0.01 <italic><bold>H</bold> z</italic>.
+The rs-fMRI data was spatially smoothed using a 6 <italic>mm</italic>
+full-width-at-half-maximum (FWHM) Gaussian kernel, which is twice the
+nominal size of the rs-fMRI acquisition voxel.</p>
+          <p id="P50">The Group ICA of fMRI toolbox (GIFT) (<ext-link ext-link-type="uri" xlink:href="https://trendscenter.org/software/gift/">https://trendscenter.org/software/gift/</ext-link>) was used to
+estimate the number of independent components (ICs) present in the data,
+perform data reduction via principal component analysis (PCA) prior to
+independent component analysis (ICA), and perform group independent
+component analysis (GICA) (<xref rid="R9" ref-type="bibr">Calhoun et al.,
+2001</xref>) on the PCA-reduced data. The number of ICs was estimated
+using the minimum description length (MDL) criterion (<xref rid="R32" ref-type="bibr">Li et al., 2007</xref>). Across subjects and sessions,
+56 was the maximum estimated number of ICs and 39 the median. Prior to GICA,
+the image mean was removed from each time point for each session, and three
+steps of PCA were performed. Individual session data were reduced to 112
+principal components (PCs), which were concatenated within subjects in the
+temporal direction and further reduced to 56 PCs. Finally, data were
+concatenated across subjects and reduced to 39 PCs. The dimensions of the
+individual session PCA (112) was chosen by doubling the estimated maximum IC
+number (56), to ensure robust back-reconstruction (<xref rid="R2" ref-type="bibr">Allen et al., 2011</xref>; <xref rid="R3" ref-type="bibr">2012</xref>) of subject- and session-specific spatial
+maps and time courses from the group-level ICs. ICA was repeated on these 39
+group-level principal components 10 times, utilizing the Infomax algorithm
+with random initial conditions (<xref rid="R5" ref-type="bibr">Bell and
+Sejnowski, 1995</xref>). The resulting 390 ICs were clustered across
+iterations using a group average-link hierarchical strategy, and 39
+aggregate spatial maps were defined as the cluster modes. Subject- and
+session-specific spatial maps and time courses were generated from these
+aggregate ICs using the GICA3 algorithm.</p>
+          <p id="P51">The spatial distribution of each IC was compared to a publicly
+available set of 100 unthresholded t-maps of ICs estimated using rs-fMRI
+data collected from 405 healthy participants (<xref rid="R1" ref-type="bibr">Allen et al., 2014</xref>). These maps were pre-classified as
+resting-state networks (RSNs) or noise by a group of experts, and the 50
+components classified as RSNs have been organized into seven functional
+groups, namely visual (Vis), auditory (Aud), somatomotor (SM), default mode
+(DMN), cognitive-control (CC), subcortical (SC) and cerebellar (Cb)
+networks. For each spatial map, we calculated the percent variance explained
+by each of the seven sets of RSNs. The functional assignment of each Kirby
+component was determined by the set of components that explained the most
+variance, and if the top two sets of RSNs explained less than 50% of the
+variance in a Kirby component, the component was labeled as noise. In total
+21 of the 39 components were assigned to a RSN. Subject- and run-specific
+time series from these components served as input for our analyses.</p>
+        </sec>
+        <sec id="S19">
+          <label>2.4.3.</label>
+          <title>Analysis</title>
+          <p id="P52">The Kirby21 dataset consists of 21 ROIs measured over 210 time
+points for 20 subjects in two repeated sessions. The framework described in
+<xref rid="S3" ref-type="sec">Section 2.1</xref> (see <xref rid="F1" ref-type="fig">Fig. 1</xref>), using a band-pass filter with range
+[0.03, 0.07] <italic><bold>H</bold> z</italic>, was applied to the data for
+each session separately to compute the region-wise instantaneous phase for
+each of the 20 subjects. For each pair of subject-specific phase time
+series, we applied the WPS and IPS methods. We also applied CSW for
+comparison purposes. To facilitate comparison between the WPS and CSW
+methods, we used a common window length of 28 time points. We further
+compared the results with a prewhitened Correlation-based Sliding Window
+(PW-CSW) assuming an AR(1) model. This comparison was performed as a
+previous study (<xref rid="R19" ref-type="bibr">Honari et al., 2019</xref>)
+showed that prewhitening the data prior to analysis can lower the variance
+of the estimated TVC and improve brain state estimation.</p>
+          <p id="P53">For each of the two sessions, application of each method gave rise
+to a subject-specific 21 × 21 × 210 array of PS measures.
+Following the approach of Allen and colleagues (<xref rid="R1" ref-type="bibr">Allen et al., 2014</xref>), we applied
+<italic>k</italic>-means clustering to estimate recurring brain states
+across subjects. First, we reorganized the lower triangular portion of each
+subject’s dynamic correlation data into a matrix of dimension 210
+× 210. Here the row dimension corresponds to the number of elements
+in the lower triangular portion of the matrix (i.e., 21(21 − 1)/2),
+and the column dimension corresponds to the number of time points. Then we
+concatenated the data from all subjects into a matrix with row dimensions
+210 and column dimensions (210 × 20 = 4200). Finally, we applied
+<italic>k</italic>-means clustering to the concatenated data, where each
+of the resulting cluster centroids were assumed to represent a recurring
+brain state. The <italic>k</italic>-means clustering was repeated 200 times,
+using random initialization of centroid positions, in order to increase the
+chance of escaping local minima. In this study, we set the number of
+centroids to two, representing two distinct brain states, as determined
+using the Davies-Bouldin Index (DBI) (<xref rid="R14" ref-type="bibr">Davies
+and Bouldin, 1979</xref>). This is consistent with the number of the
+clusters for this dataset used in previous studies by <xref rid="R11" ref-type="bibr">Choe et al. (2017)</xref> and <xref rid="R19" ref-type="bibr">Honari et al. (2019)</xref>. In order to validate the
+reproducibility of the brain states estimated using each of the phase
+synchronization measures, the results obtained from each of the two sessions
+were further compared and contrasted.</p>
+        </sec>
+      </sec>
+      <sec id="S20">
+        <label>2.5.</label>
+        <title>Application to the Human Connectome Project (HCP)</title>
+        <p id="P54">To validate the results obtained using the Kirby21 dataset, we applied
+the proposed methodology to a second rs-fMRI dataset from the Human Connectome
+Project (HCP). This data set has a different repetition time and scan length
+than the Kirby21 data, thus providing valuable insight into the performance of
+our method in this alternate setting. We used 50 subjects from the Human
+Connectome Project 500 Parcellation+Timeseries+Netmats (HCP500-PTN) release
+(<xref rid="R53" ref-type="bibr">Van Essen et al., 2013</xref>) to evaluate
+the performance of the PS measures. For space reasons, the image acquisition,
+image processing and analysis are discussed in <xref rid="SD1" ref-type="supplementary-material">Section S1.4</xref> of the <xref rid="SD1" ref-type="supplementary-material">Supplementary Materials</xref>.</p>
+      </sec>
+    </sec>
+    <sec id="S21">
+      <label>3.</label>
+      <title>Results</title>
+      <sec id="S22">
+        <label>3.1.</label>
+        <title>Simulation 1</title>
+        <p id="P55"><xref rid="F2" ref-type="fig">Fig. 2</xref> shows a single realization
+of Simulation 1 for illustration purposes. Panel (a) shows a randomly generated
+pair of time series, and (b) the extracted instantaneous phases between the two
+time series at each time point. Since this is null data, the phase difference
+should vary uniformly in the interval [0, 2<italic>π</italic>] as
+illustrated in Panels (c) and (d).</p>
+        <p id="P56"><xref rid="F3" ref-type="fig">Fig. 3</xref> shows a summary of the
+results for 1000 surrogate data sets with the analysis performed on the data
+prior to band-pass filtering. The mean and 95% confidence interval for each
+measure are shown at each time point. Results for the WPS measures (Panels
+(a)–(c)) are shown for each window length (30, 60, and 120 time points).
+The results illustrate that all measures of PS are roughly constant across
+time.</p>
+        <p id="P57">Note that measures such as PLV and phase coherence take values between 0
+and 1. The mean value using phase coherence is roughly 0.35 (Panel (d)), which
+is consistent with the results obtained using PLV for a window size of 60 (Panel
+(a)). As the window size decrease, the value of PLV tends to be lower. In
+contrast, circular-circular correlation, toroidal-circular correlation, and CRP
+all take values between −1 and 1 The mean of the CRP is 0 at each time
+point (Panel (e)), which is consistent with the results of the WPS obtained
+using circular-circular and toroidal-circular correlation (Panels (b) and
+(c)).</p>
+        <p id="P58">It is important to note that phase coherence and CRP preserve the
+temporal resolution of the phase difference as they are not estimated using a
+sliding window. However, this appears to come at the cost of increased
+variability as indicated by the relatively wider 95% confidence intervals.</p>
+        <p id="P59">The effect of the chosen window length on various WPS measures shows
+that for this simulation as the window size increases, the estimates converge
+towards their true values (i.e., 0 for circular-circular correlation and
+toroidal-circular correlation). The average bias and variance of each method is
+reported in <xref rid="SD1" ref-type="supplementary-material">Table
+S1</xref>.</p>
+        <p id="P60"><xref rid="F4" ref-type="fig">Fig. 4</xref> shows the comparison between
+various measures of PS used on the surrogate data after band-pass filtering. The
+results indicate that synchronization measures remain roughly constant across
+time. However, the WPS measures (Panels (a)–(c)) show a noticeable
+difference compared to the results without band-pass filtering. Significantly,
+the results of the WPS measures show inflated values, indicating a higher degree
+of phase synchronization than would be expected in a null setting. PLV,
+circular-circular correlation, and toroidal-circular correlation take values
+around 0.84, 0.53, and 0.62, respectively. These is driven by the fact that both
+signals have a center frequency of 0.05 <italic><bold>H</bold> z</italic> after
+applying band-pass filtering, leading to a situation where the signals are
+constrained to remain phase locked throughout the time course. The IPS measures
+are not similarly affected. The mean value using phase coherence is again
+roughly 0.35 (Panel (d)), and the mean of the CRP is 0 at each time point (Panel
+(e)). Both values are roughly equivalent to those seen before band-pass
+filtering. The average bias and variance of each method is reported in <xref rid="SD1" ref-type="supplementary-material">Table S2</xref>.</p>
+        <p id="P61"><xref rid="SD1" ref-type="supplementary-material">Figure S1</xref> in
+the <xref rid="SD1" ref-type="supplementary-material">Supplementary
+Materials</xref> show the results of this simulation using the BEMD-based PS
+framework. The results are similar to those obtained using band-pass filtering,
+with the exception that the variance of the estimates are slightly higher; see
+<xref rid="SD1" ref-type="supplementary-material">Table S3</xref>. This can
+be explained by the well-known sensitivity of the EMD-based approach to noise
+(<xref rid="R23" ref-type="bibr">Imaouchen et al., 2017</xref>; <xref rid="R55" ref-type="bibr">Wu and Huang, 2009</xref>; <xref rid="R59" ref-type="bibr">Zheng et al., 2014</xref>), which in turn leads to a higher
+variance of the phase synchronization measures.</p>
+      </sec>
+      <sec id="S23">
+        <label>3.2.</label>
+        <title>Simulation 2</title>
+        <p id="P62"><xref rid="F5" ref-type="fig">Figs. 5</xref> and <xref rid="F6" ref-type="fig">6</xref> illustrate the results of Simulation 2 performed on
+the data before and after band-pass filtering, respectively. Recall that in this
+simulation the two signals are designed to have the same phase up to time
+<italic>t</italic> = 170, after which a phase shift is introduced that
+varies linearly from 0 to 4<italic>π</italic> (see <xref rid="F5" ref-type="fig">Fig. 5a</xref>). Thus, the signals should gradually move in
+and out of phase during the second half of the time course. Here the signals
+will be in-phase when the phase difference is 2<italic>π</italic> and
+4<italic>π</italic>, and in anti-phase when the difference is
+<italic>π</italic> and 3<italic>π</italic>.</p>
+        <p id="P63">The costs of not band-pass filtering the data are apparent in <xref rid="F5" ref-type="fig">Fig. 5</xref>, as all five of the methods return
+results consistent with those seen in the null setting. None of the methods does
+a good job of either detecting the fact that the signals are in phase in the
+first half of the time course, or that they gradually move in and out of phase
+in the second half. This can be explained by the fact that the signal is
+contaminated with noise from all frequencies, which in turn corrupts the
+estimated instantaneous phase.</p>
+        <p id="P64">Contrast this with the results after band-pass filtering shown in <xref rid="F6" ref-type="fig">Fig. 6</xref>. Here all of the measures of PS
+correctly predict a value close to 1 in the first half of the signal, indicating
+that all methods are picking up on the fact that the signals are in phase. In
+Panels (b)–(d), which represents the WPS measures, the phase shift
+occurring after <italic>t</italic> = 170 leads to a decrease in phase
+synchronization from this time point on. The toroidal-circular correlation
+appears to perform best, showing more sensitivity in detecting the episodes of
+phase synchronization compared to PLV and circular-circular correlation. It can
+also be observed that the circular-circular correlation is more susceptible and
+sensitive to the noise than the other measures (see the increased wiggles in the
+estimates values). Interestingly, the PLV results appear to be more sensitive to
+the window length used than the other two metrics. However, it is important to
+note that none of the WPS methods are able to detect that the signals are in
+phase when the phase shift equals 2<italic>π</italic> and
+4<italic>π</italic>.</p>
+        <p id="P65">In contrast, both the phase coherence and CRP better captures the PS
+variation than the WPS measures. This is partly due to the fact that using a
+sliding window deteriorates the resolution of the PS depending on the window
+size. In particular, note how well CRP detects that the signal is in phase at
+points when the phase shift equals 2<italic>π</italic> and
+4<italic>π</italic>. This is in contrast to phase coherence that
+erroneously assumes that signals are also in phase when the shifts are equal to
+<italic>π</italic> and 3<italic>π</italic>. The latter is due
+to the fact that phase coherence cannot differentiate between when the signals
+are in phase from when they are in anti-phase. The benefits of band-pass
+filtering can be clearly seen in <xref rid="SD1" ref-type="supplementary-material">Tables S1</xref> and <xref rid="SD1" ref-type="supplementary-material">S2</xref>, which show a reduction in bias
+when the data is properly filtered.</p>
+        <p id="P66"><xref rid="SD1" ref-type="supplementary-material">Figure S2</xref> and
+<xref rid="SD1" ref-type="supplementary-material">Table S3</xref> in the
+<xref rid="SD1" ref-type="supplementary-material">Supplementary
+Materials</xref> show the results of this simulation using the BEMD-based PS
+framework. Again, the results are consistent with those seen using band-pass
+filtering, though the variance of the estimates are somewhat higher.</p>
+      </sec>
+      <sec id="S24">
+        <label>3.3.</label>
+        <title>Simulation 3</title>
+        <p id="P67"><xref rid="F7" ref-type="fig">Figs. 7</xref> and <xref rid="F8" ref-type="fig">8</xref> illustrate the results of Simulation 3 performed on
+data before and after band-pass filtering. As illustrated in <xref rid="F7" ref-type="fig">Fig. 7a</xref>, the two signals are designed to initially be
+in phase, after which they gradually go out of phase. At time <italic>t</italic>
+= 170 when the phase difference is 2<italic>π</italic>, the two signals
+will be in anti-phase, before returning to being in phase at the end of the time
+course.</p>
+        <p id="P68">The costs of not band-pass filtering the data are again apparent in
+<xref rid="F7" ref-type="fig">Fig. 7</xref>, as all of the methods show
+results consistent with the null setting. This is in contrast to the results
+obtained after band-pass filtering shown in <xref rid="F8" ref-type="fig">Fig.
+8</xref>. Here all measures of phase synchronization pick up on the fact
+that the signals start out in phase, gradually goes out of phase (culminating at
+time <italic>t</italic> = 170), before gradually return to being in phase. <xref rid="SD1" ref-type="supplementary-material">Tables S1</xref> and <xref rid="SD1" ref-type="supplementary-material">S2</xref> show a reduction in
+bias when the data is properly filtered, except for PLV.</p>
+        <p id="P69">In Panels (b)–(d), which represents the WPS measures, we see that
+using a longer window length tends to capture phase dynamics better than using a
+smaller window length. Again, the toroidal-circular correlation performs best,
+showing increased sensitivity in detecting the episodes of phase synchronization
+compared to circular-circular correlation and PLV. Increased window lengths
+provide better results. Both phase coherence and CRP capture the manner in which
+phase synchonization varies more clearly than the WPS measures. In particular,
+CRP provides the most reliable measures in this simulation and clearly detects
+both when the signals are in and out of phase. In comparison, phase coherence
+cannot separate when the signals are in phase and anti-phase, illustrating one
+of the shortcomings of the approach.</p>
+        <p id="P70"><xref rid="SD1" ref-type="supplementary-material">Figure S3</xref> and
+<xref rid="SD1" ref-type="supplementary-material">Table S3</xref> in the
+<xref rid="SD1" ref-type="supplementary-material">Supplementary
+Materials</xref> shows the results of this simulation using the BEMD-based
+PS framework. Again, the results are consistent with those seen using band-pass
+filtering, though the variance of the estimates are somewhat higher.</p>
+      </sec>
+      <sec id="S25">
+        <label>3.4.</label>
+        <title>Analysis of rs-fMRI data</title>
+        <p id="P71">After applying each method to the Kirby21 rs-fMRI data, two brain states
+were extracted using k-means clustering. <xref rid="F9" ref-type="fig">Fig.
+9</xref> contrasts the estimated brain states obtained using the different
+methods for assessing phase synchonization, as well as with correlation-based
+sliding window analysis (both with and without pre-whitening). Brain states are
+organized into seven functional groups as described earlier in <xref rid="S18" ref-type="sec">Section 2.4.2</xref>.</p>
+        <p id="P72">Beginning with the WPS methods, PLV (top row), circular-circular
+correlation (second row) and toroidal-circular correlation (third row) show
+roughly similar results with regards to the relationship between functional
+groups in each brain state. However, the PLV derived brain states in general
+take higher values than those obtained using toroidal-circular correlations,
+which in turn take higher values than those obtained using circular-circular
+correlations. These results are largely consistent with those seen in the
+simulation studies, and the fact that toroidal-circular and circular-circular
+correlations take a wider range of values (compared to PLV which is constrained
+between 0 and 1).</p>
+        <p id="P73">Turning to the IPS methods, the brain states obtained using phase
+coherence (fourth row) tends to provide higher values in general compared to CRP
+(fifth row). This is not necessarily surprising as the range of potential values
+are different (phase coherence takes values between 0 and 1, while CRP takes
+values between −1 and 1). In addition, as seen in the simulation studies
+phase coherence has problems differentiating between when signals are in phase
+versus when they are in anti-phase. Together, this provide higher values in the
+estimated brain states. For example, State 2 shows a hyper-connected state where
+all PS measures are close to 1.</p>
+        <p id="P74">Interestingly, the results obtained using sliding windows without any
+prewhitening (sixth row) is very similar to those obtained using the CRP. Across
+both sessions and estimation methods, State 2 was characterized by stronger
+correlations (both positive and negative) relative to State 1. Moderate to
+strong negative correlations between sensory systems (auditory, somatomotor, and
+visual) components were present in State 2 but were reduced in State 1.
+Similarly, negative correlations within the DMN (grey) components were present
+in State 2 and were reduced in State 1. This similarity between methods
+indicates that CRP may be finding similar brains states as CSW, but using more
+high-resolution data as it does not use a predefined window. These findings are
+largely consistent with those of <xref rid="R40" ref-type="bibr">Pedersen et al.
+(2018)</xref> who found that IPS and CSW conveyed comparable information of
+time-resolved fMRI connectivity, though IPS provided finer temporal resolution.
+The results obtained using sliding windows without prewhitening (seventh row)
+show lower estimated values than the results without prewhitening, which is
+consistent with results found in <xref rid="R19" ref-type="bibr">Honari et al.
+(2019)</xref>.</p>
+        <p id="P75">Finally, we found that both States 1 and 2 were highly reliable across
+sessions regardless of estimation method. The results for CRP and the sliding
+window approaches (described above) appear more interpretable than those
+obtained using the other methods. In particular the results for PLV and PC,
+which takes values between 0 and 1 appear to show extremely hyperconnected
+states, perhaps reflective of the lower range of values that these measures
+return.</p>
+        <p id="P76"><xref rid="SD1" ref-type="supplementary-material">Figure S8</xref> in
+the <xref rid="SD1" ref-type="supplementary-material">Supplementary
+Materials</xref> shows the results for the analysis of the HCP dataset. Here
+after applying each method to the rs-fMRI data, four brain states were extracted
+using <italic>k</italic>-means clustering. Brain states are organized into the
+same seven functional groups as before. The results show a great deal of
+similarity between the HCP and Kirby21 results with respect to the properties of
+the estimated brain states obtained using each PS measure. Again, PLV derived
+brain states (top row) take higher values than those obtained using
+toroidal-circular correlations (third row), which in turn take higher values
+than those obtained using circular-circular correlations (second row).
+Similarly, the brain states obtained using phase coherence (fourth row) tend to
+provide higher values compared to CRP (fifth row). Finally, the results obtained
+using sliding windows without any prewhitening (sixth row) is very similar to
+those obtained using the CRP.</p>
+        <p id="P77">Focusing on the CRP results, States 1, 2 and 4 all show moderate to high
+correlations among signal components representing sensory systems (i.e., visual,
+somatomotor, and auditory components). In States 1 and 4, a set of components in
+the cerebellum showed negative correlations with sensory components. The HCP
+states were largely similar to those obtained from the Kirby21 data, though it
+is important to note that the number and placement of the components in each HCP
+RSN do not map directly onto one another.</p>
+      </sec>
+    </sec>
+    <sec id="S26">
+      <label>4.</label>
+      <title>Discussion</title>
+      <p id="P78">There is growing interest in measuring time-varying functional connectivity
+between time courses from different brain regions using rs-fMRI data. One such
+approach is to measure their phase synchronization across time. In this paper, we
+evaluate a number of methods for measuring PS and contrast them with one another. In
+discussing methods, we differentiate between two classes of methods: windowed phase
+synchronization and instantaneous phase synchronization.</p>
+      <p id="P79">WPS methods combine a static PS measure between two different signals with a
+sliding window to obtain a time-varying measure of PS. In principal, any metric that
+allows one to calculate an omnibus measure of PS can be used within this framework.
+Since phase information is circular data, the use of circular-circular correlation
+and toroidal-circular correlation were deemed natural candidate methods to use as a
+measure of PS. To the best of our knowledge, neither approach has previously been
+used to study PS in fMRI. The PLV in WPS method, has in contrast previously been
+used to assess episodes of elevated gastric-BOLD synchronization (<xref rid="R44" ref-type="bibr">Rebollo et al., 2018</xref>).</p>
+      <p id="P80">IPS methods directly use the phase difference time series obtained from
+applying the Hilbert transform, allowing one to compute an instantaneous measure of
+PS. This has the benefit of providing a higher temporal resolution, as there is no
+need to choose an arbitrary window size as for the WPS methods. However, there
+remains a related somewhat arbitrary choice of filter bandwidth to narrow-band the
+signals prior to analysis. Here we focused on two measures of IPS, phase coherence,
+which has already found wide usage in the field, and CRP, a newly developed
+method.</p>
+      <p id="P81">The three simulations illustrate several important points regarding the
+performance of these methods. Simulation 1 shows that the WPS methods are highly
+affected by band-pass filtering. To illustrate, <xref rid="F4" ref-type="fig">Fig.
+4</xref> shows that these methods tend to provide estimates that indicate that
+signals are consistently in phase, even when the phases are designed to randomly
+vary. These results hold because the two signals being compared have a center
+frequency of 0.05 <italic>Hz</italic> after applying band-pass filter with cutoff
+frequencies [0.03, 0.07] <italic>Hz.</italic> This leads to a situation where the
+signals are constrained to remain relatively phase locked and thus have constant PS
+throughout the time course. Importantly, the IPS results appear to perform similarly
+on the data both before and after band-pass filtering (see <xref rid="F3" ref-type="fig">Figs. 3</xref> and <xref rid="F4" ref-type="fig">4</xref>), and
+thus appear to be less sensitive to filtering in the null setting.</p>
+      <p id="P82">While at first glance, the results of Simulation 1 appear to indicate that
+band-pass filtering is not beneficial, and may in fact be detrimental, Simulations 2
+and 3 put this notion to rest. Here, the results performed on the non band-pass
+filtered data indicate that none of the methods are able to pick up changes in real
+PS present in the data, and instead appear to erroneously indicate that the data
+behave in manner consistent with null data. This is largely corrected after
+band-pass filtering the data (see <xref rid="F6" ref-type="fig">Figs. 6</xref> and
+<xref rid="F8" ref-type="fig">8</xref>). This result holds both for WPS and IPS
+methods, and indicates that band-pass filtering is a necessary step in the analysis
+of PS.</p>
+      <p id="P83">This result corresponds to theoretical findings (Bedrosian’s theorem)
+that suggest using band-pass filters in the study of PS is critical for the signal
+to have physically meaningful demodulation into its envelope and instantaneous phase
+components. However, it is important to note that band-pass filtering comes at the
+cost of introducing further autocorrelation into the phase of the signal. In
+addition, band-pass filtering increases the risk of spurious detection of phase
+synchronization (<xref rid="R45" ref-type="bibr">Rosenblum et al., 2000</xref>).
+While a band-pass filter denoises the signal, it can also lead to an increase in the
+degree of synchronization by narrowing the band width; see <xref rid="F4" ref-type="fig">Fig. 4</xref>.</p>
+      <p id="P84">The results of Simulations 2 and 3 together show that all methods to a
+certain extent were able to detect changes in PS. Focusing on the WPS measures,
+toroidal-circular correlation performed best, showing increased sensitivity to
+detecting episodes of PS compared to PLV and circular-circular correlation.
+Circular-circular correlation was the most susceptible and sensitive to noise. A
+previous study comparing PLV and circular-circular correlation (<xref rid="R38" ref-type="bibr">Pauen and Ivanova, 2013</xref>) suggested that circular-circular
+correlation is appropriate for estimating the phase coupling reliably and not
+restricted to bivariate analyses. It also indicated that using it as a measure of
+phase coupling could show slightly lower estimates than its counterpart. This result
+is consistent with what we found in our simulations.</p>
+      <p id="P85">When assessing WPS measures, we also investigated a variety of window
+lengths. The simulations indicated that shorter windows yielded a higher estimate of
+phase synchronization and increased risk of detecting spurious PS. However, longer
+windows made it harder to detect subtle changes. In general, longer window lengths
+tend to provide more accurate estimates of PS as they lead to a decrease in the
+variation of the estimates. However, this may be only the case if the pairwise phase
+coupling between the underlying signals is of semi-stationary nature with no abrupt
+changes.</p>
+      <p id="P86">It is important to note that if overlapping windows are used, an
+autocorrelation (beyond that already present due to the smoothness of the BOLD
+signal) is induced in the estimated WPS values, making changes in connectivity
+appear artificially smooth. Overlapping windows do provide a finer temporal
+resolution than non-overlapping windows, as the latter is a subset of the former.
+However, the exact gain in resolution is hard to quantify as it depends heavily on
+the autocorrelation between windows. One of the goals of IPS is to gain a
+time-resolved resolution. However, it is worth noting that the band-pass acts as an
+implicit window due to Parseval’s therorem.</p>
+      <p id="P87">The simulations clearly point to the benefits of band-pass filtering when
+computing PS. An alternative approach is to instead use empirical mode decomposition
+to extract frequencies of interest. This approach has been widely used to analyze
+EEG data, but also found recent use in application to fMRI data (<xref rid="R37" ref-type="bibr">Niazy et al., 2011</xref>; <xref rid="R57" ref-type="bibr">Yuen
+et al., 2019</xref>; <xref rid="R60" ref-type="bibr">Zhou et al., 2020</xref>).
+In the <xref rid="SD1" ref-type="supplementary-material">Supplemental
+Materials</xref> the results of the simulations described above were contrasted
+with results obtained using an EMD-based PS framework. Both approaches yielded
+similar results for the different PS measures. However, the variance of the
+estimates obtained using EMD were somewhat higher for the same level of noise
+compared to band-pass filtering.</p>
+      <p id="P88">IPS measures consistently outperformed WPS measures in the simulations, and
+were able to better pick up changes in PS across time. While phase coherence offers
+more accurate and sensitive results than the WPS methods, it still discards
+information about the direction of the relationship. In contrast, CRP was not only
+able to detect phase synchronization but also preserve the directional information
+contained in the relative phase difference of the signals. However, one should note
+that the variation present in the IPS methods appears larger than WPS methods as
+evidenced by the wider confidence bounds.</p>
+      <p id="P89">It is interesting to consider the range of values each method returns. PLV
+and phase coherence take values between 0 and 1. In contrast, circular-circular
+correlation, toroidal-circular correlation, and CRP all take values between
+−1 and 1. This has to be taken into consideration when interpreting the
+results of each method. For example, in Simulation 1 where we analyzed null data,
+the latter methods returned values that lay symmetrically around 0. This makes it
+easier to interpret null results compared to PLV and phase coherence whose null
+values were around 0.35. Understanding what null values look like is a critical
+component towards understanding the performance of a method, as it is otherwise
+difficult to differentiate signal from noise.</p>
+      <p id="P90">Application to real rs-fMRI data showed results that were consistent with
+the simulations. The WPS methods showed roughly equivalent results with respect to
+the relationship between functional groups in each estimated brain state. As
+described above, the shorter range of values for PLV and phase coherence made it
+more difficult to pick up subtle differences between brain states, and they both
+returned a hyper-connected brain state where all PS measures are close to 1.
+Interestingly, the brain states estimated using CRP closely resembled those
+estimated using sliding window correlations. Thus, it appears that CRP is finding
+similar brains states but using more high-resolution data as it does not require the
+use of a sliding window. Finally, there was a large degree of similarity between
+states estimated from the Kirby21 and HCP datasets, even though they differ in
+important aspects including repetition time, scan length, and sample size.</p>
+      <p id="P91">The focus of this work is on showing the potential of the PS framework and
+highlighting the necessity of using appropriate PS measures to estimate time-varying
+functional connectivity. However, we believe the approach can be extended to allow
+for the analysis of directed connectivity between regions of interest. For example,
+this could be studied using instantaneous phase time series from fMRI data in
+conjunction with transfer entropy (phase-based transfer entropy) (<xref rid="R35" ref-type="bibr">Lobier et al., 2014</xref>).</p>
+      <p id="P92">In summary, we recommend the use of CRP as a measure of PS as it is able to
+separate when the signals are in phase from when they are in anti-phase. In
+addition, it returns a range of values similar to correlation, which makes it
+possible to interpret results similarly. Of all the methods tested, it showed the
+greatest concurrence with CSW, with the benefit of not having to predefine a window
+length.</p>
+    </sec>
+    <sec sec-type="supplementary-material" id="SM1">
+      <title>Supplementary Material</title>
+      <supplementary-material content-type="local-data" id="SD1">
+        <label>1</label>
+        <media xlink:href="NIHMS1677103-supplement-1.pdf" orientation="portrait" id="d40e5003" position="anchor"/>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ack id="S27">
+      <title>Acknowledgments</title>
+      <p id="P93">The work presented in this paper was supported in part by <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.13039/100000098">NIH</ext-link> grants R01 EB016061 and R01 EB026549 from the
+<ext-link ext-link-type="uri" xlink:href="https://doi.org/10.13039/100000070">National Institute of Biomedical Imaging and
+Bioengineering</ext-link> and R21 NS104644 from the National Institute of
+Neurological Disorders and Stroke.</p>
+    </ack>
+    <fn-group>
+      <fn id="FN2">
+        <p id="P94">Supplementary material</p>
+        <p id="P95"><xref rid="SD1" ref-type="supplementary-material">Supplementary
+material</xref> associated with this article can be found, in the online
+version, at <ext-link ext-link-type="doi" xlink:href="10.1016/j.neuroimage.2020.117704">10.1016/j.neuroimage.2020.117704</ext-link></p>
+      </fn>
+    </fn-group>
+    <ref-list>
+      <title>References</title>
+      <ref id="R1">
+        <mixed-citation publication-type="journal"><name><surname>Allen</surname><given-names>EA</given-names></name>, <name><surname>Damaraju</surname><given-names>E</given-names></name>, <name><surname>Plis</surname><given-names>SM</given-names></name>, <name><surname>Erhardt</surname><given-names>EB</given-names></name>, <name><surname>Eichele</surname><given-names>T</given-names></name>, <name><surname>Calhoun</surname><given-names>VD</given-names></name>, <year>2014</year>. <article-title>Tracking whole-brain connectivity
+dynamics in the resting state</article-title>. <source>Cereb.
+Cortex</source>
+<volume>24</volume> (<issue>3</issue>),
+<fpage>663</fpage>–<lpage>676</lpage>.<pub-id pub-id-type="pmid">23146964</pub-id></mixed-citation>
+      </ref>
+      <ref id="R2">
+        <mixed-citation publication-type="journal"><name><surname>Allen</surname><given-names>EA</given-names></name>, <name><surname>Erhardt</surname><given-names>EB</given-names></name>, <name><surname>Damaraju</surname><given-names>E</given-names></name>, <name><surname>Gruner</surname><given-names>W</given-names></name>, <name><surname>Segall</surname><given-names>JM</given-names></name>, <name><surname>Silva</surname><given-names>RF</given-names></name>, <name><surname>Havlicek</surname><given-names>M</given-names></name>, <name><surname>Rachakonda</surname><given-names>S</given-names></name>, <name><surname>Fries</surname><given-names>J</given-names></name>, <name><surname>Kalyanam</surname><given-names>R</given-names></name>, <etal/>, <year>2011</year>. <article-title>A baseline for the
+multivariate comparison of resting-state networks</article-title>.
+<source>Front. Syst. Neurosci</source>
+<volume>5</volume>.</mixed-citation>
+      </ref>
+      <ref id="R3">
+        <mixed-citation publication-type="journal"><name><surname>Allen</surname><given-names>EA</given-names></name>, <name><surname>Erhardt</surname><given-names>EB</given-names></name>, <name><surname>Wei</surname><given-names>Y</given-names></name>, <name><surname>Eichele</surname><given-names>T</given-names></name>, <name><surname>Calhoun</surname><given-names>VD</given-names></name>, <year>2012</year>. <article-title>Capturing inter-subject variability
+with group independent component analysis of fMRI data: a simulation
+study</article-title>. <source>NeuroImage</source>
+<volume>59</volume> (<issue>4</issue>),
+<fpage>4141</fpage>–<lpage>4159</lpage>.<pub-id pub-id-type="pmid">22019879</pub-id></mixed-citation>
+      </ref>
+      <ref id="R4">
+        <mixed-citation publication-type="journal"><name><surname>Ashburner</surname><given-names>J</given-names></name>, <name><surname>Friston</surname><given-names>KJ</given-names></name>, <year>2005</year>. <article-title>Unified segmentation</article-title>.
+<source>Neuroimage</source>
+<volume>26</volume> (<issue>3</issue>),
+<fpage>839</fpage>–<lpage>851</lpage>.<pub-id pub-id-type="pmid">15955494</pub-id></mixed-citation>
+      </ref>
+      <ref id="R5">
+        <mixed-citation publication-type="journal"><name><surname>Bell</surname><given-names>AJ</given-names></name>, <name><surname>Sejnowski</surname><given-names>TJ</given-names></name>, <year>1995</year>. <article-title>An information-maximization approach
+to blind separation and blind deconvolution</article-title>. <source>Neural
+Comput</source>. <volume>7</volume> (<issue>6</issue>),
+<fpage>1129</fpage>–<lpage>1159</lpage>.<pub-id pub-id-type="pmid">7584893</pub-id></mixed-citation>
+      </ref>
+      <ref id="R6">
+        <mixed-citation publication-type="book"><name><surname>Bishop</surname><given-names>CM</given-names></name>, <year>2006</year>. <source>Pattern recognition and machine
+learning</source>.
+<publisher-name>springer</publisher-name>.</mixed-citation>
+      </ref>
+      <ref id="R7">
+        <mixed-citation publication-type="book"><name><surname>Boccaletti</surname><given-names>S</given-names></name>, <name><surname>Pisarchik</surname><given-names>AN</given-names></name>, <name><surname>Del Genio</surname><given-names>CI</given-names></name>, <name><surname>Amann</surname><given-names>A</given-names></name>, <year>2018</year>. <source>Synchronization: From Coupled Systems to
+Complex Networks</source>. <publisher-name>Cambridge University
+Press</publisher-name>.</mixed-citation>
+      </ref>
+      <ref id="R8">
+        <mixed-citation publication-type="journal"><name><surname>Bolton</surname><given-names>TAW</given-names></name>, <name><surname>Tarun</surname><given-names>A</given-names></name>, <name><surname>Sterpenich</surname><given-names>V</given-names></name>, <name><surname>Schwartz</surname><given-names>S</given-names></name>, <name><surname>Van De Ville</surname><given-names>D</given-names></name>, <year>2018</year>. <article-title>Interactions between large-scale
+functional brain networks are captured by sparse coupled
+HMMs</article-title>. <source>IEEE Trans. Med. Imaging</source>
+<volume>37</volume> (<issue>1</issue>),
+<fpage>230</fpage>–<lpage>240</lpage>.<pub-id pub-id-type="pmid">28945590</pub-id></mixed-citation>
+      </ref>
+      <ref id="R9">
+        <mixed-citation publication-type="journal"><name><surname>Calhoun</surname><given-names>VD</given-names></name>, <name><surname>Adali</surname><given-names>T</given-names></name>, <name><surname>Pearlson</surname><given-names>GD</given-names></name>, <name><surname>Pekar</surname><given-names>JJ</given-names></name>, <year>2001</year>. <article-title>A method for making group inferences
+from functional MRI data using independent component
+analysis</article-title>. <source>Hum. Brain Mapp</source>
+<volume>14</volume> (<issue>3</issue>),
+<fpage>140</fpage>–<lpage>151</lpage>.<pub-id pub-id-type="pmid">11559959</pub-id></mixed-citation>
+      </ref>
+      <ref id="R10">
+        <mixed-citation publication-type="journal"><name><surname>Chang</surname><given-names>C</given-names></name>, <name><surname>Glover</surname><given-names>GH</given-names></name>, <year>2010</year>. <article-title>Time–frequency dynamics of
+resting-state brain connectivity measured with fMRI</article-title>.
+<source>Neuroimage</source>
+<volume>50</volume> (<issue>1</issue>),
+<fpage>81</fpage>–<lpage>98</lpage>.<pub-id pub-id-type="pmid">20006716</pub-id></mixed-citation>
+      </ref>
+      <ref id="R11">
+        <mixed-citation publication-type="journal"><name><surname>Choe</surname><given-names>AS</given-names></name>, <name><surname>Nebel</surname><given-names>MB</given-names></name>, <name><surname>Barber</surname><given-names>AD</given-names></name>, <name><surname>Cohen</surname><given-names>JR</given-names></name>, <name><surname>Xu</surname><given-names>Y</given-names></name>, <name><surname>Pekar</surname><given-names>JJ</given-names></name>, <name><surname>Caffo</surname><given-names>B</given-names></name>, <name><surname>Lindquist</surname><given-names>MA</given-names></name>, <year>2017</year>. <article-title>Comparing test-retest reliability of
+dynamic functional connectivity methods</article-title>.
+<source>Neuroimage</source>
+<volume>158</volume>,
+<fpage>155</fpage>–<lpage>175</lpage>.<pub-id pub-id-type="pmid">28687517</pub-id></mixed-citation>
+      </ref>
+      <ref id="R12">
+        <mixed-citation publication-type="journal"><name><surname>Cribben</surname><given-names>I</given-names></name>, <name><surname>Haraldsdottir</surname><given-names>R</given-names></name>, <name><surname>Atlas</surname><given-names>LY</given-names></name>, <name><surname>Wager</surname><given-names>TD</given-names></name>, <name><surname>Lindquist</surname><given-names>MA</given-names></name>, <year>2012</year>. <article-title>Dynamic connectivity regression:
+determining state-related changes in brain connectivity</article-title>.
+<source>Neuroimage</source>
+<volume>61</volume> (<issue>4</issue>),
+<fpage>907</fpage>–<lpage>920</lpage>.<pub-id pub-id-type="pmid">22484408</pub-id></mixed-citation>
+      </ref>
+      <ref id="R13">
+        <mixed-citation publication-type="journal"><name><surname>Cribben</surname><given-names>I</given-names></name>, <name><surname>Wager</surname><given-names>TD</given-names></name>, <name><surname>Lindquist</surname><given-names>MA</given-names></name>, <year>2013</year>. <article-title>Detecting functional connectivity
+change points for single-subject fMRI data</article-title>. <source>Front.
+Comput. Neurosci</source>
+<volume>7</volume>.</mixed-citation>
+      </ref>
+      <ref id="R14">
+        <mixed-citation publication-type="journal"><name><surname>Davies</surname><given-names>DL</given-names></name>, <name><surname>Bouldin</surname><given-names>DW</given-names></name>, <year>1979</year>. <article-title>A cluster separation
+measure</article-title>. <source>IEEE Trans. Pattern Anal.
+Mach.Intell</source> (<volume>2</volume>)
+<fpage>224</fpage>–<lpage>227</lpage>.</mixed-citation>
+      </ref>
+      <ref id="R15">
+        <mixed-citation publication-type="confproc"><name><surname>Eavani</surname><given-names>H</given-names></name>, <name><surname>Satterthwaite</surname><given-names>TD</given-names></name>, <name><surname>Gur</surname><given-names>RE</given-names></name>, <name><surname>Gur</surname><given-names>RC</given-names></name>, <name><surname>Davatzikos</surname><given-names>C</given-names></name>, <year>2013</year>. <source>Unsupervised learning of functional network
+dynamics in resting state fMRI</source>. In: <conf-name>International
+Conference on Information Processing in Medical Imaging</conf-name>.
+<publisher-name>Springer</publisher-name>, pp.
+<fpage>426</fpage>–<lpage>437</lpage>.</mixed-citation>
+      </ref>
+      <ref id="R16">
+        <mixed-citation publication-type="journal"><name><surname>Friston</surname><given-names>KJ</given-names></name>, <name><surname>Holmes</surname><given-names>AP</given-names></name>, <name><surname>Worsley</surname><given-names>KJ</given-names></name>, <name><surname>Poline</surname><given-names>JP</given-names></name>, <name><surname>Frith</surname><given-names>CD</given-names></name>, <name><surname>Frackowiak</surname><given-names>RSJ</given-names></name>, <etal/>, <year>1994</year>. <article-title>Statistical parametric maps
+in functional imaging: a general linear approach</article-title>.
+<source>Hum. Brain Mapp</source>
+<volume>2</volume> (<issue>4</issue>),
+<fpage>189</fpage>–<lpage>210</lpage>.</mixed-citation>
+      </ref>
+      <ref id="R17">
+        <mixed-citation publication-type="journal"><name><surname>Glerean</surname><given-names>E</given-names></name>, <name><surname>Salmi</surname><given-names>J</given-names></name>, <name><surname>Lahnakoski</surname><given-names>JM</given-names></name>, <name><surname>Jääskeläinen</surname><given-names>IP</given-names></name>, <name><surname>Sams</surname><given-names>M</given-names></name>, <year>2012</year>. <article-title>Functional magnetic resonance imaging
+phase synchronization as a measure of dynamic functional
+connectivity</article-title>. <source>Brain Connect</source>.
+<volume>2</volume> (<issue>2</issue>),
+<fpage>91</fpage>–<lpage>101</lpage>.<pub-id pub-id-type="pmid">22559794</pub-id></mixed-citation>
+      </ref>
+      <ref id="R18">
+        <mixed-citation publication-type="journal"><name><surname>Halliday</surname><given-names>DM</given-names></name>, <name><surname>Conway</surname><given-names>BA</given-names></name>, <name><surname>Farmer</surname><given-names>SF</given-names></name>, <name><surname>Rosenberg</surname><given-names>JR</given-names></name>, <year>1998</year>. <article-title>Using electroencephalography to study
+functional coupling between cortical activity and electromyograms during
+voluntary contractions in humans</article-title>. <source>Neurosci.
+Lett</source>
+<volume>241</volume> (<issue>1</issue>),
+<fpage>5</fpage>–<lpage>8</lpage>.<pub-id pub-id-type="pmid">9502202</pub-id></mixed-citation>
+      </ref>
+      <ref id="R19">
+        <mixed-citation publication-type="journal"><name><surname>Honari</surname><given-names>H</given-names></name>, <name><surname>Choe</surname><given-names>AS</given-names></name>, <name><surname>Pekar</surname><given-names>JJ</given-names></name>, <name><surname>Lindquist</surname><given-names>MA</given-names></name>, <year>2019</year>. <article-title>Investigating the impact of
+autocorrelation on time-varying connectivity</article-title>.
+<source>NeuroImage</source>
+<volume>197</volume>,
+<fpage>37</fpage>–<lpage>48</lpage>.<pub-id pub-id-type="pmid">31022568</pub-id></mixed-citation>
+      </ref>
+      <ref id="R20">
+        <mixed-citation publication-type="book"><name><surname>Huang</surname><given-names>NE</given-names></name>, <year>2014</year>. <source>Hilbert-Huang Transform and its
+Applications</source>, <volume>16</volume>. <publisher-name>World
+Scientific</publisher-name>.</mixed-citation>
+      </ref>
+      <ref id="R21">
+        <mixed-citation publication-type="journal"><name><surname>Hutchison</surname><given-names>RM</given-names></name>, <name><surname>Womelsdorf</surname><given-names>T</given-names></name>, <name><surname>Allen</surname><given-names>EA</given-names></name>, <name><surname>Bandettini</surname><given-names>PA</given-names></name>, <name><surname>Calhoun</surname><given-names>VD</given-names></name>, <name><surname>Corbetta</surname><given-names>M</given-names></name>, <name><surname>Della Penna</surname><given-names>S</given-names></name>, <name><surname>Duyn</surname><given-names>JH</given-names></name>, <name><surname>Glover</surname><given-names>GH</given-names></name>, <name><surname>Gonzalez-Castillo</surname><given-names>J</given-names></name>, <etal/>, <year>2013</year>. <article-title>Dynamic functional
+connectivity: promise, issues, and interpretations</article-title>.
+<source>Neuroimage</source>
+<volume>80</volume>,
+<fpage>360</fpage>–<lpage>378</lpage>.<pub-id pub-id-type="pmid">23707587</pub-id></mixed-citation>
+      </ref>
+      <ref id="R22">
+        <mixed-citation publication-type="journal"><name><surname>Hutchison</surname><given-names>RM</given-names></name>, <name><surname>Womelsdorf</surname><given-names>T</given-names></name>, <name><surname>Gati</surname><given-names>JS</given-names></name>, <name><surname>Everling</surname><given-names>S</given-names></name>, <name><surname>Menon</surname><given-names>RS</given-names></name>, <year>2013</year>. <article-title>Resting-state networks show dynamic
+functional connectivity in awake humans and anesthetized
+macaques</article-title>. <source>Hum. Brain Mapp</source>
+<volume>34</volume> (<issue>9</issue>),
+<fpage>2154</fpage>–<lpage>2177</lpage>.<pub-id pub-id-type="pmid">22438275</pub-id></mixed-citation>
+      </ref>
+      <ref id="R23">
+        <mixed-citation publication-type="journal"><name><surname>Imaouchen</surname><given-names>Y</given-names></name>, <name><surname>Kedadouche</surname><given-names>M</given-names></name>, <name><surname>Alkama</surname><given-names>R</given-names></name>, <name><surname>Thomas</surname><given-names>M</given-names></name>, <year>2017</year>. <article-title>A frequency-weighted energy operator
+and complementary ensemble empirical mode decomposition for bearing fault
+detection</article-title>. <source>Mech. Syst. Signal Process</source>
+<volume>82</volume>,
+<fpage>103</fpage>–<lpage>116</lpage>.</mixed-citation>
+      </ref>
+      <ref id="R24">
+        <mixed-citation publication-type="journal"><name><surname>Jammalamadaka</surname><given-names>SR</given-names></name>, <name><surname>Sarma</surname><given-names>YR</given-names></name>, <year>1988</year>. <article-title>A correlation coefficient for angular
+variables</article-title>. <source>Stat. Theory Data Anal</source>
+<volume>II</volume>
+<fpage>349</fpage>–<lpage>364</lpage>.</mixed-citation>
+      </ref>
+      <ref id="R25">
+        <mixed-citation publication-type="book"><name><surname>Jammalamadaka</surname><given-names>SR</given-names></name>, <name><surname>Sengupta</surname><given-names>A</given-names></name>, <year>2001</year>. <source>Topics in Circular Statistics</source>,
+<volume>5</volume>. <publisher-name>World
+scientific</publisher-name>.</mixed-citation>
+      </ref>
+      <ref id="R26">
+        <mixed-citation publication-type="journal"><name><surname>Karahanoğlu</surname><given-names>FI</given-names></name>, <name><surname>Van De Ville</surname><given-names>D</given-names></name>, <year>2015</year>. <article-title>Transient brain activity disentangles
+fMRI resting-state dynamics in terms of spatially and temporally overlapping
+networks</article-title>. <source>Nat. Commun</source>
+<volume>6</volume>, <fpage>7751</fpage>.<pub-id pub-id-type="pmid">26178017</pub-id></mixed-citation>
+      </ref>
+      <ref id="R27">
+        <mixed-citation publication-type="journal"><name><surname>Lachaux</surname><given-names>J-P</given-names></name>, <name><surname>Rodriguez</surname><given-names>E</given-names></name>, <name><surname>Martinerie</surname><given-names>J</given-names></name>, <name><surname>Varela</surname><given-names>FJ</given-names></name>, <year>1999</year>. <article-title>Measuring phase synchrony in brain
+signals</article-title>. <source>Hum. Brain Mapp</source>
+<volume>8</volume> (<issue>4</issue>),
+<fpage>194</fpage>–<lpage>208</lpage>.<pub-id pub-id-type="pmid">10619414</pub-id></mixed-citation>
+      </ref>
+      <ref id="R28">
+        <mixed-citation publication-type="journal"><name><surname>Laird</surname><given-names>AR</given-names></name>, <name><surname>Rogers</surname><given-names>BP</given-names></name>, <name><surname>Carew</surname><given-names>JD</given-names></name>, <name><surname>Arfanakis</surname><given-names>K</given-names></name>, <name><surname>Moritz</surname><given-names>CH</given-names></name>, <name><surname>Meyerand</surname><given-names>ME</given-names></name>, <year>2002</year>. <article-title>Characterizing instantaneous phase
+relationships in whole-brain fMRI activation data</article-title>.
+<source>Hum. Brain Mapp</source>
+<volume>16</volume> (<issue>2</issue>),
+<fpage>71</fpage>–<lpage>80</lpage>.<pub-id pub-id-type="pmid">11954057</pub-id></mixed-citation>
+      </ref>
+      <ref id="R29">
+        <mixed-citation publication-type="journal"><name><surname>Lancaster</surname><given-names>G</given-names></name>, <name><surname>Iatsenko</surname><given-names>D</given-names></name>, <name><surname>Pidde</surname><given-names>A</given-names></name>, <name><surname>Ticcinelli</surname><given-names>V</given-names></name>, <name><surname>Stefanovska</surname><given-names>A</given-names></name>, <year>2018</year>. <article-title>Surrogate data for hypothesis testing
+of physical systems</article-title>. <source>Phys. Rep</source>
+<volume>748</volume>,
+<fpage>1</fpage>–<lpage>60</lpage>.</mixed-citation>
+      </ref>
+      <ref id="R30">
+        <mixed-citation publication-type="journal"><name><surname>Landman</surname><given-names>BA</given-names></name>, <name><surname>Huang</surname><given-names>AJ</given-names></name>, <name><surname>Gifford</surname><given-names>A</given-names></name>, <name><surname>Vikram</surname><given-names>DS</given-names></name>, <name><surname>Lim</surname><given-names>IAL</given-names></name>, <name><surname>Farrell</surname><given-names>JAD</given-names></name>, <name><surname>Bogovic</surname><given-names>JA</given-names></name>, <name><surname>Hua</surname><given-names>J</given-names></name>, <name><surname>Chen</surname><given-names>M</given-names></name>, <name><surname>Jarso</surname><given-names>S</given-names></name>, <etal/>, <year>2011</year>. <article-title>Multi-parametric
+neuroimaging reproducibility: a 3-t resource study</article-title>.
+<source>NeuroImage</source>
+<volume>54</volume> (<issue>4</issue>),
+<fpage>2854</fpage>–<lpage>2866</lpage>.<pub-id pub-id-type="pmid">21094686</pub-id></mixed-citation>
+      </ref>
+      <ref id="R31">
+        <mixed-citation publication-type="journal"><name><surname>Laumann</surname><given-names>TO</given-names></name>, <name><surname>Snyder</surname><given-names>AZ</given-names></name>, <name><surname>Mitra</surname><given-names>A</given-names></name>, <name><surname>Gordon</surname><given-names>EM</given-names></name>, <name><surname>Gratton</surname><given-names>C</given-names></name>, <name><surname>Adeyemo</surname><given-names>B</given-names></name>, <name><surname>Gilmore</surname><given-names>AW</given-names></name>, <name><surname>Nelson</surname><given-names>SM</given-names></name>, <name><surname>Berg</surname><given-names>JJ</given-names></name>, <name><surname>Greene</surname><given-names>DJ</given-names></name>, <etal/>, <year>2016</year>. <article-title>On the stability of BOLD
+fMRI correlations</article-title>. <source>Cereb. Cortex</source>
+<volume>27</volume> (<issue>10</issue>),
+<fpage>4719</fpage>–<lpage>4732</lpage>.</mixed-citation>
+      </ref>
+      <ref id="R32">
+        <mixed-citation publication-type="journal"><name><surname>Li</surname><given-names>Y-O</given-names></name>, <name><surname>Adali</surname><given-names>T</given-names></name>, <name><surname>Calhoun</surname><given-names>VD</given-names></name>, <year>2007</year>. <article-title>Estimating the number of independent
+components for functional magnetic resonance imaging data</article-title>.
+<source>Hum. Brain Mapp</source>
+<volume>28</volume> (<issue>11</issue>),
+<fpage>1251</fpage>–<lpage>1266</lpage>.<pub-id pub-id-type="pmid">17274023</pub-id></mixed-citation>
+      </ref>
+      <ref id="R33">
+        <mixed-citation publication-type="journal"><name><surname>Lindquist</surname><given-names>MA</given-names></name>, <name><surname>Xu</surname><given-names>Y</given-names></name>, <name><surname>Nebel</surname><given-names>MB</given-names></name>, <name><surname>Caffo</surname><given-names>BS</given-names></name>, <year>2014</year>. <article-title>Evaluating dynamic bivariate
+correlations in resting-state fMRI: a comparison study and a new
+approach</article-title>. <source>Neuroimage</source>
+<volume>101</volume>,
+<fpage>531</fpage>–<lpage>546</lpage>.<pub-id pub-id-type="pmid">24993894</pub-id></mixed-citation>
+      </ref>
+      <ref id="R34">
+        <mixed-citation publication-type="journal"><name><surname>Liu</surname><given-names>X</given-names></name>, <name><surname>Duyn</surname><given-names>JH</given-names></name>, <year>2013</year>. <article-title>Time-varying functional network
+information extracted from brief instances of spontaneous brain
+activity</article-title>. <source>Proc. Natl. Acad. Sci</source>
+<comment>201216856.</comment></mixed-citation>
+      </ref>
+      <ref id="R35">
+        <mixed-citation publication-type="journal"><name><surname>Lobier</surname><given-names>M</given-names></name>, <name><surname>Siebenhühner</surname><given-names>F</given-names></name>, <name><surname>Palva</surname><given-names>S</given-names></name>, <name><surname>Palva</surname><given-names>JM</given-names></name>, <year>2014</year>. <article-title>Phase transfer entropy: a novel
+phase-based measure for directed connectivity in networks coupled by
+oscillatory interactions</article-title>. <source>Neuroimage</source>
+<volume>85</volume>,
+<fpage>853</fpage>–<lpage>872</lpage>.<pub-id pub-id-type="pmid">24007803</pub-id></mixed-citation>
+      </ref>
+      <ref id="R36">
+        <mixed-citation publication-type="journal"><name><surname>Lurie</surname><given-names>DJ</given-names></name>, <name><surname>Kessler</surname><given-names>D</given-names></name>, <name><surname>Bassett</surname><given-names>DS</given-names></name>, <name><surname>Betzel</surname><given-names>RF</given-names></name>, <name><surname>Breakspear</surname><given-names>M</given-names></name>, <name><surname>Keilholz</surname><given-names>S</given-names></name>, <name><surname>Kucyi</surname><given-names>A</given-names></name>, <name><surname>Liégeois</surname><given-names>R</given-names></name>, <name><surname>Lindquist</surname><given-names>MA</given-names></name>, <name><surname>McIntosh</surname><given-names>AR</given-names></name>, <etal/>, <year>2019</year>. <article-title>Questions and controversies
+in the study of time-varying functional connectivity in resting
+fMRI</article-title>. <source>Netw. Neurosci</source>
+<fpage>1</fpage>–<lpage>40</lpage>.<pub-id pub-id-type="pmid">30793071</pub-id></mixed-citation>
+      </ref>
+      <ref id="R37">
+        <mixed-citation publication-type="book"><name><surname>Niazy</surname><given-names>RK</given-names></name>, <name><surname>Xie</surname><given-names>J</given-names></name>, <name><surname>Miller</surname><given-names>K</given-names></name>, <name><surname>Beckmann</surname><given-names>CF</given-names></name>, <name><surname>Smith</surname><given-names>SM</given-names></name>, <year>2011</year>. <article-title>Spectral characteristics of resting
+state networks</article-title>. <source>In: Progress in Brain
+Research</source>, <volume>193</volume>.
+<publisher-name>Elsevier</publisher-name>, pp.
+<fpage>259</fpage>–<lpage>276</lpage>.</mixed-citation>
+      </ref>
+      <ref id="R38">
+        <mixed-citation publication-type="journal"><name><surname>Pauen</surname><given-names>K</given-names></name>, <name><surname>Ivanova</surname><given-names>G</given-names></name>, <year>2013</year>. <article-title>Circular correlation coefficients
+versus the phase-locking–value</article-title>. <source>Biomed.
+Eng</source></mixed-citation>
+      </ref>
+      <ref id="R39">
+        <mixed-citation publication-type="journal"><name><surname>Pedersen</surname><given-names>M</given-names></name>, <name><surname>Omidvarnia</surname><given-names>A</given-names></name>, <name><surname>Walz</surname><given-names>JM</given-names></name>, <name><surname>Zalesky</surname><given-names>A</given-names></name>, <name><surname>Jackson</surname><given-names>GD</given-names></name>, <year>2017</year>. <article-title>Spontaneous brain network activity:
+analysis of its temporal complexity</article-title>. <source>Netw.
+Neurosci</source>
+<volume>1</volume> (<issue>2</issue>),
+<fpage>100</fpage>–<lpage>115</lpage>.<pub-id pub-id-type="pmid">29911666</pub-id></mixed-citation>
+      </ref>
+      <ref id="R40">
+        <mixed-citation publication-type="journal"><name><surname>Pedersen</surname><given-names>M</given-names></name>, <name><surname>Omidvarnia</surname><given-names>A</given-names></name>, <name><surname>Zalesky</surname><given-names>A</given-names></name>, <name><surname>Jackson</surname><given-names>GD</given-names></name>, <year>2018</year>. <article-title>On the relationship between
+instantaneous phase synchrony and correlation-based sliding windows for
+time-resolved fMRI connectivity analysis</article-title>.
+<source>NeuroImage</source>.</mixed-citation>
+      </ref>
+      <ref id="R41">
+        <mixed-citation publication-type="journal"><name><surname>Ponce-Alvarez</surname><given-names>A</given-names></name>, <name><surname>Deco</surname><given-names>G</given-names></name>, <name><surname>Hagmann</surname><given-names>P</given-names></name>, <name><surname>Romani</surname><given-names>GL</given-names></name>, <name><surname>Mantini</surname><given-names>D</given-names></name>, <name><surname>Corbetta</surname><given-names>M</given-names></name>, <year>2015</year>. <article-title>Resting-state temporal
+synchronization networks emerge from connectivity topology and
+heterogeneity</article-title>. <source>PLoS Comput. Biol</source>
+<volume>11</volume> (<issue>2</issue>),
+<fpage>e1004100</fpage>.<pub-id pub-id-type="pmid">25692996</pub-id></mixed-citation>
+      </ref>
+      <ref id="R42">
+        <mixed-citation publication-type="journal"><name><surname>Preti</surname><given-names>MG</given-names></name>, <name><surname>Bolton</surname><given-names>TAW</given-names></name>, <name><surname>Van De Ville</surname><given-names>D</given-names></name>, <year>2016</year>. <article-title>The dynamic functional connectome:
+state-of-the-art and perspectives</article-title>.
+<source>NeuroImage</source>.</mixed-citation>
+      </ref>
+      <ref id="R43">
+        <mixed-citation publication-type="journal"><name><surname>Pruessmann</surname><given-names>KP</given-names></name>, <name><surname>Weiger</surname><given-names>M</given-names></name>, <name><surname>Scheidegger</surname><given-names>MB</given-names></name>, <name><surname>Boesiger</surname><given-names>P</given-names></name>, <etal/>
+<year>1999</year>. <article-title>Sense: sensitivity encoding for fast
+MRI</article-title>. <source>Magn. Reson. Med</source>
+<volume>42</volume> (<issue>5</issue>),
+<fpage>952</fpage>–<lpage>962</lpage>.<pub-id pub-id-type="pmid">10542355</pub-id></mixed-citation>
+      </ref>
+      <ref id="R44">
+        <mixed-citation publication-type="journal"><name><surname>Rebollo</surname><given-names>I</given-names></name>, <name><surname>Devauchelle</surname><given-names>A-D</given-names></name>, <name><surname>Béranger</surname><given-names>B</given-names></name>, <name><surname>Tallon-Baudry</surname><given-names>C</given-names></name>, <year>2018</year>. <article-title>Stomach-brain synchrony reveals a
+novel, delayed-connectivity resting-state network in humans</article-title>.
+<source>Elife</source>
+<volume>7</volume>, <fpage>e33321</fpage>.<pub-id pub-id-type="pmid">29561263</pub-id></mixed-citation>
+      </ref>
+      <ref id="R45">
+        <mixed-citation publication-type="book"><name><surname>Rosenblum</surname><given-names>M</given-names></name>, <name><surname>Tass</surname><given-names>P</given-names></name>, <name><surname>Kurths</surname><given-names>J</given-names></name>, <name><surname>Volkmann</surname><given-names>J</given-names></name>, <name><surname>Schnitzler</surname><given-names>A</given-names></name>, <name><surname>Freund</surname><given-names>H-J</given-names></name>, <year>2000</year>. <chapter-title>Detection of phase locking from noisy
+data: application to magnetoencephalography</chapter-title>. In:
+<source>Chaos In Brain?</source>
+<publisher-name>World Scientific</publisher-name>, pp.
+<fpage>34</fpage>–<lpage>51</lpage>.</mixed-citation>
+      </ref>
+      <ref id="R46">
+        <mixed-citation publication-type="journal"><name><surname>Rosenblum</surname><given-names>MG</given-names></name>, <name><surname>Pikovsky</surname><given-names>AS</given-names></name>, <name><surname>Kurths</surname><given-names>J</given-names></name>, <year>1996</year>. <article-title>Phase synchronization of chaotic
+oscillators</article-title>. <source>Phys. Rev. Lett</source>
+<volume>76</volume> (<issue>11</issue>), <fpage>1804</fpage>.<pub-id pub-id-type="pmid">10060525</pub-id></mixed-citation>
+      </ref>
+      <ref id="R47">
+        <mixed-citation publication-type="journal"><name><surname>Shappell</surname><given-names>HM</given-names></name>, <name><surname>Caffo</surname><given-names>BS</given-names></name>, <name><surname>Pekar</surname><given-names>JJ</given-names></name>, <name><surname>Lindquist</surname><given-names>M</given-names></name>, <year>2019</year>. <article-title>Improved state change estimation in
+dynamic functional connectivity using hidden semi-Markov
+models</article-title>. <source>bioRxiv</source>,
+<comment>519868.</comment></mixed-citation>
+      </ref>
+      <ref id="R48">
+        <mixed-citation publication-type="journal"><name><surname>Sojakova</surname><given-names>K</given-names></name>, <year>2016</year>. <article-title>The equivalence of the torus and the
+product of two circles in homotype type theory</article-title>. <source>ACM
+Trans. Comput. Logic</source>
+<volume>17</volume> (<issue>4</issue>), <fpage>29</fpage>.</mixed-citation>
+      </ref>
+      <ref id="R49">
+        <mixed-citation publication-type="journal"><name><surname>Stehling</surname><given-names>MK</given-names></name>, <name><surname>Turner</surname><given-names>R</given-names></name>, <name><surname>Mansfield</surname><given-names>P</given-names></name>, <year>1991</year>. <article-title>Echo-planar imaging: magnetic
+resonance imaging in a fraction of a second</article-title>.
+<source>Science</source>
+<volume>254</volume> (<issue>5028</issue>),
+<fpage>43</fpage>–<lpage>50</lpage>.<pub-id pub-id-type="pmid">1925560</pub-id></mixed-citation>
+      </ref>
+      <ref id="R50">
+        <mixed-citation publication-type="journal"><name><surname>Tagliazucchi</surname><given-names>E</given-names></name>, <name><surname>Balenzuela</surname><given-names>P</given-names></name>, <name><surname>Fraiman</surname><given-names>D</given-names></name>, <name><surname>Montoya</surname><given-names>P</given-names></name>, <name><surname>Chialvo</surname><given-names>DR</given-names></name>, <year>2011</year>. <article-title>Spontaneous BOLD event triggered
+averages for estimating functional connectivity at resting
+state</article-title>. <source>Neurosci. Lett</source>
+<volume>488</volume> (<issue>2</issue>),
+<fpage>158</fpage>–<lpage>163</lpage>.<pub-id pub-id-type="pmid">21078369</pub-id></mixed-citation>
+      </ref>
+      <ref id="R51">
+        <mixed-citation publication-type="journal"><name><surname>Tagliazucchi</surname><given-names>E</given-names></name>, <name><surname>Von Wegner</surname><given-names>F</given-names></name>, <name><surname>Morzelewski</surname><given-names>A</given-names></name>, <name><surname>Brodbeck</surname><given-names>V</given-names></name>, <name><surname>Laufs</surname><given-names>H</given-names></name>, <year>2012</year>. <article-title>Dynamic BOLD functional connectivity
+in humans and its electrophysiological correlates</article-title>.
+<source>Front. Hum. Neurosci</source>
+<volume>6</volume>.</mixed-citation>
+      </ref>
+      <ref id="R52">
+        <mixed-citation publication-type="journal"><name><surname>Thompson</surname><given-names>GJ</given-names></name>, <name><surname>Magnuson</surname><given-names>ME</given-names></name>, <name><surname>Merritt</surname><given-names>MD</given-names></name>, <name><surname>Schwarb</surname><given-names>H</given-names></name>, <name><surname>Pan</surname><given-names>W-J</given-names></name>, <name><surname>McKinley</surname><given-names>A</given-names></name>, <name><surname>Tripp</surname><given-names>LD</given-names></name>, <name><surname>Schumacher</surname><given-names>EH</given-names></name>, <name><surname>Keilholz</surname><given-names>SD</given-names></name>, <year>2013</year>. <article-title>Short-time windows of correlation
+between large-scale functional brain networks predict vigilance
+intraindividually and interindividually</article-title>. <source>Hum. Brain
+Mapp</source>
+<volume>34</volume> (<issue>12</issue>),
+<fpage>3280</fpage>–<lpage>3298</lpage>.<pub-id pub-id-type="pmid">22736565</pub-id></mixed-citation>
+      </ref>
+      <ref id="R53">
+        <mixed-citation publication-type="journal"><name><surname>Van Essen</surname><given-names>DC</given-names></name>, <name><surname>Smith</surname><given-names>SM</given-names></name>, <name><surname>Barch</surname><given-names>DM</given-names></name>, <name><surname>Behrens</surname><given-names>TEJ</given-names></name>, <name><surname>Yacoub</surname><given-names>E</given-names></name>, <name><surname>Ugurbil</surname><given-names>K</given-names></name>, <collab>Consortium, W.-M.H.</collab>, <etal/>, <year>2013</year>.
+<article-title>The WU-minn human connectome project: an
+overview</article-title>. <source>NeuroImage</source>
+<volume>80</volume>,
+<fpage>62</fpage>–<lpage>79</lpage>.<pub-id pub-id-type="pmid">23684880</pub-id></mixed-citation>
+      </ref>
+      <ref id="R54">
+        <mixed-citation publication-type="journal"><name><surname>Vidaurre</surname><given-names>D</given-names></name>, <name><surname>Smith</surname><given-names>SM</given-names></name>, <name><surname>Woolrich</surname><given-names>MW</given-names></name>, <year>2017</year>. <article-title>Brain network dynamics are
+hierarchically organized in time</article-title>. <source>Proc. Natl. Acad.
+Sci</source>
+<volume>114</volume> (<issue>48</issue>),
+<fpage>12827</fpage>–<lpage>12832</lpage>.<pub-id pub-id-type="pmid">29087305</pub-id></mixed-citation>
+      </ref>
+      <ref id="R55">
+        <mixed-citation publication-type="journal"><name><surname>Wu</surname><given-names>Z</given-names></name>, <name><surname>Huang</surname><given-names>NE</given-names></name>, <year>2009</year>. <article-title>Ensemble empirical mode
+decomposition: a noise-assisted data analysis method</article-title>.
+<source>Adv. Adapt. Data Anal</source>
+<volume>1</volume> (<issue>01</issue>),
+<fpage>1</fpage>–<lpage>41</lpage>.</mixed-citation>
+      </ref>
+      <ref id="R56">
+        <mixed-citation publication-type="journal"><name><surname>Xu</surname><given-names>Y</given-names></name>, <name><surname>Lindquist</surname><given-names>MA</given-names></name>, <year>2015</year>. <article-title>Dynamic connectivity detection: an
+algorithm for determining functional connectivity change points in fMRI
+data</article-title>. <source>Front. Neurosci</source>
+<volume>9</volume>.</mixed-citation>
+      </ref>
+      <ref id="R57">
+        <mixed-citation publication-type="journal"><name><surname>Yuen</surname><given-names>NHY</given-names></name>, <name><surname>Osachoff</surname><given-names>N</given-names></name>, <name><surname>Chen</surname><given-names>J</given-names></name>, <year>2019</year>. <article-title>Intrinsic frequencies of the
+resting-state fMRI signal: the frequency dependence of functional
+connectivity and the effect of mode mixing</article-title>. <source>Front.
+Neurosci</source>
+<volume>13</volume>, <fpage>900</fpage>.<pub-id pub-id-type="pmid">31551676</pub-id></mixed-citation>
+      </ref>
+      <ref id="R58">
+        <mixed-citation publication-type="journal"><name><surname>Zhan</surname><given-names>X</given-names></name>, <name><surname>Ma</surname><given-names>T</given-names></name>, <name><surname>Liu</surname><given-names>S</given-names></name>, <name><surname>Shimizu</surname><given-names>K</given-names></name>, <year>2017</year>. <article-title>On circular correlation for data on
+the torus</article-title>. <source>Stat. Pap</source>
+<fpage>1</fpage>–<lpage>21</lpage>.</mixed-citation>
+      </ref>
+      <ref id="R59">
+        <mixed-citation publication-type="journal"><name><surname>Zheng</surname><given-names>J</given-names></name>, <name><surname>Cheng</surname><given-names>J</given-names></name>, <name><surname>Yang</surname><given-names>Y</given-names></name>, <year>2014</year>. <article-title>Partly ensemble empirical mode
+decomposition: an improved noise-assisted method for eliminating mode
+mixing</article-title>. <source>Signal Process</source>.
+<volume>96</volume>,
+<fpage>362</fpage>–<lpage>374</lpage>.</mixed-citation>
+      </ref>
+      <ref id="R60">
+        <mixed-citation publication-type="journal"><name><surname>Zhou</surname><given-names>Z</given-names></name>, <name><surname>Cai</surname><given-names>B</given-names></name>, <name><surname>Zhang</surname><given-names>G</given-names></name>, <name><surname>Zhang</surname><given-names>A</given-names></name>, <name><surname>Calhoun</surname><given-names>VD</given-names></name>, <name><surname>Wang</surname><given-names>Y-P</given-names></name>, <year>2020</year>. <article-title>Prediction and classification of
+sleep quality based on phase synchronization related whole-brain dynamic
+connectivity using resting state fMRI</article-title>.
+<source>NeuroImage</source>
+<volume>221</volume>, <fpage>117190</fpage>.<pub-id pub-id-type="pmid">32711063</pub-id></mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+  <floats-group>
+    <fig id="F1" orientation="portrait" position="float">
+      <label>Fig. 1.</label>
+      <caption>
+        <p id="P96">A schematic of the approach to calculate the instantaneous phase (IP)
+framework.</p>
+      </caption>
+      <graphic xlink:href="nihms-1677103-f0001"/>
+    </fig>
+    <fig id="F2" orientation="portrait" position="float">
+      <label>Fig. 2.</label>
+      <caption>
+        <p id="P97">A single realization of Simulation 1. (a) A pair of signals
+<italic>x</italic>(<italic>t</italic>) and
+<italic>y</italic>(<italic>t</italic>) generated from an independent
+Gaussian process. (b) The difference in the estimated phase between the signals
+at each time point. (c) The circular distribution of the phase difference time
+course in a polar coordinate system. (d) Same results in histogram form.</p>
+      </caption>
+      <graphic xlink:href="nihms-1677103-f0002"/>
+    </fig>
+    <fig id="F3" orientation="portrait" position="float">
+      <label>Fig. 3.</label>
+      <caption>
+        <p id="P98">Results of Simulation 1 without band-pass filtering. The bold line
+indicates the estimated value, while the shaded area represents the 95%
+confidence interval. Results are shown for: (a) PLV using a sliding window; (b)
+circular-circular correlation using a sliding window; (c) toroidal-circular
+correlation using a sliding window; (d) phase coherence; and (e) CRP. The
+sliding window techniques are evaluated at three different window lengths.</p>
+      </caption>
+      <graphic xlink:href="nihms-1677103-f0003"/>
+    </fig>
+    <fig id="F4" orientation="portrait" position="float">
+      <label>Fig. 4.</label>
+      <caption>
+        <p id="P99">Results of Simulation 1 with band-pass filtering. The bold line
+indicates the estimated value, while the shaded area represents the 95%
+confidence interval. Results are shown for: (a) PLV using a sliding window; (b)
+circular-circular correlation using a sliding window; (c) toroidal-circular
+correlation using a sliding window; (d) phase coherence; and (e) CRP. The
+sliding window techniques are evaluated at three different window lengths.</p>
+      </caption>
+      <graphic xlink:href="nihms-1677103-f0004"/>
+    </fig>
+    <fig id="F5" orientation="portrait" position="float">
+      <label>Fig. 5.</label>
+      <caption>
+        <p id="P100">Results of Simulation 2 without band-pass filtering. (a) The ground
+truth phase shift between the two signals as a function of time. Results are
+shown for: (b) PLV using a sliding window; (c) circular-circular correlation
+using a sliding window; (d) toroidal-circular correlation using a sliding
+window; (e) phase coherence; and (f) CRP. The sliding window techniques are
+evaluated at three different window lengths.</p>
+      </caption>
+      <graphic xlink:href="nihms-1677103-f0005"/>
+    </fig>
+    <fig id="F6" orientation="portrait" position="float">
+      <label>Fig. 6.</label>
+      <caption>
+        <p id="P101">Results of Simulation 2 with band-pass filtering. (a) The ground truth
+phase shift between the two signals as a function of time. Results are shown
+for: (b) PLV using a sliding window; (c) circular-circular correlation using a
+sliding window; (d) toroidal-circular correlation using a sliding window; (e)
+phase coherence; and (f) CRP. The sliding window techniques are evaluated at
+three different window lengths.</p>
+      </caption>
+      <graphic xlink:href="nihms-1677103-f0006"/>
+    </fig>
+    <fig id="F7" orientation="portrait" position="float">
+      <label>Fig. 7.</label>
+      <caption>
+        <p id="P102">Results of Simulation 3 without band-pass filtering. (a) The ground
+truth phase shift between the two signals as a function of time. Results are
+shown for: (b) PLV using a sliding window; (c) circular-circular correlation
+using a sliding window; (d) toroidal-circular correlation using a sliding
+window; (e) phase coherence; and (f) CRP. The sliding window techniques are
+evaluated at three different window lengths.</p>
+      </caption>
+      <graphic xlink:href="nihms-1677103-f0007"/>
+    </fig>
+    <fig id="F8" orientation="portrait" position="float">
+      <label>Fig. 8.</label>
+      <caption>
+        <p id="P103">Results of Simulation 3 with band-pass filtering. (a) The ground truth
+phase shift between the two signals as a function of time. Results are shown
+for: (b) PLV using a sliding window; (c) circular-circular correlation bsing a
+sliding window; (d) toroidal-circular correlation using a sliding window; (e)
+phase coherence; and (f) CRP. The sliding window techniques are evaluated at
+three different window lengths.</p>
+      </caption>
+      <graphic xlink:href="nihms-1677103-f0008"/>
+    </fig>
+    <fig id="F9" orientation="portrait" position="float">
+      <label>Fig. 9.</label>
+      <caption>
+        <p id="P104">Analysis of the Kirby21 Data. After applying each method the
+time-varying connectivity measures were clustered into 2 reoccurring brain
+states. Results are shown for both sessions (top to bottom) for: PLV using a
+sliding window; circular-circular correlation (CIRC) using a sliding window;
+toroidal-circular correlation (TORC) using a sliding window; phase coherence
+(PC); cosine of the relative phase (CRP); correlation-based sliding window
+(CSW); and prewhitened correlation-based sliding window (PW-CSW). The sliding
+window techniques are evaluated with window length 30 time points.</p>
+      </caption>
+      <graphic xlink:href="nihms-1677103-f0009"/>
+    </fig>
+  </floats-group>
+</article>

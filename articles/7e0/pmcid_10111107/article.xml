@@ -1,0 +1,1806 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.3" xml:lang="en" article-type="research-article">
+  <?properties open_access?>
+  <processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats">
+    <restricted-by>pmc</restricted-by>
+  </processing-meta>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">J Biomed Phys Eng</journal-id>
+      <journal-id journal-id-type="iso-abbrev">J Biomed Phys Eng</journal-id>
+      <journal-title-group>
+        <journal-title>Journal of Biomedical Physics &amp; Engineering</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">2251-7200</issn>
+      <publisher>
+        <publisher-name>Shiraz University of Medical Sciences</publisher-name>
+        <publisher-loc>Iran</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">37082543</article-id>
+      <article-id pub-id-type="pmc">10111107</article-id>
+      <article-id pub-id-type="publisher-id">JBPE-13-2</article-id>
+      <article-id pub-id-type="doi">10.31661/jbpe.v0i0.2007-1134</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Original Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>A Comparative Study of Correlation Methods in Functional Connectivity Analysis Using fMRI Data of Alzheimer’s Patients</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Ahmadi</surname>
+            <given-names>Hessam</given-names>
+          </name>
+          <degrees> (PhD Candidate)</degrees>
+          <xref rid="aff1" ref-type="aff">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Fatemizadeh</surname>
+            <given-names>Emad</given-names>
+          </name>
+          <degrees> (PhD)</degrees>
+          <xref rid="aff2" ref-type="aff">2*</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Motie-Nasrabadi</surname>
+            <given-names>Ali</given-names>
+          </name>
+          <degrees> (PhD)</degrees>
+          <xref rid="aff3" ref-type="aff">3</xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1">
+<label>1</label>
+Department of Biomedical Engineering, Science and Research Branch, Islamic Azad University, Tehran, Iran</aff>
+      <aff id="aff2">
+<label>2</label>
+School of Electrical Engineering, Sharif University of Technology, Tehran, Iran</aff>
+      <aff id="aff3">
+<label>3</label>
+Department of Biomedical Engineering, Shahed University, Tehran, Iran</aff>
+      <author-notes>
+        <corresp id="cor1">
+<bold>*Corresponding author:</bold>
+Emad Fatemizadeh, School of Electrical Engineering, Sharif University of Technology, Tehran, Iran</corresp>
+        <corresp id="cor2">
+E-mail: <email>fatemizadeh@sharif.edu</email>
+</corresp>
+      </author-notes>
+      <pub-date pub-type="collection">
+        <month>4</month>
+        <year>2023</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>01</day>
+        <month>4</month>
+        <year>2023</year>
+      </pub-date>
+      <volume>13</volume>
+      <issue>2</issue>
+      <fpage>125</fpage>
+      <lpage>134</lpage>
+      <history>
+        <date date-type="accepted">
+          <day>7</day>
+          <month>9</month>
+          <year>2020</year>
+        </date>
+        <date date-type="received">
+          <day>4</day>
+          <month>7</month>
+          <year>2020</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Copyright: © Journal of Biomedical Physics and Engineering</copyright-statement>
+        <license>
+          <ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbynclicense">https://creativecommons.org/licenses/by-nc/4.0/</ali:license_ref>
+          <license-p>This is an Open Access article distributed under the terms of the Creative Commons Attribution-NonCommercial 4.0 Unported License, ( <ext-link ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by-nc/4.0/">http://creativecommons.org/licenses/by-nc/4.0/</ext-link>
+) which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <sec id="st1">
+          <title>Background:</title>
+          <p> Functional Magnetic Resonance Imaging (fMRI) is a non-invasive neuroimaging tool, used in brain function research and is also a low-frequency signal, showing brain activation by means of Oxygen consumption.</p>
+        </sec>
+        <sec id="st2">
+          <title>Objective:</title>
+          <p> One of the reliable methods in brain functional connectivity analysis is the correlation method. In correlation analysis, the relationship between two time-series has been investigated. In fMRI analysis, the Pearson correlation is used while there are other methods. This study aims to investigate the different correlation methods in functional connectivity analysis.</p>
+        </sec>
+        <sec id="st3">
+          <title>Material and Methods:</title>
+          <p> In this analytical research, based on fMRI signals of Alzheimer’s Disease (AD) and healthy individuals from the ADNI database, brain functional networks were generated using correlation techniques, including Pearson, Kendall, and Spearman. Then, the global and nodal measures were calculated in the whole brain and in the most important resting-state network called Default Mode Network (DMN). The statistical analysis was performed using non-parametric permutation test.</p>
+        </sec>
+        <sec id="st4">
+          <title>Results:</title>
+          <p> Results show that although in nodal analysis, the performance of correlation methods was almost similar, in global features, the Spearman and Kendall were better in distinguishing AD subjects. Note that, nodal analysis reveals that the functional connectivity of the posterior areas in the brain was more damaged because of AD in comparison to frontal areas. Moreover, the functional connectivity of the dominant hemisphere was disrupted more.</p>
+        </sec>
+        <sec id="st5">
+          <title>Conclusion:</title>
+          <p> Although the Pearson method has limitations in capturing non-linear relationships, it is the most prevalent method. To have a comprehensive analysis, investigating non-linear methods such as distance correlation is recommended.</p>
+        </sec>
+      </abstract>
+      <kwd-group>
+        <kwd> Functional Connectivity</kwd>
+        <kwd> Correlation</kwd>
+        <kwd> Brain Networks</kwd>
+        <kwd> fMRI</kwd>
+        <kwd> Graph Measures</kwd>
+        <kwd> DMN Network</kwd>
+        <kwd> Alzheimer Disease</kwd>
+        <kwd> Brain</kwd>
+        <kwd> Neuroimaging</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec sec-type="Introduction" id="sec1-1">
+      <title>Introduction</title>
+      <p>Functional Magnetic Resonance Imaging (fMRI) has been recently become more popular in brain function studies. During the fMRI examination, the low-frequency fluctuations called Blood Oxygen Level Dependent (BOLD) signal that shows the oxygen consumption of the brain regions, has been recorded [ <xref rid="ref1" ref-type="bibr">1</xref>
+]. In brain research, there are three types of brain connectivity called structural, functional, and effective. The temporal correlation of fMRI signals shows the functional connectivity in the brain that could be among all voxels (that is very time-consuming) or Regions of Interest (ROI) [ <xref rid="ref2" ref-type="bibr">2</xref>
+]. Several functional connectivity studies based on fMRI signals show that different pathological or physiological conditions affect the brain functional connectivity [ <xref rid="ref3" ref-type="bibr">3</xref>
+- <xref rid="ref5" ref-type="bibr">5</xref>
+]. There are several methods to calculate the correlation between time-series, including Pearson Correlation Coefficient (PCC), Kendall, and Spearman. All the methods are popular in literature but the PCC is the most common method used in fMRI functional connectivity analysis [ <xref rid="ref6" ref-type="bibr">6</xref>
+]. </p>
+      <p>Alzheimer’s Disease (AD) that is the most common type of dementia, is a neurodegenerative illness, disrupting the performance of the brain and the normal life of the patient in the final stages of the disease. Official deaths authentications recorded 122,019 deaths from AD in 2018,
+making Alzheimer’s the 6<sup>th</sup> and 5<sup>th</sup> main reason for death in the United States and among Americans age 65 and older, respectively [ <xref rid="ref7" ref-type="bibr">7</xref>
+]. Accordingly, using fMRI signals to study AD is very popular and also helpful for all the people involved in this issue directly or indirectly [ <xref rid="ref8" ref-type="bibr">8</xref>
+]. </p>
+      <p>Studies on AD shows that the functional connectivity of the brain and especially main brain networks such as Default Mode Network (DMN) has decreased [ <xref rid="ref9" ref-type="bibr">9</xref>
+, <xref rid="ref10" ref-type="bibr">10</xref>
+]. Classification AD patients from the healthy individuals is another popular topic that has been performed using different features and dimension reduction algorithms, and a wide range of classifiers, including K-Nearest Neighbors, Artificial Neural Networks (ANN) and Support Vector Machine (SVM) [ <xref rid="ref11" ref-type="bibr">11</xref>
+- <xref rid="ref13" ref-type="bibr">13</xref>
+]. There are also several studies on the early stage of the disease called Mild Cognitive Impairment (MCI) [ <xref rid="ref14" ref-type="bibr">14</xref>
+, <xref rid="ref15" ref-type="bibr">15</xref>
+]. Besides, using additional information such as MRI, structural images has been investigated [ <xref rid="ref16" ref-type="bibr">16</xref>
+]. In functional connectivity analysis, non-linear methods such as mutual information have been used as well [ <xref rid="ref17" ref-type="bibr">17</xref>
+]. The study of the functional connectivity using coherence analysis [ <xref rid="ref18" ref-type="bibr">18</xref>
+] or comparing the effect of AD and normal aging in the functional connectivity was done before [ <xref rid="ref19" ref-type="bibr">19</xref>
+]. Moreover, some studies especially focused on white matter functional connectivity [ <xref rid="ref20" ref-type="bibr">20</xref>
+] or some brain networks or ROIs [ <xref rid="ref21" ref-type="bibr">21</xref> ].</p>
+      <p>As mentioned above the functional connectivity analysis is very common and popular among researchers. Although there are many ways to compute the functional connectivity, the most common method for analyzing functional connectivity is Pearson Correlation Coefficient (PCC). PCC is conducted using the linear correlation; however, in non-linear relationships, this method is weak. Besides, there a not enough studies that compare the result of the different correlation methods to PCC. In this study, functional connectivity matrices are generated using different correlation methods, including PCC, Spearman, and Kendall, to explore the performance of these methods in brain functional connectivity analysis in AD subjects. </p>
+      <p>In the materials and methods section, the database is introduced. Then the preprocessing step is explained and different correlation methods and their formulas are presented. After that, graph theory and feature extraction are proposed. In the result section, the statistical outcomes and different analysis findings are presented. Finally, the results are going to discuss in the last section. This study aims to investigate the different correlation methods in functional connectivity analysis.</p>
+    </sec>
+    <sec sec-type="Material and Methods" id="sec1-2">
+      <title>Material and Methods</title>
+      <p>In this analytical research, the data and the tools used in this study are presented and explained completely.
+The flowchart of the study is shown in <xref rid="JBPE-13-125-g001.tif" ref-type="fig">Figure 1</xref>.</p>
+      <fig position="float" id="JBPE-13-125-g001.tif">
+        <label>Figure 1</label>
+        <caption>
+          <p> The flowchart of the study.</p>
+        </caption>
+        <graphic xlink:href="JBPE-13-125-g001" position="float"/>
+      </fig>
+      <sec id="sec2-1">
+        <title>Database</title>
+        <p>The fMRI data has been collected from the Alzheimer’s Disease Neuroimaging Initiative (ADNI) phase 2 [ <xref rid="ref22" ref-type="bibr">22</xref>
+, <xref rid="ref23" ref-type="bibr">23</xref>
+]. The data consists of 28 individuals for the AD group and 34 individuals for the control group. All the scans, including structural and functional images have
+been done by a 3 Tesla Philips MRI machine. The Repetition Time (TR) and Echo Time (TE) are 3000 msec and 30 msec, respectively.
+The flip angle was 80 and 3.3125 mm was the thickness of each slice [ <xref rid="ref24" ref-type="bibr">24</xref>
+]. The demographic information is depicted in <xref rid="T1" ref-type="table">Table 1</xref>.</p>
+        <table-wrap position="float" id="T1">
+          <label>Table 1</label>
+          <caption>
+            <p>The information of the data. Mini-Mental State Examination (MMSE) and Clinical Dementia Rating (CDR) are two clinical exams performed for analysis the mental health in Alzheimer’s Disease (AD).</p>
+          </caption>
+          <table frame="hsides" rules="groups" width="100%">
+            <thead>
+              <tr style="color:#000000;border-bottom:solid #650000 1.0pt;">
+                <th align="center" colspan="1" rowspan="1" valign="top">Group</th>
+                <th align="center" colspan="1" rowspan="1" valign="top">No. (Male/Female)</th>
+                <th align="center" colspan="1" rowspan="1" valign="top">Age</th>
+                <th align="center" colspan="1" rowspan="1" valign="top">Head Motion (mm)</th>
+                <th align="center" colspan="1" rowspan="1" valign="top">MMSE Score</th>
+                <th align="center" colspan="1" rowspan="1" valign="top">CDR Score</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="color:#000000;border-bottom:solid #A30F63 1.0pt;">
+                <td align="center" colspan="1" rowspan="1" valign="top">
+<bold>AD</bold>
+</td>
+                <td align="center" colspan="1" rowspan="1" valign="top">(14/14)</td>
+                <td align="center" colspan="1" rowspan="1" valign="top">74.9±4.9</td>
+                <td align="center" colspan="1" rowspan="1" valign="top">0.32±0.09</td>
+                <td align="center" colspan="1" rowspan="1" valign="top">20.35±0.54</td>
+                <td align="center" colspan="1" rowspan="1" valign="top">1.03±0.54</td>
+              </tr>
+              <tr style="color:#000000;border-bottom:solid #A30F63 1.0pt;">
+                <td align="center" colspan="1" rowspan="1" valign="top">
+<bold>CN</bold>
+</td>
+                <td align="center" colspan="1" rowspan="1" valign="top">(14/20)</td>
+                <td align="center" colspan="1" rowspan="1" valign="top">74.1±4.3</td>
+                <td align="center" colspan="1" rowspan="1" valign="top">0.22±0.14</td>
+                <td align="center" colspan="1" rowspan="1" valign="top">29.11±1.24</td>
+                <td align="center" colspan="1" rowspan="1" valign="top">0.16±0.05</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <p> MMSE: Mini-Mental State Examination, CDR: Clinical Dementia Rating, AD: Alzheimer’s Disease, CN: Control</p>
+          </table-wrap-foot>
+        </table-wrap>
+      </sec>
+      <sec id="sec2-2">
+        <title>Preprocessing</title>
+        <p>The preprocessing was done using the Data Processing Assistant for fMRI (DPARSF) toolbox in Matlab software [ <xref rid="ref25" ref-type="bibr">25</xref> ].
+The preprocessing consists of realignment that performed by a six parameter rigid body transformation. BY the last slice, the slice timings were corrected.
+Then the Montreal Neurological Institute (MNI) atlas has been used for data normalization. Data were passed through a bandpass filter (0.01-0.08 Hz)
+and smoothed by a Gaussian filter (FWHM=4 mm). Finally, to obtain the time-series, the Automated Anatomical Labeling (AAL) atlas,
+reliable in this field, has been employed. Based on AAL atlas, the brain parcellates into 116 distinct regions [ <xref rid="ref26" ref-type="bibr">26</xref> ].</p>
+      </sec>
+      <sec id="sec2-3">
+        <title>Correlations</title>
+        <p>After extracting fMRI signals based on AAL atlas, the correlations among time-series were computed to obtain brain functional connectivity. PCC is one of the main methods to calculate the correlation [ <xref rid="ref27" ref-type="bibr">27</xref>
+]. The formula of PCC is as follows:</p>
+        <p>
+<mml:math id="M1" overflow="scroll"><mml:msub><mml:mi>ρ</mml:mi><mml:mi>x.y</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:mi>cov(x.y)</mml:mi></mml:mrow><mml:mrow><mml:msub><mml:mi>σ</mml:mi><mml:mi>x</mml:mi></mml:msub><mml:msub><mml:mi>σ</mml:mi><mml:mi>y</mml:mi></mml:msub></mml:mrow></mml:mfrac></mml:math>
+(1)</p>
+        <p>Where <italic>σ<sub>x</sub></italic> and <italic>σ<sub>y</sub></italic> correspond to the standard deviation of signal <italic>x</italic> and <italic>y</italic>, respectively. The PCC computes the linear correlation and the magnitude is between -1 to 1. The sign shows the direction and the magnitude corresponds to the correlation power. </p>
+        <p>The Spearman correlation is another method, which is a nonparametric rank correlation between two variables, showing that how well the connection between two factors can be portrayed using a monotonic function [ <xref rid="ref28" ref-type="bibr">28</xref>
+]. For computation the Spearman correlation, the variables are firstly converted to rank variables and then the PCC formula (Equation 1) is performed. </p>
+        <p>Kendall coefficient is a non-parametric popular method for computing the correlation between two variables, quantifing the ordinal association between variables [ <xref rid="ref29" ref-type="bibr">29</xref>
+]. Assume that (<italic>x<sub>i</sub></italic>, <italic>y<sub>i</sub></italic>) and (<italic>x<sub>j</sub></italic>, <italic>y<sub>j</sub></italic>) are two coordintes with
+condition that if <italic>x<sub>i</sub></italic>&gt;<italic>x<sub>j</sub></italic> and <italic>y<sub>i</sub></italic>&gt;<italic>y<sub>j</sub></italic>,
+they are concordant and if <italic>x<sub>i</sub></italic>&lt;<italic>x<sub>j</sub></italic> and <italic>y<sub>i</sub></italic>&lt;<italic>y<sub>j</sub></italic> they are discordant.
+Accordingly, the formula of the Kendall coefficient is as follows:</p>
+        <p>
+<mml:math id="M2" overflow="scroll"><mml:mi>τ</mml:mi><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:msub><mml:mi>n</mml:mi><mml:mi>c</mml:mi></mml:msub><mml:mo>-</mml:mo><mml:msub><mml:mi>n</mml:mi><mml:mi>d</mml:mi></mml:msub></mml:mrow><mml:mrow><mml:mfrac><mml:mrow><mml:mi>n</mml:mi><mml:mi>(n-1)</mml:mi></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:mfrac></mml:mrow></mml:mfrac></mml:math>
+(2)</p>
+        <p>Where <italic>n<sub>c</sub></italic> and <italic>n<sub>d</sub></italic> correspond to the number of concordant and number of discordant pairs, respectively.
+Besides, <italic>n</italic> is the number of pairs.</p>
+      </sec>
+      <sec id="sec2-4">
+        <title>Brain Networks and Graph Theory</title>
+        <p>In functional connectivity analysis, the brain is modeled as an undirected graph. In this graph, the brain ROIs correspond to the graph nodes and the functional connectivities between nodes were modeled as network edges. The edges of the graph demonstrates the functional connectivity (correlation) [ <xref rid="ref30" ref-type="bibr">30</xref>
+]. In mathematics, <italic>G</italic>=(<italic>V</italic>, <italic>E</italic>) is a graph that <italic>E</italic> is the representatives of links and <italic>V</italic> corresponds to vertices. Besides, some studies sparsed the graphs by thresholding to remove weak links and noises. As this paper aims to compare the effect of different correlation methods, sparsification is not obliged. As this study focused on functional connectivity, the absolute value of negative correlations was considered for further analysis [ <xref rid="ref31" ref-type="bibr">31</xref>
+]. After generating weighted undirected graphs based on different correlation methods, graph global features were computed.
+The formula of graph measures is shown in <xref rid="T2" ref-type="table">Table 2</xref>.</p>
+        <table-wrap position="float" id="T2">
+          <label>Table 2</label>
+          <caption>
+            <p>The formula of graph global measures [ <xref rid="ref32" ref-type="bibr">32</xref> ].</p>
+          </caption>
+          <table frame="hsides" rules="groups" width="100%">
+            <thead>
+              <tr style="color:#000000;border-bottom:solid #650000 1.0pt;">
+                <th align="left" colspan="1" rowspan="1" valign="top">Graph Measure</th>
+                <th align="left" colspan="1" rowspan="1" valign="top">Formula</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="color:#000000;border-bottom:solid #A30F63 1.0pt;">
+                <td align="left" colspan="1" rowspan="1" valign="top">
+<bold>Degree</bold>
+</td>
+                <td align="left" colspan="1" rowspan="1" valign="top">-</td>
+              </tr>
+              <tr style="color:#000000;border-bottom:solid #A30F63 1.0pt;">
+                <td align="left" colspan="1" rowspan="1" valign="top">
+<bold>Eccentricity</bold>
+</td>
+                <td align="left" colspan="1" rowspan="1" valign="top"><mml:math id="M3" overflow="scroll"><mml:mi>Ecc</mml:mi><mml:mo>=</mml:mo><mml:mi>max</mml:mi><mml:mo>{</mml:mo><mml:msub><mml:mi>d</mml:mi><mml:mi>G</mml:mi></mml:msub><mml:mi>(x.y)</mml:mi><mml:mo>}</mml:mo></mml:math>
+</td>
+              </tr>
+              <tr style="color:#000000;border-bottom:solid #A30F63 1.0pt;">
+                <td align="left" colspan="1" rowspan="1" valign="top">
+<bold>Strength</bold>
+</td>
+                <td align="left" colspan="1" rowspan="1" valign="top"><mml:math id="M4" overflow="scroll"><mml:mi>Str(υ)</mml:mi><mml:mo>=</mml:mo><mml:munder><mml:mo>∑</mml:mo><mml:mi>υ∈V</mml:mi></mml:munder><mml:mi>E</mml:mi></mml:math>
+</td>
+              </tr>
+              <tr style="color:#000000;border-bottom:solid #A30F63 1.0pt;">
+                <td align="left" colspan="1" rowspan="1" valign="top">
+<bold>Radius</bold>
+</td>
+                <td align="left" colspan="1" rowspan="1" valign="top"><mml:math id="M5" overflow="scroll"><mml:mi>R</mml:mi><mml:mo>=</mml:mo><mml:mi>min</mml:mi><mml:mo>{</mml:mo><mml:mi>ECC</mml:mi><mml:mo>}</mml:mo></mml:math>
+</td>
+              </tr>
+              <tr style="color:#000000;border-bottom:solid #A30F63 1.0pt;">
+                <td align="left" colspan="1" rowspan="1" valign="top">
+<bold>Diameter</bold>
+</td>
+                <td align="left" colspan="1" rowspan="1" valign="top"><mml:math id="M6" overflow="scroll"><mml:mi>D</mml:mi><mml:mo>=</mml:mo><mml:mi>max</mml:mi><mml:mo>{</mml:mo><mml:mi>ECC</mml:mi><mml:mo>}</mml:mo></mml:math>
+</td>
+              </tr>
+              <tr style="color:#000000;border-bottom:solid #A30F63 1.0pt;">
+                <td align="left" colspan="1" rowspan="1" valign="top">
+<bold>Characteristics Path Length</bold>
+</td>
+                <td align="left" colspan="1" rowspan="1" valign="top"><mml:math id="M7" overflow="scroll"><mml:mi>L</mml:mi><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:msub><mml:mo>∑</mml:mo><mml:mi>x.y∈V(G)</mml:mi></mml:msub><mml:msub><mml:mi>d</mml:mi><mml:mi>G</mml:mi></mml:msub><mml:mi>(x.y)</mml:mi></mml:mrow><mml:mrow><mml:mi>n(n-1)</mml:mi></mml:mrow></mml:mfrac></mml:math>
+</td>
+              </tr>
+              <tr style="color:#000000;border-bottom:solid #A30F63 1.0pt;">
+                <td align="left" colspan="1" rowspan="1" valign="top">
+<bold>Global Efficiency</bold>
+</td>
+                <td align="left" colspan="1" rowspan="1" valign="top"><mml:math id="M8" overflow="scroll"><mml:msub><mml:mi>E</mml:mi><mml:mi>glob</mml:mi></mml:msub><mml:mi>(G)</mml:mi><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:mi>E(G)</mml:mi></mml:mrow><mml:mrow><mml:mi>E</mml:mi><mml:mo>(</mml:mo><mml:msup><mml:mi>G</mml:mi><mml:mi>Ideal</mml:mi></mml:msup><mml:mo>)</mml:mo></mml:mrow></mml:mfrac></mml:math>
+</td>
+              </tr>
+              <tr style="color:#000000;border-bottom:solid #A30F63 1.0pt;">
+                <td align="left" colspan="1" rowspan="1" valign="top">
+<bold>Local Efficiency</bold>
+</td>
+                <td align="left" colspan="1" rowspan="1" valign="top"><mml:math id="M9" overflow="scroll"><mml:msub><mml:mi>E</mml:mi><mml:mi>loc</mml:mi></mml:msub><mml:mi>(G)</mml:mi><mml:mo>=</mml:mo><mml:mfrac><mml:mn>1</mml:mn><mml:mi>n</mml:mi></mml:mfrac><mml:msub><mml:mo>∑</mml:mo><mml:mi>x∈G</mml:mi></mml:msub><mml:mi>E</mml:mi><mml:mo>(</mml:mo><mml:msub><mml:mi>G</mml:mi><mml:mi>x</mml:mi></mml:msub><mml:mo>)</mml:mo></mml:math>
+</td>
+              </tr>
+              <tr style="color:#000000;border-bottom:solid #A30F63 1.0pt;">
+                <td align="left" colspan="1" rowspan="1" valign="top">
+<bold>Clustering</bold>
+</td>
+                <td align="left" colspan="1" rowspan="1" valign="top"><mml:math id="M10" overflow="scroll"><mml:mi>C</mml:mi><mml:mo>=</mml:mo><mml:mfrac><mml:mi>Number of closed triplets</mml:mi><mml:mi>number of all triplets</mml:mi></mml:mfrac></mml:math>
+</td>
+              </tr>
+              <tr style="color:#000000;border-bottom:solid #A30F63 1.0pt;">
+                <td align="left" colspan="1" rowspan="1" valign="top">
+<bold>Modularity</bold>
+</td>
+                <td align="left" colspan="1" rowspan="1" valign="top">
+<mml:math id="M11" overflow="scroll"><mml:mi>M</mml:mi><mml:mo>=</mml:mo><mml:mfrac><mml:mn>1</mml:mn><mml:mi>l</mml:mi></mml:mfrac><mml:msub><mml:mo>∑</mml:mo><mml:mi>x.y</mml:mi></mml:msub><mml:mo>[</mml:mo><mml:msub><mml:mi>A</mml:mi><mml:mi>x.y</mml:mi></mml:msub><mml:mo>-</mml:mo><mml:mfrac><mml:mrow><mml:msub><mml:mi>k</mml:mi><mml:mi>x</mml:mi></mml:msub><mml:msub><mml:mi>k</mml:mi><mml:mi>y</mml:mi></mml:msub></mml:mrow><mml:mrow><mml:mi>l</mml:mi></mml:mrow></mml:mfrac><mml:mo>]</mml:mo><mml:msub><mml:mi>δ</mml:mi><mml:mi>x.y</mml:mi></mml:msub></mml:math>
+</td>
+              </tr>
+              <tr style="color:#000000;border-bottom:solid #A30F63 1.0pt;">
+                <td align="left" colspan="1" rowspan="1" valign="top">
+<bold>Transitivity</bold>
+</td>
+                <td align="left" colspan="1" rowspan="1" valign="top"><mml:math id="M12" overflow="scroll"><mml:mi>T</mml:mi><mml:mo>=</mml:mo><mml:mfrac><mml:mi>3×number of triangles</mml:mi><mml:mi>number of connected triples of nodes</mml:mi></mml:mfrac></mml:math>
+</td>
+              </tr>
+              <tr style="color:#000000;border-bottom:solid #A30F63 1.0pt;">
+                <td align="left" colspan="1" rowspan="1" valign="top">
+<bold>Small-Worldness</bold>
+</td>
+                <td align="left" colspan="1" rowspan="1" valign="top"><mml:math id="M13" overflow="scroll"><mml:mi>σ</mml:mi><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:mi>C</mml:mi><mml:mo>/</mml:mo><mml:msub><mml:mi>C</mml:mi><mml:mi>r</mml:mi></mml:msub></mml:mrow><mml:mrow><mml:mi>L</mml:mi><mml:mo>/</mml:mo><mml:msub><mml:mi>L</mml:mi><mml:mi>r</mml:mi></mml:msub></mml:mrow></mml:mfrac></mml:math>
+</td>
+              </tr>
+            </tbody>
+          </table>
+        </table-wrap>
+        <p>In <xref rid="T2" ref-type="table">Table 2</xref>, <italic>n</italic> and <italic>d<sub>G</sub></italic>(<italic>x.y</italic>) show the number of nodes and the
+distance between the <italic>x</italic> and <italic>y</italic>, respectively.
+The <italic>G<sup>Ideal</sup></italic> is the representative of a fully connected network. The <italic>l</italic> is the number of links and <italic>A<sub>x.y</sub></italic> shows
+the connectivity matrix. <italic>δ<sub>x.y</sub></italic> is 0 if the <italic>x</italic> and <italic>y</italic> are from the
+same community. <italic>C<sub>r</sub></italic> and <italic>L<sub>r</sub></italic> correspond to an equivalent random graph.
+The average efficiency formula is <mml:math id="M14" overflow="scroll"><mml:mi>(G)</mml:mi><mml:mo>=</mml:mo><mml:mfrac><mml:mn>1</mml:mn><mml:mi>n(n-1)</mml:mi></mml:mfrac><mml:msub><mml:mo>∑</mml:mo><mml:mi>x≠y∈G</mml:mi></mml:msub><mml:mfrac><mml:mn>1</mml:mn><mml:mi>p(x.y)</mml:mi></mml:mfrac></mml:math>, where <italic>p</italic>(<italic>x.y</italic>) corresponds to the shortest path length between <italic>x</italic> and <italic>y</italic>. </p>
+        <p>Some measures are computed over a single node. These types of features demonstrate the performance of a single node in the network specifically.
+<italic>Betweenness</italic> measures the centrality in a network based on the shortest paths, and is the ratio of the shortest path (that crosses through a hub to the total number of shortest paths). Closeness is the inverse of the path length of a hub [ <xref rid="ref33" ref-type="bibr">33</xref>
+]. Participation estimates the connection between the number of edges associating a hub outside its locale and all of its outnumber of edges. The participation formula is:</p>
+        <p>
+<mml:math id="M15" overflow="scroll"><mml:msub><mml:mi>P</mml:mi><mml:mi>i</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:mn>1</mml:mn><mml:mo>-</mml:mo><mml:msub><mml:mo>∑</mml:mo><mml:mi>s</mml:mi></mml:msub><mml:msup><mml:mrow><mml:mo>(</mml:mo><mml:mfrac><mml:mrow><mml:msub><mml:mi>K</mml:mi><mml:mrow><mml:msub><mml:mi>s</mml:mi><mml:mi>i</mml:mi></mml:msub></mml:mrow></mml:msub></mml:mrow><mml:mrow><mml:msub><mml:mi>K</mml:mi><mml:mi>i</mml:mi></mml:msub></mml:mrow></mml:mfrac><mml:mo>)</mml:mo></mml:mrow><mml:mn>2</mml:mn></mml:msup></mml:math>
+(3)</p>
+        <p>where <italic>s<sub>i</sub></italic> and <italic>K<sub>i</sub></italic> are the all outnumber of links of vertice <italic>i</italic> and <italic>K<sub>s</sub><sub>i</sub></italic> is the number of edges associating the vertice i inside Module (neighborhood).</p>
+      </sec>
+    </sec>
+    <sec sec-type="Results" id="sec1-3">
+      <title>Results</title>
+      <p>After generating weighted undirected functional brain networks and extracting graph features, statistical analysis was performed. Since there is no assumption about the distribution of the data, the non-parametric permutation test was implemented.
+The results of the statistical test are shown in <xref rid="T3" ref-type="table">Table 3</xref> in terms of <italic>P</italic>-values. The bold numbers in <xref rid="T3" ref-type="table">Table 3</xref> correspond to the <italic>P</italic>-values&lt;0.05.</p>
+      <table-wrap position="float" id="T3">
+        <label>Table 3</label>
+        <caption>
+          <p><italic>P</italic>-values of the global features statistical test.</p>
+        </caption>
+        <table frame="hsides" rules="groups" width="100%">
+          <thead>
+            <tr>
+              <th align="center" colspan="1" rowspan="1" valign="top">
+</th>
+              <th style="color:#000000;border-bottom:solid #650000 1.0pt;" align="center" colspan="3" rowspan="1" valign="top"><italic>P</italic>-values</th>
+            </tr>
+            <tr>
+              <th align="left" colspan="1" rowspan="1" valign="top">Features</th>
+              <th style="color:#000000;border-bottom:solid #A30F63 1.0pt;" align="center" colspan="1" rowspan="2" valign="middle">Pearson</th>
+              <th style="color:#000000;border-bottom:solid #A30F63 1.0pt;" align="center" colspan="1" rowspan="2" valign="middle">Spearman</th>
+              <th style="color:#000000;border-bottom:solid #A30F63 1.0pt;" align="center" colspan="1" rowspan="2" valign="middle">Kendall</th>
+            </tr>
+            <tr style="color:#000000;border-bottom:solid #A30F63 1.0pt;">
+              <th align="right" colspan="1" rowspan="1" valign="top">Correlation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="color:#000000;border-bottom:solid #A30F63 1.0pt;">
+              <td align="center" colspan="1" rowspan="1" valign="top">Degree</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">1</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.1586</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.1641</td>
+            </tr>
+            <tr style="color:#000000;border-bottom:solid #A30F63 1.0pt;">
+              <td align="center" colspan="1" rowspan="1" valign="top">Strength</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.0026</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.0036</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.0023</td>
+            </tr>
+            <tr style="color:#000000;border-bottom:solid #A30F63 1.0pt;">
+              <td align="center" colspan="1" rowspan="1" valign="top">Radius</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.2009</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.1689</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.2282</td>
+            </tr>
+            <tr style="color:#000000;border-bottom:solid #A30F63 1.0pt;">
+              <td align="center" colspan="1" rowspan="1" valign="top">Diameter</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.4882</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.4483</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.4819</td>
+            </tr>
+            <tr style="color:#000000;border-bottom:solid #A30F63 1.0pt;">
+              <td align="center" colspan="1" rowspan="1" valign="top">Eccentricity</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.3295</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.4118</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.4251</td>
+            </tr>
+            <tr style="color:#000000;border-bottom:solid #A30F63 1.0pt;">
+              <td align="center" colspan="1" rowspan="1" valign="top">Characteristic Path Length</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.0112</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.0132</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.011</td>
+            </tr>
+            <tr style="color:#000000;border-bottom:solid #A30F63 1.0pt;">
+              <td align="center" colspan="1" rowspan="1" valign="top">Global Efficiency</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.0018</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.0035</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.0031</td>
+            </tr>
+            <tr style="color:#000000;border-bottom:solid #A30F63 1.0pt;">
+              <td align="center" colspan="1" rowspan="1" valign="top">Local Efficiency</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.0018</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.0223</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.0021</td>
+            </tr>
+            <tr style="color:#000000;border-bottom:solid #A30F63 1.0pt;">
+              <td align="center" colspan="1" rowspan="1" valign="top">Clustering</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.006</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.0035</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.0028</td>
+            </tr>
+            <tr style="color:#000000;border-bottom:solid #A30F63 1.0pt;">
+              <td align="center" colspan="1" rowspan="1" valign="top">Transitivity</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.0074</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.0031</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.0034</td>
+            </tr>
+            <tr style="color:#000000;border-bottom:solid #A30F63 1.0pt;">
+              <td align="center" colspan="1" rowspan="1" valign="top">Modularity</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.057</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.0443</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.0395</td>
+            </tr>
+            <tr style="color:#000000;border-bottom:solid #A30F63 1.0pt;">
+              <td align="center" colspan="1" rowspan="1" valign="top">Small Worldness</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.6274</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.2615</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.1484</td>
+            </tr>
+          </tbody>
+        </table>
+      </table-wrap>
+      <p>According to <xref rid="T3" ref-type="table">Table 3</xref>, the Pearson correlation shows significant changes in strength, characteristic path length, global efficiency, local efficiency, clustering, and transitivity features. In addition to the mentioned features, Spearman and Kendall correlations show significant changes in the modularity feature as well. Regardless of the features that show significant differences, generally, the <italic>P</italic>-values obtained from Kendall and Spearman were smaller in comparison to the Pearson method. It can be concluded that Kendall and Spearman are more powerful in the discrimination of Alzheimer’s disease from the control group in terms of functional connectivity and graph measures.</p>
+      <p>The diameter and radius were computed based on the eccentricity feature, capturing the maximal distance between two nodes. Moreover, they did not show any significant changes. It can be interpreted that although Alzheimer’s affects the brain function, the paths between ROIs that flowing information still exists. Accordingly, none of the brain ROIs is isolated from the rest of the brain. The small worldness architecture of the brain remains in this database. Since there was no sparsification step, it was expected that the degree feature indicates no significant differences. </p>
+      <p>The performance of different correlations methods has been analyzed through global graph measures. Since other studies [ <xref rid="ref21" ref-type="bibr">21</xref>
+, <xref rid="ref34" ref-type="bibr">34</xref>
+] reported functional connectivity changes in DMN to analyze more comprehensively, the measures in DMN were investigated. Furthermore, most of the global measures can
+be computed for a single node. On the other hand, some features, including small worldness related to the whole graph cannot be calculated for a node.
+First of all, the global measures that are available in the nodal analysis were extracted for every node of the DMN network.
+Consequently, there were ten charts for ten ROIs of the DMN. For example, <xref rid="T4" ref-type="table">Table 4</xref> is for frontal superior medial left ROI.
+The boldface <italic>P</italic>-values in <xref rid="T4" ref-type="table">Table 4</xref> shows a statistically significant difference.</p>
+      <table-wrap position="float" id="T4">
+        <label>Table 4</label>
+        <caption>
+          <p><italic>P</italic>-values of the global features extracted for the node number 23 in the Automated Anatomical Labeling (AAL) atlas. The last column ranks the features in all Default Mode Network Regions of Interests (DMN ROIS) based on the number of significant changes.</p>
+        </caption>
+        <table frame="hsides" rules="groups" width="100%">
+          <thead>
+            <tr style="color:#000000;border-bottom:solid #650000 1.0pt;">
+              <th align="center" colspan="1" rowspan="1" valign="top">
+</th>
+              <th align="center" colspan="3" rowspan="1" valign="top"><italic>P</italic>-values</th>
+              <th align="center" colspan="1" rowspan="1" valign="top">
+</th>
+            </tr>
+            <tr>
+              <th align="left" colspan="1" rowspan="1" valign="top">Features</th>
+              <th style="color:#000000;border-bottom:solid #A30F63 1.0pt;" align="center" colspan="1" rowspan="2" valign="middle">Pearson</th>
+              <th style="color:#000000;border-bottom:solid #A30F63 1.0pt;" align="center" colspan="1" rowspan="2" valign="middle">Spearman</th>
+              <th style="color:#000000;border-bottom:solid #A30F63 1.0pt;" align="center" colspan="1" rowspan="2" valign="middle">Kendall</th>
+              <th style="color:#000000;border-bottom:solid #A30F63 1.0pt;" align="center" colspan="1" rowspan="2" valign="middle">Rank (In all ROI)</th>
+            </tr>
+            <tr style="color:#000000;border-bottom:solid #A30F63 1.0pt;">
+              <th align="right" colspan="1" rowspan="1" valign="top">Correlation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="color:#000000;border-bottom:solid #A30F63 1.0pt;">
+              <td align="center" colspan="1" rowspan="1" valign="top">Strength</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.4324</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.3710</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.3881</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">4<sup>th</sup></td>
+            </tr>
+            <tr style="color:#000000;border-bottom:solid #A30F63 1.0pt;">
+              <td align="center" colspan="1" rowspan="1" valign="top">Eccentricity</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.1155</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.3318</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.2591</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">7<sup>th</sup></td>
+            </tr>
+            <tr style="color:#000000;border-bottom:solid #A30F63 1.0pt;">
+              <td align="center" colspan="1" rowspan="1" valign="top">Path Length</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.0012</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.0611</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.0014</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">3<sup>rd</sup></td>
+            </tr>
+            <tr style="color:#000000;border-bottom:solid #A30F63 1.0pt;">
+              <td align="center" colspan="1" rowspan="1" valign="top">Global Efficiency</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.1462</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.2702</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.2444</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">5<sup>th</sup></td>
+            </tr>
+            <tr style="color:#000000;border-bottom:solid #A30F63 1.0pt;">
+              <td align="center" colspan="1" rowspan="1" valign="top">Local Efficiency</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.0792</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.0924</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.0799</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">2<sup>nd</sup></td>
+            </tr>
+            <tr style="color:#000000;border-bottom:solid #A30F63 1.0pt;">
+              <td align="center" colspan="1" rowspan="1" valign="top">Clustering</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.0545</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.0605</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.0515</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">1<sup>st</sup></td>
+            </tr>
+            <tr style="color:#000000;border-bottom:solid #A30F63 1.0pt;">
+              <td align="center" colspan="1" rowspan="1" valign="top">Within Modularity</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.0626</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.1414</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.0625</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">6<sup>th</sup></td>
+            </tr>
+          </tbody>
+        </table>
+        <table-wrap-foot>
+          <p> ROI: Regions of Interest</p>
+        </table-wrap-foot>
+      </table-wrap>
+      <p>In comparison among different correlation methods, based on the number of features displaying significant changes, Pearson, Spearman, and Kendall show a significant difference in 27, 32, and 33 features, respectively out of 70 features (7 different features in 10 ROIs).
+These results were similar to the global measures in the whole network (<xref rid="T3" ref-type="table">Table 3</xref>) and the Spearman and Kendall were more powerful in comparison to Pearson correlation.</p>
+      <p>The eccentricity feature like the whole-brain analysis has no significant difference in neither the ROIs nor correlation methods. On the other hand, clustering, local efficiency, and path length were the features,
+demonstrating the most significant differences respectively. Besides, the last column of <xref rid="T4" ref-type="table">Table 4</xref> displays the ranks of the features based on their number of significant differences in all DMN ROIs.</p>
+      <p>Among the ROIs of the DMN network, the angular area (left and right) and cingulum posterior area (left and right) seemed to be more affected by the AD because more features showed significant difference and these results are in consistent with previous studies [ <xref rid="ref35" ref-type="bibr">35</xref>
+, <xref rid="ref36" ref-type="bibr">36</xref>
+]. Besides, the measures in the left hemisphere of the brain demonstrate more significant changes. Since all the subjects were right-handed, it can be concluded that the
+dominant hemisphere was affected more by the AD. <xref rid="JBPE-13-125-g002.tif" ref-type="fig">Figure 2</xref> exhibits the axial dorsal view of DMN ROIs, sorted based on their affection by AD.</p>
+      <fig position="float" id="JBPE-13-125-g002.tif">
+        <label>Figure 2</label>
+        <caption>
+          <p> Default Mode Network Regions of Interests (DMN ROIS) and their rank according to significant differences in a statistical test.</p>
+          <p>(SFGmed: Frontal Superior Medial, ACG: Cingulum Anterior, PCG: Cingulum Posterior, ANG: Angular, PCUN: Precuneus)</p>
+        </caption>
+        <graphic xlink:href="JBPE-13-125-g002" position="float"/>
+      </fig>
+      <p>As shown in <xref rid="JBPE-13-125-g002.tif" ref-type="fig">Figure 2</xref>, it can be interpreted that the AD disrupts functional connectivity
+in posteriors ROI’s of DMN network more in comparison to frontal ROI’s. </p>
+      <p>Besides the global measures, there are some nodal measures computed only over a single node and do not define in the whole graph.
+These features were calculated in ROI’s of DMN network separately and <xref rid="T5" ref-type="table">Table 5</xref> illustrates the <italic>P</italic>-values for frontal superior medial left ROI.
+The boldface <italic>P</italic>-values in <xref rid="T5" ref-type="table">Table 5</xref> exhibits a statistically significant difference. </p>
+      <table-wrap position="float" id="T5">
+        <label>Table 5</label>
+        <caption>
+          <p>
+<italic>P</italic>-values of the nodal features extracted for the node number 23 in the Automated Anatomical Labeling (AAL) atlas.</p>
+        </caption>
+        <table frame="hsides" rules="groups" width="100%">
+          <thead>
+            <tr style="color:#000000;border-bottom:solid #650000 1.0pt;">
+              <th align="center" colspan="1" rowspan="1" valign="top">
+</th>
+              <th align="center" colspan="3" rowspan="1" valign="top"><italic>P</italic>-values</th>
+            </tr>
+            <tr>
+              <th align="left" colspan="1" rowspan="1" valign="top">Features</th>
+              <th style="color:#000000;border-bottom:solid #A30F63 1.0pt;" align="center" colspan="1" rowspan="2" valign="middle">Pearson</th>
+              <th style="color:#000000;border-bottom:solid #A30F63 1.0pt;" align="center" colspan="1" rowspan="2" valign="middle">Spearman</th>
+              <th style="color:#000000;border-bottom:solid #A30F63 1.0pt;" align="center" colspan="1" rowspan="2" valign="middle">Kendall</th>
+            </tr>
+            <tr style="color:#000000;border-bottom:solid #A30F63 1.0pt;">
+              <th align="right" colspan="1" rowspan="1" valign="top">Correlation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="color:#000000;border-bottom:solid #A30F63 1.0pt;">
+              <td align="center" colspan="1" rowspan="1" valign="top">Triangles</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.0881</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.1149</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.1021</td>
+            </tr>
+            <tr style="color:#000000;border-bottom:solid #A30F63 1.0pt;">
+              <td align="center" colspan="1" rowspan="1" valign="top">Betweenness</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.4382</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.3613</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.3333</td>
+            </tr>
+            <tr style="color:#000000;border-bottom:solid #A30F63 1.0pt;">
+              <td align="center" colspan="1" rowspan="1" valign="top">Closeness</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.0730</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.0926</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.0746</td>
+            </tr>
+            <tr style="color:#000000;border-bottom:solid #A30F63 1.0pt;">
+              <td align="center" colspan="1" rowspan="1" valign="top">Participation</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.0128</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.0121</td>
+              <td align="center" colspan="1" rowspan="1" valign="top">0.0137</td>
+            </tr>
+          </tbody>
+        </table>
+      </table-wrap>
+      <p>All three correlation methods show significant difference in 18 features out of 40 (4 nodal measures on every 10 DMN ROIs); thus, regardless
+of the correlation method the performances of nodal measures extracted from graphs are the same.</p>
+      <p>Among four nodal measures, the triangles and closeness feature exhibits more significant changes and the betweenness demonstrates the least
+significant difference. It is worthwhile to mention that the ranks of ROIs based on nodal measures were as same as global measures (<xref rid="JBPE-13-125-g002.tif" ref-type="fig">Figure 2</xref>). </p>
+    </sec>
+    <sec sec-type="Discussion" id="sec1-4">
+      <title>Discussion</title>
+      <p>This paper aims to investigate and compare the different prevalent correlation methods in generating brain functional graphs. Firstly, the fMRI data of AD patients and control groups were preprocessed and time series were extracted based on AAL atlas. Secondly, the correlation between signals of different ROIs was computed in every subject by 3 different correlation methods. Then, the graph global measures were extracted in the whole brain graph. In another analysis, the global measures were extracted in the DMN network. Moreover, nodal measures in the DMN network were also calculated. In the whole-brain analysis based on global measures, Spearman and Kendall correlations were stronger in discrimination between AD subjects and healthy ones in comparison to the Pearson correlation. Since Spearman and Kendall present more significant difference in global measures in comparison to Pearson, these methods are superior in brain functional connectivity analysis in AD.</p>
+      <p>It is worthwhile to mention that some features, including eccentricity, radius, and diameter (that calculated based on eccentricity) show no significant changes regardless of the correlation method. On the other hand, some features, showing brain functional integration and segregation such as efficiencies, characteristic path length, clustering, and transitivity show significant changes in all three different correlation methods. </p>
+      <p>In DMN network analysis employing global measures, again the Spearman and Kendall were more powerful and show more significant difference. Also, the eccentricity feature shows no significant changes in neither the correlation methods nor DMN ROIs. The most disrupted functional connectivity among DMN ROIs was the posterior, including angular, cingulum posterior, and precuneus ROIs, respectively. On the other hand, the frontal ROI’s had less functional connectivity disruption. Overall, the left hemisphere shows more significant changes. Since the individuals were right-handed, it can be concluded that the functional connectivity of the dominant hemisphere is disrupted more from AD. In the nodal analysis of DMN ROIs, the triangle and closeness features had the most better performance in distinguishing AD cases from the normal group respectively. Also, the performance of different correlation methods were the same approximately. Besides, the functional connectivity disruption in DMN ROIs based on nodal measures was similar to global measures.</p>
+    </sec>
+    <sec sec-type="Conclusion" id="sec1-5">
+      <title>Conclusion</title>
+      <p>In this study, different correlation methods have been evaluated for brain functional network generation. Although there is no gold standard, the most common method is the Pearson correlation coefficient that has limitations in capturing non-linear dependencies. In the used database, the Spearman and Kendall correlation was more powerful. Accordingly, the weakness of Pearson was demonstrated. For further studies, assessing other methods, especially non linear methods such as distance correlation or mutual information, is highly recommended. Furthermore, the investigation of other databases and different types of binary graphs are suggested as well.</p>
+    </sec>
+    <sec>
+      <title>Authors’ Contribution</title>
+      <p>E. Fatemizadeh conceived of the presented idea and developed the theory. E. Fatemizadeh and A. Motie Nasrabadi verified the analytical methods. H. Ahmadi carried out the data analysis and wrote the draft. All authors discussed the results and contributed to the final manuscript.</p>
+    </sec>
+    <sec>
+      <title>Ethical Approval</title>
+      <p>The study was employed the on-line available data. According to the user’s guideline the procedure was conducted in accordance with the Declaration of Helsinki, and the protocol was approved by the Ethics Committee.</p>
+    </sec>
+    <sec>
+      <title>Informed consent</title>
+      <p>The study was employed the on-line available data. According to the user’s guideline the participants were informed and consent to the research.</p>
+    </sec>
+    <sec sec-type="COI-statement">
+      <title>Conflict of Interest</title>
+      <p>None</p>
+    </sec>
+  </body>
+  <back>
+    <ref-list>
+      <title>References</title>
+      <ref id="ref1">
+        <label>1</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bijsterbosch</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Smith</surname>
+              <given-names>SM</given-names>
+            </name>
+            <name>
+              <surname>Beckmann</surname>
+              <given-names>CF</given-names>
+            </name>
+          </person-group>
+          <source> An introduction to resting state fMRI functional connectivity</source>
+          <year>2017</year>
+          <publisher-name>Oxford University Press</publisher-name>
+        </element-citation>
+      </ref>
+      <ref id="ref2">
+        <label>2</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rossini</surname>
+              <given-names>PM</given-names>
+            </name>
+            <name>
+              <surname>Di Iorio</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Bentivoglio</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Bertini</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Ferreri</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Gerloff</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>et</surname>
+              <given-names>al</given-names>
+            </name>
+          </person-group>
+          <article-title> Methods for analysis of brain connectivity: An IFCN-sponsored review</article-title>
+          <source> Clin Neurophysiol</source>
+          <year> 2019</year>
+          <volume>130</volume>
+          <issue>10</issue>
+          <fpage>1833</fpage>
+          <lpage>58</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.clinph.2019.06.006</pub-id>
+          <pub-id pub-id-type="pmid">31401492</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref3">
+        <label>3</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hull</surname>
+              <given-names>JV</given-names>
+            </name>
+            <name>
+              <surname>Dokovna</surname>
+              <given-names>LB</given-names>
+            </name>
+            <name>
+              <surname>Jacokes</surname>
+              <given-names>ZJ</given-names>
+            </name>
+            <name>
+              <surname>Torgerson</surname>
+              <given-names>CM</given-names>
+            </name>
+            <name>
+              <surname>Irimia</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Van Horn</surname>
+              <given-names>JD</given-names>
+            </name>
+          </person-group>
+          <article-title> Resting-state functional connectivity in autism spectrum disorders: a review</article-title>
+          <source> Front Psychiatry</source>
+          <year> 2017</year>
+          <volume>7</volume>
+          <fpage>205</fpage>
+          <comment>[ <ext-link xlink:href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC5209637" ext-link-type="uri">PMC Free Article</ext-link>
+]</comment>
+          <pub-id pub-id-type="doi">10.3389/fpsyt.2016.00205</pub-id>
+          <pub-id pub-id-type="pmid">28101064</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref4">
+        <label>4</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Baggio</surname>
+              <given-names>HC</given-names>
+            </name>
+            <name>
+              <surname>Junqué</surname>
+              <given-names>C</given-names>
+            </name>
+          </person-group>
+          <article-title> Functional MRI in Parkinson’s Disease Cognitive Impairment</article-title>
+          <source> Int Rev Neurobiol</source>
+          <year> 2019</year>
+          <volume>144</volume>
+          <fpage>29</fpage>
+          <lpage>58</lpage>
+          <pub-id pub-id-type="doi">10.1016/bs.irn.2018.09.010</pub-id>
+          <pub-id pub-id-type="pmid">30638456</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref5">
+        <label>5</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hua</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Blair</surname>
+              <given-names>NI</given-names>
+            </name>
+            <name>
+              <surname>Paez</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Choe</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>et</surname>
+              <given-names>al</given-names>
+            </name>
+          </person-group>
+          <article-title> Altered functional connectivity between sub-regions in the thalamus and cortex in schizophrenia patients measured by resting state BOLD fMRI at 7T</article-title>
+          <source> Schizophr Res</source>
+          <year> 2019</year>
+          <volume>206</volume>
+          <fpage>370</fpage>
+          <lpage>7</lpage>
+          <comment>[ <ext-link xlink:href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC6500777" ext-link-type="uri">PMC Free Article</ext-link>
+]</comment>
+          <pub-id pub-id-type="doi">10.1016/j.schres.2018.10.016</pub-id>
+          <pub-id pub-id-type="pmid">30409697</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref6">
+        <label>6</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Farahani</surname>
+              <given-names>FV</given-names>
+            </name>
+            <name>
+              <surname>Karwowski</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Lighthall</surname>
+              <given-names>NR</given-names>
+            </name>
+          </person-group>
+          <article-title> Application of graph theory for identifying connectivity patterns in human brain networks: a systematic review</article-title>
+          <source> Front Neurosci</source>
+          <year> 2019</year>
+          <volume>13</volume>
+          <fpage>585</fpage>
+          <comment>[ <ext-link xlink:href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC6582769" ext-link-type="uri">PMC Free Article</ext-link>
+]</comment>
+          <pub-id pub-id-type="doi">10.3389/fnins.2019.00585</pub-id>
+          <pub-id pub-id-type="pmid">31249501</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref7">
+        <label>7</label>
+        <element-citation publication-type="journal">
+          <collab> Alzheimer’s Association</collab>
+          <article-title> 2019 Alzheimer’s disease facts and figures</article-title>
+          <source> Alzheimer’s Dementia</source>
+          <year> 2019</year>
+          <volume>15</volume>
+          <issue>3</issue>
+          <fpage>321</fpage>
+          <lpage>87</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.jalz.2019.01.010</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref8">
+        <label>8</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Forouzannezhad</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Abbaspour</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Fang</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>et</surname>
+              <given-names>al</given-names>
+            </name>
+          </person-group>
+          <article-title> A survey on applications and analysis methods of functional magnetic resonance imaging for Alzheimer’s disease</article-title>
+          <source> J Neurosci Methods</source>
+          <year> 2019</year>
+          <volume>317</volume>
+          <fpage>121</fpage>
+          <lpage>40</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.jneumeth.2018.12.012</pub-id>
+          <pub-id pub-id-type="pmid">30593787</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref9">
+        <label>9</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dennis</surname>
+              <given-names>EL</given-names>
+            </name>
+            <name>
+              <surname>Thompson</surname>
+              <given-names>PM</given-names>
+            </name>
+          </person-group>
+          <article-title> Functional brain connectivity using fMRI in aging and Alzheimer’s disease</article-title>
+          <source> Neuropsychol Rev</source>
+          <year> 2014</year>
+          <volume>24</volume>
+          <issue>1</issue>
+          <fpage>49</fpage>
+          <lpage>62</lpage>
+          <comment>[ <ext-link xlink:href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4109887" ext-link-type="uri">PMC Free Article</ext-link>
+]</comment>
+          <pub-id pub-id-type="doi">10.1007/s11065-014-9249-6</pub-id>
+          <pub-id pub-id-type="pmid">24562737</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref10">
+        <label>10</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gao</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Zu</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Rogers</surname>
+              <given-names>BP</given-names>
+            </name>
+            <name>
+              <surname>Anderson</surname>
+              <given-names>AW</given-names>
+            </name>
+            <name>
+              <surname>Ding</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Gore</surname>
+              <given-names>JC</given-names>
+            </name>
+          </person-group>
+          <article-title> Progressive degeneration of white matter functional connectivity in Alzheimer’s Disease</article-title>
+          <year>2019</year>
+          <conf-name>Proceedings Volume 10953, Medical Imaging 2019: Biomedical Applications in Molecular, Structural, and Functional Imaging</conf-name>
+          <publisher-loc>San Diego, California, United States</publisher-loc>
+          <publisher-name>SPIE</publisher-name>
+          <pub-id pub-id-type="doi">10.1117/12.2512919</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref11">
+        <label>11</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>De Vos</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Koini</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Schouten</surname>
+              <given-names>TM</given-names>
+            </name>
+            <name>
+              <surname>Seiler</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>et</surname>
+              <given-names>al</given-names>
+            </name>
+          </person-group>
+          <article-title> A comprehensive analysis of resting state fMRI measures to classify individual patients with Alzheimer’s disease</article-title>
+          <source> Neuroimage</source>
+          <year> 2018</year>
+          <volume>167</volume>
+          <fpage>62</fpage>
+          <lpage>72</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2017.11.025</pub-id>
+          <pub-id pub-id-type="pmid">29155080</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref12">
+        <label>12</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rathore</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Habes</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Iftikhar</surname>
+              <given-names>MA</given-names>
+            </name>
+            <name>
+              <surname>Shacklett</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Davatzikos</surname>
+              <given-names>C</given-names>
+            </name>
+          </person-group>
+          <article-title> A review on neuroimaging-based classification studies and associated feature extraction methods for Alzheimer’s disease and its prodromal stages</article-title>
+          <source> Neuroimage</source>
+          <year> 2017</year>
+          <volume>155</volume>
+          <fpage>530</fpage>
+          <lpage>48</lpage>
+          <comment>[ <ext-link xlink:href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC5511557" ext-link-type="uri">PMC Free Article</ext-link>
+]</comment>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2017.03.057</pub-id>
+          <pub-id pub-id-type="pmid">28414186</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref13">
+        <label>13</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Meszlényi</surname>
+              <given-names>RJ</given-names>
+            </name>
+            <name>
+              <surname>Buza</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Vidnyánszky</surname>
+              <given-names>Z</given-names>
+            </name>
+          </person-group>
+          <article-title> Resting state fMRI functional connectivity-based classification using a convolutional neural network architecture</article-title>
+          <source> Front Neuroinform</source>
+          <year> 2017</year>
+          <volume>11</volume>
+          <fpage>61</fpage>
+          <comment>[ <ext-link xlink:href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC5651030" ext-link-type="uri">PMC Free Article</ext-link>
+]</comment>
+          <pub-id pub-id-type="doi">10.3389/fninf.2017.00061</pub-id>
+          <pub-id pub-id-type="pmid">29089883</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref14">
+        <label>14</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Franzmeier</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Caballero</surname>
+              <given-names>MA</given-names>
+            </name>
+            <name>
+              <surname>Taylor</surname>
+              <given-names>AN</given-names>
+            </name>
+            <name>
+              <surname>Simon-Vermot</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Buerger</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>et</surname>
+              <given-names>al</given-names>
+            </name>
+          </person-group>
+          <article-title> Resting-state global functional connectivity as a biomarker of cognitive reserve in mild cognitive impairment</article-title>
+          <source> Brain Imaging Behav</source>
+          <year> 2017</year>
+          <volume>11</volume>
+          <issue>2</issue>
+          <fpage>368</fpage>
+          <lpage>82</lpage>
+          <pub-id pub-id-type="doi">10.1007/s11682-016-9599-1</pub-id>
+          <pub-id pub-id-type="pmid">27709513</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref15">
+        <label>15</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cai</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Chong</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Peng</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Shen</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Von Deneen</surname>
+              <given-names>KM</given-names>
+            </name>
+            <name>
+              <surname>Huang</surname>
+              <given-names>L</given-names>
+            </name>
+          </person-group>
+          <article-title> Altered functional brain networks in amnestic mild cognitive impairment: a resting-state fMRI study</article-title>
+          <source> Brain Imaging Behav</source>
+          <year> 2017</year>
+          <volume>11</volume>
+          <issue>3</issue>
+          <fpage>619</fpage>
+          <lpage>31</lpage>
+          <pub-id pub-id-type="doi">10.1007/s11682-016-9539-0</pub-id>
+          <pub-id pub-id-type="pmid">26972578</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref16">
+        <label>16</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dai</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Lin</surname>
+              <given-names>Q</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Yuan</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>et</surname>
+              <given-names>al</given-names>
+            </name>
+          </person-group>
+          <article-title> Disrupted structural and functional brain networks in Alzheimer’s disease</article-title>
+          <source> Neurobiol Aging</source>
+          <year> 2019</year>
+          <volume>75</volume>
+          <fpage>71</fpage>
+          <lpage>82</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neurobiolaging.2018.11.005.m</pub-id>
+          <pub-id pub-id-type="pmid">30553155</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref17">
+        <label>17</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hlinka</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Paluš</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Vejmelka</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Mantini</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Corbetta</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title> Functional connectivity in resting-state fMRI: is linear correlation sufficient?</article-title>
+          <source> Neuroimage</source>
+          <year> 2011</year>
+          <volume>54</volume>
+          <issue>3</issue>
+          <fpage>2218</fpage>
+          <lpage>25</lpage>
+          <comment>[ <ext-link xlink:href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4139498" ext-link-type="uri">PMC Free Article</ext-link>
+]</comment>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2010.08.042</pub-id>
+          <pub-id pub-id-type="pmid">20800096</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref18">
+        <label>18</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bowyer</surname>
+              <given-names>SM</given-names>
+            </name>
+          </person-group>
+          <article-title> Coherence a measure of the brain networks: past and present</article-title>
+          <source> Neuropsychiatric Electrophysiology</source>
+          <year> 2016</year>
+          <volume>2</volume>
+          <issue>1</issue>
+          <fpage>1</fpage>
+          <lpage>2</lpage>
+          <pub-id pub-id-type="doi">10.1186/s40810-015-0015-7</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref19">
+        <label>19</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chirles</surname>
+              <given-names>TJ</given-names>
+            </name>
+            <name>
+              <surname>Reiter</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Weiss</surname>
+              <given-names>LR</given-names>
+            </name>
+            <name>
+              <surname>Alfini</surname>
+              <given-names>AJ</given-names>
+            </name>
+            <name>
+              <surname>et</surname>
+              <given-names>al</given-names>
+            </name>
+          </person-group>
+          <article-title> Exercise training and functional connectivity changes in mild cognitive impairment and healthy elders</article-title>
+          <source> J Alzheimers Dis</source>
+          <year> 2017</year>
+          <volume>57</volume>
+          <issue>3</issue>
+          <fpage>845</fpage>
+          <lpage>56</lpage>
+          <comment>[ <ext-link xlink:href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC6472271" ext-link-type="uri">PMC Free Article</ext-link>
+]</comment>
+          <pub-id pub-id-type="doi">10.3233/JAD-161151</pub-id>
+          <pub-id pub-id-type="pmid">28304298</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref20">
+        <label>20</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhao</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Ding</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Du</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Men</surname>
+              <given-names>G</given-names>
+            </name>
+          </person-group>
+          <article-title> Functional connectivity between white matter and gray matter based on fMRI for Alzheimer’s disease classification</article-title>
+          <source> Brain Behav</source>
+          <year> 2019</year>
+          <volume>9</volume>
+          <issue>10</issue>
+          <fpage>e01407</fpage>
+          <comment>[ <ext-link xlink:href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC6790327" ext-link-type="uri">PMC Free Article</ext-link>
+]</comment>
+          <pub-id pub-id-type="doi">10.1002/brb3.1407</pub-id>
+          <pub-id pub-id-type="pmid">31512413</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref21">
+        <label>21</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yamashita</surname>
+              <given-names>KI</given-names>
+            </name>
+            <name>
+              <surname>Uehara</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Prawiroharjo</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>et</surname>
+              <given-names>al</given-names>
+            </name>
+          </person-group>
+          <article-title> Functional connectivity change between posterior cingulate cortex and ventral attention network relates to the impairment of orientation for time in Alzheimer’s disease patients</article-title>
+          <source> Brain Imaging Behav</source>
+          <year> 2019</year>
+          <volume>13</volume>
+          <issue>1</issue>
+          <fpage>154</fpage>
+          <lpage>61</lpage>
+          <pub-id pub-id-type="doi">10.1007/s11682-018-9860-x</pub-id>
+          <pub-id pub-id-type="pmid">29644521</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref22">
+        <label>22</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mueller</surname>
+              <given-names>SG</given-names>
+            </name>
+            <name>
+              <surname>Weiner</surname>
+              <given-names>MW</given-names>
+            </name>
+            <name>
+              <surname>Thal</surname>
+              <given-names>LJ</given-names>
+            </name>
+            <name>
+              <surname>et</surname>
+              <given-names>al</given-names>
+            </name>
+          </person-group>
+          <article-title> The Alzheimer’s disease neuroimaging initiative</article-title>
+          <source> Neuroimaging Clin N Am</source>
+          <year> 2005</year>
+          <volume>15</volume>
+          <issue>4</issue>
+          <fpage>869</fpage>
+          <lpage>77</lpage>
+          <comment>[ <ext-link xlink:href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2376747" ext-link-type="uri">PMC Free Article</ext-link>
+]</comment>
+          <pub-id pub-id-type="doi">10.1016/j.nic.2005.09.008</pub-id>
+          <pub-id pub-id-type="pmid">16443497</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref23">
+        <label>23</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Petersen</surname>
+              <given-names>RC</given-names>
+            </name>
+            <name>
+              <surname>Aisen</surname>
+              <given-names>PS</given-names>
+            </name>
+            <name>
+              <surname>Beckett</surname>
+              <given-names>LA</given-names>
+            </name>
+            <name>
+              <surname>et</surname>
+              <given-names>al</given-names>
+            </name>
+          </person-group>
+          <article-title> Alzheimer’s disease neuroimaging initiative (ADNI): clinical characterization</article-title>
+          <source> Neurology</source>
+          <year> 2010</year>
+          <volume>74</volume>
+          <issue>3</issue>
+          <fpage>201</fpage>
+          <lpage>9</lpage>
+          <comment>[ <ext-link xlink:href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2809036" ext-link-type="uri">PMC Free Article</ext-link>
+]</comment>
+          <pub-id pub-id-type="doi">10.1212/WNL.0b013e3181cb3e25</pub-id>
+          <pub-id pub-id-type="pmid">20042704</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref24">
+        <label>24</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jack</surname>
+              <given-names>Jr CR</given-names>
+            </name>
+            <name>
+              <surname>Bernstein</surname>
+              <given-names>MA</given-names>
+            </name>
+            <name>
+              <surname>Fox</surname>
+              <given-names>NC</given-names>
+            </name>
+            <name>
+              <surname>et</surname>
+              <given-names>al</given-names>
+            </name>
+          </person-group>
+          <article-title> The Alzheimer’s disease neuroimaging initiative (ADNI): MRI methods</article-title>
+          <source> J Magn Reson Imaging</source>
+          <year> 2008</year>
+          <volume>27</volume>
+          <issue>4</issue>
+          <fpage>685</fpage>
+          <lpage>91</lpage>
+          <comment>[ <ext-link xlink:href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2544629" ext-link-type="uri">PMC Free Article</ext-link>
+]</comment>
+          <pub-id pub-id-type="doi">10.1002/jmri.21049</pub-id>
+          <pub-id pub-id-type="pmid">18302232</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref25">
+        <label>25</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yan</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Zang</surname>
+              <given-names>Y</given-names>
+            </name>
+          </person-group>
+          <article-title> DPARSF: a MATLAB toolbox for” pipeline” data analysis of resting-state fMRI</article-title>
+          <source> Front Syst Neurosci</source>
+          <year> 2010</year>
+          <volume>4</volume>
+          <fpage>13</fpage>
+          <comment>[ <ext-link xlink:href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2889691" ext-link-type="uri">PMC Free Article</ext-link>
+]</comment>
+          <pub-id pub-id-type="doi">10.3389/fnsys.2010.00013</pub-id>
+          <pub-id pub-id-type="pmid">20577591</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref26">
+        <label>26</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tzourio-Mazoyer</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Landeau</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Papathanassiou</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>et</surname>
+              <given-names>al</given-names>
+            </name>
+          </person-group>
+          <article-title> Automated anatomical labeling of activations in SPM using a macroscopic anatomical parcellation of the MNI MRI single-subject brain</article-title>
+          <source> Neuroimage</source>
+          <year> 2002</year>
+          <volume>15</volume>
+          <issue>1</issue>
+          <fpage>273</fpage>
+          <lpage>89</lpage>
+          <pub-id pub-id-type="doi">10.1006/nimg.2001.0978</pub-id>
+          <pub-id pub-id-type="pmid">11771995</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref27">
+        <label>27</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Benesty</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Huang</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Cohen</surname>
+              <given-names>I</given-names>
+            </name>
+          </person-group>
+          <article-title> Pearson correlation coefficient</article-title>
+          <year>2009</year>
+          <conf-name>Noise Reduction in Speech Processing</conf-name>
+          <publisher-loc>Berlin, Heidelberg</publisher-loc>
+          <publisher-name>Springer Topics in Signal Processing</publisher-name>
+          <fpage>1</fpage>
+          <lpage>4</lpage>
+        </element-citation>
+      </ref>
+      <ref id="ref28">
+        <label>28</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Myers</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Sirois</surname>
+              <given-names>MJ</given-names>
+            </name>
+          </person-group>
+          <article-title> Spearman correlation coefficients, differences between</article-title>
+          <source> Encyclopedia of Statistical Sciences</source>
+          <year> 2004</year>
+          <pub-id pub-id-type="doi">10.1002/0471667196.ess5050.pub2</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref29">
+        <label>29</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Akoglu</surname>
+              <given-names>H</given-names>
+            </name>
+          </person-group>
+          <article-title> User’s guide to correlation coefficients</article-title>
+          <source> Turk J Emerg Med</source>
+          <year> 2018</year>
+          <volume>18</volume>
+          <issue>3</issue>
+          <fpage>91</fpage>
+          <lpage>3</lpage>
+          <comment>[ <ext-link xlink:href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC6107969" ext-link-type="uri">PMC Free Article</ext-link>
+]</comment>
+          <pub-id pub-id-type="doi">10.1016/j.tjem.2018.08.001</pub-id>
+          <pub-id pub-id-type="pmid">30191186</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref30">
+        <label>30</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ehtemami</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Scott</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Bernadin</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <article-title> A Survey of FMRI Data Analysis Methods</article-title>
+          <year>2018</year>
+          <conf-name>SoutheastCon</conf-name>
+          <publisher-loc>USA</publisher-loc>
+          <publisher-name>IEEE</publisher-name>
+          <fpage>1</fpage>
+          <lpage>7</lpage>
+        </element-citation>
+      </ref>
+      <ref id="ref31">
+        <label>31</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bullmore</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Sporns</surname>
+              <given-names>O</given-names>
+            </name>
+          </person-group>
+          <article-title> Complex brain networks: graph theoretical analysis of structural and functional systems</article-title>
+          <source> Nat Rev Neurosci</source>
+          <year> 2009</year>
+          <volume>10</volume>
+          <issue>3</issue>
+          <fpage>186</fpage>
+          <lpage>98</lpage>
+          <pub-id pub-id-type="doi">10.1038/nrn2575</pub-id>
+          <pub-id pub-id-type="pmid">19190637</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref32">
+        <label>32</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rubinov</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Sporns</surname>
+              <given-names>O</given-names>
+            </name>
+          </person-group>
+          <article-title> Complex network measures of brain connectivity: uses and interpretations</article-title>
+          <source> Neuroimage</source>
+          <year> 2010</year>
+          <volume>52</volume>
+          <issue>3</issue>
+          <fpage>1059</fpage>
+          <lpage>69</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neuroimage.2009.10.003</pub-id>
+          <pub-id pub-id-type="pmid">19819337</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref33">
+        <label>33</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Meghanathan</surname>
+              <given-names>N</given-names>
+            </name>
+          </person-group>
+          <article-title> Assortativity Analysis of Real-World Network Graphs based on Centrality Metrics</article-title>
+          <source> Computer and Information Science</source>
+          <year> 2016</year>
+          <volume>9</volume>
+          <issue>3</issue>
+          <fpage>7</fpage>
+          <lpage>25</lpage>
+          <pub-id pub-id-type="doi">10.5539/cis.v9n3p7</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref34">
+        <label>34</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Qian</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Fischer</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Churchill</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Kumar</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>et</surname>
+              <given-names>al</given-names>
+            </name>
+          </person-group>
+          <article-title> Decreased Default Mode Network Functional Connectivity in Alzheimer’s Disease Patients with Delusions</article-title>
+          <source> Am J Geriatr Psychiatry</source>
+          <year> 2019</year>
+          <volume>27</volume>
+          <issue>10</issue>
+          <fpage>1060</fpage>
+          <lpage>8</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.jagp.2019.03.020</pub-id>
+          <pub-id pub-id-type="pmid">31130416</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref35">
+        <label>35</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Filippi</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Basaia</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Canu</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Galantucci</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>et</surname>
+              <given-names>al</given-names>
+            </name>
+          </person-group>
+          <article-title> Structural and functional brain connectome architecture in Alzheimer’s disease and amnesic mild cognitive impairment patients (P4. 091)</article-title>
+          <source> J Neurology</source>
+          <year> 2017</year>
+          <volume>88</volume>
+          <issue>16 Supplement</issue>
+          <fpage>P4.091</fpage>
+        </element-citation>
+      </ref>
+      <ref id="ref36">
+        <label>36</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Liang</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Zhao</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>et</surname>
+              <given-names>al</given-names>
+            </name>
+          </person-group>
+          <article-title> Disrupted functional connectivity related to differential degeneration of the cingulum bundle in mild cognitive impairment patients</article-title>
+          <source> Curr Alzheimer Res</source>
+          <year> 2015</year>
+          <volume>12</volume>
+          <issue>3</issue>
+          <fpage>255</fpage>
+          <lpage>65</lpage>
+          <pub-id pub-id-type="doi">10.2174/1567205012666150302155336</pub-id>
+          <pub-id pub-id-type="pmid">25731624</pub-id>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

@@ -1,0 +1,1603 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.3" xml:lang="en" article-type="research-article">
+  <?properties open_access?>
+  <processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats">
+    <restricted-by>pmc</restricted-by>
+  </processing-meta>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">Front Aging Neurosci</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Front Aging Neurosci</journal-id>
+      <journal-id journal-id-type="publisher-id">Front. Aging Neurosci.</journal-id>
+      <journal-title-group>
+        <journal-title>Frontiers in Aging Neuroscience</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1663-4365</issn>
+      <publisher>
+        <publisher-name>Frontiers Media S.A.</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">35774112</article-id>
+      <article-id pub-id-type="pmc">9237212</article-id>
+      <article-id pub-id-type="doi">10.3389/fnagi.2022.866230</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Neuroscience</subject>
+          <subj-group>
+            <subject>Original Research</subject>
+          </subj-group>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Automated Classification of Mild Cognitive Impairment by Machine Learning With Hippocampus-Related White Matter Network</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Zhou</surname>
+            <given-names>Yu</given-names>
+          </name>
+          <xref rid="aff1" ref-type="aff">
+<sup>1</sup>
+</xref>
+          <xref rid="fn002" ref-type="author-notes">
+<sup>†</sup>
+</xref>
+        </contrib>
+        <contrib contrib-type="author" corresp="yes">
+          <name>
+            <surname>Si</surname>
+            <given-names>Xiaopeng</given-names>
+          </name>
+          <xref rid="aff2" ref-type="aff">
+<sup>2</sup>
+</xref>
+          <xref rid="aff3" ref-type="aff">
+<sup>3</sup>
+</xref>
+          <xref rid="aff4" ref-type="aff">
+<sup>4</sup>
+</xref>
+          <xref rid="c001" ref-type="corresp">
+<sup>*</sup>
+</xref>
+          <xref rid="fn002" ref-type="author-notes">
+<sup>†</sup>
+</xref>
+          <uri xlink:href="http://loop.frontiersin.org/people/1296783/overview"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Chao</surname>
+            <given-names>Yi-Ping</given-names>
+          </name>
+          <xref rid="aff5" ref-type="aff">
+<sup>5</sup>
+</xref>
+          <xref rid="aff6" ref-type="aff">
+<sup>6</sup>
+</xref>
+          <uri xlink:href="http://loop.frontiersin.org/people/45894/overview"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Chen</surname>
+            <given-names>Yuanyuan</given-names>
+          </name>
+          <xref rid="aff2" ref-type="aff">
+<sup>2</sup>
+</xref>
+          <xref rid="aff3" ref-type="aff">
+<sup>3</sup>
+</xref>
+          <uri xlink:href="http://loop.frontiersin.org/people/238308/overview"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Lin</surname>
+            <given-names>Ching-Po</given-names>
+          </name>
+          <xref rid="aff7" ref-type="aff">
+<sup>7</sup>
+</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Li</surname>
+            <given-names>Sicheng</given-names>
+          </name>
+          <xref rid="aff2" ref-type="aff">
+<sup>2</sup>
+</xref>
+          <xref rid="aff3" ref-type="aff">
+<sup>3</sup>
+</xref>
+          <uri xlink:href="http://loop.frontiersin.org/people/1771040/overview"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Zhang</surname>
+            <given-names>Xingjian</given-names>
+          </name>
+          <xref rid="aff2" ref-type="aff">
+<sup>2</sup>
+</xref>
+          <xref rid="aff3" ref-type="aff">
+<sup>3</sup>
+</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Sun</surname>
+            <given-names>Yulin</given-names>
+          </name>
+          <xref rid="aff2" ref-type="aff">
+<sup>2</sup>
+</xref>
+          <xref rid="aff3" ref-type="aff">
+<sup>3</sup>
+</xref>
+        </contrib>
+        <contrib contrib-type="author" corresp="yes">
+          <name>
+            <surname>Ming</surname>
+            <given-names>Dong</given-names>
+          </name>
+          <xref rid="aff2" ref-type="aff">
+<sup>2</sup>
+</xref>
+          <xref rid="aff3" ref-type="aff">
+<sup>3</sup>
+</xref>
+          <xref rid="c002" ref-type="corresp">
+<sup>*</sup>
+</xref>
+          <uri xlink:href="http://loop.frontiersin.org/people/180351/overview"/>
+        </contrib>
+        <contrib contrib-type="author" corresp="yes">
+          <name>
+            <surname>Li</surname>
+            <given-names>Qiang</given-names>
+          </name>
+          <xref rid="aff1" ref-type="aff">
+<sup>1</sup>
+</xref>
+          <xref rid="c003" ref-type="corresp">
+<sup>*</sup>
+</xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1"><sup>1</sup><institution>School of Microelectronics, Tianjin University</institution>, <addr-line>Tianjin</addr-line>, <country>China</country></aff>
+      <aff id="aff2"><sup>2</sup><institution>Academy of Medical Engineering and Translational Medicine, Tianjin University</institution>, <addr-line>Tianjin</addr-line>, <country>China</country></aff>
+      <aff id="aff3"><sup>3</sup><institution>Tianjin Key Laboratory of Brain Science and Neural Engineering, Tianjin University</institution>, <addr-line>Tianjin</addr-line>, <country>China</country></aff>
+      <aff id="aff4"><sup>4</sup><institution>Institute of Applied Psychology, Tianjin University</institution>, <addr-line>Tianjin</addr-line>, <country>China</country></aff>
+      <aff id="aff5"><sup>5</sup><institution>Graduate Institute of Biomedical Engineering, Chang Gung University</institution>, <addr-line>Taoyuan</addr-line>, <country>Taiwan</country></aff>
+      <aff id="aff6"><sup>6</sup><institution>Department of Computer Science and Information Engineering, Chang Gung University</institution>, <addr-line>Taoyuan</addr-line>, <country>Taiwan</country></aff>
+      <aff id="aff7"><sup>7</sup><institution>Institute of Neuroscience, National Yang Ming Chiao Tung University</institution>, <addr-line>Hsinchu</addr-line>, <country>Taiwan</country></aff>
+      <author-notes>
+        <fn fn-type="edited-by">
+          <p>Edited by: Peng Xu, University of Electronic Science and Technology of China, China</p>
+        </fn>
+        <fn fn-type="edited-by">
+          <p>Reviewed by: Yong Liu, Beijing University of Posts and Telecommunications (BUPT), China; Xujun Duan, University of Electronic Science and Technology of China, China; Dong Wen, University of Science and Technology Beijing, China</p>
+        </fn>
+        <corresp id="c001">*Correspondence: Xiaopeng Si, <email>xiaopengsi@tju.edu.cn</email></corresp>
+        <corresp id="c002">Dong Ming, <email>richardming@tju.edu.cn</email></corresp>
+        <corresp id="c003">Qiang Li, <email>liqiang@tju.edu.cn</email></corresp>
+        <fn fn-type="equal" id="fn002">
+          <p><sup>†</sup>These authors have contributed equally to this work</p>
+        </fn>
+        <fn fn-type="other" id="fn004">
+          <p>This article was submitted to Alzheimer’s Disease and Related Dementias, a section of the journal Frontiers in Aging Neuroscience</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="epub">
+        <day>14</day>
+        <month>6</month>
+        <year>2022</year>
+      </pub-date>
+      <pub-date pub-type="collection">
+        <year>2022</year>
+      </pub-date>
+      <volume>14</volume>
+      <elocation-id>866230</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>31</day>
+          <month>1</month>
+          <year>2022</year>
+        </date>
+        <date date-type="accepted">
+          <day>21</day>
+          <month>3</month>
+          <year>2022</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Copyright © 2022 Zhou, Si, Chao, Chen, Lin, Li, Zhang, Sun, Ming and Li.</copyright-statement>
+        <copyright-year>2022</copyright-year>
+        <copyright-holder>Zhou, Si, Chao, Chen, Lin, Li, Zhang, Sun, Ming and Li</copyright-holder>
+        <license>
+          <ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref>
+          <license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY). The use, distribution or reproduction in other forums is permitted, provided the original author(s) and the copyright owner(s) are credited and that the original publication in this journal is cited, in accordance with accepted academic practice. No use, distribution or reproduction is permitted which does not comply with these terms.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <sec>
+          <title>Background</title>
+          <p>Detection of mild cognitive impairment (MCI) is essential to screen high risk of Alzheimer’s disease (AD). However, subtle changes during MCI make it challenging to classify in machine learning. The previous pathological analysis pointed out that the hippocampus is the critical hub for the white matter (WM) network of MCI. Damage to the white matter pathways around the hippocampus is the main cause of memory decline in MCI. Therefore, it is vital to biologically extract features from the WM network driven by hippocampus-related regions to improve classification performance.</p>
+        </sec>
+        <sec>
+          <title>Methods</title>
+          <p>Our study proposes a method for feature extraction of the whole-brain WM network. First, 42 MCI and 54 normal control (NC) subjects were recruited using diffusion tensor imaging (DTI), resting-state functional magnetic resonance imaging (rs-fMRI), and T1-weighted (T1w) imaging. Second, mean diffusivity (MD) and fractional anisotropy (FA) were calculated from DTI, and the whole-brain WM networks were obtained. Third, regions of interest (ROIs) with significant functional connectivity to the hippocampus were selected for feature extraction, and the hippocampus (HIP)-related WM networks were obtained. Furthermore, the rank sum test with Bonferroni correction was used to retain significantly different connectivity between MCI and NC, and significant HIP-related WM networks were obtained. Finally, the classification performances of these three WM networks were compared to select the optimal feature and classifier.</p>
+        </sec>
+        <sec>
+          <title>Results</title>
+          <p>(1) For the features, the whole-brain WM network, HIP-related WM network, and significant HIP-related WM network are significantly improved in turn. Also, the accuracy of MD networks as features is better than FA. (2) For the classification algorithm, the support vector machine (SVM) classifier with radial basis function, taking the significant HIP-related WM network in MD as a feature, has the optimal classification performance (accuracy = 89.4%, AUC = 0.954). (3) For the pathologic mechanism, the hippocampus and thalamus are crucial hubs of the WM network for MCI.</p>
+        </sec>
+        <sec>
+          <title>Conclusion</title>
+          <p>Feature extraction from the WM network driven by hippocampus-related regions provides an effective method for the early diagnosis of AD.</p>
+        </sec>
+      </abstract>
+      <kwd-group>
+        <kwd>mild cognitive impairment</kwd>
+        <kwd>white matter connectivity</kwd>
+        <kwd>Alzheimer’s disease</kwd>
+        <kwd>early diagnosis</kwd>
+        <kwd>feature extraction</kwd>
+        <kwd>machine learning</kwd>
+      </kwd-group>
+      <funding-group>
+        <award-group>
+          <funding-source id="cn001">
+            <institution-wrap>
+              <institution>National Natural Science Foundation of China</institution>
+              <institution-id institution-id-type="doi">10.13039/501100001809</institution-id>
+            </institution-wrap>
+          </funding-source>
+          <award-id award-type="contract" rid="cn001">61906132</award-id>
+          <award-id award-type="contract" rid="cn001">81925020</award-id>
+          <award-id award-type="contract" rid="cn001">61471263</award-id>
+        </award-group>
+        <award-group>
+          <funding-source id="cn002">
+            <institution-wrap>
+              <institution>Natural Science Foundation of Tianjin City</institution>
+              <institution-id institution-id-type="doi">10.13039/501100006606</institution-id>
+            </institution-wrap>
+          </funding-source>
+          <award-id award-type="contract" rid="cn002">16JCZDJC31100</award-id>
+        </award-group>
+        <award-group>
+          <funding-source id="cn003">
+            <institution-wrap>
+              <institution>Chang Gung University</institution>
+              <institution-id institution-id-type="doi">10.13039/501100002836</institution-id>
+            </institution-wrap>
+          </funding-source>
+          <award-id award-type="contract" rid="cn003">BMRPC78</award-id>
+        </award-group>
+      </funding-group>
+      <counts>
+        <fig-count count="6"/>
+        <table-count count="5"/>
+        <equation-count count="0"/>
+        <ref-count count="52"/>
+        <page-count count="14"/>
+        <word-count count="8613"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec sec-type="intro" id="S1">
+      <title>Introduction</title>
+      <p>Alzheimer’s disease (AD) is a chronic neurodegenerative disease with irreversible progression (<xref rid="B35" ref-type="bibr">Sperling et al., 2011</xref>; <xref rid="B18" ref-type="bibr">Hyman et al., 2012</xref>). Mild cognitive impairment (MCI) is the prodromal stage of AD (<xref rid="B30" ref-type="bibr">Petersen et al., 1999</xref>; <xref rid="B14" ref-type="bibr">Gauthier et al., 2006</xref>). The primary clinical manifestation of MCI is memory loss (<xref rid="B29" ref-type="bibr">Petersen et al., 2001</xref>). Since the progression of AD is irreversible and the treatment of AD has little effect, the detection of MCI is expected to find out the high risk of AD and further prevent its occurrence (<xref rid="B19" ref-type="bibr">Jacobs et al., 2013</xref>; <xref rid="B39" ref-type="bibr">Wang et al., 2013</xref>). However, the subtle changes of brain microstructure in MCI make it challenging to distinguish the disease from conventional radiography (<xref rid="B28" ref-type="bibr">Pellegrini et al., 2018</xref>). Therefore, establishing reliable biomarkers to diagnose MCI in the early stages remains challenging.</p>
+      <p>According to the biomarker modeling of AD, white matter demyelination has been proved to appear earlier during AD progression than abnormal changes of gray matter and functional connectivity (<xref rid="B51" ref-type="bibr">Zhuang et al., 2012</xref>; <xref rid="B22" ref-type="bibr">Lee et al., 2015</xref>). Recent studies have shown that genes and protein molecules ultimately cause microstructure changes in specific white matter fibers (<xref rid="B45" ref-type="bibr">Yu et al., 2021</xref>; <xref rid="B49" ref-type="bibr">Zhao et al., 2021</xref>). Thus, white matter degeneration is a valid biomarker for MCI. Diffusion tensor imaging (DTI) could detect subtle structural changes in white matter fibers, facilitating large-scale non-invasive screening (<xref rid="B38" ref-type="bibr">Tournier, 2019</xref>). The DTI index, mean diffusivity (MD), and fractional anisotropy (FA) describe fiber tracts’ state.</p>
+      <p>Machine learning offers a systematic approach to developing advanced, automatic, and objective classification frameworks for MCI diagnosis. The classification framework mainly includes feature extraction and classification algorithms (<xref rid="B32" ref-type="bibr">Rathore et al., 2017</xref>). Although there are plenty of studies on AD classification, there is insufficient research on MCI (<xref rid="B34" ref-type="bibr">Shatte et al., 2019</xref>). The classification accuracies for AD were all around 80%, while the accuracies for MCI were only about 60% (<xref rid="B42" ref-type="bibr">Wee et al., 2011</xref>; <xref rid="B12" ref-type="bibr">Dyrba et al., 2013</xref>, <xref rid="B10" ref-type="bibr">2015a</xref>; <xref rid="B27" ref-type="bibr">Nir et al., 2015</xref>; <xref rid="B31" ref-type="bibr">Prasad et al., 2015</xref>; <xref rid="B8" ref-type="bibr">Dou et al., 2020</xref>). The main reason is that whole-brain changes in AD are so significant that can be classified with high accuracy by the features of white matter, gray matter, and functional connectivity. In contrast, changes in MCI are not obvious for the whole brain. However, the progression of AD is irreversible. Early diagnosis of MCI fascinates high-risk screening of AD in time.</p>
+      <p>Previous studies focused on the classification algorithm to improve classification performance. Existing researchers found that k-nearest neighbor (KNN) (<xref rid="B13" ref-type="bibr">Ebadi et al., 2017</xref>), random forest (RF) (<xref rid="B25" ref-type="bibr">Maggipinto et al., 2017</xref>; <xref rid="B40" ref-type="bibr">Wang et al., 2018</xref>), and support vector machine (SVM) (<xref rid="B5" ref-type="bibr">Cui et al., 2012</xref>; <xref rid="B7" ref-type="bibr">Demirhan et al., 2015</xref>; <xref rid="B10" ref-type="bibr">Dyrba et al., 2015a</xref>; <xref rid="B27" ref-type="bibr">Nir et al., 2015</xref>; <xref rid="B43" ref-type="bibr">Xie et al., 2015</xref>; <xref rid="B1" ref-type="bibr">Ahmed et al., 2017</xref>) have achieved better classification performance for MCI when taking the white matter as a feature. KNN is based on Euclid’s theorem and is classified by measuring the distance between different features. RF integrates many decision trees into a forest and combines them for predicting. SVM is based on statistical theory to solve two classification problems, mainly introducing kernel function to solve the problem of linear inseparability. However, previous studies only attached importance to algorithms while neglecting the features. In fact, selecting the appropriate modality in the data and extracting suitable features are usually more important than the underlying algorithm (<xref rid="B48" ref-type="bibr">Zhang et al., 2021</xref>).</p>
+      <p>The white matter feature extraction methods for MCI classification mainly include specific fiber tracking and the whole-brain white matter network (WM network). The specific fiber tracking method takes features using the fiber tracts that converge between localized brain regions and calculates the DTI index of voxels on a single fiber tract. However, this method focused on a specific fiber tract and had low classification accuracy (<xref rid="B27" ref-type="bibr">Nir et al., 2015</xref>; <xref rid="B8" ref-type="bibr">Dou et al., 2020</xref>). In the whole-brain white matter connectivity network approach, DTI images were segmented into several anatomical regions and features based on the metrics calculated from the fibers within these regions (<xref rid="B42" ref-type="bibr">Wee et al., 2011</xref>; <xref rid="B31" ref-type="bibr">Prasad et al., 2015</xref>). Recent studies had started to use multimodality for feature extraction. DTI, T1-weighted (T1w), and resting-state functional MRI (rs-fMRI) images from different modes were used to capture information from different perspectives (<xref rid="B17" ref-type="bibr">Hinrichs et al., 2011</xref>; <xref rid="B23" ref-type="bibr">Liu et al., 2014</xref>). However, most studies had concatenated the features from different modalities. The disadvantage is that all features are treated equally, and it provides no way to account for the diverse nature of features extracted from different modalities (<xref rid="B47" ref-type="bibr">Zhang et al., 2011</xref>, <xref rid="B46" ref-type="bibr">2012</xref>; <xref rid="B11" ref-type="bibr">Dyrba et al., 2015b</xref>). Therefore, the urgent problem for MCI classification is to combine with different modalities before training and develop a dedicated feature fusion strategy.</p>
+      <p>To address this issue, the brain network theory was introduced. First, the brain can be seen as a network of spatially dispersed brain areas that share information continuously in functional connectivity (<xref rid="B36" ref-type="bibr">Sporns and Betzel, 2016</xref>). The different brain regions are connected and have synchronization within the same activation pattern. Different brain regions are temporally synchronized under the same activation pattern by the white matter pathway (<xref rid="B16" ref-type="bibr">Gu et al., 2015</xref>). Second, the primary clinical manifestation of MCI is memory loss (<xref rid="B33" ref-type="bibr">Rugg and Vilberg, 2013</xref>). The hippocampus is the crucial area for memory processing. Therefore, investigating the abnormal white matter network related to the hippocampus could promote the detection of MCI in time (<xref rid="B2" ref-type="bibr">Benoit and Schacter, 2015</xref>). Furthermore, previous studies have also demonstrated that white matter degeneration leads to abnormalities in the functional connectivity of the corresponding brain regions (<xref rid="B21" ref-type="bibr">Kleinschmidt and Vuilleumier, 2013</xref>). In the default mode network, damage to the white matter fibers such as fornix and cingulum could weaken the functional connectivity of the medial temporal lobe and precuneus to the hippocampus (<xref rid="B3" ref-type="bibr">Buckner and DiNicola, 2019</xref>). Therefore, we hypothesized that white matter connectivity between brain regions associated with the hippocampus could be an important biomarker for MCI recognition. Features extraction of white matter network through hippocampus-related regions would help to improve the MCI classification performance.</p>
+      <p>This study aimed to extract the effective features of white matter connectivity networks driven by regions related to the hippocampus and improve classification performance. In our study, the elderly people were divided into MCI group and normal control (NC) group. First, the DTI data were obtained, and the orientation distribution function (ODF) was calculated by constrained spherical deconvolution (CSD). Based on the ODF, the fiber tracts of the whole brain were constructed. Second, the DTI index of whole-brain white matter connectivity between each brain region under the automated anatomical labeling (AAL) was calculated to construct the MD and FA brain structure networks as features. Furthermore, the hippocampus was used as the seed point to define the regions of interest (ROIs). Brain regions with high correlation to the hippocampus in functional connectivity were obtained as ROIs compared with the AAL template. Finally, whole-brain white matter connectivity networks were screened by ROIs related to the hippocampus. Different classifiers (e.g., SVM, KNN, and RF) were used to validate the classification performance of the extracted features. The recursive feature elimination (RFE) ranked these features’ contribution to analyze the pathological mechanisms of MCI. Our study proposed a method of feature extraction to improve the MCI classification performance. The study also revealed the pathological mechanisms of MCI by the ranked contribution of features. It would provide effective early aid to MCI diagnosis.</p>
+    </sec>
+    <sec sec-type="materials|methods" id="S2">
+      <title>Materials and Methods</title>
+      <sec id="S2.SS1">
+        <title>Participants</title>
+        <p>After excluding the left-handed and other brain injury history, a total of 96 subjects met the criteria for inclusion (48 male and 48 female; age: 80.6 ± 5.4 years, mean ± std). All participants were provided written informed consent based on the Helsinki Declaration. The experimental protocol was approved by the Institutional Review Board of Tianjin University and the Ethics Committee of Chang Gung University.</p>
+      </sec>
+      <sec id="S2.SS2">
+        <title>Neuropsychological Behavior Testing</title>
+        <p>All subjects were tested on the clinical dementia rating (CDR) and the mini-mental status examination (MMSE) scale. The entry criteria for MCI diagnosis were as follows: (i) CDR = 0.5; (ii) 24 ≤ MMSE &lt; 30 for well-educated subjects (education years ≥ 6) or 19 ≤ MMSE &lt; 24 for less-educated subjects (education years &lt; 6). The MCI group was 81.3 ± 3.6 (mean ± std) years with education duration of 5.9 ± 5.4 years (mean ± std). There was no difference between groups in age and education duration (<xref rid="T1" ref-type="table">Table 1</xref>).</p>
+        <table-wrap position="float" id="T1">
+          <label>TABLE 1</label>
+          <caption>
+            <p>Demographic and neuropsychological information of the MCI and NC groups.</p>
+          </caption>
+          <table frame="hsides" rules="groups" cellspacing="5" cellpadding="5">
+            <thead>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1"/>
+                <td valign="top" align="center" rowspan="1" colspan="1">NC (<italic>n</italic> = 54)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">MCI (<italic>n</italic> = 42)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1"><italic>p</italic>-value</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Gender (m/f)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">27/27</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">21/21</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">1.0000<xref rid="t1fna" ref-type="table-fn"><sup>a</sup></xref></td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Age (year)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">80.0 ± 6.3<xref rid="t1fna" ref-type="table-fn"><sup>b</sup></xref></td>
+                <td valign="top" align="center" rowspan="1" colspan="1">81.3 ± 3.6<xref rid="t1fna" ref-type="table-fn"><sup>b</sup></xref></td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.6353<xref rid="t1fna" ref-type="table-fn"><sup>c</sup></xref></td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Education (year)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">6.5 ± 4.1<xref rid="t1fna" ref-type="table-fn"><sup>b</sup></xref></td>
+                <td valign="top" align="center" rowspan="1" colspan="1">5.9 ± 5.4<xref rid="t1fna" ref-type="table-fn"><sup>b</sup></xref></td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.1530<xref rid="t1fna" ref-type="table-fn"><sup>c</sup></xref></td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">CDR</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.5</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">&lt;0.0001<xref rid="t1fna" ref-type="table-fn"><sup>c</sup></xref></td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">MMSE</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">28.0 ± 1.8<xref rid="t1fna" ref-type="table-fn"><sup>b</sup></xref></td>
+                <td valign="top" align="center" rowspan="1" colspan="1">24.9 ± 2.8<xref rid="t1fna" ref-type="table-fn"><sup>b</sup></xref></td>
+                <td valign="top" align="center" rowspan="1" colspan="1">&lt;0.0001<xref rid="t1fna" ref-type="table-fn"><sup>c</sup></xref></td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <fn id="t1fna">
+              <p>
+<italic><sup>a</sup>Chi-square test. <sup>b</sup>Mean ± std. <sup>c</sup>Rank sum test.</italic>
+</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+      </sec>
+      <sec id="S2.SS3">
+        <title>Magnetic Resonance Imaging Data Acquisition</title>
+        <p>The DTI, T1w, and rs-fMRI images of each subject were acquired without personal information. The DTI with 30 diffusion encoding directions was acquired using echo planar imaging (EPI) sequence with parameters: <italic>b</italic>-value = 1,000 s/mm<sup>2</sup>, TR/TE = 11,000/104 ms, field of view = 192 × 192 mm<sup>2</sup>, matrix size = 128 × 128, slice thickness = 2 mm, voxel size = 2 × 2 × 2 mm<sup>3</sup>, number of slices = 70, and number of excitations = 1. The rs-fMRI was acquired using gradient EPI sequence with parameters: TR/TE = 2,500/27 ms, flip angle = 77°, band width = 2,400 Hz/pixel, field of view = 260 × 260 mm<sup>2</sup>, matrix size = 64 × 64, voxel size = 3.4 × 3.4 × 3.4 mm<sup>3</sup>, number of slices = 43, scan time = 360 s, and time points = 180. The T1w imaging was acquired using a 3D magnetization prepared rapid gradient EPI sequence with parameters: TR/TE = 2,530/3.5 ms; TI = 1,100 ms; field of view = 260 × 260 mm<sup>2</sup>; matrix size = 256 × 256; slice thickness = 1 mm; voxel size = 1 × 1 × 1 mm<sup>3</sup>; and number of slices = 192.</p>
+      </sec>
+      <sec id="S2.SS4">
+        <title>White Matter Structure Network Establishment and Feature Extraction</title>
+        <p>The feature extraction of the white matter structure network for MCI classification consists of the following steps (<xref rid="F1" ref-type="fig">Figure 1</xref>):</p>
+        <fig position="float" id="F1">
+          <label>FIGURE 1</label>
+          <caption>
+            <p>Feature extraction in structural connectivity map driven by hippocampus related ROIs. Three kinds of features were extracted for MCI classification, including: <bold>(A)</bold> The whole brain WM network was acquired from diffusion MRI with all 90 × 90 AAL regions. <bold>(B)</bold> The HIP related WM network was selected by 43 × 43 ROIs from the whole brain WM network. <bold>(C)</bold> The significant HIP related WM network was acquired (*<italic>p</italic> &lt; 0.05, **<italic>p</italic> &lt; 0.005, and ***<italic>p</italic> &lt; 0.0005; ranksum test with bonferroni correction).</p>
+          </caption>
+          <graphic xlink:href="fnagi-14-866230-g001" position="float"/>
+        </fig>
+        <list list-type="simple">
+          <list-item>
+            <label>1.</label>
+            <p>MRI data preprocessing.</p>
+          </list-item>
+          <list-item>
+            <label>2.</label>
+            <p>Reconstruction for white matter fiber tracts by orientation distribution function (ODF). Based on DTI, the ODF was calculated by CSD.</p>
+          </list-item>
+          <list-item>
+            <label>3.</label>
+            <p>Establishment for whole-brain structure network. DTI indexes (MD and FA) of white matter connectivity between the AAL 90 brain region were calculated to establish the whole-brain structure network as the full feature for MCI classification.</p>
+          </list-item>
+          <list-item>
+            <label>4.</label>
+            <p>Feature selection driven by hippocampus-related ROIs. Brain regions with significant functional connectivity to the hippocampus in rs-fMRI were selected as ROIs. The ROIs are used to screen features for the white matter structural network.</p>
+          </list-item>
+          <list-item>
+            <label>5.</label>
+            <p>Machine learning for MCI recognition. Different classifiers (e.g., SVM, KNN, and RF) were used to test the features for MCI recognition.</p>
+          </list-item>
+          <list-item>
+            <label>6.</label>
+            <p>Performance comparison for searching optimal features and classifiers. Classification performances were validated to prove that our feature extraction method was effective. Pathological mechanisms were analyzed with feature sort.</p>
+          </list-item>
+        </list>
+        <sec id="S2.SS4.SSS1">
+          <title>Magnetic Resonance Imaging Data Preprocessing</title>
+          <p>The DWI data were denoised and corrected for Gibb’s ringing using MRtrix3<sup><xref rid="footnote1" ref-type="fn">1</xref></sup> and then motion-corrected, and the eddy current distortion was corrected using the eddy tool in FSL (v5.0.11).<sup><xref rid="footnote2" ref-type="fn">2</xref></sup> Next, a brain mask was constructed using the Brain Extraction Tool in FSL, and the diffusion tensor fitting was performed at each voxel within the brain mask to generate DTI index maps. The rs-fMRI data were temporal band-pass filtered (0.01–0.10 Hz) and detrended (both linear and quadratic trends). 3D geometrical displacement was used to correct for head motion. Spatial smoothing was performed with a Gaussian filter kernel (FWHM = 6 mm). The entire process was performed using the Statistical Parametric Mapping (SPM) software package,<sup><xref rid="footnote3" ref-type="fn">3</xref></sup> in which the head motion parameters, global signals, white matter signals, and cerebrospinal fluid signals were obtained and combined into a complete covariate. Covariate from functional signals was then removed using the Resting-State fMRI Data Analysis Toolkit (REST).<sup><xref rid="footnote4" ref-type="fn">4</xref></sup></p>
+        </sec>
+        <sec id="S2.SS4.SSS2">
+          <title>Reconstruction for White Matter Fiber Tracts</title>
+          <p>To reconstruct the whole-brain white matter fiber tracts of each subject, fibers were tracked in DTI data (<xref rid="DS1" ref-type="supplementary-material">Supplementary Figure 1</xref>). (1) The ODF necessary for the fiber tracking algorithm can be obtained using the MRtrix software (see text footnote 1). The CSD was used with maximum spherical harmonic degree = 6 during this process. (2) The ODF was integrated into DSI Studio<sup><xref rid="footnote5" ref-type="fn">5</xref></sup> to achieve a 3D reconstruction of the whole brain’s white matter fiber connectivity. The tracking parameters were as follows: Number of tracts = 100,000, Qa_threshold = 0.04, max angle = 60, length constraint = 20.0–450.0 mm, step size = 1.00 mm, and smoothness = 0.5 mm. Seed direction was set to random, and seed position was subvoxel.</p>
+        </sec>
+        <sec id="S2.SS4.SSS3">
+          <title>Establishment for Whole-Brain Structure Network</title>
+          <p>Since the AAL is located in the MNI152 standard space, the transfer matrixes between the standard space and native space (<xref rid="DS1" ref-type="supplementary-material">Supplementary Figure 2</xref>) were required to obtain the AAL brain region for each subject space. (1) The b0 image from the DTI image served as the native space. The T1w image after skull stripping in FSL served as the structure space. The MNI152 template from FSL served as the standard space. (2) With the high-resolution T1w image as the reference, FMRIB’s Linear Image Registration Tool (FLIRT) was used to obtain the transition matrix from native space to structural space (T<sub>NS</sub>) and the transition matrix from standard space to structural space (T<sub>MS</sub>). The transition matrix from native space to standard space was T<sub>NM</sub> = T<sub>NS</sub> × T<sub>MS</sub><sup>–1</sup>. (3) The transition matrix from standard space to native space was T<sub>MN</sub> = T<sub>MS</sub> × T<sub>NS</sub><sup>–1</sup>.</p>
+          <p>To establish the whole-brain WM network, a 90 × 90 matrix for the whole brain divided by the AAL template was calculated (<xref rid="DS1" ref-type="supplementary-material">Supplementary Figure 1</xref>). (1) The AAL 90 brain regions in the MNI152 standard space were transformed to each subject’s space separately by applying transfer matrix T<sub>MN</sub>. (2) For the 90 × 90 matrix, every element records the mean DTI index (MD or FA) of fiber tracts between every two of the AAL 90 brain regions. Also, the whole-brain WM networks were established, including the MD connectivity 90 × 90 matrix and the FA connectivity 90 × 90 matrix. (3) Whole-brain WM networks of 54 NC and 42 MCI were established separately as entire features for MCI recognition.</p>
+        </sec>
+        <sec id="S2.SS4.SSS4">
+          <title>Feature Selection Driven by Hippocampus-Related Regions of Interest</title>
+          <p>The primary clinical symptom of MCI is memory loss, and the hippocampus is closely associated with memory. So, the hippocampus was chosen as a seed point to calculate the brain regions that had significant functional connectivity (<xref rid="DS1" ref-type="supplementary-material">Supplementary Figure 3</xref>). The concrete steps were as follows: (1) All participants’ rs-fMRI images were transferred from the native space to the standard space. (2) The left hippocampus (30, −16, −14) and right hippocampus (−30, −16, −14) with a radius of 3 mm served as the seed points to create the FC map of each participant in the MNI152 standard space. With the same time series, brain regions that activated correlation with hippocampus were calculated in software REST. The Fisher Z transformation was applied so that the results of each participant followed normal distributions. (3) After individual-level analysis, group analysis for MCI and NC was conducted separately by the second-level analysis in SPM. A one-sample <italic>T</italic>-test and a familywise error correction were employed to revise the statistics of the group analysis results. (4) Significant area (<italic>p</italic> &lt; 0.05) with the threshold (<italic>T</italic>-value &gt; 10, size &gt; 27) was selected to obtain the brain regions associated with the functional connectivity of the hippocampus at the group level.</p>
+          <p>To confirm the locations of the hippocampus-related ROIs, the following steps were conducted: (1) The functional connectivity maps of the MCI and NC groups were compared with AAL templates. The percentage of overlapping voxels taken in the AAL was calculated (<xref rid="DS1" ref-type="supplementary-material">Supplementary Figure 3</xref>). (2) To select as many ROIs as possible in the AAL and prevent false positives, a volume percentage threshold of 10% was set. If one of the 90 regions in the AAL had a volume fraction greater than the threshold value, the brain region in the AAL was selected as an ROI (<xref rid="DS1" ref-type="supplementary-material">Supplementary Figure 4</xref>). The selected ROIs are listed in <xref rid="DS1" ref-type="supplementary-material">Supplementary Table 1</xref>, including their abbreviations. (3) Totally 43 ROIs related to the hippocampus were used to extract features of the whole-brain WM network (90 × 90 matrices), and the HIP-related WM network (43 × 43 matrices) was established. The rank sum test with Bonferroni correction of HIP-related WM network between MCI and NC was used to extract significant features. The significant HIP-related WM network was acquired (300 vectors) (<xref rid="F1" ref-type="fig">Figure 1</xref>).</p>
+        </sec>
+        <sec id="S2.SS4.SSS5">
+          <title>Machine Learning for Mild Cognitive Impairment Recognition</title>
+          <p>To train features of different WM networks for MCI classification, the process of machine learning was as follows (<xref rid="F2" ref-type="fig">Figure 2</xref>): (1) The whole-brain WM network, the hippocampus-related WM network (HIP-related WM network), and the significant HIP-related WM network were separately used as features for machine learning. The recursive feature elimination (RFE) algorithm was used for both dimension reduction and features ranking. (2) The machine learning methods included SVM, KNN, and RF. For SVM, four different kernel functions were tried, namely, linear kernel (linear), polynomial kernel (polynomial), radial basis function kernel (rbf), and sigmoid kernel (sigmoid). For KNN, neighbors of 1, 3, 5, and 7 were used. For RF, 50, 100, 150, and 200 decision trees were used. (3) The hold-out method was used to evaluate classification performance; 80% of the data set was selected as the training set and the remaining 20% as the test set. This process was repeated 100 times randomly to obtain the average classification accuracy and the area under the curve (AUC). All the above experiments were based on the Scikit-Learn library.<sup><xref rid="footnote6" ref-type="fn">6</xref></sup></p>
+          <fig position="float" id="F2">
+            <label>FIGURE 2</label>
+            <caption>
+              <p>The flowchart for machine learning. Recursive feature elimination was used to search for the optimal feature subset. The classification algorithm was respectively used KNN, RF, SVM (linear, poly, rbf, sigmoid). The hold-out method was repeated 100 times randomly with 80% of the data for training and 20% for testing.</p>
+            </caption>
+            <graphic xlink:href="fnagi-14-866230-g002" position="float"/>
+          </fig>
+        </sec>
+        <sec id="S2.SS4.SSS6">
+          <title>Performance Comparison for Searching Optimal Feature and Classifier</title>
+          <p>The following steps were conducted to search for optimal features and classifiers. (1) To demonstrate the effectiveness of the feature extraction method, the classification accuracies (100 times hold-out method) were statistically analyzed in the rank sum test between three features (i.e., whole-brain WM network, HIP-related WM network, and significant HIP-related WM network), and the AUC values were compared in the identical coordinate system (<xref rid="F3" ref-type="fig">Figure 3</xref>). (2) To obtain a better classifier for MCI recognition, the classification accuracies (100 times hold-out method) were statistically analyzed in the rank sum test between different classifiers, and the AUC values were compared in the identical coordinate system (<xref rid="F4" ref-type="fig">Figure 4</xref>). (3) To compare which biomarker is more effective for MCI recognition, the classification accuracies (100 times hold-out method) were statistically analyzed in the rank sum test between MD and FA features, and the AUC values were compared in the identical coordinate system (<xref rid="F5" ref-type="fig">Figure 5</xref>). (4) To rank all features’ contribution to the classification, recursive feature elimination (RFE) was performed. Feature ranking order of the most contributing connectivity was selected based on their classification performance (<xref rid="F6" ref-type="fig">Figure 6A</xref> and <xref rid="T4" ref-type="table">Table 4</xref>). A schematic illustration of degenerated white matter in MCI was made according to the ranking features (<xref rid="F6" ref-type="fig">Figure 6B</xref>).</p>
+          <fig position="float" id="F3">
+            <label>FIGURE 3</label>
+            <caption>
+              <p>Classification performance comparison between different mean diffusivity (MD) feature sets for different classifier. <bold>(A)</bold> KNN. <bold>(B)</bold> RF. <bold>(C)</bold> SVM linear. <bold>(D)</bold> SVM poly. <bold>(E)</bold> SVM rbf. <bold>(F)</bold> SVM sigmoid. ‘red’: the significant HIP related WM network; ‘green’: HIP related WM network; ‘blue’: the whole brain WM network. Classification performance including mean accuracy (mean ± std; *<italic>p</italic> &lt; 0.05, **<italic>p</italic> &lt; 0.005, and ***<italic>p</italic> &lt; 0.0005; ranksum test with bonferroni correction) and AUC of randomly 100 times hold out method.</p>
+            </caption>
+            <graphic xlink:href="fnagi-14-866230-g003" position="float"/>
+          </fig>
+          <fig position="float" id="F4">
+            <label>FIGURE 4</label>
+            <caption>
+              <p>Classification performance comparison between different algorithm through optimal feature set. Classification performance including mean accuracy (mean ± std; *<italic>p</italic> &lt; 0.05, <sup>**</sup><italic>p</italic> &lt; 0.005, and <sup>***</sup><italic>p</italic> &lt; 0.0005; ranksum test with Bonferroni correction) and AUC of randomly 100 times hold-out method.</p>
+            </caption>
+            <graphic xlink:href="fnagi-14-866230-g004" position="float"/>
+          </fig>
+          <fig position="float" id="F5">
+            <label>FIGURE 5</label>
+            <caption>
+              <p>Optimal classification performance comparison between mean diffusivity (MD) and fractional anisotropy (FA) feature sets (the significant HIP related WM network) for different classifier. <bold>(A)</bold> KNN. <bold>(B)</bold> RF. <bold>(C)</bold> SVM linear. <bold>(D)</bold> SVM poly. <bold>(E)</bold> SVM rbf. <bold>(F)</bold> SVM sigmoid. ‘red’: classification performance of mean diffusivity feature sets; ‘gray’: classification performance of fractional anisotropy feature set. Classification performance including mean accuracy (mean ± std; *<italic>p</italic> &lt; 0.05, **<italic>p</italic> &lt; 0.005, and ***<italic>p</italic> &lt; 0.0005; rank sum test with Bonferroni correction) and AUC of randomly 100 times hold out method.</p>
+            </caption>
+            <graphic xlink:href="fnagi-14-866230-g005" position="float"/>
+          </fig>
+          <fig position="float" id="F6">
+            <label>FIGURE 6</label>
+            <caption>
+              <p>Feature ranking of MD feature (the significant HIP-related WM network) as the result of RFE in SVM rbf model. <bold>(A)</bold> Feature ranking order of the most contributing connectivity (25 features). The bar represents connectivity in different groups. “black”: limbic connectivity (15 features). “gray”: Hip-temporal connectivity (5 features). “white”: THA-frontal connectivity (5 features). <bold>(B)</bold> Schematic illustration of degenerated white matter in MCI. Nodes represented ROIs from AAL templates. Edges represented connectivity; the value represents MD variation, MCI vs. NC.</p>
+            </caption>
+            <graphic xlink:href="fnagi-14-866230-g006" position="float"/>
+          </fig>
+        </sec>
+      </sec>
+    </sec>
+    <sec sec-type="results" id="S3">
+      <title>Results</title>
+      <sec id="S3.SS1">
+        <title>Participant Characteristics</title>
+        <p>There were no significant differences in demographic information between the MCI and NC. There were only significant differences in the cognitive scales (CDR and MMSE, <xref rid="T1" ref-type="table">Table 1</xref>). This indicates that irrelevant variables’ influence was eliminated between the MCI and NC, and the results were credible.</p>
+      </sec>
+      <sec id="S3.SS2">
+        <title>Regions of Interest Related to Hippocampus in Resting-State Functional Magnetic Resonance Imaging</title>
+        <p>A total of 43 ROIs related to hippocampus in rs-fMRI were obtained by comparing with AAL (<xref rid="DS1" ref-type="supplementary-material">Supplementary Figure 4</xref>). Full names and abbreviations of the 43 ROIs were shown in <xref rid="DS1" ref-type="supplementary-material">Supplementary Table 1</xref>. Among them, 15 ROIs belong to the limbic lobe, 16 ROIs belong to the frontal lobe, 5 ROIs belong to the temporal lobe, 3 ROIs belong to the central region, 3 ROIs belong to the parietal lobe, and 1 ROI belongs to the occipital lobe. Most ROIs are concentrated in the limbic, frontal, and temporal lobes.</p>
+      </sec>
+      <sec id="S3.SS3">
+        <title>Classification Performance Promoted by Screening Features in Hippocampus-Related Regions of Interest</title>
+        <p>For the WM network of MD in the same classifier, the performances of progressively optimized features (whole-brain WM network, HIP-related WM network, and significant HIP related WM network) were significantly promoted (<italic>p</italic> &lt; 0.05, rank sum test with Bonferroni correction) (<xref rid="F3" ref-type="fig">Figure 3</xref> and <xref rid="T2" ref-type="table">Table 2</xref>). It proved that our feature extraction method in this experiment significantly improved the performance of the MCI classification.</p>
+        <table-wrap position="float" id="T2">
+          <label>TABLE 2</label>
+          <caption>
+            <p>Classification performance based on mean diffusivity (MD) feature sets.</p>
+          </caption>
+          <table frame="hsides" rules="groups" cellspacing="5" cellpadding="5">
+            <thead>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Classifier</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Feature</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">ACC (mean ± sem)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Sen</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Spe</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">AUC</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">A. KNN</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Significant</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">86.90% ± 0.80%</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.938</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.778</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.920</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="center" rowspan="1" colspan="1">HIP related</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">60.90% ± 1.20%</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.97</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.142</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.646</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="center" rowspan="1" colspan="1">Whole brain</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">58.90% ± 1.10%</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.837</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.265</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.584</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">B. RF</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Significant</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">84.80% ± 0.90%</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.916</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.781</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.935</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="center" rowspan="1" colspan="1">HIP related</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">61.60% ± 1.00%</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.958</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.144</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.654</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="center" rowspan="1" colspan="1">Whole brain</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">57.10% ± 1.10%</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.935</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.117</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.573</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">C. SVM linear</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Significant</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">86.20% ± 0.80%</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.905</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.808</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.937</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="center" rowspan="1" colspan="1">HIP related</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">67.30% ± 1.60%</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.886</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.419</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.637</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="center" rowspan="1" colspan="1">Whole brain</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">60.90% ± 1.00%</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.791</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.406</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.549</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">D. SVM poly</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Significant</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">78.50% ± 1.20%</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.965</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.609</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.951</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="center" rowspan="1" colspan="1">HIP related</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">67.10% ± 1.60%</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.886</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.414</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.632</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="center" rowspan="1" colspan="1">Whole brain</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">56.70% ± 1.20%</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.972</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.029</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.550</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">E. SVM rbf</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Significant</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">89.40% ± 0.70%</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.938</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.849</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.954</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="center" rowspan="1" colspan="1">HIP related</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">67.10% ± 1.60%</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.887</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.413</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.627</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="center" rowspan="1" colspan="1">Whole brain</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">56.90% ± 1.10%</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.991</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.011</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.522</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">F. SVM sigmoid</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Significant</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">88.20% ± 0.60%</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.945</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.806</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.946</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="center" rowspan="1" colspan="1">HIP related</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">67.20% ± 1.60%</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.888</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.414</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.633</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="center" rowspan="1" colspan="1">Whole brain</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">60.80% ± 1.00%</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.708</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.501</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.550</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <fn>
+              <p>
+<italic>ACC, accuracy; Sen, sensitivity; Spe, specificity; AUC, area under the curve; Ave, average; Std, standard error; Sem, standard error mean.</italic>
+</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+      </sec>
+      <sec id="S3.SS4">
+        <title>Comparison of Mild Cognitive Impairment Classification Performance Under Different Algorithms</title>
+        <p>The three machine learning classifiers (of which SVM contains four kernel functions) were compared separately (<xref rid="F4" ref-type="fig">Figure 4</xref>). The performance in order of average classification accuracy (100 times hold-out method) was as follows: SVM rbf (ACC = 89.4%, AUC = 0.954), SVM sigmoid (ACC = 88.2%, AUC = 0.950), KNN (ACC = 86.9%, AUC = 0.920), SVM linear (ACC = 86.2%, AUC = 0.937), RF (ACC = 84.8%, AUC = 0.935), and SVM ploy (ACC = 78.5%, AUC = 0.951). The performance of the SVM rbf was significantly better than other classifiers. Therefore, training with the significant HIP-related WM network as features using SVM rbf can better recognize MCI.</p>
+      </sec>
+      <sec id="S3.SS5">
+        <title>Comparison of Classification Performance Under Mean Diffusivity and Fractional Anisotropy Features</title>
+        <p>For the same machine learning classifier, the performance of the feature MD was significantly better than FA (<italic>p</italic> &lt; 0.05, rank sum test with Bonferroni correction) in the case of both using optimal features for training (<xref rid="F5" ref-type="fig">Figure 5</xref> and <xref rid="T3" ref-type="table">Table 3</xref>). Therefore, the biomarker MD is superior to FA for MCI diagnosing from a machine learning perspective.</p>
+        <table-wrap position="float" id="T3">
+          <label>TABLE 3</label>
+          <caption>
+            <p>Classification performance of MD and FA feature sets.</p>
+          </caption>
+          <table frame="hsides" rules="groups" cellspacing="5" cellpadding="5">
+            <thead>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Classifier</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Feature</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">ACC (mean ± sem)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Sen</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Spe</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">AUC</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">A.KNN</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">MD</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">86.90% ± 0.80%</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.938</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.778</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.92</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="center" rowspan="1" colspan="1">FA</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">75.70% ± 0.90%</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.905</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.571</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.853</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">B. RF</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">MD</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">84.80% ± 0.90%</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.916</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.781</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.935</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="center" rowspan="1" colspan="1">FA</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">81.40% ± 1.00%</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.878</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.743</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.902</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">C. SVM linear</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">MD</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">86.20% ± 0.80%</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.905</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.808</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.937</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="center" rowspan="1" colspan="1">FA</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">81.40% ± 0.80%</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.891</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.728</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.742</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">D. SVM poly</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">MD</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">78.50% ± 1.20%</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.965</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.609</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.951</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="center" rowspan="1" colspan="1">FA</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">77.50% ± 1.20%</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.877</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.672</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.8</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">E. SVM rbf</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">MD</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">89.40% ± 0.70%</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.938</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.849</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.954</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="center" rowspan="1" colspan="1">FA</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">79.00% ± 0.80%</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.841</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.738</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.901</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">F. SVM sigmoid</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">MD</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">88.20% ± 0.60%</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.945</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.806</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.946</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="center" rowspan="1" colspan="1">FA</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">67.30% ± 1.60%</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.886</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.418</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.635</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <fn>
+              <p>
+<italic>ACC, accuracy; Sen, sensitivity; Spe, specificity; AUC, area under the curve; Ave, average; Std, standard error; Sem, standard error mean.</italic>
+</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+        <table-wrap position="float" id="T4">
+          <label>TABLE 4</label>
+          <caption>
+            <p>Feature ranking order for WM connectivity.</p>
+          </caption>
+          <table frame="hsides" rules="groups" cellspacing="5" cellpadding="5">
+            <thead>
+              <tr>
+                <td valign="top" align="left" colspan="2" rowspan="1">Feature ranking order<hr/></td>
+                <td valign="top" align="center" colspan="2" rowspan="1">ROI pairs for connectivity<hr/></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">1</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">HIP-THA L</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Hippocampus</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Thalamus</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">2</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">HIP-AMYG R</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Hippocampus</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Amygdala</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">3</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">HIP-THA R</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Hippocampus</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Thalamus</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">4</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">HIP-PHIP L</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Hippocampus</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Parahippocampal gyrus</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">5</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">HIP-PCIN L</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Hippocampus</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Posterior cingulate</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">6</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">HIP-T1 L</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Hippocampus</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Superior temporal gyrus</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">7</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">HIP-T1 R</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Hippocampus</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Superior temporal gyrus</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">8</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">HIP-T1P R</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Hippocampus</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Temporal pole: superior temporal gyrus</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">9</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">AMYG-F2O R</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Amygdala</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Middle frontal gyrus, orbital part</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">10</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">HIP-HES L</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Hippocampus</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Heschl gyrus</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">11</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">HIP-FUSI R</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Hippocampus</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Fusiform gyrus</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">12</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">THA-PUT L</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Thalamus</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Lenticular nucleus, putamen</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">13</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">THA-CAU L</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Thalamus</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Caudate nucleus</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">14</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">THA-PAL L</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Thalamus</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Lenticular nucleus, pallidum</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">15</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">PUT-PAL L</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Lenticular nucleus, putamen</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Lenticular nucleus, pallidum</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">16</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">THA-CAU R</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Thalamus</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Caudate nucleus</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">17</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">THA-F1O L</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Thalamus</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Superior frontal gyrus, orbital part</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">18</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">THA-F1O R</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Thalamus</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Superior frontal gyrus, orbital part</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">19</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">THA-F2O R</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Thalamus</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Middle frontal gyrus, orbital part</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">20</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">THA-IN L</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Thalamus</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Insula</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">21</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">THA-ACIN R</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Thalamus</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Anterior cingulate and paracingulate gyri</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">22</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">THA-IN R</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Thalamus</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Insula</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">23</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">THA-ACIN L</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Thalamus</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Anterior cingulate and paracingulate gyri</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">24</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">THA-F1 L</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Thalamus</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Superior frontal gyrus, dorsolateral</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">25</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">THA-F1 R</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Thalamus</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Superior frontal gyrus, dorsolateral</td>
+              </tr>
+            </tbody>
+          </table>
+        </table-wrap>
+      </sec>
+      <sec id="S3.SS6">
+        <title>Ranking the Contribution of White Matter Structural Connectivity to Mild Cognitive Impairment Classification</title>
+        <p>According to the significant HIP-related WM network’s feature ranking order through RFE (<xref rid="F6" ref-type="fig">Figure 6A</xref> and <xref rid="T4" ref-type="table">Table 4</xref>), schematic illustrations of degenerated white matter in MCI were made (<xref rid="F6" ref-type="fig">Figure 6B</xref>). The most common connections between MCI and NC are HIP-temporal connectivity, limbic connectivity, and THA-frontal connectivity.</p>
+      </sec>
+    </sec>
+    <sec sec-type="discussion" id="S4">
+      <title>Discussion</title>
+      <p>This study proposes a feature extraction method for whole-brain white matter connectivity networks driven by ROIs related to the hippocampus. The whole-brain WM network, HIP-related WM network, and significant HIP-related WM network were obtained in the process of feature extraction and optimization. Different classification algorithms, such as KNN, RF, and SVM (linear, poly, rbf, sigmoid), were used to test the classification performance. The pathological mechanisms of MCI were also revealed by RFE. Our study found that feature extraction of whole-brain white matter connectivity by hippocampus-related brain regions can significantly improve MCI classification performance. It can be summarized in three points:</p>
+      <list list-type="simple">
+        <list-item>
+          <label>1.</label>
+          <p>In the feature, compared with the whole-brain WM network, the HIP-related WM network can significantly promote the MCI classification performance in machine learning.</p>
+        </list-item>
+        <list-item>
+          <label>2.</label>
+          <p>In the algorithm, the classification performance of the SVM rbf is optimum when taking significant HIP-related WM networks as features.</p>
+        </list-item>
+        <list-item>
+          <label>3.</label>
+          <p>In the pathology, the hippocampus- and thalamus-related white matter connectivity greatly contributed to MCI recognition. So, the method that combines MCI pathology and uses a suitable classifier can significantly improve the classification performance, while the ranking of features contribution can reveal MCI pathology in turn.</p>
+        </list-item>
+      </list>
+      <sec id="S4.SS1">
+        <title>Mild Cognitive Impairment Classification Performance Significantly Promoted by Feature Extraction of Hippocampus-Related Regions of Interest</title>
+        <p>For the same classifier on features, the performance on MCI classification was significantly higher for features screening by HIP-related ROIs than the whole brain. First, in our results, the whole-brain WM network, HIP-related WM network, and significant HIP-related WM network had sequentially significantly higher classification performance (<xref rid="F3" ref-type="fig">Figure 3</xref>). Second, in terms of AD pathogenesis, the degeneration of MCI first appears in specific fiber tracts and gradually spreads to the whole brain when developing to the AD stage (<xref rid="B6" ref-type="bibr">Daianu et al., 2015</xref>; <xref rid="B20" ref-type="bibr">Jones et al., 2015</xref>; <xref rid="B41" ref-type="bibr">Wang et al., 2016</xref>). Furthermore, in either specific fiber tracking (<xref rid="B27" ref-type="bibr">Nir et al., 2015</xref>; <xref rid="B8" ref-type="bibr">Dou et al., 2020</xref>) or whole-brain white matter connectivity network measures (<xref rid="B42" ref-type="bibr">Wee et al., 2011</xref>; <xref rid="B31" ref-type="bibr">Prasad et al., 2015</xref>) in previous studies, the accuracies of MCI classification were around 60%, while the accuracies of AD can be about 80%. It also corroborates the pathogenesis of AD from an engineering perspective. Finally, for MCI recognition, a single use of whole-brain white matter would weaken the features considering AD’s pathogenesis. Based on the pathology of MCI, our study improves the MCI classification performance effectively by feature extraction of HIP-related ROIs.</p>
+      </sec>
+      <sec id="S4.SS2">
+        <title>Mean Diffusivity Can Be a Valid Biomarker for Mild Cognitive Impairment Recognition</title>
+        <p>For MCI, the MD is more sensitive than FA values to reflect white matter degeneration. First, our results showed that the MD of WM networks as features outperformed FA in all the machine learning classifiers (<xref rid="F5" ref-type="fig">Figure 5</xref>). Second, research showed the sensitivity of the MD index to MCI (<xref rid="B44" ref-type="bibr">Yu et al., 2017</xref>), while FA only begins to have statistical differences in multiple fiber tracts during AD (<xref rid="B26" ref-type="bibr">Mito et al., 2018</xref>). Our experiment confirmed that the MD index was more sensitive in the MCI stage from classification performance. Furthermore, FA reflects the density of white matter fibers and is influenced by the axon diameter of fiber tracts. MD represents the integrity of the myelin outer the fiber tracts. Demyelination can cause MD to increase (<xref rid="B38" ref-type="bibr">Tournier, 2019</xref>). It can be inferred that disintegrated myelin appeared more obvious than axon loss during MCI. Therefore, the MD index can be an effective biomarker for MCI compared with FA.</p>
+      </sec>
+      <sec id="S4.SS3">
+        <title>Comparison With Previous Studies</title>
+        <p>Compared with previous studies that used white matter as the feature to recognize MCI, our method using HIP-related ROIs to extract white matter features significantly improved MCI classification performance (<xref rid="T5" ref-type="table">Table 5</xref>). By comparing the classification performance between all of our classifiers, the SVM classifier with rbf kernel significantly outperformed the other classifiers (<xref rid="F4" ref-type="fig">Figure 4</xref>). It can also be seen from previous studies that the SVM classifier with rbf kernel for MCI recognition performed well when taking the white matter as features (<xref rid="T5" ref-type="table">Table 5</xref>). Therefore, training with the white matter as features after HIP-related ROIs extraction can better recognize MCI when using the SVM rbf classifier.</p>
+        <table-wrap position="float" id="T5">
+          <label>TABLE 5</label>
+          <caption>
+            <p>Summary of the studies using dMRI features for MCI classification.</p>
+          </caption>
+          <table frame="hsides" rules="groups" cellspacing="5" cellpadding="5">
+            <thead>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Comparison with the previous studies</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Classifier</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Subjects<hr/></td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Feature</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Database</td>
+                <td valign="top" align="center" colspan="2" rowspan="1">Performance<hr/></td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1"/>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="center" rowspan="1" colspan="1">MCI/NC</td>
+                <td rowspan="1" colspan="1"/>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="center" rowspan="1" colspan="1">ACC</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">AUC</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">
+<xref rid="B13" ref-type="bibr">Ebadi et al. (2017)</xref>
+</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">KNN</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">15/15</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Network</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Local</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">60.0%</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.560</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Our study</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">KNN</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">42/54</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Network</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Local</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">86.9%</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.920</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">
+<xref rid="B25" ref-type="bibr">Maggipinto et al. (2017)</xref>
+</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">RF</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">90/89</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">MD/FA voxel</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">ADNI</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">54.0%</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.600</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">
+<xref rid="B40" ref-type="bibr">Wang et al. (2018)</xref>
+</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">RF</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">169/379</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Network</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">ADNI/NACC</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">75.0%</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.850</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Our study</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">RF</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">42/54</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Network</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Local</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">84.8%</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.935</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">
+<xref rid="B43" ref-type="bibr">Xie et al. (2015)</xref>
+</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">SVM linear</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">64/64</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">MD/FA voxel</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Local</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">78.9%</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.856</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Our study</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">SVM linear</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">42/54</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Network</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Local</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">86.2%</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.937</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">
+<xref rid="B5" ref-type="bibr">Cui et al. (2012)</xref>
+</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">SVM rbf</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">79/204</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">FA voxel</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">SMA</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">71.1%</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.700</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">
+<xref rid="B10" ref-type="bibr">Dyrba et al. (2015a)</xref>
+</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">SVM rbf</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">35/42</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">MD/FA voxel</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">EDSD</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">77.0%</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.680</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">
+<xref rid="B7" ref-type="bibr">Demirhan et al. (2015)</xref>
+</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">SVM rbf</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">43/70</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">FA voxel</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">ADNI</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">78.5%</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.758</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">
+<xref rid="B27" ref-type="bibr">Nir et al. (2015)</xref>
+</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">SVM rbf</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">113/50</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Network</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">ADNI</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">79.0%</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">-</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">
+<xref rid="B1" ref-type="bibr">Ahmed et al. (2017)</xref>
+</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">SVM rbf</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">58/52</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">MD voxel</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">ADNI</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">79.4%</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.788</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Our study</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">SVM rbf</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">42/54</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Network</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">Local</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">89.4%</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.954</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <fn>
+              <p>
+<italic>local, collect by hospital; ADNI, Alzheimer’s Disease Neuroimaging Initiative; NACC, National Alzheimer’s Coordinating Center; SMA, Sydney Memory and Aging; EDSD, European DTI Study on Dementia; -, not applicable.</italic>
+</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+      </sec>
+      <sec id="S4.SS4">
+        <title>Important Hubs of the White Matter Connectivity Network for Mild Cognitive Impairment: Hippocampus and Thalamus</title>
+        <p>White matter connections related to hippocampal and thalamic contribute most to MCI classification. First, previous studies have shown that the white matter associated with the hippocampus and thalamus degenerates during MCI. The white matter microstructure between the hippocampus and medial temporal lobe changes during MCI (<xref rid="B37" ref-type="bibr">Teipel et al., 2016</xref>; <xref rid="B52" ref-type="bibr">Zhuo et al., 2016</xref>; <xref rid="B9" ref-type="bibr">Dumont et al., 2019</xref>). The fornix connects the hippocampus to the thalamus, and its white matter degeneration leads to decreased memory function (<xref rid="B4" ref-type="bibr">Christiansen et al., 2016</xref>). Degeneration of the projection tracts connecting the thalamus to the prefrontal lobes leads to a decrease in executive function (<xref rid="B15" ref-type="bibr">Gu and Zhang, 2019</xref>; <xref rid="B24" ref-type="bibr">Liu et al., 2021</xref>).</p>
+        <p>Second, in our results, features connected with the hippocampus or thalamus in the white matter connectivity network ranked high in contributions for MCI classification, and features connected with the hippocampus ranked more advanced than the thalamus (<xref rid="F6" ref-type="fig">Figure 6</xref>). This result also confirmed our previous findings (<xref rid="B50" ref-type="bibr">Zhou et al., 2021</xref>). In our previous study, the MD of all voxels in a single fiber tract was taken as features. The fiber tract with high separability for MCI recognition passed through the hippocampus or thalamus. So, whether single fiber tract or whole-brain network had corroborated that hippocampus and thalamus were important hubs of the white matter connectivity network for MCI.</p>
+        <p>Furthermore, in our previous study, the highest average accuracy for MCI classification reached 71.0% when taking MD of all voxels in the left inferior longitudinal fasciculus. In this study, the highest average accuracy reached 89.4% by taking white matter networks related to the hippocampus. Compared with the single fiber tract, white matter networks related to the hippocampus as features can improve classification performance. Finally, the contribution of every white matter connectivity can be sorted by RFE. Thus, the hippocampus and thalamus are important hubs for MCI. Features of combinational white matter connectivity networks outperform single fiber tracts.</p>
+      </sec>
+      <sec id="S4.SS5">
+        <title>Limitations</title>
+        <p>This study mainly focused on feature extraction for MCI recognition. However, the valuable contributions of this study must be considered within the context of certain limitations. First, a certain amount of new data will be added as the test set alone. Data in this article will be used as the training set and validation set. Second, cross-validation will be added to obtain more accurate parameters for the classifier further to improve performance in the future. Third, deep learning will be used based on our existing findings, and generalization could be improved in the future. More subjects and multiple datasets will be acquired from different hospitals to test the generalization of the classifier. Furthermore, future studies should recruit participants with both MCI and AD. The NC, MCI, and AD should be divided to investigate the pathological mechanisms underlying AD development. Finally, the behavior scale would be added, and the support vector regression (SVR) will be used to predict MCI patients’ behavior.</p>
+      </sec>
+    </sec>
+    <sec sec-type="conclusion" id="S5">
+      <title>Conclusion</title>
+      <p>Our study proposes a feature extraction method driven by hippocampus-related ROIs for white matter connectivity networks. In the feature extraction process, the whole-brain WM network, the HIP-related network, and the significant HIP-related network continuously optimize the performance of MCI classification. By recursive feature elimination, the pathological mechanism revealed that the hippocampus and thalamus are important hubs in white matter networks for MCI. Our results provide a valid basis for the early diagnosis of AD.</p>
+    </sec>
+    <sec sec-type="data-availability" id="S6">
+      <title>Data Availability Statement</title>
+      <p>The original contributions presented in the study are included in the article/<xref rid="DS1" ref-type="supplementary-material">Supplementary Material</xref>. The main codes that support the findings of this study are available on GitHub (<ext-link xlink:href="https://github.com/ThreePoundUniverse/MCI-network-classification" ext-link-type="uri">https://github.com/ThreePoundUniverse/MCI-network-classification</ext-link>). Further inquiries can be directed to the corresponding authors.</p>
+    </sec>
+    <sec id="S7">
+      <title>Ethics Statement</title>
+      <p>The studies involving human participants were reviewed and approved by Institutional Review Board of Tianjin University; Ethics Committee of Chang Gung University. The patients/participants provided their written informed consent to participate in this study.</p>
+    </sec>
+    <sec id="S8">
+      <title>Author Contributions</title>
+      <p>XS and YZ designed and conceptualized the research and wrote the manuscript. YZ, Y-PC, and C-PL collected the data. YZ, YC, SL, XZ, YS, and XS analyzed the data. XS, DM, and QL supervised the study. All authors contributed to the article and approved the submitted version.</p>
+    </sec>
+    <sec sec-type="COI-statement" id="conf1">
+      <title>Conflict of Interest</title>
+      <p>The authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.</p>
+    </sec>
+    <sec sec-type="disclaimer" id="pudiscl1">
+      <title>Publisher’s Note</title>
+      <p>All claims expressed in this article are solely those of the authors and do not necessarily represent those of their affiliated organizations, or those of the publisher, the editors and the reviewers. Any product that may be evaluated in this article, or claim that may be made by its manufacturer, is not guaranteed or endorsed by the publisher.</p>
+    </sec>
+  </body>
+  <back>
+    <sec sec-type="funding-information" id="S9">
+      <title>Funding</title>
+      <p>This work was supported by the National Natural Science Foundation of China (grant nos. 61906132 to XS, to DM, 61471263 to QL), Key Project and Team Program of Tianjin City (grant no. XC202020 to XS), Natural Science Foundation of Tianjin City (grant no. 16JCZDJC31100 to QL), Chang Gung University (grant no. BMRPC78 to Y-PC), and Tianjin University (grant no. 2020XRY-0015 to XS).</p>
+    </sec>
+    <fn-group>
+      <fn id="footnote1">
+        <label>1</label>
+        <p>
+<ext-link xlink:href="http://www.brain.org.au/software/mrtrix/" ext-link-type="uri">http://www.brain.org.au/software/mrtrix/</ext-link>
+</p>
+      </fn>
+      <fn id="footnote2">
+        <label>2</label>
+        <p>
+<ext-link xlink:href="https://fsl.fmrib.ox.ac.uk/fsl" ext-link-type="uri">https://fsl.fmrib.ox.ac.uk/fsl</ext-link>
+</p>
+      </fn>
+      <fn id="footnote3">
+        <label>3</label>
+        <p>
+<ext-link xlink:href="http://www.fil.ion.ucl.ac.uk/spm" ext-link-type="uri">http://www.fil.ion.ucl.ac.uk/spm</ext-link>
+</p>
+      </fn>
+      <fn id="footnote4">
+        <label>4</label>
+        <p>
+<ext-link xlink:href="http://restfmri.net/forum/REST" ext-link-type="uri">http://restfmri.net/forum/REST</ext-link>
+</p>
+      </fn>
+      <fn id="footnote5">
+        <label>5</label>
+        <p>
+<ext-link xlink:href="http://dsi-studio.labsolver.org/" ext-link-type="uri">http://dsi-studio.labsolver.org/</ext-link>
+</p>
+      </fn>
+      <fn id="footnote6">
+        <label>6</label>
+        <p>
+<ext-link xlink:href="https://scikit-learn.org/" ext-link-type="uri">https://scikit-learn.org/</ext-link>
+</p>
+      </fn>
+    </fn-group>
+    <sec sec-type="supplementary-material" id="S10">
+      <title>Supplementary Material</title>
+      <p>The Supplementary Material for this article can be found online at: <ext-link xlink:href="https://www.frontiersin.org/articles/10.3389/fnagi.2022.866230/full#supplementary-material" ext-link-type="uri">https://www.frontiersin.org/articles/10.3389/fnagi.2022.866230/full#supplementary-material</ext-link></p>
+      <supplementary-material id="DS1" position="float" content-type="local-data">
+        <media xlink:href="Data_Sheet_1.pdf">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+    </sec>
+    <ref-list>
+      <title>References</title>
+      <ref id="B1">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Ahmed</surname><given-names>O. B.</given-names></name><name><surname>Benois-Pineau</surname><given-names>J.</given-names></name><name><surname>Allard</surname><given-names>M.</given-names></name><name><surname>Catheline</surname><given-names>G.</given-names></name><name><surname>Amar</surname><given-names>C. B.</given-names></name></person-group> (<year>2017</year>). <article-title>Recognition of Alzheimer’s disease and Mild Cognitive Impairment with multimodal image-derived biomarkers and Multiple Kernel Learning.</article-title>
+<source><italic>Neurocomputing</italic></source>
+<volume>220</volume>
+<fpage>98</fpage>–<lpage>110</lpage>. <pub-id pub-id-type="doi">10.1016/j.neucom.2016.08.041</pub-id></mixed-citation>
+      </ref>
+      <ref id="B2">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Benoit</surname><given-names>R. G.</given-names></name><name><surname>Schacter</surname><given-names>D. L.</given-names></name></person-group> (<year>2015</year>). <article-title>Specifying the core network supporting episodic simulation and episodic memory by activation likelihood estimation.</article-title>
+<source><italic>Neuropsychologia</italic></source>
+<volume>75</volume>
+<fpage>450</fpage>–<lpage>457</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuropsychologia.2015.06.034</pub-id>
+<pub-id pub-id-type="pmid">26142352</pub-id></mixed-citation>
+      </ref>
+      <ref id="B3">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Buckner</surname><given-names>R. L.</given-names></name><name><surname>DiNicola</surname><given-names>L. M.</given-names></name></person-group> (<year>2019</year>). <article-title>The brain’s default network: updated anatomy, physiology and evolving insights.</article-title>
+<source><italic>Nat. Rev. Neurosci.</italic></source>
+<volume>20</volume>
+<fpage>593</fpage>–<lpage>608</lpage>. <pub-id pub-id-type="doi">10.1038/s41583-019-0212-7</pub-id>
+<pub-id pub-id-type="pmid">31492945</pub-id></mixed-citation>
+      </ref>
+      <ref id="B4">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Christiansen</surname><given-names>K.</given-names></name><name><surname>Aggleton</surname><given-names>J. P.</given-names></name><name><surname>Parker</surname><given-names>G. D.</given-names></name><name><surname>O’Sullivan</surname><given-names>M. J.</given-names></name><name><surname>Vann</surname><given-names>S. D.</given-names></name><name><surname>Metzler-Baddeley</surname><given-names>C.</given-names></name></person-group> (<year>2016</year>). <article-title>The status of the precommissural and postcommissural fornix in normal ageing and mild cognitive impairment: an MRI tractography study.</article-title>
+<source><italic>Neuroimage</italic></source>
+<volume>130</volume>
+<fpage>35</fpage>–<lpage>47</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2015.12.055</pub-id>
+<pub-id pub-id-type="pmid">26778129</pub-id></mixed-citation>
+      </ref>
+      <ref id="B5">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Cui</surname><given-names>Y.</given-names></name><name><surname>Wen</surname><given-names>W.</given-names></name><name><surname>Lipnicki</surname><given-names>D. M.</given-names></name><name><surname>Beg</surname><given-names>M. F.</given-names></name><name><surname>Jin</surname><given-names>J. S.</given-names></name><name><surname>Luo</surname><given-names>S.</given-names></name><etal/></person-group> (<year>2012</year>). <article-title>Automated detection of amnestic mild cognitive impairment in community-dwelling elderly adults: a combined spatial atrophy and white matter alteration approach.</article-title>
+<source><italic>Neuroimage</italic></source>
+<volume>59</volume>
+<fpage>1209</fpage>–<lpage>1217</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2011.08.013</pub-id>
+<pub-id pub-id-type="pmid">21864688</pub-id></mixed-citation>
+      </ref>
+      <ref id="B6">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Daianu</surname><given-names>M.</given-names></name><name><surname>Jahanshad</surname><given-names>N.</given-names></name><name><surname>Nir</surname><given-names>T. M.</given-names></name><name><surname>Jack</surname><given-names>C. R.</given-names><suffix>Jr.</suffix></name><name><surname>Weiner</surname><given-names>M. W.</given-names></name><name><surname>Bernstein</surname><given-names>M. A.</given-names></name><etal/></person-group> (<year>2015</year>). <article-title>Rich club analysis in the Alzheimer’s disease connectome reveals a relatively undisturbed structural core network.</article-title>
+<source><italic>Hum. Brain Mapp.</italic></source>
+<volume>36</volume>
+<fpage>3087</fpage>–<lpage>3103</lpage>. <pub-id pub-id-type="doi">10.1002/hbm.22830</pub-id>
+<pub-id pub-id-type="pmid">26037224</pub-id></mixed-citation>
+      </ref>
+      <ref id="B7">
+        <mixed-citation publication-type="book"><person-group person-group-type="author"><name><surname>Demirhan</surname><given-names>A.</given-names></name><name><surname>Nir</surname><given-names>T. M.</given-names></name><name><surname>Zavaliangos-Petropulu</surname><given-names>A.</given-names></name><name><surname>Jack</surname><given-names>C. R.</given-names></name><name><surname>Weiner</surname><given-names>M. W.</given-names></name><name><surname>Bernstein</surname><given-names>M. A.</given-names></name><etal/></person-group> (<year>2015</year>). “<article-title>Feature selection improves the accuracy of classifying Alzheimer disease using diffusion tensor images</article-title>,” in <source><italic>Proceedings of the 2015 IEEE 12th International Symposium on Biomedical Imaging (ISBI)</italic></source>, <publisher-loc>New York, NY</publisher-loc>, <fpage>126</fpage>–<lpage>130</lpage>. <pub-id pub-id-type="doi">10.1109/ISBI.2015.7163832</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="B8">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Dou</surname><given-names>X.</given-names></name><name><surname>Yao</surname><given-names>H.</given-names></name><name><surname>Feng</surname><given-names>F.</given-names></name><name><surname>Wang</surname><given-names>P.</given-names></name><name><surname>Zhou</surname><given-names>B.</given-names></name><name><surname>Jin</surname><given-names>D.</given-names></name><etal/></person-group> (<year>2020</year>). <article-title>Characterizing white matter connectivity in Alzheimer’s disease and mild cognitive impairment: an automated fiber quantification analysis with two independent datasets.</article-title>
+<source><italic>Cortex</italic></source>
+<volume>129</volume>
+<fpage>390</fpage>–<lpage>405</lpage>. <pub-id pub-id-type="doi">10.1016/j.cortex.2020.03.032</pub-id>
+<pub-id pub-id-type="pmid">32574842</pub-id></mixed-citation>
+      </ref>
+      <ref id="B9">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Dumont</surname><given-names>M.</given-names></name><name><surname>Roy</surname><given-names>M.</given-names></name><name><surname>Jodoin</surname><given-names>P. M.</given-names></name><name><surname>Morency</surname><given-names>F. C.</given-names></name><name><surname>Houde</surname><given-names>J. C.</given-names></name><name><surname>Xie</surname><given-names>Z.</given-names></name><etal/></person-group> (<year>2019</year>). <article-title>Free Water in White Matter Differentiates MCI and AD From Control Subjects.</article-title>
+<source><italic>Front. Aging Neurosci.</italic></source>
+<volume>11</volume>:<issue>270</issue>. <pub-id pub-id-type="doi">10.3389/fnagi.2019.00270</pub-id>
+<pub-id pub-id-type="pmid">31632265</pub-id></mixed-citation>
+      </ref>
+      <ref id="B10">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Dyrba</surname><given-names>M.</given-names></name><name><surname>Barkhof</surname><given-names>F.</given-names></name><name><surname>Fellgiebel</surname><given-names>A.</given-names></name><name><surname>Filippi</surname><given-names>M.</given-names></name><name><surname>Hausner</surname><given-names>L.</given-names></name><name><surname>Hauenstein</surname><given-names>K.</given-names></name><etal/></person-group> (<year>2015a</year>). <article-title>Predicting Prodromal Alzheimer’s disease in subjects with mild cognitive impairment using machine learning classification of multimodal multicenter diffusion-tensor and magnetic resonance imaging data.</article-title>
+<source><italic>J. Neuroimaging</italic></source>
+<volume>25</volume>
+<fpage>738</fpage>–<lpage>747</lpage>. <pub-id pub-id-type="doi">10.1111/jon.12214</pub-id>
+<pub-id pub-id-type="pmid">25644739</pub-id></mixed-citation>
+      </ref>
+      <ref id="B11">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Dyrba</surname><given-names>M.</given-names></name><name><surname>Grothe</surname><given-names>M.</given-names></name><name><surname>Kirste</surname><given-names>T.</given-names></name><name><surname>Teipel</surname><given-names>S. J.</given-names></name></person-group> (<year>2015b</year>). <article-title>Multimodal analysis of functional and structural disconnection in Alzheimer’s disease using multiple kernel SVM.</article-title>
+<source><italic>Hum. Brain Mapp.</italic></source>
+<volume>36</volume>
+<fpage>2118</fpage>–<lpage>2131</lpage>. <pub-id pub-id-type="doi">10.1002/hbm.22759</pub-id>
+<pub-id pub-id-type="pmid">25664619</pub-id></mixed-citation>
+      </ref>
+      <ref id="B12">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Dyrba</surname><given-names>M.</given-names></name><name><surname>Ewers</surname><given-names>M.</given-names></name><name><surname>Wegrzyn</surname><given-names>M.</given-names></name><name><surname>Kilimann</surname><given-names>I.</given-names></name><name><surname>Plant</surname><given-names>C.</given-names></name><name><surname>Oswald</surname><given-names>A.</given-names></name><etal/></person-group> (<year>2013</year>). <article-title>Robust automated detection of microstructural white matter degeneration in Alzheimer’s disease using machine learning classification of multicenter DTI Data.</article-title>
+<source><italic>PLoS One</italic></source>
+<volume>8</volume>:<issue>e64925</issue>. <pub-id pub-id-type="doi">10.1371/journal.pone.0064925</pub-id>
+<pub-id pub-id-type="pmid">23741425</pub-id></mixed-citation>
+      </ref>
+      <ref id="B13">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Ebadi</surname><given-names>A.</given-names></name><name><surname>Dalboni da Rocha</surname><given-names>J. L.</given-names></name><name><surname>Nagaraju</surname><given-names>D. B.</given-names></name><name><surname>Tovar-Moll</surname><given-names>F.</given-names></name><name><surname>Bramati</surname><given-names>I.</given-names></name><name><surname>Coutinho</surname><given-names>G.</given-names></name><etal/></person-group> (<year>2017</year>). <article-title>Ensemble Classification of Alzheimer’s disease and mild cognitive impairment based on complex graph measures from diffusion tensor images.</article-title>
+<source><italic>Front. Neurosci.</italic></source>
+<volume>11</volume>:<issue>56</issue>. <pub-id pub-id-type="doi">10.3389/fnins.2017.00056</pub-id>
+<pub-id pub-id-type="pmid">28293162</pub-id></mixed-citation>
+      </ref>
+      <ref id="B14">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Gauthier</surname><given-names>S.</given-names></name><name><surname>Reisberg</surname><given-names>B.</given-names></name><name><surname>Zaudig</surname><given-names>M.</given-names></name><name><surname>Petersen</surname><given-names>R. C.</given-names></name><name><surname>Ritchie</surname><given-names>K.</given-names></name><name><surname>Broich</surname><given-names>K.</given-names></name><etal/></person-group> (<year>2006</year>). <article-title>Mild cognitive impairment.</article-title>
+<source><italic>Lancet</italic></source>
+<volume>367</volume>
+<fpage>1262</fpage>–<lpage>1270</lpage>.<pub-id pub-id-type="pmid">16631882</pub-id></mixed-citation>
+      </ref>
+      <ref id="B15">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Gu</surname><given-names>L.</given-names></name><name><surname>Zhang</surname><given-names>Z.</given-names></name></person-group> (<year>2019</year>). <article-title>Exploring structural and functional brain changes in mild cognitive impairment: a whole brain ALE meta-analysis for multimodal MRI.</article-title>
+<source><italic>ACS Chem. Neurosci.</italic></source>
+<volume>10</volume>
+<fpage>2823</fpage>–<lpage>2829</lpage>. <pub-id pub-id-type="doi">10.1021/acschemneuro.9b00045</pub-id>
+<pub-id pub-id-type="pmid">30808171</pub-id></mixed-citation>
+      </ref>
+      <ref id="B16">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Gu</surname><given-names>S.</given-names></name><name><surname>Pasqualetti</surname><given-names>F.</given-names></name><name><surname>Cieslak</surname><given-names>M.</given-names></name><name><surname>Telesford</surname><given-names>Q. K.</given-names></name><name><surname>Yu</surname><given-names>A. B.</given-names></name><name><surname>Kahn</surname><given-names>A. E.</given-names></name><etal/></person-group> (<year>2015</year>). <article-title>Controllability of structural brain networks.</article-title>
+<source><italic>Nat. Commun.</italic></source>
+<volume>6</volume>:<issue>8414</issue>.</mixed-citation>
+      </ref>
+      <ref id="B17">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Hinrichs</surname><given-names>C.</given-names></name><name><surname>Singh</surname><given-names>V.</given-names></name><name><surname>Xu</surname><given-names>G. F.</given-names></name><name><surname>Johnson</surname><given-names>S. C.</given-names></name><name><surname>Neuroimaging</surname><given-names>A. D.</given-names></name></person-group> (<year>2011</year>). <article-title>Predictive markers for AD in a multi-modality framework: An analysis of MCI progression in the ADNI population.</article-title>
+<source><italic>Neuroimage</italic></source>
+<volume>55</volume>
+<fpage>574</fpage>–<lpage>589</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2010.10.081</pub-id>
+<pub-id pub-id-type="pmid">21146621</pub-id></mixed-citation>
+      </ref>
+      <ref id="B18">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Hyman</surname><given-names>B. T.</given-names></name><name><surname>Phelps</surname><given-names>C. H.</given-names></name><name><surname>Beach</surname><given-names>T. G.</given-names></name><name><surname>Bigio</surname><given-names>E. H.</given-names></name><name><surname>Cairns</surname><given-names>N. J.</given-names></name><name><surname>Carrillo</surname><given-names>M. C.</given-names></name><etal/></person-group> (<year>2012</year>). <article-title>National Institute on Aging-Alzheimer’s Association guidelines for the neuropathologic assessment of Alzheimer’s disease.</article-title>
+<source><italic>Alzheimers Dement.</italic></source>
+<volume>123</volume>
+<fpage>1</fpage>–<lpage>11</lpage>.</mixed-citation>
+      </ref>
+      <ref id="B19">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Jacobs</surname><given-names>H. I.</given-names></name><name><surname>van Boxtel</surname><given-names>M. P.</given-names></name><name><surname>Gronenschild</surname><given-names>E. H.</given-names></name><name><surname>Uylings</surname><given-names>H. B.</given-names></name><name><surname>Jolles</surname><given-names>J.</given-names></name><name><surname>Verhey</surname><given-names>F. R.</given-names></name></person-group> (<year>2013</year>). <article-title>Decreased gray matter diffusivity: A potential early Alzheimer’s disease biomarker?</article-title>
+<source><italic>Alzheimers Dement.</italic></source>
+<volume>9</volume>
+<fpage>93</fpage>–<lpage>97</lpage>. <pub-id pub-id-type="doi">10.1016/j.jalz.2011.11.004</pub-id>
+<pub-id pub-id-type="pmid">22651939</pub-id></mixed-citation>
+      </ref>
+      <ref id="B20">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Jones</surname><given-names>D. T.</given-names></name><name><surname>Knopman</surname><given-names>D. S.</given-names></name><name><surname>Gunter</surname><given-names>J. L.</given-names></name><name><surname>Graff-Radford</surname><given-names>J.</given-names></name><name><surname>Vemuri</surname><given-names>P.</given-names></name><name><surname>Boeve</surname><given-names>B. F.</given-names></name><etal/></person-group> (<year>2015</year>). <article-title>Cascading network failure across the Alzheimer’s disease spectrum.</article-title>
+<source><italic>Brain</italic></source>
+<volume>139</volume>
+<fpage>547</fpage>–<lpage>562</lpage>. <pub-id pub-id-type="doi">10.1093/brain/awv338</pub-id>
+<pub-id pub-id-type="pmid">26586695</pub-id></mixed-citation>
+      </ref>
+      <ref id="B21">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Kleinschmidt</surname><given-names>A.</given-names></name><name><surname>Vuilleumier</surname><given-names>P.</given-names></name></person-group> (<year>2013</year>). <article-title>Disconnecting cognition.</article-title>
+<source><italic>Curr. Opin. Neurol.</italic></source>
+<volume>26</volume>
+<fpage>333</fpage>–<lpage>338</lpage>. <pub-id pub-id-type="doi">10.1097/wco.0b013e328363393b</pub-id>
+<pub-id pub-id-type="pmid">23823462</pub-id></mixed-citation>
+      </ref>
+      <ref id="B22">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Lee</surname><given-names>S. H.</given-names></name><name><surname>Coutu</surname><given-names>J. P.</given-names></name><name><surname>Wilkens</surname><given-names>P.</given-names></name><name><surname>Yendiki</surname><given-names>A.</given-names></name><name><surname>Rosas</surname><given-names>H. D.</given-names></name><name><surname>Salat</surname><given-names>D. H.</given-names></name></person-group> (<year>2015</year>). <article-title>TRACT-BASED ANALYSIS OF WHITE MATTER DEGENERATION IN ALZHEIMER’S DISEASE.</article-title>
+<source><italic>Neuroscience</italic></source>
+<volume>301</volume>
+<fpage>79</fpage>–<lpage>89</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroscience.2015.05.049</pub-id>
+<pub-id pub-id-type="pmid">26026680</pub-id></mixed-citation>
+      </ref>
+      <ref id="B23">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Liu</surname><given-names>F. Y.</given-names></name><name><surname>Zhou</surname><given-names>L. P.</given-names></name><name><surname>Shen</surname><given-names>C. H.</given-names></name><name><surname>Yin</surname><given-names>J. P.</given-names></name></person-group> (<year>2014</year>). <article-title>Multiple Kernel learning in the primal for multimodal Alzheimer’s disease classification.</article-title>
+<source><italic>IEEE J. Biomed. Health</italic></source>
+<volume>18</volume>
+<fpage>984</fpage>–<lpage>990</lpage>. <pub-id pub-id-type="doi">10.1109/JBHI.2013.2285378</pub-id>
+<pub-id pub-id-type="pmid">24132030</pub-id></mixed-citation>
+      </ref>
+      <ref id="B24">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Liu</surname><given-names>L.</given-names></name><name><surname>Jiang</surname><given-names>H.</given-names></name><name><surname>Wang</surname><given-names>D.</given-names></name><name><surname>Zhao</surname><given-names>X. F.</given-names></name></person-group> (<year>2021</year>). <article-title>A study of regional homogeneity of resting-state Functional Magnetic Resonance Imaging in mild cognitive impairment.</article-title>
+<source><italic>Behav. Brain Res.</italic></source>
+<volume>402</volume>
+<issue>113103</issue>. <pub-id pub-id-type="doi">10.1016/j.bbr.2020.113103</pub-id>
+<pub-id pub-id-type="pmid">33417993</pub-id></mixed-citation>
+      </ref>
+      <ref id="B25">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Maggipinto</surname><given-names>T.</given-names></name><name><surname>Bellotti</surname><given-names>R.</given-names></name><name><surname>Amoroso</surname><given-names>N.</given-names></name><name><surname>Diacono</surname><given-names>D.</given-names></name><name><surname>Donvito</surname><given-names>G.</given-names></name><name><surname>Lella</surname><given-names>E.</given-names></name><etal/></person-group> (<year>2017</year>). <article-title>DTI measurements for Alzheimer’s classification.</article-title>
+<source><italic>Phys. Med. Biol.</italic></source>
+<volume>62</volume>
+<fpage>2361</fpage>–<lpage>2375</lpage>. <pub-id pub-id-type="doi">10.1088/1361-6560/aa5dbe</pub-id>
+<pub-id pub-id-type="pmid">28234631</pub-id></mixed-citation>
+      </ref>
+      <ref id="B26">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Mito</surname><given-names>R.</given-names></name><name><surname>Raffelt</surname><given-names>D.</given-names></name><name><surname>Dhollander</surname><given-names>T.</given-names></name><name><surname>Vaughan</surname><given-names>D. N.</given-names></name><name><surname>Tournier</surname><given-names>J.</given-names></name><name><surname>Salvado</surname><given-names>O.</given-names></name><etal/></person-group> (<year>2018</year>). <article-title>Fibre-specific white matter reductions in Alzheimer’s disease and mild cognitive impairment.</article-title>
+<source><italic>Brain</italic></source>
+<volume>141</volume>
+<fpage>888</fpage>–<lpage>902</lpage>. <pub-id pub-id-type="doi">10.1093/brain/awx355</pub-id>
+<pub-id pub-id-type="pmid">29309541</pub-id></mixed-citation>
+      </ref>
+      <ref id="B27">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Nir</surname><given-names>T. M.</given-names></name><name><surname>Villalon-Reina</surname><given-names>J. E.</given-names></name><name><surname>Prasad</surname><given-names>G.</given-names></name><name><surname>Jahanshad</surname><given-names>N.</given-names></name><name><surname>Joshi</surname><given-names>S. H.</given-names></name><name><surname>Toga</surname><given-names>A. W.</given-names></name><etal/></person-group> (<year>2015</year>). <article-title>Diffusion weighted imaging-based maximum density path analysis and classification of Alzheimer’s disease.</article-title>
+<source><italic>Neurobiol. Aging</italic></source>
+<volume>36</volume>
+<fpage>S132</fpage>–<lpage>S140</lpage>. <pub-id pub-id-type="doi">10.1016/j.neurobiolaging.2014.05.037</pub-id>
+<pub-id pub-id-type="pmid">25444597</pub-id></mixed-citation>
+      </ref>
+      <ref id="B28">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Pellegrini</surname><given-names>E.</given-names></name><name><surname>Ballerini</surname><given-names>L.</given-names></name><name><surname>Hernandez</surname><given-names>M.</given-names></name><name><surname>Chappell</surname><given-names>F. M.</given-names></name><name><surname>Gonzalez-Castro</surname><given-names>V.</given-names></name><name><surname>Anblagan</surname><given-names>D.</given-names></name><etal/></person-group> (<year>2018</year>). <article-title>Machine learning of neuroimaging for assisted diagnosis of cognitive impairment and dementia: A systematic review.</article-title>
+<source><italic>Alzheimers Dement.</italic></source>
+<volume>10</volume>
+<fpage>519</fpage>–<lpage>535</lpage>. <pub-id pub-id-type="doi">10.1016/j.dadm.2018.07.004</pub-id>
+<pub-id pub-id-type="pmid">30364671</pub-id></mixed-citation>
+      </ref>
+      <ref id="B29">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Petersen</surname><given-names>R. C.</given-names></name><name><surname>Doody</surname><given-names>R.</given-names></name><name><surname>Kurz</surname><given-names>A.</given-names></name><name><surname>Mohs</surname><given-names>R. C.</given-names></name><name><surname>Morris</surname><given-names>J. C.</given-names></name><name><surname>Rabins</surname><given-names>P. V.</given-names></name><etal/></person-group> (<year>2001</year>). <article-title>Current concepts in mild cognitive impairment.</article-title>
+<source><italic>Arch. Neurol.</italic></source>
+<volume>58</volume>
+<fpage>1985</fpage>–<lpage>1992</lpage>.<pub-id pub-id-type="pmid">11735772</pub-id></mixed-citation>
+      </ref>
+      <ref id="B30">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Petersen</surname><given-names>R. C.</given-names></name><name><surname>Smith</surname><given-names>G. E.</given-names></name><name><surname>Waring</surname><given-names>S. C.</given-names></name><name><surname>Ivnik</surname><given-names>R. J.</given-names></name><name><surname>Tangalos</surname><given-names>E. G.</given-names></name><name><surname>Kokmen</surname><given-names>E.</given-names></name></person-group> (<year>1999</year>). <article-title>Mild cognitive impairment - Clinical characterization and outcome.</article-title>
+<source><italic>Arch. Neurol.</italic></source>
+<volume>56</volume>
+<fpage>303</fpage>–<lpage>308</lpage>. <pub-id pub-id-type="doi">10.1001/archneur.56.3.303</pub-id>
+<pub-id pub-id-type="pmid">10190820</pub-id></mixed-citation>
+      </ref>
+      <ref id="B31">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Prasad</surname><given-names>G.</given-names></name><name><surname>Joshi</surname><given-names>S. H.</given-names></name><name><surname>Nir</surname><given-names>T. M.</given-names></name><name><surname>Toga</surname><given-names>A. W.</given-names></name><name><surname>Thompson</surname><given-names>P. M.</given-names></name></person-group> (<year>2015</year>). <article-title>Brain connectivity and novel network measures for Alzheimer’s disease classification.</article-title>
+<source><italic>Neurobiol. Aging</italic></source>
+<volume>36</volume>
+<fpage>S121</fpage>–<lpage>S131</lpage>. <pub-id pub-id-type="doi">10.1016/j.neurobiolaging.2014.04.037</pub-id>
+<pub-id pub-id-type="pmid">25264345</pub-id></mixed-citation>
+      </ref>
+      <ref id="B32">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Rathore</surname><given-names>S.</given-names></name><name><surname>Habes</surname><given-names>M.</given-names></name><name><surname>Iftikhar</surname><given-names>M. A.</given-names></name><name><surname>Shacklett</surname><given-names>A.</given-names></name><name><surname>Davatzikos</surname><given-names>C.</given-names></name></person-group> (<year>2017</year>). <article-title>A review on neuroimaging-based classification studies and associated feature extraction methods for Alzheimer’s disease and its prodromal stages.</article-title>
+<source><italic>Neuroimage</italic></source>
+<volume>155</volume>
+<fpage>530</fpage>–<lpage>548</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2017.03.057</pub-id>
+<pub-id pub-id-type="pmid">28414186</pub-id></mixed-citation>
+      </ref>
+      <ref id="B33">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Rugg</surname><given-names>M. D.</given-names></name><name><surname>Vilberg</surname><given-names>K. L.</given-names></name></person-group> (<year>2013</year>). <article-title>Brain networks underlying episodic memory retrieval.</article-title>
+<source><italic>Curr. Opin. Neurobiol.</italic></source>
+<volume>23</volume>
+<fpage>255</fpage>–<lpage>260</lpage>. <pub-id pub-id-type="doi">10.1016/j.conb.2012.11.005</pub-id>
+<pub-id pub-id-type="pmid">23206590</pub-id></mixed-citation>
+      </ref>
+      <ref id="B34">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Shatte</surname><given-names>A. B. R.</given-names></name><name><surname>Hutchinson</surname><given-names>D. M.</given-names></name><name><surname>Teague</surname><given-names>S. J.</given-names></name></person-group> (<year>2019</year>). <article-title>Machine learning in mental health: a scoping review of methods and applications.</article-title>
+<source><italic>Psychol. Med.</italic></source>
+<volume>49</volume>
+<fpage>1426</fpage>–<lpage>1448</lpage>. <pub-id pub-id-type="doi">10.1017/S0033291719000151</pub-id>
+<pub-id pub-id-type="pmid">30744717</pub-id></mixed-citation>
+      </ref>
+      <ref id="B35">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Sperling</surname><given-names>R. A.</given-names></name><name><surname>Aisen</surname><given-names>P. S.</given-names></name><name><surname>Beckett</surname><given-names>L. A.</given-names></name><name><surname>Bennett</surname><given-names>D. A.</given-names></name><name><surname>Craft</surname><given-names>S.</given-names></name><name><surname>Fagan</surname><given-names>A. M.</given-names></name><etal/></person-group> (<year>2011</year>). <article-title>Toward defining the preclinical stages of Alzheimer’s disease: recommendations from the National Institute on Aging-Alzheimer’s Association workgroups on diagnostic guidelines for Alzheimer’s disease.</article-title>
+<source><italic>Alzheimers Dement.</italic></source>
+<volume>7</volume>
+<fpage>280</fpage>–<lpage>292</lpage>. <pub-id pub-id-type="doi">10.1016/j.jalz.2011.03.003</pub-id>
+<pub-id pub-id-type="pmid">21514248</pub-id></mixed-citation>
+      </ref>
+      <ref id="B36">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Sporns</surname><given-names>O.</given-names></name><name><surname>Betzel</surname><given-names>R. F.</given-names></name></person-group> (<year>2016</year>). <article-title>Modular brain networks.</article-title>
+<source><italic>Annu. Rev. Psychol.</italic></source>
+<volume>67</volume>
+<fpage>613</fpage>–<lpage>640</lpage>. <pub-id pub-id-type="doi">10.1146/annurev-psych-122414-033634</pub-id>
+<pub-id pub-id-type="pmid">26393868</pub-id></mixed-citation>
+      </ref>
+      <ref id="B37">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Teipel</surname><given-names>S.</given-names></name><name><surname>Grothe</surname><given-names>M. J.</given-names></name></person-group>
+<collab>Alzheimer ‘s Disease Neuroimaging Initiative</collab> (<year>2016</year>). <article-title>Does posterior cingulate hypometabolism result from disconnection or local pathology across preclinical and clinical stages of Alzheimer’s disease?</article-title>
+<source><italic>Eur. J. Nucl. Med. Mol. Imaging</italic></source>
+<volume>43</volume>
+<fpage>526</fpage>–<lpage>536</lpage>. <pub-id pub-id-type="doi">10.1007/s00259-015-3222-3</pub-id>
+<pub-id pub-id-type="pmid">26555082</pub-id></mixed-citation>
+      </ref>
+      <ref id="B38">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Tournier</surname><given-names>J. D.</given-names></name></person-group> (<year>2019</year>). <article-title>Diffusion MRI in the brain - Theory and concepts.</article-title>
+<source><italic>Prog. Nucl. Magn. Reson. Spectrosc.</italic></source>
+<volume>112-113</volume>
+<fpage>1</fpage>–<lpage>16</lpage>. <pub-id pub-id-type="doi">10.1016/j.pnmrs.2019.03.001</pub-id>
+<pub-id pub-id-type="pmid">31481155</pub-id></mixed-citation>
+      </ref>
+      <ref id="B39">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Wang</surname><given-names>J.</given-names></name><name><surname>Zuo</surname><given-names>X.</given-names></name><name><surname>Dai</surname><given-names>Z.</given-names></name><name><surname>Xia</surname><given-names>M.</given-names></name><name><surname>Zhao</surname><given-names>Z.</given-names></name><name><surname>Zhao</surname><given-names>X.</given-names></name><etal/></person-group> (<year>2013</year>). <article-title>Disrupted functional brain connectome in individuals at risk for Alzheimer’s disease.</article-title>
+<source><italic>Biol. Psychiatry</italic></source>
+<volume>73</volume>
+<fpage>472</fpage>–<lpage>481</lpage>. <pub-id pub-id-type="doi">10.1016/j.biopsych.2012.03.026</pub-id>
+<pub-id pub-id-type="pmid">22537793</pub-id></mixed-citation>
+      </ref>
+      <ref id="B40">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Wang</surname><given-names>Q.</given-names></name><name><surname>Guo</surname><given-names>L.</given-names></name><name><surname>Thompson</surname><given-names>P. M.</given-names></name><name><surname>Jack</surname><given-names>C. R.</given-names><suffix>Jr.</suffix></name><name><surname>Dodge</surname><given-names>H.</given-names></name><name><surname>Zhan</surname><given-names>L.</given-names></name><etal/></person-group> (<year>2018</year>). <article-title>The added value of diffusion-weighted mri-derived structural connectome in evaluating mild cognitive impairment: a multi-cohort validation.</article-title>
+<source><italic>J. Alzheimers Dis.</italic></source>
+<volume>64</volume>
+<fpage>149</fpage>–<lpage>169</lpage>. <pub-id pub-id-type="doi">10.3233/JAD-171048</pub-id>
+<pub-id pub-id-type="pmid">29865049</pub-id></mixed-citation>
+      </ref>
+      <ref id="B41">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Wang</surname><given-names>T.</given-names></name><name><surname>Shi</surname><given-names>F.</given-names></name><name><surname>Jin</surname><given-names>Y.</given-names></name><name><surname>Yap</surname><given-names>P.-T.</given-names></name><name><surname>Wee</surname><given-names>C.-Y.</given-names></name><name><surname>Zhang</surname><given-names>J.</given-names></name><etal/></person-group> (<year>2016</year>). <article-title>Multilevel deficiency of white matter connectivity networks in Alzheimer’s disease: a diffusion MRI study with DTI and HARDI models.</article-title>
+<source><italic>Neural Plast.</italic></source>
+<volume>2016</volume>:<issue>2947136</issue>. <pub-id pub-id-type="doi">10.1155/2016/2947136</pub-id>
+<pub-id pub-id-type="pmid">26881100</pub-id></mixed-citation>
+      </ref>
+      <ref id="B42">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Wee</surname><given-names>C. Y.</given-names></name><name><surname>Yap</surname><given-names>P. T.</given-names></name><name><surname>Li</surname><given-names>W. B.</given-names></name><name><surname>Denny</surname><given-names>K.</given-names></name><name><surname>Browndyke</surname><given-names>J. N.</given-names></name><name><surname>Potter</surname><given-names>G. G.</given-names></name><etal/></person-group> (<year>2011</year>). <article-title>Enriched white matter connectivity networks for accurate identification of MCI patients.</article-title>
+<source><italic>Neuroimage</italic></source>
+<volume>54</volume>
+<fpage>1812</fpage>–<lpage>1822</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2010.10.026</pub-id>
+<pub-id pub-id-type="pmid">20970508</pub-id></mixed-citation>
+      </ref>
+      <ref id="B43">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Xie</surname><given-names>Y.</given-names></name><name><surname>Cui</surname><given-names>Z.</given-names></name><name><surname>Zhang</surname><given-names>Z.</given-names></name><name><surname>Sun</surname><given-names>Y.</given-names></name><name><surname>Sheng</surname><given-names>C.</given-names></name><name><surname>Li</surname><given-names>K.</given-names></name><etal/></person-group> (<year>2015</year>). <article-title>Identification of amnestic mild cognitive impairment using multi-modal brain features: a combined structural MRI and Diffusion Tensor Imaging Study.</article-title>
+<source><italic>J. Alzheimers Dis.</italic></source>
+<volume>47</volume>
+<fpage>509</fpage>–<lpage>522</lpage>. <pub-id pub-id-type="doi">10.3233/JAD-150184</pub-id>
+<pub-id pub-id-type="pmid">26401572</pub-id></mixed-citation>
+      </ref>
+      <ref id="B44">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Yu</surname><given-names>J.</given-names></name><name><surname>Lam</surname><given-names>C. L. M.</given-names></name><name><surname>Lee</surname><given-names>T. M. C.</given-names></name></person-group> (<year>2017</year>). <article-title>White matter microstructural abnormalities in amnestic mild cognitive impairment: a meta-analysis of whole-brain and ROI-based studies.</article-title>
+<source><italic>Neurosci. Biobehav. Rev.</italic></source>
+<volume>83</volume>
+<fpage>405</fpage>–<lpage>416</lpage>. <pub-id pub-id-type="doi">10.1016/j.neubiorev.2017.10.026</pub-id>
+<pub-id pub-id-type="pmid">29092777</pub-id></mixed-citation>
+      </ref>
+      <ref id="B45">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Yu</surname><given-names>M.</given-names></name><name><surname>Sporns</surname><given-names>O.</given-names></name><name><surname>Saykin</surname><given-names>A. J.</given-names></name></person-group> (<year>2021</year>). <article-title>The human connectome in Alzheimer disease - relationship to biomarkers and genetics.</article-title>
+<source><italic>Nat. Rev. Neurol.</italic></source>
+<volume>17</volume>
+<fpage>545</fpage>–<lpage>563</lpage>. <pub-id pub-id-type="doi">10.1038/s41582-021-00529-1</pub-id>
+<pub-id pub-id-type="pmid">34285392</pub-id></mixed-citation>
+      </ref>
+      <ref id="B46">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zhang</surname><given-names>D. Q.</given-names></name><name><surname>Shen</surname><given-names>D. G.</given-names></name></person-group>
+<collab>Alzheimer’s Disease Neuroimaging Initiative</collab> (<year>2012</year>). <article-title>Multi-modal multi-task learning for joint prediction of multiple regression and classification variables in Alzheimer’s disease (vol 59, pg 895, 2012).</article-title>
+<source><italic>Neuroimage</italic></source>
+<volume>62</volume>
+<fpage>2179</fpage>–<lpage>2179</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2011.09.069</pub-id>
+<pub-id pub-id-type="pmid">21992749</pub-id></mixed-citation>
+      </ref>
+      <ref id="B47">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zhang</surname><given-names>D. Q.</given-names></name><name><surname>Wang</surname><given-names>Y. P.</given-names></name><name><surname>Zhou</surname><given-names>L. P.</given-names></name><name><surname>Yuan</surname><given-names>H.</given-names></name><name><surname>Shen</surname><given-names>D. G.</given-names></name></person-group> (<year>2011</year>). <article-title>Multimodal classification of Alzheimer’s disease and mild cognitive impairment.</article-title>
+<source><italic>Neuroimage</italic></source>
+<volume>55</volume>
+<fpage>856</fpage>–<lpage>867</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2011.01.008</pub-id>
+<pub-id pub-id-type="pmid">21236349</pub-id></mixed-citation>
+      </ref>
+      <ref id="B48">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zhang</surname><given-names>Y. P.</given-names></name><name><surname>Wang</surname><given-names>S. H.</given-names></name><name><surname>Xia</surname><given-names>K. J.</given-names></name><name><surname>Jiang</surname><given-names>Y. Z.</given-names></name><name><surname>Qian</surname><given-names>P. J.</given-names></name></person-group> (<year>2021</year>). <article-title>Alzheimer’s disease multiclass diagnosis via multimodal neuroimaging embedding feature selection and fusion.</article-title>
+<source><italic>Inf. Fusion</italic></source>
+<volume>66</volume>
+<fpage>170</fpage>–<lpage>183</lpage>. <pub-id pub-id-type="doi">10.1016/j.inffus.2020.09.002</pub-id></mixed-citation>
+      </ref>
+      <ref id="B49">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zhao</surname><given-names>B.</given-names></name><name><surname>Li</surname><given-names>T.</given-names></name><name><surname>Yang</surname><given-names>Y.</given-names></name><name><surname>Wang</surname><given-names>X.</given-names></name><name><surname>Luo</surname><given-names>T.</given-names></name><name><surname>Shan</surname><given-names>Y.</given-names></name><etal/></person-group> (<year>2021</year>). <article-title>Common genetic variation influencing human white matter microstructure.</article-title>
+<source><italic>Science</italic></source>
+<volume>372</volume>:<issue>eabf3736</issue>. <pub-id pub-id-type="doi">10.1126/science.abf3736</pub-id>
+<pub-id pub-id-type="pmid">34140357</pub-id></mixed-citation>
+      </ref>
+      <ref id="B50">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zhou</surname><given-names>Y.</given-names></name><name><surname>Si</surname><given-names>X.</given-names></name><name><surname>Chen</surname><given-names>Y.</given-names></name><name><surname>Chao</surname><given-names>Y.</given-names></name><name><surname>Lin</surname><given-names>C. P.</given-names></name><name><surname>Li</surname><given-names>S.</given-names></name><etal/></person-group> (<year>2021</year>). <article-title>Hippocampus- and thalamus-related fiber-specific white matter reductions in mild cognitive impairment.</article-title>
+<source><italic>Cereb. Cortex.</italic></source>
+<comment>[Epub ahead of print]</comment>. <pub-id pub-id-type="doi">10.1093/cercor/bhab407</pub-id>
+<pub-id pub-id-type="pmid">34891164</pub-id></mixed-citation>
+      </ref>
+      <ref id="B51">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zhuang</surname><given-names>L.</given-names></name><name><surname>Sachdev</surname><given-names>P. S.</given-names></name><name><surname>Trollor</surname><given-names>J. N.</given-names></name><name><surname>Kochan</surname><given-names>N. A.</given-names></name><name><surname>Reppermund</surname><given-names>S.</given-names></name><name><surname>Brodaty</surname><given-names>H.</given-names></name><etal/></person-group> (<year>2012</year>). <article-title>Microstructural white matter changes in cognitively normal individuals at risk of amnestic MCI.</article-title>
+<source><italic>Neurology</italic></source>
+<volume>79</volume>
+<fpage>748</fpage>–<lpage>754</lpage>. <pub-id pub-id-type="doi">10.1212/WNL.0b013e3182661f4d</pub-id>
+<pub-id pub-id-type="pmid">22843270</pub-id></mixed-citation>
+      </ref>
+      <ref id="B52">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zhuo</surname><given-names>J. J.</given-names></name><name><surname>Fan</surname><given-names>L. Z.</given-names></name><name><surname>Liu</surname><given-names>Y.</given-names></name><name><surname>Zhang</surname><given-names>Y. C.</given-names></name><name><surname>Yu</surname><given-names>C. S.</given-names></name><name><surname>Jiang</surname><given-names>T. Z.</given-names></name></person-group> (<year>2016</year>). <article-title>Connectivity profiles reveal a transition subarea in the parahippocampal region that integrates the anterior temporal-posterior medial systems.</article-title>
+<source><italic>J. Neurosci.</italic></source>
+<volume>36</volume>
+<fpage>2782</fpage>–<lpage>2795</lpage>. <pub-id pub-id-type="doi">10.1523/JNEUROSCI.1975-15.2016</pub-id>
+<pub-id pub-id-type="pmid">26937015</pub-id></mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

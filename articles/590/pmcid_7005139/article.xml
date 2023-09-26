@@ -1,0 +1,1119 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties open_access?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">Front Neurosci</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Front Neurosci</journal-id>
+      <journal-id journal-id-type="publisher-id">Front. Neurosci.</journal-id>
+      <journal-title-group>
+        <journal-title>Frontiers in Neuroscience</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">1662-4548</issn>
+      <issn pub-type="epub">1662-453X</issn>
+      <publisher>
+        <publisher-name>Frontiers Media S.A.</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">32082110</article-id>
+      <article-id pub-id-type="pmc">7005139</article-id>
+      <article-id pub-id-type="doi">10.3389/fnins.2020.00032</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Neuroscience</subject>
+          <subj-group>
+            <subject>Original Research</subject>
+          </subj-group>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Resting-State Functional Connectivity Estimated With Hierarchical Bayesian Diffuse Optical Tomography</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Aihara</surname>
+            <given-names>Takatsugu</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="corresp" rid="c001">
+            <sup>*</sup>
+          </xref>
+          <uri xlink:type="simple" xlink:href="http://loop.frontiersin.org/people/831503/overview"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Shimokawa</surname>
+            <given-names>Takeaki</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <uri xlink:type="simple" xlink:href="http://loop.frontiersin.org/people/617648/overview"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Ogawa</surname>
+            <given-names>Takeshi</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+          <uri xlink:type="simple" xlink:href="http://loop.frontiersin.org/people/31333/overview"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Okada</surname>
+            <given-names>Yuto</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Ishikawa</surname>
+            <given-names>Akihiro</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff5">
+            <sup>5</sup>
+          </xref>
+          <uri xlink:type="simple" xlink:href="http://loop.frontiersin.org/people/130276/overview"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Inoue</surname>
+            <given-names>Yoshihiro</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff5">
+            <sup>5</sup>
+          </xref>
+          <uri xlink:type="simple" xlink:href="http://loop.frontiersin.org/people/893028/overview"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Yamashita</surname>
+            <given-names>Okito</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff6">
+            <sup>6</sup>
+          </xref>
+          <uri xlink:type="simple" xlink:href="http://loop.frontiersin.org/people/54510/overview"/>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1"><sup>1</sup><institution>Graduate School of Human and Environmental Studies, Kyoto University</institution>, <addr-line>Kyoto</addr-line>, <country>Japan</country></aff>
+      <aff id="aff2"><sup>2</sup><institution>Neural Information Analysis Laboratories, Advanced Telecommunications Research Institute International</institution>, <addr-line>Kyoto</addr-line>, <country>Japan</country></aff>
+      <aff id="aff3"><sup>3</sup><institution>Cognitive Mechanisms Laboratories, Advanced Telecommunications Research Institute International</institution>, <addr-line>Kyoto</addr-line>, <country>Japan</country></aff>
+      <aff id="aff4"><sup>4</sup><institution>Graduate School of Information Science, Nara Institute of Science and Technology</institution>, <addr-line>Nara</addr-line>, <country>Japan</country></aff>
+      <aff id="aff5"><sup>5</sup><institution>Medical Systems Division, Research and Development Department, Shimadzu Corporation</institution>, <addr-line>Kyoto</addr-line>, <country>Japan</country></aff>
+      <aff id="aff6"><sup>6</sup><institution>RIKEN Center for Advanced Intelligence Project</institution>, <addr-line>Tokyo</addr-line>, <country>Japan</country></aff>
+      <author-notes>
+        <fn fn-type="edited-by">
+          <p>Edited by: Yunjie Tong, Purdue University, United States</p>
+        </fn>
+        <fn fn-type="edited-by">
+          <p>Reviewed by: Han Zhang, University of North Carolina at Chapel Hill, United States; Shijie Zhao, Northwestern Polytechnical University, China</p>
+        </fn>
+        <corresp id="c001">*Correspondence: Takatsugu Aihara, <email>aihara@atr.jp</email></corresp>
+        <fn fn-type="other" id="fn004">
+          <p>This article was submitted to Brain Imaging Methods, a section of the journal Frontiers in Neuroscience</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="epub">
+        <day>31</day>
+        <month>1</month>
+        <year>2020</year>
+      </pub-date>
+      <pub-date pub-type="collection">
+        <year>2020</year>
+      </pub-date>
+      <volume>14</volume>
+      <elocation-id>32</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>20</day>
+          <month>10</month>
+          <year>2019</year>
+        </date>
+        <date date-type="accepted">
+          <day>13</day>
+          <month>1</month>
+          <year>2020</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Copyright © 2020 Aihara, Shimokawa, Ogawa, Okada, Ishikawa, Inoue and Yamashita.</copyright-statement>
+        <copyright-year>2020</copyright-year>
+        <copyright-holder>Aihara, Shimokawa, Ogawa, Okada, Ishikawa, Inoue and Yamashita</copyright-holder>
+        <license xlink:href="http://creativecommons.org/licenses/by/4.0/">
+          <license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY). The use, distribution or reproduction in other forums is permitted, provided the original author(s) and the copyright owner(s) are credited and that the original publication in this journal is cited, in accordance with accepted academic practice. No use, distribution or reproduction is permitted which does not comply with these terms.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>Resting-state functional connectivity (RSFC) has been generally assessed with functional magnetic resonance imaging (fMRI) thanks to its high spatial resolution. However, fMRI has several disadvantages such as high cost and low portability. In addition, fMRI may not be appropriate for people with metal or electronic implants in their bodies, with claustrophobia and who are pregnant. Diffuse optical tomography (DOT), a method of neuroimaging using functional near-infrared spectroscopy (fNIRS) to reconstruct three-dimensional brain activity images, offers a non-invasive alternative, because fNIRS as well as fMRI measures changes in deoxygenated hemoglobin concentrations and, in addition, fNIRS is free of above disadvantages. We recently proposed a hierarchical Bayesian (HB) DOT algorithm and verified its performance in terms of task-related brain responses. In this study, we attempted to evaluate the HB DOT in terms of estimating RSFC. In 20 healthy males (21–38 years old), 10 min of resting-state data was acquired with 3T MRI scanner or high-density NIRS on different days. The NIRS channels consisted of 96 long (29-mm) source-detector (SD) channels and 56 short (13-mm) SD channels, which covered bilateral frontal and parietal areas. There were one and two resting-state runs in the fMRI and fNIRS experiments, respectively. The reconstruction performances of our algorithm and the two currently prevailing algorithms for DOT were evaluated using fMRI signals as a reference. Compared with the currently prevailing algorithms, our HB algorithm showed better performances in both the similarity to fMRI data and inter-run reproducibility, in terms of estimating the RSFC.</p>
+      </abstract>
+      <kwd-group>
+        <kwd>resting-state functional connectivity (RSFC)</kwd>
+        <kwd>near-infrared spectroscopy (NIRS)</kwd>
+        <kwd>diffuse optical tomography (DOT)</kwd>
+        <kwd>hierarchical Bayesian estimation algorithm</kwd>
+        <kwd>minimum norm algorithm</kwd>
+      </kwd-group>
+      <counts>
+        <fig-count count="7"/>
+        <table-count count="7"/>
+        <equation-count count="0"/>
+        <ref-count count="37"/>
+        <page-count count="15"/>
+        <word-count count="0"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="S1">
+      <title>Introduction</title>
+      <p>Brain consists of spatially distributed regions that have their own function, but these regions are functionally connected, that is, they continuously send information to each other. Recent progress in the acquisition and analysis of functional neuroimaging data has made it possible to explore functional connectivity in the human brain. Functional connectivity is defined as a temporal correlation of neuronal activation patterns between anatomically distant brain regions and has been assessed using various non-invasive functional neuroimaging modalities including functional magnetic resonance imaging (fMRI), magnetoencephalography (MEG) and electroencephalography (EEG). In particular, functional connectivity under resting conditions (resting-state functional connectivity, RSFC) has attracted widespread attention in neuroscience (<xref rid="B3" ref-type="bibr">Biswal et al., 1995</xref>; <xref rid="B14" ref-type="bibr">Greicius et al., 2003</xref>). One of the reasons for this might be that a growing body of studies has reported altered levels of functional connectivity in neurological and psychiatric brain disorders, including Alzheimer’s disease, depression, dementia and schizophrenia (<xref rid="B31" ref-type="bibr">van den Heuvel and Hulshoff Pol, 2010</xref>).</p>
+      <p>Most RSFC studies use fMRI because of its high spatial resolution. For example, the first direct evidence for the default mode network (DMN) was demonstrated using resting-state fMRI data based on seed-based correlation analysis (<xref rid="B14" ref-type="bibr">Greicius et al., 2003</xref>). The dorsal attention network (DAN), the resting-state network antagonistically coupled with the DMN, were also identified using resting-state fMRI data with the seed-based approach (<xref rid="B10" ref-type="bibr">Fox et al., 2005</xref>). There is a more sophisticated approach than the seed-based correlation analysis, the use of spatial independent component analysis (ICA). Spatial ICA is a widely used method for decomposing fMRI data into signal and noise components and was implemented using the Group ICA of fMRI Toolbox (GIFT)<sup><xref ref-type="fn" rid="footnote1">1</xref></sup>. Multiple resting-state networks including DMN can be easily identified by applying spatial ICA to resting-state fMRI data (<xref rid="B16" ref-type="bibr">Jafri et al., 2008</xref>), and therefore the use of this approach is increasing. Despite growing use of fMRI in RSFC studies, fMRI has dis-advantages of high cost and low portability. In addition, fMRI may not be safe or appropriate for people (1) with metal or electronic implants in their bodies (such as pacemakers, cochlear implants, metallic tattoos, etc.) because MRI involves exposure to strong magnetic fields and induced electric fields, (2) with claustrophobia because subjects are required to enter narrow scanner tube and (3) who are or may be pregnant because the risk of exposure to magnetic fields for the fetus is still unknown.</p>
+      <p>Functional near-infrared spectroscopy (fNIRS) is a non-invasive optical imaging technique that measures changes in both oxygenated (oxy-) and deoxygenated (deoxy-) hemoglobin (Hb) concentrations based on changes in light absorption at multiple wavelengths, whereas fMRI mainly measures changes in deoxy-Hb concentrations, referred to as the blood-oxygen-level-dependent (BOLD) signals. Because fNIRS is free of above disadvantages in fMRI, it can be used as an alternative human brain mapping technique for situations in which fMRI is contraindicated. Rather than an alternative to fMRI, fNIRS would provide even additional information, because fNIRS creates images of both oxy- and deoxy-Hb simultaneously (as described above, the BOLD signal is mostly sensitive to deoxy-Hb) and has a higher sampling rate than fMRI does (&gt;10 Hz with fNIRS, whereas ∼0.5 Hz with fMRI). Thanks to these advantages, fNIRS has been used to investigate RSFC. <xref rid="B19" ref-type="bibr">Lu et al. (2010)</xref>, one of the earliest resting-state fNIRS studies, demonstrated that, using seed-based correlation analysis, RSFC maps over the sensorimotor and auditory cortexes were consistent with those of previous fMRI findings. Furthermore, <xref rid="B6" ref-type="bibr">Duan et al. (2012)</xref> and <xref rid="B24" ref-type="bibr">Sasai et al. (2012)</xref> examined relationship of RSFCs between fNIRS and fMRI by simultaneously recording these signals and demonstrated that fNIRS can be used to collect information regarding RSFC defined in fMRI. As for the approach to estimate RSFC, <xref rid="B36" ref-type="bibr">Zhang et al. (2010)</xref> compared a spatial ICA with the conventional seed-based correlation approach with respect to the estimation of RSFC from fNIRS data and demonstrated the superior performance of spatial ICA with higher sensitivity and specificity, especially in the case of higher noise level (<xref rid="B36" ref-type="bibr">Zhang et al., 2010</xref>). Despite the success these resting-state fNIRS studies achieved, current standard fNIRS imaging (i.e., optical topography that is two-dimensional image based on the spatial interpolation method) has several disadvantages. First, fNIRS imaging uses sparse arrangements of source and detector optodes (and therefore measurement channels are also sparsely arranged) and therefore the positions of the measurement channels do not always overlap the real activation foci. Therefore, the spatial resolution of fNIRS imaging is low compared to fMRI. Second, the positions of the measurement channels relative to brain anatomy vary among subjects, and also among runs within the same subjects when the runs were performed on different days, resulting in reduced reliability of comparison among subjects and runs. Third, fNIRS signals are, in most cases, degraded by the hemodynamic changes in the scalp layer. Changes in scalp hemodynamics sometimes exceed those in cortical hemodynamics (<xref rid="B30" ref-type="bibr">Takahashi et al., 2011</xref>). In these three problems, the third one was dealt with by several studies that succeeded to reduce scalp artifacts with the use of principal component analysis (PCA) (<xref rid="B37" ref-type="bibr">Zhang et al., 2005</xref>), independent component analysis (ICA) (<xref rid="B18" ref-type="bibr">Kohno et al., 2007</xref>), short-distance channel regression (<xref rid="B34" ref-type="bibr">Zeff et al., 2007</xref>; <xref rid="B7" ref-type="bibr">Eggebrecht et al., 2014</xref>) or combination of PCA and multi-distance probe arrangement (<xref rid="B25" ref-type="bibr">Sato et al., 2016</xref>). However, there is a way to solve all the three problems at once, a method called diffuse optical tomography (DOT).</p>
+      <p>Diffuse optical tomography is an advanced technique to reconstruct three-dimensional images showing changes in cerebral hemodynamics. The technique follows the strategy to use high-density DOT grids, which bring about overlapping measurements at multiple source-detector separation distances. The use of overlapping measurements improves spatial resolution in the head surface direction. In addition, different measurement distances provide information about different depths. This is because the penetration depth of the light increases with the source-detector separation distance. Depending on the source-detector distance and the subject’s scalp/skull thickness, the light may or may not sufficiently penetrate through the superficial layers (scalp) to the deeper layers (brain tissue) (<xref rid="B22" ref-type="bibr">Rupawala et al., 2018</xref>). There are two stages to obtain DOT images. The first stage is forward modeling where the measurement process is simulated using a head model and physical laws. The second stage is image reconstruction where the hemodynamic changes inside the head medium are estimated from fNIRS signals by inverting the forward model. The image reconstruction problem is formulated as a linear inverse problem (<xref rid="B4" ref-type="bibr">Boas et al., 2004</xref>), which is ill-posed and therefore requires <italic>a priori</italic> information to constrain possible solutions. One approach to solve the inverse problem is the regularization. In the DOT algorithm based on the regularization (<xref rid="B34" ref-type="bibr">Zeff et al., 2007</xref>; <xref rid="B7" ref-type="bibr">Eggebrecht et al., 2014</xref>), a DOT image is obtained by minimizing a cost function consisting of the data fitting term and constraint terms representing <italic>a priori</italic> information. Another is the Bayesian approach, which uses a probabilistic model of observations and constraints called the likelihood function and prior distribution, respectively (<xref rid="B15" ref-type="bibr">Guven et al., 2005</xref>; <xref rid="B28" ref-type="bibr">Shimokawa et al., 2012</xref>).</p>
+      <p>Although there were a variety of image reconstruction algorithms, no research had proposed a DOT algorithm to accurately reconstruct both the scalp and cortical activities simultaneously. Most studies took a two-process approach: (1) hemodynamic changes in the superficial layers, including scalp and skull, were removed from all measurements and (2) a DOT image reconstruction method was applied to the denoised data in order to estimate only the cortical activity. Most artifact-removal methods used in the first process were based on an assumption that the temporal patters in the hemodynamic changes of the superficial layers are homogeneous over the whole head (e.g., <xref rid="B18" ref-type="bibr">Kohno et al., 2007</xref>) or they are similar to those of short-distance channels (<xref rid="B7" ref-type="bibr">Eggebrecht et al., 2014</xref>). However, the artifact-removal methods based on the above assumption would not work well if the systemic interference occurring in the superficial layers of the human head is inhomogeneous across the surface of the scalp as reported in <xref rid="B12" ref-type="bibr">Gagnon et al. (2012</xref>, <xref rid="B13" ref-type="bibr">2014)</xref> or if hemodynamic changes in the superficial layers are highly correlated with those in the cortex (though see <xref rid="B17" ref-type="bibr">Kirilina et al., 2012</xref>; <xref rid="B11" ref-type="bibr">Funane et al., 2014</xref>; for methods to overcome this). To avoid these weak points in the artifact-removal methods based on temporal information, we recently proposed a method that uses the spatial information of the optical paths of all observation channels, which are not affected by temporal inhomogeneity or correlation, in order to remove the scalp hemodynamics (<xref rid="B29" ref-type="bibr">Shimokawa et al., 2013</xref>). The method is an expanded version of the previously proposed hierarchical Bayesian (HB) DOT algorithm (<xref rid="B28" ref-type="bibr">Shimokawa et al., 2012</xref>) and is able to reconstruct both the scalp and cortical activities simultaneously.</p>
+      <p>In the first version of our Bayesian DOT algorithm (<xref rid="B28" ref-type="bibr">Shimokawa et al., 2012</xref>), we introduced sparse regularization to improve the depth accuracy and the spatial resolution and verified its performance with phantom experiments. Then, in the expanded version (<xref rid="B29" ref-type="bibr">Shimokawa et al., 2013</xref>), we introduced different types of regularization for the cortex and the scalp, sparse and smooth regularization to cortical and scalp’s hemodynamic changes, respectively, and validated the proposed method through both two-layer phantom experiments and MRI-based head-model simulations. Furthermore, we have conducted real human experiments with movement tasks and confirmed the performance of the HB DOT on imaging task-related functional responses (<xref rid="B33" ref-type="bibr">Yamashita et al., 2016</xref>). The present study therefore aims to investigate whether the HB DOT is used successfully to estimate spontaneous changes in cortical hemodynamics instead of task-related changes. We conducted real human experiments to record resting-state fNIRS signals from bilateral frontal and parietal areas using high-density probe array with multiple-distance channels, which required a major improvement of measurement (i.e., development of a custom-made holder that stably fits to the scalp). Then, we calculated the RSFC from the estimates of cortical hemodynamic changes with HB DOT. We also acquired resting-state fMRI data and used it as a reference in order to validate the performance of our algorithm. In addition, we compared the performance of our method with that of the two-process approach, which is the currently prevailing method for DOT. As for the DOT algorithms used in the two-process approach, we adopted the modified depth-compensation minimum-norm algorithm (abbreviated as MN) and the current standard method developed in Washington University (named in this study as MN-WU) (<xref rid="B7" ref-type="bibr">Eggebrecht et al., 2014</xref>), in line with our previous study on imaging task-related activities (<xref rid="B33" ref-type="bibr">Yamashita et al., 2016</xref>). Because there are still few studies on RSFC using DOT (<xref rid="B32" ref-type="bibr">White et al., 2009</xref>; <xref rid="B7" ref-type="bibr">Eggebrecht et al., 2014</xref>), the present study will provide important information to the relevant research areas.</p>
+    </sec>
+    <sec sec-type="materials|methods" id="S2">
+      <title>Materials and Methods</title>
+      <p>To obtain resting-state brain activity, fMRI and fNIRS data were recorded during resting state on different days. fMRI data was used as a reference. fNIRS signals were passed through DOT analyses to reconstruct three-dimensional images of changes in cerebral hemodynamics. Three different DOT algorithms, HB, MN and MN-WU were compared in terms of resting-state connectivity. Schematic of the processing stream for fNIRS and fMRI data are shown in <xref ref-type="fig" rid="F1">Figure 1</xref>.</p>
+      <fig id="F1" position="float">
+        <label>FIGURE 1</label>
+        <caption>
+          <p>Schematic of the processing stream for fNIRS and fMRI data.</p>
+        </caption>
+        <graphic xlink:href="fnins-14-00032-g001"/>
+      </fig>
+      <sec id="S2.SS1">
+        <title>Subjects</title>
+        <p>Twenty healthy male subjects aged between 21 and 38 participated in both fMRI and fNIRS experiments on different days. All of the subjects, except for one subject who is one of the authors, were paid for their participation. None reported history of neurological or psychiatric disorders. All subjects gave written informed consent to participate in the experimental procedures, which were approved by the ATR Review Board Ethics Committee.</p>
+      </sec>
+      <sec id="S2.SS2">
+        <title>Tasks</title>
+        <p>In the fMRI experiment, each subject undergone a 10 min resting state condition in which he/she was instructed to stay still, to stay awake, to fixate on the crosshair, and not to think about specific things.</p>
+        <p>In the fNIRS experiment, each subject undergone a two-back working memory task (took about 15 min) and two 10 min resting state conditions similar to that in the fMRI experiment. The resting state conditions were undergone before and after the WM task condition. We did not use the WM data in the present study.</p>
+      </sec>
+      <sec id="S2.SS3">
+        <title>MRI and fMRI Data Acquisition</title>
+        <p>Subjects lay down in an MRI scanner. Structural MR images were acquired for construction of individual head models, and functional images were acquired for evaluation of the reconstructed DOT images. All MRI data were recorded using a 3T MRI scanners, MAGNETOM Trio Tim, MAGNETOM Verio, MAGNETOM Prisma (Siemens Medical Systems, Erlangen, Germany). The acquisition parameters for T1-weighted images were as follows: repetition time (TR) = 2,300 ms, time of echo (TE) = 2.98 ms, flip angle = 9°, slice thickness = 1 mm, field of view (FOV) = 256 mm, imaging matrix = 256 × 256, inversion time (TI) = 900 ms. The acquisition parameters for echo-planar images (EPIs) were as follows: TR = 2,500 ms, TE = 30 ms, flip angle = 80°, slice thickness = 3.2 mm, FOV = 212 mm, imaging matrix = 64 × 64 mm.</p>
+      </sec>
+      <sec id="S2.SS4">
+        <title>NIRS Data Acquisition</title>
+        <p>Subjects were seated in a comfortable reclining armchair. fNIRS data were acquired using commercial NIRS equipment (SMARTNIRS, Shimadzu Corp., Japan) with probes whose shapes were customized for high-density (HD) measurements. Using a custom-made holder, 32 source and 32 detector probes were placed on the scalp to cover bilateral frontal and parietal areas. We adopted four 4 × 4 square arrays (<xref ref-type="fig" rid="F2">Figures 2A,B</xref>), where the first- and second-shortest distances between source and detector probes were 13 and 29 mm, respectively. We used all of the first- and second-nearest neighbor measurement pairs, which provided 56 ‘first’ and 96 ‘second’ channels, respectively, resulting in a total of 152 measurement channels.</p>
+        <fig id="F2" position="float">
+          <label>FIGURE 2</label>
+          <caption>
+            <p>Channel configuration <bold>(A,B)</bold> and <italic>available</italic> ROIs on the brain surface <bold>(C)</bold>. <bold>(A)</bold> Configuration of the short-distance channels, <bold>(B)</bold> configuration of the long-distance channels. Red and blue squares represent source and detector positions, respectively. Yellow circles represent measurement channel positions. Note that, in long-distance channels, some channels (for example, ch1 and ch3) overlap each other in real situation, though not precisely described as such. A custom-made holder was divided into two parts. One is used to cover frontal areas and its center positioned on Fz (according to the international 10–20 system). The other is used to cover parietal areas and its center positioned on Pz. <bold>(C)</bold>
+<italic>available</italic> ROIs for Shen’s atlas (see section “<bold>Calculation of Resting-State Connectivity</bold>” for the definition of <italic>available</italic> ROIs). The black lines indicate the central sulci.</p>
+          </caption>
+          <graphic xlink:href="fnins-14-00032-g002"/>
+        </fig>
+        <p>Just after the fNIRS recording, the surface image of the subject’s face, the positions of the three fiducial markers (nasion, left and right preauricular points) and the probe positions were acquired with a hand-held laser scanner and a stylus marker (FastSCAN; Polhemus, United States), for the co-registration of the fNIRS data to the T1-MRI.</p>
+        <p>Three near-infrared beams (wavelength 780, 805, and 830 nm) were irradiated and detection beams sampled at 18.5 Hz were used to calculate Δ[oxy-Hb] and Δ[deoxy-Hb].</p>
+      </sec>
+      <sec id="S2.SS5">
+        <title>fMRI Data Processing</title>
+        <p>fMRI signals were processed using SPM12 (the Wellcome Centre for Human Neuroimaging). The first four volumes were discarded to allow for T1 equilibration. The remaining data were corrected for slice timing and realigned to the mean image of that sequence to compensate for head motion. Next, the structural image was co-registered to the mean functional image and segmented into three tissue classes (gray matter, white matter, and cerebrospinal fluid) in the standard Montreal Neurological Institute (MNI) space. Using associated parameters, the functional images were spatially normalized into the MNI space and resampled in a 2 × 2 × 2 mm grid. Finally, they were spatially smoothed using an isotropic Gaussian kernel of 8 mm full-width at half maximum (FWHM).</p>
+      </sec>
+      <sec id="S2.SS6">
+        <title>fNIRS Data Preprocessing</title>
+        <p>Prior to DOT analysis, the following preprocessing was applied to fNIRS signals.</p>
+        <list list-type="simple">
+          <list-item>
+            <label>(1)</label>
+            <p>Convert voltage data into log-ratios using a base-10 logarithm.</p>
+          </list-item>
+          <list-item>
+            <label>(2)</label>
+            <p>Calculate the coefficient of variation (CV, in%) of each channel for each wavelength, where CV = 100 × σ/μ, σ is the signal standard deviation, and μ is the mean signal level. Then, remove the bad channels which had CVs exceeding 15% (<xref rid="B21" ref-type="bibr">Piper et al., 2014</xref>) at least one of three wavelength or were saturated [the mean number of rejected channels was 13.0 ± 12.2 (SD)].</p>
+          </list-item>
+          <list-item>
+            <label>(3)</label>
+            <p>Apply a high-pass filter (Butterworth filter of order 3, cutoff 0.009 Hz) and a low-pass filter (Butterworth filter of order 7, cutoff 0.08 Hz).</p>
+          </list-item>
+          <list-item>
+            <label>(4)</label>
+            <p>Remove scalp hemodynamics from the filtered data, only in case of DOT image reconstruction with the MN and MN-WU algorithms. In this process, the global average of all the ‘first’ channels other than the bad channels is regarded as the scalp dynamics and regressed out. This process is omitted in case of DOT image construction with the HB algorithm.</p>
+          </list-item>
+          <list-item>
+            <label>(5)</label>
+            <p>Remove the bad time points when absolute signal amplitudes exceeded more than three standard deviations from the mean at least one of the “first” channels [the mean number of removed time points was 590 ± 247 (SD) (roughly equal to 32 s)].</p>
+          </list-item>
+        </list>
+      </sec>
+      <sec id="S2.SS7">
+        <title>DOT Forward Model Construction</title>
+        <p>The DOT forward model was constructed in the following way. First, an individual head model was constructed by segmenting their T1 structural image into five tissue layers [scalp, skull, cerebrospinal fluid (CSF), gray matter, and white matter], using FreeSurfer software<sup><xref ref-type="fn" rid="footnote2">2</xref></sup>. Positions of the fNIRS probes were then co-registered to the head model using an affine transformation. The rotation and translation parameters of the affine transformation were optimized so that a subject’s facial surface measured by the laser scanner fitted that extracted from the T1 anatomical image. Next, the photon migration process inside the head was simulated with Monte Carlo simulation software MCX (<xref rid="B9" ref-type="bibr">Fang and Boas, 2009</xref>) with 10<sup>9</sup> photons. We used tissue optical parameters common to all three wavelengths (<xref rid="T1" ref-type="table">Table 1</xref>), as presented in a previous study (<xref rid="B8" ref-type="bibr">Fang, 2010</xref>). Finally, the sensitivity matrix, which relates the absorption changes in the head tissue voxels to the light intensity changes at the source-detector pairs, was computed with Rytov approximation to the MCX results (<xref rid="B28" ref-type="bibr">Shimokawa et al., 2012</xref>). For computation of the sensitivity matrix, the 1 × 1 × 1 mm voxel space was down-sampled to 4 × 4 × 4 mm voxel space in the reconstructed images. The image reconstruction region included the scalp and cortical voxels inside a 28-mm-deep cuboid, whose surface was a square along the scalp surface. This was obtained by extending the diagonals of the 5 × 5 NIRS probe square by a factor of 1.5.</p>
+        <table-wrap id="T1" position="float">
+          <label>TABLE 1</label>
+          <caption>
+            <p>Optical parameters in various head tissue types (common to all three wavelengths of 780, 805, and 830 nm).</p>
+          </caption>
+          <table frame="hsides" rules="groups" cellspacing="5" cellpadding="5">
+            <thead>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">
+                  <bold>Tissue types</bold>
+                </td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>Absorpt. Coeff. μ<sub>a</sub> (mm<sup>–1</sup>)</bold>
+                </td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>Scattering Coeff. μ<sub>s</sub> (mm<sup>–1</sup>)</bold>
+                </td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>Anisotropy (g)</bold>
+                </td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>Refract. Index (n)</bold>
+                </td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Scalp and skull</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.019</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">7.8</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.89</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">1.37</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">CSF</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.004</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.009</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.89</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">1.37</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">Gray matter</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.02</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">9.0</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.89</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">1.37</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">White matter</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.08</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">40.9</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.84</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">1.37</td>
+              </tr>
+            </tbody>
+          </table>
+        </table-wrap>
+      </sec>
+      <sec id="S2.SS8">
+        <title>DOT Image Reconstruction With the HB Algorithm</title>
+        <p>DOT image reconstruction with the HB algorithm has two steps. In the first step, DOT image is reconstructed from the preprocessed fNIRS signals, using the modified version of the depth-compensation minimum norm image reconstruction algorithm (MN). In the next step, the DOT image is refined using the iterative algorithm with the MN DOT image obtained in the first step as an initial value and a prior. Note that the preprocessed fNIRS signals used in both steps are not passed through the scalp hemodynamics removal (the 4th process in section “fNIRS data preprocessing”).</p>
+        <p>For the HB DOT image reconstruction in the second step, we used the HB model presented in <xref rid="B33" ref-type="bibr">Yamashita et al. (2016)</xref>. The hierarchical prior distribution has mean and confidence (or reliability) parameters. The mean parameter <inline-formula><mml:math id="INEQ1"><mml:mover accent="true"><mml:msub><mml:mi mathvariant="normal">λ</mml:mi><mml:mrow><mml:mn>0</mml:mn><mml:mo>⁢</mml:mo><mml:mi>ı</mml:mi></mml:mrow></mml:msub><mml:mo>¯</mml:mo></mml:mover></mml:math></inline-formula> were the mean square values of the solutions obtained from the MN DOT in the first step. The confidence parameter γ<sub>0</sub> controls the width of the hierarchical prior distribution (the variance of the hierarchical prior distribution is inversely proportional to the confidence parameter); large γ<sub>0</sub> narrows the hierarchical prior distribution around the mean value <inline-formula><mml:math id="INEQ2"><mml:mover accent="true"><mml:msub><mml:mi mathvariant="normal">λ</mml:mi><mml:mrow><mml:mn>0</mml:mn><mml:mo>⁢</mml:mo><mml:mi>ı</mml:mi></mml:mrow></mml:msub><mml:mo>¯</mml:mo></mml:mover></mml:math></inline-formula>, and the estimation depends more critically on the solutions obtained from MN DOT in the first step. The confidence parameter γ<sub>0</sub> was set to L × 0.1, where L is data length, on the basis of our experience. But, we also tried the following settings; γ<sub>0</sub> = L × 0.01, L × 0.001, L × 0.0001. For the detail of the HB algorithm, see <xref rid="B33" ref-type="bibr">Yamashita et al. (2016)</xref>.</p>
+      </sec>
+      <sec id="S2.SS9">
+        <title>DOT Image Reconstruction With the MN/MN-WU Algorithms</title>
+        <p>The DOT image with the MN algorithm and that with the MN-WU algorithm were also computed for comparison. As mentioned in section “fNIRS data preprocessing,” in both MN and MN-WU algorithms, DOT image is reconstructed from the preprocessed fNIRS signals whose scalp hemodynamics were removed by regressing out the averaged ‘first’ channel data.</p>
+        <p>As for the MN-WU algorithm, the spatially variant parameter was set to β = 0.1 and the regularization parameter α was automatically determined by maximizing the marginal likelihood of each data set (see <xref rid="B5" ref-type="bibr">Culver et al., 2003</xref>).</p>
+        <p>As for the MN algorithms, the spatially variant parameter was set to β = <italic>mean<sub>νϵI20mm</sub></italic>(ρ<sub>2</sub>)<sub><italic>ν</italic></sub> where <italic>I</italic><sub><italic>20 mm</italic></sub> is a voxel index set whose depth from the scalp is around 20 mm. And the regularization parameter α was automatically determined by maximizing the marginal likelihood using all the measurements included in the I<sub>task</sub>. See the Appendix of <xref rid="B33" ref-type="bibr">Yamashita et al. (2016)</xref> for the mathematical details.</p>
+      </sec>
+      <sec id="S2.SS10">
+        <title>Calculation of Resting-State Connectivity</title>
+        <p>Irrespective of the DOT algorithm, the reconstructed DOT image was passed through a spatial normalization into the standard MNI space and spatial smoothing with a Gaussian kernel of 8 mm full width at half maximum (FWHM), before calculation of resting-state functional connectivity (RSFC). These processes were done with SPM12.</p>
+        <p>The RSFC for both fMRI and DOT was obtained in the following way, using spatially normalized fMRI and DOT images, respectively. First, all cortical voxels were categorized into 278 regions of interest (ROI), based on functional-connectivity-based atlas (<xref rid="B26" ref-type="bibr">Shen et al., 2013</xref>). Then, voxels with sensitivity values of more than 0.5 for all subjects were regarded as <italic>sensitive</italic> voxels, and ROIs including more than or equal to 10 <italic>sensitive</italic> voxels were regarded as <italic>available</italic> ROIs (<xref ref-type="fig" rid="F2">Figure 2C</xref> for Shen’s atlas). Third, for each <italic>available</italic> ROI, timeseries of all <italic>sensitive</italic> voxels within the ROI were averaged. These mean timeseries were assumed to represent temporal activity of the corresponding ROI. Finally, partial correlations between all pairs of <italic>available</italic> ROIs were computed to make a correlation matrix. Partial correlation was used to reduce the influence of extra-neural components such as physiological noise signals due to spontaneous low-frequency oscillations, respiration and cardiac pulsation (<xref rid="B23" ref-type="bibr">Sakakibara et al., 2016</xref>). Note that all the following analyses were done for <italic>sensitive</italic> voxels and <italic>available</italic> ROIs.</p>
+        <p>The reason why we used Shen’s atlas rather than the widely used Brodmann-based automatic anatomic labeling (AAL) atlas is as follows. The AAL atlas uses Brodmann areas which are based on cytoarchitecture. This atlas is not ideal because of its coarse-grained nature (116 regions for the AAL atlas whereas 278 regions for the Shen’s atlas in our data) and the risk of including different functional areas within a single region, with the consequence that the resultant mean timeseries may not accurately represent any of the contributing timeseries. Shen’s atlas is developed to avoid this pitfall and will provide meaningful nodes (<xref rid="B26" ref-type="bibr">Shen et al., 2013</xref>), and therefore is suitable for our case.</p>
+        <p>For reference, we will present the corresponding results for the AAL atlas in the <xref ref-type="supplementary-material" rid="SM1">Supplementary Material</xref>.</p>
+      </sec>
+      <sec id="S2.SS11">
+        <title>Comparison of Connectivity Matrices Among DOT Algorithms</title>
+        <p>In order to establish the superiority of the HB DOT in the estimation of RSFC, we compared correlation matrices among the DOT algorithms (HB, MN, MN-WU) in the following three ways.</p>
+        <p>Because it seems reasonable to use fMRI data as a reference, we first compared <italic>similarity</italic> of RSFCs between fMRI and DOT among three DOT algorithms, where correlation coefficient was used as a similarity measure. The comparison was done in the following way: (1) the lower triangular portion of correlation matrix, <italic>C</italic><sub><italic>low</italic></sub>, was transformed to <italic>z(C<sub><italic>low</italic></sub>)</italic> by using Fisher’s z-transformation, (2) correlation coefficient of <italic>z(C<sub><italic>low</italic></sub>)</italic> between fMRI and DOT, <italic>R</italic><sub><italic>fMRI–DOT</italic></sub>, was calculated, (3) the correlation coefficient <italic>R</italic><sub><italic>fMRI–DOT</italic></sub> was transformed to <italic>z(R<sub><italic>fMRI–DOT</italic></sub>)</italic> by using Fisher’s <italic>z</italic>-transformation, (4) differences in mean <italic>z(R<sub><italic>fMRI–DOT</italic></sub>)</italic> among three DOT algorithms were tested using one-way analysis of variance (ANOVA) followed by multiple comparisons with the Tukey–Kramer correction.</p>
+        <p>Second, we compared inter-run <italic>reproducibility</italic> of RSFC estimation among three DOT algorithms. The comparison was done in the following way: (1) the lower triangular portion of correlation matrix, <italic>C</italic><sub><italic>low</italic></sub>, was transformed to <italic>z(C<sub><italic>low</italic></sub>)</italic> by using Fisher’s <italic>z</italic>-transformation, (2) correlation coefficient of <italic>z(C<sub><italic>low</italic></sub>)</italic> between run1 and run2, <italic>R<sub><italic>ses</italic></sub><sub>1</sub><sub>–ses</sub><sub>2</sub></italic>, was calculated, (3) the correlation coefficient <italic>R<sub><italic>ses</italic></sub><sub>1</sub><sub>–ses</sub><sub>2</sub></italic> was transformed to <italic>z(R<sub><italic>ses</italic></sub><sub>1</sub><sub>–ses</sub><sub>2</sub>)</italic> by using Fisher’s <italic>z</italic>-transformation, (4) differences in mean <italic>z(R<sub><italic>ses</italic></sub><sub>1</sub><sub>–ses</sub><sub>2</sub>)</italic> among three DOT algorithms were tested using one-way analysis of variance (ANOVA) followed by multiple comparisons.</p>
+        <p>As a complementary metric to Pearson’s correlation, intra-class correlation (ICC; <xref rid="B20" ref-type="bibr">McGraw and Wong, 1996</xref>) was also used for assessment of reproducibility across runs. Both single and average measures, i.e., ICC(C,1) and ICC(C,k), were calculated using MATLAB function <italic>ICC</italic> by Arash Salarian (available at MATLAB Central File Exchange).</p>
+        <p>Third, we performed additional analysis on intra-run test–retest reliability assessment. In this analysis, resting-state fNIRS data recorded in each 10 min run was firstly divided into two segments of equal length [i.e., first half (FH) and second half (SH)]. Note that duration of each half is 5 min at most (the mean is about 4 min and 44 s) because bad time points were removed in the fNIRS data preprocessing (see section “fNIRS Data Preprocessing”). As shown in <xref ref-type="fig" rid="F3">Figure 3</xref>, intra-run reproducibility was assessed using two pairs of datasets; run1-FH and run1-SH (intra_run1), as well as run2-FH and run2-SH (intra_run2). In addition, inter-run reproducibility (denoted by half-length inter-run reproducibility to distinguish it from the previous one using full-length data) was assessed with two pairs of datasets; run1-FH and run2-FH (inter_FH), as well as run1-SH and run2-SH (inter_SH). As measures for these reproducibilities, we used Pearson’s correlation, ICC(C,1) and ICC(C,k) again.</p>
+        <fig id="F3" position="float">
+          <label>FIGURE 3</label>
+          <caption>
+            <p>Illustration of intra-run reproducibility and half-length inter-run reproducibility calculations for fNIRS data. The number of subjects, N, was 20.</p>
+          </caption>
+          <graphic xlink:href="fnins-14-00032-g003"/>
+        </fig>
+        <p>We compared intra-run reliability among functional images (i.e., fMRI vs. HB vs. MN vs. MN-WU). More specifically, differences in mean measures for intra-run reliability were tested using one-way ANOVA followed by multiple comparisons.</p>
+        <p>In addition, we compared intra-run reproducibility and half-length inter-run reproducibility. Because resting-state fNIRS was acquired before and after a WM task, this comparison will serve to investigate whether the task affected the resting-state connectivity.</p>
+      </sec>
+    </sec>
+    <sec id="S3">
+      <title>Results</title>
+      <sec id="S3.SS1">
+        <title>Similarity Between fMRI and DOT</title>
+        <p>Mean and SD maps for RSFCs of fMRI and DOT with HB, MN and MN-WU algorithms are shown in <xref ref-type="fig" rid="F4">Figures 4</xref>, <xref ref-type="fig" rid="F5">5</xref>, respectively. The mean map showed a common tendency between fMRI and fNIRS (i.e., HB, MN, and MN-WU) that most pairs between adjacent ROIs had positive correlations, though some of them (e.g., R.BA7.5-R.BA7.6) had negative correlations. Additional findings from the mean map is that some of frontal-parietal pairs (e.g., R.BA7.8-R.BA9.4) and contralateral counterpart pairs (e.g., R.BA9.4-L.BA10.1) had positive correlations in fMRI, whereas such a tendency was weak for the DOT cases. As for the SD maps, variability across subjects was little in fMRI, whereas it was relatively large especially for the pairs between adjacent ROIs in fNIRS regardless of the DOT algorithms.</p>
+        <fig id="F4" position="float">
+          <label>FIGURE 4</label>
+          <caption>
+            <p>Mean maps for RSFCs of fMRI and DOT with HB, MN and MN-WU algorithms. Correlation matrices were averaged across subjects and runs, for <bold>(A)</bold> oxy-Hb and <bold>(B)</bold> deoxy-Hb in the case of DOT. F_L, left frontal area; F_R, right frontal area; P_L, left parietal area; P_R, right parietal area.</p>
+          </caption>
+          <graphic xlink:href="fnins-14-00032-g004"/>
+        </fig>
+        <fig id="F5" position="float">
+          <label>FIGURE 5</label>
+          <caption>
+            <p>SD maps for RSFCs of fMRI and DOT with HB, MN and MN-WU algorithms. SDs of correlation matrices were computed across subjects and runs, for <bold>(A)</bold> oxy-Hb and <bold>(B)</bold> deoxy-Hb in the case of DOT. F_L, left frontal area; F_R, right frontal area; P_L, left parietal area; P_R, right parietal area.</p>
+          </caption>
+          <graphic xlink:href="fnins-14-00032-g005"/>
+        </fig>
+        <p>Similarity of RSFCs between fMRI and DOT for each run and DOT algorithm is summarized in <xref rid="T2" ref-type="table">Table 2</xref>. One-way ANOVA applied to data combined between runs revealed a significant difference among three DOT algorithms for both oxy- and deoxy-Hb [<italic>F</italic><sub>(</sub><sub>2</sub>,<sub>117</sub><sub>)</sub> = 4.27, <italic>p</italic> = 0.0162 for oxy-Hb; <italic>F</italic><sub>(</sub><sub>2</sub>,<sub>117</sub><sub>)</sub> = 7.69, <italic>p</italic> = 0.0007 for deoxy-Hb]. The <italic>post hoc</italic> Tukey’s HSD test revealed, for both oxy- and deoxy-Hb, that HB had significantly higher correlation values than both MN and MN-WU did (<italic>p</italic> &lt; 0.05), but the difference of correlation values between MN and MN-WU was not significant.</p>
+        <table-wrap id="T2" position="float">
+          <label>TABLE 2</label>
+          <caption>
+            <p>Similarity of correlation matrices between fMRI and DOT.</p>
+          </caption>
+          <table frame="hsides" rules="groups" cellspacing="5" cellpadding="5">
+            <thead>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1"/>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>HB</bold>
+                </td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>MN</bold>
+                </td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>MN-WU</bold>
+                </td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">oxy-Hb</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">run 1</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.34 ± 0.09</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.29 ± 0.10</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.29 ± 0.10</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="left" rowspan="1" colspan="1">run 2</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.35 ± 0.08</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.30 ± 0.08</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.30 ± 0.09</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">deoxy-Hb</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">run 1</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.33 ± 0.08</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.25 ± 0.11</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.26 ± 0.12</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="left" rowspan="1" colspan="1">run 2</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.34 ± 0.08</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.27 ± 0.11</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.25 ± 0.10</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <attrib>
+              <italic>Values of correlation coefficients are presented as mean ± standard deviation (SD).</italic>
+            </attrib>
+          </table-wrap-foot>
+        </table-wrap>
+      </sec>
+      <sec id="S3.SS2">
+        <title>Inter-Run Reproducibility, Intra-Run Reproducibility</title>
+        <p>Mean and SD maps for RSFCs are compared between runs in <xref ref-type="fig" rid="F6">Figures 6</xref>, <xref ref-type="fig" rid="F7">7</xref>, respectively. Mean ± SD of inter-run reproducibility (i.e., Pearson’s correlation and inter-class correlation of correlation matrices between run 1 and 2) is summarized in <xref rid="T3" ref-type="table">Table 3</xref>.</p>
+        <fig id="F6" position="float">
+          <label>FIGURE 6</label>
+          <caption>
+            <p>Mean maps for RSFCs are compared between run 1 and run 2. Correlation matrices are averaged across subjects for <bold>(A)</bold> oxy-Hb and <bold>(B)</bold> deoxy-Hb. The upper and lower rows correspond to run 1 and run 2, respectively. ROIs are displayed in the same order as those in <xref ref-type="fig" rid="F4">Figures 4</xref>, <xref ref-type="fig" rid="F5">5</xref>.</p>
+          </caption>
+          <graphic xlink:href="fnins-14-00032-g006"/>
+        </fig>
+        <fig id="F7" position="float">
+          <label>FIGURE 7</label>
+          <caption>
+            <p>SD maps of RSFCs for run 1 and run 2. SDs of correlation matrices are computed across subjects for <bold>(A)</bold> oxy-Hb and <bold>(B)</bold> deoxy-Hb. The upper and lower rows correspond to run 1 and run 2, respectively. ROIs are displayed in the same order as those in <xref ref-type="fig" rid="F6">Figure 6</xref>.</p>
+          </caption>
+          <graphic xlink:href="fnins-14-00032-g007"/>
+        </fig>
+        <table-wrap id="T3" position="float">
+          <label>TABLE 3</label>
+          <caption>
+            <p>Inter-run reproducibility.</p>
+          </caption>
+          <table frame="hsides" rules="groups" cellspacing="5" cellpadding="5">
+            <thead>
+              <tr>
+                <td valign="top" align="left" colspan="2" rowspan="1"/>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>HB</bold>
+                </td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>MN</bold>
+                </td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>MN-WU</bold>
+                </td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">oxy-Hb</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">r</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.76 ± 0.06</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.61 ± 0.13</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.66 ± 0.12</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="left" rowspan="1" colspan="1">ICC(C,1)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.76 ± 0.06</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.61 ± 0.13</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.65 ± 0.12</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="left" rowspan="1" colspan="1">ICC(C,k)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.86 ± 0.04</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.75 ± 0.10</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.78 ± 0.09</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">deoxy-Hb</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">r</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.76 ± 0.07</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.60 ± 0.13</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.63 ± 0.15</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="left" rowspan="1" colspan="1">ICC(C,1)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.75 ± 0.07</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.60 ± 0.13</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.62 ± 0.15</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="left" rowspan="1" colspan="1">ICC(C,k)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.86 ± 0.04</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.74 ± 0.10</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.76 ± 0.12</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <attrib>
+              <italic>Values of Pearson’s correlation (r), ICC(C,1) and ICC(C,k) are presented as mean ± standard deviation (SD).</italic>
+            </attrib>
+          </table-wrap-foot>
+        </table-wrap>
+        <p>As for Pearson’s correlation, one-way ANOVA revealed a significant difference among three DOT algorithms for both oxy- and deoxy-Hb [<italic>F</italic><sub>(</sub><sub>2</sub>,<sub>57</sub><sub>)</sub> = 11.0, <italic>p</italic> = 9.06 × 10<sup>–5</sup> for oxy-Hb; <italic>F</italic><sub>(</sub><sub>2</sub>,<sub>57</sub><sub>)</sub> = 10.9, <italic>p</italic> = 9.89 × 10<sup>–5</sup> for deoxy-Hb]. The <italic>post hoc</italic> Tukey’s HSD test revealed, for both oxy- and deoxy-Hb, that HB had significantly higher correlation values than both MN and MN-WU did (<italic>p</italic> &lt; 0.05), but the difference of correlation values between MN and MN-WU was not significant.</p>
+        <p>As for the ICC metrices, the following results were obtained. First, for ICC(C,1), one-way ANOVA revealed a significant difference among three DOT algorithms for both oxy- and deoxy-Hb [<italic>F</italic><sub>(</sub><sub>2</sub>,<sub>57</sub><sub>)</sub> = 11.0, <italic>p</italic> = 9.30 × 10<sup>–5</sup> for oxy-Hb; <italic>F</italic><sub>(</sub><sub>2</sub>,<sub>57</sub><sub>)</sub> = 9.81, <italic>p</italic> = 0.0002 for deoxy-Hb]. The <italic>post hoc</italic> Tukey’s HSD test revealed, for both oxy- and deoxy-Hb, that HB had significantly higher ICC(C,1) values than both MN and MN-WU did (<italic>p</italic> &lt; 0.05), but the difference of ICC(C,1) values between MN and MN-WU was not significant.</p>
+        <p>Then, for ICC(C,k), one-way ANOVA revealed a significant difference among three DOT algorithms for both oxy- and deoxy-Hb [<italic>F</italic><sub>(</sub><sub>2</sub>,<sub>57</sub><sub>)</sub> = 10.5, <italic>p</italic> = 0.0001 for oxy-Hb; <italic>F</italic><sub>(</sub><sub>2</sub>,<sub>57</sub><sub>)</sub> = 8.61, <italic>p</italic> = 0.0005 for deoxy-Hb]. The <italic>post hoc</italic> Tukey’s HSD test revealed, for both oxy- and deoxy-Hb, that HB had significantly higher ICC(C,k) values than both MN and MN-WU did (<italic>p</italic> &lt; 0.05), but the difference of ICC(C,k) values between MN and MN-WU was not significant.</p>
+        <p>Intra-run reproducibility (i.e., similarity of RSFCs between FH and SH) is summarized in <xref rid="T4" ref-type="table">Table 4</xref>.</p>
+        <table-wrap id="T4" position="float">
+          <label>TABLE 4</label>
+          <caption>
+            <p>Intra-run reproducibility.</p>
+          </caption>
+          <table frame="hsides" rules="groups" cellspacing="5" cellpadding="5">
+            <thead>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1"/>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>fMRI</bold>
+                </td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>HB</bold>
+                </td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>MN</bold>
+                </td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>MN-WU</bold>
+                </td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">oxy-Hb</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">r</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.61 ± 0.08</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.57 ± 0.11</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.38 ± 0.16</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.41 ± 0.13</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="left" rowspan="1" colspan="1">ICC(C,1)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.61 ± 0.08</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.56 ± 0.11</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.37 ± 0.15</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.40 ± 0.13</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="left" rowspan="1" colspan="1">ICC(C,k)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.75 ± 0.06</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.71 ± 0.09</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.53 ± 0.16</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.56 ± 0.14</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">deoxy-Hb</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">r</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.61 ± 0.08</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.53 ± 0.10</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.38 ± 0.15</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.38 ± 0.15</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="left" rowspan="1" colspan="1">ICC(C,1)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.61 ± 0.08</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.53 ± 0.10</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.37 ± 0.15</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.37 ± 0.15</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="left" rowspan="1" colspan="1">ICC(C,k)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.75 ± 0.06</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.68 ± 0.09</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.52 ± 0.16</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.53 ± 0.15</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <attrib>
+              <italic>Values of correlation coefficients (<italic>r</italic>), ICC(C,1) and ICC(C,k) are presented as mean ± standard deviation (across subjects for fMRI; across subjects and runs for DOT).</italic>
+            </attrib>
+          </table-wrap-foot>
+        </table-wrap>
+        <p>One-way ANOVA revealed that Pearson’s correlation value is significantly different among functional images [<italic>F</italic><sub>(</sub><sub>3</sub>,<sub>136</sub><sub>)</sub> = 27.26, <italic>p</italic> = 7.25 × 10<sup>–14</sup> for oxy-Hb; <italic>F</italic><sub>(</sub><sub>3</sub>,<sub>136</sub><sub>)</sub> = 23.84, <italic>p</italic> = 1.84 × 10<sup>–12</sup> for deoxy-Hb]. The <italic>post hoc</italic> Tukey’s HSD test revealed, for both oxy- and deoxy-Hb, that HB had significantly higher Pearson’s correlation than both MN and MN-WU did (<italic>p</italic> &lt; 0.05), but the difference between HB and fMRI was not significant.</p>
+        <p>Similarly, according to one-way ANOVA, ICC(C,1) is significantly different among functional images [<italic>F</italic><sub>(</sub><sub>3</sub>,<sub>136</sub><sub>)</sub> = 27.41, <italic>p</italic> = 6.28 × 10<sup>–14</sup> for oxy-Hb; <italic>F</italic><sub>(</sub><sub>3</sub>,<sub>136</sub><sub>)</sub> = 24.59, <italic>p</italic> = 8.94 × 10<sup>–13</sup> for deoxy-Hb]. According to the Tukey’s HSD test, for both oxy- and deoxy-Hb, HB had significantly higher ICC(C,1) than both MN and MN-WU did (<italic>p</italic> &lt; 0.05), but HB was not significantly different from fMRI. In addition, one-way ANOVA and <italic>post hoc</italic> analysis revealed that ICC(C,k) had similar tendency [one-way ANOVA, <italic>F</italic><sub>(</sub><sub>3</sub>,<sub>136</sub><sub>)</sub> = 25.00, <italic>p</italic> = 6.04 × 10<sup>–13</sup> for oxy-Hb; <italic>F</italic><sub>(</sub><sub>3</sub>,<sub>136</sub><sub>)</sub> = 23.15, <italic>p</italic> = 3.61 × 10<sup>–12</sup> for deoxy-Hb].</p>
+        <p>For the HB case, intra-run reproducibility (i.e., similarity of RSFCs between FH and SH) was compared with half-length inter-run reproducibility (i.e., similarity of RSFCs between run 1 and run 2 for the corresponding half) in <xref rid="T5" ref-type="table">Table 5</xref>. Two-sample <italic>t</italic>-test revealed that intra-run reproducibility was not significantly different from half-length inter-run reproducibility for Pearson’s correlation (<italic>p</italic> = 0.31 for oxy-Hb; <italic>p</italic> = 0.42 for deoxy-Hb), ICC(C,1) (<italic>p</italic> = 0.36 for oxy-Hb; <italic>p</italic> = 0.47 for deoxy-Hb), and ICC(C,k) (<italic>p</italic> = 0.33 for oxy-Hb; <italic>p</italic> = 0.48 for deoxy-Hb). Similar tendency was observed for both MN and MN-WU cases (detailed data not shown, but <italic>p</italic> &gt; 0.30 in any case).</p>
+        <table-wrap id="T5" position="float">
+          <label>TABLE 5</label>
+          <caption>
+            <p>Comparison of reproducibility between intra-run and half-length inter-run for HB.</p>
+          </caption>
+          <table frame="hsides" rules="groups" cellspacing="5" cellpadding="5">
+            <thead>
+              <tr>
+                <td valign="top" align="left" colspan="2" rowspan="1"/>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>Intra-run</bold>
+                </td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>Half-length inter-run</bold>
+                </td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">oxy-Hb</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">r</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.57 ± 0.11</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.55 ± 0.12</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="left" rowspan="1" colspan="1">ICC(C,1)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.56 ± 0.11</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.54 ± 0.12</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="left" rowspan="1" colspan="1">ICC(C,k)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.71 ± 0.09</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.69 ± 0.10</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">deoxy-Hb</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">r</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.53 ± 0.10</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.51 ± 0.10</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="left" rowspan="1" colspan="1">ICC(C,1)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.53 ± 0.10</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.51 ± 0.10</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="left" rowspan="1" colspan="1">ICC(C,k)</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.68 ± 0.09</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.67 ± 0.09</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <attrib>
+              <italic>Values are presented as mean ± standard deviation.</italic>
+            </attrib>
+          </table-wrap-foot>
+        </table-wrap>
+      </sec>
+      <sec id="S3.SS3">
+        <title>Effect of the Confidence Parameter γ<sub>0</sub> on Connectivity</title>
+        <p>As mentioned in the Materials and methods, in the HB algorithm, the confidence parameter, γ<sub>0</sub>, represents the width of the hierarchical prior distribution, controlling how strong the HB method is affected by the prior information (the depth-weighted minimum norm estimation). In this subsection, the effect of the γ<sub>0</sub> value on the connectivity estimation was examined for only Pearson’s correlation.</p>
+        <p>Similarity of RSFCs between fMRI and DOT for each run and γ<sub>0</sub> value is summarized in <xref rid="T6" ref-type="table">Table 6</xref>. One-way ANOVA applied to data combined between runs revealed no significant difference among five γ<sub>0</sub> values for both oxy- and deoxy-Hb [<italic>F</italic><sub>(</sub><sub>4</sub>,<sub>195</sub><sub>)</sub> = 1.26, <italic>p</italic> = 0.287 for oxy-Hb; <italic>F</italic><sub>(</sub><sub>4</sub>,<sub>195</sub><sub>)</sub> = 1.40, <italic>p</italic> = 0.237 for deoxy-Hb].</p>
+        <table-wrap id="T6" position="float">
+          <label>TABLE 6</label>
+          <caption>
+            <p>Effect of γ<sub>0</sub> value on similarity of correlation matrices between fMRI and DOT.</p>
+          </caption>
+          <table frame="hsides" rules="groups" cellspacing="5" cellpadding="5">
+            <thead>
+              <tr>
+                <td valign="top" align="left" colspan="2" rowspan="1"/>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>L × 10<sup>0</sup></bold>
+                </td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>L × 10<sup>–1</sup></bold>
+                </td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>L × 10<sup>–2</sup></bold>
+                </td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>L × 10<sup>–3</sup></bold>
+                </td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>L × 10<sup>–4</sup></bold>
+                </td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">oxy-Hb</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">run 1</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.34 ± 0.09</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.34 ± 0.09</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.33 ± 0.09</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.32 ± 0.10</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.30 ± 0.11</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="left" rowspan="1" colspan="1">run 2</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.35 ± 0.09</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.35 ± 0.08</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.35 ± 0.08</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.34 ± 0.09</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.32 ± 0.09</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">deoxy-Hb</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">run 1</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.33 ± 0.08</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.33 ± 0.08</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.32 ± 0.08</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.31 ± 0.09</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.29 ± 0.10</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1"/>
+                <td valign="top" align="left" rowspan="1" colspan="1">run 2</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.35 ± 0.08</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.34 ± 0.08</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.34 ± 0.08</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.33 ± 0.08</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.31 ± 0.08</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <attrib>
+              <italic>Values of correlation coefficients are presented as mean ± standard deviation (SD). Each column corresponds to γ<sub>0</sub> = L × 10<sup>–<italic>N</italic></sup>, where L is the data length (L = 7774–8723, mean 8285). γ<sub>0</sub> = L × 10<sup>–1</sup> is the default setting.</italic>
+            </attrib>
+          </table-wrap-foot>
+        </table-wrap>
+        <p>Mean ± SD of inter-run reproducibility (i.e., correlation values of correlation matrices between run 1 and 2) for each γ<sub>0</sub> value is summarized in <xref rid="T7" ref-type="table">Table 7</xref>. One-way ANOVA revealed no significant difference among five γ<sub>0</sub> values for both oxy- and deoxy-Hb [<italic>F</italic><sub>(</sub><sub>4</sub>,<sub>95</sub><sub>)</sub> = 0.58, <italic>p</italic> = 0.679 for oxy-Hb; <italic>F</italic><sub>(</sub><sub>4</sub>,<sub>95</sub><sub>)</sub> = 0.49, <italic>p</italic> = 0.744 for deoxy-Hb].</p>
+        <table-wrap id="T7" position="float">
+          <label>TABLE 7</label>
+          <caption>
+            <p>Effect of γ<sub>0</sub> value on inter-run reproducibility.</p>
+          </caption>
+          <table frame="hsides" rules="groups" cellspacing="5" cellpadding="5">
+            <thead>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1"/>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>L × 10<sup>0</sup></bold>
+                </td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>L × 10<sup>–1</sup></bold>
+                </td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>L × 10<sup>–2</sup></bold>
+                </td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>L × 10<sup>–3</sup></bold>
+                </td>
+                <td valign="top" align="center" rowspan="1" colspan="1">
+                  <bold>L × 10<sup>–4</sup></bold>
+                </td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">oxy-Hb</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.76 ± 0.06</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.76 ± 0.06</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.76 ± 0.06</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.75 ± 0.07</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.73 ± 0.09</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">deoxy-Hb</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.75 ± 0.07</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.76 ± 0.07</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.75 ± 0.08</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.74 ± 0.09</td>
+                <td valign="top" align="center" rowspan="1" colspan="1">0.72 ± 0.10</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <attrib>
+              <italic>Values of correlation coefficients are presented as mean ± standard deviation (SD). Each column corresponds to γ<sub>0</sub> = L × 10<sup>–<italic>N</italic></sup>, where L is the data length. γ<sub>0</sub> = L × 10<sup>–1</sup> is the default setting.</italic>
+            </attrib>
+          </table-wrap-foot>
+        </table-wrap>
+      </sec>
+    </sec>
+    <sec id="S4">
+      <title>Discussion</title>
+      <p>The aim of this study was to evaluate our proposed HB DOT algorithm in terms of its performance to estimate the resting-state functional connectivity among brain regions, not task-related brain responses. We used fMRI data as a reference. In addition, we compared our method with other DOT algorithms (the MN and MN-WU), which adopt the two-process approach. Similarity (i.e., correlation coefficient) of the RSFCs between fMRI and DOT showed higher for the HB than both the MN and MN-WU, suggesting that DOT with the HB algorithm is more appropriate to a substitute for fMRI than those with the MN and MN-WU in estimating the resting-state functional connectivity as well as the task-related cortical responses (<xref rid="B33" ref-type="bibr">Yamashita et al., 2016</xref>). In addition, inter-run reproducibility (i.e., Pearson’s correlation and intra-class correlation coefficients of RSFCs between runs) showed higher for the HB than both the MN and MN-WU, suggesting that DOT with the HB algorithm is more reliable. In addition, mean values of both single- and average-measure ICC are far higher than 0.4, a criterion of sufficient reliability (<xref rid="B35" ref-type="bibr">Zhang et al., 2011</xref>), suggesting that DOT with the HB algorithm is highly reliable and comparable to fMRI. These results were true for not only deoxy-Hb but also oxy-Hb, which cannot be measured by fMRI.</p>
+      <p>We conducted additional analyses relating to intra-run reproducibility (i.e., similarity of RSFCs between FH and SH) for fNIRS data. As for the intra-run test-retest reliability, the HB had significantly higher intra-run reproducibility than both the MN and MN-WU for any intra-run reproducibility measure. In particular, both single- and average-measure ICC values for the HB were far higher than 0.4 and comparable to those for the fMRI. Thus, high reliability of DOT image with the HB algorithm was demonstrated in intra-run as well as inter-run analyses. Meanwhile, comparison of reproducibility between intra-run and half-length inter-run showed no significant difference. This result suggests that the WM task, conducted between the two resting-state fNIRS runs, did not affect RSFCs. According to <xref rid="B2" ref-type="bibr">Birn et al. (2013)</xref>, the reliability of the resting-state fMRI connectivity estimates was low for the scan length less than 5 min. However, as described in section “Comparison of Connectivity Matrices Among DOT Algorithms,” mean scan lengths of both first and second halves of resting-state fNIRS recording were slightly less than 5 min in the present study. Thus, re-examination of results on intra-run analyses is desirable using data with sufficiently long scan lengths.</p>
+      <p>According to the SD maps for the RSFCs (i.e., <xref ref-type="fig" rid="F5">Figure 5</xref>), variability across subjects was little in fMRI, whereas it was large in fNIRS regardless of the DOT algorithms. This difference suggests that the variability of the estimated DOT images across subjects is larger than that of the fMRI images. Such a large variability in DOT images may be due to errors in forward modeling such as probe coregistration error and head model error, variability in measurement condition (e.g., individual difference in a signal-to-noise ratio) and individual difference in optical parameters which cannot be precisely dealt in forward modeling. In addition, oxy-Hb or deoxy-Hb may not solely correspond to BOLD signals. Further work is required to explore the cause of this difference.</p>
+      <p>In the calculation of RSFCs, we used (1) Shen’s atlas rather than the widely used AAL atlas and (2) timeseries averaged across all sensitive voxels within each region. This is because we considered that each region of the AAL includes different functional areas because of its coarse-grained nature [116 regions for a whole brain, but 9 <italic>available</italic> regions in our case (<xref ref-type="supplementary-material" rid="SM1">Supplementary Figure S1</xref>)], whereas that of the Shen’s atlas includes a single functional area due to its fine-grained nature [order of 300 regions in a whole brain, but 19 <italic>available</italic> regions in our case (<xref ref-type="fig" rid="F2">Figure 2C</xref>)] and therefore mean timeseries represent temporal activity of the ROI. In fact, as described in <xref ref-type="supplementary-material" rid="SM1">Supplementary Material</xref> (Section 3 Kendall’s <italic>W</italic> analysis) the chi-squared test suggested that time courses of all voxels in each region of the Shen’s atlas were concordant, supporting that the Shen’s atlas provides functional subunits and therefore mean timeseries represent temporal activity of the ROI. In addition, the Kendall’s <italic>W</italic> for the Shen’s atlas is significantly larger than that for the AAL atlas, supporting the validity of using the Shen’s atlas in the calculation of functional connectivity. These results are true, regardless of the DOT algorithms. Furthermore, the additional analysis with PCA (Section 4 Principal component analysis in <xref ref-type="supplementary-material" rid="SM1">Supplementary Material</xref>) also confirmed the validity of using both voxel-averaged timeseries and Shen’s atlas.</p>
+      <p>As described in the previous paragraph, the AAL atlas is not ideal. However, the chi-squared test also failed to reject the null hypothesis that there is no concordance among all voxels in the region of the AAL atlas (<italic>p</italic> &lt; <italic>0.05</italic> for all <italic>available</italic> ROIs). We therefore calculated the AAL counterpart on both (1) similarity between fMRI and DOT and (2) inter-run reproducibility, for your reference (see <xref ref-type="supplementary-material" rid="SM1">Supplementary Material</xref> for details). The similarity measure revealed no significant difference among three DOT algorithms (HB vs. MN vs. MN-WU), which is inconsistent with the Shen’s case. On the contrary, the inter-run reproducibility for the HB tended to be higher than that for the MN and MN-WU, which is consistent with the Shen’s case. Thus, the AAL counterpart was not always consistent with the Shen’s results. Although we do not have evidence that each region of the AAL atlas includes different functional areas, it is obvious that the Shen’s atlas is more suitable. Thus, the results for the Shen’s atlas case seem to be more reliable.</p>
+      <p>The confidence parameter γ<sub>0</sub> in the HB DOT determines the balance between the data and the prior information. As far as we investigated in the present study, γ<sub>0</sub> did not significantly affected either similarity of RSFCs between fMRI and DOT or inter-run reproducibility of RSFCs. However, both correlation values slightly decreased by setting γ<sub>0</sub> the lowest value (L × 10<sup>–4</sup>). This may be consistent with the previous finding that a very low γ<sub>0</sub> results in incorrectly localized sparse DOT images in some subjects in real experimental data which has a low signal-to-noise ratio (<xref rid="B33" ref-type="bibr">Yamashita et al., 2016</xref>). At present, we do not have a technique to determine the optimal γ<sub>0</sub> value. Further work is required to find it. In the present study, we did not adopt the prevailing approach in the resting-state fMRI studies, spatial ICA. One of the reasons for this is that spatial ICA is suited for whole brain analysis whereas fNIRS data in the present study covered only frontal and parietal areas. Applying spatial ICA to whole brain DOT images will be a challenging future work.</p>
+    </sec>
+    <sec id="S5">
+      <title>Conclusion</title>
+      <p>The present study showed that our HB algorithm can be used as an alternative to fMRI, in estimating resting-state functional connectivity as well as task-related responses. We also demonstrated its superiority over the current standard DOT algorithms. Although fNIRS data in the present study covered only frontal and parietal areas due to the experimental limitation of the high-density measurement, it is desired to cover wider areas of the cortex (ideally whole brain). Recently, we showed that multi-directional measurement has the ability to accomplish DOT without requiring high-density measurement (<xref rid="B27" ref-type="bibr">Shimokawa et al., 2016</xref>). It would be interesting to estimate RSFC for more widespread cortical areas using multi-directional DOT in future work.</p>
+    </sec>
+    <sec sec-type="data-availability" id="S6">
+      <title>Data Availability Statement</title>
+      <p>The raw data supporting the conclusions of this article will be made available by the authors, without undue reservation, to any qualified researcher.</p>
+    </sec>
+    <sec id="S7">
+      <title>Ethics Statement</title>
+      <p>The studies involving human participants were reviewed and approved by the ATR Review Board Ethics Committee. The patients/participants provided their written informed consent to participate in this study.</p>
+    </sec>
+    <sec id="S8">
+      <title>Author Contributions</title>
+      <p>TA, TS, TO, YO, AI, YI, and OY designed the study. TA, TS, TO, YO, and OY collected the data. TA analyzed the data. TA, TS, and OY wrote and reviewed the manuscript.</p>
+    </sec>
+    <sec id="conf1">
+      <title>Conflict of Interest</title>
+      <p>Although the authors AI and YI were employed by the company Shimadzu Corporation, they were not involved in the comparison of several DOT algorithms and therefore the results in the present study cannot be biased.</p>
+      <p>The remaining authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.</p>
+    </sec>
+  </body>
+  <back>
+    <fn-group>
+      <fn fn-type="financial-disclosure">
+        <p><bold>Funding.</bold> This work was funded by the ImPACT Program of the Council for Science, Technology and Innovation (Cabinet Office, Government of Japan). This research was conducted under contract with the National Institute of Information and Communications Technology, entitled “Analysis of multi-modal brain measurement data and development of its application for BMI open innovation (grant #209).”</p>
+      </fn>
+    </fn-group>
+    <ack>
+      <p>Part of this work was presented at the fNIRS2018 conference in Tokyo, Japan, during October 2018 (<xref rid="B1" ref-type="bibr">Aihara et al., 2018</xref>). We thank Yoshiko Itakura for her assistance in data acquisition and Kaori Nakamura for her valuable support.</p>
+    </ack>
+    <fn-group>
+      <fn id="footnote1">
+        <label>1</label>
+        <p>
+          <ext-link ext-link-type="uri" xlink:href="http://trendscenter.org/software/gift/">http://trendscenter.org/software/gift/</ext-link>
+        </p>
+      </fn>
+      <fn id="footnote2">
+        <label>2</label>
+        <p>
+          <ext-link ext-link-type="uri" xlink:href="https://surfer.nmr.mgh.harvard.edu">https://surfer.nmr.mgh.harvard.edu</ext-link>
+        </p>
+      </fn>
+    </fn-group>
+    <sec id="S11" sec-type="supplementary material">
+      <title>Supplementary Material</title>
+      <p>The Supplementary Material for this article can be found online at: <ext-link ext-link-type="uri" xlink:href="https://www.frontiersin.org/articles/10.3389/fnins.2020.00032/full#supplementary-material">https://www.frontiersin.org/articles/10.3389/fnins.2020.00032/full#supplementary-material</ext-link></p>
+      <supplementary-material content-type="local-data" id="SM1">
+        <media xlink:href="Data_Sheet_1.docx">
+          <caption>
+            <p>Click here for additional data file.</p>
+          </caption>
+        </media>
+      </supplementary-material>
+    </sec>
+    <ref-list>
+      <title>References</title>
+      <ref id="B1">
+        <mixed-citation publication-type="book"><person-group person-group-type="author"><name><surname>Aihara</surname><given-names>T.</given-names></name><name><surname>Shimokawa</surname><given-names>T.</given-names></name><name><surname>Ogawa</surname><given-names>T.</given-names></name><name><surname>Okada</surname><given-names>Y.</given-names></name><name><surname>Ishikawa</surname><given-names>A.</given-names></name><name><surname>Inoue</surname><given-names>Y.</given-names></name><etal/></person-group> (<year>2018</year>). “<article-title>Resting state functional connectivity with hierarchical Bayesian diffuse optical tomography</article-title>,” in <source><italic>Proceedings of the Conference fNIRS2018</italic></source>, <publisher-loc>Tokyo</publisher-loc>.</mixed-citation>
+      </ref>
+      <ref id="B2">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Birn</surname><given-names>R. M.</given-names></name><name><surname>Molloy</surname><given-names>E. K.</given-names></name><name><surname>Patriat</surname><given-names>R.</given-names></name><name><surname>Parker</surname><given-names>T.</given-names></name><name><surname>Meier</surname><given-names>T. B.</given-names></name><name><surname>Kirk</surname><given-names>G. R.</given-names></name><etal/></person-group> (<year>2013</year>). <article-title>The effect of scan length on the reliability of resting-state fMRI connectivity estimates.</article-title>
+<source><italic>Neuroimage</italic></source>
+<volume>83</volume>
+<fpage>550</fpage>–<lpage>558</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2013.05.099</pub-id>
+<pub-id pub-id-type="pmid">23747458</pub-id></mixed-citation>
+      </ref>
+      <ref id="B3">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Biswal</surname><given-names>B.</given-names></name><name><surname>Yetkin</surname><given-names>F. Z.</given-names></name><name><surname>Haughton</surname><given-names>V. M.</given-names></name><name><surname>Hyde</surname><given-names>J. S.</given-names></name></person-group> (<year>1995</year>). <article-title>Functional connectivity in the motor cortex of resting human brain using echo-planar MRI.</article-title>
+<source><italic>Magn. Reson. Med.</italic></source>
+<volume>34</volume>
+<fpage>537</fpage>–<lpage>541</lpage>. <pub-id pub-id-type="doi">10.1002/mrm.1910340409</pub-id>
+<pub-id pub-id-type="pmid">8524021</pub-id></mixed-citation>
+      </ref>
+      <ref id="B4">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Boas</surname><given-names>D. A.</given-names></name><name><surname>Dale</surname><given-names>A. M.</given-names></name><name><surname>Franceschini</surname><given-names>M. A.</given-names></name></person-group> (<year>2004</year>). <article-title>Diffuse optical imaging of brain activation: approaches to optimizing image sensitivity, resolution, and accuracy.</article-title>
+<source><italic>Neuroimage</italic></source>
+<volume>23</volume>(<issue>Suppl. 1</issue>), <fpage>S275</fpage>–<lpage>S288</lpage>. <pub-id pub-id-type="pmid">15501097</pub-id></mixed-citation>
+      </ref>
+      <ref id="B5">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Culver</surname><given-names>J. P.</given-names></name><name><surname>Durduran</surname><given-names>T.</given-names></name><name><surname>Furuya</surname><given-names>D.</given-names></name><name><surname>Cheung</surname><given-names>C.</given-names></name><name><surname>Greenberg</surname><given-names>J. H.</given-names></name><name><surname>Yodh</surname><given-names>A. G.</given-names></name></person-group> (<year>2003</year>). <article-title>Diffuse optical tomography of cerebral blood flow, oxygenation, and metabolism in rat during focal ischemia.</article-title>
+<source><italic>J. Cereb. Blood Flow Metab.</italic></source>
+<volume>23</volume>
+<fpage>911</fpage>–<lpage>924</lpage>. <pub-id pub-id-type="doi">10.1097/01.wcb.0000076703.71231.bb</pub-id>
+<pub-id pub-id-type="pmid">12902835</pub-id></mixed-citation>
+      </ref>
+      <ref id="B6">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Duan</surname><given-names>L.</given-names></name><name><surname>Zhang</surname><given-names>Y. J.</given-names></name><name><surname>Zhu</surname><given-names>C. Z.</given-names></name></person-group> (<year>2012</year>). <article-title>Quantitative comparison of resting-state functional connectivity derived from fNIRS and fMRI: a simultaneous recording study.</article-title>
+<source><italic>Neuroimage</italic></source>
+<volume>60</volume>
+<fpage>2008</fpage>–<lpage>2018</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2012.02.014</pub-id>
+<pub-id pub-id-type="pmid">22366082</pub-id></mixed-citation>
+      </ref>
+      <ref id="B7">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Eggebrecht</surname><given-names>A. T.</given-names></name><name><surname>Ferradal</surname><given-names>S. L.</given-names></name><name><surname>Robichaux-Viehoever</surname><given-names>A.</given-names></name><name><surname>Hassanpour</surname><given-names>M. S.</given-names></name><name><surname>Dehghani</surname><given-names>H.</given-names></name><name><surname>Snyder</surname><given-names>A. Z.</given-names></name><etal/></person-group> (<year>2014</year>). <article-title>Mapping distributed brain function and networks with diffuse optical tomography.</article-title>
+<source><italic>Nat. Photonics</italic></source>
+<volume>8</volume>
+<fpage>448</fpage>–<lpage>454</lpage>. <pub-id pub-id-type="doi">10.1038/nphoton.2014.107</pub-id>
+<pub-id pub-id-type="pmid">25083161</pub-id></mixed-citation>
+      </ref>
+      <ref id="B8">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Fang</surname><given-names>Q.</given-names></name></person-group> (<year>2010</year>). <article-title>Mesh-based Monte Carlo method using fast ray-tracing in Plcker coordinates.</article-title>
+<source><italic>Biomed. Opt. Express</italic></source>
+<volume>1</volume>
+<fpage>165</fpage>–<lpage>175</lpage>. <pub-id pub-id-type="doi">10.1364/BOE.1.000165</pub-id>
+<pub-id pub-id-type="pmid">21170299</pub-id></mixed-citation>
+      </ref>
+      <ref id="B9">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Fang</surname><given-names>Q.</given-names></name><name><surname>Boas</surname><given-names>D. A.</given-names></name></person-group> (<year>2009</year>). <article-title>Monte Carlo simulation of photon migration in 3D turbid media accelerated by graphics processing units.</article-title>
+<source><italic>Opt. Express</italic></source>
+<volume>17</volume>
+<fpage>20178</fpage>–<lpage>20190</lpage>. <pub-id pub-id-type="doi">10.1364/OE.17.020178</pub-id>
+<pub-id pub-id-type="pmid">19997242</pub-id></mixed-citation>
+      </ref>
+      <ref id="B10">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Fox</surname><given-names>M. D.</given-names></name><name><surname>Snyder</surname><given-names>A. Z.</given-names></name><name><surname>Vincent</surname><given-names>J. L.</given-names></name><name><surname>Corbetta</surname><given-names>M.</given-names></name><name><surname>Van Essen</surname><given-names>D. C.</given-names></name><name><surname>Raichle</surname><given-names>M. E.</given-names></name></person-group> (<year>2005</year>). <article-title>The human brain is intrinsically organized into dynamic, anticorrelated functional networks.</article-title>
+<source><italic>Proc. Natl. Acad. Sci. U.S.A.</italic></source>
+<volume>102</volume>
+<fpage>9673</fpage>–<lpage>9678</lpage>. <pub-id pub-id-type="doi">10.1073/pnas.0504136102</pub-id>
+<pub-id pub-id-type="pmid">15976020</pub-id></mixed-citation>
+      </ref>
+      <ref id="B11">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Funane</surname><given-names>T.</given-names></name><name><surname>Atsumori</surname><given-names>H.</given-names></name><name><surname>Katura</surname><given-names>T.</given-names></name><name><surname>Obata</surname><given-names>A. N.</given-names></name><name><surname>Sato</surname><given-names>H.</given-names></name><name><surname>Tanikawa</surname><given-names>Y.</given-names></name><etal/></person-group> (<year>2014</year>). <article-title>Quantitative evaluation of deep and shallow tissue layers’ contribution to fNIRS signal using multi-distance optodes and independent component analysis.</article-title>
+<source><italic>Neuroimage</italic></source>
+<volume>85</volume>
+<fpage>150</fpage>–<lpage>165</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2013.02.026</pub-id>
+<pub-id pub-id-type="pmid">23439443</pub-id></mixed-citation>
+      </ref>
+      <ref id="B12">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Gagnon</surname><given-names>L.</given-names></name><name><surname>Cooper</surname><given-names>R. J.</given-names></name><name><surname>Ycel</surname><given-names>M. A.</given-names></name><name><surname>Perdue</surname><given-names>K. L.</given-names></name><name><surname>Greve</surname><given-names>D. N.</given-names></name><name><surname>Boas</surname><given-names>D. A.</given-names></name></person-group> (<year>2012</year>). <article-title>Short separation channel location impacts the performance of short channel regression in NIRS.</article-title>
+<source><italic>Neuroimage</italic></source>
+<volume>59</volume>
+<fpage>2518</fpage>–<lpage>2528</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2011.08.095</pub-id>
+<pub-id pub-id-type="pmid">21945793</pub-id></mixed-citation>
+      </ref>
+      <ref id="B13">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Gagnon</surname><given-names>L.</given-names></name><name><surname>Ycel</surname><given-names>M. A.</given-names></name><name><surname>Boas</surname><given-names>D. A.</given-names></name><name><surname>Cooper</surname><given-names>R. J.</given-names></name></person-group> (<year>2014</year>). <article-title>Further improvement in reducing superficial contamination in NIRS using double short separation measurements.</article-title>
+<source><italic>Neuroimage</italic></source>
+<volume>85</volume>
+<fpage>127</fpage>–<lpage>135</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2013.01.073</pub-id>
+<pub-id pub-id-type="pmid">23403181</pub-id></mixed-citation>
+      </ref>
+      <ref id="B14">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Greicius</surname><given-names>M. D.</given-names></name><name><surname>Krasnow</surname><given-names>B.</given-names></name><name><surname>Reiss</surname><given-names>A. L.</given-names></name><name><surname>Menon</surname><given-names>V.</given-names></name></person-group> (<year>2003</year>). <article-title>Functional connectivity in the resting brain: a network analysis of the default mode hypothesis.</article-title>
+<source><italic>Proc. Natl. Acad. Sci. U.S.A.</italic></source>
+<volume>100</volume>
+<fpage>253</fpage>–<lpage>258</lpage>. <pub-id pub-id-type="doi">10.1073/pnas.0135058100</pub-id>
+<pub-id pub-id-type="pmid">12506194</pub-id></mixed-citation>
+      </ref>
+      <ref id="B15">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Guven</surname><given-names>M.</given-names></name><name><surname>Yazici</surname><given-names>B.</given-names></name><name><surname>Intes</surname><given-names>X.</given-names></name><name><surname>Chance</surname><given-names>B.</given-names></name></person-group> (<year>2005</year>). <article-title>Diffuse optical tomography with a priori anatomical information.</article-title>
+<source><italic>Phys. Med. Biol.</italic></source>
+<volume>50</volume>
+<fpage>2837</fpage>–<lpage>2858</lpage>. <pub-id pub-id-type="doi">10.1088/0031-9155/50/12/008</pub-id>
+<pub-id pub-id-type="pmid">15930606</pub-id></mixed-citation>
+      </ref>
+      <ref id="B16">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Jafri</surname><given-names>M. J.</given-names></name><name><surname>Pearlson</surname><given-names>G. D.</given-names></name><name><surname>Stevens</surname><given-names>M.</given-names></name><name><surname>Calhoun</surname><given-names>V. D.</given-names></name></person-group> (<year>2008</year>). <article-title>A method for functional network connectivity among spatially independent resting-state components in schizophrenia.</article-title>
+<source><italic>Neuroimage</italic></source>
+<volume>39</volume>
+<fpage>1666</fpage>–<lpage>1681</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2007.11.001</pub-id>
+<pub-id pub-id-type="pmid">18082428</pub-id></mixed-citation>
+      </ref>
+      <ref id="B17">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Kirilina</surname><given-names>E.</given-names></name><name><surname>Jelzow</surname><given-names>A.</given-names></name><name><surname>Heine</surname><given-names>A.</given-names></name><name><surname>Niessing</surname><given-names>M.</given-names></name><name><surname>Wabnitz</surname><given-names>H.</given-names></name><name><surname>Brhl</surname><given-names>R.</given-names></name><etal/></person-group> (<year>2012</year>). <article-title>The physiological origin of task-evoked systemic artefacts in functional near infrared spectroscopy.</article-title>
+<source><italic>Neuroimage</italic></source>
+<volume>61</volume>
+<fpage>70</fpage>–<lpage>81</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2012.02.074</pub-id>
+<pub-id pub-id-type="pmid">22426347</pub-id></mixed-citation>
+      </ref>
+      <ref id="B18">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Kohno</surname><given-names>S.</given-names></name><name><surname>Miyai</surname><given-names>I.</given-names></name><name><surname>Seiyama</surname><given-names>A.</given-names></name><name><surname>Oda</surname><given-names>I.</given-names></name><name><surname>Ishikawa</surname><given-names>A.</given-names></name><name><surname>Tsuneishi</surname><given-names>S.</given-names></name><etal/></person-group> (<year>2007</year>). <article-title>Removal of the skin blood flow artifact in functional near-infrared spectroscopic imaging data through independent component analysis.</article-title>
+<source><italic>J. Biomed. Opt.</italic></source>
+<volume>12</volume>:<issue>062111</issue>. <pub-id pub-id-type="doi">10.1117/1.2814249</pub-id>
+<pub-id pub-id-type="pmid">18163814</pub-id></mixed-citation>
+      </ref>
+      <ref id="B19">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Lu</surname><given-names>C. M.</given-names></name><name><surname>Zhang</surname><given-names>Y. J.</given-names></name><name><surname>Biswal</surname><given-names>B. B.</given-names></name><name><surname>Zang</surname><given-names>Y. F.</given-names></name><name><surname>Peng</surname><given-names>D. L.</given-names></name><name><surname>Zhu</surname><given-names>C. Z.</given-names></name></person-group> (<year>2010</year>). <article-title>Use of fNIRS to assess resting state functional connectivity.</article-title>
+<source><italic>J. Neurosci. Meth.</italic></source>
+<volume>186</volume>
+<fpage>242</fpage>–<lpage>249</lpage>. <pub-id pub-id-type="doi">10.1016/j.jneumeth.2009.11.010</pub-id>
+<pub-id pub-id-type="pmid">19931310</pub-id></mixed-citation>
+      </ref>
+      <ref id="B20">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>McGraw</surname><given-names>K. O.</given-names></name><name><surname>Wong</surname><given-names>S. P.</given-names></name></person-group> (<year>1996</year>). <article-title>Forming inferences about some intraclass correlation coefficients.</article-title>
+<source><italic>Psychol. Meth.</italic></source>
+<volume>1</volume>
+<fpage>30</fpage>–<lpage>46</lpage>. <pub-id pub-id-type="doi">10.1037/1082-989x.1.1.30</pub-id></mixed-citation>
+      </ref>
+      <ref id="B21">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Piper</surname><given-names>S. K.</given-names></name><name><surname>Krueger</surname><given-names>A. K.</given-names></name><name><surname>Koch</surname><given-names>S. P.</given-names></name><name><surname>Mehnert</surname><given-names>J.</given-names></name><name><surname>Habermehl</surname><given-names>C.</given-names></name><name><surname>Steinbrink</surname><given-names>J.</given-names></name><etal/></person-group> (<year>2014</year>). <article-title>A wearable multi-channel fNIRS system for brain imaging in freely moving subjects.</article-title>
+<source><italic>Neuroimage</italic></source>
+<volume>85</volume>
+<fpage>64</fpage>–<lpage>71</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2013.06.062</pub-id>
+<pub-id pub-id-type="pmid">23810973</pub-id></mixed-citation>
+      </ref>
+      <ref id="B22">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Rupawala</surname><given-names>M.</given-names></name><name><surname>Dehghani</surname><given-names>H.</given-names></name><name><surname>Lucas</surname><given-names>S. J. E.</given-names></name><name><surname>Tino</surname><given-names>P.</given-names></name><name><surname>Cruse</surname><given-names>D.</given-names></name></person-group> (<year>2018</year>). <article-title>Shining a light on awareness: a review of functional near-infrared spectroscopy for prolonged disorders of consciousness.</article-title>
+<source><italic>Front. Neurol.</italic></source>
+<volume>9</volume>:<issue>350</issue>. <pub-id pub-id-type="doi">10.3389/fneur.2018.00350</pub-id>
+<pub-id pub-id-type="pmid">29872420</pub-id></mixed-citation>
+      </ref>
+      <ref id="B23">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Sakakibara</surname><given-names>E.</given-names></name><name><surname>Homae</surname><given-names>F.</given-names></name><name><surname>Kawasaki</surname><given-names>S.</given-names></name><name><surname>Nishimura</surname><given-names>Y.</given-names></name><name><surname>Takizawa</surname><given-names>R.</given-names></name><name><surname>Koike</surname><given-names>S.</given-names></name><etal/></person-group> (<year>2016</year>). <article-title>Detection of resting state functional connectivity using parietal correlation analysis: a study using multi-distance and whole-head probe near-infrared spectroscopy.</article-title>
+<source><italic>Neuroimage</italic></source>
+<volume>142</volume>
+<fpage>590</fpage>–<lpage>601</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2016.08.011</pub-id>
+<pub-id pub-id-type="pmid">27521742</pub-id></mixed-citation>
+      </ref>
+      <ref id="B24">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Sasai</surname><given-names>S.</given-names></name><name><surname>Homae</surname><given-names>F.</given-names></name><name><surname>Watanabe</surname><given-names>H.</given-names></name><name><surname>Sasaki</surname><given-names>A. T.</given-names></name><name><surname>Tanabe</surname><given-names>H. C.</given-names></name><name><surname>Sadato</surname><given-names>N.</given-names></name><etal/></person-group> (<year>2012</year>). <article-title>A NIRS-fMRI study of resting state network.</article-title>
+<source><italic>Neuroimage</italic></source>
+<volume>63</volume>
+<fpage>179</fpage>–<lpage>193</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2012.06.011</pub-id>
+<pub-id pub-id-type="pmid">22713670</pub-id></mixed-citation>
+      </ref>
+      <ref id="B25">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Sato</surname><given-names>T.</given-names></name><name><surname>Nambu</surname><given-names>I.</given-names></name><name><surname>Takeda</surname><given-names>K.</given-names></name><name><surname>Aihara</surname><given-names>T.</given-names></name><name><surname>Yamashita</surname><given-names>O.</given-names></name><name><surname>Isogaya</surname><given-names>Y.</given-names></name><etal/></person-group> (<year>2016</year>). <article-title>Reduction of global interference of scalp-hemodynamics in functional near-infrared spectroscopy using short distance probes.</article-title>
+<source><italic>NeuroImage</italic></source>
+<volume>141</volume>
+<fpage>120</fpage>–<lpage>132</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2016.06.054</pub-id>
+<pub-id pub-id-type="pmid">27374729</pub-id></mixed-citation>
+      </ref>
+      <ref id="B26">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Shen</surname><given-names>X.</given-names></name><name><surname>Tokoglu</surname><given-names>F.</given-names></name><name><surname>Papademetris</surname><given-names>X.</given-names></name><name><surname>Constable</surname><given-names>R. T.</given-names></name></person-group> (<year>2013</year>). <article-title>Groupwise whole-brain parcellation from resting-state fMRI data for network node identification.</article-title>
+<source><italic>Neuroimage</italic></source>
+<volume>82</volume>
+<fpage>403</fpage>–<lpage>415</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2013.05.081</pub-id>
+<pub-id pub-id-type="pmid">23747961</pub-id></mixed-citation>
+      </ref>
+      <ref id="B27">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Shimokawa</surname><given-names>T.</given-names></name><name><surname>Ishii</surname><given-names>T.</given-names></name><name><surname>Takahashi</surname><given-names>Y.</given-names></name><name><surname>Sugawara</surname><given-names>S.</given-names></name><name><surname>Sato</surname><given-names>M.-A.</given-names></name><name><surname>Yamashita</surname><given-names>O.</given-names></name></person-group> (<year>2016</year>). <article-title>Diffuse optical tomography using multi-directional sources and detectors.</article-title>
+<source><italic>Biomed. Opt. Express</italic></source>
+<volume>7</volume>
+<fpage>2623</fpage>–<lpage>2640</lpage>. <pub-id pub-id-type="doi">10.1364/BOE.7.002623</pub-id>
+<pub-id pub-id-type="pmid">27446694</pub-id></mixed-citation>
+      </ref>
+      <ref id="B28">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Shimokawa</surname><given-names>T.</given-names></name><name><surname>Kosaka</surname><given-names>T.</given-names></name><name><surname>Yamashita</surname><given-names>O.</given-names></name><name><surname>Hiroe</surname><given-names>N.</given-names></name><name><surname>Amita</surname><given-names>T.</given-names></name><name><surname>Inoue</surname><given-names>Y.</given-names></name><etal/></person-group> (<year>2012</year>). <article-title>Hierarchical Bayesian estimation improves depth accuracy and spatial resolution of diffuse optical tomography.</article-title>
+<source><italic>Opt. Express</italic></source>
+<volume>20</volume>
+<fpage>20427</fpage>–<lpage>20446</lpage>. <pub-id pub-id-type="doi">10.1364/OE.20.020427</pub-id>
+<pub-id pub-id-type="pmid">23037092</pub-id></mixed-citation>
+      </ref>
+      <ref id="B29">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Shimokawa</surname><given-names>T.</given-names></name><name><surname>Kosaka</surname><given-names>T.</given-names></name><name><surname>Yamashita</surname><given-names>O.</given-names></name><name><surname>Hiroe</surname><given-names>N.</given-names></name><name><surname>Amita</surname><given-names>T.</given-names></name><name><surname>Inoue</surname><given-names>Y.</given-names></name><etal/></person-group> (<year>2013</year>). <article-title>Extended hierarchical Bayesian diffuse optical tomography for removing scalp artifact.</article-title>
+<source><italic>Biomed. Opt. Express</italic></source>
+<volume>4</volume>
+<fpage>2411</fpage>–<lpage>2432</lpage>. <pub-id pub-id-type="doi">10.1364/BOE.4.002411</pub-id>
+<pub-id pub-id-type="pmid">24298404</pub-id></mixed-citation>
+      </ref>
+      <ref id="B30">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Takahashi</surname><given-names>T.</given-names></name><name><surname>Takikawa</surname><given-names>Y.</given-names></name><name><surname>Kawagoe</surname><given-names>R.</given-names></name><name><surname>Shibuya</surname><given-names>S.</given-names></name><name><surname>Iwano</surname><given-names>T.</given-names></name><name><surname>Kitazawa</surname><given-names>S.</given-names></name></person-group> (<year>2011</year>). <article-title>Influence of skin blood blow on near-infrared spectroscopy signals measured on the forehead during a verbal fluency task.</article-title>
+<source><italic>Neuroimage</italic></source>
+<volume>57</volume>
+<fpage>991</fpage>–<lpage>1002</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2011.05.012</pub-id>
+<pub-id pub-id-type="pmid">21600294</pub-id></mixed-citation>
+      </ref>
+      <ref id="B31">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>van den Heuvel</surname><given-names>M. P.</given-names></name><name><surname>Hulshoff Pol</surname><given-names>H. E.</given-names></name></person-group> (<year>2010</year>). <article-title>Exploring the brain network: a review on resting-state fMRI functional connectivity.</article-title>
+<source><italic>Eur. Neuropsychopharmacol.</italic></source>
+<volume>20</volume>
+<fpage>519</fpage>–<lpage>534</lpage>. <pub-id pub-id-type="doi">10.1016/j.euroneuro.2010.03.008</pub-id>
+<pub-id pub-id-type="pmid">20471808</pub-id></mixed-citation>
+      </ref>
+      <ref id="B32">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>White</surname><given-names>B. R.</given-names></name><name><surname>Snyder</surname><given-names>A. Z.</given-names></name><name><surname>Cohen</surname><given-names>A. L.</given-names></name><name><surname>Petersen</surname><given-names>S. E.</given-names></name><name><surname>Raichle</surname><given-names>M. E.</given-names></name><name><surname>Schlaggar</surname><given-names>B. L.</given-names></name><etal/></person-group> (<year>2009</year>). <article-title>Resting-state functional connectivity in the human brain revealed with diffuse optical tomography.</article-title>
+<source><italic>Neuroimage</italic></source>
+<volume>47</volume>
+<fpage>148</fpage>–<lpage>156</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2009.03.058</pub-id>
+<pub-id pub-id-type="pmid">19344773</pub-id></mixed-citation>
+      </ref>
+      <ref id="B33">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Yamashita</surname><given-names>O.</given-names></name><name><surname>Shimokawa</surname><given-names>T.</given-names></name><name><surname>Aisu</surname><given-names>R.</given-names></name><name><surname>Amita</surname><given-names>T.</given-names></name><name><surname>Inoue</surname><given-names>Y.</given-names></name><name><surname>Sato</surname><given-names>M.</given-names></name></person-group> (<year>2016</year>). <article-title>Multi-subject and multi-task experimental validation of the hierarchical Bayesian diffuse optical tomography algorithm.</article-title>
+<source><italic>Neuroimage</italic></source>
+<volume>135</volume>
+<fpage>287</fpage>–<lpage>299</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2016.04.068</pub-id>
+<pub-id pub-id-type="pmid">27150232</pub-id></mixed-citation>
+      </ref>
+      <ref id="B34">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zeff</surname><given-names>B. W.</given-names></name><name><surname>White</surname><given-names>B. R.</given-names></name><name><surname>Dehghani</surname><given-names>H.</given-names></name><name><surname>Schlaggar</surname><given-names>B. L.</given-names></name><name><surname>Culver</surname><given-names>J. P.</given-names></name></person-group> (<year>2007</year>). <article-title>Retinotopic mapping of adult human visual cortex with high-density diffuse optical tomography.</article-title>
+<source><italic>Proc. Natl. Acad. Sci. U.S.A.</italic></source>
+<volume>104</volume>
+<fpage>12169</fpage>–<lpage>12174</lpage>. <pub-id pub-id-type="doi">10.1073/pnas.0611266104</pub-id>
+<pub-id pub-id-type="pmid">17616584</pub-id></mixed-citation>
+      </ref>
+      <ref id="B35">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zhang</surname><given-names>H.</given-names></name><name><surname>Duan</surname><given-names>L.</given-names></name><name><surname>Zhang</surname><given-names>Y. J.</given-names></name><name><surname>Lu</surname><given-names>C. M.</given-names></name><name><surname>Liu</surname><given-names>H.</given-names></name><name><surname>Zhu</surname><given-names>C. Z.</given-names></name></person-group> (<year>2011</year>). <article-title>Test-retest assessment of independent component analysis-derived resting-state functional connectivity based on functional near-infrared spectroscopy.</article-title>
+<source><italic>Neuroimage</italic></source>
+<volume>55</volume>
+<fpage>607</fpage>–<lpage>615</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2010.12.007</pub-id>
+<pub-id pub-id-type="pmid">21146616</pub-id></mixed-citation>
+      </ref>
+      <ref id="B36">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zhang</surname><given-names>H.</given-names></name><name><surname>Zhang</surname><given-names>Y. J.</given-names></name><name><surname>Lu</surname><given-names>C. M.</given-names></name><name><surname>Ma</surname><given-names>S. Y.</given-names></name><name><surname>Zang</surname><given-names>Y. F.</given-names></name><name><surname>Zhu</surname><given-names>C. Z.</given-names></name></person-group> (<year>2010</year>). <article-title>Functional connectivity as revealed by independent component analysis of resting-state fNIRS measurements.</article-title>
+<source><italic>Neuroimage</italic></source>
+<volume>51</volume>
+<fpage>1150</fpage>–<lpage>1161</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuroimage.2010.02.080</pub-id>
+<pub-id pub-id-type="pmid">20211741</pub-id></mixed-citation>
+      </ref>
+      <ref id="B37">
+        <mixed-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Zhang</surname><given-names>Y.</given-names></name><name><surname>Brooks</surname><given-names>D. H.</given-names></name><name><surname>Franceschini</surname><given-names>M. A.</given-names></name><name><surname>Boas</surname><given-names>D. A.</given-names></name></person-group> (<year>2005</year>). <article-title>Eigenvector-based spatial filtering for reduction of physiological interference in diffuse optical imaging.</article-title>
+<source><italic>J. Biomed. Opt.</italic></source>
+<volume>10</volume>:<issue>11014</issue>. <pub-id pub-id-type="pmid">15847580</pub-id></mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

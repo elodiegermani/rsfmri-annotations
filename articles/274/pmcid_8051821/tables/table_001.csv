@@ -1,0 +1,21 @@
+Wavelet-coherence,Wavelet-coherence.1,Granger-causality,Granger-causality.1,static FC,EGN
+in-phase time-of-coherence,leading time-of-coherence,net1→net2 GC,net1←net2 GC,net1↔net2,EPs
+ip_LVISU-OVIS_s1,lead_AUDI-FPR_s1,MVISU->LVISU,MVISU<-LSM,sFC-DMN-VAN,In-EP_DMN
+ip_LSM-CING_s1,lead_MVISU-DMN_s1,MVISU->FPL,MVISU<-FPR,sFC-MVISU-DMN,In-EP_DAN
+ip_OVIS-SN_s2,lead_MVISU-OVIS_s2,MVISU->CING,LVISU<-AUDI,sFC-DMN-LSM,In-EP_SSM
+ip_CB-SN_s2,lead_DMN-OVIS_s2,DMN->AUDI,LVISU<-SSM,sFC-DMN-CB,In-EP_CING
+ip_MVISU-DMN_s2,lead_LSM-OVIS_s2,DMN->SN,LVISU<-SN,sFC-AUDI-CING,Out-EP_DMN
+ip_OVIS-SN_s3,lead_LSM-OVIS_s3,VAN->CING,VAN<-DAN,sFC-LSM-OVISU,Out-EP_OVIS
+ip_CB-SN_s3,lead_OVIS-CB_s3,DAN->FPR,VAN<-AUDI,sFC-DAN-SN,Net-EP_DMN
+ip_DMN-DAN_s4,lead_LVISU-VAN_s4,AUDI->SN,DAN<-CING,sFC-OVISU-SN,Net-EP_CING
+ip_MVISU-DMN_s4,lead_DMN-VAN_s4,LSM->CING,AUDI<-SSM,sFC-CB-FPL,
+anti-phase time-of-coherence,lead_FPL-SN_s4,FPL->FPR,net pairwise GC,sFC-CB-CING,
+ap_AUDI-FPR_s1,lagging time-of-coherence,FPL->CING,netgc_MVISU->LVISU,,
+ap_VAN-FPL_s1,lag_LVISU-DAN_s1,"network DegIn, DegOut,",netgc_MVISU->CING,,
+ap_AUDI-SSM_s1,lag_OVIS-SSM_s1,and netDeg,netgc_LVISU->LSM,,
+ap_DMN-VAN_s2,lag_OVIS-SN_s2,GC_DegOut_LSM,netgc_LVISU->SN,,
+ap_OVIS-SN_s2,lag_OVIS-FPL_s2,GC_NetDeg_DAN,netgc_DMN->VAN,,
+ap_LVISU-VAN_s3,lag_CB-FPR_s2,GC_NetDeg_AUDI,netgc_DMN->AUDI,,
+ap_OVIS-SN_s3,lag_CB-FPL_s2,GC_NetDeg_LSM,netgc_DAN->CING,,
+ap_VAN-SN_s4,lag_LSM-OVIS_s3,,netgc_FPL->FPR,,
+ap_DMN-AUDI_s5,lag_VAN-CB_s3,,,,
